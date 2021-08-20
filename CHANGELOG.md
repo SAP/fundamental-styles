@@ -1,4 +1,40 @@
 
+## [0.20.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.14...v0.20.0-rc.15) (2021-08-14)
+
+
+### Bug Fixes
+
+* add fonts dynamically for theming preview ([#2670](https://github.com/SAP/fundamental-styles/issues/2670)) ([362b152](https://github.com/SAP/fundamental-styles/commit/362b1526589e91f13a0537b38f12d09d9044a89d))
+
+## [0.20.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.13...v0.20.0-rc.14) (2021-08-13)
+
+
+### Features
+
+* table group rows, tree rows ([#2665](https://github.com/SAP/fundamental-styles/issues/2665)) ([d646d7a](https://github.com/SAP/fundamental-styles/commit/d646d7a7284aa796a667ebab585c3d12da7f07ab))
+
+## [0.20.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.12...v0.20.0-rc.13) (2021-08-11)
+
+## [0.20.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.11...v0.20.0-rc.12) (2021-08-11)
+
+## [0.20.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.10...v0.20.0-rc.11) (2021-08-10)
+
+
+### Bug Fixes
+
+* add compact class to form-layout-grid ([#2655](https://github.com/SAP/fundamental-styles/issues/2655)) ([3be12df](https://github.com/SAP/fundamental-styles/commit/3be12df36c0c17643932ed46d0d530bde2ce770b))
+
+## [0.20.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.9...v0.20.0-rc.10) (2021-08-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add a new modifier class .fd-nested-list--popover to display nested list inside a popover.
+
+### Bug Fixes
+
+* introduce modifier class to fix nested-list-popover ([#2621](https://github.com/SAP/fundamental-styles/issues/2621)) ([bd4ad27](https://github.com/SAP/fundamental-styles/commit/bd4ad2719e34b295fc878639c8380f0f60281e4e))
+
 ## [0.20.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.8...v0.20.0-rc.9) (2021-08-06)
 
 

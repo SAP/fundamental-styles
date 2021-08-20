@@ -307,6 +307,13 @@
   @content;
 }
 
+@mixin fd-inline-flex-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+
 @mixin fd-flex-vertical-center {
   display: flex;
   align-items: center;
