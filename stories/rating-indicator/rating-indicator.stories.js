@@ -183,13 +183,13 @@ Sizes.parameters = {
         storyDescription: `
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
-| Extra small    | 0.75rem    | <code>--xs</code>         |
-| Small          | 1rem       | <code>--sm</code>         |
+| Extra small    | 0.75rem    | \`--xs\`         |
+| Small          | 1rem       | \`--sm\`         |
 | Medium/Default | 1.375rem   | _n/a_                     |
-| Large          | 2rem       | <code>--lg</code>         |
-| Cozy           | 1.5rem     | <code>--cozy</code>       |
-| Compact        | 1rem       | <code>--compact</code>    |
-| Condensed      | 1rem       | <code>--condensed</code>  |
+| Large          | 2rem       | \`--lg\`         |
+| Cozy           | 1.5rem     | \`--cozy\`       |
+| Compact        | 1rem       | \`--compact\`    |
+| Condensed      | 1rem       | \`--condensed\`  |
 `
     }
 };

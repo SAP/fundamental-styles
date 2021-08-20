@@ -87,7 +87,7 @@ desktop.parameters = {
     docs: {
         iframeHeight: 330,
         storyDescription: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default). 
-On desktop screens, the checkbox appears smaller and uses the <code>fd-checkbox\\_\\_label--compact</code> modifier class.
+On desktop screens, the checkbox appears smaller and uses the \`fd-checkbox__label--compact\` modifier class.
         `
     }
 };
@@ -109,7 +109,7 @@ required.storyName = 'Required';
 required.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `To show that a checkbox input is required, use the <code>fd-from-label--required</code> class.
+        storyDescription: `To show that a checkbox input is required, use the \`fd-from-label--required\` class.
         `
     }
 };
@@ -197,7 +197,7 @@ inline.storyName = 'Inline';
 inline.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'Checkboxes can display horizontally in a line. To display them this way, add the <code>fd-checkbox__label--inline</code> modifier class to the element.'
+        storyDescription: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
     }
 };
 
@@ -330,15 +330,15 @@ states.storyName = 'States';
 states.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the <code>fd-form-item</code>:
+        storyDescription: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
 
 | States | Class |
 | :----------------- | :------------------ |
-| Error | <code>fd-checkbox is-error</code> |
-| Success | <code>fd-checkbox is-success</code> |
-| Warning | <code>fd-checkbox is-warning</code> |
-| Information | <code>fd-checkbox is-information</code> |
-| Disabled | <code>fd-checkbox is-disabled</code> |
+| Error | \`fd-checkbox is-error\` |
+| Success | \`fd-checkbox is-success\` |
+| Warning | \`fd-checkbox is-warning\` |
+| Information | \`fd-checkbox is-information\` |
+| Disabled | \`fd-checkbox is-disabled\` |
 `
     }
 };

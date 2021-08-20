@@ -10,14 +10,4 @@ updates:
   - droshev
   - InnaAtanasova
   - mikerodonnell89
-  ignore:
-  - dependency-name: "@storybook/addon-links"
-    versions:
-    - 6.1.20
-  - dependency-name: "@storybook/addon-docs"
-    versions:
-    - 6.1.20
-  - dependency-name: "@storybook/addon-knobs"
-    versions:
-    - 6.1.20
   open-pull-requests-limit: 10

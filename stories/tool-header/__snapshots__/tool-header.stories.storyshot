@@ -71,12 +71,12 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
         
             
         <button
+          aria-label="more items"
           class="fd-button fd-button--transparent fd-tool-header__button"
         >
           
                  
           <i
-            aria-label="more items"
             class="sap-icon--overflow"
           />
           

@@ -28,7 +28,7 @@ export const sizes = () => `
 sizes.parameters = {
     docs: {
         iframeHeight: 160,
-        storyDescription: 'The Input Group supports **compact** mode (by virtue of the <code>--compact</code> modifier on child components).'
+        storyDescription: 'The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).'
     }
 };
 
@@ -285,7 +285,7 @@ export const focus = () => `
 focus.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The Input Group supports <b>focus</b> state, it can be added by putting <code>.is-focus</code> class to component.'
+        storyDescription: 'The Input Group supports <b>focus</b> state, it can be added by putting `.is-focus` class to component.'
     }
 };
 

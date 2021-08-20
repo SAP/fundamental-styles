@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Button',
     parameters: {
-        description: `The button component is used to trigger an action. All buttons are characterized by the <code class="docs-code">fd-button</code> class and an additional modifier class to specify each button type.
+        description: `The button component is used to trigger an action. All buttons are characterized by the \`fd-button\` class and an additional modifier class to specify each button type.
 
 ##Usage
 
@@ -124,7 +124,7 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
 toggle.storyName = 'Toggle button';
 toggle.parameters = {
     docs: {
-        storyDescription: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the <code>fd-button--toggled</code> modifier class to set the action to active.'
+        storyDescription: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the action to active.'
     }
 };
 
@@ -149,7 +149,7 @@ segmentedButton.storyName = 'Segmented button';
 segmentedButton.parameters = {
     docs: {
         storyDescription: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
-        <br><br>It can be displayed by using the <code class=”docs-code”>fd-segmented-button</code> class with <code class=”docs-code”>role=”group”</code> and the <code class=”docs-code”>aria-label=”Group label”</code> attribute.`
+        <br><br>It can be displayed by using the \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.`
     }
 };
 
@@ -380,7 +380,7 @@ splitMenuButton.parameters = {
 1. The button triggers the default action set by the developer. If no default action is defined, the first item in the menu list will become the default.
 2. The button triggers the last action chosen by the user. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
 
-The split menu button can be displayed by using <code class="docs-code>fd-button-split fd-has-margin-right-small</code> class with <code>role=”group”</code> and the <code>aria-label=”button-split”</code> attribute.
+The split menu button can be displayed by using \`fd-button-split fd-has-margin-right-small\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
 `
     }
 };
@@ -412,7 +412,7 @@ sizes.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: `
-The buttons in the first row are displayed in cozy size, which is the default sizing and does not require a modifier. The compact buttons shown in the second row, however, can be displayed by adding the <code class="docs-code">–compact</code> modifier class to the element.
+The buttons in the first row are displayed in cozy size, which is the default sizing and does not require a modifier. The compact buttons shown in the second row, however, can be displayed by adding the \`–compact\` modifier class to the element.
 `
     }
 };
@@ -520,9 +520,9 @@ buttonStates.parameters = {
 These button types indicate different states: normal, selected, disabled and focusable disabled.
 
 - **Normal**: The button’s default state. It can be selected to perform a corresponding action.
-- **Selected**: The button is selected as opposed to other buttons. This state can be displayed by adding the <code>is-selected</code> class or the <code>aria-selected=”true”</code> attribute for accessibility.
-- **Disabled**: It cannot be selected. This state can be displayed by using the <code>is-disabled</code> class and the <code>aria-disabled=”true”</code> attribute for accessibility.
-- **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the <code>is-disabled</code> class and the <code>aria-disabled=”true”</code> attribute for accessibility without using the <code>disabled</code> property. By adding the hidden <code>_instructions</code> element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the <code>aria-live</code> property.
+- **Selected**: The button is selected as opposed to other buttons. This state can be displayed by adding the \`is-selected\` class or the \`aria-selected=”true”\` attribute for accessibility.
+- **Disabled**: It cannot be selected. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility.
+- **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility without using the \`disabled\` property. By adding the hidden \`_instructions\` element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the \`aria-live\` property.
 `
     }
 };
@@ -538,14 +538,14 @@ focusableDisabled.storyName = 'Focusable disabled';
 focusableDisabled.parameters = {
     docs: {
         storyDescription: `
-The disabled button can be focusable by adding the <code>aria-disabled</code> attribute. To enable the focus ring in a focusable disabled button, ensure that <code>is-disabled</code> is present while <code>disabled</code> is not. 
+The disabled button can be focusable by adding the \`aria-disabled\` attribute. To enable the focus ring in a focusable disabled button, ensure that \`is-disabled\` is present while \`disabled\` is not. 
 
 ####Accessibility 
-When adding this attribute, make sure to not use the <code>disabled</code> property so that the button is both focusable and readable by screen readers.
+When adding this attribute, make sure to not use the \`disabled\` property so that the button is both focusable and readable by screen readers.
         
-When the state of the button has changed, add <code>aria-live=”assertive”</code> to prompt the screen reader to read the helper text out loud. 
+When the state of the button has changed, add \`aria-live=”assertive”\` to prompt the screen reader to read the helper text out loud. 
         
-Note: For the text to be read out loud by screen readers, a helper text has been added with <code>aria-describedby</code> matching the <code>id</code> of the paragraph element with the <code>_instructions</code> element. The element uses the <code>screen-reader-only</code> styling so that it is not visible.
+Note: For the text to be read out loud by screen readers, a helper text has been added with \`aria-describedby\` matching the \`id\` of the paragraph element with the \`_instructions\` element. The element uses the \`screen-reader-only\` styling so that it is not visible.
         
 `
     }

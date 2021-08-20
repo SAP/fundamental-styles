@@ -81,7 +81,7 @@ export const businessSuiteIcons = () => {
 businessSuiteIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the <code>sap-icon-businessSuiteInAppSymbols--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon-businessSuiteInAppSymbols</code> class. For example, for a <i>heart</i> icon, add <code>sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart</code> with the desired font size value.'
+        storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the `sap-icon-businessSuiteInAppSymbols--{icon-name}` modifier class identifying the icon style to the `sap-icon-businessSuiteInAppSymbols` class. For example, for a <i>heart</i> icon, add `sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart` with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

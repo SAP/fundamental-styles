@@ -7,14 +7,14 @@ export default {
   Place patterns and interactions within panels on your pages to achieve focus and separation for the tasks at-hand with the information displayed inside the panel.
 
   ## Elements
-  - <code>.fd-layout-panel__header</code>: Layout Panel header.
-  - <code>.fd-layout-panel__head</code>: Container for title and description.
-  - <code>.fd-layout-panel__title</code>: Title of the Layout Panel.
-  - <code>.fd-layout-panel__description</code>: Title of the description.
-  - <code>.fd-layout-panel__actions</code>: Layout Panel level actions such as add, remove, delete, sort, etc.
-  - <code>.fd-layout-panel__filters</code>: Layout Panel level filters that is specific to the data being displayed within the panel.
-  - <code>.fd-layout-panel__body</code>: Main content of the Layout Panel can that hold lists, table, tree, text, form or any other infomation.
-  - <code>.fd-layout-panel__footer</code>: Layout Panel footer can be utilized for pagination, secondary actions, add more data, etc.
+  - \`.fd-layout-panel__header\`: Layout Panel header.
+  - \`.fd-layout-panel__head\`: Container for title and description.
+  - \`.fd-layout-panel__title\`: Title of the Layout Panel.
+  - \`.fd-layout-panel__description\`: Title of the description.
+  - \`.fd-layout-panel__actions\`: Layout Panel level actions such as add, remove, delete, sort, etc.
+  - \`.fd-layout-panel__filters\`: Layout Panel level filters that is specific to the data being displayed within the panel.
+  - \`.fd-layout-panel__body\`: Main content of the Layout Panel can that hold lists, table, tree, text, form or any other infomation.
+  - \`.fd-layout-panel__footer\`: Layout Panel footer can be utilized for pagination, secondary actions, add more data, etc.
       `,
         components: ['layout-panel', 'title']
     }

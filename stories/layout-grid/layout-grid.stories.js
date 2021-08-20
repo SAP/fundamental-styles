@@ -240,7 +240,7 @@ export const nesting = () => `<div class="fd-container">
 nesting.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'Add an extra <code class="docs-code">fd-row</code> class in between inner rows when using nesting. It will add a gutter in between rows.'
+        storyDescription: 'Add an extra `fd-row` class in between inner rows when using nesting. It will add a gutter in between rows.'
     }
 };
 
@@ -286,7 +286,7 @@ export const offset = () => `<div class="fd-container">
 offset.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: 'To add an offset to the left of the column for all sizes use the <code class="docs-code">--offset-x</code> modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next line. To add an offset to the left of the column for certain sizes and above use the <code class="docs-code">--offset-x--size</code> modifier, where size is either s,m,l,xl. To make the offset after and not before use the <code class="docs-code">--offset-after-x--size</code> modifier.'
+        storyDescription: 'To add an offset to the left of the column for all sizes use the `--offset-x` modifier. X will be the size of your choice. If the column after the offset col no longer fits in parent container it will switch to the next line. To add an offset to the left of the column for certain sizes and above use the `--offset-x--size` modifier, where size is either s,m,l,xl. To make the offset after and not before use the `--offset-after-x--size` modifier.'
     }
 };
 
@@ -329,7 +329,7 @@ export const noHorizontalGap = () => `<div class="fd-container fd-container--no-
 noHorizontalGap.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To remove gutters between columns apply the <code class="docs-code">fd-container--no-horizontal-gap</code> modifier to the container.'
+        storyDescription: 'To remove gutters between columns apply the `fd-container--no-horizontal-gap` modifier to the container.'
     }
 };
 
@@ -372,7 +372,7 @@ export const noVerticalGap = () => `<div class="fd-container fd-container--no-ve
 noVerticalGap.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To remove gutters between rows apply the <code class="docs-code">fd-container--no-vertical-gap</code> modifier to the container.'
+        storyDescription: 'To remove gutters between rows apply the `fd-container--no-vertical-gap` modifier to the container.'
     }
 };
 
@@ -415,7 +415,7 @@ export const noGap = () => `<div class="fd-container fd-container--no-horizontal
 noGap.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To remove gutters between rows and columns apply both the <code class="docs-code">fd-container--no-vertical-gap</code> and <code class="docs-code">fd-container--no-horizontal-gap</code> modifiers to the container.'
+        storyDescription: 'To remove gutters between rows and columns apply both the `fd-container--no-vertical-gap` and `fd-container--no-horizontal-gap` modifiers to the container.'
     }
 };
 
@@ -443,7 +443,7 @@ export const autoAdjusting = () => `<div class="fd-container">
 autoAdjusting.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To make the column auto adjust and occupy the remaining space of the row use the <code class="docs-code">--full</code> modifier. There is a minimum width of 1/12 columns'
+        storyDescription: 'To make the column auto adjust and occupy the remaining space of the row use the `--full` modifier. There is a minimum width of 1/12 columns'
     }
 };
 

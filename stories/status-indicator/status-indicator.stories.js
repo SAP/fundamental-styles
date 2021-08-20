@@ -149,10 +149,10 @@ Sizes.parameters = {
         storyDescription: `
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
-| Small          | 0.75rem    | <code>--sm</code>         |
-| Medium/Default | 0.875rem   | <code>--md</code>         |
-| Large          | 1.125rem   | <code>--lg</code>         |
-| Extra Large    | 1.875rem   | <code>--xl</code>         |
+| Small          | 0.75rem    | \`--sm\`         |
+| Medium/Default | 0.875rem   | \`--md\`         |
+| Large          | 1.125rem   | \`--lg\`         |
+| Extra Large    | 1.875rem   | \`--xl\`         |
 `
     }
 };

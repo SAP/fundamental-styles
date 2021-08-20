@@ -9,9 +9,9 @@ The time component consists of three main styles to indicate a specific state:
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class | Description |
 | -------------| :------------- | :-------------- |
-| <li class='fd-time__item'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item</code> | Class used to style inactive time slider items. | 
-| <li class='fd-time__item fd-time__item--collapsed'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--collapsed</code> | Class used to style collapsed time slider items. <br>When this item is displayed, all inactive items below/above it are collapsed (out of sight). |
-| <li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li> | <code class="docs-code">.fd-time\\_\\_item--current</code> | Class used to style current (active) time slider items. |
+| <li class='fd-time__item'><span class='fd-time__unit'>01</span></li> | <code>.fd-time__item</code> | Class used to style inactive time slider items. | 
+| <li class='fd-time__item fd-time__item--collapsed'><span class='fd-time__unit'>01</span></li> | <code>.fd-time__item--collapsed</code> | Class used to style collapsed time slider items. <br>When this item is displayed, all inactive items below/above it are collapsed (out of sight). |
+| <li class='fd-time__item fd-time__item--current'><span class='fd-time__unit'>01</span></li> | <code>.fd-time__item--current</code> | Class used to style current (active) time slider items. |
 
 
 ##Usage

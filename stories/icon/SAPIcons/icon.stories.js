@@ -81,7 +81,7 @@ export const availableIcons = () => {
 availableIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'There are several icons available. To display any one of these icons, add the <code>sap-icon--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon</code> class. For example, for a search icon, add <code>sap-icon sap-icon--search</code> with the desired font size value.'
+        storyDescription: 'There are several icons available. To display any one of these icons, add the `sap-icon--{icon-name}` modifier class identifying the icon style to the `sap-icon` class. For example, for a search icon, add `sap-icon sap-icon--search` with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

@@ -2,7 +2,7 @@ export default {
     title: 'Patterns/Contextual Menu',
     parameters: {
         description: `
-The contextual menu component is an opinionated composition of the <code>popover</code> and <code>menu</code> components with the use of a styled button.
+The contextual menu component is an opinionated composition of the \`popover\` and \`menu\` components with the use of a styled button.
 
 A More icon or the word, "More", is used to indicate there are more options than room to display them. On click or tap, a contextual menu opens. Composed by the "popover" and "menu" components.
 

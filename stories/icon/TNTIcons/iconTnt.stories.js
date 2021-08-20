@@ -81,7 +81,7 @@ export const tntIcons = () => {
 tntIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the <code>sap-icon-TNT--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon-TNT</code> class. For example, for an <i>exceptions</i> icon, add <code>sap-icon-TNT sap-icon-TNT--exceptions</code> with the desired font size value.'
+        storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the `sap-icon-TNT--{icon-name}` modifier class identifying the icon style to the `sap-icon-TNT` class. For example, for an <i>exceptions</i> icon, add `sap-icon-TNT sap-icon-TNT--exceptions` with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

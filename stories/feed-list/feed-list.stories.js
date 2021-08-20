@@ -105,7 +105,7 @@ export const noImage = () => `<ul class="fd-feed-list" aria-label="Feed List Ite
 noImage.storyName = 'No image';
 noImage.parameters = {
     docs: {
-        storyDescription: 'The feed list item can be displayed without an image by removing the <code class="docs-code">fd-avatar</code> element from the container.'
+        storyDescription: 'The feed list item can be displayed without an image by removing the `fd-avatar` element from the container.'
     }
 };
 
@@ -140,7 +140,7 @@ export const linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item
 linked.storyName = 'Linked';
 linked.parameters = {
     docs: {
-        storyDescription: 'The feed list item can display linked usernames (and images). To display a linked username, add the <code class="docs-code">fd-link</code> class with the <code class="docs-code">fd-link--emphasized</code> modifier to the <code class="docs-code">fd-feed-list__name</code> element.'
+        storyDescription: 'The feed list item can display linked usernames (and images). To display a linked username, add the `fd-link` class with the `fd-link--emphasized` modifier to the `fd-feed-list__name` element.'
     }
 };
 
@@ -412,7 +412,7 @@ export const borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
 borderless.storyName = 'Borderless group';
 borderless.parameters = {
     docs: {
-        storyDescription: 'When feed list items are displayed in a group, they are usually separated by borders. However, to remove the borders, add the <code class="docs-code">fd-feed-list--no-border</code> modifier class to the main element.'
+        storyDescription: 'When feed list items are displayed in a group, they are usually separated by borders. However, to remove the borders, add the `fd-feed-list--no-border` modifier class to the main element.'
     }
 };
 
@@ -488,6 +488,6 @@ export const mobile = () => `<div style="width: 350px; height: 600px; position: 
 mobile.storyName = 'Mobile';
 mobile.parameters = {
     docs: {
-        storyDescription: 'The feed list item can be mobile responsive by adding the <code class="docs-code">fd-feed-list--s</code> modifier class to the main element.'
+        storyDescription: 'The feed list item can be mobile responsive by adding the `fd-feed-list--s` modifier class to the main element.'
     }
 };

@@ -6,7 +6,7 @@ The date picker lets users select a localized date using touch, mouse, or keyboa
 
 Use this control if the user needs to enter a single date or a date range. The control also allows users to navigate directly from one month or year to another.
 
-The date-picker component is an opinionated composition of the <code>input-group</code>, <code>popover</code> and <code>calendar</code> components to accomplish the UI pattern for picking a date.
+The date-picker component is an opinionated composition of the \`input-group\`, \`popover\` and \`calendar\` components to accomplish the UI pattern for picking a date.
 
 This component mostly relies on the CSS of other components and has very little CSS of its own.
 `,
