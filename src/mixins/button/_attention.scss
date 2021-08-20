@@ -16,7 +16,7 @@
 
 @mixin attentionPressed() {
   @include applyColors(
-    var(--sapButton_Selected_TextColor),
+    var(--sapButton_Attention_Active_TextColor),
     var(--sapButton_Attention_Active_BorderColor),
     var(--sapButton_Attention_Active_Background)
   );
