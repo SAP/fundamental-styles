@@ -23,6 +23,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
+  $fd-input-padding: 0.625rem;
   $fd-input-width-basis: 10rem;
   $fd-input-group-add-on-border: 0.0625rem;
   $fd-input-group-button-active-text-color: var(--sapButton_Active_TextColor);
@@ -98,23 +99,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
 
     &:nth-child(1) {
-      padding-left: 0.625rem;
-      padding-right: 0.25rem;
-
-      @include fd-rtl() {
-        padding-left: 0.25rem;
-        padding-right: 0.625rem;
-      }
+      @include fd-set-padding-left($fd-input-padding);
     }
 
     &:nth-last-child(1) {
-      padding-left: 0.25rem;
-      padding-right: 0.625rem;
-
-      @include fd-rtl() {
-        padding-left: 0.625rem;
-        padding-right: 0.25rem;
-      }
+      @include fd-set-padding-right($fd-input-padding);
     }
   }
 
