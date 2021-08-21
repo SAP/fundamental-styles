@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.18...v0.20.0-rc.19) (2021-08-21)
+
+
+### Bug Fixes
+
+* correct style in input-group  ([#2661](https://github.com/SAP/fundamental-styles/issues/2661)) ([8e11efd](https://github.com/SAP/fundamental-styles/commit/8e11efd09de87d1e5c2ce5ecea89327d84639a53))
+
 ## [0.20.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.17...v0.20.0-rc.18) (2021-08-20)
 
 
