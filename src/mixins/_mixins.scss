@@ -627,3 +627,9 @@
     @include fd-set-paddings-x-equal(3rem);
   }
 }
+
+@mixin fd-apply-border($borderColor, $borderWidth, $borderStyle) {
+  border-color: $borderColor;
+  border-width: $borderWidth;
+  border-style: $borderStyle;
+}
