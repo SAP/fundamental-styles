@@ -16,7 +16,7 @@
   &.is-success {
     background-color: var(--sapField_SuccessBackground);
 
-    @include applyBorder(
+    @include fd-apply-border(
       var(--sapField_SuccessColor),
       var(--sapField_SuccessBorderWidth),
       var(--sapField_SuccessBorderStyle)
@@ -33,7 +33,7 @@
     font-style: var(--fdInput_State_Text_Style);
     font-weight: var(--fdInput_State_Font_Weight);
 
-    @include applyBorder(
+    @include fd-apply-border(
       var(--sapField_InvalidColor),
       var(--sapField_InvalidBorderWidth),
       var(--sapField_InvalidBorderStyle)
@@ -51,7 +51,7 @@
     font-style: var(--fdInput_State_Text_Style);
     font-weight: var(--fdInput_State_Font_Weight);
 
-    @include applyBorder(
+    @include fd-apply-border(
       var(--sapField_WarningColor),
       var(--sapField_WarningBorderWidth),
       var(--sapField_WarningBorderStyle)
@@ -66,7 +66,7 @@
   &.is-information {
     background-color: var(--sapField_InformationBackground);
 
-    @include applyBorder(
+    @include fd-apply-border(
       var(--sapField_InformationColor),
       var(--sapField_InformationBorderWidth),
       var(--sapField_InformationBorderStyle)
@@ -182,10 +182,4 @@
     margin-left: $fd-label-spacing;
     margin-right: 0;
   }
-}
-
-@mixin applyBorder($borderColor, $borderWidth, $borderStyle) {
-  border-color: $borderColor;
-  border-width: $borderWidth;
-  border-style: $borderStyle;
 }
