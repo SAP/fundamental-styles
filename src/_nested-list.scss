@@ -86,8 +86,6 @@ $button: #{$fd-namespace}-button;
 
     .#{$block}__group-header {
       @include fd-nested-list-popover-border-top-radius();
-
-      border-bottom: none;
     }
 
     .#{$block}__item {

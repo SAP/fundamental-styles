@@ -2201,18 +2201,24 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
     >
       
             
+      <div
+        class="fd-nested-list fd-nested-list--popover fd-nested-list--compact"
+      >
+            
+                
+        <div
+          class="fd-nested-list__group-header"
+        >
+          Group Header 1
+        </div>
+        
+            
+      </div>
+      
+            
       <ul
         class="fd-nested-list fd-nested-list--popover fd-nested-list--compact"
       >
-        
-                
-        <li
-          class="fd-nested-list__group-header"
-        >
-          
-                    Group Header 1
-                
-        </li>
         
                 
         <li
