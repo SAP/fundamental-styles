@@ -252,7 +252,7 @@ $block: #{$fd-namespace}-popover;
     opacity: 1;
 
     &--no-arrow {
-      margin: 0 !important;
+      margin: 0 0.05rem !important;
 
       .#{$block}__arrow {
         display: none;
