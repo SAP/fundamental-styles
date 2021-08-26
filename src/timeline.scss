@@ -15,6 +15,7 @@ $fd-timeline-post-background: var(--sapGroup_ContentBackground);
 $fd-timeline-group-offset-double: $fd-timeline-group-offset * 2 !default;
 $fd-timeline-post-border: 0.0625rem solid var(--sapGroup_ContentBorderColor) !default;
 $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !default;
+$fd-timeline-line-width: 1.5rem;
 
 @mixin fd-timeline-group-icon($color) {
   [class*='sap-icon'] {
@@ -266,11 +267,29 @@ $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !d
     color: var(--sapButton_Selected_TextColor);
   }
 
+  .fd-timeline__node-wrapper {
+    @include fd-flex();
+    @include fd-set-padding-left($fd-timeline-line-width);
+
+    position: relative;
+
+    :last-child {
+      .fd-timeline__connecting-line:last-child {
+        visibility: hidden;
+      }
+    }
+  }
+
   &__node-container {
     @include fd-flex(column) {
       align-items: center;
     }
 
+    @include fd-set-position-left(0);
+
+    position: absolute;
+    top: 0;
+    width: $fd-timeline-line-width;
     height: 100%;
 
     &--horizontal {
@@ -287,6 +306,14 @@ $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !d
         &--icon {
           @include fd-reset-margins-y();
           @include fd-set-margins-x-equal(0.5rem);
+
+          font-size: 1.375rem;
+
+          [class*="sap-icon"] {
+            @include fd-flex() {
+              justify-content: center;
+            }
+          }
         }
       }
     }
@@ -337,6 +364,10 @@ $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !d
 
     flex: 1;
     height: 0.0625rem;
+
+    &:first-child {
+      flex: 0 0 1rem;
+    }
   }
 
   &__posts {
@@ -360,6 +391,7 @@ $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !d
     border-radius: 0.25rem;
     border: $fd-timeline-post-border;
     background: $fd-timeline-post-background;
+    flex-grow: 1;
 
     @include fd-after() {
       @include fd-reset();
@@ -405,6 +437,8 @@ $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !d
         left: auto;
         right: $fd-timeline-post-arrow-offset;
       }
+
+      @include fd-set-margin-left(1rem);
     }
 
     &--top {
@@ -454,6 +488,7 @@ $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !d
   &__post-header-title {
     @include fd-reset();
 
+    margin-right: 0.3rem;
     font-weight: bold;
   }
 
@@ -464,6 +499,7 @@ $fd-timeline-group-arrow-border: 0.0625rem solid var(--sapButton_BorderColor) !d
   &__post-subheader {
     @include fd-reset();
 
+    display: block;
     margin-top: 0.125rem;
     font-size: var(--sapFontSmallSize);
     color: var(--sapContent_LabelColor);
