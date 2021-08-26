@@ -1267,7 +1267,7 @@ export const nestedListPopover = () => `<div class="fddocs-container" style="mar
             </ul>
         </div>
         <div class="fd-popover__popper" aria-hidden="false" id="popoverA11">
-            <div class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">    
+            <div class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
                 <div class="fd-nested-list__group-header">Group Header 1</div>
             </div>
             <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
