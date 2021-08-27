@@ -21,7 +21,7 @@ Use a meaningful link text that indicates what will happen when the user interac
 Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the user what the purpose of the link is.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['icon', 'link']
+        components: ['icon', 'link', 'shellbar']
     }
 };
 
@@ -34,7 +34,7 @@ export const primary = () => `
 <br><br>
 <a class="fd-link" aria-disabled="true">Disabled link</a>
 <br><br>
-<div style="background-color:#314a5e;padding:10px">
+<div class="fd-shellbar">
     <a href="#" class="fd-link fd-link--inverted">Inverted link</a>
 </div>
 <br><br>
