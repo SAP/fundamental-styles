@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.21...v0.20.0-rc.22) (2021-08-27)
+
+
+### Bug Fixes
+
+* added missing paddings to subtabs of icon tab bar [ci visual] ([#2681](https://github.com/SAP/fundamental-styles/issues/2681)) ([0c12ef0](https://github.com/SAP/fundamental-styles/commit/0c12ef09ba262e343e6b7c6e358c137de720c773))
+
 ## [0.20.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.20...v0.20.0-rc.21) (2021-08-26)
 
 ## [0.20.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.19...v0.20.0-rc.20) (2021-08-24)
