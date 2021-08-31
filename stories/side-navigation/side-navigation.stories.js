@@ -1268,7 +1268,7 @@ export const nestedListPopover = () => `<div class="fddocs-container" style="mar
         </div>
         <div class="fd-popover__popper" aria-hidden="false" id="popoverA11">
             <div class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
-                <div class="fd-nested-list__group-header">Group Header 1</div>
+                <div class="fd-nested-list__popover-header">Popover Header</div>
             </div>
             <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
                 <li class="fd-nested-list__item">
@@ -1292,7 +1292,80 @@ export const nestedListPopover = () => `<div class="fddocs-container" style="mar
             </ul>
         </div>
     </div>
-    <div class="fd-popover fd-popover--right" style="margin-bottom: 200px">
+
+    <div class="fd-popover fd-popover--right">
+        <div class="fd-popover__control">
+            <ul class="fd-nested-list fd-nested-list--compact">
+                <li class="fd-nested-list__item">
+                    <a class="fd-nested-list__link" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="fd-popover__popper" aria-hidden="false" id="popoverA12">
+            <div class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
+                <div class="fd-nested-list__popover-header">Popover Header</div>
+            </div>
+            <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
+                <li class="fd-nested-list__group-header">Group Header</li>
+                <li class="fd-nested-list__item fd-nested-list__item--popover">
+                    <a class="fd-nested-list__link" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                </li>
+                <li class="fd-nested-list__item fd-nested-list__item--popover">
+                    <a class="fd-nested-list__link is-selected" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                </li>
+                <li class="fd-nested-list__item fd-nested-list__item--popover">
+                    <a class="fd-nested-list__link" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fd-popover fd-popover--right">
+        <div class="fd-popover__control">
+            <ul class="fd-nested-list fd-nested-list--compact">
+                <li class="fd-nested-list__item">
+                    <a class="fd-nested-list__link" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="fd-popover__popper" aria-hidden="false" id="popoverA12">
+            <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
+                <li class="fd-nested-list__group-header">Group Header</li>
+                <li class="fd-nested-list__item fd-nested-list__item--popover">
+                    <a class="fd-nested-list__link" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--home"></i>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                </li>
+                <li class="fd-nested-list__item fd-nested-list__item--popover">
+                    <a class="fd-nested-list__link is-selected" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--calendar"></i>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                </li>
+                <li class="fd-nested-list__item fd-nested-list__item--popover">
+                    <a class="fd-nested-list__link" href="#/">
+                        <i role="presentation" class="fd-nested-list__icon sap-icon--activities"></i>
+                        <span class="fd-nested-list__title">Level 1 Item</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fd-popover fd-popover--right">
         <div class="fd-popover__control">
             <ul class="fd-nested-list fd-nested-list--compact">
                 <li class="fd-nested-list__item">
