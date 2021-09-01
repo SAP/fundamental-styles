@@ -84,41 +84,11 @@ $button: #{$fd-namespace}-button;
   &--popover {
     border-bottom: none;
 
-    .#{$block}__popover-header {
-      @include fd-nested-list-popover-border-top-radius();
-
-      height: 2.75rem;
-      background: var(--sapList_GroupHeaderBackground);
-      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
-      color: var(--sapList_GroupHeaderTextColor);
-      display: flex;
-      align-items: flex-end;
-      font-size: var(--sapFontSize);
-      font-weight: bold;
-      line-height: 2rem;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
     .#{$block}__group-header {
-      @include fd-nested-list-popover-border-top-radius();
-
       border-bottom: none;
     }
 
     .#{$block}__item {
-      &:first-child {
-        @include fd-nested-list-popover-border-top-radius();
-
-        .#{$block}__link,
-        .#{$block}__content {
-          @include fd-nested-list-popover-border-top-radius();
-        }
-      }
-
       &:last-child {
         @include fd-nested-list-popover-border-bottom-radius();
 
