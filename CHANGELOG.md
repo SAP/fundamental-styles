@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.23...v0.20.0-rc.24) (2021-09-01)
+
+
+### Bug Fixes
+
+* focus indication provided for Inverted Link. ([#2698](https://github.com/SAP/fundamental-styles/issues/2698)) ([8f65425](https://github.com/SAP/fundamental-styles/commit/8f654254f27e2e98bd1ea38a30f20d844a0cd414))
+
 ## [0.20.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.22...v0.20.0-rc.23) (2021-08-30)
 
 ## [0.20.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.21...v0.20.0-rc.22) (2021-08-27)
