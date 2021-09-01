@@ -34,7 +34,7 @@ export const primary = () => `
 <br><br>
 <a class="fd-link" aria-disabled="true">Disabled link</a>
 <br><br>
-<div style="background-color:#314a5e;padding:10px">
+<div  style="background-color:var(--sapShellColor);padding:10px">
     <a href="#" class="fd-link fd-link--inverted">Inverted link</a>
 </div>
 <br><br>
@@ -70,6 +70,5 @@ You can display a link with an icon placed on either side of the link text.
 | Left Arrow | \`sap-icon--slim-arrow-left sap-icon--s\` |
 | Right Arrow | \`sap-icon--slim-arrow-right sap-icon--s\` |
 `
-
     }
 };

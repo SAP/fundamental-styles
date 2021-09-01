@@ -245,6 +245,10 @@
     @include fd-hover() {
       color: var(--sapLink_InvertedColor);
     }
+
+    @include fd-focus() {
+      outline-color: var(--sapContent_ContrastFocusColor);
+    }
   }
 
   &--subtle {
