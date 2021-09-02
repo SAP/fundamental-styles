@@ -84,6 +84,19 @@ $button: #{$fd-namespace}-button;
   &--popover {
     border-bottom: none;
 
+    .#{$block}__popover-header {
+      @include fd-reset();
+      @include fd-nested-list-popover-border-top-radius();
+
+      background: var(--sapList_Background);
+      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+      height: 2.75rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
     .#{$block}__group-header {
       border-bottom: none;
     }

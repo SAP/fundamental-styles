@@ -29,7 +29,7 @@ Side navigation can be viewed in three different states:
         `,
 
         tags: ['f3', 'a11y', 'theme'],
-        components: ['side-nav', 'button', 'icon', 'nested-list', 'popover', 'bar']
+        components: ['side-nav', 'button', 'icon', 'nested-list', 'popover']
     }
 };
 
@@ -1267,15 +1267,12 @@ export const nestedListPopover = () => `<div class="fddocs-container" style="mar
             </ul>
         </div>
         <div class="fd-popover__popper" aria-hidden="false" id="popoverA11">
-            <div class="fd-popover__body-header">
-                <div class="fd-bar fd-bar--header">
-                    <div class="fd-bar__left">
-                        <div class="fd-bar__element">
-                            Popover Header
-                        </div>
-                    </div>
+            <div class="fd-nested-list fd-nested-list--text-only fd-nested-list--popover">
+                <div class="fd-nested-list__popover-header">
+                    <span class="fd-nested-list__title">Popover Header</span>
                 </div>
             </div>
+
             <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
                 <li class="fd-nested-list__item">
                     <a class="fd-nested-list__link" href="#/">
@@ -1310,13 +1307,9 @@ export const nestedListPopover = () => `<div class="fddocs-container" style="mar
             </ul>
         </div>
         <div class="fd-popover__popper" aria-hidden="false" id="popoverA12">
-            <div class="fd-popover__body-header">
-                <div class="fd-bar fd-bar--header">
-                    <div class="fd-bar__left">
-                        <div class="fd-bar__element">
-                            Popover Header
-                        </div>
-                    </div>
+            <div class="fd-nested-list fd-nested-list--text-only fd-nested-list--popover">
+                <div class="fd-nested-list__popover-header">
+                    <span class="fd-nested-list__title">Popover Header</span>
                 </div>
             </div>
             <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">

@@ -2202,30 +2202,20 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
             
       <div
-        class="fd-popover__body-header"
+        class="fd-nested-list fd-nested-list--text-only fd-nested-list--popover"
       >
         
                 
         <div
-          class="fd-bar fd-bar--header"
+          class="fd-nested-list__popover-header"
         >
           
                     
-          <div
-            class="fd-bar__left"
+          <span
+            class="fd-nested-list__title"
           >
-            
-                        
-            <div
-              class="fd-bar__element"
-            >
-              
-                            Popover Header
-                        
-            </div>
-            
-                    
-          </div>
+            Popover Header
+          </span>
           
                 
         </div>
@@ -2233,6 +2223,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
             
       </div>
       
+
             
       <ul
         class="fd-nested-list fd-nested-list--popover fd-nested-list--compact"
@@ -2391,30 +2382,20 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
             
       <div
-        class="fd-popover__body-header"
+        class="fd-nested-list fd-nested-list--text-only fd-nested-list--popover"
       >
         
                 
         <div
-          class="fd-bar fd-bar--header"
+          class="fd-nested-list__popover-header"
         >
           
                     
-          <div
-            class="fd-bar__left"
+          <span
+            class="fd-nested-list__title"
           >
-            
-                        
-            <div
-              class="fd-bar__element"
-            >
-              
-                            Popover Header
-                        
-            </div>
-            
-                    
-          </div>
+            Popover Header
+          </span>
           
                 
         </div>
