@@ -1533,6 +1533,181 @@ exports[`Storyshots Components/Icon Tab Bar Filter 1`] = `
 </section>
 `;
 
+exports[`Storyshots Components/Icon Tab Bar Flat Navigation 1`] = `
+<div
+  class="fddocs-icon-tab-container"
+  style="min-height: 100px;"
+>
+  
+    
+  <div
+    class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--navigation-flat fd-icon-tab-bar--md"
+  >
+    
+        
+    <ul
+      class="fd-icon-tab-bar__header"
+      role="tablist"
+    >
+        
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab11"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 1
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--with-separator"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          id="tab12"
+          role="tab"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 2
+          </span>
+          
+                
+        </a>
+        
+
+                
+        <div
+          class="fd-popover fd-icon-tab-bar__popover"
+        >
+          
+                    
+          <div
+            class="fd-popover__control"
+          >
+            
+                        
+            <div
+              class="fd-icon-tab-bar__button-container"
+            >
+              
+                            
+              <button
+                aria-label="open menu button"
+                class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button"
+              >
+                
+                                
+                <i
+                  class="sap-icon--slim-arrow-down"
+                />
+                
+                            
+              </button>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--with-separator"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab13"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 3
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab14"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 4
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+        
+    </ul>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
 exports[`Storyshots Components/Icon Tab Bar Icon 1`] = `
 <section>
   <div
@@ -3009,7 +3184,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only in Compact Mode 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
+exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar (Shell Navigation) 1`] = `
 <div
   class="fddocs-icon-tab-container"
   style="min-height: 600px;"
@@ -3391,19 +3566,19 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
     class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--xl"
   >
     
-    
+        
     <ul
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
       
-      
+            
       <li
         class="fd-icon-tab-bar__item"
         role="presentation"
       >
         
-        
+                
         <a
           class="fd-icon-tab-bar__tab"
           href="#"
@@ -3411,36 +3586,36 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
           role="tab"
         >
           
-          
+                    
           <span
             class="fd-icon-tab-bar__tag"
           >
             Section 1
           </span>
           
-        
+                
         </a>
         
-      
+            
       </li>
       
-      
+            
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click"
         role="presentation"
       >
         
-        
+                
         <div
           class="fd-popover"
         >
           
-          
+                
           <div
             class="fd-popover__control"
           >
             
-            
+                    
             <a
               aria-controls="popoverAO5"
               aria-expanded="true"
@@ -3453,55 +3628,55 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
               tabindex="0"
             >
               
-              
+                    
               <div
                 class="fd-icon-tab-bar__tab-container"
               >
                 
-                
+                        
                 <span
                   class="fd-icon-tab-bar__tag"
                 >
                   Section 2
                 </span>
                 
-                
+                        
                 <span
                   class="fd-icon-tab-bar__arrow"
                 >
                   
-                    
+                            
                   <i
                     class="sap-icon--slim-arrow-down"
                     role="presentation"
                   />
                   
-                
+                        
                 </span>
                 
-              
+                    
               </div>
               
-            
+                    
             </a>
             
-          
+                
           </div>
           
-          
+                
           <div
             aria-hidden="false"
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
             id="popoverAO5"
           >
             
-            
+                    
             <ul
               class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list"
               role="list"
             >
               
-              
+                    
               <li
                 aria-level="1"
                 class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
@@ -3509,26 +3684,26 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
                 tabindex="-1"
               >
                 
-                
+                        
                 <a
                   class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
-                  
+                            
                   <span
                     class="fd-list__title"
                   >
                     Subsection 1
                   </span>
                   
-                
+                        
                 </a>
                 
-              
+                    
               </li>
               
-              
+                    
               <li
                 aria-level="1"
                 class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
@@ -3536,44 +3711,44 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
                 tabindex="-1"
               >
                 
-                
+                        
                 <a
                   class="fd-list__link fd-icon-tab-bar__list-link"
                   tabindex="0"
                 >
                   
-                  
+                            
                   <span
                     class="fd-list__title"
                   >
                     Subsection 2
                   </span>
                   
-                
+                        
                 </a>
                 
-              
+                    
               </li>
               
-            
+                    
             </ul>
             
-          
+                
           </div>
           
-        
+                
         </div>
         
-      
+            
       </li>
       
-      
+            
       <li
         class="fd-icon-tab-bar__item"
         role="presentation"
       >
         
-        
+                
         <a
           class="fd-icon-tab-bar__tab"
           href="#"
@@ -3581,36 +3756,36 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
           role="tab"
         >
           
-          
+                
           <span
             class="fd-icon-tab-bar__tag"
           >
             Section 3
           </span>
           
-        
+                
         </a>
         
-      
+            
       </li>
       
-      
+            
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click"
         role="presentation"
       >
         
-        
+                
         <div
           class="fd-popover"
         >
           
-          
+                    
           <div
             class="fd-popover__control"
           >
             
-            
+                        
             <a
               aria-expanded="true"
               aria-haspopup="true"
@@ -3620,51 +3795,51 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar 1`] = `
               tabindex="0"
             >
               
-              
+                        
               <div
                 class="fd-icon-tab-bar__tab-container"
               >
                 
-                
+                            
                 <span
                   class="fd-icon-tab-bar__tag"
                 >
                   Section 4
                 </span>
                 
-                
+                            
                 <span
                   class="fd-icon-tab-bar__arrow"
                 >
                   
-                    
+                                
                   <i
                     class="sap-icon--slim-arrow-down"
                     role="presentation"
                   />
                   
-                
+                            
                 </span>
                 
-              
+                        
               </div>
               
-            
+                        
             </a>
             
-          
+                    
           </div>
           
-        
+                
         </div>
         
-      
+            
       </li>
       
-    
+        
     </ul>
     
-  
+    
   </div>
   
 
