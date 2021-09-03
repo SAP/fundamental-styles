@@ -2202,7 +2202,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
             
       <div
-        class="fd-nested-list fd-nested-list--text-only fd-nested-list--popover"
+        class="fd-nested-list fd-nested-list--popover fd-nested-list--compact"
       >
         
                 
@@ -2210,13 +2210,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
           class="fd-nested-list__popover-header"
         >
           
-                    
-          <span
-            class="fd-nested-list__title"
-          >
-            Popover Header
-          </span>
-          
+                    Popover Header
                 
         </div>
         
@@ -2341,7 +2335,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
             
       <ul
-        class="fd-nested-list fd-nested-list--compact"
+        class="fd-nested-list"
       >
         
                 
@@ -2382,7 +2376,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
             
       <div
-        class="fd-nested-list fd-nested-list--text-only fd-nested-list--popover"
+        class="fd-nested-list fd-nested-list--popover"
       >
         
                 
@@ -2390,13 +2384,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
           class="fd-nested-list__popover-header"
         >
           
-                    
-          <span
-            class="fd-nested-list__title"
-          >
-            Popover Header
-          </span>
-          
+                    Popover Header
                 
         </div>
         
@@ -2405,7 +2393,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
       
             
       <ul
-        class="fd-nested-list fd-nested-list--popover fd-nested-list--compact"
+        class="fd-nested-list fd-nested-list--popover"
       >
         
                 

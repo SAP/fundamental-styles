@@ -93,6 +93,8 @@ $button: #{$fd-namespace}-button;
       height: 2.75rem;
       padding-right: 1rem;
       padding-left: 1rem;
+      font-size: var(--sapFontLargeSize);
+      color: var(--sapList_TextColor);
       display: flex;
       align-items: center;
     }
@@ -360,11 +362,13 @@ $button: #{$fd-namespace}-button;
   }
 
   &--compact {
+    .#{$block}__popover-header,
     .#{$block}__link,
     .#{$block}__content {
       height: 2rem;
     }
 
+    .#{$block}__popover-header,
     .#{$block}__title {
       font-size: var(--sapFontSize);
     }
