@@ -1,4 +1,16 @@
 
+## [0.20.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.27...v0.20.0-rc.28) (2021-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* introduced a wrapper element with class ".fd-horizontal-navigation" for Tool Header and Navigation IconTabBar
+introduced an additional modifier class ".fd-icon-tab-bar--navigation-horizontal" to IconTabBar when used in Horizontal Navigation
+
+### Bug Fixes
+
+* introduce Flat Navigation, refactor Horizontal Navigation ([#2701](https://github.com/SAP/fundamental-styles/issues/2701)) ([3175334](https://github.com/SAP/fundamental-styles/commit/3175334f39465ba31b2e137afb10b390bc6daf76))
+
 ## [0.20.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.26...v0.20.0-rc.27) (2021-09-09)
 
 ## [0.20.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.25...v0.20.0-rc.26) (2021-09-05)
