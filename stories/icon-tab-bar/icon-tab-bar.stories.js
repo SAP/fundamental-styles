@@ -1524,68 +1524,116 @@ export const navigation = () => `<div class="fddocs-icon-tab-container" style="m
     <div style="height: 120px;"></div>
     <h4>With Single Click Area</h4>
     <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--xl">
-    <ul role="tablist" class="fd-icon-tab-bar__header">
-      <li role="presentation" class="fd-icon-tab-bar__item">
-        <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab7">
-          <span class="fd-icon-tab-bar__tag">Section 1</span>
-        </a>
-      </li>
-      <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
-        <div class="fd-popover">
-          <div class="fd-popover__control">
-            <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab8" tabindex="0" aria-controls="popoverAO5" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverAO5');">
-              <div class="fd-icon-tab-bar__tab-container">
-                <span class="fd-icon-tab-bar__tag">Section 2</span>
-                <span class="fd-icon-tab-bar__arrow">
-                    <i class="sap-icon--slim-arrow-down" role="presentation"></i>
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverAO5">
-            <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
-              <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
-                  <span class="fd-list__title">Subsection 1</span>
+        <ul role="tablist" class="fd-icon-tab-bar__header">
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab7">
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
                 </a>
-              </li>
-              <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
-                  <span class="fd-list__title">Subsection 2</span>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
+                <div class="fd-popover">
+                <div class="fd-popover__control">
+                    <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab8" tabindex="0" aria-controls="popoverAO5" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverAO5');">
+                    <div class="fd-icon-tab-bar__tab-container">
+                        <span class="fd-icon-tab-bar__tag">Section 2</span>
+                        <span class="fd-icon-tab-bar__arrow">
+                            <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                        </span>
+                    </div>
+                    </a>
+                </div>
+                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverAO5">
+                    <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+                    <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                        <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                            <span class="fd-list__title">Subsection 1</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                        <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                            <span class="fd-list__title">Subsection 2</span>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab9">
+                <span class="fd-icon-tab-bar__tag">Section 3</span>
                 </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li role="presentation" class="fd-icon-tab-bar__item">
-        <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab9">
-          <span class="fd-icon-tab-bar__tag">Section 3</span>
-        </a>
-      </li>
-      <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
-        <div class="fd-popover">
-          <div class="fd-popover__control">
-            <a role="tab" class="fd-icon-tab-bar__tab" id="tab10" tabindex="0" aria-expanded="true" aria-haspopup="true">
-              <div class="fd-icon-tab-bar__tab-container">
-                <span class="fd-icon-tab-bar__tag">Section 4</span>
-                <span class="fd-icon-tab-bar__arrow">
-                    <i class="sap-icon--slim-arrow-down" role="presentation"></i>
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--single-click">
+                <div class="fd-popover">
+                    <div class="fd-popover__control">
+                        <a role="tab" class="fd-icon-tab-bar__tab" id="tab10" tabindex="0" aria-expanded="true" aria-haspopup="true">
+                        <div class="fd-icon-tab-bar__tab-container">
+                            <span class="fd-icon-tab-bar__tag">Section 4</span>
+                            <span class="fd-icon-tab-bar__arrow">
+                                <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                            </span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 `;
-navigation.storyName = 'Navigation Icon Tab Bar';
+navigation.storyName = 'Navigation Icon Tab Bar (Shell Navigation)';
 navigation.parameters = {
     docs: {
         storyDescription: `The Navigation Tab Bar is the main/default navigation displayed on the SAP Fiori launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>
-        The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar and Tool Header. <br>
+        The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar. <br>
         If there are more Tabs than the screen can accommodate, the remaining Tabs move into an Overflow.`
+    }
+};
+
+export const navigationFlat = () => `<div class="fddocs-icon-tab-container" style="min-height: 100px;">
+    <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--navigation-flat fd-icon-tab-bar--md">
+        <ul role="tablist" class="fd-icon-tab-bar__header">  
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab11">
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--with-separator">
+                <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab12" tabindex="0">
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </a>
+
+                <div class="fd-popover fd-icon-tab-bar__popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-icon-tab-bar__button-container">
+                            <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-label="open menu button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--with-separator">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab13">
+                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab14">
+                    <span class="fd-icon-tab-bar__tag">Section 4</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+`;
+navigationFlat.storyName = 'Flat Navigation';
+navigationFlat.parameters = {
+    docs: {
+        storyDescription: `The Flat Navigation offers the user an easy access to multiple pages per space. 
+        As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view. 
+        The Flat Navigation Concept allows putting all entities of a single space directly into the first level of the Top Level Navigation Bar for direct access.
+        Add the \`.fd-icon-tab-bar--navigation-flat\` modifier class to \`.fd-icon-tab-bar.fd-icon-tab-bar--navigation\` to achieve the flat navigation look and feel. The items that have separators need to receive the \`.fd-icon-tab-bar__item--with-separator\` modifier class to \`.fd-icon-tab-bar__item\` class. This will append a vertical separator line on the right hand side of the item with an 1rem offset.
+        `
     }
 };
