@@ -43,9 +43,11 @@ ${localStyles}
     <legend class="fd-fieldset__legend">Desktop (compact) checkboxes</legend>
     <div class="fd-form-group">
         <div class="fd-form-item">
+            <label for="Ai4ez611c" class="fd-form-label fd-form-label--required fd-form-label--colon">
+                checkbox with left side label
+            </label>
             <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez611c">
             <label class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez611c">
-                <span class="fd-checkbox__text">Apple</span>
             </label>
         </div>
         <div class="fd-form-item">

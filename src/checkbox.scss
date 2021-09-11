@@ -8,6 +8,10 @@
 $block: #{$fd-namespace}-checkbox;
 
 .#{$block} {
+
+  $fd-checkbox-margin: 0.6875rem;
+  $fd-checkbox-margin-compact: 0.5rem;
+
   @include fd-base-checkbox('&__label', '', '.#{$block}__label');
   @include fd-checkbox-states();
 
@@ -15,6 +19,14 @@ $block: #{$fd-namespace}-checkbox;
 
   &__text {
     @include fd-ellipsis();
+
+    margin-left: $fd-checkbox-margin;
+    margin-right: 0;
+
+    @include fd-rtl() {
+      margin-right: $fd-checkbox-margin;
+      margin-left: 0;
+    }
   }
 
   &--compact {

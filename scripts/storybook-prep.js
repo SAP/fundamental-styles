@@ -32,6 +32,3 @@ ${fs.readFileSync('README.md')}
 <Footer />`;
 
 fs.writeFile(introductionPath, fileContent, throwError);
-fs.copyFile('./dist/semantic-elements.css', '.storybook/static/semantic-elements.css', (err) => {
-    if (err) throw err;
-});

@@ -13,3 +13,15 @@ fs.readdirSync('dist').forEach(file => {
         });
     });
 }, { withFileTypes: true });
+
+fs.readdirSync('dist/semantic').forEach(file => {
+    const fileName = file.replace(/\.[^.]+$/, '');
+
+    if (file.indexOf('.css') === -1) return;
+
+    supportedThemes.forEach(theme => {
+        fs.copyFile(path.resolve(__dirname, `../dist/semantic/${file}`), `dist/semantic/${fileName}-${theme}.css`, (err) => {
+            if (err) throw err;
+        });
+    });
+}, { withFileTypes: true });
