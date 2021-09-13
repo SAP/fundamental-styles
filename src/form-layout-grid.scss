@@ -136,8 +136,6 @@ $cols: 11;
 
             @include fd-rtl() {
               @include placement('left');
-
-              text-align: left;
             }
 
             margin-bottom: 0;
@@ -215,8 +213,6 @@ $cols: 11;
 
             @include fd-rtl() {
               @include placement('left');
-
-              text-align: left;
             }
 
             margin-bottom: 0;
