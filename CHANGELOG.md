@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.30...v0.20.0-rc.31) (2021-09-13)
+
+
+### Bug Fixes
+
+* layout grid bug fixes, improvements, refactoring [ci visual] ([#2717](https://github.com/SAP/fundamental-styles/issues/2717)) ([ea2c648](https://github.com/SAP/fundamental-styles/commit/ea2c648d6e5ebcc248d1954db5c71d8d03f0674d))
+
 ## [0.20.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.29...v0.20.0-rc.30) (2021-09-13)
 
 ## [0.20.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.28...v0.20.0-rc.29) (2021-09-13)
