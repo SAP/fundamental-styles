@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.28...v0.20.0-rc.29) (2021-09-13)
+
+
+### Bug Fixes
+
+* form layout grid, remove unnecessary styles [ci visual] ([#2718](https://github.com/SAP/fundamental-styles/issues/2718)) ([528f6cb](https://github.com/SAP/fundamental-styles/commit/528f6cb726ed072287f4cef3ac931e899f30c5a7))
+
 ## [0.20.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.27...v0.20.0-rc.28) (2021-09-10)
 
 
