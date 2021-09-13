@@ -1,0 +1,61 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-variant-management;
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-flex();
+
+  cursor: pointer;
+
+  &__title {
+    cursor: pointer;
+    text-shadow: none;
+    color: var(--sapButton_TextColor);
+
+    @include fd-set-margin-right(0.125rem);
+
+    @include fd-hover() {
+      color: var(--sapHighlightColor);
+    }
+
+    @include fd-active() {
+      color: var(--sapHighlightColor);
+    }
+
+    @include fd-disabled() {
+      color: var(--sapGroup_TitleTextColor);
+    }
+  }
+
+  &__indicator {
+    @include fd-reset();
+    @include fd-set-margins-x-equal(0.125rem);
+
+    display: none;
+    color: var(--sapGroup_TitleTextColor);
+  }
+
+  &--unsaved {
+    .#{$block}__title {
+      @include fd-reset-margins-x();
+    }
+
+    .#{$block}__indicator {
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+  &--changed {
+    .#{$block}__title {
+      @include fd-reset-margins-x();
+    }
+
+    .#{$block}__indicator {
+      display: block;
+      font-size: 0.75rem;
+    }
+  }
+}
