@@ -1,13 +1,15 @@
 @import "./mixins";
 
-/*!
-.fd-col
-*/
-
-$block: #{$fd-namespace}-col;
 $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
-$size: (600:"md", 1024: "lg", 1440: "xl");
+$blockCol: #{$fd-namespace}-col;
+
+$vertical-gutter: 1rem;
+$vertical-gutter-small: 0.5rem;
+$horizontal-gutter: 0.5rem;
+$horizontal-gutter-small: 0.25rem;
+
+$size: (600 :"md", 1024: "lg", 1440: "xl");
 $md: 600;
 $lg: 1024;
 $xl: 1440;
@@ -20,10 +22,10 @@ $cols: 12;
 }
 
 @mixin responsive-column($sizePrefix: null) {
-  $classPrefix: #{$block};
+  $classPrefix: #{$blockCol};
 
   @if ($sizePrefix) {
-    $classPrefix: $block + '-' + $sizePrefix;
+    $classPrefix: $blockCol + '-' + $sizePrefix;
   }
 
   @for $n from 0 through $cols {
@@ -52,31 +54,35 @@ $cols: 12;
   }
 }
 
-.#{$blockContainer} {
+.#{$blockContainer},
+.#{$blockRow},
+.#{$blockCol} {
   @include fd-reset();
+}
 
+.#{$blockContainer} {
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  margin: 0 -0.25rem 0 -0.25rem;
+  padding: 0 $horizontal-gutter-small;
 
-  &--no-gap {
-    margin: 0;
+  &.#{$blockContainer}--no-horizontal-gap,
+  &.#{$blockContainer}--no-gap {
+    .#{$blockRow} {
+      @include fd-reset-margins-x();
 
-    .#{$block} {
-      padding: 0;
+      .#{$blockCol} {
+        @include fd-reset-paddings-x();
+      }
     }
   }
 
-  .#{$blockRow} {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: -0.5rem;
-  }
-
-  .#{$blockRow} + .#{$blockRow} {
-    margin-top: 0;
+  &.#{$blockContainer}--no-vertical-gap,
+  &.#{$blockContainer}--no-gap {
+    .#{$blockRow} .#{$blockCol} {
+      padding-top: 0;
+    }
   }
 
   @include fd-rtl() {
@@ -85,44 +91,34 @@ $cols: 12;
 }
 
 .#{$blockRow} {
-  @include fd-reset();
-
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  margin: 0 -0.25rem;
-  min-width: 100%;
+  margin-left: -$horizontal-gutter-small;
+  margin-right: -$horizontal-gutter-small;
+  min-width: calc(100% + #{$horizontal-gutter-small} * 2);
 
-  &--inner-flex {
-    display: flex;
+  &:first-child {
+    margin-top: -$vertical-gutter-small;
   }
 
-  .#{$block} {
-    .#{$blockRow} + .#{$blockRow} {
-      margin-top: -0.5rem;
-    }
+  .#{$blockCol} {
+    padding-top: $vertical-gutter-small;
   }
 }
 
-.#{$block} {
-  @include fd-reset();
-
+.#{$blockCol} {
   @at-root {
     @include responsive-column();
   }
 
-  padding: 0.5rem 0.25rem 0 0.25rem;
+  padding: 0 $horizontal-gutter-small;
   min-width: 100%;
   max-width: 100%;
 
   &--full {
     @include full();
-  }
-
-  .#{$blockRow} {
-    margin: 0 -0.25rem;
-    margin-top: -0.5rem;
   }
 
   &--wrap {
@@ -132,82 +128,42 @@ $cols: 12;
 
 @media (min-width: 600px) {
   .#{$blockContainer} {
-    margin: 0 -0.5rem 0 -0.5rem;
-
-    .#{$blockRow} {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: -1rem;
-    }
-
-    .#{$blockRow} + .#{$blockRow} {
-      margin-top: 0;
-    }
-
-    &--no-horizontal-gap {
-      .fd-col {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-
-    &--no-vertical-gap {
-      margin: 0;
-
-      .fd-col {
-        padding-top: 0;
-      }
-    }
+    padding: 0 $horizontal-gutter;
   }
 
   .#{$blockRow} {
-    margin-bottom: 0;
+    min-width: calc(100% + #{$horizontal-gutter} * 2);
+    margin-left: -$horizontal-gutter;
+    margin-right: -$horizontal-gutter;
 
-    .#{$block} {
-      .#{$blockRow} + .#{$blockRow} {
-        margin-top: 1rem;
-      }
+    &:first-child {
+      margin-top: -$vertical-gutter;
+    }
+
+    .#{$blockCol} {
+      padding: $vertical-gutter $horizontal-gutter 0 $horizontal-gutter;
     }
   }
 
-  .#{$block} {
+  .#{$blockCol} {
     @at-root {
       @include responsive-column(map-get($size, $md));
-    }
-
-    padding: 1rem 0.5rem 0 0.5rem;
-
-    &--full {
-      @include full();
-    }
-
-    .#{$blockRow} {
-      margin-left: -0.5rem;
-      margin-right: -0.5rem;
     }
   }
 }
 
 @media (min-width: 1024px) {
-  .#{$block} {
+  .#{$blockCol} {
     @at-root {
       @include responsive-column(map-get($size, $lg));
-    }
-
-    &--full {
-      @include full();
     }
   }
 }
 
 @media (min-width: 1440px) {
-  .#{$block} {
+  .#{$blockCol} {
     @at-root {
       @include responsive-column(map-get($size, $xl));
-    }
-
-    &--full {
-      @include full();
     }
   }
 }
