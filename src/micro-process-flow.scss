@@ -1,7 +1,7 @@
 @import "./new-settings";
 @import "./mixins";
 
-$block: fd-micro-process-flow;
+$block: #{$fd-namespace}-micro-process-flow;
 
 $fd-micro-process-flow-item-width: 2.75rem;
 $fd-micro-process-flow-item-padding: 0.1875rem;
@@ -208,8 +208,8 @@ $fd-micro-process-flow-semantic-colors: (
     margin: 0.1625rem 0;
     justify-content: flex-start;
 
-    .fd-status-indicator {
-      .fd-status-indicator__svg {
+    .#{$fd-namespace}-status-indicator {
+      .#{$fd-namespace}status-indicator__svg {
         width: auto;
       }
     }
