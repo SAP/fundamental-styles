@@ -1,0 +1,314 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: fd-micro-process-flow;
+
+$fd-micro-process-flow-item-width: 2.75rem;
+$fd-micro-process-flow-item-padding: 0.1875rem;
+$fd-micro-process-flow-item-min-width: 1.875rem;
+$fd-micro-process-flow-item-compact-width: 2rem;
+$fd-micro-process-flow-outline-offset: 0.0625rem;
+$fd-micro-process-flow-item-connector-width: 1.125rem;
+$fd-micro-process-flow-item-compact-min-width: 1.375rem;
+$fd-micro-process-flow-item-connector-compact-width: 0.625rem;
+$fd-micro-process-flow-intermediary-indicator-width: 0.25rem;
+$fd-micro-process-flow-max-container-visible-items: 8;
+$fd-micro-process-flow-max-container-compact-width: $fd-micro-process-flow-item-compact-width * ($fd-micro-process-flow-max-container-visible-items + 1) + $fd-micro-process-flow-outline-offset;
+$fd-micro-process-flow-max-container-width: $fd-micro-process-flow-item-width * ($fd-micro-process-flow-max-container-visible-items + 1) + $fd-micro-process-flow-outline-offset;
+
+$fd-micro-process-flow-semantic-colors: (
+  positive: (
+    default: var(--sapPositiveElementColor),
+    hover: var(--sapButton_Success_Hover_Background)
+  ),
+  information: (
+    default: var(--sapInformativeElementColor),
+    hover: var(--sapButton_Information_Hover_Background)
+  ),
+  negative: (
+    default: var(--sapNegativeElementColor),
+    hover: var(--sapButton_Negative_Hover_Background)
+  ),
+  critical: (
+    default: var(--sapCriticalElementColor),
+    hover: var(--sapButton_Critical_Hover_Background)
+  ),
+);
+
+@mixin fd-micro-process-flow-focus($offset: -0.1875rem) {
+  &:focus,
+  &.is-focus {
+    @if $offset !=0 {
+      outline-offset: $offset;
+    }
+
+    outline-width: var(--sapContent_FocusWidth);
+    outline-color: var(--sapContent_FocusColor);
+    outline-style: var(--sapContent_FocusStyle);
+    @content;
+  }
+}
+
+@mixin fd-set-padding-left-after($left: 0) {
+  &::after {
+    padding-left: $left;
+  }
+
+  @include fd-rtl() {
+    &::after {
+      padding-left: 0;
+      padding-right: $left;
+    }
+  }
+}
+
+@mixin fd-set-padding-right-before($right: 0) {
+  &::before {
+    padding-right: $right;
+  }
+
+  @include fd-rtl() {
+    &::before {
+      padding-right: 0;
+      padding-left: $right;
+    }
+  }
+}
+
+@mixin fd-micro-process-flow-navigation-icon($direction: previous, $icon-previous: "\e067", $icon-next: "\e066", $padding: 0.313rem) {
+  @if $direction==previous {
+    &::before {
+      content: $icon-previous;
+    }
+
+    @include fd-set-padding-right-before($padding);
+
+    @include fd-rtl() {
+      &::before {
+        content: $icon-next;
+      }
+    }
+  } @else {
+    &::after {
+      content: $icon-next;
+    }
+
+    @include fd-set-padding-left-after($padding);
+
+    @include fd-rtl() {
+      &::after {
+        content: $icon-previous;
+      }
+    }
+  }
+}
+
+@mixin fd-micro-process-flow-semantic-state {
+  @each $state,
+    $background in $fd-micro-process-flow-semantic-colors {
+    &--#{$state} {
+      .#{$block}__icon-container {
+        border-color: map-get($background, default);
+        background-color: map-get($background, default);
+
+        .#{$block}__icon {
+          color: var(--fdMicro_Process_Flow_Icon_Color);
+        }
+
+        @include fd-hover() {
+          border-color: map-get($background, hover);
+          background-color: map-get($background, hover);
+        }
+
+        @include fd-active() {
+          border-color: var(--sapHighlightColor);
+          background-color: var(--sapHighlightColor);
+        }
+      }
+    }
+  }
+}
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-flex();
+
+  max-width: $fd-micro-process-flow-max-container-width;
+
+  &--independent-steps {
+    .#{$block}__connector:before {
+      border-color: transparent;
+    }
+  }
+
+  &__wrapper {
+    @include fd-reset();
+    @include fd-flex();
+
+    transition-property: transform;
+  }
+
+  &__overflow-container {
+    @include fd-reset();
+    @include fd-flex();
+
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__link-previous,
+  &__link-next {
+    @include fd-reset();
+    @include fd-flex-justify-content-start();
+    @include fd-micro-process-flow-focus();
+
+    cursor: pointer;
+    padding: 0 0.313rem;
+    font-size: var(--sapFontSize);
+    color: var(--sapGroup_TitleTextColor);
+    text-shadow: var(--sapContent_TextShadow);
+
+    &::before,
+    &::after {
+      @include fd-flex-center();
+
+      text-align: center;
+      text-transform: none;
+      font-family: SAP-icons;
+      text-decoration: inherit;
+      text-rendering: optimizeLegibility;
+      color: var(--sapButton_TextColor);
+    }
+
+    @include fd-hover() {
+      &::before,
+      &::after {
+        color: var(--sapButton_Hover_TextColor);
+      }
+    }
+  }
+
+  &__link-previous {
+    @include fd-micro-process-flow-navigation-icon();
+  }
+
+  &__link-next {
+    @include fd-micro-process-flow-navigation-icon(next);
+
+    justify-content: flex-end;
+  }
+
+  .#{$block}__item {
+    @include fd-reset();
+    @include fd-flex-stretch();
+    @include fd-micro-process-flow-semantic-state();
+    @include fd-set-padding-left($fd-micro-process-flow-item-padding);
+
+    position: relative;
+    margin: 0.1625rem 0;
+    justify-content: flex-start;
+
+    .fd-status-indicator {
+      .fd-status-indicator__svg {
+        width: auto;
+      }
+    }
+  }
+
+  &__focusable-item {
+    @include fd-micro-process-flow-focus($fd-micro-process-flow-outline-offset);
+  }
+
+  .#{$block}__icon-container {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    border-radius: 50%;
+    background-color: var(--sapNeutralBackground);
+    min-width: $fd-micro-process-flow-item-min-width;
+    min-height: $fd-micro-process-flow-item-min-width;
+    border: 0.0625rem solid var(--sapNeutralBorderColor);
+
+    .#{$block}__icon {
+      font-size: var(--sapFontLargeSize);
+      color: var(--sapButton_Neutral_Background);
+    }
+
+    @include fd-active() {
+      border-color: var(--sapHighlightColor);
+      background-color: var(--sapHighlightColor);
+
+      .#{$block}__icon {
+        color: var(--fdMicro_Process_Flow_Icon_Color);
+      }
+    }
+  }
+
+  &__content {
+    @include fd-reset();
+    @include fd-flex-justify-content-start();
+
+    width: 100%;
+    min-width: $fd-micro-process-flow-item-min-width;
+    min-height: $fd-micro-process-flow-item-min-width;
+  }
+
+  &__connector {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-margin-left($fd-micro-process-flow-item-padding);
+
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+    min-width: $fd-micro-process-flow-item-connector-width;
+
+    &::before {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      border-bottom: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
+    }
+
+    &--intermediate {
+      &::after {
+        content: "";
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        display: block;
+        position: absolute;
+        background: var(--sapNegativeElementColor);
+        width: $fd-micro-process-flow-intermediary-indicator-width;
+        margin-left: -$fd-micro-process-flow-intermediary-indicator-width / 2;
+      }
+    }
+
+    .#{$block}__intermediary-item {
+      line-height: 1;
+    }
+  }
+
+  &--compact {
+    max-width: $fd-micro-process-flow-max-container-compact-width;
+
+    .#{$block}__content {
+      min-width: $fd-micro-process-flow-item-compact-min-width;
+      min-height: $fd-micro-process-flow-item-compact-min-width;
+    }
+
+    .#{$block}__icon-container {
+      min-width: $fd-micro-process-flow-item-compact-min-width;
+      min-height: $fd-micro-process-flow-item-compact-min-width;
+
+      .#{$block}__icon {
+        font-size: var(--sapFontSmallSize);
+      }
+    }
+
+    .#{$block}__connector {
+      width: $fd-micro-process-flow-item-connector-compact-width;
+    }
+  }
+}

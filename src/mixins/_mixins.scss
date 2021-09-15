@@ -336,6 +336,19 @@
   @content;
 }
 
+@mixin fd-flex-stretch {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@mixin fd-flex-justify-content-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @content;
+}
+
 @mixin fd-absolute-horizontal-center {
   position: absolute;
   left: 50%;
