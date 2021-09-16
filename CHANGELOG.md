@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.32...v0.20.0-rc.33) (2021-09-16)
+
+
+### Bug Fixes
+
+* dropdown top round corners ([#2725](https://github.com/SAP/fundamental-styles/issues/2725)) ([87ea727](https://github.com/SAP/fundamental-styles/commit/87ea72787c1e11d61a0750d75264c6beb1bf8054))
+
 ## [0.20.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.31...v0.20.0-rc.32) (2021-09-13)
 
 ## [0.20.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.30...v0.20.0-rc.31) (2021-09-13)
