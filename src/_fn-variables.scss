@@ -1,0 +1,159 @@
+// Paddings
+$fn-padding-xs: 0.25rem; // 4px
+$fn-padding-small: 0.5rem; // 8px
+$fn-padding-medium: 0.75rem; // 12px
+$fn-padding-large: 1rem; // 16px
+$fn-padding-xl: 1.5rem; // 24px
+
+// Margins
+$fn-margin-xs: 0.25rem; // 4px
+$fn-margin-small: 0.5rem; // 8px
+$fn-margin-medium: 0.75rem; // 12px
+$fn-margin-large: 1rem; // 16px
+$fn-margin-xl: 1.5rem; // 24px
+
+// Border radius
+$fn-border-radius-xs: 0.25rem; // 4px
+$fn-border-radius-small: 0.5rem; // 8px
+$fn-border-radius-medium: 0.75rem; // 12px
+$fn-border-radius-large: 1rem; // 16px
+$fn-border-radius-xl: 1.5rem; // 24px
+
+// Colors
+$fn-color-grey-1: #f5f6f7;
+$fn-color-grey-2: #d5dadd;
+$fn-color-grey-3: #a9b4be;
+$fn-color-grey-4: #8396a8;
+$fn-color-grey-5: #5b738b;
+$fn-color-grey-6: #475e75;
+$fn-color-grey-7: #354a5f;
+$fn-color-grey-8: #223548;
+$fn-color-grey-9: #0b141e;
+
+$fn-color-blue-1: #ebf8ff;
+$fn-color-blue-2: #89d1ff;
+$fn-color-blue-3: #4db1ff;
+$fn-color-blue-4: #1b90ff;
+$fn-color-blue-5: #0070f2;
+$fn-color-blue-6: #0057d2;
+$fn-color-blue-7: #0040b0;
+$fn-color-blue-8: #002a86;
+$fn-color-blue-9: #00144a;
+
+$fn-color-teal-1: #dafdf5;
+$fn-color-teal-2: #64edd2;
+$fn-color-teal-3: #00ceac;
+$fn-color-teal-4: #04aca7;
+$fn-color-teal-5: #07838f;
+$fn-color-teal-6: #046c7a;
+$fn-color-teal-7: #035663;
+$fn-color-teal-8: #02414c;
+$fn-color-teal-9: #012931;
+
+$fn-color-green-1: #f5fae5;
+$fn-color-green-2: #97dd40;
+$fn-color-green-3: #5dc122;
+$fn-color-green-4: #36a41d;
+$fn-color-green-5: #188918;
+$fn-color-green-6: #256f3a;
+$fn-color-green-7: #1e592f;
+$fn-color-green-8: #164323;
+$fn-color-green-9: #0e2b16;
+
+$fn-color-mango-1: #fff8d6;
+$fn-color-mango-2: #ffdf72;
+$fn-color-mango-3: #ffb300;
+$fn-color-mango-4: #f58b00;
+$fn-color-mango-5: #c35500;
+$fn-color-mango-6: #a93e00;
+$fn-color-mango-7: #8d2a00;
+$fn-color-mango-8: #6d1900;
+$fn-color-mango-9: #450b00;
+
+$fn-color-red-1: #ffeaf4;
+$fn-color-red-2: #ff8cb2;
+$fn-color-red-3: #ff5c77;
+$fn-color-red-4: #ee3939;
+$fn-color-red-5: #d20a0a;
+$fn-color-red-6: #aa0808;
+$fn-color-red-7: #840606;
+$fn-color-red-8: #5a0404;
+$fn-color-red-9: #350000;
+
+$fn-color-red-1: #fff0fa;
+$fn-color-red-2: #ffafed;
+$fn-color-red-3: #ff8af0;
+$fn-color-red-4: #f31ded;
+$fn-color-red-5: #cc00dc;
+$fn-color-red-6: #a100c2;
+$fn-color-red-7: #7800a4;
+$fn-color-red-8: #510080;
+$fn-color-red-9: #28004a;
+
+$fn-color-red-1: #f1ecff;
+$fn-color-red-2: #d3b6ff;
+$fn-color-red-3: #b894ff;
+$fn-color-red-4: #9b76ff;
+$fn-color-red-5: #7858ff;
+$fn-color-red-6: #5d36ff;
+$fn-color-red-7: #470ced;
+$fn-color-red-8: #2c13ad;
+$fn-color-red-9: #1c0c6e;
+
+$fn-color-base-white: #ffffff;
+$fn-color-base-black: #000000;
+
+// Shadows
+$fn-shadow-grey-xs: 0 0 2px rgba(131, 150, 168, 0.16), 0 2px 4px rgba(131, 150, 168, 0.16);
+$fn-shadow-grey-small: 0 0 2px rgba(131, 150, 168, 0.16), 0 4px 8px rgba(131, 150, 168, 0.16);
+$fn-shadow-grey-medium: 0 0 2px rgba(131, 150, 168, 0.16), 0 8px 16px rgba(131, 150, 168, 0.16);
+$fn-shadow-grey-large: 0 0 2px rgba(131, 150, 168, 0.16), 0 16px 32px rgba(131, 150, 168, 0.16);
+$fn-shadow-grey-xl: 0 0 2px rgba(131, 150, 168, 0.16), 0 32px 64px rgba(131, 150, 168, 0.16);
+
+$fn-shadow-blue-xs: 0 0 2px rgba(27, 144, 255, 0.16), 0 2px 4px rgba(27, 144, 255, 0.16);
+$fn-shadow-blue-small: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+$fn-shadow-blue-medium: 0 0 2px rgba(27, 144, 255, 0.16), 0 8px 16px rgba(27, 144, 255, 0.16);
+$fn-shadow-blue-large: 0 0 2px rgba(27, 144, 255, 0.16), 0 16px 32px rgba(27, 144, 255, 0.16);
+$fn-shadow-blue-xl: 0 0 2px rgba(27, 144, 255, 0.16), 0 32px 64px rgba(27, 144, 255, 0.16);
+
+$fn-shadow-teal-xs: 0 0 2px rgba(4, 172, 167, 0.16), 0 2px 4px rgba(4, 172, 167, 0.16);
+$fn-shadow-teal-small: 0 0 2px rgba(4, 172, 167, 0.16), 0 4px 8px rgba(4, 172, 167, 0.16);
+$fn-shadow-teal-medium: 0 0 2px rgba(4, 172, 167, 0.16), 0 8px 16px rgba(4, 172, 167, 0.16);
+$fn-shadow-teal-large: 0 0 2px rgba(4, 172, 167, 0.16), 0 16px 32px rgba(4, 172, 167, 0.16);
+$fn-shadow-teal-xl: 0 0 2px rgba(4, 172, 167, 0.16), 0 32px 64px rgba(4, 172, 167, 0.16);
+
+$fn-shadow-green-xs: 0 0 2px rgba(93, 193, 34, 0.16), 0 2px 4px rgba(93, 193, 34, 0.16);
+$fn-shadow-green-small: 0 0 2px rgba(93, 193, 34, 0.16), 0 4px 8px rgba(93, 193, 34, 0.16);
+$fn-shadow-green-medium: 0 0 2px rgba(93, 193, 34, 0.16), 0 8px 16px rgba(93, 193, 34, 0.16);
+$fn-shadow-green-large: 0 0 2px rgba(93, 193, 34, 0.16), 0 16px 32px rgba(93, 193, 34, 0.16);
+$fn-shadow-green-xl: 0 0 2px rgba(93, 193, 34, 0.16), 0 32px 64px rgba(93, 193, 34, 0.16);
+
+$fn-shadow-mango-xs: 0 0 2px rgba(255, 179, 0, 0.16), 0 2px 4px rgba(255, 179, 0, 0.16);
+$fn-shadow-mango-small: 0 0 2px rgba(255, 179, 0, 0.16), 0 4px 8px rgba(255, 179, 0, 0.16);
+$fn-shadow-mango-medium: 0 0 2px rgba(255, 179, 0, 0.16), 0 8px 16px rgba(255, 179, 0, 0.16);
+$fn-shadow-mango-large: 0 0 2px rgba(255, 179, 0, 0.16), 0 16px 32px rgba(255, 179, 0, 0.16);
+$fn-shadow-mango-xl: 0 0 2px rgba(255, 179, 0, 0.16), 0 32px 64px rgba(255, 179, 0, 0.16);
+
+$fn-shadow-red-xs: 0 0 2px rgba(245, 40, 40, 0.16), 0 2px 4px rgba(245, 40, 40, 0.16);
+$fn-shadow-red-small: 0 0 2px rgba(245, 40, 40, 0.16), 0 4px 8px rgba(245, 40, 40, 0.16);
+$fn-shadow-red-medium: 0 0 2px rgba(245, 40, 40, 0.16), 0 8px 16px rgba(245, 40, 40, 0.16);
+$fn-shadow-red-large: 0 0 2px rgba(245, 40, 40, 0.16), 0 16px 32px rgba(245, 40, 40, 0.16);
+$fn-shadow-red-xl: 0 0 2px rgba(245, 40, 40, 0.16), 0 32px 64px rgba(245, 40, 40, 0.16);
+
+$fn-shadow-pink-xs: 0 0 2px rgba(252, 0, 245, 0.16), 0 2px 4px rgba(252, 0, 245, 0.16);
+$fn-shadow-pink-small: 0 0 2px rgba(252, 0, 245, 0.16), 0 4px 8px rgba(252, 0, 245, 0.16);
+$fn-shadow-pink-medium: 0 0 2px rgba(252, 0, 245, 0.16), 0 8px 16px rgba(252, 0, 245, 0.16);
+$fn-shadow-pink-large: 0 0 2px rgba(252, 0, 245, 0.16), 0 16px 32px rgba(252, 0, 245, 0.16);
+$fn-shadow-pink-xl: 0 0 2px rgba(252, 0, 245, 0.16), 0 32px 64px rgba(252, 0, 245, 0.16);
+
+$fn-shadow-indigo-xs: 0 0 2px rgba(155, 118, 255, 0.16), 0 2px 4px rgba(155, 118, 255, 0.16);
+$fn-shadow-indigo-small: 0 0 2px rgba(155, 118, 255, 0.16), 0 4px 8px rgba(155, 118, 255, 0.16);
+$fn-shadow-indigo-medium: 0 0 2px rgba(155, 118, 255, 0.16), 0 8px 16px rgba(155, 118, 255, 0.16);
+$fn-shadow-indigo-large: 0 0 2px rgba(155, 118, 255, 0.16), 0 16px 32px rgba(155, 118, 255, 0.16);
+$fn-shadow-indigo-xl: 0 0 2px rgba(155, 118, 255, 0.16), 0 32px 64px rgba(155, 118, 255, 0.16);
+
+$fn-shadow-black-xs: 0 0 2px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.16);
+$fn-shadow-black-small: 0 0 2px rgba(0, 0, 0, 0.16), 0 4px 8px rgba(0, 0, 0, 0.16);
+$fn-shadow-black-medium: 0 0 2px rgba(0, 0, 0, 0.16), 0 8px 16px rgba(0, 0, 0, 0.16);
+$fn-shadow-black-large: 0 0 2px rgba(0, 0, 0, 0.16), 0 16px 32px rgba(0, 0, 0, 0.16);
+$fn-shadow-black-xl: 0 0 2px rgba(0, 0, 0, 0.16), 0 32px 64px rgba(0, 0, 0, 0.16);
