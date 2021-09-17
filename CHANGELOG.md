@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.33...v0.20.0-rc.34) (2021-09-17)
+
+
+### Features
+
+* introduce Micro Process Flow component ([#2728](https://github.com/SAP/fundamental-styles/issues/2728)) ([b501188](https://github.com/SAP/fundamental-styles/commit/b501188d1c8a3aa4f142f1fe956aa5cc9fd6ab28))
+
 ## [0.20.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.32...v0.20.0-rc.33) (2021-09-16)
 
 
