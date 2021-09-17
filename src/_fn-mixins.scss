@@ -1,0 +1,112 @@
+@mixin fn-reset {
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  color: #000000;
+  font-weight: normal;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    font-size: inherit;
+  }
+}
+
+@mixin fn-rtl {
+  @at-root {
+    [dir="rtl"] &,
+    &[dir="rtl"] {
+      @content;
+    }
+  }
+}
+
+// States
+@mixin fn-hover {
+  &:hover,
+  &.is-hover {
+    @content;
+  }
+}
+
+@mixin fn-empty {
+  &:empty,
+  &.is-empty {
+    @content;
+  }
+}
+
+@mixin fn-pressed {
+  &[aria-pressed="true"],
+  &.is-pressed {
+    @content;
+  }
+}
+
+@mixin fn-readonly {
+  &[aria-readonly="true"],
+  &[readonly],
+  &.is-readonly {
+    @content;
+  }
+}
+
+@mixin fn-selected {
+  &[aria-selected="true"],
+  &.is-selected {
+    @content;
+  }
+}
+
+@mixin fn-expanded {
+  &[aria-expanded="true"] {
+    @content;
+  }
+}
+
+@mixin fn-active {
+  &:active,
+  &.is-active {
+    @content;
+  }
+}
+
+@mixin fn-disabled {
+  &[aria-disabled="true"],
+  &:disabled,
+  &.is-disabled {
+    @content;
+  }
+}
+
+@mixin fn-focus() {
+  &:focus,
+  &.is-focus {
+    z-index: 5;
+    @content;
+  }
+}
+
+// Flex Helpers
+@mixin fn-flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  @content;
+}
+
+@mixin fn-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin fn-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}

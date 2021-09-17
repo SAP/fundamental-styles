@@ -1,0 +1,79 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-button;
+
+@mixin fn-button-base($background, $shadow) {
+  box-shadow: $shadow;
+  background: $background;
+  border-color: $background;
+}
+
+@mixin fn-fake-button-outline() {
+  @include fn-focus() {
+    $offset: -0.25rem;
+
+    outline: none;
+
+    &::before {
+      top: $offset;
+      left: $offset;
+      right: $offset;
+      bottom: $offset;
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: $fn-border-radius-small;
+      border: 0.125rem solid $fn-color-blue-4;
+    }
+  }
+}
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex-center();
+  @include fn-button-base($fn-color-blue-5, $fn-shadow-blue-small);
+
+  height: 2rem;
+  cursor: pointer;
+  position: relative;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-radius: $fn-border-radius-small;
+  padding: $fn-padding-xs $fn-padding-medium;
+
+  @include fn-hover() {
+    @include fn-button-base($fn-color-blue-6, $fn-shadow-blue-medium);
+  }
+
+  @include fn-pressed() {
+    @include fn-button-base($fn-color-blue-7, $fn-shadow-blue-xs);
+  }
+
+  @include fn-active() {
+    @include fn-button-base($fn-color-blue-7, $fn-shadow-blue-xs);
+  }
+
+  @include fn-focus() {
+    @include fn-fake-button-outline();
+    @include fn-button-base($fn-color-blue-7, $fn-shadow-blue-medium);
+
+    border-color: $fn-color-base-white;
+  }
+
+  @include fn-disabled() {
+    @include fn-button-base($fn-color-grey-1, $fn-shadow-blue-medium);
+
+    box-shadow: none;
+
+    .#{$block}__text {
+      color: $fn-color-grey-3;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: $fn-color-base-white;
+  }
+}
