@@ -96,7 +96,7 @@
     "postcss-banner": "^4.0.0",
     "postcss-clean": "^1.2.2",
     "postcss-cli": "^8.3.1",
-    "postcss-custom-properties": "^11.0.0",
+    "postcss-custom-properties": "^12.0.0",
     "postcss-import": "^14.0.1",
     "postcss-normalize-charset": "^4.0.1",
     "pretty": "^2.0.0",
