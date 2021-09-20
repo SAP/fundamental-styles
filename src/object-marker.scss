@@ -75,6 +75,7 @@ $block: #{$fd-namespace}-object-marker;
     }
   }
 
+  // OBJECT MARKER TEXT
   &__text {
     @include fd-reset();
     @include fd-ellipsis();
