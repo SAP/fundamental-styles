@@ -1,539 +1,222 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Forms/Input Default 1`] = `
+exports[`Storyshots Experimental/Text Field Default Input 1`] = `
 <section>
   
 
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
+  
+
+
   <div
-    class="fd-form-item"
+    class="docs-fn-container"
   >
     
-        
-    <label
-      class="fd-form-label"
-      for="input-1"
+    
+    <div
+      class="fn-text-field"
     >
-      Default input:
-    </label>
-    
+      
         
-    <input
-      class="fd-input"
-      id="input-1"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
+      <label
+        class="fn-text-field__label"
+        for="field-1"
+      >
+        Label
+      </label>
+      
         
-    <label
-      class="fd-form-label"
-      for="input-1b"
-    >
-      Compact Input:
-    </label>
-    
+      <div
+        class="fn-text-field__input-container"
+      >
         
-    <input
-      class="fd-input fd-input--compact"
-      id="input-1b"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-1c"
-    >
-      Required Input:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      id="input-1c"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      aria-required="true"
-      class="fd-form-label"
-      for="input-1d"
-    >
-      Password:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      id="input-1d"
-      type="password"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-01"
-    >
-      Error Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-error"
-      id="input-01"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-02"
-    >
-      Success Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-success"
-      id="input-02"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-03"
-    >
-      Warning (Alert) Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-warning"
-      id="input-03"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-04"
-    >
-      Information Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-information"
-      id="input-04"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-05"
-    >
-      Disabled Input:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      disabled=""
-      id="input-05"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-06"
-    >
-      Read-Only Input:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      id="input-06"
-      placeholder="Field placeholder text"
-      readonly=""
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-07"
-    >
-      Default input:
-    </label>
-    
             
-    <input
-      aria-label="Image label"
-      class="fd-input"
-      id="input-07"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
+        <input
+          class="fn-text-field__input"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
         
-    <label
-      class="fd-form-label"
-      for="input-08"
-    >
-      Compact input:
-    </label>
-    
             
-    <input
-      aria-label="Image label"
-      class="fd-input fd-input--compact"
-      id="input-08"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
+        <div
+          class="fn-text-field__input-border"
+        />
         
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-09"
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field is-disabled"
     >
-      Required Input:
-    </label>
-    
+      
         
-    <input
-      class="fd-input"
-      id="input-09"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
         
-    <label
-      aria-required="true"
-      class="fd-form-label"
-      for="input-10"
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-2"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field"
     >
-      Password:
-    </label>
-    
+      
         
-    <input
-      class="fd-input"
-      id="input-10"
-      type="password"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
         
-    <label
-      aria-required="true"
-      class="fd-form-label"
-      for="input-11"
-    >
-      Input:
-    </label>
-    
+      <div
+        class="fn-text-field__input-container"
+      >
         
-    <input
-      class="fd-input"
-      id="input-11"
-      type="text"
-    />
+            
+        <input
+          class="fn-text-field__input"
+          id="field-2"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
     
     
+
   </div>
   
 
 </section>
 `;
 
-exports[`Storyshots Components/Forms/Input States 1`] = `
+exports[`Storyshots Experimental/Text Field Error Input 1`] = `
 <section>
   
 
-  <div
-    class="fd-form-item"
-  >
+  <style>
     
-    
-    <label
-      class="fd-form-label"
-      for="input-1aa"
-    >
-      Normal input:
-    </label>
-    
-    
-    <input
-      aria-label="Image label"
-      class="fd-input"
-      id="input-1aa"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
 
-  </div>
-  
-
-
-  <br />
-  <br />
+  </style>
   
 
 
   <div
-    class="fd-form-item"
+    class="docs-fn-container"
   >
-    
-    
-    <label
-      class="fd-form-label"
-      for="input-1bb"
-    >
-      Success input:
-    </label>
     
     
     <div
-      class="fd-popover fd-popover--input-message-group"
+      class="fn-text-field fn-text-field--error"
     >
       
         
+      <label
+        class="fn-text-field__label"
+        for="field-1"
+      >
+        Label
+      </label>
+      
+        
       <div
-        aria-controls="popoverB2"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB2');"
+        class="fn-text-field__input-container"
       >
         
             
         <input
-          aria-label="Image label"
-          class="fd-input is-success"
-          id="input-1bb"
-          placeholder="Field placeholder text"
+          class="fn-text-field__input"
+          id="field-1"
+          placeholder="Placeholder"
           type="text"
         />
         
-        
-      </div>
-      
-        
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB2"
-      >
-        
             
         <div
-          class="fd-form-message fd-form-message--success"
-        >
-          Success message
-        </div>
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--error"
+        />
         
         
       </div>
@@ -542,66 +225,51 @@ exports[`Storyshots Components/Forms/Input States 1`] = `
     </div>
     
 
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
+    
+    <br />
+    <br />
     
     
-    <label
-      class="fd-form-label"
-      for="input-1cc"
-    >
-      Error input:
-    </label>
+    <h4>
+      Disabled
+    </h4>
     
     
     <div
-      class="fd-popover fd-popover--input-message-group"
+      class="fn-text-field fn-text-field--error is-disabled"
     >
       
         
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
       <div
-        aria-controls="popoverB3"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB3');"
+        class="fn-text-field__input-container"
       >
         
             
         <input
-          aria-label="Image label"
-          class="fd-input is-error"
-          id="input-1cc"
-          placeholder="Field placeholder text"
+          class="fn-text-field__input"
+          disabled=""
+          id="field-2"
+          placeholder="Placeholder"
           type="text"
         />
         
-        
-      </div>
-      
-        
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB3"
-      >
-        
             
         <div
-          class="fd-form-message fd-form-message--error"
-        >
-          Error message
-        </div>
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--error"
+        />
         
         
       </div>
@@ -610,66 +278,122 @@ exports[`Storyshots Components/Forms/Input States 1`] = `
     </div>
     
 
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
+    
+    <br />
+    <br />
     
     
-    <label
-      class="fd-form-label"
-      for="input-1dd"
-    >
-      Warning input:
-    </label>
+    <h4>
+      Readonly
+    </h4>
     
     
     <div
-      class="fd-popover fd-popover--input-message-group"
+      class="fn-text-field fn-text-field--error is-readonly"
     >
       
         
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
       <div
-        aria-controls="popoverB4"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB4');"
+        class="fn-text-field__input-container"
       >
         
             
         <input
-          aria-label="Image label"
-          class="fd-input is-warning"
-          id="input-1dd"
-          placeholder="Field placeholder text"
+          class="fn-text-field__input"
+          id="field-2"
+          placeholder="Placeholder"
+          readonly=""
           type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--error"
         />
         
         
       </div>
       
+    
+    </div>
+    
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Text Field Information Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-text-field fn-text-field--information"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-1"
+      >
+        Label
+      </label>
+      
         
       <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB4"
+        class="fn-text-field__input-container"
       >
         
             
+        <input
+          class="fn-text-field__input"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
         <div
-          class="fd-form-message fd-form-message--warning"
-        >
-          Warning message
-        </div>
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--information"
+        />
         
         
       </div>
@@ -678,66 +402,51 @@ exports[`Storyshots Components/Forms/Input States 1`] = `
     </div>
     
 
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
+    
+    <br />
+    <br />
     
     
-    <label
-      class="fd-form-label"
-      for="input-1ee"
-    >
-      Information input:
-    </label>
+    <h4>
+      Disabled
+    </h4>
     
     
     <div
-      class="fd-popover fd-popover--input-message-group"
+      class="fn-text-field fn-text-field--information is-disabled"
     >
       
         
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
       <div
-        aria-controls="popoverB5"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB5');"
+        class="fn-text-field__input-container"
       >
         
             
         <input
-          aria-label="Image label"
-          class="fd-input fd-input--compact is-information"
-          id="input-1ee"
-          placeholder="Field placeholder text"
+          class="fn-text-field__input"
+          disabled=""
+          id="field-2"
+          placeholder="Placeholder"
           type="text"
         />
         
-        
-      </div>
-      
-        
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB5"
-      >
-        
             
         <div
-          class="fd-form-message fd-form-message--information"
-        >
-          Information message
-        </div>
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--information"
+        />
         
         
       </div>
@@ -746,66 +455,413 @@ exports[`Storyshots Components/Forms/Input States 1`] = `
     </div>
     
 
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--information is-readonly"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-2"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--information"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+
   </div>
   
 
+</section>
+`;
 
-  <br />
-  <br />
+exports[`Storyshots Experimental/Text Field Success Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
   
 
 
   <div
-    class="fd-form-item"
+    class="docs-fn-container"
   >
     
     
-    <label
-      class="fd-form-label"
-      for="input-1ff"
+    <div
+      class="fn-text-field fn-text-field--success"
     >
-      Disabled Input:
-    </label>
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-1"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--sys-enter-2"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
     
     
-    <input
-      class="fd-input"
-      disabled=""
-      id="input-1ff"
-      type="text"
-      value="Non editable data"
-    />
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--success is-disabled"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-2"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--sys-enter-2"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--success is-readonly"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-2"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--sys-enter-2"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
     
 
   </div>
   
 
+</section>
+`;
 
-  <br />
-  <br />
+exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
   
 
 
   <div
-    class="fd-form-item"
+    class="docs-fn-container"
   >
     
     
-    <label
-      class="fd-form-label"
-      for="input-1gg"
+    <div
+      class="fn-text-field fn-text-field--warning"
     >
-      Read Only Input:
-    </label>
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-1"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--alert"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
     
     
-    <input
-      class="fd-input"
-      id="input-1gg"
-      readonly=""
-      type="text"
-      value="Read only data"
-    />
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--warning is-disabled"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-2"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--alert"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--warning is-readonly"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-2"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--alert"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
     
 
   </div>

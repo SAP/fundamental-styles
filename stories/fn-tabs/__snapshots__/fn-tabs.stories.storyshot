@@ -1,811 +1,291 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Forms/Input Default 1`] = `
+exports[`Storyshots Experimental/Tabs Group 1`] = `
 <section>
   
 
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+    }
+
+
+  </style>
+  
+
+
   <div
-    class="fd-form-item"
+    class="docs-fn-container"
   >
     
-        
-    <label
-      class="fd-form-label"
-      for="input-1"
+    
+    <ul
+      class="fn-tabs"
+      role="tablist"
     >
-      Default input:
-    </label>
-    
+      
         
-    <input
-      class="fd-input"
-      id="input-1"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
+      >
+        One
+      </li>
+      
         
-    <label
-      class="fd-form-label"
-      for="input-1b"
-    >
-      Compact Input:
-    </label>
-    
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Two
+      </li>
+      
         
-    <input
-      class="fd-input fd-input--compact"
-      id="input-1b"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Three
+      </li>
+      
         
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-1c"
-    >
-      Required Input:
-    </label>
-    
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Four
+      </li>
+      
         
-    <input
-      class="fd-input"
-      id="input-1c"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Five
+      </li>
+      
         
-    <label
-      aria-required="true"
-      class="fd-form-label"
-      for="input-1d"
-    >
-      Password:
-    </label>
-    
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Six
+      </li>
+      
         
-    <input
-      class="fd-input"
-      id="input-1d"
-      type="password"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-01"
-    >
-      Error Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-error"
-      id="input-01"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-02"
-    >
-      Success Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-success"
-      id="input-02"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-03"
-    >
-      Warning (Alert) Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-warning"
-      id="input-03"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-04"
-    >
-      Information Input:
-    </label>
-    
-        
-    <input
-      class="fd-input is-information"
-      id="input-04"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-05"
-    >
-      Disabled Input:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      disabled=""
-      id="input-05"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-06"
-    >
-      Read-Only Input:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      id="input-06"
-      placeholder="Field placeholder text"
-      readonly=""
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-07"
-    >
-      Default input:
-    </label>
-    
-            
-    <input
-      aria-label="Image label"
-      class="fd-input"
-      id="input-07"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
-        
-    <label
-      class="fd-form-label"
-      for="input-08"
-    >
-      Compact input:
-    </label>
-    
-            
-    <input
-      aria-label="Image label"
-      class="fd-input fd-input--compact"
-      id="input-08"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
-        
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-09"
-    >
-      Required Input:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      id="input-09"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
-        
-    <label
-      aria-required="true"
-      class="fd-form-label"
-      for="input-10"
-    >
-      Password:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      id="input-10"
-      type="password"
-    />
-    
-    
-  </div>
-  
-    
-  <br />
-  
-    
-  <br />
-  
-    
-  <div
-    class="fd-form-item fd-form-item--horizontal"
-  >
-    
-        
-    <label
-      aria-required="true"
-      class="fd-form-label"
-      for="input-11"
-    >
-      Input:
-    </label>
-    
-        
-    <input
-      class="fd-input"
-      id="input-11"
-      type="text"
-    />
-    
-    
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
+      >
+        Seven
+      </li>
+      
+    
+    </ul>
+    
+
   </div>
   
 
 </section>
 `;
 
-exports[`Storyshots Components/Forms/Input States 1`] = `
+exports[`Storyshots Experimental/Tabs Individual 1`] = `
 <section>
   
 
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+    }
+
+
+  </style>
+  
+
+
   <div
-    class="fd-form-item"
+    class="docs-fn-container"
   >
     
     
-    <label
-      class="fd-form-label"
-      for="input-1aa"
+    <ul
+      class="fn-tabs fn-tabs--individual"
+      role="tablist"
     >
-      Normal input:
-    </label>
+      
+        
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
+      >
+        One
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Two
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Three
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Four
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Five
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Six
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
+      >
+        Seven
+      </li>
+      
     
-    
-    <input
-      aria-label="Image label"
-      class="fd-input"
-      id="input-1aa"
-      placeholder="Field placeholder text"
-      type="text"
-    />
+    </ul>
     
 
   </div>
   
 
+</section>
+`;
 
-  <br />
-  <br />
+exports[`Storyshots Experimental/Tabs Line 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+    }
+
+
+  </style>
   
 
 
   <div
-    class="fd-form-item"
+    class="docs-fn-container"
   >
     
     
-    <label
-      class="fd-form-label"
-      for="input-1bb"
-    >
-      Success input:
-    </label>
-    
-    
-    <div
-      class="fd-popover fd-popover--input-message-group"
+    <ul
+      class="fn-tabs fn-tabs--line"
+      role="tablist"
     >
       
         
-      <div
-        aria-controls="popoverB2"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB2');"
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
       >
-        
-            
-        <input
-          aria-label="Image label"
-          class="fd-input is-success"
-          id="input-1bb"
-          placeholder="Field placeholder text"
-          type="text"
-        />
-        
-        
-      </div>
+        One
+      </li>
       
         
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB2"
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
       >
-        
-            
-        <div
-          class="fd-form-message fd-form-message--success"
-        >
-          Success message
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
-    
-    
-    <label
-      class="fd-form-label"
-      for="input-1cc"
-    >
-      Error input:
-    </label>
-    
-    
-    <div
-      class="fd-popover fd-popover--input-message-group"
-    >
+        Two
+      </li>
       
         
-      <div
-        aria-controls="popoverB3"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB3');"
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
       >
-        
-            
-        <input
-          aria-label="Image label"
-          class="fd-input is-error"
-          id="input-1cc"
-          placeholder="Field placeholder text"
-          type="text"
-        />
-        
-        
-      </div>
+        Three
+      </li>
       
         
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB3"
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
       >
-        
-            
-        <div
-          class="fd-form-message fd-form-message--error"
-        >
-          Error message
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
-    
-    
-    <label
-      class="fd-form-label"
-      for="input-1dd"
-    >
-      Warning input:
-    </label>
-    
-    
-    <div
-      class="fd-popover fd-popover--input-message-group"
-    >
+        Four
+      </li>
       
         
-      <div
-        aria-controls="popoverB4"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB4');"
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
       >
-        
-            
-        <input
-          aria-label="Image label"
-          class="fd-input is-warning"
-          id="input-1dd"
-          placeholder="Field placeholder text"
-          type="text"
-        />
-        
-        
-      </div>
+        Five
+      </li>
       
         
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB4"
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
       >
-        
-            
-        <div
-          class="fd-form-message fd-form-message--warning"
-        >
-          Warning message
-        </div>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
-    
-    
-    <label
-      class="fd-form-label"
-      for="input-1ee"
-    >
-      Information input:
-    </label>
-    
-    
-    <div
-      class="fd-popover fd-popover--input-message-group"
-    >
+        Six
+      </li>
       
         
-      <div
-        aria-controls="popoverB5"
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="fd-popover__control"
-        onclick="onPopoverClick('popoverB5');"
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
       >
-        
-            
-        <input
-          aria-label="Image label"
-          class="fd-input fd-input--compact is-information"
-          id="input-1ee"
-          placeholder="Field placeholder text"
-          type="text"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow"
-        id="popoverB5"
-      >
-        
-            
-        <div
-          class="fd-form-message fd-form-message--information"
-        >
-          Information message
-        </div>
-        
-        
-      </div>
+        Seven
+      </li>
       
     
-    </div>
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
-    
-    
-    <label
-      class="fd-form-label"
-      for="input-1ff"
-    >
-      Disabled Input:
-    </label>
-    
-    
-    <input
-      class="fd-input"
-      disabled=""
-      id="input-1ff"
-      type="text"
-      value="Non editable data"
-    />
-    
-
-  </div>
-  
-
-
-  <br />
-  <br />
-  
-
-
-  <div
-    class="fd-form-item"
-  >
-    
-    
-    <label
-      class="fd-form-label"
-      for="input-1gg"
-    >
-      Read Only Input:
-    </label>
-    
-    
-    <input
-      class="fd-input"
-      id="input-1gg"
-      readonly=""
-      type="text"
-      value="Read only data"
-    />
+    </ul>
     
 
   </div>
