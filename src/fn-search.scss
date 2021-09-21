@@ -1,0 +1,156 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-search;
+$fn-search-button-size: 1.5rem;
+$fn-search-icon-size: 1.125rem;
+$fn-search-clear-button-size: 0.625rem;
+
+.#{$block} {
+  @include fn-reset();
+
+  @include fn-flex() {
+    align-items: center;
+  }
+
+  width: 100%;
+  position: relative;
+  height: $fn-element-height;
+  border-radius: $fn-border-radius-large;
+
+  @include fn-hover() {
+    .#{$block}__input {
+      background: $fn-color-base-white;
+      box-shadow: $fn-shadow-grey-medium;
+
+      @include fn-focus() {
+        outline: none;
+        background: $fn-color-base-white;
+        box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow;
+      }
+    }
+  }
+
+  &__input {
+    @include fn-set-paddings-y-equal($fn-padding-xs);
+    @include fn-set-paddings-x(2.5rem, 3.25rem);
+
+    z-index: 1;
+    width: 100%;
+    border: none;
+    color: $fn-color-grey-8;
+    height: $fn-element-height;
+    background: $fn-color-grey-1;
+    caret-color: $fn-color-grey-8;
+    border-radius: $fn-border-radius-large;
+
+    &::placeholder {
+      color: $fn-color-grey-5;
+    }
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    &:not(:placeholder-shown) {
+      & ~ .#{$block}__button {
+        display: none;
+      }
+
+      & ~ .#{$block}__clear {
+        @include fn-set-position-right(0.75rem);
+
+        display: flex;
+      }
+    }
+
+    @include fn-pressed() {
+      box-shadow: $fn-shadow-grey-xs;
+      background: $fn-color-base-white;
+    }
+
+    @include fn-active() {
+      box-shadow: $fn-shadow-grey-xs;
+      background: $fn-color-base-white;
+    }
+
+    @include fn-focus() {
+      outline: none;
+      background: $fn-color-base-white;
+      box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow;
+
+      &:not(:placeholder-shown) {
+        & ~ .#{$block}__button {
+          display: flex;
+          background: $fn-color-blue-5;
+
+          [class*='sap-icon'] {
+            color: $fn-color-base-white;
+          }
+        }
+
+        & ~ .#{$block}__clear {
+          @include fn-set-position-right(2.75rem);
+        }
+      }
+    }
+  }
+
+  &__button {
+    @include fn-reset();
+    @include fn-flex-center();
+    @include fn-set-position-right(0.25rem);
+
+    right: 4px;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    background: transparent;
+    width: $fn-search-button-size;
+    height: $fn-search-button-size;
+
+    [class*='sap-icon'] {
+      line-height: 1;
+      font-size: 0.625rem;
+      color: $fn-color-grey-5;
+    }
+
+    @include fn-focus() {
+      outline: none;
+    }
+  }
+
+  &__clear {
+    @include fn-reset();
+    @include fn-set-position-right(0.75rem);
+
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    background: transparent;
+    width: $fn-search-clear-button-size;
+    height: $fn-search-clear-button-size;
+
+    [class*='sap-icon'] {
+      line-height: 1;
+      font-size: 0.625rem;
+      color: $fn-color-grey-5;
+    }
+  }
+
+  &__icon {
+    @include fn-set-position-left(0.75rem);
+
+    z-index: 10;
+    position: absolute;
+    width: $fn-search-icon-size;
+    height: $fn-search-icon-size;
+
+    &[class*='sap-icon'] {
+      line-height: 1;
+      color: $fn-color-grey-5;
+      font-size: $fn-search-icon-size;
+    }
+  }
+}

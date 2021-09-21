@@ -1,0 +1,411 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-text-field;
+
+@mixin fn-input-base($background, $border, $shadow, $hasFocus: false) {
+  @if $hasFocus {
+    @if $shadow != "none" {
+      box-shadow: $shadow, $fn-focus-outline-shadow;
+    } @else {
+      box-shadow: $fn-focus-outline-shadow;
+    }
+  } @else {
+    box-shadow: $shadow;
+  }
+
+  background: $background;
+
+  & + .#{$block}__input-border {
+    &::before {
+      background: $border;
+    }
+  }
+
+  @include fn-readonly() {
+    background: $fn-color-grey-1;
+
+    & ~ .#{$block}__input-border::before {
+      background: transparent;
+    }
+  }
+}
+
+@mixin fn-input-readonly() {
+  &:read-only {
+    @include fn-input-base($fn-color-grey-1, transparent, none);
+  }
+}
+
+@mixin fn-input-disabled-readonly() {
+  @include fn-disabled() {
+    .#{$block}__label {
+      color: $fn-color-grey-4;
+    }
+
+    [class*='sap-icon'] {
+      display: none;
+    }
+  }
+
+  @include fn-readonly() {
+    .#{$block}__label {
+      color: $fn-color-grey-8;
+    }
+
+    [class*='sap-icon'] {
+      display: none;
+    }
+  }
+}
+
+.#{$block} {
+  @include fn-reset();
+
+  @include fn-flex() {
+    flex-direction: column;
+  }
+
+  @include fn-input-disabled-readonly();
+
+  [class*='sap-icon'] {
+    @include fn-set-position-right(0.625rem);
+
+    font-size: 0.75rem;
+    position: absolute;
+    height: $fn-element-height;
+    line-height: $fn-element-height;
+  }
+
+  &__label {
+    @include fn-reset();
+
+    margin-bottom: $fn-margin-small;
+  }
+
+  &__input-container {
+    @include fn-reset();
+
+    width: 100%;
+    position: relative;
+    height: $fn-element-height;
+    border-radius: $fn-border-radius-small;
+  }
+
+  &__input {
+    @include fn-reset();
+
+    width: 100%;
+    height: $fn-element-height;
+    padding: $fn-padding-xs $fn-padding-medium;
+    background: $fn-color-grey-1;
+    border-radius: $fn-border-radius-small;
+
+    &::placeholder {
+      color: $fn-color-grey-5;
+      font-size: $fn-element-font-size;
+      line-height: $fn-element-line-height;
+    }
+
+    &:not(:placeholder-shown) {
+      & ~ .#{$block}__input-border::before {
+        background: $fn-color-blue-4;
+      }
+    }
+
+    @include fn-readonly() {
+      background: $fn-color-grey-1;
+
+      & ~ .#{$block}__input-border::before {
+        background: transparent;
+      }
+    }
+
+    @include fn-hover() {
+      @include fn-input-base($fn-color-base-white, $fn-color-grey-4, $fn-shadow-grey-medium);
+
+      &:not(:placeholder-shown) {
+        & ~ .#{$block}__input-border::before {
+          background: $fn-color-blue-4;
+        }
+      }
+    }
+
+    @include fn-pressed() {
+      @include fn-input-base($fn-color-base-white, $fn-color-grey-4, $fn-shadow-grey-small);
+    }
+
+    @include fn-active() {
+      @include fn-input-base($fn-color-base-white, $fn-color-grey-4, $fn-shadow-grey-small);
+    }
+
+    @include fn-focus() {
+      @include fn-input-base($fn-color-base-white, transparent, $fn-shadow-blue-medium, true);
+
+      @include fn-hover() {
+        &:not(:placeholder-shown) {
+          & ~ .#{$block}__input-border::before {
+            background: transparent;
+          }
+        }
+      }
+
+      outline: none;
+    }
+
+    @include fn-disabled() {
+      @include fn-input-base($fn-color-grey-1, transparent, none);
+
+      &::placeholder {
+        color: $fn-color-grey-4;
+      }
+    }
+  }
+
+  &__input-border {
+    @include fn-reset();
+
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    pointer-events: none;
+    height: $fn-element-height;
+    border-radius: $fn-border-radius-small;
+
+    &::before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      width: 100%;
+      height: 0.125rem;
+      position: absolute;
+      background: $fn-color-grey-4;
+    }
+  }
+
+  &--information {
+    [class*='sap-icon'] {
+      font-size: 1.125rem;
+      color: $fn-color-blue-4;
+    }
+
+    .#{$block}__label {
+      color: $fn-color-blue-5;
+    }
+
+    .#{$block}__input {
+      @include fn-input-base($fn-color-blue-1, $fn-color-blue-4, none);
+
+      &::placeholder {
+        color: $fn-color-blue-5;
+      }
+
+      @include fn-hover() {
+        @include fn-input-base($fn-color-base-white, $fn-color-blue-4, $fn-shadow-blue-medium);
+
+        &::placeholder {
+          color: $fn-color-blue-5;
+        }
+      }
+
+      @include fn-pressed() {
+        @include fn-input-base($fn-color-base-white, $fn-color-blue-4, $fn-shadow-blue-small);
+
+        &::placeholder {
+          color: $fn-color-blue-5;
+        }
+      }
+
+      @include fn-active() {
+        @include fn-input-base($fn-color-base-white, $fn-color-blue-4, $fn-shadow-blue-small);
+
+        &::placeholder {
+          color: $fn-color-blue-5;
+        }
+      }
+
+      @include fn-focus() {
+        @include fn-input-base($fn-color-base-white, transparent, $fn-shadow-blue-medium, true);
+
+        &::placeholder {
+          color: $fn-color-grey-5;
+        }
+
+        outline: none;
+      }
+
+      @include fn-disabled() {
+        @include fn-input-base($fn-color-grey-1, transparent, none);
+
+        &::placeholder {
+          color: $fn-color-grey-4;
+        }
+      }
+    }
+
+    @include fn-input-disabled-readonly();
+  }
+
+  &--warning {
+    [class*='sap-icon'] {
+      font-size: 1.25rem;
+      color: $fn-color-mango-4;
+    }
+
+    .#{$block}__label {
+      color: $fn-color-mango-5;
+    }
+
+    .#{$block}__input {
+      @include fn-input-base($fn-color-mango-1, $fn-color-mango-5, none);
+
+      &::placeholder {
+        color: $fn-color-mango-5;
+      }
+
+      @include fn-hover() {
+        @include fn-input-base($fn-color-base-white, $fn-color-mango-5, $fn-shadow-mango-medium);
+
+        &::placeholder {
+          color: $fn-color-mango-5;
+        }
+      }
+
+      @include fn-pressed() {
+        @include fn-input-base($fn-color-base-white, $fn-color-mango-5, $fn-shadow-mango-small);
+
+        &::placeholder {
+          color: $fn-color-mango-5;
+        }
+      }
+
+      @include fn-active() {
+        @include fn-input-base($fn-color-base-white, $fn-color-mango-5, $fn-shadow-mango-small);
+
+        &::placeholder {
+          color: $fn-color-mango-5;
+        }
+      }
+
+      @include fn-focus() {
+        @include fn-input-base($fn-color-base-white, transparent, $fn-shadow-blue-medium, true);
+
+        &::placeholder {
+          color: $fn-color-grey-5;
+        }
+
+        outline: none;
+      }
+
+      @include fn-disabled() {
+        @include fn-input-base($fn-color-grey-1, transparent, none);
+
+        &::placeholder {
+          color: $fn-color-grey-4;
+        }
+      }
+    }
+
+    @include fn-input-disabled-readonly();
+  }
+
+  &--error {
+    [class*='sap-icon'] {
+      font-size: 1.25rem;
+      color: $fn-color-red-4;
+    }
+
+    .#{$block}__label {
+      color: $fn-color-red-5;
+    }
+
+    .#{$block}__input {
+      @include fn-input-base($fn-color-red-1, $fn-color-red-4, none);
+
+      &::placeholder {
+        color: $fn-color-red-5;
+      }
+
+      @include fn-hover() {
+        @include fn-input-base($fn-color-base-white, $fn-color-red-4, $fn-shadow-red-medium);
+
+        &::placeholder {
+          color: $fn-color-red-5;
+        }
+      }
+
+      @include fn-pressed() {
+        @include fn-input-base($fn-color-base-white, $fn-color-red-4, $fn-shadow-red-small);
+
+        &::placeholder {
+          color: $fn-color-red-5;
+        }
+      }
+
+      @include fn-active() {
+        @include fn-input-base($fn-color-base-white, $fn-color-red-4, $fn-shadow-red-small);
+
+        &::placeholder {
+          color: $fn-color-red-5;
+        }
+      }
+
+      @include fn-focus() {
+        @include fn-input-base($fn-color-base-white, transparent, $fn-shadow-blue-medium, true);
+
+        &::placeholder {
+          color: $fn-color-grey-5;
+        }
+
+        outline: none;
+      }
+
+      @include fn-disabled() {
+        @include fn-input-base($fn-color-grey-1, transparent, none);
+
+        &::placeholder {
+          color: $fn-color-grey-4;
+        }
+      }
+    }
+
+    @include fn-input-disabled-readonly();
+  }
+
+  &--success {
+    @include fn-input-disabled-readonly();
+
+    [class*='sap-icon'] {
+      display: none;
+    }
+
+    .#{$block}__input {
+      @include fn-focus() {
+        &:not(:placeholder-shown) {
+          & ~ .#{$block}__input-border::before {
+            background: transparent;
+          }
+
+          & ~ [class*='sap-icon'] {
+            display: none;
+          }
+        }
+      }
+
+      &:not(:placeholder-shown) {
+        & ~ .#{$block}__input-border::before {
+          background: $fn-color-green-4;
+        }
+
+        & ~ [class*='sap-icon'] {
+          font-size: 1.25rem;
+          display: inline-block;
+          color: $fn-color-green-4;
+        }
+      }
+    }
+  }
+}

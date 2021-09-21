@@ -1,0 +1,103 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-slider;
+$tag-border-width: 0.125rem;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex-vertical-center();
+
+  width: 100%;
+  position: relative;
+
+  &__dot {
+    @include fn-reset();
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: $fn-color-grey-4;
+
+    &--active {
+      background: $fn-color-blue-4;
+    }
+  }
+
+  &__track {
+    @include fn-reset();
+
+    width: 100%;
+    height: 0.25rem;
+    position: relative;
+    margin: 0 $fn-margin-xs;
+    background: $fn-color-grey-2;
+    border-radius: $fn-border-radius-xs;
+  }
+
+  &__track-range {
+    @include fn-reset();
+
+    top: 0;
+    left: 0;
+    height: 0.25rem;
+    position: absolute;
+    background: $fn-color-blue-4;
+    border-radius: $fn-border-radius-xs;
+  }
+
+  &__handle {
+    @include fn-reset();
+
+    @include fn-flex() {
+      justify-content: space-between;
+    }
+
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    transform: translateX(-50%);
+    background: $fn-color-base-white;
+    box-shadow: $fn-shadow-blue-small;
+    border-radius: $fn-border-radius-small;
+
+    &[aria-valuenow="0"] {
+      transform: translateX(0);
+    }
+
+    &[aria-valuenow="100"] {
+      transform: translateX(-100%);
+    }
+
+    [class*='sap-icon'] {
+      top: 0.125rem;
+      position: absolute;
+      color: $fn-color-blue-5;
+    }
+
+    [class*='sap-icon']:first-child {
+      @include fn-set-position-left(0.3125rem);
+
+      transform: rotate(90deg);
+
+      @include fn-rtl() {
+        transform: rotate(-90deg);
+      }
+    }
+
+    [class*='sap-icon']:last-child {
+      @include fn-set-position-right(0.3125rem);
+
+      transform: rotate(-90deg);
+
+      @include fn-rtl() {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &--vertical {
+    transform: rotate(-90deg);
+  }
+}

@@ -1,0 +1,103 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-select;
+
+@mixin fn-select-item-base($background, $border, $color: $fn-color-grey-8) {
+  color: $color;
+  background: $background;
+
+  &::before {
+    background: $border;
+  }
+}
+
+.#{$block} {
+  @include fn-reset();
+
+  [class*='sap-icon'] {
+    cursor: pointer;
+  }
+
+  &__input {
+    @include fn-readonly() {
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    @include fn-reset();
+
+    width: 100%;
+    list-style: none;
+    padding: $fn-padding-xs;
+    margin-top: $fn-margin-small;
+    background: $fn-color-base-white;
+    box-shadow: $fn-shadow-grey-medium;
+    border-radius: $fn-border-radius-small;
+  }
+
+  &__item {
+    @include fn-reset();
+    @include fn-select-item-base($fn-color-base-white, $fn-color-base-white);
+
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    height: $fn-element-height;
+    border-radius: $fn-border-radius-xs;
+    padding: $fn-padding-xs $fn-padding-small;
+
+    &::before {
+      @include fn-set-position-left(0);
+
+      top: 0;
+      content: '';
+      height: 100%;
+      width: 0.125rem;
+      position: absolute;
+    }
+
+    @include fn-hover() {
+      @include fn-select-item-base($fn-color-grey-1, $fn-color-grey-2);
+    }
+
+    @include fn-pressed() {
+      @include fn-select-item-base($fn-color-grey-1, $fn-color-grey-3);
+    }
+
+    @include fn-active() {
+      @include fn-select-item-base($fn-color-grey-1, $fn-color-grey-3);
+    }
+
+    @include fn-focus() {
+      @include fn-select-item-base($fn-color-base-white, $fn-color-base-white);
+
+      outline: none;
+      box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+    }
+  }
+
+  &__item--selected {
+    @include fn-select-item-base($fn-color-blue-1, $fn-color-blue-4, $fn-color-blue-6);
+
+    @include fn-hover() {
+      @include fn-select-item-base($fn-color-blue-1, $fn-color-blue-5, $fn-color-blue-7);
+    }
+
+    @include fn-pressed() {
+      @include fn-select-item-base($fn-color-blue-1, $fn-color-blue-6, $fn-color-blue-8);
+    }
+
+    @include fn-active() {
+      @include fn-select-item-base($fn-color-blue-1, $fn-color-blue-6, $fn-color-blue-8);
+    }
+
+    @include fn-focus() {
+      @include fn-select-item-base($fn-color-blue-1, $fn-color-blue-4, $fn-color-blue-6);
+
+      outline: none;
+      box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+    }
+  }
+}

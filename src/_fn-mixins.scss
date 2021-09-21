@@ -1,8 +1,8 @@
 @mixin fn-reset {
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #223548;
   font-weight: normal;
   box-sizing: border-box;
   padding: 0;
@@ -109,4 +109,92 @@
   justify-content: center;
   align-items: center;
   @content;
+}
+
+@mixin fn-flex-vertical-center {
+  display: flex;
+  align-items: center;
+  @content;
+}
+
+// Set Margins
+@mixin fn-set-margin-left($left: 0) {
+  margin-left: $left;
+
+  @include fn-rtl() {
+    margin-right: $left;
+    margin-left: 0;
+  }
+}
+
+@mixin fn-set-margin-right($right: 0) {
+  margin-right: $right;
+
+  @include fn-rtl() {
+    margin-right: 0;
+    margin-left: $right;
+  }
+}
+
+// Set Paddings
+@mixin fn-set-padding-left($left: 0) {
+  padding-left: $left;
+
+  @include fn-rtl() {
+    padding-right: $left;
+    padding-left: 0;
+  }
+}
+
+@mixin fn-set-padding-right($right: 0) {
+  padding-right: $right;
+
+  @include fn-rtl() {
+    padding-right: 0;
+    padding-left: $right;
+  }
+}
+
+@mixin fn-set-paddings-x($left: 0, $right: 0) {
+  padding-left: $left;
+  padding-right: $right;
+
+  @include fn-rtl() {
+    padding-right: $left;
+    padding-left: $right;
+  }
+}
+
+@mixin fn-set-paddings-x-equal($value: 0) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin fn-set-paddings-y($top: 0, $bottom: 0) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin fn-set-paddings-y-equal($value: 0) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+// Set position absolute
+@mixin fn-set-position-right($right) {
+  right: $right;
+
+  @include fn-rtl() {
+    right: auto;
+    left: $right;
+  }
+}
+
+@mixin fn-set-position-left($left) {
+  left: $left;
+
+  @include fn-rtl() {
+    left: auto;
+    right: $left;
+  }
 }
