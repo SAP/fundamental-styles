@@ -1,3 +1,14 @@
+// Element height
+$fn-element-height: 2rem; // 32px
+
+// Text font
+$fn-element-font-size: 0.875rem; // 14px
+$fn-element-line-height: 1.5rem; // 24px
+
+// Focus outline
+$fn-focus-outline-shadow: 0 0 0 0.125rem #1b90ff;
+$fn-focus-outline-inner-shadow: inset 0 0 0 0.125rem #ffffff;
+
 // Paddings
 $fn-padding-xs: 0.25rem; // 4px
 $fn-padding-small: 0.5rem; // 8px
@@ -80,25 +91,25 @@ $fn-color-red-7: #840606;
 $fn-color-red-8: #5a0404;
 $fn-color-red-9: #350000;
 
-$fn-color-red-1: #fff0fa;
-$fn-color-red-2: #ffafed;
-$fn-color-red-3: #ff8af0;
-$fn-color-red-4: #f31ded;
-$fn-color-red-5: #cc00dc;
-$fn-color-red-6: #a100c2;
-$fn-color-red-7: #7800a4;
-$fn-color-red-8: #510080;
-$fn-color-red-9: #28004a;
+$fn-color-pink-1: #fff0fa;
+$fn-color-pink-2: #ffafed;
+$fn-color-pink-3: #ff8af0;
+$fn-color-pink-4: #f31ded;
+$fn-color-pink-5: #cc00dc;
+$fn-color-pink-6: #a100c2;
+$fn-color-pink-7: #7800a4;
+$fn-color-pink-8: #510080;
+$fn-color-pink-9: #28004a;
 
-$fn-color-red-1: #f1ecff;
-$fn-color-red-2: #d3b6ff;
-$fn-color-red-3: #b894ff;
-$fn-color-red-4: #9b76ff;
-$fn-color-red-5: #7858ff;
-$fn-color-red-6: #5d36ff;
-$fn-color-red-7: #470ced;
-$fn-color-red-8: #2c13ad;
-$fn-color-red-9: #1c0c6e;
+$fn-color-indigo-1: #f1ecff;
+$fn-color-indigo-2: #d3b6ff;
+$fn-color-indigo-3: #b894ff;
+$fn-color-indigo-4: #9b76ff;
+$fn-color-indigo-5: #7858ff;
+$fn-color-indigo-6: #5d36ff;
+$fn-color-indigo-7: #470ced;
+$fn-color-indigo-8: #2c13ad;
+$fn-color-indigo-9: #1c0c6e;
 
 $fn-color-base-white: #ffffff;
 $fn-color-base-black: #000000;

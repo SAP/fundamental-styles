@@ -1,0 +1,111 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-radio;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex-vertical-center();
+
+  cursor: pointer;
+  min-width: 10rem;
+  width: fit-content;
+  position: relative;
+  padding: 0.4375rem;
+  display: inline-flex;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  height: $fn-element-height;
+  border-radius: $fn-border-radius-large;
+
+  @include fn-hover() {
+    box-shadow: $fn-shadow-grey-medium;
+  }
+
+  @include fn-pressed() {
+    box-shadow: $fn-shadow-grey-xs;
+  }
+
+  @include fn-active() {
+    box-shadow: $fn-shadow-grey-xs;
+  }
+
+  @include fn-focus() {
+    outline: none;
+    box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow;
+  }
+
+  @include fn-disabled() {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    .#{$block}__input ~ .#{$block}__checkmark {
+      border-color: $fn-color-grey-3;
+    }
+
+    .#{$block}__input ~ .#{$block}__checkmark::after {
+      color: $fn-color-grey-3;
+    }
+
+    .#{$block}__input ~ .#{$block}__label {
+      color: $fn-color-grey-3;
+    }
+  }
+
+  &__input {
+    @include fn-reset();
+
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+
+    &:checked ~ .#{$block}__checkmark {
+      border-color: $fn-color-blue-4;
+    }
+
+    &:checked ~ .#{$block}__checkmark::after {
+      display: block;
+    }
+
+    @include fn-disabled() {
+      & ~ .#{$block}__checkmark {
+        border-color: $fn-color-grey-3;
+      }
+
+      & ~ .#{$block}__checkmark::after {
+        color: $fn-color-grey-3;
+      }
+
+      & ~ .#{$block}__label {
+        color: $fn-color-grey-3;
+      }
+    }
+  }
+
+  &__checkmark {
+    @include fn-reset();
+    @include fn-flex-center();
+
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    background-color: $fn-color-base-white;
+    border: 0.125rem solid $fn-color-grey-5;
+
+    &::after {
+      display: none;
+      font-size: 0.435rem;
+      content: "\e255";
+      color: $fn-color-blue-4;
+      font-family: "SAP-icons";
+    }
+  }
+
+  &__label {
+    @include fn-reset();
+    @include fn-set-margin-left($fn-margin-medium);
+  }
+}

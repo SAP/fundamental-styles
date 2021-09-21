@@ -1,0 +1,244 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-tabs;
+$tag-border-width: 0.125rem;
+
+@mixin fn-tabs-base($background, $color, $border, $shadow, $hasFocus: false) {
+  @if $hasFocus {
+    @if $shadow != "none" {
+      box-shadow: $shadow, $fn-focus-outline-shadow;
+    } @else {
+      box-shadow: $fn-focus-outline-shadow;
+    }
+  } @else {
+    box-shadow: $shadow;
+  }
+
+  color: $color;
+  background: $background;
+
+  &::before {
+    background-color: $border;
+  }
+}
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex();
+
+  list-style: none;
+  height: $fn-element-height;
+  background: $fn-color-grey-1;
+  border-radius: $fn-border-radius-small;
+
+  &__item {
+    @include fn-reset();
+    @include fn-tabs-base(transparent, $fn-color-grey-5, transparent, none);
+
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+    position: relative;
+    line-height: $fn-element-line-height;
+    border-radius: $fn-border-radius-small;
+    padding: $fn-padding-xs $fn-padding-medium;
+
+    &::before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      width: 100%;
+      height: 0.125rem;
+      position: absolute;
+    }
+
+    @include fn-hover() {
+      @include fn-tabs-base(transparent, $fn-color-grey-6, $fn-color-grey-6, none);
+    }
+
+    @include fn-pressed() {
+      @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+    }
+
+    @include fn-active() {
+      @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+    }
+
+    @include fn-focus() {
+      @include fn-tabs-base(transparent, $fn-color-grey-8, transparent, none, true);
+
+      outline: none;
+    }
+
+    @include fn-disabled() {
+      @include fn-tabs-base(transparent, $fn-color-grey-3, transparent, none);
+
+      cursor: not-allowed;
+    }
+
+    &--selected {
+      @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small);
+
+      @include fn-hover() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-6, $fn-color-blue-5, $fn-shadow-blue-medium);
+      }
+
+      @include fn-pressed() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+      }
+
+      @include fn-active() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+      }
+
+      @include fn-focus() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small, true);
+
+        outline: none;
+      }
+
+      @include fn-disabled() {
+        @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-3, $fn-color-grey-3, none);
+      }
+    }
+  }
+
+  &--individual {
+    background: transparent;
+
+    .#{$block}__item {
+      @include fn-set-margin-right($fn-margin-small);
+      @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-6, transparent, none);
+
+      @include fn-hover() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-grey-6, transparent, $fn-shadow-grey-medium);
+      }
+
+      @include fn-pressed() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-grey-7, transparent, $fn-shadow-grey-small);
+      }
+
+      @include fn-active() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-grey-7, transparent, $fn-shadow-grey-small);
+      }
+
+      @include fn-focus() {
+        @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-8, transparent, none, true);
+
+        outline: none;
+      }
+
+      @include fn-disabled() {
+        @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-3, transparent, none);
+      }
+
+      &--selected {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small);
+
+        @include fn-hover() {
+          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-6, $fn-color-blue-5, $fn-shadow-blue-medium);
+        }
+
+        @include fn-pressed() {
+          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+        }
+
+        @include fn-active() {
+          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+        }
+
+        @include fn-focus() {
+          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small, true);
+
+          outline: none;
+        }
+
+        @include fn-disabled() {
+          @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-3, $fn-color-grey-3, none);
+        }
+      }
+    }
+  }
+
+  &--line {
+    height: 2.5rem;
+    background: transparent;
+
+    .#{$block}__item {
+      @include fn-tabs-base(transparent, $fn-color-grey-5, transparent, none);
+
+      box-shadow: none;
+      overflow: visible;
+      padding: $fn-padding-xs $fn-padding-small;
+
+      &::before {
+        bottom: -0.4375rem;
+        border-radius: 10rem;
+        width: calc(100% - 1rem);
+        left: $fn-padding-small;
+        right: $fn-padding-small;
+      }
+
+      @include fn-hover() {
+        @include fn-tabs-base(transparent, $fn-color-grey-6, $fn-color-grey-6, none);
+      }
+
+      @include fn-pressed() {
+        @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+      }
+
+      @include fn-active() {
+        @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+      }
+
+      @include fn-focus() {
+        @include fn-tabs-base(transparent, $fn-color-grey-8, transparent, none, true);
+
+        &::before {
+          width: 100%;
+          left: 0;
+          right: 0;
+        }
+
+        outline: none;
+      }
+
+      @include fn-disabled() {
+        @include fn-tabs-base(transparent, $fn-color-grey-3, transparent, none);
+      }
+
+      &--selected {
+        @include fn-tabs-base(transparent, $fn-color-blue-5, $fn-color-blue-4, none);
+
+        @include fn-hover() {
+          @include fn-tabs-base(transparent, $fn-color-blue-6, $fn-color-blue-5, none);
+        }
+
+        @include fn-pressed() {
+          @include fn-tabs-base(transparent, $fn-color-blue-7, $fn-color-blue-6, none);
+        }
+
+        @include fn-active() {
+          @include fn-tabs-base(transparent, $fn-color-blue-7, $fn-color-blue-6, none);
+        }
+
+        @include fn-focus() {
+          @include fn-tabs-base(transparent, $fn-color-blue-5, $fn-color-blue-4, none, true);
+
+          &::before {
+            width: 100%;
+            left: 0;
+            right: 0;
+          }
+
+          outline: none;
+        }
+
+        @include fn-disabled() {
+          @include fn-tabs-base(transparent, $fn-color-grey-3, $fn-color-grey-3, none);
+        }
+      }
+    }
+  }
+}
