@@ -208,12 +208,8 @@ export const indication = () => `<div class="fd-vertical-nav">
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow" aria-label="Expand second submenu 4"></button>    
                 <span class="fd-list__navigation-item-indicator"></span>
                 <div class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--first-level" aria-hidden="false" id="popoverA1">
-                    <ul class="fd-list">
-                        <li class="fd-list__navigation-item fd-list__navigation-item--condensed">
-                            <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
-                            <span class="fd-list__navigation-item-text">Calendar</span>
-                        </li>
-                    </ul>
+                    <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
+                    <span class="fd-list__navigation-item-text">Calendar</span>
                 </div>
                 <div class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--second-level" aria-hidden="false" id="popoverA2">
                     <ul class="fd-list">
