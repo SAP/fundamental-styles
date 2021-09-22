@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.37...v0.20.0-rc.38) (2021-09-22)
+
+
+### Bug Fixes
+
+* add focus style on clickable object marker ([#2735](https://github.com/SAP/fundamental-styles/issues/2735)) ([5bad5b5](https://github.com/SAP/fundamental-styles/commit/5bad5b5ecec845bb70ea814207490d25b66da638))
+
 ## [0.20.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.36...v0.20.0-rc.37) (2021-09-21)
 
 ## [0.20.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.35...v0.20.0-rc.36) (2021-09-20)
