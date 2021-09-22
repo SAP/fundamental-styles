@@ -165,6 +165,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       &.is-expanded {
         @include fd-set-margins-x();
 
+        height: 2.75rem;
         overflow: visible;
         visibility: hidden;
 
