@@ -6,6 +6,7 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
 
   <a
     class="fd-object-marker fd-object-marker--link"
+    href="#"
   >
     
     
@@ -27,6 +28,7 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
 
   <a
     class="fd-object-marker fd-object-marker--link"
+    href="#"
   >
     
     

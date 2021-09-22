@@ -24,6 +24,8 @@ $block: #{$fd-namespace}-object-marker;
 
   // CLICKABLE OBJECT STATUS
   &--link {
+    @include fd-fiori-focus(0.0625rem);
+
     cursor: pointer;
     text-decoration: none;
     color: $fd-object-marker-color;
@@ -73,6 +75,7 @@ $block: #{$fd-namespace}-object-marker;
     }
   }
 
+  // OBJECT MARKER TEXT
   &__text {
     @include fd-reset();
     @include fd-ellipsis();
