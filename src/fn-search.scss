@@ -45,6 +45,8 @@ $fn-search-clear-button-size: 0.625rem;
 
     &::placeholder {
       color: $fn-color-grey-5;
+      font-size: $fn-element-font-size;
+      line-height: $fn-element-line-height;
     }
 
     &::-webkit-search-cancel-button {

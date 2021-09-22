@@ -70,6 +70,7 @@ $block: #{$fn-namespace}-text-field;
   [class*='sap-icon'] {
     @include fn-set-position-right(0.625rem);
 
+    top: 0;
     font-size: 0.75rem;
     position: absolute;
     height: $fn-element-height;

@@ -95,6 +95,22 @@ $tag-border-width: 0.125rem;
         transform: rotate(90deg);
       }
     }
+
+    @include fn-focus() {
+      outline: none;
+    }
+
+    @include fn-hover() {
+      box-shadow: $fn-shadow-blue-medium;
+    }
+
+    @include fn-pressed() {
+      box-shadow: $fn-shadow-blue-xs;
+    }
+
+    @include fn-active() {
+      box-shadow: $fn-shadow-blue-xs;
+    }
   }
 
   &--vertical {

@@ -44,7 +44,8 @@ export const horizontalSlider = () => `${localStyles}
         <div class="fn-slider__dot"></div>
     </div>
 
-    <br><br><br>
+    <div style="margin-bottom: 2rem;"></div>
+    
     <div class="fn-slider">
         <div class="fn-slider__dot fn-slider__dot--active"></div>
         <div class="fn-slider__track">
@@ -57,7 +58,7 @@ export const horizontalSlider = () => `${localStyles}
         <div class="fn-slider__dot"></div>
     </div>
 
-    <br><br><br>
+    <div style="margin-bottom: 2rem;"></div>
 
     <div class="fn-slider">
         <div class="fn-slider__dot fn-slider__dot--active"></div>
