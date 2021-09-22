@@ -170,6 +170,7 @@ $tag-border-width: 0.125rem;
 
       box-shadow: none;
       overflow: visible;
+      height: $fn-element-height;
       padding: $fn-padding-xs $fn-padding-small;
 
       &::before {

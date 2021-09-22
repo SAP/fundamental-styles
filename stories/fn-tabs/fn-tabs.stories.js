@@ -1,7 +1,14 @@
 export default {
     title: 'Experimental/Tabs',
     parameters: {
-        description: '',
+        description: `**Modifier classes for slider style:**
+
+| Style&nbsp;&nbsp;&nbsp;&nbsp;     | Modifier class           |
+| --------------------------------- | ------------------------ |
+| group&nbsp;&nbsp;&nbsp;&nbsp;     | \`none\`                 |
+| individual&nbsp;&nbsp;&nbsp;&nbsp;| \`fn-tabs--individual\`  |
+| line&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-tabs--line\`  |
+<br><br><br>`,
         components: ['fn-tabs']
     }
 };

@@ -6,14 +6,14 @@ export default {
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;  | Modifier class     |
 | ------------------------------ | ------------------ |
-| grey&nbsp;&nbsp;&nbsp;&nbsp;   | \`fd-tag--grey\`   |
-| blue&nbsp;&nbsp;&nbsp;&nbsp;   | \`fd-tag--blue\`   |
-| teal&nbsp;&nbsp;&nbsp;&nbsp;   | \`fd-tag--teal\`   |
-| green&nbsp;&nbsp;&nbsp;&nbsp;  | \`fd-tag--green\`  |
-| mango&nbsp;&nbsp;&nbsp;&nbsp;  | \`fd-tag--mango\`  |
-| red&nbsp;&nbsp;&nbsp;&nbsp;    | \`fd-tag--red\`    |
-| pink&nbsp;&nbsp;&nbsp;&nbsp;   | \`fd-tag--pink\`   |
-| indigo&nbsp;&nbsp;&nbsp;&nbsp; | \`fd-tag--indigo\` |
+| grey&nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-tag--grey\`   |
+| blue&nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-tag--blue\`   |
+| teal&nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-tag--teal\`   |
+| green&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-tag--green\`  |
+| mango&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-tag--mango\`  |
+| red&nbsp;&nbsp;&nbsp;&nbsp;    | \`fn-tag--red\`    |
+| pink&nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-tag--pink\`   |
+| indigo&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-tag--indigo\` |
 
 <br><br>
         `,
