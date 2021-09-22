@@ -1,9 +1,14 @@
 export default {
     title: 'Experimental/Slider',
     parameters: {
-        description: `
+        description: `**Modifier classes for slider style:**
 
-        `,
+| Style&nbsp;&nbsp;&nbsp;&nbsp;     | Modifier class           |
+| --------------------------------- | ------------------------ |
+| horizontal&nbsp;&nbsp;&nbsp;&nbsp;| \`none\`                 |
+| vertical&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-slider--vertical\`  |
+<br><br><br>
+`,
         components: ['fn-input', 'fn-slider', 'icon']
     }
 };
@@ -122,6 +127,7 @@ export const verticalSlider = () => `${localStyles}
 verticalSlider.storyName = 'Vertical Slider';
 verticalSlider.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-slider--vertical` modifier class to `.fn-slider` for Vertical Slider.'
     }
 };

@@ -1,7 +1,17 @@
 export default {
     title: 'Experimental/Text Field',
     parameters: {
-        description: `
+        description: `**Modifier classes for text field:**
+
+| Style&nbsp;&nbsp;&nbsp;&nbsp;      | Modifier class                |
+| ---------------------------------- | ----------------------------- |
+| default&nbsp;&nbsp;&nbsp;&nbsp;    | \`none\`                      |
+| information&nbsp;&nbsp;&nbsp;&nbsp;| \`fn-text-field--information\`|
+| warning&nbsp;&nbsp;&nbsp;&nbsp;    | \`fn-text-field--warning\`    |
+| error&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-text-field--error\`      |
+| success&nbsp;&nbsp;&nbsp;&nbsp;    | \`fn-text-field--success\`    |
+
+<br><br>
 
         `,
         components: ['fn-input', 'icon']
@@ -97,7 +107,8 @@ export const informationInput = () => `${localStyles}
 informationInput.storyName = 'Information Input';
 informationInput.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-text-field--information` modifier class to `.fn-text-field` for Information Input.'
     }
 };
 
@@ -140,7 +151,8 @@ export const warningInput = () => `${localStyles}
 warningInput.storyName = 'Warning Input';
 warningInput.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-text-field--warning` modifier class to `.fn-text-field` for Warning Input.'
     }
 };
 
@@ -183,7 +195,8 @@ export const errorInput = () => `${localStyles}
 errorInput.storyName = 'Error Input';
 errorInput.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-text-field--error` modifier class to `.fn-text-field` for Error Input.'
     }
 };
 
@@ -227,6 +240,7 @@ export const successInput = () => `${localStyles}
 successInput.storyName = 'Success Input';
 successInput.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-text-field--success` modifier class to `.fn-text-field` for Success Input.'
     }
 };

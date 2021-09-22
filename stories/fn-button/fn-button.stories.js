@@ -7,11 +7,11 @@ export default {
 | Style&nbsp;&nbsp;&nbsp;&nbsp;     | Modifier class           |
 | --------------------------------- | ------------------------ |
 | primary&nbsp;&nbsp;&nbsp;&nbsp;   | \`none\`                 |
-| secondary&nbsp;&nbsp;&nbsp;&nbsp; | \`fd-button--secondary\` |
-| flat&nbsp;&nbsp;&nbsp;&nbsp;      | \`fd-button--flat\`      |
-| outline&nbsp;&nbsp;&nbsp;&nbsp;   | \`fd-button--outline\`   |
-| naked&nbsp;&nbsp;&nbsp;&nbsp;     | \`fd-button--naked\`     |
-| link&nbsp;&nbsp;&nbsp;&nbsp;      | \`fd-button--link\`      |
+| secondary&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--secondary\` |
+| flat&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--flat\`      |
+| outline&nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-button--outline\`   |
+| naked&nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-button--naked\`     |
+| link&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--link\`      |
 
 <br><br>
 
@@ -20,9 +20,9 @@ export default {
 | Structure&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class           |
 | --------------------------------- | ------------------------ |
 | No-Icon&nbsp;&nbsp;&nbsp;&nbsp;   | \`none\`                 |
-| Icon-Only&nbsp;&nbsp;&nbsp;&nbsp; | \`fd-button--icon-only\` |
-| Icon-Left&nbsp;&nbsp;&nbsp;&nbsp; | \`fd-button--icon-left\` |
-| Icon-Right&nbsp;&nbsp;&nbsp;&nbsp;| \`fd-button--icon-right\`|
+| Icon-Only&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--icon-only\` |
+| Icon-Left&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--icon-left\` |
+| Icon-Right&nbsp;&nbsp;&nbsp;&nbsp;| \`fn-button--icon-right\`|
 
 <br><br>
         `,
@@ -157,7 +157,8 @@ primary.storyName = 'Primary Button';
 
 primary.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Primary button is the default button, no modifier class is needed. For an Icon-Only button add the `.fn-button--icon-only` modifier class. To add an icon you can use `.fn-button--icon-right` or `.fn-button--icon-left` based on where you want the icon to be rendered.'
     }
 };
 
@@ -265,7 +266,8 @@ secondary.storyName = 'Secondary Button';
 
 secondary.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-button--secondary` modifier class to `.fn-button` for Secondary Button.'
     }
 };
 
@@ -372,7 +374,8 @@ flat.storyName = 'Flat Button';
 
 flat.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-button--flat` modifier class to `.fn-button` for Flat Button.'
     }
 };
 
@@ -479,7 +482,8 @@ link.storyName = 'Link Button';
 
 link.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-button--link` modifier class to `.fn-button` for Link Button.'
     }
 };
 
@@ -586,7 +590,8 @@ outline.storyName = 'Outline Button';
 
 outline.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-button--outline` modifier class to `.fn-button` for Outline Button.'
     }
 };
 
@@ -693,6 +698,7 @@ naked.storyName = 'Naked Button';
 
 naked.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        storyDescription: 'Add the `.fn-button--naked` modifier class to `.fn-button` for Naked Button.'
     }
 };
