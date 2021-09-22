@@ -96,10 +96,13 @@ $block: #{$fn-namespace}-radio;
     border: 0.125rem solid $fn-color-grey-5;
 
     &::after {
+      content: "";
       display: none;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
       font-size: 0.435rem;
-      content: "\e255";
-      color: $fn-color-blue-4;
+      background: $fn-color-blue-4;
       font-family: "SAP-icons";
     }
   }
