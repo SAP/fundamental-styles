@@ -4,6 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: weekly
+    day: sunday
     time: "10:00"
     timezone: Etc/UCT
   reviewers:
