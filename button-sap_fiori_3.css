@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -582,7 +582,7 @@
 .fd-button[aria-pressed=true].fd-button--positive,
 .fd-button[aria-selected=true].fd-button--positive {
   color: #fff;
-  color: var(--sapButton_Selected_TextColor,#fff);
+  color: var(--sapButton_Accept_Active_TextColor,#fff);
   border-color: #0d6733;
   border-color: var(--sapButton_Accept_Active_BorderColor,#0d6733);
   background-color: #0d6733;
@@ -608,7 +608,7 @@
 .fd-button[aria-pressed=true].fd-button--negative,
 .fd-button[aria-selected=true].fd-button--negative {
   color: #fff;
-  color: var(--sapButton_Selected_TextColor,#fff);
+  color: var(--sapButton_Reject_Active_TextColor,#fff);
   border-color: #a20000;
   border-color: var(--sapButton_Reject_Active_BorderColor,#a20000);
   background-color: #a20000;
@@ -634,7 +634,7 @@
 .fd-button[aria-pressed=true].fd-button--attention,
 .fd-button[aria-selected=true].fd-button--attention {
   color: #fff;
-  color: var(--sapButton_Selected_TextColor,#fff);
+  color: var(--sapButton_Attention_Active_TextColor,#fff);
   border-color: #f3801c;
   border-color: var(--sapButton_Attention_Active_BorderColor,#f3801c);
   background-color: #f3801c;
@@ -660,7 +660,7 @@
 .fd-button[aria-pressed=true].fd-button--emphasized,
 .fd-button[aria-selected=true].fd-button--emphasized {
   color: #fff;
-  color: var(--sapButton_Emphasized_TextColor,#fff);
+  color: var(--sapButton_Emphasized_Active_TextColor,#fff);
   border-color: #0854a0;
   border-color: var(--sapButton_Emphasized_Active_BorderColor,#0854a0);
   background-color: #0854a0;

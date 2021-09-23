@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -27,7 +27,6 @@
   margin: 0;
   border: 0;
   height: 2rem;
-  min-height: 2rem;
   padding: 0 .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,8 +55,7 @@
   border-bottom: none
 }
 .fd-toolbar--auto {
-  background-color: inherit;
-  background-color: var(--fdToolbar_Auto_Background,inherit)
+  background-color: inherit
 }
 .fd-toolbar--solid {
   background-color: #1c2228;
@@ -67,8 +65,19 @@
   background-color: transparent;
   background-color: var(--sapToolbar_Background,transparent)
 }
+.fd-toolbar--fade-in {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s linear 0s,opacity 1s;
+  transition: visibility 0s linear 0s,opacity 1s
+}
+.fd-toolbar--fade-out {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s linear 1s,opacity 1ms;
+  transition: visibility 0s linear 1s,opacity 1ms
+}
 .fd-toolbar--info {
-  height: 2rem;
   background-color: #14181c;
   background-color: var(--sapInfobar_NonInteractive_Background,#14181c);
   color: #fafafa;
@@ -148,7 +157,7 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body {
+.fd-toolbar__overflow {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   line-height: 1.4;
@@ -170,40 +179,105 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: .375rem;
+  padding-right: .375rem;
+  padding-top: .1875rem;
+  padding-bottom: .1875rem;
   max-width: 20rem;
-  padding: .1875rem .375rem
+  max-height: 50vh;
+  overflow: auto
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body::after,
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body::before {
+.fd-toolbar__overflow::after,
+.fd-toolbar__overflow::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
-  display: block;
+.fd-toolbar__overflow .fd-toolbar__overflow-button {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   text-align: left;
   width: auto;
   margin: .1875rem 0
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > [dir=rtl],
-[dir=rtl] .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > * {
+.fd-toolbar__overflow .fd-toolbar__overflow-button[dir=rtl],
+[dir=rtl] .fd-toolbar__overflow .fd-toolbar__overflow-button {
   text-align: right
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body > .fd-toolbar__separator {
+.fd-toolbar__overflow .fd-toolbar__overflow-button--menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 100%
+}
+.fd-toolbar__overflow .fd-toolbar__separator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
   height: .0625rem;
   margin: .1875rem;
   width: auto;
   background-color: #495767;
   background-color: var(--sapToolbar_SeparatorColor,#495767)
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label.fd-form-label {
-  margin-top: .4375rem
+.fd-toolbar__overflow .fd-toolbar__separator::after,
+.fd-toolbar__overflow .fd-toolbar__separator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__form-label,
-.fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body .fd-toolbar__overflow__label {
-  overflow: hidden;
+.fd-toolbar__overflow .fd-toolbar__overflow-form-label,
+.fd-toolbar__overflow .fd-toolbar__overflow-label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis
+}
+.fd-toolbar__overflow .fd-toolbar__overflow-form-label::after,
+.fd-toolbar__overflow .fd-toolbar__overflow-form-label::before,
+.fd-toolbar__overflow .fd-toolbar__overflow-label::after,
+.fd-toolbar__overflow .fd-toolbar__overflow-label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-toolbar__overflow .fd-toolbar__overflow-form-label--text,
+.fd-toolbar__overflow .fd-toolbar__overflow-label--text {
+  margin-top: .4375rem
 }
 .fd-toolbar--cozy {
   height: 2.75rem;
@@ -212,9 +286,29 @@
 .fd-toolbar--cozy.fd-toolbar--info {
   height: 2rem
 }
-.fd-toolbar--cozy .fd-toolbar__separator {
-  height: 2rem
+.fd-toolbar--cozy .fd-toolbar__overflow {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem
 }
-.fd-toolbar--cozy .fd-toolbar__overflow.fd-popover .fd-toolbar__overflow__body {
-  padding: .25rem .5rem
+.fd-toolbar--cozy .fd-toolbar__overflow::after,
+.fd-toolbar--cozy .fd-toolbar__overflow::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }

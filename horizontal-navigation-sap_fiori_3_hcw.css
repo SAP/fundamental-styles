@@ -1,0 +1,31 @@
+/*!
+ * Fundamental Library Styles v0.20.0
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-horizontal-navigation {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #000;
+  color: var(--sapTextColor,#000);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-shadow: inset 0 -.125rem #000;
+  -webkit-box-shadow: var(--sapContent_HeaderShadow,inset 0 -.125rem #000);
+  box-shadow: inset 0 -.125rem #000;
+  box-shadow: var(--sapContent_HeaderShadow,inset 0 -.125rem #000)
+}
+.fd-horizontal-navigation::after,
+.fd-horizontal-navigation::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -165,6 +165,12 @@
 .fd-breadcrumb__link--inverted:hover {
   color: #fff;
   color: var(--sapLink_InvertedColor,#fff)
+}
+.fd-breadcrumb__link--inverted.is-focus,
+.fd-breadcrumb__link--inverted:focus {
+  z-index: 5;
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-breadcrumb__link--subtle {
   color: #fff;

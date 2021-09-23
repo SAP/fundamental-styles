@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -99,7 +99,10 @@
   background-color: var(--sapField_SuccessBackground,#fff);
   border-color: #107e3e;
   border-color: var(--sapField_SuccessColor,#107e3e);
-  border-width: .0625rem
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
 }
 .fd-radio.is-success.is-hover,
 .fd-radio.is-success:hover {
@@ -111,12 +114,16 @@
 .fd-radio.is-error {
   background-color: #fff;
   background-color: var(--sapField_InvalidBackground,#fff);
-  border-color: #b00;
-  border-color: var(--sapField_InvalidColor,#b00);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
   font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal)
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #b00;
+  border-color: var(--sapField_InvalidColor,#b00);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InvalidBorderStyle,solid)
 }
 .fd-radio.is-error.is-hover,
 .fd-radio.is-error:hover {
@@ -129,12 +136,16 @@
 .fd-radio.is-warning {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
-  border-color: #df6e0c;
-  border-color: var(--sapField_WarningColor,#df6e0c);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
   font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal)
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #df6e0c;
+  border-color: var(--sapField_WarningColor,#df6e0c);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_WarningBorderStyle,solid)
 }
 .fd-radio.is-alert.is-hover,
 .fd-radio.is-alert:hover,
@@ -149,7 +160,11 @@
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
   border-color: #0a6ed1;
-  border-color: var(--sapField_InformationColor,#0a6ed1)
+  border-color: var(--sapField_InformationColor,#0a6ed1);
+  border-width: .125rem;
+  border-width: var(--sapField_InformationBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InformationBorderStyle,solid)
 }
 .fd-radio.is-information.is-hover,
 .fd-radio.is-information:hover {

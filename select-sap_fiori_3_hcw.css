@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -150,7 +150,10 @@
   background-color: var(--sapField_SuccessBackground,#fff);
   border-color: #000;
   border-color: var(--sapField_SuccessColor,#000);
-  border-width: .0625rem
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
 }
 .fd-select__control.is-success.is-hover,
 .fd-select__control.is-success:hover {
@@ -162,12 +165,16 @@
 .fd-select__control.is-error {
   background-color: #ec8b46;
   background-color: var(--sapField_InvalidBackground,#ec8b46);
-  border-color: #000;
-  border-color: var(--sapField_InvalidColor,#000);
   font-style: italic;
   font-style: var(--fdInput_State_Text_Style,italic);
   font-weight: 700;
-  font-weight: var(--fdInput_State_Font_Weight,bold)
+  font-weight: var(--fdInput_State_Font_Weight,bold);
+  border-color: #000;
+  border-color: var(--sapField_InvalidColor,#000);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: dashed;
+  border-style: var(--sapField_InvalidBorderStyle,dashed)
 }
 .fd-select__control.is-error.is-hover,
 .fd-select__control.is-error:hover {
@@ -180,12 +187,16 @@
 .fd-select__control.is-warning {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
-  border-color: #000;
-  border-color: var(--sapField_WarningColor,#000);
   font-style: italic;
   font-style: var(--fdInput_State_Text_Style,italic);
   font-weight: 700;
-  font-weight: var(--fdInput_State_Font_Weight,bold)
+  font-weight: var(--fdInput_State_Font_Weight,bold);
+  border-color: #000;
+  border-color: var(--sapField_WarningColor,#000);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: dashed;
+  border-style: var(--sapField_WarningBorderStyle,dashed)
 }
 .fd-select__control.is-alert.is-hover,
 .fd-select__control.is-alert:hover,
@@ -200,7 +211,11 @@
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
   border-color: #000;
-  border-color: var(--sapField_InformationColor,#000)
+  border-color: var(--sapField_InformationColor,#000);
+  border-width: .0625rem;
+  border-width: var(--sapField_InformationBorderWidth,.0625rem);
+  border-style: dashed;
+  border-style: var(--sapField_InformationBorderStyle,dashed)
 }
 .fd-select__control.is-information.is-hover,
 .fd-select__control.is-information:hover {
@@ -341,7 +356,10 @@
   background-color: var(--sapField_SuccessBackground,#fff);
   border-color: #000;
   border-color: var(--sapField_SuccessColor,#000);
-  border-width: .0625rem
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
 }
 .fd-select__control.is-success.is-hover,
 .fd-select__control.is-success:hover {
@@ -353,12 +371,16 @@
 .fd-select__control.is-error {
   background-color: #ec8b46;
   background-color: var(--sapField_InvalidBackground,#ec8b46);
-  border-color: #000;
-  border-color: var(--sapField_InvalidColor,#000);
   font-style: italic;
   font-style: var(--fdInput_State_Text_Style,italic);
   font-weight: 700;
-  font-weight: var(--fdInput_State_Font_Weight,bold)
+  font-weight: var(--fdInput_State_Font_Weight,bold);
+  border-color: #000;
+  border-color: var(--sapField_InvalidColor,#000);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: dashed;
+  border-style: var(--sapField_InvalidBorderStyle,dashed)
 }
 .fd-select__control.is-error.is-hover,
 .fd-select__control.is-error:hover {
@@ -371,12 +393,16 @@
 .fd-select__control.is-warning {
   background-color: #fff;
   background-color: var(--sapField_WarningBackground,#fff);
-  border-color: #000;
-  border-color: var(--sapField_WarningColor,#000);
   font-style: italic;
   font-style: var(--fdInput_State_Text_Style,italic);
   font-weight: 700;
-  font-weight: var(--fdInput_State_Font_Weight,bold)
+  font-weight: var(--fdInput_State_Font_Weight,bold);
+  border-color: #000;
+  border-color: var(--sapField_WarningColor,#000);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: dashed;
+  border-style: var(--sapField_WarningBorderStyle,dashed)
 }
 .fd-select__control.is-alert.is-hover,
 .fd-select__control.is-alert:hover,
@@ -391,7 +417,11 @@
   background-color: #fff;
   background-color: var(--sapField_InformationBackground,#fff);
   border-color: #000;
-  border-color: var(--sapField_InformationColor,#000)
+  border-color: var(--sapField_InformationColor,#000);
+  border-width: .0625rem;
+  border-width: var(--sapField_InformationBorderWidth,.0625rem);
+  border-style: dashed;
+  border-style: var(--sapField_InformationBorderStyle,dashed)
 }
 .fd-select__control.is-information.is-hover,
 .fd-select__control.is-information:hover {

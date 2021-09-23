@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -99,7 +99,10 @@
   background-color: var(--sapField_SuccessBackground,#000);
   border-color: #fff;
   border-color: var(--sapField_SuccessColor,#fff);
-  border-width: .0625rem
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
 }
 .fd-checkbox.is-success.is-hover,
 .fd-checkbox.is-success:hover {
@@ -111,12 +114,16 @@
 .fd-checkbox.is-error {
   background-color: #7a5100;
   background-color: var(--sapField_InvalidBackground,#7a5100);
-  border-color: #fff;
-  border-color: var(--sapField_InvalidColor,#fff);
   font-style: italic;
   font-style: var(--fdInput_State_Text_Style,italic);
   font-weight: 700;
-  font-weight: var(--fdInput_State_Font_Weight,bold)
+  font-weight: var(--fdInput_State_Font_Weight,bold);
+  border-color: #fff;
+  border-color: var(--sapField_InvalidColor,#fff);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: dashed;
+  border-style: var(--sapField_InvalidBorderStyle,dashed)
 }
 .fd-checkbox.is-error.is-hover,
 .fd-checkbox.is-error:hover {
@@ -129,12 +136,16 @@
 .fd-checkbox.is-warning {
   background-color: #000;
   background-color: var(--sapField_WarningBackground,#000);
-  border-color: #fff;
-  border-color: var(--sapField_WarningColor,#fff);
   font-style: italic;
   font-style: var(--fdInput_State_Text_Style,italic);
   font-weight: 700;
-  font-weight: var(--fdInput_State_Font_Weight,bold)
+  font-weight: var(--fdInput_State_Font_Weight,bold);
+  border-color: #fff;
+  border-color: var(--sapField_WarningColor,#fff);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: dashed;
+  border-style: var(--sapField_WarningBorderStyle,dashed)
 }
 .fd-checkbox.is-alert.is-hover,
 .fd-checkbox.is-alert:hover,
@@ -149,7 +160,11 @@
   background-color: #000;
   background-color: var(--sapField_InformationBackground,#000);
   border-color: #fff;
-  border-color: var(--sapField_InformationColor,#fff)
+  border-color: var(--sapField_InformationColor,#fff);
+  border-width: .0625rem;
+  border-width: var(--sapField_InformationBorderWidth,.0625rem);
+  border-style: dashed;
+  border-style: var(--sapField_InformationBorderStyle,dashed)
 }
 .fd-checkbox.is-information.is-hover,
 .fd-checkbox.is-information:hover {

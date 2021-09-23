@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -23,7 +23,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +31,8 @@
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  position: relative
 }
 .fd-rating-indicator::after,
 .fd-rating-indicator::before {
@@ -87,14 +87,6 @@
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
 }
-.fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label::before {
-  content: "";
-  color: #999;
-  color: var(--sapContent_UnratedColor,#999)
-}
-.fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label:hover::before {
-  opacity: 1
-}
 .fd-rating-indicator__label {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -118,6 +110,7 @@
   -ms-flex-align: center;
   align-items: center;
   float: left;
+  opacity: 1;
   height: 1.375rem;
   margin-right: .1875rem
 }
@@ -142,6 +135,11 @@
   opacity: var(--fdRating_Indicator_Selected_Hover_Opacity,1);
   -webkit-transition: opacity 125ms ease-in;
   transition: opacity 125ms ease-in
+}
+.fd-rating-indicator .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before {
+  content: "";
+  color: #999;
+  color: var(--sapContent_UnratedColor,#999)
 }
 .fd-rating-indicator__dynamic-text {
   font-size: .875rem;
@@ -209,28 +207,33 @@
   color: #666;
   color: var(--fdRating_Indicator_Disabled_Selected_Color,var(--sapContent_DisabledTextColor,#666))
 }
-.fd-rating-indicator.is-disabled .fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label::before,
-.fd-rating-indicator:disabled .fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label::before,
-.fd-rating-indicator[aria-disabled=true] .fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label::before {
+.fd-rating-indicator.is-disabled .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before,
+.fd-rating-indicator:disabled .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before,
+.fd-rating-indicator[aria-disabled=true] .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before {
   content: "";
   color: #666;
   color: var(--fdRating_Indicator_Disabled_Unselected_Color,var(--sapContent_DisabledTextColor,#666))
 }
-.fd-rating-indicator.is-display-mode {
-  pointer-events: none
-}
-.fd-rating-indicator.is-display-mode .fd-rating-indicator__label {
+.fd-rating-indicator.fd-rating-indicator--display-mode .fd-rating-indicator__label {
   margin-right: .125rem
 }
-.fd-rating-indicator.is-display-mode .fd-rating-indicator__label::before {
+.fd-rating-indicator.fd-rating-indicator--display-mode .fd-rating-indicator__label::before {
   content: "";
+  font-size: 1rem;
   color: #fff;
   color: var(--fdRating_Indicator_Display_Only_Selected_Color,var(--sapContent_IconColor,#fff))
 }
-.fd-rating-indicator.is-display-mode .fd-rating-indicator__label::before {
-  font-size: 1rem
+.fd-rating-indicator.fd-rating-indicator--display-mode .fd-rating-indicator__label[dir=rtl],
+[dir=rtl] .fd-rating-indicator.fd-rating-indicator--display-mode .fd-rating-indicator__label {
+  margin-right: 0;
+  margin-left: .125rem
 }
-.fd-rating-indicator.is-display-mode .fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label::before {
+.fd-rating-indicator.fd-rating-indicator--display-mode,
+.fd-rating-indicator.fd-rating-indicator--non-interactive {
+  pointer-events: none
+}
+.fd-rating-indicator.fd-rating-indicator--display-mode .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before,
+.fd-rating-indicator.fd-rating-indicator--non-interactive .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before {
   content: "";
   color: #999;
   color: var(--sapContent_UnratedColor,#999)
@@ -287,7 +290,7 @@
 .fd-rating-indicator.fd-rating-indicator--icon .fd-rating-indicator__label::before {
   content: none!important
 }
-.fd-rating-indicator.fd-rating-indicator--icon .fd-rating-indicator__input:checked ~ input + .fd-rating-indicator__label {
+.fd-rating-indicator.fd-rating-indicator--icon .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label {
   background-image: none;
   background-image: var(--sapRating-indicator-icon-unrated,none)
 }

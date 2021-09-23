@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -108,7 +108,10 @@
   background-color: var(--sapField_SuccessBackground,#29313a);
   border-color: #abe2ab;
   border-color: var(--sapField_SuccessColor,#abe2ab);
-  border-width: .0625rem
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
 }
 .fd-input.is-success.is-hover,
 .fd-input.is-success:hover {
@@ -120,12 +123,16 @@
 .fd-input.is-error {
   background-color: #29313a;
   background-color: var(--sapField_InvalidBackground,#29313a);
-  border-color: #f88;
-  border-color: var(--sapField_InvalidColor,#f88);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
   font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal)
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #f88;
+  border-color: var(--sapField_InvalidColor,#f88);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InvalidBorderStyle,solid)
 }
 .fd-input.is-error.is-hover,
 .fd-input.is-error:hover {
@@ -138,12 +145,16 @@
 .fd-input.is-warning {
   background-color: #29313a;
   background-color: var(--sapField_WarningBackground,#29313a);
-  border-color: #fabd64;
-  border-color: var(--sapField_WarningColor,#fabd64);
   font-style: normal;
   font-style: var(--fdInput_State_Text_Style,normal);
   font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal)
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #fabd64;
+  border-color: var(--sapField_WarningColor,#fabd64);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_WarningBorderStyle,solid)
 }
 .fd-input.is-alert.is-hover,
 .fd-input.is-alert:hover,
@@ -158,7 +169,11 @@
   background-color: #29313a;
   background-color: var(--sapField_InformationBackground,#29313a);
   border-color: #91c8f6;
-  border-color: var(--sapField_InformationColor,#91c8f6)
+  border-color: var(--sapField_InformationColor,#91c8f6);
+  border-width: .125rem;
+  border-width: var(--sapField_InformationBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InformationBorderStyle,solid)
 }
 .fd-input.is-information.is-hover,
 .fd-input.is-information:hover {

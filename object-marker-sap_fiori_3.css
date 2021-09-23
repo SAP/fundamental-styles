@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -42,6 +42,16 @@
   text-decoration: none;
   color: #286eb4;
   color: var(--sapContent_MarkerIconColor,#286eb4)
+}
+.fd-object-marker--link.is-focus,
+.fd-object-marker--link:focus {
+  outline-offset: .0625rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #000;
+  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted)
 }
 .fd-object-marker--link .fd-object-marker__text {
   color: #286eb4;

@@ -1,15 +1,16 @@
+@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
-.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed)
+.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed, --hidden, --tree, --group)
     thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
     tbody(.fd-table__body(--no-horizontal-borders, --no-vertical-borders))
     tfoot(.fd-table__footer)
         tr(.fd-table__row)([aria-selected])
-          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed)) + semantic
+          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed, --expand, --group)) + semantic
 */
 .fd-table {
   width: 100%;
@@ -163,8 +164,12 @@
 .fd-table__cell--no-data {
   text-align: center
 }
+.fd-table__cell--mock {
+  padding: 0;
+  width: auto
+}
 .fd-table__cell--checkbox {
-  width: .5rem;
+  width: 2.75rem;
   vertical-align: baseline;
   padding: 0;
   margin: 0
@@ -177,6 +182,30 @@
 .fd-table__cell--no-padding {
   padding: 0;
   margin: 0
+}
+.fd-table__cell--fixed {
+  left: 0;
+  position: absolute;
+  background-color: inherit;
+  border-bottom: .0625rem solid #3a4552;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#3a4552);
+  border-left: .0625rem solid #3a4552;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#3a4552);
+  border-right: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-table__cell--fixed[dir=rtl],
+[dir=rtl] .fd-table__cell--fixed {
+  border-right: .0625rem solid #3a4552;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#3a4552);
+  border-left: none;
+  left: auto;
+  right: 0
 }
 .fd-table__cell--status-indicator {
   width: .375rem;
@@ -198,34 +227,18 @@
   background-color: #91c8f6;
   background-color: var(--sapInformationBorderColor,#91c8f6)
 }
-.fd-table__cell--fixed {
-  left: 0;
-  position: absolute;
-  background-color: inherit;
-  border-bottom: .0625rem solid #3a4552;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#3a4552);
-  border-left: .0625rem solid #3a4552;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#3a4552);
-  border-right: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+.fd-table__cell--navigated {
+  -webkit-box-shadow: inset -.1875rem 0 #91c8f6;
+  -webkit-box-shadow: inset -.1875rem 0 var(--sapSelectedColor,#91c8f6);
+  box-shadow: inset -.1875rem 0 #91c8f6;
+  box-shadow: inset -.1875rem 0 var(--sapSelectedColor,#91c8f6)
 }
-.fd-table__cell--fixed.is-hover,
-.fd-table__cell--fixed:hover {
-  background-color: #2f3943;
-  background-color: var(--sapList_Hover_Background,#2f3943)
-}
-.fd-table__cell--fixed[dir=rtl],
-[dir=rtl] .fd-table__cell--fixed {
-  border-right: .0625rem solid #3a4552;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#3a4552);
-  border-left: none;
-  left: auto;
-  right: 0
+.fd-table__cell--navigated[dir=rtl],
+[dir=rtl] .fd-table__cell--navigated {
+  -webkit-box-shadow: inset .1875rem 0 #91c8f6;
+  -webkit-box-shadow: inset .1875rem 0 var(--sapSelectedColor,#91c8f6);
+  box-shadow: inset .1875rem 0 #91c8f6;
+  box-shadow: inset .1875rem 0 var(--sapSelectedColor,#91c8f6)
 }
 .fd-table__cell:first-child {
   margin-left: 0;
@@ -245,19 +258,6 @@
 [dir=rtl] .fd-table__cell:first-child.fd-table__cell--checkbox,
 [dir=rtl] .fd-table__cell:first-child.fd-table__cell--status-indicator {
   padding: 0
-}
-.fd-table__cell--navigated {
-  -webkit-box-shadow: inset -.1875rem 0 #91c8f6;
-  -webkit-box-shadow: inset -.1875rem 0 var(--sapSelectedColor,#91c8f6);
-  box-shadow: inset -.1875rem 0 #91c8f6;
-  box-shadow: inset -.1875rem 0 var(--sapSelectedColor,#91c8f6)
-}
-.fd-table__cell--navigated[dir=rtl],
-[dir=rtl] .fd-table__cell--navigated {
-  -webkit-box-shadow: inset .1875rem 0 #91c8f6;
-  -webkit-box-shadow: inset .1875rem 0 var(--sapSelectedColor,#91c8f6);
-  box-shadow: inset .1875rem 0 #91c8f6;
-  box-shadow: inset .1875rem 0 var(--sapSelectedColor,#91c8f6)
 }
 .fd-table__body {
   border-left: .0625rem solid #3a4552;
@@ -307,23 +307,23 @@
   background-color: #91c8f6;
   background-color: var(--sapList_Active_Background,#91c8f6)
 }
-.fd-table__cell--hoverable.is-selected .fd-table__cell.is-hover,
-.fd-table__cell--hoverable.is-selected .fd-table__cell:hover,
-.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell.is-hover,
-.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell:hover,
-.fd-table__row--hoverable.is-selected .fd-table__cell.is-hover,
-.fd-table__row--hoverable.is-selected .fd-table__cell:hover,
-.fd-table__row--hoverable[aria-selected=true] .fd-table__cell.is-hover,
-.fd-table__row--hoverable[aria-selected=true] .fd-table__cell:hover {
+.fd-table__cell--hoverable.is-selected .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
+.fd-table__cell--hoverable.is-selected .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
+.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
+.fd-table__cell--hoverable[aria-selected=true] .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
+.fd-table__row--hoverable.is-selected .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
+.fd-table__row--hoverable.is-selected .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
+.fd-table__row--hoverable[aria-selected=true] .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
+.fd-table__row--hoverable[aria-selected=true] .fd-table__cell:not(.fd-table__cell--status-indicator):hover {
   background-color: #395369;
   background-color: var(--sapList_Hover_SelectionBackground,#395369)
 }
-.fd-table__cell--hoverable .fd-table__cell.is-hover,
-.fd-table__cell--hoverable .fd-table__cell:hover,
+.fd-table__cell--hoverable .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
+.fd-table__cell--hoverable .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
 .fd-table__cell--hoverable.is-hover,
 .fd-table__cell--hoverable:hover,
-.fd-table__row--hoverable .fd-table__cell.is-hover,
-.fd-table__row--hoverable .fd-table__cell:hover,
+.fd-table__row--hoverable .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
+.fd-table__row--hoverable .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
 .fd-table__row--hoverable.is-hover,
 .fd-table__row--hoverable:hover {
   background-color: #2f3943;
@@ -548,17 +548,6 @@
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted)
 }
-.fd-table__cell.is-selected .fd-table__cell--fixed.is-hover,
-.fd-table__cell.is-selected .fd-table__cell--fixed:hover,
-.fd-table__cell[aria-selected=true] .fd-table__cell--fixed.is-hover,
-.fd-table__cell[aria-selected=true] .fd-table__cell--fixed:hover,
-.fd-table__row.is-selected .fd-table__cell--fixed.is-hover,
-.fd-table__row.is-selected .fd-table__cell--fixed:hover,
-.fd-table__row[aria-selected=true] .fd-table__cell--fixed.is-hover,
-.fd-table__row[aria-selected=true] .fd-table__cell--fixed:hover {
-  background-color: #395369;
-  background-color: var(--sapList_Hover_SelectionBackground,#395369)
-}
 .fd-table__footer {
   background-color: #252c34;
   background-color: var(--sapList_FooterBackground,#252c34)
@@ -611,6 +600,9 @@
   padding: 0;
   overflow: hidden;
   white-space: nowrap
+}
+.fd-table__item--clickable {
+  cursor: pointer
 }
 .fd-table__popover.fd-popover {
   height: 100%;
@@ -779,33 +771,1257 @@
 .fd-table--responsive .fd-table__row:last-child .fd-table__cell {
   border-bottom: none
 }
-.fd-table--compact .fd-table__cell {
+.fd-table--compact .fd-table__body .fd-table__cell,
+.fd-table--compact .fd-table__footer .fd-table__cell {
   height: 2rem
 }
-.fd-table--compact .fd-table__header .fd-table__cell {
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand,
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand {
   height: 2rem
 }
-.fd-table--compact .fd-table__header .fd-table__cell--fixed {
-  height: 2.0625rem
-}
-.fd-table--condensed .fd-table__cell {
+.fd-table--condensed .fd-table__body .fd-table__cell,
+.fd-table--condensed .fd-table__footer .fd-table__cell {
   height: 1.5rem
 }
-.fd-table--condensed .fd-table__header .fd-table__cell {
-  height: 2rem
-}
-.fd-table--condensed .fd-table__header .fd-table__cell--fixed {
-  height: 2.0625rem
-}
-.fd-table--condensed .fd-table__body .fd-table__cell--checkbox {
+.fd-table--condensed .fd-table__body .fd-table__cell--checkbox,
+.fd-table--condensed .fd-table__footer .fd-table__cell--checkbox {
   position: relative
 }
-.fd-table--condensed .fd-table__body .fd-table__cell--checkbox .fd-table__checkbox-label {
+.fd-table--condensed .fd-table__body .fd-table__cell--checkbox .fd-table__checkbox-label,
+.fd-table--condensed .fd-table__footer .fd-table__cell--checkbox .fd-table__checkbox-label {
   top: -.25rem;
   position: absolute
 }
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand,
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand {
+  height: 1.5rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'] {
+  padding-left: 2rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'] {
+  padding-left: .5rem;
+  padding-right: 2rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'] {
+  padding-left: 3.5rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'] {
+  padding-left: .5rem;
+  padding-right: 3.5rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'] {
+  padding-left: 4.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'] {
+  padding-left: .5rem;
+  padding-right: 4.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'] {
+  padding-left: 5.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'] {
+  padding-left: .5rem;
+  padding-right: 5.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'] {
+  padding-left: 5.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'] {
+  padding-left: .5rem;
+  padding-right: 5.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'] {
+  padding-left: 6.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'] {
+  padding-left: .5rem;
+  padding-right: 6.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'] {
+  padding-left: 6.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'] {
+  padding-left: .5rem;
+  padding-right: 6.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'] {
+  padding-left: 7.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'] {
+  padding-left: .5rem;
+  padding-right: 7.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'] {
+  padding-left: 7.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'] {
+  padding-left: .5rem;
+  padding-right: 7.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'] {
+  padding-left: 8.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'] {
+  padding-left: .5rem;
+  padding-right: 8.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'] {
+  padding-left: 8.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'] {
+  padding-left: .5rem;
+  padding-right: 8.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'] {
+  padding-left: 9.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'] {
+  padding-left: .5rem;
+  padding-right: 9.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'] {
+  padding-left: 9.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'] {
+  padding-left: .5rem;
+  padding-right: 9.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'] {
+  padding-left: 10.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'] {
+  padding-left: .5rem;
+  padding-right: 10.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'] {
+  padding-left: 10.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'] {
+  padding-left: .5rem;
+  padding-right: 10.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'] {
+  padding-left: 11.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'] {
+  padding-left: .5rem;
+  padding-right: 11.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'] {
+  padding-left: 11.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'] {
+  padding-left: .5rem;
+  padding-right: 11.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'] {
+  padding-left: 12.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'] {
+  padding-left: .5rem;
+  padding-right: 12.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'] {
+  padding-left: 12.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'] {
+  padding-left: .5rem;
+  padding-right: 12.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'] {
+  padding-left: 13.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'] {
+  padding-left: .5rem;
+  padding-right: 13.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'] {
+  padding-left: 0
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'] {
+  padding-left: .5rem;
+  padding-right: 0
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'] {
+  padding-left: 1.5rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'] {
+  padding-left: .5rem;
+  padding-right: 1.5rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'] {
+  padding-left: 2.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'] {
+  padding-left: .5rem;
+  padding-right: 2.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'] {
+  padding-left: 3.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'] {
+  padding-left: .5rem;
+  padding-right: 3.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'] {
+  padding-left: 3.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'] {
+  padding-left: .5rem;
+  padding-right: 3.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'] {
+  padding-left: 4.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'] {
+  padding-left: .5rem;
+  padding-right: 4.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'] {
+  padding-left: 4.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'] {
+  padding-left: .5rem;
+  padding-right: 4.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'] {
+  padding-left: 5.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'] {
+  padding-left: .5rem;
+  padding-right: 5.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'] {
+  padding-left: 5.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'] {
+  padding-left: .5rem;
+  padding-right: 5.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'] {
+  padding-left: 6.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'] {
+  padding-left: .5rem;
+  padding-right: 6.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'] {
+  padding-left: 6.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'] {
+  padding-left: .5rem;
+  padding-right: 6.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'] {
+  padding-left: 7.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'] {
+  padding-left: .5rem;
+  padding-right: 7.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'] {
+  padding-left: 7.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'] {
+  padding-left: .5rem;
+  padding-right: 7.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'] {
+  padding-left: 8.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'] {
+  padding-left: .5rem;
+  padding-right: 8.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'] {
+  padding-left: 8.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'] {
+  padding-left: .5rem;
+  padding-right: 8.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'] {
+  padding-left: 9.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'] {
+  padding-left: .5rem;
+  padding-right: 9.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'] {
+  padding-left: 9.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'] {
+  padding-left: .5rem;
+  padding-right: 9.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'] {
+  padding-left: 10.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'] {
+  padding-left: .5rem;
+  padding-right: 10.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'] {
+  padding-left: 10.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'] {
+  padding-left: .5rem;
+  padding-right: 10.75rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'] {
+  padding-left: 11.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'][dir=rtl],
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'][dir=rtl],
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'][dir=rtl],
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'][dir=rtl],
+[dir=rtl] .fd-table--compact.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+[dir=rtl] .fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+[dir=rtl] .fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+[dir=rtl] .fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'] {
+  padding-left: .5rem;
+  padding-right: 11.25rem
+}
+.fd-table--compact.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand,
+.fd-table--compact.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand,
+.fd-table--condensed.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand,
+.fd-table--condensed.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand {
+  width: 2rem
+}
+.fd-table--compact .fd-table__header .fd-table__cell,
+.fd-table--condensed .fd-table__header .fd-table__cell {
+  height: 2rem
+}
+.fd-table--compact .fd-table__header .fd-table__cell--fixed,
+.fd-table--condensed .fd-table__header .fd-table__cell--fixed {
+  height: 2.0625rem
+}
+.fd-table--compact .fd-table__cell--checkbox,
+.fd-table--condensed .fd-table__cell--checkbox {
+  width: 2rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--group {
+  background-color: #232931;
+  background-color: var(--sapList_HeaderBackground,#232931)
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'] {
+  padding-left: 2.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='1'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='1'] {
+  padding-left: .5rem;
+  padding-right: 2.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'] {
+  padding-left: 4.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='2'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='2'] {
+  padding-left: .5rem;
+  padding-right: 4.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'] {
+  padding-left: 4.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='3'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='3'] {
+  padding-left: .5rem;
+  padding-right: 4.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'] {
+  padding-left: 5.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='4'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='4'] {
+  padding-left: .5rem;
+  padding-right: 5.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'] {
+  padding-left: 6.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='5'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='5'] {
+  padding-left: .5rem;
+  padding-right: 6.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'] {
+  padding-left: 6.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='6'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='6'] {
+  padding-left: .5rem;
+  padding-right: 6.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'] {
+  padding-left: 7.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='7'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='7'] {
+  padding-left: .5rem;
+  padding-right: 7.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'] {
+  padding-left: 7.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='8'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='8'] {
+  padding-left: .5rem;
+  padding-right: 7.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'] {
+  padding-left: 8.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='9'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='9'] {
+  padding-left: .5rem;
+  padding-right: 8.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'] {
+  padding-left: 8.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='10'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='10'] {
+  padding-left: .5rem;
+  padding-right: 8.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'] {
+  padding-left: 9.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='11'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='11'] {
+  padding-left: .5rem;
+  padding-right: 9.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'] {
+  padding-left: 9.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='12'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='12'] {
+  padding-left: .5rem;
+  padding-right: 9.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'] {
+  padding-left: 10.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='13'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='13'] {
+  padding-left: .5rem;
+  padding-right: 10.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'] {
+  padding-left: 10.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='14'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='14'] {
+  padding-left: .5rem;
+  padding-right: 10.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'] {
+  padding-left: 11.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='15'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='15'] {
+  padding-left: .5rem;
+  padding-right: 11.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'] {
+  padding-left: 11.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='16'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='16'] {
+  padding-left: .5rem;
+  padding-right: 11.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'] {
+  padding-left: 12.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='17'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='17'] {
+  padding-left: .5rem;
+  padding-right: 12.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'] {
+  padding-left: 12.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='18'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='18'] {
+  padding-left: .5rem;
+  padding-right: 12.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'] {
+  padding-left: 13.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='19'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='19'] {
+  padding-left: .5rem;
+  padding-right: 13.25rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'] {
+  padding-left: 13.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level='20'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level='20'] {
+  padding-left: .5rem;
+  padding-right: 13.75rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand,
+.fd-table--tree .fd-table__body .fd-table__cell--expand {
+  cursor: pointer;
+  white-space: nowrap
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'] {
+  padding-left: 0
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='1'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='1'] {
+  padding-left: .5rem;
+  padding-right: 0
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'] {
+  padding-left: 1.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='2'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='2'] {
+  padding-left: .5rem;
+  padding-right: 1.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'] {
+  padding-left: 2rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='3'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='3'] {
+  padding-left: .5rem;
+  padding-right: 2rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'] {
+  padding-left: 3rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='4'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='4'] {
+  padding-left: .5rem;
+  padding-right: 3rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'] {
+  padding-left: 3.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='5'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='5'] {
+  padding-left: .5rem;
+  padding-right: 3.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'] {
+  padding-left: 4rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='6'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='6'] {
+  padding-left: .5rem;
+  padding-right: 4rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'] {
+  padding-left: 4.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='7'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='7'] {
+  padding-left: .5rem;
+  padding-right: 4.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'] {
+  padding-left: 5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='8'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='8'] {
+  padding-left: .5rem;
+  padding-right: 5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'] {
+  padding-left: 5.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='9'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='9'] {
+  padding-left: .5rem;
+  padding-right: 5.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'] {
+  padding-left: 6rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='10'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='10'] {
+  padding-left: .5rem;
+  padding-right: 6rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'] {
+  padding-left: 6.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='11'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='11'] {
+  padding-left: .5rem;
+  padding-right: 6.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'] {
+  padding-left: 7rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='12'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='12'] {
+  padding-left: .5rem;
+  padding-right: 7rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'] {
+  padding-left: 7.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='13'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='13'] {
+  padding-left: .5rem;
+  padding-right: 7.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'] {
+  padding-left: 8rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='14'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='14'] {
+  padding-left: .5rem;
+  padding-right: 8rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'] {
+  padding-left: 8.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='15'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='15'] {
+  padding-left: .5rem;
+  padding-right: 8.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'] {
+  padding-left: 9rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='16'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='16'] {
+  padding-left: .5rem;
+  padding-right: 9rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'] {
+  padding-left: 9.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='17'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='17'] {
+  padding-left: .5rem;
+  padding-right: 9.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'] {
+  padding-left: 10rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='18'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='18'] {
+  padding-left: .5rem;
+  padding-right: 10rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'] {
+  padding-left: 10.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='19'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='19'] {
+  padding-left: .5rem;
+  padding-right: 10.5rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'] {
+  padding-left: 11rem
+}
+.fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'][dir=rtl],
+.fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'][dir=rtl],
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell--expand[data-nesting-level='20'],
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell--expand[data-nesting-level='20'] {
+  padding-left: .5rem;
+  padding-right: 11rem
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand {
+  width: 2.75rem;
+  height: 2.75rem;
+  color: #91c8f6;
+  color: var(--sapContent_IconColor,#91c8f6);
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand::before {
+  content: ""
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl]::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl]::before,
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell .fd-table__expand::before,
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl]::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl]::before,
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell .fd-table__expand::before,
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand::before {
+  content: ""
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl].fd-table__expand--open::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl].fd-table__expand--open::before,
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell .fd-table__expand.fd-table__expand--open::before,
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand.fd-table__expand--open::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl].fd-table__expand--open::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand[dir=rtl].fd-table__expand--open::before,
+[dir=rtl] .fd-table--group .fd-table__body .fd-table__cell .fd-table__expand.fd-table__expand--open::before,
+[dir=rtl] .fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand.fd-table__expand--open::before {
+  content: ""
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand--open::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand--open::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-table--group .fd-table__body .fd-table__cell .fd-table__expand--open::before,
+.fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand--open::before {
+  content: ""
+}
 .fd-table--no-outer-border {
   border: hidden
+}
+.fd-table--hidden {
+  display: none
 }
 .fd-table[dir=rtl] .fd-table__cell,
 [dir=rtl] .fd-table .fd-table__cell {

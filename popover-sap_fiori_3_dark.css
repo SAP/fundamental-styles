@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -272,13 +272,7 @@
   -ms-grid-columns: max-content;
   width: -webkit-max-content;
   width: -moz-max-content;
-  width: max-content;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0
-}
-.fd-popover__body--dropdown .fd-popover__wrapper {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0
+  width: max-content
 }
 .fd-popover__body--dropdown-fill {
   display: block;

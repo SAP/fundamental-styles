@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.19.0
+ * Fundamental Library Styles v0.20.0
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -174,6 +174,8 @@
 }
 .fd-tool-header .fd-tool-header__button:hover {
   border-color: transparent;
+  color: #fff;
+  color: var(--sapShell_InteractiveTextColor,#fff);
   background: #7a5100;
   background: var(--sapShell_Hover_Background,#7a5100)
 }
