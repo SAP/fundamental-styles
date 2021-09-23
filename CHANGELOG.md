@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.40...v0.20.0-rc.41) (2021-09-23)
+
+
+### Bug Fixes
+
+* fixes a bug where the nav item height could be incorrect ([#2741](https://github.com/SAP/fundamental-styles/issues/2741)) ([3c94cc6](https://github.com/SAP/fundamental-styles/commit/3c94cc66c7a323ea3572d109a326ddaba9eed711))
+
 ## [0.20.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.39...v0.20.0-rc.40) (2021-09-23)
 
 ## [0.20.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.38...v0.20.0-rc.39) (2021-09-23)
