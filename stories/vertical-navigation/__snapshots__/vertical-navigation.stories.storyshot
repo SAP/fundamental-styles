@@ -820,7 +820,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--first-level"
+            class="fd-popover__body fd-popover__body--no-arrow fd-list__navigation-item-popover--first-level"
             id="popoverA1"
           >
             
@@ -859,7 +859,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
                 
           <div
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--left fd-popover__body--no-arrow fd-list__navigation-item-popover--second-level"
+            class="fd-popover__body fd-popover__body--no-arrow fd-list__navigation-item-popover--second-level"
             id="popoverA2"
           >
             
