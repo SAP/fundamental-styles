@@ -30,7 +30,7 @@ export const defaultInput = () => `${localStyles}
             <span class="sap-icon sap-icon--navigation-down-arrow"></span>
         </div>
     </div>
-    <ul class="fn-select__menu" role="listbox">
+    <ul class="fn-select__menu" role="listbox" aria-label="Select menu">
         <li class="fn-select__item" role="option" tabindex="0">Option</li>
         <li class="fn-select__item fn-select__item--selected" role="option" tabindex="0">Selected</li>
         <li class="fn-select__item" role="option" tabindex="0">Option</li>
@@ -48,7 +48,7 @@ export const defaultInput = () => `${localStyles}
             <span class="sap-icon sap-icon--navigation-down-arrow"></span>
         </div>
     </div>
-    <ul class="fn-select__menu" role="listbox">
+    <ul class="fn-select__menu" role="listbox" aria-label="Select menu">
         <li class="fn-select__item" role="option" tabindex="0">Option</li>
         <li class="fn-select__item fn-select__item--selected" role="option" tabindex="0">Selected</li>
         <li class="fn-select__item" role="option" tabindex="0">Option</li>

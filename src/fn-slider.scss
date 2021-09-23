@@ -47,6 +47,7 @@ $tag-border-width: 0.125rem;
 
   &__handle {
     @include fn-reset();
+    @include fn-transition();
 
     @include fn-flex() {
       justify-content: space-between;

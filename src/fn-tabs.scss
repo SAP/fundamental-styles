@@ -33,6 +33,7 @@ $tag-border-width: 0.125rem;
 
   &__item {
     @include fn-reset();
+    @include fn-transition();
     @include fn-tabs-base(transparent, $fn-color-grey-5, transparent, none);
 
     cursor: pointer;
@@ -44,6 +45,8 @@ $tag-border-width: 0.125rem;
     padding: $fn-padding-xs $fn-padding-medium;
 
     &::before {
+      @include fn-transition();
+
       left: 0;
       right: 0;
       bottom: 0;

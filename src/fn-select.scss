@@ -38,6 +38,7 @@ $block: #{$fn-namespace}-select;
 
   &__item {
     @include fn-reset();
+    @include fn-transition();
     @include fn-select-item-base($fn-color-base-white, $fn-color-base-white);
 
     width: 100%;

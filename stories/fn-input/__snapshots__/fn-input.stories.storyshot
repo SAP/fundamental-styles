@@ -123,7 +123,7 @@ exports[`Storyshots Experimental/Text Field Default Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-3"
       >
         Label
       </label>
@@ -136,7 +136,7 @@ exports[`Storyshots Experimental/Text Field Default Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-2"
+          id="field-3"
           placeholder="Placeholder"
           readonly=""
           type="text"
@@ -190,7 +190,7 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-1"
+        for="field-10"
       >
         Label
       </label>
@@ -203,7 +203,7 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-1"
+          id="field-10"
           placeholder="Placeholder"
           type="text"
         />
@@ -242,7 +242,7 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-11"
       >
         Label
       </label>
@@ -256,7 +256,7 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
         <input
           class="fn-text-field__input"
           disabled=""
-          id="field-2"
+          id="field-11"
           placeholder="Placeholder"
           type="text"
         />
@@ -295,7 +295,7 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-12"
       >
         Label
       </label>
@@ -308,7 +308,7 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-2"
+          id="field-12"
           placeholder="Placeholder"
           readonly=""
           type="text"
@@ -367,7 +367,7 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-1"
+        for="field-4"
       >
         Label
       </label>
@@ -380,7 +380,7 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-1"
+          id="field-4"
           placeholder="Placeholder"
           type="text"
         />
@@ -419,7 +419,7 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-5"
       >
         Label
       </label>
@@ -433,7 +433,7 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
         <input
           class="fn-text-field__input"
           disabled=""
-          id="field-2"
+          id="field-5"
           placeholder="Placeholder"
           type="text"
         />
@@ -472,7 +472,7 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-6"
       >
         Label
       </label>
@@ -485,7 +485,7 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-2"
+          id="field-6"
           placeholder="Placeholder"
           readonly=""
           type="text"
@@ -544,7 +544,7 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-1"
+        for="field-13"
       >
         Label
       </label>
@@ -557,7 +557,7 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-1"
+          id="field-13"
           placeholder="Placeholder"
           type="text"
         />
@@ -596,7 +596,7 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-14"
       >
         Label
       </label>
@@ -610,7 +610,7 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
         <input
           class="fn-text-field__input"
           disabled=""
-          id="field-2"
+          id="field-14"
           placeholder="Placeholder"
           type="text"
         />
@@ -649,7 +649,7 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-15"
       >
         Label
       </label>
@@ -662,7 +662,7 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-2"
+          id="field-15"
           placeholder="Placeholder"
           readonly=""
           type="text"
@@ -721,7 +721,7 @@ exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-1"
+        for="field-7"
       >
         Label
       </label>
@@ -734,7 +734,7 @@ exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-1"
+          id="field-7"
           placeholder="Placeholder"
           type="text"
         />
@@ -773,7 +773,7 @@ exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-8"
       >
         Label
       </label>
@@ -787,7 +787,7 @@ exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
         <input
           class="fn-text-field__input"
           disabled=""
-          id="field-2"
+          id="field-8"
           placeholder="Placeholder"
           type="text"
         />
@@ -826,7 +826,7 @@ exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
         
       <label
         class="fn-text-field__label"
-        for="field-2"
+        for="field-9"
       >
         Label
       </label>
@@ -839,7 +839,7 @@ exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
             
         <input
           class="fn-text-field__input"
-          id="field-2"
+          id="field-9"
           placeholder="Placeholder"
           readonly=""
           type="text"

@@ -80,6 +80,7 @@ $block: #{$fn-namespace}-text-field;
   &__label {
     @include fn-reset();
 
+    pointer-events: none;
     margin-bottom: $fn-margin-small;
   }
 
@@ -94,6 +95,7 @@ $block: #{$fn-namespace}-text-field;
 
   &__input {
     @include fn-reset();
+    @include fn-transition();
 
     width: 100%;
     height: $fn-element-height;

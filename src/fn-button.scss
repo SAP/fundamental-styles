@@ -22,6 +22,7 @@ $block: #{$fn-namespace}-button;
 
 .#{$block} {
   @include fn-reset();
+  @include fn-transition();
   @include fn-flex-center();
   @include fn-button-base($fn-color-blue-5, $fn-color-base-white, $fn-shadow-blue-small);
 

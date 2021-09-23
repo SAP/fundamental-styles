@@ -86,9 +86,10 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
     
 
     
-    <br />
-    <br />
-    <br />
+    <div
+      style="margin-bottom: 2rem;"
+    />
+    
     
     
     <div
@@ -149,9 +150,9 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
     
 
     
-    <br />
-    <br />
-    <br />
+    <div
+      style="margin-bottom: 2rem;"
+    />
     
 
     
