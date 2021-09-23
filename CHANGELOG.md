@@ -1,4 +1,11 @@
 
+## [0.20.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.38...v0.20.0-rc.39) (2021-09-23)
+
+
+### Bug Fixes
+
+* table semantic column styles [ci visual] ([#2737](https://github.com/SAP/fundamental-styles/issues/2737)) ([012d49d](https://github.com/SAP/fundamental-styles/commit/012d49df94276057cff7b180571a144b8d4b32c0))
+
 ## [0.20.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.20.0-rc.37...v0.20.0-rc.38) (2021-09-22)
 
 
