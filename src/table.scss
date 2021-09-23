@@ -246,6 +246,24 @@ $block: #{$fd-namespace}-table;
       @include fd-table-reset-spacing();
     }
 
+    &--fixed {
+      left: 0;
+      position: absolute;
+      background-color: inherit;
+      border-bottom: $fd-table-border;
+      border-left: $fd-table-border;
+      border-right: none;
+
+      @include fd-flex-vertical-center();
+
+      @include fd-rtl() {
+        border-right: $fd-table-border;
+        border-left: none;
+        left: auto;
+        right: 0;
+      }
+    }
+
     &--status-indicator {
       width: 0.375rem;
       padding: 0;
@@ -267,25 +285,11 @@ $block: #{$fd-namespace}-table;
       }
     }
 
-    &--fixed {
-      left: 0;
-      position: absolute;
-      background-color: inherit;
-      border-bottom: $fd-table-border;
-      border-left: $fd-table-border;
-      border-right: none;
-
-      @include fd-flex-vertical-center();
-
-      @include fd-hover() {
-        background-color: var(--sapList_Hover_Background);
-      }
+    &--navigated {
+      box-shadow: inset -0.1875rem 0 var(--sapSelectedColor);
 
       @include fd-rtl() {
-        border-right: $fd-table-border;
-        border-left: none;
-        left: auto;
-        right: 0;
+        box-shadow: inset 0.1875rem 0 var(--sapSelectedColor);
       }
     }
 
@@ -305,14 +309,6 @@ $block: #{$fd-namespace}-table;
         &.#{$block}__cell--status-indicator {
           padding: 0;
         }
-      }
-    }
-
-    &--navigated {
-      box-shadow: inset -0.1875rem 0 var(--sapSelectedColor);
-
-      @include fd-rtl() {
-        box-shadow: inset 0.1875rem 0 var(--sapSelectedColor);
       }
     }
   }
@@ -365,7 +361,7 @@ $block: #{$fd-namespace}-table;
   &__row {
     &--hoverable {
       @include fd-selected() {
-        .#{$block}__cell {
+        .#{$block}__cell:not(.#{$block}__cell--status-indicator) {
           @include fd-hover() {
             background-color: var(--sapList_Hover_SelectionBackground);
           }
@@ -373,7 +369,7 @@ $block: #{$fd-namespace}-table;
       }
 
       &,
-      .#{$block}__cell {
+      .#{$block}__cell:not(.#{$block}__cell--status-indicator) {
         @include fd-hover() {
           background-color: var(--sapList_Hover_Background);
           color: var(--fdTable_Hover_Down_Color);
@@ -397,14 +393,6 @@ $block: #{$fd-namespace}-table;
 
     &--focusable {
       @include fd-fiori-focus();
-    }
-
-    @include fd-selected() {
-      .#{$block}__cell--fixed {
-        @include fd-hover() {
-          background-color: var(--sapList_Hover_SelectionBackground);
-        }
-      }
     }
   }
 
