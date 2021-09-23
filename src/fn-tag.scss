@@ -88,6 +88,7 @@ $tag-colors-rest: (
 
 .#{$block} {
   @include fn-reset();
+  @include fn-transition();
   @include fn-flex-center();
   @include fn-set-paddings-x(0.625rem, $fn-padding-small);
 
@@ -95,6 +96,7 @@ $tag-colors-rest: (
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  width: fit-content;
   line-height: 1rem;
   font-weight: bold;
   font-size: 0.75rem;

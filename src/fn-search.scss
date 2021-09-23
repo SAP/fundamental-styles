@@ -33,6 +33,7 @@ $fn-search-clear-button-size: 0.625rem;
   &__input {
     @include fn-set-paddings-y-equal($fn-padding-xs);
     @include fn-set-paddings-x(2.5rem, 3.25rem);
+    @include fn-transition();
 
     z-index: 1;
     width: 100%;

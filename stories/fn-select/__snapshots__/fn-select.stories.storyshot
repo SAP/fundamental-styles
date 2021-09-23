@@ -71,6 +71,7 @@ exports[`Storyshots Experimental/Select Select 1`] = `
       
     
       <ul
+        aria-label="Select menu"
         class="fn-select__menu"
         role="listbox"
       >
@@ -171,6 +172,7 @@ exports[`Storyshots Experimental/Select Select 1`] = `
       
     
       <ul
+        aria-label="Select menu"
         class="fn-select__menu"
         role="listbox"
       >

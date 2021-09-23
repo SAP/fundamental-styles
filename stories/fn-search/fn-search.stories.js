@@ -21,10 +21,10 @@ export const search = () => `${localStyles}
     <div class="fn-search">
         <span class="sap-icon sap-icon--search fn-search__icon"></span>
         <input type="search" class="fn-search__input" placeholder="Search everything" />
-        <button class="fn-search__button">
+        <button class="fn-search__button" aria-label="navigation right arrow button">
             <span class="sap-icon sap-icon--navigation-right-arrow"></span>
         </button>
-        <button class="fn-search__clear">
+        <button class="fn-search__clear" aria-label="clear button">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>

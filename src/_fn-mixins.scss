@@ -25,6 +25,16 @@
   }
 }
 
+@mixin fn-transition {
+  $fn-transition: 300ms ease-in-out;
+
+  -webkit-transition: $fn-transition;
+  -moz-transition: $fn-transition;
+  -ms-transition: $fn-transition;
+  -o-transition: $fn-transition;
+  transition: $fn-transition;
+}
+
 // States
 @mixin fn-hover {
   &:hover,

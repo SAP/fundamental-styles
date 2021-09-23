@@ -39,6 +39,7 @@ exports[`Storyshots Experimental/Search Search 1`] = `
       
         
       <button
+        aria-label="navigation right arrow button"
         class="fn-search__button"
       >
         
@@ -52,6 +53,7 @@ exports[`Storyshots Experimental/Search Search 1`] = `
       
         
       <button
+        aria-label="clear button"
         class="fn-search__clear"
       >
         
