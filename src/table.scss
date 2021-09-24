@@ -418,6 +418,24 @@ $block: #{$fd-namespace}-table;
     justify-content: space-between;
   }
 
+  &__column-header-icons {
+    display: flex;
+
+    .#{$block}__icon:not(:last-child) {
+      margin-right: 0.25rem;
+    }
+
+    @include fd-rtl() {
+      .#{$block}__icon {
+        margin-right: 0;
+      }
+
+      .#{$block}__icon:not(:last-child) {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
   &__caption {
     @include fd-screen-reader-only();
   }
