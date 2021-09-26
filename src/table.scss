@@ -622,10 +622,8 @@ $block: #{$fd-namespace}-table;
         height: $fd-table-condensed-cell-height;
 
         &--checkbox {
-          position: relative;
-
           .#{$block}__checkbox-label {
-            top: -0.25rem;
+            margin-top: -0.25rem;
             position: absolute;
           }
         }
