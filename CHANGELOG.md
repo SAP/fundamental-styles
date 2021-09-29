@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.2...v0.20.1-rc.3) (2021-09-29)
+
+
+### Bug Fixes
+
+* table condensed checkbox ([#2751](https://github.com/SAP/fundamental-styles/issues/2751)) ([c013b9f](https://github.com/SAP/fundamental-styles/commit/c013b9fb1bc2635db60048801f8b564af615bc48))
+
 ### [0.20.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.1...v0.20.1-rc.2) (2021-09-29)
 
 ### [0.20.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.0...v0.20.1-rc.1) (2021-09-29)
