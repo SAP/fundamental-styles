@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.3...v0.20.1-rc.4) (2021-09-29)
+
+
+### Features
+
+* bring early version of horizon theme css variables [ci visual] ([#2755](https://github.com/SAP/fundamental-styles/issues/2755)) ([68224a0](https://github.com/SAP/fundamental-styles/commit/68224a0090bd56ac45c0bf51c74f7405242bf30f))
+
 ### [0.20.1-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.2...v0.20.1-rc.3) (2021-09-29)
 
 
