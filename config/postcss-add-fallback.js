@@ -48,8 +48,11 @@ module.exports = () => {
             let sourceDeltaParams = fs.readFileSync('dist/theming/sap_fiori_3.css').toString();
 
             if (supportedThemes.indexOf(fileName[fileName.length - 1]) > -1) {
-                sourceParams = fs.readFileSync(`node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${fileName[fileName.length - 1]}/css_variables.css`).toString();
                 sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
+                if (fileName[fileName.length - 1] !== 'sap_horizon') {
+                    sourceParams = fs.readFileSync(`node_modules/@sap-theming/theming-base-content/content/Base/baseLib/${fileName[fileName.length - 1]}/css_variables.css`).toString();
+                    sourceDeltaParams = fs.readFileSync(`dist/theming/${fileName[fileName.length - 1]}.css`).toString();
+                }
             }
 
             params = findCSSVars(sourceParams);
