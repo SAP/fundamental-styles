@@ -132,18 +132,32 @@ $tag-colors-rest: (
       }
 
       @include fn-pressed() {
-        color: map_get($color-set, "text-press");
-        box-shadow: map_get($color-set, "shadow-press");
-        background: map_get($color-set, "background-state");
+        color: map_get($color-set, "text-press") !important;
+        box-shadow: map_get($color-set, "shadow-press") !important;
+        background: map_get($color-set, "background-state") !important;
       }
 
       @include fn-active() {
-        color: map_get($color-set, "text-press");
-        box-shadow: map_get($color-set, "shadow-press");
-        background: map_get($color-set, "background-state");
+        color: map_get($color-set, "text-press") !important;
+        box-shadow: map_get($color-set, "shadow-press") !important;
+        background: map_get($color-set, "background-state") !important;
       }
 
-      @include fn-focus() {
+      @include fn-is-focus() {
+        outline: none;
+        color: map_get($color-set, "text-focus");
+        background: map_get($color-set, "background-state");
+        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+      }
+
+      @include fn-not-focus-visible() {
+        outline: none;
+        color: map_get($color-set, "text");
+        background: map_get($color-set, "background");
+        box-shadow: none;
+      }
+
+      @include fn-focus-visible() {
         outline: none;
         color: map_get($color-set, "text-focus");
         background: map_get($color-set, "background-state");

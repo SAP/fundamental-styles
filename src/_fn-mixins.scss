@@ -26,7 +26,7 @@
 }
 
 @mixin fn-transition {
-  $fn-transition: 300ms ease-in-out;
+  $fn-transition: 250ms ease-in-out;
 
   -webkit-transition: $fn-transition;
   -moz-transition: $fn-transition;
@@ -101,6 +101,26 @@
   }
 }
 
+@mixin fn-is-focus() {
+  &.is-focus {
+    z-index: 5;
+    @content;
+  }
+}
+
+@mixin fn-not-focus-visible() {
+  &:focus:not(.focus-visible) {
+    z-index: 5;
+    @content;
+  }
+}
+
+@mixin fn-focus-visible() {
+  &.focus-visible {
+    @content;
+  }
+}
+
 // Flex Helpers
 @mixin fn-flex($direction: row) {
   display: flex;
@@ -144,6 +164,11 @@
     margin-right: 0;
     margin-left: $right;
   }
+}
+
+@mixin fn-set-margin-y-equal($value: 0) {
+  margin-top: $value;
+  margin-bottom: $value;
 }
 
 // Set Paddings

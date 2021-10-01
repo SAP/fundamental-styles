@@ -68,11 +68,13 @@ $block: #{$fn-namespace}-text-field;
   @include fn-input-disabled-readonly();
 
   [class*='sap-icon'] {
-    @include fn-set-position-right(0.625rem);
+    @include fn-set-position-right(0.5rem);
 
     top: 0;
+    width: 1.5rem;
     font-size: 0.75rem;
     position: absolute;
+    text-align: center;
     height: $fn-element-height;
     line-height: $fn-element-height;
   }
@@ -96,10 +98,11 @@ $block: #{$fn-namespace}-text-field;
   &__input {
     @include fn-reset();
     @include fn-transition();
+    @include fn-set-paddings-y-equal($fn-padding-xs);
+    @include fn-set-paddings-x-equal($fn-padding-medium);
 
     width: 100%;
     height: $fn-element-height;
-    padding: $fn-padding-xs $fn-padding-medium;
     background: $fn-color-grey-1;
     border-radius: $fn-border-radius-small;
 
@@ -200,6 +203,7 @@ $block: #{$fn-namespace}-text-field;
     }
 
     .#{$block}__input {
+      @include fn-set-paddings-x($fn-padding-medium, 2.5rem);
       @include fn-input-base($fn-color-blue-1, $fn-color-blue-4, none);
 
       &::placeholder {
@@ -254,7 +258,7 @@ $block: #{$fn-namespace}-text-field;
 
   &--warning {
     [class*='sap-icon'] {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
       color: $fn-color-mango-4;
     }
 
@@ -263,6 +267,7 @@ $block: #{$fn-namespace}-text-field;
     }
 
     .#{$block}__input {
+      @include fn-set-paddings-x($fn-padding-medium, 2.5rem);
       @include fn-input-base($fn-color-mango-1, $fn-color-mango-5, none);
 
       &::placeholder {
@@ -326,6 +331,7 @@ $block: #{$fn-namespace}-text-field;
     }
 
     .#{$block}__input {
+      @include fn-set-paddings-x($fn-padding-medium, 2.5rem);
       @include fn-input-base($fn-color-red-1, $fn-color-red-4, none);
 
       &::placeholder {

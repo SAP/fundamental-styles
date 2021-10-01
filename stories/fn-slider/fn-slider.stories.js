@@ -24,7 +24,7 @@ const localStyles = `
     }
 
     .docs-fn-container-vertical {
-        height: 400px;
+        height: 600px;
         flex-direction: row;
     }
 </style>

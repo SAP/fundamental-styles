@@ -54,7 +54,7 @@ exports[`Storyshots Experimental/Button Flat Button 1`] = `
     
     <div>
       <b>
-        Press
+        Active
       </b>
     </div>
     
@@ -120,7 +120,7 @@ exports[`Storyshots Experimental/Button Flat Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--flat is-pressed"
+      class="fn-button fn-button--flat is-active"
     >
       
         
@@ -212,7 +212,7 @@ exports[`Storyshots Experimental/Button Flat Button 1`] = `
     
     <button
       aria-label="Share"
-      class="fn-button fn-button--flat fn-button--icon-only is-pressed"
+      class="fn-button fn-button--flat fn-button--icon-only is-active"
     >
       
         
@@ -311,7 +311,7 @@ exports[`Storyshots Experimental/Button Flat Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--flat fn-button--icon-right is-pressed"
+      class="fn-button fn-button--flat fn-button--icon-right is-active"
     >
       
         
@@ -428,7 +428,7 @@ exports[`Storyshots Experimental/Button Flat Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--flat fn-button--icon-left is-pressed"
+      class="fn-button fn-button--flat fn-button--icon-left is-active"
     >
       
         
@@ -548,7 +548,7 @@ exports[`Storyshots Experimental/Button Link Button 1`] = `
     
     <div>
       <b>
-        Press
+        Active
       </b>
     </div>
     
@@ -614,7 +614,7 @@ exports[`Storyshots Experimental/Button Link Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--link is-pressed"
+      class="fn-button fn-button--link is-active"
     >
       
         
@@ -706,7 +706,7 @@ exports[`Storyshots Experimental/Button Link Button 1`] = `
     
     <button
       aria-label="Share"
-      class="fn-button fn-button--link fn-button--icon-only is-pressed"
+      class="fn-button fn-button--link fn-button--icon-only is-active"
     >
       
         
@@ -805,7 +805,7 @@ exports[`Storyshots Experimental/Button Link Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--link fn-button--icon-right is-pressed"
+      class="fn-button fn-button--link fn-button--icon-right is-active"
     >
       
         
@@ -922,7 +922,7 @@ exports[`Storyshots Experimental/Button Link Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--link fn-button--icon-left is-pressed"
+      class="fn-button fn-button--link fn-button--icon-left is-active"
     >
       
         
@@ -1042,7 +1042,7 @@ exports[`Storyshots Experimental/Button Naked Button 1`] = `
     
     <div>
       <b>
-        Press
+        Active
       </b>
     </div>
     
@@ -1108,7 +1108,7 @@ exports[`Storyshots Experimental/Button Naked Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--naked is-pressed"
+      class="fn-button fn-button--naked is-active"
     >
       
         
@@ -1200,7 +1200,7 @@ exports[`Storyshots Experimental/Button Naked Button 1`] = `
     
     <button
       aria-label="Share"
-      class="fn-button fn-button--naked fn-button--icon-only is-pressed"
+      class="fn-button fn-button--naked fn-button--icon-only is-active"
     >
       
         
@@ -1299,7 +1299,7 @@ exports[`Storyshots Experimental/Button Naked Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--naked fn-button--icon-right is-pressed"
+      class="fn-button fn-button--naked fn-button--icon-right is-active"
     >
       
         
@@ -1416,7 +1416,7 @@ exports[`Storyshots Experimental/Button Naked Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--naked fn-button--icon-left is-pressed"
+      class="fn-button fn-button--naked fn-button--icon-left is-active"
     >
       
         
@@ -1536,7 +1536,7 @@ exports[`Storyshots Experimental/Button Outline Button 1`] = `
     
     <div>
       <b>
-        Press
+        Active
       </b>
     </div>
     
@@ -1602,7 +1602,7 @@ exports[`Storyshots Experimental/Button Outline Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--outline is-pressed"
+      class="fn-button fn-button--outline is-active"
     >
       
         
@@ -1694,7 +1694,7 @@ exports[`Storyshots Experimental/Button Outline Button 1`] = `
     
     <button
       aria-label="Share"
-      class="fn-button fn-button--outline fn-button--icon-only is-pressed"
+      class="fn-button fn-button--outline fn-button--icon-only is-active"
     >
       
         
@@ -1793,7 +1793,7 @@ exports[`Storyshots Experimental/Button Outline Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--outline fn-button--icon-right is-pressed"
+      class="fn-button fn-button--outline fn-button--icon-right is-active"
     >
       
         
@@ -1910,7 +1910,7 @@ exports[`Storyshots Experimental/Button Outline Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--outline fn-button--icon-left is-pressed"
+      class="fn-button fn-button--outline fn-button--icon-left is-active"
     >
       
         
@@ -2030,7 +2030,7 @@ exports[`Storyshots Experimental/Button Primary Button 1`] = `
     
     <div>
       <b>
-        Press
+        Active
       </b>
     </div>
     
@@ -2096,7 +2096,7 @@ exports[`Storyshots Experimental/Button Primary Button 1`] = `
     
     
     <button
-      class="fn-button is-pressed"
+      class="fn-button is-active"
     >
       
         
@@ -2188,7 +2188,7 @@ exports[`Storyshots Experimental/Button Primary Button 1`] = `
     
     <button
       aria-label="Share"
-      class="fn-button fn-button--icon-only is-pressed"
+      class="fn-button fn-button--icon-only is-active"
     >
       
         
@@ -2287,7 +2287,7 @@ exports[`Storyshots Experimental/Button Primary Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--icon-right is-pressed"
+      class="fn-button fn-button--icon-right is-active"
     >
       
         
@@ -2404,7 +2404,7 @@ exports[`Storyshots Experimental/Button Primary Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--icon-left is-pressed"
+      class="fn-button fn-button--icon-left is-active"
     >
       
         
@@ -2524,7 +2524,7 @@ exports[`Storyshots Experimental/Button Secondary Button 1`] = `
     
     <div>
       <b>
-        Press
+        Active
       </b>
     </div>
     
@@ -2590,7 +2590,7 @@ exports[`Storyshots Experimental/Button Secondary Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--secondary is-pressed"
+      class="fn-button fn-button--secondary is-active"
     >
       
         
@@ -2682,7 +2682,7 @@ exports[`Storyshots Experimental/Button Secondary Button 1`] = `
     
     <button
       aria-label="Share"
-      class="fn-button fn-button--secondary fn-button--icon-only is-pressed"
+      class="fn-button fn-button--secondary fn-button--icon-only is-active"
     >
       
         
@@ -2781,7 +2781,7 @@ exports[`Storyshots Experimental/Button Secondary Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--secondary fn-button--icon-right is-pressed"
+      class="fn-button fn-button--secondary fn-button--icon-right is-active"
     >
       
         
@@ -2898,7 +2898,7 @@ exports[`Storyshots Experimental/Button Secondary Button 1`] = `
     
     
     <button
-      class="fn-button fn-button--secondary fn-button--icon-left is-pressed"
+      class="fn-button fn-button--secondary fn-button--icon-left is-active"
     >
       
         

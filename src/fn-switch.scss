@@ -42,24 +42,6 @@ $fn-switch-slider-translateX: 0.75rem;
     height: 1.5rem;
     position: relative;
     display: inline-block;
-
-    @include fn-active() {
-      .#{$block}__input + .#{$block}__slider {
-        box-shadow: $fn-focus-outline-shadow, $fn-focus-outline-inner-shadow;
-
-        &::before {
-          @include fn-switch-set-slider-inset-shadow($fn-color-grey-4);
-        }
-      }
-
-      .#{$block}__input:checked  + .#{$block}__slider {
-        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow, $fn-focus-outline-inner-shadow;
-
-        &::before {
-          @include fn-switch-set-slider-inset-shadow($fn-color-blue-7);
-        }
-      }
-    }
   }
 
   &__input {
@@ -85,7 +67,7 @@ $fn-switch-slider-translateX: 0.75rem;
       @include fn-switch-set-states($fn-color-grey-5, $fn-color-blue-6, $fn-shadow-blue-small);
     }
 
-    @include fn-focus() {
+    @include fn-focus-visible() {
       @include fn-switch-set-states($fn-color-grey-4, $fn-color-blue-7, none);
 
       & + .#{$block}__slider {
@@ -101,6 +83,26 @@ $fn-switch-slider-translateX: 0.75rem;
 
         &::before {
           @include fn-switch-set-slider-inset-shadow($fn-color-blue-7);
+        }
+      }
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-switch-set-states($fn-color-grey-4, $fn-color-blue-7, none);
+
+      & + .#{$block}__slider {
+        box-shadow: none;
+
+        &::before {
+          box-shadow: none;
+        }
+      }
+
+      &:checked  + .#{$block}__slider {
+        box-shadow: none;
+
+        &::before {
+          box-shadow: none;
         }
       }
     }

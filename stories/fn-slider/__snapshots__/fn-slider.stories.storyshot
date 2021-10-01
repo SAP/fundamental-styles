@@ -15,7 +15,7 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
     }
 
     .docs-fn-container-vertical {
-        height: 400px;
+        height: 600px;
         flex-direction: row;
     }
 
@@ -234,7 +234,7 @@ exports[`Storyshots Experimental/Slider Vertical Slider 1`] = `
     }
 
     .docs-fn-container-vertical {
-        height: 400px;
+        height: 600px;
         flex-direction: row;
     }
 

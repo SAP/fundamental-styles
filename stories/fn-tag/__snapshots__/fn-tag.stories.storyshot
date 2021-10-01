@@ -48,7 +48,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     <div>
       <b>
-        Press
+        Active
       </b>
     </div>
     
@@ -95,7 +95,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--grey is-pressed"
+      class="fn-tag fn-tag--grey is-active"
       role="button"
       tabindex="0"
     >
@@ -148,7 +148,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--blue is-pressed"
+      class="fn-tag fn-tag--blue is-active"
       role="button"
       tabindex="0"
     >
@@ -201,7 +201,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--teal is-pressed"
+      class="fn-tag fn-tag--teal is-active"
       role="button"
       tabindex="0"
     >
@@ -254,7 +254,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--green is-pressed"
+      class="fn-tag fn-tag--green is-active"
       role="button"
       tabindex="0"
     >
@@ -307,7 +307,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--mango is-pressed"
+      class="fn-tag fn-tag--mango is-active"
       role="button"
       tabindex="0"
     >
@@ -360,7 +360,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--red is-pressed"
+      class="fn-tag fn-tag--red is-active"
       role="button"
       tabindex="0"
     >
@@ -413,7 +413,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--pink is-pressed"
+      class="fn-tag fn-tag--pink is-active"
       role="button"
       tabindex="0"
     >
@@ -466,7 +466,7 @@ exports[`Storyshots Experimental/Tag Types 1`] = `
     
     
     <div
-      class="fn-tag fn-tag--indigo is-pressed"
+      class="fn-tag fn-tag--indigo is-active"
       role="button"
       tabindex="0"
     >
