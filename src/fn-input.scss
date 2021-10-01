@@ -394,6 +394,8 @@ $block: #{$fn-namespace}-text-field;
     .#{$block}__input {
       @include fn-focus() {
         &:not(:placeholder-shown) {
+          background: $fn-color-base-white;
+
           & ~ .#{$block}__input-border::before {
             background: transparent;
           }
@@ -405,6 +407,8 @@ $block: #{$fn-namespace}-text-field;
       }
 
       &:not(:placeholder-shown) {
+        background: $fn-color-green-1;
+
         & ~ .#{$block}__input-border::before {
           background: $fn-color-green-4;
         }
