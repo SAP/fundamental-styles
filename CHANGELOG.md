@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.7...v0.20.1-rc.8) (2021-10-01)
+
+
+### Bug Fixes
+
+* **core:** remove object status outline [ci visual] ([#2753](https://github.com/SAP/fundamental-styles/issues/2753)) ([27d1544](https://github.com/SAP/fundamental-styles/commit/27d1544337b1c87587100a32831f8a21a8bc1bb4))
+
 ### [0.20.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.6...v0.20.1-rc.7) (2021-09-30)
 
 ### [0.20.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.5...v0.20.1-rc.6) (2021-09-30)
