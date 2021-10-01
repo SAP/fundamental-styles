@@ -224,6 +224,10 @@ $inverted-color-accents: (
   align-items: center;
   line-height: 1;
 
+  @include fd-focus() {
+    outline: none;
+  }
+
   &__text {
     @include fd-reset();
     @include fd-object-status-text-inherit();
