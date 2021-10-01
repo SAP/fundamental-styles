@@ -8,10 +8,9 @@ $block: #{$fn-namespace}-radio;
   @include fn-flex-vertical-center();
 
   cursor: pointer;
-  min-width: 10rem;
+  padding: 0.5rem;
   width: fit-content;
   position: relative;
-  padding: 0.4375rem;
   display: inline-flex;
   user-select: none;
   -ms-user-select: none;
@@ -19,6 +18,10 @@ $block: #{$fn-namespace}-radio;
   -webkit-user-select: none;
   height: $fn-element-height;
   border-radius: $fn-border-radius-large;
+
+  &--group {
+    width: 100%;
+  }
 
   @include fn-hover() {
     box-shadow: $fn-shadow-grey-medium;
