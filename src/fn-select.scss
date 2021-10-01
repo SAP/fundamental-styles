@@ -19,6 +19,8 @@ $block: #{$fn-namespace}-select;
   }
 
   &__input {
+    @include fn-set-paddings-x($fn-padding-medium, 2.5rem);
+
     @include fn-readonly() {
       cursor: pointer;
     }
@@ -39,6 +41,7 @@ $block: #{$fn-namespace}-select;
   &__item {
     @include fn-reset();
     @include fn-transition();
+    @include fn-set-margin-y-equal(0.125rem);
     @include fn-select-item-base($fn-color-base-white, $fn-color-base-white);
 
     width: 100%;
@@ -64,14 +67,21 @@ $block: #{$fn-namespace}-select;
     }
 
     @include fn-pressed() {
-      @include fn-select-item-base($fn-color-grey-1, $fn-color-grey-3);
+      @include fn-select-item-base($fn-color-grey-1 !important, $fn-color-grey-3 !important);
     }
 
     @include fn-active() {
-      @include fn-select-item-base($fn-color-grey-1, $fn-color-grey-3);
+      @include fn-select-item-base($fn-color-grey-1 !important, $fn-color-grey-3 !important);
     }
 
-    @include fn-focus() {
+    @include fn-not-focus-visible() {
+      @include fn-select-item-base($fn-color-base-white, $fn-color-base-white);
+
+      outline: none;
+      box-shadow: none;
+    }
+
+    @include fn-focus-visible() {
       @include fn-select-item-base($fn-color-base-white, $fn-color-base-white);
 
       outline: none;

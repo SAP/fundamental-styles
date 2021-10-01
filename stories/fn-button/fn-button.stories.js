@@ -59,7 +59,7 @@ export const primary = () => `${localStyles}
     <div></div>
     <div><b>Rest</b></div>
     <div><b>Hover</b></div>
-    <div><b>Press</b></div>
+    <div><b>Active</b></div>
     <div><b>Focus</b></div>
     <div><b>Disabled</b></div>
 </div>
@@ -72,7 +72,7 @@ export const primary = () => `${localStyles}
     <button class="fn-button is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button is-pressed">
+    <button class="fn-button is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button is-focus">
@@ -92,7 +92,7 @@ export const primary = () => `${localStyles}
     <button class="fn-button fn-button--icon-only is-hover" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--icon-only is-pressed" aria-label="Share">
+    <button class="fn-button fn-button--icon-only is-active" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
     <button class="fn-button fn-button--icon-only is-focus" aria-label="Share">
@@ -114,7 +114,7 @@ export const primary = () => `${localStyles}
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
-    <button class="fn-button fn-button--icon-right is-pressed">
+    <button class="fn-button fn-button--icon-right is-active">
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
@@ -138,7 +138,7 @@ export const primary = () => `${localStyles}
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
-    <button class="fn-button fn-button--icon-left is-pressed">
+    <button class="fn-button fn-button--icon-left is-active">
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
@@ -168,7 +168,7 @@ export const secondary = () => `${localStyles}
     <div></div>
     <div><b>Rest</b></div>
     <div><b>Hover</b></div>
-    <div><b>Press</b></div>
+    <div><b>Active</b></div>
     <div><b>Focus</b></div>
     <div><b>Disabled</b></div>
 </div>
@@ -181,7 +181,7 @@ export const secondary = () => `${localStyles}
     <button class="fn-button fn-button--secondary is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--secondary is-pressed">
+    <button class="fn-button fn-button--secondary is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--secondary is-focus">
@@ -201,7 +201,7 @@ export const secondary = () => `${localStyles}
     <button class="fn-button fn-button--secondary fn-button--icon-only is-hover" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--secondary fn-button--icon-only is-pressed" aria-label="Share">
+    <button class="fn-button fn-button--secondary fn-button--icon-only is-active" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
     <button class="fn-button fn-button--secondary fn-button--icon-only is-focus" aria-label="Share">
@@ -223,7 +223,7 @@ export const secondary = () => `${localStyles}
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
-    <button class="fn-button fn-button--secondary fn-button--icon-right is-pressed">
+    <button class="fn-button fn-button--secondary fn-button--icon-right is-active">
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
@@ -247,7 +247,7 @@ export const secondary = () => `${localStyles}
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
-    <button class="fn-button fn-button--secondary fn-button--icon-left is-pressed">
+    <button class="fn-button fn-button--secondary fn-button--icon-left is-active">
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
@@ -276,7 +276,7 @@ export const flat = () => `${localStyles}
     <div></div>
     <div><b>Rest</b></div>
     <div><b>Hover</b></div>
-    <div><b>Press</b></div>
+    <div><b>Active</b></div>
     <div><b>Focus</b></div>
     <div><b>Disabled</b></div>
 </div>
@@ -289,7 +289,7 @@ export const flat = () => `${localStyles}
     <button class="fn-button fn-button--flat is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--flat is-pressed">
+    <button class="fn-button fn-button--flat is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--flat is-focus">
@@ -309,7 +309,7 @@ export const flat = () => `${localStyles}
     <button class="fn-button fn-button--flat fn-button--icon-only is-hover" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--flat fn-button--icon-only is-pressed" aria-label="Share">
+    <button class="fn-button fn-button--flat fn-button--icon-only is-active" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
     <button class="fn-button fn-button--flat fn-button--icon-only is-focus" aria-label="Share">
@@ -331,7 +331,7 @@ export const flat = () => `${localStyles}
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
-    <button class="fn-button fn-button--flat fn-button--icon-right is-pressed">
+    <button class="fn-button fn-button--flat fn-button--icon-right is-active">
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
@@ -355,7 +355,7 @@ export const flat = () => `${localStyles}
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
-    <button class="fn-button fn-button--flat fn-button--icon-left is-pressed">
+    <button class="fn-button fn-button--flat fn-button--icon-left is-active">
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
@@ -384,7 +384,7 @@ export const link = () => `${localStyles}
     <div></div>
     <div><b>Rest</b></div>
     <div><b>Hover</b></div>
-    <div><b>Press</b></div>
+    <div><b>Active</b></div>
     <div><b>Focus</b></div>
     <div><b>Disabled</b></div>
 </div>
@@ -397,7 +397,7 @@ export const link = () => `${localStyles}
     <button class="fn-button fn-button--link is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--link is-pressed">
+    <button class="fn-button fn-button--link is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--link is-focus">
@@ -417,7 +417,7 @@ export const link = () => `${localStyles}
     <button class="fn-button fn-button--link fn-button--icon-only is-hover" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--link fn-button--icon-only is-pressed" aria-label="Share">
+    <button class="fn-button fn-button--link fn-button--icon-only is-active" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
     <button class="fn-button fn-button--link fn-button--icon-only is-focus" aria-label="Share">
@@ -439,7 +439,7 @@ export const link = () => `${localStyles}
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
-    <button class="fn-button fn-button--link fn-button--icon-right is-pressed">
+    <button class="fn-button fn-button--link fn-button--icon-right is-active">
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
@@ -463,7 +463,7 @@ export const link = () => `${localStyles}
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
-    <button class="fn-button fn-button--link fn-button--icon-left is-pressed">
+    <button class="fn-button fn-button--link fn-button--icon-left is-active">
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
@@ -492,7 +492,7 @@ export const outline = () => `${localStyles}
     <div></div>
     <div><b>Rest</b></div>
     <div><b>Hover</b></div>
-    <div><b>Press</b></div>
+    <div><b>Active</b></div>
     <div><b>Focus</b></div>
     <div><b>Disabled</b></div>
 </div>
@@ -505,7 +505,7 @@ export const outline = () => `${localStyles}
     <button class="fn-button fn-button--outline is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--outline is-pressed">
+    <button class="fn-button fn-button--outline is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--outline is-focus">
@@ -525,7 +525,7 @@ export const outline = () => `${localStyles}
     <button class="fn-button fn-button--outline fn-button--icon-only is-hover" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--outline fn-button--icon-only is-pressed" aria-label="Share">
+    <button class="fn-button fn-button--outline fn-button--icon-only is-active" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
     <button class="fn-button fn-button--outline fn-button--icon-only is-focus" aria-label="Share">
@@ -547,7 +547,7 @@ export const outline = () => `${localStyles}
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
-    <button class="fn-button fn-button--outline fn-button--icon-right is-pressed">
+    <button class="fn-button fn-button--outline fn-button--icon-right is-active">
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
@@ -571,7 +571,7 @@ export const outline = () => `${localStyles}
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
-    <button class="fn-button fn-button--outline fn-button--icon-left is-pressed">
+    <button class="fn-button fn-button--outline fn-button--icon-left is-active">
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
@@ -600,7 +600,7 @@ export const naked = () => `${localStyles}
     <div></div>
     <div><b>Rest</b></div>
     <div><b>Hover</b></div>
-    <div><b>Press</b></div>
+    <div><b>Active</b></div>
     <div><b>Focus</b></div>
     <div><b>Disabled</b></div>
 </div>
@@ -613,7 +613,7 @@ export const naked = () => `${localStyles}
     <button class="fn-button fn-button--naked is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--naked is-pressed">
+    <button class="fn-button fn-button--naked is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--naked is-focus">
@@ -633,7 +633,7 @@ export const naked = () => `${localStyles}
     <button class="fn-button fn-button--naked fn-button--icon-only is-hover" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--naked fn-button--icon-only is-pressed" aria-label="Share">
+    <button class="fn-button fn-button--naked fn-button--icon-only is-active" aria-label="Share">
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
     <button class="fn-button fn-button--naked fn-button--icon-only is-focus" aria-label="Share">
@@ -655,7 +655,7 @@ export const naked = () => `${localStyles}
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
-    <button class="fn-button fn-button--naked fn-button--icon-right is-pressed">
+    <button class="fn-button fn-button--naked fn-button--icon-right is-active">
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--paper-plane"></span>
     </button>
@@ -679,7 +679,7 @@ export const naked = () => `${localStyles}
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>
-    <button class="fn-button fn-button--naked fn-button--icon-left is-pressed">
+    <button class="fn-button fn-button--naked fn-button--icon-left is-active">
         <span class="sap-icon sap-icon--share-2"></span>
         <span class="fn-button__text">Share</span>
     </button>

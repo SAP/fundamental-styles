@@ -32,7 +32,7 @@ $fn-search-clear-button-size: 0.625rem;
 
   &__input {
     @include fn-set-paddings-y-equal($fn-padding-xs);
-    @include fn-set-paddings-x(2.5rem, 3.25rem);
+    @include fn-set-paddings-x(2.5rem, 3.75rem);
     @include fn-transition();
 
     z-index: 1;
@@ -60,7 +60,7 @@ $fn-search-clear-button-size: 0.625rem;
       }
 
       & ~ .#{$block}__clear {
-        @include fn-set-position-right(0.75rem);
+        @include fn-set-position-right(0.5rem);
 
         display: flex;
       }
@@ -92,7 +92,7 @@ $fn-search-clear-button-size: 0.625rem;
         }
 
         & ~ .#{$block}__clear {
-          @include fn-set-position-right(2.75rem);
+          @include fn-set-position-right(2.25rem);
         }
       }
     }
@@ -125,15 +125,17 @@ $fn-search-clear-button-size: 0.625rem;
 
   &__clear {
     @include fn-reset();
-    @include fn-set-position-right(0.75rem);
+    @include fn-flex-center();
+    @include fn-set-position-right(0.25rem);
 
     z-index: 10;
     display: none;
     cursor: pointer;
     position: absolute;
+    border-radius: 50%;
     background: transparent;
-    width: $fn-search-clear-button-size;
-    height: $fn-search-clear-button-size;
+    width: $fn-search-button-size;
+    height: $fn-search-button-size;
 
     [class*='sap-icon'] {
       line-height: 1;

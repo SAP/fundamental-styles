@@ -61,14 +61,26 @@ $tag-border-width: 0.125rem;
     }
 
     @include fn-pressed() {
-      @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+      @include fn-tabs-base(transparent !important, $fn-color-grey-7 !important, $fn-color-grey-7 !important, none);
     }
 
     @include fn-active() {
-      @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+      @include fn-tabs-base(transparent !important, $fn-color-grey-7 !important, $fn-color-grey-7 !important, none);
     }
 
     @include fn-focus() {
+      @include fn-tabs-base(transparent, $fn-color-grey-8, transparent, none, true);
+
+      outline: none;
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-tabs-base(transparent, $fn-color-grey-5, transparent, none);
+
+      outline: none;
+    }
+
+    @include fn-focus-visible() {
       @include fn-tabs-base(transparent, $fn-color-grey-8, transparent, none, true);
 
       outline: none;
@@ -88,14 +100,20 @@ $tag-border-width: 0.125rem;
       }
 
       @include fn-pressed() {
-        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+        @include fn-tabs-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-color-blue-6 !important, $fn-shadow-blue-xs !important);
       }
 
       @include fn-active() {
-        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+        @include fn-tabs-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-color-blue-6 !important, $fn-shadow-blue-xs !important);
       }
 
-      @include fn-focus() {
+      @include fn-not-focus-visible() {
+        @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small);
+
+        outline: none;
+      }
+
+      @include fn-focus-visible() {
         @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small, true);
 
         outline: none;
@@ -123,10 +141,22 @@ $tag-border-width: 0.125rem;
       }
 
       @include fn-active() {
-        @include fn-tabs-base($fn-color-base-white, $fn-color-grey-7, transparent, $fn-shadow-grey-small);
+        @include fn-tabs-base($fn-color-base-white, $fn-color-grey-7, transparent, $fn-shadow-grey-small !important);
       }
 
       @include fn-focus() {
+        @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-8, transparent, none, true);
+
+        outline: none;
+      }
+
+      @include fn-not-focus-visible() {
+        @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-6, transparent, none);
+
+        outline: none;
+      }
+
+      @include fn-focus-visible() {
         @include fn-tabs-base($fn-color-grey-1, $fn-color-grey-8, transparent, none, true);
 
         outline: none;
@@ -144,14 +174,26 @@ $tag-border-width: 0.125rem;
         }
 
         @include fn-pressed() {
-          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+          @include fn-tabs-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-color-blue-6 !important, $fn-shadow-blue-xs !important);
         }
 
         @include fn-active() {
-          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-7, $fn-color-blue-6, $fn-shadow-blue-xs);
+          @include fn-tabs-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-color-blue-6 !important, $fn-shadow-blue-xs !important);
         }
 
         @include fn-focus() {
+          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small, true);
+
+          outline: none;
+        }
+
+        @include fn-not-focus-visible() {
+          @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small);
+
+          outline: none;
+        }
+
+        @include fn-focus-visible() {
           @include fn-tabs-base($fn-color-base-white, $fn-color-blue-5, $fn-color-blue-4, $fn-shadow-blue-small, true);
 
           outline: none;
@@ -189,14 +231,32 @@ $tag-border-width: 0.125rem;
       }
 
       @include fn-pressed() {
-        @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+        @include fn-tabs-base(transparent !important, $fn-color-grey-7 !important, $fn-color-grey-7 !important, none);
       }
 
       @include fn-active() {
-        @include fn-tabs-base(transparent, $fn-color-grey-7, $fn-color-grey-7, none);
+        @include fn-tabs-base(transparent !important, $fn-color-grey-7 !important, $fn-color-grey-7 !important, none);
       }
 
       @include fn-focus() {
+        @include fn-tabs-base(transparent, $fn-color-grey-8, transparent, none, true);
+
+        &::before {
+          width: 100%;
+          left: 0;
+          right: 0;
+        }
+
+        outline: none;
+      }
+
+      @include fn-not-focus-visible() {
+        @include fn-tabs-base(transparent, $fn-color-grey-5, transparent, none);
+
+        outline: none;
+      }
+
+      @include fn-focus-visible() {
         @include fn-tabs-base(transparent, $fn-color-grey-8, transparent, none, true);
 
         &::before {
@@ -220,14 +280,32 @@ $tag-border-width: 0.125rem;
         }
 
         @include fn-pressed() {
-          @include fn-tabs-base(transparent, $fn-color-blue-7, $fn-color-blue-6, none);
+          @include fn-tabs-base(transparent !important, $fn-color-blue-7 !important, $fn-color-blue-6 !important, none);
         }
 
         @include fn-active() {
-          @include fn-tabs-base(transparent, $fn-color-blue-7, $fn-color-blue-6, none);
+          @include fn-tabs-base(transparent !important, $fn-color-blue-7 !important, $fn-color-blue-6 !important, none);
         }
 
         @include fn-focus() {
+          @include fn-tabs-base(transparent, $fn-color-blue-5, $fn-color-blue-4, none, true);
+
+          &::before {
+            width: 100%;
+            left: 0;
+            right: 0;
+          }
+
+          outline: none;
+        }
+
+        @include fn-not-focus-visible() {
+          @include fn-tabs-base(transparent, $fn-color-blue-5, $fn-color-blue-4, none);
+
+          outline: none;
+        }
+
+        @include fn-focus-visible() {
           @include fn-tabs-base(transparent, $fn-color-blue-5, $fn-color-blue-4, none, true);
 
           &::before {

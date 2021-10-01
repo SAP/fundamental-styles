@@ -25,14 +25,19 @@ $block: #{$fn-namespace}-checkbox;
   }
 
   @include fn-pressed() {
-    box-shadow: $fn-shadow-grey-xs;
+    box-shadow: $fn-shadow-grey-xs !important;
   }
 
   @include fn-active() {
-    box-shadow: $fn-shadow-grey-xs;
+    box-shadow: $fn-shadow-grey-xs !important;
   }
 
-  @include fn-focus() {
+  @include fn-not-focus-visible() {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @include fn-focus-visible() {
     outline: none;
     box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow;
   }
