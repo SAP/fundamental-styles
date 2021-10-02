@@ -63,7 +63,7 @@
     "@storybook/addon-docs": "6.3.8",
     "@storybook/addon-links": "6.3.8",
     "@storybook/addon-storyshots": "6.3.8",
-    "@storybook/addon-toolbars": "6.3.8",
+    "@storybook/addon-toolbars": "6.3.9",
     "@storybook/addon-viewport": "6.3.8",
     "@storybook/addons": "6.3.8",
     "@storybook/html": "6.3.9",
