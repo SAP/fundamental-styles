@@ -37,7 +37,12 @@ export const changeDocumentTheme = (newTheme, forComponents) => {
     };
 
     forComponents.forEach(component => {
-        let stylePath = `${component}-${newTheme}.css`;
+        let stylePath = `${component}`;
+        if(!stylePath.startsWith('fn-')){
+            stylePath = `${stylePath}-${newTheme}.css`;
+        } else {
+            stylePath = `${stylePath}.css`;
+        }
         document.head.appendChild(styleLinkTag(stylePath));
     });
 
