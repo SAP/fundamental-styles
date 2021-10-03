@@ -3,8 +3,10 @@
 set -e
 
 PACKAGE_THEMING_PREVIEW=theming-preview
+PACKAGE_FN=fn
 PACKAGE_PREFIX=@fundamental-styles
 DIST_THEMING_PREVIEW=dist-theming
+DIST_FN=dist-FN
 
 git config --global user.email "fundamental@sap.com"
 git config --global user.name "fundamental-bot"
@@ -22,10 +24,18 @@ npm run storybook:static
 
 npm publish --tag prerelease
 
+#publish dist-fn package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
+
+cd ${DIST_FN}
+npm publish --tag prerelease
+cd ..
+
 #build dist-theming package
 npm run build:theming-preview
-
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_THEMING_PREVIEW}"
+
 cd ${DIST_THEMING_PREVIEW}
 npm publish --tag prerelease
 cd ..
+
