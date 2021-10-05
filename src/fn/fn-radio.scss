@@ -77,7 +77,7 @@ $block: #{$fn-namespace}-radio;
     }
 
     &:checked ~ .#{$block}__checkmark::after {
-      display: block;
+      opacity: 1;
     }
 
     @include fn-disabled() {
@@ -98,6 +98,7 @@ $block: #{$fn-namespace}-radio;
   &__checkmark {
     @include fn-reset();
     @include fn-flex-center();
+    @include fn-transition();
 
     width: 1.125rem;
     height: 1.125rem;
@@ -106,10 +107,11 @@ $block: #{$fn-namespace}-radio;
     border: 0.125rem solid $fn-color-grey-5;
 
     &::after {
+      opacity: 0;
       content: "";
-      display: none;
       width: 0.5rem;
       height: 0.5rem;
+      display: block;
       border-radius: 50%;
       font-size: 0.435rem;
       background: $fn-color-blue-4;
