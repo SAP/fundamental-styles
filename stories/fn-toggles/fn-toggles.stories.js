@@ -137,25 +137,25 @@ export const radioGroup = () => `${localStyles}
 <div class="docs-fn-container">
     <div style="width: 10rem">
         <label class="fn-radio fn-radio--group" tabindex="0">
-            <input class="fn-radio__input" type="radio" checked="checked" name="radio" tabindex="-1">
+            <input class="fn-radio__input" type="radio" checked="checked" name="radio-group" tabindex="-1">
             <span class="fn-radio__checkmark"></span>
             <span class="fn-radio__label">First</span>
         </label>
 
         <label class="fn-radio fn-radio--group" tabindex="0">
-            <input class="fn-radio__input" type="radio" name="radio" tabindex="-1">
+            <input class="fn-radio__input" type="radio" name="radio-group" tabindex="-1">
             <span class="fn-radio__checkmark"></span>
             <span class="fn-radio__label">Second</span>
         </label>
 
         <label class="fn-radio fn-radio--group" tabindex="0">
-            <input class="fn-radio__input" type="radio" name="radio" tabindex="-1">
+            <input class="fn-radio__input" type="radio" name="radio-group" tabindex="-1">
             <span class="fn-radio__checkmark"></span>
             <span class="fn-radio__label">Third</span>
         </label>
 
         <label class="fn-radio fn-radio--group is-disabled">
-            <input class="fn-radio__input" type="radio" disabled name="radio" tabindex="-1">
+            <input class="fn-radio__input" type="radio" disabled name="radio-group" tabindex="-1">
             <span class="fn-radio__checkmark"></span>
             <span class="fn-radio__label">Fourth</span>
         </label>

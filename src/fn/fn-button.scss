@@ -67,16 +67,16 @@ $block: #{$fn-namespace}-button;
     @include fn-button-base($fn-color-blue-7 !important, $fn-color-base-white !important, $fn-shadow-blue-xs !important);
   }
 
-  @include fn-focus () {
-    @include fn-button-base($fn-color-blue-7, $fn-color-base-white, none);
+  // @include fn-focus () {
+  //   @include fn-button-base($fn-color-blue-5, $fn-color-base-white, none);
 
-    outline: none;
-    border-color: $fn-color-base-white;
-    box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow, $fn-focus-outline-inner-shadow;
-  }
+  //   outline: none;
+  //   border-color: $fn-color-base-white;
+  //   box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow, $fn-focus-outline-inner-shadow;
+  // }
 
   @include fn-is-focus() {
-    @include fn-button-base($fn-color-blue-7, $fn-color-base-white, none);
+    @include fn-button-base($fn-color-blue-5, $fn-color-base-white, none);
 
     outline: none;
     border-color: $fn-color-base-white;
@@ -90,7 +90,7 @@ $block: #{$fn-namespace}-button;
   }
 
   @include fn-focus-visible() {
-    @include fn-button-base($fn-color-blue-7, $fn-color-base-white, none);
+    @include fn-button-base($fn-color-blue-5, $fn-color-base-white, none);
 
     outline: none;
     border-color: $fn-color-base-white;
@@ -121,6 +121,10 @@ $block: #{$fn-namespace}-button;
 
     @include fn-active() {
       @include fn-button-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-shadow-blue-xs !important);
+    }
+
+    @include fn-is-focus() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-medium, $fn-focus-outline-shadow);
     }
 
     @include fn-not-focus-visible() {
