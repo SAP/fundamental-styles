@@ -501,7 +501,7 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
         <input
           checked="checked"
           class="fn-radio__input"
-          name="radio"
+          name="radio-group"
           tabindex="-1"
           type="radio"
         />
@@ -531,7 +531,7 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
             
         <input
           class="fn-radio__input"
-          name="radio"
+          name="radio-group"
           tabindex="-1"
           type="radio"
         />
@@ -561,7 +561,7 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
             
         <input
           class="fn-radio__input"
-          name="radio"
+          name="radio-group"
           tabindex="-1"
           type="radio"
         />
@@ -591,7 +591,7 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
         <input
           class="fn-radio__input"
           disabled=""
-          name="radio"
+          name="radio-group"
           tabindex="-1"
           type="radio"
         />
