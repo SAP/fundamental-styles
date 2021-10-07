@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.18...v0.20.1-rc.19) (2021-10-07)
+
+
+### Bug Fixes
+
+* add support for multiple icons in table header ([#2775](https://github.com/SAP/fundamental-styles/issues/2775)) ([243481d](https://github.com/SAP/fundamental-styles/commit/243481d3c64d82be130a7cd9bed927ea8e8f5c1f))
+
 ### [0.20.1-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.17...v0.20.1-rc.18) (2021-10-03)
 
 ### [0.20.1-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.16...v0.20.1-rc.17) (2021-10-03)
