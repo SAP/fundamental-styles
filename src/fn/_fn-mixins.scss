@@ -25,8 +25,8 @@
   }
 }
 
-@mixin fn-transition {
-  $fn-transition: 250ms ease-in-out;
+@mixin fn-transition($property: all) {
+  $fn-transition: $property 250ms ease-in-out;
 
   -webkit-transition: $fn-transition;
   -moz-transition: $fn-transition;
