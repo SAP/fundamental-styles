@@ -18,6 +18,8 @@ $block: #{$fn-namespace}-select;
     cursor: pointer;
   }
 
+  position: relative;
+
   &__input {
     @include fn-set-paddings-x($fn-padding-medium, 2.5rem);
 
@@ -29,6 +31,8 @@ $block: #{$fn-namespace}-select;
   &__menu {
     @include fn-reset();
 
+    position: absolute;
+    z-index: 1000;
     width: 100%;
     list-style: none;
     padding: $fn-padding-xs;
