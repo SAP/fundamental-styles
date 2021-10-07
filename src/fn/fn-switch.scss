@@ -56,7 +56,7 @@ $fn-switch-slider-translateX: 0.75rem;
     }
 
     &:checked + .#{$block}__slider::before {
-      content: "\f304";
+      content: "\e05b";
       color: $fn-color-blue-5;
       transform: translateX($fn-switch-slider-translateX);
       -ms-transform: translateX($fn-switch-slider-translateX);
@@ -140,12 +140,12 @@ $fn-switch-slider-translateX: 0.75rem;
 
       width: 1.5rem;
       height: 1.25rem;
-      content: "\f44b";
+      content: "\e069";
       font-size: 0.75rem;
       position: absolute;
       color: $fn-color-grey-4;
       border-radius: 0.875rem;
-      font-family: "SAP-icons2";
+      font-family: "SAP-icons";
       bottom: $fn-switch-slider-offset;
       background-color: $fn-color-base-white;
       transition: $fn-switch-slider-transition;
