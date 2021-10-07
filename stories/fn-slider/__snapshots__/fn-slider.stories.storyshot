@@ -44,33 +44,41 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
         
             
         <div
+          class="fn-slider__handle-wrapper"
+        >
+          
+                
+          <div
+            aria-label="slider"
+            aria-valuemax="100"
+            aria-valuemin="1"
+            aria-valuenow="50"
+            class="fn-slider__handle"
+            role="slider"
+            style="left: 50%;"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
           class="fn-slider__track-range"
           style="width: 50%;"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        aria-label="slider"
-        aria-valuemax="100"
-        aria-valuemin="1"
-        aria-valuenow="50"
-        class="fn-slider__handle"
-        role="slider"
-        style="left: 50%;"
-        tabindex="0"
-      >
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
         />
         
         
@@ -90,7 +98,7 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
       style="margin-bottom: 2rem;"
     />
     
-    
+
     
     <div
       class="fn-slider"
@@ -105,6 +113,39 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
       <div
         class="fn-slider__track"
       >
+        
+            
+        <div
+          class="fn-slider__handle-wrapper"
+        >
+          
+                
+          <div
+            aria-label="slider"
+            aria-valuemax="100"
+            aria-valuemin="1"
+            aria-valuenow="0"
+            class="fn-slider__handle"
+            role="slider"
+            style="left: 0;"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
         
             
         <div
@@ -117,31 +158,6 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
       
         
       <div
-        aria-label="slider"
-        aria-valuemax="100"
-        aria-valuemin="1"
-        aria-valuenow="0"
-        class="fn-slider__handle"
-        role="slider"
-        style="left: 0;"
-        tabindex="0"
-      >
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
-        />
-        
-        
-      </div>
-      
-        
-      <div
         class="fn-slider__dot"
       />
       
@@ -172,33 +188,41 @@ exports[`Storyshots Experimental/Slider Horizontal Slider 1`] = `
         
             
         <div
+          class="fn-slider__handle-wrapper"
+        >
+          
+                
+          <div
+            aria-label="slider"
+            aria-valuemax="100"
+            aria-valuemin="1"
+            aria-valuenow="100"
+            class="fn-slider__handle"
+            role="slider"
+            style="left: 100%;"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
           class="fn-slider__track-range"
           style="width: 100%;"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        aria-label="slider"
-        aria-valuemax="100"
-        aria-valuemin="1"
-        aria-valuenow="100"
-        class="fn-slider__handle"
-        role="slider"
-        style="left: 100%;"
-        tabindex="0"
-      >
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
         />
         
         
@@ -263,33 +287,41 @@ exports[`Storyshots Experimental/Slider Vertical Slider 1`] = `
         
             
         <div
+          class="fn-slider__handle-wrapper"
+        >
+          
+                
+          <div
+            aria-label="slider"
+            aria-valuemax="100"
+            aria-valuemin="1"
+            aria-valuenow="50"
+            class="fn-slider__handle"
+            role="slider"
+            style="bottom: 50%;"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
           class="fn-slider__track-range"
-          style="width: 50%;"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        aria-label="slider"
-        aria-valuemax="100"
-        aria-valuemin="1"
-        aria-valuenow="50"
-        class="fn-slider__handle"
-        role="slider"
-        style="left: 50%;"
-        tabindex="0"
-      >
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
+          style="height: 50%;"
         />
         
         
@@ -326,33 +358,41 @@ exports[`Storyshots Experimental/Slider Vertical Slider 1`] = `
         
             
         <div
+          class="fn-slider__handle-wrapper"
+        >
+          
+                
+          <div
+            aria-label="slider"
+            aria-valuemax="100"
+            aria-valuemin="1"
+            aria-valuenow="0"
+            class="fn-slider__handle"
+            role="slider"
+            style="bottom: 0;"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
           class="fn-slider__track-range"
-          style="width: 0;"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        aria-label="slider"
-        aria-valuemax="100"
-        aria-valuemin="1"
-        aria-valuenow="0"
-        class="fn-slider__handle"
-        role="slider"
-        style="left: 0;"
-        tabindex="0"
-      >
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
+          style="height: 0;"
         />
         
         
@@ -390,33 +430,41 @@ exports[`Storyshots Experimental/Slider Vertical Slider 1`] = `
         
             
         <div
+          class="fn-slider__handle-wrapper"
+        >
+          
+                
+          <div
+            aria-label="slider"
+            aria-valuemax="100"
+            aria-valuemin="1"
+            aria-valuenow="100"
+            class="fn-slider__handle"
+            role="slider"
+            style="bottom: 100%;"
+            tabindex="0"
+          >
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                    
+            <span
+              class="sap-icon sap-icon--megamenu"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
           class="fn-slider__track-range"
-          style="width: 100%;"
-        />
-        
-        
-      </div>
-      
-        
-      <div
-        aria-label="slider"
-        aria-valuemax="100"
-        aria-valuemin="1"
-        aria-valuenow="100"
-        class="fn-slider__handle"
-        role="slider"
-        style="left: 100%;"
-        tabindex="0"
-      >
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--megamenu"
+          style="height: 100%;"
         />
         
         
