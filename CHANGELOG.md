@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.19...v0.20.1-rc.20) (2021-10-07)
+
+
+### Features
+
+* introduce FN components ([#2738](https://github.com/SAP/fundamental-styles/issues/2738)) ([2f55b44](https://github.com/SAP/fundamental-styles/commit/2f55b44f94552d2d498e316d368982624623be9e)), closes [#2776](https://github.com/SAP/fundamental-styles/issues/2776)
+
 ### [0.20.1-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.18...v0.20.1-rc.19) (2021-10-07)
 
 
