@@ -6,7 +6,7 @@ PACKAGE_THEMING_PREVIEW=theming-preview
 PACKAGE_FN=fn
 PACKAGE_PREFIX=@fundamental-styles
 DIST_THEMING_PREVIEW=dist-theming
-DIST_FN=dist-FN
+DIST_FN=dist-fn
 
 git config --global user.email "fundamental@sap.com"
 git config --global user.name "fundamental-bot"

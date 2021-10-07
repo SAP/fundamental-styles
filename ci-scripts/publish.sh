@@ -9,7 +9,7 @@ PACKAGE_THEMING_PREVIEW=theming-preview
 PACKAGE_PREFIX=@fundamental-styles
 DIST_THEMING_PREVIEW=dist-theming
 PACKAGE_FN=fn
-DIST_FN=dist-FN
+DIST_FN=dist-fn
 
 # delete temp branch
 git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" ":$TRAVIS_BRANCH" > /dev/null 2>&1;
