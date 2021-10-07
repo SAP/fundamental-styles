@@ -1,0 +1,270 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-button;
+
+@mixin fn-button-base($background, $color, $shadow, $outline: "") {
+  @if $outline != "" {
+    box-shadow: $shadow, $outline;
+  } @else {
+    box-shadow: $shadow;
+  }
+
+  background: $background;
+
+  [class*='sap-icon'] {
+    color: $color;
+  }
+
+  .#{$block}__text {
+    color: $color;
+  }
+}
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-transition();
+  @include fn-flex-center();
+  @include fn-button-base($fn-color-blue-5, $fn-color-base-white, $fn-shadow-blue-small);
+
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  height: $fn-element-height;
+  border-radius: $fn-border-radius-small;
+  padding: $fn-padding-xs $fn-padding-medium;
+
+  [class*='sap-icon'] {
+    font-size: 1rem;
+    font-weight: bold;
+    height: $fn-element-line-height;
+    line-height: $fn-element-line-height;
+
+    & + .#{$block}__text {
+      @include fn-set-margin-left($fn-margin-medium);
+    }
+  }
+
+  &__text {
+    @include fn-reset();
+    @include fn-ellipsis();
+
+    font-weight: bold;
+
+    & + [class*='sap-icon'] {
+      @include fn-set-margin-left($fn-margin-medium);
+    }
+  }
+
+  @include fn-hover() {
+    @include fn-button-base($fn-color-blue-6, $fn-color-base-white, $fn-shadow-blue-medium);
+  }
+
+  @include fn-pressed() {
+    @include fn-button-base($fn-color-blue-7 !important, $fn-color-base-white !important, $fn-shadow-blue-xs !important);
+  }
+
+  @include fn-active() {
+    @include fn-button-base($fn-color-blue-7 !important, $fn-color-base-white !important, $fn-shadow-blue-xs !important);
+  }
+
+  // @include fn-focus () {
+  //   @include fn-button-base($fn-color-blue-5, $fn-color-base-white, none);
+
+  //   outline: none;
+  //   border-color: $fn-color-base-white;
+  //   box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow, $fn-focus-outline-inner-shadow;
+  // }
+
+  @include fn-is-focus() {
+    @include fn-button-base($fn-color-blue-5, $fn-color-base-white, none);
+
+    outline: none;
+    border-color: $fn-color-base-white;
+    box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow, $fn-focus-outline-inner-shadow;
+  }
+
+  @include fn-not-focus-visible() {
+    @include fn-button-base($fn-color-blue-5, $fn-color-base-white, $fn-shadow-blue-small);
+
+    outline: none;
+  }
+
+  @include fn-focus-visible() {
+    @include fn-button-base($fn-color-blue-5, $fn-color-base-white, none);
+
+    outline: none;
+    border-color: $fn-color-base-white;
+    box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow, $fn-focus-outline-inner-shadow;
+  }
+
+  @include fn-disabled() {
+    @include fn-button-base($fn-color-grey-1, $fn-color-grey-3, none);
+
+    cursor: not-allowed;
+  }
+
+  &--icon-only {
+    width: 2rem;
+    padding: $fn-padding-xs;
+  }
+
+  &--secondary {
+    @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-small);
+
+    @include fn-hover() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-6, $fn-shadow-blue-medium);
+    }
+
+    @include fn-pressed() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-shadow-blue-xs !important);
+    }
+
+    @include fn-active() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-shadow-blue-xs !important);
+    }
+
+    @include fn-is-focus() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-small);
+    }
+
+    @include fn-focus-visible() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-disabled() {
+      @include fn-button-base($fn-color-grey-1, $fn-color-grey-3, none);
+    }
+  }
+
+  &--flat {
+    @include fn-button-base($fn-color-blue-1, $fn-color-blue-6, none);
+
+    @include fn-hover() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-6, $fn-shadow-blue-medium);
+    }
+
+    @include fn-pressed() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-shadow-blue-xs !important);
+    }
+
+    @include fn-active() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-shadow-blue-xs !important);
+    }
+
+    @include fn-is-focus() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-button-base($fn-color-blue-1, $fn-color-blue-6, none);
+    }
+
+    @include fn-focus-visible() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-disabled() {
+      @include fn-button-base($fn-color-grey-1, $fn-color-grey-3, none);
+    }
+  }
+
+  &--link {
+    @include fn-button-base(transparent, $fn-color-blue-5, none);
+
+    @include fn-hover() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-6, $fn-shadow-blue-medium);
+    }
+
+    @include fn-pressed() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-shadow-blue-xs !important);
+    }
+
+    @include fn-active() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-blue-7 !important, $fn-shadow-blue-xs !important);
+    }
+
+    @include fn-is-focus() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-button-base(transparent, $fn-color-blue-5, none);
+    }
+
+    @include fn-focus-visible() {
+      @include fn-button-base($fn-color-base-white, $fn-color-blue-5, $fn-shadow-blue-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-disabled() {
+      @include fn-button-base(transparent, $fn-color-grey-3, none);
+    }
+  }
+
+  &--outline {
+    @include fn-button-base($fn-color-grey-1, $fn-color-grey-6, none);
+
+    @include fn-hover() {
+      @include fn-button-base($fn-color-base-white, $fn-color-grey-6, $fn-shadow-grey-medium);
+    }
+
+    @include fn-pressed() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-grey-7 !important, $fn-shadow-grey-xs !important);
+    }
+
+    @include fn-active() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-grey-7 !important, $fn-shadow-grey-xs !important);
+    }
+
+    @include fn-is-focus() {
+      @include fn-button-base($fn-color-base-white, $fn-color-grey-5, $fn-shadow-grey-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-button-base($fn-color-grey-1, $fn-color-grey-6, none);
+    }
+
+    @include fn-focus-visible() {
+      @include fn-button-base($fn-color-base-white, $fn-color-grey-5, $fn-shadow-grey-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-disabled() {
+      @include fn-button-base($fn-color-grey-1, $fn-color-grey-3, none);
+    }
+  }
+
+  &--naked {
+    @include fn-button-base(transparent, $fn-color-grey-5, none);
+
+    @include fn-hover() {
+      @include fn-button-base($fn-color-base-white, $fn-color-grey-6, $fn-shadow-grey-medium);
+    }
+
+    @include fn-pressed() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-grey-7 !important, $fn-shadow-grey-xs !important);
+    }
+
+    @include fn-active() {
+      @include fn-button-base($fn-color-base-white !important, $fn-color-grey-7 !important, $fn-shadow-grey-xs !important);
+    }
+
+    @include fn-is-focus() {
+      @include fn-button-base($fn-color-base-white, $fn-color-grey-5, $fn-shadow-grey-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-button-base(transparent, $fn-color-grey-5, none);
+    }
+
+    @include fn-focus-visible() {
+      @include fn-button-base($fn-color-base-white, $fn-color-grey-5, $fn-shadow-grey-medium, $fn-focus-outline-shadow);
+    }
+
+    @include fn-disabled() {
+      @include fn-button-base(transparent, $fn-color-grey-3, none);
+    }
+  }
+}

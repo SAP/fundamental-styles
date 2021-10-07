@@ -1,0 +1,15 @@
+{
+    "name": "@fundamental-styles/fn",
+    "version": "VERSION_PLACEHOLDER",
+    "license": "Apache-2.0",
+    "homepage": "https://sap.github.io/fundamental-styles/",
+    "description": "Fundamental Library Styles Next",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/SAP/fundamental-styles"
+    },
+    "dependencies": {
+        "fundamental-styles": "VERSION_PLACEHOLDER"
+    }
+  }
+  

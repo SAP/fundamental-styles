@@ -8,6 +8,8 @@ git config --global user.name "fundamental-bot"
 PACKAGE_THEMING_PREVIEW=theming-preview
 PACKAGE_PREFIX=@fundamental-styles
 DIST_THEMING_PREVIEW=dist-theming
+PACKAGE_FN=fn
+DIST_FN=dist-FN
 
 # delete temp branch
 git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" ":$TRAVIS_BRANCH" > /dev/null 2>&1;
@@ -31,6 +33,13 @@ git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" main > /
 npm run build:prod
 
 npm publish
+
+# publish fn package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
+
+cd ${DIST_FN}
+npm publish
+cd ..
 
 # build dist-theming package
 npm run build:theming-preview
