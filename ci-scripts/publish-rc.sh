@@ -28,6 +28,7 @@ npm publish --tag prerelease
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
 
 cd ${DIST_FN}
+ls
 npm publish --tag prerelease
 cd ..
 
