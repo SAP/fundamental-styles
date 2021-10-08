@@ -27,6 +27,9 @@ npm publish --tag prerelease
 #publish dist-fn package
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
 
+cp -R config/fn/ dist-fn
+npm run sync-versions
+
 cd ${DIST_FN}
 ls
 npm publish --tag prerelease
