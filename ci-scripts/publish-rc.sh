@@ -27,8 +27,6 @@ npm publish --tag prerelease
 #publish dist-fn package
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
 
-npm run build:prod
-
 cd ${DIST_FN}
 ls
 npm publish --tag prerelease
