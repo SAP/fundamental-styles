@@ -17,4 +17,6 @@ cd ../dist-fn
 
 grep -rl 'VERSION_PLACEHOLDER' . | xargs  perl -X -p -i -e "s/VERSION_PLACEHOLDER/${NEW_VERSION}/g"
 
+ls
+
 cd ..
