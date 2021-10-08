@@ -10,6 +10,7 @@ exports[`Storyshots Experimental/Select Select 1`] = `
         background: white;
         padding: 1.5rem;
         border-radius: 0.25rem;
+        height: 600px;
     }
 
   </style>
@@ -120,8 +121,9 @@ exports[`Storyshots Experimental/Select Select 1`] = `
     
 
 
-    <br />
-    <br />
+    <div
+      style="margin-bottom: 15rem;"
+    />
     
 
     <div
