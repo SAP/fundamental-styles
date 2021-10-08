@@ -14,6 +14,7 @@ const localStyles = `
         background: white;
         padding: 1.5rem;
         border-radius: 0.25rem;
+        height: 600px;
     }
 </style>
 `;
@@ -38,7 +39,7 @@ export const defaultInput = () => `${localStyles}
     </ul>
 </div>
 
-<br><br>
+<div style="margin-bottom: 15rem;"></div>
 <div class="fn-select">
     <div class="fn-text-field">
         <label class="fn-text-field__label" for="field-2">Editable Selector</label>
