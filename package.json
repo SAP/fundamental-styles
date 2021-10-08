@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run style:remove && npm run build:default && npm run build:fn && npm run build:theming-preview && npm run sync-versions",
     "build:default": "npm run style:compile && npm run style:theme && npm run style:postCSS && npm run style:assets",
-    "build:fn": "npm run style-fn:compile && npm run style-fn:postCSS && cp -R config/fn/ dist-fn",
+    "build:fn": "npm run style-fn:compile && npm run style-fn:postCSS && cp -R config/fn dist-fn",
     "build:prod": "cross-env NODE_ENV=production npm run build",
     "build:theming-preview": "cp -R theming-preview dist-theming && cp dist/fundamental-styles.css dist-theming/fundamental-styles.css",
     "deploy": "gh-pages -d storybook-static/",
