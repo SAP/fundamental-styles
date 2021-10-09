@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.35...v0.20.1-rc.36) (2021-10-09)
+
+
+### Bug Fixes
+
+* (fn) include search ([#2807](https://github.com/SAP/fundamental-styles/issues/2807)) ([0a5e32a](https://github.com/SAP/fundamental-styles/commit/0a5e32a684b408f29df018a1592362ee508c903e))
+
 ### [0.20.1-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.34...v0.20.1-rc.35) (2021-10-09)
 
 ### [0.20.1-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.33...v0.20.1-rc.34) (2021-10-09)
