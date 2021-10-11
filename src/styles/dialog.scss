@@ -159,15 +159,14 @@ $button: #{$fd-namespace}-button;
     @include fd-reset();
 
     position: absolute;
-    right: 0;
-    bottom: -4px;
     font-size: 1rem;
     cursor: se-resize;
     overflow: hidden;
+    bottom: -0.25rem;
+
+    @include fd-set-position-right(0.05rem);
 
     @include fd-rtl() {
-      right: unset;
-      left: 0;
       cursor: sw-resize;
       transform: scaleX(-1);
     }
