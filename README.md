@@ -43,7 +43,7 @@ npm install fundamental-styles --save
 
 ### Distributed CSS Files
 
-The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file includes fallbacks for `sap_fiori_3`. 
+The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file includes fallbacks for `sap_fiori_3`. 
 
 ### Icons
 See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/components-icon--sizes) for a list of icon class names. See Project Configuration below for instructions to include SAP Fiori 3 icons in your project.
