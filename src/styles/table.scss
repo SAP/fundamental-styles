@@ -641,8 +641,7 @@ $block: #{$fd-namespace}-table;
 
         &--checkbox {
           .#{$block}__checkbox-label {
-            margin-top: -0.25rem;
-            position: absolute;
+            height: 1.5rem;
           }
         }
       }
