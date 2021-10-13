@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="fundamental-styles.css" rel="stylesheet">
+    <style type="text/css">
+        .fd-theming .fd-theming__flex{
+            display: flex;
+        }
+        .fd-theming .fd-theming__flex-column{
+            flex-direction: column;
+        }
+        .fd-theming .fd-theming__margin-right-1{
+            margin-right: 1rem;
+        }
+        .fd-theming .fd-theming__margin-bottom-03{
+            margin-bottom: .3rem;
+        }
+    </style>
+    <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Table</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex-column">
+                <table class="fd-table fd-table--compact" style="width: 50%;">
+                    <thead class="fd-table__header">
+                        <tr class="fd-table__row">
+                            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4HF611">
+                                <label class="fd-checkbox__label" for="Ai4HF611"></label>
+                            </th>
+                            <th class="fd-table__cell" scope="col">
+                                <div class="fd-table__inner">
+                                    Product Name
+                                    <span class="fd-table__icon sap-icon--filter"></span>
+                                </div>
+                            </th>
+                            <th class="fd-table__cell" scope="col">
+                                <div class="fd-table__inner">
+                                    Product ID
+                                    <span class="fd-table__icon sap-icon--sort-ascending"></span>
+                                </div>
+                            </th>
+                            <th class="fd-table__cell" scope="col">Quantity</th>
+                            <th class="fd-table__cell" scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="fd-table__body">
+                        <tr class="fd-table__row">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="1">
+                                <label class="fd-checkbox__label" for="1"></label>
+                            </td>
+                            <td class="fd-table__cell">Apple</td>
+                            <td class="fd-table__cell">98311</td>
+                            <td class="fd-table__cell">
+                                <div class="fd-step-input fd-step-input--compact">
+                                    <button aria-label="Step down" class="
+                                                fd-button
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'down');" tabindex="-1" type="button">
+                                        <i class="sap-icon--less"></i>
+                                    </button>
+                                    <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3" type="number" value="15" />
+                                    <button aria-label="Step up" class="
+                                                fd-button 
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'up');" tabindex="-1" type="button">
+                                        <i class="sap-icon--add"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="fd-table__cell">$1.30</td>
+                        </tr>
+                        <tr class="fd-table__row">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="2">
+                                <label class="fd-checkbox__label" for="2"></label>
+                            </td>
+                            <td class="fd-table__cell">Banana</td>
+                            <td class="fd-table__cell">3612</td>
+                            <td class="fd-table__cell">
+                                <div class="fd-step-input fd-step-input--compact">
+                                    <button aria-label="Step down" class="
+                                                fd-button
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'down');" tabindex="-1" type="button">
+                                        <i class="sap-icon--less"></i>
+                                    </button>
+                                    <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3" type="number" value="5" />
+                                    <button aria-label="Step up" class="
+                                                fd-button 
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'up');" tabindex="-1" type="button">
+                                        <i class="sap-icon--add"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="fd-table__cell">$0.50</td>
+                        </tr>
+                        <tr class="fd-table__row" aria-selected="true">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input checked aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="3">
+                                <label class="fd-checkbox__label" for="3"></label>
+                            </td>
+                            <td class="fd-table__cell">Pineapple</td>
+                            <td class="fd-table__cell">63125</td>
+                            <td class="fd-table__cell">
+                                <div class="fd-step-input fd-step-input--compact">
+                                    <button aria-label="Step down" class="
+                                                fd-button
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'down');" tabindex="-1" type="button">
+                                        <i class="sap-icon--less"></i>
+                                    </button>
+                                    <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3" type="number" value="50" />
+                                    <button aria-label="Step up" class="
+                                                fd-button 
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'up');" tabindex="-1" type="button">
+                                        <i class="sap-icon--add"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="fd-table__cell">$5.10</td>
+                        </tr>
+                        <tr class="fd-table__row">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="4">
+                                <label class="fd-checkbox__label" for="4"></label>
+                            </td>
+                            <td class="fd-table__cell">Orange</td>
+                            <td class="fd-table__cell">37012</td>
+                            <td class="fd-table__cell">
+                                <div class="fd-step-input fd-step-input--compact">
+                                    <button aria-label="Step down" class="
+                                                fd-button
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'down');" tabindex="-1" type="button">
+                                        <i class="sap-icon--less"></i>
+                                    </button>
+                                    <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3" type="number" value="100" />
+                                    <button aria-label="Step up" class="
+                                                fd-button 
+                                                fd-button--transparent
+                                                fd-step-input__button" onclick="stepInputValue('step-3', 'up');" tabindex="-1" type="button">
+                                        <i class="sap-icon--add"></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td class="fd-table__cell">$2.50</td>
+                        </tr>
+                        </tbody>
+                </table>
+    
+                <br>
+    
+                <table class="fd-table fd-table--compact fd-table--no-horizontal-borders fd-table--no-vertical-borders" style="width: 50%;">
+                    <thead class="fd-table__header">
+                        <tr class="fd-table__row">
+                            <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4HF612">
+                                <label class="fd-checkbox__label" for="Ai4HF612"></label>
+                            </th>
+                            <th class="fd-table__cell" scope="col">Product Name</th>
+                            <th class="fd-table__cell" scope="col">Product ID</th>
+                            <th class="fd-table__cell" scope="col">Quantity</th>
+                            <th class="fd-table__cell" scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="fd-table__body">
+                        <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable" aria-selected="true">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input checked aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="5">
+                                <label class="fd-checkbox__label" for="5"></label>
+                            </td>
+                            <td class="fd-table__cell">Apple</td>
+                            <td class="fd-table__cell">98311</td>
+                            <td class="fd-table__cell">200</td>
+                            <td class="fd-table__cell">$1.30</td>
+                        </tr>
+                        <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="6">
+                                <label class="fd-checkbox__label" for="6"></label>
+                            </td>
+                            <td class="fd-table__cell">Banana</td>
+                            <td class="fd-table__cell">3612</td>
+                            <td class="fd-table__cell">500</td>
+                            <td class="fd-table__cell">$0.50</td>
+                        </tr>
+                        <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="7">
+                                <label class="fd-checkbox__label" for="7"></label>
+                            </td>
+                            <td class="fd-table__cell">Pineapple</td>
+                            <td class="fd-table__cell">63125</td>
+                            <td class="fd-table__cell">80</td>
+                            <td class="fd-table__cell">$5.10</td>
+                        </tr>
+                        <tr class="fd-table__row fd-table__row--hoverable fd-table__row--activable">
+                            <td class="fd-table__cell fd-table__cell--checkbox">
+                                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="8">
+                                <label class="fd-checkbox__label" for="8"></label>
+                            </td>
+                            <td class="fd-table__cell">Orange</td>
+                            <td class="fd-table__cell">37012</td>
+                            <td class="fd-table__cell">200</td>
+                            <td class="fd-table__cell">$2.50</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>    
+</body>

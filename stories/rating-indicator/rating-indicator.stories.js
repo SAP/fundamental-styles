@@ -14,8 +14,7 @@ Use the rating indicator in forms, tables, or in a dialog box.
     }
 };
 
-export const Sizes = () => `
-    <div class="example-container">
+export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Default (Medium):</span>
         <div class="fd-rating-indicator fd-rating-indicator--hide-dynamic-text">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
@@ -184,19 +183,18 @@ Sizes.parameters = {
         storyDescription: `
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
-| Extra small    | 0.75rem    | <code>--xs</code>         |
-| Small          | 1rem       | <code>--sm</code>         |
+| Extra small    | 0.75rem    | \`--xs\`         |
+| Small          | 1rem       | \`--sm\`         |
 | Medium/Default | 1.375rem   | _n/a_                     |
-| Large          | 2rem       | <code>--lg</code>         |
-| Cozy           | 1.5rem     | <code>--cozy</code>       |
-| Compact        | 1rem       | <code>--compact</code>    |
-| Condensed      | 1rem       | <code>--condensed</code>  |
+| Large          | 2rem       | \`--lg\`         |
+| Cozy           | 1.5rem     | \`--cozy\`       |
+| Compact        | 1rem       | \`--compact\`    |
+| Condensed      | 1rem       | \`--condensed\`  |
 `
     }
 };
 
-export const HalfValues = () => `
-<div class="example-container">
+export const HalfValues = () => `<div class="example-container">
     <div class="fd-rating-indicator fd-rating-indicator--half-star">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
             <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-05" name="rating-half-sizes" value="0.5">  
@@ -244,8 +242,7 @@ modifier class together with the \`fd-rating-indicator\` class.
     }
 };
 
-export const CustomIcons = () => `
-<div class="example-container">
+export const CustomIcons = () => `<div class="example-container">
     <div class="fd-rating-indicator fd-rating-indicator--icon"
     style="--sapRating-indicator-icon-rated: url('./assets/icons/rated.png'); --sapRating-indicator-icon-unrated: url('./assets/icons/unrated.png')">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
@@ -280,8 +277,7 @@ Additionally, needs to set css variables \`--sapRating-indicator-icon-rated: url
     }
 };
 
-export const Disabled = () => `
-<div class="example-container">
+export const Disabled = () => `<div class="example-container">
     <div class="fd-rating-indicator" aria-disabled="true">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-1" name="rating-disabled" value="1" disabled>  
@@ -317,9 +313,8 @@ Additionally, one of the selectors listed below needs to be added to the \`fd-ra
     }
 };
 
-export const DisplayMode = () => `    
-    <div class="example-container">
-        <div class="fd-rating-indicator is-display-mode">
+export const DisplayMode = () => `<div class="example-container">
+        <div class="fd-rating-indicator fd-rating-indicator--display-mode">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-1" name="rating-display-mode" value="1" disabled>  
                 <label class="fd-rating-indicator__label" for="rating-display-mode-1"></label>
@@ -345,15 +340,46 @@ DisplayMode.storyName = 'Display mode';
 DisplayMode.parameters = {
     docs: {
         storyDescription: `
-Data can be presented as label-value field pairs without editable fields in display-only forms, 
-see <a href="form-grid.html">Form Grid</a> for more details. If you want to include a rating indicator in a display-only form, 
-add the \`.is-display-mode\` to the \`fd-rating-indicator\` element.
+Data can be presented as label-value field pairs without editable fields in display-only forms, see <a href="../?path=/docs/components-forms-form-grid--s-size">Form Grid</a> for more details.
+If you want to include a rating indicator in a display-only form, add the \`.fd-rating-indicator--display-mode\` to the \`fd-rating-indicator\` element.
 `
     }
 };
 
-export const DifferentValues = () => `
-    <div class="example-container">
+export const NonInteractive = () => `<div class="example-container">
+        <div class="fd-rating-indicator fd-rating-indicator--non-interactive">
+            <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-non-interactive-mode-1" name="rating-non-interactive-mode" value="1" disabled>  
+                <label class="fd-rating-indicator__label" for="rating-non-interactive-mode-1"></label>
+                
+                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-non-interactive-mode-2" name="rating-non-interactive-mode" value="2" disabled checked>
+                <label class="fd-rating-indicator__label" for="rating-non-interactive-mode-2"></label>
+                
+                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-non-interactive-mode-3" name="rating-non-interactive-mode" value="3" disabled>
+                <label class="fd-rating-indicator__label" for="rating-non-interactive-mode-3"></label>
+                
+                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-non-interactive-mode-4" name="rating-non-interactive-mode" value="4" disabled>
+                <label class="fd-rating-indicator__label" for="rating-non-interactive-mode-4"></label>
+                
+                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-non-interactive-mode-5" name="rating-non-interactive-mode" value="5" disabled>
+                <label class="fd-rating-indicator__label" for="rating-non-interactive-mode-5"></label>
+            </div>
+            <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+        </div>
+    </div>
+`;
+
+NonInteractive.storyName = 'Non-interactive';
+NonInteractive.parameters = {
+    docs: {
+        storyDescription: `
+If you want to include a rating indicator in a display-only form, 
+add the \`.fd-rating-indicator--non-interactive\` class to the \`fd-rating-indicator\` element.
+`
+    }
+};
+
+export const DifferentValues = () => `<div class="example-container">
         <div class="fd-rating-indicator">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-1" name="rating-max-value-5" value="1">  

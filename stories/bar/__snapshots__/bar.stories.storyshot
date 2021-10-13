@@ -220,37 +220,16 @@ exports[`Storyshots Components/Bar Default 1`] = `
       
         
       <div
-        class="fd-bar__element"
+        class="fd-bar__element fd-bar__element--title"
       >
         
             
-        <button
-          aria-label="button"
-          class="fd-button fd-button--transparent fd-button--compact"
-        >
-          
-                
-          <i
-            class="sap-icon--navigation-left-arrow"
-          />
-          
-            
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fd-bar__element"
-      >
-        
-            
-        <span
+        <h6
           aria-label="text"
+          class="fd-title fd-title--h6"
         >
           TEXT
-        </span>
+        </h6>
         
         
       </div>

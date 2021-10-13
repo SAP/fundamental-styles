@@ -553,3 +553,87 @@ selection.parameters = {
 `
     }
 };
+
+export const inactive = () => `<ul class="fd-list fd-list--navigation" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link fd-list__item--inactive">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 1 - Inactive</span>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 2</span>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 3</span>
+    </a>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link">
+      <span class="fd-list__title">List item 4</span>
+    </a>
+  </li>
+</ul>
+`;
+
+inactive.storyName = 'Inactive';
+
+inactive.parameters = {
+    docs: {
+        iframeHeight: 370,
+        storyDescription: `Some list item can be made inactive, to make it non-clickable.
+`
+    }
+};
+
+export const scroll = () => `<ul class="fd-list fd-list__infinite-scroll fddocs-list-height" role="list">
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 1</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 2</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 3</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 4</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 5</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 6</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 7</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 8</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 9</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 10</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 11</span>
+  </li>
+  <li role="listitem" tabindex="0" class="fd-list__item">
+    <span class="fd-list__title">List item 12</span>
+  </li>
+</ul>
+`;
+
+scroll.storyName = 'Infinite scroll';
+
+scroll.parameters = {
+    docs: {
+        iframeHeight: 380,
+        storyDescription: `If height for list is fixed and there are more list otem to show, then we should be able to scroll to next list items.
+`
+    }
+};

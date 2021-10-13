@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="fundamental-styles.css" rel="stylesheet">
+    <style type="text/css">
+        .fd-theming .fd-theming__flex{
+            display: flex;
+        }
+        .fd-theming .fd-theming__flex-column{
+            flex-direction: column;
+        }
+        .fd-theming .fd-theming__margin-right-1{
+            margin-right: 1rem;
+        }
+        .fd-theming .fd-theming__margin-bottom-03{
+            margin-bottom: .3rem;
+        }
+    </style>
+    <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Header and Footer</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-bar fd-bar--header" style="position: absolute; top: 50px; left: 0; width: 100%;">
+                    <div class="fd-bar__left">
+                        <div class="fd-bar__element">
+                            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
+                        </div>
+                        <div class="fd-bar__element">
+                            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
+                                <i class="sap-icon--home"></i>
+                            </button>
+                        </div>
+                        <div class="fd-bar__element">
+                            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
+                                <i class="sap-icon--account"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fd-bar__middle">
+                        <div class="fd-bar__element">
+                            <div class="fd-segmented-button" role="group" aria-label="Group label">
+                                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
+                                    <i class="sap-icon--email"></i>
+                                </button>
+                                <button aria-label="button" class="fd-button fd-button--compact">
+                                    <i class="sap-icon--iphone"></i>
+                                </button>
+                                <button aria-label="button" class="fd-button fd-button--compact">
+                                    <i class="sap-icon--notification-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-bar__right">
+                        <div class="fd-bar__element">
+                            <span
+                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                                style="background-image: url('/assets/images/avatars/1.svg')"
+                                role="img" aria-label="John Doe"></span>
+                            </div>
+                        </div>
+                        <div class="fd-bar__element">
+                            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
+                                <i class="sap-icon--grid"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p class="fd-text" style="position: absolute; top: 100px; left: 5vw; width: 90vw;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+                <div style="position: absolute; bottom: 0; left: 0; width: 100%;">
+                    <div class="fd-bar fd-bar--floating-footer">
+                        <div class="fd-bar__right">
+                            <div class="fd-bar__element">
+                                <h5 class="fd-title fd-title--h4">Title</h5>
+                            </div>
+                            <div class="fd-bar__element">
+                                <span>Text</span>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Default</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact" disabled>Default</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button class="fd-button fd-button--emphasized fd-button--compact">Emphasized</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button class="fd-button fd-button--emphasized fd-button--compact" disabled>Emphasized</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button class="fd-button fd-button--positive fd-button--compact">Accept</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button class="fd-button fd-button--positive fd-button--compact" disabled>Accept</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button class="fd-button fd-button--negative fd-button--compact">Reject</button>
+                            </div>
+                            <div class="fd-bar__element">
+                                <button class="fd-button fd-button--negative fd-button--compact" disabled>Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

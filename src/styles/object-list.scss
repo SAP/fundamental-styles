@@ -1,0 +1,212 @@
+@import "./new-settings";
+@import "./mixins";
+@import "./list";
+
+$block: #{$fd-namespace}-object-list;
+
+.#{$block} {
+
+  $fd-object-list-with-value-zero: 0;
+  $fd-object-list-with-padding-value-half: 0.5rem;
+  $fd-object-list-with-padding-value-one: 1rem;
+  $fd-object-list-with-value-half: 0.75rem;
+  $fd-object-list-align-left: left;
+  $fd-object-list-align-right: right;
+  $fd-object-list-font-color: var(--sapContent_LabelColor);
+
+  &__item {
+    @include padding-top-bottom(1rem);
+
+    height: 100%;
+
+    .#{$fd-namespace}-list__link {
+      @include fd-active() {
+
+        .#{$block}__intro,
+        .#{$block}__object-attribute,
+        .#{$fd-namespace}-avatar,
+        .#{$fd-namespace}-object-identifier__title,
+        .#{$fd-namespace}-object-marker__text,
+        .#{$fd-namespace}-object-marker__icon,
+        .#{$fd-namespace}-object-number__text,
+        .#{$fd-namespace}-object-number__unit,
+        .#{$fd-namespace}-object-status__text,
+        .#{$fd-namespace}-object-status__icon {
+          color: var(--sapList_Active_TextColor);
+        }
+      }
+    }
+  }
+
+  &__intro {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    width: 100%;
+    max-width: 100%;
+    color: $fd-object-list-font-color;
+    padding-bottom: $fd-object-list-with-value-half;
+  }
+
+  &__container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    height: 100%;
+    width: 100%;
+  }
+
+  &__header {
+    @include fd-reset();
+
+    display: flex;
+    vertical-align: top;
+
+    .#{$block}__header-left:not(:first-child) {
+      margin-left: $fd-object-list-with-value-half;
+
+      @include fd-rtl() {
+        margin-left: 0;
+        margin-right: $fd-object-list-with-value-half;
+      }
+    }
+  }
+
+  &__header-left {
+    @include fd-reset();
+
+    width: 60%;
+
+    @include fd-rtl() {
+      text-align: $fd-object-list-align-right;
+    }
+  }
+
+  &__header-right {
+    @include fd-reset();
+
+    width: 40%;
+    text-align: $fd-object-list-align-right;
+    padding-left: $fd-object-list-with-padding-value-one;
+
+    .#{$fd-namespace}-object-number {
+      margin-right: $fd-object-list-with-value-zero;
+    }
+
+    @include fd-rtl() {
+      text-align: $fd-object-list-align-left;
+      padding-right: $fd-object-list-with-padding-value-one;
+      padding-left: $fd-object-list-with-value-zero;
+
+      .#{$fd-namespace}-object-number {
+        margin-left: $fd-object-list-with-value-zero;
+      }
+    }
+  }
+
+  &__row {
+    @include fd-reset();
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    > *:only-child {
+      padding: $fd-object-list-with-value-zero;
+      width: 100%;
+    }
+  }
+
+  &__row-left {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    width: 50%;
+    text-align: $fd-object-list-align-left;
+    padding:
+      $fd-object-list-with-padding-value-half
+      $fd-object-list-with-padding-value-half
+      $fd-object-list-with-padding-value-half
+      $fd-object-list-with-value-zero;
+
+    @include fd-rtl() {
+      text-align: $fd-object-list-align-right;
+      padding:
+        $fd-object-list-with-padding-value-half
+        $fd-object-list-with-value-zero
+        $fd-object-list-with-padding-value-half
+        $fd-object-list-with-padding-value-half;
+    }
+  }
+
+  &__row-right {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    width: 50%;
+    text-align: $fd-object-list-align-right;
+    padding:
+      $fd-object-list-with-padding-value-half
+      $fd-object-list-with-value-zero
+      $fd-object-list-with-padding-value-half
+      $fd-object-list-with-padding-value-half;
+
+    .#{$fd-namespace}-object-status {
+      &__text,
+      &__icon {
+        @include fd-ellipsis();
+
+        line-height: 1.4;
+      }
+
+      margin-right: $fd-object-list-with-value-zero;
+    }
+
+    @include fd-rtl() {
+      text-align: $fd-object-list-align-left;
+      padding:
+        $fd-object-list-with-padding-value-half
+        $fd-object-list-with-padding-value-half
+        $fd-object-list-with-padding-value-half
+        $fd-object-list-with-value-zero;
+
+      .#{$fd-namespace}-object-status {
+        margin-left: $fd-object-list-with-value-zero;
+      }
+    }
+  }
+
+  &__content {
+    @include fd-reset();
+
+    margin-top: 0.25rem;
+  }
+
+  &__object-number {
+
+    .#{$fd-namespace}-object-number__text {
+      font-size: 1.375rem;
+      display: block;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__object-identifier {
+    .#{$fd-namespace}-object-identifier__title {
+      @include line-clamp($lines: 2);
+
+      line-height: 1.5;
+      font-size: var(--sapFontHeader4Size);
+    }
+  }
+
+  &__object-attribute {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    color: $fd-object-list-font-color;
+  }
+}

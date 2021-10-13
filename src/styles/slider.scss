@@ -1,0 +1,163 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-slider;
+$handle-desktop-dimensions: 1.25rem;
+$handle-hit-area-desktop-dimensions: 2rem;
+$handle-mobile-dimensions: 1.625rem;
+$handle-hit-area-mobile-dimensions: 2.75rem;
+$handle-outline-offset: 0.0625rem;
+$handle-outline-width: 0.0625rem;
+$slider-x-paddings: $handle-desktop-dimensions / 2;
+$slider-x-paddings--lg: $handle-mobile-dimensions / 2;
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-disabled() {
+    cursor: not-allowed;
+  }
+
+  min-width: 4rem;
+  max-width: 100%;
+  padding: 1rem calc(#{$slider-x-paddings} + #{$handle-outline-offset} + #{$handle-outline-width});
+  position: relative;
+
+  &--lg {
+    @include fd-set-paddings-x-equal(calc(#{$slider-x-paddings--lg} + #{$handle-outline-offset} + #{$handle-outline-width}));
+  }
+
+  &__inner {
+    @include fd-reset();
+
+    position: relative;
+  }
+
+  &__track {
+    @include fd-reset();
+
+    height: var(--fdSlider_Track_Height);
+    width: 100%;
+    background-color: var(--sapField_BorderColor);
+    border-radius: var(--fdSlider_Track_BorderRadius);
+    position: relative;
+    z-index: 1;
+  }
+
+  &__track-range {
+    @include fd-reset();
+
+    position: relative;
+    height: 100%;
+    border-radius: 0.25rem;
+    background-color: var(--fdSlider_Track_Active_Background);
+    border: 0.0625rem solid var(--fdSlider_Track_Active_Border);
+  }
+
+  &__tick-wrapper {
+    @include fd-reset();
+
+    position: absolute;
+    width: 100%;
+    top: calc((-1rem + var(--fdSlider_Track_Height)) / 2);
+  }
+
+  &__ticks {
+    @include fd-reset();
+
+    @include fd-flex() {
+      justify-content: space-between;
+    }
+  }
+
+  &__labels {
+    @include fd-reset();
+
+    @include fd-flex() {
+      justify-content: space-between;
+    }
+
+    position: relative;
+    height: 1rem;
+    top: 0.5rem;
+  }
+
+  &__tick {
+    @include fd-reset();
+
+    position: relative;
+    border-left: 0.0625rem solid var(--sapField_BorderColor);
+    height: var(--fdSlider_Tick_Height);
+
+    &--in-range {
+      border-color: var(--fdSlider_Track_Active_Border);
+    }
+  }
+
+  &__label {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      align-items: center;
+    }
+
+    width: 0;
+    position: relative;
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
+  }
+
+  &__handle {
+    @include fd-reset();
+
+    width: $handle-desktop-dimensions;
+    height: $handle-desktop-dimensions;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: var(--sapButton_Background);
+    border: 0.125rem solid var(--sapField_BorderColor);
+
+    &::before {
+      content: '';
+      width: $handle-hit-area-desktop-dimensions;
+      height: $handle-hit-area-desktop-dimensions;
+      position: absolute;
+      transform: translate(-25%, -25%);
+    }
+
+    &:focus {
+      outline: $handle-outline-width dotted var(--sapButton_Hover_BorderColor);
+      outline-offset: $handle-outline-offset;
+    }
+
+    @include fd-hover() {
+      background: var(--sapButton_Hover_Background);
+      border-color: var(--sapButton_Hover_BorderColor);
+    }
+
+    @include fd-active() {
+      background: var(--sapButton_Active_Background);
+      border-color: var(--sapButton_Active_BorderColor);
+    }
+
+    &--lg {
+      width: $handle-mobile-dimensions;
+      height: $handle-mobile-dimensions;
+
+      &::before {
+        width: $handle-hit-area-mobile-dimensions;
+        height: $handle-hit-area-mobile-dimensions;
+      }
+    }
+  }
+
+  @include fd-rtl() {
+    .#{$block}__handle::before {
+      transform: translate(25%, -25%);
+    }
+  }
+}

@@ -1,0 +1,402 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-card;
+$object-status: #{$fd-namespace}-object-status;
+$numeric-content: #{$fd-namespace}-numeric-content;
+
+$fd-card-header-border: 0.0625rem solid var(--sapTile_SeparatorColor) !default;
+$fd-card-header-border-radius: var(--sapElement_BorderCornerRadius) !default;
+$fd-card-avatar-text-spacing: 0.75rem !default;
+$fd-card-title-counter-spacing: 1rem !default;
+$fd-card-currency-spacing: 0.25rem !default;
+$fd-card-analytics-spacing: 1rem !default;
+$fd-card-analytics-container-spacing: 2rem !default;
+$fd-card-sections-horizontal-spacing: 2rem !default;
+$fd-card-sections-vertical-spacing: 1.75rem !default;
+$fd-card-content-avatar-text-spacing: 0.5rem !default;
+$fd-card-default-body-background-color: var(--sapTile_Background) !default;
+$fd-card-header-outline-offset: 0.0625rem !default;
+
+@mixin line-clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+@mixin fake-card-outline() {
+  @include fd-focus() {
+    outline: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      top: $fd-card-header-outline-offset;
+      left: $fd-card-header-outline-offset;
+      right: $fd-card-header-outline-offset;
+      bottom: $fd-card-header-outline-offset * 2;
+      z-index: 3;
+    }
+  }
+}
+
+.#{$block} {
+  @include fd-reset();
+  @include fd-flex(column);
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: $fd-card-default-body-background-color;
+  box-shadow: var(--fdCard_Box_Shadow);
+  border-radius: var(--sapElement_BorderCornerRadius);
+  border: 0.0625rem solid var(--sapTile_BorderColor);
+
+  &__header {
+    @include fd-reset();
+    @include fd-flex();
+    @include fake-card-outline();
+
+    padding: 1rem;
+    background: $fd-card-default-body-background-color;
+    border-bottom: $fd-card-header-border;
+    border-radius: $fd-card-header-border-radius $fd-card-header-border-radius 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+
+    @include fd-hover() {
+      background: var(--sapTile_Hover_Background);
+    }
+
+    @include fd-active() {
+      background: var(--sapTile_Active_Background);
+    }
+
+    .#{$block}__avatar {
+      margin-right: $fd-card-avatar-text-spacing;
+
+      @include fd-rtl() {
+        margin-right: 0;
+        margin-left: $fd-card-avatar-text-spacing;
+      }
+    }
+
+    &--non-interactive {
+      cursor: auto;
+
+      @include fd-hover() {
+        background: $fd-card-default-body-background-color;
+      }
+
+      @include fd-active() {
+        background: $fd-card-default-body-background-color;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+      border-top: $fd-card-header-border;
+      border-radius: 0 0 $fd-card-header-border-radius $fd-card-header-border-radius;
+
+      @include fd-focus() {
+        &::before {
+          top: $fd-card-header-outline-offset * 2;
+          bottom: $fd-card-header-outline-offset;
+        }
+      }
+    }
+  }
+
+  &__header-text {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      justify-content: center;
+    }
+
+    width: 100%;
+  }
+
+  &__title-area {
+    @include fd-reset();
+
+    @include fd-flex() {
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    width: 100%;
+  }
+
+  &__title {
+    @include fd-reset();
+    @include line-clamp(3);
+
+    font-family: var(--sapFontHeaderFamily);
+    font-size: var(--sapFontHeader5Size);
+    color: var(--sapTile_TitleTextColor);
+    word-wrap: break-word;
+    max-height: 4.2rem;
+    max-width: 100%;
+  }
+
+  &__subtitle-area {
+    @include fd-reset();
+
+    @include fd-flex() {
+      align-items: flex-end;
+    }
+
+    margin-top: 0.25rem;
+  }
+
+  &__subtitle {
+    @include fd-reset();
+    @include line-clamp();
+
+    color: var(--sapTile_TextColor);
+    word-wrap: break-word;
+    max-height: 2.5rem;
+    max-width: 100%;
+  }
+
+  &__counter.#{$object-status} {
+    font-size: var(--sapFontSmallSize);
+    margin-left: $fd-card-title-counter-spacing;
+    margin-top: 0.188rem;
+    margin-right: 0;
+    white-space: nowrap;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-title-counter-spacing;
+    }
+  }
+
+  &__currency {
+    @include fd-reset();
+    @include fd-flex();
+
+    color: var(--sapTile_TextColor);
+    text-overflow: ellipsis;
+    margin-left: $fd-card-currency-spacing;
+    white-space: nowrap;
+
+    &::before {
+      content: '|\00a0';
+    }
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-currency-spacing;
+    }
+  }
+
+  &__analytics-area {
+    @include fd-reset();
+    @include fd-flex();
+
+    margin-top: 0.5rem;
+    overflow: hidden;
+  }
+
+  &__analytics-container {
+    @include fd-reset();
+    @include fd-flex();
+
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 100%;
+    margin-left: $fd-card-analytics-container-spacing;
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-analytics-container-spacing;
+    }
+  }
+
+  &__analytics {
+    @include fd-reset();
+
+    @include fd-flex(column) {
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    padding-bottom: 0.25rem;
+    margin-left: $fd-card-analytics-spacing;
+    font-size: var(--sapFontSmallSize);
+    overflow: hidden;
+    max-width: calc(50% - 1rem);
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-analytics-spacing;
+    }
+  }
+
+  &__analytics-text {
+    @include fd-reset();
+
+    padding-bottom: 0.25rem;
+    color: var(--sapTile_TextColor);
+  }
+
+  &__analytics-content {
+    @include fd-reset();
+
+    color: var(--sapTile_TitleTextColor);
+
+    @include fd-rtl() {
+      direction: ltr;
+      text-align: right;
+    }
+  }
+
+  &__second-subtitle {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    font-size: var(--sapFontSmallSize);
+    color: var(--sapTile_TextColor);
+    margin-top: 0.25rem;
+    width: 100%;
+  }
+
+  &__numeric-content.#{$numeric-content} {
+    flex-shrink: 0;
+    width: auto;
+  }
+
+  &__content {
+    @include fd-reset();
+
+    flex: 1 0 auto;
+  }
+
+  &__content-container {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    &--horizontal {
+      flex-direction: row;
+
+      .#{$block}__content-section {
+        margin-bottom: 0;
+        margin-right: $fd-card-sections-horizontal-spacing;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        @include fd-rtl() {
+          margin-right: 0;
+          margin-left: $fd-card-sections-horizontal-spacing;
+
+          &:first-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__content-section {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    min-width: 12rem;
+    max-width: 24rem;
+    width: 100%;
+    margin-bottom: $fd-card-sections-vertical-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content-title-container {
+    @include fd-reset();
+
+    padding-bottom: 0.5rem;
+  }
+
+  &__content-group {
+    @include fd-reset();
+
+    @include fd-flex() {
+      align-items: center;
+    }
+
+    margin-top: 1rem;
+  }
+
+  &__content-group-text {
+    @include fd-reset();
+    @include fd-flex(column);
+
+    margin-left: $fd-card-content-avatar-text-spacing;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    & > * {
+      margin-bottom: 0.25rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include fd-rtl() {
+      margin-left: 0;
+      margin-right: $fd-card-content-avatar-text-spacing;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &--analytical {
+    .#{$block}__subtitle-area {
+      margin-top: 0.5rem;
+    }
+
+    .#{$block}__title {
+      @include line-clamp();
+
+      max-height: 2.8rem;
+    }
+  }
+
+  &--table {
+    border: hidden;
+
+    &.#{$block}--compact {
+      .#{$block}__content {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &--object {
+    .#{$block}__content {
+      padding: 1rem;
+    }
+  }
+
+  &__loader {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    min-height: 5rem;
+  }
+}

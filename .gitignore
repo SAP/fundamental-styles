@@ -6,6 +6,7 @@ Thumbs.db
 .idea
 .vscode
 .tmp
+yarn.lock
 *.log
 *.tgz
 __diff_output__
@@ -13,6 +14,8 @@ storybook-chromatic
 storybook-static
 stories/docs/
 dist
+dist-theming
+dist-fn
 node_modules
 stories/*/*.visual.js
 *.visual.js

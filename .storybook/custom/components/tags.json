@@ -38,5 +38,10 @@
       "name": "responsive",
       "title": "Responsive" ,
       "color": 8
+  },
+  "btp": {
+    "name": "BTP",
+    "title": "BTP Visual Design" ,
+    "color": 9
   }
 }

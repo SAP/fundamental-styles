@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Tabs Group 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+    }
+
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <ul
+      class="fn-tabs"
+      role="tablist"
+    >
+      
+        
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
+      >
+        One
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Two
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Three
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Four
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Five
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Six
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
+      >
+        Seven
+      </li>
+      
+    
+    </ul>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Tabs Individual 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+    }
+
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <ul
+      class="fn-tabs fn-tabs--individual"
+      role="tablist"
+    >
+      
+        
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
+      >
+        One
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Two
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Three
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Four
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Five
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Six
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
+      >
+        Seven
+      </li>
+      
+    
+    </ul>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Tabs Line 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+    }
+
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <ul
+      class="fn-tabs fn-tabs--line"
+      role="tablist"
+    >
+      
+        
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
+      >
+        One
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Two
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Three
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Four
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Five
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        Six
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
+      >
+        Seven
+      </li>
+      
+    
+    </ul>
+    
+
+  </div>
+  
+
+</section>
+`;

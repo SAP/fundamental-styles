@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="fundamental-styles.css" rel="stylesheet">
+    <style type="text/css">
+        .fd-theming .fd-theming__flex{
+            display: flex;
+        }
+        .fd-theming .fd-theming__flex-column{
+            flex-direction: column;
+        }
+        .fd-theming .fd-theming__margin-right-1{
+            margin-right: 1rem;
+        }
+        .fd-theming .fd-theming__margin-bottom-03{
+            margin-bottom: .3rem;
+        }
+    </style>
+    <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Icon</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <span class="sap-icon sap-icon--thumb-up" style="font-size:1.5rem"></span>
+                &nbsp; &nbsp;
+                <span class="sap-icon sap-icon--cart" style="font-size:1.5rem"></span>
+                &nbsp; &nbsp;
+                <span class="sap-icon sap-icon--bell" style="font-size:1.5rem"></span>
+                &nbsp; &nbsp;
+                <span class="sap-icon sap-icon--trend-up" style="font-size:1.5rem"></span>
+                &nbsp; &nbsp;
+                <span class="sap-icon sap-icon--add-folder" style="font-size:1.5rem"></span>
+                &nbsp; &nbsp;
+                <span class="sap-icon sap-icon--primary-key" style="font-size:1.5rem"></span>
+            </div>
+        </div>
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Button with Icon</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <button class="fd-button">
+                    <i class="sap-icon--thumb-up"></i>
+                    <span class="fd-button__text">Default</span>
+                </button>
+                &nbsp; &nbsp;
+                <button class="fd-button" disabled>
+                    <i class="sap-icon--thumb-up"></i>
+                    <span class="fd-button__text">Default</span>
+                </button>
+                &nbsp; &nbsp;
+                <button class="fd-button fd-button--emphasized">
+                    <i class="sap-icon--thumb-up"></i>
+                    <span class="fd-button__text">Emphasized</span>
+                </button>
+                &nbsp; &nbsp;
+                <button class="fd-button fd-button--emphasized" disabled>
+                    <i class="sap-icon--thumb-up"></i>
+                    <span class="fd-button__text">Emphasized</span>
+                </button>
+                &nbsp; &nbsp;
+                <button class="fd-button fd-button--transparent">
+                    <i class="sap-icon--slim-arrow-left"></i>
+                    <span class="fd-button__text">Back</span>
+                </button>
+                &nbsp; &nbsp;
+                <button class="fd-button fd-button--transparent" disabled>
+                    <i class="sap-icon--slim-arrow-left"></i>
+                    <span class="fd-button__text">Back</span>
+                </button>
+                &nbsp; &nbsp;
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                    <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
+                    <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+                    <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
+                </div>
+                &nbsp; &nbsp;
+                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                    <button aria-label="Survey" class="fd-button" disabled><i class="sap-icon--survey"></i></button>
+                    <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true" disabled><i class="sap-icon--pie-chart"></i></button>
+                    <button aria-label="Pool" class="fd-button" disabled><i class="sap-icon--pool"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Rating Indicator</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <div class="fd-rating-indicator fd-rating-indicator--hide-dynamic-text">
+                        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+                            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-1" name="rating" value="1">  
+                            <label class="fd-rating-indicator__label" for="rating-1"></label>
+                            
+                            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-2" name="rating" value="2" checked>
+                            <label class="fd-rating-indicator__label" for="rating-2"></label>
+                
+                            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-3" name="rating" value="3">
+                            <label class="fd-rating-indicator__label" for="rating-3"></label>            
+                
+                            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-4" name="rating" value="4">
+                            <label class="fd-rating-indicator__label" for="rating-4"></label>
+                
+                            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-5" name="rating" value="5">
+                            <label class="fd-rating-indicator__label" for="rating-5"></label>
+                        </div>
+                        <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+                    </div>
+                    <br>
+                    <div class="fd-rating-indicator" aria-disabled="true">
+                        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+                            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-1" name="rating-disabled" value="1" disabled>  
+                            <label class="fd-rating-indicator__label" for="rating-disabled-1"></label>
+                            
+                            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-2" name="rating-disabled" value="2" disabled checked>
+                            <label class="fd-rating-indicator__label" for="rating-disabled-2"></label>
+                            
+                            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-3" name="rating-disabled" value="3" disabled>
+                            <label class="fd-rating-indicator__label" for="rating-disabled-3"></label>
+                            
+                            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-4" name="rating-disabled" value="4" disabled>
+                            <label class="fd-rating-indicator__label" for="rating-disabled-4"></label>
+                            
+                            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-5" name="rating-disabled" value="5" disabled>
+                            <label class="fd-rating-indicator__label" for="rating-disabled-5"></label>
+                        </div>
+                        <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+                    </div>
+                    <br>
+                    <div class="fd-rating-indicator is-display-mode">
+                        <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
+                            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-1" name="rating-display-mode" value="1" disabled>  
+                            <label class="fd-rating-indicator__label" for="rating-display-mode-1"></label>
+                            
+                            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-2" name="rating-display-mode" value="2" disabled checked>
+                            <label class="fd-rating-indicator__label" for="rating-display-mode-2"></label>
+                            
+                            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-3" name="rating-display-mode" value="3" disabled>
+                            <label class="fd-rating-indicator__label" for="rating-display-mode-3"></label>
+                            
+                            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-4" name="rating-display-mode" value="4" disabled>
+                            <label class="fd-rating-indicator__label" for="rating-display-mode-4"></label>
+                            
+                            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-5" name="rating-display-mode" value="5" disabled>
+                            <label class="fd-rating-indicator__label" for="rating-display-mode-5"></label>
+                        </div>
+                        <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Object Marker</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
+                    <span class="fd-object-marker__text">Request</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
+                    <span class="fd-object-marker__text">Favourite</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
+                    <span class="fd-object-marker__text">Flag</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+                    <span class="fd-object-marker__text">Draft</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+                    <span class="fd-object-marker__text">Locked</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

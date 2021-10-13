@@ -659,6 +659,7 @@
         "translate",
         "clear-all",
         "command-line-interfaces",
-        "icon-sum"
+        "icon-sum",
+        "icon-qr-code"
     ]
 }

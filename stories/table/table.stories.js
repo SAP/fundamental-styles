@@ -36,7 +36,6 @@ To display large amounts of data in tabular form, several table components are p
 - The main use case involves selecting one of several hierarchical items with only a few details per item.
 
 In these cases, use the **Tree** instead.
-         
         `,
         docs: {
             iframeHeight: 500
@@ -69,8 +68,7 @@ In these cases, use the **Tree** instead.
     }
 };
 
-export const primary = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const primary = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Default Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -135,8 +133,7 @@ The primary table contains columns with headers, and rows with links. In the fir
     }
 };
 
-export const borderless = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const borderless = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table Without Borders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -184,8 +181,7 @@ Table can be displayed without borders that separate the columns, column headers
     }
 };
 
-export const borderlessbody = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const borderlessbody = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table Without Borders On Body</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -230,8 +226,52 @@ Table can be displayed without borders that separate the columns and rows only, 
     }
 };
 
-export const footer = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const noOuterBorder = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <h4 style="margin: 0;">Table Without Outer Borders</h4>
+    <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
+</div>
+<table class="fd-table fd-table--no-outer-border">
+    <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+            <th class="fd-table__cell" scope="col">Column Header</th>
+        </tr>
+    </thead>
+    <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+        <tr class="fd-table__row">
+            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
+            <td class="fd-table__cell">First Name</td>
+            <td class="fd-table__cell">Last Name</td>
+            <td class="fd-table__cell">01/26/17</td>
+        </tr>
+    </tbody>
+</table>
+`;
+
+noOuterBorder.storyName = 'No outer Border';
+noOuterBorder.parameters = {
+    docs: {
+        storyDescription: `
+Table can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the \`fd-table--no-outer-border\` modifier class to the main element.
+    `
+    }
+};
+
+export const footer = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Footer Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -283,8 +323,7 @@ Table can be displayed with a footer. To display a table footer, add the \`fd-ta
     }
 };
 
-export const compactFooter = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const compactFooter = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Footer Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -337,8 +376,7 @@ Table can be displayed with a footer in compact mode, which is ideal for larger 
     }
 };
 
-export const condensedFooter = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const condensedFooter = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Footer Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -391,8 +429,7 @@ Similar to the previous example, table can be displayed with a footer in condens
     }
 };
 
-export const interactive = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const interactive = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Interactive Table With Hoverable and Activable Cells and Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -467,8 +504,7 @@ Hover | \`--hoverable\`
     }
 };
 
-export const semanticRows = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const semanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table with Semantic Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -520,7 +556,7 @@ export const semanticRows = () => `
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-         <tr class="fd-table__row">
+        <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--warning"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
@@ -542,7 +578,7 @@ export const semanticRows = () => `
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-         <tr class="fd-table__row">
+        <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--error"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai734F6s">
@@ -564,7 +600,7 @@ export const semanticRows = () => `
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-         <tr class="fd-table__row">
+        <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--status-indicator fd-table__cell--status-indicator--information"></td>
             <td class="fd-table__cell fd-table__cell--checkbox">
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
@@ -604,13 +640,11 @@ Valid | \`--valid\`
 Warning | \`--warning\`
 Error | \`--error\`
 Information | \`--information\` 
-             
     `
     }
 };
 
-export const focusableRows = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const focusableRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Focusable Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -659,8 +693,7 @@ Table can display focusable rows by adding the \`fd-table__row--focusable\` modi
     }
 };
 
-export const focusableCells = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const focusableCells = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Focusable Cells</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -709,8 +742,7 @@ Table can display focusable cells by adding the \`fd-table__cell--focusable\` mo
     }
 };
 
-export const checkbox = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const checkbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Checkbox Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -718,8 +750,8 @@ export const checkbox = () => `
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai4ez611">
-                <label class="fd-checkbox__label" for="Ai4ez611"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4ez611">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez611"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -730,8 +762,8 @@ export const checkbox = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox" id="Ai4ez615">
-                <label class="fd-checkbox__label" for="Ai4ez615"></label>
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-table__checkbox" id="Ai4ez615">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez615"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -740,8 +772,8 @@ export const checkbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai4ez617">
-                <label class="fd-checkbox__label" for="Ai4ez617"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Ai4ez617">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez617"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -750,8 +782,8 @@ export const checkbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Gi4ez611">
-                <label class="fd-checkbox__label" for="Gi4ez611"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-table__checkbox" id="Gi4ez611">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Gi4ez611"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -766,13 +798,15 @@ checkbox.storyName = 'Checkbox';
 checkbox.parameters = {
     docs: {
         storyDescription: `
-Table can display checkboxes to allow the user to perform bulk actions. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
+Table can display checkboxes to allow the user to perform bulk actions.
+To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell.
+It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
+Also recommended to add class \`fd-table__checkbox\` to the checkbox (input) and \`fd-table__checkbox-label\` class to the checkbox label to have appropriate styles.
     `
     }
 };
 
-export const compactCheckbox = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const compactCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Checkbox Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -780,8 +814,8 @@ export const compactCheckbox = () => `
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4HF611">
-                <label class="fd-checkbox__label" for="Ai4HF611"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4HF611">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4HF611"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -792,8 +826,8 @@ export const compactCheckbox = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4HFHG1">
-                <label class="fd-checkbox__label" for="Ai4HFHG1"></label>
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4HFHG1">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4HFHG1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -802,8 +836,8 @@ export const compactCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JKHG1">
-                <label class="fd-checkbox__label" for="Ai4JKHG1"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JKHG1">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JKHG1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -812,8 +846,8 @@ export const compactCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH23G1">
-                <label class="fd-checkbox__label" for="Ai4JH23G1"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JH23G1">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JH23G1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -836,8 +870,7 @@ To display the table in compact mode, add the \`fd-table--compact\` modifier cla
     }
 };
 
-export const condensedCheckbox = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const condensedCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Checkbox Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -845,8 +878,8 @@ export const condensedCheckbox = () => `
     <thead class="fd-table__header">
         <tr class="fd-table__row">
             <th class="fd-table__cell fd-table__cell--checkbox" scope="col">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4JH2BF87">
-                <label class="fd-checkbox__label" for="Ai4JH2BF87"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JH2BF87">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JH2BF87"></label>
             </th>
             <th class="fd-table__cell" scope="col">Column Header</th>
             <th class="fd-table__cell" scope="col">Column Header</th>
@@ -857,8 +890,8 @@ export const condensedCheckbox = () => `
     <tbody class="fd-table__body">
         <tr class="fd-table__row" aria-selected="true">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact" id="Ai4JHf87">
-                <label class="fd-checkbox__label" for="Ai4JHf87"></label>
+                <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4JHf87">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JHf87"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -867,8 +900,8 @@ export const condensedCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4Jj67">
-                <label class="fd-checkbox__label" for="Ai4Jj67"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="Ai4Jj67">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4Jj67"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -877,8 +910,8 @@ export const condensedCheckbox = () => `
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
-                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact" id="AGjtJj67">
-                <label class="fd-checkbox__label" for="AGjtJj67"></label>
+                <input aria-label="checkbox" type="checkbox" class="fd-checkbox fd-checkbox--compact fd-table__checkbox" id="AGjtJj67">
+                <label class="fd-checkbox__label fd-table__checkbox-label" for="AGjtJj67"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -889,7 +922,7 @@ export const condensedCheckbox = () => `
 </table>
 `;
 
-condensedCheckbox.storyName = 'Checkbox (compact)';
+condensedCheckbox.storyName = 'Checkbox (condensed)';
 condensedCheckbox.parameters = {
     docs: {
         storyDescription: `
@@ -897,13 +930,11 @@ Table can be displayed with checkboxes in condensed mode. To display checkboxes 
 
 
 To display the table in condensed mode, add the \`fd-table--condensed\` modifier class to the table element.
-               
     `
     }
 };
 
-export const pagination = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const pagination = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table With Pagination at The Bottom</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -972,8 +1003,7 @@ Table can be displayed with bottom pagination by adding the \`fd-pagination\` cl
     }
 };
 
-export const advancedToolbar = () => `
-<div class="fd-dialog" id="filter-dialog-example">
+export const advancedToolbar = () => `<div class="fd-dialog" id="filter-dialog-example">
     <section class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-filter">
         <header class="fd-dialog__header fd-bar">
             <div class="fd-bar__left">
@@ -991,18 +1021,18 @@ export const advancedToolbar = () => `
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <ul class="fd-list fd-list--compact">
-              <li class="fd-list__item">
-                  <span class="fd-list__title">Name</span>
-              </li>
-              <li class="fd-list__item">
-                  <span class="fd-list__title">Status</span>
-              </li>
-              <li class="fd-list__item">
-                  <span class="fd-list__title">Price</span>
-              </li>
-              <li class="fd-list__item">
-                  <span class="fd-list__title">Country</span>
-              </li>
+                <li class="fd-list__item">
+                    <span class="fd-list__title">Name</span>
+                </li>
+                <li class="fd-list__item">
+                    <span class="fd-list__title">Status</span>
+                </li>
+                <li class="fd-list__item">
+                    <span class="fd-list__title">Price</span>
+                </li>
+                <li class="fd-list__item">
+                    <span class="fd-list__title">Country</span>
+                </li>
             </ul>
         </div>
         <footer class="fd-dialog__footer fd-bar fd-bar--footer">
@@ -1056,35 +1086,35 @@ export const advancedToolbar = () => `
             <ul aria-labelledby="dialog-settings" class="fd-list fd-list--multi-input fd-list--compact"
                 aria-multiselectable="true" role="listbox">
                 <li class="fd-list__item is-selected" role="option">
-                  <input aria-label="checkbox" type="checkbox" checked
-                    class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
-                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ezFD1">
-                      <span class="fd-list__title">All</span>
-                  </label>
+                    <input aria-label="checkbox" type="checkbox" checked
+                        class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
+                    <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ezFD1">
+                        <span class="fd-list__title">All</span>
+                    </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ez641">
-                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ez641">
-                      <span class="fd-list__title">Name</span>
-                  </label>
+                    <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ez641">
+                    <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ez641">
+                        <span class="fd-list__title">Name</span>
+                    </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4FGFG612">
-                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4FGFG612">
-                      <span class="fd-list__title">Status</span>
-                  </label>
+                    <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4FGFG612">
+                    <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4FGFG612">
+                        <span class="fd-list__title">Status</span>
+                    </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4e88614">
-                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4e88614">
-                      <span class="fd-list__title">Price</span>
-                  </label>
+                    <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4e88614">
+                    <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4e88614">
+                        <span class="fd-list__title">Price</span>
+                    </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
-                  <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4egh6024">
-                  <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4egh6024">
-                      <span class="fd-list__title">Country</span>
-                  </label>
+                    <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4egh6024">
+                    <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4egh6024">
+                        <span class="fd-list__title">Country</span>
+                    </label>
                 </li>
             </ul>
         </div>
@@ -1163,8 +1193,7 @@ The table component can be displayed with an advanced **Toolbar**, which allows 
     }
 };
 
-export const contextualMenu = () => `
-<div style="min-height: 400px">
+export const contextualMenu = () => `<div style="min-height: 400px">
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table with Contextual Menu</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -1288,7 +1317,7 @@ export const contextualMenu = () => `
     </tbody>
 </table>
 </div>
- `;
+`;
 
 contextualMenu.storyName = 'Contextual menu';
 contextualMenu.parameters = {
@@ -1299,8 +1328,7 @@ Table can display a contextual menu containing actions if there is not enough sp
     }
 };
 
-export const menuHeader = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const menuHeader = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Table with Popover in Headers</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1397,15 +1425,15 @@ Table can display menu options from a popover within headers. The example below 
     }
 };
 
-export const fixColumnHeader = () => `
-<style>
+export const fixColumnHeader = () => `<style>
         .fd-table--fixed {
-           padding-left: 200px;
+            padding-left: 200px;
         }
+
         [dir=rtl] .fd-table--fixed,
         .fd-table--fixed[dir=rtl] {
-           padding-left: 0;
-           padding-right: 200px;            
+            padding-left: 0;
+            padding-right: 200px;            
         }
         
         .fd-table--fixed .fd-table__cell {
@@ -1415,68 +1443,68 @@ export const fixColumnHeader = () => `
 </style>
 <div style="position: relative">
     <div class="fd-table--fixed">
-      <table class="fd-table">
-         <thead class="fd-table__header">
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed"  aria-haspopup="true" scope="col">
-                Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-            </tr>
-         </thead>
-         <tbody class="fd-table__body">
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-            </tr>
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-            </tr>
-            <tr class="fd-table__row">
-               <th class="fd-table__cell fd-table__cell--fixed" scope="row">Row header</th>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-               <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-            </tr>
-         </tbody>
-      </table>
+        <table class="fd-table">
+            <thead class="fd-table__header">
+                <tr class="fd-table__row">
+                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last"  aria-haspopup="true" scope="col">
+                        Header Column
+                    </th>
+                    <th class="fd-table__cell" scope="col">
+                        Header Column
+                    </th>
+                    <th class="fd-table__cell" scope="col">
+                        Header Column
+                    </th>
+                    <th class="fd-table__cell" scope="col">
+                        Header Column
+                    </th>
+                    <th class="fd-table__cell" scope="col">
+                        Header Column
+                    </th>
+                    <th class="fd-table__cell" scope="col">
+                        Header Column
+                    </th>
+                    <th class="fd-table__cell" scope="col">
+                        Header Column
+                    </th>
+                    <th class="fd-table__cell" scope="col">
+                        Header Column
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="fd-table__body">
+                <tr class="fd-table__row">
+                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                </tr>
+                <tr class="fd-table__row">
+                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                </tr>
+                <tr class="fd-table__row">
+                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 `;
@@ -1485,16 +1513,17 @@ fixColumnHeader.storyName = 'Fixed header';
 fixColumnHeader.parameters = {
     docs: {
         storyDescription: `
-Table can display columns with a fixed header. To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class. In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row. 
-        
-        
+Table can display columns with a fixed header.
+To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class.
+In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row. 
+Then apply \`.fd-table__cell--fixed-last\` to every last fixed cell in every column to have special border after the fixed columns.
+
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
     `
     }
 };
 
-export const navIcon = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const navIcon = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4>Responsive Table - row navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1550,7 +1579,6 @@ export const navIcon = () => `
         </tr>
     </tbody>
 </table>
-
 <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4>Table - icon button for navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -1626,8 +1654,7 @@ You have an option to add icon button \`sap-icon--navigation-right-arrow\` as a 
     }
 };
 
-export const navIndicators = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const navIndicators = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4>Table with Navigation Indication State</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1682,7 +1709,7 @@ export const navIndicators = () => `
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
-              <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
+                <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
         </tr>
     </tbody>
@@ -1699,8 +1726,7 @@ The table component can display navigation indicators. When multi-selection is u
     }
 };
 
-export const responsiveTable = () => `
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+export const responsiveTable = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
     <h4 style="margin: 0;">Responsive Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
@@ -1782,8 +1808,7 @@ The desktop responsive table should contain \`fd-table--responsive\` modifier.
     }
 };
 
-export const responsiveTablePopInMode = () => `
-<div style="max-width: 450px">
+export const responsiveTablePopInMode = () => `<div style="max-width: 450px">
     <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
         <h4 style="margin: 0;">Responsive Table - Pop-in mode</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
@@ -2228,38 +2253,35 @@ Information about the table such as a title, summary, and/or keyboard navigation
     }
 };
 
-export const noDataTable = () => `
-      <table class="fd-table">
-         <thead class="fd-table__header">
-            <tr class="fd-table__row">
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-               <th class="fd-table__cell" scope="col">
-                    Header Column
-               </th>
-            </tr>
-         </thead>
-         <tbody class="fd-table__body">
-            <tr class="fd-table__row">
-                <td colspan="100%" class="fd-table__cell fd-table__cell--no-data">No Items Found!</td>
-            </tr>
-         </tbody>
-      </table>
-    </div>
-</div>
+export const noDataTable = () => `<table class="fd-table">
+        <thead class="fd-table__header">
+        <tr class="fd-table__row">
+            <th class="fd-table__cell" scope="col">
+                Header Column
+            </th>
+            <th class="fd-table__cell" scope="col">
+                Header Column
+            </th>
+            <th class="fd-table__cell" scope="col">
+                Header Column
+            </th>
+            <th class="fd-table__cell" scope="col">
+                Header Column
+            </th>
+            <th class="fd-table__cell" scope="col">
+                Header Column
+            </th>
+            <th class="fd-table__cell" scope="col">
+                Header Column
+            </th>
+        </tr>
+        </thead>
+        <tbody class="fd-table__body">
+        <tr class="fd-table__row">
+            <td colspan="100%" class="fd-table__cell fd-table__cell--no-data">No Items available.</td>
+        </tr>
+        </tbody>
+    </table>
 `;
 
 noDataTable.storyName = 'Table without data';
@@ -2267,6 +2289,187 @@ noDataTable.parameters = {
     docs: {
         storyDescription: `
 Table can indicate that there is no data to display.
+    `
+    }
+};
+
+export const groupRowsInTable = () => `<table class="fd-table fd-table--group">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell" scope="col">
+                    Type
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    First Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Last Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Date
+                </th>
+            </tr>
+        </thead>
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Group row (collapsed), level 1</span>
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Group row (expanded), level 1</span>
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell" data-nesting-level="2">Regular row, level 2</td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell--group fd-table__cell--expand" colspan="4" data-nesting-level="2">
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Group row (expanded), level 2</span>
+                </td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell" data-nesting-level="3">Regular row, level 3</td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+        </tbody>
+    </table>
+`;
+
+groupRowsInTable.storyName = 'Table with group rows';
+groupRowsInTable.parameters = {
+    docs: {
+        storyDescription: `
+Table can have group rows, to get this do the following:
+
+- Add \`fd-table--group\` class to the table
+- Add \`colspan\` with the appropriate value to the group cell
+- Add \`fd-table__cell--group\` to the group cell
+- Add \`data-nesting-level\` attribute with the appropriate value (counting starts from 1) to the first cell of every row
+
+Group cell intended to have glyph which indicates expand/collapsed state, to get it to do the following:
+
+- Add \`fd-table__cell--expand\` class to the group cell
+- Add an element with class \`fd-table__expand\` inside the group cell
+- Use \`fd-table__expand--open\` class on the element to indicate expanded state
+
+Intended to have up to 20 levels deep, not more.
+
+Please consider that you need to implement expanding/collapsing functionality by yourself.
+    `
+    }
+};
+
+export const treeRowsTable = () => `<table class="fd-table fd-table--tree">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell" scope="col">
+                    Type
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    First Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Last Name
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Date
+                </th>
+            </tr>
+        </thead>
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="1">
+                    Regular row, level 1
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 1, collapsed</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="1">
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Tree row, level 1, expanded</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="2">
+                    Regular row, level 2
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="2">
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 2, collapsed</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="2">
+                    <span class="fd-table__expand fd-table__expand--open"></span><span class="fd-table__text--no-wrap">Tree row, level 2, expanded</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell" data-nesting-level="3">
+                    Regular row, level 3
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+            <tr class="fd-table__row">
+                <td class="fd-table__cell fd-table__cell fd-table__cell--expand" data-nesting-level="3">
+                    <span class="fd-table__expand fd-table__expand"></span><span class="fd-table__text--no-wrap">Tree row, level 3, collapsed</span>
+                </td>
+                <td class="fd-table__cell">First Name</td>
+                <td class="fd-table__cell">Last Name</td>
+                <td class="fd-table__cell">01/26/17</td>
+            </tr>
+        </tbody>
+    </table>
+`;
+
+treeRowsTable.storyName = 'Tree Table';
+treeRowsTable.parameters = {
+    docs: {
+        storyDescription: `
+Table can show tree-like rows, to get this do the following:
+
+- Add \`fd-table--tree\` class to the table
+- Add \`data-nesting-level\` attribute with the appropriate value (counting starts from 1) to the first cell of every row
+
+Tree table cells intended to have a glyph which indicates expanded/collapsed state, to get it to do the following:
+
+- Add \`fd-table__cell--tree-expand\` class to the first cell if the row has children
+- Add an element with class \`fd-table__expand\` inside the tree cell if the row has children
+- Use \`fd-table__expand--open\` class on the element to indicate expanded state
+
+Intended to have up to 20 levels deep, not more.
+
+Please consider that you need to implement expanding/collapsing functionality by yourself.
     `
     }
 };

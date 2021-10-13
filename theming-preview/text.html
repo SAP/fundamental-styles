@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="fundamental-styles.css" rel="stylesheet">
+    <style type="text/css">
+        .fd-theming .fd-theming__flex{
+            display: flex;
+        }
+        .fd-theming .fd-theming__flex-column{
+            flex-direction: column;
+        }
+        .fd-theming .fd-theming__margin-right-1{
+            margin-right: 1rem;
+        }
+        .fd-theming .fd-theming__margin-bottom-03{
+            margin-bottom: .3rem;
+        }
+    </style>
+    <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Label</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <label class="fd-form-label">Standard</label>
+                &nbsp
+                <label class="fd-form-label fd-form-label--required">Required</label>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Link</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex-column">
+                <a href="#" class="fd-link">Link</a>
+                &nbsp &nbsp
+                <a href="#" class="fd-link" aria-disabled="true">Disabled Link</a>
+                &nbsp &nbsp
+                <a href="#" class="fd-link fd-link--subtle">Subtle Link</a>
+                &nbsp &nbsp
+                <a href="#" class="fd-link fd-link--subtle" aria-disabled="true">Subtle Disabled Link</a>
+                &nbsp &nbsp
+                <a href="#" class="fd-link fd-link--emphasized">Emphasized Link</a>
+                &nbsp &nbsp
+                <a href="#" class="fd-link fd-link--emphasized" aria-disabled="true">Emphasized Disabled Link</a>
+                &nbsp &nbsp
+                <div style="background-color:#314a5e; padding:10px; width: 30%;">
+                    <a href="#" class="fd-link fd-link--inverted">Inverted link</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Breadcrumb</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <nav aria-label="products breadcrumbs">
+                    <ul class="fd-breadcrumb">
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">root</a></li>
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">first</a></li>
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">second</a></li>
+                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">fourth</a></li>
+                        <li aria-current="page" class="fd-breadcrumb__item">fifth</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Text</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <p class="fd-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Title</h4>
+            </div>
+            <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1" style="margin-left: 20px;">
+                <h1 class="fd-title fd-title--h1">Title H1</h1>
+                <h2 class="fd-title fd-title--h2">Title H2</h2>
+                <h3 class="fd-title fd-title--h3">Title H3</h3>
+                <h4 class="fd-title fd-title--h4">Title H4</h4>
+                <h5 class="fd-title fd-title--h5">Title H5</h5>
+                <h6 class="fd-title fd-title--h6">Title H6</h6>
+            </div>
+        </div><br>
+        
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Object Number</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <span class="fd-object-number fd-object-number--large fd-object-number--negative fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--large fd-object-number--critical fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--large fd-object-number--positive fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--large fd-object-number--informative fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--large fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <span class="fd-object-number fd-object-number--negative fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text fd-object-number__text--bold">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--critical fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text fd-object-number__text--bold">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--positive fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text fd-object-number__text--bold">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--informative fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text fd-object-number__text--bold">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text fd-object-number__text--bold">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column">
+                    <span class="fd-object-number fd-object-number--negative fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--critical fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--positive fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-object-number--informative fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                    <span class="fd-object-number fd-theming__margin-bottom-03">
+                        <span class="fd-object-number__text">-2,346.00</span><span class="fd-object-number__unit">EUR</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Object Status</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <span class="fd-object-status fd-theming__margin-bottom-03">
+                            <span class="fd-object-status__text">Neutral</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-1 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-6 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-7 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-8 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--negative fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+                        <span class="fd-object-status__text">Negative</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--critical fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+                        <span class="fd-object-status__text">Critical</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--positive fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+                        <span class="fd-object-status__text">Positive</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--informative fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
+                        <span class="fd-object-status__text">Info</span>
+                    </span>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <span class="fd-object-status fd-object-status--link fd-theming__margin-bottom-03">
+                            <span class="fd-object-status__text">Neutral (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-1 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-6 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-7 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--indication-8 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--negative fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+                        <span class="fd-object-status__text">Negative (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--critical fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+                        <span class="fd-object-status__text">Critical (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--positive fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+                        <span class="fd-object-status__text">Positive (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--informative fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
+                        <span class="fd-object-status__text">Info (clickable)</span>
+                    </span>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <span class="fd-object-status fd-object-status--inverted fd-theming__margin-bottom-03">
+                            <span class="fd-object-status__text">Neutral</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-7 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-8 fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+                        <span class="fd-object-status__text">Negative</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--critical fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+                        <span class="fd-object-status__text">Critical</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--positive fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+                        <span class="fd-object-status__text">Positive</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--informative fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
+                        <span class="fd-object-status__text">Info</span>
+                    </span>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-theming__margin-bottom-03">
+                            <span class="fd-object-status__text">Neutral (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-6 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-7 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-8 fd-object-status--link fd-theming__margin-bottom-03">
+                        <span class="fd-object-status__text">Indication (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+                        <span class="fd-object-status__text">Negative (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--critical fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+                        <span class="fd-object-status__text">Critical (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--positive fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+                        <span class="fd-object-status__text">Positive (clickable)</span>
+                    </span>
+                    <span class="fd-object-status fd-object-status--inverted fd-object-status--informative fd-object-status--link fd-theming__margin-bottom-03">
+                        <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
+                        <span class="fd-object-status__text">Info (clickable)</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Object Marker</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
+                    <span class="fd-object-marker__text">Request</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--favorite" role="presentation"></i>
+                    <span class="fd-object-marker__text">Favourite</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--flag" role="presentation"></i>
+                    <span class="fd-object-marker__text">Flag</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
+                    <span class="fd-object-marker__text">Draft</span>
+                </div>
+                <div class="fd-object-marker">
+                    <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
+                    <span class="fd-object-marker__text">Locked</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Info Label</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <span class="fd-info-label fd-info-label--accent-color-1">
+                    <span class="fd-info-label__text">INFOLABEL 1</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-2">
+                    <span class="fd-info-label__text">INFOLABEL 2</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-3">
+                    <span class="fd-info-label__text">INFOLABEL 3</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-4">
+                    <span class="fd-info-label__text">INFOLABEL 4</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-5">
+                    <span class="fd-info-label__text">INFOLABEL 5</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-6">
+                    <span class="fd-info-label__text">INFOLABEL 6</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-7">
+                    <span class="fd-info-label__text">INFOLABEL 7</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-8">
+                    <span class="fd-info-label__text">INFOLABEL 8</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-9">
+                    <span class="fd-info-label__text">INFOLABEL 9</span>
+                </span>
+                &nbsp
+                <span class="fd-info-label fd-info-label--accent-color-10">
+                    <span class="fd-info-label__text">INFOLABEL 10</span>
+                </span>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Message Strip</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible fd-theming__margin-bottom-03" 
+                    role="alert" id="SsoiW592">
+                        <p class="fd-message-strip__text">
+                            Message of type "Information" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
+                        </p>
+                        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW592" aria-label="Close">
+                            <i class="sap-icon--decline"></i>
+                        </button>
+                    </div>
+    
+                    <div class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible fd-theming__margin-bottom-03" 
+                        role="alert" id="SsoiW593">
+                        <p class="fd-message-strip__text">
+                            Message of type "Success" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
+                        </p>
+                        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW593" aria-label="Close">
+                            <i class="sap-icon--decline"></i>
+                        </button>
+                    </div>
+    
+                    <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible fd-theming__margin-bottom-03" 
+                        role="alert" id="SsoiW594">
+                        <p class="fd-message-strip__text">
+                            Message of type "Warning" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
+                        </p>
+                        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW594" aria-label="Close">
+                            <i class="sap-icon--decline"></i>
+                        </button>
+                    </div>
+    
+                    <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible fd-theming__margin-bottom-03" 
+                        role="alert" id="SsoiW595">
+                        <p class="fd-message-strip__text">
+                            Message of type "Error" with icon, close button and <a href="#" class="fd-link" tabindex="0">link</a>
+                        </p>
+                        <button class="fd-button fd-button--transparent fd-button--compact fd-message-strip__close" aria-controls="SsoiW595" aria-label="Close">
+                            <i class="sap-icon--decline"></i>
+                        </button>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>    
+</body>

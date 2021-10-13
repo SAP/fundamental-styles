@@ -142,7 +142,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -184,7 +184,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 Overflowing title content
@@ -209,7 +209,7 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -251,19 +251,19 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button "
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button "
                       >
                         Reject
                       </button>
@@ -1794,7 +1794,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -1836,7 +1836,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 Overflowing title content
@@ -1861,7 +1861,7 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -1903,19 +1903,19 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Reject
                       </button>
@@ -3316,7 +3316,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -3358,19 +3358,19 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Reject
                       </button>
@@ -3572,7 +3572,7 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                 
                                     
                 <div
-                  class="fd-popover fd-toolbar__overflow"
+                  class="fd-popover"
                 >
                   
                                         
@@ -3614,19 +3614,19 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                     
                                             
                     <div
-                      class="fd-toolbar__overflow__body"
+                      class="fd-toolbar__overflow"
                     >
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Accept
                       </button>
                       
                                                 
                       <button
-                        class="fd-button fd-button--transparent"
+                        class="fd-button fd-button--transparent fd-toolbar__overflow-button"
                       >
                         Reject
                       </button>

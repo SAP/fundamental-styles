@@ -1,0 +1,54 @@
+@import "./new-settings";
+@import "./mixins";
+
+/*!
+.fd-textarea
+*/
+$block: #{$fd-namespace}-textarea;
+
+.#{$block} {
+  @include fd-form-text();
+
+  min-width: 6rem;
+  width: 100%;
+  min-height: 2.25rem;
+  margin: 0.25rem 0;
+  padding: 0.5rem 0.625rem;
+  white-space: pre-wrap;
+  overflow: auto;
+  resize: none;
+  display: block;
+  cursor: text;
+
+  &[aria-expanded="false"] {
+    z-index: 0;
+  }
+
+  @include fd-expanded() {
+    z-index: 4;
+  }
+
+  &--compact {
+    min-height: 1.625rem;
+    margin: 0.1875rem 0;
+    padding: 0.1875rem 0.5rem;
+  }
+
+  &-counter {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    color: var(--sapContent_LabelColor);
+    padding: 0.125rem 0.125rem 0.5rem;
+    text-align: end;
+
+    @include fd-disabled() {
+      display: none;
+    }
+
+    &[readonly],
+    &.is-readonly {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "controls": {
+    "links": [
+      {
+        "text": "Controls",
+        "links": [
+          {
+            "text": "Button",
+            "ref": "button.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Calendar",
+            "ref": "calendar.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Form",
+            "ref": "form.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Input",
+            "ref": "input.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Page Header and Footer",
+            "ref": "header-footer.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Object Header",
+            "ref": "object-header.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Group and Panel",
+            "ref": "panel.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Indication Colors",
+            "ref": "indication-colors.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Semantic Colors",
+            "ref": "semantic-colors.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Shell, Tiles and Cards",
+            "ref": "shell-tile-card.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Toolbar",
+            "ref": "toolbar.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Table",
+            "ref": "table.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Text",
+            "ref": "text.html",
+            "library":["baseLib"]
+          },
+          {
+            "text": "Icon",
+            "ref": "icon.html",
+            "library":["baseLib"]
+          }
+        ]
+      }
+    ]
+  },
+
+  "themeSupport": [
+    {
+      "library":"baseLib",
+      "theme": [
+        "sap_fiori_3",
+        "sap_fiori_3_dark",
+        "sap_fiori_3_hcb",
+        "sap_fiori_3_hcw",
+        "sap_horizon"
+      ]
+    }
+  ]
+}

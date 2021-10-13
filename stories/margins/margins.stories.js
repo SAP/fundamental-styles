@@ -30,7 +30,7 @@ export const AllRoundMargin = () => `<div class="docs-column-flex docs-column-fl
 AllRoundMargin.storyName = 'All-Round Margin';
 AllRoundMargin.parameters = {
     docs: {
-        storyDescription: `All-round margin appears on all sides of the container they are applied to. Use <code>fd-margin</code>
+        storyDescription: `All-round margin appears on all sides of the container they are applied to. Use \`fd-margin\`
         class with any of the following modifiers:
         
 | Element | Modifier class | Margin applied |
@@ -71,7 +71,7 @@ SingleSidedMarginTop.parameters = {
 - bottom - displayed on the bottom of the element
 - begin - displayed on the left side and in right-to-left mode on the right side of the element. 
 
-Use <code>fd-margin-top</code> or <code>fd-margin-end</code> or <code>fd-margin-bottom</code> or <code>fd-margin-begin</code>
+Use \`fd-margin-top\` or \`fd-margin-end\` or \`fd-margin-bottom\` or \`fd-margin-begin\`
 class with any of the size modifiers as mentioned above.
 `
     }
@@ -163,7 +163,7 @@ DoubleSidedMarginTopBottom.parameters = {
 - top-bottom - displayed on top and bottom of the element
 - begin-end - displayed on left and right side of the element
 
-Use <code>fd-margin-top-bottom</code> or <code>fd-margin-begin-end</code> class with any of the size modifiers as mentioned above.`
+Use \`fd-margin-top-bottom\` or \`fd-margin-begin-end\` class with any of the size modifiers as mentioned above.`
     }
 };
 
@@ -211,12 +211,12 @@ export const NoMargin = () => `<div class="docs-column-flex docs-column-flex--al
 `;
 NoMargin.parameters = {
     docs: {
-        storyDescription: `No margin classes remove existing container margins. Use <code>fd-margin--none</code> or  <code>fd-margin-top--none</code>
-        or <code>fd-margin-end--none</code> or <code>fd-margin-bottom--none</code> or <code>fd-margin-begin--none</code>
+        storyDescription: `No margin classes remove existing container margins. Use \`fd-margin--none\` or  \`fd-margin-top--none\`
+        or \`fd-margin-end--none\` or \`fd-margin-bottom--none\` or \`fd-margin-begin--none\`
         modifier classes to remove existing margin. Place the no margin classes last to make sure they will be applied.
-        In the case of <code>fd-margin-begin--none</code> and <code>fd-margin-end--none</code>, <code>!important</code> is not applied since we want
+        In the case of \`fd-margin-begin--none\` and \`fd-margin-end--none\`, \`!important\` is not applied since we want
         the user-specified margins(if any) to be reapplied in the RTL mode. Please note that for RTL to work correctly,
-        you must add <code>[dir="rtl"]</code> style on the class where these modifiers will be applied.`
+        you must add \`[dir="rtl"]\` style on the class where these modifiers will be applied.`
     }
 };
 
@@ -240,7 +240,7 @@ export const ResponsiveMargin = () => `<div class="docs-column-flex docs-column-
 `;
 ResponsiveMargin.parameters = {
     docs: {
-        storyDescription: `The responsive margins class adds a margin around an element based on the width of the container the element is in. Use <code>fd-margin-responsive</code>
+        storyDescription: `The responsive margins class adds a margin around an element based on the width of the container the element is in. Use \`fd-margin-responsive\`
         class with any of the following modifiers:
 
 | Element | Modifier class |
@@ -281,6 +281,6 @@ DoubleSidedNegativeMarginBeginEnd.storyName = 'Double-Sided Negative Margin Begi
 DoubleSidedNegativeMarginBeginEnd.parameters = {
     docs: {
         storyDescription: `The negative margin class adds a double sided negative margin to an element. This is useful when aligning elements with built-in paddings.
-  Use <code>fd-margin-negative-begin-end</code> class with any of the size modifiers as mentioned above.`
+  Use \`fd-margin-negative-begin-end\` class with any of the size modifiers as mentioned above.`
     }
 };

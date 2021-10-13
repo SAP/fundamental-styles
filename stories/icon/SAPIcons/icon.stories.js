@@ -8,7 +8,7 @@ export default {
 ##Usage
 **Use the icon if:**
 
-- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram. 
+- You want to display an icon for illustrative purposes only, without interaction states, acting as a non-interactive icon/pictogram.
 - You intend to pair the icon with another method of communication i.e. with text or a tooltip.
 
 
@@ -35,6 +35,35 @@ sizes.parameters = {
     }
 };
 
+/**
+ * There are different semantic statuses that can be applied to the icon by adding a modifier class.
+ *
+ * | **Status**      | **Modifier class**               |
+ * | --------------: | :------------------------------- |
+ * | Default         | `sap-icon--color-default`        |
+ * | Contrast        | `sap-icon--color-contrast`       |
+ * | Non-interactive | `sap-icon--color-non-interactive`|
+ * | Tile            | `sap-icon--color-tile`           |
+ * | Marker          | `sap-icon--color-marker`         |
+ * | Critical        | `sap-icon--color-critical`       |
+ * | Negative        | `sap-icon--color-negative`       |
+ * | Neutral         | `sap-icon--color-neutral`        |
+ * | Positive        | `sap-icon--color-positive`       |
+ */
+
+export const colors = () => `
+<span class="sap-icon sap-icon--cart" style="font-size:5rem" tabindex="0"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-default" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-contrast sap-icon--background-contrast" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-non-interactive" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-tile" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-marker" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-critical" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-negative" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-neutral" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-positive" style="font-size:5rem"></span>
+`;
+
 export const availableIcons = () => {
     const div = document.createElement('div');
     div.className = 'fddocs-container';
@@ -52,7 +81,7 @@ export const availableIcons = () => {
 availableIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'There are several icons available. To display any one of these icons, add the <code>sap-icon--{icon-name}</code> modifier class identifying the icon style to the <code>sap-icon</code> class. For example, for a search icon, add <code>sap-icon sap-icon--search</code> with the desired font size value.'
+        storyDescription: 'There are several icons available. To display any one of these icons, add the `sap-icon--{icon-name}` modifier class identifying the icon style to the `sap-icon` class. For example, for a search icon, add `sap-icon sap-icon--search` with the desired font size value.'
     },
     skipRTLSnapshot: true
 };

@@ -84,11 +84,11 @@ iconAndText.parameters = {
  */
 
 export const clickableObjectMarker = () => `
-<a class="fd-object-marker fd-object-marker--link">
+<a href="#" class="fd-object-marker fd-object-marker--link">
     <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
     <span class="fd-object-marker__text">Locked</span>
 </a>
-<a class="fd-object-marker fd-object-marker--link">
+<a href="#" class="fd-object-marker fd-object-marker--link">
     <i class="fd-object-marker__icon sap-icon--user-edit" role="presentation"></i>
     <span class="fd-object-marker__text">Unsaved Changes</span>
 </a>

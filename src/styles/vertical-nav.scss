@@ -1,0 +1,30 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-vertical-nav;
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-flex(column) {
+    justify-content: space-between;
+  }
+
+  background-color: var(--sapList_AlternatingBackground);
+  width: 15rem;
+  text-shadow: var(--fdVerticalNav_Text_Shadow);
+  box-shadow: var(--sapContent_Shadow0);
+  height: 100%;
+
+  &__main-navigation {
+    @include fd-reset();
+  }
+
+  &--condensed {
+    width: 3.25rem;
+  }
+
+  .#{$block}__group-header {
+    background: var(--sapList_AlternatingBackground);
+  }
+}

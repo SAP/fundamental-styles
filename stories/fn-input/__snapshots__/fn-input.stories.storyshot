@@ -1,0 +1,871 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Text Field Default Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-text-field"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-1"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field is-disabled"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-2"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-2"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-3"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-3"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Text Field Error Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-text-field fn-text-field--error"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-10"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-10"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--error"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--error is-disabled"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-11"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-11"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--error"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--error is-readonly"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-12"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-12"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--error"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Text Field Information Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-text-field fn-text-field--information"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-4"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-4"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--information"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--information is-disabled"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-5"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-5"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--information"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--information is-readonly"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-6"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-6"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--information"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Text Field Success Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-text-field fn-text-field--success"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-13"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-13"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--sys-enter-2"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--success is-disabled"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-14"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-14"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--sys-enter-2"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--success is-readonly"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-15"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-15"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--sys-enter-2"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 0.25rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-text-field fn-text-field--warning"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-7"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-7"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--alert"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Disabled
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--warning is-disabled"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-8"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          disabled=""
+          id="field-8"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--alert"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <br />
+    <br />
+    
+    
+    <h4>
+      Readonly
+    </h4>
+    
+    
+    <div
+      class="fn-text-field fn-text-field--warning is-readonly"
+    >
+      
+        
+      <label
+        class="fn-text-field__label"
+        for="field-9"
+      >
+        Label
+      </label>
+      
+        
+      <div
+        class="fn-text-field__input-container"
+      >
+        
+            
+        <input
+          class="fn-text-field__input"
+          id="field-9"
+          placeholder="Placeholder"
+          readonly=""
+          type="text"
+          value="Typed"
+        />
+        
+            
+        <div
+          class="fn-text-field__input-border"
+        />
+        
+            
+        <span
+          class="sap-icon sap-icon--alert"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+
+  </div>
+  
+
+</section>
+`;

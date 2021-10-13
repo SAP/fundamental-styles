@@ -1,0 +1,2965 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Button Flat Button 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+        background: white;
+        padding: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Rest
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Disabled
+      </b>
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        No-Icon
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--flat"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Only
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--flat fn-button--icon-only"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--flat fn-button--icon-only is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--flat fn-button--icon-only is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--flat fn-button--icon-only is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--flat fn-button--icon-only disabled"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Right
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-right"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-right is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-right is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-right is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-right"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Left
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-left"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-left is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-left is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-left is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--flat fn-button--icon-left"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Button Link Button 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+        background: white;
+        padding: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Rest
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Disabled
+      </b>
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        No-Icon
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--link"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Only
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--link fn-button--icon-only"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--link fn-button--icon-only is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--link fn-button--icon-only is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--link fn-button--icon-only is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--link fn-button--icon-only disabled"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Right
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-right"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-right is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-right is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-right is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-right"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Left
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-left"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-left is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-left is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-left is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--link fn-button--icon-left"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Button Naked Button 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+        background: white;
+        padding: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Rest
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Disabled
+      </b>
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        No-Icon
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--naked"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Only
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--naked fn-button--icon-only"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--naked fn-button--icon-only is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--naked fn-button--icon-only is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--naked fn-button--icon-only is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--naked fn-button--icon-only disabled"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Right
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-right"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-right is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-right is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-right is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-right"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Left
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-left"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-left is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-left is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-left is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--naked fn-button--icon-left"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Button Outline Button 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+        background: white;
+        padding: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Rest
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Disabled
+      </b>
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        No-Icon
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--outline"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Only
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--outline fn-button--icon-only"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--outline fn-button--icon-only is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--outline fn-button--icon-only is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--outline fn-button--icon-only is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--outline fn-button--icon-only disabled"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Right
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-right"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-right is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-right is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-right is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-right"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Left
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-left"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-left is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-left is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-left is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--outline fn-button--icon-left"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Button Primary Button 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+        background: white;
+        padding: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Rest
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Disabled
+      </b>
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        No-Icon
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Only
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--icon-only"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--icon-only is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--icon-only is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--icon-only is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--icon-only"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Right
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--icon-right"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-right is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-right is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-right is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-right"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Left
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--icon-left"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-left is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-left is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-left is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--icon-left"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Button Secondary Button 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        column-gap: 0.5rem;
+        row-gap: 0.5rem;
+        background: white;
+        padding: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Rest
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Disabled
+      </b>
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        No-Icon
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--secondary"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Only
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--secondary fn-button--icon-only"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--secondary fn-button--icon-only is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--secondary fn-button--icon-only is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--secondary fn-button--icon-only is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      aria-label="Share"
+      class="fn-button fn-button--secondary fn-button--icon-only disabled"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Right
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-right"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-right is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-right is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-right is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-right"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Send
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Icon-Left
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-left"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-left is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-left is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-left is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--secondary fn-button--icon-left"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--share-2"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Share
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;

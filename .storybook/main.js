@@ -22,7 +22,6 @@ const includedStories = storiesToInclude();
 module.exports = {
   stories: ['../stories/docs/introduction.stories.mdx', `../stories/**/*.@${includedStories}.@(js|mdx)`],
   addons: [
-    "@storybook/addon-knobs/register",
     "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/preset-scss",
@@ -31,6 +30,7 @@ module.exports = {
     "@storybook/addon-viewport/register",
     '@storybook/addon-docs',
     '@storybook/addon-toolbars',
+    '@storybook/addon-controls'
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({

@@ -1,5 +1,5 @@
 language: node_js
-node_js: 12.18.4
+node_js: 14.16.1
 dist: trusty
 git:
   depth: false
@@ -7,6 +7,8 @@ script:
   - npm run build:prod
 jobs:
   include:
+  - stage: Lint commit message
+    script: commitlint-travis
   - stage: Lint, Test and Size
     script:
       - npm run test

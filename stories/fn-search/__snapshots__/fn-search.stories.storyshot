@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Search Search 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        background: white;
+        padding: 1.5rem;
+    }
+
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-search"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--search fn-search__icon"
+      />
+      
+        
+      <input
+        class="fn-search__input"
+        placeholder="Search everything"
+        type="search"
+      />
+      
+        
+      <button
+        aria-label="navigation right arrow button"
+        class="fn-search__button"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="clear button"
+        class="fn-search__clear"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;

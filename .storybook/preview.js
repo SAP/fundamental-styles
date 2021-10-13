@@ -1,7 +1,7 @@
 import fundamentals from './custom/fundamentals';
 import { withCssResources } from "@storybook/addon-cssresources";
 import { withThemeProvider } from './custom/themeProvider';
-import { DocsContainer } from '@storybook/addon-docs/blocks';
+import { DocsContainer } from '@storybook/addon-docs';
 import DocsPage from './custom/components/DocsPage';
 import { makeDecorator } from '@storybook/addons';
 import prettify from 'pretty';
@@ -77,6 +77,7 @@ export const globalTypes = {
         { value: 'sap_fiori_3_light_dark', title: 'Light Dark' },
         { value: 'sap_fiori_3_hcw', title: 'High Contrast White' },
         { value: 'sap_fiori_3_hcb', title: 'High Contrast Black' },
+        { value: 'sap_horizon', title: 'Horizon' },
       ],
     },
   },

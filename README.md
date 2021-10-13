@@ -28,7 +28,7 @@ The library is modular so you can use as little or as much as you need.
 The fully compiled, minified library is available via CDN for inclusion in your application.
 
 ```
-<link href="//unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css" rel="stylesheet">
+<link href="fundamental-styles.css" rel="stylesheet">
 ```
 
 ### NPM Package
@@ -43,7 +43,7 @@ npm install fundamental-styles --save
 
 ### Distributed CSS Files
 
-The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file includes fallbacks for `sap_fiori_3`. 
+The distrubtion folder contains several css files per component: a default file and one file per supported theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`). Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file includes fallbacks for `sap_fiori_3`. 
 
 ### Icons
 See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/components-icon--sizes) for a list of icon class names. See Project Configuration below for instructions to include SAP Fiori 3 icons in your project.
@@ -51,23 +51,24 @@ See the [Icon Component](https://fundamental-styles.netlify.app/?path=/docs/comp
 ### Project Configuration
 This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming library. After adding fonts and icons to your project, include the following in your css:
 
+
     @font-face {
         font-family: "72";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Regular-full.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Regular-full.woff")
             format("woff");
         font-weight: normal;
         font-style: normal;
     }
     @font-face {
         font-family: "72";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Bold-full.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Bold-full.woff")
             format("woff");
         font-weight: 700;
         font-style: normal;
     }
     @font-face {
         font-family: "72";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_base_fiori/fonts/72-Light-full.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Light-full.woff")
             format("woff");
         font-weight: 300;
         font-style: normal;
@@ -75,7 +76,7 @@ This project does not contain fonts and icons - they must be added to your proje
 
     @font-face {
         font-family: "SAP-icons";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons.woff")
             format("woff");
         font-weight: normal;
         font-style: normal;
@@ -83,14 +84,14 @@ This project does not contain fonts and icons - they must be added to your proje
 
     @font-face {
         font-family: 'BusinessSuiteInAppSymbols';
-        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/BusinessSuiteInAppSymbols.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'SAP-icons-TNT';
-        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/sap_fiori_3/fonts/SAP-icons-TNT.woff') format('woff');
+        src: url('~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons-TNT.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }

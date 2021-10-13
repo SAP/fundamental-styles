@@ -1231,93 +1231,93 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
                     
           </div>
           
-                
-        </header>
-        
-                
-        <div
-          class="fd-bar fd-bar--cozy fd-bar--subheader"
-        >
-          
-                        
+                    
           <div
-            class="fd-bar__middle"
+            class="fd-bar fd-bar--cozy fd-bar--subheader"
           >
             
-                            
+                        
             <div
-              class="fd-bar__element"
+              class="fd-bar__middle"
             >
               
-                                
+                            
               <div
-                class="fd-form-item"
+                class="fd-bar__element"
               >
                 
-                                    
+                                
                 <div
-                  aria-label="Group label"
-                  class="fd-segmented-button"
-                  role="group"
+                  class="fd-form-item"
                 >
                   
-                                        
-                  <button
-                    aria-label="email"
-                    aria-pressed="true"
-                    class="fd-button fd-button--compact"
-                  >
-                    
-                                            
-                    <i
-                      class="sap-icon--email"
-                    />
-                    
-                                        
-                  </button>
-                  
-                                        
-                  <button
-                    aria-label="phone"
-                    class="fd-button fd-button--compact"
-                  >
-                    
-                                            
-                    <i
-                      class="sap-icon--iphone"
-                    />
-                    
-                                        
-                  </button>
-                  
-                                        
-                  <button
-                    aria-label="notifications"
-                    class="fd-button fd-button--compact"
-                  >
-                    
-                                            
-                    <i
-                      class="sap-icon--notification-2"
-                    />
-                    
-                                        
-                  </button>
-                  
                                     
+                  <div
+                    aria-label="Group label"
+                    class="fd-segmented-button"
+                    role="group"
+                  >
+                    
+                                        
+                    <button
+                      aria-label="email"
+                      aria-pressed="true"
+                      class="fd-button fd-button--compact"
+                    >
+                      
+                                            
+                      <i
+                        class="sap-icon--email"
+                      />
+                      
+                                        
+                    </button>
+                    
+                                        
+                    <button
+                      aria-label="phone"
+                      class="fd-button fd-button--compact"
+                    >
+                      
+                                            
+                      <i
+                        class="sap-icon--iphone"
+                      />
+                      
+                                        
+                    </button>
+                    
+                                        
+                    <button
+                      aria-label="notifications"
+                      class="fd-button fd-button--compact"
+                    >
+                      
+                                            
+                      <i
+                        class="sap-icon--notification-2"
+                      />
+                      
+                                        
+                    </button>
+                    
+                                    
+                  </div>
+                  
+                                
                 </div>
                 
-                                
+                            
               </div>
               
-                            
+                        
             </div>
             
-                        
+                    
           </div>
           
-                    
-        </div>
+                
+        </header>
         
                 
         <div

@@ -1,0 +1,142 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-resizable-card-layout;
+
+.#{$block} {
+  $fd-resizable-card-min-width: 20rem;
+  $fd-resize-handle-width: 0.0625rem;
+  $fd-resize-icon-padding: 0.0625rem;
+  $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
+  $fd-layout-top-margin: 1rem;
+  $fd-layout-default-margin: 0.5rem;
+  $fd-resize-handle-index: 2;
+
+  // reduced by 0.5rem as card already have 0.5rem padding
+  $fd-resizable-card-padding-x: (
+    sm: 0.5rem,
+    md: 1rem,
+    lg: 1rem,
+    xl: 3rem
+  );
+
+  @include fd-reset();
+
+  padding-left: $fd-layout-default-margin;
+  padding-right: $fd-layout-default-margin;
+  margin-top: $fd-layout-top-margin;
+  position: relative;
+
+  &__item {
+    @include fd-reset();
+    @include fd-flex();
+
+    min-width: $fd-resizable-card-min-width;
+    position: relative;
+  }
+
+  &__card {
+    @include fd-reset();
+
+    order: 1;
+    flex: 1;
+    position: relative;
+    // subtract width taken by vertical handler and horizontal handler
+    height: calc(100% - #{$fd-resize-handle-width});
+  }
+
+  &__icon-wrapper {
+    @include fd-reset();
+
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: $fd-resize-handle-index;
+    padding: 0 $fd-resize-icon-padding $fd-resize-icon-padding 0;
+
+    @include fd-rtl() {
+      right: auto;
+      left: 0;
+      padding: 0 0 $fd-resize-icon-padding $fd-resize-icon-padding;
+    }
+  }
+
+  &__icon {
+    @include fd-reset();
+    @include fd-icon("resize-corner");
+
+    font-family: SAP-icons;
+    font-size: 1rem;
+    line-height: 1rem;
+    cursor: nwse-resize;
+    position: absolute;
+    bottom: 0;
+    right: $fd-resize-icon-padding;
+    color: var(--sapButton_IconColor);
+    z-index: $fd-resize-handle-index;
+
+    @include fd-rtl() {
+      transform: rotate(90deg);
+      position: relative;
+      cursor: nesw-resize;
+      padding: 0 $fd-resize-icon-padding $fd-resize-icon-padding 0.5rem;
+      // padding-left is needed after rotation
+    }
+
+    &--vertical {
+      cursor: ns-resize;
+
+      @include fd-rtl() {
+        cursor: ns-resize;
+      }
+    }
+
+    &--horizontal {
+      cursor: ew-resize;
+
+      @include fd-rtl() {
+        cursor: ew-resize;
+      }
+    }
+  }
+
+  &__resize {
+    &--vertical {
+      order: 2;
+      z-index: $fd-resize-handle-index;
+      // subtract resize-corner icon font-size/2
+      width: $fd-resize-handle-width;
+      cursor: ew-resize;
+    }
+
+    &--vertical::content {
+      content: "";
+      position: absolute;
+    }
+
+    &--horizontal {
+      // subtract resize-corner icon font-size/2
+      z-index: $fd-resize-handle-index;
+      width: calc(100% - 0.5rem);
+      height: $fd-resize-handle-width;
+      position: absolute;
+      bottom: 0;
+      cursor: ns-resize;
+    }
+  }
+
+  &__indication-border {
+    @include fd-reset();
+
+    border: $fd-border-on-drag;
+  }
+
+  @each $size-label, $size in $fd-resizable-card-padding-x {
+    &--#{$size-label} {
+      padding-left: map_get($fd-resizable-card-padding-x, $size-label);
+      padding-right: map_get($fd-resizable-card-padding-x, $size-label);
+    }
+  }
+}

@@ -1,0 +1,280 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-tool-header;
+$fd-tool-header-height: 2.75rem !default;
+
+$fd-tool-header-responsive-paddings: (
+  'sm':  ('padding': 0 1rem),
+  'md':  ('padding': 0 2rem),
+  'lg':  ('padding': 0 2rem),
+  'xl':  ('padding': 0 3rem)
+);
+
+$fd-tool-header-icon-semantic-values: (
+  'contrast':  (
+    'iconColor': var(--fdTool_Header_Icon_Color_Contrast),
+    'iconColorInverted': var(--fdTool_Header_Icon_Color_Inverted_Contrast),
+    'bgColorInverted': var(--fdTool_Header_Icon_Background_Color_Inverted_Contrast)
+  ),
+  'positive':  (
+    'iconColor': var(--fdTool_Header_Icon_Color_Positive),
+    'iconColorInverted': var(--fdTool_Header_Icon_Color_Inverted_Positive),
+    'bgColorInverted': var(--fdTool_Header_Icon_Background_Color_Inverted_Positive)
+  ),
+  'critical':  (
+    'iconColor': var(--fdTool_Header_Icon_Color_Critical),
+    'iconColorInverted': var(--fdTool_Header_Icon_Color_Inverted_Critical),
+    'bgColorInverted': var(--fdTool_Header_Icon_Background_Color_Inverted_Critical)
+  ),
+  'negative':  (
+    'iconColor': var(--fdTool_Header_Icon_Color_Negative),
+    'iconColorInverted': var(--fdTool_Header_Icon_Color_Inverted_Negative),
+    'bgColorInverted': var(--fdTool_Header_Icon_Background_Color_Inverted_Negative)
+  ),
+  'neutral':  (
+    'iconColor': var(--fdTool_Header_Icon_Color_Neutral),
+    'iconColorInverted': var(--fdTool_Header_Icon_Color_Inverted_Neutral),
+    'bgColorInverted': var(--fdTool_Header_Icon_Background_Color_Inverted_Neutral)
+  ),
+);
+
+$fd-tool-header-object-status-semantic-values: (
+  'positive':  (
+    'color': var(--fdTool_Header_Object_Status_Color_Positive),
+    'iconColorInverted': var(--fdTool_Header_Object_Status_Text_Color_Inverted),
+    'bgColorInverted': var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive)
+  ),
+  'critical':  (
+    'color': var(--fdTool_Header_Object_Status_Color_Critical),
+    'iconColorInverted': var(--fdTool_Header_Object_Status_Text_Color_Inverted),
+    'bgColorInverted': var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical)
+  ),
+  'negative':  (
+    'color': var(--fdTool_Header_Object_Status_Color_Negative),
+    'iconColorInverted': var(--fdTool_Header_Object_Status_Text_Color_Inverted),
+    'bgColorInverted': var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative)
+  ),
+  'neutral':  (
+    'color': var(--fdTool_Header_Object_Status_Color_Neutral),
+    'iconColorInverted': var(--fdTool_Header_Object_Status_Text_Color_Inverted),
+    'bgColorInverted': var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral)
+  ),
+  'informative':  (
+    'color': var(--fdTool_Header_Object_Status_Color_Informative),
+    'iconColorInverted': var(--fdTool_Header_Object_Status_Text_Color_Inverted),
+    'bgColorInverted': var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative)
+  )
+);
+
+.#{$block} {
+  @include fd-reset();
+
+  @include fd-flex-vertical-center() {
+    justify-content: space-between;
+  }
+
+  width: 100%;
+  padding: 0 0.5rem 0 1rem;
+  height: $fd-tool-header-height;
+  background: var(--sapShellColor);
+  box-shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
+
+  // ELEMENTS
+  &__group {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+  }
+
+  &__element {
+    @include fd-reset();
+
+    @include fd-flex-center() {
+      flex-shrink: 0;
+    }
+
+    max-width: 100%;
+    overflow: hidden;
+    height: $fd-tool-header-height;
+
+    &:not(:last-child) {
+      @include fd-set-margin-right(0.5rem);
+    }
+  }
+
+  &__logo {
+    @include fd-reset();
+
+    width: auto;
+    height: 1.625rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .#{$block}__text {
+    @include fd-ellipsis();
+
+    color: var(--sapShell_TextColor);
+  }
+
+  .#{$block}__label {
+    @include fd-ellipsis();
+    @include fd-reset-margins();
+
+    align-self: center;
+    color: var(--sapShell_TextColor);
+  }
+
+  .#{$block}__title {
+    @include fd-ellipsis();
+    @include fd-set-paddings-x-equal(0.625rem);
+
+    font-weight: bold;
+    color: var(--sapShell_TextColor);
+  }
+
+  .#{$block}__button {
+    color: var(--sapShell_InteractiveTextColor);
+
+    &:hover {
+      border-color: transparent;
+      color: var(--sapShell_InteractiveTextColor);
+      background: var(--sapShell_Hover_Background);
+    }
+
+    &:focus {
+      outline-color: var(--sapContent_ContrastFocusColor);
+
+      &::after {
+        border-color: var(--sapContent_ContrastFocusColor);
+      }
+    }
+
+    &:active {
+      color: var(--sapShell_Active_TextColor);
+      background: var(--sapShell_Active_Background);
+      outline-color: var(--sapContent_ContrastFocusColor);
+
+      &::after {
+        border-color: var(--sapContent_ContrastFocusColor);
+      }
+    }
+
+    &-text {
+      @include fd-media-sm() {
+        display: none;
+      }
+
+      color: var(--sapShell_TextColor);
+    }
+
+    .#{$block}__title {
+      @include fd-reset-paddings-x();
+
+      @include fd-media-sm() {
+        display: none;
+      }
+    }
+  }
+
+  .#{$block}__icon {
+    color: var(--fdTool_Header_Icon_Color_Default);
+    font-size: 1rem;
+    line-height: 1;
+
+    &--inverted {
+      color: var(--fdTool_Header_Icon_Color_Inverted_Default);
+      background: var(--fdTool_Header_Icon_Background_Color_Inverted_Default);
+    }
+
+    @each $set-name, $set-params in $fd-tool-header-icon-semantic-values {
+      &--#{$set-name} {
+        color: map_get($set-params, 'iconColor');
+
+        &.#{$block}__icon--inverted {
+          color: map_get($set-params, 'iconColorInverted');
+          background: map_get($set-params, 'bgColorInverted');
+        }
+      }
+    }
+  }
+
+  .#{$block}__object-status {
+    @each $set-name, $set-params in $fd-tool-header-object-status-semantic-values {
+      &--#{$set-name} {
+        color: map_get($set-params, 'color');
+        text-shadow: none;
+
+        [class*="sap-icon"] {
+          color: map_get($set-params, 'color');
+        }
+
+        &[class*="inverted"] {
+          text-shadow: none;
+          color: map_get($set-params, 'iconColorInverted');
+
+          [class*="icon"] {
+            color: map_get($set-params, 'iconColorInverted');
+          }
+
+          background: map_get($set-params, 'bgColorInverted');
+
+          @include fd-hover () {
+            color: map_get($set-params, 'iconColorInverted');
+
+            [class*="icon"] {
+              color: map_get($set-params, 'iconColorInverted');
+            }
+
+            background: map_get($set-params, 'bgColorInverted');
+          }
+
+          &[class*="link"] {
+            @include fd-hover () {
+              color: map_get($set-params, 'iconColorInverted');
+
+              [class*="icon"] {
+                color: map_get($set-params, 'iconColorInverted');
+              }
+
+              background: map_get($set-params, 'bgColorInverted');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .#{$block}__input-group {
+    background: var(--sapShellColor);
+    border: 0.0625rem solid var(--sapShell_InteractiveBorderColor);
+
+    input {
+      color: var(--sapShell_TextColor);
+
+      &::placeholder {
+        color: var(--sapShell_InteractiveTextColor);
+      }
+    }
+
+    @include fd-hover() {
+      background: var(--sapShell_Hover_Background);
+      border-color: var(--sapShell_InteractiveBorderColor);
+    }
+  }
+
+  // MODIFIER CLASSES
+  &--menu {
+    @include fd-set-paddings-x-equal(0.5rem);
+  }
+
+  @each $set-name, $set-padding in $fd-tool-header-responsive-paddings {
+    &--#{$set-name} {
+      padding: map_get($set-padding, 'padding');
+    }
+  }
+
+  &--responsive-paddings {
+    @include fd-apply-responsive-paddings();
+  }
+}

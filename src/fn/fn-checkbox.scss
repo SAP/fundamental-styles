@@ -1,0 +1,123 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-checkbox;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-transition();
+  @include fn-flex-vertical-center();
+
+  cursor: pointer;
+  padding: 0.5rem;
+  width: fit-content;
+  position: relative;
+  display: inline-flex;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  height: $fn-element-height;
+  border-radius: $fn-border-radius-small;
+
+  &--group {
+    width: 100%;
+  }
+
+  @include fn-hover() {
+    box-shadow: $fn-shadow-grey-medium;
+  }
+
+  @include fn-pressed() {
+    box-shadow: $fn-shadow-grey-xs !important;
+  }
+
+  @include fn-active() {
+    box-shadow: $fn-shadow-grey-xs !important;
+  }
+
+  @include fn-not-focus-visible() {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @include fn-focus-visible() {
+    outline: none;
+    box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow;
+  }
+
+  @include fn-disabled() {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    .#{$block}__input ~ .#{$block}__checkmark {
+      border-color: $fn-color-grey-3;
+    }
+
+    .#{$block}__input ~ .#{$block}__checkmark::after {
+      color: $fn-color-grey-3;
+    }
+
+    .#{$block}__input ~ .#{$block}__label {
+      color: $fn-color-grey-3;
+    }
+  }
+
+  &__input {
+    @include fn-reset();
+    @include fn-transition();
+
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+
+    &:checked ~ .#{$block}__checkmark {
+      border-color: $fn-color-blue-4;
+    }
+
+    &:checked ~ .#{$block}__checkmark::after {
+      opacity: 1;
+    }
+
+    @include fn-disabled() {
+      & ~ .#{$block}__checkmark {
+        border-color: $fn-color-grey-3;
+      }
+
+      & ~ .#{$block}__checkmark::after {
+        color: $fn-color-grey-3;
+      }
+
+      & ~ .#{$block}__label {
+        color: $fn-color-grey-3;
+      }
+    }
+  }
+
+  &__checkmark {
+    @include fn-reset();
+    @include fn-flex-center();
+    @include fn-transition();
+
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 0.25rem;
+    background-color: $fn-color-base-white;
+    border: 0.125rem solid $fn-color-grey-5;
+
+    &::after {
+      opacity: 0;
+      display: block;
+      content: "\e05b";
+      font-size: 0.75rem;
+      color: $fn-color-blue-4;
+      font-family: "SAP-icons";
+    }
+  }
+
+  &__label {
+    @include fn-reset();
+    @include fn-set-margin-left($fn-margin-medium);
+  }
+}

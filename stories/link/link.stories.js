@@ -34,7 +34,7 @@ export const primary = () => `
 <br><br>
 <a class="fd-link" aria-disabled="true">Disabled link</a>
 <br><br>
-<div style="background-color:#314a5e;padding:10px">
+<div  style="background-color:var(--sapShellColor);padding:10px">
     <a href="#" class="fd-link fd-link--inverted">Inverted link</a>
 </div>
 <br><br>
@@ -58,18 +58,17 @@ primary.parameters = {
 | Types | Modifier class | Use to... |
 | ----:| :--------------- | :--------------|
 | Default | *n/a* | Display a simple link. |
-| Subtle | <code>fd-link--subtle</code> | Distinguish between important (default) and less important (subtle) links in tables with large data lists. |
-| Disabled | <code>fd-link--disabled</code> | Display a link that a user cannot interactive with. |
-| Inverted | <code>fd-link--inverted</code> | Display a link in a **Shell Bar**. |
+| Subtle | \`fd-link--subtle\` | Distinguish between important (default) and less important (subtle) links in tables with large data lists. |
+| Disabled | \`fd-link--disabled\` | Display a link that a user cannot interactive with. |
+| Inverted | \`fd-link--inverted\` | Display a link in a **Shell Bar**. |
 
 ###Icons
 You can display a link with an icon placed on either side of the link text.
 
 | Icon style | Modifier class |
 | ----------: | :-------------| 
-| Left Arrow | <code>sap-icon--slim-arrow-left sap-icon--s</code> |
-| Right Arrow | <code>sap-icon--slim-arrow-right sap-icon--s</code> |
+| Left Arrow | \`sap-icon--slim-arrow-left sap-icon--s\` |
+| Right Arrow | \`sap-icon--slim-arrow-right sap-icon--s\` |
 `
-
     }
 };

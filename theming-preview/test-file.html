@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fundamental Library Theming Preview - Panel</title>
+  <meta name="description" content="Fundamental Library Theming Preview - Test Page">
+  <meta name="author" content="fundamental-team">
+  <meta property="og:title" content="Fundamental Library Theming Preview - Test Page">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Fundamental Library Theming Preview - Test Page">
+  <link rel="stylesheet" href="../dist/fundamental-styles.css">
+  <style type="text/css">
+    .fd-theming .fd-theming__flex{
+        display: flex;
+    }
+    .fd-theming .fd-theming__flex-column{
+        flex-direction: column;
+    }
+    .fd-theming .fd-theming__margin-right-1{
+        margin-right: 1rem;
+    }
+    .fd-theming .fd-theming__margin-bottom-03{
+        margin-bottom: .3rem;
+    }
+  </style>
+  <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Test Page</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex-column">
+                Test
+            </div>
+        </div>
+    </div>
+</body>

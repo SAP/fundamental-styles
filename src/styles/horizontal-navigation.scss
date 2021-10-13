@@ -1,0 +1,9 @@
+@import './mixins';
+
+$block: fd-horizontal-navigation;
+
+.#{$block} {
+  @include fd-reset();
+
+  box-shadow: var(--sapContent_HeaderShadow);
+}

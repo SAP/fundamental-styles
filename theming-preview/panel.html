@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="fundamental-styles.css" rel="stylesheet">
+    <style type="text/css">
+        .fd-theming .fd-theming__flex{
+            display: flex;
+        }
+        .fd-theming .fd-theming__flex-column{
+            flex-direction: column;
+        }
+        .fd-theming .fd-theming__margin-right-1{
+            margin-right: 1rem;
+        }
+        .fd-theming .fd-theming__margin-bottom-03{
+            margin-bottom: .3rem;
+        }
+    </style>
+    <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Panel</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex-column">
+                <div class="fd-panel fd-panel--fixed" style="width: 60%;">
+                    <div class="fd-panel__header">
+                        <h4 class="fd-panel__title">Panel Header</h4>
+                    </div>
+                    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+                        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+                        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+                        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+                        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+                        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+                        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+                    </div>
+                </div>
+                <br><br>
+    
+                <div class="fd-panel" style="width: 60%;">
+                    <div class="fd-panel__header">
+                        <div class="fd-panel__expand">
+                            <button class="fd-button fd-button--transparent fd-panel__button"
+                                aria-expanded="false" aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe321">
+                                <i class="sap-icon--slim-arrow-right"></i>
+                            </button>
+                        </div>
+                        <h4 class="fd-panel__title" id="asdASD123">Panel Header Collapsed</h4>
+                    </div>
+                    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="true" id="fghqwe321">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+                            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+                            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+                            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+                            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+                            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+                            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+                        </span>
+                    </div>
+                </div>
+                <div class="fd-panel" style="width: 60%;">
+                    <div class="fd-panel__header">
+                        <div class="fd-panel__expand">
+                            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="true"
+                                aria-haspopup="true" aria-label="expand/collapse panel" aria-controls="fghqwe3214213">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </button>
+                        </div>
+                        <h4 class="fd-panel__title" id="asdASD1234">Panel Header Expanded</h4>
+                    </div>
+                    <div role="region" aria-labelledby="jhqDKYdf" class="fd-panel__content" aria-hidden="false" id="fghqwe3214213">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+                            et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+                            Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+                            Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+                            Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+                            Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+                            Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+                        </span>
+                    </div>
+                </div>
+                <br><br>
+    
+                <div class="fd-panel fd-panel--fixed" style="width: 60%;">
+                    <div class="fd-panel__header">
+                        <h4 class="fd-panel__title">Panel with Header Toolbar</h4>
+                        <div class="fd-toolbar fd-toolbar--cozy">
+                            <button class="fd-button fd-button--transparent" aria-label="Settings">
+                                <i class="sap-icon--settings"></i>
+                            </button>
+                            <button class="fd-button fd-button--transparent" aria-label="Dropdown">
+                                <i class="sap-icon--drop-down-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div role="region" aria-labelledby="jhqDKYrt" class="fd-panel__content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus 
+                        et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit. 
+                        Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis. 
+                        Mauris egestas nunc nec diam mollis auctor. Vestibulum sed euismod elit, eget accumsan quam. Donec eleifend porttitor viverra. 
+                        Nunc porttitor dictum erat at molestie. Sed quis velit dolor. Vestibulum et turpis eget enim gravida gravida vitae at massa. 
+                        Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat. 
+                        Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

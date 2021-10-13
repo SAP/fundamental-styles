@@ -7924,7 +7924,87 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
     </div>
   </div>
   <br />
+  <div
+    class="fddocs-container--icon"
+  >
+    <span
+      class="sap-icon sap-icon--icon-qr-code"
+      style="font-size:3rem"
+    />
+    <div>
+      .sap-icon--icon-qr-code
+    </div>
+  </div>
+  <br />
 </div>
+`;
+
+exports[`Storyshots Components/Icons/SAP Icons Colors 1`] = `
+<section>
+  
+
+  <span
+    class="sap-icon sap-icon--cart"
+    style="font-size:5rem"
+    tabindex="0"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-default"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-contrast sap-icon--background-contrast"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-non-interactive"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-tile"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-marker"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-critical"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-negative"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-neutral"
+    style="font-size:5rem"
+  />
+  
+
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-positive"
+    style="font-size:5rem"
+  />
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Icons/SAP Icons Sizes 1`] = `

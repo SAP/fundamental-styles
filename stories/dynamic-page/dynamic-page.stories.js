@@ -17,49 +17,49 @@ export default {
 ## Structure
 **Dynamic page consists of the following elements:**
 
-- <code class="docs-code">fd-dynamic-page</code> Main element
-  - <code class="docs-code">fd-dynamic-page\\_\\_header</code>The header area containing title area, collapsible header with buttons, and tabs
-    - <code class="docs-code">fd-dynamic-page\\_\\_title-area</code> The area holding title, KPI content, subtitle, and actions
-        - <code class="docs-code">fd-dynamic-page\\_\\_main-container</code> Main container that holds **Breadcrumb**, title, title content and actions
-            - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-title-container</code> Container that holds breadcrumb, title, and title content
-                - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb-container</code> Breadcrumbs Container, can contain toolbar container
-                    - <code class="docs-code">fd-dynamic-page\\_\\_breadcrumb</code> Breadcrumbs
-                - <code class="docs-code">fd-dynamic-page\\_\\_title-container</code> The container for title, KPI content and actions and toolbar container
-                    - <code class="docs-code">fd-dynamic-page\\_\\_title</code> Dynamic page title
-                    - <code class="docs-code">fd-dynamic-page\\_\\_title-content</code> The KPI content
-                - <code class="docs-code">fd-dynamic-page\\_\\_toolbar-container</code> Container that holds toolbar-related actions
-                    - <code class="docs-code">fd-dynamic-page\\_\\_toolbar</code> Toolbar container for actions
-                    - <code class="docs-code">fd-dynamic-page\\_\\_toolbar--actions</code> Navigation actions
-        - <code class="docs-code">fd-dynamic-page\\_\\_subtitle</code> Dynamic page subtitle
-    - <code class="docs-code">fd-dynamic-page\\_\\_collapsible-header-container</code> Dynamic page header container
-        - <code class="docs-code">fd-dynamic-page\\_\\_collapsible-header</code> Dynamic page header
-        - <code class="docs-code">fd-dynamic-page\\_\\_collapsible-header-visibility-container</code> The container for pin/collapse buttons
-            - <code class="docs-code">fd-dynamic-page\\_\\_collapse-button</code> Collapse button
-            - <code class="docs-code">fd-dynamic-page\\_\\_pin-button</code> Pin button
-    - <code class="docs-code">fd-dynamic-page\\_\\_tabs</code> Tabs/Wizard can be optionally used as a header extension
-  - <code class="docs-code">fd-dynamic-page\\_\\_content</code> Dynamic page content
+- \`fd-dynamic-page\` Main element
+  - \`fd-dynamic-page__header\`The header area containing title area, collapsible header with buttons, and tabs
+    - \`fd-dynamic-page__title-area\` The area holding title, KPI content, subtitle, and actions
+        - \`fd-dynamic-page__main-container\` Main container that holds **Breadcrumb**, title, title content and actions
+            - \`fd-dynamic-page__breadcrumb-title-container\` Container that holds breadcrumb, title, and title content
+                - \`fd-dynamic-page__breadcrumb-container\` Breadcrumbs Container, can contain toolbar container
+                    - \`fd-dynamic-page__breadcrumb\` Breadcrumbs
+                - \`fd-dynamic-page__title-container\` The container for title, KPI content and actions and toolbar container
+                    - \`fd-dynamic-page__title\` Dynamic page title
+                    - \`fd-dynamic-page__title-content\` The KPI content
+                - \`fd-dynamic-page__toolbar-container\` Container that holds toolbar-related actions
+                    - \`fd-dynamic-page__toolbar\` Toolbar container for actions
+                    - \`fd-dynamic-page__toolbar--actions\` Navigation actions
+        - \`fd-dynamic-page__subtitle\` Dynamic page subtitle
+    - \`fd-dynamic-page__collapsible-header-container\` Dynamic page header container
+        - \`fd-dynamic-page__collapsible-header\` Dynamic page header
+        - \`fd-dynamic-page__collapsible-header-visibility-container\` The container for pin/collapse buttons
+            - \`fd-dynamic-page__collapse-button\` Collapse button
+            - \`fd-dynamic-page__pin-button\` Pin button
+    - \`fd-dynamic-page__tabs\` Tabs/Wizard can be optionally used as a header extension
+  - \`fd-dynamic-page__content\` Dynamic page content
 
-Note: Footer is optional and used for finalizing page actions. It is usually displayed in edit mode and uses a floating footer bar. You can use <code class="docs-code">fd-dynamic-page\\_\\_footer</code> to affix the footer to the bottom of the page.
+Note: Footer is optional and used for finalizing page actions. It is usually displayed in edit mode and uses a floating footer bar. You can use \`fd-dynamic-page__footer\` to affix the footer to the bottom of the page.
 
-To display a sticky header, use the <code class="docs-code">fd-dynamic-page\\_\\_header-fixed</code> class instead of the default header element. Note that this class only positions the header, and fixing the position of the content needs further implementation. Only use this class when your page content is long enough to scroll.
+To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class instead of the default header element. Note that this class only positions the header, and fixing the position of the content needs further implementation. Only use this class when your page content is long enough to scroll.
 
 ## Modifiers
 | **Description** | <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :-------------- |
-| No shadow for pin/collapse when tabs are used | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header-visibility-container--no-shadow</code>
-||<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_summarized-title-area--no-shadow</code>        |
-| Add shadow to tabs when tabs are used | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_tabs--add-shadow</code>       |
-| Collapsed styles when header is collapsed | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_title-area--collapsed</code>      |
-||<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_summarized-title--collapsed</code>        |
-| The pin/collapse button group | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header-visibility-container--button-group</code>      |
-| The left gradient of the button group | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header-visibility-container--left-gradient</code>      |
-| The right gradient of the button group | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page\\_\\_header-visibility-container--right-gradient</code>      |
+| No shadow for pin/collapse when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--no-shadow</code> 
+||<code style="margin-left: 2rem;">fd-dynamic-page__summarized-title-area--no-shadow</code>        |
+| Add shadow to tabs when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__tabs--add-shadow</code>       |
+| Collapsed styles when header is collapsed | <code style="margin-left: 2rem;">fd-dynamic-page__title-area--collapsed</code>      |
+||<code style="margin-left: 2rem;">fd-dynamic-page__summarized-title--collapsed</code>        |
+| The pin/collapse button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--button-group</code>      |
+| The left gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--left-gradient</code>      |
+| The right gradient of the button group | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--right-gradient</code>      |
 ## Background variants
 
 | **Description** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :---- | :-------------- |
-| List background for content area|<code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page--list-bg</code>        |
-| Transparent background for all areas | <code class="docs-code" style="margin-left: 2rem;">fd-dynamic-page--transparent-bg</code>
+| List background for content area| <code style="margin-left: 2rem;">fd-dynamic-page--list-bg</code>        |
+| Transparent background for all areas |  <code style="margin-left: 2rem;">fd-dynamic-page--transparent-bg</code> 
 
 `,
         tags: ['f3', 'theme', 'development'],
@@ -369,7 +369,7 @@ export const mobile = () =>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="asfmiasudashd"
@@ -388,14 +388,14 @@ export const mobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85915">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 Overflowing title content
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsma"
@@ -414,9 +414,9 @@ export const mobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85914">
-                                            <div class="fd-toolbar__overflow__body">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                            <div class="fd-toolbar__overflow">
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Reject</button>
                                             </div>
                                         </div>
                                     </div>
@@ -527,7 +527,7 @@ export const mobileCollapsed = () =>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Header Content" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--content fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="ko9as8dajskdj"
@@ -546,14 +546,14 @@ export const mobileCollapsed = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85913">
-                                            <div class="fd-toolbar__overflow__body">
+                                            <div class="fd-toolbar__overflow">
                                                 Overflowing title content
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="k9r0a8ioasjd"
@@ -572,9 +572,9 @@ export const mobileCollapsed = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85912">
-                                            <div class="fd-toolbar__overflow__body">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                            <div class="fd-toolbar__overflow">
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button ">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button ">Reject</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1319,7 +1319,7 @@ export const withFacetsMobile = () =>
                             <div class="fd-dynamic-page__title-container">
                                 <h1 class="fd-title fd-dynamic-page__title" title="Balenciaga Triple S Trainers"> Balenciaga Triple S Trainers </h1>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsmb"
@@ -1338,9 +1338,9 @@ export const withFacetsMobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85901">
-                                            <div class="fd-toolbar__overflow__body">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                            <div class="fd-toolbar__overflow">
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Reject</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1378,7 +1378,7 @@ export const withFacetsMobile = () =>
                                     <div class="fd-dynamic-page__subtitle"> Collapsed header in mobile </div>
                                 </div>
                                 <div role="toolbar" aria-label="Product actions" class="fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent">
-                                    <div class="fd-popover fd-toolbar__overflow">
+                                    <div class="fd-popover">
                                         <div class="fd-popover__control">
                                             <button
                                                 id="maisodusakdnsmag"
@@ -1397,9 +1397,9 @@ export const withFacetsMobile = () =>
                                         <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
                                             aria-hidden="false"
                                             id="wgxzK85911">
-                                            <div class="fd-toolbar__overflow__body">
-                                                <button class="fd-button fd-button--transparent">Accept</button>
-                                                <button class="fd-button fd-button--transparent">Reject</button>
+                                            <div class="fd-toolbar__overflow">
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Accept</button>
+                                                <button class="fd-button fd-button--transparent fd-toolbar__overflow-button">Reject</button>
                                             </div>
                                         </div>
                                     </div>

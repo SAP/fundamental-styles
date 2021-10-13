@@ -1,0 +1,65 @@
+@import './new-settings';
+@import './mixins';
+
+$block: #{$fd-namespace}-fixed-card-layout;
+
+.#{$block} {
+  $fd-border-on-drag: 0.125rem dashed var(--sapContent_DragAndDropActiveColor);
+  $fd-card-margin: 1rem;
+  $fd-card-min-width: 20rem;
+
+  @include fd-reset();
+
+  &__card-layout {
+    @include fd-reset();
+    @include fd-flex-horizontal-center();
+  }
+
+  &__card-layout-column {
+    @include fd-reset();
+
+    flex: 1;
+    margin-right: $fd-card-margin;
+
+    &:last-child {
+      margin-right: 0;
+
+      @include fd-rtl() {
+        margin-left: 0;
+      }
+    }
+
+    @include fd-rtl() {
+      margin-left: $fd-card-margin;
+      margin-right: 0;
+    }
+  }
+
+  &__card {
+    @include fd-reset();
+
+    margin-bottom: $fd-card-margin;
+    min-width: $fd-card-min-width;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-placeholder {
+    @include fd-reset();
+
+    opacity: 0.3;
+    border: $fd-border-on-drag;
+    cursor: grabbing;
+    margin-bottom: $fd-card-margin;
+  }
+
+  &__card-preview {
+    @include fd-reset();
+
+    box-sizing: border-box;
+    border-radius: var(--sapElement_BorderCornerRadius);
+    box-shadow: var(--sapContent_Shadow2);
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="fundamental-styles.css" rel="stylesheet">
+    <style type="text/css">
+        .fd-theming .fd-theming__flex{
+            display: flex;
+        }
+        .fd-theming .fd-theming__flex-column{
+            flex-direction: column;
+        }
+        .fd-theming .fd-theming__margin-right-1{
+            margin-right: 1rem;
+        }
+        .fd-theming .fd-theming__margin-bottom-03{
+            margin-bottom: .3rem;
+        }
+    </style>
+    <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Read-Only Form</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex" style="width: 1000px;">
+                <div class="fd-container fd-form-layout-grid-container">
+                    <div class="fd-row">
+                        <div class="fd-col fd-col--4">
+                        <label class="fd-form-label" for="input-13-compact">Name: </label>
+                        </div>
+                        <span>John Smith</span>
+                    </div>
+                    <div class="fd-row">
+                        <div class="fd-col fd-col--4">
+                        <label class="fd-form-label" for="input-13b-compact">Street/no: </label>
+                        </div>
+                        <span>123 Front St.</span>
+                    </div>
+                    <div class="fd-row" role="group" aria-labelledby="groupLabel-compact">
+                        <div class="fd-col fd-col--4">
+                        <label class="fd-form-label"  id="groupLabel-compact">ZIP Code/City: </label>
+                        </div>
+                        <span>12345 Montreal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Editable Form</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex" style="width: 1000px;">
+                <div class="fd-container fd-form-layout-grid-container">
+                    <div class="fd-row">
+                        <div class="fd-col fd-col--4">
+                        <label class="fd-form-label" for="input-13-compact">Name: </label>
+                        </div>
+                        <div class="fd-col fd-col--7">
+                            <input class="fd-input fd-input--compact" type="text" id="input-13-compact" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="fd-row">
+                        <div class="fd-col fd-col--4">
+                        <label class="fd-form-label" for="input-13b-compact">Street/no: </label>
+                        </div>
+                        <div class="fd-col fd-col--7">
+                            <div class="fd-row">
+                                <div class="fd-col fd-col--6">
+                                    <input class="fd-input fd-input--compact" type="text" id="input1-of-2-compact" aria-label="input1-of-2-compact" placeholder="Street Address">
+                                </div>
+                                <div class="fd-col fd-col--6">
+                                    <input class="fd-input fd-input--compact" type="text" id="input2-of-2-compact" aria-label="input2-of-2-compact" placeholder="Street Number">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-row" role="group" aria-labelledby="groupLabel-compact">
+                        <div class="fd-col fd-col--4">
+                        <label class="fd-form-label"  id="groupLabel-compact">ZIP Code/City: </label>
+                        </div>
+                        <div class="fd-col fd-col--7">
+                            <div class="fd-row">
+                                <div class="fd-col fd-col--6">
+                                    <input class="fd-input fd-input--compact" type="text" id="input1-of-2-compact" aria-label="input1-of-2-compact" placeholder="Zip Code">
+                                </div>
+                                <div class="fd-col fd-col--6">
+                                    <input class="fd-input fd-input--compact" type="text" id="input2-of-2-compact" aria-label="input2-of-2-compact" placeholder="City">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="fundamental-styles.css" rel="stylesheet">
+    <style type="text/css">
+        .fd-theming .fd-theming__flex{
+            display: flex;
+        }
+        .fd-theming .fd-theming__flex-column{
+            flex-direction: column;
+        }
+        .fd-theming .fd-theming__margin-right-1{
+            margin-right: 1rem;
+        }
+        .fd-theming .fd-theming__margin-bottom-03{
+            margin-bottom: .3rem;
+        }
+    </style>
+    <script src="theme-manager.js"></script>
+</head>
+<body>
+    <div class="fd-theming">
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Input</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
+                    <input class="fd-input" type="text" id="input-1" value="Enabled">
+                    <input class="fd-input is-information" type="text" id="input-04" value="Information">
+                    <input class="fd-input is-success" type="text" id="input-02" value="Success">
+                    <input class="fd-input is-warning" type="text" id="input-03" value="Warning">
+                    <input class="fd-input is-error" type="text" id="input-01" value="Error">
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" disabled>
+                    <input class="fd-input" type="text" id="input-1" value="Disabled" disabled>
+                    <input class="fd-input is-information" type="text" id="input-04" value="Information" disabled>
+                    <input class="fd-input is-success" type="text" id="input-02" value="Success" disabled>
+                    <input class="fd-input is-warning" type="text" id="input-03" value="Warning" disabled>
+                    <input class="fd-input is-error" type="text" id="input-01" value="Error" disabled>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column">
+                    <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text" readonly>
+                    <input class="fd-input" type="text" id="input-1" value="Read-Only" readonly>
+                    <input class="fd-input is-information" type="text" id="input-04" value="Information" readonly>
+                    <input class="fd-input is-success" type="text" id="input-02" value="Success" readonly>
+                    <input class="fd-input is-warning" type="text" id="input-03" value="Warning" readonly>
+                    <input class="fd-input is-error" type="text" id="input-01" value="Error" readonly>
+                </div>
+            </div>
+        </div>       
+        
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Multi-Input</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex" style="height: 300px; overflow-x: hidden;">
+                <!-- column 1 -->
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
+                            <div class="fd-input-group fd-input-group--control">
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
+                            <div class="fd-input-group fd-input-group--control is-information">
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
+                            <div class="fd-input-group fd-input-group--control is-success">
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
+                            <div class="fd-input-group fd-input-group--control is-warning">
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true">
+                            <div class="fd-input-group fd-input-group--control is-error">
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 2 -->
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
+                            <div class="fd-input-group fd-input-group--control"  aria-disabled="true" disabled>
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input disabled id="disabledMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
+                            <div class="fd-input-group fd-input-group--control is-information"  aria-disabled="true" disabled>
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input disabled id="disabledMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
+                            <div class="fd-input-group fd-input-group--control is-success"  aria-disabled="true" disabled>
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input disabled id="disabledMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
+                            <div class="fd-input-group fd-input-group--control is-warning"  aria-disabled="true" disabled>
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input disabled id="disabledMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column">
+                        <div class="fd-popover__control" aria-expanded="false" aria-haspopup="true" aria-disabled="true" disabled>
+                            <div class="fd-input-group fd-input-group--control is-error"  aria-disabled="true" disabled>
+                                <div class="fd-tokenizer">
+                                    <div class="fd-tokenizer__inner">
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly" role="button">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GcX34Xa"
+                                                    aria-expanded="false"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GcX34Xa');">
+                                                    <a class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input disabled id="disabledMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
+                                    </div>
+                                </div>
+                                <span class="fd-input-group__addon fd-input-group__addon--button">
+                                    <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--value-help"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 3 -->
+                <div class="fd-theming__flex fd-theming__flex-column">
+                    <div class="fd-popover" style="display:flex;flex-direction:column;padding-right:1rem">
+                        <div class="fd-popover__control" aria-controls="F4GcX3X8a" aria-expanded="false" aria-haspopup="false">
+                            <div class="fd-input-group fd-input-group--control" readonly aria-readonly="true">
+                                <div class="fd-tokenizer fd-tokenizer--readonly">
+                                    <div class="fd-tokenizer__inner">
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GF5348a"
+                                                    aria-expanded="true"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GF5348a');">
+                                                    <a tabindex="0" class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input id="readOnlyMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" readonly aria-readonly="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column;padding-right:1rem">
+                        <div class="fd-popover__control" aria-controls="F4GcX3X8a" aria-expanded="false" aria-haspopup="false">
+                            <div class="fd-input-group fd-input-group--control is-information" readonly aria-readonly="true">
+                                <div class="fd-tokenizer fd-tokenizer--readonly">
+                                    <div class="fd-tokenizer__inner">
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GF5348a"
+                                                    aria-expanded="true"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GF5348a');">
+                                                    <a tabindex="0" class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input id="readOnlyMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" readonly aria-readonly="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column;padding-right:1rem">
+                        <div class="fd-popover__control" aria-controls="F4GcX3X8a" aria-expanded="false" aria-haspopup="false">
+                            <div class="fd-input-group fd-input-group--control is-success" readonly aria-readonly="true">
+                                <div class="fd-tokenizer fd-tokenizer--readonly">
+                                    <div class="fd-tokenizer__inner">
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GF5348a"
+                                                    aria-expanded="true"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GF5348a');">
+                                                    <a tabindex="0" class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input id="readOnlyMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" readonly aria-readonly="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column;padding-right:1rem">
+                        <div class="fd-popover__control" aria-controls="F4GcX3X8a" aria-expanded="false" aria-haspopup="false">
+                            <div class="fd-input-group fd-input-group--control is-warning" readonly aria-readonly="true">
+                                <div class="fd-tokenizer fd-tokenizer--readonly">
+                                    <div class="fd-tokenizer__inner">
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GF5348a"
+                                                    aria-expanded="true"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GF5348a');">
+                                                    <a tabindex="0" class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input id="readOnlyMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" readonly aria-readonly="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="fd-popover" style="display:flex;flex-direction:column;padding-right:1rem">
+                        <div class="fd-popover__control" aria-controls="F4GcX3X8a" aria-expanded="false" aria-haspopup="false">
+                            <div class="fd-input-group fd-input-group--control is-error" readonly aria-readonly="true">
+                                <div class="fd-tokenizer fd-tokenizer--readonly">
+                                    <div class="fd-tokenizer__inner">
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Bibendum
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Dolor
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Filter
+                                            </span>
+                                        </span>
+                                        <span tabindex="0" class="fd-token fd-token--readonly">
+                                            <span class="fd-token__text">
+                                                Lorem
+                                            </span>
+                                        </span>
+                                        <span class="fd-tokenizer__indicator">
+                                            <div class="fd-popover">
+                                                <div
+                                                    class="fd-popover__control fd-input-group__control"
+                                                    aria-controls="F4GF5348a"
+                                                    aria-expanded="true"
+                                                    aria-haspopup="true"
+                                                    onclick="onPopoverClick('F4GF5348a');">
+                                                    <a tabindex="0" class="fd-link">
+                                                        2 more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <input id="readOnlyMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" readonly aria-readonly="true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Checkbox</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox" id="1">
+                    <label class="fd-checkbox__label" for="1">
+                        <span class="fd-checkbox__text">Enabled</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information" id="2">
+                    <label class="fd-checkbox__label" for="2">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success" id="3">
+                    <label class="fd-checkbox__label" for="3">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning" id="4">
+                    <label class="fd-checkbox__label" for="4">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error" id="5">
+                    <label class="fd-checkbox__label" for="5">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox" id="6" checked>
+                    <label class="fd-checkbox__label" for="6">
+                        <span class="fd-checkbox__text">Enabled</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information" id="7" checked>
+                    <label class="fd-checkbox__label" for="7">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success" id="8" checked>
+                    <label class="fd-checkbox__label" for="8">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning" id="9" checked>
+                    <label class="fd-checkbox__label" for="9">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error" id="10" checked>
+                    <label class="fd-checkbox__label" for="10">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox tristate" id="tristate1" checked>
+                    <label class="fd-checkbox__label" for="tristate1">
+                        <span class="fd-checkbox__text">Enabled</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information tristate" id="tristate2" checked>
+                    <label class="fd-checkbox__label" for="tristate2">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success tristate" id="tristate3" checked>
+                    <label class="fd-checkbox__label" for="tristate3">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning tristate" id="tristate4" checked>
+                    <label class="fd-checkbox__label" for="tristate4">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error tristate" id="tristate5" checked>
+                    <label class="fd-checkbox__label" for="tristate5">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox" id="16" disabled>
+                    <label class="fd-checkbox__label" for="16">
+                        <span class="fd-checkbox__text">Disabled</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information" id="17" disabled>
+                    <label class="fd-checkbox__label" for="17">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success" id="18" disabled>
+                    <label class="fd-checkbox__label" for="18">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning" id="19" disabled>
+                    <label class="fd-checkbox__label" for="19">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error" id="20" disabled>
+                    <label class="fd-checkbox__label" for="20">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox" id="21" checked disabled>
+                    <label class="fd-checkbox__label" for="16">
+                        <span class="fd-checkbox__text">Disabled</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information" id="22" checked disabled>
+                    <label class="fd-checkbox__label" for="17">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success" id="23" checked disabled>
+                    <label class="fd-checkbox__label" for="18">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning" id="24" checked disabled>
+                    <label class="fd-checkbox__label" for="19">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error" id="25" checked disabled>
+                    <label class="fd-checkbox__label" for="20">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox tristate" id="tristate6" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate6">
+                        <span class="fd-checkbox__text">Disabled</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information tristate" id="tristate7" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate7">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success tristate" id="tristate8" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate8">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning tristate" id="tristate9" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate9">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error tristate" id="tristate10" checked disabled>
+                    <label class="fd-checkbox__label" for="tristate10">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="checkbox" class="fd-checkbox" id="31" readonly>
+                    <label class="fd-checkbox__label" for="16">
+                        <span class="fd-checkbox__text">Read-Only</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information" id="32" readonly>
+                    <label class="fd-checkbox__label" for="17">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success" id="33" readonly>
+                    <label class="fd-checkbox__label" for="18">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning" id="34" readonly>
+                    <label class="fd-checkbox__label" for="19">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error" id="35" readonly>
+                    <label class="fd-checkbox__label" for="20">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column">
+                    <input type="checkbox" class="fd-checkbox" id="31" readonly checked>
+                    <label class="fd-checkbox__label" for="16">
+                        <span class="fd-checkbox__text">Read-Only</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-information" id="32" readonly checked>
+                    <label class="fd-checkbox__label" for="17">
+                        <span class="fd-checkbox__text">Information</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-success" id="33" readonly checked>
+                    <label class="fd-checkbox__label" for="18">
+                        <span class="fd-checkbox__text">Success</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-warning" id="34" readonly checked>
+                    <label class="fd-checkbox__label" for="19">
+                        <span class="fd-checkbox__text">Warning</span>
+                    </label>
+    
+                    <input type="checkbox" class="fd-checkbox is-error" id="35" readonly checked>
+                    <label class="fd-checkbox__label" for="20">
+                        <span class="fd-checkbox__text">Error</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Radio</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="radio" class="fd-radio" id="iSpDidh761" name="radio5">
+                    <label class="fd-radio__label" for="iSpDidh761">
+                        Enabled
+                    </label>
+                    <input type="radio" class="fd-radio is-success" id="iSpDidh7612" name="radio5">
+                    <label class="fd-radio__label" for="iSpDidh7612">
+                        Success
+                    </label>
+                    <input type="radio" class="fd-radio is-error" id="iSpDidh7613" name="radio5">
+                    <label class="fd-radio__label" for="iSpDidh7613">
+                        Error
+                    </label>
+                    <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radio5">
+                    <label class="fd-radio__label" for="iSpDidh7614">
+                        Warning
+                    </label>
+                    <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radio5">
+                    <label class="fd-radio__label" for="iSpDidh7615">
+                        Information
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="radio" class="fd-radio" id="checked1" name="checked1" checked>
+                    <label class="fd-radio__label" for="checked1">
+                        Enabled
+                    </label>
+                    <input type="radio" class="fd-radio is-success" id="checked2" name="checked2" checked>
+                    <label class="fd-radio__label" for="checked2">
+                        Success
+                    </label>
+                    <input type="radio" class="fd-radio is-error" id="checked3" name="checked3" checked>
+                    <label class="fd-radio__label" for="checked3">
+                        Error
+                    </label>
+                    <input type="radio" class="fd-radio is-warning" id="checked4" name="checked4" checked>
+                    <label class="fd-radio__label" for="checked4">
+                        Warning
+                    </label>
+                    <input type="radio" class="fd-radio is-information" id="checked5" name="checked5" checked>
+                    <label class="fd-radio__label" for="checked5">
+                        Information
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="radio" class="fd-radio" id="iSpDidh761" name="radio5" disabled>
+                    <label class="fd-radio__label" for="iSpDidh761">
+                        Disabled
+                    </label>
+                    <input type="radio" class="fd-radio is-success" id="iSpDidh7612" name="radio5" disabled>
+                    <label class="fd-radio__label" for="iSpDidh7612">
+                        Success
+                    </label>
+                    <input type="radio" class="fd-radio is-error" id="iSpDidh7613" name="radio5" disabled>
+                    <label class="fd-radio__label" for="iSpDidh7613">
+                        Error
+                    </label>
+                    <input type="radio" class="fd-radio is-warning" id="iSpDidh7614" name="radio5" disabled>
+                    <label class="fd-radio__label" for="iSpDidh7614">
+                        Warning
+                    </label>
+                    <input type="radio" class="fd-radio is-information" id="iSpDidh7615" name="radio5" disabled>
+                    <label class="fd-radio__label" for="iSpDidh7615">
+                        Information
+                    </label>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <input type="radio" class="fd-radio" id="41" name="41" checked disabled>
+                    <label class="fd-radio__label" for="41">
+                        Disabled
+                    </label>
+                    <input type="radio" class="fd-radio is-success" id="42" name="42" checked disabled> 
+                    <label class="fd-radio__label" for="42">
+                        Success
+                    </label>
+                    <input type="radio" class="fd-radio is-error" id="43" name="43" checked disabled>
+                    <label class="fd-radio__label" for="43">
+                        Error
+                    </label>
+                    <input type="radio" class="fd-radio is-warning" id="44" name="44" checked disabled>
+                    <label class="fd-radio__label" for="44">
+                        Warning
+                    </label>
+                    <input type="radio" class="fd-radio is-information" id="45" name="45" checked disabled>
+                    <label class="fd-radio__label" for="45">
+                        Information
+                    </label>
+                </div>                
+            </div>
+        </div>
+        
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Textarea</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex">
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" placeholder="Placeholder"></textarea>
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-information fd-textarea--compact" id="textarea-123">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-success fd-textarea--compact" id="textarea-123">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-warning fd-textarea--compact" id="textarea-123">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-error fd-textarea--compact" id="textarea-123">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" disabled></textarea>
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-information fd-textarea--compact" id="textarea-123" disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-success fd-textarea--compact" id="textarea-123" disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-warning fd-textarea--compact" id="textarea-123" disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-error fd-textarea--compact" id="textarea-123" disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column fd-theming__margin-right-1">
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" readonly></textarea>
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" readonly>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-information fd-textarea--compact" id="textarea-123" readonly>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-success fd-textarea--compact" id="textarea-123" readonly>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-warning fd-textarea--compact" id="textarea-123" readonly>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-error fd-textarea--compact" id="textarea-123" readonly>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                </div>
+                <div class="fd-theming__flex fd-theming__flex-column">
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" readonly disabled></textarea>
+                    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" readonly disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-information fd-textarea--compact" id="textarea-123" readonly disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-success fd-textarea--compact" id="textarea-123" readonly disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-warning fd-textarea--compact" id="textarea-123" readonly disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                    <textarea class="fd-textarea is-error fd-textarea--compact" id="textarea-123" readonly disabled>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</textarea>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fd-panel fd-panel--fixed">
+            <div class="fd-panel__header">
+                <h4 class="fd-panel__title">Slider</h4>
+            </div>
+            <div class="fd-panel__content fd-theming__flex-column">
+                <div class="slider-container" style="width: 40%;">
+                    <h4>Standard</h4>
+                    <div class="fd-slider">
+                        <div class="fd-slider__inner">
+                            <div class="fd-slider__track">
+                                <div class="fd-slider__track-range" style="width: 50%;"></div>
+                                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-container slider-container--range" style="width: 40%;">
+                    <h4>Standard</h4>
+                    <div class="fd-slider">
+                        <div class="fd-slider__inner">
+                            <div class="fd-slider__track">
+                                <div class="fd-slider__track-range" style="width: 40%; left: 40%"></div>
+                                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider left" aria-valuemin="1" aria-valuemax="80" aria-valuenow="40" style="left: 40%;"></div>
+                                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="range slider right" aria-valuemin="40" aria-valuemax="100" aria-valuenow="80" style="left: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-container" style="width: 40%;">
+                    <h4>Ticks and Labels</h4>
+                    <div class="fd-slider">
+                        <div class="fd-slider__inner">
+                            <div class="fd-slider__track">
+                                <div class="fd-slider__track-range" style="width: 50%;"></div>
+                                <div class="fd-slider__handle" tabindex="0" role="slider" aria-label="slider with ticks and labels" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;"></div>
+                            </div>
+                            <div class="fd-slider__tick-wrapper">
+                                <div class="fd-slider__ticks">
+                                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                                    <div class="fd-slider__tick fd-slider__tick--in-range"></div>
+                                    <div class="fd-slider__tick"></div>
+                                    <div class="fd-slider__tick"></div>
+                                    <div class="fd-slider__tick"></div>
+                                    <div class="fd-slider__tick"></div>
+                                    <div class="fd-slider__tick"></div>
+                                </div>
+                                <div class="fd-slider__labels">
+                                    <div class="fd-slider__label">0</div>
+                                    <div class="fd-slider__label">10</div>
+                                    <div class="fd-slider__label">20</div>
+                                    <div class="fd-slider__label">30</div>
+                                    <div class="fd-slider__label">40</div>
+                                    <div class="fd-slider__label">50</div>
+                                    <div class="fd-slider__label">60</div>
+                                    <div class="fd-slider__label">70</div>
+                                    <div class="fd-slider__label">80</div>
+                                    <div class="fd-slider__label">90</div>
+                                    <div class="fd-slider__label">100</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tristateCheckboxes = document.querySelectorAll('.tristate');
+        tristateCheckboxes.forEach((box) => {
+            box.indeterminate = true;
+        })
+    </script>
+</body>

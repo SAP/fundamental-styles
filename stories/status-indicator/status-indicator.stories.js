@@ -9,13 +9,13 @@ It allows users to fill the content on a numeric scale, typically from 1 (lowest
 Use the status indicator in Grids, tables, or in a dialog box.
         `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['status-indicator']
+        components: ['status-indicator', 'form-label']
     }
 };
 
 export const Sizes = () => `
 <div class="example-container">
-<span style="min-width: 150px;">Small size :</span>
+<span class="fd-form-label">Small size :</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--sm" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="35%" tabindex=0 aria-label=" Euro Status Indicator small size" focusable="true" title="35% with small size">
 	<svg id="__shape0__box1-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path1" data-sap-ui="__path1">
@@ -47,7 +47,7 @@ export const Sizes = () => `
 </div>
 </div>
 <div class="example-container">
-<span style="min-width: 150px;">Medium size(Default) :</span>
+<span class="fd-form-label">Medium size(Default) :</span>
 <div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--md" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="50%" tabindex=0 aria-label="Euro Status Indicator Medium default size" focusable="true" title="50% with default medium size">
 	<svg id="__shape0__box2-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path11" data-sap-ui="__path11">
@@ -79,7 +79,7 @@ export const Sizes = () => `
 </div>
 </div>
 <div class="example-container">
-<span style="min-width: 150px;">Large Size :</span>
+<span class="fd-form-label">Large Size :</span>
 <div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="80%" tabindex=0 aria-label="Euro Status Indicator large size" focusable="true" title="80% with large size">
 	<svg id="__shape0__box3-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path12" data-sap-ui="__path12">
@@ -111,7 +111,7 @@ export const Sizes = () => `
 </div>
 </div>
 <div class="example-container">
-<span style="min-width: 150px;">Extra Large Size :</span>
+<span class="fd-form-label">Extra Large Size :</span>
 <div class="fd-status-indicator fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="0%" tabindex=0 aria-label="Euro Status Indicator Extra Large size" focusable="true" title="0% with size extra large">
 	<svg id="__shape0__box4-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path13" data-sap-ui="__path13">
@@ -149,17 +149,17 @@ Sizes.parameters = {
         storyDescription: `
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
-| Small          | 0.75rem    | <code>--sm</code>         |
-| Medium/Default | 0.875rem   | <code>--md</code>         |
-| Large          | 1.125rem   | <code>--lg</code>         |
-| Extra Large    | 1.875rem   | <code>--xl</code>         |
+| Small          | 0.75rem    | \`--sm\`         |
+| Medium/Default | 0.875rem   | \`--md\`         |
+| Large          | 1.125rem   | \`--lg\`         |
+| Extra Large    | 1.875rem   | \`--xl\`         |
 `
     }
 };
 
 export const fillValues = () => `
 <div  class="example-container">
-<span style="min-width: 150px;">Negative Filling :</span>
+<span class="fd-form-label">Negative Filling :</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="35%" tabindex=0 aria-label="Euro Status Indicator With Negative Filling" focusable="true" title="35% fill with negative color">
 	<svg id="__shape0__box5-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path21" data-sap-ui="__path21">
@@ -191,7 +191,7 @@ export const fillValues = () => `
 </div>
 </div>
 <div class="example-container">
-<span style="min-width: 150px;">Critical Filling :</span>
+<span class="fd-form-label">Critical Filling :</span>
 <div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="60%" tabindex=0 aria-label="Euro Status Indicator With Critical Filling" focusable="true" title="60% with critical color filling">
 	<svg id="__shape0__box6-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path22" data-sap-ui="__path22">
@@ -223,7 +223,7 @@ export const fillValues = () => `
 </div>
 </div>
 <div class="example-container">
-<span style="min-width: 150px;">Positive Filling :</span>
+<span class="fd-form-label">Positive Filling :</span>
 <div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Positive Filling" focusable="true" title="100% with Positive color filling">
 	<svg id="__shape0__box7-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path23" data-sap-ui="__path23">
@@ -268,9 +268,9 @@ modifier class together with the \`fd-status-indicator\` class.
 
 export const StatusIndicatorLabels = () => `
 <div class="example-container">
-<span style="min-width: 150px;">Top Label :</span>
+<span class="fd-form-label">Top Label :</span>
 <div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--lg"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Top" focusable="true" title="100% with label on top">
-	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--top">100%</span>
 	<svg id="__shape0__box9-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path25" data-sap-ui="__path25">
 			<defs>
@@ -301,7 +301,7 @@ export const StatusIndicatorLabels = () => `
 </div>
 </div>
 <div class="example-container">
-	<span style="min-width: 150px;">Bottom Label :</span>
+	<span class="fd-form-label">Bottom Label :</span>
 <div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Bottom" focusable="true" title="100% with label on bottom">
 	<svg id="__shape0__box10-24" class="fd-status-indicator__svg"  data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path26" data-sap-ui="__path26">
@@ -330,13 +330,13 @@ export const StatusIndicatorLabels = () => `
 			</path>
 		</svg>	
 	</svg>
-	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--bottom">100%</span>
 </div>
 </div>
 <div class="example-container">
-<span style="min-width: 150px;">Left Label :</span>
+<span class="fd-form-label">Left Label :</span>
 <div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--horizontal-label fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Left" focusable="true" title="100% with label on left">
-	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--left">100%</span>
 	<svg id="__shape0__box12-24" class="fd-status-indicator__svg"  class=" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 36 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path261" data-sap-ui="__path261">
 			<defs>
@@ -367,7 +367,7 @@ export const StatusIndicatorLabels = () => `
 </div>
 </div>
 <div class="example-container">
-	<span style="min-width: 150px;">Right Label :</span>
+	<span class="fd-form-label">Right Label :</span>
 <div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--horizontal-label fd-status-indicator--lg"  aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="100%" tabindex=0 aria-label="Euro Status Indicator With Labelled On Right" focusable="true" title="100% with label on right">
 	<svg id="__shape0__box101-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 16 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path262" data-sap-ui="__path262">
@@ -396,7 +396,7 @@ export const StatusIndicatorLabels = () => `
 			</path>
 		</svg>	
 	</svg>
-	<span class="fd-status-indicator__label fd-status-indicator__label--lg">100%</span>
+	<span class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--right">100%</span>
 </div>
 </div>
 
@@ -414,7 +414,7 @@ modifier class for defining the font size and colour of the Label together with 
 
 export const StatusIndicatorLinearFilling = () => `
 <div class="example-container">
-	<span style="min-width: 150px;">Left to Right fill :</span>
+	<span class="fd-form-label">Left to Right fill :</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="80%" tabindex=0 aria-label="Euro status indicator animated left to right filling " focusable="true" title="80% fill from left to right">
 	<svg id="__shape0__box32a-24" class="fd-status-indicator__svg"  data-sap-ui="__shape0-__box32-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path32a" data-sap-ui="__path32a">
@@ -451,7 +451,7 @@ export const StatusIndicatorLinearFilling = () => `
 </div>
 </div>
 <div class="example-container">
-	<span style="min-width: 150px;">Bottom to Top fill</span>
+	<span class="fd-form-label">Bottom to Top fill</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="80%" tabindex=0 aria-label="Euro status indicator animated bottom up filling" focusable="true" title="80% fill from bottom to top">
 	<svg id="__shape0__box33-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path33" data-sap-ui="__path33">
@@ -645,7 +645,7 @@ StatusIndicatorCoreoGraphy.parameters = {
 
 export const StatusIndicatorRadialFilling = () => `
 <div class="example-container">
-	<span style="min-width: 150px;">Radial Clock filling:</span>
+	<span class="fd-form-label">Radial Clock filling:</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="Euro Status Indicator Radial clockwise filling" focusable="true" title="30% radial filling with clockwise">
 	<svg id="__shape0__box34-24" data-sap-ui="__shape0-__box21-24" class="fd-status-indicator__svg"  version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path34" data-sap-ui="__path34">
@@ -679,7 +679,7 @@ export const StatusIndicatorRadialFilling = () => `
 </div>
 
 <div class="example-container">
-	<span style="min-width: 150px;">Radial Counter Clock filling:</span>
+	<span class="fd-form-label">Radial Counter Clock filling:</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="30%" tabindex=0 aria-label="Euro Status Indicator Radial clockwise filling" focusable="true" title="30% radial filling with counterclockwise">
 	<svg id="__shape0__box35-24" data-sap-ui="__shape0-__box21-24" version="1.1" class="fd-status-indicator__svg" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path35" data-sap-ui="__path35">
@@ -724,7 +724,7 @@ To display Radial filling instead of default bottom to top approach type of stat
 
 export const StatusIndicatorAngularFilling = () => `
 <div class="example-container">
-	<span style="min-width: 150px;">Angular filling 270 degree:</span>
+	<span class="fd-form-label">Angular filling 270 degree:</span>
 <div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="80%" tabindex=0 aria-label="Euro Status Indicator Angled filling at 270 degree" focusable="true"  title="80% angled filling in 270 degree">
 	<svg id="__shape0__box36-24" class="fd-status-indicator__svg"  data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path36" data-sap-ui="__path6">
@@ -762,7 +762,7 @@ export const StatusIndicatorAngularFilling = () => `
 </div>
 
 <div class="example-container">
-	<span style="min-width: 150px;">Angular filling 40 degree:</span>
+	<span class="fd-form-label">Angular filling 40 degree:</span>
 <div class="fd-status-indicator fd-status-indicator--critical fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="50%" tabindex=0 aria-label="Euro Status Indicator Angled filling at 40 degree" focusable="true"  title="50% angled filling in 40 degree">
 	<svg id="__shape0__box37-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path37" data-sap-ui="__path37">
@@ -800,7 +800,7 @@ export const StatusIndicatorAngularFilling = () => `
 </div>
 
 <div class="example-container">
-	<span style="min-width: 150px;">Angular filling 98 degree:</span>
+	<span class="fd-form-label">Angular filling 98 degree:</span>
 <div class="fd-status-indicator fd-status-indicator--positive fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="50%" tabindex=0 aria-label="Euro Status Indicator Angled filling at 98 degree" focusable="true"  title="50% angled filling in 98 degree">
 	<svg id="__shape0__box38-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path38" data-sap-ui="__path38">
@@ -838,7 +838,7 @@ export const StatusIndicatorAngularFilling = () => `
 </div>
 
 <div class="example-container">
-	<span style="min-width: 150px;">Angular filling 140 degree:</span>
+	<span class="fd-form-label">Angular filling 140 degree:</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--xl" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="40%" tabindex=0 aria-label="Euro Status Indicator Angled filling at 140 degree" focusable="true"  title="40% angled filling in 140 degree">
 	<svg id="__shape0__box39-24" class="fd-status-indicator__svg" data-sap-ui="__shape0-__box21-24" version="1.1" xlmns="http://www.w3.org/2000/svg" viewBox="0 0 26 25" preserveAspectRatio="xMidYMid meet" x="0" y="0" width="100%" height="100%">
 		<svg xlmns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="visible" id="__path39" data-sap-ui="__path39">

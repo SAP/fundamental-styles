@@ -1,0 +1,115 @@
+@import '../new-settings';
+@import '../icons/settings';
+@import '../icons/settingsBusiness';
+@import '../icons/settingsTNT';
+
+// icon mixin
+@mixin fd-icon($key, $position: 'before') {
+  @include fd-icon-base($position);
+  @include fd-icon-glyph($key, $position);
+
+  &::#{$position} {
+    @content;
+  }
+}
+
+// icon base mixin
+@mixin fd-icon-base($position: 'before') {
+  &::#{$position} {
+    font-family: 'SAP-icons';
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    @content;
+  }
+}
+
+// icon glyph mixin
+@mixin fd-icon-glyph($glyph, $position: 'before') {
+  @if map-has-key($fd-icons, $glyph) {
+    &::#{$position} {
+      content: map-get($fd-icons, $glyph);
+      @content;
+    }
+  } @else {
+    @warn "Unknown `#{$glyph}` in $fd-icons map";
+  }
+}
+
+// business suite icon mixin
+@mixin fd-business-suite-icon($key, $position: 'before') {
+  @include fd-business-suite-icon-base($position);
+  @include fd-business-suite-icon-glyph($key, $position);
+
+  &::#{$position} {
+    @content;
+  }
+}
+
+// business suite icon base mixin
+@mixin fd-business-suite-icon-base($position: 'before') {
+  &::#{$position} {
+    font-family: 'BusinessSuiteInAppSymbols';
+    @content;
+  }
+}
+
+// business suite icon glyph mixin
+@mixin fd-business-suite-icon-glyph($glyph, $position: 'before') {
+  @if map-has-key($fd-business-suite-icons, $glyph) {
+    &::#{$position} {
+      content: map-get($fd-business-suite-icons, $glyph);
+      @content;
+    }
+  } @else {
+    @warn "Unknown `#{$glyph}` in $fd-business-suite-icons map";
+  }
+}
+
+// SAP-icons-TNT icon mixin
+@mixin fd-tnt-icon($key, $position: 'before') {
+  @include fd-tnt-icon-base($position);
+  @include fd-tnt-icon-glyph($key, $position);
+
+  &::#{$position} {
+    @content;
+  }
+}
+
+// SAP-icons-TNT icon base mixin
+@mixin fd-tnt-icon-base($position: 'before') {
+  &::#{$position} {
+    font-family: 'SAP-icons-TNT';
+    @content;
+  }
+}
+
+// SAP-icons-TNT icon glyph mixin
+@mixin fd-tnt-icon-glyph($glyph, $position: 'before') {
+  @if map-has-key($fd-tnt-icons, $glyph) {
+    &::#{$position} {
+      content: map-get($fd-tnt-icons, $glyph);
+      @content;
+    }
+  } @else {
+    @warn "Unknown `#{$glyph}` in $fd-tnt-icons map";
+  }
+}
+
+// Icon Control Enumerations
+
+@mixin fd-icon-control-enumeration($block, $position: 'before') {
+  @each $enumeration-name, $enumeration-value in $fd-icon-control-enumerations {
+    &.#{$block} {
+      &--color-#{$enumeration-name} {
+        color: map_get($enumeration-value, "color");
+      }
+      &--background-#{$enumeration-name} {
+        &::#{$position} {
+          background-color: map_get($enumeration-value, "background-color");
+        }
+      }
+    }
+  }
+}

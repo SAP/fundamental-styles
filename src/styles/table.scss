@@ -1,0 +1,752 @@
+@import "./new-settings";
+@import "./mixins";
+
+/*!
+.fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed, --hidden, --tree, --group)
+    thead(.fd-table__header(--no-horizontal-borders, --no-vertical-borders))
+    tbody(.fd-table__body(--no-horizontal-borders, --no-vertical-borders))
+    tfoot(.fd-table__footer)
+        tr(.fd-table__row)([aria-selected])
+          td(.fd-table__cell(--status-indicator, --checkbox, --fit-content, --fixed, --expand, --group)) + semantic
+*/
+$block: #{$fd-namespace}-table;
+
+.#{$block} {
+  @mixin fd-table-active() {
+    background-color: var(--sapList_Active_Background);
+    color: var(--sapList_Active_TextColor);
+    text-shadow: none;
+
+    .#{$block}__cell {
+      border-bottom-color: var(--sapList_SelectionBorderColor);
+      text-shadow: none;
+
+      @include fd-hover() {
+        background-color: var(--sapList_Active_Background);
+      }
+    }
+
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--sapContent_ContrastIconColor);
+      }
+    }
+
+    .#{$fd-namespace}-link,
+    .#{$fd-namespace}-form-label,
+    .#{$fd-namespace}-object-status {
+      color: inherit;
+    }
+  }
+
+  @mixin fd-table-nested-cell-padding($levels: 20, $content-density-cozy: false, $include-expand: false) {
+    $level-padding: 0.5rem;
+    $second-level-padding: 1.5rem;
+    $third-level-padding: if($content-density-cozy, 0.5rem, 0.75rem);
+    $expand-padding: if($include-expand, if($content-density-cozy, 2.75rem, 2rem), 0);
+
+    @for $i from 1 through $levels {
+      &[data-nesting-level='#{$i}'] {
+        @if $i == 1 {
+          padding-left: $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $expand-padding;
+          }
+        } @else if $i == 2 {
+          padding-left: $second-level-padding + $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $second-level-padding + $expand-padding;
+          }
+        } @else if $i == 3 {
+          padding-left: $second-level-padding + $third-level-padding + $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $second-level-padding + $third-level-padding + $expand-padding;
+          }
+        } @else {
+          padding-left: $second-level-padding + $third-level-padding + (($i - 2) * $level-padding) + $expand-padding;
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+            padding-right: $second-level-padding + $third-level-padding + (($i - 2) * $level-padding) + $expand-padding;
+          }
+        }
+      }
+    }
+  }
+
+  @mixin fd-trigger-element() {
+    cursor: pointer;
+
+    @include fd-active() {
+      @include fd-table-active();
+
+      &--focusable {
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
+        }
+      }
+    }
+  }
+
+  @mixin fd-table-reset-spacing() {
+    padding: 0;
+    margin: 0;
+  }
+
+  // LOCAL VARS
+  $fd-table-cell-padding: 0.5rem;
+  $fd-table-first-cell-padding: 1rem;
+  $fd-table-cozy-cell-height: 2.75rem;
+  $fd-table-compact-cell-height: 2rem;
+  $fd-table-condensed-cell-height: 1.5rem;
+  $fd-table-navigation-icon-width: 2rem;
+  $fd-table-fixed-cell-shift: 0.0625rem; // 1px
+
+  // Thanks to table-cell specification, if the width is set to small value, the cell will have content width
+  $fd-table-cell-fit-content-width: 0.5rem;
+
+  $fd-table-basic-background: var(--sapList_Background);
+  $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  $fd-table-fixed-cell-border: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+
+  // BLOCK BASE *******************************************
+  // set all BLOCK reset and baseline styles
+  &,
+  &__cell,
+  &__row,
+  &__header,
+  &__body,
+  &__footer,
+  &__text {
+    @include fd-reset();
+  }
+
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+
+  /****** Elements ******/
+
+  &__icon {
+    @include fd-icon-element-base() {
+      @include fd-flex-center();
+
+      color: var(--sapContent_NonInteractiveIconColor);
+      font-size: var(--sapFontSmallSize);
+    }
+
+    &--navigation {
+      @include fd-icon-selector() {
+        font-size: var(--sapFontSmallSize);
+        width: $fd-table-navigation-icon-width;
+        min-width: $fd-table-navigation-icon-width;
+        height: 100%;
+      }
+    }
+  }
+
+  &__header,
+  &__body {
+    .#{$block}__cell--fixed.#{$block}__cell--fixed-last {
+      border-right: $fd-table-fixed-cell-border;
+
+      @include fd-rtl() {
+        border-right: $fd-table-border;
+        border-left: $fd-table-fixed-cell-border;
+      }
+    }
+  }
+
+  &__header {
+    border-top: $fd-table-border;
+    border-left: $fd-table-border;
+    border-right: $fd-table-border;
+
+    .#{$block}__row {
+      border-bottom: $fd-table-border;
+    }
+
+    .#{$block}__cell {
+      height: $fd-table-cozy-cell-height;
+      background-color: var(--sapList_HeaderBackground);
+      color: var(--sapList_HeaderTextColor);
+
+      &--fixed {
+        margin-top: -$fd-table-fixed-cell-shift;
+        border-top: $fd-table-border;
+        height: $fd-table-cozy-cell-height + $fd-table-fixed-cell-shift;
+      }
+    }
+  }
+
+  &__text {
+    @include fd-ellipsis();
+
+    word-break: break-word;
+    white-space: normal;
+
+    &--no-wrap {
+      white-space: nowrap;
+    }
+  }
+
+  &__cell {
+    text-align: left;
+    text-shadow: var(--sapContent_TextShadow);
+    height: $fd-table-cozy-cell-height;
+    padding: 0 $fd-table-cell-padding;
+    color: inherit;
+    border-right: $fd-table-border;
+
+    &--valid {
+      color: var(--sapSuccessColor);
+    }
+
+    &--warning {
+      color: var(--sapWarningColor);
+    }
+
+    &--error {
+      color: var(--sapErrorColor);
+    }
+
+    &--information {
+      color: var(--sapInformationColor);
+    }
+
+    &--no-data {
+      text-align: center;
+    }
+
+    &--mock {
+      padding: 0;
+      width: auto;
+    }
+
+    &--checkbox {
+      width: $fd-table-cozy-cell-height;
+      vertical-align: baseline;
+
+      @include fd-table-reset-spacing();
+    }
+
+    &--fit-content {
+      width: $fd-table-cell-fit-content-width;
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+
+    &--no-padding {
+      @include fd-table-reset-spacing();
+    }
+
+    &--fixed {
+      left: 0;
+      position: absolute;
+      background-color: inherit;
+      border-bottom: $fd-table-border;
+      border-left: $fd-table-border;
+      border-right: none;
+
+      @include fd-flex-vertical-center();
+
+      @include fd-rtl() {
+        border-right: $fd-table-border;
+        border-left: none;
+        left: auto;
+        right: 0;
+      }
+    }
+
+    &--status-indicator {
+      width: 0.375rem;
+      padding: 0;
+
+      &--valid {
+        background-color: var(--sapSuccessBorderColor);
+      }
+
+      &--warning {
+        background-color: var(--sapWarningBorderColor);
+      }
+
+      &--error {
+        background-color: var(--sapErrorBorderColor);
+      }
+
+      &--information {
+        background-color: var(--sapInformationBorderColor);
+      }
+    }
+
+    &--navigated {
+      box-shadow: inset -0.1875rem 0 var(--sapSelectedColor);
+
+      @include fd-rtl() {
+        box-shadow: inset 0.1875rem 0 var(--sapSelectedColor);
+      }
+    }
+
+    @include fd-first-child() {
+      padding-left: $fd-table-first-cell-padding;
+
+      &.#{$block}__cell--checkbox,
+      &.#{$block}__cell--status-indicator {
+        padding: 0;
+      }
+
+      @include fd-rtl() {
+        padding-left: $fd-table-cell-padding;
+        padding-right: $fd-table-first-cell-padding;
+
+        &.#{$block}__cell--checkbox,
+        &.#{$block}__cell--status-indicator {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  &__body {
+    border-left: $fd-table-border;
+    border-right: $fd-table-border;
+    border-bottom: $fd-table-border;
+
+    .#{$block}__cell {
+      border-bottom: $fd-table-border;
+
+      &--no-vertical-border {
+        border-bottom-color: transparent;
+      }
+
+      &--no-horizontal-border {
+        border-right-color: transparent;
+      }
+    }
+
+    .#{$block}__row {
+      border-left: none;
+      border-right: none;
+      background-color: $fd-table-basic-background;
+
+      @include fd-selected() {
+        background-color: var(--sapList_SelectionBackgroundColor);
+
+        .#{$block}__cell {
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
+
+        @include fd-hover() {
+          background-color: var(--sapList_Hover_SelectionBackground);
+        }
+      }
+
+      &--activable {
+        @include fd-selected() {
+          @include fd-active() {
+            background-color: var(--sapList_Active_Background);
+          }
+        }
+      }
+    }
+  }
+
+  &__cell,
+  &__row {
+    &--hoverable {
+      @include fd-selected() {
+        .#{$block}__cell:not(.#{$block}__cell--status-indicator) {
+          @include fd-hover() {
+            background-color: var(--sapList_Hover_SelectionBackground);
+          }
+        }
+      }
+
+      &,
+      .#{$block}__cell:not(.#{$block}__cell--status-indicator) {
+        @include fd-hover() {
+          background-color: var(--sapList_Hover_Background);
+          color: var(--fdTable_Hover_Down_Color);
+        }
+      }
+    }
+
+    &--activable {
+      @include fd-active() {
+        * {
+          color: var(--sapList_Active_TextColor) !important;
+        }
+      }
+
+      @include fd-trigger-element();
+
+      @include fd-selected() {
+        @include fd-trigger-element();
+      }
+    }
+
+    &--focusable {
+      @include fd-fiori-focus();
+    }
+  }
+
+  &__footer {
+    background-color: var(--sapList_FooterBackground);
+
+    .#{$block}__row {
+      border-top: 0.125rem solid var(--sapList_TableFooterBorder);
+      vertical-align: middle;
+    }
+
+    .#{$block}__cell {
+      font-weight: bold;
+      border-right: none;
+    }
+  }
+
+  &__inner {
+    @include fd-reset();
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column-header-icons {
+    display: flex;
+
+    .#{$block}__icon:not(:last-child) {
+      margin-right: 0.25rem;
+    }
+
+    @include fd-rtl() {
+      .#{$block}__icon {
+        margin-right: 0;
+      }
+
+      .#{$block}__icon:not(:last-child) {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
+  &__caption {
+    @include fd-screen-reader-only();
+  }
+
+  &__item {
+    &--clickable {
+      cursor: pointer;
+    }
+  }
+
+  &__popover.#{$fd-namespace}-popover {
+    height: 100%;
+    display: block;
+    color: inherit;
+
+    .#{$fd-namespace}-popover__control {
+      width: 100%;
+      height: 100%;
+      color: inherit;
+
+      @include fd-flex-vertical-center();
+    }
+  }
+
+  /****** Modifiers ******/
+
+  &--fixed {
+    overflow-x: scroll;
+
+    .#{$block}__header,
+    .#{$block}__body {
+      border-left: none;
+
+      @include fd-rtl() {
+        border-left: $fd-table-border;
+        border-right: none;
+      }
+    }
+  }
+
+  &--pop-in {
+    .#{$block}__text {
+      color: inherit;
+      margin-bottom: 0.5rem;
+
+      &--title {
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .#{$block}__cell {
+      &--checkbox {
+        + .#{$block}__cell {
+          padding-left: 0;
+
+          @include fd-rtl() {
+            padding-right: 0;
+            padding-left: $fd-table-cell-padding;
+          }
+        }
+      }
+    }
+
+    .#{$block}__body {
+      .#{$block}__cell {
+        height: auto;
+      }
+    }
+
+    .#{$block}__row {
+      .#{$block}__cell {
+        @include fd-last-child() {
+          border-right: $fd-table-border;
+
+          @include fd-rtl() {
+            border-left: $fd-table-border;
+            border-right: none;
+          }
+        }
+      }
+    }
+
+    .#{$block}__row--main {
+      border: none;
+
+      .#{$block}__cell {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+
+      &.#{$block}__row--hoverable {
+        @include fd-hover() {
+          + .#{$block}__row--secondary {
+            background-color: var(--sapList_Hover_Background);
+          }
+        }
+      }
+
+      &.#{$block}__row--activable:not(:hover) {
+        @include fd-active() {
+          + .#{$block}__row--secondary {
+            @include fd-table-active();
+          }
+        }
+      }
+
+      @include fd-selected() {
+        @include fd-hover() {
+          + .#{$block}__row--secondary {
+            background-color: var(--sapList_Hover_SelectionBackground);
+          }
+        }
+      }
+    }
+
+    .#{$block}__row--secondary {
+      background-color: $fd-table-basic-background;
+      border-bottom: $fd-table-border;
+
+      @include fd-hover() {
+        background-color: $fd-table-basic-background;
+      }
+
+      .#{$block}__cell {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      @include fd-selected() {
+        .#{$block}__cell {
+          border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+        }
+
+        @include fd-hover() {
+          background-color: var(--sapList_SelectionBackgroundColor);
+        }
+      }
+    }
+  }
+
+  &,
+  &__body,
+  &__header {
+    &--no-vertical-borders {
+      .#{$block}__row {
+        .#{$block}__cell {
+          border-bottom: none;
+        }
+      }
+    }
+
+    &--no-horizontal-borders {
+      .#{$block}__row {
+        .#{$block}__cell {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &--responsive {
+    .#{$block}__body,
+    .#{$block}__header {
+      border: none;
+    }
+
+    .#{$block}__row {
+      @include fd-last-child() {
+        .#{$block}__cell {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &--compact {
+    .#{$block}__body,
+    .#{$block}__footer {
+      .#{$block}__cell {
+        height: $fd-table-compact-cell-height;
+      }
+    }
+
+    &.#{$block}--tree,
+    &.#{$block}--group {
+      .#{$block}__body .#{$block}__cell {
+        .#{$block}__expand {
+          height: $fd-table-compact-cell-height;
+        }
+      }
+    }
+  }
+
+  &--condensed {
+    .#{$block}__body,
+    .#{$block}__footer {
+      .#{$block}__cell {
+        height: $fd-table-condensed-cell-height;
+
+        &--checkbox {
+          .#{$block}__checkbox-label {
+            margin-top: -0.25rem;
+            position: absolute;
+          }
+        }
+      }
+    }
+
+    &.#{$block}--tree,
+    &.#{$block}--group {
+      .#{$block}__body .#{$block}__cell {
+        .#{$block}__expand {
+          height: $fd-table-condensed-cell-height;
+        }
+      }
+    }
+  }
+
+  &--compact,
+  &--condensed {
+    &.#{$block}--tree,
+    &.#{$block}--group {
+      .#{$block}__body .#{$block}__cell {
+        @include fd-table-nested-cell-padding(20, false, true);
+
+        &--expand {
+          @include fd-table-nested-cell-padding(20, false);
+        }
+
+        .#{$block}__expand {
+          width: $fd-table-compact-cell-height;
+        }
+      }
+    }
+
+    .#{$block}__header {
+      .#{$block}__cell {
+        height: $fd-table-compact-cell-height;
+
+        &--fixed {
+          height: $fd-table-compact-cell-height + $fd-table-fixed-cell-shift;
+        }
+      }
+    }
+
+    .#{$block}__cell {
+      &--checkbox {
+        width: $fd-table-compact-cell-height;
+      }
+    }
+  }
+
+  &--group {
+    .#{$block}__body .#{$block}__cell {
+      &--group {
+        background-color: var(--sapList_HeaderBackground);
+      }
+    }
+  }
+
+  &--tree,
+  &--group {
+    .#{$block}__body .#{$block}__cell {
+      @include fd-table-nested-cell-padding(20, true, true);
+
+      &--expand {
+        cursor: pointer;
+        white-space: nowrap;
+
+        @include fd-table-nested-cell-padding(20, true);
+      }
+
+      .#{$block}__expand {
+        width: $fd-table-cozy-cell-height;
+        height: $fd-table-cozy-cell-height;
+        color: var(--sapContent_IconColor);
+        font-size: var(--sapFontSmallSize);
+
+        @include fd-inline-flex-center();
+        @include fd-icon("navigation-right-arrow");
+
+        @include fd-rtl() {
+          @include fd-icon("navigation-left-arrow");
+
+          &.#{$block}__expand--open {
+            @include fd-icon("navigation-down-arrow");
+          }
+        }
+
+        &--open {
+          @include fd-icon("navigation-down-arrow");
+        }
+      }
+    }
+  }
+
+  &--no-outer-border {
+    border: hidden;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @include fd-rtl() {
+    .#{$block}__cell {
+      text-align: right;
+    }
+  }
+}

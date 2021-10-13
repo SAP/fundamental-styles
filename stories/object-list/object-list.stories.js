@@ -33,30 +33,30 @@ Below are examples of how to add semantic statuses to the components:
 
 | **Status** | <span style="margin-left: 2rem;">**Object Number**</span> | <span style="margin-left: 2rem;">**Object Status**</span> |
 | :---- | :-------------- | :-------------- |
-| Positive|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--positive</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--positive</code> |
-| Negative|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--negative</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--negative</code> |
-| Critical|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--critical</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--critical</code> |
-| Informative|<code class="docs-code" style="margin-left: 2rem;">fd-object-number--informative</code> |<code class="docs-code" style="margin-left: 2rem;">fd-object-status--informative</code> |
+| Positive| <code style="margin-left: 2rem;">fd-object-number--positive</code> | <code style="margin-left: 2rem;">fd-object-status--positive</code> |
+| Negative| <code style="margin-left: 2rem;">fd-object-number--negative</code> | <code style="margin-left: 2rem;">fd-object-status--negative</code> |
+| Critical| <code style="margin-left: 2rem;">fd-object-number--critical</code> | <code style="margin-left: 2rem;">fd-object-status--critical</code> |
+| Informative| <code style="margin-left: 2rem;">fd-object-number--informative</code> | <code style="margin-left: 2rem;">fd-object-status--informative</code> |
 
 
 ## Structure
 **Object list consists of the following elements:**
 
-  - <code class="docs-code">fd-object-list</code> ul element
-   - <code class="docs-code">fd-object-list\\_\\_item</code> li element
-     - <code class="docs-code">fd-object-list\\_\\_container</code> container to hold child elements
-       - <code class="docs-code">fd-object-list\\_\\_intro</code> introduction text div
-       - <code class="docs-code">fd-object-list\\_\\_header</code> container to hold header elements
-         - <code class="docs-code">fd-object-list\\_\\_header-left</code> container to hold header left elements
-           - <code class="docs-code">fd-object-list\\_\\_object-identifier</code> object identifier element
-         - <code class="docs-code">fd-object-list\\_\\_header-right</code> container to hold header right elements
-           - <code class="docs-code">fd-object-list\\_\\_object-number</code> object number element
-       - <code class="docs-code">fd-object-list\\_\\_content</code> container to hold rows of attributes and status elements
-        - <code class="docs-code">fd-object-list\\_\\_row</code> container to hold attributes and status elements
-         - <code class="docs-code">fd-object-list\\_\\_row-right</code> container to hold right elements of row
-           - <code class="docs-code">fd-object-status</code>, <code class="docs-code">fd-object-marker</code> object status and object status elements
-         - <code class="docs-code">fd-object-list\\_\\_row-left</code> container to hold left elements of row
-           - <code class="docs-code">fd-object-list\\_\\_object-attribute</code> object attribute element
+  - \`fd-object-list\` ul element
+   - \`fd-object-list__item\` li element
+     - \`fd-object-list__container\` container to hold child elements
+       - \`fd-object-list__intro\` introduction text div
+       - \`fd-object-list__header\` container to hold header elements
+         - \`fd-object-list__header-left\` container to hold header left elements
+           - \`fd-object-list__object-identifier\` object identifier element
+         - \`fd-object-list__header-right\` container to hold header right elements
+           - \`fd-object-list__object-number\` object number element
+       - \`fd-object-list__content\` container to hold rows of attributes and status elements
+        - \`fd-object-list__row\` container to hold attributes and status elements
+         - \`fd-object-list__row-right\` container to hold right elements of row
+           - \`fd-object-status\`, \`fd-object-marker\` object status and object status elements
+         - \`fd-object-list__row-left\` container to hold left elements of row
+           - \`fd-object-list__object-attribute\` object attribute element
         
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
@@ -599,6 +599,71 @@ export const selectionWithNavigation = () => `
 <h4 id="objectListItemRowSelectionAndNavigation">Object List Item With Row Selection And Navigation</h4>
 <div role="navigation" style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation fd-list--selection" role="listbox" aria-labelledby="objectListItemRowSelectionAndNavigation">
+<li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
+  <a tabindex="0" id="anchor" class="fd-list__link is-active"> 
+  <div class="fd-object-list__container">
+      <div class="fd-object-list__intro">
+       Optional inline text</span>
+      </div>
+      <div class="fd-object-list__header">
+        <span class="fd-avatar fd-avatar--s"
+         style="background-image: url('/assets/images/products/fitbit.png')">
+        </span>
+        <div class="fd-object-list__header-left">
+         <div class="fd-object-identifier fd-object-list__object-identifier">
+          <p class="fd-object-identifier__title">
+           Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+          </p>
+         </div>
+        </div>
+        <div class="fd-object-list__header-right">
+          <span class="fd-object-number fd-object-list__object-number">
+            <span class="fd-object-number__text">457.00</span>
+            <span class="fd-object-number__unit">Euro</span>
+          </span>
+        </div>
+      </div>
+      <div class="fd-object-list__content">
+        <div class="fd-object-list__row">
+          <div class="fd-object-list__row-left">
+            <div class="fd-object-list__object-attribute">
+              
+              First Attribute
+            </div>
+          </div>
+          <div class="fd-object-list__row-right">
+            <div class="fd-object-marker">
+              <i class="fd-object-marker__icon sap-icon--flag"
+               aria-label="icon for flag"></i>
+            </div>
+            <div class="fd-object-marker">
+              <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+            </div>
+          </div>
+        </div>
+        <div class="fd-object-list__row">
+          <div class="fd-object-list__row-left">
+            <div class="fd-object-list__object-attribute">
+              Second Attribute
+            </div>
+          </div>
+          <div class="fd-object-list__row-right">
+            <span class="fd-object-status fd-object-status--critical">
+              <span class="fd-object-status__text">Avaliable</span>
+            </span>
+          </div>
+        </div>
+        <div class="fd-object-list__row">
+          <div class="fd-object-list__row-left">
+            <div class="fd-object-list__object-attribute">
+              Third Attribute
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </a>
+  </li>
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
   <a tabindex="0" class="fd-list__link"> 
   <div class="fd-object-list__container">
@@ -935,3 +1000,4 @@ borderless.parameters = {
         storyDescription: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
     }
 };
+

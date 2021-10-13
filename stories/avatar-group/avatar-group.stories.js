@@ -11,11 +11,11 @@ The control allows you to display the avatars in different sizes, depending on y
 
 | **Size** | &nbsp;&nbsp; **Group type** | &nbsp;&nbsp; **Individual type** | **Modifier class** |
 | :--------- | ----------: | :----------------------- | ---------------: |
-| XS | &nbsp;&nbsp; -0.75rem | &nbsp;&nbsp; 0.0625rem | <code>--xs</code> |
-| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | <code>--s</code> |
-| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | <code>--m</code> |
-| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | <code>--l</code> |
-| XL | &nbsp;&nbsp; -2.75rem | &nbsp;&nbsp; 0.25rem | <code>--xl</code> |
+| XS | &nbsp;&nbsp; -0.75rem | &nbsp;&nbsp; 0.0625rem | \`--xs\` |
+| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | \`--s\` |
+| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | \`--m\` |
+| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | \`--l\` |
+| XL | &nbsp;&nbsp; -2.75rem | &nbsp;&nbsp; 0.25rem | \`--xl\` |
 
 ##Types
 
@@ -39,7 +39,7 @@ Do not use the **AvatarGroup** if:
 
 ##Overflow Button
 
-To change the background color of the button, add the <code>fd-avatar-group\\_\\_more-button--accent-color-*</code> class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: <code>fd-avatar-group\\_\\_more-button--accent-color-1</code>
+To change the background color of the button, add the \`fd-avatar-group__more-button--accent-color-*\` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: \`fd-avatar-group__more-button--accent-color-1\`
 
 `,
         docs: { iframeHeight: 250 },
@@ -52,7 +52,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_5z28edb');">
-                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Wendy Wallace" title="Wendy Wallace">WW</span>
             </div>
         </div>
         <div class="fd-popover__body" aria-hidden="false" id="popover_avatar_5z28edb">
@@ -66,9 +66,9 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
+                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Jason Smith" title="Jason Smith">WW</span>
                             <div class="fd-quick-view__subheader-text">
-                                <h5 class="fd-title fd-title--h5">Wendy Wallace</h5>
+                                <h5 class="fd-title fd-title--h5">Jason Smith</h5>
                                 <div class="fd-quick-view__subtitle">Marketing Manager</div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_spbw4q');">
-               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Jason Goldwell" title="Jason Goldwell">
                     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                 </span>
             </div>
@@ -113,7 +113,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
+                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Wendy Wallace" title="Wendy Wallace">WW</span>
                             <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">Sarah Parker</h5>
                                 <div class="fd-quick-view__subtitle">Visual Designer</div>
@@ -144,7 +144,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_4ahzcg');">
-               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="Christian Bow"></span></div>
+               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="Christian Bow" title="Christian Bow"></span></div>
         </div>
         <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_4ahzcg">
             <div class="fd-quick-view">
@@ -157,7 +157,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="Christian Bow"></span>
+                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="Christian Bow" title="Christian Bow"></span>
                             <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">Christian Bow</h5>
                                 <div class="fd-quick-view__subtitle">Marketing Manager</div>
@@ -188,7 +188,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_qc1f1jf');">
-               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Endy Wallace">EW</span>
+               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Endy Wallace" title="Endy Wallace">EW</span>
             </div>
         </div>
         <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_qc1f1jf">
@@ -202,7 +202,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Endy Wallace">EW</span>
+                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Endy Wallace" title="Endy Wallace">EW</span>
                             <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">Endy Wallace</h5>
                                 <div class="fd-quick-view__subtitle">Software Developer</div>
@@ -254,18 +254,18 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
 
                 <div class="fd-avatar-group__overflow-body">
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Gordon Smith" title="Gordon Smith">
                             <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
                         </span>
                     </div>
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" aria-label="John Doe"></span>
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" alt="John Doe" title="John Doe"></span>
                     </div>
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="John Moe">JM</span>
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="John Moe" title="John Moe">JM</span>
                     </div>
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" aria-label="Joe Bloggs">JB</span>
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="Joe Bloggs" title="Joe Bloggs">JB</span>
                     </div>
                 </div>
             </div>
@@ -276,42 +276,42 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
 individualType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Individual type of Avatar Group use the <code>--individual-type</code> modifier class <i>(<code>fd-avatar-group--individual-type</code> class)<i>.'
+        storyDescription: 'To use Individual type of Avatar Group use the `--individual-type` modifier class <i>(`fd-avatar-group--individual-type` class)<i>.'
     }
 };
 
 
 
 export const groupType = () => `<div class="fd-popover">
-    <div class="fd-popover__control">
-        <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m"
-             role="button"
-             tabindex="0"
-             aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
-             aria-haspopup="true"
-             aria-expanded="false"
-             onclick="onPopoverClick('popover_avatar-group_tztuj');">
+    <div class="fd-popover__control fd-avatar-group__popover-control"
+         role="button"
+         tabindex="0"
+         aria-label="Has popup type dialog Conjoined avatars, 6 avatars displayed, 8 avatars hidden, activate for complete list"
+         aria-haspopup="true"
+         aria-expanded="false"
+         onclick="onPopoverClick('popover_avatar-group_tztuj');">
+        <div class="fd-avatar-group fd-avatar-group--group-type fd-avatar-group--m">
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Wendy Wallace" title="Wendy Wallace">WW</span>
             </div>
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Simon Doe" title="Simon Doe">
                     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                 </span>
             </div>
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="John Doe" title="John Doe"></span>
             </div>
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Endy Wallace">EW</span>
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Endy Wallace" title="Endy Wallace">EW</span>
             </div>
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Whitney Copper" title="Whitney Copper">
                     <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
                 </span>
             </div>
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" aria-label="John Doe"></span>
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" alt="John Doe" title="John Doe"></span>
             </div>
         
             <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m" role="button" tabindex="-1">
@@ -328,63 +328,63 @@ export const groupType = () => `<div class="fd-popover">
                         <div class="fd-bar__element">Team Members (14)</div>
                     </div>
                 </div>
-            </div>  
+            </div>
         
-            <div class="fd-avatar-group__overflow-body"> 
+            <div class="fd-avatar-group__overflow-body">
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Wendy Wallace">WW</span>
-                </div>                    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Wendy Wallace" title="Wendy Wallace">WW</span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Sarah Smith" title="Sarah Smith">
                         <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
                     </span>
-                </div>    
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-                </div>    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Endy Wallace">EW</span>
-                </div>    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Endy Wallace" title="Endy Wallace">EW</span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Whitney Bow" title="Whitney Bow">
                         <i class="fd-avatar__icon sap-icon--washing-machine" role="presentation"></i>
                     </span>
-                </div>    
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" aria-label="John Doe"></span>
-                </div>    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Andy Wallace">AW</span>
-                </div>    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Andy Wallace" title="Andy Wallace">AW</span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="John Carter" title="John Carter">
                         <i class="fd-avatar__icon sap-icon--account" role="presentation"></i>
                     </span>
-                </div>    
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
-                </div>    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="John Moe">JM</span>
-                </div>    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="John Moe" title="John Moe">JM</span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Joe Bloggs">JB</span>
-                </div>    
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Joe Bloggs" title="Joe Bloggs">JB</span>
+                </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Avatar">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Simon Swan" title="Simon Swan">
                         <i class="fd-avatar__icon sap-icon--visits" role="presentation"></i>
                     </span>
-                </div>    
-                <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/4.svg')" role="img" aria-label="John Doe"></span>
-                </div>    
-                <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Fred Bloggs">FB</span>
                 </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" aria-label="Jan Alleman">JA</span>
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/4.svg')" role="img" alt="John Doe" title="John Doe"></span>
                 </div>
-            </div> 
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Fred Bloggs" title="Fred Bloggs">FB</span>
+                </div>
+                <div class="fd-avatar-group__item">
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Jan Alleman" title="Jan Alleman">JA</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -393,7 +393,7 @@ export const groupType = () => `<div class="fd-popover">
 groupType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Group type of Avatar Group use the <code>--group-type</code> modifier class <i>(<code>fd-avatar-group--group-type</code> class)<i>.'
+        storyDescription: 'To use Group type of Avatar Group use the `--group-type` modifier class <i>(`fd-avatar-group--group-type` class)<i>.'
     }
 };
 
