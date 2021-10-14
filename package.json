@@ -66,7 +66,7 @@
     "@storybook/addon-docs": "6.3.10",
     "@storybook/addon-links": "6.3.10",
     "@storybook/addon-storyshots": "6.3.10",
-    "@storybook/addon-toolbars": "6.3.10",
+    "@storybook/addon-toolbars": "6.3.12",
     "@storybook/addon-viewport": "6.3.10",
     "@storybook/addons": "6.3.10",
     "@storybook/html": "6.3.10",
