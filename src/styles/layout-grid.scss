@@ -141,11 +141,13 @@ $cols: 12;
     }
 
     .#{$blockCol} {
-      padding: $vertical-gutter $horizontal-gutter 0 $horizontal-gutter;
+      padding-top: $vertical-gutter;
     }
   }
 
   .#{$blockCol} {
+    padding: 0 $horizontal-gutter;
+
     @at-root {
       @include responsive-column(map-get($size, $md));
     }
