@@ -10,12 +10,13 @@ $gridCol: #{$fd-namespace}-col;
 
 $cols: 12;
 $gutter: 0.25rem;
+$groupGutter: 1rem;
 
 @mixin fd-form-col-paddings($colSelector) {
   .#{$gridContainer}.#{$blockContainer} .#{$gridRow} {
     @for $col from 1 through $cols - 1 {
       .#{$colSelector}--#{$col} {
-        .fd-form-label {
+        .#{$fd-namespace}-form-label {
           float: right;
           padding-bottom: 0;
 
@@ -28,7 +29,7 @@ $gutter: 0.25rem;
 
     .#{$colSelector},
     .#{$colSelector}--12 {
-      .fd-form-label {
+      .#{$fd-namespace}-form-label {
         float: left;
         padding-bottom: 0.125rem;
 
@@ -41,7 +42,7 @@ $gutter: 0.25rem;
 }
 
 .#{$gridContainer}.#{$blockContainer} {
-  padding: 1rem;
+  padding: $groupGutter;
 
   .#{$gridRow} {
     align-items: center;
@@ -61,25 +62,20 @@ $gutter: 0.25rem;
 
     .#{$gridCol} {
       padding-top: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
 
-      .fd-select__control {
+      @include fd-ellipsis();
+
+      .#{$fd-namespace}-select__control {
         margin: 0.25rem 0;
       }
 
-      .fd-form-label {
-        margin-right: 0;
-        padding-right: 0.5rem;
-
-        @include fd-rtl() {
-          margin-left: 0;
-          padding-left: 0.5rem;
-        }
+      .#{$fd-namespace}-form-label {
+        @include fd-set-margin-right(0);
+        @include fd-set-padding-right(0.5rem);
       }
 
       &__form-group {
-        padding: 1rem;
+        padding: $groupGutter;
       }
     }
 
@@ -95,7 +91,7 @@ $gutter: 0.25rem;
 
 @media (min-width: 600px) {
   .#{$gridContainer}.#{$blockContainer} {
-    padding: 1rem;
+    padding: $groupGutter;
 
     .#{$gridRow} {
       margin: 0 -#{$gutter};
@@ -105,7 +101,7 @@ $gutter: 0.25rem;
         padding: 0 $gutter;
 
         &__form-group {
-          padding: 1rem;
+          padding: $groupGutter;
         }
       }
     }
