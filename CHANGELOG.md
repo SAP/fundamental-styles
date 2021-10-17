@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.48...v0.20.1-rc.49) (2021-10-17)
+
+
+### Bug Fixes
+
+* **styles:** form layout grid fixes & refactoring ([#2830](https://github.com/SAP/fundamental-styles/issues/2830)) ([0ba7461](https://github.com/SAP/fundamental-styles/commit/0ba746104cbc3f9604aa476244785d92fd8770d2))
+
 ### [0.20.1-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.47...v0.20.1-rc.48) (2021-10-16)
 
 ### [0.20.1-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.46...v0.20.1-rc.47) (2021-10-15)
