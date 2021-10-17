@@ -2,235 +2,127 @@
 @import "./layout-grid.scss";
 
 $block: #{$fd-namespace}-form-layout-grid;
-$blockCol: #{$fd-namespace}-col;
-$blockContainer: #{$fd-namespace}-container;
-$blockRow: #{$fd-namespace}-row;
-$cols: 11;
+$blockContainer: #{$block}-container;
 
-@mixin placement($direction) {
-  .fd-form-label {
-    float: $direction;
+$gridContainer: #{$fd-namespace}-container;
+$gridRow: #{$fd-namespace}-row;
+$gridCol: #{$fd-namespace}-col;
+
+$cols: 12;
+$gutter: 0.25rem;
+$groupGutter: 1rem;
+
+@mixin fd-form-col-paddings($colSelector) {
+  .#{$gridContainer}.#{$blockContainer} .#{$gridRow} {
+    @for $col from 1 through $cols - 1 {
+      .#{$colSelector}--#{$col} {
+        .#{$fd-namespace}-form-label {
+          float: right;
+          padding-bottom: 0;
+
+          @include fd-rtl() {
+            float: left;
+          }
+        }
+      }
+    }
+
+    .#{$colSelector},
+    .#{$colSelector}--12 {
+      .#{$fd-namespace}-form-label {
+        float: left;
+        padding-bottom: 0.125rem;
+
+        @include fd-rtl() {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .#{$gridContainer}.#{$blockContainer}--vertical .#{$gridRow} {
+    .#{$colSelector},
+    .#{$colSelector}--12 {
+      .#{$fd-namespace}-form-label {
+        margin-top: 0.625rem;
+      }
+    }
   }
 }
 
-.#{$blockContainer}.#{$block}-container.#{$blockCol}--compact {
-  padding: 0;
+.#{$gridContainer}.#{$blockContainer} {
+  padding: $groupGutter;
+
+  .#{$gridRow} {
+    align-items: center;
+    margin-bottom: 0.625rem;
+
+    &--top {
+      align-items: start;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .#{$gridCol} {
+      padding-top: 0;
+
+      @include fd-ellipsis();
+
+      .#{$fd-namespace}-select__control {
+        margin: 0.25rem 0;
+      }
+
+      .#{$fd-namespace}-form-label {
+        @include fd-set-margin-right(0);
+        @include fd-set-padding-right(0.5rem);
+      }
+
+      &__form-group {
+        padding: $groupGutter;
+      }
+    }
+
+    .#{$gridRow}__form-item {
+      flex-direction: row;
+    }
+  }
 }
 
 @media (min-width: 0) {
-  .#{$blockContainer}.#{$block}-container {
-    margin: 0 -0.25rem;
-
-    & > .fd-row {
-      & > :first-child & :not(.fd-col--wrap) {
-        display: flex;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-
-    .#{$blockRow},
-    .#{$blockRow}+.#{$blockRow} {
-      margin-top: 0;
-    }
-
-    .#{$blockRow} {
-      align-items: center;
-      margin-top: 0;
-      margin-bottom: 0.625rem;
-
-      &--top {
-        align-items: start;
-      }
-
-      .#{$blockCol} {
-        padding: 0 0.25rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        &--compact {
-          padding: 0 1rem;
-        }
-
-        @include placement('left');
-
-        @include fd-rtl() {
-          @include placement('right');
-        }
-
-        .fd-select__control {
-          margin: 0.25rem 0;
-        }
-
-        .fd-form-label {
-          display: inline-block;
-          margin-right: 0;
-          padding-right: 0.5rem;
-          padding-bottom: 0.125rem;
-
-          @include fd-rtl() {
-            padding-left: 0.5rem;
-            margin-left: 0;
-            padding-right: 0;
-          }
-        }
-
-        @for $n from 0 through $cols {
-          &--#{$n} {
-            @include placement('right');
-
-            @include fd-rtl() {
-              @include placement('left');
-            }
-
-            margin-bottom: 0;
-
-            .fd-form-label {
-              padding-bottom: 0;
-            }
-          }
-        }
-
-        &--12 {
-          @include placement('left');
-
-          @include fd-rtl() {
-            @include placement('right');
-          }
-        }
-
-        .#{$blockRow} {
-          margin: 0 -0.25rem;
-        }
-      }
-
-      .#{$blockCol}__form-group {
-        padding: 1rem;
-      }
-      .#{$blockRow}__form-item {
-        flex-direction: row;
-      }
-    }
-
-    :last-child {
-      * > {
-        margin-bottom: 0;
-      }
-    }
-  }
+  @include fd-form-col-paddings('fd-col');
 }
 
 @media (min-width: 600px) {
-  .#{$blockContainer}.#{$block}-container {
-    .#{$blockRow} {
-      margin-bottom: 0;
+  .#{$gridContainer}.#{$blockContainer} {
+    padding: $groupGutter;
 
-      .#{$blockCol} {
-        .fd-form-label {
-          padding-bottom: 0;
-        }
+    .#{$gridRow} {
+      margin: 0 -#{$gutter};
+      min-width: calc(100% + #{$gutter} * 2);
 
-        @for $n from 0 through $cols {
-          &-md--#{$n} {
-            @include placement('right');
+      .#{$gridCol} {
+        padding: 0 $gutter;
 
-            @include fd-rtl() {
-              @include placement('left');
-            }
-
-            margin-bottom: 0;
-          }
-        }
-
-        &-md--12 {
-          @include placement('left');
-
-          @include fd-rtl() {
-            @include placement('right');
-          }
-
-          .fd-form-label {
-            padding-bottom: 0.125rem;
-          }
+        &__form-group {
+          padding: $groupGutter;
         }
       }
     }
   }
+
+  @include fd-form-col-paddings('fd-col-md');
 }
 
 @media (min-width: 1024px) {
-
-  .#{$blockContainer}.#{$block}-container {
-    .#{$blockRow} {
-      .#{$blockCol} {
-        .fd-form-label {
-          padding-bottom: 0;
-        }
-
-        @for $n from 0 through $cols {
-          &-lg--#{$n} {
-            @include placement('right');
-
-            @include fd-rtl() {
-              @include placement('left');
-            }
-
-            margin-bottom: 0;
-          }
-        }
-
-        &-lg--12 {
-          @include placement('left');
-
-          .fd-form-label {
-            padding-bottom: 0.125rem;
-          }
-        }
-      }
-
-      @include fd-rtl() {
-        @for $n from 0 through $cols {
-          .#{$blockCol}-lg--#{$n} {
-            @include placement('left');
-          }
-        }
-      }
-    }
-  }
+  @include fd-form-col-paddings('fd-col-lg');
 }
 
 @media (min-width: 1440px) {
-  .#{$blockContainer}.#{$block}-container {
-    .#{$blockRow} {
-      .#{$blockCol} {
-        .fd-form-label {
-          padding-bottom: 0;
-        }
-
-        @for $n from 0 through $cols {
-          &-xl--#{$n} {
-            @include placement('right');
-
-            @include fd-rtl() {
-              @include placement('left');
-            }
-
-            margin-bottom: 0;
-          }
-        }
-
-        &-xl--12 {
-          @include fd-rtl() {
-            @include placement('right');
-          }
-
-          @include placement('left');
-
-          .fd-form-label {
-            padding-bottom: 0.125rem;
-          }
-        }
-      }
-    }
-  }
+  @include fd-form-col-paddings('fd-col-xl');
 }

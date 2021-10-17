@@ -37,7 +37,7 @@ The dialog component is a container that appears in response to an action made b
 Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['dialog', 'input-group', 'icon', 'bar', 'button', 'title', 'icon', 'list', 'checkbox', 'busy-indicator']
+        components: ['dialog', 'input-group', 'icon', 'bar', 'button', 'title', 'icon', 'list', 'checkbox', 'busy-indicator', 'form-label', 'form-layout-grid', 'layout-grid', 'input', 'popover', 'select', 'textarea']
     }
 };
 
@@ -468,3 +468,217 @@ Loading.parameters = {
     }
 };
 
+export const horizontalFormInDialog = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+            <div class="fd-bar__element">
+                <h2 class="fd-title fd-title--h5" id="dialog-title-22">
+                Form Dialog
+                </h2>
+            </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            <div class="fd-container fd-form-layout-grid-container">
+                <div class="fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4">
+                        <label class="fd-form-label" for="input-222-name">Name:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8">
+                        <input class="fd-input" type="text" id="input-222-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
+                </div>
+                <div class="fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4">
+                        <label class="fd-form-label fd-form-label--required" for="input-233-street">Street/No.: </label>
+                    </div>
+                    <div class="fd-col fd-col-md--10 fd-col-lg--8">
+                        <div class="fd-row">
+                            <div class="fd-col fd-col--4">
+                                <input class="fd-input" type="text" id="input-233-street" placeholder="Enter address" value="Myrtle St.">
+                            </div>
+                            <div class="fd-col fd-col--8">
+                                <input class="fd-input" type="text" id="input-233-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fd-row">
+                    <div class="fd-col fd-col-md--2  fd-col-lg--4">
+                        <label class="fd-form-label fd-form-label--required" for="input-233-zip">ZIP Code/City: </label>
+                    </div>
+                    <div class="fd-col fd-col-md--10  fd-col-lg--8">
+                        <div class="fd-row">
+                            <div class="fd-col fd-col--8">
+                                <input class="fd-input" type="text" id="input-233-zip" placeholder="Enter ZIP Code" value="43823">
+                            </div>
+                            <div class="fd-col fd-col--4">
+                                <input class="fd-input" type="text" id="input-233-city" placeholder="Enter City" aria-label="City" value="Downtown">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fd-row">
+                    <div class="fd-col fd-col-md--2 fd-col-lg--4">
+                        <label class="fd-form-label for="text-243-name">Bio: </label>
+                    </div>
+                    <div class="fd-col fd-col-md--10  fd-col-lg--8">
+                        <textarea class="fd-textarea" id="text-243-name" >Disabled textarea</textarea>
+                    </div>
+                </div>
+
+                <div class="fd-row">
+                    <div class="fd-col fd-col-md--2  fd-col-lg--4">
+                        <label class="fd-form-label" for="input-2-country">Country:</label>
+                    </div>
+                    <div class="fd-col fd-col-md--10  fd-col-lg--8">
+                        <div class="fd-popover" style="width:100%">
+                            <div class="fd-popover__control">
+                                <div class="fd-select">
+                                    <div aria-controls="h031XCM509" aria-expanded="false" aria-haspopup="listbox" class="fd-select__control" aria-label="Country" tabindex="0">
+                                        <span class="fd-select__text-content">US</span>
+                                        <span class="fd-button fd-button--transparent fd-select__button">
+                                            <i class="sap-icon--slim-arrow-down"></i>
+                                        </span>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+`;
+
+horizontalFormInDialog.storyName = 'Horizontal Form';
+horizontalFormInDialog.parameters = {
+    docs: {
+        description: {
+            story: ''
+        }
+    }
+};
+
+
+export const verticalFormInDialog = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+            <div class="fd-bar__element">
+                <h2 class="fd-title fd-title--h5" id="dialog-title-223">
+                Form Dialog
+                </h2>
+            </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical">
+                <div class="fd-row">
+                    <div class="fd-col">
+                        <label class="fd-form-label" for="input-2224-name">Name:</label>
+                    </div>
+                    <div class="fd-col">
+                        <input class="fd-input" type="text" id="input-2224-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+                    </div>
+                </div>
+                <div class="fd-row">
+                    <div class="fd-col">
+                        <label class="fd-form-label fd-form-label--required" for="input-2334-street">Street/No.: </label>
+                    </div>
+                    <div class="fd-col">
+                        <div class="fd-row">
+                            <div class="fd-col fd-col--4">
+                                <input class="fd-input" type="text" id="input-2334-street" placeholder="Enter address" value="Myrtle St.">
+                            </div>
+                            <div class="fd-col fd-col--8">
+                                <input class="fd-input" type="text" id="input-2334-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fd-row">
+                    <div class="fd-col">
+                        <label class="fd-form-label fd-form-label--required" for="input-2334-zip">ZIP Code/City: </label>
+                    </div>
+                    <div class="fd-col">
+                        <div class="fd-row">
+                            <div class="fd-col fd-col--8">
+                                <input class="fd-input" type="text" id="input-2334-zip" placeholder="Enter ZIP Code" value="43823">
+                            </div>
+                            <div class="fd-col fd-col--4">
+                                <input class="fd-input" type="text" id="input-2334-city" placeholder="Enter City" aria-label="City" value="Downtown">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fd-row">
+                    <div class="fd-col">
+                        <label class="fd-form-label for="text-2434-name">Bio: </label>
+                    </div>
+                    <div class="fd-col">
+                        <textarea class="fd-textarea" id="text-2434-name" >Disabled textarea</textarea>
+                    </div>
+                </div>
+
+                <div class="fd-row">
+                    <div class="fd-col">
+                        <label class="fd-form-label" for="input-2-country">Country:</label>
+                    </div>
+                    <div class="fd-col">
+                        <div class="fd-popover" style="width:100%">
+                            <div class="fd-popover__control">
+                                <div class="fd-select">
+                                    <div aria-controls="h031XCM509" aria-expanded="false" aria-haspopup="listbox" class="fd-select__control" aria-label="Country" tabindex="0">
+                                        <span class="fd-select__text-content">US</span>
+                                        <span class="fd-button fd-button--transparent fd-select__button">
+                                            <i class="sap-icon--slim-arrow-down"></i>
+                                        </span>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+`;
+
+verticalFormInDialog.storyName = 'Vertical Form';
+verticalFormInDialog.parameters = {
+    docs: {
+        description: {
+            story: ''
+        }
+    }
+};
