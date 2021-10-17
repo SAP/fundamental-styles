@@ -10,6 +10,11 @@ exports[`Storyshots Components/Dialog Draggable 1`] = `
 
 `;
 
+exports[`Storyshots Components/Dialog Horizontal Form 1`] = `
+
+
+`;
+
 exports[`Storyshots Components/Dialog Loading 1`] = `
 
 
@@ -471,4 +476,9 @@ exports[`Storyshots Components/Dialog Sizes 1`] = `
   
 
 </section>
+`;
+
+exports[`Storyshots Components/Dialog Vertical Form 1`] = `
+
+
 `;
