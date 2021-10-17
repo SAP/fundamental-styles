@@ -39,6 +39,15 @@ $groupGutter: 1rem;
       }
     }
   }
+
+  .#{$gridContainer}.#{$blockContainer}--vertical .#{$gridRow} {
+    .#{$colSelector},
+    .#{$colSelector}--12 {
+      .#{$fd-namespace}-form-label {
+        margin-top: 0.625rem;
+      }
+    }
+  }
 }
 
 .#{$gridContainer}.#{$blockContainer} {
