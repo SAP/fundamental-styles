@@ -40,7 +40,7 @@ $groupGutter: 1rem;
     }
   }
 
-  .#{$gridContainer}.#{$blockContainer}--vertical .#{$gridRow} {
+  .#{$gridContainer}.#{$blockContainer}--vertical .#{$gridRow}:not(:first-child) {
     .#{$colSelector},
     .#{$colSelector}--12 {
       .#{$fd-namespace}-form-label {
