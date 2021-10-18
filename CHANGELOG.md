@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.49...v0.20.1-rc.50) (2021-10-18)
+
+
+### Bug Fixes
+
+* **styles:** remove extra margin from the first label in vertical layout form [ci visual] ([#2835](https://github.com/SAP/fundamental-styles/issues/2835)) ([cd6ee03](https://github.com/SAP/fundamental-styles/commit/cd6ee032a23c3abd2eaf5984bb97daedac766f9c))
+
 ### [0.20.1-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.48...v0.20.1-rc.49) (2021-10-17)
 
 
