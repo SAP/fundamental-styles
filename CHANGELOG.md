@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.50...v0.20.1-rc.51) (2021-10-19)
+
+
+### Bug Fixes
+
+* **styles:** add fix to radio button component related to a11y issue in fundamental-ngx ([#2817](https://github.com/SAP/fundamental-styles/issues/2817)) ([f0fb31c](https://github.com/SAP/fundamental-styles/commit/f0fb31c56f8ae67e48107acbd697a51848bdf351))
+
 ### [0.20.1-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.49...v0.20.1-rc.50) (2021-10-18)
 
 
