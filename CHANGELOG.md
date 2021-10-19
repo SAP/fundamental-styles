@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.51...v0.20.1-rc.52) (2021-10-19)
+
+
+### Bug Fixes
+
+* **styles:** focus entire rating indicator [ci visual] ([#2834](https://github.com/SAP/fundamental-styles/issues/2834)) ([79dd9ad](https://github.com/SAP/fundamental-styles/commit/79dd9ad517ab7e1deb36f604deae25b8d892ba6e))
+
 ### [0.20.1-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.50...v0.20.1-rc.51) (2021-10-19)
 
 
