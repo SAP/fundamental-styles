@@ -1,7 +1,8 @@
 :root {
   /** Dialog **/
   --fdDialog_Border_Radius: 0.75rem;
-  --fdDialog_Content_Box_Shadow: none;
+  --fdDialog_Content_Box_Shadow: var(--sapContent_Shadow3);
+  --fdDialog_Header_Box_Shadow: none;
 
   /* Title */
   --fdTitle_font-family: var(--sapFontHeaderFamily);
