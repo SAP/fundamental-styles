@@ -1,3 +1,8 @@
 :root {
-  /* Rating Indicator */
+  /** Dialog **/
+  --fdDialog_Border_Radius: 0.75rem;
+  --fdDialog_Content_Box_Shadow: none;
+
+  /* Title */
+  --fdTitle_font-family: var(--sapFontHeaderFamily);
 }

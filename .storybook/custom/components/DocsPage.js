@@ -47,7 +47,7 @@ const DocsPage = () => {
         return null;
     }
 
-    let [themeState, setThemeState] = useState('sap_fiori_3');
+    let [themeState, setThemeState] = useState('sap_horizon');
     const previousTheme = useRef();
 
     let [directionalityState, setDirectionalityState] = useState('ltr');

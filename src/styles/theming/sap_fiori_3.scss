@@ -151,6 +151,8 @@
 
   /** Dialog */
   --fdDialog_Background_Opacity: 0.6;
+  --fdDialog_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdDialog_Content_Box_Shadow: var(--sapContent_Shadow3);
 
   /* Grid List */
   --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
@@ -263,4 +265,7 @@
 
   /* Micro Process Flow */
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
+
+  /* Title */
+  --fdTitle_font-family: var(--sapFontFamily);
 }
