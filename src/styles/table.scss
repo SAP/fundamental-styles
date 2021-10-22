@@ -351,6 +351,12 @@ $block: #{$fd-namespace}-table;
         @include fd-selected() {
           @include fd-active() {
             background-color: var(--sapList_Active_Background);
+
+            &#{$block}__row--focusable {
+              @include fd-fiori-focus() {
+                outline-color: var(--sapContent_ContrastFocusColor);
+              }
+            }
           }
         }
       }
@@ -378,9 +384,15 @@ $block: #{$fd-namespace}-table;
     }
 
     &--activable {
+      @include fd-fiori-focus();
+
       @include fd-active() {
         * {
           color: var(--sapList_Active_TextColor) !important;
+        }
+
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
         }
       }
 
