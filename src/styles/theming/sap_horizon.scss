@@ -5,4 +5,11 @@
 
   /* Title */
   --fdTitle_font-family: var(--sapFontHeaderFamily);
+
+  /* MessageStrip */
+  --fdMessageStrip_Border_Width: 0.0625rem;
+  --fdMessageStrip_Border_Color_Success: #dbf782;
+  --fdMessageStrip_Border_Color_Error: #ff8ec6;
+  --fdMessageStrip_Border_Color_Warning: #ffe770;
+  --fdMessageStrip_Border_Color_Info: #7bcfff;
 }

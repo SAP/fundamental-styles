@@ -8,7 +8,7 @@
 $block: #{$fd-namespace}-message-strip;
 
 .#{$block} {
-  $fd-message-strip-border-radius: 0.25rem;
+  $fd-message-strip-border-radius: var(--sapElement_BorderCornerRadius);
   $fd-message-strip-padding: 0.4375rem 1rem;
   $fd-message-strip-padding-default: 1rem;
   $fd-message-strip-padding-dismissible: 2.5rem;
@@ -30,19 +30,19 @@ $block: #{$fd-namespace}-message-strip;
 
   // SUCCESS
   $fd-message-strip-background-color--success: var(--sapSuccessBackground) !default;
-  $fd-message-strip-border-color--success: var(--sapSuccessBorderColor) !default;
+  $fd-message-strip-border-color--success: var(--fdMessageStrip_Border_Color_Success) !default;
 
   // ERROR
   $fd-message-strip-background-color--error: var(--sapErrorBackground) !default;
-  $fd-message-strip-border-color--error: var(--sapErrorBorderColor) !default;
+  $fd-message-strip-border-color--error: var(--fdMessageStrip_Border_Color_Error) !default;
 
   // WARNING
   $fd-message-strip-background-color--warning: var(--sapWarningBackground) !default;
-  $fd-message-strip-border-color--warning: var(--sapWarningBorderColor) !default;
+  $fd-message-strip-border-color--warning: var(--fdMessageStrip_Border_Color_Warning) !default;
 
   // INFORMATION
   $fd-message-strip-background-color--information: var(--sapInformationBackground) !default;
-  $fd-message-strip-border-color--information: var(--sapInformationBorderColor) !default;
+  $fd-message-strip-border-color--information: var(--fdMessageStrip_Border_Color_Info) !default;
 
   // NEUTRAL
   $fd-message-strip-background-color: var(--sapNeutralBackground) !default;

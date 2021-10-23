@@ -158,6 +158,10 @@
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.125rem;
+  --fdMessageStrip_Border_Color_Success: var(--sapSuccessBorderColor);
+  --fdMessageStrip_Border_Color_Error: var(--sapErrorBorderColor);
+  --fdMessageStrip_Border_Color_Warning: var(--sapWarningBorderColor);
+  --fdMessageStrip_Border_Color_Info: var(--sapInformationBorderColor);
 
   /* Page */
   --fdPage_List_Background: var(--sapBackgroundColor);
