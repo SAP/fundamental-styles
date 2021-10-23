@@ -5,4 +5,10 @@
 
   /* Title */
   --fdTitle_font-family: var(--sapFontHeaderFamily);
+
+  /* Panel */
+  --fdPanel_Background: var(--sapGroup_ContentBackground);
+  --fdPanel_Title_Font_Weight: bold;
+  --fdPanel_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdPanel_Content_Border_Bottom: none;
 }
