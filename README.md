@@ -76,7 +76,7 @@ This project does not contain fonts and icons - they must be added to your proje
 
     @font-face {
         font-family: "SAP-icons";
-        src: url("~@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/SAP-icons.woff")
+        src: url("~@sap-theming/theming-base-content/content/Base/sap_horizon/baseTheme/fonts/SAP-icons.woff")
             format("woff");
         font-weight: normal;
         font-style: normal;
