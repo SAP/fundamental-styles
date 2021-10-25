@@ -39,6 +39,12 @@ $block: #{$fd-namespace}-table;
     }
   }
 
+  @mixin fd-table-row-active-focus() {
+    @include fd-fiori-focus() {
+      outline-color: var(--sapContent_ContrastFocusColor);
+    }
+  }
+
   @mixin fd-table-nested-cell-padding($levels: 20, $content-density-cozy: false, $include-expand: false) {
     $level-padding: 0.5rem;
     $second-level-padding: 1.5rem;
@@ -87,9 +93,7 @@ $block: #{$fd-namespace}-table;
       @include fd-table-active();
 
       &--focusable {
-        @include fd-fiori-focus() {
-          outline-color: var(--sapContent_ContrastFocusColor);
-        }
+        @include fd-table-row-active-focus();
       }
     }
   }
@@ -353,9 +357,7 @@ $block: #{$fd-namespace}-table;
             background-color: var(--sapList_Active_Background);
 
             &#{$block}__row--focusable {
-              @include fd-fiori-focus() {
-                outline-color: var(--sapContent_ContrastFocusColor);
-              }
+              @include fd-table-row-active-focus();
             }
           }
         }
@@ -391,9 +393,7 @@ $block: #{$fd-namespace}-table;
           color: var(--sapList_Active_TextColor) !important;
         }
 
-        @include fd-fiori-focus() {
-          outline-color: var(--sapContent_ContrastFocusColor);
-        }
+        @include fd-table-row-active-focus();
       }
 
       @include fd-trigger-element();
