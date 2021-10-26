@@ -3,7 +3,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-busy-indicator;
-$fd-dots-color: var(--sapContent_IconColor);
+$fd-dots-color: var(--fdBusy_Indicator_Dot_Color);
 $fd-dots-color-contrast: var(--sapContent_ContrastIconColor);
 // default sizes
 $fd-dots-size: 0.5rem;
