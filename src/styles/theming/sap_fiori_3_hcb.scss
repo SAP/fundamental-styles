@@ -153,6 +153,11 @@
 
   /* Card */
   --fdCard_Box_Shadow: none;
+  --fdCard_Box_Shadow_Hover: none;
+  --fdCard_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdCard_Title_Font_Weight: normal;
+  --fdCard_Focus_Outline_Offset: 0;
+  --fdCard_Focus_Outline_Bottom_Offset: 0.0625rem;
 
   /* Badge */
   --fdBadge_Border_Color: var(--sapContent_ForegroundBorderColor);
@@ -229,6 +234,13 @@
   --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapContent_NonInteractiveIconColor);
   --fdSlide_Tile_Indicator_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
   --fdSlide_Tile_Indicator_Active_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
+  --fdTile_Box_Shadow: var(--sapContent_Shadow0);
+  --fdTile_Box_Shadow_Hover: var(--sapContent_Shadow0);
+  --fdTile_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdTile_Title_Font_Weight: normal;
+  --fdTile_Border: 0.0625rem solid var(--sapTile_BorderColor);
+  --fdTile_Border_Hover_Active: 0.0625rem solid var(--sapTile_Interactive_BorderColor);
+  --fdTile_Focus_Outline_Offset: 0;
 
   /* Icon Tab Bar */
   --fdIcon_Tab_Bar_Selection_Bar_Height: 0.313rem;
