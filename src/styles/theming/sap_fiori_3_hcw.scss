@@ -42,10 +42,31 @@
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
+  --fdAvatar_Color: var(--sapContent_ContrastTextColor);
+  --fdAvatar_Tile_Color: var(--sapContent_ContrastTextColor);
   --fdAvatar_Tile_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar-Transparent_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_1: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_2: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_3: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_4: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_5: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_6: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_7: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_8: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_9: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_10: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Background_1: var(--sapAccentColor1);
+  --fdAvatar_Accent_Color_Background_2: var(--sapAccentColor2);
+  --fdAvatar_Accent_Color_Background_3: var(--sapAccentColor3);
+  --fdAvatar_Accent_Color_Background_4: var(--sapAccentColor4);
+  --fdAvatar_Accent_Color_Background_5: var(--sapAccentColor5);
+  --fdAvatar_Accent_Color_Background_6: var(--sapAccentColor6);
+  --fdAvatar_Accent_Color_Background_7: var(--sapAccentColor7);
+  --fdAvatar_Accent_Color_Background_8: var(--sapAccentColor8);
+  --fdAvatar_Accent_Color_Background_9: var(--sapAccentColor9);
+  --fdAvatar_Accent_Color_Background_10: var(--sapAccentColor10);
 
   /* Avatar Group */
   --fdAvatarGroup_MoreButton_Border: 0.125rem;
@@ -132,6 +153,11 @@
 
   /* Card */
   --fdCard_Box_Shadow: none;
+  --fdCard_Box_Shadow_Hover: none;
+  --fdCard_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdCard_Title_Font_Weight: normal;
+  --fdCard_Focus_Outline_Offset: 0;
+  --fdCard_Focus_Outline_Bottom_Offset: 0.0625rem;
 
   /* Badge */
   --fdBadge_Border_Color: var(--sapContent_ForegroundBorderColor);
@@ -152,6 +178,7 @@
   --fdDialog_Background_Opacity: 0.8;
   --fdDialog_Border_Radius: var(--sapElement_BorderCornerRadius);
   --fdDialog_Content_Box_Shadow: var(--sapContent_Shadow3);
+  --fdDialog_Header_Box_Shadow: var(--sapContent_HeaderShadow);
 
   /* Grid List */
   --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
@@ -215,6 +242,13 @@
   --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapContent_NonInteractiveIconColor);
   --fdSlide_Tile_Indicator_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
   --fdSlide_Tile_Indicator_Active_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
+  --fdTile_Box_Shadow: var(--sapContent_Shadow0);
+  --fdTile_Box_Shadow_Hover: var(--sapContent_Shadow0);
+  --fdTile_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdTile_Title_Font_Weight: normal;
+  --fdTile_Border: 0.0625rem solid var(--sapTile_BorderColor);
+  --fdTile_Border_Hover_Active: 0.0625rem solid var(--sapTile_Interactive_BorderColor);
+  --fdTile_Focus_Outline_Offset: 0;
 
   /* Icon Tab Bar */
   --fdIcon_Tab_Bar_Selection_Bar_Height: 0.313rem;
@@ -275,4 +309,16 @@
 
   /* Title */
   --fdTitle_font-family: var(--sapFontFamily);
+
+  /* Panel */
+  --fdPanel_Background: transparent;
+  --fdPanel_Title_Font_Weight: normal;
+  --fdPanel_Border_Radius: 0;
+  --fdPanel_Content_Border_Bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
+
+  /* Busy Indicator */
+  --fdBusy_Indicator_Dot_Color: var(--sapContent_IconColor);
+
+  /* Object Status */
+  --fdObject_Status_Border_Radius: var(--sapElement_BorderCornerRadius);
 }

@@ -23,22 +23,22 @@ $block: #{$fd-namespace}-avatar;
   );
 
   $fd-avatar-accent-colors: (
-    "1": ("background-color": var(--sapAccentColor1)),
-    "2": ("background-color": var(--sapAccentColor2)),
-    "3": ("background-color": var(--sapAccentColor3)),
-    "4": ("background-color": var(--sapAccentColor4)),
-    "5": ("background-color": var(--sapAccentColor5)),
-    "6": ("background-color": var(--sapAccentColor6)),
-    "7": ("background-color": var(--sapAccentColor7)),
-    "8": ("background-color": var(--sapAccentColor8)),
-    "9": ("background-color": var(--sapAccentColor9)),
-    "10": ("background-color": var(--sapAccentColor10))
+    "1": ("background-color": var(--fdAvatar_Accent_Color_Background_1), "color": var(--fdAvatar_Accent_Color_Text_1)),
+    "2": ("background-color": var(--fdAvatar_Accent_Color_Background_2), "color": var(--fdAvatar_Accent_Color_Text_2)),
+    "3": ("background-color": var(--fdAvatar_Accent_Color_Background_3), "color": var(--fdAvatar_Accent_Color_Text_3)),
+    "4": ("background-color": var(--fdAvatar_Accent_Color_Background_4), "color": var(--fdAvatar_Accent_Color_Text_4)),
+    "5": ("background-color": var(--fdAvatar_Accent_Color_Background_5), "color": var(--fdAvatar_Accent_Color_Text_5)),
+    "6": ("background-color": var(--fdAvatar_Accent_Color_Background_6), "color": var(--fdAvatar_Accent_Color_Text_6)),
+    "7": ("background-color": var(--fdAvatar_Accent_Color_Background_7), "color": var(--fdAvatar_Accent_Color_Text_7)),
+    "8": ("background-color": var(--fdAvatar_Accent_Color_Background_8), "color": var(--fdAvatar_Accent_Color_Text_8)),
+    "9": ("background-color": var(--fdAvatar_Accent_Color_Background_9), "color": var(--fdAvatar_Accent_Color_Text_9)),
+    "10": ("background-color": var(--fdAvatar_Accent_Color_Background_10), "color": var(--fdAvatar_Accent_Color_Text_10))
   );
 
   @include fd-reset();
 
   border: var(--fdAvatar_Border);
-  color: var(--sapContent_ContrastTextColor);
+  color: var(--fdAvatar_Color);
   background-color: $fd-avatar-background-color;
   display: inline-block;
   position: relative;
@@ -104,11 +104,13 @@ $block: #{$fd-namespace}-avatar;
 
   // placeholder background
   &--placeholder {
+    color: var(--sapContent_ContrastTextColor);
     background-color: var(--sapContent_ImagePlaceholderBackground);
   }
 
   // tile background
   &--tile {
+    color: var(--fdAvatar_Tile_Color);
     background-color: var(--fdAvatar_Tile_BackgroundColor);
   }
 
@@ -121,7 +123,7 @@ $block: #{$fd-namespace}-avatar;
   @each $set-name, $color-set in $fd-avatar-accent-colors {
     &--accent-color-#{$set-name} {
       background-color: map_get($color-set, "background-color");
-      color: var(--fdAvatar_Accent_Color);
+      color: map_get($color-set, "color");
     }
   }
 

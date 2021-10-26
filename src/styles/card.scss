@@ -16,7 +16,6 @@ $fd-card-sections-horizontal-spacing: 2rem !default;
 $fd-card-sections-vertical-spacing: 1.75rem !default;
 $fd-card-content-avatar-text-spacing: 0.5rem !default;
 $fd-card-default-body-background-color: var(--sapTile_Background) !default;
-$fd-card-header-outline-offset: 0.0625rem !default;
 
 @mixin line-clamp($lines: 2) {
   display: -webkit-box;
@@ -36,10 +35,11 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       position: absolute;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-      top: $fd-card-header-outline-offset;
-      left: $fd-card-header-outline-offset;
-      right: $fd-card-header-outline-offset;
-      bottom: $fd-card-header-outline-offset * 2;
+      top: var(--fdCard_Focus_Outline_Offset);
+      left: var(--fdCard_Focus_Outline_Offset);
+      right: var(--fdCard_Focus_Outline_Offset);
+      bottom: var(--fdCard_Focus_Outline_Bottom_Offset);
+      border-radius: inherit;
       z-index: 3;
     }
   }
@@ -56,6 +56,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   box-shadow: var(--fdCard_Box_Shadow);
   border-radius: var(--sapElement_BorderCornerRadius);
   border: 0.0625rem solid var(--sapTile_BorderColor);
+
+  @include fd-hover() {
+    box-shadow: var(--fdCard_Box_Shadow_Hover);
+  }
 
   &__header {
     @include fd-reset();
@@ -106,8 +110,8 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
       @include fd-focus() {
         &::before {
-          top: $fd-card-header-outline-offset * 2;
-          bottom: $fd-card-header-outline-offset;
+          top: var(--fdCard_Focus_Outline_Bottom_Offset);
+          bottom: var(--fdCard_Focus_Outline_Offset);
         }
       }
     }
@@ -138,7 +142,8 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-reset();
     @include line-clamp(3);
 
-    font-family: var(--sapFontHeaderFamily);
+    font-family: var(--fdCard_Title_Font_Size);
+    font-weight: var(--fdCard_Title_Font_Weight);
     font-size: var(--sapFontHeader5Size);
     color: var(--sapTile_TitleTextColor);
     word-wrap: break-word;

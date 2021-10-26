@@ -117,6 +117,7 @@ $button: #{$fd-namespace}-button;
 
   &__header.#{$bar} {
     position: relative;
+    box-shadow: var(--fdDialog_Header_Box_Shadow);
   }
 
   &__body {
