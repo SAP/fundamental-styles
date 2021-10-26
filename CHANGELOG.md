@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.60...v0.20.1-rc.61) (2021-10-26)
+
+
+### Bug Fixes
+
+* **styles:** add focus state for activable row and cell [ci visual] ([#2841](https://github.com/SAP/fundamental-styles/issues/2841)) ([1f9a9be](https://github.com/SAP/fundamental-styles/commit/1f9a9be737847c00d5ad1a1913a2b651167d91e5))
+
 ### [0.20.1-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.59...v0.20.1-rc.60) (2021-10-26)
 
 ### [0.20.1-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.58...v0.20.1-rc.59) (2021-10-25)
