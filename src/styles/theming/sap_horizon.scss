@@ -37,4 +37,8 @@
 
   /* Busy Indicator */
   --fdBusy_Indicator_Dot_Color: var(--sapBrandColor);
+
+  /* Object Status */
+  --fdInverted_Object_Border_Width: 0;
+  --fdObject_Status_Border_Radius: 0.25rem;
 }
