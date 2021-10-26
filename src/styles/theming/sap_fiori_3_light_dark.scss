@@ -290,6 +290,12 @@
   /* Title */
   --fdTitle_font-family: var(--sapFontFamily);
 
+  /* Panel */
+  --fdPanel_Background: transparent;
+  --fdPanel_Title_Font_Weight: normal;
+  --fdPanel_Border_Radius: 0;
+  --fdPanel_Content_Border_Bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
+
   /* Busy Indicator */
   --fdBusy_Indicator_Dot_Color: var(--sapContent_IconColor);
 }
