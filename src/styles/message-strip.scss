@@ -18,7 +18,7 @@ $block: #{$fd-namespace}-message-strip;
   @mixin fd-message-strip-icon-container {
     position: absolute;
     width: 2.5rem;
-    top: 0.4375rem;
+    top: 0.3435rem;
     left: 0;
   }
 
@@ -125,7 +125,7 @@ $block: #{$fd-namespace}-message-strip;
   &--warning {
     &::before,
     &::after {
-      color: $fd-message-strip-border-color--warning;
+      color: var(--fdMessageStrip_Icon_Color_Warning);
     }
 
     background-color: $fd-message-strip-background-color--warning;
@@ -145,7 +145,7 @@ $block: #{$fd-namespace}-message-strip;
   &--error {
     &::before,
     &::after {
-      color: $fd-message-strip-border-color--error;
+      color: var(--fdMessageStrip_Icon_Color_Error);
     }
 
     background-color: $fd-message-strip-background-color--error;
@@ -161,7 +161,7 @@ $block: #{$fd-namespace}-message-strip;
   &--success {
     &::before,
     &::after {
-      color: $fd-message-strip-border-color--success;
+      color: var(--fdMessageStrip_Icon_Color_Success);
     }
 
     background-color: $fd-message-strip-background-color--success;
@@ -177,7 +177,7 @@ $block: #{$fd-namespace}-message-strip;
   &--information {
     &::before,
     &::after {
-      color: $fd-message-strip-border-color--information;
+      color: var(--fdMessageStrip_Icon_Color_Info);
     }
 
     background-color: $fd-message-strip-background-color--information;

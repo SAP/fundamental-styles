@@ -12,4 +12,8 @@
   --fdMessageStrip_Border_Color_Error: #ff8ec6;
   --fdMessageStrip_Border_Color_Warning: #ffe770;
   --fdMessageStrip_Border_Color_Info: #7bcfff;
+  --fdMessageStrip_Icon_Color_Success: var(--sapSuccessColor);
+  --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
+  --fdMessageStrip_Icon_Color_Warning: var(--sapWarningColor);
+  --fdMessageStrip_Icon_Color_Info: var(--sapInformationColor);
 }
