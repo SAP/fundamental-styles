@@ -4,9 +4,6 @@
 
 $block: #{$fd-namespace}-tile;
 
-// BASE
-$fd-tile-interactive-border: 0.0625rem solid var(--sapTile_Interactive_BorderColor);
-
 // SIZES
 $fd-tile-height: 11rem !default;
 $fd-tile-width: 11rem !default;
@@ -103,10 +100,10 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       display: block;
       border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
       border-radius: $fd-tile-border-radius;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: var(--fdTile_Focus_Outline_Offset);
+      left: var(--fdTile_Focus_Outline_Offset);
+      right: var(--fdTile_Focus_Outline_Offset);
+      bottom: var(--fdTile_Focus_Outline_Offset);
       z-index: 3;
     }
   }
@@ -128,20 +125,21 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   position: relative;
   padding: $fd-tile-padding;
   background: var(--sapTile_Background);
-  box-shadow: var(--sapContent_Shadow0);
+  box-shadow: var(--fdTile_Box_Shadow);
   border-radius: $fd-tile-border-radius;
-  border: 0.0625rem solid var(--sapTile_BorderColor);
+  border: var(--fdTile_Border);
   cursor: pointer;
 
   // STATES
   @include fd-active() {
     background: var(--sapTile_Active_Background);
-    border: $fd-tile-interactive-border;
+    border: var(--fdTile_Border_Hover_Active);
   }
 
   @include fd-hover() {
     background: var(--sapTile_Hover_Background);
-    border: $fd-tile-interactive-border;
+    border: var(--fdTile_Border_Hover_Active);
+    box-shadow: var(--fdTile_Box_Shadow_Hover);
 
     .#{$block}__toggle {
       display: block;
@@ -214,7 +212,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     @include line-clamp();
 
     color: var(--sapTile_TitleTextColor);
-    font-size: var(--sapFontHeader5Size);
+    font-size: var(--fdTile_Title_Font_Size);
+    font-weight: var(--fdTile_Title_Font_Weight);
   }
 
   &__subtitle,
