@@ -7,6 +7,17 @@
   /* Title */
   --fdTitle_font-family: var(--sapFontHeaderFamily);
 
+  /* MessageStrip */
+  --fdMessageStrip_Border_Width: 0.0625rem;
+  --fdMessageStrip_Border_Color_Success: #dbf782;
+  --fdMessageStrip_Border_Color_Error: #ff8ec6;
+  --fdMessageStrip_Border_Color_Warning: #ffe770;
+  --fdMessageStrip_Border_Color_Info: #7bcfff;
+  --fdMessageStrip_Icon_Color_Success: var(--sapSuccessColor);
+  --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
+  --fdMessageStrip_Icon_Color_Warning: var(--sapWarningColor);
+  --fdMessageStrip_Icon_Color_Info: var(--sapInformationColor);
+
   /* Panel */
   --fdPanel_Background: var(--sapGroup_ContentBackground);
   --fdPanel_Title_Font_Weight: bold;
