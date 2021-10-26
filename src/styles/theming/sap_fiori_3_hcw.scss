@@ -42,10 +42,31 @@
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
+  --fdAvatar_Color: var(--sapContent_ContrastTextColor);
+  --fdAvatar_Tile_Color: var(--sapContent_ContrastTextColor);
   --fdAvatar_Tile_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar-Transparent_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
-  --fdAvatar_Accent_Color: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_1: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_2: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_3: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_4: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_5: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_6: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_7: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_8: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_9: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Text_10: var(--sapBackgroundColor);
+  --fdAvatar_Accent_Color_Background_1: var(--sapAccentColor1);
+  --fdAvatar_Accent_Color_Background_2: var(--sapAccentColor2);
+  --fdAvatar_Accent_Color_Background_3: var(--sapAccentColor3);
+  --fdAvatar_Accent_Color_Background_4: var(--sapAccentColor4);
+  --fdAvatar_Accent_Color_Background_5: var(--sapAccentColor5);
+  --fdAvatar_Accent_Color_Background_6: var(--sapAccentColor6);
+  --fdAvatar_Accent_Color_Background_7: var(--sapAccentColor7);
+  --fdAvatar_Accent_Color_Background_8: var(--sapAccentColor8);
+  --fdAvatar_Accent_Color_Background_9: var(--sapAccentColor9);
+  --fdAvatar_Accent_Color_Background_10: var(--sapAccentColor10);
 
   /* Avatar Group */
   --fdAvatarGroup_MoreButton_Border: 0.125rem;
@@ -273,4 +294,7 @@
   --fdPanel_Title_Font_Weight: normal;
   --fdPanel_Border_Radius: 0;
   --fdPanel_Content_Border_Bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
+
+  /* Busy Indicator */
+  --fdBusy_Indicator_Dot_Color: var(--sapContent_IconColor);
 }
