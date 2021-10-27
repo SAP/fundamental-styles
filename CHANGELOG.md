@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.61...v0.20.1-rc.62) (2021-10-27)
+
+
+### Bug Fixes
+
+* **styles:** dialog resize handle alignment [ci visual] ([#2832](https://github.com/SAP/fundamental-styles/issues/2832)) ([d601993](https://github.com/SAP/fundamental-styles/commit/d60199328011d29df03a77faebb9a3f830ae82d6))
+
 ### [0.20.1-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.60...v0.20.1-rc.61) (2021-10-26)
 
 
