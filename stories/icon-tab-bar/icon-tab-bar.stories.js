@@ -1631,7 +1631,7 @@ navigationFlat.storyName = 'Flat Navigation';
 navigationFlat.parameters = {
     docs: {
         storyDescription: `The Flat Navigation offers the user an easy access to multiple pages per space. 
-        As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view. 
+        As the ShellNavigation (Fiori), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view. 
         The Flat Navigation Concept allows putting all entities of a single space directly into the first level of the Top Level Navigation Bar for direct access.
         Add the \`.fd-icon-tab-bar--navigation-flat\` modifier class to \`.fd-icon-tab-bar.fd-icon-tab-bar--navigation\` to achieve the flat navigation look and feel. The items that have separators need to receive the \`.fd-icon-tab-bar__item--with-separator\` modifier class to \`.fd-icon-tab-bar__item\` class. This will append a vertical separator line on the right hand side of the item with an 1rem offset.
         `
