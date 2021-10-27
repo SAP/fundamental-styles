@@ -1,4 +1,18 @@
 :root {
+  /* Rating Indicator */
+  // default mode
+  --fdRating_Indicator_Selected_Hover_Opacity: 1;
+  // Display Only mode
+  --fdRating_Indicator_Display_Only_Selected_Color: var(--sapTextColor);
+  // Disabled mode
+  --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
+  --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
+  --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
+  --fdRating_Indicator_Focus_Border_Radius: var(--sapField_BorderCornerRadius);
+  --fdRating_Indicator_Outline_Offset: 0.125rem;
+  --fdRating_Indicator_Selected_Hover_Color: #552cff;
+  --fdRating_Indicator_Selected_Down_Color: #5026ff;
+
   /** Dialog **/
   --fdDialog_Border_Radius: 0.75rem;
   --fdDialog_Content_Box_Shadow: var(--sapContent_Shadow3);
