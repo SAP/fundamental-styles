@@ -15,6 +15,11 @@ $fd-icon-tab-bar-filter-container-top-offset: 1.625rem !default;
 $fd-icon-tab-bar-overflow-button-border-radius: 0.75rem !default;
 $fd-icon-tab-bar-overflow-button-focus-offset: 0.125rem !default;
 $fd-icon-tab-bar-filter-container-top-offset-compact: 1.375rem !default;
+$fd-icon-tab-bar-dnd-separator-bar-horizontal-offset: -0.5rem !default;
+$fd-icon-tab-bar-dnd-separator-bar-vertical-offset: 0.125rem !default;
+$fd-icon-tab-bar-dnd-separator-circle-horizontal-offset: -0.7rem !default;
+$fd-icon-tab-bar-dnd-separator-circle-vertical-offset: -0.0625rem !default;
+$fd-icon-tab-bar-dnd-separator-circle-size: 0.5rem !default;
 
 $fd-icon-tab-bar-responsive-paddings: (
   'sm':  ('padding': 0 1rem),
@@ -360,29 +365,95 @@ $fd-icon-tab-bar-semantic-values: (
 
     &--dnd-hovered {
       background: var(--sapButton_Hover_Background);
+      box-shadow: inset 0 0 0 0.125rem var(--sapButton_Hover_BorderColor);
+
+      &.#{$block}__list-item {
+        // overriding basic and hover background for list-item
+        background: var(--sapButton_Hover_Background) !important;
+
+        .#{$block}__list-link {
+          background: none;
+        }
+      }
     }
 
-    &--dnd-separator {
+    @mixin icon-tab-dnd-separator($is-end: false) {
       position: relative;
 
+      // separator line
       &::before {
         content: '';
         position: absolute;
         top: 0;
-        left: -0.5rem;
         width: 0.125rem;
         height: 100%;
         background: var(--sapButton_Hover_BorderColor);
+
+        @if $is-end {
+          @include fd-set-position-right-pseudo($fd-icon-tab-bar-dnd-separator-bar-horizontal-offset);
+        } @else {
+          @include fd-set-position-left-pseudo($fd-icon-tab-bar-dnd-separator-bar-horizontal-offset);
+        }
       }
 
-      &-vertical {
+      // separator circle
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: $fd-icon-tab-bar-dnd-separator-circle-size;
+        height: $fd-icon-tab-bar-dnd-separator-circle-size;
+        border-radius: 50%;
+        border: 0.125rem solid var(--sapButton_Hover_BorderColor);
+        background: var(--sapObjectHeader_Background);
+
+        @if $is-end {
+          @include fd-set-position-right-pseudo($fd-icon-tab-bar-dnd-separator-circle-horizontal-offset);
+        } @else {
+          @include fd-set-position-left-pseudo($fd-icon-tab-bar-dnd-separator-circle-horizontal-offset);
+        }
+      }
+
+      // aligning vertically
+      &.#{$block}__list-item {
         &::before {
-          top: auto;
-          bottom: 0.25rem;
-          left: 0;
+          right: unset;
+
+          @include fd-set-position-left-pseudo(0.0625rem);
+
           width: 100%;
           height: 0.125rem;
+
+          @if $is-end {
+            top: unset;
+            bottom: $fd-icon-tab-bar-dnd-separator-bar-vertical-offset;
+          } @else {
+            top: $fd-icon-tab-bar-dnd-separator-bar-vertical-offset;
+          }
         }
+
+        &::after {
+          right: unset;
+
+          @include fd-set-position-left-pseudo(0);
+
+          z-index: 1;
+
+          @if $is-end {
+            top: unset;
+            bottom: $fd-icon-tab-bar-dnd-separator-circle-vertical-offset;
+          } @else {
+            top: $fd-icon-tab-bar-dnd-separator-circle-vertical-offset;
+          }
+        }
+      }
+    }
+
+    &--dnd-separator {
+      @include icon-tab-dnd-separator($is-end: false);
+
+      &-end {
+        @include icon-tab-dnd-separator($is-end: true);
       }
     }
   }

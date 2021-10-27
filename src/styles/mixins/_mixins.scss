@@ -203,6 +203,16 @@
   }
 }
 
+// using pseudo elements with attributes (e.g. [some-selector::before[dir="rtl"] ) is not acceptable by browser
+// creating a new mixin for rtl instead of fixing existing one to be sure nothing is broken
+@mixin fd-rtl-pseudo {
+  @at-root {
+    [dir="rtl"] & {
+      @content;
+    }
+  }
+}
+
 @mixin fd-link() {
   color: var(--sapLinkColor);
   text-decoration: var(--fdLink_Text_Decoration);
@@ -579,10 +589,28 @@
   }
 }
 
+@mixin fd-set-position-right-pseudo($right) {
+  right: $right;
+
+  @include fd-rtl-pseudo() {
+    right: auto;
+    left: $right;
+  }
+}
+
 @mixin fd-set-position-left($left) {
   left: $left;
 
   @include fd-rtl() {
+    left: auto;
+    right: $left;
+  }
+}
+
+@mixin fd-set-position-left-pseudo($left) {
+  left: $left;
+
+  @include fd-rtl-pseudo() {
     left: auto;
     right: $left;
   }
