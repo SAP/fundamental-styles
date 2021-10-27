@@ -84,7 +84,8 @@ $block: #{$fd-namespace}-rating-indicator;
   &__container {
     @include fd-reset();
 
-    @include fd-fiori-focus-within(0) {
+    @include fd-fiori-focus-within(var(--fdRating_Indicator_Outline_Offset)) {
+      border-radius: var(--fdRating_Indicator_Focus_Border_Radius);
       // do not show outline for each rating item
       // keeping it this way in order to preserve fallback behavior for IE
       .#{$block}__label, .#{$block}__input {
@@ -140,6 +141,11 @@ $block: #{$fd-namespace}-rating-indicator;
     &:hover::before {
       opacity: var(--fdRating_Indicator_Selected_Hover_Opacity);
       transition: opacity $fd-animation-speed ease-in;
+      color: var(--fdRating_Indicator_Selected_Hover_Color);
+    }
+
+    &:active::before {
+      color: var(--fdRating_Indicator_Selected_Down_Color);
     }
   }
 

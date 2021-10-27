@@ -11,6 +11,10 @@
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_DisabledTextColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_DisabledTextColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 1;
+  --fdRating_Indicator_Focus_Border_Radius: 0;
+  --fdRating_Indicator_Outline_Offset: 0;
+  --fdRating_Indicator_Selected_Hover_Color: var(--sapContent_RatedColor);
+  --fdRating_Indicator_Selected_Down_Color: var(--sapContent_RatedColor);
 
   /* Wizard */
   --fdWizard_Completed_Step_Color: var(--sapTextColor);
