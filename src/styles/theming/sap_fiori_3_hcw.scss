@@ -82,10 +82,36 @@
   /* Radio */
   --fdRadio_Selected_Color: var(--sapAccentColor6);
   --fdRadio_State_Border_Type: dashed;
+  --fdRadio_ReadOnly_State_Border_Type: solid;
+  --fdRadio_Warning_State_Color: var(--sapField_TextColor);
+  --fdRadio_Label_Color: inherit;
+  --fdRadio_Default_State_Hover_BoxShadow: none;
+  --fdRadio_Information_State_Hover_BoxShadow: none;
+  --fdRadio_Error_State_Hover_BoxShadow: none;
+  --fdRadio_Warning_State_Hover_BoxShadow: none;
+  --fdRadio_Success_State_Hover_BoxShadow: none;
+  --fdRadio_Outline_Offset: 0.5rem;
+  --fdRadio_Outline_Offset_Compact: 0.3125rem;
+  --fdRadio_Outline_Border_Radius: 0;
+  --fdRadio_Inner_Circle_Size: 0.625rem;
+  --fdRadio_Inner_Circle_Offset: 1.0625rem;
+  --fdRadio_Inner_Circle_Compact_Size: 0.375rem;
+  --fdRadio_Inner_Circle_Compact_Offset: 0.8125rem;
 
   /* Checkbox */
-  --fdCheckbox_Selected_Color: var(--sapAccentColor6);
+  --fdCheckbox_Selected_Color: var(--sapContent_IconColor);
   --fdCheckbox_State_Border_Type: dashed;
+  --fdCheckbox_ReadOnly_State_Border_Type: solid;
+  --fdCheckbox_Warning_State_Color: var(--sapField_TextColor);
+  --fdCheckbox_Label_Color: inherit;
+  --fdCheckbox_Default_State_Hover_BoxShadow: none;
+  --fdCheckbox_Information_State_Hover_BoxShadow: none;
+  --fdCheckbox_Error_State_Hover_BoxShadow: none;
+  --fdCheckbox_Warning_State_Hover_BoxShadow: none;
+  --fdCheckbox_Success_State_Hover_BoxShadow: none;
+  --fdCheckbox_Outline_Offset: 0.5rem;
+  --fdCheckbox_Outline_Offset_Compact: 0.3125rem;
+  --fdCheckbox_Outline_Border_Radius: 0;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_BorderColor);
