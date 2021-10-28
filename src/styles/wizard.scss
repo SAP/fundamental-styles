@@ -261,6 +261,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     line-height: 1rem;
     max-width: 100%;
+    font-weight: var(--fdWizard_Step_Font_Weight);
   }
 
   &__optional-text {
