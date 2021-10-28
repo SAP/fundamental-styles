@@ -325,4 +325,10 @@
 
   /* Object Status */
   --fdObject_Status_Border_Radius: var(--sapElement_BorderCornerRadius);
+
+  /* Toolbar */
+  --fdToolbar_Border_Radius: 0;
+  --fdToolbar_Auto_Background_Color: inherit;
+  --fdToolbar_Solid_Background_Color: var(--sapBackgroundColor);
+  --fdToolbar_Transparent_Background_Color: var(--sapToolbar_Background);
 }

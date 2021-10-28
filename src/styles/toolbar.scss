@@ -21,15 +21,15 @@ $title-toolbar-height: 2.75rem;
 }
 
 @mixin toolbarAuto() {
-  background-color: inherit;
+  background-color: var(--fdToolbar_Auto_Background_Color);
 }
 
 @mixin toolbarSolid() {
-  background-color: var(--sapBackgroundColor);
+  background-color: var(--fdToolbar_Solid_Background_Color);
 }
 
 @mixin toolbarTransparent() {
-  background-color: var(--sapToolbar_Background);
+  background-color: var(--fdToolbar_Transparent_Background_Color);
 }
 
 @mixin toolbarInfo() {
@@ -92,6 +92,9 @@ $title-toolbar-height: 2.75rem;
   padding: $toolbar-padding;
   display: flex;
   align-items: center;
+  border-top-left-radius: var(--fdToolbar_Border_Radius);
+  border-top-right-radius: var(--fdToolbar_Border_Radius);
+  background-color: var(--fdToolbar_Transparent_Background_Color);
 
   @include toolbarSpacing();
   @include toolbarStandard();

@@ -98,4 +98,10 @@
   --fdTile_Border: 0.0625rem solid transparent;
   --fdTile_Border_Hover_Active: 0.0625rem solid transparent;
   --fdTile_Focus_Outline_Offset: -0.125rem;
+
+  /* Toolbar */
+  --fdToolbar_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdToolbar_Auto_Background_Color: #ffffff;
+  --fdToolbar_Solid_Background_Color: #ffffff;
+  --fdToolbar_Transparent_Background_Color: #ffffff;
 }
