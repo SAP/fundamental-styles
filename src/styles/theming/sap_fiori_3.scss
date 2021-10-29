@@ -326,4 +326,8 @@
 
   /* Object Status */
   --fdObject_Status_Border_Radius: var(--sapElement_BorderCornerRadius);
+
+  /* Shellbar */
+  --fdShellbar_Notification_Badge_Padding: 0;
+  --fdShellbar_Notifcation_Badge_Line_Height: 0.8rem;
 }
