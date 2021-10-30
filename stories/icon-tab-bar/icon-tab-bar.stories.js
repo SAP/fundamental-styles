@@ -1637,3 +1637,283 @@ navigationFlat.parameters = {
         `
     }
 };
+
+export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="min-height: 600px;">
+    <div class="fd-icon-tab-bar">
+        <ul role="tablist" class="fd-icon-tab-bar__header">  
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-separator-end">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section1-1" id="tab1-1">
+                    <span class="fd-icon-tab-bar__tag">Insert After Item</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section1-2" aria-selected="true" id="tab1-2">
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section1-3" id="tab1-3">
+                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-separator">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section1-4" id="tab1-4">
+                    <span class="fd-icon-tab-bar__tag">Insert Before Item</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section1-5" id="tab1-5">
+                    <span class="fd-icon-tab-bar__tag">Section 5</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-preview">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section1-6" id="tab1-6">
+                    <span class="fd-icon-tab-bar__tag">Being dragged preview</span>
+                </a>
+            </li>
+        </ul> 
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-1" aria-labelledby="tab1">  
+            Section 1
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-2" aria-labelledby="tab2" hidden>  
+            Section 2
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-3" aria-labelledby="tab3" hidden>  
+            Section 3
+        </section>
+    </div>
+
+    <br/><br/>
+
+    <div class="fd-icon-tab-bar">
+        <ul role="tablist" class="fd-icon-tab-bar__header">  
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section2-1" id="tab2-1">
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section2-2" aria-selected="true" id="tab2-2">
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-hovered">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section2-3" id="tab2-3">
+                    <span class="fd-icon-tab-bar__tag">Insert Into Item</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section2-4" id="tab2-4">
+                    <span class="fd-icon-tab-bar__tag">Section 4</span>
+                </a>
+            </li>
+        </ul> 
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-1" aria-labelledby="tab1">  
+            Section 1
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-2" aria-labelledby="tab2" hidden>  
+            Section 2
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-3" aria-labelledby="tab3" hidden>  
+            Section 3
+        </section>
+    </div>
+
+    <br/><br/>
+
+    <div class="fd-icon-tab-bar">
+        <ul role="tablist" class="fd-icon-tab-bar__header">  
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section3-1" id="tab3-1">
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section3-2" aria-selected="true" id="tab3-2">
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3-3">
+                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click">
+                <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab3-4" tabindex="0">
+                    <span class="fd-icon-tab-bar__tag">Section 4</span>
+                </a>
+
+                <div class="fd-popover fd-icon-tab-bar__popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-icon-tab-bar__button-container">
+                            <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popover3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popover3');" aria-label="open menu button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popover3">
+                        <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Subsection 1</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__item--dnd-separator">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Insert Before Subsection</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Subsection 3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3-5">
+                    <span class="fd-icon-tab-bar__tag">Section 5</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section3-4" id="tab3-6">
+                    <span class="fd-icon-tab-bar__tag">Section 6</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click">
+                <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab3-7" tabindex="0">
+                    <span class="fd-icon-tab-bar__tag">Section 7</span>
+                </a>
+
+                <div class="fd-popover fd-icon-tab-bar__popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-icon-tab-bar__button-container">
+                            <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popover4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverAO4');" aria-label="open menu button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popover4">
+                        <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Subsection 1</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__item--dnd-separator-end">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Insert After Subsection</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Subsection 3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul> 
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-1" aria-labelledby="tab1">  
+            Section 1
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-2" aria-labelledby="tab2" hidden>  
+            Section 2
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-3" aria-labelledby="tab3" hidden>  
+            Section 3
+        </section>
+    </div>
+
+    <br/><br/>
+
+    <div class="fd-icon-tab-bar" style="margin-top: 6rem;">
+        <ul role="tablist" class="fd-icon-tab-bar__header">  
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section4-1" id="tab4-1">
+                    <span class="fd-icon-tab-bar__tag">Section 1</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section4-2" aria-selected="true" id="tab4-2">
+                    <span class="fd-icon-tab-bar__tag">Section 2</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4-3">
+                    <span class="fd-icon-tab-bar__tag">Section 3</span>
+                </a>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click">
+                <a role="tab" class="fd-icon-tab-bar__tab" aria-selected="true" id="tab4-4" tabindex="0">
+                    <span class="fd-icon-tab-bar__tag">Section 4</span>
+                </a>
+
+                <div class="fd-popover fd-icon-tab-bar__popover">
+                    <div class="fd-popover__control">
+                        <div class="fd-icon-tab-bar__button-container">
+                            <button class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button" aria-controls="popoverAO4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverAO4');" aria-label="open menu button">
+                                <i class="sap-icon--slim-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverAO4">
+                        <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Subsection 1</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__item--dnd-hovered">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Insert Into Subsection</span>
+                                </a>
+                            </li>
+                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                    <span class="fd-list__title">Subsection 3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li role="presentation" class="fd-icon-tab-bar__item">
+                <a role="tab" class="fd-icon-tab-bar__tab" href="#section4-4" id="tab4-5">
+                    <span class="fd-icon-tab-bar__tag">Section 5</span>
+                </a>
+            </li>
+        </ul> 
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">  
+            Section 1
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>  
+            Section 2
+        </section>  
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>  
+            Section 3
+        </section>
+    </div>
+
+    <br/><br/>
+</div>
+`;
+dragAndDrop.storyName = 'Tabs drag and drop';
+dragAndDrop.parameters = {
+    docs: {
+        storyDescription: `You can allow users to rearrange the tab order. 
+        If this feature is enabled, users can drag and drop tabs to reorder them, either directly on the tab bar or inside the overflow menu.
+        It is also possible to drag and drop tabs from the tab bar to the overflow menu and vice versa.
+        There're 4 classes for drag and drop: 
+        use \`fd-icon-tab-bar__item--dnd-preview\` to indicate the element that is being dragged; 
+        use \`fd-icon-tab-bar__item--dnd-hovered\` when dragging over an item. This class indicates that tab, htat is being dragged, can be inserted into the current one;
+        \`fd-icon-tab-bar__item--dnd-separator\` adds a visual indicator before the tab, to which is applied, when element that is being dragged can be insterted before particular one.
+        When used with the subtab, separator will be vertical;
+        \`fd-icon-tab-bar__item--dnd-separator-end\` - same as above. Being applied after the tab, to which is applied
+
+        `
+    }
+};

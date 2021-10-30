@@ -5669,6 +5669,1290 @@ exports[`Storyshots Components/Icon Tab Bar Sizes and Horizontal Paddings 1`] = 
 </section>
 `;
 
+exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
+<div
+  class="fddocs-icon-tab-container"
+  style="min-height: 600px;"
+>
+  
+    
+  <div
+    class="fd-icon-tab-bar"
+  >
+    
+        
+    <ul
+      class="fd-icon-tab-bar__header"
+      role="tablist"
+    >
+        
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-separator-end"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section1-1"
+          id="tab1-1"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Insert After Item
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          href="#section1-2"
+          id="tab1-2"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 2
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section1-3"
+          id="tab1-3"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 3
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-separator"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section1-4"
+          id="tab1-4"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Insert Before Item
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section1-5"
+          id="tab1-5"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 5
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-preview"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section1-6"
+          id="tab1-6"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Being dragged preview
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+        
+    </ul>
+     
+        
+    <section
+      aria-labelledby="tab1"
+      class="fd-icon-tab-bar__panel"
+      id="section1-1"
+      role="tabpanel"
+    >
+        
+            Section 1
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab2"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section1-2"
+      role="tabpanel"
+    >
+        
+            Section 2
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab3"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section1-3"
+      role="tabpanel"
+    >
+        
+            Section 3
+        
+    </section>
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+
+    
+  <div
+    class="fd-icon-tab-bar"
+  >
+    
+        
+    <ul
+      class="fd-icon-tab-bar__header"
+      role="tablist"
+    >
+        
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section2-1"
+          id="tab2-1"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 1
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          href="#section2-2"
+          id="tab2-2"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 2
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-hovered"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section2-3"
+          id="tab2-3"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Insert Into Item
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section2-4"
+          id="tab2-4"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 4
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+        
+    </ul>
+     
+        
+    <section
+      aria-labelledby="tab1"
+      class="fd-icon-tab-bar__panel"
+      id="section2-1"
+      role="tabpanel"
+    >
+        
+            Section 1
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab2"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section2-2"
+      role="tabpanel"
+    >
+        
+            Section 2
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab3"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section2-3"
+      role="tabpanel"
+    >
+        
+            Section 3
+        
+    </section>
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+
+    
+  <div
+    class="fd-icon-tab-bar"
+  >
+    
+        
+    <ul
+      class="fd-icon-tab-bar__header"
+      role="tablist"
+    >
+        
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section3-1"
+          id="tab3-1"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 1
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          href="#section3-2"
+          id="tab3-2"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 2
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab3-3"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 3
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          id="tab3-4"
+          role="tab"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 4
+          </span>
+          
+                
+        </a>
+        
+
+                
+        <div
+          class="fd-popover fd-icon-tab-bar__popover"
+        >
+          
+                    
+          <div
+            class="fd-popover__control"
+          >
+            
+                        
+            <div
+              class="fd-icon-tab-bar__button-container"
+            >
+              
+                            
+              <button
+                aria-controls="popover3"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="open menu button"
+                class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button"
+                onclick="onPopoverClick('popover3');"
+              >
+                
+                                
+                <i
+                  class="sap-icon--slim-arrow-down"
+                />
+                
+                            
+              </button>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                    
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
+            id="popover3"
+          >
+            
+                        
+            <ul
+              class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list"
+              role="list"
+            >
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Subsection 1
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__item--dnd-separator"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Insert Before Subsection
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Subsection 3
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                        
+            </ul>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab3-5"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 5
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section3-4"
+          id="tab3-6"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 6
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          id="tab3-7"
+          role="tab"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 7
+          </span>
+          
+                
+        </a>
+        
+
+                
+        <div
+          class="fd-popover fd-icon-tab-bar__popover"
+        >
+          
+                    
+          <div
+            class="fd-popover__control"
+          >
+            
+                        
+            <div
+              class="fd-icon-tab-bar__button-container"
+            >
+              
+                            
+              <button
+                aria-controls="popover4"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="open menu button"
+                class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button"
+                onclick="onPopoverClick('popoverAO4');"
+              >
+                
+                                
+                <i
+                  class="sap-icon--slim-arrow-down"
+                />
+                
+                            
+              </button>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                    
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
+            id="popover4"
+          >
+            
+                        
+            <ul
+              class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list"
+              role="list"
+            >
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Subsection 1
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__item--dnd-separator-end"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Insert After Subsection
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Subsection 3
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                        
+            </ul>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </li>
+      
+        
+    </ul>
+     
+        
+    <section
+      aria-labelledby="tab1"
+      class="fd-icon-tab-bar__panel"
+      id="section3-1"
+      role="tabpanel"
+    >
+        
+            Section 1
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab2"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section3-2"
+      role="tabpanel"
+    >
+        
+            Section 2
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab3"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section3-3"
+      role="tabpanel"
+    >
+        
+            Section 3
+        
+    </section>
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+
+    
+  <div
+    class="fd-icon-tab-bar"
+    style="margin-top: 6rem;"
+  >
+    
+        
+    <ul
+      class="fd-icon-tab-bar__header"
+      role="tablist"
+    >
+        
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section4-1"
+          id="tab4-1"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 1
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          href="#section4-2"
+          id="tab4-2"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 2
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#"
+          id="tab4-3"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 3
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click"
+        role="presentation"
+      >
+        
+                
+        <a
+          aria-selected="true"
+          class="fd-icon-tab-bar__tab"
+          id="tab4-4"
+          role="tab"
+          tabindex="0"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 4
+          </span>
+          
+                
+        </a>
+        
+
+                
+        <div
+          class="fd-popover fd-icon-tab-bar__popover"
+        >
+          
+                    
+          <div
+            class="fd-popover__control"
+          >
+            
+                        
+            <div
+              class="fd-icon-tab-bar__button-container"
+            >
+              
+                            
+              <button
+                aria-controls="popoverAO4"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="open menu button"
+                class="fd-button fd-button--transparent fd-button--compact  fd-icon-tab-bar__button"
+                onclick="onPopoverClick('popoverAO4');"
+              >
+                
+                                
+                <i
+                  class="sap-icon--slim-arrow-down"
+                />
+                
+                            
+              </button>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                    
+          <div
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
+            id="popoverAO4"
+          >
+            
+                        
+            <ul
+              class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list"
+              role="list"
+            >
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Subsection 1
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__item--dnd-hovered"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Insert Into Subsection
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                            
+              <li
+                aria-level="1"
+                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item"
+                role="listitem"
+                tabindex="-1"
+              >
+                
+                                
+                <a
+                  class="fd-list__link fd-icon-tab-bar__list-link"
+                  tabindex="0"
+                >
+                  
+                                    
+                  <span
+                    class="fd-list__title"
+                  >
+                    Subsection 3
+                  </span>
+                  
+                                
+                </a>
+                
+                            
+              </li>
+              
+                        
+            </ul>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </li>
+      
+            
+      <li
+        class="fd-icon-tab-bar__item"
+        role="presentation"
+      >
+        
+                
+        <a
+          class="fd-icon-tab-bar__tab"
+          href="#section4-4"
+          id="tab4-5"
+          role="tab"
+        >
+          
+                    
+          <span
+            class="fd-icon-tab-bar__tag"
+          >
+            Section 5
+          </span>
+          
+                
+        </a>
+        
+            
+      </li>
+      
+        
+    </ul>
+     
+        
+    <section
+      aria-labelledby="tab1"
+      class="fd-icon-tab-bar__panel"
+      id="section1"
+      role="tabpanel"
+    >
+        
+            Section 1
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab2"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section2"
+      role="tabpanel"
+    >
+        
+            Section 2
+        
+    </section>
+      
+        
+    <section
+      aria-labelledby="tab3"
+      class="fd-icon-tab-bar__panel"
+      hidden=""
+      id="section3"
+      role="tabpanel"
+    >
+        
+            Section 3
+        
+    </section>
+    
+    
+  </div>
+  
+
+    
+  <br />
+  <br />
+  
+
+</div>
+`;
+
 exports[`Storyshots Components/Icon Tab Bar Text Only (Inline mode) 1`] = `
 <div
   class="fd-icon-tab-bar"
