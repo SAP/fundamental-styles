@@ -32,6 +32,9 @@ $block: #{$fd-namespace}-shellbar;
   $fd-shell-active-background: var(--sapShell_Active_Background) !default;
   $fd-content-badge-background: var(--sapContent_BadgeBackground) !default;
 
+  // Badge
+  $fd-shellbar-notification-badge-color: var(--sapContent_BadgeTextColor) !default;
+
   // Box shadow
   $fd-shellbar-box-shadow: var(--sapContent_HeaderShadow) !default;
 
@@ -175,13 +178,14 @@ $block: #{$fd-namespace}-shellbar;
       position: absolute;
       background: $fd-content-badge-background;
       border: $fd-content-badge-background;
-      color: $fd-shellbar-color;
-      line-height: 0.8;
-      max-height: 1rem;
+      color: $fd-shellbar-notification-badge-color;
+      line-height: var(--fdShellbar_Notifcation_Badge_Line_Height);
+      height: 1rem;
       overflow: hidden;
       right: $fd-shellbar-counter-notification-offset;
       top: $fd-shellbar-counter-notification-offset;
       transform: none;
+      padding: var(--fdShellbar_Notification_Badge_Padding);
 
       @include fd-rtl() {
         transform: none;

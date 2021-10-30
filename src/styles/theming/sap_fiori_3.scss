@@ -35,6 +35,7 @@
   --fdWizard_Content_Transparent_Background: transparent;
   --fdWizard_Selection_Bar_Height: 0.188rem;
   --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
+  --fdWizard_Step_Font_Weight: normal;
 
   /* Slider */
 
@@ -313,7 +314,8 @@
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
 
   /* Title */
-  --fdTitle_font-family: var(--sapFontFamily);
+  --fdTitle_Font_Family: var(--sapFontFamily);
+  --fdTitle_Font_Weight: normal;
 
   /* Panel */
   --fdPanel_Background: transparent;
@@ -332,4 +334,8 @@
   --fdToolbar_Auto_Background_Color: inherit;
   --fdToolbar_Solid_Background_Color: var(--sapBackgroundColor);
   --fdToolbar_Transparent_Background_Color: var(--sapToolbar_Background);
+
+  /* Shellbar */
+  --fdShellbar_Notification_Badge_Padding: 0;
+  --fdShellbar_Notifcation_Badge_Line_Height: 0.8rem;
 }

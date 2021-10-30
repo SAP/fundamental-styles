@@ -13,13 +13,35 @@
   --fdRating_Indicator_Selected_Hover_Color: #552cff;
   --fdRating_Indicator_Selected_Down_Color: #5026ff;
 
+  /* Wizard */
+  --fdWizard_Completed_Step_Color: var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Border: 0.0625rem solid var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Icon_Color: var(--sapSelectedColor);
+  --fdWizard_Current_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
+  --fdWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Active_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Active_Step_Border_Color: var(--sapActiveColor);
+  --fdWizard_Connector_Active_Border_Color: var(--sapSelectedColor);
+  --fdWizard_Content_Default_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_Solid_Background: var(--sapShell_Background);
+  --fdWizard_Content_List_Background: var(--sapGroup_ContentBackground);
+  --fdWizard_Content_Transparent_Background: transparent;
+  --fdWizard_Selection_Bar_Height: 0.188rem;
+  --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
+  --fdWizard_Step_Font_Weight: bold;
+
   /** Dialog **/
   --fdDialog_Border_Radius: 0.75rem;
   --fdDialog_Content_Box_Shadow: var(--sapContent_Shadow3);
   --fdDialog_Header_Box_Shadow: none;
 
   /* Title */
-  --fdTitle_font-family: var(--sapFontHeaderFamily);
+  --fdTitle_Font_Family: var(--sapFontHeaderFamily);
+  --fdTitle_Font_Weight: bold;
 
   /* MessageStrip */
   --fdMessageStrip_Border_Width: 0.0625rem;
@@ -104,4 +126,8 @@
   --fdToolbar_Auto_Background_Color: #ffffff;
   --fdToolbar_Solid_Background_Color: #ffffff;
   --fdToolbar_Transparent_Background_Color: #ffffff;
+
+  /* Shellbar */
+  --fdShellbar_Notification_Badge_Padding: 0 0.35rem;
+  --fdShellbar_Notifcation_Badge_Line_Height: 1rem;
 }
