@@ -35,6 +35,7 @@
   --fdWizard_Content_Transparent_Background: var(--sapBackgroundColor);
   --fdWizard_Selection_Bar_Height: 0.313rem;
   --fdWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
+  --fdWizard_Step_Font_Weight: normal;
 
   /* Slider */
 
@@ -312,7 +313,8 @@
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ForegroundColor);
 
   /* Title */
-  --fdTitle_font-family: var(--sapFontFamily);
+  --fdTitle_Font_Family: var(--sapFontFamily);
+  --fdTitle_Font_Weight: normal;
 
   /* Panel */
   --fdPanel_Background: transparent;

@@ -8,7 +8,8 @@ $block: #{$fd-namespace}-title;
 
   @extend %dialog-title;
 
-  font-family: var(--fdTitle_font-family);
+  font-family: var(--fdTitle_Font_Family);
+  font-weight: var(--fdTitle_Font_Weightt);
   color: var(--sapTextColor);
 
   &--h1 {
