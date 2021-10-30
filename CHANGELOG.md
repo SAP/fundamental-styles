@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.63...v0.20.1-rc.64) (2021-10-30)
+
+
+### Features
+
+* **styles:** introduce code component [ci visual] ([#2874](https://github.com/SAP/fundamental-styles/issues/2874)) ([baac84a](https://github.com/SAP/fundamental-styles/commit/baac84a7da18b2fcab0d230972fb824f28d78077))
+
 ### [0.20.1-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.62...v0.20.1-rc.63) (2021-10-30)
 
 
