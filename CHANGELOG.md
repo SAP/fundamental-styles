@@ -1,32 +1,4 @@
 
-### [0.20.1-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.61...v0.20.1-rc.62) (2021-10-27)
-
-
-### Bug Fixes
-
-* **styles:** dialog resize handle alignment [ci visual] ([#2832](https://github.com/SAP/fundamental-styles/issues/2832)) ([d601993](https://github.com/SAP/fundamental-styles/commit/d60199328011d29df03a77faebb9a3f830ae82d6))
-
-### [0.20.1-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.60...v0.20.1-rc.61) (2021-10-26)
-
-
-### Bug Fixes
-
-* **styles:** add focus state for activable row and cell [ci visual] ([#2841](https://github.com/SAP/fundamental-styles/issues/2841)) ([1f9a9be](https://github.com/SAP/fundamental-styles/commit/1f9a9be737847c00d5ad1a1913a2b651167d91e5))
-
-### [0.20.1-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.59...v0.20.1-rc.60) (2021-10-26)
-
-### [0.20.1-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.58...v0.20.1-rc.59) (2021-10-25)
-
-### [0.20.1-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.57...v0.20.1-rc.58) (2021-10-25)
-
-### [0.20.1-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.56...v0.20.1-rc.57) (2021-10-25)
-
-### [0.20.1-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.55...v0.20.1-rc.56) (2021-10-25)
-
-### [0.20.1-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.54...v0.20.1-rc.55) (2021-10-24)
-
-### [0.20.1-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.53...v0.20.1-rc.54) (2021-10-24)
-
 ### [0.20.1-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.52...v0.20.1-rc.53) (2021-10-19)
 
 ### [0.20.1-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.51...v0.20.1-rc.52) (2021-10-19)
