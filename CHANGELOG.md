@@ -1,4 +1,11 @@
 
+### [0.20.1-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.62...v0.20.1-rc.63) (2021-10-30)
+
+
+### Bug Fixes
+
+* **styles:** icon tab bar drag&drop styles [ci visual] ([#2864](https://github.com/SAP/fundamental-styles/issues/2864)) ([a2aec50](https://github.com/SAP/fundamental-styles/commit/a2aec5040921401a5f87d9c0b90c3c5397daf19f))
+
 ### [0.20.1-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.61...v0.20.1-rc.62) (2021-10-27)
 
 
