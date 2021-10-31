@@ -11,6 +11,9 @@
 */
 $block: #{$fd-namespace}-table;
 
+$fd-table-border: 0.0625rem solid #e4e4e4;
+$fd-table-border-var: var(--sapList_BorderWidth, 0.0625rem) solid var(--sapList_BorderColor, #e4e4e4);
+
 .#{$block} {
   @mixin fd-table-active() {
     background-color: var(--sapList_Active_Background);
@@ -137,6 +140,39 @@ $block: #{$fd-namespace}-table;
 
   /****** Elements ******/
 
+  &__empty {
+    &-table-message {
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+    }
+
+    &:not(.fixed-height) .fd-table__row:last-of-type {
+      .fd-table__cell {
+        border-bottom: 0;
+      }
+    }
+
+    .fd-table__body {
+      border-left: none;
+
+      @include fd-rtl() {
+        border-left: $fd-table-border;
+        border-left: $fd-table-border-var;
+        border-right: none;
+      }
+    }
+
+    &.fixed-height {
+      background-color: #fff;
+      background-color: var(--sapList_Background, #fff);
+    }
+  }
+
   &__icon {
     @include fd-icon-element-base() {
       @include fd-flex-center();
@@ -238,6 +274,26 @@ $block: #{$fd-namespace}-table;
       vertical-align: baseline;
 
       @include fd-table-reset-spacing();
+    }
+
+    &__group {
+      min-width: 100%;
+      border-left: none;
+
+      /**
+        Due to the changed table-layout group row cell may looe it's top border.
+        For example when previous (relatively to the group row) row columns tolal width < 100% of the table.
+      */
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -0.0625rem;
+        left: 0;
+        right: 0;
+        border-top: $fd-table-border;
+        border-top: $fd-table-border-var;
+      }
     }
 
     &--fit-content {
