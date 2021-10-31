@@ -1,0 +1,28 @@
+@import "./new-settings";
+@import "./mixins";
+
+/*!
+.fd-code
+*/
+$block: #{$fd-namespace}-code;
+
+.#{$block} {
+  // VARIABLES
+  $fd-code-background: var(--sapNeutralBackground);
+  $fd-code-font-size: var(--sapFontSize);
+  $fd-code-padding: 1rem;
+  $fd-code-border-radius: 0.5rem;
+  $fd-code-min-height: 2.25rem;
+  $fd-code-min-width: 6rem;
+  $fd-code-font-family: monaco, consolas, "Lucida Console";
+
+  @include fd-reset();
+
+  background-color: $fd-code-background;
+  border-radius: $fd-code-border-radius;
+  font-family: $fd-code-font-family;
+  padding: $fd-code-padding;
+  display: block;
+  min-width: $fd-code-min-width;
+  min-height: $fd-code-min-height;
+}
