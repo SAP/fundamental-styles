@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.0...v0.21.0-rc.1) (2021-11-01)
+
+
+### Bug Fixes
+
+* **styles:** add code inline case [ci visual]` ([#2878](https://github.com/SAP/fundamental-styles/issues/2878)) ([318711b](https://github.com/SAP/fundamental-styles/commit/318711b1e1d06f1f50cc1d44dbdc0322026764f6))
+
 ## [0.21.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.69...v0.21.0-rc.0) (2021-11-01)
 
 
