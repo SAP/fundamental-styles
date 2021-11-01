@@ -1,4 +1,15 @@
 
+## [0.21.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.69...v0.21.0-rc.0) (2021-11-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** remove variables.css, variables-sap_fiori_3*.css files from dist folder
+
+### Bug Fixes
+
+* **styles:** dark, hcb, hcw bundled CSS to contain the right colors [#2837](https://github.com/SAP/fundamental-styles/issues/2837) [ci visual] ([#2875](https://github.com/SAP/fundamental-styles/issues/2875)) ([73ef574](https://github.com/SAP/fundamental-styles/commit/73ef574aac5d867a737267e6ed74c17b4e6d52b6))
+
 ### [0.20.1-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.68...v0.20.1-rc.69) (2021-10-31)
 
 ### [0.20.1-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.67...v0.20.1-rc.68) (2021-10-31)
