@@ -25,4 +25,10 @@ $block: #{$fd-namespace}-code;
   display: block;
   min-width: $fd-code-min-width;
   min-height: $fd-code-min-height;
+  overflow-x: auto;
+
+  &--inline {
+    display: inline;
+    padding: 0;
+  }
 }
