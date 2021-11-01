@@ -14,7 +14,8 @@
   @include applyColors(
     var(--sapButton_Selected_TextColor),
     var(--sapButton_BorderColor),
-    var(--sapButton_Active_Background)
+    var(--sapButton_Active_Background),
+    var(--fdButton_Attention_Hover_Box_Shadow)
   );
 }
 
@@ -44,7 +45,7 @@
 }
 
 @mixin standardPressedFocus() {
-  outline-color: var(--sapContent_ContrastFocusColor);
+  outline-color: var(--fdButton_Pressed_Focused_Color);
 }
 
 @mixin standardFocus() {

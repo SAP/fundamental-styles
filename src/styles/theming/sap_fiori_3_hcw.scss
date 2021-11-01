@@ -126,6 +126,15 @@
   /* Button */
   --fdButton_Text_Shadow: none;
   --fdButton_Emphasized_Border_Width: 0.125rem;
+  --fdButton_Focus_Outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+  --fdButton_Focus_Outline__Offset: -0.1875rem;
+  --fdButton_Font: var(--sapFontFamily);
+  --fdButton_Pressed_Focused_Color: var(--sapContent_ContrastFocusColor);
+  --fdButton_Box_Shadow_Hover: none;
+  --fdButton_Accept_Box_Shadow_Hover: none;
+  --fdButton_Reject_Box_Shadow_Hover: none;
+  --fdButton_Attention_Box_Shadow_Hover: none;
+  --fdButton_Emphasized_Box_Shadow_Hover: none;
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
