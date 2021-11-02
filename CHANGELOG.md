@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.1...v0.21.0-rc.2) (2021-11-02)
+
+
+### Bug Fixes
+
+* **styles:** add word break [ci visual] ([#2879](https://github.com/SAP/fundamental-styles/issues/2879)) ([3226180](https://github.com/SAP/fundamental-styles/commit/32261800f6b40bfda8eff94920499d6d9b1cf31f))
+
 ## [0.21.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.0...v0.21.0-rc.1) (2021-11-01)
 
 
