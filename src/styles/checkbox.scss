@@ -48,6 +48,15 @@ $block: #{$fd-namespace}-checkbox;
 
   @extend %fd-checkbox-input-hidden;
 
+  border-style: initial;
+
+  &.is-warning,
+  &.is-error,
+  &.is-success,
+  &.is-information {
+    border-style: initial;
+  }
+
   &__label {
     @include fd-form-label();
     @include action-cursor();
