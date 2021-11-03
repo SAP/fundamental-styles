@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.4...v0.21.0-rc.5) (2021-11-03)
+
+
+### Bug Fixes
+
+* **styles:** static dialog nobackdrop position fix [ci visual] ([#2877](https://github.com/SAP/fundamental-styles/issues/2877)) ([a35f960](https://github.com/SAP/fundamental-styles/commit/a35f9608c88574b5168144d5a88b4ef1a57eb500))
+
 ## [0.21.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.3...v0.21.0-rc.4) (2021-11-03)
 
 
