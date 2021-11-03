@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.2...v0.21.0-rc.3) (2021-11-03)
+
+
+### Bug Fixes
+
+* **styles:** add correct outline color in Grid List ([#2882](https://github.com/SAP/fundamental-styles/issues/2882)) ([525fbb1](https://github.com/SAP/fundamental-styles/commit/525fbb19572b268252e36c6f95f41009bc8f9c00))
+
 ## [0.21.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.1...v0.21.0-rc.2) (2021-11-02)
 
 
