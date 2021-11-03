@@ -57,10 +57,10 @@ $block: #{$fd-namespace}-switch;
     @include fd-reset();
 
     background-color: var(--sapButton_Track_Background);
+    border: $fd-switch-border-width solid var(--fdSwitch_Slider_Border_Color);
     box-sizing: content-box;
     width: 3.125rem;
     height: 1.25rem;
-    border: $fd-switch-border-width solid $fd-switch-inactive-border-color;
     transition: $fd-switch-transition;
     border-radius: 0.75rem;
   }
@@ -117,8 +117,8 @@ $block: #{$fd-namespace}-switch;
     @include fd-reset();
 
     box-sizing: content-box;
-    border: var(--fdSwitch_Handle_Border_Width) solid $fd-switch-inactive-border-color;
-    background-color: $fd-switch-inactive-handle-background;
+    border: var(--fdSwitch_Handle_Border_Width) solid var(--fdSwitch_Handle_Border_Color);
+    background-color: var(--fdSwitch_Handle_Background_Color);
     min-width: $fd-switch-handle-size;
     min-height: $fd-switch-handle-size;
     border-radius: 1rem;
@@ -157,6 +157,7 @@ $block: #{$fd-namespace}-switch;
       border-width: var(--sapContent_FocusWidth);
       border-color: var(--sapContent_FocusColor);
       border-style: var(--sapContent_FocusStyle);
+      border-radius: var(--fdSwitch_Focus_Border_Radius);
       content: '';
       top: 0;
       bottom: 0;
@@ -167,7 +168,7 @@ $block: #{$fd-namespace}-switch;
 
   &__input:checked + &__slider {
     background-color: var(--sapButton_Track_Selected_Background);
-    border-color: $fd-switch-active-border-color;
+    border-color: var(--fdSwitch_Slider_Border_Color_Checked);
 
     .#{$block}__handle {
       background-color: var(--sapButton_Selected_Background);
@@ -219,20 +220,23 @@ $block: #{$fd-namespace}-switch;
 
   @include fd-hover() {
     .#{$block}__slider {
-      border-color: $fd-switch-hover-border-color;
+      border-color: var(--fdSwitch_Slider_Border_Color_Hover);
     }
 
     .#{$block}__handle {
-      border-color: $fd-switch-hover-border-color;
+      border-color: var(--fdSwitch_Handle_Border_Color_Hover);
       background-color: var(--sapButton_Hover_Background);
+      box-shadow: var(--fdSwitch_Handle_Box_Shadow_Hover);
     }
 
     .#{$block}__input:checked + .#{$block}__slider {
       background-color: var(--fdSwitch_On_Hover_Slider_Background);
+      border-color: var(--fdSwitch_Slider_Border_Color_Checked_Hover);
 
       .#{$block}__handle {
         border-color: $fd-switch-hover-selected-border-color;
         background-color: var(--sapButton_Selected_Hover_Background);
+        box-shadow: var(--fdSwitch_Handle_Box_Shadow_Checked_Hover);
       }
     }
   }
@@ -266,8 +270,8 @@ $block: #{$fd-namespace}-switch;
     .#{$block}__slider {
       width: 3.75rem;
       height: 1.25rem;
-      border-color: $fd-switch-error-border-color;
-      background-color: var(--sapErrorBackground);
+      border-color: var(--fdSwitch_Slider_Border_Color_Negative);
+      background-color: var(--fdSwitch_Slider_Background_Color_Negative);
     }
 
     .#{$block}__track {
@@ -275,13 +279,13 @@ $block: #{$fd-namespace}-switch;
     }
 
     .#{$block}__handle {
-      background-color: $fd-switch-inactive-handle-background;
+      background-color: var(--fdSwitch_Handle_Background_Color_Negative);
       border-color: $fd-switch-error-border-color;
     }
 
     .#{$block}__input:checked + .#{$block}__slider {
       background-color: var(--fdSwitch_Semantic_Success_Background_Color);
-      border-color: $fd-switch-success-border-color;
+      border-color: var(--fdSwitch_Slider_Border_Color_Positive);
 
       .#{$block}__track {
         transform: translate(-$fd-switch-track-border-offset, -50%);
@@ -289,7 +293,7 @@ $block: #{$fd-namespace}-switch;
 
       .#{$block}__handle {
         border-color: $fd-switch-success-border-color;
-        background-color: $fd-switch-inactive-handle-background;
+        background-color: var(--fdSwitch_Handle_Background_Color_Positive);
       }
     }
 
@@ -309,20 +313,22 @@ $block: #{$fd-namespace}-switch;
       }
 
       .#{$block}__slider {
-        border-color: var(--fdSwitch_Semantic_Error_Color);
+        border-color: var(--fdSwitch_Slider_Border_Color_Negative_Hover);
       }
 
       .#{$block}__handle {
         background-color: var(--fdSwitch_Semantic_Error_Background_Color);
         border-color: var(--fdSwitch_Semantic_Error_Color);
+        box-shadow: var(--fdSwitch_Handle_Box_Shadow_Negative_Hover);
       }
 
       .#{$block}__input:checked + .#{$block}__slider {
         background-color: var(--fdSwitch_Semantic_Success_Background_Color);
-        border-color: var(--fdSwitch_Semantic_Success_Border_Color);
+        border-color: var(--fdSwitch_Slider_Border_Color_Positive_Hover);
         .#{$block}__handle {
           background-color: var(--fdSwitch_Semantic_Success_Handle_Hover_Background_Color);
           border-color: var(--fdSwitch_Semantic_Success_Border_Color);
+          box-shadow: var(--fdSwitch_Handle_Box_Shadow_Positive_Hover);
         }
         .#{$block}__icon {
           color: var(--fdSwitch_Semantic_Success_Border_Color);

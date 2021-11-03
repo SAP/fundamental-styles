@@ -164,4 +164,38 @@
   --fdRadio_Inner_Circle_Offset: 1rem;
   --fdRadio_Inner_Circle_Compact_Size: 0.5rem;
   --fdRadio_Inner_Circle_Compact_Offset: 0.75rem;
+
+  /* Switch */
+
+  /* The hardcoded values are a result of darken/lighten function calculations.
+   * Once we have the css variables from the sap-theming they will be replaced
+   */
+  --fdSwitch_Handle_Border_Width: var(--sapButton_BorderWidth);
+  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Semantic_Success_Border_Color: var(--sapSuccessColor);
+  --fdSwitch_Semantic_Success_Background_Color: #deeea9;
+  --fdSwitch_Semantic_Error_Background_Color: #ffffff;
+  --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: #ffffff;
+  --fdSwitch_Semantic_Error_Color: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Border_Color: var(--sapButton_Track_Background);
+  --fdSwitch_Slider_Border_Color_Hover: var(--sapButton_Track_Background);
+  --fdSwitch_Slider_Border_Color_Checked: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Slider_Border_Color_Checked_Hover: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Slider_Border_Color_Positive: var(--sapSuccessBackground);
+  --fdSwitch_Slider_Border_Color_Positive_Hover: var(--sapSuccessBackground);
+  --fdSwitch_Slider_Border_Color_Negative: var(--sapErrorBackground);
+  --fdSwitch_Slider_Border_Color_Negative_Hover: var(--sapErrorBackground);
+  --fdSwitch_Slider_Background_Color_Negative: #ffcbe4;
+  --fdSwitch_Handle_Border_Color: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Handle_Border_Color_Hover: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Handle_Background_Color: #ffffff;
+  --fdSwitch_Handle_Background_Color_Positive: #ffffff;
+  --fdSwitch_Handle_Background_Color_Positive_Hover: #ffffff;
+  --fdSwitch_Handle_Background_Color_Negative: #ffffff;
+  --fdSwitch_Handle_Background_Color_Negative_Hover: #ffffff;
+  --fdSwitch_Handle_Box_Shadow_Hover: 0 0 0.125rem 0 rgb(85 107 130 / 72%);
+  --fdSwitch_Handle_Box_Shadow_Checked_Hover: 0 0 0.125rem 0 rgb(0 112 242 / 72%);
+  --fdSwitch_Handle_Box_Shadow_Positive_Hover: 0 0 0.125rem 0 rgb(37 111 58 / 72%);
+  --fdSwitch_Handle_Box_Shadow_Negative_Hover: 0 0 0.125rem 0 rgb(170 8 8 / 72%);
+  --fdSwitch_Focus_Border_Radius: 0.25rem;
 }

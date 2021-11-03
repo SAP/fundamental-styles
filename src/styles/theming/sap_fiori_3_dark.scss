@@ -237,6 +237,25 @@
   --fdSwitch_Semantic_Error_Background_Color: var(--sapErrorBackground);
   --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: var(--sapSuccessBackground);
   --fdSwitch_Semantic_Error_Color: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Border_Color: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Slider_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdSwitch_Slider_Border_Color_Checked: var(--sapButton_Selected_BorderColor);
+  --fdSwitch_Slider_Border_Color_Checked_Hover: var(--sapButton_Selected_BorderColor);
+  --fdSwitch_Slider_Border_Color_Positive: var(--sapSuccessColor);
+  --fdSwitch_Slider_Border_Color_Positive_Hover: var(--sapSuccessColor);
+  --fdSwitch_Slider_Border_Color_Negative: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Border_Color_Negative_Hover: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Background_Color_Negative: var(--sapErrorBackground);
+  --fdSwitch_Handle_Border_Color: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Handle_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdSwitch_Handle_Background_Color: var(--sapButton_Background);
+  --fdSwitch_Handle_Background_Color_Positive: var(--sapButton_Background);
+  --fdSwitch_Handle_Background_Color_Negative: var(--sapButton_Background);
+  --fdSwitch_Handle_Box_Shadow_Hover: none;
+  --fdSwitch_Handle_Box_Shadow_Checked_Hover: none;
+  --fdSwitch_Handle_Box_Shadow_Positive_Hover: none;
+  --fdSwitch_Handle_Box_Shadow_Negative_Hover: none;
+  --fdSwitch_Focus_Border_Radius: 0;
 
   /* Action List Item */
   --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
