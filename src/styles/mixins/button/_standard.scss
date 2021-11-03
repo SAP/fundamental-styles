@@ -13,9 +13,8 @@
 @mixin standardPressed {
   @include applyColors(
     var(--sapButton_Selected_TextColor),
-    var(--sapButton_BorderColor),
-    var(--sapButton_Active_Background),
-    var(--fdButton_Attention_Hover_Box_Shadow)
+    var(--sapButton_Active_BorderColor),
+    var(--sapButton_Active_Background)
   );
 }
 
@@ -49,7 +48,7 @@
 }
 
 @mixin standardFocus() {
-  @include buttonFocus();
+  @include buttonFocus(var(--fdButton_Focus_Outline_Offset));
 }
 
 @mixin standardDisabled() {

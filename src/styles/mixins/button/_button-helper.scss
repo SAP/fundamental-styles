@@ -15,10 +15,13 @@ $block: #{$fd-namespace}-button;
 
   @if ($fd-button-outline-offset) {
     outline-offset: $fd-button-outline-offset;
-  } @else {
-    outline-offset: var(--fdButton_Focus_Outline_Offset);
   }
   @content;
+
+  &.#{$block}--emphasized {
+    outline: var(--fdButton_Emphasized_Focus_Outline);
+    outline-offset: var(--fdButton_Emphasized_Focus_Outline_Offset);
+  }
 
   &.#{$block}--toggled {
     outline-color: var(--sapContent_ContrastFocusColor);

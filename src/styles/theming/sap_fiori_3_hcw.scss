@@ -127,7 +127,9 @@
   --fdButton_Text_Shadow: none;
   --fdButton_Emphasized_Border_Width: 0.125rem;
   --fdButton_Focus_Outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
-  --fdButton_Focus_Outline__Offset: -0.1875rem;
+  --fdButton_Focus_Outline_Offset: -0.1875rem;
+  --fdButton_Emphasized_Focus_Outline: var(--fdButton_Focus_Outline);
+  --fdButton_Emphasized_Focus_Outline_Offset: var(--fdButton_Focus_Outline_Offset);
   --fdButton_Font: var(--sapFontFamily);
   --fdButton_Pressed_Focused_Color: var(--sapContent_ContrastFocusColor);
   --fdButton_Box_Shadow_Hover: none;

@@ -47,3 +47,7 @@
     var(--sapButton_Selected_Hover_Background)
   );
 }
+
+@mixin emphasizedFocus() {
+  @include buttonFocus(var(--fdButton_Emphasized_Focus_Outline_Offset));
+}
