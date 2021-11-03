@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.3...v0.21.0-rc.4) (2021-11-03)
+
+
+### Bug Fixes
+
+* empty icon tab bar ([#2883](https://github.com/SAP/fundamental-styles/issues/2883)) ([86f3fdb](https://github.com/SAP/fundamental-styles/commit/86f3fdbc2229857f7ac992c61020e7880f14dd7b))
+
 ## [0.21.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.2...v0.21.0-rc.3) (2021-11-03)
 
 
