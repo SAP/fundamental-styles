@@ -119,6 +119,10 @@ $block: #{$fd-namespace}-grid-list;
         * {
           color: $fd-grid-list-active-text-color !important;
         }
+
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
+        }
       }
 
       @include fd-navigated() {
