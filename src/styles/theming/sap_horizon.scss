@@ -21,6 +21,10 @@
   --fdButton_Attention_Box_Shadow_Hover: none; // TODO: fix in JavaScript
   --fdButton_Emphasized_Box_Shadow_Hover: none; // TODO: fix in JavaScript
 
+  /* Segmented Button */
+  --fdSegmented_Button_Radius: var(--sapButton_BorderCornerRadius);
+  --fdSegmented_Button_Border_Right_Width_Zero: 1px;
+
   /* Rating Indicator */
   // default mode
   --fdRating_Indicator_Selected_Hover_Opacity: 1;

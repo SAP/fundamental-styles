@@ -16,37 +16,41 @@ $block: #{$fd-namespace}-segmented-button;
 
   display: inline-flex;
   vertical-align: middle;
+  background-color: var(--sapButton_Background);
+  border-radius: var(--sapButton_BorderCornerRadius);
 
   & > * {
     margin: 0;
 
     &:not(:first-child):not(:last-child) {
       @include styleButtonContent() {
-        border-radius: 0;
+        border-radius: var(--fdSegmented_Button_Radius);
       }
     }
 
     &:not(:last-child) {
       @include styleButtonContent() {
-        border-right-width: 0;
+        border-right-width: var(--fdSegmented_Button_Border_Right_Width_Zero);
       }
     }
 
     &:first-child {
       @include styleButtonContent() {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-top-right-radius: var(--fdSegmented_Button_Radius);
+        border-bottom-right-radius: var(--fdSegmented_Button_Radius);
       }
     }
 
     &:last-child {
       @include styleButtonContent() {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        border-top-left-radius: var(--fdSegmented_Button_Radius);
+        border-bottom-left-radius: var(--fdSegmented_Button_Radius);
       }
     }
 
     @include fd-rtl() {
+      border-radius: var(--sapButton_BorderCornerRadius);
+
       &:not(:first-child) {
         @include styleButtonContent() {
           border-right: none;
@@ -55,19 +59,15 @@ $block: #{$fd-namespace}-segmented-button;
 
       &:last-child {
         @include styleButtonContent() {
-          border-top-left-radius: var(--sapButton_BorderCornerRadius);
-          border-bottom-left-radius: var(--sapButton_BorderCornerRadius);
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
+          border-top-right-radius: var(--fdSegmented_Button_Radius);
+          border-bottom-right-radius: var(--fdSegmented_Button_Radius);
         }
       }
 
       &:first-child {
         @include styleButtonContent() {
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-          border-top-right-radius: var(--sapButton_BorderCornerRadius);
-          border-bottom-right-radius: var(--sapButton_BorderCornerRadius);
+          border-top-left-radius: var(--fdSegmented_Button_Radius);
+          border-bottom-left-radius: var(--fdSegmented_Button_Radius);
           border-right-width: 1px;
         }
       }
