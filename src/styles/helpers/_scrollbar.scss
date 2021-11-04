@@ -1,0 +1,30 @@
+@mixin fd-themed-scrollbar() {
+  overflow: auto;
+
+  /** Firefox
+    * Currently Firefox doesn't support changing scrollbar color on hover & width but it's allowed by Fiori.
+    */
+  scrollbar-color: var(--sapScrollBar_FaceColor) var(--fdScrollbarTrackColor);
+
+  /** Chrome, WebKit */
+  &::-webkit-scrollbar {
+    width: var(----fdScrollbarDimension);
+    height: var(----fdScrollbarDimension);
+  }
+
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-corner {
+    background-color: var(--fdScrollbarTrackColor);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--sapScrollBar_FaceColor);
+
+    &:hover,
+    &:active {
+      background-color: var(--fdScrollbarThumbHoverColor);
+    }
+  }
+
+  /** For any other browser native scrollbar is used. */
+}
