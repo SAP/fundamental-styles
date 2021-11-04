@@ -21,13 +21,49 @@
   --fdButton_Attention_Box_Shadow_Hover: none; // TODO: fix in JavaScript
   --fdButton_Emphasized_Box_Shadow_Hover: none; // TODO: fix in JavaScript
 
+  /* Rating Indicator */
+  // default mode
+  --fdRating_Indicator_Selected_Hover_Opacity: 1;
+  // Display Only mode
+  --fdRating_Indicator_Display_Only_Selected_Color: var(--sapTextColor);
+  // Disabled mode
+  --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
+  --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
+  --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
+  --fdRating_Indicator_Focus_Border_Radius: var(--sapField_BorderCornerRadius);
+  --fdRating_Indicator_Outline_Offset: 0.125rem;
+  --fdRating_Indicator_Selected_Hover_Color: #552cff;
+  --fdRating_Indicator_Selected_Down_Color: #5026ff;
+
+  /* Wizard */
+  --fdWizard_Completed_Step_Color: var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Border: 0.0625rem solid var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Icon_Color: var(--sapSelectedColor);
+  --fdWizard_Current_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
+  --fdWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Active_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Active_Step_Border_Color: var(--sapActiveColor);
+  --fdWizard_Connector_Active_Border_Color: var(--sapSelectedColor);
+  --fdWizard_Content_Default_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_Solid_Background: var(--sapShell_Background);
+  --fdWizard_Content_List_Background: var(--sapGroup_ContentBackground);
+  --fdWizard_Content_Transparent_Background: transparent;
+  --fdWizard_Selection_Bar_Height: 0.188rem;
+  --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
+  --fdWizard_Step_Font_Weight: bold;
+
   /** Dialog **/
   --fdDialog_Border_Radius: 0.75rem;
   --fdDialog_Content_Box_Shadow: var(--sapContent_Shadow3);
   --fdDialog_Header_Box_Shadow: none;
 
   /* Title */
-  --fdTitle_font-family: var(--sapFontHeaderFamily);
+  --fdTitle_Font_Family: var(--sapFontHeaderFamily);
+  --fdTitle_Font_Weight: bold;
 
   /* MessageStrip */
   --fdMessageStrip_Border_Width: 0.0625rem;
@@ -106,4 +142,82 @@
   --fdTile_Border: 0.0625rem solid transparent;
   --fdTile_Border_Hover_Active: 0.0625rem solid transparent;
   --fdTile_Focus_Outline_Offset: -0.125rem;
+
+  /* Toolbar */
+  --fdToolbar_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdToolbar_Auto_Background_Color: #ffffff;
+  --fdToolbar_Solid_Background_Color: #ffffff;
+  --fdToolbar_Transparent_Background_Color: #ffffff;
+
+  /* Shellbar */
+  --fdShellbar_Notification_Badge_Padding: 0 0.35rem;
+  --fdShellbar_Notifcation_Badge_Line_Height: 1rem;
+
+  /* Checkbox */
+  --fdCheckbox_Selected_Color: var(--sapSelectedColor);
+  --fdCheckbox_State_Border_Type: solid;
+  --fdCheckbox_ReadOnly_State_Border_Type: dashed;
+  --fdCheckbox_Warning_State_Color: var(--sapCriticalTextColor);
+  --fdCheckbox_Label_Color: var(--sapField_TextColor);
+  --fdCheckbox_Default_State_Hover_BoxShadow: var(--sapContent_Interaction_Shadow);
+  --fdCheckbox_Information_State_Hover_BoxShadow: var(--sapContent_Informative_Shadow);
+  --fdCheckbox_Error_State_Hover_BoxShadow: var(--sapContent_Negative_Shadow);
+  --fdCheckbox_Warning_State_Hover_BoxShadow: var(--sapContent_Critical_Shadow);
+  --fdCheckbox_Success_State_Hover_BoxShadow: var(--sapContent_Positive_Shadow);
+  --fdCheckbox_Outline_Offset: 0.3125rem;
+  --fdCheckbox_Outline_Offset_Compact: 0.125rem;
+  --fdCheckbox_Outline_Border_Radius: 0.5rem;
+
+  /* Radio */
+  --fdRadio_Selected_Color: var(--sapSelectedColor);
+  --fdRadio_State_Border_Type: solid;
+  --fdRadio_ReadOnly_State_Border_Type: dashed;
+  --fdRadio_Warning_State_Color: var(--sapCriticalTextColor);
+  --fdRadio_Label_Color: var(--sapField_TextColor);
+  --fdRadio_Default_State_Hover_BoxShadow: var(--sapContent_Interaction_Shadow);
+  --fdRadio_Information_State_Hover_BoxShadow: var(--sapContent_Informative_Shadow);
+  --fdRadio_Error_State_Hover_BoxShadow: var(--sapContent_Negative_Shadow);
+  --fdRadio_Warning_State_Hover_BoxShadow: var(--sapContent_Critical_Shadow);
+  --fdRadio_Success_State_Hover_BoxShadow: var(--sapContent_Positive_Shadow);
+  --fdRadio_Outline_Offset: 0.3125rem;
+  --fdRadio_Outline_Offset_Compact: 0.125rem;
+  --fdRadio_Outline_Border_Radius: 0.5rem;
+  --fdRadio_Inner_Circle_Size: 0.75rem;
+  --fdRadio_Inner_Circle_Offset: 1rem;
+  --fdRadio_Inner_Circle_Compact_Size: 0.5rem;
+  --fdRadio_Inner_Circle_Compact_Offset: 0.75rem;
+
+  /* Switch */
+
+  /* The hardcoded values are a result of darken/lighten function calculations.
+   * Once we have the css variables from the sap-theming they will be replaced
+   */
+  --fdSwitch_Handle_Border_Width: var(--sapButton_BorderWidth);
+  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Semantic_Success_Border_Color: var(--sapSuccessColor);
+  --fdSwitch_Semantic_Success_Background_Color: #deeea9;
+  --fdSwitch_Semantic_Error_Background_Color: #ffffff;
+  --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: #ffffff;
+  --fdSwitch_Semantic_Error_Color: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Border_Color: var(--sapButton_Track_Background);
+  --fdSwitch_Slider_Border_Color_Hover: var(--sapButton_Track_Background);
+  --fdSwitch_Slider_Border_Color_Checked: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Slider_Border_Color_Checked_Hover: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_Slider_Border_Color_Positive: var(--sapSuccessBackground);
+  --fdSwitch_Slider_Border_Color_Positive_Hover: var(--sapSuccessBackground);
+  --fdSwitch_Slider_Border_Color_Negative: var(--sapErrorBackground);
+  --fdSwitch_Slider_Border_Color_Negative_Hover: var(--sapErrorBackground);
+  --fdSwitch_Slider_Background_Color_Negative: #ffcbe4;
+  --fdSwitch_Handle_Border_Color: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Handle_Border_Color_Hover: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Handle_Background_Color: #ffffff;
+  --fdSwitch_Handle_Background_Color_Positive: #ffffff;
+  --fdSwitch_Handle_Background_Color_Positive_Hover: #ffffff;
+  --fdSwitch_Handle_Background_Color_Negative: #ffffff;
+  --fdSwitch_Handle_Background_Color_Negative_Hover: #ffffff;
+  --fdSwitch_Handle_Box_Shadow_Hover: 0 0 0.125rem 0 rgb(85 107 130 / 72%);
+  --fdSwitch_Handle_Box_Shadow_Checked_Hover: 0 0 0.125rem 0 rgb(0 112 242 / 72%);
+  --fdSwitch_Handle_Box_Shadow_Positive_Hover: 0 0 0.125rem 0 rgb(37 111 58 / 72%);
+  --fdSwitch_Handle_Box_Shadow_Negative_Hover: 0 0 0.125rem 0 rgb(170 8 8 / 72%);
+  --fdSwitch_Focus_Border_Radius: 0.25rem;
 }

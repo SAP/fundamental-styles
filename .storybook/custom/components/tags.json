@@ -5,13 +5,13 @@
       "color": 1
     },
   "f3": {
-      "name": "fiori 3",
-      "title": "Fiori 3 Component" ,
+      "name": "fiori",
+      "title": "Fiori Component" ,
       "color": 2
     },
   "theme": {
       "name": "themeable",
-      "title": "Fiori 3 Themeable Component",
+      "title": "Fiori Themeable Component",
       "color": 3
     },
   "design": {
@@ -25,8 +25,8 @@
       "color": 5
     },
     "non-f3": {
-        "name": "non-fiori 3", 
-        "title": "Non Fiori 3 Component" ,
+        "name": "non-fiori", 
+        "title": "Non Fiori Component" ,
         "color": 6
     },
     "under-review": {

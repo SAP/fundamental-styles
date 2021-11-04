@@ -5,6 +5,10 @@
 .fd-checkbox
 */
 $block: #{$fd-namespace}-checkbox;
+$fd-checkbox-tristate-size: 0.75rem;
+$fd-checkbox-tristate-offset: 0.3125rem;
+$fd-checkbox-tristate-compact-size: 0.5rem;
+$fd-checkbox-tristate-compact-offset: 0.25rem;
 
 %fd-checkbox-input-hidden {
   position: absolute;
@@ -23,7 +27,7 @@ $block: #{$fd-namespace}-checkbox;
 }
 
 .#{$block} {
-  @mixin fd-checkbox-state($background-color, $text-color, $border-color, $border-size, $border-type) {
+  @mixin fd-checkbox-state($background-color, $text-color, $border-color, $border-size, $border-type, $box-shadow) {
     + .#{$block}__label {
       &::before {
         background-color: $background-color;
@@ -31,9 +35,18 @@ $block: #{$fd-namespace}-checkbox;
         color: $text-color;
       }
 
+      &::after {
+        background-color: $text-color;
+      }
+
       @include fd-hover() {
         @include fd-disabled() {
           border-color: $border-color;
+        }
+
+        &::before {
+          box-shadow: $box-shadow;
+          background-color: var(--sapField_Hover_Background);
         }
       }
     }
@@ -73,22 +86,11 @@ $block: #{$fd-namespace}-checkbox;
       border-radius: var(--sapField_BorderCornerRadius);
     }
 
-    &::after {
-      padding-left: 0.125rem;
-      position: relative;
-    }
-
-    @include fd-rtl() {
-      &::after {
-        padding-left: 0;
-        padding-right: 0.125rem;
-      }
-    }
-
     @include fd-hover() {
       &::before {
         background-color: var(--sapField_Hover_Background);
         border-color: var(--sapField_Hover_BorderColor);
+        box-shadow: var(--fdCheckbox_Default_State_Hover_BoxShadow);
       }
     }
 
@@ -96,74 +98,93 @@ $block: #{$fd-namespace}-checkbox;
       outline: none;
     }
 
-    @include fd-empty() {
-      padding: $fd-checkbox-margin;
-      margin: 0;
-
-      &::before,
-      &::after {
-        margin-right: 0;
-        margin-left: 0;
+    &--required,
+    &[aria-required='true'] {
+      .#{$block}__text {
+        @include fd-form-radio-checkbox-required-label();
       }
     }
   }
 
+  &__label-container {
+    @include fd-reset();
+    @include fd-flex-vertical-center();
+
+    width: 100%;
+    height: 1rem;
+    pointer-events: none;
+  }
+
   &__text {
+    @include fd-reset();
     @include fd-ellipsis();
+    @include fd-set-margins-x($fd-checkbox-margin, 0);
 
-    margin-left: $fd-checkbox-margin;
-    margin-right: 0;
-
-    @include fd-rtl() {
-      margin-right: $fd-checkbox-margin;
-      margin-left: 0;
-    }
+    color: var(--fdCheckbox_Label_Color);
   }
 
   &:checked + .#{$block}__label::before {
     content: "\e05b";
   }
 
-  &:indeterminate + .#{$block}__label::before {
-    @include applyIndeterminatePadding();
-
-    content: "\e17b";
-    font-size: 0.75rem;
+  &:indeterminate + .#{$block}__label::after {
+    content: "";
+    width: $fd-checkbox-tristate-size;
+    height: $fd-checkbox-tristate-size;
+    background-color: var(--fdCheckbox_Selected_Color);
+    position: absolute;
+    margin-left: $fd-checkbox-tristate-offset;
   }
 
-  &:indeterminate + .#{$block}__label--compact::before {
-    @include applyIndeterminatePadding();
+  &:indeterminate + .#{$block}__label--compact::after {
+    content: "";
+    width: $fd-checkbox-tristate-compact-size;
+    height: $fd-checkbox-tristate-compact-size;
+    background-color: var(--fdCheckbox_Selected_Color);
+    position: absolute;
+    margin-left: $fd-checkbox-tristate-compact-offset;
+  }
 
-    content: "\e17b";
-    font-size: 0.6rem;
+  @include fd-rtl() {
+    &:indeterminate + .#{$block}__label::after {
+      margin-left: 0;
+      margin-right: $fd-checkbox-tristate-offset;
+    }
+
+    &:indeterminate + .#{$block}__label--compact::after {
+      margin-left: 0;
+      margin-right: $fd-checkbox-tristate-compact-offset;
+    }
   }
 
   // states
   &.is-warning,
   &.is-alert {
-    @include fd-checkbox-state(var(--sapField_WarningBackground), var(--sapField_TextColor), var(--sapField_WarningColor), 0.125rem, var(--fdCheckbox_State_Border_Type));
+    @include fd-checkbox-state(var(--sapField_WarningBackground), var(--fdCheckbox_Warning_State_Color), var(--sapField_WarningColor), 0.125rem, var(--fdCheckbox_State_Border_Type), var(--fdCheckbox_Error_State_Hover_BoxShadow));
   }
 
   &.is-error {
-    @include fd-checkbox-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem, var(--fdCheckbox_State_Border_Type));
+    @include fd-checkbox-state(var(--sapField_InvalidBackground), var(--sapField_InvalidColor), var(--sapField_InvalidColor), 0.125rem, var(--fdCheckbox_State_Border_Type), var(--fdCheckbox_Error_State_Hover_BoxShadow));
   }
 
   &.is-success {
-    @include fd-checkbox-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth), solid);
+    @include fd-checkbox-state(var(--sapField_SuccessBackground), var(--sapField_SuccessColor), var(--sapField_SuccessColor), var(--sapField_BorderWidth), solid, var(--fdCheckbox_Success_State_Hover_BoxShadow));
   }
 
   &.is-information {
-    @include fd-checkbox-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem, var(--fdCheckbox_State_Border_Type));
+    @include fd-checkbox-state(var(--sapField_InformationBackground), var(--sapField_InformationColor), var(--sapField_InformationColor), 0.125rem, var(--fdCheckbox_State_Border_Type), var(--fdCheckbox_Information_State_Hover_BoxShadow));
   }
 
   &[readonly],
   &.is-readonly {
-    @include fd-checkbox-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth), solid);
+    @include fd-checkbox-state(var(--sapField_ReadOnly_Background), var(--sapContent_NonInteractiveIconColor), var(--sapField_ReadOnly_BorderColor), var(--sapField_BorderWidth), var(--fdCheckbox_ReadOnly_State_Border_Type), none);
   }
 
   @include fd-focus() {
     + .#{$block}__label {
-      @include fd-form-radio-focus($fd-checkbox-margin);
+      .#{$block}__label-container {
+        @include fd-form-radio-checkbox-focus(var(--fdCheckbox_Outline_Offset));
+      }
     }
   }
 
@@ -177,40 +198,27 @@ $block: #{$fd-namespace}-checkbox;
   }
 
   &--compact {
-    > .#{$block}__text {
-      margin-left: $fd-checkbox-margin-compact;
-
-      @include fd-rtl() {
-        margin-left: 0;
-        margin-right: $fd-checkbox-margin-compact;
-      }
-    }
     + .#{$block}__label {
       padding: $fd-checkbox-margin-compact;
 
       &::before {
-        font-size: 0.625rem;
+        font-size: var(--sapFontSmallSize);
         height: $fd-checkbox-dimensions-compact;
         width: $fd-checkbox-dimensions-compact;
         min-width: $fd-checkbox-dimensions-compact;
         margin-left: 0;
       }
 
-      @include fd-empty() {
-        padding: $fd-checkbox-margin-compact;
-        margin: 0;
-
-        &::before,
-        &::after {
-          margin-right: 0;
-          margin-left: 0;
-        }
+      .#{$block}__text {
+        @include fd-set-margins-x($fd-checkbox-margin-compact, 0);
       }
     }
 
     @include fd-focus() {
       + .#{$block}__label {
-        @include fd-form-radio-focus($fd-checkbox-margin-compact);
+        .#{$block}__label-container {
+          @include fd-form-radio-checkbox-focus(var(--fdCheckbox_Outline_Offset_Compact));
+        }
       }
     }
   }

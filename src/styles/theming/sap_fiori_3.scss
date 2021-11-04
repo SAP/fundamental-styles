@@ -11,6 +11,10 @@
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
+  --fdRating_Indicator_Focus_Border_Radius: 0;
+  --fdRating_Indicator_Outline_Offset: 0;
+  --fdRating_Indicator_Selected_Hover_Color: var(--sapContent_RatedColor);
+  --fdRating_Indicator_Selected_Down_Color: var(--sapContent_RatedColor);
 
   /* Wizard */
   --fdWizard_Completed_Step_Color: var(--sapSelectedColor);
@@ -31,6 +35,7 @@
   --fdWizard_Content_Transparent_Background: transparent;
   --fdWizard_Selection_Bar_Height: 0.188rem;
   --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
+  --fdWizard_Step_Font_Weight: normal;
 
   /* Slider */
 
@@ -78,10 +83,36 @@
   /* Radio */
   --fdRadio_Selected_Color: var(--sapSelectedColor);
   --fdRadio_State_Border_Type: solid;
+  --fdRadio_ReadOnly_State_Border_Type: solid;
+  --fdRadio_Warning_State_Color: var(--sapField_TextColor);
+  --fdRadio_Label_Color: inherit;
+  --fdRadio_Default_State_Hover_BoxShadow: none;
+  --fdRadio_Information_State_Hover_BoxShadow: none;
+  --fdRadio_Error_State_Hover_BoxShadow: none;
+  --fdRadio_Warning_State_Hover_BoxShadow: none;
+  --fdRadio_Success_State_Hover_BoxShadow: none;
+  --fdRadio_Outline_Offset: 0.5625rem;
+  --fdRadio_Outline_Offset_Compact: 0.375rem;
+  --fdRadio_Outline_Border_Radius: 0;
+  --fdRadio_Inner_Circle_Size: 0.625rem;
+  --fdRadio_Inner_Circle_Offset: 1.0625rem;
+  --fdRadio_Inner_Circle_Compact_Size: 0.375rem;
+  --fdRadio_Inner_Circle_Compact_Offset: 0.8125rem;
 
   /* Checkbox */
   --fdCheckbox_Selected_Color: var(--sapSelectedColor);
   --fdCheckbox_State_Border_Type: solid;
+  --fdCheckbox_ReadOnly_State_Border_Type: solid;
+  --fdCheckbox_Warning_State_Color: var(--sapField_TextColor);
+  --fdCheckbox_Label_Color: inherit;
+  --fdCheckbox_Default_State_Hover_BoxShadow: none;
+  --fdCheckbox_Information_State_Hover_BoxShadow: none;
+  --fdCheckbox_Error_State_Hover_BoxShadow: none;
+  --fdCheckbox_Warning_State_Hover_BoxShadow: none;
+  --fdCheckbox_Success_State_Hover_BoxShadow: none;
+  --fdCheckbox_Outline_Offset: 0.5625rem;
+  --fdCheckbox_Outline_Offset_Compact: 0.375rem;
+  --fdCheckbox_Outline_Border_Radius: 0;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;
@@ -218,6 +249,25 @@
   --fdSwitch_Semantic_Error_Background_Color: var(--sapErrorBackground);
   --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: var(--sapSuccessBackground);
   --fdSwitch_Semantic_Error_Color: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Border_Color: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Slider_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdSwitch_Slider_Border_Color_Checked: var(--sapButton_Selected_BorderColor);
+  --fdSwitch_Slider_Border_Color_Checked_Hover: var(--sapButton_Selected_BorderColor);
+  --fdSwitch_Slider_Border_Color_Positive: var(--sapSuccessColor);
+  --fdSwitch_Slider_Border_Color_Positive_Hover: var(--sapSuccessColor);
+  --fdSwitch_Slider_Border_Color_Negative: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Border_Color_Negative_Hover: var(--sapErrorBorderColor);
+  --fdSwitch_Slider_Background_Color_Negative: var(--sapErrorBackground);
+  --fdSwitch_Handle_Border_Color: var(--sapContent_ForegroundBorderColor);
+  --fdSwitch_Handle_Border_Color_Hover: var(--sapButton_Hover_BorderColor);
+  --fdSwitch_Handle_Background_Color: var(--sapButton_Background);
+  --fdSwitch_Handle_Background_Color_Positive: var(--sapButton_Background);
+  --fdSwitch_Handle_Background_Color_Negative: var(--sapButton_Background);
+  --fdSwitch_Handle_Box_Shadow_Hover: none;
+  --fdSwitch_Handle_Box_Shadow_Checked_Hover: none;
+  --fdSwitch_Handle_Box_Shadow_Positive_Hover: none;
+  --fdSwitch_Handle_Box_Shadow_Negative_Hover: none;
+  --fdSwitch_Focus_Border_Radius: 0;
 
   /* Action List Item */
   --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
@@ -320,7 +370,8 @@
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
 
   /* Title */
-  --fdTitle_font-family: var(--sapFontFamily);
+  --fdTitle_Font_Family: var(--sapFontFamily);
+  --fdTitle_Font_Weight: normal;
 
   /* Panel */
   --fdPanel_Background: transparent;
@@ -333,4 +384,14 @@
 
   /* Object Status */
   --fdObject_Status_Border_Radius: var(--sapElement_BorderCornerRadius);
+
+  /* Toolbar */
+  --fdToolbar_Border_Radius: 0;
+  --fdToolbar_Auto_Background_Color: inherit;
+  --fdToolbar_Solid_Background_Color: var(--sapBackgroundColor);
+  --fdToolbar_Transparent_Background_Color: var(--sapToolbar_Background);
+
+  /* Shellbar */
+  --fdShellbar_Notification_Badge_Padding: 0;
+  --fdShellbar_Notifcation_Badge_Line_Height: 0.8rem;
 }
