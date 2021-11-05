@@ -61,6 +61,7 @@ $block: #{$fd-namespace}-button;
   text-align: center;
   text-shadow: var(--fdButton_Text_Shadow);
   font-family: var(--fdButton_Font);
+  z-index: 1;
 
   // look
   border-style: solid;
@@ -200,8 +201,6 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainerFocus() {
-  box-shadow: var(--fdButton_Box_Shadow_Hover);
-
   @include standardFocus();
 
   &.#{$block}--emphasized {
@@ -263,6 +262,7 @@ $block: #{$fd-namespace}-button;
   @include standardHover();
 
   box-shadow: var(--fdButton_Box_Shadow_Hover);
+  z-index: 2;
 
   &.#{$block}--toggled {
     @include standardToggledHover();
