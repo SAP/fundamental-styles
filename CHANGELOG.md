@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.5...v0.21.0-rc.6) (2021-11-05)
+
+
+### Bug Fixes
+
+* remove cell outline in Table component ([#2880](https://github.com/SAP/fundamental-styles/issues/2880)) ([58616e7](https://github.com/SAP/fundamental-styles/commit/58616e7b6820324998b74a497f5c631340ee4e79))
+
 ## [0.21.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.4...v0.21.0-rc.5) (2021-11-03)
 
 
