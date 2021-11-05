@@ -48,8 +48,7 @@ $block: #{$fd-namespace}-checkbox;
 
   @extend %fd-checkbox-input-hidden;
 
-  border-style: initial;
-
+  &,
   &.is-warning,
   &.is-error,
   &.is-success,
