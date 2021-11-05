@@ -200,7 +200,7 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainerFocus() {
-  box-shadow: none;
+  box-shadow: var(--fdButton_Box_Shadow_Hover);
 
   @include standardFocus();
 
@@ -211,8 +211,6 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainerPressedFocus() {
-  box-shadow: none;
-
   @include standardPressed();
   @include standardPressedFocus();
 
