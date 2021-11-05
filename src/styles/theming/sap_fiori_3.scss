@@ -265,8 +265,8 @@
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
 
   /* Scrollbar */
-  --fdScrollbarTrackColor: var(--sapScrollBar_TrackColor);
-  --fdScrollbarThumbColor: var(--sapScrollBar_FaceColor);
-  --fdScrollbarThumbHoverColor: var(--sapScrollBar_Hover_FaceColor);
-  --fdScrollbarDimension: var(--sapScrollBar_Dimension);
+  --fdScrollbar_Track_Color: var(--sapScrollBar_TrackColor);
+  --fdScrollbar_Thumb_Color: var(--sapScrollBar_FaceColor);
+  --fdScrollbar_Thumb_Hover_Color: var(--sapScrollBar_Hover_FaceColor);
+  --fdScrollbar_Dimension: var(--sapScrollBar_Dimension);
 }
