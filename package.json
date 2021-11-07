@@ -57,7 +57,7 @@
     "@babel/preset-react": "^7.10.4",
     "@commitlint/cli": "^13.2.0",
     "@commitlint/config-conventional": "^13.2.0",
-    "@commitlint/travis-cli": "^13.2.0",
+    "@commitlint/travis-cli": "^14.1.0",
     "@sap-theming/theming-base-content": "11.1.34",
     "@storybook/addon-a11y": "6.3.12",
     "@storybook/addon-actions": "6.3.12",
