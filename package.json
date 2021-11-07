@@ -55,7 +55,7 @@
     "@babel/node": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
-    "@commitlint/cli": "^13.2.0",
+    "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
     "@commitlint/travis-cli": "^14.1.0",
     "@sap-theming/theming-base-content": "11.1.34",
