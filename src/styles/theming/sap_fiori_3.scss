@@ -157,6 +157,17 @@
   /* Button */
   --fdButton_Text_Shadow: none;
   --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Focus_Outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
+  --fdButton_Focus_Outline_Offset: -0.1875rem;
+  --fdButton_Emphasized_Focus_Outline: var(--fdButton_Focus_Outline);
+  --fdButton_Emphasized_Focus_Outline_Offset: var(--fdButton_Focus_Outline_Offset);
+  --fdButton_Font: var(--sapFontFamily);
+  --fdButton_Pressed_Focused_Color: var(--sapContent_ContrastFocusColor);
+  --fdButton_Box_Shadow_Hover: none;
+  --fdButton_Accept_Box_Shadow_Hover: none;
+  --fdButton_Reject_Box_Shadow_Hover: none;
+  --fdButton_Attention_Box_Shadow_Hover: none;
+  --fdButton_Emphasized_Box_Shadow_Hover: none;
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
@@ -383,4 +394,8 @@
   /* Shellbar */
   --fdShellbar_Notification_Badge_Padding: 0;
   --fdShellbar_Notifcation_Badge_Line_Height: 0.8rem;
+
+  /* Segmented Button */
+  --fdSegmented_Button_Radius: 0;
+  --fdSegmented_Button_Border_Right_Width_Zero: 0;
 }

@@ -10,7 +10,8 @@
   @include applyColors(
     var(--sapButton_Reject_Hover_TextColor),
     var(--sapButton_Reject_Hover_BorderColor),
-    var(--sapButton_Reject_Hover_Background)
+    var(--sapButton_Reject_Hover_Background),
+    var(--fdButton_Reject_Box_Shadow_Hover)
   );
 }
 

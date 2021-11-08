@@ -1,4 +1,30 @@
 :root {
+  /** Button **/
+  --fdButton_Focus_Outline: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);
+  --fdButton_Focus_Outline_Offset: -0.125rem; // sapContent_FocusWidth * -1
+  --fdButton_Font: var(--sapFontBoldFamily);
+  --fdButton_Pressed_Focused_Color: transparent;
+  --fdButton_Box_Shadow_Hover: var(--sapContent_Shadow1);
+  --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Emphasized_Focus_Outline: var(--sapContent_FocusWidth) solid var(--sapButton_Emphasized_TextColor);
+  --fdButton_Emphasized_Focus_Outline_Offset: -0.25rem; // sapContent_FocusWidth * -2
+
+  /* rgba does not work with variables - this will have to be implemented with JavaScript
+  --fdButton_Accept_Box_Shadow_Hover: 0 0.125rem 0.5rem 0 rgba(var(--sapButton_Accept_Hover_TextColor), 0.42), 0 0 0 1px rgba(var(--sapButton_Accept_Hover_TextColor), 0.3);
+  --fdButton_Reject_Box_Shadow_Hover: 0 0.125rem 0.5rem 0 rgba(var(--sapButton_Reject_Hover_TextColor), 0.42), 0 0 0 1px rgba(var(--sapButton_Reject_Hover_TextColor), 0.3);
+  --fdButton_Attention_Box_Shadow_Hover: 0 0.125rem 0.5rem 0 rgba(var(--sapButton_Attention_Hover_TextColor), 0.42), 0 0 0 1px rgba(var(--sapButton_Attention_Hover_TextColor), 0.3);
+  --fdButton_Emphasized_Box_Shadow_Hover: 0 0.125rem 0.5rem 0 rgba(var(--sapButton_Emphasized_Hover_TextColor), 0.42), 0 0 0 1px rgba(var(--sapButton_Emphasized_Hover_TextColor), 0.3);
+  */
+
+  --fdButton_Accept_Box_Shadow_Hover: var(--sapContent_Shadow1);
+  --fdButton_Reject_Box_Shadow_Hover: var(--sapContent_Shadow1);
+  --fdButton_Attention_Box_Shadow_Hover: var(--sapContent_Shadow1);
+  --fdButton_Emphasized_Box_Shadow_Hover: var(--sapContent_Shadow1);
+
+  /* Segmented Button */
+  --fdSegmented_Button_Radius: var(--sapButton_BorderCornerRadius);
+  --fdSegmented_Button_Border_Right_Width_Zero: var(--sapButton_BorderWidth);
+
   /* Rating Indicator */
   // default mode
   --fdRating_Indicator_Selected_Hover_Opacity: 1;

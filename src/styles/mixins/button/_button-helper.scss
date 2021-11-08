@@ -1,15 +1,27 @@
 $block: #{$fd-namespace}-button;
 
-@mixin applyColors($color, $borderColor, $backgroundColor) {
+@mixin applyColors($color, $borderColor, $backgroundColor, $boxShadow: null) {
   color: $color;
   border-color: $borderColor;
   background-color: $backgroundColor;
+
+  @if ($boxShadow) {
+    box-shadow: $boxShadow;
+  }
 }
 
-@mixin buttonFocus($fd-button-outline-offset: -0.1875rem) {
-  outline: var(--sapContent_FocusWidth) dotted var(--sapContent_FocusColor);
-  outline-offset: $fd-button-outline-offset;
+@mixin buttonFocus($fd-button-outline-offset: null) {
+  outline: var(--fdButton_Focus_Outline);
+
+  @if ($fd-button-outline-offset) {
+    outline-offset: $fd-button-outline-offset;
+  }
   @content;
+
+  &.#{$block}--emphasized {
+    outline: var(--fdButton_Emphasized_Focus_Outline);
+    outline-offset: var(--fdButton_Emphasized_Focus_Outline_Offset);
+  }
 
   &.#{$block}--toggled {
     outline-color: var(--sapContent_ContrastFocusColor);

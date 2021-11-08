@@ -10,7 +10,8 @@
   @include applyColors(
     var(--sapButton_Attention_Hover_TextColor),
     var(--sapButton_Attention_Hover_BorderColor),
-    var(--sapButton_Attention_Hover_Background)
+    var(--sapButton_Attention_Hover_Background),
+    var(--fdButton_Attention_Box_Shadow_Hover)
   );
 }
 

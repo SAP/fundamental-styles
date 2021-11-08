@@ -10,7 +10,8 @@
   @include applyColors(
     var(--sapButton_Accept_Hover_TextColor),
     var(--sapButton_Accept_Hover_BorderColor),
-    var(--sapButton_Accept_Hover_Background)
+    var(--sapButton_Accept_Hover_Background),
+    var(--fdButton_Accept_Box_Shadow_Hover)
   );
 }
 

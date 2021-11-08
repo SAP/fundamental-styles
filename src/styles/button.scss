@@ -60,6 +60,8 @@ $block: #{$fd-namespace}-button;
   line-height: 1rem;
   text-align: center;
   text-shadow: var(--fdButton_Text_Shadow);
+  font-family: var(--fdButton_Font);
+  z-index: 1;
 
   // look
   border-style: solid;
@@ -199,18 +201,15 @@ $block: #{$fd-namespace}-button;
 }
 
 @mixin buttonContainerFocus() {
-  box-shadow: none;
-
   @include standardFocus();
 
   &.#{$block}--emphasized {
+    @include emphasizedFocus();
     @include standardPressedFocus();
   }
 }
 
 @mixin buttonContainerPressedFocus() {
-  box-shadow: none;
-
   @include standardPressed();
   @include standardPressedFocus();
 
@@ -261,6 +260,9 @@ $block: #{$fd-namespace}-button;
 
 @mixin buttonContainerHover() {
   @include standardHover();
+
+  box-shadow: var(--fdButton_Box_Shadow_Hover);
+  z-index: 2;
 
   &.#{$block}--toggled {
     @include standardToggledHover();
