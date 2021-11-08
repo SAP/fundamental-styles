@@ -67,6 +67,10 @@ $cols: 12;
   position: relative;
   padding: 0 $horizontal-gutter-small;
 
+  @include fd-rtl() {
+    direction: rtl;
+  }
+
   &.#{$blockContainer}--no-horizontal-gap,
   &.#{$blockContainer}--no-gap {
     .#{$blockRow} {
@@ -85,77 +89,63 @@ $cols: 12;
     }
   }
 
-  @include fd-rtl() {
-    direction: rtl;
-  }
-}
-
-.#{$blockRow} {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 0 0 100%;
-  position: relative;
-  margin-left: -$horizontal-gutter-small;
-  margin-right: -$horizontal-gutter-small;
-  min-width: calc(100% + #{$horizontal-gutter-small} * 2);
-
-  &:first-child {
-    margin-top: -$vertical-gutter-small;
-  }
-
-  .#{$blockCol} {
-    padding-top: $vertical-gutter-small;
-  }
-}
-
-.#{$blockCol} {
-  @at-root {
-    @include responsive-column();
-  }
-
-  padding: 0 $horizontal-gutter-small;
-  min-width: 100%;
-  max-width: 100%;
-
-  &--full {
-    @include full();
-  }
-
-  &--wrap {
+  .#{$blockRow} {
+    display: flex;
     flex-wrap: wrap;
+    flex: 0 0 100%;
+    position: relative;
+    margin-left: -$horizontal-gutter-small;
+    margin-right: -$horizontal-gutter-small;
+
+    &:first-child {
+      margin-top: -$vertical-gutter-small;
+    }
+
+    .#{$blockCol} {
+      padding: $vertical-gutter-small $horizontal-gutter-small 0 $horizontal-gutter-small;
+      min-width: 100%;
+      max-width: 100%;
+
+      @at-root {
+        @include responsive-column();
+      }
+
+      &--full {
+        @include full();
+      }
+
+      &--wrap {
+        flex-wrap: wrap;
+      }
+    }
   }
 }
 
 @media (min-width: 600px) {
   .#{$blockContainer} {
     padding: 0 $horizontal-gutter;
-  }
 
-  .#{$blockRow} {
-    min-width: calc(100% + #{$horizontal-gutter} * 2);
-    margin-left: -$horizontal-gutter;
-    margin-right: -$horizontal-gutter;
+    .#{$blockRow} {
+      margin-left: -$horizontal-gutter;
+      margin-right: -$horizontal-gutter;
 
-    &:first-child {
-      margin-top: -$vertical-gutter;
-    }
+      &:first-child {
+        margin-top: -$vertical-gutter;
+      }
 
-    .#{$blockCol} {
-      padding-top: $vertical-gutter;
-    }
-  }
+      .#{$blockCol} {
+        padding: $vertical-gutter $horizontal-gutter 0 $horizontal-gutter;
 
-  .#{$blockCol} {
-    padding: 0 $horizontal-gutter;
-
-    @at-root {
-      @include responsive-column(map-get($size, $md));
+        @at-root {
+          @include responsive-column(map-get($size, $md));
+        }
+      }
     }
   }
 }
 
 @media (min-width: 1024px) {
-  .#{$blockCol} {
+  .#{$blockContainer} .#{$blockRow} .#{$blockCol} {
     @at-root {
       @include responsive-column(map-get($size, $lg));
     }
@@ -163,7 +153,7 @@ $cols: 12;
 }
 
 @media (min-width: 1440px) {
-  .#{$blockCol} {
+  .#{$blockContainer} .#{$blockRow} .#{$blockCol} {
     @at-root {
       @include responsive-column(map-get($size, $xl));
     }
