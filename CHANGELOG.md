@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.11...v0.21.0-rc.12) (2021-11-08)
+
+
+### Bug Fixes
+
+* **styles:** add padding for inline code [ci visual] ([#2898](https://github.com/SAP/fundamental-styles/issues/2898)) ([3dff18c](https://github.com/SAP/fundamental-styles/commit/3dff18c8e187db78d44ec0b234bb77b1ac35b0fe))
+
 ## [0.21.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.10...v0.21.0-rc.11) (2021-11-08)
 
 ## [0.21.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.9...v0.21.0-rc.10) (2021-11-08)
