@@ -12,6 +12,8 @@ $cols: 12;
 $gutter: 0.25rem;
 $groupGutter: 1rem;
 
+$verticalMargin: 0.625rem;
+
 @mixin fd-form-col-paddings($colSelector) {
   .#{$gridContainer}.#{$blockContainer} .#{$gridRow} {
     @for $col from 1 through $cols - 1 {
@@ -44,7 +46,7 @@ $groupGutter: 1rem;
     .#{$colSelector},
     .#{$colSelector}--12 {
       .#{$fd-namespace}-form-label {
-        margin-top: 0.625rem;
+        margin-top: $verticalMargin;
       }
     }
   }
@@ -55,7 +57,7 @@ $groupGutter: 1rem;
 
   .#{$gridRow} {
     align-items: center;
-    margin-bottom: 0.625rem;
+    margin-bottom: $verticalMargin;
 
     &--top {
       align-items: start;
@@ -103,7 +105,7 @@ $groupGutter: 1rem;
     padding: $groupGutter;
 
     .#{$gridRow} {
-      margin: 0 -#{$gutter};
+      margin: 0 -#{$gutter} $verticalMargin -#{$gutter};
       min-width: calc(100% + #{$gutter} * 2);
 
       .#{$gridCol} {
