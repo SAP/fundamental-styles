@@ -1,3 +1,5 @@
+@import "../icons/settings";
+
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
   --fdOverlay_Background_Opacity: 0.8;
@@ -268,4 +270,15 @@
   --fdScrollbar_Thumb_Color: var(--sapScrollBar_FaceColor);
   --fdScrollbar_Thumb_Hover_Color: var(--sapScrollBar_Hover_FaceColor);
   --fdScrollbar_Dimension: var(--sapScrollBar_Dimension);
+  
+  /* Progress Indicator */
+  --fdProgress_Indicator_Background_Color_Neutral: var(--sapHighlightColor);
+  --fdProgress_Indicator_Background_Color_Informative: var(--sapHighlightColor);
+  --fdProgress_Indicator_Background_Color_Positive: var(--sapHighlightColor);
+  --fdProgress_Indicator_Background_Color_Negative: var(--sapHighlightColor);
+  --fdProgress_Indicator_Background_Color_Critical: var(--sapHighlightColor);
+  --fdProgress_Icon_Informative: '\e289';
+  --fdProgress_Icon_Positive: '\e1c1';
+  --fdProgress_Icon_Negative: '\e1c8';
+  --fdProgress_Icon_Critical: '\e053';
 }

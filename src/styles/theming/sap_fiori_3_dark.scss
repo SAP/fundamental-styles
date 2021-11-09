@@ -268,4 +268,11 @@
   --fdScrollbar_Thumb_Color: var(--sapScrollBar_FaceColor);
   --fdScrollbar_Thumb_Hover_Color: var(--sapScrollBar_Hover_FaceColor);
   --fdScrollbar_Dimension: var(--sapScrollBar_Dimension);
+  
+  /* Progress Indicator */
+  --fdProgress_Indicator_Background_Color_Neutral: var(--sapNeutralElementColor);
+  --fdProgress_Indicator_Background_Color_Informative: var(--sapInformativeElementColor);
+  --fdProgress_Indicator_Background_Color_Positive: var(--sapPositiveElementColor);
+  --fdProgress_Indicator_Background_Color_Negative: var(--sapNegativeElementColor);
+  --fdProgress_Indicator_Background_Color_Critical: var(--sapCriticalElementColor);
 }
