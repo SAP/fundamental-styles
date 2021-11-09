@@ -5,6 +5,10 @@
 $block: #{$fd-namespace}-carousel;
 $button: #{$fd-namespace}-button;
 
+#{$block}:focus {
+  outline: 0.0625rem dotted;
+}
+
 .#{$block} {
   $fd-carousel-page-indicator-border: 0.0625rem solid var(--sapPageFooter_BorderColor) !default;
   $fd-carousel-button-size: 2.125rem !default;
@@ -198,6 +202,21 @@ $button: #{$fd-namespace}-button;
           display: none;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 21.25rem) {
+  .#{$block} {
+    min-width: 11rem;
+
+    &__page-indicators {
+      width: 8rem;
+      padding: 0;
+    }
+
+    &__page-indicator-container {
+      padding: 0;
     }
   }
 }
