@@ -1,6 +1,598 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Progress Indicator Progress 1`] = `
-
+exports[`Storyshots Components/Progress Indicator Layout 1`] = `
+<section>
+  
     
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__remain-area"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__label"
+        >
+          0%
+        </span>
+        
+            
+      </div>
+        
+        
+    </div>
+    
+    
+  </div>
+  
+    
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar"
+        style="flex-basis: 42%"
+      />
+      
+            
+      <div
+        class="fd-progress-indicator__remain-area"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__label"
+        >
+          42%
+        </span>
+        
+            
+      </div>
+        
+        
+    </div>
+    
+    
+  </div>
+  
+    
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar"
+        style="flex-basis: 69%"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__label fd-progress-indicator__label--left"
+        >
+          69%
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar"
+        style="flex-basis: 100%"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__label fd-progress-indicator__label--left"
+        >
+          100%
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar"
+        style="flex-basis: 80%"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__label fd-progress-indicator__label--left"
+        >
+          80 of 100 MB
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Progress Indicator Text Truncation 1`] = `
+<section>
+  
+    
+  <div
+    class="example-container"
+    style="margin-bottom: 50px"
+  >
+    
+        
+    <div
+      class="fd-popover"
+      style="width: 60%"
+    >
+      
+            
+      <div
+        class="fd-popover__control"
+      >
+        
+                
+        <div
+          class="fd-progress-indicator"
+        >
+          
+                    
+          <div
+            class="fd-progress-indicator__container"
+          >
+            
+                        
+            <div
+              class="fd-progress-indicator__progress-bar"
+              onclick="onPopoverClick('popoverF0')"
+              style="flex-basis: 69%"
+            >
+              
+                            
+              <span
+                class="fd-progress-indicator__label fd-progress-indicator__label--left"
+              >
+                69% Reduce container width until this text is truncated, then press the ProgressIndicator ProgressIndicator ProgressIndicator
+              </span>
+              
+                        
+            </div>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body"
+        id="popoverF0"
+      >
+        
+                
+        <div
+          class="fd-popover__wrapper"
+        >
+          
+                    
+          <div
+            class="fd-progress-indicator__truncate-popover"
+          >
+            
+                        
+            <span>
+              69% Reduce container width until this text is truncated, then press the ProgressIndicator
+            </span>
+            
+                        
+            <button
+              class="close-popover"
+            >
+              
+                            
+              <i
+                class="sap-icon sap-icon--decline"
+              />
+              
+                        
+                    
+            </button>
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+   
+   
+  <div
+    class="example-container"
+    style="margin-bottom: 50px"
+  >
+    
+        
+    <div
+      class="fd-popover"
+      style="width: 60%"
+    >
+      
+            
+      <div
+        class="fd-popover__control"
+      >
+        
+                
+        <div
+          class="fd-progress-indicator"
+        >
+          
+                    
+          <div
+            class="fd-progress-indicator__container"
+            onclick="onPopoverClick('popoverF1')"
+          >
+            
+                        
+            <div
+              class="fd-progress-indicator__progress-bar"
+              style="flex-basis: 45%"
+            />
+            
+                        
+            <span
+              class="fd-progress-indicator__label"
+            >
+              45% Reduce container width until this text is truncated, then press the ProgressIndicator
+            </span>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-hidden="false"
+        class="fd-popover__body fd-popover__body--right"
+        id="popoverF1"
+      >
+        
+                
+        <div
+          class="fd-popover__wrapper"
+        >
+          
+                    
+          <div
+            class="fd-progress-indicator__truncate-popover"
+          >
+            
+                        
+            <span>
+              Reduce container width until this text is truncated, then press the ProgressIndicator
+            </span>
+            
+                        
+            <button
+              class="close-popover"
+            >
+              
+                            
+              <i
+                class="sap-icon sap-icon--decline"
+              />
+              
+                        
+            </button>
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Components/Progress Indicator Value States 1`] = `
+<section>
+  
+     
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar"
+        style="flex-basis: 42%"
+      />
+      
+            
+      <div
+        class="fd-progress-indicator__remain-area"
+      >
+        <span
+          class="fd-progress-indicator__label"
+        >
+          42%
+        </span>
+      </div>
+        
+        
+    </div>
+    
+    
+  </div>
+  
+   
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar fd-progress-indicator__progress-bar--informative"
+        style="flex-basis: 42%"
+      />
+      
+            
+      <div
+        class="fd-progress-indicator__remain-area"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__icon fd-progress-indicator__icon--informative"
+        />
+        
+                
+        <span
+          class="fd-progress-indicator__label"
+        >
+          42%
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+   
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar fd-progress-indicator__progress-bar--positive"
+        style="flex-basis: 42%"
+      />
+      
+            
+      <div
+        class="fd-progress-indicator__remain-area"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__icon fd-progress-indicator__icon--positive"
+        />
+        
+                
+        <span
+          class="fd-progress-indicator__label"
+        >
+          42%
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar fd-progress-indicator__progress-bar--critical"
+        style="flex-basis: 42%"
+      />
+      
+            
+      <div
+        class="fd-progress-indicator__remain-area"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__icon fd-progress-indicator__icon--critical"
+        />
+        
+                
+        <span
+          class="fd-progress-indicator__label"
+        >
+          42%
+        </span>
+        
+            
+      </div>
+        
+        
+    </div>
+    
+    
+  </div>
+  
+   
+    
+  <div
+    class="fd-progress-indicator"
+  >
+    
+        
+    <div
+      class="fd-progress-indicator__container"
+    >
+      
+            
+      <div
+        class="fd-progress-indicator__progress-bar fd-progress-indicator__progress-bar--negative"
+        style="flex-basis: 42%"
+      />
+      
+            
+      <div
+        class="fd-progress-indicator__remain-area"
+      >
+        
+                
+        <span
+          class="fd-progress-indicator__icon fd-progress-indicator__icon--negative"
+        />
+        
+                
+        <span
+          class="fd-progress-indicator__label"
+        >
+          42%
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
 `;
