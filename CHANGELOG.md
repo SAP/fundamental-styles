@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.12...v0.21.0-rc.13) (2021-11-09)
+
+
+### Features
+
+* themeable scrollbar ([#2886](https://github.com/SAP/fundamental-styles/issues/2886)) ([8c3bf35](https://github.com/SAP/fundamental-styles/commit/8c3bf351e50eaef1a52b77b514e92943571fa80a))
+
 ## [0.21.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.11...v0.21.0-rc.12) (2021-11-08)
 
 
