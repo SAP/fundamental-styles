@@ -1,4 +1,88 @@
 
+## [0.21.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.13...v0.21.0-rc.14) (2021-11-10)
+
+
+### Bug Fixes
+
+* **styles:** checkbox broken outline voiceover [ci visual] ([#2881](https://github.com/SAP/fundamental-styles/issues/2881)) ([fc45fed](https://github.com/SAP/fundamental-styles/commit/fc45fed144c6e729e5f3440dbf106f0b7afb601e))
+
+## [0.21.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.12...v0.21.0-rc.13) (2021-11-09)
+
+
+### Features
+
+* themeable scrollbar ([#2886](https://github.com/SAP/fundamental-styles/issues/2886)) ([8c3bf35](https://github.com/SAP/fundamental-styles/commit/8c3bf351e50eaef1a52b77b514e92943571fa80a))
+
+## [0.21.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.11...v0.21.0-rc.12) (2021-11-08)
+
+
+### Bug Fixes
+
+* **styles:** add padding for inline code [ci visual] ([#2898](https://github.com/SAP/fundamental-styles/issues/2898)) ([3dff18c](https://github.com/SAP/fundamental-styles/commit/3dff18c8e187db78d44ec0b234bb77b1ac35b0fe))
+
+## [0.21.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.10...v0.21.0-rc.11) (2021-11-08)
+
+## [0.21.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.9...v0.21.0-rc.10) (2021-11-08)
+
+## [0.21.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.8...v0.21.0-rc.9) (2021-11-08)
+
+## [0.21.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.7...v0.21.0-rc.8) (2021-11-07)
+
+## [0.21.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.6...v0.21.0-rc.7) (2021-11-07)
+
+## [0.21.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.5...v0.21.0-rc.6) (2021-11-05)
+
+
+### Bug Fixes
+
+* remove cell outline in Table component ([#2880](https://github.com/SAP/fundamental-styles/issues/2880)) ([58616e7](https://github.com/SAP/fundamental-styles/commit/58616e7b6820324998b74a497f5c631340ee4e79))
+
+## [0.21.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.4...v0.21.0-rc.5) (2021-11-03)
+
+
+### Bug Fixes
+
+* **styles:** static dialog nobackdrop position fix [ci visual] ([#2877](https://github.com/SAP/fundamental-styles/issues/2877)) ([a35f960](https://github.com/SAP/fundamental-styles/commit/a35f9608c88574b5168144d5a88b4ef1a57eb500))
+
+## [0.21.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.3...v0.21.0-rc.4) (2021-11-03)
+
+
+### Bug Fixes
+
+* empty icon tab bar ([#2883](https://github.com/SAP/fundamental-styles/issues/2883)) ([86f3fdb](https://github.com/SAP/fundamental-styles/commit/86f3fdbc2229857f7ac992c61020e7880f14dd7b))
+
+## [0.21.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.2...v0.21.0-rc.3) (2021-11-03)
+
+
+### Bug Fixes
+
+* **styles:** add correct outline color in Grid List ([#2882](https://github.com/SAP/fundamental-styles/issues/2882)) ([525fbb1](https://github.com/SAP/fundamental-styles/commit/525fbb19572b268252e36c6f95f41009bc8f9c00))
+
+## [0.21.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.1...v0.21.0-rc.2) (2021-11-02)
+
+
+### Bug Fixes
+
+* **styles:** add word break [ci visual] ([#2879](https://github.com/SAP/fundamental-styles/issues/2879)) ([3226180](https://github.com/SAP/fundamental-styles/commit/32261800f6b40bfda8eff94920499d6d9b1cf31f))
+
+## [0.21.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.0...v0.21.0-rc.1) (2021-11-01)
+
+
+### Bug Fixes
+
+* **styles:** add code inline case [ci visual]` ([#2878](https://github.com/SAP/fundamental-styles/issues/2878)) ([318711b](https://github.com/SAP/fundamental-styles/commit/318711b1e1d06f1f50cc1d44dbdc0322026764f6))
+
+## [0.21.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.69...v0.21.0-rc.0) (2021-11-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** remove variables.css, variables-sap_fiori_3*.css files from dist folder
+
+### Bug Fixes
+
+* **styles:** dark, hcb, hcw bundled CSS to contain the right colors [#2837](https://github.com/SAP/fundamental-styles/issues/2837) [ci visual] ([#2875](https://github.com/SAP/fundamental-styles/issues/2875)) ([73ef574](https://github.com/SAP/fundamental-styles/commit/73ef574aac5d867a737267e6ed74c17b4e6d52b6))
+
 ### [0.20.1-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.68...v0.20.1-rc.69) (2021-10-31)
 
 ### [0.20.1-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.20.1-rc.67...v0.20.1-rc.68) (2021-10-31)

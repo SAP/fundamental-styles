@@ -58,7 +58,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
     padding: 0;
     z-index: 2;
 
-    @include fd-absolute-center();
+    @include fd-position-center();
   }
 
   &__column {

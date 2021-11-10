@@ -266,6 +266,7 @@ $fd-icon-tab-bar-semantic-values: (
     list-style: none;
     box-shadow: var(--sapContent_HeaderShadow);
     background: var(--sapObjectHeader_Background);
+    min-height: 2.75rem;
     position: relative;
     overflow-x: hidden;
 

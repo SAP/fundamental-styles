@@ -119,6 +119,10 @@ $block: #{$fd-namespace}-grid-list;
         * {
           color: $fd-grid-list-active-text-color !important;
         }
+
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
+        }
       }
 
       @include fd-navigated() {
@@ -152,6 +156,7 @@ $block: #{$fd-namespace}-grid-list;
 
     height: 100%;
     padding: 1rem;
+    word-break: break-word;
 
     &--no-padding {
       padding: 0;

@@ -262,4 +262,10 @@
 
   /* Micro Process Flow */
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ForegroundColor);
+
+  /* Scrollbar */
+  --fdScrollbar_Track_Color: var(--sapScrollBar_TrackColor);
+  --fdScrollbar_Thumb_Color: var(--sapScrollBar_FaceColor);
+  --fdScrollbar_Thumb_Hover_Color: var(--sapScrollBar_Hover_FaceColor);
+  --fdScrollbar_Dimension: var(--sapScrollBar_Dimension);
 }

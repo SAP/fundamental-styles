@@ -1,7 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Code Code 1`] = `
+exports[`Storyshots Components/Code Code Block 1`] = `
 
 
 
+`;
+
+exports[`Storyshots Components/Code Inline Code 1`] = `
+<section>
+  You can add inline code like here 
+  <code
+    class="fd-code fd-code--inline"
+  >
+    FundamentalExtension
+  </code>
+   and add mores
+
+  <code
+    class="fd-code fd-code--inline"
+  >
+    ClassName
+  </code>
+</section>
 `;

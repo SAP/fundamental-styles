@@ -175,4 +175,10 @@ $button: #{$fd-namespace}-button;
       color: $fd-dialog-resize-handle-color;
     }
   }
+
+  &--no-backdrop:not(.#{$block}--targeted) {
+    @include fd-position-center($position: fixed);
+
+    z-index: 1000;
+  }
 }

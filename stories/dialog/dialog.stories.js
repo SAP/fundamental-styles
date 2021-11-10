@@ -34,6 +34,11 @@ The dialog component is a container that appears in response to an action made b
       - \`fd-dialog__decisive-button\` Dialog footer's _Begin/End_ button
     - \`fd-dialog__resize-handle\` Handle for resizing modal
 
+**Additional classes (applied to main \`.fd-dialog\` element):**
+
+- \`fd-dialog--no-backdrop\` needed, if dialog is used without overlay. Centers the dialog vertically and horizontally
+- \`fd-dialog--targeted\` to be used, if dialog is attached to the specific element, not body
+
 Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 `,
         tags: ['f3', 'a11y', 'theme'],

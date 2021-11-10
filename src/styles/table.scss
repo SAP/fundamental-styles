@@ -243,6 +243,7 @@ $fd-table-border-var: var(--sapList_BorderWidth, 0.0625rem) solid var(--sapList_
     padding: 0 $fd-table-cell-padding;
     color: inherit;
     border-right: $fd-table-border;
+    outline: none;
 
     &--valid {
       color: var(--sapSuccessColor);
