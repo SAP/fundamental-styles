@@ -1,4 +1,15 @@
 
+## [0.21.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.14...v0.21.0-rc.15) (2021-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** update checkbox markup
+
+### Bug Fixes
+
+* **styles:** refactor checkbox to use a square not an icon for tristate ([#2905](https://github.com/SAP/fundamental-styles/issues/2905)) ([1a45ee9](https://github.com/SAP/fundamental-styles/commit/1a45ee983a1340b082d7ec45ee21d3f0729fad49))
+
 ## [0.21.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.13...v0.21.0-rc.14) (2021-11-10)
 
 
