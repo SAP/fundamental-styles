@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.13...v0.21.0-rc.14) (2021-11-10)
+
+
+### Bug Fixes
+
+* **styles:** checkbox broken outline voiceover [ci visual] ([#2881](https://github.com/SAP/fundamental-styles/issues/2881)) ([fc45fed](https://github.com/SAP/fundamental-styles/commit/fc45fed144c6e729e5f3440dbf106f0b7afb601e))
+
 ## [0.21.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.12...v0.21.0-rc.13) (2021-11-09)
 
 
