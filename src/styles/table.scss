@@ -11,8 +11,7 @@
 */
 $block: #{$fd-namespace}-table;
 
-$fd-table-border: 0.0625rem solid #e4e4e4;
-$fd-table-border-var: var(--sapList_BorderWidth, 0.0625rem) solid var(--sapList_BorderColor, #e4e4e4);
+$fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
 .#{$block} {
   @mixin fd-table-active() {
@@ -144,15 +143,15 @@ $fd-table-border-var: var(--sapList_BorderWidth, 0.0625rem) solid var(--sapList_
     &-table-message {
       padding: 1rem;
       text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      align-content: center;
       width: 100%;
+
+      @include fd-flex-center() {
+        align-content: center;
+      }
     }
 
-    &:not(.fixed-height) .fd-table__row:last-of-type {
-      .fd-table__cell {
+    &:not(.fd-fixed-height) .fd-table__row:last-of-type {
+      .#{block}__cell {
         border-bottom: 0;
       }
     }
@@ -162,12 +161,11 @@ $fd-table-border-var: var(--sapList_BorderWidth, 0.0625rem) solid var(--sapList_
 
       @include fd-rtl() {
         border-left: $fd-table-border;
-        border-left: $fd-table-border-var;
         border-right: none;
       }
     }
 
-    &.fixed-height {
+    &.fd-fixed-height {
       background-color: #fff;
       background-color: var(--sapList_Background, #fff);
     }
@@ -282,7 +280,7 @@ $fd-table-border-var: var(--sapList_BorderWidth, 0.0625rem) solid var(--sapList_
       border-left: none;
 
       /**
-        Due to the changed table-layout group row cell may looe it's top border.
+        Due to the changed table-layout group row cell may lose it's top border.
         For example when previous (relatively to the group row) row columns tolal width < 100% of the table.
       */
       &::before {
@@ -293,7 +291,6 @@ $fd-table-border-var: var(--sapList_BorderWidth, 0.0625rem) solid var(--sapList_
         left: 0;
         right: 0;
         border-top: $fd-table-border;
-        border-top: $fd-table-border-var;
       }
     }
 
