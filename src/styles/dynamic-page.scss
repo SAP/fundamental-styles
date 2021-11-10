@@ -391,7 +391,7 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   &--sm {
-    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 1rem);
 
     .#{$block}__breadcrumb {
       padding: 0;
