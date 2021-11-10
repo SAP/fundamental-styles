@@ -2,162 +2,143 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-progress-indicator;
+$fd-progress-indicator-margin: 0.5rem 0 !default;
+$fd-progress-indicator-margin-mobile: 0.875rem 0 !default;
+$fd-progress-indicator-container-height: 1rem !default;
 
-@mixin fd-truncate-text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+$fd-progress-indicator-states: (
+  "informative": ("background": var(--fdProgress_Indicator_Background_Color_Informative), "icon": var(--fdProgress_Icon_Informative)),
+  "positive": ("background": var(--fdProgress_Indicator_Background_Color_Positive), "icon": var(--fdProgress_Icon_Positive)),
+  "negative": ("background": var(--fdProgress_Indicator_Background_Color_Negative), "icon": var(--fdProgress_Icon_Negative)),
+  "critical": ("background": var(--fdProgress_Indicator_Background_Color_Critical), "icon": var(--fdProgress_Icon_Critical))
+);
 
 .#{$block} {
-  @include fd-reset();
+  width: 100%;
+  margin: $fd-progress-indicator-margin;
 
-  &__container {
-    background: var(--sapField_Background);
-    border: 0.0625rem solid var(--sapField_BorderColor);
-    border-radius: 0.5rem;
-    height: 1rem;
-    min-height: 1rem;
+  &.#{$fd-namespace}-popover {
+    margin: $fd-progress-indicator-margin;
+  }
+
+  @each $set-name, $set-state in $fd-progress-indicator-states {
+    &--#{$set-name} {
+      .#{$block}__progress-bar {
+        background-color: map_get($set-state, "background");
+      }
+
+      .#{$block}__label {
+        &::before {
+          vertical-align: middle;
+          font-family: "SAP-icons";
+          content: map_get($set-state, "icon");
+          margin-left: var(--fdProgress_Icon_Offset_Left);
+          margin-right: var(--fdProgress_Icon_Offset_Right);
+        }
+      }
+    }
+  }
+
+  .#{$block}__container {
+    @include fd-reset();
+    @include fd-flex();
+
     min-width: 4rem;
-    margin: 0.5rem 0;
-    display: flex;
     overflow: hidden;
+    border-radius: 0.5rem;
+    background: var(--sapField_Background);
+    height: $fd-progress-indicator-container-height;
+    border: 0.0625rem solid var(--sapField_BorderColor);
+    min-height: $fd-progress-indicator-container-height;
   }
 
   &__progress-bar {
     @include fd-reset();
-    @include fd-truncate-text();
+    @include fd-ellipsis();
+
+    @include fd-flex() {
+      justify-content: flex-end;
+    }
 
     height: 100%;
-    background: var(--fdProgress_Indicator_Background_Color_Neutral);
-    display: flex;
-    justify-content: flex-end;
     border-right: var(--fdProgress_Indicator_Border_Right);
+    background: var(--fdProgress_Indicator_Background_Color_Neutral);
 
-    &--informative {
-      background-color: var(--fdProgress_Indicator_Background_Color_Informative);
+    .#{$block}__label {
+      color: var(--sapContent_ContrastTextColor);
     }
 
-    &--positive {
-      background-color: var(--fdProgress_Indicator_Background_Color_Positive);
-    }
-
-    &--negative {
-      background-color: var(--fdProgress_Indicator_Background_Color_Negative);
-    }
-
-    &--critical {
-      background-color: var(--fdProgress_Indicator_Background_Color_Critical);
+    @include fd-rtl() {
+      border-right: none;
+      border-left: var(--fdProgress_Indicator_Border_Right);
     }
   }
 
-  &__remain-area {
+  &__remaining {
     @include fd-reset();
-    @include fd-truncate-text();
-
-    font-family: "SAP-icons";
-    font-size: var(--sapFontSmallSize);
-    display: flex;
-  }
-
-  &__icon {
-    &::before {
-      @include fd-rtl() {
-        margin-right: 0.375rem;
-      }
-
-      margin-left: 0.375rem;
-    }
-
-    &--informative {
-      &::before {
-        content: var(--fdProgress_Icon_Informative);
-      }
-    }
-
-    &--positive {
-      &::before {
-        content: var(--fdProgress_Icon_Positive);
-      }
-    }
-
-    &--negative {
-      &::before {
-        content: var(--fdProgress_Icon_Negative);
-      }
-    }
-
-    &--critical {
-      &::before {
-        content: var(--fdProgress_Icon_Critical);
-      }
-    }
+    @include fd-flex();
+    @include fd-ellipsis();
   }
 
   &__label {
     @include fd-reset();
-    @include fd-truncate-text();
+    @include fd-ellipsis();
+    @include fd-set-margins-x-equal(0.375rem);
 
-    font-size: var(--sapFontSmallSize);
-    color: var(--sapField_TextColor);
-    margin-left: 0.375rem;
-    margin-right: 0.375rem;
     user-select: none;
-
-    &--left {
-      span {
-        @include fd-truncate-text();
-      }
-
-      color: var(--sapContent_ContrastTextColor);
-    }
+    line-height: normal;
+    color: var(--sapField_TextColor);
+    font-size: var(--sapFontSmallSize);
   }
 
-  &__truncate-popover {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding-left: 0.5rem;
-    font-size: var(--sapFontSize);
-    align-items: center;
+  &__overflow {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      justify-content: space-between;
+    }
+
+    @include fd-set-padding-left(0.5rem);
+
+    line-height: 1;
     overflow: hidden;
+  }
 
-    .close-popover {
-      @include fd-focus() {
-        outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-      }
+  &__overflow-close {
+    @include fd-reset();
+    @include fd-set-margin-left(0.5rem);
 
-      border: 0;
-      padding: 0;
-      background: none;
-      width: 1.4375rem;
-      height: 1.375rem;
-      line-height: 1.6rem;
-      font-size: 0.75rem;
-      color: var(--sapButton_TextColor);
-      margin: 0.125rem;
-      text-align: center;
+    @include fd-focus() {
+      outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
     }
 
-    i {
-      text-align: center;
-      font-size: 0.75rem;
-      color: var(--sapContent_IconColor);
-      width: 1.4375rem;
-      height: 1.375rem;
+    cursor: pointer;
+    width: 1.4375rem;
+    height: 1.375rem;
+    margin: 0.125rem;
+    text-align: center;
+    line-height: 1.6rem;
+    background: transparent;
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 1.6875rem;
-        height: 1.625rem;
-      }
+    [class*='sap-icon'] {
+      font-size: var(--sapFontSmallSize);
+      color: var(--sapContent_IconColor);
     }
   }
-}
 
-.fd-popover {
-  height: 1.625rem;
+  &--mobile {
+    margin: $fd-progress-indicator-margin-mobile;
+
+    &.#{$fd-namespace}-popover {
+      margin: $fd-progress-indicator-margin-mobile;
+    }
+  }
+
+  &--display {
+    margin: 0;
+
+    &.#{$fd-namespace}-popover {
+      margin: 0;
+    }
+  }
 }
