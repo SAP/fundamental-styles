@@ -92,7 +92,7 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
-  &__list > li {
+  &__list > .#{$block}__item {
     position: relative;
     width: 100%;
   }
