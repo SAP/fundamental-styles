@@ -22,7 +22,7 @@ State | Modifier class
 :------------- | :-----------------
 Mobile | \`fd-progress-indicator--mobile\`
 Display | \`fd-progress-indicator--display\`
-Informative &nbsp;&nbsp; &nbsp;&nbsp; | \`fd-progress-indicator--informative\`
+Informative &nbsp;&nbsp;&nbsp;&nbsp; | \`fd-progress-indicator--informative\`
 Positive | \`fd-progress-indicator--positive\`
 Critical | \`fd-progress-indicator--critical\`
 Negative | \`fd-progress-indicator--negative\`
