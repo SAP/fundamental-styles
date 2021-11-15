@@ -131,7 +131,7 @@ $outline-offset: 0.1875rem;
 
     font-size: var(--sapFontSize);
     padding-left: $fd-select-padding-x;
-    min-width: 5.625rem;
+    min-width: 2.125rem;
 
     @include fd-rtl() {
       padding-left: 0;
