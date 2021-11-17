@@ -107,7 +107,8 @@ $tag-colors-rest: (
     content: '';
     height: 100%;
     position: absolute;
-    width: $tag-border-width;
+    border-left-width: $tag-border-width;
+    border-left-style: solid;
   }
 
   @include fn-rtl() {
@@ -123,7 +124,7 @@ $tag-colors-rest: (
       background: map_get($color-set, "background");
 
       &::before {
-        background: map_get($color-set, "border");
+        border-left-color: map_get($color-set, "border");
       }
 
       @include fn-hover() {
@@ -171,7 +172,7 @@ $tag-colors-rest: (
         background: $fn-color-grey-1;
 
         &::before {
-          background: $fn-color-grey-2;
+          border-left-color: $fn-color-grey-2;
         }
       }
     }
