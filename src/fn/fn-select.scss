@@ -9,11 +9,6 @@ $block: #{$fn-namespace}-select;
   &::before {
     border-left-color: $border;
   }
-
-  // @include fn-rtl() {
-  //   border-left-color: transparent;
-  //   border-right-color: $border;
-  // }
 }
 
 .#{$block} {
