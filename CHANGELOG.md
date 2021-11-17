@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.16...v0.21.0-rc.17) (2021-11-17)
+
+
+### Bug Fixes
+
+* **fn:** consistent tab highlights across zoom levels [ci visual] ([#2914](https://github.com/SAP/fundamental-styles/issues/2914)) ([a9e7bef](https://github.com/SAP/fundamental-styles/commit/a9e7bef317e45675199b415427a7207e924a92cb))
+
 ## [0.21.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.15...v0.21.0-rc.16) (2021-11-17)
 
 
