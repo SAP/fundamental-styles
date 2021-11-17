@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.19...v0.21.0-rc.20) (2021-11-17)
+
+
+### Features
+
+* introduce Progress Indicator ([#2903](https://github.com/SAP/fundamental-styles/issues/2903)) ([40f94e0](https://github.com/SAP/fundamental-styles/commit/40f94e0e22bdffd60fb6ed9571256086582b5bc3))
+
 ## [0.21.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.18...v0.21.0-rc.19) (2021-11-17)
 
 
