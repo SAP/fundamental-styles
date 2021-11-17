@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.18...v0.21.0-rc.19) (2021-11-17)
+
+
+### Bug Fixes
+
+* **fn:** consistent highlights of tags across zoom levels [ci visual] ([#2913](https://github.com/SAP/fundamental-styles/issues/2913)) ([71d3206](https://github.com/SAP/fundamental-styles/commit/71d3206098d9837bb9949860aa281169291489b2))
+
 ## [0.21.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.17...v0.21.0-rc.18) (2021-11-17)
 
 ## [0.21.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.16...v0.21.0-rc.17) (2021-11-17)
