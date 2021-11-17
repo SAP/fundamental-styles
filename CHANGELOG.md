@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.15...v0.21.0-rc.16) (2021-11-17)
+
+
+### Bug Fixes
+
+* **fn:** inconsistent text field borders across zoom levels [ci visual] ([#2911](https://github.com/SAP/fundamental-styles/issues/2911)) ([08575b9](https://github.com/SAP/fundamental-styles/commit/08575b9a87f4f54896e26361a99450a2777f9b34))
+
 ## [0.21.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.14...v0.21.0-rc.15) (2021-11-10)
 
 
