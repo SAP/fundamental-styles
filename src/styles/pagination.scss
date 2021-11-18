@@ -7,6 +7,24 @@
 
 $block: #{$fd-namespace}-pagination;
 
+@mixin fd-pagination-mobile() {
+  .#{$block}__per-page + .#{$block}__nav {
+    @include fd-set-margins-x('auto', 0);
+  }
+
+  .#{$block}__total,
+  .#{$block}__per-page-label,
+  .#{$block}__link,
+  .#{$block}__more {
+    display: none;
+  }
+
+  .#{$block}__button--mobile,
+  .#{$block}__label {
+    display: flex;
+  }
+}
+
 .#{$block} {
   @include fd-reset();
   @include fd-flex-between();
@@ -39,6 +57,7 @@ $block: #{$fd-namespace}-pagination;
   }
 
   .#{$block}__input {
+    width: auto;
     min-width: 2.5rem;
     text-align: center;
 
@@ -53,39 +72,29 @@ $block: #{$fd-namespace}-pagination;
       -webkit-appearance: none;
       margin: 0;
     }
-
-    &-label {
-      display: none;
-    }
   }
 
-  .#{$block}__input-label,
+  .#{$block}__label,
   .#{$block}__per-page-label {
     flex-shrink: 0;
     align-self: center;
   }
 
+  .#{$block}__label {
+    display: none;
+  }
+
   .#{$block}__button--mobile {
     display: none;
+  }
+
+  &--mobile {
+    @include fd-pagination-mobile();
   }
 }
 
 @media (max-width: 599px) {
   .#{$block} {
-    .#{$block}__per-page + .#{$block}__nav {
-      @include fd-set-margins-x('auto', 0);
-    }
-
-    .#{$block}__total,
-    .#{$block}__per-page-label,
-    .#{$block}__link,
-    .#{$block}__more {
-      display: none;
-    }
-
-    .#{$block}__button--mobile,
-    .#{$block}__input-label {
-      display: flex;
-    }
+    @include fd-pagination-mobile();
   }
 }
