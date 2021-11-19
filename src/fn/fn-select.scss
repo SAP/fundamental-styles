@@ -7,7 +7,7 @@ $block: #{$fn-namespace}-select;
   background: $background;
 
   &::before {
-    background: $border;
+    border-left-color: $border;
   }
 }
 
@@ -57,13 +57,20 @@ $block: #{$fn-namespace}-select;
     padding: $fn-padding-xs $fn-padding-small;
 
     &::before {
-      @include fn-set-position-left(0);
-
       top: 0;
+      left: 0;
       content: '';
       height: 100%;
-      width: 0.125rem;
       position: absolute;
+      border-left-width: 2px;
+      border-left-style: solid;
+    }
+
+    @include fn-rtl() {
+      &::before {
+        right: 0;
+        left: auto;
+      }
     }
 
     @include fn-hover() {
