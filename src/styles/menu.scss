@@ -93,8 +93,8 @@ $block: #{$fd-namespace}-menu;
   }
 
   &__list > .#{$block}__item {
-    position: relative;
     width: 100%;
+    position: relative;
   }
 
   &__separator {
