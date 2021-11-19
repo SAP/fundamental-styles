@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.20...v0.21.0-rc.21) (2021-11-19)
+
+
+### Bug Fixes
+
+* **fn:** inconsistent selected item border in Select across zoom levels ([#2916](https://github.com/SAP/fundamental-styles/issues/2916)) ([12b3736](https://github.com/SAP/fundamental-styles/commit/12b3736aae06056872882aaca8c44831b163775c))
+
 ## [0.21.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.19...v0.21.0-rc.20) (2021-11-17)
 
 
