@@ -80,7 +80,7 @@
     "clean-css-cli": "^5.4.1",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
-    "cssnano": "^4.1.11",
+    "cssnano": "^5.0.11",
     "eslint": "^7.25.0",
     "fs-extra": "^10.0.0",
     "gh-pages": "^3.2.3",
