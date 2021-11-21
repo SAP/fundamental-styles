@@ -196,7 +196,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     @include fd-reset();
 
     overflow: hidden;
-    width: calc(50% - 0.125rem); // 0.125rem is 0.25rem (inner-padding) / 2
+    width: calc(50% - 0.125rem); // 0.125rem is 0.25rem (inner-padding) *0.5
     height: 100%;
   }
 

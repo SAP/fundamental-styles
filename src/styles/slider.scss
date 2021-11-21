@@ -8,8 +8,8 @@ $handle-mobile-dimensions: 1.625rem;
 $handle-hit-area-mobile-dimensions: 2.75rem;
 $handle-outline-offset: 0.0625rem;
 $handle-outline-width: 0.0625rem;
-$slider-x-paddings: $handle-desktop-dimensions / 2;
-$slider-x-paddings--lg: $handle-mobile-dimensions / 2;
+$slider-x-paddings: $handle-desktop-dimensions * 0.5;
+$slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
 
 .#{$block} {
   @include fd-reset();
@@ -59,7 +59,7 @@ $slider-x-paddings--lg: $handle-mobile-dimensions / 2;
 
     position: absolute;
     width: 100%;
-    top: calc((-1rem + var(--fdSlider_Track_Height)) / 2);
+    top: calc((-1rem + var(--fdSlider_Track_Height)) * 0.5);
   }
 
   &__ticks {

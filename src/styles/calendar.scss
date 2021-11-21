@@ -76,7 +76,7 @@ $fd-calendar-item-current-border-width: 0.125rem !default;
 $fd-calendar-item-current-border: solid medium var(--sapLegend_CurrentDateTime) !default; // 'medium' value is used to support browser rendering precision
 $fd-calendar-item-current-inner-border-width: 0.0625rem !default;
 $fd-calendar-item-current-inner-border-color: var(--sapList_Background) !default;
-$fd-calendar-item-current-inner-border-radius: calc(var(--sapElement_BorderCornerRadius) / 2) !default;
+$fd-calendar-item-current-inner-border-radius: calc(var(--sapElement_BorderCornerRadius) * 0.5) !default;
 $fd-calendar-item-current-inner-border: $fd-calendar-item-current-inner-border-width solid $fd-calendar-item-current-inner-border-color !default;
 
 // Special Days
@@ -266,16 +266,16 @@ $fd-calendar-special-days: (
     flex-grow: 1;
 
     &:not(:last-child):not(:first-child) {
-      margin-left: $fd-calendar-action-padding / 2;
-      margin-right: $fd-calendar-action-padding / 2;
+      margin-left: $fd-calendar-action-padding * 0.5;
+      margin-right: $fd-calendar-action-padding * 0.5;
     }
 
     &:first-child {
-      margin-right: $fd-calendar-action-padding / 2;
+      margin-right: $fd-calendar-action-padding * 0.5;
     }
 
     &:last-child {
-      margin-left: $fd-calendar-action-padding / 2;
+      margin-left: $fd-calendar-action-padding * 0.5;
     }
 
     > [type="button"] {

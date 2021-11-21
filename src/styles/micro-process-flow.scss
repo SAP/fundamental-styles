@@ -281,7 +281,7 @@ $fd-micro-process-flow-semantic-colors: (
         position: absolute;
         background: var(--sapNegativeElementColor);
         width: $fd-micro-process-flow-intermediary-indicator-width;
-        margin-left: -$fd-micro-process-flow-intermediary-indicator-width / 2;
+        margin-left: -$fd-micro-process-flow-intermediary-indicator-width * 0.5;
       }
     }
 

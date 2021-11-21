@@ -6,7 +6,7 @@ $slider-handle-width: 2rem;
 $slider-handle-height: 1.5rem;
 $slider-dot-size: 0.5rem;
 $slider-height: 0.25rem;
-$slider-handle-wrapper-offset: ($slider-handle-width / 2) - $fn-margin-xs - $slider-dot-size;
+$slider-handle-wrapper-offset: ($slider-handle-width * 0.5) - $fn-margin-xs - $slider-dot-size;
 
 .#{$block} {
   @include fn-reset();

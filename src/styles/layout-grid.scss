@@ -1,4 +1,7 @@
+
 @import "./mixins";
+
+@use "sass:math";
 
 $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
@@ -16,7 +19,7 @@ $xl: 1440;
 $cols: 12;
 
 @mixin full {
-  min-width: (( 1 / 12 ) *100%);
+  min-width: ( math.div(1, 12)  *100%);
   max-width: none;
   flex: 1;
 }
@@ -30,25 +33,25 @@ $cols: 12;
 
   @for $n from 0 through $cols {
     .#{$classPrefix}--#{$n} {
-      min-width: (( $n / $cols ) * 100%);
-      max-width: (( $n / $cols ) * 100%);
+      min-width: ( math.div($n, $cols)  * 100%);
+      max-width: ( math.div($n, $cols)  * 100%);
     }
 
     .#{$classPrefix}--offset-#{$n} {
-      margin-left: (( $n / $cols ) * 100%);
+      margin-left: ( math.div($n, $cols)  * 100%);
 
       @include fd-rtl() {
         margin-left: 0;
-        margin-right: (( $n / $cols ) * 100%);
+        margin-right: ( math.div($n, $cols)  * 100%);
       }
     }
 
     .#{$classPrefix}--offset-after-#{$n} {
-      margin-right: (( $n / $cols ) * 100%);
+      margin-right: ( math.div($n, $cols)  * 100%);
 
       @include fd-rtl() {
         margin-right: 0;
-        margin-left: (( $n / $cols ) * 100%);
+        margin-left: ( math.div($n, $cols)  * 100%);
       }
     }
   }

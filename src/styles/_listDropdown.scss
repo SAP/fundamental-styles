@@ -40,8 +40,8 @@
       margin-right: 0;
 
       &::before {
-        margin-top: (1rem - $fd-checkbox-dimensions) / 2;
-        margin-bottom: (1rem - $fd-checkbox-dimensions) / 2;
+        margin-top: (1rem - $fd-checkbox-dimensions) * 0.5;
+        margin-bottom: (1rem - $fd-checkbox-dimensions) * 0.5;
       }
     }
 

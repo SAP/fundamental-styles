@@ -26,7 +26,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
   @mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
     .#{$block}__input {
-      width: $iconFontSize / 2;
+      width: $iconFontSize * 0.5;
       height: $iconFontSize;
     }
 
@@ -52,7 +52,7 @@ $block: #{$fd-namespace}-rating-indicator;
       }
 
       overflow: hidden;
-      width: $iconFontSize / 2 !important;
+      width: $iconFontSize * 0.5 !important;
     }
 
     &.#{$block}--icon .#{$block}__label {

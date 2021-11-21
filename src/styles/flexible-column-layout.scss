@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
   $fd-toggle-button-width: 1.5rem;
   $fd-column-layout-separator-width: 1rem;
   $fd-column-layout-border-x: var(--fdFlexibleColumnLayout_Border);
-  $fd-column-layout-expand-decoration-position: calc(50% + #{$fd-toggle-button-height} / 2);
+  $fd-column-layout-expand-decoration-position: calc(50% + #{$fd-toggle-button-height} * 0.5);
 
   @include fd-reset();
   @include fd-flex();
