@@ -23,7 +23,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
         Results per page: 
       </label>
       
-            
+
             
       <div
         class="fd-popover"
@@ -83,7 +83,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
                 
         </div>
         
-                
+
                 
         <div
           aria-hidden="false"
@@ -181,7 +181,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
         
     </div>
     
-        
+
         
     <nav
       class="fd-pagination__nav"
@@ -203,7 +203,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
             
       </a>
       
-            
+
             
       <a
         aria-disabled="false"
@@ -220,7 +220,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
             
       </a>
       
-            
+
             
       <a
         class="fd-button fd-button--transparent fd-pagination__link"
@@ -229,14 +229,14 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
         1
       </a>
       
-            
+
             
       <span
         class="fd-pagination__more"
         role="presentation"
       />
       
-            
+
             
       <a
         class="fd-button fd-button--transparent fd-pagination__link"
@@ -245,7 +245,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
         499
       </a>
       
-            
+
             
       <label
         class="fd-form-label fd-pagination__label"
@@ -254,7 +254,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
         Page:
       </label>
       
-            
+
             
       <input
         class="fd-input fd-pagination__input"
@@ -266,7 +266,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
         value="500"
       />
       
-            
+
             
       <a
         aria-disabled="true"
@@ -283,7 +283,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
             
       </a>
       
-            
+
             
       <a
         aria-disabled="true"
@@ -303,7 +303,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
         
     </nav>
     
-      
+
         
     <div
       class="fd-pagination__total"
@@ -327,151 +327,142 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 `;
 
 exports[`Storyshots Components/Pagination First page 1`] = `
-<section>
-  <style>
-    /** Related to the docs, don't copy */ *[dir='rtl'] .fd-pagination__button { transform: rotate(180deg) !important; }
-  </style>
+<div
+  class="fd-pagination"
+>
   
-
-  <div
-    class="fd-pagination"
+    
+  <nav
+    class="fd-pagination__nav"
   >
     
-    
-    <nav
-      class="fd-pagination__nav"
+        
+    <a
+      aria-disabled="true"
+      aria-label="First"
+      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+      href="#"
     >
       
-        
-      <a
-        aria-disabled="true"
-        aria-label="First"
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-        href="#"
-      >
-        
             
-        <i
-          class="sap-icon sap-icon--media-rewind"
-        />
-        
-        
-      </a>
-      
-        
-        
-      <a
-        aria-disabled="true"
-        aria-label="Previous"
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-        href="#"
-      >
-        
-            
-        <i
-          class="sap-icon sap-icon--navigation-left-arrow"
-        />
-        
-        
-      </a>
-      
-        
-        
-      <label
-        class="fd-form-label fd-pagination__label"
-        for="firstPageInput"
-      >
-        Page:
-      </label>
-      
-        
-        
-      <input
-        class="fd-input fd-input--compact fd-pagination__input"
-        id="firstPageInput"
-        max="3"
-        min="1"
-        required=""
-        type="number"
-        value="1"
+      <i
+        class="sap-icon sap-icon--media-rewind"
       />
       
         
-        
-      <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-        href="#"
-      >
-        2
-      </a>
-      
-        
-        
-      <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-        href="#"
-      >
-        3
-      </a>
-      
-        
-        
-      <a
-        aria-disabled="false"
-        aria-label="Next"
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-        href="#"
-      >
-        
-            
-        <i
-          class="sap-icon sap-icon--navigation-right-arrow"
-        />
-        
-        
-      </a>
-      
-        
-        
-      <a
-        aria-disabled="false"
-        aria-label="Last"
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-        href="#"
-      >
-        
-            
-        <i
-          class="sap-icon sap-icon--media-forward"
-        />
-        
-        
-      </a>
-      
-    
-    </nav>
-    
-  
-    
-    <div
-      class="fd-pagination__total"
-    >
-      
-        
-      <span
-        class="fd-form-label fd-pagination__total-label"
-      >
-        3 Results
-      </span>
-      
-    
-    </div>
+    </a>
     
 
+        
+    <a
+      aria-disabled="true"
+      aria-label="Previous"
+      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+      href="#"
+    >
+      
+            
+      <i
+        class="sap-icon sap-icon--navigation-left-arrow"
+      />
+      
+        
+    </a>
+    
+
+        
+    <label
+      class="fd-form-label fd-pagination__label"
+      for="firstPageInput"
+    >
+      Page:
+    </label>
+    
+
+        
+    <input
+      class="fd-input fd-input--compact fd-pagination__input"
+      id="firstPageInput"
+      max="3"
+      min="1"
+      required=""
+      type="number"
+      value="1"
+    />
+    
+
+        
+    <a
+      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+      href="#"
+    >
+      2
+    </a>
+    
+
+        
+    <a
+      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+      href="#"
+    >
+      3
+    </a>
+    
+
+        
+    <a
+      aria-disabled="false"
+      aria-label="Next"
+      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+      href="#"
+    >
+      
+            
+      <i
+        class="sap-icon sap-icon--navigation-right-arrow"
+      />
+      
+        
+    </a>
+    
+
+        
+    <a
+      aria-disabled="false"
+      aria-label="Last"
+      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+      href="#"
+    >
+      
+            
+      <i
+        class="sap-icon sap-icon--media-forward"
+      />
+      
+        
+    </a>
+    
+    
+  </nav>
+  
+
+    
+  <div
+    class="fd-pagination__total"
+  >
+    
+        
+    <span
+      class="fd-form-label fd-pagination__total-label"
+    >
+      3 Results
+    </span>
+    
+    
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Pagination Last page 1`] = `
@@ -500,7 +491,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -517,7 +508,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
     </a>
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -526,14 +517,14 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
       1
     </a>
     
-        
+
         
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -542,7 +533,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
       499
     </a>
     
-        
+
         
     <label
       class="fd-form-label fd-pagination__label"
@@ -551,7 +542,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
       Page:
     </label>
     
-        
+
         
     <input
       class="fd-input fd-input--compact fd-pagination__input"
@@ -563,7 +554,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
       value="500"
     />
     
-        
+
         
     <a
       aria-disabled="true"
@@ -580,7 +571,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="true"
@@ -600,7 +591,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
     
   </nav>
   
-  
+
     
   <div
     class="fd-pagination__total"
@@ -646,7 +637,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -663,7 +654,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
     </a>
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -672,14 +663,14 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       1
     </a>
     
-        
+
         
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -688,7 +679,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       299
     </a>
     
-        
+
         
     <label
       class="fd-form-label fd-pagination__label"
@@ -697,7 +688,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       Page:
     </label>
     
-        
+
         
     <input
       class="fd-input fd-input--compact fd-pagination__input"
@@ -709,7 +700,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       value="300"
     />
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -718,14 +709,14 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       301
     </a>
     
-        
+
         
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -734,7 +725,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
       500
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -751,7 +742,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -771,7 +762,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
     
   </nav>
   
-  
+
     
   <div
     class="fd-pagination__total"
@@ -814,7 +805,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
         Results per page: 
       </label>
       
-            
+
             
       <div
         class="fd-popover"
@@ -874,7 +865,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
                 
         </div>
         
-                
+
                 
         <div
           aria-hidden="false"
@@ -994,7 +985,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       </a>
       
-            
+
             
       <a
         aria-disabled="false"
@@ -1011,7 +1002,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       </a>
       
-            
+
             
       <a
         class="fd-button fd-button--transparent fd-pagination__link"
@@ -1020,14 +1011,14 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
         1
       </a>
       
-            
+
             
       <span
         class="fd-pagination__more"
         role="presentation"
       />
       
-            
+
             
       <a
         class="fd-button fd-button--transparent fd-pagination__link"
@@ -1036,7 +1027,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
         499
       </a>
       
-            
+
             
       <label
         class="fd-form-label fd-pagination__label"
@@ -1045,7 +1036,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
         Page:
       </label>
       
-            
+
             
       <input
         class="fd-input fd-pagination__input"
@@ -1057,7 +1048,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
         value="500"
       />
       
-            
+
             
       <a
         aria-disabled="true"
@@ -1074,7 +1065,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       </a>
       
-            
+
             
       <a
         aria-disabled="true"
@@ -1143,7 +1134,7 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="true"
@@ -1160,7 +1151,7 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
         
     </a>
     
-        
+
         
     <label
       class="fd-form-label fd-pagination__label"
@@ -1169,7 +1160,7 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
       Page:
     </label>
     
-        
+
         
     <input
       class="fd-input fd-input--compact fd-pagination__input"
@@ -1181,7 +1172,7 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
       value="1"
     />
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -1190,14 +1181,14 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
       2
     </a>
     
-        
+
         
     <span
       class="fd-pagination__more"
       role="presentation"
     />
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -1206,7 +1197,7 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
       500
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -1223,7 +1214,7 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -1243,7 +1234,7 @@ exports[`Storyshots Components/Pagination Multiple pages 1`] = `
     
   </nav>
   
-  
+
     
   <div
     class="fd-pagination__total"
@@ -1286,7 +1277,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         Results per page: 
       </label>
       
-            
+
             
       <div
         class="fd-popover"
@@ -1346,7 +1337,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
                 
         </div>
         
-                
+
                 
         <div
           aria-hidden="false"
@@ -1444,7 +1435,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         
     </div>
     
-        
+
         
     <nav
       class="fd-pagination__nav"
@@ -1466,7 +1457,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
             
       </a>
       
-            
+
             
       <a
         aria-disabled="false"
@@ -1483,7 +1474,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
             
       </a>
       
-            
+
             
       <a
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -1492,14 +1483,14 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         1
       </a>
       
-            
+
             
       <span
         class="fd-pagination__more"
         role="presentation"
       />
       
-            
+
             
       <a
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -1508,7 +1499,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         499
       </a>
       
-            
+
             
       <label
         class="fd-form-label fd-pagination__label"
@@ -1517,7 +1508,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         Page:
       </label>
       
-            
+
             
       <input
         class="fd-input fd-input--compact fd-pagination__input"
@@ -1529,7 +1520,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         value="500"
       />
       
-            
+
             
       <a
         aria-disabled="true"
@@ -1546,7 +1537,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
             
       </a>
       
-            
+
             
       <a
         aria-disabled="true"
@@ -1566,7 +1557,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         
     </nav>
     
-      
+
         
     <div
       class="fd-pagination__total"
@@ -1615,7 +1606,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -1632,7 +1623,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
         
     </a>
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -1641,7 +1632,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
       1
     </a>
     
-        
+
         
     <label
       class="fd-form-label fd-pagination__label"
@@ -1650,7 +1641,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
       Page:
     </label>
     
-        
+
         
     <input
       class="fd-input fd-input--compact fd-pagination__input"
@@ -1662,7 +1653,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
       value="2"
     />
     
-        
+
         
     <a
       class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -1671,7 +1662,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
       3
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -1688,7 +1679,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
         
     </a>
     
-        
+
         
     <a
       aria-disabled="false"
@@ -1708,7 +1699,7 @@ exports[`Storyshots Components/Pagination Second page 1`] = `
     
   </nav>
   
-  
+
     
   <div
     class="fd-pagination__total"

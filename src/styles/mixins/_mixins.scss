@@ -321,13 +321,6 @@
   @content;
 }
 
-@mixin fd-flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @content;
-}
-
 @mixin fd-inline-flex-center {
   display: inline-flex;
   justify-content: center;
