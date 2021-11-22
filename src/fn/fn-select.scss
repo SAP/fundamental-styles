@@ -62,8 +62,8 @@ $block: #{$fn-namespace}-select;
       content: '';
       height: 100%;
       position: absolute;
-      border-left-width: 2px;
-      border-left-style: solid;
+      border-left-width: $fn-border-width;
+      border-left-style: $fn-border-style;
     }
 
     @include fn-rtl() {

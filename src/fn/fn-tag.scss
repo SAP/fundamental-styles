@@ -1,7 +1,6 @@
 @import "./fn-settings";
 
 $block: #{$fn-namespace}-tag;
-$tag-border-width: 0.125rem;
 
 $tag-colors-rest: (
   "grey": (
@@ -107,8 +106,8 @@ $tag-colors-rest: (
     content: '';
     height: 100%;
     position: absolute;
-    border-left-width: $tag-border-width;
-    border-left-style: solid;
+    border-left-width: $fn-border-width;
+    border-left-style: $fn-border-style;
   }
 
   @include fn-rtl() {

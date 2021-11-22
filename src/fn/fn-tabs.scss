@@ -54,8 +54,8 @@ $tag-border-width: 0.125rem;
       width: 100%;
       height: 0;
       position: absolute;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
+      border-bottom-width: $fn-border-width;
+      border-bottom-style: $fn-border-style;
     }
 
     @include fn-hover() {
