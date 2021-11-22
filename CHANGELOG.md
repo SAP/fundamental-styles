@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.21...v0.21.0-rc.22) (2021-11-22)
+
+
+### Bug Fixes
+
+* **fn:** move border style and width to variables [ci visual] ([#2919](https://github.com/SAP/fundamental-styles/issues/2919)) ([b2d01f7](https://github.com/SAP/fundamental-styles/commit/b2d01f713f4f947c977fdab775cc6fac7a2f52bc))
+
 ## [0.21.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.20...v0.21.0-rc.21) (2021-11-19)
 
 
