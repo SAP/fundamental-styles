@@ -1,4 +1,15 @@
 
+## [0.21.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.22...v0.21.0-rc.23) (2021-11-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** update pagination markup
+
+### Bug Fixes
+
+* **styles:** pagination styles update ([#2912](https://github.com/SAP/fundamental-styles/issues/2912)) ([b21f314](https://github.com/SAP/fundamental-styles/commit/b21f314778b15f1aaa17669e7e809dbd1a212f74))
+
 ## [0.21.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.21...v0.21.0-rc.22) (2021-11-22)
 
 
