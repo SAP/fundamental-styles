@@ -2,10 +2,12 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-select;
-$outline-offset: 0.1875rem;
 
 .#{$block} {
-  @mixin fd-control-button-side-border() {
+  $fd-select-padding-x: 0.625rem;
+  $fd-select-padding-x-compact: 0.5rem;
+
+  @mixin fd-select-button-border() {
     border-left: var(--fdSelect_Button_Interractive_SideBorder);
 
     @include fd-rtl() {
@@ -14,129 +16,84 @@ $outline-offset: 0.1875rem;
     }
   }
 
-  $fd-select-padding-x: 0.625rem;
-  $fd-select-padding-compact-x: 0.5rem;
-  $fd-select-button-active-text-color: var(--sapButton_Active_TextColor);
-  $fd-select-button-active-background: var(--sapButton_Active_Background);
-  $fd-select-button-active-focus-color: var(--sapContent_ContrastFocusColor);
+  @mixin fd-select-button-active() {
+    .#{$block}__button {
+      background-color: var(--sapButton_Active_Background);
+      color: var(--sapButton_Active_TextColor);
+
+      @include fd-fiori-focus() {
+        outline-color: var(--sapContent_ContrastFocusColor);
+      }
+
+      @include fd-select-button-border();
+    }
+  }
 
   @include fd-reset();
 
-  display: block;
-  padding-right: 0;
   text-shadow: var(--fdSelect_Text_Shadow);
 
   &__control {
     @include fd-reset();
     @include fd-form-base();
-
-    height: $fd-form-input-height;
-    width: 100%;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 0;
-
-    .#{$block}__button {
-      align-items: center;
-      border-radius: 0;
-      display: inline-flex;
-      justify-content: center;
-      margin-left: 0.5rem;
-      color: var(--sapContent_IconColor);
-      border: none;
-
-      @include fd-hover() {
-        border: none;
-      }
-    }
-
     @include fd-form-states();
+    @include fd-fiori-pseudo-focus(-0.1875rem);
 
-    @include fd-focus() {
-      outline: 0;
-
-      &::before {
-        content: '';
-        top: $outline-offset;
-        left: $outline-offset;
-        border-width: var(--sapContent_FocusWidth);
-        border-color: var(--sapContent_FocusColor);
-        border-style: var(--sapContent_FocusStyle);
-        height: calc(100% - (2 * #{$outline-offset}));
-        width: calc(100% - (2 * #{$outline-offset}));
-        z-index: 1;
-        position: absolute;
-      }
-    }
-
-    @include fd-rtl() {
-      text-align: right;
-      padding-left: 0;
-
-      @include fd-focus() {
-        &::before {
-          right: -0.0234375rem;
-        }
-      }
+    @include fd-flex-center() {
+      justify-content: space-between;
     }
 
     @include fd-hover() {
       .#{$block}__button {
-        background-color: var(--sapButton_Lite_Hover_Background);
+        @include fd-select-button-border();
 
-        @include fd-control-button-side-border();
+        background-color: var(--sapButton_Lite_Hover_Background);
       }
+    }
+
+    @include fd-focus() {
+      outline: none;
     }
 
     @include fd-expanded() {
-      .#{$block}__button {
-        background-color: $fd-select-button-active-background;
-        color: $fd-select-button-active-text-color;
-
-        @include fd-fiori-focus() {
-          outline-color: $fd-select-button-active-focus-color;
-        }
-
-        @include fd-control-button-side-border();
-      }
+      @include fd-select-button-active();
     }
 
     @include fd-active() {
-      .#{$block}__button {
-        background-color: $fd-select-button-active-background;
-        color: $fd-select-button-active-text-color;
+      @include fd-select-button-active();
+    }
 
-        @include fd-fiori-focus() {
-          outline-color: $fd-select-button-active-focus-color;
-        }
+    @include fd-rtl() {
+      text-align: right;
+    }
 
-        @include fd-control-button-side-border();
-      }
+    width: 100%;
+    height: $fd-form-input-height;
+    text-align: left;
+
+    .#{$block}__button {
+      @include fd-inline-flex-center();
+      @include fd-set-margin-left(0.25rem);
+
+      border: none;
+      border-radius: 0;
+      color: var(--sapContent_IconColor);
     }
 
     &.is-readonly {
-      .#{$block}__text-content {
-        padding-right: $fd-select-padding-x;
-        padding-left: $fd-select-padding-x;
-      }
-
       cursor: text;
+
+      .#{$block}__text-content {
+        @include fd-set-paddings-x-equal($fd-select-padding-x);
+      }
     }
   }
 
   &__text-content {
     @include fd-reset();
+    @include fd-set-padding-left($fd-select-padding-x);
 
-    font-size: var(--sapFontSize);
-    padding-left: $fd-select-padding-x;
-    min-width: 2.125rem;
-
-    @include fd-rtl() {
-      padding-left: 0;
-      padding-right: $fd-select-padding-x;
-    }
+    min-width: 2.75rem;
   }
 
   &--compact {
@@ -144,33 +101,15 @@ $outline-offset: 0.1875rem;
       height: $fd-form-input-height--compact;
 
       .#{$block}__text-content {
-        padding-left: $fd-select-padding-compact-x;
-      }
+        @include fd-set-padding-left($fd-select-padding-x-compact);
 
-      @include fd-rtl() {
-        text-align: right;
-        padding-left: 0;
-
-        .#{$block}__text-content {
-          padding-left: 0;
-          padding-right: $fd-select-padding-compact-x;
-        }
+        min-width: 2rem;
       }
 
       &.is-readonly {
         .#{$block}__text-content {
-          padding-right: $fd-select-padding-compact-x;
-          padding-left: $fd-select-padding-compact-x;
+          @include fd-set-paddings-x-equal($fd-select-padding-x-compact);
         }
-      }
-    }
-  }
-
-  @include fd-rtl() {
-    .#{$block}__control {
-      .#{$block}__button {
-        margin-left: 0;
-        margin-right: 0.5rem;
       }
     }
   }
