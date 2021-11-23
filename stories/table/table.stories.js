@@ -980,17 +980,41 @@ export const pagination = () => `<div class="fd-toolbar fd-toolbar--solid fd-too
         </tr>
     </tbody>
 </table>
-<div class="fd-pagination">
-    <span class="fd-pagination__total">Showing 3 of 30 items</span>
-    <nav class="fd-pagination__nav">
-        <a href="#" class="fd-pagination__link fd-pagination__link--previous" aria-label="Next" aria-disabled="false"></a>
-        <a href="#" class="fd-pagination__link">1</a>
-        <a href="#" class="fd-pagination__link is-selected">2</a>
-        <a href="#" class="fd-pagination__link">3</a>
-        <span class="fd-pagination__more" role="presentation"></span>
-        <a href="#" class="fd-pagination__link">10</a>
-        <a href="#" class="fd-pagination__link fd-pagination__link--next" aria-label="Next" aria-disabled="false"></a>
+
+<div class='fd-pagination'>
+    <nav class='fd-pagination__nav'>
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First' aria-disabled='false'>
+            <i class='sap-icon sap-icon--media-rewind'></i>
+        </a>
+        
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous' aria-disabled='false'>
+            <i class='sap-icon sap-icon--navigation-left-arrow'></i>
+        </a>
+        
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link'>1</a>
+        
+        <label class='fd-form-label fd-pagination__label' for='secondPageInput'>Page:</label>
+        
+        <input id='secondPageInput' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='10' value='2' required />
+        
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link'>3</a>
+
+        <span class='fd-pagination__more' role='presentation'></span>
+
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link'>10</a>
+        
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next' aria-disabled='false'>
+            <i class='sap-icon sap-icon--navigation-right-arrow'></i>
+        </a>
+        
+        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last' aria-disabled='false'>
+            <i class='sap-icon sap-icon--media-forward'></i>
+        </a>
     </nav>
+  
+    <div class='fd-pagination__total'>
+        <span class='fd-form-label fd-pagination__total-label'>30 Results</span>
+    </div>
 </div>
 `;
 
