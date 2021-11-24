@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.23...v0.21.0-rc.24) (2021-11-24)
+
+
+### Bug Fixes
+
+* fix selection in menu styles ([#2907](https://github.com/SAP/fundamental-styles/issues/2907)) ([9fbde81](https://github.com/SAP/fundamental-styles/commit/9fbde81fc5000e3471eaa5b9676fb93b9abc6372))
+
 ## [0.21.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.22...v0.21.0-rc.23) (2021-11-23)
 
 
