@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.24...v0.21.0-rc.25) (2021-11-24)
+
+
+### Bug Fixes
+
+* select min-width ([#2927](https://github.com/SAP/fundamental-styles/issues/2927)) ([f5a7a27](https://github.com/SAP/fundamental-styles/commit/f5a7a279268f75df6201439fb53780bf9f8e9b2c))
+
 ## [0.21.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.23...v0.21.0-rc.24) (2021-11-24)
 
 
