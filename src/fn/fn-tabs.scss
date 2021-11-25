@@ -6,9 +6,9 @@ $tag-border-width: 0.125rem;
 @mixin fn-tabs-base($background, $color, $border, $shadow, $hasFocus: false) {
   @if $hasFocus {
     @if $shadow != "none" {
-      box-shadow: $shadow, $fn-focus-outline-shadow;
+      box-shadow: $shadow, $fn-focus-outline-shadow-blue;
     } @else {
-      box-shadow: $fn-focus-outline-shadow;
+      box-shadow: $fn-focus-outline-shadow-blue;
     }
   } @else {
     box-shadow: $shadow;

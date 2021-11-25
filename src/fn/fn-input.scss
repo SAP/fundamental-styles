@@ -5,9 +5,9 @@ $block: #{$fn-namespace}-text-field;
 @mixin fn-input-base($background, $border, $shadow, $hasFocus: false) {
   @if $hasFocus {
     @if $shadow != "none" {
-      box-shadow: $shadow, $fn-focus-outline-shadow;
+      box-shadow: $shadow, $fn-focus-outline-shadow-blue;
     } @else {
-      box-shadow: $fn-focus-outline-shadow;
+      box-shadow: $fn-focus-outline-shadow-blue;
     }
   } @else {
     box-shadow: $shadow;

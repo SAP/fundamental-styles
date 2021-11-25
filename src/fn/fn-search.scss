@@ -25,7 +25,7 @@ $fn-search-clear-button-size: 0.625rem;
       @include fn-focus() {
         outline: none;
         background: $fn-color-base-white;
-        box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow;
+        box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow-blue;
       }
     }
   }
@@ -79,7 +79,7 @@ $fn-search-clear-button-size: 0.625rem;
     @include fn-focus() {
       outline: none;
       background: $fn-color-base-white;
-      box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow;
+      box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow-blue;
 
       &:not(:placeholder-shown) {
         & ~ .#{$block}__button {

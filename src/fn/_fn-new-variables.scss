@@ -172,3 +172,22 @@ $fn-shadow-orange-level-1: 0 0 2px rgba(242, 106, 0, 0.16), 0 8px 16px rgba(242,
 
 $fn-shadow-red-level-0: 0 0 2px rgba(240, 103, 80, 0.16), 0 4px 8px rgba(240, 103, 80, 0.16);
 $fn-shadow-red-level-1: 0 0 2px rgba(240, 103, 80, 0.16), 0 8px 16px rgba(240, 103, 80, 0.16);
+
+$fn-control-height: 2rem; // 32px
+$fn-color-white: #ffffff;
+$fn-color-black: #000000;
+
+// Focus outline
+$fn-focus-outline-shadow-blue: 0 0 0 0.125rem #0070f2;
+$fn-focus-outline-shadow-grey: 0 0 0 0.125rem #5f7992;
+$fn-focus-outline-shadow-green: 0 0 0 0.125rem #188822;
+$fn-focus-outline-shadow-orange: 0 0 0 0.125rem #f26a00;
+$fn-focus-outline-shadow-red: 0 0 0 0.125rem #e32b0b;
+$fn-focus-outline-shadow-teal: 0 0 0 0.125rem #07828e;
+$fn-focus-outline-shadow-indigo: 0 0 0 0.125rem #7757ff;
+$fn-focus-outline-shadow-pink: 0 0 0 0.125rem #cc00dc;
+$fn-focus-outline-shadow-lime: 0 0 0 0.125rem #588206;
+$fn-focus-outline-shadow-cyan: 0 0 0 0.125rem #007fa9;
+$fn-focus-outline-shadow-yellow: 0 0 0 0.125rem #a16b00;
+$fn-focus-outline-shadow-crimson: 0 0 0 0.125rem #df0597;
+$fn-focus-outline-inner-shadow: inset 0 0 0 0.125rem #ffffff;

@@ -96,7 +96,7 @@ $block: #{$fn-namespace}-select;
       @include fn-select-item-base($fn-color-base-white, $fn-color-base-white);
 
       outline: none;
-      box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+      box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow-blue;
     }
   }
 
@@ -119,7 +119,7 @@ $block: #{$fn-namespace}-select;
       @include fn-select-item-base($fn-color-blue-1, $fn-color-blue-4, $fn-color-blue-6);
 
       outline: none;
-      box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+      box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow-blue;
     }
   }
 }
