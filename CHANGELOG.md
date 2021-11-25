@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.26...v0.21.0-rc.27) (2021-11-25)
+
+
+### Bug Fixes
+
+* **fn:** add new color variables ([#2930](https://github.com/SAP/fundamental-styles/issues/2930)) ([3474a6d](https://github.com/SAP/fundamental-styles/commit/3474a6d272bda231c0f9a563fdd4dd64dd0985be))
+
 ## [0.21.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.25...v0.21.0-rc.26) (2021-11-25)
 
 ## [0.21.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.24...v0.21.0-rc.25) (2021-11-24)
