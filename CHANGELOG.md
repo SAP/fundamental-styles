@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.27...v0.21.0-rc.28) (2021-11-25)
+
+
+### Bug Fixes
+
+* **styles:** fix correct label text placement [ci visual] ([#2929](https://github.com/SAP/fundamental-styles/issues/2929)) ([ee5271f](https://github.com/SAP/fundamental-styles/commit/ee5271ffeabea13d7601bee3301eea970eebd4d1))
+
 ## [0.21.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.26...v0.21.0-rc.27) (2021-11-25)
 
 
