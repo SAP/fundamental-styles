@@ -119,7 +119,6 @@ export const primary = () => `${localStyles}
 `;
 
 primary.storyName = 'Primary Buttons';
-
 primary.parameters = {
     docs: {
         iframeHeight: 500,
@@ -202,7 +201,6 @@ export const secondary = () => `${localStyles}
 `;
 
 secondary.storyName = 'Secondary Buttons';
-
 secondary.parameters = {
     docs: {
         iframeHeight: 500,
@@ -340,7 +338,6 @@ export const semantic = () => `${localStyles}
 `;
 
 semantic.storyName = 'Semantic Buttons';
-
 semantic.parameters = {
     docs: {
         iframeHeight: 500,
@@ -443,7 +440,6 @@ export const icon = () => `${localStyles}
 `;
 
 icon.storyName = 'Icon Buttons';
-
 icon.parameters = {
     docs: {
         iframeHeight: 500,
@@ -517,7 +513,6 @@ export const toggle = () => `${localStyles}
 `;
 
 toggle.storyName = 'Toggle Buttons';
-
 toggle.parameters = {
     docs: {
         iframeHeight: 500,
@@ -638,7 +633,6 @@ export const segmented = () => `${localStyles}
 `;
 
 segmented.storyName = 'Segmented Button';
-
 segmented.parameters = {
     docs: {
         iframeHeight: 500,
