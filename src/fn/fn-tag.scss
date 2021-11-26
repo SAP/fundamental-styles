@@ -147,7 +147,7 @@ $tag-colors-rest: (
         outline: none;
         color: map_get($color-set, "text-focus");
         background: map_get($color-set, "background-state");
-        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow-blue;
       }
 
       @include fn-not-focus-visible() {
@@ -161,7 +161,7 @@ $tag-colors-rest: (
         outline: none;
         color: map_get($color-set, "text-focus");
         background: map_get($color-set, "background-state");
-        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow-blue;
       }
 
       @include fn-disabled() {
