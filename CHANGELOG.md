@@ -1,4 +1,20 @@
 
+## [0.21.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.31...v0.21.0-rc.32) (2021-11-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fn:** (fn) updated button modifier classes to follow the naming in the design
+* fix(fn): update Button component to latest Fiori Next design
+
+* chore(fn): trigger [ci visual]
+
+Co-authored-by: droshev <mladen.droshev@sap.com>
+
+### Bug Fixes
+
+* **fn:** update Button component to latest Fiori Next design ([#2932](https://github.com/SAP/fundamental-styles/issues/2932)) ([c3fb4a6](https://github.com/SAP/fundamental-styles/commit/c3fb4a6b4fa2c163d3b066b1388549b76fde18a8))
+
 ## [0.21.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.30...v0.21.0-rc.31) (2021-11-25)
 
 ## [0.21.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.29...v0.21.0-rc.30) (2021-11-25)
