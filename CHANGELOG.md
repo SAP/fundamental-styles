@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.33...v0.21.0-rc.34) (2021-11-26)
+
+
+### Bug Fixes
+
+* **fn:** update Switch to latest design [ci visual] ([#2934](https://github.com/SAP/fundamental-styles/issues/2934)) ([90e2148](https://github.com/SAP/fundamental-styles/commit/90e214838e326f7da14e2ecb089ca6aa0394f8ed))
+
 ## [0.21.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.32...v0.21.0-rc.33) (2021-11-26)
 
 ## [0.21.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.31...v0.21.0-rc.32) (2021-11-26)
