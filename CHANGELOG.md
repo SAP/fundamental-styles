@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.34...v0.21.0-rc.35) (2021-11-27)
+
+
+### Features
+
+* illustrated message [ci visual] ([#2917](https://github.com/SAP/fundamental-styles/issues/2917)) ([00a3fe8](https://github.com/SAP/fundamental-styles/commit/00a3fe82bc3fae2ee921e9bb2cc3951f9d13c28d))
+
 ## [0.21.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.33...v0.21.0-rc.34) (2021-11-26)
 
 
