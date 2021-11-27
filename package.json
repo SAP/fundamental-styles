@@ -60,7 +60,7 @@
     "@commitlint/travis-cli": "^15.0.0",
     "@sap-theming/theming-base-content": "11.1.34",
     "@storybook/addon-a11y": "6.3.12",
-    "@storybook/addon-actions": "6.3.12",
+    "@storybook/addon-actions": "6.4.0",
     "@storybook/addon-controls": "^6.3.12",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/addon-docs": "6.3.12",
