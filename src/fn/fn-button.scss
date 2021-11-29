@@ -40,7 +40,7 @@ $block: #{$fn-namespace}-button;
     line-height: $fn-element-line-height;
 
     & + .#{$block}__text {
-      @include fn-set-margin-left($fn-margin-medium);
+      @include fn-set-margin-left($fn-padding-xs);
     }
   }
 
@@ -52,7 +52,7 @@ $block: #{$fn-namespace}-button;
     line-height: 1.375rem;
 
     & + [class*='sap-icon'] {
-      @include fn-set-margin-left($fn-margin-medium);
+      @include fn-set-margin-left($fn-padding-xs);
     }
   }
 
