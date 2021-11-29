@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.35...v0.21.0-rc.36) (2021-11-29)
+
+
+### Bug Fixes
+
+* **fn:** update the spacing between text and icon in FN Button [ci visual] ([#2946](https://github.com/SAP/fundamental-styles/issues/2946)) ([ca86942](https://github.com/SAP/fundamental-styles/commit/ca86942d639ee211ca9632a3206d66816a7f9e07))
+
 ## [0.21.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.34...v0.21.0-rc.35) (2021-11-27)
 
 
