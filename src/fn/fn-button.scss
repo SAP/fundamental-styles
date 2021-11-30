@@ -101,8 +101,8 @@ $block: #{$fn-namespace}-button;
   @include fn-disabled() {
     @include fn-button-base($fn-color-white, $fn-color-blue-500, none);
 
-    opacity: 0.4;
     cursor: not-allowed;
+    opacity: $fn-disabled-opacity;
   }
 
   &--icon-only {
