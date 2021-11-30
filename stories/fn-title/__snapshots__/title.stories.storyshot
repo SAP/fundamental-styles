@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Title Semantic Level 1`] = `
+<section>
+  <h1
+    class="fn-title fn-title--h1"
+  >
+    "Have no fear of perfection - you’ll never reach it." - Salvador Dali
+  </h1>
+  
+
+  <h2
+    class="fn-title fn-title--h2"
+  >
+    "Have no fear of perfection - you’ll never reach it." - Salvador Dali
+  </h2>
+  
+
+  <h3
+    class="fn-title fn-title--h3"
+  >
+    "Have no fear of perfection - you’ll never reach it." - Salvador Dali
+  </h3>
+  
+
+  <h4
+    class="fn-title fn-title--h4"
+  >
+    "Have no fear of perfection - you’ll never reach it." - Salvador Dali
+  </h4>
+  
+
+  <h5
+    class="fn-title fn-title--h5"
+  >
+    "Have no fear of perfection - you’ll never reach it." - Salvador Dali
+  </h5>
+  
+
+  <h6
+    class="fn-title fn-title--h6"
+  >
+    "Have no fear of perfection - you’ll never reach it." - Salvador Dali
+  </h6>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Title Text Wrapping 1`] = `
+<div
+  style="width: 600px"
+>
+  
+    
+  <h1
+    class="fn-title fn-title--h1 fn-title--wrap"
+  >
+    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+  </h1>
+  
+    
+  <h2
+    class="fn-title fn-title--h2 fn-title--wrap"
+  >
+    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+  </h2>
+  
+    
+  <h3
+    class="fn-title fn-title--h3 fn-title--wrap"
+  >
+    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+  </h3>
+  
+    
+  <h4
+    class="fn-title fn-title--h4 fn-title--wrap"
+  >
+    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+  </h4>
+  
+    
+  <h5
+    class="fn-title fn-title--h5 fn-title--wrap"
+  >
+    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+  </h5>
+  
+    
+  <h6
+    class="fn-title fn-title--h6 fn-title--wrap"
+  >
+    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+  </h6>
+  
+
+</div>
+`;
+
+exports[`Storyshots Experimental/Title Visual Level 1`] = `
+<section>
+  <h1
+    class="fn-title fn-title--h6"
+  >
+    "You never fail until you stop trying." - Albert Einstein
+  </h1>
+  
+
+  <h2
+    class="fn-title fn-title--h5"
+  >
+    "You never fail until you stop trying." - Albert Einstein
+  </h2>
+  
+
+  <h3
+    class="fn-title fn-title--h4"
+  >
+    "You never fail until you stop trying." - Albert Einstein
+  </h3>
+  
+
+  <h4
+    class="fn-title fn-title--h3"
+  >
+    "You never fail until you stop trying." - Albert Einstein
+  </h4>
+  
+
+  <h5
+    class="fn-title fn-title--h2"
+  >
+    "You never fail until you stop trying." - Albert Einstein
+  </h5>
+  
+
+  <h6
+    class="fn-title fn-title--h1"
+  >
+    "You never fail until you stop trying." - Albert Einstein
+  </h6>
+  
+
+</section>
+`;
