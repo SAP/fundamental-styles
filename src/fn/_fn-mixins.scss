@@ -121,6 +121,12 @@
   }
 }
 
+@mixin fn-display() {
+  &.is-display {
+    @content;
+  }
+}
+
 // Flex Helpers
 @mixin fn-flex($direction: row) {
   display: flex;
@@ -232,4 +238,11 @@
     left: auto;
     right: $left;
   }
+}
+
+@mixin fn-user-select() {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }

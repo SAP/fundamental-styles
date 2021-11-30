@@ -4,50 +4,189 @@ export default {
         description: `
 
         `,
-        components: ['fn-checkbox', 'fn-radio', 'fn-switch']
+        components: ['fn-checkbox', 'fn-fieldset', 'fn-radio', 'fn-switch']
     }
 };
 
 const localStyles = `
 <style>
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
-    .docs-fn-container label {
-        margin-bottom: 1rem;
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+    .docs-fn-container-group {
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 </style>
 `;
 
 export const checkbox = () => `${localStyles}
 <div class="docs-fn-container">
+    <div><b>:normal</b></div>
     <label class="fn-checkbox" tabindex="0">
-        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
         <span class="fn-checkbox__checkmark"></span>
-        <span class="fn-checkbox__label">First</span>
+        <span class="fn-checkbox__label">Checkbox</span>
     </label>
 
     <label class="fn-checkbox" tabindex="0">
-        <input class="fn-checkbox__input" type="checkbox" tabindex="-1">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
         <span class="fn-checkbox__checkmark"></span>
-        <span class="fn-checkbox__label">Second</span>
     </label>
 
     <label class="fn-checkbox" tabindex="0">
-        <input class="fn-checkbox__input" type="checkbox" tabindex="-1">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
         <span class="fn-checkbox__checkmark"></span>
-        <span class="fn-checkbox__label">Third</span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:hover</b></div>
+    <label class="fn-checkbox is-hover" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-hover" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+
+    <label class="fn-checkbox is-hover" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-hover" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:focus</b></div>
+    <label class="fn-checkbox is-focus" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-focus" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+
+    <label class="fn-checkbox is-focus" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-focus" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:disabled</b></div>
+    <label class="fn-checkbox is-disabled">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox" disabled>
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
     </label>
 
     <label class="fn-checkbox is-disabled">
-        <input class="fn-checkbox__input" type="checkbox" disabled tabindex="-1">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox" disabled>
         <span class="fn-checkbox__checkmark"></span>
-        <span class="fn-checkbox__label">Fourth</span>
+    </label>
+
+    <label class="fn-checkbox is-disabled">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox" disabled>
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-disabled">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox" disabled>
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:read-only</b></div>
+    <label class="fn-checkbox is-readonly">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox" readonly disabled>
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-readonly">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox" readonly disabled>
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+
+    <label class="fn-checkbox is-readonly">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox" readonly disabled>
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-readonly">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox" readonly disabled>
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:display</b></div>
+    <label class="fn-checkbox is-display" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-display" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+    </label>
+
+    <label class="fn-checkbox is-display" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
+        <span class="fn-checkbox__label">Checkbox</span>
+    </label>
+
+    <label class="fn-checkbox is-display" tabindex="0">
+        <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1" aria-label="checkbox">
+        <span class="fn-checkbox__checkmark"></span>
     </label>
 </div>
 `;
@@ -60,32 +199,121 @@ checkbox.parameters = {
 };
 
 export const checkboxGroup = () => `${localStyles}
-<div class="docs-fn-container">
-    <div style="width: 10rem">
-        <label class="fn-checkbox fn-checkbox--group" tabindex="0">
-            <input class="fn-checkbox__input" type="checkbox" checked="checked" tabindex="-1">
+<div class="docs-fn-container-group">
+    <fieldset class="fn-fieldset">
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group" 
+                tabindex="-1" 
+                aria-label="checkbox" 
+                checked="checked"
+            >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">First</span>
         </label>
-
-        <label class="fn-checkbox fn-checkbox--group" tabindex="0">
-            <input class="fn-checkbox__input" type="checkbox" tabindex="-1">
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group" 
+                tabindex="-1" 
+                aria-label="checkbox"
+            >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">Second</span>
         </label>
-
-        <label class="fn-checkbox fn-checkbox--group" tabindex="0">
-            <input class="fn-checkbox__input" type="checkbox" tabindex="-1">
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group" 
+                tabindex="-1" 
+                aria-label="checkbox"
+            >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">Third</span>
         </label>
+    </fieldset>
+</div>
 
-        <label class="fn-checkbox fn-checkbox--group is-disabled">
-            <input class="fn-checkbox__input" type="checkbox" disabled tabindex="-1">
+<div class="docs-fn-container-group">
+    <fieldset class="fn-fieldset fn-fieldset--full-width" style="width: 120px;">
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group_width" 
+                tabindex="-1" 
+                aria-label="checkbox" 
+                checked="checked"
+            >
             <span class="fn-checkbox__checkmark"></span>
-            <span class="fn-checkbox__label">Fourth</span>
+            <span class="fn-checkbox__label">First</span>
         </label>
-    </div>
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group_width" 
+                tabindex="-1" 
+                aria-label="checkbox"
+            >
+            <span class="fn-checkbox__checkmark"></span>
+            <span class="fn-checkbox__label">Second</span>
+        </label>
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group_width" 
+                tabindex="-1" 
+                aria-label="checkbox"
+            >
+            <span class="fn-checkbox__checkmark"></span>
+            <span class="fn-checkbox__label">Third</span>
+        </label>
+    </fieldset>
+</div>
+
+<div class="docs-fn-container-group">
+    <fieldset class="fn-fieldset fn-fieldset--horizontal">
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group_horizontal" 
+                tabindex="-1" 
+                aria-label="checkbox" 
+                checked="checked"
+            >
+            <span class="fn-checkbox__checkmark"></span>
+            <span class="fn-checkbox__label">Checkbox</span>
+        </label>
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group_horizontal" 
+                tabindex="-1" 
+                aria-label="checkbox"
+            >
+            <span class="fn-checkbox__checkmark"></span>
+            <span class="fn-checkbox__label">Checkbox</span>
+        </label>
+        <label class="fn-checkbox" tabindex="0">
+            <input 
+                class="fn-checkbox__input" 
+                type="checkbox" 
+                name="checkbox_group_horizontal" 
+                tabindex="-1" 
+                aria-label="checkbox"
+            >
+            <span class="fn-checkbox__checkmark"></span>
+            <span class="fn-checkbox__label">Checkbox</span>
+        </label>
+    </fieldset>
 </div>
 `;
 
@@ -93,34 +321,158 @@ checkboxGroup.storyName = 'Checkbox Group';
 checkboxGroup.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'By default, the width of the checkbox input is `fit-content`. Use the `.fn-checkbox--group` modifier class to make all the controls within a group the same width. In this case the checkbox control will take the width of the parent element.'
+        storyDescription: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group checkbox controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the checkbox controls with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
     }
 };
 
 export const radio = () => `${localStyles}
 <div class="docs-fn-container">
+    <div><b>:normal</b></div>
     <label class="fn-radio" tabindex="0">
-        <input class="fn-radio__input" type="radio" checked="checked" name="radio" tabindex="-1">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
         <span class="fn-radio__checkmark"></span>
-        <span class="fn-radio__label">First</span>
+        <span class="fn-radio__label">Radio Button</span>
     </label>
 
     <label class="fn-radio" tabindex="0">
-        <input class="fn-radio__input" type="radio" name="radio" tabindex="-1">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
         <span class="fn-radio__checkmark"></span>
-        <span class="fn-radio__label">Second</span>
     </label>
 
     <label class="fn-radio" tabindex="0">
-        <input class="fn-radio__input" type="radio" name="radio" tabindex="-1">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
         <span class="fn-radio__checkmark"></span>
-        <span class="fn-radio__label">Third</span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio" tabindex="0">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:hover</b></div>
+    <label class="fn-radio is-hover" tabindex="0">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-hover" tabindex="0">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+    </label>
+
+    <label class="fn-radio is-hover" tabindex="0">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-hover" tabindex="0">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:focus</b></div>
+    <label class="fn-radio is-focus" tabindex="0">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-focus" tabindex="0">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+    </label>
+
+    <label class="fn-radio is-focus" tabindex="0">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-focus" tabindex="0">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:disabled</b></div>
+    <label class="fn-radio is-disabled">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" disabled>
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
     </label>
 
     <label class="fn-radio is-disabled">
-        <input class="fn-radio__input" type="radio" disabled name="radio" tabindex="-1">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" disabled>
         <span class="fn-radio__checkmark"></span>
-        <span class="fn-radio__label">Fourth</span>
+    </label>
+
+    <label class="fn-radio is-disabled">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio" disabled>
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-disabled">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio" disabled>
+        <span class="fn-radio__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:read-only</b></div>
+    <label class="fn-radio is-readonly">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" readonly disabled>
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-readonly">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" readonly disabled>
+        <span class="fn-radio__checkmark"></span>
+    </label>
+
+    <label class="fn-radio is-readonly">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio" readonly disabled>
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-readonly">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio" readonly disabled>
+        <span class="fn-radio__checkmark"></span>
+    </label>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:display</b></div>
+    <label class="fn-radio is-display" tabindex="0">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-display" tabindex="0">
+        <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+    </label>
+
+    <label class="fn-radio is-display" tabindex="0">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
+        <span class="fn-radio__label">Radio Button</span>
+    </label>
+
+    <label class="fn-radio is-display" tabindex="0">
+        <input class="fn-radio__input" type="radio" checked="checked" tabindex="-1" aria-label="radio">
+        <span class="fn-radio__checkmark"></span>
     </label>
 </div>
 
@@ -134,41 +486,72 @@ radio.parameters = {
 };
 
 export const radioGroup = () => `${localStyles}
-<div class="docs-fn-container">
-    <div style="width: 10rem">
-        <label class="fn-radio fn-radio--group" tabindex="0">
-            <input class="fn-radio__input" type="radio" checked="checked" name="radio-group" tabindex="-1">
+<div class="docs-fn-container-group">
+    <fieldset class="fn-fieldset">
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio"  checked="checked" name="group1">
             <span class="fn-radio__checkmark"></span>
             <span class="fn-radio__label">First</span>
         </label>
-
-        <label class="fn-radio fn-radio--group" tabindex="0">
-            <input class="fn-radio__input" type="radio" name="radio-group" tabindex="-1">
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group1">
             <span class="fn-radio__checkmark"></span>
             <span class="fn-radio__label">Second</span>
         </label>
-
-        <label class="fn-radio fn-radio--group" tabindex="0">
-            <input class="fn-radio__input" type="radio" name="radio-group" tabindex="-1">
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group1">
             <span class="fn-radio__checkmark"></span>
             <span class="fn-radio__label">Third</span>
         </label>
-
-        <label class="fn-radio fn-radio--group is-disabled">
-            <input class="fn-radio__input" type="radio" disabled name="radio-group" tabindex="-1">
-            <span class="fn-radio__checkmark"></span>
-            <span class="fn-radio__label">Fourth</span>
-        </label>
-    </div>
+    </fieldset>
 </div>
 
+<div class="docs-fn-container-group">
+    <fieldset class="fn-fieldset fn-fieldset--full-width" style="width: 120px;">
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio"  checked="checked" name="group2">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label">First</span>
+        </label>
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group2">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label">Second</span>
+        </label>
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group2">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label">Third</span>
+        </label>
+    </fieldset>
+</div>
+
+<div class="docs-fn-container-group">
+    <fieldset class="fn-fieldset fn-fieldset--horizontal">
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio"  checked="checked" name="group3">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label">Radio Button</span>
+        </label>
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group3">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label">Radio Button</span>
+        </label>
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group3">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label">Radio Button</span>
+        </label>
+    </fieldset>
+</div>
 `;
 
 radioGroup.storyName = 'Radio Group';
 radioGroup.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'By default, the width of the radio input is `fit-content`. Use the `.fn-radio--group` modifier class to make all the controls within a group the same width. In this case the radio control will take the width of the parent element.'
+        storyDescription: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group radio button controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the radio buttons with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
     }
 };
 
