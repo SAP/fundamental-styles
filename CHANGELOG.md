@@ -1,4 +1,15 @@
 
+## [0.21.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.36...v0.21.0-rc.37) (2021-11-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fn:** New markup for checkbox and radio button groups.
+
+### Bug Fixes
+
+* **fn:** update Radio and Checkbox to latest FN design [ci visual] ([#2948](https://github.com/SAP/fundamental-styles/issues/2948)) ([cecca66](https://github.com/SAP/fundamental-styles/commit/cecca6659d552dcaa607a2bc355ef91d80d2c818))
+
 ## [0.21.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.35...v0.21.0-rc.36) (2021-11-29)
 
 
