@@ -5,8 +5,10 @@
 $block: #{$fd-namespace}-carousel;
 $button: #{$fd-namespace}-button;
 
-#{$block}:focus {
-  outline: 0.0625rem dotted;
+#{$block} {
+  @include fd-focus() {
+    outline: 0.0625rem dotted;
+  }
 }
 
 .#{$block} {
@@ -34,7 +36,7 @@ $button: #{$fd-namespace}-button;
   }
 
   width: 100%;
-  min-width: 15.5rem;
+  min-width: 11rem;
   max-width: 100%;
   height: 100%;
 
@@ -120,8 +122,8 @@ $button: #{$fd-namespace}-button;
       flex-wrap: wrap;
     }
 
-    width: 9rem;
-    padding: 0.5rem;
+    min-width: 7rem;
+    padding: 0.5rem 0;
   }
 
   &__page-indicator {
@@ -202,21 +204,6 @@ $button: #{$fd-namespace}-button;
           display: none;
         }
       }
-    }
-  }
-}
-
-@media (max-width: 21.25rem) {
-  .#{$block} {
-    min-width: 11rem;
-
-    &__page-indicators {
-      width: 8rem;
-      padding: 0;
-    }
-
-    &__page-indicator-container {
-      padding: 0;
     }
   }
 }
