@@ -1,15 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Text Field Default Input 1`] = `
+exports[`Storyshots Experimental/Input Critical Input 1`] = `
 <section>
   
 
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
     }
 
   </style>
@@ -21,139 +35,291 @@ exports[`Storyshots Experimental/Text Field Default Input 1`] = `
   >
     
     
+    <div>
+      <b>
+        normal
+      </b>
+    </div>
+    
+    
     <div
-      class="fn-text-field"
+      class="fn-input fn-input--critical"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-1"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field"
+        id="field-15"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-1"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--alert"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Disabled
-    </h4>
+    <div>
+      <b>
+        hover
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field is-disabled"
+      class="fn-input fn-input--critical"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-2"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-hover"
+        id="field-16"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          disabled=""
-          id="field-2"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--alert"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Readonly
-    </h4>
+    <div>
+      <b>
+        active
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field"
+      class="fn-input fn-input--critical"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-3"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-active"
+        id="field-17"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-3"
-          placeholder="Placeholder"
-          readonly=""
-          type="text"
-          value="Typed"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--alert"
+      />
       
     
     </div>
     
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--critical"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-focus"
+        id="field-18"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--alert"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--critical"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        disabled=""
+        id="field-19"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--alert"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        readonly
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--critical"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        id="field-20"
+        placeholder="Placeholder"
+        readonly=""
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--alert"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        display
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--critical"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-display"
+        id="field-21"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--alert"
+      />
+      
+    
+    </div>
     
 
   </div>
@@ -162,16 +328,30 @@ exports[`Storyshots Experimental/Text Field Default Input 1`] = `
 </section>
 `;
 
-exports[`Storyshots Experimental/Text Field Error Input 1`] = `
+exports[`Storyshots Experimental/Input Default Input 1`] = `
 <section>
   
 
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
     }
 
   </style>
@@ -183,154 +363,256 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
   >
     
     
+    <div>
+      <b>
+        normal
+      </b>
+    </div>
+    
+    
     <div
-      class="fn-text-field fn-text-field--error"
+      class="fn-input"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-10"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field"
+        id="field-1"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
-        
-            
-        <input
-          class="fn-text-field__input"
-          id="field-10"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--error"
-        />
-        
-        
-      </div>
+        class="fn-input__border"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Disabled
-    </h4>
+    <div>
+      <b>
+        hover
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--error is-disabled"
+      class="fn-input"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-11"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-hover"
+        id="field-2"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
-        
-            
-        <input
-          class="fn-text-field__input"
-          disabled=""
-          id="field-11"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--error"
-        />
-        
-        
-      </div>
+        class="fn-input__border"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Readonly
-    </h4>
+    <div>
+      <b>
+        active
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--error is-readonly"
+      class="fn-input"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-12"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-active"
+        id="field-3"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
-        
-            
-        <input
-          class="fn-text-field__input"
-          id="field-12"
-          placeholder="Placeholder"
-          readonly=""
-          type="text"
-          value="Typed"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--error"
-        />
-        
-        
-      </div>
+        class="fn-input__border"
+      />
       
     
     </div>
     
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-focus"
+        id="field-4"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        disabled=""
+        id="field-5"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        readonly
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        id="field-6"
+        placeholder="Placeholder"
+        readonly=""
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        display
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-display"
+        id="field-7"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+    
+    </div>
     
 
   </div>
@@ -339,16 +621,30 @@ exports[`Storyshots Experimental/Text Field Error Input 1`] = `
 </section>
 `;
 
-exports[`Storyshots Experimental/Text Field Information Input 1`] = `
+exports[`Storyshots Experimental/Input Info Input 1`] = `
 <section>
   
 
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
     }
 
   </style>
@@ -360,154 +656,291 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
   >
     
     
+    <div>
+      <b>
+        normal
+      </b>
+    </div>
+    
+    
     <div
-      class="fn-text-field fn-text-field--information"
+      class="fn-input fn-input--info"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-4"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field"
+        id="field-8"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-4"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--information"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--information"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Disabled
-    </h4>
+    <div>
+      <b>
+        hover
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--information is-disabled"
+      class="fn-input fn-input--info"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-5"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-hover"
+        id="field-9"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          disabled=""
-          id="field-5"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--information"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--information"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Readonly
-    </h4>
+    <div>
+      <b>
+        active
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--information is-readonly"
+      class="fn-input fn-input--info"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-6"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-active"
+        id="field-10"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-6"
-          placeholder="Placeholder"
-          readonly=""
-          type="text"
-          value="Typed"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--information"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--information"
+      />
       
     
     </div>
     
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--info"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-focus"
+        id="field-11"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--information"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--info"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        disabled=""
+        id="field-12"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--information"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        readonly
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--info"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        id="field-13"
+        placeholder="Placeholder"
+        readonly=""
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--information"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        display
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--info"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-display"
+        id="field-14"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--information"
+      />
+      
+    
+    </div>
     
 
   </div>
@@ -516,16 +949,30 @@ exports[`Storyshots Experimental/Text Field Information Input 1`] = `
 </section>
 `;
 
-exports[`Storyshots Experimental/Text Field Success Input 1`] = `
+exports[`Storyshots Experimental/Input Negative Input 1`] = `
 <section>
   
 
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
     }
 
   </style>
@@ -537,154 +984,291 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
   >
     
     
+    <div>
+      <b>
+        normal
+      </b>
+    </div>
+    
+    
     <div
-      class="fn-text-field fn-text-field--success"
+      class="fn-input fn-input--negative"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-13"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field"
+        id="field-22"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-13"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--sys-enter-2"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--error"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Disabled
-    </h4>
+    <div>
+      <b>
+        hover
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--success is-disabled"
+      class="fn-input fn-input--negative"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-14"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-hover"
+        id="field-23"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          disabled=""
-          id="field-14"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--sys-enter-2"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--error"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Readonly
-    </h4>
+    <div>
+      <b>
+        active
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--success is-readonly"
+      class="fn-input fn-input--negative"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-15"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-active"
+        id="field-24"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-15"
-          placeholder="Placeholder"
-          readonly=""
-          type="text"
-          value="Typed"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--sys-enter-2"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--error"
+      />
       
     
     </div>
     
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--negative"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-focus"
+        id="field-25"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--error"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--negative"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        disabled=""
+        id="field-26"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--error"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        readonly
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--negative"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        id="field-27"
+        placeholder="Placeholder"
+        readonly=""
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--error"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        display
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--negative"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-display"
+        id="field-28"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--error"
+      />
+      
+    
+    </div>
     
 
   </div>
@@ -693,16 +1277,30 @@ exports[`Storyshots Experimental/Text Field Success Input 1`] = `
 </section>
 `;
 
-exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
+exports[`Storyshots Experimental/Input Positive Input 1`] = `
 <section>
   
 
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
     }
 
   </style>
@@ -714,154 +1312,291 @@ exports[`Storyshots Experimental/Text Field Warning Input 1`] = `
   >
     
     
+    <div>
+      <b>
+        normal
+      </b>
+    </div>
+    
+    
     <div
-      class="fn-text-field fn-text-field--warning"
+      class="fn-input fn-input--positive"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-7"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field"
+        id="field-29"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-7"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--alert"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--sys-enter-2"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Disabled
-    </h4>
+    <div>
+      <b>
+        hover
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--warning is-disabled"
+      class="fn-input fn-input--positive"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-8"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-hover"
+        id="field-30"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          disabled=""
-          id="field-8"
-          placeholder="Placeholder"
-          type="text"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--alert"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--sys-enter-2"
+      />
       
     
     </div>
     
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
     
-    <br />
-    <br />
     
-    
-    <h4>
-      Readonly
-    </h4>
+    <div>
+      <b>
+        active
+      </b>
+    </div>
     
     
     <div
-      class="fn-text-field fn-text-field--warning is-readonly"
+      class="fn-input fn-input--positive"
     >
       
         
-      <label
-        class="fn-text-field__label"
-        for="field-9"
-      >
-        Label
-      </label>
+      <input
+        class="fn-input__text-field is-active"
+        id="field-31"
+        placeholder="Placeholder"
+        type="text"
+      />
       
         
       <div
-        class="fn-text-field__input-container"
-      >
+        class="fn-input__border"
+      />
+      
         
-            
-        <input
-          class="fn-text-field__input"
-          id="field-9"
-          placeholder="Placeholder"
-          readonly=""
-          type="text"
-          value="Typed"
-        />
-        
-            
-        <div
-          class="fn-text-field__input-border"
-        />
-        
-            
-        <span
-          class="sap-icon sap-icon--alert"
-        />
-        
-        
-      </div>
+      <span
+        class="sap-icon sap-icon--sys-enter-2"
+      />
       
     
     </div>
     
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--positive"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-focus"
+        id="field-32"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--sys-enter-2"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--positive"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        disabled=""
+        id="field-33"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--sys-enter-2"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        readonly
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--positive"
+    >
+      
+        
+      <input
+        class="fn-input__text-field"
+        id="field-34"
+        placeholder="Placeholder"
+        readonly=""
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--sys-enter-2"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        display
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-input--positive"
+    >
+      
+        
+      <input
+        class="fn-input__text-field is-display"
+        id="field-35"
+        placeholder="Placeholder"
+        type="text"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <span
+        class="sap-icon sap-icon--sys-enter-2"
+      />
+      
+    
+    </div>
     
 
   </div>

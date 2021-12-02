@@ -85,6 +85,13 @@
   }
 }
 
+@mixin fn-focus-active {
+  &:focus:active,
+  &.is-focus.is-active {
+    @content;
+  }
+}
+
 @mixin fn-disabled {
   &[aria-disabled="true"],
   &:disabled,
@@ -245,4 +252,17 @@
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+}
+
+@mixin fn-set-top-right-bottom-left($top:0, $right:0, $bottom:0, $left:0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+  @include fn-rtl() {
+    left: $right;
+    right: $left;
+  }
 }
