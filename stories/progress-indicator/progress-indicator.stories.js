@@ -26,7 +26,6 @@ Informative &nbsp;&nbsp;&nbsp;&nbsp; | \`fd-progress-indicator--informative\`
 Positive | \`fd-progress-indicator--positive\`
 Critical | \`fd-progress-indicator--critical\`
 Negative | \`fd-progress-indicator--negative\`
-
         `,
         components: ['progress-indicator', 'menu', 'popover', 'icon'],
         tags: ['f3', 'a11y', 'theme', 'development']
