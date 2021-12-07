@@ -9,8 +9,13 @@ export default {
 const localStyles = `
 <style>
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
+        padding: 1rem;
+        align-items: center;
     }
 
 </style>
@@ -18,15 +23,47 @@ const localStyles = `
 
 export const search = () => `${localStyles}
 <div class="docs-fn-container">
+    <div><b>normal</b></div>
     <div class="fn-search">
-        <span class="sap-icon sap-icon--search fn-search__icon"></span>
+        <span class="sap-icon sap-icon--search"></span>
         <input type="search" class="fn-search__input" placeholder="Search everything" />
-        <button class="fn-search__button" aria-label="navigation right arrow button">
-            <span class="sap-icon sap-icon--navigation-right-arrow"></span>
-        </button>
-        <button class="fn-search__clear" aria-label="clear button">
-            <span class="sap-icon sap-icon--decline"></span>
-        </button>
+        <span class="sap-icon sap-icon--navigation-right-arrow"></span>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>hover</b></div>
+    <div class="fn-search">
+        <span class="sap-icon sap-icon--search"></span>
+        <input type="search" class="fn-search__input is-hover" placeholder="Search everything" />
+        <span class="sap-icon sap-icon--navigation-right-arrow"></span>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>active</b></div>
+    <div class="fn-search">
+        <span class="sap-icon sap-icon--search"></span>
+        <input type="search" class="fn-search__input is-active" placeholder="Search everything" />
+        <span class="sap-icon sap-icon--navigation-right-arrow"></span>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>focus</b></div>
+    <div class="fn-search">
+        <span class="sap-icon sap-icon--search"></span>
+        <input type="search" class="fn-search__input is-focus" placeholder="Search everything" />
+        <span class="sap-icon sap-icon--navigation-right-arrow"></span>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>disabled</b></div>
+    <div class="fn-search is-disabled">
+        <span class="sap-icon sap-icon--search"></span>
+        <input type="search" class="fn-search__input" placeholder="Search everything" disabled />
+        <span class="sap-icon sap-icon--navigation-right-arrow"></span>
     </div>
 </div>
 `;

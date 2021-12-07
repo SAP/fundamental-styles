@@ -116,9 +116,9 @@ $block: #{$fn-namespace}-input;
     @include fn-input-base($fn-color-grey-50, $fn-color-grey-700, none);
 
     &::placeholder {
-      color: $fn-color-grey-500;
-      font-size: $fn-element-font-size;
-      line-height: $fn-element-line-height;
+      color: $fn-input-placeholder-color;
+      font-size: $fn-input-placeholder-font-size;
+      line-height: $fn-input-placeholder-line-height;
     }
 
     @include fn-input-base-states() {
@@ -162,5 +162,114 @@ $block: #{$fn-namespace}-input;
 
   &--positive {
     @include fn-input-base-semantics($fn-color-green-50, $fn-color-green-400, $fn-shadow-green-level-1);
+  }
+
+  &--select {
+    cursor: pointer;
+
+    .#{$block}__text-field {
+      @include fn-set-paddings-y-equal(0.3125rem);
+      @include fn-set-paddings-x(0.5rem, 1.625rem);
+
+      pointer-events: none;
+    }
+
+    [class*='sap-icon'] {
+      @include fn-flex-center();
+
+      line-height: 1;
+      position: relative;
+    }
+
+    button {
+      @include fn-set-position-right(0.25rem);
+
+      top: 0.4375rem;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    @include fn-hover() {
+      .#{$block}__text-field {
+        background: $fn-color-white;
+        box-shadow: $fn-shadow-grey-level-1;
+      }
+    }
+
+    @include fn-active() {
+      .#{$block}__text-field {
+        background: $fn-color-white;
+        box-shadow: $fn-shadow-grey-level-1;
+      }
+
+      .#{$block}__border::before {
+        border-bottom-color: $fn-color-blue-500;
+      }
+
+      button {
+        box-shadow: none;
+        background: $fn-color-blue-500;
+
+        [class*='sap-icon'] {
+          color: $fn-color-white;
+        }
+      }
+    }
+
+    @include fn-is-focus() {
+      .#{$block}__text-field {
+        background: $fn-color-white;
+      }
+
+      .#{$block}__border::before {
+        border-bottom: none;
+      }
+
+      outline: none;
+      box-shadow: $fn-focus-outline-shadow-blue;
+    }
+
+    @include fn-focus-visible() {
+      .#{$block}__text-field {
+        background: $fn-color-white;
+      }
+
+      .#{$block}__border::before {
+        border-bottom: none;
+      }
+
+      outline: none;
+      box-shadow: $fn-focus-outline-shadow-blue;
+    }
+
+    @include fn-display() {
+      .#{$block}__text-field {
+        background: transparent;
+        box-shadow: none;
+      }
+
+      .#{$block}__border::before {
+        border-bottom: none;
+      }
+
+      outline: none;
+      box-shadow: none;
+
+      button {
+        display: none;
+      }
+
+      @include fn-hover() {
+        .#{$block}__text-field {
+          background: transparent;
+          box-shadow: none;
+        }
+      }
+    }
+
+    @include fn-disabled() {
+      pointer-events: none;
+      opacity: $fn-disabled-opacity;
+    }
   }
 }

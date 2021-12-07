@@ -266,3 +266,13 @@
     right: $left;
   }
 }
+
+@mixin fn-set-square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin fn-set-rectangle($width, $height) {
+  width: $width;
+  height: $height;
+}

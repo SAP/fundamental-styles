@@ -198,3 +198,8 @@ $fn-focus-outline-inner-shadow: inset 0 0 0 0.125rem #ffffff;
 
 // Opacity for disabled state
 $fn-disabled-opacity: 0.4;
+
+// Input Placeholder
+$fn-input-placeholder-color: $fn-color-grey-500;
+$fn-input-placeholder-font-size: $fn-element-font-size;
+$fn-input-placeholder-line-height: $fn-element-line-height;

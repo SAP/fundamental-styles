@@ -32,7 +32,7 @@ export default {
 
 <br><br>
         `,
-        components: ['fn-button', 'fn-segmented-button', 'icon']
+        components: ['fn-button', 'fn-segmented-button', 'fn-nested-button', 'icon']
     }
 };
 
@@ -640,3 +640,52 @@ segmented.parameters = {
     }
 };
 
+export const nested = () => `${localStyles}
+<div class="docs-fn-container">
+    <div></div>
+    <div><b>Nested Button</b></div> 
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:normal</b></div>
+    <button class="fn-nested-button" aria-label="nested button">
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:hover</b></div>
+    <button class="fn-nested-button is-hover" aria-label="hovered nested button">
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:active</b></div>
+    <button class="fn-nested-button is-active" aria-label="active nested button">
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:focus</b></div>
+    <button class="fn-nested-button is-focus" aria-label="focused nested button">
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:disabled</b></div>
+    <button class="fn-nested-button is-disabled" aria-label="disabled nested button" disabled>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+`;
+
+nested.storyName = 'Nested Buttons';
+nested.parameters = {
+    docs: {
+        iframeHeight: 500,
+        storyDescription: ''
+    }
+};
