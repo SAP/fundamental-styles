@@ -239,6 +239,60 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        494
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        495
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        496
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        497
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        498
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        499
+      </a>
+      
+
+            
+      <a
         class="fd-button fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -249,7 +303,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
             
       <label
         class="fd-form-label fd-pagination__label"
-        for="cozyPageInput"
+        id="cozyPageInputPage"
       >
         Page:
       </label>
@@ -257,14 +311,23 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <input
+        aria-labelledby="cozyPageInputPage cozyPageInputOf"
         class="fd-input fd-pagination__input"
-        id="cozyPageInput"
         max="500"
         min="1"
         required=""
         type="number"
         value="500"
       />
+      
+
+            
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="cozyPageInputOf"
+      >
+        of 500
+      </label>
       
 
             
@@ -327,459 +390,1120 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 `;
 
 exports[`Storyshots Components/Pagination First page 1`] = `
-<div
-  class="fd-pagination"
->
-  
-    
-  <nav
-    class="fd-pagination__nav"
-  >
-    
-        
-    <a
-      aria-disabled="true"
-      aria-label="First"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-rewind"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="true"
-      aria-label="Previous"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-left-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <label
-      class="fd-form-label fd-pagination__label"
-      for="firstPageInput"
-    >
-      Page:
-    </label>
-    
-
-        
-    <input
-      class="fd-input fd-input--compact fd-pagination__input"
-      id="firstPageInput"
-      max="3"
-      min="1"
-      required=""
-      type="number"
-      value="1"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      2
-    </a>
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      3
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Next"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-right-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Last"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-forward"
-      />
-      
-        
-    </a>
-    
-    
-  </nav>
+<section>
+  <h3>
+    &gt; 9 Pages
+  </h3>
   
 
-    
   <div
-    class="fd-pagination__total"
+    class="fd-pagination"
   >
     
-        
-    <span
-      class="fd-form-label fd-pagination__total-label"
+    
+    <nav
+      class="fd-pagination__nav"
+      title="pagination with more than 9 pages"
     >
-      3 Results
-    </span>
+      
+        
+      <a
+        aria-disabled="true"
+        aria-label="First"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-rewind"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="true"
+        aria-label="Previous"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="firstPageInputPage"
+      >
+        Page:
+      </label>
+      
+
+        
+      <input
+        aria-labelledby="firstPageInputPage firstPageInputOf"
+        class="fd-input fd-input--compact fd-pagination__input"
+        max="500"
+        min="1"
+        required=""
+        type="number"
+        value="1"
+      />
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="firstPageInputOf"
+      >
+        of 500
+      </label>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        2
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        3
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        4
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        5
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        6
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        7
+      </a>
+      
+
+        
+      <span
+        class="fd-pagination__more"
+        role="presentation"
+      />
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        500
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Next"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Last"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-forward"
+        />
+        
+        
+      </a>
+      
     
+    </nav>
     
+
+    
+    <div
+      class="fd-pagination__total"
+    >
+      
+        
+      <span
+        class="fd-form-label fd-pagination__total-label"
+      >
+        500 Results
+      </span>
+      
+    
+    </div>
+    
+
   </div>
   
 
-</div>
+
+  <h3>
+    &lt; 9 Pages
+  </h3>
+  
+
+
+  <div
+    class="fd-pagination fd-pagination--short"
+  >
+    
+    
+    <nav
+      class="fd-pagination__nav"
+    >
+      
+        
+      <a
+        aria-disabled="true"
+        aria-label="First"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-rewind"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="true"
+        aria-label="Previous"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="firstPageInputShortPage"
+      >
+        Page:
+      </label>
+      
+
+        
+      <input
+        aria-labelledby="firstPageInputShortPage firstPageInputShortOf"
+        class="fd-input fd-input--compact fd-pagination__input"
+        max="3"
+        min="1"
+        required=""
+        type="number"
+        value="1"
+      />
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="firstPageInputShortOf"
+      >
+        of 3
+      </label>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active"
+        href="#"
+      >
+        1
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        2
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        3
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Next"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Last"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-forward"
+        />
+        
+        
+      </a>
+      
+    
+    </nav>
+    
+
+    
+    <div
+      class="fd-pagination__total"
+    >
+      
+        
+      <span
+        class="fd-form-label fd-pagination__total-label"
+      >
+        3 Results
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Pagination Last page 1`] = `
-<div
-  class="fd-pagination"
->
-  
-    
-  <nav
-    class="fd-pagination__nav"
-  >
-    
-        
-    <a
-      aria-disabled="false"
-      aria-label="First"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-rewind"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Previous"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-left-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      1
-    </a>
-    
-
-        
-    <span
-      class="fd-pagination__more"
-      role="presentation"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      499
-    </a>
-    
-
-        
-    <label
-      class="fd-form-label fd-pagination__label"
-      for="lastPageInput"
-    >
-      Page:
-    </label>
-    
-
-        
-    <input
-      class="fd-input fd-input--compact fd-pagination__input"
-      id="lastPageInput"
-      max="500"
-      min="1"
-      required=""
-      type="number"
-      value="500"
-    />
-    
-
-        
-    <a
-      aria-disabled="true"
-      aria-label="Next"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-right-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="true"
-      aria-label="Last"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-forward"
-      />
-      
-        
-    </a>
-    
-    
-  </nav>
+<section>
+  <h3>
+    &gt; 9 Pages
+  </h3>
   
 
-    
   <div
-    class="fd-pagination__total"
+    class="fd-pagination"
   >
     
-        
-    <span
-      class="fd-form-label fd-pagination__total-label"
+    
+    <nav
+      class="fd-pagination__nav"
+      title="pagination with more than 9 pages"
     >
-      500 Results
-    </span>
+      
+        
+      <a
+        aria-disabled="false"
+        aria-label="First"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-rewind"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Previous"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        1
+      </a>
+      
+
+        
+      <span
+        class="fd-pagination__more"
+        role="presentation"
+      />
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        494
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        495
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        496
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        497
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        498
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        499
+      </a>
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="lastPageInputPage"
+      >
+        Page:
+      </label>
+      
+
+        
+      <input
+        aria-labelledby="lastPageInputPage lastPageInputOf"
+        class="fd-input fd-input--compact fd-pagination__input"
+        max="500"
+        min="1"
+        required=""
+        type="number"
+        value="500"
+      />
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="lastPageInputOf"
+      >
+        of 500
+      </label>
+      
+
+        
+      <a
+        aria-disabled="true"
+        aria-label="Next"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="true"
+        aria-label="Last"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-forward"
+        />
+        
+        
+      </a>
+      
     
+    </nav>
     
+
+    
+    <div
+      class="fd-pagination__total"
+    >
+      
+        
+      <span
+        class="fd-form-label fd-pagination__total-label"
+      >
+        500 Results
+      </span>
+      
+    
+    </div>
+    
+
   </div>
   
 
-</div>
+
+  <h3>
+    &lt; 9 Pages
+  </h3>
+  
+
+
+  <div
+    class="fd-pagination fd-pagination--short"
+  >
+    
+    
+    <nav
+      class="fd-pagination__nav"
+    >
+      
+        
+      <a
+        aria-disabled="false"
+        aria-label="First"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-rewind"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Previous"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        1
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        2
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active"
+        href="#"
+      >
+        3
+      </a>
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="lastPageInputShortPage"
+      >
+        Page:
+      </label>
+      
+
+        
+      <input
+        aria-labelledby="lastPageInputShortPage lastPageInputShortOf"
+        class="fd-input fd-input--compact fd-pagination__input"
+        max="3"
+        min="1"
+        required=""
+        type="number"
+        value="3"
+      />
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="lastPageInputShortOf"
+      >
+        of 3
+      </label>
+      
+
+        
+      <a
+        aria-disabled="true"
+        aria-label="Next"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="true"
+        aria-label="Last"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-forward"
+        />
+        
+        
+      </a>
+      
+    
+    </nav>
+    
+
+    
+    <div
+      class="fd-pagination__total"
+    >
+      
+        
+      <span
+        class="fd-form-label fd-pagination__total-label"
+      >
+        3 Results
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Pagination Middle pages 1`] = `
-<div
-  class="fd-pagination"
->
-  
-    
-  <nav
-    class="fd-pagination__nav"
-  >
-    
-        
-    <a
-      aria-disabled="false"
-      aria-label="First"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-rewind"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Previous"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-left-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      1
-    </a>
-    
-
-        
-    <span
-      class="fd-pagination__more"
-      role="presentation"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      299
-    </a>
-    
-
-        
-    <label
-      class="fd-form-label fd-pagination__label"
-      for="middlePageInput"
-    >
-      Page:
-    </label>
-    
-
-        
-    <input
-      class="fd-input fd-input--compact fd-pagination__input"
-      id="middlePageInput"
-      max="500"
-      min="1"
-      required=""
-      type="number"
-      value="300"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      301
-    </a>
-    
-
-        
-    <span
-      class="fd-pagination__more"
-      role="presentation"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      500
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Next"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-right-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Last"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-forward"
-      />
-      
-        
-    </a>
-    
-    
-  </nav>
+<section>
+  <h3>
+    &gt; 9 Pages
+  </h3>
   
 
-    
   <div
-    class="fd-pagination__total"
+    class="fd-pagination"
   >
     
-        
-    <span
-      class="fd-form-label fd-pagination__total-label"
+    
+    <nav
+      class="fd-pagination__nav"
+      title="pagination with more than 9 pages"
     >
-      500 Results
-    </span>
+      
+        
+      <a
+        aria-disabled="false"
+        aria-label="First"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-rewind"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Previous"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        1
+      </a>
+      
+
+        
+      <span
+        class="fd-pagination__more"
+        role="presentation"
+      />
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        298
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        299
+      </a>
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="middlePageInputPage"
+      >
+        Page:
+      </label>
+      
+
+        
+      <input
+        aria-labelledby="middlePageInputPage middlePageInputOf"
+        class="fd-input fd-input--compact fd-pagination__input"
+        max="500"
+        min="1"
+        required=""
+        type="number"
+        value="300"
+      />
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="middlePageInputOf"
+      >
+        of 500
+      </label>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        301
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        302
+      </a>
+      
+
+        
+      <span
+        class="fd-pagination__more"
+        role="presentation"
+      />
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        500
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Next"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Last"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-forward"
+        />
+        
+        
+      </a>
+      
     
+    </nav>
     
+
+    
+    <div
+      class="fd-pagination__total"
+    >
+      
+        
+      <span
+        class="fd-form-label fd-pagination__total-label"
+      >
+        500 Results
+      </span>
+      
+    
+    </div>
+    
+
   </div>
   
 
-</div>
+
+  <h3>
+    &lt; 9 Pages
+  </h3>
+  
+
+
+  <div
+    class="fd-pagination fd-pagination--short"
+  >
+    
+    
+    <nav
+      class="fd-pagination__nav"
+    >
+      
+        
+      <a
+        aria-disabled="false"
+        aria-label="First"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-rewind"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Previous"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        1
+      </a>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active"
+        href="#"
+      >
+        2
+      </a>
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="middlePageInputShortPage"
+      >
+        Page:
+      </label>
+      
+
+        
+      <input
+        aria-labelledby="middlePageInputShortPage middlePageInputShortOf"
+        class="fd-input fd-input--compact fd-pagination__input"
+        max="3"
+        min="1"
+        required=""
+        type="number"
+        value="2"
+      />
+      
+
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="middlePageInputShortOf"
+      >
+        of 3
+      </label>
+      
+
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        3
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Next"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </a>
+      
+
+        
+      <a
+        aria-disabled="false"
+        aria-label="Last"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-forward"
+        />
+        
+        
+      </a>
+      
+    
+    </nav>
+    
+
+    
+    <div
+      class="fd-pagination__total"
+    >
+      
+        
+      <span
+        class="fd-form-label fd-pagination__total-label"
+      >
+        3 Results
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Pagination Mobile 1`] = `
@@ -1031,7 +1755,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       <label
         class="fd-form-label fd-pagination__label"
-        for="cozyPageInput"
+        id="cozyPageInputPage"
       >
         Page:
       </label>
@@ -1039,14 +1763,23 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
 
             
       <input
+        aria-labelledby="cozyPageInputPage cozyPageInputOf"
         class="fd-input fd-pagination__input"
-        id="cozyPageInput"
         max="500"
         min="1"
         required=""
         type="number"
         value="500"
       />
+      
+
+            
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="cozyPageInputOf"
+      >
+        of 500
+      </label>
       
 
             
@@ -1100,152 +1833,6 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
       
         
     </div>
-    
-    
-  </div>
-  
-
-</div>
-`;
-
-exports[`Storyshots Components/Pagination Multiple pages 1`] = `
-<div
-  class="fd-pagination"
->
-  
-    
-  <nav
-    class="fd-pagination__nav"
-  >
-    
-        
-    <a
-      aria-disabled="true"
-      aria-label="First"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-rewind"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="true"
-      aria-label="Previous"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-left-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <label
-      class="fd-form-label fd-pagination__label"
-      for="multiplePageInput"
-    >
-      Page:
-    </label>
-    
-
-        
-    <input
-      class="fd-input fd-input--compact fd-pagination__input"
-      id="multiplePageInput"
-      max="500"
-      min="1"
-      required=""
-      type="number"
-      value="1"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      2
-    </a>
-    
-
-        
-    <span
-      class="fd-pagination__more"
-      role="presentation"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      500
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Next"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-right-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Last"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-forward"
-      />
-      
-        
-    </a>
-    
-    
-  </nav>
-  
-
-    
-  <div
-    class="fd-pagination__total"
-  >
-    
-        
-    <span
-      class="fd-form-label fd-pagination__total-label"
-    >
-      500 Results
-    </span>
     
     
   </div>
@@ -1496,6 +2083,51 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
+        494
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        495
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        496
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        497
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
+        498
+      </a>
+      
+
+            
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        href="#"
+      >
         499
       </a>
       
@@ -1503,7 +2135,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
             
       <label
         class="fd-form-label fd-pagination__label"
-        for="perPageInput"
+        id="perPageInputPage"
       >
         Page:
       </label>
@@ -1511,14 +2143,23 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <input
+        aria-labelledby="perPageInputPage perPageInputOf"
         class="fd-input fd-input--compact fd-pagination__input"
-        id="perPageInput"
         max="500"
         min="1"
         required=""
         type="number"
         value="500"
       />
+      
+
+            
+      <label
+        class="fd-form-label fd-pagination__label"
+        id="perPageInputOf"
+      >
+        of 500
+      </label>
       
 
             
@@ -1572,145 +2213,6 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
       
         
     </div>
-    
-    
-  </div>
-  
-
-</div>
-`;
-
-exports[`Storyshots Components/Pagination Second page 1`] = `
-<div
-  class="fd-pagination"
->
-  
-    
-  <nav
-    class="fd-pagination__nav"
-  >
-    
-        
-    <a
-      aria-disabled="false"
-      aria-label="First"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-rewind"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Previous"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-left-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      1
-    </a>
-    
-
-        
-    <label
-      class="fd-form-label fd-pagination__label"
-      for="secondPageInput"
-    >
-      Page:
-    </label>
-    
-
-        
-    <input
-      class="fd-input fd-input--compact fd-pagination__input"
-      id="secondPageInput"
-      max="3"
-      min="1"
-      required=""
-      type="number"
-      value="2"
-    />
-    
-
-        
-    <a
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-      href="#"
-    >
-      3
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Next"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--navigation-right-arrow"
-      />
-      
-        
-    </a>
-    
-
-        
-    <a
-      aria-disabled="false"
-      aria-label="Last"
-      class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
-      href="#"
-    >
-      
-            
-      <i
-        class="sap-icon sap-icon--media-forward"
-      />
-      
-        
-    </a>
-    
-    
-  </nav>
-  
-
-    
-  <div
-    class="fd-pagination__total"
-  >
-    
-        
-    <span
-      class="fd-form-label fd-pagination__total-label"
-    >
-      3 Results
-    </span>
     
     
   </div>
