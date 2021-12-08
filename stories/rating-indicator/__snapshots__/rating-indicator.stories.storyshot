@@ -8,7 +8,6 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
     
   <div
     class="fd-rating-indicator fd-rating-indicator--icon"
-    style="--sapRating-indicator-icon-rated: url('./assets/icons/rated.png'); --sapRating-indicator-icon-unrated: url('./assets/icons/unrated.png')"
   >
     
         
@@ -17,6 +16,24 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
       class="fd-rating-indicator__container"
     >
       
+            
+      <input
+        aria-label="0 star"
+        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        id="rating-icon-0"
+        name="rating-icon"
+        type="radio"
+        value="0"
+      />
+      
+            
+      <label
+        aria-hidden="true"
+        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        for="rating-icon-0"
+      />
+      
+
             
       <input
         aria-label="1 star"
@@ -31,7 +48,20 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
       <label
         class="fd-rating-indicator__label"
         for="rating-icon-1"
-      />
+      >
+        
+                
+        <i
+          class="rated sap-icon--notification"
+        />
+        
+                
+        <i
+          class="unrated sap-icon--bo-strategy-management"
+        />
+        
+            
+      </label>
       
             
             
@@ -49,7 +79,20 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
       <label
         class="fd-rating-indicator__label"
         for="rating-icon-2"
-      />
+      >
+        
+                
+        <i
+          class="rated sap-icon--notification"
+        />
+        
+                
+        <i
+          class="unrated sap-icon--bo-strategy-management"
+        />
+        
+            
+      </label>
       
             
             
@@ -66,7 +109,20 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
       <label
         class="fd-rating-indicator__label"
         for="rating-icon-3"
-      />
+      >
+        
+                
+        <i
+          class="rated sap-icon--notification"
+        />
+        
+                
+        <i
+          class="unrated sap-icon--bo-strategy-management"
+        />
+        
+            
+      </label>
       
             
             
@@ -83,7 +139,20 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
       <label
         class="fd-rating-indicator__label"
         for="rating-icon-4"
-      />
+      >
+        
+                
+        <i
+          class="rated sap-icon--notification"
+        />
+        
+                
+        <i
+          class="unrated sap-icon--bo-strategy-management"
+        />
+        
+            
+      </label>
       
             
             
@@ -100,7 +169,20 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
       <label
         class="fd-rating-indicator__label"
         for="rating-icon-5"
-      />
+      >
+        
+                
+        <i
+          class="rated sap-icon--notification"
+        />
+        
+                
+        <i
+          class="unrated sap-icon--bo-strategy-management"
+        />
+        
+            
+      </label>
       
         
     </div>
@@ -136,6 +218,24 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
         class="fd-rating-indicator__container"
       >
         
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-max-value-5-0"
+          name="rating-max-value-5"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-max-value-5-0"
+        />
+        
+
                 
         <input
           aria-label="1 star"
@@ -254,6 +354,24 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
         class="fd-rating-indicator__container"
       >
         
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-max-value-6-0"
+          name="rating-max-value-6"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-max-value-6-0"
+        />
+        
+
                 
         <input
           aria-label="1 star"
@@ -389,6 +507,24 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
         class="fd-rating-indicator__container"
       >
         
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-max-value-7-0"
+          name="rating-max-value-7"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-max-value-7-0"
+        />
+        
+
                 
         <input
           aria-label="1 star"
@@ -547,6 +683,25 @@ exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
       
             
       <input
+        aria-label="0 star"
+        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        disabled=""
+        id="rating-disabled-0"
+        name="rating-disabled"
+        type="radio"
+        value="0"
+      />
+      
+            
+      <label
+        aria-hidden="true"
+        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        for="rating-disabled-0"
+      />
+      
+
+            
+      <input
         aria-label="1 star"
         class="fd-rating-indicator__input"
         disabled=""
@@ -670,6 +825,25 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
       
                 
       <input
+        aria-label="0 star"
+        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        disabled=""
+        id="rating-display-mode-0"
+        name="rating-display-mode"
+        type="radio"
+        value="0"
+      />
+      
+                
+      <label
+        aria-hidden="true"
+        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        for="rating-display-mode-0"
+      />
+      
+
+                
+      <input
         aria-label="1 star"
         class="fd-rating-indicator__input"
         disabled=""
@@ -776,206 +950,951 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
 `;
 
 exports[`Storyshots Components/Rating Indicator Half values 1`] = `
-<div
-  class="example-container"
->
-  
-    
+<section>
   <div
-    class="fd-rating-indicator fd-rating-indicator--half-star"
+    class="example-container"
   >
     
         
+    <span
+      style="min-width: 185px;"
+    >
+      Default:
+    </span>
+    
+        
     <div
-      aria-label="Star Rating (out of 5)"
-      class="fd-rating-indicator__container"
+      class="fd-rating-indicator fd-rating-indicator--half-star"
     >
       
             
-      <input
-        aria-label="half star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-05"
-        name="rating-half-sizes"
-        type="radio"
-        value="0.5"
-      />
+      <div
+        aria-label="Star Rating (out of 5)"
+        class="fd-rating-indicator__container"
+      >
+        
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-half-sizes-0"
+          name="rating-half-sizes"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-half-sizes-0"
+        />
+        
+
+                
+        <input
+          aria-label="half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-05"
+          name="rating-half-sizes"
+          type="radio"
+          value="0.5"
+        />
+          
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-05"
+        />
+        
+
+                
+        <input
+          aria-label="1 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-1"
+          name="rating-half-sizes"
+          type="radio"
+          value="1"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-1"
+        />
+        
+                
+                
+        <input
+          aria-label="1 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-15"
+          name="rating-half-sizes"
+          type="radio"
+          value="1.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-15"
+        />
+        
+                
+                
+        <input
+          aria-label="2 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-2"
+          name="rating-half-sizes"
+          type="radio"
+          value="2\\""
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-2"
+        />
+        
+                
+                
+        <input
+          aria-label="2 and half star"
+          checked=""
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-25"
+          name="rating-half-sizes"
+          type="radio"
+          value="2.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-25"
+        />
+        
+                
+                
+        <input
+          aria-label="3 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-3"
+          name="rating-half-sizes"
+          type="radio"
+          value="3"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-3"
+        />
+        
+                
+                
+        <input
+          aria-label="3 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-35"
+          name="rating-half-sizes"
+          type="radio"
+          value="3.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-35"
+        />
+        
+                
+                
+        <input
+          aria-label="4 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-4"
+          name="rating-half-sizes"
+          type="radio"
+          value="4"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-4"
+        />
+        
+                
+                
+        <input
+          aria-label="4 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-45"
+          name="rating-half-sizes"
+          type="radio"
+          value="4.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-45"
+        />
+        
+                
+                
+        <input
+          aria-label="5 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-5"
+          name="rating-half-sizes"
+          type="radio"
+          value="5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-5"
+        />
         
             
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-05"
-      />
-      
-
-            
-      <input
-        aria-label="1 star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-1"
-        name="rating-half-sizes"
-        type="radio"
-        value="1"
-      />
+      </div>
       
             
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-1"
-      />
-      
-            
-            
-      <input
-        aria-label="1 and half star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-15"
-        name="rating-half-sizes"
-        type="radio"
-        value="1.5"
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-15"
-      />
-      
-            
-            
-      <input
-        aria-label="2 star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-2"
-        name="rating-half-sizes"
-        type="radio"
-        value="2\\""
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-2"
-      />
-      
-            
-            
-      <input
-        aria-label="2 and half star"
-        checked=""
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-25"
-        name="rating-half-sizes"
-        type="radio"
-        value="2.5"
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-25"
-      />
-      
-            
-            
-      <input
-        aria-label="3 star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-3"
-        name="rating-half-sizes"
-        type="radio"
-        value="3"
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-3"
-      />
-      
-            
-            
-      <input
-        aria-label="3 and half star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-35"
-        name="rating-half-sizes"
-        type="radio"
-        value="3.5"
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-35"
-      />
-      
-            
-            
-      <input
-        aria-label="4 star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-4"
-        name="rating-half-sizes"
-        type="radio"
-        value="4"
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-4"
-      />
-      
-            
-            
-      <input
-        aria-label="4 and half star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-45"
-        name="rating-half-sizes"
-        type="radio"
-        value="4.5"
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-45"
-      />
-      
-            
-            
-      <input
-        aria-label="5 star"
-        class="fd-rating-indicator__input"
-        id="rating-half-sizes-5"
-        name="rating-half-sizes"
-        type="radio"
-        value="5"
-      />
-      
-            
-      <label
-        class="fd-rating-indicator__label"
-        for="rating-half-sizes-5"
-      />
+      <span
+        class="fd-rating-indicator__dynamic-text"
+      >
+        (2.5 of 5)
+      </span>
       
         
     </div>
-    
-        
-    <span
-      class="fd-rating-indicator__dynamic-text"
-    >
-      (2.5 of 5)
-    </span>
     
     
   </div>
   
 
-</div>
+    
+  <div
+    class="example-container"
+  >
+    
+        
+    <span
+      style="min-width: 185px;"
+    >
+      Custome icons:
+    </span>
+    
+        
+    <div
+      class="fd-rating-indicator fd-rating-indicator--half-star fd-rating-indicator--icon"
+    >
+      
+            
+      <div
+        aria-label="Star Rating (out of 5)"
+        class="fd-rating-indicator__container"
+      >
+        
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-half-sizes-custome-icons-0"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-0"
+        />
+        
+
+                
+        <input
+          aria-label="half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-05"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="0.5"
+        />
+          
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-05"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+
+                
+        <input
+          aria-label="1 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-1"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="1"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-1"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="1 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-15"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="1.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-15"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="2 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-2"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="2\\""
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-2"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="2 and half star"
+          checked=""
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-25"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="2.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-25"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="3 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-3"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="3"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-3"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="3 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-35"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="3.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-35"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="4 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-4"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="4"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-4"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="4 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-45"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="4.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-45"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="5 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-5"
+          name="rating-half-sizes-custome-icons"
+          type="radio"
+          value="5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-5"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+            
+      </div>
+      
+            
+      <span
+        class="fd-rating-indicator__dynamic-text"
+      >
+        (2.5 of 5)
+      </span>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+    
+  <div
+    class="example-container"
+  >
+    
+        
+    <span
+      style="min-width: 185px;"
+    >
+      Custome icons and size --lg:
+    </span>
+    
+        
+    <div
+      class="fd-rating-indicator fd-rating-indicator--half-star fd-rating-indicator--icon fd-rating-indicator--lg"
+    >
+      
+            
+      <div
+        aria-label="Star Rating (out of 5)"
+        class="fd-rating-indicator__container"
+      >
+        
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-half-sizes-custome-icons-lg-0"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-0"
+        />
+        
+
+                
+        <input
+          aria-label="half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-05"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="0.5"
+        />
+          
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-05"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+
+                
+        <input
+          aria-label="1 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-1"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="1"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-1"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="1 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-15"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="1.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-15"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="2 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-2"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="2\\""
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-2"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="2 and half star"
+          checked=""
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-25"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="2.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-25"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="3 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-3"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="3"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-3"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="3 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-35"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="3.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-35"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="4 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-4"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="4"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-4"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="4 and half star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-45"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="4.5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-45"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+                
+                
+        <input
+          aria-label="5 star"
+          class="fd-rating-indicator__input"
+          id="rating-half-sizes-custome-icons-lg-5"
+          name="rating-half-sizes-custome-icons-lg"
+          type="radio"
+          value="5"
+        />
+        
+                
+        <label
+          class="fd-rating-indicator__label"
+          for="rating-half-sizes-custome-icons-lg-5"
+        >
+          
+                    
+          <i
+            class="rated sap-icon--notification"
+          />
+          
+                    
+          <i
+            class="unrated sap-icon--bo-strategy-management"
+          />
+          
+                
+        </label>
+        
+            
+      </div>
+      
+            
+      <span
+        class="fd-rating-indicator__dynamic-text"
+      >
+        (2.5 of 5)
+      </span>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
 `;
 
 exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
@@ -994,6 +1913,25 @@ exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
       class="fd-rating-indicator__container"
     >
       
+                
+      <input
+        aria-label="0 star"
+        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        disabled=""
+        id="rating-non-interactive-mode-0"
+        name="rating-non-interactive-mode"
+        type="radio"
+        value="0"
+      />
+      
+                
+      <label
+        aria-hidden="true"
+        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        for="rating-non-interactive-mode-0"
+      />
+      
+
                 
       <input
         aria-label="1 star"
@@ -1127,6 +2065,24 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
         
                 
         <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-0"
+          name="rating"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-0"
+        />
+        
+
+                
+        <input
           aria-label="1 star"
           class="fd-rating-indicator__input"
           id="rating-1"
@@ -1250,6 +2206,24 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
         class="fd-rating-indicator__container"
       >
         
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-xs-0"
+          name="rating-xs"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-xs-0"
+        />
+        
+
                 
         <input
           aria-label="1 star"
@@ -1378,6 +2352,24 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
         
                 
         <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-s-0"
+          name="rating-s"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-s-0"
+        />
+        
+
+                
+        <input
           aria-label="1 star"
           class="fd-rating-indicator__input"
           id="rating-s-1"
@@ -1502,6 +2494,24 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
         class="fd-rating-indicator__container"
       >
         
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-l-0"
+          name="rating-l"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-l-0"
+        />
+        
+
                 
         <input
           aria-label="1 star"
@@ -1629,6 +2639,24 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
         
                 
         <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-cozy-0"
+          name="rating-cozy"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-cozy-0"
+        />
+        
+
+                
+        <input
           aria-label="1 star"
           class="fd-rating-indicator__input"
           id="rating-cozy-1"
@@ -1754,6 +2782,24 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
         
                 
         <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-compact-0"
+          name="rating-compact"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-compact-0"
+        />
+        
+
+                
+        <input
           aria-label="1 star"
           class="fd-rating-indicator__input"
           id="rating-compact-1"
@@ -1877,6 +2923,24 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
         class="fd-rating-indicator__container"
       >
         
+                
+        <input
+          aria-label="0 star"
+          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          id="rating-condensed-0"
+          name="rating-condensed"
+          type="radio"
+          value="0"
+        />
+        
+                
+        <label
+          aria-hidden="true"
+          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          for="rating-condensed-0"
+        />
+        
+
                 
         <input
           aria-label="1 star"
