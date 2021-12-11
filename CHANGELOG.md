@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.47...v0.21.0-rc.48) (2021-12-11)
+
+
+### Bug Fixes
+
+* **styles:** horizontal scroll remove in carousel [ci visual] ([#2904](https://github.com/SAP/fundamental-styles/issues/2904)) ([07b2e92](https://github.com/SAP/fundamental-styles/commit/07b2e928d4610c3f65b822d93b42d816572f9ab3))
+
 ## [0.21.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.46...v0.21.0-rc.47) (2021-12-11)
 
 
