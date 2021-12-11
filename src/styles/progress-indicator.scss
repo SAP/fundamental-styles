@@ -100,8 +100,9 @@ $fd-progress-indicator-states: (
 
     @include fd-set-padding-left(0.5rem);
 
-    line-height: 1;
     overflow: hidden;
+    white-space: normal;
+    max-width: 95vw;
   }
 
   &__overflow-close {
