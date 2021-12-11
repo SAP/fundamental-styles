@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.48...v0.21.0-rc.49) (2021-12-11)
+
+
+### Bug Fixes
+
+* **styles:** fix issues with progress indicator overflow text wrapping [ci visual] ([#2947](https://github.com/SAP/fundamental-styles/issues/2947)) ([c11fe06](https://github.com/SAP/fundamental-styles/commit/c11fe068f43b9b0e93435a90730160456bacb6a7))
+
 ## [0.21.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.47...v0.21.0-rc.48) (2021-12-11)
 
 
