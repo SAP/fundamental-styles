@@ -51,7 +51,8 @@ $block: #{$fd-namespace}-pagination;
   &__more,
   &__button,
   &__link,
-  &__input {
+  &__input,
+  &__label {
     @include fd-set-margins-x-equal(0.125rem);
   }
 
@@ -92,8 +93,6 @@ $block: #{$fd-namespace}-pagination;
 
   .#{$block}__label {
     display: none;
-
-    @include fd-set-margins-x-equal(0.125rem);
   }
 
   .#{$block}__button {
@@ -119,7 +118,13 @@ $block: #{$fd-namespace}-pagination;
   }
 }
 
-@media (max-width: 1024px) {
+@include fd-media-sm() {
+  .#{$block} {
+    @include fd-pagination-mobile();
+  }
+}
+
+@include fd-media-md() {
   .#{$block} {
     @include fd-pagination-mobile();
   }
