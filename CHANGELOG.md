@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.46...v0.21.0-rc.47) (2021-12-11)
+
+
+### Features
+
+* **fn:** introduce Generic Tag component ([#2984](https://github.com/SAP/fundamental-styles/issues/2984)) ([921e183](https://github.com/SAP/fundamental-styles/commit/921e1831c6f9b0caacbf63ccba60fe70f66e93e6))
+
 ## [0.21.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.45...v0.21.0-rc.46) (2021-12-10)
 
 ## [0.21.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.44...v0.21.0-rc.45) (2021-12-10)
