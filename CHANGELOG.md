@@ -1,4 +1,6 @@
 
+## [0.21.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.49...v0.21.0-rc.50) (2021-12-12)
+
 ## [0.21.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.48...v0.21.0-rc.49) (2021-12-11)
 
 
