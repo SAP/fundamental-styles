@@ -18,8 +18,8 @@ export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Default (Medium):</span>
         <div class="fd-rating-indicator fd-rating-indicator--hide-dynamic-text">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-0" name="rating" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-0" name="rating" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-1" name="rating" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-1"></label>
@@ -44,8 +44,8 @@ export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Extra small:</span>
         <div class="fd-rating-indicator fd-rating-indicator--xs">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-xs-0" name="rating-xs" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-xs-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-xs-0" name="rating-xs" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-xs-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-xs-1" name="rating-xs" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-xs-1"></label>
@@ -71,8 +71,8 @@ export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Small:</span>
         <div class="fd-rating-indicator fd-rating-indicator--sm">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-s-0" name="rating-s" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-s-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-s-0" name="rating-s" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-s-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-s-1" name="rating-s" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-s-1"></label>
@@ -98,8 +98,8 @@ export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Large:</span>
         <div class="fd-rating-indicator fd-rating-indicator--lg">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-l-0" name="rating-l" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-l-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-l-0" name="rating-l" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-l-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-l-1" name="rating-l" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-l-1"></label>
@@ -124,8 +124,8 @@ export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Cozy:</span>
         <div class="fd-rating-indicator fd-rating-indicator--cozy">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-cozy-0" name="rating-cozy" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-cozy-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-cozy-0" name="rating-cozy" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-cozy-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-cozy-1" name="rating-cozy" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-cozy-1"></label>
@@ -150,8 +150,8 @@ export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Compact:</span>
         <div class="fd-rating-indicator fd-rating-indicator--compact">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-compact-0" name="rating-compact" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-compact-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-compact-0" name="rating-compact" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-compact-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-compact-1" name="rating-compact" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-compact-1"></label>
@@ -176,8 +176,8 @@ export const Sizes = () => `<div class="example-container">
         <span style="min-width: 150px;">Condensed:</span>
         <div class="fd-rating-indicator fd-rating-indicator--condensed">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-condensed-0" name="rating-condensed" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-condensed-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-condensed-0" name="rating-condensed" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-condensed-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-condensed-1" name="rating-condensed" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-condensed-1"></label>
@@ -219,37 +219,37 @@ Sizes.parameters = {
 export const CustomIcons = () => `<div class="example-container">
     <div class="fd-rating-indicator fd-rating-indicator--icon">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-            <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-icon-0" name="rating-icon" value="0">
-            <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-icon-0" aria-hidden="true"></label>
+            <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-icon-0" name="rating-icon" value="0">
+            <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-icon-0" aria-hidden="true"></label>
 
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-1" name="rating-icon" value="1">
             <label class="fd-rating-indicator__label" for="rating-icon-1">
-                <i class="rated sap-icon--notification"></i>
-                <i class="unrated sap-icon--bo-strategy-management"></i>
+                <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
             </label>
             
             <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-2" name="rating-icon" value=2" checked>
             <label class="fd-rating-indicator__label" for="rating-icon-2">
-                <i class="rated sap-icon--notification"></i>
-                <i class="unrated sap-icon--bo-strategy-management"></i>
+                <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
             </label>
             
             <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-3" name="rating-icon" value="3">
             <label class="fd-rating-indicator__label" for="rating-icon-3">
-                <i class="rated sap-icon--notification"></i>
-                <i class="unrated sap-icon--bo-strategy-management"></i>
+                <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
             </label>
             
             <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-4" name="rating-icon" value="4">
             <label class="fd-rating-indicator__label" for="rating-icon-4">
-                <i class="rated sap-icon--notification"></i>
-                <i class="unrated sap-icon--bo-strategy-management"></i>
+                <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
             </label>
             
             <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-icon-5" name="rating-icon" value="5">
             <label class="fd-rating-indicator__label" for="rating-icon-5">
-                <i class="rated sap-icon--notification"></i>
-                <i class="unrated sap-icon--bo-strategy-management"></i>
+                <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
             </label>
         </div>
         <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
@@ -272,8 +272,8 @@ export const HalfValues = () => `<div class="example-container">
         <span style="min-width: 185px;">Default:</span>
         <div class="fd-rating-indicator fd-rating-indicator--half-star">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-half-sizes-0" name="rating-half-sizes" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-half-sizes-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-half-sizes-0" name="rating-half-sizes" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-half-sizes-0" aria-hidden="true"></label>
 
                 <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-05" name="rating-half-sizes" value="0.5">  
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-05"></label>
@@ -313,67 +313,67 @@ export const HalfValues = () => `<div class="example-container">
         <span style="min-width: 185px;">Custome icons:</span>
         <div class="fd-rating-indicator fd-rating-indicator--half-star fd-rating-indicator--icon">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-half-sizes-custome-icons-0" name="rating-half-sizes-custome-icons" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-half-sizes-custome-icons-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-half-sizes-custome-icons-0" name="rating-half-sizes-custome-icons" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-half-sizes-custome-icons-0" aria-hidden="true"></label>
 
                 <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-05" name="rating-half-sizes-custome-icons" value="0.5">  
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-05">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-1" name="rating-half-sizes-custome-icons" value="1">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-1">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="1 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-15" name="rating-half-sizes-custome-icons" value="1.5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-15">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-2" name="rating-half-sizes-custome-icons" value=2">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-2">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="2 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-25" name="rating-half-sizes-custome-icons" value="2.5" checked>
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-25">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-3" name="rating-half-sizes-custome-icons" value="3">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-3">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="3 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-35" name="rating-half-sizes-custome-icons" value="3.5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-35">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-4" name="rating-half-sizes-custome-icons" value="4">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-4">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="4 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-45" name="rating-half-sizes-custome-icons" value="4.5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-45">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-5" name="rating-half-sizes-custome-icons" value="5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-5">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
             </div>
             <span class="fd-rating-indicator__dynamic-text">(2.5 of 5)</span>
@@ -384,67 +384,67 @@ export const HalfValues = () => `<div class="example-container">
         <span style="min-width: 185px;">Custome icons and size --lg:</span>
         <div class="fd-rating-indicator fd-rating-indicator--half-star fd-rating-indicator--icon fd-rating-indicator--lg">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-half-sizes-custome-icons-lg-0" name="rating-half-sizes-custome-icons-lg" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-half-sizes-custome-icons-lg-0" name="rating-half-sizes-custome-icons-lg" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-half-sizes-custome-icons-lg-0" aria-hidden="true"></label>
 
                 <input aria-label="half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-05" name="rating-half-sizes-custome-icons-lg" value="0.5">  
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-05">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-1" name="rating-half-sizes-custome-icons-lg" value="1">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-1">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="1 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-15" name="rating-half-sizes-custome-icons-lg" value="1.5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-15">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-2" name="rating-half-sizes-custome-icons-lg" value=2">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-2">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="2 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-25" name="rating-half-sizes-custome-icons-lg" value="2.5" checked>
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-25">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-3" name="rating-half-sizes-custome-icons-lg" value="3">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-3">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="3 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-35" name="rating-half-sizes-custome-icons-lg" value="3.5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-35">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-4" name="rating-half-sizes-custome-icons-lg" value="4">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-4">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="4 and half star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-45" name="rating-half-sizes-custome-icons-lg" value="4.5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-45">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
                 
                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-half-sizes-custome-icons-lg-5" name="rating-half-sizes-custome-icons-lg" value="5">
                 <label class="fd-rating-indicator__label" for="rating-half-sizes-custome-icons-lg-5">
-                    <i class="rated sap-icon--notification"></i>
-                    <i class="unrated sap-icon--bo-strategy-management"></i>
+                    <i class="fd-rating-indicator__label-rated sap-icon--notification"></i>
+                    <i class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"></i>
                 </label>
             </div>
             <span class="fd-rating-indicator__dynamic-text">(2.5 of 5)</span>
@@ -465,8 +465,8 @@ modifier class together with the \`fd-rating-indicator\` class.
 export const Disabled = () => `<div class="example-container">
     <div class="fd-rating-indicator" aria-disabled="true">
         <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-            <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-disabled-0" name="rating-disabled" value="0" disabled>
-            <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-disabled-0" aria-hidden="true"></label>
+            <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-disabled-0" name="rating-disabled" value="0" disabled>
+            <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-disabled-0" aria-hidden="true"></label>
 
             <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-disabled-1" name="rating-disabled" value="1" disabled>  
             <label class="fd-rating-indicator__label" for="rating-disabled-1"></label>
@@ -504,8 +504,8 @@ Additionally, one of the selectors listed below needs to be added to the \`fd-ra
 export const DisplayMode = () => `<div class="example-container">
         <div class="fd-rating-indicator fd-rating-indicator--display-mode">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-display-mode-0" name="rating-display-mode" value="0" disabled>
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-display-mode-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-display-mode-0" name="rating-display-mode" value="0" disabled>
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-display-mode-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-display-mode-1" name="rating-display-mode" value="1" disabled>  
                 <label class="fd-rating-indicator__label" for="rating-display-mode-1"></label>
@@ -540,8 +540,8 @@ If you want to include a rating indicator in a display-only form, add the \`.fd-
 export const NonInteractive = () => `<div class="example-container">
         <div class="fd-rating-indicator fd-rating-indicator--non-interactive">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-non-interactive-mode-0" name="rating-non-interactive-mode" value="0" disabled>
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-non-interactive-mode-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-non-interactive-mode-0" name="rating-non-interactive-mode" value="0" disabled>
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-non-interactive-mode-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-non-interactive-mode-1" name="rating-non-interactive-mode" value="1" disabled>  
                 <label class="fd-rating-indicator__label" for="rating-non-interactive-mode-1"></label>
@@ -576,8 +576,8 @@ add the \`.fd-rating-indicator--non-interactive\` class to the \`fd-rating-indic
 export const DifferentValues = () => `<div class="example-container">
         <div class="fd-rating-indicator">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-max-value-5-0" name="rating-max-value-5" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-max-value-5-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-max-value-5-0" name="rating-max-value-5" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-max-value-5-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-1" name="rating-max-value-5" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-max-value-5-1"></label>
@@ -601,8 +601,8 @@ export const DifferentValues = () => `<div class="example-container">
     <div class="example-container">
         <div class="fd-rating-indicator">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-max-value-6-0" name="rating-max-value-6" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-max-value-6-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-max-value-6-0" name="rating-max-value-6" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-max-value-6-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-6-1" name="rating-max-value-6" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-max-value-6-1"></label>
@@ -629,8 +629,8 @@ export const DifferentValues = () => `<div class="example-container">
     <div class="example-container">
         <div class="fd-rating-indicator">
             <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
-                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__zero-rating" id="rating-max-value-7-0" name="rating-max-value-7" value="0">
-                <label class="fd-rating-indicator__zero-rating fd-rating-indicator__label" for="rating-max-value-7-0" aria-hidden="true"></label>
+                <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-max-value-7-0" name="rating-max-value-7" value="0">
+                <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-max-value-7-0" aria-hidden="true"></label>
 
                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-7-1" name="rating-max-value-7" value="1">  
                 <label class="fd-rating-indicator__label" for="rating-max-value-7-1"></label>

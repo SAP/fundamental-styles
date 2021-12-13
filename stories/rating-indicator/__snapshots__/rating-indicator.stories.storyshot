@@ -19,7 +19,7 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
             
       <input
         aria-label="0 star"
-        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
         id="rating-icon-0"
         name="rating-icon"
         type="radio"
@@ -29,7 +29,7 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
             
       <label
         aria-hidden="true"
-        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
         for="rating-icon-0"
       />
       
@@ -52,12 +52,12 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
         
                 
         <i
-          class="rated sap-icon--notification"
+          class="fd-rating-indicator__label-rated sap-icon--notification"
         />
         
                 
         <i
-          class="unrated sap-icon--bo-strategy-management"
+          class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
         />
         
             
@@ -83,12 +83,12 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
         
                 
         <i
-          class="rated sap-icon--notification"
+          class="fd-rating-indicator__label-rated sap-icon--notification"
         />
         
                 
         <i
-          class="unrated sap-icon--bo-strategy-management"
+          class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
         />
         
             
@@ -113,12 +113,12 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
         
                 
         <i
-          class="rated sap-icon--notification"
+          class="fd-rating-indicator__label-rated sap-icon--notification"
         />
         
                 
         <i
-          class="unrated sap-icon--bo-strategy-management"
+          class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
         />
         
             
@@ -143,12 +143,12 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
         
                 
         <i
-          class="rated sap-icon--notification"
+          class="fd-rating-indicator__label-rated sap-icon--notification"
         />
         
                 
         <i
-          class="unrated sap-icon--bo-strategy-management"
+          class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
         />
         
             
@@ -173,12 +173,12 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
         
                 
         <i
-          class="rated sap-icon--notification"
+          class="fd-rating-indicator__label-rated sap-icon--notification"
         />
         
                 
         <i
-          class="unrated sap-icon--bo-strategy-management"
+          class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
         />
         
             
@@ -221,7 +221,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-max-value-5-0"
           name="rating-max-value-5"
           type="radio"
@@ -231,7 +231,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-max-value-5-0"
         />
         
@@ -357,7 +357,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-max-value-6-0"
           name="rating-max-value-6"
           type="radio"
@@ -367,7 +367,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-max-value-6-0"
         />
         
@@ -510,7 +510,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-max-value-7-0"
           name="rating-max-value-7"
           type="radio"
@@ -520,7 +520,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-max-value-7-0"
         />
         
@@ -684,7 +684,7 @@ exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
             
       <input
         aria-label="0 star"
-        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
         disabled=""
         id="rating-disabled-0"
         name="rating-disabled"
@@ -695,7 +695,7 @@ exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
             
       <label
         aria-hidden="true"
-        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
         for="rating-disabled-0"
       />
       
@@ -826,7 +826,7 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
                 
       <input
         aria-label="0 star"
-        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
         disabled=""
         id="rating-display-mode-0"
         name="rating-display-mode"
@@ -837,7 +837,7 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
                 
       <label
         aria-hidden="true"
-        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
         for="rating-display-mode-0"
       />
       
@@ -976,7 +976,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-half-sizes-0"
           name="rating-half-sizes"
           type="radio"
@@ -986,7 +986,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-half-sizes-0"
         />
         
@@ -1204,7 +1204,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-half-sizes-custome-icons-0"
           name="rating-half-sizes-custome-icons"
           type="radio"
@@ -1214,7 +1214,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-half-sizes-custome-icons-0"
         />
         
@@ -1237,12 +1237,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1267,12 +1267,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1297,12 +1297,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1327,12 +1327,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1358,12 +1358,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1388,12 +1388,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1418,12 +1418,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1448,12 +1448,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1478,12 +1478,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1508,12 +1508,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1562,7 +1562,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-half-sizes-custome-icons-lg-0"
           name="rating-half-sizes-custome-icons-lg"
           type="radio"
@@ -1572,7 +1572,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-half-sizes-custome-icons-lg-0"
         />
         
@@ -1595,12 +1595,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1625,12 +1625,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1655,12 +1655,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1685,12 +1685,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1716,12 +1716,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1746,12 +1746,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1776,12 +1776,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1806,12 +1806,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1836,12 +1836,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1866,12 +1866,12 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           
                     
           <i
-            class="rated sap-icon--notification"
+            class="fd-rating-indicator__label-rated sap-icon--notification"
           />
           
                     
           <i
-            class="unrated sap-icon--bo-strategy-management"
+            class="fd-rating-indicator__label-unrated sap-icon--bo-strategy-management"
           />
           
                 
@@ -1916,7 +1916,7 @@ exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
                 
       <input
         aria-label="0 star"
-        class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+        class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
         disabled=""
         id="rating-non-interactive-mode-0"
         name="rating-non-interactive-mode"
@@ -1927,7 +1927,7 @@ exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
                 
       <label
         aria-hidden="true"
-        class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+        class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
         for="rating-non-interactive-mode-0"
       />
       
@@ -2066,7 +2066,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-0"
           name="rating"
           type="radio"
@@ -2076,7 +2076,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-0"
         />
         
@@ -2209,7 +2209,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-xs-0"
           name="rating-xs"
           type="radio"
@@ -2219,7 +2219,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-xs-0"
         />
         
@@ -2353,7 +2353,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-s-0"
           name="rating-s"
           type="radio"
@@ -2363,7 +2363,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-s-0"
         />
         
@@ -2497,7 +2497,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-l-0"
           name="rating-l"
           type="radio"
@@ -2507,7 +2507,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-l-0"
         />
         
@@ -2640,7 +2640,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-cozy-0"
           name="rating-cozy"
           type="radio"
@@ -2650,7 +2650,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-cozy-0"
         />
         
@@ -2783,7 +2783,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-compact-0"
           name="rating-compact"
           type="radio"
@@ -2793,7 +2793,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-compact-0"
         />
         
@@ -2926,7 +2926,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <input
           aria-label="0 star"
-          class="fd-rating-indicator__input fd-rating-indicator__zero-rating"
+          class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating"
           id="rating-condensed-0"
           name="rating-condensed"
           type="radio"
@@ -2936,7 +2936,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
                 
         <label
           aria-hidden="true"
-          class="fd-rating-indicator__zero-rating fd-rating-indicator__label"
+          class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating"
           for="rating-condensed-0"
         />
         

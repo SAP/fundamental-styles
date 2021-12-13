@@ -20,39 +20,41 @@ $block: #{$fd-namespace}-rating-indicator;
   $fd-rating-indicator-dynamic-text-space: 0.5rem;
 
   @mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
-    .#{$block}__input {
-      width: $iconFontSize / 2;
-      height: $iconFontSize;
-    }
+    .#{$block} {
+      &__input {
+        width: $iconFontSize * 0.5;
+        height: $iconFontSize;
+      }
 
-    .#{$block}__label {
-      margin-right: 0;
+      &__label {
+        margin-right: 0;
 
-      &:nth-child(4n+6) {
-        margin-right: $spacingBetweenIcons;
-        flex-direction: row-reverse;
+        &:nth-child(4n+6) {
+          margin-right: $spacingBetweenIcons;
+          flex-direction: row-reverse;
 
-        @include fd-rtl() {
-          margin-right: 0;
-          margin-left: $spacingBetweenIcons;
+          @include fd-rtl() {
+            margin-right: 0;
+            margin-left: $spacingBetweenIcons;
 
-          &:last-child {
-            margin-left: 0;
+            &:last-child {
+              margin-left: 0;
+            }
           }
         }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        overflow: hidden;
+        width: $iconFontSize * 0.5;
       }
 
-      &:last-child {
-        margin-right: 0;
-      }
-
-      overflow: hidden;
-      width: $iconFontSize / 2;
-    }
-
-    &.#{$block}--icon {
-      .#{$block}__label {
-        width: $iconFontSize / 2;
+      &--icon {
+        .#{$block}__label {
+          width: $iconFontSize * 0.5;
+        }
       }
     }
   }
@@ -187,7 +189,7 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &.#{$block}--display-mode {
+  &--display-mode {
     .#{$block}__label {
       margin-right: 0.125rem;
 
@@ -203,8 +205,8 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &.#{$block}--non-interactive,
-  &.#{$block}--display-mode {
+  &--non-interactive,
+  &--display-mode {
     pointer-events: none;
 
     @include fd-rating-indicator-labels-after-checked() {
@@ -214,19 +216,7 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &.#{$block}--half-star {
-    @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
-  }
-
-  .#{$block}__label.#{$block}__zero-rating {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-    opacity: 0.0001 !important;
-  }
-
-  &.#{$block}--icon {
+  &--icon {
     .#{$block}__label {
       &::after,
       &::before {
@@ -236,25 +226,27 @@ $block: #{$fd-namespace}-rating-indicator;
       width: $fd-rating-indicator-default-font-size;
       height: $fd-rating-indicator-default-font-size;
 
-      .rated,
-      .unrated {
+      &-rated,
+      &-unrated {
         font-size: $fd-rating-indicator-default-font-size;
         height: 100%;
-        line-height: 100%;
+        line-height: 1;
       }
 
-      .unrated {
+      &-unrated {
         display: none;
       }
     }
 
     @include fd-rating-indicator-labels-after-checked() {
-      .rated {
-        display: none;
-      }
+      .#{$block}__label {
+        &-rated {
+          display: none;
+        }
 
-      .unrated {
-        display: block;
+        &-unrated {
+          display: block;
+        }
       }
     }
   }
@@ -286,7 +278,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
         &::before {
           font-size: $fd-rating-indicator-sizes-font-size;
-          line-height: $fd-rating-indicator-sizes-font-size;
+          line-height: 1;
         }
 
         &:last-child {
@@ -300,21 +292,38 @@ $block: #{$fd-namespace}-rating-indicator;
         }
       }
 
-      &.#{$block}--half-star {
-        @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
-      }
-
       &.#{$block}--icon {
         .#{$block}__label {
           width: $fd-rating-indicator-sizes-font-size;
           height: $fd-rating-indicator-sizes-font-size;
 
-          .rated,
-          .unrated {
+          &-rated,
+          &-unrated {
             font-size: $fd-rating-indicator-sizes-font-size;
           }
         }
       }
+
+      &.#{$block}--half-star {
+        @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
+      }
+    }
+  }
+
+  &--half-star {
+    @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
+  }
+
+  &[class*='#{$block}--'] &__input,
+  &[class*='#{$block}--'] &__label,
+  &__input,
+  &__label {
+    &--zero-rating {
+      padding: 0;
+      margin: 0;
+      width: 0;
+      overflow: hidden;
+      opacity: 0.0001;
     }
   }
 }
