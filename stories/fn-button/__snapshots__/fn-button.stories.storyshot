@@ -418,6 +418,208 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
 </section>
 `;
 
+exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Nested Button
+      </b>
+    </div>
+     
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="nested button"
+      class="fn-nested-button"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="hovered nested button"
+      class="fn-nested-button is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :active
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="active nested button"
+      class="fn-nested-button is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="focused nested button"
+      class="fn-nested-button is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+    
+    
+    <button
+      aria-label="disabled nested button"
+      class="fn-nested-button is-disabled"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
 exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
 <section>
   

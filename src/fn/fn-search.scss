@@ -1,9 +1,16 @@
 @import "./fn-settings";
 
 $block: #{$fn-namespace}-search;
-$fn-search-button-size: 1.5rem;
-$fn-search-icon-size: 1.125rem;
-$fn-search-clear-button-size: 0.625rem;
+
+@mixin fn-search-active-focus-state() {
+  outline: none;
+  background: $fn-color-white;
+  box-shadow: $fn-focus-outline-shadow-blue;
+
+  &::placeholder {
+    color: transparent;
+  }
+}
 
 .#{$block} {
   @include fn-reset();
@@ -17,145 +24,73 @@ $fn-search-clear-button-size: 0.625rem;
   height: $fn-element-height;
   border-radius: $fn-border-radius-large;
 
-  @include fn-hover() {
-    .#{$block}__input {
-      background: $fn-color-base-white;
-      box-shadow: $fn-shadow-grey-medium;
-
-      @include fn-focus() {
-        outline: none;
-        background: $fn-color-base-white;
-        box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow-blue;
-      }
-    }
+  @include fn-disabled() {
+    pointer-events: none;
+    opacity: $fn-disabled-opacity;
   }
 
   &__input {
+    @include fn-ellipsis();
     @include fn-transition();
-    @include fn-set-paddings-x(2.5rem, 3.75rem);
-    @include fn-set-paddings-y-equal($fn-padding-xs);
+    @include fn-set-paddings-x(2rem, 1.625rem);
+    @include fn-set-paddings-y-equal(0.3125rem);
 
     z-index: 1;
     width: 100%;
     border: none;
-    color: $fn-color-grey-8;
+    color: $fn-color-grey-700;
     height: $fn-element-height;
-    background: $fn-color-grey-1;
-    caret-color: $fn-color-grey-8;
+    background: $fn-color-grey-50;
+    caret-color: $fn-color-grey-700;
     border-radius: $fn-border-radius-large;
 
     &::placeholder {
-      color: $fn-color-grey-5;
-      font-size: $fn-element-font-size;
-      line-height: $fn-element-line-height;
+      color: $fn-input-placeholder-color;
+      font-size: $fn-input-placeholder-font-size;
+      line-height: $fn-input-placeholder-line-height;
     }
 
-    &::-webkit-search-cancel-button {
-      display: none;
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      -webkit-appearance: none;
     }
 
-    &:not(:placeholder-shown) {
-      & ~ .#{$block}__button {
-        display: none;
+    @include fn-hover() {
+      background: $fn-color-white;
+      box-shadow: $fn-shadow-grey-level-1;
+
+      @include fn-focus() {
+        @include fn-search-active-focus-state();
       }
-
-      & ~ .#{$block}__clear {
-        @include fn-set-position-right(0.5rem);
-
-        display: flex;
-      }
-    }
-
-    @include fn-pressed() {
-      box-shadow: $fn-shadow-grey-xs;
-      background: $fn-color-base-white;
     }
 
     @include fn-active() {
-      box-shadow: $fn-shadow-grey-xs;
-      background: $fn-color-base-white;
+      @include fn-search-active-focus-state();
     }
 
     @include fn-focus() {
-      outline: none;
-      background: $fn-color-base-white;
-      box-shadow: $fn-shadow-blue-medium, $fn-focus-outline-shadow-blue;
-
-      &:not(:placeholder-shown) {
-        & ~ .#{$block}__button {
-          display: flex;
-          background: $fn-color-blue-5;
-
-          [class*='sap-icon'] {
-            color: $fn-color-base-white;
-          }
-        }
-
-        & ~ .#{$block}__clear {
-          @include fn-set-position-right(2.25rem);
-        }
-      }
+      @include fn-search-active-focus-state();
     }
   }
 
-  &__button {
-    @include fn-reset();
+  [class*='sap-icon'] {
     @include fn-flex-center();
-    @include fn-set-position-right(0.25rem);
-
-    right: 4px;
-    z-index: 10;
-    cursor: pointer;
-    border-radius: 50%;
-    position: absolute;
-    background: transparent;
-    width: $fn-search-button-size;
-    height: $fn-search-button-size;
-
-    [class*='sap-icon'] {
-      line-height: 1;
-      font-size: 0.625rem;
-      color: $fn-color-grey-5;
-    }
-
-    @include fn-focus() {
-      outline: none;
-    }
-  }
-
-  &__clear {
-    @include fn-reset();
-    @include fn-flex-center();
+    @include fn-set-square(1.125rem);
     @include fn-set-position-right(0.25rem);
 
     z-index: 10;
-    display: none;
-    cursor: pointer;
+    line-height: 1;
+    font-size: 0.5rem;
     position: absolute;
-    border-radius: 50%;
-    background: transparent;
-    width: $fn-search-button-size;
-    height: $fn-search-button-size;
+    color: $fn-color-grey-500;
 
-    [class*='sap-icon'] {
-      line-height: 1;
-      font-size: 0.625rem;
-      color: $fn-color-grey-5;
-    }
-  }
+    &:first-child {
+      @include fn-set-square(1.25rem);
+      @include fn-set-position-left(0.5rem);
 
-  &__icon {
-    @include fn-set-position-left(0.75rem);
-
-    z-index: 10;
-    position: absolute;
-    width: $fn-search-icon-size;
-    height: $fn-search-icon-size;
-
-    &[class*='sap-icon'] {
-      line-height: 1;
-      color: $fn-color-grey-5;
-      font-size: $fn-search-icon-size;
+      font-size: 0.9375rem;
     }
   }
 }

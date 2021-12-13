@@ -4,57 +4,90 @@ export default {
         description: `
 
         `,
-        components: ['fn-input', 'fn-select', 'icon']
+        components: ['fn-input', 'fn-nested-button', 'fn-select', 'icon']
     }
 };
 
 const localStyles = `
 <style>
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        height: 600px;
+        padding: 1rem;
+        align-items: center;
     }
 </style>
 `;
 
 export const defaultInput = () => `${localStyles}
 <div class="docs-fn-container">
-
-<div class="fn-select">
-    <div class="fn-text-field">
-        <label class="fn-text-field__label" for="field-1">Standard Selector</label>
-        <div class="fn-text-field__input-container">
-            <input class="fn-text-field__input fn-select__input" type="text" id="field-1" placeholder="Select an option" readonly />
-            <div class="fn-text-field__input-border"></div>
-            <span class="sap-icon sap-icon--navigation-down-arrow"></span>
-        </div>
+    <div><b>normal</b></div>
+    <div class="fn-input fn-input--select" tabindex="0">
+        <input class="fn-input__text-field" type="text" id="field-1" placeholder="Placeholder" tabindex="-1" />
+        <div class="fn-input__border"></div>
+        <button class="fn-nested-button" aria-label="nested button" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
     </div>
-    <ul class="fn-select__menu" role="listbox" aria-label="Select menu">
-        <li class="fn-select__item" role="option" tabindex="0">Option</li>
-        <li class="fn-select__item fn-select__item--selected" role="option" tabindex="0">Selected</li>
-        <li class="fn-select__item" role="option" tabindex="0">Option</li>
-        <li class="fn-select__item" role="option" tabindex="0">Option</li>
-    </ul>
 </div>
 
-<div style="margin-bottom: 15rem;"></div>
-<div class="fn-select">
-    <div class="fn-text-field">
-        <label class="fn-text-field__label" for="field-2">Editable Selector</label>
-        <div class="fn-text-field__input-container">
-            <input class="fn-text-field__input fn-select__input" type="text" id="field-2" placeholder="Select an option" />
-            <div class="fn-text-field__input-border"></div>
-            <span class="sap-icon sap-icon--navigation-down-arrow"></span>
-        </div>
+<div class="docs-fn-container">
+    <div><b>hover</b></div>
+    <div class="fn-input fn-input--select is-hover" tabindex="0">
+        <input class="fn-input__text-field" type="text" id="field-2" placeholder="Placeholder" tabindex="-1" />
+        <div class="fn-input__border"></div>
+        <button class="fn-nested-button" aria-label="nested button" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
     </div>
-    <ul class="fn-select__menu" role="listbox" aria-label="Select menu">
-        <li class="fn-select__item" role="option" tabindex="0">Option</li>
-        <li class="fn-select__item fn-select__item--selected" role="option" tabindex="0">Selected</li>
-        <li class="fn-select__item" role="option" tabindex="0">Option</li>
-        <li class="fn-select__item" role="option" tabindex="0">Option</li>
-    </ul>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>active</b></div>
+    <div class="fn-input fn-input--select is-active" tabindex="0">
+        <input class="fn-input__text-field" type="text" id="field-3" placeholder="Placeholder" tabindex="-1" />
+        <div class="fn-input__border"></div>
+        <button class="fn-nested-button" aria-label="nested button" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>focus</b></div>
+    <div class="fn-input fn-input--select is-focus" tabindex="0">
+        <input class="fn-input__text-field" type="text" id="field-4" placeholder="Placeholder" tabindex="-1" />
+        <div class="fn-input__border"></div>
+        <button class="fn-nested-button" aria-label="nested button" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>disabled</b></div>
+    <div class="fn-input fn-input--select is-disabled" tabindex="-1">
+        <input class="fn-input__text-field" type="text" id="field-5" placeholder="Placeholder" tabindex="-1" disabled />
+        <div class="fn-input__border"></div>
+        <button class="fn-nested-button" aria-label="nested button" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+</div>
+
+
+<div class="docs-fn-container">
+    <div><b>display</b></div>
+    <div class="fn-input fn-input--select is-display" tabindex="0">
+        <input class="fn-input__text-field" type="text" id="field-6" placeholder="Placeholder" tabindex="-1" />
+        <div class="fn-input__border"></div>
+        <button class="fn-nested-button" aria-label="nested button" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
 </div>
 `;
 
