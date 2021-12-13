@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.51...v0.21.0-rc.52) (2021-12-13)
+
+
+### Bug Fixes
+
+* **fn:** refactor Input fields to latest FN design ([#2960](https://github.com/SAP/fundamental-styles/issues/2960)) ([62148ed](https://github.com/SAP/fundamental-styles/commit/62148edc5ec32856852697cbbd23eece768ecd52))
+
 ## [0.21.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.50...v0.21.0-rc.51) (2021-12-12)
 
 ## [0.21.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.49...v0.21.0-rc.50) (2021-12-12)
