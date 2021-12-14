@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.53...v0.21.0-rc.54) (2021-12-14)
+
+
+### Bug Fixes
+
+* **styles:** rating-indicator styles [ci visual] ([#2972](https://github.com/SAP/fundamental-styles/issues/2972)) ([dcaad15](https://github.com/SAP/fundamental-styles/commit/dcaad15e6612648544e97a25d5d2c9e86b023860))
+
 ## [0.21.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.52...v0.21.0-rc.53) (2021-12-14)
 
 
