@@ -1,0 +1,47 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-link;
+
+.#{$block} {
+  @include fn-reset();
+
+  color: $fn-color-blue-500;
+  text-decoration: none;
+  padding-left: 0.1875rem;
+  padding-right: 0.1875rem;
+  border-radius: 0.125rem;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+
+  @include fn-hover() {
+    text-decoration: underline;
+  }
+
+  @include fn-is-focus() {
+    text-decoration: none;
+    box-shadow: $fn-focus-outline-shadow-blue, $fn-focus-outline-inner-shadow;
+  }
+
+  @include fn-not-focus-visible() {
+    text-decoration: none;
+  }
+
+  @include fn-focus-visible() {
+    text-decoration: none;
+    box-shadow: $fn-focus-outline-shadow-blue, $fn-focus-outline-inner-shadow;
+  }
+
+  @include fn-active() {
+    text-decoration: underline;
+  }
+
+  @include fn-disabled() {
+    pointer-events: none;
+    opacity: $fn-disabled-opacity;
+  }
+
+  &--emphasized {
+    font-weight: bold;
+  }
+}
