@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.52...v0.21.0-rc.53) (2021-12-14)
+
+
+### Features
+
+* **fn:** introduce dialog, message-box, link, title [ci visual] ([#2959](https://github.com/SAP/fundamental-styles/issues/2959)) ([2a56341](https://github.com/SAP/fundamental-styles/commit/2a5634187c07c157deaeabdab360a24e41e85c9f))
+
 ## [0.21.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.51...v0.21.0-rc.52) (2021-12-13)
 
 
