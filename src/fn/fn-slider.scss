@@ -2,94 +2,97 @@
 
 $block: #{$fn-namespace}-slider;
 $tag-border-width: 0.125rem;
-$slider-handle-width: 2rem;
-$slider-handle-height: 1.5rem;
-$slider-dot-size: 0.5rem;
-$slider-height: 0.25rem;
-$slider-handle-wrapper-offset: ($slider-handle-width / 2) - $fn-margin-xs - $slider-dot-size;
+$slider-handle-width: 2.25rem;
+$slider-handle-height: 1.625rem;
+$slider-dot-size: 0.25rem;
+$slider-height: 0.5rem;
+
+@mixin fn-slider-dot() {
+  @include fn-reset();
+
+  content: '';
+  z-index: 1;
+  top: 0.125rem;
+  left: 0.125rem;
+  position: absolute;
+  border-radius: 50%;
+  width: $slider-dot-size;
+  height: $slider-dot-size;
+  background: $fn-color-grey-500;
+
+  @content;
+}
 
 .#{$block} {
   @include fn-reset();
-  @include fn-flex-vertical-center();
 
   width: 100%;
   position: relative;
+  height: $slider-height;
+  background: $fn-color-grey-100;
+  border-radius: $fn-border-radius-4;
 
-  &__dot {
-    @include fn-reset();
+  &::after {
+    @include fn-slider-dot();
+  }
 
-    width: $slider-dot-size;
-    height: $slider-dot-size;
-    border-radius: 50%;
-    background: $fn-color-grey-4;
-
-    &--active {
-      background: $fn-color-blue-4;
+  &::before {
+    @include fn-slider-dot() {
+      left: auto;
+      right: 0.125rem;
     }
+  }
+
+  @include fn-disabled() {
+    pointer-events: none;
+    opacity: $fn-disabled-opacity;
   }
 
   &__track {
     @include fn-reset();
 
-    width: 100%;
-    height: $slider-height;
-    position: relative;
-    margin: 0 $fn-margin-xs;
-    background: $fn-color-grey-2;
-    border-radius: $fn-border-radius-xs;
+    top: -0.5625rem;
+    position: absolute;
+    height: $slider-handle-height;
+    border-radius: $fn-border-radius-6;
   }
 
   &__track-range {
     @include fn-reset();
+    @include fn-set-position-left(0);
 
-    top: 0;
-    left: 0;
-    height: 0.25rem;
-    position: absolute;
-    background: $fn-color-blue-4;
-    border-radius: $fn-border-radius-xs;
-    z-index: 1;
-  }
-
-  &__handle-wrapper {
-    @include fn-reset();
-    @include fn-flex-vertical-center();
-
-    position: absolute;
-    top: 0;
-    left: $slider-handle-wrapper-offset;
-    right: $slider-handle-wrapper-offset;
-    bottom: 0;
     z-index: 2;
+    width: 100%;
+    top: 0.4375rem;
+    height: 0.75rem;
+    position: absolute;
+    background: $fn-color-blue-500;
+    border-radius: $fn-border-radius-6;
   }
 
   &__handle {
     @include fn-reset();
     @include fn-transition(box-shadow);
+    @include fn-flex-vertical-center();
+    @include fn-set-position-left(100%);
 
-    @include fn-flex() {
-      justify-content: space-between;
-    }
-
-    width: $slider-handle-width;
-    height: $slider-handle-height;
+    z-index: 3;
     cursor: pointer;
     padding: 0.5rem;
     position: absolute;
+    background: $fn-color-white;
+    width: $slider-handle-width;
     transform: translateX(-50%);
-    background: $fn-color-base-white;
-    box-shadow: $fn-shadow-blue-small;
-    border-radius: $fn-border-radius-small;
+    height: $slider-handle-height;
+    border-radius: $fn-border-radius-6;
+    box-shadow: $fn-shadow-blue-level-0;
 
     [class*='sap-icon'] {
-      top: 0.125rem;
-      position: absolute;
-      color: $fn-color-blue-5;
+      font-size: 0.75rem;
+      color: $fn-color-blue-500;
     }
 
     [class*='sap-icon']:first-child {
-      @include fn-set-position-left(0.3125rem);
-
       transform: rotate(90deg);
 
       @include fn-rtl() {
@@ -98,13 +101,22 @@ $slider-handle-wrapper-offset: ($slider-handle-width / 2) - $fn-margin-xs - $sli
     }
 
     [class*='sap-icon']:last-child {
-      @include fn-set-position-right(0.3125rem);
-
+      margin-left: 0.375rem;
       transform: rotate(-90deg);
 
       @include fn-rtl() {
+        margin-left: auto;
+        margin-right: 0.375rem;
         transform: rotate(90deg);
       }
+    }
+
+    &[aria-valuenow="0"] {
+      transform: translateX(0);
+    }
+
+    &[aria-valuenow="100"] {
+      transform: translateX(-100%);
     }
 
     @include fn-focus() {
@@ -112,50 +124,42 @@ $slider-handle-wrapper-offset: ($slider-handle-width / 2) - $fn-margin-xs - $sli
     }
 
     @include fn-hover() {
-      box-shadow: $fn-shadow-blue-medium;
-    }
+      box-shadow: $fn-shadow-blue-level-1;
 
-    @include fn-pressed() {
-      box-shadow: $fn-shadow-blue-xs;
+      @include fn-active() {
+        box-shadow: $fn-shadow-blue-level-0;
+      }
     }
 
     @include fn-active() {
-      box-shadow: $fn-shadow-blue-xs;
+      box-shadow: $fn-shadow-blue-level-0;
+    }
+
+    @include fn-is-focus() {
+      box-shadow: $fn-focus-outline-shadow-blue;
+    }
+
+    @include fn-not-focus-visible() {
+      box-shadow: $fn-shadow-blue-level-0;
+
+      @include fn-hover() {
+        box-shadow: $fn-shadow-blue-level-1;
+
+        @include fn-active() {
+          box-shadow: $fn-shadow-blue-level-0;
+        }
+      }
+    }
+
+    @include fn-focus-visible() {
+      box-shadow: $fn-focus-outline-shadow-blue;
     }
   }
 
-  &--vertical {
-    flex-direction: column-reverse;
-    height: 100%;
-
-    .#{$block} {
-      &__track {
-        @include fn-reset();
-
-        width: $slider-height;
-        height: 100%;
-        position: relative;
-        margin: $fn-margin-xs 0;
-      }
-
-      &__handle-wrapper {
-        top: $slider-handle-wrapper-offset;
-        left: 0;
-        right: 0;
-        bottom: $slider-handle-wrapper-offset;
-        justify-content: center;
-      }
-
-      &__track-range {
-        bottom: 0;
-        top: auto;
-        height: 0;
-        width: $slider-height;
-      }
-
-      &__handle {
-        transform: translateY(50%) rotate(90deg);
-        box-shadow: $fn-shadow-blue-small-horizontal;
+  &--range {
+    .#{$block}__handle {
+      &:first-child {
+        @include fn-set-position-left(0);
       }
     }
   }
