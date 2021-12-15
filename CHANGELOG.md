@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.54...v0.21.0-rc.55) (2021-12-15)
+
+
+### Features
+
+* **fn:** refactor Slider and introduce Progress Bar ([#2983](https://github.com/SAP/fundamental-styles/issues/2983)) ([0c69840](https://github.com/SAP/fundamental-styles/commit/0c698401272477c461f51c803bae69fd738074e9))
+
 ## [0.21.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.53...v0.21.0-rc.54) (2021-12-14)
 
 
