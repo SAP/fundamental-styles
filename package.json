@@ -69,7 +69,7 @@
     "@storybook/addon-toolbars": "6.4.9",
     "@storybook/addon-viewport": "6.4.9",
     "@storybook/addons": "6.4.9",
-    "@storybook/html": "6.3.12",
+    "@storybook/html": "6.4.9",
     "@storybook/preset-scss": "^1.0.3",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.1.0",
