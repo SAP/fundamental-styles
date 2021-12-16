@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.55...v0.21.0-rc.56) (2021-12-16)
+
+
+### Bug Fixes
+
+* **fn:** add fix for Link states and docs improvements for Title ([#2998](https://github.com/SAP/fundamental-styles/issues/2998)) ([cfde7ef](https://github.com/SAP/fundamental-styles/commit/cfde7efca5c0e967ac97f841ceb6a6b44c64c43c))
+
 ## [0.21.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.54...v0.21.0-rc.55) (2021-12-15)
 
 
