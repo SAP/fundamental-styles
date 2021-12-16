@@ -4,32 +4,41 @@ $block: #{$fn-namespace}-link;
 
 .#{$block} {
   @include fn-reset();
+  @include fn-set-paddings-x-equal(0.1875rem);
 
-  color: $fn-color-blue-500;
-  text-decoration: none;
-  padding-left: 0.1875rem;
-  padding-right: 0.1875rem;
-  border-radius: 0.125rem;
   width: fit-content;
   height: fit-content;
   display: inline-block;
+  text-decoration: none;
+  color: $fn-color-blue-500;
+  border-radius: $fn-border-radius-2;
 
   @include fn-hover() {
     text-decoration: underline;
   }
 
   @include fn-is-focus() {
+    outline: none;
     text-decoration: none;
-    box-shadow: $fn-focus-outline-shadow-blue, $fn-focus-outline-inner-shadow;
+    box-shadow: $fn-focus-outline-shadow-blue;
   }
 
   @include fn-not-focus-visible() {
     text-decoration: none;
+
+    @include fn-hover() {
+      text-decoration: underline;
+    }
+
+    @include fn-active() {
+      text-decoration: underline;
+    }
   }
 
   @include fn-focus-visible() {
+    outline: none;
     text-decoration: none;
-    box-shadow: $fn-focus-outline-shadow-blue, $fn-focus-outline-inner-shadow;
+    box-shadow: $fn-focus-outline-shadow-blue;
   }
 
   @include fn-active() {
@@ -37,6 +46,8 @@ $block: #{$fn-namespace}-link;
   }
 
   @include fn-disabled() {
+    outline: none;
+    box-shadow: none;
     pointer-events: none;
     opacity: $fn-disabled-opacity;
   }
