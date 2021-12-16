@@ -73,8 +73,8 @@ export const primary = () => `${localStyles}
 
 <div class="docs-fn-container">
     <div><b>:disabled</b></div>
-    <a href="https://sap.github.io/fundamental-styles" class="fn-link fn-link--emphasized" aria-disabled="true">Ñagçyfox</a>
-    <a href="https://sap.github.io/fundamental-styles" class="fn-link" aria-disabled="true">Ñagçyfox</a>
+    <a role="link" href="https://sap.github.io/fundamental-styles" class="fn-link fn-link--emphasized" aria-disabled="true">Ñagçyfox</a>
+    <a role="link" href="https://sap.github.io/fundamental-styles" class="fn-link" aria-disabled="true">Ñagçyfox</a>
 </div>
 
 `;

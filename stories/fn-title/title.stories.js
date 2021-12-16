@@ -7,12 +7,17 @@ A title component whose semantic level and visual appearance can be set separate
     }
 };
 
-export const levels = () => `<h1 class="fn-title fn-title--h1">"Have no fear of perfection - you’ll never reach it." - Salvador Dali</h1>
-<h2 class="fn-title fn-title--h2">"Have no fear of perfection - you’ll never reach it." - Salvador Dali</h2>
-<h3 class="fn-title fn-title--h3">"Have no fear of perfection - you’ll never reach it." - Salvador Dali</h3>
-<h4 class="fn-title fn-title--h4">"Have no fear of perfection - you’ll never reach it." - Salvador Dali</h4>
-<h5 class="fn-title fn-title--h5">"Have no fear of perfection - you’ll never reach it." - Salvador Dali</h5>
-<h6 class="fn-title fn-title--h6">"Have no fear of perfection - you’ll never reach it." - Salvador Dali</h6>
+export const levels = () => `<h1 class="fn-title fn-title--h1">Title Heading 1</h1>
+<br>
+<h2 class="fn-title fn-title--h2">Title Heading 2</h2>
+<br>
+<h3 class="fn-title fn-title--h3">Title Heading 3</h3>
+<br>
+<h4 class="fn-title fn-title--h4">Title Heading 4</h4>
+<br>
+<h5 class="fn-title fn-title--h5">Title Heading 5</h5>
+<br>
+<h6 class="fn-title fn-title--h6">Title Heading 6</h6>
 `;
 
 levels.storyName = 'Semantic Level';
@@ -23,12 +28,17 @@ levels.parameters = {
     }
 };
 
-export const visualLevel = () => `<h1 class="fn-title fn-title--h6">"You never fail until you stop trying." - Albert Einstein</h1>
-<h2 class="fn-title fn-title--h5">"You never fail until you stop trying." - Albert Einstein</h2>
-<h3 class="fn-title fn-title--h4">"You never fail until you stop trying." - Albert Einstein</h3>
-<h4 class="fn-title fn-title--h3">"You never fail until you stop trying." - Albert Einstein</h4>
-<h5 class="fn-title fn-title--h2">"You never fail until you stop trying." - Albert Einstein</h5>
-<h6 class="fn-title fn-title--h1">"You never fail until you stop trying." - Albert Einstein</h6>
+export const visualLevel = () => `<h1 class="fn-title fn-title--h6">Title Heading 1</h1>
+<br>
+<h2 class="fn-title fn-title--h5">Title Heading 2</h2>
+<br>
+<h3 class="fn-title fn-title--h4">Title Heading 3</h3>
+<br>
+<h4 class="fn-title fn-title--h3">Title Heading 4</h4>
+<br>
+<h5 class="fn-title fn-title--h2">Title Heading 5</h5>
+<br>
+<h6 class="fn-title fn-title--h1">Title Heading 6</h6>
 `;
 
 visualLevel.storyName = 'Visual Level';
@@ -42,10 +52,15 @@ visualLevel.parameters = {
 
 export const wrapping = () => `<div style="width: 600px">
     <h1 class="fn-title fn-title--h1 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h1>
+    <br><br><br>
     <h2 class="fn-title fn-title--h2 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h2>
+    <br><br><br>
     <h3 class="fn-title fn-title--h3 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h3>
+    <br><br><br>
     <h4 class="fn-title fn-title--h4 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h4>
+    <br><br><br>
     <h5 class="fn-title fn-title--h5 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h5>
+    <br><br><br>
     <h6 class="fn-title fn-title--h6 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h6>
 </div>
 `;

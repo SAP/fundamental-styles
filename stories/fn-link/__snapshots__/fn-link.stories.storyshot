@@ -200,6 +200,7 @@ exports[`Storyshots Experimental/Link Links 1`] = `
       aria-disabled="true"
       class="fn-link fn-link--emphasized"
       href="https://sap.github.io/fundamental-styles"
+      role="link"
     >
       Ñagçyfox
     </a>
@@ -209,6 +210,7 @@ exports[`Storyshots Experimental/Link Links 1`] = `
       aria-disabled="true"
       class="fn-link"
       href="https://sap.github.io/fundamental-styles"
+      role="link"
     >
       Ñagçyfox
     </a>
