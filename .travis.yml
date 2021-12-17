@@ -40,6 +40,19 @@ jobs:
       skip_cleanup: true
       on:
         all_branches: true
+  - stage: "Hotfix-release"
+    if: branch = hotfix_tmp_branch_for_automated_release_do_not_use
+    before_deploy:
+    - git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+    - git fetch
+    - git checkout hotfix_tmp_branch_for_automated_release_do_not_use
+    - bash ./ci-scripts/setup-npm.sh
+    deploy:
+    - provider: script
+      script: bash ./ci-scripts/hotfix-publish.sh
+      skip_cleanup: true
+      on:
+        all_branches: true
 notifications:
   email:
     on_failure: always
