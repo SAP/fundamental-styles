@@ -16,6 +16,8 @@
     "lint:pre-commit": "echo running pre-commit lint... && npm run lint && echo done!\n",
     "release:create": "create-release",
     "release": "./scripts/publish-release.sh",
+    "hotfix-release": "./scripts/hotfix-publish-release.sh",
+    "hotfix-release-latest": "./scripts/hotfix-publish-release.sh latest",
     "size": "bundlesize --config config/bundlesize.json",
     "start": "npm run storybook",
     "style:assets": "babel-node ./scripts/copy-assets.js",
