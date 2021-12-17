@@ -48,14 +48,6 @@ $block: #{$fd-namespace}-pagination;
     @include fd-set-margins-x-equal('auto');
   }
 
-  &__more,
-  &__button,
-  &__link,
-  &__input,
-  &__label {
-    @include fd-set-margins-x-equal(0.125rem);
-  }
-
   &__more {
     @include fd-reset();
 
@@ -65,6 +57,14 @@ $block: #{$fd-namespace}-pagination;
       width: 1.5rem;
       text-align: center;
     }
+  }
+
+  &__more,
+  &__button,
+  &__link,
+  &__input,
+  &__label {
+    @include fd-set-margins-x-equal(0.125rem);
   }
 
   .#{$block}__input {
