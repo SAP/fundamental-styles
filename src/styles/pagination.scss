@@ -20,7 +20,8 @@ $block: #{$fd-namespace}-pagination;
   }
 
   .#{$block}__button--mobile,
-  .#{$block}__label {
+  .#{$block}__label,
+  .#{$block}__input {
     display: flex;
   }
 }
@@ -56,6 +57,14 @@ $block: #{$fd-namespace}-pagination;
       width: 1.5rem;
       text-align: center;
     }
+  }
+
+  &__more,
+  &__button,
+  &__link,
+  &__input,
+  &__label {
+    @include fd-set-margins-x-equal(0.125rem);
   }
 
   .#{$block}__input {
@@ -98,12 +107,24 @@ $block: #{$fd-namespace}-pagination;
     }
   }
 
+  &--short {
+    .#{$block}__input {
+      display: none;
+    }
+  }
+
   &--mobile {
     @include fd-pagination-mobile();
   }
 }
 
-@media (max-width: 599px) {
+@include fd-media-sm() {
+  .#{$block} {
+    @include fd-pagination-mobile();
+  }
+}
+
+@include fd-media-md() {
   .#{$block} {
     @include fd-pagination-mobile();
   }
