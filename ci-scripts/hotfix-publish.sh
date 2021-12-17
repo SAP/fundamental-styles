@@ -7,6 +7,9 @@ source .ci-env/flags.sh
 #PACKAGES=(core platform moment-adapter)
 HOTFIX_BRANCH=hotfix_tmp_branch_for_automated_release_do_not_use
 MASTER_BRANCH=refs/heads/main
+PACKAGE_THEMING_PREVIEW=theming-preview
+PACKAGE_PREFIX=@fundamental-styles
+DIST_THEMING_PREVIEW=dist-theming
 OLD_TAG=$(git describe --tags --abbrev=0)
 
 git config --global user.email $GH_EMAIL
