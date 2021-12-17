@@ -184,13 +184,15 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
         
     <nav
+      aria-label="cozy mode example, pagination with more than 9 pages"
       class="fd-pagination__nav"
+      role="navigation"
     >
       
             
       <a
         aria-disabled="false"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -207,7 +209,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
             
       <a
         aria-disabled="false"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -239,7 +241,8 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        aria-label="Goto page 494"
+        class="fd-button fd-button--transparent fd-pagination__link"
         href="#"
       >
         494
@@ -248,7 +251,8 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        aria-label="Goto page 495"
+        class="fd-button fd-button--transparent fd-pagination__link"
         href="#"
       >
         495
@@ -257,7 +261,8 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        aria-label="Goto page 496"
+        class="fd-button fd-button--transparent fd-pagination__link"
         href="#"
       >
         496
@@ -266,7 +271,8 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        aria-label="Goto page 497"
+        class="fd-button fd-button--transparent fd-pagination__link"
         href="#"
       >
         497
@@ -275,7 +281,8 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
+        aria-label="Goto page 498"
+        class="fd-button fd-button--transparent fd-pagination__link"
         href="#"
       >
         498
@@ -284,15 +291,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <a
-        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
-        href="#"
-      >
-        499
-      </a>
-      
-
-            
-      <a
+        aria-label="Goto page 499"
         class="fd-button fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -302,6 +301,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
 
             
       <label
+        aria-label="Page input, Current page, Page 500"
         class="fd-form-label fd-pagination__label"
         id="cozyPageInputPage"
       >
@@ -333,7 +333,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
             
       <a
         aria-disabled="true"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -350,7 +350,7 @@ exports[`Storyshots Components/Pagination Cozy 1`] = `
             
       <a
         aria-disabled="true"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -402,14 +402,15 @@ exports[`Storyshots Components/Pagination First page 1`] = `
     
     
     <nav
+      aria-label="first page example, pagination with more than 9 pages"
       class="fd-pagination__nav"
-      title="pagination with more than 9 pages"
+      role="navigation"
     >
       
         
       <a
         aria-disabled="true"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -426,7 +427,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
         
       <a
         aria-disabled="true"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -442,6 +443,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <label
+        aria-label="Page input, Current page, Page 1"
         class="fd-form-label fd-pagination__label"
         id="firstPageInputPage"
       >
@@ -472,6 +474,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 2"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -481,6 +484,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 3"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -490,6 +494,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 4"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -499,6 +504,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 5"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -508,6 +514,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 6"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -517,6 +524,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 7"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -533,6 +541,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 500"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -543,7 +552,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -560,7 +569,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -609,13 +618,15 @@ exports[`Storyshots Components/Pagination First page 1`] = `
     
     
     <nav
+      aria-label="first page example, pagination with less than 9 pages"
       class="fd-pagination__nav"
+      role="navigation"
     >
       
         
       <a
         aria-disabled="true"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -632,7 +643,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
         
       <a
         aria-disabled="true"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -648,6 +659,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <label
+        aria-label="Page input, Current page, Page 1"
         class="fd-form-label fd-pagination__label"
         id="firstPageInputShortPage"
       >
@@ -678,6 +690,8 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-current="true"
+        aria-label="Current Page, Page 1"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active"
         href="#"
       >
@@ -687,6 +701,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 2"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -696,6 +711,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <a
+        aria-label="Goto page 3"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -706,7 +722,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -723,7 +739,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -775,14 +791,15 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
     
     
     <nav
+      aria-label="last page example, pagination with more than 9 pages"
       class="fd-pagination__nav"
-      title="pagination with more than 9 pages"
+      role="navigation"
     >
       
         
       <a
         aria-disabled="false"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -799,7 +816,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -815,6 +832,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 1"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -831,6 +849,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 494"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -840,6 +859,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 495"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -849,6 +869,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 496"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -858,6 +879,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 497"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -867,6 +889,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 498"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -876,6 +899,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 499"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -885,6 +909,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <label
+        aria-label="Page input, Current page, Page 500"
         class="fd-form-label fd-pagination__label"
         id="lastPageInputPage"
       >
@@ -916,7 +941,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
       <a
         aria-disabled="true"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -933,7 +958,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
       <a
         aria-disabled="true"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -982,13 +1007,15 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
     
     
     <nav
+      aria-label="last page example, pagination with less than 9 pages"
       class="fd-pagination__nav"
+      role="navigation"
     >
       
         
       <a
         aria-disabled="false"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -1005,7 +1032,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1021,6 +1048,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 1"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1030,6 +1058,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-label="Goto page 2"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1039,6 +1068,8 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <a
+        aria-current="true"
+        aria-label="Current Page, page 3"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active"
         href="#"
       >
@@ -1048,6 +1079,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <label
+        aria-label="Page input, Current page, Page 3"
         class="fd-form-label fd-pagination__label"
         id="lastPageInputShortPage"
       >
@@ -1079,7 +1111,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
       <a
         aria-disabled="true"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1096,7 +1128,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
         
       <a
         aria-disabled="true"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -1148,14 +1180,15 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
     
     
     <nav
+      aria-label="middle page example, pagination with more than 9 pages"
       class="fd-pagination__nav"
-      title="pagination with more than 9 pages"
+      role="navigation"
     >
       
         
       <a
         aria-disabled="false"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -1172,7 +1205,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1188,6 +1221,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 1"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1204,6 +1238,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 298"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1213,6 +1248,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 299"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1222,6 +1258,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <label
+        aria-label="Page input, Current page, Page 300"
         class="fd-form-label fd-pagination__label"
         id="middlePageInputPage"
       >
@@ -1252,6 +1289,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 301"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1261,6 +1299,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 302"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1277,6 +1316,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 500"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1287,7 +1327,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1304,7 +1344,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -1353,13 +1393,15 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
     
     
     <nav
+      aria-label="middle page example, pagination with less than 9 pages"
       class="fd-pagination__nav"
+      role="navigation"
     >
       
         
       <a
         aria-disabled="false"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -1376,7 +1418,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1392,6 +1434,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 1"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1401,6 +1444,8 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-current="true"
+        aria-label="Current page, Page 2"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active"
         href="#"
       >
@@ -1410,6 +1455,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <label
+        aria-label="Page input, Current page, Page 1"
         class="fd-form-label fd-pagination__label"
         id="middlePageInputShortPage"
       >
@@ -1440,6 +1486,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <a
+        aria-label="Goto page 3"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -1450,7 +1497,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1467,7 +1514,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -1690,13 +1737,15 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
 
         
     <nav
+      aria-label="mobile mode example, pagination with more than 9 pages"
       class="fd-pagination__nav"
+      role="navigation"
     >
       
             
       <a
         aria-disabled="false"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -1713,7 +1762,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       <a
         aria-disabled="false"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1728,34 +1777,10 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
       
 
             
-      <a
-        class="fd-button fd-button--transparent fd-pagination__link"
-        href="#"
-      >
-        1
-      </a>
-      
-
-            
-      <span
-        class="fd-pagination__more"
-        role="presentation"
-      />
-      
-
-            
-      <a
-        class="fd-button fd-button--transparent fd-pagination__link"
-        href="#"
-      >
-        499
-      </a>
-      
-
-            
       <label
+        aria-label="Page input, Current page, Page 500"
         class="fd-form-label fd-pagination__label"
-        id="cozyPageInputPage"
+        id="mobilePageInputPage"
       >
         Page:
       </label>
@@ -1763,7 +1788,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
 
             
       <input
-        aria-labelledby="cozyPageInputPage cozyPageInputOf"
+        aria-labelledby="mobilePageInputPage cozyPageInputOf"
         class="fd-input fd-pagination__input"
         max="500"
         min="1"
@@ -1776,7 +1801,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       <label
         class="fd-form-label fd-pagination__label"
-        id="cozyPageInputOf"
+        id="mobilePageInputOf"
       >
         of 500
       </label>
@@ -1785,7 +1810,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       <a
         aria-disabled="true"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -1802,7 +1827,7 @@ exports[`Storyshots Components/Pagination Mobile 1`] = `
             
       <a
         aria-disabled="true"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -2025,13 +2050,15 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
         
     <nav
+      aria-label="per page page example, pagination with more than 9 pages"
       class="fd-pagination__nav"
+      role="navigation"
     >
       
             
       <a
         aria-disabled="false"
-        aria-label="First"
+        aria-label="First page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
@@ -2048,7 +2075,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
             
       <a
         aria-disabled="false"
-        aria-label="Previous"
+        aria-label="Previous page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -2064,6 +2091,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <a
+        aria-label="Goto page 1"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -2080,6 +2108,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <a
+        aria-label="Goto page 494"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -2089,6 +2118,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <a
+        aria-label="Goto page 495"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -2098,6 +2128,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <a
+        aria-label="Goto page 496"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -2107,6 +2138,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <a
+        aria-label="Goto page 497"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -2116,6 +2148,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <a
+        aria-label="Goto page 498"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -2125,6 +2158,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <a
+        aria-label="Goto page 499"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
@@ -2134,6 +2168,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <label
+        aria-label="Page input, Current page, Page 500"
         class="fd-form-label fd-pagination__label"
         id="perPageInputPage"
       >
@@ -2165,7 +2200,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
             
       <a
         aria-disabled="true"
-        aria-label="Next"
+        aria-label="Next page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
       >
@@ -2182,7 +2217,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
             
       <a
         aria-disabled="true"
-        aria-label="Last"
+        aria-label="Last page"
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
       >
