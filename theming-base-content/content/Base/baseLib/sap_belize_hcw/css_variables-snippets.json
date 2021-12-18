@@ -402,22 +402,22 @@
   "sapContent_Shadow0": {
     "prefix": "sapContent_Shadow0",
     "body": "var(--sapContent_Shadow0)",
-    "description": "Shadow Level 0 (Shadow for Card/Tile type controls.) Value: 0 0 1rem 0 rgba(0,0,0,0.5), 0 0 0 2px #000 #Base, #Content"
+    "description": "Shadow Level 0 (Shadow for Card/Tile type controls.) Value: 0 0 0 0.0625rem #000 #Base, #Content"
   },
   "sapContent_Shadow1": {
     "prefix": "sapContent_Shadow1",
     "body": "var(--sapContent_Shadow1)",
-    "description": "Shadow Level 1 (Shadow for Dropdowns/Floating/Footer/Menu type controls.) Value: 0 0.125rem 0.5rem 0 rgba(0,0,0,0.2), 0 0 1rem 0 rgba(0,0,0,0.5), 0 0 0 2px #000 #Base, #Content"
+    "description": "Shadow Level 1 (Shadow for Dropdowns/Floating/Footer/Menu type controls.) Value: 0 0 1rem 0 rgba(0,0,0,0.5), 0 0 0 0.125rem #000 #Base, #Content"
   },
   "sapContent_Shadow2": {
     "prefix": "sapContent_Shadow2",
     "body": "var(--sapContent_Shadow2)",
-    "description": "Shadow Level 2 (Shadow for Popovers and MessageToasts.) Value: 0 0.25rem 2rem 0 rgba(0,0,0,0.6), 0 0 0 2px #000 #Base, #Content"
+    "description": "Shadow Level 2 (Shadow for Popovers and MessageToasts.) Value: 0 0.25rem 2rem 0 rgba(0,0,0,0.6), 0 0 0 0.125rem #000 #Base, #Content"
   },
   "sapContent_Shadow3": {
     "prefix": "sapContent_Shadow3",
     "body": "var(--sapContent_Shadow3)",
-    "description": "Shadow Level 3 (Shadow for dialogs.) Value: 0 0.625rem 4rem 0 rgba(0,0,0,0.8), 0 0 0 2px #000 #Base, #Content"
+    "description": "Shadow Level 3 (Shadow for dialogs.) Value: 0 0.625rem 4rem 0 rgba(0,0,0,0.8), 0 0 0 0.125rem #000 #Base, #Content"
   },
   "sapContent_TextShadow": {
     "prefix": "sapContent_TextShadow",
@@ -433,6 +433,41 @@
     "prefix": "sapContent_HeaderShadow",
     "body": "var(--sapContent_HeaderShadow)",
     "description": "Header Shadow (The standard header shadow.) Value: inset 0 -0.125rem #000 #Base, #Content"
+  },
+  "sapContent_Interaction_Shadow": {
+    "prefix": "sapContent_Interaction_Shadow",
+    "body": "var(--sapContent_Interaction_Shadow)",
+    "description": "Interaction Shadow (The standard interaction shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Selected_Shadow": {
+    "prefix": "sapContent_Selected_Shadow",
+    "body": "var(--sapContent_Selected_Shadow)",
+    "description": "Selected Shadow (The standard selected shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Negative_Shadow": {
+    "prefix": "sapContent_Negative_Shadow",
+    "body": "var(--sapContent_Negative_Shadow)",
+    "description": "Negative Shadow (The standard negative shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Critical_Shadow": {
+    "prefix": "sapContent_Critical_Shadow",
+    "body": "var(--sapContent_Critical_Shadow)",
+    "description": "Critical Shadow (The standard critical shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Positive_Shadow": {
+    "prefix": "sapContent_Positive_Shadow",
+    "body": "var(--sapContent_Positive_Shadow)",
+    "description": "Positive Shadow (The standard positive shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Informative_Shadow": {
+    "prefix": "sapContent_Informative_Shadow",
+    "body": "var(--sapContent_Informative_Shadow)",
+    "description": "Informative Shadow (The standard informative shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Neutral_Shadow": {
+    "prefix": "sapContent_Neutral_Shadow",
+    "body": "var(--sapContent_Neutral_Shadow)",
+    "description": "Neutral Shadow (The standard neutral shadow.) Value: none #Base, #Content"
   },
   "sapContent_SearchHighlightColor": {
     "prefix": "sapContent_SearchHighlightColor",
@@ -544,6 +579,11 @@
     "body": "var(--sapFontBoldFamily)",
     "description": "Bold Font Family (The preferred bold font family of headers.) Value: \"72-Bold\", \"72-Boldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
   },
+  "sapFontBlackFamily": {
+    "prefix": "sapFontBlackFamily",
+    "body": "var(--sapFontBlackFamily)",
+    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
+  },
   "sapFontHeaderFamily": {
     "prefix": "sapFontHeaderFamily",
     "body": "var(--sapFontHeaderFamily)",
@@ -622,7 +662,7 @@
   "sapShell_BackgroundImage": {
     "prefix": "sapShell_BackgroundImage",
     "body": "var(--sapShell_BackgroundImage)",
-    "description": "Shell Background Image/Gradient (The background image or gradient of the shell.) Value: #fff #Base, #Shell, #URI, #Image"
+    "description": "Shell Background Image/Gradient (The background image or gradient of the shell.) Value: linear-gradient(to bottom, #fff, #fff) #Base, #Shell, #URI, #Image"
   },
   "sapShell_BackgroundImageOpacity": {
     "prefix": "sapShell_BackgroundImageOpacity",
@@ -643,6 +683,11 @@
     "prefix": "sapShell_TextColor",
     "body": "var(--sapShell_TextColor)",
     "description": "Shell Text Color (The color of texts in the shell.) Value: #000 #Base, #Shell, #Color, #Font"
+  },
+  "sapShell_InteractiveBackground": {
+    "prefix": "sapShell_InteractiveBackground",
+    "body": "var(--sapShell_InteractiveBackground)",
+    "description": "Shell Interactive Background Color (The background color of interactive shell content.) Value: #fff #Base, #Shell, #Color"
   },
   "sapShell_InteractiveTextColor": {
     "prefix": "sapShell_InteractiveTextColor",
@@ -692,7 +737,7 @@
   "sapShell_Selected_Hover_Background": {
     "prefix": "sapShell_Selected_Hover_Background",
     "body": "var(--sapShell_Selected_Hover_Background)",
-    "description": "Shell Hover on Selected Background (The background color for the hover state of selected shell content.) Value: #8fb5ff #Base, #Shell, #Color"
+    "description": "Shell Hover on Selected Background (The background color for the hover state of selected shell content.) Value: #ec8b46 #Base, #Shell, #Color"
   },
   "sapShell_Favicon": {
     "prefix": "sapShell_Favicon",
@@ -1532,7 +1577,7 @@
   "sapField_WarningBorderStyle": {
     "prefix": "sapField_WarningBorderStyle",
     "body": "var(--sapField_WarningBorderStyle)",
-    "description": "Warning Field Border Style (The style of borders of an input field indicatind a warning.) Value: dashed #Base, #Field, #Color"
+    "description": "Warning Field Border Style (The style of borders of an input field indicating a warning.) Value: dashed #Base, #Field, #Color"
   },
   "sapField_SuccessColor": {
     "prefix": "sapField_SuccessColor",
@@ -1552,7 +1597,7 @@
   "sapField_SuccessBorderStyle": {
     "prefix": "sapField_SuccessBorderStyle",
     "body": "var(--sapField_SuccessBorderStyle)",
-    "description": "Success Field Border Style (The style of borders of an input field indicatind a successful user action.) Value: solid #Base, #Field, #Color"
+    "description": "Success Field Border Style (The style of borders of an input field indicating a successful user action.) Value: solid #Base, #Field, #Color"
   },
   "sapField_InformationColor": {
     "prefix": "sapField_InformationColor",
@@ -1572,7 +1617,7 @@
   "sapField_InformationBorderStyle": {
     "prefix": "sapField_InformationBorderStyle",
     "body": "var(--sapField_InformationBorderStyle)",
-    "description": "Information Field Border Style (The style of borders of an input field indicatind an information status.) Value: dashed #Base, #Field, #Color"
+    "description": "Information Field Border Style (The style of borders of an input field indicating an information status.) Value: dashed #Base, #Field, #Color"
   },
   "sapGroup_TitleBackground": {
     "prefix": "sapGroup_TitleBackground",
@@ -1767,7 +1812,7 @@
   "sapScrollBar_Dimension": {
     "prefix": "sapScrollBar_Dimension",
     "body": "var(--sapScrollBar_Dimension)",
-    "description": "Scrollbar Dimension (The size of the scrollbar.) Value: .7rem #Base, #Scrollbar, #Dimension"
+    "description": "Scrollbar Dimension (The size of the scrollbar.) Value: .75rem #Base, #Scrollbar, #Dimension"
   },
   "sapScrollBar_Hover_FaceColor": {
     "prefix": "sapScrollBar_Hover_FaceColor",
@@ -2413,16 +2458,6 @@
     "prefix": "sapChart_Sequence_Neutral",
     "body": "var(--sapChart_Sequence_Neutral)",
     "description": "Chart Color Sequence 'Neutral' (This color is the base chart color of the sequence 'Neutral'.) Value: #000 #Base, #Chart, #Color"
-  },
-  "sapGroup_Title_FontSize": {
-    "prefix": "sapGroup_Title_FontSize",
-    "body": "var(--sapGroup_Title_FontSize)",
-    "description": "deprecated - Group Title Font Size (The font size of the group title (deprecated).) Value: .875rem #Base, #Group, #Dimension, #Font, #Deprecated"
-  },
-  "sapList_HighlightColor": {
-    "prefix": "sapList_HighlightColor",
-    "body": "var(--sapList_HighlightColor)",
-    "description": "deprecated - List Highlight Color (The color of highlighted elements in lists (deprecated: not used anymore since Belize theme).) Value: #ec8b46 #Base, #List, #Color, #Deprecated"
   },
   "sapDarkShadowColor": {
     "prefix": "sapDarkShadowColor",

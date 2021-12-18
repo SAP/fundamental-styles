@@ -1,12 +1,12 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2021-06-02T05:48:25Z"}
+* data:{"sModified":"2021-10-12T13:35:50Z"}
 */
 
 @import "base.less";
 
-/******************* FILE /Base/baseLib/baseTheme/css_variables.less (Version 11.1.30) *******************/
+/******************* FILE /Base/baseLib/baseTheme/css_variables.less (Version 11.1.34) *******************/
 
 /*!SAP_POSTPROCESS_REDUCE_START*/
 
@@ -19,6 +19,7 @@
   --sapFontFamily: @sapFontFamily;
   --sapFontLightFamily: @sapFontLightFamily;
   --sapFontBoldFamily: @sapFontBoldFamily;
+  --sapFontBlackFamily: @sapFontBlackFamily;
   --sapFontHeaderFamily: @sapFontHeaderFamily;
   --sapFontSize: @sapFontSize;
   --sapFontSmallSize: @sapFontSmallSize;
@@ -137,6 +138,13 @@
   --sapContent_TextShadow: @sapContent_TextShadow;
   --sapContent_ContrastTextShadow: @sapContent_ContrastTextShadow;
   --sapContent_HeaderShadow: @sapContent_HeaderShadow;
+  --sapContent_Interaction_Shadow: @sapContent_Interaction_Shadow;
+  --sapContent_Selected_Shadow: @sapContent_Selected_Shadow;
+  --sapContent_Negative_Shadow: @sapContent_Negative_Shadow;
+  --sapContent_Critical_Shadow: @sapContent_Critical_Shadow;
+  --sapContent_Positive_Shadow: @sapContent_Positive_Shadow;
+  --sapContent_Informative_Shadow: @sapContent_Informative_Shadow;
+  --sapContent_Neutral_Shadow: @sapContent_Neutral_Shadow;
   --sapContent_SearchHighlightColor: @sapContent_SearchHighlightColor;
   --sapContent_HelpColor: @sapContent_HelpColor;
   --sapContent_LabelColor: @sapContent_LabelColor;
@@ -167,6 +175,18 @@
   --sapContent_Illustrative_Color6: @sapContent_Illustrative_Color6;
   --sapContent_Illustrative_Color7: @sapContent_Illustrative_Color7;
   --sapContent_Illustrative_Color8: @sapContent_Illustrative_Color8;
+  --sapContent_Illustrative_Color9: @sapContent_Illustrative_Color9;
+  --sapContent_Illustrative_Color10: @sapContent_Illustrative_Color10;
+  --sapContent_Illustrative_Color11: @sapContent_Illustrative_Color11;
+  --sapContent_Illustrative_Color12: @sapContent_Illustrative_Color12;
+  --sapContent_Illustrative_Color13: @sapContent_Illustrative_Color13;
+  --sapContent_Illustrative_Color14: @sapContent_Illustrative_Color14;
+  --sapContent_Illustrative_Color15: @sapContent_Illustrative_Color15;
+  --sapContent_Illustrative_Color16: @sapContent_Illustrative_Color16;
+  --sapContent_Illustrative_Color17: @sapContent_Illustrative_Color17;
+  --sapContent_Illustrative_Color18: @sapContent_Illustrative_Color18;
+  --sapContent_Illustrative_Color19: @sapContent_Illustrative_Color19;
+  --sapContent_Illustrative_Color20: @sapContent_Illustrative_Color20;
   --sapShell_Background: @sapShell_Background;
   --sapShell_BackgroundImage: @sapShell_BackgroundImage;
   --sapShell_BackgroundGradient: @sapShell_BackgroundGradient;
@@ -174,6 +194,7 @@
   --sapShell_BackgroundImageRepeat: @sapShell_BackgroundImageRepeat;
   --sapShell_BorderColor: @sapShell_BorderColor;
   --sapShell_TextColor: @sapShell_TextColor;
+  --sapShell_InteractiveBackground: @sapShell_InteractiveBackground;
   --sapShell_InteractiveTextColor: @sapShell_InteractiveTextColor;
   --sapShell_InteractiveBorderColor: @sapShell_InteractiveBorderColor;
   --sapShell_GroupTitleTextColor: @sapShell_GroupTitleTextColor;
@@ -436,6 +457,16 @@
   --sapAccentColor8: @sapAccentColor8;
   --sapAccentColor9: @sapAccentColor9;
   --sapAccentColor10: @sapAccentColor10;
+  --sapAccentBackgroundColor1: @sapAccentBackgroundColor1;
+  --sapAccentBackgroundColor2: @sapAccentBackgroundColor2;
+  --sapAccentBackgroundColor3: @sapAccentBackgroundColor3;
+  --sapAccentBackgroundColor4: @sapAccentBackgroundColor4;
+  --sapAccentBackgroundColor5: @sapAccentBackgroundColor5;
+  --sapAccentBackgroundColor6: @sapAccentBackgroundColor6;
+  --sapAccentBackgroundColor7: @sapAccentBackgroundColor7;
+  --sapAccentBackgroundColor8: @sapAccentBackgroundColor8;
+  --sapAccentBackgroundColor9: @sapAccentBackgroundColor9;
+  --sapAccentBackgroundColor10: @sapAccentBackgroundColor10;
   --sapLegend_WorkingBackground: @sapLegend_WorkingBackground;
   --sapLegend_NonWorkingBackground: @sapLegend_NonWorkingBackground;
   --sapLegend_CurrentDateTime: @sapLegend_CurrentDateTime;
@@ -527,6 +558,16 @@
   --sapFontUrl_72_Bold_full_woff: @sapFontUrl_72_Bold_full_woff;
   --sapFontUrl_72_Light_full_woff2: @sapFontUrl_72_Light_full_woff2;
   --sapFontUrl_72_Light_full_woff: @sapFontUrl_72_Light_full_woff;
+  --sapFontUrl_72_Black_woff2: @sapFontUrl_72_Black_woff2;
+  --sapFontUrl_72_Black_woff: @sapFontUrl_72_Black_woff;
+  --sapFontUrl_72_BoldItalic_woff2: @sapFontUrl_72_BoldItalic_woff2;
+  --sapFontUrl_72_BoldItalic_woff: @sapFontUrl_72_BoldItalic_woff;
+  --sapFontUrl_72_Condensed_woff2: @sapFontUrl_72_Condensed_woff2;
+  --sapFontUrl_72_Condensed_woff: @sapFontUrl_72_Condensed_woff;
+  --sapFontUrl_72_CondensedBold_woff2: @sapFontUrl_72_CondensedBold_woff2;
+  --sapFontUrl_72_CondensedBold_woff: @sapFontUrl_72_CondensedBold_woff;
+  --sapFontUrl_72_Italic_woff2: @sapFontUrl_72_Italic_woff2;
+  --sapFontUrl_72_Italic_woff: @sapFontUrl_72_Italic_woff;
   --sapFontUrl_72Mono_Regular_woff2: @sapFontUrl_72Mono_Regular_woff2;
   --sapFontUrl_72Mono_Regular_woff: @sapFontUrl_72Mono_Regular_woff;
   --sapFontUrl_72Mono_Regular_full_woff2: @sapFontUrl_72Mono_Regular_full_woff2;

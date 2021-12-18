@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.0
+ * Fundamental Library Styles v0.20.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -493,8 +493,8 @@
 }
 .fd-notification--group .fd-notification__body {
   padding: 1rem .5rem 1rem 1rem;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-notification--group .fd-notification__body[dir=rtl],
 [dir=rtl] .fd-notification--group .fd-notification__body {
@@ -522,8 +522,8 @@
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   padding: .75rem .5rem .25rem 1rem
 }
 .fd-notification--group .fd-notification__group-header::after,

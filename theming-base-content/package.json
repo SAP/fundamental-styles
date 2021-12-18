@@ -1,21 +1,54 @@
 {
-  "name": "@sap-theming/theming-base-content",
-  "version": "11.1.30",
+  "_args": [
+    [
+      "@sap-theming/theming-base-content@11.1.34",
+      "/Users/i820906/develop/github/fundamental-styles"
+    ]
+  ],
+  "_development": true,
+  "_from": "@sap-theming/theming-base-content@11.1.34",
+  "_id": "@sap-theming/theming-base-content@11.1.34",
+  "_inBundle": false,
+  "_integrity": "sha512-xzJ6eZHyxzJCuve6IVAhBkWoCUpM81Vgmfc4H1EJ/+gY7VTsJK4AXcHm/RTby+33zp4+b6NzM7tSL2RmxwsJtA==",
+  "_location": "/@sap-theming/theming-base-content",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@sap-theming/theming-base-content@11.1.34",
+    "name": "@sap-theming/theming-base-content",
+    "escapedName": "@sap-theming%2ftheming-base-content",
+    "scope": "@sap-theming",
+    "rawSpec": "11.1.34",
+    "saveSpec": null,
+    "fetchSpec": "11.1.34"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@sap-theming/theming-base-content/-/theming-base-content-11.1.34.tgz",
+  "_spec": "11.1.34",
+  "_where": "/Users/i820906/develop/github/fundamental-styles",
+  "author": {
+    "name": "SAP SE",
+    "url": "https://www.sap.com"
+  },
+  "bugs": {
+    "url": "https://github.com/SAP/theming-base-content/issues"
+  },
+  "dependencies": {},
   "description": "Theming Base Content",
-  "author": "SAP SE (https://www.sap.com)",
-  "license": "Apache-2.0",
+  "homepage": "https://github.com/SAP/theming-base-content#readme",
   "keywords": [
     "theming",
     "sap-theming",
     "themes"
   ],
+  "license": "Apache-2.0",
+  "name": "@sap-theming/theming-base-content",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SAP/theming-base-content"
+    "url": "git+https://github.com/SAP/theming-base-content.git"
   },
-  "dependencies": {}
-
-,"_resolved": "https://registry.npmjs.org/@sap-theming/theming-base-content/-/theming-base-content-11.1.30.tgz"
-,"_integrity": "sha512-vbiDvb7gD0dGHllIRVh9CQzG9DHAfyv+b8HjfmOF6I1D8s0uXHVuX9rMRirmfxBOEujdQPR3mgGnrAe9A36KEg=="
-,"_from": "@sap-theming/theming-base-content@11.1.30"
+  "version": "11.1.34"
 }

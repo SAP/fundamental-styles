@@ -1,11 +1,11 @@
 /**
 * Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
 * Theming Engine 1.51.0
-* data:{"sModified":"2021-06-02T05:48:25Z"}
+* data:{"sModified":"2021-10-12T13:35:50Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.30) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.34) *******************/
 
 
 // [Label "Brand Color"]
@@ -413,6 +413,41 @@
 // [Tags "Base", "Content", "Protected"]
 @sapContent_HeaderShadow: @sapDefault_Shadow;
 
+// [Label "Interaction Shadow"]
+// [Description "The standard interaction shadow."]
+// [Tags "Base", "Content", "Protected"]
+@sapContent_Interaction_Shadow: @sapDefault_Shadow;
+
+// [Label "Selected Shadow"]
+// [Description "The standard selected shadow."]
+// [Tags "Base", "Content", "Protected"]
+@sapContent_Selected_Shadow: @sapDefault_Shadow;
+
+// [Label "Negative Shadow"]
+// [Description "The standard negative shadow."]
+// [Tags "Base", "Content", "Protected"]
+@sapContent_Negative_Shadow: @sapDefault_Shadow;
+
+// [Label "Critical Shadow"]
+// [Description "The standard critical shadow."]
+// [Tags "Base", "Content", "Protected"]
+@sapContent_Critical_Shadow: @sapDefault_Shadow;
+
+// [Label "Positive Shadow"]
+// [Description "The standard positive shadow."]
+// [Tags "Base", "Content", "Protected"]
+@sapContent_Positive_Shadow: @sapDefault_Shadow;
+
+// [Label "Informative Shadow"]
+// [Description "The standard informative shadow."]
+// [Tags "Base", "Content", "Protected"]
+@sapContent_Informative_Shadow: @sapDefault_Shadow;
+
+// [Label "Neutral Shadow"]
+// [Description "The standard neutral shadow."]
+// [Tags "Base", "Content", "Protected"]
+@sapContent_Neutral_Shadow: @sapDefault_Shadow;
+
 // [Label "Search Result Highlight Color"]
 // [Description "The color of found search results in the content."]
 // [Tags "Base", "Content", "Color", "Protected"]
@@ -559,6 +594,66 @@
 // [Tags "Base", "Content", "Color", "Protected"]
 @sapContent_Illustrative_Color8: @sapDefault_Color;
 
+// [Label "Illustrative Color 9"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color9: @sapDefault_Color;
+
+// [Label "Illustrative Color 10"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color10: @sapDefault_Color;
+
+// [Label "Illustrative Color 11"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color11: @sapDefault_Color;
+
+// [Label "Illustrative Color 12"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color12: @sapDefault_Color;
+
+// [Label "Illustrative Color 13"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color13: @sapDefault_Color;
+
+// [Label "Illustrative Color 14"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color14: @sapDefault_Color;
+
+// [Label "Illustrative Color 15"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color15: @sapDefault_Color;
+
+// [Label "Illustrative Color 16"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color16: @sapDefault_Color;
+
+// [Label "Illustrative Color 17"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color17: @sapDefault_Color;
+
+// [Label "Illustrative Color 18"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color18: @sapDefault_Color;
+
+// [Label "Illustrative Color 19"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color19: @sapDefault_Color;
+
+// [Label "Illustrative Color 20"]
+// [Description "The color of illustrated content."]
+// [Tags "Base", "Content", "Color", "Protected"]
+@sapContent_Illustrative_Color20: @sapDefault_Color;
+
 // [Label "Light Font Family"]
 // [Description "The preferred light font family."]
 // [Tags "Base", "Content", "Font", "Protected"]
@@ -568,6 +663,11 @@
 // [Description "The preferred bold font family of headers."]
 // [Tags "Base", "Content", "Font", "Protected"]
 @sapFontBoldFamily: @sapDefault_Font;
+
+// [Label "Black Font Family"]
+// [Description "The preferred black font family of headers."]
+// [Tags "Base", "Content", "Font", "Protected"]
+@sapFontBlackFamily: @sapDefault_Font;
 
 // [Label "Header Font Family"]
 // [Description "The preferred font family of headers."]
@@ -668,6 +768,11 @@
 // [Description "The color of texts in the shell."]
 // [Tags "Base", "Shell", "Color", "Font", "Protected"]
 @sapShell_TextColor: @sapDefault_Color;
+
+// [Label "Shell Interactive Background Color"]
+// [Description "The background color of interactive shell content."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_InteractiveBackground: @sapDefault_Color;
 
 // [Label "Shell Interactive Text Color"]
 // [Description "The color of texts of interactive areas in the shell."]
@@ -1651,7 +1756,7 @@
 @sapField_WarningBorderWidth: @sapDefault_Dimension;
 
 // [Label "Warning Field Border Style"]
-// [Description "The style of borders of an input field indicatind a warning."]
+// [Description "The style of borders of an input field indicating a warning."]
 // [Tags "Base", "Field", "Color", "Protected"]
 @sapField_WarningBorderStyle: @sapDefault_BorderStyle;
 
@@ -1671,7 +1776,7 @@
 @sapField_SuccessBorderWidth: @sapDefault_Dimension;
 
 // [Label "Success Field Border Style"]
-// [Description "The style of borders of an input field indicatind a successful user action."]
+// [Description "The style of borders of an input field indicating a successful user action."]
 // [Tags "Base", "Field", "Color", "Protected"]
 @sapField_SuccessBorderStyle: @sapDefault_BorderStyle;
 
@@ -1691,7 +1796,7 @@
 @sapField_InformationBorderWidth: @sapDefault_Dimension;
 
 // [Label "Information Field Border Style"]
-// [Description "The style of borders of an input field indicatind an information status."]
+// [Description "The style of borders of an input field indicating an information status."]
 // [Tags "Base", "Field", "Color", "Protected"]
 @sapField_InformationBorderStyle: @sapDefault_BorderStyle;
 
@@ -2081,6 +2186,56 @@
 // [Description "Secondary color to accentuate UI elements."]
 // [Tags "Base", "Accent", "Color", "Protected"]
 @sapAccentColor10: @sapDefault_Color;
+
+// [Label "Accent Background Color 1"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor1: @sapDefault_Color;
+
+// [Label "Accent Background Color 2"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor2: @sapDefault_Color;
+
+// [Label "Accent Background Color 3"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor3: @sapDefault_Color;
+
+// [Label "Accent Background Color 4"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor4: @sapDefault_Color;
+
+// [Label "Accent Background Color 5"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor5: @sapDefault_Color;
+
+// [Label "Accent Background Color 6"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor6: @sapDefault_Color;
+
+// [Label "Accent Background Color 7"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor7: @sapDefault_Color;
+
+// [Label "Accent Background Color 8"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor8: @sapDefault_Color;
+
+// [Label "Accent Background Color 9"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor9: @sapDefault_Color;
+
+// [Label "Accent Background Color 10"]
+// [Description "Secondary color to accentuate UI background elements."]
+// [Tags "Base", "Accent", "Color", "Protected"]
+@sapAccentBackgroundColor10: @sapDefault_Color;
 
 // [Label "Indication Color 1"]
 // [Description "The color for elements showing indication 1."]
@@ -2672,6 +2827,36 @@
 @sapFontUrl_72_Light_full_woff: none;
 
 // [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_Black_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_Black_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_BoldItalic_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_BoldItalic_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_Condensed_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_Condensed_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_CondensedBold_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_CondensedBold_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_Italic_woff2: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
+@sapFontUrl_72_Italic_woff: none;
+
+// [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
 @sapFontUrl_72Mono_Regular_woff2: none;
 
 // [Tags "SapInternal", "Base", "URI", "Font", "Protected"]
@@ -2703,6 +2888,11 @@
 
 // [Tags "SapInternal", "Base", "URI", "Protected"]
 @sapSvgLib_SAPWeb-icons: none;
+
+// [Label "Default Background Color"]
+// [Description "The default background color of this theme."]
+// [Tags "ThemeSpecific", "Base", "Content", "Color", "Protected", "Deprecated"]
+@sapBackgroundColorDefault: @sapDeprecated_Color;
 
 // [Label "deprecated - List Highlight Color"]
 // [Description "The color of highlighted elements in lists (deprecated: not used anymore since Belize theme)."]
@@ -2851,6 +3041,43 @@
 }
 
 @font-face {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 900;
+  src: local('72Black'), @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff');
+}
+
+@font-face {
+  font-family: '72';
+  font-style: italic;
+  font-weight: 700;
+  src: local('72-BoldItalic'), @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff');
+}
+
+@font-face {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: condensed;
+  src: local('72-Condensed'), @sapFontUrl_72_Condensed_woff2 format('woff2'), @sapFontUrl_72_Condensed_woff format('woff');
+}
+
+@font-face {
+  font-family: '72';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: condensed;
+  src: local('72-CondensedBold'), @sapFontUrl_72_CondensedBold_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_woff format('woff');
+}
+
+@font-face {
+  font-family: '72';
+  font-style: italic;
+  font-weight: 400;
+  src: local('72-Italic'), @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff');
+}
+
+@font-face {
   font-family: '72-Light';
   src: local('72-Light'), @sapFontUrl_72_Light_woff2 format('woff2'), @sapFontUrl_72_Light_woff format('woff');
 }
@@ -2868,6 +3095,31 @@
 @font-face {
   font-family: '72-Boldfull';
   src: @sapFontUrl_72_Bold_full_woff2 format('woff2'), @sapFontUrl_72_Bold_full_woff format('woff');
+}
+
+@font-face {
+  font-family: '72Black';
+  src: local('72Black'), @sapFontUrl_72_Black_woff2 format('woff2'), @sapFontUrl_72_Black_woff format('woff');
+}
+
+@font-face {
+  font-family: '72-BoldItalic';
+  src: local('72-BoldItalic'), @sapFontUrl_72_BoldItalic_woff2 format('woff2'), @sapFontUrl_72_BoldItalic_woff format('woff');
+}
+
+@font-face {
+  font-family: '72-Condensed';
+  src: local('72-Condensed'), @sapFontUrl_72_Condensed_woff2 format('woff2'), @sapFontUrl_72_Condensed_woff format('woff');
+}
+
+@font-face {
+  font-family: '72-CondensedBold';
+  src: local('72-CondensedBold'), @sapFontUrl_72_CondensedBold_woff2 format('woff2'), @sapFontUrl_72_CondensedBold_woff format('woff');
+}
+
+@font-face {
+  font-family: '72-Italic';
+  src: local('72-Italic'), @sapFontUrl_72_Italic_woff2 format('woff2'), @sapFontUrl_72_Italic_woff format('woff');
 }
 
 @font-face {

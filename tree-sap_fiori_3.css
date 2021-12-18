@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.20.0
+ * Fundamental Library Styles v0.20.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -1588,8 +1588,8 @@
   padding-left: 2.75rem;
   background: #fff;
   background: var(--sapList_Background,#fff);
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container[dir=rtl],
 [dir=rtl] .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container {

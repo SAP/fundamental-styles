@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.20.0
+ * Fundamental Library Styles v0.20.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -197,8 +197,8 @@
 .fd-wizard__step--upcoming .fd-wizard__step-indicator {
   background: #fff;
   background: var(--sapObjectHeader_Background,#fff);
-  border: .0625rem solid #e4e4e4;
-  border: var(--fdWizard_Upcoming_Step_Border,.0625rem solid var(--sapList_BorderColor,#e4e4e4));
+  border: .0625rem solid #e5e5e5;
+  border: var(--fdWizard_Upcoming_Step_Border,.0625rem solid var(--sapList_BorderColor,#e5e5e5));
   color: #6a6d70;
   color: var(--fdWizard_Upcoming_Step_Color,var(--sapContent_LabelColor,#6a6d70))
 }
@@ -512,8 +512,8 @@
   margin: .5rem;
   max-width: 100%;
   min-width: 1rem;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: .0625rem solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: .0625rem solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-wizard__connector::after,
 .fd-wizard__connector::before {

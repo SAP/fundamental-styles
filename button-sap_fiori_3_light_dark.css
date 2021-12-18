@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.20.0
+ * Fundamental Library Styles v0.20.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -150,8 +150,8 @@
   background-color: var(--sapButton_Reject_Selected_Background,#ff6e6e)
 }
 .fd-button.fd-button--attention {
-  color: #fafafa;
-  color: var(--sapButton_Attention_TextColor,#fafafa);
+  color: #fabd64;
+  color: var(--sapButton_Attention_TextColor,#fabd64);
   border-color: #fabd64;
   border-color: var(--sapButton_Attention_BorderColor,#fabd64);
   background-color: #29313a;
@@ -466,8 +466,8 @@
 }
 .fd-button.is-hover.fd-button--attention,
 .fd-button:hover.fd-button--attention {
-  color: #fafafa;
-  color: var(--sapButton_Attention_Hover_TextColor,#fafafa);
+  color: #fabd64;
+  color: var(--sapButton_Attention_Hover_TextColor,#fabd64);
   border-color: #fabd64;
   border-color: var(--sapButton_Attention_Hover_BorderColor,#fabd64);
   background-color: #2b1a01;
@@ -756,8 +756,8 @@
 }
 .fd-button.is-disabled.fd-button--attention,
 .fd-button[aria-disabled=true].fd-button--attention {
-  color: #fafafa;
-  color: var(--sapButton_Attention_TextColor,#fafafa);
+  color: #fabd64;
+  color: var(--sapButton_Attention_TextColor,#fabd64);
   border-color: #fabd64;
   border-color: var(--sapButton_Attention_BorderColor,#fabd64);
   background-color: #29313a;
@@ -880,8 +880,8 @@
   background-color: var(--sapButton_Reject_Selected_Background,#ff6e6e)
 }
 .fd-button:disabled.fd-button--attention {
-  color: #fafafa;
-  color: var(--sapButton_Attention_TextColor,#fafafa);
+  color: #fabd64;
+  color: var(--sapButton_Attention_TextColor,#fabd64);
   border-color: #fabd64;
   border-color: var(--sapButton_Attention_BorderColor,#fabd64);
   background-color: #29313a;

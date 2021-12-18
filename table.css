@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.0
+ * Fundamental Library Styles v0.20.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -88,29 +88,29 @@
 }
 .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
 .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
-  border-right: .0625rem solid #8b8b8b;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
+  border-right: .0625rem solid #8c8c8c;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8c8c8c)
 }
 .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
 .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
 [dir=rtl] .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
 [dir=rtl] .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-left: .0625rem solid #8b8b8b;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: .0625rem solid #8c8c8c;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8c8c8c)
 }
 .fd-table__header {
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__header .fd-table__row {
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__header .fd-table__cell {
   height: 2.75rem;
@@ -121,8 +121,8 @@
 }
 .fd-table__header .fd-table__cell--fixed {
   margin-top: -.0625rem;
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   height: 2.8125rem
 }
 .fd-table__text {
@@ -142,8 +142,8 @@
   height: 2.75rem;
   padding: 0 .5rem;
   color: inherit;
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__cell--valid {
   color: #107e3e;
@@ -187,10 +187,10 @@
   left: 0;
   position: absolute;
   background-color: inherit;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-right: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,8 +201,8 @@
 }
 .fd-table__cell--fixed[dir=rtl],
 [dir=rtl] .fd-table__cell--fixed {
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-left: none;
   left: auto;
   right: 0
@@ -260,16 +260,16 @@
   padding: 0
 }
 .fd-table__body {
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__body .fd-table__cell {
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__body .fd-table__cell--no-vertical-border {
   border-bottom-color: transparent
@@ -553,8 +553,8 @@
   background-color: var(--sapList_FooterBackground,#fafafa)
 }
 .fd-table__footer .fd-table__row {
-  border-top: .125rem solid #d8d8d8;
-  border-top: .125rem solid var(--sapList_TableFooterBorder,#d8d8d8);
+  border-top: .125rem solid #d9d9d9;
+  border-top: .125rem solid var(--sapList_TableFooterBorder,#d9d9d9);
   vertical-align: middle
 }
 .fd-table__footer .fd-table__cell {
@@ -631,8 +631,8 @@
 .fd-table--fixed .fd-table__header[dir=rtl],
 [dir=rtl] .fd-table--fixed .fd-table__body,
 [dir=rtl] .fd-table--fixed .fd-table__header {
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-right: none
 }
 .fd-table--pop-in .fd-table__text {
@@ -659,13 +659,13 @@
 .fd-table--pop-in .fd-table__row .fd-table__cell:last-child {
   margin-bottom: 0;
   margin-right: 0;
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table--pop-in .fd-table__row .fd-table__cell:last-child[dir=rtl],
 [dir=rtl] .fd-table--pop-in .fd-table__row .fd-table__cell:last-child {
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-right: none
 }
 .fd-table--pop-in .fd-table__row--main {
@@ -726,8 +726,8 @@
 .fd-table--pop-in .fd-table__row--secondary {
   background-color: #fff;
   background-color: var(--sapList_Background,#fff);
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table--pop-in .fd-table__row--secondary.is-hover,
 .fd-table--pop-in .fd-table__row--secondary:hover {

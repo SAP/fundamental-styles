@@ -369,6 +369,41 @@
     "body": "var(--sapContent_HeaderShadow)",
     "description": "Header Shadow (The standard header shadow.) Value: 0 0.125rem 0 0 #eff4f9, inset 0 -0.125rem 0 0 #d1e0ee #Base, #Content"
   },
+  "sapContent_Interaction_Shadow": {
+    "prefix": "sapContent_Interaction_Shadow",
+    "body": "var(--sapContent_Interaction_Shadow)",
+    "description": "Interaction Shadow (The standard interaction shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Selected_Shadow": {
+    "prefix": "sapContent_Selected_Shadow",
+    "body": "var(--sapContent_Selected_Shadow)",
+    "description": "Selected Shadow (The standard selected shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Negative_Shadow": {
+    "prefix": "sapContent_Negative_Shadow",
+    "body": "var(--sapContent_Negative_Shadow)",
+    "description": "Negative Shadow (The standard negative shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Critical_Shadow": {
+    "prefix": "sapContent_Critical_Shadow",
+    "body": "var(--sapContent_Critical_Shadow)",
+    "description": "Critical Shadow (The standard critical shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Positive_Shadow": {
+    "prefix": "sapContent_Positive_Shadow",
+    "body": "var(--sapContent_Positive_Shadow)",
+    "description": "Positive Shadow (The standard positive shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Informative_Shadow": {
+    "prefix": "sapContent_Informative_Shadow",
+    "body": "var(--sapContent_Informative_Shadow)",
+    "description": "Informative Shadow (The standard informative shadow.) Value: none #Base, #Content"
+  },
+  "sapContent_Neutral_Shadow": {
+    "prefix": "sapContent_Neutral_Shadow",
+    "body": "var(--sapContent_Neutral_Shadow)",
+    "description": "Neutral Shadow (The standard neutral shadow.) Value: none #Base, #Content"
+  },
   "sapContent_SearchHighlightColor": {
     "prefix": "sapContent_SearchHighlightColor",
     "body": "var(--sapContent_SearchHighlightColor)",
@@ -479,6 +514,11 @@
     "body": "var(--sapFontBoldFamily)",
     "description": "Bold Font Family (The preferred bold font family of headers.) Value: \"72-Bold\", \"72-Boldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
   },
+  "sapFontBlackFamily": {
+    "prefix": "sapFontBlackFamily",
+    "body": "var(--sapFontBlackFamily)",
+    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
+  },
   "sapFontHeaderFamily": {
     "prefix": "sapFontHeaderFamily",
     "body": "var(--sapFontHeaderFamily)",
@@ -578,6 +618,11 @@
     "prefix": "sapShell_TextColor",
     "body": "var(--sapShell_TextColor)",
     "description": "Shell Text Color (The color of texts in the shell.) Value: #346187 #Base, #Shell, #Color, #Font"
+  },
+  "sapShell_InteractiveBackground": {
+    "prefix": "sapShell_InteractiveBackground",
+    "body": "var(--sapShell_InteractiveBackground)",
+    "description": "Shell Interactive Background Color (The background color of interactive shell content.) Value: transparent #Base, #Shell, #Color"
   },
   "sapShell_InteractiveTextColor": {
     "prefix": "sapShell_InteractiveTextColor",
@@ -1467,7 +1512,7 @@
   "sapField_WarningBorderStyle": {
     "prefix": "sapField_WarningBorderStyle",
     "body": "var(--sapField_WarningBorderStyle)",
-    "description": "Warning Field Border Style (The style of borders of an input field indicatind a warning.) Value: solid #Base, #Field, #Color"
+    "description": "Warning Field Border Style (The style of borders of an input field indicating a warning.) Value: solid #Base, #Field, #Color"
   },
   "sapField_SuccessColor": {
     "prefix": "sapField_SuccessColor",
@@ -1487,7 +1532,7 @@
   "sapField_SuccessBorderStyle": {
     "prefix": "sapField_SuccessBorderStyle",
     "body": "var(--sapField_SuccessBorderStyle)",
-    "description": "Success Field Border Style (The style of borders of an input field indicatind a successful user action.) Value: solid #Base, #Field, #Color"
+    "description": "Success Field Border Style (The style of borders of an input field indicating a successful user action.) Value: solid #Base, #Field, #Color"
   },
   "sapField_InformationColor": {
     "prefix": "sapField_InformationColor",
@@ -1507,7 +1552,7 @@
   "sapField_InformationBorderStyle": {
     "prefix": "sapField_InformationBorderStyle",
     "body": "var(--sapField_InformationBorderStyle)",
-    "description": "Information Field Border Style (The style of borders of an input field indicatind an information status.) Value: solid #Base, #Field, #Color"
+    "description": "Information Field Border Style (The style of borders of an input field indicating an information status.) Value: solid #Base, #Field, #Color"
   },
   "sapGroup_TitleBackground": {
     "prefix": "sapGroup_TitleBackground",
@@ -1702,7 +1747,7 @@
   "sapScrollBar_Dimension": {
     "prefix": "sapScrollBar_Dimension",
     "body": "var(--sapScrollBar_Dimension)",
-    "description": "Scrollbar Dimension (The size of the scrollbar.) Value: .7rem #Base, #Scrollbar, #Dimension"
+    "description": "Scrollbar Dimension (The size of the scrollbar.) Value: .75rem #Base, #Scrollbar, #Dimension"
   },
   "sapScrollBar_Hover_FaceColor": {
     "prefix": "sapScrollBar_Hover_FaceColor",
@@ -2348,16 +2393,6 @@
     "prefix": "sapChart_Sequence_Neutral",
     "body": "var(--sapChart_Sequence_Neutral)",
     "description": "Chart Color Sequence 'Neutral' (This color is the base chart color of the sequence 'Neutral'.) Value: #848f94 #Base, #Chart, #Color"
-  },
-  "sapGroup_Title_FontSize": {
-    "prefix": "sapGroup_Title_FontSize",
-    "body": "var(--sapGroup_Title_FontSize)",
-    "description": "deprecated - Group Title Font Size (The font size of the group title (deprecated).) Value: .875rem #Base, #Group, #Dimension, #Font, #Deprecated"
-  },
-  "sapList_HighlightColor": {
-    "prefix": "sapList_HighlightColor",
-    "body": "var(--sapList_HighlightColor)",
-    "description": "deprecated - List Highlight Color (The color of highlighted elements in lists (deprecated: not used anymore since Belize theme).) Value: #427cac #Base, #List, #Color, #Deprecated"
   },
   "sapDarkShadowColor": {
     "prefix": "sapDarkShadowColor",

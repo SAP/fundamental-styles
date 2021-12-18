@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.20.0
+ * Fundamental Library Styles v0.20.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -94,8 +94,8 @@
   font-size: inherit
 }
 .fd-feed-list__body + .fd-feed-list__body {
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-feed-list--no-border .fd-feed-list__body {
   padding: 1rem 1rem .75rem;

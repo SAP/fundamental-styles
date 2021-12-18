@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.0
+ * Fundamental Library Styles v0.20.1
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .sapThemeMetaData-Base-baseLib {
-  background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","LightColorScheme"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.30.20210602054826", "Source": "11.1.30", "Engine": "1.51.0"}}')
+  background-image: url('data:text/plain;utf-8,{"Path": "Base.baseLib.sap_fiori_3.css_variables", "PathPattern": "/%frameworkId%/%libId%/%themeId%/%fileId%.css", "Extends": ["sap_base_fiori","baseTheme"], "Tags": ["Fiori_3","LightColorScheme"], "FallbackThemeId": "sap_belize", "Version": { "Build":"11.1.34.20211012133552", "Source": "11.1.34", "Engine": "1.51.0"}}')
 }
 :root {
   --sapBrandColor: #0a6ed1;
@@ -16,6 +16,7 @@
   --sapFontFamily: "72","72full",Arial,Helvetica,sans-serif;
   --sapFontLightFamily: "72-Light","72-Lightfull","72","72full",Arial,Helvetica,sans-serif;
   --sapFontBoldFamily: "72-Bold","72-Boldfull","72","72full",Arial,Helvetica,sans-serif;
+  --sapFontBlackFamily: "72Black","72","72full",Arial,Helvetica,sans-serif;
   --sapFontHeaderFamily: "72","72full",Arial,Helvetica,sans-serif;
   --sapFontSize: .875rem;
   --sapFontSmallSize: .75rem;
@@ -134,6 +135,13 @@
   --sapContent_TextShadow: 0 0 0.125rem #fff;
   --sapContent_ContrastTextShadow: 0 0 0.0625rem rgba(0,0,0,0.7);
   --sapContent_HeaderShadow: 0 0 0.25rem 0 rgba(0,0,0,0.15),inset 0 -0.0625rem 0 0 #d9d9d9;
+  --sapContent_Interaction_Shadow: none;
+  --sapContent_Selected_Shadow: none;
+  --sapContent_Negative_Shadow: none;
+  --sapContent_Critical_Shadow: none;
+  --sapContent_Positive_Shadow: none;
+  --sapContent_Informative_Shadow: none;
+  --sapContent_Neutral_Shadow: none;
   --sapContent_SearchHighlightColor: #d4f7db;
   --sapContent_HelpColor: #3f8600;
   --sapContent_LabelColor: #6a6d70;
@@ -164,6 +172,18 @@
   --sapContent_Illustrative_Color6: #c6cace;
   --sapContent_Illustrative_Color7: #e7e9ea;
   --sapContent_Illustrative_Color8: #fff;
+  --sapContent_Illustrative_Color9: #64edd2;
+  --sapContent_Illustrative_Color10: #e7e9ea;
+  --sapContent_Illustrative_Color11: #f31ded;
+  --sapContent_Illustrative_Color12: #5dc122;
+  --sapContent_Illustrative_Color13: #4ba1f6;
+  --sapContent_Illustrative_Color14: #298ff4;
+  --sapContent_Illustrative_Color15: #e6a400;
+  --sapContent_Illustrative_Color16: #085aaa;
+  --sapContent_Illustrative_Color17: #00a5a8;
+  --sapContent_Illustrative_Color18: #d9ddde;
+  --sapContent_Illustrative_Color19: #ccd0d2;
+  --sapContent_Illustrative_Color20: #bec4c6;
   --sapShell_Background: #edeff0;
   --sapShell_BackgroundImage: linear-gradient(to bottom, #dfe3e4, #f3f4f5);
   --sapShell_BackgroundGradient: linear-gradient(to bottom, #dfe3e4, #f3f4f5);
@@ -171,6 +191,7 @@
   --sapShell_BackgroundImageRepeat: false;
   --sapShell_BorderColor: #354a5f;
   --sapShell_TextColor: #fff;
+  --sapShell_InteractiveBackground: #354a5f;
   --sapShell_InteractiveTextColor: #d1e8ff;
   --sapShell_InteractiveBorderColor: #7996b4;
   --sapShell_GroupTitleTextColor: #32363a;
@@ -367,9 +388,9 @@
   --sapToolbar_Background: transparent;
   --sapToolbar_SeparatorColor: #d9d9d9;
   --sapList_HeaderBackground: #f2f2f2;
-  --sapList_HeaderBorderColor: #e4e4e4;
+  --sapList_HeaderBorderColor: #e5e5e5;
   --sapList_HeaderTextColor: #32363a;
-  --sapList_BorderColor: #e4e4e4;
+  --sapList_BorderColor: #e5e5e5;
   --sapList_TextColor: #32363a;
   --sapList_Active_TextColor: #fff;
   --sapList_BorderWidth: .0625rem;
@@ -381,15 +402,15 @@
   --sapList_Hover_Background: #f5f5f5;
   --sapList_AlternatingBackground: #f2f2f2;
   --sapList_GroupHeaderBackground: #fff;
-  --sapList_GroupHeaderBorderColor: #d8d8d8;
+  --sapList_GroupHeaderBorderColor: #d9d9d9;
   --sapList_GroupHeaderTextColor: #32363a;
   --sapList_FooterBackground: #fafafa;
   --sapList_FooterTextColor: #32363a;
   --sapList_TableGroupHeaderBackground: #efefef;
-  --sapList_TableGroupHeaderBorderColor: #d8d8d8;
+  --sapList_TableGroupHeaderBorderColor: #d9d9d9;
   --sapList_TableGroupHeaderTextColor: #32363a;
-  --sapList_TableFooterBorder: #d8d8d8;
-  --sapList_TableFixedBorderColor: #8b8b8b;
+  --sapList_TableFooterBorder: #d9d9d9;
+  --sapList_TableFixedBorderColor: #8c8c8c;
   --sapList_Active_Background: #0854a0;
   --sapScrollBar_FaceColor: #949494;
   --sapScrollBar_TrackColor: #fff;
@@ -433,6 +454,16 @@
   --sapAccentColor8: #7ca10c;
   --sapAccentColor9: #925ace;
   --sapAccentColor10: #647987;
+  --sapAccentBackgroundColor1: #fff3b8;
+  --sapAccentBackgroundColor2: #ffd0e7;
+  --sapAccentBackgroundColor3: #fff0fa;
+  --sapAccentBackgroundColor4: #ffdcf3;
+  --sapAccentBackgroundColor5: #ded3ff;
+  --sapAccentBackgroundColor6: #d1efff;
+  --sapAccentBackgroundColor7: #c2fcee;
+  --sapAccentBackgroundColor8: #ebf5cb;
+  --sapAccentBackgroundColor9: #dafdf5;
+  --sapAccentBackgroundColor10: #eaecee;
   --sapLegend_WorkingBackground: #fafafa;
   --sapLegend_NonWorkingBackground: #dedede;
   --sapLegend_CurrentDateTime: #c0399f;
@@ -12196,8 +12227,8 @@
   font-size: inherit
 }
 .fd-feed-list__body + .fd-feed-list__body {
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-feed-list--no-border .fd-feed-list__body {
   padding: 1rem 1rem .75rem;
@@ -21389,8 +21420,8 @@
   font-size: inherit
 }
 .fd-list__item {
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   background: #fff;
   background: var(--sapList_Background,#fff);
   position: relative
@@ -21543,14 +21574,14 @@
 .fd-list__item--action {
   padding: 0;
   text-align: center;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-bottom: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4));
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-bottom: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5));
   height: 2.75rem;
   height: var(--fdList_Item_Action_Height,2.75rem)
 }
 .fd-list__item--action:first-child {
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-top: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4))
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-top: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5))
 }
 .fd-list__item--action .fd-list__title {
   padding: 0 1rem;
@@ -22065,8 +22096,8 @@
 .fd-list__group-header {
   background: #fff;
   background: var(--sapList_GroupHeaderBackground,#fff);
-  border-bottom: .0625rem solid #d8d8d8;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d8d8d8);
+  border-bottom: .0625rem solid #d9d9d9;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d9d9d9);
   color: #32363a;
   color: var(--sapList_GroupHeaderTextColor,#32363a);
   -webkit-box-align: end;
@@ -26530,8 +26561,8 @@
 }
 .fd-notification--group .fd-notification__body {
   padding: 1rem .5rem 1rem 1rem;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-notification--group .fd-notification__body[dir=rtl],
 [dir=rtl] .fd-notification--group .fd-notification__body {
@@ -26559,8 +26590,8 @@
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   padding: .75rem .5rem .25rem 1rem
 }
 .fd-notification--group .fd-notification__group-header::after,
@@ -27271,8 +27302,8 @@ places the element far left of the screen. so it is not visible.
   font-size: inherit
 }
 .fd-list__item {
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   background: #fff;
   background: var(--sapList_Background,#fff);
   position: relative
@@ -27425,14 +27456,14 @@ places the element far left of the screen. so it is not visible.
 .fd-list__item--action {
   padding: 0;
   text-align: center;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-bottom: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4));
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-bottom: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5));
   height: 2.75rem;
   height: var(--fdList_Item_Action_Height,2.75rem)
 }
 .fd-list__item--action:first-child {
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-top: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4))
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-top: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5))
 }
 .fd-list__item--action .fd-list__title {
   padding: 0 1rem;
@@ -27947,8 +27978,8 @@ places the element far left of the screen. so it is not visible.
 .fd-list__group-header {
   background: #fff;
   background: var(--sapList_GroupHeaderBackground,#fff);
-  border-bottom: .0625rem solid #d8d8d8;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d8d8d8);
+  border-bottom: .0625rem solid #d9d9d9;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d9d9d9);
   color: #32363a;
   color: var(--sapList_GroupHeaderTextColor,#32363a);
   -webkit-box-align: end;
@@ -33645,8 +33676,8 @@ places the element far left of the screen. so it is not visible.
   -webkit-box-flex: 1;
   -ms-flex: auto;
   flex: auto;
-  border-bottom-color: #d8d8d8;
-  border-bottom-color: var(--sapList_GroupHeaderBorderColor,#d8d8d8)
+  border-bottom-color: #d9d9d9;
+  border-bottom-color: var(--sapList_GroupHeaderBorderColor,#d9d9d9)
 }
 .fd-product-switch__body--mobile .fd-product-switch__item::after,
 .fd-product-switch__body--mobile .fd-product-switch__item::before {
@@ -36925,8 +36956,8 @@ places the element far left of the screen. so it is not visible.
   border: 0;
   list-style: none;
   width: 100%;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-nested-list::after,
 .fd-nested-list::before {
@@ -37502,8 +37533,8 @@ places the element far left of the screen. so it is not visible.
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-nested-list__content::after,
 .fd-nested-list__content::before,
@@ -37779,8 +37810,8 @@ places the element far left of the screen. so it is not visible.
   height: 2.75rem;
   background: #fff;
   background: var(--sapList_GroupHeaderBackground,#fff);
-  border-bottom: .0625rem solid #d8d8d8;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d8d8d8);
+  border-bottom: .0625rem solid #d9d9d9;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d9d9d9);
   color: #32363a;
   color: var(--sapList_GroupHeaderTextColor,#32363a);
   display: -webkit-box;
@@ -38984,8 +39015,8 @@ places the element far left of the screen. so it is not visible.
   height: 2.75rem;
   background: #fff;
   background: var(--sapList_GroupHeaderBackground,#fff);
-  border-bottom: .0625rem solid #d8d8d8;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d8d8d8);
+  border-bottom: .0625rem solid #d9d9d9;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d9d9d9);
   color: #32363a;
   color: var(--sapList_GroupHeaderTextColor,#32363a);
   display: -webkit-box;
@@ -39059,8 +39090,8 @@ places the element far left of the screen. so it is not visible.
   content: " ";
   display: block;
   border-top: .125rem solid;
-  border-top-color: #d8d8d8;
-  border-top-color: var(--sapList_GroupHeaderBorderColor,#d8d8d8);
+  border-top-color: #d9d9d9;
+  border-top-color: var(--sapList_GroupHeaderBorderColor,#d9d9d9);
   margin: .25rem .5rem
 }
 .fd-side-nav--condensed {
@@ -40649,29 +40680,29 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
 .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
-  border-right: .0625rem solid #8b8b8b;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
+  border-right: .0625rem solid #8c8c8c;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8c8c8c)
 }
 .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
 .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
 [dir=rtl] .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
 [dir=rtl] .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-left: .0625rem solid #8b8b8b;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8b8b8b)
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: .0625rem solid #8c8c8c;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8c8c8c)
 }
 .fd-table__header {
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__header .fd-table__row {
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__header .fd-table__cell {
   height: 2.75rem;
@@ -40682,8 +40713,8 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-table__header .fd-table__cell--fixed {
   margin-top: -.0625rem;
-  border-top: .0625rem solid #e4e4e4;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   height: 2.8125rem
 }
 .fd-table__text {
@@ -40703,8 +40734,8 @@ places the element far left of the screen. so it is not visible.
   height: 2.75rem;
   padding: 0 .5rem;
   color: inherit;
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__cell--valid {
   color: #107e3e;
@@ -40748,10 +40779,10 @@ places the element far left of the screen. so it is not visible.
   left: 0;
   position: absolute;
   background-color: inherit;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-right: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40762,8 +40793,8 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-table__cell--fixed[dir=rtl],
 [dir=rtl] .fd-table__cell--fixed {
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-left: none;
   left: auto;
   right: 0
@@ -40821,16 +40852,16 @@ places the element far left of the screen. so it is not visible.
   padding: 0
 }
 .fd-table__body {
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__body .fd-table__cell {
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table__body .fd-table__cell--no-vertical-border {
   border-bottom-color: transparent
@@ -41114,8 +41145,8 @@ places the element far left of the screen. so it is not visible.
   background-color: var(--sapList_FooterBackground,#fafafa)
 }
 .fd-table__footer .fd-table__row {
-  border-top: .125rem solid #d8d8d8;
-  border-top: .125rem solid var(--sapList_TableFooterBorder,#d8d8d8);
+  border-top: .125rem solid #d9d9d9;
+  border-top: .125rem solid var(--sapList_TableFooterBorder,#d9d9d9);
   vertical-align: middle
 }
 .fd-table__footer .fd-table__cell {
@@ -41192,8 +41223,8 @@ places the element far left of the screen. so it is not visible.
 .fd-table--fixed .fd-table__header[dir=rtl],
 [dir=rtl] .fd-table--fixed .fd-table__body,
 [dir=rtl] .fd-table--fixed .fd-table__header {
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-right: none
 }
 .fd-table--pop-in .fd-table__text {
@@ -41220,13 +41251,13 @@ places the element far left of the screen. so it is not visible.
 .fd-table--pop-in .fd-table__row .fd-table__cell:last-child {
   margin-bottom: 0;
   margin-right: 0;
-  border-right: .0625rem solid #e4e4e4;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-right: .0625rem solid #e5e5e5;
+  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table--pop-in .fd-table__row .fd-table__cell:last-child[dir=rtl],
 [dir=rtl] .fd-table--pop-in .fd-table__row .fd-table__cell:last-child {
-  border-left: .0625rem solid #e4e4e4;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4);
+  border-left: .0625rem solid #e5e5e5;
+  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
   border-right: none
 }
 .fd-table--pop-in .fd-table__row--main {
@@ -41287,8 +41318,8 @@ places the element far left of the screen. so it is not visible.
 .fd-table--pop-in .fd-table__row--secondary {
   background-color: #fff;
   background-color: var(--sapList_Background,#fff);
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-table--pop-in .fd-table__row--secondary.is-hover,
 .fd-table--pop-in .fd-table__row--secondary:hover {
@@ -48517,8 +48548,8 @@ places the element far left of the screen. so it is not visible.
   padding-left: 2.75rem;
   background: #fff;
   background: var(--sapList_Background,#fff);
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container[dir=rtl],
 [dir=rtl] .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
@@ -49835,8 +49866,8 @@ places the element far left of the screen. so it is not visible.
 .fd-wizard__step--upcoming .fd-wizard__step-indicator {
   background: #fff;
   background: var(--sapObjectHeader_Background,#fff);
-  border: .0625rem solid var(--sapList_BorderColor,#e4e4e4);
-  border: var(--fdWizard_Upcoming_Step_Border,.0625rem solid var(--sapList_BorderColor,#e4e4e4));
+  border: .0625rem solid var(--sapList_BorderColor,#e5e5e5);
+  border: var(--fdWizard_Upcoming_Step_Border,.0625rem solid var(--sapList_BorderColor,#e5e5e5));
   color: var(--sapContent_LabelColor,#6a6d70);
   color: var(--fdWizard_Upcoming_Step_Color,var(--sapContent_LabelColor,#6a6d70))
 }
@@ -50150,8 +50181,8 @@ places the element far left of the screen. so it is not visible.
   margin: .5rem;
   max-width: 100%;
   min-width: 1rem;
-  border-bottom: .0625rem solid #e4e4e4;
-  border-bottom: .0625rem solid var(--sapList_BorderColor,#e4e4e4)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: .0625rem solid var(--sapList_BorderColor,#e5e5e5)
 }
 .fd-wizard__connector::after,
 .fd-wizard__connector::before {
