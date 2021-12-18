@@ -1,0 +1,7111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Icon 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b />
+    </div>
+    
+    
+    <div>
+      <b>
+        XL
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        L
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        M
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        S
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        XS
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Initials 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Thumbnail 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        XL
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        L
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        M
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        S
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        XS
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--xl"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class="fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+   
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--l"
+      style="background-image: url('/assets/images/backgrounds/city.jpg')"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class=" fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--m"
+      style="background-image: url('/assets/images/backgrounds/city.jpg')"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class="fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--s"
+      style="background-image: url('/assets/images/backgrounds/city.jpg')"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class=" fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--xs"
+      style="background-image: url('/assets/images/backgrounds/city.jpg')"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class=" fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Icon 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b />
+    </div>
+    
+    
+    <div>
+      <b>
+        XL
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        L
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        M
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        S
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        XS
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--bell"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Initials 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--indigo is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--indigo is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--indigo is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--indigo is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--crimson is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--crimson is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--crimson is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--crimson is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--cyan is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--cyan is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--cyan is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--cyan is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--lime is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--lime is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--lime is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--lime is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--pink is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--pink is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--pink is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--pink is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--yellow is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--yellow is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--yellow is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--yellow is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--teal is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--teal is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--teal is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--teal is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Thumbnail 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :normal XL
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :hover L
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :active M
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :focus S
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :disabled XS
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--xl"
+      tabindex="0"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class="fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+   
+    
+    <div
+      "=""
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--l is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class=" fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class="fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--s is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class=" fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--xs is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        aria-label="John Doe"
+        class=" fn-avatar__thumbnail"
+        role="img"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Rounded Decorative Avatar with Icon 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b />
+    </div>
+    
+    
+    <div>
+      <b>
+        XL
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        L
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        M
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        S
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        XS
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Rounded Decorative Avatar with Initials 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--indigo"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--crimson"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--cyan"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--lime"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--pink"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--yellow"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xl fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--l fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--m fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--s fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--xs fn-avatar--teal"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Rounded Interactive Avatar with Icon 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b />
+    </div>
+    
+    
+    <div>
+      <b>
+        XL
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        L
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        M
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        S
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        XS
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__icon"
+        role="presentation"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--person-placeholder"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Avatar Rounded Interactive Avatar with Initials 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :active
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+       
+
+  </div>
+  
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Indigo
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--indigo"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--indigo is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--indigo is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--indigo is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--indigo is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Crimson
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--crimson"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--crimson is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--crimson is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--crimson is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--crimson is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Cyan
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--cyan"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--cyan is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--cyan is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--cyan is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--cyan is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Lime
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--lime"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--lime is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--lime is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--lime is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--lime is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Pink
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--pink"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--pink is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--pink is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--pink is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--pink is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Yellow
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--yellow"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--yellow is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--yellow is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--yellow is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--yellow is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        Teal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--teal"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XL
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--teal is-hover"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        L
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--teal is-active"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        M
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--teal is-focus"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        S
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--teal is-disabled"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fn-avatar__initials"
+      >
+        XS
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+</section>
+`;
