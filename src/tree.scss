@@ -82,7 +82,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 }
 
 @mixin tree-focus() {
-  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle);
   outline-width: var(--sapContent_FocusWidth);
   outline-color: var(--sapContent_FocusColor);
   outline-offset: -0.125rem;

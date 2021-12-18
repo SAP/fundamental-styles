@@ -30,6 +30,7 @@ const Header = ({onThemeChange, onDirectionalityChange}) => {
                     <option value='sap_fiori_3_light_dark'>Light Dark</option>
                     <option value='sap_fiori_3_hcw'>High Contrast White</option>
                     <option value='sap_fiori_3_hcb'>High Contrast Black</option>
+                    <option value='sap_horizon'>Horizon Preview</option>
                 </select>
                 <a className='fddocs-header__anchor' href='https://github.com/SAP/fundamental-styles'
                     target='_blank'>
