@@ -1,4 +1,22 @@
 
+## [0.21.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.58...v0.21.0-rc.59) (2021-12-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** If > 9 pages then 9 elements should be shown - including page links, more, current page input. Otherwise, all pages should be shown, use the link instead of input with .is-active class or aria-selected="true" attribute for the current page. Input should still be present to be shown in the mobile mode, but it's hidden in desktop mode if < 9 pages.
+
+Add an additional label with class .fd-pagination__label after the input in the mobile mode with the number of pages available.
+
+### Features
+
+* **fn:** introduce Avatar component ([#3005](https://github.com/SAP/fundamental-styles/issues/3005)) ([c133400](https://github.com/SAP/fundamental-styles/commit/c1334001e2956e3fb7200310ce28002f53b46605))
+
+
+### Bug Fixes
+
+* **styles:** pagination component update due to new designs ([#2973](https://github.com/SAP/fundamental-styles/issues/2973)) ([6dbf499](https://github.com/SAP/fundamental-styles/commit/6dbf4991eb51e3c73123c0138d809546c7891a38))
+
 ## [0.21.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.57...v0.21.0-rc.58) (2021-12-17)
 
 ## [0.21.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.56...v0.21.0-rc.57) (2021-12-16)
