@@ -1,0 +1,574 @@
+@charset "UTF-8";
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-notification {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #fff;
+  background-color: var(--sapList_Background,#fff);
+  -webkit-box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);
+  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16));
+  box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);
+  box-shadow: var(--sapContent_Shadow0,0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16));
+  border-radius: .25rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  max-width: 40rem;
+  box-sizing: border-box;
+  padding: 1rem .5rem 1rem 1rem
+}
+.fd-notification::after,
+.fd-notification::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification[dir=rtl],
+[dir=rtl] .fd-notification {
+  padding-right: 1rem;
+  padding-left: .5rem
+}
+.fd-notification__body {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.fd-notification__body::after,
+.fd-notification__body::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__body--message {
+  padding-top: 1rem
+}
+.fd-notification__content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  margin-left: 1rem;
+  overflow: auto
+}
+.fd-notification__content::after,
+.fd-notification__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__content[dir=rtl],
+[dir=rtl] .fd-notification__content {
+  margin-right: 1rem;
+  margin-left: 0
+}
+.fd-notification__content:first-child {
+  margin-left: 0
+}
+.fd-notification__content:first-child[dir=rtl],
+[dir=rtl] .fd-notification__content:first-child {
+  margin-right: 0
+}
+.fd-notification .fd-notification__title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: var(--sapFontHeaderWeight);
+  font-size: .875rem;
+  font-size: var(--sapFontHeader6Size,.875rem);
+  max-height: 2.5rem;
+  margin-bottom: .25rem
+}
+.fd-notification .fd-notification__title::after,
+.fd-notification .fd-notification__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification .fd-notification__title--unread {
+  font-weight: 700
+}
+.fd-notification .fd-notification__paragraph {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  padding-top: .5rem;
+  max-height: 2.75rem
+}
+.fd-notification .fd-notification__paragraph::after,
+.fd-notification .fd-notification__paragraph::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification .fd-notification__footer {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: .5rem
+}
+.fd-notification .fd-notification__footer::after,
+.fd-notification .fd-notification__footer::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification .fd-notification__footer-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%
+}
+.fd-notification .fd-notification__footer-content:only-child {
+  max-width: 100%
+}
+.fd-notification .fd-notification__separator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin: 0 .5rem;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem)
+}
+.fd-notification .fd-notification__separator::after,
+.fd-notification .fd-notification__separator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification .fd-notification__separator::before {
+  content: '\00b7'
+}
+.fd-notification__header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.fd-notification__header::after,
+.fd-notification__header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__actions {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 1rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto
+}
+.fd-notification__actions::after,
+.fd-notification__actions::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__actions[dir=rtl],
+[dir=rtl] .fd-notification__actions {
+  padding-left: 0;
+  padding-right: 1rem
+}
+.fd-notification__actions > * {
+  margin-left: .5rem
+}
+.fd-notification__actions > :first-child {
+  margin-left: 0
+}
+.fd-notification__actions > [dir=rtl],
+[dir=rtl] .fd-notification__actions > * {
+  margin-left: 0;
+  margin-right: .5rem
+}
+.fd-notification__limit {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 1rem;
+  text-align: center
+}
+.fd-notification__limit::after,
+.fd-notification__limit::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__limit--title {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 1rem;
+  font-size: var(--sapFontHeader5Size,1rem)
+}
+.fd-notification__limit--title::after,
+.fd-notification__limit--title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__limit--description {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin: .5rem 0 0
+}
+.fd-notification__limit--description::after,
+.fd-notification__limit--description::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__indicator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-right: .5rem
+}
+.fd-notification__indicator::after,
+.fd-notification__indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification__indicator[dir=rtl],
+[dir=rtl] .fd-notification__indicator {
+  padding-right: 0;
+  padding-left: .5rem
+}
+.fd-notification__indicator--error {
+  color: #aa0808;
+  color: var(--sapErrorColor,#aa0808)
+}
+.fd-notification__indicator--error::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-notification__indicator--error::before {
+  content: ""
+}
+.fd-notification__indicator--success {
+  color: #256f3a;
+  color: var(--sapSuccessColor,#256f3a)
+}
+.fd-notification__indicator--success::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-notification__indicator--success::before {
+  content: ""
+}
+.fd-notification__indicator--warning {
+  color: #e76500;
+  color: var(--sapWarningColor,#e76500)
+}
+.fd-notification__indicator--warning::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-notification__indicator--warning::before {
+  content: ""
+}
+.fd-notification__indicator--information {
+  color: #0070f2;
+  color: var(--sapInformationColor,#0070f2)
+}
+.fd-notification__indicator--information::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-notification__indicator--information::before {
+  content: ""
+}
+.fd-notification--group {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden
+}
+.fd-notification--group::after,
+.fd-notification--group::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification--group .fd-notification__body {
+  padding: 1rem .5rem 1rem 1rem;
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+}
+.fd-notification--group .fd-notification__body[dir=rtl],
+[dir=rtl] .fd-notification--group .fd-notification__body {
+  padding-left: .5rem;
+  padding-right: 1rem
+}
+.fd-notification--group .fd-notification__group-header {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  padding: .75rem .5rem .25rem 1rem
+}
+.fd-notification--group .fd-notification__group-header::after,
+.fd-notification--group .fd-notification__group-header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-notification--group .fd-notification__group-header[dir=rtl],
+[dir=rtl] .fd-notification--group .fd-notification__group-header {
+  padding-left: .5rem;
+  padding-right: 1rem
+}
+.fd-notification--group[dir=rtl],
+[dir=rtl] .fd-notification--group {
+  padding-left: 0;
+  padding-right: 0
+}
+.fd-notification--mobile {
+  padding: 0
+}
+.fd-notification--mobile .fd-notification__indicator {
+  padding-right: .25rem
+}
+.fd-notification--mobile .fd-notification__indicator[dir=rtl],
+[dir=rtl] .fd-notification--mobile .fd-notification__indicator {
+  padding-right: 0;
+  padding-left: .75rem
+}
+.fd-notification--mobile .fd-notification__group-header {
+  padding: .5rem .5rem 0 .5rem
+}
+.fd-notification--mobile .fd-notification__body {
+  padding: 1rem .5rem 1rem .75rem
+}
+.fd-notification--mobile .fd-notification__body[dir=rtl],
+[dir=rtl] .fd-notification--mobile .fd-notification__body {
+  padding-right: .75rem;
+  padding-left: .5rem
+}
+.fd-notification--mobile .fd-notification__content {
+  margin-left: .75rem
+}
+.fd-notification--mobile .fd-notification__content[dir=rtl],
+[dir=rtl] .fd-notification--mobile .fd-notification__content {
+  margin-right: .75rem;
+  margin-left: 0
+}

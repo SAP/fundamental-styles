@@ -1,0 +1,330 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-step-input {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  width: auto;
+  border-style: solid;
+  border-width: .0625rem;
+  border-width: var(--sapField_BorderWidth,.0625rem);
+  border-color: #788fa6;
+  border-color: var(--sapField_BorderColor,#788fa6);
+  border-radius: .25rem;
+  border-radius: var(--sapField_BorderCornerRadius,.25rem);
+  background-color: #eff1f2;
+  background-color: var(--sapField_Background,#eff1f2);
+  height: 2.25rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 0
+}
+.fd-step-input::after,
+.fd-step-input::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-step-input.is-hover,
+.fd-step-input:hover {
+  background-color: #fff;
+  background-color: var(--sapField_Hover_Background,#fff);
+  border-color: #788fa6;
+  border-color: var(--sapField_Hover_BorderColor,#788fa6)
+}
+.fd-step-input.is-success {
+  background-color: #f5fae5;
+  background-color: var(--sapField_SuccessBackground,#f5fae5);
+  border-color: #30914c;
+  border-color: var(--sapField_SuccessColor,#30914c);
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
+}
+.fd-step-input.is-success.is-hover,
+.fd-step-input.is-success:hover {
+  background-color: #f5fae5;
+  background-color: var(--sapField_SuccessBackground,#f5fae5);
+  border-color: #30914c;
+  border-color: var(--sapField_SuccessColor,#30914c)
+}
+.fd-step-input.is-error {
+  background-color: #ffeaf4;
+  background-color: var(--sapField_InvalidBackground,#ffeaf4);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #f53232;
+  border-color: var(--sapField_InvalidColor,#f53232);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InvalidBorderStyle,solid)
+}
+.fd-step-input.is-error.is-hover,
+.fd-step-input.is-error:hover {
+  background-color: #ffeaf4;
+  background-color: var(--sapField_InvalidBackground,#ffeaf4);
+  border-color: #f53232;
+  border-color: var(--sapField_InvalidColor,#f53232)
+}
+.fd-step-input.is-alert,
+.fd-step-input.is-warning {
+  background-color: #fff8d6;
+  background-color: var(--sapField_WarningBackground,#fff8d6);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #e76500;
+  border-color: var(--sapField_WarningColor,#e76500);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_WarningBorderStyle,solid)
+}
+.fd-step-input.is-alert.is-hover,
+.fd-step-input.is-alert:hover,
+.fd-step-input.is-warning.is-hover,
+.fd-step-input.is-warning:hover {
+  background-color: #fff8d6;
+  background-color: var(--sapField_WarningBackground,#fff8d6);
+  border-color: #e76500;
+  border-color: var(--sapField_WarningColor,#e76500)
+}
+.fd-step-input.is-information {
+  background-color: #e1f4ff;
+  background-color: var(--sapField_InformationBackground,#e1f4ff);
+  border-color: #0070f2;
+  border-color: var(--sapField_InformationColor,#0070f2);
+  border-width: .125rem;
+  border-width: var(--sapField_InformationBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InformationBorderStyle,solid)
+}
+.fd-step-input.is-information.is-hover,
+.fd-step-input.is-information:hover {
+  background-color: #e1f4ff;
+  background-color: var(--sapField_InformationBackground,#e1f4ff);
+  border-color: #0070f2;
+  border-color: var(--sapField_InformationColor,#0070f2)
+}
+.fd-step-input.is-focus,
+.fd-step-input:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #0070f2;
+  outline-color: var(--sapContent_FocusColor,#0070f2);
+  outline-style: solid;
+  outline-style: var(--sapContent_FocusStyle,solid)
+}
+.fd-step-input.is-alert,
+.fd-step-input.is-error,
+.fd-step-input.is-information,
+.fd-step-input.is-warning {
+  border-width: .125rem;
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
+}
+.fd-step-input.is-alert.is-focus,
+.fd-step-input.is-alert:focus,
+.fd-step-input.is-error.is-focus,
+.fd-step-input.is-error:focus,
+.fd-step-input.is-information.is-focus,
+.fd-step-input.is-information:focus,
+.fd-step-input.is-warning.is-focus,
+.fd-step-input.is-warning:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.25rem
+}
+.fd-step-input.is-disabled,
+.fd-step-input:disabled,
+.fd-step-input[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4)
+}
+.fd-step-input.is-disabled::-webkit-input-placeholder,
+.fd-step-input:disabled::-webkit-input-placeholder,
+.fd-step-input[aria-disabled=true]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-step-input.is-disabled::-moz-placeholder,
+.fd-step-input:disabled::-moz-placeholder,
+.fd-step-input[aria-disabled=true]::-moz-placeholder {
+  color: transparent
+}
+.fd-step-input.is-disabled:-ms-input-placeholder,
+.fd-step-input:disabled:-ms-input-placeholder,
+.fd-step-input[aria-disabled=true]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-step-input.is-disabled::-ms-input-placeholder,
+.fd-step-input:disabled::-ms-input-placeholder,
+.fd-step-input[aria-disabled=true]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-step-input.is-disabled::placeholder,
+.fd-step-input:disabled::placeholder,
+.fd-step-input[aria-disabled=true]::placeholder {
+  color: transparent
+}
+.fd-step-input.is-readonly,
+.fd-step-input[aria-readonly=true],
+.fd-step-input[readonly] {
+  background-color: rgba(242,242,242,.5);
+  background-color: #eff1f2;
+  background-color: var(--sapField_ReadOnly_Background,#eff1f2);
+  border-color: #788fa6;
+  border-color: var(--sapField_ReadOnly_BorderColor,#788fa6)
+}
+.fd-step-input.is-readonly::-webkit-input-placeholder,
+.fd-step-input[aria-readonly=true]::-webkit-input-placeholder,
+.fd-step-input[readonly]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-step-input.is-readonly::-moz-placeholder,
+.fd-step-input[aria-readonly=true]::-moz-placeholder,
+.fd-step-input[readonly]::-moz-placeholder {
+  color: transparent
+}
+.fd-step-input.is-readonly:-ms-input-placeholder,
+.fd-step-input[aria-readonly=true]:-ms-input-placeholder,
+.fd-step-input[readonly]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-step-input.is-readonly::-ms-input-placeholder,
+.fd-step-input[aria-readonly=true]::-ms-input-placeholder,
+.fd-step-input[readonly]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-step-input.is-readonly::placeholder,
+.fd-step-input[aria-readonly=true]::placeholder,
+.fd-step-input[readonly]::placeholder {
+  color: transparent
+}
+.fd-step-input:focus-within::after {
+  border-width: .125rem;
+  border-width: var(--sapContent_FocusWidth,.125rem);
+  border-color: #0070f2;
+  border-color: var(--sapContent_FocusColor,#0070f2);
+  border-style: solid;
+  border-style: var(--sapContent_FocusStyle,solid);
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  top: .0625rem;
+  bottom: .0625rem;
+  left: .0625rem;
+  right: .0625rem;
+  z-index: 10
+}
+.fd-step-input__button.fd-button {
+  width: 2.125rem;
+  min-width: 2.125rem;
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fd-step-input__button.fd-button::after,
+.fd-step-input__button.fd-button::before {
+  font-size: .875rem;
+  margin: 0
+}
+.fd-step-input__button.fd-button.is-focus,
+.fd-step-input__button.fd-button:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-step-input__button.fd-button.is-focus.is-hover,
+.fd-step-input__button.fd-button.is-focus:hover,
+.fd-step-input__button.fd-button:focus.is-hover,
+.fd-step-input__button.fd-button:focus:hover {
+  z-index: auto
+}
+.fd-step-input__button.fd-button--compact {
+  width: 1.5rem;
+  min-width: 1.5rem
+}
+.fd-step-input__input.fd-input {
+  width: auto;
+  height: 100%;
+  text-align: right;
+  border: none;
+  margin: 0;
+  padding: 0 .25rem;
+  background-color: transparent
+}
+.fd-step-input__input.fd-input[dir=rtl],
+[dir=rtl] .fd-step-input__input.fd-input {
+  text-align: left
+}
+.fd-step-input__input.fd-input:focus {
+  outline: 0
+}
+.fd-step-input__input.fd-input--compact {
+  height: 100%
+}
+.fd-step-input__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-step-input.is-error .fd-step-input__button.fd-button,
+.fd-step-input.is-information .fd-step-input__button.fd-button,
+.fd-step-input.is-warning .fd-step-input__button.fd-button {
+  width: calc(2.125rem - .125rem);
+  min-width: calc(2.125rem - .125rem)
+}
+.fd-step-input--compact {
+  height: 1.625rem
+}
+.fd-step-input--compact.is-error .fd-step-input__button.fd-button,
+.fd-step-input--compact.is-information .fd-step-input__button.fd-button,
+.fd-step-input--compact.is-warning .fd-step-input__button.fd-button {
+  width: calc(1.5rem - .125rem);
+  min-width: calc(1.5rem - .125rem)
+}
+.fd-step-input.is-readonly .fd-step-input__button.fd-button {
+  display: none
+}

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.20.1
+ * Fundamental Library Styles v0.20.3
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -310,7 +310,7 @@
 .fd-shellbar .fd-button.fd-shellbar__button:focus {
   z-index: 5;
   outline: .125rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.125rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.125rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem;
   outline-color: #000;
   outline-color: var(--sapContent_ContrastFocusColor,#000)

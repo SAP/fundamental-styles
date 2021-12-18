@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+/*!
+.fd-alert+(--information, --success, --warning, --error, --no-icon)
+    .fd-alert__close
+*/
+.fd-alert {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  position: relative;
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  background-color: #f5f6f7;
+  background-color: var(--sapNeutralBackground,#f5f6f7);
+  border: 1px solid;
+  border-color: #6e87a0;
+  border-color: var(--sapNeutralBorderColor,#6e87a0);
+  border-radius: .25rem;
+  padding: .4375rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2rem
+}
+.fd-alert::after,
+.fd-alert::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-alert .sap-icon--message-error,
+.fd-alert .sap-icon--message-information,
+.fd-alert .sap-icon--message-success,
+.fd-alert .sap-icon--message-warning {
+  display: none
+}
+.fd-alert__close {
+  position: absolute;
+  top: .125rem;
+  right: .125rem
+}
+.fd-alert__close::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert__close::before {
+  content: ""
+}
+.fd-alert__close[dir=rtl],
+[dir=rtl] .fd-alert__close {
+  left: .125rem;
+  right: auto
+}
+.fd-alert--dismissible {
+  padding-right: 2.5rem
+}
+.fd-alert--dismissible[dir=rtl],
+[dir=rtl] .fd-alert--dismissible {
+  padding-right: 1rem;
+  padding-left: 2.5rem
+}
+.fd-alert--error,
+.fd-alert--information,
+.fd-alert--success,
+.fd-alert--warning {
+  padding-left: 2.5rem
+}
+.fd-alert--error::after,
+.fd-alert--error::before,
+.fd-alert--information::after,
+.fd-alert--information::before,
+.fd-alert--success::after,
+.fd-alert--success::before,
+.fd-alert--warning::after,
+.fd-alert--warning::before {
+  position: absolute;
+  width: 2.5rem;
+  top: .4375rem;
+  left: 0
+}
+.fd-alert--error[dir=rtl],
+.fd-alert--information[dir=rtl],
+.fd-alert--success[dir=rtl],
+.fd-alert--warning[dir=rtl],
+[dir=rtl] .fd-alert--error,
+[dir=rtl] .fd-alert--information,
+[dir=rtl] .fd-alert--success,
+[dir=rtl] .fd-alert--warning {
+  padding-right: 2.5rem;
+  padding-left: 1rem
+}
+.fd-alert--error[dir=rtl]::after,
+.fd-alert--error[dir=rtl]::before,
+.fd-alert--information[dir=rtl]::after,
+.fd-alert--information[dir=rtl]::before,
+.fd-alert--success[dir=rtl]::after,
+.fd-alert--success[dir=rtl]::before,
+.fd-alert--warning[dir=rtl]::after,
+.fd-alert--warning[dir=rtl]::before,
+[dir=rtl] .fd-alert--error::after,
+[dir=rtl] .fd-alert--error::before,
+[dir=rtl] .fd-alert--information::after,
+[dir=rtl] .fd-alert--information::before,
+[dir=rtl] .fd-alert--success::after,
+[dir=rtl] .fd-alert--success::before,
+[dir=rtl] .fd-alert--warning::after,
+[dir=rtl] .fd-alert--warning::before {
+  left: auto;
+  right: 0
+}
+.fd-alert--error.fd-alert--dismissible,
+.fd-alert--information.fd-alert--dismissible,
+.fd-alert--success.fd-alert--dismissible,
+.fd-alert--warning.fd-alert--dismissible {
+  padding-right: 2.5rem
+}
+.fd-alert--error.fd-alert--dismissible[dir=rtl],
+.fd-alert--information.fd-alert--dismissible[dir=rtl],
+.fd-alert--success.fd-alert--dismissible[dir=rtl],
+.fd-alert--warning.fd-alert--dismissible[dir=rtl],
+[dir=rtl] .fd-alert--error.fd-alert--dismissible,
+[dir=rtl] .fd-alert--information.fd-alert--dismissible,
+[dir=rtl] .fd-alert--success.fd-alert--dismissible,
+[dir=rtl] .fd-alert--warning.fd-alert--dismissible {
+  padding-left: 2.5rem
+}
+.fd-alert--error[dir=rtl]::after,
+.fd-alert--information[dir=rtl]::after,
+.fd-alert--success[dir=rtl]::after,
+.fd-alert--warning[dir=rtl]::after,
+[dir=rtl] .fd-alert--error::after,
+[dir=rtl] .fd-alert--information::after,
+[dir=rtl] .fd-alert--success::after,
+[dir=rtl] .fd-alert--warning::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  position: absolute;
+  right: 0
+}
+.fd-alert--warning {
+  background-color: #fff8d6;
+  background-color: var(--sapWarningBackground,#fff8d6);
+  border-color: #e76500;
+  border-color: var(--sapWarningBorderColor,#e76500)
+}
+.fd-alert--warning::after,
+.fd-alert--warning::before {
+  color: #e76500;
+  color: var(--sapWarningBorderColor,#e76500)
+}
+.fd-alert--warning::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--warning::before {
+  content: ""
+}
+.fd-alert--warning[dir=rtl]::after,
+[dir=rtl] .fd-alert--warning::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--warning[dir=rtl]::after,
+[dir=rtl] .fd-alert--warning::after {
+  content: ""
+}
+.fd-alert--error {
+  background-color: #ffeaf4;
+  background-color: var(--sapErrorBackground,#ffeaf4);
+  border-color: #f53232;
+  border-color: var(--sapErrorBorderColor,#f53232)
+}
+.fd-alert--error::after,
+.fd-alert--error::before {
+  color: #f53232;
+  color: var(--sapErrorBorderColor,#f53232)
+}
+.fd-alert--error::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--error::before {
+  content: ""
+}
+.fd-alert--error[dir=rtl]::after,
+[dir=rtl] .fd-alert--error::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--error[dir=rtl]::after,
+[dir=rtl] .fd-alert--error::after {
+  content: ""
+}
+.fd-alert--success {
+  background-color: #f5fae5;
+  background-color: var(--sapSuccessBackground,#f5fae5);
+  border-color: #30914c;
+  border-color: var(--sapSuccessBorderColor,#30914c)
+}
+.fd-alert--success::after,
+.fd-alert--success::before {
+  color: #30914c;
+  color: var(--sapSuccessBorderColor,#30914c)
+}
+.fd-alert--success::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--success::before {
+  content: ""
+}
+.fd-alert--success[dir=rtl]::after,
+[dir=rtl] .fd-alert--success::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--success[dir=rtl]::after,
+[dir=rtl] .fd-alert--success::after {
+  content: ""
+}
+.fd-alert--information {
+  background-color: #e1f4ff;
+  background-color: var(--sapInformationBackground,#e1f4ff);
+  border-color: #0070f2;
+  border-color: var(--sapInformationBorderColor,#0070f2)
+}
+.fd-alert--information::after,
+.fd-alert--information::before {
+  color: #0070f2;
+  color: var(--sapInformationBorderColor,#0070f2)
+}
+.fd-alert--information::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--information::before {
+  content: ""
+}
+.fd-alert--information[dir=rtl]::after,
+[dir=rtl] .fd-alert--information::after {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-alert--information[dir=rtl]::after,
+[dir=rtl] .fd-alert--information::after {
+  content: ""
+}
+.fd-alert--no-icon {
+  padding-left: 1rem
+}
+.fd-alert--no-icon::before {
+  display: none
+}
+.fd-alert--no-icon[dir=rtl],
+[dir=rtl] .fd-alert--no-icon {
+  padding-right: 1rem
+}
+.fd-alert--no-icon[dir=rtl]::after,
+[dir=rtl] .fd-alert--no-icon::after {
+  display: none
+}
+.fd-alert__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1rem
+}
+.fd-alert__text::after,
+.fd-alert__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}

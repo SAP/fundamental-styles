@@ -1,0 +1,132 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-feed-input {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 1rem .5rem 1rem 1rem;
+  background-color: #eff1f2;
+  background-color: var(--sapField_Background,#eff1f2)
+}
+.fd-feed-input::after,
+.fd-feed-input::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-feed-input[dir=rtl],
+[dir=rtl] .fd-feed-input {
+  padding-right: 1rem;
+  padding-left: .5rem
+}
+.fd-feed-input.is-disabled,
+.fd-feed-input:disabled,
+.fd-feed-input[aria-disabled=true] {
+  cursor: not-allowed;
+  pointer-events: initial;
+  opacity: initial
+}
+.fd-feed-input.is-disabled textarea::-webkit-input-placeholder,
+.fd-feed-input:disabled textarea::-webkit-input-placeholder,
+.fd-feed-input[aria-disabled=true] textarea::-webkit-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea::-moz-placeholder,
+.fd-feed-input:disabled textarea::-moz-placeholder,
+.fd-feed-input[aria-disabled=true] textarea::-moz-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea:-ms-input-placeholder,
+.fd-feed-input:disabled textarea:-ms-input-placeholder,
+.fd-feed-input[aria-disabled=true] textarea:-ms-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea::-ms-input-placeholder,
+.fd-feed-input:disabled textarea::-ms-input-placeholder,
+.fd-feed-input[aria-disabled=true] textarea::-ms-input-placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input.is-disabled textarea::placeholder,
+.fd-feed-input:disabled textarea::placeholder,
+.fd-feed-input[aria-disabled=true] textarea::placeholder {
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
+  color: #32363a;
+  color: var(--sapTextColor,#32363a)
+}
+.fd-feed-input .fd-feed-input__thumb {
+  display: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-left: 0;
+  margin-right: .5rem
+}
+.fd-feed-input .fd-feed-input__thumb[dir=rtl],
+[dir=rtl] .fd-feed-input .fd-feed-input__thumb {
+  margin-left: .5rem;
+  margin-right: 0
+}
+.fd-feed-input .fd-feed-input__textarea {
+  min-height: 3rem;
+  max-height: 20rem;
+  margin: 0;
+  padding: .3125rem .5rem
+}
+.fd-feed-input .fd-feed-input__submit-button {
+  margin-top: auto;
+  margin-bottom: .375rem;
+  margin-left: .5rem;
+  margin-right: 0
+}
+.fd-feed-input .fd-feed-input__submit-button[dir=rtl],
+[dir=rtl] .fd-feed-input .fd-feed-input__submit-button {
+  margin-left: 0;
+  margin-right: .5rem;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+@media (min-width:25rem) {
+  .fd-feed-input {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+  }
+  .fd-feed-input .fd-feed-input__thumb {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+  }
+}

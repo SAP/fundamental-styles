@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.20.1
+ * Fundamental Library Styles v0.20.3
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -328,7 +328,7 @@
 }
 .fd-slider__handle:focus {
   outline: .0625rem dotted #0854a0;
-  outline: .0625rem dotted var(--sapButton_Hover_BorderColor,#0854a0);
+  outline: .0625rem var(--sapContent_FocusStyle,dotted) var(--sapButton_Hover_BorderColor,#0854a0);
   outline-offset: .0625rem
 }
 .fd-slider__handle.is-hover,

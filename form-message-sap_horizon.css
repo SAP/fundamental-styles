@@ -1,0 +1,75 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+/*!
+.fd-form-message(--help, --error, --warning)
+*/
+.fd-form-message {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .5rem;
+  min-width: 6rem;
+  max-width: 22rem;
+  width: 100%;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  font-weight: 400;
+  line-height: normal;
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  white-space: pre-line!important;
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3);
+  -webkit-box-shadow: var(--fdMessage_Box_Shadow,var(--sapContent_Shadow1,0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3)));
+  box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3);
+  box-shadow: var(--fdMessage_Box_Shadow,var(--sapContent_Shadow1,0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3)));
+  border: none;
+  border: var(--fdMessage_Border,none)
+}
+.fd-form-message::after,
+.fd-form-message::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-form-message[dir=rtl],
+[dir=rtl] .fd-form-message {
+  right: 0
+}
+.fd-form-message--static {
+  margin-top: 0;
+  display: table;
+  width: auto
+}
+.fd-form-message--error {
+  background-color: #ffeaf4;
+  background-color: var(--sapErrorBackground,#ffeaf4)
+}
+.fd-form-message--warning {
+  background-color: #fff8d6;
+  background-color: var(--sapWarningBackground,#fff8d6)
+}
+.fd-form-message--success {
+  background-color: #f5fae5;
+  background-color: var(--sapSuccessBackground,#f5fae5)
+}
+.fd-form-message--information {
+  background-color: #e1f4ff;
+  background-color: var(--sapInformationBackground,#e1f4ff)
+}

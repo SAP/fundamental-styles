@@ -1,0 +1,361 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-carousel {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  min-width: 15.5rem;
+  max-width: 100%;
+  height: 100%
+}
+.fd-carousel::after,
+.fd-carousel::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel.is-hover .fd-carousel__content .fd-carousel__button,
+.fd-carousel:hover .fd-carousel__content .fd-carousel__button {
+  display: block
+}
+.fd-carousel__content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 100%;
+  background: #f5f6f7;
+  background: var(--sapBackgroundColor,#f5f6f7);
+  position: relative
+}
+.fd-carousel__content::after,
+.fd-carousel__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__content .fd-carousel__button.fd-button {
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3));
+  box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3);
+  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3));
+  position: absolute;
+  margin: 0;
+  top: calc(50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--left {
+  left: .5rem
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--left[dir=rtl],
+[dir=rtl] .fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--left {
+  left: initial;
+  right: .5rem
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--right {
+  right: .5rem
+}
+.fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--right[dir=rtl],
+[dir=rtl] .fd-carousel__content .fd-carousel__button.fd-button.fd-carousel__button--right {
+  right: initial;
+  left: .5rem
+}
+.fd-carousel__content--display {
+  overflow: hidden
+}
+.fd-carousel__content--horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+.fd-carousel__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: none
+}
+.fd-carousel__item::after,
+.fd-carousel__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__item--active {
+  display: block
+}
+.fd-carousel__page-indicator-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 2.75rem;
+  max-height: 3.5rem;
+  background: #fff;
+  background: var(--sapPageFooter_Background,#fff);
+  padding: .375rem .5rem;
+  border-top: .0625rem solid #d9d9d9;
+  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#d9d9d9)
+}
+.fd-carousel__page-indicator-container::after,
+.fd-carousel__page-indicator-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__page-indicator-container:first-child {
+  border-top: none;
+  border-bottom: .0625rem solid #d9d9d9;
+  border-bottom: .0625rem solid var(--sapPageFooter_BorderColor,#d9d9d9)
+}
+.fd-carousel__page-indicators {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 9rem;
+  padding: .5rem
+}
+.fd-carousel__page-indicators::after,
+.fd-carousel__page-indicators::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__page-indicator {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style-type: none;
+  margin: 0 .375rem;
+  margin: var(--fdCarousel_Dot_Margin,0 .375rem);
+  width: .25rem;
+  width: var(--fdCarousel_Dot_Size,.25rem);
+  height: .25rem;
+  height: var(--fdCarousel_Dot_Size,.25rem);
+  border-radius: 50%;
+  background-color: #223548;
+  background-color: var(--sapContent_NonInteractiveIconColor,#223548);
+  border: none;
+  border: var(--fdCarousel_Dot_Border,none)
+}
+.fd-carousel__page-indicator::after,
+.fd-carousel__page-indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__page-indicator--active {
+  margin: 0 .25rem;
+  width: .5rem;
+  height: .5rem;
+  background-color: #0070f2;
+  background-color: var(--sapSelectedColor,#0070f2)
+}
+.fd-carousel__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #223548;
+  color: var(--sapPageFooter_TextColor,#223548);
+  text-align: center
+}
+.fd-carousel__text::after,
+.fd-carousel__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-carousel__button.fd-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 2.125rem;
+  min-width: 2.125rem;
+  max-width: 2.125rem;
+  height: 2.125rem;
+  min-height: 2.125rem;
+  max-height: 2.125rem;
+  border-radius: 50%;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: .25rem
+}
+.fd-carousel__button.fd-button::before {
+  left: -.25rem;
+  right: -.25rem;
+  height: 2.625rem;
+  width: 2.625rem
+}
+.fd-carousel__button.fd-button[dir=rtl] > [class*=sap-icon],
+[dir=rtl] .fd-carousel__button.fd-button > [class*=sap-icon] {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.fd-carousel__button.fd-button.is-focus,
+.fd-carousel__button.fd-button:focus {
+  z-index: 5;
+  outline-offset: .0625rem
+}
+.fd-carousel__button.fd-button.is-hover,
+.fd-carousel__button.fd-button:hover {
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3));
+  box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3);
+  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3))
+}
+.fd-carousel__button.fd-button.is-active,
+.fd-carousel__button.fd-button:active {
+  outline: .125rem solid #0070f2;
+  outline: var(--sapContent_FocusWidth,.125rem) var(--sapContent_FocusStyle,solid) var(--sapContent_FocusColor,#0070f2);
+  outline-offset: -.1875rem;
+  outline-offset: .0625rem
+}
+.fd-carousel__button.fd-button.is-active.fd-carousel--toggled,
+.fd-carousel__button.fd-button:active.fd-carousel--toggled {
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-carousel--no-navigation .fd-carousel__button.fd-button {
+  display: none
+}
+.fd-carousel--no-navigation.is-hover .fd-carousel__content .fd-carousel__button,
+.fd-carousel--no-navigation:hover .fd-carousel__content .fd-carousel__button {
+  display: none
+}

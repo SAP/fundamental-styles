@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.1
+ * Fundamental Library Styles v0.20.3
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -7021,7 +7021,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem
 }
 .fd-button.is-focus.fd-button--toggled,
@@ -9865,7 +9865,7 @@
 .fd-carousel__button.fd-button.is-active,
 .fd-carousel__button.fd-button:active {
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem;
   outline-offset: .0625rem
 }
@@ -18966,7 +18966,7 @@
 .fd-input-group__button:focus {
   z-index: 5;
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem;
   outline-color: #0854a0;
   outline-color: var(--sapField_Hover_BorderColor,#0854a0)
@@ -32715,7 +32715,7 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-popover__control:focus-visible {
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000)
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000)
 }
 .fd-popover__control.fd-input:last-child {
   margin-bottom: 0
@@ -33220,7 +33220,7 @@ places the element far left of the screen. so it is not visible.
 .fd-product-switch .fd-button.fd-product-switch__control:focus {
   z-index: 5;
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem;
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
@@ -36827,7 +36827,7 @@ places the element far left of the screen. so it is not visible.
 .fd-shellbar .fd-button.fd-shellbar__button:focus {
   z-index: 5;
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem;
   outline-color: #fff;
   outline-color: var(--sapContent_ContrastFocusColor,#fff)
@@ -39503,7 +39503,7 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-slider__handle:focus {
   outline: .0625rem dotted #0854a0;
-  outline: .0625rem dotted var(--sapButton_Hover_BorderColor,#0854a0);
+  outline: .0625rem var(--sapContent_FocusStyle,dotted) var(--sapButton_Hover_BorderColor,#0854a0);
   outline-offset: .0625rem
 }
 .fd-slider__handle.is-hover,
@@ -44798,7 +44798,7 @@ places the element far left of the screen. so it is not visible.
 .fd-tile--action .fd-tile__action-close:focus {
   z-index: 5;
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.0625rem
 }
 .fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled,
@@ -45149,7 +45149,7 @@ places the element far left of the screen. so it is not visible.
 .fd-tile--line.fd-tile--action .fd-tile__action-indicator:focus {
   z-index: 5;
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: 0
 }
 .fd-tile--line.fd-tile--action .fd-tile__action-close.is-focus.fd-tile--toggled,
@@ -48622,6 +48622,7 @@ places the element far left of the screen. so it is not visible.
 .fd-tree__item-container:focus {
   z-index: 5;
   outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
   outline-width: .0625rem;
   outline-width: var(--sapContent_FocusWidth,.0625rem);
   outline-color: #000;
@@ -48817,6 +48818,7 @@ places the element far left of the screen. so it is not visible.
 .fd-tree__expander:focus {
   z-index: 5;
   outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
   outline-width: .0625rem;
   outline-width: var(--sapContent_FocusWidth,.0625rem);
   outline-color: #000;

@@ -1,0 +1,149 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+/*!
+.fd-object-marker
+*/
+.fd-object-marker {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  line-height: 1;
+  font-size: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-object-marker::after,
+.fd-object-marker::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-marker--link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5d36ff;
+  color: var(--sapContent_MarkerIconColor,#5d36ff)
+}
+.fd-object-marker--link.is-focus,
+.fd-object-marker--link:focus {
+  outline-offset: .0625rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #0070f2;
+  outline-color: var(--sapContent_FocusColor,#0070f2);
+  outline-style: solid;
+  outline-style: var(--sapContent_FocusStyle,solid)
+}
+.fd-object-marker--link .fd-object-marker__text {
+  color: #5d36ff;
+  color: var(--sapContent_MarkerIconColor,#5d36ff)
+}
+.fd-object-marker--link:focus .fd-object-marker__text,
+.fd-object-marker--link:hover .fd-object-marker__text,
+.fd-object-marker--link:visited .fd-object-marker__text {
+  text-decoration: underline
+}
+.fd-object-marker--link:hover .fd-object-marker__text {
+  color: #223548;
+  color: var(--sapContent_IconColor,#223548)
+}
+.fd-object-marker__icon [class*=sap-icon],
+.fd-object-marker__icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: normal;
+  color: #5d36ff;
+  color: var(--sapContent_MarkerIconColor,#5d36ff);
+  padding-right: .25rem
+}
+.fd-object-marker__icon [class*=sap-icon]:first-child:last-child,
+.fd-object-marker__icon[class*=sap-icon]:first-child:last-child {
+  padding-right: 0;
+  padding-left: 0
+}
+.fd-object-marker__icon [class*=sap-icon][dir=rtl],
+.fd-object-marker__icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-object-marker__icon [class*=sap-icon],
+[dir=rtl] .fd-object-marker__icon[class*=sap-icon] {
+  padding-left: .25rem;
+  padding-right: 0
+}
+.fd-object-marker__icon [class*=sap-icon][dir=rtl]:first-child:last-child,
+.fd-object-marker__icon[class*=sap-icon][dir=rtl]:first-child:last-child,
+[dir=rtl] .fd-object-marker__icon [class*=sap-icon]:first-child:last-child,
+[dir=rtl] .fd-object-marker__icon[class*=sap-icon]:first-child:last-child {
+  padding-right: 0;
+  padding-left: 0
+}
+.fd-object-marker__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+  word-break: break-word;
+  color: #556b82;
+  color: var(--sapContent_LabelColor,#556b82)
+}
+.fd-object-marker__text::after,
+.fd-object-marker__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-object-marker + .fd-object-marker {
+  margin-left: .5rem;
+  margin-right: 0
+}
+.fd-object-marker + .fd-object-marker[dir=rtl],
+[dir=rtl] .fd-object-marker + .fd-object-marker {
+  margin-right: .5rem;
+  margin-left: 0
+}

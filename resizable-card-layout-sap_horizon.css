@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-resizable-card-layout {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-top: 1rem;
+  position: relative
+}
+.fd-resizable-card-layout::after,
+.fd-resizable-card-layout::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-resizable-card-layout__item {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-width: 20rem;
+  position: relative
+}
+.fd-resizable-card-layout__item::after,
+.fd-resizable-card-layout__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-resizable-card-layout__card {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  height: calc(100% - .0625rem)
+}
+.fd-resizable-card-layout__card::after,
+.fd-resizable-card-layout__card::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-resizable-card-layout__icon-wrapper {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 .0625rem .0625rem 0
+}
+.fd-resizable-card-layout__icon-wrapper::after,
+.fd-resizable-card-layout__icon-wrapper::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-resizable-card-layout__icon-wrapper[dir=rtl],
+[dir=rtl] .fd-resizable-card-layout__icon-wrapper {
+  right: auto;
+  left: 0;
+  padding: 0 0 .0625rem .0625rem
+}
+.fd-resizable-card-layout__icon {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: SAP-icons;
+  font-size: 1rem;
+  line-height: 1rem;
+  cursor: nwse-resize;
+  position: absolute;
+  bottom: 0;
+  right: .0625rem;
+  color: #223548;
+  color: var(--sapButton_IconColor,#223548);
+  z-index: 2
+}
+.fd-resizable-card-layout__icon::after,
+.fd-resizable-card-layout__icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-resizable-card-layout__icon::before {
+  font-family: SAP-icons;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility
+}
+.fd-resizable-card-layout__icon::before {
+  content: ""
+}
+.fd-resizable-card-layout__icon[dir=rtl],
+[dir=rtl] .fd-resizable-card-layout__icon {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: relative;
+  cursor: nesw-resize;
+  padding: 0 .0625rem .0625rem .5rem
+}
+.fd-resizable-card-layout__icon--vertical {
+  cursor: ns-resize
+}
+.fd-resizable-card-layout__icon--vertical[dir=rtl],
+[dir=rtl] .fd-resizable-card-layout__icon--vertical {
+  cursor: ns-resize
+}
+.fd-resizable-card-layout__icon--horizontal {
+  cursor: ew-resize
+}
+.fd-resizable-card-layout__icon--horizontal[dir=rtl],
+[dir=rtl] .fd-resizable-card-layout__icon--horizontal {
+  cursor: ew-resize
+}
+.fd-resizable-card-layout__resize--vertical {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  z-index: 2;
+  width: .0625rem;
+  cursor: ew-resize
+}
+.fd-resizable-card-layout__resize--vertical::content {
+  content: "";
+  position: absolute
+}
+.fd-resizable-card-layout__resize--horizontal {
+  z-index: 2;
+  width: calc(100% - .5rem);
+  height: .0625rem;
+  position: absolute;
+  bottom: 0;
+  cursor: ns-resize
+}
+.fd-resizable-card-layout__indication-border {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: .125rem dashed #0070f2;
+  border: .125rem dashed var(--sapContent_DragAndDropActiveColor,#0070f2)
+}
+.fd-resizable-card-layout__indication-border::after,
+.fd-resizable-card-layout__indication-border::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-resizable-card-layout--sm {
+  padding-left: .5rem;
+  padding-right: .5rem
+}
+.fd-resizable-card-layout--md {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+.fd-resizable-card-layout--lg {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+.fd-resizable-card-layout--xl {
+  padding-left: 3rem;
+  padding-right: 3rem
+}

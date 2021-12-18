@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.20.1
+ * Fundamental Library Styles v0.20.3
  * Copyright (c) 2021 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -506,7 +506,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) dotted var(--sapContent_FocusColor,#000);
+  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
   outline-offset: -.1875rem
 }
 .fd-button.is-focus.fd-button--toggled,

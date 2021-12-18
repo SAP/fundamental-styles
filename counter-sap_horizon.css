@@ -1,0 +1,51 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+/*!
+.fd-counter+(--notification)
+*/
+.fd-counter {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 1rem;
+  color: #223548;
+  color: var(--sapShell_TextColor,#223548);
+  background-color: #aa0808;
+  background-color: var(--sapContent_BadgeBackground,#aa0808);
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  padding: .25rem;
+  z-index: 1
+}
+.fd-counter::after,
+.fd-counter::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-counter--notification {
+  -webkit-transform: translate(-40%,-50%);
+  transform: translate(-40%,-50%)
+}
+.fd-counter--notification[dir=rtl],
+[dir=rtl] .fd-counter--notification {
+  -webkit-transform: translate(40%,-50%);
+  transform: translate(40%,-50%)
+}

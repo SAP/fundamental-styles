@@ -1,0 +1,710 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-select {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  padding-right: 0;
+  text-shadow: none;
+  text-shadow: var(--fdSelect_Text_Shadow,none)
+}
+.fd-select::after,
+.fd-select::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__control {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #131e29;
+  color: var(--sapField_TextColor,#131e29);
+  background-color: #eff1f2;
+  background-color: var(--sapField_Background,#eff1f2);
+  border-style: solid;
+  border-width: .0625rem;
+  border-width: var(--sapField_BorderWidth,.0625rem);
+  border-color: #788fa6;
+  border-color: var(--sapField_BorderColor,#788fa6);
+  border-radius: .25rem;
+  border-radius: var(--sapField_BorderCornerRadius,.25rem);
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 2.25rem;
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 0
+}
+.fd-select__control::after,
+.fd-select__control::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__control::after,
+.fd-select__control::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__control::-webkit-input-placeholder {
+  font-style: italic;
+  color: #556b82;
+  color: var(--sapField_PlaceholderTextColor,#556b82)
+}
+.fd-select__control::-moz-placeholder {
+  font-style: italic;
+  color: #556b82;
+  color: var(--sapField_PlaceholderTextColor,#556b82)
+}
+.fd-select__control:-ms-input-placeholder {
+  font-style: italic;
+  color: #556b82;
+  color: var(--sapField_PlaceholderTextColor,#556b82)
+}
+.fd-select__control::-ms-input-placeholder {
+  font-style: italic;
+  color: #556b82;
+  color: var(--sapField_PlaceholderTextColor,#556b82)
+}
+.fd-select__control::placeholder {
+  font-style: italic;
+  color: #556b82;
+  color: var(--sapField_PlaceholderTextColor,#556b82)
+}
+.fd-select__control::-moz-selection {
+  color: #fff;
+  color: var(--sapContent_ContrastTextColor,#fff);
+  background-color: #0070f2;
+  background-color: var(--sapSelectedColor,#0070f2)
+}
+.fd-select__control::selection {
+  color: #fff;
+  color: var(--sapContent_ContrastTextColor,#fff);
+  background-color: #0070f2;
+  background-color: var(--sapSelectedColor,#0070f2)
+}
+.fd-select__control.is-hover,
+.fd-select__control:hover {
+  background-color: #fff;
+  background-color: var(--sapField_Hover_Background,#fff);
+  border-color: #788fa6;
+  border-color: var(--sapField_Hover_BorderColor,#788fa6)
+}
+.fd-select__control.is-success {
+  background-color: #f5fae5;
+  background-color: var(--sapField_SuccessBackground,#f5fae5);
+  border-color: #30914c;
+  border-color: var(--sapField_SuccessColor,#30914c);
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
+}
+.fd-select__control.is-success.is-hover,
+.fd-select__control.is-success:hover {
+  background-color: #f5fae5;
+  background-color: var(--sapField_SuccessBackground,#f5fae5);
+  border-color: #30914c;
+  border-color: var(--sapField_SuccessColor,#30914c)
+}
+.fd-select__control.is-error {
+  background-color: #ffeaf4;
+  background-color: var(--sapField_InvalidBackground,#ffeaf4);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #f53232;
+  border-color: var(--sapField_InvalidColor,#f53232);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InvalidBorderStyle,solid)
+}
+.fd-select__control.is-error.is-hover,
+.fd-select__control.is-error:hover {
+  background-color: #ffeaf4;
+  background-color: var(--sapField_InvalidBackground,#ffeaf4);
+  border-color: #f53232;
+  border-color: var(--sapField_InvalidColor,#f53232)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-warning {
+  background-color: #fff8d6;
+  background-color: var(--sapField_WarningBackground,#fff8d6);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #e76500;
+  border-color: var(--sapField_WarningColor,#e76500);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_WarningBorderStyle,solid)
+}
+.fd-select__control.is-alert.is-hover,
+.fd-select__control.is-alert:hover,
+.fd-select__control.is-warning.is-hover,
+.fd-select__control.is-warning:hover {
+  background-color: #fff8d6;
+  background-color: var(--sapField_WarningBackground,#fff8d6);
+  border-color: #e76500;
+  border-color: var(--sapField_WarningColor,#e76500)
+}
+.fd-select__control.is-information {
+  background-color: #e1f4ff;
+  background-color: var(--sapField_InformationBackground,#e1f4ff);
+  border-color: #0070f2;
+  border-color: var(--sapField_InformationColor,#0070f2);
+  border-width: .125rem;
+  border-width: var(--sapField_InformationBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InformationBorderStyle,solid)
+}
+.fd-select__control.is-information.is-hover,
+.fd-select__control.is-information:hover {
+  background-color: #e1f4ff;
+  background-color: var(--sapField_InformationBackground,#e1f4ff);
+  border-color: #0070f2;
+  border-color: var(--sapField_InformationColor,#0070f2)
+}
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #0070f2;
+  outline-color: var(--sapContent_FocusColor,#0070f2);
+  outline-style: solid;
+  outline-style: var(--sapContent_FocusStyle,solid)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-error,
+.fd-select__control.is-information,
+.fd-select__control.is-warning {
+  border-width: .125rem;
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
+}
+.fd-select__control.is-alert.is-focus,
+.fd-select__control.is-alert:focus,
+.fd-select__control.is-error.is-focus,
+.fd-select__control.is-error:focus,
+.fd-select__control.is-information.is-focus,
+.fd-select__control.is-information:focus,
+.fd-select__control.is-warning.is-focus,
+.fd-select__control.is-warning:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.25rem
+}
+.fd-select__control.is-disabled,
+.fd-select__control:disabled,
+.fd-select__control[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4)
+}
+.fd-select__control.is-disabled::-webkit-input-placeholder,
+.fd-select__control:disabled::-webkit-input-placeholder,
+.fd-select__control[aria-disabled=true]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-moz-placeholder,
+.fd-select__control:disabled::-moz-placeholder,
+.fd-select__control[aria-disabled=true]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled:-ms-input-placeholder,
+.fd-select__control:disabled:-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-ms-input-placeholder,
+.fd-select__control:disabled::-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::placeholder,
+.fd-select__control:disabled::placeholder,
+.fd-select__control[aria-disabled=true]::placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly,
+.fd-select__control[aria-readonly=true],
+.fd-select__control[readonly] {
+  background-color: rgba(242,242,242,.5);
+  background-color: #eff1f2;
+  background-color: var(--sapField_ReadOnly_Background,#eff1f2);
+  border-color: #788fa6;
+  border-color: var(--sapField_ReadOnly_BorderColor,#788fa6)
+}
+.fd-select__control.is-readonly::-webkit-input-placeholder,
+.fd-select__control[aria-readonly=true]::-webkit-input-placeholder,
+.fd-select__control[readonly]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-moz-placeholder,
+.fd-select__control[aria-readonly=true]::-moz-placeholder,
+.fd-select__control[readonly]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly:-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]:-ms-input-placeholder,
+.fd-select__control[readonly]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]::-ms-input-placeholder,
+.fd-select__control[readonly]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::placeholder,
+.fd-select__control[aria-readonly=true]::placeholder,
+.fd-select__control[readonly]::placeholder {
+  color: transparent
+}
+.fd-select__control .fd-select__button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: .5rem;
+  color: #223548;
+  color: var(--sapContent_IconColor,#223548);
+  border: none
+}
+.fd-select__control .fd-select__button.is-hover,
+.fd-select__control .fd-select__button:hover {
+  border: none
+}
+.fd-select__control.is-hover,
+.fd-select__control:hover {
+  background-color: #fff;
+  background-color: var(--sapField_Hover_Background,#fff);
+  border-color: #788fa6;
+  border-color: var(--sapField_Hover_BorderColor,#788fa6)
+}
+.fd-select__control.is-success {
+  background-color: #f5fae5;
+  background-color: var(--sapField_SuccessBackground,#f5fae5);
+  border-color: #30914c;
+  border-color: var(--sapField_SuccessColor,#30914c);
+  border-width: .0625rem;
+  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
+  border-style: solid;
+  border-style: var(--sapField_SuccessBorderStyle,solid)
+}
+.fd-select__control.is-success.is-hover,
+.fd-select__control.is-success:hover {
+  background-color: #f5fae5;
+  background-color: var(--sapField_SuccessBackground,#f5fae5);
+  border-color: #30914c;
+  border-color: var(--sapField_SuccessColor,#30914c)
+}
+.fd-select__control.is-error {
+  background-color: #ffeaf4;
+  background-color: var(--sapField_InvalidBackground,#ffeaf4);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #f53232;
+  border-color: var(--sapField_InvalidColor,#f53232);
+  border-width: .125rem;
+  border-width: var(--sapField_InvalidBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InvalidBorderStyle,solid)
+}
+.fd-select__control.is-error.is-hover,
+.fd-select__control.is-error:hover {
+  background-color: #ffeaf4;
+  background-color: var(--sapField_InvalidBackground,#ffeaf4);
+  border-color: #f53232;
+  border-color: var(--sapField_InvalidColor,#f53232)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-warning {
+  background-color: #fff8d6;
+  background-color: var(--sapField_WarningBackground,#fff8d6);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
+  border-color: #e76500;
+  border-color: var(--sapField_WarningColor,#e76500);
+  border-width: .125rem;
+  border-width: var(--sapField_WarningBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_WarningBorderStyle,solid)
+}
+.fd-select__control.is-alert.is-hover,
+.fd-select__control.is-alert:hover,
+.fd-select__control.is-warning.is-hover,
+.fd-select__control.is-warning:hover {
+  background-color: #fff8d6;
+  background-color: var(--sapField_WarningBackground,#fff8d6);
+  border-color: #e76500;
+  border-color: var(--sapField_WarningColor,#e76500)
+}
+.fd-select__control.is-information {
+  background-color: #e1f4ff;
+  background-color: var(--sapField_InformationBackground,#e1f4ff);
+  border-color: #0070f2;
+  border-color: var(--sapField_InformationColor,#0070f2);
+  border-width: .125rem;
+  border-width: var(--sapField_InformationBorderWidth,.125rem);
+  border-style: solid;
+  border-style: var(--sapField_InformationBorderStyle,solid)
+}
+.fd-select__control.is-information.is-hover,
+.fd-select__control.is-information:hover {
+  background-color: #e1f4ff;
+  background-color: var(--sapField_InformationBackground,#e1f4ff);
+  border-color: #0070f2;
+  border-color: var(--sapField_InformationColor,#0070f2)
+}
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #0070f2;
+  outline-color: var(--sapContent_FocusColor,#0070f2);
+  outline-style: solid;
+  outline-style: var(--sapContent_FocusStyle,solid)
+}
+.fd-select__control.is-alert,
+.fd-select__control.is-error,
+.fd-select__control.is-information,
+.fd-select__control.is-warning {
+  border-width: .125rem;
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
+}
+.fd-select__control.is-alert.is-focus,
+.fd-select__control.is-alert:focus,
+.fd-select__control.is-error.is-focus,
+.fd-select__control.is-error:focus,
+.fd-select__control.is-information.is-focus,
+.fd-select__control.is-information:focus,
+.fd-select__control.is-warning.is-focus,
+.fd-select__control.is-warning:focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-offset: -.25rem
+}
+.fd-select__control.is-disabled,
+.fd-select__control:disabled,
+.fd-select__control[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4;
+  opacity: var(--sapContent_DisabledOpacity,.4)
+}
+.fd-select__control.is-disabled::-webkit-input-placeholder,
+.fd-select__control:disabled::-webkit-input-placeholder,
+.fd-select__control[aria-disabled=true]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-moz-placeholder,
+.fd-select__control:disabled::-moz-placeholder,
+.fd-select__control[aria-disabled=true]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled:-ms-input-placeholder,
+.fd-select__control:disabled:-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::-ms-input-placeholder,
+.fd-select__control:disabled::-ms-input-placeholder,
+.fd-select__control[aria-disabled=true]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-disabled::placeholder,
+.fd-select__control:disabled::placeholder,
+.fd-select__control[aria-disabled=true]::placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly,
+.fd-select__control[aria-readonly=true],
+.fd-select__control[readonly] {
+  background-color: rgba(242,242,242,.5);
+  background-color: #eff1f2;
+  background-color: var(--sapField_ReadOnly_Background,#eff1f2);
+  border-color: #788fa6;
+  border-color: var(--sapField_ReadOnly_BorderColor,#788fa6)
+}
+.fd-select__control.is-readonly::-webkit-input-placeholder,
+.fd-select__control[aria-readonly=true]::-webkit-input-placeholder,
+.fd-select__control[readonly]::-webkit-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-moz-placeholder,
+.fd-select__control[aria-readonly=true]::-moz-placeholder,
+.fd-select__control[readonly]::-moz-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly:-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]:-ms-input-placeholder,
+.fd-select__control[readonly]:-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::-ms-input-placeholder,
+.fd-select__control[aria-readonly=true]::-ms-input-placeholder,
+.fd-select__control[readonly]::-ms-input-placeholder {
+  color: transparent
+}
+.fd-select__control.is-readonly::placeholder,
+.fd-select__control[aria-readonly=true]::placeholder,
+.fd-select__control[readonly]::placeholder {
+  color: transparent
+}
+.fd-select__control.is-focus,
+.fd-select__control:focus {
+  z-index: 5;
+  outline: 0
+}
+.fd-select__control.is-focus::before,
+.fd-select__control:focus::before {
+  content: '';
+  top: .1875rem;
+  left: .1875rem;
+  border-width: .125rem;
+  border-width: var(--sapContent_FocusWidth,.125rem);
+  border-color: #0070f2;
+  border-color: var(--sapContent_FocusColor,#0070f2);
+  border-style: solid;
+  border-style: var(--sapContent_FocusStyle,solid);
+  height: calc(100% - (2 * .1875rem));
+  width: calc(100% - (2 * .1875rem));
+  z-index: 1;
+  position: absolute
+}
+.fd-select__control[dir=rtl],
+[dir=rtl] .fd-select__control {
+  text-align: right;
+  padding-left: 0
+}
+.fd-select__control[dir=rtl].is-focus,
+.fd-select__control[dir=rtl]:focus,
+[dir=rtl] .fd-select__control.is-focus,
+[dir=rtl] .fd-select__control:focus {
+  z-index: 5
+}
+.fd-select__control[dir=rtl].is-focus::before,
+.fd-select__control[dir=rtl]:focus::before,
+[dir=rtl] .fd-select__control.is-focus::before,
+[dir=rtl] .fd-select__control:focus::before {
+  right: -.0234375rem
+}
+.fd-select__control.is-hover .fd-select__button,
+.fd-select__control:hover .fd-select__button {
+  background-color: #fff;
+  background-color: var(--sapButton_Lite_Hover_Background,#fff);
+  border-left: none;
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
+.fd-select__control.is-hover .fd-select__button[dir=rtl],
+.fd-select__control:hover .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-hover .fd-select__button,
+[dir=rtl] .fd-select__control:hover .fd-select__button {
+  border-left: none;
+  border-right: none;
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
+.fd-select__control.is-expanded .fd-select__button,
+.fd-select__control[aria-expanded=true] .fd-select__button {
+  background-color: #fff;
+  background-color: var(--sapButton_Active_Background,#fff);
+  color: #0070f2;
+  color: var(--sapButton_Active_TextColor,#0070f2);
+  border-left: none;
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
+.fd-select__control.is-expanded .fd-select__button.is-focus,
+.fd-select__control.is-expanded .fd-select__button:focus,
+.fd-select__control[aria-expanded=true] .fd-select__button.is-focus,
+.fd-select__control[aria-expanded=true] .fd-select__button:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #0070f2;
+  outline-color: var(--sapContent_FocusColor,#0070f2);
+  outline-style: solid;
+  outline-style: var(--sapContent_FocusStyle,solid);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-select__control.is-expanded .fd-select__button[dir=rtl],
+.fd-select__control[aria-expanded=true] .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-expanded .fd-select__button,
+[dir=rtl] .fd-select__control[aria-expanded=true] .fd-select__button {
+  border-left: none;
+  border-right: none;
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
+.fd-select__control.is-active .fd-select__button,
+.fd-select__control:active .fd-select__button {
+  background-color: #fff;
+  background-color: var(--sapButton_Active_Background,#fff);
+  color: #0070f2;
+  color: var(--sapButton_Active_TextColor,#0070f2);
+  border-left: none;
+  border-left: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
+.fd-select__control.is-active .fd-select__button.is-focus,
+.fd-select__control.is-active .fd-select__button:focus,
+.fd-select__control:active .fd-select__button.is-focus,
+.fd-select__control:active .fd-select__button:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #0070f2;
+  outline-color: var(--sapContent_FocusColor,#0070f2);
+  outline-style: solid;
+  outline-style: var(--sapContent_FocusStyle,solid);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+}
+.fd-select__control.is-active .fd-select__button[dir=rtl],
+.fd-select__control:active .fd-select__button[dir=rtl],
+[dir=rtl] .fd-select__control.is-active .fd-select__button,
+[dir=rtl] .fd-select__control:active .fd-select__button {
+  border-left: none;
+  border-right: none;
+  border-right: var(--fdSelect_Button_Interractive_SideBorder,none)
+}
+.fd-select__control.is-readonly {
+  cursor: text
+}
+.fd-select__control.is-readonly .fd-select__text-content {
+  padding-right: .625rem;
+  padding-left: .625rem
+}
+.fd-select__text-content {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  padding-left: .625rem;
+  min-width: 5.625rem
+}
+.fd-select__text-content::after,
+.fd-select__text-content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-select__text-content[dir=rtl],
+[dir=rtl] .fd-select__text-content {
+  padding-left: 0;
+  padding-right: .625rem
+}
+.fd-select--compact .fd-select__control {
+  height: 1.625rem
+}
+.fd-select--compact .fd-select__control .fd-select__text-content {
+  padding-left: .5rem
+}
+.fd-select--compact .fd-select__control[dir=rtl],
+[dir=rtl] .fd-select--compact .fd-select__control {
+  text-align: right;
+  padding-left: 0
+}
+.fd-select--compact .fd-select__control[dir=rtl] .fd-select__text-content,
+[dir=rtl] .fd-select--compact .fd-select__control .fd-select__text-content {
+  padding-left: 0;
+  padding-right: .5rem
+}
+.fd-select--compact .fd-select__control.is-readonly .fd-select__text-content {
+  padding-right: .5rem;
+  padding-left: .5rem
+}
+.fd-select[dir=rtl] .fd-select__control .fd-select__button,
+[dir=rtl] .fd-select .fd-select__control .fd-select__button {
+  margin-left: 0;
+  margin-right: .5rem
+}

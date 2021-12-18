@@ -1,0 +1,199 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-busy-indicator,
+.fd-busy-indicator--l,
+.fd-busy-indicator--m {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  display: block;
+  font-size: 0;
+  color: #223548;
+  color: var(--sapContent_IconColor,#223548);
+  text-align: center
+}
+.fd-busy-indicator--l::after,
+.fd-busy-indicator--l::before,
+.fd-busy-indicator--m::after,
+.fd-busy-indicator--m::before,
+.fd-busy-indicator::after,
+.fd-busy-indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-busy-indicator--l.contrast,
+.fd-busy-indicator--m.contrast,
+.fd-busy-indicator.contrast {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff)
+}
+.fd-busy-indicator--l.contrast .fd-busy-indicator--circle-0,
+.fd-busy-indicator--l.contrast .fd-busy-indicator--circle-1,
+.fd-busy-indicator--l.contrast .fd-busy-indicator--circle-2,
+.fd-busy-indicator--m.contrast .fd-busy-indicator--circle-0,
+.fd-busy-indicator--m.contrast .fd-busy-indicator--circle-1,
+.fd-busy-indicator--m.contrast .fd-busy-indicator--circle-2,
+.fd-busy-indicator.contrast .fd-busy-indicator--circle-0,
+.fd-busy-indicator.contrast .fd-busy-indicator--circle-1,
+.fd-busy-indicator.contrast .fd-busy-indicator--circle-2 {
+  color: #fff;
+  color: var(--sapContent_ContrastIconColor,#fff)
+}
+.fd-busy-indicator--circle-0,
+.fd-busy-indicator--circle-1,
+.fd-busy-indicator--circle-2 {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #223548;
+  color: var(--sapContent_IconColor,#223548);
+  position: relative;
+  width: .5rem;
+  height: .5rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: currentColor
+}
+.fd-busy-indicator--circle-0::after,
+.fd-busy-indicator--circle-0::before,
+.fd-busy-indicator--circle-1::after,
+.fd-busy-indicator--circle-1::before,
+.fd-busy-indicator--circle-2::after,
+.fd-busy-indicator--circle-2::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-busy-indicator-extended {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fd-busy-indicator-extended.fd-busy-indicator-extended--message-toast {
+  width: 23.125rem;
+  max-width: 23.125rem;
+  -webkit-box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .625rem 1.875rem 0 rgba(85,107,130,.3);
+  -webkit-box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(85,107,130,.42),0 .625rem 1.875rem 0 rgba(85,107,130,.3));
+  box-shadow: 0 0 0 .0625rem rgba(85,107,130,.42),0 .625rem 1.875rem 0 rgba(85,107,130,.3);
+  box-shadow: var(--sapContent_Shadow2,0 0 0 .0625rem rgba(85,107,130,.42),0 .625rem 1.875rem 0 rgba(85,107,130,.3));
+  text-shadow: 0 0 .125rem #fff;
+  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
+  background-color: #fff;
+  background-color: var(--sapPageFooter_Background,#fff)
+}
+.fd-busy-indicator-extended__label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  color: #223548;
+  color: var(--sapPageFooter_TextColor,#223548);
+  margin-top: 1rem;
+  text-align: center
+}
+.fd-busy-indicator-extended__label::after,
+.fd-busy-indicator-extended__label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-busy-indicator--circle-0 {
+  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11)
+}
+.fd-busy-indicator--circle-1 {
+  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s
+}
+.fd-busy-indicator--circle-2 {
+  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s
+}
+.fd-busy-indicator--m .fd-busy-indicator--circle-0,
+.fd-busy-indicator--m .fd-busy-indicator--circle-1,
+.fd-busy-indicator--m .fd-busy-indicator--circle-2 {
+  width: 1rem;
+  height: 1rem
+}
+.fd-busy-indicator--l .fd-busy-indicator--circle-0,
+.fd-busy-indicator--l .fd-busy-indicator--circle-1,
+.fd-busy-indicator--l .fd-busy-indicator--circle-2 {
+  width: 2rem;
+  height: 2rem
+}
+@-webkit-keyframes grow {
+  0%,
+  100%,
+  50% {
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+@keyframes grow {
+  0%,
+  100%,
+  50% {
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}

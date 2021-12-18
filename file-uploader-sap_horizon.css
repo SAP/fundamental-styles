@@ -1,0 +1,78 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-file-uploader {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fd-file-uploader::after,
+.fd-file-uploader::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-file-uploader__input.fd-input {
+  width: auto;
+  margin-right: .25rem;
+  background-color: #eff1f2;
+  background-color: var(--sapField_Background,#eff1f2);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 #223548;
+  text-shadow: 0 0 0 var(--sapTextColor,#223548)
+}
+.fd-file-uploader__input.fd-input::-webkit-input-placeholder {
+  color: #223548;
+  color: var(--sapTextColor,#223548)
+}
+.fd-file-uploader__input.fd-input::-moz-placeholder {
+  color: #223548;
+  color: var(--sapTextColor,#223548)
+}
+.fd-file-uploader__input.fd-input:-ms-input-placeholder {
+  color: #223548;
+  color: var(--sapTextColor,#223548)
+}
+.fd-file-uploader__input.fd-input::-ms-input-placeholder {
+  color: #223548;
+  color: var(--sapTextColor,#223548)
+}
+.fd-file-uploader__input.fd-input::placeholder {
+  color: #223548;
+  color: var(--sapTextColor,#223548)
+}
+.fd-file-uploader__input.fd-input:focus {
+  outline: 0
+}
+.fd-file-uploader__input.fd-input[dir=rtl],
+[dir=rtl] .fd-file-uploader__input.fd-input {
+  margin-left: .25rem;
+  margin-right: 0
+}
+.fd-file-uploader__hidden {
+  display: none
+}

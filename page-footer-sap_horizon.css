@@ -1,0 +1,210 @@
+/*!
+ * Fundamental Library Styles v0.20.3
+ * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-page-footer {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: #fff;
+  background: var(--sapBaseColor,#fff);
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem
+}
+.fd-page-footer::after,
+.fd-page-footer::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-page-footer__logo {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 3rem;
+  height: 1.5rem;
+  overflow: hidden
+}
+.fd-page-footer__logo::after,
+.fd-page-footer__logo::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-page-footer__row {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  word-break: break-all;
+  width: 70%
+}
+.fd-page-footer__row::after,
+.fd-page-footer__row::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-page-footer__row-item {
+  margin-right: 1.5rem
+}
+.fd-page-footer__row-item[dir=rtl],
+[dir=rtl] .fd-page-footer__row-item {
+  margin-right: 0;
+  margin-left: 1.5rem
+}
+.fd-page-footer__row-image {
+  display: block
+}
+.fd-page-footer__row:not(:first-child) {
+  padding-top: .25rem
+}
+.fd-page-footer__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #223548;
+  color: var(--sapTextColor,#223548);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  width: 30%;
+  text-align: right;
+  position: absolute
+}
+.fd-page-footer__text::after,
+.fd-page-footer__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-page-footer__text[dir=rtl],
+[dir=rtl] .fd-page-footer__text {
+  text-align: left
+}
+.fd-page-footer--xl {
+  padding-right: 3rem;
+  padding-left: 3rem
+}
+.fd-page-footer--xl .fd-page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: .75rem
+}
+.fd-page-footer--lg {
+  padding-right: 2rem;
+  padding-left: 2rem
+}
+.fd-page-footer--lg .fd-page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: .75rem
+}
+.fd-page-footer--md {
+  padding-right: 1rem;
+  padding-left: 1rem
+}
+.fd-page-footer--md .fd-page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: .75rem
+}
+.fd-page-footer--sm {
+  padding-right: .5rem;
+  padding-left: .5rem
+}
+.fd-page-footer--sm .fd-page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: .75rem
+}
+@media (max-width:768px) {
+  .fd-page-footer .fd-page-footer__row {
+    margin-right: 0;
+    width: 100%
+  }
+  .fd-page-footer .fd-page-footer__row:not(:first-child) {
+    padding-top: 0
+  }
+  .fd-page-footer .fd-page-footer__row-item {
+    padding-top: .25rem
+  }
+  .fd-page-footer .fd-page-footer__text {
+    width: 90%;
+    text-align: left;
+    padding-top: .75rem
+  }
+  .fd-page-footer .fd-page-footer__container {
+    display: inline-block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%
+  }
+}
