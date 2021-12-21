@@ -66,10 +66,10 @@ $block: #{$fd-namespace}-pagination;
   }
 
   &__more,
-  &__button,
-  &__link,
-  &__input,
-  &__label {
+  .#{$block}__button,
+  .#{$block}__link,
+  .#{$block}__input,
+  .#{$block}__label {
     @include fd-set-margins-x-equal(0.125rem);
   }
 
@@ -99,6 +99,10 @@ $block: #{$fd-namespace}-pagination;
 
   .#{$block}__label {
     display: none;
+  }
+
+  .#{$block}__total-label {
+    margin: 0;
   }
 
   .#{$block}__link {
