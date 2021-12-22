@@ -24,6 +24,12 @@ $block: #{$fd-namespace}-pagination;
   .#{$block}__input {
     display: flex;
   }
+
+  .#{$block}__link {
+    @include fd-active() {
+      display: none;
+    }
+  }
 }
 
 .#{$block} {
@@ -60,10 +66,10 @@ $block: #{$fd-namespace}-pagination;
   }
 
   &__more,
-  &__button,
-  &__link,
-  &__input,
-  &__label {
+  .#{$block}__button,
+  .#{$block}__link,
+  .#{$block}__input,
+  .#{$block}__label {
     @include fd-set-margins-x-equal(0.125rem);
   }
 
@@ -95,6 +101,16 @@ $block: #{$fd-namespace}-pagination;
     display: none;
   }
 
+  .#{$block}__total-label {
+    margin: 0;
+  }
+
+  .#{$block}__link {
+    @include fd-active() {
+      display: none;
+    }
+  }
+
   .#{$block}__button {
     [class*='sap-icon'] {
       @include fd-rtl() {
@@ -108,6 +124,12 @@ $block: #{$fd-namespace}-pagination;
   }
 
   &--short {
+    .#{$block}__link {
+      @include fd-active() {
+        display: flex;
+      }
+    }
+
     .#{$block}__input {
       display: none;
     }
