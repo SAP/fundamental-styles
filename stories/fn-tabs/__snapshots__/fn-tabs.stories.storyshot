@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Tabs Group 1`] = `
+exports[`Storyshots Experimental/Tabs Default 1`] = `
 <section>
   
 
@@ -32,7 +32,43 @@ exports[`Storyshots Experimental/Tabs Group 1`] = `
         role="tab"
         tabindex="0"
       >
-        One
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -41,7 +77,28 @@ exports[`Storyshots Experimental/Tabs Group 1`] = `
         role="tab"
         tabindex="0"
       >
-        Two
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
       </li>
       
         
@@ -50,7 +107,30 @@ exports[`Storyshots Experimental/Tabs Group 1`] = `
         role="tab"
         tabindex="0"
       >
-        Three
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -59,25 +139,31 @@ exports[`Storyshots Experimental/Tabs Group 1`] = `
         role="tab"
         tabindex="0"
       >
-        Four
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
       </li>
       
         
       <li
         class="fn-tabs__item"
         role="tab"
-        tabindex="0"
       >
-        Five
-      </li>
-      
+           
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item  (42)
+        </div>
         
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        Six
+        
       </li>
       
         
@@ -85,7 +171,38 @@ exports[`Storyshots Experimental/Tabs Group 1`] = `
         class="fn-tabs__item is-disabled"
         role="tab"
       >
-        Seven
+           
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__right-container"
+        role="tab"
+      >
+           
+            
+        <button
+          aria-label="More"
+          class="fn-button fn-button--transparent fn-button--icon-only"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--overflow"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
     
@@ -98,7 +215,7 @@ exports[`Storyshots Experimental/Tabs Group 1`] = `
 </section>
 `;
 
-exports[`Storyshots Experimental/Tabs Individual 1`] = `
+exports[`Storyshots Experimental/Tabs Multi-Instance Tabs 1`] = `
 <section>
   
 
@@ -120,7 +237,7 @@ exports[`Storyshots Experimental/Tabs Individual 1`] = `
     
     
     <ul
-      class="fn-tabs fn-tabs--individual"
+      class="fn-tabs fn-tabs--multi-instance"
       role="tablist"
     >
       
@@ -130,7 +247,43 @@ exports[`Storyshots Experimental/Tabs Individual 1`] = `
         role="tab"
         tabindex="0"
       >
-        One
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="close tab"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--decline"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -139,7 +292,43 @@ exports[`Storyshots Experimental/Tabs Individual 1`] = `
         role="tab"
         tabindex="0"
       >
-        Two
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="close tab"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--decline"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -148,7 +337,30 @@ exports[`Storyshots Experimental/Tabs Individual 1`] = `
         role="tab"
         tabindex="0"
       >
-        Three
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="close tab"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--decline"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -157,7 +369,30 @@ exports[`Storyshots Experimental/Tabs Individual 1`] = `
         role="tab"
         tabindex="0"
       >
-        Four
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="close tab"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--decline"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -166,24 +401,67 @@ exports[`Storyshots Experimental/Tabs Individual 1`] = `
         role="tab"
         tabindex="0"
       >
-        Five
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="close tab"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--decline"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
       <li
-        class="fn-tabs__item"
+        class="fn-tabs__right-container"
         role="tab"
-        tabindex="0"
       >
-        Six
-      </li>
-      
         
-      <li
-        class="fn-tabs__item is-disabled"
-        role="tab"
-      >
-        Seven
+            
+        <button
+          aria-label="More"
+          class="fn-button fn-button--transparent fn-button--icon-only"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--overflow"
+          />
+          
+            
+        </button>
+        
+            
+        <button
+          aria-label="More"
+          class="fn-button fn-button--transparent fn-button--icon-only"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--add"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
     
@@ -196,7 +474,7 @@ exports[`Storyshots Experimental/Tabs Individual 1`] = `
 </section>
 `;
 
-exports[`Storyshots Experimental/Tabs Line 1`] = `
+exports[`Storyshots Experimental/Tabs Semantic Tabs 1`] = `
 <section>
   
 
@@ -218,7 +496,7 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
     
     
     <ul
-      class="fn-tabs fn-tabs--line"
+      class="fn-tabs fn-tabs--positive"
       role="tablist"
     >
       
@@ -228,7 +506,43 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
         role="tab"
         tabindex="0"
       >
-        One
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -237,7 +551,28 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
         role="tab"
         tabindex="0"
       >
-        Two
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
       </li>
       
         
@@ -246,7 +581,30 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
         role="tab"
         tabindex="0"
       >
-        Three
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
       </li>
       
         
@@ -255,7 +613,15 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
         role="tab"
         tabindex="0"
       >
-        Four
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
       </li>
       
         
@@ -264,7 +630,15 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
         role="tab"
         tabindex="0"
       >
-        Five
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
       </li>
       
         
@@ -273,7 +647,15 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
         role="tab"
         tabindex="0"
       >
-        Six
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
       </li>
       
         
@@ -281,7 +663,399 @@ exports[`Storyshots Experimental/Tabs Line 1`] = `
         class="fn-tabs__item is-disabled"
         role="tab"
       >
-        Seven
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+    
+    </ul>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <ul
+      class="fn-tabs fn-tabs--critical"
+      role="tablist"
+    >
+      
+        
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+    
+    </ul>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <ul
+      class="fn-tabs fn-tabs--negative"
+      role="tablist"
+    >
+      
+        
+      <li
+        class="fn-tabs__item fn-tabs__item--selected"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__icon"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--calendar"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+            
+        <button
+          aria-label="show children elements"
+          class="fn-nested-button fn-tabs__button"
+          tabindex="-1"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </button>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item"
+        role="tab"
+        tabindex="0"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fn-tabs__item is-disabled"
+        role="tab"
+      >
+        
+            
+        <div
+          class="fn-tabs__text"
+        >
+          Tab Item
+        </div>
+        
+        
       </li>
       
     

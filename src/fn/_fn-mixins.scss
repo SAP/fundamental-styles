@@ -123,7 +123,8 @@
 }
 
 @mixin fn-focus-visible() {
-  &.focus-visible {
+  &.focus-visible,
+  &.is-focus {
     @content;
   }
 }
@@ -275,4 +276,10 @@
 @mixin fn-set-rectangle($width, $height) {
   width: $width;
   height: $height;
+}
+
+@mixin fn-icon-class() {
+  [class*='sap-icon'] {
+    @content;
+  }
 }
