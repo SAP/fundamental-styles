@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.59...v0.21.0-rc.60) (2021-12-22)
+
+
+### Bug Fixes
+
+* remove active page link when in long mode ([#3009](https://github.com/SAP/fundamental-styles/issues/3009)) ([c0dab80](https://github.com/SAP/fundamental-styles/commit/c0dab80d392b9c36bc5083dc412e7f0f33c10054))
+
 ## [0.21.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.58...v0.21.0-rc.59) (2021-12-18)
 
 
