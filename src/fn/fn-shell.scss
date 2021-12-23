@@ -45,8 +45,7 @@ $block: #{$fn-namespace}-shell;
       }
 
       button {
-        @include fn-set-margin-left(-0.625rem);
-        @include fn-set-margin-right(0.75rem);
+        @include fn-set-margins-x(-0.625rem, 0.75rem);
       }
 
       button, .#{$block}__logo {
