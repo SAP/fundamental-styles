@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.61...v0.21.0-rc.62) (2021-12-23)
+
+
+### Bug Fixes
+
+* **styles:** use the theming variable for focus style ([#3007](https://github.com/SAP/fundamental-styles/issues/3007)) ([ec5c239](https://github.com/SAP/fundamental-styles/commit/ec5c2391e7163b4d3c0a7a208a3f111917a126c2))
+
 ## [0.21.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.60...v0.21.0-rc.61) (2021-12-23)
 
 
