@@ -130,7 +130,7 @@ $slider-x-paddings--lg: $handle-mobile-dimensions / 2;
     }
 
     &:focus {
-      outline: $handle-outline-width dotted var(--sapButton_Hover_BorderColor);
+      outline: $handle-outline-width var(--sapContent_FocusStyle) var(--sapButton_Hover_BorderColor);
       outline-offset: $handle-outline-offset;
     }
 
