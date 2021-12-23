@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.60...v0.21.0-rc.61) (2021-12-23)
+
+
+### Bug Fixes
+
+* **fn:** include missing components from fundamental-next.css ([#3010](https://github.com/SAP/fundamental-styles/issues/3010)) ([9fed161](https://github.com/SAP/fundamental-styles/commit/9fed1614865efd46e32fd05607071164235699a0))
+
 ## [0.21.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.59...v0.21.0-rc.60) (2021-12-22)
 
 
