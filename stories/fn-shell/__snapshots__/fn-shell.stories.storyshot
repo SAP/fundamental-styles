@@ -1,0 +1,784 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Shell Range Shell 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        normal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell fn-shell--range"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 30%; left: 0"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="0"
+          class="fn-shell__handle"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="30"
+          class="fn-shell__handle"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        hover
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell fn-shell--range"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 30%; left: 30%"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="30"
+          class="fn-shell__handle is-hover"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="60"
+          class="fn-shell__handle is-hover"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        active
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell fn-shell--range"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 20%; left: 60%"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="60"
+          class="fn-shell__handle"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="80"
+          class="fn-shell__handle"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell fn-shell--range"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 70%; left: 30%"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="30"
+          class="fn-shell__handle is-focus"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="100"
+          class="fn-shell__handle is-focus"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell fn-shell--range is-disabled"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 100%; left: 0%"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="0"
+          class="fn-shell__handle"
+          role="shell"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="100"
+          class="fn-shell__handle"
+          role="shell"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Shell Shell 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        normal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 0%;"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="0"
+          class="fn-shell__handle"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        hover
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 25%;"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="25"
+          class="fn-shell__handle is-hover"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        active
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 50%;"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="50"
+          class="fn-shell__handle is-active"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 75%;"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="75"
+          class="fn-shell__handle is-focus"
+          role="shell"
+          tabindex="0"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-shell is-disabled"
+    >
+      
+        
+      <div
+        class="fn-shell__track"
+        style="width: 100%;"
+      >
+        
+            
+        <div
+          aria-label="shell handle"
+          aria-valuemax="100"
+          aria-valuemin="1"
+          aria-valuenow="100"
+          class="fn-shell__handle is-hover"
+          role="shell"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+                
+          <span
+            class="sap-icon sap-icon--megamenu"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fn-shell__track-range"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
