@@ -122,7 +122,7 @@ The project has the following prerequisites:
 Our Service Level Agreement. Fundamental Library Styles is aiming to deliver:
 
 ### SLA - What
-* Consumable CSS that strives for [Fiori 3.0](https://www.sap.com/products/fiori.html) compliance.
+* Consumable CSS that strives for [Fiori](https://www.sap.com/products/fiori.html) compliance.
 * Reference HTML specification that consuming libraries **MUST** adhere to.
 
 ### SLA - How
