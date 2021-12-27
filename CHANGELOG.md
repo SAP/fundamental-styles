@@ -1,4 +1,289 @@
 
+## [0.21.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.67...v0.21.0-rc.68) (2021-12-26)
+
+## [0.21.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.66...v0.21.0-rc.67) (2021-12-26)
+
+## [0.21.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.65...v0.21.0-rc.66) (2021-12-26)
+
+## [0.21.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.64...v0.21.0-rc.65) (2021-12-26)
+
+## [0.21.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.63...v0.21.0-rc.64) (2021-12-26)
+
+## [0.21.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.62...v0.21.0-rc.63) (2021-12-26)
+
+## [0.21.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.61...v0.21.0-rc.62) (2021-12-23)
+
+
+### Bug Fixes
+
+* **styles:** use the theming variable for focus style ([#3007](https://github.com/SAP/fundamental-styles/issues/3007)) ([ec5c239](https://github.com/SAP/fundamental-styles/commit/ec5c2391e7163b4d3c0a7a208a3f111917a126c2))
+
+## [0.21.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.60...v0.21.0-rc.61) (2021-12-23)
+
+
+### Bug Fixes
+
+* **fn:** include missing components from fundamental-next.css ([#3010](https://github.com/SAP/fundamental-styles/issues/3010)) ([9fed161](https://github.com/SAP/fundamental-styles/commit/9fed1614865efd46e32fd05607071164235699a0))
+
+## [0.21.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.59...v0.21.0-rc.60) (2021-12-22)
+
+
+### Bug Fixes
+
+* remove active page link when in long mode ([#3009](https://github.com/SAP/fundamental-styles/issues/3009)) ([c0dab80](https://github.com/SAP/fundamental-styles/commit/c0dab80d392b9c36bc5083dc412e7f0f33c10054))
+
+## [0.21.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.58...v0.21.0-rc.59) (2021-12-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** If > 9 pages then 9 elements should be shown - including page links, more, current page input. Otherwise, all pages should be shown, use the link instead of input with .is-active class or aria-selected="true" attribute for the current page. Input should still be present to be shown in the mobile mode, but it's hidden in desktop mode if < 9 pages.
+
+Add an additional label with class .fd-pagination__label after the input in the mobile mode with the number of pages available.
+
+### Features
+
+* **fn:** introduce Avatar component ([#3005](https://github.com/SAP/fundamental-styles/issues/3005)) ([c133400](https://github.com/SAP/fundamental-styles/commit/c1334001e2956e3fb7200310ce28002f53b46605))
+
+
+### Bug Fixes
+
+* **styles:** pagination component update due to new designs ([#2973](https://github.com/SAP/fundamental-styles/issues/2973)) ([6dbf499](https://github.com/SAP/fundamental-styles/commit/6dbf4991eb51e3c73123c0138d809546c7891a38))
+
+## [0.21.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.57...v0.21.0-rc.58) (2021-12-17)
+
+## [0.21.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.56...v0.21.0-rc.57) (2021-12-16)
+
+## [0.21.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.55...v0.21.0-rc.56) (2021-12-16)
+
+
+### Bug Fixes
+
+* **fn:** add fix for Link states and docs improvements for Title ([#2998](https://github.com/SAP/fundamental-styles/issues/2998)) ([cfde7ef](https://github.com/SAP/fundamental-styles/commit/cfde7efca5c0e967ac97f841ceb6a6b44c64c43c))
+
+## [0.21.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.54...v0.21.0-rc.55) (2021-12-15)
+
+
+### Features
+
+* **fn:** refactor Slider and introduce Progress Bar ([#2983](https://github.com/SAP/fundamental-styles/issues/2983)) ([0c69840](https://github.com/SAP/fundamental-styles/commit/0c698401272477c461f51c803bae69fd738074e9))
+
+## [0.21.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.53...v0.21.0-rc.54) (2021-12-14)
+
+
+### Bug Fixes
+
+* **styles:** rating-indicator styles [ci visual] ([#2972](https://github.com/SAP/fundamental-styles/issues/2972)) ([dcaad15](https://github.com/SAP/fundamental-styles/commit/dcaad15e6612648544e97a25d5d2c9e86b023860))
+
+## [0.21.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.52...v0.21.0-rc.53) (2021-12-14)
+
+
+### Features
+
+* **fn:** introduce dialog, message-box, link, title [ci visual] ([#2959](https://github.com/SAP/fundamental-styles/issues/2959)) ([2a56341](https://github.com/SAP/fundamental-styles/commit/2a5634187c07c157deaeabdab360a24e41e85c9f))
+
+## [0.21.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.51...v0.21.0-rc.52) (2021-12-13)
+
+
+### Bug Fixes
+
+* **fn:** refactor Input fields to latest FN design ([#2960](https://github.com/SAP/fundamental-styles/issues/2960)) ([62148ed](https://github.com/SAP/fundamental-styles/commit/62148edc5ec32856852697cbbd23eece768ecd52))
+
+## [0.21.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.50...v0.21.0-rc.51) (2021-12-12)
+
+## [0.21.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.49...v0.21.0-rc.50) (2021-12-12)
+
+## [0.21.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.48...v0.21.0-rc.49) (2021-12-11)
+
+
+### Bug Fixes
+
+* **styles:** fix issues with progress indicator overflow text wrapping [ci visual] ([#2947](https://github.com/SAP/fundamental-styles/issues/2947)) ([c11fe06](https://github.com/SAP/fundamental-styles/commit/c11fe068f43b9b0e93435a90730160456bacb6a7))
+
+## [0.21.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.47...v0.21.0-rc.48) (2021-12-11)
+
+
+### Bug Fixes
+
+* **styles:** horizontal scroll remove in carousel [ci visual] ([#2904](https://github.com/SAP/fundamental-styles/issues/2904)) ([07b2e92](https://github.com/SAP/fundamental-styles/commit/07b2e928d4610c3f65b822d93b42d816572f9ab3))
+
+## [0.21.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.46...v0.21.0-rc.47) (2021-12-11)
+
+
+### Features
+
+* **fn:** introduce Generic Tag component ([#2984](https://github.com/SAP/fundamental-styles/issues/2984)) ([921e183](https://github.com/SAP/fundamental-styles/commit/921e1831c6f9b0caacbf63ccba60fe70f66e93e6))
+
+## [0.21.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.45...v0.21.0-rc.46) (2021-12-10)
+
+## [0.21.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.44...v0.21.0-rc.45) (2021-12-10)
+
+## [0.21.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.43...v0.21.0-rc.44) (2021-12-10)
+
+## [0.21.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.42...v0.21.0-rc.43) (2021-12-10)
+
+## [0.21.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.41...v0.21.0-rc.42) (2021-12-09)
+
+## [0.21.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.40...v0.21.0-rc.41) (2021-12-09)
+
+## [0.21.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.39...v0.21.0-rc.40) (2021-12-09)
+
+## [0.21.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.38...v0.21.0-rc.39) (2021-12-05)
+
+## [0.21.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.37...v0.21.0-rc.38) (2021-11-30)
+
+## [0.21.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.36...v0.21.0-rc.37) (2021-11-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fn:** New markup for checkbox and radio button groups.
+
+### Bug Fixes
+
+* **fn:** update Radio and Checkbox to latest FN design [ci visual] ([#2948](https://github.com/SAP/fundamental-styles/issues/2948)) ([cecca66](https://github.com/SAP/fundamental-styles/commit/cecca6659d552dcaa607a2bc355ef91d80d2c818))
+
+## [0.21.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.35...v0.21.0-rc.36) (2021-11-29)
+
+
+### Bug Fixes
+
+* **fn:** update the spacing between text and icon in FN Button [ci visual] ([#2946](https://github.com/SAP/fundamental-styles/issues/2946)) ([ca86942](https://github.com/SAP/fundamental-styles/commit/ca86942d639ee211ca9632a3206d66816a7f9e07))
+
+## [0.21.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.34...v0.21.0-rc.35) (2021-11-27)
+
+
+### Features
+
+* illustrated message [ci visual] ([#2917](https://github.com/SAP/fundamental-styles/issues/2917)) ([00a3fe8](https://github.com/SAP/fundamental-styles/commit/00a3fe82bc3fae2ee921e9bb2cc3951f9d13c28d))
+
+## [0.21.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.33...v0.21.0-rc.34) (2021-11-26)
+
+
+### Bug Fixes
+
+* **fn:** update Switch to latest design [ci visual] ([#2934](https://github.com/SAP/fundamental-styles/issues/2934)) ([90e2148](https://github.com/SAP/fundamental-styles/commit/90e214838e326f7da14e2ecb089ca6aa0394f8ed))
+
+## [0.21.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.32...v0.21.0-rc.33) (2021-11-26)
+
+## [0.21.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.31...v0.21.0-rc.32) (2021-11-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fn:** (fn) updated button modifier classes to follow the naming in the design
+* fix(fn): update Button component to latest Fiori Next design
+
+* chore(fn): trigger [ci visual]
+
+Co-authored-by: droshev <mladen.droshev@sap.com>
+
+### Bug Fixes
+
+* **fn:** update Button component to latest Fiori Next design ([#2932](https://github.com/SAP/fundamental-styles/issues/2932)) ([c3fb4a6](https://github.com/SAP/fundamental-styles/commit/c3fb4a6b4fa2c163d3b066b1388549b76fde18a8))
+
+## [0.21.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.30...v0.21.0-rc.31) (2021-11-25)
+
+## [0.21.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.29...v0.21.0-rc.30) (2021-11-25)
+
+## [0.21.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.28...v0.21.0-rc.29) (2021-11-25)
+
+## [0.21.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.27...v0.21.0-rc.28) (2021-11-25)
+
+
+### Bug Fixes
+
+* **styles:** fix correct label text placement [ci visual] ([#2929](https://github.com/SAP/fundamental-styles/issues/2929)) ([ee5271f](https://github.com/SAP/fundamental-styles/commit/ee5271ffeabea13d7601bee3301eea970eebd4d1))
+
+## [0.21.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.26...v0.21.0-rc.27) (2021-11-25)
+
+
+### Bug Fixes
+
+* **fn:** add new color variables ([#2930](https://github.com/SAP/fundamental-styles/issues/2930)) ([3474a6d](https://github.com/SAP/fundamental-styles/commit/3474a6d272bda231c0f9a563fdd4dd64dd0985be))
+
+## [0.21.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.25...v0.21.0-rc.26) (2021-11-25)
+
+## [0.21.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.24...v0.21.0-rc.25) (2021-11-24)
+
+
+### Bug Fixes
+
+* select min-width ([#2927](https://github.com/SAP/fundamental-styles/issues/2927)) ([f5a7a27](https://github.com/SAP/fundamental-styles/commit/f5a7a279268f75df6201439fb53780bf9f8e9b2c))
+
+## [0.21.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.23...v0.21.0-rc.24) (2021-11-24)
+
+
+### Bug Fixes
+
+* fix selection in menu styles ([#2907](https://github.com/SAP/fundamental-styles/issues/2907)) ([9fbde81](https://github.com/SAP/fundamental-styles/commit/9fbde81fc5000e3471eaa5b9676fb93b9abc6372))
+
+## [0.21.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.22...v0.21.0-rc.23) (2021-11-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** update pagination markup
+
+### Bug Fixes
+
+* **styles:** pagination styles update ([#2912](https://github.com/SAP/fundamental-styles/issues/2912)) ([b21f314](https://github.com/SAP/fundamental-styles/commit/b21f314778b15f1aaa17669e7e809dbd1a212f74))
+
+## [0.21.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.21...v0.21.0-rc.22) (2021-11-22)
+
+
+### Bug Fixes
+
+* **fn:** move border style and width to variables [ci visual] ([#2919](https://github.com/SAP/fundamental-styles/issues/2919)) ([b2d01f7](https://github.com/SAP/fundamental-styles/commit/b2d01f713f4f947c977fdab775cc6fac7a2f52bc))
+
+## [0.21.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.20...v0.21.0-rc.21) (2021-11-19)
+
+
+### Bug Fixes
+
+* **fn:** inconsistent selected item border in Select across zoom levels ([#2916](https://github.com/SAP/fundamental-styles/issues/2916)) ([12b3736](https://github.com/SAP/fundamental-styles/commit/12b3736aae06056872882aaca8c44831b163775c))
+
+## [0.21.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.19...v0.21.0-rc.20) (2021-11-17)
+
+
+### Features
+
+* introduce Progress Indicator ([#2903](https://github.com/SAP/fundamental-styles/issues/2903)) ([40f94e0](https://github.com/SAP/fundamental-styles/commit/40f94e0e22bdffd60fb6ed9571256086582b5bc3))
+
+## [0.21.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.18...v0.21.0-rc.19) (2021-11-17)
+
+
+### Bug Fixes
+
+* **fn:** consistent highlights of tags across zoom levels [ci visual] ([#2913](https://github.com/SAP/fundamental-styles/issues/2913)) ([71d3206](https://github.com/SAP/fundamental-styles/commit/71d3206098d9837bb9949860aa281169291489b2))
+
+## [0.21.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.17...v0.21.0-rc.18) (2021-11-17)
+
+## [0.21.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.16...v0.21.0-rc.17) (2021-11-17)
+
+
+### Bug Fixes
+
+* **fn:** consistent tab highlights across zoom levels [ci visual] ([#2914](https://github.com/SAP/fundamental-styles/issues/2914)) ([a9e7bef](https://github.com/SAP/fundamental-styles/commit/a9e7bef317e45675199b415427a7207e924a92cb))
+
+## [0.21.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.15...v0.21.0-rc.16) (2021-11-17)
+
+
+### Bug Fixes
+
+* **fn:** inconsistent text field borders across zoom levels [ci visual] ([#2911](https://github.com/SAP/fundamental-styles/issues/2911)) ([08575b9](https://github.com/SAP/fundamental-styles/commit/08575b9a87f4f54896e26361a99450a2777f9b34))
+
+## [0.21.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.14...v0.21.0-rc.15) (2021-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** update checkbox markup
+
+### Bug Fixes
+
+* **styles:** refactor checkbox to use a square not an icon for tristate ([#2905](https://github.com/SAP/fundamental-styles/issues/2905)) ([1a45ee9](https://github.com/SAP/fundamental-styles/commit/1a45ee983a1340b082d7ec45ee21d3f0729fad49))
+
 ## [0.21.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.13...v0.21.0-rc.14) (2021-11-10)
 
 

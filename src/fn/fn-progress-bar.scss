@@ -1,0 +1,76 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-progress-bar;
+$fn-progress-bar-offset: 0.125rem;
+
+$fn-progress-bar-colors: (
+  "positive": ("color": $fn-color-green-500),
+  "critical": ("color": $fn-color-orange-400),
+  "negative": ("color": $fn-color-red-500),
+);
+
+@mixin fn-progress-bar-dot() {
+  @include fn-reset();
+
+  content: '';
+  z-index: 1;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  border-radius: 50%;
+  top: $fn-progress-bar-offset;
+  left: $fn-progress-bar-offset;
+  background: $fn-color-grey-500;
+
+  @content;
+}
+
+.#{$block} {
+  @include fn-reset();
+
+  width: 100%;
+  height: 0.5rem;
+  position: relative;
+  background: $fn-color-grey-100;
+  border-radius: $fn-border-radius-4;
+
+  &::after {
+    @include fn-progress-bar-dot();
+  }
+
+  &::before {
+    @include fn-progress-bar-dot() {
+      left: auto;
+      right: $fn-progress-bar-offset;
+    }
+  }
+
+  @include fn-disabled() {
+    pointer-events: none;
+    opacity: $fn-disabled-opacity;
+  }
+
+  &__track {
+    @include fn-reset();
+
+    z-index: 2;
+    height: 0.75rem;
+    position: absolute;
+    background: $fn-color-grey-700;
+    top: -1 * $fn-progress-bar-offset;
+    border-radius: $fn-border-radius-6;
+  }
+
+  @each $set-name, $set-color in $fn-progress-bar-colors {
+    &--#{$set-name} {
+      &::after,
+      &::before {
+        background: map_get($set-color, "color");
+      }
+
+      .#{$block}__track {
+        background: map_get($set-color, "color");
+      }
+    }
+  }
+}

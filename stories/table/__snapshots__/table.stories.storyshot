@@ -7981,16 +7981,10 @@ exports[`Storyshots Components/Table Pagination 1`] = `
   </table>
   
 
+
   <div
     class="fd-pagination"
   >
-    
-    
-    <span
-      class="fd-pagination__total"
-    >
-      Showing 3 of 30 items
-    </span>
     
     
     <nav
@@ -8000,59 +7994,143 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         
       <a
         aria-disabled="false"
-        aria-label="Next"
-        class="fd-pagination__link fd-pagination__link--previous"
+        aria-label="First"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
         href="#"
-      />
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-rewind"
+        />
+        
+        
+      </a>
       
         
+        
       <a
-        class="fd-pagination__link"
+        aria-disabled="false"
+        aria-label="Previous"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-left-arrow"
+        />
+        
+        
+      </a>
+      
+        
+        
+      <a
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
         1
       </a>
       
         
-      <a
-        class="fd-pagination__link is-selected"
-        href="#"
+        
+      <label
+        class="fd-form-label fd-pagination__label"
+        for="secondPageInput"
       >
-        2
-      </a>
+        Page:
+      </label>
       
         
+        
+      <input
+        class="fd-input fd-input--compact fd-pagination__input"
+        id="secondPageInput"
+        max="10"
+        min="1"
+        required=""
+        type="number"
+        value="2"
+      />
+      
+        
+        
       <a
-        class="fd-pagination__link"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
         3
       </a>
       
+
         
       <span
         class="fd-pagination__more"
         role="presentation"
       />
       
+
         
       <a
-        class="fd-pagination__link"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
         href="#"
       >
         10
       </a>
       
         
+        
       <a
         aria-disabled="false"
         aria-label="Next"
-        class="fd-pagination__link fd-pagination__link--next"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button"
         href="#"
-      />
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--navigation-right-arrow"
+        />
+        
+        
+      </a>
+      
+        
+        
+      <a
+        aria-disabled="false"
+        aria-label="Last"
+        class="fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile"
+        href="#"
+      >
+        
+            
+        <i
+          class="sap-icon sap-icon--media-forward"
+        />
+        
+        
+      </a>
       
     
     </nav>
+    
+  
+    
+    <div
+      class="fd-pagination__total"
+    >
+      
+        
+      <span
+        class="fd-form-label fd-pagination__total-label"
+      >
+        30 Results
+      </span>
+      
+    
+    </div>
     
 
   </div>

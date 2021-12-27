@@ -3,11 +3,6 @@
 
 $block: #{$fd-namespace}-rating-indicator;
 
-:root {
-  --sapRating-indicator-icon-rated: none;
-  --sapRating-indicator-icon-unrated: none;
-}
-
 .#{$block} {
   $fd-rating-indicator-sizes: (
     "cozy": ("fontSize": 1.5rem, "spacingBetweenIcons": 0.1875rem, "controlMargin": 0.8125rem 0),
@@ -25,46 +20,40 @@ $block: #{$fd-namespace}-rating-indicator;
   $fd-rating-indicator-dynamic-text-space: 0.5rem;
 
   @mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
-    .#{$block}__input {
-      width: $iconFontSize / 2;
-      height: $iconFontSize;
-    }
+    .#{$block} {
+      &__input {
+        width: $iconFontSize * 0.5;
+        height: $iconFontSize;
+      }
 
-    .#{$block}__label {
-      margin-right: 0;
+      &__label {
+        margin-right: 0;
 
-      &:nth-child(4n+4) {
-        margin-right: $spacingBetweenIcons;
-        flex-direction: row-reverse;
+        &:nth-child(4n+6) {
+          margin-right: $spacingBetweenIcons;
+          flex-direction: row-reverse;
 
-        @include fd-rtl() {
-          margin-right: 0;
-          margin-left: $spacingBetweenIcons;
+          @include fd-rtl() {
+            margin-right: 0;
+            margin-left: $spacingBetweenIcons;
 
-          &:last-child {
-            margin-left: 0;
+            &:last-child {
+              margin-left: 0;
+            }
           }
         }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        overflow: hidden;
+        width: $iconFontSize * 0.5;
       }
 
-      &:last-child {
-        margin-right: 0;
-      }
-
-      overflow: hidden;
-      width: $iconFontSize / 2 !important;
-    }
-
-    &.#{$block}--icon .#{$block}__label {
-      @include fd-rtl() {
-        background-position: right;
-      }
-
-      &:nth-child(4n+4) {
-        background-position: right;
-
-        @include fd-rtl() {
-          background-position: left;
+      &--icon {
+        .#{$block}__label {
+          width: $iconFontSize * 0.5;
         }
       }
     }
@@ -158,7 +147,7 @@ $block: #{$fd-namespace}-rating-indicator;
     margin-left: $fd-rating-indicator-dynamic-text-space;
   }
 
-  &__hide-dynamic-text {
+  &--hide-dynamic-text {
     > .#{$block}__dynamic-text {
       display: none;
     }
@@ -177,8 +166,7 @@ $block: #{$fd-namespace}-rating-indicator;
       }
     }
 
-    .fd-rating-indicator__dynamic-text,
-    .#{$block}___dynamic-text {
+    .#{$block}__dynamic-text {
       margin-left: 0;
       margin-right: $fd-rating-indicator-dynamic-text-space;
     }
@@ -201,7 +189,7 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &.#{$block}--display-mode {
+  &--display-mode {
     .#{$block}__label {
       margin-right: 0.125rem;
 
@@ -217,8 +205,8 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &.#{$block}--non-interactive,
-  &.#{$block}--display-mode {
+  &--non-interactive,
+  &--display-mode {
     pointer-events: none;
 
     @include fd-rating-indicator-labels-after-checked() {
@@ -228,11 +216,7 @@ $block: #{$fd-namespace}-rating-indicator;
     }
   }
 
-  &--half-star {
-    @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
-  }
-
-  &.#{$block}--icon {
+  &--icon {
     .#{$block}__label {
       &::after,
       &::before {
@@ -241,14 +225,29 @@ $block: #{$fd-namespace}-rating-indicator;
 
       width: $fd-rating-indicator-default-font-size;
       height: $fd-rating-indicator-default-font-size;
-      background-image: var(--sapRating-indicator-icon-rated);
-      background-size: cover;
-      background-position: left;
-      background-repeat: no-repeat;
+
+      &-rated,
+      &-unrated {
+        font-size: $fd-rating-indicator-default-font-size;
+        height: 100%;
+        line-height: 1;
+      }
+
+      &-unrated {
+        display: none;
+      }
     }
 
     @include fd-rating-indicator-labels-after-checked() {
-      background-image: var(--sapRating-indicator-icon-unrated);
+      .#{$block}__label {
+        &-rated {
+          display: none;
+        }
+
+        &-unrated {
+          display: block;
+        }
+      }
     }
   }
 
@@ -279,6 +278,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
         &::before {
           font-size: $fd-rating-indicator-sizes-font-size;
+          line-height: 1;
         }
 
         &:last-child {
@@ -292,16 +292,38 @@ $block: #{$fd-namespace}-rating-indicator;
         }
       }
 
-      &--half-star {
-        @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
-      }
-
       &.#{$block}--icon {
         .#{$block}__label {
-          width: $fd-rating-indicator-default-font-size;
-          height: $fd-rating-indicator-default-font-size;
+          width: $fd-rating-indicator-sizes-font-size;
+          height: $fd-rating-indicator-sizes-font-size;
+
+          &-rated,
+          &-unrated {
+            font-size: $fd-rating-indicator-sizes-font-size;
+          }
         }
       }
+
+      &.#{$block}--half-star {
+        @include fd-rating-indicator-with-half-star($fd-rating-indicator-sizes-font-size, $fd-rating-indicator-sizes-spacing-between-icons);
+      }
+    }
+  }
+
+  &--half-star {
+    @include fd-rating-indicator-with-half-star($fd-rating-indicator-default-font-size, $fd-rating-indicator-default-spacing-between-icons);
+  }
+
+  &[class*='#{$block}--'] &__input,
+  &[class*='#{$block}--'] &__label,
+  &__input,
+  &__label {
+    &--zero-rating {
+      padding: 0;
+      margin: 0;
+      width: 0;
+      overflow: hidden;
+      opacity: 0.0001;
     }
   }
 }

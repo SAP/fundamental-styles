@@ -163,6 +163,43 @@
   outline-offset: $fd-radio-focus-offset - $margin;
 }
 
+@mixin fd-form-radio-checkbox-focus($offset) {
+  outline: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+    border-radius: var(--fdCheckbox_Outline_Border_Radius);
+    top: $offset;
+    right: $offset;
+    bottom: $offset;
+    left: $offset;
+    z-index: 3;
+  }
+}
+
+@mixin fd-form-radio-checkbox-required-label {
+  @include fd-set-padding-right(0.5rem);
+
+  &::after {
+    content: '*';
+    font-size: var(--sapFontSize);
+    font-weight: bold;
+    color: var(--sapField_RequiredColor);
+    position: absolute;
+    padding-left: 0.125rem;
+  }
+
+  @include fd-rtl() {
+    &::after {
+      padding-left: 0;
+      padding-right: 0.125rem;
+    }
+  }
+}
+
 @mixin fd-form-label() {
   $fd-label-spacing: 0.5rem;
 

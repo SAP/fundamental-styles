@@ -1,7 +1,6 @@
 @import "./fn-settings";
 
 $block: #{$fn-namespace}-tag;
-$tag-border-width: 0.125rem;
 
 $tag-colors-rest: (
   "grey": (
@@ -107,7 +106,8 @@ $tag-colors-rest: (
     content: '';
     height: 100%;
     position: absolute;
-    width: $tag-border-width;
+    border-left-width: $fn-border-width;
+    border-left-style: $fn-border-style;
   }
 
   @include fn-rtl() {
@@ -123,7 +123,7 @@ $tag-colors-rest: (
       background: map_get($color-set, "background");
 
       &::before {
-        background: map_get($color-set, "border");
+        border-left-color: map_get($color-set, "border");
       }
 
       @include fn-hover() {
@@ -147,7 +147,7 @@ $tag-colors-rest: (
         outline: none;
         color: map_get($color-set, "text-focus");
         background: map_get($color-set, "background-state");
-        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow-blue;
       }
 
       @include fn-not-focus-visible() {
@@ -161,7 +161,7 @@ $tag-colors-rest: (
         outline: none;
         color: map_get($color-set, "text-focus");
         background: map_get($color-set, "background-state");
-        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow;
+        box-shadow: $fn-shadow-blue-small, $fn-focus-outline-shadow-blue;
       }
 
       @include fn-disabled() {
@@ -171,7 +171,7 @@ $tag-colors-rest: (
         background: $fn-color-grey-1;
 
         &::before {
-          background: $fn-color-grey-2;
+          border-left-color: $fn-color-grey-2;
         }
       }
     }

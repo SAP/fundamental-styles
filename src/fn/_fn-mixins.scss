@@ -1,8 +1,8 @@
 @mixin fn-reset {
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: #223548;
+  line-height: 1.375rem;
+  color: $fn-color-grey-800;
   font-weight: normal;
   box-sizing: border-box;
   padding: 0;
@@ -85,6 +85,13 @@
   }
 }
 
+@mixin fn-focus-active {
+  &:focus:active,
+  &.is-focus.is-active {
+    @content;
+  }
+}
+
 @mixin fn-disabled {
   &[aria-disabled="true"],
   &:disabled,
@@ -117,6 +124,12 @@
 
 @mixin fn-focus-visible() {
   &.focus-visible {
+    @content;
+  }
+}
+
+@mixin fn-display() {
+  &.is-display {
     @content;
   }
 }
@@ -232,4 +245,34 @@
     left: auto;
     right: $left;
   }
+}
+
+@mixin fn-user-select() {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+@mixin fn-set-top-right-bottom-left($top:0, $right:0, $bottom:0, $left:0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+  @include fn-rtl() {
+    left: $right;
+    right: $left;
+  }
+}
+
+@mixin fn-set-square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin fn-set-rectangle($width, $height) {
+  width: $width;
+  height: $height;
 }

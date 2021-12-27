@@ -1,0 +1,94 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-nested-button;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-transition();
+  @include fn-flex-center();
+  @include fn-set-square(1.125rem);
+
+  cursor: pointer;
+  border-radius: 50%;
+  background: transparent;
+
+  [class*='sap-icon'] {
+    height: 1.125rem;
+    font-size: 0.75rem;
+    padding-top: 0.125rem;
+    color: $fn-color-grey-500;
+  }
+
+  @include fn-hover() {
+    background: $fn-color-white;
+    box-shadow: $fn-shadow-grey-level-1;
+
+    @include fn-active() {
+      background: $fn-color-blue-500;
+      box-shadow: none;
+
+      [class*='sap-icon'] {
+        color: $fn-color-white;
+      }
+    }
+  }
+
+  @include fn-active() {
+    background: $fn-color-blue-500;
+    box-shadow: none;
+
+    [class*='sap-icon'] {
+      color: $fn-color-white;
+    }
+  }
+
+  @include fn-is-focus() {
+    outline: none;
+    background: $fn-color-white;
+    box-shadow: $fn-focus-outline-shadow-grey;
+
+    [class*='sap-icon'] {
+      color: $fn-color-grey-500;
+    }
+  }
+
+  @include fn-not-focus-visible() {
+    background: transparent;
+
+    [class*='sap-icon'] {
+      color: $fn-color-grey-500;
+    }
+
+    @include fn-hover() {
+      background: $fn-color-white;
+      box-shadow: $fn-shadow-grey-level-1;
+
+      @include fn-active() {
+        background: $fn-color-blue-500;
+        box-shadow: none;
+
+        [class*='sap-icon'] {
+          color: $fn-color-white;
+        }
+      }
+    }
+
+    outline: none;
+  }
+
+  @include fn-focus-visible() {
+    outline: none;
+    background: $fn-color-white;
+    box-shadow: $fn-focus-outline-shadow-grey;
+
+    [class*='sap-icon'] {
+      color: $fn-color-grey-500;
+    }
+  }
+
+  @include fn-disabled() {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: $fn-disabled-opacity;
+  }
+}

@@ -7,15 +7,30 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
-    .docs-fn-container label {
-        margin-bottom: 1rem;
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+    .docs-fn-container-group {
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
   </style>
@@ -27,6 +42,13 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
   >
     
     
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
     <label
       class="fn-checkbox"
       tabindex="0"
@@ -34,6 +56,60 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
       
         
       <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
         checked="checked"
         class="fn-checkbox__input"
         tabindex="-1"
@@ -49,7 +125,7 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
       <span
         class="fn-checkbox__label"
       >
-        First
+        Checkbox
       </span>
       
     
@@ -64,6 +140,46 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
       
         
       <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-checkbox is-hover"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
@@ -78,7 +194,7 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
       <span
         class="fn-checkbox__label"
       >
-        Second
+        Checkbox
       </span>
       
     
@@ -87,12 +203,37 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
 
     
     <label
-      class="fn-checkbox"
+      class="fn-checkbox is-hover"
       tabindex="0"
     >
       
         
       <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-hover"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
@@ -107,13 +248,175 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
       <span
         class="fn-checkbox__label"
       >
-        Third
+        Checkbox
       </span>
       
     
     </label>
     
 
+    
+    <label
+      class="fn-checkbox is-hover"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-checkbox is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+    
     
     <label
       class="fn-checkbox is-disabled"
@@ -121,6 +424,7 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
       
         
       <input
+        aria-label="checkbox"
         class="fn-checkbox__input"
         disabled=""
         tabindex="-1"
@@ -136,8 +440,336 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
       <span
         class="fn-checkbox__label"
       >
-        Fourth
+        Checkbox
       </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-disabled"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        disabled=""
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-disabled"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        disabled=""
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-disabled"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        disabled=""
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :read-only
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-checkbox is-readonly"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-readonly"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-readonly"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-readonly"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :display
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-checkbox is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
+      
+        
+      <span
+        class="fn-checkbox__label"
+      >
+        Checkbox
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-checkbox is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="checkbox"
+        checked="checked"
+        class="fn-checkbox__input"
+        tabindex="-1"
+        type="checkbox"
+      />
+      
+        
+      <span
+        class="fn-checkbox__checkmark"
+      />
       
     
     </label>
@@ -156,15 +788,30 @@ exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
-    .docs-fn-container label {
-        margin-bottom: 1rem;
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+    .docs-fn-container-group {
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
   </style>
@@ -172,24 +819,26 @@ exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
 
 
   <div
-    class="docs-fn-container"
+    class="docs-fn-container-group"
   >
     
     
-    <div
-      style="width: 10rem"
+    <fieldset
+      class="fn-fieldset"
     >
       
         
       <label
-        class="fn-checkbox fn-checkbox--group"
+        class="fn-checkbox"
         tabindex="0"
       >
         
             
         <input
+          aria-label="checkbox"
           checked="checked"
           class="fn-checkbox__input"
+          name="checkbox_group"
           tabindex="-1"
           type="checkbox"
         />
@@ -209,16 +858,17 @@ exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
         
       </label>
       
-
         
       <label
-        class="fn-checkbox fn-checkbox--group"
+        class="fn-checkbox"
         tabindex="0"
       >
         
             
         <input
+          aria-label="checkbox"
           class="fn-checkbox__input"
+          name="checkbox_group"
           tabindex="-1"
           type="checkbox"
         />
@@ -238,16 +888,17 @@ exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
         
       </label>
       
-
         
       <label
-        class="fn-checkbox fn-checkbox--group"
+        class="fn-checkbox"
         tabindex="0"
       >
         
             
         <input
+          aria-label="checkbox"
           class="fn-checkbox__input"
+          name="checkbox_group"
           tabindex="-1"
           type="checkbox"
         />
@@ -267,16 +918,36 @@ exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
         
       </label>
       
+    
+    </fieldset>
+    
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container-group"
+  >
+    
+    
+    <fieldset
+      class="fn-fieldset fn-fieldset--full-width"
+      style="width: 120px;"
+    >
+      
         
       <label
-        class="fn-checkbox fn-checkbox--group is-disabled"
+        class="fn-checkbox"
+        tabindex="0"
       >
         
             
         <input
+          aria-label="checkbox"
+          checked="checked"
           class="fn-checkbox__input"
-          disabled=""
+          name="checkbox_group_width"
           tabindex="-1"
           type="checkbox"
         />
@@ -290,14 +961,182 @@ exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
         <span
           class="fn-checkbox__label"
         >
-          Fourth
+          First
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-checkbox"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="checkbox"
+          class="fn-checkbox__input"
+          name="checkbox_group_width"
+          tabindex="-1"
+          type="checkbox"
+        />
+        
+            
+        <span
+          class="fn-checkbox__checkmark"
+        />
+        
+            
+        <span
+          class="fn-checkbox__label"
+        >
+          Second
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-checkbox"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="checkbox"
+          class="fn-checkbox__input"
+          name="checkbox_group_width"
+          tabindex="-1"
+          type="checkbox"
+        />
+        
+            
+        <span
+          class="fn-checkbox__checkmark"
+        />
+        
+            
+        <span
+          class="fn-checkbox__label"
+        >
+          Third
         </span>
         
         
       </label>
       
     
-    </div>
+    </fieldset>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container-group"
+  >
+    
+    
+    <fieldset
+      class="fn-fieldset fn-fieldset--horizontal"
+    >
+      
+        
+      <label
+        class="fn-checkbox"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="checkbox"
+          checked="checked"
+          class="fn-checkbox__input"
+          name="checkbox_group_horizontal"
+          tabindex="-1"
+          type="checkbox"
+        />
+        
+            
+        <span
+          class="fn-checkbox__checkmark"
+        />
+        
+            
+        <span
+          class="fn-checkbox__label"
+        >
+          Checkbox
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-checkbox"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="checkbox"
+          class="fn-checkbox__input"
+          name="checkbox_group_horizontal"
+          tabindex="-1"
+          type="checkbox"
+        />
+        
+            
+        <span
+          class="fn-checkbox__checkmark"
+        />
+        
+            
+        <span
+          class="fn-checkbox__label"
+        >
+          Checkbox
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-checkbox"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="checkbox"
+          class="fn-checkbox__input"
+          name="checkbox_group_horizontal"
+          tabindex="-1"
+          type="checkbox"
+        />
+        
+            
+        <span
+          class="fn-checkbox__checkmark"
+        />
+        
+            
+        <span
+          class="fn-checkbox__label"
+        >
+          Checkbox
+        </span>
+        
+        
+      </label>
+      
+    
+    </fieldset>
     
 
   </div>
@@ -313,15 +1152,30 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
-    .docs-fn-container label {
-        margin-bottom: 1rem;
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+    .docs-fn-container-group {
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
   </style>
@@ -333,6 +1187,13 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
   >
     
     
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
     <label
       class="fn-radio"
       tabindex="0"
@@ -340,9 +1201,62 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
       
         
       <input
+        aria-label="radio"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
         checked="checked"
         class="fn-radio__input"
-        name="radio"
         tabindex="-1"
         type="radio"
       />
@@ -356,7 +1270,7 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
       <span
         class="fn-radio__label"
       >
-        First
+        Radio Button
       </span>
       
     
@@ -371,8 +1285,47 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
       
         
       <input
+        aria-label="radio"
+        checked="checked"
         class="fn-radio__input"
-        name="radio"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-radio is-hover"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
@@ -386,7 +1339,7 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
       <span
         class="fn-radio__label"
       >
-        Second
+        Radio Button
       </span>
       
     
@@ -395,14 +1348,38 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
 
     
     <label
-      class="fn-radio"
+      class="fn-radio is-hover"
       tabindex="0"
     >
       
         
       <input
+        aria-label="radio"
         class="fn-radio__input"
-        name="radio"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-hover"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
@@ -416,7 +1393,199 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
       <span
         class="fn-radio__label"
       >
-        Third
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-hover"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-radio is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-focus"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-radio is-disabled"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        disabled=""
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
       </span>
       
     
@@ -430,9 +1599,33 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
       
         
       <input
+        aria-label="radio"
         class="fn-radio__input"
         disabled=""
-        name="radio"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-disabled"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        disabled=""
         tabindex="-1"
         type="radio"
       />
@@ -446,8 +1639,282 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
       <span
         class="fn-radio__label"
       >
-        Fourth
+        Radio Button
       </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-disabled"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        disabled=""
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :read-only
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-radio is-readonly"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-readonly"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-readonly"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-readonly"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        disabled=""
+        readonly=""
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :display
+      </b>
+    </div>
+    
+    
+    <label
+      class="fn-radio is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
+      
+        
+      <span
+        class="fn-radio__label"
+      >
+        Radio Button
+      </span>
+      
+    
+    </label>
+    
+
+    
+    <label
+      class="fn-radio is-display"
+      tabindex="0"
+    >
+      
+        
+      <input
+        aria-label="radio"
+        checked="checked"
+        class="fn-radio__input"
+        tabindex="-1"
+        type="radio"
+      />
+      
+        
+      <span
+        class="fn-radio__checkmark"
+      />
       
     
     </label>
@@ -467,15 +1934,30 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
-    .docs-fn-container label {
-        margin-bottom: 1rem;
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+    .docs-fn-container-group {
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
   </style>
@@ -483,25 +1965,26 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
 
 
   <div
-    class="docs-fn-container"
+    class="docs-fn-container-group"
   >
     
     
-    <div
-      style="width: 10rem"
+    <fieldset
+      class="fn-fieldset"
     >
       
         
       <label
-        class="fn-radio fn-radio--group"
+        class="fn-radio"
         tabindex="0"
       >
         
             
         <input
+          aria-label="radio"
           checked="checked"
           class="fn-radio__input"
-          name="radio-group"
+          name="group1"
           tabindex="-1"
           type="radio"
         />
@@ -521,17 +2004,17 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
         
       </label>
       
-
         
       <label
-        class="fn-radio fn-radio--group"
+        class="fn-radio"
         tabindex="0"
       >
         
             
         <input
+          aria-label="radio"
           class="fn-radio__input"
-          name="radio-group"
+          name="group1"
           tabindex="-1"
           type="radio"
         />
@@ -551,17 +2034,17 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
         
       </label>
       
-
         
       <label
-        class="fn-radio fn-radio--group"
+        class="fn-radio"
         tabindex="0"
       >
         
             
         <input
+          aria-label="radio"
           class="fn-radio__input"
-          name="radio-group"
+          name="group1"
           tabindex="-1"
           type="radio"
         />
@@ -581,17 +2064,36 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
         
       </label>
       
+    
+    </fieldset>
+    
 
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container-group"
+  >
+    
+    
+    <fieldset
+      class="fn-fieldset fn-fieldset--full-width"
+      style="width: 120px;"
+    >
+      
         
       <label
-        class="fn-radio fn-radio--group is-disabled"
+        class="fn-radio"
+        tabindex="0"
       >
         
             
         <input
+          aria-label="radio"
+          checked="checked"
           class="fn-radio__input"
-          disabled=""
-          name="radio-group"
+          name="group2"
           tabindex="-1"
           type="radio"
         />
@@ -605,19 +2107,186 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
         <span
           class="fn-radio__label"
         >
-          Fourth
+          First
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-radio"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="radio"
+          class="fn-radio__input"
+          name="group2"
+          tabindex="-1"
+          type="radio"
+        />
+        
+            
+        <span
+          class="fn-radio__checkmark"
+        />
+        
+            
+        <span
+          class="fn-radio__label"
+        >
+          Second
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-radio"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="radio"
+          class="fn-radio__input"
+          name="group2"
+          tabindex="-1"
+          type="radio"
+        />
+        
+            
+        <span
+          class="fn-radio__checkmark"
+        />
+        
+            
+        <span
+          class="fn-radio__label"
+        >
+          Third
         </span>
         
         
       </label>
       
     
-    </div>
+    </fieldset>
     
 
   </div>
   
 
+
+  <div
+    class="docs-fn-container-group"
+  >
+    
+    
+    <fieldset
+      class="fn-fieldset fn-fieldset--horizontal"
+    >
+      
+        
+      <label
+        class="fn-radio"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="radio"
+          checked="checked"
+          class="fn-radio__input"
+          name="group3"
+          tabindex="-1"
+          type="radio"
+        />
+        
+            
+        <span
+          class="fn-radio__checkmark"
+        />
+        
+            
+        <span
+          class="fn-radio__label"
+        >
+          Radio Button
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-radio"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="radio"
+          class="fn-radio__input"
+          name="group3"
+          tabindex="-1"
+          type="radio"
+        />
+        
+            
+        <span
+          class="fn-radio__checkmark"
+        />
+        
+            
+        <span
+          class="fn-radio__label"
+        >
+          Radio Button
+        </span>
+        
+        
+      </label>
+      
+        
+      <label
+        class="fn-radio"
+        tabindex="0"
+      >
+        
+            
+        <input
+          aria-label="radio"
+          class="fn-radio__input"
+          name="group3"
+          tabindex="-1"
+          type="radio"
+        />
+        
+            
+        <span
+          class="fn-radio__checkmark"
+        />
+        
+            
+        <span
+          class="fn-radio__label"
+        >
+          Radio Button
+        </span>
+        
+        
+      </label>
+      
+    
+    </fieldset>
+    
+
+  </div>
+  
 
 </section>
 `;
@@ -629,15 +2298,30 @@ exports[`Storyshots Experimental/Toggles Switch 1`] = `
   <style>
     
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        flex-direction: column;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
-    .docs-fn-container label {
-        margin-bottom: 1rem;
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+    .docs-fn-container-group {
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 
   </style>

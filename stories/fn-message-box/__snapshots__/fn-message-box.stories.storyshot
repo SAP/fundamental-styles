@@ -1,0 +1,790 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-box {
+        z-index: 101;
+    }
+
+    .fn-message-box-docs-static.fn-message-box {
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+        justify-content: center;
+
+        &::before {
+        background-color: transparent;
+        }
+    }
+
+    .fn-message-box-docs-static .fn-message-box__content {
+        position: relative;
+        transform: translate(0%, 0%);
+        width: 250px;
+        height: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+  </style>
+  
+
+
+  <div
+    class="fn-message-box-docs-static fn-message-box fn-message-box--confirmation fn-message-box--active"
+    style="height:300px"
+  >
+    
+    
+    <section
+      class="fn-message-box__content"
+    >
+      
+        
+      <header
+        class="fn-message-box__header"
+      >
+        
+            
+        <i
+          class="sap-icon--question-mark"
+        />
+        
+            
+        <h2
+          class="fn-title"
+        >
+          The Lord of The Rings
+        </h2>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fn-message-box__body"
+      >
+        
+            
+        <p>
+          You have made changes.
+          <br />
+          Do you want to save them before leaving?
+        </p>
+        
+            
+        <a
+          class="fn-link"
+          href="#"
+        >
+          Get Help
+        </a>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fn-bar fn-bar--footer fn-message-box__footer"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized fn-button--icon-left"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Discard
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </footer>
+      
+    
+    </section>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Message Box Critical Message Box 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-box {
+        z-index: 101;
+    }
+
+    .fn-message-box-docs-static.fn-message-box {
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+        justify-content: center;
+
+        &::before {
+        background-color: transparent;
+        }
+    }
+
+    .fn-message-box-docs-static .fn-message-box__content {
+        position: relative;
+        transform: translate(0%, 0%);
+        width: 250px;
+        height: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+  </style>
+  
+
+
+  <div
+    class="fn-message-box-docs-static fn-message-box fn-message-box--critical fn-message-box--active"
+    style="height:300px"
+  >
+    
+    
+    <section
+      class="fn-message-box__content"
+    >
+      
+        
+      <header
+        class="fn-message-box__header"
+      >
+        
+            
+        <i
+          class="sap-icon--message-warning"
+        />
+        
+            
+        <h2
+          class="fn-title"
+        >
+          The Lord of The Rings
+        </h2>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fn-message-box__body"
+      >
+        
+            
+        <p>
+          You cannot save the planning. The vendor address is invalid.
+        </p>
+        
+            
+        <a
+          class="fn-link"
+          href="#"
+        >
+          Get Help
+        </a>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fn-bar fn-bar--footer fn-message-box__footer"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Close
+          </span>
+          
+            
+        </button>
+        
+        
+      </footer>
+      
+    
+    </section>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Message Box Info Message Box 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-box {
+        z-index: 101;
+    }
+
+    .fn-message-box-docs-static.fn-message-box {
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+        justify-content: center;
+
+        &::before {
+        background-color: transparent;
+        }
+    }
+
+    .fn-message-box-docs-static .fn-message-box__content {
+        position: relative;
+        transform: translate(0%, 0%);
+        width: 250px;
+        height: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+  </style>
+  
+
+
+  <div
+    class="fn-message-box-docs-static fn-message-box fn-message-box--info fn-message-box--active"
+    style="height:300px"
+  >
+    
+    
+    <section
+      class="fn-message-box__content"
+    >
+      
+        
+      <header
+        class="fn-message-box__header"
+      >
+        
+            
+        <i
+          class="sap-icon--message-information"
+        />
+        
+            
+        <h2
+          class="fn-title"
+        >
+          The Lord of The Rings
+        </h2>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fn-message-box__body"
+      >
+        
+            
+        <p>
+          You were able to save the planning.
+        </p>
+        
+            
+        <a
+          class="fn-link"
+          href="#"
+        >
+          Get Help
+        </a>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fn-bar fn-bar--footer fn-message-box__footer"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Close
+          </span>
+          
+            
+        </button>
+        
+        
+      </footer>
+      
+    
+    </section>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Message Box Message Box 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-box {
+        z-index: 101;
+    }
+
+    .fn-message-box-docs-static.fn-message-box {
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+        justify-content: center;
+
+        &::before {
+        background-color: transparent;
+        }
+    }
+
+    .fn-message-box-docs-static .fn-message-box__content {
+        position: relative;
+        transform: translate(0%, 0%);
+        width: 250px;
+        height: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+  </style>
+  
+
+
+  <div
+    class="fn-message-box-docs-static fn-message-box fn-message-box--active"
+    style="height:300px"
+  >
+    
+    
+    <section
+      class="fn-message-box__content"
+    >
+      
+        
+      <header
+        class="fn-message-box__header"
+      >
+        
+            
+        <h2
+          class="fn-title"
+        >
+          The Lord of The Rings
+        </h2>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fn-message-box__body"
+      >
+        
+            
+        <p>
+          You have made changes.
+          <br />
+          Do you want to save them before leaving?
+        </p>
+        
+            
+        <a
+          class="fn-link"
+          href="#"
+        >
+          Get Help
+        </a>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fn-bar fn-bar--footer fn-message-box__footer"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized fn-button--icon-left"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Discard
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </footer>
+      
+    
+    </section>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Message Box Negative Message Box 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-box {
+        z-index: 101;
+    }
+
+    .fn-message-box-docs-static.fn-message-box {
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+        justify-content: center;
+
+        &::before {
+        background-color: transparent;
+        }
+    }
+
+    .fn-message-box-docs-static .fn-message-box__content {
+        position: relative;
+        transform: translate(0%, 0%);
+        width: 250px;
+        height: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+  </style>
+  
+
+
+  <div
+    class="fn-message-box-docs-static fn-message-box fn-message-box--negative fn-message-box--active"
+    style="height:300px"
+  >
+    
+    
+    <section
+      class="fn-message-box__content"
+    >
+      
+        
+      <header
+        class="fn-message-box__header"
+      >
+        
+            
+        <i
+          class="sap-icon--sys-cancel-2"
+        />
+        
+            
+        <h2
+          class="fn-title"
+        >
+          The Lord of The Rings
+        </h2>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fn-message-box__body"
+      >
+        
+            
+        <p>
+          You cannot save the planning. The vendor address is invalid.
+        </p>
+        
+            
+        <a
+          class="fn-link"
+          href="#"
+        >
+          Get Help
+        </a>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fn-bar fn-bar--footer fn-message-box__footer"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Close
+          </span>
+          
+            
+        </button>
+        
+        
+      </footer>
+      
+    
+    </section>
+    
+
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Message Box Positive Message Box 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-box {
+        z-index: 101;
+    }
+
+    .fn-message-box-docs-static.fn-message-box {
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+        justify-content: center;
+
+        &::before {
+        background-color: transparent;
+        }
+    }
+
+    .fn-message-box-docs-static .fn-message-box__content {
+        position: relative;
+        transform: translate(0%, 0%);
+        width: 250px;
+        height: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+  </style>
+  
+
+
+  <div
+    class="fn-message-box-docs-static fn-message-box fn-message-box--positive fn-message-box--active"
+    style="height:300px"
+  >
+    
+    
+    <section
+      class="fn-message-box__content"
+    >
+      
+        
+      <header
+        class="fn-message-box__header"
+      >
+        
+            
+        <i
+          class="sap-icon--message-success"
+        />
+        
+            
+        <h2
+          class="fn-title"
+        >
+          The Lord of The Rings
+        </h2>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fn-message-box__body"
+      >
+        
+            
+        <p>
+          You were able to save the planning.
+        </p>
+        
+            
+        <a
+          class="fn-link"
+          href="#"
+        >
+          Get Help
+        </a>
+        
+        
+      </div>
+      
+        
+      <footer
+        class="fn-bar fn-bar--footer fn-message-box__footer"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--ghost"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Close
+          </span>
+          
+            
+        </button>
+        
+        
+      </footer>
+      
+    
+    </section>
+    
+
+  </div>
+  
+
+</section>
+`;

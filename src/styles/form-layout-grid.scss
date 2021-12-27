@@ -18,10 +18,13 @@ $groupGutter: 1rem;
       .#{$colSelector}--#{$col} {
         .#{$fd-namespace}-form-label {
           float: right;
+          text-align: right;
           padding-bottom: 0;
+          width: 100%;
 
           @include fd-rtl() {
             float: left;
+            text-align: left;
           }
         }
       }
@@ -31,9 +34,12 @@ $groupGutter: 1rem;
     .#{$colSelector}--12 {
       .#{$fd-namespace}-form-label {
         float: left;
+        text-align: left;
+        width: auto;
         padding-bottom: 0.125rem;
 
         @include fd-rtl() {
+          text-align: right;
           float: right;
         }
       }

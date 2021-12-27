@@ -5,142 +5,193 @@ export default {
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;     | Modifier class           |
 | --------------------------------- | ------------------------ |
-| horizontal&nbsp;&nbsp;&nbsp;&nbsp;| \`none\`                 |
-| vertical&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-slider--vertical\`  |
+| default&nbsp;&nbsp;&nbsp;&nbsp;| \`none\`                 |
+| range&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-slider--range\`  |
 <br><br><br>
 `,
-        components: ['fn-input', 'fn-slider', 'icon']
+        components: ['fn-slider', 'icon']
     }
 };
 
 const localStyles = `
 <style>
     .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
         background: white;
-        padding: 1.5rem;
-        border-radius: 0.25rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .docs-fn-container-vertical {
-        height: 600px;
-        flex-direction: row;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
     }
 </style>
 `;
 
-export const horizontalSlider = () => `${localStyles}
+export const slider = () => `${localStyles}
 <div class="docs-fn-container">
+    <div><b>normal</b></div>
     <div class="fn-slider">
-        <div class="fn-slider__dot fn-slider__dot--active"></div>
-        <div class="fn-slider__track">
-            <div class="fn-slider__handle-wrapper">
-                <div class="fn-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="left: 50%;">
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                </div>
+        <div class="fn-slider__track" style="width: 0%;">
+            <div class="fn-slider__handle" tabindex="0" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="0">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
             </div>
-            <div class="fn-slider__track-range" style="width: 50%;"></div>
+            <div class="fn-slider__track-range"></div>
         </div>
-        <div class="fn-slider__dot"></div>
     </div>
+</div>
 
-    <div style="margin-bottom: 2rem;"></div>
-
+<div class="docs-fn-container">
+    <div><b>hover</b></div>
     <div class="fn-slider">
-        <div class="fn-slider__dot fn-slider__dot--active"></div>
-        <div class="fn-slider__track">
-            <div class="fn-slider__handle-wrapper">
-                <div class="fn-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="0" style="left: 0;">
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                </div>
+        <div class="fn-slider__track" style="width: 25%;">
+            <div class="fn-slider__handle is-hover" tabindex="0" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="25">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
             </div>
-            <div class="fn-slider__track-range" style="width: 0;"></div>
+            <div class="fn-slider__track-range"></div>
         </div>
-        <div class="fn-slider__dot"></div>
     </div>
+</div>
 
-    <div style="margin-bottom: 2rem;"></div>
-
+<div class="docs-fn-container">
+    <div><b>active</b></div>
     <div class="fn-slider">
-        <div class="fn-slider__dot fn-slider__dot--active"></div>
-        <div class="fn-slider__track">
-            <div class="fn-slider__handle-wrapper">
-                <div class="fn-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="100" style="left: 100%;">
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                </div>
+        <div class="fn-slider__track" style="width: 50%;">
+            <div class="fn-slider__handle is-active" tabindex="0" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
             </div>
-            <div class="fn-slider__track-range" style="width: 100%;"></div>
+            <div class="fn-slider__track-range"></div>
         </div>
-        <div class="fn-slider__dot"></div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>focus</b></div>
+    <div class="fn-slider">
+        <div class="fn-slider__track" style="width: 75%;">
+            <div class="fn-slider__handle is-focus" tabindex="0" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="75">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
+            <div class="fn-slider__track-range"></div>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>disabled</b></div>
+    <div class="fn-slider is-disabled">
+        <div class="fn-slider__track" style="width: 100%;">
+            <div class="fn-slider__handle is-hover" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="100">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
+            <div class="fn-slider__track-range"></div>
+        </div>
     </div>
 </div>
 `;
 
-horizontalSlider.storyName = 'Horizontal Slider';
-horizontalSlider.parameters = {
+slider.storyName = 'Slider';
+slider.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-
-export const verticalSlider = () => `${localStyles}
-<div class="docs-fn-container docs-fn-container-vertical">
-    <div class="fn-slider fn-slider--vertical">
-        <div class="fn-slider__dot fn-slider__dot--active"></div>
-        <div class="fn-slider__track">
-            <div class="fn-slider__handle-wrapper">
-                <div class="fn-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="50" style="bottom: 50%;">
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                </div>
+export const rangeSlider = () => `${localStyles}
+<div class="docs-fn-container">
+    <div><b>normal</b></div>
+    <div class="fn-slider fn-slider--range">
+        <div class="fn-slider__track" style="width: 30%; left: 0">
+            <div class="fn-slider__handle" role="slider" tabindex="0" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="0">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
             </div>
-            <div class="fn-slider__track-range" style="height: 50%;"></div>
+            <div class="fn-slider__track-range"></div>
+            <div class="fn-slider__handle" role="slider" tabindex="0" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="30">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
         </div>
-        <div class="fn-slider__dot"></div>
     </div>
+</div>
 
-    <br><br><br>
-    <div class="fn-slider fn-slider--vertical">
-        <div class="fn-slider__dot fn-slider__dot--active"></div>
-        <div class="fn-slider__track">
-            <div class="fn-slider__handle-wrapper">
-                <div class="fn-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="0" style="bottom: 0;">
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                </div>
+<div class="docs-fn-container">
+    <div><b>hover</b></div>
+    <div class="fn-slider fn-slider--range">
+        <div class="fn-slider__track" style="width: 30%; left: 30%">
+            <div class="fn-slider__handle is-hover" role="slider" tabindex="0" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="30">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
             </div>
-            <div class="fn-slider__track-range" style="height: 0;"></div>
+            <div class="fn-slider__track-range"></div>
+            <div class="fn-slider__handle is-hover" role="slider" tabindex="0" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="60">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
         </div>
-        <div class="fn-slider__dot"></div>
     </div>
+</div>
 
-    <br><br><br>
-
-    <div class="fn-slider fn-slider--vertical">
-        <div class="fn-slider__dot fn-slider__dot--active"></div>
-        <div class="fn-slider__track">
-            <div class="fn-slider__handle-wrapper">
-                <div class="fn-slider__handle" tabindex="0" role="slider" aria-label="slider" aria-valuemin="1" aria-valuemax="100" aria-valuenow="100" style="bottom: 100%;">
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                    <span class="sap-icon sap-icon--megamenu"></span>
-                </div>
+<div class="docs-fn-container">
+    <div><b>active</b></div>
+    <div class="fn-slider fn-slider--range">
+        <div class="fn-slider__track" style="width: 20%; left: 60%">
+            <div class="fn-slider__handle" role="slider" tabindex="0" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="60">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
             </div>
-            <div class="fn-slider__track-range" style="height: 100%;"></div>
+            <div class="fn-slider__track-range"></div>
+            <div class="fn-slider__handle" role="slider" tabindex="0" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="80" >
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
         </div>
-        <div class="fn-slider__dot"></div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>focus</b></div>
+    <div class="fn-slider fn-slider--range">
+        <div class="fn-slider__track" style="width: 70%; left: 30%">
+            <div class="fn-slider__handle is-focus" tabindex="0" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="30">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
+            <div class="fn-slider__track-range"></div>
+            <div class="fn-slider__handle is-focus" tabindex="0" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="100" >
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>disabled</b></div>
+    <div class="fn-slider fn-slider--range is-disabled">
+        <div class="fn-slider__track" style="width: 100%; left: 0%">
+            <div class="fn-slider__handle" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="0">
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
+            <div class="fn-slider__track-range"></div>
+            <div class="fn-slider__handle" role="slider" aria-label="slider handle" aria-valuemin="1" aria-valuemax="100" aria-valuenow="100" >
+                <span class="sap-icon sap-icon--megamenu"></span>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </div>
+        </div>
     </div>
 </div>
 `;
 
-verticalSlider.storyName = 'Vertical Slider';
-verticalSlider.parameters = {
+rangeSlider.storyName = 'Range Slider';
+rangeSlider.parameters = {
     docs: {
-        iframeHeight: 500,
-        storyDescription: 'Add the `.fn-slider--vertical` modifier class to `.fn-slider` for Vertical Slider.'
+        iframeHeight: 500
     }
 };

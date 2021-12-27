@@ -50,11 +50,19 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Apple
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Apple
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -82,11 +90,19 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Banana
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Banana
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -114,11 +130,19 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Kiwi
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Kiwi
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -147,11 +171,19 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Lemon
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Lemon
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -178,11 +210,19 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            All Fruits (TriState)
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              All Fruits (TriState)
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -210,11 +250,19 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            All Fruits (TriState)
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              All Fruits (TriState)
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -268,11 +316,19 @@ exports[`Storyshots Components/Forms/Checkbox Inline 1`] = `
       >
         
                 
-        <span
-          class="fd-checkbox__text"
+        <div
+          class="fd-checkbox__label-container"
         >
-          Potatoes
-        </span>
+          
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            Potatoes
+          </span>
+          
+                
+        </div>
         
             
       </label>
@@ -300,11 +356,19 @@ exports[`Storyshots Components/Forms/Checkbox Inline 1`] = `
       >
         
                 
-        <span
-          class="fd-checkbox__text"
+        <div
+          class="fd-checkbox__label-container"
         >
-          Tomatoes
-        </span>
+          
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            Tomatoes
+          </span>
+          
+                
+        </div>
         
             
       </label>
@@ -333,11 +397,19 @@ exports[`Storyshots Components/Forms/Checkbox Inline 1`] = `
       >
         
                 
-        <span
-          class="fd-checkbox__text"
+        <div
+          class="fd-checkbox__label-container"
         >
-          Carrots
-        </span>
+          
+                    
+          <span
+            class="fd-checkbox__text"
+          >
+            Carrots
+          </span>
+          
+                
+        </div>
         
             
       </label>
@@ -402,11 +474,19 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Apple
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Apple
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -434,11 +514,19 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Banana
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Banana
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -466,11 +554,19 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Kiwi
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Kiwi
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -499,11 +595,19 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            Lemon
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Lemon
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -530,11 +634,19 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            All Fruits (TriState)
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              All Fruits (TriState)
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -562,11 +674,19 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
         >
           
                 
-          <span
-            class="fd-checkbox__text"
+          <div
+            class="fd-checkbox__label-container"
           >
-            All Fruits (TriState)
-          </span>
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              All Fruits (TriState)
+            </span>
+            
+                
+          </div>
           
             
         </label>
@@ -644,11 +764,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Text Option
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Text Option
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -676,11 +804,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Selected State
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Selected State
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -707,11 +843,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              TriState Text
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                TriState Text
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -762,11 +906,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Text Option
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Text Option
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -794,11 +946,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Selected State
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Selected State
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -825,11 +985,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              TriState Text
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                TriState Text
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -880,11 +1048,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Text Option
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Text Option
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -912,11 +1088,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Selected State
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Selected State
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -943,11 +1127,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              TriState Text
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                TriState Text
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -998,11 +1190,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Text Option
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Text Option
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -1030,11 +1230,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Selected State
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Selected State
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -1061,11 +1269,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              TriState Text
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                TriState Text
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -1117,11 +1333,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Text Option
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Text Option
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -1150,11 +1374,19 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              Selected State
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Selected State
+              </span>
+              
+                    
+            </div>
             
                 
           </label>
@@ -1182,11 +1414,164 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
           >
             
                     
-            <span
-              class="fd-checkbox__text"
+            <div
+              class="fd-checkbox__label-container"
             >
-              TriState Text
-            </span>
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                TriState Text
+              </span>
+              
+                    
+            </div>
+            
+                
+          </label>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </fieldset>
+    
+
+    
+    <fieldset
+      class="fd-fieldset"
+    >
+      
+        
+      <legend
+        class="fd-fieldset__legend"
+      >
+        Readonly checkboxes
+      </legend>
+      
+        
+      <div
+        class="fd-form-group"
+      >
+        
+            
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <input
+            class="fd-checkbox"
+            id="Ai4ez611967"
+            readonly=""
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez611967"
+          >
+            
+                    
+            <div
+              class="fd-checkbox__label-container"
+            >
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Text Option
+              </span>
+              
+                    
+            </div>
+            
+                
+          </label>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <input
+            checked=""
+            class="fd-checkbox"
+            id="Ai4ez61296cc"
+            readonly=""
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez61296cc"
+          >
+            
+                    
+            <div
+              class="fd-checkbox__label-container"
+            >
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                Selected State
+              </span>
+              
+                    
+            </div>
+            
+                
+          </label>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <input
+            class="fd-checkbox"
+            id="Ai4ez613i6cc"
+            readonly=""
+            type="checkbox"
+          />
+          
+                
+          <label
+            class="fd-checkbox__label"
+            for="Ai4ez613i6cc"
+          >
+            
+                    
+            <div
+              class="fd-checkbox__label-container"
+            >
+              
+                        
+              <span
+                class="fd-checkbox__text"
+              >
+                TriState Text
+              </span>
+              
+                    
+            </div>
             
                 
           </label>

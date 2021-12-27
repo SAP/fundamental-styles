@@ -1,0 +1,45 @@
+$fn-dialog-content-margin-y: 6%;
+$fn-dialog-content-margin-x: 10%;
+$fn-dialog-content-min-width: 20rem;
+$fn-dialog-content-min-height: 7.5rem;
+
+%dialog {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $fn-color-grey-200;
+    opacity: 0.6;
+  }
+}
+
+%dialog-content {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  overflow: hidden;
+  position: absolute;
+  min-width: $fn-dialog-content-min-width;
+  min-height: $fn-dialog-content-min-height;
+  max-width: calc(100vw - #{$fn-dialog-content-margin-x});
+  max-height: calc(100vh - #{$fn-dialog-content-margin-y});
+  box-shadow: $fn-shadow-black-level-3;
+  border-radius: $fn-border-radius-12;
+}
+
+%dialog-body {
+  overflow: auto;
+  flex-grow: 1;
+  position: relative;
+}
