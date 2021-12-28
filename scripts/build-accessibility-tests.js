@@ -31,7 +31,8 @@ const componentsToExclude = [
     'side-navigation',
     'multi-combo-box',
     'generic-tile',
-    'dynamic-page'
+    'dynamic-page',
+    'fn-tabs'
 ];
 
 rimraf('**/*.accessibility.test.js', (rimRafError) => {
