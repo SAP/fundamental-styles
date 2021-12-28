@@ -1,4 +1,15 @@
 
+## [0.21.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.74...v0.21.0-rc.75) (2021-12-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fn:** removed classes .fn-tabs--individual and .fn-tabs--line
+
+### Bug Fixes
+
+* **fn:** refactor Tabs component ([#3012](https://github.com/SAP/fundamental-styles/issues/3012)) ([4ee2ed5](https://github.com/SAP/fundamental-styles/commit/4ee2ed59aa7463197cbedcf3bd73e63bb7fa56b9))
+
 ## [0.21.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.73...v0.21.0-rc.74) (2021-12-28)
 
 ## [0.21.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.72...v0.21.0-rc.73) (2021-12-28)
