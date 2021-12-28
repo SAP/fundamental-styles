@@ -154,6 +154,7 @@ exports[`Storyshots Experimental/Tabs Default 1`] = `
       <li
         class="fn-tabs__item"
         role="tab"
+        tabindex="0"
       >
            
             
