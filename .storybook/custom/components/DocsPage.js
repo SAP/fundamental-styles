@@ -60,14 +60,14 @@ const DocsPage = () => {
             });
             previousDirectionality.current = directionalityState;
         }
-        
+
         if (!previousTheme.current || previousTheme.current !== themeState) {
             changeDocumentTheme(themeState, context?.parameters?.components || [])
         }
     }, [themeState, directionalityState]);
 
     // do not display disabled stories (dev only)
-    const stories = context.storyStore?.getStoriesForKind(context.kind)?.filter((s) => !s.parameters?.docs?.disable);
+    const stories = context.componentStories().filter(story => story.kind === context.kind && !story.parameters?.docs?.disable);
 
     const renderInfoLabels = (tags) => {
         let infoLabels = []
@@ -87,6 +87,7 @@ const DocsPage = () => {
     return (
         <>
             <Header onThemeChange={(e) => setThemeState(e.target.value)} onDirectionalityChange={(e) => setDirectionalityState(e.target.value)} />
+
             {/* wrapping intro content in the sb-docs-intro class for appropriate text color in all themes */}
             <div className="sb-docs-intro">
                 <Title />
@@ -95,12 +96,15 @@ const DocsPage = () => {
                 {renderInfoLabels(context?.parameters?.tags)}
                 {context?.parameters?.description && <Description desc={context?.parameters?.description} />}
             </div>
+
             <Heading>Examples</Heading>
+
             {stories.map((story) => story && <DocsStory
                 key={story.id}
                 {...story}
                 expanded
                 withToolbar />)}
+
             <Community />
             <Footer />
         </>
