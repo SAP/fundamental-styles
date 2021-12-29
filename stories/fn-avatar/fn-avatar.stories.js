@@ -75,7 +75,7 @@ const localStyles = `
 </style>
 `;
 
-export const roundedInitialsDecorative = () => `${localStyles}
+export const RoundedInitialsDecorative = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
     <div class="fn-avatar fn-avatar--xl fn-avatar--indigo">
@@ -211,8 +211,8 @@ export const roundedInitialsDecorative = () => `${localStyles}
 
 `;
 
-roundedInitialsDecorative.storyName = 'Rounded Decorative Avatar with Initials';
-roundedInitialsDecorative.parameters = {
+RoundedInitialsDecorative.storyName = 'Rounded Decorative Avatar with Initials';
+RoundedInitialsDecorative.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Modifier classes are added to the base class only for the size and the color. Rounded Decorative Avatar is the default type for avatar.'
@@ -220,7 +220,7 @@ roundedInitialsDecorative.parameters = {
 };
 
 
-export const circleInitialsDecorative = () => `${localStyles}
+export const CircleInitialsDecorative = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
     <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--indigo">
@@ -356,8 +356,8 @@ export const circleInitialsDecorative = () => `${localStyles}
 
 `;
 
-circleInitialsDecorative.storyName = 'Circle Decorative Avatar with Initials';
-circleInitialsDecorative.parameters = {
+CircleInitialsDecorative.storyName = 'Circle Decorative Avatar with Initials';
+CircleInitialsDecorative.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'For Circle Decorative Avatar add the `.fn-avatar--circle` modifier classes to the base class and the modifier classes for size and color.'
@@ -365,14 +365,14 @@ circleInitialsDecorative.parameters = {
 };
 
 
-export const roundedIconDecorative = () => `${localStyles}
+export const RoundedIconDecorative = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b></b></div>
     <div><b>XL</b></div>
     <div><b>L</b></div>
     <div><b>M</b></div>
     <div><b>S</b></div>
-    <div><b>XS</b></div>   
+    <div><b>XS</b></div>
 </div>
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
@@ -579,17 +579,17 @@ export const roundedIconDecorative = () => `${localStyles}
 
 `;
 
-roundedIconDecorative.storyName = 'Rounded Decorative Avatar with Icon';
+RoundedIconDecorative.storyName = 'Rounded Decorative Avatar with Icon';
 
 
-export const circleIconDecorative = () => `${localStyles}
+export const CircleIconDecorative = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b></b></div>
     <div><b>XL</b></div>
     <div><b>L</b></div>
     <div><b>M</b></div>
     <div><b>S</b></div>
-    <div><b>XS</b></div>   
+    <div><b>XS</b></div>
 </div>
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
@@ -796,55 +796,55 @@ export const circleIconDecorative = () => `${localStyles}
 
 `;
 
-circleIconDecorative.storyName = 'Circle Decorative Avatar with Icon';
+CircleIconDecorative.storyName = 'Circle Decorative Avatar with Icon';
 
-export const circleThumbnailDecorative = () => `${localStyles}
+export const CircleThumbnailDecorative = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>XL</b></div>
     <div><b>L</b></div>
     <div><b>M</b></div>
     <div><b>S</b></div>
-    <div><b>XS</b></div>   
+    <div><b>XS</b></div>
 </div>
 <div class="docs-fn-container">
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--xl">
         <div class="fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-   
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--l" style="background-image: url('/assets/images/backgrounds/city.jpg')">
         <div class=" fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-    
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--m" style="background-image: url('/assets/images/backgrounds/city.jpg')">
         <div class="fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-    
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--s" style="background-image: url('/assets/images/backgrounds/city.jpg')">
         <div class=" fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-    
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--xs" style="background-image: url('/assets/images/backgrounds/city.jpg')">
         <div class=" fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
 </div>
 `;
 
-circleThumbnailDecorative.storyName = 'Circle Decorative Avatar with Thumbnail';
-circleThumbnailDecorative.parameters = {
+CircleThumbnailDecorative.storyName = 'Circle Decorative Avatar with Thumbnail';
+CircleThumbnailDecorative.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'An additional modifier class `.fn-avatar--thumbnail` is needed if you want to achieve an avatar with thumbnail.'
     }
 };
 
-export const roundedInitialsInteractive = () => `${localStyles}
+export const RoundedInitialsInteractive = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>:normal</b></div>
     <div><b>:hover</b></div>
     <div><b>:active</b></div>
     <div><b>:focus</b></div>
-    <div><b>:disabled</b></div>   
+    <div><b>:disabled</b></div>
 </div>
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
@@ -981,22 +981,22 @@ export const roundedInitialsInteractive = () => `${localStyles}
 
 `;
 
-roundedInitialsInteractive.storyName = 'Rounded Interactive Avatar with Initials';
-roundedInitialsInteractive.parameters = {
+RoundedInitialsInteractive.storyName = 'Rounded Interactive Avatar with Initials';
+RoundedInitialsInteractive.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Interactive Avatars have hover, active, focus and disabled states. You can turn a decorative avatar to interactive by adding the `fn-avatar--interactive` modifier class to the other classes.'
     }
 };
 
-export const circleInitialsInteractive = () => `${localStyles}
+export const CircleInitialsInteractive = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>:normal</b></div>
     <div><b>:hover</b></div>
     <div><b>:active</b></div>
     <div><b>:focus</b></div>
-    <div><b>:disabled</b></div>   
+    <div><b>:disabled</b></div>
 </div>
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
@@ -1133,8 +1133,8 @@ export const circleInitialsInteractive = () => `${localStyles}
 
 `;
 
-circleInitialsInteractive.storyName = 'Circle Interactive Avatar with Initials';
-circleInitialsInteractive.parameters = {
+CircleInitialsInteractive.storyName = 'Circle Interactive Avatar with Initials';
+CircleInitialsInteractive.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: ''
@@ -1142,14 +1142,14 @@ circleInitialsInteractive.parameters = {
 };
 
 
-export const roundedIconInteractive = () => `${localStyles}
+export const RoundedIconInteractive = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b></b></div>
     <div><b>XL</b></div>
     <div><b>L</b></div>
     <div><b>M</b></div>
     <div><b>S</b></div>
-    <div><b>XS</b></div>   
+    <div><b>XS</b></div>
 </div>
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
@@ -1356,22 +1356,22 @@ export const roundedIconInteractive = () => `${localStyles}
 
 `;
 
-roundedIconInteractive.storyName = 'Rounded Interactive Avatar with Icon';
-roundedIconInteractive.parameters = {
+RoundedIconInteractive.storyName = 'Rounded Interactive Avatar with Icon';
+RoundedIconInteractive.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: ''
     }
 };
 
-export const circleIconInteractive = () => `${localStyles}
+export const CircleIconInteractive = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b></b></div>
     <div><b>XL</b></div>
     <div><b>L</b></div>
     <div><b>M</b></div>
     <div><b>S</b></div>
-    <div><b>XS</b></div>   
+    <div><b>XS</b></div>
 </div>
 <div class="docs-fn-container">
     <div><b>Indigo</b></div>
@@ -1578,43 +1578,43 @@ export const circleIconInteractive = () => `${localStyles}
 
 `;
 
-circleIconInteractive.storyName = 'Circle Interactive Avatar with Icon';
-circleIconInteractive.parameters = {
+CircleIconInteractive.storyName = 'Circle Interactive Avatar with Icon';
+CircleIconInteractive.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: ''
     }
 };
 
-export const circleThumbnailInteractive = () => `${localStyles}
+export const CircleThumbnailInteractive = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>:normal XL</b></div>
     <div><b>:hover L</b></div>
     <div><b>:active M</b></div>
     <div><b>:focus S</b></div>
-    <div><b>:disabled XS</b></div>   
+    <div><b>:disabled XS</b></div>
 </div>
 <div class="docs-fn-container">
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--xl" tabindex="0">
         <div class="fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-   
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--l is-hover" tabindex="0"">
         <div class=" fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-    
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m is-active" tabindex="0">
         <div class="fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-    
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--s is-focus" tabindex="0">
         <div class=" fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
-    
+
     <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--xs is-disabled" tabindex="-1">
         <div class=" fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
     </div>
 </div>
 `;
 
-circleThumbnailInteractive.storyName = 'Circle Interactive Avatar with Thumbnail';
+CircleThumbnailInteractive.storyName = 'Circle Interactive Avatar with Thumbnail';

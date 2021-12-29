@@ -23,11 +23,11 @@ const localStyles = `
     width: 30%;
     height: auto;
 }
-    
+
 </style>
 `;
 
-export const primary = () => `${localStyles}
+export const Primary = () => `${localStyles}
 <div style="height:300px">
     <section class="fn-dialog-doc-static fn-dialog fn-dialog--active">
         <div class="fn-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-11">
@@ -52,9 +52,9 @@ export const primary = () => `${localStyles}
 </div>
 `;
 
-primary.storyName = 'Dialog';
+Primary.storyName = 'Dialog';
 
-primary.parameters = {
+Primary.parameters = {
     docs: {
         storyDescription: 'Dialog example with title, text and buttons in the footer'
     }

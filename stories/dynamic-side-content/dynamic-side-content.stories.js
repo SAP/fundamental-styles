@@ -16,7 +16,7 @@ Dynamic side content is a layout control that displays supplemental content in a
   *  Will enrich the main content and will help the user better perform his/her tasks;
   *  Only makes sense when displayed next to the main container (side-by-side);
   *  Influences the main content (for example, a filter for list; settings for chart, details for map).
-*  Users should have access to all of the key functions and critical information in the app even if they do not see the side content. This is important because on smaller screen sizes it may be difficult to display the side content in a way that is easily accessible for the user.  
+*  Users should have access to all of the key functions and critical information in the app even if they do not see the side content. This is important because on smaller screen sizes it may be difficult to display the side content in a way that is easily accessible for the user.
 
 
 ## Sizes
@@ -36,7 +36,7 @@ Note: For all screens < 720px, the side content disappears entirely.
     }
 };
 
-export const positionLeft = () => `    <div class="fd-dynamic-side">
+export const PositionLeft = () => `    <div class="fd-dynamic-side">
         <div class="fd-dynamic-side__side">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-6">Side</div>
         </div>
@@ -46,8 +46,8 @@ export const positionLeft = () => `    <div class="fd-dynamic-side">
     </div>
 `;
 
-positionLeft.storyName = 'Left';
-positionLeft.parameters = {
+PositionLeft.storyName = 'Left';
+PositionLeft.parameters = {
     docs: {
         iframeHeight: 160,
         storyDescription:
@@ -55,7 +55,7 @@ positionLeft.parameters = {
     }
 };
 
-export const positionRight = () => `    <div class="fd-dynamic-side">
+export const PositionRight = () => `    <div class="fd-dynamic-side">
         <div class="fd-dynamic-side__main">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
@@ -65,8 +65,8 @@ export const positionRight = () => `    <div class="fd-dynamic-side">
     </div>
 `;
 
-positionRight.storyName = 'Right';
-positionRight.parameters = {
+PositionRight.storyName = 'Right';
+PositionRight.parameters = {
     docs: {
         iframeHeight: 160,
         storyDescription:
@@ -74,7 +74,7 @@ positionRight.parameters = {
     }
 };
 
-export const positionBottom = () => `    <div class="fd-dynamic-side fd-dynamic-side--below">
+export const PositionBottom = () => `    <div class="fd-dynamic-side fd-dynamic-side--below">
         <div class="fd-dynamic-side__main">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
@@ -84,8 +84,8 @@ export const positionBottom = () => `    <div class="fd-dynamic-side fd-dynamic-
     </div>
 `;
 
-positionBottom.storyName = 'Below';
-positionBottom.parameters = {
+PositionBottom.storyName = 'Below';
+PositionBottom.parameters = {
     docs: {
         iframeHeight: 260,
         storyDescription:
@@ -93,7 +93,7 @@ positionBottom.parameters = {
     }
 };
 
-export const equalSplit = () => `    <div class="fd-dynamic-side fd-dynamic-side--equal-split">
+export const EqualSplit = () => `    <div class="fd-dynamic-side fd-dynamic-side--equal-split">
         <div class="fd-dynamic-side__main">
             <div class="docs-layout-grid-bg docs-layout-grid-bg--color-9">Main</div>
         </div>
@@ -103,8 +103,8 @@ export const equalSplit = () => `    <div class="fd-dynamic-side fd-dynamic-side
     </div>
 `;
 
-equalSplit.storyName = 'Equal split';
-equalSplit.parameters = {
+EqualSplit.storyName = 'Equal split';
+EqualSplit.parameters = {
     docs: {
         iframeHeight: 160,
         storyDescription:
@@ -112,7 +112,7 @@ equalSplit.parameters = {
     }
 };
 
-export const responsiveness = () => `
+export const Responsiveness = () => `
     <h4>On extra large screens, the main content area occupies 75% of the width.</h4>
     <div class="fd-dynamic-side fd-dynamic-side--xl">
         <div class="fd-dynamic-side__side">
@@ -142,8 +142,7 @@ export const responsiveness = () => `
     </div>
 `;
 
-responsiveness.storyName = 'Responsiveness';
-responsiveness.parameters = {
+Responsiveness.parameters = {
     docs: {
         iframeHeight: 160,
         storyDescription: `

@@ -9,13 +9,13 @@ Form headers are essentially titles that provide users with more context about a
     }
 };
 
-export const primary = () => `<div class="fd-form-header">
+export const Primary = () => `<div class="fd-form-header">
         <span class="fd-form-header__text">Form Header</span>
     </div>
 `;
 
-primary.storyName = 'Default';
-primary.parameters = {
+Primary.storyName = 'Default';
+Primary.parameters = {
     docs: {
         storyDescription: `
 Default form headers are displayed in text that does not wrap but truncates into an ellipsis.

@@ -16,7 +16,7 @@ Use the File Uploader if:
     }
 };
 
-export const primary = () => `<div class="fd-form-item">
+export const Primary = () => `<div class="fd-form-item">
   <label class="fd-form-label" id="browse_input1_label" >Upload Document</label>
   <div class="fd-file-uploader">
     <input
@@ -29,7 +29,7 @@ export const primary = () => `<div class="fd-form-item">
       autocomplete="off"
       placeholder="Choose a file for upload"
       >
-    
+
     <button
       class="fd-button"
       onclick="browseFile('input1');"
@@ -49,30 +49,30 @@ export const primary = () => `<div class="fd-form-item">
 </div>
 `;
 
-primary.storyName = 'Default';
-primary.parameters = {
+Primary.storyName = 'Default';
+Primary.parameters = {
     docs: {
         iframeHeight: 250
     }
 };
 
-export const selected = () => `<div class="fd-form-item">
+export const Selected = () => `<div class="fd-form-item">
   <label class="fd-form-label"  id="browse_input2_label" >Upload Document</label>
   <div class="fd-file-uploader">
     <input
       aria-labelledby="browse_input2_label"
-      class="fd-input fd-file-uploader__input" 
-      onclick="browseFile('input1');" 
-      title="document.pdf" 
-      type="text" 
-      id="browse_input2" 
+      class="fd-input fd-file-uploader__input"
+      onclick="browseFile('input1');"
+      title="document.pdf"
+      type="text"
+      id="browse_input2"
       autocomplete="off"
       value="document.pdf"
       >
-    <button 
+    <button
       class="fd-button"
-      onclick="browseFile('input1');" 
-      id="file-uploader-button-1" 
+      onclick="browseFile('input1');"
+      id="file-uploader-button-1"
       aria-label="Select a file for uploading">Browse...
     </button>
   </div>
@@ -87,8 +87,8 @@ export const selected = () => `<div class="fd-form-item">
 </div>
 `;
 
-selected.storyName = 'After Selecting';
-selected.parameters = {
+Selected.storyName = 'After Selecting';
+Selected.parameters = {
     docs: {
         iframeHeight: 250,
         storyDescription: 'Once the user selects files, update the input and the hidden div to include the file names. The hidden div will announce the file names only once when the value changes.'
@@ -96,23 +96,23 @@ selected.parameters = {
 };
 
 
-export const compact = () => `<div class="fd-form-item">
+export const Compact = () => `<div class="fd-form-item">
   <label class="fd-form-label" id="browse_input3_label" >Upload Document (Compact)</label>
   <div class="fd-file-uploader">
     <input
       aria-labelledby="browse_input3_label"
-      class="fd-input fd-input--compact fd-file-uploader__input" 
-      onclick="browseFile('input2');" 
-      id="browse_input3" 
+      class="fd-input fd-input--compact fd-file-uploader__input"
+      onclick="browseFile('input2');"
+      id="browse_input3"
       type="text"
-      title="Choose a file for upload"  
+      title="Choose a file for upload"
       placeholder="Choose a file for upload"
       autocomplete="off"
       >
     <button
-      class="fd-button fd-button--compact fd-file-uploader__button"  
+      class="fd-button fd-button--compact fd-file-uploader__button"
       onclick="browseFile('input2');"
-      id="file-uploader-button-3" 
+      id="file-uploader-button-3"
       aria-label="Select a file for uploading">Browse...
     </button>
   </div>
@@ -126,7 +126,7 @@ export const compact = () => `<div class="fd-form-item">
     onchange="selectFile(this,'browse_input3')">
 </div>
 `;
-compact.parameters = {
+Compact.parameters = {
     docs: {
         iframeHeight: 250,
         storyDescription: 'For compact File Uploader apply the `--compact` modifier to the button and input elements.'
@@ -135,24 +135,24 @@ compact.parameters = {
 
 
 
-export const status = () => `<div class="fd-form-item">
+export const Status = () => `<div class="fd-form-item">
 
 <label class="fd-form-label" id="browse_input7_label" >Upload Document (Success)</label>
 <div class="fd-file-uploader">
   <input
     aria-labelledby="browse_input7_label"
-    class="fd-input fd-input--compact fd-file-uploader__input is-success" 
-    onclick="browseFile('input2');" 
-    id="browse_input7" 
+    class="fd-input fd-input--compact fd-file-uploader__input is-success"
+    onclick="browseFile('input2');"
+    id="browse_input7"
     type="text"
-    title="Choose a file for upload"  
+    title="Choose a file for upload"
     placeholder="Choose a file for upload"
     autocomplete="off"
     >
   <button
-    class="fd-button fd-button--compact fd-file-uploader__button"  
+    class="fd-button fd-button--compact fd-file-uploader__button"
     onclick="browseFile('input2');"
-    id="file-uploader-button-7" 
+    id="file-uploader-button-7"
     aria-label="Select a file for uploading">Browse...
   </button>
 </div>
@@ -171,18 +171,18 @@ export const status = () => `<div class="fd-form-item">
   <div class="fd-file-uploader">
     <input
       aria-labelledby="browse_input4_label"
-      class="fd-input fd-input--compact fd-file-uploader__input is-error" 
-      onclick="browseFile('input2');" 
-      id="browse_input4" 
+      class="fd-input fd-input--compact fd-file-uploader__input is-error"
+      onclick="browseFile('input2');"
+      id="browse_input4"
       type="text"
-      title="Choose a file for upload"  
+      title="Choose a file for upload"
       placeholder="Choose a file for upload"
       autocomplete="off"
       >
     <button
-      class="fd-button fd-button--compact fd-file-uploader__button"  
+      class="fd-button fd-button--compact fd-file-uploader__button"
       onclick="browseFile('input2');"
-      id="file-uploader-button-4" 
+      id="file-uploader-button-4"
       aria-label="Select a file for uploading">Browse...
     </button>
   </div>
@@ -200,18 +200,18 @@ export const status = () => `<div class="fd-form-item">
   <div class="fd-file-uploader">
     <input
       aria-labelledby="browse_input5_label"
-      class="fd-input fd-input--compact fd-file-uploader__input is-warning" 
-      onclick="browseFile('input2');" 
-      id="browse_input5" 
+      class="fd-input fd-input--compact fd-file-uploader__input is-warning"
+      onclick="browseFile('input2');"
+      id="browse_input5"
       type="text"
-      title="Choose a file for upload"  
+      title="Choose a file for upload"
       placeholder="Choose a file for upload"
       autocomplete="off"
       >
     <button
-      class="fd-button fd-button--compact fd-file-uploader__button"  
+      class="fd-button fd-button--compact fd-file-uploader__button"
       onclick="browseFile('input2');"
-      id="file-uploader-button-5" 
+      id="file-uploader-button-5"
       aria-label="Select a file for uploading">Browse...
     </button>
   </div>
@@ -229,18 +229,18 @@ export const status = () => `<div class="fd-form-item">
   <div class="fd-file-uploader">
     <input
       aria-labelledby="browse_input6_label"
-      class="fd-input fd-input--compact fd-file-uploader__input is-information" 
-      onclick="browseFile('input2');" 
-      id="browse_input3" 
+      class="fd-input fd-input--compact fd-file-uploader__input is-information"
+      onclick="browseFile('input2');"
+      id="browse_input3"
       type="text"
-      title="Choose a file for upload"  
+      title="Choose a file for upload"
       placeholder="Choose a file for upload"
       autocomplete="off"
       >
     <button
-      class="fd-button fd-button--compact fd-file-uploader__button"  
+      class="fd-button fd-button--compact fd-file-uploader__button"
       onclick="browseFile('input2');"
-      id="file-uploader-button-6" 
+      id="file-uploader-button-6"
       aria-label="Select a file for uploading">Browse...
     </button>
   </div>
@@ -256,7 +256,7 @@ export const status = () => `<div class="fd-form-item">
 `;
 
 
-status.parameters = {
+Status.parameters = {
     docs: {
         iframeHeight: 250,
         storyDescription: 'For Status File Uploader apply the corresponding status class `is-success, is-error, is-warning, is-information ` modifier to the input element.'

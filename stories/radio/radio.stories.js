@@ -20,7 +20,7 @@ In special cases, there are only two mutually exclusive options. Combine them in
     }
 };
 
-export const primary = () => `<div style="display:flex;justify-content:space-between">
+export const Primary = () => `<div style="display:flex;justify-content:space-between">
     <fieldset class="fd-fieldset" id="radio1">
         <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
         <div class="fd-form__group">
@@ -70,15 +70,15 @@ export const primary = () => `<div style="display:flex;justify-content:space-bet
 </div>
 `;
 
-primary.storyName = 'Responsiveness';
-primary.parameters = {
+Primary.storyName = 'Responsiveness';
+Primary.parameters = {
     docs: {
         iframeHeight: 250,
         storyDescription: 'A radio button can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
     }
 };
 
-export const inline = () => `<fieldset class="fd-fieldset" id="radio4">
+export const Inline = () => `<fieldset class="fd-fieldset" id="radio4">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
         <div class="fd-form-group fd-form-group--inline">
             <div class="fd-form-group__item fd-form-item">
@@ -103,7 +103,7 @@ export const inline = () => `<fieldset class="fd-fieldset" id="radio4">
 </fieldset>
 `;
 
-inline.parameters = {
+Inline.parameters = {
     docs: {
         storyDescription: `
 Try to align radio buttons vertically instead of horizontally, especially for long labels. Horizontal alignment is harder to read and localize. Consider horizontal alignment in cases of one-word labels, such as in the background color settings example above.
@@ -115,7 +115,7 @@ Do not put two radio button groups right next to each other as it is difficult t
     }
 };
 
-export const interactionStates = () => `<div style="display:flex;justify-content:space-between">
+export const InteractionStates = () => `<div style="display:flex;justify-content:space-between">
     <fieldset class="fd-fieldset" id="radio5">
         <legend class="fd-fieldset__legend">Interaction States</legend>
         <div class="fd-form-group">
@@ -249,7 +249,7 @@ export const interactionStates = () => `<div style="display:flex;justify-content
 </div>
 `;
 
-interactionStates.parameters = {
+InteractionStates.parameters = {
     docs: {
         iframeHeight: 550,
         storyDescription: 'A radio button can have different states that affect its appearance value states, such as “error” or “warning”, which are indicated using semantic colors'

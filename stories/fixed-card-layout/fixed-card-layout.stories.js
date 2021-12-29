@@ -18,7 +18,7 @@ export default {
     }
 };
 
-export const fixedCardLayout = () =>
+export const FixedCardLayout = () =>
     `<div class="fd-fixed-card-layout__card-layout" [attr.dir]="dir">
         <div class="fd-fixed-card-layout__card-layout-column">
             <div class="fd-fixed-card-layout__card">
@@ -510,8 +510,8 @@ export const fixedCardLayout = () =>
         </div>
     </div>`;
 
-fixedCardLayout.storyName = 'Fixed card layout with 3 columns';
-fixedCardLayout.parameters = {
+FixedCardLayout.storyName = 'Fixed card layout with 3 columns';
+FixedCardLayout.parameters = {
     docs: {
         iframeHeight: 900,
         storyDescription: 'Cards arrangement in a 3 column layout.'

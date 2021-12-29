@@ -13,9 +13,9 @@ The Drag and Drop Icon Tab Bar can be used for styling state for drag and drop a
 };
 
 
-export const hoveredTab = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
+export const HoveredTab = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
 <div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-hovered">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section1" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Attachments (16)</span>
@@ -30,21 +30,21 @@ export const hoveredTab = () => `<div class='fddocs-icon-tab-container' style="m
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section3" id="tab3">
                 <span class="fd-icon-tab-bar__tag">Approvals (42)</span>
             </a>
-    </ul> 
+    </ul>
 </div>
 </div>
 `;
-hoveredTab.storyName = 'Hovered tab state';
-hoveredTab.parameters = {
+HoveredTab.storyName = 'Hovered tab state';
+HoveredTab.parameters = {
     docs: {
         storyDescription: ''
     }
 };
 
 
-export const separatorHoveredTab = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
+export const SeparatorHoveredTab = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
 <div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section1" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Attachments (16)</span>
@@ -59,12 +59,12 @@ export const separatorHoveredTab = () => `<div class='fddocs-icon-tab-container'
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section3" id="tab3">
                 <span class="fd-icon-tab-bar__tag">Approvals (42)</span>
             </a>
-    </ul> 
+    </ul>
 </div>
 </div>
 `;
-separatorHoveredTab.storyName = 'Separator hovered tab state';
-separatorHoveredTab.parameters = {
+SeparatorHoveredTab.storyName = 'Separator hovered tab state';
+SeparatorHoveredTab.parameters = {
     docs: {
         storyDescription: ''
     }

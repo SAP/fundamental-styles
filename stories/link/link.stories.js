@@ -17,7 +17,7 @@ export default {
 - There is no target or reference to be linked to.
 
 ##Accessibility
-Use a meaningful link text that indicates what will happen when the user interacts with the link i.e. *Open Sales Order*. 
+Use a meaningful link text that indicates what will happen when the user interacts with the link i.e. *Open Sales Order*.
 Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the user what the purpose of the link is.
 `,
         tags: ['f3', 'a11y', 'theme'],
@@ -25,7 +25,7 @@ Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the
     }
 };
 
-export const primary = () => `
+export const Primary = () => `
 <a href="#" class="fd-link" tabindex="0">Default link</a>
 <br><br>
 <a href="#" class="fd-link fd-link--emphasized" tabindex="0">Emphasized link</a>
@@ -39,22 +39,22 @@ export const primary = () => `
 </div>
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
-    Right icon link 
+    Right icon link
     <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
 </a>
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
-    <span class="sap-icon--slim-arrow-left sap-icon--s"></span> 
+    <span class="sap-icon--slim-arrow-left sap-icon--s"></span>
     Left icon link
 </a>
 `;
 
-primary.storyName = 'Types';
-primary.parameters = {
+Primary.storyName = 'Types';
+Primary.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `There are different types of links for various use cases.
-    
+
 | Types | Modifier class | Use to... |
 | ----:| :--------------- | :--------------|
 | Default | *n/a* | Display a simple link. |
@@ -66,7 +66,7 @@ primary.parameters = {
 You can display a link with an icon placed on either side of the link text.
 
 | Icon style | Modifier class |
-| ----------: | :-------------| 
+| ----------: | :-------------|
 | Left Arrow | \`sap-icon--slim-arrow-left sap-icon--s\` |
 | Right Arrow | \`sap-icon--slim-arrow-right sap-icon--s\` |
 `

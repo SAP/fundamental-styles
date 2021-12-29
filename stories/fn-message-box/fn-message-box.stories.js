@@ -46,7 +46,7 @@ const localStyles = `
 </style>
 `;
 
-export const primary = () => `${localStyles}
+export const Primary = () => `${localStyles}
 <div class="fn-message-box-docs-static fn-message-box fn-message-box--active" style="height:300px">
     <section class="fn-message-box__content">
         <header class="fn-message-box__header">
@@ -72,15 +72,15 @@ export const primary = () => `${localStyles}
 </div>
 `;
 
-primary.storyName = 'Message Box';
+Primary.storyName = 'Message Box';
 
-primary.parameters = {
+Primary.parameters = {
     docs: {
         storyDescription: 'Message Box Example'
     }
 };
 
-export const confirmation = () => `${localStyles}
+export const Confirmation = () => `${localStyles}
 <div class="fn-message-box-docs-static fn-message-box fn-message-box--confirmation fn-message-box--active" style="height:300px">
     <section class="fn-message-box__content">
         <header class="fn-message-box__header">
@@ -107,15 +107,15 @@ export const confirmation = () => `${localStyles}
 </div>
 `;
 
-confirmation.storyName = 'Confirmation Message Box';
+Confirmation.storyName = 'Confirmation Message Box';
 
-confirmation.parameters = {
+Confirmation.parameters = {
     docs: {
         storyDescription: 'Confirmation Message Box Example'
     }
 };
 
-export const negative = () => `${localStyles}
+export const Negative = () => `${localStyles}
 <div class="fn-message-box-docs-static fn-message-box fn-message-box--negative fn-message-box--active" style="height:300px">
     <section class="fn-message-box__content">
         <header class="fn-message-box__header">
@@ -135,15 +135,15 @@ export const negative = () => `${localStyles}
 </div>
 `;
 
-negative.storyName = 'Negative Message Box';
+Negative.storyName = 'Negative Message Box';
 
-negative.parameters = {
+Negative.parameters = {
     docs: {
         storyDescription: 'Negative Message Box Example'
     }
 };
 
-export const critical = () => `${localStyles}
+export const Critical = () => `${localStyles}
 <div class="fn-message-box-docs-static fn-message-box fn-message-box--critical fn-message-box--active" style="height:300px">
     <section class="fn-message-box__content">
         <header class="fn-message-box__header">
@@ -163,15 +163,15 @@ export const critical = () => `${localStyles}
 </div>
 `;
 
-critical.storyName = 'Critical Message Box';
+Critical.storyName = 'Critical Message Box';
 
-critical.parameters = {
+Critical.parameters = {
     docs: {
         storyDescription: 'Critical Message Box Example'
     }
 };
 
-export const positive = () => `${localStyles}
+export const Positive = () => `${localStyles}
 <div class="fn-message-box-docs-static fn-message-box fn-message-box--positive fn-message-box--active" style="height:300px">
     <section class="fn-message-box__content">
         <header class="fn-message-box__header">
@@ -191,15 +191,15 @@ export const positive = () => `${localStyles}
 </div>
 `;
 
-positive.storyName = 'Positive Message Box';
+Positive.storyName = 'Positive Message Box';
 
-positive.parameters = {
+Positive.parameters = {
     docs: {
         storyDescription: 'Positive Message Box Example'
     }
 };
 
-export const info = () => `${localStyles}
+export const Info = () => `${localStyles}
 <div class="fn-message-box-docs-static fn-message-box fn-message-box--info fn-message-box--active" style="height:300px">
     <section class="fn-message-box__content">
         <header class="fn-message-box__header">
@@ -219,9 +219,9 @@ export const info = () => `${localStyles}
 </div>
 `;
 
-info.storyName = 'Info Message Box';
+Info.storyName = 'Info Message Box';
 
-info.parameters = {
+Info.parameters = {
     docs: {
         storyDescription: 'Info Message Box Example'
     }

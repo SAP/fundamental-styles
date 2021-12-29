@@ -8,7 +8,7 @@ export default {
 };
 
 
-export const combined = () =>
+export const Combined = () =>
     `<div class="fd-facet-group" role="group">
         <div class="fd-facet fd-facet--image fd-margin-end--md">
             <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
@@ -86,14 +86,14 @@ export const combined = () =>
     </div>
 `;
 
-combined.storyName = 'Combination of facets';
-combined.parameters = {
+Combined.storyName = 'Combination of facets';
+Combined.parameters = {
     docs: {
         storyDescription: 'Facet types(image, form, and key-value) used together.'
     }
 };
 
-export const keyValue = () =>
+export const KeyValue = () =>
     `<div class="fd-facet fd-facet--key-value fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle5">
         <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle5"> Status </h1>
         <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
@@ -120,8 +120,8 @@ export const keyValue = () =>
     </div>
 `;
 
-keyValue.storyName = 'Key-Value Facet';
-keyValue.parameters = {
+KeyValue.storyName = 'Key-Value Facet';
+KeyValue.parameters = {
     docs: {
         storyDescription: `Key-Value facet is used to highlight important data or KPIs. It consists of a mandatory title
         and a text or number in a larger font size(**Object Status** or **Object Number**). The value can also have an icon to its left.
@@ -129,7 +129,7 @@ keyValue.parameters = {
     }
 };
 
-export const formFacet = () =>
+export const FormFacet = () =>
     `<div class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="formFacetTitle2">
         <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="formFacetTitle2"> Technical Data </h1>
         <div class="fd-facet__container fd-margin-bottom--tiny">
@@ -151,8 +151,7 @@ export const formFacet = () =>
     </div>
 `;
 
-formFacet.storyName = 'Form Facet';
-formFacet.parameters = {
+FormFacet.parameters = {
     docs: {
         storyDescription: `Form facet is used to display datasets. It consists of an optional title and label-value pair.
         Note that the labels can be icons, but need to have a text for accessibility purposes.
@@ -160,7 +159,7 @@ formFacet.parameters = {
     }
 };
 
-export const formFacetLink = () =>
+export const FormFacetLink = () =>
     `<div class="fd-facet fd-facet--form fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="formFacetTitle3">
         <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="formFacetTitle3">Contact Information</h1>
         <div class="fd-facet__container fd-margin-bottom--tiny">
@@ -188,14 +187,14 @@ export const formFacetLink = () =>
     </div>
 `;
 
-formFacetLink.storyName = 'Form Facet with Link';
-formFacetLink.parameters = {
+FormFacetLink.storyName = 'Form Facet with Link';
+FormFacetLink.parameters = {
     docs: {
         storyDescription: 'Text in a form facet can also hold a link by using the Link component.'
     }
 };
 
-export const ratingIndicator = () =>
+export const RatingIndicator = () =>
     `<div class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle2">
         <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle2">Average User Rating</h1>
         <h2 class="fd-form-label">6 reviews</h2>
@@ -220,15 +219,15 @@ export const ratingIndicator = () =>
         </div>
     </div>
 `;
-ratingIndicator.storyName = 'Rating Indicator Facet';
-ratingIndicator.parameters = {
+RatingIndicator.storyName = 'Rating Indicator Facet';
+RatingIndicator.parameters = {
     docs: {
-        storyDescription: `The Rating Indicator Facet displays a **Rating Indicator**. It consists of a mandatory title, optional supplementary texts 
+        storyDescription: `The Rating Indicator Facet displays a **Rating Indicator**. It consists of a mandatory title, optional supplementary texts
         like a subtitle or a dynamic text, and the rating indicator.`
     }
 };
 
-export const imageFacet = () =>
+export const ImageFacet = () =>
     `<div class="fd-facet fd-facet--image fd-margin-end--md">
         <span class="fd-avatar fd-avatar--l" aria-label="Avatar">
             <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
@@ -236,15 +235,15 @@ export const imageFacet = () =>
     </div>
 `;
 
-imageFacet.storyName = 'Image/Avatar Facet';
-imageFacet.parameters = {
+ImageFacet.storyName = 'Image/Avatar Facet';
+ImageFacet.parameters = {
     docs: {
         storyDescription: 'Counter added to a tab'
     }
 };
 
 
-export const objectPage = () =>
+export const ObjectPage = () =>
     `<section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Desktop Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area" tabindex="0" aria-hidden="false" id="mainContainer">
@@ -376,7 +375,7 @@ export const objectPage = () =>
                                 <span class="fd-object-number__text">579</span><span class="fd-object-number__unit">EUR</span>
                             </span>
                         </div>
-                    
+
                         <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle3">
                             <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle3">Average User Rating</h1>
                             <h2 class="fd-form-label">6 reviews</h2>
@@ -384,16 +383,16 @@ export const objectPage = () =>
                                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
                                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-1" name="2-rating-max-value-5" value="1">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-1"></label>
-                    
+
                                 <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-2" name="2-rating-max-value-5" value="2" checked>
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-2"></label>
-                    
+
                                 <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-3" name="2-rating-max-value-5" value="3">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-3"></label>
-                    
+
                                 <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-4" name="2-rating-max-value-5" value="4">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-4"></label>
-                    
+
                                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-5" name="2-rating-max-value-5" value="5">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-5"></label>
                                 </div>
@@ -405,12 +404,12 @@ export const objectPage = () =>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Collapse" 
-                                aria-expanded="true" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Collapse"
+                                aria-expanded="true"
                                 aria-hidden="false"
                                 id="expandBtn"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('expandBtn', ['aria-expanded']);
@@ -423,12 +422,12 @@ export const objectPage = () =>
                                 >
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Collapse" 
-                                aria-expanded="false" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Collapse"
+                                aria-expanded="false"
                                 aria-hidden="true"
                                 id="collapseBtn"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('collapseBtn', ['aria-expanded']);
@@ -441,7 +440,7 @@ export const objectPage = () =>
                                 >
                                 <i class="sap-icon--slim-arrow-down"></i>
                         </button>
-                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
+                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact"
                                 aria-label="Pin this">
                                 <i class="sap-icon--pushpin-off"></i>
                         </button>
@@ -470,31 +469,31 @@ export const objectPage = () =>
         </header>
         <div class="fd-dynamic-page__content">
             <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV557" role="tabpanel">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
             <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz155" role="tabpanel" >
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
@@ -511,11 +510,11 @@ export const objectPage = () =>
     </section>
 `;
 
-objectPage.storyName = 'Facets in Object Page';
-objectPage.parameters = {
+ObjectPage.storyName = 'Facets in Object Page';
+ObjectPage.parameters = {
     docs: {
-        storyDescription: `All facet types used together in the context of a dynamic page. To have the image from the image facet appear next to the title, add the class 
-        \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the 
+        storyDescription: `All facet types used together in the context of a dynamic page. To have the image from the image facet appear next to the title, add the class
+        \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the
         \`fd-dynamic-page__title-container\` class. Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class
         for proper alignment with the image.
 
@@ -540,7 +539,7 @@ The final structure of a collapsed header with image next to the title is shown 
 };
 
 
-export const objectPageMobile = () =>
+export const ObjectPageMobile = () =>
     `<div class="mobile-container">
         <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Example">
             <header class="fd-dynamic-page__header">
@@ -661,7 +660,7 @@ export const objectPageMobile = () =>
                                     <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
                                 </span>
                             </div>
-                            
+
                             <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle13">
                                 <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle13">Availablity</h1>
                                 <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
@@ -679,12 +678,12 @@ export const objectPageMobile = () =>
                     <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                         <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                         <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Collapse header" 
-                                aria-expanded="true" 
+                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Collapse header"
+                                aria-expanded="true"
                                 aria-hidden="false"
                                 id="expandBtnMobile"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('expandBtnMobile', ['aria-expanded']);
@@ -697,12 +696,12 @@ export const objectPageMobile = () =>
                                 >
                                 <i class="sap-icon--slim-arrow-up"></i>
                             </button>
-                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Expand header" 
-                                aria-expanded="false" 
+                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Expand header"
+                                aria-expanded="false"
                                 aria-hidden="true"
                                 id="collapseBtnMobile"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
@@ -735,20 +734,20 @@ export const objectPageMobile = () =>
                                 </span>
                             </a>
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
             </header>
             <div class="fd-dynamic-page__content">
                 <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV559" role="tabpanel">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 </div>
                 <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz161" role="tabpanel">
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
@@ -765,5 +764,5 @@ export const objectPageMobile = () =>
         </section>
     </div>
 `;
-objectPageMobile.storyName = 'Facets in Object Page Mobile';
+ObjectPageMobile.storyName = 'Facets in Object Page Mobile';
 

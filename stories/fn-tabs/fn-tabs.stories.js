@@ -20,7 +20,7 @@ export default {
       - \`fn-tabs__icon\`: container for an icon
       - \`fn-tabs__text\`: text content container
       - \`fn-tabs__button\`: modifier class for nested button used in cases where the item has children and in Multi-instance tabs
-   
+
 
 <br><br><br>
     `,
@@ -38,7 +38,7 @@ const localStyles = `
 </style>
 `;
 
-export const defaultTabs = () => `${localStyles}
+export const DefaultTabs = () => `${localStyles}
 <div class="docs-fn-container">
     <ul class="fn-tabs" role="tablist">
         <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
@@ -65,13 +65,13 @@ export const defaultTabs = () => `${localStyles}
         <li role="tab" tabindex="0" class="fn-tabs__item">
             <div class="fn-tabs__text">Tab Item</div>
         </li>
-        <li role="tab" tabindex="0" class="fn-tabs__item">   
+        <li role="tab" tabindex="0" class="fn-tabs__item">
             <div class="fn-tabs__text">Tab Item  (42)</div>
         </li>
-        <li role="tab" class="fn-tabs__item is-disabled">   
+        <li role="tab" class="fn-tabs__item is-disabled">
             <div class="fn-tabs__text">Tab Item</div>
         </li>
-        <li role="tab" class="fn-tabs__right-container">   
+        <li role="tab" class="fn-tabs__right-container">
             <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="More">
                 <span class="sap-icon sap-icon--overflow"></span>
             </button>
@@ -80,15 +80,15 @@ export const defaultTabs = () => `${localStyles}
 </div>
 `;
 
-defaultTabs.storyName = 'Default';
+DefaultTabs.storyName = 'Default';
 
-defaultTabs.parameters = {
+DefaultTabs.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const semantic = () => `${localStyles}
+export const Semantic = () => `${localStyles}
 <div class="docs-fn-container">
     <ul class="fn-tabs fn-tabs--positive" role="tablist">
         <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
@@ -204,16 +204,16 @@ export const semantic = () => `${localStyles}
 </div>
 `;
 
-semantic.storyName = 'Semantic Tabs';
+Semantic.storyName = 'Semantic Tabs';
 
-semantic.parameters = {
+Semantic.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'The `.fn-tabs--positive`, `.fn-tabs--critical` or `.fn-tabs--negative` modifier classes are added to the `.fn-tabs` base class to achieve positive, critical or negative tabs. '
     }
 };
 
-export const multiInstance = () => `${localStyles}
+export const MultiInstance = () => `${localStyles}
 <div class="docs-fn-container">
     <ul class="fn-tabs fn-tabs--multi-instance" role="tablist">
         <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
@@ -264,9 +264,9 @@ export const multiInstance = () => `${localStyles}
 </div>
 `;
 
-multiInstance.storyName = 'Multi-Instance Tabs';
+MultiInstance.storyName = 'Multi-Instance Tabs';
 
-multiInstance.parameters = {
+MultiInstance.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'The `.fn-tabs--multi-instance` modifier class toachieve Multi Instance tabs. It can be combined with a semantic modifier class.'

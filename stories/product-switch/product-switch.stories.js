@@ -11,7 +11,7 @@ export default {
 
 **Do not use the product switch if:**
 
--	You want your users to navigate within the current product. In this case, use a product menu (see **Shellbar**).        
+-	You want your users to navigate within the current product. In this case, use a product menu (see **Shellbar**).
         `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['product-switch', 'popover', 'button', 'icon']
@@ -23,10 +23,10 @@ export const Shellbar = () => `
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
-                <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control" 
-                    aria-label="Image label" 
-                    aria-controls="product-switch-body" 
-                    aria-expanded="true" 
+                <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control"
+                    aria-label="Image label"
+                    aria-controls="product-switch-body"
+                    aria-expanded="true"
                     aria-haspopup="true">
                     <i class="sap-icon--grid"></i>
                 </button>

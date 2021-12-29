@@ -2,7 +2,7 @@ export default {
     title: 'Components/Forms/Form Grid',
     parameters: {
         description: `
-The form grid component provides responsive layouts for forms on a 12-column grid. There are four breakpoints that result in four supported sizes: 
+The form grid component provides responsive layouts for forms on a 12-column grid. There are four breakpoints that result in four supported sizes:
 
 Size | Form width | Breakpoint
 :----- | :-------------- | :---------------
@@ -14,7 +14,7 @@ Extra-large&nbsp;&nbsp;&nbsp; | 1441 px and above&nbsp;&nbsp;&nbsp; | _no breakp
 **Note:** These breakpoints are not dependent on the screen width, but rather the width of the form.
 
 ##Label-Field Ratio
-Within each size, the number of labels, field, and empty grid columns can be defined. The optional empty grid columns are placed after the input field elements to avoid excessive stretching of the input fields. 
+Within each size, the number of labels, field, and empty grid columns can be defined. The optional empty grid columns are placed after the input field elements to avoid excessive stretching of the input fields.
 
 This ratio is displayed as **X**:**Y**:**Z**, where **X** is the number of grids used by the labels, **Y** stands for the fields, and **Z** for empty grid columns.
 We highly recommend changing the default of the label-field-ratio according to your app’s needs. For more information, see the recommended layouts in the **Layout** section.
@@ -28,7 +28,7 @@ When working with form groups, it's always best to use the recommended number of
     }
 };
 
-export const sSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
+export const SSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
     <div class="fd-row">
         <div class="fd-col">
                 <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -87,8 +87,8 @@ export const sSize = () => `<div class="fd-container fd-form-layout-grid-contain
 </div>
 `;
 
-sSize.storyName = 'Small';
-sSize.parameters = {
+SSize.storyName = 'Small';
+SSize.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
@@ -106,7 +106,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const mSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-2-name">Name:</label>
@@ -177,27 +177,27 @@ export const mSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 </div>
 `;
 
-mSizeDefault.storyName = 'Default [M]';
-mSizeDefault.parameters = {
+MSizeDefault.storyName = 'Default [M]';
+MSizeDefault.parameters = {
     docs: {
         iframeHeight: 370,
         storyDescription: `
 The default medium form grid uses a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
 
 ####Label-field ratio
-The default medium form grid is organized into a **2:10:0** label-field ratio. 
+The default medium form grid is organized into a **2:10:0** label-field ratio.
 
 Components | Grid columns | Description
 :------ | :--------: | :----------------------
 Label | 2 | Only two grid columns of the responsive grid layout are used by the labels.
 Fields | 10 | The rest of the grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
-        
+
 `
     }
 };
 
-export const mSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label" for="input-3-name">Name:</label>
@@ -268,28 +268,28 @@ export const mSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
 </div>
 `;
 
-mSizeSplitScreen.storyName = 'Split screen [M]';
-mSizeSplitScreen.parameters = {
+MSizeSplitScreen.storyName = 'Split screen [M]';
+MSizeSplitScreen.parameters = {
     docs: {
         iframeHeight: 370,
         storyDescription: `
 When the form is positioned in the details part of a split screen, the medium form grid should use a label-field ratio of 4:7:1.
 
 ####Label-field ratio
-The medium form grid is organized into a **4:7:1** label-field ratio for split-screen views. 
+The medium form grid is organized into a **4:7:1** label-field ratio for split-screen views.
 
 Components | Grid columns | Description
 :------ | :--------: | :----------------------
 Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
 Fields | 7 | Seven grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 1 | There is one empty space on the right of the field.
-        
+
 `
     }
 };
 
 
-export const mSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label" for="input-4-name">Name:</label>
@@ -360,26 +360,26 @@ export const mSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
 </div>
 `;
 
-mSizeFullScreenApp.storyName = 'Full screen [M]';
-mSizeFullScreenApp.parameters = {
+MSizeFullScreenApp.storyName = 'Full screen [M]';
+MSizeFullScreenApp.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
 If the form is being viewed in a full-screen app, the medium form grid should use a single-column layout.
 ####Label-field ratio
-The medium form grid is organized into a **3:5:4** label-field ratio for full-screen views. 
-        
+The medium form grid is organized into a **3:5:4** label-field ratio for full-screen views.
+
 Components | Grid columns | Description
 :------ | :--------: | :----------------------
 Label | 3 | Only three grid columns of the responsive grid layout are used by the labels.
 Fields | 5 | Five grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 4 | There are four empty spaces on the right of the field.
-        
+
 `
     }
 };
 
-export const mSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
+export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label" for="input-5-name">Name:</label>
@@ -450,27 +450,27 @@ export const mSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
 </div>
 `;
 
-mSizeFullScreenAppLongLabel.storyName = 'Long label [M]';
-mSizeFullScreenAppLongLabel.parameters = {
+MSizeFullScreenAppLongLabel.storyName = 'Long label [M]';
+MSizeFullScreenAppLongLabel.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
 The medium form width can go down to 601 px, providing insufficient space for longer labels and fields. If long labels or input values are necessary, use the label-field ratio of 4:8:0.
 ####Label-field ratio
 
-The medium form grid is organized into a **3:5:4** label-field ratio to accommodate long labels and fields. 
+The medium form grid is organized into a **3:5:4** label-field ratio to accommodate long labels and fields.
 
 Components | Grid columns | Description
 :------ | :--------: | :----------------------
 Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
 Fields | 8 | Eight grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 0 | There is no empty space on the right of the field.
-        
+
 `
     }
 };
 
-export const lSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-6-name">Name:</label>
@@ -541,27 +541,27 @@ export const lSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
 </div>
 `;
 
-lSizeDefault.storyName = 'Default [L]';
-lSizeDefault.parameters = {
+LSizeDefault.storyName = 'Default [L]';
+LSizeDefault.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
 The default large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. Therefore, the form groups adopt the Z layout, directing users’ attention to each row instead of columns.
 ####Label-field ratio
 
-The default large form grid is organized into a **4:8:0** label-field ratio. 
+The default large form grid is organized into a **4:8:0** label-field ratio.
 
 Components | Grid columns | Description
 :------ | :--------: | :----------------------
 Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
 Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 0 | There is no empty space on the right of the field.
-        
+
 `
     }
 };
 
-export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-7-name">Name:</label>
@@ -631,8 +631,8 @@ export const lSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
 </div>
 `;
 
-lSizeSingleFormGroup.storyName = 'Single form [L]';
-lSizeSingleFormGroup.parameters = {
+LSizeSingleFormGroup.storyName = 'Single form [L]';
+LSizeSingleFormGroup.parameters = {
     docs: {
         iframeHeight: 530,
         storyDescription: `
@@ -651,7 +651,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
     }
 };
 
-export const lSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-lg--6 fd-col--wrap">
       <div class="fd-row">
@@ -792,8 +792,8 @@ export const lSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
 </div>
 `;
 
-lSizeMultipleFormGroup.storyName = 'Multiple form [L]';
-lSizeMultipleFormGroup.parameters = {
+LSizeMultipleFormGroup.storyName = 'Multiple form [L]';
+LSizeMultipleFormGroup.parameters = {
     docs: {
         iframeHeight: 590,
         storyDescription: `
@@ -809,12 +809,12 @@ Fields | 12 | A field handles the space of a whole row.
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 **Note:** As explained in the main description, large goes down to 1025 px. Therefore, long labels that are put next to fields might not fit on smaller large-sized screens (especially in split-view apps). For this reason, labels are put above fields.
-        
+
         `
     }
 };
 
-export const xlDefault = () => `<div class="fd-container fd-form-layout-grid-container">
+export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label" for="input-9-name">Name:</label>
@@ -885,8 +885,8 @@ export const xlDefault = () => `<div class="fd-container fd-form-layout-grid-con
 </div>
 `;
 
-xlDefault.storyName = 'Default [XL]';
-xlDefault.parameters = {
+XlDefault.storyName = 'Default [XL]';
+XlDefault.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
@@ -900,13 +900,13 @@ Components | Grid columns | Description
 Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
 Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
-        
+
 `
     }
 };
 
 
-export const xlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
+export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label" for="input-10-name">Name:</label>
@@ -977,8 +977,8 @@ export const xlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
 </div>
 `;
 
-xlSingleFormGroup.storyName = 'Single form [XL]';
-xlSingleFormGroup.parameters = {
+XlSingleFormGroup.storyName = 'Single form [XL]';
+XlSingleFormGroup.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
@@ -994,12 +994,12 @@ Fields | 5 | Five of the grid columns of the responsive grid layout are used by 
 Empty grid columns | 4 | There are four empty spaces on the right of the fields.
 
 **Note:** If the form is put into a full-screen app and it contains multiple form groups, you can also use a three-column layout with a label-field ratio of **12:12:0**.
-        
+
 `
     }
 };
 
-export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
+export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
@@ -1141,8 +1141,8 @@ export const xlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
 </div>
 `;
 
-xlDoubleFormGroup.storyName = 'Double form [XL]';
-xlDoubleFormGroup.parameters = {
+XlDoubleFormGroup.storyName = 'Double form [XL]';
+XlDoubleFormGroup.parameters = {
     docs: {
         iframeHeight: 650,
         storyDescription: `
@@ -1156,15 +1156,15 @@ Components | Grid columns | Description
 Label | 4 | Only four grid columns of the responsive grid layout are used by the labels.
 Fields | 8 | The rest of the grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
-        
+
 `
     }
 };
 
-export const xlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
+export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row fd-row--top">
     <div class="fd-col fd-col-xl--4 fd-col--wrap">
-      
+
 
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1292,7 +1292,7 @@ export const xlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
       </div>
     </div>
-    
+
 
     <div class="fd-col fd-col-xl--4 fd-col--wrap">
     <div class="fd-row">
@@ -1368,8 +1368,8 @@ export const xlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
 </div>
 `;
 
-xlMultipleFormGroup.storyName = 'Multiple form [XL]';
-xlMultipleFormGroup.parameters = {
+XlMultipleFormGroup.storyName = 'Multiple form [XL]';
+XlMultipleFormGroup.parameters = {
     docs: {
         iframeHeight: 850,
         storyDescription: `
@@ -1383,12 +1383,12 @@ Components | Grid columns | Description
 Label | 12 | A label handles the space of a whole row.
 Fields | 12 | A field handles the space of a whole row.
 Empty grid columns | 0 | There is no empty space on the right of the field.
-        
+
 `
     }
 };
 
-export const compactLayout = () => `<div class="fd-container fd-form-layout-grid-container">
+export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid-container">
     <div class="fd-row">
         <div class="fd-col fd-col--4">
           <label class="fd-form-label" for="input-13-compact">Default Input:</label>
@@ -1423,8 +1423,8 @@ export const compactLayout = () => `<div class="fd-container fd-form-layout-grid
 </div>
 `;
 
-compactLayout.storyName = 'Compact form';
-compactLayout.parameters = {
+CompactLayout.storyName = 'Compact form';
+CompactLayout.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
@@ -1432,9 +1432,9 @@ To display the form using a compact layout, add the \`--compact\` modifier on th
     }
 };
 
-export const columnRecommended = () => `<h2>Layout 1</h2>
+export const ColumnRecommended = () => `<h2>Layout 1</h2>
 <div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row"> 
+  <div class="fd-row">
     <div class="fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1461,7 +1461,7 @@ export const columnRecommended = () => `<h2>Layout 1</h2>
 
 <h2>Layout 2</h2>
 <div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row"> 
+  <div class="fd-row">
     <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1488,7 +1488,7 @@ export const columnRecommended = () => `<h2>Layout 1</h2>
 
 <h2>Layout 3</h2>
 <div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row"> 
+  <div class="fd-row">
     <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1515,8 +1515,8 @@ export const columnRecommended = () => `<h2>Layout 1</h2>
 `;
 
 
-columnRecommended.storyName = 'Recommended layouts';
-columnRecommended.parameters = {
+ColumnRecommended.storyName = 'Recommended layouts';
+ColumnRecommended.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
@@ -1548,14 +1548,14 @@ XL | 2
 L | 1
 M | 1
 S | 1
-        
+
 `
     }
 };
 
-export const columnPossible = () => `<h2>Layout 4</h2>
+export const ColumnPossible = () => `<h2>Layout 4</h2>
 <div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row"> 
+  <div class="fd-row">
     <div class="fd-col fd-col-xl--4 fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1593,7 +1593,7 @@ export const columnPossible = () => `<h2>Layout 4</h2>
 
 <h2>Layout 5</h2>
 <div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row"> 
+  <div class="fd-row">
     <div class="fd-col fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1619,8 +1619,8 @@ export const columnPossible = () => `<h2>Layout 4</h2>
 </div>
 `;
 
-columnPossible.storyName = 'Layout variations';
-columnPossible.parameters = {
+ColumnPossible.storyName = 'Layout variations';
+ColumnPossible.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `
@@ -1629,7 +1629,7 @@ Although not the best solutions, these layouts are also possible.
 ####Layout 4
 
 Screen size | Columns
-:----------: | :---------------: 
+:----------: | :---------------:
 XL | 3
 L | 1
 M | 1
@@ -1644,14 +1644,14 @@ XL | 1
 L | 1
 M | 1
 S | 1
-        
+
 `
     }
 };
 
-export const columnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
+export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
 <div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row"> 
+  <div class="fd-row">
     <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1688,7 +1688,7 @@ export const columnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
 </div>
 `;
 
-columnNotRecommended.parameters = {
+ColumnNotRecommended.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `

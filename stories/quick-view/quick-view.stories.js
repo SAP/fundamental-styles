@@ -24,18 +24,18 @@ export const Popover = () => `<div class="fd-popover">
                         <span class="fd-avatar fd-avatar--s" role="presentation">
                             <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
                         </span>
-    
+
                         <div class="fd-quick-view__subheader-text">
                             <h5 class="fd-title fd-title--h5">Company B</h5>
-    
+
                             <div class="fd-quick-view__subtitle">
                                 Michael Adams
                             </div>
                         </div>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="fd-form-group" role="group">
                     <div class="fd-form-group__header" aria-labelledby="contactDetails">
                         <h1 class="fd-form-group__header-text" id="contactDetails">Contact Details</h1>
@@ -52,7 +52,7 @@ export const Popover = () => `<div class="fd-popover">
                         </span>
                     </div>
                 </div>
-                
+
                 <div class="fd-form-group" role="group">
                     <div class="fd-form-group__header" aria-labelledby="mainContact">
                         <h1 class="fd-form-group__header-text" id="mainContact">Main Contact</h1>
@@ -75,8 +75,6 @@ export const Popover = () => `<div class="fd-popover">
     </div>
 </div>
 `;
-
-Popover.storyName = 'Popover';
 
 Popover.parameters = {
     docs: {
@@ -102,7 +100,7 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
                             <span class="fd-avatar fd-avatar--s" role="presentation">
                                 <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
                             </span>
-        
+
                             <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">
                                     <a class="fd-link" href="#">Inventarisation</a>
@@ -110,7 +108,7 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="fd-form-group" role="group">
                         <div class="fd-form-item">
                             <label class="fd-form-label">Start Date:</label>
@@ -147,8 +145,6 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
 </section>
 `;
 
-Dialog.storyName = 'Dialog';
-
 Dialog.parameters = {
     docs: {
         iframeHeight: 500,
@@ -166,7 +162,7 @@ export const NoHeader = () => `<div class="fd-popover">
                         <span class="fd-avatar fd-avatar--s" role="presentation">
                             <i role="presentation" class="fd-avatar__icon sap-icon--camera"></i>
                         </span>
-    
+
                         <div class="fd-quick-view__subheader-text">
                             <h5 class="fd-title fd-title--h5">
                                 <a class="fd-link" href="#">Inventarisation</a>
@@ -174,7 +170,7 @@ export const NoHeader = () => `<div class="fd-popover">
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="fd-form-group" role="group">
                     <div class="fd-form-item">
                         <label class="fd-form-label">Start Date:</label>

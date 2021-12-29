@@ -2,9 +2,9 @@ export default {
     title: 'Components/Feed List and Item',
     parameters: {
         description: `The feed list displays feed list items that individually consist of a username, a written entry and an optional image. There is also a separate byline below that can contain a time stamp or an attribute in the form of free text.
-       
-        
-##Usage        
+
+
+##Usage
 **Use the feed list if:**
 
 -        You expect multiple instances, such as notes or feed entries.
@@ -22,16 +22,16 @@ export default {
     }
 };
 
-export const standard = () => `<ul class="fd-feed-list" aria-label="Feed List Item default example">
+export const Standard = () => `<ul class="fd-feed-list" aria-label="Feed List Item default example">
     <li class="fd-feed-list__body">
-        <div 
+        <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-            role="img" 
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            role="img"
             aria-label="John Doe"
-            title="John Doe">    
+            title="John Doe">
         </div>
-         
+
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
@@ -46,18 +46,17 @@ export const standard = () => `<ul class="fd-feed-list" aria-label="Feed List It
 </ul>
 `;
 
-standard.storyName = 'Standard';
-standard.parameters = {
+Standard.parameters = {
     docs: {
         storyDescription: 'The standard feed list item displays a user\'s name and written text, an image and an additional attribute (in this example, it is a time stamp).'
     }
 };
 
-export const placeHolderImage = () => `<ul class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
+export const PlaceHolderImage = () => `<ul class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
     <li class="fd-feed-list__body">
-        <div 
-            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
-            role="img" 
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+            role="img"
             aria-label="John Doe"
             title="John Doe">
             <i class="sap-icon--person-placeholder"></i>
@@ -68,7 +67,7 @@ export const placeHolderImage = () => `<ul class="fd-feed-list" aria-label="Feed
                 <span class="fd-feed-list__name">Joe Doe: </span>
                 Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
             </p>
-            
+
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
@@ -78,21 +77,21 @@ export const placeHolderImage = () => `<ul class="fd-feed-list" aria-label="Feed
 </ul>
 `;
 
-placeHolderImage.storyName = 'Placeholder image';
-placeHolderImage.parameters = {
+PlaceHolderImage.storyName = 'Placeholder image';
+PlaceHolderImage.parameters = {
     docs: {
         storyDescription: 'The feed list item will display a placeholder image if the user does not have an image assigned.'
     }
 };
 
-export const noImage = () => `<ul class="fd-feed-list" aria-label="Feed List Item without user image example">
-    <li class="fd-feed-list__body">     
+export const NoImage = () => `<ul class="fd-feed-list" aria-label="Feed List Item without user image example">
+    <li class="fd-feed-list__body">
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
                 Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
             </p>
-            
+
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
@@ -102,32 +101,32 @@ export const noImage = () => `<ul class="fd-feed-list" aria-label="Feed List Ite
 </ul>
 `;
 
-noImage.storyName = 'No image';
-noImage.parameters = {
+NoImage.storyName = 'No image';
+NoImage.parameters = {
     docs: {
         storyDescription: 'The feed list item can be displayed without an image by removing the `fd-avatar` element from the container.'
     }
 };
 
-export const linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item with user link example">
+export const Linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item with user link example">
     <li class="fd-feed-list__body">
-        <div 
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"  
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"
             style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
-            role="img" 
+            role="img"
             aria-label="John Doe"
             title="John Doe"
             tabindex="0"
         ></div>
-             
+
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">
-                    <a href="#" class="fd-link fd-link--emphasized">Joe Doe: </a> 
+                    <a href="#" class="fd-link fd-link--emphasized">Joe Doe: </a>
                 </span>
                 Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
             </p>
-            
+
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
@@ -137,30 +136,29 @@ export const linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item
 </ul>
 `;
 
-linked.storyName = 'Linked';
-linked.parameters = {
+Linked.parameters = {
     docs: {
         storyDescription: 'The feed list item can display linked usernames (and images). To display a linked username, add the `fd-link` class with the `fd-link--emphasized` modifier to the `fd-feed-list__name` element.'
     }
 };
 
-export const showMore = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show more text example">
+export const ShowMore = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show more text example">
     <li class="fd-feed-list__body">
-        <div 
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-            role="img" 
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            role="img"
             aria-label="John Doe"
             title="John Doe"
         ></div>
-             
+
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
                 <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
-                <a class="fd-link fd-feed-list__link--more" tabindex="0">More</a>        
+                <a class="fd-link fd-feed-list__link--more" tabindex="0">More</a>
             </p>
-            
+
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
@@ -170,30 +168,30 @@ export const showMore = () => `<ul class="fd-feed-list" aria-label="Feed List It
 </ul>
 `;
 
-showMore.storyName = 'Show more';
-showMore.parameters = {
+ShowMore.storyName = 'Show more';
+ShowMore.parameters = {
     docs: {
         storyDescription: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). Truncation occurs when the text reaches 300 characters. When hovering over the link, the text is highlighted and underlined.'
     }
 };
 
-export const showLess = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show less text example">
+export const ShowLess = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show less text example">
     <li class="fd-feed-list__body">
-        <div 
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-            role="img" 
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            role="img"
             aria-label="John Doe"
             title="John Doe"
         ></div>
-             
+
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
                 <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
-                <a class="fd-link fd-feed-list__link--more" tabindex="0">Less</a>        
+                <a class="fd-link fd-feed-list__link--more" tabindex="0">Less</a>
             </p>
-            
+
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
@@ -203,29 +201,29 @@ export const showLess = () => `<ul class="fd-feed-list" aria-label="Feed List It
 </ul>
 `;
 
-showLess.storyName = 'Show less';
-showLess.parameters = {
+ShowLess.storyName = 'Show less';
+ShowLess.parameters = {
     docs: {
         storyDescription: 'Similarly, feed list items can display a <i>LESS</i> link that will revert the text back to when it was truncated.'
     }
 };
 
-export const withActions = () => `<ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
+export const WithActions = () => `<ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
     <li class="fd-feed-list__body">
-        <div 
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-            role="img" 
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            role="img"
             aria-label="John Doe"
-            title="John Doe">    
-        </div>   
-        
+            title="John Doe">
+        </div>
+
         <div class="fd-feed-list__content">
             <div class="fd-feed-list__actions">
                 <div class="fd-popover">
                     <div class="fd-popover__control">
-                        <button class="fd-button fd-button--compact fd-button--transparent" 
-                                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false" 
+                        <button class="fd-button fd-button--compact fd-button--transparent"
+                                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="false"
                                 aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
                             <i class="sap-icon--overflow"></i>
                         </button>
@@ -257,36 +255,36 @@ export const withActions = () => `<ul class="fd-feed-list" aria-label="Feed List
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
                 <span>In hac habitasse platea dictumst. Fusce eu dui viverra, dictum justo in, pul aug. Praesent aliquam massa non lectus commodo, id vestibulum lectus auctor. Proin lorem quam, accumsan ac dui et, cursus ornare dui. Nunc ultricies dolor felis, in viverra mi venenatis in. Sed vel nisl a dui posuere ullamcorper. Donec posuere id massa at dictum. Suspendisse potenti.</span>
-            </p>                 
+            </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </div>        
+        </div>
     </li>
 </ul>
 `;
 
-withActions.storyName = 'Actions';
-withActions.parameters = {
+WithActions.storyName = 'Actions';
+WithActions.parameters = {
     docs: {
         storyDescription: 'Feed list items can display actions that users can perform on their individual feed posts. These typically include actions like <i>Edit</i> and <i>Delete</i>, however, other actions can be displayed depending on the use case. It is recommended to display a maximum of 5 actions per post.'
     }
 };
 
-export const group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
+export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
-            role="img" 
+            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+            role="img"
             aria-label="John Doe"
             title="John Doe">
                 <i class="sap-icon--person-placeholder"></i>
-        </div> 
+        </div>
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Cruz: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
@@ -294,40 +292,40 @@ export const group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
             </div>
         </div>
    </li>
-   
+
     <li class="fd-feed-list__body">
-        <div 
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-            role="img" 
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            role="img"
             aria-label="John Doe"
-            title="John Doe">    
+            title="John Doe">
         </div>
-     
+
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </div>     
+        </div>
     </li>
-    
+
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
-            role="img" 
+            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)"
+            role="img"
             aria-label="John Doe"
             title="John Doe"
-        ></div> 
+        ></div>
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Sanchez: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
@@ -338,26 +336,25 @@ export const group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
 </ul>
 `;
 
-group.storyName = 'Group';
-group.parameters = {
+Group.parameters = {
     docs: {
         storyDescription: 'Evidently, feed list items can be displayed in a group. The example below displays a feed list item with a placeholder image and two standard feed list items.'
     }
 };
 
-export const borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-feed-list--no-border" aria-label="Feed List Item group example">
+export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-feed-list--no-border" aria-label="Feed List Item group example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb" 
-            role="img" 
+            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+            role="img"
             aria-label="John Doe"
             title="John Doe">
                 <i class="sap-icon--person-placeholder"></i>
-        </div> 
+        </div>
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Cruz: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 21, 2020</small>
@@ -365,40 +362,40 @@ export const borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
             </div>
         </div>
    </li>
-   
+
     <li class="fd-feed-list__body">
-        <div 
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-            role="img" 
+        <div
+            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            role="img"
             aria-label="John Doe"
-            title="John Doe">    
+            title="John Doe">
         </div>
-     
+
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 22, 2020</small>
                 <small class="fd-feed-list__footer--byline">Reply</small>
             </div>
-        </div>     
+        </div>
     </li>
-    
+
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)" 
-            role="img" 
+            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)"
+            role="img"
             aria-label="John Doe"
             title="John Doe"
-        ></div> 
+        ></div>
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Sanchez: </span>
-                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+                <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             </p>
             <div class="fd-feed-list__footer">
                 <small class="fd-feed-list__footer--byline">Aug 20, 2020</small>
@@ -409,24 +406,24 @@ export const borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
 </ul>
 `;
 
-borderless.storyName = 'Borderless group';
-borderless.parameters = {
+Borderless.storyName = 'Borderless group';
+Borderless.parameters = {
     docs: {
         storyDescription: 'When feed list items are displayed in a group, they are usually separated by borders. However, to remove the borders, add the `fd-feed-list--no-border` modifier class to the main element.'
     }
 };
 
-export const mobile = () => `<div style="width: 350px; height: 600px; position: relative">
+export const Mobile = () => `<div style="width: 350px; height: 600px; position: relative">
     <ul class="fd-feed-list fd-feed-list--s" aria-label="Feed List Item small size example">
         <li class="fd-feed-list__body">
             <div class="fd-feed-list__wrapper">
                 <div class="fd-feed-list__wrapper fd-feed-list__wrapper--header">
                 <div
-                    class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb" 
-                    style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)" 
-                    role="img" 
+                    class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+                    style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+                    role="img"
                     aria-label="John Doe"
-                    title="John Doe">    
+                    title="John Doe">
                 </div>
                 <div>
                     <span class="fd-feed-list__name">Joe Doe: </span>
@@ -435,17 +432,17 @@ export const mobile = () => `<div style="width: 350px; height: 600px; position: 
                         <small class="fd-feed-list__footer--byline">Reply</small>
                     </div>
                 </div>
-                
+
                 </div>
                 <div class="fd-feed-list__action">
                     <button class="fd-button fd-button--transparent"
-                            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false" 
+                            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false"
                             aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
                             <i class="sap-icon--overflow"></i>
                     </button>
                 </div>
-            </div>    
-        
+            </div>
+
             <div class="fd-feed-list__content">
                 <p class="fd-feed-list__text">
                     Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
@@ -480,13 +477,12 @@ export const mobile = () => `<div style="width: 350px; height: 600px; position: 
                     </li>
                 </ul>
             </div>
-        </li> 
+        </li>
     </ul>
 </div>
 `;
 
-mobile.storyName = 'Mobile';
-mobile.parameters = {
+Mobile.parameters = {
     docs: {
         storyDescription: 'The feed list item can be mobile responsive by adding the `fd-feed-list--s` modifier class to the main element.'
     }

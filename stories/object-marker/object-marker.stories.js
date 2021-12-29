@@ -1,8 +1,8 @@
 export default {
     title: 'Components/Object Marker',
     parameters: {
-        description: `Object marker indicates the technical status of an object. It display the technical state like (draft, 
-unsaved changes, locked, favorite, flagged). Use the object marker for this unless you want to display the status of the object in the business life cycle. 
+        description: `Object marker indicates the technical status of an object. It display the technical state like (draft,
+unsaved changes, locked, favorite, flagged). Use the object marker for this unless you want to display the status of the object in the business life cycle.
 The technical status can be represented as an icon, with an icon and text, or as text only, depending on the screen size. `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['object-marker', 'icon']
@@ -13,7 +13,7 @@ The technical status can be represented as an icon, with an icon and text, or as
  * Object Marker can display the semantic status of an object: (class: `fd-object-marker`)
  */
 
-export const iconOnly = () => `
+export const IconOnly = () => `
 <div class="fd-object-marker">
     <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request"></i>
 </div>
@@ -35,7 +35,7 @@ export const iconOnly = () => `
  * Object Marker Text only
  */
 
-export const markerText = () => `
+export const MarkerText = () => `
 <div class="fd-object-marker">
     <span class="fd-object-marker__text">Draft</span>
 </div>
@@ -48,7 +48,7 @@ export const markerText = () => `
  * Object Marker icon and text
  */
 
-export const iconAndText = () => `
+export const IconAndText = () => `
 <div class="fd-object-marker">
     <i class="fd-object-marker__icon sap-icon--request" role="presentation"></i>
     <span class="fd-object-marker__text">Request</span>
@@ -70,7 +70,7 @@ export const iconAndText = () => `
     <span class="fd-object-marker__text">Locked</span>
 </div>
 `;
-iconAndText.parameters = {
+IconAndText.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: 'The Marker supports the Icon and Text mode of displaying the Object.'
@@ -83,7 +83,7 @@ iconAndText.parameters = {
  If Object marker has to be clicked/tabbed by the user add the `fd-object-marker--link` modifier class.
  */
 
-export const clickableObjectMarker = () => `
+export const ClickableObjectMarker = () => `
 <a href="#" class="fd-object-marker fd-object-marker--link">
     <i class="fd-object-marker__icon sap-icon--private" role="presentation"></i>
     <span class="fd-object-marker__text">Locked</span>
@@ -93,7 +93,7 @@ export const clickableObjectMarker = () => `
     <span class="fd-object-marker__text">Unsaved Changes</span>
 </a>
 `;
-clickableObjectMarker.parameters = {
+ClickableObjectMarker.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription:

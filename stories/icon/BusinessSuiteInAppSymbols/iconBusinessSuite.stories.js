@@ -19,7 +19,7 @@ Note: If an icon needs to be selected or have any interaction states, it is reco
     }
 };
 
-export const sizes = () => `
+export const Sizes = () => `
 
     <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart"></span>
     <br />
@@ -28,7 +28,7 @@ export const sizes = () => `
     <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart" style="font-size:5rem"></span>
 `;
 
-sizes.parameters = {
+Sizes.parameters = {
     docs: {
         iframeHeight: 250,
         storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
@@ -51,7 +51,7 @@ sizes.parameters = {
  * | Positive        | ` sap-icon-businessSuiteInAppSymbols--color-positive`       |
  */
 
-export const colors = () => `
+export const Colors = () => `
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart" style="font-size:5rem"></span>
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-default" style="font-size:5rem"></span>
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-contrast sap-icon-businessSuiteInAppSymbols--background-contrast" style="font-size:5rem"></span>
@@ -64,7 +64,7 @@ export const colors = () => `
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-positive" style="font-size:5rem"></span>
  `;
 
-export const businessSuiteIcons = () => {
+export const BusinessSuiteIcons = () => {
     const div = document.createElement('div');
     div.className = 'fddocs-container';
     div.innerHTML = dataBusinessSuite.businessSuiteIcons.map((icon) => {
@@ -78,7 +78,7 @@ export const businessSuiteIcons = () => {
     return div.outerHTML;
 };
 
-businessSuiteIcons.parameters = {
+BusinessSuiteIcons.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'For icons of <b>BusinessSuiteInAppSymbols</b> font-family add the `sap-icon-businessSuiteInAppSymbols--{icon-name}` modifier class identifying the icon style to the `sap-icon-businessSuiteInAppSymbols` class. For example, for a <i>heart</i> icon, add `sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart` with the desired font size value.'

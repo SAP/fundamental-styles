@@ -10,7 +10,7 @@ export default {
 - You need to show the state of each step in a linear, multi-step process.
 
 - The progress of multiple items needs to be displayed in a list or table.
-        
+
 
 **Do not use the micro process flow if:**
 
@@ -45,7 +45,7 @@ The micro process flow acts as a generic container in which process steps are la
     }
 };
 
-export const defaultMicroProcessFlow = () => `<div class="fd-micro-process-flow">
+export const DefaultMicroProcessFlow = () => `<div class="fd-micro-process-flow">
     <div class="fd-micro-process-flow__overflow-container">
         <div class="fd-micro-process-flow__wrapper">
             <div class="fd-micro-process-flow__item">
@@ -101,8 +101,8 @@ export const defaultMicroProcessFlow = () => `<div class="fd-micro-process-flow"
 </div>
 `;
 
-defaultMicroProcessFlow.storyName = 'Micro process flow with dependent steps (Default)';
-defaultMicroProcessFlow.parameters = {
+DefaultMicroProcessFlow.storyName = 'Micro process flow with dependent steps (Default)';
+DefaultMicroProcessFlow.parameters = {
     docs: {
         iframeHeight: 210,
         storyDescription: `
@@ -110,7 +110,7 @@ defaultMicroProcessFlow.parameters = {
     }
 };
 
-export const microProcessFlowIndependentSteps = () => `<div class="fd-micro-process-flow fd-micro-process-flow--independent-steps">
+export const MicroProcessFlowIndependentSteps = () => `<div class="fd-micro-process-flow fd-micro-process-flow--independent-steps">
     <div class="fd-micro-process-flow__overflow-container">
         <div class="fd-micro-process-flow__wrapper">
             <div class="fd-micro-process-flow__item">
@@ -166,8 +166,8 @@ export const microProcessFlowIndependentSteps = () => `<div class="fd-micro-proc
 </div>
 `;
 
-microProcessFlowIndependentSteps.storyName = 'Micro process flow with independent steps';
-microProcessFlowIndependentSteps.parameters = {
+MicroProcessFlowIndependentSteps.storyName = 'Micro process flow with independent steps';
+MicroProcessFlowIndependentSteps.parameters = {
     docs: {
         iframeHeight: 210,
         storyDescription: `Add the \`.fd-micro-process-flow--independent-steps\` modifier class to \`.fd-micro-process-flow\` class to remove the connector line.
@@ -175,7 +175,7 @@ microProcessFlowIndependentSteps.parameters = {
     }
 };
 
-export const microProcessFlowCustom = () => `<div class="fd-micro-process-flow">
+export const MicroProcessFlowCustom = () => `<div class="fd-micro-process-flow">
     <div class="fd-micro-process-flow__overflow-container">
         <div class="fd-micro-process-flow__wrapper">
             <div class="fd-micro-process-flow__item">
@@ -356,8 +356,8 @@ export const microProcessFlowCustom = () => `<div class="fd-micro-process-flow">
 </div>
 `;
 
-microProcessFlowCustom.storyName = 'Micro process flow with custom steps';
-microProcessFlowCustom.parameters = {
+MicroProcessFlowCustom.storyName = 'Micro process flow with custom steps';
+MicroProcessFlowCustom.parameters = {
     docs: {
         iframeHeight: 210,
         storyDescription: `
@@ -365,7 +365,7 @@ microProcessFlowCustom.parameters = {
     }
 };
 
-export const microProcessFlowWithPopover = () => `<div style="height: 300px;">
+export const MicroProcessFlowWithPopover = () => `<div style="height: 300px;">
 <div class="fd-micro-process-flow">
     <div class="fd-micro-process-flow__overflow-container" style="overflow: visible;">
         <div class="fd-micro-process-flow__wrapper">
@@ -538,15 +538,15 @@ export const microProcessFlowWithPopover = () => `<div style="height: 300px;">
 </div>
 `;
 
-microProcessFlowWithPopover.storyName = 'Micro process flow with popover';
-microProcessFlowWithPopover.parameters = {
+MicroProcessFlowWithPopover.storyName = 'Micro process flow with popover';
+MicroProcessFlowWithPopover.parameters = {
     docs: {
         storyDescription: `Information displayed in micro flow process items can be extended by adding popovers with additional context.
         `
     }
 };
 
-export const overflowMicroProcessFlow = () => `<div class="fd-micro-process-flow">
+export const OverflowMicroProcessFlow = () => `<div class="fd-micro-process-flow">
     <div class="fd-micro-process-flow__overflow-container">
         <div class="fd-micro-process-flow__wrapper">
             <div class="fd-micro-process-flow__item">
@@ -721,8 +721,8 @@ export const overflowMicroProcessFlow = () => `<div class="fd-micro-process-flow
 </div>
 `;
 
-overflowMicroProcessFlow.storyName = 'Micro process flow with overflow';
-overflowMicroProcessFlow.parameters = {
+OverflowMicroProcessFlow.storyName = 'Micro process flow with overflow';
+OverflowMicroProcessFlow.parameters = {
     docs: {
         iframeHeight: 210,
         storyDescription: `
@@ -730,7 +730,7 @@ overflowMicroProcessFlow.parameters = {
     }
 };
 
-export const microProcessFlowWithObjects = () => `<div class="fd-micro-process-flow">
+export const MicroProcessFlowWithObjects = () => `<div class="fd-micro-process-flow">
     <div class="fd-micro-process-flow__overflow-container">
         <div class="fd-micro-process-flow__wrapper">
             <div class="fd-micro-process-flow__item">
@@ -793,8 +793,8 @@ export const microProcessFlowWithObjects = () => `<div class="fd-micro-process-f
 </div>
 `;
 
-microProcessFlowWithObjects.storyName = 'Micro process flow with elements inserted between nodes';
-microProcessFlowWithObjects.parameters = {
+MicroProcessFlowWithObjects.storyName = 'Micro process flow with elements inserted between nodes';
+MicroProcessFlowWithObjects.parameters = {
     docs: {
         iframeHeight: 210,
         storyDescription: `
@@ -802,7 +802,7 @@ microProcessFlowWithObjects.parameters = {
     }
 };
 
-export const microProcessFlowCustomWidth = () => `<div class="fd-micro-process-flow">
+export const MicroProcessFlowCustomWidth = () => `<div class="fd-micro-process-flow">
     <div class="fd-micro-process-flow__overflow-container">
         <div class="fd-micro-process-flow__wrapper">
             <div class="fd-micro-process-flow__item" style="width: 8rem;">
@@ -857,8 +857,8 @@ export const microProcessFlowCustomWidth = () => `<div class="fd-micro-process-f
 </div>
 `;
 
-microProcessFlowCustomWidth.storyName = 'Micro process flow with custom node width';
-microProcessFlowCustomWidth.parameters = {
+MicroProcessFlowCustomWidth.storyName = 'Micro process flow with custom node width';
+MicroProcessFlowCustomWidth.parameters = {
     docs: {
         iframeHeight: 210,
         storyDescription: `By default, the width of the item container is calculated based on the actual item width and the connector line. To change the width add inline style to the element with \`.fd-micro-process-flow__item\` class and provide value for the width.

@@ -7,7 +7,7 @@ export default {
     }
 };
 
-export const sizes = () => `
+export const Sizes = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde111">Default Size </label>
     <div class="fd-input-group">
@@ -25,14 +25,14 @@ export const sizes = () => `
 </div>
 `;
 
-sizes.parameters = {
+Sizes.parameters = {
     docs: {
         iframeHeight: 160,
         storyDescription: 'The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).'
     }
 };
 
-export const textAddOn = () => `
+export const TextAddOn = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde113">Left Aligned Text Add-on</label>
     <div class="fd-input-group">
@@ -67,14 +67,14 @@ export const textAddOn = () => `
 </div>
 `;
 
-textAddOn.parameters = {
+TextAddOn.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: 'The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right (or both) of the input element.'
     }
 };
 
-export const inputWithIcons = () => `
+export const InputWithIcons = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde117">Input with icon on the left</label>
     <div class="fd-input-group">
@@ -106,14 +106,14 @@ export const inputWithIcons = () => `
 </div>
 `;
 
-inputWithIcons.parameters = {
+InputWithIcons.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: 'The Input with add-on supports icons.'
     }
 };
 
-export const inputWithActions = () => `
+export const InputWithActions = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde120">Input with text add-on</label>
     <div class="fd-input-group">
@@ -131,7 +131,7 @@ export const inputWithActions = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde121" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Navigation"> 
+            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Navigation">
                 <i class="sap-icon--navigation-down-arrow"></i>
             </button>
         </span>
@@ -143,7 +143,7 @@ export const inputWithActions = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde122" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Navigation"> 
+            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Navigation">
                 <i class="sap-icon--navigation-down-arrow"></i>
             </button>
         </span>
@@ -163,14 +163,14 @@ export const inputWithActions = () => `
 </div>
 `;
 
-inputWithActions.parameters = {
+InputWithActions.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: 'The Input with add-on supports actions. Actions can be shown with a text label or icon.'
     }
 };
 
-export const states = () => `
+export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde124">Success</label>
     <div class="fd-input-group is-success">
@@ -256,13 +256,13 @@ export const states = () => `
 </div>
 `;
 
-states.parameters = {
+States.parameters = {
     docs: {
         iframeHeight: 700
     }
 };
 
-export const focus = () => `
+export const Focus = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde133">Default</label>
     <div class="fd-input-group is-focus">
@@ -282,14 +282,14 @@ export const focus = () => `
 </div>
 `;
 
-focus.parameters = {
+Focus.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'The Input Group supports <b>focus</b> state, it can be added by putting `.is-focus` class to component.'
     }
 };
 
-export const testOne = () => `
+export const TestOne = () => `
 <div class="fd-input-group  ">
    <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon ">
@@ -387,13 +387,13 @@ export const testOne = () => `
 </div>
 `;
 
-testOne.parameters = {
+TestOne.parameters = {
     docs: {
         disable: true
     }
 };
 
-export const testTwo = () => `
+export const TestTwo = () => `
 <div class="fd-input-group  ">
    <input aria-label="test" class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon fd-input-group__addon--compact">
@@ -419,12 +419,12 @@ export const testTwo = () => `
 </div>
 `;
 
-testTwo.parameters = {
+TestTwo.parameters = {
     docs: {
         disable: true
     }
 };
-export const testThree = () => `
+export const TestThree = () => `
 <div class="fd-input-group  is-success ">
    <span class="fd-input-group__addon  ">
    $
@@ -538,13 +538,13 @@ export const testThree = () => `
 </div>
 `;
 
-testThree.parameters = {
+TestThree.parameters = {
     docs: {
         disable: true
     }
 };
 
-export const testFour = () => `
+export const TestFour = () => `
 <div class="fd-input-group  ">
         <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
         <span class="fd-input-group__addon fd-input-group__addon--button ">
@@ -553,7 +553,7 @@ export const testFour = () => `
         </span>
 </div>
                 <br />
-                
+
 <div class="fd-input-group  ">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -562,7 +562,7 @@ export const testFour = () => `
         <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
                 <br />
-                
+
 <div class="fd-input-group  ">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -575,7 +575,7 @@ export const testFour = () => `
         </span>
 </div>
                 <br />
-                
+
 <div class="fd-input-group  ">
         <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button ">
@@ -584,7 +584,7 @@ export const testFour = () => `
         </span>
 </div>
                 <br />
-                
+
 <div class="fd-input-group  ">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -593,7 +593,7 @@ export const testFour = () => `
         <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
                 <br />
-                
+
 <div class="fd-input-group  ">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -607,7 +607,7 @@ export const testFour = () => `
 </div>
                 <br />
         <h3>Disabled</h3>
-                
+
 <div class="fd-input-group   is-disabled">
         <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
         <span class="fd-input-group__addon fd-input-group__addon--button ">
@@ -616,7 +616,7 @@ export const testFour = () => `
         </span>
 </div>
                 <br />
-                
+
 <div class="fd-input-group   is-disabled">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -625,7 +625,7 @@ export const testFour = () => `
         <input aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309" />
 </div>
                 <br />
-                
+
 <div class="fd-input-group   is-disabled">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -638,7 +638,7 @@ export const testFour = () => `
         </span>
 </div>
                 <br />
-                
+
 <div class="fd-input-group   is-disabled">
         <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
         <span class="fd-input-group__addon fd-input-group__addon--button ">
@@ -647,7 +647,7 @@ export const testFour = () => `
         </span>
 </div>
                 <br />
-                
+
 <div class="fd-input-group   is-disabled">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -656,7 +656,7 @@ export const testFour = () => `
         <textarea aria-label="test" class="input-group-input-playground  fd-input-group__input" placeholder="" value="19387309"></textarea>
 </div>
                 <br />
-                
+
 <div class="fd-input-group   is-disabled">
         <span class="fd-input-group__addon fd-input-group__addon--button  ">
                     <button class="btn-playground fd-input-group__button">Click Me</button>
@@ -670,13 +670,13 @@ export const testFour = () => `
 </div>
 `;
 
-testFour.parameters = {
+TestFour.parameters = {
     docs: {
         disable: true
     }
 };
 
-export const testFive = () => `
+export const TestFive = () => `
 <div class="fd-input-group  is-success ">
    <span class="fd-input-group__addon  ">
    $
@@ -790,13 +790,13 @@ export const testFive = () => `
 </div>
 `;
 
-testFive.parameters = {
+TestFive.parameters = {
     docs: {
         disable: true
     }
 };
 
-export const testSix = () => `
+export const TestSix = () => `
 <div class="fd-input-group fd-input-group--inline  ">
    <span class="fd-input-group__addon  ">
    phone
@@ -811,7 +811,7 @@ export const testSix = () => `
 </div>
 `;
 
-testSix.parameters = {
+TestSix.parameters = {
     docs: {
         disable: true
     }

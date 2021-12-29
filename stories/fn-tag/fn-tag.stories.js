@@ -42,7 +42,7 @@ const localStyles = `
 </style>
 `;
 
-export const primary = () => `${localStyles}
+export const Primary = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>Rest</b></div>
     <div><b>Hover</b></div>
@@ -116,9 +116,9 @@ export const primary = () => `${localStyles}
 </div>
 `;
 
-primary.storyName = 'Types';
+Primary.storyName = 'Types';
 
-primary.parameters = {
+Primary.parameters = {
     docs: {
         iframeHeight: 500
     }

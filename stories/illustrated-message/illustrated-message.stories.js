@@ -82,7 +82,6 @@ export const Scene = () => `<div style="width: 100%; display: flex; justify-cont
 
 ${localStyles}`;
 
-Scene.storyName = 'Scene';
 Scene.parameters = {
     docs: {
         iframeHeight: 330
@@ -131,7 +130,6 @@ export const Dialog = () => `<div style="width: 100%; display: flex; justify-con
 </div>
 `;
 
-Dialog.storyName = 'Dialog';
 Dialog.parameters = {
     docs: {
         iframeHeight: 330,
@@ -165,7 +163,6 @@ export const Spot = () => `<div style="width: 100%; display: flex; justify-conte
 </div>
 `;
 
-Spot.storyName = 'Spot';
 Spot.parameters = {
     docs: {
         iframeHeight: 330,

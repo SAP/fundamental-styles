@@ -15,7 +15,7 @@ Do not use the text area if
     }
 };
 
-export const primary = () => `
+export const Primary = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-1">Text area(cozy):</label>
     <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
@@ -27,28 +27,28 @@ export const primary = () => `
 </div>
 `;
 
-primary.storyName = 'Content Density - cozy and compact';
-primary.parameters = {
+Primary.storyName = 'Content Density - cozy and compact';
+Primary.parameters = {
     docs: {
         iframeHeight: 250
     }
 };
 
-export const counter = () => `<div class="fd-form-item">
+export const Counter = () => `<div class="fd-form-item">
     <label class="fd-form-label" for="textarea-2">Compact text area:</label>
     <textarea class="fd-textarea fd-textarea--compact" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
     <div class="fd-textarea-counter">150 characters left</div>
 </div>
 `;
 
-counter.parameters = {
+Counter.parameters = {
     docs: {
         iframeHeight: 150,
         storyDescription: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
     }
 };
 
-export const disabledAndReadOnly = () => `
+export const DisabledAndReadOnly = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-7">Text area:</label>
     <textarea class="fd-textarea" id="textarea-7" disabled>Disabled textarea</textarea>
@@ -59,14 +59,14 @@ export const disabledAndReadOnly = () => `
 </div>
 `;
 
-disabledAndReadOnly.parameters = {
+DisabledAndReadOnly.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
     }
 };
 
-export const states = () => `
+export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-3">Success text area:</label>
     <div class="fd-popover fd-popover--input-message-group">
@@ -117,8 +117,8 @@ export const states = () => `
 </div>
 `;
 
-states.storyName = 'Responsiveness';
-states.parameters = {
+States.storyName = 'Responsiveness';
+States.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'As with any other input component, you can validate the fields and show the result as a value state of the component. Possible value states are error, warning, success, information, or neutral (none).'

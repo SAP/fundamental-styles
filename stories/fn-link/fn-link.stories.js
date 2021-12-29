@@ -40,11 +40,11 @@ const localStyles = `
 </style>
 `;
 
-export const primary = () => `${localStyles}
+export const Primary = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>Emphasized </b></div>
-    <div><b>Default</b></div>   
+    <div><b>Default</b></div>
 </div>
 
 <div class="docs-fn-container">
@@ -79,9 +79,9 @@ export const primary = () => `${localStyles}
 
 `;
 
-primary.storyName = 'Links';
+Primary.storyName = 'Links';
 
-primary.parameters = {
+Primary.parameters = {
     docs: {
         storyDescription: 'Link states'
     }

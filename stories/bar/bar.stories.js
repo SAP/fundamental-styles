@@ -9,7 +9,7 @@ export default {
 - Default (desktop)
 - Cozy (tablet and mobile)
 
-## Usage 
+## Usage
 ### Header
 **Use the header bar if:**
 

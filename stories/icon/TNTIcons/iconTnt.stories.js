@@ -19,7 +19,7 @@ Note: If an icon needs to be selected or have any interaction states, it is reco
     }
 };
 
-export const sizes = () => `
+export const Sizes = () => `
 
     <span class="sap-icon-TNT sap-icon-TNT--exceptions"></span>
     <br />
@@ -28,7 +28,7 @@ export const sizes = () => `
     <span class="sap-icon-TNT sap-icon-TNT--exceptions" style="font-size:5rem"></span>
 `;
 
-sizes.parameters = {
+Sizes.parameters = {
     docs: {
         iframeHeight: 250,
         storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
@@ -51,7 +51,7 @@ sizes.parameters = {
  * | Positive        | ` sap-icon-TNT--color-positive`       |
  */
 
-export const colors = () => `
+export const Colors = () => `
  <span class="sap-icon-TNT sap-icon-TNT--exceptions" style="font-size:5rem"></span>
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-default" style="font-size:5rem"></span>
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-contrast sap-icon-TNT--background-contrast" style="font-size:5rem"></span>
@@ -64,7 +64,7 @@ export const colors = () => `
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-positive" style="font-size:5rem"></span>
  `;
 
-export const tntIcons = () => {
+export const TntIcons = () => {
     const div = document.createElement('div');
     div.className = 'fddocs-container';
     div.innerHTML = dataTNT.tntIcons.map((icon) => {
@@ -78,7 +78,7 @@ export const tntIcons = () => {
     return div.outerHTML;
 };
 
-tntIcons.parameters = {
+TntIcons.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'For icons of <b>SAP-icons-TNT</b> font-family add the `sap-icon-TNT--{icon-name}` modifier class identifying the icon style to the `sap-icon-TNT` class. For example, for an <i>exceptions</i> icon, add `sap-icon-TNT sap-icon-TNT--exceptions` with the desired font size value.'

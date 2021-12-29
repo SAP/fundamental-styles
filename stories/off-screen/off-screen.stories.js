@@ -9,12 +9,12 @@ export default {
     }
 };
 
-export const primary = () => `<div class="fd-off-screen" aria-live="polite">
+export const Primary = () => `<div class="fd-off-screen" aria-live="polite">
     This will be read, whenever this element changes.
 </div>
 <div class="fd-text">Text with aria-live is kept far left of the screen. so it will not be visible, but it will be read by screen reader.</div>
 `;
-primary.parameters = {
+Primary.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `For aria-live to read any change in element, we need to place element but it should not be visible to user.

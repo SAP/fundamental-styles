@@ -3,7 +3,7 @@ export default {
     components: ['numeric-content', 'icon']
 };
 
-export const large = () => `
+export const Large = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content">
                 <div class="fd-numeric-content__kpi-container">
@@ -33,10 +33,10 @@ export const large = () => `
 </div>
 `;
 
-large.parameters = { docs: { disable: true } };
+Large.parameters = { docs: { disable: true } };
 
 
-export const medium = () => `
+export const Medium = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content fd-numeric-content--m">
                 <div class="fd-numeric-content__kpi-container">
@@ -64,10 +64,10 @@ export const medium = () => `
 </div>
 `;
 
-medium.parameters = { docs: { disable: true } };
+Medium.parameters = { docs: { disable: true } };
 
 
-export const small = () => `
+export const Small = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content fd-numeric-content--s">
                 <div class="fd-numeric-content__kpi-container">
@@ -91,10 +91,10 @@ export const small = () => `
 </div>
 `;
 
-small.parameters = { docs: { disable: true } };
+Small.parameters = { docs: { disable: true } };
 
 
-export const launchIconLarge = () => `
+export const LaunchIconLarge = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content">
                 <div class="fd-numeric-content__launch-icon-container">
@@ -124,10 +124,10 @@ export const launchIconLarge = () => `
 </div>
 `;
 
-launchIconLarge.parameters = { docs: { disable: true } };
+LaunchIconLarge.parameters = { docs: { disable: true } };
 
 
-export const launchIconMedium = () => `
+export const LaunchIconMedium = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content fd-numeric-content--m">
                 <div class="fd-numeric-content__launch-icon-container">
@@ -163,10 +163,10 @@ export const launchIconMedium = () => `
 </div>
 `;
 
-launchIconMedium.parameters = { docs: { disable: true } };
+LaunchIconMedium.parameters = { docs: { disable: true } };
 
 
-export const launchIconSmall = () => `
+export const LaunchIconSmall = () => `
 <div class="tile-content-playground">
         <div class="fd-numeric-content fd-numeric-content--s">
                 <div class="fd-numeric-content__launch-icon-container">
@@ -202,4 +202,4 @@ export const launchIconSmall = () => `
 </div>
 `;
 
-launchIconSmall.parameters = { docs: { disable: true } };
+LaunchIconSmall.parameters = { docs: { disable: true } };

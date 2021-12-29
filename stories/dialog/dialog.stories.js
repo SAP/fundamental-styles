@@ -17,7 +17,7 @@ The dialog component is a container that appears in response to an action made b
 - You just want to confirm a successful action.
 - You do not want to interrupt the user.
 - You want to enable users to create an object with more than 8 fields. Use an **Object Page** instead.
-        
+
 
 ## Structure
 
@@ -46,7 +46,7 @@ Note: Dialog's header, subheader and footer are elements from the **Bar** compon
     }
 };
 
-export const defaultDialog = () => `
+export const DefaultDialog = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <span class="fd-dialog__resize-handle"></span>
@@ -96,8 +96,8 @@ export const defaultDialog = () => `
 </section>
 `;
 
-defaultDialog.storyName = 'Default';
-defaultDialog.parameters = {
+DefaultDialog.storyName = 'Default';
+DefaultDialog.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the bottom-right corner of the footer, see resizable dialog below for more information.'
@@ -105,7 +105,7 @@ defaultDialog.parameters = {
 };
 
 
-export const sizes = () => `
+export const Sizes = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -157,7 +157,7 @@ export const sizes = () => `
                 </div>
             </div>
         </footer>
-    </div> 
+    </div>
 </section>
 <br />
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
@@ -215,7 +215,7 @@ export const sizes = () => `
 </section>
 `;
 
-sizes.parameters = {
+Sizes.parameters = {
     docs: {
         iframeHeight: 800,
         storyDescription: `
@@ -473,7 +473,7 @@ Loading.parameters = {
     }
 };
 
-export const horizontalFormInDialog = () => `
+export const HorizontalFormInDialog = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -550,7 +550,7 @@ export const horizontalFormInDialog = () => `
                                             <i class="sap-icon--slim-arrow-down"></i>
                                         </span>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -571,8 +571,8 @@ export const horizontalFormInDialog = () => `
 </section>
 `;
 
-horizontalFormInDialog.storyName = 'Horizontal Form';
-horizontalFormInDialog.parameters = {
+HorizontalFormInDialog.storyName = 'Horizontal Form';
+HorizontalFormInDialog.parameters = {
     docs: {
         description: {
             story: ''
@@ -581,7 +581,7 @@ horizontalFormInDialog.parameters = {
 };
 
 
-export const verticalFormInDialog = () => `
+export const VerticalFormInDialog = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -658,7 +658,7 @@ export const verticalFormInDialog = () => `
                                             <i class="sap-icon--slim-arrow-down"></i>
                                         </span>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -679,8 +679,8 @@ export const verticalFormInDialog = () => `
 </section>
 `;
 
-verticalFormInDialog.storyName = 'Vertical Form';
-verticalFormInDialog.parameters = {
+VerticalFormInDialog.storyName = 'Vertical Form';
+VerticalFormInDialog.parameters = {
     docs: {
         description: {
             story: ''

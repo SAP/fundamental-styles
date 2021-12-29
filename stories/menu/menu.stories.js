@@ -12,7 +12,7 @@ Commonly used as the contents when composing "dropdowns", "contextual menus", et
 };
 
 
-export const desktopAndTablet = () => `
+export const DesktopAndTablet = () => `
 <label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
 
 <nav aria-label="navigation menu" class="fd-menu">
@@ -69,15 +69,15 @@ export const desktopAndTablet = () => `
 </nav>
 `;
 
-desktopAndTablet.storyName = 'Desktop and Tablet Modes';
-desktopAndTablet.parameters = {
+DesktopAndTablet.storyName = 'Desktop and Tablet Modes';
+DesktopAndTablet.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this. Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
     }
 };
 
-export const mobileCozyMode = () => `<div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const MobileCozyMode = () => `<div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <section
         aria-labelledby="exampleSubMenuHeader"
         class="fd-dialog__content fd-dialog__content--mobile"
@@ -211,15 +211,14 @@ export const mobileCozyMode = () => `<div style="width: 50%; display: inline-blo
 </div>
 `;
 
-mobileCozyMode.storyName = 'Mobile Cozy Mode';
-mobileCozyMode.parameters = {
+MobileCozyMode.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: 'The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
     }
 };
 
-export const seperatedItems = () => `<nav class="fd-menu">
+export const SeperatedItems = () => `<nav class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
@@ -252,15 +251,15 @@ export const seperatedItems = () => `<nav class="fd-menu">
 </nav>
 `;
 
-seperatedItems.storyName = 'List with separated items';
-seperatedItems.parameters = {
+SeperatedItems.storyName = 'List with separated items';
+SeperatedItems.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: 'To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.'
     }
 };
 
-export const differentStates = () => `<div style="width: 50%; display: inline-block">
+export const DifferentStates = () => `<div style="width: 50%; display: inline-block">
     <nav aria-label="navbar" class="fd-menu">
         <ul class="fd-menu__list" role="menu">
             <li class="fd-menu__item" role="presentation">
@@ -335,8 +334,8 @@ export const differentStates = () => `<div style="width: 50%; display: inline-bl
 </div>
 `;
 
-differentStates.storyName = 'List different states';
-differentStates.parameters = {
+DifferentStates.storyName = 'List different states';
+DifferentStates.parameters = {
     docs: {
         iframeHeight: 300,
         storyDescription: `
@@ -352,7 +351,7 @@ To remove default box shadow from menu containers use \`fd-menu__list--no-shadow
     }
 };
 
-export const menuIcon = () => `<nav class="fd-menu">
+export const MenuIcon = () => `<nav class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
                 <a class="fd-menu__link" href="#" role="menuitem">
@@ -387,8 +386,8 @@ export const menuIcon = () => `<nav class="fd-menu">
 </nav>
 `;
 
-menuIcon.storyName = 'List with Icon';
-menuIcon.parameters = {
+MenuIcon.storyName = 'List with Icon';
+MenuIcon.parameters = {
     docs: {
         iframeHeight: 220,
         storyDescription: `
@@ -400,7 +399,7 @@ According to Fiori3 design shortcuts should be on desktop devices.`
     }
 };
 
-export const withSubmenu = () => `<nav class="fd-menu">
+export const WithSubmenu = () => `<nav class="fd-menu">
     <ul class="fd-menu__list" role="menu">
         <li class="fd-menu__item" role="presentation">
             <a class="fd-menu__link" href="#" role="menuitem">
@@ -457,7 +456,7 @@ export const withSubmenu = () => `<nav class="fd-menu">
 </nav>
 <div style="min-height: 75px"></div>
 `;
-withSubmenu.parameters = {
+WithSubmenu.parameters = {
     docs: {
         iframeHeight: 400,
         storyDescription: `

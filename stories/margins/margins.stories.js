@@ -1,8 +1,8 @@
 export default {
     title: 'Layouts/Margins',
     parameters: {
-        description: `The CSS margin properties are used to create space around elements, outside of any defined borders. 
-        With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element. 
+        description: `The CSS margin properties are used to create space around elements, outside of any defined borders.
+        With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element.
         We now provide a number of predefined margin clases which add predefined margin values.`,
         tags: ['f3', 'theme'],
         components: ['margins', 'panel']
@@ -32,7 +32,7 @@ AllRoundMargin.parameters = {
     docs: {
         storyDescription: `All-round margin appears on all sides of the container they are applied to. Use \`fd-margin\`
         class with any of the following modifiers:
-        
+
 | Element | Modifier class | Margin applied |
 | ----------------: | :------------ | :------------ |
 | Tiny | \`fd-margin--tiny\` | 0.5rem |
@@ -69,7 +69,7 @@ SingleSidedMarginTop.parameters = {
 - top - displayed on top of the element
 - end - displayed on the right side and in right-to-left mode on the left side of the element
 - bottom - displayed on the bottom of the element
-- begin - displayed on the left side and in right-to-left mode on the right side of the element. 
+- begin - displayed on the left side and in right-to-left mode on the right side of the element.
 
 Use \`fd-margin-top\` or \`fd-margin-end\` or \`fd-margin-bottom\` or \`fd-margin-begin\`
 class with any of the size modifiers as mentioned above.

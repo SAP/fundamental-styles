@@ -13,7 +13,7 @@ export default {
 
 ##Usage
 **Use the busy indicator if:**
-        
+
 The ongoing operation only covers part of a screen that has multiple controls, and:
 
 - You need to display additional information, or
@@ -57,7 +57,7 @@ Standard.parameters = {
     }
 };
 
-export const contrastMode = () => `<div style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px">
+export const ContrastMode = () => `<div style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px">
 <div class="fd-busy-indicator--l contrast" aria-hidden="false" aria-label="Loading">
     <div class="fd-busy-indicator--circle-0"></div>
     <div class="fd-busy-indicator--circle-1"></div>
@@ -66,7 +66,7 @@ export const contrastMode = () => `<div style="display:flex;justify-content:cent
 </div>
 `;
 
-contrastMode.parameters = {
+ContrastMode.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
@@ -74,7 +74,7 @@ contrastMode.parameters = {
     }
 };
 
-export const extendedBusyIndicator = () => `<div class="fd-busy-indicator-extended">
+export const ExtendedBusyIndicator = () => `<div class="fd-busy-indicator-extended">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
@@ -83,7 +83,7 @@ export const extendedBusyIndicator = () => `<div class="fd-busy-indicator-extend
     <div class="fd-busy-indicator-extended__label">loading data...</div>
 </div>`;
 
-extendedBusyIndicator.parameters = {
+ExtendedBusyIndicator.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:
@@ -91,7 +91,7 @@ extendedBusyIndicator.parameters = {
     }
 };
 
-export const extendedBusyIndicatorInsideMessageToast = () => `<div class="fd-message-toast fd-busy-indicator-extended fd-busy-indicator-extended--message-toast">
+export const ExtendedBusyIndicatorInsideMessageToast = () => `<div class="fd-message-toast fd-busy-indicator-extended fd-busy-indicator-extended--message-toast">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
         <div class="fd-busy-indicator--circle-0"></div>
         <div class="fd-busy-indicator--circle-1"></div>
@@ -100,7 +100,7 @@ export const extendedBusyIndicatorInsideMessageToast = () => `<div class="fd-mes
     <div class="fd-busy-indicator-extended__label">loading data...</div>
 </div>`;
 
-extendedBusyIndicatorInsideMessageToast.parameters = {
+ExtendedBusyIndicatorInsideMessageToast.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription:

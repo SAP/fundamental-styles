@@ -9,7 +9,7 @@ export default {
     }
 };
 
-export const checkboxGroups = () => `
+export const CheckboxGroups = () => `
     <fieldset class="fd-fieldset">
         <legend class="fd-fieldset__legend">Checkboxes</legend>
         <div class="fd-form-group">
@@ -101,13 +101,13 @@ export const checkboxGroups = () => `
     </fieldset>
 `;
 
-checkboxGroups.parameters = {
+CheckboxGroups.parameters = {
     docs: {
         iframeHeight: 450
     }
 };
 
-export const radioButtonGroups = () => `<fieldset class="fd-fieldset" id="radio1">
+export const RadioButtonGroups = () => `<fieldset class="fd-fieldset" id="radio1">
         <legend class="fd-fieldset__legend">Radio Buttons Cozy Mode</legend>
         <div class="fd-form__group">
             <div class="fd-form-item">
@@ -132,7 +132,7 @@ export const radioButtonGroups = () => `<fieldset class="fd-fieldset" id="radio1
     </fieldset>
 `;
 
-radioButtonGroups.parameters = {
+RadioButtonGroups.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'Radio button groups should always be grouped using fieldset for accessibility reasons.'

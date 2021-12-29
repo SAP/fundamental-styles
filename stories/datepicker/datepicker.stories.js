@@ -14,7 +14,7 @@ This component mostly relies on the CSS of other components and has very little 
     }
 };
 
-export const defaultAndCompactSizes = () => `<div style="display:flex;justify-content:space-around;height:400px">
+export const DefaultAndCompactSizes = () => `<div style="display:flex;justify-content:space-around;height:400px">
   <div class="fd-docs-date-picker">
     <div class="fd-popover">
       <div class="fd-popover__control">
@@ -48,7 +48,7 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
           <div class="fd-calendar__header">
             <div class="fd-calendar__navigation">
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+                <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true">
                     <i class="sap-icon--slim-arrow-left"></i>
                 </button>
               </div>
@@ -59,7 +59,7 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
                 <button class="fd-button fd-button--transparent" aria-expanded="false">2018</button>
               </div>
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent" aria-label="Next"> 
+                <button class="fd-button fd-button--transparent" aria-label="Next">
                     <i class="sap-icon--slim-arrow-right"></i>
                 </button>
               </div>
@@ -250,7 +250,7 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
           <div class="fd-calendar__header">
             <div class="fd-calendar__navigation">
               <div class="fd-calendar__action">
-                <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Previous" aria-disabled="true"> 
+                <button class="fd-button fd-button--transparent fd-button--compact" aria-label="Previous" aria-disabled="true">
                     <i class="sap-icon--slim-arrow-left"></i>
                 </button>
               </div>
@@ -422,13 +422,13 @@ export const defaultAndCompactSizes = () => `<div style="display:flex;justify-co
 </div>
 `;
 
-defaultAndCompactSizes.parameters = {
+DefaultAndCompactSizes.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const todaySelectionButton = () => `<div class="fd-docs-date-picker" style="height:450px">
+export const TodaySelectionButton = () => `<div class="fd-docs-date-picker" style="height:450px">
   <div class="fd-popover">
     <div class="fd-popover__control">
     <label class="fd-form-label" for="todaySelectionDateInput">en-US DatePicker with today selection</label>
@@ -449,7 +449,7 @@ export const todaySelectionButton = () => `<div class="fd-docs-date-picker" styl
           aria-controls="amksodaidasdjs"
           aria-expanded="true"
           aria-haspopup="true"
-          aria-label="Choose Date"> 
+          aria-label="Choose Date">
             <i class="sap-icon--appointment-2"></i>
           </button>
         </span>
@@ -460,7 +460,7 @@ export const todaySelectionButton = () => `<div class="fd-docs-date-picker" styl
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true">
                 <i class="sap-icon--slim-arrow-left"></i>
               </button>
             </div>
@@ -471,7 +471,7 @@ export const todaySelectionButton = () => `<div class="fd-docs-date-picker" styl
               <button class="fd-button fd-button--transparent" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-label="Next"> 
+              <button class="fd-button fd-button--transparent" aria-label="Next">
                 <i class="sap-icon--slim-arrow-right"></i>
               </button>
             </div>
@@ -644,7 +644,7 @@ export const todaySelectionButton = () => `<div class="fd-docs-date-picker" styl
 </div>
 `;
 
-todaySelectionButton.parameters = {
+TodaySelectionButton.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
@@ -654,7 +654,7 @@ This date value then appears in the DatePicker's input field. If using a compact
     }
 };
 
-export const todayNavigationButton = () => `<div class="fd-docs-date-picker" style="height:500px">
+export const TodayNavigationButton = () => `<div class="fd-docs-date-picker" style="height:500px">
   <div class="fd-popover">
     <div class="fd-popover__control">
       <label class="fd-form-label" for="todayNavigationDateInput">en-US DatePicker with today navigation</label>
@@ -674,7 +674,7 @@ export const todayNavigationButton = () => `<div class="fd-docs-date-picker" sty
           aria-controls="Itcgq830"
           aria-expanded="true"
           aria-haspopup="true"
-          aria-label="Choose Date"> 
+          aria-label="Choose Date">
             <i class="sap-icon--appointment-2"></i>
           </button>
         </span>
@@ -685,7 +685,7 @@ export const todayNavigationButton = () => `<div class="fd-docs-date-picker" sty
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true"> 
+              <button class="fd-button fd-button--transparent" aria-label="Previous" aria-disabled="true">
                 <i class="sap-icon--slim-arrow-left"></i>
               </button>
             </div>
@@ -696,7 +696,7 @@ export const todayNavigationButton = () => `<div class="fd-docs-date-picker" sty
               <button class="fd-button fd-button--transparent" aria-expanded="false">2018</button>
             </div>
             <div class="fd-calendar__action">
-              <button class="fd-button fd-button--transparent" aria-label="Next"> 
+              <button class="fd-button fd-button--transparent" aria-label="Next">
                 <i class="sap-icon--slim-arrow-right"></i>
               </button>
             </div>
@@ -869,7 +869,7 @@ export const todayNavigationButton = () => `<div class="fd-docs-date-picker" sty
 <small>example considers today as 9/6/2018</small>
 `;
 
-todayNavigationButton.parameters = {
+TodayNavigationButton.parameters = {
     docs: {
         iframeHeight: 450,
         storyDescription: `
@@ -882,14 +882,14 @@ If using a compact datepicker add the \`fd-button--compact\` class to this butto
     }
 };
 
-export const mobileLandscape = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
+export const MobileLandscape = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
   <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
     <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
       <div class="fd-calendar fd-calendar--mobile-landscape">
         <div class="fd-calendar__header">
           <div class="fd-calendar__navigation fd-calendar__navigation--main">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-              <button type="button" class="fd-button fd-button--transparent" aria-label="Previous"> 
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
                 <i class="sap-icon--slim-arrow-left"></i>
               </button>
             </div>
@@ -900,7 +900,7 @@ export const mobileLandscape = () => `<div class="fd-dialog-docs-static fd-calen
               <button type="button" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-              <button type="button" class="fd-button fd-button--transparent" aria-label="Next"> 
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
                 <i class="sap-icon--slim-arrow-right"></i>
               </button>
             </div>
@@ -1087,15 +1087,15 @@ export const mobileLandscape = () => `<div class="fd-dialog-docs-static fd-calen
 </div>
 `;
 
-mobileLandscape.storyName = 'Mobile landscape mode with today navigation';
-mobileLandscape.parameters = {
+MobileLandscape.storyName = 'Mobile landscape mode with today navigation';
+MobileLandscape.parameters = {
     docs: {
         iframeHeight: 400
     }
 };
 
 
-export const mobilePortrait = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
+export const MobilePortrait = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
   <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
     <div class="fd-dialog__header fd-bar fd-bar--header fd-bar--cosy">
       <div class="fd-bar__left">
@@ -1124,7 +1124,7 @@ export const mobilePortrait = () => `<div class="fd-dialog-docs-static fd-calend
           </div>
           <div class="fd-calendar__navigation">
             <div class="fd-calendar__action fd-calendar__action--arrow-left">
-              <button type="button" class="fd-button fd-button--transparent" aria-label="Previous"> 
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Previous">
                 <i class="sap-icon--slim-arrow-left"></i>
               </button>
             </div>
@@ -1135,7 +1135,7 @@ export const mobilePortrait = () => `<div class="fd-dialog-docs-static fd-calend
               <button type="button" class="fd-button fd-button--transparent">2018</button>
             </div>
             <div class="fd-calendar__action fd-calendar__action--arrow-right">
-              <button type="button" class="fd-button fd-button--transparent" aria-label="Next"> 
+              <button type="button" class="fd-button fd-button--transparent" aria-label="Next">
                 <i class="sap-icon--slim-arrow-right"></i>
               </button>
             </div>
@@ -1320,8 +1320,8 @@ export const mobilePortrait = () => `<div class="fd-dialog-docs-static fd-calend
 </div>
 `;
 
-mobilePortrait.storyName = 'Mobile portrait mode with today navigation';
-mobilePortrait.parameters = {
+MobilePortrait.storyName = 'Mobile portrait mode with today navigation';
+MobilePortrait.parameters = {
     docs: {
         iframeHeight: 500
     }

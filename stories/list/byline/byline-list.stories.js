@@ -32,7 +32,7 @@ Modifier/Class | Description
     }
 };
 
-export const standard = () => `<h4>Standard size</h4>
+export const Standard = () => `<h4>Standard size</h4>
 <ul class="fd-list fd-list--byline" role="list">
 <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -117,9 +117,9 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </ul>
 `;
 
-standard.storyName = 'Default';
+Standard.storyName = 'Default';
 
-standard.parameters = {
+Standard.parameters = {
     docs: {
         iframeHeight: 785,
         storyDescription: `The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
@@ -127,7 +127,7 @@ standard.parameters = {
     }
 };
 
-export const attachment = () => `<h4>Standard size</h4>
+export const Attachment = () => `<h4>Standard size</h4>
 <ul class="fd-list fd-list--byline" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--attachment-photo"></i></span>
@@ -155,9 +155,7 @@ export const attachment = () => `<h4>Standard size</h4>
 </ul>
 `;
 
-attachment.storyName = 'Attachment';
-
-attachment.parameters = {
+Attachment.parameters = {
     docs: {
         iframeHeight: 785,
         storyDescription: `The Attachment List shares the same specification as the Standard List with Byline. The only difference is that if two text items are set within the Byline row, the text aligned to the right is always standard text (i.e. not semantic text)
@@ -165,26 +163,26 @@ attachment.parameters = {
     }
 };
 
-export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--navigation" role="list">
+export const Navigation = () => `<ul class="fd-list fd-list--byline fd-list--navigation" role="list">
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-  <a tabindex="0" class="fd-list__link" href="#"> 
+  <a tabindex="0" class="fd-list__link" href="#">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
     <div class="fd-list__content">
       <div class="fd-list__title">Title</div>
       <div class="fd-list__byline">Byline (description)</div>
     </div>
-  </a> 
+  </a>
 </li>
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
-  <a tabindex="0" class="fd-list__link" href="#"> 
+  <a tabindex="0" class="fd-list__link" href="#">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
     <div class="fd-list__content">
       <div class="fd-list__title">List item with no byline</div>
     </div>
-  </a> 
+  </a>
 </li>
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-  <a tabindex="0" class="fd-list__link" href="#"> 
+  <a tabindex="0" class="fd-list__link" href="#">
       <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
   style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
       <div class="fd-list__content">
@@ -194,20 +192,20 @@ export const navigation = () => `<ul class="fd-list fd-list--byline fd-list--nav
               <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
           </div>
       </div>
-  </a> 
+  </a>
 </li>
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-  <a tabindex="0" class="fd-list__link" href="#"> 
+  <a tabindex="0" class="fd-list__link" href="#">
     <div class="fd-list__content">
       <div class="fd-list__title">Text-only list item</div>
       <div class="fd-list__byline">Byline (description)</div>
     </div>
-  </a> 
+  </a>
 </li>
 </ul>
 `;
 
-navigation.parameters = {
+Navigation.parameters = {
     docs: {
         iframeHeight: 355,
         storyDescription: `
@@ -216,7 +214,7 @@ Byline list items can contain navigation links. To add navigation, add the \`fd-
     }
 };
 
-export const buttons = () => `
+export const Buttons = () => `
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -233,8 +231,7 @@ export const buttons = () => `
 </ul>
 `;
 
-buttons.storyName = 'Buttons';
-buttons.parameters = {
+Buttons.parameters = {
     docs: {
         iframeHeight: 165,
         storyDescription: `
@@ -242,7 +239,7 @@ buttons.parameters = {
     }
 };
 
-export const interractive = () => `
+export const Interractive = () => `
 <ul class="fd-list fd-list--byline" role="list">
     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -261,31 +258,31 @@ export const interractive = () => `
 </ul>
 `;
 
-interractive.parameters = {
+Interractive.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The \`fd-list__item--interractive\` will force list item to handle hover and active states. 
+        storyDescription: `The \`fd-list__item--interractive\` will force list item to handle hover and active states.
             Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.`
     }
 };
 
-export const navigationIndicator = () => `<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+export const NavigationIndicator = () => `<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-  <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#"> 
+  <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
     <div class="fd-list__content">
       <div class="fd-list__title">Title</div>
       <div class="fd-list__byline">Byline (description)</div>
     </div>
-  </a> 
+  </a>
 </li>
 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
-  <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#"> 
+  <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
     <div class="fd-list__content">
       <div class="fd-list__title">List item with no byline</div>
     </div>
-  </a> 
+  </a>
 </li>
 <li role="listitem" tabindex="-1" class="fd-list__item">
       <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
@@ -301,9 +298,9 @@ export const navigationIndicator = () => `<ul class="fd-list fd-list--byline fd-
 </ul>
 `;
 
-navigationIndicator.storyName = 'Navigation indicators';
+NavigationIndicator.storyName = 'Navigation indicators';
 
-navigationIndicator.parameters = {
+NavigationIndicator.parameters = {
     docs: {
         iframeHeight: 275,
         storyDescription: `
@@ -312,7 +309,7 @@ If only some of the list items are navigable, you should indicate them with an a
     }
 };
 
-export const borderless = () => `<ul class="fd-list fd-list--no-border fd-list--byline" role="list">
+export const Borderless = () => `<ul class="fd-list fd-list--no-border fd-list--byline" role="list">
 <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
     <div class="fd-list__content">
@@ -350,7 +347,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </ul>
 `;
 
-borderless.parameters = {
+Borderless.parameters = {
     docs: {
         iframeHeight: 305,
         storyDescription: `To display a borderless byline list, add the \`fd-list--no-border\` modifier class to the main element.
@@ -358,7 +355,7 @@ borderless.parameters = {
     }
 };
 
-export const selection = () => `<h4 id="O09lk9">Standard size</h4>
+export const Selection = () => `<h4 id="O09lk9">Standard size</h4>
 <ul class="fd-list fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk9">
 <li role="option" tabindex="0" class="fd-list__item is-selected">
     <div class="fd-form-item fd-list__form-item">
@@ -439,7 +436,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </ul>
 `;
 
-selection.parameters = {
+Selection.parameters = {
     docs: {
         iframeHeight: 625,
         storyDescription: `
@@ -447,7 +444,7 @@ Byline list items can display checkboxes that users can select from. To display 
     `
     }
 };
-export const selectionAndNavigation = () => `<h4 id="Ki81L1">Standard Size</h4>
+export const SelectionAndNavigation = () => `<h4 id="Ki81L1">Standard Size</h4>
 <ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox" aria-labelledby="Ki81L1">
 <li role="option" tabindex="0" class="fd-list__item">
   <div class="fd-form-item fd-list__form-item">
@@ -536,9 +533,9 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </ul>
 `;
 
-selectionAndNavigation.storyName = 'Selection with navigation';
+SelectionAndNavigation.storyName = 'Selection with navigation';
 
-selectionAndNavigation.parameters = {
+SelectionAndNavigation.parameters = {
     docs: {
         iframeHeight: 625,
         storyDescription: `To display byline list items with selection and navigation, add these following modifier classes to the main element:
@@ -551,7 +548,7 @@ selectionAndNavigation.parameters = {
     }
 };
 
-export const counter = () => `
+export const Counter = () => `
 <ul class="fd-list fd-list--byline" role="list">
 <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -590,15 +587,15 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </ul>
 `;
 
-counter.storyName = 'Byline List with Counter';
+Counter.storyName = 'Byline List with Counter';
 
-standard.parameters = {
+Standard.parameters = {
     docs: {
         iframeHeight: 785
     }
 };
 
-export const longText = () => `
+export const LongText = () => `
 <ul class="fd-list fd-list--byline" role="list">
 <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -634,16 +631,16 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </ul>
 `;
 
-longText.storyName = 'List with long Title and Byline';
+LongText.storyName = 'List with long Title and Byline';
 
-longText.parameters = {
+LongText.parameters = {
     docs: {
         iframeHeight: 625,
         storyDescription: `By default, To allow the title and byline text to wrap, add these following modifier classes to the the title and byline respectively:
 
 - \`fd-list__title--wrap\`
 - \`fd-list__byline--wrap\`
-    
+
 When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "MORE" link should be displayed to reveal the entire contents of the text.`
     }
 };

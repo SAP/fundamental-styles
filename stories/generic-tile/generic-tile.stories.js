@@ -61,7 +61,7 @@ Informative | \`fd-numeric-content__scale—-informative\`
     }
 };
 
-export const genericTileSizes = () => `<div class="fddocs-container">
+export const GenericTileSizes = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header"></div>
         <div class="fd-tile__content">11 x 11rem</div>
@@ -74,16 +74,16 @@ export const genericTileSizes = () => `<div class="fddocs-container">
     </div>
 </div>`;
 
-genericTileSizes.storyName = 'Sizes';
+GenericTileSizes.storyName = 'Sizes';
 
-genericTileSizes.parameters = {
+GenericTileSizes.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-Generic tiles can be displayed in two tile dimensions: the default 1x1, and 2x1 (with the addition of a \`fd-tile--double\` modifier class). 
+Generic tiles can be displayed in two tile dimensions: the default 1x1, and 2x1 (with the addition of a \`fd-tile--double\` modifier class).
 
 **The typical generic tile sizes are:**
-        
+
 - Large tile (1 x 1) - 11 x 11rem
 - Large tile (2 x 1) - 22.5 x 11rem
 - Small tile (1 x 1) - 9.25 x 9.25rem
@@ -91,7 +91,7 @@ Generic tiles can be displayed in two tile dimensions: the default 1x1, and 2x1 
         ` }
 };
 
-export const genericTileLayout = () => `<div class="fddocs-container">
+export const GenericTileLayout = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fddocs-tile-example-background-color">
             <div class="fd-tile__title">.fd-tile__title</div>
@@ -127,13 +127,13 @@ export const genericTileLayout = () => `<div class="fddocs-container">
 </div>
 `;
 
-genericTileLayout.storyName = 'Layout';
+GenericTileLayout.storyName = 'Layout';
 
-genericTileLayout.parameters = {
+GenericTileLayout.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
-The layout of the generic tile is fixed with designated areas for the header, content area and footer. 
+The layout of the generic tile is fixed with designated areas for the header, content area and footer.
 
 **The common elements displayed in generic tiles are:**
 
@@ -149,7 +149,7 @@ Footer (optional) | \`fd-tile__footer\` | The footer can contain a refresh icon 
         ` }
 };
 
-export const genericTileContentColumns = () => `<div class="fddocs-container">
+export const GenericTileContentColumns = () => `<div class="fddocs-container">
     <div role="button" aria-label="button" tabindex="0" class="fd-tile">
         <div class="fd-tile__header fd-tile__header--2-col">
             <div class="fd-tile__section fddocs-tile-example-background-color"></div>
@@ -209,9 +209,9 @@ export const genericTileContentColumns = () => `<div class="fddocs-container">
 </div>
 `;
 
-genericTileContentColumns.storyName = 'Columns';
+GenericTileContentColumns.storyName = 'Columns';
 
-genericTileContentColumns.parameters = {
+GenericTileContentColumns.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
@@ -231,7 +231,7 @@ The header, content and footer of generic tile can be split into two columns wit
         ` }
 };
 
-export const launchTile = () => `<h4>Launch tile with numeric content and launch icon</h4>
+export const LaunchTile = () => `<h4>Launch tile with numeric content and launch icon</h4>
 <br>
 <div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch">
@@ -376,9 +376,9 @@ export const launchTile = () => `<h4>Launch tile with numeric content and launch
     </div>
 </div>`;
 
-launchTile.storyName = 'Launch tile';
+LaunchTile.storyName = 'Launch tile';
 
-launchTile.parameters = {
+LaunchTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `As the name suggests, the launch tile is used for when users need to launch an application from the launchpad. It can display several elements, such as a header, subtitle, refresh button, footer, KPIs and images. The header can contain a maximum of 3 lines; all 3 lines can be used for the title or one of the lines can be used for a subtitle. If a fourth line title or an optional subtitle line is required, the \`fd-tile_header-content\` can be added to represent a header, which will merge the content containers into one tile. To display a launch tile, add the \`fd-tile--launch\` modifier class to the main element.
@@ -393,7 +393,7 @@ L | 4 characters can be displayed within numeric content.
         ` }
 };
 
-export const kpiTile = () => `<h4>KPI tile with numeric content (size L)</h4>
+export const KpiTile = () => `<h4>KPI tile with numeric content (size L)</h4>
 <div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--kpi">
         <div class="fd-tile__header">
@@ -538,19 +538,19 @@ export const kpiTile = () => `<h4>KPI tile with numeric content (size L)</h4>
 </div>
 `;
 
-kpiTile.storyName = 'KPI tile';
+KpiTile.storyName = 'KPI tile';
 
-kpiTile.parameters = {
+KpiTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
 A KPI tile displays key performance indicators that are used to measure and monitor a company’s performance at a strategic and operational level. The tile displays the KPI values as large, easy-to-recognize digits. In addition, you can show deviation arrows, semantic values, and scaling factors. The number of digits is limited by the size of the tiles. To display a KPI tile, add the \`fd-tile--kpi\` modifier class to the main element.
 
-**Note:** The KPI tile supports a limited number of characters, which varies depending on the tile size (see launch tile above for more details). 
+**Note:** The KPI tile supports a limited number of characters, which varies depending on the tile size (see launch tile above for more details).
         ` }
 };
 
-export const feedTile = () => `<div class="fddocs-container">
+export const FeedTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--double fd-tile--feed">
         <div class="fd-tile__header">
             <div class="fd-tile__title">Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
@@ -597,16 +597,16 @@ export const feedTile = () => `<div class="fddocs-container">
     </div>
 </div>`;
 
-feedTile.storyName = 'Feed tile';
+FeedTile.storyName = 'Feed tile';
 
-feedTile.parameters = {
+FeedTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `The feed tile displays a news feed with a news headline, the source, and a time stamp. It shows new notifications in 10-second intervals, and tile content is updated every five minutes. If there are no new notifications, the most recent notifications are displayed. The feed tile’s headline uses the full width of the container and does not contain an icon. To display a feed tile, add the \`fd-tile--feed\` modifier class to the main element.
         ` }
 };
 
-export const badgeTile = () => `<div class="fddocs-container">
+export const BadgeTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch">
         <div class="fd-badge">Badge</div>
         <div class="fd-tile__header">
@@ -681,16 +681,16 @@ export const badgeTile = () => `<div class="fddocs-container">
     </div>
 </div>`;
 
-badgeTile.storyName = 'Badge tile';
+BadgeTile.storyName = 'Badge tile';
 
-badgeTile.parameters = {
+BadgeTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `The badge tile displays very short and important information at the top right corner of the tile. It's recommended to add a badge to a tile when it has been newly added. Badges are not displayed when in action/edit mode.
         ` }
 };
 
-export const slideTile = () => `<div class="fddocs-container">
+export const SlideTile = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--slide">
         <div class="fd-tile__background-img" style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"></div>
         <button aria-label="toggle play button" class="fd-tile__toggle"></button>
@@ -777,9 +777,9 @@ export const slideTile = () => `<div class="fddocs-container">
     </div>
 </div>`;
 
-slideTile.storyName = 'Slide tile';
+SlideTile.storyName = 'Slide tile';
 
-slideTile.parameters = {
+SlideTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `
@@ -788,7 +788,7 @@ To display a slide tile, add the \`fd-tile--slide\` modifier class to the main e
         ` }
 };
 
-export const linkTile = () => `<h4>Link tile: Floating behaviour in cozy mode</h4>
+export const LinkTile = () => `<h4>Link tile: Floating behaviour in cozy mode</h4>
 <div class="fd-tile-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--line">
         <div class="fd-tile__header">
@@ -1229,25 +1229,25 @@ export const linkTile = () => `<h4>Link tile: Floating behaviour in cozy mode</h
     </div>
 </div>`;
 
-linkTile.storyName = 'Link tile';
+LinkTile.storyName = 'Link tile';
 
-linkTile.parameters = {
+LinkTile.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `The link tile displays links in a separate area below the tiles area and comprise a title and optional subtitle. They can be in list format or they can float above the content. Link tiles can also be viewed in action mode, displaying a close button at the top and an actions button on the bottom. To display a link tile, add the \`fd-tile--line\` modifier class to the main element.
 
 ####Sizes
 Link tiles are displayed in two modes depending on the screen width.
-        
+
 &nbsp;&nbsp;&nbsp; Size &nbsp; | Screen width | Modifier class | Behaviour
 :----- | :----------------- | :------------------ | :----------
 M-XL | >= 450px | Default | Floating: If there is insufficient space, the content wraps into two rows. (This behaviour is not provided by Fundamental Styles and requires JavaScript).
 S | < 450px | \`fd-tile-container--list\` | List: The tile grows vertically and the text wraps into two rows, placing the title in the first row and the subtitle in the second.
 
 The link tile can be displayed in cozy (default) and compact mode. To display link tile in compact mode, add the \`fd-tile--compact\` to the main element.
-        
+
 **Note:** The compact mode should only be applied to link tiles and should not be applied to the other types.
-        
+
 ####List states
 
 - Regular
@@ -1257,12 +1257,12 @@ The link tile can be displayed in cozy (default) and compact mode. To display li
 
 
 ####Action mode
-When in action mode, default (floating) link tiles display the actions and close button immediately after the text. However, when they are in list format, link tiles display the actions and close button along the right side of the container. To display link tile in action mode, add \`fd-tile__action-container\` after the header element. Gradient masking is also supported in edit mode.   
+When in action mode, default (floating) link tiles display the actions and close button immediately after the text. However, when they are in list format, link tiles display the actions and close button along the right side of the container. To display link tile in action mode, add \`fd-tile__action-container\` after the header element. Gradient masking is also supported in edit mode.
 
         ` }
 };
 
-export const tileInActionMode = () => `<div class="fddocs-container">
+export const TileInActionMode = () => `<div class="fddocs-container">
     <div role="button" tabindex="0" class="fd-tile fd-tile--launch fd-tile--action">
         <div class="fd-tile__overlay"></div>
         <button aria-label="close button" class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close">
@@ -1357,9 +1357,9 @@ export const tileInActionMode = () => `<div class="fddocs-container">
     </div>
 </div>`;
 
-tileInActionMode.storyName = 'Action mode';
+TileInActionMode.storyName = 'Action mode';
 
-tileInActionMode.parameters = {
+TileInActionMode.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `

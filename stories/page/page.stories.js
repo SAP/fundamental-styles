@@ -11,7 +11,7 @@ export default {
  ### CONTAINER HIERARCHY
 
  The elements used to construct a page are:
- 
+
  - fd-page: The page-level wrapper
  - Header: Uses a Bar component with \`fd-bar--page\` and \`fd-bar--header\` modifier classes
  - Header with SubHeader: Uses a Bar component with \`fd-bar--page\` and \`fd-bar--header-with-subheader\` modifier classes
@@ -34,12 +34,12 @@ export default {
     }
 };
 
-export const basicPage = () => `<main class="fd-page">
+export const BasicPage = () => `<main class="fd-page">
     <header>
         <div class="fd-bar fd-bar--page fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="Go back"> 
+                    <button class="fd-button fd-button--transparent" aria-label="Go back">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
                 </div>
@@ -49,7 +49,7 @@ export const basicPage = () => `<main class="fd-page">
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="See more"> 
+                    <button class="fd-button fd-button--transparent" aria-label="See more">
                         <i class="sap-icon--grid"></i>
                     </button>
                 </div>
@@ -75,18 +75,18 @@ export const basicPage = () => `<main class="fd-page">
     </footer>
 </main>
 `;
-basicPage.parameters = {
+BasicPage.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const transparentPage = () => `<main class="fd-page fd-page--transparent">
+export const TransparentPage = () => `<main class="fd-page fd-page--transparent">
     <header>
         <div class="fd-bar fd-bar--page-m_l fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="Go back"> 
+                    <button class="fd-button fd-button--transparent" aria-label="Go back">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
                 </div>
@@ -96,7 +96,7 @@ export const transparentPage = () => `<main class="fd-page fd-page--transparent"
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="See more"> 
+                    <button class="fd-button fd-button--transparent" aria-label="See more">
                         <i class="sap-icon--overflow"></i>
                     </button>
                 </div>
@@ -134,7 +134,7 @@ export const transparentPage = () => `<main class="fd-page fd-page--transparent"
     </footer>
 </main>
 `;
-transparentPage.parameters = {
+TransparentPage.parameters = {
     docs: {
         iframeHeight: 550,
         storyDescription: 'Page with Transparent Background Design, Header with SubHeader, and Responsive Behaviour - M_L'
@@ -142,12 +142,12 @@ transparentPage.parameters = {
 };
 
 
-export const responsivePage = () => `<main class="fd-page fd-page--home fd-page--list">
+export const ResponsivePage = () => `<main class="fd-page fd-page--home fd-page--list">
     <header>
         <div class="fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="Go back"> 
+                    <button class="fd-button fd-button--transparent" aria-label="Go back">
                         <i class="sap-icon--navigation-left-arrow"></i>
                     </button>
                 </div>
@@ -157,7 +157,7 @@ export const responsivePage = () => `<main class="fd-page fd-page--home fd-page-
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="See more"> 
+                    <button class="fd-button fd-button--transparent" aria-label="See more">
                         <i class="sap-icon--overflow"></i>
                     </button>
                 </div>
@@ -183,7 +183,7 @@ export const responsivePage = () => `<main class="fd-page fd-page--home fd-page-
     </footer>
 </main>
 `;
-responsivePage.parameters = {
+ResponsivePage.parameters = {
     docs: {
         iframeHeight: 550,
         storyDescription: 'Home page with List Background Design, Floating Footer and Responsive Behaviour - XL'

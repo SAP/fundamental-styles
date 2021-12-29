@@ -13,7 +13,7 @@ Note: The timing and duration of the message toast is defined by the application
 - To display a short success message.
 - To avoid interrupting the user while they are performing an action.
 - To confirm a successful action.
-        
+
 
 **Do not use the message toast if:**
 
@@ -26,7 +26,7 @@ Note: The timing and duration of the message toast is defined by the application
     }
 };
 
-export const defaultToast = () => `
+export const DefaultToast = () => `
 <div class="fd-message-toast">Product added</div>
 <br><br>
 <div class="fd-message-toast">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -34,9 +34,9 @@ export const defaultToast = () => `
 
 
 
-defaultToast.storyName = 'Default';
+DefaultToast.storyName = 'Default';
 
-defaultToast.parameters = {
+DefaultToast.parameters = {
     docs: {
         iframeHeight: 210,
         storyDescription: `The default message toast displays a simple popup with non-interactive text. The text wraps once it reaches the max-width of 15rem.

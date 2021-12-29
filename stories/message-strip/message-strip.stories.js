@@ -29,7 +29,7 @@ export default {
 
 const messageStripHeight = 64;
 
-export const defaultStrip = () => `<div class="fd-message-strip fd-message-strip--dismissible" role="alert"  id="ZvPBg609" >
+export const DefaultStrip = () => `<div class="fd-message-strip fd-message-strip--dismissible" role="alert"  id="ZvPBg609" >
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -39,9 +39,9 @@ export const defaultStrip = () => `<div class="fd-message-strip fd-message-strip
 </div>
 `;
 
-defaultStrip.storyName = 'Default';
+DefaultStrip.storyName = 'Default';
 
-defaultStrip.parameters = {
+DefaultStrip.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: `
@@ -50,7 +50,7 @@ The default message strip can be used for general messages that don’t fit into
     }
 };
 
-export const information = () => `<div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="alert"  id="JwPcf464" >
+export const Information = () => `<div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="alert"  id="JwPcf464" >
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -60,16 +60,14 @@ export const information = () => `<div class="fd-message-strip fd-message-strip-
 </div>
 `;
 
-information.storyName = 'Information';
-
-information.parameters = {
+Information.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: 'The information message strip simply relays useful information to the users. To display an information message strip, add the `fd-message-strip--information` modifier class to the main element.'
     }
 };
 
-export const success = () => `<div class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible" role="alert" id="ulr5z216">
+export const Success = () => `<div class="fd-message-strip fd-message-strip--success fd-message-strip--dismissible" role="alert" id="ulr5z216">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -79,16 +77,14 @@ export const success = () => `<div class="fd-message-strip fd-message-strip--suc
 </div>
 `;
 
-success.storyName = 'Success';
-
-success.parameters = {
+Success.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: 'The success message strip communicates to the user that an action they’ve completed was successful. To display a success message strip, add the `fd-message-strip--success` modifier class to the main element.'
     }
 };
 
-export const warning = () => `<div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert" id="fwYq4606">
+export const Warning = () => `<div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert" id="fwYq4606">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -98,9 +94,7 @@ export const warning = () => `<div class="fd-message-strip fd-message-strip--war
 </div>
 `;
 
-warning.storyName = 'Warning';
-
-warning.parameters = {
+Warning.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: `
@@ -109,7 +103,7 @@ The warning message strip warns the user of potential issues; however, the user 
     }
 };
 
-export const error = () => `<div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="alert" id="SsoiW591">
+export const Error = () => `<div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="alert" id="SsoiW591">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
   </p>
@@ -119,9 +113,7 @@ export const error = () => `<div class="fd-message-strip fd-message-strip--error
 </div>
 `;
 
-error.storyName = 'Error';
-
-error.parameters = {
+Error.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
         storyDescription: `
@@ -130,7 +122,7 @@ The error message strip is triggered after the user enters data incorrectly or w
     }
 };
 
-export const noIcons = () => `<div class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible" 
+export const NoIcons = () => `<div class="fd-message-strip fd-message-strip--information fd-message-strip--no-icon fd-message-strip--dismissible"
      role="alert" id="SsoiW592">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
@@ -142,7 +134,7 @@ export const noIcons = () => `<div class="fd-message-strip fd-message-strip--inf
 
 <br />
 
-<div class="fd-message-strip fd-message-strip--success fd-message-strip--no-icon fd-message-strip--dismissible" 
+<div class="fd-message-strip fd-message-strip--success fd-message-strip--no-icon fd-message-strip--dismissible"
      role="alert" id="SsoiW593">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
@@ -154,7 +146,7 @@ export const noIcons = () => `<div class="fd-message-strip fd-message-strip--inf
 
 <br />
 
-<div class="fd-message-strip fd-message-strip--warning fd-message-strip--no-icon fd-message-strip--dismissible" 
+<div class="fd-message-strip fd-message-strip--warning fd-message-strip--no-icon fd-message-strip--dismissible"
      role="alert" id="SsoiW594">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
@@ -166,7 +158,7 @@ export const noIcons = () => `<div class="fd-message-strip fd-message-strip--inf
 
 <br />
 
-<div class="fd-message-strip fd-message-strip--error fd-message-strip--no-icon fd-message-strip--dismissible" 
+<div class="fd-message-strip fd-message-strip--error fd-message-strip--no-icon fd-message-strip--dismissible"
      role="alert" id="SsoiW595">
   <p class="fd-message-strip__text">
     Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
@@ -177,9 +169,9 @@ export const noIcons = () => `<div class="fd-message-strip fd-message-strip--inf
 </div>
 `;
 
-noIcons.storyName = 'No icon';
+NoIcons.storyName = 'No icon';
 
-noIcons.parameters = {
+NoIcons.parameters = {
     docs: {
         iframeHeight: messageStripHeight * 4,
         storyDescription: 'To display message strip without an icon, add the `fd-message-strip--no-icon` modifier class to the main element.'

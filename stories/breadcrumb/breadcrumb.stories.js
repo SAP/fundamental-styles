@@ -27,7 +27,7 @@ The breadcrumb component is a type of navigation that indicates the position of 
     }
 };
 
-export const standard = () => `<nav aria-label="products breadcrumbs">
+export const Standard = () => `<nav aria-label="products breadcrumbs">
     <ul class="fd-breadcrumb">
         <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Products</a></li>
         <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Suppliers</a></li>
@@ -40,13 +40,13 @@ export const standard = () => `<nav aria-label="products breadcrumbs">
 </nav>
 `;
 
-standard.parameters = {
+Standard.parameters = {
     docs: {
         storyDescription: 'The standard breadcrumb component displays several pages in text format separated by dividers, indicating a navigation path. Each page can be specifically selected to navigate to its corresponding page. It can be displayed by using the `fd-breadcrumb` class.'
     }
 };
 
-export const overflow = () => `
+export const Overflow = () => `
 <nav aria-label="overflowing product breadcrumbs">
     <ul class="fd-breadcrumb">
         <li class="fd-breadcrumb__item">
@@ -56,7 +56,7 @@ export const overflow = () => `
                         aria-controls="breadcrumb1"
                         aria-expanded="true"
                         aria-haspopup="true"
-                        aria-label="Show collapsed breadcrumbs" 
+                        aria-label="Show collapsed breadcrumbs"
                         class="fd-breadcrumb__link"
                         onclick="onPopoverClick('breadcrumb1');"
                         onkeypress="isSpaceOrEnter(event, onPopoverClick('breadcrumb1'));"
@@ -98,7 +98,7 @@ export const overflow = () => `
 <div style="height: 150px"></div>
 `;
 
-overflow.parameters = {
+Overflow.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: 'The overflow breadcrumb component displays a dropdown menu, followed by several pages in the navigation path. <br>Like the standard breadcrumb, each page can be selected to navigate to its corresponding page. This type is responsive and will collapse into a dropdown menu if there is insufficient horizontal space on the screen. <br>To display the overflow breadcrumb, include the `fd-popover` component in the first breadcrumb item within the element.'

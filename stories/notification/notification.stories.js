@@ -7,7 +7,7 @@ Notifications are used to relay information to the user about a situation or tas
 
 ##Usage
 **Use notifications if:**
-    
+
 * You want to make users aware of situations that require attention.
 * You intend to reduce the amount of information and actions to a minimum, but provide enough information to highlight the level of importance.
             `,
@@ -15,7 +15,7 @@ Notifications are used to relay information to the user about a situation or tas
     }
 };
 
-export const primary = () => `<div class="fd-notification">
+export const Primary = () => `<div class="fd-notification">
     <div class="fd-notification__body">
         <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
         <div class="fd-notification__content">
@@ -39,7 +39,7 @@ export const primary = () => `<div class="fd-notification">
     </div>
 </div>
 `;
-primary.parameters = {
+Primary.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
@@ -48,7 +48,7 @@ Primary notifications display a container with an avatar, content area with text
     }
 };
 
-export const noAvatar = () => `<div class="fd-notification">
+export const NoAvatar = () => `<div class="fd-notification">
     <div class="fd-notification__body">
         <div class="fd-notification__content fd-notification__content--no-avatar">
             <div class="fd-notification__header">
@@ -71,7 +71,7 @@ export const noAvatar = () => `<div class="fd-notification">
     </div>
 </div>
 `;
-noAvatar.parameters = {
+NoAvatar.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
@@ -80,7 +80,7 @@ Notifications can be displayed without an avatar by adding the \`fd-notification
     }
 };
 
-export const information = () => `<div class="fd-notification">
+export const Information = () => `<div class="fd-notification">
   <div class="fd-message-strip fd-message-strip--information fd-message-strip--dismissible" role="alert">
       <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
@@ -110,7 +110,7 @@ export const information = () => `<div class="fd-notification">
     </div>
 </div>
 `;
-information.parameters = {
+Information.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
@@ -119,7 +119,7 @@ Notifications can also include alerts, and in this case it is informative. You c
     }
 };
 
-export const warning = () => `<div class="fd-notification">
+export const Warning = () => `<div class="fd-notification">
     <div class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible" role="alert">
       <p class="fd-message-strip__text">
         Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
@@ -150,7 +150,7 @@ export const warning = () => `<div class="fd-notification">
     </div>
 </div>
 `;
-warning.parameters = {
+Warning.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
@@ -159,7 +159,7 @@ Notifications can display warning alerts by adding the \`fd-message-strip fd-mes
     }
 };
 
-export const error = () => `<div class="fd-notification">
+export const Error = () => `<div class="fd-notification">
     <div class="fd-message-strip fd-message-strip--error fd-message-strip--dismissible" role="alert">
         <p class="fd-message-strip__text">
           Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet.
@@ -190,7 +190,7 @@ export const error = () => `<div class="fd-notification">
     </div>
 </div>
 `;
-error.parameters = {
+Error.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `
@@ -199,10 +199,10 @@ Notifications can display error alerts by adding the \`fd-message-strip fd-messa
     }
 };
 
-export const notificationGroup = () => `<div class="fd-notification fd-notification--group">
+export const NotificationGroup = () => `<div class="fd-notification fd-notification--group">
     <ul class="fd-tabs fd-tabs--l" role="tablist">
         <li role="tab" class="fd-tabs__item" aria-selected="true">
-            <a 
+            <a
                 class="fd-tabs__link"
                 aria-controls="notifV550"
                 href="#notifV550">
@@ -212,9 +212,9 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
             </a>
         </li>
         <li role="tab" class="fd-tabs__item">
-            <a 
-                aria-controls="notifV551" 
-                class="fd-tabs__link" 
+            <a
+                aria-controls="notifV551"
+                class="fd-tabs__link"
                 href="#notifV551">
                 <span class="fd-tabs__tag">
                     By Type
@@ -224,7 +224,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
         <li role="tab" class="fd-tabs__item">
             <a
                 aria-controls="notifV552"
-                class="fd-tabs__link" 
+                class="fd-tabs__link"
                 href="#notifV552">
                 <span class="fd-tabs__tag">
                     By Priority
@@ -330,7 +330,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
                 <p class="fd-notification__footer">
                     <span class="fd-notification__footer-content">SAP Analytics Cloud</span>
                     <span class="fd-notification__separator"></span>
-                    <span class="fd-notification__footer-content">7 minutes ago m dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span> 
+                    <span class="fd-notification__footer-content">7 minutes ago m dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
                 </p>
             </div>
             <div class="fd-notification__actions">
@@ -429,7 +429,7 @@ export const notificationGroup = () => `<div class="fd-notification fd-notificat
     </div>
 </div>
 `;
-notificationGroup.parameters = {
+NotificationGroup.parameters = {
     docs: {
         iframeHeight: 200,
         storyDescription: `You can display a group of notifications in a list format, and the user can sort them from the header. To display a notification group, add the \`fd-notification fd-notification\\__group\` class.
@@ -437,7 +437,7 @@ notificationGroup.parameters = {
     }
 };
 
-export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
+export const Mobile = () => `<div style="heigt: 200px; max-width: 20rem">
 
 <div class="fd-notification fd-notification--mobile">
     <div class="fd-notification__body">
@@ -489,25 +489,25 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
     <div class="fd-notification fd-notification--mobile fd-notification--group">
         <ul class="fd-tabs fd-tabs--l" role="tablist">
             <li role="tab" aria-selected="true" class="fd-tabs__item">
-                <a 
-                    class="fd-tabs__link" 
-                    aria-controls="notifP300" 
+                <a
+                    class="fd-tabs__link"
+                    aria-controls="notifP300"
                     href="#notifP300">
                     <span class="fd-tabs__tag">By Date</span>
                 </a>
             </li>
             <li role="tab" class="fd-tabs__item">
-                <a 
-                    class="fd-tabs__link" 
-                    aria-controls="notifP301" 
+                <a
+                    class="fd-tabs__link"
+                    aria-controls="notifP301"
                     href="#notifP301">
                     <span class="fd-tabs__tag">By Type</span>
                 </a>
             </li>
             <li role="tab" class="fd-tabs__item">
-                <a 
+                <a
                     class="fd-tabs__link"
-                    aria-controls="notifP302" 
+                    aria-controls="notifP302"
                     href="#notifP302">
                     <span class="fd-tabs__tag">By Priority</span>
                 </a>
@@ -813,7 +813,8 @@ export const mobile = () => `<div style="heigt: 200px; max-width: 20rem">
     </div>
 </div>
 `;
-error.mobile = {
+
+Error.mobile = {
     docs: {
         iframeHeight: 200
     }

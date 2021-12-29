@@ -42,7 +42,7 @@ const localStyles = `
 </style>
 `;
 
-export const defaultInput = () => `${localStyles}
+export const DefaultInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-input">
@@ -100,14 +100,13 @@ export const defaultInput = () => `${localStyles}
 </div>
 `;
 
-defaultInput.storyName = 'Default Input';
-defaultInput.parameters = {
+DefaultInput.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const infoInput = () => `${localStyles}
+export const InfoInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-input fn-input--info">
@@ -172,15 +171,14 @@ export const infoInput = () => `${localStyles}
 </div>
 `;
 
-infoInput.storyName = 'Info Input';
-infoInput.parameters = {
+InfoInput.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Add the `.fn-input--info` modifier class to `.fn-input` for Info Input.'
     }
 };
 
-export const criticalInput = () => `${localStyles}
+export const CriticalInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-input fn-input--critical">
@@ -245,15 +243,14 @@ export const criticalInput = () => `${localStyles}
 </div>
 `;
 
-criticalInput.storyName = 'Critical Input';
-criticalInput.parameters = {
+CriticalInput.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Add the `.fn-input--critical` modifier class to `.fn-input` for Critical Input.'
     }
 };
 
-export const negativeInput = () => `${localStyles}
+export const NegativeInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-input fn-input--negative">
@@ -318,8 +315,7 @@ export const negativeInput = () => `${localStyles}
 </div>
 `;
 
-negativeInput.storyName = 'Negative Input';
-negativeInput.parameters = {
+NegativeInput.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Add the `.fn-input--negative` modifier class to `.fn-input` for Negative Input.'
@@ -327,7 +323,7 @@ negativeInput.parameters = {
 };
 
 
-export const positiveInput = () => `${localStyles}
+export const PositiveInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-input fn-input--positive">
@@ -392,8 +388,7 @@ export const positiveInput = () => `${localStyles}
 </div>
 `;
 
-positiveInput.storyName = 'Positive Input';
-positiveInput.parameters = {
+PositiveInput.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Add the `.fn-input--positive` modifier class to `.fn-input` for Positive Input.'

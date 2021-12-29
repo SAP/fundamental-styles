@@ -3,8 +3,8 @@ export default {
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
         description: `
-The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, and user settings. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned earlier, it is completely responsive by default with margins and padding already built in. 
-        
+The shellbar offers consistent, responsive navigation across all products and applications. It also includes support for branding, product navigation, search, notifications, and user settings. This is a composite component comprised of mandatory and optional elements. Shellbar should always be placed inside the shell layout container. As mentioned earlier, it is completely responsive by default with margins and padding already built in.
+
 **Shellbar has two primary container groups:**
 
 -	Product: for branding and product elements.
@@ -14,7 +14,7 @@ The shellbar offers consistent, responsive navigation across all products and ap
 
 ##Elements
 The shellbar supports layout functionality and has some built-in elements, but relies on standalone components for most of its content.
-        
+
 Elements | Class | Description
 :------------ | :------- | :------------
 Logo (mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
@@ -32,7 +32,7 @@ Notifications (optional) | \`fd-button__badge\` | To display notifications, add 
     }
 };
 
-export const primary = () => `<div style="height:150px">
+export const Primary = () => `<div style="height:150px">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
@@ -68,7 +68,7 @@ export const primary = () => `<div style="height:150px">
     </div>
 </div>
 `;
-primary.parameters = {
+Primary.parameters = {
     docs: {
         storyDescription: `
 The primary shellbar displays a logo, title, and an avatar where the user settings are found. If the avatar does not contain a thumbnail, then the initials of the user will be displayed.
@@ -76,7 +76,7 @@ The primary shellbar displays a logo, title, and an avatar where the user settin
     }
 };
 
-export const productMenuAndSearch = () => `<div style="height:200px">
+export const ProductMenuAndSearch = () => `<div style="height:200px">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo">
@@ -119,7 +119,7 @@ export const productMenuAndSearch = () => `<div style="height:200px">
         <div class="fd-shellbar__subtitle">Subtitle</div>
         </div>
         <div class="fd-shellbar__group fd-shellbar__group--actions">
-            <div class="fd-shellbar__action fd-shellbar__action--desktop">        
+            <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" onclick="onPopoverClick('F4GcX348b')" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
@@ -172,9 +172,9 @@ export const productMenuAndSearch = () => `<div style="height:200px">
 </div>
 `;
 
-productMenuAndSearch.storyName = 'Product menu and search';
+ProductMenuAndSearch.storyName = 'Product menu and search';
 
-productMenuAndSearch.parameters = {
+ProductMenuAndSearch.parameters = {
     docs: {
         storyDescription: `
 Shellbar can be displayed with a product menu and search box. The product menu is used for navigating to other applications within the product. To display a product menu, add the \`fd-popover\` class after the \`fd-shellbar__logo\` class.
@@ -182,14 +182,14 @@ Shellbar can be displayed with a product menu and search box. The product menu i
     }
 };
 
-export const linksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
+export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
     <div class="fd-shellbar fd-shellbar--xl">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
             <span class="fd-shellbar__title">Corporate Portal</span>
         </div>
         <div class="fd-shellbar__group fd-shellbar__group--actions">
-            <div class="fd-shellbar__action fd-shellbar__action--desktop">        
+            <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
@@ -285,9 +285,9 @@ export const linksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
 </div>
 `;
 
-linksWithCollapsibleMenuXlSize.storyName = 'Extra large';
+LinksWithCollapsibleMenuXlSize.storyName = 'Extra large';
 
-linksWithCollapsibleMenuXlSize.parameters = {
+LinksWithCollapsibleMenuXlSize.parameters = {
     docs: {
         storyDescription: `
 The shellbar can be optimized for extra-large screens. To achieve this style, add the \`fd-shellbar--xl\` modifier class to the main element, which increases the container padding to 3rem.
@@ -296,14 +296,14 @@ The shellbar can be optimized for extra-large screens. To achieve this style, ad
 };
 
 
-export const linksWithCollapsibleMenuMSize = () => `<div style="height:300px; max-width: 1024px;">
+export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; max-width: 1024px;">
     <div class="fd-shellbar fd-shellbar--m">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
             <span class="fd-shellbar__title">Corporate Portal</span>
         </div>
         <div class="fd-shellbar__group fd-shellbar__group--actions">
-            <div class="fd-shellbar__action fd-shellbar__action--desktop">        
+            <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" aria-controls="UIBFJ688" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
@@ -399,9 +399,9 @@ export const linksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
 </div>
 `;
 
-linksWithCollapsibleMenuMSize.storyName = 'Medium-large';
+LinksWithCollapsibleMenuMSize.storyName = 'Medium-large';
 
-linksWithCollapsibleMenuMSize.parameters = {
+LinksWithCollapsibleMenuMSize.parameters = {
     docs: {
         storyDescription: `
 The shellbar can be optimized for medium-large screens. To achieve this style, add the \`fd-shellbar--m\` or \`fd-shellbar--l\`modifier class to the main element, which increases the container padding to 2rem.
@@ -409,14 +409,14 @@ The shellbar can be optimized for medium-large screens. To achieve this style, a
     }
 };
 
-export const linksWithCollapsibleMenuSSize = () => `<div style="height:300px; max-width: 600px;">
+export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; max-width: 600px;">
     <div class="fd-shellbar fd-shellbar--s">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP"></span>
             <span class="fd-shellbar__title">Corporate Portal</span>
         </div>
         <div class="fd-shellbar__group fd-shellbar__group--actions">
-            <div class="fd-shellbar__action fd-shellbar__action--desktop">        
+            <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" aria-controls="UIBFJ688" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
@@ -514,9 +514,9 @@ export const linksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
 </div>
 `;
 
-linksWithCollapsibleMenuSSize.storyName = 'Small';
+LinksWithCollapsibleMenuSSize.storyName = 'Small';
 
-linksWithCollapsibleMenuSSize.parameters = {
+LinksWithCollapsibleMenuSSize.parameters = {
     docs: {
         storyDescription: `
 The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar--s\` modifier class to the main element. All actions except the user menu should be collapsed, displaying an overflow button.
@@ -524,7 +524,7 @@ The shellbar can be optimized for mobile and small tablet screens. To achieve th
     }
 };
 
-export const productSwitch = () => `<div style="height:600px">
+export const ProductSwitch = () => `<div style="height:600px">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
         <span class="fd-shellbar__logo">
@@ -700,9 +700,9 @@ export const productSwitch = () => `<div style="height:600px">
 </div>
 `;
 
-productSwitch.storyName = 'Product switch';
+ProductSwitch.storyName = 'Product switch';
 
-productSwitch.parameters = {
+ProductSwitch.parameters = {
     docs: {
         storyDescription: `
 Shellbar can be displayed with a product switch component, indicating to the user that they can navigate to other products. See [Product Switch](product-switch.html) for more details.

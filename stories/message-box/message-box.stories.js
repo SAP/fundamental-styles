@@ -13,7 +13,7 @@ Note: Include two action buttons in the message box when the user's decision is 
 - Success
 - Information
 - Confirmation
-        
+
 
 ##Usage
 
@@ -25,15 +25,15 @@ Note: Include two action buttons in the message box when the user's decision is 
 - You need to interrupt the user for some other reason.
 - You need the user to acknowledge the message.
 - You need the user to make a decision.
-     
+
 
 **Do not use the message box if:**
 
 - You want to display a short success message. Instead, use **Message Toast**.
 - You can show the message directly in a form field.
-        
 
-##Structure 
+
+##Structure
 **Message box follows the structure of a dialog, consisting of following elements:**
 
 - \`.fd-message-box\`: styles the backdrop and displays the message box container with \`position: fixed\`. The message box becomes visible by adding the \`.fd-message-box--active\` modifier class to the container.
@@ -51,7 +51,7 @@ Note: Include two action buttons in the message box when the user's decision is 
 
 const messageBoxHeight = 200;
 
-export const structure = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
+export const Structure = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--active">
     <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
@@ -61,7 +61,7 @@ export const structure = () => `<div class="fd-message-box-docs-static fd-messag
             </div>
         </header>
         <div class="fd-message-box__body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -81,9 +81,9 @@ export const structure = () => `<div class="fd-message-box-docs-static fd-messag
 </div>
 `;
 
-structure.storyName = 'Default';
+Structure.storyName = 'Default';
 
-structure.parameters = {
+Structure.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
         storyDescription: `
@@ -92,7 +92,7 @@ The default message box displays a small dialog with a title, message text and a
     }
 };
 
-export const types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active">
+export const Types = () => `<div class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active">
     <section class="fd-message-box__content">
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
@@ -189,7 +189,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
             </div>
         </header>
         <div class="fd-message-box__body">
-            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. 
+            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -216,7 +216,7 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
             </div>
         </header>
         <div class="fd-message-box__body">
-            Vivamus sagittis diam in vehicula lobortis. 
+            Vivamus sagittis diam in vehicula lobortis.
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -230,9 +230,9 @@ export const types = () => `<div class="fd-message-box-docs-static fd-message-bo
     </section>
 </div>
 `;
-types.storyName = 'Semantic types';
+Types.storyName = 'Semantic types';
 
-types.parameters = {
+Types.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 6.5,
         storyDescription: `
@@ -245,12 +245,12 @@ Error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 Success | \`fd-message-box--success\` | Success messages give feedback to the user that an action has been executed. The user needs to acknowledge the message.
 Warning | \`fd-message-box--warning\` | Warning messages highlight potential issues, but the user can still continue. This includes unintended data loss scenarios.
 Information | \`fd-message-box--information\` | Information messages provide information the user needs to acknowledge, but which does not involve a decision. The message provides information that is useful and relevant, but never critical.
-                
+
         `
     }
 };
 
-export const responsive = () =>
+export const Responsive = () =>
     `
 <div class="fd-message-box-docs-static fd-message-box fd-message-box--information fd-message-box--active">
     <section class="fd-message-box__content fd-message-box__content--s">
@@ -291,7 +291,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-            Error message box for a medium-sized screen in cozy mode (mobile). 
+            Error message box for a medium-sized screen in cozy mode (mobile).
         </div>
         <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -344,7 +344,7 @@ export const responsive = () =>
             </div>
         </header>
         <div class="fd-message-box__body">
-           Warning message box for an extra large screen in compact mode (desktop). 
+           Warning message box for an extra large screen in compact mode (desktop).
         </div>
         <footer class="fd-bar fd-bar--footer fd-message-box__footer">
             <div class="fd-bar__right">
@@ -359,12 +359,11 @@ export const responsive = () =>
 </div>
 `;
 
-responsive.storyName = 'Responsive';
-responsive.parameters = {
+Responsive.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 4,
         storyDescription: `
-The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen width. 
+The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen width.
 
 **To display responsive padding, add the following modifier classes to the content container:**
 

@@ -60,11 +60,11 @@ const localStyles = `
 </style>
 `;
 
-export const primary = () => `${localStyles}
+export const Primary = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>Emphasized </b></div>
-    <div><b>Default</b></div>   
+    <div><b>Default</b></div>
 </div>
 
 <div class="docs-fn-container">
@@ -118,20 +118,20 @@ export const primary = () => `${localStyles}
 </div>
 `;
 
-primary.storyName = 'Primary Buttons';
-primary.parameters = {
+Primary.storyName = 'Primary Buttons';
+Primary.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Primary buttons are two types: default and emphasized. For the default one no modifier class is needed, just add the `.fn-button` class to your html element. For emphasized button add `.fn-button--emphasized` modifier class to the `.fn-button` base class.'
     }
 };
 
-export const secondary = () => `${localStyles}
+export const Secondary = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>Ghost</b></div>
-    <div><b>Transparent</b></div> 
-    <div><b>Neutral</b></div>  
+    <div><b>Transparent</b></div>
+    <div><b>Neutral</b></div>
 </div>
 
 <div class="docs-fn-container">
@@ -200,8 +200,8 @@ export const secondary = () => `${localStyles}
 </div>
 `;
 
-secondary.storyName = 'Secondary Buttons';
-secondary.parameters = {
+Secondary.storyName = 'Secondary Buttons';
+Secondary.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `Secondary buttons are three types: ghost, transparent and neutral.
@@ -215,7 +215,7 @@ secondary.parameters = {
     }
 };
 
-export const semantic = () => `${localStyles}
+export const Semantic = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>Accept</b></div>
@@ -337,8 +337,8 @@ export const semantic = () => `${localStyles}
 </div>
 `;
 
-semantic.storyName = 'Semantic Buttons';
-semantic.parameters = {
+Semantic.storyName = 'Semantic Buttons';
+Semantic.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `For semantic button add the appropriate modifier class to the \`.fn-button\` base class.
@@ -355,12 +355,12 @@ semantic.parameters = {
     }
 };
 
-export const icon = () => `${localStyles}
+export const Icon = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>Icon-Left</b></div>
     <div><b>Icon-Right</b></div>
-    <div><b>Icon-Only</b></div>   
+    <div><b>Icon-Only</b></div>
 </div>
 
 <div class="docs-fn-container">
@@ -439,8 +439,8 @@ export const icon = () => `${localStyles}
 </div>
 `;
 
-icon.storyName = 'Icon Buttons';
-icon.parameters = {
+Icon.storyName = 'Icon Buttons';
+Icon.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: `Depending on where you want the icon to be rendered add the appropriate modifier class to the \`.fn-button\` base class.
@@ -454,11 +454,11 @@ icon.parameters = {
     }
 };
 
-export const toggle = () => `${localStyles}
+export const Toggle = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
     <div><b>Selected </b></div>
-    <div><b>Default</b></div>   
+    <div><b>Default</b></div>
 </div>
 
 <div class="docs-fn-container">
@@ -512,15 +512,15 @@ export const toggle = () => `${localStyles}
 </div>
 `;
 
-toggle.storyName = 'Toggle Buttons';
-toggle.parameters = {
+Toggle.storyName = 'Toggle Buttons';
+Toggle.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: 'Add the `.fn-button--selected` class to the button when it is in toggled (selected) state.'
     }
 };
 
-export const segmented = () => `${localStyles}
+export const Segmented = () => `${localStyles}
 <div class="docs-fn-container">
     <div class="fn-segmented-button" role="group" aria-label="Group label">
         <button class="fn-button fn-button--selected">
@@ -632,18 +632,18 @@ export const segmented = () => `${localStyles}
 </div>
 `;
 
-segmented.storyName = 'Segmented Button';
-segmented.parameters = {
+Segmented.storyName = 'Segmented Button';
+Segmented.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: ''
     }
 };
 
-export const nested = () => `${localStyles}
+export const Nested = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
-    <div><b>Nested Button</b></div> 
+    <div><b>Nested Button</b></div>
 </div>
 
 <div class="docs-fn-container">
@@ -682,8 +682,8 @@ export const nested = () => `${localStyles}
 </div>
 `;
 
-nested.storyName = 'Nested Buttons';
-nested.parameters = {
+Nested.storyName = 'Nested Buttons';
+Nested.parameters = {
     docs: {
         iframeHeight: 500,
         storyDescription: ''
