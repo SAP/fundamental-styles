@@ -319,7 +319,7 @@ exports[`Storyshots Components/Card Analytical card 1`] = `
                 <div
                   class="fd-numeric-content__scale"
                 >
-                                                  
+                  
                                     
                   <i
                     aria-label="decrease"

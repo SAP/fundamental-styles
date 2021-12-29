@@ -837,7 +837,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       href="#"
       tabindex="0"
     >
-       
+      
     
       <span
         class="fd-list__thumbnail"
@@ -872,7 +872,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       
   
     </a>
-     
+    
 
   </li>
   
@@ -889,7 +889,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       href="#"
       tabindex="0"
     >
-       
+      
     
       <span
         class="fd-list__thumbnail"
@@ -917,7 +917,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       
   
     </a>
-     
+    
 
   </li>
   
@@ -934,7 +934,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       href="#"
       tabindex="0"
     >
-       
+      
       
       <span
         aria-label="Godafoss waterfall in northern Iceland"
@@ -981,7 +981,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       
   
     </a>
-     
+    
 
   </li>
   
@@ -998,7 +998,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       href="#"
       tabindex="0"
     >
-       
+      
     
       <div
         class="fd-list__content"
@@ -1023,7 +1023,7 @@ exports[`Storyshots Components/List/Byline Navigation 1`] = `
       
   
     </a>
-     
+    
 
   </li>
   
@@ -1050,7 +1050,7 @@ exports[`Storyshots Components/List/Byline Navigation indicators 1`] = `
       href="#"
       tabindex="0"
     >
-       
+      
     
       <span
         class="fd-list__thumbnail"
@@ -1085,7 +1085,7 @@ exports[`Storyshots Components/List/Byline Navigation indicators 1`] = `
       
   
     </a>
-     
+    
 
   </li>
   
@@ -1102,7 +1102,7 @@ exports[`Storyshots Components/List/Byline Navigation indicators 1`] = `
       href="#"
       tabindex="0"
     >
-       
+      
     
       <span
         class="fd-list__thumbnail"
@@ -1130,7 +1130,7 @@ exports[`Storyshots Components/List/Byline Navigation indicators 1`] = `
       
   
     </a>
-     
+    
 
   </li>
   

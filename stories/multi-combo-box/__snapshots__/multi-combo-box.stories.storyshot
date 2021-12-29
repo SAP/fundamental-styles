@@ -1389,7 +1389,7 @@ exports[`Storyshots Patterns/Multi ComboBox Grouping 1`] = `
             >
               2 more
             </span>
-             
+            
                         
             <input
               aria-label="multi input sample as group item"
@@ -1927,7 +1927,7 @@ exports[`Storyshots Patterns/Multi ComboBox Match Popover Body Size 1`] = `
             >
               2 more
             </span>
-             
+            
                         
             <input
               aria-label="multi input sample popover size body"
@@ -2405,7 +2405,7 @@ exports[`Storyshots Patterns/Multi ComboBox Mobile Mode 1`] = `
                 >
                   4 more
                 </span>
-                 
+                
                                  
                 <input
                   aria-label="multi input mobile mode"
@@ -3306,7 +3306,7 @@ exports[`Storyshots Patterns/Multi ComboBox Semantic 1`] = `
             >
               4 more
             </span>
-             
+            
                      
             <input
               aria-label="multi input semantic"

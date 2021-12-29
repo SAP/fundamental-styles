@@ -16,7 +16,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Hovered tab state 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-hovered"
@@ -100,7 +100,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Hovered tab state 1`] = `
     
       </li>
     </ul>
-     
+    
 
   </div>
   
@@ -124,7 +124,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Separator hovered tab state 1
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -208,7 +208,7 @@ exports[`Storyshots Dev/Drag and Drop Icon Tab Bar Separator hovered tab state 1
     
       </li>
     </ul>
-     
+    
 
   </div>
   

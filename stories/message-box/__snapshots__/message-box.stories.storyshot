@@ -46,7 +46,7 @@ exports[`Storyshots Components/Message Box Default 1`] = `
       class="fd-message-box__body"
     >
       
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         
     </div>
     
@@ -269,7 +269,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-            Error message box for a medium-sized screen in cozy mode (mobile). 
+            Error message box for a medium-sized screen in cozy mode (mobile).
         
       </div>
       
@@ -462,7 +462,7 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
         class="fd-message-box__body"
       >
         
-           Warning message box for an extra large screen in compact mode (desktop). 
+           Warning message box for an extra large screen in compact mode (desktop).
         
       </div>
       
@@ -881,7 +881,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
         class="fd-message-box__body"
       >
         
-            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et. 
+            Vivamus sagittis diam in vehicula lobortis sapien arcu mattis erat vel aliquet sem urna et.
         
       </div>
       
@@ -982,7 +982,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
         class="fd-message-box__body"
       >
         
-            Vivamus sagittis diam in vehicula lobortis. 
+            Vivamus sagittis diam in vehicula lobortis.
         
       </div>
       

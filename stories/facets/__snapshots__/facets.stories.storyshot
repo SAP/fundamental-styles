@@ -1156,7 +1156,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                         
           </div>
           
-                    
+
                         
           <div
             aria-labelledby="ratingFacetTitle3"
@@ -1206,7 +1206,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   for="2-rating-max-value-5-1"
                 />
                 
-                    
+
                                 
                 <input
                   aria-label="2 star"
@@ -1224,7 +1224,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   for="2-rating-max-value-5-2"
                 />
                 
-                    
+
                                 
                 <input
                   aria-label="3 star"
@@ -1241,7 +1241,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   for="2-rating-max-value-5-3"
                 />
                 
-                    
+
                                 
                 <input
                   aria-label="4 star"
@@ -1258,7 +1258,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   for="2-rating-max-value-5-4"
                 />
                 
-                    
+
                                 
                 <input
                   aria-label="5 star"
@@ -1486,9 +1486,9 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
       role="tabpanel"
     >
       
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             
     </div>
@@ -1501,25 +1501,25 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
       role="tabpanel"
     >
       
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             
     </div>
@@ -2104,7 +2104,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                             
             </div>
             
-                            
+
                             
             <div
               aria-labelledby="kvFacetTitle13"
@@ -2337,7 +2337,7 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
           
                     
         </ul>
-          
+        
                 
       </div>
       
@@ -2357,9 +2357,9 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
         role="tabpanel"
       >
         
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 
       </div>
@@ -2372,9 +2372,9 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
         role="tabpanel"
       >
         
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 
       </div>

@@ -721,7 +721,7 @@ exports[`Storyshots Components/Select Blank 1`] = `
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
-                   
+                  
                             
                 </span>
                 
@@ -910,7 +910,7 @@ exports[`Storyshots Components/Select Blank 1`] = `
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
-                   
+                  
                             
                 </span>
                 
@@ -1132,7 +1132,7 @@ exports[`Storyshots Components/Select Compact 1`] = `
             class="fd-list__title"
           >
             
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 
           </span>
@@ -1265,7 +1265,7 @@ exports[`Storyshots Components/Select Cozy 1`] = `
             <i
               class="sap-icon--slim-arrow-down"
             />
-             
+            
                     
           </span>
           
@@ -1528,7 +1528,7 @@ exports[`Storyshots Components/Select Form item 1`] = `
               <i
                 class="sap-icon--slim-arrow-down"
               />
-               
+              
                         
             </span>
             
@@ -3869,8 +3869,8 @@ exports[`Storyshots Components/Select Text wrapping 1`] = `
             class="fd-list__title"
           >
             
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 
           </span>

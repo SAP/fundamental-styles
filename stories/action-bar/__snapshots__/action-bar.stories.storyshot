@@ -421,7 +421,7 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
     <div
       class="fd-action-bar fd-action-bar--s"
     >
-       
+      
         
       <div
         class="fd-action-bar__header"

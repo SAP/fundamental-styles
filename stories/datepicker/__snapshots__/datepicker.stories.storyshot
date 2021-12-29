@@ -115,7 +115,7 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
                   aria-label="Previous"
                   class="fd-button fd-button--transparent"
                 >
-                   
+                  
                     
                   <i
                     class="sap-icon--slim-arrow-left"
@@ -169,7 +169,7 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
                   aria-label="Next"
                   class="fd-button fd-button--transparent"
                 >
-                   
+                  
                     
                   <i
                     class="sap-icon--slim-arrow-right"
@@ -1075,7 +1075,7 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
                   aria-label="Previous"
                   class="fd-button fd-button--transparent fd-button--compact"
                 >
-                   
+                  
                     
                   <i
                     class="sap-icon--slim-arrow-left"
@@ -1967,7 +1967,7 @@ exports[`Storyshots Patterns/Date Picker Mobile landscape mode with today naviga
                 class="fd-button fd-button--transparent"
                 type="button"
               >
-                 
+                
                 
                 <i
                   class="sap-icon--slim-arrow-left"
@@ -2022,7 +2022,7 @@ exports[`Storyshots Patterns/Date Picker Mobile landscape mode with today naviga
                 class="fd-button fd-button--transparent"
                 type="button"
               >
-                 
+                
                 
                 <i
                   class="sap-icon--slim-arrow-right"
@@ -3122,7 +3122,7 @@ exports[`Storyshots Patterns/Date Picker Mobile portrait mode with today navigat
                 class="fd-button fd-button--transparent"
                 type="button"
               >
-                 
+                
                 
                 <i
                   class="sap-icon--slim-arrow-left"
@@ -3177,7 +3177,7 @@ exports[`Storyshots Patterns/Date Picker Mobile portrait mode with today navigat
                 class="fd-button fd-button--transparent"
                 type="button"
               >
-                 
+                
                 
                 <i
                   class="sap-icon--slim-arrow-right"
@@ -4192,7 +4192,7 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
                 toggleElAttrs('smniaof7ahfs', ['aria-expanded']);
             "
             >
-               
+              
             
               <i
                 class="sap-icon--appointment-2"
@@ -4243,7 +4243,7 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
                   aria-label="Previous"
                   class="fd-button fd-button--transparent"
                 >
-                   
+                  
                 
                   <i
                     class="sap-icon--slim-arrow-left"
@@ -4297,7 +4297,7 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
                   aria-label="Next"
                   class="fd-button fd-button--transparent"
                 >
-                   
+                  
                 
                   <i
                     class="sap-icon--slim-arrow-right"
@@ -5184,7 +5184,7 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
               toggleElAttrs('mfapof8aosdusjd', ['aria-expanded']);
           "
           >
-             
+            
             
             <i
               class="sap-icon--appointment-2"
@@ -5235,7 +5235,7 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
                 aria-label="Previous"
                 class="fd-button fd-button--transparent"
               >
-                 
+                
                 
                 <i
                   class="sap-icon--slim-arrow-left"
@@ -5289,7 +5289,7 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
                 aria-label="Next"
                 class="fd-button fd-button--transparent"
               >
-                 
+                
                 
                 <i
                   class="sap-icon--slim-arrow-right"

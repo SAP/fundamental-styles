@@ -34,7 +34,7 @@ exports[`Storyshots Layouts/Section Section Structure 1`] = `
 
 exports[`Storyshots Layouts/Section Testing Section With Headlines 1`] = `
 <section>
-          
+  
 
   <section
     class="fd-section "
@@ -73,7 +73,7 @@ exports[`Storyshots Layouts/Section Testing Section With Headlines 1`] = `
 
   </section>
   
-    
+
 
   <section
     class="fd-section "
@@ -112,7 +112,7 @@ exports[`Storyshots Layouts/Section Testing Section With Headlines 1`] = `
 
   </section>
   
-    
+
 
   <section
     class="fd-section "
@@ -151,7 +151,7 @@ exports[`Storyshots Layouts/Section Testing Section With Headlines 1`] = `
 
   </section>
   
-    
+
 
   <section
     class="fd-section "
@@ -268,7 +268,7 @@ exports[`Storyshots Layouts/Section Testing Simple Section 1`] = `
 
   </section>
   
-    
+
 
   <section
     class="fd-section "
@@ -300,7 +300,7 @@ exports[`Storyshots Layouts/Section Testing Simple Section 1`] = `
 
   </section>
   
-    
+
 
   <section
     class="fd-section "
@@ -339,7 +339,7 @@ exports[`Storyshots Layouts/Section Testing Simple Section 1`] = `
 
   </section>
   
-    
+
 
   <section
     class="fd-section fd-section--full-bleed"
@@ -378,7 +378,7 @@ exports[`Storyshots Layouts/Section Testing Simple Section 1`] = `
 
   </section>
   
-    
+
 
   <section
     class="fd-section "
@@ -509,7 +509,7 @@ exports[`Storyshots Layouts/Section With Layout Grid 1`] = `
       <div
         class="fd-col fd-col--4"
       >
-          
+        
         
         <div
           class="fd-layout-panel"
@@ -538,7 +538,7 @@ exports[`Storyshots Layouts/Section With Layout Grid 1`] = `
       <div
         class="fd-col fd-col--4"
       >
-          
+        
         
         <div
           class="fd-layout-panel"
@@ -567,7 +567,7 @@ exports[`Storyshots Layouts/Section With Layout Grid 1`] = `
       <div
         class="fd-col fd-col--4"
       >
-          
+        
         
         <div
           class="fd-layout-panel"

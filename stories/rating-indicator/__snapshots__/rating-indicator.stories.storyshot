@@ -63,7 +63,7 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
             
       </label>
       
-            
+
             
       <input
         aria-label="2 star"
@@ -94,7 +94,7 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
             
       </label>
       
-            
+
             
       <input
         aria-label="3 star"
@@ -124,7 +124,7 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
             
       </label>
       
-            
+
             
       <input
         aria-label="4 star"
@@ -154,7 +154,7 @@ exports[`Storyshots Components/Rating Indicator Custom icons 1`] = `
             
       </label>
       
-            
+
             
       <input
         aria-label="5 star"
@@ -245,14 +245,14 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-max-value-5-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -270,7 +270,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-5-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -287,7 +287,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-5-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -304,7 +304,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-5-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -337,7 +337,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
     
   </div>
   
-    
+
     
   <div
     class="example-container"
@@ -381,14 +381,14 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-max-value-6-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -406,7 +406,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-6-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -423,7 +423,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-6-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -440,7 +440,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-6-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -457,7 +457,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-6-5"
         />
         
-                
+
                 
         <input
           aria-label="6 star"
@@ -490,7 +490,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
     
   </div>
   
-    
+
     
   <div
     class="example-container"
@@ -534,14 +534,14 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-max-value-7-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -559,7 +559,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-7-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -576,7 +576,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-7-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -593,7 +593,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-7-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -610,7 +610,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-7-5"
         />
         
-                
+
                 
         <input
           aria-label="6 star"
@@ -627,7 +627,7 @@ exports[`Storyshots Components/Rating Indicator Different values 1`] = `
           for="rating-max-value-7-6"
         />
         
-                
+
                 
         <input
           aria-label="7 star"
@@ -710,14 +710,14 @@ exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
         type="radio"
         value="1"
       />
-        
+      
             
       <label
         class="fd-rating-indicator__label"
         for="rating-disabled-1"
       />
       
-            
+
             
       <input
         aria-label="2 star"
@@ -736,7 +736,7 @@ exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
         for="rating-disabled-2"
       />
       
-            
+
             
       <input
         aria-label="3 star"
@@ -754,7 +754,7 @@ exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
         for="rating-disabled-3"
       />
       
-            
+
             
       <input
         aria-label="4 star"
@@ -772,7 +772,7 @@ exports[`Storyshots Components/Rating Indicator Disabled 1`] = `
         for="rating-disabled-4"
       />
       
-            
+
             
       <input
         aria-label="5 star"
@@ -852,14 +852,14 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
         type="radio"
         value="1"
       />
-        
+      
                 
       <label
         class="fd-rating-indicator__label"
         for="rating-display-mode-1"
       />
       
-                
+
                 
       <input
         aria-label="2 star"
@@ -878,7 +878,7 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
         for="rating-display-mode-2"
       />
       
-                
+
                 
       <input
         aria-label="3 star"
@@ -896,7 +896,7 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
         for="rating-display-mode-3"
       />
       
-                
+
                 
       <input
         aria-label="4 star"
@@ -914,7 +914,7 @@ exports[`Storyshots Components/Rating Indicator Display mode 1`] = `
         for="rating-display-mode-4"
       />
       
-                
+
                 
       <input
         aria-label="5 star"
@@ -1000,7 +1000,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           type="radio"
           value="0.5"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
@@ -1024,7 +1024,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-1"
         />
         
-                
+
                 
         <input
           aria-label="1 and half star"
@@ -1041,7 +1041,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-15"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -1058,7 +1058,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-2"
         />
         
-                
+
                 
         <input
           aria-label="2 and half star"
@@ -1076,7 +1076,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-25"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -1093,7 +1093,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-3"
         />
         
-                
+
                 
         <input
           aria-label="3 and half star"
@@ -1110,7 +1110,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-35"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -1127,7 +1127,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-4"
         />
         
-                
+
                 
         <input
           aria-label="4 and half star"
@@ -1144,7 +1144,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           for="rating-half-sizes-45"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -1228,7 +1228,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           type="radio"
           value="0.5"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
@@ -1278,7 +1278,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="1 and half star"
@@ -1308,7 +1308,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -1338,7 +1338,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="2 and half star"
@@ -1369,7 +1369,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -1399,7 +1399,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="3 and half star"
@@ -1429,7 +1429,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -1459,7 +1459,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="4 and half star"
@@ -1489,7 +1489,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -1586,7 +1586,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
           type="radio"
           value="0.5"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
@@ -1636,7 +1636,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="1 and half star"
@@ -1666,7 +1666,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -1696,7 +1696,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="2 and half star"
@@ -1727,7 +1727,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -1757,7 +1757,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="3 and half star"
@@ -1787,7 +1787,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -1817,7 +1817,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="4 and half star"
@@ -1847,7 +1847,7 @@ exports[`Storyshots Components/Rating Indicator Half values 1`] = `
                 
         </label>
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -1942,14 +1942,14 @@ exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
         type="radio"
         value="1"
       />
-        
+      
                 
       <label
         class="fd-rating-indicator__label"
         for="rating-non-interactive-mode-1"
       />
       
-                
+
                 
       <input
         aria-label="2 star"
@@ -1968,7 +1968,7 @@ exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
         for="rating-non-interactive-mode-2"
       />
       
-                
+
                 
       <input
         aria-label="3 star"
@@ -1986,7 +1986,7 @@ exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
         for="rating-non-interactive-mode-3"
       />
       
-                
+
                 
       <input
         aria-label="4 star"
@@ -2004,7 +2004,7 @@ exports[`Storyshots Components/Rating Indicator Non-interactive 1`] = `
         for="rating-non-interactive-mode-4"
       />
       
-                
+
                 
       <input
         aria-label="5 star"
@@ -2090,14 +2090,14 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -2115,7 +2115,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-2"
         />
         
-    
+
                 
         <input
           aria-label="3 star"
@@ -2131,8 +2131,8 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           class="fd-rating-indicator__label"
           for="rating-3"
         />
-                    
-    
+        
+
                 
         <input
           aria-label="4 star"
@@ -2149,7 +2149,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-4"
         />
         
-    
+
                 
         <input
           aria-label="5 star"
@@ -2182,7 +2182,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
     
   </div>
   
-    
+
     
   <div
     class="example-container"
@@ -2233,14 +2233,14 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-xs-1"
         />
         
-    
+
                 
         <input
           aria-label="2 star"
@@ -2258,7 +2258,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-xs-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -2275,7 +2275,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-xs-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -2292,7 +2292,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-xs-4"
         />
         
-    
+
                 
         <input
           aria-label="5 star"
@@ -2377,14 +2377,14 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-s-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -2402,7 +2402,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-s-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -2419,7 +2419,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-s-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -2436,7 +2436,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-s-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -2470,7 +2470,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
     
   </div>
   
-    
+
     
   <div
     class="example-container"
@@ -2521,14 +2521,14 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-l-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -2546,7 +2546,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-l-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -2563,7 +2563,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-l-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -2580,7 +2580,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-l-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -2613,7 +2613,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
     
   </div>
   
-    
+
     
   <div
     class="example-container"
@@ -2664,14 +2664,14 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-cozy-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -2689,7 +2689,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-cozy-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -2706,7 +2706,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-cozy-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -2723,7 +2723,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-cozy-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -2756,7 +2756,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
     
   </div>
   
-    
+
     
   <div
     class="example-container"
@@ -2807,14 +2807,14 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-compact-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -2832,7 +2832,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-compact-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -2849,7 +2849,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-compact-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -2866,7 +2866,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-compact-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
@@ -2899,7 +2899,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
     
   </div>
   
-    
+
     
   <div
     class="example-container"
@@ -2950,14 +2950,14 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           type="radio"
           value="1"
         />
-          
+        
                 
         <label
           class="fd-rating-indicator__label"
           for="rating-condensed-1"
         />
         
-                
+
                 
         <input
           aria-label="2 star"
@@ -2975,7 +2975,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-condensed-2"
         />
         
-                
+
                 
         <input
           aria-label="3 star"
@@ -2992,7 +2992,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-condensed-3"
         />
         
-                
+
                 
         <input
           aria-label="4 star"
@@ -3009,7 +3009,7 @@ exports[`Storyshots Components/Rating Indicator Sizes 1`] = `
           for="rating-condensed-4"
         />
         
-                
+
                 
         <input
           aria-label="5 star"
