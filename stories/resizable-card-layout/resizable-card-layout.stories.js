@@ -342,8 +342,10 @@ ResizeCardLayout.storyName = 'Resizable card layout';
 ResizeCardLayout.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Resizable card layout with multiple cards.
+        description: {
+            story: `Resizable card layout with multiple cards.
         `
+        }
     }
 };
 
@@ -395,8 +397,10 @@ ResizeCardHorizontalVerticalDirection.storyName = 'Card resize in horizontal and
 ResizeCardHorizontalVerticalDirection.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Cards can be resized in horizontal direction as well as vertical direction. Resize handle will expand on right border for horizontal resize and bottom border for vertical resize.
+        description: {
+            story: `Cards can be resized in horizontal direction as well as vertical direction. Resize handle will expand on right border for horizontal resize and bottom border for vertical resize.
         `
+        }
     }
 };
 
@@ -447,8 +451,10 @@ ResizeCardHorizontalDirection.storyName = 'Card resize in horizontal directions'
 ResizeCardHorizontalDirection.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Cards can also be resized in horizontal direction only. Resize handle will expand on right border.
+        description: {
+            story: `Cards can also be resized in horizontal direction only. Resize handle will expand on right border.
         `
+        }
     }
 };
 
@@ -499,7 +505,9 @@ ResizeCardVerticalDirection.storyName = 'Card resize in vertical directions';
 ResizeCardVerticalDirection.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Cards can be resized in vertical direction only. Resize handle will expand on bottom border.
+        description: {
+            story: `Cards can be resized in vertical direction only. Resize handle will expand on bottom border.
         `
+        }
     }
 };

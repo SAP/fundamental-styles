@@ -138,8 +138,10 @@ export const Shellbar = () => `
 Shellbar.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
+        description: {
+            story: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
         `
+        }
     }
 };
 
@@ -243,8 +245,10 @@ export const Large = () => `<div class="fd-product-switch__body">
 
 Large.parameters = {
     docs: {
-        storyDescription: 'Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.',
-        iframeHeight: 600
+        description: {
+            story: 'Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.',
+            iframeHeight: 600
+        }
     }
 };
 
@@ -290,8 +294,10 @@ export const Medium = () => `<div class="fd-product-switch__body fd-product-swit
 Medium.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `If there are 6 (or less) items to display, it is recommended to use the 3-column layout (medium). To display a medium-sized product switch, add the \`fd-product-switchbody--col-3\` modifier class to the main element.
+        description: {
+            story: `If there are 6 (or less) items to display, it is recommended to use the 3-column layout (medium). To display a medium-sized product switch, add the \`fd-product-switchbody--col-3\` modifier class to the main element.
         `
+        }
     }
 };
 
@@ -399,7 +405,9 @@ export const Small = () => `<div style="width:450px;">
 Small.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `For smaller screens (mobile), the product switch is displayed in list format. To achieve this style, add the \`fd-product-switch__body--mobile\` modifier class to the main element.
+        description: {
+            story: `For smaller screens (mobile), the product switch is displayed in list format. To achieve this style, add the \`fd-product-switch__body--mobile\` modifier class to the main element.
         `
+        }
     }
 };

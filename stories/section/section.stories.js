@@ -29,7 +29,9 @@ Structure.storyName = 'Section Structure';
 Structure.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };
 
@@ -81,9 +83,11 @@ SectionLayoutGrid.storyName = 'With Layout Grid';
 SectionLayoutGrid.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Shows an example with the grid span helper class.
 This is most appropriate when displaying a collection of content in a linear order.`
+        }
     }
 };
 
@@ -119,9 +123,11 @@ SectionPanels.storyName = 'With Panels';
 SectionPanels.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Shows an alternate layout option using columns.
 This may be more appropriate depending on the need to maintain source order and structure.`
+        }
     }
 };
 
@@ -141,7 +147,9 @@ SectionHeaders.storyName = 'With Headers';
 SectionHeaders.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'Header and title elements are available when necessary to label content groups.'
+        description: {
+            story: 'Header and title elements are available when necessary to label content groups.'
+        }
     }
 };
 

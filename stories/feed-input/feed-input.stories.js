@@ -47,7 +47,9 @@ Standard.storyName = 'Default';
 Standard.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The default feed input displays an empty text field with an inactive submit button.'
+        description: {
+            story: 'The default feed input displays an empty text field with an inactive submit button.'
+        }
     }
 };
 
@@ -78,7 +80,9 @@ NotEmpty.storyName = 'With text';
 NotEmpty.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The input with text displays some text, activating the submit button.'
+        description: {
+            story: 'The input with text displays some text, activating the submit button.'
+        }
     }
 };
 
@@ -110,7 +114,9 @@ export const Disabled = () => `    <div class="fd-feed-input is-disabled"
 Disabled.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'The disabled feed input displays a text field and submit button that users cannot interact with.'
+        description: {
+            story: 'The disabled feed input displays a text field and submit button that users cannot interact with.'
+        }
     }
 };
 
@@ -134,7 +140,9 @@ WithoutUserImage.storyName = 'No thumbnail';
 WithoutUserImage.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'Although the default feed input has a thumbnail, it is possible to remove it. Without a thumbnail, the input area size increases automatically.'
+        description: {
+            story: 'Although the default feed input has a thumbnail, it is possible to remove it. Without a thumbnail, the input area size increases automatically.'
+        }
     }
 };
 
@@ -162,7 +170,9 @@ PlaceholderImage.storyName = 'Generic thumbnail';
 PlaceholderImage.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'A generic thumbnail will be displayed if no image has been chosen by the user.'
+        description: {
+            story: 'A generic thumbnail will be displayed if no image has been chosen by the user.'
+        }
     }
 };
 
@@ -192,7 +202,9 @@ InputGrowth.storyName = 'Multiline';
 InputGrowth.parameters = {
     docs: {
         iframeHeight: 190,
-        storyDescription: 'The multiline feed input displays a text field with multiple lines of text, which expands until a maximum height is reached.'
+        description: {
+            story: 'The multiline feed input displays a text field with multiple lines of text, which expands until a maximum height is reached.'
+        }
     }
 };
 
@@ -222,6 +234,8 @@ OverMaxHeight.storyName = 'Max height';
 OverMaxHeight.parameters = {
     docs: {
         iframeHeight: 420,
-        storyDescription: 'The max height feed input displays a text field with the maximum amount of text lines it can contain. Once the text field has reached the maximum height, a scrollbar appears to access the overflowing text.'
+        description: {
+            story: 'The max height feed input displays a text field with the maximum amount of text lines it can contain. Once the text field has reached the maximum height, a scrollbar appears to access the overflowing text.'
+        }
     }
 };

@@ -291,10 +291,12 @@ export const AsFormItem = () => `<div style="height: 300px;">
 
 AsFormItem.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
 Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
 `
+        }
     }
 };
 
@@ -404,8 +406,10 @@ export const Grouping = () => `<div style="height: 450px;">
 
 Grouping.parameters = {
     docs: {
-        storyDescription:
+        description: {
+            story:
             'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
+        }
     }
 };
 
@@ -492,13 +496,15 @@ export const MatchPopoverBodySize = () => `<div style="height: 300px;">
 
 MatchPopoverBodySize.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The default length size of the popover body is often different from the text length.
 The body length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\`.
 
 This class has been added to all the \`Multi ComboBox\` examples above.
 In the example you can see how the \`Multi ComboBox\` component looks without the \`fd-popover__body--dropdown-fill\` modifier.
 `
+        }
     }
 };
 
@@ -613,13 +619,15 @@ export const ReadOnlyAndDisabled = () => `<div class="fd-container">
 
 ReadOnlyAndDisabled.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To make the \`Multi ComboBox\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
 This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute.
 
 To disable a \`Multi ComboBox\` component, the disabled attribute needs to be added to the \`fd-popover__control\` and the \`fd-input__control\` elements.
 The disabled state can also be achieved by adding the \`.is-disabled\` class or the \`aria-disabled="true"\` attribute.
 `
+        }
     }
 };
 
@@ -706,12 +714,14 @@ export const Semantic = () => `<div style="height: 300px;">
 
 Semantic.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 For a complete list of states supported by the \`Multi ComboBox\` component, please see the documentation for the form or select components.
 
 The semantic mode can be used to modify the combobox component by adding one of
 \`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into \`fd-input-group\` element.
 To add text in the \`body\` of the component, simply include your text in the \`fd-list__message\` under the \`ul\` element.`
+        }
     }
 };
 
@@ -828,9 +838,11 @@ export const MobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
 
 MobileMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 For mobile devices, or tablets, Multi ComboBox component should be displayed in fullscreen mode.
 So instead of using popover and dropdown, it should be wrapped in \`dialog\` and \`bar\` components.`
+        }
     }
 };
 
@@ -902,8 +914,10 @@ export const Filtering = () => ` <div style="height: 250px;">
 
 Filtering.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The user can filter selectable options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`
+        }
     }
 };
 
@@ -1002,7 +1016,9 @@ export const TwoColumnComboBox = () => ` <div style="height: 350px;">
 
 TwoColumnComboBox.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The user can filter selectable having 2 options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`
+        }
     }
 };

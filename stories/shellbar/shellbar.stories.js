@@ -70,9 +70,11 @@ export const Primary = () => `<div style="height:150px">
 `;
 Primary.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The primary shellbar displays a logo, title, and an avatar where the user settings are found. If the avatar does not contain a thumbnail, then the initials of the user will be displayed.
     `
+        }
     }
 };
 
@@ -176,9 +178,11 @@ ProductMenuAndSearch.storyName = 'Product menu and search';
 
 ProductMenuAndSearch.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Shellbar can be displayed with a product menu and search box. The product menu is used for navigating to other applications within the product. To display a product menu, add the \`fd-popover\` class after the \`fd-shellbar__logo\` class.
     `
+        }
     }
 };
 
@@ -289,9 +293,11 @@ LinksWithCollapsibleMenuXlSize.storyName = 'Extra large';
 
 LinksWithCollapsibleMenuXlSize.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The shellbar can be optimized for extra-large screens. To achieve this style, add the \`fd-shellbar--xl\` modifier class to the main element, which increases the container padding to 3rem.
         `
+        }
     }
 };
 
@@ -403,9 +409,11 @@ LinksWithCollapsibleMenuMSize.storyName = 'Medium-large';
 
 LinksWithCollapsibleMenuMSize.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The shellbar can be optimized for medium-large screens. To achieve this style, add the \`fd-shellbar--m\` or \`fd-shellbar--l\`modifier class to the main element, which increases the container padding to 2rem.
         `
+        }
     }
 };
 
@@ -518,9 +526,11 @@ LinksWithCollapsibleMenuSSize.storyName = 'Small';
 
 LinksWithCollapsibleMenuSSize.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The shellbar can be optimized for mobile and small tablet screens. To achieve this style, add the \`fd-shellbar--s\` modifier class to the main element. All actions except the user menu should be collapsed, displaying an overflow button.
         `
+        }
     }
 };
 
@@ -704,10 +714,12 @@ ProductSwitch.storyName = 'Product switch';
 
 ProductSwitch.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Shellbar can be displayed with a product switch component, indicating to the user that they can navigate to other products. See [Product Switch](product-switch.html) for more details.
 
 **Note:** There is an [SAP CoPilot](https://help.sap.com/viewer/product/SAP_COPILOT/1902/en-US) icon displayed in the middle of the shellbar, which can be used to trigger a chatbot if desired.
     `
+        }
     }
 };

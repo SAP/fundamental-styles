@@ -38,8 +38,10 @@ export const Success = () => `<div class="fd-form-item">
 
 Success.parameters = {
     docs: {
-        storyDescription: `To display a success message below an input field, add the \`--success\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display a success message below an input field, add the \`--success\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };
 
@@ -59,8 +61,10 @@ export const Error = () => `<div class="fd-form-item">
 
 Error.parameters = {
     docs: {
-        storyDescription: `To display an error message below an input field, add the \`--error\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display an error message below an input field, add the \`--error\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };
 
@@ -80,8 +84,10 @@ export const Warning = () => `<div class="fd-form-item">
 
 Warning.parameters = {
     docs: {
-        storyDescription: `To display a warning message below an input field, add the \`--warning\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display a warning message below an input field, add the \`--warning\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };
 
@@ -101,7 +107,9 @@ export const Information = () => `<div class="fd-form-item">
 
 Information.parameters = {
     docs: {
-        storyDescription: `To display an information message below an input field, add the \`--information\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display an information message below an input field, add the \`--information\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };

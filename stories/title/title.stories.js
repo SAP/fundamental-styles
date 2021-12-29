@@ -20,7 +20,9 @@ Levels.storyName = 'Semantic Level';
 Levels.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'There are 6 semantic levels of a heading element. There should only be one H1 on a page, and headings should only appear in ascending order without skipping a level; i.e. even if there are only 3 levels on a page, the order must be H1-H2-H3, and no other levels used.'
+        description: {
+            story: 'There are 6 semantic levels of a heading element. There should only be one H1 on a page, and headings should only appear in ascending order without skipping a level; i.e. even if there are only 3 levels on a page, the order must be H1-H2-H3, and no other levels used.'
+        }
     }
 };
 
@@ -35,7 +37,9 @@ export const VisualLevel = () => `<h1 class="fd-title fd-title--h6">Title Level 
 VisualLevel.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'If a design requires it, the visual level can be set to something different than the semantic level. This allows the sequential order to be maintained while providing flexibility in appearance.'
+        description: {
+            story: 'If a design requires it, the visual level can be set to something different than the semantic level. This allows the sequential order to be maintained while providing flexibility in appearance.'
+        }
     }
 };
 
@@ -53,7 +57,9 @@ Elision.storyName = 'Text Elision';
 Elision.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'By default the Title text overflow will be elided when longer than its container.'
+        description: {
+            story: 'By default the Title text overflow will be elided when longer than its container.'
+        }
     }
 };
 
@@ -71,6 +77,8 @@ Wrapping.storyName = 'Text Wrapping';
 Wrapping.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'Add the `--wrap` modifier to cause the overflow text to wrap instead.'
+        description: {
+            story: 'Add the `--wrap` modifier to cause the overflow text to wrap instead.'
+        }
     }
 };

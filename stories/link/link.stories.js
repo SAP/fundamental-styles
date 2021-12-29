@@ -53,7 +53,8 @@ Primary.storyName = 'Types';
 Primary.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `There are different types of links for various use cases.
+        description: {
+            story: `There are different types of links for various use cases.
 
 | Types | Modifier class | Use to... |
 | ----:| :--------------- | :--------------|
@@ -70,5 +71,6 @@ You can display a link with an icon placed on either side of the link text.
 | Left Arrow | \`sap-icon--slim-arrow-left sap-icon--s\` |
 | Right Arrow | \`sap-icon--slim-arrow-right sap-icon--s\` |
 `
+        }
     }
 };

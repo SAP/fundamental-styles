@@ -186,7 +186,9 @@ export const Menu = () => `<div class="fd-tool-header fd-tool-header--menu">
 Menu.storyName = 'Tool Header with Side Navigation Menu Button';
 Menu.parameters = {
     docs: {
-        storyDescription: 'The side navigation menu button is used to collapse/expand the side navigation. It is not recommended to use horizontal and responsive paddings when this button is present.'
+        description: {
+            story: 'The side navigation menu button is used to collapse/expand the side navigation. It is not recommended to use horizontal and responsive paddings when this button is present.'
+        }
     }
 };
 
@@ -284,7 +286,9 @@ export const ResponsivePaddings = () => `<div class="fd-tool-header fd-tool-head
 
 ResponsivePaddings.parameters = {
     docs: {
-        storyDescription: 'Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the `fd-tool-header--responsive-paddings` modifier class to the container class. In this case the left and right spacing will change as the screen size changes.'
+        description: {
+            story: 'Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the `fd-tool-header--responsive-paddings` modifier class to the container class. In this case the left and right spacing will change as the screen size changes.'
+        }
     }
 };
 
@@ -417,6 +421,8 @@ export const HorizontalPaddings = () => `<h4>Size S (1rem)</h4>
 
 HorizontalPaddings.parameters = {
     docs: {
-        storyDescription: 'You can add horizontal paddings by applying a modifier class to the container. For example, `.fd-tool-header--sm` modifier class will add 1rem horizontal paddings on the tool bar container.'
+        description: {
+            story: 'You can add horizontal paddings by applying a modifier class to the container. For example, `.fd-tool-header--sm` modifier class will add 1rem horizontal paddings on the tool bar container.'
+        }
     }
 };

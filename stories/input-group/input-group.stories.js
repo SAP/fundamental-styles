@@ -28,7 +28,9 @@ export const Sizes = () => `
 Sizes.parameters = {
     docs: {
         iframeHeight: 160,
-        storyDescription: 'The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).'
+        description: {
+            story: 'The Input Group supports **compact** mode (by virtue of the `--compact` modifier on child components).'
+        }
     }
 };
 
@@ -70,7 +72,9 @@ export const TextAddOn = () => `
 TextAddOn.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right (or both) of the input element.'
+        description: {
+            story: 'The Input Group with text add-on component is typically used to specify the type of the data being entered, such as currency or unit of measure. This add-on can be placed at the left or right (or both) of the input element.'
+        }
     }
 };
 
@@ -109,7 +113,9 @@ export const InputWithIcons = () => `
 InputWithIcons.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The Input with add-on supports icons.'
+        description: {
+            story: 'The Input with add-on supports icons.'
+        }
     }
 };
 
@@ -166,7 +172,9 @@ export const InputWithActions = () => `
 InputWithActions.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The Input with add-on supports actions. Actions can be shown with a text label or icon.'
+        description: {
+            story: 'The Input with add-on supports actions. Actions can be shown with a text label or icon.'
+        }
     }
 };
 
@@ -285,7 +293,9 @@ export const Focus = () => `
 Focus.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The Input Group supports <b>focus</b> state, it can be added by putting `.is-focus` class to component.'
+        description: {
+            story: 'The Input Group supports <b>focus</b> state, it can be added by putting `.is-focus` class to component.'
+        }
     }
 };
 

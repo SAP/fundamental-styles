@@ -91,7 +91,8 @@ SSize.storyName = 'Small';
 SSize.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `
+        description: {
+            story: `
 The small form grid uses a single-column layout and is best used for mobile screens and dialogs. The form groups are positioned below each other in a single column and the labels are positioned above the fields to avoid the labels from truncating.
 
 ####Label-field ratio
@@ -103,6 +104,7 @@ Label | 12 | A label handles the space of a whole row.
 Fields | 12 | A field handles the space of a whole row.
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 `
+        }
     }
 };
 
@@ -181,7 +183,8 @@ MSizeDefault.storyName = 'Default [M]';
 MSizeDefault.parameters = {
     docs: {
         iframeHeight: 370,
-        storyDescription: `
+        description: {
+            story: `
 The default medium form grid uses a single-column layout. The labels are positioned in the same row as the corresponding input field or value, and form groups are positioned below each other.
 
 ####Label-field ratio
@@ -194,6 +197,7 @@ Fields | 10 | The rest of the grid columns of the responsive grid layout are use
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 `
+        }
     }
 };
 
@@ -272,7 +276,8 @@ MSizeSplitScreen.storyName = 'Split screen [M]';
 MSizeSplitScreen.parameters = {
     docs: {
         iframeHeight: 370,
-        storyDescription: `
+        description: {
+            story: `
 When the form is positioned in the details part of a split screen, the medium form grid should use a label-field ratio of 4:7:1.
 
 ####Label-field ratio
@@ -285,6 +290,7 @@ Fields | 7 | Seven grid columns of the responsive grid layout are used by the fi
 Empty grid columns | 1 | There is one empty space on the right of the field.
 
 `
+        }
     }
 };
 
@@ -364,7 +370,8 @@ MSizeFullScreenApp.storyName = 'Full screen [M]';
 MSizeFullScreenApp.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `
+        description: {
+            story: `
 If the form is being viewed in a full-screen app, the medium form grid should use a single-column layout.
 ####Label-field ratio
 The medium form grid is organized into a **3:5:4** label-field ratio for full-screen views.
@@ -376,6 +383,7 @@ Fields | 5 | Five grid columns of the responsive grid layout are used by the fie
 Empty grid columns | 4 | There are four empty spaces on the right of the field.
 
 `
+        }
     }
 };
 
@@ -454,7 +462,8 @@ MSizeFullScreenAppLongLabel.storyName = 'Long label [M]';
 MSizeFullScreenAppLongLabel.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `
+        description: {
+            story: `
 The medium form width can go down to 601 px, providing insufficient space for longer labels and fields. If long labels or input values are necessary, use the label-field ratio of 4:8:0.
 ####Label-field ratio
 
@@ -467,6 +476,7 @@ Fields | 8 | Eight grid columns of the responsive grid layout are used by the fi
 Empty grid columns | 0 | There is no empty space on the right of the field.
 
 `
+        }
     }
 };
 
@@ -545,7 +555,8 @@ LSizeDefault.storyName = 'Default [L]';
 LSizeDefault.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 The default large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. Therefore, the form groups adopt the Z layout, directing users’ attention to each row instead of columns.
 ####Label-field ratio
 
@@ -558,6 +569,7 @@ Fields | 8 | The rest of the grid columns of the responsive grid layout are used
 Empty grid columns | 0 | There is no empty space on the right of the field.
 
 `
+        }
     }
 };
 
@@ -635,7 +647,8 @@ LSizeSingleFormGroup.storyName = 'Single form [L]';
 LSizeSingleFormGroup.parameters = {
     docs: {
         iframeHeight: 530,
-        storyDescription: `
+        description: {
+            story: `
 If the form contains a single form group, you can use a single-column layout.
 
 
@@ -648,6 +661,7 @@ Label | 3 | Only three grid columns of the responsive grid layout are used by th
 Fields | 5 | Five of the grid columns of the responsive grid layout are used by the fields.
 Empty grid columns | 4 | There are four empty spaces on the right of the field.
         `
+        }
     }
 };
 
@@ -796,7 +810,8 @@ LSizeMultipleFormGroup.storyName = 'Multiple form [L]';
 LSizeMultipleFormGroup.parameters = {
     docs: {
         iframeHeight: 590,
-        storyDescription: `
+        description: {
+            story: `
 If the form contains multiple form groups, you can use a two-column layout.
 
 ####Label-field ratio
@@ -811,6 +826,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 **Note:** As explained in the main description, large goes down to 1025 px. Therefore, long labels that are put next to fields might not fit on smaller large-sized screens (especially in split-view apps). For this reason, labels are put above fields.
 
         `
+        }
     }
 };
 
@@ -889,7 +905,8 @@ XlDefault.storyName = 'Default [XL]';
 XlDefault.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 The default extra-large form grid uses a two-column layout. The form groups are placed side-by-side, displaying all information on one screen to avoid scrolling. In these columns, the labels are positioned in the same row as the corresponding input field or value. The form groups adopt the Z layout.
 ####Label-field ratio
 
@@ -902,6 +919,7 @@ Fields | 8 | The rest of the grid columns of the responsive grid layout are used
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 `
+        }
     }
 };
 
@@ -981,7 +999,8 @@ XlSingleFormGroup.storyName = 'Single form [XL]';
 XlSingleFormGroup.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 If the form contains a single form group, you can use a single-column layout.
 
 ####Label-field ratio
@@ -996,6 +1015,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the fields.
 **Note:** If the form is put into a full-screen app and it contains multiple form groups, you can also use a three-column layout with a label-field ratio of **12:12:0**.
 
 `
+        }
     }
 };
 
@@ -1145,7 +1165,8 @@ XlDoubleFormGroup.storyName = 'Double form [XL]';
 XlDoubleFormGroup.parameters = {
     docs: {
         iframeHeight: 650,
-        storyDescription: `
+        description: {
+            story: `
 If the form contains multiple form groups, you can use a two-column layout.
 
 ####Label-field ratio
@@ -1158,6 +1179,7 @@ Fields | 8 | The rest of the grid columns of the responsive grid layout are used
 Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 
 `
+        }
     }
 };
 
@@ -1372,7 +1394,8 @@ XlMultipleFormGroup.storyName = 'Multiple form [XL]';
 XlMultipleFormGroup.parameters = {
     docs: {
         iframeHeight: 850,
-        storyDescription: `
+        description: {
+            story: `
 If the form contains multiple form groups, you can use a three-column layout.fd-row--top class will organize all the elements evenly on screen.
 
 ####Label-field ratio
@@ -1385,6 +1408,7 @@ Fields | 12 | A field handles the space of a whole row.
 Empty grid columns | 0 | There is no empty space on the right of the field.
 
 `
+        }
     }
 };
 
@@ -1427,8 +1451,10 @@ CompactLayout.storyName = 'Compact form';
 CompactLayout.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `
+        description: {
+            story: `
 To display the form using a compact layout, add the \`--compact\` modifier on the \`fd-input\` class.`
+        }
     }
 };
 
@@ -1519,7 +1545,8 @@ ColumnRecommended.storyName = 'Recommended layouts';
 ColumnRecommended.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 These are the recommended layouts that display the ideal amount of columns for each screen size.
 
 ####Layout 1
@@ -1550,6 +1577,7 @@ M | 1
 S | 1
 
 `
+        }
     }
 };
 
@@ -1623,7 +1651,8 @@ ColumnPossible.storyName = 'Layout variations';
 ColumnPossible.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 Although not the best solutions, these layouts are also possible.
 
 ####Layout 4
@@ -1646,6 +1675,7 @@ M | 1
 S | 1
 
 `
+        }
     }
 };
 
@@ -1691,8 +1721,10 @@ export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
 ColumnNotRecommended.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 The layout that is not recommended for a form group are XL3-L2-M2-S1
 `
+        }
     }
 };

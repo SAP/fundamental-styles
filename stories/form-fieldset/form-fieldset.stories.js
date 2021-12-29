@@ -135,6 +135,8 @@ export const RadioButtonGroups = () => `<fieldset class="fd-fieldset" id="radio1
 RadioButtonGroups.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Radio button groups should always be grouped using fieldset for accessibility reasons.'
+        description: {
+            story: 'Radio button groups should always be grouped using fieldset for accessibility reasons.'
+        }
     }
 };

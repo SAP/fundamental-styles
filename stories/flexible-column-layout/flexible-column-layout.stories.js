@@ -43,11 +43,13 @@ export const ThreeColumnsLayout = () => `
 </div>`;
 ThreeColumnsLayout.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 - Minimum width of the device: \`1281px\`
 - Wide column width: \`50%\`
 - Narrow columns width: \`25%\`
 `
+        }
     }
 };
 
@@ -79,11 +81,13 @@ export const TwoColumnsLayout = () => `
 </div>`;
 TwoColumnsLayout.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 - Width of the device: Max: \`1280px\`, Min: 961px
 - Wide column width: \`67%\`
 - Narrow column width: \`33%\`
 `
+        }
     }
 };
 
@@ -115,10 +119,12 @@ export const OneColumnsLayout = () => `
 </div>`;
 OneColumnsLayout.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 - Max width of the device: \`960px\`
 - Column width: \`100%\`
 `
+        }
     }
 };
 

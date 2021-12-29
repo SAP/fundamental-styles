@@ -647,10 +647,12 @@ export const TodaySelectionButton = () => `<div class="fd-docs-date-picker" styl
 TodaySelectionButton.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 The today selection button in the footer selects today's date in the system or user-preferred timezone and closes the DatePicker popover.
 This date value then appears in the DatePicker's input field. If using a compact datepicker add the \`fd-button--compact\` class to this button.
 `
+        }
     }
 };
 
@@ -872,13 +874,15 @@ export const TodayNavigationButton = () => `<div class="fd-docs-date-picker" sty
 TodayNavigationButton.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `
+        description: {
+            story: `
 The today navigation button in the header navigates focus to today's date in the system or user-preferred timezone, selects it but does not close the DatePicker popover.
 This is useful in displaying the DatePicker on mobile where DatePicker closes when user presses the OK button.
 If using a compact datepicker add the \`fd-button--compact\` class to this button.
 
 **Using both today selection and navigation buttons on the same datepicker is not recommended, as it may lead to confusion.**
 `
+        }
     }
 };
 

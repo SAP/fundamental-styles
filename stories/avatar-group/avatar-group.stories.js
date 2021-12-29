@@ -276,7 +276,9 @@ export const IndividualType = () => `<div class="fd-avatar-group fd-avatar-group
 IndividualType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Individual type of Avatar Group use the `--individual-type` modifier class <i>(`fd-avatar-group--individual-type` class)<i>.'
+        description: {
+            story: 'To use Individual type of Avatar Group use the `--individual-type` modifier class <i>(`fd-avatar-group--individual-type` class)<i>.'
+        }
     }
 };
 
@@ -393,7 +395,9 @@ export const GroupType = () => `<div class="fd-popover">
 GroupType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Group type of Avatar Group use the `--group-type` modifier class <i>(`fd-avatar-group--group-type` class)<i>.'
+        description: {
+            story: 'To use Group type of Avatar Group use the `--group-type` modifier class <i>(`fd-avatar-group--group-type` class)<i>.'
+        }
     }
 };
 

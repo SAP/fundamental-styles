@@ -76,7 +76,9 @@ Primary.storyName = 'Message Box';
 
 Primary.parameters = {
     docs: {
-        storyDescription: 'Message Box Example'
+        description: {
+            story: 'Message Box Example'
+        }
     }
 };
 
@@ -111,7 +113,9 @@ Confirmation.storyName = 'Confirmation Message Box';
 
 Confirmation.parameters = {
     docs: {
-        storyDescription: 'Confirmation Message Box Example'
+        description: {
+            story: 'Confirmation Message Box Example'
+        }
     }
 };
 
@@ -139,7 +143,9 @@ Negative.storyName = 'Negative Message Box';
 
 Negative.parameters = {
     docs: {
-        storyDescription: 'Negative Message Box Example'
+        description: {
+            story: 'Negative Message Box Example'
+        }
     }
 };
 
@@ -167,7 +173,9 @@ Critical.storyName = 'Critical Message Box';
 
 Critical.parameters = {
     docs: {
-        storyDescription: 'Critical Message Box Example'
+        description: {
+            story: 'Critical Message Box Example'
+        }
     }
 };
 
@@ -195,7 +203,9 @@ Positive.storyName = 'Positive Message Box';
 
 Positive.parameters = {
     docs: {
-        storyDescription: 'Positive Message Box Example'
+        description: {
+            story: 'Positive Message Box Example'
+        }
     }
 };
 
@@ -223,6 +233,8 @@ Info.storyName = 'Info Message Box';
 
 Info.parameters = {
     docs: {
-        storyDescription: 'Info Message Box Example'
+        description: {
+            story: 'Info Message Box Example'
+        }
     }
 };

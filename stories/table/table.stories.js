@@ -126,9 +126,11 @@ export const Primary = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolba
 
 Primary.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The primary table contains columns with headers, and rows with links. In the first column, links are displayed. To display links within a table, add the \`fd-link\` class within the table data.
     `
+        }
     }
 };
 
@@ -170,12 +172,14 @@ export const Borderless = () => `<div class="fd-toolbar fd-toolbar--solid fd-too
 
 Borderless.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed without borders that separate the columns, column headers, and rows. To display a borderless table, add the \`fd-table--no-horizontal-borders\` and \`fd-table--no-vertical-borders\` modifier classes to the main element.
 
 **Note:** You can remove borders on individual cells by adding the above-mentioned modifier classes to them only.
 
     `
+        }
     }
 };
 
@@ -218,9 +222,11 @@ export const Borderlessbody = () => `<div class="fd-toolbar fd-toolbar--solid fd
 Borderlessbody.storyName = 'Borderless (body)';
 Borderlessbody.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed without borders that separate the columns and rows only, leaving the column headers with borders. To display a borderless table body, add the  \`fd-table--no-horizontal-borders\` and \`fd-table--no-vertical-borders\` modifier classes to the body element.
     `
+        }
     }
 };
 
@@ -263,9 +269,11 @@ export const NoOuterBorder = () => `<div class="fd-toolbar fd-toolbar--solid fd-
 NoOuterBorder.storyName = 'No outer Border';
 NoOuterBorder.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the \`fd-table--no-outer-border\` modifier class to the main element.
     `
+        }
     }
 };
 
@@ -314,9 +322,11 @@ export const Footer = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar
 
 Footer.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed with a footer. To display a table footer, add the \`fd-table__footer\` class with a \`tfoot\` element. It must contain the same amount and size of columns as the table head and body containers.
     `
+        }
     }
 };
 
@@ -367,9 +377,11 @@ export const CompactFooter = () => `<div class="fd-toolbar fd-toolbar--solid fd-
 CompactFooter.storyName = 'Footer (compact)';
 CompactFooter.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed with a footer in compact mode, which is ideal for larger desktop screens. To display a compact table, add the \`fd-table--compact\` modifier class to the main element.
     `
+        }
     }
 };
 
@@ -420,9 +432,11 @@ export const CondensedFooter = () => `<div class="fd-toolbar fd-toolbar--solid f
 CondensedFooter.storyName = 'Footer (condensed)';
 CondensedFooter.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Similar to the previous example, table can be displayed with a footer in condensed mode (for desktop screens). To display a condensed table, add the \`fd-table--condensed\` modifier class to the main element.
     `
+        }
     }
 };
 
@@ -489,7 +503,8 @@ export const Interactive = () => `<div class="fd-toolbar fd-toolbar--solid fd-to
 
 Interactive.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The table component can be interactive with hoverable and activable cells and rows.
 
 Interaction | Modifier class
@@ -497,6 +512,7 @@ Interaction | Modifier class
 Activate | \`--activable\`
 Hover | \`--hoverable\`
     `
+        }
     }
 };
 
@@ -625,7 +641,8 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
 SemanticRows.storyName = 'Semantic';
 SemanticRows.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The table component can display highlight indicators to classify certain items with semantic states. To display status indicators in table, add the \`fd-table__cell--status-indicator\` modifier class to each row.
 
 **To display semantic highlight indicators, add the following modifier classes to \`fd-table__cell--status-indicator\`:**
@@ -637,6 +654,7 @@ Warning | \`--warning\`
 Error | \`--error\`
 Information | \`--information\`
     `
+        }
     }
 };
 
@@ -683,9 +701,11 @@ export const FocusableRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-
 FocusableRows.storyName = 'Focusable rows';
 FocusableRows.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can display focusable rows by adding the \`fd-table__row--focusable\` modifier class and a valid \`tabindex\` to the rows. It is not recommended to use focusable rows simultaneously with focusable cells.
     `
+        }
     }
 };
 
@@ -732,9 +752,11 @@ export const FocusableCells = () => `<div class="fd-toolbar fd-toolbar--solid fd
 FocusableCells.storyName = 'Focusable cells';
 FocusableCells.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can display focusable cells by adding the \`fd-table__cell--focusable\` modifier class and a valid \`tabindex\` to the cells. It is not recommended to use focusable cells simultaneously with focusable rows.
     `
+        }
     }
 };
 
@@ -792,12 +814,14 @@ export const Checkbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolb
 
 Checkbox.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can display checkboxes to allow the user to perform bulk actions.
 To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell.
 It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
 Also recommended to add class \`fd-table__checkbox\` to the checkbox (input) and \`fd-table__checkbox-label\` class to the checkbox label to have appropriate styles.
     `
+        }
     }
 };
 
@@ -856,12 +880,14 @@ export const CompactCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid f
 CompactCheckbox.storyName = 'Checkbox (compact)';
 CompactCheckbox.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed with checkboxes in compact mode. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
 
 
 To display the table in compact mode, add the \`fd-table--compact\` modifier class to the table element.
     `
+        }
     }
 };
 
@@ -920,12 +946,14 @@ export const CondensedCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid
 CondensedCheckbox.storyName = 'Checkbox (condensed)';
 CondensedCheckbox.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed with checkboxes in condensed mode. To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell. It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
 
 
 To display the table in condensed mode, add the \`fd-table--condensed\` modifier class to the table element.
     `
+        }
     }
 };
 
@@ -1015,9 +1043,11 @@ export const Pagination = () => `<div class="fd-toolbar fd-toolbar--solid fd-too
 
 Pagination.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can be displayed with bottom pagination by adding the \`fd-pagination\` class after the table.
     `
+        }
     }
 };
 
@@ -1205,9 +1235,11 @@ export const AdvancedToolbar = () => `<div class="fd-dialog" id="filter-dialog-e
 AdvancedToolbar.storyName = 'Advanced toolbar';
 AdvancedToolbar.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The table component can be displayed with an advanced **Toolbar**, which allows users to customize their table. In this example, buttons trigger **Dialogs**. To display an advanced toolbar, pair \`fd-dialog\` components with an \`fd-toolbar\` component.
     `
+        }
     }
 };
 
@@ -1340,9 +1372,11 @@ export const ContextualMenu = () => `<div style="min-height: 400px">
 ContextualMenu.storyName = 'Contextual menu';
 ContextualMenu.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can display a contextual menu containing actions if there is not enough space in a given row. It is recommended to use a contextual menu if there are more than three actions. To display table with a contextual menu, add the \`fd-popover\` component to any given cell. See **Popover** for more details.
     `
+        }
     }
 };
 
@@ -1437,9 +1471,11 @@ export const MenuHeader = () => `<div class="fd-toolbar fd-toolbar--solid fd-too
 MenuHeader.storyName = 'Menu header';
 MenuHeader.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can display menu options from a popover within headers. The example below demonstrates headers containing customization actions such as _Ascending_ and _Descending_. To display a menu within a header, add the \`fd-table__popover\` class to the header cells.
     `
+        }
     }
 };
 
@@ -1530,7 +1566,8 @@ export const FixColumnHeader = () => `<style>
 FixColumnHeader.storyName = 'Fixed header';
 FixColumnHeader.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can display columns with a fixed header.
 To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class.
 In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row.
@@ -1538,6 +1575,7 @@ Then apply \`.fd-table__cell--fixed-last\` to every last fixed cell in every col
 
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
     `
+        }
     }
 };
 
@@ -1664,11 +1702,13 @@ export const NavIcon = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolba
 NavIcon.storyName = 'Navigation from table rows';
 NavIcon.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Responsive table allows navigation from a line item. For that purpose you need to add a column with the icon \`sap-icon--slim-arrow-right\` at the end. The entire line needs to be clickable
 
 You have an option to add icon button \`sap-icon--navigation-right-arrow\` as a separate column for non responsive table.
     `
+        }
     }
 };
 
@@ -1737,10 +1777,12 @@ export const NavIndicators = () => `<div class="fd-toolbar fd-toolbar--solid fd-
 NavIndicators.storyName = 'Navigation indicators';
 NavIndicators.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 
 The table component can display navigation indicators. When multi-selection is used in a master-detail scenario, it is not clear which item was last opened, you can mark it as a “navigated” indicator, as indicated in the second row, to mark an item that is currently open. To display a navigated indicator, add the \`fd-table__cell--navigated\` class to the desired table cell.
     `
+        }
     }
 };
 
@@ -1819,9 +1861,11 @@ export const ResponsiveTable = () => `<div class="fd-toolbar fd-toolbar--solid f
 
 ResponsiveTable.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The desktop responsive table should contain \`fd-table--responsive\` modifier.
     `
+        }
     }
 };
 
@@ -1965,7 +2009,8 @@ export const ResponsiveTablePopInMode = () => `<div style="max-width: 450px">
 ResponsiveTablePopInMode.storyName = 'Responsive Table (pop-in mode)';
 ResponsiveTablePopInMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The responsive table can be displayed in pop-in mode for mobile and tablet screens. To display responsive table in pop-in mode, add the \`fd-table--pop-in\` modifier class to the main element and remove the borders (see borderless example). In pop-in mode, a row actually contains two rows:
 -	\`fd-table__row--main\`
 -	\`fd-table__row--secondary\`
@@ -1973,6 +2018,7 @@ The responsive table can be displayed in pop-in mode for mobile and tablet scree
 **Note:** cells with titles and text should be wrapped in paragraph tags.
 
     `
+        }
     }
 };
 
@@ -2260,12 +2306,14 @@ export const GridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
 
 GridTable.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Grid tables can contain various input elements inside of cells, such as checkboxes, input fields, links and drop-down menus.
 
 ####Accessibility
 Information about the table such as a title, summary, and/or keyboard navigation instructions should be provided in captions for screen readers. To caption table information, use the \`fd-table__caption\` class.
     `
+        }
     }
 };
 
@@ -2303,9 +2351,11 @@ export const NoDataTable = () => `<table class="fd-table">
 NoDataTable.storyName = 'Table without data';
 NoDataTable.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can indicate that there is no data to display.
     `
+        }
     }
 };
 
@@ -2361,7 +2411,8 @@ export const GroupRowsInTable = () => `<table class="fd-table fd-table--group">
 GroupRowsInTable.storyName = 'Table with group rows';
 GroupRowsInTable.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can have group rows, to get this do the following:
 
 - Add \`fd-table--group\` class to the table
@@ -2379,6 +2430,7 @@ Intended to have up to 20 levels deep, not more.
 
 Please consider that you need to implement expanding/collapsing functionality by yourself.
     `
+        }
     }
 };
 
@@ -2471,7 +2523,8 @@ export const TreeRowsTable = () => `<table class="fd-table fd-table--tree">
 TreeRowsTable.storyName = 'Tree Table';
 TreeRowsTable.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Table can show tree-like rows, to get this do the following:
 
 - Add \`fd-table--tree\` class to the table
@@ -2487,5 +2540,6 @@ Intended to have up to 20 levels deep, not more.
 
 Please consider that you need to implement expanding/collapsing functionality by yourself.
     `
+        }
     }
 };

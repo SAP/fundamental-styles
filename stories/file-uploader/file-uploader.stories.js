@@ -91,7 +91,9 @@ Selected.storyName = 'After Selecting';
 Selected.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'Once the user selects files, update the input and the hidden div to include the file names. The hidden div will announce the file names only once when the value changes.'
+        description: {
+            story: 'Once the user selects files, update the input and the hidden div to include the file names. The hidden div will announce the file names only once when the value changes.'
+        }
     }
 };
 
@@ -129,7 +131,9 @@ export const Compact = () => `<div class="fd-form-item">
 Compact.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'For compact File Uploader apply the `--compact` modifier to the button and input elements.'
+        description: {
+            story: 'For compact File Uploader apply the `--compact` modifier to the button and input elements.'
+        }
     }
 };
 
@@ -259,6 +263,8 @@ export const Status = () => `<div class="fd-form-item">
 Status.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'For Status File Uploader apply the corresponding status class `is-success, is-error, is-warning, is-information ` modifier to the input element.'
+        description: {
+            story: 'For Status File Uploader apply the corresponding status class `is-success, is-error, is-warning, is-information ` modifier to the input element.'
+        }
     }
 };

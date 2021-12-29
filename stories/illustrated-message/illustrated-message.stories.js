@@ -133,8 +133,10 @@ export const Dialog = () => `<div style="width: 100%; display: flex; justify-con
 Dialog.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `Add \`.fd-illustrated-message--dialog\` class
+        description: {
+            story: `Add \`.fd-illustrated-message--dialog\` class
         `
+        }
     }
 };
 
@@ -166,7 +168,9 @@ export const Spot = () => `<div style="width: 100%; display: flex; justify-conte
 Spot.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `Add \`.fd-illustrated-message--spot\` class
+        description: {
+            story: `Add \`.fd-illustrated-message--spot\` class
         `
+        }
     }
 };

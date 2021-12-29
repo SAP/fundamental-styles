@@ -35,7 +35,9 @@ export const TitleOnly = () => `<div class="fd-object-identifier">
 TitleOnly.storyName = 'Title';
 TitleOnly.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier as a title, add the `fd-object-identifier__title` modifier class to the main element.'
+        description: {
+            story: 'To display the object identifier as a title, add the `fd-object-identifier__title` modifier class to the main element.'
+        }
     }
 };
 
@@ -47,8 +49,10 @@ export const BoldTitle = () => `<div class="fd-object-identifier">
 BoldTitle.storyName = 'Bold';
 BoldTitle.parameters = {
     docs: {
-        storyDescription: `To display the object identifier's title in bold, replace \`fd-object-identifier__title\`
+        description: {
+            story: `To display the object identifier's title in bold, replace \`fd-object-identifier__title\`
         with the \`fd-object-identifier__title--bold\` modifier class.`
+        }
     }
 };
 
@@ -73,7 +77,9 @@ export const TitleAsLink = () => `
 TitleAsLink.storyName = 'Link';
 TitleAsLink.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier as a link, use anchor element with `.fd-link .fd-object-identifier__link` classes.'
+        description: {
+            story: 'To display the object identifier as a link, use anchor element with `.fd-link .fd-object-identifier__link` classes.'
+        }
     }
 };
 
@@ -116,7 +122,9 @@ export const TitleAndText = () => `
 TitleAndText.storyName = 'Descriptive';
 TitleAndText.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier\'s title with descriptive text, add an additional tag below the title container and a `fd-object-identifier__text` modifier class.'
+        description: {
+            story: 'To display the object identifier\'s title with descriptive text, add an additional tag below the title container and a `fd-object-identifier__text` modifier class.'
+        }
     }
 };
 
@@ -129,6 +137,8 @@ export const MediumSize = () => `
 
 MediumSize.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier title in medium size, add the `fd-object-identifier--medium` modifier.'
+        description: {
+            story: 'To display the object identifier title in medium size, add the `fd-object-identifier--medium` modifier.'
+        }
     }
 };

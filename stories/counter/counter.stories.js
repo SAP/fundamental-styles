@@ -18,7 +18,9 @@ export const Primary = () => `
 Primary.storyName = 'Standalone';
 Primary.parameters = {
     docs: {
-        storyDescription: 'Counter used as a standlone component'
+        description: {
+            story: 'Counter used as a standlone component'
+        }
     }
 };
 
@@ -27,7 +29,9 @@ export const Paragraph = () => `<p>Lorem ipsum <span class="fd-counter" aria-lab
 Paragraph.storyName = 'Text';
 Paragraph.parameters = {
     docs: {
-        storyDescription: 'Counter inserted in paragraph'
+        description: {
+            story: 'Counter inserted in paragraph'
+        }
     }
 };
 
@@ -52,7 +56,9 @@ export const Tabs = () => `<ul class="fd-tabs" role="tablist">
 
 Tabs.parameters = {
     docs: {
-        storyDescription: 'Counter added to a tab'
+        description: {
+            story: 'Counter added to a tab'
+        }
     }
 };
 
@@ -81,6 +87,8 @@ export const Notifier = () => `
 Notifier.storyName = 'Notification';
 Notifier.parameters = {
     docs: {
-        storyDescription: 'Counter with `--notification` modifier'
+        description: {
+            story: 'Counter with `--notification` modifier'
+        }
     }
 };

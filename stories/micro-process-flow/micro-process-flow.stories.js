@@ -105,8 +105,10 @@ DefaultMicroProcessFlow.storyName = 'Micro process flow with dependent steps (De
 DefaultMicroProcessFlow.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `
+        description: {
+            story: `
         `
+        }
     }
 };
 
@@ -170,8 +172,10 @@ MicroProcessFlowIndependentSteps.storyName = 'Micro process flow with independen
 MicroProcessFlowIndependentSteps.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `Add the \`.fd-micro-process-flow--independent-steps\` modifier class to \`.fd-micro-process-flow\` class to remove the connector line.
+        description: {
+            story: `Add the \`.fd-micro-process-flow--independent-steps\` modifier class to \`.fd-micro-process-flow\` class to remove the connector line.
         `
+        }
     }
 };
 
@@ -360,8 +364,10 @@ MicroProcessFlowCustom.storyName = 'Micro process flow with custom steps';
 MicroProcessFlowCustom.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `
+        description: {
+            story: `
         `
+        }
     }
 };
 
@@ -541,8 +547,10 @@ export const MicroProcessFlowWithPopover = () => `<div style="height: 300px;">
 MicroProcessFlowWithPopover.storyName = 'Micro process flow with popover';
 MicroProcessFlowWithPopover.parameters = {
     docs: {
-        storyDescription: `Information displayed in micro flow process items can be extended by adding popovers with additional context.
+        description: {
+            story: `Information displayed in micro flow process items can be extended by adding popovers with additional context.
         `
+        }
     }
 };
 
@@ -725,8 +733,10 @@ OverflowMicroProcessFlow.storyName = 'Micro process flow with overflow';
 OverflowMicroProcessFlow.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `
+        description: {
+            story: `
         `
+        }
     }
 };
 
@@ -797,8 +807,10 @@ MicroProcessFlowWithObjects.storyName = 'Micro process flow with elements insert
 MicroProcessFlowWithObjects.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `
+        description: {
+            story: `
         `
+        }
     }
 };
 
@@ -861,10 +873,12 @@ MicroProcessFlowCustomWidth.storyName = 'Micro process flow with custom node wid
 MicroProcessFlowCustomWidth.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `By default, the width of the item container is calculated based on the actual item width and the connector line. To change the width add inline style to the element with \`.fd-micro-process-flow__item\` class and provide value for the width.
+        description: {
+            story: `By default, the width of the item container is calculated based on the actual item width and the connector line. To change the width add inline style to the element with \`.fd-micro-process-flow__item\` class and provide value for the width.
 
 For example:
 \`<div class="fd-micro-process-flow__item" style="width: 6rem;">\`
         `
+        }
     }
 };

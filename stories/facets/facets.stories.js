@@ -89,7 +89,9 @@ export const Combined = () =>
 Combined.storyName = 'Combination of facets';
 Combined.parameters = {
     docs: {
-        storyDescription: 'Facet types(image, form, and key-value) used together.'
+        description: {
+            story: 'Facet types(image, form, and key-value) used together.'
+        }
     }
 };
 
@@ -123,9 +125,11 @@ export const KeyValue = () =>
 KeyValue.storyName = 'Key-Value Facet';
 KeyValue.parameters = {
     docs: {
-        storyDescription: `Key-Value facet is used to highlight important data or KPIs. It consists of a mandatory title
+        description: {
+            story: `Key-Value facet is used to highlight important data or KPIs. It consists of a mandatory title
         and a text or number in a larger font size(**Object Status** or **Object Number**). The value can also have an icon to its left.
         `
+        }
     }
 };
 
@@ -153,9 +157,11 @@ export const FormFacet = () =>
 
 FormFacet.parameters = {
     docs: {
-        storyDescription: `Form facet is used to display datasets. It consists of an optional title and label-value pair.
+        description: {
+            story: `Form facet is used to display datasets. It consists of an optional title and label-value pair.
         Note that the labels can be icons, but need to have a text for accessibility purposes.
         `
+        }
     }
 };
 
@@ -190,7 +196,9 @@ export const FormFacetLink = () =>
 FormFacetLink.storyName = 'Form Facet with Link';
 FormFacetLink.parameters = {
     docs: {
-        storyDescription: 'Text in a form facet can also hold a link by using the Link component.'
+        description: {
+            story: 'Text in a form facet can also hold a link by using the Link component.'
+        }
     }
 };
 
@@ -222,8 +230,10 @@ export const RatingIndicator = () =>
 RatingIndicator.storyName = 'Rating Indicator Facet';
 RatingIndicator.parameters = {
     docs: {
-        storyDescription: `The Rating Indicator Facet displays a **Rating Indicator**. It consists of a mandatory title, optional supplementary texts
+        description: {
+            story: `The Rating Indicator Facet displays a **Rating Indicator**. It consists of a mandatory title, optional supplementary texts
         like a subtitle or a dynamic text, and the rating indicator.`
+        }
     }
 };
 
@@ -238,7 +248,9 @@ export const ImageFacet = () =>
 ImageFacet.storyName = 'Image/Avatar Facet';
 ImageFacet.parameters = {
     docs: {
-        storyDescription: 'Counter added to a tab'
+        description: {
+            story: 'Counter added to a tab'
+        }
     }
 };
 
@@ -513,7 +525,8 @@ export const ObjectPage = () =>
 ObjectPage.storyName = 'Facets in Object Page';
 ObjectPage.parameters = {
     docs: {
-        storyDescription: `All facet types used together in the context of a dynamic page. To have the image from the image facet appear next to the title, add the class
+        description: {
+            story: `All facet types used together in the context of a dynamic page. To have the image from the image facet appear next to the title, add the class
         \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the
         \`fd-dynamic-page__title-container\` class. Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class
         for proper alignment with the image.
@@ -535,6 +548,7 @@ The final structure of a collapsed header with image next to the title is shown 
                 - \`fd-dynamic-page__toolbar\` Toolbar container for actions
                 - \`fd-dynamic-page__toolbar--actions\` Navigation actions
 `
+        }
     }
 };
 

@@ -18,8 +18,10 @@ export const Primary = () => `<div class="fd-form-item">
 Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
-        storyDescription: `The default form item displays a label placed above an empty input field with placeholder text that can be replaced with regular text.
+        description: {
+            story: `The default form item displays a label placed above an empty input field with placeholder text that can be replaced with regular text.
         `
+        }
     }
 };
 
@@ -31,8 +33,10 @@ export const Compact = () => `<div class="fd-form-item">
 
 Compact.parameters = {
     docs: {
-        storyDescription: `Form items can be displayed in compact mode by adding the \`--compact\` modifier class to the \`fd-input\` element.
+        description: {
+            story: `Form items can be displayed in compact mode by adding the \`--compact\` modifier class to the \`fd-input\` element.
         `
+        }
     }
 };
 
@@ -44,7 +48,9 @@ export const Required = () => `<div class="fd-form-item">
 
 Required.parameters = {
     docs: {
-        storyDescription: `To indicate to the user that it’s required to fill out an input field, add the \`--required\` modifier class to the \`fd-form-label\` element.
+        description: {
+            story: `To indicate to the user that it’s required to fill out an input field, add the \`--required\` modifier class to the \`fd-form-label\` element.
         `
+        }
     }
 };

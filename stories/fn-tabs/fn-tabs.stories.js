@@ -209,7 +209,9 @@ Semantic.storyName = 'Semantic Tabs';
 Semantic.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'The `.fn-tabs--positive`, `.fn-tabs--critical` or `.fn-tabs--negative` modifier classes are added to the `.fn-tabs` base class to achieve positive, critical or negative tabs. '
+        description: {
+            story: 'The `.fn-tabs--positive`, `.fn-tabs--critical` or `.fn-tabs--negative` modifier classes are added to the `.fn-tabs` base class to achieve positive, critical or negative tabs. '
+        }
     }
 };
 
@@ -269,7 +271,9 @@ MultiInstance.storyName = 'Multi-Instance Tabs';
 MultiInstance.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'The `.fn-tabs--multi-instance` modifier class toachieve Multi Instance tabs. It can be combined with a semantic modifier class.'
+        description: {
+            story: 'The `.fn-tabs--multi-instance` modifier class toachieve Multi Instance tabs. It can be combined with a semantic modifier class.'
+        }
     }
 };
 

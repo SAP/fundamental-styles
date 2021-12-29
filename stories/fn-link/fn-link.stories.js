@@ -83,6 +83,8 @@ Primary.storyName = 'Links';
 
 Primary.parameters = {
     docs: {
-        storyDescription: 'Link states'
+        description: {
+            story: 'Link states'
+        }
     }
 };

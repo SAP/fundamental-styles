@@ -44,7 +44,9 @@ export const Counter = () => `<div class="fd-form-item">
 Counter.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+        description: {
+            story: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+        }
     }
 };
 
@@ -62,7 +64,9 @@ export const DisabledAndReadOnly = () => `
 DisabledAndReadOnly.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+        description: {
+            story: 'A checkbox can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+        }
     }
 };
 
@@ -121,6 +125,8 @@ States.storyName = 'Responsiveness';
 States.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'As with any other input component, you can validate the fields and show the result as a value state of the component. Possible value states are error, warning, success, information, or neutral (none).'
+        description: {
+            story: 'As with any other input component, you can validate the fields and show the result as a value state of the component. Possible value states are error, warning, success, information, or neutral (none).'
+        }
     }
 };

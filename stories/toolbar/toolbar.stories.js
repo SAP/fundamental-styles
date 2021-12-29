@@ -47,9 +47,11 @@ export const Primary = () => `<div class="fd-toolbar fd-toolbar--cozy">
 
 Primary.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The primary toolbar displays several actions separated by icon buttons. It is displayed in cozy mode, which is ideal for mobile and small tablet screens.
 `
+        }
     }
 };
 
@@ -136,10 +138,12 @@ export const Overflow = () => `<div style="height:250px">
 
 Overflow.parameters = {
     docs: {
-        storyDescription: `The overflow toolbar can display additional elements when space is limited. This can be achieved with a **Button** and/or **Popover** component.
+        description: {
+            story: `The overflow toolbar can display additional elements when space is limited. This can be achieved with a **Button** and/or **Popover** component.
 
 To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-button\` class. Additionally, you can add a popover by passing \`fd-popover\` in the \`fd-toolbar__overflow\` element.
  Add any element inside overflow body with \`fd-toolbar__overflow-button\` , \`fd-toolbar__overflow-button--menu\` \`fd-toolbar__overflow-label \` modifier ,        `
+        }
     }
 };
 
@@ -237,14 +241,17 @@ export const Separator = () => `
 Separator.storyName = 'Separators';
 Separator.parameters = {
     docs: {
-        storyDescription: `Separators should be used to visually separate items from each other. To display separators in toolbars, add the \`fd-toolbar__separator\` class after the component you are separating.
+        description: {
+            story: `Separators should be used to visually separate items from each other. To display separators in toolbars, add the \`fd-toolbar__separator\` class after the component you are separating.
 `
+        }
     }
 };
 
 Types.parameters = {
     docs: {
-        storyDescription: `Toolbar can be styled in various ways depending on the use case.
+        description: {
+            story: `Toolbar can be styled in various ways depending on the use case.
 
 Types | Modifier class | Description
 :-------- | :------------- | :---------------
@@ -257,6 +264,7 @@ No border-bottom | \`fd-toolbar—clear\` | This is not a type, but it removes t
 Active | \` fd-toolbar--active\` | This is also not a type, but it enables active and hover states in each type.
 
 `
+        }
     }
 };
 
@@ -313,9 +321,11 @@ export const Alignment = () => `<h3>Left and right-aligned</h3>
 
 Alignment.parameters = {
     docs: {
-        storyDescription: `Toolbars are typically used for left/right alignment; however, they can be displayed in any way with the \`fd-toolbar__spacer\` class.
+        description: {
+            story: `Toolbars are typically used for left/right alignment; however, they can be displayed in any way with the \`fd-toolbar__spacer\` class.
 
 **Note:** Spacers share the horizontal space equally; therefore, the content is not centered as precisely as it is in the **Bar** component.
 `
+        }
     }
 };

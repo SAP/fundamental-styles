@@ -18,9 +18,11 @@ export const Primary = () => `<div class="fd-form-item">
 Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The default form label is displayed in grey text above an input field. To display a form label, add the \`fd-form-label\` class as a child element of the \`fd-form-item\` element.
         `
+        }
     }
 };
 
@@ -32,9 +34,11 @@ export const Required = () => `<div class="fd-form-item">
 
 Required.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To indicate to the user that it’s required to fill out an input field, add the \`--required\` modifier class to the \`fd-form-label\` element.
         `
+        }
     }
 };
 
@@ -46,9 +50,11 @@ export const Colon = () => `<div class="fd-form-item">
 
 Colon.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 A form label can be displayed with a colon that does not disappear when truncated. To achieve this, add the \`--colon\` modifier class to the \`fd-form-label\` element.
         `
+        }
     }
 };
 
@@ -60,8 +66,10 @@ export const Disabled = () => `<div class="fd-form-item">
 
 Disabled.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 A form label can be displayed as disabled to indicate to the users that it cannot be interacted with. To display a disabled form label, add the \`is-disabled\` class to the \`fd-input\` element.
         `
+        }
     }
 };

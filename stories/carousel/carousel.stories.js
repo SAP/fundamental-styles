@@ -187,8 +187,10 @@ CarouselBottom.storyName = 'Bottom page indicator';
 CarouselBottom.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.
+        description: {
+            story: `The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.
 `
+        }
     }
 };
 
@@ -362,8 +364,10 @@ CarouselTop.storyName = 'Top page indicator';
 CarouselTop.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The top page indicator carousel displays a content area, navigation buttons and a page indicator at the top.
+        description: {
+            story: `The top page indicator carousel displays a content area, navigation buttons and a page indicator at the top.
 `
+        }
     }
 };
 
@@ -472,8 +476,10 @@ CarouselNoNavigation.storyName = 'Hidden navigation buttons';
 CarouselNoNavigation.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Carousel can also be displayed without navigation buttons. To hide them, add the \`fd-carousel--no-navigation\` modifier class to the \`fd-carousel\` class. On touchable devices, the user can navigate with a swipe gesture.
+        description: {
+            story: `Carousel can also be displayed without navigation buttons. To hide them, add the \`fd-carousel--no-navigation\` modifier class to the \`fd-carousel\` class. On touchable devices, the user can navigate with a swipe gesture.
 `
+        }
     }
 };
 
@@ -557,8 +563,10 @@ HorizontalCarousel.storyName = 'Items in horizontal direction';
 HorizontalCarousel.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Carousel will have items which will spread horizontally and will be visible on navigation. For translate animation effect to work, all items should be in DOM.
+        description: {
+            story: `Carousel will have items which will spread horizontally and will be visible on navigation. For translate animation effect to work, all items should be in DOM.
 `
+        }
     }
 };
 
@@ -608,7 +616,9 @@ Error.storyName = 'Items loading error';
 Error.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Error message can be disaplyed when items could not be loaded. Error message can be composed using Message page component.
+        description: {
+            story: `Error message can be disaplyed when items could not be loaded. Error message can be composed using Message page component.
 `
+        }
     }
 };

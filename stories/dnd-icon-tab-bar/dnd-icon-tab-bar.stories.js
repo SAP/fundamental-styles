@@ -37,7 +37,9 @@ export const HoveredTab = () => `<div class='fddocs-icon-tab-container' style="m
 HoveredTab.storyName = 'Hovered tab state';
 HoveredTab.parameters = {
     docs: {
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };
 
@@ -66,6 +68,8 @@ export const SeparatorHoveredTab = () => `<div class='fddocs-icon-tab-container'
 SeparatorHoveredTab.storyName = 'Separator hovered tab state';
 SeparatorHoveredTab.parameters = {
     docs: {
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };

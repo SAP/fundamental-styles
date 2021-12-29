@@ -146,7 +146,8 @@ export const Sizes = () => `
 
 Sizes.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
 | Small          | 0.75rem    | \`--sm\`         |
@@ -154,6 +155,7 @@ Sizes.parameters = {
 | Large          | 1.125rem   | \`--lg\`         |
 | Extra Large    | 1.875rem   | \`--xl\`         |
 `
+        }
     }
 };
 
@@ -259,10 +261,12 @@ export const FillValues = () => `
 FillValues.storyName = 'Fill values';
 FillValues.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display fill values with the status indicator i.e 'critical,negative,positive', add the \`fd-status-indicator--negative\`
 modifier class together with the \`fd-status-indicator\` class.
 `
+        }
     }
 };
 
@@ -405,10 +409,12 @@ export const StatusIndicatorLabels = () => `
 StatusIndicatorLabels.storyName = 'Status Indicator With Label';
 StatusIndicatorLabels.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display label values with the Status indicator i.e label and indicator image, add the \`fd-status-indicator--lg__text \` and \`fd-status-indicator--positive__text \`
 modifier class for defining the font size and colour of the Label together with the \`fd-status-indicator--htext\` for horizontal positioning of the label.
 `
+        }
     }
 };
 
@@ -492,9 +498,11 @@ export const StatusIndicatorLinearFilling = () => `
 StatusIndicatorLinearFilling.storyName = 'Status Indicator With Linear filling';
 StatusIndicatorLinearFilling.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either clockwise or counterclockwise.
 `
+        }
     }
 };
 
@@ -637,9 +645,11 @@ export const StatusIndicatorCoreoGraphy = () => `
 StatusIndicatorCoreoGraphy.storyName = 'Status Indicator With Coreographed filling';
 StatusIndicatorCoreoGraphy.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 		Example to demonstrate the order dispatch from the manufacturing unit
 		`
+        }
     }
 };
 
@@ -716,9 +726,11 @@ export const StatusIndicatorRadialFilling = () => `
 StatusIndicatorRadialFilling.storyName = 'Status Indicator With Radial filling';
 StatusIndicatorRadialFilling.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display Radial filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<radialGradient>\` property  \`cx,cy,r,fx,fy\`. Filling can be done either clockwise or counterclockwise.
 `
+        }
     }
 };
 
@@ -879,8 +891,10 @@ export const StatusIndicatorAngularFilling = () => `
 StatusIndicatorAngularFilling.storyName = 'Status Indicator With Angular filling';
 StatusIndicatorAngularFilling.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either clockwise or counterclockwise.
 `
+        }
     }
 };

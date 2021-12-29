@@ -41,8 +41,10 @@ Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The default token is displayed in grey with text, and a close button that will remove the token when selected. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
+        description: {
+            story: `The default token is displayed in grey with text, and a close button that will remove the token when selected. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
         `
+        }
     }
 };
 
@@ -75,8 +77,10 @@ export const Selected = () => `<span class="fd-token fd-token--selected" role="b
 Selected.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `Tokens can be displayed in blue, signaling to the user that they are selected. To display selected tokens, add the \`fd-token--selected\` modifier class to the main element.
+        description: {
+            story: `Tokens can be displayed in blue, signaling to the user that they are selected. To display selected tokens, add the \`fd-token--selected\` modifier class to the main element.
         `
+        }
     }
 };
 
@@ -106,8 +110,10 @@ ReadOnlyToken.storyName = 'Read-only';
 ReadOnlyToken.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `Tokens can be displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button. To display tokens as read-only, add the \`fd-token--readonly\` modifier class to the main element.
+        description: {
+            story: `Tokens can be displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button. To display tokens as read-only, add the \`fd-token--readonly\` modifier class to the main element.
         `
+        }
     }
 };
 
@@ -141,8 +147,10 @@ CompactToken.storyName = 'Compact';
 CompactToken.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `Tokens can be displayed in compact mode, which is ideal for larger desktop screens. To display compact tokens, add the \`fd-token--compact\` modifier class to the main element.
+        description: {
+            story: `Tokens can be displayed in compact mode, which is ideal for larger desktop screens. To display compact tokens, add the \`fd-token--compact\` modifier class to the main element.
         `
+        }
     }
 };
 
@@ -221,10 +229,12 @@ CozyTokenizer.storyName = 'Tokenizer';
 CozyTokenizer.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `Tokenizer is a container for tokens, which is often placed inside **Multi-Input** components. It is displayed in cozy mode; therefore, the user can swipe the tokens to the left or right.
+        description: {
+            story: `Tokenizer is a container for tokens, which is often placed inside **Multi-Input** components. It is displayed in cozy mode; therefore, the user can swipe the tokens to the left or right.
 
 To enable focus, the \`is-focus\` class must be added the container.
         `
+        }
     }
 };
 
@@ -303,10 +313,12 @@ CompactTokenizer.storyName = 'Compact tokenizer';
 CompactTokenizer.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The tokenizer can be displayed in compact mode to be viewed on larger desktop screens. Contrary to the previous example, the user can view the tokens by pressing the right or left arrow keys.
+        description: {
+            story: `The tokenizer can be displayed in compact mode to be viewed on larger desktop screens. Contrary to the previous example, the user can view the tokens by pressing the right or left arrow keys.
 
 To display a compact tokenizer, add the \`fd-tokenizer--compact\` modifier class to the main element.
         `
+        }
     }
 };
 
@@ -380,7 +392,9 @@ ScrollableTokenizer.storyName = 'Scrollable tokenizer';
 ScrollableTokenizer.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The tokenizer can be scrollable by adding the \`fd-tokenizer--scrollable\` modifier class to the main element. The user can view the tokens by pressing the \`Tab\` key, then \`Shift + Tab\` to jump to the next one.
+        description: {
+            story: `The tokenizer can be scrollable by adding the \`fd-tokenizer--scrollable\` modifier class to the main element. The user can view the tokens by pressing the \`Tab\` key, then \`Shift + Tab\` to jump to the next one.
         `
+        }
     }
 };

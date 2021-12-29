@@ -31,7 +31,9 @@ export const Sizes = () => `
 Sizes.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
+        description: {
+            story: 'Icons don’t have predefined sizes because they align with the font size value. They are vector graphics, meaning they can be easily resized without compromising their appearance. And because icons are essentially a font, there are unlimited sizes.'
+        }
     }
 };
 
@@ -81,7 +83,9 @@ export const AvailableIcons = () => {
 AvailableIcons.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'There are several icons available. To display any one of these icons, add the `sap-icon--{icon-name}` modifier class identifying the icon style to the `sap-icon` class. For example, for a search icon, add `sap-icon sap-icon--search` with the desired font size value.'
+        description: {
+            story: 'There are several icons available. To display any one of these icons, add the `sap-icon--{icon-name}` modifier class identifying the icon style to the `sap-icon` class. For example, for a search icon, add `sap-icon sap-icon--search` with the desired font size value.'
+        }
     },
     skipRTLSnapshot: true
 };

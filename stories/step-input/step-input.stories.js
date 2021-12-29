@@ -43,8 +43,10 @@ Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The default step input displays an input field with a plus and minus icon on opposing sides to either increase or decrease the value. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
+        description: {
+            story: `The default step input displays an input field with a plus and minus icon on opposing sides to either increase or decrease the value. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
         `
+        }
     }
 };
 
@@ -83,8 +85,10 @@ export const Compact = () => `<label class="fd-form-label" for="step-1">Compact 
 Compact.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The step input can be displayed in compact mode, which is ideal for desktop screens. To display a compact step input, add the \`--compact\` modifier class to the main element, as well as the button and input elements.
+        description: {
+            story: `The step input can be displayed in compact mode, which is ideal for desktop screens. To display a compact step input, add the \`--compact\` modifier class to the main element, as well as the button and input elements.
         `
+        }
     }
 };
 
@@ -195,7 +199,8 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
 States.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Step input can be displayed in various states such as Success, Information, Error and Warning.
+        description: {
+            story: `Step input can be displayed in various states such as Success, Information, Error and Warning.
 
 **To display step input in a semantic state, add the following classes to the main elements:**
 
@@ -207,6 +212,7 @@ Error | \`is-error\`
 Warning | \`is-warning\`
 
         `
+        }
     }
 };
 
@@ -239,8 +245,10 @@ export const Focused = () => `<label class="fd-form-label" for="step-20">Focused
 Focused.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `By default, step input has a built-in focused state, however; it is not supported by IE11. To enable the focused state on IE11, add the \`is-focus\` class to the main element.
+        description: {
+            story: `By default, step input has a built-in focused state, however; it is not supported by IE11. To enable the focused state on IE11, add the \`is-focus\` class to the main element.
         `
+        }
     }
 };
 
@@ -273,8 +281,10 @@ export const Disabled = () => `<label class="fd-form-label" for="step-13">Disabl
 Disabled.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Step input can be disabled by adding the \`is-disabled\` class to the main element.
+        description: {
+            story: `Step input can be disabled by adding the \`is-disabled\` class to the main element.
         `
+        }
     }
 };
 
@@ -311,7 +321,9 @@ ReadOnly.storyName = 'Read-only';
 ReadOnly.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Step input can be displayed as read-only by adding the \`is-readonly\` class to the main element.
+        description: {
+            story: `Step input can be displayed as read-only by adding the \`is-readonly\` class to the main element.
         `
+        }
     }
 };

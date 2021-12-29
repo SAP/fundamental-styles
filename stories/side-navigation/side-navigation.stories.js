@@ -81,9 +81,11 @@ Cozy.storyName = 'Default';
 Cozy.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 The default side navigation is displayed in cozy mode with one navigation level. Because there is only one level, all further navigation is shown in the content area. The \`fd-nested-list--text-only\` modifier class should be added to the lists in both the main and utility sections.
         `
+        }
     }
 };
 
@@ -141,9 +143,11 @@ CozyIcons.storyName = 'Icons';
 CozyIcons.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 Side navigation can be displayed with icons. In the expanded state, entries can consist of only text or an icon with text. The use or non-use of icons must be consistent for all links on one level. Do not combine entries with and without icons on the same level. To display icons in list items, add the \`fd-nested-list__icon\` class within the list items.
         `
+        }
     }
 };
 
@@ -228,10 +232,12 @@ CozyGrouping.storyName = 'Group';
 CozyGrouping.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 Side navigation can be displayed with group headers that organize the entries, which is ideal for when there is more than one level of hierarchy. When they are grouped, the entries on the first level are just headers and don't trigger navigation themselves.
 <br><br>It's recommended to use up to two levels of navigation, however; for more levels of navigation, use the content area. When expanded, the \`is-expanded\` class should also be extended to the content element. To trigger another level, use the \`fd-nested-list__button\` element.
         `
+        }
     }
 };
 
@@ -336,9 +342,11 @@ ComplexCozySideNav.storyName = 'Complex';
 ComplexCozySideNav.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: `
+        description: {
+            story: `
 Side navigation can display several different features such as icons, group headers, and two levels of navigation.
         `
+        }
     }
 };
 
@@ -442,9 +450,11 @@ ComplexCompactSideNav.storyName = 'Complex (compact)';
 ComplexCompactSideNav.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: `
+        description: {
+            story: `
 Side navigation can be displayed in compact mode and can also display several features like icons, group headers, and two levels of navigation. Compact mode is best viewed from a large desktop screen. To display a complex side navigation in compact mode, add the \`fd-nested-list--compact\` modifier class to the nested list element.
         `
+        }
     }
 };
 
@@ -510,10 +520,12 @@ CondensedStateCozy.storyName = 'Condensed';
 CondensedStateCozy.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. When the user selects an entry from the navigation, a **Popover** is displayed. The default size for the popover body is often longer than the text length. However, the length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
 <br><br>To display a condensed side navigation, add the \`fd-side-nav--condensed\` modifier class to the main element.
         `
+        }
     }
 };
 
@@ -579,10 +591,12 @@ CondensedStateCompact.storyName = 'Condensed (compact)';
 CondensedStateCompact.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 Side navigation can be displayed in a condensed state, showing only icons that represent the navigation entries. Like the previous example, the default size for the popover body is often longer than the text length, and can be adjusted by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\` element.
 <br><br>To display a condensed side navigation in compact mode, add the \` fd-side-nav--condensed\` modifier class to the main element and the \`fd-nested-list--compact\` modifier class to the nested list element.
 `
+        }
     }
 };
 
@@ -1331,8 +1345,10 @@ export const NestedListPopover = () => `<div class="fddocs-container" style="mar
 NestedListPopover.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `
+        description: {
+            story: `
 Nested list can be displayed inside popover.
         `
+        }
     }
 };

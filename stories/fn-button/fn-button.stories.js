@@ -122,7 +122,9 @@ Primary.storyName = 'Primary Buttons';
 Primary.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Primary buttons are two types: default and emphasized. For the default one no modifier class is needed, just add the `.fn-button` class to your html element. For emphasized button add `.fn-button--emphasized` modifier class to the `.fn-button` base class.'
+        description: {
+            story: 'Primary buttons are two types: default and emphasized. For the default one no modifier class is needed, just add the `.fn-button` class to your html element. For emphasized button add `.fn-button--emphasized` modifier class to the `.fn-button` base class.'
+        }
     }
 };
 
@@ -204,7 +206,8 @@ Secondary.storyName = 'Secondary Buttons';
 Secondary.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Secondary buttons are three types: ghost, transparent and neutral.
+        description: {
+            story: `Secondary buttons are three types: ghost, transparent and neutral.
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;        | Modifier class           |
 | ------------------------------------ | ------------------------ |
@@ -212,6 +215,7 @@ Secondary.parameters = {
 | transparent&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-button--transparent\`|
 | neutral&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--neutral\`    |
 `
+        }
     }
 };
 
@@ -341,7 +345,8 @@ Semantic.storyName = 'Semantic Buttons';
 Semantic.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `For semantic button add the appropriate modifier class to the \`.fn-button\` base class.
+        description: {
+            story: `For semantic button add the appropriate modifier class to the \`.fn-button\` base class.
 
 | Style&nbsp;&nbsp;&nbsp;&nbsp;     | Modifier class           |
 | --------------------------------- | ------------------------ |
@@ -352,6 +357,7 @@ Semantic.parameters = {
 | reject&nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--reject\`     |
 | negative&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--negative\`   |
         `
+        }
     }
 };
 
@@ -443,7 +449,8 @@ Icon.storyName = 'Icon Buttons';
 Icon.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Depending on where you want the icon to be rendered add the appropriate modifier class to the \`.fn-button\` base class.
+        description: {
+            story: `Depending on where you want the icon to be rendered add the appropriate modifier class to the \`.fn-button\` base class.
 
 | Structure&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class           |
 | --------------------------------- | ------------------------ |
@@ -451,6 +458,7 @@ Icon.parameters = {
 | Icon-Right&nbsp;&nbsp;&nbsp;&nbsp;| \`fn-button--icon-right\`|
 | Icon-Only&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--icon-only\` |
 `
+        }
     }
 };
 
@@ -516,7 +524,9 @@ Toggle.storyName = 'Toggle Buttons';
 Toggle.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Add the `.fn-button--selected` class to the button when it is in toggled (selected) state.'
+        description: {
+            story: 'Add the `.fn-button--selected` class to the button when it is in toggled (selected) state.'
+        }
     }
 };
 
@@ -636,7 +646,9 @@ Segmented.storyName = 'Segmented Button';
 Segmented.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };
 
@@ -686,6 +698,8 @@ Nested.storyName = 'Nested Buttons';
 Nested.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };

@@ -82,12 +82,14 @@ export const Layout = () => `
 Layout.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `
+        description: {
+            story: `
             Show the current progress as a percentage value between 0% and 100%.
             Alternatively, you can show the current progress as text in addition to the bar.
             In this case, the text is shown on the right of the bar if the progress is 50% or less. In all other cases, the progress is shown right-aligned on the bar itself
             You also have the option of showing any application-specific text instead of a percentage.
         `
+        }
     }
 };
 
@@ -142,7 +144,9 @@ ValueStates.storyName = 'States';
 ValueStates.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: 'The progress indicator can visualize different value states that are represented by various theme-dependent semantic colors. The states are: normal, success, warning, error, and information.'
+        description: {
+            story: 'The progress indicator can visualize different value states that are represented by various theme-dependent semantic colors. The states are: normal, success, warning, error, and information.'
+        }
     }
 };
 
@@ -196,6 +200,8 @@ Truncation.storyName = 'Truncation Behaviour';
 Truncation.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: 'If the length of the text exceeds the available space in the progress indicator, the text truncates. In this case, clicking the progress indicator displays an information popover with the full text.'
+        description: {
+            story: 'If the length of the text exceeds the available space in the progress indicator, the text truncates. In this case, clicking the progress indicator displays an information popover with the full text.'
+        }
     }
 };

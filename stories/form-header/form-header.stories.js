@@ -17,8 +17,10 @@ export const Primary = () => `<div class="fd-form-header">
 Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Default form headers are displayed in text that does not wrap but truncates into an ellipsis.
 `
+        }
     }
 };

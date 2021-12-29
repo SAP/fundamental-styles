@@ -53,7 +53,8 @@ export const Types = () => `<div class="fddocs-container fddocs-button-container
 Types.storyName = 'Button styles';
 Types.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 - **Default button** is used for neutral or informative (secondary) actions.
 - **Emphasized button** is used to indicate the primary action on the screen.
 - **Ghost button** is used to trigger secondary actions. If a page already has a primary action, but you also need to highlight the most important action in a content toolbar, use the ghost style.
@@ -63,6 +64,7 @@ Types.parameters = {
 - **Transparent button** is used to trigger a negative path action within a header or footer bar, and secondary actions in toolbars.
 
 `
+        }
     }
 };
 
@@ -124,7 +126,9 @@ export const Toggle = () => `<h4>Inactive state of toggle button</h4>
 Toggle.storyName = 'Toggle button';
 Toggle.parameters = {
     docs: {
-        storyDescription: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the action to active.'
+        description: {
+            story: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the action to active.'
+        }
     }
 };
 
@@ -148,8 +152,10 @@ export const SegmentedButton = () => `
 SegmentedButton.storyName = 'Segmented button';
 SegmentedButton.parameters = {
     docs: {
-        storyDescription: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
+        description: {
+            story: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
         <br><br>It can be displayed by using the \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.`
+        }
     }
 };
 
@@ -177,10 +183,12 @@ export const BadgeOnButton = () => `
 BadgeOnButton.storyName = 'Button With Badge';
 BadgeOnButton.parameters = {
     docs: {
-        storyDescription: `Button gets a badge in cases of collecting a number of items from various pages in order to
+        description: {
+            story: `Button gets a badge in cases of collecting a number of items from various pages in order to
         trigger an action. <br/>
         Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge. <br/>
         <b>Badges cannot contain more characters than 4</b>.`
+        }
     }
 };
 
@@ -284,7 +292,9 @@ MenuButton.storyName = 'Menu button';
 MenuButton.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.'
+        description: {
+            story: 'The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.'
+        }
     }
 };
 
@@ -372,7 +382,8 @@ SplitMenuButton.storyName = 'Split menu button';
 SplitMenuButton.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available.
+        description: {
+            story: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available.
 <br><br> Note: If the default action is displayed as an icon only, all the menu items must contain icons.
 
 **The split menu button can behave in two different ways:**
@@ -382,6 +393,7 @@ SplitMenuButton.parameters = {
 
 The split menu button can be displayed by using \`fd-button-split fd-has-margin-right-small\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
 `
+        }
     }
 };
 
@@ -411,9 +423,11 @@ Sizes.storyName = 'Button sizes';
 Sizes.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `
+        description: {
+            story: `
 The buttons in the first row are displayed in cozy size, which is the default sizing and does not require a modifier. The compact buttons shown in the second row, however, can be displayed by adding the \`–compact\` modifier class to the element.
 `
+        }
     }
 };
 
@@ -441,7 +455,8 @@ IconAndText.storyName = 'Icon or text';
 IconAndText.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `
+        description: {
+            story: `
 These buttons contain either icons **or** text, as it is highly recommended not to combine the two.
 
 **Use icon buttons for basic actions such as:**
@@ -454,9 +469,11 @@ These buttons contain either icons **or** text, as it is highly recommended not 
 Make sure the default accessibility text for the icon is appropriate for your use case. If the text is not ideal, define an app-specific accessibility text.
 
 
-All button styles can be paired with an icon. You can use the \`sap-icon--{icon-name}\` class to attach an icon to the button.
+All button styles can be paired with an icon. You can use the \`sap-icon--{icon-name }
+}\` class to attach an icon to the button.
 The full list of all the available icons can be found on the <a href="icon.html">Icon</a> page.
 `
+        }
     }
 };
 
@@ -516,7 +533,8 @@ ButtonStates.storyName = 'Button states';
 ButtonStates.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `
+        description: {
+            story: `
 These button types indicate different states: normal, selected, disabled and focusable disabled.
 
 - **Normal**: The button’s default state. It can be selected to perform a corresponding action.
@@ -524,6 +542,7 @@ These button types indicate different states: normal, selected, disabled and foc
 - **Disabled**: It cannot be selected. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility.
 - **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility without using the \`disabled\` property. By adding the hidden \`_instructions\` element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the \`aria-live\` property.
 `
+        }
     }
 };
 
@@ -537,7 +556,8 @@ export const FocusableDisabled = () => `
 FocusableDisabled.storyName = 'Focusable disabled';
 FocusableDisabled.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The disabled button can be focusable by adding the \`aria-disabled\` attribute. To enable the focus ring in a focusable disabled button, ensure that \`is-disabled\` is present while \`disabled\` is not.
 
 ####Accessibility
@@ -548,5 +568,6 @@ When the state of the button has changed, add \`aria-live=”assertive”\` to p
 Note: For the text to be read out loud by screen readers, a helper text has been added with \`aria-describedby\` matching the \`id\` of the paragraph element with the \`_instructions\` element. The element uses the \`screen-reader-only\` styling so that it is not visible.
 
 `
+        }
     }
 };

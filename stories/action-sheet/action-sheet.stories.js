@@ -74,8 +74,10 @@ export const ActionSheetDesktop = () => `
 ActionSheetDesktop.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription:
+        description: {
+            story:
             'The action sheet is displayed in desktop mode by adding the `fd-action-sheet--compact` modifier class to the container, and `fd-button--compact` to each button.'
+        }
     }
 };
 
@@ -131,8 +133,10 @@ export const ActionSheetTablet = () => `
 ActionSheetTablet.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription:
+        description: {
+            story:
             'Although the tablet mode is visually similar to desktop, it doesn\'t require any modifier classes. Therefore, the container and buttons appear slightly larger for better visibility.'
+        }
     }
 };
 
@@ -191,8 +195,10 @@ export const ActionSheetMobile = () => `<div style="width: 350px; height: 600px;
 ActionSheetMobile.parameters = {
     docs: {
         iframeHeight: 800,
-        storyDescription: `To display the action sheet on mobile screens,
+        description: {
+            story: `To display the action sheet on mobile screens,
         the container requires a \`fd-action-sheet--mobile\` modifier class and is additionally wrapped by \`fd-action-sheet__wrapper\`.`
+        }
     }
 };
 

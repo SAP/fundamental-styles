@@ -281,7 +281,9 @@ export const TextAndIcon = () => `<div style="height: 200px;">
 TextAndIcon.storyName = 'Horizontal Navigation Text And Icon';
 TextAndIcon.parameters = {
     docs: {
-        storyDescription: 'Icon Tab Bars with Single Click Areas'
+        description: {
+            story: 'Icon Tab Bars with Single Click Areas'
+        }
     }
 };
 
@@ -391,6 +393,8 @@ export const TextAndIconPhone = () => `<div style="height: 200px;">
 TextAndIconPhone.storyName = 'Horizontal Navigation Text And Icon Phone View';
 TextAndIconPhone.parameters = {
     docs: {
-        storyDescription: 'Icon Tab Bars with Two Click Areas'
+        description: {
+            story: 'Icon Tab Bars with Two Click Areas'
+        }
     }
 };

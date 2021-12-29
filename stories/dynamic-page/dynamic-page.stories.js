@@ -196,10 +196,12 @@ export const Desktop = () => `
 
 Desktop.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add modifier class \`fd-dynamic-page--xl\`.
+        description: {
+            story: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add modifier class \`fd-dynamic-page--xl\`.
 
 In addition, add the modifier classes \`--add-shadow\` to the unordered list, and \`--overflow\` at the parent level for the box-shadow styling.
 `
+        }
     }
 };
 
@@ -337,9 +339,11 @@ export const Tablet = () => `
 
 Tablet.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add modifier class \`fd-dynamic-page--md\`.
+        description: {
+            story: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add modifier class \`fd-dynamic-page--md\`.
 
 It is recommended that the navigation actions are displayed in a separate row above product actions, and are placed at the same level as the breadcrumb component.`
+        }
     }
 };
 
@@ -493,10 +497,12 @@ export const Mobile = () =>
 
 Mobile.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add modifier class \`fd-dynamic-page--sm\`.
+        description: {
+            story: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add modifier class \`fd-dynamic-page--sm\`.
 
 To display the breadcrumb and close button, they must be wrapped in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions are functional without being wrapped in an additional container.
 Use \`fd-dynamic-page__toolbar--content\` for the title content when it is used in an overflow toolbar.`
+        }
     }
 };
 
@@ -651,7 +657,9 @@ export const MobileCollapsed = () =>
 MobileCollapsed.storyName = 'Collapsed Header (mobile)';
 MobileCollapsed.parameters = {
     docs: {
-        storyDescription: 'In the example below, the dynamic page is displayed with a collapsed header for mobile screens.'
+        description: {
+            story: 'In the example below, the dynamic page is displayed with a collapsed header for mobile screens.'
+        }
     }
 };
 
@@ -773,8 +781,10 @@ export const SummaryLine = () =>
 SummaryLine.storyName = 'Summary Line (mobile)';
 SummaryLine.parameters = {
     docs: {
-        storyDescription: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line,
+        description: {
+            story: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line,
         add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
+        }
     }
 };
 
@@ -854,8 +864,10 @@ export const Expandable = () =>
 Expandable.storyName = 'Expanded Header';
 Expandable.parameters = {
     docs: {
-        storyDescription: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature).
+        description: {
+            story: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature).
         To collapse the dynamic page, add the \`--collapsed\` modifier class to the title area and title elements.`
+        }
     }
 };
 
@@ -934,7 +946,9 @@ export const CollapsedHeader = () =>
 
 CollapsedHeader.parameters = {
     docs: {
-        storyDescription: 'In the example below, the dynamic page is displayed with a collapsed header for desktop screens.'
+        description: {
+            story: 'In the example below, the dynamic page is displayed with a collapsed header for desktop screens.'
+        }
     }
 };
 
@@ -1010,7 +1024,9 @@ export const OnlyCollapse = () =>
 OnlyCollapse.storyName = 'Without pin';
 OnlyCollapse.parameters = {
     docs: {
-        storyDescription: 'The dynamic page can be displayed without a pin button, giving users the option to only expand or collapse the header area.'
+        description: {
+            story: 'The dynamic page can be displayed without a pin button, giving users the option to only expand or collapse the header area.'
+        }
     }
 };
 
@@ -1282,12 +1298,14 @@ export const WithFacets = () =>
 WithFacets.storyName = 'With header facets';
 WithFacets.parameters = {
     docs: {
-        storyDescription: `To have the image from the image facet appear next to the title, add the class
+        description: {
+            story: `To have the image from the image facet appear next to the title, add the class
         \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the
         \`fd-dynamic-page__title-container\` class.
         Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class
         for proper alignment with the image.
 `
+        }
     }
 };
 

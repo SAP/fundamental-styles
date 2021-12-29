@@ -56,6 +56,8 @@ Primary.storyName = 'Dialog';
 
 Primary.parameters = {
     docs: {
-        storyDescription: 'Dialog example with title, text and buttons in the footer'
+        description: {
+            story: 'Dialog example with title, text and buttons in the footer'
+        }
     }
 };

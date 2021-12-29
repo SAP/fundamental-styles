@@ -31,7 +31,9 @@ spec:
 Primary.storyName = 'Code Block';
 Primary.parameters = {
     docs: {
-        storyDescription: 'Code example as a block where you are include multiple lines'
+        description: {
+            story: 'Code example as a block where you are include multiple lines'
+        }
     }
 };
 
@@ -40,6 +42,8 @@ export const InlineCode = () => `You can add inline code like here <code class="
 
 InlineCode.parameters = {
     docs: {
-        storyDescription: 'Inline Code Example which can be used as part of a bigger text paragraph'
+        description: {
+            story: 'Inline Code Example which can be used as part of a bigger text paragraph'
+        }
     }
 };

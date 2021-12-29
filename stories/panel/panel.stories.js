@@ -52,8 +52,10 @@ export const Fixed = () => `<div class="fd-panel fd-panel--fixed">
 Fixed.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+        description: {
+            story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
         ` }
+    }
 };
 
 export const Expandable = () => `<div class="fd-panel">
@@ -113,8 +115,10 @@ export const Expandable = () => `<div class="fd-panel">
 Expandable.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
+        description: {
+            story: `Expandable panels are much like fixed panels, except their content can be expanded and collapsed (including the info toolbar, if available).
         ` }
+    }
 };
 
 export const Compact = () => `<div class="fd-panel fd-panel--compact">
@@ -149,8 +153,10 @@ export const Compact = () => `<div class="fd-panel fd-panel--compact">
 Compact.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Panels can be displayed in compact mode, which decreases the padding and button sizes. To display a compact panel, add the \`fd-panel--compact\` modifier class to the main element.
+        description: {
+            story: `Panels can be displayed in compact mode, which decreases the padding and button sizes. To display a compact panel, add the \`fd-panel--compact\` modifier class to the main element.
         ` }
+    }
 };
 
 export const FixedHeightContent = () => `<div class="fd-panel">
@@ -196,6 +202,8 @@ FixedHeightContent.storyName = 'Fixed height';
 FixedHeightContent.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
+        description: {
+            story: `When the height of the panel's content is set to a fixed size, the content area becomes scrollable.
         ` }
+    }
 };

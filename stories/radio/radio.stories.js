@@ -74,7 +74,9 @@ Primary.storyName = 'Responsiveness';
 Primary.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'A radio button can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+        description: {
+            story: 'A radio button can appear in two different sizes. In `cozy` mode, it is bigger than it is in `compact` mode. This makes the checkbox easier to select on touch devices.'
+        }
     }
 };
 
@@ -105,13 +107,15 @@ export const Inline = () => `<fieldset class="fd-fieldset" id="radio4">
 
 Inline.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Try to align radio buttons vertically instead of horizontally, especially for long labels. Horizontal alignment is harder to read and localize. Consider horizontal alignment in cases of one-word labels, such as in the background color settings example above.
 
 In forms, always align radio buttons vertically instead of horizontally as the length of the labels may vary for different languages.
 
 Do not put two radio button groups right next to each other as it is difficult to determine which buttons belong to which group. Use group labels and padding to separate them.
 `
+        }
     }
 };
 
@@ -252,6 +256,8 @@ export const InteractionStates = () => `<div style="display:flex;justify-content
 InteractionStates.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: 'A radio button can have different states that affect its appearance value states, such as “error” or “warning”, which are indicated using semantic colors'
+        description: {
+            story: 'A radio button can have different states that affect its appearance value states, such as “error” or “warning”, which are indicated using semantic colors'
+        }
     }
 };

@@ -237,10 +237,12 @@ export const AsFormItem = () => `<div style="height:700px">
 AsFormItem.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: `
+        description: {
+            story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
 Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
 `
+        }
     }
 };
 
@@ -365,10 +367,12 @@ export const TwoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
 TwoItemsAndItemsGrouping.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 The \`ComboBox\` component can be customized by adding additional information in additional columns as seen below.
 
 In cases where the list items need to be categorized into groups, it is possible to add headers for each category.`
+        }
     }
 };
 
@@ -424,12 +428,14 @@ export const MatchPopoverBodySize = () => `<div style="display:flex;height:250px
 MatchPopoverBodySize.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: `
+        description: {
+            story: `
 The default length size of the popover body is often different from the text length.
 The body length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\`.
 This class has been added to all the \`Combobox\` examples above.
 In the example you can see how the \`Combobox\` component looks without the \`fd-popover__body--dropdown-fill\` modifier.
 `
+        }
     }
 };
 
@@ -462,12 +468,14 @@ export const DisabledAndReadOnly = () => `<div style="display:flex;justify-conte
 
 DisabledAndReadOnly.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To disable a \`Combobox\` component, the disabled attribute needs to be added to the \`fd-popover__control\` and the \`fd-input__control\` elements.
 The disabled state can also be achieved by adding the \`.is-disable\` class or the \`aria-disabled="true"\` attribute.
 
 To make the \`Combobox\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
 This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute.`
+        }
     }
 };
 
@@ -520,13 +528,15 @@ export const Semantic = () => `<div style="height:200px">
 Semantic.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: `
+        description: {
+            story: `
 For a complete list of states supported by the \`combobox\` component, please see the documentation for the form or select components.
 
 The semantic mode can be used to modify the combobox component by adding one of
 \`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into fd-input-group element.
 To add text in the \`body\` of the component, simply include your text in the \`fd-list__message\` under the \`ul\` element.
 `
+        }
     }
 };
 
@@ -612,9 +622,11 @@ id="select-dialog-example" style="height:600px">
 Mobile.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `
+        description: {
+            story: `
 For mobile devices, or tablets, combobox component should be displayed in fullscreen mode.
 So instead of using popover and dropdown, it should be wrapped in \`dialog\` and \`bar\` components.
 `
+        }
     }
 };

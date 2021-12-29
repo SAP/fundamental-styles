@@ -50,8 +50,10 @@ PositionLeft.storyName = 'Left';
 PositionLeft.parameters = {
     docs: {
         iframeHeight: 160,
-        storyDescription:
+        description: {
+            story:
             'To display side content from the left, put `fd-dynamic-side__side` as the first child element of `fd-dynamic-side`.'
+        }
     }
 };
 
@@ -69,8 +71,10 @@ PositionRight.storyName = 'Right';
 PositionRight.parameters = {
     docs: {
         iframeHeight: 160,
-        storyDescription:
+        description: {
+            story:
             'To display side content from the right, put `fd-dynamic-side__side` as the second child element of `fd-dynamic-side`.'
+        }
     }
 };
 
@@ -88,8 +92,10 @@ PositionBottom.storyName = 'Below';
 PositionBottom.parameters = {
     docs: {
         iframeHeight: 260,
-        storyDescription:
+        description: {
+            story:
             'To display side content below the main content area, keep `fd-dynamic-side__side` as the last child element and add the `fd-dynamic-side--below` modifier class.'
+        }
     }
 };
 
@@ -107,8 +113,10 @@ EqualSplit.storyName = 'Equal split';
 EqualSplit.parameters = {
     docs: {
         iframeHeight: 160,
-        storyDescription:
+        description: {
+            story:
             'The equal split mode provides users with a 50:50 view of the main content and side content, which enables users to show more data i.e. for comparison purposes. To enable equal split mode, add the `fd-dynamic-side--equal-split` modifier class to the container.'
+        }
     }
 };
 
@@ -145,7 +153,8 @@ export const Responsiveness = () => `
 Responsiveness.parameters = {
     docs: {
         iframeHeight: 160,
-        storyDescription: `
+        description: {
+            story: `
 To display the dynamic side content for specific screen sizes, use the respective modifier classes:
 
 | Size &nbsp;&nbsp; | Modifier class &nbsp;&nbsp; |
@@ -154,5 +163,6 @@ To display the dynamic side content for specific screen sizes, use the respectiv
 | Medium & Large &nbsp;&nbsp; | \`fd-dynamic-side--md\` |
 | Extra Large &nbsp;&nbsp; | \`fd-dynamic-side--xl\` |
 `
+        }
     }
 };

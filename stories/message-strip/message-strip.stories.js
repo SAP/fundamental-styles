@@ -44,9 +44,11 @@ DefaultStrip.storyName = 'Default';
 DefaultStrip.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: `
+        description: {
+            story: `
 The default message strip can be used for general messages that don’t fit into any of the semantic type use cases. The user should be able to dismiss the message strip (in most cases), so be sure to include the close button and add the \`fd-message-strip--dismissible\` modifier class to the main element.
         `
+        }
     }
 };
 
@@ -63,7 +65,9 @@ export const Information = () => `<div class="fd-message-strip fd-message-strip-
 Information.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: 'The information message strip simply relays useful information to the users. To display an information message strip, add the `fd-message-strip--information` modifier class to the main element.'
+        description: {
+            story: 'The information message strip simply relays useful information to the users. To display an information message strip, add the `fd-message-strip--information` modifier class to the main element.'
+        }
     }
 };
 
@@ -80,7 +84,9 @@ export const Success = () => `<div class="fd-message-strip fd-message-strip--suc
 Success.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: 'The success message strip communicates to the user that an action they’ve completed was successful. To display a success message strip, add the `fd-message-strip--success` modifier class to the main element.'
+        description: {
+            story: 'The success message strip communicates to the user that an action they’ve completed was successful. To display a success message strip, add the `fd-message-strip--success` modifier class to the main element.'
+        }
     }
 };
 
@@ -97,9 +103,11 @@ export const Warning = () => `<div class="fd-message-strip fd-message-strip--war
 Warning.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: `
+        description: {
+            story: `
 The warning message strip warns the user of potential issues; however, the user can still dismiss the message and continue. To display a warning message strip, add the \`fd-message-strip--warning\` modifier class to the main element.
 `
+        }
     }
 };
 
@@ -116,9 +124,11 @@ export const Error = () => `<div class="fd-message-strip fd-message-strip--error
 Error.parameters = {
     docs: {
         iframeHeight: messageStripHeight,
-        storyDescription: `
+        description: {
+            story: `
 The error message strip is triggered after the user enters data incorrectly or when a system error occurs. It should interrupt the user, blocking them from performing any final actions (such as _Submit_) until the error has been rectified. To display the error message strip, add the \`fd-message-strip--error\` modifier class to the main element.
 `
+        }
     }
 };
 
@@ -174,6 +184,8 @@ NoIcons.storyName = 'No icon';
 NoIcons.parameters = {
     docs: {
         iframeHeight: messageStripHeight * 4,
-        storyDescription: 'To display message strip without an icon, add the `fd-message-strip--no-icon` modifier class to the main element.'
+        description: {
+            story: 'To display message strip without an icon, add the `fd-message-strip--no-icon` modifier class to the main element.'
+        }
     }
 };

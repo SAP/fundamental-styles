@@ -73,7 +73,9 @@ DesktopAndTablet.storyName = 'Desktop and Tablet Modes';
 DesktopAndTablet.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this. Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
+        description: {
+            story: 'The basic stucture of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown. Default mode is the cozy tablet mode, no class has to be added for this. Use class modifier`fd-menu--compact` on menu container level for desktop mode.'
+        }
     }
 };
 
@@ -214,7 +216,9 @@ export const MobileCozyMode = () => `<div style="width: 50%; display: inline-blo
 MobileCozyMode.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
+        description: {
+            story: 'The basic stucture of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
+        }
     }
 };
 
@@ -255,7 +259,9 @@ SeperatedItems.storyName = 'List with separated items';
 SeperatedItems.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.'
+        description: {
+            story: 'To add separators between the items, use the class `fd-menu__separator` in its own `<span>` after the `<li>` item where you want the separation.'
+        }
     }
 };
 
@@ -338,7 +344,8 @@ DifferentStates.storyName = 'List different states';
 DifferentStates.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Simulate different states to show state behaviour between the items.
 
 - For simulating hover state, use class \`is-hover\` on the menu item.
@@ -348,6 +355,7 @@ Simulate different states to show state behaviour between the items.
 - For simulating disabled state, use class \`is-disabled\` on the menu item.
 
 To remove default box shadow from menu containers use \`fd-menu__list--no-shadow\` or \`fd-menu__sublist--no-shadow\`.`
+        }
     }
 };
 
@@ -390,12 +398,14 @@ MenuIcon.storyName = 'List with Icon';
 MenuIcon.parameters = {
     docs: {
         iframeHeight: 220,
-        storyDescription: `
+        description: {
+            story: `
 To create an addon before or after \`fd-menu__title\` element, use elements with folowing classes inside \`fd-menu__link\`:
 - \`fd-menu__addon-before\`   - styles addon befotre \`fd-menu__title\`
 - \`fd-menu__addon-after\`    - styles addon after \`fd-menu__title\`
 - \`fd-menu__shortcut\`       - styles shortcut placed after \`fd-menu__title\`
 According to Fiori3 design shortcuts should be on desktop devices.`
+        }
     }
 };
 
@@ -459,7 +469,8 @@ export const WithSubmenu = () => `<nav class="fd-menu">
 WithSubmenu.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
 
 For a submenu, do the following:
@@ -468,5 +479,6 @@ For a submenu, do the following:
 - After the end of the \`fd-menu__link\` container, use \`fd-menu__sublist\` class in its own \`<ul>\`
 - Follow the same template for submenu as you would for a normal menu. The same \`fd-menu__item\` and \`fd-menu__link\` works for the subitems too.
 `
+        }
     }
 };

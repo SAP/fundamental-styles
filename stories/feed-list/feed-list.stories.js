@@ -48,7 +48,9 @@ export const Standard = () => `<ul class="fd-feed-list" aria-label="Feed List It
 
 Standard.parameters = {
     docs: {
-        storyDescription: 'The standard feed list item displays a user\'s name and written text, an image and an additional attribute (in this example, it is a time stamp).'
+        description: {
+            story: 'The standard feed list item displays a user\'s name and written text, an image and an additional attribute (in this example, it is a time stamp).'
+        }
     }
 };
 
@@ -80,7 +82,9 @@ export const PlaceHolderImage = () => `<ul class="fd-feed-list" aria-label="Feed
 PlaceHolderImage.storyName = 'Placeholder image';
 PlaceHolderImage.parameters = {
     docs: {
-        storyDescription: 'The feed list item will display a placeholder image if the user does not have an image assigned.'
+        description: {
+            story: 'The feed list item will display a placeholder image if the user does not have an image assigned.'
+        }
     }
 };
 
@@ -104,7 +108,9 @@ export const NoImage = () => `<ul class="fd-feed-list" aria-label="Feed List Ite
 NoImage.storyName = 'No image';
 NoImage.parameters = {
     docs: {
-        storyDescription: 'The feed list item can be displayed without an image by removing the `fd-avatar` element from the container.'
+        description: {
+            story: 'The feed list item can be displayed without an image by removing the `fd-avatar` element from the container.'
+        }
     }
 };
 
@@ -138,7 +144,9 @@ export const Linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item
 
 Linked.parameters = {
     docs: {
-        storyDescription: 'The feed list item can display linked usernames (and images). To display a linked username, add the `fd-link` class with the `fd-link--emphasized` modifier to the `fd-feed-list__name` element.'
+        description: {
+            story: 'The feed list item can display linked usernames (and images). To display a linked username, add the `fd-link` class with the `fd-link--emphasized` modifier to the `fd-feed-list__name` element.'
+        }
     }
 };
 
@@ -171,7 +179,9 @@ export const ShowMore = () => `<ul class="fd-feed-list" aria-label="Feed List It
 ShowMore.storyName = 'Show more';
 ShowMore.parameters = {
     docs: {
-        storyDescription: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). Truncation occurs when the text reaches 300 characters. When hovering over the link, the text is highlighted and underlined.'
+        description: {
+            story: 'Feed list items can display a <i>MORE</i> link that can show more text (when/if it is truncated). Truncation occurs when the text reaches 300 characters. When hovering over the link, the text is highlighted and underlined.'
+        }
     }
 };
 
@@ -204,7 +214,9 @@ export const ShowLess = () => `<ul class="fd-feed-list" aria-label="Feed List It
 ShowLess.storyName = 'Show less';
 ShowLess.parameters = {
     docs: {
-        storyDescription: 'Similarly, feed list items can display a <i>LESS</i> link that will revert the text back to when it was truncated.'
+        description: {
+            story: 'Similarly, feed list items can display a <i>LESS</i> link that will revert the text back to when it was truncated.'
+        }
     }
 };
 
@@ -268,7 +280,9 @@ export const WithActions = () => `<ul class="fd-feed-list" aria-label="Feed List
 WithActions.storyName = 'Actions';
 WithActions.parameters = {
     docs: {
-        storyDescription: 'Feed list items can display actions that users can perform on their individual feed posts. These typically include actions like <i>Edit</i> and <i>Delete</i>, however, other actions can be displayed depending on the use case. It is recommended to display a maximum of 5 actions per post.'
+        description: {
+            story: 'Feed list items can display actions that users can perform on their individual feed posts. These typically include actions like <i>Edit</i> and <i>Delete</i>, however, other actions can be displayed depending on the use case. It is recommended to display a maximum of 5 actions per post.'
+        }
     }
 };
 
@@ -338,7 +352,9 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
 
 Group.parameters = {
     docs: {
-        storyDescription: 'Evidently, feed list items can be displayed in a group. The example below displays a feed list item with a placeholder image and two standard feed list items.'
+        description: {
+            story: 'Evidently, feed list items can be displayed in a group. The example below displays a feed list item with a placeholder image and two standard feed list items.'
+        }
     }
 };
 
@@ -409,7 +425,9 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
 Borderless.storyName = 'Borderless group';
 Borderless.parameters = {
     docs: {
-        storyDescription: 'When feed list items are displayed in a group, they are usually separated by borders. However, to remove the borders, add the `fd-feed-list--no-border` modifier class to the main element.'
+        description: {
+            story: 'When feed list items are displayed in a group, they are usually separated by borders. However, to remove the borders, add the `fd-feed-list--no-border` modifier class to the main element.'
+        }
     }
 };
 
@@ -484,6 +502,8 @@ export const Mobile = () => `<div style="width: 350px; height: 600px; position: 
 
 Mobile.parameters = {
     docs: {
-        storyDescription: 'The feed list item can be mobile responsive by adding the `fd-feed-list--s` modifier class to the main element.'
+        description: {
+            story: 'The feed list item can be mobile responsive by adding the `fd-feed-list--s` modifier class to the main element.'
+        }
     }
 };

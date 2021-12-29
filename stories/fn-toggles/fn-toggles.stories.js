@@ -319,7 +319,9 @@ export const CheckboxGroup = () => `${localStyles}
 CheckboxGroup.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group checkbox controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the checkbox controls with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        description: {
+            story: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group checkbox controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the checkbox controls with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        }
     }
 };
 
@@ -547,7 +549,9 @@ export const RadioGroup = () => `${localStyles}
 RadioGroup.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group radio button controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the radio buttons with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        description: {
+            story: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group radio button controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the radio buttons with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        }
     }
 };
 

@@ -86,9 +86,11 @@ Structure.storyName = 'Default';
 Structure.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `
+        description: {
+            story: `
 The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message does not fit with one of the semantic types.
     `
+        }
     }
 };
 
@@ -235,7 +237,8 @@ Types.storyName = 'Semantic types';
 Types.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 6.5,
-        storyDescription: `
+        description: {
+            story: `
 The message box can be displayed with various semantic colors and icons, indicating the type of message being relayed.
 
 Semantic type | Modifier class | Description
@@ -247,6 +250,7 @@ Warning | \`fd-message-box--warning\` | Warning messages highlight potential iss
 Information | \`fd-message-box--information\` | Information messages provide information the user needs to acknowledge, but which does not involve a decision. The message provides information that is useful and relevant, but never critical.
 
         `
+        }
     }
 };
 
@@ -362,7 +366,8 @@ export const Responsive = () =>
 Responsive.parameters = {
     docs: {
         iframeHeight: messageBoxHeight * 4,
-        storyDescription: `
+        description: {
+            story: `
 The message box has 1rem padding all around the body, and the header and footer both inherit their padding from the **Bar** component. Responsive horizontal padding can be applied to the header, body and footer of the message box; however, the amount depends on the screen width.
 
 **To display responsive padding, add the following modifier classes to the content container:**
@@ -378,5 +383,6 @@ Modifier class | rem | Screen width
 
 Enable cozy mode when message box is being displayed on mobile. To display message box in cozy mode, add the \`fd-bar--cozy\` modifier class to the header and footer (this will also apply to the buttons). It's also important to note that the content container should always take the full height and width of mobile screens. To achieve this, add the \`fd-message-box__content--mobile\` modifier class to the content container.
          `
+        }
     }
 };

@@ -311,7 +311,9 @@ export const Days = () => `<div style="display: flex; justify-content: space-aro
 Days.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.'
+        description: {
+            story: 'The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.'
+        }
     }
 };
 
@@ -398,7 +400,9 @@ export const Months = () => `    <div style="display: flex; justify-content: spa
 Months.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.'
+        description: {
+            story: 'The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.'
+        }
     }
 };
 
@@ -648,7 +652,9 @@ export const Years = () => `<div style="display: flex; justify-content: space-ar
 Years.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
+        description: {
+            story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
+        }
     }
 };
 
@@ -811,7 +817,9 @@ export const Compact = () => `<div style="display: flex; justify-content: space-
 Compact.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The calendar component can be displayed in compact mode by adding the `fd-calendar--compact` class to the container element.'
+        description: {
+            story: 'The calendar component can be displayed in compact mode by adding the `fd-calendar--compact` class to the container element.'
+        }
     }
 };
 
@@ -987,7 +995,8 @@ LandscapeMobile.storyName = 'Landscape (mobile)';
 LandscapeMobile.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 While using a mobile in landscape mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen.
 
 Note: For landscape mode, no dialog header element should be used. However, a dialog footer is optional.
@@ -997,6 +1006,7 @@ Note: For landscape mode, no dialog header element should be used. However, a di
 - \`fd-calendar__navigation\` requires the \`fd-calendar__navigation--main\` class.
 - the dismiss button requires the \`fd-calendar__close-button--navigation\` class.
 `
+        }
     }
 };
 
@@ -1193,11 +1203,13 @@ PortraitMobile.storyName = 'Portrait (mobile)';
 PortraitMobile.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 While using a mobile in portrait mode, the calendar component is displayed from a **Dialog** window, taking up the full width and height of the screen. It can be displayed in this way by adding the \`fd-calendar--mobile-portrait\` class to the container element.
 
 Note: For portrait mode, dialog header should always be used and the footer remains optional.
 
 `
+        }
     }
 };

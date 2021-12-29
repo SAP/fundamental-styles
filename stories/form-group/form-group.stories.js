@@ -23,9 +23,11 @@ export const Primary = () => `<div class="fd-form-group">
 Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The default form group component displays an inline label and an input field that is highlighted in blue when selected.
 `
+        }
     }
 };
 
@@ -39,9 +41,11 @@ export const Compact = () => `<div class="fd-form-group">
 
 Compact.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Form group can be displayed in compact mode, which is ideal for larger desktop screens. To display a compact form group, add the \`--compact\` modifier class to the \`fd-input\` element.
 `
+        }
     }
 };
 
@@ -55,9 +59,11 @@ export const Required = () => `<div class="fd-form-group">
 
 Required.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To indicate to the user that it’s required to fill out an input field, add the \`--required\` modifier class to the \`fd-form-label\` element.
 `
+        }
     }
 };
 
@@ -76,9 +82,11 @@ export const GroupHeader = () =>
 GroupHeader.storyName = 'Group header';
 GroupHeader.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Form groups can be grouped together under a header with the \`fd-form-group__header\` class.
 `
+        }
     }
 };
 
@@ -96,9 +104,11 @@ export const GroupHeaderCompact = () =>
 GroupHeaderCompact.storyName = 'Group header (compact)';
 GroupHeaderCompact.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Form group headers can be displayed in compact mode. To display compact group headers, add the \`--compact\` modifier class to the \`fd-form-group__header\` element.
         `
+        }
     }
 };
 
@@ -198,10 +208,12 @@ export const GroupHeaderInFormGrid = () =>
 GroupHeaderInFormGrid.storyName = 'Group header (form grid)';
 GroupHeaderInFormGrid.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 When group headers are displayed in a **Form Grid**, paddings are added to the groups.
 
 To display group headers in a form grid, add the \`fd-col__form-group\` class at the same level as \`fd-form-group\` for the styles to reflect properly. Similarly, when using \`fd-form-item\`, add the \`fd-row__form-item\` element at the same level.
         `
+        }
     }
 };

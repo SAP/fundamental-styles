@@ -86,8 +86,10 @@ Basic.storyName = 'Default';
 Basic.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The default switch displays what resembles a physical switch that toggles between an active and inactive state. It is displayed in cozy mode, which is ideal for mobile and small tablet screens. The switch should always be accompanied by a label that indicates its purpose.
+        description: {
+            story: `The default switch displays what resembles a physical switch that toggles between an active and inactive state. It is displayed in cozy mode, which is ideal for mobile and small tablet screens. The switch should always be accompanied by a label that indicates its purpose.
         `
+        }
     }
 };
 
@@ -141,10 +143,12 @@ WithText.storyName = 'Optional text';
 WithText.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `As mentioned in the previous example, a switch should always be accompanied by a label.
+        description: {
+            story: `As mentioned in the previous example, a switch should always be accompanied by a label.
 
         (code needs fixing)
         `
+        }
     }
 };
 
@@ -186,7 +190,9 @@ SemanticSwitch.storyName = 'States';
 SemanticSwitch.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The switch can be displayed with semantic colors, such as green for active and red for inactive. To display a semantic switch, add the \`fd-switch—semantic\` modifier class to the main element.
+        description: {
+            story: `The switch can be displayed with semantic colors, such as green for active and red for inactive. To display a semantic switch, add the \`fd-switch—semantic\` modifier class to the main element.
         `
+        }
     }
 };

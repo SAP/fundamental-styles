@@ -201,7 +201,8 @@ export const Sizes = () => `<div class="example-container">
 
 Sizes.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
 | Extra small    | 0.75rem    | \`--xs\`         |
@@ -212,6 +213,7 @@ Sizes.parameters = {
 | Compact        | 1rem       | \`--compact\`    |
 | Condensed      | 1rem       | \`--condensed\`  |
 `
+        }
     }
 };
 
@@ -260,11 +262,13 @@ export const CustomIcons = () => `<div class="example-container">
 CustomIcons.storyName = 'Custom icons';
 CustomIcons.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To make the rating indicator to use custom icons needs to be added class \`.fd-rating-indicator--icon\`
 to the \`fd-rating-indicator\` element.
 Also, you need to set the icon class that will implement the icon
 `
+        }
     }
 };
 
@@ -455,10 +459,12 @@ export const HalfValues = () => `<div class="example-container">
 HalfValues.storyName = 'Half values';
 HalfValues.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display half values with the rating indicator i.e 2.5 stars, add the \`fd-rating-indicator--half-star\`
 modifier class together with the \`fd-rating-indicator\` class.
 `
+        }
     }
 };
 
@@ -490,7 +496,8 @@ export const Disabled = () => `<div class="example-container">
 
 Disabled.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To disable rating indicator, the \`[disable]\` attribute needs to be added to all inputs.
 Additionally, one of the selectors listed below needs to be added to the \`fd-rating-indicator\` element:
 
@@ -498,6 +505,7 @@ Additionally, one of the selectors listed below needs to be added to the \`fd-ra
 - \`aria-disable="true"\`
 - \`[disable]\`
 `
+        }
     }
 };
 
@@ -530,10 +538,12 @@ export const DisplayMode = () => `<div class="example-container">
 DisplayMode.storyName = 'Display mode';
 DisplayMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Data can be presented as label-value field pairs without editable fields in display-only forms, see <a href="../?path=/docs/components-forms-form-grid--s-size">Form Grid</a> for more details.
 If you want to include a rating indicator in a display-only form, add the \`.fd-rating-indicator--display-mode\` to the \`fd-rating-indicator\` element.
 `
+        }
     }
 };
 
@@ -566,10 +576,12 @@ export const NonInteractive = () => `<div class="example-container">
 NonInteractive.storyName = 'Non-interactive';
 NonInteractive.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 If you want to include a rating indicator in a display-only form,
 add the \`.fd-rating-indicator--non-interactive\` class to the \`fd-rating-indicator\` element.
 `
+        }
     }
 };
 
@@ -661,10 +673,12 @@ export const DifferentValues = () => `<div class="example-container">
 DifferentValues.storyName = 'Different values';
 DifferentValues.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 It is possible to display the rating indicator with a different number of values.
 It is highly recommended to use 5 as the maximum value, however you can go up to 7
 if it is ideal for your use case.
 `
+        }
     }
 };

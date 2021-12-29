@@ -305,7 +305,9 @@ export const Standart = () => `
 Standart.parameters = {
     docs: {
         iframeHeight: 785,
-        storyDescription: 'The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, therefore add the `fd-avatar--s` modifier class to the `fd-avatar` element.'
+        description: {
+            story: 'The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, therefore add the `fd-avatar--s` modifier class to the `fd-avatar` element.'
+        }
     }
 };
 
@@ -449,7 +451,9 @@ export const Navigation = () => `
 Navigation.parameters = {
     docs: {
         iframeHeight: 355,
-        storyDescription: 'An object list can display links that the users can navigate to. To display a navigation object list, add the `fd-list--navigation-object` modifier class together with `fd-list--navigation` and the `fd-list__item--link` modifier class to the list elements that contain a link. All items should be navigable.'
+        description: {
+            story: 'An object list can display links that the users can navigate to. To display a navigation object list, add the `fd-list--navigation-object` modifier class together with `fd-list--navigation` and the `fd-list__item--link` modifier class to the list elements that contain a link. All items should be navigable.'
+        }
     }
 };
 
@@ -585,7 +589,9 @@ export const Selection = () => `
 Selection.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'Object list items can be selectable by adding the `fd-list--selection` and `fd-list--selection-row` modifier classes to the main element.'
+        description: {
+            story: 'Object list items can be selectable by adding the `fd-list--selection` and `fd-list--selection-row` modifier classes to the main element.'
+        }
     }
 };
 
@@ -792,7 +798,9 @@ export const SelectionWithNavigation = () => `
 SelectionWithNavigation.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'This object list is both selectable and navigable. To display selectable object list items with navigation, add the `fd-list--selection`, `fd-list--navigation` and `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
+        description: {
+            story: 'This object list is both selectable and navigable. To display selectable object list items with navigation, add the `fd-list--selection`, `fd-list--navigation` and `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
+        }
     }
 };
 
@@ -987,7 +995,9 @@ export const Borderless = () => `
 Borderless.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
+        description: {
+            story: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
+        }
     }
 };
 

@@ -121,8 +121,10 @@ export const GenericTagPositive = () => `${localStyles}
 GenericTagPositive.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Add the \`.fn-generic-tag--positive\` modifier class to the \`.fn-generic-tag\` base class for positive generic tag.
+        description: {
+            story: `Add the \`.fn-generic-tag--positive\` modifier class to the \`.fn-generic-tag\` base class for positive generic tag.
 `
+        }
     }
 };
 
@@ -178,7 +180,9 @@ export const GenericTagCritical = () => `${localStyles}
 GenericTagCritical.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Add the `.fn-generic-tag--critical` modifier class to the `.fn-generic-tag` base class for critical generic tag.'
+        description: {
+            story: 'Add the `.fn-generic-tag--critical` modifier class to the `.fn-generic-tag` base class for critical generic tag.'
+        }
     }
 };
 
@@ -234,7 +238,9 @@ export const GenericTagNegative = () => `${localStyles}
 GenericTagNegative.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Add the `.fn-generic-tag--negative` modifier class to the `.fn-generic-tag` base class for negative generic tag.'
+        description: {
+            story: 'Add the `.fn-generic-tag--negative` modifier class to the `.fn-generic-tag` base class for negative generic tag.'
+        }
     }
 };
 
@@ -290,6 +296,8 @@ export const GenericTagInfo = () => `${localStyles}
 GenericTagInfo.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Add the `.fn-generic-tag--info` modifier class to the `.fn-generic-tag` base class for info generic tag.'
+        description: {
+            story: 'Add the `.fn-generic-tag--info` modifier class to the `.fn-generic-tag` base class for info generic tag.'
+        }
     }
 };

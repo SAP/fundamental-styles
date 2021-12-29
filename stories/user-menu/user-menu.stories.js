@@ -135,7 +135,9 @@ export const Shellbar = () => `<div style="height: 700px;">
 
 Shellbar.parameters = {
     docs: {
-        storyDescription: 'The user menu button is typically displayed within a Shellbar on the far-right side.'
+        description: {
+            story: 'The user menu button is typically displayed within a Shellbar on the far-right side.'
+        }
     }
 };
 
@@ -369,9 +371,11 @@ Navigation.storyName = 'In-Place Navigation';
 
 Navigation.parameters = {
     docs: {
-        storyDescription: `Menu with an sub-navigation that can be used for items that can be further grouped under a level but not necessarily visible to user always.<br>
+        description: {
+            story: `Menu with an sub-navigation that can be used for items that can be further grouped under a level but not necessarily visible to user always.<br>
         Follow the same template for the sub-navigation as you would for a normal menu. The same Popover body and footer work for the sub-navigation items too.
 `
+        }
     }
 };
 

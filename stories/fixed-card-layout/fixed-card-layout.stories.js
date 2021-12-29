@@ -514,6 +514,8 @@ FixedCardLayout.storyName = 'Fixed card layout with 3 columns';
 FixedCardLayout.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: 'Cards arrangement in a 3 column layout.'
+        description: {
+            story: 'Cards arrangement in a 3 column layout.'
+        }
     }
 };

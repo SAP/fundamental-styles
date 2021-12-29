@@ -23,7 +23,9 @@ DefaultExample.storyName = 'Default';
 DefaultExample.parameters = {
     docs: {
         iframeHeight: 950,
-        storyDescription: `To use themeable scrollbar use \`fd-scrollbar\` class on scrollable element.
+        description: {
+            story: `To use themeable scrollbar use \`fd-scrollbar\` class on scrollable element.
 `
+        }
     }
 };

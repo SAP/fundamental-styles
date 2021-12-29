@@ -133,8 +133,10 @@ FirstPage.storyName = 'First page';
 FirstPage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `First and Previous page buttons are disabled when first page is active.
+        description: {
+            story: `First and Previous page buttons are disabled when first page is active.
     `
+        }
     }
 };
 
@@ -229,10 +231,12 @@ MiddlePage.storyName = 'Middle pages';
 MiddlePage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Pagination can display middle pages to increase reachability.
+        description: {
+            story: `Pagination can display middle pages to increase reachability.
         The ellipsis will not only display before the last page but also after the first page, showing two pages before & two after the current page.
         In sum 9 elements are shown: first page + more + 2 pages before + current page + 2 pages after + more + last page.
     `
+        }
     }
 };
 
@@ -327,8 +331,10 @@ LastPage.storyName = 'Last page';
 LastPage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Last and Next page buttons are disabled when last page is active.
+        description: {
+            story: `Last and Next page buttons are disabled when last page is active.
     `
+        }
     }
 };
 
@@ -423,8 +429,10 @@ PerPage.storyName = 'Per page';
 PerPage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Additionally, per page section can be displayed with select to specify which number of items should be shown on the every page.
+        description: {
+            story: `Additionally, per page section can be displayed with select to specify which number of items should be shown on the every page.
     `
+        }
     }
 };
 
@@ -517,8 +525,10 @@ export const Cozy = () => `<div style='height: 200px'>
 Cozy.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Showing pagination in Cozy mode is preferable on tablets & mobile.
+        description: {
+            story: `Showing pagination in Cozy mode is preferable on tablets & mobile.
     `
+        }
     }
 };
 
@@ -595,8 +605,10 @@ export const Mobile = () => `<div style="height: 200px;">
 Mobile.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do.
+        description: {
+            story: `Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do.
         If you want to display pagination component always in mobile mode please add \`.fd-pagination--mobile\` modifier class to the component.
     `
+        }
     }
 };

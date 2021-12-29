@@ -215,7 +215,9 @@ RoundedInitialsDecorative.storyName = 'Rounded Decorative Avatar with Initials';
 RoundedInitialsDecorative.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Modifier classes are added to the base class only for the size and the color. Rounded Decorative Avatar is the default type for avatar.'
+        description: {
+            story: 'Modifier classes are added to the base class only for the size and the color. Rounded Decorative Avatar is the default type for avatar.'
+        }
     }
 };
 
@@ -360,7 +362,9 @@ CircleInitialsDecorative.storyName = 'Circle Decorative Avatar with Initials';
 CircleInitialsDecorative.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'For Circle Decorative Avatar add the `.fn-avatar--circle` modifier classes to the base class and the modifier classes for size and color.'
+        description: {
+            story: 'For Circle Decorative Avatar add the `.fn-avatar--circle` modifier classes to the base class and the modifier classes for size and color.'
+        }
     }
 };
 
@@ -833,7 +837,9 @@ CircleThumbnailDecorative.storyName = 'Circle Decorative Avatar with Thumbnail';
 CircleThumbnailDecorative.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'An additional modifier class `.fn-avatar--thumbnail` is needed if you want to achieve an avatar with thumbnail.'
+        description: {
+            story: 'An additional modifier class `.fn-avatar--thumbnail` is needed if you want to achieve an avatar with thumbnail.'
+        }
     }
 };
 
@@ -985,7 +991,9 @@ RoundedInitialsInteractive.storyName = 'Rounded Interactive Avatar with Initials
 RoundedInitialsInteractive.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Interactive Avatars have hover, active, focus and disabled states. You can turn a decorative avatar to interactive by adding the `fn-avatar--interactive` modifier class to the other classes.'
+        description: {
+            story: 'Interactive Avatars have hover, active, focus and disabled states. You can turn a decorative avatar to interactive by adding the `fn-avatar--interactive` modifier class to the other classes.'
+        }
     }
 };
 
@@ -1137,7 +1145,9 @@ CircleInitialsInteractive.storyName = 'Circle Interactive Avatar with Initials';
 CircleInitialsInteractive.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };
 
@@ -1360,7 +1370,9 @@ RoundedIconInteractive.storyName = 'Rounded Interactive Avatar with Icon';
 RoundedIconInteractive.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };
 
@@ -1582,7 +1594,9 @@ CircleIconInteractive.storyName = 'Circle Interactive Avatar with Icon';
 CircleIconInteractive.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: ''
+        description: {
+            story: ''
+        }
     }
 };
 

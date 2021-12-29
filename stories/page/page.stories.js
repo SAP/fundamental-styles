@@ -137,7 +137,9 @@ export const TransparentPage = () => `<main class="fd-page fd-page--transparent"
 TransparentPage.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: 'Page with Transparent Background Design, Header with SubHeader, and Responsive Behaviour - M_L'
+        description: {
+            story: 'Page with Transparent Background Design, Header with SubHeader, and Responsive Behaviour - M_L'
+        }
     }
 };
 
@@ -186,6 +188,8 @@ export const ResponsivePage = () => `<main class="fd-page fd-page--home fd-page-
 ResponsivePage.parameters = {
     docs: {
         iframeHeight: 550,
-        storyDescription: 'Home page with List Background Design, Floating Footer and Responsive Behaviour - XL'
+        description: {
+            story: 'Home page with List Background Design, Floating Footer and Responsive Behaviour - XL'
+        }
     }
 };

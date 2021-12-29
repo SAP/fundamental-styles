@@ -180,13 +180,15 @@ export const Alignment = () => `<div class="fddocs-container" style="margin-bott
 Alignment.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `The popover body can be aligned to the left or right of the control. Additionally, it’s possible to remove the arrow from the body by adding the \`fd-popover__body--no-arrow\` modifier class to the body element.
+        description: {
+            story: `The popover body can be aligned to the left or right of the control. Additionally, it’s possible to remove the arrow from the body by adding the \`fd-popover__body--no-arrow\` modifier class to the body element.
 
 Alignment | Modifier class
 :------------- | :-----------------
 Left | (default)
 Right | \`fd-popover__body--right\`
         ` }
+    }
 };
 
 export const Variants = () => `<div class="fddocs-container">
@@ -443,7 +445,8 @@ Variants.storyName = 'Body variants';
 Variants.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `There are several variants of the popover body that can be displayed depending on the use case.
+        description: {
+            story: `There are several variants of the popover body that can be displayed depending on the use case.
 
 Variant | Modifier class | Description
 :------ | :------------- | :---------------
@@ -453,6 +456,7 @@ Header, subheader and footer | \`fd-popover__body-header\` containing \`fd-bar f
 Cozy mode | \`fd-bar--cozy\` | Add this modifier class to the header area where \`fd-bar\` is used.
 
         ` }
+    }
 };
 
 export const ControlExamples = () => `<div class="fd-container" style="margin-bottom: 200px">
@@ -551,8 +555,10 @@ ControlExamples.storyName = 'Control variants';
 ControlExamples.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Controls can be displayed as buttons, images, icons, and more. In the example below, the **Avatar** and **Icon** act as controls.
+        description: {
+            story: `Controls can be displayed as buttons, images, icons, and more. In the example below, the **Avatar** and **Icon** act as controls.
         ` }
+    }
 };
 
 export const Scrollable = () => `<div class="fd-popover" style="margin-bottom: 300px">
@@ -622,6 +628,8 @@ export const Scrollable = () => `<div class="fd-popover" style="margin-bottom: 3
 Scrollable.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `When the content overflows, the popover body can become scrollable. To achieve this, add \`fd-popover-body__wrapper\` on the element below the body element.
+        description: {
+            story: `When the content overflows, the popover body can become scrollable. To achieve this, add \`fd-popover-body__wrapper\` on the element below the body element.
         ` }
+    }
 };
