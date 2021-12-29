@@ -33,7 +33,7 @@ Do not use avatar if:
     }
 };
 
-export const icon = () => `
+export const Icon = () => `
 <span class="fd-avatar fd-avatar--xs" role="presentation" tabindex="0">
     <i role="presentation" class="fd-avatar__icon sap-icon--washing-machine"></i>
 </span>
@@ -51,16 +51,18 @@ export const icon = () => `
 </span>
 `;
 
-icon.parameters = {
+Icon.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. <br><br>When using the icon avatar for illustrative purposes only, include `role="presentation"` in the element. For instance, include role=` if the icon sits right next to a label.'
+        description: {
+            story: 'The icon avatar can be used to display non-interactive icons. If you want the icon to be interactive, use the **Button** component with an icon inside instead. <br><br>When using the icon avatar for illustrative purposes only, include `role="presentation"` in the element. For instance, include role=` if the icon sits right next to a label.'
+        }
     }
 };
 
 
 
-export const initials = () => `
+export const Initials = () => `
 <span class="fd-avatar fd-avatar--xs" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--s" aria-label="Wendy Wallace">WW</span>
 <span class="fd-avatar fd-avatar--m" aria-label="Wendy Wallace">WW</span>
@@ -68,15 +70,17 @@ export const initials = () => `
 <span class="fd-avatar fd-avatar--xl" aria-label="Wendy Wallace">WW</span>
 `;
 
-initials.parameters = {
+Initials.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.<br><br> When there is no equivalent text for the avatar, include `aria-label` in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.'
+        description: {
+            story: 'The initials avatar can display up to three alphabetical characters representing the first and last name(s) of a person, for example: MvV for Marjolein van Veen. The order in which the first and last name(s) are displayed depends on the language-specific settings.<br><br> When there is no equivalent text for the avatar, include `aria-label` in the element. This isn’t necessary if the avatar is used for illustrative purposes only. See **Icon** above.'
+        }
     }
 };
 
 
-export const circle = () => `
+export const Circle = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
@@ -99,14 +103,16 @@ export const circle = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle" aria-label="Wendy Wallace">WW</span>
 `;
 
-circle.parameters = {
+Circle.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A circle style can be displayed by adding the `--circle` modifier class.'
+        description: {
+            story: 'A circle style can be displayed by adding the `--circle` modifier class.'
+        }
     }
 };
 
-export const backgroundImage = () => `
+export const BackgroundImage = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" aria-label="John Doe"></span>
 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
@@ -116,21 +122,23 @@ export const backgroundImage = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain" style="background-image: url('/assets/images/backgrounds/leaves.jpg')" role="img" aria-label="John Doe"></span>
 `;
 
-backgroundImage.parameters = {
+BackgroundImage.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `
+        description: {
+            story: `
 A background image can be displayed by adding the \`--thumbnail\` modifier class.
-There are two options to set the backgroundd: Cover (default) and Contain. 
+There are two options to set the backgroundd: Cover (default) and Contain.
 
 - Cover: The size of the image is scaled up to completely cover the control area. As a result, parts of the image may be outside the shape.
 - Contain: The image is scaled down to fit into the control area. The entire image is displayed, but might not fully fill the shape. In this case, the control displays a default background color. The image itself is always centered inside the shape.
 
 Changing the default \`background-size: cover\` to \`background-size: contain\` CSS property can be achieved by adding \`--background-contain\` modifier class`
+        }
     }
 };
 
-export const transparent = () => `
+export const Transparent = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--transparent" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
@@ -153,15 +161,17 @@ export const transparent = () => `
 <span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--transparent" aria-label="Wendy Wallace">WW</span>
 `;
 
-transparent.parameters = {
+Transparent.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'A transparent style can be displayed by adding the `--transparent` modifier class.'
+        description: {
+            story: 'A transparent style can be displayed by adding the `--transparent` modifier class.'
+        }
     }
 };
 
 
-export const placeholderBackground = () => `
+export const PlaceholderBackground = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--placeholder" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
@@ -179,15 +189,17 @@ export const placeholderBackground = () => `
 </span>
 `;
 
-placeholderBackground.parameters = {
+PlaceholderBackground.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'An avatar with a placeholder background can be displayed by adding the `--placeholder` modifier class.'
+        description: {
+            story: 'An avatar with a placeholder background can be displayed by adding the `--placeholder` modifier class.'
+        }
     }
 };
 
 
-export const tileIconBackground = () => `
+export const TileIconBackground = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--tile" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
@@ -206,15 +218,17 @@ export const tileIconBackground = () => `
 `;
 
 
-tileIconBackground.parameters = {
+TileIconBackground.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'An avatar with a tile icon background can be displayed by adding the `--tile` modifier class.'
+        description: {
+            story: 'An avatar with a tile icon background can be displayed by adding the `--tile` modifier class.'
+        }
     }
 };
 
 
-export const accentColors = () => `
+export const AccentColors = () => `
 <span class="fd-avatar fd-avatar--accent-color-1 fd-avatar--m" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
@@ -247,15 +261,17 @@ export const accentColors = () => `
 </span>
 `;
 
-accentColors.parameters = {
+AccentColors.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'To change the background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
+        description: {
+            story: 'To change the background color, add the `fd-avatar--accent-color-*` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: `fd-avatar--accent-color-10`.'
+        }
     }
 };
 
 
-export const zoomIcon = () => `
+export const ZoomIcon = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
     <i class="fd-avatar__zoom-icon sap-icon--edit" aria-label="Edit"></i>
@@ -293,15 +309,17 @@ export const zoomIcon = () => `
 </span>
 `;
 
-zoomIcon.parameters = {
+ZoomIcon.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Any avatar can display a zoom icon by creating an element with `fd-avatar__zoom-icon` class.'
+        description: {
+            story: 'Any avatar can display a zoom icon by creating an element with `fd-avatar__zoom-icon` class.'
+        }
     }
 };
 
 
-export const borders = () => `
+export const Borders = () => `
 <span class="fd-avatar fd-avatar--xs fd-avatar--transparent fd-avatar--border" aria-label="Avatar">
     <i class="fd-avatar__icon sap-icon--money-bills" role="presentation"></i>
 </span>
@@ -329,9 +347,11 @@ export const borders = () => `
 </span>
 `;
 
-borders.parameters = {
+Borders.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: 'Borders can be displayed by adding the `--border` modifier class.'
+        description: {
+            story: 'Borders can be displayed by adding the `--border` modifier class.'
+        }
     }
 };

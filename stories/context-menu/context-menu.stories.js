@@ -21,7 +21,7 @@ Implementation Guidelines:
     }
 };
 
-export const withIconAndButton = () => `<div style="height: 400px;">
+export const WithIconAndButton = () => `<div style="height: 400px;">
     <div style="display:flex;justify-content:space-around;">
         <div class="fd-popover">
             <div class="fd-popover__control">
@@ -103,4 +103,4 @@ export const withIconAndButton = () => `<div style="height: 400px;">
 </div>
 `;
 
-withIconAndButton.storyName = 'Examples with Icon and Button';
+WithIconAndButton.storyName = 'Examples with Icon and Button';

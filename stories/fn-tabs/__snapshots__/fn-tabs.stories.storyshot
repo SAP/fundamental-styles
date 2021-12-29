@@ -156,7 +156,7 @@ exports[`Storyshots Experimental/Tabs Default 1`] = `
         role="tab"
         tabindex="0"
       >
-           
+        
             
         <div
           class="fn-tabs__text"
@@ -172,7 +172,7 @@ exports[`Storyshots Experimental/Tabs Default 1`] = `
         class="fn-tabs__item is-disabled"
         role="tab"
       >
-           
+        
             
         <div
           class="fn-tabs__text"
@@ -188,7 +188,7 @@ exports[`Storyshots Experimental/Tabs Default 1`] = `
         class="fn-tabs__right-container"
         role="tab"
       >
-           
+        
             
         <button
           aria-label="More"

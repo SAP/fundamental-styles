@@ -177,21 +177,21 @@ export const Alignment = () => `<div class="fddocs-container" style="margin-bott
     </div>
 `;
 
-Alignment.storyName = 'Alignment';
-
 Alignment.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `The popover body can be aligned to the left or right of the control. Additionally, it’s possible to remove the arrow from the body by adding the \`fd-popover__body--no-arrow\` modifier class to the body element.
+        description: {
+            story: `The popover body can be aligned to the left or right of the control. Additionally, it’s possible to remove the arrow from the body by adding the \`fd-popover__body--no-arrow\` modifier class to the body element.
 
 Alignment | Modifier class
 :------------- | :-----------------
 Left | (default)
 Right | \`fd-popover__body--right\`
         ` }
+    }
 };
 
-export const variants = () => `<div class="fddocs-container">
+export const Variants = () => `<div class="fddocs-container">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button
@@ -440,12 +440,13 @@ export const variants = () => `<div class="fddocs-container">
 </div>
 `;
 
-variants.storyName = 'Body variants';
+Variants.storyName = 'Body variants';
 
-variants.parameters = {
+Variants.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `There are several variants of the popover body that can be displayed depending on the use case.
+        description: {
+            story: `There are several variants of the popover body that can be displayed depending on the use case.
 
 Variant | Modifier class | Description
 :------ | :------------- | :---------------
@@ -455,9 +456,10 @@ Header, subheader and footer | \`fd-popover__body-header\` containing \`fd-bar f
 Cozy mode | \`fd-bar--cozy\` | Add this modifier class to the header area where \`fd-bar\` is used.
 
         ` }
+    }
 };
 
-export const controlExamples = () => `<div class="fd-container" style="margin-bottom: 200px">
+export const ControlExamples = () => `<div class="fd-container" style="margin-bottom: 200px">
     <div class="fd-row">
         <div class="fd-col--3 fd-col--offset-3">
             <div class="fd-popover fd-popover--right">
@@ -548,16 +550,18 @@ export const controlExamples = () => `<div class="fd-container" style="margin-bo
 </div>
 `;
 
-controlExamples.storyName = 'Control variants';
+ControlExamples.storyName = 'Control variants';
 
-controlExamples.parameters = {
+ControlExamples.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Controls can be displayed as buttons, images, icons, and more. In the example below, the **Avatar** and **Icon** act as controls.
+        description: {
+            story: `Controls can be displayed as buttons, images, icons, and more. In the example below, the **Avatar** and **Icon** act as controls.
         ` }
+    }
 };
 
-export const scrollable = () => `<div class="fd-popover" style="margin-bottom: 300px">
+export const Scrollable = () => `<div class="fd-popover" style="margin-bottom: 300px">
     <div class="fd-popover__control">
         <button
             class="fd-button"
@@ -621,11 +625,11 @@ export const scrollable = () => `<div class="fd-popover" style="margin-bottom: 3
 </div>
 `;
 
-scrollable.storyName = 'Scrollable';
-
-scrollable.parameters = {
+Scrollable.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `When the content overflows, the popover body can become scrollable. To achieve this, add \`fd-popover-body__wrapper\` on the element below the body element.
+        description: {
+            story: `When the content overflows, the popover body can become scrollable. To achieve this, add \`fd-popover-body__wrapper\` on the element below the body element.
         ` }
+    }
 };

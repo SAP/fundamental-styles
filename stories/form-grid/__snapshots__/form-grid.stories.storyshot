@@ -15,7 +15,7 @@ exports[`Storyshots Components/Forms/Form Grid Column Not Recommended 1`] = `
     <div
       class="fd-row"
     >
-       
+      
     
       <div
         class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap"
@@ -2135,7 +2135,7 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
     <div
       class="fd-row"
     >
-       
+      
     
       <div
         class="fd-col fd-col-xl--4 fd-col--wrap"
@@ -2306,7 +2306,7 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
     <div
       class="fd-row"
     >
-       
+      
     
       <div
         class="fd-col fd-col--wrap"
@@ -3327,7 +3327,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
       class="fd-col fd-col-xl--4 fd-col--wrap"
     >
       
-      
+
 
       
       <div
@@ -3866,7 +3866,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
     
     </div>
     
-    
+
 
     
     <div
@@ -4184,7 +4184,7 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
     <div
       class="fd-row"
     >
-       
+      
     
       <div
         class="fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
@@ -4305,7 +4305,7 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
     <div
       class="fd-row"
     >
-       
+      
     
       <div
         class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
@@ -4426,7 +4426,7 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
     <div
       class="fd-row"
     >
-       
+      
     
       <div
         class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap"

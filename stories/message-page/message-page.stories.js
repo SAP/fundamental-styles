@@ -24,7 +24,7 @@ export default {
 
 const messageBoxHeight = 800;
 
-export const filter = () => `<div style="height: 600px; width: 100%;">
+export const Filter = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -43,15 +43,17 @@ export const filter = () => `<div style="height: 600px; width: 100%;">
 </div>
 `;
 
-filter.parameters = {
+Filter.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The filter message page is displayed when the user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page. It is mandatory to use the \`.sap-icon--filter\`  icon.
+        description: {
+            story: `The filter message page is displayed when the user has set a filter and there are no results. This message then prompts the user to remove or re-evaluate the filter they set for the page. It is mandatory to use the \`.sap-icon--filter\`  icon.
     `
+        }
     }
 };
 
-export const search = () => `<div style="height: 600px; width: 100%;">
+export const Search = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -67,15 +69,17 @@ export const search = () => `<div style="height: 600px; width: 100%;">
 </div>
 `;
 
-search.parameters = {
+Search.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The search message page is displayed when a user has searched for something, but there are no results for that inquiry. It is mandatory to use the \`.sap-icon--search\` icon.
+        description: {
+            story: `The search message page is displayed when a user has searched for something, but there are no results for that inquiry. It is mandatory to use the \`.sap-icon--search\` icon.
     `
+        }
     }
 };
 
-export const noItems = () => `<div style="height: 600px; width: 100%;">
+export const NoItems = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -91,16 +95,18 @@ export const noItems = () => `<div style="height: 600px; width: 100%;">
 </div>
 `;
 
-noItems.storyName = 'No items';
-noItems.parameters = {
+NoItems.storyName = 'No items';
+NoItems.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, but they are either not available or do not exist. It is mandatory to use either the \`.sap-icon--product\` icon, or another icon that matches your use case.
+        description: {
+            story: `Message page displays a message indicating that there are no items when the user attempts to view a page that is supposed to contain items, but they are either not available or do not exist. It is mandatory to use either the \`.sap-icon--product\` icon, or another icon that matches your use case.
         `
+        }
     }
 };
 
-export const error = () => `<div style="height: 600px; width: 100%;">
+export const Error = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -119,15 +125,17 @@ export const error = () => `<div style="height: 600px; width: 100%;">
 </div>
 `;
 
-error.parameters = {
+Error.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The error message page is displayed when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message. It is mandatory to use the \`.sap-icon--document\` icon.
+        description: {
+            story: `The error message page is displayed when the user attempts to view a page but an error has occurred, resulting in no available content. If you can, provide a link to the app start screen in the error message. It is mandatory to use the \`.sap-icon--document\` icon.
     `
+        }
     }
 };
 
-export const buttons = () => `<div style="height: 600px; width: 100%;">
+export const Buttons = () => `<div style="height: 600px; width: 100%;">
     <div class="fd-message-page">
         <div class="fd-message-page__container">
             <div class="fd-message-page__icon-container">
@@ -138,25 +146,25 @@ export const buttons = () => `<div style="height: 600px; width: 100%;">
                     Sorry, we can't find the page
                 </div>
                 <div class="fd-message-page__subtitle">
-                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                    nulla pariatur. 
-                    <i>Excepteur sint occaecat cupidatat non proident, 
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur.
+                    <i>Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</i>
                 </div>
                 <div class="fd-message-page__actions">
-                    <button 
-                        class="fd-button fd-button--compact fd-button--emphasized" 
+                    <button
+                        class="fd-button fd-button--compact fd-button--emphasized"
                         style="margin: 0 0.25rem;">
                         Contact Support
                     </button>
                     <button class="fd-button fd-button--compact">Reload Page</button>
                 </div>
                 <div class="fd-message-page__more">
-                    <button 
+                    <button
                         class="fd-button fd-button--compact fd-button--transparent">
                         Show Details
                     </button>
@@ -167,11 +175,13 @@ export const buttons = () => `<div style="height: 600px; width: 100%;">
 </div>
 `;
 
-buttons.storyName = 'Formatted text and buttons';
-buttons.parameters = {
+Buttons.storyName = 'Formatted text and buttons';
+Buttons.parameters = {
     docs: {
         iframeHeight: messageBoxHeight,
-        storyDescription: `The message page with formatted text and buttons is useful for when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to add more than two buttons.
+        description: {
+            story: `The message page with formatted text and buttons is useful for when you want to add formatted text (bold, italic, underline and/or bullet points) and buttons to the action area. It's highly recommended not to add more than two buttons.
     `
+        }
     }
 };

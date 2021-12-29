@@ -80,7 +80,7 @@ exports[`Storyshots Components/Link Types 1`] = `
     tabindex="0"
   >
     
-    Right icon link 
+    Right icon link
     
     <span
       class="sap-icon--slim-arrow-right sap-icon--s"
@@ -104,7 +104,7 @@ exports[`Storyshots Components/Link Types 1`] = `
     <span
       class="sap-icon--slim-arrow-left sap-icon--s"
     />
-     
+    
     Left icon link
 
   </a>

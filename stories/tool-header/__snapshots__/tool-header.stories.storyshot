@@ -90,7 +90,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
       <div
         class="fd-tool-header__element"
       >
-         
+        
             
         <span
           aria-label="John Doe"
@@ -193,7 +193,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
       <div
         class="fd-tool-header__element"
       >
-         
+        
             
         <span
           aria-label="John Doe"
@@ -332,7 +332,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
       <div
         class="fd-tool-header__element"
       >
-         
+        
             
         <span
           aria-label="John Doe"
@@ -473,7 +473,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
               aria-label="Select"
               class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact fd-tool-header__button"
             >
-               
+              
                         
               <i
                 class="sap-icon--navigation-down-arrow"
@@ -517,7 +517,7 @@ exports[`Storyshots Components/Tool Header Horizontal Paddings 1`] = `
       <div
         class="fd-tool-header__element"
       >
-         
+        
             
         <span
           aria-label="John Doe"
@@ -697,7 +697,7 @@ exports[`Storyshots Components/Tool Header Responsive Paddings 1`] = `
     <div
       class="fd-tool-header__element"
     >
-       
+      
             
       <span
         aria-label="John Doe"
@@ -945,7 +945,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Controls 1`] = `
     <div
       class="fd-tool-header__element"
     >
-       
+      
             
       <span
         aria-label="John Doe"
@@ -1318,7 +1318,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Side Navigation Menu
             aria-label="Search"
             class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact fd-tool-header__button"
           >
-             
+            
                         
             <i
               class="sap-icon--search"
@@ -1384,7 +1384,7 @@ exports[`Storyshots Components/Tool Header Tool Header with Side Navigation Menu
     <div
       class="fd-tool-header__element"
     >
-       
+      
             
       <span
         aria-label="John Doe"

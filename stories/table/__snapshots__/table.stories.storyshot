@@ -2788,9 +2788,9 @@ exports[`Storyshots Components/Table Fixed header 1`] = `
         [dir=rtl] .fd-table--fixed,
         .fd-table--fixed[dir=rtl] {
             padding-left: 0;
-            padding-right: 200px;            
+            padding-right: 200px;
         }
-        
+
         .fd-table--fixed .fd-table__cell {
             min-width: 200px;
             max-width: 200px;
@@ -8007,7 +8007,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         
       </a>
       
-        
+
         
       <a
         aria-disabled="false"
@@ -8024,7 +8024,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         
       </a>
       
-        
+
         
       <a
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -8033,7 +8033,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         1
       </a>
       
-        
+
         
       <label
         class="fd-form-label fd-pagination__label"
@@ -8042,7 +8042,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         Page:
       </label>
       
-        
+
         
       <input
         class="fd-input fd-input--compact fd-pagination__input"
@@ -8054,7 +8054,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         value="2"
       />
       
-        
+
         
       <a
         class="fd-button fd-button--compact fd-button--transparent fd-pagination__link"
@@ -8079,7 +8079,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         10
       </a>
       
-        
+
         
       <a
         aria-disabled="false"
@@ -8096,7 +8096,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
         
       </a>
       
-        
+
         
       <a
         aria-disabled="false"
@@ -8116,7 +8116,7 @@ exports[`Storyshots Components/Table Pagination 1`] = `
     
     </nav>
     
-  
+
     
     <div
       class="fd-pagination__total"
@@ -9873,7 +9873,7 @@ exports[`Storyshots Components/Table Semantic 1`] = `
         
         
       </tr>
-        
+      
         
       <tr
         class="fd-table__row"
@@ -10007,7 +10007,7 @@ exports[`Storyshots Components/Table Semantic 1`] = `
         
         
       </tr>
-         
+      
         
       <tr
         class="fd-table__row"
@@ -10074,7 +10074,7 @@ exports[`Storyshots Components/Table Semantic 1`] = `
         
         
       </tr>
-                          
+      
     
     </tbody>
     

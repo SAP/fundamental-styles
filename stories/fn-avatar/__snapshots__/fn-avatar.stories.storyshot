@@ -73,7 +73,7 @@ exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Icon 1`] =
         XS
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -1701,7 +1701,7 @@ exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Thumbnail 
         XS
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -1726,7 +1726,7 @@ exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Thumbnail 
     
     </div>
     
-   
+
     
     <div
       class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--l"
@@ -1744,7 +1744,7 @@ exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Thumbnail 
     
     </div>
     
-    
+
     
     <div
       class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--m"
@@ -1762,7 +1762,7 @@ exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Thumbnail 
     
     </div>
     
-    
+
     
     <div
       class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--s"
@@ -1780,7 +1780,7 @@ exports[`Storyshots Experimental/Avatar Circle Decorative Avatar with Thumbnail 
     
     </div>
     
-    
+
     
     <div
       class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--xs"
@@ -1878,7 +1878,7 @@ exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Icon 1`] 
         XS
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -2874,7 +2874,7 @@ exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Initials 
         :disabled
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -3622,7 +3622,7 @@ exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Thumbnail
         :disabled XS
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -3648,7 +3648,7 @@ exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Thumbnail
     
     </div>
     
-   
+
     
     <div
       "=""
@@ -3667,7 +3667,7 @@ exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Thumbnail
     
     </div>
     
-    
+
     
     <div
       class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m is-active"
@@ -3685,7 +3685,7 @@ exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Thumbnail
     
     </div>
     
-    
+
     
     <div
       class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--s is-focus"
@@ -3703,7 +3703,7 @@ exports[`Storyshots Experimental/Avatar Circle Interactive Avatar with Thumbnail
     
     </div>
     
-    
+
     
     <div
       class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--xs is-disabled"
@@ -3801,7 +3801,7 @@ exports[`Storyshots Experimental/Avatar Rounded Decorative Avatar with Icon 1`] 
         XS
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -5434,7 +5434,7 @@ exports[`Storyshots Experimental/Avatar Rounded Interactive Avatar with Icon 1`]
         XS
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -6430,7 +6430,7 @@ exports[`Storyshots Experimental/Avatar Rounded Interactive Avatar with Initials
         :disabled
       </b>
     </div>
-       
+    
 
   </div>
   

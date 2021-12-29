@@ -142,7 +142,7 @@ exports[`Storyshots Components/Side Navigation Complex (compact) 1`] = `
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -567,7 +567,7 @@ exports[`Storyshots Components/Side Navigation Complex 1`] = `
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -1654,7 +1654,7 @@ exports[`Storyshots Components/Side Navigation Group 1`] = `
         
             
       </li>
-                  
+      
             
       <li
         class="fd-nested-list__item"
@@ -1696,7 +1696,7 @@ exports[`Storyshots Components/Side Navigation Group 1`] = `
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -2595,7 +2595,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers 1`
           class="sap-icon--navigation-right-arrow"
           role="presentation"
         />
-            
+        
             
       </button>
       
@@ -2675,7 +2675,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers 1`
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -2755,7 +2755,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers 1`
                   class="sap-icon--navigation-right-arrow"
                   role="presentation"
                 />
-                    
+                
                             
               </button>
               
@@ -3126,7 +3126,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers Co
           class="sap-icon--navigation-right-arrow"
           role="presentation"
         />
-            
+        
             
       </button>
       
@@ -3206,7 +3206,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers Co
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -3286,7 +3286,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers Co
                   class="sap-icon--navigation-right-arrow"
                   role="presentation"
                 />
-                    
+                
                             
               </button>
               
@@ -3648,7 +3648,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Icons Only In Fi
           class="sap-icon--navigation-right-arrow"
           role="presentation"
         />
-            
+        
             
       </button>
       
@@ -3728,7 +3728,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Icons Only In Fi
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -3808,7 +3808,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Icons Only In Fi
                   class="sap-icon--navigation-right-arrow"
                   role="presentation"
                 />
-                    
+                
                             
               </button>
               
@@ -4141,7 +4141,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Icons 1`] = `
           class="sap-icon--navigation-right-arrow"
           role="presentation"
         />
-            
+        
             
       </button>
       
@@ -4221,7 +4221,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Icons 1`] = `
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -4301,7 +4301,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Icons 1`] = `
                   class="sap-icon--navigation-right-arrow"
                   role="presentation"
                 />
-                    
+                
                             
               </button>
               
@@ -4381,7 +4381,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Icons 1`] = `
                       class="sap-icon--navigation-right-arrow"
                       role="presentation"
                     />
-                        
+                    
                                     
                   </button>
                   
@@ -4835,7 +4835,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Links 1`] = `
           class="sap-icon--navigation-right-arrow"
           role="presentation"
         />
-            
+        
             
       </button>
       
@@ -4904,7 +4904,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Links 1`] = `
               class="sap-icon--navigation-right-arrow"
               role="presentation"
             />
-                
+            
                     
           </button>
           
@@ -4973,7 +4973,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Links 1`] = `
                   class="sap-icon--navigation-right-arrow"
                   role="presentation"
                 />
-                    
+                
                             
               </button>
               

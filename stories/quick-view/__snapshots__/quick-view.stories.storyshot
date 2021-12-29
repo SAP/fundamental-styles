@@ -83,7 +83,7 @@ exports[`Storyshots Components/Quick View Dialog 1`] = `
                             
               </span>
               
-        
+
                             
               <div
                 class="fd-quick-view__subheader-text"
@@ -114,7 +114,7 @@ exports[`Storyshots Components/Quick View Dialog 1`] = `
                     
           </div>
           
-                    
+
                     
           <div
             class="fd-form-group"
@@ -328,7 +328,7 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
                         
             </span>
             
-    
+
                         
             <div
               class="fd-quick-view__subheader-text"
@@ -341,7 +341,7 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
                 Company B
               </h5>
               
-    
+
                             
               <div
                 class="fd-quick-view__subtitle"
@@ -360,8 +360,8 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
                 
         </div>
         
-    
-    
+
+
                 
         <div
           class="fd-form-group"
@@ -438,7 +438,7 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
                 
         </div>
         
-                
+
                 
         <div
           class="fd-form-group"
@@ -593,7 +593,7 @@ exports[`Storyshots Components/Quick View Without the header 1`] = `
                         
             </span>
             
-    
+
                         
             <div
               class="fd-quick-view__subheader-text"
@@ -624,7 +624,7 @@ exports[`Storyshots Components/Quick View Without the header 1`] = `
                 
         </div>
         
-                
+
                 
         <div
           class="fd-form-group"

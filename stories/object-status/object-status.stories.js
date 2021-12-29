@@ -15,7 +15,7 @@ attribute of a line item in a table. `,
  * informative (class: `fd-object-status--informative`), or none.
  */
 
-export const primary = () => `<div class="fddocs-container">
+export const Primary = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -39,7 +39,7 @@ export const primary = () => `<div class="fddocs-container">
  * Object status icon only
  */
 
-export const icon = () => `<div class="fddocs-container">
+export const Icon = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--message-error" aria-label="Negative"></i>
     </span>
@@ -59,7 +59,7 @@ export const icon = () => `<div class="fddocs-container">
  * Object status text only
  */
 
-export const text = () => `<div class="fddocs-container">
+export const Text = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <span class="fd-object-status__text">Negative</span>
     </span>
@@ -82,7 +82,7 @@ export const text = () => `<div class="fddocs-container">
  * Object status icon and text
  */
 
-export const iconAndText = () => `<div class="fddocs-container">
+export const IconAndText = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -106,7 +106,7 @@ export const iconAndText = () => `<div class="fddocs-container">
  * Object Status with Generic Indication Colors
  */
 
-export const genericIndicationColors = () => `<div class="fddocs-container">
+export const GenericIndicationColors = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--indication-1">
         <span class="fd-object-status__text">Dark Red</span>
     </span>
@@ -140,7 +140,7 @@ export const genericIndicationColors = () => `<div class="fddocs-container">
  If Object Status has to be clicked/tabbed by the user add the `fd-object-status--link` modifier class.
  */
 
-export const clickableObjectStatus = () => `<div class="fddocs-container">
+export const ClickableObjectStatus = () => `<div class="fddocs-container">
     <a href="#"  class="fd-object-status fd-object-status--negative fd-object-status--link">
         <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -189,7 +189,7 @@ export const clickableObjectStatus = () => `<div class="fddocs-container">
 `;
 
 
-export const largeObjectStatus = () => `<div class="fddocs-container">
+export const LargeObjectStatus = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--large fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
         <span class="fd-object-status__text">Negative</span>
@@ -218,7 +218,7 @@ export const largeObjectStatus = () => `<div class="fddocs-container">
  Inverted Object Status is achieved by adding the `fd-object-status--inverted` modifier class.
  */
 
-export const inverted = () => `<div class="fddocs-container">
+export const Inverted = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative fd-object-status--inverted">
         <span class="fd-object-status__text">Inverted Negative</span>
     </span>
@@ -286,7 +286,7 @@ export const inverted = () => `<div class="fddocs-container">
  Inverted indication colors
  */
 
-export const invertedIndication = () => `<div class="fddocs-container">
+export const InvertedIndication = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">
         <span class="fd-object-status__text">Indication1</span>
     </span>

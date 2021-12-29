@@ -10,7 +10,7 @@ export default {
     }
 };
 
-export const shellbar = () => `<div style="height: 700px;">
+export const Shellbar = () => `<div style="height: 700px;">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
             <span class="fd-shellbar__logo">
@@ -31,7 +31,7 @@ export const shellbar = () => `<div style="height: 700px;">
                                 role="button"
                                 tabindex="0"></span>
                         </div>
-                
+
                         <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA1">
                             <div class="fd-user-menu__body">
                                 <div class="fd-user-menu__header">
@@ -39,20 +39,20 @@ export const shellbar = () => `<div style="height: 700px;">
                                         class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
                                         aria-label="Avatar"
                                         style="background-image: url('assets/images/avatars/1.svg');"></span>
-                
+
                                     <span
                                         class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail fd-user-menu__avatar"
                                         aria-label="Avatar"
                                         style="background-image: url('assets/images/avatars/3.svg');"></span>
-                
+
                                     <button class="fd-button fd-button--transparent" aria-label="Product"><i class="sap-icon--grid"></i></button>
                                 </div>
-                
+
                                 <div class="fd-user-menu__subheader">
                                     <div class="fd-user-menu__user-name">John Miller</div>
                                     <div class="fd-user-menu__user-role">User Experience Designer</div>
                                 </div>
-                
+
                                 <ul class="fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border" role="list">
                                     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
                                         <a tabindex="0" class="fd-list__link">
@@ -88,7 +88,7 @@ export const shellbar = () => `<div style="height: 700px;">
                                         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
                                             <i role="presentation" class="fd-list__icon sap-icon--history"></i>
                                             <span class="fd-list__title">Delegate</span>
-                
+
                                             <span class="fd-list__item-counter">
                                                 <span class="fd-badge fd-badge--static" aria-label="Selected items">3</span>
                                             </span>
@@ -114,7 +114,7 @@ export const shellbar = () => `<div style="height: 700px;">
                                     </li>
                                 </ul>
                             </div>
-                
+
                             <div class="fd-popover__body-footer">
                                 <div class="fd-bar fd-bar--footer">
                                     <div class="fd-bar__right">
@@ -133,13 +133,15 @@ export const shellbar = () => `<div style="height: 700px;">
 </div>
 `;
 
-shellbar.parameters = {
+Shellbar.parameters = {
     docs: {
-        storyDescription: 'The user menu button is typically displayed within a Shellbar on the far-right side.'
+        description: {
+            story: 'The user menu button is typically displayed within a Shellbar on the far-right side.'
+        }
     }
 };
 
-export const navigation = () => `<div class="fddocs-container" style="margin-bottom: 650px">
+export const Navigation = () => `<div class="fddocs-container" style="margin-bottom: 650px">
     <div class="fd-popover fd-popover--right fd-user-menu">
         <div class="fd-popover__control">
             <span
@@ -282,7 +284,7 @@ export const navigation = () => `<div class="fddocs-container" style="margin-bot
                         <div class="fd-input-group">
                             <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde118" name="" aria-label="Search" placeholder="Search">
                             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search"> 
+                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search">
                                     <i class="sap-icon--search"></i>
                                 </button>
                             </span>
@@ -365,17 +367,19 @@ export const navigation = () => `<div class="fddocs-container" style="margin-bot
 </div>
 `;
 
-navigation.storyName = 'In-Place Navigation';
+Navigation.storyName = 'In-Place Navigation';
 
-navigation.parameters = {
+Navigation.parameters = {
     docs: {
-        storyDescription: `Menu with an sub-navigation that can be used for items that can be further grouped under a level but not necessarily visible to user always.<br>
+        description: {
+            story: `Menu with an sub-navigation that can be used for items that can be further grouped under a level but not necessarily visible to user always.<br>
         Follow the same template for the sub-navigation as you would for a normal menu. The same Popover body and footer work for the sub-navigation items too.
 `
+        }
     }
 };
 
-export const thirdPartyContent = () => `<div class="fddocs-container" style="margin-bottom: 700px">
+export const ThirdPartyContent = () => `<div class="fddocs-container" style="margin-bottom: 700px">
     <div class="fd-popover fd-popover--right fd-user-menu">
         <div class="fd-popover__control">
             <span
@@ -752,9 +756,9 @@ export const thirdPartyContent = () => `<div class="fddocs-container" style="mar
 </div>
 `;
 
-thirdPartyContent.storyName = '3rd Party Content';
+ThirdPartyContent.storyName = '3rd Party Content';
 
-export const compact = () => `<div class="fddocs-container" style="margin-bottom: 550px">
+export const Compact = () => `<div class="fddocs-container" style="margin-bottom: 550px">
     <div class="fd-popover fd-popover--right  fd-user-menu fd-user-menu--compact">
         <div class="fd-popover__control">
             <span
@@ -897,7 +901,7 @@ export const compact = () => `<div class="fddocs-container" style="margin-bottom
                         <div class="fd-input-group">
                             <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde118" name="" aria-label="Search" placeholder="Search">
                             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search"> 
+                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search">
                                     <i class="sap-icon--search"></i>
                                 </button>
                             </span>

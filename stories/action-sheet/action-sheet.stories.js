@@ -4,7 +4,7 @@ export default {
         description: `
 An action sheet consists of a list of options a user can select from to complete an action. Actions can be
 clustered if there is not enough space on the screen.
-            
+
 ## Usage
 
 **Use the action sheet if:**
@@ -24,11 +24,11 @@ clustered if there is not enough space on the screen.
     }
 };
 
-export const actionSheetDesktop = () => `
+export const ActionSheetDesktop = () => `
 <div class="fd-popover">
     <div class="fd-popover__control">
-        <button class="fd-button fd-button--compact fd-button--transparent" 
-                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="true" 
+        <button class="fd-button fd-button--compact fd-button--transparent"
+                aria-label="More Options" aria-controls="actionSheetDesktop" aria-expanded="true"
                 aria-haspopup="true" onclick="onPopoverClick('actionSheetDesktop');">
             <i class="sap-icon--settings"></i>
         </button>
@@ -71,21 +71,23 @@ export const actionSheetDesktop = () => `
 <div style="height: 300px"></div>
 `;
 
-actionSheetDesktop.parameters = {
+ActionSheetDesktop.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription:
+        description: {
+            story:
             'The action sheet is displayed in desktop mode by adding the `fd-action-sheet--compact` modifier class to the container, and `fd-button--compact` to each button.'
+        }
     }
 };
 
-actionSheetDesktop.storyName = 'Desktop';
+ActionSheetDesktop.storyName = 'Desktop';
 
-export const actionSheetTablet = () => `    
+export const ActionSheetTablet = () => `
 <div class="fd-popover">
     <div class="fd-popover__control">
-        <button class="fd-button fd-button--transparent" 
-                aria-label="More Options" aria-controls="actionSheetTablet" aria-expanded="true" 
+        <button class="fd-button fd-button--transparent"
+                aria-label="More Options" aria-controls="actionSheetTablet" aria-expanded="true"
                 aria-haspopup="true" onclick="onPopoverClick('actionSheetTablet');">
             <i class="sap-icon--settings"></i>
         </button>
@@ -128,19 +130,21 @@ export const actionSheetTablet = () => `
 <div style="height: 300px"></div>
 `;
 
-actionSheetTablet.parameters = {
+ActionSheetTablet.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription:
+        description: {
+            story:
             'Although the tablet mode is visually similar to desktop, it doesn\'t require any modifier classes. Therefore, the container and buttons appear slightly larger for better visibility.'
+        }
     }
 };
 
-actionSheetTablet.storyName = 'Tablet';
+ActionSheetTablet.storyName = 'Tablet';
 
-export const actionSheetMobile = () => `<div style="width: 350px; height: 600px; position: relative">
+export const ActionSheetMobile = () => `<div style="width: 350px; height: 600px; position: relative">
     <button class="fd-button fd-button--transparent"
-            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="true" 
+            aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="true"
             aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
         <i class="sap-icon--settings"></i>
     </button>
@@ -174,7 +178,7 @@ export const actionSheetMobile = () => `<div style="width: 350px; height: 600px;
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
                         onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-                    <span class="fd-button__text">Decide Later</span>              
+                    <span class="fd-button__text">Decide Later</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
@@ -188,12 +192,14 @@ export const actionSheetMobile = () => `<div style="width: 350px; height: 600px;
 </div>
 `;
 
-actionSheetMobile.parameters = {
+ActionSheetMobile.parameters = {
     docs: {
         iframeHeight: 800,
-        storyDescription: `To display the action sheet on mobile screens, 
+        description: {
+            story: `To display the action sheet on mobile screens,
         the container requires a \`fd-action-sheet--mobile\` modifier class and is additionally wrapped by \`fd-action-sheet__wrapper\`.`
+        }
     }
 };
 
-actionSheetMobile.storyName = 'Mobile';
+ActionSheetMobile.storyName = 'Mobile';

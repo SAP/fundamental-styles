@@ -42,7 +42,7 @@ Per page label | \`fd-pagination__per-page-label\` | Per page section label. Hid
     }
 };
 
-export const firstPage = () => `<h3>> 9 Pages</h3>
+export const FirstPage = () => `<h3>> 9 Pages</h3>
 <div class='fd-pagination'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='first page example, pagination with more than 9 pages'>
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='true'>
@@ -128,17 +128,19 @@ export const firstPage = () => `<h3>> 9 Pages</h3>
 </div>
 `;
 
-firstPage.storyName = 'First page';
+FirstPage.storyName = 'First page';
 
-firstPage.parameters = {
+FirstPage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `First and Previous page buttons are disabled when first page is active.
+        description: {
+            story: `First and Previous page buttons are disabled when first page is active.
     `
+        }
     }
 };
 
-export const middlePage = () => `<h3>> 9 Pages</h3>
+export const MiddlePage = () => `<h3>> 9 Pages</h3>
 <div class='fd-pagination'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='middle page example, pagination with more than 9 pages'>
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
@@ -224,19 +226,21 @@ export const middlePage = () => `<h3>> 9 Pages</h3>
 </div>
 `;
 
-middlePage.storyName = 'Middle pages';
+MiddlePage.storyName = 'Middle pages';
 
-middlePage.parameters = {
+MiddlePage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Pagination can display middle pages to increase reachability.
+        description: {
+            story: `Pagination can display middle pages to increase reachability.
         The ellipsis will not only display before the last page but also after the first page, showing two pages before & two after the current page.
         In sum 9 elements are shown: first page + more + 2 pages before + current page + 2 pages after + more + last page.
     `
+        }
     }
 };
 
-export const lastPage = () => `<h3>> 9 Pages</h3>
+export const LastPage = () => `<h3>> 9 Pages</h3>
 <div class='fd-pagination'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='last page example, pagination with more than 9 pages'>
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
@@ -322,17 +326,19 @@ export const lastPage = () => `<h3>> 9 Pages</h3>
 </div>
 `;
 
-lastPage.storyName = 'Last page';
+LastPage.storyName = 'Last page';
 
-lastPage.parameters = {
+LastPage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Last and Next page buttons are disabled when last page is active.
+        description: {
+            story: `Last and Next page buttons are disabled when last page is active.
     `
+        }
     }
 };
 
-export const perPage = () => `<div style='height: 175px'>
+export const PerPage = () => `<div style='height: 175px'>
     <div class='fd-pagination'>
         <div class='fd-pagination__per-page'>
             <label class='fd-form-label fd-pagination__per-page-label' id='compactSelectLabel'>Results per page: </label>
@@ -418,17 +424,19 @@ export const perPage = () => `<div style='height: 175px'>
 </div>
 `;
 
-perPage.storyName = 'Per page';
+PerPage.storyName = 'Per page';
 
-perPage.parameters = {
+PerPage.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Additionally, per page section can be displayed with select to specify which number of items should be shown on the every page.
+        description: {
+            story: `Additionally, per page section can be displayed with select to specify which number of items should be shown on the every page.
     `
+        }
     }
 };
 
-export const cozy = () => `<div style='height: 200px'>
+export const Cozy = () => `<div style='height: 200px'>
     <div class='fd-pagination'>
         <div class='fd-pagination__per-page'>
             <label class='fd-form-label fd-pagination__per-page-label' id='selectLabel'>Results per page: </label>
@@ -514,17 +522,17 @@ export const cozy = () => `<div style='height: 200px'>
 </div>
 `;
 
-cozy.storyName = 'Cozy';
-
-cozy.parameters = {
+Cozy.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Showing pagination in Cozy mode is preferable on tablets & mobile.
+        description: {
+            story: `Showing pagination in Cozy mode is preferable on tablets & mobile.
     `
+        }
     }
 };
 
-export const mobile = () => `<div style="height: 200px;">
+export const Mobile = () => `<div style="height: 200px;">
     <div class='fd-pagination fd-pagination--mobile'>
         <div class='fd-pagination__per-page'>
             <label class='fd-form-label fd-pagination__per-page-label' id='selectLabel'>Results per page: </label>
@@ -594,13 +602,13 @@ export const mobile = () => `<div style="height: 200px;">
 </div>
 `;
 
-mobile.storyName = 'Mobile';
-
-mobile.parameters = {
+Mobile.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do.
+        description: {
+            story: `Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do.
         If you want to display pagination component always in mobile mode please add \`.fd-pagination--mobile\` modifier class to the component.
     `
+        }
     }
 };

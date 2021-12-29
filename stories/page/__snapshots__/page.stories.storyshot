@@ -28,7 +28,7 @@ exports[`Storyshots Layouts/Page Basic Page 1`] = `
             aria-label="Go back"
             class="fd-button fd-button--transparent"
           >
-             
+            
                         
             <i
               class="sap-icon--navigation-left-arrow"
@@ -67,7 +67,7 @@ exports[`Storyshots Layouts/Page Basic Page 1`] = `
             aria-label="See more"
             class="fd-button fd-button--transparent"
           >
-             
+            
                         
             <i
               class="sap-icon--grid"
@@ -190,7 +190,7 @@ exports[`Storyshots Layouts/Page Responsive Page 1`] = `
             aria-label="Go back"
             class="fd-button fd-button--transparent"
           >
-             
+            
                         
             <i
               class="sap-icon--navigation-left-arrow"
@@ -229,7 +229,7 @@ exports[`Storyshots Layouts/Page Responsive Page 1`] = `
             aria-label="See more"
             class="fd-button fd-button--transparent"
           >
-             
+            
                         
             <i
               class="sap-icon--overflow"
@@ -352,7 +352,7 @@ exports[`Storyshots Layouts/Page Transparent Page 1`] = `
             aria-label="Go back"
             class="fd-button fd-button--transparent"
           >
-             
+            
                         
             <i
               class="sap-icon--navigation-left-arrow"
@@ -391,7 +391,7 @@ exports[`Storyshots Layouts/Page Transparent Page 1`] = `
             aria-label="See more"
             class="fd-button fd-button--transparent"
           >
-             
+            
                         
             <i
               class="sap-icon--overflow"

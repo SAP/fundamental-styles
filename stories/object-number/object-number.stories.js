@@ -40,7 +40,7 @@ Make sure that the object number is properly described and semantically understa
  * | None        | `fd-object-number__text` (class) |
  */
 
-export const primary = () => `<div class="fddocs-container">
+export const Primary = () => `<div class="fddocs-container">
     <span class="fd-object-number fd-object-number--negative">
         <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
     </span>
@@ -63,7 +63,7 @@ export const primary = () => `<div class="fddocs-container">
  * In some cases, it can be useful to enlarge the text for the object number. To display the object number in large text, add the `--large` modifier class to the element.
  */
 
-export const large = () => `<div class="fddocs-container">
+export const Large = () => `<div class="fddocs-container">
     <span class="fd-object-number fd-object-number--large fd-object-number--negative">
         <span class="fd-object-number__text">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
     </span>
@@ -86,7 +86,7 @@ export const large = () => `<div class="fddocs-container">
  * When there is a key numeric attribute on the page, it should be emphasized in bold text. To display the object number in bold text, add the `--bold` modifier class to the element.
  */
 
-export const bold = () => `<div class="fddocs-container">
+export const Bold = () => `<div class="fddocs-container">
     <span class="fd-object-number fd-object-number--negative">
         <span class="fd-object-number__text fd-object-number__text--bold">-2,000.00</span><span class="fd-object-number__unit">EUR</span>
     </span>

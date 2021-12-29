@@ -22,7 +22,7 @@ const localStyles = `
 </style>
 `;
 
-export const defaultInput = () => `${localStyles}
+export const DefaultInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-input fn-input--select" tabindex="0">
@@ -91,8 +91,8 @@ export const defaultInput = () => `${localStyles}
 </div>
 `;
 
-defaultInput.storyName = 'Select';
-defaultInput.parameters = {
+DefaultInput.storyName = 'Select';
+DefaultInput.parameters = {
     docs: {
         iframeHeight: 500
     }

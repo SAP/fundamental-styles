@@ -47,7 +47,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
       <div
         class="fd-shellbar__action fd-shellbar__action--desktop"
       >
-                
+        
                 
         <div
           class="fd-popover__control"
@@ -526,7 +526,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
       <div
         class="fd-shellbar__action fd-shellbar__action--desktop"
       >
-                
+        
                 
         <div
           class="fd-popover__control"
@@ -1341,7 +1341,7 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
       <div
         class="fd-shellbar__action fd-shellbar__action--desktop"
       >
-                
+        
                 
         <div
           class="fd-popover__control"
@@ -2369,7 +2369,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
       <div
         class="fd-shellbar__action fd-shellbar__action--desktop"
       >
-                
+        
                 
         <div
           class="fd-popover__control"

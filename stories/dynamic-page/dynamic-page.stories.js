@@ -4,7 +4,7 @@ export default {
         description: `The dynamic page is the foundation for all pages in SAP Fiori. It is a generic layout designed to support various use cases; therefore, the content of both the header and page can vary.
         The header of the dynamic page is collapsible, which helps the users focus on the actual page content but still ensures that important header information and actions are readily available.
 
-## Usage 
+## Usage
 **Use the dynamic page if:**
 
 - You want to build a freestyle application that uses the foundation layout components for SAP Fiori pages, such as the dynamic page header and the footer toolbar.
@@ -46,7 +46,7 @@ To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class inst
 ## Modifiers
 | **Description** | <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :-------------- |
-| No shadow for pin/collapse when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--no-shadow</code> 
+| No shadow for pin/collapse when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__header-visibility-container--no-shadow</code>
 ||<code style="margin-left: 2rem;">fd-dynamic-page__summarized-title-area--no-shadow</code>        |
 | Add shadow to tabs when tabs are used | <code style="margin-left: 2rem;">fd-dynamic-page__tabs--add-shadow</code>       |
 | Collapsed styles when header is collapsed | <code style="margin-left: 2rem;">fd-dynamic-page__title-area--collapsed</code>      |
@@ -59,7 +59,7 @@ To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class inst
 | **Description** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :---- | :-------------- |
 | List background for content area| <code style="margin-left: 2rem;">fd-dynamic-page--list-bg</code>        |
-| Transparent background for all areas |  <code style="margin-left: 2rem;">fd-dynamic-page--transparent-bg</code> 
+| Transparent background for all areas |  <code style="margin-left: 2rem;">fd-dynamic-page--transparent-bg</code>
 
 `,
         tags: ['f3', 'theme', 'development'],
@@ -68,7 +68,7 @@ To display a sticky header, use the \`fd-dynamic-page__header-fixed\` class inst
     }
 };
 
-export const desktop = () => `
+export const Desktop = () => `
     <section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Desktop Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area " tabindex="0">
@@ -109,21 +109,21 @@ export const desktop = () => `
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
                 <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc6" aria-label="Dynamic Page Desktop Header" >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="See More" 
-                                aria-expanded="true" 
-                                aria-haspopup="true" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="See More"
+                                aria-expanded="true"
+                                aria-haspopup="true"
                                 aria-controls="fddplhvc6">
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
-                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
+                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact"
                                 aria-label="Pin this">
                                 <i class="sap-icon--pushpin-off"></i>
                         </button>
@@ -152,31 +152,31 @@ export const desktop = () => `
         </header>
         <div class="fd-dynamic-page__content">
             <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV550" role="tabpanel">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
             <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz165" role="tabpanel" >
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
@@ -194,17 +194,18 @@ export const desktop = () => `
     <br /><br />
 `;
 
-desktop.storyName = 'Desktop';
-desktop.parameters = {
+Desktop.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add modifier class \`fd-dynamic-page--xl\`.
+        description: {
+            story: `The dynamic page displays on desktop screens with the L, XL, and XXL sizes. To optimize dynamic page for desktop, add modifier class \`fd-dynamic-page--xl\`.
 
 In addition, add the modifier classes \`--add-shadow\` to the unordered list, and \`--overflow\` at the parent level for the box-shadow styling.
 `
+        }
     }
 };
 
-export const tablet = () => `
+export const Tablet = () => `
     <section class="fd-dynamic-page fd-dynamic-page--md" aria-label="Dynamic Page Tablet Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area " tabindex="0">
@@ -251,21 +252,21 @@ export const tablet = () => `
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
                 <div class="fd-dynamic-page__collapsible-header" role="region"  aria-hidden="false" id="fddplhvc5" aria-label="Tablet header">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="See More" 
-                                aria-expanded="true" 
-                                aria-haspopup="true" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="See More"
+                                aria-expanded="true"
+                                aria-haspopup="true"
                                 aria-controls="fddplhvc5">
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
-                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
+                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact"
                                 aria-label="Pin this">
                                 <i class="sap-icon--pushpin-off"></i>
                         </button>
@@ -294,31 +295,31 @@ export const tablet = () => `
         </header>
         <div class="fd-dynamic-page__content">
             <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV551" role="tabpanel">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
             <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz166" role="tabpanel" >
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
@@ -336,16 +337,17 @@ export const tablet = () => `
     <br /><br />
 `;
 
-tablet.storyName = 'Tablet';
-tablet.parameters = {
+Tablet.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add modifier class \`fd-dynamic-page--md\`.
+        description: {
+            story: `The dynamic page displays on tablet screens with the M size. To optimize dynamic page for tablet, add modifier class \`fd-dynamic-page--md\`.
 
 It is recommended that the navigation actions are displayed in a separate row above product actions, and are placed at the same level as the breadcrumb component.`
+        }
     }
 };
 
-export const mobile = () =>
+export const Mobile = () =>
     `<div class="mobile-container">
         <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Example">
             <header class="fd-dynamic-page__header">
@@ -428,17 +430,17 @@ export const mobile = () =>
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-container">
                     <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc4" aria-label="Dynamic Page Mobile Header">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                        delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                        delectus necessitatibus incidunt numquam asperiores tenetur iure.
                         Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                     </div>
                     <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                         <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                         <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                    aria-label="See More" 
-                                    aria-expanded="true" 
-                                    aria-haspopup="true" 
+                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                    aria-label="See More"
+                                    aria-expanded="true"
+                                    aria-haspopup="true"
                                     aria-controls="fddplhvc4">
                                     <i class="sap-icon--slim-arrow-up"></i>
                             </button>
@@ -462,20 +464,20 @@ export const mobile = () =>
                                 </span>
                             </a>
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
             </header>
             <div class="fd-dynamic-page__content">
                 <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV552" role="tabpanel">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 </div>
                 <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz167" role="tabpanel">
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
@@ -493,17 +495,18 @@ export const mobile = () =>
     </div>
 `;
 
-mobile.storyName = 'Mobile';
-mobile.parameters = {
+Mobile.parameters = {
     docs: {
-        storyDescription: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add modifier class \`fd-dynamic-page--sm\`.
- 
+        description: {
+            story: `The dynamic page displays on mobile screens with the S size. To optimize dynamic page for mobile, add modifier class \`fd-dynamic-page--sm\`.
+
 To display the breadcrumb and close button, they must be wrapped in \`fd-dynamic-page__breadcrumb-container\`. The toolbar overflow actions are functional without being wrapped in an additional container.
 Use \`fd-dynamic-page__toolbar--content\` for the title content when it is used in an overflow toolbar.`
+        }
     }
 };
 
-export const mobileCollapsed = () =>
+export const MobileCollapsed = () =>
     `<div class="mobile-container">
         <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Collapsed Example">
             <header class="fd-dynamic-page__header">
@@ -586,17 +589,17 @@ export const mobileCollapsed = () =>
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-container">
                     <div class="fd-dynamic-page__collapsible-header" role="region" aria-hidden="true" id="fddplhvcm1"  aria-label="Dynamic Page Mobile Collapsed Header" >
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                        delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                        delectus necessitatibus incidunt numquam asperiores tenetur iure.
                         Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                     </div>
                     <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                         <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                         <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                    aria-label="See More" 
-                                    aria-expanded="false" 
-                                    aria-haspopup="true" 
+                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                    aria-label="See More"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
                                     aria-controls="fddplhvcm1">
                                     <i class="sap-icon--slim-arrow-down"></i>
                             </button>
@@ -620,20 +623,20 @@ export const mobileCollapsed = () =>
                                 </span>
                             </a>
                         </li>
-                    </ul>   
+                    </ul>
                 </div>
             </header>
             <div class="fd-dynamic-page__content">
                 <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV553" role="tabpanel">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 </div>
                 <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz168" role="tabpanel">
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
@@ -651,14 +654,16 @@ export const mobileCollapsed = () =>
     </div>
 `;
 
-mobileCollapsed.storyName = 'Collapsed Header (mobile)';
-mobileCollapsed.parameters = {
+MobileCollapsed.storyName = 'Collapsed Header (mobile)';
+MobileCollapsed.parameters = {
     docs: {
-        storyDescription: 'In the example below, the dynamic page is displayed with a collapsed header for mobile screens.'
+        description: {
+            story: 'In the example below, the dynamic page is displayed with a collapsed header for mobile screens.'
+        }
     }
 };
 
-export const summaryLine = () =>
+export const SummaryLine = () =>
     `<div class="mobile-container">
         <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Summary Line Example">
             <header class="fd-dynamic-page__header">
@@ -705,18 +710,18 @@ export const summaryLine = () =>
                 <div class="fd-dynamic-page__collapsible-header-container">
                     <div class="fd-dynamic-page__collapsible-header"
                         role="region" aria-hidden="true" id="fddplhvcm2"  aria-label="Dynamic Page Mobile Collapsed Header" >
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                        delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                        delectus necessitatibus incidunt numquam asperiores tenetur iure.
                         Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                     </div>
                     <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow"
                         aria-hidden="true">
                         <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                         <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                            <button tabindex="-1" class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                    aria-label="See More" 
-                                    aria-expanded="false" 
-                                    aria-haspopup="true" 
+                            <button tabindex="-1" class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                    aria-label="See More"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
                                     aria-controls="fddplhvcm2">
                                     <i class="sap-icon--slim-arrow-down"></i>
                             </button>
@@ -740,22 +745,22 @@ export const summaryLine = () =>
                                 </span>
                             </a>
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
-            </header> 
+            </header>
             <div class="fd-dynamic-page__content">
                 <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV554" role="tabpanel">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 </div>
                 <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz169" role="tabpanel">
                     <h2 class="fd-title fd-title--h6 fd-title--wrap"><b>This is an example of a summary line, without the expand/collapse feature.</b></h2>
                     <br />
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
@@ -773,15 +778,17 @@ export const summaryLine = () =>
     </div>
 `;
 
-summaryLine.storyName = 'Summary Line (mobile)';
-summaryLine.parameters = {
+SummaryLine.storyName = 'Summary Line (mobile)';
+SummaryLine.parameters = {
     docs: {
-        storyDescription: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line, 
+        description: {
+            story: `It is recommended to add a summary line insead of the expand/collapse header feature so users can better focus on the page content. To display a summary line,
         add \`fd-dynamic-page__summarized-title\` in the \`fd-dynamic-page__summarized-title-area\` element.`
+        }
     }
 };
 
-export const expandable = () =>
+export const Expandable = () =>
     `<section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Expandable Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area " tabindex="0">
@@ -822,21 +829,21 @@ export const expandable = () =>
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
                 <div class="fd-dynamic-page__collapsible-header" role="region"  aria-hidden="false" id="fddplhvc1" aria-label="Default expanded header" >
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="See More" 
-                                aria-expanded="true" 
-                                aria-haspopup="true" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="See More"
+                                aria-expanded="true"
+                                aria-haspopup="true"
                                 aria-controls="fddplhvc1">
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
-                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
+                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact"
                                 aria-label="Pin this">
                                 <i class="sap-icon--pushpin-off"></i>
                         </button>
@@ -846,29 +853,31 @@ export const expandable = () =>
             </div>
         </header>
         <div class="fd-dynamic-page__content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
             eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </section>
 `;
 
-expandable.storyName = 'Expanded Header';
-expandable.parameters = {
+Expandable.storyName = 'Expanded Header';
+Expandable.parameters = {
     docs: {
-        storyDescription: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature).
+        description: {
+            story: `As demonstrated earlier, the dynamic page header can be either displayed or hidden with the expand/collapse buttons. Users can select the pin button to keep the header displayed (enabling the sticky feature).
         To collapse the dynamic page, add the \`--collapsed\` modifier class to the title area and title elements.`
+        }
     }
 };
 
-export const collapsedHeader = () =>
+export const CollapsedHeader = () =>
     `<section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Collapsed Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area  fd-dynamic-page__title-area--collapsed" tabindex="0">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
-                        <nav aria-label="Breadcrumbs">   
+                        <nav aria-label="Breadcrumbs">
                             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
@@ -903,21 +912,21 @@ export const collapsedHeader = () =>
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
                 <div class="fd-dynamic-page__collapsible-header" role="region"  aria-hidden="true" id="fddplhvc2"  aria-label="Collapsed header">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="See More" 
-                                aria-expanded="false" 
-                                aria-haspopup="true" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="See More"
+                                aria-expanded="false"
+                                aria-haspopup="true"
                                 aria-controls="fddplhvc2">
                                 <i class="sap-icon--slim-arrow-down"></i>
                         </button>
-                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
+                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact"
                                 aria-label="Pin this">
                                 <i class="sap-icon--pushpin-off"></i>
                         </button>
@@ -927,28 +936,29 @@ export const collapsedHeader = () =>
             </div>
         </header>
         <div class="fd-dynamic-page__content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
             eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </section>
 `;
 
-collapsedHeader.storyName = 'Collapsed Header';
-collapsedHeader.parameters = {
+CollapsedHeader.parameters = {
     docs: {
-        storyDescription: 'In the example below, the dynamic page is displayed with a collapsed header for desktop screens.'
+        description: {
+            story: 'In the example below, the dynamic page is displayed with a collapsed header for desktop screens.'
+        }
     }
 };
 
-export const onlyCollapse = () =>
+export const OnlyCollapse = () =>
     `<section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Pinnable Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area " tabindex="0">
                 <div class="fd-dynamic-page__main-container">
                     <div class="fd-dynamic-page__breadcrumb-title-container">
-                        <nav aria-label="Breadcrumbs">  
+                        <nav aria-label="Breadcrumbs">
                             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
                                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
                                 <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
@@ -983,17 +993,17 @@ export const onlyCollapse = () =>
             </div>
             <div class="fd-dynamic-page__collapsible-header-container">
                 <div class="fd-dynamic-page__collapsible-header" role="region" id="fddplhvc3" aria-hidden="false"  aria-label="Pinned header">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, 
-                    delectus necessitatibus incidunt numquam asperiores tenetur iure. 
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
+                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
                     Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
                 </div>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="See More" 
-                                aria-expanded="true" 
-                                aria-haspopup="true" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="See More"
+                                aria-expanded="true"
+                                aria-haspopup="true"
                                 aria-controls="fddplhvc3">
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
@@ -1003,24 +1013,26 @@ export const onlyCollapse = () =>
             </div>
         </header>
         <div class="fd-dynamic-page__content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
             eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
             dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
         </div>
     </section>
 `;
 
-onlyCollapse.storyName = 'Without pin';
-onlyCollapse.parameters = {
+OnlyCollapse.storyName = 'Without pin';
+OnlyCollapse.parameters = {
     docs: {
-        storyDescription: 'The dynamic page can be displayed without a pin button, giving users the option to only expand or collapse the header area.'
+        description: {
+            story: 'The dynamic page can be displayed without a pin button, giving users the option to only expand or collapse the header area.'
+        }
     }
 };
 
 
 
-export const withFacets = () =>
+export const WithFacets = () =>
     `<section class="fd-dynamic-page fd-dynamic-page--xl" aria-label="Dynamic Page Desktop Example">
         <header class="fd-dynamic-page__header">
             <div class="fd-dynamic-page__title-area" tabindex="0" aria-hidden="false" id="mainContainer">
@@ -1152,7 +1164,7 @@ export const withFacets = () =>
                                 <span class="fd-object-number__text">579</span><span class="fd-object-number__unit">EUR</span>
                             </span>
                         </div>
-                    
+
                         <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle3">
                             <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle3">Average User Rating</h1>
                             <h2 class="fd-form-label">6 reviews</h2>
@@ -1160,16 +1172,16 @@ export const withFacets = () =>
                                 <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
                                 <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-1" name="2-rating-max-value-5" value="1">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-1"></label>
-                    
+
                                 <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-2" name="2-rating-max-value-5" value="2" checked>
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-2"></label>
-                    
+
                                 <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-3" name="2-rating-max-value-5" value="3">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-3"></label>
-                    
+
                                 <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-4" name="2-rating-max-value-5" value="4">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-4"></label>
-                    
+
                                 <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-5" name="2-rating-max-value-5" value="5">
                                 <label class="fd-rating-indicator__label" for="2-rating-max-value-5-5"></label>
                                 </div>
@@ -1181,12 +1193,12 @@ export const withFacets = () =>
                 <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                     <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                     <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Collapse" 
-                                aria-expanded="true" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Collapse"
+                                aria-expanded="true"
                                 aria-hidden="false"
                                 id="expandBtn"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('expandBtn', ['aria-hidden']);
@@ -1197,12 +1209,12 @@ export const withFacets = () =>
                                 >
                                 <i class="sap-icon--slim-arrow-up"></i>
                         </button>
-                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Collapse" 
-                                aria-expanded="false" 
+                        <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Collapse"
+                                aria-expanded="false"
                                 aria-hidden="true"
                                 id="collapseBtn"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvx6', ['aria-hidden']);
                                         toggleElAttrs('collapseBtn', ['aria-hidden']);
@@ -1213,7 +1225,7 @@ export const withFacets = () =>
                                 >
                                 <i class="sap-icon--slim-arrow-down"></i>
                         </button>
-                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact" 
+                        <button class="fd-dynamic-page__pin-button fd-button fd-button--compact"
                                 aria-label="Pin this">
                                 <i class="sap-icon--pushpin-off"></i>
                         </button>
@@ -1242,31 +1254,31 @@ export const withFacets = () =>
         </header>
         <div class="fd-dynamic-page__content">
             <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV557" role="tabpanel">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                 eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                 dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
             <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz155" role="tabpanel" >
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                 in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
             </div>
         </div>
@@ -1283,19 +1295,21 @@ export const withFacets = () =>
     </section>
 `;
 
-withFacets.storyName = 'With header facets';
-withFacets.parameters = {
+WithFacets.storyName = 'With header facets';
+WithFacets.parameters = {
     docs: {
-        storyDescription: `To have the image from the image facet appear next to the title, add the class 
-        \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the 
+        description: {
+            story: `To have the image from the image facet appear next to the title, add the class
+        \`fd-facet\` and apply the modifiers \`fd-facet--image\` and \`fd-facet--image-header-title\` to the
         \`fd-dynamic-page__title-container\` class.
         Note that the dynamic page title and subtitle should be placed in the \`fd-dynamic-page__title-subtitle-container\` class
         for proper alignment with the image.
 `
+        }
     }
 };
 
-export const withFacetsMobile = () =>
+export const WithFacetsMobile = () =>
     `<div class="mobile-container">
         <section class="fd-dynamic-page fd-dynamic-page--sm" aria-label="Dynamic Page Mobile Example">
             <header class="fd-dynamic-page__header">
@@ -1416,7 +1430,7 @@ export const withFacetsMobile = () =>
                                     <i class="fd-avatar__icon sap-icon--camera" role="presentation"></i>
                                 </span>
                             </div>
-                            
+
                             <div class="fd-facet fd-facet--key-value fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="kvFacetTitle13">
                                 <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="kvFacetTitle13">Availablity</h1>
                                 <span class="fd-object-status fd-object-status--positive fd-object-status--large fd-facet__object-status">
@@ -1434,12 +1448,12 @@ export const withFacetsMobile = () =>
                     <div class="fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow">
                         <div class="fd-dynamic-page__collapsible-header-visibility-container--left-gradient"></div>
                         <div role="toolbar" aria-label="Header actions" class="fd-dynamic-page__collapsible-header-visibility-container--button-group">
-                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Collapse header" 
-                                aria-expanded="true" 
+                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Collapse header"
+                                aria-expanded="true"
                                 aria-hidden="false"
                                 id="expandBtnMobile"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('expandBtnMobile', ['aria-expanded']);
@@ -1452,12 +1466,12 @@ export const withFacetsMobile = () =>
                                 >
                                 <i class="sap-icon--slim-arrow-up"></i>
                             </button>
-                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact" 
-                                aria-label="Expand header" 
-                                aria-expanded="false" 
+                            <button class="fd-dynamic-page__collapse-button fd-button fd-button--compact"
+                                aria-label="Expand header"
+                                aria-expanded="false"
                                 aria-hidden="true"
                                 id="collapseBtnMobile"
-                                aria-haspopup="true" 
+                                aria-haspopup="true"
                                 onclick="
                                         toggleElAttrs('fddplhvc7', ['aria-hidden']);
                                         toggleElAttrs('collapseBtnMobile', ['aria-expanded']);
@@ -1490,20 +1504,20 @@ export const withFacetsMobile = () =>
                                 </span>
                             </a>
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
             </header>
             <div class="fd-dynamic-page__content">
                 <div class="fd-tabs__panel" aria-expanded="false" id="fuCwV559" role="tabpanel">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
                     eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
                     dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 </div>
                 <div class="fd-tabs__panel" aria-expanded="true" id="AiWfz161" role="tabpanel">
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti 
+                    Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
                     in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
                 </div>
             </div>
@@ -1520,6 +1534,6 @@ export const withFacetsMobile = () =>
         </section>
     </div>
 `;
-withFacetsMobile.storyName = 'With header facets (mobile)';
+WithFacetsMobile.storyName = 'With header facets (mobile)';
 
 

@@ -8,7 +8,7 @@ export default {
     }
 };
 
-export const defaultExample = () => `<p class="fd-text">
+export const DefaultExample = () => `<p class="fd-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -16,45 +16,48 @@ export const defaultExample = () => `<p class="fd-text">
     deserunt mollit anim id est laborum.</p>
 `;
 
-defaultExample.storyName = 'Default';
-defaultExample.parameters = {
+DefaultExample.storyName = 'Default';
+DefaultExample.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: `The default text component can display lines of text that wrap to the next line
+        description: {
+            story: `The default text component can display lines of text that wrap to the next line
         once they reach the end of the content container width.`
+        }
     }
 };
 
-export const whitespace = () => `
+export const Whitespace = () => `
     <h3>No indents or whitespace</h3>
     <p class="fd-text"">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
     deserunt mollit anim id est laborum.</p>
-    
+
     <h3>Wrapped text with indents and whitespace</h3>
     <p class="fd-text fd-text--pre-wrap">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 aliquip ex ea commodo consequat.
- 
+
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
 eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
 deserunt mollit anim id est laborum.</p>
 `;
 
-whitespace.storyName = 'Whitespace';
-whitespace.parameters = {
+Whitespace.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The text component has a property that allows browsers to render specified indents and
+        description: {
+            story: `The text component has a property that allows browsers to render specified indents and
         whitespace. To display indents and/or whitespace, add a
         \`fd-text--pre-wrap\` modifier class to the main element.`
+        }
     }
 };
 
-export const maxLines = () => `
+export const MaxLines = () => `
     <h3>No max lines rule</h3>
     <p class="fd-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit
@@ -71,7 +74,7 @@ export const maxLines = () => `
     faucibus. Ut lectus arcu bibendum at varius. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa.
     Dolor magna eget est lorem ipsum dolor sit. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh.
     Augue neque gravida in fermentum et. Proin fermentum leo vel orci porta non pulvinar.</p>
-    
+
     <h3>2 max lines</h3>
     <p class="fd-text fd-text--max-lines" style="-webkit-line-clamp: 2;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -109,11 +112,12 @@ export const maxLines = () => `
     Augue neque gravida in fermentum et. Proin fermentum leo vel orci porta non pulvinar.</p>
 `;
 
-maxLines.storyName = 'Max lines';
-maxLines.parameters = {
+MaxLines.storyName = 'Max lines';
+MaxLines.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The text component can be displayed with a maximum number of lines.
+        description: {
+            story: `The text component can be displayed with a maximum number of lines.
 When the maximum is reached, the text truncates and displays an ellipsis. To display text with a maximum line count,
 add the \`fd-text--max-lines\` modifier class and an inline style rule with the number of
 lines to the main element. For example, add \`style="-webkit-line-clamp: 3;"\` to display
@@ -122,10 +126,11 @@ three lines of text.
 **Note**: The property \`-webkit-line-clamp\` doesn't work in IE11 and should be changed
 to \`height\`. For example, \`style="height: 200px;"\`.
 `
+        }
     }
 };
 
-export const expand = () => `
+export const Expand = () => `
     <h3>Show More</h3>
     <p class="fd-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -147,16 +152,17 @@ export const expand = () => `
     <a class="fd-link fd-text__link--more" tabindex="0">Less</a>
 `;
 
-expand.storyName = 'Expand';
-expand.parameters = {
+Expand.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `Along with max lines, text component can display "MORE" and "LESS" links that can show
+        description: {
+            story: `Along with max lines, text component can display "MORE" and "LESS" links that can show
 more or less of the text.`
+        }
     }
 };
 
-export const hyphenation = () => `<div class="example-container">
+export const Hyphenation = () => `<div class="example-container">
         <div class="fddocs-text">
             <h3>Without hyphenation</h3>
             <p class="fd-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -177,13 +183,13 @@ export const hyphenation = () => `<div class="example-container">
     </div>
 `;
 
-hyphenation.storyName = 'Hyphenation';
-hyphenation.parameters = {
+Hyphenation.parameters = {
     docs: {
         iframeHeight: 200,
-        storyDescription: `The text component can display words that are broken at appropriate hyphenation
+        description: {
+            story: `The text component can display words that are broken at appropriate hyphenation
 points in a text block. To display hyphens, add the \`fd-text--hyphenation\` to the main element.
-        
+
 **It is also possible to suggest line break opportunities with two Unicode characters that manually specify
 potential line breakpoints:**
 
@@ -194,5 +200,6 @@ Even if the line is not actually broken at that point, the hyphen is still displ
 where the browser should break the word if hyphenation is necessary.
 
 In HTML, add the \`&shy;\` Unicode to insert a soft hyphen.`
+        }
     }
 };

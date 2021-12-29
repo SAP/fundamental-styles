@@ -8,7 +8,7 @@ export default {
 };
 
 
-export const primary = () => `
+export const Primary = () => `
 
 <pre><code class="fd-code">apiVersion: extensions.name/v1alpha1
 kind: Class
@@ -28,18 +28,22 @@ spec:
 </code></pre>
 `;
 
-primary.storyName = 'Code Block';
-primary.parameters = {
+Primary.storyName = 'Code Block';
+Primary.parameters = {
     docs: {
-        storyDescription: 'Code example as a block where you are include multiple lines'
+        description: {
+            story: 'Code example as a block where you are include multiple lines'
+        }
     }
 };
 
-export const inlineCode = () => `You can add inline code like here <code class="fd-code fd-code--inline">FundamentalExtension</code> and add mores
+export const InlineCode = () => `You can add inline code like here <code class="fd-code fd-code--inline">FundamentalExtension</code> and add mores
 <code class="fd-code fd-code--inline">ClassName</code>`;
 
-inlineCode.parameters = {
+InlineCode.parameters = {
     docs: {
-        storyDescription: 'Inline Code Example which can be used as part of a bigger text paragraph'
+        description: {
+            story: 'Inline Code Example which can be used as part of a bigger text paragraph'
+        }
     }
 };

@@ -26,7 +26,7 @@ Compact | Default | 600 px and above | Desktop
     }
 };
 
-export const primary = () => `<div class="fd-toolbar fd-toolbar--cozy">
+export const Primary = () => `<div class="fd-toolbar fd-toolbar--cozy">
     <span class="fd-toolbar__spacer"> </span>
     <button class="fd-button fd-button--transparent">New</button>
     <button class="fd-button fd-button--transparent">Open</button>
@@ -45,16 +45,17 @@ export const primary = () => `<div class="fd-toolbar fd-toolbar--cozy">
 </div>
 `;
 
-primary.storyName = 'Primary';
-primary.parameters = {
+Primary.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The primary toolbar displays several actions separated by icon buttons. It is displayed in cozy mode, which is ideal for mobile and small tablet screens.
 `
+        }
     }
 };
 
-export const overflow = () => `<div style="height:250px">
+export const Overflow = () => `<div style="height:250px">
 <h3>Cozy example</h3>
     <div class="fd-toolbar fd-toolbar--cozy">
         <span>Products (34)</span>
@@ -109,7 +110,7 @@ export const overflow = () => `<div style="height:250px">
                 id="31jr8oaufh"
                 onclick="toggleElAttrs('mw0daw8d7h', ['aria-hidden']);toggleElAttrs('31jr8oaufh', ['aria-expanded']);"
                 aria-label="More">
-                    <i class="sap-icon--overflow"></i>    
+                    <i class="sap-icon--overflow"></i>
                 </button>
             </div>
             <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow"
@@ -135,17 +136,18 @@ export const overflow = () => `<div style="height:250px">
 </div>
 `;
 
-overflow.storyName = 'Overflow';
-overflow.parameters = {
+Overflow.parameters = {
     docs: {
-        storyDescription: `The overflow toolbar can display additional elements when space is limited. This can be achieved with a **Button** and/or **Popover** component. 
+        description: {
+            story: `The overflow toolbar can display additional elements when space is limited. This can be achieved with a **Button** and/or **Popover** component.
 
 To display an overflow in a button, pass the \`sap-icon--overflow\` in the \`fd-button\` class. Additionally, you can add a popover by passing \`fd-popover\` in the \`fd-toolbar__overflow\` element.
  Add any element inside overflow body with \`fd-toolbar__overflow-button\` , \`fd-toolbar__overflow-button--menu\` \`fd-toolbar__overflow-label \` modifier ,        `
+        }
     }
 };
 
-export const types = () => `<div style="padding: 1rem">
+export const Types = () => `<div style="padding: 1rem">
     <h3>Solid</h3>
     <div class="fd-toolbar fd-toolbar--solid">
         <span>Products (23)</span>
@@ -213,7 +215,7 @@ export const types = () => `<div style="padding: 1rem">
 </div>
 `;
 
-export const separator = () => `
+export const Separator = () => `
 <div class="fd-toolbar fd-toolbar--cozy">
     <button class="fd-button fd-button--positive">Accept</button>
     <span class="fd-toolbar__separator"></span>
@@ -236,34 +238,37 @@ export const separator = () => `
 </div>
 `;
 
-separator.storyName = 'Separators';
-separator.parameters = {
+Separator.storyName = 'Separators';
+Separator.parameters = {
     docs: {
-        storyDescription: `Separators should be used to visually separate items from each other. To display separators in toolbars, add the \`fd-toolbar__separator\` class after the component you are separating.
+        description: {
+            story: `Separators should be used to visually separate items from each other. To display separators in toolbars, add the \`fd-toolbar__separator\` class after the component you are separating.
 `
+        }
     }
 };
 
-types.storyName = 'Types';
-types.parameters = {
+Types.parameters = {
     docs: {
-        storyDescription: `Toolbar can be styled in various ways depending on the use case.
+        description: {
+            story: `Toolbar can be styled in various ways depending on the use case.
 
 Types | Modifier class | Description
 :-------- | :------------- | :---------------
 Solid | \`fd-toolbar--solid\` | Displays a solid background color.
 Transparent | \`fd-toolbar--transparent\` | Displays a transparent background.
 Auto | \` d-toolbar--auto\` | Can inherit the design from the parent component it’s being used with.
-Info | \` fd-toolbar--info\` | Commonly used to display information (text or icons) and is slightly smaller than the regular toolbar. 
+Info | \` fd-toolbar--info\` | Commonly used to display information (text or icons) and is slightly smaller than the regular toolbar.
 Title | \` fd-toolbar--title\` | Should be used whenever a title is required.
 No border-bottom | \`fd-toolbar—clear\` | This is not a type, but it removes the bottom border of each toolbar type.
 Active | \` fd-toolbar--active\` | This is also not a type, but it enables active and hover states in each type.
 
 `
+        }
     }
 };
 
-export const alignment = () => `<h3>Left and right-aligned</h3>
+export const Alignment = () => `<h3>Left and right-aligned</h3>
 <div class="fd-toolbar">
     <button class="fd-button fd-button--compact fd-button--positive">Accept</button>
     <span class="fd-toolbar__spacer"></span>
@@ -314,12 +319,13 @@ export const alignment = () => `<h3>Left and right-aligned</h3>
 </div>
 `;
 
-alignment.storyName = 'Alignment';
-alignment.parameters = {
+Alignment.parameters = {
     docs: {
-        storyDescription: `Toolbars are typically used for left/right alignment; however, they can be displayed in any way with the \`fd-toolbar__spacer\` class.
+        description: {
+            story: `Toolbars are typically used for left/right alignment; however, they can be displayed in any way with the \`fd-toolbar__spacer\` class.
 
 **Note:** Spacers share the horizontal space equally; therefore, the content is not centered as precisely as it is in the **Bar** component.
 `
+        }
     }
 };

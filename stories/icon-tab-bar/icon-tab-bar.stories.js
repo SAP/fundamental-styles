@@ -38,7 +38,7 @@ You can add horizontal paddings by applying a modifier class to the container. F
 | xxl (3rem) &nbsp;&nbsp; | \`fd-icon-tab-bar--xxl\` |
 
 ##Background
-By default, the background for the Icon Tab Bar header and content is set to "solid". This will apply \`--sapObjectHeader_Background\` background color and \`--sapContent_HeaderShadow\` box-shadow to the header and \`--sapBackgroundColor\` to the container (panel). It can be changed to "translucent" or "transparent" using modifier classes. In translucent mode the header gets \`--sapObjectHeader_Background\` background color and the panel \`--sapGroup_ContentBackground\` background color. 
+By default, the background for the Icon Tab Bar header and content is set to "solid". This will apply \`--sapObjectHeader_Background\` background color and \`--sapContent_HeaderShadow\` box-shadow to the header and \`--sapBackgroundColor\` to the container (panel). It can be changed to "translucent" or "transparent" using modifier classes. In translucent mode the header gets \`--sapObjectHeader_Background\` background color and the panel \`--sapGroup_ContentBackground\` background color.
 
 | **Background** | **Modifier class** |
 | :--------- | :---------- |
@@ -54,8 +54,8 @@ By default, the background for the Icon Tab Bar header and content is set to "so
 };
 
 
-export const textOnly = () => `<div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const TextOnly = () => `<div class="fd-icon-tab-bar">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section1" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Info</span>
@@ -71,26 +71,28 @@ export const textOnly = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Approvals (42)</span>
             </a>
         </li>
-    </ul> 
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">  
+    </ul>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">
         Section 1
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>
         Section 2
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>
         Section 3
     </section>
 </div>
 `;
-textOnly.storyName = 'Text Only (Inline mode)';
-textOnly.parameters = {
+TextOnly.storyName = 'Text Only (Inline mode)';
+TextOnly.parameters = {
     docs: {
-        storyDescription: 'The text-only variant is one of the most common types. It allows longer labels, and can also display counters next to the text to indicate the number of items on the tab page. The labels of the tabs do not get truncated. The full text is always shown. As a result, you need to ensure that your labels do not become too long. They should still be easy to read on smaller screens. The control has the same look and feel in Cozy and Compact mode.'
+        description: {
+            story: 'The text-only variant is one of the most common types. It allows longer labels, and can also display counters next to the text to indicate the number of items on the tab page. The labels of the tabs do not get truncated. The full text is always shown. As a result, you need to ensure that your labels do not become too long. They should still be easy to read on smaller screens. The control has the same look and feel in Cozy and Compact mode.'
+        }
     }
 };
 
-export const textOnlySemantic = () => `<div class="fd-icon-tab-bar">
+export const TextOnlySemantic = () => `<div class="fd-icon-tab-bar">
     <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section1" aria-selected="true" id="tab1">
@@ -119,11 +121,11 @@ export const textOnlySemantic = () => `<div class="fd-icon-tab-bar">
     <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section4" aria-labelledby="tab4" hidden>Section 4</section>
 </div>
 `;
-textOnlySemantic.storyName = 'Text Only (Inline mode) Semantic Colors';
+TextOnlySemantic.storyName = 'Text Only (Inline mode) Semantic Colors';
 
 
-export const counter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--counters">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const Counter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--counters">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section1" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Info</span>
@@ -141,27 +143,29 @@ export const counter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--count
                 <span class="fd-icon-tab-bar__tag">Approvals</span>
             </a>
         </li>
-    </ul> 
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">  
+    </ul>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">
         Section 1
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>
         Section 2
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>
         Section 3
     </section>
 </div>
 `;
-counter.storyName = 'Counters and Text';
-counter.parameters = {
+Counter.storyName = 'Counters and Text';
+Counter.parameters = {
     docs: {
-        storyDescription: 'Counters can be shown on top of labels. In this case you need to apply the `fd-icon-tab-bar--counters` modifier class. <br> The control has the same look and feel in Cozy and Compact mode.'
+        description: {
+            story: 'Counters can be shown on top of labels. In this case you need to apply the `fd-icon-tab-bar--counters` modifier class. <br> The control has the same look and feel in Cozy and Compact mode.'
+        }
     }
 };
 
-export const iconOnly = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const IconOnly = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section1" id="tab1">
                 <div class="fd-icon-tab-bar__container">
@@ -192,27 +196,28 @@ export const iconOnly = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon
                 </div>
             </a>
         </li>
-    </ul> 
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">  
+    </ul>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">
         Section 1
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>
         Section 2
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>
         Section 3
     </section>
 </div>
 `;
-iconOnly.storyName = 'Icon Only';
-iconOnly.parameters = {
+IconOnly.parameters = {
     docs: {
-        storyDescription: 'The Icon tabs are rounded tabs that can be populated with any icon. The labels in this case are omitted and counters are optional. You need to apply the `fd-icon-tab-bar--icon-only` modifier class for this type of tabs.'
+        description: {
+            story: 'The Icon tabs are rounded tabs that can be populated with any icon. The labels in this case are omitted and counters are optional. You need to apply the `fd-icon-tab-bar--icon-only` modifier class for this type of tabs.'
+        }
     }
 };
 
-export const iconOnlyCompact = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only fd-icon-tab-bar--compact">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const IconOnlyCompact = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only fd-icon-tab-bar--compact">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section1" id="tab1">
                 <div class="fd-icon-tab-bar__container">
@@ -243,27 +248,29 @@ export const iconOnlyCompact = () => `<div class="fd-icon-tab-bar fd-icon-tab-ba
                 </div>
             </a>
         </li>
-    </ul> 
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">  
+    </ul>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">
         Section 1
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>
         Section 2
-    </section>  
-    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>  
+    </section>
+    <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>
         Section 3
     </section>
 </div>
 `;
-iconOnlyCompact.storyName = 'Icon Only in Compact Mode';
-iconOnlyCompact.parameters = {
+IconOnlyCompact.storyName = 'Icon Only in Compact Mode';
+IconOnlyCompact.parameters = {
     docs: {
-        storyDescription: 'In compact mode you need to apply an additional modifier class `fd-icon-tab-bar--compact`.'
+        description: {
+            story: 'In compact mode you need to apply an additional modifier class `fd-icon-tab-bar--compact`.'
+        }
     }
 };
 
-export const iconOnlySemantic = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const IconOnlySemantic = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
                 <div class="fd-icon-tab-bar__container">
@@ -304,11 +311,11 @@ export const iconOnlySemantic = () => `<div class="fd-icon-tab-bar fd-icon-tab-b
                 </div>
             </a>
         </li>
-    </ul> 
+    </ul>
 </div>
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only fd-icon-tab-bar--compact">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab5">
                 <div class="fd-icon-tab-bar__container">
@@ -352,10 +359,10 @@ export const iconOnlySemantic = () => `<div class="fd-icon-tab-bar fd-icon-tab-b
     </ul>
 </div>
 `;
-iconOnlySemantic.storyName = 'Icon Only Semantic Colors';
+IconOnlySemantic.storyName = 'Icon Only Semantic Colors';
 
-export const icon = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const Icon = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="1">
                 <div class="fd-icon-tab-bar__container">
@@ -394,12 +401,12 @@ export const icon = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
                 </div>
             </a>
         </li>
-    </ul> 
+    </ul>
 </div>
 
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--icon fd-icon-tab-bar--compact">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
                 <div class="fd-icon-tab-bar__container">
@@ -438,12 +445,12 @@ export const icon = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
                 </div>
             </a>
         </li>
-    </ul> 
+    </ul>
 </div>
 
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab7">
                 <div class="fd-icon-tab-bar__container">
@@ -486,15 +493,16 @@ export const icon = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
     </ul>
 </div>
 `;
-icon.storyName = 'Icon';
-icon.parameters = {
+Icon.parameters = {
     docs: {
-        storyDescription: 'To display Icon Tabs with labels and counters you need to apply the `fd-icon-tab-bar--icon` modifier class. The counters are optional and can be ommited. The label is always positioned at the bottom. If you decide to use labels, use them for all tabs. The badge is rendered at the top right hand corner of the icon container. Consider using shorter labels or text tabs (without icons), since text tabs cannot get truncated.'
+        description: {
+            story: 'To display Icon Tabs with labels and counters you need to apply the `fd-icon-tab-bar--icon` modifier class. The counters are optional and can be ommited. The label is always positioned at the bottom. If you decide to use labels, use them for all tabs. The badge is rendered at the top right hand corner of the icon container. Consider using shorter labels or text tabs (without icons), since text tabs cannot get truncated.'
+        }
     }
 };
 
-export const process = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon fd-icon-tab-bar--process">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const Process = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon fd-icon-tab-bar--process">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab1">
                 <div class="fd-icon-tab-bar__container">
@@ -545,7 +553,7 @@ export const process = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon 
 </div>
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--compact fd-icon-tab-bar--icon fd-icon-tab-bar--process">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
                 <div class="fd-icon-tab-bar__container">
@@ -596,7 +604,7 @@ export const process = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon 
 
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--icon fd-icon-tab-bar--process">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab7">
                 <div class="fd-icon-tab-bar__container">
@@ -647,7 +655,7 @@ export const process = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon 
 
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--process">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab10">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -673,15 +681,17 @@ export const process = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--icon 
     </ul>
 </div>
 `;
-process.storyName = 'Process';
-process.parameters = {
+
+Process.parameters = {
     docs: {
-        storyDescription: 'You can also use the tab bar to depict a process. In this case, each tab stands for one step. You need to add the `fd-icon-tab-bar--process` modifier class and a sibling html element with `fd-icon-tab-bar__separator` class to the tab.'
+        description: {
+            story: 'You can also use the tab bar to depict a process. In this case, each tab stands for one step. You need to add the `fd-icon-tab-bar--process` modifier class and a sibling html element with `fd-icon-tab-bar__separator` class to the tab.'
+        }
     }
 };
 
-export const filter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--filter">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const Filter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--filter">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab"  aria-selected="true" href="#" id="tab1">
                 <div class="fd-icon-tab-bar__container fd-icon-tab-bar__container--filter">
@@ -700,7 +710,7 @@ export const filter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--filter
                     <span class="fd-icon-tab-bar__counter">2</span>
                 </div>
                 <div class="fd-icon-tab-bar__label">Ok</div>
-                
+
             </a>
         </li>
         <li role="presentation" class="fd-icon-tab-bar__item">
@@ -730,7 +740,7 @@ export const filter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--filter
 
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--filter fd-icon-tab-bar--compact">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab5">
                 <div class="fd-icon-tab-bar__container fd-icon-tab-bar__container--filter">
@@ -778,7 +788,7 @@ export const filter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--filter
 
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--filter">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab9">
                 <div class="fd-icon-tab-bar__container fd-icon-tab-bar__container--filter">
@@ -822,26 +832,28 @@ export const filter = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--filter
         </li>
     </ul>
 </div>`;
-filter.storyName = 'Filter';
-filter.parameters = {
+
+Filter.parameters = {
     docs: {
-        storyDescription: `The tab bar as a filter has two parts: <br>
+        description: {
+            story: `The tab bar as a filter has two parts: <br>
         - An “all” tab on the left - shows the total number of items, and describes the type of item (for example, 189 Products). <br>
         -  Tabs for specific filters - the tab text indicates the filter attribute. It is recommended to show a counter on every tab.
         <br>
         You need to add the \`fd-icon-tab-bar--filter\` modifier class for this type of tabs.`
+        }
     }
 };
 
 
-export const overflow = () => `<div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header fd-icon-tab-bar__header--left-offset"> 
+export const Overflow = () => `<div class="fd-icon-tab-bar">
+    <ul role="tablist" class="fd-icon-tab-bar__header fd-icon-tab-bar__header--left-offset">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow-left">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">+2</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
             </button>
-        </li> 
+        </li>
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -863,12 +875,12 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__overflow-text">+3</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
             </button>
-        </li> 
+        </li>
     </ul>
 </div>
 <br><br>
 <div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header"> 
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -890,20 +902,22 @@ export const overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__overflow-text">More</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
             </button>
-        </li> 
+        </li>
     </ul>
 </div>`;
-overflow.storyName = 'Overflow';
-overflow.parameters = {
+
+Overflow.parameters = {
     docs: {
-        storyDescription: `Tabs can have an overflow to either sides of the control. Depending on if the order is fixed (process steps) or can be rearranged (tabs).
+        description: {
+            story: `Tabs can have an overflow to either sides of the control. Depending on if the order is fixed (process steps) or can be rearranged (tabs).
         For processes with a fixed order, an overflow to both sides is used. For tabs that can be rearranged, only one overflow will be displayed on the right side.`
+        }
     }
 };
 
-export const singleClick = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
+export const SingleClick = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
     <div class="fd-icon-tab-bar fd-icon-tab-bar--xl">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab111">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1016,7 +1030,7 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
             <div class="fd-popover__control">
                 <button class='fd-icon-tab-bar__overflow'>
                     <span class='fd-icon-tab-bar__overflow-text'>More</span>
-                    <i class='sap-icon--slim-arrow-down' role='presentation'></i>   
+                    <i class='sap-icon--slim-arrow-down' role='presentation'></i>
                 </button>
             </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" style='top: 2.3rem'>
@@ -1063,19 +1077,21 @@ export const singleClick = () => `<div class='fddocs-icon-tab-container' style="
 </div>
 </div>
 `;
-singleClick.storyName = 'Universal Icon Tab Bar Single Click Area';
-singleClick.parameters = {
+SingleClick.storyName = 'Universal Icon Tab Bar Single Click Area';
+SingleClick.parameters = {
     docs: {
-        storyDescription: `When there is only one click area per tab (also including tabs with sub-items), regular tabs get selected immediately after the click is released. Tabs with sub-items trigger the expansion of a menu (Popover) showing its sub-items. The parent tab title remains displayed when its child is select.
+        description: {
+            story: `When there is only one click area per tab (also including tabs with sub-items), regular tabs get selected immediately after the click is released. Tabs with sub-items trigger the expansion of a menu (Popover) showing its sub-items. The parent tab title remains displayed when its child is select.
         <br>
         You need to apply the \`fd-icon-tab-bar__item--single-click\` modifier class to \`fd-icon-tab-bar__item\` element. The List component inside the Popover has an additional modifier class \`fd-icon-tab-bar__list\` to achieve the nesting (indentation) of the elements. The list menu can be borderless, with line separators (\`fd-icon-tab-bar__line-separator\`) or icon separators (\`fd-icon-tab-bar__icon-separator\`) `
+        }
     }
 };
 
 
-export const multiClick = () => `<div class="fddocs-icon-tab-container" style="min-height: 400px;">
+export const MultiClick = () => `<div class="fddocs-icon-tab-container" style="min-height: 400px;">
     <div class="fd-icon-tab-bar fd-icon-tab-bar--md">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="multiClick1">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1161,15 +1177,17 @@ export const multiClick = () => `<div class="fddocs-icon-tab-container" style="m
     </div>
 </div>
 `;
-multiClick.storyName = 'Universal Icon Tab Bar Multi Click Area';
-multiClick.parameters = {
+MultiClick.storyName = 'Universal Icon Tab Bar Multi Click Area';
+MultiClick.parameters = {
     docs: {
-        storyDescription: 'In case of two click areas for tabs with sub-tabs, the behaviour for regular tabs (without sub-items) remains unchanged, like described above the tabs get selected immediately. Tabs with two click areas behave differently: when the main part of the tab is clicked, it is highlighted and then selected immediately. Clicking the second area opens a menu (Popover) containing the sub-items. Once a sub-item is clicked, the main tab is highlighted as selected. '
+        description: {
+            story: 'In case of two click areas for tabs with sub-tabs, the behaviour for regular tabs (without sub-items) remains unchanged, like described above the tabs get selected immediately. Tabs with two click areas behave differently: when the main part of the tab is clicked, it is highlighted and then selected immediately. Clicking the second area opens a menu (Popover) containing the sub-items. Once a sub-item is clicked, the main tab is highlighted as selected. '
+        }
     }
 };
 
-export const badge = () => `<div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const Badge = () => `<div class="fd-icon-tab-bar">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section11" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1191,7 +1209,7 @@ export const badge = () => `<div class="fd-icon-tab-bar">
 
 <br><br>
 <div class="fd-icon-tab-bar">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section21" aria-selected="true" id="tab4">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1207,7 +1225,7 @@ export const badge = () => `<div class="fd-icon-tab-bar">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--critical">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section23" aria-selected="true" id="tab6">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
-                <span class="fd-icon-tab-bar__badge"></span> 
+                <span class="fd-icon-tab-bar__badge"></span>
             </a>
         </li>
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--informative">
@@ -1221,7 +1239,7 @@ export const badge = () => `<div class="fd-icon-tab-bar">
 
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--counters">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section41" id="tab8">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1249,7 +1267,7 @@ export const badge = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__badge"></span>
             </a>
         </li>
-    </ul> 
+    </ul>
 </div>
 <br><br>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--icon-only">
@@ -1301,16 +1319,18 @@ export const badge = () => `<div class="fd-icon-tab-bar">
   </ul>
 </div>
 `;
-badge.storyName = 'Badges';
-badge.parameters = {
+Badge.storyName = 'Badges';
+Badge.parameters = {
     docs: {
-        storyDescription: `The Tab attention badge is applied as a visual eye-catcher to indicate a change within a Tab. <br>
+        description: {
+            story: `The Tab attention badge is applied as a visual eye-catcher to indicate a change within a Tab. <br>
         The badge is a span element with \`fd-icon-tab-bar__badge\` class. It can be animated by adding an additional \` fd-icon-tab-bar__badge--animated\` modifier class. In this case the badge appears for a few milliseconds and then disappears.`
+        }
     }
 };
 
-export const respPaddings = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--responsive-paddings">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+export const RespPaddings = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--responsive-paddings">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#section11" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1330,16 +1350,18 @@ export const respPaddings = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--
     </ul>
 </div>
 `;
-respPaddings.storyName = 'Responsive Paddings';
-respPaddings.parameters = {
+RespPaddings.storyName = 'Responsive Paddings';
+RespPaddings.parameters = {
     docs: {
-        storyDescription: 'For an Icon Tab Bar with responsive paddings that adjust based on the screen size add the `fd-icon-tab-bar--responsive-paddings` modifier class.'
+        description: {
+            story: 'For an Icon Tab Bar with responsive paddings that adjust based on the screen size add the `fd-icon-tab-bar--responsive-paddings` modifier class.'
+        }
     }
 };
 
-export const paddings = () => `<h4>SM (1rem) paddings</h4>
+export const Paddings = () => `<h4>SM (1rem) paddings</h4>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--sm">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1360,7 +1382,7 @@ export const paddings = () => `<h4>SM (1rem) paddings</h4>
 <br><br>
 <h4>MD (2rem) paddings</h4>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--md">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1381,7 +1403,7 @@ export const paddings = () => `<h4>SM (1rem) paddings</h4>
 <br><br>
 <h4>LG (2rem) paddings</h4>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--lg">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab7">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1402,7 +1424,7 @@ export const paddings = () => `<h4>SM (1rem) paddings</h4>
 <br><br>
 <h4>XL (3rem) paddings</h4>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--xl">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab13">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1423,7 +1445,7 @@ export const paddings = () => `<h4>SM (1rem) paddings</h4>
 <br><br>
 <h4>XXL (3rem) paddings</h4>
 <div class="fd-icon-tab-bar fd-icon-tab-bar--xxl">
-    <ul role="tablist" class="fd-icon-tab-bar__header">  
+    <ul role="tablist" class="fd-icon-tab-bar__header">
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab16">
                 <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1442,17 +1464,19 @@ export const paddings = () => `<h4>SM (1rem) paddings</h4>
     </ul>
 </div>
 `;
-paddings.storyName = 'Sizes and Horizontal Paddings';
-paddings.parameters = {
+Paddings.storyName = 'Sizes and Horizontal Paddings';
+Paddings.parameters = {
     docs: {
-        storyDescription: 'You can set horizontal paddings by adding a modifier class and specifying the size of the paddings. Please refer to the "Paddings" section at the top of the page for the available sizes.'
+        description: {
+            story: 'You can set horizontal paddings by adding a modifier class and specifying the size of the paddings. Please refer to the "Paddings" section at the top of the page for the available sizes.'
+        }
     }
 };
 
-export const navigation = () => `<div class="fddocs-icon-tab-container" style="min-height: 600px;">
+export const Navigation = () => `<div class="fddocs-icon-tab-container" style="min-height: 600px;">
 <h4>With Overflow</h4>
     <div class="fd-icon-tab-bar fd-icon-tab-bar--sm fd-icon-tab-bar--navigation" style="max-width: 400px;">
-        <ul role="tablist" class="fd-icon-tab-bar__header"> 
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1473,13 +1497,13 @@ export const navigation = () => `<div class="fddocs-icon-tab-container" style="m
                     <span class="fd-icon-tab-bar__overflow-text">More</span>
                     <i class="sap-icon--slim-arrow-down" role="presentation"></i>
                 </button>
-            </li> 
+            </li>
         </ul>
     </div>
     <div style="height: 50px;"></div>
     <h4>With Multi Click Area</h4>
     <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--md">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1581,18 +1605,20 @@ export const navigation = () => `<div class="fddocs-icon-tab-container" style="m
     </div>
 </div>
 `;
-navigation.storyName = 'Navigation Icon Tab Bar (Shell Navigation)';
-navigation.parameters = {
+Navigation.storyName = 'Navigation Icon Tab Bar (Shell Navigation)';
+Navigation.parameters = {
     docs: {
-        storyDescription: `The Navigation Tab Bar is the main/default navigation displayed on the SAP Fiori launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>
+        description: {
+            story: `The Navigation Tab Bar is the main/default navigation displayed on the SAP Fiori launchpad home page. It offers the user an easy access to multiple pages per space. The background color of the Shell Navigation is connected the Home/Shell Header to properly differentiate the global shell navigation versus any application specific navigation. The Navigation Bar snaps to top and remains visible while scrolling. It is not visible in App view. <br>
         The implementation is based on UniversalIconTabBar with some different color parameters that are specific to Shell Bar. <br>
         If there are more Tabs than the screen can accommodate, the remaining Tabs move into an Overflow.`
+        }
     }
 };
 
-export const navigationFlat = () => `<div class="fddocs-icon-tab-container" style="min-height: 100px;">
+export const NavigationFlat = () => `<div class="fddocs-icon-tab-container" style="min-height: 100px;">
     <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--navigation-flat fd-icon-tab-bar--md">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab11">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1627,20 +1653,22 @@ export const navigationFlat = () => `<div class="fddocs-icon-tab-container" styl
     </div>
 </div>
 `;
-navigationFlat.storyName = 'Flat Navigation';
-navigationFlat.parameters = {
+NavigationFlat.storyName = 'Flat Navigation';
+NavigationFlat.parameters = {
     docs: {
-        storyDescription: `The Flat Navigation offers the user an easy access to multiple pages per space. 
-        As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view. 
+        description: {
+            story: `The Flat Navigation offers the user an easy access to multiple pages per space.
+        As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view.
         The Flat Navigation Concept allows putting all entities of a single space directly into the first level of the Top Level Navigation Bar for direct access.
         Add the \`.fd-icon-tab-bar--navigation-flat\` modifier class to \`.fd-icon-tab-bar.fd-icon-tab-bar--navigation\` to achieve the flat navigation look and feel. The items that have separators need to receive the \`.fd-icon-tab-bar__item--with-separator\` modifier class to \`.fd-icon-tab-bar__item\` class. This will append a vertical separator line on the right hand side of the item with an 1rem offset.
         `
+        }
     }
 };
 
-export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="min-height: 600px;">
+export const DragAndDrop = () => `<div class="fddocs-icon-tab-container" style="min-height: 600px;">
     <div class="fd-icon-tab-bar">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-separator-end">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#section1-1" id="tab1-1">
                     <span class="fd-icon-tab-bar__tag">Insert After Item</span>
@@ -1671,14 +1699,14 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
                     <span class="fd-icon-tab-bar__tag">Being dragged preview</span>
                 </a>
             </li>
-        </ul> 
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-1" aria-labelledby="tab1">  
+        </ul>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-1" aria-labelledby="tab1">
             Section 1
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-2" aria-labelledby="tab2" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-2" aria-labelledby="tab2" hidden>
             Section 2
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-3" aria-labelledby="tab3" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1-3" aria-labelledby="tab3" hidden>
             Section 3
         </section>
     </div>
@@ -1686,7 +1714,7 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
     <br/><br/>
 
     <div class="fd-icon-tab-bar">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#section2-1" id="tab2-1">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1707,14 +1735,14 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
                     <span class="fd-icon-tab-bar__tag">Section 4</span>
                 </a>
             </li>
-        </ul> 
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-1" aria-labelledby="tab1">  
+        </ul>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-1" aria-labelledby="tab1">
             Section 1
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-2" aria-labelledby="tab2" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-2" aria-labelledby="tab2" hidden>
             Section 2
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-3" aria-labelledby="tab3" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2-3" aria-labelledby="tab3" hidden>
             Section 3
         </section>
     </div>
@@ -1722,7 +1750,7 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
     <br/><br/>
 
     <div class="fd-icon-tab-bar">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#section3-1" id="tab3-1">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1816,14 +1844,14 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
                     </div>
                 </div>
             </li>
-        </ul> 
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-1" aria-labelledby="tab1">  
+        </ul>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-1" aria-labelledby="tab1">
             Section 1
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-2" aria-labelledby="tab2" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-2" aria-labelledby="tab2" hidden>
             Section 2
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-3" aria-labelledby="tab3" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3-3" aria-labelledby="tab3" hidden>
             Section 3
         </section>
     </div>
@@ -1831,7 +1859,7 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
     <br/><br/>
 
     <div class="fd-icon-tab-bar" style="margin-top: 6rem;">
-        <ul role="tablist" class="fd-icon-tab-bar__header">  
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#section4-1" id="tab4-1">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -1886,14 +1914,14 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
                     <span class="fd-icon-tab-bar__tag">Section 5</span>
                 </a>
             </li>
-        </ul> 
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">  
+        </ul>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section1" aria-labelledby="tab1">
             Section 1
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section2" aria-labelledby="tab2" hidden>
             Section 2
-        </section>  
-        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>  
+        </section>
+        <section role="tabpanel" class="fd-icon-tab-bar__panel" id="section3" aria-labelledby="tab3" hidden>
             Section 3
         </section>
     </div>
@@ -1901,19 +1929,21 @@ export const dragAndDrop = () => `<div class="fddocs-icon-tab-container" style="
     <br/><br/>
 </div>
 `;
-dragAndDrop.storyName = 'Tabs drag and drop';
-dragAndDrop.parameters = {
+DragAndDrop.storyName = 'Tabs drag and drop';
+DragAndDrop.parameters = {
     docs: {
-        storyDescription: `You can allow users to rearrange the tab order. 
+        description: {
+            story: `You can allow users to rearrange the tab order.
         If this feature is enabled, users can drag and drop tabs to reorder them, either directly on the tab bar or inside the overflow menu.
         It is also possible to drag and drop tabs from the tab bar to the overflow menu and vice versa.
-        There're 4 classes for drag and drop: 
-        use \`fd-icon-tab-bar__item--dnd-preview\` to indicate the element that is being dragged; 
+        There're 4 classes for drag and drop:
+        use \`fd-icon-tab-bar__item--dnd-preview\` to indicate the element that is being dragged;
         use \`fd-icon-tab-bar__item--dnd-hovered\` when dragging over an item. This class indicates that tab, htat is being dragged, can be inserted into the current one;
         \`fd-icon-tab-bar__item--dnd-separator\` adds a visual indicator before the tab, to which is applied, when element that is being dragged can be insterted before particular one.
         When used with the subtab, separator will be vertical;
         \`fd-icon-tab-bar__item--dnd-separator-end\` - same as above. Being applied after the tab, to which is applied
 
         `
+        }
     }
 };

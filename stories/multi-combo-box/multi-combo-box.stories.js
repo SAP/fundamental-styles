@@ -6,9 +6,9 @@ The multi-combo-box component is an opinionated composition of the \`input group
 The \`popover\` is shared between the combobox and select components. Please see the \`select\` documentation for the complete list of modifiers,
 That are also  supported by the \`combobox\` component.
 
-\`Multi ComboBox\` allows users to enter multiple values which are displayed as a tokens. 
-It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options. 
-If the entries are not validated by the application, users can also enter custom values. 
+\`Multi ComboBox\` allows users to enter multiple values which are displayed as a tokens.
+It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
+If the entries are not validated by the application, users can also enter custom values.
 `,
         tags: ['f3', 'a11y', 'theme'],
         components: [
@@ -32,7 +32,7 @@ If the entries are not validated by the application, users can also enter custom
     }
 };
 
-export const cozyAndCompact = () => `<div class="fd-container" style="height: 300px;">
+export const CozyAndCompact = () => `<div class="fd-container" style="height: 300px;">
     <div class="fd-row">
 	<div class="fd-col fd-col--6">
         <label class="fd-form-label">
@@ -201,7 +201,7 @@ export const cozyAndCompact = () => `<div class="fd-container" style="height: 30
 </div>
 `;
 
-export const asFormItem = () => `<div style="height: 300px;">
+export const AsFormItem = () => `<div style="height: 300px;">
     <div class="fd-form-item">
     <div class="fd-popover">
         <div class="fd-popover__control" role="combobox" aria-controls="F4GcX348a" aria-expanded="true" aria-haspopup="true">
@@ -289,16 +289,18 @@ export const asFormItem = () => `<div style="height: 300px;">
 </div>
 `;
 
-asFormItem.parameters = {
+AsFormItem.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
 Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
 `
+        }
     }
 };
 
-export const grouping = () => `<div style="height: 450px;">
+export const Grouping = () => `<div style="height: 450px;">
     <div class="fd-popover">
         <div class="fd-popover__control" role="combobox" aria-controls="F4H8X34a" aria-expanded="true" aria-haspopup="true">
             <div class="fd-input-group fd-input-group--control"  tabindex="0">
@@ -322,7 +324,7 @@ export const grouping = () => `<div style="height: 450px;">
                             </span>
                             <button class="fd-token__close" aria-label="unselect option: Kiwi"></button>
                         </span>
-                        <span class="fd-tokenizer__indicator">2 more</span> 
+                        <span class="fd-tokenizer__indicator">2 more</span>
                         <input class="fd-input fd-input-group__input fd-tokenizer__input" aria-label="multi input sample as group item" />
                     </div>
                 </div>
@@ -402,14 +404,16 @@ export const grouping = () => `<div style="height: 450px;">
 </div>
 `;
 
-grouping.parameters = {
+Grouping.parameters = {
     docs: {
-        storyDescription:
+        description: {
+            story:
             'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
+        }
     }
 };
 
-export const matchPopoverBodySize = () => `<div style="height: 300px;">
+export const MatchPopoverBodySize = () => `<div style="height: 300px;">
     <div class="fd-popover">
         <div class="fd-popover__control" role="combobox" aria-controls="F4HGFHX34a" aria-expanded="true" aria-haspopup="true">
             <div class="fd-input-group fd-input-group--control" tabindex="0">
@@ -433,7 +437,7 @@ export const matchPopoverBodySize = () => `<div style="height: 300px;">
                             </span>
                             <button class="fd-token__close" aria-label="unselect option: Kiwi"></button>
                         </span>
-                        <span class="fd-tokenizer__indicator">2 more</span> 
+                        <span class="fd-tokenizer__indicator">2 more</span>
                         <input class="fd-input fd-input-group__input fd-tokenizer__input"  aria-label="multi input sample popover size body"/>
                     </div>
                 </div>
@@ -490,19 +494,21 @@ export const matchPopoverBodySize = () => `<div style="height: 300px;">
 </div>
 `;
 
-matchPopoverBodySize.parameters = {
+MatchPopoverBodySize.parameters = {
     docs: {
-        storyDescription: `
-The default length size of the popover body is often different from the text length. 
+        description: {
+            story: `
+The default length size of the popover body is often different from the text length.
 The body length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\`.
 
-This class has been added to all the \`Multi ComboBox\` examples above. 
+This class has been added to all the \`Multi ComboBox\` examples above.
 In the example you can see how the \`Multi ComboBox\` component looks without the \`fd-popover__body--dropdown-fill\` modifier.
 `
+        }
     }
 };
 
-export const readOnlyAndDisabled = () => `<div class="fd-container">
+export const ReadOnlyAndDisabled = () => `<div class="fd-container">
 	<div class="fd-row">
 		<div class="fd-col fd-col--6">
 			<div class="fd-popover">
@@ -611,19 +617,21 @@ export const readOnlyAndDisabled = () => `<div class="fd-container">
 	</div>
 `;
 
-readOnlyAndDisabled.parameters = {
+ReadOnlyAndDisabled.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To make the \`Multi ComboBox\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
 This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute.
 
 To disable a \`Multi ComboBox\` component, the disabled attribute needs to be added to the \`fd-popover__control\` and the \`fd-input__control\` elements.
 The disabled state can also be achieved by adding the \`.is-disabled\` class or the \`aria-disabled="true"\` attribute.
 `
+        }
     }
 };
 
-export const semantic = () => `<div style="height: 300px;">
+export const Semantic = () => `<div style="height: 300px;">
 <div class="fd-popover">
     <div class="fd-popover__control fd-input-group__control" role="combobox" aria-controls="F4GcKJH8a" aria-expanded="true" aria-haspopup="true" aria-label="multi combobox">
         <div class="fd-input-group fd-input-group--control is-success"  tabindex="0">
@@ -647,7 +655,7 @@ export const semantic = () => `<div style="height: 300px;">
                          </span>
                          <button class="fd-token__close" aria-label="unselect option: Kiwi"></button>
                      </span>
-                     <span class="fd-tokenizer__indicator">4 more</span> 
+                     <span class="fd-tokenizer__indicator">4 more</span>
                      <input class="fd-input fd-input-group__input fd-tokenizer__input"  aria-label="multi input semantic" />
                  </div>
             </div>
@@ -704,18 +712,20 @@ export const semantic = () => `<div style="height: 300px;">
 </div>
 `;
 
-semantic.parameters = {
+Semantic.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 For a complete list of states supported by the \`Multi ComboBox\` component, please see the documentation for the form or select components.
 
-The semantic mode can be used to modify the combobox component by adding one of 
-\`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into \`fd-input-group\` element. 
+The semantic mode can be used to modify the combobox component by adding one of
+\`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into \`fd-input-group\` element.
 To add text in the \`body\` of the component, simply include your text in the \`fd-list__message\` under the \`ul\` element.`
+        }
     }
 };
 
-export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const MobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -757,7 +767,7 @@ export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
                                      </span>
                                      <button class="fd-token__close" aria-label="unselect option: Kiwi"></button>
                                  </span>
-                                 <span class="fd-tokenizer__indicator">4 more</span> 
+                                 <span class="fd-tokenizer__indicator">4 more</span>
                                  <input class="fd-input fd-input-group__input fd-tokenizer__input"  aria-label="multi input mobile mode" />
                              </div>
                          </div>
@@ -826,15 +836,17 @@ export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
 </div>
 `;
 
-mobileMode.parameters = {
+MobileMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 For mobile devices, or tablets, Multi ComboBox component should be displayed in fullscreen mode.
 So instead of using popover and dropdown, it should be wrapped in \`dialog\` and \`bar\` components.`
+        }
     }
 };
 
-export const filtering = () => ` <div style="height: 250px;">
+export const Filtering = () => ` <div style="height: 250px;">
 <div class="fd-popover">
     <div class="fd-popover__control" role="combobox" aria-controls="F4GcX348aB" aria-expanded="true" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control" tabindex="0">
@@ -900,14 +912,16 @@ export const filtering = () => ` <div style="height: 250px;">
 </div>
 `;
 
-filtering.parameters = {
+Filtering.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The user can filter selectable options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`
+        }
     }
 };
 
-export const twoColumnComboBox = () => ` <div style="height: 350px;">
+export const TwoColumnComboBox = () => ` <div style="height: 350px;">
 <div class="fd-popover">
     <div class="fd-popover__control" role="combobox" aria-controls="F4GcX348aB" aria-expanded="true" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control" tabindex="0">
@@ -1000,9 +1014,11 @@ export const twoColumnComboBox = () => ` <div style="height: 350px;">
 </div>
 `;
 
-twoColumnComboBox.parameters = {
+TwoColumnComboBox.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The user can filter selectable having 2 options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`
+        }
     }
 };

@@ -30,7 +30,7 @@ const localStyles = `
 </style>
 `;
 
-export const progressBar = () => `${localStyles}
+export const ProgressBar = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-progress-bar" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100" aria-valuetext="20%" aria-label="20%">
@@ -61,8 +61,7 @@ export const progressBar = () => `${localStyles}
 
 `;
 
-progressBar.storyName = 'Progress Bar';
-progressBar.parameters = {
+ProgressBar.parameters = {
     docs: {
         iframeHeight: 500
     }

@@ -811,7 +811,7 @@ exports[`Storyshots Components/Vertical Navigation Navigation Indication 1`] = `
             aria-label="Expand second submenu 4"
             class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow"
           />
-              
+          
                 
           <span
             class="fd-list__navigation-item-indicator"

@@ -21,7 +21,7 @@ Do not use the input field if:
     }
 };
 
-export const primary = () => `
+export const Primary = () => `
 <div class="fd-form-item">
         <label class="fd-form-label" for="input-1">Default input:</label>
         <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
@@ -109,9 +109,9 @@ export const primary = () => `
     </div>
 `;
 
-primary.storyName = 'Default';
+Primary.storyName = 'Default';
 
-primary.parameters = {
+Primary.parameters = {
     docs: {
         iframeHeight: 500
     }
@@ -130,7 +130,7 @@ primary.parameters = {
 Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.
  */
 
-export const states = () => `
+export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1aa">Normal input:</label>
     <input class="fd-input" type="text" id="input-1aa" placeholder="Field placeholder text" aria-label="Image label">

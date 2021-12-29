@@ -10,20 +10,20 @@ In SAP Fiori, we distinguish between tables and lists. Both usually contain homo
 - You want to display a homogeneous set of basic data.
 - You need to sort, group, or filter simple datasets.
 - You need to display a single-level hierarchy rather than using a complex tree table to support this simple use case.
-  
+
 
 **Do not use the standard list if:**
 
 - You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a **Table**.
 - You work with complex hierarchies. In this case, use a **Tree**.
-        
+
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['list', 'icon', 'checkbox', 'button', 'busy-indicator']
     }
 };
 
-export const standard = () => `<h4>Standard Size</h4>
+export const Standard = () => `<h4>Standard Size</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
@@ -56,17 +56,19 @@ export const standard = () => `<h4>Standard Size</h4>
 </ul>
 `;
 
-standard.storyName = 'Default';
+Standard.storyName = 'Default';
 
-standard.parameters = {
+Standard.parameters = {
     docs: {
         iframeHeight: 445,
-        storyDescription: `The default standard list dislays list items in the standard size, which is ideal for mobile. To display the standard list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
+        description: {
+            story: `The default standard list dislays list items in the standard size, which is ideal for mobile. To display the standard list in compact mode (for desktop), add the \`fd-list--compact\` modifier class to the main element.
         `
+        }
     }
 };
 
-export const unread = () => `<h4>Unread Options</h4>
+export const Unread = () => `<h4>Unread Options</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--unread">
       <span class="fd-list__title">List item 1 Unread</span>
@@ -83,17 +85,17 @@ export const unread = () => `<h4>Unread Options</h4>
 </ul>
 `;
 
-unread.storyName = 'Unread';
-
-unread.parameters = {
+Unread.parameters = {
     docs: {
         iframeHeight: 445,
-        storyDescription: `The \`fd-list__item--unread\` modifier will change the font weight to bold for easier legibility.
+        description: {
+            story: `The \`fd-list__item--unread\` modifier will change the font weight to bold for easier legibility.
         `
+        }
     }
 };
 
-export const interactive = () => `<h4>Interactive Items</h4>
+export const Interactive = () => `<h4>Interactive Items</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
       <span class="fd-list__title">List item 1</span>
@@ -113,19 +115,19 @@ export const interactive = () => `<h4>Interactive Items</h4>
 </ul>
 `;
 
-interactive.storyName = 'Interactive';
-
-interactive.parameters = {
+Interactive.parameters = {
     docs: {
         iframeHeight: 445,
-        storyDescription: `
-The \`fd-list__item--interractive\` will force list item to handle hover and active states. 
+        description: {
+            story: `
+The \`fd-list__item--interractive\` will force list item to handle hover and active states.
 Usage of this modifier is not needed on \`Selection\`, \`Navigation\` and \`Action\` modes.
         `
+        }
     }
 };
 
-export const navigation = () => `<ul class="fd-list fd-list--navigation" role="list">
+export const Navigation = () => `<ul class="fd-list fd-list--navigation" role="list">
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link">
         <span class="fd-list__title">List item 1</span>
@@ -146,18 +148,18 @@ export const navigation = () => `<ul class="fd-list fd-list--navigation" role="l
 </ul>
 `;
 
-navigation.storyName = 'Navigation';
-
-navigation.parameters = {
+Navigation.parameters = {
     docs: {
         iframeHeight: 165,
-        storyDescription: `
+        description: {
+            story: `
 Standard list items can contain navigation links. To add navigation, add the \`fd-list—navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
 `
+        }
     }
 };
 
-export const buttons = () => `<ul class="fd-list" role="list">
+export const Buttons = () => `<ul class="fd-list" role="list">
   <li tabindex="-1" role="listitem" class="fd-list__item">
     <span class="fd-list__title">List item 1</span>
     <button class="fd-button fd-button--transparent fd-list__button">
@@ -182,16 +184,17 @@ export const buttons = () => `<ul class="fd-list" role="list">
 </ul>
 `;
 
-buttons.storyName = 'Buttons';
-buttons.parameters = {
+Buttons.parameters = {
     docs: {
         iframeHeight: 165,
-        storyDescription: `
+        description: {
+            story: `
 `
+        }
     }
 };
 
-export const navigationIndicator = () => `<ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
+export const NavigationIndicator = () => `<ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
   <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
       <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
         <span class="fd-list__title">List item 1</span>
@@ -220,18 +223,20 @@ export const navigationIndicator = () => `<ul class="fd-list fd-list--navigation
 </ul>
 `;
 
-navigationIndicator.storyName = 'Navigation indicators';
+NavigationIndicator.storyName = 'Navigation indicators';
 
-navigationIndicator.parameters = {
+NavigationIndicator.parameters = {
     docs: {
         iframeHeight: 252,
-        storyDescription: `
+        description: {
+            story: `
 If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the \`fd-list--navigation-indication\` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a standard list with navigation (in the example above).
 `
+        }
     }
 };
 
-export const actionList = () => `<h4>Standard Size</h4>
+export const ActionList = () => `<h4>Standard Size</h4>
 <ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__item fd-list__item--action">
       <button class="fd-list__title">Forward</button>
@@ -297,18 +302,20 @@ export const actionList = () => `<h4>Standard Size</h4>
 </ul>
 `;
 
-actionList.storyName = 'Action';
+ActionList.storyName = 'Action';
 
-actionList.parameters = {
+ActionList.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `
+        description: {
+            story: `
 Standard list items can display actions that users can choose from. To display actions, add the \`fd-list--action\` modifier class to the list elements.
 `
+        }
     }
 };
 
-export const secondaryData = () => `<ul class="fd-list" role="list">
+export const SecondaryData = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
       <span class="fd-list__secondary">A1</span>
@@ -328,17 +335,19 @@ export const secondaryData = () => `<ul class="fd-list" role="list">
 </ul>
 `;
 
-secondaryData.storyName = 'Secondary data';
+SecondaryData.storyName = 'Secondary data';
 
-secondaryData.parameters = {
+SecondaryData.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `To display secondary data in standard list items, add the \`fd-list__secondary\` class within the list elements.
+        description: {
+            story: `To display secondary data in standard list items, add the \`fd-list__secondary\` class within the list elements.
         `
+        }
     }
 };
 
-export const itemCounter = () => `<ul class="fd-list" role="list">
+export const ItemCounter = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
       <span class="fd-list__item-counter">12345</span>
@@ -360,17 +369,17 @@ export const itemCounter = () => `<ul class="fd-list" role="list">
 </ul>
 `;
 
-itemCounter.storyName = 'Item Counter';
-
-itemCounter.parameters = {
+ItemCounter.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `The item counter is vertically aligned within the list item, to the right. The maximum number of digits is 5. In case of more digits, the formatting and the transformation is left to the applications. It's recommended to avoid combining item counter to other list variations and status texts.
+        description: {
+            story: `The item counter is vertically aligned within the list item, to the right. The maximum number of digits is 5. In case of more digits, the formatting and the transformation is left to the applications. It's recommended to avoid combining item counter to other list variations and status texts.
         `
+        }
     }
 };
 
-export const icons = () => `<ul class="fd-list" role="list">
+export const Icons = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
       <span class="fd-list__title">List item 1</span>
@@ -390,17 +399,19 @@ export const icons = () => `<ul class="fd-list" role="list">
 </ul>
 `;
 
-icons.storyName = 'Icon';
+Icons.storyName = 'Icon';
 
-icons.parameters = {
+Icons.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `To display an icon inside standard list items, add the \`fd-list__icon\` class along with the icon within the list elements. For example, \`fd-list__icon sap-icon—lightbulb\`.
+        description: {
+            story: `To display an icon inside standard list items, add the \`fd-list__icon\` class along with the icon within the list elements. For example, \`fd-list__icon sap-icon—lightbulb\`.
         `
+        }
     }
 };
 
-export const groups = () => `<ul class="fd-list" role="list">
+export const Groups = () => `<ul class="fd-list" role="list">
   <li role="listitem" class="fd-list__group-header">
     <span class="fd-list__title">Group header 1</span>
   </li>
@@ -428,17 +439,19 @@ export const groups = () => `<ul class="fd-list" role="list">
 </ul>
 `;
 
-groups.storyName = 'Group';
+Groups.storyName = 'Group';
 
-groups.parameters = {
+Groups.parameters = {
     docs: {
         iframeHeight: 385,
-        storyDescription: `Standard list items can be displayed with headers, separating the items into groups. To add group headers, add the \`fd-list__group-header\` class to the list elements.
+        description: {
+            story: `Standard list items can be displayed with headers, separating the items into groups. To add group headers, add the \`fd-list__group-header\` class to the list elements.
         `
+        }
     }
 };
 
-export const footer = () => `<ul class="fd-list" role="list">
+export const Footer = () => `<ul class="fd-list" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
@@ -457,17 +470,17 @@ export const footer = () => `<ul class="fd-list" role="list">
 </span>
 `;
 
-footer.storyName = 'Footer';
-
-footer.parameters = {
+Footer.parameters = {
     docs: {
         iframeHeight: 240,
-        storyDescription: `The standard list can display a footer by adding a span element with an \`fd-list__footer\` class after the unordered list element.
+        description: {
+            story: `The standard list can display a footer by adding a span element with an \`fd-list__footer\` class after the unordered list element.
         `
+        }
     }
 };
 
-export const borderless = () => `<ul class="fd-list fd-list--no-border" role="list">
+export const Borderless = () => `<ul class="fd-list fd-list--no-border" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
       <span class="fd-list__title">List item 1</span>
   </li>
@@ -483,17 +496,17 @@ export const borderless = () => `<ul class="fd-list fd-list--no-border" role="li
 </ul>
 `;
 
-borderless.storyName = 'Borderless';
-
-borderless.parameters = {
+Borderless.parameters = {
     docs: {
         iframeHeight: 210,
-        storyDescription: `To display a borderless standard list, add the \`fd-list--no-border\` modifier class to the main element.
+        description: {
+            story: `To display a borderless standard list, add the \`fd-list--no-border\` modifier class to the main element.
         `
+        }
     }
 };
 
-export const selection = () => `<h4 id="XezW11">Standard Size</h4>
+export const Selection = () => `<h4 id="XezW11">Standard Size</h4>
 <ul class="fd-list fd-list--selection" role="listbox" aria-labelledby="XezW11">
   <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
@@ -544,17 +557,17 @@ export const selection = () => `<h4 id="XezW11">Standard Size</h4>
 </ul>
 `;
 
-selection.storyName = 'Selection';
-
-selection.parameters = {
+Selection.parameters = {
     docs: {
         iframeHeight: 370,
-        storyDescription: `Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
+        description: {
+            story: `Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
 `
+        }
     }
 };
 
-export const inactive = () => `<ul class="fd-list fd-list--navigation" role="list">
+export const Inactive = () => `<ul class="fd-list fd-list--navigation" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link fd-list__item--inactive">
     <a tabindex="0" class="fd-list__link">
       <span class="fd-list__title">List item 1 - Inactive</span>
@@ -578,17 +591,17 @@ export const inactive = () => `<ul class="fd-list fd-list--navigation" role="lis
 </ul>
 `;
 
-inactive.storyName = 'Inactive';
-
-inactive.parameters = {
+Inactive.parameters = {
     docs: {
         iframeHeight: 370,
-        storyDescription: `Some list item can be made inactive, to make it non-clickable.
+        description: {
+            story: `Some list item can be made inactive, to make it non-clickable.
 `
+        }
     }
 };
 
-export const scroll = () => `<ul class="fd-list fd-list__infinite-scroll fddocs-list-height" role="list">
+export const Scroll = () => `<ul class="fd-list fd-list__infinite-scroll fddocs-list-height" role="list">
   <li role="listitem" tabindex="0" class="fd-list__item">
     <span class="fd-list__title">List item 1</span>
   </li>
@@ -628,12 +641,14 @@ export const scroll = () => `<ul class="fd-list fd-list__infinite-scroll fddocs-
 </ul>
 `;
 
-scroll.storyName = 'Infinite scroll';
+Scroll.storyName = 'Infinite scroll';
 
-scroll.parameters = {
+Scroll.parameters = {
     docs: {
         iframeHeight: 380,
-        storyDescription: `If height for list is fixed and there are more list otem to show, then we should be able to scroll to next list items.
+        description: {
+            story: `If height for list is fixed and there are more list otem to show, then we should be able to scroll to next list items.
 `
+        }
     }
 };

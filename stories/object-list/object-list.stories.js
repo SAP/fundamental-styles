@@ -5,9 +5,9 @@ export default {
 An object list is a type of list that consists of object list items, where each item provides a quick
 overview of an object. Object list items should only contain essential information for the user to identify
 what objects to prioritize. Avoid long descriptive texts as the text space is limited and will truncate.
-         
+
 **Object list items can display the following elements:**
-        
+
 - Title of the object
 - Avatar
 - Object display components such as **Object Identifier**, **Object Number**, **Object Attribute**, **Object Marker** and **Object Status**
@@ -28,7 +28,7 @@ what objects to prioritize. Avoid long descriptive texts as the text space is li
 
 ##Modifiers
 
-The object list item can display several object display components with semantic statuses. 
+The object list item can display several object display components with semantic statuses.
 Below are examples of how to add semantic statuses to the components:
 
 | **Status** | <span style="margin-left: 2rem;">**Object Number**</span> | <span style="margin-left: 2rem;">**Object Status**</span> |
@@ -57,14 +57,14 @@ Below are examples of how to add semantic statuses to the components:
            - \`fd-object-status\`, \`fd-object-marker\` object status and object status elements
          - \`fd-object-list__row-left\` container to hold left elements of row
            - \`fd-object-list__object-attribute\` object attribute element
-        
+
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['list', 'icon', 'object-identifier', 'avatar', 'object-marker', 'object-number', 'object-status', 'object-list']
     }
 };
 
-export const object = () => `
+export const Standart = () => `
 <h4 id="objectListItemHeader">Object List Item</h4>
 <ul class="fd-list fd-object-list" role="list" aria-labelledby="objectListItemHeader">
   <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
@@ -94,7 +94,7 @@ export const object = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -302,16 +302,16 @@ export const object = () => `
 </ul>
 `;
 
-object.storyName = 'Standard';
-
-object.parameters = {
+Standart.parameters = {
     docs: {
         iframeHeight: 785,
-        storyDescription: 'The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, therefore add the `fd-avatar--s` modifier class to the `fd-avatar` element.'
+        description: {
+            story: 'The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, therefore add the `fd-avatar--s` modifier class to the `fd-avatar` element.'
+        }
     }
 };
 
-export const navigation = () => `
+export const Navigation = () => `
 
 <h4 id="objectListItemNavigation">Object List Item With Navigation</h4>
 
@@ -345,7 +345,7 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -410,7 +410,7 @@ export const navigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -448,17 +448,17 @@ export const navigation = () => `
 </div>
 `;
 
-navigation.storyName = 'Navigation';
-
-navigation.parameters = {
+Navigation.parameters = {
     docs: {
         iframeHeight: 355,
-        storyDescription: 'An object list can display links that the users can navigate to. To display a navigation object list, add the `fd-list--navigation-object` modifier class together with `fd-list--navigation` and the `fd-list__item--link` modifier class to the list elements that contain a link. All items should be navigable.'
+        description: {
+            story: 'An object list can display links that the users can navigate to. To display a navigation object list, add the `fd-list--navigation-object` modifier class together with `fd-list--navigation` and the `fd-list__item--link` modifier class to the list elements that contain a link. All items should be navigable.'
+        }
     }
 };
 
 
-export const selection = () => `
+export const Selection = () => `
 <h4 id="objectListItemRowSelection">Object List Item With Row Selection</h4>
 <div style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--selection fd-list--selection-row" role="listbox" aria-labelledby="objectListItemRowSelection">
@@ -486,7 +486,7 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -549,7 +549,7 @@ export const selection = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -581,26 +581,26 @@ export const selection = () => `
       </div>
     </div>
     </div>
-  </li>  
+  </li>
  </ul>
 </div>
 `;
 
-selection.storyName = 'Selection';
-
-selection.parameters = {
+Selection.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'Object list items can be selectable by adding the `fd-list--selection` and `fd-list--selection-row` modifier classes to the main element.'
+        description: {
+            story: 'Object list items can be selectable by adding the `fd-list--selection` and `fd-list--selection-row` modifier classes to the main element.'
+        }
     }
 };
 
-export const selectionWithNavigation = () => `
+export const SelectionWithNavigation = () => `
 <h4 id="objectListItemRowSelectionAndNavigation">Object List Item With Row Selection And Navigation</h4>
 <div role="navigation" style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--navigation-object fd-list--navigation fd-list--selection" role="listbox" aria-labelledby="objectListItemRowSelectionAndNavigation">
 <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
-  <a tabindex="0" id="anchor" class="fd-list__link is-active"> 
+  <a tabindex="0" id="anchor" class="fd-list__link is-active">
   <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text</span>
@@ -627,7 +627,7 @@ export const selectionWithNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -665,7 +665,7 @@ export const selectionWithNavigation = () => `
     </a>
   </li>
   <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item fd-list__item--link is-selected">
-  <a tabindex="0" class="fd-list__link"> 
+  <a tabindex="0" class="fd-list__link">
   <div class="fd-object-list__container">
       <div class="fd-object-list__intro">
        Optional inline text</span>
@@ -692,7 +692,7 @@ export const selectionWithNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -757,7 +757,7 @@ export const selectionWithNavigation = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -790,21 +790,21 @@ export const selectionWithNavigation = () => `
     </div>
     </div>
     </a>
-  </li>  
+  </li>
  </ul>
 </div>
 `;
 
-selectionWithNavigation.storyName = 'Selection With Navigation';
-
-selectionWithNavigation.parameters = {
+SelectionWithNavigation.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'This object list is both selectable and navigable. To display selectable object list items with navigation, add the `fd-list--selection`, `fd-list--navigation` and `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
+        description: {
+            story: 'This object list is both selectable and navigable. To display selectable object list items with navigation, add the `fd-list--selection`, `fd-list--navigation` and `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
+        }
     }
 };
 
-export const borderless = () => `
+export const Borderless = () => `
 <h4 id="objectListItemBorderless">Borderless Object List Item</h4>
 <div style="max-width: 450px">
 <ul class="fd-list fd-object-list fd-list--no-border" role="list" aria-labelledby="objectListItemBorderless">
@@ -835,7 +835,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -898,7 +898,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -958,7 +958,7 @@ export const borderless = () => `
         <div class="fd-object-list__row">
           <div class="fd-object-list__row-left">
             <div class="fd-object-list__object-attribute">
-              
+
               First Attribute
             </div>
           </div>
@@ -992,12 +992,12 @@ export const borderless = () => `
 </div>
 `;
 
-borderless.storyName = 'Borderless';
-
-borderless.parameters = {
+Borderless.parameters = {
     docs: {
         iframeHeight: 305,
-        storyDescription: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
+        description: {
+            story: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
+        }
     }
 };
 
