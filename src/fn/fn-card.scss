@@ -1,0 +1,64 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-card;
+
+.#{$block} {
+  @include fn-flex(column);
+  @include fn-reset();
+
+  background-color: $fn-color-white;
+  border-radius: 1rem;
+  box-shadow: $fn-shadow-grey-level-2;
+  max-height: 40.25rem;
+  max-width: 31.25rem;
+  min-height: 16.875rem;
+  min-width: 30rem;
+  padding: 2rem;
+
+  &__container {
+    @include fn-flex(column);
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &-item {
+      display: inline-flex;
+      margin-top: 0.125rem;
+
+      span:not(:first-child) {
+        @include fn-set-margin-left(0.75rem);
+      }
+    }
+  }
+
+  &__title {
+    @include fn-reset();
+    @include fn-ellipsis();
+
+    font-weight: bold;
+    color: $fn-color-grey-800;
+    font-size: 4rem;
+    line-height: 4.625rem;
+  }
+
+  &__description {
+    color: $fn-color-grey-700;
+    font-size: 0.875rem;
+    min-height: 3rem;
+  }
+
+  &__container-title {
+    @include fn-ellipsis();
+
+    color: $fn-color-grey-800;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1.125rem;
+    text-transform: uppercase;
+  }
+
+  &__types {
+    height: 2rem;
+  }
+}
