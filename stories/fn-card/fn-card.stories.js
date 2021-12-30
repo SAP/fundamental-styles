@@ -1,14 +1,16 @@
 export default {
     title: 'Experimental/Card',
     parameters: {
-        description: `
-        `,
-        components: ['fn-card', 'fn-avatar', 'fn-info-label', 'fn-title']
+        components: ['fn-card', 'fn-avatar', 'icon', 'fn-info-label', 'fn-title']
     }
 };
 
 export const card = () => `
     <div class="fn-card">
+        <span class="fn-info-label fn-info-label--yellow">
+            <span class="fn-info-label__circle"></span>
+            <span class="fn-info-label__text">In Progress</span>
+        </span>
         <h1 class="fn-card__title">Card</h1>
         <span class="fn-card__description">Control Description</span>
         <div class="fn-card__container">
@@ -54,9 +56,8 @@ export const card = () => `
     </div>
 `;
 
-card.storyName = 'Card';
 card.parameters = {
     docs: {
-        iframeHeight: 500
+        storyDescription: 'This is a card component with an info label, title, description, and some card containers containing additional information.'
     }
 };
