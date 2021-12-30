@@ -34,7 +34,9 @@ const DocsPage = () => {
 
     // make story containers themed by adding appropriate class
     useEffect(() => {
-        document.getElementsByClassName('sbdocs-preview').forEach(storyPreview => {
+        const _t = Array.from( document.getElementsByClassName('sbdocs-preview'));
+
+        _t.forEach(storyPreview => {
             const previewBody = storyPreview?.childNodes[1];
             previewBody?.classList.add('themed-container');
         });
@@ -55,7 +57,9 @@ const DocsPage = () => {
 
     useEffect(() => {
         if(!previousDirectionality.current || previousDirectionality.current !== directionalityState){
-            document.getElementsByClassName('sbdocs-preview').forEach(item => {
+            const _t = Array.from( document.getElementsByClassName('sbdocs-preview'));
+            
+            _t.forEach(item => {
                 item.childNodes[1].setAttribute('dir', directionalityState);
             });
             previousDirectionality.current = directionalityState;
