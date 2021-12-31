@@ -138,7 +138,7 @@ export const Sizes = () => `
 				c-0.9-0.7-1.5-1.7-2-3H6.4l0.5-1.9h1V12H6.4l0.5-1.9h1.3C8.6,8.9,9.3,8,10.3,7.3c1-0.8,2.3-1.1,3.8-1.1c1.1,0,2,0.2,2.8,0.7L17.3,7
 				l-0.6,2.3l-0.5-0.4c-0.4-0.2-0.9-0.4-1.4-0.5c-0.6-0.1-1.1-0.1-1.7,0c-0.6,0.1-1,0.3-1.5,0.7c-0.3,0.3-0.6,0.6-0.7,1H16.4z" stroke-width="0.25" stroke="#89919A " fill="transparent">
 			</path>
-		</svg>	
+		</svg>
 	</svg>
 </div>
 </div>
@@ -146,7 +146,8 @@ export const Sizes = () => `
 
 Sizes.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 | **Size**       | **rem**    | **Modifier class**        |
 | :----------    | :--------- | -----------------------:  |
 | Small          | 0.75rem    | \`--sm\`         |
@@ -154,10 +155,11 @@ Sizes.parameters = {
 | Large          | 1.125rem   | \`--lg\`         |
 | Extra Large    | 1.875rem   | \`--xl\`         |
 `
+        }
     }
 };
 
-export const fillValues = () => `
+export const FillValues = () => `
 <div  class="example-container">
 <span class="fd-form-label">Negative Filling :</span>
 <div class="fd-status-indicator fd-status-indicator--negative fd-status-indicator--lg" aria-roledescription="Status Indicator" role="progressbar" aria-valuetext="35%" tabindex=0 aria-label="Euro Status Indicator With Negative Filling" focusable="true" title="35% fill with negative color">
@@ -256,13 +258,15 @@ export const fillValues = () => `
 </div>
 `;
 
-fillValues.storyName = 'Fill values';
-fillValues.parameters = {
+FillValues.storyName = 'Fill values';
+FillValues.parameters = {
     docs: {
-        storyDescription: `
-To display fill values with the status indicator i.e 'critical,negative,positive', add the \`fd-status-indicator--negative\` 
+        description: {
+            story: `
+To display fill values with the status indicator i.e 'critical,negative,positive', add the \`fd-status-indicator--negative\`
 modifier class together with the \`fd-status-indicator\` class.
 `
+        }
     }
 };
 
@@ -328,7 +332,7 @@ export const StatusIndicatorLabels = () => `
 				c-0.9-0.7-1.5-1.7-2-3H6.4l0.5-1.9h1V12H6.4l0.5-1.9h1.3C8.6,8.9,9.3,8,10.3,7.3c1-0.8,2.3-1.1,3.8-1.1c1.1,0,2,0.2,2.8,0.7L17.3,7
 				l-0.6,2.3l-0.5-0.4c-0.4-0.2-0.9-0.4-1.4-0.5c-0.6-0.1-1.1-0.1-1.7,0c-0.6,0.1-1,0.3-1.5,0.7c-0.3,0.3-0.6,0.6-0.7,1H16.4z" stroke-width="0.25" stroke="#89919A " fill="transparent">
 			</path>
-		</svg>	
+		</svg>
 	</svg>
 	<span class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--bottom">100%</span>
 </div>
@@ -394,7 +398,7 @@ export const StatusIndicatorLabels = () => `
 				c-0.9-0.7-1.5-1.7-2-3H6.4l0.5-1.9h1V12H6.4l0.5-1.9h1.3C8.6,8.9,9.3,8,10.3,7.3c1-0.8,2.3-1.1,3.8-1.1c1.1,0,2,0.2,2.8,0.7L17.3,7
 				l-0.6,2.3l-0.5-0.4c-0.4-0.2-0.9-0.4-1.4-0.5c-0.6-0.1-1.1-0.1-1.7,0c-0.6,0.1-1,0.3-1.5,0.7c-0.3,0.3-0.6,0.6-0.7,1H16.4z" stroke-width="0.25" stroke="#89919A " fill="transparent">
 			</path>
-		</svg>	
+		</svg>
 	</svg>
 	<span class="fd-status-indicator__label fd-status-indicator__label--lg fd-status-indicator__label--right">100%</span>
 </div>
@@ -405,10 +409,12 @@ export const StatusIndicatorLabels = () => `
 StatusIndicatorLabels.storyName = 'Status Indicator With Label';
 StatusIndicatorLabels.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display label values with the Status indicator i.e label and indicator image, add the \`fd-status-indicator--lg__text \` and \`fd-status-indicator--positive__text \`
 modifier class for defining the font size and colour of the Label together with the \`fd-status-indicator--htext\` for horizontal positioning of the label.
 `
+        }
     }
 };
 
@@ -423,7 +429,7 @@ export const StatusIndicatorLinearFilling = () => `
 					<stop offset="0.8" stop-color="white">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.8" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
@@ -460,7 +466,7 @@ export const StatusIndicatorLinearFilling = () => `
 					<stop offset="0.8" stop-color="white">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.8" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
@@ -492,9 +498,11 @@ export const StatusIndicatorLinearFilling = () => `
 StatusIndicatorLinearFilling.storyName = 'Status Indicator With Linear filling';
 StatusIndicatorLinearFilling.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display Linear filling from left to right instead default bottom to top approach type of the status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either clockwise or counterclockwise.
 `
+        }
     }
 };
 
@@ -637,9 +645,11 @@ export const StatusIndicatorCoreoGraphy = () => `
 StatusIndicatorCoreoGraphy.storyName = 'Status Indicator With Coreographed filling';
 StatusIndicatorCoreoGraphy.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 		Example to demonstrate the order dispatch from the manufacturing unit
 		`
+        }
     }
 };
 
@@ -654,7 +664,7 @@ export const StatusIndicatorRadialFilling = () => `
 					<stop offset="0.3" stop-color="white">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="5s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.3" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="5s" begin="0s"/>
 					</stop>
@@ -688,7 +698,7 @@ export const StatusIndicatorRadialFilling = () => `
 					<stop offset="0.3" stop-color="white">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="5s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.3" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="5s" begin="0s"/>
 					</stop>
@@ -716,9 +726,11 @@ export const StatusIndicatorRadialFilling = () => `
 StatusIndicatorRadialFilling.storyName = 'Status Indicator With Radial filling';
 StatusIndicatorRadialFilling.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display Radial filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<radialGradient>\` property  \`cx,cy,r,fx,fy\`. Filling can be done either clockwise or counterclockwise.
 `
+        }
     }
 };
 
@@ -733,7 +745,7 @@ export const StatusIndicatorAngularFilling = () => `
 					<stop offset="0.8" stop-color="white">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.8" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.8" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
@@ -771,7 +783,7 @@ export const StatusIndicatorAngularFilling = () => `
 					<stop offset="0.5" stop-color="white">
 					<animate attributeName="offset" values="0;0.5" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.5" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.5" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
@@ -809,7 +821,7 @@ export const StatusIndicatorAngularFilling = () => `
 					<stop offset="0.5" stop-color="white">
 					<animate attributeName="offset" values="0;0.5" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.5" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.5" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
@@ -847,7 +859,7 @@ export const StatusIndicatorAngularFilling = () => `
 					<stop offset="0.4" stop-color="white">
 					<animate attributeName="offset" values="0;0.4" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
-					
+
 					<stop offset="0.4" stop-color="transparent">
 					<animate attributeName="offset" values="0;0.4" repeatCount="1" dur="3s" begin="0s"/>
 					</stop>
@@ -879,8 +891,10 @@ export const StatusIndicatorAngularFilling = () => `
 StatusIndicatorAngularFilling.storyName = 'Status Indicator With Angular filling';
 StatusIndicatorAngularFilling.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To display Angular filling instead of default bottom to top approach type of status indicator Object, The object can be filled based on changing the value of  \`<linearGradient>\` property  \`x1,Y1,x2,y2\`. Filling can be done either clockwise or counterclockwise.
 `
+        }
     }
 };

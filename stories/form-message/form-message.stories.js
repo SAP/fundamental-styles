@@ -15,14 +15,14 @@ Error |\`is-error\` | The data entered is not valid and must be corrected, stopp
 Warning | \`is-warning\` | The data entered is formatted correctly but there are other issues that are problematic. However, these issues will not stop the user from moving forward.
 Disabled | \`is-disabled\` | Indicates the field is not editable. This state is commonly used when the field is dependent on a previous entry/selection within the form.
 Read-only&nbsp;&nbsp;&nbsp; | \`is-readonly\`&nbsp;&nbsp;&nbsp; | Used to display static information in the context of a form.
-        
+
         `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['form-message', 'form-item', 'form-label', 'input', 'popover']
     }
 };
 
-export const success = () => `<div class="fd-form-item">
+export const Success = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1bb">Success input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true"
@@ -36,15 +36,16 @@ export const success = () => `<div class="fd-form-item">
     </div>
 `;
 
-success.storyName = 'Success';
-success.parameters = {
+Success.parameters = {
     docs: {
-        storyDescription: `To display a success message below an input field, add the \`--success\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display a success message below an input field, add the \`--success\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };
 
-export const error = () => `<div class="fd-form-item">
+export const Error = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Error input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true"
@@ -58,15 +59,16 @@ export const error = () => `<div class="fd-form-item">
     </div>
 `;
 
-error.storyName = 'Error';
-error.parameters = {
+Error.parameters = {
     docs: {
-        storyDescription: `To display an error message below an input field, add the \`--error\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display an error message below an input field, add the \`--error\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };
 
-export const warning = () => `<div class="fd-form-item">
+export const Warning = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1cc">Warning input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true"
@@ -80,15 +82,16 @@ export const warning = () => `<div class="fd-form-item">
     </div>
 `;
 
-warning.storyName = 'Warning';
-warning.parameters = {
+Warning.parameters = {
     docs: {
-        storyDescription: `To display a warning message below an input field, add the \`--warning\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display a warning message below an input field, add the \`--warning\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };
 
-export const information = () => `<div class="fd-form-item">
+export const Information = () => `<div class="fd-form-item">
         <label class="fd-form-label" for="input-1ee">Information input:</label>
         <div class="fd-form-input-message-group fd-popover fd-popover--input-message-group">
             <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true"
@@ -102,10 +105,11 @@ export const information = () => `<div class="fd-form-item">
     </div>
 `;
 
-information.storyName = 'Information';
-information.parameters = {
+Information.parameters = {
     docs: {
-        storyDescription: `To display an information message below an input field, add the \`--information\` modifier class to the \`fd-form-message\` element.
+        description: {
+            story: `To display an information message below an input field, add the \`--information\` modifier class to the \`fd-form-message\` element.
         `
+        }
     }
 };

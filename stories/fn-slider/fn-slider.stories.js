@@ -28,7 +28,7 @@ const localStyles = `
 </style>
 `;
 
-export const slider = () => `${localStyles}
+export const Slider = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-slider">
@@ -95,14 +95,13 @@ export const slider = () => `${localStyles}
 </div>
 `;
 
-slider.storyName = 'Slider';
-slider.parameters = {
+Slider.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const rangeSlider = () => `${localStyles}
+export const RangeSlider = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-slider fn-slider--range">
@@ -189,8 +188,7 @@ export const rangeSlider = () => `${localStyles}
 </div>
 `;
 
-rangeSlider.storyName = 'Range Slider';
-rangeSlider.parameters = {
+RangeSlider.parameters = {
     docs: {
         iframeHeight: 500
     }

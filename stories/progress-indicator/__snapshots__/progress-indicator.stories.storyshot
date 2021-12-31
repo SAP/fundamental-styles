@@ -47,7 +47,7 @@ exports[`Storyshots Components/Progress Indicator Layout 1`] = `
     
   </div>
   
-    
+
     
   <div
     aria-label="42%"
@@ -92,7 +92,7 @@ exports[`Storyshots Components/Progress Indicator Layout 1`] = `
     
   </div>
   
-    
+
     
   <div
     aria-label="69%"
@@ -137,7 +137,7 @@ exports[`Storyshots Components/Progress Indicator Layout 1`] = `
     
   </div>
   
-    
+
     
   <div
     aria-label="100%"
@@ -182,7 +182,7 @@ exports[`Storyshots Components/Progress Indicator Layout 1`] = `
     
   </div>
   
-    
+
     
   <div
     aria-label="80 of 100 MB"
@@ -278,7 +278,7 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
     
   </div>
   
-   
+
     
   <div
     aria-label="42%"
@@ -323,7 +323,7 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
     
   </div>
   
-   
+
     
   <div
     aria-label="42%"
@@ -368,7 +368,7 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
     
   </div>
   
-    
+
     
   <div
     aria-label="42%"
@@ -413,7 +413,7 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
     
   </div>
   
-   
+
     
   <div
     aria-label="42%"

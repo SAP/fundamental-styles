@@ -1,7 +1,7 @@
 export default {
     title: 'Components/Card',
     parameters: {
-        description: `A card is content container that represents a task or a topic on the overview page of an application. It is essentially a smart component that uses UI annotations to render its content. Cards can display read-only content from different sources side by side – without requiring the user to switch screens. 
+        description: `A card is content container that represents a task or a topic on the overview page of an application. It is essentially a smart component that uses UI annotations to render its content. Cards can display read-only content from different sources side by side – without requiring the user to switch screens.
 
 **Cards can display different types of content, such as:**
 
@@ -33,13 +33,13 @@ Counter (optional) | The counter indicates how many items are showing on the car
 };
 
 
-export const cardAnatomy = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const CardAnatomy = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 1">
             <a class="fd-card__header" tabindex="0">
-                <span 
-                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')"
                     role="img"
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -59,9 +59,9 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 2">
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <a class="fd-card__header" tabindex="0">
-                <span 
-                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')"
                     role="img"
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -79,9 +79,9 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 3">
             <a class="fd-card__header" tabindex="0">
-                <span 
-                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')"
                     role="img"
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -100,9 +100,9 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 4">
             <a class="fd-card__header" tabindex="0">
-                <span 
-                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('/assets/images/backgrounds/city.jpg')" 
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')"
                     role="img"
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -183,16 +183,18 @@ export const cardAnatomy = () => `<div style="display:flex; justify-content:spac
 </div>
 `;
 
-cardAnatomy.storyName = 'Standard card';
-cardAnatomy.parameters = {
+CardAnatomy.storyName = 'Standard card';
+CardAnatomy.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The standard card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
+        description: {
+            story: `The standard card displays a header area with a title and a content area, as well as any other components mentioned in the card anatomy section.
 `
+        }
     }
 };
 
-export const analyticalCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const AnalyticalCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card fd-card--analytical" role="region" aria-label="Analytical Card Example 1">
             <a class="fd-card__header" tabindex="0">
@@ -254,7 +256,7 @@ export const analyticalCard = () => `<div style="display:flex; justify-content:s
                                 <div class="fd-numeric-content__kpi">1Ñç</div>
                             </div>
                             <div class="fd-numeric-content__scale-container">
-                                <div class="fd-numeric-content__scale">                                
+                                <div class="fd-numeric-content__scale">
                                     <i class="fd-numeric-content__scale-arrow sap-icon--down" aria-label="decrease"></i>
                                     <span class="fd-numeric-content__scale-text">M</span>
                                 </div>
@@ -280,11 +282,12 @@ export const analyticalCard = () => `<div style="display:flex; justify-content:s
 </div>
 `;
 
-analyticalCard.storyName = 'Analytical card';
-analyticalCard.parameters = {
+AnalyticalCard.storyName = 'Analytical card';
+AnalyticalCard.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a standard header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the \`fd-card--analytical\` modifier class to the main element.
+        description: {
+            story: `The analytical card is used for data visualization. It can display a KPI header and various chart types in the content. The only difference between a KPI header and a standard header is that the former requires a subtitle, a KPI area and can display an optional second subtitle. To display an analytical card, add the \`fd-card--analytical\` modifier class to the main element.
 
 ####Chart types
 **The content area of an analytical card can display 8 different chart types:**
@@ -297,12 +300,13 @@ analyticalCard.parameters = {
 - Donut
 - Combined
 - Scatter plot
-        
+
 `
+        }
     }
 };
 
-export const listCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const ListCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 100%; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="List Card Example 1">
             <div class="fd-card__header fd-card__header--non-interactive">
@@ -389,18 +393,20 @@ export const listCard = () => `<div style="display:flex; justify-content:space-a
 </div>
 `;
 
-listCard.storyName = 'List card';
-listCard.parameters = {
+ListCard.storyName = 'List card';
+ListCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `A card can display various types of lists. All components placed inside should behave natively.
+        description: {
+            story: `A card can display various types of lists. All components placed inside should behave natively.
             For this kind of card it is not recommended to keep header interactive, or navigable.
-            Such a header can be achieved by adding \`fd-card__header--non-interactive\` modifier class.  
+            Such a header can be achieved by adding \`fd-card__header--non-interactive\` modifier class.
         `
+        }
     }
 };
 
-export const tableCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const TableCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 500px; height: 100%; margin: 1rem;">
         <div class="fd-card fd-card--table" role="region" aria-label="Table Card Example 1">
             <a class="fd-card__header" tabindex="0">
@@ -555,22 +561,24 @@ export const tableCard = () => `<div style="display:flex; justify-content:space-
 </div>
 `;
 
-tableCard.storyName = 'Table card';
-tableCard.parameters = {
+TableCard.storyName = 'Table card';
+TableCard.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'Cards can display tables within the content area. To display a table card, add the `fd-card--table` modifier class to the main element.'
+        description: {
+            story: 'Cards can display tables within the content area. To display a table card, add the `fd-card--table` modifier class to the main element.'
+        }
     }
 };
 
 
-export const objectCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const ObjectCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 14rem; height: 34rem; margin: 1rem;">
         <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 1">
             <a class="fd-card__header" tabindex="0">
-                <span 
-                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('/assets/images/avatars/1.svg')" 
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/avatars/1.svg')"
                     role="img"
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -632,9 +640,9 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
     <div style="width: 40rem; height: 20rem; margin: 1rem;">
         <div class="fd-card fd-card--object" role="region" aria-label="Object Card Example 2">
             <a class="fd-card__header" tabindex="0">
-                <span 
-                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar" 
-                    style="background-image: url('/assets/images/avatars/1.svg')" 
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/avatars/1.svg')"
                     role="img"
                     aria-label="John Doe"></span>
                 <div class="fd-card__header-text">
@@ -706,12 +714,13 @@ export const objectCard = () => `<div style="display:flex; justify-content:space
 </div>
 `;
 
-objectCard.storyName = 'Object card';
-objectCard.parameters = {
+ObjectCard.storyName = 'Object card';
+ObjectCard.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `The object card can display a single object or a group of objects. Contrary to other cards, object card has 1rem padding on all sides of the content area. To display an object card, add the \`fd-card--object\` modifier class to the main element.
-          
+        description: {
+            story: `The object card can display a single object or a group of objects. Contrary to other cards, object card has 1rem padding on all sides of the content area. To display an object card, add the \`fd-card--object\` modifier class to the main element.
+
 **Within the content area, there are several components:**
 
 Component (class) |	Description
@@ -723,5 +732,6 @@ Component (class) |	Description
 \`fd-card__content-label-container\` | a container for the label of the group.
 \`fd-card__content-group-container\` | a container for the value of the group.
 `
+        }
     }
 };

@@ -141,7 +141,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
             
       </div>
       
-        
+
             
       <button
         class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m"
@@ -165,7 +165,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
     
   </div>
   
-    
+
     
   <div
     aria-hidden="false"
@@ -211,7 +211,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
             
       </div>
       
-        
+
             
       <div
         class="fd-avatar-group__overflow-body"
@@ -599,7 +599,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
         </div>
         
-        
+
                 
         <div
           class="fd-quick-view__content"
@@ -837,7 +837,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
         </div>
         
-            
+
                 
         <div
           class="fd-quick-view__content"
@@ -1065,7 +1065,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
         </div>
         
-            
+
                 
         <div
           class="fd-quick-view__content"
@@ -1295,7 +1295,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
         </div>
         
-            
+
                 
         <div
           class="fd-quick-view__content"
@@ -1490,7 +1490,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
         
     </div>
     
-        
+
         
     <div
       aria-hidden="true"

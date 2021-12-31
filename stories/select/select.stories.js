@@ -21,7 +21,7 @@ export default {
     }
 };
 
-export const cozy = () => `<div style="height: 250px">
+export const Cozy = () => `<div style="height: 250px">
     <label class="fd-form-label" id="cozySelectLabel">Choose an option</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control">
@@ -40,7 +40,7 @@ export const cozy = () => `<div style="height: 250px">
                     tabindex="0">
                     <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
                     <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i> 
+                        <i class="sap-icon--slim-arrow-down"></i>
                     </span>
                 </button>
             </div>
@@ -88,15 +88,17 @@ export const cozy = () => `<div style="height: 250px">
 </div>
 `;
 
-cozy.parameters = {
+Cozy.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
-Select displays a predefined option and a button that triggers a dropdown menu to view more options (list items). By default, it is displayed in cozy mode. 
+        description: {
+            story: `
+Select displays a predefined option and a button that triggers a dropdown menu to view more options (list items). By default, it is displayed in cozy mode.
         ` }
+    }
 };
 
-export const compact = () => `<div style="height: 200px">
+export const Compact = () => `<div style="height: 200px">
     <label class="fd-form-label" id="compactSelectLabel">Choose an option</label><br />
     <div class="fd-popover">
         <div class="fd-popover__control">
@@ -129,7 +131,7 @@ export const compact = () => `<div style="height: 200px">
                 <li id="compactSelectCombobox-currentlyFocusedItem"
                     class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
                 <span class="fd-list__title">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </span>
                 </li>
@@ -148,15 +150,17 @@ export const compact = () => `<div style="height: 200px">
 </div>
 `;
 
-compact.parameters = {
+Compact.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 When in compact mode, select displays a dropdown menu that can contain long list items with text that wraps to the next line. The maximum width should be 37.5rem (600px) to avoid readability issues, unless the list contains more than 2 columns. If the list has 3 or more columns, the dropdown menu should not be limited to a max width. To display select in compact mode, add \`fd-select--compact\` to the main element.
         ` }
+    }
 };
 
-export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const MobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -207,18 +211,20 @@ export const mobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
 </div>
 `;
 
-mobileMode.storyName = 'Mobile';
+MobileMode.storyName = 'Mobile';
 
-mobileMode.parameters = {
+MobileMode.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 Select is displayed in a full-screen dialog when viewed on mobile (and some tablet screens). The dialog displays a list where the first list item is pre-selected. To display select in mobile mode, wrap the select component in **Dialog** and **Bar** components.
 `
+        }
     }
 };
 
-export const semanticStates = () => `<div style="height: 200px">
+export const SemanticStates = () => `<div style="height: 200px">
 <div class="fd-container">
     <div class="fd-row">
         <div class="fd-col fd-col--3">
@@ -481,12 +487,13 @@ export const semanticStates = () => `<div style="height: 200px">
 </div>
 `;
 
-semanticStates.storyName = 'States';
+SemanticStates.storyName = 'States';
 
-semanticStates.parameters = {
+SemanticStates.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Select can be displayed in semantic states to communicate *Success*, *Error*, *Warning* or *Information* to the users. They can be displayed as either messages within the dropdown list, or by itself as a static message. To display select in various semantic states, add the class (shown below) to the \`fd-select__control\` element.
 
 Semantic state | Class
@@ -497,12 +504,13 @@ Warning | \`is-warning\`
 Information | \`is-information\`
 
 
-**Note:** To add text in the body of the component, include the text within the \`fd-list__message\` above the \`ul\` element.          
+**Note:** To add text in the body of the component, include the text within the \`fd-list__message\` above the \`ul\` element.
         `
+        }
     }
 };
 
-export const asFormItem = () => `<div style="height:310px">
+export const AsFormItem = () => `<div style="height:310px">
     <div class="fd-form-item">
     <label class="fd-form-label" id="formSelectLabel">Choose an option</label><br />
         <div class="fd-popover">
@@ -521,7 +529,7 @@ export const asFormItem = () => `<div style="height:310px">
                         tabindex="0">
                         <span is="formSelectValue" class="fd-select__text-content">Select</span>
                         <span class="fd-button fd-button--transparent fd-select__button">
-                            <i class="sap-icon--slim-arrow-down"></i> 
+                            <i class="sap-icon--slim-arrow-down"></i>
                         </span>
                     </button>
                 </div>
@@ -569,18 +577,20 @@ export const asFormItem = () => `<div style="height:310px">
 </div>
 `;
 
-asFormItem.storyName = 'Form item';
+AsFormItem.storyName = 'Form item';
 
-asFormItem.parameters = {
+AsFormItem.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `
+        description: {
+            story: `
 When displaying select within a form, you can apply the \`fd-form-item\` wrapper to ensure proper styling for the items. However, you are free to override this in your custom styles if necessary.
 `
+        }
     }
 };
 
-export const twoColumn = () => `<div style="height: 200px">
+export const TwoColumn = () => `<div style="height: 200px">
 <div class="fd-container">
   <div class="fd-row">
     <div class="fd-col fd-col--6">
@@ -689,17 +699,19 @@ export const twoColumn = () => `<div style="height: 200px">
 </div>
 `;
 
-twoColumn.storyName = '2-column';
+TwoColumn.storyName = '2-column';
 
-twoColumn.parameters = {
+TwoColumn.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 Select can be displayed with two columns in the dropdown list view. The column width should be adjusted depending on the use case, but always with a default ration of 60% (first column) to 40% (second column). To display a second column, add the \`fd-list__secondary\` class to the list items under the title element.
         ` }
+    }
 };
 
-export const twoColumnsAndIcons = () => `<div style="height: 200px">
+export const TwoColumnsAndIcons = () => `<div style="height: 200px">
     <label class="fd-form-label" id="twoColumnsAndIconsLabel">Choose an option</label><br />
     <div class="fd-popover">
     <div class="fd-popover__control">
@@ -756,17 +768,19 @@ export const twoColumnsAndIcons = () => `<div style="height: 200px">
 </div>
 `;
 
-twoColumnsAndIcons.storyName = '2-column with icons';
+TwoColumnsAndIcons.storyName = '2-column with icons';
 
-twoColumnsAndIcons.parameters = {
+TwoColumnsAndIcons.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 Not only can select be displayed with two columns, but also with icons. To display icons, add the \`fd-list__icon sap-icon--*\` to the list items before the title element. Find icons on the **Icon** page.
 ` }
+    }
 };
 
-export const itemGrouping = () => `<div style="height: 450px">
+export const ItemGrouping = () => `<div style="height: 450px">
 <label class="fd-form-label" id="itemGroupingLabel">Choose an option</label><br />
     <div class="fd-popover">
     <div class="fd-popover__control">
@@ -836,18 +850,20 @@ export const itemGrouping = () => `<div style="height: 450px">
 </div>
 `;
 
-itemGrouping.storyName = 'Grouping';
+ItemGrouping.storyName = 'Grouping';
 
-itemGrouping.parameters = {
+ItemGrouping.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 Select can be displayed with headers that group the list items in the dropdown menu. To display group headers, add the \`fd-list__group-header\` label within the body element.
 `
+        }
     }
 };
 
-export const textWrapping = () => `<div style="height: 300px">
+export const TextWrapping = () => `<div style="height: 300px">
     <label class="fd-form-label" id="textWrappingLabel">Choose an option</label><br />
     <div class="fd-popover">
     <div class="fd-popover__control">
@@ -880,8 +896,8 @@ export const textWrapping = () => `<div style="height: 300px">
                 id="textWrappingSelectCombobox-currentlyFocusedItem"
                 class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
                 <span class="fd-list__title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.
                 </span>
                 <span class="fd-list__secondary">A1</span>
@@ -904,18 +920,20 @@ export const textWrapping = () => `<div style="height: 300px">
 </div>
 `;
 
-textWrapping.storyName = 'Text wrapping';
+TextWrapping.storyName = 'Text wrapping';
 
-textWrapping.parameters = {
+TextWrapping.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
-The select component wraps text by default, and there is virtually no limit to the text length. However, it is recommended to keep the length to a minimum for readability. The second column will always remain center-aligned, despite the length of the list item.      
+        description: {
+            story: `
+The select component wraps text by default, and there is virtually no limit to the text length. However, it is recommended to keep the length to a minimum for readability. The second column will always remain center-aligned, despite the length of the list item.
         `
+        }
     }
 };
 
-export const noWrapping = () => `<div style="height: 200px">
+export const NoWrapping = () => `<div style="height: 200px">
     <label class="fd-form-label" id="noWrappingLabel">Choose an option</label><br />
     <div class="fd-popover">
     <div class="fd-popover__control">
@@ -970,18 +988,20 @@ export const noWrapping = () => `<div style="height: 200px">
 </div>
 `;
 
-noWrapping.storyName = 'No wrapping';
+NoWrapping.storyName = 'No wrapping';
 
-noWrapping.parameters = {
+NoWrapping.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Although select wraps text by default, it is possible to prevent wrapping. To achieve this, add the \`--no-wrap\` modifier class to the \`fd-list__title\` and/or \`fd-list__secondary\` elements.
         `
+        }
     }
 };
 
-export const matchSelectPopoverBodySize = () => `<div style="height: 250px">
+export const MatchSelectPopoverBodySize = () => `<div style="height: 250px">
     <label class="fd-form-label" id="matchSelectPopoverBodySizeLabel">Choose an option</label><br />
     <div class="fd-popover">
     <div class="fd-popover__control">
@@ -1037,18 +1057,20 @@ export const matchSelectPopoverBodySize = () => `<div style="height: 250px">
 </div>
 `;
 
-matchSelectPopoverBodySize.storyName = 'Popover style';
+MatchSelectPopoverBodySize.storyName = 'Popover style';
 
-matchSelectPopoverBodySize.parameters = {
+MatchSelectPopoverBodySize.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
-Select can be displayed as a popover, using all of its specifications. The default size for the popover body is often longer than the text length. The body can be adjusted to match the text length by adding the \`fd-popover__body—dropdown-fill\` class to \`fd-popover__body\`. See **Popover** for more details.       
+        description: {
+            story: `
+Select can be displayed as a popover, using all of its specifications. The default size for the popover body is often longer than the text length. The body can be adjusted to match the text length by adding the \`fd-popover__body—dropdown-fill\` class to \`fd-popover__body\`. See **Popover** for more details.
         `
+        }
     }
 };
 
-export const largerSelect = () => `<div style="height: 250px">
+export const LargerSelect = () => `<div style="height: 250px">
     <label class="fd-form-label" id="largeSelectPopoverSizeLabel">Choose an option</label><br />
     <div class="fd-popover">
     <div class="fd-popover__control">
@@ -1111,18 +1133,20 @@ export const largerSelect = () => `<div style="height: 250px">
 </div>
 `;
 
-largerSelect.storyName = 'Large Select';
+LargerSelect.storyName = 'Large Select';
 
-largerSelect.parameters = {
+LargerSelect.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
-There is a way to make larger select select body, To achieve it, add \`fd-list--large-dropdown\` to \`fd-list\` element.        
+        description: {
+            story: `
+There is a way to make larger select select body, To achieve it, add \`fd-list--large-dropdown\` to \`fd-list\` element.
         `
+        }
     }
 };
 
-export const disabled = () => `<label class="fd-form-label" id="disabledLabel">Choose an option</label><br />
+export const Disabled = () => `<label class="fd-form-label" id="disabledLabel">Choose an option</label><br />
 <div class="fd-popover">
     <div class="fd-popover__control" aria-disabled="true">
         <div class="fd-select">
@@ -1140,18 +1164,18 @@ export const disabled = () => `<label class="fd-form-label" id="disabledLabel">C
 </div>
 `;
 
-disabled.storyName = 'Disabled';
-
-disabled.parameters = {
+Disabled.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
-Select can be disabled to communicate to the user that the control cannot be selected. To disable select, add the \`aria-disabled="true"\` attribute to the \`fd-popover__control\` and the \`fd-select__control\` elements.        
+        description: {
+            story: `
+Select can be disabled to communicate to the user that the control cannot be selected. To disable select, add the \`aria-disabled="true"\` attribute to the \`fd-popover__control\` and the \`fd-select__control\` elements.
         `
+        }
     }
 };
 
-export const readonly = () => `<label class="fd-form-label" id="readonlyLabel">Chosen option</label><br />
+export const Readonly = () => `<label class="fd-form-label" id="readonlyLabel">Chosen option</label><br />
 <div class="fd-popover">
     <div class="fd-popover__control">
         <div class="fd-select">
@@ -1169,18 +1193,20 @@ export const readonly = () => `<label class="fd-form-label" id="readonlyLabel">C
 </div>
 `;
 
-readonly.storyName = 'Read-only';
+Readonly.storyName = 'Read-only';
 
-readonly.parameters = {
+Readonly.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Select can be displayed as read-only, meaning the value in the input field cannot be changed via typing. To display select as read-only, add the \`.is-readonly\` class to the \`fd-select__control\` element.
         `
+        }
     }
 };
 
-export const blank = () => `<div style="height: 250px">
+export const Blank = () => `<div style="height: 250px">
 <div class="fd-container">
   <div class="fd-row">
         <div class="fd-col fd-col--6">
@@ -1204,7 +1230,7 @@ export const blank = () => `<div style="height: 250px">
                             aria-haspopup="listbox">
                             <span id="h45336F3Value" class="fd-select__text-content"></span>
                             <span class="fd-button fd-button--transparent fd-select__button">
-                                <i class="sap-icon--slim-arrow-down"></i> 
+                                <i class="sap-icon--slim-arrow-down"></i>
                             </span>
                         </button>
                     </div>
@@ -1258,7 +1284,7 @@ export const blank = () => `<div style="height: 250px">
                             aria-haspopup="listbox">
                             <span id="h45336F4Value" class="fd-select__text-content"></span>
                             <span class="fd-button fd-button--transparent fd-select__button">
-                                <i class="sap-icon--slim-arrow-down"></i> 
+                                <i class="sap-icon--slim-arrow-down"></i>
                             </span>
                         </button>
                     </div>
@@ -1290,13 +1316,13 @@ export const blank = () => `<div style="height: 250px">
 </div>
 `;
 
-blank.storyName = 'Blank';
-
-blank.parameters = {
+Blank.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 The select component can display a blank list item instead of a pre-selected list item, prompting the user to select the dropdown button to see more. To display a blank list item, simply enter a few spaces in the title of the list item.
         `
+        }
     }
 };

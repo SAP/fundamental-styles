@@ -11,7 +11,7 @@ exports[`Storyshots Components/Icon Tab Bar Badges 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -120,7 +120,7 @@ exports[`Storyshots Components/Icon Tab Bar Badges 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive"
@@ -213,7 +213,7 @@ exports[`Storyshots Components/Icon Tab Bar Badges 1`] = `
           <span
             class="fd-icon-tab-bar__badge"
           />
-           
+          
             
         </a>
         
@@ -274,7 +274,7 @@ exports[`Storyshots Components/Icon Tab Bar Badges 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive"
@@ -427,7 +427,7 @@ exports[`Storyshots Components/Icon Tab Bar Badges 1`] = `
       
     
     </ul>
-     
+    
 
   </div>
   
@@ -683,7 +683,7 @@ exports[`Storyshots Components/Icon Tab Bar Counters and Text 1`] = `
     class="fd-icon-tab-bar__header"
     role="tablist"
   >
-      
+    
         
     <li
       class="fd-icon-tab-bar__item"
@@ -782,7 +782,7 @@ exports[`Storyshots Components/Icon Tab Bar Counters and Text 1`] = `
     
     
   </ul>
-   
+  
     
   <section
     aria-labelledby="tab1"
@@ -790,11 +790,11 @@ exports[`Storyshots Components/Icon Tab Bar Counters and Text 1`] = `
     id="section1"
     role="tabpanel"
   >
-      
+    
         Section 1
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab2"
@@ -803,11 +803,11 @@ exports[`Storyshots Components/Icon Tab Bar Counters and Text 1`] = `
     id="section2"
     role="tabpanel"
   >
-      
+    
         Section 2
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab3"
@@ -816,7 +816,7 @@ exports[`Storyshots Components/Icon Tab Bar Counters and Text 1`] = `
     id="section3"
     role="tabpanel"
   >
-      
+    
         Section 3
     
   </section>
@@ -836,7 +836,7 @@ exports[`Storyshots Components/Icon Tab Bar Filter 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -935,7 +935,7 @@ exports[`Storyshots Components/Icon Tab Bar Filter 1`] = `
             Ok
           </div>
           
-                
+
             
         </a>
         
@@ -1075,7 +1075,7 @@ exports[`Storyshots Components/Icon Tab Bar Filter 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -1313,7 +1313,7 @@ exports[`Storyshots Components/Icon Tab Bar Filter 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -1549,7 +1549,7 @@ exports[`Storyshots Components/Icon Tab Bar Flat Navigation 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -1719,7 +1719,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -1908,7 +1908,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon 1`] = `
       
     
     </ul>
-     
+    
 
   </div>
   
@@ -1927,7 +1927,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -2116,7 +2116,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon 1`] = `
       
     
     </ul>
-     
+    
 
   </div>
   
@@ -2135,7 +2135,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive"
@@ -2349,7 +2349,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only 1`] = `
     class="fd-icon-tab-bar__header"
     role="tablist"
   >
-      
+    
         
     <li
       class="fd-icon-tab-bar__item"
@@ -2500,7 +2500,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only 1`] = `
     
     
   </ul>
-   
+  
     
   <section
     aria-labelledby="tab1"
@@ -2508,11 +2508,11 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only 1`] = `
     id="section1"
     role="tabpanel"
   >
-      
+    
         Section 1
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab2"
@@ -2521,11 +2521,11 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only 1`] = `
     id="section2"
     role="tabpanel"
   >
-      
+    
         Section 2
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab3"
@@ -2534,7 +2534,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only 1`] = `
     id="section3"
     role="tabpanel"
   >
-      
+    
         Section 3
     
   </section>
@@ -2554,7 +2554,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only Semantic Colors 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive"
@@ -2754,7 +2754,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only Semantic Colors 1`] = `
       
     
     </ul>
-     
+    
 
   </div>
   
@@ -2772,7 +2772,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only Semantic Colors 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive"
@@ -2990,7 +2990,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only in Compact Mode 1`] = `
     class="fd-icon-tab-bar__header"
     role="tablist"
   >
-      
+    
         
     <li
       class="fd-icon-tab-bar__item"
@@ -3141,7 +3141,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only in Compact Mode 1`] = `
     
     
   </ul>
-   
+  
     
   <section
     aria-labelledby="tab1"
@@ -3149,11 +3149,11 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only in Compact Mode 1`] = `
     id="section1"
     role="tabpanel"
   >
-      
+    
         Section 1
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab2"
@@ -3162,11 +3162,11 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only in Compact Mode 1`] = `
     id="section2"
     role="tabpanel"
   >
-      
+    
         Section 2
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab3"
@@ -3175,7 +3175,7 @@ exports[`Storyshots Components/Icon Tab Bar Icon Only in Compact Mode 1`] = `
     id="section3"
     role="tabpanel"
   >
-      
+    
         Section 3
     
   </section>
@@ -3206,7 +3206,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar (Shell Navig
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-       
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -3319,7 +3319,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar (Shell Navig
         
             
       </li>
-       
+      
         
     </ul>
     
@@ -3346,7 +3346,7 @@ exports[`Storyshots Components/Icon Tab Bar Navigation Icon Tab Bar (Shell Navig
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -3857,7 +3857,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       class="fd-icon-tab-bar__header fd-icon-tab-bar__header--left-offset"
       role="tablist"
     >
-       
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow-left"
@@ -3887,7 +3887,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
         
         
       </li>
-       
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -4005,7 +4005,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
         
         
       </li>
-       
+      
     
     </ul>
     
@@ -4026,7 +4026,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-       
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -4144,7 +4144,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
         
         
       </li>
-       
+      
     
     </ul>
     
@@ -4164,7 +4164,7 @@ exports[`Storyshots Components/Icon Tab Bar Process 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -4411,7 +4411,7 @@ exports[`Storyshots Components/Icon Tab Bar Process 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -4654,7 +4654,7 @@ exports[`Storyshots Components/Icon Tab Bar Process 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive"
@@ -4897,7 +4897,7 @@ exports[`Storyshots Components/Icon Tab Bar Process 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -5033,7 +5033,7 @@ exports[`Storyshots Components/Icon Tab Bar Responsive Paddings 1`] = `
     class="fd-icon-tab-bar__header"
     role="tablist"
   >
-      
+    
         
     <li
       class="fd-icon-tab-bar__item"
@@ -5144,7 +5144,7 @@ exports[`Storyshots Components/Icon Tab Bar Sizes and Horizontal Paddings 1`] = 
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -5252,7 +5252,7 @@ exports[`Storyshots Components/Icon Tab Bar Sizes and Horizontal Paddings 1`] = 
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -5360,7 +5360,7 @@ exports[`Storyshots Components/Icon Tab Bar Sizes and Horizontal Paddings 1`] = 
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -5468,7 +5468,7 @@ exports[`Storyshots Components/Icon Tab Bar Sizes and Horizontal Paddings 1`] = 
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -5576,7 +5576,7 @@ exports[`Storyshots Components/Icon Tab Bar Sizes and Horizontal Paddings 1`] = 
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
         
       <li
         class="fd-icon-tab-bar__item"
@@ -5685,7 +5685,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--dnd-separator-end"
@@ -5851,7 +5851,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       
         
     </ul>
-     
+    
         
     <section
       aria-labelledby="tab1"
@@ -5859,11 +5859,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section1-1"
       role="tabpanel"
     >
-        
+      
             Section 1
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab2"
@@ -5872,11 +5872,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section1-2"
       role="tabpanel"
     >
-        
+      
             Section 2
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab3"
@@ -5885,7 +5885,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section1-3"
       role="tabpanel"
     >
-        
+      
             Section 3
         
     </section>
@@ -5909,7 +5909,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -6021,7 +6021,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       
         
     </ul>
-     
+    
         
     <section
       aria-labelledby="tab1"
@@ -6029,11 +6029,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section2-1"
       role="tabpanel"
     >
-        
+      
             Section 1
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab2"
@@ -6042,11 +6042,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section2-2"
       role="tabpanel"
     >
-        
+      
             Section 2
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab3"
@@ -6055,7 +6055,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section2-3"
       role="tabpanel"
     >
-        
+      
             Section 3
         
     </section>
@@ -6079,7 +6079,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -6560,7 +6560,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       
         
     </ul>
-     
+    
         
     <section
       aria-labelledby="tab1"
@@ -6568,11 +6568,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section3-1"
       role="tabpanel"
     >
-        
+      
             Section 1
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab2"
@@ -6581,11 +6581,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section3-2"
       role="tabpanel"
     >
-        
+      
             Section 2
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab3"
@@ -6594,7 +6594,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section3-3"
       role="tabpanel"
     >
-        
+      
             Section 3
         
     </section>
@@ -6619,7 +6619,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -6902,7 +6902,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       
         
     </ul>
-     
+    
         
     <section
       aria-labelledby="tab1"
@@ -6910,11 +6910,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section1"
       role="tabpanel"
     >
-        
+      
             Section 1
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab2"
@@ -6923,11 +6923,11 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section2"
       role="tabpanel"
     >
-        
+      
             Section 2
         
     </section>
-      
+    
         
     <section
       aria-labelledby="tab3"
@@ -6936,7 +6936,7 @@ exports[`Storyshots Components/Icon Tab Bar Tabs drag and drop 1`] = `
       id="section3"
       role="tabpanel"
     >
-        
+      
             Section 3
         
     </section>
@@ -6963,7 +6963,7 @@ exports[`Storyshots Components/Icon Tab Bar Text Only (Inline mode) 1`] = `
     class="fd-icon-tab-bar__header"
     role="tablist"
   >
-      
+    
         
     <li
       class="fd-icon-tab-bar__item"
@@ -7048,7 +7048,7 @@ exports[`Storyshots Components/Icon Tab Bar Text Only (Inline mode) 1`] = `
     
     
   </ul>
-   
+  
     
   <section
     aria-labelledby="tab1"
@@ -7056,11 +7056,11 @@ exports[`Storyshots Components/Icon Tab Bar Text Only (Inline mode) 1`] = `
     id="section1"
     role="tabpanel"
   >
-      
+    
         Section 1
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab2"
@@ -7069,11 +7069,11 @@ exports[`Storyshots Components/Icon Tab Bar Text Only (Inline mode) 1`] = `
     id="section2"
     role="tabpanel"
   >
-      
+    
         Section 2
     
   </section>
-    
+  
     
   <section
     aria-labelledby="tab3"
@@ -7082,7 +7082,7 @@ exports[`Storyshots Components/Icon Tab Bar Text Only (Inline mode) 1`] = `
     id="section3"
     role="tabpanel"
   >
-      
+    
         Section 3
     
   </section>
@@ -7280,7 +7280,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Multi Click A
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -7717,7 +7717,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
       class="fd-icon-tab-bar__header"
       role="tablist"
     >
-        
+      
             
       <li
         class="fd-icon-tab-bar__item"
@@ -8287,7 +8287,7 @@ exports[`Storyshots Components/Icon Tab Bar Universal Icon Tab Bar Single Click 
                 class="sap-icon--slim-arrow-down"
                 role="presentation"
               />
-                 
+              
                 
             </button>
             

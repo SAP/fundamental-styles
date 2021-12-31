@@ -384,7 +384,7 @@ exports[`Storyshots Components/Action Sheet Mobile 1`] = `
           >
             Decide Later
           </span>
-                        
+          
                 
         </button>
         
@@ -428,7 +428,7 @@ exports[`Storyshots Components/Action Sheet Mobile 1`] = `
 
 exports[`Storyshots Components/Action Sheet Tablet 1`] = `
 <section>
-      
+  
 
   <div
     class="fd-popover"

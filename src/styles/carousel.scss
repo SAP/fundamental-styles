@@ -7,7 +7,7 @@ $button: #{$fd-namespace}-button;
 
 #{$block} {
   @include fd-focus() {
-    outline: 0.0625rem dotted;
+    outline: 0.0625rem var(--sapContent_FocusStyle);
   }
 }
 

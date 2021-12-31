@@ -37,6 +37,7 @@ module.exports = {
       test: /\.stories\.js?$/,
       use: [{ loader: 'story-description-loader' }],
     });
+
     config.module.rules.push({
       test: /\.css?$/,
       use: [
@@ -46,8 +47,9 @@ module.exports = {
                 injectType: 'lazyStyleTag'
             }
         }
-    ]
+      ]
     });
+
     config.plugins.push({
       // Custom plugin to add scss files to webpack watcher
       apply: (compiler) => {
@@ -57,12 +59,14 @@ module.exports = {
             dot: true,
             absolute: true,
           });
+
           files.forEach((file) => {
             comp.fileDependencies.add(path.resolve(file));
           });
         });
       },
     });
+
     config.plugins.push({
       // Custom plugin to rebuild css styles for each scss change
       apply: (compiler) => {

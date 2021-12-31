@@ -8,7 +8,7 @@ This navigation type is composed by two distinct item levels:<br>
 - First Level items - always visible, can be either navigable in and of themselves or be a container for Second Level items (it should not be both)
 - Second Level items → Are always contained by a First Level item, and can have their visibility toggled by this First Level item. They are always only navigable
 
-##Usage      
+##Usage
 **Use the vertical navigation if:**
 
 - You need to display global navigation structures of up to two levels.
@@ -33,7 +33,7 @@ Vertical navigation can be viewed in three different states:
     }
 };
 
-export const cozy = () => `<div class="fd-vertical-nav">
+export const Cozy = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
         <ul class="fd-list" aria-label="Main Menu List">
             <li class="fd-list__navigation-item" tabindex="0">
@@ -75,18 +75,20 @@ export const cozy = () => `<div class="fd-vertical-nav">
 </div>
 `;
 
-cozy.storyName = 'Default';
+Cozy.storyName = 'Default';
 
-cozy.parameters = {
+Cozy.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: `
+        description: {
+            story: `
 The default vertical navigation is comprised of several navigation list items.
         `
+        }
     }
 };
 
-export const condensed = () => `<div class="fd-vertical-nav fd-vertical-nav--condensed">
+export const Condensed = () => `<div class="fd-vertical-nav fd-vertical-nav--condensed">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu 2">
         <ul class="fd-list" aria-label="Main Menu List 2">
             <li class="fd-list__navigation-item fd-list__navigation-item--condensed" tabindex="0">
@@ -110,18 +112,18 @@ export const condensed = () => `<div class="fd-vertical-nav fd-vertical-nav--con
 </div>
 `;
 
-condensed.storyName = 'Condensed';
-
-condensed.parameters = {
+Condensed.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `
+        description: {
+            story: `
 In condensed mode, only icons are shown unless some navigation items have second levels and the second level is expanded.
         `
+        }
     }
 };
 
-export const text = () => `<div class="fd-vertical-nav">
+export const Text = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu 3">
         <ul class="fd-list" aria-label="Main Menu List 3">
             <li class="fd-list__navigation-item" tabindex="0">
@@ -159,18 +161,20 @@ export const text = () => `<div class="fd-vertical-nav">
 </div>
 `;
 
-text.storyName = 'Text Only';
+Text.storyName = 'Text Only';
 
-text.parameters = {
+Text.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: `
+        description: {
+            story: `
 A vertical navigation list does not need to have icons. However this is only available in expanded mode.
         `
+        }
     }
 };
 
-export const indication = () => `<div class="fd-vertical-nav">
+export const Indication = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu 3">
         <ul class="fd-list" aria-label="Main Menu List 3">
             <li class="fd-list__navigation-item" tabindex="0">
@@ -205,7 +209,7 @@ export const indication = () => `<div class="fd-vertical-nav">
             </li>
             <li class="fd-list__navigation-item fd-list__navigation-item--condensed" id="parentCalendarButton" onclick="toggleCondensedVerticalNavSubmenu(event)">
                 <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
-                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow" aria-label="Expand second submenu 4"></button>    
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow" aria-label="Expand second submenu 4"></button>
                 <span class="fd-list__navigation-item-indicator"></span>
                 <div class="fd-popover__body fd-popover__body--no-arrow fd-list__navigation-item-popover--first-level" aria-hidden="false" id="popoverA1">
                     <ul class="fd-list">
@@ -240,19 +244,21 @@ export const indication = () => `<div class="fd-vertical-nav">
 </div>
 `;
 
-indication.storyName = 'Navigation Indication';
+Indication.storyName = 'Navigation Indication';
 
-indication.parameters = {
+Indication.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: `
+        description: {
+            story: `
 All the possible combinations of navigation indication are visualized below. When a second level item has been navigated to and the second list has been collapsed, the indicator is shown on the right of the corresponding first level item, but the text and icon color do not change.
         `
+        }
     }
 };
 
 
-export const grouping = () => `<div class="fd-vertical-nav">
+export const Grouping = () => `<div class="fd-vertical-nav">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu 5">
         <ul class="fd-list" aria-label="Main Menu List 5">
             <li class="fd-list__navigation-item" tabindex="0">
@@ -312,12 +318,12 @@ export const grouping = () => `<div class="fd-vertical-nav">
 </div>
 `;
 
-grouping.storyName = 'Grouping';
-
-grouping.parameters = {
+Grouping.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: `The Vertical Navigation items can be further visually grouped using the Group Header List Item.
+        description: {
+            story: `The Vertical Navigation items can be further visually grouped using the Group Header List Item.
         `
+        }
     }
 };

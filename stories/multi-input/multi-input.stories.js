@@ -6,9 +6,9 @@ The multi-input component is an opinionated composition of the \`input group\`, 
 The \`popover\` is shared between the combobox and select components. Please see the \`select\` documentation for the complete list of modifiers,
 That are also  supported by the \`combobox\` component.
 
-\`Multi Input\` allows users to enter multiple values which are displayed as a tokens. 
-It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options. 
-If the entries are not validated by the application, users can also enter custom values. 
+\`Multi Input\` allows users to enter multiple values which are displayed as a tokens.
+It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
+If the entries are not validated by the application, users can also enter custom values.
 `,
         tags: ['f3', 'a11y', 'theme'],
         components: [
@@ -34,7 +34,7 @@ If the entries are not validated by the application, users can also enter custom
     }
 };
 
-export const cozyAndCompact = () => `<div style="display:flex;height:310px">
+export const CozyAndCompact = () => `<div style="display:flex;height:310px">
     <div style="display:flex;flex-direction:column;padding-right:1rem">
         <label for="cozyMultiInput" class="fd-form-label">
             Multi Input Cozy Mode
@@ -85,7 +85,7 @@ export const cozyAndCompact = () => `<div style="display:flex;height:310px">
             </div>
             <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
             <div class="fd-popover__wrapper">
-                <ul 
+                <ul
                     aria-label="list of fruits"
                     aria-multiselectable="true"
                     class="fd-list fd-list--multi-input"
@@ -225,13 +225,13 @@ export const cozyAndCompact = () => `<div style="display:flex;height:310px">
 </div>
 `;
 
-cozyAndCompact.parameters = {
+CozyAndCompact.parameters = {
     docs: {
         iframeHeight: 350
     }
 };
 
-export const asFormItem = () => `<div style="height:310px">
+export const AsFormItem = () => `<div style="height:310px">
     <div class="fd-form-item">
     <label for="formItemMultiInput" class="fd-form-label">
         Multi Input as form item
@@ -322,17 +322,19 @@ export const asFormItem = () => `<div style="height:310px">
 </div>
 `;
 
-asFormItem.parameters = {
+AsFormItem.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `
+        description: {
+            story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
 Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
 `
+        }
     }
 };
 
-export const grouping = () => `<div style="height:450px">
+export const Grouping = () => `<div style="height:450px">
     <label for="fruitsAndVegsMultiInput" class="fd-form-label">
     Fruits and Vegetables
     </label>
@@ -359,7 +361,7 @@ export const grouping = () => `<div style="height:450px">
                             </span>
                             <button aria-label="unselect option: kiwi" class="fd-token__close"></button>
                         </span>
-                        <span class="fd-tokenizer__indicator">2 more</span> 
+                        <span class="fd-tokenizer__indicator">2 more</span>
                         <input id="fruitsAndVegsMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                     </div>
                 </div>
@@ -439,15 +441,17 @@ export const grouping = () => `<div style="height:450px">
 </div>
 `;
 
-grouping.parameters = {
+Grouping.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription:
+        description: {
+            story:
             'In cases where the list items need to be categorized into groups, it is possible to add headers for each category as seen below.'
+        }
     }
 };
 
-export const matchPopoverBodySize = () => `<div style="height:270px">
+export const MatchPopoverBodySize = () => `<div style="height:270px">
     <label for="matchPopoverBodySizeMultiInput" class="fd-form-label">
     Fruits
     </label>
@@ -474,7 +478,7 @@ export const matchPopoverBodySize = () => `<div style="height:270px">
                             </span>
                             <button aria-label="unselect option: kiwi" class="fd-token__close"></button>
                         </span>
-                        <span class="fd-tokenizer__indicator">2 more</span> 
+                        <span class="fd-tokenizer__indicator">2 more</span>
                         <input id="matchPopoverBodySizeMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                     </div>
                 </div>
@@ -531,20 +535,22 @@ export const matchPopoverBodySize = () => `<div style="height:270px">
 </div>
 `;
 
-matchPopoverBodySize.parameters = {
+MatchPopoverBodySize.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
-The default length size of the popover body is often different from the text length. 
+        description: {
+            story: `
+The default length size of the popover body is often different from the text length.
 The body length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\`.
 
-This class has been added to all the \`Multi Input\` examples above. 
+This class has been added to all the \`Multi Input\` examples above.
 In the example you can see how the \`Multi Input\` component looks without the \`fd-popover__body--dropdown-fill\` modifier.
 `
+        }
     }
 };
 
-export const readOnlyAndDisabled = () => `<div style="display:flex;height:250px;margin-top:1em;">
+export const ReadOnlyAndDisabled = () => `<div style="display:flex;height:250px;margin-top:1em;">
     <div>
         <div style="margin-bottom:1em;">
             <div>
@@ -701,20 +707,22 @@ export const readOnlyAndDisabled = () => `<div style="display:flex;height:250px;
 </div>
 `;
 
-readOnlyAndDisabled.parameters = {
+ReadOnlyAndDisabled.parameters = {
     docs: {
         iframeHeight: 100,
-        storyDescription: `
+        description: {
+            story: `
 To make the \`Multi Input\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
 This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute.
 
 To disable a \`Multi Input\` component, the disabled attribute needs to be added to the \`fd-popover__control\` and the \`fd-input__control\` elements.
 The disabled state can also be achieved by adding the \`.is-disabled\` class or the \`aria-disabled="true"\` attribute.
 `
+        }
     }
 };
 
-export const semantic = () => `<div style="height:300px">
+export const Semantic = () => `<div style="height:300px">
 <label for="semanticMultiInput" class="fd-form-label">
     Semantic Fruits
 </label>
@@ -741,7 +749,7 @@ export const semantic = () => `<div style="height:300px">
                          </span>
                          <button aria-label="unselect option: kiwi" class="fd-token__close"></button>
                      </span>
-                     <span class="fd-tokenizer__indicator">4 more</span> 
+                     <span class="fd-tokenizer__indicator">4 more</span>
                      <input id="semanticMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                  </div>
             </div>
@@ -799,19 +807,21 @@ export const semantic = () => `<div style="height:300px">
 </div>
 `;
 
-semantic.parameters = {
+Semantic.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `
+        description: {
+            story: `
 For a complete list of states supported by the \`Multi Input\` component, please see the documentation for the form or select components.
 
-The semantic mode can be used to modify the combobox component by adding one of 
-\`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into \`fd-input-group\` element. 
+The semantic mode can be used to modify the combobox component by adding one of
+\`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into \`fd-input-group\` element.
 To add text in the \`body\` of the component, simply include your text in the \`fd-list__message\` under the \`ul\` element.`
+        }
     }
 };
 
-export const mobileMode = () => `<section role="dialog" aria-labelledby="mobileModeMultiInputHeader" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileModeMultiInputHeader" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -853,7 +863,7 @@ export const mobileMode = () => `<section role="dialog" aria-labelledby="mobileM
                                      </span>
                                      <button aria-label="unselect option: kiwi" class="fd-token__close"></button>
                                  </span>
-                                 <span class="fd-tokenizer__indicator">4 more</span> 
+                                 <span class="fd-tokenizer__indicator">4 more</span>
                                  <input aria-labelledby="mobileModeMultiInputHeader" class="fd-input fd-input-group__input fd-tokenizer__input" />
                              </div>
                          </div>
@@ -908,16 +918,18 @@ export const mobileMode = () => `<section role="dialog" aria-labelledby="mobileM
 </div>
 `;
 
-mobileMode.parameters = {
+MobileMode.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `
+        description: {
+            story: `
 For mobile devices, or tablets, multi input component should be displayed in fullscreen mode.
 So instead of using popover and dropdown, it should be wrapped in \`dialog\` and \`bar\` components.`
+        }
     }
 };
 
-export const filtering = () => `<div style="min-height: 250px;">
+export const Filtering = () => `<div style="min-height: 250px;">
 <label for="filteringMultiInput" class="fd-form-label">
     Filtered Fruits
 </label>
@@ -1013,10 +1025,12 @@ export const filtering = () => `<div style="min-height: 250px;">
 </div>
 `;
 
-filtering.parameters = {
+Filtering.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 The user can filter selectable options by typing in the input. A button with the text "Show All" should be displayed, that when clicked, will clear the text in the input and show all options in the list.`
+        }
     }
 };

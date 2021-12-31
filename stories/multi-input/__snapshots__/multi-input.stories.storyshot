@@ -1940,7 +1940,7 @@ exports[`Storyshots Patterns/Multi Input Grouping 1`] = `
             >
               2 more
             </span>
-             
+            
                         
             <input
               class="fd-input fd-input-group__input fd-tokenizer__input"
@@ -2486,7 +2486,7 @@ exports[`Storyshots Patterns/Multi Input Match Popover Body Size 1`] = `
             >
               2 more
             </span>
-             
+            
                         
             <input
               class="fd-input fd-input-group__input fd-tokenizer__input"
@@ -2966,7 +2966,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
                 >
                   4 more
                 </span>
-                 
+                
                                  
                 <input
                   aria-labelledby="mobileModeMultiInputHeader"
@@ -3949,7 +3949,7 @@ exports[`Storyshots Patterns/Multi Input Semantic 1`] = `
             >
               4 more
             </span>
-             
+            
                      
             <input
               class="fd-input fd-input-group__input fd-tokenizer__input"

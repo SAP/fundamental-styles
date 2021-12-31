@@ -39,7 +39,7 @@ const localStyles = `
 </style>
 `;
 
-export const checkbox = () => `${localStyles}
+export const Checkbox = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>:normal</b></div>
     <label class="fn-checkbox" tabindex="0">
@@ -191,45 +191,44 @@ export const checkbox = () => `${localStyles}
 </div>
 `;
 
-checkbox.storyName = 'Checkbox';
-checkbox.parameters = {
+Checkbox.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const checkboxGroup = () => `${localStyles}
+export const CheckboxGroup = () => `${localStyles}
 <div class="docs-fn-container-group">
     <fieldset class="fn-fieldset">
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group" 
-                tabindex="-1" 
-                aria-label="checkbox" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group"
+                tabindex="-1"
+                aria-label="checkbox"
                 checked="checked"
             >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">First</span>
         </label>
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group" 
-                tabindex="-1" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group"
+                tabindex="-1"
                 aria-label="checkbox"
             >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">Second</span>
         </label>
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group" 
-                tabindex="-1" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group"
+                tabindex="-1"
                 aria-label="checkbox"
             >
             <span class="fn-checkbox__checkmark"></span>
@@ -241,34 +240,34 @@ export const checkboxGroup = () => `${localStyles}
 <div class="docs-fn-container-group">
     <fieldset class="fn-fieldset fn-fieldset--full-width" style="width: 120px;">
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group_width" 
-                tabindex="-1" 
-                aria-label="checkbox" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group_width"
+                tabindex="-1"
+                aria-label="checkbox"
                 checked="checked"
             >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">First</span>
         </label>
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group_width" 
-                tabindex="-1" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group_width"
+                tabindex="-1"
                 aria-label="checkbox"
             >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">Second</span>
         </label>
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group_width" 
-                tabindex="-1" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group_width"
+                tabindex="-1"
                 aria-label="checkbox"
             >
             <span class="fn-checkbox__checkmark"></span>
@@ -280,34 +279,34 @@ export const checkboxGroup = () => `${localStyles}
 <div class="docs-fn-container-group">
     <fieldset class="fn-fieldset fn-fieldset--horizontal">
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group_horizontal" 
-                tabindex="-1" 
-                aria-label="checkbox" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group_horizontal"
+                tabindex="-1"
+                aria-label="checkbox"
                 checked="checked"
             >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">Checkbox</span>
         </label>
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group_horizontal" 
-                tabindex="-1" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group_horizontal"
+                tabindex="-1"
                 aria-label="checkbox"
             >
             <span class="fn-checkbox__checkmark"></span>
             <span class="fn-checkbox__label">Checkbox</span>
         </label>
         <label class="fn-checkbox" tabindex="0">
-            <input 
-                class="fn-checkbox__input" 
-                type="checkbox" 
-                name="checkbox_group_horizontal" 
-                tabindex="-1" 
+            <input
+                class="fn-checkbox__input"
+                type="checkbox"
+                name="checkbox_group_horizontal"
+                tabindex="-1"
                 aria-label="checkbox"
             >
             <span class="fn-checkbox__checkmark"></span>
@@ -317,15 +316,16 @@ export const checkboxGroup = () => `${localStyles}
 </div>
 `;
 
-checkboxGroup.storyName = 'Checkbox Group';
-checkboxGroup.parameters = {
+CheckboxGroup.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group checkbox controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the checkbox controls with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        description: {
+            story: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group checkbox controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the checkbox controls with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        }
     }
 };
 
-export const radio = () => `${localStyles}
+export const Radio = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>:normal</b></div>
     <label class="fn-radio" tabindex="0">
@@ -478,14 +478,13 @@ export const radio = () => `${localStyles}
 
 `;
 
-radio.storyName = 'Radio';
-radio.parameters = {
+Radio.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const radioGroup = () => `${localStyles}
+export const RadioGroup = () => `${localStyles}
 <div class="docs-fn-container-group">
     <fieldset class="fn-fieldset">
         <label class="fn-radio" tabindex="0">
@@ -547,16 +546,17 @@ export const radioGroup = () => `${localStyles}
 </div>
 `;
 
-radioGroup.storyName = 'Radio Group';
-radioGroup.parameters = {
+RadioGroup.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group radio button controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the radio buttons with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        description: {
+            story: 'Use the `<fieldset>` HTML element with class `.fn-fieldset` to group radio button controls. The controls are displayed vertically and have `fit-content` width. The `.fn-fieldset--full-width` modifier class will display the radio buttons with the same width as the parent element. To display the controls horizontally apply the `.fn-fieldset--horizontal` modifier class.'
+        }
     }
 };
 
 
-export const switchToggle = () => `${localStyles}
+export const SwitchToggle = () => `${localStyles}
 <div class="docs-fn-container">
     <div class="fn-switch">
         <label class="fn-switch__toggle">
@@ -569,8 +569,8 @@ export const switchToggle = () => `${localStyles}
 
 `;
 
-switchToggle.storyName = 'Switch';
-switchToggle.parameters = {
+SwitchToggle.storyName = 'Switch';
+SwitchToggle.parameters = {
     docs: {
         iframeHeight: 500
     }

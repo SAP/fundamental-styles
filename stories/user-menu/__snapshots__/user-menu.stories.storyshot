@@ -2269,7 +2269,7 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
                   aria-label="Search"
                   class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
                 >
-                   
+                  
                                     
                   <i
                     class="sap-icon--search"
@@ -3229,7 +3229,7 @@ exports[`Storyshots Components/User Menu In-Place Navigation 1`] = `
                   aria-label="Search"
                   class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
                 >
-                   
+                  
                                     
                   <i
                     class="sap-icon--search"
@@ -3669,7 +3669,7 @@ exports[`Storyshots Components/User Menu Shellbar 1`] = `
                         
             </div>
             
-                
+
                         
             <div
               aria-hidden="false"
@@ -3694,7 +3694,7 @@ exports[`Storyshots Components/User Menu Shellbar 1`] = `
                     style="background-image: url('assets/images/avatars/1.svg');"
                   />
                   
-                
+
                                     
                   <span
                     aria-label="Avatar"
@@ -3702,7 +3702,7 @@ exports[`Storyshots Components/User Menu Shellbar 1`] = `
                     style="background-image: url('assets/images/avatars/3.svg');"
                   />
                   
-                
+
                                     
                   <button
                     aria-label="Product"
@@ -3716,7 +3716,7 @@ exports[`Storyshots Components/User Menu Shellbar 1`] = `
                                 
                 </div>
                 
-                
+
                                 
                 <div
                   class="fd-user-menu__subheader"
@@ -3739,7 +3739,7 @@ exports[`Storyshots Components/User Menu Shellbar 1`] = `
                                 
                 </div>
                 
-                
+
                                 
                 <ul
                   class="fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border"
@@ -3932,7 +3932,7 @@ exports[`Storyshots Components/User Menu Shellbar 1`] = `
                         Delegate
                       </span>
                       
-                
+
                                             
                       <span
                         class="fd-list__item-counter"
@@ -4057,7 +4057,7 @@ exports[`Storyshots Components/User Menu Shellbar 1`] = `
                             
               </div>
               
-                
+
                             
               <div
                 class="fd-popover__body-footer"

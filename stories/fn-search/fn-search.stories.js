@@ -21,7 +21,7 @@ const localStyles = `
 </style>
 `;
 
-export const search = () => `${localStyles}
+export const Search = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-search">
@@ -68,9 +68,7 @@ export const search = () => `${localStyles}
 </div>
 `;
 
-search.storyName = 'Search';
-
-search.parameters = {
+Search.parameters = {
     docs: {
         iframeHeight: 500
     }

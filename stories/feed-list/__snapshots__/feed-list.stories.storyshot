@@ -19,11 +19,11 @@ exports[`Storyshots Components/Feed List and Item Actions 1`] = `
       style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
       title="John Doe"
     >
-          
+      
         
     </div>
-       
-        
+    
+
         
     <div
       class="fd-feed-list__content"
@@ -197,7 +197,7 @@ exports[`Storyshots Components/Feed List and Item Actions 1`] = `
         
             
       </p>
-                       
+      
             
       <div
         class="fd-feed-list__footer"
@@ -222,7 +222,7 @@ exports[`Storyshots Components/Feed List and Item Actions 1`] = `
       
         
     </div>
-            
+    
     
   </li>
   
@@ -256,7 +256,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
       
         
     </div>
-     
+    
         
     <div
       class="fd-feed-list__content"
@@ -276,7 +276,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
         
                 
         <span>
-          Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+          Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             
         </span>
       </p>
@@ -309,7 +309,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
    
   </li>
   
-   
+
     
   <li
     class="fd-feed-list__body"
@@ -323,11 +323,11 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
       style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
       title="John Doe"
     >
-          
+      
         
     </div>
     
-     
+
         
     <div
       class="fd-feed-list__content"
@@ -347,7 +347,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
         
                 
         <span>
-          Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+          Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             
         </span>
       </p>
@@ -376,11 +376,11 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
       
         
     </div>
-         
+    
     
   </li>
   
-    
+
     
   <li
     class="fd-feed-list__body"
@@ -394,7 +394,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
       style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)"
       title="John Doe"
     />
-     
+    
         
     <div
       class="fd-feed-list__content"
@@ -414,7 +414,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
         
                 
         <span>
-          Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.        
+          Maecenas convallis velit quis felis dictum, in ultrices quam faucibus.
             
         </span>
       </p>
@@ -474,7 +474,7 @@ exports[`Storyshots Components/Feed List and Item Linked 1`] = `
       title="John Doe"
     />
     
-             
+
         
     <div
       class="fd-feed-list__content"
@@ -497,7 +497,7 @@ exports[`Storyshots Components/Feed List and Item Linked 1`] = `
           >
             Joe Doe: 
           </a>
-           
+          
                 
         </span>
         
@@ -505,7 +505,7 @@ exports[`Storyshots Components/Feed List and Item Linked 1`] = `
             
       </p>
       
-            
+
             
       <div
         class="fd-feed-list__footer"
@@ -572,7 +572,7 @@ exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
             style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
             title="John Doe"
           >
-                
+            
                 
           </div>
           
@@ -611,7 +611,7 @@ exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
                 
           </div>
           
-                
+
                 
         </div>
         
@@ -643,8 +643,8 @@ exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
         
             
       </div>
-          
-        
+      
+
             
       <div
         class="fd-feed-list__content"
@@ -802,7 +802,7 @@ exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
       
         
     </li>
-     
+    
     
   </ul>
   
@@ -820,7 +820,7 @@ exports[`Storyshots Components/Feed List and Item No image 1`] = `
   <li
     class="fd-feed-list__body"
   >
-         
+    
         
     <div
       class="fd-feed-list__content"
@@ -842,7 +842,7 @@ exports[`Storyshots Components/Feed List and Item No image 1`] = `
             
       </p>
       
-            
+
             
       <div
         class="fd-feed-list__footer"
@@ -924,7 +924,7 @@ exports[`Storyshots Components/Feed List and Item Placeholder image 1`] = `
             
       </p>
       
-            
+
             
       <div
         class="fd-feed-list__footer"
@@ -977,7 +977,7 @@ exports[`Storyshots Components/Feed List and Item Show less 1`] = `
       title="John Doe"
     />
     
-             
+
         
     <div
       class="fd-feed-list__content"
@@ -1005,12 +1005,12 @@ exports[`Storyshots Components/Feed List and Item Show less 1`] = `
           >
             Less
           </a>
-                  
+          
             
         </span>
       </p>
       
-            
+
             
       <div
         class="fd-feed-list__footer"
@@ -1063,7 +1063,7 @@ exports[`Storyshots Components/Feed List and Item Show more 1`] = `
       title="John Doe"
     />
     
-             
+
         
     <div
       class="fd-feed-list__content"
@@ -1091,12 +1091,12 @@ exports[`Storyshots Components/Feed List and Item Show more 1`] = `
           >
             More
           </a>
-                  
+          
             
         </span>
       </p>
       
-            
+
             
       <div
         class="fd-feed-list__footer"
@@ -1148,11 +1148,11 @@ exports[`Storyshots Components/Feed List and Item Standard 1`] = `
       style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
       title="John Doe"
     >
-          
+      
         
     </div>
     
-         
+
         
     <div
       class="fd-feed-list__content"

@@ -1,4 +1,62 @@
 
+## [0.21.0-rc.76](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.75...v0.21.0-rc.76) (2021-12-29)
+
+## [0.21.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.74...v0.21.0-rc.75) (2021-12-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **fn:** removed classes .fn-tabs--individual and .fn-tabs--line
+
+### Bug Fixes
+
+* **fn:** refactor Tabs component ([#3012](https://github.com/SAP/fundamental-styles/issues/3012)) ([4ee2ed5](https://github.com/SAP/fundamental-styles/commit/4ee2ed59aa7463197cbedcf3bd73e63bb7fa56b9))
+
+## [0.21.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.73...v0.21.0-rc.74) (2021-12-28)
+
+## [0.21.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.72...v0.21.0-rc.73) (2021-12-28)
+
+## [0.21.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.71...v0.21.0-rc.72) (2021-12-27)
+
+## [0.21.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.70...v0.21.0-rc.71) (2021-12-27)
+
+## [0.21.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.69...v0.21.0-rc.70) (2021-12-27)
+
+## [0.21.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.68...v0.21.0-rc.69) (2021-12-27)
+
+## [0.21.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.67...v0.21.0-rc.68) (2021-12-26)
+
+## [0.21.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.66...v0.21.0-rc.67) (2021-12-26)
+
+## [0.21.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.65...v0.21.0-rc.66) (2021-12-26)
+
+## [0.21.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.64...v0.21.0-rc.65) (2021-12-26)
+
+## [0.21.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.63...v0.21.0-rc.64) (2021-12-26)
+
+## [0.21.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.62...v0.21.0-rc.63) (2021-12-26)
+
+## [0.21.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.61...v0.21.0-rc.62) (2021-12-23)
+
+
+### Bug Fixes
+
+* **styles:** use the theming variable for focus style ([#3007](https://github.com/SAP/fundamental-styles/issues/3007)) ([ec5c239](https://github.com/SAP/fundamental-styles/commit/ec5c2391e7163b4d3c0a7a208a3f111917a126c2))
+
+## [0.21.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.60...v0.21.0-rc.61) (2021-12-23)
+
+
+### Bug Fixes
+
+* **fn:** include missing components from fundamental-next.css ([#3010](https://github.com/SAP/fundamental-styles/issues/3010)) ([9fed161](https://github.com/SAP/fundamental-styles/commit/9fed1614865efd46e32fd05607071164235699a0))
+
+## [0.21.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.59...v0.21.0-rc.60) (2021-12-22)
+
+
+### Bug Fixes
+
+* remove active page link when in long mode ([#3009](https://github.com/SAP/fundamental-styles/issues/3009)) ([c0dab80](https://github.com/SAP/fundamental-styles/commit/c0dab80d392b9c36bc5083dc412e7f0f33c10054))
+
 ## [0.21.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.58...v0.21.0-rc.59) (2021-12-18)
 
 

@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - run: |
-        yarn && yarn build
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - run: npm i
+    - run: npm run build
     - uses: chromaui/action@v1
-      with: 
+      with:
         projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         token: ${{ secrets.GITHUB_TOKEN }}
         buildScriptName: storybook:chromatic
