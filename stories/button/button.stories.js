@@ -23,7 +23,7 @@ export default {
     }
 };
 
-export const primary = () => `
+export const Primary = () => `
     <button class="fd-button">Create</button>
     <button class="fd-button" aria-label="Add to cart"><i class="sap-icon--cart"></i></button>
     <button class="fd-button fd-button--emphasized ">Save</button>
@@ -40,7 +40,7 @@ export const primary = () => `
  * - **Transparent Button** Used for secondary or negative path actions
  */
 
-export const types = () => `<div class="fddocs-container fddocs-button-container"> 
+export const Types = () => `<div class="fddocs-container fddocs-button-container">
         <button class="fd-button">Default Button</button>
         <button class="fd-button fd-button--emphasized">Emphasized Button</button>
         <button class="fd-button fd-button--ghost">Ghost Button</button>
@@ -50,10 +50,11 @@ export const types = () => `<div class="fddocs-container fddocs-button-container
         <button class="fd-button fd-button--transparent">Transparent Button</button>
 </div>`;
 
-types.storyName = 'Button styles';
-types.parameters = {
+Types.storyName = 'Button styles';
+Types.parameters = {
     docs: {
-        storyDescription: `    
+        description: {
+            story: `
 - **Default button** is used for neutral or informative (secondary) actions.
 - **Emphasized button** is used to indicate the primary action on the screen.
 - **Ghost button** is used to trigger secondary actions. If a page already has a primary action, but you also need to highlight the most important action in a content toolbar, use the ghost style.
@@ -61,13 +62,14 @@ types.parameters = {
 - **Negative button** is used to trigger negative semantic actions, such as _Reject_ and should always be accompanied by text.
 - **Attention button** is used to trigger a semantic action that needs attention and should always be accompanied by text.
 - **Transparent button** is used to trigger a negative path action within a header or footer bar, and secondary actions in toolbars.
-        
+
 `
+        }
     }
 };
 
-export const toggle = () => `<h4>Inactive state of toggle button</h4>
-<div class="fddocs-container fddocs-button-container"> 
+export const Toggle = () => `<h4>Inactive state of toggle button</h4>
+<div class="fddocs-container fddocs-button-container">
     <button class="fd-button">Default Toggle</button>
     <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost">Ghost Toggle</button>
@@ -85,7 +87,7 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
     <button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Active (toggled) state of toggle button</h4>
-<div class="fddocs-container fddocs-button-container"> 
+<div class="fddocs-container fddocs-button-container">
     <button class="fd-button fd-button--toggled">Default Toggle</button>
     <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
@@ -103,7 +105,7 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
     <button aria-label="Accept" class="fd-button fd-button--positive fd-button--toggled"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Disabled Toggle button in active state</h4>
-<div class="fddocs-container fddocs-button-container"> 
+<div class="fddocs-container fddocs-button-container">
     <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
     <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
     <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
@@ -121,22 +123,24 @@ export const toggle = () => `<h4>Inactive state of toggle button</h4>
     <button aria-label="Accept" class="fd-button fd-button--positive" disabled><i class="sap-icon--accept"></i></button>
 </div>`;
 
-toggle.storyName = 'Toggle button';
-toggle.parameters = {
+Toggle.storyName = 'Toggle button';
+Toggle.parameters = {
     docs: {
-        storyDescription: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the action to active.'
+        description: {
+            story: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the action to active.'
+        }
     }
 };
 
 
-export const segmentedButton = () => `
+export const SegmentedButton = () => `
     <div class="fddocs-button-container">
         <div class="fd-segmented-button" role="group" aria-label="Group label">
             <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
             <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
             <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
         </div>
-    
+
         <div class="fd-segmented-button" role="group" aria-label="Group label">
             <button class="fd-button fd-button--compact is-selected" aria-pressed="true">Left</button>
             <button class="fd-button fd-button--compact">Middle</button>
@@ -145,46 +149,50 @@ export const segmentedButton = () => `
     </div>
 `;
 
-segmentedButton.storyName = 'Segmented button';
-segmentedButton.parameters = {
+SegmentedButton.storyName = 'Segmented button';
+SegmentedButton.parameters = {
     docs: {
-        storyDescription: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
+        description: {
+            story: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
         <br><br>It can be displayed by using the \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.`
+        }
     }
 };
 
-export const badgeOnButton = () => `
+export const BadgeOnButton = () => `
     <div class="fddocs-button-container">
         <button class="fd-button">
             <span class="fd-button__text">Cozy Badge Button</span>
-            <span class="fd-button__badge">3984</span>   
+            <span class="fd-button__badge">3984</span>
         </button>
         <button class="fd-button" aria-label="Add to cart">
             <i class="sap-icon--cart" role="presentation"></i>
-            <span class="fd-button__badge">3</span>   
+            <span class="fd-button__badge">3</span>
         </button>
         <button class="fd-button fd-button--compact">
             <span class="fd-button__text">Compact Badge Button</span>
-            <span class="fd-button__badge">654</span>   
+            <span class="fd-button__badge">654</span>
         </button>
         <button class="fd-button fd-button--compact" aria-label="Add to cart">
             <i class="sap-icon--cart" role="presentation"></i>
-            <span class="fd-button__badge">12</span>   
+            <span class="fd-button__badge">12</span>
         </button>
     </div>
 `;
 
-badgeOnButton.storyName = 'Button With Badge';
-badgeOnButton.parameters = {
+BadgeOnButton.storyName = 'Button With Badge';
+BadgeOnButton.parameters = {
     docs: {
-        storyDescription: `Button gets a badge in cases of collecting a number of items from various pages in order to
-        trigger an action. <br/> 
+        description: {
+            story: `Button gets a badge in cases of collecting a number of items from various pages in order to
+        trigger an action. <br/>
         Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge. <br/>
         <b>Badges cannot contain more characters than 4</b>.`
+        }
     }
 };
 
-export const menuButton = () => `
+export const MenuButton = () => `
     <div class="fddocs-button-container">
         <button class="fd-button fd-button--menu">
             <span class="fd-button__text">Action Button</span>
@@ -280,22 +288,24 @@ export const menuButton = () => `
     </div>
 `;
 
-menuButton.storyName = 'Menu button';
-menuButton.parameters = {
+MenuButton.storyName = 'Menu button';
+MenuButton.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.'
+        description: {
+            story: 'The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.'
+        }
     }
 };
 
-export const splitMenuButton = () => `
+export const SplitMenuButton = () => `
     <div class="fddocs-button-container">
         <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
           <button class="fd-button" aria-label="button">
             <span class="fd-button-split__text">Button with a big amount of text</span>
           </button>
           <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true"
           id="t4c0o273">
             <nav class="fd-menu">
                 <ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -313,15 +323,15 @@ export const splitMenuButton = () => `
             </nav>
           </div>
         </div>
-        
+
         <div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
           <button class="fd-button fd-button--emphasized" aria-label="button">
             <span class="fd-button-split__text">Button with text</span>
           </button>
-          <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732" 
+          <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732"
           aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-        
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true"
             id="t4c0o2732">
             <nav class="fd-menu">
                 <ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -339,7 +349,7 @@ export const splitMenuButton = () => `
             </nav>
           </div>
         </div>
-        
+
         <div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
           <button class="fd-button fd-button--transparent" aria-label="button">
             <span class="fd-button-split__text">
@@ -347,7 +357,7 @@ export const splitMenuButton = () => `
             </span>
          </button>
           <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true" 
+          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true"
             id="t4c0o27322">
             <nav class="fd-menu">
                 <ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -368,11 +378,12 @@ export const splitMenuButton = () => `
     </div>
 `;
 
-splitMenuButton.storyName = 'Split menu button';
-splitMenuButton.parameters = {
+SplitMenuButton.storyName = 'Split menu button';
+SplitMenuButton.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available. 
+        description: {
+            story: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available.
 <br><br> Note: If the default action is displayed as an icon only, all the menu items must contain icons.
 
 **The split menu button can behave in two different ways:**
@@ -382,10 +393,11 @@ splitMenuButton.parameters = {
 
 The split menu button can be displayed by using \`fd-button-split fd-has-margin-right-small\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
 `
+        }
     }
 };
 
-export const sizes = () => `
+export const Sizes = () => `
     <div class="fddocs-button-container">
         <button class="fd-button">Save</button>
         <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
@@ -407,17 +419,19 @@ export const sizes = () => `
     </div>
 `;
 
-sizes.storyName = 'Button sizes';
-sizes.parameters = {
+Sizes.storyName = 'Button sizes';
+Sizes.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `
+        description: {
+            story: `
 The buttons in the first row are displayed in cozy size, which is the default sizing and does not require a modifier. The compact buttons shown in the second row, however, can be displayed by adding the \`–compact\` modifier class to the element.
 `
+        }
     }
 };
 
-export const iconAndText = () => `
+export const IconAndText = () => `
     <div class="fddocs-button-container">
         <button class="fd-button fd-button--emphasized">Add to Cart</button>
         <button class="fd-button">Add to Cart</button>
@@ -437,30 +451,33 @@ export const iconAndText = () => `
     </div>
 `;
 
-iconAndText.storyName = 'Icon or text';
-iconAndText.parameters = {
+IconAndText.storyName = 'Icon or text';
+IconAndText.parameters = {
     docs: {
         iframeHeight: 150,
-        storyDescription: `
-These buttons contain either icons **or** text, as it is highly recommended not to combine the two. 
+        description: {
+            story: `
+These buttons contain either icons **or** text, as it is highly recommended not to combine the two.
 
 **Use icon buttons for basic actions such as:**
 
 - _Edit_
 - _Back to previous screen_
-- _Remove from list_ etc. 
+- _Remove from list_ etc.
 
 
 Make sure the default accessibility text for the icon is appropriate for your use case. If the text is not ideal, define an app-specific accessibility text.
-        
 
-All button styles can be paired with an icon. You can use the \`sap-icon--{icon-name}\` class to attach an icon to the button.
+
+All button styles can be paired with an icon. You can use the \`sap-icon--{icon-name }
+}\` class to attach an icon to the button.
 The full list of all the available icons can be found on the <a href="icon.html">Icon</a> page.
 `
+        }
     }
 };
 
-export const buttonStates = () => `
+export const ButtonStates = () => `
     <div class="fddocs-button-container">
         <button class="fd-button fd-button--emphasized">Normal State</button>
         <button class="fd-button fd-button--emphasized is-selected" >Selected State</button>
@@ -512,11 +529,12 @@ export const buttonStates = () => `
     </div>
 `;
 
-buttonStates.storyName = 'Button states';
-buttonStates.parameters = {
+ButtonStates.storyName = 'Button states';
+ButtonStates.parameters = {
     docs: {
         iframeHeight: 450,
-        storyDescription: `
+        description: {
+            story: `
 These button types indicate different states: normal, selected, disabled and focusable disabled.
 
 - **Normal**: The button’s default state. It can be selected to perform a corresponding action.
@@ -524,29 +542,32 @@ These button types indicate different states: normal, selected, disabled and foc
 - **Disabled**: It cannot be selected. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility.
 - **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility without using the \`disabled\` property. By adding the hidden \`_instructions\` element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the \`aria-live\` property.
 `
+        }
     }
 };
 
-export const focusableDisabled = () => `
+export const FocusableDisabled = () => `
     <div class="fddocs-button-container">
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF" class="fd-button is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
     </div>
 `;
 
-focusableDisabled.storyName = 'Focusable disabled';
-focusableDisabled.parameters = {
+FocusableDisabled.storyName = 'Focusable disabled';
+FocusableDisabled.parameters = {
     docs: {
-        storyDescription: `
-The disabled button can be focusable by adding the \`aria-disabled\` attribute. To enable the focus ring in a focusable disabled button, ensure that \`is-disabled\` is present while \`disabled\` is not. 
+        description: {
+            story: `
+The disabled button can be focusable by adding the \`aria-disabled\` attribute. To enable the focus ring in a focusable disabled button, ensure that \`is-disabled\` is present while \`disabled\` is not.
 
-####Accessibility 
+####Accessibility
 When adding this attribute, make sure to not use the \`disabled\` property so that the button is both focusable and readable by screen readers.
-        
-When the state of the button has changed, add \`aria-live=”assertive”\` to prompt the screen reader to read the helper text out loud. 
-        
+
+When the state of the button has changed, add \`aria-live=”assertive”\` to prompt the screen reader to read the helper text out loud.
+
 Note: For the text to be read out loud by screen readers, a helper text has been added with \`aria-describedby\` matching the \`id\` of the paragraph element with the \`_instructions\` element. The element uses the \`screen-reader-only\` styling so that it is not visible.
-        
+
 `
+        }
     }
 };

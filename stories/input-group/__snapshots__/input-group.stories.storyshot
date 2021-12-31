@@ -190,7 +190,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
           aria-label="Navigation"
           class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
         >
-           
+          
                 
           <i
             class="sap-icon--navigation-down-arrow"
@@ -248,7 +248,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
           aria-label="Navigation"
           class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact"
         >
-           
+          
                 
           <i
             class="sap-icon--navigation-down-arrow"
@@ -1488,7 +1488,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group  "
@@ -1524,7 +1524,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group  "
@@ -1576,7 +1576,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group  "
@@ -1612,7 +1612,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group  "
@@ -1648,7 +1648,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group  "
@@ -1705,7 +1705,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
     Disabled
   </h3>
   
-                
+
 
   <div
     class="fd-input-group   is-disabled"
@@ -1741,7 +1741,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group   is-disabled"
@@ -1777,7 +1777,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group   is-disabled"
@@ -1829,7 +1829,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group   is-disabled"
@@ -1865,7 +1865,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group   is-disabled"
@@ -1901,7 +1901,7 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
                 
   <br />
   
-                
+
 
   <div
     class="fd-input-group   is-disabled"

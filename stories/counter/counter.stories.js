@@ -8,30 +8,34 @@ export default {
 };
 
 
-export const primary = () => `
+export const Primary = () => `
 <span class="fd-counter" aria-label="Unread count">5</span>
 <span class="fd-counter" aria-label="Unread count">25</span>
 <span class="fd-counter" aria-label="Unread count">101</span>
 <span class="fd-counter" aria-label="Unread count">999+</span>
 `;
 
-primary.storyName = 'Standalone';
-primary.parameters = {
+Primary.storyName = 'Standalone';
+Primary.parameters = {
     docs: {
-        storyDescription: 'Counter used as a standlone component'
+        description: {
+            story: 'Counter used as a standlone component'
+        }
     }
 };
 
-export const paragraph = () => `<p>Lorem ipsum <span class="fd-counter" aria-label="Unread count">5</span> </p>
+export const Paragraph = () => `<p>Lorem ipsum <span class="fd-counter" aria-label="Unread count">5</span> </p>
 `;
-paragraph.storyName = 'Text';
-paragraph.parameters = {
+Paragraph.storyName = 'Text';
+Paragraph.parameters = {
     docs: {
-        storyDescription: 'Counter inserted in paragraph'
+        description: {
+            story: 'Counter inserted in paragraph'
+        }
     }
 };
 
-export const tabs = () => `<ul class="fd-tabs" role="tablist">
+export const Tabs = () => `<ul class="fd-tabs" role="tablist">
     <li class="fd-tabs__item" role="tab">
         <a class="fd-tabs__link" href="#AvcVC566">Link
         <span class="fd-counter" aria-label="Unread count">25</span></a>
@@ -50,14 +54,15 @@ export const tabs = () => `<ul class="fd-tabs" role="tablist">
 </ul>
 `;
 
-tabs.storyName = 'Tabs';
-tabs.parameters = {
+Tabs.parameters = {
     docs: {
-        storyDescription: 'Counter added to a tab'
+        description: {
+            story: 'Counter added to a tab'
+        }
     }
 };
 
-export const notifier = () => `
+export const Notifier = () => `
 <button class="fd-button fd-button--transparent" aria-label="Notifications">
     <i class="sap-icon--bell"></i>
     <span class="fd-counter fd-counter--notification" aria-label="Unread count">1</span>
@@ -79,9 +84,11 @@ export const notifier = () => `
 </button>
 `;
 
-notifier.storyName = 'Notification';
-notifier.parameters = {
+Notifier.storyName = 'Notification';
+Notifier.parameters = {
     docs: {
-        storyDescription: 'Counter with `--notification` modifier'
+        description: {
+            story: 'Counter with `--notification` modifier'
+        }
     }
 };

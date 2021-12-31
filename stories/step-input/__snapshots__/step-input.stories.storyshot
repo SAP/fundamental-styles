@@ -44,9 +44,9 @@ exports[`Storyshots Components/StepInput Compact 1`] = `
         
       <input
         class="
-                fd-input 
-                fd-input--compact 
-                fd-input--no-number-spinner 
+                fd-input
+                fd-input--compact
+                fd-input--no-number-spinner
                 fd-step-input__input
         "
         id="step-1"
@@ -58,7 +58,7 @@ exports[`Storyshots Components/StepInput Compact 1`] = `
       <button
         aria-label="Step up"
         class="
-                fd-button 
+                fd-button
                 fd-button--compact
                 fd-button--transparent
                 fd-step-input__button"
@@ -139,7 +139,7 @@ exports[`Storyshots Components/StepInput Default 1`] = `
     <button
       aria-label="Step up"
       class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
       onclick="stepInputValue('step-3', 'up');"
@@ -200,8 +200,8 @@ exports[`Storyshots Components/StepInput Disabled 1`] = `
     
     <input
       class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     "
       disabled=""
@@ -214,7 +214,7 @@ exports[`Storyshots Components/StepInput Disabled 1`] = `
     <button
       aria-label="Step up"
       class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
       onclick="stepInputValue('step-13', 'up');"
@@ -275,8 +275,8 @@ exports[`Storyshots Components/StepInput Focused 1`] = `
     
     <input
       class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     "
       id="step-20"
@@ -288,7 +288,7 @@ exports[`Storyshots Components/StepInput Focused 1`] = `
     <button
       aria-label="Step up"
       class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
       onclick="stepInputValue('step-20', 'up');"
@@ -354,8 +354,8 @@ exports[`Storyshots Components/StepInput Read-only 1`] = `
         
       <input
         class="
-                fd-input 
-                fd-input--no-number-spinner 
+                fd-input
+                fd-input--no-number-spinner
                 fd-step-input__input
         "
         id="step-14"
@@ -368,7 +368,7 @@ exports[`Storyshots Components/StepInput Read-only 1`] = `
       <button
         aria-label="Step up"
         class="
-                fd-button 
+                fd-button
                 fd-button--transparent
                 fd-step-input__button"
         onclick="stepInputValue('step-14', 'up');"
@@ -439,8 +439,8 @@ exports[`Storyshots Components/StepInput States 1`] = `
     
     <input
       class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     "
       id="step-5"
@@ -452,7 +452,7 @@ exports[`Storyshots Components/StepInput States 1`] = `
     <button
       aria-label="Step up"
       class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
       onclick="stepInputValue('step-5', 'up');"
@@ -513,8 +513,8 @@ exports[`Storyshots Components/StepInput States 1`] = `
     
     <input
       class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     "
       id="step-6"
@@ -526,7 +526,7 @@ exports[`Storyshots Components/StepInput States 1`] = `
     <button
       aria-label="Step up"
       class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
       onclick="stepInputValue('step-6', 'up');"
@@ -586,8 +586,8 @@ exports[`Storyshots Components/StepInput States 1`] = `
     
     <input
       class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     "
       id="step-7"
@@ -599,7 +599,7 @@ exports[`Storyshots Components/StepInput States 1`] = `
     <button
       aria-label="Step up"
       class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
       onclick="stepInputValue('step-7', 'up');"
@@ -661,8 +661,8 @@ exports[`Storyshots Components/StepInput States 1`] = `
     
     <input
       class="
-        fd-input 
-        fd-input--no-number-spinner 
+        fd-input
+        fd-input--no-number-spinner
         fd-step-input__input
     "
       id="step-8"
@@ -674,7 +674,7 @@ exports[`Storyshots Components/StepInput States 1`] = `
     <button
       aria-label="Step up"
       class="
-        fd-button 
+        fd-button
         fd-button--transparent
         fd-step-input__button"
       onclick="stepInputValue('step-8', 'up');"

@@ -57,7 +57,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
         Icon-Only
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -461,7 +461,7 @@ exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
         Nested Button
       </b>
     </div>
-     
+    
 
   </div>
   
@@ -670,7 +670,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
         Default
       </b>
     </div>
-       
+    
 
   </div>
   
@@ -960,14 +960,14 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
         Transparent
       </b>
     </div>
-     
+    
     
     <div>
       <b>
         Neutral
       </b>
     </div>
-      
+    
 
   </div>
   
@@ -2507,7 +2507,7 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
         Default
       </b>
     </div>
-       
+    
 
   </div>
   

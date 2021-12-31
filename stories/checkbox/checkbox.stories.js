@@ -37,7 +37,7 @@ const localStyles = `
 </style>
 `;
 
-export const desktop = () => `
+export const Desktop = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Desktop (compact) checkboxes</legend>
@@ -94,17 +94,18 @@ ${localStyles}
 </fieldset>
 `;
 
-desktop.storyName = 'Desktop';
-desktop.parameters = {
+Desktop.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default). 
+        description: {
+            story: `A checkbox can be displayed in two different sizes desktop (compact) and mobile (default).
 On desktop screens, the checkbox appears smaller and uses the \`fd-checkbox__label--compact\` modifier class.
         `
+        }
     }
 };
 
-export const required = () => `
+export const Required = () => `
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Required checkbox</legend>
     <div class="fd-form-group">
@@ -119,16 +120,18 @@ export const required = () => `
     </div>
 </fieldset>
 `;
-required.storyName = 'Required';
-required.parameters = {
+
+Required.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `To show that a checkbox input is required, use the \`fd-checkbox__label--required\` class.
+        description: {
+            story: `To show that a checkbox input is required, use the \`fd-checkbox__label--required\` class.
         `
+        }
     }
 };
 
-export const mobile = () => `
+export const Mobile = () => `
 ${localStyles}
 <fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Mobile checkboxes</legend>
@@ -185,16 +188,17 @@ ${localStyles}
 </fieldset>
 `;
 
-mobile.storyName = 'Mobile';
-mobile.parameters = {
+Mobile.parameters = {
     docs: {
         iframeHeight: 330,
-        storyDescription: `A checkbox can display larger so users can easily select options on a mobile screen. This is considered the default size for checkbox.
+        description: {
+            story: `A checkbox can display larger so users can easily select options on a mobile screen. This is considered the default size for checkbox.
         `
+        }
     }
 };
 
-export const inline = () => `<fieldset class="fd-fieldset">
+export const Inline = () => `<fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Inline checkboxes</legend>
     <div class="fd-form-group fd-form-group--inline">
         <div class="fd-form-group__item fd-form-item">
@@ -225,15 +229,16 @@ export const inline = () => `<fieldset class="fd-fieldset">
 </fieldset>
 `;
 
-inline.storyName = 'Inline';
-inline.parameters = {
+Inline.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
+        description: {
+            story: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
+        }
     }
 };
 
-export const states = () => `
+export const States = () => `
 ${localStyles}
 <div class="checkbox-example-container">
     <fieldset class="fd-fieldset">
@@ -418,11 +423,11 @@ ${localStyles}
 </div>
 `;
 
-states.storyName = 'States';
-states.parameters = {
+States.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
+        description: {
+            story: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
 
 | States | Class |
 | :----------------- | :------------------ |
@@ -432,5 +437,6 @@ states.parameters = {
 | Information | \`fd-checkbox is-information\` |
 | Disabled | \`fd-checkbox is-disabled\` |
 `
+        }
     }
 };

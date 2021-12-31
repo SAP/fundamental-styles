@@ -1,5 +1,8 @@
 {
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended",
+      "plugin:storybook/recommended"
+    ],
     "parser": "babel-eslint",
     "env": {
         "node": true,

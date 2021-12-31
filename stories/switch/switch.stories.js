@@ -7,25 +7,25 @@ The switch mimics a physical switch, allowing users to set individual features (
 
 ##Usage
 **Use the switch if:**
-        
+
 -	You want to enable users to set something as active or inactive (for example, within a **Dialog**).
 -	You need to clearly show the mode or state of a setting.
 -	The change takes immediate effect.
 
 
 **Do not use the switch if:**
-        
+
 -	The user has to choose several options or perform extra steps for changes to become effective.
 -	The setting requires a confirmation action or _Submit_ button before it can take effect. In this case, use a **Checkbox** instead.
 -	It’s not clear if the control is showing a state or an action. In this case, use a **Checkbox** instead.
-        
+
   `,
         components: ['form-label', 'switch', 'icon', 'form']
     }
 };
 
 
-export const basic = () => `
+export const Basic = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label1">Default (Cozy) Switch</div>
@@ -82,21 +82,23 @@ export const basic = () => `
 </div>
 `;
 
-basic.storyName = 'Default';
-basic.parameters = {
+Basic.storyName = 'Default';
+Basic.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The default switch displays what resembles a physical switch that toggles between an active and inactive state. It is displayed in cozy mode, which is ideal for mobile and small tablet screens. The switch should always be accompanied by a label that indicates its purpose.
+        description: {
+            story: `The default switch displays what resembles a physical switch that toggles between an active and inactive state. It is displayed in cozy mode, which is ideal for mobile and small tablet screens. The switch should always be accompanied by a label that indicates its purpose.
         `
+        }
     }
 };
 
-export const withText = () => `
+export const WithText = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
         <div class="fd-form-label" id="label3">With inline text (off)</div>
         <label class="fd-switch">
-            <span class="fd-switch__text">Off</span> 
+            <span class="fd-switch__text">Off</span>
             <span class="fd-switch__control">
                 <input class="fd-switch__input" type="checkbox" name="" aria-labelledby="label3" value="" id="y21Y677251">
                 <div class="fd-switch__slider">
@@ -110,7 +112,7 @@ export const withText = () => `
     <div class="fd-form-item">
         <div class="fd-form-label" id="label4">With inline text (on)</div>
         <label class="fd-switch">
-            <span class="fd-switch__text">On</span> 
+            <span class="fd-switch__text">On</span>
             <span class="fd-switch__control">
                 <input class="fd-switch__input" checked type="checkbox" aria-labelledby="label4" name="" value="" id="y21653431">
                 <div class="fd-switch__slider">
@@ -124,7 +126,7 @@ export const withText = () => `
     <div class="fd-form-item">
         <div class="fd-form-label" id="label9">Disabled with inline text (on)</div>
         <label class="fd-switch is-disabled">
-            <span class="fd-switch__text">On</span> 
+            <span class="fd-switch__text">On</span>
             <span class="fd-switch__control">
                 <input class="fd-switch__input" checked type="checkbox" aria-labelledby="label9" name="" value="" id="y29653431">
                 <div class="fd-switch__slider">
@@ -137,18 +139,20 @@ export const withText = () => `
     </div>
 </div>`;
 
-withText.storyName = 'Optional text';
-withText.parameters = {
+WithText.storyName = 'Optional text';
+WithText.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `As mentioned in the previous example, a switch should always be accompanied by a label.
+        description: {
+            story: `As mentioned in the previous example, a switch should always be accompanied by a label.
 
         (code needs fixing)
         `
+        }
     }
 };
 
-export const semanticSwitch = () => `
+export const SemanticSwitch = () => `
 <div class="fd-form-group">
     <div class="fd-form-item">
         <label class="fd-form-label" id="label5">Semantic switch</label>
@@ -182,11 +186,13 @@ export const semanticSwitch = () => `
     </div>
 </div>`;
 
-semanticSwitch.storyName = 'States';
-semanticSwitch.parameters = {
+SemanticSwitch.storyName = 'States';
+SemanticSwitch.parameters = {
     docs: {
         iframeHeight: 350,
-        storyDescription: `The switch can be displayed with semantic colors, such as green for active and red for inactive. To display a semantic switch, add the \`fd-switch—semantic\` modifier class to the main element.
+        description: {
+            story: `The switch can be displayed with semantic colors, such as green for active and red for inactive. To display a semantic switch, add the \`fd-switch—semantic\` modifier class to the main element.
         `
+        }
     }
 };

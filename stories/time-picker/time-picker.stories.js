@@ -11,7 +11,7 @@ This component mostly relies on the CSS of other components and has no CSS of it
     }
 };
 
-export const cozyAndCompactMode = () => `<div class="fd-container" style="height:550px">
+export const CozyAndCompactMode = () => `<div class="fd-container" style="height:550px">
 <div class="fd-row">
   <div class="fd-col fd-col--6">
     <label for="cozyTimepicker">Cozy Timepicker</label><br />
@@ -226,13 +226,13 @@ export const cozyAndCompactMode = () => `<div class="fd-container" style="height
 </div>
 `;
 
-cozyAndCompactMode.parameters = {
+CozyAndCompactMode.parameters = {
     docs: {
         iframeHeight: 580
     }
 };
 
-export const tabletMode = () => `<div style="min-height: 580px;">
+export const TabletMode = () => `<div style="min-height: 580px;">
     <label for="tabletTimepicker">Cozy Timepicker</label><br />
     <div class="fd-popover fd-popover--no-arrow">
         <div class="fd-popover__control">
@@ -270,7 +270,7 @@ export const tabletMode = () => `<div style="min-height: 580px;">
                             <span class="fd-time__unit">01</span>
                         </li>
                         <li class="fd-time__item">
-                            <span class="fd-time__unit">02</span>                    
+                            <span class="fd-time__unit">02</span>
                         </li>
                         <li class="fd-time__item">
                             <span class="fd-time__unit">03</span>
@@ -341,7 +341,7 @@ export const tabletMode = () => `<div style="min-height: 580px;">
 </div>
 `;
 
-tabletMode.parameters = {
+TabletMode.parameters = {
     docs: {
         iframeHeight: 550
     }

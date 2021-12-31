@@ -48,7 +48,7 @@ To change the background color of the button, add the \`fd-avatar-group__more-bu
     }
 };
 
-export const individualType = () => `<div class="fd-avatar-group fd-avatar-group--individual-type fd-avatar-group--s">
+export const IndividualType = () => `<div class="fd-avatar-group fd-avatar-group--individual-type fd-avatar-group--s">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_5z28edb');">
@@ -62,7 +62,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                         <div class="fd-bar__element">Business Card</div>
                     </div>
                 </div>
-        
+
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
@@ -109,7 +109,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                         <div class="fd-bar__element">Business Card</div>
                     </div>
                 </div>
-            
+
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
@@ -153,7 +153,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                         <div class="fd-bar__element">Business Card</div>
                     </div>
                 </div>
-            
+
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
@@ -198,7 +198,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                         <div class="fd-bar__element">Business Card</div>
                     </div>
                 </div>
-            
+
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
@@ -241,7 +241,7 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
                <bdi class="fd-button__text fd-avatar-group__button-text">+4</bdi>
             </button>
         </div>
-        
+
         <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_more_aoiwjth" style="width: 245px;">
             <div class="fd-popover__wrapper">
                 <div class="fd-popover__body-header">
@@ -273,16 +273,18 @@ export const individualType = () => `<div class="fd-avatar-group fd-avatar-group
     </div>
 </div>`;
 
-individualType.parameters = {
+IndividualType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Individual type of Avatar Group use the `--individual-type` modifier class <i>(`fd-avatar-group--individual-type` class)<i>.'
+        description: {
+            story: 'To use Individual type of Avatar Group use the `--individual-type` modifier class <i>(`fd-avatar-group--individual-type` class)<i>.'
+        }
     }
 };
 
 
 
-export const groupType = () => `<div class="fd-popover">
+export const GroupType = () => `<div class="fd-popover">
     <div class="fd-popover__control fd-avatar-group__popover-control"
          role="button"
          tabindex="0"
@@ -313,13 +315,13 @@ export const groupType = () => `<div class="fd-popover">
             <div class="fd-avatar-group__item">
                 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" alt="John Doe" title="John Doe"></span>
             </div>
-        
+
             <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m" role="button" tabindex="-1">
                 <bdi class="fd-button__text fd-avatar-group__button-text">+8</bdi>
             </button>
         </div>
     </div>
-    
+
     <div class="fd-popover__body" aria-hidden="false" id="popover_avatar-group_tztuj" style="width: 332px;">
         <div class="fd-popover__wrapper" style="max-height: 200px; overflow-x: hidden">
             <div class="fd-popover__body-header">
@@ -329,7 +331,7 @@ export const groupType = () => `<div class="fd-popover">
                     </div>
                 </div>
             </div>
-        
+
             <div class="fd-avatar-group__overflow-body">
                 <div class="fd-avatar-group__item">
                     <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Wendy Wallace" title="Wendy Wallace">WW</span>
@@ -390,10 +392,12 @@ export const groupType = () => `<div class="fd-popover">
 </div>
 `;
 
-groupType.parameters = {
+GroupType.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'To use Group type of Avatar Group use the `--group-type` modifier class <i>(`fd-avatar-group--group-type` class)<i>.'
+        description: {
+            story: 'To use Group type of Avatar Group use the `--group-type` modifier class <i>(`fd-avatar-group--group-type` class)<i>.'
+        }
     }
 };
 

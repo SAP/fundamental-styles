@@ -7,7 +7,7 @@ A title component whose semantic level and visual appearance can be set separate
     }
 };
 
-export const levels = () => `<h1 class="fn-title fn-title--h1">Title Heading 1</h1>
+export const Levels = () => `<h1 class="fn-title fn-title--h1">Title Heading 1</h1>
 <br>
 <h2 class="fn-title fn-title--h2">Title Heading 2</h2>
 <br>
@@ -20,15 +20,17 @@ export const levels = () => `<h1 class="fn-title fn-title--h1">Title Heading 1</
 <h6 class="fn-title fn-title--h6">Title Heading 6</h6>
 `;
 
-levels.storyName = 'Semantic Level';
-levels.parameters = {
+Levels.storyName = 'Semantic Level';
+Levels.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'There are 6 semantic levels of a heading element. There should only be one H1 on a page, and headings should only appear in ascending order without skipping a level; i.e. even if there are only 3 levels on a page, the order must be H1-H2-H3, and no other levels used.'
+        description: {
+            story: 'There are 6 semantic levels of a heading element. There should only be one H1 on a page, and headings should only appear in ascending order without skipping a level; i.e. even if there are only 3 levels on a page, the order must be H1-H2-H3, and no other levels used.'
+        }
     }
 };
 
-export const visualLevel = () => `<h1 class="fn-title fn-title--h6">Title Heading 1</h1>
+export const VisualLevel = () => `<h1 class="fn-title fn-title--h6">Title Heading 1</h1>
 <br>
 <h2 class="fn-title fn-title--h5">Title Heading 2</h2>
 <br>
@@ -41,16 +43,17 @@ export const visualLevel = () => `<h1 class="fn-title fn-title--h6">Title Headin
 <h6 class="fn-title fn-title--h1">Title Heading 6</h6>
 `;
 
-visualLevel.storyName = 'Visual Level';
-visualLevel.parameters = {
+VisualLevel.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: 'If a design requires it, the visual level can be set to something different than the semantic level. This allows the sequential order to be maintained while providing flexibility in appearance.'
+        description: {
+            story: 'If a design requires it, the visual level can be set to something different than the semantic level. This allows the sequential order to be maintained while providing flexibility in appearance.'
+        }
     }
 };
 
 
-export const wrapping = () => `<div style="width: 600px">
+export const Wrapping = () => `<div style="width: 600px">
     <h1 class="fn-title fn-title--h1 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h1>
     <br><br><br>
     <h2 class="fn-title fn-title--h2 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h2>
@@ -65,10 +68,12 @@ export const wrapping = () => `<div style="width: 600px">
 </div>
 `;
 
-wrapping.storyName = 'Text Wrapping';
-wrapping.parameters = {
+Wrapping.storyName = 'Text Wrapping';
+Wrapping.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: 'Add the `--wrap` modifier to cause the overflow text to wrap instead.'
+        description: {
+            story: 'Add the `--wrap` modifier to cause the overflow text to wrap instead.'
+        }
     }
 };

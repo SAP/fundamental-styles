@@ -1001,7 +1001,7 @@ exports[`Storyshots Components/Status Indicator Sizes 1`] = `
           
 		
         </svg>
-        	
+        
 	
       </svg>
       
@@ -1096,7 +1096,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.8"
@@ -1265,7 +1265,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.5"
@@ -1434,7 +1434,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.5"
@@ -1603,7 +1603,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Angular fi
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.4"
@@ -1988,7 +1988,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
           
 		
         </svg>
-        	
+        
 	
       </svg>
       
@@ -2288,7 +2288,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Label 1`] 
           
 		
         </svg>
-        	
+        
 	
       </svg>
       
@@ -2391,7 +2391,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.8"
@@ -2559,7 +2559,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Linear fil
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.8"
@@ -2735,7 +2735,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.3"
@@ -2901,7 +2901,7 @@ exports[`Storyshots Components/Status Indicator Status Indicator With Radial fil
 					
               </stop>
               
-					
+
 					
               <stop
                 offset="0.3"

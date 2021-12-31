@@ -29,7 +29,7 @@ const localStyles = `
 </style>
 `;
 
-export const genericTag = () => `${localStyles}
+export const GenericTag = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-generic-tag" tabindex="0">
@@ -63,14 +63,13 @@ export const genericTag = () => `${localStyles}
 </div>
 `;
 
-genericTag.storyName = 'Generic Tag';
-genericTag.parameters = {
+GenericTag.parameters = {
     docs: {
         iframeHeight: 500
     }
 };
 
-export const genericTagPositive = () => `${localStyles}
+export const GenericTagPositive = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-generic-tag fn-generic-tag--positive" tabindex="0">
@@ -119,16 +118,17 @@ export const genericTagPositive = () => `${localStyles}
 </div>
 `;
 
-genericTagPositive.storyName = 'Generic Tag Positive';
-genericTagPositive.parameters = {
+GenericTagPositive.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `Add the \`.fn-generic-tag--positive\` modifier class to the \`.fn-generic-tag\` base class for positive generic tag.
+        description: {
+            story: `Add the \`.fn-generic-tag--positive\` modifier class to the \`.fn-generic-tag\` base class for positive generic tag.
 `
+        }
     }
 };
 
-export const genericTagCritical = () => `${localStyles}
+export const GenericTagCritical = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-generic-tag fn-generic-tag--critical" tabindex="0">
@@ -177,15 +177,16 @@ export const genericTagCritical = () => `${localStyles}
 </div>
 `;
 
-genericTagCritical.storyName = 'Generic Tag Critical';
-genericTagCritical.parameters = {
+GenericTagCritical.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Add the `.fn-generic-tag--critical` modifier class to the `.fn-generic-tag` base class for critical generic tag.'
+        description: {
+            story: 'Add the `.fn-generic-tag--critical` modifier class to the `.fn-generic-tag` base class for critical generic tag.'
+        }
     }
 };
 
-export const genericTagNegative = () => `${localStyles}
+export const GenericTagNegative = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-generic-tag fn-generic-tag--negative" tabindex="0">
@@ -234,15 +235,16 @@ export const genericTagNegative = () => `${localStyles}
 </div>
 `;
 
-genericTagNegative.storyName = 'Generic Tag Negative';
-genericTagNegative.parameters = {
+GenericTagNegative.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Add the `.fn-generic-tag--negative` modifier class to the `.fn-generic-tag` base class for negative generic tag.'
+        description: {
+            story: 'Add the `.fn-generic-tag--negative` modifier class to the `.fn-generic-tag` base class for negative generic tag.'
+        }
     }
 };
 
-export const genericTagInfo = () => `${localStyles}
+export const GenericTagInfo = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>normal</b></div>
     <div class="fn-generic-tag fn-generic-tag--info" tabindex="0">
@@ -291,10 +293,11 @@ export const genericTagInfo = () => `${localStyles}
 </div>
 `;
 
-genericTagInfo.storyName = 'Generic Tag Info';
-genericTagInfo.parameters = {
+GenericTagInfo.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Add the `.fn-generic-tag--info` modifier class to the `.fn-generic-tag` base class for info generic tag.'
+        description: {
+            story: 'Add the `.fn-generic-tag--info` modifier class to the `.fn-generic-tag` base class for info generic tag.'
+        }
     }
 };

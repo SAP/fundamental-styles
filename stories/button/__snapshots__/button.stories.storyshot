@@ -19,7 +19,7 @@ exports[`Storyshots Components/Button Button styles 1`] = `
 <div
   class="fddocs-container fddocs-button-container"
 >
-   
+  
         
   <button
     class="fd-button"
@@ -139,7 +139,7 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
   <div
     class="fddocs-container fddocs-button-container"
   >
-     
+    
     
     <button
       class="fd-button"
@@ -248,7 +248,7 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
   <div
     class="fddocs-container fddocs-button-container"
   >
-     
+    
     
     <button
       class="fd-button fd-button--toggled"
@@ -357,7 +357,7 @@ exports[`Storyshots Components/Button Toggle button 1`] = `
   <div
     class="fddocs-container fddocs-button-container"
   >
-     
+    
     
     <button
       class="fd-button fd-button--toggled"

@@ -39,7 +39,7 @@ Modifier/Class | Description
     }
 };
 
-export const standard = () => `<h4>Default mode</h4>
+export const Standard = () => `<h4>Default mode</h4>
 <ul class="fd-list fd-list--byline fd-upload-collection" role="list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
         <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -180,16 +180,18 @@ export const standard = () => `<h4>Default mode</h4>
 
 `;
 
-standard.storyName = 'Default';
+Standard.storyName = 'Default';
 
-standard.parameters = {
+Standard.parameters = {
     docs: {
         iframeHeight: 785,
-        storyDescription: 'The default upload collection.'
+        description: {
+            story: 'The default upload collection.'
+        }
     }
 };
 
-export const edit = () => `
+export const Edit = () => `
 <h4>Edit Mode</h4>
 
 <ul class="fd-list fd-list--byline fd-upload-collection" role="list">
@@ -312,16 +314,16 @@ export const edit = () => `
 
 `;
 
-edit.storyName = 'Edit';
-
-edit.parameters = {
+Edit.parameters = {
     docs: {
         iframeHeight: 785,
-        storyDescription: 'Users can activate edit mode where the file name can be changed.'
+        description: {
+            story: 'Users can activate edit mode where the file name can be changed.'
+        }
     }
 };
 
-export const noData = () => `
+export const NoData = () => `
 <div style="height: 600px; width: 100%;">
   <div class="fd-message-page">
     <div class="fd-message-page__container">
@@ -341,11 +343,11 @@ export const noData = () => `
 </div>
 `;
 
-noData.storyName = 'No Data';
-
-noData.parameters = {
+NoData.parameters = {
     docs: {
         iframeHeight: 785,
-        storyDescription: 'Use a message page component when the user has yet to upload any files.'
+        description: {
+            story: 'Use a message page component when the user has yet to upload any files.'
+        }
     }
 };

@@ -501,7 +501,7 @@ exports[`Storyshots Components/Toolbar Overflow 1`] = `
             <i
               class="sap-icon--overflow"
             />
-                
+            
                 
           </button>
           

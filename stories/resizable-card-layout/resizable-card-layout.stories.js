@@ -2,7 +2,7 @@ export default {
     title: 'Layouts/Resizable Card Layout',
     parameters: {
         description: `The resizable card layout is a layout for the overview page. It enables users to define a personalized card layout by changing not only the position of a card, but also its size, and thus how the card content is presented.
-        
+
 This layout gives users much greater flexibility in tailoring the overview page to their specific business needs. And it allows app teams to offer varying levels of detail for any given card. Whenever the size of a card changes, the content adapts automatically to show the most relevant information in the available space.
 
 Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20 rem (minimum width).
@@ -25,7 +25,7 @@ Cards can be resized vertically in rows of 1 rem and horizontally in steps of 20
     }
 };
 
-export const resizeCardLayout = () =>
+export const ResizeCardLayout = () =>
     `<div id="layout1" class="fd-resizable-card-layout fd-resizable-card-layout--md fd-custom-resizable-card-layout-flex">
         <div id="one" class="fd-resizable-card-layout__item card-one-dimensions">
             <div class="fd-resizable-card-layout__resize--vertical"></div>
@@ -338,16 +338,18 @@ export const resizeCardLayout = () =>
     </div>
 `;
 
-resizeCardLayout.storyName = 'Resizable card layout';
-resizeCardLayout.parameters = {
+ResizeCardLayout.storyName = 'Resizable card layout';
+ResizeCardLayout.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Resizable card layout with multiple cards.
+        description: {
+            story: `Resizable card layout with multiple cards.
         `
+        }
     }
 };
 
-export const resizeCardHorizontalVerticalDirection = () =>
+export const ResizeCardHorizontalVerticalDirection = () =>
     `<div id="grid1" class="fd-resizable-card-layout">
         <div id="seven" class="fd-resizable-card-layout__item fd-resizable-card-layout__indication-border">
             <div class="fd-resizable-card-layout__resize--vertical"></div>
@@ -391,16 +393,18 @@ export const resizeCardHorizontalVerticalDirection = () =>
     </div>
 `;
 
-resizeCardHorizontalVerticalDirection.storyName = 'Card resize in horizontal and vertical directions';
-resizeCardHorizontalVerticalDirection.parameters = {
+ResizeCardHorizontalVerticalDirection.storyName = 'Card resize in horizontal and vertical directions';
+ResizeCardHorizontalVerticalDirection.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Cards can be resized in horizontal direction as well as vertical direction. Resize handle will expand on right border for horizontal resize and bottom border for vertical resize.
+        description: {
+            story: `Cards can be resized in horizontal direction as well as vertical direction. Resize handle will expand on right border for horizontal resize and bottom border for vertical resize.
         `
+        }
     }
 };
 
-export const resizeCardHorizontalDirection = () =>
+export const ResizeCardHorizontalDirection = () =>
     `<div id="grid1" class="fd-resizable-card-layout">
         <div id="eight" class="fd-resizable-card-layout__item">
             <div class="fd-resizable-card-layout__resize--vertical"></div>
@@ -443,16 +447,18 @@ export const resizeCardHorizontalDirection = () =>
     </div>
 `;
 
-resizeCardHorizontalDirection.storyName = 'Card resize in horizontal directions';
-resizeCardHorizontalDirection.parameters = {
+ResizeCardHorizontalDirection.storyName = 'Card resize in horizontal directions';
+ResizeCardHorizontalDirection.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Cards can also be resized in horizontal direction only. Resize handle will expand on right border.
+        description: {
+            story: `Cards can also be resized in horizontal direction only. Resize handle will expand on right border.
         `
+        }
     }
 };
 
-export const resizeCardVerticalDirection = () =>
+export const ResizeCardVerticalDirection = () =>
     `<div id="grid1" class="fd-resizable-card-layout">
         <div id="nine" class="fd-resizable-card-layout__item">
             <div class="fd-resizable-card-layout__card">
@@ -495,11 +501,13 @@ export const resizeCardVerticalDirection = () =>
     </div>
 `;
 
-resizeCardVerticalDirection.storyName = 'Card resize in vertical directions';
-resizeCardVerticalDirection.parameters = {
+ResizeCardVerticalDirection.storyName = 'Card resize in vertical directions';
+ResizeCardVerticalDirection.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Cards can be resized in vertical direction only. Resize handle will expand on bottom border.
+        description: {
+            story: `Cards can be resized in vertical direction only. Resize handle will expand on bottom border.
         `
+        }
     }
 };

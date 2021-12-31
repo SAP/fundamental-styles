@@ -20,39 +20,43 @@ The object identifier should be easily read by the users, preferably displaying 
 **Do not use the object identifier if:**
 
 - You want to display system messages.
-- They are for decorative purposes only.        
+- They are for decorative purposes only.
 `,
         tags: ['f3'],
         components: ['object-identifier', 'link', 'table']
     }
 };
 
-export const titleOnly = () => `<div class="fd-object-identifier">
+export const TitleOnly = () => `<div class="fd-object-identifier">
     <p class="fd-object-identifier__title">NoteBook Basic 15</p>
 </div>
 `;
 
-titleOnly.storyName = 'Title';
-titleOnly.parameters = {
+TitleOnly.storyName = 'Title';
+TitleOnly.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier as a title, add the `fd-object-identifier__title` modifier class to the main element.'
+        description: {
+            story: 'To display the object identifier as a title, add the `fd-object-identifier__title` modifier class to the main element.'
+        }
     }
 };
 
-export const boldTitle = () => `<div class="fd-object-identifier">
+export const BoldTitle = () => `<div class="fd-object-identifier">
     <p class="fd-object-identifier__title fd-object-identifier__title--bold">NoteBook Basic 15</p>
 </div>
 `;
 
-boldTitle.storyName = 'Bold';
-boldTitle.parameters = {
+BoldTitle.storyName = 'Bold';
+BoldTitle.parameters = {
     docs: {
-        storyDescription: `To display the object identifier's title in bold, replace \`fd-object-identifier__title\`
+        description: {
+            story: `To display the object identifier's title in bold, replace \`fd-object-identifier__title\`
         with the \`fd-object-identifier__title--bold\` modifier class.`
+        }
     }
 };
 
-export const titleAsLink = () => `
+export const TitleAsLink = () => `
 <div class="fd-object-identifier">
     <p class="fd-object-identifier__title">
         <a href="#" class="fd-link fd-object-identifier__link">
@@ -70,14 +74,16 @@ export const titleAsLink = () => `
 </div>
 `;
 
-titleAsLink.storyName = 'Link';
-titleAsLink.parameters = {
+TitleAsLink.storyName = 'Link';
+TitleAsLink.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier as a link, use anchor element with `.fd-link .fd-object-identifier__link` classes.'
+        description: {
+            story: 'To display the object identifier as a link, use anchor element with `.fd-link .fd-object-identifier__link` classes.'
+        }
     }
 };
 
-export const titleAndText = () => `
+export const TitleAndText = () => `
 <div class="fd-object-identifier">
     <p class="fd-object-identifier__title">NoteBook Basic 15</p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
@@ -113,23 +119,26 @@ export const titleAndText = () => `
 </div>
 `;
 
-titleAndText.storyName = 'Descriptive';
-titleAndText.parameters = {
+TitleAndText.storyName = 'Descriptive';
+TitleAndText.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier\'s title with descriptive text, add an additional tag below the title container and a `fd-object-identifier__text` modifier class.'
+        description: {
+            story: 'To display the object identifier\'s title with descriptive text, add an additional tag below the title container and a `fd-object-identifier__text` modifier class.'
+        }
     }
 };
 
-export const mediumSize = () => `
+export const MediumSize = () => `
 <div class="fd-object-identifier fd-object-identifier--medium">
     <p class="fd-object-identifier__title">NoteBook Basic 15</p>
     <p class="fd-object-identifier__text">Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro</p>
 </div>
 `;
 
-mediumSize.storyName = 'Medium Size';
-mediumSize.parameters = {
+MediumSize.parameters = {
     docs: {
-        storyDescription: 'To display the object identifier title in medium size, add the `fd-object-identifier--medium` modifier.'
+        description: {
+            story: 'To display the object identifier title in medium size, add the `fd-object-identifier--medium` modifier.'
+        }
     }
 };

@@ -30,45 +30,45 @@ To ensure that the carousel is accessible, a div element with class \`fd-carouse
     }
 };
 
-export const carouselBottom = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const CarouselBottom = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Navigation buttons in page indicator</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
-                <li 
-                    data-slide-to="1" 
+                <li
+                    data-slide-to="1"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="2" 
+                <li
+                    data-slide-to="2"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="3" 
+                <li
+                    data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="4" 
+                <li
+                    data-slide-to="4"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="5" 
-                    aria-label="Displaying item 5 of 7" 
+                <li
+                    data-slide-to="5"
+                    aria-label="Displaying item 5 of 7"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
-                <li 
-                    data-slide-to="6" 
+                <li
+                    data-slide-to="6"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="7" 
+                <li
+                    data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -81,18 +81,18 @@ export const carouselBottom = () => `<div style="display: flex; flex-direction: 
     </div>
 
     <h4>Content navigation buttons</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -101,26 +101,26 @@ export const carouselBottom = () => `<div style="display: flex; flex-direction: 
         </div>
         <div class="fd-carousel__page-indicator-container">
             <ol class="fd-carousel__page-indicators">
-                <li 
-                    data-slide-to="1" 
+                <li
+                    data-slide-to="1"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="2" 
+                <li
+                    data-slide-to="2"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="3" 
+                <li
+                    data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="4" 
+                <li
+                    data-slide-to="4"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="5" 
+                <li
+                    data-slide-to="5"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
-                <li 
-                    data-slide-to="6" 
+                <li
+                    data-slide-to="6"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="7" 
+                <li
+                    data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
         </div>
@@ -130,13 +130,13 @@ export const carouselBottom = () => `<div style="display: flex; flex-direction: 
     </div>
 
     <h4>Numeric page indicator</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
@@ -145,7 +145,7 @@ export const carouselBottom = () => `<div style="display: flex; flex-direction: 
             <div class="fd-carousel__page-indicators">
                 <div class="fd-carousel__text">1 of 4</div>
             </div>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -158,18 +158,18 @@ export const carouselBottom = () => `<div style="display: flex; flex-direction: 
     </div>
 
     <h4>No page indicator</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -183,52 +183,54 @@ export const carouselBottom = () => `<div style="display: flex; flex-direction: 
 </div>
 `;
 
-carouselBottom.storyName = 'Bottom page indicator';
-carouselBottom.parameters = {
+CarouselBottom.storyName = 'Bottom page indicator';
+CarouselBottom.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.
+        description: {
+            story: `The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.
 `
+        }
     }
 };
 
-export const carouselTop = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const CarouselTop = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Navigation buttons in page indicator</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
-                <li 
-                    data-slide-to="1" 
+                <li
+                    data-slide-to="1"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="2" 
+                <li
+                    data-slide-to="2"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="3" 
+                <li
+                    data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="4" 
+                <li
+                    data-slide-to="4"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="5" 
+                <li
+                    data-slide-to="5"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
-                <li 
-                    data-slide-to="6" 
+                <li
+                    data-slide-to="6"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="7" 
+                <li
+                    data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -242,43 +244,43 @@ export const carouselTop = () => `<div style="display: flex; flex-direction: col
     </div>
 
     <h4>Navigation buttons in content</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <ol class="fd-carousel__page-indicators">
-                <li 
-                    data-slide-to="1" 
+                <li
+                    data-slide-to="1"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="2" 
+                <li
+                    data-slide-to="2"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="3" 
+                <li
+                    data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="4" 
+                <li
+                    data-slide-to="4"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="5" 
+                <li
+                    data-slide-to="5"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
-                <li 
-                    data-slide-to="6" 
+                <li
+                    data-slide-to="6"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="7" 
+                <li
+                    data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
-           <button 
+           <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
-           <button 
+           <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -291,9 +293,9 @@ export const carouselTop = () => `<div style="display: flex; flex-direction: col
     </div>
 
     <h4>Numeral format for page indicator</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <div class="fd-carousel__page-indicators">
@@ -301,13 +303,13 @@ export const carouselTop = () => `<div style="display: flex; flex-direction: col
             </div>
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -320,19 +322,19 @@ export const carouselTop = () => `<div style="display: flex; flex-direction: col
     </div>
 
     <h4>No page indicators</h4>
-    <div 
-        class="fd-carousel" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators"></ol>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -358,54 +360,56 @@ export const carouselTop = () => `<div style="display: flex; flex-direction: col
 </div>
 `;
 
-carouselTop.storyName = 'Top page indicator';
-carouselTop.parameters = {
+CarouselTop.storyName = 'Top page indicator';
+CarouselTop.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `The top page indicator carousel displays a content area, navigation buttons and a page indicator at the top.
+        description: {
+            story: `The top page indicator carousel displays a content area, navigation buttons and a page indicator at the top.
 `
+        }
     }
 };
 
-export const carouselNoNavigation = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const CarouselNoNavigation = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
     <h4>Hiding navigation buttons in page indicator</h4>
-    <div 
-        class="fd-carousel fd-carousel--no-navigation" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel fd-carousel--no-navigation"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
         <div class="fd-carousel__page-indicator-container">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators">
-                <li 
-                    data-slide-to="1" 
+                <li
+                    data-slide-to="1"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="2" 
+                <li
+                    data-slide-to="2"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="3" 
+                <li
+                    data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="4" 
+                <li
+                    data-slide-to="4"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="5" 
-                    aria-label="Displaying item 5 of 7" 
+                <li
+                    data-slide-to="5"
+                    aria-label="Displaying item 5 of 7"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
-                <li 
-                    data-slide-to="6" 
+                <li
+                    data-slide-to="6"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="7" 
+                <li
+                    data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -418,43 +422,43 @@ export const carouselNoNavigation = () => `<div style="display: flex; flex-direc
     </div>
 
     <h4>Hiding navigation buttons in the content</h4>
-    <div 
-        class="fd-carousel fd-carousel--no-navigation" 
-        data-ride="carousel" 
+    <div
+        class="fd-carousel fd-carousel--no-navigation"
+        data-ride="carousel"
         style="margin-bottom: 3rem; max-width: 30rem;">
         <div class="fd-carousel__page-indicator-container">
             <ol class="fd-carousel__page-indicators">
-                <li 
-                    data-slide-to="1" 
+                <li
+                    data-slide-to="1"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="2" 
+                <li
+                    data-slide-to="2"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="3" 
+                <li
+                    data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="4" 
+                <li
+                    data-slide-to="4"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="5" 
+                <li
+                    data-slide-to="5"
                     class="fd-carousel__page-indicator fd-carousel__page-indicator--active"></li>
-                <li 
-                    data-slide-to="6" 
+                <li
+                    data-slide-to="6"
                     class="fd-carousel__page-indicator"></li>
-                <li 
-                    data-slide-to="7" 
+                <li
+                    data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
         </div>
         <div class="fd-carousel__content" style="min-height: 15.5rem;">
-           <button 
+           <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
-           <button 
+           <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -468,16 +472,18 @@ export const carouselNoNavigation = () => `<div style="display: flex; flex-direc
 </div>
 `;
 
-carouselNoNavigation.storyName = 'Hidden navigation buttons';
-carouselNoNavigation.parameters = {
+CarouselNoNavigation.storyName = 'Hidden navigation buttons';
+CarouselNoNavigation.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Carousel can also be displayed without navigation buttons. To hide them, add the \`fd-carousel--no-navigation\` modifier class to the \`fd-carousel\` class. On touchable devices, the user can navigate with a swipe gesture.
+        description: {
+            story: `Carousel can also be displayed without navigation buttons. To hide them, add the \`fd-carousel--no-navigation\` modifier class to the \`fd-carousel\` class. On touchable devices, the user can navigate with a swipe gesture.
 `
+        }
     }
 };
 
-export const horizontalCarousel = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;">
+export const HorizontalCarousel = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;">
     <h4>Items in horizontal direction</h4>
     <div
         class="fd-carousel"
@@ -553,16 +559,18 @@ export const horizontalCarousel = () => `<div style="display: flex; flex-directi
 </div>
 `;
 
-horizontalCarousel.storyName = 'Items in horizontal direction';
-horizontalCarousel.parameters = {
+HorizontalCarousel.storyName = 'Items in horizontal direction';
+HorizontalCarousel.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Carousel will have items which will spread horizontally and will be visible on navigation. For translate animation effect to work, all items should be in DOM.
+        description: {
+            story: `Carousel will have items which will spread horizontally and will be visible on navigation. For translate animation effect to work, all items should be in DOM.
 `
+        }
     }
 };
 
-export const error = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;">
+export const Error = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;">
     <h4>Error in loading items</h4>
     <div
         class="fd-carousel fd-carousel--no-navigation"
@@ -583,14 +591,14 @@ export const error = () => `<div style="display: flex; flex-direction: column; a
         </div>
         </div>
         <div class="fd-carousel__page-indicator-container">
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
             <ol class="fd-carousel__page-indicators"></ol>
-            <button 
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -604,11 +612,13 @@ export const error = () => `<div style="display: flex; flex-direction: column; a
 </div>
 `;
 
-error.storyName = 'Items loading error';
-error.parameters = {
+Error.storyName = 'Items loading error';
+Error.parameters = {
     docs: {
         iframeHeight: 900,
-        storyDescription: `Error message can be disaplyed when items could not be loaded. Error message can be composed using Message page component.
+        description: {
+            story: `Error message can be disaplyed when items could not be loaded. Error message can be composed using Message page component.
 `
+        }
     }
 };

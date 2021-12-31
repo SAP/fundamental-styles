@@ -126,7 +126,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
   <div
     class="fd-row"
   >
-     
+    
             
     <div
       aria-labelledby="grid1GroupHeader"

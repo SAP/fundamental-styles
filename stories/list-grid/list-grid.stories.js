@@ -40,7 +40,7 @@ The grid list is usually used as an alternative view for a list or table. It is 
     }
 };
 
-export const noneMode = () => `<div style="min-height: 500px;">
+export const NoneMode = () => `<div style="min-height: 500px;">
 <div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
@@ -90,7 +90,7 @@ export const noneMode = () => `<div style="min-height: 500px;">
                                     <p>Anytown, SD 57401</p>
                                     <p>USA</p>
                                 </div>
-                                
+
                                 <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                             </div>
                         </div>
@@ -120,7 +120,7 @@ export const noneMode = () => `<div style="min-height: 500px;">
                                     <p>Anytown, SD 57401</p>
                                     <p>USA</p>
                                 </div>
-                                
+
                                 <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                             </div>
                         </div>
@@ -217,7 +217,7 @@ export const noneMode = () => `<div style="min-height: 500px;">
                                     <p>Anytown, SD 57401</p>
                                     <p>USA</p>
                                 </div>
-                                
+
                                 <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                             </div>
                         </div>
@@ -252,16 +252,18 @@ export const noneMode = () => `<div style="min-height: 500px;">
 </div>
 `;
 
-noneMode.storyName = 'None mode';
+NoneMode.storyName = 'None mode';
 
-noneMode.parameters = {
+NoneMode.parameters = {
     docs: {
-        storyDescription:
+        description: {
+            story:
             'Items cannot be selected but can still use "navigation", which allows click handling on specific items.'
+        }
     }
 };
 
-export const singleSelectMasterMode = () => `<div style="min-height: 300px;">
+export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
 <div class="fd-grid-list fd-grid-list--mode-single-select">
     <div class="fd-container">
         <div class="fd-row">
@@ -347,7 +349,7 @@ export const singleSelectMasterMode = () => `<div style="min-height: 300px;">
                                     <p>Anytown, SD 57401</p>
                                     <p>USA</p>
                                 </div>
-                                
+
                                 <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                             </div>
                         </div>
@@ -416,18 +418,20 @@ export const singleSelectMasterMode = () => `<div style="min-height: 300px;">
 </div>
 `;
 
-singleSelectMasterMode.storyName = 'Single select mode';
+SingleSelectMasterMode.storyName = 'Single select mode';
 
-singleSelectMasterMode.parameters = {
+SingleSelectMasterMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 One item in the grid list can be selected. Need click on an item to select it.
 To turn on the Single select mode, add the \`fd-grid-list--mode-single-select\` modifier class to the main element.
         `
+        }
     }
 };
 
-export const singleSelectLeftMode = () => `<div style="min-height: 300px;">
+export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 <div class="fd-grid-list fd-grid-list--mode-single-select-left">
     <div class="fd-container">
         <div class="fd-row">
@@ -584,18 +588,20 @@ export const singleSelectLeftMode = () => `<div style="min-height: 300px;">
 </div>
 `;
 
-singleSelectLeftMode.storyName = 'Single select left mode';
+SingleSelectLeftMode.storyName = 'Single select left mode';
 
-singleSelectLeftMode.parameters = {
+SingleSelectLeftMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 One item in the grid list can be selected. For this, the grid list provides radio buttons on the left side of each item toolbar.
 To turn on the Single select left mode, add the \`fd-grid-list--mode-single-select-left\` modifier class to the main element.
 `
+        }
     }
 };
 
-export const singleSelectRightMode = () => `<div style="min-height: 300px;">
+export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 <div class="fd-grid-list fd-grid-list--mode-single-select-right">
     <div class="fd-container">
         <div class="fd-row">
@@ -753,18 +759,20 @@ export const singleSelectRightMode = () => `<div style="min-height: 300px;">
 </div>
 `;
 
-singleSelectRightMode.storyName = 'Single select right mode';
+SingleSelectRightMode.storyName = 'Single select right mode';
 
-singleSelectRightMode.parameters = {
+SingleSelectRightMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 One item in the grid list can be selected. For this, the grid list provides radio buttons on the left side of each item toolbar.
 To turn on the Single select right mode, add the \`fd-grid-list--mode-single-select-right\` modifier class to the main element.
 `
+        }
     }
 };
 
-export const multiSelectMode = () => `<div style="min-height: 300px;">
+export const MultiSelectMode = () => `<div style="min-height: 300px;">
 <div class="fd-grid-list fd-grid-list--mode-multi-select">
     <div class="fd-container">
         <div class="fd-row">
@@ -795,7 +803,7 @@ export const multiSelectMode = () => `<div style="min-height: 300px;">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c" aria-label="John Li, Product Owner, Company B" checked>
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c" tabindex="-1"></label>
-                        
+
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
@@ -925,18 +933,20 @@ export const multiSelectMode = () => `<div style="min-height: 300px;">
 </div>
 `;
 
-multiSelectMode.storyName = 'Multi select mode';
+MultiSelectMode.storyName = 'Multi select mode';
 
-multiSelectMode.parameters = {
+MultiSelectMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 Users can select one or more items. For this, the grid list provides checkboxes on the left side of each item toolbar.
 To turn on the Multi select mode, add the \`fd-grid-list--mode-multi-select\` modifier class to the main element.
 `
+        }
     }
 };
 
-export const deleteMode = () => `<div style="min-height: 300px;">
+export const DeleteMode = () => `<div style="min-height: 300px;">
 <div class="fd-grid-list fd-grid-list--mode-delete">
     <div class="fd-container">
         <div class="fd-row">
@@ -972,7 +982,7 @@ export const deleteMode = () => `<div style="min-height: 300px;">
                         <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Delete">
                             <i class="sap-icon--decline"></i>
                         </button>
-                        
+
                         <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </button>
@@ -1096,18 +1106,20 @@ export const deleteMode = () => `<div style="min-height: 300px;">
 </div>
 `;
 
-deleteMode.storyName = 'Delete mode';
+DeleteMode.storyName = 'Delete mode';
 
-deleteMode.parameters = {
+DeleteMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 This places a Delete button on the right side of an item toolbar.
 To turn on the Delete mode, add the \`fd-grid-list--mode-delete\` modifier class to the main element.
 `
+        }
     }
 };
 
-export const group = () => `<div style="min-height: 600px;">
+export const Group = () => `<div style="min-height: 600px;">
 <div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
@@ -1255,18 +1267,18 @@ export const group = () => `<div style="min-height: 600px;">
 </div>
 `;
 
-group.storyName = 'Group';
-
-group.parameters = {
+Group.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 If grouped, a group header is displayed above all items which belong to the corresponding group. The group header is not interactive.
 To create grid list group headers use \`fd-grid-list__group-header\` class.
     `
+        }
     }
 };
 
-export const states = () => `<div style="min-height: 600px;">
+export const States = () => `<div style="min-height: 600px;">
 <div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
@@ -1366,7 +1378,7 @@ export const states = () => `<div style="min-height: 600px;">
                                     <p>Anytown, SD 57401</p>
                                     <p>USA</p>
                                 </div>
-                                
+
 
                                 <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                             </div>
@@ -1449,17 +1461,17 @@ export const states = () => `<div style="min-height: 600px;">
 </div>
 `;
 
-states.storyName = 'States';
-
-states.parameters = {
+States.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To apply state, add the corresponding class \`.fd-grid-list__item--(unread|error|locked|draft)\` to the \`.fd-grid-list__item\`.
     `
+        }
     }
 };
 
-export const highlight = () => `<div style="min-height: 350px;">
+export const Highlight = () => `<div style="min-height: 350px;">
 <div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
@@ -1608,18 +1620,18 @@ export const highlight = () => `<div style="min-height: 350px;">
 </div>
 `;
 
-highlight.storyName = 'Highlight';
-
-highlight.parameters = {
+Highlight.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 A highlight indicator is shown in front of the item it needs to show that an item needs attention.
 To add highlight indicator, add a span element with \`.fd-grid-list__highlight fd-grid-list__highlight--(success|warning|error|neutral)\` class, before the item body element
     `
+        }
     }
 };
 
-export const filterInfobar = () => `<div style="min-height: 350px;">
+export const FilterInfobar = () => `<div style="min-height: 350px;">
 <div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
@@ -1768,18 +1780,18 @@ export const filterInfobar = () => `<div style="min-height: 350px;">
 </div>
 `;
 
-filterInfobar.storyName = 'Filter Infobar';
-
-filterInfobar.parameters = {
+FilterInfobar.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The filter information panel displays the selected filters.
 To show filter information panel, follow the current example.
 `
+        }
     }
 };
 
-export const more = () => `<div style="min-height: 400px;">
+export const More = () => `<div style="min-height: 400px;">
 <div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
@@ -1925,18 +1937,20 @@ export const more = () => `<div style="min-height: 400px;">
 </div>
 `;
 
-more.storyName = '"More" Button';
+More.storyName = '"More" Button';
 
-more.parameters = {
+More.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The More button loads more items to the front end if not all items have yet been loaded.
 To show "More" button, follow the current example.
 `
+        }
     }
 };
 
-export const footer = () => `<div style="min-height: 300px;">
+export const Footer = () => `<div style="min-height: 300px;">
 <div class="fd-grid-list">
     <div class="fd-container">
         <div class="fd-row">
@@ -2081,13 +2095,13 @@ export const footer = () => `<div style="min-height: 300px;">
 </div>
 `;
 
-footer.storyName = 'Footer';
-
-footer.parameters = {
+Footer.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The footer can be used to display additional static information relating to the content.
 To create a grid list footer, follow the current example.
 `
+        }
     }
 };

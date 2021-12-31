@@ -5,7 +5,7 @@ export default {
 
 ##Usage
 **Use the slider if:**
-        
+
 -	You want to change values with graphical support.
 
 
@@ -15,12 +15,12 @@ export default {
 
 
 ## Accessibility
-To ensure that both the standard and range sliders are accessible, a div element with class \`fd-slider__handle\` must have the following aria attributes: 
+To ensure that both the standard and range sliders are accessible, a div element with class \`fd-slider__handle\` must have the following aria attributes:
 
 - \`tabindex="0"\`
 - \`role="slider"\`
 - \`aria-label\`: a string that labels the element
-- \`aria-labelledby\`: an ID reference to a visible element that labels the slider, used if \`aria-label\` isn't provided 
+- \`aria-labelledby\`: an ID reference to a visible element that labels the slider, used if \`aria-label\` isn't provided
 - \`aria-valuemin\`: the decimal value representing the minimum allowed value of the slider
 - \`aria-valuemax\`: the decimal value representing the maximum allowed value of the slider
 - \`aria-valuenow\`: the decimal value representing the current value of the slider
@@ -47,17 +47,17 @@ export const Standard = () => `
 </div>
 `;
 
-Standard.storyName = 'Standard';
-
 Standard.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 The standard slider displays a bar with a circular handle. When the user hovers over the handle, a hand cursor appears. The user can either drag and drop the handle or click on the bar to change the slider setting.
 ` }
+    }
 };
 
-export const range = () => `
+export const Range = () => `
 <div class="slider-container slider-container--range">
     <div class="fd-slider">
         <div class="fd-slider__inner">
@@ -71,18 +71,18 @@ export const range = () => `
 </div>
 `;
 
-range.storyName = 'Range';
-
-range.parameters = {
+Range.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 The range slider displays a bar with two circular handles, indicating that a range between two values can be selected. To display a range slider, add the \`fd-slider__track-range\` class to the \`fd-slider__track\` element.
 
         ` }
+    }
 };
 
-export const ticks = () => `
+export const Ticks = () => `
 <div class="slider-container">
     <div class="fd-slider">
         <div class="fd-slider__inner">
@@ -110,16 +110,17 @@ export const ticks = () => `
 </div>
 `;
 
-ticks.storyName = 'Ticks';
-ticks.parameters = {
+Ticks.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The slider can display ticks on the bar to help guide the user. Ticks can be displayed with the \`fd-slider__tick\` class. If a tick is in selected range, a \`--in-range\` modifier class should be applied.
         `
+        }
     }
 };
 
-export const ticksAndLabels = () => `
+export const TicksAndLabels = () => `
 <div class="slider-container">
     <div class="fd-slider">
         <div class="fd-slider__inner">
@@ -160,16 +161,18 @@ export const ticksAndLabels = () => `
 </div>
 `;
 
-ticksAndLabels.storyName = 'Ticks and labels';
-ticksAndLabels.parameters = {
+TicksAndLabels.storyName = 'Ticks and labels';
+TicksAndLabels.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 The slider can display labels that indicate the values of each tick. Labels can be displayed with the \`fd-slider__label\` class. Be advised that this styling does not include the positioning of the labels.
         `
+        }
     }
 };
 
-export const mobileMode = () => `
+export const MobileMode = () => `
 <div class="slider-container">
     <div class="fd-slider fd-slider--lg">
         <div class="fd-slider__inner">
@@ -181,12 +184,14 @@ export const mobileMode = () => `
     </div>
 </div>
 `;
-mobileMode.storyName = 'Mobile';
-mobileMode.parameters = {
+MobileMode.storyName = 'Mobile';
+MobileMode.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 By default, the slider is not responsive. However, to make the slider more mobile-friendly, you may enlarge the slider handle and its hit area by adding \`fd-slider__handle--lg\` class to \`fd-slider__handle\` element.
 To add horizontal paddings of \`0.8125rem\` use the \`fd-slider--lg\` modifier class
         `
+        }
     }
 };

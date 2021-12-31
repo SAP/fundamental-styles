@@ -14,14 +14,14 @@ The step input control allows the user to change the input values in predefined 
 
 - The user needs to enter a static number (for example, postal code, phone number, or ID). In this case, use **Input Field** instead.
 - You want to display a value that rarely needs to be adjusted and does not pertain to a particular step. In this case, use **Input Field** instead.
-- You want the user to enter dates and times. In this case, use the **Date Picker** or **Time Picker** pattern instead.  
-  
+- You want the user to enter dates and times. In this case, use the **Date Picker** or **Time Picker** pattern instead.
+
 `,
         components: ['button', 'icon', 'form-item', 'step-input', 'form-label', 'input']
     }
 };
 
-export const primary = () => `<label class="fd-form-label" for="step-3">Default Step Input</label><br />
+export const Primary = () => `<label class="fd-form-label" for="step-3">Default Step Input</label><br />
 <div class="fd-step-input">
   <button aria-label="Step down" class="
             fd-button
@@ -31,7 +31,7 @@ export const primary = () => `<label class="fd-form-label" for="step-3">Default 
   </button>
   <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3" type="number" value="0" />
   <button aria-label="Step up" class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button" onclick="stepInputValue('step-3', 'up');" tabindex="-1" type="button">
     <i class="sap-icon--add"></i>
@@ -39,16 +39,18 @@ export const primary = () => `<label class="fd-form-label" for="step-3">Default 
 </div>
 `;
 
-primary.storyName = 'Default';
-primary.parameters = {
+Primary.storyName = 'Default';
+Primary.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The default step input displays an input field with a plus and minus icon on opposing sides to either increase or decrease the value. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
+        description: {
+            story: `The default step input displays an input field with a plus and minus icon on opposing sides to either increase or decrease the value. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
         `
+        }
     }
 };
 
-export const compact = () => `<label class="fd-form-label" for="step-1">Compact Step Input</label><br />
+export const Compact = () => `<label class="fd-form-label" for="step-1">Compact Step Input</label><br />
 <div class="fd-form-item fd-form-item--horizontal">
     <div class="fd-step-input fd-step-input--compact">
             <button aria-label="Step down" class="
@@ -61,17 +63,17 @@ export const compact = () => `<label class="fd-form-label" for="step-1">Compact 
                     <i class="sap-icon--less"></i>
             </button>
         <input class="
-                fd-input 
-                fd-input--compact 
-                fd-input--no-number-spinner 
+                fd-input
+                fd-input--compact
+                fd-input--no-number-spinner
                 fd-step-input__input
         " id="step-1" type="number" value="0">
             <button aria-label="Step up" class="
-                fd-button 
+                fd-button
                 fd-button--compact
                 fd-button--transparent
                 fd-step-input__button"
-                onclick="stepInputValue('step-1', 'up');" 
+                onclick="stepInputValue('step-1', 'up');"
                 tabindex="-1" type="button">
                     <i class="sap-icon--add"></i>
             </button>
@@ -80,16 +82,17 @@ export const compact = () => `<label class="fd-form-label" for="step-1">Compact 
 </div>
 `;
 
-compact.storyName = 'Compact';
-compact.parameters = {
+Compact.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `The step input can be displayed in compact mode, which is ideal for desktop screens. To display a compact step input, add the \`--compact\` modifier class to the main element, as well as the button and input elements.
+        description: {
+            story: `The step input can be displayed in compact mode, which is ideal for desktop screens. To display a compact step input, add the \`--compact\` modifier class to the main element, as well as the button and input elements.
         `
+        }
     }
 };
 
-export const states = () => `<label class="fd-form-label" for="step-5">Success Step Input</label><br />
+export const States = () => `<label class="fd-form-label" for="step-5">Success Step Input</label><br />
 <div class="fd-step-input is-success">
         <button aria-label="Step down" class="
             fd-button
@@ -100,15 +103,15 @@ export const states = () => `<label class="fd-form-label" for="step-5">Success S
                 <i class="sap-icon--less"></i>
         </button>
     <input class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     " id="step-5" type="number" value="0">
         <button aria-label="Step up" class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
-            onclick="stepInputValue('step-5', 'up');" 
+            onclick="stepInputValue('step-5', 'up');"
             tabindex="-1" type="button">
                 <i class="sap-icon--add"></i>
         </button>
@@ -126,15 +129,15 @@ export const states = () => `<label class="fd-form-label" for="step-5">Success S
                 <i class="sap-icon--less"></i>
         </button>
     <input class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     " id="step-6" type="number" value="0">
         <button aria-label="Step up" class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
-            onclick="stepInputValue('step-6', 'up');" 
+            onclick="stepInputValue('step-6', 'up');"
             tabindex="-1" type="button">
                 <i class="sap-icon--add"></i>
         </button>
@@ -151,15 +154,15 @@ export const states = () => `<label class="fd-form-label" for="step-5">Success S
                 <i class="sap-icon--less"></i>
         </button>
     <input class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     " id="step-7" type="number" value="0">
         <button aria-label="Step up" class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
-            onclick="stepInputValue('step-7', 'up');" 
+            onclick="stepInputValue('step-7', 'up');"
             tabindex="-1" type="button">
                 <i class="sap-icon--add"></i>
         </button>
@@ -178,26 +181,26 @@ export const states = () => `<label class="fd-form-label" for="step-5">Success S
             <i class="sap-icon--less"></i>
     </button>
     <input class="
-        fd-input 
-        fd-input--no-number-spinner 
+        fd-input
+        fd-input--no-number-spinner
         fd-step-input__input
     " id="step-8" type="number" value="0">
     <button aria-label="Step up" class="
-        fd-button 
+        fd-button
         fd-button--transparent
         fd-step-input__button"
-        onclick="stepInputValue('step-8', 'up');" 
+        onclick="stepInputValue('step-8', 'up');"
         tabindex="-1" type="button">
             <i class="sap-icon--add"></i>
     </button>
 </div>
 `;
 
-states.storyName = 'States';
-states.parameters = {
+States.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Step input can be displayed in various states such as Success, Information, Error and Warning.
+        description: {
+            story: `Step input can be displayed in various states such as Success, Information, Error and Warning.
 
 **To display step input in a semantic state, add the following classes to the main elements:**
 
@@ -207,12 +210,13 @@ Success | \`is-success\`
 Information | \`is-information\`
 Error | \`is-error\`
 Warning | \`is-warning\`
-        
+
         `
+        }
     }
 };
 
-export const focused = () => `<label class="fd-form-label" for="step-20">Focused Step Input</label><br />
+export const Focused = () => `<label class="fd-form-label" for="step-20">Focused Step Input</label><br />
 <div class="fd-step-input is-focus">
         <button aria-label="Step down" class="
             fd-button
@@ -223,31 +227,32 @@ export const focused = () => `<label class="fd-form-label" for="step-20">Focused
                 <i class="sap-icon--less"></i>
         </button>
     <input class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     " id="step-20" type="number" value="0">
         <button aria-label="Step up" class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
-            onclick="stepInputValue('step-20', 'up');" 
+            onclick="stepInputValue('step-20', 'up');"
             tabindex="-1" type="button">
                 <i class="sap-icon--add"></i>
         </button>
 </div>
 `;
 
-focused.storyName = 'Focused';
-focused.parameters = {
+Focused.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `By default, step input has a built-in focused state, however; it is not supported by IE11. To enable the focused state on IE11, add the \`is-focus\` class to the main element.
+        description: {
+            story: `By default, step input has a built-in focused state, however; it is not supported by IE11. To enable the focused state on IE11, add the \`is-focus\` class to the main element.
         `
+        }
     }
 };
 
-export const disabled = () => `<label class="fd-form-label" for="step-13">Disabled Step Input</label><br />
+export const Disabled = () => `<label class="fd-form-label" for="step-13">Disabled Step Input</label><br />
 <div class="fd-step-input is-disabled">
         <button aria-label="Step down" class="
             fd-button
@@ -258,31 +263,32 @@ export const disabled = () => `<label class="fd-form-label" for="step-13">Disabl
                 <i class="sap-icon--less"></i>
         </button>
     <input class="
-            fd-input 
-            fd-input--no-number-spinner 
+            fd-input
+            fd-input--no-number-spinner
             fd-step-input__input
     " id="step-13" type="number" value="0" disabled>
         <button aria-label="Step up" class="
-            fd-button 
+            fd-button
             fd-button--transparent
             fd-step-input__button"
-            onclick="stepInputValue('step-13', 'up');" 
+            onclick="stepInputValue('step-13', 'up');"
             tabindex="-1" type="button">
                 <i class="sap-icon--add"></i>
         </button>
 </div>
 `;
 
-disabled.storyName = 'Disabled';
-disabled.parameters = {
+Disabled.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Step input can be disabled by adding the \`is-disabled\` class to the main element.
+        description: {
+            story: `Step input can be disabled by adding the \`is-disabled\` class to the main element.
         `
+        }
     }
 };
 
-export const readOnly = () => `<label class="fd-form-label" for="step-14">Temperature set to</label><br />
+export const ReadOnly = () => `<label class="fd-form-label" for="step-14">Temperature set to</label><br />
 <div class="fd-form-item fd-form-item--horizontal">
     <div class="fd-step-input is-readonly">
             <button aria-label="Step down" class="
@@ -294,15 +300,15 @@ export const readOnly = () => `<label class="fd-form-label" for="step-14">Temper
                     <i class="sap-icon--less"></i>
             </button>
         <input class="
-                fd-input 
-                fd-input--no-number-spinner 
+                fd-input
+                fd-input--no-number-spinner
                 fd-step-input__input
         " id="step-14" type="number" readonly value="23">
             <button aria-label="Step up" class="
-                fd-button 
+                fd-button
                 fd-button--transparent
                 fd-step-input__button"
-                onclick="stepInputValue('step-14', 'up');" 
+                onclick="stepInputValue('step-14', 'up');"
                 tabindex="-1" type="button">
                     <i class="sap-icon--add"></i>
             </button>
@@ -311,11 +317,13 @@ export const readOnly = () => `<label class="fd-form-label" for="step-14">Temper
 </div>
 `;
 
-readOnly.storyName = 'Read-only';
-readOnly.parameters = {
+ReadOnly.storyName = 'Read-only';
+ReadOnly.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `Step input can be displayed as read-only by adding the \`is-readonly\` class to the main element.
+        description: {
+            story: `Step input can be displayed as read-only by adding the \`is-readonly\` class to the main element.
         `
+        }
     }
 };

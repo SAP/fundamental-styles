@@ -2,12 +2,12 @@ export default {
     title: 'Patterns/Combobox Input',
     parameters: {
         description: `
-The Combobox Input component is an opinionated composition of the input group, popover and list components. 
+The Combobox Input component is an opinionated composition of the input group, popover and list components.
 The popover and \`dropdown list\` is shared between the multi-input and select components.
 Please see the \`select\` documentation for the complete list of modifiers that are also  supported by the combobox component.
 
-\`Combobox\` allows users to select an item from a predefined list. 
-It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options. 
+\`Combobox\` allows users to select an item from a predefined list.
+It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
 If the entries are not validated by the application, users can also enter custom values.
 `,
         tags: ['f3', 'a11y', 'theme'],
@@ -15,7 +15,7 @@ If the entries are not validated by the application, users can also enter custom
     }
 };
 
-export const cozyAndCompact = () => `<div style="display:flex;justify-content:space-around;height:700px">
+export const CozyAndCompact = () => `<div style="display:flex;justify-content:space-around;height:700px">
     <div style="display:flex;flex-direction:column">
         <label for="cozyCombobox" class="fd-form-label">Combobox Cozy Mode</label>
         <div class="fd-popover">
@@ -145,13 +145,13 @@ export const cozyAndCompact = () => `<div style="display:flex;justify-content:sp
 </div>
 `;
 
-cozyAndCompact.parameters = {
+CozyAndCompact.parameters = {
     docs: {
         iframeHeight: 700
     }
 };
 
-export const asFormItem = () => `<div style="height:700px">
+export const AsFormItem = () => `<div style="height:700px">
     <div class="fd-form-item">
         <label for="comboboxAsFormItem" class="fd-form-label">Combobox as a form item</label>
         <div class="fd-popover">
@@ -234,17 +234,19 @@ export const asFormItem = () => `<div style="height:700px">
 </div>
 `;
 
-asFormItem.parameters = {
+AsFormItem.parameters = {
     docs: {
         iframeHeight: 700,
-        storyDescription: `
+        description: {
+            story: `
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
 Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
 `
+        }
     }
 };
 
-export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-content:space-around;height:500px">
+export const TwoItemsAndItemsGrouping = () => `<div style="display:flex;justify-content:space-around;height:500px">
     <div style="display:flex;flex-direction:column">
         <label for="twoItems" class="fd-form-label">Product prices</label>
         <div class="fd-popover">
@@ -362,17 +364,19 @@ export const twoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
 </div>
 `;
 
-twoItemsAndItemsGrouping.parameters = {
+TwoItemsAndItemsGrouping.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `
+        description: {
+            story: `
 The \`ComboBox\` component can be customized by adding additional information in additional columns as seen below.
 
 In cases where the list items need to be categorized into groups, it is possible to add headers for each category.`
+        }
     }
 };
 
-export const matchPopoverBodySize = () => `<div style="display:flex;height:250px">
+export const MatchPopoverBodySize = () => `<div style="display:flex;height:250px">
     <div style="display:flex;flex-direction:column">
         <label for="matchPopoverBodySize" class="fd-form-label">Match Popover Body Size</label>
         <div class="fd-popover">
@@ -421,19 +425,21 @@ export const matchPopoverBodySize = () => `<div style="display:flex;height:250px
 </div>
 `;
 
-matchPopoverBodySize.parameters = {
+MatchPopoverBodySize.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: `
+        description: {
+            story: `
 The default length size of the popover body is often different from the text length.
-The body length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\`. 
+The body length can be adjusted to match the text length by adding the \`fd-popover__body--dropdown-fill\` class to the \`fd-popover__body\`.
 This class has been added to all the \`Combobox\` examples above.
 In the example you can see how the \`Combobox\` component looks without the \`fd-popover__body--dropdown-fill\` modifier.
 `
+        }
     }
 };
 
-export const disabledAndReadOnly = () => `<div style="display:flex;justify-content:space-around">
+export const DisabledAndReadOnly = () => `<div style="display:flex;justify-content:space-around">
     <div style="display:flex;flex-direction:column">
         <label for="disabledCombobox" class="fd-form-label">Disabled</label>
         <div class="fd-popover">
@@ -460,18 +466,20 @@ export const disabledAndReadOnly = () => `<div style="display:flex;justify-conte
 </div>
 `;
 
-disabledAndReadOnly.parameters = {
+DisabledAndReadOnly.parameters = {
     docs: {
-        storyDescription: `
+        description: {
+            story: `
 To disable a \`Combobox\` component, the disabled attribute needs to be added to the \`fd-popover__control\` and the \`fd-input__control\` elements.
 The disabled state can also be achieved by adding the \`.is-disable\` class or the \`aria-disabled="true"\` attribute.
 
 To make the \`Combobox\` component read-only, the readonly attribute needs to be added to the \`fd-nput-group\` element.
 This can also be done by using the \`.is-readonly\` class or \`aria-readonly="true"\` attribute.`
+        }
     }
 };
 
-export const semantic = () => `<div style="height:200px">
+export const Semantic = () => `<div style="height:200px">
     <label for="semanticCombobox" class="fd-form-label">Semantic Combobox</label>
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true"
@@ -485,7 +493,7 @@ export const semantic = () => `<div style="height:200px">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="semanticCombobox" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                     <button id="mpzjf2q09ugd" aria-label="show/hide fruit options"
-                        class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button" 
+                        class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
                     aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--navigation-down-arrow"></i>
                     </button>
@@ -517,20 +525,22 @@ export const semantic = () => `<div style="height:200px">
 </div>
 `;
 
-semantic.parameters = {
+Semantic.parameters = {
     docs: {
         iframeHeight: 250,
-        storyDescription: `
+        description: {
+            story: `
 For a complete list of states supported by the \`combobox\` component, please see the documentation for the form or select components.
 
-The semantic mode can be used to modify the combobox component by adding one of 
-\`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into fd-input-group element. 
+The semantic mode can be used to modify the combobox component by adding one of
+\`is-error\` | \`is-success\` | \`is-warning\` | \`is-information\` classes into fd-input-group element.
 To add text in the \`body\` of the component, simply include your text in the \`fd-list__message\` under the \`ul\` element.
 `
+        }
     }
 };
 
-export const mobile = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
+export const Mobile = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
 id="select-dialog-example" style="height:600px">
     <section role="dialog" aria-labelledby="mobileDialogHeader" class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
@@ -609,12 +619,14 @@ id="select-dialog-example" style="height:600px">
 </div>
 `;
 
-mobile.parameters = {
+Mobile.parameters = {
     docs: {
         iframeHeight: 600,
-        storyDescription: `
+        description: {
+            story: `
 For mobile devices, or tablets, combobox component should be displayed in fullscreen mode.
 So instead of using popover and dropdown, it should be wrapped in \`dialog\` and \`bar\` components.
 `
+        }
     }
 };

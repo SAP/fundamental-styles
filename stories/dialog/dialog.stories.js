@@ -17,7 +17,7 @@ The dialog component is a container that appears in response to an action made b
 - You just want to confirm a successful action.
 - You do not want to interrupt the user.
 - You want to enable users to create an object with more than 8 fields. Use an **Object Page** instead.
-        
+
 
 ## Structure
 
@@ -46,7 +46,7 @@ Note: Dialog's header, subheader and footer are elements from the **Bar** compon
     }
 };
 
-export const defaultDialog = () => `
+export const DefaultDialog = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <span class="fd-dialog__resize-handle"></span>
@@ -96,16 +96,18 @@ export const defaultDialog = () => `
 </section>
 `;
 
-defaultDialog.storyName = 'Default';
-defaultDialog.parameters = {
+DefaultDialog.storyName = 'Default';
+DefaultDialog.parameters = {
     docs: {
         iframeHeight: 400,
-        storyDescription: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the bottom-right corner of the footer, see resizable dialog below for more information.'
+        description: {
+            story: 'The default dialog component displays a container comprising a header, title, and subheader; followed by a body (content area), loader, footer and action buttons. The container also features a resize handle in the bottom-right corner of the footer, see resizable dialog below for more information.'
+        }
     }
 };
 
 
-export const sizes = () => `
+export const Sizes = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -157,7 +159,7 @@ export const sizes = () => `
                 </div>
             </div>
         </footer>
-    </div> 
+    </div>
 </section>
 <br />
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
@@ -215,10 +217,11 @@ export const sizes = () => `
 </section>
 `;
 
-sizes.parameters = {
+Sizes.parameters = {
     docs: {
         iframeHeight: 800,
-        storyDescription: `
+        description: {
+            story: `
 By default, dialog’s body has no horizontal paddings. If horizontal paddings are added, they should behave responsively based on dialog's window width.
 
 ####Horizontal padding
@@ -250,6 +253,7 @@ It is recommended that the default dialog takes the full width and height of the
 
 Note: On mobile devices, the bar component should be used with the \`fd-bar--cozy\` class.
 `
+        }
     }
 };
 
@@ -286,10 +290,12 @@ export const Resizable = () => `
 Resizable.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Dialog can also be displayed with a resize handle by adding a span element with a \`fd-dialog__resize-handle\` class inside the \`fd-dialog__content\` container.
 
 Note: This feature should be enabled for desktop screens only.`
+        }
     }
 };
 
@@ -325,7 +331,8 @@ export const Draggable = () => `
 Draggable.parameters = {
     docs: {
         iframeHeight: 300,
-        storyDescription: `
+        description: {
+            story: `
 Dialog can be draggable, enabling the user to drag the container around with their cursor on a desktop screen.
 
 | Modifier class | Modification |
@@ -333,6 +340,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
 | \`fd-dialog__content--draggable-grab\` | Modifies the element to be draggable |
 | \`fd-dialog__content--draggable-grabbing\` | Visualizes the grabbing cursor |
 `
+        }
     }
 };
 
@@ -430,8 +438,10 @@ export const Selectable = () => `
 Selectable.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \`fd-list fd-list--compact\` class to the body's container element.
+        description: {
+            story: `The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \`fd-list fd-list--compact\` class to the body's container element.
         `
+        }
     }
 };
 
@@ -469,11 +479,13 @@ export const Loading = () => `
 Loading.parameters = {
     docs: {
         iframeHeight: 500,
-        storyDescription: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the `fd-busy-indicator--l` to the `fd-dialog__loader` container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
+        description: {
+            story: 'Dialog can display a busy indicator that signals to the user that data is loading. To display a busy indicator in the content area, add the `fd-busy-indicator--l` to the `fd-dialog__loader` container element. Although the busy indicator is large in this example, you can choose a smaller size. See **Busy Indicator** for more sizes.'
+        }
     }
 };
 
-export const horizontalFormInDialog = () => `
+export const HorizontalFormInDialog = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -550,7 +562,7 @@ export const horizontalFormInDialog = () => `
                                             <i class="sap-icon--slim-arrow-down"></i>
                                         </span>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -571,8 +583,8 @@ export const horizontalFormInDialog = () => `
 </section>
 `;
 
-horizontalFormInDialog.storyName = 'Horizontal Form';
-horizontalFormInDialog.parameters = {
+HorizontalFormInDialog.storyName = 'Horizontal Form';
+HorizontalFormInDialog.parameters = {
     docs: {
         description: {
             story: ''
@@ -581,7 +593,7 @@ horizontalFormInDialog.parameters = {
 };
 
 
-export const verticalFormInDialog = () => `
+export const VerticalFormInDialog = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
         <header class="fd-dialog__header fd-bar fd-bar--header">
@@ -658,7 +670,7 @@ export const verticalFormInDialog = () => `
                                             <i class="sap-icon--slim-arrow-down"></i>
                                         </span>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -679,8 +691,8 @@ export const verticalFormInDialog = () => `
 </section>
 `;
 
-verticalFormInDialog.storyName = 'Vertical Form';
-verticalFormInDialog.parameters = {
+VerticalFormInDialog.storyName = 'Vertical Form';
+VerticalFormInDialog.parameters = {
     docs: {
         description: {
             story: ''
