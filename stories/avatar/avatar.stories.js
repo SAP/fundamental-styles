@@ -113,13 +113,13 @@ Circle.parameters = {
 };
 
 export const BackgroundImage = () => `
-<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/4.svg')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/5.svg')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail" style="background-image: url('/assets/images/backgrounds/leaves.jpg')" role="img" aria-label="John Doe"></span>
-<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain" style="background-image: url('/assets/images/backgrounds/leaves.jpg')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F3.png')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F4.png')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail" style="background-image: url('/assets/images/landscape/L1.jpg')" role="img" aria-label="John Doe"></span>
+<span class="fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain" style="background-image: url('/assets/images/landscape/L2.jpg')" role="img" aria-label="John Doe"></span>
 `;
 
 BackgroundImage.parameters = {

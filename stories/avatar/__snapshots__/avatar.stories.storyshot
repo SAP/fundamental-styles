@@ -165,7 +165,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
     role="img"
-    style="background-image: url('/assets/images/avatars/1.svg')"
+    style="background-image: url('/assets/images/portraits/L_80x80_M1.png')"
   />
   
 
@@ -173,7 +173,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
     role="img"
-    style="background-image: url('/assets/images/avatars/2.svg')"
+    style="background-image: url('/assets/images/portraits/L_80x80_M2.png')"
   />
   
 
@@ -181,7 +181,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--thumbnail"
     role="img"
-    style="background-image: url('/assets/images/avatars/3.svg')"
+    style="background-image: url('/assets/images/portraits/L_80x80_F3.png')"
   />
   
 
@@ -189,7 +189,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--thumbnail"
     role="img"
-    style="background-image: url('/assets/images/avatars/4.svg')"
+    style="background-image: url('/assets/images/portraits/L_80x80_F4.png')"
   />
   
 
@@ -197,7 +197,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
     role="img"
-    style="background-image: url('/assets/images/avatars/5.svg')"
+    style="background-image: url('/assets/images/portraits/L_80x80_M1.png')"
   />
   
 
@@ -205,7 +205,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xl fd-avatar--thumbnail"
     role="img"
-    style="background-image: url('/assets/images/backgrounds/leaves.jpg')"
+    style="background-image: url('/assets/images/landscape/L1.jpg')"
   />
   
 
@@ -213,7 +213,7 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
     aria-label="John Doe"
     class="fd-avatar fd-avatar--xl fd-avatar--thumbnail fd-avatar--background-contain"
     role="img"
-    style="background-image: url('/assets/images/backgrounds/leaves.jpg')"
+    style="background-image: url('/assets/images/landscape/L2.jpg')"
   />
   
 
