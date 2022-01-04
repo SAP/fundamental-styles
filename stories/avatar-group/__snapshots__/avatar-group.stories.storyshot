@@ -74,7 +74,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           alt="John Doe"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
           role="img"
-          style="background-image: url('/assets/images/avatars/1.svg')"
+          style="background-image: url('/assets/images/portraits/L_80x80_M1.png')"
           title="John Doe"
         />
         
@@ -134,7 +134,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
           alt="John Doe"
           class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
           role="img"
-          style="background-image: url('/assets/images/avatars/2.svg')"
+          style="background-image: url('/assets/images/portraits/L_80x80_M2.png')"
           title="John Doe"
         />
         
@@ -270,7 +270,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
             alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
-            style="background-image: url('/assets/images/avatars/1.svg')"
+            style="background-image: url('/assets/images/portraits/L_80x80_M1.png')"
             title="John Doe"
           />
           
@@ -330,7 +330,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
             alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
-            style="background-image: url('/assets/images/avatars/2.svg')"
+            style="background-image: url('/assets/images/portraits/L_80x80_M2.png')"
             title="John Doe"
           />
           
@@ -390,7 +390,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
             alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
-            style="background-image: url('/assets/images/avatars/3.svg')"
+            style="background-image: url('/assets/images/portraits/L_80x80_F3.png')"
             title="John Doe"
           />
           
@@ -468,7 +468,7 @@ exports[`Storyshots Components/Avatar Group Group Type 1`] = `
             alt="John Doe"
             class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
             role="img"
-            style="background-image: url('/assets/images/avatars/4.svg')"
+            style="background-image: url('/assets/images/portraits/L_80x80_F4.png')"
             title="John Doe"
           />
           
@@ -1022,7 +1022,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
           alt="Christian Bow"
           class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
           role="img"
-          style="background-image: url('/assets/images/avatars/1.svg')"
+          style="background-image: url('/assets/images/portraits/L_80x80_M1.png')"
           title="Christian Bow"
         />
       </div>
@@ -1086,7 +1086,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 alt="Christian Bow"
                 class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
                 role="img"
-                style="background-image: url('/assets/images/avatars/1.svg')"
+                style="background-image: url('/assets/images/portraits/L_80x80_M1.png')"
                 title="Christian Bow"
               />
               
@@ -1582,7 +1582,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
               alt="John Doe"
               class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail"
               role="img"
-              style="background-image: url('/assets/images/avatars/2.svg')"
+              style="background-image: url('/assets/images/portraits/L_80x80_M2.png')"
               title="John Doe"
             />
             
