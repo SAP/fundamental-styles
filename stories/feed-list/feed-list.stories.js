@@ -26,7 +26,7 @@ export const Standard = () => `<ul class="fd-feed-list" aria-label="Feed List It
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M1.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe">
@@ -118,7 +118,7 @@ export const Linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M5.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe"
@@ -154,7 +154,7 @@ export const ShowMore = () => `<ul class="fd-feed-list" aria-label="Feed List It
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe"
@@ -189,7 +189,7 @@ export const ShowLess = () => `<ul class="fd-feed-list" aria-label="Feed List It
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M8.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe"
@@ -224,7 +224,7 @@ export const WithActions = () => `<ul class="fd-feed-list" aria-label="Feed List
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M7.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe">
@@ -310,7 +310,7 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe">
@@ -331,7 +331,7 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M5.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe"
@@ -382,7 +382,7 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M4.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe">
@@ -403,7 +403,7 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
     <li class="fd-feed-list__body">
         <div
             class="fd-avatar fd-avatar--s fd-feed-list__thumb"
-            style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M3.png)"
             role="img"
             aria-label="John Doe"
             title="John Doe"
@@ -438,7 +438,7 @@ export const Mobile = () => `<div style="width: 350px; height: 600px; position: 
                 <div class="fd-feed-list__wrapper fd-feed-list__wrapper--header">
                 <div
                     class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
-                    style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+                    style="background-image: url(/assets/images/portraits/XL_Square_112x112_M2.png)"
                     role="img"
                     aria-label="John Doe"
                     title="John Doe">

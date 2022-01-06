@@ -144,7 +144,7 @@ export const IndividualType = () => `<div class="fd-avatar-group fd-avatar-group
     <div class="fd-popover">
         <div class="fd-popover__control">
             <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false" onclick="onPopoverClick('popover_avatar_4ahzcg');">
-               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="Christian Bow" title="Christian Bow"></span></div>
+               <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" alt="Christian Bow" title="Christian Bow"></span></div>
         </div>
         <div class="fd-popover__body" aria-hidden="true" id="popover_avatar_4ahzcg">
             <div class="fd-quick-view">
@@ -157,7 +157,7 @@ export const IndividualType = () => `<div class="fd-avatar-group fd-avatar-group
                 <div class="fd-quick-view__content">
                     <div class="fd-bar fd-bar--header-with-subheader">
                         <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="Christian Bow" title="Christian Bow"></span>
+                            <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" alt="Christian Bow" title="Christian Bow"></span>
                             <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">Christian Bow</h5>
                                 <div class="fd-quick-view__subtitle">Marketing Manager</div>
@@ -259,7 +259,7 @@ export const IndividualType = () => `<div class="fd-avatar-group fd-avatar-group
                         </span>
                     </div>
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                        <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" role="img" alt="John Doe" title="John Doe"></span>
                     </div>
                     <div class="fd-avatar-group__item" tabindex="0" aria-haspopup="true" aria-expanded="false">
                         <span class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--border" role="img" alt="John Moe" title="John Moe">JM</span>
@@ -302,7 +302,7 @@ export const GroupType = () => `<div class="fd-popover">
                 </span>
             </div>
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" alt="John Doe" title="John Doe"></span>
             </div>
             <div class="fd-avatar-group__item">
                 <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Endy Wallace" title="Endy Wallace">EW</span>
@@ -313,7 +313,7 @@ export const GroupType = () => `<div class="fd-popover">
                 </span>
             </div>
             <div class="fd-avatar-group__item">
-                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" role="img" alt="John Doe" title="John Doe"></span>
             </div>
 
             <button class="fd-button fd-avatar-group__more-button fd-avatar-group__more-button--m" role="button" tabindex="-1">
@@ -342,7 +342,7 @@ export const GroupType = () => `<div class="fd-popover">
                     </span>
                 </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M1.png')" role="img" alt="John Doe" title="John Doe"></span>
                 </div>
                 <div class="fd-avatar-group__item">
                     <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Endy Wallace" title="Endy Wallace">EW</span>
@@ -353,7 +353,7 @@ export const GroupType = () => `<div class="fd-popover">
                     </span>
                 </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/2.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_M2.png')" role="img" alt="John Doe" title="John Doe"></span>
                 </div>
                 <div class="fd-avatar-group__item">
                     <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Andy Wallace" title="Andy Wallace">AW</span>
@@ -364,7 +364,7 @@ export const GroupType = () => `<div class="fd-popover">
                     </span>
                 </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F3.png')" role="img" alt="John Doe" title="John Doe"></span>
                 </div>
                 <div class="fd-avatar-group__item">
                     <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="John Moe" title="John Moe">JM</span>
@@ -378,7 +378,7 @@ export const GroupType = () => `<div class="fd-popover">
                     </span>
                 </div>
                 <div class="fd-avatar-group__item">
-                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/4.svg')" role="img" alt="John Doe" title="John Doe"></span>
+                    <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border fd-avatar--thumbnail" style="background-image: url('/assets/images/portraits/L_80x80_F4.png')" role="img" alt="John Doe" title="John Doe"></span>
                 </div>
                 <div class="fd-avatar-group__item">
                     <span class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--border" role="img" alt="Fred Bloggs" title="Fred Bloggs">FB</span>
