@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Link Links 1`] = `
+exports[`Storyshots Experimental/Textarea Textarea 1`] = `
 <section>
   
 
@@ -8,12 +8,11 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     
 .docs-fn-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: 150px 3fr;
     column-gap: 0.1rem;
     row-gap: 0.1rem;
     background: white;
     padding: 1rem;
-    justify-items: center;
     align-items: center;
 }
 
@@ -35,32 +34,6 @@ exports[`Storyshots Experimental/Link Links 1`] = `
   >
     
     
-    <div />
-    
-    
-    <div>
-      <b>
-        Emphasized 
-      </b>
-    </div>
-    
-    
-    <div>
-      <b>
-        Default
-      </b>
-    </div>
-    
-
-  </div>
-  
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
     <div>
       <b>
         :normal
@@ -68,20 +41,24 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      class="fn-link fn-link--emphasized"
-      href="https://sap.github.io/fundamental-styles"
+    <div
+      class="fn-textarea"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <textarea
+        class="fn-textarea__input"
+        id="textarea-1"
+        placeholder="Write something here"
+      />
+      
+        
+      <div
+        class="fn-textarea__border"
+      />
+      
     
-    
-    <a
-      class="fn-link"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
@@ -100,25 +77,28 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      class="fn-link fn-link--emphasized is-hover"
-      href="https://sap.github.io/fundamental-styles"
+    <div
+      class="fn-textarea"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <textarea
+        class="fn-textarea__input is-hover"
+        id="textarea-2"
+        placeholder="Write something here"
+      />
+      
+        
+      <div
+        class="fn-textarea__border"
+      />
+      
     
-    
-    <a
-      class="fn-link is-hover"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
   
-
 
   <div
     class="docs-fn-container"
@@ -132,25 +112,28 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      class="fn-link fn-link--emphasized is-active"
-      href="https://sap.github.io/fundamental-styles"
+    <div
+      class="fn-textarea"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <textarea
+        class="fn-textarea__input is-active"
+        id="textarea-3"
+        placeholder="Write something here"
+      />
+      
+        
+      <div
+        class="fn-textarea__border"
+      />
+      
     
-    
-    <a
-      class="fn-link is-active"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
   
-
 
   <div
     class="docs-fn-container"
@@ -164,25 +147,64 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      class="fn-link fn-link--emphasized is-focus"
-      href="https://sap.github.io/fundamental-styles"
+    <div
+      class="fn-textarea"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <textarea
+        class="fn-textarea__input is-focus"
+        id="textarea-4"
+        placeholder="Write something here"
+      />
+      
+        
+      <div
+        class="fn-textarea__border"
+      />
+      
     
-    
-    <a
-      class="fn-link is-focus"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
   
 
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :read-only
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-textarea"
+    >
+      
+        
+      <textarea
+        class="fn-textarea__input is-readonly"
+        id="textarea-5"
+        placeholder="Write something here"
+        readonly=""
+      />
+      
+        
+      <div
+        class="fn-textarea__border"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
 
   <div
     class="docs-fn-container"
@@ -196,29 +218,29 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      aria-disabled="true"
-      class="fn-link fn-link--emphasized"
-      href="https://sap.github.io/fundamental-styles"
-      role="link"
+    <div
+      class="fn-textarea is-disabled"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <textarea
+        class="fn-textarea__input"
+        disabled=""
+        id="textarea-6"
+        placeholder="Write something here"
+      />
+      
+        
+      <div
+        class="fn-textarea__border"
+      />
+      
     
-    
-    <a
-      aria-disabled="true"
-      class="fn-link"
-      href="https://sap.github.io/fundamental-styles"
-      role="link"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
   
-
 
 </section>
 `;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Link Links 1`] = `
+exports[`Storyshots Experimental/Token Token 1`] = `
 <section>
   
 
@@ -8,7 +8,7 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     
 .docs-fn-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: 150px 3fr;
     column-gap: 0.1rem;
     row-gap: 0.1rem;
     background: white;
@@ -35,32 +35,6 @@ exports[`Storyshots Experimental/Link Links 1`] = `
   >
     
     
-    <div />
-    
-    
-    <div>
-      <b>
-        Emphasized 
-      </b>
-    </div>
-    
-    
-    <div>
-      <b>
-        Default
-      </b>
-    </div>
-    
-
-  </div>
-  
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
     <div>
       <b>
         :normal
@@ -68,25 +42,37 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      class="fn-link fn-link--emphasized"
-      href="https://sap.github.io/fundamental-styles"
+    <div
+      class="fn-token"
+      tabindex="0"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <div
+        class="fn-token__text"
+      >
+        Token
+      </div>
+      
+        
+      <div
+        class="fn-token__icon"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+        
+      </div>
+      
     
-    
-    <a
-      class="fn-link"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
   
-
 
   <div
     class="docs-fn-container"
@@ -100,57 +86,36 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      class="fn-link fn-link--emphasized is-hover"
-      href="https://sap.github.io/fundamental-styles"
+    <div
+      class="fn-token is-hover"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <div
+        class="fn-token__text"
+      >
+        Token
+      </div>
+      
+        
+      <div
+        class="fn-token__icon"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+        
+      </div>
+      
     
-    
-    <a
-      class="fn-link is-hover"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-
-  </div>
-  
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
-    <div>
-      <b>
-        :active
-      </b>
     </div>
     
-    
-    <a
-      class="fn-link fn-link--emphasized is-active"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-    
-    <a
-      class="fn-link is-active"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
 
   </div>
   
-
 
   <div
     class="docs-fn-container"
@@ -164,25 +129,36 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      class="fn-link fn-link--emphasized is-focus"
-      href="https://sap.github.io/fundamental-styles"
+    <div
+      class="fn-token is-focus"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <div
+        class="fn-token__text"
+      >
+        Token
+      </div>
+      
+        
+      <div
+        class="fn-token__icon"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+        
+      </div>
+      
     
-    
-    <a
-      class="fn-link is-focus"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
   
-
 
   <div
     class="docs-fn-container"
@@ -196,29 +172,36 @@ exports[`Storyshots Experimental/Link Links 1`] = `
     </div>
     
     
-    <a
-      aria-disabled="true"
-      class="fn-link fn-link--emphasized"
-      href="https://sap.github.io/fundamental-styles"
-      role="link"
+    <div
+      class="fn-token is-disabled"
     >
-      Ñagçyfox
-    </a>
+      
+        
+      <div
+        class="fn-token__text"
+      >
+        Token
+      </div>
+      
+        
+      <div
+        class="fn-token__icon"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+        
+      </div>
+      
     
-    
-    <a
-      aria-disabled="true"
-      class="fn-link"
-      href="https://sap.github.io/fundamental-styles"
-      role="link"
-    >
-      Ñagçyfox
-    </a>
+    </div>
     
 
   </div>
   
-
 
 </section>
 `;
