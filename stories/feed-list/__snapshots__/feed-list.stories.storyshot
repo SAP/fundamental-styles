@@ -16,7 +16,7 @@ exports[`Storyshots Components/Feed List and Item Actions 1`] = `
       aria-label="John Doe"
       class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
       role="img"
-      style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+      style="background-image: url(/assets/images/portraits/XL_Square_112x112_M7.png)"
       title="John Doe"
     >
       
@@ -320,7 +320,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
       aria-label="John Doe"
       class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
       role="img"
-      style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+      style="background-image: url(/assets/images/portraits/XL_Square_112x112_M4.png)"
       title="John Doe"
     >
       
@@ -391,7 +391,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
       aria-label="John Doe"
       class="fd-avatar fd-avatar--s fd-feed-list__thumb"
       role="img"
-      style="background-image: url(https://avatars.dicebear.com/api/male/john.svg?mood[]=happy)"
+      style="background-image: url(/assets/images/portraits/XL_Square_112x112_M3.png)"
       title="John Doe"
     />
     
@@ -469,7 +469,7 @@ exports[`Storyshots Components/Feed List and Item Linked 1`] = `
       aria-label="John Doe"
       class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"
       role="img"
-      style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+      style="background-image: url(/assets/images/portraits/XL_Square_112x112_M5.png)"
       tabindex="0"
       title="John Doe"
     />
@@ -569,7 +569,7 @@ exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
             aria-label="John Doe"
             class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
             role="img"
-            style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+            style="background-image: url(/assets/images/portraits/XL_Square_112x112_M2.png)"
             title="John Doe"
           >
             
@@ -973,7 +973,7 @@ exports[`Storyshots Components/Feed List and Item Show less 1`] = `
       aria-label="John Doe"
       class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
       role="img"
-      style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+      style="background-image: url(/assets/images/portraits/XL_Square_112x112_M8.png)"
       title="John Doe"
     />
     
@@ -1059,7 +1059,7 @@ exports[`Storyshots Components/Feed List and Item Show more 1`] = `
       aria-label="John Doe"
       class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
       role="img"
-      style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+      style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
       title="John Doe"
     />
     
@@ -1145,7 +1145,7 @@ exports[`Storyshots Components/Feed List and Item Standard 1`] = `
       aria-label="John Doe"
       class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
       role="img"
-      style="background-image: url(https://avatars.dicebear.com/api/human/fe.svg?m=6&b=%23f5f0f0&mood[]=surprised)"
+      style="background-image: url(/assets/images/portraits/XL_Square_112x112_M1.png)"
       title="John Doe"
     >
       
