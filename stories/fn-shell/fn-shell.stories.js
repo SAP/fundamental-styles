@@ -28,7 +28,7 @@ Avatar (mandatory) | \`fn-shell__avatar\` | For user settings and application me
     }
 };
 
-export const ShellbarXlSize = () => `<div style="height: 85px">
+export const ShellXlSize = () => `<div style="height: 85px">
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <span class="fn-shell__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="52" height="26" alt="SAP"></span>
@@ -56,9 +56,9 @@ export const ShellbarXlSize = () => `<div style="height: 85px">
 </div>
 `;
 
-ShellbarXlSize.storyName = 'Extra large';
+ShellXlSize.storyName = 'Extra large';
 
-export const ShellbarLSize = () => `<div style="width: 1024px; height: 85px;">
+export const ShellLSize = () => `<div style="width: 1024px; height: 85px;">
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <span class="fn-shell__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="52" height="26" alt="SAP"></span>
@@ -86,9 +86,9 @@ export const ShellbarLSize = () => `<div style="width: 1024px; height: 85px;">
 </div>
 `;
 
-ShellbarLSize.storyName = 'Large';
+ShellLSize.storyName = 'Large';
 
-export const ShellbarMSize = () => `<div style="width: 768px; height: 85px;">
+export const ShellMSize = () => `<div style="width: 768px; height: 85px;">
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <span class="fn-shell__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="52" height="26" alt="SAP"></span>
@@ -112,15 +112,15 @@ export const ShellbarMSize = () => `<div style="width: 768px; height: 85px;">
 </div>
 `;
 
-ShellbarMSize.storyName = 'Medium';
+ShellMSize.storyName = 'Medium';
 
-ShellbarMSize.parameters = {
+ShellMSize.parameters = {
     docs: {
         storyDescription: 'In the medium-sized screen for tablets, the search input is replaced with a search button.'
     }
 };
 
-export const ShellbarSSize = () => `<div style="height: 85px; max-width: 375px;">
+export const ShellSSize = () => `<div style="height: 85px; max-width: 375px;">
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Menu">
@@ -146,9 +146,9 @@ export const ShellbarSSize = () => `<div style="height: 85px; max-width: 375px;"
 </div>
 `;
 
-ShellbarSSize.storyName = 'Small';
+ShellSSize.storyName = 'Small';
 
-ShellbarSSize.parameters = {
+ShellSSize.parameters = {
     docs: {
         storyDescription: 'For small mobile-sized screens, the Product Title is hidden and a menu button appears.'
     }
