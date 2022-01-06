@@ -8,12 +8,10 @@ $block: #{$fn-namespace}-shell;
 
   $fd-shell-action-buttons-padding: 0.4375rem;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  @include fn-flex-center();
+
   padding: 0.75rem 1.5rem;
-  background: #ffffff;
+  background: $fn-color-white;
   height: 3.5rem;
 
   &__group {
@@ -24,18 +22,20 @@ $block: #{$fn-namespace}-shell;
     flex-basis: 0;
 
     &--product {
-      align-items: center;
-      display: flex;
-      justify-content: flex-start;
-      order: 1;
+      @include fn-flex-vertical-center() {
+        justify-content: flex-start;
+      }
 
       .#{$block}__logo {
+        @include fn-reset();
+
         height: 1.625rem;
         width: 3.25rem;
         vertical-align: middle;
       }
 
       .#{$block}__title {
+        @include fn-reset();
         @include fn-set-margin-left(0.375rem);
 
         color: $fn-color-grey-800;
@@ -49,28 +49,22 @@ $block: #{$fn-namespace}-shell;
       }
 
       button, .#{$block}__logo {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        @include fn-flex-center();
       }
     }
 
     &--search {
       justify-content: center;
       max-width: 16rem;
-      order: 2;
     }
 
     &--actions {
-      align-items: center;
-      display: flex;
-      justify-content: flex-end;
-      order: 3;
+      @include fn-flex-vertical-center() {
+        justify-content: flex-end;
+      }
 
       button, .#{$block}__avatar {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        @include fn-flex-center();
       }
 
       .#{$block}__avatar {
