@@ -7,20 +7,6 @@ $block: #{$fn-namespace}-step-input;
 
   width: 8rem;
 
-  button {
-    z-index: 6;
-    top: 0.4375rem;
-    position: absolute;
-
-    &:first-child {
-      @include fn-set-position-left(0.25rem);
-    }
-
-    &:last-child {
-      @include fn-set-position-right(0.25rem);
-    }
-  }
-
   .#{$block}__text-field {
     @include fn-set-paddings-x-equal(1.625rem);
 
@@ -38,8 +24,6 @@ $block: #{$fn-namespace}-step-input;
     }
 
     &.is-display {
-      @include fn-set-paddings-x-equal(0);
-
       text-align: unset;
     }
   }
