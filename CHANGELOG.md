@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.80...v0.21.0-rc.81) (2022-01-07)
+
+
+### Features
+
+* **fn:** introduce Textarea nad Token ([#3055](https://github.com/SAP/fundamental-styles/issues/3055)) ([3450ee9](https://github.com/SAP/fundamental-styles/commit/3450ee9994db4b892561f0de15c5309e5a64c49b))
+
 ## [0.21.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.79...v0.21.0-rc.80) (2022-01-07)
 
 
