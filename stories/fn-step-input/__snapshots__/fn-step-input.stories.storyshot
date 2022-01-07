@@ -1,0 +1,453 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Step Input Step Input 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        align-items: center;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <label
+        for="field-1"
+      >
+        normal:
+      </label>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-step-input"
+      tabindex="0"
+    >
+      
+        
+      <button
+        aria-label="subtract button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--less"
+        />
+        
+        
+      </button>
+      
+        
+      <input
+        class="fn-input__text-field fn-step-input__text-field"
+        id="field-1"
+        tabindex="-1"
+        type="number"
+        value="42"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <button
+        aria-label="add button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--add"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <label
+        for="field-2"
+      >
+        hover:
+      </label>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-step-input"
+      tabindex="0"
+    >
+      
+        
+      <button
+        aria-label="subtract button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--less"
+        />
+        
+        
+      </button>
+      
+        
+      <input
+        class="fn-input__text-field fn-step-input__text-field is-hover"
+        id="field-2"
+        tabindex="-1"
+        type="number"
+        value="42"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <button
+        aria-label="add button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--add"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <label
+        for="field-3"
+      >
+        active:
+      </label>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-step-input"
+      tabindex="0"
+    >
+      
+        
+      <button
+        aria-label="subtract button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--less"
+        />
+        
+        
+      </button>
+      
+        
+      <input
+        class="fn-input__text-field fn-step-input__text-field is-active"
+        id="field-3"
+        tabindex="-1"
+        type="number"
+        value="42"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <button
+        aria-label="add button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--add"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <label
+        for="field-4"
+      >
+        focus:
+      </label>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-step-input"
+      tabindex="0"
+    >
+      
+        
+      <button
+        aria-label="subtract button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--less"
+        />
+        
+        
+      </button>
+      
+        
+      <input
+        class="fn-input__text-field fn-step-input__text-field is-focus"
+        id="field-4"
+        tabindex="-1"
+        type="number"
+        value="42"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <button
+        aria-label="add button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--add"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <label
+        for="field-5"
+      >
+        disabled:
+      </label>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-step-input"
+      tabindex="-1"
+    >
+      
+        
+      <button
+        aria-label="subtract button"
+        class="fn-nested-button"
+        disabled=""
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--less"
+        />
+        
+        
+      </button>
+      
+        
+      <input
+        class="fn-input__text-field fn-step-input__text-field"
+        disabled=""
+        id="field-5"
+        tabindex="-1"
+        type="number"
+        value="42"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <button
+        aria-label="add button"
+        class="fn-nested-button"
+        disabled=""
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--add"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <label
+        for="field-6"
+      >
+        display:
+      </label>
+    </div>
+    
+    
+    <div
+      class="fn-input fn-step-input is-display"
+      tabindex="-1"
+    >
+      
+        
+      <button
+        aria-label="subtract button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--less"
+        />
+        
+        
+      </button>
+      
+        
+      <input
+        class="fn-input__text-field fn-step-input__text-field is-display"
+        id="field-6"
+        tabindex="-1"
+        type="number"
+        value="42"
+      />
+      
+        
+      <div
+        class="fn-input__border"
+      />
+      
+        
+      <button
+        aria-label="add button"
+        class="fn-nested-button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--add"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</section>
+`;
