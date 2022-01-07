@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.82...v0.21.0-rc.83) (2022-01-07)
+
+
+### Bug Fixes
+
+* **styles:** link, fix img align [ci visual] ([#3053](https://github.com/SAP/fundamental-styles/issues/3053)) ([d727c5f](https://github.com/SAP/fundamental-styles/commit/d727c5f504e28cf8926ad8a464af2969d65dd2c0))
+
 ## [0.21.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.81...v0.21.0-rc.82) (2022-01-07)
 
 
