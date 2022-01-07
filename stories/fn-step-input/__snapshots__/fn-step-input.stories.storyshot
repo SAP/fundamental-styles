@@ -42,7 +42,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="subtract button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
         
@@ -71,7 +71,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="add button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
         
@@ -113,7 +113,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="subtract button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
         
@@ -142,7 +142,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="add button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
         
@@ -184,7 +184,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="subtract button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
         
@@ -213,7 +213,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="add button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
         
@@ -255,7 +255,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="subtract button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
         
@@ -284,7 +284,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="add button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
         
@@ -326,7 +326,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="subtract button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-left"
         disabled=""
         tabindex="-1"
       >
@@ -357,7 +357,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="add button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-right"
         disabled=""
         tabindex="-1"
       >
@@ -401,7 +401,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="subtract button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
         
@@ -430,7 +430,7 @@ exports[`Storyshots Experimental/Step Input Step Input 1`] = `
         
       <button
         aria-label="add button"
-        class="fn-nested-button"
+        class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
         

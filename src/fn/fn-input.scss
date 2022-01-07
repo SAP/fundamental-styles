@@ -60,12 +60,21 @@ $block: #{$fn-namespace}-input;
   @include fn-disabled() {
     pointer-events: none;
     opacity: $fn-disabled-opacity;
+
+    & + .#{$block}__border {
+      opacity: $fn-disabled-opacity;
+    }
   }
 
   @include fn-display() {
+    @include fn-set-paddings-x-equal(0);
     @include fn-input-base($fn-color-white, transparent, none);
 
     & ~ [class*='sap-icon'] {
+      display: none;
+    }
+
+    & ~ button {
       display: none;
     }
   }
@@ -271,5 +280,13 @@ $block: #{$fn-namespace}-input;
       pointer-events: none;
       opacity: $fn-disabled-opacity;
     }
+  }
+
+  &--combobox {
+    @include fn-flex();
+  }
+
+  &--multi-input {
+    @include fn-flex();
   }
 }

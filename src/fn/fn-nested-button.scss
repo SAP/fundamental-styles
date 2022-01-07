@@ -2,6 +2,20 @@
 
 $block: #{$fn-namespace}-nested-button;
 
+@mixin fn-nested-button-position-absolute($position, $offset: 0.25rem) {
+  @if ($position == 'left') {
+    @include fn-set-position-left($offset);
+  }
+
+  @if ($position == 'right') {
+    @include fn-set-position-right($offset);
+  }
+
+  z-index: 2;
+  top: 0.4375rem;
+  position: absolute;
+}
+
 .#{$block} {
   @include fn-reset();
   @include fn-transition();
@@ -91,5 +105,13 @@ $block: #{$fn-namespace}-nested-button;
     cursor: not-allowed;
     pointer-events: none;
     opacity: $fn-disabled-opacity;
+  }
+
+  &--absolute-right {
+    @include fn-nested-button-position-absolute('right');
+  }
+
+  &--absolute-left {
+    @include fn-nested-button-position-absolute('left');
   }
 }
