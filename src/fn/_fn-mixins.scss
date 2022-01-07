@@ -185,6 +185,16 @@
   margin-bottom: $value;
 }
 
+@mixin fn-set-margins-x($left: 0, $right: 0) {
+  margin-left: $left;
+  margin-right: $right;
+
+  @include fn-rtl() {
+    margin-right: $left;
+    margin-left: $right;
+  }
+}
+
 // Set Paddings
 @mixin fn-set-padding-left($left: 0) {
   padding-left: $left;
