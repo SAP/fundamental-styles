@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.84](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.83...v0.21.0-rc.84) (2022-01-07)
+
+
+### Features
+
+* **fn:** introduce Mutli-Input and Combobox [ci visual] ([#3059](https://github.com/SAP/fundamental-styles/issues/3059)) ([82f409b](https://github.com/SAP/fundamental-styles/commit/82f409bbdb02e1961695cafce352bb09b2eb7d25))
+
 ## [0.21.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.82...v0.21.0-rc.83) (2022-01-07)
 
 
