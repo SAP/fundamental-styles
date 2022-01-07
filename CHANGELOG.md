@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.81...v0.21.0-rc.82) (2022-01-07)
+
+
+### Features
+
+* **fn:** introduce Step Input [ci visual] ([#3056](https://github.com/SAP/fundamental-styles/issues/3056)) ([f72d6b6](https://github.com/SAP/fundamental-styles/commit/f72d6b61fb2eed2f6b0c06739bbf172e96bdc202))
+
 ## [0.21.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.80...v0.21.0-rc.81) (2022-01-07)
 
 
