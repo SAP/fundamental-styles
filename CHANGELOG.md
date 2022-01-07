@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.79...v0.21.0-rc.80) (2022-01-07)
+
+
+### Features
+
+* **fn:** implement new fn-shell component ([#3013](https://github.com/SAP/fundamental-styles/issues/3013)) ([22a7e9c](https://github.com/SAP/fundamental-styles/commit/22a7e9ca504108e83a8862e814ffcab27ca51dcf))
+
 ## [0.21.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.78...v0.21.0-rc.79) (2022-01-04)
 
 ## [0.21.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.77...v0.21.0-rc.78) (2022-01-04)
