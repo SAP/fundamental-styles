@@ -270,6 +270,10 @@
     color: var(--sapLinkColor);
     pointer-events: none;
   }
+
+  & > img {
+    vertical-align: bottom;
+  }
 }
 
 @mixin action-cursor {
