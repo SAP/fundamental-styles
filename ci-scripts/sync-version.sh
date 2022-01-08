@@ -17,6 +17,9 @@ cd ../dist-fn
 
 grep -rl 'VERSION_PLACEHOLDER' . | xargs  perl -X -p -i -e "s/VERSION_PLACEHOLDER/${NEW_VERSION}/g"
 
-ls
+echo "Updating packages.json under fn-icons/libs with version ${NEW_VERSION}"
+cd ../dist-fn-icons
+
+grep -rl 'VERSION_PLACEHOLDER' . | xargs  perl -X -p -i -e "s/VERSION_PLACEHOLDER/${NEW_VERSION}/g"
 
 cd ..
