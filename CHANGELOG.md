@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.84...v0.21.0-rc.85) (2022-01-08)
+
+
+### Features
+
+* **fn-icons:** introduce @fundamental-styles/fn-icons package [ci visual] ([#3060](https://github.com/SAP/fundamental-styles/issues/3060)) ([0e5d820](https://github.com/SAP/fundamental-styles/commit/0e5d820b22a8f5cd03220d4579ad5c69c5833549))
+
 ## [0.21.0-rc.84](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.83...v0.21.0-rc.84) (2022-01-07)
 
 
