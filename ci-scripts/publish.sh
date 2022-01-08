@@ -10,6 +10,8 @@ PACKAGE_PREFIX=@fundamental-styles
 DIST_THEMING_PREVIEW=dist-theming
 PACKAGE_FN=fn
 DIST_FN=dist-fn
+PACKAGE_FN_ICONS=fn-icons
+DIST_FN_ICONS=dist-fn-icons
 
 # delete temp branch
 git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" ":$TRAVIS_BRANCH" > /dev/null 2>&1;
@@ -38,6 +40,13 @@ npm publish
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
 
 cd ${DIST_FN}
+npm publish
+cd ..
+
+# publish fn-icons package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN_ICONS}"
+
+cd ${DIST_FN_ICONS}
 npm publish
 cd ..
 
