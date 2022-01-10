@@ -3,11 +3,11 @@
 $block: #{$fn-namespace}-card;
 
 .#{$block} {
-  @include fn-flex(column);
   @include fn-reset();
+  @include fn-flex(column);
 
   background-color: $fn-color-white;
-  border-radius: 1rem;
+  border-radius: $fn-border-radius-16;
   box-shadow: $fn-shadow-grey-level-2;
   min-height: 10.5rem;
   min-width: 30rem;
@@ -36,28 +36,27 @@ $block: #{$fn-namespace}-card;
 
   &__title-icon-button-container {
     @include fn-flex();
-
-    align-items: center;
+    @include fn-flex-vertical-center();
 
     .#{$block}__title-button {
       @include fn-set-margin-left(auto);
     }
-
     .#{$block}__title-icon {
-      background: $fn-color-blue-500;
-      border-color: $fn-color-blue-500;
-      width: 1rem;
-      height: 1rem;
-
+      @include fn-reset();
+      @include fn-set-rectangle(1rem, 1rem);
       @include fn-set-margin-right(0.5rem);
 
+      background: $fn-color-blue-500;
+      border-color: $fn-color-blue-500;
+
       span {
-        color: white;
+        color: $fn-color-white;
         margin-top: 0.125rem;
       }
     }
 
     .#{$block}__title-container {
+      @include fn-reset();
       @include fn-flex(column);
     }
   }

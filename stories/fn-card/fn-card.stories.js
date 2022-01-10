@@ -1,7 +1,7 @@
 export default {
     title: 'Experimental/Card',
     parameters: {
-        components: ['fn-card', 'icon', 'fn-button'],
+        components: ['fn-card', 'icon', 'fn-button', 'fn-avatar'],
         description: `
 There are two types of cards - "container" cards (default), and "data" cards which are interactive / hoverable / focusable / selectable. Typically container cards will contain complex
 controls within the card whereas the data cards are themselves what the user will be interacting with.
