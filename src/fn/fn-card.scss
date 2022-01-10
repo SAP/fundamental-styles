@@ -34,23 +34,6 @@ $block: #{$fn-namespace}-card;
     }
   }
 
-  &__container {
-    @include fn-flex(column);
-
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
-
-    &-item {
-      display: inline-flex;
-      margin-top: 0.25rem;
-
-      span:not(:first-child) {
-        @include fn-set-margin-left(0.5rem);
-      }
-    }
-  }
-
   &__title-icon-button-container {
     @include fn-flex();
 
@@ -87,13 +70,6 @@ $block: #{$fn-namespace}-card;
     color: $fn-color-grey-800;
     font-size: 1.125rem;
     line-height: 1.375rem;
-
-    &--large {
-      font-size: 4rem;
-      line-height: 4.625rem;
-      margin-bottom: 0.5rem;
-      margin-top: 0.375rem;
-    }
   }
 
   &__subtitle {
@@ -102,21 +78,5 @@ $block: #{$fn-namespace}-card;
 
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  &__description {
-    color: $fn-color-grey-700;
-    font-size: 0.875rem;
-    min-height: 4rem;
-  }
-
-  &__container-title {
-    @include fn-ellipsis();
-
-    color: $fn-color-grey-800;
-    font-size: 0.75rem;
-    font-weight: bold;
-    line-height: 1.125rem;
-    text-transform: uppercase;
   }
 }
