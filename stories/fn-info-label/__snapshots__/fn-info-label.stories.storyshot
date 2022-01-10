@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Info Label Info Label 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+  </style>
+  
+
+    
+  <div
+    class="docs-fn-container"
+  >
+    
+        
+    <span
+      class="fn-info-label fn-info-label--indigo"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--crimson"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--cyan"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--lime"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--pink"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--yellow"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--teal"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--grey"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        State
+      </span>
+      
+        
+    </span>
+    
+    
+  </div>
+  
+
+</section>
+`;
