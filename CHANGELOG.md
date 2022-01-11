@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.86...v0.21.0-rc.87) (2022-01-11)
+
+
+### Features
+
+* **fn:** introduce fn-card and fn-info-label ([#3037](https://github.com/SAP/fundamental-styles/issues/3037)) ([3fc2daf](https://github.com/SAP/fundamental-styles/commit/3fc2daf6bebe0e1e2f7e0a02099f38d8cef4a47e)), closes [#3066](https://github.com/SAP/fundamental-styles/issues/3066)
+
 ## [0.21.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.85...v0.21.0-rc.86) (2022-01-08)
 
 ## [0.21.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.84...v0.21.0-rc.85) (2022-01-08)
