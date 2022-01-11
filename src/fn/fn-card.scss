@@ -1,0 +1,81 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-card;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex(column);
+
+  background-color: $fn-color-white;
+  border-radius: $fn-border-radius-16;
+  box-shadow: $fn-shadow-grey-level-2;
+  min-height: 10.5rem;
+  min-width: 30rem;
+  padding: 1.5rem;
+
+  &--data {
+    box-shadow: $fn-shadow-grey-level-0;
+
+    @include fn-hover() {
+      box-shadow: $fn-shadow-grey-level-1;
+    }
+
+    @include fn-focus() {
+      border: 0.125rem solid $fn-color-blue-500;
+    }
+
+    @include fn-selected() {
+      background-color: $fn-color-blue-100;
+      box-shadow: $fn-shadow-blue-level-0;
+
+      @include fn-hover() {
+        box-shadow: $fn-shadow-blue-level-1;
+      }
+    }
+  }
+
+  &__title-icon-button-container {
+    @include fn-flex();
+    @include fn-flex-vertical-center();
+
+    .#{$block}__title-button {
+      @include fn-set-margin-left(auto);
+    }
+    .#{$block}__title-icon {
+      @include fn-reset();
+      @include fn-set-rectangle(1rem, 1rem);
+      @include fn-set-margin-right(0.5rem);
+
+      background: $fn-color-blue-500;
+      border-color: $fn-color-blue-500;
+
+      span {
+        color: $fn-color-white;
+        margin-top: 0.125rem;
+      }
+    }
+
+    .#{$block}__title-container {
+      @include fn-reset();
+      @include fn-flex(column);
+    }
+  }
+
+  &__title {
+    @include fn-reset();
+    @include fn-ellipsis();
+
+    font-weight: bolder;
+    color: $fn-color-grey-800;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  &__subtitle {
+    @include fn-reset();
+    @include fn-ellipsis();
+
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
