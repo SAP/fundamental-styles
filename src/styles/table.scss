@@ -150,13 +150,13 @@ $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
       }
     }
 
-    &:not(.fd-fixed-height) .fd-table__row:last-of-type {
+    &:not(.fd-fixed-height) .#{$block}__row:last-of-type {
       .#{block}__cell {
         border-bottom: 0;
       }
     }
 
-    .fd-table__body {
+    .#{$block}__body {
       border-left: none;
 
       @include fd-rtl() {
