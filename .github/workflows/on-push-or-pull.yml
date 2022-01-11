@@ -1,0 +1,161 @@
+name: on-pull-request-or-push
+
+env:
+  NODE_VERSION: 14.16.1
+  CACHE_PATHS: |
+    ~/.npmrc
+    ~/.npm
+    node_modules
+  CACHE_KEY: node_modules-${{ hashFiles('**/package.json') }}
+
+  GH_NAME: ${{ secrets.GH_NAME }}
+  GH_EMAIL: ${{ secrets.GH_EMAIL }}
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  NPM_USERNAME: ${{ secrets.NPM_USERNAME }}
+  NPM_EMAIL: ${{ secrets.NPM_EMAIL }}
+  AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+
+  TRAVIS_BRANCH: $GITHUB_REF
+  TRAVIS_REPO_SLUG: $GITHUB_REPOSITORY
+  TRAVIS_BUILD_NUMBER: $GITHUB_RUN_NUMBER
+
+  EVENT_NAME: $GITHUB_EVENT_NAME
+  BRANCH_NAME: $GITHUB_REF_NAME
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - tmp_branch_for_automated_release_do_not_use
+      - hotfix_tmp_branch_for_automated_release_do_not_use
+
+jobs:
+  one_run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.0
+        with:
+          access_token: ${{ env.GH_TOKEN }}
+
+  setupNpm:
+    runs-on: ubuntu-latest
+    name: Set up NPM
+    needs: build
+    if: ${{ env.EVENT_NAME == "push" && env.BRANCH_NAME == "main" }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.CACHE_PATHS }}
+          key: ${{ env.CACHE_KEY }}
+      - run: ./ci-scripts/setup-npm.sh
+        shell: bash
+
+  # install dependencies
+  install:
+    runs-on: ubuntu-latest
+    needs: one_run
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.CACHE_PATHS }}
+          key: ${{ env.CACHE_KEY }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: install dependencies
+        run: npm i
+
+  commit_lint:
+    runs-on: ubuntu-latest
+    name: Lint commit message
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v3
+
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint
+    needs: install
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.CACHE_PATHS }}
+          key: ${{ env.CACHE_KEY }}
+        run: npm run lint
+
+  build:
+    runs-on: ubuntu-latest
+    name: Build and size
+    needs: install
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.CACHE_PATHS }}
+          key: ${{ env.CACHE_KEY }}
+      - run: npm run build:prod && npm run size
+
+  publishRc:
+    runs-on: ubuntu-latest
+    name: Publish RC
+    needs:
+      - install
+      - setupNpm
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.CACHE_PATHS }}
+          key: ${{ env.CACHE_KEY }}
+      - run: ./ci-scripts/publish-rc.sh
+        shell: bash
+
+  release:
+    runs-on: ubuntu-latest
+    name: Release
+    if: ${{ env.BRANCH_NAME == tmp_branch_for_automated_release_do_not_use }}
+    needs:
+      - install
+      - setupNpm
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.CACHE_PATHS }}
+          key: ${{ env.CACHE_KEY }}
+      - run: |
+          git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+          git fetch
+        with:
+          ref: main
+      - run: ./ci-scripts/publish.sh
+        shell: bash
+
+  hotfixRelease:
+    runs-on: ubuntu-latest
+    name: Hotfix release
+    if: ${{ env.BRANCH_NAME == hotfix_tmp_branch_for_automated_release_do_not_use }}
+    needs:
+      - install
+      - setupNpm
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ${{ env.CACHE_PATHS }}
+          key: ${{ env.CACHE_KEY }}
+      - run: |
+          git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+          git fetch
+        with:
+          ref: hotfix_tmp_branch_for_automated_release_do_not_use
+      - run: ./ci-scripts/hotfix-publish.sh
+        shell: bash
