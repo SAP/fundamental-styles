@@ -1,0 +1,65 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-form;
+
+.#{$block} {
+  @include fn-reset();
+
+  &-item {
+    @include fn-reset();
+    @include fn-flex(column);
+
+    &:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+
+    .#{$block}__label {
+      @include fn-ellipsis();
+      @include fn-set-margin-right(0.75rem);
+
+      color: $fn-color-grey-600;
+
+      &--required,
+      &[aria-required='true'] {
+        &::after {
+          @include fn-set-margin-left(0.125rem);
+
+          content: '*';
+          font-weight: bold;
+          color: $fn-color-red-500;
+          position: relative;
+        }
+      }
+
+      &--required-before,
+      &[aria-required='true'] {
+        &::before {
+          @include fn-set-margin-right(0.125rem);
+
+          content: '*';
+          font-weight: bold;
+          color: $fn-color-red-500;
+          position: relative;
+        }
+      }
+    }
+
+    &--horizontal {
+      @include fn-flex(row);
+      @include fn-flex-vertical-center();
+
+      &.has-group {
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+
+    .#{$block}__group {
+      @include fn-flex(column);
+
+      &:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+}

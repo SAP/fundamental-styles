@@ -1,0 +1,1827 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
+<section>
+  
+
+  <style>
+    
+
+
+  </style>
+  
+
+    
+  <div
+    class="fn-form"
+    style="max-width: 25rem;"
+  >
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label"
+      >
+        Checkbox Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required"
+      >
+        Checkbox Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required-before"
+      >
+        Checkbox Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal has-group"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label"
+      >
+        Horizontal Checkbox Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal has-group"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required"
+      >
+        Horizontal Checkbox Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal has-group"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required-before"
+      >
+        Horizontal Checkbox Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-checkbox"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="checkbox"
+            class="fn-checkbox__input"
+            tabindex="-1"
+            type="checkbox"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-checkbox__label"
+          >
+            Checkbox Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Form Input Form Items 1`] = `
+<section>
+  
+
+  <style>
+    
+
+
+  </style>
+  
+
+    
+  <div
+    class="fn-form"
+    style="max-width: 25rem;"
+  >
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label"
+      >
+        Form Input:
+      </span>
+      
+            
+      <div
+        class="fn-input"
+      >
+        
+                
+        <input
+          class="fn-input__text-field"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required"
+      >
+        Required Input:
+      </span>
+      
+            
+      <div
+        class="fn-input"
+      >
+        
+                
+        <input
+          class="fn-input__text-field"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+            
+      </div>
+              
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required-before"
+      >
+        Required Before:
+      </span>
+      
+            
+      <div
+        class="fn-input"
+      >
+        
+                
+        <input
+          class="fn-input__text-field"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+            
+      </div>
+              
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal"
+    >
+      
+            
+      <span
+        class="fn-form__label"
+      >
+        Horizontal:
+      </span>
+      
+            
+      <div
+        class="fn-input"
+      >
+        
+                
+        <input
+          class="fn-input__text-field"
+          id="field-1"
+          placeholder="Placeholder"
+          type="text"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+            
+      </div>
+              
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Form Multi-Input Form Item 1`] = `
+<section>
+  
+
+  <style>
+    
+
+
+  </style>
+  
+
+    
+  <div
+    class="fn-form"
+    style="max-width: 25rem;"
+  >
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label"
+      >
+        Form Multi-Input:
+      </span>
+      
+            
+      <div
+        class="fn-input fn-input--multi-input"
+        tabindex="0"
+      >
+        
+                
+        <input
+          class="fn-input__text-field"
+          id="field-1"
+          placeholder="Placeholder"
+          tabindex="-1"
+          type="text"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+                
+        <button
+          aria-label="nested button"
+          class="fn-nested-button fn-nested-button--absolute-right"
+          tabindex="-1"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--value-help"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal"
+    >
+      
+            
+      <span
+        class="fn-form__label"
+      >
+        Horizontal:
+      </span>
+      
+            
+      <div
+        class="fn-input fn-input--multi-input"
+        tabindex="0"
+      >
+        
+                
+        <input
+          class="fn-input__text-field"
+          id="field-1"
+          placeholder="Placeholder"
+          tabindex="-1"
+          type="text"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+                
+        <button
+          aria-label="nested button"
+          class="fn-nested-button fn-nested-button--absolute-right"
+          tabindex="-1"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--value-help"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
+<section>
+  
+
+  <style>
+    
+
+
+  </style>
+  
+
+    
+  <div
+    class="fn-form"
+    style="max-width: 22rem;"
+  >
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label"
+      >
+        Radio Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required"
+      >
+        Radio Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required-before"
+      >
+        Radio Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal has-group"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label"
+      >
+        Horizontal Radio Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal has-group"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required"
+      >
+        Horizontal Radio Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal has-group"
+    >
+      
+            
+      <span
+        class="fn-form__label fn-form__label--required-before"
+      >
+        Horizontal Radio Form Group:
+      </span>
+      
+            
+      <div
+        class="fn-form__group"
+      >
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 1
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 2
+          </span>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fn-radio"
+          tabindex="0"
+        >
+          
+                    
+          <input
+            aria-label="radio"
+            class="fn-radio__input"
+            tabindex="-1"
+            type="radio"
+          />
+          
+                    
+          <span
+            class="fn-radio__checkmark"
+          />
+          
+                    
+          <span
+            class="fn-radio__label"
+          >
+            Radio Option 3
+          </span>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Form Step-Input Form Item 1`] = `
+<section>
+  
+
+  <style>
+    
+
+
+  </style>
+  
+
+    
+  <div
+    class="fn-form"
+    style="max-width: 25rem;"
+  >
+    
+        
+    <div
+      class="fn-form-item"
+    >
+      
+            
+      <span
+        class="fn-form__label"
+      >
+        Form Step-Input:
+      </span>
+      
+            
+      <div
+        class="fn-input fn-step-input"
+        tabindex="0"
+      >
+        
+                
+        <button
+          aria-label="subtract button"
+          class="fn-nested-button fn-nested-button--absolute-left"
+          tabindex="-1"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--less"
+          />
+          
+                
+        </button>
+        
+                
+        <input
+          class="fn-input__text-field fn-step-input__text-field"
+          id="field-1"
+          tabindex="-1"
+          type="number"
+          value="42"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+                
+        <button
+          aria-label="add button"
+          class="fn-nested-button fn-nested-button--absolute-right"
+          tabindex="-1"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--add"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-form-item fn-form-item--horizontal"
+    >
+      
+            
+      <span
+        class="fn-form__label"
+      >
+        Horizontal Step-Input:
+      </span>
+      
+            
+      <div
+        class="fn-input fn-step-input"
+        tabindex="0"
+      >
+        
+                
+        <button
+          aria-label="subtract button"
+          class="fn-nested-button fn-nested-button--absolute-left"
+          tabindex="-1"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--less"
+          />
+          
+                
+        </button>
+        
+                
+        <input
+          class="fn-input__text-field fn-step-input__text-field"
+          id="field-1"
+          tabindex="-1"
+          type="number"
+          value="42"
+        />
+        
+                
+        <div
+          class="fn-input__border"
+        />
+        
+                
+        <button
+          aria-label="add button"
+          class="fn-nested-button fn-nested-button--absolute-right"
+          tabindex="-1"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--add"
+          />
+          
+                
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+
+</section>
+`;
