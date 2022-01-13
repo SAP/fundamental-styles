@@ -52,8 +52,7 @@ $fn-avatar-base-colors: (
     "normal": $fn-color-indigo-500,
     "hover": $fn-color-indigo-600,
     "active": $fn-color-indigo-700,
-    "focus": $fn-color-indigo-500,
-    "shadow": #8d4bff
+    "focus": $fn-color-indigo-500
   ),
   "crimson": (
     "background": $fn-color-crimson-100,
@@ -61,8 +60,7 @@ $fn-avatar-base-colors: (
     "normal": $fn-color-crimson-500,
     "hover": $fn-color-crimson-600,
     "active": $fn-color-crimson-700,
-    "focus": $fn-color-crimson-500,
-    "shadow": #eb0042
+    "focus": $fn-color-crimson-500
   ),
   "cyan": (
     "background": $fn-color-cyan-100,
@@ -70,8 +68,7 @@ $fn-avatar-base-colors: (
     "normal": $fn-color-cyan-500,
     "hover": $fn-color-cyan-600,
     "active": $fn-color-cyan-700,
-    "focus": $fn-color-cyan-500,
-    "shadow": #00856f
+    "focus": $fn-color-cyan-500
   ),
   "lime": (
     "background": $fn-color-lime-100,
@@ -79,8 +76,7 @@ $fn-avatar-base-colors: (
     "normal": $fn-color-lime-500,
     "hover": $fn-color-lime-600,
     "active": $fn-color-lime-700,
-    "focus": $fn-color-lime-500,
-    "shadow": #188822
+    "focus": $fn-color-lime-500
   ),
   "pink": (
     "background": $fn-color-pink-100,
@@ -88,8 +84,7 @@ $fn-avatar-base-colors: (
     "normal": $fn-color-pink-500,
     "hover": $fn-color-pink-600,
     "active": $fn-color-pink-700,
-    "focus": $fn-color-pink-500,
-    "shadow": #d700ba
+    "focus": $fn-color-pink-500
   ),
   "yellow": (
     "background": $fn-color-yellow-100,
@@ -97,8 +92,7 @@ $fn-avatar-base-colors: (
     "normal": $fn-color-yellow-500,
     "hover": $fn-color-yellow-600,
     "active": $fn-color-yellow-700,
-    "focus": $fn-color-yellow-500,
-    "shadow": #a16b00
+    "focus": $fn-color-yellow-500
   ),
   "teal": (
     "background": $fn-color-teal-100,
@@ -106,14 +100,14 @@ $fn-avatar-base-colors: (
     "normal": $fn-color-teal-400,
     "hover": $fn-color-teal-500,
     "active": $fn-color-teal-600,
-    "focus": $fn-color-teal-500,
-    "shadow": #068570
+    "focus": $fn-color-teal-500
   )
 );
 
 .#{$block} {
   @include fn-reset();
   @include fn-flex-center();
+  @include fn-transition();
 
   border-width: 0.125rem;
   border-style: solid;
@@ -297,7 +291,7 @@ $fn-avatar-base-colors: (
           outline: none;
           border-color: $fn-color-white;
           background: map-get($set-prop, 'focus');
-          box-shadow: 0 0 0 0.125rem map-get($set-prop, 'shadow');
+          box-shadow: 0 0 0 0.125rem map-get($set-prop, 'normal');
         }
 
         @include fn-not-focus-visible() {
@@ -323,7 +317,7 @@ $fn-avatar-base-colors: (
           outline: none;
           border-color: $fn-color-white;
           background: map-get($set-prop, 'focus');
-          box-shadow: 0 0 0 0.125rem map-get($set-prop, 'shadow');
+          box-shadow: 0 0 0 0.125rem map-get($set-prop, 'normal');
         }
 
         @include fn-disabled() {

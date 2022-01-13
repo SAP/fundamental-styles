@@ -94,7 +94,7 @@ export const DefaultInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>display</b></div>
     <div class="fn-input">
-        <input class="fn-input__text-field is-display" type="text" id="field-7" placeholder="Placeholder" />
+        <input class="fn-input__text-field is-display" type="text" id="field-7" placeholder="Placeholder" tabindex="-1" />
         <div class="fn-input__border"></div>
     </div>
 </div>
@@ -164,7 +164,7 @@ export const InfoInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>display</b></div>
     <div class="fn-input fn-input--info">
-        <input class="fn-input__text-field is-display" type="text" id="field-14" placeholder="Placeholder" />
+        <input class="fn-input__text-field is-display" type="text" id="field-14" placeholder="Placeholder" tabindex="-1" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--information"></span>
     </div>
@@ -238,7 +238,7 @@ export const CriticalInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>display</b></div>
     <div class="fn-input fn-input--critical">
-        <input class="fn-input__text-field is-display" type="text" id="field-21" placeholder="Placeholder" />
+        <input class="fn-input__text-field is-display" type="text" id="field-21" placeholder="Placeholder" tabindex="-1" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--alert"></span>
     </div>
@@ -312,7 +312,7 @@ export const NegativeInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>display</b></div>
     <div class="fn-input fn-input--negative">
-        <input class="fn-input__text-field is-display" type="text" id="field-28" placeholder="Placeholder" />
+        <input class="fn-input__text-field is-display" type="text" id="field-28" placeholder="Placeholder" tabindex="-1" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--error"></span>
     </div>
@@ -387,7 +387,7 @@ export const PositiveInput = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>display</b></div>
     <div class="fn-input fn-input--positive">
-        <input class="fn-input__text-field is-display" type="text" id="field-35" placeholder="Placeholder" />
+        <input class="fn-input__text-field is-display" type="text" id="field-35" placeholder="Placeholder" tabindex="-1" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--sys-enter-2"></span>
     </div>

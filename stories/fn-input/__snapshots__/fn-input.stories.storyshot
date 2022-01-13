@@ -305,6 +305,7 @@ exports[`Storyshots Experimental/Input Critical Input 1`] = `
         class="fn-input__text-field is-display"
         id="field-21"
         placeholder="Placeholder"
+        tabindex="-1"
         type="text"
       />
       
@@ -603,6 +604,7 @@ exports[`Storyshots Experimental/Input Default Input 1`] = `
         class="fn-input__text-field is-display"
         id="field-7"
         placeholder="Placeholder"
+        tabindex="-1"
         type="text"
       />
       
@@ -926,6 +928,7 @@ exports[`Storyshots Experimental/Input Info Input 1`] = `
         class="fn-input__text-field is-display"
         id="field-14"
         placeholder="Placeholder"
+        tabindex="-1"
         type="text"
       />
       
@@ -1254,6 +1257,7 @@ exports[`Storyshots Experimental/Input Negative Input 1`] = `
         class="fn-input__text-field is-display"
         id="field-28"
         placeholder="Placeholder"
+        tabindex="-1"
         type="text"
       />
       
@@ -1582,6 +1586,7 @@ exports[`Storyshots Experimental/Input Positive Input 1`] = `
         class="fn-input__text-field is-display"
         id="field-35"
         placeholder="Placeholder"
+        tabindex="-1"
         type="text"
       />
       

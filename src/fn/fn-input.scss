@@ -64,11 +64,17 @@ $block: #{$fn-namespace}-input;
     & + .#{$block}__border {
       opacity: $fn-disabled-opacity;
     }
+
+    & ~ [class*='sap-icon'] {
+      opacity: $fn-disabled-opacity;
+    }
   }
 
   @include fn-display() {
     @include fn-set-paddings-x-equal(0);
     @include fn-input-base($fn-color-white, transparent, none);
+
+    pointer-events: none;
 
     & ~ [class*='sap-icon'] {
       display: none;
@@ -83,6 +89,7 @@ $block: #{$fn-namespace}-input;
 @mixin fn-input-base-semantics($background, $border, $shadow) {
   [class*='sap-icon'] {
     color: $border;
+    position: absolute;
   }
 
   .#{$block}__text-field {
@@ -104,12 +111,11 @@ $block: #{$fn-namespace}-input;
   position: relative;
 
   [class*='sap-icon'] {
-    @include fn-set-position-right(0);
+    @include fn-set-position-right(0.25rem);
 
-    top: 0;
-    width: 1.625rem;
-    font-size: 1rem;
-    position: absolute;
+    z-index: 2;
+    width: 1.125rem;
+    font-size: 0.9375rem;
     text-align: center;
     height: $fn-element-height;
     line-height: $fn-element-height;
@@ -166,14 +172,15 @@ $block: #{$fn-namespace}-input;
   }
 
   &--negative {
-    @include fn-input-base-semantics($fn-color-red-50, $fn-color-red-400, $fn-shadow-red-level-1);
+    @include fn-input-base-semantics($fn-color-red-50, $fn-color-red-500, $fn-shadow-red-level-1);
   }
 
   &--positive {
-    @include fn-input-base-semantics($fn-color-green-50, $fn-color-green-400, $fn-shadow-green-level-1);
+    @include fn-input-base-semantics($fn-color-green-50, $fn-color-green-500, $fn-shadow-green-level-1);
   }
 
   &--select {
+    outline: none;
     cursor: pointer;
 
     .#{$block}__text-field {
@@ -181,13 +188,6 @@ $block: #{$fn-namespace}-input;
       @include fn-set-paddings-x(0.5rem, 1.625rem);
 
       pointer-events: none;
-    }
-
-    [class*='sap-icon'] {
-      @include fn-flex-center();
-
-      line-height: 1;
-      position: relative;
     }
 
     button {
@@ -225,19 +225,6 @@ $block: #{$fn-namespace}-input;
       }
     }
 
-    @include fn-is-focus() {
-      .#{$block}__text-field {
-        background: $fn-color-white;
-      }
-
-      .#{$block}__border::before {
-        border-bottom: none;
-      }
-
-      outline: none;
-      box-shadow: $fn-focus-outline-shadow-blue;
-    }
-
     @include fn-focus-visible() {
       .#{$block}__text-field {
         background: $fn-color-white;
@@ -253,8 +240,9 @@ $block: #{$fn-namespace}-input;
 
     @include fn-display() {
       .#{$block}__text-field {
-        background: transparent;
+        outline: none;
         box-shadow: none;
+        background: transparent;
       }
 
       .#{$block}__border::before {
@@ -263,6 +251,7 @@ $block: #{$fn-namespace}-input;
 
       outline: none;
       box-shadow: none;
+      pointer-events: none;
 
       button {
         display: none;
@@ -279,6 +268,14 @@ $block: #{$fn-namespace}-input;
     @include fn-disabled() {
       pointer-events: none;
       opacity: $fn-disabled-opacity;
+
+      & + .#{$block}__border {
+        opacity: $fn-disabled-opacity;
+      }
+
+      & ~ [class*='sap-icon'] {
+        opacity: $fn-disabled-opacity;
+      }
     }
   }
 

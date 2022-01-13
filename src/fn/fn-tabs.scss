@@ -186,6 +186,7 @@ $fn-tabs-base: (
   // Tabs Text Container
   &__text {
     @include fn-reset();
+    @include fn-ellipsis();
 
     font-weight: bold;
   }
@@ -306,12 +307,13 @@ $fn-tabs-base: (
         @include fn-tabs-close-btn-visible();
 
         @include fn-active() {
+          @include fn-tabs-close-btn-visible();
           @include fn-tabs-multi-instance-active();
-          @include fn-set-paddings-x-equal(1.25rem);
+          // @include fn-set-paddings-x-equal(1.25rem);
         }
       }
 
-      // Show the close button and set equal paddings on mouse click (mouse foucs)
+      // Show the close button and set equal paddings on mouse click (mouse focus)
       @include fn-not-focus-visible() {
         @include fn-tabs-close-btn-hidden();
         @include fn-set-paddings-x-equal(1.25rem);
@@ -321,9 +323,9 @@ $fn-tabs-base: (
           @include fn-tabs-close-btn-visible();
 
           @include fn-active() {
-            @include fn-tabs-close-btn-hidden();
+            @include fn-tabs-close-btn-visible();
             @include fn-tabs-multi-instance-active();
-            @include fn-set-paddings-x-equal(1.25rem);
+            // @include fn-set-paddings-x-equal(1.25rem);
           }
         }
       }
