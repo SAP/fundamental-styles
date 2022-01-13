@@ -19,7 +19,7 @@ exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -129,7 +129,7 @@ exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -239,7 +239,7 @@ exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -349,7 +349,7 @@ exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal has-group"
+      class="fn-form__item fn-form__item--horizontal has-group"
     >
       
             
@@ -459,7 +459,7 @@ exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal has-group"
+      class="fn-form__item fn-form__item--horizontal has-group"
     >
       
             
@@ -569,7 +569,7 @@ exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal has-group"
+      class="fn-form__item fn-form__item--horizontal has-group"
     >
       
             
@@ -703,7 +703,7 @@ exports[`Storyshots Experimental/Form Input Form Items 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -739,7 +739,7 @@ exports[`Storyshots Experimental/Form Input Form Items 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -775,7 +775,7 @@ exports[`Storyshots Experimental/Form Input Form Items 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -811,7 +811,7 @@ exports[`Storyshots Experimental/Form Input Form Items 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal"
+      class="fn-form__item fn-form__item--horizontal"
     >
       
             
@@ -871,7 +871,7 @@ exports[`Storyshots Experimental/Form Multi-Input Form Item 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -924,7 +924,7 @@ exports[`Storyshots Experimental/Form Multi-Input Form Item 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal"
+      class="fn-form__item fn-form__item--horizontal"
     >
       
             
@@ -1001,7 +1001,7 @@ exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -1111,7 +1111,7 @@ exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -1221,7 +1221,7 @@ exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -1331,7 +1331,7 @@ exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal has-group"
+      class="fn-form__item fn-form__item--horizontal has-group"
     >
       
             
@@ -1441,7 +1441,7 @@ exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal has-group"
+      class="fn-form__item fn-form__item--horizontal has-group"
     >
       
             
@@ -1551,7 +1551,7 @@ exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal has-group"
+      class="fn-form__item fn-form__item--horizontal has-group"
     >
       
             
@@ -1685,7 +1685,7 @@ exports[`Storyshots Experimental/Form Step-Input Form Item 1`] = `
     
         
     <div
-      class="fn-form-item"
+      class="fn-form__item"
     >
       
             
@@ -1753,7 +1753,7 @@ exports[`Storyshots Experimental/Form Step-Input Form Item 1`] = `
     
         
     <div
-      class="fn-form-item fn-form-item--horizontal"
+      class="fn-form__item fn-form__item--horizontal"
     >
       
             

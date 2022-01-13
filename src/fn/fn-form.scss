@@ -5,7 +5,7 @@ $block: #{$fn-namespace}-form;
 .#{$block} {
   @include fn-reset();
 
-  &-item {
+  &__item {
     @include fn-reset();
     @include fn-flex(column);
 

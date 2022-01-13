@@ -24,28 +24,28 @@ const localStyles = `
 
 export const Primary = () => `${localStyles}
     <div class="fn-form" style="max-width: 25rem;">
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label">Form Input:</span>
             <div class="fn-input">
                 <input class="fn-input__text-field" type="text" id="field-1" placeholder="Placeholder" />
                 <div class="fn-input__border"></div>
             </div>
         </div>
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label--required">Required Input:</span>
             <div class="fn-input">
                 <input class="fn-input__text-field" type="text" id="field-1" placeholder="Placeholder" />
                 <div class="fn-input__border"></div>
             </div>        
         </div>
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label--required-before">Required Before:</span>
             <div class="fn-input">
                 <input class="fn-input__text-field" type="text" id="field-1" placeholder="Placeholder" />
                 <div class="fn-input__border"></div>
             </div>        
         </div>
-        <div class="fn-form-item fn-form-item--horizontal">
+        <div class="fn-form__item fn-form__item--horizontal">
             <span class="fn-form__label">Horizontal:</span>
             <div class="fn-input">
                 <input class="fn-input__text-field" type="text" id="field-1" placeholder="Placeholder" />
@@ -67,7 +67,7 @@ Primary.parameters = {
 
 export const Multi = () => `${localStyles}
     <div class="fn-form" style="max-width: 25rem;">
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label">Form Multi-Input:</span>
             <div class="fn-input fn-input--multi-input" tabindex="0">
                 <input class="fn-input__text-field" type="text" id="field-1" placeholder="Placeholder" tabindex="-1" />
@@ -77,7 +77,7 @@ export const Multi = () => `${localStyles}
                 </button>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal">
+        <div class="fn-form__item fn-form__item--horizontal">
             <span class="fn-form__label">Horizontal:</span>
             <div class="fn-input fn-input--multi-input" tabindex="0">
                 <input class="fn-input__text-field" type="text" id="field-1" placeholder="Placeholder" tabindex="-1" />
@@ -102,7 +102,7 @@ Multi.parameters = {
 
 export const Step = () => `${localStyles}
     <div class="fn-form" style="max-width: 25rem;">
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label">Form Step-Input:</span>
             <div class="fn-input fn-step-input" tabindex="0">
                 <button class="fn-nested-button fn-nested-button--absolute-left" aria-label="subtract button" tabindex="-1">
@@ -115,7 +115,7 @@ export const Step = () => `${localStyles}
                 </button>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal">
+        <div class="fn-form__item fn-form__item--horizontal">
             <span class="fn-form__label">Horizontal Step-Input:</span>
             <div class="fn-input fn-step-input" tabindex="0">
                 <button class="fn-nested-button fn-nested-button--absolute-left" aria-label="subtract button" tabindex="-1">
@@ -143,7 +143,7 @@ Step.parameters = {
 
 export const CheckboxGroup = () => `${localStyles}
     <div class="fn-form" style="max-width: 25rem;">
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label">Checkbox Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-checkbox" tabindex="0">
@@ -163,7 +163,7 @@ export const CheckboxGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label--required">Checkbox Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-checkbox" tabindex="0">
@@ -183,7 +183,7 @@ export const CheckboxGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label--required-before">Checkbox Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-checkbox" tabindex="0">
@@ -203,7 +203,7 @@ export const CheckboxGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal has-group">
+        <div class="fn-form__item fn-form__item--horizontal has-group">
             <span class="fn-form__label fn-form__label">Horizontal Checkbox Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-checkbox" tabindex="0">
@@ -223,7 +223,7 @@ export const CheckboxGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal has-group">
+        <div class="fn-form__item fn-form__item--horizontal has-group">
             <span class="fn-form__label fn-form__label--required">Horizontal Checkbox Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-checkbox" tabindex="0">
@@ -243,7 +243,7 @@ export const CheckboxGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal has-group">
+        <div class="fn-form__item fn-form__item--horizontal has-group">
             <span class="fn-form__label fn-form__label--required-before">Horizontal Checkbox Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-checkbox" tabindex="0">
@@ -278,7 +278,7 @@ CheckboxGroup.parameters = {
 
 export const RadioGroup = () => `${localStyles}
     <div class="fn-form" style="max-width: 22rem;">
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label">Radio Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-radio" tabindex="0">
@@ -298,7 +298,7 @@ export const RadioGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label--required">Radio Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-radio" tabindex="0">
@@ -318,7 +318,7 @@ export const RadioGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item">
+        <div class="fn-form__item">
             <span class="fn-form__label fn-form__label--required-before">Radio Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-radio" tabindex="0">
@@ -338,7 +338,7 @@ export const RadioGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal has-group">
+        <div class="fn-form__item fn-form__item--horizontal has-group">
             <span class="fn-form__label fn-form__label">Horizontal Radio Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-radio" tabindex="0">
@@ -358,7 +358,7 @@ export const RadioGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal has-group">
+        <div class="fn-form__item fn-form__item--horizontal has-group">
             <span class="fn-form__label fn-form__label--required">Horizontal Radio Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-radio" tabindex="0">
@@ -378,7 +378,7 @@ export const RadioGroup = () => `${localStyles}
                 </div>
             </div>
         </div>
-        <div class="fn-form-item fn-form-item--horizontal has-group">
+        <div class="fn-form__item fn-form__item--horizontal has-group">
             <span class="fn-form__label fn-form__label--required-before">Horizontal Radio Form Group:</span>
             <div class="fn-form__group">
                 <div class="fn-radio" tabindex="0">
