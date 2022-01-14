@@ -100,6 +100,8 @@ jobs:
           git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
           git fetch
       - run: ./ci-scripts/publish-rc.sh
+        env:
+            GH_TOKEN: ${{ secrets.GHACTIONS }}
         shell: bash
 
   release:
@@ -121,6 +123,8 @@ jobs:
           git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
           git fetch
       - run: ./ci-scripts/publish.sh
+        env:
+            GH_TOKEN: ${{ secrets.GHACTIONS }}
         shell: bash
 
   hotfixRelease:
@@ -144,4 +148,5 @@ jobs:
       - run: ./ci-scripts/hotfix-publish.sh
         shell: bash
         env:
+          GH_TOKEN: ${{ secrets.GHACTIONS }}
           TRAVIS_BUILD_STAGE_NAME: Hotfix-release
