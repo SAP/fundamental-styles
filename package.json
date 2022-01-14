@@ -6,10 +6,10 @@
   "scripts": {
     "build": "npm run style:remove && npm run build:default && npm run build:fn && npm run build:theming-preview && npm run build:fn-icons && npm run sync-versions",
     "build:default": "npm run style:compile && npm run style:theme && npm run style:postCSS && npm run style:assets",
-    "build:fn": "npm run style-fn:compile && npm run style-fn:postCSS && cp -R config/fn/README.md dist-fn && cp -R config/fn/package.json dist-fn",
+    "build:fn": "npm run style-fn:compile && npm run style-fn:postCSS && node ./scripts/copy-fn-readme-and-package.js",
     "build:fn-icons": "babel-node ./scripts/copy-icons.js",
     "build:prod": "cross-env NODE_ENV=production npm run build",
-    "build:theming-preview": "cp -R theming-preview dist-theming && cp dist/fundamental-styles.css dist-theming/fundamental-styles.css",
+    "build:theming-preview": "node ./scripts/build-theming-preview.js",
     "deploy": "gh-pages -d storybook-static/",
     "lint:style": "stylelint \"{src,.storybook}/**/*.(sa|sc|c)ss\"",
     "lint:js": "eslint . --ext .js",
@@ -29,11 +29,12 @@
     "style:remove": "rimraf dist && rimraf dist-theming && rimraf dist-fn && rimraf dist-fn-icons",
     "style-fn:compile": "sass -q --style expanded src/fn:dist-fn/dist",
     "style-fn:postCSS": "postcss --config config/postcss.config.js --replace dist-fn/dist/*.css",
-    "sync-versions": "./ci-scripts/sync-version.sh",
+    "sync-versions": "node ./scripts/sync-version.js",
     "test": "npm run test:accessibility && server-test storybook:ci http-get://localhost:6006 \"npm run storybook:visual:setup\"",
     "test:accessibility": "babel-node scripts/build-accessibility-tests.js && jest ---testPathIgnorePatterns=storybook-testing/storyshots.test.js",
     "test:update": "server-test storybook:ci http-get://localhost:6006 \"npm run storybook:visual:setup -- --updateSnapshot\"",
-    "storybook": "npm run storybook:prep && start-storybook -s .storybook/static/,node_modules/@sap-theming,dist/,dist-fn/dist/ -p 6006",
+    "storybook": "npm run storybook:prep && npm run storybook:serve",
+    "storybook:serve": "start-storybook -s .storybook/static/,node_modules/@sap-theming,dist/,dist-fn/dist/ -p 6006",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:prep": "npm run build && babel-node scripts/build-visual-stories.js && babel-node scripts/storybook-prep.js",
     "storybook:static": "rimraf storybook-static && npm run storybook:prep && STORYBOOK_ENV=docs build-storybook -c .storybook -o storybook-static -s .storybook/static/,node_modules/@sap-theming,dist/,dist-fn/dist/ --docs",
@@ -131,5 +132,10 @@
   "browserslist": [
     "last 2 versions",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "colors": "^1.4.0",
+    "klaw-sync": "^6.0.0",
+    "xxhashjs": "^0.2.2"
+  }
 }
