@@ -30,6 +30,7 @@ $block: #{$fn-namespace}-search;
   }
 
   &__input {
+    @include fn-reset();
     @include fn-ellipsis();
     @include fn-transition();
     @include fn-set-paddings-x(2rem, 1.625rem);
@@ -82,7 +83,6 @@ $block: #{$fn-namespace}-search;
 
     z-index: 10;
     line-height: 1;
-    font-size: 0.5rem;
     position: absolute;
     color: $fn-color-grey-500;
 

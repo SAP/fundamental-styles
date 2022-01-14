@@ -24,6 +24,8 @@ $block: #{$fn-namespace}-step-input;
     }
 
     &.is-display {
+      @include fn-set-paddings-x-equal(0);
+
       text-align: unset;
     }
   }
