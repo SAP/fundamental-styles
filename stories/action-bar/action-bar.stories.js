@@ -4,7 +4,7 @@ export default {
         description: `The action bar displays at the top of the page, and includes the page’s title, description, back button and action buttons.
 
 ##Usage
-**Use action bar if:**
+**Use action bar if -:**
 
 -	You want to control the settings of the UI, which affects all items.
 -	You want to display actions at the top of the screen.
