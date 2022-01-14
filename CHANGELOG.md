@@ -1,4 +1,11 @@
 
+## [0.21.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.87...v0.21.0-rc.88) (2022-01-14)
+
+
+### Bug Fixes
+
+* **fn:** bug fixes after design review [ci visual] ([#3070](https://github.com/SAP/fundamental-styles/issues/3070)) ([7bd3d19](https://github.com/SAP/fundamental-styles/commit/7bd3d193cf08874dd2a0bf34e7cf2be17cff2dfa))
+
 ## [0.21.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.86...v0.21.0-rc.87) (2022-01-11)
 
 
