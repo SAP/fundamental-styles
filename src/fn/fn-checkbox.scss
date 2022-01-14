@@ -65,6 +65,8 @@ $block: #{$fn-namespace}-checkbox;
   }
 
   @include fn-display() {
+    pointer-events: none;
+
     .#{$block}__checkmark {
       border-color: $fn-color-grey-700;
     }
