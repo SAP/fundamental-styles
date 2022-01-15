@@ -109,7 +109,6 @@ export const StepInput = () => `${localStyles}
 </div>
 `;
 
-StepInput.storyName = 'Step Input';
 StepInput.parameters = {
     docs: {
         iframeHeight: 500

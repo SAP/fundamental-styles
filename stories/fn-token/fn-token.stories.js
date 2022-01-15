@@ -70,5 +70,3 @@ export const Token = () => `${localStyles}
     </div>
 </div>
 `;
-
-Token.storyName = 'Token';

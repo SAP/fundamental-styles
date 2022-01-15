@@ -91,7 +91,6 @@ export const Combobox = () => `${localStyles}
 </div>
 `;
 
-Combobox.storyName = 'Combobox';
 Combobox.parameters = {
     docs: {
         iframeHeight: 500,
