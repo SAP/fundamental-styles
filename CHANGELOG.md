@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.90 (2022-01-15)
+
+
+### Bug Fixes
+
+* **styles:** pagination more element size, improvements [ci visual] ([#3075](https://github.com/SAP/fundamental-styles/issues/3075)) ([090ac58](https://github.com/SAP/fundamental-styles/commit/090ac58849ec80fba9821a315d2e02477b8a443f))
+
 ## 0.21.0-rc.89 (2022-01-15)
 
 ## [0.21.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.87...v0.21.0-rc.88) (2022-01-14)
