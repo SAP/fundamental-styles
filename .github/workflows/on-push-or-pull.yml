@@ -90,6 +90,8 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v2
+        with:
+            token: ${{ secrets.GHACTIONS }}
       - uses: actions/cache@v2
         with:
           path: ${{ env.CACHE_PATHS }}
@@ -113,6 +115,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: main
+          token: ${{ secrets.GHACTIONS }}
       - uses: actions/cache@v2
         with:
           path: ${{ env.CACHE_PATHS }}
