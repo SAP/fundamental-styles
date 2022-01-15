@@ -24,7 +24,7 @@
     "start": "npm run storybook",
     "style:assets": "babel-node ./scripts/copy-assets.js",
     "style:compile": "sass -q --style expanded src/styles:dist/",
-    "style:theme": " babel-node scripts/theme-css.js",
+    "style:theme": "babel-node scripts/theme-css.js",
     "style:postCSS": "postcss --config config/postcss.config.js --replace dist/*.css",
     "style:remove": "rimraf dist && rimraf dist-theming && rimraf dist-fn && rimraf dist-fn-icons",
     "style-fn:compile": "sass -q --style expanded src/fn:dist-fn/dist",
@@ -123,7 +123,11 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0",
     "tocbot": "^4.12.3",
-    "webpack-merge": "^5.7.3"
+    "webpack-merge": "^5.7.3",
+    "webpack": "^5.66.0",
+    "xxhashjs": "^0.2.2",
+    "colors": "^1.4.0",
+    "klaw-sync": "^6.0.0"
   },
   "directories": {
     "storybook-testing": "storybook-testing"
