@@ -60,8 +60,12 @@ $block: #{$fd-namespace}-pagination;
     &::before {
       content: "...";
       display: block;
-      width: 1.5rem;
+      width: 2.25rem;
       text-align: center;
+    }
+
+    &--compact::before {
+      width: 2rem;
     }
   }
 
@@ -106,7 +110,8 @@ $block: #{$fd-namespace}-pagination;
   }
 
   .#{$block}__link {
-    @include fd-active() {
+    /** :active links still should be displayed */
+    &.is-active {
       display: none;
     }
   }
