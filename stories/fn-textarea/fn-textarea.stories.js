@@ -76,5 +76,3 @@ export const Textarea = () => `${localStyles}
     </div>
 </div>
 `;
-
-Textarea.storyName = 'Textarea';
