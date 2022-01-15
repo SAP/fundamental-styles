@@ -534,7 +534,7 @@ exports[`Storyshots Components/Pagination First page 1`] = `
 
         
       <span
-        class="fd-pagination__more"
+        class="fd-pagination__more fd-pagination__more--compact"
         role="presentation"
       />
       
@@ -842,7 +842,7 @@ exports[`Storyshots Components/Pagination Last page 1`] = `
 
         
       <span
-        class="fd-pagination__more"
+        class="fd-pagination__more fd-pagination__more--compact"
         role="presentation"
       />
       
@@ -1231,7 +1231,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <span
-        class="fd-pagination__more"
+        class="fd-pagination__more fd-pagination__more--compact"
         role="presentation"
       />
       
@@ -1309,7 +1309,7 @@ exports[`Storyshots Components/Pagination Middle pages 1`] = `
 
         
       <span
-        class="fd-pagination__more"
+        class="fd-pagination__more fd-pagination__more--compact"
         role="presentation"
       />
       
@@ -2101,7 +2101,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
 
             
       <span
-        class="fd-pagination__more"
+        class="fd-pagination__more fd-pagination__more--compact"
         role="presentation"
       />
       

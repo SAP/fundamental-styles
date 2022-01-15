@@ -71,7 +71,7 @@ export const FirstPage = () => `<h3>> 9 Pages</h3>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 7'>7</a>
 
-        <span class='fd-pagination__more' role='presentation'></span>
+        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 500'>500</a>
 
@@ -153,7 +153,7 @@ export const MiddlePage = () => `<h3>> 9 Pages</h3>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-        <span class='fd-pagination__more' role='presentation'></span>
+        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 298'>298</a>
 
@@ -169,7 +169,7 @@ export const MiddlePage = () => `<h3>> 9 Pages</h3>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 302'>302</a>
 
-        <span class='fd-pagination__more' role='presentation'></span>
+        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 500'>500</a>
 
@@ -253,7 +253,7 @@ export const LastPage = () => `<h3>> 9 Pages</h3>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-        <span class='fd-pagination__more' role='presentation'></span>
+        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
 
         <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 494'>494</a>
 
@@ -388,7 +388,7 @@ export const PerPage = () => `<div style='height: 175px'>
 
             <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-            <span class='fd-pagination__more' role='presentation'></span>
+            <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
 
             <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 494'>494</a>
 
