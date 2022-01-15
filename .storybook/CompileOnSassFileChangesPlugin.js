@@ -5,17 +5,19 @@ const { exec } = require('child_process');
  */
 class CompileOnSassFileChangesPlugin {
     apply(compiler) {
-        compiler.hooks.watchRun.tap('watchRun', (comp) => {
-            const { modifiedFiles } = comp;
+        compiler.hooks.watchRun.tapAsync('watchRun', (compilation, callback) => {
+            const { modifiedFiles } = compilation;
             if (modifiedFiles) {
                 const wasSassChanged = [...modifiedFiles.keys()].some((file) => file.includes('.scss'));
                 if (wasSassChanged) {
-                    exec('npm run build:default', (err, stdout, stderr) => {
+                    return exec('npm run build:default', (err, stdout, stderr) => {
                         if (stdout) process.stdout.write(stdout);
                         if (stderr) process.stderr.write(stderr);
+                        callback(null);
                     });
                 }
             }
+            callback(null);
         });
     }
 }
