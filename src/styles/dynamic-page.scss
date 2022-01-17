@@ -17,7 +17,7 @@ $block: #{$fd-namespace}-dynamic-page;
   $fd-dynamic-page-focus-outline-offset: 0.0625rem;
   $fd-button-height: 1.5rem;
   $fd-button-clickable-height: 2rem;
-  $fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) / 2;
+  $fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) * 0.5;
   $fd-dynamic-page-toolbar-space: 1rem;
 
   @include fd-reset();

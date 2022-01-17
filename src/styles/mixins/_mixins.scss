@@ -92,8 +92,8 @@
   border-style: solid;
 
   @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
-    $width: $width / 2;
-    $height: if(length($size) > 1, $height, $height/2);
+    $width: $width * 0.5;
+    $height: if(length($size) > 1, $height, $height * 0.5);
 
     @if $direction == up {
       border-width: 0 $width $height $width;

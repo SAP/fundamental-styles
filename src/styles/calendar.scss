@@ -266,16 +266,16 @@ $fd-calendar-special-days: (
     flex-grow: 1;
 
     &:not(:last-child):not(:first-child) {
-      margin-left: $fd-calendar-action-padding / 2;
-      margin-right: $fd-calendar-action-padding / 2;
+      margin-left: $fd-calendar-action-padding * 0.5;
+      margin-right: $fd-calendar-action-padding * 0.5;
     }
 
     &:first-child {
-      margin-right: $fd-calendar-action-padding / 2;
+      margin-right: $fd-calendar-action-padding * 0.5;
     }
 
     &:last-child {
-      margin-left: $fd-calendar-action-padding / 2;
+      margin-left: $fd-calendar-action-padding * 0.5;
     }
 
     > [type="button"] {
