@@ -13,8 +13,9 @@ fs.readdirSync('dist').forEach(file => {
     if (originalExtension !== 'css') return;
 
     supportedThemes.forEach(theme => {
-        fs.copyFile(path.resolve(__dirname, `../dist/${file}`), `dist/${fileName}-${theme}.css`, (err) => {
-            if (err) throw err;
-        });
+        fs.copySync(
+            path.resolve(__dirname, `../dist/${file}`),
+            path.resolve(__dirname, `../dist/${fileName}-${theme}.css`)
+        );
     });
 }, { withFileTypes: true });

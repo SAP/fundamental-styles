@@ -84,6 +84,7 @@
     "case": "^1.6.3",
     "chromatic": "^6.0.4",
     "clean-css-cli": "^5.4.1",
+    "colors": "^1.4.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
     "cssnano": "^4.1.11",
@@ -95,6 +96,7 @@
     "husky": "7.0.4",
     "jest": "^26.4.2",
     "jest-axe": "^4.1.0",
+    "klaw-sync": "^6.0.0",
     "line-reader": "^0.4.0",
     "markdown-to-jsx": "^7.1.2",
     "mkdirp": "^1.0.4",
@@ -126,10 +128,8 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-scss": "^3.19.0",
     "tocbot": "^4.12.3",
-    "webpack-merge": "^5.7.3",
     "webpack": "^5.66.0",
-    "colors": "^1.4.0",
-    "klaw-sync": "^6.0.0"
+    "webpack-merge": "^5.7.3"
   },
   "directories": {
     "storybook-testing": "storybook-testing"
