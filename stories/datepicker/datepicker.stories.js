@@ -9,7 +9,14 @@ Use this control if the user needs to enter a single date or a date range. The c
 The date-picker component is an opinionated composition of the \`input-group\`, \`popover\` and \`calendar\` components to accomplish the UI pattern for picking a date.
 
 This component mostly relies on the CSS of other components and has very little CSS of its own.
+
+##Usage
+**Use action bar if:**
+
+-   You need a range and know that your user is a power user who has to input lots of data. If the keyboard is the primary device used for navigating the app, use two input fields. This allows the user to quickly jump from field to field. By selecting a date in one of the fields, the other field should know what is selected and jump to the same selection.
+
 `,
+        tags: ['f3', 'a11y', 'theme'],
         components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label', 'icon', 'bar', 'dialog', 'segmented-button']
     }
 };
