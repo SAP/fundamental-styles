@@ -15,11 +15,11 @@ export const withThemeProvider = makeDecorator({
 });
 
 export const changeDocumentTheme = (newTheme, forComponents) => {
-    if(!newTheme?.trim().length || !Array.isArray(forComponents) || !forComponents?.length) return;
+    if (!newTheme?.trim().length || !Array.isArray(forComponents) || !forComponents?.length) return;
 
     let links = [].slice.call(document.getElementsByTagName('link'));
     let toRemove = [];
-    links.forEach(item => {
+    links.forEach((item) => {
         if (item.attributes['data-theme-id']) {
             toRemove.push(item);
         }
@@ -36,17 +36,29 @@ export const changeDocumentTheme = (newTheme, forComponents) => {
         return link;
     };
 
-    forComponents.forEach(component => {
-        let stylePath = `${component}`;
-        if(!stylePath.startsWith('fn-')){
-            stylePath = `${stylePath}-${newTheme}.css`;
-        } else {
-            stylePath = `${stylePath}.css`;
+    const getStylePath = (componentName) => {
+        if (!componentName.startsWith('fn-')) {
+            return `${componentName}-${newTheme}.css`;
         }
-        document.head.appendChild(styleLinkTag(stylePath));
+        return `${componentName}.css`;
+    };
+
+    const importebi = forComponents.map((componentName) => {
+        return require(`../../src/styles/${componentName}.scss`);
     });
 
-    toRemove.forEach(item => {
+    // Promise.all(imports).then(styles => {
+    //     console.log({styles});
+    // })
+
+    console.log({ importebi });
+
+    // forComponents.forEach(component => {
+    //     let stylePath = getStylePath(`${component}`);
+    //     document.head.appendChild(styleLinkTag(stylePath));
+    // });
+
+    toRemove.forEach((item) => {
         item.parentNode.removeChild(item);
     });
 

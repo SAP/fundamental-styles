@@ -5,6 +5,7 @@ import prettify from 'pretty';
 import { withThemeProvider } from './custom/themeProvider';
 import DocsPage from './custom/components/DocsPage';
 import fundamentals from './custom/fundamentals';
+import availableThemes from './custom/availableThemes';
 
 export const parameters = {
   cssresources: [
@@ -67,14 +68,7 @@ export const globalTypes = {
     defaultValue: 'sap_fiori_3',
     toolbar: {
       icon: 'paintbrush',
-      items: [
-        { value: 'sap_fiori_3', title: 'Quartz Light' },
-        { value: 'sap_fiori_3_dark', title: 'Quartz Dark' },
-        { value: 'sap_fiori_3_light_dark', title: 'Light Dark' },
-        { value: 'sap_fiori_3_hcw', title: 'High Contrast White' },
-        { value: 'sap_fiori_3_hcb', title: 'High Contrast Black' },
-        { value: 'sap_horizon', title: 'Horizon' },
-      ],
+      items: availableThemes,
     },
   },
 };
