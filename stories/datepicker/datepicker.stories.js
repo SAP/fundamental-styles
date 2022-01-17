@@ -13,9 +13,7 @@ This component mostly relies on the CSS of other components and has very little 
 ##Usage
 **Use action bar if:**
 
--   You need a range and know that your user is a power user who has to input lots of data. If the keyboard is the primary device used for navigating the app, use two input fields. This allows the user to quickly jump from field to field. By selecting a date in one of the fields, the other field should know what is selected and jump to the same selection.
-
-`,
+-   You need a range and know that your user is a power user who has to input lots of data. If the keyboard is the primary device used for navigating the app, use two input fields. This allows the user to quickly jump from field to field. By selecting a date in one of the fields, the other field should know what is selected and jump to the same selection`,
         tags: ['f3', 'a11y', 'theme'],
         components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label', 'icon', 'bar', 'dialog', 'segmented-button']
     }
@@ -431,7 +429,12 @@ export const DefaultAndCompactSizes = () => `<div style="display:flex;justify-co
 
 DefaultAndCompactSizes.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        description: {
+            story: 'The default date picker is represented on the left part of the container in the example below. The default version of date picker is automatically generated through `fd-docs-date-picker` class. In order to generate a compact version of the date picker, add `fd-input--compact` in the input class.'
+
+
+        }
     }
 };
 
@@ -1101,7 +1104,12 @@ export const MobileLandscape = () => `<div class="fd-dialog-docs-static fd-calen
 MobileLandscape.storyName = 'Mobile landscape mode with today navigation';
 MobileLandscape.parameters = {
     docs: {
-        iframeHeight: 400
+        iframeHeight: 400,
+        description: {
+            story: 'The additional today button displayed in the navigation part of the calendar, sets the focus to the current date. The landscape sizing and roation of  the date picker is done by adding `fd-calendar--mobile-landscape` class.'
+
+
+        }
     }
 };
 
@@ -1334,6 +1342,11 @@ export const MobilePortrait = () => `<div class="fd-dialog-docs-static fd-calend
 MobilePortrait.storyName = 'Mobile portrait mode with today navigation';
 MobilePortrait.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        description: {
+            story: 'Similar to the mobile landscape example, mobile portrait mode has a Today button. To make date picker visible in portrait mode please add `fd-calendar--mobile-portrait` class.'
+
+
+        }
     }
 };
