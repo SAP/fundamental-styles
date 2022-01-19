@@ -6,6 +6,10 @@ import { withThemeProvider } from './custom/themeProvider';
 import DocsPage from './custom/components/DocsPage';
 import fundamentals from './custom/fundamentals';
 import availableThemes from './custom/availableThemes';
+import customStyles from './custom/custom.scss';
+customStyles.use();
+import tocStyles from './custom/toc.scss';
+tocStyles.use();
 
 export const parameters = {
   cssresources: [
