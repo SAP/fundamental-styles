@@ -1,0 +1,101 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-message-strip;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex();
+  @include fn-set-paddings-x(0.5rem, 0.5rem);
+
+  align-items: center;
+  background-color: $fn-color-blue-50;
+  color: $fn-color-grey-700;
+  min-height: 1.75rem;
+  min-width: 20.5rem;
+  width: fit-content;
+  border-radius: $fn-border-radius-4;
+
+  &__text {
+    @include fn-reset();
+
+    color: inherit;
+    max-width: 95%;
+  }
+
+  &__icon {
+    background-color: transparent;
+    margin-right: 0.25rem !important;
+
+    @include fn-rtl() {
+      margin-right: 0 !important;
+      margin-left: 0.25rem !important;
+    }
+
+    &::before {
+      color: $fn-color-blue-500;
+      display: flex;
+      margin-top: 0.125rem;
+    }
+  }
+
+  &--dismissible {
+    @include fn-flex();
+
+    .#{$block}__close-button {
+      @include fn-reset();
+      @include fn-set-margin-left(auto);
+      @include fn-set-square(0.5rem);
+
+      @include fn-hover() {
+        @include fn-no-box-shadow-background();
+      }
+
+      @include fn-active() {
+        @include fn-no-box-shadow-background();
+      }
+
+      @include fn-pressed() {
+        @include fn-no-box-shadow-background();
+      }
+
+      justify-content: end;
+      color: $fn-color-grey-500;
+
+      @include fn-icon-class() {
+        &::before {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  &--success {
+    background-color: $fn-color-green-50;
+
+    .#{$block}__icon {
+      &::before {
+        color: $fn-color-green-500;
+      }
+    }
+  }
+
+  &--warning {
+    background-color: $fn-color-orange-50;
+
+    .#{$block}__icon {
+      &::before {
+        color: $fn-color-orange-400;
+      }
+    }
+  }
+
+  &--error {
+    background-color: $fn-color-red-50;
+
+    .#{$block}__icon {
+      &::before {
+        color: $fn-color-red-500;
+      }
+    }
+  }
+}
