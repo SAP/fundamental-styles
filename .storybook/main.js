@@ -1,7 +1,6 @@
 const { merge } = require('webpack-merge');
-const CompileOnSassFileChangesPlugin = require('./CompileOnSassFileChangesPlugin');
-const AddSCSSFilesToWatchPlugin = require('./AddSCSSFilesToWatchPlugin');
-
+const stylesLoader = require('./custom/loaders/load-styles');
+const isProduction = require('./custom/isProduction');
 const maxAssetSize = 1024 * 1024;
 
 const storiesToInclude = () => {
@@ -17,21 +16,27 @@ const storiesToInclude = () => {
 };
 
 const includedStories = storiesToInclude();
+const staticDirs = ['static/', '../node_modules/@sap-theming'];
+const addons = [
+    '@storybook/addon-actions',
+    '@storybook/addon-links',
+    '@storybook/addon-a11y',
+    '@storybook/addon-cssresources/register',
+    '@storybook/addon-viewport/register',
+    '@storybook/addon-docs',
+    '@storybook/addon-toolbars',
+    '@storybook/addon-controls'
+];
+
+if (isProduction) {
+    staticDirs.push('../dist/', '../dist-fn/dist/');
+    addons.push('@storybook/preset-scss');
+}
 
 module.exports = {
     stories: ['../stories/docs/introduction.stories.mdx', `../stories/**/*.@${includedStories}.@(js|mdx)`],
-    staticDirs: ['static/', '../node_modules/@sap-theming', '../dist/', '../dist-fn/dist/'],
-    addons: [
-        '@storybook/addon-actions',
-        '@storybook/addon-links',
-        '@storybook/preset-scss',
-        '@storybook/addon-a11y',
-        '@storybook/addon-cssresources/register',
-        '@storybook/addon-viewport/register',
-        '@storybook/addon-docs',
-        '@storybook/addon-toolbars',
-        '@storybook/addon-controls'
-    ],
+    staticDirs: staticDirs,
+    addons: addons,
     core: {
         builder: 'webpack5'
     },
@@ -49,12 +54,14 @@ module.exports = {
                     options: {
                         injectType: 'lazyStyleTag'
                     }
-                }
+                },
+                'css-loader'
             ]
         });
 
-        config.plugins.push(new AddSCSSFilesToWatchPlugin());
-        config.plugins.push(new CompileOnSassFileChangesPlugin());
+        if (!isProduction) {
+            config.module.rules.push(stylesLoader);
+        }
 
         return merge(config, {
             optimization: {
