@@ -1,0 +1,142 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-object-status;
+
+$object-status-colors: (
+  "positive": ("color": $fn-color-green-500),
+  "critical": ("color": $fn-color-orange-400),
+  "negative": ("color": $fn-color-red-500),
+  "info": ("color": $fn-color-blue-500)
+);
+
+$object-status-interactive-colors: (
+  "positive": (
+    "normal": $fn-color-green-500,
+    "hover": $fn-color-green-600,
+    "active": $fn-color-green-700,
+    "outline": $fn-focus-outline-shadow-green
+  ),
+  "critical": (
+    "normal": $fn-color-orange-400,
+    "hover": $fn-color-orange-500,
+    "active": $fn-color-orange-600,
+    "outline": $fn-focus-outline-shadow-orange
+  ),
+  "negative": (
+    "normal": $fn-color-red-500,
+    "hover": $fn-color-red-600,
+    "active": $fn-color-red-700,
+    "outline": $fn-focus-outline-shadow-red
+  ),
+  "info": (
+    "normal": $fn-color-blue-500,
+    "hover": $fn-color-blue-600,
+    "active": $fn-color-blue-700,
+    "outline": $fn-focus-outline-shadow-blue
+  )
+);
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-transition();
+  @include fn-flex-vertical-center();
+  @include fn-set-paddings-x-equal(0.25rem);
+
+  height: 1.5rem;
+  max-width: 100%;
+  width: fit-content;
+
+  &__text {
+    @include fn-reset();
+    @include fn-ellipsis();
+
+    color: inherit;
+    font-weight: bold;
+  }
+
+  [class*='sap-icon'] {
+    @include fn-flex-center();
+    @include fn-set-square(1.125rem);
+    @include fn-set-margin-right(0.1875rem);
+
+    line-height: 1;
+    color: inherit;
+    font-size: 0.875rem;
+  }
+
+  &--byline {
+    height: 1rem;
+
+    .#{$block}__text {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    [class*='sap-icon'] {
+      @include fn-set-square(1rem);
+
+      font-size: 0.75rem;
+    }
+  }
+
+  @each $set-name, $color-set in $object-status-colors {
+    &--#{$set-name} {
+      color: map_get($color-set, "color");
+    }
+  }
+
+  &--interactive {
+    cursor: pointer;
+    border-radius: $fn-border-radius-4;
+
+    @each $set-name, $color-set in $object-status-interactive-colors {
+      &.#{$block}--#{$set-name} {
+        background: map_get($color-set, "normal");
+
+        .#{$block}__text {
+          color: $fn-color-white;
+        }
+
+        [class*='sap-icon'] {
+          color: $fn-color-white;
+        }
+
+        @include fn-hover() {
+          background: map_get($color-set, "hover");
+
+          @include fn-active() {
+            background: map_get($color-set, "active");
+          }
+        }
+
+        @include fn-active() {
+          background: map_get($color-set, "active");
+        }
+
+        @include fn-focus-visible() {
+          outline: none;
+          background: map_get($color-set, "normal");
+          box-shadow: map_get($color-set, "outline"), $fn-focus-outline-inner-shadow;
+        }
+
+        @include fn-not-focus-visible() {
+          outline: none;
+          background: map_get($color-set, "normal");
+
+          @include fn-hover() {
+            background: map_get($color-set, "hover");
+
+            @include fn-active() {
+              background: map_get($color-set, "active");
+            }
+          }
+        }
+
+        @include fn-disabled() {
+          cursor: not-allowed;
+          opacity: $fn-disabled-opacity;
+        }
+      }
+    }
+  }
+}
