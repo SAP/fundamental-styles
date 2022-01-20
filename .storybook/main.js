@@ -1,4 +1,5 @@
 const { merge } = require('webpack-merge');
+const DefinePlugin = require('webpack/lib/DefinePlugin');
 const stylesLoader = require('./custom/loaders/load-styles');
 const isProduction = require('./custom/isProduction');
 const maxAssetSize = 1024 * 1024;
@@ -41,6 +42,12 @@ module.exports = {
         builder: 'webpack5'
     },
     webpackFinal: async (config) => {
+        config.plugins.push(
+            new DefinePlugin({
+                PRODUCTION: JSON.stringify(isProduction)
+            })
+        );
+
         config.module.rules.push({
             test: /\.stories\.js?$/,
             use: [{ loader: 'story-description-loader' }]
@@ -75,7 +82,7 @@ module.exports = {
             performance: {
                 hints: 'warning',
                 maxAssetSize: maxAssetSize
-            }
+            },
         });
     }
 };

@@ -1,9 +1,11 @@
-export default () => {
+export default (manager) => {
     let loadedComponentStyles = {};
     let currentComponents = [];
+    let currentTheme = 'sap_fiori_3';
+    let managedBy = manager;
 
     const getComponentStylePath = (componentName, themeName) => {
-        let stylePath = `${component}`;
+        let stylePath = `${componentName}`;
         if (!stylePath.startsWith('fn-')) {
             return `${stylePath}-${themeName}.css`;
         }
@@ -15,6 +17,7 @@ export default () => {
         link.type = 'text/css';
         link.rel = 'stylesheet';
         link.href = stylePath;
+        link.setAttribute('data-managedBy', managedBy)
         return link;
     };
 
@@ -30,11 +33,12 @@ export default () => {
         };
     };
 
-    const unuseComponent = (componentName) => {
-        if (loadedComponentStyles.hasOwnProperty(componentName)) {
-            Object.keys(loadedComponentStyles[componentName]).forEach((themeName) => {
-                loadedComponentStyles[componentName][themeName].unuse();
-            });
+    const unuseComponent = (componentName, themeName) => {
+        if (
+            loadedComponentStyles.hasOwnProperty(componentName) &&
+            loadedComponentStyles[componentName].hasOwnProperty(themeName)
+        ) {
+            loadedComponentStyles[componentName][themeName].unuse();
         } else {
             console.log('Component not loaded');
         }
@@ -56,11 +60,12 @@ export default () => {
 
     return {
         use: (components, themeName) => {
-            currentComponents.forEach((componentName) => unuseComponent(componentName));
+            currentComponents.forEach((componentName) => unuseComponent(componentName, currentTheme));
             for (const componentName of components) {
                 useComponent(componentName, themeName);
             }
             currentComponents = [...components];
+            currentTheme = themeName;
         }
     };
 };

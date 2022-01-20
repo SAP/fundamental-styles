@@ -1,8 +1,9 @@
 import availableThemes from '../../availableThemes';
 
-export default () => {
+export default (manager) => {
     let currentTheme;
     let styleVariables = {};
+    let managedBy = manager;
 
     const getBaseVariablesPath = (themeName) =>
         `theming-base-content/content/Base/baseLib/${themeName}/css_variables.css`;
@@ -12,7 +13,7 @@ export default () => {
         link.type = 'text/css';
         link.rel = 'stylesheet';
         link.href = getBaseVariablesPath(themeName);
-        link.setAttribute('data-theme-id', themeName);
+        link.setAttribute('data-managedBy', managedBy);
         return link;
     };
 
@@ -30,7 +31,16 @@ export default () => {
                 const {
                     default: { use, unuse }
                 } = require(`../../../../src/styles/theming/${value}.scss`);
-                return { theme: value, use, unuse };
+                return {
+                    theme: value,
+                    use: () =>
+                        use({
+                            attributes: {
+                                ['data-managedBy']: managedBy
+                            }
+                        }),
+                    unuse
+                };
             })
             .reduce((acc, next) => {
                 acc[next.theme] = next;

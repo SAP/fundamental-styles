@@ -1,4 +1,4 @@
-import { withCssResources } from "@storybook/addon-cssresources";
+import { withCssResources } from '@storybook/addon-cssresources';
 import { DocsContainer } from '@storybook/addon-docs';
 import prettify from 'pretty';
 
@@ -6,78 +6,81 @@ import { withThemeProvider } from './custom/themeProvider';
 import DocsPage from './custom/components/DocsPage';
 import fundamentals from './custom/fundamentals';
 import availableThemes from './custom/availableThemes';
-import customStyles from './custom/custom.scss';
-customStyles.use();
-import tocStyles from './custom/toc.scss';
-tocStyles.use();
+import { isProduction, check } from './environment';
+
+check();
+
+if (!isProduction) {
+    const { default: customStyles } = require('./custom/custom.scss');
+    customStyles.use();
+    const { default: tocStyles } = require('./custom/toc.scss');
+    tocStyles.use();
+}
 
 export const parameters = {
-  cssresources: [
-    {
-      id: "normalize",
-      code: `<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></link>`,
-      picked: false,
-    },
-    {
-      id: "unnormalize",
-      code: `<link rel="stylesheet" type="text/css" href="./unnormalize.css"></link>`,
-      picked: false,
-    },
-    {
-      id: "theme-ugly",
-      code: `<link rel="stylesheet" type="text/css" href="./theme-ugly.css"></link>`,
-      picked: false,
-    },
-    {
-        id: 'windows-hcm-1',
-        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-1.css"></link>',
-        picked: false
-    },
-    {
-        id: 'windows-hcm-2',
-        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-2.css"></link>',
-        picked: false
-    },
-    {
-        id: 'windows-hcm-dark',
-        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-dark.css"></link>',
-        picked: false
-    },
-    {
-        id: 'windows-hcm-light',
-        code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-light.css"></link>',
-        picked: false
+    cssresources: [
+        {
+            id: 'normalize',
+            code: `<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'></link>`,
+            picked: false
+        },
+        {
+            id: 'unnormalize',
+            code: `<link rel='stylesheet' type='text/css' href='./unnormalize.css'></link>`,
+            picked: false
+        },
+        {
+            id: 'theme-ugly',
+            code: `<link rel='stylesheet' type='text/css' href='./theme-ugly.css'></link>`,
+            picked: false
+        },
+        {
+            id: 'windows-hcm-1',
+            code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-1.css"></link>',
+            picked: false
+        },
+        {
+            id: 'windows-hcm-2',
+            code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-2.css"></link>',
+            picked: false
+        },
+        {
+            id: 'windows-hcm-dark',
+            code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-dark.css"></link>',
+            picked: false
+        },
+        {
+            id: 'windows-hcm-light',
+            code: '<link rel="stylesheet" type="text/css" href="./windows-hcm-light.css"></link>',
+            picked: false
+        }
+    ],
+    docs: {
+        container: DocsContainer,
+        page: DocsPage,
+        theme: fundamentals,
+        transformSource: (src) => {
+            // we strip out the () =>` ` from the story
+            // so that the source can be formatted and
+            // rendered as HTML.
+            const SOURCE_REGEX = /^\(\) => `((.|\n)*)`$/;
+            const match = SOURCE_REGEX.exec(src);
+            return prettify(match ? match[1] : src);
+        }
     }
-  ],
-  docs: {
-      container: DocsContainer,
-      page: DocsPage,
-      theme: fundamentals,
-      transformSource: (src) => {
-        // we strip out the () =>` ` from the story
-        // so that the source can be formatted and
-        // rendered as HTML.
-        const SOURCE_REGEX = /^\(\) => `((.|\n)*)`$/;
-        const match = SOURCE_REGEX.exec(src);
-        return prettify(match ? match[1] : src);
-      },
-  },
 };
 
 // this adds a toolbar addon for switching themes
 export const globalTypes = {
-  theme: {
-    name: 'Theme',
-    description: 'Global theme for components',
-    defaultValue: 'sap_fiori_3',
-    toolbar: {
-      icon: 'paintbrush',
-      items: availableThemes,
-    },
-  },
+    theme: {
+        name: 'Theme',
+        description: 'Global theme for components',
+        defaultValue: 'sap_fiori_3',
+        toolbar: {
+            icon: 'paintbrush',
+            items: availableThemes
+        }
+    }
 };
 
-export const decorators = [
-  withThemeProvider,
-  withCssResources,
-];
+export const decorators = [withThemeProvider, withCssResources];

@@ -1,6 +1,7 @@
-export default () => {
+export default (manager) => {
     let loadedComponentStyles = {};
     let currentComponents = [];
+    let managedBy = manager;
 
     const getComponentStylePath = (componentName) => {
         if (componentName.startsWith('fn-')) {
@@ -22,7 +23,10 @@ export default () => {
             const {
                 default: { use, unuse }
             } = require(`../../../../src/${getComponentStylePath(componentName)}`);
-            loadedComponentStyles[componentName] = { use, unuse };
+            loadedComponentStyles[componentName] = {
+                use: () => use({ attributes: { ['data-managedBy']: managedBy } }),
+                unuse
+            };
         }
         loadedComponentStyles[componentName].use();
     };
