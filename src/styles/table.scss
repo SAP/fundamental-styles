@@ -150,7 +150,7 @@ $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
       }
     }
 
-    &:not(.fd-fixed-height) .#{$block}__row:last-of-type {
+    &:not(.fixed-height) .#{$block}__row:last-of-type {
       .#{block}__cell {
         border-bottom: 0;
       }
@@ -163,11 +163,6 @@ $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
         border-left: $fd-table-border;
         border-right: none;
       }
-    }
-
-    &.fd-fixed-height {
-      background-color: #fff;
-      background-color: var(--sapList_Background, #fff);
     }
   }
 
@@ -415,6 +410,13 @@ $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
             }
           }
         }
+      }
+    }
+
+    .#{$block}__body {
+      &--fixed-height {
+        background-color: #fff;
+        background-color: var(--sapList_Background, #fff);
       }
     }
   }
