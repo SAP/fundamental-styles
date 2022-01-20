@@ -35,5 +35,5 @@ replaceInFiles(theming, versionPlaceHolderRegex, NEW_VERSION);
 console.log(`Updating files under fn/libs with version ${NEW_VERSION}`);
 replaceInFiles(fn, versionPlaceHolderRegex, NEW_VERSION);
 
-console.log(`Updating packages.json under fn-icons/libs with version ${NEW_VERSION}`);
+console.log(`Updating files under fn-icons/libs with version ${NEW_VERSION}`);
 replaceInFiles(fnIcons, versionPlaceHolderRegex, NEW_VERSION);
