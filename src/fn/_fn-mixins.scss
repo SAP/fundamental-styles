@@ -290,8 +290,3 @@
     @content;
   }
 }
-
-@mixin fn-no-box-shadow-background() {
-  box-shadow: none;
-  background: transparent;
-}
