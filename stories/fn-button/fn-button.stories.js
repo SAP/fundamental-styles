@@ -703,3 +703,105 @@ Nested.parameters = {
         }
     }
 };
+
+export const Menu = () => `${localStyles}
+<div class="docs-fn-container">
+    <div><b>:normal</b></div>
+    <button class="fn-button fn-button--emphasized">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button">
+        <span class="sap-icon sap-icon--paper-plane"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--ghost">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:hover</b></div>
+    <button class="fn-button fn-button--emphasized is-hover">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button is-hover">
+        <span class="sap-icon sap-icon--paper-plane"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--ghost is-hover">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:active</b></div>
+    <button class="fn-button fn-button--emphasized is-active">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button is-active">
+        <span class="sap-icon sap-icon--paper-plane"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--ghost is-active">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:focus</b></div>
+    <button class="fn-button fn-button--emphasized is-focus">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button is-focus">
+        <span class="sap-icon sap-icon--paper-plane"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--ghost is-focus">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:disabled</b></div>
+    <button class="fn-button fn-button--emphasized" disabled>
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button" disabled>
+        <span class="sap-icon sap-icon--paper-plane"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--ghost" disabled>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+`;
+
+Menu.storyName = 'Menu Buttons';
+Menu.parameters = {
+    docs: {
+        iframeHeight: 500,
+        description: {
+            story: 'Add the `.fn-button--menu` modifier class for menu button.'
+        }
+    }
+};
