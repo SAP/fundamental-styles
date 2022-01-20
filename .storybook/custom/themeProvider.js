@@ -1,9 +1,10 @@
 import { makeDecorator } from '@storybook/addons';
-import themeVariablesManager from './themeVariablesManager';
-import componentStylesManager from './componentStylesManager';
+// import themeVariablesManager from './styleChangers/dev/themeVariablesManager';
+// import componentStylesManager from './styleChangers/dev/componentStylesManager';
+import { themeManager, componentsManager } from '../environments/environment';
 
-const themeManager = themeVariablesManager();
-const componentsManager = componentStylesManager();
+const themes = themeManager();
+const components = componentsManager();
 
 // this is a story decorator, used to inject link style tags
 // into the HTML document, based on the current selected theme
@@ -22,6 +23,6 @@ export const withThemeProvider = makeDecorator({
 export const changeDocumentTheme = (newTheme, forComponents) => {
     if (!newTheme?.trim().length || !Array.isArray(forComponents) || !forComponents?.length) return;
     forComponents.indexOf('info-label') === -1 && forComponents.push('info-label');
-    themeManager.use(newTheme);
-    componentsManager.use(forComponents);
+    themes.use(newTheme);
+    components.use(forComponents, newTheme);
 };

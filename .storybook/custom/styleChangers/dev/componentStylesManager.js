@@ -1,5 +1,3 @@
-const { resolve } = require('path');
-
 export default () => {
     let loadedComponentStyles = {};
     let currentComponents = [];
@@ -23,7 +21,7 @@ export default () => {
         if (!loadedComponentStyles[componentName]) {
             const {
                 default: { use, unuse }
-            } = require(`../../src/${getComponentStylePath(componentName)}`);
+            } = require(`../../../../src/${getComponentStylePath(componentName)}`);
             loadedComponentStyles[componentName] = { use, unuse };
         }
         loadedComponentStyles[componentName].use();

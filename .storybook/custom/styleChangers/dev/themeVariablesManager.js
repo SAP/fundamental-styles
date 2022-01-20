@@ -1,4 +1,4 @@
-import availableThemes from './availableThemes';
+import availableThemes from '../../availableThemes';
 
 export default () => {
     let currentTheme;
@@ -29,7 +29,7 @@ export default () => {
             .map(({ value }) => {
                 const {
                     default: { use, unuse }
-                } = require(`../../src/styles/theming/${value}.scss`);
+                } = require(`../../../../src/styles/theming/${value}.scss`);
                 return { theme: value, use, unuse };
             })
             .reduce((acc, next) => {
