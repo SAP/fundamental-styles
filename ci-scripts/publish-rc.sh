@@ -44,6 +44,7 @@ cd ..
 
 #build dist-theming package
 npm run build:theming-preview
+npm run sync-versions
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_THEMING_PREVIEW}"
 
 cd ${DIST_THEMING_PREVIEW}
