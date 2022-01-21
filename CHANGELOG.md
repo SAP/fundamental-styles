@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.93 (2022-01-21)
+
+
+### Features
+
+* **fn:** introduce Object Status [ci visual] ([#3099](https://github.com/SAP/fundamental-styles/issues/3099)) ([d3eb66f](https://github.com/SAP/fundamental-styles/commit/d3eb66f9f8175d39b75430b90d9fb70f445e13a1))
+
 ## 0.21.0-rc.92 (2022-01-17)
 
 ## 0.21.0-rc.91 (2022-01-15)
