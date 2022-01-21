@@ -1,6 +1,8 @@
 
 export default (linkTag) => {
     return () => {
-        document.head.removeChild(linkTag);
+        if (document.head.contains(linkTag)) {
+            document.head.removeChild(linkTag);
+        }
     };
 };
