@@ -423,11 +423,15 @@ function getNetlifyDrawerIframe() {
         const iframes = window.parent.document.getElementsByTagName('iframe');
         let iframe;
 
-        iframes.forEach(function(item) {
-            if (item.src.startsWith('https://app.netlify.com')) {
-                iframe = item;
+        console.log("frames", iframes);
+        
+        for (const key in iframes) {
+            console.log(">>> key: ", key);
+            if (iframes[key].src?.startsWith('https://app.netlify.com')) {
+                iframe = iframes[key];
             }
-        });
+        }
+        console.log("return ", iframe);
 
         return iframe;
 
