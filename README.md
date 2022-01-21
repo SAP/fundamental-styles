@@ -84,7 +84,7 @@ list of icon class names. See Project Configuration below for instructions to in
 ### Project Configuration
 
 This project does not contain fonts and icons - they must be added to your project separately. Download the @sap-theming
-library. After adding fonts and icons to your project, include the following in your css:
+library. After adding fonts and icons to your project, include the following in your CSS:
 
 ```css
 @font-face {
@@ -206,14 +206,14 @@ e.g._ `[MAJOR].[MINOR].[PATCH]-rc.[RC]`).
 
 The following circumstances will be considered a MAJOR or BREAKING change:
 
-* Dropping existing classnames, css variables, color names, color groups, spacing parameters
+* Dropping existing classnames, CSS variables, color names, color groups, spacing parameters
 * The existing underlying HTML markup of a component is altered
 * Non-visual HTML attribute changes/additions (such as `role`, `aria-*`, `data-*`)
   > Note: Fundamental Styles provides CSS directly, and HTML as reference to consumers. Because of the reference relationship of the HTML seen in Fundamental Styles, we want to be very clear when we alter that reference so that it is properly reflected in JS implementation libraries. Because of this, even non-visual changes will be treated as breaking.
 
 The following circumstances will NOT be considered a MAJOR or BREAKING change:
 
-* Introducing new classnames, css variables, color names, color groups, spacing parameters
+* Introducing new classnames, CSS variables, color names, color groups, spacing parameters
 * Adding or modifying CSS properties and values of existing classnames.
 
 ## Thanks
