@@ -1,8 +1,13 @@
-export default (manager) => {
+import generateStyleLinkTagFn from '../utils/generateStyleLinkTagFn';
+import getLazyLoader from '../utils/getLazyLoader';
+
+export default (managedBy) => {
     let loadedComponentStyles = {};
     let currentComponents = [];
     let currentTheme = 'sap_fiori_3';
-    let managedBy = manager;
+
+    const styleLinkTag = generateStyleLinkTagFn(managedBy);
+    const lazyLoader = getLazyLoader(styleLinkTag);
 
     const getComponentStylePath = (componentName, themeName) => {
         let stylePath = `${componentName}`;
@@ -10,27 +15,6 @@ export default (manager) => {
             return `${stylePath}-${themeName}.css`;
         }
         return `${stylePath}.css`;
-    };
-
-    const createLinkTag = (stylePath) => {
-        const link = document.createElement('link');
-        link.type = 'text/css';
-        link.rel = 'stylesheet';
-        link.href = stylePath;
-        link.setAttribute('data-managedBy', managedBy)
-        return link;
-    };
-
-    const useFunction = (linkTag) => {
-        return () => {
-            document.head.appendChild(linkTag);
-        };
-    };
-
-    const unuseFunction = (linkTag) => {
-        return () => {
-            document.head.removeChild(linkTag);
-        };
     };
 
     const unuseComponent = (componentName, themeName) => {
@@ -49,11 +33,9 @@ export default (manager) => {
             loadedComponentStyles[componentName] = {};
         }
         if (!loadedComponentStyles[componentName][themeName]) {
-            const linkTag = createLinkTag(getComponentStylePath(componentName, themeName));
-            loadedComponentStyles[componentName][themeName] = {
-                use: useFunction(linkTag),
-                unuse: unuseFunction(linkTag)
-            };
+            loadedComponentStyles[componentName][themeName] = lazyLoader(
+                getComponentStylePath(componentName, themeName)
+            );
         }
         loadedComponentStyles[componentName][themeName].use();
     };

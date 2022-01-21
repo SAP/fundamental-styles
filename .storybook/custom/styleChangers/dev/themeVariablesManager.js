@@ -1,61 +1,45 @@
 import availableThemes from '../../availableThemes';
+import generateStyleLinkTagFn from '../utils/generateStyleLinkTagFn';
+import getLazyLoader from '../utils/getLazyLoader';
 
 export default (manager) => {
     let currentTheme;
-    let styleVariables = {};
-    let managedBy = manager;
 
-    const getBaseVariablesPath = (themeName) =>
-        `theming-base-content/content/Base/baseLib/${themeName}/css_variables.css`;
-
-    const styleLinkTag = (themeName) => {
-        let link = document.createElement('link');
-        link.type = 'text/css';
-        link.rel = 'stylesheet';
-        link.href = getBaseVariablesPath(themeName);
-        link.setAttribute('data-managedBy', managedBy);
-        return link;
+    const styleLinkTag = generateStyleLinkTagFn(manager);
+    const lazyLoader = getLazyLoader(styleLinkTag);
+    const themeVariablesLazyLoader = (themeName) => {
+        const {
+            default: { use, unuse }
+        } = require(`../../../../src/styles/theming/${themeName}.scss`);
+        return {
+            use: () => {
+                use({
+                    attributes: {
+                        ['data-managedBy']: manager
+                    }
+                });
+            },
+            unuse
+        };
     };
 
-    let baseVariables = availableThemes.reduce((acc, { value }) => {
-        acc[value] = styleLinkTag(value);
+    const baseVariables = availableThemes.reduce((acc, { value }) => {
+        acc[value] = lazyLoader(`theming-base-content/content/Base/baseLib/${value}/css_variables.css`);
+        return acc;
+    }, {});
+    const styleVariables = availableThemes.reduce((acc, { value }) => {
+        acc[value] = themeVariablesLazyLoader(value);
         return acc;
     }, {});
 
-    const loadThemes = () => {
-        if (Object.keys(styleVariables).length === availableThemes.length) {
-            return;
-        }
-        styleVariables = availableThemes
-            .map(({ value }) => {
-                const {
-                    default: { use, unuse }
-                } = require(`../../../../src/styles/theming/${value}.scss`);
-                return {
-                    theme: value,
-                    use: () =>
-                        use({
-                            attributes: {
-                                ['data-managedBy']: managedBy
-                            }
-                        }),
-                    unuse
-                };
-            })
-            .reduce((acc, next) => {
-                acc[next.theme] = next;
-                return acc;
-            }, {});
-    };
     return {
         use: (themeName) => {
-            loadThemes();
             if (currentTheme && currentTheme !== themeName) {
-                document.head.removeChild(baseVariables[currentTheme]);
+                baseVariables[currentTheme].unuse();
                 styleVariables[currentTheme].unuse();
             }
             currentTheme = themeName;
-            document.head.appendChild(baseVariables[themeName]);
+            baseVariables[themeName].use();
             styleVariables[themeName].use();
         }
     };
