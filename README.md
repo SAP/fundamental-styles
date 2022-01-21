@@ -5,7 +5,7 @@
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM)
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/fundamental-styles)](https://api.reuse.software/info/github.com/SAP/fundamental-styles)
 <a href="https://storybook.js.org/">
-<img src="https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg" />
+<img src="https://raw.githubusercontent.com/storybookjs/brand/main/badge/badge-storybook.svg" />
 </a>
 
 <a href="https://www.netlify.com">
