@@ -2,18 +2,22 @@ export default {
     title: 'Patterns/Date Picker',
     parameters: {
         description: `
-The date picker lets users select a localized date using touch, mouse, or keyboard input. It consists of two parts: the date input field and the date picker.
+        The date picker provides responsive behavior that allows for simple operation on all devices. It is smaller in compact mode and provides a touch-friendly size in cozy mode.
 
-Use this control if the user needs to enter a single date or a date range. The control also allows users to navigate directly from one month or year to another.
-
-The date-picker component is an opinionated composition of the \`input-group\`, \`popover\` and \`calendar\` components to accomplish the UI pattern for picking a date.
-
-This component mostly relies on the CSS of other components and has very little CSS of its own.
-
-##Usage
-**Use action bar if:**
-
--   You need a range and know that your user is a power user who has to input lots of data. If the keyboard is the primary device used for navigating the app, use two input fields. This allows the user to quickly jump from field to field. By selecting a date in one of the fields, the other field should know what is selected and jump to the same selection`,
+        The date picker lets users select a localized date using touch, mouse, or keyboard input.
+        
+        It consists of two parts:
+        
+-        ##Input Field##: The user can enter a date directly or select it using the date picker
+        
+-        ##Date Picker##: The user can see a day view, month view, year view, or year ranges.
+        
+        ##Usage##
+        Use the DatePicker if:
+        
+-        The user needs to enter a single date or a date range.
+-        The user needs to navigate directly from one month or year to another.
+        `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label', 'icon', 'bar', 'dialog', 'segmented-button']
     }
@@ -431,7 +435,9 @@ DefaultAndCompactSizes.parameters = {
     docs: {
         iframeHeight: 500,
         description: {
-            story: 'The default date picker is represented on the left part of the container in the example below. The default version of date picker is automatically generated through `fd-docs-date-picker` class. In order to generate a compact version of the date picker, add `fd-input--compact` in the input class.'
+            story: `The date-picker component is a composition of the \`input-group\`, \`popover\` and \`calendar\` components. 
+            It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\`, \`fd-calendar--compact\` 
+            to the building blocks of the component.`
 
 
         }
@@ -659,7 +665,7 @@ TodaySelectionButton.parameters = {
         iframeHeight: 500,
         description: {
             story: `
-The today selection button in the footer selects today's date in the system or user-preferred timezone and closes the DatePicker popover.
+The \`today\` selection button in the footer selects today's date in the system or user-preferred timezone and closes the DatePicker popover.
 This date value then appears in the DatePicker's input field. If using a compact datepicker add the \`fd-button--compact\` class to this button.
 `
         }
@@ -890,7 +896,7 @@ The today navigation button in the header navigates focus to today's date in the
 This is useful in displaying the DatePicker on mobile where DatePicker closes when user presses the OK button.
 If using a compact datepicker add the \`fd-button--compact\` class to this button.
 
-**Using both today selection and navigation buttons on the same datepicker is not recommended, as it may lead to confusion.**
+**Note: Using both today selection and navigation buttons on the same datepicker is not recommended, as it may lead to confusion.**
 `
         }
     }
@@ -1106,7 +1112,7 @@ MobileLandscape.parameters = {
     docs: {
         iframeHeight: 400,
         description: {
-            story: 'The additional today button displayed in the navigation part of the calendar, sets the focus to the current date. The landscape sizing and roation of  the date picker is done by adding `fd-calendar--mobile-landscape` class.'
+            story: 'The additional `Today` button displayed in the navigation part of the calendar, sets the focus to the current date. The landscape sizing and roation of thw the date picker is done by adding the `fd-calendar--mobile-landscape` class.'
 
 
         }
@@ -1344,7 +1350,7 @@ MobilePortrait.parameters = {
     docs: {
         iframeHeight: 500,
         description: {
-            story: 'Similar to the mobile landscape example, mobile portrait mode has a Today button. To make date picker visible in portrait mode please add `fd-calendar--mobile-portrait` class.'
+            story: 'Similar to the mobile landscape example, mobile portrait mode has a `Today` button. To make date picker visible in portrait mode, add the`fd-calendar--mobile-portrait` class.'
 
 
         }
