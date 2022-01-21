@@ -14,9 +14,9 @@
 
 ## What is Fundamental Library Styles?
 
-Fundamental Library Styles is a light-weight presentation layer that can be used with your UI framework of choice (e.g.
-Angular, React, Vue, etc.). With Fundamental Library Styles, library of stylesheets and HTML tags, developers can build
-consistent Fiori apps in any web-based technology.
+Fundamental Library Styles is a light-weight presentation layer that can be used with developers' UI framework of
+choice (e.g.Angular, React, Vue, etc.). Developers can build consistent Fiori apps in any web-based technology, by
+combining Fundamental Styles, library of stylesheets and HTML tags.
 
 **Learn more at http://sap.github.io/fundamental-styles/**
 
@@ -25,7 +25,7 @@ We are also working on [Angular](https://github.com/SAP/fundamental-ngx)
 
 ## Getting Started
 
-The library is modular so you can use as little or as much as you need.
+The library is modular, so you can use as little or as much as you need.
 
 ### CDN
 
@@ -44,8 +44,9 @@ For `latest` stable version use
 ```
 
 Replace `{themeName}` with one of the following: `sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`
-, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`.
-You can also not specify theme and use default `sap_fiori_3` theme:
+, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`. You can also not specify theme and use default `sap_fiori_3`
+theme:
+
 ```html
 <link href='https://unpkg.com/fundamental-styles/dist/fundamental-styles.css' rel='stylesheet'>
 ```
@@ -70,9 +71,9 @@ npm install fundamental-styles --save
 
 ### Distributed CSS Files
 
-The distrubtion folder contains several css files per component: a default file and one file per supported
+The distribution folder contains several CSS files per component: a default file and one file per supported
 theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`).
-Each themed file includes fallback support for css variables in IE11 for the corresponding theme. The default file
+Each themed file includes fallback support for CSS variables in IE11 for the corresponding theme. The default file
 includes fallbacks for `sap_fiori_3`.
 
 ### Icons
