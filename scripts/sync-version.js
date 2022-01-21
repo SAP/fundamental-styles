@@ -2,20 +2,29 @@
 const NEW_VERSION = require('../package.json').version;
 const fs = require('fs');
 const klawSync = require('klaw-sync');
+const { resolve } = require('path');
+
 const versionPlaceHolderRegex = /VERSION_PLACEHOLDER/g;
 
-const filesInDirKlaw = (directory, regx) => klawSync(directory, {
-    fs,
-    nodir: true,
-    traverseAll: true,
-    filter: (item) => {
-        if (item.stats.isDirectory()) {
-            return false;
+const themingFolderPath = resolve(__dirname, '../dist-theming');
+const fnFolderPath = resolve(__dirname, '../dist-fn');
+const iconsFolderPath = resolve(__dirname, '../dist-fn-icons');
+
+const filesInDirKlaw = (directory, regx) => {
+    console.info(`Looking into directory ${directory}`);
+    return klawSync(directory, {
+        fs,
+        nodir: true,
+        traverseAll: true,
+        filter: (item) => {
+            if (item.stats.isDirectory()) {
+                return false;
+            }
+            const content = fs.readFileSync(item.path, { encoding: 'utf8', flag: 'r' });
+            return content.match(regx);
         }
-        const content = fs.readFileSync(item.path, { encoding: 'utf8', flag: 'r' });
-        return content.match(regx);
-    }
-});
+    });
+};
 
 const replaceInFiles = (items, matcherRegex, newValue) => {
     for (const item of items) {
@@ -23,17 +32,35 @@ const replaceInFiles = (items, matcherRegex, newValue) => {
         const newContent = content.replace(matcherRegex, newValue);
         fs.writeFileSync(item.path, newContent, { encoding: 'utf8' });
     }
+    console.info(`Successfully replaced in ${items.length} files`);
 };
 
-const theming = filesInDirKlaw('./dist-theming', versionPlaceHolderRegex);
-const fn = filesInDirKlaw('./dist-fn', versionPlaceHolderRegex);
-const fnIcons = filesInDirKlaw('./dist-fn-icons', versionPlaceHolderRegex);
+console.log('='.repeat(5));
+console.info(`Updating files under dist-theming/libs with version ${NEW_VERSION}`);
+const theming = filesInDirKlaw(themingFolderPath, versionPlaceHolderRegex);
+if (theming.length > 0) {
+    console.info(`Found ${theming.length} files in ${themingFolderPath}`);
+    replaceInFiles(theming, versionPlaceHolderRegex, NEW_VERSION);
+} else {
+    console.info(`No files match ${versionPlaceHolderRegex.toString()}`);
+}
 
-console.log(`Updating files under dist-theming/libs with version ${NEW_VERSION}`);
-replaceInFiles(theming, versionPlaceHolderRegex, NEW_VERSION);
+console.log('='.repeat(5));
+console.info(`Updating files under fn/libs with version ${NEW_VERSION}`);
+const fn = filesInDirKlaw(fnFolderPath, versionPlaceHolderRegex);
+if (fn.length > 0) {
+    console.info(`Found ${theming.length} files in ${fnFolderPath}`);
+    replaceInFiles(fn, versionPlaceHolderRegex, NEW_VERSION);
+} else {
+    console.info(`No files match ${versionPlaceHolderRegex.toString()}`);
+}
 
-console.log(`Updating files under fn/libs with version ${NEW_VERSION}`);
-replaceInFiles(fn, versionPlaceHolderRegex, NEW_VERSION);
-
-console.log(`Updating files under fn-icons/libs with version ${NEW_VERSION}`);
-replaceInFiles(fnIcons, versionPlaceHolderRegex, NEW_VERSION);
+console.log('='.repeat(5));
+console.info(`Updating packages.json under fn-icons/libs with version ${NEW_VERSION}`);
+const fnIcons = filesInDirKlaw(iconsFolderPath, versionPlaceHolderRegex);
+if (fnIcons.length > 0) {
+    console.info(`Found ${theming.length} files in ${iconsFolderPath}`);
+    replaceInFiles(fnIcons, versionPlaceHolderRegex, NEW_VERSION);
+} else {
+    console.info(`No files match ${versionPlaceHolderRegex.toString()}`);
+}
