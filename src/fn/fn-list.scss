@@ -1,0 +1,7 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-list;
+
+.#{$block} {
+  @include fn-reset();
+}
