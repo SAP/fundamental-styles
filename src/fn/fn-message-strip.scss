@@ -1,0 +1,72 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-message-strip;
+
+@mixin fn-message-strip-states($background, $iconColor) {
+  background-color: $background;
+
+  .#{$block}__icon {
+    &::before {
+      color: $iconColor;
+    }
+  }
+}
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-set-paddings-x(0.5rem, 0.5rem);
+  @include fn-flex-vertical-center();
+
+  background-color: $fn-color-blue-50;
+  color: $fn-color-grey-700;
+  min-height: 1.75rem;
+  min-width: 20.5rem;
+  width: fit-content;
+  border-radius: $fn-border-radius-4;
+
+  &__text {
+    @include fn-reset();
+
+    color: inherit;
+    max-width: 95%;
+  }
+
+  .#{$block}__icon {
+    @include fn-set-margin-right(0.25rem);
+
+    background-color: transparent;
+
+    &::before {
+      color: $fn-color-blue-500;
+      display: flex;
+      margin-top: 0.125rem;
+    }
+  }
+
+  .#{$block}__close-button {
+    @include fn-reset();
+    @include fn-set-margin-left(auto);
+    @include fn-set-square(0); // removes background / box-shadow from button class
+
+    justify-content: end;
+    color: $fn-color-grey-500;
+
+    @include fn-icon-class() {
+      &::before {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  &--success {
+    @include fn-message-strip-states($fn-color-green-50, $fn-color-green-500);
+  }
+
+  &--warning {
+    @include fn-message-strip-states($fn-color-orange-50, $fn-color-orange-400);
+  }
+
+  &--error {
+    @include fn-message-strip-states($fn-color-red-50, $fn-color-red-500);
+  }
+}
