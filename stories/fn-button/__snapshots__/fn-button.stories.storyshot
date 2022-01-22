@@ -418,6 +418,471 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
 </section>
 `;
 
+exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
+<section>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--emphasized"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--attachment"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--ghost"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--emphasized is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--attachment"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button is-hover"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--ghost is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :active
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--emphasized is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--attachment"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button is-active"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--ghost is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--emphasized is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--attachment"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button is-focus"
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--ghost is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--emphasized"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--attachment"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button"
+      disabled=""
+    >
+      
+        
+      <span
+        class="sap-icon sap-icon--paper-plane"
+      />
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--ghost"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+        
+      <span
+        class="sap-icon sap-icon--megamenu"
+      />
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</section>
+`;
+
 exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
 <section>
   
