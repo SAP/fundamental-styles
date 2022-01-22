@@ -4,9 +4,9 @@ $block: #{$fn-namespace}-progress-bar;
 $fn-progress-bar-offset: 0.125rem;
 
 $fn-progress-bar-colors: (
-  "positive": ("color": $fn-color-green-500),
-  "critical": ("color": $fn-color-orange-400),
-  "negative": ("color": $fn-color-red-500),
+  "positive": ("color": $fn-color-green-500, "icon": "\e1ab"),
+  "critical": ("color": $fn-color-orange-400, "icon": "\e1ae"),
+  "negative": ("color": $fn-color-red-500, "icon": "\e1ac")
 );
 
 @mixin fn-progress-bar-dot() {
@@ -35,13 +35,35 @@ $fn-progress-bar-colors: (
   border-radius: $fn-border-radius-4;
 
   &::after {
-    @include fn-progress-bar-dot();
+    @include fn-flex-center();
+    @include fn-set-square(1.125rem);
+
+    content: '';
+    top: -0.25rem;
+    left: -1.375rem;
+    position: absolute;
+    font-size: 0.9375rem;
+    text-transform: none;
+    text-decoration: none;
+    font-family: "SAP-icons";
   }
 
   &::before {
     @include fn-progress-bar-dot() {
       left: auto;
       right: $fn-progress-bar-offset;
+    }
+  }
+
+  @include fn-rtl() {
+    &::before {
+      left: $fn-progress-bar-offset;
+      right: auto;
+    }
+
+    &::after {
+      left: auto;
+      right: -1.375rem;
     }
   }
 
@@ -63,9 +85,13 @@ $fn-progress-bar-colors: (
 
   @each $set-name, $set-color in $fn-progress-bar-colors {
     &--#{$set-name} {
-      &::after,
       &::before {
         background: map_get($set-color, "color");
+      }
+
+      &::after {
+        color: map_get($set-color, "color");
+        content: map_get($set-color, "icon");
       }
 
       .#{$block}__track {
