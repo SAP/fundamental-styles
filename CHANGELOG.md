@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.98 (2022-01-22)
+
+
+### Bug Fixes
+
+* **fn:** update Fiori Next Progress Bar to latest design [ci visual] ([#3104](https://github.com/SAP/fundamental-styles/issues/3104)) ([a4352c1](https://github.com/SAP/fundamental-styles/commit/a4352c1d0023df07a12b7d0294f912a244dd5e20))
+
 ## 0.21.0-rc.97 (2022-01-22)
 
 
