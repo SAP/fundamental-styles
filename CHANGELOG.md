@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.97 (2022-01-22)
+
+
+### Features
+
+* **fn:** implement fn-form ([#3069](https://github.com/SAP/fundamental-styles/issues/3069)) ([daa3eb6](https://github.com/SAP/fundamental-styles/commit/daa3eb69004decdd451655bb55bb489a2e223dae))
+
 ## 0.21.0-rc.96 (2022-01-22)
 
 
