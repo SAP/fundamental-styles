@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.99 (2022-01-22)
+
+
+### Features
+
+* **fn:** implement message strip ([#3094](https://github.com/SAP/fundamental-styles/issues/3094)) ([2ba5914](https://github.com/SAP/fundamental-styles/commit/2ba59140aa08b5c026cb83fa03b04f51122fdb47))
+
 ## 0.21.0-rc.98 (2022-01-22)
 
 
