@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.96 (2022-01-22)
+
+
+### Features
+
+* **fn:** add Menu button to Fiori Next buttons [ci visual] ([#3097](https://github.com/SAP/fundamental-styles/issues/3097)) ([b465cc2](https://github.com/SAP/fundamental-styles/commit/b465cc27b0818cae1cc3a474788cb9e04e57a79f))
+
 ## 0.21.0-rc.95 (2022-01-22)
 
 ## 0.21.0-rc.94 (2022-01-22)
