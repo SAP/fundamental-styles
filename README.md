@@ -108,9 +108,11 @@ If you are not supporting IE11, the recommended format is `woff2`. If supporting
 
 1. **Clone Repository** - Clone the repo using the git software of your choice or using the git command `git clone https://github.com/SAP/fundamental-styles.git`
 
-1. **Install NPM Dependencies**: `npm install`
+2. **Install NPM Dependencies**: `npm install`
 
-1. **Serve the development playground and documentation website locally** - `npm start`
+3. **Serve the development playground and documentation website locally**
+    1. If you want to serve with development environment run `npm start` 
+    2. For production build serve run `npm run start:prod`
 
 ### Project Dependencies
 The project has the following prerequisites:

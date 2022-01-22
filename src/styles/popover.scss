@@ -15,7 +15,7 @@ $block: #{$fd-namespace}-popover;
 
   $fd-popover-arrow-width: 1rem !default;
   $fd-popover-arrow-height: 0.5rem !default;
-  $fd-popover-arrow-width-half: $fd-popover-arrow-width/2 !default;
+  $fd-popover-arrow-width-half: $fd-popover-arrow-width * 0.5 !default;
   $fd-popover-arrow-offset: 0.5rem !default;
   $fd-popover-arrow-color: var(--sapContent_ForegroundBorderColor) !default;
 

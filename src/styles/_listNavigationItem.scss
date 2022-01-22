@@ -28,7 +28,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       display: inline-block;
       position: absolute;
       right: 0;
-      top: ($fd-list-navigation-item-height - $fd-list-navigation-item-indicator-height) / 2;
+      top: ($fd-list-navigation-item-height - $fd-list-navigation-item-indicator-height) * 0.5;
       height: $fd-list-navigation-item-indicator-height;
       background-color: var(--sapSelectedColor);
       color: var(--sapSelectedColor);
