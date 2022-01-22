@@ -22,6 +22,54 @@ export default {
     }
 };
 
+const localStyles1 = `
+<style>
+
+
+</style>`;
+
+export const Test = () => `${localStyles1}
+
+<button class="fn-button fn-button--icon-left">
+    <svg class="fn-svg-wrapper"  width="18" height="18" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" tabindex="-1" role="img" aria-label="test">
+        <use href="fiori-sprite.svg#share-2_1"/>
+    </svg>
+    <span class="fn-button__text">Button</span>
+</button>
+<br />
+
+<button class="fn-button fn-button--icon-left">
+    <span class="sap-icon sap-icon--share-2"></span>
+    <span class="fn-button__text">Button</span>
+</button>
+<br />
+<button class="fn-button fn-button--icon-left">
+    <svg class="fn-svg-wrapper"  width="18" height="18" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" tabindex="-1" role="img" aria-label="test">
+        <use href="fiori-sprite.svg#paper-plane"/>
+    </svg>
+    <span class="fn-button__text">Button</span>
+</button>
+
+<br />
+
+<button class="fn-button fn-button--icon-left">
+    <span class="sap-icon sap-icon--paper-plane"></span>
+    <span class="fn-button__text">Button</span>
+</button>
+
+<br />
+<button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
+    <svg class="fn-svg-wrapper"  width="18" height="18" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" tabindex="-1" role="img" aria-label="test">
+        <use href="fiori-sprite.svg#overflow"/>
+    </svg>
+</button>
+<br />
+
+<button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
+    <span class="sap-icon sap-icon--overflow"></span>
+</button>
+`;
+
 const localStyles = `
 <style>
     .docs-fn-container {

@@ -17,7 +17,7 @@ const storiesToInclude = () => {
 };
 
 const includedStories = storiesToInclude();
-const staticDirs = ['static/', '../node_modules/@sap-theming'];
+const staticDirs = ['static/', '../node_modules/@sap-theming', '../dist-fn-icons/dist/'];
 const addons = [
     '@storybook/addon-actions',
     '@storybook/addon-links',

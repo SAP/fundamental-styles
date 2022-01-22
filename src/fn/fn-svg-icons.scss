@@ -1,0 +1,7 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-svg-wrapper;
+
+.#{$block} {
+  fill: currentColor;
+}
