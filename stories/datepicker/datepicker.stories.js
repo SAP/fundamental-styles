@@ -16,8 +16,8 @@ It consists of two parts:
 
 Use the **DatePicker** if:
       
--        The user needs to enter a single date or a date range.
--        The user needs to navigate directly from one month or year to another.
+-    The user needs to enter a single date or a date range.
+-    The user needs to navigate directly from one month or year to another.
       `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['calendar', 'input-group', 'popover', 'title', 'button', 'input', 'form-label', 'icon', 'bar', 'dialog', 'segmented-button']
