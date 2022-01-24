@@ -4,6 +4,8 @@ const stylesLoader = require('./custom/loaders/load-styles');
 const isProduction = require('./custom/isProduction');
 const maxAssetSize = 1024 * 1024;
 
+console.log(`${'='.repeat(15)} - ${process.env.STORYBOOK_ENV}`)
+
 const storiesToInclude = () => {
     const mode = process.env.STORYBOOK_ENV;
     switch (mode) {
@@ -44,7 +46,8 @@ module.exports = {
     webpackFinal: async (config) => {
         config.plugins.push(
             new DefinePlugin({
-                PRODUCTION: JSON.stringify(isProduction)
+                PRODUCTION: JSON.stringify(isProduction),
+                STORYBOOK_ENV: JSON.stringify(process.env.STORYBOOK_ENV),
             })
         );
 
