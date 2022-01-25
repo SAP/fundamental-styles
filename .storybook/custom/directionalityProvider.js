@@ -4,14 +4,7 @@ export const withDirectionality = makeDecorator({
     name: 'directionalityProvider',
     parameterName: 'directionality',
     wrapper: (storyFn, context) => {
-        const newDirectionality = context?.globals?.directionality;
-        changeDirectionality(newDirectionality);
-        return storyFn(context);
+        return `<div dir='${context?.globals?.directionality || 'ltr'}'>${storyFn(context)}</div>`;
     }
 });
 
-export const changeDirectionality = (newDirectionality) => {
-    document
-        .querySelectorAll('.sbdocs-preview .docs-story')
-        .forEach((item) => item.setAttribute('dir', newDirectionality));
-};
