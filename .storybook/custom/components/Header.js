@@ -4,11 +4,8 @@ import { DirectionalitySelect } from './DirectionalitySelect';
 import GithubSvg from './GithubSvg';
 import { IfBlock } from './IfBlock';
 import { ThemeSelect } from './ThemeSelect';
-import { useStorybookState } from '@storybook/api';
 
 const Header = ({ showSelectors, theme, directionality, onThemeChange, onDirectionalityChange }) => {
-    const managerContext = useStorybookState();
-    console.log({ managerContext });
     const selectedTheme = theme || 'sap_fiori_3';
     const selectedDirectionality = directionality || 'ltr';
     const handlersPassed = onThemeChange && onDirectionalityChange;
