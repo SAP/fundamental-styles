@@ -16,9 +16,20 @@ export default {
 };
 
 const localStyles = `
-<style>
-
-</style>
+    <ul class="fn-list">
+        <li class="fn-list__item" tabindex="0">
+            <span>List Item 1</span>
+        </li>
+        <li class="fn-list__item" tabindex="0">
+            <span>List Item 2</span>
+        </li>
+        <li class="fn-list__item" tabindex="0">
+            <span>List Item 3</span>
+        </li>
+        <li class="fn-list__item" tabindex="0">
+            <span>List Item 4</span>
+        </li>
+    </ul>
 `;
 
 export const Primary = () => `${localStyles}
