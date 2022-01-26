@@ -1,153 +1,149 @@
 @import "fn-variables";
 
 // Colors
-// Main Colors
-$fn-color-grey-50: #f3f4f5;
-$fn-color-grey-100: #e4e5e7;
-$fn-color-grey-150: #cdcfd2;
-$fn-color-grey-200: #bec5cb;
-$fn-color-grey-300: #a0abb7;
-$fn-color-grey-400: #8295a8;
-$fn-color-grey-500: #5f7992;
-$fn-color-grey-600: #4b647c;
-$fn-color-grey-700: #3b5269;
-$fn-color-grey-800: #253a4f;
-$fn-color-grey-900: #15283a;
+$fn-color-grey-50: #f5f6f7;
+$fn-color-grey-100: #eaecee;
+$fn-color-grey-150: #d5dadd;
+$fn-color-grey-200: #a9b4be;
+$fn-color-grey-300: #8396a8;
+$fn-color-grey-400: #5b738b;
+$fn-color-grey-500: #475e75;
+$fn-color-grey-600: #354a5f;
+$fn-color-grey-700: #223548;
+$fn-color-grey-800: #1a2733;
+$fn-color-grey-900: #12171c;
 
-$fn-color-blue-50: #e5f6ff;
-$fn-color-blue-100: #c5ebff;
-$fn-color-blue-150: #8ed8ff;
-$fn-color-blue-200: #7ecdff;
+$fn-color-crimson-50: #fff0f5;
+$fn-color-crimson-100: #ffdce8;
+$fn-color-crimson-150: #fecbda;
+$fn-color-crimson-200: #feadc8;
+$fn-color-crimson-300: #fe83ae;
+$fn-color-crimson-400: #fa4f96;
+$fn-color-crimson-500: #df1278;
+$fn-color-crimson-600: #ba066c;
+$fn-color-crimson-700: #9b015d;
+$fn-color-crimson-800: #71014b;
+$fn-color-crimson-900: #510136;
+
+$fn-color-pink-50: #fff0fa;
+$fn-color-pink-100: #ffdcf3;
+$fn-color-pink-150: #ffafed;
+$fn-color-pink-200: #ff8af0;
+$fn-color-pink-300: #f65af2;
+$fn-color-pink-400: #f31ded;
+$fn-color-pink-500: #cc00dc;
+$fn-color-pink-600: #a100c2;
+$fn-color-pink-700: #7800a4;
+$fn-color-pink-800: #510080;
+$fn-color-pink-900: #28004a;
+
+$fn-color-indigo-50: #f1ecff;
+$fn-color-indigo-100: #e2d8ff;
+$fn-color-indigo-150: #d3b6ff;
+$fn-color-indigo-200: #b894ff;
+$fn-color-indigo-300: #9b76ff;
+$fn-color-indigo-400: #7858ff;
+$fn-color-indigo-500: #5d36ff;
+$fn-color-indigo-600: #470ced;
+$fn-color-indigo-700: #2c13ad;
+$fn-color-indigo-800: #1c0c6e;
+$fn-color-indigo-900: #0e0637;
+
+$fn-color-blue-50: #ebf8ff;
+$fn-color-blue-100: #d1efff;
+$fn-color-blue-150: #a6e0ff;
+$fn-color-blue-200: #89d1ff;
 $fn-color-blue-300: #4db1ff;
-$fn-color-blue-400: #2495ff;
+$fn-color-blue-400: #1b90ff;
 $fn-color-blue-500: #0070f2;
-$fn-color-blue-600: #0059d6;
-$fn-color-blue-700: #0045bf;
-$fn-color-blue-800: #002e92;
-$fn-color-blue-900: #001d6d;
-
-// Semantic Colors
-$fn-color-green-50: #e5fad9;
-$fn-color-green-100: #bdf49f;
-$fn-color-green-150: #83e64e;
-$fn-color-green-200: #6add31;
-$fn-color-green-300: #54c122;
-$fn-color-green-400: #38a91e;
-$fn-color-green-500: #188918;
-$fn-color-green-600: #256f3a;
-$fn-color-green-700: #1f5b30;
-$fn-color-green-800: #11411f;
-$fn-color-green-900: #0d2d16;
-
-$fn-color-orange-50: #fff5e1;
-$fn-color-orange-100: #ffe4bd;
-$fn-color-orange-150: #ffc296;
-$fn-color-orange-200: #ffb387;
-$fn-color-orange-300: #f78f52;
-$fn-color-orange-400: #ea6f28;
-$fn-color-orange-500: #cd4b00;
-$fn-color-orange-600: #aa3e02;
-$fn-color-orange-700: #903101;
-$fn-color-orange-800: #6a2001;
-$fn-color-orange-900: #4d1300;
-
-$fn-color-red-50: #fff1f0;
-$fn-color-red-100: #ffdddb;
-$fn-color-red-150: #ffbfb9;
-$fn-color-red-200: #ffb0a3;
-$fn-color-red-300: #ff8874;
-$fn-color-red-400: #f9614c;
-$fn-color-red-500: #ea1400;
-$fn-color-red-600: #c50323;
-$fn-color-red-700: #a4071c;
-$fn-color-red-800: #770411;
-$fn-color-red-900: #570009;
-
-// Decorative Colors
-$fn-color-teal-50: #cbfef2;
-$fn-color-teal-100: #87f9df;
-$fn-color-teal-150: #1ce9bf;
-$fn-color-teal-200: #1addb6;
-$fn-color-teal-300: #00c0a0;
-$fn-color-teal-400: #04a49f;
-$fn-color-teal-500: #07828e;
-$fn-color-teal-600: #056b7d;
-$fn-color-teal-700: #035966;
-$fn-color-teal-800: #023f49;
-$fn-color-teal-900: #012b33;
-
-$fn-color-lime-50: #edfbac;
-$fn-color-lime-100: #d4f16d;
-$fn-color-lime-150: #ace019;
-$fn-color-lime-200: #a2d518;
-$fn-color-lime-300: #8abd1c;
-$fn-color-lime-400: #729e15;
-$fn-color-lime-500: #588206;
-$fn-color-lime-600: #3e6d00;
-$fn-color-lime-700: #325a01;
-$fn-color-lime-800: #1a4100;
-$fn-color-lime-900: #0f2d00;
-
-$fn-color-indigo-50: #f5f2ff;
-$fn-color-indigo-100: #e8e0ff;
-$fn-color-indigo-150: #d7c6ff;
-$fn-color-indigo-200: #d3b7ff;
-$fn-color-indigo-300: #bb98ff;
-$fn-color-indigo-400: #9f7cff;
-$fn-color-indigo-500: #9f7cff;
-$fn-color-indigo-600: #5c35ff;
-$fn-color-indigo-700: #480cf1;
-$fn-color-indigo-800: #2c13ad;
-$fn-color-indigo-900: #1f0d79;
+$fn-color-blue-600: #0057d2;
+$fn-color-blue-700: #0040b0;
+$fn-color-blue-800: #002a86;
+$fn-color-blue-900: #00144a;
 
 $fn-color-cyan-50: #dbf9ff;
-$fn-color-cyan-100: #a9f0ff;
+$fn-color-cyan-100: #b8f3ff;
 $fn-color-cyan-150: #42e2f5;
 $fn-color-cyan-200: #2dd6ef;
 $fn-color-cyan-300: #0fb9dc;
 $fn-color-cyan-400: #09a0bf;
 $fn-color-cyan-500: #007fa9;
-$fn-color-cyan-600: #006894;
+$fn-color-cyan-600: #00709f;
 $fn-color-cyan-700: #025484;
 $fn-color-cyan-800: #013b64;
 $fn-color-cyan-900: #00274e;
 
-$fn-color-pink-50: #ffefff;
-$fn-color-pink-100: #ffdaf9;
-$fn-color-pink-150: #ffb8f6;
-$fn-color-pink-200: #ffa7eb;
-$fn-color-pink-300: #ff75ed;
-$fn-color-pink-400: #f341ee;
-$fn-color-pink-500: #cc00dc;
-$fn-color-pink-600: #a400c6;
-$fn-color-pink-700: #8200b2;
-$fn-color-pink-800: #59008c;
-$fn-color-pink-900: #3a006b;
+$fn-color-teal-50: #dafdf5;
+$fn-color-teal-100: #c2fcee;
+$fn-color-teal-150: #64edd2;
+$fn-color-teal-200: #2ce0bf;
+$fn-color-teal-300: #00ceac;
+$fn-color-teal-400: #04a6a1;
+$fn-color-teal-500: #07838f;
+$fn-color-teal-600: #046c7a;
+$fn-color-teal-700: #035663;
+$fn-color-teal-800: #02414c;
+$fn-color-teal-900: #012931;
 
-// Brand Specific
+$fn-color-green-50: #f5fae5;
+$fn-color-green-100: #ebf5cb;
+$fn-color-green-150: #bde986;
+$fn-color-green-200: #97dd40;
+$fn-color-green-300: #5dc122;
+$fn-color-green-400: #36a41d;
+$fn-color-green-500: #188918;
+$fn-color-green-600: #256f3a;
+$fn-color-green-700: #1e592f;
+$fn-color-green-800: #164323;
+$fn-color-green-900: #0e2b16;
+
+$fn-color-lime-50: #edfbac;
+$fn-color-lime-100: #dcf387;
+$fn-color-lime-150: #ace019;
+$fn-color-lime-200: #a2d518;
+$fn-color-lime-300: #8abd1c;
+$fn-color-lime-400: #729e15;
+$fn-color-lime-500: #588206;
+$fn-color-lime-600: #437500;
+$fn-color-lime-700: #325a01;
+$fn-color-lime-800: #1a4100;
+$fn-color-lime-900: #0f2d00;
+
 $fn-color-yellow-50: #fdf5c9;
-$fn-color-yellow-100: #fce398;
+$fn-color-yellow-100: #fce8a9;
 $fn-color-yellow-150: #ffc654;
 $fn-color-yellow-200: #ffb727;
 $fn-color-yellow-300: #e79a00;
 $fn-color-yellow-400: #c88500;
 $fn-color-yellow-500: #a16b00;
-$fn-color-yellow-600: #875700;
+$fn-color-yellow-600: #915e00;
 $fn-color-yellow-700: #714700;
 $fn-color-yellow-800: #523100;
 $fn-color-yellow-900: #3d1f00;
 
-$fn-color-crimson-50: #fff0f5;
-$fn-color-crimson-100: #ffdce8;
-$fn-color-crimson-150: #febbce;
-$fn-color-crimson-200: #feadc8;
-$fn-color-crimson-300: #fe83aa;
-$fn-color-crimson-400: #fa4f96;
-$fn-color-crimson-500: #df0597;
-$fn-color-crimson-600: #ba067e;
-$fn-color-crimson-700: #9b0168;
-$fn-color-crimson-800: #71014b;
-$fn-color-crimson-900: #510136;
+$fn-color-orange-50: #fff8d6;
+$fn-color-orange-100: #fff3b8;
+$fn-color-orange-150: #ffdf72;
+$fn-color-orange-200: #ffc933;
+$fn-color-orange-300: #ffb300;
+$fn-color-orange-400: #f58b00;
+$fn-color-orange-500: #c35500;
+$fn-color-orange-600: #a93e00;
+$fn-color-orange-700: #8d2a00;
+$fn-color-orange-800: #6d1900;
+$fn-color-orange-900: #450b00;
+
+$fn-color-red-50: #ffeaf4;
+$fn-color-red-100: #ffd5ea;
+$fn-color-red-150: #ffb2d2;
+$fn-color-red-200: #ff8cb2;
+$fn-color-red-300: #ff5c77;
+$fn-color-red-400: #ee3939;
+$fn-color-red-500: #d20a0a;
+$fn-color-red-600: #aa0808;
+$fn-color-red-700: #840606;
+$fn-color-red-800: #5a0404;
+$fn-color-red-900: #350000;
 
 // Border radius
 $fn-border-radius-2: 0.125rem;  // 2px
@@ -162,21 +158,21 @@ $fn-border-radius-24: 1.5rem;   // 24px
 $fn-border-radius-100: 100%;    // 100%
 
 // Shadows
-$fn-shadow-grey-level-0: 0 0 2px rgba(130, 149, 168, 0.16), 0 4px 8px rgba(130, 149, 168, 0.16);
-$fn-shadow-grey-level-1: 0 0 2px rgba(130, 149, 168, 0.16), 0 8px 16px rgba(130, 149, 168, 0.16);
+$fn-shadow-grey-level-0: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+$fn-shadow-grey-level-1: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 $fn-shadow-grey-level-2: 0 0 2px rgba(130, 149, 168, 0.16), 0 16px 32px rgba(130, 149, 168, 0.16);
 
-$fn-shadow-blue-level-0: 0 0 2px rgba(54, 147, 255, 0.16), 0 4px 8px rgba(54, 147, 255, 0.16);
-$fn-shadow-blue-level-1: 0 0 2px rgba(54, 147, 255, 0.16), 0 8px 16px rgba(54, 147, 255, 0.16);
+$fn-shadow-blue-level-0: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+$fn-shadow-blue-level-1: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
 
-$fn-shadow-green-level-0: 0 0 2px rgba(30, 167, 41, 0.16), 0 4px 8px rgba(30, 167, 41, 0.16);
-$fn-shadow-green-level-1: 0 0 2px rgba(30, 167, 41, 0.16), 0 8px 16px rgba(30, 167, 41, 0.16);
+$fn-shadow-green-level-0: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+$fn-shadow-green-level-1: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
 
-$fn-shadow-orange-level-0: 0 0 2px rgba(242, 106, 0, 0.16), 0 4px 8px rgba(242, 106, 0, 0.16);
-$fn-shadow-orange-level-1: 0 0 2px rgba(242, 106, 0, 0.16), 0 8px 16px rgba(242, 106, 0, 0.16);
+$fn-shadow-orange-level-0: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+$fn-shadow-orange-level-1: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
 
-$fn-shadow-red-level-0: 0 0 2px rgba(240, 103, 80, 0.16), 0 4px 8px rgba(240, 103, 80, 0.16);
-$fn-shadow-red-level-1: 0 0 2px rgba(240, 103, 80, 0.16), 0 8px 16px rgba(240, 103, 80, 0.16);
+$fn-shadow-red-level-0: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+$fn-shadow-red-level-1: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
 
 $fn-shadow-black-level-0: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
 $fn-shadow-black-level-1: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
@@ -188,17 +184,18 @@ $fn-color-black: #000000;
 
 // Focus outline
 $fn-focus-outline-shadow-blue: 0 0 0 0.125rem #0070f2;
-$fn-focus-outline-shadow-grey: 0 0 0 0.125rem #5f7992;
-$fn-focus-outline-shadow-green: 0 0 0 0.125rem #188822;
-$fn-focus-outline-shadow-orange: 0 0 0 0.125rem #f26a00;
-$fn-focus-outline-shadow-red: 0 0 0 0.125rem #e32b0b;
-$fn-focus-outline-shadow-teal: 0 0 0 0.125rem #07828e;
-$fn-focus-outline-shadow-indigo: 0 0 0 0.125rem #7757ff;
+$fn-focus-outline-shadow-grey: 0 0 0 0.125rem #475e75;
+$fn-focus-outline-shadow-green: 0 0 0 0.125rem #188918;
+$fn-focus-outline-shadow-orange: 0 0 0 0.125rem #f58b00;
+$fn-focus-outline-shadow-red: 0 0 0 0.125rem #c35500;
+
+$fn-focus-outline-shadow-teal: 0 0 0 0.125rem #07838f;
+$fn-focus-outline-shadow-indigo: 0 0 0 0.125rem #5d36ff;
 $fn-focus-outline-shadow-pink: 0 0 0 0.125rem #cc00dc;
 $fn-focus-outline-shadow-lime: 0 0 0 0.125rem #588206;
 $fn-focus-outline-shadow-cyan: 0 0 0 0.125rem #007fa9;
 $fn-focus-outline-shadow-yellow: 0 0 0 0.125rem #a16b00;
-$fn-focus-outline-shadow-crimson: 0 0 0 0.125rem #df0597;
+$fn-focus-outline-shadow-crimson: 0 0 0 0.125rem #df1278;
 $fn-focus-outline-inner-shadow: inset 0 0 0 0.125rem #ffffff;
 
 // Opacity for disabled state
