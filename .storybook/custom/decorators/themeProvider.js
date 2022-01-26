@@ -1,5 +1,5 @@
 import { makeDecorator } from '@storybook/addons';
-import { themeManager, componentsManager } from '../environment';
+import { themeManager, componentsManager } from '../../environment';
 
 const defaultManagersKey = Symbol('Default manager');
 

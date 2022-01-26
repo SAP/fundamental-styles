@@ -3,14 +3,14 @@ import { DocsContainer, DocsContext } from '@storybook/addon-docs';
 import addons from '@storybook/addons';
 import prettify from 'pretty';
 import React, { useContext } from 'react';
-import availableThemes from './custom/availableThemes';
+import availableThemes from './custom/constants/availableThemes';
 import DocsPage from './custom/components/DocsPage';
 import { SAPContainer } from './custom/components/SAPContainer';
-import directionalities from './custom/directionalities';
-import { withDirectionality } from './custom/directionalityProvider';
-import fundamentals from './custom/fundamentals';
+import directionalities from './custom/constants/directionalities';
+import { withDirectionality } from './custom/decorators/directionalityProvider';
+import fundamentals from './custom/constants/fundamentals';
 
-import { withThemeProvider } from './custom/themeProvider';
+import { withThemeProvider } from './custom/decorators/themeProvider';
 import { check, isProduction } from './environment';
 
 check();

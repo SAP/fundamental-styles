@@ -1,5 +1,5 @@
 import React from 'react';
-import directionalities from '../directionalities';
+import directionalities from '../constants/directionalities';
 
 export const DirectionalitySelect = ({ selectedDirectionality, onDirectionalityChange }) => {
     return (

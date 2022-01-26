@@ -1,5 +1,5 @@
 import React from 'react';
-import availableThemes from '../availableThemes';
+import availableThemes from '../constants/availableThemes';
 
 export const ThemeSelect = ({ selectedTheme, onThemeChange }) => {
     return (
