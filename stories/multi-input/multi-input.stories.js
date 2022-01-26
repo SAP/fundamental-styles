@@ -821,7 +821,8 @@ To add text in the \`body\` of the component, simply include your text in the \`
     }
 };
 
-export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileModeMultiInputHeader" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
+export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileModeMultiInputHeader"
+         class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
@@ -844,34 +845,36 @@ export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileM
                 <div class="fd-bar__element">
                     <div class="fd-input-group">
                         <div class="fd-tokenizer">
-                             <div class="fd-tokenizer__inner">
-                                 <span class="fd-token" tabindex="0" role="button">
-                                     <span class="fd-token__text">
-                                         Apple
-                                     </span>
-                                     <button aria-label="unselect option: apple" class="fd-token__close"></button>
+                            <div class="fd-tokenizer__inner">
+                             <span class="fd-token" tabindex="0" role="button">
+                                 <span class="fd-token__text">
+                                     Apple
                                  </span>
-                                 <span class="fd-token" tabindex="0" role="button">
-                                     <span class="fd-token__text">
-                                         Orange
-                                     </span>
-                                     <button aria-label="unselect option: orange" class="fd-token__close"></button>
+                                 <button aria-label="unselect option: apple" class="fd-token__close"></button>
+                             </span>
+                                <span class="fd-token" tabindex="0" role="button">
+                                 <span class="fd-token__text">
+                                     Orange
                                  </span>
-                                 <span class="fd-token" tabindex="0" role="button">
-                                     <span class="fd-token__text">
-                                         Kiwi
-                                     </span>
-                                     <button aria-label="unselect option: kiwi" class="fd-token__close"></button>
+                                 <button aria-label="unselect option: orange" class="fd-token__close"></button>
+                             </span>
+                                <span class="fd-token" tabindex="0" role="button">
+                                 <span class="fd-token__text">
+                                     Kiwi
                                  </span>
-                                 <span class="fd-tokenizer__indicator">4 more</span>
-                                 <input aria-labelledby="mobileModeMultiInputHeader" class="fd-input fd-input-group__input fd-tokenizer__input" />
-                             </div>
-                         </div>
+                                 <button aria-label="unselect option: kiwi" class="fd-token__close"></button>
+                             </span>
+                                <span class="fd-tokenizer__indicator">4 more</span>
+                                <input aria-labelledby="mobileModeMultiInputHeader"
+                                       class="fd-input fd-input-group__input fd-tokenizer__input" />
+                            </div>
+                        </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button">
-                            <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent">
-                                <i class="sap-icon--value-help"></i>
-                            </button>
-                        </span>
+                        <button aria-label="show options"
+                                class="fd-input-group__button fd-button fd-button--transparent">
+                            <i class="sap-icon--value-help"></i>
+                        </button>
+                    </span>
                     </div>
                 </div>
                 <div class="fd-bar__element">
@@ -883,7 +886,8 @@ export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileM
         </div>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <span class="fd-list__message fd-list__message--success">Success Message</span>
-             <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input fd-list--has-message fd-list--mobile">
+            <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits"
+                class="fd-list fd-list--multi-input fd-list--has-message fd-list--mobile">
                 <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                     <div class="fd-form-item fd-list__form-item">
                         <input type="checkbox" class="fd-checkbox" id="Ai4ez648" checked aria-labelledby="Az0bg57">
@@ -905,17 +909,18 @@ export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileM
                     </div>
                     <span class="fd-list__title" id="Az0bg59">Banana</span>
                 </li>
-             </ul>
+            </ul>
         </div>
-       <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--cozy fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     <button class="fd-button fd-button--emphasized fd-dialog__decisive-button">OK</button>
                 </div>
             </div>
         </footer>
-    </section>
-</div>
+    </div>
+</section>
+
 `;
 
 MobileMode.parameters = {
