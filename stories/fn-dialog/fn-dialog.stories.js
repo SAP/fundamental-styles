@@ -38,11 +38,11 @@ export const Primary = () => `${localStyles}
             </div>
             <footer class="fn-dialog__footer">
                 <div style="display:flex;justify-content:flex-end;gap:0.375rem;padding: 0.375rem 0.75rem">
-                    <button class="fn-button fn-button--emphasized fn-button--icon-left">
+                    <button class="fn-button fn-button--emphasized">
                         <span class="sap-icon sap-icon--save"></span>
                         <span class="fn-button__text">Save</span>
                     </button>
-                    <button class="fn-button fn-button--ghost">
+                    <button class="fn-button fn-button--secondary">
                         <span class="fn-button__text">Cancel</span>
                     </button>
                 </div>

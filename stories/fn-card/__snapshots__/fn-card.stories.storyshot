@@ -55,7 +55,7 @@ exports[`Storyshots Experimental/Card Data Card 1`] = `
       
             
       <button
-        class="fn-button fn-button--ghost fn-card__title-button"
+        class="fn-button fn-button--secondary fn-card__title-button"
       >
         
                 

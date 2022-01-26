@@ -33,7 +33,7 @@ export const DataCard = () => `
     <div class="fn-card fn-card--data is-focus" style="max-width: 40rem">
         <div class="fn-card__title-icon-button-container">
             <h1 class="fn-card__title">Focused Data Card Title</h1>
-            <button class="fn-button fn-button--ghost fn-card__title-button">
+            <button class="fn-button fn-button--secondary fn-card__title-button">
                 <span class="fn-button__text">Button</span>
             </button>
         </div>

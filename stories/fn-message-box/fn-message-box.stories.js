@@ -57,14 +57,14 @@ export const Primary = () => `${localStyles}
             <a href="#" class="fn-link">Get Help</a>
         </div>
         <footer class="fn-bar fn-bar--footer fn-message-box__footer">
-            <button class="fn-button fn-button--emphasized fn-button--icon-left">
+            <button class="fn-button fn-button--emphasized">
                 <span class="sap-icon sap-icon--save"></span>
                 <span class="fn-button__text">Save</span>
             </button>
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Discard</span>
             </button>
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Cancel</span>
             </button>
         </footer>
@@ -94,14 +94,14 @@ export const Confirmation = () => `${localStyles}
             <a href="#" class="fn-link">Get Help</a>
         </div>
         <footer class="fn-bar fn-bar--footer fn-message-box__footer">
-            <button class="fn-button fn-button--emphasized fn-button--icon-left">
+            <button class="fn-button fn-button--emphasized">
                 <span class="sap-icon sap-icon--save"></span>
                 <span class="fn-button__text">Save</span>
             </button>
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Discard</span>
             </button>
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Cancel</span>
             </button>
         </footer>
@@ -131,7 +131,7 @@ export const Negative = () => `${localStyles}
             <a href="#" class="fn-link">Get Help</a>
         </div>
         <footer class="fn-bar fn-bar--footer fn-message-box__footer">
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Close</span>
             </button>
         </footer>
@@ -161,7 +161,7 @@ export const Critical = () => `${localStyles}
             <a href="#" class="fn-link">Get Help</a>
         </div>
         <footer class="fn-bar fn-bar--footer fn-message-box__footer">
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Close</span>
             </button>
         </footer>
@@ -191,7 +191,7 @@ export const Positive = () => `${localStyles}
             <a href="#" class="fn-link">Get Help</a>
         </div>
         <footer class="fn-bar fn-bar--footer fn-message-box__footer">
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Close</span>
             </button>
         </footer>
@@ -221,7 +221,7 @@ export const Info = () => `${localStyles}
             <a href="#" class="fn-link">Get Help</a>
         </div>
         <footer class="fn-bar fn-bar--footer fn-message-box__footer">
-            <button class="fn-button fn-button--ghost">
+            <button class="fn-button fn-button--secondary">
                 <span class="fn-button__text">Close</span>
             </button>
         </footer>

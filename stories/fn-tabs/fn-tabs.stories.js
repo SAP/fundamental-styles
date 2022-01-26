@@ -72,7 +72,7 @@ export const DefaultTabs = () => `${localStyles}
             <div class="fn-tabs__text">Tab Item</div>
         </li>
         <li role="tab" class="fn-tabs__right-container">
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="More">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
                 <span class="sap-icon sap-icon--overflow"></span>
             </button>
         </li>
@@ -255,10 +255,10 @@ export const MultiInstance = () => `${localStyles}
             </button>
         </li>
         <li role="tab" class="fn-tabs__right-container">
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="More">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
                 <span class="sap-icon sap-icon--overflow"></span>
             </button>
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="More">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
                 <span class="sap-icon sap-icon--add"></span>
             </button>
         </li>
