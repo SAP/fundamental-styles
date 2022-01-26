@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.106 (2022-01-26)
+
+
+### Bug Fixes
+
+* **fn:** update Fiori Next colors [ci visual] ([#3124](https://github.com/SAP/fundamental-styles/issues/3124)) ([2672543](https://github.com/SAP/fundamental-styles/commit/26725438814fb87f3389c76bec9044b78d2fc06e))
+
 ## 0.21.0-rc.105 (2022-01-25)
 
 ## 0.21.0-rc.104 (2022-01-25)
