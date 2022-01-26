@@ -12,7 +12,7 @@ $block: #{$fd-namespace}-tabs;
 
 .#{$block} {
   %fd-tabs-focus {
-    outline-offset: -0.0625rem;
+    outline-offset: 0.0625rem;
     outline-style: var(--sapContent_FocusStyle);
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
