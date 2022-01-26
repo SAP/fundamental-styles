@@ -422,12 +422,12 @@ function getNetlifyDrawerIframe() {
 
         const iframes = window.parent.document.getElementsByTagName('iframe');
         let iframe;
-
-        iframes.forEach(function(item) {
-            if (item.src.startsWith('https://app.netlify.com')) {
-                iframe = item;
+        
+        for (const key in iframes) {
+            if (iframes[key].src?.startsWith('https://app.netlify.com')) {
+                iframe = iframes[key];
             }
-        });
+        }
 
         return iframe;
 

@@ -156,19 +156,19 @@ $fn-avatar-base-colors: (
 
       @include fn-hover () {
         &::after {
-          background: linear-gradient(0deg, rgba(21, 39, 58, 0.1), rgba(21, 39, 58, 0.1)), url(.jpg);
+          background: linear-gradient(0deg, rgba(21, 39, 58, 0.1), rgba(21, 39, 58, 0.1)); // , url(.jpg);
         }
 
         @include fn-active () {
           &::after {
-            background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15)), url(.jpg);
+            background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15)); // , url(.jpg);
           }
         }
       }
 
       @include fn-active () {
         &::after {
-          background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15)), url(.jpg);
+          background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15)); // , url(.jpg);
         }
       }
 
@@ -189,7 +189,7 @@ $fn-avatar-base-colors: (
           box-shadow: none;
 
           &::after {
-            background: linear-gradient(0deg, rgba(21, 39, 58, 0.1), rgba(21, 39, 58, 0.1)), url(.jpg);
+            background: linear-gradient(0deg, rgba(21, 39, 58, 0.1), rgba(21, 39, 58, 0.1)); // , url(.jpg);
           }
 
           @include fn-active () {
@@ -198,7 +198,7 @@ $fn-avatar-base-colors: (
             box-shadow: none;
 
             &::after {
-              background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15)), url(.jpg);
+              background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15)); // , url(.jpg);
             }
           }
         }

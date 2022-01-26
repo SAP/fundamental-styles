@@ -1,0 +1,384 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Message Strip Message Strip 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-strip {
+        margin-bottom: 1rem;
+    }
+
+  </style>
+  
+
+    
+  <div
+    class="fn-message-strip"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-information fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Information (default) Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--success"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-success fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Success Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--warning"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-warning fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Warning Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--error"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-error fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Error Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Message Strip Message Strip with No Icon 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-strip {
+        margin-bottom: 1rem;
+    }
+
+  </style>
+  
+
+    
+  <div
+    class="fn-message-strip"
+  >
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Information (default) Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--success"
+  >
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Success Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--warning"
+  >
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Warning Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--error"
+  >
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Error Message Strip Text
+    </span>
+    
+        
+    <button
+      aria-label="Close"
+      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+    >
+      
+            
+      <span
+        class="sap-icon sap-icon--decline"
+      />
+      
+        
+    </button>
+    
+    
+  </div>
+  
+
+</section>
+`;
+
+exports[`Storyshots Experimental/Message Strip Non-Dismissible Message Strip 1`] = `
+<section>
+  
+
+  <style>
+    
+    .fn-message-strip {
+        margin-bottom: 1rem;
+    }
+
+  </style>
+  
+
+    
+  <div
+    class="fn-message-strip"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-information fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Information (default) Message Strip Text
+    </span>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--success"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-success fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Success Message Strip Text
+    </span>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--warning"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-warning fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Warning Message Strip Text
+    </span>
+    
+    
+  </div>
+  
+    
+  <div
+    class="fn-message-strip fn-message-strip--error"
+  >
+    
+        
+    <span
+      class="sap-icon sap-icon--message-error fn-message-strip__icon"
+    />
+    
+        
+    <span
+      class="fn-message-strip__text"
+    >
+      Error Message Strip Text
+    </span>
+    
+    
+  </div>
+  
+
+</section>
+`;
