@@ -415,7 +415,6 @@ export const HeaderWithSubheader = () => `
                 style="background-image: url('/assets/images/avatars/1.svg')"
                 role="img" aria-label="John Doe"></span>
         </div>
-        </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--grid"></i>
