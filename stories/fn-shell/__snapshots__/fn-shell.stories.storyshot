@@ -79,7 +79,7 @@ exports[`Storyshots Experimental/Shell Extra large 1`] = `
             
       <button
         aria-label="Settings"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -93,7 +93,7 @@ exports[`Storyshots Experimental/Shell Extra large 1`] = `
             
       <button
         aria-label="Notification"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -210,7 +210,7 @@ exports[`Storyshots Experimental/Shell Large 1`] = `
             
       <button
         aria-label="Settings"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -224,7 +224,7 @@ exports[`Storyshots Experimental/Shell Large 1`] = `
             
       <button
         aria-label="Notification"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -308,7 +308,7 @@ exports[`Storyshots Experimental/Shell Medium 1`] = `
             
       <button
         aria-label="Search"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -322,7 +322,7 @@ exports[`Storyshots Experimental/Shell Medium 1`] = `
             
       <button
         aria-label="Settings"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -336,7 +336,7 @@ exports[`Storyshots Experimental/Shell Medium 1`] = `
             
       <button
         aria-label="Notification"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -392,7 +392,7 @@ exports[`Storyshots Experimental/Shell Small 1`] = `
             
       <button
         aria-label="Menu"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -427,7 +427,7 @@ exports[`Storyshots Experimental/Shell Small 1`] = `
             
       <button
         aria-label="Search"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -441,7 +441,7 @@ exports[`Storyshots Experimental/Shell Small 1`] = `
             
       <button
         aria-label="Settings"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 
@@ -455,7 +455,7 @@ exports[`Storyshots Experimental/Shell Small 1`] = `
             
       <button
         aria-label="Notification"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
                 

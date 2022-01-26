@@ -161,8 +161,8 @@ $block: #{$fn-namespace}-button;
     }
   }
 
-  // GHOST BUTTON
-  &--ghost {
+  // SECONDARY BUTTON
+  &--secondary {
     @include fn-button-base($fn-color-grey-50, $fn-color-grey-500, none);
 
     @include fn-hover() {
@@ -206,10 +206,57 @@ $block: #{$fn-namespace}-button;
     @include fn-disabled() {
       @include fn-button-base($fn-color-grey-50, $fn-color-grey-500, none);
     }
+
+    // SECONDARY EMPHASIZED BUTTON
+    &.#{$block}--emphasized {
+      @include fn-button-base($fn-color-grey-500, $fn-color-white, $fn-shadow-grey-level-0);
+
+      @include fn-hover() {
+        @include fn-button-base($fn-color-grey-600, $fn-color-white, $fn-shadow-grey-level-1);
+
+        @include fn-active() {
+          @include fn-button-base($fn-color-grey-700, $fn-color-white, $fn-shadow-grey-level-0);
+        }
+      }
+
+      @include fn-active() {
+        @include fn-button-base($fn-color-grey-700, $fn-color-white, $fn-shadow-grey-level-0);
+      }
+
+      @include fn-is-focus() {
+        @include fn-button-base($fn-color-grey-500, $fn-color-white, none);
+
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-grey, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-not-focus-visible() {
+        @include fn-button-base($fn-color-grey-500, $fn-color-white, $fn-shadow-grey-level-0);
+
+        @include fn-hover() {
+          @include fn-button-base($fn-color-grey-600, $fn-color-white, $fn-shadow-grey-level-1);
+
+          @include fn-active() {
+            @include fn-button-base($fn-color-grey-700, $fn-color-white, $fn-shadow-grey-level-0);
+          }
+        }
+      }
+
+      @include fn-focus-visible() {
+        @include fn-button-base($fn-color-grey-500, $fn-color-white, none);
+
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-grey, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-disabled() {
+        @include fn-button-base($fn-color-grey-500, $fn-color-white, $fn-shadow-grey-level-0);
+      }
+    }
   }
 
-  // TRANSPARENT BUTTON
-  &--transparent {
+  // LAYOUT BUTTON
+  &--layout {
     @include fn-button-base(transparent, $fn-color-grey-500, none);
 
     @include fn-hover() {
@@ -255,55 +302,8 @@ $block: #{$fn-namespace}-button;
     }
   }
 
-  // NEUTRAL BUTTON
-  &--neutral {
-    @include fn-button-base($fn-color-grey-500, $fn-color-white, $fn-shadow-grey-level-0);
-
-    @include fn-hover() {
-      @include fn-button-base($fn-color-grey-600, $fn-color-white, $fn-shadow-grey-level-1);
-
-      @include fn-active() {
-        @include fn-button-base($fn-color-grey-700, $fn-color-white, $fn-shadow-grey-level-0);
-      }
-    }
-
-    @include fn-active() {
-      @include fn-button-base($fn-color-grey-700, $fn-color-white, $fn-shadow-grey-level-0);
-    }
-
-    @include fn-is-focus() {
-      @include fn-button-base($fn-color-grey-500, $fn-color-white, none);
-
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-grey, $fn-focus-outline-inner-shadow;
-    }
-
-    @include fn-not-focus-visible() {
-      @include fn-button-base($fn-color-grey-500, $fn-color-white, $fn-shadow-grey-level-0);
-
-      @include fn-hover() {
-        @include fn-button-base($fn-color-grey-600, $fn-color-white, $fn-shadow-grey-level-1);
-
-        @include fn-active() {
-          @include fn-button-base($fn-color-grey-700, $fn-color-white, $fn-shadow-grey-level-0);
-        }
-      }
-    }
-
-    @include fn-focus-visible() {
-      @include fn-button-base($fn-color-grey-500, $fn-color-white, none);
-
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-grey, $fn-focus-outline-inner-shadow;
-    }
-
-    @include fn-disabled() {
-      @include fn-button-base($fn-color-grey-500, $fn-color-white, $fn-shadow-grey-level-0);
-    }
-  }
-
-  // ACCEPT BUTTON
-  &--accept {
+  // POSITIVE BUTTON
+  &--positive {
     @include fn-button-base($fn-color-white, $fn-color-green-500, $fn-shadow-green-level-0);
 
     @include fn-hover() {
@@ -347,32 +347,9 @@ $block: #{$fn-namespace}-button;
     @include fn-disabled() {
       @include fn-button-base($fn-color-white, $fn-color-green-500, $fn-shadow-green-level-0);
     }
-  }
 
-  // SUCCESS BUTTON
-  &--success {
-    @include fn-button-base($fn-color-green-500, $fn-color-white, $fn-shadow-green-level-0);
-
-    @include fn-hover() {
-      @include fn-button-base($fn-color-green-600, $fn-color-white, $fn-shadow-green-level-1);
-
-      @include fn-active() {
-        @include fn-button-base($fn-color-green-700, $fn-color-white, $fn-shadow-green-level-0);
-      }
-    }
-
-    @include fn-active() {
-      @include fn-button-base($fn-color-green-700, $fn-color-white, $fn-shadow-green-level-0);
-    }
-
-    @include fn-is-focus() {
-      @include fn-button-base($fn-color-green-500,  $fn-color-white, none);
-
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-green, $fn-focus-outline-inner-shadow;
-    }
-
-    @include fn-not-focus-visible() {
+    // POSITIVE EMPHASIZED BUTTON
+    &.#{$block}--emphasized {
       @include fn-button-base($fn-color-green-500, $fn-color-white, $fn-shadow-green-level-0);
 
       @include fn-hover() {
@@ -382,22 +359,45 @@ $block: #{$fn-namespace}-button;
           @include fn-button-base($fn-color-green-700, $fn-color-white, $fn-shadow-green-level-0);
         }
       }
-    }
 
-    @include fn-focus-visible() {
-      @include fn-button-base($fn-color-green-500,  $fn-color-white, none);
+      @include fn-active() {
+        @include fn-button-base($fn-color-green-700, $fn-color-white, $fn-shadow-green-level-0);
+      }
 
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-green, $fn-focus-outline-inner-shadow;
-    }
+      @include fn-is-focus() {
+        @include fn-button-base($fn-color-green-500,  $fn-color-white, none);
 
-    @include fn-disabled() {
-      @include fn-button-base($fn-color-green-500, $fn-color-white, $fn-shadow-green-level-0);
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-green, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-not-focus-visible() {
+        @include fn-button-base($fn-color-green-500, $fn-color-white, $fn-shadow-green-level-0);
+
+        @include fn-hover() {
+          @include fn-button-base($fn-color-green-600, $fn-color-white, $fn-shadow-green-level-1);
+
+          @include fn-active() {
+            @include fn-button-base($fn-color-green-700, $fn-color-white, $fn-shadow-green-level-0);
+          }
+        }
+      }
+
+      @include fn-focus-visible() {
+        @include fn-button-base($fn-color-green-500,  $fn-color-white, none);
+
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-green, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-disabled() {
+        @include fn-button-base($fn-color-green-500, $fn-color-white, $fn-shadow-green-level-0);
+      }
     }
   }
 
-  // ATTENTION BUTTON
-  &--attention {
+  // CRITICAL BUTTON
+  &--critical {
     @include fn-button-base($fn-color-white, $fn-color-orange-400, $fn-shadow-orange-level-0);
 
     @include fn-hover() {
@@ -441,32 +441,9 @@ $block: #{$fn-namespace}-button;
     @include fn-disabled() {
       @include fn-button-base($fn-color-white, $fn-color-orange-400, $fn-shadow-orange-level-0);
     }
-  }
 
-  // CRITICAL BUTTON
-  &--critical {
-    @include fn-button-base($fn-color-orange-400, $fn-color-white, $fn-shadow-orange-level-0);
-
-    @include fn-hover() {
-      @include fn-button-base($fn-color-orange-600, $fn-color-white, $fn-shadow-orange-level-1);
-
-      @include fn-active() {
-        @include fn-button-base($fn-color-orange-600, $fn-color-white, $fn-shadow-orange-level-0);
-      }
-    }
-
-    @include fn-active() {
-      @include fn-button-base($fn-color-orange-600, $fn-color-white, $fn-shadow-orange-level-0);
-    }
-
-    @include fn-is-focus() {
-      @include fn-button-base($fn-color-orange-400,  $fn-color-white, none);
-
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
-    }
-
-    @include fn-not-focus-visible() {
+    // CRITICAL EMPHASIZED BUTTON
+    &.#{$block}--emphasized {
       @include fn-button-base($fn-color-orange-400, $fn-color-white, $fn-shadow-orange-level-0);
 
       @include fn-hover() {
@@ -476,22 +453,45 @@ $block: #{$fn-namespace}-button;
           @include fn-button-base($fn-color-orange-600, $fn-color-white, $fn-shadow-orange-level-0);
         }
       }
-    }
 
-    @include fn-focus-visible() {
-      @include fn-button-base($fn-color-orange-400,  $fn-color-white, none);
+      @include fn-active() {
+        @include fn-button-base($fn-color-orange-600, $fn-color-white, $fn-shadow-orange-level-0);
+      }
 
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
-    }
+      @include fn-is-focus() {
+        @include fn-button-base($fn-color-orange-400,  $fn-color-white, none);
 
-    @include fn-disabled() {
-      @include fn-button-base($fn-color-orange-400, $fn-color-white, $fn-shadow-orange-level-0);
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-not-focus-visible() {
+        @include fn-button-base($fn-color-orange-400, $fn-color-white, $fn-shadow-orange-level-0);
+
+        @include fn-hover() {
+          @include fn-button-base($fn-color-orange-600, $fn-color-white, $fn-shadow-orange-level-1);
+
+          @include fn-active() {
+            @include fn-button-base($fn-color-orange-600, $fn-color-white, $fn-shadow-orange-level-0);
+          }
+        }
+      }
+
+      @include fn-focus-visible() {
+        @include fn-button-base($fn-color-orange-400,  $fn-color-white, none);
+
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-disabled() {
+        @include fn-button-base($fn-color-orange-400, $fn-color-white, $fn-shadow-orange-level-0);
+      }
     }
   }
 
-  // REJECT BUTTON
-  &--reject {
+  // NEGATIVE BUTTON
+  &--negative {
     @include fn-button-base($fn-color-white, $fn-color-red-500, $fn-shadow-red-level-0);
 
     @include fn-hover() {
@@ -535,32 +535,8 @@ $block: #{$fn-namespace}-button;
     @include fn-disabled() {
       @include fn-button-base($fn-color-white, $fn-color-red-500, $fn-shadow-red-level-0);
     }
-  }
 
-  // NEGATIVE BUTTON
-  &--negative {
-    @include fn-button-base($fn-color-red-500, $fn-color-white, $fn-shadow-red-level-0);
-
-    @include fn-hover() {
-      @include fn-button-base($fn-color-red-600, $fn-color-white, $fn-shadow-red-level-1);
-
-      @include fn-active() {
-        @include fn-button-base($fn-color-red-700, $fn-color-white, $fn-shadow-red-level-0);
-      }
-    }
-
-    @include fn-active() {
-      @include fn-button-base($fn-color-red-700, $fn-color-white, $fn-shadow-red-level-0);
-    }
-
-    @include fn-is-focus() {
-      @include fn-button-base($fn-color-red-500,  $fn-color-white, none);
-
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-red, $fn-focus-outline-inner-shadow;
-    }
-
-    @include fn-not-focus-visible() {
+    &.#{$block}--emphasized {
       @include fn-button-base($fn-color-red-500, $fn-color-white, $fn-shadow-red-level-0);
 
       @include fn-hover() {
@@ -570,17 +546,40 @@ $block: #{$fn-namespace}-button;
           @include fn-button-base($fn-color-red-700, $fn-color-white, $fn-shadow-red-level-0);
         }
       }
-    }
 
-    @include fn-focus-visible() {
-      @include fn-button-base($fn-color-red-500,  $fn-color-white, none);
+      @include fn-active() {
+        @include fn-button-base($fn-color-red-700, $fn-color-white, $fn-shadow-red-level-0);
+      }
 
-      border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-red, $fn-focus-outline-inner-shadow;
-    }
+      @include fn-is-focus() {
+        @include fn-button-base($fn-color-red-500,  $fn-color-white, none);
 
-    @include fn-disabled() {
-      @include fn-button-base($fn-color-red-500, $fn-color-white, $fn-shadow-red-level-0);
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-red, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-not-focus-visible() {
+        @include fn-button-base($fn-color-red-500, $fn-color-white, $fn-shadow-red-level-0);
+
+        @include fn-hover() {
+          @include fn-button-base($fn-color-red-600, $fn-color-white, $fn-shadow-red-level-1);
+
+          @include fn-active() {
+            @include fn-button-base($fn-color-red-700, $fn-color-white, $fn-shadow-red-level-0);
+          }
+        }
+      }
+
+      @include fn-focus-visible() {
+        @include fn-button-base($fn-color-red-500,  $fn-color-white, none);
+
+        border-color: $fn-color-white;
+        box-shadow: $fn-focus-outline-shadow-red, $fn-focus-outline-inner-shadow;
+      }
+
+      @include fn-disabled() {
+        @include fn-button-base($fn-color-red-500, $fn-color-white, $fn-shadow-red-level-0);
+      }
     }
   }
 
@@ -650,16 +649,6 @@ $block: #{$fn-namespace}-button;
 
     @include fn-disabled() {
       @include fn-button-base($fn-color-white, $fn-color-blue-500, $fn-shadow-blue-level-0);
-    }
-  }
-
-  &.#{$block}--menu {
-    @include fn-set-margins-x(0.75rem, 0.375rem);
-
-    .#{$block}__text {
-      & + [class*='sap-icon'] {
-        @include fn-set-margin-left(0);
-      }
     }
   }
 }

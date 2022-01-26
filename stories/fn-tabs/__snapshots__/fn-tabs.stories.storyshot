@@ -192,7 +192,7 @@ exports[`Storyshots Experimental/Tabs Default 1`] = `
             
         <button
           aria-label="More"
-          class="fn-button fn-button--transparent fn-button--icon-only"
+          class="fn-button fn-button--layout fn-button--icon-only"
         >
           
                 
@@ -437,7 +437,7 @@ exports[`Storyshots Experimental/Tabs Multi-Instance Tabs 1`] = `
             
         <button
           aria-label="More"
-          class="fn-button fn-button--transparent fn-button--icon-only"
+          class="fn-button fn-button--layout fn-button--icon-only"
         >
           
                 
@@ -451,7 +451,7 @@ exports[`Storyshots Experimental/Tabs Multi-Instance Tabs 1`] = `
             
         <button
           aria-label="More"
-          class="fn-button fn-button--transparent fn-button--icon-only"
+          class="fn-button fn-button--layout fn-button--icon-only"
         >
           
                 

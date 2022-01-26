@@ -4,35 +4,21 @@ export default {
         description: `
 **Modifier classes for button style:**
 
-| Style&nbsp;&nbsp;&nbsp;&nbsp;     | Modifier class           |
-| --------------------------------- | ------------------------ |
-| default (primary)&nbsp;&nbsp;&nbsp;&nbsp;        | \`none\`                  |
-| emphasized (primary)&nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-button--emphasized\` |
-| ghost (secondary)&nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--ghost\`      |
-| neutral (secondary) &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-button--neutral\`    |
-| transparent (secondary)&nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-button--transparent\`|
-| accept (semantic)&nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--accept\`     |
-| success (semantic)&nbsp;&nbsp;&nbsp;&nbsp;       | \`fn-button--success\`    |
-| attention (semantic)&nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-button--attention\`  |
-| critical (semantic)&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--critical\`   |
-| reject (semantic)&nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--reject\`     |
-| negative (semantic)&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--negative\`   |
-| selected (semantic)&nbsp;&nbsp;&nbsp;&nbsp;       | \`fn-button--selected\`    |
+| Style&nbsp;&nbsp;&nbsp;&nbsp;             | Modifier class            |
+| ----------------------------------------- | ------------------------- |
+| primary (default)&nbsp;&nbsp;&nbsp;&nbsp; | \`none\`                  |
+| emphasized &nbsp;&nbsp;&nbsp;&nbsp;       | \`fn-button--emphasized\` |
+| secondary &nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--secondary\`  |
+| layout &nbsp;&nbsp;&nbsp;&nbsp;           | \`fn-button--layout\`     |
+| positive &nbsp;&nbsp;&nbsp;&nbsp;         | \`fn-button--positive\`   |
+| critical &nbsp;&nbsp;&nbsp;&nbsp;         | \`fn-button--critical\`   |
+| negative &nbsp;&nbsp;&nbsp;&nbsp;         | \`fn-button--negative\`   |
+| selected &nbsp;&nbsp;&nbsp;&nbsp;         | \`fn-button--selected\`   |
 
 <br><br>
 
-**Modifier classes for button structure:**
-
-| Structure&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class           |
-| --------------------------------- | ------------------------ |
-| No-Icon&nbsp;&nbsp;&nbsp;&nbsp;   | \`none\`                 |
-| Icon-Only&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--icon-only\` |
-| Icon-Left&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--icon-left\` |
-| Icon-Right&nbsp;&nbsp;&nbsp;&nbsp;| \`fn-button--icon-right\`|
-
-<br><br>
         `,
-        components: ['fn-button', 'fn-segmented-button', 'fn-nested-button', 'icon']
+        components: ['fn-button', 'fn-segmented-button', 'fn-nested-button', 'fn-split-button', 'icon']
     }
 };
 
@@ -49,6 +35,10 @@ const localStyles = `
         align-items: center;
     }
 
+    .docs-fn-container > div {
+        text-align: center;
+    }
+
     .docs-fn-header-container {
         display: flex;
         align-items: center;
@@ -63,67 +53,67 @@ const localStyles = `
 export const Primary = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
-    <div><b>Emphasized </b></div>
-    <div><b>Default</b></div>
+    <div><b>Primary</b></div>
+    <div><b>Primary Emphasized </b></div>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:normal</b></div>
-    <button class="fn-button fn-button--emphasized">
+    <button class="fn-button">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button">
+    <button class="fn-button fn-button--emphasized">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:hover</b></div>
-    <button class="fn-button fn-button--emphasized is-hover">
+    <button class="fn-button is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button is-hover">
+    <button class="fn-button fn-button--emphasized is-hover">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:active</b></div>
-    <button class="fn-button fn-button--emphasized is-active">
-        <span class="fn-button__text">Button</span>
-    </button>
     <button class="fn-button is-active">
         <span class="fn-button__text">Button</span>
     </button>
-</div>
+    <button class="fn-button fn-button--emphasized is-active">
+        <span class="fn-button__text">Button</span>
+    </button>
+    </div>
 
 <div class="docs-fn-container">
     <div><b>:focus</b></div>
-    <button class="fn-button fn-button--emphasized is-focus">
+    <button class="fn-button is-focus">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button is-focus">
+    <button class="fn-button fn-button--emphasized is-focus">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:disabled</b></div>
-    <button class="fn-button fn-button--emphasized" disabled>
+    <button class="fn-button" disabled>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button" disabled>
+    <button class="fn-button fn-button--emphasized" disabled>
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 `;
 
-Primary.storyName = 'Primary Buttons';
+Primary.storyName = 'Primary Button';
 Primary.parameters = {
     docs: {
         iframeHeight: 500,
         description: {
-            story: 'Primary buttons are two types: default and emphasized. For the default one no modifier class is needed, just add the `.fn-button` class to your html element. For emphasized button add `.fn-button--emphasized` modifier class to the `.fn-button` base class.'
+            story: 'Primary buttons don\'t need a modifier, just add the `.fn-button` class to your html element. For emphasized button add `.fn-button--emphasized` modifier class to the `.fn-button` base class.'
         }
     }
 };
@@ -131,72 +121,56 @@ Primary.parameters = {
 export const Secondary = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
-    <div><b>Ghost</b></div>
-    <div><b>Transparent</b></div>
-    <div><b>Neutral</b></div>
+    <div><b>Secondary</b></div>
+    <div><b>Secondary Emphasized</b></div>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:normal</b></div>
-    <button class="fn-button fn-button--ghost">
+    <button class="fn-button fn-button--secondary">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--transparent">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--neutral">
+    <button class="fn-button fn-button--secondary fn-button--emphasized">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:hover</b></div>
-    <button class="fn-button fn-button--ghost is-hover">
+    <button class="fn-button fn-button--secondary is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--transparent is-hover">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--neutral is-hover">
+    <button class="fn-button fn-button--secondary fn-button--emphasized is-hover">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:active</b></div>
-    <button class="fn-button fn-button--ghost is-active">
+    <button class="fn-button fn-button--secondary is-active">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--transparent is-active">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--neutral is-active">
+    <button class="fn-button fn-button--secondary fn-button--emphasized is-active">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:focus</b></div>
-    <button class="fn-button fn-button--ghost is-focus">
+    <button class="fn-button fn-button--secondary is-focus">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--transparent is-focus">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--neutral is-focus">
+    <button class="fn-button fn-button--secondary fn-button--emphasized is-focus">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:disabled</b></div>
-    <button class="fn-button fn-button--ghost" disabled>
+    <button class="fn-button fn-button--secondary" disabled>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--transparent" disabled>
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--neutral" disabled>
+    <button class="fn-button fn-button--secondary fn-button--emphasized" disabled>
         <span class="fn-button__text">Button</span>
     </button>
 </div>
@@ -207,13 +181,60 @@ Secondary.parameters = {
     docs: {
         iframeHeight: 500,
         description: {
-            story: `Secondary buttons are three types: ghost, transparent and neutral.
+            story: `
 
-| Style&nbsp;&nbsp;&nbsp;&nbsp;        | Modifier class           |
-| ------------------------------------ | ------------------------ |
-| ghost&nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--ghost\`      |
-| transparent&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-button--transparent\`|
-| neutral&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--neutral\`    |
+| Style&nbsp;&nbsp;&nbsp;&nbsp;                 | Modifier class                                |
+| --------------------------------------------- | --------------------------------------------- |
+| secondary&nbsp;&nbsp;&nbsp;&nbsp;             | \`fn-button--secondary\`                      |
+| secondary emphasized&nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-button--secondary fn-button--emphasized\`|
+`
+        }
+    }
+};
+
+export const LayoutBtn = () => `${localStyles}
+<div class="docs-fn-container">
+    <div><b>:normal</b></div>
+    <button class="fn-button fn-button--layout">
+        <span class="fn-button__text">Button</span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:hover</b></div>
+    <button class="fn-button fn-button--layout is-hover">
+        <span class="fn-button__text">Button</span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:active</b></div>
+    <button class="fn-button fn-button--layout is-active">
+        <span class="fn-button__text">Button</span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:focus</b></div>
+    <button class="fn-button fn-button--layout is-focus">
+        <span class="fn-button__text">Button</span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:disabled</b></div>
+    <button class="fn-button fn-button--layout" disabled>
+        <span class="fn-button__text">Button</span>
+    </button>
+</div>
+`;
+
+LayoutBtn.storyName = 'Layout Button';
+LayoutBtn.parameters = {
+    docs: {
+        iframeHeight: 500,
+        description: {
+            story: `For Layout type of button add the \`fn-button--layout\` modifier class to the \`fn-button\` base class.
 `
         }
     }
@@ -222,120 +243,120 @@ Secondary.parameters = {
 export const Semantic = () => `${localStyles}
 <div class="docs-fn-container">
     <div></div>
-    <div><b>Accept</b></div>
-    <div><b>Success</b></div>
-    <div><b>Attention</b></div>
+    <div><b>Positive</b></div>
+    <div><b>Positive Emphasized</b></div>
     <div><b>Critical</b></div>
-    <div><b>Reject</b></div>
+    <div><b>Critical Emphasized</b></div>
     <div><b>Negative</b></div>
+    <div><b>Negative Emphasized</b></div>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:normal</b></div>
-    <button class="fn-button fn-button--accept">
+    <button class="fn-button fn-button--positive">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--success">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--attention">
+    <button class="fn-button fn-button--positive fn-button--emphasized">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--critical">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--reject">
+    <button class="fn-button fn-button--critical fn-button--emphasized">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--negative">
+        <span class="fn-button__text">Button</span>
+    </button>
+    <button class="fn-button fn-button--negative fn-button--emphasized">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:hover</b></div>
-    <button class="fn-button fn-button--accept is-hover">
+    <button class="fn-button fn-button--positive is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--success is-hover">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--attention is-hover">
+    <button class="fn-button fn-button--positive fn-button--emphasized is-hover">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--critical is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--reject is-hover">
+    <button class="fn-button fn-button--critical fn-button--emphasized is-hover">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--negative is-hover">
+        <span class="fn-button__text">Button</span>
+    </button>
+    <button class="fn-button fn-button--negative fn-button--emphasized is-hover">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:active</b></div>
-    <button class="fn-button fn-button--accept is-active">
+    <button class="fn-button fn-button--positive is-active">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--success is-active">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--attention is-active">
+    <button class="fn-button fn-button--positive fn-button--emphasized is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--critical is-active">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--reject is-active">
+    <button class="fn-button fn-button--critical fn-button--emphasized is-active">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--negative is-active">
+        <span class="fn-button__text">Button</span>
+    </button>
+    <button class="fn-button fn-button--negative fn-button--emphasized is-active">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:focus</b></div>
-    <button class="fn-button fn-button--accept is-focus">
+    <button class="fn-button fn-button--positive is-focus">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--success is-focus">
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--attention is-focus">
+    <button class="fn-button fn-button--positive fn-button--emphasized is-focus">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--critical is-focus">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--reject is-focus">
+    <button class="fn-button fn-button--critical fn-button--emphasized is-focus">
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--negative is-focus">
+        <span class="fn-button__text">Button</span>
+    </button>
+    <button class="fn-button fn-button--negative fn-button--emphasized is-focus">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:disabled</b></div>
-    <button class="fn-button fn-button--accept" disabled>
+    <button class="fn-button fn-button--positive" disabled>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--success" disabled>
-        <span class="fn-button__text">Button</span>
-    </button>
-    <button class="fn-button fn-button--attention" disabled>
+    <button class="fn-button fn-button--positive fn-button--emphasized" disabled>
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--critical" disabled>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--reject" disabled>
+    <button class="fn-button fn-button--critical fn-button--emphasized" disabled>
         <span class="fn-button__text">Button</span>
     </button>
     <button class="fn-button fn-button--negative" disabled>
+        <span class="fn-button__text">Button</span>
+    </button>
+    <button class="fn-button fn-button--negative fn-button--emphasized" disabled>
         <span class="fn-button__text">Button</span>
     </button>
 </div>
@@ -348,14 +369,14 @@ Semantic.parameters = {
         description: {
             story: `For semantic button add the appropriate modifier class to the \`.fn-button\` base class.
 
-| Style&nbsp;&nbsp;&nbsp;&nbsp;     | Modifier class           |
-| --------------------------------- | ------------------------ |
-| accept&nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--accept\`     |
-| success&nbsp;&nbsp;&nbsp;&nbsp;       | \`fn-button--success\`    |
-| attention&nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-button--attention\`  |
-| critical&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--critical\`   |
-| reject&nbsp;&nbsp;&nbsp;&nbsp;        | \`fn-button--reject\`     |
-| negative&nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-button--negative\`   |
+| Style&nbsp;&nbsp;&nbsp;&nbsp;               | Modifier class                                |
+| ------------------------------------------- | --------------------------------------------- |
+| positive&nbsp;&nbsp;&nbsp;&nbsp;            | \`fn-button--positive\`                       |
+| positive emphasized&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--positive fn-button--emphasized\` |
+| critical&nbsp;&nbsp;&nbsp;&nbsp;            | \`fn-button--critical\`                       |
+| critical emphasized&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--critical fn-button--emphasized\` |
+| negative&nbsp;&nbsp;&nbsp;&nbsp;            | \`fn-button--negative\`                       |
+| negative emphasized&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--negative fn-button--emphasized\` |
         `
         }
     }
@@ -371,75 +392,75 @@ export const Icon = () => `${localStyles}
 
 <div class="docs-fn-container">
     <div><b>:normal</b></div>
-    <button class="fn-button fn-button--icon-left">
+    <button class="fn-button">
         <span class="sap-icon sap-icon--paper-plane"></span>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--emphasized fn-button--icon-right">
+    <button class="fn-button fn-button--emphasized">
         <span class="fn-button__text">Button</span>
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="More">
+    <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
         <span class="sap-icon sap-icon--overflow"></span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:hover</b></div>
-    <button class="fn-button fn-button--icon-left is-hover">
+    <button class="fn-button is-hover">
         <span class="sap-icon sap-icon--paper-plane"></span>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--emphasized fn-button--icon-right is-hover">
+    <button class="fn-button fn-button--emphasized is-hover">
         <span class="fn-button__text">Button</span>
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--transparent fn-button--icon-only is-hover" aria-label="More">
+    <button class="fn-button fn-button--layout fn-button--icon-only is-hover" aria-label="More">
         <span class="sap-icon sap-icon--overflow"></span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:active</b></div>
-    <button class="fn-button fn-button--icon-left is-active">
+    <button class="fn-button is-active">
         <span class="sap-icon sap-icon--paper-plane"></span>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--emphasized fn-button--icon-right is-active">
+    <button class="fn-button fn-button--emphasized is-active">
         <span class="fn-button__text">Button</span>
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--transparent fn-button--icon-only is-active" aria-label="More">
+    <button class="fn-button fn-button--layout fn-button--icon-only is-active" aria-label="More">
         <span class="sap-icon sap-icon--overflow"></span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:focus</b></div>
-    <button class="fn-button fn-button--icon-left is-focus">
+    <button class="fn-button is-focus">
         <span class="sap-icon sap-icon--paper-plane"></span>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--emphasized fn-button--icon-right is-focus">
+    <button class="fn-button fn-button--emphasized is-focus">
         <span class="fn-button__text">Button</span>
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--transparent fn-button--icon-only is-focus" aria-label="More">
+    <button class="fn-button fn-button--layout fn-button--icon-only is-focus" aria-label="More">
         <span class="sap-icon sap-icon--overflow"></span>
     </button>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:disabled</b></div>
-    <button class="fn-button fn-button--icon-left" disabled>
+    <button class="fn-button" disabled>
         <span class="sap-icon sap-icon--paper-plane"></span>
         <span class="fn-button__text">Send</span>
     </button>
-    <button class="fn-button fn-button--emphasized fn-button--icon-right" disabled>
+    <button class="fn-button fn-button--emphasized" disabled>
         <span class="fn-button__text">Send</span>
         <span class="sap-icon sap-icon--share-2"></span>
     </button>
-    <button class="fn-button fn-button--transparent fn-button--icon-only" disabled aria-label="More">
+    <button class="fn-button fn-button--layout fn-button--icon-only" disabled aria-label="More">
         <span class="sap-icon sap-icon--overflow"></span>
     </button>
 </div>
@@ -450,13 +471,7 @@ Icon.parameters = {
     docs: {
         iframeHeight: 500,
         description: {
-            story: `Depending on where you want the icon to be rendered add the appropriate modifier class to the \`.fn-button\` base class.
-
-| Structure&nbsp;&nbsp;&nbsp;&nbsp; | Modifier class           |
-| --------------------------------- | ------------------------ |
-| Icon-Left&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--icon-left\` |
-| Icon-Right&nbsp;&nbsp;&nbsp;&nbsp;| \`fn-button--icon-right\`|
-| Icon-Only&nbsp;&nbsp;&nbsp;&nbsp; | \`fn-button--icon-only\` |
+            story: `For icon-only type of button add the \`.fn-button--icon-only\` modifier class to the \`.fn-button\` base class.
 `
         }
     }
@@ -474,7 +489,7 @@ export const Toggle = () => `${localStyles}
     <button class="fn-button fn-button--selected">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--ghost">
+    <button class="fn-button fn-button--secondary">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
@@ -484,7 +499,7 @@ export const Toggle = () => `${localStyles}
     <button class="fn-button fn-button--selected is-hover">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--ghost is-hover">
+    <button class="fn-button fn-button--secondary is-hover">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
@@ -494,7 +509,7 @@ export const Toggle = () => `${localStyles}
     <button class="fn-button fn-button--selected is-active">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--ghost is-active">
+    <button class="fn-button fn-button--secondary is-active">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
@@ -504,7 +519,7 @@ export const Toggle = () => `${localStyles}
     <button class="fn-button fn-button--selected is-focus">
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--ghost is-focus">
+    <button class="fn-button fn-button--secondary is-focus">
         <span class="fn-button__text">Button</span>
     </button>
 </div>
@@ -514,7 +529,7 @@ export const Toggle = () => `${localStyles}
     <button class="fn-button fn-button--selected" disabled>
         <span class="fn-button__text">Button</span>
     </button>
-    <button class="fn-button fn-button--ghost" disabled>
+    <button class="fn-button fn-button--secondary" disabled>
         <span class="fn-button__text">Button</span>
     </button>
 </div>
@@ -530,22 +545,99 @@ Toggle.parameters = {
     }
 };
 
+export const Menu = () => `${localStyles}
+<div class="docs-fn-container">
+    <div><b>:normal</b></div>
+    <button class="fn-button fn-button--emphasized">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--secondary">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:hover</b></div>
+    <button class="fn-button fn-button--emphasized is-hover">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--secondary is-hover">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:active</b></div>
+    <button class="fn-button fn-button--emphasized is-active">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--secondary is-active">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:focus</b></div>
+    <button class="fn-button fn-button--emphasized is-focus">
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--secondary is-focus">
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>:disabled</b></div>
+    <button class="fn-button fn-button--emphasized" disabled>
+        <span class="sap-icon sap-icon--attachment"></span>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+    <button class="fn-button fn-button--secondary" disabled>
+        <span class="fn-button__text">Button</span>
+        <span class="sap-icon sap-icon--megamenu"></span>
+    </button>
+</div>
+`;
+
+Menu.storyName = 'Menu Buttons';
+Menu.parameters = {
+    docs: {
+        iframeHeight: 500,
+        description: {
+            story: ''
+        }
+    }
+};
+
 export const Segmented = () => `${localStyles}
 <div class="docs-fn-container">
     <div class="fn-segmented-button" role="group" aria-label="Group label">
         <button class="fn-button fn-button--selected">
             <span class="fn-button__text">Button</span>
         </button>
-        <button class="fn-button fn-button--transparent">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Button</span>
         </button>
-        <button class="fn-button fn-button--transparent">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Button</span>
         </button>
-        <button class="fn-button fn-button--transparent">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Button</span>
         </button>
-        <button class="fn-button fn-button--transparent">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Button</span>
         </button>
     </div>
@@ -553,23 +645,23 @@ export const Segmented = () => `${localStyles}
 
 <div class="docs-fn-container">
     <div class="fn-segmented-button" role="group" aria-label="Group label">
-        <button class="fn-button fn-button--transparent fn-button--icon-right">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Send</span>
             <span class="sap-icon sap-icon--paper-plane"></span>
         </button>
-        <button class="fn-button fn-button--selected fn-button--icon-right">
+        <button class="fn-button fn-button--selected">
             <span class="fn-button__text">Send</span>
             <span class="sap-icon sap-icon--paper-plane"></span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-right">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Send</span>
             <span class="sap-icon sap-icon--paper-plane"></span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-right">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Send</span>
             <span class="sap-icon sap-icon--paper-plane"></span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-right">
+        <button class="fn-button fn-button--layout">
             <span class="fn-button__text">Send</span>
             <span class="sap-icon sap-icon--paper-plane"></span>
         </button>
@@ -578,23 +670,23 @@ export const Segmented = () => `${localStyles}
 
 <div class="docs-fn-container">
     <div class="fn-segmented-button" role="group" aria-label="Group label">
-        <button class="fn-button fn-button--transparent fn-button--icon-left">
+        <button class="fn-button fn-button--layout">
             <span class="sap-icon sap-icon--share-2"></span>
             <span class="fn-button__text">Share</span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-left">
+        <button class="fn-button fn-button--layout">
             <span class="sap-icon sap-icon--share-2"></span>
             <span class="fn-button__text">Share</span>
         </button>
-        <button class="fn-button fn-button--selected fn-button--icon-left">
+        <button class="fn-button fn-button--selected">
             <span class="sap-icon sap-icon--share-2"></span>
             <span class="fn-button__text">Share</span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-left">
+        <button class="fn-button fn-button--layout">
             <span class="sap-icon sap-icon--share-2"></span>
             <span class="fn-button__text">Share</span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-left">
+        <button class="fn-button fn-button--layout">
             <span class="sap-icon sap-icon--share-2"></span>
             <span class="fn-button__text">Share</span>
         </button>
@@ -603,19 +695,19 @@ export const Segmented = () => `${localStyles}
 
 <div class="docs-fn-container">
     <div class="fn-segmented-button" role="group" aria-label="Group label">
-        <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Share">
+        <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Share">
             <span class="sap-icon sap-icon--share-2"></span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Share">
+        <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Share">
             <span class="sap-icon sap-icon--share-2"></span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Share">
+        <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Share">
             <span class="sap-icon sap-icon--share-2"></span>
         </button>
         <button class="fn-button fn-button--selected fn-button--icon-only" aria-label="Share">
             <span class="sap-icon sap-icon--share-2"></span>
         </button>
-        <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Share">
+        <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Share">
             <span class="sap-icon sap-icon--share-2"></span>
         </button>
     </div>
@@ -623,16 +715,16 @@ export const Segmented = () => `${localStyles}
 
 <div class="docs-fn-container">
     <div class="fn-segmented-button" role="group" aria-label="Group label">
-        <button class="fn-button fn-button--transparent" disabled>
+        <button class="fn-button fn-button--layout" disabled>
             <span class="fn-button__text">Button</span>
         </button>
-        <button class="fn-button fn-button--transparent" disabled>
+        <button class="fn-button fn-button--layout" disabled>
             <span class="fn-button__text">Button</span>
         </button>
-        <button class="fn-button fn-button--transparent" disabled>
+        <button class="fn-button fn-button--layout" disabled>
             <span class="fn-button__text">Button</span>
         </button>
-        <button class="fn-button fn-button--transparent" disabled>
+        <button class="fn-button fn-button--layout" disabled>
             <span class="fn-button__text">Button</span>
         </button>
         <button class="fn-button fn-button--selected" disabled>
@@ -704,104 +796,119 @@ Nested.parameters = {
     }
 };
 
-export const Menu = () => `${localStyles}
+export const Split = () => `${localStyles}
 <div class="docs-fn-container">
     <div><b>:normal</b></div>
-    <button class="fn-button fn-button--emphasized">
-        <span class="sap-icon sap-icon--attachment"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button">
-        <span class="sap-icon sap-icon--paper-plane"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button fn-button--ghost">
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
+    <div class="fn-split-button">
+        <button class="fn-button fn-button--secondary">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+
+    <div class="fn-split-button fn-split-button--emphasized">
+        <button class="fn-button fn-button--emphasized">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:hover</b></div>
-    <button class="fn-button fn-button--emphasized is-hover">
-        <span class="sap-icon sap-icon--attachment"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button is-hover">
-        <span class="sap-icon sap-icon--paper-plane"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button fn-button--ghost is-hover">
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
+    <div class="fn-split-button is-hover">
+        <button class="fn-button fn-button--secondary">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split is-hover" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+    
+    <div class="fn-split-button fn-split-button--emphasized is-hover">
+        <button class="fn-button fn-button--emphasized">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized is-hover" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:active</b></div>
-    <button class="fn-button fn-button--emphasized is-active">
-        <span class="sap-icon sap-icon--attachment"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button is-active">
-        <span class="sap-icon sap-icon--paper-plane"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button fn-button--ghost is-active">
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
+    <div class="fn-split-button is-hover">
+        <button class="fn-button fn-button--secondary">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split is-active" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+    
+    <div class="fn-split-button fn-split-button--emphasized is-hover">
+        <button class="fn-button fn-button--emphasized">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized is-active" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:focus</b></div>
-    <button class="fn-button fn-button--emphasized is-focus">
-        <span class="sap-icon sap-icon--attachment"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button is-focus">
-        <span class="sap-icon sap-icon--paper-plane"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button fn-button--ghost is-focus">
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
+    <div class="fn-split-button is-hover">
+        <button class="fn-button fn-button--secondary">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split is-focus" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+    
+    <div class="fn-split-button fn-split-button--emphasized is-hover">
+        <button class="fn-button fn-button--emphasized">
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized is-focus" aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
 </div>
 
 <div class="docs-fn-container">
     <div><b>:disabled</b></div>
-    <button class="fn-button fn-button--emphasized" disabled>
-        <span class="sap-icon sap-icon--attachment"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button" disabled>
-        <span class="sap-icon sap-icon--paper-plane"></span>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
-    <button class="fn-button fn-button--ghost" disabled>
-        <span class="fn-button__text">Button</span>
-        <span class="sap-icon sap-icon--megamenu"></span>
-    </button>
+    <div class="fn-split-button is-disabled">
+        <button class="fn-button fn-button--secondary" disabled>
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split" disabled aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
+    
+    <div class="fn-split-button fn-split-button--emphasized is-disabled">
+        <button class="fn-button fn-button--emphasized" disabled>
+            <span class="fn-button__text">Button</span>
+        </button>
+        <button class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized" disabled aria-label="nested button">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </div>
 </div>
 `;
 
-Menu.storyName = 'Menu Buttons';
-Menu.parameters = {
+Split.storyName = 'Split Buttons';
+Split.parameters = {
     docs: {
         iframeHeight: 500,
         description: {
-            story: 'Add the `.fn-button--menu` modifier class for menu button.'
+            story: ''
         }
     }
 };

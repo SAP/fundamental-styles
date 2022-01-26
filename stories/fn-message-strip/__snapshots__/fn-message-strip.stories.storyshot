@@ -33,7 +33,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip 1`] = `
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
@@ -67,7 +67,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip 1`] = `
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
@@ -101,7 +101,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip 1`] = `
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
@@ -135,7 +135,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip 1`] = `
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
@@ -181,7 +181,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip with No Icon 1`] = 
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
@@ -210,7 +210,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip with No Icon 1`] = 
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
@@ -239,7 +239,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip with No Icon 1`] = 
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
@@ -268,7 +268,7 @@ exports[`Storyshots Experimental/Message Strip Message Strip with No Icon 1`] = 
         
     <button
       aria-label="Close"
-      class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button"
+      class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button"
     >
       
             
