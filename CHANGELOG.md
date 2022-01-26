@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.107 (2022-01-26)
+
+
+### Bug Fixes
+
+* **fn:** update Fiori Next buttons [ci visual] ([#3122](https://github.com/SAP/fundamental-styles/issues/3122)) ([59afeda](https://github.com/SAP/fundamental-styles/commit/59afeda47bf6af1f9ddb01b027e1a0d71f6ae394))
+
 ## 0.21.0-rc.106 (2022-01-26)
 
 
