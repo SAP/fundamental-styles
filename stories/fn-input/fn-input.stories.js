@@ -16,7 +16,6 @@ export default {
         `,
         components: ['fn-input', 'fn-input', 'icon']
 
-
     }
 };
 
