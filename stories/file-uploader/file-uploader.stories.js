@@ -6,6 +6,8 @@ The File Uploader component allows the user to select the files from the system 
 The File Uploader component is an opinionated composition of the input and button components.
 Please refer to the input and button components documentation for the complete list of modifiers.
 
+##Usage
+
 Use the File Uploader if:
 
 * The user needs to select the files to upload by browsing the system folders.

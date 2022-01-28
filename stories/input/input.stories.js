@@ -2,8 +2,7 @@ export default {
     title: 'Components/Forms/Input',
 
     parameters: {
-        description: `
-Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
+        description: `Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
 
 A text input field allows users to enter and edit text or numeric values in one line. To help users enter a valid value, it provides additional features like “auto-complete”, “suggestions”, and “value help”.
 
