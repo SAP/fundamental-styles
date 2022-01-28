@@ -1,8 +1,7 @@
 export default {
     title: 'Components/Dialog',
     parameters: {
-        description: `
-The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \`fd-dialog--active\` class.
+        description: `The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \`fd-dialog--active\` class.
 
 ##Usage
 **Use the dialog if:**
