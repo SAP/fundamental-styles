@@ -12,7 +12,7 @@ $block: #{$fd-namespace}-tabs;
 
 .#{$block} {
   %fd-tabs-focus {
-    outline-offset: 0.0625rem;
+    outline-offset: var(--sapContent_FocusWidth);
     outline-style: var(--sapContent_FocusStyle);
     outline-width: var(--sapContent_FocusWidth);
     outline-color: var(--sapContent_FocusColor);
@@ -134,7 +134,16 @@ $block: #{$fd-namespace}-tabs;
 
       .#{$block}__tag,
       .#{$block}__icon {
-        @extend %fd-tabs-focus;
+        &::before {
+          @extend %fd-tabs-focus;
+
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+        }
       }
     }
   }
@@ -439,12 +448,6 @@ $block: #{$fd-namespace}-tabs;
       @include fd-focus() {
         box-shadow: none;
         outline: none;
-
-        .#{$block}__icon,
-        .#{$block}__header {
-          outline-offset: 0;
-          outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-        }
       }
     }
 
