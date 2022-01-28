@@ -2,12 +2,7 @@ export default {
     title: 'Components/Forms/Field Set',
     parameters: {
         description: `A fieldset is used to give semantic meaning to a group of elements inside a form (e.g. Billing or Shipping Address).
-        Grouping fields together into a fieldset not only provides styling and accessibility benefits but also allows a better organization of f
-        ields in logical way.
-
--    \`fd-fieldset\`  class groups all the elements inside a box.
--    \`fd-fieldset__legend\`  gives a caption to all of the grouped elements.
-         `,
+Grouping fields together into a fieldset also provides styling and accessibility benefits.`,
         tags: ['f3', 'a11y', 'theme'],
         components: ['fieldset', 'form-item', 'form-group', 'checkbox', 'radio']
     }
