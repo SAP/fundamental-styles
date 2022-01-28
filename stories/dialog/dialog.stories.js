@@ -587,7 +587,7 @@ HorizontalFormInDialog.storyName = 'Horizontal Form';
 HorizontalFormInDialog.parameters = {
     docs: {
         description: {
-            story: ''
+            story: `Horizontal Form displays all the components aligned horizontally. It is created by positioning the \`fd-form-label\` class and the \`fd-input\` class in the same row.`
         }
     }
 };
@@ -695,7 +695,7 @@ VerticalFormInDialog.storyName = 'Vertical Form';
 VerticalFormInDialog.parameters = {
     docs: {
         description: {
-            story: ''
+            story: `Verical Form displays all the components aligned vertically. It is created by positioning the \`fd-form-label\` class above the \`fd-input\` class in seperate rows.`
         }
     }
 };
