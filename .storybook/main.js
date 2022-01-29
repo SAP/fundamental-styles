@@ -31,7 +31,8 @@ const addons = [
         }
     },
     '@storybook/addon-toolbars',
-    '@storybook/addon-controls'
+    '@storybook/addon-controls',
+    './custom/addons/FioriVersion/register.js'
 ];
 
 if (isProduction) {

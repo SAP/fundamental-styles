@@ -102,6 +102,9 @@ export const globalTypes = {
             icon: 'paragraph',
             items: directionalities
         }
+    },
+    fioriVersion: {
+        defaultValue: 'fiori'
     }
 };
 
