@@ -1,8 +1,6 @@
 /* eslint-disable sort-imports,no-unused-vars */
-import { DocsContainer, DocsContext } from '@storybook/addon-docs';
-import addons from '@storybook/addons';
+import { DocsContainer } from '@storybook/addon-docs';
 import React from 'react';
-import { useContext } from 'react';
 import { SAPContainer } from '../../.storybook/custom/components/SAPContainer';
 import fundamentals from '../../.storybook/custom/constants/fundamentals';
 import { IntroductionPage } from './introduction.page';
@@ -27,13 +25,10 @@ export default {
                 hidden: true
             }
         },
-        viewMode: 'docs',
-        withToolbar: false
+        viewMode: 'docs'
     }
 };
 
 export const Overview = () => {
     return '<div></div>';
 };
-
-Overview.storyName = 'Overview';
