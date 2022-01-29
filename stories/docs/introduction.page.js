@@ -4,10 +4,13 @@ import Community from '../../.storybook/custom/components/Community';
 import Footer from '../../.storybook/custom/components/Footer';
 import Header from '../../.storybook/custom/components/Header';
 import { SAPContext } from '../../.storybook/custom/hooks/SAPContext';
+import useStyles from '../../.storybook/custom/hooks/useStyles';
 import Readme from '../../README.md';
+import IntroductionPageStyles from '../../.storybook/custom/IntroductionPage.scss';
 
 export const IntroductionPage = () => {
     const sapContext = useContext(SAPContext);
+    useStyles(IntroductionPageStyles);
 
     return (
         <>

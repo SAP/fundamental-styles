@@ -14,13 +14,6 @@ import { check, isProduction } from './environment';
 
 check();
 
-if (!isProduction) {
-    const { default: customStyles } = require('./custom/custom.scss');
-    customStyles.use();
-    const { default: tocStyles } = require('./custom/toc.scss');
-    tocStyles.use();
-}
-
 export const parameters = {
     cssresources: [
         {

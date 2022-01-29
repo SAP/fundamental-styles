@@ -1,30 +1,23 @@
 import { DocsContext, DocsStory, Heading, Subtitle, Title } from '@storybook/addon-docs';
-import React, { useContext, useEffect } from 'react';
-import '../custom.scss';
-import { initToc } from '../hooks/initToc';
+import React, { useContext } from 'react';
+import DocsPageStyles from '../DocsPage.scss';
 import { SAPContext } from '../hooks/SAPContext';
+import useStyles from '../hooks/useStyles';
+import useThemedStoryContainers from '../hooks/useThemedStoryContainers';
 import Community from './Community';
 import Description from './Description';
 import Footer from './Footer';
 import Header from './Header';
-import InfoLabel from './InfoLabel';
+import InfoLabels from './InfoLabels';
 import Toc from './Toc';
 
 const DocsPage = () => {
-    // setup toc bot
-    initToc([]);
-    // make story containers themed by adding appropriate class
-    useEffect(() => {
-        const _t = Array.from(document.getElementsByClassName('sbdocs-preview'));
-
-        _t.forEach((storyPreview) => {
-            const previewBody = storyPreview?.childNodes[1];
-            previewBody?.classList.add('themed-container');
-        });
-    }, []);
-
     const docsContext = useContext(DocsContext);
     const sapContext = useContext(SAPContext);
+
+    useStyles(DocsPageStyles);
+    useThemedStoryContainers();
+
     // do not display Dev or Visual stories in docs
     if (docsContext.kind === 'Visual' || /Dev/.test(docsContext.kind)) {
         return null;
@@ -34,14 +27,6 @@ const DocsPage = () => {
     const stories = docsContext
         .componentStories()
         .filter((story) => story.kind === docsContext.kind && !story.parameters?.docs?.disable);
-
-    const renderInfoLabels = (tags) => {
-        let infoLabels = [];
-        tags?.forEach((tag, i) => {
-            infoLabels.push(<InfoLabel key={i} tag={tag} />);
-        });
-        return <>{infoLabels}</>;
-    };
 
     return (
         <>
@@ -60,7 +45,7 @@ const DocsPage = () => {
                 <Title />
                 <Toc />
                 <Subtitle />
-                {renderInfoLabels(docsContext?.parameters?.tags)}
+                <InfoLabels tags={docsContext?.parameters?.tags} />
                 {docsContext?.parameters?.description && <Description desc={docsContext?.parameters?.description} />}
             </div>
 

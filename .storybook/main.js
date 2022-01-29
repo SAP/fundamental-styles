@@ -37,7 +37,14 @@ const addons = [
 
 if (isProduction) {
     staticDirs.push('../dist/', '../dist-fn/dist/');
-    addons.push('@storybook/preset-scss');
+    addons.push({
+        name: '@storybook/preset-scss',
+        options: {
+            styleLoaderOptions: {
+                injectType: 'lazyStyleTag'
+            }
+        }
+    });
 }
 
 module.exports = {
