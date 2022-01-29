@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <br />
@@ -472,20 +474,414 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
+<div
+  dir="ltr"
+>
+  
 
+  <div
+    class="fd-page-footer fd-page-footer--xl"
+  >
+    
+	
+    <div
+      class="fd-page-footer__logo"
+    >
+      
+		
+      <img
+        alt="page footer logo"
+        src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+      />
+      
+	
+    </div>
+    
+	
+    <div
+      class="fd-page-footer__container"
+    >
+      
+		
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="#"
+          id="fd-link-13"
+          tabindex="0"
+        >
+          
+			
+          <span
+            class="sap-icon--download sap-icon--s"
+          />
+          
+			 icon and link
+			
+        </a>
+        
+		
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="#"
+          id="fd-link-14"
+          tabindex="0"
+        >
+          
+			
+          <img
+            alt="page footer clickable image link"
+            class="fd-page-footer__row-image"
+            src="/assets/images/landscape/L1_Cover.jpg"
+            style="width:50px; height: 50px"
+          />
+          
+			image link
+			
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="#"
+          id="fd-link-15"
+          tabindex="0"
+        >
+          
+			
+          <img
+            alt="page footer clickable image link"
+            class="fd-page-footer__row-image"
+            src="/assets/images/landscape/L2_Cover.jpg"
+            style="width:50px; height: 50px"
+          />
+          
+			image link
+			
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-16"
+          title="Privacy Statement"
+        >
+          Privacy Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-17"
+          title="Cookie Statement"
+        >
+          Cookie Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-18"
+          title="Participant Team"
+        >
+          Participant Team
+        </a>
+        
+		
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__text"
+      >
+        
+			
+        <span
+          class="fd-form-label"
+        >
+           1992-2021 @copyright all right reserved.
+        </span>
+        
+		
+      </div>
+      
+	
+    </div>
+    
 
+  </div>
+  
+
+</div>
 `;
 
 exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
+<div
+  dir="ltr"
+>
+  
 
+  <div
+    class="fd-page-footer fd-page-footer--xl"
+  >
+    
+	
+    <div
+      class="fd-page-footer__logo"
+    >
+      
+		
+      <img
+        alt="page footer logo"
+        src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+      />
+      
+	
+    </div>
+    
+	
+    <div
+      class="fd-page-footer__container"
+    >
+      
+		
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-6"
+          title="Supported Browser"
+        >
+          Supported Browser
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-7"
+          title="Security Disclosure"
+        >
+          Security Disclosure
+        </a>
+        
+		
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-8"
+          title="Supported Browser"
+        >
+          Supported Browser
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-9"
+          title="Security Disclosure"
+        >
+          Security Disclosure
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-10"
+          title="Privacy Statement"
+        >
+          Privacy Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-11"
+          title="Cookie Statement"
+        >
+          Cookie Statement
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-12"
+          title="Participant Team"
+        >
+          Participant Team
+        </a>
+        
+		
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__text"
+      >
+        
+			
+        <span
+          class="fd-form-label"
+        >
+           1992-2021 @copyright all right reserved.
+        </span>
+        
+		
+      </div>
+      
+	
+    </div>
+    
 
+  </div>
+  
+
+</div>
 `;
 
 exports[`Storyshots Layouts/Page Footer Single Line Link 1`] = `
+<div
+  dir="ltr"
+>
+  
 
+  <div
+    class="fd-page-footer fd-page-footer--xl"
+  >
+    
+	
+    <div
+      class="fd-page-footer__logo"
+    >
+      
+		
+      <img
+        alt="page footer logo"
+        src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+      />
+      
+	
+    </div>
+    
+	
+    <div
+      class="fd-page-footer__container"
+    >
+      
+        
+      <div
+        class="fd-page-footer__row"
+      >
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-1"
+          title="Supported Browser"
+        >
+          Supported Browser
+        </a>
+        
+			
+        <a
+          class="fd-page-footer__row-item fd-link"
+          href="/"
+          id="fd-link-2"
+          title="Security Disclosure"
+        >
+          Security Disclosure
+        </a>
+        
+			
+        <a
+          class="fd-link fd-page-footer__row-item"
+          href="/"
+          id="fd-link-3"
+          title="Privacy Statement"
+        >
+          Privacy Statement
+        </a>
+        
+			
+        <a
+          class="fd-link fd-page-footer__row-item"
+          href="/"
+          id="fd-link-4"
+          title="Cookie Statement"
+        >
+          Cookie Statement
+        </a>
+        
+			
+        <a
+          class="fd-link fd-page-footer__row-item"
+          href="/"
+          id="fd-link-5"
+          title="Participant Team"
+        >
+          Participant Team
+        </a>
+        
+        
+      </div>
+      
+		
+      <div
+        class="fd-page-footer__text"
+      >
+        
+			
+        <span
+          class="fd-form-label"
+        >
+           1992-2021 @copyright all right reserved.
+        </span>
+        
+		
+      </div>
+      
+	
+    </div>
+    
 
+  </div>
+  
+
+</div>
 `;

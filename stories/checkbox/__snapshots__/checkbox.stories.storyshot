@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
 
@@ -277,155 +279,163 @@ exports[`Storyshots Components/Forms/Checkbox Desktop 1`] = `
   </fieldset>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Checkbox Inline 1`] = `
-<fieldset
-  class="fd-fieldset"
+<div
+  dir="ltr"
 >
-  
-    
-  <legend
-    class="fd-fieldset__legend"
-  >
-    Inline checkboxes
-  </legend>
-  
-    
-  <div
-    class="fd-form-group fd-form-group--inline"
+  <fieldset
+    class="fd-fieldset"
   >
     
-        
+    
+    <legend
+      class="fd-fieldset__legend"
+    >
+      Inline checkboxes
+    </legend>
+    
+    
     <div
-      class="fd-form-group__item fd-form-item"
+      class="fd-form-group fd-form-group--inline"
     >
       
-            
-      <input
-        class="fd-checkbox"
-        id="Ai4ez617"
-        type="checkbox"
-      />
-      
-            
-      <label
-        class="fd-checkbox__label"
-        for="Ai4ez617"
+        
+      <div
+        class="fd-form-group__item fd-form-item"
       >
         
-                
-        <div
-          class="fd-checkbox__label-container"
+            
+        <input
+          class="fd-checkbox"
+          id="Ai4ez617"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez617"
         >
           
-                    
-          <span
-            class="fd-checkbox__text"
-          >
-            Potatoes
-          </span>
-          
                 
-        </div>
-        
+          <div
+            class="fd-checkbox__label-container"
+          >
             
-      </label>
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Potatoes
+            </span>
+            
+                
+          </div>
+          
+            
+        </label>
+        
+        
+      </div>
       
         
-    </div>
-    
-        
-    <div
-      class="fd-form-group__item fd-form-item"
-    >
-      
-            
-      <input
-        checked=""
-        class="fd-checkbox"
-        id="Ai4ez618"
-        type="checkbox"
-      />
-      
-            
-      <label
-        class="fd-checkbox__label"
-        for="Ai4ez618"
+      <div
+        class="fd-form-group__item fd-form-item"
       >
         
-                
-        <div
-          class="fd-checkbox__label-container"
+            
+        <input
+          checked=""
+          class="fd-checkbox"
+          id="Ai4ez618"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez618"
         >
           
-                    
-          <span
-            class="fd-checkbox__text"
-          >
-            Tomatoes
-          </span>
-          
                 
-        </div>
-        
+          <div
+            class="fd-checkbox__label-container"
+          >
             
-      </label>
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Tomatoes
+            </span>
+            
+                
+          </div>
+          
+            
+        </label>
+        
+        
+      </div>
       
         
-    </div>
-    
-        
-    <div
-      class="fd-form-group__item fd-form-item"
-    >
-      
-            
-      <input
-        checked=""
-        class="fd-checkbox"
-        disabled=""
-        id="Ai4ez619"
-        type="checkbox"
-      />
-      
-            
-      <label
-        class="fd-checkbox__label"
-        for="Ai4ez619"
+      <div
+        class="fd-form-group__item fd-form-item"
       >
         
-                
-        <div
-          class="fd-checkbox__label-container"
-        >
-          
-                    
-          <span
-            class="fd-checkbox__text"
-          >
-            Carrots
-          </span>
-          
-                
-        </div>
+            
+        <input
+          checked=""
+          class="fd-checkbox"
+          disabled=""
+          id="Ai4ez619"
+          type="checkbox"
+        />
         
             
-      </label>
-      
+        <label
+          class="fd-checkbox__label"
+          for="Ai4ez619"
+        >
+          
+                
+          <div
+            class="fd-checkbox__label-container"
+          >
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Carrots
+            </span>
+            
+                
+          </div>
+          
+            
+        </label>
         
+        
+      </div>
+      
+    
     </div>
     
-    
-  </div>
+
+  </fieldset>
   
 
-</fieldset>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
 
@@ -701,16 +711,84 @@ exports[`Storyshots Components/Forms/Checkbox Mobile 1`] = `
   </fieldset>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Checkbox Required 1`] = `
+<div
+  dir="ltr"
+>
+  
 
+  <fieldset
+    class="fd-fieldset"
+  >
+    
+    
+    <legend
+      class="fd-fieldset__legend"
+    >
+      Required checkbox
+    </legend>
+    
+    
+    <div
+      class="fd-form-group"
+    >
+      
+        
+      <div
+        class="fd-form-item"
+      >
+        
+            
+        <input
+          class="fd-checkbox fd-checkbox--compact"
+          id="Ai4ez61rc"
+          type="checkbox"
+        />
+        
+            
+        <label
+          class="fd-checkbox__label fd-checkbox__label--compact fd-checkbox__label--required"
+          for="Ai4ez61rc"
+        >
+          
+                
+          <div
+            class="fd-checkbox__label-container"
+          >
+            
+                    
+            <span
+              class="fd-checkbox__text"
+            >
+              Required Checkbox
+            </span>
+            
+                
+          </div>
+          
+            
+        </label>
+        
+        
+      </div>
+      
+    
+    </div>
+    
 
+  </fieldset>
+  
+
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Checkbox States 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
 
@@ -1589,5 +1667,5 @@ exports[`Storyshots Components/Forms/Checkbox States 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

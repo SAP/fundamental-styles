@@ -2,22 +2,30 @@
 
 exports[`Storyshots Components/Object Identifier Bold 1`] = `
 <div
-  class="fd-object-identifier"
+  dir="ltr"
 >
-  
-    
-  <p
-    class="fd-object-identifier__title fd-object-identifier__title--bold"
+  <div
+    class="fd-object-identifier"
   >
-    NoteBook Basic 15
-  </p>
+    
+    
+    <p
+      class="fd-object-identifier__title fd-object-identifier__title--bold"
+    >
+      NoteBook Basic 15
+    </p>
+    
+
+  </div>
   
 
 </div>
 `;
 
 exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -145,11 +153,13 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object Identifier Link 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -207,25 +217,57 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object Identifier Medium Size 1`] = `
+<div
+  dir="ltr"
+>
+  
 
+  <div
+    class="fd-object-identifier fd-object-identifier--medium"
+  >
+    
+    
+    <p
+      class="fd-object-identifier__title"
+    >
+      NoteBook Basic 15
+    </p>
+    
+    
+    <p
+      class="fd-object-identifier__text"
+    >
+      Notebook Basic 15 with 2,80 GHz quad core, 15" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro
+    </p>
+    
 
+  </div>
+  
+
+</div>
 `;
 
 exports[`Storyshots Components/Object Identifier Title 1`] = `
 <div
-  class="fd-object-identifier"
+  dir="ltr"
 >
-  
-    
-  <p
-    class="fd-object-identifier__title"
+  <div
+    class="fd-object-identifier"
   >
-    NoteBook Basic 15
-  </p>
+    
+    
+    <p
+      class="fd-object-identifier__title"
+    >
+      NoteBook Basic 15
+    </p>
+    
+
+  </div>
   
 
 </div>

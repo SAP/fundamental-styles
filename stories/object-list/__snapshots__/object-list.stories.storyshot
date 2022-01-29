@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Object List Borderless 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <h4
@@ -727,11 +729,13 @@ exports[`Storyshots Components/Object List Borderless 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object List Navigation 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
 
@@ -1259,11 +1263,13 @@ exports[`Storyshots Components/Object List Navigation 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object List Selection 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <h4
@@ -1761,11 +1767,13 @@ exports[`Storyshots Components/Object List Selection 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <h4
@@ -2544,11 +2552,13 @@ exports[`Storyshots Components/Object List Selection With Navigation 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object List Standart 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <h4
@@ -3475,5 +3485,5 @@ exports[`Storyshots Components/Object List Standart 1`] = `
   </ul>
   
 
-</section>
+</div>
 `;

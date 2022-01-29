@@ -1,5 +1,5 @@
 import { makeDecorator } from '@storybook/addons';
-import { themeManager, componentsManager } from '../environment';
+import { themeManager, componentsManager } from '../../environment';
 
 const defaultManagersKey = Symbol('Default manager');
 
@@ -18,14 +18,16 @@ export const withThemeProvider = makeDecorator({
     parameterName: 'themes',
     wrapper: (storyFn, context) => {
         const newTheme = context?.parameters?.theme || context?.globals?.theme || 'sap_fiori_3';
-        const forComponents = context?.parameters?.components || [];
-        if (!themeManagers.hasOwnProperty(context.id)) {
-            themeManagers[context.id] = {
-                themes: themeManager(context.id),
-                components: componentsManager(context.id)
-            };
+        if (!context?.parameters?.theme || !themeManagers.hasOwnProperty(context.id)) {
+            const forComponents = context?.parameters?.components || [];
+            if (!themeManagers.hasOwnProperty(context.id)) {
+                themeManagers[context.id] = {
+                    themes: themeManager(context.id),
+                    components: componentsManager(context.id)
+                };
+            }
+            changeDocumentTheme(newTheme, forComponents, context.id);
         }
-        changeDocumentTheme(newTheme, forComponents, context.id);
         return storyFn(context);
     }
 });

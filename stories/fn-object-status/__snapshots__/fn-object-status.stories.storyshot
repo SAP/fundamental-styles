@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Object Status Interactive Object Status 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -520,11 +522,13 @@ exports[`Storyshots Experimental/Object Status Interactive Object Status 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Object Status Non-Interactive Object Status 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -740,5 +744,5 @@ exports[`Storyshots Experimental/Object Status Non-Interactive Object Status 1`]
   </div>
   
 
-</section>
+</div>
 `;

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Avatar Accent Colors 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -154,11 +156,13 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Background Image 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -217,11 +221,13 @@ exports[`Storyshots Components/Avatar Background Image 1`] = `
   />
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Borders 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -344,11 +350,13 @@ exports[`Storyshots Components/Avatar Borders 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Circle 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -466,11 +474,13 @@ exports[`Storyshots Components/Avatar Circle 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Icon 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -549,11 +559,13 @@ exports[`Storyshots Components/Avatar Icon 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Initials 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -596,11 +608,13 @@ exports[`Storyshots Components/Avatar Initials 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -678,11 +692,13 @@ exports[`Storyshots Components/Avatar Placeholder Background 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -760,11 +776,13 @@ exports[`Storyshots Components/Avatar Tile Icon Background 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Transparent 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -882,11 +900,13 @@ exports[`Storyshots Components/Avatar Transparent 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -1069,5 +1089,5 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   </span>
   
 
-</section>
+</div>
 `;

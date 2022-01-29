@@ -97,7 +97,7 @@ rimraf('**/*.visual.js', (rimRafError) => {
                             title
                         } = theme;
                         const fileContents =
-`import { withThemeProvider } from '../../.storybook/custom/themeProvider.js';
+`import { withThemeProvider } from '../../.storybook/custom/decorators/themeProvider.js';
 import * as Case from 'case';
 import * as stories from './${componentName}.stories.js';
 

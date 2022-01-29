@@ -5,6 +5,7 @@ import prodComponentStylesManager from './custom/styleChangers/prod/componentSty
 
 const IS_PRODUCTION = typeof PRODUCTION === 'undefined' ? true : PRODUCTION;
 
+export const storybookEnv = typeof STORYBOOK_ENV === 'undefined' ? 'all' : STORYBOOK_ENV;
 export const isProduction = IS_PRODUCTION;
 export const themeManager = IS_PRODUCTION ? prodThemeVariablesManager : themeVariablesManager;
 export const componentsManager = IS_PRODUCTION ? prodComponentStylesManager : componentStylesManager;

@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const stylesLoader = require('./custom/loaders/load-styles');
-const isProduction = require('./custom/isProduction');
+const isProduction = require('./custom/constants/isProduction');
 const maxAssetSize = 1024 * 1024;
 
 const storiesToInclude = () => {
@@ -44,7 +44,8 @@ module.exports = {
     webpackFinal: async (config) => {
         config.plugins.push(
             new DefinePlugin({
-                PRODUCTION: JSON.stringify(isProduction)
+                PRODUCTION: JSON.stringify(isProduction),
+                STORYBOOK_ENV: JSON.stringify(process.env.STORYBOOK_ENV),
             })
         );
 

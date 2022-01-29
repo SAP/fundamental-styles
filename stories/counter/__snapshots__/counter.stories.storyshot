@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Counter Notification 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <button
@@ -95,11 +97,13 @@ exports[`Storyshots Components/Counter Notification 1`] = `
   </button>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Counter Standalone 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <span
@@ -134,112 +138,124 @@ exports[`Storyshots Components/Counter Standalone 1`] = `
   </span>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Counter Tabs 1`] = `
-<ul
-  class="fd-tabs"
-  role="tablist"
+<div
+  dir="ltr"
 >
-  
-    
-  <li
-    class="fd-tabs__item"
-    role="tab"
+  <ul
+    class="fd-tabs"
+    role="tablist"
   >
     
-        
-    <a
-      class="fd-tabs__link"
-      href="#AvcVC566"
-    >
-      Link
-        
-      <span
-        aria-label="Unread count"
-        class="fd-counter"
-      >
-        25
-      </span>
-    </a>
     
-    
-  </li>
-  
-    
-  <li
-    aria-selected="true"
-    class="fd-tabs__item"
-    role="tab"
-  >
-    
-        
-    <a
-      class="fd-tabs__link"
-      href="#5mxO9110"
+    <li
+      class="fd-tabs__item"
+      role="tab"
     >
       
+        
+      <a
+        class="fd-tabs__link"
+        href="#AvcVC566"
+      >
+        Link
+        
+        <span
+          aria-label="Unread count"
+          class="fd-counter"
+        >
+          25
+        </span>
+      </a>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-selected="true"
+      class="fd-tabs__item"
+      role="tab"
+    >
+      
+        
+      <a
+        class="fd-tabs__link"
+        href="#5mxO9110"
+      >
+        
             
-      <span
-        class="fd-tabs__tag"
-      >
-        Selected
-      </span>
+        <span
+          class="fd-tabs__tag"
+        >
+          Selected
+        </span>
+        
+        
+      </a>
+      
+    
+    </li>
+    
+    
+    <li
+      class="fd-tabs__item"
+      role="tab"
+    >
       
         
-    </a>
+      <a
+        class="fd-tabs__link"
+        href="#r0pk3445"
+      >
+        Link
+      </a>
+      
+    
+    </li>
     
     
-  </li>
-  
-    
-  <li
-    class="fd-tabs__item"
-    role="tab"
-  >
-    
-        
-    <a
-      class="fd-tabs__link"
-      href="#r0pk3445"
+    <li
+      aria-disabled="true"
+      class="fd-tabs__item"
+      role="tab"
     >
-      Link
-    </a>
-    
-    
-  </li>
-  
-    
-  <li
-    aria-disabled="true"
-    class="fd-tabs__item"
-    role="tab"
-  >
-    
+      
         
-    <a
-      class="fd-tabs__link"
-    >
-      Disabled
-    </a>
+      <a
+        class="fd-tabs__link"
+      >
+        Disabled
+      </a>
+      
     
+    </li>
     
-  </li>
+
+  </ul>
   
 
-</ul>
+</div>
 `;
 
 exports[`Storyshots Components/Counter Text 1`] = `
-<p>
-  Lorem ipsum 
-  <span
-    aria-label="Unread count"
-    class="fd-counter"
-  >
-    5
-  </span>
-   
-</p>
+<div
+  dir="ltr"
+>
+  <p>
+    Lorem ipsum 
+    <span
+      aria-label="Unread count"
+      class="fd-counter"
+    >
+      5
+    </span>
+     
+  </p>
+  
+
+</div>
 `;

@@ -1,12 +1,17 @@
 import { withCssResources } from '@storybook/addon-cssresources';
-import { DocsContainer } from '@storybook/addon-docs';
+import { DocsContainer, DocsContext } from '@storybook/addon-docs';
+import addons from '@storybook/addons';
 import prettify from 'pretty';
-
-import { withThemeProvider } from './custom/themeProvider';
+import React, { useContext } from 'react';
+import availableThemes from './custom/constants/availableThemes';
 import DocsPage from './custom/components/DocsPage';
-import fundamentals from './custom/fundamentals';
-import availableThemes from './custom/availableThemes';
-import { isProduction, check } from './environment';
+import { SAPContainer } from './custom/components/SAPContainer';
+import directionalities from './custom/constants/directionalities';
+import { withDirectionality } from './custom/decorators/directionalityProvider';
+import fundamentals from './custom/constants/fundamentals';
+
+import { withThemeProvider } from './custom/decorators/themeProvider';
+import { check, isProduction } from './environment';
 
 check();
 
@@ -57,7 +62,15 @@ export const parameters = {
     ],
     docs: {
         container: DocsContainer,
-        page: DocsPage,
+        page: () => {
+            const channel = addons.getChannel();
+            const docsContext = useContext(DocsContext);
+            return (
+                <SAPContainer channel={channel} docsContext={docsContext}>
+                    <DocsPage />
+                </SAPContainer>
+            );
+        },
         theme: fundamentals,
         transformSource: (src) => {
             // we strip out the () =>` ` from the story
@@ -80,7 +93,16 @@ export const globalTypes = {
             icon: 'paintbrush',
             items: availableThemes
         }
+    },
+    directionality: {
+        name: 'Directionality',
+        description: 'Directionality of components',
+        defaultValue: 'ltr',
+        toolbar: {
+            icon: 'paragraph',
+            items: directionalities
+        }
     }
 };
 
-export const decorators = [withThemeProvider, withCssResources];
+export const decorators = [withThemeProvider, withDirectionality, withCssResources];

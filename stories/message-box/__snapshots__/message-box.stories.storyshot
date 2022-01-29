@@ -2,113 +2,121 @@
 
 exports[`Storyshots Components/Message Box Default 1`] = `
 <div
-  class="fd-message-box-docs-static fd-message-box fd-message-box--active"
+  dir="ltr"
 >
-  
-    
-  <section
-    class="fd-message-box__content"
+  <div
+    class="fd-message-box-docs-static fd-message-box fd-message-box--active"
   >
     
-        
-    <header
-      class="fd-bar fd-bar--header fd-message-box__header"
+    
+    <section
+      class="fd-message-box__content"
     >
       
-            
-      <div
-        class="fd-bar__left"
+        
+      <header
+        class="fd-bar fd-bar--header fd-message-box__header"
       >
         
-                
+            
         <div
-          class="fd-bar__element"
+          class="fd-bar__left"
         >
           
-                    
-          <h2
-            class="fd-title fd-title--h5"
-          >
-            Title
-          </h2>
-          
                 
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <h2
+              class="fd-title fd-title--h5"
+            >
+              Title
+            </h2>
+            
+                
+          </div>
+          
+            
         </div>
         
-            
-      </div>
+        
+      </header>
       
         
-    </header>
-    
+      <div
+        class="fd-message-box__body"
+      >
         
-    <div
-      class="fd-message-box__body"
-    >
-      
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         
-    </div>
-    
-        
-    <footer
-      class="fd-bar fd-bar--footer fd-message-box__footer"
-    >
-      
-            
-      <div
-        class="fd-bar__right"
-      >
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button"
-          >
-            
-                        Begin button
-                    
-          </button>
-          
-                
-        </div>
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button"
-          >
-            
-                        End button
-                    
-          </button>
-          
-                
-        </div>
-        
-            
       </div>
       
         
-    </footer>
+      <footer
+        class="fd-bar fd-bar--footer fd-message-box__footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--emphasized fd-button--compact fd-message-box__decisive-button"
+            >
+              
+                        Begin button
+                    
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--transparent fd-button--compact fd-message-box__decisive-button"
+            >
+              
+                        End button
+                    
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </footer>
+      
     
+    </section>
     
-  </section>
+
+  </div>
   
 
 </div>
 `;
 
 exports[`Storyshots Components/Message Box Responsive 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -506,11 +514,13 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Message Box Semantic types 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <div
     class="fd-message-box-docs-static fd-message-box fd-message-box--confirmation fd-message-box--active"
   >
@@ -1026,5 +1036,5 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

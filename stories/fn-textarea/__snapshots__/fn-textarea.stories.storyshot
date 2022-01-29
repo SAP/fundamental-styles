@@ -2,10 +2,13 @@
 
 exports[`Storyshots Experimental/Textarea Textarea 1`] = `
 <section>
-  
-
-  <style>
+  <div
+    dir="ltr"
+  >
     
+
+    <style>
+      
 .docs-fn-container {
     display: grid;
     grid-template-columns: 150px 3fr;
@@ -25,45 +28,47 @@ exports[`Storyshots Experimental/Textarea Textarea 1`] = `
     margin: 0 1rem;
 }
 
-  </style>
-  
+    </style>
+    
 
 
-  <div
-    class="docs-fn-container"
-  >
-    
-    
-    <div>
-      <b>
-        :normal
-      </b>
-    </div>
-    
-    
     <div
-      class="fn-textarea"
+      class="docs-fn-container"
     >
       
-        
-      <textarea
-        class="fn-textarea__input"
-        id="textarea-1"
-        placeholder="Write something here"
-      />
-      
-        
-      <div
-        class="fn-textarea__border"
-      />
+    
+      <div>
+        <b>
+          :normal
+        </b>
+      </div>
       
     
+      <div
+        class="fn-textarea"
+      >
+        
+        
+        <textarea
+          class="fn-textarea__input"
+          id="textarea-1"
+          placeholder="Write something here"
+        />
+        
+        
+        <div
+          class="fn-textarea__border"
+        />
+        
+    
+      </div>
+      
+
     </div>
     
 
   </div>
   
-
 
   <div
     class="docs-fn-container"

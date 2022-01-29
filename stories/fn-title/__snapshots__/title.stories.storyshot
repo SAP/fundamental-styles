@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Title Semantic Level 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <h1
     class="fn-title fn-title--h1"
   >
@@ -56,90 +58,98 @@ exports[`Storyshots Experimental/Title Semantic Level 1`] = `
     class="fn-title fn-title--h6"
   >
     Title Heading 6
-  </h6>
-  
-
-</section>
-`;
-
-exports[`Storyshots Experimental/Title Text Wrapping 1`] = `
-<div
-  style="width: 600px"
->
-  
-    
-  <h1
-    class="fn-title fn-title--h1 fn-title--wrap"
-  >
-    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
-  </h1>
-  
-    
-  <br />
-  <br />
-  <br />
-  
-    
-  <h2
-    class="fn-title fn-title--h2 fn-title--wrap"
-  >
-    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
-  </h2>
-  
-    
-  <br />
-  <br />
-  <br />
-  
-    
-  <h3
-    class="fn-title fn-title--h3 fn-title--wrap"
-  >
-    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
-  </h3>
-  
-    
-  <br />
-  <br />
-  <br />
-  
-    
-  <h4
-    class="fn-title fn-title--h4 fn-title--wrap"
-  >
-    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
-  </h4>
-  
-    
-  <br />
-  <br />
-  <br />
-  
-    
-  <h5
-    class="fn-title fn-title--h5 fn-title--wrap"
-  >
-    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
-  </h5>
-  
-    
-  <br />
-  <br />
-  <br />
-  
-    
-  <h6
-    class="fn-title fn-title--h6 fn-title--wrap"
-  >
-    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
   </h6>
   
 
 </div>
 `;
 
+exports[`Storyshots Experimental/Title Text Wrapping 1`] = `
+<div
+  dir="ltr"
+>
+  <div
+    style="width: 600px"
+  >
+    
+    
+    <h1
+      class="fn-title fn-title--h1 fn-title--wrap"
+    >
+      "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+    </h1>
+    
+    
+    <br />
+    <br />
+    <br />
+    
+    
+    <h2
+      class="fn-title fn-title--h2 fn-title--wrap"
+    >
+      "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+    </h2>
+    
+    
+    <br />
+    <br />
+    <br />
+    
+    
+    <h3
+      class="fn-title fn-title--h3 fn-title--wrap"
+    >
+      "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+    </h3>
+    
+    
+    <br />
+    <br />
+    <br />
+    
+    
+    <h4
+      class="fn-title fn-title--h4 fn-title--wrap"
+    >
+      "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+    </h4>
+    
+    
+    <br />
+    <br />
+    <br />
+    
+    
+    <h5
+      class="fn-title fn-title--h5 fn-title--wrap"
+    >
+      "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+    </h5>
+    
+    
+    <br />
+    <br />
+    <br />
+    
+    
+    <h6
+      class="fn-title fn-title--h6 fn-title--wrap"
+    >
+      "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein
+    </h6>
+    
+
+  </div>
+  
+
+</div>
+`;
+
 exports[`Storyshots Experimental/Title Visual Level 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <h1
     class="fn-title fn-title--h6"
   >
@@ -197,5 +207,5 @@ exports[`Storyshots Experimental/Title Visual Level 1`] = `
   </h6>
   
 
-</section>
+</div>
 `;

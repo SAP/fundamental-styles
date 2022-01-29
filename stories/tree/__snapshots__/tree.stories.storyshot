@@ -1,994 +1,1008 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Tree Borderless 1`] = `
-<ul
-  aria-label="Root Tree"
-  class="fd-tree fd-tree--no-border expanded-level-2"
-  id="TREE2L1"
-  role="tree"
+<div
+  dir="ltr"
 >
-  
-    
-  <li
-    aria-expanded="true"
-    aria-level="1"
-    class="fd-tree__item"
-    role="treeitem"
+  <ul
+    aria-label="Root Tree"
+    class="fd-tree fd-tree--no-border expanded-level-2"
+    id="TREE2L1"
+    role="tree"
   >
     
-        
-    <div
-      class="fd-tree__item-container"
-    >
-      
-            
-      <button
-        aria-controls="TREE2L2"
-        aria-expanded="true"
-        aria-haspopup="true"
-        aria-label="Expand level 2"
-        class="fd-tree__expander is-expanded"
-        tabindex="0"
-      >
-        
-                
-        <i
-          class="fd-tree__icon sap-icon--navigation-down-arrow"
-          role="presentation"
-        />
-        
-            
-      </button>
-      
-            
-      <div
-        class="fd-tree__content"
-      >
-        
-                
-        <i
-          class="fd-tree__icon sap-icon--e-care"
-          role="presentation"
-        />
-        
-                
-        <span
-          class="fd-tree__text"
-        >
-          Level 1
-        </span>
-        
-            
-      </div>
-      
-            
-      <button
-        aria-label="Edit button"
-        class="fd-button fd-button--transparent"
-      >
-        
-                
-        <i
-          class="sap-icon--edit"
-          role="presentation"
-        />
-        
-            
-      </button>
-      
-            
-      <button
-        aria-label="Delete button"
-        class="fd-button fd-button--transparent"
-      >
-        
-                
-        <i
-          class="sap-icon--decline"
-          role="presentation"
-        />
-        
-            
-      </button>
-      
-        
-    </div>
     
-        
-    <ul
-      aria-hidden="false"
-      class="fd-tree"
-      id="TREE2L2"
-      role="group"
+    <li
+      aria-expanded="true"
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
     >
       
-            
-      <li
-        aria-expanded="true"
-        aria-level="2"
-        class="fd-tree__item"
-        role="treeitem"
+        
+      <div
+        class="fd-tree__item-container"
       >
         
+            
+        <button
+          aria-controls="TREE2L2"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="Expand level 2"
+          class="fd-tree__expander is-expanded"
+          tabindex="0"
+        >
+          
                 
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+            
         <div
-          class="fd-tree__item-container"
+          class="fd-tree__content"
         >
           
-                    
-          <button
-            aria-controls="TREE2L3"
-            aria-expanded="true"
-            aria-haspopup="true"
-            aria-label="Expand level 3"
-            class="fd-tree__expander is-expanded"
-            tabindex="0"
+                
+          <i
+            class="fd-tree__icon sap-icon--e-care"
+            role="presentation"
+          />
+          
+                
+          <span
+            class="fd-tree__text"
           >
-            
-                        
-            <i
-              class="fd-tree__icon sap-icon--navigation-down-arrow"
-              role="presentation"
-            />
-            
-                    
-          </button>
+            Level 1
+          </span>
           
-                    
-          <div
-            class="fd-tree__content"
-          >
             
-                        
-            <i
-              class="fd-tree__icon sap-icon--account"
-              role="presentation"
-            />
-            
-                        
-            <span
-              class="fd-tree__text"
-            >
-              Level 2
-            </span>
-            
-                    
-          </div>
-          
-                    
-          <button
-            aria-label="Edit button"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--edit"
-              role="presentation"
-            />
-            
-                    
-          </button>
-          
-                    
-          <button
-            aria-label="Delete button"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--decline"
-              role="presentation"
-            />
-            
-                    
-          </button>
-          
-                
-        </div>
-        
-                
-        <ul
-          aria-hidden="false"
-          class="fd-tree"
-          id="TREE2L3"
-          role="group"
-        >
-          
-                    
-          <li
-            aria-level="3"
-            class="fd-tree__item"
-            role="treeitem"
-          >
-            
-                        
-            <div
-              class="fd-tree__item-container"
-            >
-              
-                            
-              <button
-                aria-label="Expander"
-                class="fd-tree__expander"
-                tabindex="0"
-              >
-                
-                                
-                <i
-                  class="fd-tree__icon sap-icon--navigation-right-arrow"
-                  role="presentation"
-                />
-                
-                            
-              </button>
-              
-                            
-              <div
-                class="fd-tree__content"
-              >
-                
-                                
-                <i
-                  class="fd-tree__icon sap-icon--product"
-                  role="presentation"
-                />
-                
-                                
-                <span
-                  class="fd-tree__text"
-                >
-                  Level 3
-                </span>
-                
-                            
-              </div>
-              
-                            
-              <button
-                aria-label="Edit button"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                
-                <i
-                  class="sap-icon--edit"
-                  role="presentation"
-                />
-                
-                            
-              </button>
-              
-                            
-              <button
-                aria-label="Delete button"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                
-                <i
-                  class="sap-icon--decline"
-                  role="presentation"
-                />
-                
-                            
-              </button>
-              
-                        
-            </div>
-            
-                    
-          </li>
-          
-                    
-          <li
-            aria-level="3"
-            class="fd-tree__item"
-            role="treeitem"
-          >
-            
-                        
-            <div
-              class="fd-tree__item-container"
-            >
-              
-                            
-              <div
-                class="fd-tree__content"
-              >
-                
-                                
-                <i
-                  class="fd-tree__icon sap-icon--history"
-                  role="presentation"
-                />
-                
-                                
-                <span
-                  class="fd-tree__text"
-                >
-                  Level 3
-                </span>
-                
-                            
-              </div>
-              
-                            
-              <button
-                aria-label="Edit button"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                
-                <i
-                  class="sap-icon--edit"
-                  role="presentation"
-                />
-                
-                            
-              </button>
-              
-                            
-              <button
-                aria-label="Delete button"
-                class="fd-button fd-button--transparent"
-              >
-                
-                                
-                <i
-                  class="sap-icon--decline"
-                  role="presentation"
-                />
-                
-                            
-              </button>
-              
-                        
-            </div>
-            
-                    
-          </li>
-          
-                
-        </ul>
-        
-            
-      </li>
-      
-            
-      <li
-        aria-level="2"
-        class="fd-tree__item"
-        role="treeitem"
-      >
-        
-                
-        <div
-          class="fd-tree__item-container"
-        >
-          
-                    
-          <div
-            class="fd-tree__content"
-          >
-            
-                        
-            <i
-              class="fd-tree__icon sap-icon--competitor"
-              role="presentation"
-            />
-            
-                        
-            <span
-              class="fd-tree__text"
-            >
-              Level 2
-            </span>
-            
-                    
-          </div>
-          
-                    
-          <button
-            aria-label="Edit button"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--edit"
-              role="presentation"
-            />
-            
-                    
-          </button>
-          
-                    
-          <button
-            aria-label="Delete button"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--decline"
-              role="presentation"
-            />
-            
-                    
-          </button>
-          
-                
         </div>
         
             
-      </li>
-      
-        
-    </ul>
-    
-    
-  </li>
-  
-    
-  <li
-    aria-level="1"
-    class="fd-tree__item"
-    role="treeitem"
-  >
-    
-        
-    <div
-      class="fd-tree__item-container"
-    >
-      
-            
-      <div
-        class="fd-tree__content"
-      >
-        
-                
-        <i
-          class="fd-tree__icon sap-icon--batch-payments"
-          role="presentation"
-        />
-        
-                
-        <span
-          class="fd-tree__text"
+        <button
+          aria-label="Edit button"
+          class="fd-button fd-button--transparent"
         >
-          Level 1
-        </span>
+          
+                
+          <i
+            class="sap-icon--edit"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
+        <button
+          aria-label="Delete button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--decline"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+        
       </div>
       
-            
-      <button
-        aria-label="Edit button"
-        class="fd-button fd-button--transparent"
+        
+      <ul
+        aria-hidden="false"
+        class="fd-tree"
+        id="TREE2L2"
+        role="group"
       >
         
+            
+        <li
+          aria-expanded="true"
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
                 
-        <i
-          class="sap-icon--edit"
-          role="presentation"
-        />
-        
+          <div
+            class="fd-tree__item-container"
+          >
             
-      </button>
-      
+                    
+            <button
+              aria-controls="TREE2L3"
+              aria-expanded="true"
+              aria-haspopup="true"
+              aria-label="Expand level 3"
+              class="fd-tree__expander is-expanded"
+              tabindex="0"
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-down-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
-      <button
-        aria-label="Delete button"
-        class="fd-button fd-button--transparent"
-      >
-        
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--account"
+                role="presentation"
+              />
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                    
+            <button
+              aria-label="Edit button"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--edit"
+                role="presentation"
+              />
+              
+                    
+            </button>
+            
+                    
+            <button
+              aria-label="Delete button"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--decline"
+                role="presentation"
+              />
+              
+                    
+            </button>
+            
                 
-        <i
-          class="sap-icon--decline"
-          role="presentation"
-        />
+          </div>
+          
+                
+          <ul
+            aria-hidden="false"
+            class="fd-tree"
+            id="TREE2L3"
+            role="group"
+          >
+            
+                    
+            <li
+              aria-level="3"
+              class="fd-tree__item"
+              role="treeitem"
+            >
+              
+                        
+              <div
+                class="fd-tree__item-container"
+              >
+                
+                            
+                <button
+                  aria-label="Expander"
+                  class="fd-tree__expander"
+                  tabindex="0"
+                >
+                  
+                                
+                  <i
+                    class="fd-tree__icon sap-icon--navigation-right-arrow"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
+                
+                            
+                <div
+                  class="fd-tree__content"
+                >
+                  
+                                
+                  <i
+                    class="fd-tree__icon sap-icon--product"
+                    role="presentation"
+                  />
+                  
+                                
+                  <span
+                    class="fd-tree__text"
+                  >
+                    Level 3
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+                <button
+                  aria-label="Edit button"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--edit"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
+                
+                            
+                <button
+                  aria-label="Delete button"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--decline"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
+                
+                        
+              </div>
+              
+                    
+            </li>
+            
+                    
+            <li
+              aria-level="3"
+              class="fd-tree__item"
+              role="treeitem"
+            >
+              
+                        
+              <div
+                class="fd-tree__item-container"
+              >
+                
+                            
+                <div
+                  class="fd-tree__content"
+                >
+                  
+                                
+                  <i
+                    class="fd-tree__icon sap-icon--history"
+                    role="presentation"
+                  />
+                  
+                                
+                  <span
+                    class="fd-tree__text"
+                  >
+                    Level 3
+                  </span>
+                  
+                            
+                </div>
+                
+                            
+                <button
+                  aria-label="Edit button"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--edit"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
+                
+                            
+                <button
+                  aria-label="Delete button"
+                  class="fd-button fd-button--transparent"
+                >
+                  
+                                
+                  <i
+                    class="sap-icon--decline"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
+                
+                        
+              </div>
+              
+                    
+            </li>
+            
+                
+          </ul>
+          
+            
+        </li>
         
             
-      </button>
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--competitor"
+                role="presentation"
+              />
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                    
+            <button
+              aria-label="Edit button"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--edit"
+                role="presentation"
+              />
+              
+                    
+            </button>
+            
+                    
+            <button
+              aria-label="Delete button"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--decline"
+                role="presentation"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+        
+      </ul>
       
-        
-    </div>
+    
+    </li>
     
     
-  </li>
-  
-    
-  <li
-    aria-level="1"
-    class="fd-tree__item"
-    role="treeitem"
-  >
-    
-        
-    <div
-      class="fd-tree__item-container"
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
     >
       
-            
+        
       <div
-        class="fd-tree__content"
+        class="fd-tree__item-container"
       >
         
-                
-        <i
-          class="fd-tree__icon sap-icon--favorite"
-          role="presentation"
-        />
-        
-                
-        <span
-          class="fd-tree__text"
+            
+        <div
+          class="fd-tree__content"
         >
-          Level 1
-        </span>
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--batch-payments"
+            role="presentation"
+          />
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
         
             
+        <button
+          aria-label="Edit button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--edit"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+            
+        <button
+          aria-label="Delete button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--decline"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+        
       </div>
       
-            
-      <button
-        aria-label="Edit button"
-        class="fd-button fd-button--transparent"
-      >
-        
-                
-        <i
-          class="sap-icon--edit"
-          role="presentation"
-        />
-        
-            
-      </button>
-      
-            
-      <button
-        aria-label="Delete button"
-        class="fd-button fd-button--transparent"
-      >
-        
-                
-        <i
-          class="sap-icon--decline"
-          role="presentation"
-        />
-        
-            
-      </button>
-      
-        
-    </div>
+    
+    </li>
     
     
-  </li>
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--favorite"
+            role="presentation"
+          />
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+            
+        <button
+          aria-label="Edit button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--edit"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+            
+        <button
+          aria-label="Delete button"
+          class="fd-button fd-button--transparent"
+        >
+          
+                
+          <i
+            class="sap-icon--decline"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+
+  </ul>
   
 
-</ul>
+</div>
 `;
 
 exports[`Storyshots Components/Tree Highlight indicators 1`] = `
-<ul
-  aria-label="Root Tree"
-  class="fd-tree expanded-level-3"
-  id="TREE3L1"
-  role="tree"
+<div
+  dir="ltr"
 >
-  
-    
-  <li
-    aria-expanded="true"
-    aria-level="1"
-    class="fd-tree__item"
-    role="treeitem"
+  <ul
+    aria-label="Root Tree"
+    class="fd-tree expanded-level-3"
+    id="TREE3L1"
+    role="tree"
   >
     
-        
-    <div
-      class="fd-tree__item-container has-highlight-indicator"
+    
+    <li
+      aria-expanded="true"
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
     >
       
-            
-      <button
-        aria-controls="TREE3L2"
-        aria-expanded="true"
-        aria-haspopup="true"
-        aria-label="Expand level 2"
-        class="fd-tree__expander is-expanded"
-      >
         
-                
-        <i
-          class="fd-tree__icon sap-icon--navigation-down-arrow"
-          role="presentation"
-        />
-        
-            
-      </button>
-      
-            
       <div
-        class="fd-tree__content"
+        class="fd-tree__item-container has-highlight-indicator"
       >
         
-                
-        <span
-          class="fd-tree__text"
+            
+        <button
+          aria-controls="TREE3L2"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="Expand level 2"
+          class="fd-tree__expander is-expanded"
         >
-          Level 1
-        </span>
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
         
             
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
       </div>
       
         
-    </div>
-    
-        
-    <ul
-      aria-hidden="false"
-      class="fd-tree"
-      id="TREE3L2"
-      role="group"
-    >
-      
-            
-      <li
-        aria-expanded="true"
-        aria-level="2"
-        class="fd-tree__item"
-        role="treeitem"
+      <ul
+        aria-hidden="false"
+        class="fd-tree"
+        id="TREE3L2"
+        role="group"
       >
         
-                
-        <div
-          class="fd-tree__item-container has-highlight-indicator--warning"
+            
+        <li
+          aria-expanded="true"
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
         >
           
-                    
-          <button
-            aria-controls="TREE3L3"
-            aria-expanded="true"
-            aria-haspopup="true"
-            aria-label="Expand level 3"
-            class="fd-tree__expander is-expanded"
-          >
-            
-                        
-            <i
-              class="fd-tree__icon sap-icon--navigation-down-arrow"
-              role="presentation"
-            />
-            
-                    
-          </button>
-          
-                    
+                
           <div
-            class="fd-tree__content"
+            class="fd-tree__item-container has-highlight-indicator--warning"
           >
             
-                        
-            <span
-              class="fd-tree__text"
+                    
+            <button
+              aria-controls="TREE3L3"
+              aria-expanded="true"
+              aria-haspopup="true"
+              aria-label="Expand level 3"
+              class="fd-tree__expander is-expanded"
             >
-              Level 2
-            </span>
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-down-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
             
                     
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
           </div>
           
                 
-        </div>
-        
-                
-        <ul
-          aria-hidden="false"
-          class="fd-tree"
-          id="TREE3L3"
-          role="group"
-        >
-          
-                    
-          <li
-            aria-expanded="true"
-            aria-level="3"
-            class="fd-tree__item"
-            role="treeitem"
+          <ul
+            aria-hidden="false"
+            class="fd-tree"
+            id="TREE3L3"
+            role="group"
           >
             
-                        
-            <div
-              class="fd-tree__item-container has-highlight-indicator--error"
+                    
+            <li
+              aria-expanded="true"
+              aria-level="3"
+              class="fd-tree__item"
+              role="treeitem"
             >
               
-                            
-              <button
-                aria-controls="TREE3L4"
-                aria-expanded="true"
-                aria-haspopup="true"
-                aria-label="Expand level 4"
-                class="fd-tree__expander is-expanded"
-              >
-                
-                                
-                <i
-                  class="fd-tree__icon sap-icon--navigation-down-arrow"
-                  role="presentation"
-                />
-                
-                            
-              </button>
-              
-                            
+                        
               <div
-                class="fd-tree__content"
+                class="fd-tree__item-container has-highlight-indicator--error"
               >
                 
-                                
-                <span
-                  class="fd-tree__text"
+                            
+                <button
+                  aria-controls="TREE3L4"
+                  aria-expanded="true"
+                  aria-haspopup="true"
+                  aria-label="Expand level 4"
+                  class="fd-tree__expander is-expanded"
                 >
-                  Level 3
-                </span>
+                  
+                                
+                  <i
+                    class="fd-tree__icon sap-icon--navigation-down-arrow"
+                    role="presentation"
+                  />
+                  
+                            
+                </button>
                 
                             
+                <div
+                  class="fd-tree__content"
+                >
+                  
+                                
+                  <span
+                    class="fd-tree__text"
+                  >
+                    Level 3
+                  </span>
+                  
+                            
+                </div>
+                
+                        
               </div>
               
                         
-            </div>
-            
-                        
-            <ul
-              aria-hidden="false"
-              class="fd-tree"
-              id="TREE3L4"
-              role="group"
-            >
-              
-                            
-              <li
-                aria-level="4"
-                class="fd-tree__item"
-                role="treeitem"
+              <ul
+                aria-hidden="false"
+                class="fd-tree"
+                id="TREE3L4"
+                role="group"
               >
                 
-                                
-                <div
-                  class="fd-tree__item-container has-highlight-indicator--success"
+                            
+                <li
+                  aria-level="4"
+                  class="fd-tree__item"
+                  role="treeitem"
                 >
                   
-                                    
-                  <button
-                    aria-label="Expander"
-                    class="fd-tree__expander"
-                  >
-                    
-                                        
-                    <i
-                      class="fd-tree__icon sap-icon--navigation-right-arrow"
-                      role="presentation"
-                    />
-                    
-                                    
-                  </button>
-                  
-                                    
+                                
                   <div
-                    class="fd-tree__content"
+                    class="fd-tree__item-container has-highlight-indicator--success"
                   >
                     
-                                        
-                    <span
-                      class="fd-tree__text"
+                                    
+                    <button
+                      aria-label="Expander"
+                      class="fd-tree__expander"
                     >
-                      Level 4
-                    </span>
+                      
+                                        
+                      <i
+                        class="fd-tree__icon sap-icon--navigation-right-arrow"
+                        role="presentation"
+                      />
+                      
+                                    
+                    </button>
                     
                                     
+                    <div
+                      class="fd-tree__content"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-tree__text"
+                      >
+                        Level 4
+                      </span>
+                      
+                                    
+                    </div>
+                    
+                                
                   </div>
                   
-                                
-                </div>
+                            
+                </li>
                 
                             
-              </li>
-              
-                            
-              <li
-                aria-level="4"
-                class="fd-tree__item"
-                role="treeitem"
-              >
-                
-                                
-                <div
-                  class="fd-tree__item-container"
+                <li
+                  aria-level="4"
+                  class="fd-tree__item"
+                  role="treeitem"
                 >
                   
-                                    
+                                
                   <div
-                    class="fd-tree__content"
+                    class="fd-tree__item-container"
                   >
                     
-                                        
-                    <span
-                      class="fd-tree__text"
-                    >
-                      Level 4
-                    </span>
-                    
                                     
+                    <div
+                      class="fd-tree__content"
+                    >
+                      
+                                        
+                      <span
+                        class="fd-tree__text"
+                      >
+                        Level 4
+                      </span>
+                      
+                                    
+                    </div>
+                    
+                                
                   </div>
                   
-                                
-                </div>
-                
                             
-              </li>
+                </li>
+                
+                        
+              </ul>
               
-                        
-            </ul>
+                    
+            </li>
             
                     
-          </li>
-          
-                    
-          <li
-            aria-level="3"
-            class="fd-tree__item"
-            role="treeitem"
-          >
-            
-                        
-            <div
-              class="fd-tree__item-container"
+            <li
+              aria-level="3"
+              class="fd-tree__item"
+              role="treeitem"
             >
               
-                            
+                        
               <div
-                class="fd-tree__content"
+                class="fd-tree__item-container"
               >
                 
-                                
-                <span
-                  class="fd-tree__text"
-                >
-                  Level 3
-                </span>
-                
                             
+                <div
+                  class="fd-tree__content"
+                >
+                  
+                                
+                  <span
+                    class="fd-tree__text"
+                  >
+                    Level 3
+                  </span>
+                  
+                            
+                </div>
+                
+                        
               </div>
               
-                        
-            </div>
-            
                     
-          </li>
+            </li>
+            
+                
+          </ul>
           
-                
-        </ul>
+            
+        </li>
         
             
-      </li>
-      
-            
-      <li
-        aria-level="2"
-        class="fd-tree__item"
-        role="treeitem"
-      >
-        
-                
-        <div
-          class="fd-tree__item-container"
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
         >
           
-                    
+                
           <div
-            class="fd-tree__content"
+            class="fd-tree__item-container"
           >
             
-                        
-            <span
-              class="fd-tree__text"
-            >
-              Level 2
-            </span>
-            
                     
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
           </div>
           
+            
+        </li>
+        
+        
+      </ul>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
                 
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
         </div>
         
-            
-      </li>
-      
         
-    </ul>
-    
-    
-  </li>
-  
-    
-  <li
-    aria-level="1"
-    class="fd-tree__item"
-    role="treeitem"
-  >
-    
-        
-    <div
-      class="fd-tree__item-container"
-    >
-      
-            
-      <div
-        class="fd-tree__content"
-      >
-        
-                
-        <span
-          class="fd-tree__text"
-        >
-          Level 1
-        </span>
-        
-            
       </div>
       
-        
-    </div>
+    
+    </li>
     
     
-  </li>
-  
-    
-  <li
-    aria-level="1"
-    class="fd-tree__item"
-    role="treeitem"
-  >
-    
-        
-    <div
-      class="fd-tree__item-container"
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
     >
       
-            
+        
       <div
-        class="fd-tree__content"
+        class="fd-tree__item-container"
       >
         
-                
-        <span
-          class="fd-tree__text"
-        >
-          Level 1
-        </span>
-        
             
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
       </div>
       
-        
-    </div>
     
+    </li>
     
-  </li>
+
+  </ul>
   
 
-</ul>
+</div>
 `;
 
 exports[`Storyshots Components/Tree Navigable 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <ul
     aria-label="Root Tree"
     class="fd-tree expanded-level-6"
@@ -2486,56 +2500,64 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
   </ul>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tree No data 1`] = `
-<ul
-  aria-label="Root Tree"
-  class="fd-tree fd-tree--no-data"
-  id="TREE1RTLND1"
-  role="tree"
+<div
+  dir="ltr"
 >
-  
-    
-  <li
-    aria-level="1"
-    class="fd-tree__item"
-    role="treeitem"
+  <ul
+    aria-label="Root Tree"
+    class="fd-tree fd-tree--no-data"
+    id="TREE1RTLND1"
+    role="tree"
   >
     
-        
-    <div
-      class="fd-tree__item-container"
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
     >
       
-            
+        
       <div
-        class="fd-tree__content"
+        class="fd-tree__item-container"
       >
         
-                
-        <span
-          class="fd-tree__text"
-        >
-          No data
-        </span>
-        
             
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            No data
+          </span>
+          
+            
+        </div>
+        
+        
       </div>
       
-        
-    </div>
     
+    </li>
     
-  </li>
+
+  </ul>
   
 
-</ul>
+</div>
 `;
 
 exports[`Storyshots Components/Tree Primary 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <ul
     aria-label="Root Tree"
     class="fd-tree expanded-level-1"
@@ -3126,11 +3148,13 @@ exports[`Storyshots Components/Tree Primary 1`] = `
   </ul>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tree Selection 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <h3>
     Left multi-selection
   </h3>
@@ -4349,5 +4373,5 @@ exports[`Storyshots Components/Tree Selection 1`] = `
   </ul>
   
 
-</section>
+</div>
 `;

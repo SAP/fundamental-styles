@@ -1,537 +1,555 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Layouts/Page Basic Page 1`] = `
-<main
-  class="fd-page"
+<div
+  dir="ltr"
 >
-  
-    
-  <header>
-    
-        
-    <div
-      class="fd-bar fd-bar--page fd-bar--header"
-    >
-      
-            
-      <div
-        class="fd-bar__left"
-      >
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            aria-label="Go back"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--navigation-left-arrow"
-            />
-            
-                    
-          </button>
-          
-                
-        </div>
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                     Header Title
-                
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-bar__right"
-      >
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            aria-label="See more"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--grid"
-            />
-            
-                    
-          </button>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-        
-    </div>
-    
-    
-  </header>
-  
-    
-  <div
-    class="fd-page__content"
-    role="region"
+  <main
+    class="fd-page"
   >
     
-        
-    <div
-      style="height: 400px"
-    >
+    
+    <header>
       
-            Page Content
         
-    </div>
-    
-    
-  </div>
-  
-    
-  <footer>
-    
-        
-    <div
-      class="fd-bar fd-bar--page fd-bar--footer"
-    >
-      
-            
       <div
-        class="fd-bar__right"
+        class="fd-bar fd-bar--page fd-bar--header"
       >
         
-                
+            
         <div
-          class="fd-bar__element"
+          class="fd-bar__left"
         >
           
-                    
-          <button
-            class="fd-button fd-button--emphasized fd-button--compact"
+                
+          <div
+            class="fd-bar__element"
           >
-            Save
-          </button>
-          
-                
-        </div>
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
+            
                     
-          <button
-            class="fd-button fd-button--transparent fd-button--compact"
-          >
-            Cancel
-          </button>
+            <button
+              aria-label="Go back"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--navigation-left-arrow"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
           
                 
+          <div
+            class="fd-bar__element"
+          >
+            
+                     Header Title
+                
+          </div>
+          
+            
         </div>
         
             
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="See more"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--grid"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
       </div>
       
+    
+    </header>
+    
+    
+    <div
+      class="fd-page__content"
+      role="region"
+    >
+      
         
+      <div
+        style="height: 400px"
+      >
+        
+            Page Content
+        
+      </div>
+      
+    
     </div>
     
     
-  </footer>
+    <footer>
+      
+        
+      <div
+        class="fd-bar fd-bar--page fd-bar--footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--emphasized fd-button--compact"
+            >
+              Save
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--transparent fd-button--compact"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </footer>
+    
+
+  </main>
   
 
-</main>
+</div>
 `;
 
 exports[`Storyshots Layouts/Page Responsive Page 1`] = `
-<main
-  class="fd-page fd-page--home fd-page--list"
+<div
+  dir="ltr"
 >
-  
-    
-  <header>
-    
-        
-    <div
-      class="fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader"
-    >
-      
-            
-      <div
-        class="fd-bar__left"
-      >
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            aria-label="Go back"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--navigation-left-arrow"
-            />
-            
-                    
-          </button>
-          
-                
-        </div>
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                     Header Title
-                
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-bar__right"
-      >
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            aria-label="See more"
-            class="fd-button fd-button--transparent"
-          >
-            
-                        
-            <i
-              class="sap-icon--overflow"
-            />
-            
-                    
-          </button>
-          
-                
-        </div>
-        
-            
-      </div>
-      
-        
-    </div>
-    
-    
-  </header>
-  
-    
-  <div
-    class="fd-page__content--xl"
-    role="region"
+  <main
+    class="fd-page fd-page--home fd-page--list"
   >
     
-        
-    <div
-      style="height: 400px"
-    >
+    
+    <header>
       
-            Page Content
         
-    </div>
-    
-    
-  </div>
-  
-    
-  <footer>
-    
-        
-    <div
-      class="fd-bar fd-bar--home-page-xl fd-bar--floating-footer"
-    >
-      
-            
       <div
-        class="fd-bar__right"
+        class="fd-bar fd-bar--home-page-xl fd-bar--header-with-subheader"
       >
         
-                
+            
         <div
-          class="fd-bar__element"
+          class="fd-bar__left"
         >
           
-                    
-          <button
-            class="fd-button fd-button--emphasized fd-button--compact"
+                
+          <div
+            class="fd-bar__element"
           >
-            Save
-          </button>
-          
-                
-        </div>
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
+            
                     
-          <button
-            class="fd-button fd-button--transparent fd-button--compact"
-          >
-            Cancel
-          </button>
+            <button
+              aria-label="Go back"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--navigation-left-arrow"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
           
                 
+          <div
+            class="fd-bar__element"
+          >
+            
+                     Header Title
+                
+          </div>
+          
+            
         </div>
         
             
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="See more"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
       </div>
       
+    
+    </header>
+    
+    
+    <div
+      class="fd-page__content--xl"
+      role="region"
+    >
+      
         
+      <div
+        style="height: 400px"
+      >
+        
+            Page Content
+        
+      </div>
+      
+    
     </div>
     
     
-  </footer>
+    <footer>
+      
+        
+      <div
+        class="fd-bar fd-bar--home-page-xl fd-bar--floating-footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--emphasized fd-button--compact"
+            >
+              Save
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--transparent fd-button--compact"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </footer>
+    
+
+  </main>
   
 
-</main>
+</div>
 `;
 
 exports[`Storyshots Layouts/Page Transparent Page 1`] = `
-<main
-  class="fd-page fd-page--transparent"
+<div
+  dir="ltr"
 >
-  
+  <main
+    class="fd-page fd-page--transparent"
+  >
     
-  <header>
     
-        
-    <div
-      class="fd-bar fd-bar--page-m_l fd-bar--header-with-subheader"
-    >
+    <header>
       
-            
+        
       <div
-        class="fd-bar__left"
+        class="fd-bar fd-bar--page-m_l fd-bar--header-with-subheader"
       >
         
-                
+            
         <div
-          class="fd-bar__element"
+          class="fd-bar__left"
         >
           
-                    
-          <button
-            aria-label="Go back"
-            class="fd-button fd-button--transparent"
+                
+          <div
+            class="fd-bar__element"
           >
             
-                        
-            <i
-              class="sap-icon--navigation-left-arrow"
-            />
-            
                     
-          </button>
+            <button
+              aria-label="Go back"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--navigation-left-arrow"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
           
                 
-        </div>
-        
-                
-        <div
-          class="fd-bar__element"
-        >
-          
+          <div
+            class="fd-bar__element"
+          >
+            
                      Header Title
                 
+          </div>
+          
+            
         </div>
         
             
-      </div>
-      
-            
-      <div
-        class="fd-bar__right"
-      >
-        
-                
         <div
-          class="fd-bar__element"
+          class="fd-bar__right"
         >
           
-                    
-          <button
-            aria-label="See more"
-            class="fd-button fd-button--transparent"
+                
+          <div
+            class="fd-bar__element"
           >
             
-                        
-            <i
-              class="sap-icon--overflow"
-            />
-            
                     
-          </button>
-          
+            <button
+              aria-label="See more"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--overflow"
+              />
+              
+                    
+            </button>
+            
                 
+          </div>
+          
+            
         </div>
         
-            
+        
       </div>
       
-        
-    </div>
+    
+    </header>
     
     
-  </header>
-  
-    
-  <div
-    class="fd-bar fd-bar--page-m_l fd-bar--subheader"
-  >
-    
-        
     <div
-      class="fd-bar__middle"
+      class="fd-bar fd-bar--page-m_l fd-bar--subheader"
     >
       
-            
+        
       <div
-        class="fd-bar__element fd-bar__element--full-width"
+        class="fd-bar__middle"
       >
         
-                
+            
         <div
-          class="fd-form-item fd-form-item--horizontal"
+          class="fd-bar__element fd-bar__element--full-width"
         >
           
-                    
-          <label
-            class="fd-form-label"
-            for="input-1"
+                
+          <div
+            class="fd-form-item fd-form-item--horizontal"
           >
             
+                    
+            <label
+              class="fd-form-label"
+              for="input-1"
+            >
+              
                         Field Text:
                     
-          </label>
-          
+            </label>
+            
                     
-          <input
-            class="fd-input fd-input--compact"
-            id="input-1"
-            placeholder="Field placeholder text"
-            type="text"
-          />
-          
+            <input
+              class="fd-input fd-input--compact"
+              id="input-1"
+              placeholder="Field placeholder text"
+              type="text"
+            />
+            
                 
+          </div>
+          
+            
         </div>
         
-            
+        
       </div>
       
-        
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    class="fd-page__content--m_l"
-    role="region"
-  >
-    
-        
     <div
-      style="height: 400px"
+      class="fd-page__content--m_l"
+      role="region"
     >
       
-            Page Content
         
-    </div>
-    
-    
-  </div>
-  
-    
-  <footer>
-    
-        
-    <div
-      class="fd-bar fd-bar--page-m_l fd-bar--footer"
-    >
-      
-            
       <div
-        class="fd-bar__right"
+        style="height: 400px"
       >
         
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            class="fd-button fd-button--emphasized fd-button--compact"
-          >
-            Save
-          </button>
-          
-                
-        </div>
+            Page Content
         
-                
-        <div
-          class="fd-bar__element"
-        >
-          
-                    
-          <button
-            class="fd-button fd-button--transparent fd-button--compact"
-          >
-            Cancel
-          </button>
-          
-                
-        </div>
-        
-            
       </div>
       
-        
+    
     </div>
     
     
-  </footer>
+    <footer>
+      
+        
+      <div
+        class="fd-bar fd-bar--page-m_l fd-bar--footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--emphasized fd-button--compact"
+            >
+              Save
+            </button>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-button fd-button--transparent fd-button--compact"
+            >
+              Cancel
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </footer>
+    
+
+  </main>
   
 
-</main>
+</div>
 `;

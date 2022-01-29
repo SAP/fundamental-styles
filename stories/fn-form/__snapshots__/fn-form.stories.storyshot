@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -733,11 +735,13 @@ exports[`Storyshots Experimental/Form Checkbox Form Group 1`] = `
   </form>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Form Input Form Items 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -909,11 +913,13 @@ exports[`Storyshots Experimental/Form Input Form Items 1`] = `
   </form>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Form Multi-Input Form Item 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1043,11 +1049,13 @@ exports[`Storyshots Experimental/Form Multi-Input Form Item 1`] = `
   </form>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1778,11 +1786,13 @@ exports[`Storyshots Experimental/Form Radio Form Group 1`] = `
   </form>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Form Step-Input Form Item 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1942,5 +1952,5 @@ exports[`Storyshots Experimental/Form Step-Input Form Item 1`] = `
   </form>
   
 
-</section>
+</div>
 `;
