@@ -1,6 +1,7 @@
 import React from 'react';
 import packageJson from '../../../package.json';
-import { DirectionalitySelect } from './DirectionalitySelect';
+import DirectionalitySelect from './DirectionalitySelect';
+import VersionSelect from './VersionSelect';
 import GithubSvg from './GithubSvg';
 import { IfBlock } from './IfBlock';
 import { ThemeSelect } from './ThemeSelect';
@@ -16,6 +17,9 @@ const Header = ({ showSelectors, theme, directionality, onThemeChange, onDirecti
                 <span>Fundamental Styles</span>
             </section>
             <section className="fddocs-header--right">
+                <IfBlock condition={setFioriVersion}>
+                    <VersionSelect selectedFioriVersion={fioriVersion} onVersionSelect={setFioriVersion} />
+                </IfBlock>
                 <IfBlock condition={!!showSelectors && handlersPassed}>
                     <DirectionalitySelect
                         selectedDirectionality={selectedDirectionality}

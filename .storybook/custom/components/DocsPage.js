@@ -1,6 +1,5 @@
 import { DocsContext, DocsStory, Heading, Subtitle, Title } from '@storybook/addon-docs';
 import React, { useContext, useEffect } from 'react';
-import tocbot from 'tocbot';
 import '../custom.scss';
 import { initToc } from '../hooks/initToc';
 import { SAPContext } from '../hooks/SAPContext';
@@ -52,6 +51,8 @@ const DocsPage = () => {
                 directionality={sapContext.directionality}
                 onThemeChange={(e) => sapContext.setTheme(e.target.value)}
                 onDirectionalityChange={(e) => sapContext.setDirectionality(e.target.value)}
+                fioriVersion={sapContext.fioriVersion}
+                setFioriVersion={sapContext.setFioriVersion}
             />
 
             {/* wrapping intro content in the sb-docs-intro class for appropriate text color in all themes */}

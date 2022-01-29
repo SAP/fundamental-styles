@@ -1,12 +1,22 @@
+import { DocsContext } from '@storybook/addon-docs';
+import addons from '@storybook/addons';
 import coreEvents from '@storybook/core-events';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { storybookEnv } from '../../environment';
+import { EVENTS } from '../addons/FioriVersion/constants';
 import { SAPContext } from '../hooks/SAPContext';
 
-export const SAPContainer = ({ channel, docsContext, children }) => {
+export const SAPContainer = ({ children }) => {
+    const channel = addons.getChannel();
+    const docsContext = useContext(DocsContext);
     const showSelectors = storybookEnv === 'docs';
-    const [theme, setTheme] = useState(docsContext.parameters.theme || docsContext.globals.theme);
-    const [directionality, setDirectionality] = useState(docsContext.globals.directionality);
+    const params = {
+        ...docsContext.globals,
+        ...docsContext.parameters
+    };
+    const [theme, setTheme] = useState(params.theme);
+    const [directionality, setDirectionality] = useState(params.directionality);
+    const [fioriVersion, setFioriVersion] = useState(params.fioriVersion);
 
     useEffect(() => {
         channel.emit(coreEvents.UPDATE_GLOBALS, { globals: { theme } });
@@ -14,6 +24,10 @@ export const SAPContainer = ({ channel, docsContext, children }) => {
     useEffect(() => {
         channel.emit(coreEvents.UPDATE_GLOBALS, { globals: { directionality } });
     }, [directionality]);
+    useEffect(() => {
+        channel.emit(coreEvents.UPDATE_GLOBALS, { globals: { fioriVersion } });
+        channel.emit(EVENTS.SET_VERSION, fioriVersion);
+    }, [fioriVersion]);
 
     return (
         <SAPContext.Provider
@@ -22,7 +36,9 @@ export const SAPContainer = ({ channel, docsContext, children }) => {
                 theme,
                 setTheme,
                 directionality,
-                setDirectionality
+                setDirectionality,
+                fioriVersion,
+                setFioriVersion
             }}
         >
             {children}
