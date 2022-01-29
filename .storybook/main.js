@@ -24,7 +24,12 @@ const addons = [
     '@storybook/addon-a11y',
     '@storybook/addon-cssresources/register',
     '@storybook/addon-viewport/register',
-    '@storybook/addon-docs',
+    {
+        name: '@storybook/addon-docs',
+        options: {
+            transcludeMarkdown: true
+        }
+    },
     '@storybook/addon-toolbars',
     '@storybook/addon-controls'
 ];
@@ -35,7 +40,7 @@ if (isProduction) {
 }
 
 module.exports = {
-    stories: ['../stories/docs/introduction.stories.mdx', `../stories/**/*.@${includedStories}.@(js|mdx)`],
+    stories: ['../stories/docs/introduction.stories.js', `../stories/**/*.@${includedStories}.@(js|mdx)`],
     staticDirs: staticDirs,
     addons: addons,
     core: {
@@ -45,7 +50,7 @@ module.exports = {
         config.plugins.push(
             new DefinePlugin({
                 PRODUCTION: JSON.stringify(isProduction),
-                STORYBOOK_ENV: JSON.stringify(process.env.STORYBOOK_ENV),
+                STORYBOOK_ENV: JSON.stringify(process.env.STORYBOOK_ENV)
             })
         );
 
@@ -83,7 +88,7 @@ module.exports = {
             performance: {
                 hints: 'warning',
                 maxAssetSize: maxAssetSize
-            },
+            }
         });
     }
 };

@@ -38,7 +38,7 @@
     "storybook:serve": "start-storybook -p 6006",
     "storybook:serve:prod": "npm run storybook:prep && cross-env NODE_ENV=production npm run start",
     "storybook:ci": "npm run storybook -- --ci --quiet",
-    "storybook:prep": "npm run build && babel-node scripts/build-visual-stories.js && babel-node scripts/storybook-prep.js",
+    "storybook:prep": "npm run build && babel-node scripts/build-visual-stories.js",
     "storybook:static": "rimraf storybook-static && npm run storybook:prep && cross-env STORYBOOK_ENV=docs build-storybook -c .storybook -o storybook-static --docs",
     "storybook:chromatic": "rimraf storybook-chromatic && npm run storybook:prep && cross-env STORYBOOK_ENV=chromatic build-storybook -c .storybook -o storybook-chromatic",
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js",
