@@ -95,7 +95,7 @@ export const globalTypes = {
         }
     },
     fioriVersion: {
-        defaultValue: 'fiori'
+        defaultValue: !isProduction ? 'all' : 'fiori'
     }
 };
 

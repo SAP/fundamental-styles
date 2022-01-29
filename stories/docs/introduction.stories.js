@@ -7,7 +7,7 @@ import { IntroductionPage } from './introduction.page';
 
 export default {
     title: 'Introduction',
-    component: (props) => {
+    component: () => {
         return null;
     },
     parameters: {
@@ -30,5 +30,5 @@ export default {
 };
 
 export const Overview = () => {
-    return '<div></div>';
+    return null;
 };

@@ -1,6 +1,6 @@
 import { DocsContext } from '@storybook/addon-docs';
 import addons from '@storybook/addons';
-import coreEvents from '@storybook/core-events';
+import { UPDATE_GLOBALS } from '@storybook/core-events';
 import React, { useContext, useEffect, useState } from 'react';
 import { storybookEnv } from '../../environment';
 import { EVENTS } from '../addons/FioriVersion/constants';
@@ -19,13 +19,13 @@ export const SAPContainer = ({ children }) => {
     const [fioriVersion, setFioriVersion] = useState(params.fioriVersion);
 
     useEffect(() => {
-        channel.emit(coreEvents.UPDATE_GLOBALS, { globals: { theme } });
+        channel.emit(UPDATE_GLOBALS, { globals: { theme } });
     }, [theme]);
     useEffect(() => {
-        channel.emit(coreEvents.UPDATE_GLOBALS, { globals: { directionality } });
+        channel.emit(UPDATE_GLOBALS, { globals: { directionality } });
     }, [directionality]);
     useEffect(() => {
-        channel.emit(coreEvents.UPDATE_GLOBALS, { globals: { fioriVersion } });
+        channel.emit(UPDATE_GLOBALS, { globals: { fioriVersion } });
         channel.emit(EVENTS.SET_VERSION, fioriVersion);
     }, [fioriVersion]);
 
