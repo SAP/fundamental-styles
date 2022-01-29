@@ -1,10 +1,12 @@
 export default {
     title: 'Components/Forms/Input',
+
     parameters: {
-        description: `
-Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
+        description: `Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
 
 A text input field allows users to enter and edit text or numeric values in one line. To help users enter a valid value, it provides additional features like “auto-complete”, “suggestions”, and “value help”.
+
+##Usage
 
 Use the input field if:
 
@@ -17,6 +19,7 @@ Do not use the input field if:
 - The user needs to enter long texts. In this case, use the textarea.
 - The user needs to carry out a search. In this case, use the search field.
         `,
+        tags: ['f3', 'a11y', 'theme'],
         components: ['form-item', 'form-label', 'input', 'popover', 'form-message']
     }
 };
@@ -113,7 +116,11 @@ Primary.storyName = 'Default';
 
 Primary.parameters = {
     docs: {
-        iframeHeight: 500
+        iframeHeight: 500,
+        description: {
+
+            story: 'The standard input component can be displayed by using `fd-input` class. It can also be displayed in compact mode by adding the `fd-input--compact` class.'
+        }
     }
 };
 
