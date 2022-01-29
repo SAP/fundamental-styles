@@ -2,107 +2,110 @@
 
 exports[`Storyshots Components/Panel Compact 1`] = `
 <div
-  class="fd-panel fd-panel--compact"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-panel__header"
+    class="fd-panel fd-panel--compact"
   >
     
-        
-    <div
-      class="fd-panel__expand"
-    >
-      
-            
-      <button
-        aria-controls="Gekf63a"
-        aria-expanded="false"
-        aria-haspopup="true"
-        aria-labelledby="asdASD234"
-        class="fd-button fd-button--compact fd-button--transparent fd-panel__button"
-      >
-        
-                
-        <i
-          class="sap-icon--slim-arrow-right"
-        />
-        
-            
-      </button>
-      
-        
-    </div>
     
-        
-    <h4
-      class="fd-panel__title"
-      id="asdASD234"
-    >
-      Panel header
-    </h4>
-    
-        
     <div
-      class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+      class="fd-panel__header"
     >
       
-            
-      <span
-        class="fd-toolbar__spacer fd-toolbar__spacer--auto"
-      >
-         
-      </span>
-      
-            
+        
       <div
-        aria-label="Group label"
-        class="fd-segmented-button"
-        role="group"
+        class="fd-panel__expand"
       >
         
-              
-        <button
-          aria-pressed="true"
-          class="fd-button fd-button--compact is-selected"
-          id="Gekf63D"
-        >
-          Left
-        </button>
-        
-              
-        <button
-          class="fd-button fd-button--compact"
-        >
-          Middle
-        </button>
-        
-              
-        <button
-          class="fd-button fd-button--compact"
-        >
-          Right
-        </button>
-        
             
+        <button
+          aria-controls="Gekf63a"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-labelledby="asdASD234"
+          class="fd-button fd-button--compact fd-button--transparent fd-panel__button"
+        >
+          
+                
+          <i
+            class="sap-icon--slim-arrow-right"
+          />
+          
+            
+        </button>
+        
+        
       </div>
       
         
+      <h4
+        class="fd-panel__title"
+        id="asdASD234"
+      >
+        Panel header
+      </h4>
+      
+        
+      <div
+        class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+      >
+        
+            
+        <span
+          class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+        >
+           
+        </span>
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+              
+          <button
+            aria-pressed="true"
+            class="fd-button fd-button--compact is-selected"
+            id="Gekf63D"
+          >
+            Left
+          </button>
+          
+              
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Middle
+          </button>
+          
+              
+          <button
+            class="fd-button fd-button--compact"
+          >
+            Right
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    aria-hidden="true"
-    aria-labelledby="Gekf63D"
-    class="fd-panel__content"
-    id="Gekf63a"
-    role="region"
-  >
-    
+    <div
+      aria-hidden="true"
+      aria-labelledby="Gekf63D"
+      class="fd-panel__content"
+      id="Gekf63a"
+      role="region"
+    >
+      
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -111,6 +114,9 @@ exports[`Storyshots Components/Panel Compact 1`] = `
         Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
         Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     
+    </div>
+    
+
   </div>
   
 
@@ -118,7 +124,9 @@ exports[`Storyshots Components/Panel Compact 1`] = `
 `;
 
 exports[`Storyshots Components/Panel Expandable 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <div
     class="fd-panel"
   >
@@ -315,84 +323,87 @@ exports[`Storyshots Components/Panel Expandable 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Panel Fixed 1`] = `
 <div
-  class="fd-panel fd-panel--fixed"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-panel__header"
+    class="fd-panel fd-panel--fixed"
   >
     
-        
-    <h4
-      class="fd-panel__title"
-    >
-      Panel header
-    </h4>
     
-        
     <div
-      class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+      class="fd-panel__header"
     >
       
-            
-      <span
-        class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+        
+      <h4
+        class="fd-panel__title"
       >
-         
-      </span>
+        Panel header
+      </h4>
       
-            
+        
       <div
-        aria-label="Group label"
-        class="fd-segmented-button"
-        role="group"
+        class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
       >
         
-              
-        <button
-          aria-pressed="true"
-          class="fd-button is-selected"
-          id="jhqDKYrt"
+            
+        <span
+          class="fd-toolbar__spacer fd-toolbar__spacer--auto"
         >
-          Left
-        </button>
-        
-              
-        <button
-          class="fd-button"
-        >
-          Middle
-        </button>
-        
-              
-        <button
-          class="fd-button"
-        >
-          Right
-        </button>
+           
+        </span>
         
             
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+              
+          <button
+            aria-pressed="true"
+            class="fd-button is-selected"
+            id="jhqDKYrt"
+          >
+            Left
+          </button>
+          
+              
+          <button
+            class="fd-button"
+          >
+            Middle
+          </button>
+          
+              
+          <button
+            class="fd-button"
+          >
+            Right
+          </button>
+          
+            
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    aria-labelledby="jhqDKYrt"
-    class="fd-panel__content"
-    role="region"
-  >
-    
+    <div
+      aria-labelledby="jhqDKYrt"
+      class="fd-panel__content"
+      role="region"
+    >
+      
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
         et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
         Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -401,6 +412,9 @@ exports[`Storyshots Components/Panel Fixed 1`] = `
         Suspendisse facilisis elit ut dolor posuere consectetur. Morbi ac nibh sit amet dolor lobortis tincidunt in ornare erat.
         Vestibulum tristique euismod enim, ac volutpat odio cursus sit amet.
     
+    </div>
+    
+
   </div>
   
 
@@ -409,111 +423,114 @@ exports[`Storyshots Components/Panel Fixed 1`] = `
 
 exports[`Storyshots Components/Panel Fixed height 1`] = `
 <div
-  class="fd-panel"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-panel__header"
+    class="fd-panel"
   >
     
-        
-    <div
-      class="fd-panel__expand"
-    >
-      
-            
-      <button
-        aria-controls="GJL745SV"
-        aria-expanded="false"
-        aria-haspopup="true"
-        aria-labelledby="asdASD345"
-        class="fd-button fd-button--transparent fd-panel__button"
-      >
-        
-                
-        <i
-          class="sap-icon--slim-arrow-right"
-        />
-        
-            
-      </button>
-      
-        
-    </div>
     
-        
-    <h4
-      class="fd-panel__title"
-      id="asdASD345"
-    >
-      Panel header
-    </h4>
-    
-        
     <div
-      class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+      class="fd-panel__header"
     >
       
-            
-      <span
-        class="fd-toolbar__spacer fd-toolbar__spacer--auto"
-      >
-         
-      </span>
-      
-            
+        
       <div
-        aria-label="Group label"
-        class="fd-segmented-button"
-        role="group"
+        class="fd-panel__expand"
       >
         
-              
-        <button
-          aria-pressed="true"
-          class="fd-button is-selected"
-          id="GJL745SD"
-        >
-          Left
-        </button>
-        
-              
-        <button
-          class="fd-button"
-        >
-          Middle
-        </button>
-        
-              
-        <button
-          class="fd-button"
-        >
-          Right
-        </button>
-        
             
+        <button
+          aria-controls="GJL745SV"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-labelledby="asdASD345"
+          class="fd-button fd-button--transparent fd-panel__button"
+        >
+          
+                
+          <i
+            class="sap-icon--slim-arrow-right"
+          />
+          
+            
+        </button>
+        
+        
       </div>
       
         
+      <h4
+        class="fd-panel__title"
+        id="asdASD345"
+      >
+        Panel header
+      </h4>
+      
+        
+      <div
+        class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent"
+      >
+        
+            
+        <span
+          class="fd-toolbar__spacer fd-toolbar__spacer--auto"
+        >
+           
+        </span>
+        
+            
+        <div
+          aria-label="Group label"
+          class="fd-segmented-button"
+          role="group"
+        >
+          
+              
+          <button
+            aria-pressed="true"
+            class="fd-button is-selected"
+            id="GJL745SD"
+          >
+            Left
+          </button>
+          
+              
+          <button
+            class="fd-button"
+          >
+            Middle
+          </button>
+          
+              
+          <button
+            class="fd-button"
+          >
+            Right
+          </button>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    aria-hidden="true"
-    aria-labelledby="GJL745SD"
-    class="fd-panel__content"
-    id="GJL745SV"
-    role="region"
-    style="height: 100px;"
-  >
-    
-        
-    <span>
+    <div
+      aria-hidden="true"
+      aria-labelledby="GJL745SD"
+      class="fd-panel__content"
+      id="GJL745SV"
+      role="region"
+      style="height: 100px;"
+    >
       
+        
+      <span>
+        
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut laoreet lorem. Vestibulum ante ipsum primis in faucibus orci luctus
             et ultrices posuere cubilia curae; Aenean sagittis aliquam justo et suscipit.
             Nam molestie, magna at elementum pulvinar, nisi enim venenatis ante, id convallis mi neque nec risus. Cras blandit sagittis augue at facilisis.
@@ -529,9 +546,12 @@ exports[`Storyshots Components/Panel Fixed height 1`] = `
             id condimentum velit. Proin dignissim dolor velit, eu malesuada magna porta vel. Aenean quis feugiat libero, sed pretium libero.
             Nunc ex orci, volutpat in tristique et, accumsan sed ante. Maecenas laoreet egestas iaculis. In quis ligula mauris.
         
-    </span>
+      </span>
+      
     
+    </div>
     
+
   </div>
   
 

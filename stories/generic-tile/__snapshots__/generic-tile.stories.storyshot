@@ -2,1137 +2,1151 @@
 
 exports[`Storyshots Components/Generic Tiles Action mode 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-tile fd-tile--launch fd-tile--action"
-    role="button"
-    tabindex="0"
+    class="fddocs-container"
   >
     
-        
-    <div
-      class="fd-tile__overlay"
-    />
     
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-    >
-      
-                    
-      <i
-        class="sap-icon--decline"
-        role="presentation"
-      />
-      
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
-        
     <div
-      class="fd-tile__header"
+      class="fd-tile fd-tile--launch fd-tile--action"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__title"
-      >
-        Title
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content"
-    >
-      
-            
-      <span
-        aria-label="Profile Image"
-        class="fd-tile__profile-img"
-        role="img"
-        style="background-image: url('assets/images/avatars/profile_image.png')"
+        class="fd-tile__overlay"
       />
       
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
+      <button
+        aria-label="close button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
       >
-        Footer Text
-      </span>
-      
         
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--launch fd-tile--s fd-tile--action"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__overlay"
-    />
-    
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-    >
-      
                     
-      <i
-        class="sap-icon--decline"
-        role="presentation"
-      />
-      
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
+        <i
+          class="sap-icon--decline"
+          role="presentation"
+        />
         
-    <div
-      class="fd-tile__header"
-    >
-      
-            
-      <div
-        class="fd-tile__title"
+                
+      </button>
+      <button
+        aria-label="indicator button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+        tabindex="-1"
       >
-        Title
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
-      </div>
-      
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__content"
-    >
-      
-            
-      <span
-        aria-label="Profile Image"
-        class="fd-tile__profile-img"
-        role="img"
-        style="background-image: url('assets/images/avatars/profile_image.png')"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
-      >
-        Unit, Notification
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--slide fd-tile--action"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
-    
-        
-    <div
-      class="fd-tile__overlay"
-    />
-    
-        
-    <button
-      aria-label="toggle button"
-      class="fd-tile__toggle fd-tile__toggle--pause"
-    />
-    
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
-    >
-      
                     
-      <i
-        class="sap-icon--decline"
-        role="presentation"
-      />
-      
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
+        <i
+          class="sap-icon--overflow"
+          role="presentation"
+        />
         
-    <div
-      class="fd-tile__container"
-    >
+                
+      </button>
       
-            
+        
       <div
         class="fd-tile__header"
       >
         
-                
+            
         <div
           class="fd-tile__title"
         >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          Title
         </div>
         
-                
+            
         <div
           class="fd-tile__subtitle"
         >
-          SAP News
+          Subtitle
         </div>
         
-            
+        
       </div>
       
+        
+      <div
+        class="fd-tile__content"
+      >
+        
             
+        <span
+          aria-label="Profile Image"
+          class="fd-tile__profile-img"
+          role="img"
+          style="background-image: url('assets/images/avatars/profile_image.png')"
+        />
+        
+        
+      </div>
+      
+        
       <div
         class="fd-tile__footer"
       >
         
-                
+            
         <span
           class="fd-tile__footer-text"
         >
-          May 14, 2020
+          Footer Text
         </span>
         
-            
+        
       </div>
       
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action"
-    role="button"
-    tabindex="0"
-  >
-    
-        
     <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
-    
-        
-    <div
-      class="fd-tile__overlay"
-    />
-    
-        
-    <button
-      aria-label="toggle button"
-      class="fd-tile__toggle fd-tile__toggle--pause"
-    />
-    
-        
-    <button
-      aria-label="close button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+      class="fd-tile fd-tile--launch fd-tile--s fd-tile--action"
+      role="button"
+      tabindex="0"
     >
       
-                    
-      <i
-        class="sap-icon--decline"
-        role="presentation"
+        
+      <div
+        class="fd-tile__overlay"
       />
       
-                
-    </button>
-    <button
-      aria-label="indicator button"
-      class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
-      tabindex="-1"
-    >
-      
-                    
-      <i
-        class="sap-icon--overflow"
-        role="presentation"
-      />
-      
-                
-    </button>
-    
         
-    <div
-      class="fd-tile__container"
-    >
+      <button
+        aria-label="close button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+      >
+        
+                    
+        <i
+          class="sap-icon--decline"
+          role="presentation"
+        />
+        
+                
+      </button>
+      <button
+        aria-label="indicator button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+        tabindex="-1"
+      >
+        
+                    
+        <i
+          class="sap-icon--overflow"
+          role="presentation"
+        />
+        
+                
+      </button>
       
-            
+        
       <div
         class="fd-tile__header"
       >
         
-                
+            
         <div
           class="fd-tile__title"
         >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          Title
         </div>
         
-                
+            
         <div
           class="fd-tile__subtitle"
         >
-          SAP News
+          Subtitle
         </div>
         
-            
+        
       </div>
       
+        
+      <div
+        class="fd-tile__content"
+      >
+        
             
+        <span
+          aria-label="Profile Image"
+          class="fd-tile__profile-img"
+          role="img"
+          style="background-image: url('assets/images/avatars/profile_image.png')"
+        />
+        
+        
+      </div>
+      
+        
       <div
         class="fd-tile__footer"
       >
         
-                
+            
         <span
           class="fd-tile__footer-text"
         >
-          May 14, 2020
+          Unit, Notification
         </span>
         
-            
+        
       </div>
       
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
+    
     </div>
     
     
-  </div>
-  
+    <div
+      class="fd-tile fd-tile--double fd-tile--slide fd-tile--action"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-tile__background-img"
+        style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      />
+      
+        
+      <div
+        class="fd-tile__overlay"
+      />
+      
+        
+      <button
+        aria-label="toggle button"
+        class="fd-tile__toggle fd-tile__toggle--pause"
+      />
+      
+        
+      <button
+        aria-label="close button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+      >
+        
+                    
+        <i
+          class="sap-icon--decline"
+          role="presentation"
+        />
+        
+                
+      </button>
+      <button
+        aria-label="indicator button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+        tabindex="-1"
+      >
+        
+                    
+        <i
+          class="sap-icon--overflow"
+          role="presentation"
+        />
+        
+                
+      </button>
+      
+        
+      <div
+        class="fd-tile__container"
+      >
+        
+            
+        <div
+          class="fd-tile__header"
+        >
+          
+                
+          <div
+            class="fd-tile__title"
+          >
+            Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          </div>
+          
+                
+          <div
+            class="fd-tile__subtitle"
+          >
+            SAP News
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-tile__footer"
+        >
+          
+                
+          <span
+            class="fd-tile__footer-text"
+          >
+            May 14, 2020
+          </span>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-tile__page-indicator"
+        >
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot fd-tile__dot--active"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-tile fd-tile--double fd-tile--s fd-tile--slide fd-tile--action"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-tile__background-img"
+        style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      />
+      
+        
+      <div
+        class="fd-tile__overlay"
+      />
+      
+        
+      <button
+        aria-label="toggle button"
+        class="fd-tile__toggle fd-tile__toggle--pause"
+      />
+      
+        
+      <button
+        aria-label="close button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-close"
+      >
+        
+                    
+        <i
+          class="sap-icon--decline"
+          role="presentation"
+        />
+        
+                
+      </button>
+      <button
+        aria-label="indicator button"
+        class="fd-button fd-button--compact fd-button--transparent fd-tile__action-indicator"
+        tabindex="-1"
+      >
+        
+                    
+        <i
+          class="sap-icon--overflow"
+          role="presentation"
+        />
+        
+                
+      </button>
+      
+        
+      <div
+        class="fd-tile__container"
+      >
+        
+            
+        <div
+          class="fd-tile__header"
+        >
+          
+                
+          <div
+            class="fd-tile__title"
+          >
+            Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          </div>
+          
+                
+          <div
+            class="fd-tile__subtitle"
+          >
+            SAP News
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-tile__footer"
+        >
+          
+                
+          <span
+            class="fd-tile__footer-text"
+          >
+            May 14, 2020
+          </span>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-tile__page-indicator"
+        >
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot fd-tile__dot--active"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
 
+  </div>
 </div>
 `;
 
 exports[`Storyshots Components/Generic Tiles Badge tile 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-tile fd-tile--launch"
-    role="button"
-    tabindex="0"
+    class="fddocs-container"
   >
     
-        
-    <div
-      class="fd-badge"
-    >
-      Badge
-    </div>
     
-        
     <div
-      class="fd-tile__header"
+      class="fd-tile fd-tile--launch"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__title"
+        class="fd-badge"
       >
-        Launch tile title
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
+        Badge
       </div>
       
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__content"
-    >
-      
-            
-      <span
-        aria-label="Profile Image"
-        class="fd-tile__profile-img"
-        role="img"
-        style="background-image: url('assets/images/avatars/profile_image.png')"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
-      >
-        Footer
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--launch fd-tile--s"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-badge"
-    >
-      Badge with very very very very very very very very very long text
-    </div>
-    
-        
-    <div
-      class="fd-tile__header"
-    >
-      
-            
       <div
-        class="fd-tile__title"
-      >
-        Launch tile title
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content"
-    >
-      
-            
-      <span
-        aria-label="Profile Image"
-        class="fd-tile__profile-img"
-        role="img"
-        style="background-image: url('assets/images/avatars/profile_image.png')"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
-      >
-        Unit, Notification
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--feed"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-badge"
-    >
-      New
-    </div>
-    
-        
-    <div
-      class="fd-tile__header"
-    >
-      
-            
-      <div
-        class="fd-tile__title"
-      >
-        Feed tile title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fd-tile__content--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section"
+        class="fd-tile__header"
       >
         
-                
+            
         <div
-          class="fd-tile__content-text"
+          class="fd-tile__title"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.
-        </div>
-        
-                
-        <div
-          class="fd-tile__content-byline"
-        >
-          About 1 minute ago
+          Launch tile title
         </div>
         
             
+        <div
+          class="fd-tile__subtitle"
+        >
+          Subtitle
+        </div>
+        
+        
       </div>
       
-            
+        
       <div
-        class="fd-tile__section"
+        class="fd-tile__content"
       >
         
-                
+            
+        <span
+          aria-label="Profile Image"
+          class="fd-tile__profile-img"
+          role="img"
+          style="background-image: url('assets/images/avatars/profile_image.png')"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer"
+      >
+        
+            
+        <span
+          class="fd-tile__footer-text"
+        >
+          Footer
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-tile fd-tile--launch fd-tile--s"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-badge"
+      >
+        Badge with very very very very very very very very very long text
+      </div>
+      
+        
+      <div
+        class="fd-tile__header"
+      >
+        
+            
         <div
-          class="fd-numeric-content"
+          class="fd-tile__title"
+        >
+          Launch tile title
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          Subtitle
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content"
+      >
+        
+            
+        <span
+          aria-label="Profile Image"
+          class="fd-tile__profile-img"
+          role="img"
+          style="background-image: url('assets/images/avatars/profile_image.png')"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer"
+      >
+        
+            
+        <span
+          class="fd-tile__footer-text"
+        >
+          Unit, Notification
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-tile fd-tile--double fd-tile--feed"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-badge"
+      >
+        New
+      </div>
+      
+        
+      <div
+        class="fd-tile__header"
+      >
+        
+            
+        <div
+          class="fd-tile__title"
+        >
+          Feed tile title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          Subtitle
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content fd-tile__content--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section"
         >
           
-                    
+                
           <div
-            class="fd-numeric-content__kpi-container"
+            class="fd-tile__content-text"
           >
-            
-                        
-            <div
-              class="fd-numeric-content__kpi"
-            >
-              35
-            </div>
-            
-                    
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.
           </div>
           
                 
+          <div
+            class="fd-tile__content-byline"
+          >
+            About 1 minute ago
+          </div>
+          
+            
         </div>
         
             
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
-      >
-        Footer
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--s fd-tile--feed"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-badge"
-    >
-      Badge with very very very very very very very very very long text
-    </div>
-    
-        
-    <div
-      class="fd-tile__header"
-    >
-      
-            
-      <div
-        class="fd-tile__title"
-      >
-        Feed tile title: Sed do eiusmod
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fd-tile__content--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section"
-      >
-        
-                
         <div
-          class="fd-tile__content-text"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.
-        </div>
-        
-                
-        <div
-          class="fd-tile__content-byline"
-        >
-          About 1 minute ago
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-tile__section"
-      >
-        
-                
-        <div
-          class="fd-numeric-content fd-numeric-content--m"
+          class="fd-tile__section"
         >
           
-                    
+                
           <div
-            class="fd-numeric-content__kpi-container"
+            class="fd-numeric-content"
           >
             
-                        
+                    
             <div
-              class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+              class="fd-numeric-content__kpi-container"
             >
-              9
+              
+                        
+              <div
+                class="fd-numeric-content__kpi"
+              >
+                35
+              </div>
+              
+                    
             </div>
             
-                    
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer"
+      >
+        
+            
+        <span
+          class="fd-tile__footer-text"
+        >
+          Footer
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-tile fd-tile--double fd-tile--s fd-tile--feed"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-badge"
+      >
+        Badge with very very very very very very very very very long text
+      </div>
+      
+        
+      <div
+        class="fd-tile__header"
+      >
+        
+            
+        <div
+          class="fd-tile__title"
+        >
+          Feed tile title: Sed do eiusmod
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          Subtitle
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content fd-tile__content--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section"
+        >
+          
+                
+          <div
+            class="fd-tile__content-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.
           </div>
           
                 
+          <div
+            class="fd-tile__content-byline"
+          >
+            About 1 minute ago
+          </div>
+          
+            
         </div>
         
             
+        <div
+          class="fd-tile__section"
+        >
+          
+                
+          <div
+            class="fd-numeric-content fd-numeric-content--m"
+          >
+            
+                    
+            <div
+              class="fd-numeric-content__kpi-container"
+            >
+              
+                        
+              <div
+                class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+              >
+                9
+              </div>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
       </div>
       
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
+      <div
+        class="fd-tile__footer"
       >
-        Footer
-      </span>
-      
         
+            
+        <span
+          class="fd-tile__footer-text"
+        >
+          Footer
+        </span>
+        
+        
+      </div>
+      
+    
     </div>
     
-    
-  </div>
-  
 
+  </div>
 </div>
 `;
 
 exports[`Storyshots Components/Generic Tiles Columns 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
   <div
-    aria-label="button"
-    class="fd-tile"
-    role="button"
-    tabindex="0"
+    class="fddocs-container"
   >
     
-        
+    
     <div
-      class="fd-tile__header fd-tile__header--2-col"
+      aria-label="button"
+      class="fd-tile"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
+        class="fd-tile__header fd-tile__header--2-col"
+      >
+        
             
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
       
         
-    </div>
+      <div
+        class="fd-tile__content fd-tile__content--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer fd-tile__footer--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
     
-        
-    <div
-      class="fd-tile__content fd-tile__content--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer fd-tile__footer--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-label="button"
-    class="fd-tile fd-tile--double"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__header fd-tile__header--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fd-tile__content--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer fd-tile__footer--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
     </div>
     
     
-  </div>
-  
-    
-  <div
-    aria-label="button"
-    class="fd-tile fd-tile--s"
-    role="button"
-    tabindex="0"
-  >
-    
-        
     <div
-      class="fd-tile__header fd-tile__header--2-col"
+      aria-label="button"
+      class="fd-tile fd-tile--double"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
+        class="fd-tile__header fd-tile__header--2-col"
+      >
+        
             
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
       
         
-    </div>
+      <div
+        class="fd-tile__content fd-tile__content--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer fd-tile__footer--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
     
-        
-    <div
-      class="fd-tile__content fd-tile__content--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer fd-tile__footer--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-label="button"
-    class="fd-tile fd-tile--s fd-tile--double"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__header fd-tile__header--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fd-tile__content--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer fd-tile__footer--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-            
-      <div
-        class="fd-tile__section fddocs-tile-example-background-color"
-      />
-      
-        
     </div>
     
     
+    <div
+      aria-label="button"
+      class="fd-tile fd-tile--s"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-tile__header fd-tile__header--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content fd-tile__content--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer fd-tile__footer--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      aria-label="button"
+      class="fd-tile fd-tile--s fd-tile--double"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-tile__header fd-tile__header--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content fd-tile__content--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer fd-tile__footer--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+            
+        <div
+          class="fd-tile__section fddocs-tile-example-background-color"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
   </div>
   
 
@@ -1141,231 +1155,237 @@ exports[`Storyshots Components/Generic Tiles Columns 1`] = `
 
 exports[`Storyshots Components/Generic Tiles Feed tile 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-tile fd-tile--double fd-tile--feed"
-    role="button"
-    tabindex="0"
+    class="fddocs-container"
   >
     
-        
-    <div
-      class="fd-tile__header"
-    >
-      
-            
-      <div
-        class="fd-tile__title"
-      >
-        Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
-      </div>
-      
-        
-    </div>
     
-        
     <div
-      class="fd-tile__content fd-tile__content--2-col"
+      class="fd-tile fd-tile--double fd-tile--feed"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__section"
+        class="fd-tile__header"
       >
         
-                
+            
         <div
-          class="fd-tile__content-text"
+          class="fd-tile__title"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.
-        </div>
-        
-                
-        <div
-          class="fd-tile__content-byline"
-        >
-          About 1 minute ago
+          Title: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
         </div>
         
             
+        <div
+          class="fd-tile__subtitle"
+        >
+          Subtitle
+        </div>
+        
+        
       </div>
       
-            
+        
       <div
-        class="fd-tile__section"
+        class="fd-tile__content fd-tile__content--2-col"
       >
         
-                
+            
         <div
-          class="fd-numeric-content"
+          class="fd-tile__section"
         >
           
-                    
+                
           <div
-            class="fd-numeric-content__kpi-container"
+            class="fd-tile__content-text"
           >
-            
-                        
-            <div
-              class="fd-numeric-content__kpi"
-            >
-              35
-            </div>
-            
-                    
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.
           </div>
           
                 
+          <div
+            class="fd-tile__content-byline"
+          >
+            About 1 minute ago
+          </div>
+          
+            
         </div>
         
             
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
-      >
-        Footer
-      </span>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--s fd-tile--feed"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__header"
-    >
-      
-            
-      <div
-        class="fd-tile__title"
-      >
-        Title: Sed do eiusmod
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        Subtitle
-      </div>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fd-tile__content--2-col"
-    >
-      
-            
-      <div
-        class="fd-tile__section"
-      >
-        
-                
         <div
-          class="fd-tile__content-text"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.
-        </div>
-        
-                
-        <div
-          class="fd-tile__content-byline"
-        >
-          About 1 minute ago
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-tile__section"
-      >
-        
-                
-        <div
-          class="fd-numeric-content fd-numeric-content--m"
+          class="fd-tile__section"
         >
           
-                    
+                
           <div
-            class="fd-numeric-content__kpi-container"
+            class="fd-numeric-content"
           >
             
-                        
+                    
             <div
-              class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+              class="fd-numeric-content__kpi-container"
             >
-              9
+              
+                        
+              <div
+                class="fd-numeric-content__kpi"
+              >
+                35
+              </div>
+              
+                    
             </div>
             
-                    
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer"
+      >
+        
+            
+        <span
+          class="fd-tile__footer-text"
+        >
+          Footer
+        </span>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      class="fd-tile fd-tile--double fd-tile--s fd-tile--feed"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-tile__header"
+      >
+        
+            
+        <div
+          class="fd-tile__title"
+        >
+          Title: Sed do eiusmod
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          Subtitle
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content fd-tile__content--2-col"
+      >
+        
+            
+        <div
+          class="fd-tile__section"
+        >
+          
+                
+          <div
+            class="fd-tile__content-text"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod.
           </div>
           
                 
+          <div
+            class="fd-tile__content-byline"
+          >
+            About 1 minute ago
+          </div>
+          
+            
         </div>
         
             
+        <div
+          class="fd-tile__section"
+        >
+          
+                
+          <div
+            class="fd-numeric-content fd-numeric-content--m"
+          >
+            
+                    
+            <div
+              class="fd-numeric-content__kpi-container"
+            >
+              
+                        
+              <div
+                class="fd-numeric-content__kpi fd-numeric-content__kpi--negative"
+              >
+                9
+              </div>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
       </div>
       
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer"
-    >
-      
-            
-      <span
-        class="fd-tile__footer-text"
+      <div
+        class="fd-tile__footer"
       >
-        Footer
-      </span>
-      
         
+            
+        <span
+          class="fd-tile__footer-text"
+        >
+          Footer
+        </span>
+        
+        
+      </div>
+      
+    
     </div>
     
-    
-  </div>
-  
 
+  </div>
 </div>
 `;
 
 exports[`Storyshots Components/Generic Tiles KPI tile 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <h4>
     KPI tile with numeric content (size L)
   </h4>
@@ -2052,11 +2072,13 @@ exports[`Storyshots Components/Generic Tiles KPI tile 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Generic Tiles Launch tile 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <h4>
     Launch tile with numeric content and launch icon
   </h4>
@@ -2771,200 +2793,206 @@ exports[`Storyshots Components/Generic Tiles Launch tile 1`] = `
     
 
   </div>
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Generic Tiles Layout 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
   <div
-    aria-label="button"
-    class="fd-tile"
-    role="button"
-    tabindex="0"
+    class="fddocs-container"
   >
     
-        
+    
     <div
-      class="fd-tile__header fddocs-tile-example-background-color"
+      aria-label="button"
+      class="fd-tile"
+      role="button"
+      tabindex="0"
     >
       
-            
-      <div
-        class="fd-tile__title"
-      >
-        .fd-tile__title
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        .fd-tile__subtitle
-      </div>
-      
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fddocs-tile-example-background-color"
-    >
-      .fd-tile__content
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer fddocs-tile-example-background-color"
-    >
-      .fd-tile__footer
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-label="button"
-    class="fd-tile fd-tile--double"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__header fddocs-tile-example-background-color"
-    >
-      
-            
       <div
-        class="fd-tile__title"
+        class="fd-tile__header fddocs-tile-example-background-color"
       >
-        .fd-tile__title
-      </div>
-      
+        
             
-      <div
-        class="fd-tile__subtitle"
-      >
-        .fd-tile__subtitle
+        <div
+          class="fd-tile__title"
+        >
+          .fd-tile__title
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          .fd-tile__subtitle
+        </div>
+        
+        
       </div>
       
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fddocs-tile-example-background-color"
-    >
-      .fd-tile__content
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer fddocs-tile-example-background-color"
-    >
-      .fd-tile__footer
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-label="button"
-    class="fd-tile fd-tile--s"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__header fddocs-tile-example-background-color"
-    >
-      
-            
       <div
-        class="fd-tile__title"
+        class="fd-tile__content fddocs-tile-example-background-color"
       >
-        .fd-tile__title
-      </div>
-      
-            
-      <div
-        class="fd-tile__subtitle"
-      >
-        .fd-tile__subtitle
+        .fd-tile__content
       </div>
       
         
-    </div>
-    
-        
-    <div
-      class="fd-tile__content fddocs-tile-example-background-color"
-    >
-      .fd-tile__content
-    </div>
-    
-        
-    <div
-      class="fd-tile__footer fddocs-tile-example-background-color"
-    >
-      .fd-tile__footer
-    </div>
-    
-    
-  </div>
-  
-    
-  <div
-    aria-label="button"
-    class="fd-tile fd-tile--s fd-tile--double"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__header fddocs-tile-example-background-color"
-    >
-      
-            
       <div
-        class="fd-tile__title"
+        class="fd-tile__footer fddocs-tile-example-background-color"
       >
-        .fd-tile__title
+        .fd-tile__footer
       </div>
       
-            
+    
+    </div>
+    
+    
+    <div
+      aria-label="button"
+      class="fd-tile fd-tile--double"
+      role="button"
+      tabindex="0"
+    >
+      
+        
       <div
-        class="fd-tile__subtitle"
+        class="fd-tile__header fddocs-tile-example-background-color"
       >
-        .fd-tile__subtitle
+        
+            
+        <div
+          class="fd-tile__title"
+        >
+          .fd-tile__title
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          .fd-tile__subtitle
+        </div>
+        
+        
       </div>
       
         
-    </div>
-    
+      <div
+        class="fd-tile__content fddocs-tile-example-background-color"
+      >
+        .fd-tile__content
+      </div>
+      
         
-    <div
-      class="fd-tile__content fddocs-tile-example-background-color"
-    >
-      .fd-tile__content
+      <div
+        class="fd-tile__footer fddocs-tile-example-background-color"
+      >
+        .fd-tile__footer
+      </div>
+      
+    
     </div>
     
+    
+    <div
+      aria-label="button"
+      class="fd-tile fd-tile--s"
+      role="button"
+      tabindex="0"
+    >
+      
         
-    <div
-      class="fd-tile__footer fddocs-tile-example-background-color"
-    >
-      .fd-tile__footer
+      <div
+        class="fd-tile__header fddocs-tile-example-background-color"
+      >
+        
+            
+        <div
+          class="fd-tile__title"
+        >
+          .fd-tile__title
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          .fd-tile__subtitle
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content fddocs-tile-example-background-color"
+      >
+        .fd-tile__content
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer fddocs-tile-example-background-color"
+      >
+        .fd-tile__footer
+      </div>
+      
+    
     </div>
     
     
+    <div
+      aria-label="button"
+      class="fd-tile fd-tile--s fd-tile--double"
+      role="button"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fd-tile__header fddocs-tile-example-background-color"
+      >
+        
+            
+        <div
+          class="fd-tile__title"
+        >
+          .fd-tile__title
+        </div>
+        
+            
+        <div
+          class="fd-tile__subtitle"
+        >
+          .fd-tile__subtitle
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-tile__content fddocs-tile-example-background-color"
+      >
+        .fd-tile__content
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer fddocs-tile-example-background-color"
+      >
+        .fd-tile__footer
+      </div>
+      
+    
+    </div>
+    
+
   </div>
   
 
@@ -2972,7 +3000,9 @@ exports[`Storyshots Components/Generic Tiles Layout 1`] = `
 `;
 
 exports[`Storyshots Components/Generic Tiles Link tile 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <h4>
     Link tile: Floating behaviour in cozy mode
   </h4>
@@ -5260,499 +5290,507 @@ exports[`Storyshots Components/Generic Tiles Link tile 1`] = `
     
 
   </div>
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Generic Tiles Sizes 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
   <div
-    aria-label="button"
-    class="fd-tile"
-    role="button"
-    tabindex="0"
+    class="fddocs-container"
   >
     
-        
-    <div
-      class="fd-tile__header"
-    />
     
-        
     <div
-      class="fd-tile__content"
+      aria-label="button"
+      class="fd-tile"
+      role="button"
+      tabindex="0"
     >
-      11 x 11rem
+      
+        
+      <div
+        class="fd-tile__header"
+      />
+      
+        
+      <div
+        class="fd-tile__content"
+      >
+        11 x 11rem
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer"
+      />
+      
+    
     </div>
     
-        
+    
     <div
-      class="fd-tile__footer"
-    />
-    
-    
-  </div>
-  
-    
-  <div
-    aria-label="button"
-    class="fd-tile fd-tile--s"
-    role="button"
-    tabindex="0"
-  >
-    
-        
-    <div
-      class="fd-tile__header"
-    />
-    
-        
-    <div
-      class="fd-tile__content"
+      aria-label="button"
+      class="fd-tile fd-tile--s"
+      role="button"
+      tabindex="0"
     >
-      9.25 x 9.25rem
+      
+        
+      <div
+        class="fd-tile__header"
+      />
+      
+        
+      <div
+        class="fd-tile__content"
+      >
+        9.25 x 9.25rem
+      </div>
+      
+        
+      <div
+        class="fd-tile__footer"
+      />
+      
+    
     </div>
     
-        
-    <div
-      class="fd-tile__footer"
-    />
-    
-    
-  </div>
-  
 
+  </div>
 </div>
 `;
 
 exports[`Storyshots Components/Generic Tiles Slide tile 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-tile fd-tile--slide"
-    role="button"
-    tabindex="0"
+    class="fddocs-container"
   >
     
-        
-    <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
     
-        
-    <button
-      aria-label="toggle play button"
-      class="fd-tile__toggle"
-    />
-    
-        
     <div
-      class="fd-tile__container"
+      class="fd-tile fd-tile--slide"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__header"
+        class="fd-tile__background-img"
+        style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      />
+      
+        
+      <button
+        aria-label="toggle play button"
+        class="fd-tile__toggle"
+      />
+      
+        
+      <div
+        class="fd-tile__container"
       >
         
-                
+            
         <div
-          class="fd-tile__title"
+          class="fd-tile__header"
         >
-          Wind Map: Monitoring Real-Time
+          
+                
+          <div
+            class="fd-tile__title"
+          >
+            Wind Map: Monitoring Real-Time
+          </div>
+          
+                
+          <div
+            class="fd-tile__subtitle"
+          >
+            SAP News
+          </div>
+          
+            
         </div>
         
-                
+            
         <div
-          class="fd-tile__subtitle"
+          class="fd-tile__footer"
         >
-          SAP News
+          
+                
+          <span
+            class="fd-tile__footer-text"
+          >
+            May 14, 2020
+          </span>
+          
+            
         </div>
         
             
-      </div>
-      
-            
-      <div
-        class="fd-tile__footer"
-      >
-        
-                
-        <span
-          class="fd-tile__footer-text"
+        <div
+          class="fd-tile__page-indicator"
         >
-          May 14, 2020
-        </span>
-        
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot fd-tile__dot--active"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
             
+        </div>
+        
+        
       </div>
       
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--slide fd-tile--s"
-    role="button"
-    tabindex="0"
-  >
-    
-        
     <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
-    
-        
-    <button
-      aria-label="toggle play button"
-      class="fd-tile__toggle"
-    />
-    
-        
-    <div
-      class="fd-tile__container"
+      class="fd-tile fd-tile--slide fd-tile--s"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__header"
+        class="fd-tile__background-img"
+        style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      />
+      
+        
+      <button
+        aria-label="toggle play button"
+        class="fd-tile__toggle"
+      />
+      
+        
+      <div
+        class="fd-tile__container"
       >
         
-                
+            
         <div
-          class="fd-tile__title"
+          class="fd-tile__header"
         >
-          Wind Map: Monitoring Real-Time
+          
+                
+          <div
+            class="fd-tile__title"
+          >
+            Wind Map: Monitoring Real-Time
+          </div>
+          
+                
+          <div
+            class="fd-tile__subtitle"
+          >
+            SAP News
+          </div>
+          
+            
         </div>
         
-                
+            
         <div
-          class="fd-tile__subtitle"
+          class="fd-tile__footer"
         >
-          SAP News
+          
+                
+          <span
+            class="fd-tile__footer-text"
+          >
+            May 14, 2020
+          </span>
+          
+            
         </div>
         
             
-      </div>
-      
-            
-      <div
-        class="fd-tile__footer"
-      >
-        
-                
-        <span
-          class="fd-tile__footer-text"
+        <div
+          class="fd-tile__page-indicator"
         >
-          May 14, 2020
-        </span>
-        
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot fd-tile__dot--active"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
             
+        </div>
+        
+        
       </div>
       
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--slide"
-    role="button"
-    tabindex="0"
-  >
-    
-        
     <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
-    
-        
-    <button
-      aria-label="toggle pause button"
-      class="fd-tile__toggle fd-tile__toggle--pause"
-    />
-    
-        
-    <div
-      class="fd-tile__container"
+      class="fd-tile fd-tile--double fd-tile--slide"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__header"
+        class="fd-tile__background-img"
+        style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      />
+      
+        
+      <button
+        aria-label="toggle pause button"
+        class="fd-tile__toggle fd-tile__toggle--pause"
+      />
+      
+        
+      <div
+        class="fd-tile__container"
       >
         
-                
+            
         <div
-          class="fd-tile__title"
+          class="fd-tile__header"
         >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          
+                
+          <div
+            class="fd-tile__title"
+          >
+            Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          </div>
+          
+                
+          <div
+            class="fd-tile__subtitle"
+          >
+            SAP News
+          </div>
+          
+            
         </div>
         
-                
+            
         <div
-          class="fd-tile__subtitle"
+          class="fd-tile__footer"
         >
-          SAP News
+          
+                
+          <span
+            class="fd-tile__footer-text"
+          >
+            May 14, 2020
+          </span>
+          
+            
         </div>
         
             
-      </div>
-      
-            
-      <div
-        class="fd-tile__footer"
-      >
-        
-                
-        <span
-          class="fd-tile__footer-text"
+        <div
+          class="fd-tile__page-indicator"
         >
-          May 14, 2020
-        </span>
-        
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot fd-tile__dot--active"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
             
+        </div>
+        
+        
       </div>
       
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
+    
     </div>
     
     
-  </div>
-  
-    
-  <div
-    class="fd-tile fd-tile--double fd-tile--s fd-tile--slide"
-    role="button"
-    tabindex="0"
-  >
-    
-        
     <div
-      class="fd-tile__background-img"
-      style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
-    />
-    
-        
-    <button
-      aria-label="toggle pause button"
-      class="fd-tile__toggle fd-tile__toggle--pause"
-    />
-    
-        
-    <div
-      class="fd-tile__container"
+      class="fd-tile fd-tile--double fd-tile--s fd-tile--slide"
+      role="button"
+      tabindex="0"
     >
       
-            
+        
       <div
-        class="fd-tile__header"
+        class="fd-tile__background-img"
+        style="background-image: url('assets/images/backgrounds/windmills.jpg'); background-size:cover;"
+      />
+      
+        
+      <button
+        aria-label="toggle pause button"
+        class="fd-tile__toggle fd-tile__toggle--pause"
+      />
+      
+        
+      <div
+        class="fd-tile__container"
       >
         
-                
+            
         <div
-          class="fd-tile__title"
+          class="fd-tile__header"
         >
-          Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          
+                
+          <div
+            class="fd-tile__title"
+          >
+            Wind Map: Monitoring Real-Time and Forecasted Wind Conditions Across the Globe
+          </div>
+          
+                
+          <div
+            class="fd-tile__subtitle"
+          >
+            SAP News
+          </div>
+          
+            
         </div>
         
-                
+            
         <div
-          class="fd-tile__subtitle"
+          class="fd-tile__footer"
         >
-          SAP News
+          
+                
+          <span
+            class="fd-tile__footer-text"
+          >
+            May 14, 2020
+          </span>
+          
+            
         </div>
         
             
-      </div>
-      
-            
-      <div
-        class="fd-tile__footer"
-      >
-        
-                
-        <span
-          class="fd-tile__footer-text"
+        <div
+          class="fd-tile__page-indicator"
         >
-          May 14, 2020
-        </span>
-        
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot fd-tile__dot--active"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
+                
+          <span
+            class="fd-tile__dot"
+          />
+          
             
+        </div>
+        
+        
       </div>
       
-            
-      <div
-        class="fd-tile__page-indicator"
-      >
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot fd-tile__dot--active"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-                
-        <span
-          class="fd-tile__dot"
-        />
-        
-            
-      </div>
-      
-        
+    
     </div>
     
-    
-  </div>
-  
 
+  </div>
 </div>
 `;

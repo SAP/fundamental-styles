@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Layouts/Section Section Structure 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <section
     class="fd-section"
   >
@@ -29,11 +31,13 @@ exports[`Storyshots Layouts/Section Section Structure 1`] = `
   </section>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Layouts/Section Testing Section With Headlines 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <section
@@ -230,11 +234,13 @@ Section Content
   </section>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Layouts/Section Testing Simple Section 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <section
     class="fd-section "
   >
@@ -387,305 +393,323 @@ exports[`Storyshots Layouts/Section Testing Simple Section 1`] = `
   </section>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Layouts/Section With Headers 1`] = `
-<section
-  class="fd-section"
+<div
+  dir="ltr"
 >
-  
-    
-  <div
-    class="fd-section__header"
+  <section
+    class="fd-section"
   >
     
-      
-    <h3
-      class="fd-section__title"
-    >
-      Section title
-    </h3>
     
-    
-  </div>
-  
-    
-  <div
-    class="fd-layout-panel"
-  >
-    
-        
     <div
-      class="fd-layout-panel__body"
+      class="fd-section__header"
     >
       
-            fd-layout-panel
-        
+      
+      <h3
+        class="fd-section__title"
+      >
+        Section title
+      </h3>
+      
+    
     </div>
     
     
-  </div>
+    <div
+      class="fd-layout-panel"
+    >
+      
+        
+      <div
+        class="fd-layout-panel__body"
+      >
+        
+            fd-layout-panel
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </section>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Layouts/Section With Layout Grid 1`] = `
-<section
-  class="fd-section"
+<div
+  dir="ltr"
 >
-  
-    
-  <div
-    class="fd-container"
+  <section
+    class="fd-section"
   >
     
-      
+    
     <div
-      class="fd-row"
+      class="fd-container"
     >
       
       
       <div
-        class="fd-col fd-col--4"
+        class="fd-row"
       >
         
-        
+      
         <div
-          class="fd-layout-panel"
+          class="fd-col fd-col--4"
         >
           
-            
+        
           <div
-            class="fd-layout-panel__body"
+            class="fd-layout-panel"
           >
             
+            
+            <div
+              class="fd-layout-panel__body"
+            >
+              
                 
-            <p>
-              .fd-layout-panel
-            </p>
+              <p>
+                .fd-layout-panel
+              </p>
+              
             
+            </div>
             
+        
           </div>
           
-        
+      
         </div>
         
       
-      </div>
-      
-      
-      <div
-        class="fd-col fd-col--4"
-      >
-        
+        <div
+          class="fd-col fd-col--4"
+        >
+          
 
         
-        <div
-          class="fd-layout-panel"
-        >
-          
-            
           <div
-            class="fd-layout-panel__body"
+            class="fd-layout-panel"
           >
             
+            
+            <div
+              class="fd-layout-panel__body"
+            >
+              
                 
-            <p>
-              .fd-layout-panel
-            </p>
+              <p>
+                .fd-layout-panel
+              </p>
+              
             
+            </div>
             
+        
           </div>
           
+      
+        </div>
         
+      
+        <div
+          class="fd-col fd-col--4"
+        >
+          
+        
+          <div
+            class="fd-layout-panel"
+          >
+            
+            
+            <div
+              class="fd-layout-panel__body"
+            >
+              
+                
+              <p>
+                .fd-layout-panel
+              </p>
+              
+            
+            </div>
+            
+        
+          </div>
+          
+      
+        </div>
+        
+      
+        <div
+          class="fd-col fd-col--4"
+        >
+          
+        
+          <div
+            class="fd-layout-panel"
+          >
+            
+            
+            <div
+              class="fd-layout-panel__body"
+            >
+              
+                
+              <p>
+                .fd-layout-panel
+              </p>
+              
+            
+            </div>
+            
+        
+          </div>
+          
+      
+        </div>
+        
+      
+        <div
+          class="fd-col fd-col--4"
+        >
+          
+        
+          <div
+            class="fd-layout-panel"
+          >
+            
+            
+            <div
+              class="fd-layout-panel__body"
+            >
+              
+                
+              <p>
+                .fd-layout-panel
+              </p>
+              
+            
+            </div>
+            
+        
+          </div>
+          
+      
         </div>
         
       
       </div>
       
-      
-      <div
-        class="fd-col fd-col--4"
-      >
-        
-        
-        <div
-          class="fd-layout-panel"
-        >
-          
-            
-          <div
-            class="fd-layout-panel__body"
-          >
-            
-                
-            <p>
-              .fd-layout-panel
-            </p>
-            
-            
-          </div>
-          
-        
-        </div>
-        
-      
-      </div>
-      
-      
-      <div
-        class="fd-col fd-col--4"
-      >
-        
-        
-        <div
-          class="fd-layout-panel"
-        >
-          
-            
-          <div
-            class="fd-layout-panel__body"
-          >
-            
-                
-            <p>
-              .fd-layout-panel
-            </p>
-            
-            
-          </div>
-          
-        
-        </div>
-        
-      
-      </div>
-      
-      
-      <div
-        class="fd-col fd-col--4"
-      >
-        
-        
-        <div
-          class="fd-layout-panel"
-        >
-          
-            
-          <div
-            class="fd-layout-panel__body"
-          >
-            
-                
-            <p>
-              .fd-layout-panel
-            </p>
-            
-            
-          </div>
-          
-        
-        </div>
-        
-      
-      </div>
-      
-      
+    
     </div>
     
-    
-  </div>
+
+  </section>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Layouts/Section With Panels 1`] = `
-<section
-  class="fd-section"
+<div
+  dir="ltr"
 >
-  
-    
-  <div
-    class="fd-layout-panel"
+  <section
+    class="fd-section"
   >
     
-        
+    
     <div
-      class="fd-layout-panel__header"
+      class="fd-layout-panel"
     >
       
-            
+        
       <div
-        class="fd-layout-panel__head"
+        class="fd-layout-panel__header"
       >
         
-                
-        <h3
-          class="fd-layout-panel__title"
+            
+        <div
+          class="fd-layout-panel__head"
         >
           
+                
+          <h3
+            class="fd-layout-panel__title"
+          >
+            
                     .fd-layout-panel__title
                 
-        </h3>
-        
-                
-        <p
-          class="fd-layout-panel__description"
-        >
+          </h3>
           
+                
+          <p
+            class="fd-layout-panel__description"
+          >
+            
                     .fd-layout-panel__description
                 
-        </p>
+          </p>
+          
+            
+        </div>
         
             
-      </div>
-      
-            
-      <div
-        class="fd-layout-panel__actions"
-      >
-        
+        <div
+          class="fd-layout-panel__actions"
+        >
+          
                 .fd-layout-panel__actions
             
+        </div>
+        
+        
       </div>
       
         
-    </div>
-    
+      <div
+        class="fd-layout-panel__filters"
+        id=""
+      >
         
-    <div
-      class="fd-layout-panel__filters"
-      id=""
-    >
-      
             .fd-layout-panel__filters
         
-    </div>
-    
-        
-    <div
-      class="fd-layout-panel__body"
-    >
+      </div>
       
+        
+      <div
+        class="fd-layout-panel__body"
+      >
+        
             .fd-layout-panel__body
         
-    </div>
-    
-        
-    <div
-      class="fd-layout-panel__footer"
-    >
+      </div>
       
+        
+      <div
+        class="fd-layout-panel__footer"
+      >
+        
             .fd-layout-panel__footer
         
+      </div>
+      
+    
     </div>
     
-    
-  </div>
+
+  </section>
   
 
-</section>
+</div>
 `;

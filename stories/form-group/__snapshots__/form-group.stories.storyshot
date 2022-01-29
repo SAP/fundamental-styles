@@ -2,665 +2,701 @@
 
 exports[`Storyshots Components/Forms/Form Group Compact 1`] = `
 <div
-  class="fd-form-group"
+  dir="ltr"
 >
-  
-        
   <div
-    class="fd-form-item"
+    class="fd-form-group"
   >
     
-            
-    <label
-      class="fd-form-label"
-      for="input-1b"
-    >
-      Compact Input:
-    </label>
-    
-            
-    <input
-      class="fd-input fd-input--compact"
-      id="input-1b"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
         
+    <div
+      class="fd-form-item"
+    >
+      
+            
+      <label
+        class="fd-form-label"
+        for="input-1b"
+      >
+        Compact Input:
+      </label>
+      
+            
+      <input
+        class="fd-input fd-input--compact"
+        id="input-1b"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+        
+    </div>
+    
+    
   </div>
   
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Group Default 1`] = `
 <div
-  class="fd-form-group"
+  dir="ltr"
 >
-  
-        
   <div
-    class="fd-form-item"
+    class="fd-form-group"
   >
     
-            
-    <label
-      class="fd-form-label"
-      for="input-1"
-    >
-      Default input:
-    </label>
-    
-            
-    <input
-      class="fd-input"
-      id="input-1"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
         
+    <div
+      class="fd-form-item"
+    >
+      
+            
+      <label
+        class="fd-form-label"
+        for="input-1"
+      >
+        Default input:
+      </label>
+      
+            
+      <input
+        class="fd-input"
+        id="input-1"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+        
+    </div>
+    
+    
   </div>
   
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Group Group header (compact) 1`] = `
 <div
-  aria-labelledby="compactGroupHeader"
-  class="fd-form-group"
-  role="group"
+  dir="ltr"
 >
-  
-        
   <div
-    class="fd-form-group__header fd-form-group__header--compact"
+    aria-labelledby="compactGroupHeader"
+    class="fd-form-group"
+    role="group"
   >
     
-            
-    <h1
-      class="fd-form-group__header-text"
-      id="compactGroupHeader"
+        
+    <div
+      class="fd-form-group__header fd-form-group__header--compact"
     >
-      Group Header
-    </h1>
+      
+            
+      <h1
+        class="fd-form-group__header-text"
+        id="compactGroupHeader"
+      >
+        Group Header
+      </h1>
+      
+        
+    </div>
     
         
+    <div
+      class="fd-form-item"
+    >
+      
+            
+      <label
+        class="fd-form-label fd-form-label--required"
+        for="input-1e"
+      >
+        Compact Group Header Input:
+      </label>
+      
+            
+      <input
+        class="fd-input"
+        id="input-1e"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+        
+    </div>
+    
+    
   </div>
   
-        
-  <div
-    class="fd-form-item"
-  >
-    
-            
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-1e"
-    >
-      Compact Group Header Input:
-    </label>
-    
-            
-    <input
-      class="fd-input"
-      id="input-1e"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-        
-  </div>
-  
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
 <div
-  class="fd-container fd-form-layout-grid-container"
+  dir="ltr"
 >
-  
-        
   <div
-    class="fd-row"
+    class="fd-container fd-form-layout-grid-container"
   >
     
-            
+        
     <div
-      aria-labelledby="grid1GroupHeader"
-      class="fd-form-group fd-col__form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
-      role="group"
+      class="fd-row"
     >
       
-                
+            
       <div
-        class="fd-form-group__header"
-        id="grid1GroupHeader"
+        aria-labelledby="grid1GroupHeader"
+        class="fd-form-group fd-col__form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+        role="group"
       >
         
-                    
-        <h1
-          class="fd-form-group__header-text"
-        >
-          Group Header 1
-        </h1>
-        
                 
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
         <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          class="fd-form-group__header"
+          id="grid1GroupHeader"
         >
           
-                        
-          <label
-            class="fd-form-label"
-            for="input-14-name"
+                    
+          <h1
+            class="fd-form-group__header-text"
           >
-            Name:
-          </label>
+            Group Header 1
+          </h1>
           
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-                        
-          <input
-            class="fd-input"
-            id="input-14-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-                    
+                
         </div>
         
                 
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
         <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          class="fd-form-item fd-row__form-item fd-row"
         >
           
-                        
-          <label
-            class="fd-form-label"
-            for="input-14x-name"
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
           >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
+            
                         
-          <input
-            class="fd-input"
-            id="input-14x-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
+            <label
+              class="fd-form-label"
+              for="input-14-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
           
                     
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-                        
-          <label
-            class="fd-form-label"
-            for="input-14y-name"
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
           >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
+            
                         
-          <input
-            class="fd-input"
-            id="input-14y-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
+            <input
+              class="fd-input"
+              id="input-14-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
                     
+          </div>
+          
+                
         </div>
         
                 
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14x-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14x-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14y-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14y-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
       </div>
       
             
+      <div
+        aria-labelledby="grid2GroupHeader"
+        class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+        role="group"
+      >
+        
+                
+        <div
+          class="fd-form-group__header"
+        >
+          
+                    
+          <h1
+            class="fd-form-group__header-text"
+            id="grid2GroupHeader"
+          >
+            Group Header 2
+          </h1>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14a-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14b-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14b-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14c-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14c-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        aria-labelledby="grid3GroupHeader"
+        class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+        role="group"
+      >
+        
+                
+        <div
+          class="fd-form-group__header"
+        >
+          
+                    
+          <h1
+            class="fd-form-group__header-text"
+            id="grid3GroupHeader"
+          >
+            Group Header 3
+          </h1>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14j-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14j-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14h-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14h-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+                
+        <div
+          class="fd-form-item fd-row__form-item fd-row"
+        >
+          
+                    
+          <div
+            class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
+          >
+            
+                        
+            <label
+              class="fd-form-label"
+              for="input-14k-name"
+            >
+              Name:
+            </label>
+            
+                    
+          </div>
+          
+                    
+          <div
+            class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
+          >
+            
+                        
+            <input
+              class="fd-input"
+              id="input-14k-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+                    
+          </div>
+          
+                
+        </div>
+        
+            
+      </div>
+      
+        
     </div>
     
-            
-    <div
-      aria-labelledby="grid2GroupHeader"
-      class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
-      role="group"
-    >
-      
-                
-      <div
-        class="fd-form-group__header"
-      >
-        
-                    
-        <h1
-          class="fd-form-group__header-text"
-          id="grid2GroupHeader"
-        >
-          Group Header 2
-        </h1>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-                        
-          <label
-            class="fd-form-label"
-            for="input-14a-name"
-          >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-                        
-          <input
-            class="fd-input"
-            id="input-14a-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-                        
-          <label
-            class="fd-form-label"
-            for="input-14b-name"
-          >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-                        
-          <input
-            class="fd-input"
-            id="input-14b-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-                        
-          <label
-            class="fd-form-label"
-            for="input-14c-name"
-          >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-                        
-          <input
-            class="fd-input"
-            id="input-14c-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-            
-    </div>
     
-            
-    <div
-      aria-labelledby="grid3GroupHeader"
-      class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
-      role="group"
-    >
-      
-                
-      <div
-        class="fd-form-group__header"
-      >
-        
-                    
-        <h1
-          class="fd-form-group__header-text"
-          id="grid3GroupHeader"
-        >
-          Group Header 3
-        </h1>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-                        
-          <label
-            class="fd-form-label"
-            for="input-14j-name"
-          >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-                        
-          <input
-            class="fd-input"
-            id="input-14j-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-                        
-          <label
-            class="fd-form-label"
-            for="input-14h-name"
-          >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-                        
-          <input
-            class="fd-input"
-            id="input-14h-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-                
-      <div
-        class="fd-form-item fd-row__form-item fd-row"
-      >
-        
-                    
-        <div
-          class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
-        >
-          
-                        
-          <label
-            class="fd-form-label"
-            for="input-14k-name"
-          >
-            Name:
-          </label>
-          
-                    
-        </div>
-        
-                    
-        <div
-          class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
-        >
-          
-                        
-          <input
-            class="fd-input"
-            id="input-14k-name"
-            placeholder="Enter First and Last Name"
-            type="text"
-            value="Amelia Perry"
-          />
-          
-                    
-        </div>
-        
-                
-      </div>
-      
-            
-    </div>
-    
-        
   </div>
   
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Group Group header 1`] = `
 <div
-  aria-labelledby="basicGroupHeader"
-  class="fd-form-group"
-  role="group"
+  dir="ltr"
 >
-  
-        
   <div
-    class="fd-form-group__header"
+    aria-labelledby="basicGroupHeader"
+    class="fd-form-group"
+    role="group"
   >
     
-            
-    <h1
-      class="fd-form-group__header-text"
-      id="basicGroupHeader"
+        
+    <div
+      class="fd-form-group__header"
     >
-      Group Header
-    </h1>
+      
+            
+      <h1
+        class="fd-form-group__header-text"
+        id="basicGroupHeader"
+      >
+        Group Header
+      </h1>
+      
+        
+    </div>
     
         
+    <div
+      class="fd-form-item"
+    >
+      
+            
+      <label
+        class="fd-form-label fd-form-label--required"
+        for="input-1d"
+      >
+        Group Header Input:
+      </label>
+      
+            
+      <input
+        class="fd-input"
+        id="input-1d"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+        
+    </div>
+    
+    
   </div>
   
-        
-  <div
-    class="fd-form-item"
-  >
-    
-            
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-1d"
-    >
-      Group Header Input:
-    </label>
-    
-            
-    <input
-      class="fd-input"
-      id="input-1d"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
-        
-  </div>
-  
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Group Required 1`] = `
 <div
-  class="fd-form-group"
+  dir="ltr"
 >
-  
-        
   <div
-    class="fd-form-item"
+    class="fd-form-group"
   >
     
-            
-    <label
-      class="fd-form-label fd-form-label--required"
-      for="input-1c"
-    >
-      Required Input:
-    </label>
-    
-            
-    <input
-      class="fd-input"
-      id="input-1c"
-      placeholder="Field placeholder text"
-      type="text"
-    />
-    
         
+    <div
+      class="fd-form-item"
+    >
+      
+            
+      <label
+        class="fd-form-label fd-form-label--required"
+        for="input-1c"
+      >
+        Required Input:
+      </label>
+      
+            
+      <input
+        class="fd-input"
+        id="input-1c"
+        placeholder="Field placeholder text"
+        type="text"
+      />
+      
+        
+    </div>
+    
+    
   </div>
   
-    
+
 </div>
 `;

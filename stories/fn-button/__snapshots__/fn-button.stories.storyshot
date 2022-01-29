@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -419,11 +421,13 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Layout Button 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -611,11 +615,13 @@ exports[`Storyshots Experimental/Button Layout Button 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -954,11 +960,13 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1160,11 +1168,13 @@ exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Primary Button 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1454,11 +1464,13 @@ exports[`Storyshots Experimental/Button Primary Button 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1748,11 +1760,13 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Segmented Button 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -2304,11 +2318,13 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -2930,11 +2946,13 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Split Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -3425,11 +3443,13 @@ exports[`Storyshots Experimental/Button Split Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -3719,5 +3739,5 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

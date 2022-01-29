@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Slider Range Slider 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -448,11 +450,13 @@ exports[`Storyshots Experimental/Slider Range Slider 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Slider Slider 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -780,5 +784,5 @@ exports[`Storyshots Experimental/Slider Slider 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

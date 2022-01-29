@@ -2,16 +2,22 @@
 
 exports[`Storyshots Components/Forms/Form Header Default 1`] = `
 <div
-  class="fd-form-header"
+  dir="ltr"
 >
-  
-        
-  <span
-    class="fd-form-header__text"
+  <div
+    class="fd-form-header"
   >
-    Form Header
-  </span>
-  
     
+        
+    <span
+      class="fd-form-header__text"
+    >
+      Form Header
+    </span>
+    
+    
+  </div>
+  
+
 </div>
 `;

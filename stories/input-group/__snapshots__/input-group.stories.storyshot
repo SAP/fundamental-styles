@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -94,11 +96,13 @@ exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -320,11 +324,13 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Input With Icons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -474,11 +480,13 @@ exports[`Storyshots Components/Forms/Input Group Input With Icons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Sizes 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -564,11 +572,13 @@ exports[`Storyshots Components/Forms/Input Group Sizes 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group States 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -995,11 +1005,13 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -1447,11 +1459,13 @@ exports[`Storyshots Components/Forms/Input Group Test Five 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -1951,11 +1965,13 @@ exports[`Storyshots Components/Forms/Input Group Test Four 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -2327,11 +2343,13 @@ exports[`Storyshots Components/Forms/Input Group Test One 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Test Six 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -2384,11 +2402,13 @@ exports[`Storyshots Components/Forms/Input Group Test Six 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -2836,11 +2856,13 @@ exports[`Storyshots Components/Forms/Input Group Test Three 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Test Two 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -2933,11 +2955,13 @@ exports[`Storyshots Components/Forms/Input Group Test Two 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input Group Text Add On 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -3116,5 +3140,5 @@ exports[`Storyshots Components/Forms/Input Group Text Add On 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

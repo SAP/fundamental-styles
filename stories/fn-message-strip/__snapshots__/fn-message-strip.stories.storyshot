@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Message Strip Message Strip 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -150,11 +152,13 @@ exports[`Storyshots Experimental/Message Strip Message Strip 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Message Strip Message Strip with No Icon 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -283,11 +287,13 @@ exports[`Storyshots Experimental/Message Strip Message Strip with No Icon 1`] = 
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Message Strip Non-Dismissible Message Strip 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -380,5 +386,5 @@ exports[`Storyshots Experimental/Message Strip Non-Dismissible Message Strip 1`]
   </div>
   
 
-</section>
+</div>
 `;

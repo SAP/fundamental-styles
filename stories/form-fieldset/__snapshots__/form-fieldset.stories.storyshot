@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
     
   <fieldset
@@ -376,109 +378,115 @@ exports[`Storyshots Components/Forms/Field Set Checkbox Groups 1`] = `
   </fieldset>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Field Set Radio Button Groups 1`] = `
-<fieldset
-  class="fd-fieldset"
-  id="radio1"
+<div
+  dir="ltr"
 >
-  
-        
-  <legend
-    class="fd-fieldset__legend"
-  >
-    Radio Buttons Cozy Mode
-  </legend>
-  
-        
-  <div
-    class="fd-form__group"
+  <fieldset
+    class="fd-fieldset"
+    id="radio1"
   >
     
-            
-    <div
-      class="fd-form-item"
-    >
-      
-                
-      <input
-        checked=""
-        class="fd-radio"
-        id="pDidh761"
-        name="radio1"
-        type="radio"
-      />
-      
-                
-      <label
-        class="fd-radio__label"
-        for="pDidh761"
-      >
         
-                    Field label
-                
-      </label>
-      
-            
-    </div>
-    
-            
-    <div
-      class="fd-form-item"
+    <legend
+      class="fd-fieldset__legend"
     >
-      
-                
-      <input
-        class="fd-radio"
-        id="pDidh7612"
-        name="radio1"
-        type="radio"
-      />
-      
-                
-      <label
-        class="fd-radio__label"
-        for="pDidh7612"
-      >
-        
-                    Field label
-                
-      </label>
-      
-            
-    </div>
-    
-            
-    <div
-      class="fd-form-item"
-    >
-      
-                
-      <input
-        class="fd-radio"
-        id="pDidh7613"
-        name="radio1"
-        type="radio"
-      />
-      
-                
-      <label
-        class="fd-radio__label"
-        for="pDidh7613"
-      >
-        
-                    Field label
-                
-      </label>
-      
-            
-    </div>
+      Radio Buttons Cozy Mode
+    </legend>
     
         
-  </div>
+    <div
+      class="fd-form__group"
+    >
+      
+            
+      <div
+        class="fd-form-item"
+      >
+        
+                
+        <input
+          checked=""
+          class="fd-radio"
+          id="pDidh761"
+          name="radio1"
+          type="radio"
+        />
+        
+                
+        <label
+          class="fd-radio__label"
+          for="pDidh761"
+        >
+          
+                    Field label
+                
+        </label>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-form-item"
+      >
+        
+                
+        <input
+          class="fd-radio"
+          id="pDidh7612"
+          name="radio1"
+          type="radio"
+        />
+        
+                
+        <label
+          class="fd-radio__label"
+          for="pDidh7612"
+        >
+          
+                    Field label
+                
+        </label>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fd-form-item"
+      >
+        
+                
+        <input
+          class="fd-radio"
+          id="pDidh7613"
+          name="radio1"
+          type="radio"
+        />
+        
+                
+        <label
+          class="fd-radio__label"
+          for="pDidh7613"
+        >
+          
+                    Field label
+                
+        </label>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </fieldset>
   
-    
-</fieldset>
+
+</div>
 `;

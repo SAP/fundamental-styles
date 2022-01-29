@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Action Bar Contextual 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <div
     class="fd-action-bar"
   >
@@ -227,90 +229,96 @@ exports[`Storyshots Components/Action Bar Contextual 1`] = `
   />
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Action Bar Default 1`] = `
 <div
-  class="fd-action-bar"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-action-bar__header"
+    class="fd-action-bar"
   >
     
-        
+    
     <div
-      class="fd-action-bar__back"
+      class="fd-action-bar__header"
     >
       
-            
-      <button
-        aria-label="Go Back"
-        class="fd-button fd-button--transparent fd-button--compact"
+        
+      <div
+        class="fd-action-bar__back"
       >
         
+            
+        <button
+          aria-label="Go Back"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
                 
-        <i
-          class="sap-icon--navigation-left-arrow"
-          role="presentation"
-        />
-        
+          <i
+            class="sap-icon--navigation-left-arrow"
+            role="presentation"
+          />
+          
             
-      </button>
+        </button>
+        
+        
+      </div>
       
         
+      <div
+        class="fd-action-bar__title"
+      >
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-action-bar__actions"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          Button
+        </button>
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--emphasized"
+        >
+          Button
+        </button>
+        
+        
+      </div>
+      
+    
     </div>
     
-        
-    <div
-      class="fd-action-bar__title"
+    
+    <p
+      class="fd-action-bar__description fd-action-bar__description--back"
     >
-      
-            
-      <h1
-        class="fd-title fd-title--h3"
-      >
-        Page Title
-      </h1>
-      
-        
-    </div>
+      Action bar Description 
+    </p>
     
-        
-    <div
-      class="fd-action-bar__actions"
-    >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact"
-      >
-        Button
-      </button>
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact fd-button--emphasized"
-      >
-        Button
-      </button>
-      
-        
-    </div>
-    
-    
+
   </div>
-  
-    
-  <p
-    class="fd-action-bar__description fd-action-bar__description--back"
-  >
-    Action bar Description 
-  </p>
   
 
 </div>
@@ -318,101 +326,109 @@ exports[`Storyshots Components/Action Bar Default 1`] = `
 
 exports[`Storyshots Components/Action Bar Descriptive 1`] = `
 <div
-  class="fd-action-bar"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-action-bar__header"
+    class="fd-action-bar"
   >
     
-        
+    
     <div
-      class="fd-action-bar__back"
+      class="fd-action-bar__header"
     >
       
-            
-      <button
-        aria-label="Go Back"
-        class="fd-button fd-button--transparent fd-button--compact"
+        
+      <div
+        class="fd-action-bar__back"
       >
         
+            
+        <button
+          aria-label="Go Back"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
                 
-        <i
-          class="sap-icon--navigation-left-arrow"
-          role="presentation"
-        />
-        
+          <i
+            class="sap-icon--navigation-left-arrow"
+            role="presentation"
+          />
+          
             
-      </button>
+        </button>
+        
+        
+      </div>
       
         
+      <div
+        class="fd-action-bar__title"
+      >
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
+        </h1>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-action-bar__actions"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          Button
+        </button>
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          Button
+        </button>
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--emphasized"
+        >
+          Button
+        </button>
+        
+        
+      </div>
+      
+    
     </div>
     
-        
-    <div
-      class="fd-action-bar__title"
+    
+    <p
+      class="fd-action-bar__description fd-action-bar__description--back"
     >
-      
-            
-      <h1
-        class="fd-title fd-title--h3"
-      >
-        Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.
-      </h1>
-      
-        
-    </div>
+      Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
     
-        
-    <div
-      class="fd-action-bar__actions"
-    >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact"
-      >
-        Button
-      </button>
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact"
-      >
-        Button
-      </button>
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact fd-button--emphasized"
-      >
-        Button
-      </button>
-      
-        
-    </div>
+    </p>
     
-    
+
   </div>
-  
-    
-  <p
-    class="fd-action-bar__description fd-action-bar__description--back"
-  >
-    Action bar Description Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long
-    
-  </p>
   
 
 </div>
 `;
 
 exports[`Storyshots Components/Action Bar Mobile 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <div
     style="width:319px;"
   >
@@ -645,67 +661,73 @@ exports[`Storyshots Components/Action Bar Mobile 1`] = `
   />
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Action Bar No back button 1`] = `
 <div
-  class="fd-action-bar"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-action-bar__header"
+    class="fd-action-bar"
   >
     
-        
+    
     <div
-      class="fd-action-bar__title"
+      class="fd-action-bar__header"
     >
       
-            
-      <h1
-        class="fd-title fd-title--h3"
+        
+      <div
+        class="fd-action-bar__title"
       >
-        Page Title
-      </h1>
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
       
         
+      <div
+        class="fd-action-bar__actions"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          Button
+        </button>
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--emphasized"
+        >
+          Button
+        </button>
+        
+        
+      </div>
+      
+    
     </div>
     
-        
-    <div
-      class="fd-action-bar__actions"
+    
+    <p
+      class="fd-action-bar__description"
     >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact"
-      >
-        Button
-      </button>
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact fd-button--emphasized"
-      >
-        Button
-      </button>
-      
-        
-    </div>
+      Action bar Description 
+    </p>
     
-    
+
   </div>
-  
-    
-  <p
-    class="fd-action-bar__description"
-  >
-    Action bar Description 
-  </p>
   
 
 </div>
@@ -713,77 +735,83 @@ exports[`Storyshots Components/Action Bar No back button 1`] = `
 
 exports[`Storyshots Components/Action Bar No description 1`] = `
 <div
-  class="fd-action-bar"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-action-bar__header"
+    class="fd-action-bar"
   >
     
-        
+    
     <div
-      class="fd-action-bar__back"
+      class="fd-action-bar__header"
     >
       
-            
-      <button
-        aria-label="Go Back"
-        class="fd-button fd-button--transparent fd-button--compact"
+        
+      <div
+        class="fd-action-bar__back"
       >
         
+            
+        <button
+          aria-label="Go Back"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
                 
-        <i
-          class="sap-icon--navigation-left-arrow"
-          role="presentation"
-        />
-        
+          <i
+            class="sap-icon--navigation-left-arrow"
+            role="presentation"
+          />
+          
             
-      </button>
+        </button>
+        
+        
+      </div>
       
         
+      <div
+        class="fd-action-bar__title"
+      >
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-action-bar__actions"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          Button
+        </button>
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--emphasized"
+        >
+          Button
+        </button>
+        
+        
+      </div>
+      
+    
     </div>
     
-        
-    <div
-      class="fd-action-bar__title"
-    >
-      
-            
-      <h1
-        class="fd-title fd-title--h3"
-      >
-        Page Title
-      </h1>
-      
-        
-    </div>
-    
-        
-    <div
-      class="fd-action-bar__actions"
-    >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact"
-      >
-        Button
-      </button>
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact fd-button--emphasized"
-      >
-        Button
-      </button>
-      
-        
-    </div>
-    
-    
+
   </div>
   
 
@@ -792,85 +820,91 @@ exports[`Storyshots Components/Action Bar No description 1`] = `
 
 exports[`Storyshots Components/Action Bar Responsive (M-L) 1`] = `
 <div
-  class="fd-action-bar fd-action-bar--m_l"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-action-bar__header"
+    class="fd-action-bar fd-action-bar--m_l"
   >
     
-        
+    
     <div
-      class="fd-action-bar__back"
+      class="fd-action-bar__header"
     >
       
-            
-      <button
-        aria-label="Go Back"
-        class="fd-button fd-button--transparent fd-button--compact"
+        
+      <div
+        class="fd-action-bar__back"
       >
         
+            
+        <button
+          aria-label="Go Back"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
                 
-        <i
-          class="sap-icon--navigation-left-arrow"
-          role="presentation"
-        />
-        
+          <i
+            class="sap-icon--navigation-left-arrow"
+            role="presentation"
+          />
+          
             
-      </button>
+        </button>
+        
+        
+      </div>
       
         
+      <div
+        class="fd-action-bar__title"
+      >
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-action-bar__actions"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          Button
+        </button>
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--emphasized"
+        >
+          Button
+        </button>
+        
+        
+      </div>
+      
+    
     </div>
     
-        
-    <div
-      class="fd-action-bar__title"
+    
+    <p
+      class="fd-action-bar__description fd-action-bar__description--back"
     >
-      
-            
-      <h1
-        class="fd-title fd-title--h3"
-      >
-        Page Title
-      </h1>
-      
-        
-    </div>
+      Action bar Description
+    </p>
     
-        
-    <div
-      class="fd-action-bar__actions"
-    >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact"
-      >
-        Button
-      </button>
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact fd-button--emphasized"
-      >
-        Button
-      </button>
-      
-        
-    </div>
-    
-    
+
   </div>
-  
-    
-  <p
-    class="fd-action-bar__description fd-action-bar__description--back"
-  >
-    Action bar Description
-  </p>
   
 
 </div>
@@ -878,85 +912,91 @@ exports[`Storyshots Components/Action Bar Responsive (M-L) 1`] = `
 
 exports[`Storyshots Components/Action Bar Responsive (XL) 1`] = `
 <div
-  class=" fd-action-bar fd-action-bar--xl"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-action-bar__header"
+    class=" fd-action-bar fd-action-bar--xl"
   >
     
-        
+    
     <div
-      class="fd-action-bar__back"
+      class="fd-action-bar__header"
     >
       
-            
-      <button
-        aria-label="Go Back"
-        class="fd-button fd-button--transparent fd-button--compact"
+        
+      <div
+        class="fd-action-bar__back"
       >
         
+            
+        <button
+          aria-label="Go Back"
+          class="fd-button fd-button--transparent fd-button--compact"
+        >
+          
                 
-        <i
-          class="sap-icon--navigation-left-arrow"
-          role="presentation"
-        />
-        
+          <i
+            class="sap-icon--navigation-left-arrow"
+            role="presentation"
+          />
+          
             
-      </button>
+        </button>
+        
+        
+      </div>
       
         
+      <div
+        class="fd-action-bar__title"
+      >
+        
+            
+        <h1
+          class="fd-title fd-title--h3"
+        >
+          Page Title
+        </h1>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fd-action-bar__actions"
+      >
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact"
+        >
+          Button
+        </button>
+        
+            
+        <button
+          aria-label="button"
+          class="fd-button fd-button--compact fd-button--emphasized"
+        >
+          Button
+        </button>
+        
+        
+      </div>
+      
+    
     </div>
     
-        
-    <div
-      class="fd-action-bar__title"
+    
+    <p
+      class="fd-action-bar__description fd-action-bar__description--back"
     >
-      
-            
-      <h1
-        class="fd-title fd-title--h3"
-      >
-        Page Title
-      </h1>
-      
-        
-    </div>
+      Action bar Description 
+    </p>
     
-        
-    <div
-      class="fd-action-bar__actions"
-    >
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact"
-      >
-        Button
-      </button>
-      
-            
-      <button
-        aria-label="button"
-        class="fd-button fd-button--compact fd-button--emphasized"
-      >
-        Button
-      </button>
-      
-        
-    </div>
-    
-    
+
   </div>
-  
-    
-  <p
-    class="fd-action-bar__description fd-action-bar__description--back"
-  >
-    Action bar Description 
-  </p>
   
 
 </div>

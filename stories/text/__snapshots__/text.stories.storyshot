@@ -1,20 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Text Default 1`] = `
-<p
-  class="fd-text"
+<div
+  dir="ltr"
 >
-  
+  <p
+    class="fd-text"
+  >
+    
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
     deserunt mollit anim id est laborum.
-</p>
+  </p>
+  
+
+</div>
 `;
 
 exports[`Storyshots Components/Text Expand 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
     
   <h3>
@@ -70,69 +78,77 @@ exports[`Storyshots Components/Text Expand 1`] = `
   </a>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Text Hyphenation 1`] = `
 <div
-  class="example-container"
+  dir="ltr"
 >
-  
-        
   <div
-    class="fddocs-text"
+    class="example-container"
   >
     
-            
-    <h3>
-      Without hyphenation
-    </h3>
-    
-            
-    <p
-      class="fd-text"
+        
+    <div
+      class="fddocs-text"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      
+            
+      <h3>
+        Without hyphenation
+      </h3>
+      
+            
+      <p
+        class="fd-text"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
             deserunt mollit anim id est laborum.
-    </p>
-    
+      </p>
+      
         
-  </div>
-  
+    </div>
+    
 
         
-  <div
-    class="fddocs-text"
-  >
-    
-            
-    <h3>
-      Hyphenation
-    </h3>
-    
-            
-    <p
-      class="fd-text fd-text--hyphenation"
+    <div
+      class="fddocs-text"
     >
-      Lorem ipsum dolor sit amet, con­sectetur adip­iscing el­it, sed do eiusmod tempor
+      
+            
+      <h3>
+        Hyphenation
+      </h3>
+      
+            
+      <p
+        class="fd-text fd-text--hyphenation"
+      >
+        Lorem ipsum dolor sit amet, con­sectetur adip­iscing el­it, sed do eiusmod tempor
             incididunt ut labore et do­lore magna aliqua. Ut enim ad mi­nim veniam, quis nostrud exer­citation ullamco laboris nisi ut
             aliquip ex ea commodo conse­quat. Duis aute irure dolor in repre­henderit in vo­luptate velit esse cillum dolore
             eu fu­giat nulla pari­atur. Excepteur sint occaecat cupidatat non pro­ident, sunt in culpa qui officia
             deserunt mollit anim id est la­bo­rum.
-    </p>
-    
+      </p>
+      
         
+    </div>
+    
+    
   </div>
   
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Text Max lines 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
     
   <h3>
@@ -219,11 +235,13 @@ exports[`Storyshots Components/Text Max lines 1`] = `
   </p>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Text Whitespace 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
     
   <h3>
@@ -263,5 +281,5 @@ deserunt mollit anim id est laborum.
   </p>
   
 
-</section>
+</div>
 `;

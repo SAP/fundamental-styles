@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Dialog Dialog 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -134,5 +136,5 @@ exports[`Storyshots Experimental/Dialog Dialog 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

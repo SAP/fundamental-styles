@@ -2,108 +2,114 @@
 
 exports[`Storyshots Components/Object Number Bold 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
-  <span
-    class="fd-object-number fd-object-number--negative"
+  <div
+    class="fddocs-container"
   >
     
+    
+    <span
+      class="fd-object-number fd-object-number--negative"
+    >
+      
         
-    <span
-      class="fd-object-number__text fd-object-number__text--bold"
-    >
-      -2,000.00
+      <span
+        class="fd-object-number__text fd-object-number__text--bold"
+      >
+        -2,000.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--critical"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--critical"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text fd-object-number__text--bold"
-    >
-      0.00
+      <span
+        class="fd-object-number__text fd-object-number__text--bold"
+      >
+        0.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--positive"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--positive"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text fd-object-number__text--bold"
-    >
-      1,000.00
+      <span
+        class="fd-object-number__text fd-object-number__text--bold"
+      >
+        1,000.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--informative"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--informative"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text fd-object-number__text--bold"
-    >
-      100.00
+      <span
+        class="fd-object-number__text fd-object-number__text--bold"
+      >
+        100.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text fd-object-number__text--bold"
-    >
-      999.00
-    </span>
-    <span
-      class="fd-object-number__unit"
-    >
-      EUR
+      <span
+        class="fd-object-number__text fd-object-number__text--bold"
+      >
+        999.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
     
-    
-  </span>
+
+  </div>
   
 
 </div>
@@ -111,108 +117,114 @@ exports[`Storyshots Components/Object Number Bold 1`] = `
 
 exports[`Storyshots Components/Object Number Large 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
-  <span
-    class="fd-object-number fd-object-number--large fd-object-number--negative"
+  <div
+    class="fddocs-container"
   >
     
+    
+    <span
+      class="fd-object-number fd-object-number--large fd-object-number--negative"
+    >
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      -2,000.00
+      <span
+        class="fd-object-number__text"
+      >
+        -2,000.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--large fd-object-number--critical"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--large fd-object-number--critical"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      0.00
+      <span
+        class="fd-object-number__text"
+      >
+        0.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--large fd-object-number--positive"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--large fd-object-number--positive"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      1,000.00
+      <span
+        class="fd-object-number__text"
+      >
+        1,000.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--large fd-object-number--informative"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--large fd-object-number--informative"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      100.00
+      <span
+        class="fd-object-number__text"
+      >
+        100.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--large"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--large"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      999.00
-    </span>
-    <span
-      class="fd-object-number__unit"
-    >
-      EUR
+      <span
+        class="fd-object-number__text"
+      >
+        999.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
     
-    
-  </span>
+
+  </div>
   
 
 </div>
@@ -220,108 +232,114 @@ exports[`Storyshots Components/Object Number Large 1`] = `
 
 exports[`Storyshots Components/Object Number Primary 1`] = `
 <div
-  class="fddocs-container"
+  dir="ltr"
 >
-  
-    
-  <span
-    class="fd-object-number fd-object-number--negative"
+  <div
+    class="fddocs-container"
   >
     
+    
+    <span
+      class="fd-object-number fd-object-number--negative"
+    >
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      -2,000.00
+      <span
+        class="fd-object-number__text"
+      >
+        -2,000.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--critical"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--critical"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      0.00
+      <span
+        class="fd-object-number__text"
+      >
+        0.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--positive"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--positive"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      1,000.00
+      <span
+        class="fd-object-number__text"
+      >
+        1,000.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number fd-object-number--informative"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number fd-object-number--informative"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      100.00
+      <span
+        class="fd-object-number__text"
+      >
+        100.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
+    
+    
     <span
-      class="fd-object-number__unit"
+      class="fd-object-number"
     >
-      EUR
-    </span>
-    
-    
-  </span>
-  
-    
-  <span
-    class="fd-object-number"
-  >
-    
+      
         
-    <span
-      class="fd-object-number__text"
-    >
-      999.00
-    </span>
-    <span
-      class="fd-object-number__unit"
-    >
-      EUR
+      <span
+        class="fd-object-number__text"
+      >
+        999.00
+      </span>
+      <span
+        class="fd-object-number__unit"
+      >
+        EUR
+      </span>
+      
+    
     </span>
     
-    
-  </span>
+
+  </div>
   
 
 </div>

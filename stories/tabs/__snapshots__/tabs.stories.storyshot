@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Tabs Counters 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -170,11 +172,13 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Default 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -322,11 +326,13 @@ exports[`Storyshots Components/Tabs Default 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -588,11 +594,13 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Filter mode 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -854,11 +862,13 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -1042,11 +1052,13 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Icon 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -1230,11 +1242,13 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Navigable 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <nav
@@ -1378,11 +1392,13 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -1620,11 +1636,13 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Process mode 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -1862,11 +1880,13 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -2187,11 +2207,13 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Semantic inline 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -2454,11 +2476,13 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Tabs Semantic mode 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <ul
@@ -2746,5 +2770,5 @@ exports[`Storyshots Components/Tabs Semantic mode 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

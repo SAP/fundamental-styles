@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <label
@@ -271,11 +273,13 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
   </nav>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Menu List different states 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <div
     style="width: 50%; display: inline-block"
   >
@@ -640,378 +644,392 @@ exports[`Storyshots Components/Menu List different states 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Menu List with Icon 1`] = `
-<nav
-  class="fd-menu"
+<div
+  dir="ltr"
 >
-  
-    
-  <ul
-    class="fd-menu__list"
-    role="menu"
+  <nav
+    class="fd-menu"
   >
     
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
+    
+    <ul
+      class="fd-menu__list"
+      role="menu"
     >
       
-                
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                    
-        <span
-          class="fd-menu__addon-before"
-        >
-          <i
-            class="sap-icon--grid"
-            role="presentation"
-          />
-        </span>
-        
-                    
-        <span
-          class="fd-menu__title"
-        >
-          Option 1
-        </span>
-        
-                    
-        <span
-          class="fd-menu__addon-after"
-        >
-          <i
-            class="sap-icon--wrench"
-            role="presentation"
-          />
-        </span>
-        
                 
-      </a>
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                    
+          <span
+            class="fd-menu__addon-before"
+          >
+            <i
+              class="sap-icon--grid"
+              role="presentation"
+            />
+          </span>
+          
+                    
+          <span
+            class="fd-menu__title"
+          >
+            Option 1
+          </span>
+          
+                    
+          <span
+            class="fd-menu__addon-after"
+          >
+            <i
+              class="sap-icon--wrench"
+              role="presentation"
+            />
+          </span>
+          
+                
+        </a>
+        
+        
+      </li>
       
         
-    </li>
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-                
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                    
-        <span
-          class="fd-menu__addon-before"
-        >
-          <i
-            class="sap-icon--accept"
-            role="presentation"
-          />
-        </span>
-        
-                    
-        <span
-          class="fd-menu__title"
-        >
-          Option 2
-        </span>
-        
-                    
-        <span
-          class="fd-menu__addon-after"
-        >
-          <i
-            class="sap-icon--history"
-            role="presentation"
-          />
-        </span>
-        
                 
-      </a>
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                    
+          <span
+            class="fd-menu__addon-before"
+          >
+            <i
+              class="sap-icon--accept"
+              role="presentation"
+            />
+          </span>
+          
+                    
+          <span
+            class="fd-menu__title"
+          >
+            Option 2
+          </span>
+          
+                    
+          <span
+            class="fd-menu__addon-after"
+          >
+            <i
+              class="sap-icon--history"
+              role="presentation"
+            />
+          </span>
+          
+                
+        </a>
+        
+        
+      </li>
       
         
-    </li>
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-                
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                    
-        <span
-          class="fd-menu__addon-before"
-        >
-          <i
-            class="sap-icon--wrench"
-            role="presentation"
-          />
-        </span>
-        
-                    
-        <span
-          class="fd-menu__title"
-        >
-          Option 3
-        </span>
-        
-                    
-        <span
-          class="fd-menu__addon-after"
-        >
-          <i
-            class="sap-icon--lightbulb"
-            role="presentation"
-          />
-        </span>
-        
                 
-      </a>
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                    
+          <span
+            class="fd-menu__addon-before"
+          >
+            <i
+              class="sap-icon--wrench"
+              role="presentation"
+            />
+          </span>
+          
+                    
+          <span
+            class="fd-menu__title"
+          >
+            Option 3
+          </span>
+          
+                    
+          <span
+            class="fd-menu__addon-after"
+          >
+            <i
+              class="sap-icon--lightbulb"
+              role="presentation"
+            />
+          </span>
+          
+                
+        </a>
+        
+        
+      </li>
       
         
-    </li>
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-                
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                    
-        <span
-          class="fd-menu__addon-before"
-        >
-          <i
-            class="sap-icon--cart"
-            role="presentation"
-          />
-        </span>
-        
-                    
-        <span
-          class="fd-menu__title"
-        >
-          Option 4
-        </span>
-        
-                    
-        <span
-          class="fd-menu__shortcut"
-        >
-          Ctrl + A
-        </span>
-        
-                    
-        <span
-          class="fd-menu__addon-after"
-        >
-          <i
-            class="sap-icon--history"
-            role="presentation"
-          />
-        </span>
-        
                 
-      </a>
-      
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                    
+          <span
+            class="fd-menu__addon-before"
+          >
+            <i
+              class="sap-icon--cart"
+              role="presentation"
+            />
+          </span>
+          
+                    
+          <span
+            class="fd-menu__title"
+          >
+            Option 4
+          </span>
+          
+                    
+          <span
+            class="fd-menu__shortcut"
+          >
+            Ctrl + A
+          </span>
+          
+                    
+          <span
+            class="fd-menu__addon-after"
+          >
+            <i
+              class="sap-icon--history"
+              role="presentation"
+            />
+          </span>
+          
+                
+        </a>
         
-    </li>
+        
+      </li>
+      
     
+    </ul>
     
-  </ul>
+
+  </nav>
   
 
-</nav>
+</div>
 `;
 
 exports[`Storyshots Components/Menu List with separated items 1`] = `
-<nav
-  class="fd-menu"
+<div
+  dir="ltr"
 >
-  
-    
-  <ul
-    class="fd-menu__list"
-    role="menu"
+  <nav
+    class="fd-menu"
   >
     
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
+    
+    <ul
+      class="fd-menu__list"
+      role="menu"
     >
       
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
-          Option 1
-        </span>
-        
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 1
+          </span>
+          
             
-      </a>
+        </a>
+        
+        
+      </li>
       
         
-    </li>
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
-          Option 2
-        </span>
-        
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 2
+          </span>
+          
             
-      </a>
+        </a>
+        
+        
+      </li>
       
         
-    </li>
-    
-        
-    <span
-      class="fd-menu__separator"
-    />
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
+      <span
+        class="fd-menu__separator"
+      />
       
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
-          Option 3
-        </span>
-        
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 3
+          </span>
+          
             
-      </a>
+        </a>
+        
+        
+      </li>
       
         
-    </li>
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
-      
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
+            
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
         >
-          Option 4
-        </span>
-        
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 4
+          </span>
+          
             
-      </a>
+        </a>
+        
+        
+      </li>
       
         
-    </li>
-    
-        
-    <span
-      class="fd-menu__separator"
-    />
-    
-        
-    <li
-      class="fd-menu__item"
-      role="presentation"
-    >
+      <span
+        class="fd-menu__separator"
+      />
       
-            
-      <a
-        class="fd-menu__link"
-        href="#"
-        role="menuitem"
+        
+      <li
+        class="fd-menu__item"
+        role="presentation"
       >
         
-                
-        <span
-          class="fd-menu__title"
-        >
-          Option 5
-        </span>
-        
             
-      </a>
-      
+        <a
+          class="fd-menu__link"
+          href="#"
+          role="menuitem"
+        >
+          
+                
+          <span
+            class="fd-menu__title"
+          >
+            Option 5
+          </span>
+          
+            
+        </a>
         
-    </li>
+        
+      </li>
+      
     
+    </ul>
     
-  </ul>
+
+  </nav>
   
 
-</nav>
+</div>
 `;
 
 exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <div
     class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
     id="select-dialog-example"
@@ -1550,11 +1568,13 @@ exports[`Storyshots Components/Menu Mobile Cozy Mode 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Menu With Submenu 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <nav
     class="fd-menu"
   >
@@ -1812,5 +1832,5 @@ exports[`Storyshots Components/Menu With Submenu 1`] = `
   />
   
 
-</section>
+</div>
 `;

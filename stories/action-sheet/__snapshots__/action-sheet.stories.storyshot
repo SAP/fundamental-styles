@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Action Sheet Desktop 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -204,222 +206,228 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
   />
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Action Sheet Mobile 1`] = `
 <div
-  style="width: 350px; height: 600px; position: relative"
+  dir="ltr"
 >
-  
-    
-  <button
-    aria-controls="actionSheetPhone"
-    aria-expanded="true"
-    aria-haspopup="true"
-    aria-label="More Options"
-    class="fd-button fd-button--transparent"
-    onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');"
-  >
-    
-        
-    <i
-      class="sap-icon--settings"
-    />
-    
-    
-  </button>
-  
-    
   <div
-    class="fd-action-sheet__wrapper fd-action-sheet__wrapper--active"
-    id="actionSheetPhone"
+    style="width: 350px; height: 600px; position: relative"
   >
     
-        
-    <h6
-      class="fd-action-sheet__title"
-    >
-      Press cancel to hide action sheet
-    </h6>
     
-        
-    <ul
-      aria-label="List of contextual options"
-      class="fd-action-sheet fd-action-sheet--mobile"
-      role="list"
+    <button
+      aria-controls="actionSheetPhone"
+      aria-expanded="true"
+      aria-haspopup="true"
+      aria-label="More Options"
+      class="fd-button fd-button--transparent"
+      onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');"
     >
       
-            
-      <li
-        class="fd-action-sheet__item"
-        role="listitem"
-      >
         
-                
-        <button
-          class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
-        >
-          
-                    
-          <i
-            class="sap-icon--attachment"
-          />
-          
-                    
-          <span
-            class="fd-button__text"
-          >
-            Upload file
-          </span>
-          
-                
-        </button>
-        
-            
-      </li>
+      <i
+        class="sap-icon--settings"
+      />
       
-            
-      <li
-        class="fd-action-sheet__item"
-        role="listitem"
-      >
-        
-                
-        <button
-          class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
-        >
-          
-                    
-          <i
-            class="sap-icon--add"
-          />
-          
-                    
-          <span
-            class="fd-button__text"
-          >
-            Assign user
-          </span>
-          
-                
-        </button>
-        
-            
-      </li>
-      
-            
-      <li
-        class="fd-action-sheet__item"
-        role="listitem"
-      >
-        
-                
-        <button
-          class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
-        >
-          
-                    
-          <i
-            class="sap-icon--print"
-          />
-          
-                    
-          <span
-            class="fd-button__text"
-          >
-            Print
-          </span>
-          
-                
-        </button>
-        
-            
-      </li>
-      
-            
-      <li
-        class="fd-action-sheet__item"
-        role="listitem"
-      >
-        
-                
-        <button
-          class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
-        >
-          
-                    
-          <i
-            class="sap-icon--download"
-          />
-          
-                    
-          <span
-            class="fd-button__text"
-          >
-            Download
-          </span>
-          
-                
-        </button>
-        
-            
-      </li>
-      
-            
-      <li
-        class="fd-action-sheet__item"
-        role="listitem"
-      >
-        
-                
-        <button
-          class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
-          onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');"
-        >
-          
-                    
-          <span
-            class="fd-button__text"
-          >
-            Decide Later
-          </span>
-          
-                
-        </button>
-        
-            
-      </li>
-      
-            
-      <li
-        class="fd-action-sheet__item"
-        role="listitem"
-      >
-        
-                
-        <button
-          class="fd-button fd-button--full-width fd-button--negative"
-          onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');"
-        >
-          
-                    
-          <span
-            class="fd-button__text"
-          >
-            Cancel
-          </span>
-          
-                
-        </button>
-        
-            
-      </li>
-      
-        
-    </ul>
+    
+    </button>
     
     
+    <div
+      class="fd-action-sheet__wrapper fd-action-sheet__wrapper--active"
+      id="actionSheetPhone"
+    >
+      
+        
+      <h6
+        class="fd-action-sheet__title"
+      >
+        Press cancel to hide action sheet
+      </h6>
+      
+        
+      <ul
+        aria-label="List of contextual options"
+        class="fd-action-sheet fd-action-sheet--mobile"
+        role="list"
+      >
+        
+            
+        <li
+          class="fd-action-sheet__item"
+          role="listitem"
+        >
+          
+                
+          <button
+            class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
+          >
+            
+                    
+            <i
+              class="sap-icon--attachment"
+            />
+            
+                    
+            <span
+              class="fd-button__text"
+            >
+              Upload file
+            </span>
+            
+                
+          </button>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-action-sheet__item"
+          role="listitem"
+        >
+          
+                
+          <button
+            class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
+          >
+            
+                    
+            <i
+              class="sap-icon--add"
+            />
+            
+                    
+            <span
+              class="fd-button__text"
+            >
+              Assign user
+            </span>
+            
+                
+          </button>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-action-sheet__item"
+          role="listitem"
+        >
+          
+                
+          <button
+            class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
+          >
+            
+                    
+            <i
+              class="sap-icon--print"
+            />
+            
+                    
+            <span
+              class="fd-button__text"
+            >
+              Print
+            </span>
+            
+                
+          </button>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-action-sheet__item"
+          role="listitem"
+        >
+          
+                
+          <button
+            class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
+          >
+            
+                    
+            <i
+              class="sap-icon--download"
+            />
+            
+                    
+            <span
+              class="fd-button__text"
+            >
+              Download
+            </span>
+            
+                
+          </button>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-action-sheet__item"
+          role="listitem"
+        >
+          
+                
+          <button
+            class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
+            onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');"
+          >
+            
+                    
+            <span
+              class="fd-button__text"
+            >
+              Decide Later
+            </span>
+            
+                
+          </button>
+          
+            
+        </li>
+        
+            
+        <li
+          class="fd-action-sheet__item"
+          role="listitem"
+        >
+          
+                
+          <button
+            class="fd-button fd-button--full-width fd-button--negative"
+            onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');"
+          >
+            
+                    
+            <span
+              class="fd-button__text"
+            >
+              Cancel
+            </span>
+            
+                
+          </button>
+          
+            
+        </li>
+        
+        
+      </ul>
+      
+    
+    </div>
+    
+
   </div>
   
 
@@ -427,7 +435,9 @@ exports[`Storyshots Components/Action Sheet Mobile 1`] = `
 `;
 
 exports[`Storyshots Components/Action Sheet Tablet 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -630,5 +640,5 @@ exports[`Storyshots Components/Action Sheet Tablet 1`] = `
   />
   
 
-</section>
+</div>
 `;
