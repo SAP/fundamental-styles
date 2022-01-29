@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.110 (2022-01-29)
+
+
+### Bug Fixes
+
+* **styles:** focus outline is visible now [ci visual] ([#3123](https://github.com/SAP/fundamental-styles/issues/3123)) ([38399c7](https://github.com/SAP/fundamental-styles/commit/38399c73d4ca60b9a508ba4c86223d7569a83c60))
+
 ## 0.21.0-rc.109 (2022-01-29)
 
 ## 0.21.0-rc.108 (2022-01-28)
