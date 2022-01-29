@@ -6,7 +6,7 @@ import GithubSvg from './GithubSvg';
 import { IfBlock } from './IfBlock';
 import { ThemeSelect } from './ThemeSelect';
 
-const Header = ({ showSelectors, theme, directionality, onThemeChange, onDirectionalityChange }) => {
+const Header = ({ showSelectors, theme, directionality, onThemeChange, onDirectionalityChange, fioriVersion, setFioriVersion }) => {
     const selectedTheme = theme || 'sap_fiori_3';
     const selectedDirectionality = directionality || 'ltr';
     const handlersPassed = onThemeChange && onDirectionalityChange;

@@ -18,16 +18,15 @@ export const withThemeProvider = makeDecorator({
     parameterName: 'themes',
     wrapper: (storyFn, context) => {
         const newTheme = context?.parameters?.theme || context?.globals?.theme || 'sap_fiori_3';
-        if (!context?.parameters?.theme || !themeManagers.hasOwnProperty(context.id)) {
-            const forComponents = context?.parameters?.components || [];
-            if (!themeManagers.hasOwnProperty(context.id)) {
-                themeManagers[context.id] = {
-                    themes: themeManager(context.id),
-                    components: componentsManager(context.id)
-                };
-            }
-            changeDocumentTheme(newTheme, forComponents, context.id);
+        const forComponents = context?.parameters?.components || [];
+        if (!themeManagers.hasOwnProperty(context.id)) {
+            themeManagers[context.id] = {
+                themes: themeManager(context.id),
+                components: componentsManager(context.id)
+            };
         }
+        changeDocumentTheme(newTheme, forComponents, context.id);
+
         return storyFn(context);
     }
 });
