@@ -1,0 +1,11 @@
+@import "icon-names";
+
+$block: fn-icon;
+
+.#{$block} {
+  @each $iconName, $fileName in $iconNames {
+    &--#{$iconName} {
+      background-image: url("./fiori/#{$fileName}");
+    }
+  }
+}
