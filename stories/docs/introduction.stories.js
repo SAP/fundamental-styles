@@ -4,6 +4,8 @@ import React from 'react';
 import { SAPContainer } from '../../.storybook/custom/components/SAPContainer';
 import fundamentals from '../../.storybook/custom/constants/fundamentals';
 import { IntroductionPage } from './introduction.page';
+import addons from '@storybook/addons';
+import { SELECT_STORY } from '@storybook/core-events';
 
 export default {
     title: 'Introduction',
@@ -30,5 +32,11 @@ export default {
 };
 
 export const Overview = () => {
-    return null;
+    /*
+      this will serve as default redirect to the docs page,
+      otherwise it will render this empty div without ability
+      to select 'docs'
+     */
+    addons.getChannel().emit(SELECT_STORY, 'introduction--overview');
+    return '<div></div>';
 };
