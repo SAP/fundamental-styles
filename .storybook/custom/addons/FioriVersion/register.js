@@ -14,7 +14,7 @@ addons.register(ADDON_ID, (api) => {
         const stories = Object.values(originalStories.stories);
         return api.setStories(
             stories
-                .filter(({ id }) => filterer(id))
+                .filter((story) => filterer(story))
                 .reduce((acc, story) => {
                     acc[story.id] = story;
                     return acc;
@@ -23,7 +23,7 @@ addons.register(ADDON_ID, (api) => {
     };
     const changeNavigation = (version) => {
         const matcher = fioriVersionCompliance[version];
-        if (!matcher(currentStoryData.storyId)) {
+        if (!matcher(currentStoryData)) {
             api.selectFirstStory();
         }
     };
@@ -39,7 +39,7 @@ addons.register(ADDON_ID, (api) => {
         originalStories = stories;
     });
     channel.on(CURRENT_STORY_WAS_SET, (currentStory) => {
-        currentStoryData = currentStory;
+        currentStoryData = originalStories.stories[currentStory.storyId];
     });
     channel.on(EVENTS.SET_VERSION, (version) => {
         if (!FioriVersions.includes(version)) {

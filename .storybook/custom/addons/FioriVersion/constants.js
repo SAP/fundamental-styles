@@ -9,7 +9,7 @@ export const EVENTS = {
 export const FioriVersions = fioriVersions.map(({ value }) => value);
 
 export const fioriVersionCompliance = {
-    fiori: (storyId) => storyId.match(/introduction/) || !storyId.match(/experimental/),
-    fioriNext: (storyId) => storyId.match(/introduction/) || storyId.match(/experimental/),
+    fiori: (story) => story.id.match(/introduction/) || !story.id.match(/experimental/),
+    fioriNext: (story) => story.id.match(/introduction/) || story.id.match(/experimental/),
     all: () => true
-}
+};
