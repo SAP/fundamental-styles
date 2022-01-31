@@ -16,6 +16,10 @@ $block: #{$fd-namespace}-vertical-nav;
   box-shadow: var(--sapContent_Shadow0);
   height: 100%;
 
+  &--overflow {
+    overflow-y: scroll;
+  }
+
   &__main-navigation {
     @include fd-reset();
   }
