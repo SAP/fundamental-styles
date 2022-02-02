@@ -5,6 +5,7 @@ import IconsDocsPage from './IconsDocsPage';
 import { independentSVGUsage } from './svg-icons/IndependentSVGUsage/IndependentSVGUsage';
 import React from 'react';
 import { SAPContainer } from '../../.storybook/custom/components/SAPContainer';
+import usedComponents from './usedComponents';
 
 export default {
     parameters: {
@@ -17,7 +18,7 @@ export default {
                 </SAPContainer>
             )
         },
-        components: ['fn-search', 'page', 'bar']
+        components: usedComponents
     }
 };
 

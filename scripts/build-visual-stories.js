@@ -9,7 +9,13 @@ const rimraf = require('rimraf');
 
 console.info('Visual stories 👀');
 console.info('  Trying to clean/remove all visual stories. 🗑');
-
+const themes = [
+    { value: 'sap_fiori_3', title: 'Quartz Light' },
+    // { value: 'sap_fiori_3_dark', title: 'Quartz Dark' },
+    // { value: 'sap_fiori_3_hcw', title: 'High Contrast White' },
+    { value: 'sap_fiori_3_hcb', title: 'High Contrast Black' }
+    //{ value: 'sap_horizon', title: 'Horizon' }
+];
 rimraf('**/*.visual.js', (rimRafError) => {
     if (rimRafError) {
         console.error('    Unable to clean all visual stories!! ❌', rimRafError);
@@ -21,28 +27,26 @@ rimraf('**/*.visual.js', (rimRafError) => {
 
     const isComponentDirectory = (source) => {
         const ignoredDirectories = ['utils', 'Docs', 'docs'];
-        return lstatSync(source).isDirectory() && !ignoredDirectories.some(ignored => source.includes(ignored));
+        return lstatSync(source).isDirectory() && !ignoredDirectories.some((ignored) => source.includes(ignored));
     };
 
     try {
-        const componentDirs = readdirSync(srcPath).map(name => path.join(srcPath, name)).filter(isComponentDirectory).map(directory => {
-            return {
-                path: `${directory}/`,
-                fileNames: readdirSync(`${directory}/`)
-            };
-        });
+        const componentDirs = readdirSync(srcPath)
+            .map((name) => path.join(srcPath, name))
+            .filter(isComponentDirectory)
+            .map((directory) => {
+                return {
+                    path: `${directory}/`,
+                    fileNames: readdirSync(`${directory}/`)
+                };
+            });
 
         const getDependentComponents = (storyFile) => {
             return new Promise((resolve, reject) => {
-                fs.readFile(storyFile, (err, data) => {
-                    if (err) {
-                        const errorMSg = `ERROR while reading ${storyFile} in build-visual-stories.js`;
-                        // eslint-disable-next-line no-console
-                        console.error(errorMSg, err);
-                        reject(errorMSg);
-                    }
-                    if (data) {
-                        const ast = babelParser.parse(data.toString(), {
+                try {
+                    const data = fs.readFileSync(storyFile, { encoding: 'utf8' });
+                    try {
+                        const ast = babelParser.parse(data, {
                             sourceType: 'module'
                         });
                         traverse(ast, {
@@ -53,7 +57,7 @@ rimraf('**/*.visual.js', (rimRafError) => {
                                     let depNamesArr = 'empty';
                                     if (value.type === 'ArrayExpression') {
                                         const dependencies = value.elements || [];
-                                        depNamesArr = dependencies.map(eachDependency => {
+                                        depNamesArr = dependencies.map((eachDependency) => {
                                             if (eachDependency.value && eachDependency.value.trim().length) {
                                                 return eachDependency.value;
                                             }
@@ -64,8 +68,29 @@ rimraf('**/*.visual.js', (rimRafError) => {
                                 }
                             }
                         });
+                    } catch (parseIssue) {
+                        console.error(parseIssue);
+                        const warningMsg = `ERROR while parsing ${storyFile} in build-visual-stories.js`;
+                        console.warn(warningMsg);
+                        const usedComponentsJsPath = path.parse(storyFile).dir + '/usedComponents.js';
+                        console.info(`Trying to access ${usedComponentsJsPath} to get dependent components list`);
+                        try {
+                            const { 'default': components } = require(usedComponentsJsPath);
+                            if (Array.isArray(components)) {
+                                resolve(components);
+                            } else {
+                                reject(parseIssue);
+                            }
+                        } catch (e) {
+                            reject(parseIssue);
+                        }
                     }
-                });
+                } catch (err) {
+                    const errorMSg = `ERROR while reading ${storyFile} in build-visual-stories.js`;
+                    // eslint-disable-next-line no-console
+                    console.error(errorMSg, err);
+                    reject(errorMSg);
+                }
             });
         };
 
@@ -75,43 +100,41 @@ rimraf('**/*.visual.js', (rimRafError) => {
             directory.fileNames.map(async(fileName) => {
                 // get only stories.js files
                 if (fileName.includes('.stories.js')) {
-                    // Grab the component name
-                    const componentName = fileName.substr(0, fileName.indexOf('.'));
-                    const prettyCompName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join(' ');
-                    const visualStoryName = componentName.split('-').map(str => str[0].toUpperCase() + str.substr(1)).join('');
-                    const dependentCompsArr = await getDependentComponents(`${directory.path}/${fileName}`);
-                    const dependentComps = dependentCompsArr && dependentCompsArr.length ? dependentCompsArr.map(name => `'${name}'`).join(', ') : false;
+                    try {
+                        // Grab the component name
+                        const componentName = fileName.substr(0, fileName.indexOf('.'));
+                        const prettyCompName = componentName
+                            .split('-')
+                            .map((str) => str[0].toUpperCase() + str.substr(1))
+                            .join(' ');
+                        const visualStoryName = componentName
+                            .split('-')
+                            .map((str) => str[0].toUpperCase() + str.substr(1))
+                            .join('');
+                        const dependentCompsArr = await getDependentComponents(`${directory.path}/${fileName}`);
+                        const dependentComps =
+                            dependentCompsArr && dependentCompsArr.length
+                                ? dependentCompsArr.map((name) => `'${name}'`).join(', ')
+                                : false;
 
-
-                    const themes = [
-                        { value: 'sap_fiori_3', title: 'Quartz Light' },
-                        // { value: 'sap_fiori_3_dark', title: 'Quartz Dark' },
-                        // { value: 'sap_fiori_3_hcw', title: 'High Contrast White' },
-                        { value: 'sap_fiori_3_hcb', title: 'High Contrast Black' }
-                        //{ value: 'sap_horizon', title: 'Horizon' }
-                    ];
-
-                    themes.forEach(theme => {
-                        const {
-                            value: themeVal,
-                            title
-                        } = theme;
-                        const fileContents =
-`import { withThemeProvider } from '../../.storybook/custom/decorators/themeProvider.js';
+                        themes.forEach((theme) => {
+                            const { value: themeVal, title } = theme;
+                            const fileContents = `import { withThemeProvider } from '../../.storybook/custom/decorators/themeProvider.js';
 import * as Case from 'case';
 import * as stories from './${componentName}.stories.js';
 
 export default {
     title: 'Visual/${title}/${prettyCompName}'${dependentComps ? ',' : ''}
     ${
-    dependentComps ?
-        `parameters: {
+    dependentComps
+        ? `parameters: {
         components: [${dependentComps}],
         theme: '${themeVal}'
     },
     decorators: [
         withThemeProvider
-    ]` : ''
+    ]`
+        : ''
 }
 };
 
@@ -143,10 +166,14 @@ export const ${visualStoryName} = () => {
 };
 
 `;
-                        // write the visual story file into the directory.
-                        let visualPath = path.join(directory.path, `${componentName}-${themeVal}.visual.js`);
-                        writeFileSync(visualPath, fileContents);
-                    });
+                            // write the visual story file into the directory.
+                            let visualPath = path.join(directory.path, `${componentName}-${themeVal}.visual.js`);
+                            writeFileSync(visualPath, fileContents);
+                        });
+                    } catch (e) {
+                        console.log({ e });
+                        console.error(e);
+                    }
                 }
             });
         });
