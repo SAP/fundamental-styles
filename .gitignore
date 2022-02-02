@@ -13,7 +13,6 @@ package-lock.json
 __diff_output__
 storybook-chromatic
 storybook-static
-stories/docs/
 dist
 dist-theming
 dist-fn

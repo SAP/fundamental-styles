@@ -1,8 +1,7 @@
 import { withCssResources } from '@storybook/addon-cssresources';
-import { DocsContainer, DocsContext } from '@storybook/addon-docs';
-import addons from '@storybook/addons';
+import { DocsContainer } from '@storybook/addon-docs';
 import prettify from 'pretty';
-import React, { useContext } from 'react';
+import React from 'react';
 import availableThemes from './custom/constants/availableThemes';
 import DocsPage from './custom/components/DocsPage';
 import { SAPContainer } from './custom/components/SAPContainer';
@@ -14,13 +13,6 @@ import { withThemeProvider } from './custom/decorators/themeProvider';
 import { check, isProduction } from './environment';
 
 check();
-
-if (!isProduction) {
-    const { default: customStyles } = require('./custom/custom.scss');
-    customStyles.use();
-    const { default: tocStyles } = require('./custom/toc.scss');
-    tocStyles.use();
-}
 
 export const parameters = {
     cssresources: [
@@ -62,15 +54,7 @@ export const parameters = {
     ],
     docs: {
         container: DocsContainer,
-        page: () => {
-            const channel = addons.getChannel();
-            const docsContext = useContext(DocsContext);
-            return (
-                <SAPContainer channel={channel} docsContext={docsContext}>
-                    <DocsPage />
-                </SAPContainer>
-            );
-        },
+        page: () => <SAPContainer><DocsPage/></SAPContainer>,
         theme: fundamentals,
         transformSource: (src) => {
             // we strip out the () =>` ` from the story
@@ -102,6 +86,9 @@ export const globalTypes = {
             icon: 'paragraph',
             items: directionalities
         }
+    },
+    fioriVersion: {
+        defaultValue: !isProduction ? 'all' : 'fiori'
     }
 };
 

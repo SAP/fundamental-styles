@@ -20,7 +20,7 @@ rimraf('**/*.visual.js', (rimRafError) => {
     console.info('  Trying to build all visual stories. 🏗');
 
     const isComponentDirectory = (source) => {
-        const ignoredDirectories = ['utils', 'Docs'];
+        const ignoredDirectories = ['utils', 'Docs', 'docs'];
         return lstatSync(source).isDirectory() && !ignoredDirectories.some(ignored => source.includes(ignored));
     };
 

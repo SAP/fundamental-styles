@@ -1,0 +1,18 @@
+@import "custom";
+
+/* fix bug in storybook@6 where toolbar height is hardcoded - causes scrollbar  */
+a[title='Open canvas in new tab'] {
+  height: initial;
+  margin-top: 0;
+}
+
+.sbdocs.sbdocs-content {
+  max-width: 85%;
+}
+
+/* make room for TOCBot */
+@media (min-width: 1024px) {
+  .sbdocs.sbdocs-content {
+    margin-right: 200px;
+  }
+}

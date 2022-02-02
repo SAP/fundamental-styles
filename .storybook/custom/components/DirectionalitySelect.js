@@ -1,7 +1,7 @@
 import React from 'react';
 import directionalities from '../constants/directionalities';
 
-export const DirectionalitySelect = ({ selectedDirectionality, onDirectionalityChange }) => {
+export default ({ selectedDirectionality, onDirectionalityChange }) => {
     return (
         <>
             <label className="fddocs-header--label" htmlFor="examplesDirectionality">
