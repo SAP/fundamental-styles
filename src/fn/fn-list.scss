@@ -3,6 +3,7 @@
 $block: #{$fn-namespace}-list;
 $fn-list-item-margin: 0.375rem;
 $fn-list-item-focus-margin: 0.125rem;
+$fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
 
 .#{$block} {
   @include fn-reset();
@@ -37,8 +38,13 @@ $fn-list-item-focus-margin: 0.125rem;
 
     @include fn-focus() {
       border-radius: $fn-list-item-focus-margin;
-      box-shadow: 0 0 0 $fn-list-item-focus-margin $fn-color-blue-500;
       position: relative;
+    }
+
+    &:not(.fn-list__item--info-bar) {
+      @include fn-focus() {
+        box-shadow: $fn-list-item-box-shadow $fn-color-blue-500;
+      }
     }
 
     @include fn-selected() {
@@ -88,6 +94,10 @@ $fn-list-item-focus-margin: 0.125rem;
 
       @include fn-readonly() {
         background: $fn-color-grey-50;
+      }
+
+      @include fn-focus() {
+        box-shadow: $fn-list-item-box-shadow $fn-color-teal-500;
       }
     }
   }

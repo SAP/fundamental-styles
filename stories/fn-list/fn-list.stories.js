@@ -7,7 +7,7 @@ export default {
 
 export const Primary = () => `
     <ul class="fn-list">
-        <li class="fn-list__group-header" tabindex="0">
+        <li class="fn-list__group-header">
             <span class="fn-list__text">Group Header</span>
         </li>
         <li class="fn-list__item" tabindex="0">
@@ -32,7 +32,7 @@ export const Primary = () => `
                 </button>
             </div>
         </li>
-        <li class="fn-list__group-header" tabindex="0">
+        <li class="fn-list__group-header">
             <span class="fn-list__text--end">Selected: 1</span>
         </li>
         <li class="fn-list__item is-selected" tabindex="0">
