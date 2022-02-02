@@ -36,13 +36,20 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
       background: $fn-color-grey-50;
     }
 
-    @include fn-focus() {
+    @include fn-focus-visible() {
+      outline: none;
       border-radius: $fn-list-item-focus-margin;
       position: relative;
     }
 
+    @include fn-not-focus-visible() {
+      @include fn-hover() {
+        background: $fn-color-grey-50;
+      }
+    }
+
     &:not(.fn-list__item--info-bar) {
-      @include fn-focus() {
+      @include fn-focus-visible() {
         box-shadow: $fn-list-item-box-shadow $fn-color-blue-500;
       }
     }
@@ -96,8 +103,14 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
         background: $fn-color-grey-50;
       }
 
-      @include fn-focus() {
+      @include fn-focus-visible() {
         box-shadow: $fn-list-item-box-shadow $fn-color-teal-500;
+      }
+
+      @include fn-not-focus-visible() {
+        @include fn-hover() {
+          background: $fn-color-teal-50;
+        }
       }
     }
   }
