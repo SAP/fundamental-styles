@@ -52,7 +52,7 @@ $block: #{$fd-namespace}-menu;
   // BLOCK BASE *******************************************
   @include fd-reset();
 
-  width: 100%;
+  width: fit-content;
   max-width: 20rem;
 
   &__list,
@@ -95,6 +95,11 @@ $block: #{$fd-namespace}-menu;
   &__list > .#{$block}__item {
     width: 100%;
     position: relative;
+  }
+
+  &__list--overflow {
+    overflow-y: scroll;
+    flex-wrap: nowrap;
   }
 
   &__separator {
@@ -247,6 +252,12 @@ $block: #{$fd-namespace}-menu;
     }
   }
 
+  &--overflow {
+    overflow-y: scroll;
+    box-shadow: var(--sapContent_Shadow1);
+    border-radius: $fd-menu-border-radius;
+  }
+
   &--full-width {
     max-width: 100%;
   }
@@ -284,6 +295,7 @@ $block: #{$fd-namespace}-menu;
 
   &--mobile {
     max-width: 100%;
+    width: 100%;
 
     .#{$block}__list,
     .#{$block}__sublist {
