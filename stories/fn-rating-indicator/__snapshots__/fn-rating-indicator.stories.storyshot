@@ -338,7 +338,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating"
           disabled=""
           id="rating-max-value-7-0"
-          name="rating-max-value-7"
+          name="rating-max-value-7-0"
           type="radio"
           value="0"
         />
@@ -357,7 +357,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           class="fn-rating-indicator__input"
           disabled=""
           id="rating-max-value-7-1"
-          name="rating-max-value-7"
+          name="rating-max-value-7-1"
           type="radio"
           value="1"
         />
@@ -376,7 +376,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           class="fn-rating-indicator__input"
           disabled=""
           id="rating-max-value-7-2"
-          name="rating-max-value-7"
+          name="rating-max-value-7-2"
           type="radio"
           value="2"
         />
@@ -394,7 +394,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           class="fn-rating-indicator__input"
           disabled=""
           id="rating-max-value-7-3"
-          name="rating-max-value-7"
+          name="rating-max-value-7-3"
           type="radio"
           value="3"
         />
@@ -412,7 +412,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           class="fn-rating-indicator__input"
           disabled=""
           id="rating-max-value-7-4"
-          name="rating-max-value-7"
+          name="rating-max-value-7-4"
           type="radio"
           value="4"
         />
@@ -430,7 +430,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           class="fn-rating-indicator__input"
           disabled=""
           id="rating-max-value-7-5"
-          name="rating-max-value-7"
+          name="rating-max-value-7-5"
           type="radio"
           value="5"
         />
@@ -478,8 +478,8 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           aria-label="0 star"
           class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating"
           disabled=""
-          id="rating-max-value-7-0"
-          name="rating-max-value-7"
+          id="rating-max-value-8-0"
+          name="rating-max-value-8-0"
           type="radio"
           value="0"
         />
@@ -488,7 +488,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
         <label
           aria-hidden="true"
           class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating"
-          for="rating-max-value-7-0"
+          for="rating-max-value-8-0"
         />
         
 
@@ -497,8 +497,8 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           aria-label="1 star"
           class="fn-rating-indicator__input"
           disabled=""
-          id="rating-max-value-7-1"
-          name="rating-max-value-7"
+          id="rating-max-value-8-1"
+          name="rating-max-value-8-1"
           type="radio"
           value="1"
         />
@@ -506,7 +506,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
             
         <label
           class="fn-rating-indicator__label"
-          for="rating-max-value-7-1"
+          for="rating-max-value-8-1"
         />
         
 
@@ -516,8 +516,8 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           checked=""
           class="fn-rating-indicator__input"
           disabled=""
-          id="rating-max-value-7-2"
-          name="rating-max-value-7"
+          id="rating-max-value-8-2"
+          name="rating-max-value-8-2"
           type="radio"
           value="2"
         />
@@ -525,7 +525,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
             
         <label
           class="fn-rating-indicator__label"
-          for="rating-max-value-7-2"
+          for="rating-max-value-8-2"
         />
         
 
@@ -534,8 +534,8 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           aria-label="3 star"
           class="fn-rating-indicator__input"
           disabled=""
-          id="rating-max-value-7-3"
-          name="rating-max-value-7"
+          id="rating-max-value-8-3"
+          name="rating-max-value-8-3"
           type="radio"
           value="3"
         />
@@ -543,7 +543,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
             
         <label
           class="fn-rating-indicator__label"
-          for="rating-max-value-7-3"
+          for="rating-max-value-8-3"
         />
         
 
@@ -552,8 +552,8 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           aria-label="4 star"
           class="fn-rating-indicator__input"
           disabled=""
-          id="rating-max-value-7-4"
-          name="rating-max-value-7"
+          id="rating-max-value-8-4"
+          name="rating-max-value-8-4"
           type="radio"
           value="4"
         />
@@ -561,7 +561,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
             
         <label
           class="fn-rating-indicator__label"
-          for="rating-max-value-7-4"
+          for="rating-max-value-8-4"
         />
         
 
@@ -570,8 +570,8 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
           aria-label="5 star"
           class="fn-rating-indicator__input"
           disabled=""
-          id="rating-max-value-7-5"
-          name="rating-max-value-7"
+          id="rating-max-value-8-5"
+          name="rating-max-value-8-5"
           type="radio"
           value="5"
         />
@@ -579,7 +579,7 @@ exports[`Storyshots Experimental/Rating Indicator Rating Indicator 1`] = `
             
         <label
           class="fn-rating-indicator__label"
-          for="rating-max-value-7-5"
+          for="rating-max-value-8-5"
         />
         
         

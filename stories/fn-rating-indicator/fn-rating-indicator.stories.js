@@ -92,22 +92,22 @@ export const RatingIndicator = () => `${localStyles}
     <form class="fn-rating-indicator is-readonly">
         <fieldset class="fn-rating-indicator__container" aria-label="Star Rating (out of 5)">
         
-            <input aria-label="0 star" type="radio" class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating" id="rating-max-value-7-0" name="rating-max-value-7" value="0" disabled>
+            <input aria-label="0 star" type="radio" class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating" id="rating-max-value-7-0" name="rating-max-value-7-0" value="0" disabled>
             <label class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating" for="rating-max-value-7-0" aria-hidden="true"></label>
 
-            <input aria-label="1 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-1" name="rating-max-value-7" value="1" disabled>
+            <input aria-label="1 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-1" name="rating-max-value-7-1" value="1" disabled>
             <label class="fn-rating-indicator__label" for="rating-max-value-7-1"></label>
 
-            <input aria-label="2 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-2" name="rating-max-value-7" value="2" checked disabled>
+            <input aria-label="2 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-2" name="rating-max-value-7-2" value="2" checked disabled>
             <label class="fn-rating-indicator__label" for="rating-max-value-7-2"></label>
 
-            <input aria-label="3 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-3" name="rating-max-value-7" value="3" disabled>
+            <input aria-label="3 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-3" name="rating-max-value-7-3" value="3" disabled>
             <label class="fn-rating-indicator__label" for="rating-max-value-7-3"></label>
 
-            <input aria-label="4 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-4" name="rating-max-value-7" value="4" disabled>
+            <input aria-label="4 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-4" name="rating-max-value-7-4" value="4" disabled>
             <label class="fn-rating-indicator__label" for="rating-max-value-7-4"></label>
 
-            <input aria-label="5 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-5" name="rating-max-value-7" value="5" disabled>
+            <input aria-label="5 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-5" name="rating-max-value-7-5" value="5" disabled>
             <label class="fn-rating-indicator__label" for="rating-max-value-7-5"></label>
         </fieldset>
     </form>
@@ -118,23 +118,23 @@ export const RatingIndicator = () => `${localStyles}
     <form class="fn-rating-indicator is-display">
         <fieldset class="fn-rating-indicator__container" aria-label="Star Rating (out of 5)">
         
-            <input aria-label="0 star" type="radio" class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating" id="rating-max-value-7-0" name="rating-max-value-7" value="0" disabled>
-            <label class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating" for="rating-max-value-7-0" aria-hidden="true"></label>
+            <input aria-label="0 star" type="radio" class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating" id="rating-max-value-8-0" name="rating-max-value-8-0" value="0" disabled>
+            <label class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating" for="rating-max-value-8-0" aria-hidden="true"></label>
 
-            <input aria-label="1 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-1" name="rating-max-value-7" value="1" disabled>
-            <label class="fn-rating-indicator__label" for="rating-max-value-7-1"></label>
+            <input aria-label="1 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-8-1" name="rating-max-value-8-1" value="1" disabled>
+            <label class="fn-rating-indicator__label" for="rating-max-value-8-1"></label>
 
-            <input aria-label="2 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-2" name="rating-max-value-7" value="2" checked disabled>
-            <label class="fn-rating-indicator__label" for="rating-max-value-7-2"></label>
+            <input aria-label="2 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-8-2" name="rating-max-value-8-2" value="2" checked disabled>
+            <label class="fn-rating-indicator__label" for="rating-max-value-8-2"></label>
 
-            <input aria-label="3 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-3" name="rating-max-value-7" value="3" disabled>
-            <label class="fn-rating-indicator__label" for="rating-max-value-7-3"></label>
+            <input aria-label="3 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-8-3" name="rating-max-value-8-3" value="3" disabled>
+            <label class="fn-rating-indicator__label" for="rating-max-value-8-3"></label>
 
-            <input aria-label="4 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-4" name="rating-max-value-7" value="4" disabled>
-            <label class="fn-rating-indicator__label" for="rating-max-value-7-4"></label>
+            <input aria-label="4 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-8-4" name="rating-max-value-8-4" value="4" disabled>
+            <label class="fn-rating-indicator__label" for="rating-max-value-8-4"></label>
 
-            <input aria-label="5 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-7-5" name="rating-max-value-7" value="5" disabled>
-            <label class="fn-rating-indicator__label" for="rating-max-value-7-5"></label>
+            <input aria-label="5 star" type="radio" class="fn-rating-indicator__input" id="rating-max-value-8-5" name="rating-max-value-8-5" value="5" disabled>
+            <label class="fn-rating-indicator__label" for="rating-max-value-8-5"></label>
         </fieldset>
     </form>
 </div>
