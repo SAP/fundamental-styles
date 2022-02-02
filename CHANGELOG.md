@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.114 (2022-02-02)
+
+
+### Bug Fixes
+
+* **docs:** added fiori version switch ([#3135](https://github.com/SAP/fundamental-styles/issues/3135)) ([1ebbafc](https://github.com/SAP/fundamental-styles/commit/1ebbafc26f0858f3b6b256edba0fb330e3af1daa))
+
 ## 0.21.0-rc.113 (2022-01-29)
 
 ## 0.21.0-rc.112 (2022-01-29)
