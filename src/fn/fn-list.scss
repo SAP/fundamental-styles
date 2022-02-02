@@ -7,10 +7,30 @@ $fn-list-item-focus-margin: 0.125rem;
 .#{$block} {
   @include fn-reset();
 
-  &__item {
+  &__item,
+  &__group-header {
     @include fn-reset();
     @include fn-flex-vertical-center();
 
+    height: 2.75rem;
+    min-width: 20rem;
+    background: $fn-color-white;
+    box-shadow: inset 0 -0.063rem 0 $fn-color-grey-100;
+  }
+
+  &__group-header {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: bold;
+    padding: 1.25rem 0.75rem 0.375rem;
+
+    .#{$block}__text--end {
+      margin-left: auto;
+    }
+  }
+
+  &__item {
     @include fn-hover() {
       background: $fn-color-grey-50;
     }
@@ -26,23 +46,10 @@ $fn-list-item-focus-margin: 0.125rem;
       box-shadow: inset 0 -0.063rem 0 #0070f1;
     }
 
-    height: 2.75rem;
-    min-width: 20rem;
     padding: $fn-list-item-margin 0.75rem;
-    background: $fn-color-white;
-    box-shadow: inset 0 -0.063rem 0 $fn-color-grey-100;
-
-    .#{$block}__button {
-      &:not(:last-of-type) {
-        @include fn-set-margin-right($fn-list-item-margin);
-      }
-
-      justify-content: end;
-    }
 
     .#{$block}__icon {
-      @include fn-set-margin-right(0.625rem);
-      @include fn-set-margin-left(0.25rem);
+      @include fn-set-margins-x(0.25rem, 0.625rem);
 
       color: $fn-color-grey-500;
     }
@@ -70,12 +77,31 @@ $fn-list-item-focus-margin: 0.125rem;
       color: $fn-color-grey-700;
       text-overflow: ellipsis;
     }
+
+    &--info-bar {
+      background: $fn-color-teal-100;
+      box-shadow: none;
+
+      @include fn-hover() {
+        background: $fn-color-teal-50;
+      }
+
+      @include fn-readonly() {
+        background: $fn-color-grey-50;
+      }
+    }
   }
 
   &__end-container {
     @include fn-reset();
     @include fn-flex();
     @include fn-set-margin-left(auto);
+
+    :not(:last-child) {
+      @include fn-set-margin-right($fn-list-item-margin);
+    }
+
+    align-items: center;
   }
 
   &--byline {

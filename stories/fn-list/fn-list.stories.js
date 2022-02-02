@@ -7,16 +7,19 @@ export default {
 
 export const Primary = () => `
     <ul class="fn-list">
+        <li class="fn-list__group-header" tabindex="0">
+            <span class="fn-list__text">Group Header</span>
+        </li>
         <li class="fn-list__item" tabindex="0">
             <span class="fn-list__text">List Item</span>
         </li>
         <li class="fn-list__item" tabindex="0">
             <span class="fn-list__text">List Item With Buttons</span>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-list__button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--ghost">
                     <span class="sap-icon sap-icon--edit"></span>
                 </button>
-                <button class="fn-button fn-list__button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--ghost">
                     <span class="sap-icon sap-icon--decline"></span>
                 </button>
             </div>
@@ -24,10 +27,13 @@ export const Primary = () => `
         <li class="fn-list__item" tabindex="0">
             <span class="fn-list__text">List Item With Navigation Arrow</span>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-list__button fn-button--icon-only fn-button--transparent">
+                <button class="fn-button fn-button--icon-only fn-button--transparent">
                     <span class="sap-icon sap-icon--navigation-right-arrow"></span>
                 </button>
             </div>
+        </li>
+        <li class="fn-list__group-header" tabindex="0">
+            <span class="fn-list__text--end">Selected: 1</span>
         </li>
         <li class="fn-list__item is-selected" tabindex="0">
             <span>Selected List Item</span>
@@ -38,11 +44,19 @@ export const Primary = () => `
                 <span>42</span>
             </div>
         </li>
+        <li class="fn-list__item fn-list__item--info-bar" tabindex="0">
+            <span class="fn-list__text">Info Text</span>
+            <div class="fn-list__end-container">
+                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                    <span class="sap-icon sap-icon--decline"></span>
+                </button>
+            </div>
+        </li>
         <li class="fn-list__item" tabindex="0">
             <span class="fn-list__icon sap-icon sap-icon--person-placeholder"></span>
             <span class="fn-list__text">List Item with Icon</span>
         </li>
-        <li class="fn-list__item is-disabled" aria-disabled="true" tabindex="0">
+        <li class="fn-list__item is-disabled" aria-disabled="true">
             <span>Disabled List Item</span>
         </li>
         <li class="fn-list__item fn-list__item--has-checkbox" tabindex="0">
@@ -51,6 +65,17 @@ export const Primary = () => `
                     <span class="fn-checkbox__checkmark"></span>
                 </div>
             <span class="fn-list__text">List Item with Checkbox</span>
+        </li>
+        <li class="fn-list__item fn-list__item--info-bar is-disabled" aria-disabled="true">
+            <span class="fn-list__text">Disabled Info Bar</span>
+            <div class="fn-list__end-container">
+                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                    <span class="sap-icon sap-icon--decline"></span>
+                </button>
+            </div>
+        </li>
+        <li class="fn-list__item fn-list__item--info-bar is-readonly" readonly>
+            <span class="fn-list__text">Read Only Info Bar</span>
         </li>
     </ul>
 `;
@@ -97,11 +122,23 @@ export const Byline = () => `
                 <span class="fn-list__byline">List Item Byline</span>
             </div>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-list__button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--ghost">
                     <span class="sap-icon sap-icon--edit"></span>
                 </button>
-                <button class="fn-button fn-list__button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--ghost">
                     <span class="sap-icon sap-icon--decline"></span>
+                </button>
+            </div>
+        </li>
+        <li class="fn-list__item" tabindex="0">
+            <div class="fn-list__start-container">
+                <span class="fn-list__title">Byline List Item With Number and Navigation Title</span>
+                <span class="fn-list__byline">List Item Byline</span>
+            </div>
+            <div class="fn-list__end-container">
+                <span>42</span>
+                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                    <span class="sap-icon sap-icon--navigation-right-arrow"></span>
                 </button>
             </div>
         </li>
@@ -111,7 +148,7 @@ export const Byline = () => `
                 <span class="fn-list__byline">List Item Byline</span>
             </div>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-list__button fn-button--icon-only fn-button--transparent">
+                <button class="fn-button fn-button--icon-only fn-button--transparent">
                     <span class="sap-icon sap-icon--navigation-right-arrow"></span>
                 </button>
             </div>
@@ -138,7 +175,7 @@ export const Byline = () => `
                 <span class="fn-list__byline">List Item Byline</span>
             </div>
         </li>
-        <li class="fn-list__item is-disabled" aria-disabled="true" tabindex="0">
+        <li class="fn-list__item is-disabled" aria-disabled="true">
             <div class="fn-list__start-container">
                 <span class="fn-list__title">Disabled Byline List Item Title</span>
                 <span class="fn-list__byline">List Item Byline</span>
