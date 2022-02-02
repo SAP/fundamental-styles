@@ -5,6 +5,7 @@ import IconsDocsPage from './IconsDocsPage';
 import { independentSVGUsage } from './svg-icons/IndependentSVGUsage/IndependentSVGUsage';
 import React from 'react';
 import { SAPContainer } from '../../.storybook/custom/components/SAPContainer';
+import { spriteSVGUsage } from './svg-icons/SpriteSVGUsage/SpriteSVGUsage';
 import usedComponents from './usedComponents';
 
 export default {
@@ -24,6 +25,4 @@ export default {
 
 export const IndependentSVGUsage = independentSVGUsage;
 
-export const SpriteSVGUsage = () => {
-    return '<div>will demonstrate usage with sprite</div>';
-};
+export const SpriteSVGUsage = spriteSVGUsage;

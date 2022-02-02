@@ -1,4 +1,7 @@
 import description from '!!raw-loader!./docs.md?raw';
+import styles from '../../../../src/icons/fn-icons-independent.scss';
+
+styles.use();
 
 export const independentSVGUsage = () => {
     return `

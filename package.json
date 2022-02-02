@@ -22,7 +22,7 @@
     "hotfix-release": "./scripts/hotfix-publish-release.sh",
     "hotfix-release-latest": "./scripts/hotfix-publish-release.sh latest",
     "size": "bundlesize --config config/bundlesize.json",
-    "start": "npm run storybook:serve",
+    "start": "npm run build:visual-stories && npm run storybook:serve",
     "start:prod": "npm run storybook:serve:prod",
     "style:assets": "babel-node ./scripts/copy-assets.js",
     "style:compile": "sass -q --style expanded src/styles:dist/",
