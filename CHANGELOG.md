@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.115 (2022-02-02)
+
+
+### Bug Fixes
+
+* **styles:** add overflow modifier classes for Menu and VertNav [ci visual] ([#3137](https://github.com/SAP/fundamental-styles/issues/3137)) ([535c56e](https://github.com/SAP/fundamental-styles/commit/535c56e3f79d9d92ffec1e992a7c3e6d20e17f6e))
+
 ## 0.21.0-rc.114 (2022-02-02)
 
 
