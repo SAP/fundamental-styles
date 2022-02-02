@@ -1,60 +1,52 @@
 /* eslint-disable no-unused-vars,sort-imports */
 import { DocsContext, DocsStory, Heading, Subtitle, Title } from '@storybook/addon-docs';
 import React, { useContext, useEffect } from 'react';
-import tocbot from 'tocbot';
-import Description from '../../.storybook/custom/components/Description';
+import Header from '../../.storybook/custom/components/Header';
 import Toc from '../../.storybook/custom/components/Toc';
+import visibleStories from '../../.storybook/custom/helpers/visibleStories';
+import { SAPContext } from '../../.storybook/custom/hooks/SAPContext';
+import useStyles from '../../.storybook/custom/hooks/useStyles';
+import useThemedStoryContainers from '../../.storybook/custom/hooks/useThemedStoryContainers';
 import themeVariablesManager from '../../.storybook/custom/styleChangers/dev/themeVariablesManager';
+import customStyles from '../../.storybook/custom/DocsPage.scss';
 import fnSearch from '../../src/fn/fn-search.scss';
 import layoutGrid from '../../src/styles/layout-grid.scss';
 import layoutPanel from '../../src/styles/layout-panel.scss';
 import link from '../../src/styles/link.scss';
 import section from '../../src/styles/section.scss';
 import AvailableIcons from './AvailableIcons/AvailableIcons';
+import Description from './description.md';
 
 const themeManager = themeVariablesManager('IconsDocsPage');
 
 export default () => {
+    const docsContext = useContext(DocsContext);
+    const sapContext = useContext(SAPContext);
+
+    useStyles(customStyles, fnSearch, section, layoutPanel, layoutGrid, link);
     useEffect(() => {
         themeManager.use('sap_fiori_3');
-        const styles = [fnSearch, section, layoutPanel, layoutGrid, link];
-        styles.forEach((style) => style.use());
-        return () => {
-            styles.forEach((style) => style.unuse());
-        };
     }, []);
-    useEffect(() => {
-        tocbot.init({
-            tocSelector: '.js-toc',
-            contentSelector: '.sbdocs-wrapper',
-            headingSelector: 'h2.sbdocs-h2, h3.sbdocs-h3, h4.sbdocs-h4',
-            orderedList: true,
-            collapseDepth: 3,
-            hasInnerContainers: true
-        });
-        document.querySelectorAll('.toc-link').forEach((x) => x.setAttribute('target', '_self'));
-    }, []);
-    useEffect(() => {
-        const _t = Array.from(document.getElementsByClassName('sbdocs-preview'));
+    useThemedStoryContainers();
 
-        _t.forEach((storyPreview) => {
-            const previewBody = storyPreview?.childNodes[1];
-            previewBody?.classList.add('themed-container');
-        });
-    }, []);
-    const docsContext = useContext(DocsContext);
-    // do not display disabled stories (dev only)
-    const stories = docsContext
-        .componentStories()
-        .filter((story) => story.kind === docsContext.kind && !story.parameters?.docs?.disable);
+    const stories = visibleStories(docsContext);
 
     return (
         <>
+            <Header
+                showSelectors={sapContext.showSelectors}
+                theme={sapContext.theme}
+                directionality={sapContext.directionality}
+                onThemeChange={(e) => sapContext.setTheme(e.target.value)}
+                onDirectionalityChange={(e) => sapContext.setDirectionality(e.target.value)}
+                fioriVersion={sapContext.fioriVersion}
+                setFioriVersion={sapContext.setFioriVersion}
+            />
             <div className="sb-docs-intro">
                 <Title />
                 <Toc />
                 <Subtitle />
-                {docsContext?.parameters?.description && <Description desc={docsContext?.parameters?.description} />}
+                <Description />
             </div>
             <Heading>Examples</Heading>
 

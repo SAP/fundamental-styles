@@ -1,14 +1,21 @@
-import description from '!./description.md?raw';
+/* eslint-disable no-unused-vars */
+import description from '!!raw-loader!./description.md?raw';
 import { DocsContainer } from '@storybook/addon-docs';
 import IconsDocsPage from './IconsDocsPage';
 import { independentSVGUsage } from './svg-icons/IndependentSVGUsage/IndependentSVGUsage';
+import React from 'react';
+import { SAPContainer } from '../../.storybook/custom/components/SAPContainer';
 
 export default {
     parameters: {
         description,
         docs: {
             container: DocsContainer,
-            page: IconsDocsPage
+            page: () => (
+                <SAPContainer>
+                    <IconsDocsPage />
+                </SAPContainer>
+            )
         },
         components: ['fn-search', 'page', 'bar']
     }

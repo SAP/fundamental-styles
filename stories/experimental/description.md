@@ -4,7 +4,7 @@ given that they can be read by screen readers or have a tooltip for accessibilit
 See [Project Confirguration](https://sap.github.io/fundamental-styles/?path=/docs/introduction-overview--page)
 for instructions on how to use the SAP icon font on your page.
 
-##Usage
+## Usage
 **Use the icon if:**
 
 - You want to display an icon for illustrative purposes only, without interaction states, acting 
@@ -15,7 +15,7 @@ as a non-interactive icon/pictogram.
 Note: If an icon needs to be selected or have any interaction states, it is recommended to use the transparent button 
 style. See **Button** for more details on how to implement it.
 
-##Methods of inclusion
+## Methods of inclusion
 There are a couple of ways to include icons in project:
 - Include SVG icons separately, independently
 - Include SVG sprite

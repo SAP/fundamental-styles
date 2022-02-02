@@ -1,4 +1,4 @@
-import description from '!./docs.md?raw';
+import description from '!!raw-loader!./docs.md?raw';
 
 export const independentSVGUsage = () => {
     return `
