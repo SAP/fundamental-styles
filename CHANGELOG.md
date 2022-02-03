@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.117 (2022-02-03)
+
+
+### Features
+
+* **fn:** introduce Message Toast in Fiori Next ([#3141](https://github.com/SAP/fundamental-styles/issues/3141)) ([8770a73](https://github.com/SAP/fundamental-styles/commit/8770a738f466ffd58770645aaf62356b4e521eeb))
+
 ## 0.21.0-rc.116 (2022-02-03)
 
 ## 0.21.0-rc.115 (2022-02-02)
