@@ -42,10 +42,10 @@ export const ShellXlSize = () => `<div style="height: 85px">
             </div>
         </div>
         <div class="fn-shell__group fn-shell__group--actions">
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Settings">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Settings">
                 <span class="sap-icon sap-icon--settings"></span>
             </button>
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Notification">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Notification">
                 <span class="sap-icon sap-icon--bell"></span>
             </button>
             <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar" tabindex="0">
@@ -72,10 +72,10 @@ export const ShellLSize = () => `<div style="width: 1024px; height: 85px;">
             </div>
         </div>
         <div class="fn-shell__group fn-shell__group--actions">
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Settings">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Settings">
                 <span class="sap-icon sap-icon--settings"></span>
             </button>
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Notification">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Notification">
                 <span class="sap-icon sap-icon--bell"></span>
             </button>
             <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar" tabindex="0">
@@ -95,13 +95,13 @@ export const ShellMSize = () => `<div style="width: 768px; height: 85px;">
             <span class="fn-shell__title">Product Name</span>
         </div>
         <div class="fn-shell__group fn-shell__group--actions">
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Search">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Search">
                 <span class="sap-icon sap-icon--search"></span>
             </button>
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Settings">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Settings">
                 <span class="sap-icon sap-icon--settings"></span>
             </button>
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Notification">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Notification">
                 <span class="sap-icon sap-icon--bell"></span>
             </button>
             <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar" tabindex="0">
@@ -123,19 +123,19 @@ ShellMSize.parameters = {
 export const ShellSSize = () => `<div style="height: 85px; max-width: 375px;">
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Menu">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Menu">
                 <span class="sap-icon sap-icon--menu2"></span>
             </button>
             <span class="fn-shell__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="52" height="26" alt="SAP"></span>
         </div>
         <div class="fn-shell__group fn-shell__group--actions">
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Search">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Search">
                 <span class="sap-icon sap-icon--search"></span>
             </button>
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Settings">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Settings">
                 <span class="sap-icon sap-icon--settings"></span>
             </button>
-            <button class="fn-button fn-button--transparent fn-button--icon-only" aria-label="Notification">
+            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Notification">
                 <span class="sap-icon sap-icon--bell"></span>
             </button>
             <div class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar" tabindex="0">

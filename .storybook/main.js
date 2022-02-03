@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const stylesLoader = require('./custom/loaders/load-styles');
-const isProduction = require('./custom/isProduction');
+const isProduction = require('./custom/constants/isProduction');
 const maxAssetSize = 1024 * 1024;
 
 const storiesToInclude = () => {
@@ -24,18 +24,31 @@ const addons = [
     '@storybook/addon-a11y',
     '@storybook/addon-cssresources/register',
     '@storybook/addon-viewport/register',
-    '@storybook/addon-docs',
+    {
+        name: '@storybook/addon-docs',
+        options: {
+            transcludeMarkdown: true
+        }
+    },
     '@storybook/addon-toolbars',
-    '@storybook/addon-controls'
+    '@storybook/addon-controls',
+    './custom/addons/FioriVersion/register.js'
 ];
 
 if (isProduction) {
     staticDirs.push('../dist/', '../dist-fn/dist/');
-    addons.push('@storybook/preset-scss');
+    addons.push({
+        name: '@storybook/preset-scss',
+        options: {
+            styleLoaderOptions: {
+                injectType: 'lazyStyleTag'
+            }
+        }
+    });
 }
 
 module.exports = {
-    stories: ['../stories/docs/introduction.stories.mdx', `../stories/**/*.@${includedStories}.@(js|mdx)`],
+    stories: ['../stories/docs/introduction.stories.js', `../stories/**/*.@${includedStories}.@(js|mdx)`],
     staticDirs: staticDirs,
     addons: addons,
     core: {
@@ -44,7 +57,8 @@ module.exports = {
     webpackFinal: async (config) => {
         config.plugins.push(
             new DefinePlugin({
-                PRODUCTION: JSON.stringify(isProduction)
+                PRODUCTION: JSON.stringify(isProduction),
+                STORYBOOK_ENV: JSON.stringify(process.env.STORYBOOK_ENV)
             })
         );
 
@@ -82,7 +96,7 @@ module.exports = {
             performance: {
                 hints: 'warning',
                 maxAssetSize: maxAssetSize
-            },
+            }
         });
     }
 };

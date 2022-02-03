@@ -1,8 +1,7 @@
 export default {
     title: 'Components/Dialog',
     parameters: {
-        description: `
-The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \`fd-dialog--active\` class.
+        description: `The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \`fd-dialog--active\` class.
 
 ##Usage
 **Use the dialog if:**
@@ -587,7 +586,7 @@ HorizontalFormInDialog.storyName = 'Horizontal Form';
 HorizontalFormInDialog.parameters = {
     docs: {
         description: {
-            story: ''
+            story: 'Horizontal Form displays all the components aligned horizontally. It is created by positioning the `fd-form-label` class and the `fd-input` class in the same row.'
         }
     }
 };
@@ -695,7 +694,7 @@ VerticalFormInDialog.storyName = 'Vertical Form';
 VerticalFormInDialog.parameters = {
     docs: {
         description: {
-            story: ''
+            story: 'Verical Form displays all the components aligned vertically. It is created by positioning the `fd-form-label` class above the `fd-input` class in seperate rows.'
         }
     }
 };

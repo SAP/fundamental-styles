@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -96,7 +98,7 @@ exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--emphasized fn-button--icon-left"
+          class="fn-button fn-button--emphasized"
         >
           
                 
@@ -116,7 +118,7 @@ exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -131,7 +133,7 @@ exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -154,11 +156,13 @@ exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Message Box Critical Message Box 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -251,7 +255,7 @@ exports[`Storyshots Experimental/Message Box Critical Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -274,11 +278,13 @@ exports[`Storyshots Experimental/Message Box Critical Message Box 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Message Box Info Message Box 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -371,7 +377,7 @@ exports[`Storyshots Experimental/Message Box Info Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -394,11 +400,13 @@ exports[`Storyshots Experimental/Message Box Info Message Box 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Message Box Message Box 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -488,7 +496,7 @@ exports[`Storyshots Experimental/Message Box Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--emphasized fn-button--icon-left"
+          class="fn-button fn-button--emphasized"
         >
           
                 
@@ -508,7 +516,7 @@ exports[`Storyshots Experimental/Message Box Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -523,7 +531,7 @@ exports[`Storyshots Experimental/Message Box Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -546,11 +554,13 @@ exports[`Storyshots Experimental/Message Box Message Box 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Message Box Negative Message Box 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -643,7 +653,7 @@ exports[`Storyshots Experimental/Message Box Negative Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -666,11 +676,13 @@ exports[`Storyshots Experimental/Message Box Negative Message Box 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Message Box Positive Message Box 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -763,7 +775,7 @@ exports[`Storyshots Experimental/Message Box Positive Message Box 1`] = `
         
             
         <button
-          class="fn-button fn-button--ghost"
+          class="fn-button fn-button--secondary"
         >
           
                 
@@ -786,5 +798,5 @@ exports[`Storyshots Experimental/Message Box Positive Message Box 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

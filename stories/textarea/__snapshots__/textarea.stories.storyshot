@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Forms/Textarea Content Density - cozy and compact 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -53,35 +55,41 @@ exports[`Storyshots Components/Forms/Textarea Content Density - cozy and compact
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Textarea Counter 1`] = `
 <div
-  class="fd-form-item"
+  dir="ltr"
 >
-  
-    
-  <label
-    class="fd-form-label"
-    for="textarea-2"
-  >
-    Compact text area:
-  </label>
-  
-    
-  <textarea
-    class="fd-textarea fd-textarea--compact"
-    id="textarea-2"
-  >
-    Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.
-  </textarea>
-  
-    
   <div
-    class="fd-textarea-counter"
+    class="fd-form-item"
   >
-    150 characters left
+    
+    
+    <label
+      class="fd-form-label"
+      for="textarea-2"
+    >
+      Compact text area:
+    </label>
+    
+    
+    <textarea
+      class="fd-textarea fd-textarea--compact"
+      id="textarea-2"
+    >
+      Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.
+    </textarea>
+    
+    
+    <div
+      class="fd-textarea-counter"
+    >
+      150 characters left
+    </div>
+    
+
   </div>
   
 
@@ -89,7 +97,9 @@ exports[`Storyshots Components/Forms/Textarea Counter 1`] = `
 `;
 
 exports[`Storyshots Components/Forms/Textarea Disabled And Read Only 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -142,11 +152,13 @@ exports[`Storyshots Components/Forms/Textarea Disabled And Read Only 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -409,5 +421,5 @@ exports[`Storyshots Components/Forms/Textarea Responsiveness 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

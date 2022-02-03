@@ -25,7 +25,7 @@
   }
 }
 
-@mixin fn-transition($property: all, $duration: 250ms, $animation: ease-in-out) {
+@mixin fn-transition($property: all, $duration: 150ms, $animation: ease-in) {
   $fn-transition: $property $duration $animation;
 
   -webkit-transition: $fn-transition;
@@ -122,6 +122,13 @@
 @mixin fn-focus-visible() {
   &.focus-visible,
   &.is-focus {
+    @content;
+  }
+}
+
+@mixin fn-focus-within() {
+  &:focus-within,
+  &.is-focus-within {
     @content;
   }
 }

@@ -79,6 +79,133 @@ DesktopAndTablet.parameters = {
     }
 };
 
+export const DesktopAndTabletOverflow = () => `
+<label class="fd-form-label">Combobox Tablet Cozy Mode - default mode</label><br/><br/>
+
+<nav aria-label="navigation menu" class="fd-menu fd-menu--overflow" style="max-height: 200px;">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 1</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 2</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 3</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 4</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 5</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 6</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 7</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 8</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 9</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 10</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<br>
+<label class="fd-form-label">Combobox Desktop Compact Mode</label><br/><br/>
+
+<nav class="fd-menu fd-menu--compact fd-menu--overflow" style="max-height: 120px;">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 1</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 2</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 3</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 4</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 5</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 6</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 7</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 8</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 9</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__title">Option 10</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+`;
+
+DesktopAndTabletOverflow.storyName = 'Desktop and Tablet Modes with vertical overflow';
+DesktopAndTabletOverflow.parameters = {
+    docs: {
+        iframeHeight: 300,
+        description: {
+            story: 'The `fd-menu--overflow` modifier class will clip the content and add a vertical scroll to the element. You need to manually set the max-height of the element on the `fd-menu` level. For example: `style="max-height: 120px;"`. <br><b>Important: </b>this modifier class cannot be used in cases where the menu has a submenu.'
+        }
+    }
+};
+
 export const MobileCozyMode = () => `<div style="width: 50%; display: inline-block" class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active" id="select-dialog-example">
     <section
         aria-labelledby="exampleSubMenuHeader"

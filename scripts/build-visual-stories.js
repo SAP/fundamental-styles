@@ -20,7 +20,7 @@ rimraf('**/*.visual.js', (rimRafError) => {
     console.info('  Trying to build all visual stories. 🏗');
 
     const isComponentDirectory = (source) => {
-        const ignoredDirectories = ['utils', 'Docs'];
+        const ignoredDirectories = ['utils', 'Docs', 'docs'];
         return lstatSync(source).isDirectory() && !ignoredDirectories.some(ignored => source.includes(ignored));
     };
 
@@ -97,7 +97,7 @@ rimraf('**/*.visual.js', (rimRafError) => {
                             title
                         } = theme;
                         const fileContents =
-`import { withThemeProvider } from '../../.storybook/custom/themeProvider.js';
+`import { withThemeProvider } from '../../.storybook/custom/decorators/themeProvider.js';
 import * as Case from 'case';
 import * as stories from './${componentName}.stories.js';
 

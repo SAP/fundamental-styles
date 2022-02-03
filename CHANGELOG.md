@@ -1,4 +1,60 @@
 
+## 0.21.0-rc.119 (2022-02-03)
+
+## 0.21.0-rc.118 (2022-02-03)
+
+
+### Features
+
+* **fn:** introduce Rating Indicator in Fiori Next [ci visual] ([#3138](https://github.com/SAP/fundamental-styles/issues/3138)) ([a1b4475](https://github.com/SAP/fundamental-styles/commit/a1b447588501685cd19ce21bceb99e1dbf5bd7c3))
+
+## 0.21.0-rc.117 (2022-02-03)
+
+
+### Features
+
+* **fn:** introduce Message Toast in Fiori Next ([#3141](https://github.com/SAP/fundamental-styles/issues/3141)) ([8770a73](https://github.com/SAP/fundamental-styles/commit/8770a738f466ffd58770645aaf62356b4e521eeb))
+
+## 0.21.0-rc.116 (2022-02-03)
+
+## 0.21.0-rc.115 (2022-02-02)
+
+
+### Bug Fixes
+
+* **styles:** add overflow modifier classes for Menu and VertNav [ci visual] ([#3137](https://github.com/SAP/fundamental-styles/issues/3137)) ([535c56e](https://github.com/SAP/fundamental-styles/commit/535c56e3f79d9d92ffec1e992a7c3e6d20e17f6e))
+
+## 0.21.0-rc.114 (2022-02-02)
+
+
+### Bug Fixes
+
+* **docs:** added fiori version switch ([#3135](https://github.com/SAP/fundamental-styles/issues/3135)) ([1ebbafc](https://github.com/SAP/fundamental-styles/commit/1ebbafc26f0858f3b6b256edba0fb330e3af1daa))
+
+## 0.21.0-rc.113 (2022-01-29)
+
+## 0.21.0-rc.112 (2022-01-29)
+
+## 0.21.0-rc.111 (2022-01-29)
+
+## 0.21.0-rc.110 (2022-01-29)
+
+
+### Bug Fixes
+
+* **styles:** focus outline is visible now [ci visual] ([#3123](https://github.com/SAP/fundamental-styles/issues/3123)) ([38399c7](https://github.com/SAP/fundamental-styles/commit/38399c73d4ca60b9a508ba4c86223d7569a83c60))
+
+## 0.21.0-rc.109 (2022-01-29)
+
+## 0.21.0-rc.108 (2022-01-28)
+
+## 0.21.0-rc.107 (2022-01-26)
+
+
+### Bug Fixes
+
+* **fn:** update Fiori Next buttons [ci visual] ([#3122](https://github.com/SAP/fundamental-styles/issues/3122)) ([59afeda](https://github.com/SAP/fundamental-styles/commit/59afeda47bf6af1f9ddb01b027e1a0d71f6ae394))
+
 ## 0.21.0-rc.106 (2022-01-26)
 
 

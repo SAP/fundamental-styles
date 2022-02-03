@@ -117,26 +117,33 @@ export const TextOnlyPhone = () => `<div style="height: 200px;">
         <div class="fd-tool-header fd-tool-header--sm" style="max-width: 500px;">
             <div class="fd-tool-header__group">
                 <div class="fd-tool-header__element">
-                <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" alt="SAP">
+                    <img class="fd-tool-header__logo" src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
+                         srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"
+                         alt="SAP">
                 </div>
                 <div class="fd-tool-header__element">
-                <button class="fd-button fd-button--transparent fd-button--menu fd-tool-header__button" aria-label="mega menu">
-                    <i class="sap-icon--megamenu"></i>
-                </button>
+                    <button class="fd-button fd-button--transparent fd-button--menu fd-tool-header__button"
+                            aria-label="mega menu">
+                        <i class="sap-icon--megamenu"></i>
+                    </button>
                 </div>
             </div>
             <div class="fd-tool-header__group">
                 <div class="fd-tool-header__element">
-                <button class="fd-button fd-button--transparent fd-tool-header__button" aria-label="more items">
-                    <i class="sap-icon--overflow"></i>
-                </button>
+                    <button class="fd-button fd-button--transparent fd-tool-header__button" aria-label="more items">
+                        <i class="sap-icon--overflow"></i>
+                    </button>
                 </div>
                 <div class="fd-tool-header__element">
-                <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/1.svg')" role="img" aria-label="John Doe"></span>
+                    <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                          style="background-image: url('/assets/images/avatars/1.svg')" role="img"
+                          aria-label="John Doe"></span>
                 </div>
             </div>
         </div>
-        <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--navigation-horizontal fd-icon-tab-bar--sm" style="max-width: 500px;">
+        <div
+            class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--navigation-horizontal fd-icon-tab-bar--sm"
+            style="max-width: 500px;">
             <ul role="tablist" class="fd-icon-tab-bar__header" style="overflow: visible;">
                 <li role="presentation" class="fd-icon-tab-bar__item">
                     <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab4">
@@ -153,27 +160,35 @@ export const TextOnlyPhone = () => `<div style="height: 200px;">
                         <span class="fd-icon-tab-bar__tag">Section 3</span>
                     </a>
                 </li>
-                <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 26rem;>
+                <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
+                    style="left: 26rem;">
                     <div class="fd-popover fd-icon-tab-bar__popover">
                         <div class="fd-popover__control">
-                            <button class="fd-icon-tab-bar__overflow" aria-controls="popoverA2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA2');" aria-label="open menu button">
+                            <button class="fd-icon-tab-bar__overflow" aria-controls="popoverA2" aria-expanded="false"
+                                    aria-haspopup="true" onclick="onPopoverClick('popoverA2');"
+                                    aria-label="open menu button">
                                 <span class="fd-icon-tab-bar__overflow-text">More</span>
                                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
                             </button>
                         </div>
-                        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA2">
-                        <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
-                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                            <a tabindex="0" class="fd-list__link">
-                                <span class="fd-list__title">Section 4</span>
-                            </a>
-                            </li>
-                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                            <a tabindex="0" class="fd-list__link">
-                                <span class="fd-list__title">Section 5</span>
-                            </a>
-                            </li>
-                        </ul>
+                        <div
+                            class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
+                            aria-hidden="false" id="popoverA2">
+                            <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list"
+                                role="list">
+                                <li tabindex="-1" role="listitem" aria-level="1"
+                                    class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <span class="fd-list__title">Section 4</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" aria-level="1"
+                                    class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <span class="fd-list__title">Section 5</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </li>
@@ -358,32 +373,32 @@ export const TextAndIconPhone = () => `<div style="height: 200px;">
                         </div>
                     </a>
                 </li>
-                <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 26rem;>
-                <div class="fd-popover fd-icon-tab-bar__popover">
-                    <div class="fd-popover__control">
-                        <button class="fd-icon-tab-bar__overflow" aria-controls="popoverA5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA5');" aria-label="open menu button">
-                        <span class="fd-icon-tab-bar__overflow-text">More</span>
-                            <i class="sap-icon--slim-arrow-down" role="presentation"></i>
-                        </button>
+                <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 26rem;">
+                    <div class="fd-popover fd-icon-tab-bar__popover">
+                        <div class="fd-popover__control">
+                            <button class="fd-icon-tab-bar__overflow" aria-controls="popoverA5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverA5');" aria-label="open menu button">
+                            <span class="fd-icon-tab-bar__overflow-text">More</span>
+                                <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                            </button>
+                        </div>
+                        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA5">
+                            <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
+                                <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i class="sap-icon--batch-payments" role="presentation"></i>
+                                        <span class="fd-list__title">Section 4</span>
+                                    </a>
+                                </li>
+                                <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
+                                    <a tabindex="0" class="fd-list__link">
+                                        <i class="sap-icon--credit-card" role="presentation"></i>
+                                        <span class="fd-list__title">Section 5</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body" aria-hidden="false" id="popoverA5">
-                        <ul class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list" role="list">
-                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <i class="sap-icon--batch-payments" role="presentation"></i>
-                                    <span class="fd-list__title">Section 4</span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" role="listitem" aria-level="1" class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item">
-                                <a tabindex="0" class="fd-list__link">
-                                    <i class="sap-icon--credit-card" role="presentation"></i>
-                                    <span class="fd-list__title">Section 5</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
+                </li>
             </ul>
         </div>
     </div>

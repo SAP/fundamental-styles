@@ -4,22 +4,6 @@ body {
   padding: 0;
 }
 
-/* fix bug in storybook@6 where toolbar height is hardcoded - causes scrollbar  */
-a[title='Open canvas in new tab'] {
-  height: 34px;
-}
-
-.sbdocs.sbdocs-content {
-  max-width: 85%;
-}
-
-/* make room for TOCBot */
-@media (min-width: 1024px) {
-  .sbdocs.sbdocs-content {
-    margin-right: 200px;
-  }
-}
-
 /** Popover docs styling */
 [id*=story--components-popover--] {
   min-height: 320px;
@@ -189,6 +173,7 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
       color: #0e7290;
     }
   }
+
   /* stylelint-enable no-descending-specificity */
 
   &__logo {
@@ -251,6 +236,7 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
     font-weight: normal;
     font-size: 16px;
   }
+
   /* stylelint-disable no-descending-specificity */
   a {
     color: #0e7290;
@@ -260,6 +246,7 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
       color: #404040;
     }
   }
+
   /* stylelint-enable no-descending-specificity */
 
   img {

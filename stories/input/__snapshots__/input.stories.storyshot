@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Forms/Input Default 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -445,11 +447,13 @@ exports[`Storyshots Components/Forms/Input Default 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Forms/Input States 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -811,5 +815,5 @@ exports[`Storyshots Components/Forms/Input States 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

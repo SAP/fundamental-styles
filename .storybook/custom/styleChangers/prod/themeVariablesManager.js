@@ -1,4 +1,4 @@
-import availableThemes from '../../availableThemes';
+import availableThemes from '../../constants/availableThemes';
 import generateStyleLinkTagFn from '../utils/generateStyleLinkTagFn';
 import getLazyLoader from '../utils/getLazyLoader';
 

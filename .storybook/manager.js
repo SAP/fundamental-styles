@@ -1,6 +1,6 @@
 import { addons } from '@storybook/addons';
 
-import fundamentals from './custom/fundamentals';
+import fundamentals from './custom/constants/fundamentals';
 
 addons.setConfig({
   sidebar: {

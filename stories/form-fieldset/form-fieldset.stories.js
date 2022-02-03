@@ -1,9 +1,8 @@
 export default {
     title: 'Components/Forms/Field Set',
     parameters: {
-        description: `
-        A fieldset is used to give semantic meaning to a group of elements inside a form (e.g. Billing or Shipping Address).
-        Grouping fields together into a fieldset also provides styling and accessibility benefits.`,
+        description: `A fieldset is used to give semantic meaning to a group of elements inside a form (e.g. Billing or Shipping Address).
+Grouping fields together into a fieldset also provides styling and accessibility benefits.`,
         tags: ['f3', 'a11y', 'theme'],
         components: ['fieldset', 'form-item', 'form-group', 'checkbox', 'radio']
     }
@@ -103,7 +102,10 @@ export const CheckboxGroups = () => `
 
 CheckboxGroups.parameters = {
     docs: {
-        iframeHeight: 450
+        iframeHeight: 450,
+        description: {
+            story: 'Checkbox groups should always be grouped using fieldset for accessibility reasons.'
+        }
     }
 };
 

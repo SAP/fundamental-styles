@@ -2,256 +2,280 @@
 
 exports[`Storyshots Components/Forms/Form Message Error 1`] = `
 <div
-  class="fd-form-item"
+  dir="ltr"
 >
-  
-        
-  <label
-    class="fd-form-label"
-    for="input-1cc"
-  >
-    Error input:
-  </label>
-  
-        
   <div
-    class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+    class="fd-form-item"
   >
     
-            
-    <div
-      aria-controls="popoverB3"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="fd-popover__control"
-      onfocusin="onPopoverClick('popoverB3')"
-      onfocusout="onPopoverClick('popoverB3')"
+        
+    <label
+      class="fd-form-label"
+      for="input-1cc"
     >
-      
-                
-      <input
-        aria-label="Image label"
-        class="fd-input is-error"
-        id="input-1cc"
-        placeholder="Field placeholder text"
-        type="text"
-      />
-      
-            
-    </div>
+      Error input:
+    </label>
     
-            
+        
     <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow"
-      id="popoverB3"
+      class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
     >
       
-                
+            
       <div
-        class="fd-form-message fd-form-message--error"
+        aria-controls="popoverB3"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverB3')"
+        onfocusout="onPopoverClick('popoverB3')"
       >
-        Error message
+        
+                
+        <input
+          aria-label="Image label"
+          class="fd-input is-error"
+          id="input-1cc"
+          placeholder="Field placeholder text"
+          type="text"
+        />
+        
+            
       </div>
       
             
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow"
+        id="popoverB3"
+      >
+        
+                
+        <div
+          class="fd-form-message fd-form-message--error"
+        >
+          Error message
+        </div>
+        
+            
+      </div>
+      
+        
     </div>
     
-        
+    
   </div>
   
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Message Information 1`] = `
 <div
-  class="fd-form-item"
+  dir="ltr"
 >
-  
-        
-  <label
-    class="fd-form-label"
-    for="input-1ee"
-  >
-    Information input:
-  </label>
-  
-        
   <div
-    class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+    class="fd-form-item"
   >
     
-            
-    <div
-      aria-controls="popoverB5"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="fd-popover__control"
-      onfocusin="onPopoverClick('popoverB5')"
-      onfocusout="onPopoverClick('popoverB5')"
+        
+    <label
+      class="fd-form-label"
+      for="input-1ee"
     >
-      
-                
-      <input
-        aria-label="Image label"
-        class="fd-input fd-input--compact is-information"
-        id="input-1ee"
-        placeholder="Field placeholder text"
-        type="text"
-      />
-      
-            
-    </div>
+      Information input:
+    </label>
     
-            
+        
     <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow"
-      id="popoverB5"
+      class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
     >
       
-                
+            
       <div
-        class="fd-form-message fd-form-message--information"
+        aria-controls="popoverB5"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverB5')"
+        onfocusout="onPopoverClick('popoverB5')"
       >
-        Information message
+        
+                
+        <input
+          aria-label="Image label"
+          class="fd-input fd-input--compact is-information"
+          id="input-1ee"
+          placeholder="Field placeholder text"
+          type="text"
+        />
+        
+            
       </div>
       
             
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow"
+        id="popoverB5"
+      >
+        
+                
+        <div
+          class="fd-form-message fd-form-message--information"
+        >
+          Information message
+        </div>
+        
+            
+      </div>
+      
+        
     </div>
     
-        
+    
   </div>
   
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Message Success 1`] = `
 <div
-  class="fd-form-item"
+  dir="ltr"
 >
-  
-        
-  <label
-    class="fd-form-label"
-    for="input-1bb"
-  >
-    Success input:
-  </label>
-  
-        
   <div
-    class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+    class="fd-form-item"
   >
     
-            
-    <div
-      aria-controls="popoverB2"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="fd-popover__control"
-      onfocusin="onPopoverClick('popoverB2')"
-      onfocusout="onPopoverClick('popoverB2')"
+        
+    <label
+      class="fd-form-label"
+      for="input-1bb"
     >
-      
-                
-      <input
-        aria-label="Image label"
-        class="fd-input is-success"
-        id="input-1bb"
-        placeholder="Field placeholder text"
-        type="text"
-      />
-      
-            
-    </div>
+      Success input:
+    </label>
     
-            
+        
     <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow"
-      id="popoverB2"
+      class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
     >
       
-                
+            
       <div
-        class="fd-form-message fd-form-message--success"
+        aria-controls="popoverB2"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverB2')"
+        onfocusout="onPopoverClick('popoverB2')"
       >
-        Success message
+        
+                
+        <input
+          aria-label="Image label"
+          class="fd-input is-success"
+          id="input-1bb"
+          placeholder="Field placeholder text"
+          type="text"
+        />
+        
+            
       </div>
       
             
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow"
+        id="popoverB2"
+      >
+        
+                
+        <div
+          class="fd-form-message fd-form-message--success"
+        >
+          Success message
+        </div>
+        
+            
+      </div>
+      
+        
     </div>
     
-        
+    
   </div>
   
-    
+
 </div>
 `;
 
 exports[`Storyshots Components/Forms/Form Message Warning 1`] = `
 <div
-  class="fd-form-item"
+  dir="ltr"
 >
-  
-        
-  <label
-    class="fd-form-label"
-    for="input-1cc"
-  >
-    Warning input:
-  </label>
-  
-        
   <div
-    class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
+    class="fd-form-item"
   >
     
-            
-    <div
-      aria-controls="popoverB4"
-      aria-expanded="false"
-      aria-haspopup="true"
-      class="fd-popover__control"
-      onfocusin="onPopoverClick('popoverB4')"
-      onfocusout="onPopoverClick('popoverB4')"
+        
+    <label
+      class="fd-form-label"
+      for="input-1cc"
     >
-      
-                
-      <input
-        aria-label="Image label"
-        class="fd-input is-warning"
-        id="input-1cc"
-        placeholder="Field placeholder text"
-        type="text"
-      />
-      
-            
-    </div>
+      Warning input:
+    </label>
     
-            
+        
     <div
-      aria-hidden="true"
-      class="fd-popover__body fd-popover__body--no-arrow"
-      id="popoverB4"
+      class="fd-form-input-message-group fd-popover fd-popover--input-message-group"
     >
       
             
       <div
-        class="fd-form-message fd-form-message--warning"
+        aria-controls="popoverB4"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="fd-popover__control"
+        onfocusin="onPopoverClick('popoverB4')"
+        onfocusout="onPopoverClick('popoverB4')"
       >
-        Warning message
+        
+                
+        <input
+          aria-label="Image label"
+          class="fd-input is-warning"
+          id="input-1cc"
+          placeholder="Field placeholder text"
+          type="text"
+        />
+        
+            
       </div>
       
             
+      <div
+        aria-hidden="true"
+        class="fd-popover__body fd-popover__body--no-arrow"
+        id="popoverB4"
+      >
+        
+            
+        <div
+          class="fd-form-message fd-form-message--warning"
+        >
+          Warning message
+        </div>
+        
+            
+      </div>
+      
+        
     </div>
     
-        
+    
   </div>
   
-    
+
 </div>
 `;

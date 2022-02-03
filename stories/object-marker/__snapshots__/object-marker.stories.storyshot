@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <a
@@ -48,11 +50,13 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
   </a>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -160,11 +164,13 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object Marker Icon Only 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -237,11 +243,13 @@ exports[`Storyshots Components/Object Marker Icon Only 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Object Marker Marker Text 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <div
@@ -274,5 +282,5 @@ exports[`Storyshots Components/Object Marker Marker Text 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

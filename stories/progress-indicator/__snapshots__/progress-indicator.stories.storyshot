@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Progress Indicator Layout 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
     
   <div
@@ -228,11 +230,13 @@ exports[`Storyshots Components/Progress Indicator Layout 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Progress Indicator States 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
      
   <div
@@ -459,207 +463,213 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Progress Indicator Truncation Behaviour 1`] = `
 <div
-  style="width: 400px; margin: auto;"
+  dir="ltr"
 >
-  
-    
   <div
-    aria-label="Progress Indicator"
-    aria-valuemax="100"
-    aria-valuemin="0"
-    aria-valuenow="70"
-    aria-valuetext="In cases where the label is being truncated a small popover appears on click."
-    class="fd-progress-indicator fd-popover"
-    role="progressbar"
-    tabindex="-1"
+    style="width: 400px; margin: auto;"
   >
     
-        
+    
     <div
-      class="fd-progress-indicator__container"
+      aria-label="Progress Indicator"
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="70"
+      aria-valuetext="In cases where the label is being truncated a small popover appears on click."
+      class="fd-progress-indicator fd-popover"
+      role="progressbar"
+      tabindex="-1"
     >
       
-            
+        
       <div
-        class="fd-progress-indicator__progress-bar fd-popover__control"
-        onclick="onPopoverClick('popoverF0')"
-        style="min-width: 70%; width: 70%;"
+        class="fd-progress-indicator__container"
       >
         
-                
-        <span
-          class="fd-progress-indicator__label"
-        >
-          In cases where the label is being truncated a small popover appears on click.
-        </span>
-        
             
-      </div>
-      
-            
-      <div
-        class="fd-progress-indicator__remaining"
-      />
-      
-            
-      <div
-        aria-hidden="false"
-        class="fd-popover__body"
-        id="popoverF0"
-      >
-        
-                
         <div
-          class="fd-popover__wrapper"
+          class="fd-progress-indicator__progress-bar fd-popover__control"
+          onclick="onPopoverClick('popoverF0')"
+          style="min-width: 70%; width: 70%;"
         >
           
-                    
-          <div
-            class="fd-progress-indicator__overflow"
-          >
-            
-                        
-            <span>
-              In cases where the label is being truncated a small popover appears on click.
-            </span>
-            
-                        
-            <span
-              class="fd-progress-indicator__overflow-close"
-            >
-              
-                            
-              <i
-                class="sap-icon sap-icon--decline"
-              />
-              
-                        
-            </span>
-            
-                    
-          </div>
-          
                 
+          <span
+            class="fd-progress-indicator__label"
+          >
+            In cases where the label is being truncated a small popover appears on click.
+          </span>
+          
+            
         </div>
         
             
-      </div>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-
-    
-  <div
-    style="margin-bottom: 5rem"
-  />
-  
-
-    
-  <div
-    aria-label="Progress Indicator"
-    aria-valuemax="100"
-    aria-valuemin="0"
-    aria-valuenow="70"
-    aria-valuetext="In cases where the label is being truncated a small popover appears on click."
-    class="fd-progress-indicator fd-popover"
-    role="progressbar"
-    tabindex="-1"
-  >
-    
-        
-    <div
-      class="fd-progress-indicator__container"
-    >
-      
-            
-      <div
-        class="fd-progress-indicator__progress-bar"
-        style="min-width: 30%; width: 30%;"
-      >
-        
-            
-      </div>
-      
-            
-      <div
-        class="fd-progress-indicator__remaining fd-popover__control"
-        onclick="onPopoverClick('popoverF1')"
-      >
-        
-                
-        <span
-          class="fd-progress-indicator__label"
-        >
-          In cases where the label is being truncated a small popover appears on click.
-        </span>
-        
-            
-      </div>
-      
-            
-      <div
-        aria-hidden="false"
-        class="fd-popover__body fd-popover__body--right"
-        id="popoverF1"
-      >
-        
-                
         <div
-          class="fd-popover__wrapper"
+          class="fd-progress-indicator__remaining"
+        />
+        
+            
+        <div
+          aria-hidden="false"
+          class="fd-popover__body"
+          id="popoverF0"
         >
           
-                    
+                
           <div
-            class="fd-progress-indicator__overflow"
+            class="fd-popover__wrapper"
           >
             
-                        
-            <span>
-              In cases where the label is being truncated a small popover appears on click.
-            </span>
-            
-                        
-            <span
-              class="fd-progress-indicator__overflow-close"
+                    
+            <div
+              class="fd-progress-indicator__overflow"
             >
               
-                            
-              <i
-                class="sap-icon sap-icon--decline"
-              />
+                        
+              <span>
+                In cases where the label is being truncated a small popover appears on click.
+              </span>
               
                         
-            </span>
-            
+              <span
+                class="fd-progress-indicator__overflow-close"
+              >
+                
+                            
+                <i
+                  class="sap-icon sap-icon--decline"
+                />
+                
+                        
+              </span>
+              
                     
+            </div>
+            
+                
           </div>
           
-                
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+    
+    <div
+      style="margin-bottom: 5rem"
+    />
+    
+
+    
+    <div
+      aria-label="Progress Indicator"
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="70"
+      aria-valuetext="In cases where the label is being truncated a small popover appears on click."
+      class="fd-progress-indicator fd-popover"
+      role="progressbar"
+      tabindex="-1"
+    >
+      
+        
+      <div
+        class="fd-progress-indicator__container"
+      >
+        
+            
+        <div
+          class="fd-progress-indicator__progress-bar"
+          style="min-width: 30%; width: 30%;"
+        >
+          
+            
         </div>
         
             
+        <div
+          class="fd-progress-indicator__remaining fd-popover__control"
+          onclick="onPopoverClick('popoverF1')"
+        >
+          
+                
+          <span
+            class="fd-progress-indicator__label"
+          >
+            In cases where the label is being truncated a small popover appears on click.
+          </span>
+          
+            
+        </div>
+        
+            
+        <div
+          aria-hidden="false"
+          class="fd-popover__body fd-popover__body--right"
+          id="popoverF1"
+        >
+          
+                
+          <div
+            class="fd-popover__wrapper"
+          >
+            
+                    
+            <div
+              class="fd-progress-indicator__overflow"
+            >
+              
+                        
+              <span>
+                In cases where the label is being truncated a small popover appears on click.
+              </span>
+              
+                        
+              <span
+                class="fd-progress-indicator__overflow-close"
+              >
+                
+                            
+                <i
+                  class="sap-icon sap-icon--decline"
+                />
+                
+                        
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    style="margin-bottom: 5rem"
-  />
+    <div
+      style="margin-bottom: 5rem"
+    />
+    
+
+  </div>
   
 
 </div>

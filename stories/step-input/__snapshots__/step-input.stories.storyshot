@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/StepInput Compact 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <label
     class="fd-form-label"
     for="step-1"
@@ -89,11 +91,13 @@ exports[`Storyshots Components/StepInput Compact 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/StepInput Default 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <label
     class="fd-form-label"
     for="step-3"
@@ -159,11 +163,13 @@ exports[`Storyshots Components/StepInput Default 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/StepInput Disabled 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <label
     class="fd-form-label"
     for="step-13"
@@ -234,11 +240,13 @@ exports[`Storyshots Components/StepInput Disabled 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/StepInput Focused 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <label
     class="fd-form-label"
     for="step-20"
@@ -308,11 +316,13 @@ exports[`Storyshots Components/StepInput Focused 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/StepInput Read-only 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <label
     class="fd-form-label"
     for="step-14"
@@ -398,11 +408,13 @@ exports[`Storyshots Components/StepInput Read-only 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/StepInput States 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   <label
     class="fd-form-label"
     for="step-5"
@@ -694,5 +706,5 @@ exports[`Storyshots Components/StepInput States 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

@@ -2,68 +2,74 @@
 
 exports[`Storyshots Layouts/Layout Grid Auto Adjusting 1`] = `
 <div
-  class="fd-container"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-row"
+    class="fd-container"
   >
     
-        
+    
     <div
-      class="fd-col fd-col--full"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col fd-col--full"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          
                 Auto adjusting col before 7 col
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--7"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        class="fd-col fd-col--7"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        >
+          
                 7 col
             
+        </div>
+        
+        
       </div>
       
+
         
+      <div
+        class="fd-col fd-col--full"
+      >
+        
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          
+                Auto adjusting col after 7 col
+            
+        </div>
+        
+        
+      </div>
+      
+    
     </div>
     
 
-        
-    <div
-      class="fd-col fd-col--full"
-    >
-      
-            
-      <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
-      >
-        
-                Auto adjusting col after 7 col
-            
-      </div>
-      
-        
-    </div>
-    
-    
   </div>
   
 
@@ -72,483 +78,489 @@ exports[`Storyshots Layouts/Layout Grid Auto Adjusting 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid Different Size Columns 1`] = `
 <div
-  class="fd-container"
+  dir="ltr"
 >
-  
-  
   <div
-    class="fd-row"
+    class="fd-container"
   >
     
-      
+  
     <div
-      class="fd-col"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col"
       >
-        12 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          12 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--11"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        class="fd-col fd-col--11"
       >
-        11 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        >
+          11 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--1"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        class="fd-col fd-col--1"
       >
-        1 column element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        >
+          1 column element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--10"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        class="fd-col fd-col--10"
       >
-        10 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        >
+          10 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--2"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        class="fd-col fd-col--2"
       >
-        2 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        >
+          2 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--9"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        class="fd-col fd-col--9"
       >
-        9 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        >
+          9 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--3"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+        class="fd-col fd-col--3"
       >
-        3 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+        >
+          3 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--8"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-8"
+        class="fd-col fd-col--8"
       >
-        8 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-8"
+        >
+          8 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--4"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-9"
+        class="fd-col fd-col--4"
       >
-        4 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-9"
+        >
+          4 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--7"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-10"
+        class="fd-col fd-col--7"
       >
-        7 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-10"
+        >
+          7 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--5"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-11"
+        class="fd-col fd-col--5"
       >
-        5 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-11"
+        >
+          5 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--6"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-12"
+        class="fd-col fd-col--6"
       >
-        6 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-12"
+        >
+          6 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--6"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col fd-col--6"
       >
-        6 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          6 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--5"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        class="fd-col fd-col--5"
       >
-        5 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        >
+          5 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--7"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        class="fd-col fd-col--7"
       >
-        7 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        >
+          7 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--4"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        class="fd-col fd-col--4"
       >
-        4 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        >
+          4 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--8"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        class="fd-col fd-col--8"
       >
-        8 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        >
+          8 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--3"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        class="fd-col fd-col--3"
       >
-        3 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        >
+          3 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--9"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+        class="fd-col fd-col--9"
       >
-        9 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+        >
+          9 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--2"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-8"
+        class="fd-col fd-col--2"
       >
-        2 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-8"
+        >
+          2 columns element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--10"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-9"
+        class="fd-col fd-col--10"
       >
-        10 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-9"
+        >
+          10 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col fd-col--1"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-10"
+        class="fd-col fd-col--1"
       >
-        1 column element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-10"
+        >
+          1 column element
+        </div>
+        
+      
       </div>
       
       
-    </div>
-    
-      
-    <div
-      class="fd-col fd-col--11"
-    >
-      
-          
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-11"
+        class="fd-col fd-col--11"
       >
-        11 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-11"
+        >
+          11 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
-  </div>
-  
 
   
-  <div
-    class="fd-row"
-  >
-    
-      
     <div
-      class="fd-col"
+      class="fd-row"
     >
       
-          
+      
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-12"
+        class="fd-col"
       >
-        12 columns element
+        
+          
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-12"
+        >
+          12 columns element
+        </div>
+        
+      
       </div>
       
-      
+  
     </div>
     
-  
+
   </div>
   
 
@@ -557,153 +569,159 @@ exports[`Storyshots Layouts/Layout Grid Different Size Columns 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid Nesting 1`] = `
 <div
-  class="fd-container"
+  dir="ltr"
 >
-  
-  
   <div
-    class="fd-row"
+    class="fd-container"
   >
     
-    
+  
     <div
-      class="fd-col fd-col--2"
+      class="fd-row"
     >
       
-        
+    
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col fd-col--2"
       >
         
+        
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          
             2 col (~17%)
         
+        </div>
+        
+    
       </div>
       
-    
-    </div>
-    
 
     
-    <div
-      class="fd-col fd-col--10"
-    >
-      
-        
       <div
-        "=""
-        class="fd-row"
+        class="fd-col fd-col--10"
       >
         
-            
+        
         <div
-          class="fd-col fd-col--2"
+          "=""
+          class="fd-row"
         >
           
-                
+            
           <div
-            class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+            class="fd-col fd-col--2"
           >
             
+                
+            <div
+              class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+            >
+              
                     2 col inner row 1 (~14%)
                 
+            </div>
+            
+            
           </div>
           
-            
-        </div>
-        
 
             
-        <div
-          class="fd-col fd-col--10"
-        >
-          
-                
           <div
-            class="fd-row"
+            class="fd-col fd-col--10"
           >
             
-                    
+                
             <div
-              class="fd-col fd-col--6"
+              class="fd-row"
             >
               
-                        
+                    
               <div
-                class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+                class="fd-col fd-col--6"
               >
                 
+                        
+                <div
+                  class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+                >
+                  
                             6 coll inner row 2 (~34%)
                         
+                </div>
+                
+                    
               </div>
               
-                    
-            </div>
-            
 
                     
-            <div
-              class="fd-col fd-col--6"
-            >
-              
-                        
               <div
-                class="fd-row"
+                class="fd-col fd-col--6"
               >
                 
-                            
+                        
                 <div
-                  class="fd-col fd-col--4"
+                  class="fd-row"
                 >
                   
-                                
+                            
                   <div
-                    class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+                    class="fd-col fd-col--4"
                   >
                     
+                                
+                    <div
+                      class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+                    >
+                      
                                     4 coll inner row 3 (~10%)
                                 
+                    </div>
+                    
+                            
                   </div>
                   
-                            
-                </div>
-                
 
                             
-                <div
-                  class="fd-col fd-col--8"
-                >
-                  
-                                
                   <div
-                    class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+                    class="fd-col fd-col--8"
                   >
                     
+                                
+                    <div
+                      class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+                    >
+                      
                                     8 coll inner row 3 (~23%)
                                 
+                    </div>
+                    
+                            
                   </div>
                   
-                            
+                        
                 </div>
                 
-                        
+                    
               </div>
               
-                    
+                
             </div>
             
-                
+            
           </div>
           
-            
+        
         </div>
         
-        
+    
       </div>
       
-    
+  
     </div>
     
-  
+
   </div>
   
 
@@ -712,138 +730,144 @@ exports[`Storyshots Layouts/Layout Grid Nesting 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid No Gap 1`] = `
 <div
-  class="fd-container fd-container--no-horizontal-gap fd-container--no-vertical-gap"
+  dir="ltr"
 >
-  
-  
   <div
-    class="fd-row"
+    class="fd-container fd-container--no-horizontal-gap fd-container--no-vertical-gap"
   >
     
-        
+  
     <div
-      class="fd-col fd-col--8"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col fd-col--8"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          
                 8 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--4"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        class="fd-col fd-col--4"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        >
+          
                 4 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--6"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        class="fd-col fd-col--6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        >
+          
                 6 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--6"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        class="fd-col fd-col--6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        >
+          
                 6 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--4"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        class="fd-col fd-col--4"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        >
+          
                 4 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--8"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        class="fd-col fd-col--8"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        >
+          
                 8 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
+
   </div>
   
 
@@ -852,138 +876,144 @@ exports[`Storyshots Layouts/Layout Grid No Gap 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid No Horizontal Gap 1`] = `
 <div
-  class="fd-container fd-container--no-horizontal-gap"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-row"
+    class="fd-container fd-container--no-horizontal-gap"
   >
     
-        
+    
     <div
-      class="fd-col fd-col--8"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col fd-col--8"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          
                 8 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--4"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        class="fd-col fd-col--4"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        >
+          
                 4 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--6"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        class="fd-col fd-col--6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        >
+          
                 6 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--6"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        class="fd-col fd-col--6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        >
+          
                 6 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--4"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        class="fd-col fd-col--4"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        >
+          
                 4 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--8"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        class="fd-col fd-col--8"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        >
+          
                 8 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
+
   </div>
   
 
@@ -992,138 +1022,144 @@ exports[`Storyshots Layouts/Layout Grid No Horizontal Gap 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid No Vertical Gap 1`] = `
 <div
-  class="fd-container fd-container--no-vertical-gap"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-row"
+    class="fd-container fd-container--no-vertical-gap"
   >
     
-        
+    
     <div
-      class="fd-col fd-col--8"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col fd-col--8"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          
                 8 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--4"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        class="fd-col fd-col--4"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        >
+          
                 4 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--6"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        class="fd-col fd-col--6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        >
+          
                 6 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--6"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        class="fd-col fd-col--6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        >
+          
                 6 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--4"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        class="fd-col fd-col--4"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        >
+          
                 4 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--8"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        class="fd-col fd-col--8"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-6"
+        >
+          
                 8 col no gap
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
+
   </div>
   
 
@@ -1132,172 +1168,178 @@ exports[`Storyshots Layouts/Layout Grid No Vertical Gap 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid Offset 1`] = `
 <div
-  class="fd-container"
+  dir="ltr"
 >
-  
-    
   <div
-    class="fd-row"
+    class="fd-container"
   >
     
-        
+    
     <div
-      class="fd-col"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        class="fd-col"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          
                 12 columns
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--6"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        class="fd-col fd-col--6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        >
+          
                 6 columns
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--8 fd-col--offset-4 fd-col-md--6 fd-col-md--offset-2 fd-col-lg--4 fd-col-lg--offset-4 fd-col-lx--3 fd-col-lx--offset-6"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        class="fd-col fd-col--8 fd-col--offset-4 fd-col-md--6 fd-col-md--offset-2 fd-col-lg--4 fd-col-lg--offset-4 fd-col-lx--3 fd-col-lx--offset-6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-5"
+        >
+          
                 Different column-width and offset in different inflection points
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--6 fd-col--offset-6"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+        class="fd-col fd-col--6 fd-col--offset-6"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-7"
+        >
+          
                 6 columns with 6-column offset
             
+        </div>
+        
+        
       </div>
       
-        
+    
     </div>
     
-    
-  </div>
-  
 
     
-  <div
-    class="fd-row"
-  >
-    
-        
     <div
-      class="fd-col fd-col--3 fd-col--offset-after-1 fd-col-md--offset-after-2 fd-col-lg--offset-after-2 fd-col-xl--offset-after-1"
+      class="fd-row"
     >
       
-            
+        
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-8"
+        class="fd-col fd-col--3 fd-col--offset-after-1 fd-col-md--offset-after-2 fd-col-lg--offset-after-2 fd-col-xl--offset-after-1"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-8"
+        >
+          
                 2 column-width and offset after in different inflection points
             
+        </div>
+        
+        
       </div>
       
-        
-    </div>
-    
 
         
-    <div
-      class="fd-col fd-col--4 fd-col--offset-after-1"
-    >
-      
-            
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-9"
+        class="fd-col fd-col--4 fd-col--offset-after-1"
       >
         
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-9"
+        >
+          
                 4 columns with 2-column offset after
             
+        </div>
+        
+        
       </div>
       
+
         
+      <div
+        class="fd-col fd-col--2"
+      >
+        
+            
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-12"
+        >
+          
+                2 column element
+            
+        </div>
+        
+        
+      </div>
+      
+    
     </div>
     
 
-        
-    <div
-      class="fd-col fd-col--2"
-    >
-      
-            
-      <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-12"
-      >
-        
-                2 column element
-            
-      </div>
-      
-        
-    </div>
-    
-    
   </div>
   
 
@@ -1306,78 +1348,84 @@ exports[`Storyshots Layouts/Layout Grid Offset 1`] = `
 
 exports[`Storyshots Layouts/Layout Grid Responsiveness 1`] = `
 <div
-  class="fd-container"
+  dir="ltr"
 >
-  
-  
   <div
-    class="fd-row"
+    class="fd-container"
   >
     
-    
-    <div
-      class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
-    >
-      
-        
-      <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
-      >
-        (1 cell)
-      </div>
-      
-    
-    </div>
-    
-
-    
-    <div
-      class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
-    >
-      
-        
-      <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
-      >
-        (2 cell)
-      </div>
-      
-    
-    </div>
-    
-
-    
-    <div
-      class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
-    >
-      
-        
-      <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
-      >
-        (3 cell)
-      </div>
-      
-    
-    </div>
-    
-
-    
-    <div
-      class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
-    >
-      
-        
-      <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
-      >
-        (4 cell)
-      </div>
-      
-    
-    </div>
-    
   
+    <div
+      class="fd-row"
+    >
+      
+    
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
+      >
+        
+        
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-1"
+        >
+          (1 cell)
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
+      >
+        
+        
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-2"
+        >
+          (2 cell)
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
+      >
+        
+        
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-3"
+        >
+          (3 cell)
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--4"
+      >
+        
+        
+        <div
+          class="docs-layout-grid-bg docs-layout-grid-bg--color-4"
+        >
+          (4 cell)
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
   </div>
   
 

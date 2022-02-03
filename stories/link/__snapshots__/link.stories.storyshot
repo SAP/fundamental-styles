@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Link Types 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <a
@@ -110,5 +112,5 @@ exports[`Storyshots Components/Link Types 1`] = `
   </a>
   
 
-</section>
+</div>
 `;

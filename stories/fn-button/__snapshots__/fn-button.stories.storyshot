@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -15,6 +17,10 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -76,7 +82,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--icon-left"
+      class="fn-button"
     >
       
         
@@ -96,7 +102,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized fn-button--icon-right"
+      class="fn-button fn-button--emphasized"
     >
       
         
@@ -117,7 +123,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     <button
       aria-label="More"
-      class="fn-button fn-button--transparent fn-button--icon-only"
+      class="fn-button fn-button--layout fn-button--icon-only"
     >
       
         
@@ -146,7 +152,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--icon-left is-hover"
+      class="fn-button is-hover"
     >
       
         
@@ -166,7 +172,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized fn-button--icon-right is-hover"
+      class="fn-button fn-button--emphasized is-hover"
     >
       
         
@@ -187,7 +193,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     <button
       aria-label="More"
-      class="fn-button fn-button--transparent fn-button--icon-only is-hover"
+      class="fn-button fn-button--layout fn-button--icon-only is-hover"
     >
       
         
@@ -216,7 +222,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--icon-left is-active"
+      class="fn-button is-active"
     >
       
         
@@ -236,7 +242,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized fn-button--icon-right is-active"
+      class="fn-button fn-button--emphasized is-active"
     >
       
         
@@ -257,7 +263,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     <button
       aria-label="More"
-      class="fn-button fn-button--transparent fn-button--icon-only is-active"
+      class="fn-button fn-button--layout fn-button--icon-only is-active"
     >
       
         
@@ -286,7 +292,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--icon-left is-focus"
+      class="fn-button is-focus"
     >
       
         
@@ -306,7 +312,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized fn-button--icon-right is-focus"
+      class="fn-button fn-button--emphasized is-focus"
     >
       
         
@@ -327,7 +333,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     <button
       aria-label="More"
-      class="fn-button fn-button--transparent fn-button--icon-only is-focus"
+      class="fn-button fn-button--layout fn-button--icon-only is-focus"
     >
       
         
@@ -356,7 +362,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--icon-left"
+      class="fn-button"
       disabled=""
     >
       
@@ -377,7 +383,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized fn-button--icon-right"
+      class="fn-button fn-button--emphasized"
       disabled=""
     >
       
@@ -399,7 +405,7 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
     
     <button
       aria-label="More"
-      class="fn-button fn-button--transparent fn-button--icon-only"
+      class="fn-button fn-button--layout fn-button--icon-only"
       disabled=""
     >
       
@@ -415,11 +421,13 @@ exports[`Storyshots Experimental/Button Icon Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
-exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
-<section>
+exports[`Storyshots Experimental/Button Layout Button 1`] = `
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -433,6 +441,204 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--layout"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--layout is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :active
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--layout is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--layout is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+    
+    
+    <button
+      class="fn-button fn-button--layout"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -486,32 +692,7 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
     
     
     <button
-      class="fn-button"
-    >
-      
-        
-      <span
-        class="sap-icon sap-icon--paper-plane"
-      />
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-        
-      <span
-        class="sap-icon sap-icon--megamenu"
-      />
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--ghost"
+      class="fn-button fn-button--secondary"
     >
       
         
@@ -572,32 +753,7 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
     
     
     <button
-      class="fn-button is-hover"
-    >
-      
-        
-      <span
-        class="sap-icon sap-icon--paper-plane"
-      />
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-        
-      <span
-        class="sap-icon sap-icon--megamenu"
-      />
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--ghost is-hover"
+      class="fn-button fn-button--secondary is-hover"
     >
       
         
@@ -658,32 +814,7 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
     
     
     <button
-      class="fn-button is-active"
-    >
-      
-        
-      <span
-        class="sap-icon sap-icon--paper-plane"
-      />
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-        
-      <span
-        class="sap-icon sap-icon--megamenu"
-      />
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--ghost is-active"
+      class="fn-button fn-button--secondary is-active"
     >
       
         
@@ -744,32 +875,7 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
     
     
     <button
-      class="fn-button is-focus"
-    >
-      
-        
-      <span
-        class="sap-icon sap-icon--paper-plane"
-      />
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-        
-      <span
-        class="sap-icon sap-icon--megamenu"
-      />
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--ghost is-focus"
+      class="fn-button fn-button--secondary is-focus"
     >
       
         
@@ -831,33 +937,7 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
     
     
     <button
-      class="fn-button"
-      disabled=""
-    >
-      
-        
-      <span
-        class="sap-icon sap-icon--paper-plane"
-      />
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-        
-      <span
-        class="sap-icon sap-icon--megamenu"
-      />
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--ghost"
+      class="fn-button fn-button--secondary"
       disabled=""
     >
       
@@ -880,11 +960,13 @@ exports[`Storyshots Experimental/Button Menu Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -898,6 +980,10 @@ exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -1082,11 +1168,13 @@ exports[`Storyshots Experimental/Button Nested Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
-exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
-<section>
+exports[`Storyshots Experimental/Button Primary Button 1`] = `
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1100,6 +1188,10 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -1125,14 +1217,14 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     <div>
       <b>
-        Emphasized 
+        Primary
       </b>
     </div>
     
     
     <div>
       <b>
-        Default
+        Primary Emphasized 
       </b>
     </div>
     
@@ -1154,7 +1246,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized"
+      class="fn-button"
     >
       
         
@@ -1169,7 +1261,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button"
+      class="fn-button fn-button--emphasized"
     >
       
         
@@ -1200,7 +1292,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized is-hover"
+      class="fn-button is-hover"
     >
       
         
@@ -1215,7 +1307,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button is-hover"
+      class="fn-button fn-button--emphasized is-hover"
     >
       
         
@@ -1243,6 +1335,21 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
         :active
       </b>
     </div>
+    
+    
+    <button
+      class="fn-button is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
     
     
     <button
@@ -1260,21 +1367,6 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     </button>
     
     
-    <button
-      class="fn-button is-active"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-
   </div>
   
 
@@ -1292,7 +1384,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized is-focus"
+      class="fn-button is-focus"
     >
       
         
@@ -1307,7 +1399,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button is-focus"
+      class="fn-button fn-button--emphasized is-focus"
     >
       
         
@@ -1338,7 +1430,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--emphasized"
+      class="fn-button"
       disabled=""
     >
       
@@ -1354,7 +1446,7 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
     
     
     <button
-      class="fn-button"
+      class="fn-button fn-button--emphasized"
       disabled=""
     >
       
@@ -1372,11 +1464,13 @@ exports[`Storyshots Experimental/Button Primary Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1390,6 +1484,10 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -1415,21 +1513,14 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     <div>
       <b>
-        Ghost
+        Secondary
       </b>
     </div>
     
     
     <div>
       <b>
-        Transparent
-      </b>
-    </div>
-    
-    
-    <div>
-      <b>
-        Neutral
+        Secondary Emphasized
       </b>
     </div>
     
@@ -1451,7 +1542,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost"
+      class="fn-button fn-button--secondary"
     >
       
         
@@ -1466,22 +1557,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--transparent"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--neutral"
+      class="fn-button fn-button--secondary fn-button--emphasized"
     >
       
         
@@ -1512,7 +1588,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost is-hover"
+      class="fn-button fn-button--secondary is-hover"
     >
       
         
@@ -1527,22 +1603,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--transparent is-hover"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--neutral is-hover"
+      class="fn-button fn-button--secondary fn-button--emphasized is-hover"
     >
       
         
@@ -1573,7 +1634,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost is-active"
+      class="fn-button fn-button--secondary is-active"
     >
       
         
@@ -1588,22 +1649,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--transparent is-active"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--neutral is-active"
+      class="fn-button fn-button--secondary fn-button--emphasized is-active"
     >
       
         
@@ -1634,7 +1680,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost is-focus"
+      class="fn-button fn-button--secondary is-focus"
     >
       
         
@@ -1649,22 +1695,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--transparent is-focus"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--neutral is-focus"
+      class="fn-button fn-button--secondary fn-button--emphasized is-focus"
     >
       
         
@@ -1695,7 +1726,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost"
+      class="fn-button fn-button--secondary"
       disabled=""
     >
       
@@ -1711,23 +1742,7 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--transparent"
-      disabled=""
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--neutral"
+      class="fn-button fn-button--secondary fn-button--emphasized"
       disabled=""
     >
       
@@ -1745,11 +1760,13 @@ exports[`Storyshots Experimental/Button Secondary Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Segmented Button 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -1763,6 +1780,10 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -1806,7 +1827,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -1821,7 +1842,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -1836,7 +1857,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -1851,7 +1872,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -1885,7 +1906,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-right"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -1905,7 +1926,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--selected fn-button--icon-right"
+        class="fn-button fn-button--selected"
       >
         
             
@@ -1925,7 +1946,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-right"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -1945,7 +1966,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-right"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -1965,7 +1986,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-right"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -2004,7 +2025,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-left"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -2024,7 +2045,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-left"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -2044,7 +2065,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--selected fn-button--icon-left"
+        class="fn-button fn-button--selected"
       >
         
             
@@ -2064,7 +2085,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-left"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -2084,7 +2105,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent fn-button--icon-left"
+        class="fn-button fn-button--layout"
       >
         
             
@@ -2124,7 +2145,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
         
       <button
         aria-label="Share"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
             
@@ -2138,7 +2159,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
         
       <button
         aria-label="Share"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
             
@@ -2152,7 +2173,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
         
       <button
         aria-label="Share"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
             
@@ -2180,7 +2201,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
         
       <button
         aria-label="Share"
-        class="fn-button fn-button--transparent fn-button--icon-only"
+        class="fn-button fn-button--layout fn-button--icon-only"
       >
         
             
@@ -2212,7 +2233,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
         disabled=""
       >
         
@@ -2228,7 +2249,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
         disabled=""
       >
         
@@ -2244,7 +2265,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
         disabled=""
       >
         
@@ -2260,7 +2281,7 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
       
         
       <button
-        class="fn-button fn-button--transparent"
+        class="fn-button fn-button--layout"
         disabled=""
       >
         
@@ -2297,11 +2318,13 @@ exports[`Storyshots Experimental/Button Segmented Button 1`] = `
   </div>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -2315,6 +2338,10 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -2340,21 +2367,14 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     <div>
       <b>
-        Accept
+        Positive
       </b>
     </div>
     
     
     <div>
       <b>
-        Success
-      </b>
-    </div>
-    
-    
-    <div>
-      <b>
-        Attention
+        Positive Emphasized
       </b>
     </div>
     
@@ -2368,7 +2388,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     <div>
       <b>
-        Reject
+        Critical Emphasized
       </b>
     </div>
     
@@ -2376,6 +2396,13 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     <div>
       <b>
         Negative
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Negative Emphasized
       </b>
     </div>
     
@@ -2397,7 +2424,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--accept"
+      class="fn-button fn-button--positive"
     >
       
         
@@ -2412,22 +2439,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--success"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--attention"
+      class="fn-button fn-button--positive fn-button--emphasized"
     >
       
         
@@ -2457,7 +2469,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--reject"
+      class="fn-button fn-button--critical fn-button--emphasized"
     >
       
         
@@ -2473,6 +2485,21 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     <button
       class="fn-button fn-button--negative"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--negative fn-button--emphasized"
     >
       
         
@@ -2503,7 +2530,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--accept is-hover"
+      class="fn-button fn-button--positive is-hover"
     >
       
         
@@ -2518,22 +2545,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--success is-hover"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--attention is-hover"
+      class="fn-button fn-button--positive fn-button--emphasized is-hover"
     >
       
         
@@ -2563,7 +2575,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--reject is-hover"
+      class="fn-button fn-button--critical fn-button--emphasized is-hover"
     >
       
         
@@ -2579,6 +2591,21 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     <button
       class="fn-button fn-button--negative is-hover"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--negative fn-button--emphasized is-hover"
     >
       
         
@@ -2609,7 +2636,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--accept is-active"
+      class="fn-button fn-button--positive is-active"
     >
       
         
@@ -2624,22 +2651,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--success is-active"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--attention is-active"
+      class="fn-button fn-button--positive fn-button--emphasized is-active"
     >
       
         
@@ -2669,7 +2681,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--reject is-active"
+      class="fn-button fn-button--critical fn-button--emphasized is-active"
     >
       
         
@@ -2685,6 +2697,21 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     <button
       class="fn-button fn-button--negative is-active"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--negative fn-button--emphasized is-active"
     >
       
         
@@ -2715,7 +2742,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--accept is-focus"
+      class="fn-button fn-button--positive is-focus"
     >
       
         
@@ -2730,22 +2757,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--success is-focus"
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--attention is-focus"
+      class="fn-button fn-button--positive fn-button--emphasized is-focus"
     >
       
         
@@ -2775,7 +2787,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--reject is-focus"
+      class="fn-button fn-button--critical fn-button--emphasized is-focus"
     >
       
         
@@ -2791,6 +2803,21 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     <button
       class="fn-button fn-button--negative is-focus"
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
+    
+    <button
+      class="fn-button fn-button--negative fn-button--emphasized is-focus"
     >
       
         
@@ -2821,7 +2848,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--accept"
+      class="fn-button fn-button--positive"
       disabled=""
     >
       
@@ -2837,23 +2864,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--success"
-      disabled=""
-    >
-      
-        
-      <span
-        class="fn-button__text"
-      >
-        Button
-      </span>
-      
-    
-    </button>
-    
-    
-    <button
-      class="fn-button fn-button--attention"
+      class="fn-button fn-button--positive fn-button--emphasized"
       disabled=""
     >
       
@@ -2885,7 +2896,7 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--reject"
+      class="fn-button fn-button--critical fn-button--emphasized"
       disabled=""
     >
       
@@ -2915,15 +2926,33 @@ exports[`Storyshots Experimental/Button Semantic Buttons 1`] = `
     
     </button>
     
+    
+    <button
+      class="fn-button fn-button--negative fn-button--emphasized"
+      disabled=""
+    >
+      
+        
+      <span
+        class="fn-button__text"
+      >
+        Button
+      </span>
+      
+    
+    </button>
+    
 
   </div>
   
 
-</section>
+</div>
 `;
 
-exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
-<section>
+exports[`Storyshots Experimental/Button Split Buttons 1`] = `
+<div
+  dir="ltr"
+>
   
 
   <style>
@@ -2937,6 +2966,507 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
         padding: 1rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-split-button"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+    
+    <div
+      class="fn-split-button fn-split-button--emphasized"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-split-button is-hover"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split is-hover"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-split-button fn-split-button--emphasized is-hover"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized is-hover"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :active
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-split-button is-hover"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split is-active"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-split-button fn-split-button--emphasized is-hover"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized is-active"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-split-button is-hover"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split is-focus"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-split-button fn-split-button--emphasized is-hover"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized is-focus"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-split-button is-disabled"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--secondary"
+        disabled=""
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split"
+        disabled=""
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+    
+    
+    <div
+      class="fn-split-button fn-split-button--emphasized is-disabled"
+    >
+      
+        
+      <button
+        class="fn-button fn-button--emphasized"
+        disabled=""
+      >
+        
+            
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+        
+      </button>
+      
+        
+      <button
+        aria-label="nested button"
+        class="fn-nested-button fn-nested-button--split fn-nested-button--emphasized"
+        disabled=""
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-container &gt; div {
+        text-align: center;
     }
 
     .docs-fn-header-container {
@@ -3006,7 +3536,7 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost"
+      class="fn-button fn-button--secondary"
     >
       
         
@@ -3052,7 +3582,7 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost is-hover"
+      class="fn-button fn-button--secondary is-hover"
     >
       
         
@@ -3098,7 +3628,7 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost is-active"
+      class="fn-button fn-button--secondary is-active"
     >
       
         
@@ -3144,7 +3674,7 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost is-focus"
+      class="fn-button fn-button--secondary is-focus"
     >
       
         
@@ -3191,7 +3721,7 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
     
     
     <button
-      class="fn-button fn-button--ghost"
+      class="fn-button fn-button--secondary"
       disabled=""
     >
       
@@ -3209,5 +3739,5 @@ exports[`Storyshots Experimental/Button Toggle Buttons 1`] = `
   </div>
   
 
-</section>
+</div>
 `;

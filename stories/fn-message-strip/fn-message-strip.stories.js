@@ -29,28 +29,28 @@ export const Primary = () => `${localStyles}
     <div class="fn-message-strip">
         <span class="sap-icon sap-icon--message-information fn-message-strip__icon"></span>
         <span class="fn-message-strip__text">Information (default) Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
     <div class="fn-message-strip fn-message-strip--success">
         <span class="sap-icon sap-icon--message-success fn-message-strip__icon"></span>
         <span class="fn-message-strip__text">Success Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
     <div class="fn-message-strip fn-message-strip--warning">
         <span class="sap-icon sap-icon--message-warning fn-message-strip__icon"></span>
         <span class="fn-message-strip__text">Warning Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
     <div class="fn-message-strip fn-message-strip--error">
         <span class="sap-icon sap-icon--message-error fn-message-strip__icon"></span>
         <span class="fn-message-strip__text">Error Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
@@ -69,25 +69,25 @@ Primary.parameters = {
 export const NoIcon = () => `${localStyles}
     <div class="fn-message-strip">
         <span class="fn-message-strip__text">Information (default) Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
     <div class="fn-message-strip fn-message-strip--success">
         <span class="fn-message-strip__text">Success Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
     <div class="fn-message-strip fn-message-strip--warning">
         <span class="fn-message-strip__text">Warning Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
     <div class="fn-message-strip fn-message-strip--error">
         <span class="fn-message-strip__text">Error Message Strip Text</span>
-        <button class="fn-button fn-button--transparent fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
+        <button class="fn-button fn-button--layout fn-button--icon-only fn-message-strip__close-button" aria-label="Close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
     </div>
