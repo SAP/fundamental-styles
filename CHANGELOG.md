@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.118 (2022-02-03)
+
+
+### Features
+
+* **fn:** introduce Rating Indicator in Fiori Next [ci visual] ([#3138](https://github.com/SAP/fundamental-styles/issues/3138)) ([a1b4475](https://github.com/SAP/fundamental-styles/commit/a1b447588501685cd19ce21bceb99e1dbf5bd7c3))
+
 ## 0.21.0-rc.117 (2022-02-03)
 
 
