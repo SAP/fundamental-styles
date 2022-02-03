@@ -5,7 +5,7 @@ export default ({ searchTerm, setSearchTerm }) => {
     return (
         <>
             <div className="fn-search">
-                <span className="sap-icon sap-icon--search" />
+                <span className="fn-icon fn-icon--search" />
                 <input
                     type="search"
                     className="fn-search__input"
@@ -13,7 +13,7 @@ export default ({ searchTerm, setSearchTerm }) => {
                     onChange={(e) => setSearchTerm(e.target.value)}
                     placeholder="Search icon"
                 />
-                <span className="sap-icon sap-icon--navigation-right-arrow" />
+                <span className="fn-icon fn-icon--navigation-right-arrow" />
             </div>
         </>
     );

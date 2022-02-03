@@ -8,14 +8,16 @@ import { SAPContext } from '../../.storybook/custom/hooks/SAPContext';
 import useStyles from '../../.storybook/custom/hooks/useStyles';
 import useThemedStoryContainers from '../../.storybook/custom/hooks/useThemedStoryContainers';
 import themeVariablesManager from '../../.storybook/custom/styleChangers/dev/themeVariablesManager';
+import AvailableIcons from './AvailableIcons/AvailableIcons';
+import Description from './description.md';
+
 import customStyles from '../../.storybook/custom/DocsPage.scss';
 import fnSearch from '../../src/fn/fn-search.scss';
 import layoutGrid from '../../src/styles/layout-grid.scss';
 import layoutPanel from '../../src/styles/layout-panel.scss';
 import link from '../../src/styles/link.scss';
 import section from '../../src/styles/section.scss';
-import AvailableIcons from './AvailableIcons/AvailableIcons';
-import Description from './description.md';
+import nestedButton from '../../src/fn/fn-button.scss';
 
 const themeManager = themeVariablesManager('IconsDocsPage');
 
@@ -23,7 +25,7 @@ export default () => {
     const docsContext = useContext(DocsContext);
     const sapContext = useContext(SAPContext);
 
-    useStyles(customStyles, fnSearch, section, layoutPanel, layoutGrid, link);
+    useStyles(customStyles, fnSearch, section, layoutPanel, layoutGrid, link, nestedButton);
     useEffect(() => {
         themeManager.use('sap_fiori_3');
     }, []);
