@@ -8,22 +8,109 @@ exports[`Storyshots Experimental/Notification Notification 1`] = `
     
   <div
     class="fn-notification"
-    style="max-width: 40rem"
   >
     
         
-    <h1
-      class="fn-notification__title"
+    <div
+      class="fn-notification__main-container"
     >
-      Notification Title
-    </h1>
+      
+            
+      <div
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+      >
+        
+                
+        <div
+          class="fn-avatar__initials"
+        >
+          M
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-notification__text-container"
+      >
+        
+                
+        <span
+          class="fn-notification__title"
+        >
+          Quo culpa sint aut tempora rerum placeat.
+        </span>
+        
+                
+        <span
+          class="fn-notification__text"
+        >
+          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.
+        </span>
+        
+            
+      </div>
+      
+            
+      <button
+        aria-label="More"
+        class="fn-button fn-button--layout fn-button--icon-only"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+            
+      </button>
+      
+        
+    </div>
     
         
-    <span
-      class="fn-notification__subtitle"
+    <div
+      class="fn-notification__button-container"
     >
-      Notification Subtitle
-    </span>
+      
+            
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--accept"
+        />
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Approve
+        </span>
+        
+            
+      </button>
+      
+            
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Reject
+        </span>
+        
+            
+      </button>
+      
+        
+    </div>
     
     
   </div>
@@ -32,66 +119,117 @@ exports[`Storyshots Experimental/Notification Notification 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Notification Data Notification 1`] = `
+exports[`Storyshots Experimental/Notification Semantic Notification 1`] = `
 <div
   dir="ltr"
 >
   
     
   <div
-    class="fn-notification fn-notification--data"
-    style="max-width: 40rem"
-  >
-    
-        
-    <h1
-      class="fn-notification__title"
-    >
-      Data Notification Title
-    </h1>
-    
-        
-    <span
-      class="fn-notification__subtitle"
-    >
-      Notification Subtitle
-    </span>
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fn-notification fn-notification--data is-focus"
-    style="max-width: 40rem"
+    class="fn-notification fn-notification--positive"
   >
     
         
     <div
-      class="fn-notification__title-icon-button-container"
+      class="fn-notification__semantic-container"
     >
       
             
-      <h1
-        class="fn-notification__title"
+      <div
+        class="fn-object-status fn-object-status--positive"
       >
-        Focused Data Notification Title
-      </h1>
+        
+                
+        <span
+          class="sap-icon sap-icon--status-positive"
+        />
+        
+            
+      </div>
+      
+            
+      <span
+        class="fn-notification__semantic-title"
+      >
+        Positive
+      </span>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__main-container"
+    >
+      
+            
+      <div
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+      >
+        
+                
+        <div
+          class="fn-avatar__initials"
+        >
+          M
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-notification__text-container"
+      >
+        
+                
+        <span
+          class="fn-notification__text"
+        >
+          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__button-container"
+    >
       
             
       <button
-        class="fn-button fn-button--secondary fn-notification__title-button"
+        class="fn-button fn-button--emphasized"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--accept"
+        />
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Approve
+        </span>
+        
+            
+      </button>
+      
+            
+      <button
+        class="fn-button fn-button--secondary"
       >
         
                 
         <span
           class="fn-button__text"
         >
-          Button
+          Reject
         </span>
         
             
@@ -105,36 +243,55 @@ exports[`Storyshots Experimental/Notification Data Notification 1`] = `
   
     
   <br />
-  <br />
   
     
   <div
-    aria-selected="true"
-    class="fn-notification fn-notification--data is-selected"
-    style="max-width: 40rem"
+    class="fn-notification fn-notification--info"
   >
     
         
     <div
-      class="fn-notification__title-icon-button-container"
+      class="fn-notification__semantic-container"
     >
       
             
       <div
-        class="fn-avatar fn-avatar--xs fn-avatar--circle fn-notification__title-icon"
+        class="fn-object-status fn-object-status--info"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--status-positive"
+        />
+        
+            
+      </div>
+      
+            
+      <span
+        class="fn-notification__semantic-title"
+      >
+        Information
+      </span>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__main-container"
+    >
+      
+            
+      <div
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
       >
         
                 
         <div
-          class="fn-avatar__icon"
+          class="fn-avatar__initials"
         >
-          
-                    
-          <span
-            class="sap-icon sap-icon--accept"
-          />
-          
-                
+          M
         </div>
         
             
@@ -142,25 +299,61 @@ exports[`Storyshots Experimental/Notification Data Notification 1`] = `
       
             
       <div
-        class="fn-notification__title-container"
+        class="fn-notification__text-container"
       >
         
                 
-        <h1
-          class="fn-notification__title"
-        >
-          Selected Data Notification Title
-        </h1>
-        
-                
         <span
-          class="fn-notification__subtitle"
+          class="fn-notification__text"
         >
-          Notification Subtitle
+          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.
         </span>
         
             
       </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__button-container"
+    >
+      
+            
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--accept"
+        />
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Approve
+        </span>
+        
+            
+      </button>
+      
+            
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Reject
+        </span>
+        
+            
+      </button>
       
         
     </div>
@@ -170,8 +363,244 @@ exports[`Storyshots Experimental/Notification Data Notification 1`] = `
   
     
   <br />
-  <br />
+  
     
+  <div
+    class="fn-notification fn-notification--critical"
+  >
+    
+        
+    <div
+      class="fn-notification__semantic-container"
+    >
+      
+            
+      <div
+        class="fn-object-status fn-object-status--critical"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--status-critical"
+        />
+        
+            
+      </div>
+      
+            
+      <span
+        class="fn-notification__semantic-title"
+      >
+        Critical
+      </span>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__main-container"
+    >
+      
+            
+      <div
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+      >
+        
+                
+        <div
+          class="fn-avatar__initials"
+        >
+          M
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-notification__text-container"
+      >
+        
+                
+        <span
+          class="fn-notification__text"
+        >
+          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__button-container"
+    >
+      
+            
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--accept"
+        />
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Approve
+        </span>
+        
+            
+      </button>
+      
+            
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Reject
+        </span>
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  
+    
+  <div
+    class="fn-notification fn-notification--negative"
+  >
+    
+        
+    <div
+      class="fn-notification__semantic-container"
+    >
+      
+            
+      <div
+        class="fn-object-status fn-object-status--negative"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--status-negative"
+        />
+        
+            
+      </div>
+      
+            
+      <span
+        class="fn-notification__semantic-title"
+      >
+        Negative
+      </span>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__main-container"
+    >
+      
+            
+      <div
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+      >
+        
+                
+        <div
+          class="fn-avatar__initials"
+        >
+          M
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-notification__text-container"
+      >
+        
+                
+        <span
+          class="fn-notification__text"
+        >
+          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      class="fn-notification__button-container"
+    >
+      
+            
+      <button
+        class="fn-button fn-button--emphasized"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--accept"
+        />
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Approve
+        </span>
+        
+            
+      </button>
+      
+            
+      <button
+        class="fn-button fn-button--secondary"
+      >
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Reject
+        </span>
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
 
 </div>
 `;

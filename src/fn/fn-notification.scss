@@ -73,32 +73,16 @@ $notification-colors: (
 
     .#{$block}__semantic-title {
       @include fn-reset();
-      @include fn-set-margin-left(0.5rem);
 
       font-size: 1.125rem;
       line-height: 1.375rem;
       font-weight: bold;
-    }
-
-    .#{$block}__semantic-icon {
-      @include fn-reset();
-      @include fn-set-rectangle(1rem, 1rem);
-
-      span {
-        color: $fn-color-white;
-        margin-top: 0.125rem;
-      }
     }
   }
 
   @each $set-name, $color-set in $notification-colors {
     &--#{$set-name} {
       border-color: map_get($color-set, "color");
-
-      .#{$block}__semantic-icon {
-        background: map_get($color-set, "color");
-        border-color: map_get($color-set, "color");
-      }
     }
   }
 }
