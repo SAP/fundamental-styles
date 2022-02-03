@@ -28,31 +28,31 @@ $notification-colors: (
     @include fn-reset();
     @include fn-flex();
 
-    .#{$block}__text-container {
-      @include fn-reset();
-      @include fn-flex(column);
-
-      width: 20rem;
-
-      .#{$block}__title {
-        @include fn-reset();
-        @include fn-set-margin-left($fn-notification-text-padding);
-
-        color: $fn-color-grey-700;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-      }
-
-      .#{$block}__text {
-        @include fn-reset();
-        @include fn-set-margin-left($fn-notification-text-padding);
-
-        color: $fn-color-grey-500;
-      }
-    }
-
     button:last-child {
       @include fn-set-margin-left(auto);
+    }
+  }
+
+  &__text-container {
+    @include fn-reset();
+    @include fn-flex(column);
+
+    width: 20rem;
+
+    .#{$block}__title {
+      @include fn-reset();
+      @include fn-set-margin-left($fn-notification-text-padding);
+
+      color: $fn-color-grey-700;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .#{$block}__text {
+      @include fn-reset();
+      @include fn-set-margin-left($fn-notification-text-padding);
+
+      color: $fn-color-grey-500;
     }
   }
 
@@ -70,9 +70,8 @@ $notification-colors: (
 
   &__semantic-container {
     @include fn-reset();
-    @include fn-flex();
+    @include fn-flex-vertical-center();
 
-    align-items: center;
     margin-bottom: 1.75rem;
 
     .#{$block}__semantic-title {
