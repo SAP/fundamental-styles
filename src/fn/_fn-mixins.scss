@@ -126,6 +126,13 @@
   }
 }
 
+@mixin fn-focus-within() {
+  &:focus-within,
+  &.is-focus-within {
+    @content;
+  }
+}
+
 @mixin fn-display() {
   &.is-display {
     @content;
