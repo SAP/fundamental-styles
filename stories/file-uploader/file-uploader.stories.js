@@ -3,8 +3,9 @@ export default {
     parameters: {
         description: `
 The File Uploader component allows the user to select the files from the system to upload.
-The File Uploader component is an opinionated composition of the input and button components.
-Please refer to the input and button components documentation for the complete list of modifiers.
+It is an opinionated composition of the input and button components.
+
+##Usage
 
 ##Usage
 
@@ -54,7 +55,11 @@ export const Primary = () => `<div class="fd-form-item">
 Primary.storyName = 'Default';
 Primary.parameters = {
     docs: {
-        iframeHeight: 250
+        iframeHeight: 250,
+        description: {
+            story: `File Uploader is a composition of the \`fd-input\` class and the \`fd-button\` one. The button triggers the action of searching for 
+            the file which needs to be uploaded. The input field shows the predetermined title i.e. Choose a file for upload.`
+        }
     }
 };
 
