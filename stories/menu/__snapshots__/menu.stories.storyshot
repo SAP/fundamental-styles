@@ -277,7 +277,9 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes 1`] = `
 `;
 
 exports[`Storyshots Components/Menu Desktop and Tablet Modes with vertical overflow 1`] = `
-<section>
+<div
+  dir="ltr"
+>
   
 
   <label
@@ -861,7 +863,7 @@ exports[`Storyshots Components/Menu Desktop and Tablet Modes with vertical overf
   </nav>
   
 
-</section>
+</div>
 `;
 
 exports[`Storyshots Components/Menu List different states 1`] = `
