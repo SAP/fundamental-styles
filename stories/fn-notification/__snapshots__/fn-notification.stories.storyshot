@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Notification Notification 1`] = `
+<div
+  dir="ltr"
+>
+  
+    
+  <div
+    class="fn-notification"
+    style="max-width: 40rem"
+  >
+    
+        
+    <h1
+      class="fn-notification__title"
+    >
+      Notification Title
+    </h1>
+    
+        
+    <span
+      class="fn-notification__subtitle"
+    >
+      Notification Subtitle
+    </span>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Experimental/Notification Data Notification 1`] = `
+<div
+  dir="ltr"
+>
+  
+    
+  <div
+    class="fn-notification fn-notification--data"
+    style="max-width: 40rem"
+  >
+    
+        
+    <h1
+      class="fn-notification__title"
+    >
+      Data Notification Title
+    </h1>
+    
+        
+    <span
+      class="fn-notification__subtitle"
+    >
+      Notification Subtitle
+    </span>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+    
+  <div
+    class="fn-notification fn-notification--data is-focus"
+    style="max-width: 40rem"
+  >
+    
+        
+    <div
+      class="fn-notification__title-icon-button-container"
+    >
+      
+            
+      <h1
+        class="fn-notification__title"
+      >
+        Focused Data Notification Title
+      </h1>
+      
+            
+      <button
+        class="fn-button fn-button--secondary fn-notification__title-button"
+      >
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+    
+  <div
+    aria-selected="true"
+    class="fn-notification fn-notification--data is-selected"
+    style="max-width: 40rem"
+  >
+    
+        
+    <div
+      class="fn-notification__title-icon-button-container"
+    >
+      
+            
+      <div
+        class="fn-avatar fn-avatar--xs fn-avatar--circle fn-notification__title-icon"
+      >
+        
+                
+        <div
+          class="fn-avatar__icon"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--accept"
+          />
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-notification__title-container"
+      >
+        
+                
+        <h1
+          class="fn-notification__title"
+        >
+          Selected Data Notification Title
+        </h1>
+        
+                
+        <span
+          class="fn-notification__subtitle"
+        >
+          Notification Subtitle
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+    
+
+</div>
+`;
