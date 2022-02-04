@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.124 (2022-02-04)
+
+
+### Bug Fixes
+
+* **fn:** add additional modifier classes to Dropdown ([#3146](https://github.com/SAP/fundamental-styles/issues/3146)) ([376613e](https://github.com/SAP/fundamental-styles/commit/376613e7981b824186faf291949d3b08a09538f1))
+
 ## 0.21.0-rc.123 (2022-02-04)
 
 
