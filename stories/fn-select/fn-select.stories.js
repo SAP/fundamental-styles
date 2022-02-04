@@ -4,7 +4,7 @@ export default {
         description: `
 
         `,
-        components: ['fn-input', 'fn-nested-button', 'fn-select', 'icon']
+        components: ['fn-input', 'fn-nested-button', 'icon']
     }
 };
 
