@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.121 (2022-02-04)
+
+
+### Features
+
+* **fn:** introduce Dropdown in Fiori Next ([#3144](https://github.com/SAP/fundamental-styles/issues/3144)) ([91a53d8](https://github.com/SAP/fundamental-styles/commit/91a53d8a9b0d56ba663e1788589aad09692696a2))
+
 ## 0.21.0-rc.120 (2022-02-04)
 
 
