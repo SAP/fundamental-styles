@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Combobox',
+    title: 'FN Components/Combobox',
     parameters: {
         description: `
 

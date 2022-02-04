@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Info Label',
+    title: 'FN Components/Info Label',
     parameters: {
         description: `
 **Modifier classes for Info Label style:**

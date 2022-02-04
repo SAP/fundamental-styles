@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Link',
+    title: 'FN Components/Link',
     parameters: {
         description: `
 Link has 2 options: regular and emphasized

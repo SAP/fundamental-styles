@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/List',
+    title: 'FN Components/List',
     parameters: {
         components: ['fn-list', 'icon', 'fn-button', 'fn-checkbox', 'fn-object-status', 'fn-avatar']
     }

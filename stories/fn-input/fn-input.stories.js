@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Input',
+    title: 'FN Components/Input',
     parameters: {
         description: `**Modifier classes for text field:**
 

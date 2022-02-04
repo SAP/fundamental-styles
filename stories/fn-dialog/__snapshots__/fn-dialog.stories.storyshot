@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Dialog Dialog 1`] = `
+exports[`Storyshots FN Components/Dialog Dialog 1`] = `
 <div
   dir="ltr"
 >

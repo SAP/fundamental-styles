@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
+exports[`Storyshots FN Components/Message Box Confirmation Message Box 1`] = `
 <div
   dir="ltr"
 >
@@ -159,7 +159,7 @@ exports[`Storyshots Experimental/Message Box Confirmation Message Box 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Message Box Critical Message Box 1`] = `
+exports[`Storyshots FN Components/Message Box Critical Message Box 1`] = `
 <div
   dir="ltr"
 >
@@ -281,7 +281,7 @@ exports[`Storyshots Experimental/Message Box Critical Message Box 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Message Box Info Message Box 1`] = `
+exports[`Storyshots FN Components/Message Box Info Message Box 1`] = `
 <div
   dir="ltr"
 >
@@ -403,7 +403,7 @@ exports[`Storyshots Experimental/Message Box Info Message Box 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Message Box Message Box 1`] = `
+exports[`Storyshots FN Components/Message Box Message Box 1`] = `
 <div
   dir="ltr"
 >
@@ -557,7 +557,7 @@ exports[`Storyshots Experimental/Message Box Message Box 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Message Box Negative Message Box 1`] = `
+exports[`Storyshots FN Components/Message Box Negative Message Box 1`] = `
 <div
   dir="ltr"
 >
@@ -679,7 +679,7 @@ exports[`Storyshots Experimental/Message Box Negative Message Box 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Message Box Positive Message Box 1`] = `
+exports[`Storyshots FN Components/Message Box Positive Message Box 1`] = `
 <div
   dir="ltr"
 >

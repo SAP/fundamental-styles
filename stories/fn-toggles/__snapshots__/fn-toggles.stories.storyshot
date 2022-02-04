@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
+exports[`Storyshots FN Components/Toggles Checkbox 1`] = `
 <div
   dir="ltr"
 >
@@ -783,7 +783,7 @@ exports[`Storyshots Experimental/Toggles Checkbox 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
+exports[`Storyshots FN Components/Toggles Checkbox Group 1`] = `
 <div
   dir="ltr"
 >
@@ -1149,7 +1149,7 @@ exports[`Storyshots Experimental/Toggles Checkbox Group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Toggles Radio 1`] = `
+exports[`Storyshots FN Components/Toggles Radio 1`] = `
 <div
   dir="ltr"
 >
@@ -1933,7 +1933,7 @@ exports[`Storyshots Experimental/Toggles Radio 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
+exports[`Storyshots FN Components/Toggles Radio Group 1`] = `
 <div
   dir="ltr"
 >
@@ -2299,7 +2299,7 @@ exports[`Storyshots Experimental/Toggles Radio Group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Toggles Switch 1`] = `
+exports[`Storyshots FN Components/Toggles Switch 1`] = `
 <div
   dir="ltr"
 >

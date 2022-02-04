@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Shell Extra large 1`] = `
+exports[`Storyshots FN Components/Shell Extra large 1`] = `
 <div
   dir="ltr"
 >
@@ -137,7 +137,7 @@ exports[`Storyshots Experimental/Shell Extra large 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Shell Large 1`] = `
+exports[`Storyshots FN Components/Shell Large 1`] = `
 <div
   dir="ltr"
 >
@@ -274,7 +274,7 @@ exports[`Storyshots Experimental/Shell Large 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Shell Medium 1`] = `
+exports[`Storyshots FN Components/Shell Medium 1`] = `
 <div
   dir="ltr"
 >
@@ -392,7 +392,7 @@ exports[`Storyshots Experimental/Shell Medium 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Shell Small 1`] = `
+exports[`Storyshots FN Components/Shell Small 1`] = `
 <div
   dir="ltr"
 >
