@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Dropdown',
+    title: 'FN Components/Dropdown',
     parameters: {
         components: ['fn-dropdown']
     }
