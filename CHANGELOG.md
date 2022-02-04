@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.125 (2022-02-04)
+
+
+### Features
+
+* **fn:** svg icons ([#3140](https://github.com/SAP/fundamental-styles/issues/3140)) ([c3fe1af](https://github.com/SAP/fundamental-styles/commit/c3fe1afe5902ce78c0d609b9332922e5544c4577))
+
 ## 0.21.0-rc.124 (2022-02-04)
 
 
