@@ -1,6 +1,7 @@
 import { DocsContext, DocsStory, Heading, Subtitle, Title } from '@storybook/addon-docs';
 import React, { useContext } from 'react';
 import DocsPageStyles from '../DocsPage.scss';
+import visibleStories from '../helpers/visibleStories';
 import { SAPContext } from '../hooks/SAPContext';
 import useStyles from '../hooks/useStyles';
 import useThemedStoryContainers from '../hooks/useThemedStoryContainers';
@@ -23,10 +24,7 @@ const DocsPage = () => {
         return null;
     }
 
-    // do not display disabled stories (dev only)
-    const stories = docsContext
-        .componentStories()
-        .filter((story) => story.kind === docsContext.kind && !story.parameters?.docs?.disable);
+    const stories = visibleStories(docsContext);
 
     return (
         <>

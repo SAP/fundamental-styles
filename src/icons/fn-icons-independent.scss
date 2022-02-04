@@ -1,0 +1,24 @@
+@import "icon-names";
+@import "icon-sizes";
+@import "mixins";
+
+$block: fn-icon;
+
+.#{$block} {
+  display: inline-block;
+  background-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: black;
+  width: 16px;
+  height: 16px;
+  position: relative;
+
+  // @include fn-icon-control-enumeration($block);
+  // @include fn-icon-sizes($block);
+
+  @each $iconName, $fileName in $iconNames {
+    &--#{$iconName} {
+      -webkit-mask-image: url("./fiori/#{$fileName}");
+    }
+  }
+}
