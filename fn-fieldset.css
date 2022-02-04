@@ -1,0 +1,53 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-fieldset {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fn-fieldset::after,
+.fn-fieldset::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-fieldset label:not(:last-child) {
+  margin-bottom: .375rem
+}
+.fn-fieldset--horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+.fn-fieldset--horizontal label:not(:last-child) {
+  margin-right: .75rem
+}
+.fn-fieldset--horizontal label:not(:last-child)[dir=rtl],
+[dir=rtl] .fn-fieldset--horizontal label:not(:last-child) {
+  margin-right: 0;
+  margin-left: .75rem
+}
+.fn-fieldset--full-width label {
+  width: 100%
+}

@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-popover {
@@ -20,8 +20,7 @@
   border: 0;
   position: relative;
   display: inline-block;
-  text-shadow: none;
-  text-shadow: var(--fdPopover_Text_Shadow,none)
+  text-shadow: var(--fdPopover_Text_Shadow)
 }
 .fd-popover::after,
 .fd-popover::before {

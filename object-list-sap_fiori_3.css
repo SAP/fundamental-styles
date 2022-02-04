@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-list {
@@ -80,7 +80,7 @@
 }
 .fd-list__item.is-focus::before,
 .fd-list__item:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border: .0625rem dotted #000;
@@ -608,7 +608,7 @@
 }
 .fd-list__link.is-focus::before,
 .fd-list__link:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border: .0625rem dotted #000;
@@ -1801,7 +1801,7 @@
   font-size: inherit
 }
 .fd-list .fd-list__navigation-item-indicator::after {
-  content: '';
+  content: "";
   width: .1875rem;
   display: inline-block;
   position: absolute;
@@ -2146,7 +2146,7 @@
 }
 .fd-list__navigation-item--condensed .fd-list__navigation-item-arrow::before {
   display: inline-block;
-  content: '';
+  content: "";
   min-width: 0;
   min-height: 0;
   margin-right: .75rem;
@@ -2256,7 +2256,7 @@
 }
 .fd-list__navigation-item-arrow.is-focus::after,
 .fd-list__navigation-item-arrow:focus::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border: .0625rem dotted #000;
@@ -2309,7 +2309,7 @@
 }
 .fd-vertical-nav--navigation-indication .fd-list__navigation-item::after {
   min-width: 1.5rem;
-  content: ''
+  content: ""
 }
 .fd-vertical-nav--navigation-indication .fd-list__navigation-item.fd-list__navigation-item--link {
   padding-right: 0
@@ -2324,7 +2324,7 @@
 }
 .fd-vertical-nav--navigation-indication .fd-list__link::after {
   min-width: 2.5rem;
-  content: ''
+  content: ""
 }
 .fd-vertical-nav--navigation-indication .fd-list__link--navigation-indicator::after {
   display: -webkit-box;
@@ -2338,7 +2338,7 @@
   align-items: center;
   height: 100%;
   font-family: SAP-icons;
-  content: '\e1ed';
+  content: "\e1ed";
   color: #6a6d70;
   color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
   font-size: .75rem;
@@ -2348,7 +2348,7 @@
 }
 .fd-vertical-nav--navigation-indication .fd-list__link--navigation-indicator[dir=rtl]::after,
 [dir=rtl] .fd-vertical-nav--navigation-indication .fd-list__link--navigation-indicator::after {
-  content: '\e1ee'
+  content: "\e1ee"
 }
 .fd-vertical-nav--navigation-indication .fd-list__icon:last-child {
   margin: 0
@@ -2372,7 +2372,7 @@
 }
 .fd-list--navigation-indication .fd-list__item::after {
   min-width: 1.5rem;
-  content: ''
+  content: ""
 }
 .fd-list--navigation-indication .fd-list__item.fd-list__item--link {
   padding-right: 0
@@ -2387,7 +2387,7 @@
 }
 .fd-list--navigation-indication .fd-list__link::after {
   min-width: 2.5rem;
-  content: ''
+  content: ""
 }
 .fd-list--navigation-indication .fd-list__link--navigation-indicator::after {
   display: -webkit-box;
@@ -2401,7 +2401,7 @@
   align-items: center;
   height: 100%;
   font-family: SAP-icons;
-  content: '\e1ed';
+  content: "\e1ed";
   color: #6a6d70;
   color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
   font-size: .75rem;
@@ -2411,7 +2411,7 @@
 }
 .fd-list--navigation-indication .fd-list__link--navigation-indicator[dir=rtl]::after,
 [dir=rtl] .fd-list--navigation-indication .fd-list__link--navigation-indicator::after {
-  content: '\e1ee'
+  content: "\e1ee"
 }
 .fd-list--navigation-indication .fd-list__icon:last-child {
   margin: 0

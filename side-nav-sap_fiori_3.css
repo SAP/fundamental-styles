@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-nested-list {
@@ -2060,6 +2060,9 @@
   color: #0a6ed1;
   color: var(--sapLinkColor,#0a6ed1);
   pointer-events: none
+}
+.fd-side-nav__skip-link:focus > img {
+  vertical-align: bottom
 }
 .fd-side-nav__group-header {
   font-size: .875rem;

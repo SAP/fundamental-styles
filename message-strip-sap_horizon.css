@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -30,8 +29,7 @@
   color: var(--sapTextColor,#223548);
   background-color: #f5f6f7;
   background-color: var(--sapNeutralBackground,#f5f6f7);
-  border-width: .0625rem;
-  border-width: var(--fdMessageStrip_Border_Width,.0625rem);
+  border-width: var(--fdMessageStrip_Border_Width);
   border-style: solid;
   border-color: #6e87a0;
   border-color: var(--sapNeutralBorderColor,#6e87a0);
@@ -160,7 +158,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-message-strip--warning::before {
-  content: ""
+  content: "\e201"
 }
 .fd-message-strip--warning[dir=rtl]::before,
 [dir=rtl] .fd-message-strip--warning::before {
@@ -176,7 +174,7 @@
 }
 .fd-message-strip--warning[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--warning::after {
-  content: ""
+  content: "\e201"
 }
 .fd-message-strip--error {
   background-color: #ffeaf4;
@@ -197,7 +195,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-message-strip--error::before {
-  content: ""
+  content: "\e0b1"
 }
 .fd-message-strip--error[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--error::after {
@@ -209,7 +207,7 @@
 }
 .fd-message-strip--error[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--error::after {
-  content: ""
+  content: "\e0b1"
 }
 .fd-message-strip--success {
   background-color: #f5fae5;
@@ -230,7 +228,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-message-strip--success::before {
-  content: ""
+  content: "\e203"
 }
 .fd-message-strip--success[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--success::after {
@@ -242,7 +240,7 @@
 }
 .fd-message-strip--success[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--success::after {
-  content: ""
+  content: "\e203"
 }
 .fd-message-strip--information {
   background-color: #e1f4ff;
@@ -263,7 +261,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-message-strip--information::before {
-  content: ""
+  content: "\e202"
 }
 .fd-message-strip--information[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--information::after {
@@ -275,7 +273,7 @@
 }
 .fd-message-strip--information[dir=rtl]::after,
 [dir=rtl] .fd-message-strip--information::after {
-  content: ""
+  content: "\e202"
 }
 .fd-message-strip--no-icon {
   padding-left: 1rem

@@ -1,0 +1,132 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-token {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-top: .125rem;
+  padding-bottom: .125rem;
+  padding-left: .5rem;
+  padding-right: .125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  cursor: pointer;
+  height: 1.375rem;
+  background: #fff;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+}
+.fn-token::after,
+.fn-token::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-token[dir=rtl],
+[dir=rtl] .fn-token {
+  padding-right: .5rem;
+  padding-left: .125rem
+}
+.fn-token__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-right: .25rem;
+  line-height: 1rem;
+  font-size: .75rem;
+  color: #223548
+}
+.fn-token__text::after,
+.fn-token__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-token__text[dir=rtl],
+[dir=rtl] .fn-token__text {
+  margin-right: 0;
+  margin-left: .25rem
+}
+.fn-token__icon {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1.125rem;
+  height: 1.125rem
+}
+.fn-token__icon::after,
+.fn-token__icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-token__icon [class*=sap-icon] {
+  font-size: .625rem;
+  line-height: 1;
+  color: #475e75
+}
+.fn-token.is-hover,
+.fn-token:hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-token:focus:not(.focus-visible).is-hover,
+.fn-token:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-token.focus-visible,
+.fn-token.is-focus {
+  background: #d1efff;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-token.is-disabled,
+.fn-token:disabled,
+.fn-token[aria-disabled=true] {
+  outline: 0;
+  pointer-events: none;
+  opacity: .4
+}

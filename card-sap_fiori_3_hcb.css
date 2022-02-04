@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-card {
@@ -91,7 +92,7 @@
 }
 .fd-card__header.is-focus::before,
 .fd-card__header:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border: .125rem dotted #fff;
@@ -369,7 +370,7 @@
   font-size: inherit
 }
 .fd-card__currency::before {
-  content: '|\00a0'
+  content: "| "
 }
 .fd-card__currency[dir=rtl],
 [dir=rtl] .fd-card__currency {

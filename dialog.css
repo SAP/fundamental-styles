@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-dialog {
@@ -18,7 +17,7 @@
   height: 100%
 }
 .fd-dialog::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -280,11 +279,11 @@
   margin: 0;
   border: 0;
   position: absolute;
-  right: 0;
-  bottom: -4px;
   font-size: 1rem;
   cursor: se-resize;
-  overflow: hidden
+  overflow: hidden;
+  bottom: -.35rem;
+  right: .05rem
 }
 .fd-dialog__resize-handle::after,
 .fd-dialog__resize-handle::before {
@@ -294,8 +293,11 @@
 }
 .fd-dialog__resize-handle[dir=rtl],
 [dir=rtl] .fd-dialog__resize-handle {
-  right: unset;
-  left: 0;
+  right: auto;
+  left: .05rem
+}
+.fd-dialog__resize-handle[dir=rtl],
+[dir=rtl] .fd-dialog__resize-handle {
   cursor: sw-resize;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1)
@@ -308,9 +310,17 @@
   text-rendering: optimizeLegibility
 }
 .fd-dialog__resize-handle::after {
-  content: ""
+  content: "\e24f"
 }
 .fd-dialog__resize-handle::after {
   color: #0854a0;
   color: var(--sapButton_Lite_TextColor,#0854a0)
+}
+.fd-dialog--no-backdrop:not(.fd-dialog--targeted) {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 1000
 }

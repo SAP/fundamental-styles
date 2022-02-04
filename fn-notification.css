@@ -1,0 +1,246 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-notification {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: .75rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
+  box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
+  border: .125rem solid transparent;
+  width: 26.75rem
+}
+.fn-notification::after,
+.fn-notification::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification__main-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+.fn-notification__main-container::after,
+.fn-notification__main-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification__main-container button:last-child {
+  margin-left: auto
+}
+.fn-notification__main-container button:last-child[dir=rtl],
+[dir=rtl] .fn-notification__main-container button:last-child {
+  margin-right: auto;
+  margin-left: 0
+}
+.fn-notification__text-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 20rem
+}
+.fn-notification__text-container::after,
+.fn-notification__text-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification__text-container .fn-notification__title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-left: .75rem;
+  color: #223548;
+  font-weight: 700;
+  margin-bottom: .5rem
+}
+.fn-notification__text-container .fn-notification__title::after,
+.fn-notification__text-container .fn-notification__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification__text-container .fn-notification__title[dir=rtl],
+[dir=rtl] .fn-notification__text-container .fn-notification__title {
+  margin-right: .75rem;
+  margin-left: 0
+}
+.fn-notification__text-container .fn-notification__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-left: .75rem;
+  color: #475e75
+}
+.fn-notification__text-container .fn-notification__text::after,
+.fn-notification__text-container .fn-notification__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification__text-container .fn-notification__text[dir=rtl],
+[dir=rtl] .fn-notification__text-container .fn-notification__text {
+  margin-right: .75rem;
+  margin-left: 0
+}
+.fn-notification__button-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: auto;
+  margin-top: 1rem
+}
+.fn-notification__button-container::after,
+.fn-notification__button-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification__button-container[dir=rtl],
+[dir=rtl] .fn-notification__button-container {
+  margin-right: auto;
+  margin-left: 0
+}
+.fn-notification__button-container button:not(:last-child) {
+  margin-right: .375rem
+}
+.fn-notification__button-container button:not(:last-child)[dir=rtl],
+[dir=rtl] .fn-notification__button-container button:not(:last-child) {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fn-notification__semantic-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.75rem
+}
+.fn-notification__semantic-container::after,
+.fn-notification__semantic-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification__semantic-container .fn-notification__semantic-title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 700
+}
+.fn-notification__semantic-container .fn-notification__semantic-title::after,
+.fn-notification__semantic-container .fn-notification__semantic-title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-notification--positive {
+  border-color: #188918
+}
+.fn-notification--critical {
+  border-color: #f58b00
+}
+.fn-notification--negative {
+  border-color: #d20a0a
+}
+.fn-notification--info {
+  border-color: #0070f2
+}

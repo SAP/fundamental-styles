@@ -1,0 +1,244 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-message-box {
+  position: fixed;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+.fn-message-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a9b4be;
+  opacity: .6
+}
+.fn-message-box__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: 0;
+  overflow: hidden;
+  position: absolute;
+  min-width: 20rem;
+  min-height: 7.5rem;
+  max-width: calc(100vw - 10%);
+  max-height: calc(100vh - 6%);
+  -webkit-box-shadow: 0 32px 64px 0 rgba(0,0,0,.25),0 0 2px 0 rgba(0,0,0,.25);
+  box-shadow: 0 32px 64px 0 rgba(0,0,0,.25),0 0 2px 0 rgba(0,0,0,.25);
+  border-radius: .75rem
+}
+.fn-message-box__body {
+  overflow: auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative
+}
+/*!
+  .fn-message-box+(--active)
+    .fn-message-box__content
+      .fn-message-box__header
+      .fn-message-box__body+(--no-vertical-padding)
+      .fn-message-box__footer
+*/
+.fn-message-box {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: none
+}
+.fn-message-box::after,
+.fn-message-box::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-message-box__content {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #fff;
+  padding: 1.5rem 0 .75rem 0;
+  border-width: .125rem;
+  overflow: hidden
+}
+.fn-message-box__content::after,
+.fn-message-box__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-message-box__body {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 1.5rem
+}
+.fn-message-box__body::after,
+.fn-message-box__body::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-message-box--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.fn-message-box__header {
+  padding: 0 1.5rem
+}
+.fn-message-box__footer {
+  padding: .375rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  gap: .375rem
+}
+.fn-message-box--confirmation .fn-message-box__content {
+  border: .125rem solid #475e75
+}
+.fn-message-box--confirmation .fn-message-box__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-message-box--confirmation .fn-message-box__header [class*=sap-icon] {
+  font-size: 1rem;
+  margin-right: .46875rem;
+  color: #475e75
+}
+.fn-message-box--confirmation .fn-message-box__header [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-message-box--confirmation .fn-message-box__header [class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .46875rem
+}
+.fn-message-box--negative .fn-message-box__content {
+  border: .125rem solid #d20a0a
+}
+.fn-message-box--negative .fn-message-box__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-message-box--negative .fn-message-box__header [class*=sap-icon] {
+  font-size: 1rem;
+  margin-right: .46875rem;
+  color: #d20a0a
+}
+.fn-message-box--negative .fn-message-box__header [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-message-box--negative .fn-message-box__header [class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .46875rem
+}
+.fn-message-box--positive .fn-message-box__content {
+  border: .125rem solid #188918
+}
+.fn-message-box--positive .fn-message-box__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-message-box--positive .fn-message-box__header [class*=sap-icon] {
+  font-size: 1rem;
+  margin-right: .46875rem;
+  color: #188918
+}
+.fn-message-box--positive .fn-message-box__header [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-message-box--positive .fn-message-box__header [class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .46875rem
+}
+.fn-message-box--critical .fn-message-box__content {
+  border: .125rem solid #f58b00
+}
+.fn-message-box--critical .fn-message-box__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-message-box--critical .fn-message-box__header [class*=sap-icon] {
+  font-size: 1rem;
+  margin-right: .46875rem;
+  color: #f58b00
+}
+.fn-message-box--critical .fn-message-box__header [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-message-box--critical .fn-message-box__header [class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .46875rem
+}
+.fn-message-box--info .fn-message-box__content {
+  border: .125rem solid #0070f2
+}
+.fn-message-box--info .fn-message-box__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-message-box--info .fn-message-box__header [class*=sap-icon] {
+  font-size: 1rem;
+  margin-right: .46875rem;
+  color: #0070f2
+}
+.fn-message-box--info .fn-message-box__header [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-message-box--info .fn-message-box__header [class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .46875rem
+}

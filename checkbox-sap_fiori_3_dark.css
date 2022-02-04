@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -273,6 +273,13 @@
 .fd-checkbox[readonly]::placeholder {
   color: transparent
 }
+.fd-checkbox,
+.fd-checkbox.is-error,
+.fd-checkbox.is-information,
+.fd-checkbox.is-success,
+.fd-checkbox.is-warning {
+  border-style: initial
+}
 .fd-checkbox__label {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -370,24 +377,99 @@
 .fd-checkbox__label:focus {
   outline: 0
 }
-.fd-checkbox__label.is-empty,
-.fd-checkbox__label:empty {
-  padding: .6875rem;
-  margin: 0
+.fd-checkbox__label--required .fd-checkbox__text,
+.fd-checkbox__label[aria-required=true] .fd-checkbox__text {
+  padding-right: .5rem
 }
-.fd-checkbox__label.is-empty::after,
-.fd-checkbox__label.is-empty::before,
-.fd-checkbox__label:empty::after,
-.fd-checkbox__label:empty::before {
-  margin-right: 0;
-  margin-left: 0
+.fd-checkbox__label--required .fd-checkbox__text[dir=rtl],
+.fd-checkbox__label[aria-required=true] .fd-checkbox__text[dir=rtl],
+[dir=rtl] .fd-checkbox__label--required .fd-checkbox__text,
+[dir=rtl] .fd-checkbox__label[aria-required=true] .fd-checkbox__text {
+  padding-right: 0;
+  padding-left: .5rem
+}
+.fd-checkbox__label--required .fd-checkbox__text::after,
+.fd-checkbox__label[aria-required=true] .fd-checkbox__text::after {
+  content: "*";
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  font-weight: 700;
+  color: #e7a1a1;
+  color: var(--sapField_RequiredColor,#e7a1a1);
+  position: absolute;
+  padding-left: .125rem
+}
+.fd-checkbox__label--required .fd-checkbox__text[dir=rtl]::after,
+.fd-checkbox__label[aria-required=true] .fd-checkbox__text[dir=rtl]::after,
+[dir=rtl] .fd-checkbox__label--required .fd-checkbox__text::after,
+[dir=rtl] .fd-checkbox__label[aria-required=true] .fd-checkbox__text::after {
+  padding-left: 0;
+  padding-right: .125rem
+}
+.fd-checkbox__label-container {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 1rem;
+  pointer-events: none
+}
+.fd-checkbox__label-container::after,
+.fd-checkbox__label-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
 }
 .fd-checkbox__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.4;
+  line-height: var(--sapContent_LineHeight,1.4);
+  color: #fafafa;
+  color: var(--sapTextColor,#fafafa);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-left: .6875rem;
+  margin-right: 0;
+  margin-left: .6875rem;
   margin-right: 0
+}
+.fd-checkbox__text::after,
+.fd-checkbox__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-checkbox__text[dir=rtl],
+[dir=rtl] .fd-checkbox__text {
+  margin-right: .6875rem;
+  margin-left: 0
 }
 .fd-checkbox__text[dir=rtl],
 [dir=rtl] .fd-checkbox__text {
@@ -397,25 +479,33 @@
 .fd-checkbox:checked + .fd-checkbox__label::before {
   content: "\e05b"
 }
-.fd-checkbox:indeterminate + .fd-checkbox__label::before {
-  padding-left: .0625rem;
-  content: "\e17b";
-  font-size: .75rem
+.fd-checkbox:indeterminate + .fd-checkbox__label::after {
+  content: "";
+  width: .75rem;
+  height: .75rem;
+  background-color: #91c8f6;
+  background-color: var(--fdCheckbox_Selected_Color,var(--sapSelectedColor,#91c8f6));
+  position: absolute;
+  margin-left: .3125rem
 }
-.fd-checkbox:indeterminate + .fd-checkbox__label::before[dir=rtl],
-[dir=rtl] .fd-checkbox:indeterminate + .fd-checkbox__label::before {
-  padding-left: 0;
-  padding-right: .0625rem
+.fd-checkbox:indeterminate + .fd-checkbox__label--compact::after {
+  content: "";
+  width: .5rem;
+  height: .5rem;
+  background-color: #91c8f6;
+  background-color: var(--fdCheckbox_Selected_Color,var(--sapSelectedColor,#91c8f6));
+  position: absolute;
+  margin-left: .25rem
 }
-.fd-checkbox:indeterminate + .fd-checkbox__label--compact::before {
-  padding-left: .0625rem;
-  content: "\e17b";
-  font-size: .6rem
+.fd-checkbox[dir=rtl]:indeterminate + .fd-checkbox__label::after,
+[dir=rtl] .fd-checkbox:indeterminate + .fd-checkbox__label::after {
+  margin-left: 0;
+  margin-right: .3125rem
 }
-.fd-checkbox:indeterminate + .fd-checkbox__label--compact::before[dir=rtl],
-[dir=rtl] .fd-checkbox:indeterminate + .fd-checkbox__label--compact::before {
-  padding-left: 0;
-  padding-right: .0625rem
+.fd-checkbox[dir=rtl]:indeterminate + .fd-checkbox__label--compact::after,
+[dir=rtl] .fd-checkbox:indeterminate + .fd-checkbox__label--compact::after {
+  margin-left: 0;
+  margin-right: .25rem
 }
 .fd-checkbox.is-alert + .fd-checkbox__label::before,
 .fd-checkbox.is-warning + .fd-checkbox__label::before {
@@ -425,6 +515,11 @@
   border: .125rem var(--fdCheckbox_State_Border_Type,solid) var(--sapField_WarningColor,#fabd64);
   color: #fafafa;
   color: var(--sapField_TextColor,#fafafa)
+}
+.fd-checkbox.is-alert + .fd-checkbox__label::after,
+.fd-checkbox.is-warning + .fd-checkbox__label::after {
+  background-color: #fafafa;
+  background-color: var(--sapField_TextColor,#fafafa)
 }
 .fd-checkbox.is-alert + .fd-checkbox__label.is-hover.is-disabled,
 .fd-checkbox.is-alert + .fd-checkbox__label.is-hover:disabled,
@@ -441,6 +536,13 @@
   border-color: #fabd64;
   border-color: var(--sapField_WarningColor,#fabd64)
 }
+.fd-checkbox.is-alert + .fd-checkbox__label.is-hover::before,
+.fd-checkbox.is-alert + .fd-checkbox__label:hover::before,
+.fd-checkbox.is-warning + .fd-checkbox__label.is-hover::before,
+.fd-checkbox.is-warning + .fd-checkbox__label:hover::before {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a)
+}
 .fd-checkbox.is-error + .fd-checkbox__label::before {
   background-color: #29313a;
   background-color: var(--sapField_InvalidBackground,#29313a);
@@ -448,6 +550,10 @@
   border: .125rem var(--fdCheckbox_State_Border_Type,solid) var(--sapField_InvalidColor,#f88);
   color: #f88;
   color: var(--sapField_InvalidColor,#f88)
+}
+.fd-checkbox.is-error + .fd-checkbox__label::after {
+  background-color: #f88;
+  background-color: var(--sapField_InvalidColor,#f88)
 }
 .fd-checkbox.is-error + .fd-checkbox__label.is-hover.is-disabled,
 .fd-checkbox.is-error + .fd-checkbox__label.is-hover:disabled,
@@ -458,6 +564,11 @@
   border-color: #f88;
   border-color: var(--sapField_InvalidColor,#f88)
 }
+.fd-checkbox.is-error + .fd-checkbox__label.is-hover::before,
+.fd-checkbox.is-error + .fd-checkbox__label:hover::before {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a)
+}
 .fd-checkbox.is-success + .fd-checkbox__label::before {
   background-color: #29313a;
   background-color: var(--sapField_SuccessBackground,#29313a);
@@ -465,6 +576,10 @@
   border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_SuccessColor,#abe2ab);
   color: #abe2ab;
   color: var(--sapField_SuccessColor,#abe2ab)
+}
+.fd-checkbox.is-success + .fd-checkbox__label::after {
+  background-color: #abe2ab;
+  background-color: var(--sapField_SuccessColor,#abe2ab)
 }
 .fd-checkbox.is-success + .fd-checkbox__label.is-hover.is-disabled,
 .fd-checkbox.is-success + .fd-checkbox__label.is-hover:disabled,
@@ -475,6 +590,11 @@
   border-color: #abe2ab;
   border-color: var(--sapField_SuccessColor,#abe2ab)
 }
+.fd-checkbox.is-success + .fd-checkbox__label.is-hover::before,
+.fd-checkbox.is-success + .fd-checkbox__label:hover::before {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a)
+}
 .fd-checkbox.is-information + .fd-checkbox__label::before {
   background-color: #29313a;
   background-color: var(--sapField_InformationBackground,#29313a);
@@ -482,6 +602,10 @@
   border: .125rem var(--fdCheckbox_State_Border_Type,solid) var(--sapField_InformationColor,#91c8f6);
   color: #91c8f6;
   color: var(--sapField_InformationColor,#91c8f6)
+}
+.fd-checkbox.is-information + .fd-checkbox__label::after {
+  background-color: #91c8f6;
+  background-color: var(--sapField_InformationColor,#91c8f6)
 }
 .fd-checkbox.is-information + .fd-checkbox__label.is-hover.is-disabled,
 .fd-checkbox.is-information + .fd-checkbox__label.is-hover:disabled,
@@ -492,6 +616,11 @@
   border-color: #91c8f6;
   border-color: var(--sapField_InformationColor,#91c8f6)
 }
+.fd-checkbox.is-information + .fd-checkbox__label.is-hover::before,
+.fd-checkbox.is-information + .fd-checkbox__label:hover::before {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a)
+}
 .fd-checkbox.is-readonly + .fd-checkbox__label::before,
 .fd-checkbox[readonly] + .fd-checkbox__label::before {
   background-color: rgba(58,69,82,.5);
@@ -500,6 +629,11 @@
   border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_ReadOnly_BorderColor,#546375);
   color: #d3d7d9;
   color: var(--sapContent_NonInteractiveIconColor,#d3d7d9)
+}
+.fd-checkbox.is-readonly + .fd-checkbox__label::after,
+.fd-checkbox[readonly] + .fd-checkbox__label::after {
+  background-color: #d3d7d9;
+  background-color: var(--sapContent_NonInteractiveIconColor,#d3d7d9)
 }
 .fd-checkbox.is-readonly + .fd-checkbox__label.is-hover.is-disabled,
 .fd-checkbox.is-readonly + .fd-checkbox__label.is-hover:disabled,
@@ -515,6 +649,13 @@
 .fd-checkbox[readonly] + .fd-checkbox__label:hover[aria-disabled=true] {
   border-color: #546375;
   border-color: var(--sapField_ReadOnly_BorderColor,#546375)
+}
+.fd-checkbox.is-readonly + .fd-checkbox__label.is-hover::before,
+.fd-checkbox.is-readonly + .fd-checkbox__label:hover::before,
+.fd-checkbox[readonly] + .fd-checkbox__label.is-hover::before,
+.fd-checkbox[readonly] + .fd-checkbox__label:hover::before {
+  background-color: #29313a;
+  background-color: var(--sapField_Hover_Background,#29313a)
 }
 .fd-checkbox.is-focus,
 .fd-checkbox:focus {
@@ -549,7 +690,8 @@
   padding: .5rem
 }
 .fd-checkbox--compact + .fd-checkbox__label::before {
-  font-size: .625rem;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
   height: 1rem;
   width: 1rem;
   min-width: 1rem;

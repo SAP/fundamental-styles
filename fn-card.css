@@ -1,0 +1,189 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-card {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
+  box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
+  min-height: 10.5rem;
+  min-width: 30rem;
+  padding: 1.5rem
+}
+.fn-card::after,
+.fn-card::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card--data {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+}
+.fn-card--data.is-hover,
+.fn-card--data:hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-card--data.is-focus,
+.fn-card--data:focus {
+  border: .125rem solid #0070f2
+}
+.fn-card--data.is-selected,
+.fn-card--data[aria-selected=true] {
+  background-color: #d1efff;
+  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
+  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+}
+.fn-card--data.is-selected.is-hover,
+.fn-card--data.is-selected:hover,
+.fn-card--data[aria-selected=true].is-hover,
+.fn-card--data[aria-selected=true]:hover {
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+}
+.fn-card__title-icon-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-card__title-icon-button-container .fn-card__title-button {
+  margin-left: auto
+}
+.fn-card__title-icon-button-container .fn-card__title-button[dir=rtl],
+[dir=rtl] .fn-card__title-icon-button-container .fn-card__title-button {
+  margin-right: auto;
+  margin-left: 0
+}
+.fn-card__title-icon-button-container .fn-card__title-icon {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-right: .5rem;
+  background: #0070f2;
+  border-color: #0070f2
+}
+.fn-card__title-icon-button-container .fn-card__title-icon::after,
+.fn-card__title-icon-button-container .fn-card__title-icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card__title-icon-button-container .fn-card__title-icon[dir=rtl],
+[dir=rtl] .fn-card__title-icon-button-container .fn-card__title-icon {
+  margin-right: 0;
+  margin-left: .5rem
+}
+.fn-card__title-icon-button-container .fn-card__title-icon span {
+  color: #fff;
+  margin-top: .125rem
+}
+.fn-card__title-icon-button-container .fn-card__title-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fn-card__title-icon-button-container .fn-card__title-container::after,
+.fn-card__title-icon-button-container .fn-card__title-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card__title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  color: #1a2733;
+  font-size: 1.125rem;
+  line-height: 1.375rem
+}
+.fn-card__title::after,
+.fn-card__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card__subtitle {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .75rem;
+  line-height: 1rem
+}
+.fn-card__subtitle::after,
+.fn-card__subtitle::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}

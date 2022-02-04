@@ -1,0 +1,1033 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-tabs {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 2.75rem;
+  list-style: none;
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+}
+.fn-tabs::after,
+.fn-tabs::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-tabs__icon {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: .25rem
+}
+.fn-tabs__icon::after,
+.fn-tabs__icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-tabs__icon[dir=rtl],
+[dir=rtl] .fn-tabs__icon {
+  margin-right: 0;
+  margin-left: .25rem
+}
+.fn-tabs__icon [class*=sap-icon] {
+  line-height: 1;
+  font-size: .9375rem
+}
+.fn-tabs .fn-tabs__button {
+  margin-left: .25rem
+}
+.fn-tabs .fn-tabs__button[dir=rtl],
+[dir=rtl] .fn-tabs .fn-tabs__button {
+  margin-right: .25rem;
+  margin-left: 0
+}
+.fn-tabs__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700
+}
+.fn-tabs__text::after,
+.fn-tabs__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-tabs__item {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  height: 1.625rem;
+  position: relative;
+  background: 0 0;
+  padding: .125rem .375rem;
+  border-radius: .25rem
+}
+.fn-tabs__item::after,
+.fn-tabs__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-tabs__item::before {
+  left: 0;
+  right: 0;
+  height: 0;
+  content: "";
+  width: 100%;
+  bottom: -.375rem;
+  position: absolute;
+  pointer-events: none;
+  border-radius: .125rem;
+  border-bottom: .125rem solid transparent
+}
+.fn-tabs__item + .fn-tabs__item {
+  margin-left: .75rem
+}
+.fn-tabs__item + .fn-tabs__item[dir=rtl],
+[dir=rtl] .fn-tabs__item + .fn-tabs__item {
+  margin-right: .75rem;
+  margin-left: 0
+}
+.fn-tabs__item .fn-tabs__text {
+  color: #475e75
+}
+.fn-tabs__item .fn-tabs__button [class*=sap-icon] {
+  color: #475e75
+}
+.fn-tabs__item .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #475e75
+}
+.fn-tabs__item .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs__item [class*=sap-icon] {
+  color: #475e75
+}
+.fn-tabs__item.is-hover,
+.fn-tabs__item:hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-tabs__item.is-hover.is-active,
+.fn-tabs__item.is-hover:active,
+.fn-tabs__item:hover.is-active,
+.fn-tabs__item:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item.is-active,
+.fn-tabs__item:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item:focus:not(.focus-visible).is-hover,
+.fn-tabs__item:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-tabs__item:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs__item:focus:not(.focus-visible).is-hover:active,
+.fn-tabs__item:focus:not(.focus-visible):hover.is-active,
+.fn-tabs__item:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item.focus-visible,
+.fn-tabs__item.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #475e75;
+  box-shadow: 0 0 0 .125rem #475e75
+}
+.fn-tabs__item.is-disabled,
+.fn-tabs__item:disabled,
+.fn-tabs__item[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__text {
+  color: #0070f2
+}
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__button [class*=sap-icon] {
+  color: #0070f2
+}
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #0070f2
+}
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
+  color: #0070f2
+}
+.fn-tabs__item.fn-tabs__item--selected.is-hover,
+.fn-tabs__item.fn-tabs__item--selected:hover {
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+}
+.fn-tabs__item.fn-tabs__item--selected.is-hover.is-active,
+.fn-tabs__item.fn-tabs__item--selected.is-hover:active,
+.fn-tabs__item.fn-tabs__item--selected:hover.is-active,
+.fn-tabs__item.fn-tabs__item--selected:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item.fn-tabs__item--selected.is-active,
+.fn-tabs__item.fn-tabs__item--selected:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover,
+.fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+}
+.fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover:active,
+.fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover.is-active,
+.fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs__item.fn-tabs__item--selected.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-tabs__item.fn-tabs__item--selected::before {
+  border-bottom-color: #0070f2
+}
+.fn-tabs__right-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: auto
+}
+.fn-tabs__right-container::after,
+.fn-tabs__right-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-tabs__right-container[dir=rtl],
+[dir=rtl] .fn-tabs__right-container {
+  margin-right: auto;
+  margin-left: 0
+}
+.fn-tabs--positive .fn-tabs__item .fn-tabs__text {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item .fn-tabs__button [class*=sap-icon] {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs--positive .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs--positive .fn-tabs__item [class*=sap-icon] {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item.is-hover,
+.fn-tabs--positive .fn-tabs__item:hover {
+  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
+  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16)
+}
+.fn-tabs--positive .fn-tabs__item.is-hover.is-active,
+.fn-tabs--positive .fn-tabs__item.is-hover:active,
+.fn-tabs--positive .fn-tabs__item:hover.is-active,
+.fn-tabs--positive .fn-tabs__item:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item.is-active,
+.fn-tabs--positive .fn-tabs__item:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item:focus:not(.focus-visible).is-hover,
+.fn-tabs--positive .fn-tabs__item:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
+  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16)
+}
+.fn-tabs--positive .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs--positive .fn-tabs__item:focus:not(.focus-visible).is-hover:active,
+.fn-tabs--positive .fn-tabs__item:focus:not(.focus-visible):hover.is-active,
+.fn-tabs--positive .fn-tabs__item:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item.focus-visible,
+.fn-tabs--positive .fn-tabs__item.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #188918;
+  box-shadow: 0 0 0 .125rem #188918
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__text {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button [class*=sap-icon] {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
+  color: #188918
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected.is-hover,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:hover {
+  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
+  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16)
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected.is-hover.is-active,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected.is-hover:active,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:hover.is-active,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected.is-active,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
+  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16)
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover:active,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover.is-active,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #188918;
+  box-shadow: 0 0 0 .125rem #188918
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected::before {
+  border-bottom-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.is-hover:active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:hover:active::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:active::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible)::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected {
+  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
+  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16)
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-hover:active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:hover:active::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:active::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible)::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover:active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover.is-active::before,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover:active::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected::before {
+  border-top-color: #188918
+}
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs--positive.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #188918;
+  box-shadow: 0 0 0 .125rem #188918
+}
+.fn-tabs--critical .fn-tabs__item .fn-tabs__text {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item .fn-tabs__button [class*=sap-icon] {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs--critical .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs--critical .fn-tabs__item [class*=sap-icon] {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.is-hover,
+.fn-tabs--critical .fn-tabs__item:hover {
+  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
+  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16)
+}
+.fn-tabs--critical .fn-tabs__item.is-hover.is-active,
+.fn-tabs--critical .fn-tabs__item.is-hover:active,
+.fn-tabs--critical .fn-tabs__item:hover.is-active,
+.fn-tabs--critical .fn-tabs__item:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item.is-active,
+.fn-tabs--critical .fn-tabs__item:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item:focus:not(.focus-visible).is-hover,
+.fn-tabs--critical .fn-tabs__item:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
+  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16)
+}
+.fn-tabs--critical .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs--critical .fn-tabs__item:focus:not(.focus-visible).is-hover:active,
+.fn-tabs--critical .fn-tabs__item:focus:not(.focus-visible):hover.is-active,
+.fn-tabs--critical .fn-tabs__item:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item.focus-visible,
+.fn-tabs--critical .fn-tabs__item.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #f58b00;
+  box-shadow: 0 0 0 .125rem #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__text {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button [class*=sap-icon] {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
+  color: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected.is-hover,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:hover {
+  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
+  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16)
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected.is-hover.is-active,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected.is-hover:active,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:hover.is-active,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected.is-active,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
+  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16)
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover:active,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover.is-active,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #f58b00;
+  box-shadow: 0 0 0 .125rem #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected::before {
+  border-bottom-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.is-hover:active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:hover:active::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:active::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible)::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected {
+  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
+  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16)
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-hover:active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:hover:active::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:active::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible)::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover:active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover.is-active::before,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover:active::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected::before {
+  border-top-color: #f58b00
+}
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs--critical.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #f58b00;
+  box-shadow: 0 0 0 .125rem #f58b00
+}
+.fn-tabs--negative .fn-tabs__item .fn-tabs__text {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item .fn-tabs__button [class*=sap-icon] {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs--negative .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs--negative .fn-tabs__item [class*=sap-icon] {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item.is-hover,
+.fn-tabs--negative .fn-tabs__item:hover {
+  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
+  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16)
+}
+.fn-tabs--negative .fn-tabs__item.is-hover.is-active,
+.fn-tabs--negative .fn-tabs__item.is-hover:active,
+.fn-tabs--negative .fn-tabs__item:hover.is-active,
+.fn-tabs--negative .fn-tabs__item:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item.is-active,
+.fn-tabs--negative .fn-tabs__item:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item:focus:not(.focus-visible).is-hover,
+.fn-tabs--negative .fn-tabs__item:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
+  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16)
+}
+.fn-tabs--negative .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs--negative .fn-tabs__item:focus:not(.focus-visible).is-hover:active,
+.fn-tabs--negative .fn-tabs__item:focus:not(.focus-visible):hover.is-active,
+.fn-tabs--negative .fn-tabs__item:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item.focus-visible,
+.fn-tabs--negative .fn-tabs__item.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #c35500;
+  box-shadow: 0 0 0 .125rem #c35500
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__text {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button [class*=sap-icon] {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
+  color: #fff
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
+  color: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected.is-hover,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:hover {
+  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
+  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16)
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected.is-hover.is-active,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected.is-hover:active,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:hover.is-active,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected.is-active,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
+  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16)
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover:active,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover.is-active,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #c35500;
+  box-shadow: 0 0 0 .125rem #c35500
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected::before {
+  border-bottom-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.is-hover:active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:hover:active::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:active::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible)::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected {
+  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
+  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16)
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-hover:active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:hover:active::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:active::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible)::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible).is-hover:active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover.is-active::before,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:focus:not(.focus-visible):hover:active::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected::before {
+  border-top-color: #d20a0a
+}
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs--negative.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #c35500;
+  box-shadow: 0 0 0 .125rem #c35500
+}
+.fn-tabs--multi-instance {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: 0 0
+}
+.fn-tabs--multi-instance .fn-tabs__item {
+  height: 1.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: .1875rem;
+  padding-bottom: .1875rem
+}
+.fn-tabs--multi-instance .fn-tabs__item .fn-tabs__button {
+  width: 0;
+  margin: 0;
+  opacity: 0
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover,
+.fn-tabs--multi-instance .fn-tabs__item:hover {
+  padding-left: .75rem;
+  padding-right: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:hover[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-hover,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:hover {
+  padding-right: .75rem;
+  padding-left: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item:hover .fn-tabs__button {
+  margin-left: .25rem;
+  opacity: 1;
+  width: 1.125rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:hover .fn-tabs__button[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-hover .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:hover .fn-tabs__button {
+  margin-right: .25rem;
+  margin-left: 0
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active,
+.fn-tabs--multi-instance .fn-tabs__item.is-hover:active,
+.fn-tabs--multi-instance .fn-tabs__item:hover.is-active,
+.fn-tabs--multi-instance .fn-tabs__item:hover:active {
+  padding-left: .75rem;
+  padding-right: .375rem;
+  height: 100%;
+  border-radius: .125rem .125rem 0 0
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item.is-hover:active[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:hover.is-active[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:hover:active[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-hover:active,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:hover.is-active,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:hover:active {
+  padding-right: .75rem;
+  padding-left: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item.is-hover:active .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item:hover.is-active .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item:hover:active .fn-tabs__button {
+  margin-left: .25rem;
+  opacity: 1;
+  width: 1.125rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item.is-hover:active .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:hover.is-active .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:hover:active .fn-tabs__button[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-hover:active .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:hover.is-active .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:hover:active .fn-tabs__button {
+  margin-right: .25rem;
+  margin-left: 0
+}
+.fn-tabs--multi-instance .fn-tabs__item.is-hover.is-active::before,
+.fn-tabs--multi-instance .fn-tabs__item.is-hover:active::before,
+.fn-tabs--multi-instance .fn-tabs__item:hover.is-active::before,
+.fn-tabs--multi-instance .fn-tabs__item:hover:active::before {
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: none;
+  border-radius: .125rem .125rem 0 0;
+  border-top: .125rem solid #0070f2
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible) {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible) .fn-tabs__button {
+  width: 0;
+  margin: 0;
+  opacity: 0
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover {
+  padding-left: .75rem;
+  padding-right: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover {
+  padding-right: .75rem;
+  padding-left: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover .fn-tabs__button {
+  margin-left: .25rem;
+  opacity: 1;
+  width: 1.125rem
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover .fn-tabs__button[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover .fn-tabs__button {
+  margin-right: .25rem;
+  margin-left: 0
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active {
+  padding-left: .75rem;
+  padding-right: .375rem;
+  height: 100%;
+  border-radius: .125rem .125rem 0 0
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active {
+  padding-right: .75rem;
+  padding-left: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active .fn-tabs__button {
+  margin-left: .25rem;
+  opacity: 1;
+  width: 1.125rem
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active .fn-tabs__button[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active .fn-tabs__button {
+  margin-right: .25rem;
+  margin-left: 0
+}
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover.is-active::before,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible).is-hover:active::before,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover.is-active::before,
+.fn-tabs--multi-instance .fn-tabs__item:focus:not(.focus-visible):hover:active::before {
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: none;
+  border-radius: .125rem .125rem 0 0;
+  border-top: .125rem solid #0070f2
+}
+.fn-tabs--multi-instance .fn-tabs__item.focus-visible,
+.fn-tabs--multi-instance .fn-tabs__item.is-focus {
+  padding-left: .75rem;
+  padding-right: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.focus-visible[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item.is-focus[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.focus-visible,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-focus {
+  padding-right: .75rem;
+  padding-left: .375rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.focus-visible .fn-tabs__button,
+.fn-tabs--multi-instance .fn-tabs__item.is-focus .fn-tabs__button {
+  margin-left: .25rem;
+  opacity: 1;
+  width: 1.125rem
+}
+.fn-tabs--multi-instance .fn-tabs__item.focus-visible .fn-tabs__button[dir=rtl],
+.fn-tabs--multi-instance .fn-tabs__item.is-focus .fn-tabs__button[dir=rtl],
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.focus-visible .fn-tabs__button,
+[dir=rtl] .fn-tabs--multi-instance .fn-tabs__item.is-focus .fn-tabs__button {
+  margin-right: .25rem;
+  margin-left: 0
+}
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected {
+  height: 100%;
+  border-radius: .125rem .125rem 0 0
+}
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected::before {
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: none;
+  border-radius: .125rem .125rem 0 0;
+  border-top: .125rem solid #0070f2
+}
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-hover,
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected:hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.focus-visible,
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-focus {
+  height: 1.75rem;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.focus-visible::before,
+.fn-tabs--multi-instance .fn-tabs__item.fn-tabs__item--selected.is-focus::before {
+  top: -.5rem
+}

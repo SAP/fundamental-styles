@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -69,7 +69,7 @@
 }
 .fd-form-label--required::after,
 .fd-form-label[aria-required=true]::after {
-  content: '*';
+  content: "*";
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   font-weight: 700;
@@ -97,7 +97,7 @@
   padding-right: .25rem
 }
 .fd-form-label--colon::before {
-  content: ':';
+  content: ":";
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   color: inherit;

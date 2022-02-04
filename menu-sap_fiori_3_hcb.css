@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-menu {
@@ -19,7 +18,9 @@
   padding: 0;
   margin: 0;
   border: 0;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   max-width: 20rem
 }
 .fd-menu::after,
@@ -111,9 +112,14 @@
 .fd-menu__sublist[aria-hidden=true] {
   display: none
 }
-.fd-menu__list > li {
-  position: relative;
-  width: 100%
+.fd-menu__list > .fd-menu__item {
+  width: 100%;
+  position: relative
+}
+.fd-menu__list--overflow {
+  overflow-y: scroll;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap
 }
 .fd-menu__separator {
   font-size: .875rem;
@@ -424,7 +430,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-menu__addon-after--submenu::before {
-  content: ""
+  content: "\e066"
 }
 .fd-menu__addon-after--submenu[dir=rtl]::before,
 [dir=rtl] .fd-menu__addon-after--submenu::before {
@@ -436,7 +442,7 @@
 }
 .fd-menu__addon-after--submenu[dir=rtl]::before,
 [dir=rtl] .fd-menu__addon-after--submenu::before {
-  content: ""
+  content: "\e067"
 }
 .fd-menu__shortcut {
   font-size: .875rem;
@@ -481,6 +487,15 @@
   padding-left: 0;
   padding-right: 1rem
 }
+.fd-menu--overflow {
+  overflow-y: scroll;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff;
+  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff);
+  box-shadow: 0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff;
+  box-shadow: var(--sapContent_Shadow1,0 0 1rem 0 rgba(255,255,255,.5),0 0 0 .125rem #fff);
+  border-radius: .25rem;
+  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+}
 .fd-menu--full-width {
   max-width: 100%
 }
@@ -508,7 +523,8 @@
   margin: 0 0 0 -.5rem
 }
 .fd-menu--mobile {
-  max-width: 100%
+  max-width: 100%;
+  width: 100%
 }
 .fd-menu--mobile .fd-menu__list,
 .fd-menu--mobile .fd-menu__sublist {

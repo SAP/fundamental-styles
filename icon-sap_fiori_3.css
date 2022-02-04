@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 [class*=sap-icon] {
@@ -264,3062 +263,3062 @@
   background-color: var(--sapPositiveElementColor,#107e3e)
 }
 .sap-icon--accidental-leave::before {
-  content: ""
+  content: "\e000"
 }
 .sap-icon--account::before {
-  content: ""
+  content: "\e001"
 }
 .sap-icon--wrench::before {
-  content: ""
+  content: "\e002"
 }
 .sap-icon--windows-doors::before {
-  content: ""
+  content: "\e003"
 }
 .sap-icon--washing-machine::before {
-  content: ""
+  content: "\e004"
 }
 .sap-icon--visits::before {
-  content: ""
+  content: "\e005"
 }
 .sap-icon--video::before {
-  content: ""
+  content: "\e006"
 }
 .sap-icon--travel-expense::before {
-  content: ""
+  content: "\e007"
 }
 .sap-icon--temperature::before {
-  content: ""
+  content: "\e008"
 }
 .sap-icon--task::before {
-  content: ""
+  content: "\e009"
 }
 .sap-icon--synchronize::before {
-  content: ""
+  content: "\e00a"
 }
 .sap-icon--survey::before {
-  content: ""
+  content: "\e00b"
 }
 .sap-icon--settings::before {
-  content: ""
+  content: "\e00c"
 }
 .sap-icon--search::before {
-  content: ""
+  content: "\e00d"
 }
 .sap-icon--sales-document::before {
-  content: ""
+  content: "\e00e"
 }
 .sap-icon--retail-store::before {
-  content: ""
+  content: "\e00f"
 }
 .sap-icon--refresh::before {
-  content: ""
+  content: "\e010"
 }
 .sap-icon--product::before {
-  content: ""
+  content: "\e011"
 }
 .sap-icon--present::before {
-  content: ""
+  content: "\e012"
 }
 .sap-icon--ppt-attachment::before {
-  content: ""
+  content: "\e013"
 }
 .sap-icon--pool::before {
-  content: ""
+  content: "\e014"
 }
 .sap-icon--pie-chart::before {
-  content: ""
+  content: "\e015"
 }
 .sap-icon--picture::before {
-  content: ""
+  content: "\e016"
 }
 .sap-icon--photo-voltaic::before {
-  content: ""
+  content: "\e017"
 }
 .sap-icon--phone::before {
-  content: ""
+  content: "\e018"
 }
 .sap-icon--pending::before {
-  content: ""
+  content: "\e019"
 }
 .sap-icon--pdf-attachment::before {
-  content: ""
+  content: "\e01a"
 }
 .sap-icon--past::before {
-  content: ""
+  content: "\e01b"
 }
 .sap-icon--outgoing-call::before {
-  content: ""
+  content: "\e01c"
 }
 .sap-icon--opportunity::before {
-  content: ""
+  content: "\e01d"
 }
 .sap-icon--opportunities::before {
-  content: ""
+  content: "\e01e"
 }
 .sap-icon--notes::before {
-  content: ""
+  content: "\e01f"
 }
 .sap-icon--money-bills::before {
-  content: ""
+  content: "\e020"
 }
 .sap-icon--map::before {
-  content: ""
+  content: "\e021"
 }
 .sap-icon--log::before {
-  content: ""
+  content: "\e022"
 }
 .sap-icon--line-charts::before {
-  content: ""
+  content: "\e023"
 }
 .sap-icon--lightbulb::before {
-  content: ""
+  content: "\e024"
 }
 .sap-icon--leads::before {
-  content: ""
+  content: "\e025"
 }
 .sap-icon--lead::before {
-  content: ""
+  content: "\e026"
 }
 .sap-icon--laptop::before {
-  content: ""
+  content: "\e027"
 }
 .sap-icon--kpi-managing-my-area::before {
-  content: ""
+  content: "\e028"
 }
 .sap-icon--kpi-corporate-performance::before {
-  content: ""
+  content: "\e029"
 }
 .sap-icon--incoming-call::before {
-  content: ""
+  content: "\e02a"
 }
 .sap-icon--inbox::before {
-  content: ""
+  content: "\e02b"
 }
 .sap-icon--horizontal-bar-chart::before {
-  content: ""
+  content: "\e02c"
 }
 .sap-icon--history::before {
-  content: ""
+  content: "\e02d"
 }
 .sap-icon--heating-cooling::before {
-  content: ""
+  content: "\e02e"
 }
 .sap-icon--gantt-bars::before {
-  content: ""
+  content: "\e02f"
 }
 .sap-icon--future::before {
-  content: ""
+  content: "\e030"
 }
 .sap-icon--fridge::before {
-  content: ""
+  content: "\e031"
 }
 .sap-icon--fallback::before {
-  content: ""
+  content: "\e032"
 }
 .sap-icon--expense-report::before {
-  content: ""
+  content: "\e033"
 }
 .sap-icon--excel-attachment::before {
-  content: ""
+  content: "\e034"
 }
 .sap-icon--energy-saving-lightbulb::before {
-  content: ""
+  content: "\e035"
 }
 .sap-icon--employee::before {
-  content: ""
+  content: "\e036"
 }
 .sap-icon--email::before {
-  content: ""
+  content: "\e037"
 }
 .sap-icon--edit::before {
-  content: ""
+  content: "\e038"
 }
 .sap-icon--duplicate::before {
-  content: ""
+  content: "\e039"
 }
 .sap-icon--download::before {
-  content: ""
+  content: "\e03a"
 }
 .sap-icon--doc-attachment::before {
-  content: ""
+  content: "\e03b"
 }
 .sap-icon--dishwasher::before {
-  content: ""
+  content: "\e03c"
 }
 .sap-icon--delete::before {
-  content: ""
+  content: "\e03d"
 }
 .sap-icon--decline::before {
-  content: ""
+  content: "\e03e"
 }
 .sap-icon--complete::before {
-  content: ""
+  content: "\e03f"
 }
 .sap-icon--competitor::before {
-  content: ""
+  content: "\e040"
 }
 .sap-icon--collections-management::before {
-  content: ""
+  content: "\e041"
 }
 .sap-icon--chalkboard::before {
-  content: ""
+  content: "\e042"
 }
 .sap-icon--cart::before {
-  content: ""
+  content: "\e043"
 }
 .sap-icon--card::before {
-  content: ""
+  content: "\e044"
 }
 .sap-icon--camera::before {
-  content: ""
+  content: "\e045"
 }
 .sap-icon--calendar::before {
-  content: ""
+  content: "\e046"
 }
 .sap-icon--begin::before {
-  content: ""
+  content: "\e047"
 }
 .sap-icon--basket::before {
-  content: ""
+  content: "\e048"
 }
 .sap-icon--bar-chart::before {
-  content: ""
+  content: "\e049"
 }
 .sap-icon--attachment::before {
-  content: ""
+  content: "\e04a"
 }
 .sap-icon--arrow-top::before {
-  content: ""
+  content: "\e04b"
 }
 .sap-icon--arrow-right::before {
-  content: ""
+  content: "\e04c"
 }
 .sap-icon--arrow-left::before {
-  content: ""
+  content: "\e04d"
 }
 .sap-icon--arrow-bottom::before {
-  content: ""
+  content: "\e04e"
 }
 .sap-icon--approvals::before {
-  content: ""
+  content: "\e04f"
 }
 .sap-icon--appointment::before {
-  content: ""
+  content: "\e050"
 }
 .sap-icon--alphabetical-order::before {
-  content: ""
+  content: "\e051"
 }
 .sap-icon--along-stacked-chart::before {
-  content: ""
+  content: "\e052"
 }
 .sap-icon--alert::before {
-  content: ""
+  content: "\e053"
 }
 .sap-icon--addresses::before {
-  content: ""
+  content: "\e054"
 }
 .sap-icon--address-book::before {
-  content: ""
+  content: "\e055"
 }
 .sap-icon--add-filter::before {
-  content: ""
+  content: "\e056"
 }
 .sap-icon--add-favorite::before {
-  content: ""
+  content: "\e057"
 }
 .sap-icon--add::before {
-  content: ""
+  content: "\e058"
 }
 .sap-icon--activities::before {
-  content: ""
+  content: "\e059"
 }
 .sap-icon--action::before {
-  content: ""
+  content: "\e05a"
 }
 .sap-icon--accept::before {
-  content: ""
+  content: "\e05b"
 }
 .sap-icon--hint::before {
-  content: ""
+  content: "\e05c"
 }
 .sap-icon--group::before {
-  content: ""
+  content: "\e05d"
 }
 .sap-icon--check-availability::before {
-  content: ""
+  content: "\e05e"
 }
 .sap-icon--weather-proofing::before {
-  content: ""
+  content: "\e05f"
 }
 .sap-icon--payment-approval::before {
-  content: ""
+  content: "\e060"
 }
 .sap-icon--batch-payments::before {
-  content: ""
+  content: "\e061"
 }
 .sap-icon--bed::before {
-  content: ""
+  content: "\e062"
 }
 .sap-icon--arobase::before {
-  content: ""
+  content: "\e063"
 }
 .sap-icon--family-care::before {
-  content: ""
+  content: "\e064"
 }
 .sap-icon--favorite::before {
-  content: ""
+  content: "\e065"
 }
 .sap-icon--navigation-right-arrow::before {
-  content: ""
+  content: "\e066"
 }
 .sap-icon--navigation-left-arrow::before {
-  content: ""
+  content: "\e067"
 }
 .sap-icon--e-care::before {
-  content: ""
+  content: "\e068"
 }
 .sap-icon--less::before {
-  content: ""
+  content: "\e069"
 }
 .sap-icon--lateness::before {
-  content: ""
+  content: "\e06a"
 }
 .sap-icon--lab::before {
-  content: ""
+  content: "\e06b"
 }
 .sap-icon--internet-browser::before {
-  content: ""
+  content: "\e06c"
 }
 .sap-icon--instance::before {
-  content: ""
+  content: "\e06d"
 }
 .sap-icon--inspection::before {
-  content: ""
+  content: "\e06e"
 }
 .sap-icon--image-viewer::before {
-  content: ""
+  content: "\e06f"
 }
 .sap-icon--home::before {
-  content: ""
+  content: "\e070"
 }
 .sap-icon--grid::before {
-  content: ""
+  content: "\e071"
 }
 .sap-icon--goalseek::before {
-  content: ""
+  content: "\e072"
 }
 .sap-icon--general-leave-request::before {
-  content: ""
+  content: "\e073"
 }
 .sap-icon--create-leave-request::before {
-  content: ""
+  content: "\e074"
 }
 .sap-icon--flight::before {
-  content: ""
+  content: "\e075"
 }
 .sap-icon--filter::before {
-  content: ""
+  content: "\e076"
 }
 .sap-icon--favorite-list::before {
-  content: ""
+  content: "\e077"
 }
 .sap-icon--factory::before {
-  content: ""
+  content: "\e078"
 }
 .sap-icon--endoscopy::before {
-  content: ""
+  content: "\e079"
 }
 .sap-icon--employee-pane::before {
-  content: ""
+  content: "\e07a"
 }
 .sap-icon--employee-approvals::before {
-  content: ""
+  content: "\e07b"
 }
 .sap-icon--email-read::before {
-  content: ""
+  content: "\e07c"
 }
 .sap-icon--electrocardiogram::before {
-  content: ""
+  content: "\e07d"
 }
 .sap-icon--documents::before {
-  content: ""
+  content: "\e07e"
 }
 .sap-icon--decision::before {
-  content: ""
+  content: "\e07f"
 }
 .sap-icon--database::before {
-  content: ""
+  content: "\e080"
 }
 .sap-icon--customer-history::before {
-  content: ""
+  content: "\e081"
 }
 .sap-icon--customer::before {
-  content: ""
+  content: "\e082"
 }
 .sap-icon--credit-card::before {
-  content: ""
+  content: "\e083"
 }
 .sap-icon--create-entry-time::before {
-  content: ""
+  content: "\e084"
 }
 .sap-icon--contacts::before {
-  content: ""
+  content: "\e085"
 }
 .sap-icon--compare::before {
-  content: ""
+  content: "\e086"
 }
 .sap-icon--clinical-order::before {
-  content: ""
+  content: "\e087"
 }
 .sap-icon--chain-link::before {
-  content: ""
+  content: "\e088"
 }
 .sap-icon--pull-down::before {
-  content: ""
+  content: "\e089"
 }
 .sap-icon--cargo-train::before {
-  content: ""
+  content: "\e08a"
 }
 .sap-icon--car-rental::before {
-  content: ""
+  content: "\e08b"
 }
 .sap-icon--business-card::before {
-  content: ""
+  content: "\e08c"
 }
 .sap-icon--bar-code::before {
-  content: ""
+  content: "\e08d"
 }
 .sap-icon--folder-blank::before {
-  content: ""
+  content: "\e08e"
 }
 .sap-icon--passenger-train::before {
-  content: ""
+  content: "\e08f"
 }
 .sap-icon--question-mark::before {
-  content: ""
+  content: "\e090"
 }
 .sap-icon--world::before {
-  content: ""
+  content: "\e091"
 }
 .sap-icon--iphone::before {
-  content: ""
+  content: "\e092"
 }
 .sap-icon--ipad::before {
-  content: ""
+  content: "\e093"
 }
 .sap-icon--warning::before {
-  content: ""
+  content: "\e094"
 }
 .sap-icon--sort::before {
-  content: ""
+  content: "\e095"
 }
 .sap-icon--course-book::before {
-  content: ""
+  content: "\e096"
 }
 .sap-icon--course-program::before {
-  content: ""
+  content: "\e097"
 }
 .sap-icon--add-coursebook::before {
-  content: ""
+  content: "\e098"
 }
 .sap-icon--print::before {
-  content: ""
+  content: "\e099"
 }
 .sap-icon--save::before {
-  content: ""
+  content: "\e09a"
 }
 .sap-icon--play::before {
-  content: ""
+  content: "\e09b"
 }
 .sap-icon--pause::before {
-  content: ""
+  content: "\e09c"
 }
 .sap-icon--record::before {
-  content: ""
+  content: "\e09d"
 }
 .sap-icon--response::before {
-  content: ""
+  content: "\e09e"
 }
 .sap-icon--pushpin-on::before {
-  content: ""
+  content: "\e09f"
 }
 .sap-icon--pushpin-off::before {
-  content: ""
+  content: "\e0a0"
 }
 .sap-icon--unfavorite::before {
-  content: ""
+  content: "\e0a1"
 }
 .sap-icon--learning-assistant::before {
-  content: ""
+  content: "\e0a2"
 }
 .sap-icon--timesheet::before {
-  content: ""
+  content: "\e0a3"
 }
 .sap-icon--time-entry-request::before {
-  content: ""
+  content: "\e0a4"
 }
 .sap-icon--list::before {
-  content: ""
+  content: "\e0a5"
 }
 .sap-icon--action-settings::before {
-  content: ""
+  content: "\e0a6"
 }
 .sap-icon--share::before {
-  content: ""
+  content: "\e0a7"
 }
 .sap-icon--feed::before {
-  content: ""
+  content: "\e0a8"
 }
 .sap-icon--role::before {
-  content: ""
+  content: "\e0a9"
 }
 .sap-icon--flag::before {
-  content: ""
+  content: "\e0aa"
 }
 .sap-icon--post::before {
-  content: ""
+  content: "\e0ab"
 }
 .sap-icon--inspect::before {
-  content: ""
+  content: "\e0ac"
 }
 .sap-icon--inspect-down::before {
-  content: ""
+  content: "\e0ad"
 }
 .sap-icon--appointment-2::before {
-  content: ""
+  content: "\e0ae"
 }
 .sap-icon--target-group::before {
-  content: ""
+  content: "\e0af"
 }
 .sap-icon--marketing-campaign::before {
-  content: ""
+  content: "\e0b0"
 }
 .sap-icon--message-error::before {
-  content: ""
+  content: "\e0b1"
 }
 .sap-icon--notification::before {
-  content: ""
+  content: "\e0b1"
 }
 .sap-icon--comment::before {
-  content: ""
+  content: "\e0b2"
 }
 .sap-icon--shipping-status::before {
-  content: ""
+  content: "\e0b3"
 }
 .sap-icon--collaborate::before {
-  content: ""
+  content: "\e0b4"
 }
 .sap-icon--shortcut::before {
-  content: ""
+  content: "\e0b5"
 }
 .sap-icon--lead-outdated::before {
-  content: ""
+  content: "\e0b6"
 }
 .sap-icon--tools-opportunity::before {
-  content: ""
+  content: "\e0b7"
 }
 .sap-icon--permission::before {
-  content: ""
+  content: "\e0b8"
 }
 .sap-icon--supplier::before {
-  content: ""
+  content: "\e0b9"
 }
 .sap-icon--table-view::before {
-  content: ""
+  content: "\e0ba"
 }
 .sap-icon--table-chart::before {
-  content: ""
+  content: "\e0bb"
 }
 .sap-icon--switch-views::before {
-  content: ""
+  content: "\e0bc"
 }
 .sap-icon--e-learning::before {
-  content: ""
+  content: "\e0bd"
 }
 .sap-icon--manager::before {
-  content: ""
+  content: "\e0be"
 }
 .sap-icon--switch-classes::before {
-  content: ""
+  content: "\e0bf"
 }
 .sap-icon--simple-payment::before {
-  content: ""
+  content: "\e0c0"
 }
 .sap-icon--signature::before {
-  content: ""
+  content: "\e0c1"
 }
 .sap-icon--sales-order-item::before {
-  content: ""
+  content: "\e0c2"
 }
 .sap-icon--sales-order::before {
-  content: ""
+  content: "\e0c3"
 }
 .sap-icon--request::before {
-  content: ""
+  content: "\e0c4"
 }
 .sap-icon--receipt::before {
-  content: ""
+  content: "\e0c5"
 }
 .sap-icon--puzzle::before {
-  content: ""
+  content: "\e0c6"
 }
 .sap-icon--process::before {
-  content: ""
+  content: "\e0c7"
 }
 .sap-icon--private::before {
-  content: ""
+  content: "\e0c8"
 }
 .sap-icon--popup-window::before {
-  content: ""
+  content: "\e0c9"
 }
 .sap-icon--person-placeholder::before {
-  content: ""
+  content: "\e0ca"
 }
 .sap-icon--per-diem::before {
-  content: ""
+  content: "\e0cb"
 }
 .sap-icon--paper-plane::before {
-  content: ""
+  content: "\e0cc"
 }
 .sap-icon--paid-leave::before {
-  content: ""
+  content: "\e0cd"
 }
 .sap-icon--pdf-reader::before {
-  content: ""
+  content: "\e0ce"
 }
 .sap-icon--overview-chart::before {
-  content: ""
+  content: "\e0cf"
 }
 .sap-icon--overlay::before {
-  content: ""
+  content: "\e0d0"
 }
 .sap-icon--org-chart::before {
-  content: ""
+  content: "\e0d1"
 }
 .sap-icon--number-sign::before {
-  content: ""
+  content: "\e0d2"
 }
 .sap-icon--notification-2::before {
-  content: ""
+  content: "\e0d3"
 }
 .sap-icon--my-sales-order::before {
-  content: ""
+  content: "\e0d4"
 }
 .sap-icon--meal::before {
-  content: ""
+  content: "\e0d5"
 }
 .sap-icon--loan::before {
-  content: ""
+  content: "\e0d6"
 }
 .sap-icon--order-status::before {
-  content: ""
+  content: "\e0d7"
 }
 .sap-icon--customer-order-entry::before {
-  content: ""
+  content: "\e0d8"
 }
 .sap-icon--performance::before {
-  content: ""
+  content: "\e0d9"
 }
 .sap-icon--menu::before {
-  content: ""
+  content: "\e0da"
 }
 .sap-icon--employee-lookup::before {
-  content: ""
+  content: "\e0db"
 }
 .sap-icon--education::before {
-  content: ""
+  content: "\e0dc"
 }
 .sap-icon--customer-briefing::before {
-  content: ""
+  content: "\e0dd"
 }
 .sap-icon--customer-and-contacts::before {
-  content: ""
+  content: "\e0de"
 }
 .sap-icon--my-view::before {
-  content: ""
+  content: "\e0df"
 }
 .sap-icon--accelerated::before {
-  content: ""
+  content: "\e0e0"
 }
 .sap-icon--to-be-reviewed::before {
-  content: ""
+  content: "\e0e1"
 }
 .sap-icon--warning2::before {
-  content: ""
+  content: "\e0e2"
 }
 .sap-icon--feeder-arrow::before {
-  content: ""
+  content: "\e0e3"
 }
 .sap-icon--quality-issue::before {
-  content: ""
+  content: "\e0e4"
 }
 .sap-icon--workflow-tasks::before {
-  content: ""
+  content: "\e0e5"
 }
 .sap-icon--create::before {
-  content: ""
+  content: "\e0e6"
 }
 .sap-icon--home-share::before {
-  content: ""
+  content: "\e0e7"
 }
 .sap-icon--globe::before {
-  content: ""
+  content: "\e0e8"
 }
 .sap-icon--tags::before {
-  content: ""
+  content: "\e0e9"
 }
 .sap-icon--work-history::before {
-  content: ""
+  content: "\e0ea"
 }
 .sap-icon--x-ray::before {
-  content: ""
+  content: "\e0eb"
 }
 .sap-icon--wounds-doc::before {
-  content: ""
+  content: "\e0ec"
 }
 .sap-icon--web-cam::before {
-  content: ""
+  content: "\e0ed"
 }
 .sap-icon--waiver::before {
-  content: ""
+  content: "\e0ee"
 }
 .sap-icon--vertical-bar-chart::before {
-  content: ""
+  content: "\e0ef"
 }
 .sap-icon--upstacked-chart::before {
-  content: ""
+  content: "\e0f0"
 }
 .sap-icon--trip-report::before {
-  content: ""
+  content: "\e0f1"
 }
 .sap-icon--microphone::before {
-  content: ""
+  content: "\e0f2"
 }
 .sap-icon--unpaid-leave::before {
-  content: ""
+  content: "\e0f3"
 }
 .sap-icon--tree::before {
-  content: ""
+  content: "\e0f4"
 }
 .sap-icon--toaster-up::before {
-  content: ""
+  content: "\e0f5"
 }
 .sap-icon--toaster-top::before {
-  content: ""
+  content: "\e0f6"
 }
 .sap-icon--toaster-down::before {
-  content: ""
+  content: "\e0f7"
 }
 .sap-icon--time-account::before {
-  content: ""
+  content: "\e0f8"
 }
 .sap-icon--theater::before {
-  content: ""
+  content: "\e0f9"
 }
 .sap-icon--taxi::before {
-  content: ""
+  content: "\e0fa"
 }
 .sap-icon--subway-train::before {
-  content: ""
+  content: "\e0fb"
 }
 .sap-icon--study-leave::before {
-  content: ""
+  content: "\e0fc"
 }
 .sap-icon--stethoscope::before {
-  content: ""
+  content: "\e0fd"
 }
 .sap-icon--step::before {
-  content: ""
+  content: "\e0fe"
 }
 .sap-icon--sonography::before {
-  content: ""
+  content: "\e0ff"
 }
 .sap-icon--soccor::before {
-  content: ""
+  content: "\e100"
 }
 .sap-icon--physical-activity::before {
-  content: ""
+  content: "\e101"
 }
 .sap-icon--pharmacy::before {
-  content: ""
+  content: "\e102"
 }
 .sap-icon--official-service::before {
-  content: ""
+  content: "\e103"
 }
 .sap-icon--offsite-work::before {
-  content: ""
+  content: "\e104"
 }
 .sap-icon--nutrition-activity::before {
-  content: ""
+  content: "\e105"
 }
 .sap-icon--newspaper::before {
-  content: ""
+  content: "\e106"
 }
 .sap-icon--monitor-payments::before {
-  content: ""
+  content: "\e107"
 }
 .sap-icon--map-2::before {
-  content: ""
+  content: "\e108"
 }
 .sap-icon--machine::before {
-  content: ""
+  content: "\e109"
 }
 .sap-icon--mri-scan::before {
-  content: ""
+  content: "\e10a"
 }
 .sap-icon--end-user-experience-monitoring::before {
-  content: ""
+  content: "\e10b"
 }
 .sap-icon--unwired::before {
-  content: ""
+  content: "\e10c"
 }
 .sap-icon--customer-financial-fact-sheet::before {
-  content: ""
+  content: "\e10d"
 }
 .sap-icon--retail-store-manager::before {
-  content: ""
+  content: "\e10e"
 }
 .sap-icon--Netweaver-business-client::before {
-  content: ""
+  content: "\e10f"
 }
 .sap-icon--electronic-medical-record::before {
-  content: ""
+  content: "\e110"
 }
 .sap-icon--eam-work-order::before {
-  content: ""
+  content: "\e111"
 }
 .sap-icon--customer-view::before {
-  content: ""
+  content: "\e112"
 }
 .sap-icon--crm-service-manager::before {
-  content: ""
+  content: "\e113"
 }
 .sap-icon--crm-sales::before {
-  content: ""
+  content: "\e114"
 }
 .sap-icon--widgets::before {
-  content: ""
+  content: "\e115"
 }
 .sap-icon--commission-check::before {
-  content: ""
+  content: "\e116"
 }
 .sap-icon--collections-insight::before {
-  content: ""
+  content: "\e117"
 }
 .sap-icon--clinical-tast-tracker::before {
-  content: ""
+  content: "\e118"
 }
 .sap-icon--citizen-connect::before {
-  content: ""
+  content: "\e119"
 }
 .sap-icon--cart-approval::before {
-  content: ""
+  content: "\e11a"
 }
 .sap-icon--capital-projects::before {
-  content: ""
+  content: "\e11b"
 }
 .sap-icon--bo-strategy-management::before {
-  content: ""
+  content: "\e11c"
 }
 .sap-icon--business-objects-mobile::before {
-  content: ""
+  content: "\e11d"
 }
 .sap-icon--business-objects-explorer::before {
-  content: ""
+  content: "\e11e"
 }
 .sap-icon--business-objects-experience::before {
-  content: ""
+  content: "\e11f"
 }
 .sap-icon--bbyd-dashboard::before {
-  content: ""
+  content: "\e120"
 }
 .sap-icon--bbyd-active-sales::before {
-  content: ""
+  content: "\e121"
 }
 .sap-icon--business-by-design::before {
-  content: ""
+  content: "\e122"
 }
 .sap-icon--business-one::before {
-  content: ""
+  content: "\e123"
 }
 .sap-icon--sap-box::before {
-  content: ""
+  content: "\e124"
 }
 .sap-icon--manager-insight::before {
-  content: ""
+  content: "\e125"
 }
 .sap-icon--accounting-document-verification::before {
-  content: ""
+  content: "\e126"
 }
 .sap-icon--hr-approval::before {
-  content: ""
+  content: "\e127"
 }
 .sap-icon--idea-wall::before {
-  content: ""
+  content: "\e128"
 }
 .sap-icon--Chart-Tree-Map::before {
-  content: ""
+  content: "\e129"
 }
 .sap-icon--cart-5::before {
-  content: ""
+  content: "\e12a"
 }
 .sap-icon--cart-4::before {
-  content: ""
+  content: "\e12b"
 }
 .sap-icon--wallet::before {
-  content: ""
+  content: "\e12c"
 }
 .sap-icon--vehicle-repair::before {
-  content: ""
+  content: "\e12d"
 }
 .sap-icon--upload::before {
-  content: ""
+  content: "\e12e"
 }
 .sap-icon--unlocked::before {
-  content: ""
+  content: "\e12f"
 }
 .sap-icon--umbrella::before {
-  content: ""
+  content: "\e130"
 }
 .sap-icon--travel-request::before {
-  content: ""
+  content: "\e131"
 }
 .sap-icon--travel-expense-report::before {
-  content: ""
+  content: "\e132"
 }
 .sap-icon--travel-itinerary::before {
-  content: ""
+  content: "\e133"
 }
 .sap-icon--time-overtime::before {
-  content: ""
+  content: "\e134"
 }
 .sap-icon--thing-type::before {
-  content: ""
+  content: "\e135"
 }
 .sap-icon--technical-object::before {
-  content: ""
+  content: "\e136"
 }
 .sap-icon--tag::before {
-  content: ""
+  content: "\e137"
 }
 .sap-icon--syringe::before {
-  content: ""
+  content: "\e138"
 }
 .sap-icon--syntax::before {
-  content: ""
+  content: "\e139"
 }
 .sap-icon--suitcase::before {
-  content: ""
+  content: "\e13a"
 }
 .sap-icon--simulate::before {
-  content: ""
+  content: "\e13b"
 }
 .sap-icon--shield::before {
-  content: ""
+  content: "\e13c"
 }
 .sap-icon--share-2::before {
-  content: ""
+  content: "\e13d"
 }
 .sap-icon--sales-quote::before {
-  content: ""
+  content: "\e13e"
 }
 .sap-icon--repost::before {
-  content: ""
+  content: "\e13f"
 }
 .sap-icon--provision::before {
-  content: ""
+  content: "\e140"
 }
 .sap-icon--projector::before {
-  content: ""
+  content: "\e141"
 }
 .sap-icon--add-product::before {
-  content: ""
+  content: "\e142"
 }
 .sap-icon--pipeline-analysis::before {
-  content: ""
+  content: "\e143"
 }
 .sap-icon--add-photo::before {
-  content: ""
+  content: "\e144"
 }
 .sap-icon--palette::before {
-  content: ""
+  content: "\e145"
 }
 .sap-icon--nurse::before {
-  content: ""
+  content: "\e146"
 }
 .sap-icon--sales-notification::before {
-  content: ""
+  content: "\e147"
 }
 .sap-icon--mileage::before {
-  content: ""
+  content: "\e148"
 }
 .sap-icon--meeting-room::before {
-  content: ""
+  content: "\e149"
 }
 .sap-icon--media-forward::before {
-  content: ""
+  content: "\e14a"
 }
 .sap-icon--media-play::before {
-  content: ""
+  content: "\e14b"
 }
 .sap-icon--media-pause::before {
-  content: ""
+  content: "\e14c"
 }
 .sap-icon--media-reverse::before {
-  content: ""
+  content: "\e14d"
 }
 .sap-icon--media-rewind::before {
-  content: ""
+  content: "\e14e"
 }
 .sap-icon--measurement-document::before {
-  content: ""
+  content: "\e14f"
 }
 .sap-icon--measuring-point::before {
-  content: ""
+  content: "\e150"
 }
 .sap-icon--measure::before {
-  content: ""
+  content: "\e151"
 }
 .sap-icon--map-3::before {
-  content: ""
+  content: "\e152"
 }
 .sap-icon--locked::before {
-  content: ""
+  content: "\e153"
 }
 .sap-icon--letter::before {
-  content: ""
+  content: "\e154"
 }
 .sap-icon--journey-arrive::before {
-  content: ""
+  content: "\e155"
 }
 .sap-icon--journey-change::before {
-  content: ""
+  content: "\e156"
 }
 .sap-icon--journey-depart::before {
-  content: ""
+  content: "\e157"
 }
 .sap-icon--it-system::before {
-  content: ""
+  content: "\e158"
 }
 .sap-icon--it-instance::before {
-  content: ""
+  content: "\e159"
 }
 .sap-icon--it-host::before {
-  content: ""
+  content: "\e15a"
 }
 .sap-icon--iphone-2::before {
-  content: ""
+  content: "\e15b"
 }
 .sap-icon--ipad-2::before {
-  content: ""
+  content: "\e15c"
 }
 .sap-icon--inventory::before {
-  content: ""
+  content: "\e15d"
 }
 .sap-icon--insurance-house::before {
-  content: ""
+  content: "\e15e"
 }
 .sap-icon--insurance-life::before {
-  content: ""
+  content: "\e15f"
 }
 .sap-icon--insurance-car::before {
-  content: ""
+  content: "\e160"
 }
 .sap-icon--initiative::before {
-  content: ""
+  content: "\e161"
 }
 .sap-icon--incident::before {
-  content: ""
+  content: "\e162"
 }
 .sap-icon--group-2::before {
-  content: ""
+  content: "\e163"
 }
 .sap-icon--goal::before {
-  content: ""
+  content: "\e164"
 }
 .sap-icon--functional-location::before {
-  content: ""
+  content: "\e165"
 }
 .sap-icon--full-screen::before {
-  content: ""
+  content: "\e166"
 }
 .sap-icon--form::before {
-  content: ""
+  content: "\e167"
 }
 .sap-icon--fob-watch::before {
-  content: ""
+  content: "\e168"
 }
 .sap-icon--blank-tag::before {
-  content: ""
+  content: "\e169"
 }
 .sap-icon--family-protection::before {
-  content: ""
+  content: "\e16a"
 }
 .sap-icon--folder::before {
-  content: ""
+  content: "\e16b"
 }
 .sap-icon--fax-machine::before {
-  content: ""
+  content: "\e16c"
 }
 .sap-icon--example::before {
-  content: ""
+  content: "\e16d"
 }
 .sap-icon--eraser::before {
-  content: ""
+  content: "\e16e"
 }
 .sap-icon--employee-rejections::before {
-  content: ""
+  content: "\e16f"
 }
 .sap-icon--drop-down-list::before {
-  content: ""
+  content: "\e170"
 }
 .sap-icon--draw-rectangle::before {
-  content: ""
+  content: "\e171"
 }
 .sap-icon--document::before {
-  content: ""
+  content: "\e172"
 }
 .sap-icon--doctor::before {
-  content: ""
+  content: "\e173"
 }
 .sap-icon--discussion-2::before {
-  content: ""
+  content: "\e174"
 }
 .sap-icon--discussion::before {
-  content: ""
+  content: "\e175"
 }
 .sap-icon--dimension::before {
-  content: ""
+  content: "\e176"
 }
 .sap-icon--customer-and-supplier::before {
-  content: ""
+  content: "\e177"
 }
 .sap-icon--crop::before {
-  content: ""
+  content: "\e178"
 }
 .sap-icon--add-contact::before {
-  content: ""
+  content: "\e179"
 }
 .sap-icon--compare-2::before {
-  content: ""
+  content: "\e17a"
 }
 .sap-icon--color-fill::before {
-  content: ""
+  content: "\e17b"
 }
 .sap-icon--collision::before {
-  content: ""
+  content: "\e17c"
 }
 .sap-icon--curriculum::before {
-  content: ""
+  content: "\e17d"
 }
 .sap-icon--chart-axis::before {
-  content: ""
+  content: "\e17e"
 }
 .sap-icon--full-stacked-chart::before {
-  content: ""
+  content: "\e17f"
 }
 .sap-icon--full-stacked-column-chart::before {
-  content: ""
+  content: "\e180"
 }
 .sap-icon--vertical-bar-chart-2::before {
-  content: ""
+  content: "\e181"
 }
 .sap-icon--horizontal-bar-chart-2::before {
-  content: ""
+  content: "\e182"
 }
 .sap-icon--horizontal-stacked-chart::before {
-  content: ""
+  content: "\e183"
 }
 .sap-icon--vertical-stacked-chart::before {
-  content: ""
+  content: "\e184"
 }
 .sap-icon--choropleth-chart::before {
-  content: ""
+  content: "\e185"
 }
 .sap-icon--geographic-bubble-chart::before {
-  content: ""
+  content: "\e186"
 }
 .sap-icon--multiple-radar-chart::before {
-  content: ""
+  content: "\e187"
 }
 .sap-icon--radar-chart::before {
-  content: ""
+  content: "\e188"
 }
 .sap-icon--crossed-line-chart::before {
-  content: ""
+  content: "\e189"
 }
 .sap-icon--multiple-line-chart::before {
-  content: ""
+  content: "\e18a"
 }
 .sap-icon--multiple-bar-chart::before {
-  content: ""
+  content: "\e18b"
 }
 .sap-icon--line-chart::before {
-  content: ""
+  content: "\e18c"
 }
 .sap-icon--line-chart-dual-axis::before {
-  content: ""
+  content: "\e18d"
 }
 .sap-icon--bubble-chart::before {
-  content: ""
+  content: "\e18e"
 }
 .sap-icon--scatter-chart::before {
-  content: ""
+  content: "\e18f"
 }
 .sap-icon--multiple-pie-chart::before {
-  content: ""
+  content: "\e190"
 }
 .sap-icon--column-chart-dual-axis::before {
-  content: ""
+  content: "\e191"
 }
 .sap-icon--tag-cloud-chart::before {
-  content: ""
+  content: "\e192"
 }
 .sap-icon--area-chart::before {
-  content: ""
+  content: "\e193"
 }
 .sap-icon--cause::before {
-  content: ""
+  content: "\e194"
 }
 .sap-icon--cart-3::before {
-  content: ""
+  content: "\e195"
 }
 .sap-icon--cart-2::before {
-  content: ""
+  content: "\e196"
 }
 .sap-icon--bus-public-transport::before {
-  content: ""
+  content: "\e197"
 }
 .sap-icon--burglary::before {
-  content: ""
+  content: "\e198"
 }
 .sap-icon--building::before {
-  content: ""
+  content: "\e199"
 }
 .sap-icon--border::before {
-  content: ""
+  content: "\e19a"
 }
 .sap-icon--bookmark::before {
-  content: ""
+  content: "\e19b"
 }
 .sap-icon--badge::before {
-  content: ""
+  content: "\e19c"
 }
 .sap-icon--attachment-audio::before {
-  content: ""
+  content: "\e19d"
 }
 .sap-icon--attachment-video::before {
-  content: ""
+  content: "\e19e"
 }
 .sap-icon--attachment-html::before {
-  content: ""
+  content: "\e19f"
 }
 .sap-icon--attachment-photo::before {
-  content: ""
+  content: "\e1a0"
 }
 .sap-icon--attachment-e-pub::before {
-  content: ""
+  content: "\e1a1"
 }
 .sap-icon--attachment-zip-file::before {
-  content: ""
+  content: "\e1a2"
 }
 .sap-icon--attachment-text-file::before {
-  content: ""
+  content: "\e1a3"
 }
 .sap-icon--add-equipment::before {
-  content: ""
+  content: "\e1a4"
 }
 .sap-icon--add-activity::before {
-  content: ""
+  content: "\e1a5"
 }
 .sap-icon--activity-individual::before {
-  content: ""
+  content: "\e1a6"
 }
 .sap-icon--activity-2::before {
-  content: ""
+  content: "\e1a7"
 }
 .sap-icon--add-activity-2::before {
-  content: ""
+  content: "\e1a8"
 }
 .sap-icon--activity-items::before {
-  content: ""
+  content: "\e1a9"
 }
 .sap-icon--activity-assigned-to-goal::before {
-  content: ""
+  content: "\e1aa"
 }
 .sap-icon--status-positive::before {
-  content: ""
+  content: "\e1ab"
 }
 .sap-icon--status-completed::before {
-  content: ""
+  content: "\e1ab"
 }
 .sap-icon--status-negative::before {
-  content: ""
+  content: "\e1ac"
 }
 .sap-icon--status-error::before {
-  content: ""
+  content: "\e1ac"
 }
 .sap-icon--status-inactive::before {
-  content: ""
+  content: "\e1ad"
 }
 .sap-icon--status-critical::before {
-  content: ""
+  content: "\e1ae"
 }
 .sap-icon--status-in-progress::before {
-  content: ""
+  content: "\e1ae"
 }
 .sap-icon--blank-tag-2::before {
-  content: ""
+  content: "\e1af"
 }
 .sap-icon--cart-full::before {
-  content: ""
+  content: "\e1b0"
 }
 .sap-icon--locate-me::before {
-  content: ""
+  content: "\e1b1"
 }
 .sap-icon--paging::before {
-  content: ""
+  content: "\e1b2"
 }
 .sap-icon--company-view::before {
-  content: ""
+  content: "\e1b3"
 }
 .sap-icon--document-text::before {
-  content: ""
+  content: "\e1b4"
 }
 .sap-icon--explorer::before {
-  content: ""
+  content: "\e1b5"
 }
 .sap-icon--personnel-view::before {
-  content: ""
+  content: "\e1b6"
 }
 .sap-icon--sorting-ranking::before {
-  content: ""
+  content: "\e1b7"
 }
 .sap-icon--drill-down::before {
-  content: ""
+  content: "\e1b8"
 }
 .sap-icon--drill-up::before {
-  content: ""
+  content: "\e1b9"
 }
 .sap-icon--vds-file::before {
-  content: ""
+  content: "\e1ba"
 }
 .sap-icon--sap-logo-shape::before {
-  content: ""
+  content: "\e1bb"
 }
 .sap-icon--folder-full::before {
-  content: ""
+  content: "\e1bc"
 }
 .sap-icon--system-exit::before {
-  content: ""
+  content: "\e1bd"
 }
 .sap-icon--system-exit-2::before {
-  content: ""
+  content: "\e1be"
 }
 .sap-icon--close-command-field::before {
-  content: ""
+  content: "\e1bf"
 }
 .sap-icon--open-command-field::before {
-  content: ""
+  content: "\e1c0"
 }
 .sap-icon--sys-enter-2::before {
-  content: ""
+  content: "\e1c1"
 }
 .sap-icon--sys-enter::before {
-  content: ""
+  content: "\e1c2"
 }
 .sap-icon--sys-help-2::before {
-  content: ""
+  content: "\e1c3"
 }
 .sap-icon--sys-help::before {
-  content: ""
+  content: "\e1c4"
 }
 .sap-icon--sys-back::before {
-  content: ""
+  content: "\e1c5"
 }
 .sap-icon--sys-back-2::before {
-  content: ""
+  content: "\e1c6"
 }
 .sap-icon--sys-cancel::before {
-  content: ""
+  content: "\e1c7"
 }
 .sap-icon--sys-cancel-2::before {
-  content: ""
+  content: "\e1c8"
 }
 .sap-icon--open-folder::before {
-  content: ""
+  content: "\e1c9"
 }
 .sap-icon--sys-find-next::before {
-  content: ""
+  content: "\e1ca"
 }
 .sap-icon--sys-find::before {
-  content: ""
+  content: "\e1cb"
 }
 .sap-icon--sys-monitor::before {
-  content: ""
+  content: "\e1cc"
 }
 .sap-icon--sys-prev-page::before {
-  content: ""
+  content: "\e1cd"
 }
 .sap-icon--sys-first-page::before {
-  content: ""
+  content: "\e1ce"
 }
 .sap-icon--sys-next-page::before {
-  content: ""
+  content: "\e1cf"
 }
 .sap-icon--sys-last-page::before {
-  content: ""
+  content: "\e1d0"
 }
 .sap-icon--generate-shortcut::before {
-  content: ""
+  content: "\e1d1"
 }
 .sap-icon--create-session::before {
-  content: ""
+  content: "\e1d2"
 }
 .sap-icon--display-more::before {
-  content: ""
+  content: "\e1d3"
 }
 .sap-icon--enter-more::before {
-  content: ""
+  content: "\e1d4"
 }
 .sap-icon--zoom-in::before {
-  content: ""
+  content: "\e1d5"
 }
 .sap-icon--zoom-out::before {
-  content: ""
+  content: "\e1d6"
 }
 .sap-icon--header::before {
-  content: ""
+  content: "\e1d7"
 }
 .sap-icon--detail-view::before {
-  content: ""
+  content: "\e1d8"
 }
 .sap-icon--show-edit::before {
-  content: ""
+  content: "\e1d8"
 }
 .sap-icon--collapse::before {
-  content: ""
+  content: "\e1d9"
 }
 .sap-icon--expand::before {
-  content: ""
+  content: "\e1da"
 }
 .sap-icon--positive::before {
-  content: ""
+  content: "\e1db"
 }
 .sap-icon--negative::before {
-  content: ""
+  content: "\e1dc"
 }
 .sap-icon--display::before {
-  content: ""
+  content: "\e1dd"
 }
 .sap-icon--menu2::before {
-  content: ""
+  content: "\e1de"
 }
 .sap-icon--redo::before {
-  content: ""
+  content: "\e1df"
 }
 .sap-icon--undo::before {
-  content: ""
+  content: "\e1e0"
 }
 .sap-icon--navigation-up-arrow::before {
-  content: ""
+  content: "\e1e1"
 }
 .sap-icon--navigation-down-arrow::before {
-  content: ""
+  content: "\e1e2"
 }
 .sap-icon--down::before {
-  content: ""
+  content: "\e1e3"
 }
 .sap-icon--up::before {
-  content: ""
+  content: "\e1e4"
 }
 .sap-icon--shelf::before {
-  content: ""
+  content: "\e1e5"
 }
 .sap-icon--background::before {
-  content: ""
+  content: "\e1e6"
 }
 .sap-icon--resize::before {
-  content: ""
+  content: "\e1e7"
 }
 .sap-icon--move::before {
-  content: ""
+  content: "\e1e8"
 }
 .sap-icon--show::before {
-  content: ""
+  content: "\e1e9"
 }
 .sap-icon--hide::before {
-  content: ""
+  content: "\e1ea"
 }
 .sap-icon--nav-back::before {
-  content: ""
+  content: "\e1eb"
 }
 .sap-icon--error::before {
-  content: ""
+  content: "\e1ec"
 }
 .sap-icon--slim-arrow-right::before {
-  content: ""
+  content: "\e1ed"
 }
 .sap-icon--slim-arrow-left::before {
-  content: ""
+  content: "\e1ee"
 }
 .sap-icon--slim-arrow-down::before {
-  content: ""
+  content: "\e1ef"
 }
 .sap-icon--slim-arrow-up::before {
-  content: ""
+  content: "\e1f0"
 }
 .sap-icon--forward::before {
-  content: ""
+  content: "\e1f1"
 }
 .sap-icon--overflow::before {
-  content: ""
+  content: "\e1f2"
 }
 .sap-icon--value-help::before {
-  content: ""
+  content: "\e1f3"
 }
 .sap-icon--multiselect::before {
-  content: ""
+  content: "\e1f4"
 }
 .sap-icon--exitfullscreen::before {
-  content: ""
+  content: "\e1f5"
 }
 .sap-icon--sys-add::before {
-  content: ""
+  content: "\e1f6"
 }
 .sap-icon--sys-minus::before {
-  content: ""
+  content: "\e1f7"
 }
 .sap-icon--dropdown::before {
-  content: ""
+  content: "\e1f8"
 }
 .sap-icon--expand-group::before {
-  content: ""
+  content: "\e1f9"
 }
 .sap-icon--vertical-grip::before {
-  content: ""
+  content: "\e1fa"
 }
 .sap-icon--horizontal-grip::before {
-  content: ""
+  content: "\e1fb"
 }
 .sap-icon--sort-descending::before {
-  content: ""
+  content: "\e1fc"
 }
 .sap-icon--sort-ascending::before {
-  content: ""
+  content: "\e1fd"
 }
 .sap-icon--arrow-down::before {
-  content: ""
+  content: "\e1fe"
 }
 .sap-icon--legend::before {
-  content: ""
+  content: "\e1ff"
 }
 .sap-icon--collapse-group::before {
-  content: ""
+  content: "\e200"
 }
 .sap-icon--message-warning::before {
-  content: ""
+  content: "\e201"
 }
 .sap-icon--message-information::before {
-  content: ""
+  content: "\e202"
 }
 .sap-icon--message-success::before {
-  content: ""
+  content: "\e203"
 }
 .sap-icon--restart::before {
-  content: ""
+  content: "\e204"
 }
 .sap-icon--stop::before {
-  content: ""
+  content: "\e205"
 }
 .sap-icon--add-process::before {
-  content: ""
+  content: "\e206"
 }
 .sap-icon--cancel-maintenance::before {
-  content: ""
+  content: "\e207"
 }
 .sap-icon--activate::before {
-  content: ""
+  content: "\e208"
 }
 .sap-icon--resize-horizontal::before {
-  content: ""
+  content: "\e209"
 }
 .sap-icon--resize-vertical::before {
-  content: ""
+  content: "\e20a"
 }
 .sap-icon--connected::before {
-  content: ""
+  content: "\e20b"
 }
 .sap-icon--disconnected::before {
-  content: ""
+  content: "\e20c"
 }
 .sap-icon--edit-outside::before {
-  content: ""
+  content: "\e20d"
 }
 .sap-icon--key::before {
-  content: ""
+  content: "\e20e"
 }
 .sap-icon--minimize::before {
-  content: ""
+  content: "\e20f"
 }
 .sap-icon--back-to-top::before {
-  content: ""
+  content: "\e210"
 }
 .sap-icon--hello-world::before {
-  content: ""
+  content: "\e211"
 }
 .sap-icon--outbox::before {
-  content: ""
+  content: "\e212"
 }
 .sap-icon--donut-chart::before {
-  content: ""
+  content: "\e213"
 }
 .sap-icon--heatmap-chart::before {
-  content: ""
+  content: "\e214"
 }
 .sap-icon--horizontal-bullet-chart::before {
-  content: ""
+  content: "\e215"
 }
 .sap-icon--vertical-bullet-chart::before {
-  content: ""
+  content: "\e216"
 }
 .sap-icon--call::before {
-  content: ""
+  content: "\e217"
 }
 .sap-icon--download-from-cloud::before {
-  content: ""
+  content: "\e218"
 }
 .sap-icon--upload-to-cloud::before {
-  content: ""
+  content: "\e219"
 }
 .sap-icon--jam::before {
-  content: ""
+  content: "\e21a"
 }
 .sap-icon--sap-ui5::before {
-  content: ""
+  content: "\e21b"
 }
 .sap-icon--message-popup::before {
-  content: ""
+  content: "\e21c"
 }
 .sap-icon--cloud::before {
-  content: ""
+  content: "\e21d"
 }
 .sap-icon--horizontal-waterfall-chart::before {
-  content: ""
+  content: "\e21e"
 }
 .sap-icon--vertical-waterfall-chart::before {
-  content: ""
+  content: "\e21f"
 }
 .sap-icon--broken-link::before {
-  content: ""
+  content: "\e220"
 }
 .sap-icon--headset::before {
-  content: ""
+  content: "\e221"
 }
 .sap-icon--thumb-up::before {
-  content: ""
+  content: "\e222"
 }
 .sap-icon--thumb-down::before {
-  content: ""
+  content: "\e223"
 }
 .sap-icon--multiselect-all::before {
-  content: ""
+  content: "\e224"
 }
 .sap-icon--multiselect-none::before {
-  content: ""
+  content: "\e225"
 }
 .sap-icon--scissors::before {
-  content: ""
+  content: "\e226"
 }
 .sap-icon--sound::before {
-  content: ""
+  content: "\e227"
 }
 .sap-icon--sound-loud::before {
-  content: ""
+  content: "\e228"
 }
 .sap-icon--sound-off::before {
-  content: ""
+  content: "\e229"
 }
 .sap-icon--date-time::before {
-  content: ""
+  content: "\e22a"
 }
 .sap-icon--user-settings::before {
-  content: ""
+  content: "\e22b"
 }
 .sap-icon--key-user-settings::before {
-  content: ""
+  content: "\e23c"
 }
 .sap-icon--developer-settings::before {
-  content: ""
+  content: "\e22d"
 }
 .sap-icon--text-formatting::before {
-  content: ""
+  content: "\e22e"
 }
 .sap-icon--bold-text::before {
-  content: ""
+  content: "\e22f"
 }
 .sap-icon--italic-text::before {
-  content: ""
+  content: "\e230"
 }
 .sap-icon--underline-text::before {
-  content: ""
+  content: "\e231"
 }
 .sap-icon--text-align-justified::before {
-  content: ""
+  content: "\e232"
 }
 .sap-icon--text-align-left::before {
-  content: ""
+  content: "\e233"
 }
 .sap-icon--text-align-center::before {
-  content: ""
+  content: "\e234"
 }
 .sap-icon--text-align-right::before {
-  content: ""
+  content: "\e235"
 }
 .sap-icon--bullet-text::before {
-  content: ""
+  content: "\e236"
 }
 .sap-icon--numbered-text::before {
-  content: ""
+  content: "\e237"
 }
 .sap-icon--co::before {
-  content: ""
+  content: "\e238"
 }
 .sap-icon--ui-notifications::before {
-  content: ""
+  content: "\e239"
 }
 .sap-icon--bell::before {
-  content: ""
+  content: "\e23a"
 }
 .sap-icon--cancel-share::before {
-  content: ""
+  content: "\e23b"
 }
 .sap-icon--write-new-document::before {
-  content: ""
+  content: "\e23c"
 }
 .sap-icon--write-new::before {
-  content: ""
+  content: "\e23d"
 }
 .sap-icon--cancel::before {
-  content: ""
+  content: "\e23e"
 }
 .sap-icon--screen-split-one::before {
-  content: ""
+  content: "\e23f"
 }
 .sap-icon--screen-split-two::before {
-  content: ""
+  content: "\e240"
 }
 .sap-icon--screen-split-three::before {
-  content: ""
+  content: "\e241"
 }
 .sap-icon--customize::before {
-  content: ""
+  content: "\e242"
 }
 .sap-icon--user-edit::before {
-  content: ""
+  content: "\e243"
 }
 .sap-icon--source-code::before {
-  content: ""
+  content: "\e244"
 }
 .sap-icon--copy::before {
-  content: ""
+  content: "\e245"
 }
 .sap-icon--paste::before {
-  content: ""
+  content: "\e246"
 }
 .sap-icon--line-chart-time-axis::before {
-  content: ""
+  content: "\e247"
 }
 .sap-icon--clear-filter::before {
-  content: ""
+  content: "\e248"
 }
 .sap-icon--reset::before {
-  content: ""
+  content: "\e249"
 }
 .sap-icon--trend-up::before {
-  content: ""
+  content: "\e24a"
 }
 .sap-icon--trend-down::before {
-  content: ""
+  content: "\e24b"
 }
 .sap-icon--cursor::before {
-  content: ""
+  content: "\e24c"
 }
 .sap-icon--add-document::before {
-  content: ""
+  content: "\e24d"
 }
 .sap-icon--create-form::before {
-  content: ""
+  content: "\e24e"
 }
 .sap-icon--resize-corner::before {
-  content: ""
+  content: "\e24f"
 }
 .sap-icon--chevron-phase::before {
-  content: ""
+  content: "\e250"
 }
 .sap-icon--chevron-phase-2::before {
-  content: ""
+  content: "\e251"
 }
 .sap-icon--rhombus-milestone::before {
-  content: ""
+  content: "\e252"
 }
 .sap-icon--rhombus-milestone-2::before {
-  content: ""
+  content: "\e253"
 }
 .sap-icon--circle-task::before {
-  content: ""
+  content: "\e254"
 }
 .sap-icon--circle-task-2::before {
-  content: ""
+  content: "\e255"
 }
 .sap-icon--project-definition-triangle::before {
-  content: ""
+  content: "\e256"
 }
 .sap-icon--project-definition-triangle-2::before {
-  content: ""
+  content: "\e257"
 }
 .sap-icon--master-task-triangle::before {
-  content: ""
+  content: "\e258"
 }
 .sap-icon--master-task-triangle-2::before {
-  content: ""
+  content: "\e259"
 }
 .sap-icon--program-triangles::before {
-  content: ""
+  content: "\e25a"
 }
 .sap-icon--program-triangles-2::before {
-  content: ""
+  content: "\e25b"
 }
 .sap-icon--mirrored-task-circle::before {
-  content: ""
+  content: "\e25c"
 }
 .sap-icon--mirrored-task-circle-2::before {
-  content: ""
+  content: "\e25d"
 }
 .sap-icon--checklist-item::before {
-  content: ""
+  content: "\e25e"
 }
 .sap-icon--checklist-item-2::before {
-  content: ""
+  content: "\e25f"
 }
 .sap-icon--checklist::before {
-  content: ""
+  content: "\e260"
 }
 .sap-icon--checklist-2::before {
-  content: ""
+  content: "\e261"
 }
 .sap-icon--chart-table-view::before {
-  content: ""
+  content: "\e262"
 }
 .sap-icon--filter-analytics::before {
-  content: ""
+  content: "\e263"
 }
 .sap-icon--filter-facets::before {
-  content: ""
+  content: "\e264"
 }
 .sap-icon--filter-fields::before {
-  content: ""
+  content: "\e265"
 }
 .sap-icon--indent::before {
-  content: ""
+  content: "\e266"
 }
 .sap-icon--outdent::before {
-  content: ""
+  content: "\e267"
 }
 .sap-icon--heading-1::before {
-  content: ""
+  content: "\e268"
 }
 .sap-icon--heading-2::before {
-  content: ""
+  content: "\e269"
 }
 .sap-icon--heading-3::before {
-  content: ""
+  content: "\e26a"
 }
 .sap-icon--decrease-line-height::before {
-  content: ""
+  content: "\e26b"
 }
 .sap-icon--increase-line-height::before {
-  content: ""
+  content: "\e26c"
 }
 .sap-icon--fx::before {
-  content: ""
+  content: "\e26d"
 }
 .sap-icon--add-folder::before {
-  content: ""
+  content: "\e26e"
 }
 .sap-icon--away::before {
-  content: ""
+  content: "\e26f"
 }
 .sap-icon--busy::before {
-  content: ""
+  content: "\e270"
 }
 .sap-icon--appear-offline::before {
-  content: ""
+  content: "\e271"
 }
 .sap-icon--blur::before {
-  content: ""
+  content: "\e272"
 }
 .sap-icon--pixelate::before {
-  content: ""
+  content: "\e273"
 }
 .sap-icon--horizontal-combination-chart::before {
-  content: ""
+  content: "\e274"
 }
 .sap-icon--add-employee::before {
-  content: ""
+  content: "\e275"
 }
 .sap-icon--text-color::before {
-  content: ""
+  content: "\e276"
 }
 .sap-icon--browse-folder::before {
-  content: ""
+  content: "\e277"
 }
 .sap-icon--primary-key::before {
-  content: ""
+  content: "\e278"
 }
 .sap-icon--two-keys::before {
-  content: ""
+  content: "\e279"
 }
 .sap-icon--strikethrough::before {
-  content: ""
+  content: "\e27a"
 }
 .sap-icon--text::before {
-  content: ""
+  content: "\e27b"
 }
 .sap-icon--responsive::before {
-  content: ""
+  content: "\e27c"
 }
 .sap-icon--desktop-mobile::before {
-  content: ""
+  content: "\e27d"
 }
 .sap-icon--table-row::before {
-  content: ""
+  content: "\e27e"
 }
 .sap-icon--table-column::before {
-  content: ""
+  content: "\e27f"
 }
 .sap-icon--validate::before {
-  content: ""
+  content: "\e280"
 }
 .sap-icon--keyboard-and-mouse::before {
-  content: ""
+  content: "\e281"
 }
 .sap-icon--touch::before {
-  content: ""
+  content: "\e282"
 }
 .sap-icon--expand-all::before {
-  content: ""
+  content: "\e283"
 }
 .sap-icon--collapse-all::before {
-  content: ""
+  content: "\e284"
 }
 .sap-icon--combine::before {
-  content: ""
+  content: "\e285"
 }
 .sap-icon--split::before {
-  content: ""
+  content: "\e286"
 }
 .sap-icon--megamenu::before {
-  content: ""
+  content: "\e287"
 }
 .sap-icon--feedback::before {
-  content: ""
+  content: "\e288"
 }
 .sap-icon--information::before {
-  content: ""
+  content: "\e289"
 }
 .sap-icon--s4hana::before {
-  content: ""
+  content: "\e28a"
 }
 .sap-icon--translate::before {
-  content: ""
+  content: "\e28b"
 }
 .sap-icon--clear-all::before {
-  content: ""
+  content: "\e28c"
 }
 .sap-icon--command-line-interfaces::before {
-  content: ""
+  content: "\e28d"
 }
 .sap-icon--icon-sum::before {
-  content: ""
+  content: "\e28e"
 }
 .sap-icon--icon-qr-code::before {
-  content: ""
+  content: "\e28f"
 }
 .sap-icon-businessSuiteInAppSymbols--heart::before {
-  content: ""
+  content: "\e000"
 }
 .sap-icon-businessSuiteInAppSymbols--quarter::before {
-  content: ""
+  content: "\e001"
 }
 .sap-icon-businessSuiteInAppSymbols--year::before {
-  content: ""
+  content: "\e002"
 }
 .sap-icon-businessSuiteInAppSymbols--equalizer::before {
-  content: ""
+  content: "\e003"
 }
 .sap-icon-businessSuiteInAppSymbols--component::before {
-  content: ""
+  content: "\e004"
 }
 .sap-icon-businessSuiteInAppSymbols--component-private::before {
-  content: ""
+  content: "\e005"
 }
 .sap-icon-businessSuiteInAppSymbols--raw-material::before {
-  content: ""
+  content: "\e006"
 }
 .sap-icon-businessSuiteInAppSymbols--sms::before {
-  content: ""
+  content: "\e007"
 }
 .sap-icon-businessSuiteInAppSymbols--add-note::before {
-  content: ""
+  content: "\e008"
 }
 .sap-icon-businessSuiteInAppSymbols--change-time-horizon::before {
-  content: ""
+  content: "\e009"
 }
 .sap-icon-businessSuiteInAppSymbols--table-chart-customization::before {
-  content: ""
+  content: "\e00a"
 }
 .sap-icon-businessSuiteInAppSymbols--delegated-important-task::before {
-  content: ""
+  content: "\e00b"
 }
 .sap-icon-businessSuiteInAppSymbols--forklift::before {
-  content: ""
+  content: "\e00c"
 }
 .sap-icon-businessSuiteInAppSymbols--coins::before {
-  content: ""
+  content: "\e00d"
 }
 .sap-icon-businessSuiteInAppSymbols--filter-menu::before {
-  content: ""
+  content: "\e00e"
 }
 .sap-icon-businessSuiteInAppSymbols--target-to-date::before {
-  content: ""
+  content: "\e00f"
 }
 .sap-icon-businessSuiteInAppSymbols--program::before {
-  content: ""
+  content: "\e010"
 }
 .sap-icon-businessSuiteInAppSymbols--phase::before {
-  content: ""
+  content: "\e011"
 }
 .sap-icon-businessSuiteInAppSymbols--checklist::before {
-  content: ""
+  content: "\e012"
 }
 .sap-icon-businessSuiteInAppSymbols--mirrored-task::before {
-  content: ""
+  content: "\e013"
 }
 .sap-icon-businessSuiteInAppSymbols--sub-project::before {
-  content: ""
+  content: "\e014"
 }
 .sap-icon-businessSuiteInAppSymbols--checklist-item::before {
-  content: ""
+  content: "\e015"
 }
 .sap-icon-businessSuiteInAppSymbols--adhoc-analysis::before {
-  content: ""
+  content: "\e016"
 }
 .sap-icon-businessSuiteInAppSymbols--change-analysis::before {
-  content: ""
+  content: "\e017"
 }
 .sap-icon-businessSuiteInAppSymbols--review-demands::before {
-  content: ""
+  content: "\e018"
 }
 .sap-icon-businessSuiteInAppSymbols--project-definition::before {
-  content: ""
+  content: "\e019"
 }
 .sap-icon-businessSuiteInAppSymbols--data-access::before {
-  content: ""
+  content: "\e01a"
 }
 .sap-icon-businessSuiteInAppSymbols--define-shortage::before {
-  content: ""
+  content: "\e01b"
 }
 .sap-icon-businessSuiteInAppSymbols--review-supplies::before {
-  content: ""
+  content: "\e01c"
 }
 .sap-icon-businessSuiteInAppSymbols--change-log::before {
-  content: ""
+  content: "\e01d"
 }
 .sap-icon-businessSuiteInAppSymbols--priority-1::before {
-  content: ""
+  content: "\e01e"
 }
 .sap-icon-businessSuiteInAppSymbols--priority-2::before {
-  content: ""
+  content: "\e01f"
 }
 .sap-icon-businessSuiteInAppSymbols--jam::before {
-  content: ""
+  content: "\e020"
 }
 .sap-icon-businessSuiteInAppSymbols--milestone::before {
-  content: ""
+  content: "\e021"
 }
 .sap-icon-businessSuiteInAppSymbols--bulleting-with-numbers::before {
-  content: ""
+  content: "\e022"
 }
 .sap-icon-businessSuiteInAppSymbols--decrease-indent::before {
-  content: ""
+  content: "\e023"
 }
 .sap-icon-businessSuiteInAppSymbols--increase-indent::before {
-  content: ""
+  content: "\e024"
 }
 .sap-icon-businessSuiteInAppSymbols--bold::before {
-  content: ""
+  content: "\e025"
 }
 .sap-icon-businessSuiteInAppSymbols--italic::before {
-  content: ""
+  content: "\e026"
 }
 .sap-icon-businessSuiteInAppSymbols--strike-through::before {
-  content: ""
+  content: "\e027"
 }
 .sap-icon-businessSuiteInAppSymbols--underline::before {
-  content: ""
+  content: "\e028"
 }
 .sap-icon-businessSuiteInAppSymbols--save-as::before {
-  content: ""
+  content: "\e029"
 }
 .sap-icon-businessSuiteInAppSymbols--segmentation::before {
-  content: ""
+  content: "\e02a"
 }
 .sap-icon-businessSuiteInAppSymbols--context-menu::before {
-  content: ""
+  content: "\e02b"
 }
 .sap-icon-businessSuiteInAppSymbols--snapshot::before {
-  content: ""
+  content: "\e02c"
 }
 .sap-icon-businessSuiteInAppSymbols--subtraction-b-a::before {
-  content: ""
+  content: "\e02d"
 }
 .sap-icon-businessSuiteInAppSymbols--subtraction-a-b::before {
-  content: ""
+  content: "\e02e"
 }
 .sap-icon-businessSuiteInAppSymbols--intersection::before {
-  content: ""
+  content: "\e02f"
 }
 .sap-icon-businessSuiteInAppSymbols--union::before {
-  content: ""
+  content: "\e030"
 }
 .sap-icon-businessSuiteInAppSymbols--top::before {
-  content: ""
+  content: "\e031"
 }
 .sap-icon-businessSuiteInAppSymbols--bottom::before {
-  content: ""
+  content: "\e032"
 }
 .sap-icon-businessSuiteInAppSymbols--page-up::before {
-  content: ""
+  content: "\e033"
 }
 .sap-icon-businessSuiteInAppSymbols--page-down::before {
-  content: ""
+  content: "\e034"
 }
 .sap-icon-businessSuiteInAppSymbols--create-dashboard::before {
-  content: ""
+  content: "\e035"
 }
 .sap-icon-businessSuiteInAppSymbols--xcelsius-file::before {
-  content: ""
+  content: "\e036"
 }
 .sap-icon-businessSuiteInAppSymbols--open-folder::before {
-  content: ""
+  content: "\e037"
 }
 .sap-icon-businessSuiteInAppSymbols--neutral::before {
-  content: ""
+  content: "\e038"
 }
 .sap-icon-businessSuiteInAppSymbols--split-segmentation::before {
-  content: ""
+  content: "\e039"
 }
 .sap-icon-businessSuiteInAppSymbols--manage-budget::before {
-  content: ""
+  content: "\e03a"
 }
 .sap-icon-businessSuiteInAppSymbols--blocked::before {
-  content: ""
+  content: "\e03b"
 }
 .sap-icon-businessSuiteInAppSymbols--pipette::before {
-  content: ""
+  content: "\e03c"
 }
 .sap-icon-businessSuiteInAppSymbols--top-recipe::before {
-  content: ""
+  content: "\e03d"
 }
 .sap-icon-businessSuiteInAppSymbols--recipe::before {
-  content: ""
+  content: "\e03e"
 }
 .sap-icon-businessSuiteInAppSymbols--ingredients::before {
-  content: ""
+  content: "\e03f"
 }
 .sap-icon-businessSuiteInAppSymbols--multiple-charts::before {
-  content: ""
+  content: "\e040"
 }
 .sap-icon-businessSuiteInAppSymbols--descending-bars::before {
-  content: ""
+  content: "\e041"
 }
 .sap-icon-businessSuiteInAppSymbols--descending-stacked-bars::before {
-  content: ""
+  content: "\e042"
 }
 .sap-icon-businessSuiteInAppSymbols--scatter-plot::before {
-  content: ""
+  content: "\e043"
 }
 .sap-icon-businessSuiteInAppSymbols--spill::before {
-  content: ""
+  content: "\e044"
 }
 .sap-icon-businessSuiteInAppSymbols--fire::before {
-  content: ""
+  content: "\e045"
 }
 .sap-icon-businessSuiteInAppSymbols--stratification::before {
-  content: ""
+  content: "\e046"
 }
 .sap-icon-businessSuiteInAppSymbols--relationship::before {
-  content: ""
+  content: "\e047"
 }
 .sap-icon-businessSuiteInAppSymbols--margin-decomposition::before {
-  content: ""
+  content: "\e048"
 }
 .sap-icon-businessSuiteInAppSymbols--control-group::before {
-  content: ""
+  content: "\e049"
 }
 .sap-icon-businessSuiteInAppSymbols--comparison-chart::before {
-  content: ""
+  content: "\e04a"
 }
 .sap-icon-businessSuiteInAppSymbols--responsible-area::before {
-  content: ""
+  content: "\e04b"
 }
 .sap-icon-businessSuiteInAppSymbols--increase::before {
-  content: ""
+  content: "\e04c"
 }
 .sap-icon-businessSuiteInAppSymbols--decrease::before {
-  content: ""
+  content: "\e04d"
 }
 .sap-icon-businessSuiteInAppSymbols--current-stock::before {
-  content: ""
+  content: "\e04e"
 }
 .sap-icon-businessSuiteInAppSymbols--expedite::before {
-  content: ""
+  content: "\e04f"
 }
 .sap-icon-businessSuiteInAppSymbols--postpone::before {
-  content: ""
+  content: "\e050"
 }
 .sap-icon-businessSuiteInAppSymbols--approved::before {
-  content: ""
+  content: "\e051"
 }
 .sap-icon-businessSuiteInAppSymbols--partially-delivered::before {
-  content: ""
+  content: "\e052"
 }
 .sap-icon-businessSuiteInAppSymbols--line-bar-chart::before {
-  content: ""
+  content: "\e053"
 }
 .sap-icon-businessSuiteInAppSymbols--expand-all::before {
-  content: ""
+  content: "\e054"
 }
 .sap-icon-businessSuiteInAppSymbols--submission::before {
-  content: ""
+  content: "\e055"
 }
 .sap-icon-businessSuiteInAppSymbols--change-request::before {
-  content: ""
+  content: "\e056"
 }
 .sap-icon-businessSuiteInAppSymbols--column-unselected::before {
-  content: ""
+  content: "\e057"
 }
 .sap-icon-businessSuiteInAppSymbols--column-selected::before {
-  content: ""
+  content: "\e058"
 }
 .sap-icon-businessSuiteInAppSymbols--row-unselected::before {
-  content: ""
+  content: "\e059"
 }
 .sap-icon-businessSuiteInAppSymbols--row-selected::before {
-  content: ""
+  content: "\e05a"
 }
 .sap-icon-businessSuiteInAppSymbols--stock-requirements::before {
-  content: ""
+  content: "\e05b"
 }
 .sap-icon-businessSuiteInAppSymbols--gender-male-and-female::before {
-  content: ""
+  content: "\e05c"
 }
 .sap-icon-businessSuiteInAppSymbols--marital-status::before {
-  content: ""
+  content: "\e05d"
 }
 .sap-icon-businessSuiteInAppSymbols--birthday::before {
-  content: ""
+  content: "\e05e"
 }
 .sap-icon-businessSuiteInAppSymbols--classification::before {
-  content: ""
+  content: "\e05f"
 }
 .sap-icon-businessSuiteInAppSymbols--marked-for-deletion::before {
-  content: ""
+  content: "\e060"
 }
 .sap-icon-businessSuiteInAppSymbols--bullet-chart::before {
-  content: ""
+  content: "\e061"
 }
 .sap-icon-businessSuiteInAppSymbols--remove-filter::before {
-  content: ""
+  content: "\e062"
 }
 .sap-icon-businessSuiteInAppSymbols--bank-account::before {
-  content: ""
+  content: "\e063"
 }
 .sap-icon-businessSuiteInAppSymbols--savings-account::before {
-  content: ""
+  content: "\e064"
 }
 .sap-icon-businessSuiteInAppSymbols--debit-card::before {
-  content: ""
+  content: "\e065"
 }
 .sap-icon-businessSuiteInAppSymbols--vip-customer::before {
-  content: ""
+  content: "\e066"
 }
 .sap-icon-businessSuiteInAppSymbols--undesirable-customer::before {
-  content: ""
+  content: "\e067"
 }
 .sap-icon-businessSuiteInAppSymbols--answered-change-request::before {
-  content: ""
+  content: "\e068"
 }
 .sap-icon-businessSuiteInAppSymbols--collected-change-request::before {
-  content: ""
+  content: "\e069"
 }
 .sap-icon-businessSuiteInAppSymbols--draw-freehand::before {
-  content: ""
+  content: "\e06a"
 }
 .sap-icon-businessSuiteInAppSymbols--draw-circle::before {
-  content: ""
+  content: "\e06b"
 }
 .sap-icon-businessSuiteInAppSymbols--completed::before {
-  content: ""
+  content: "\e06c"
 }
 .sap-icon-businessSuiteInAppSymbols--answered::before {
-  content: ""
+  content: "\e06d"
 }
 .sap-icon-businessSuiteInAppSymbols--traffic-cone::before {
-  content: ""
+  content: "\e06e"
 }
 .sap-icon-businessSuiteInAppSymbols--traffic-lights::before {
-  content: ""
+  content: "\e06f"
 }
 .sap-icon-businessSuiteInAppSymbols--container::before {
-  content: ""
+  content: "\e070"
 }
 .sap-icon-businessSuiteInAppSymbols--container-loading::before {
-  content: ""
+  content: "\e071"
 }
 .sap-icon-businessSuiteInAppSymbols--traffic-jam::before {
-  content: ""
+  content: "\e072"
 }
 .sap-icon-businessSuiteInAppSymbols--products::before {
-  content: ""
+  content: "\e073"
 }
 .sap-icon-businessSuiteInAppSymbols--sidepanel::before {
-  content: ""
+  content: "\e074"
 }
 .sap-icon-businessSuiteInAppSymbols--split-screen::before {
-  content: ""
+  content: "\e075"
 }
 .sap-icon-businessSuiteInAppSymbols--truck-driver::before {
-  content: ""
+  content: "\e076"
 }
 .sap-icon-businessSuiteInAppSymbols--keep-segment::before {
-  content: ""
+  content: "\e077"
 }
 .sap-icon-businessSuiteInAppSymbols--exclude-segment::before {
-  content: ""
+  content: "\e078"
 }
 .sap-icon-businessSuiteInAppSymbols--separate-segments::before {
-  content: ""
+  content: "\e079"
 }
 .sap-icon-businessSuiteInAppSymbols--distribute-segments::before {
-  content: ""
+  content: "\e07a"
 }
 .sap-icon-businessSuiteInAppSymbols--next-open-item::before {
-  content: ""
+  content: "\e07b"
 }
 .sap-icon-businessSuiteInAppSymbols--where-used::before {
-  content: ""
+  content: "\e07c"
 }
 .sap-icon-businessSuiteInAppSymbols--outbound-delivery::before {
-  content: ""
+  content: "\e07d"
 }
 .sap-icon-businessSuiteInAppSymbols--outbound-delivery-inactive::before {
-  content: ""
+  content: "\e07e"
 }
 .sap-icon-businessSuiteInAppSymbols--outbound-delivery-active::before {
-  content: ""
+  content: "\e07f"
 }
 .sap-icon-businessSuiteInAppSymbols--target::before {
-  content: ""
+  content: "\e080"
 }
 .sap-icon-businessSuiteInAppSymbols--source::before {
-  content: ""
+  content: "\e081"
 }
 .sap-icon-businessSuiteInAppSymbols--material::before {
-  content: ""
+  content: "\e082"
 }
 .sap-icon-businessSuiteInAppSymbols--due-date::before {
-  content: ""
+  content: "\e083"
 }
 .sap-icon-businessSuiteInAppSymbols--overdue::before {
-  content: ""
+  content: "\e084"
 }
 .sap-icon-businessSuiteInAppSymbols--set-as-default::before {
-  content: ""
+  content: "\e085"
 }
 .sap-icon-businessSuiteInAppSymbols--face-very-bad::before {
-  content: ""
+  content: "\e086"
 }
 .sap-icon-businessSuiteInAppSymbols--face-bad::before {
-  content: ""
+  content: "\e087"
 }
 .sap-icon-businessSuiteInAppSymbols--face-skeptical::before {
-  content: ""
+  content: "\e088"
 }
 .sap-icon-businessSuiteInAppSymbols--face-neutral::before {
-  content: ""
+  content: "\e089"
 }
 .sap-icon-businessSuiteInAppSymbols--face-astonished::before {
-  content: ""
+  content: "\e08a"
 }
 .sap-icon-businessSuiteInAppSymbols--face-happy::before {
-  content: ""
+  content: "\e08b"
 }
 .sap-icon-businessSuiteInAppSymbols--face-very-happy::before {
-  content: ""
+  content: "\e08c"
 }
 .sap-icon-businessSuiteInAppSymbols--face-awful::before {
-  content: ""
+  content: "\e08d"
 }
 .sap-icon-businessSuiteInAppSymbols--face-devastated::before {
-  content: ""
+  content: "\e08e"
 }
 .sap-icon-businessSuiteInAppSymbols--face-okey-dokey::before {
-  content: ""
+  content: "\e08f"
 }
 .sap-icon-businessSuiteInAppSymbols--alarm::before {
-  content: ""
+  content: "\e090"
 }
 .sap-icon-businessSuiteInAppSymbols--activate::before {
-  content: ""
+  content: "\e091"
 }
 .sap-icon-businessSuiteInAppSymbols--segment-preview-reference-objects::before {
-  content: ""
+  content: "\e092"
 }
 .sap-icon-businessSuiteInAppSymbols--radius::before {
-  content: ""
+  content: "\e093"
 }
 .sap-icon-businessSuiteInAppSymbols--polygone-black::before {
-  content: ""
+  content: "\e094"
 }
 .sap-icon-businessSuiteInAppSymbols--polygone-white::before {
-  content: ""
+  content: "\e095"
 }
 .sap-icon-businessSuiteInAppSymbols--ploygone::before {
-  content: ""
+  content: "\e096"
 }
 .sap-icon-businessSuiteInAppSymbols--no-filter::before {
-  content: ""
+  content: "\e097"
 }
 .sap-icon-businessSuiteInAppSymbols--grip::before {
-  content: ""
+  content: "\e098"
 }
 .sap-icon-businessSuiteInAppSymbols--water::before {
-  content: ""
+  content: "\e09a"
 }
 .sap-icon-businessSuiteInAppSymbols--gas::before {
-  content: ""
+  content: "\e09b"
 }
 .sap-icon-businessSuiteInAppSymbols--liquid::before {
-  content: ""
+  content: "\e09c"
 }
 .sap-icon-businessSuiteInAppSymbols--time-deposit::before {
-  content: ""
+  content: "\e09d"
 }
 .sap-icon-businessSuiteInAppSymbols--early-widthdrawal-for-time-deposits::before {
-  content: ""
+  content: "\e09e"
 }
 .sap-icon-businessSuiteInAppSymbols--truck-load::before {
-  content: ""
+  content: "\e0e8"
 }
 .sap-icon-businessSuiteInAppSymbols--truck-unload::before {
-  content: ""
+  content: "\e0e9"
 }
 .sap-icon-businessSuiteInAppSymbols--truck-load-unload::before {
-  content: ""
+  content: "\e0ea"
 }
 .sap-icon-businessSuiteInAppSymbols--pharmacy::before {
-  content: ""
+  content: "\e0eb"
 }
 .sap-icon-businessSuiteInAppSymbols--medicine-syrup::before {
-  content: ""
+  content: "\e0ec"
 }
 .sap-icon-businessSuiteInAppSymbols--reminder::before {
-  content: ""
+  content: "\e0ed"
 }
 .sap-icon-businessSuiteInAppSymbols--medicine-pill::before {
-  content: ""
+  content: "\e0ee"
 }
 .sap-icon-businessSuiteInAppSymbols--medicine-ointment::before {
-  content: ""
+  content: "\e0ef"
 }
 .sap-icon-businessSuiteInAppSymbols--medicine-drops::before {
-  content: ""
+  content: "\e0f0"
 }
 .sap-icon-businessSuiteInAppSymbols--blood-test::before {
-  content: ""
+  content: "\e0f1"
 }
 .sap-icon-businessSuiteInAppSymbols--temperature::before {
-  content: ""
+  content: "\e0f2"
 }
 .sap-icon-businessSuiteInAppSymbols--medicine-inhaler::before {
-  content: ""
+  content: "\e0f3"
 }
 .sap-icon-businessSuiteInAppSymbols--foot-steps::before {
-  content: ""
+  content: "\e0f4"
 }
 .sap-icon-businessSuiteInAppSymbols--weight::before {
-  content: ""
+  content: "\e0f5"
 }
 .sap-icon-businessSuiteInAppSymbols--health-tracking::before {
-  content: ""
+  content: "\e0f6"
 }
 .sap-icon-businessSuiteInAppSymbols--blood-pressure::before {
-  content: ""
+  content: "\e0f7"
 }
 .sap-icon-businessSuiteInAppSymbols--immunization::before {
-  content: ""
+  content: "\e0f8"
 }
 .sap-icon-businessSuiteInAppSymbols--allergies::before {
-  content: ""
+  content: "\e0f9"
 }
 .sap-icon-businessSuiteInAppSymbols--rescheduling2::before {
-  content: ""
+  content: "\e0fa"
 }
 .sap-icon-businessSuiteInAppSymbols--resequencing2::before {
-  content: ""
+  content: "\e0fb"
 }
 .sap-icon-businessSuiteInAppSymbols--no-time-change::before {
-  content: ""
+  content: "\e0fc"
 }
 .sap-icon-businessSuiteInAppSymbols--time-change::before {
-  content: ""
+  content: "\e0fd"
 }
 .sap-icon-businessSuiteInAppSymbols--smart-matcher::before {
-  content: ""
+  content: "\e0fe"
 }
 .sap-icon-businessSuiteInAppSymbols--legal-section::before {
-  content: ""
+  content: "\e10a"
 }
 .sap-icon-businessSuiteInAppSymbols--causes::before {
-  content: ""
+  content: "\e10b"
 }
 .sap-icon-businessSuiteInAppSymbols--effects::before {
-  content: ""
+  content: "\e10c"
 }
 .sap-icon-businessSuiteInAppSymbols--shared-by-me::before {
-  content: ""
+  content: "\e10d"
 }
 .sap-icon-businessSuiteInAppSymbols--shared-with-me::before {
-  content: ""
+  content: "\e10e"
 }
 .sap-icon-businessSuiteInAppSymbols--alert-groups::before {
-  content: ""
+  content: "\e111"
 }
 .sap-icon-businessSuiteInAppSymbols--function-alert::before {
-  content: ""
+  content: "\e112"
 }
 .sap-icon-businessSuiteInAppSymbols--function-hierarchy::before {
-  content: ""
+  content: "\e113"
 }
 .sap-icon-businessSuiteInAppSymbols--rfid::before {
-  content: ""
+  content: "\e114"
 }
 .sap-icon-businessSuiteInAppSymbols--input::before {
-  content: ""
+  content: "\e115"
 }
 .sap-icon-businessSuiteInAppSymbols--software-item::before {
-  content: ""
+  content: "\e116"
 }
 .sap-icon-businessSuiteInAppSymbols--product-view::before {
-  content: ""
+  content: "\e117"
 }
 .sap-icon-businessSuiteInAppSymbols--software-item-variant::before {
-  content: ""
+  content: "\e118"
 }
 .sap-icon-businessSuiteInAppSymbols--lighthouse::before {
-  content: ""
+  content: "\e119"
 }
 .sap-icon-businessSuiteInAppSymbols--demand-unit::before {
-  content: ""
+  content: "\e11a"
 }
 .sap-icon-businessSuiteInAppSymbols--fma-management::before {
-  content: ""
+  content: "\e11b"
 }
 .sap-icon-businessSuiteInAppSymbols--fma-validation::before {
-  content: ""
+  content: "\e11c"
 }
 .sap-icon-businessSuiteInAppSymbols--fma-analytics::before {
-  content: ""
+  content: "\e11d"
 }
 .sap-icon-businessSuiteInAppSymbols--class::before {
-  content: ""
+  content: "\e11e"
 }
 .sap-icon-businessSuiteInAppSymbols--overview::before {
-  content: ""
+  content: "\e11f"
 }
 .sap-icon-businessSuiteInAppSymbols--production::before {
-  content: ""
+  content: "\e120"
 }
 .sap-icon-businessSuiteInAppSymbols--subclass::before {
-  content: ""
+  content: "\e121"
 }
 .sap-icon-businessSuiteInAppSymbols--variant-configuration::before {
-  content: ""
+  content: "\e122"
 }
 .sap-icon-businessSuiteInAppSymbols--sum::before {
-  content: ""
+  content: "\e123"
 }
 .sap-icon-businessSuiteInAppSymbols--empty-trailer::before {
-  content: ""
+  content: "\e12f"
 }
 .sap-icon-businessSuiteInAppSymbols--door::before {
-  content: ""
+  content: "\e130"
 }
 .sap-icon-businessSuiteInAppSymbols--loading-point::before {
-  content: ""
+  content: "\e131"
 }
 .sap-icon-businessSuiteInAppSymbols--stock-warehouse::before {
-  content: ""
+  content: "\e132"
 }
 .sap-icon-businessSuiteInAppSymbols--gate::before {
-  content: ""
+  content: "\e133"
 }
 .sap-icon-businessSuiteInAppSymbols--timeseries-waterfall-chart::before {
-  content: ""
+  content: "\e134"
 }
 .sap-icon-businessSuiteInAppSymbols--stages-warning::before {
-  content: ""
+  content: "\e138"
 }
 .sap-icon-businessSuiteInAppSymbols--empty-warning::before {
-  content: ""
+  content: "\e139"
 }
 .sap-icon-TNT--technicalsystem::before {
-  content: ""
+  content: "\e000"
 }
 .sap-icon-TNT--systemjava::before {
-  content: ""
+  content: "\e001"
 }
 .sap-icon-TNT--systemabap::before {
-  content: ""
+  content: "\e002"
 }
 .sap-icon-TNT--systemrecommendations::before {
-  content: ""
+  content: "\e003"
 }
 .sap-icon-TNT--system::before {
-  content: ""
+  content: "\e004"
 }
 .sap-icon-TNT--systemtrex::before {
-  content: ""
+  content: "\e005"
 }
 .sap-icon-TNT--systemtracks::before {
-  content: ""
+  content: "\e006"
 }
 .sap-icon-TNT--technicalscenario::before {
-  content: ""
+  content: "\e007"
 }
 .sap-icon-TNT--technicalinstance::before {
-  content: ""
+  content: "\e008"
 }
 .sap-icon-TNT--throughput-backlog::before {
-  content: ""
+  content: "\e009"
 }
 .sap-icon-TNT--batch-processing::before {
-  content: ""
+  content: "\e00a"
 }
 .sap-icon-TNT--database-consistency::before {
-  content: ""
+  content: "\e00b"
 }
 .sap-icon-TNT--intermediate-message::before {
-  content: ""
+  content: "\e00c"
 }
 .sap-icon-TNT--exceptions::before {
-  content: ""
+  content: "\e00d"
 }
 .sap-icon-TNT--system-HANA::before {
-  content: ""
+  content: "\e00e"
 }
 .sap-icon-TNT--python::before {
-  content: ""
+  content: "\e00f"
 }
 .sap-icon-TNT--raise-fault::before {
-  content: ""
+  content: "\e010"
 }
 .sap-icon-TNT--code1::before {
-  content: ""
+  content: "\e011"
 }
 .sap-icon-TNT--code2::before {
-  content: ""
+  content: "\e012"
 }
 .sap-icon-TNT--spike-arrest::before {
-  content: ""
+  content: "\e013"
 }
 .sap-icon-TNT--verify-API::before {
-  content: ""
+  content: "\e014"
 }
 .sap-icon-TNT--user::before {
-  content: ""
+  content: "\e015"
 }
 .sap-icon-TNT--note::before {
-  content: ""
+  content: "\e016"
 }
 .sap-icon-TNT--throwing-message::before {
-  content: ""
+  content: "\e017"
 }
 .sap-icon-TNT--catching-message::before {
-  content: ""
+  content: "\e018"
 }
 .sap-icon-TNT--start-event::before {
-  content: ""
+  content: "\e019"
 }
 .sap-icon-TNT--end-event::before {
-  content: ""
+  content: "\e01a"
 }
 .sap-icon-TNT--gateway::before {
-  content: ""
+  content: "\e01b"
 }
 .sap-icon-TNT--sub-process-marker::before {
-  content: ""
+  content: "\e01c"
 }
 .sap-icon-TNT--ad-hoc-marker::before {
-  content: ""
+  content: "\e01d"
 }
 .sap-icon-TNT--manual-task::before {
-  content: ""
+  content: "\e01e"
 }
 .sap-icon-TNT--send-task::before {
-  content: ""
+  content: "\e01f"
 }
 .sap-icon-TNT--receive-task::before {
-  content: ""
+  content: "\e020"
 }
 .sap-icon-TNT--script-task::before {
-  content: ""
+  content: "\e021"
 }
 .sap-icon-TNT--marquee::before {
-  content: ""
+  content: "\e022"
 }
 .sap-icon-TNT--data-input-arrow::before {
-  content: ""
+  content: "\e023"
 }
 .sap-icon-TNT--data-output-arrow::before {
-  content: ""
+  content: "\e024"
 }
 .sap-icon-TNT--more::before {
-  content: ""
+  content: "\e025"
 }
 .sap-icon-TNT--pattern::before {
-  content: ""
+  content: "\e026"
 }
 .sap-icon-TNT--task::before {
-  content: ""
+  content: "\e027"
 }
 .sap-icon-TNT--arrow::before {
-  content: ""
+  content: "\e028"
 }
 .sap-icon-TNT--data::before {
-  content: ""
+  content: "\e029"
 }
 .sap-icon-TNT--data-store::before {
-  content: ""
+  content: "\e02a"
 }
 .sap-icon-TNT--pool::before {
-  content: ""
+  content: "\e02b"
 }
 .sap-icon-TNT--swimlane::before {
-  content: ""
+  content: "\e02c"
 }
 .sap-icon-TNT--select::before {
-  content: ""
+  content: "\e02d"
 }
 .sap-icon-TNT--cursor::before {
-  content: ""
+  content: "\e02e"
 }
 .sap-icon-TNT--api::before {
-  content: ""
+  content: "\e02f"
 }
 .sap-icon-TNT--o-data::before {
-  content: ""
+  content: "\e030"
 }
 .sap-icon-TNT--javascript::before {
-  content: ""
+  content: "\e031"
 }
 .sap-icon-TNT--value-mapping::before {
-  content: ""
+  content: "\e032"
 }
 .sap-icon-TNT--terminate-end-event::before {
-  content: ""
+  content: "\e033"
 }
 .sap-icon-TNT--parallel-gateway::before {
-  content: ""
+  content: "\e034"
 }
 .sap-icon-TNT--exclusive-gateway::before {
-  content: ""
+  content: "\e035"
 }
 .sap-icon-TNT--service-task::before {
-  content: ""
+  content: "\e036"
 }
 .sap-icon-TNT--workflow-editor::before {
-  content: ""
+  content: "\e037"
 }
 .sap-icon-TNT--boundary-interrupting::before {
-  content: ""
+  content: "\e038"
 }
 .sap-icon-TNT--boundary-non-interrupting::before {
-  content: ""
+  content: "\e039"
 }
 .sap-icon-TNT--block::before {
-  content: ""
+  content: "\e03a"
 }
 .sap-icon-TNT--constrain-block::before {
-  content: ""
+  content: "\e03b"
 }
 .sap-icon-TNT--actor::before {
-  content: ""
+  content: "\e03c"
 }
 .sap-icon-TNT--instance-specification::before {
-  content: ""
+  content: "\e03d"
 }
 .sap-icon-TNT--value-type::before {
-  content: ""
+  content: "\e03e"
 }
 .sap-icon-TNT--interface-block::before {
-  content: ""
+  content: "\e03f"
 }
 .sap-icon-TNT--unit::before {
-  content: ""
+  content: "\e040"
 }
 .sap-icon-TNT--signal::before {
-  content: ""
+  content: "\e041"
 }
 .sap-icon-TNT--quantity-kind::before {
-  content: ""
+  content: "\e042"
 }
 .sap-icon-TNT--item-flow::before {
-  content: ""
+  content: "\e043"
 }
 .sap-icon-TNT--dependency::before {
-  content: ""
+  content: "\e044"
 }
 .sap-icon-TNT--generalization::before {
-  content: ""
+  content: "\e045"
 }
 .sap-icon-TNT--aggregation::before {
-  content: ""
+  content: "\e046"
 }
 .sap-icon-TNT--composition::before {
-  content: ""
+  content: "\e047"
 }
 .sap-icon-TNT--association::before {
-  content: ""
+  content: "\e048"
 }
 .sap-icon-TNT--port::before {
-  content: ""
+  content: "\e049"
 }
 .sap-icon-TNT--proxy-port::before {
-  content: ""
+  content: "\e04a"
 }
 .sap-icon-TNT--full-port::before {
-  content: ""
+  content: "\e04b"
 }
 .sap-icon-TNT--operations::before {
-  content: ""
+  content: "\e04c"
 }
 .sap-icon-TNT--constrains::before {
-  content: ""
+  content: "\e04d"
 }
 .sap-icon-TNT--receptions::before {
-  content: ""
+  content: "\e04e"
 }
 .sap-icon-TNT--references::before {
-  content: ""
+  content: "\e04f"
 }
 .sap-icon-TNT--parts::before {
-  content: ""
+  content: "\e050"
 }
 .sap-icon-TNT--flow::before {
-  content: ""
+  content: "\e051"
 }
 .sap-icon-TNT--values::before {
-  content: ""
+  content: "\e052"
 }
 .sap-icon-TNT--bill-of-material::before {
-  content: ""
+  content: "\e053"
 }
 .sap-icon-TNT--document-info-recording::before {
-  content: ""
+  content: "\e054"
 }
 .sap-icon-TNT--use-case-diagram::before {
-  content: ""
+  content: "\e055"
 }
 .sap-icon-TNT--bdd-diagram::before {
-  content: ""
+  content: "\e056"
 }
 .sap-icon-TNT--requirement-diagram::before {
-  content: ""
+  content: "\e057"
 }
 .sap-icon-TNT--package-diagram::before {
-  content: ""
+  content: "\e058"
 }
 .sap-icon-TNT--internal-block-diagram::before {
-  content: ""
+  content: "\e059"
 }
 .sap-icon-TNT--requirement-containment-relationship::before {
-  content: ""
+  content: "\e05a"
 }
 .sap-icon-TNT--use-case::before {
-  content: ""
+  content: "\e05b"
 }
 .sap-icon-TNT--use-case-extension-point::before {
-  content: ""
+  content: "\e05c"
 }
 .sap-icon-TNT--communication-path::before {
-  content: ""
+  content: "\e05d"
 }
 .sap-icon-TNT--note-connection::before {
-  content: ""
+  content: "\e05e"
 }
 .sap-icon-TNT--subject::before {
-  content: ""
+  content: "\e05f"
 }
 .sap-icon-TNT--auto-layout::before {
-  content: ""
+  content: "\e060"
 }
 .sap-icon-TNT--required-interface::before {
-  content: ""
+  content: "\e061"
 }
 .sap-icon-TNT--provided-interface::before {
-  content: ""
+  content: "\e062"
 }
 .sap-icon-TNT--sub-content::before {
-  content: ""
+  content: "\e063"
 }
 .sap-icon-TNT--connector::before {
-  content: ""
+  content: "\e064"
 }
 .sap-icon-TNT--local-process-call::before {
-  content: ""
+  content: "\e065"
 }
 .sap-icon-TNT--aggregator::before {
-  content: ""
+  content: "\e066"
 }
 .sap-icon-TNT--splitter::before {
-  content: ""
+  content: "\e067"
 }
 .sap-icon-TNT--converter::before {
-  content: ""
+  content: "\e068"
 }
 .sap-icon-TNT--content-modifier::before {
-  content: ""
+  content: "\e069"
 }
 .sap-icon-TNT--message-start-event::before {
-  content: ""
+  content: "\e06a"
 }
 .sap-icon-TNT--message-end-event::before {
-  content: ""
+  content: "\e06d"
 }
 .sap-icon-TNT--escalation-end-event::before {
-  content: ""
+  content: "\e06c"
 }
 .sap-icon-TNT--start-timer-event::before {
-  content: ""
+  content: "\e06d"
 }
 .sap-icon-TNT--error-start-event::before {
-  content: ""
+  content: "\e06e"
 }
 .sap-icon-TNT--error-end-event::before {
-  content: ""
+  content: "\e06f"
 }
 .sap-icon-TNT--content-enricher::before {
-  content: ""
+  content: "\e070"
 }
 .sap-icon-TNT--realization::before {
-  content: ""
+  content: "\e071"
 }
 .sap-icon-TNT--interface::before {
-  content: ""
+  content: "\e072"
 }
 .sap-icon-TNT--usiness-capability::before {
-  content: ""
+  content: "\e073"
 }
 .sap-icon-TNT--progress-group::before {
-  content: ""
+  content: "\e074"
 }
 .sap-icon-TNT--value-stream::before {
-  content: ""
+  content: "\e075"
 }
 .sap-icon-TNT--value-flow::before {
-  content: ""
+  content: "\e076"
 }
 .sap-icon-TNT--application::before {
-  content: ""
+  content: "\e077"
 }
 .sap-icon-TNT--etl-job::before {
-  content: ""
+  content: "\e078"
 }
 .sap-icon-TNT--business-service::before {
-  content: ""
+  content: "\e079"
 }
 .sap-icon-TNT--application-service::before {
-  content: ""
+  content: "\e07a"
 }
 .sap-icon-TNT--network-node::before {
-  content: ""
+  content: "\e07b"
 }
 .sap-icon-TNT--network::before {
-  content: ""
+  content: "\e07c"
 }
 .sap-icon-TNT--deployment-instance::before {
-  content: ""
+  content: "\e07d"
 }
 .sap-icon-TNT--intranet::before {
-  content: ""
+  content: "\e07e"
 }
 .sap-icon-TNT--mobile-network::before {
-  content: ""
+  content: "\e07f"
 }
 .sap-icon-TNT--private-cloud::before {
-  content: ""
+  content: "\e080"
 }
 .sap-icon-TNT--antenna::before {
-  content: ""
+  content: "\e081"
 }
 .sap-icon-TNT--firewall::before {
-  content: ""
+  content: "\e082"
 }
 .sap-icon-TNT--hub::before {
-  content: ""
+  content: "\e083"
 }
 .sap-icon-TNT--modem::before {
-  content: ""
+  content: "\e084"
 }
 .sap-icon-TNT--repeater::before {
-  content: ""
+  content: "\e085"
 }
 .sap-icon-TNT--router::before {
-  content: ""
+  content: "\e086"
 }
 .sap-icon-TNT--switch::before {
-  content: ""
+  content: "\e087"
 }
 .sap-icon-TNT--satellite::before {
-  content: ""
+  content: "\e088"
 }
 .sap-icon-TNT--system-2::before {
-  content: ""
+  content: "\e089"
 }
 .sap-icon-TNT--status-activating::before {
-  content: ""
+  content: "\e08a"
 }
 .sap-icon-TNT--status-suspended::before {
-  content: ""
+  content: "\e08b"
 }
 .sap-icon-TNT--status-suspending::before {
-  content: ""
+  content: "\e08c"
 }
 .sap-icon-TNT--status-terminated::before {
-  content: ""
+  content: "\e08d"
 }
 .sap-icon-TNT--status-terminating::before {
-  content: ""
+  content: "\e08e"
 }
 .sap-icon-TNT--solution-not-licensed::before {
-  content: ""
+  content: "\e08f"
 }
 .sap-icon-TNT--clear-all-mapping::before {
-  content: ""
+  content: "\e090"
 }
 .sap-icon-TNT--map-all-fields::before {
-  content: ""
+  content: "\e091"
 }

@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-tile {
@@ -25,7 +25,7 @@
   min-width: 11rem;
   max-width: 11rem;
   position: relative;
-  padding: calc(1rem - .0625rem);
+  padding: .9375rem;
   background: #fff;
   background: var(--sapTile_Background,#fff);
   -webkit-box-shadow: 0 0 0 .0625rem #000;
@@ -69,7 +69,7 @@
 }
 .fd-tile.is-focus::before,
 .fd-tile:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border: .125rem dotted #000;
@@ -317,7 +317,7 @@
   width: 9.25rem;
   min-width: 9.25rem;
   max-width: 9.25rem;
-  padding: calc(.5rem - .0625rem)
+  padding: .4375rem
 }
 .fd-tile--s.fd-tile--double {
   width: 19rem;
@@ -614,10 +614,10 @@
   color: var(--sapButton_Emphasized_TextColor,#000);
   text-shadow: transparent;
   text-shadow: var(--sapButton_Emphasized_TextShadow,transparent);
-  content: '\e14b'
+  content: "\e14b"
 }
 .fd-tile--slide .fd-tile__toggle--pause::before {
-  content: '\e14c'
+  content: "\e14c"
 }
 .fd-tile--slide .fd-tile__toggle.is-focus,
 .fd-tile--slide .fd-tile__toggle:focus {
@@ -668,8 +668,8 @@
   opacity: 1;
   opacity: var(--fdSlide_Tile_Background_Opacity,1);
   padding-top: .25rem;
-  padding-left: calc(1rem - .0625rem);
-  padding-right: calc(1rem - .0625rem);
+  padding-left: .9375rem;
+  padding-right: .9375rem;
   border-bottom-left-radius: .25rem;
   border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
   border-bottom-right-radius: .25rem;
@@ -811,8 +811,8 @@
   min-height: 5.25rem;
   max-height: 5.25rem;
   padding-top: .1875rem;
-  padding-right: calc(.5rem - .0625rem);
-  padding-left: calc(.5rem - .0625rem)
+  padding-right: .4375rem;
+  padding-left: .4375rem
 }
 .fd-tile--slide.fd-tile--s .fd-tile__footer-text,
 .fd-tile--slide.fd-tile--s .fd-tile__subtitle,

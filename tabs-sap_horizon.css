@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -46,15 +45,16 @@
   border-color: #d9d9d9;
   border-color: var(--sapObjectHeader_BorderColor,#d9d9d9)
 }
-.fd-tabs .fd-tabs__link.is-focus .fd-tabs__icon,
-.fd-tabs .fd-tabs__link.is-focus .fd-tabs__tag,
-.fd-tabs .fd-tabs__link:focus .fd-tabs__icon,
-.fd-tabs .fd-tabs__link:focus .fd-tabs__tag,
-.fd-tabs__link.is-focus .fd-tabs .fd-tabs__icon,
-.fd-tabs__link.is-focus .fd-tabs .fd-tabs__tag,
-.fd-tabs__link:focus .fd-tabs .fd-tabs__icon,
-.fd-tabs__link:focus .fd-tabs .fd-tabs__tag {
-  outline-offset: -.0625rem;
+.fd-tabs .fd-tabs__link.is-focus .fd-tabs__icon::before,
+.fd-tabs .fd-tabs__link.is-focus .fd-tabs__tag::before,
+.fd-tabs .fd-tabs__link:focus .fd-tabs__icon::before,
+.fd-tabs .fd-tabs__link:focus .fd-tabs__tag::before,
+.fd-tabs__link.is-focus .fd-tabs .fd-tabs__icon::before,
+.fd-tabs__link.is-focus .fd-tabs .fd-tabs__tag::before,
+.fd-tabs__link:focus .fd-tabs .fd-tabs__icon::before,
+.fd-tabs__link:focus .fd-tabs .fd-tabs__tag::before {
+  outline-offset: .125rem;
+  outline-offset: var(--sapContent_FocusWidth,.125rem);
   outline-style: solid;
   outline-style: var(--sapContent_FocusStyle,solid);
   outline-width: .125rem;
@@ -130,15 +130,13 @@
 .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
   color: #fff;
   color: var(--fdTabs_Selected_Icon_Color,var(--sapContent_ContrastIconColor,#fff));
-  background-color: #0070f2;
-  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
+  background-color: var(--fdTabs_Selected_Color)
 }
 .fd-tabs__link.is-selected .fd-tabs__icon::after,
 .fd-tabs__link.is-selected .fd-tabs__tag::after,
 .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
 .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after {
-  background-color: #0070f2;
-  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
+  background-color: var(--fdTabs_Selected_Color)
 }
 .fd-tabs__link.is-focus,
 .fd-tabs__link:focus {
@@ -146,6 +144,17 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0
+}
+.fd-tabs__link.is-focus .fd-tabs__icon::before,
+.fd-tabs__link.is-focus .fd-tabs__tag::before,
+.fd-tabs__link:focus .fd-tabs__icon::before,
+.fd-tabs__link:focus .fd-tabs__tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0
 }
 .fd-tabs__item {
   font-size: .875rem;
@@ -174,15 +183,12 @@
 }
 .fd-tabs__item.is-selected .fd-tabs__tag,
 .fd-tabs__item[aria-selected=true] .fd-tabs__tag {
-  color: #0070f2;
-  color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
+  color: var(--fdTabs_Selected_Color)
 }
 .fd-tabs__item.is-selected .fd-tabs__icon,
 .fd-tabs__item[aria-selected=true] .fd-tabs__icon {
-  color: #fff;
-  color: var(--fdTabs_Selected_Icon_Color,var(--sapContent_ContrastIconColor,#fff));
-  background-color: #0070f2;
-  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
+  color: var(--fdTabs_Selected_Icon_Color);
+  background-color: var(--fdTabs_Selected_Color)
 }
 .fd-tabs__item.is-selected .fd-tabs__icon::after,
 .fd-tabs__item.is-selected .fd-tabs__link::after,
@@ -190,8 +196,7 @@
 .fd-tabs__item[aria-selected=true] .fd-tabs__icon::after,
 .fd-tabs__item[aria-selected=true] .fd-tabs__link::after,
 .fd-tabs__item[aria-selected=true] .fd-tabs__tag::after {
-  background-color: #0070f2;
-  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
+  background-color: var(--fdTabs_Selected_Color)
 }
 .fd-tabs__item--error .fd-tabs__icon {
   color: #aa0808;
@@ -365,10 +370,8 @@
   justify-content: center;
   width: 2.625rem;
   height: 2.625rem;
-  border: .0625rem solid #0070f2;
-  border: .0625rem solid var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2));
-  color: #0070f2;
-  color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2));
+  border: .0625rem solid var(--fdTabs_Selected_Color);
+  color: var(--fdTabs_Selected_Color);
   border-radius: 50%;
   background-color: transparent;
   position: relative;
@@ -573,7 +576,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-tabs__process-icon::before {
-  content: ""
+  content: "\e0c7"
 }
 .fd-tabs__label {
   font-size: .875rem;
@@ -801,14 +804,6 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0
-}
-.fd-tabs--filter .fd-tabs__link.is-focus .fd-tabs__header,
-.fd-tabs--filter .fd-tabs__link.is-focus .fd-tabs__icon,
-.fd-tabs--filter .fd-tabs__link:focus .fd-tabs__header,
-.fd-tabs--filter .fd-tabs__link:focus .fd-tabs__icon {
-  outline-offset: 0;
-  outline: .125rem solid #0070f2;
-  outline: var(--sapContent_FocusWidth,.125rem) var(--sapContent_FocusStyle,solid) var(--sapContent_FocusColor,#0070f2)
 }
 .fd-tabs--filter[dir=rtl] .fd-tabs__item:first-child .fd-tabs__link,
 [dir=rtl] .fd-tabs--filter .fd-tabs__item:first-child .fd-tabs__link {

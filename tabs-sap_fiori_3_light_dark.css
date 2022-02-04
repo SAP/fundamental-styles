@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -46,15 +45,16 @@
   border-color: #3a4552;
   border-color: var(--sapObjectHeader_BorderColor,#3a4552)
 }
-.fd-tabs .fd-tabs__link.is-focus .fd-tabs__icon,
-.fd-tabs .fd-tabs__link.is-focus .fd-tabs__tag,
-.fd-tabs .fd-tabs__link:focus .fd-tabs__icon,
-.fd-tabs .fd-tabs__link:focus .fd-tabs__tag,
-.fd-tabs__link.is-focus .fd-tabs .fd-tabs__icon,
-.fd-tabs__link.is-focus .fd-tabs .fd-tabs__tag,
-.fd-tabs__link:focus .fd-tabs .fd-tabs__icon,
-.fd-tabs__link:focus .fd-tabs .fd-tabs__tag {
-  outline-offset: -.0625rem;
+.fd-tabs .fd-tabs__link.is-focus .fd-tabs__icon::before,
+.fd-tabs .fd-tabs__link.is-focus .fd-tabs__tag::before,
+.fd-tabs .fd-tabs__link:focus .fd-tabs__icon::before,
+.fd-tabs .fd-tabs__link:focus .fd-tabs__tag::before,
+.fd-tabs__link.is-focus .fd-tabs .fd-tabs__icon::before,
+.fd-tabs__link.is-focus .fd-tabs .fd-tabs__tag::before,
+.fd-tabs__link:focus .fd-tabs .fd-tabs__icon::before,
+.fd-tabs__link:focus .fd-tabs .fd-tabs__tag::before {
+  outline-offset: .0625rem;
+  outline-offset: var(--sapContent_FocusWidth,.0625rem);
   outline-style: dotted;
   outline-style: var(--sapContent_FocusStyle,dotted);
   outline-width: .0625rem;
@@ -146,6 +146,17 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0
+}
+.fd-tabs__link.is-focus .fd-tabs__icon::before,
+.fd-tabs__link.is-focus .fd-tabs__tag::before,
+.fd-tabs__link:focus .fd-tabs__icon::before,
+.fd-tabs__link:focus .fd-tabs__tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0
 }
 .fd-tabs__item {
   font-size: .875rem;
@@ -573,7 +584,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-tabs__process-icon::before {
-  content: ""
+  content: "\e0c7"
 }
 .fd-tabs__label {
   font-size: .875rem;
@@ -801,14 +812,6 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0
-}
-.fd-tabs--filter .fd-tabs__link.is-focus .fd-tabs__header,
-.fd-tabs--filter .fd-tabs__link.is-focus .fd-tabs__icon,
-.fd-tabs--filter .fd-tabs__link:focus .fd-tabs__header,
-.fd-tabs--filter .fd-tabs__link:focus .fd-tabs__icon {
-  outline-offset: 0;
-  outline: .0625rem dotted #fff;
-  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#fff)
 }
 .fd-tabs--filter[dir=rtl] .fd-tabs__item:first-child .fd-tabs__link,
 [dir=rtl] .fd-tabs--filter .fd-tabs__item:first-child .fd-tabs__link {

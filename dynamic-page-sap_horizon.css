@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-dynamic-page {
@@ -123,8 +123,7 @@
 .fd-dynamic-page__title-area:hover {
   background: #eaecee;
   background: var(--sapObjectHeader_Hover_Background,#eaecee);
-  border-bottom: none;
-  border-bottom: var(--fdDynamicPage_Hover_Border_Bottom,none);
+  border-bottom: var(--fdDynamicPage_Hover_Border_Bottom);
   cursor: pointer
 }
 .fd-dynamic-page__title-area--collapsed {
@@ -656,26 +655,22 @@
   font-size: inherit
 }
 .fd-dynamic-page__collapsible-header-visibility-container--left-gradient {
-  background-image: linear-gradient(to left,#0070f2,transparent);
-  background-image: var(--fdDynamicPage_Button_Left_Gradient,linear-gradient(to left,var(--sapHighlightColor,#0070f2),transparent));
+  background-image: var(--fdDynamicPage_Button_Left_Gradient);
   width: 4rem;
   height: .0625rem
 }
 .fd-dynamic-page__collapsible-header-visibility-container--left-gradient[dir=rtl],
 [dir=rtl] .fd-dynamic-page__collapsible-header-visibility-container--left-gradient {
-  background-image: linear-gradient(to right,#0070f2,transparent);
-  background-image: var(--fdDynamicPage_Button_Right_Gradient,linear-gradient(to right,var(--sapHighlightColor,#0070f2),transparent))
+  background-image: var(--fdDynamicPage_Button_Right_Gradient)
 }
 .fd-dynamic-page__collapsible-header-visibility-container--right-gradient {
-  background-image: linear-gradient(to right,#0070f2,transparent);
-  background-image: var(--fdDynamicPage_Button_Right_Gradient,linear-gradient(to right,var(--sapHighlightColor,#0070f2),transparent));
+  background-image: var(--fdDynamicPage_Button_Right_Gradient);
   width: 4rem;
   height: .0625rem
 }
 .fd-dynamic-page__collapsible-header-visibility-container--right-gradient[dir=rtl],
 [dir=rtl] .fd-dynamic-page__collapsible-header-visibility-container--right-gradient {
-  background-image: linear-gradient(to left,#0070f2,transparent);
-  background-image: var(--fdDynamicPage_Button_Left_Gradient,linear-gradient(to left,var(--sapHighlightColor,#0070f2),transparent))
+  background-image: var(--fdDynamicPage_Button_Left_Gradient)
 }
 .fd-dynamic-page__collapsible-header-visibility-container--button-group {
   font-size: .875rem;
@@ -701,8 +696,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #0070f2;
-  background: var(--fdDynamicPage_Button_Group_Background,var(--sapHighlightColor,#0070f2));
+  background: var(--fdDynamicPage_Button_Group_Background);
   width: 4.25rem;
   height: .0625rem;
   z-index: 1
@@ -876,18 +870,14 @@
   padding: 0
 }
 .fd-dynamic-page--list-bg .fd-dynamic-page__content {
-  background-color: #fff;
-  background-color: var(--fdDynamicPage_Content_List_Background,var(--sapGroup_ContentBackground,#fff))
+  background-color: var(--fdDynamicPage_Content_List_Background)
 }
 .fd-dynamic-page--transparent-bg .fd-dynamic-page__content {
-  background-color: transparent;
-  background-color: var(--fdDynamicPage_Content_Transparent_Background,transparent)
+  background-color: var(--fdDynamicPage_Content_Transparent_Background)
 }
 .fd-dynamic-page--transparent-bg .fd-dynamic-page__title-area {
-  background: 0 0;
-  background: var(--fdDynamicPage_Title_Header_Transparent_Background,transparent)
+  background: var(--fdDynamicPage_Title_Header_Transparent_Background)
 }
 .fd-dynamic-page--transparent-bg .fd-dynamic-page__collapsible-header {
-  background-color: transparent;
-  background-color: var(--fdDynamicPage_Title_Header_Transparent_Background,transparent)
+  background-color: var(--fdDynamicPage_Title_Header_Transparent_Background)
 }

@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-card {
@@ -30,10 +31,8 @@
   position: relative;
   background: #fff;
   background: var(--sapTile_Background,#fff);
-  -webkit-box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);
-  -webkit-box-shadow: var(--fdCard_Box_Shadow,var(--sapContent_Shadow0,0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16)));
-  box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);
-  box-shadow: var(--fdCard_Box_Shadow,var(--sapContent_Shadow0,0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16)));
+  -webkit-box-shadow: var(--fdCard_Box_Shadow);
+  box-shadow: var(--fdCard_Box_Shadow);
   border-radius: .75rem;
   border-radius: var(--sapElement_BorderCornerRadius,.75rem);
   border: .0625rem solid transparent;
@@ -91,7 +90,7 @@
 }
 .fd-card__header.is-focus::before,
 .fd-card__header:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   border: .125rem solid #0070f2;
@@ -369,7 +368,7 @@
   font-size: inherit
 }
 .fd-card__currency::before {
-  content: '|\00a0'
+  content: "| "
 }
 .fd-card__currency[dir=rtl],
 [dir=rtl] .fd-card__currency {

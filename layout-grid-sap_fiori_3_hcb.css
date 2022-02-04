@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-col,
@@ -107,44 +107,44 @@
   margin-left: 0
 }
 .fd-col--1 {
-  min-width: 8.33333%;
-  max-width: 8.33333%
+  min-width: 8.3333333333%;
+  max-width: 8.3333333333%
 }
 .fd-col--offset-1 {
-  margin-left: 8.33333%
+  margin-left: 8.3333333333%
 }
 .fd-col--offset-1[dir=rtl],
 [dir=rtl] .fd-col--offset-1 {
   margin-left: 0;
-  margin-right: 8.33333%
+  margin-right: 8.3333333333%
 }
 .fd-col--offset-after-1 {
-  margin-right: 8.33333%
+  margin-right: 8.3333333333%
 }
 .fd-col--offset-after-1[dir=rtl],
 [dir=rtl] .fd-col--offset-after-1 {
   margin-right: 0;
-  margin-left: 8.33333%
+  margin-left: 8.3333333333%
 }
 .fd-col--2 {
-  min-width: 16.66667%;
-  max-width: 16.66667%
+  min-width: 16.6666666667%;
+  max-width: 16.6666666667%
 }
 .fd-col--offset-2 {
-  margin-left: 16.66667%
+  margin-left: 16.6666666667%
 }
 .fd-col--offset-2[dir=rtl],
 [dir=rtl] .fd-col--offset-2 {
   margin-left: 0;
-  margin-right: 16.66667%
+  margin-right: 16.6666666667%
 }
 .fd-col--offset-after-2 {
-  margin-right: 16.66667%
+  margin-right: 16.6666666667%
 }
 .fd-col--offset-after-2[dir=rtl],
 [dir=rtl] .fd-col--offset-after-2 {
   margin-right: 0;
-  margin-left: 16.66667%
+  margin-left: 16.6666666667%
 }
 .fd-col--3 {
   min-width: 25%;
@@ -167,44 +167,44 @@
   margin-left: 25%
 }
 .fd-col--4 {
-  min-width: 33.33333%;
-  max-width: 33.33333%
+  min-width: 33.3333333333%;
+  max-width: 33.3333333333%
 }
 .fd-col--offset-4 {
-  margin-left: 33.33333%
+  margin-left: 33.3333333333%
 }
 .fd-col--offset-4[dir=rtl],
 [dir=rtl] .fd-col--offset-4 {
   margin-left: 0;
-  margin-right: 33.33333%
+  margin-right: 33.3333333333%
 }
 .fd-col--offset-after-4 {
-  margin-right: 33.33333%
+  margin-right: 33.3333333333%
 }
 .fd-col--offset-after-4[dir=rtl],
 [dir=rtl] .fd-col--offset-after-4 {
   margin-right: 0;
-  margin-left: 33.33333%
+  margin-left: 33.3333333333%
 }
 .fd-col--5 {
-  min-width: 41.66667%;
-  max-width: 41.66667%
+  min-width: 41.6666666667%;
+  max-width: 41.6666666667%
 }
 .fd-col--offset-5 {
-  margin-left: 41.66667%
+  margin-left: 41.6666666667%
 }
 .fd-col--offset-5[dir=rtl],
 [dir=rtl] .fd-col--offset-5 {
   margin-left: 0;
-  margin-right: 41.66667%
+  margin-right: 41.6666666667%
 }
 .fd-col--offset-after-5 {
-  margin-right: 41.66667%
+  margin-right: 41.6666666667%
 }
 .fd-col--offset-after-5[dir=rtl],
 [dir=rtl] .fd-col--offset-after-5 {
   margin-right: 0;
-  margin-left: 41.66667%
+  margin-left: 41.6666666667%
 }
 .fd-col--6 {
   min-width: 50%;
@@ -227,44 +227,44 @@
   margin-left: 50%
 }
 .fd-col--7 {
-  min-width: 58.33333%;
-  max-width: 58.33333%
+  min-width: 58.3333333333%;
+  max-width: 58.3333333333%
 }
 .fd-col--offset-7 {
-  margin-left: 58.33333%
+  margin-left: 58.3333333333%
 }
 .fd-col--offset-7[dir=rtl],
 [dir=rtl] .fd-col--offset-7 {
   margin-left: 0;
-  margin-right: 58.33333%
+  margin-right: 58.3333333333%
 }
 .fd-col--offset-after-7 {
-  margin-right: 58.33333%
+  margin-right: 58.3333333333%
 }
 .fd-col--offset-after-7[dir=rtl],
 [dir=rtl] .fd-col--offset-after-7 {
   margin-right: 0;
-  margin-left: 58.33333%
+  margin-left: 58.3333333333%
 }
 .fd-col--8 {
-  min-width: 66.66667%;
-  max-width: 66.66667%
+  min-width: 66.6666666667%;
+  max-width: 66.6666666667%
 }
 .fd-col--offset-8 {
-  margin-left: 66.66667%
+  margin-left: 66.6666666667%
 }
 .fd-col--offset-8[dir=rtl],
 [dir=rtl] .fd-col--offset-8 {
   margin-left: 0;
-  margin-right: 66.66667%
+  margin-right: 66.6666666667%
 }
 .fd-col--offset-after-8 {
-  margin-right: 66.66667%
+  margin-right: 66.6666666667%
 }
 .fd-col--offset-after-8[dir=rtl],
 [dir=rtl] .fd-col--offset-after-8 {
   margin-right: 0;
-  margin-left: 66.66667%
+  margin-left: 66.6666666667%
 }
 .fd-col--9 {
   min-width: 75%;
@@ -287,44 +287,44 @@
   margin-left: 75%
 }
 .fd-col--10 {
-  min-width: 83.33333%;
-  max-width: 83.33333%
+  min-width: 83.3333333333%;
+  max-width: 83.3333333333%
 }
 .fd-col--offset-10 {
-  margin-left: 83.33333%
+  margin-left: 83.3333333333%
 }
 .fd-col--offset-10[dir=rtl],
 [dir=rtl] .fd-col--offset-10 {
   margin-left: 0;
-  margin-right: 83.33333%
+  margin-right: 83.3333333333%
 }
 .fd-col--offset-after-10 {
-  margin-right: 83.33333%
+  margin-right: 83.3333333333%
 }
 .fd-col--offset-after-10[dir=rtl],
 [dir=rtl] .fd-col--offset-after-10 {
   margin-right: 0;
-  margin-left: 83.33333%
+  margin-left: 83.3333333333%
 }
 .fd-col--11 {
-  min-width: 91.66667%;
-  max-width: 91.66667%
+  min-width: 91.6666666667%;
+  max-width: 91.6666666667%
 }
 .fd-col--offset-11 {
-  margin-left: 91.66667%
+  margin-left: 91.6666666667%
 }
 .fd-col--offset-11[dir=rtl],
 [dir=rtl] .fd-col--offset-11 {
   margin-left: 0;
-  margin-right: 91.66667%
+  margin-right: 91.6666666667%
 }
 .fd-col--offset-after-11 {
-  margin-right: 91.66667%
+  margin-right: 91.6666666667%
 }
 .fd-col--offset-after-11[dir=rtl],
 [dir=rtl] .fd-col--offset-after-11 {
   margin-right: 0;
-  margin-left: 91.66667%
+  margin-left: 91.6666666667%
 }
 .fd-col--12 {
   min-width: 100%;
@@ -347,7 +347,7 @@
   margin-left: 100%
 }
 .fd-col--full {
-  min-width: 8.33333%;
+  min-width: 8.3333333333%;
   max-width: none;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -370,7 +370,10 @@
     margin-top: -1rem
   }
   .fd-row .fd-col {
-    padding: 1rem .5rem 0 .5rem
+    padding-top: 1rem
+  }
+  .fd-col {
+    padding: 0 .5rem
   }
   .fd-col-md--0 {
     min-width: 0;
@@ -393,44 +396,44 @@
     margin-left: 0
   }
   .fd-col-md--1 {
-    min-width: 8.33333%;
-    max-width: 8.33333%
+    min-width: 8.3333333333%;
+    max-width: 8.3333333333%
   }
   .fd-col-md--offset-1 {
-    margin-left: 8.33333%
+    margin-left: 8.3333333333%
   }
   .fd-col-md--offset-1[dir=rtl],
   [dir=rtl] .fd-col-md--offset-1 {
     margin-left: 0;
-    margin-right: 8.33333%
+    margin-right: 8.3333333333%
   }
   .fd-col-md--offset-after-1 {
-    margin-right: 8.33333%
+    margin-right: 8.3333333333%
   }
   .fd-col-md--offset-after-1[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-1 {
     margin-right: 0;
-    margin-left: 8.33333%
+    margin-left: 8.3333333333%
   }
   .fd-col-md--2 {
-    min-width: 16.66667%;
-    max-width: 16.66667%
+    min-width: 16.6666666667%;
+    max-width: 16.6666666667%
   }
   .fd-col-md--offset-2 {
-    margin-left: 16.66667%
+    margin-left: 16.6666666667%
   }
   .fd-col-md--offset-2[dir=rtl],
   [dir=rtl] .fd-col-md--offset-2 {
     margin-left: 0;
-    margin-right: 16.66667%
+    margin-right: 16.6666666667%
   }
   .fd-col-md--offset-after-2 {
-    margin-right: 16.66667%
+    margin-right: 16.6666666667%
   }
   .fd-col-md--offset-after-2[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-2 {
     margin-right: 0;
-    margin-left: 16.66667%
+    margin-left: 16.6666666667%
   }
   .fd-col-md--3 {
     min-width: 25%;
@@ -453,44 +456,44 @@
     margin-left: 25%
   }
   .fd-col-md--4 {
-    min-width: 33.33333%;
-    max-width: 33.33333%
+    min-width: 33.3333333333%;
+    max-width: 33.3333333333%
   }
   .fd-col-md--offset-4 {
-    margin-left: 33.33333%
+    margin-left: 33.3333333333%
   }
   .fd-col-md--offset-4[dir=rtl],
   [dir=rtl] .fd-col-md--offset-4 {
     margin-left: 0;
-    margin-right: 33.33333%
+    margin-right: 33.3333333333%
   }
   .fd-col-md--offset-after-4 {
-    margin-right: 33.33333%
+    margin-right: 33.3333333333%
   }
   .fd-col-md--offset-after-4[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-4 {
     margin-right: 0;
-    margin-left: 33.33333%
+    margin-left: 33.3333333333%
   }
   .fd-col-md--5 {
-    min-width: 41.66667%;
-    max-width: 41.66667%
+    min-width: 41.6666666667%;
+    max-width: 41.6666666667%
   }
   .fd-col-md--offset-5 {
-    margin-left: 41.66667%
+    margin-left: 41.6666666667%
   }
   .fd-col-md--offset-5[dir=rtl],
   [dir=rtl] .fd-col-md--offset-5 {
     margin-left: 0;
-    margin-right: 41.66667%
+    margin-right: 41.6666666667%
   }
   .fd-col-md--offset-after-5 {
-    margin-right: 41.66667%
+    margin-right: 41.6666666667%
   }
   .fd-col-md--offset-after-5[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-5 {
     margin-right: 0;
-    margin-left: 41.66667%
+    margin-left: 41.6666666667%
   }
   .fd-col-md--6 {
     min-width: 50%;
@@ -513,44 +516,44 @@
     margin-left: 50%
   }
   .fd-col-md--7 {
-    min-width: 58.33333%;
-    max-width: 58.33333%
+    min-width: 58.3333333333%;
+    max-width: 58.3333333333%
   }
   .fd-col-md--offset-7 {
-    margin-left: 58.33333%
+    margin-left: 58.3333333333%
   }
   .fd-col-md--offset-7[dir=rtl],
   [dir=rtl] .fd-col-md--offset-7 {
     margin-left: 0;
-    margin-right: 58.33333%
+    margin-right: 58.3333333333%
   }
   .fd-col-md--offset-after-7 {
-    margin-right: 58.33333%
+    margin-right: 58.3333333333%
   }
   .fd-col-md--offset-after-7[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-7 {
     margin-right: 0;
-    margin-left: 58.33333%
+    margin-left: 58.3333333333%
   }
   .fd-col-md--8 {
-    min-width: 66.66667%;
-    max-width: 66.66667%
+    min-width: 66.6666666667%;
+    max-width: 66.6666666667%
   }
   .fd-col-md--offset-8 {
-    margin-left: 66.66667%
+    margin-left: 66.6666666667%
   }
   .fd-col-md--offset-8[dir=rtl],
   [dir=rtl] .fd-col-md--offset-8 {
     margin-left: 0;
-    margin-right: 66.66667%
+    margin-right: 66.6666666667%
   }
   .fd-col-md--offset-after-8 {
-    margin-right: 66.66667%
+    margin-right: 66.6666666667%
   }
   .fd-col-md--offset-after-8[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-8 {
     margin-right: 0;
-    margin-left: 66.66667%
+    margin-left: 66.6666666667%
   }
   .fd-col-md--9 {
     min-width: 75%;
@@ -573,44 +576,44 @@
     margin-left: 75%
   }
   .fd-col-md--10 {
-    min-width: 83.33333%;
-    max-width: 83.33333%
+    min-width: 83.3333333333%;
+    max-width: 83.3333333333%
   }
   .fd-col-md--offset-10 {
-    margin-left: 83.33333%
+    margin-left: 83.3333333333%
   }
   .fd-col-md--offset-10[dir=rtl],
   [dir=rtl] .fd-col-md--offset-10 {
     margin-left: 0;
-    margin-right: 83.33333%
+    margin-right: 83.3333333333%
   }
   .fd-col-md--offset-after-10 {
-    margin-right: 83.33333%
+    margin-right: 83.3333333333%
   }
   .fd-col-md--offset-after-10[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-10 {
     margin-right: 0;
-    margin-left: 83.33333%
+    margin-left: 83.3333333333%
   }
   .fd-col-md--11 {
-    min-width: 91.66667%;
-    max-width: 91.66667%
+    min-width: 91.6666666667%;
+    max-width: 91.6666666667%
   }
   .fd-col-md--offset-11 {
-    margin-left: 91.66667%
+    margin-left: 91.6666666667%
   }
   .fd-col-md--offset-11[dir=rtl],
   [dir=rtl] .fd-col-md--offset-11 {
     margin-left: 0;
-    margin-right: 91.66667%
+    margin-right: 91.6666666667%
   }
   .fd-col-md--offset-after-11 {
-    margin-right: 91.66667%
+    margin-right: 91.6666666667%
   }
   .fd-col-md--offset-after-11[dir=rtl],
   [dir=rtl] .fd-col-md--offset-after-11 {
     margin-right: 0;
-    margin-left: 91.66667%
+    margin-left: 91.6666666667%
   }
   .fd-col-md--12 {
     min-width: 100%;
@@ -655,44 +658,44 @@
     margin-left: 0
   }
   .fd-col-lg--1 {
-    min-width: 8.33333%;
-    max-width: 8.33333%
+    min-width: 8.3333333333%;
+    max-width: 8.3333333333%
   }
   .fd-col-lg--offset-1 {
-    margin-left: 8.33333%
+    margin-left: 8.3333333333%
   }
   .fd-col-lg--offset-1[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-1 {
     margin-left: 0;
-    margin-right: 8.33333%
+    margin-right: 8.3333333333%
   }
   .fd-col-lg--offset-after-1 {
-    margin-right: 8.33333%
+    margin-right: 8.3333333333%
   }
   .fd-col-lg--offset-after-1[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-1 {
     margin-right: 0;
-    margin-left: 8.33333%
+    margin-left: 8.3333333333%
   }
   .fd-col-lg--2 {
-    min-width: 16.66667%;
-    max-width: 16.66667%
+    min-width: 16.6666666667%;
+    max-width: 16.6666666667%
   }
   .fd-col-lg--offset-2 {
-    margin-left: 16.66667%
+    margin-left: 16.6666666667%
   }
   .fd-col-lg--offset-2[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-2 {
     margin-left: 0;
-    margin-right: 16.66667%
+    margin-right: 16.6666666667%
   }
   .fd-col-lg--offset-after-2 {
-    margin-right: 16.66667%
+    margin-right: 16.6666666667%
   }
   .fd-col-lg--offset-after-2[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-2 {
     margin-right: 0;
-    margin-left: 16.66667%
+    margin-left: 16.6666666667%
   }
   .fd-col-lg--3 {
     min-width: 25%;
@@ -715,44 +718,44 @@
     margin-left: 25%
   }
   .fd-col-lg--4 {
-    min-width: 33.33333%;
-    max-width: 33.33333%
+    min-width: 33.3333333333%;
+    max-width: 33.3333333333%
   }
   .fd-col-lg--offset-4 {
-    margin-left: 33.33333%
+    margin-left: 33.3333333333%
   }
   .fd-col-lg--offset-4[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-4 {
     margin-left: 0;
-    margin-right: 33.33333%
+    margin-right: 33.3333333333%
   }
   .fd-col-lg--offset-after-4 {
-    margin-right: 33.33333%
+    margin-right: 33.3333333333%
   }
   .fd-col-lg--offset-after-4[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-4 {
     margin-right: 0;
-    margin-left: 33.33333%
+    margin-left: 33.3333333333%
   }
   .fd-col-lg--5 {
-    min-width: 41.66667%;
-    max-width: 41.66667%
+    min-width: 41.6666666667%;
+    max-width: 41.6666666667%
   }
   .fd-col-lg--offset-5 {
-    margin-left: 41.66667%
+    margin-left: 41.6666666667%
   }
   .fd-col-lg--offset-5[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-5 {
     margin-left: 0;
-    margin-right: 41.66667%
+    margin-right: 41.6666666667%
   }
   .fd-col-lg--offset-after-5 {
-    margin-right: 41.66667%
+    margin-right: 41.6666666667%
   }
   .fd-col-lg--offset-after-5[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-5 {
     margin-right: 0;
-    margin-left: 41.66667%
+    margin-left: 41.6666666667%
   }
   .fd-col-lg--6 {
     min-width: 50%;
@@ -775,44 +778,44 @@
     margin-left: 50%
   }
   .fd-col-lg--7 {
-    min-width: 58.33333%;
-    max-width: 58.33333%
+    min-width: 58.3333333333%;
+    max-width: 58.3333333333%
   }
   .fd-col-lg--offset-7 {
-    margin-left: 58.33333%
+    margin-left: 58.3333333333%
   }
   .fd-col-lg--offset-7[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-7 {
     margin-left: 0;
-    margin-right: 58.33333%
+    margin-right: 58.3333333333%
   }
   .fd-col-lg--offset-after-7 {
-    margin-right: 58.33333%
+    margin-right: 58.3333333333%
   }
   .fd-col-lg--offset-after-7[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-7 {
     margin-right: 0;
-    margin-left: 58.33333%
+    margin-left: 58.3333333333%
   }
   .fd-col-lg--8 {
-    min-width: 66.66667%;
-    max-width: 66.66667%
+    min-width: 66.6666666667%;
+    max-width: 66.6666666667%
   }
   .fd-col-lg--offset-8 {
-    margin-left: 66.66667%
+    margin-left: 66.6666666667%
   }
   .fd-col-lg--offset-8[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-8 {
     margin-left: 0;
-    margin-right: 66.66667%
+    margin-right: 66.6666666667%
   }
   .fd-col-lg--offset-after-8 {
-    margin-right: 66.66667%
+    margin-right: 66.6666666667%
   }
   .fd-col-lg--offset-after-8[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-8 {
     margin-right: 0;
-    margin-left: 66.66667%
+    margin-left: 66.6666666667%
   }
   .fd-col-lg--9 {
     min-width: 75%;
@@ -835,44 +838,44 @@
     margin-left: 75%
   }
   .fd-col-lg--10 {
-    min-width: 83.33333%;
-    max-width: 83.33333%
+    min-width: 83.3333333333%;
+    max-width: 83.3333333333%
   }
   .fd-col-lg--offset-10 {
-    margin-left: 83.33333%
+    margin-left: 83.3333333333%
   }
   .fd-col-lg--offset-10[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-10 {
     margin-left: 0;
-    margin-right: 83.33333%
+    margin-right: 83.3333333333%
   }
   .fd-col-lg--offset-after-10 {
-    margin-right: 83.33333%
+    margin-right: 83.3333333333%
   }
   .fd-col-lg--offset-after-10[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-10 {
     margin-right: 0;
-    margin-left: 83.33333%
+    margin-left: 83.3333333333%
   }
   .fd-col-lg--11 {
-    min-width: 91.66667%;
-    max-width: 91.66667%
+    min-width: 91.6666666667%;
+    max-width: 91.6666666667%
   }
   .fd-col-lg--offset-11 {
-    margin-left: 91.66667%
+    margin-left: 91.6666666667%
   }
   .fd-col-lg--offset-11[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-11 {
     margin-left: 0;
-    margin-right: 91.66667%
+    margin-right: 91.6666666667%
   }
   .fd-col-lg--offset-after-11 {
-    margin-right: 91.66667%
+    margin-right: 91.6666666667%
   }
   .fd-col-lg--offset-after-11[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-after-11 {
     margin-right: 0;
-    margin-left: 91.66667%
+    margin-left: 91.6666666667%
   }
   .fd-col-lg--12 {
     min-width: 100%;
@@ -917,44 +920,44 @@
     margin-left: 0
   }
   .fd-col-xl--1 {
-    min-width: 8.33333%;
-    max-width: 8.33333%
+    min-width: 8.3333333333%;
+    max-width: 8.3333333333%
   }
   .fd-col-xl--offset-1 {
-    margin-left: 8.33333%
+    margin-left: 8.3333333333%
   }
   .fd-col-xl--offset-1[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-1 {
     margin-left: 0;
-    margin-right: 8.33333%
+    margin-right: 8.3333333333%
   }
   .fd-col-xl--offset-after-1 {
-    margin-right: 8.33333%
+    margin-right: 8.3333333333%
   }
   .fd-col-xl--offset-after-1[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-1 {
     margin-right: 0;
-    margin-left: 8.33333%
+    margin-left: 8.3333333333%
   }
   .fd-col-xl--2 {
-    min-width: 16.66667%;
-    max-width: 16.66667%
+    min-width: 16.6666666667%;
+    max-width: 16.6666666667%
   }
   .fd-col-xl--offset-2 {
-    margin-left: 16.66667%
+    margin-left: 16.6666666667%
   }
   .fd-col-xl--offset-2[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-2 {
     margin-left: 0;
-    margin-right: 16.66667%
+    margin-right: 16.6666666667%
   }
   .fd-col-xl--offset-after-2 {
-    margin-right: 16.66667%
+    margin-right: 16.6666666667%
   }
   .fd-col-xl--offset-after-2[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-2 {
     margin-right: 0;
-    margin-left: 16.66667%
+    margin-left: 16.6666666667%
   }
   .fd-col-xl--3 {
     min-width: 25%;
@@ -977,44 +980,44 @@
     margin-left: 25%
   }
   .fd-col-xl--4 {
-    min-width: 33.33333%;
-    max-width: 33.33333%
+    min-width: 33.3333333333%;
+    max-width: 33.3333333333%
   }
   .fd-col-xl--offset-4 {
-    margin-left: 33.33333%
+    margin-left: 33.3333333333%
   }
   .fd-col-xl--offset-4[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-4 {
     margin-left: 0;
-    margin-right: 33.33333%
+    margin-right: 33.3333333333%
   }
   .fd-col-xl--offset-after-4 {
-    margin-right: 33.33333%
+    margin-right: 33.3333333333%
   }
   .fd-col-xl--offset-after-4[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-4 {
     margin-right: 0;
-    margin-left: 33.33333%
+    margin-left: 33.3333333333%
   }
   .fd-col-xl--5 {
-    min-width: 41.66667%;
-    max-width: 41.66667%
+    min-width: 41.6666666667%;
+    max-width: 41.6666666667%
   }
   .fd-col-xl--offset-5 {
-    margin-left: 41.66667%
+    margin-left: 41.6666666667%
   }
   .fd-col-xl--offset-5[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-5 {
     margin-left: 0;
-    margin-right: 41.66667%
+    margin-right: 41.6666666667%
   }
   .fd-col-xl--offset-after-5 {
-    margin-right: 41.66667%
+    margin-right: 41.6666666667%
   }
   .fd-col-xl--offset-after-5[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-5 {
     margin-right: 0;
-    margin-left: 41.66667%
+    margin-left: 41.6666666667%
   }
   .fd-col-xl--6 {
     min-width: 50%;
@@ -1037,44 +1040,44 @@
     margin-left: 50%
   }
   .fd-col-xl--7 {
-    min-width: 58.33333%;
-    max-width: 58.33333%
+    min-width: 58.3333333333%;
+    max-width: 58.3333333333%
   }
   .fd-col-xl--offset-7 {
-    margin-left: 58.33333%
+    margin-left: 58.3333333333%
   }
   .fd-col-xl--offset-7[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-7 {
     margin-left: 0;
-    margin-right: 58.33333%
+    margin-right: 58.3333333333%
   }
   .fd-col-xl--offset-after-7 {
-    margin-right: 58.33333%
+    margin-right: 58.3333333333%
   }
   .fd-col-xl--offset-after-7[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-7 {
     margin-right: 0;
-    margin-left: 58.33333%
+    margin-left: 58.3333333333%
   }
   .fd-col-xl--8 {
-    min-width: 66.66667%;
-    max-width: 66.66667%
+    min-width: 66.6666666667%;
+    max-width: 66.6666666667%
   }
   .fd-col-xl--offset-8 {
-    margin-left: 66.66667%
+    margin-left: 66.6666666667%
   }
   .fd-col-xl--offset-8[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-8 {
     margin-left: 0;
-    margin-right: 66.66667%
+    margin-right: 66.6666666667%
   }
   .fd-col-xl--offset-after-8 {
-    margin-right: 66.66667%
+    margin-right: 66.6666666667%
   }
   .fd-col-xl--offset-after-8[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-8 {
     margin-right: 0;
-    margin-left: 66.66667%
+    margin-left: 66.6666666667%
   }
   .fd-col-xl--9 {
     min-width: 75%;
@@ -1097,44 +1100,44 @@
     margin-left: 75%
   }
   .fd-col-xl--10 {
-    min-width: 83.33333%;
-    max-width: 83.33333%
+    min-width: 83.3333333333%;
+    max-width: 83.3333333333%
   }
   .fd-col-xl--offset-10 {
-    margin-left: 83.33333%
+    margin-left: 83.3333333333%
   }
   .fd-col-xl--offset-10[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-10 {
     margin-left: 0;
-    margin-right: 83.33333%
+    margin-right: 83.3333333333%
   }
   .fd-col-xl--offset-after-10 {
-    margin-right: 83.33333%
+    margin-right: 83.3333333333%
   }
   .fd-col-xl--offset-after-10[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-10 {
     margin-right: 0;
-    margin-left: 83.33333%
+    margin-left: 83.3333333333%
   }
   .fd-col-xl--11 {
-    min-width: 91.66667%;
-    max-width: 91.66667%
+    min-width: 91.6666666667%;
+    max-width: 91.6666666667%
   }
   .fd-col-xl--offset-11 {
-    margin-left: 91.66667%
+    margin-left: 91.6666666667%
   }
   .fd-col-xl--offset-11[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-11 {
     margin-left: 0;
-    margin-right: 91.66667%
+    margin-right: 91.6666666667%
   }
   .fd-col-xl--offset-after-11 {
-    margin-right: 91.66667%
+    margin-right: 91.6666666667%
   }
   .fd-col-xl--offset-after-11[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-after-11 {
     margin-right: 0;
-    margin-left: 91.66667%
+    margin-left: 91.6666666667%
   }
   .fd-col-xl--12 {
     min-width: 100%;

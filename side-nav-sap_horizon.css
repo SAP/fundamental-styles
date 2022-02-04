@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-nested-list {
@@ -559,8 +559,7 @@
   border: 0;
   background: #fff;
   background: var(--sapList_Background,#fff);
-  text-shadow: none;
-  text-shadow: var(--fdVerticalNav_Text_Shadow,none)
+  text-shadow: var(--fdVerticalNav_Text_Shadow)
 }
 .fd-nested-list__item::after,
 .fd-nested-list__item::before {
@@ -1932,8 +1931,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  text-shadow: none;
-  text-shadow: var(--fdSideNav_Text_Shadow,none);
+  text-shadow: var(--fdSideNav_Text_Shadow);
   height: 100%
 }
 .fd-side-nav::after,
@@ -1976,10 +1974,8 @@
 .fd-side-nav__skip-link:focus {
   color: #0064d9;
   color: var(--sapLinkColor,#0064d9);
-  -webkit-text-decoration: none;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration,none);
-  text-decoration: none;
-  text-decoration: var(--fdLink_Text_Decoration,none);
+  -webkit-text-decoration: var(--fdLink_Text_Decoration);
+  text-decoration: var(--fdLink_Text_Decoration);
   text-shadow: 0 0 .125rem #fff;
   text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
   display: inline-block;
@@ -2001,10 +1997,8 @@
 .fd-side-nav__skip-link:focus:hover {
   color: #005fce;
   color: var(--sapLink_Hover_Color,#005fce);
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline)
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite)
 }
 .fd-side-nav__skip-link:focus.is-focus,
 .fd-side-nav__skip-link:focus:focus {
@@ -2018,19 +2012,15 @@
   outline-color: var(--sapContent_FocusColor,#0070f2);
   outline-style: solid;
   outline-style: var(--sapContent_FocusStyle,solid);
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline)
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite)
 }
 .fd-side-nav__skip-link:focus.is-active,
 .fd-side-nav__skip-link:focus:active {
   color: #0064d9;
   color: var(--sapLink_Active_Color,#0064d9);
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline)
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite)
 }
 .fd-side-nav__skip-link:focus--inverted {
   color: #a6cfff;
@@ -2060,6 +2050,9 @@
   color: #0064d9;
   color: var(--sapLinkColor,#0064d9);
   pointer-events: none
+}
+.fd-side-nav__skip-link:focus > img {
+  vertical-align: bottom
 }
 .fd-side-nav__group-header {
   font-size: .875rem;
@@ -2169,8 +2162,7 @@
 .fd-side-nav--condensed .fd-nested-list__content,
 .fd-side-nav--condensed .fd-nested-list__link {
   border-bottom: none;
-  text-shadow: none;
-  text-shadow: var(--fdSideNav_Text_Shadow,none)
+  text-shadow: var(--fdSideNav_Text_Shadow)
 }
 .fd-side-nav--condensed .fd-nested-list__content.is-selected,
 .fd-side-nav--condensed .fd-nested-list__content[aria-selected=true],

@@ -1,0 +1,889 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-input {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 2rem;
+  border-radius: .375rem;
+  position: relative
+}
+.fn-input::after,
+.fn-input::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-input [class*=sap-icon] {
+  right: .25rem;
+  z-index: 2;
+  width: 1.125rem;
+  font-size: .9375rem;
+  text-align: center;
+  height: 2rem;
+  line-height: 2rem
+}
+.fn-input [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-input [class*=sap-icon] {
+  right: auto;
+  left: .25rem
+}
+.fn-input__text-field {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  width: 100%;
+  height: 2rem;
+  border-radius: .375rem;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  padding-left: .5rem;
+  padding-right: .25rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #f5f6f7
+}
+.fn-input__text-field::after,
+.fn-input__text-field::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-input__text-field[dir=rtl],
+[dir=rtl] .fn-input__text-field {
+  padding-right: .5rem;
+  padding-left: .25rem
+}
+.fn-input__text-field + .fn-input__border::before {
+  border-bottom-color: #223548
+}
+.fn-input__text-field.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #223548
+}
+.fn-input__text-field::-webkit-input-placeholder {
+  color: #475e75;
+  font-size: .875rem;
+  line-height: 1.375rem
+}
+.fn-input__text-field::-moz-placeholder {
+  color: #475e75;
+  font-size: .875rem;
+  line-height: 1.375rem
+}
+.fn-input__text-field:-ms-input-placeholder {
+  color: #475e75;
+  font-size: .875rem;
+  line-height: 1.375rem
+}
+.fn-input__text-field::-ms-input-placeholder {
+  color: #475e75;
+  font-size: .875rem;
+  line-height: 1.375rem
+}
+.fn-input__text-field::placeholder {
+  color: #475e75;
+  font-size: .875rem;
+  line-height: 1.375rem
+}
+.fn-input__text-field.is-hover,
+.fn-input__text-field:hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  background: #fff
+}
+.fn-input__text-field.is-hover + .fn-input__border::before,
+.fn-input__text-field:hover + .fn-input__border::before {
+  border-bottom-color: #475e75
+}
+.fn-input__text-field.is-hover.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field.is-hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field.is-hover[readonly] ~ .fn-input__border::before,
+.fn-input__text-field:hover.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field:hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field:hover[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #475e75
+}
+.fn-input__text-field.is-active,
+.fn-input__text-field:active {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff
+}
+.fn-input__text-field.is-active + .fn-input__border::before,
+.fn-input__text-field:active + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input__text-field.is-active.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field.is-active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field.is-active[readonly] ~ .fn-input__border::before,
+.fn-input__text-field:active.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field:active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field:active[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input__text-field.is-active ~ [class*=sap-icon],
+.fn-input__text-field:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input__text-field.is-focus,
+.fn-input__text-field:focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff;
+  outline: 0
+}
+.fn-input__text-field.is-focus + .fn-input__border::before,
+.fn-input__text-field:focus + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input__text-field.is-focus.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field.is-focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field.is-focus[readonly] ~ .fn-input__border::before,
+.fn-input__text-field:focus.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field:focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field:focus[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input__text-field.is-focus.is-active ~ [class*=sap-icon],
+.fn-input__text-field:focus:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input__text-field.is-disabled,
+.fn-input__text-field:disabled,
+.fn-input__text-field[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-input__text-field.is-disabled + .fn-input__border,
+.fn-input__text-field:disabled + .fn-input__border,
+.fn-input__text-field[aria-disabled=true] + .fn-input__border {
+  opacity: .4
+}
+.fn-input__text-field.is-disabled ~ [class*=sap-icon],
+.fn-input__text-field:disabled ~ [class*=sap-icon],
+.fn-input__text-field[aria-disabled=true] ~ [class*=sap-icon] {
+  opacity: .4
+}
+.fn-input__text-field.is-display {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff;
+  pointer-events: none
+}
+.fn-input__text-field.is-display + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input__text-field.is-display.is-readonly ~ .fn-input__border::before,
+.fn-input__text-field.is-display[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input__text-field.is-display[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input__text-field.is-display ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input__text-field.is-display ~ button {
+  display: none
+}
+.fn-input__border {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 2rem;
+  border-radius: .375rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none
+}
+.fn-input__border::after,
+.fn-input__border::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-input__border[dir=rtl],
+[dir=rtl] .fn-input__border {
+  left: 0;
+  right: 0
+}
+.fn-input__border::before {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  content: "";
+  width: 100%;
+  border-bottom-width: .125rem;
+  border-bottom-style: solid;
+  border-bottom-color: #475e75
+}
+.fn-input__border::before[dir=rtl],
+[dir=rtl] .fn-input__border::before {
+  left: 0;
+  right: 0
+}
+.fn-input--info [class*=sap-icon] {
+  color: #0070f2;
+  position: absolute
+}
+.fn-input--info .fn-input__text-field {
+  padding-left: .5rem;
+  padding-right: 1.625rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #ebf8ff
+}
+.fn-input--info .fn-input__text-field[dir=rtl],
+[dir=rtl] .fn-input--info .fn-input__text-field {
+  padding-right: .5rem;
+  padding-left: 1.625rem
+}
+.fn-input--info .fn-input__text-field + .fn-input__border::before {
+  border-bottom-color: #0070f2
+}
+.fn-input--info .fn-input__text-field.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #0070f2
+}
+.fn-input--info .fn-input__text-field.is-hover,
+.fn-input--info .fn-input__text-field:hover {
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  background: #fff
+}
+.fn-input--info .fn-input__text-field.is-hover + .fn-input__border::before,
+.fn-input--info .fn-input__text-field:hover + .fn-input__border::before {
+  border-bottom-color: #0070f2
+}
+.fn-input--info .fn-input__text-field.is-hover.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-hover[readonly] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:hover.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:hover[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #0070f2
+}
+.fn-input--info .fn-input__text-field.is-active,
+.fn-input--info .fn-input__text-field:active {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff
+}
+.fn-input--info .fn-input__text-field.is-active + .fn-input__border::before,
+.fn-input--info .fn-input__text-field:active + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--info .fn-input__text-field.is-active.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-active[readonly] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:active.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:active[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--info .fn-input__text-field.is-active ~ [class*=sap-icon],
+.fn-input--info .fn-input__text-field:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--info .fn-input__text-field.is-focus,
+.fn-input--info .fn-input__text-field:focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff;
+  outline: 0
+}
+.fn-input--info .fn-input__text-field.is-focus + .fn-input__border::before,
+.fn-input--info .fn-input__text-field:focus + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--info .fn-input__text-field.is-focus.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-focus[readonly] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:focus.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field:focus[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--info .fn-input__text-field.is-focus.is-active ~ [class*=sap-icon],
+.fn-input--info .fn-input__text-field:focus:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--info .fn-input__text-field.is-disabled,
+.fn-input--info .fn-input__text-field:disabled,
+.fn-input--info .fn-input__text-field[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-input--info .fn-input__text-field.is-disabled + .fn-input__border,
+.fn-input--info .fn-input__text-field:disabled + .fn-input__border,
+.fn-input--info .fn-input__text-field[aria-disabled=true] + .fn-input__border {
+  opacity: .4
+}
+.fn-input--info .fn-input__text-field.is-disabled ~ [class*=sap-icon],
+.fn-input--info .fn-input__text-field:disabled ~ [class*=sap-icon],
+.fn-input--info .fn-input__text-field[aria-disabled=true] ~ [class*=sap-icon] {
+  opacity: .4
+}
+.fn-input--info .fn-input__text-field.is-display {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff;
+  pointer-events: none
+}
+.fn-input--info .fn-input__text-field.is-display + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--info .fn-input__text-field.is-display.is-readonly ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-display[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--info .fn-input__text-field.is-display[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--info .fn-input__text-field.is-display ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--info .fn-input__text-field.is-display ~ button {
+  display: none
+}
+.fn-input--critical [class*=sap-icon] {
+  color: #f58b00;
+  position: absolute
+}
+.fn-input--critical .fn-input__text-field {
+  padding-left: .5rem;
+  padding-right: 1.625rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff8d6
+}
+.fn-input--critical .fn-input__text-field[dir=rtl],
+[dir=rtl] .fn-input--critical .fn-input__text-field {
+  padding-right: .5rem;
+  padding-left: 1.625rem
+}
+.fn-input--critical .fn-input__text-field + .fn-input__border::before {
+  border-bottom-color: #f58b00
+}
+.fn-input--critical .fn-input__text-field.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #f58b00
+}
+.fn-input--critical .fn-input__text-field.is-hover,
+.fn-input--critical .fn-input__text-field:hover {
+  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
+  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
+  background: #fff
+}
+.fn-input--critical .fn-input__text-field.is-hover + .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:hover + .fn-input__border::before {
+  border-bottom-color: #f58b00
+}
+.fn-input--critical .fn-input__text-field.is-hover.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-hover[readonly] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:hover.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:hover[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #f58b00
+}
+.fn-input--critical .fn-input__text-field.is-active,
+.fn-input--critical .fn-input__text-field:active {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff
+}
+.fn-input--critical .fn-input__text-field.is-active + .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:active + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--critical .fn-input__text-field.is-active.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-active[readonly] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:active.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:active[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--critical .fn-input__text-field.is-active ~ [class*=sap-icon],
+.fn-input--critical .fn-input__text-field:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--critical .fn-input__text-field.is-focus,
+.fn-input--critical .fn-input__text-field:focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff;
+  outline: 0
+}
+.fn-input--critical .fn-input__text-field.is-focus + .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:focus + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--critical .fn-input__text-field.is-focus.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-focus[readonly] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:focus.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field:focus[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--critical .fn-input__text-field.is-focus.is-active ~ [class*=sap-icon],
+.fn-input--critical .fn-input__text-field:focus:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--critical .fn-input__text-field.is-disabled,
+.fn-input--critical .fn-input__text-field:disabled,
+.fn-input--critical .fn-input__text-field[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-input--critical .fn-input__text-field.is-disabled + .fn-input__border,
+.fn-input--critical .fn-input__text-field:disabled + .fn-input__border,
+.fn-input--critical .fn-input__text-field[aria-disabled=true] + .fn-input__border {
+  opacity: .4
+}
+.fn-input--critical .fn-input__text-field.is-disabled ~ [class*=sap-icon],
+.fn-input--critical .fn-input__text-field:disabled ~ [class*=sap-icon],
+.fn-input--critical .fn-input__text-field[aria-disabled=true] ~ [class*=sap-icon] {
+  opacity: .4
+}
+.fn-input--critical .fn-input__text-field.is-display {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff;
+  pointer-events: none
+}
+.fn-input--critical .fn-input__text-field.is-display + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--critical .fn-input__text-field.is-display.is-readonly ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-display[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--critical .fn-input__text-field.is-display[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--critical .fn-input__text-field.is-display ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--critical .fn-input__text-field.is-display ~ button {
+  display: none
+}
+.fn-input--negative [class*=sap-icon] {
+  color: #d20a0a;
+  position: absolute
+}
+.fn-input--negative .fn-input__text-field {
+  padding-left: .5rem;
+  padding-right: 1.625rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #ffeaf4
+}
+.fn-input--negative .fn-input__text-field[dir=rtl],
+[dir=rtl] .fn-input--negative .fn-input__text-field {
+  padding-right: .5rem;
+  padding-left: 1.625rem
+}
+.fn-input--negative .fn-input__text-field + .fn-input__border::before {
+  border-bottom-color: #d20a0a
+}
+.fn-input--negative .fn-input__text-field.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #d20a0a
+}
+.fn-input--negative .fn-input__text-field.is-hover,
+.fn-input--negative .fn-input__text-field:hover {
+  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
+  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
+  background: #fff
+}
+.fn-input--negative .fn-input__text-field.is-hover + .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:hover + .fn-input__border::before {
+  border-bottom-color: #d20a0a
+}
+.fn-input--negative .fn-input__text-field.is-hover.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-hover[readonly] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:hover.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:hover[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #d20a0a
+}
+.fn-input--negative .fn-input__text-field.is-active,
+.fn-input--negative .fn-input__text-field:active {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff
+}
+.fn-input--negative .fn-input__text-field.is-active + .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:active + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--negative .fn-input__text-field.is-active.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-active[readonly] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:active.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:active[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--negative .fn-input__text-field.is-active ~ [class*=sap-icon],
+.fn-input--negative .fn-input__text-field:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--negative .fn-input__text-field.is-focus,
+.fn-input--negative .fn-input__text-field:focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff;
+  outline: 0
+}
+.fn-input--negative .fn-input__text-field.is-focus + .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:focus + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--negative .fn-input__text-field.is-focus.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-focus[readonly] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:focus.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field:focus[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--negative .fn-input__text-field.is-focus.is-active ~ [class*=sap-icon],
+.fn-input--negative .fn-input__text-field:focus:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--negative .fn-input__text-field.is-disabled,
+.fn-input--negative .fn-input__text-field:disabled,
+.fn-input--negative .fn-input__text-field[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-input--negative .fn-input__text-field.is-disabled + .fn-input__border,
+.fn-input--negative .fn-input__text-field:disabled + .fn-input__border,
+.fn-input--negative .fn-input__text-field[aria-disabled=true] + .fn-input__border {
+  opacity: .4
+}
+.fn-input--negative .fn-input__text-field.is-disabled ~ [class*=sap-icon],
+.fn-input--negative .fn-input__text-field:disabled ~ [class*=sap-icon],
+.fn-input--negative .fn-input__text-field[aria-disabled=true] ~ [class*=sap-icon] {
+  opacity: .4
+}
+.fn-input--negative .fn-input__text-field.is-display {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff;
+  pointer-events: none
+}
+.fn-input--negative .fn-input__text-field.is-display + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--negative .fn-input__text-field.is-display.is-readonly ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-display[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--negative .fn-input__text-field.is-display[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--negative .fn-input__text-field.is-display ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--negative .fn-input__text-field.is-display ~ button {
+  display: none
+}
+.fn-input--positive [class*=sap-icon] {
+  color: #188918;
+  position: absolute
+}
+.fn-input--positive .fn-input__text-field {
+  padding-left: .5rem;
+  padding-right: 1.625rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #f5fae5
+}
+.fn-input--positive .fn-input__text-field[dir=rtl],
+[dir=rtl] .fn-input--positive .fn-input__text-field {
+  padding-right: .5rem;
+  padding-left: 1.625rem
+}
+.fn-input--positive .fn-input__text-field + .fn-input__border::before {
+  border-bottom-color: #188918
+}
+.fn-input--positive .fn-input__text-field.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #188918
+}
+.fn-input--positive .fn-input__text-field.is-hover,
+.fn-input--positive .fn-input__text-field:hover {
+  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
+  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
+  background: #fff
+}
+.fn-input--positive .fn-input__text-field.is-hover + .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:hover + .fn-input__border::before {
+  border-bottom-color: #188918
+}
+.fn-input--positive .fn-input__text-field.is-hover.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-hover[readonly] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:hover.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:hover[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:hover[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed #188918
+}
+.fn-input--positive .fn-input__text-field.is-active,
+.fn-input--positive .fn-input__text-field:active {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff
+}
+.fn-input--positive .fn-input__text-field.is-active + .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:active + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--positive .fn-input__text-field.is-active.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-active[readonly] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:active.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:active[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:active[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--positive .fn-input__text-field.is-active ~ [class*=sap-icon],
+.fn-input--positive .fn-input__text-field:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--positive .fn-input__text-field.is-focus,
+.fn-input--positive .fn-input__text-field:focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2;
+  background: #fff;
+  outline: 0
+}
+.fn-input--positive .fn-input__text-field.is-focus + .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:focus + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--positive .fn-input__text-field.is-focus.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-focus[readonly] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:focus.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:focus[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field:focus[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--positive .fn-input__text-field.is-focus.is-active ~ [class*=sap-icon],
+.fn-input--positive .fn-input__text-field:focus:active ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--positive .fn-input__text-field.is-disabled,
+.fn-input--positive .fn-input__text-field:disabled,
+.fn-input--positive .fn-input__text-field[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-input--positive .fn-input__text-field.is-disabled + .fn-input__border,
+.fn-input--positive .fn-input__text-field:disabled + .fn-input__border,
+.fn-input--positive .fn-input__text-field[aria-disabled=true] + .fn-input__border {
+  opacity: .4
+}
+.fn-input--positive .fn-input__text-field.is-disabled ~ [class*=sap-icon],
+.fn-input--positive .fn-input__text-field:disabled ~ [class*=sap-icon],
+.fn-input--positive .fn-input__text-field[aria-disabled=true] ~ [class*=sap-icon] {
+  opacity: .4
+}
+.fn-input--positive .fn-input__text-field.is-display {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #fff;
+  pointer-events: none
+}
+.fn-input--positive .fn-input__text-field.is-display + .fn-input__border::before {
+  border-bottom-color: transparent
+}
+.fn-input--positive .fn-input__text-field.is-display.is-readonly ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-display[aria-readonly=true] ~ .fn-input__border::before,
+.fn-input--positive .fn-input__text-field.is-display[readonly] ~ .fn-input__border::before {
+  border-bottom: .0625rem dashed transparent
+}
+.fn-input--positive .fn-input__text-field.is-display ~ [class*=sap-icon] {
+  display: none
+}
+.fn-input--positive .fn-input__text-field.is-display ~ button {
+  display: none
+}
+.fn-input--select {
+  outline: 0;
+  cursor: pointer
+}
+.fn-input--select .fn-input__text-field {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  padding-left: .5rem;
+  padding-right: 1.625rem;
+  pointer-events: none
+}
+.fn-input--select .fn-input__text-field[dir=rtl],
+[dir=rtl] .fn-input--select .fn-input__text-field {
+  padding-right: .5rem;
+  padding-left: 1.625rem
+}
+.fn-input--select button {
+  right: .25rem;
+  top: .4375rem;
+  position: absolute;
+  pointer-events: none
+}
+.fn-input--select button[dir=rtl],
+[dir=rtl] .fn-input--select button {
+  right: auto;
+  left: .25rem
+}
+.fn-input--select.is-hover .fn-input__text-field,
+.fn-input--select:hover .fn-input__text-field {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-input--select.is-active .fn-input__text-field,
+.fn-input--select:active .fn-input__text-field {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-input--select.is-active .fn-input__border::before,
+.fn-input--select:active .fn-input__border::before {
+  border-bottom-color: #0070f2
+}
+.fn-input--select.is-active button,
+.fn-input--select:active button {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #0070f2
+}
+.fn-input--select.is-active button [class*=sap-icon],
+.fn-input--select:active button [class*=sap-icon] {
+  color: #fff
+}
+.fn-input--select.focus-visible,
+.fn-input--select.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-input--select.focus-visible .fn-input__text-field,
+.fn-input--select.is-focus .fn-input__text-field {
+  background: #fff
+}
+.fn-input--select.focus-visible .fn-input__border::before,
+.fn-input--select.is-focus .fn-input__border::before {
+  border-bottom: none
+}
+.fn-input--select.is-display {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  pointer-events: none
+}
+.fn-input--select.is-display .fn-input__text-field {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: 0 0
+}
+.fn-input--select.is-display .fn-input__border::before {
+  border-bottom: none
+}
+.fn-input--select.is-display button {
+  display: none
+}
+.fn-input--select.is-display.is-hover .fn-input__text-field,
+.fn-input--select.is-display:hover .fn-input__text-field {
+  background: 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-input--select.is-disabled,
+.fn-input--select:disabled,
+.fn-input--select[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-input--select.is-disabled + .fn-input__border,
+.fn-input--select:disabled + .fn-input__border,
+.fn-input--select[aria-disabled=true] + .fn-input__border {
+  opacity: .4
+}
+.fn-input--select.is-disabled ~ [class*=sap-icon],
+.fn-input--select:disabled ~ [class*=sap-icon],
+.fn-input--select[aria-disabled=true] ~ [class*=sap-icon] {
+  opacity: .4
+}
+.fn-input--combobox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+.fn-input--multi-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}

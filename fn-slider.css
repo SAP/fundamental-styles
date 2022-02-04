@@ -1,0 +1,277 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-slider {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  position: relative;
+  height: .5rem;
+  background: #eaecee;
+  border-radius: .25rem
+}
+.fn-slider::after,
+.fn-slider::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-slider::after {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  content: "";
+  z-index: 1;
+  top: .125rem;
+  left: .125rem;
+  position: absolute;
+  border-radius: 50%;
+  width: .25rem;
+  height: .25rem;
+  background: #475e75
+}
+.fn-slider::after::after,
+.fn-slider::after::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-slider::before {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  content: "";
+  z-index: 1;
+  top: .125rem;
+  left: .125rem;
+  position: absolute;
+  border-radius: 50%;
+  width: .25rem;
+  height: .25rem;
+  background: #475e75;
+  left: auto;
+  right: .125rem
+}
+.fn-slider::before::after,
+.fn-slider::before::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-slider.is-disabled,
+.fn-slider:disabled,
+.fn-slider[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-slider__track {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  top: -.5625rem;
+  position: absolute;
+  height: 1.625rem;
+  border-radius: .375rem
+}
+.fn-slider__track::after,
+.fn-slider__track::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-slider__track-range {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  top: .4375rem;
+  height: .75rem;
+  position: absolute;
+  background: #0070f2;
+  border-radius: .375rem
+}
+.fn-slider__track-range::after,
+.fn-slider__track-range::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-slider__track-range[dir=rtl],
+[dir=rtl] .fn-slider__track-range {
+  left: auto;
+  right: 0
+}
+.fn-slider__handle {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-transition: box-shadow 150ms ease-in;
+  -webkit-transition: -webkit-box-shadow 150ms ease-in;
+  transition: -webkit-box-shadow 150ms ease-in;
+  transition: box-shadow 150ms ease-in;
+  transition: box-shadow 150ms ease-in,-webkit-box-shadow 150ms ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 100%;
+  z-index: 3;
+  cursor: pointer;
+  padding: .5rem;
+  position: absolute;
+  background: #fff;
+  width: 2.25rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 1.625rem;
+  border-radius: .375rem;
+  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
+  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+}
+.fn-slider__handle::after,
+.fn-slider__handle::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-slider__handle[dir=rtl],
+[dir=rtl] .fn-slider__handle {
+  left: auto;
+  right: 100%
+}
+.fn-slider__handle [class*=sap-icon] {
+  font-size: .75rem;
+  color: #0070f2
+}
+.fn-slider__handle [class*=sap-icon]:first-child {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.fn-slider__handle [class*=sap-icon]:first-child[dir=rtl],
+[dir=rtl] .fn-slider__handle [class*=sap-icon]:first-child {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg)
+}
+.fn-slider__handle [class*=sap-icon]:last-child {
+  margin-left: .375rem;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg)
+}
+.fn-slider__handle [class*=sap-icon]:last-child[dir=rtl],
+[dir=rtl] .fn-slider__handle [class*=sap-icon]:last-child {
+  margin-left: auto;
+  margin-right: .375rem;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.fn-slider__handle[aria-valuenow="0"] {
+  -webkit-transform: translateX(0);
+  transform: translateX(0)
+}
+.fn-slider__handle[aria-valuenow="100"] {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%)
+}
+.fn-slider__handle.is-focus,
+.fn-slider__handle:focus {
+  outline: 0
+}
+.fn-slider__handle.is-hover,
+.fn-slider__handle:hover {
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+}
+.fn-slider__handle.is-hover.is-active,
+.fn-slider__handle.is-hover:active,
+.fn-slider__handle:hover.is-active,
+.fn-slider__handle:hover:active {
+  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
+  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+}
+.fn-slider__handle.is-active,
+.fn-slider__handle:active {
+  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
+  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+}
+.fn-slider__handle.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-slider__handle:focus:not(.focus-visible) {
+  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
+  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+}
+.fn-slider__handle:focus:not(.focus-visible).is-hover,
+.fn-slider__handle:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+}
+.fn-slider__handle:focus:not(.focus-visible).is-hover.is-active,
+.fn-slider__handle:focus:not(.focus-visible).is-hover:active,
+.fn-slider__handle:focus:not(.focus-visible):hover.is-active,
+.fn-slider__handle:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
+  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+}
+.fn-slider__handle.focus-visible,
+.fn-slider__handle.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-slider--range .fn-slider__handle:first-child {
+  left: 0
+}
+.fn-slider--range .fn-slider__handle:first-child[dir=rtl],
+[dir=rtl] .fn-slider--range .fn-slider__handle:first-child {
+  left: auto;
+  right: 0
+}

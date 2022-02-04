@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -114,10 +114,8 @@
 .fd-radio.is-error {
   background-color: #ffeaf4;
   background-color: var(--sapField_InvalidBackground,#ffeaf4);
-  font-style: normal;
-  font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal);
+  font-style: var(--fdInput_State_Text_Style);
+  font-weight: var(--fdInput_State_Font_Weight);
   border-color: #f53232;
   border-color: var(--sapField_InvalidColor,#f53232);
   border-width: .125rem;
@@ -136,10 +134,8 @@
 .fd-radio.is-warning {
   background-color: #fff8d6;
   background-color: var(--sapField_WarningBackground,#fff8d6);
-  font-style: normal;
-  font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal);
+  font-style: var(--fdInput_State_Text_Style);
+  font-weight: var(--fdInput_State_Font_Weight);
   border-color: #e76500;
   border-color: var(--sapField_WarningColor,#e76500);
   border-width: .125rem;
@@ -191,8 +187,7 @@
 .fd-radio.is-information,
 .fd-radio.is-warning {
   border-width: .125rem;
-  border-style: solid;
-  border-style: var(--fdInput_State_Border_Type,solid)
+  border-style: var(--fdInput_State_Border_Type)
 }
 .fd-radio.is-alert.is-focus,
 .fd-radio.is-alert:focus,
@@ -392,15 +387,14 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  background: #0070f2;
-  background: var(--fdRadio_Selected_Color,var(--sapSelectedColor,#0070f2))
+  background: var(--fdRadio_Selected_Color)
 }
 .fd-radio.is-alert + .fd-radio__label::before,
 .fd-radio.is-warning + .fd-radio__label::before {
   background-color: #fff8d6;
   background-color: var(--sapField_WarningBackground,#fff8d6);
-  border: .125rem solid #e76500;
-  border: .125rem var(--fdRadio_State_Border_Type,solid) var(--sapField_WarningColor,#e76500)
+  border: .125rem var(--fdRadio_State_Border_Type) #e76500;
+  border: .125rem var(--fdRadio_State_Border_Type) var(--sapField_WarningColor,#e76500)
 }
 .fd-radio.is-alert + .fd-radio__label::after,
 .fd-radio.is-warning + .fd-radio__label::after {
@@ -425,8 +419,8 @@
 .fd-radio.is-error + .fd-radio__label::before {
   background-color: #ffeaf4;
   background-color: var(--sapField_InvalidBackground,#ffeaf4);
-  border: .125rem solid #f53232;
-  border: .125rem var(--fdRadio_State_Border_Type,solid) var(--sapField_InvalidColor,#f53232)
+  border: .125rem var(--fdRadio_State_Border_Type) #f53232;
+  border: .125rem var(--fdRadio_State_Border_Type) var(--sapField_InvalidColor,#f53232)
 }
 .fd-radio.is-error + .fd-radio__label::after {
   background: #f53232;
@@ -463,8 +457,8 @@
 .fd-radio.is-information + .fd-radio__label::before {
   background-color: #e1f4ff;
   background-color: var(--sapField_InformationBackground,#e1f4ff);
-  border: .125rem solid #0070f2;
-  border: .125rem var(--fdRadio_State_Border_Type,solid) var(--sapField_InformationColor,#0070f2)
+  border: .125rem var(--fdRadio_State_Border_Type) #0070f2;
+  border: .125rem var(--fdRadio_State_Border_Type) var(--sapField_InformationColor,#0070f2)
 }
 .fd-radio.is-information + .fd-radio__label::after {
   background: #0070f2;

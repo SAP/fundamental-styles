@@ -1,0 +1,908 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-avatar {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  border-width: .125rem;
+  border-style: solid
+}
+.fn-avatar::after,
+.fn-avatar::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-avatar__initials {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-weight: 700
+}
+.fn-avatar__initials::after,
+.fn-avatar__initials::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-avatar__icon {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-avatar__icon::after,
+.fn-avatar__icon::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-avatar__thumbnail {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: inherit;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat
+}
+.fn-avatar__thumbnail::after,
+.fn-avatar__thumbnail::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-avatar--thumbnail {
+  border: none;
+  position: relative
+}
+.fn-avatar--thumbnail::after {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  transition: all .2s;
+  -webkit-transition: all .2s
+}
+.fn-avatar--thumbnail.fn-avatar--interactive {
+  cursor: pointer
+}
+.fn-avatar--thumbnail.fn-avatar--interactive.is-hover::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:hover::after {
+  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.1)),to(rgba(21,39,58,.1)));
+  background: linear-gradient(0deg,rgba(21,39,58,.1),rgba(21,39,58,.1))
+}
+.fn-avatar--thumbnail.fn-avatar--interactive.is-hover.is-active::after,
+.fn-avatar--thumbnail.fn-avatar--interactive.is-hover:active::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:hover.is-active::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:hover:active::after {
+  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.15)),to(rgba(21,39,58,.15)));
+  background: linear-gradient(0deg,rgba(21,39,58,.15),rgba(21,39,58,.15))
+}
+.fn-avatar--thumbnail.fn-avatar--interactive.is-active::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:active::after {
+  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.15)),to(rgba(21,39,58,.15)));
+  background: linear-gradient(0deg,rgba(21,39,58,.15),rgba(21,39,58,.15))
+}
+.fn-avatar--thumbnail.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border: .125rem solid #fff;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover::after {
+  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.1)),to(rgba(21,39,58,.1)));
+  background: linear-gradient(0deg,rgba(21,39,58,.1),rgba(21,39,58,.1))
+}
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  outline: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active::after,
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover:active::after {
+  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.15)),to(rgba(21,39,58,.15)));
+  background: linear-gradient(0deg,rgba(21,39,58,.15),rgba(21,39,58,.15))
+}
+.fn-avatar--thumbnail.fn-avatar--interactive.focus-visible,
+.fn-avatar--thumbnail.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border: .125rem solid #fff;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-avatar--thumbnail.fn-avatar--interactive.is-disabled,
+.fn-avatar--thumbnail.fn-avatar--interactive:disabled,
+.fn-avatar--thumbnail.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-avatar--xl {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem
+}
+.fn-avatar--xl.fn-avatar--circle {
+  border-radius: 50%
+}
+.fn-avatar--xl .fn-avatar__initials {
+  font-size: 1.125rem;
+  line-height: 1.375rem
+}
+.fn-avatar--xl .fn-avatar__icon {
+  width: 2rem;
+  height: 2rem
+}
+.fn-avatar--xl .fn-avatar__icon [class*=sap-icon] {
+  font-size: 1.5rem
+}
+.fn-avatar--l {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .875rem
+}
+.fn-avatar--l.fn-avatar--circle {
+  border-radius: 50%
+}
+.fn-avatar--l .fn-avatar__initials {
+  font-size: .875rem;
+  line-height: 1.375rem
+}
+.fn-avatar--l .fn-avatar__icon {
+  width: 1.5rem;
+  height: 1.5rem
+}
+.fn-avatar--l .fn-avatar__icon [class*=sap-icon] {
+  font-size: 1.125rem
+}
+.fn-avatar--m {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .625rem
+}
+.fn-avatar--m.fn-avatar--circle {
+  border-radius: 50%
+}
+.fn-avatar--m .fn-avatar__initials {
+  font-size: .75rem;
+  line-height: 1.125rem
+}
+.fn-avatar--m .fn-avatar__icon {
+  width: 1.25rem;
+  height: 1.25rem
+}
+.fn-avatar--m .fn-avatar__icon [class*=sap-icon] {
+  font-size: .9375rem
+}
+.fn-avatar--s {
+  width: 2rem;
+  height: 2rem;
+  border-radius: .5rem
+}
+.fn-avatar--s.fn-avatar--circle {
+  border-radius: 50%
+}
+.fn-avatar--s .fn-avatar__initials {
+  font-size: .75rem;
+  line-height: 1.125rem
+}
+.fn-avatar--s .fn-avatar__icon {
+  width: 1rem;
+  height: 1rem
+}
+.fn-avatar--s .fn-avatar__icon [class*=sap-icon] {
+  font-size: .75rem
+}
+.fn-avatar--xs {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: .375rem
+}
+.fn-avatar--xs.fn-avatar--circle {
+  border-radius: 50%
+}
+.fn-avatar--xs .fn-avatar__initials {
+  font-size: .75rem;
+  line-height: 1.125rem
+}
+.fn-avatar--xs .fn-avatar__icon {
+  width: .75rem;
+  height: .75rem
+}
+.fn-avatar--xs .fn-avatar__icon [class*=sap-icon] {
+  font-size: .5625rem
+}
+.fn-avatar--indigo {
+  background: #e2d8ff;
+  border-color: #e2d8ff
+}
+.fn-avatar--indigo .fn-avatar__initials {
+  color: #470ced
+}
+.fn-avatar--indigo [class*=sap-icon] {
+  color: #470ced
+}
+.fn-avatar--indigo.fn-avatar--interactive {
+  cursor: pointer;
+  background: #5d36ff;
+  border-color: #5d36ff
+}
+.fn-avatar--indigo.fn-avatar--interactive .fn-avatar__initials {
+  color: #fff
+}
+.fn-avatar--indigo.fn-avatar--interactive [class*=sap-icon] {
+  color: #fff
+}
+.fn-avatar--indigo.fn-avatar--interactive.is-hover,
+.fn-avatar--indigo.fn-avatar--interactive:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #470ced;
+  border-color: #470ced
+}
+.fn-avatar--indigo.fn-avatar--interactive.is-hover.is-active,
+.fn-avatar--indigo.fn-avatar--interactive.is-hover:active,
+.fn-avatar--indigo.fn-avatar--interactive:hover.is-active,
+.fn-avatar--indigo.fn-avatar--interactive:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #2c13ad;
+  border-color: #2c13ad
+}
+.fn-avatar--indigo.fn-avatar--interactive.is-active,
+.fn-avatar--indigo.fn-avatar--interactive:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #2c13ad;
+  border-color: #2c13ad
+}
+.fn-avatar--indigo.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #5d36ff;
+  -webkit-box-shadow: 0 0 0 .125rem #5d36ff;
+  box-shadow: 0 0 0 .125rem #5d36ff
+}
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #5d36ff;
+  border-color: #5d36ff
+}
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #470ced;
+  border-color: #470ced
+}
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #2c13ad;
+  border-color: #2c13ad
+}
+.fn-avatar--indigo.fn-avatar--interactive.focus-visible,
+.fn-avatar--indigo.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #5d36ff;
+  -webkit-box-shadow: 0 0 0 .125rem #5d36ff;
+  box-shadow: 0 0 0 .125rem #5d36ff
+}
+.fn-avatar--indigo.fn-avatar--interactive.is-disabled,
+.fn-avatar--indigo.fn-avatar--interactive:disabled,
+.fn-avatar--indigo.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-avatar--crimson {
+  background: #ffdce8;
+  border-color: #ffdce8
+}
+.fn-avatar--crimson .fn-avatar__initials {
+  color: #ba066c
+}
+.fn-avatar--crimson [class*=sap-icon] {
+  color: #ba066c
+}
+.fn-avatar--crimson.fn-avatar--interactive {
+  cursor: pointer;
+  background: #df1278;
+  border-color: #df1278
+}
+.fn-avatar--crimson.fn-avatar--interactive .fn-avatar__initials {
+  color: #fff
+}
+.fn-avatar--crimson.fn-avatar--interactive [class*=sap-icon] {
+  color: #fff
+}
+.fn-avatar--crimson.fn-avatar--interactive.is-hover,
+.fn-avatar--crimson.fn-avatar--interactive:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #ba066c;
+  border-color: #ba066c
+}
+.fn-avatar--crimson.fn-avatar--interactive.is-hover.is-active,
+.fn-avatar--crimson.fn-avatar--interactive.is-hover:active,
+.fn-avatar--crimson.fn-avatar--interactive:hover.is-active,
+.fn-avatar--crimson.fn-avatar--interactive:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #9b015d;
+  border-color: #9b015d
+}
+.fn-avatar--crimson.fn-avatar--interactive.is-active,
+.fn-avatar--crimson.fn-avatar--interactive:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #9b015d;
+  border-color: #9b015d
+}
+.fn-avatar--crimson.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #df1278;
+  -webkit-box-shadow: 0 0 0 .125rem #df1278;
+  box-shadow: 0 0 0 .125rem #df1278
+}
+.fn-avatar--crimson.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #df1278;
+  border-color: #df1278
+}
+.fn-avatar--crimson.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--crimson.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #ba066c;
+  border-color: #ba066c
+}
+.fn-avatar--crimson.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--crimson.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--crimson.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--crimson.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #9b015d;
+  border-color: #9b015d
+}
+.fn-avatar--crimson.fn-avatar--interactive.focus-visible,
+.fn-avatar--crimson.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #df1278;
+  -webkit-box-shadow: 0 0 0 .125rem #df1278;
+  box-shadow: 0 0 0 .125rem #df1278
+}
+.fn-avatar--crimson.fn-avatar--interactive.is-disabled,
+.fn-avatar--crimson.fn-avatar--interactive:disabled,
+.fn-avatar--crimson.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-avatar--cyan {
+  background: #b8f3ff;
+  border-color: #b8f3ff
+}
+.fn-avatar--cyan .fn-avatar__initials {
+  color: #00709f
+}
+.fn-avatar--cyan [class*=sap-icon] {
+  color: #00709f
+}
+.fn-avatar--cyan.fn-avatar--interactive {
+  cursor: pointer;
+  background: #007fa9;
+  border-color: #007fa9
+}
+.fn-avatar--cyan.fn-avatar--interactive .fn-avatar__initials {
+  color: #fff
+}
+.fn-avatar--cyan.fn-avatar--interactive [class*=sap-icon] {
+  color: #fff
+}
+.fn-avatar--cyan.fn-avatar--interactive.is-hover,
+.fn-avatar--cyan.fn-avatar--interactive:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #00709f;
+  border-color: #00709f
+}
+.fn-avatar--cyan.fn-avatar--interactive.is-hover.is-active,
+.fn-avatar--cyan.fn-avatar--interactive.is-hover:active,
+.fn-avatar--cyan.fn-avatar--interactive:hover.is-active,
+.fn-avatar--cyan.fn-avatar--interactive:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #025484;
+  border-color: #025484
+}
+.fn-avatar--cyan.fn-avatar--interactive.is-active,
+.fn-avatar--cyan.fn-avatar--interactive:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #025484;
+  border-color: #025484
+}
+.fn-avatar--cyan.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #007fa9;
+  -webkit-box-shadow: 0 0 0 .125rem #007fa9;
+  box-shadow: 0 0 0 .125rem #007fa9
+}
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #007fa9;
+  border-color: #007fa9
+}
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #00709f;
+  border-color: #00709f
+}
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #025484;
+  border-color: #025484
+}
+.fn-avatar--cyan.fn-avatar--interactive.focus-visible,
+.fn-avatar--cyan.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #007fa9;
+  -webkit-box-shadow: 0 0 0 .125rem #007fa9;
+  box-shadow: 0 0 0 .125rem #007fa9
+}
+.fn-avatar--cyan.fn-avatar--interactive.is-disabled,
+.fn-avatar--cyan.fn-avatar--interactive:disabled,
+.fn-avatar--cyan.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-avatar--lime {
+  background: #dcf387;
+  border-color: #dcf387
+}
+.fn-avatar--lime .fn-avatar__initials {
+  color: #437500
+}
+.fn-avatar--lime [class*=sap-icon] {
+  color: #437500
+}
+.fn-avatar--lime.fn-avatar--interactive {
+  cursor: pointer;
+  background: #588206;
+  border-color: #588206
+}
+.fn-avatar--lime.fn-avatar--interactive .fn-avatar__initials {
+  color: #fff
+}
+.fn-avatar--lime.fn-avatar--interactive [class*=sap-icon] {
+  color: #fff
+}
+.fn-avatar--lime.fn-avatar--interactive.is-hover,
+.fn-avatar--lime.fn-avatar--interactive:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #437500;
+  border-color: #437500
+}
+.fn-avatar--lime.fn-avatar--interactive.is-hover.is-active,
+.fn-avatar--lime.fn-avatar--interactive.is-hover:active,
+.fn-avatar--lime.fn-avatar--interactive:hover.is-active,
+.fn-avatar--lime.fn-avatar--interactive:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #325a01;
+  border-color: #325a01
+}
+.fn-avatar--lime.fn-avatar--interactive.is-active,
+.fn-avatar--lime.fn-avatar--interactive:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #325a01;
+  border-color: #325a01
+}
+.fn-avatar--lime.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #588206;
+  -webkit-box-shadow: 0 0 0 .125rem #588206;
+  box-shadow: 0 0 0 .125rem #588206
+}
+.fn-avatar--lime.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #588206;
+  border-color: #588206
+}
+.fn-avatar--lime.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--lime.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #437500;
+  border-color: #437500
+}
+.fn-avatar--lime.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--lime.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--lime.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--lime.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #325a01;
+  border-color: #325a01
+}
+.fn-avatar--lime.fn-avatar--interactive.focus-visible,
+.fn-avatar--lime.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #588206;
+  -webkit-box-shadow: 0 0 0 .125rem #588206;
+  box-shadow: 0 0 0 .125rem #588206
+}
+.fn-avatar--lime.fn-avatar--interactive.is-disabled,
+.fn-avatar--lime.fn-avatar--interactive:disabled,
+.fn-avatar--lime.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-avatar--pink {
+  background: #ffdcf3;
+  border-color: #ffdcf3
+}
+.fn-avatar--pink .fn-avatar__initials {
+  color: #a100c2
+}
+.fn-avatar--pink [class*=sap-icon] {
+  color: #a100c2
+}
+.fn-avatar--pink.fn-avatar--interactive {
+  cursor: pointer;
+  background: #cc00dc;
+  border-color: #cc00dc
+}
+.fn-avatar--pink.fn-avatar--interactive .fn-avatar__initials {
+  color: #fff
+}
+.fn-avatar--pink.fn-avatar--interactive [class*=sap-icon] {
+  color: #fff
+}
+.fn-avatar--pink.fn-avatar--interactive.is-hover,
+.fn-avatar--pink.fn-avatar--interactive:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #a100c2;
+  border-color: #a100c2
+}
+.fn-avatar--pink.fn-avatar--interactive.is-hover.is-active,
+.fn-avatar--pink.fn-avatar--interactive.is-hover:active,
+.fn-avatar--pink.fn-avatar--interactive:hover.is-active,
+.fn-avatar--pink.fn-avatar--interactive:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #7800a4;
+  border-color: #7800a4
+}
+.fn-avatar--pink.fn-avatar--interactive.is-active,
+.fn-avatar--pink.fn-avatar--interactive:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #7800a4;
+  border-color: #7800a4
+}
+.fn-avatar--pink.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #cc00dc;
+  -webkit-box-shadow: 0 0 0 .125rem #cc00dc;
+  box-shadow: 0 0 0 .125rem #cc00dc
+}
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #cc00dc;
+  border-color: #cc00dc
+}
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #a100c2;
+  border-color: #a100c2
+}
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #7800a4;
+  border-color: #7800a4
+}
+.fn-avatar--pink.fn-avatar--interactive.focus-visible,
+.fn-avatar--pink.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #cc00dc;
+  -webkit-box-shadow: 0 0 0 .125rem #cc00dc;
+  box-shadow: 0 0 0 .125rem #cc00dc
+}
+.fn-avatar--pink.fn-avatar--interactive.is-disabled,
+.fn-avatar--pink.fn-avatar--interactive:disabled,
+.fn-avatar--pink.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-avatar--yellow {
+  background: #fce8a9;
+  border-color: #fce8a9
+}
+.fn-avatar--yellow .fn-avatar__initials {
+  color: #915e00
+}
+.fn-avatar--yellow [class*=sap-icon] {
+  color: #915e00
+}
+.fn-avatar--yellow.fn-avatar--interactive {
+  cursor: pointer;
+  background: #a16b00;
+  border-color: #a16b00
+}
+.fn-avatar--yellow.fn-avatar--interactive .fn-avatar__initials {
+  color: #fff
+}
+.fn-avatar--yellow.fn-avatar--interactive [class*=sap-icon] {
+  color: #fff
+}
+.fn-avatar--yellow.fn-avatar--interactive.is-hover,
+.fn-avatar--yellow.fn-avatar--interactive:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #915e00;
+  border-color: #915e00
+}
+.fn-avatar--yellow.fn-avatar--interactive.is-hover.is-active,
+.fn-avatar--yellow.fn-avatar--interactive.is-hover:active,
+.fn-avatar--yellow.fn-avatar--interactive:hover.is-active,
+.fn-avatar--yellow.fn-avatar--interactive:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #714700;
+  border-color: #714700
+}
+.fn-avatar--yellow.fn-avatar--interactive.is-active,
+.fn-avatar--yellow.fn-avatar--interactive:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #714700;
+  border-color: #714700
+}
+.fn-avatar--yellow.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #a16b00;
+  -webkit-box-shadow: 0 0 0 .125rem #a16b00;
+  box-shadow: 0 0 0 .125rem #a16b00
+}
+.fn-avatar--yellow.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #a16b00;
+  border-color: #a16b00
+}
+.fn-avatar--yellow.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--yellow.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #915e00;
+  border-color: #915e00
+}
+.fn-avatar--yellow.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--yellow.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--yellow.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--yellow.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #714700;
+  border-color: #714700
+}
+.fn-avatar--yellow.fn-avatar--interactive.focus-visible,
+.fn-avatar--yellow.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #a16b00;
+  -webkit-box-shadow: 0 0 0 .125rem #a16b00;
+  box-shadow: 0 0 0 .125rem #a16b00
+}
+.fn-avatar--yellow.fn-avatar--interactive.is-disabled,
+.fn-avatar--yellow.fn-avatar--interactive:disabled,
+.fn-avatar--yellow.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-avatar--teal {
+  background: #c2fcee;
+  border-color: #c2fcee
+}
+.fn-avatar--teal .fn-avatar__initials {
+  color: #046c7a
+}
+.fn-avatar--teal [class*=sap-icon] {
+  color: #046c7a
+}
+.fn-avatar--teal.fn-avatar--interactive {
+  cursor: pointer;
+  background: #04a6a1;
+  border-color: #04a6a1
+}
+.fn-avatar--teal.fn-avatar--interactive .fn-avatar__initials {
+  color: #fff
+}
+.fn-avatar--teal.fn-avatar--interactive [class*=sap-icon] {
+  color: #fff
+}
+.fn-avatar--teal.fn-avatar--interactive.is-hover,
+.fn-avatar--teal.fn-avatar--interactive:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #07838f;
+  border-color: #07838f
+}
+.fn-avatar--teal.fn-avatar--interactive.is-hover.is-active,
+.fn-avatar--teal.fn-avatar--interactive.is-hover:active,
+.fn-avatar--teal.fn-avatar--interactive:hover.is-active,
+.fn-avatar--teal.fn-avatar--interactive:hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #046c7a;
+  border-color: #046c7a
+}
+.fn-avatar--teal.fn-avatar--interactive.is-active,
+.fn-avatar--teal.fn-avatar--interactive:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #046c7a;
+  border-color: #046c7a
+}
+.fn-avatar--teal.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #07838f;
+  -webkit-box-shadow: 0 0 0 .125rem #04a6a1;
+  box-shadow: 0 0 0 .125rem #04a6a1
+}
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible) {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #04a6a1;
+  border-color: #04a6a1
+}
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #07838f;
+  border-color: #07838f
+}
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #046c7a;
+  border-color: #046c7a
+}
+.fn-avatar--teal.fn-avatar--interactive.focus-visible,
+.fn-avatar--teal.fn-avatar--interactive.is-focus {
+  outline: 0;
+  border-color: #fff;
+  background: #07838f;
+  -webkit-box-shadow: 0 0 0 .125rem #04a6a1;
+  box-shadow: 0 0 0 .125rem #04a6a1
+}
+.fn-avatar--teal.fn-avatar--interactive.is-disabled,
+.fn-avatar--teal.fn-avatar--interactive:disabled,
+.fn-avatar--teal.fn-avatar--interactive[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}

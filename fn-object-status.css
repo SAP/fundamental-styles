@@ -1,0 +1,317 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-object-status {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  height: 1.5rem;
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content
+}
+.fn-object-status::after,
+.fn-object-status::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-object-status__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: inherit;
+  font-weight: 700
+}
+.fn-object-status__text::after,
+.fn-object-status__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-object-status [class*=sap-icon] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: .1875rem;
+  line-height: 1;
+  color: inherit;
+  font-size: .875rem
+}
+.fn-object-status [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-object-status [class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .1875rem
+}
+.fn-object-status--byline {
+  padding-left: 0;
+  height: 1rem
+}
+.fn-object-status--byline[dir=rtl],
+[dir=rtl] .fn-object-status--byline {
+  padding-right: 0;
+  padding-left: 0
+}
+.fn-object-status--byline .fn-object-status__text {
+  font-size: .75rem;
+  line-height: 1rem
+}
+.fn-object-status--byline [class*=sap-icon] {
+  width: 1rem;
+  height: 1rem;
+  font-size: .75rem
+}
+.fn-object-status--positive {
+  color: #188918
+}
+.fn-object-status--critical {
+  color: #f58b00
+}
+.fn-object-status--negative {
+  color: #d20a0a
+}
+.fn-object-status--info {
+  color: #0070f2
+}
+.fn-object-status--interactive {
+  cursor: pointer;
+  border-radius: .25rem
+}
+.fn-object-status--interactive.fn-object-status--positive {
+  background: #188918
+}
+.fn-object-status--interactive.fn-object-status--positive .fn-object-status__text {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--positive [class*=sap-icon] {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--positive.is-hover,
+.fn-object-status--interactive.fn-object-status--positive:hover {
+  background: #256f3a
+}
+.fn-object-status--interactive.fn-object-status--positive.is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--positive.is-hover:active,
+.fn-object-status--interactive.fn-object-status--positive:hover.is-active,
+.fn-object-status--interactive.fn-object-status--positive:hover:active {
+  background: #1e592f
+}
+.fn-object-status--interactive.fn-object-status--positive.is-active,
+.fn-object-status--interactive.fn-object-status--positive:active {
+  background: #1e592f
+}
+.fn-object-status--interactive.fn-object-status--positive.focus-visible,
+.fn-object-status--interactive.fn-object-status--positive.is-focus {
+  outline: 0;
+  background: #188918;
+  -webkit-box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff;
+  box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff
+}
+.fn-object-status--interactive.fn-object-status--positive:focus:not(.focus-visible) {
+  outline: 0;
+  background: #188918
+}
+.fn-object-status--interactive.fn-object-status--positive:focus:not(.focus-visible).is-hover,
+.fn-object-status--interactive.fn-object-status--positive:focus:not(.focus-visible):hover {
+  background: #256f3a
+}
+.fn-object-status--interactive.fn-object-status--positive:focus:not(.focus-visible).is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--positive:focus:not(.focus-visible).is-hover:active,
+.fn-object-status--interactive.fn-object-status--positive:focus:not(.focus-visible):hover.is-active,
+.fn-object-status--interactive.fn-object-status--positive:focus:not(.focus-visible):hover:active {
+  background: #1e592f
+}
+.fn-object-status--interactive.fn-object-status--positive.is-disabled,
+.fn-object-status--interactive.fn-object-status--positive:disabled,
+.fn-object-status--interactive.fn-object-status--positive[aria-disabled=true] {
+  cursor: not-allowed;
+  opacity: .4
+}
+.fn-object-status--interactive.fn-object-status--critical {
+  background: #f58b00
+}
+.fn-object-status--interactive.fn-object-status--critical .fn-object-status__text {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--critical [class*=sap-icon] {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--critical.is-hover,
+.fn-object-status--interactive.fn-object-status--critical:hover {
+  background: #c35500
+}
+.fn-object-status--interactive.fn-object-status--critical.is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--critical.is-hover:active,
+.fn-object-status--interactive.fn-object-status--critical:hover.is-active,
+.fn-object-status--interactive.fn-object-status--critical:hover:active {
+  background: #a93e00
+}
+.fn-object-status--interactive.fn-object-status--critical.is-active,
+.fn-object-status--interactive.fn-object-status--critical:active {
+  background: #a93e00
+}
+.fn-object-status--interactive.fn-object-status--critical.focus-visible,
+.fn-object-status--interactive.fn-object-status--critical.is-focus {
+  outline: 0;
+  background: #f58b00;
+  -webkit-box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff;
+  box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff
+}
+.fn-object-status--interactive.fn-object-status--critical:focus:not(.focus-visible) {
+  outline: 0;
+  background: #f58b00
+}
+.fn-object-status--interactive.fn-object-status--critical:focus:not(.focus-visible).is-hover,
+.fn-object-status--interactive.fn-object-status--critical:focus:not(.focus-visible):hover {
+  background: #c35500
+}
+.fn-object-status--interactive.fn-object-status--critical:focus:not(.focus-visible).is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--critical:focus:not(.focus-visible).is-hover:active,
+.fn-object-status--interactive.fn-object-status--critical:focus:not(.focus-visible):hover.is-active,
+.fn-object-status--interactive.fn-object-status--critical:focus:not(.focus-visible):hover:active {
+  background: #a93e00
+}
+.fn-object-status--interactive.fn-object-status--critical.is-disabled,
+.fn-object-status--interactive.fn-object-status--critical:disabled,
+.fn-object-status--interactive.fn-object-status--critical[aria-disabled=true] {
+  cursor: not-allowed;
+  opacity: .4
+}
+.fn-object-status--interactive.fn-object-status--negative {
+  background: #d20a0a
+}
+.fn-object-status--interactive.fn-object-status--negative .fn-object-status__text {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--negative [class*=sap-icon] {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--negative.is-hover,
+.fn-object-status--interactive.fn-object-status--negative:hover {
+  background: #aa0808
+}
+.fn-object-status--interactive.fn-object-status--negative.is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--negative.is-hover:active,
+.fn-object-status--interactive.fn-object-status--negative:hover.is-active,
+.fn-object-status--interactive.fn-object-status--negative:hover:active {
+  background: #840606
+}
+.fn-object-status--interactive.fn-object-status--negative.is-active,
+.fn-object-status--interactive.fn-object-status--negative:active {
+  background: #840606
+}
+.fn-object-status--interactive.fn-object-status--negative.focus-visible,
+.fn-object-status--interactive.fn-object-status--negative.is-focus {
+  outline: 0;
+  background: #d20a0a;
+  -webkit-box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff;
+  box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff
+}
+.fn-object-status--interactive.fn-object-status--negative:focus:not(.focus-visible) {
+  outline: 0;
+  background: #d20a0a
+}
+.fn-object-status--interactive.fn-object-status--negative:focus:not(.focus-visible).is-hover,
+.fn-object-status--interactive.fn-object-status--negative:focus:not(.focus-visible):hover {
+  background: #aa0808
+}
+.fn-object-status--interactive.fn-object-status--negative:focus:not(.focus-visible).is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--negative:focus:not(.focus-visible).is-hover:active,
+.fn-object-status--interactive.fn-object-status--negative:focus:not(.focus-visible):hover.is-active,
+.fn-object-status--interactive.fn-object-status--negative:focus:not(.focus-visible):hover:active {
+  background: #840606
+}
+.fn-object-status--interactive.fn-object-status--negative.is-disabled,
+.fn-object-status--interactive.fn-object-status--negative:disabled,
+.fn-object-status--interactive.fn-object-status--negative[aria-disabled=true] {
+  cursor: not-allowed;
+  opacity: .4
+}
+.fn-object-status--interactive.fn-object-status--info {
+  background: #0070f2
+}
+.fn-object-status--interactive.fn-object-status--info .fn-object-status__text {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--info [class*=sap-icon] {
+  color: #fff
+}
+.fn-object-status--interactive.fn-object-status--info.is-hover,
+.fn-object-status--interactive.fn-object-status--info:hover {
+  background: #0057d2
+}
+.fn-object-status--interactive.fn-object-status--info.is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--info.is-hover:active,
+.fn-object-status--interactive.fn-object-status--info:hover.is-active,
+.fn-object-status--interactive.fn-object-status--info:hover:active {
+  background: #0040b0
+}
+.fn-object-status--interactive.fn-object-status--info.is-active,
+.fn-object-status--interactive.fn-object-status--info:active {
+  background: #0040b0
+}
+.fn-object-status--interactive.fn-object-status--info.focus-visible,
+.fn-object-status--interactive.fn-object-status--info.is-focus {
+  outline: 0;
+  background: #0070f2;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
+  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+}
+.fn-object-status--interactive.fn-object-status--info:focus:not(.focus-visible) {
+  outline: 0;
+  background: #0070f2
+}
+.fn-object-status--interactive.fn-object-status--info:focus:not(.focus-visible).is-hover,
+.fn-object-status--interactive.fn-object-status--info:focus:not(.focus-visible):hover {
+  background: #0057d2
+}
+.fn-object-status--interactive.fn-object-status--info:focus:not(.focus-visible).is-hover.is-active,
+.fn-object-status--interactive.fn-object-status--info:focus:not(.focus-visible).is-hover:active,
+.fn-object-status--interactive.fn-object-status--info:focus:not(.focus-visible):hover.is-active,
+.fn-object-status--interactive.fn-object-status--info:focus:not(.focus-visible):hover:active {
+  background: #0040b0
+}
+.fn-object-status--interactive.fn-object-status--info.is-disabled,
+.fn-object-status--interactive.fn-object-status--info:disabled,
+.fn-object-status--interactive.fn-object-status--info[aria-disabled=true] {
+  cursor: not-allowed;
+  opacity: .4
+}

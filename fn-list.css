@@ -1,0 +1,287 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-list {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fn-list::after,
+.fn-list::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-list__group-header,
+.fn-list__item {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2.75rem;
+  min-width: 20rem;
+  background: #fff;
+  -webkit-box-shadow: inset 0 -.063rem 0 #eaecee;
+  box-shadow: inset 0 -.063rem 0 #eaecee
+}
+.fn-list__group-header::after,
+.fn-list__group-header::before,
+.fn-list__item::after,
+.fn-list__item::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-list__group-header {
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  padding: 1.25rem .75rem .375rem
+}
+.fn-list__group-header .fn-list__text--end {
+  margin-left: auto
+}
+.fn-list__item {
+  padding: .375rem .75rem
+}
+.fn-list__item.is-hover,
+.fn-list__item:hover {
+  background: #f5f6f7
+}
+.fn-list__item.focus-visible,
+.fn-list__item.is-focus {
+  outline: 0;
+  border-radius: .125rem;
+  position: relative
+}
+.fn-list__item:focus:not(.focus-visible).is-hover,
+.fn-list__item:focus:not(.focus-visible):hover {
+  background: #f5f6f7
+}
+.fn-list__item:not(.fn-list__item--info-bar).focus-visible,
+.fn-list__item:not(.fn-list__item--info-bar).is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-list__item.is-selected,
+.fn-list__item[aria-selected=true] {
+  background: #d1efff;
+  -webkit-box-shadow: inset 0 -.063rem 0 #0070f1;
+  box-shadow: inset 0 -.063rem 0 #0070f1
+}
+.fn-list__item .fn-list__icon {
+  margin-left: .25rem;
+  margin-right: .625rem;
+  color: #475e75
+}
+.fn-list__item .fn-list__icon[dir=rtl],
+[dir=rtl] .fn-list__item .fn-list__icon {
+  margin-right: .25rem;
+  margin-left: .625rem
+}
+.fn-list__item--has-checkbox {
+  padding-left: .625rem
+}
+.fn-list__item--has-checkbox[dir=rtl],
+[dir=rtl] .fn-list__item--has-checkbox {
+  padding-right: .625rem;
+  padding-left: 0
+}
+.fn-list__item--has-checkbox > div:first-child {
+  margin-right: .375rem
+}
+.fn-list__item--has-checkbox > div:first-child[dir=rtl],
+[dir=rtl] .fn-list__item--has-checkbox > div:first-child {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fn-list__item.is-disabled,
+.fn-list__item:disabled,
+.fn-list__item[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-list__item .fn-list__avatar {
+  margin-right: .375rem
+}
+.fn-list__item .fn-list__avatar[dir=rtl],
+[dir=rtl] .fn-list__item .fn-list__avatar {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fn-list__item .fn-list__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #223548;
+  text-overflow: ellipsis
+}
+.fn-list__item .fn-list__text::after,
+.fn-list__item .fn-list__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-list__item--info-bar {
+  background: #c2fcee;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-list__item--info-bar.is-hover,
+.fn-list__item--info-bar:hover {
+  background: #dafdf5
+}
+.fn-list__item--info-bar.is-readonly,
+.fn-list__item--info-bar[aria-readonly=true],
+.fn-list__item--info-bar[readonly] {
+  background: #f5f6f7
+}
+.fn-list__item--info-bar.focus-visible,
+.fn-list__item--info-bar.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #07838f;
+  box-shadow: 0 0 0 .125rem #07838f
+}
+.fn-list__item--info-bar:focus:not(.focus-visible).is-hover,
+.fn-list__item--info-bar:focus:not(.focus-visible):hover {
+  background: #dafdf5
+}
+.fn-list__end-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-list__end-container::after,
+.fn-list__end-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-list__end-container[dir=rtl],
+[dir=rtl] .fn-list__end-container {
+  margin-right: auto;
+  margin-left: 0
+}
+.fn-list__end-container :not(:last-child) {
+  margin-right: .375rem
+}
+.fn-list__end-container :not(:last-child)[dir=rtl],
+[dir=rtl] .fn-list__end-container :not(:last-child) {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fn-list--byline .fn-list__item {
+  height: 3.75rem
+}
+.fn-list--byline .fn-list__item .fn-list__start-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fn-list--byline .fn-list__item .fn-list__start-container::after,
+.fn-list--byline .fn-list__item .fn-list__start-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-list--byline .fn-list__item .fn-list__start-container .fn-list__title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-weight: 700;
+  color: #223548
+}
+.fn-list--byline .fn-list__item .fn-list__start-container .fn-list__title::after,
+.fn-list--byline .fn-list__item .fn-list__start-container .fn-list__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-list--byline .fn-list__item .fn-list__start-container .fn-list__byline {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: .75rem;
+  line-height: 1rem;
+  color: #223548
+}
+.fn-list--byline .fn-list__item .fn-list__start-container .fn-list__byline::after,
+.fn-list--byline .fn-list__item .fn-list__start-container .fn-list__byline::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}

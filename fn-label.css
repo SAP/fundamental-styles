@@ -1,0 +1,64 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-label {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: .75rem;
+  color: #354a5f;
+  margin-bottom: .125rem
+}
+.fn-label::after,
+.fn-label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-label[dir=rtl],
+[dir=rtl] .fn-label {
+  margin-right: 0;
+  margin-left: .75rem
+}
+.fn-label--required::after,
+.fn-label[aria-required=true]::after {
+  margin-left: .125rem;
+  content: "*";
+  font-weight: 700;
+  color: #d20a0a;
+  position: relative
+}
+.fn-label--required::after[dir=rtl],
+.fn-label[aria-required=true]::after[dir=rtl],
+[dir=rtl] .fn-label--required::after,
+[dir=rtl] .fn-label[aria-required=true]::after {
+  margin-right: .125rem;
+  margin-left: 0
+}
+.fn-label--required-before::before,
+.fn-label[aria-required=true]::before {
+  margin-right: .125rem;
+  content: "*";
+  font-weight: 700;
+  color: #d20a0a;
+  position: relative
+}
+.fn-label--required-before::before[dir=rtl],
+.fn-label[aria-required=true]::before[dir=rtl],
+[dir=rtl] .fn-label--required-before::before,
+[dir=rtl] .fn-label[aria-required=true]::before {
+  margin-right: 0;
+  margin-left: .125rem
+}

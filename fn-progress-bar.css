@@ -1,0 +1,148 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-progress-bar {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: .5rem;
+  position: relative;
+  background: #eaecee;
+  border-radius: .25rem
+}
+.fn-progress-bar::after,
+.fn-progress-bar::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-progress-bar::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  content: "";
+  top: -.25rem;
+  left: -1.375rem;
+  position: absolute;
+  font-size: .9375rem;
+  text-transform: none;
+  text-decoration: none;
+  font-family: SAP-icons
+}
+.fn-progress-bar::before {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  content: "";
+  z-index: 1;
+  width: .25rem;
+  height: .25rem;
+  position: absolute;
+  border-radius: 50%;
+  top: .125rem;
+  left: .125rem;
+  background: #475e75;
+  left: auto;
+  right: .125rem
+}
+.fn-progress-bar::before::after,
+.fn-progress-bar::before::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-progress-bar[dir=rtl]::before,
+[dir=rtl] .fn-progress-bar::before {
+  left: .125rem;
+  right: auto
+}
+.fn-progress-bar[dir=rtl]::after,
+[dir=rtl] .fn-progress-bar::after {
+  left: auto;
+  right: -1.375rem
+}
+.fn-progress-bar.is-disabled,
+.fn-progress-bar:disabled,
+.fn-progress-bar[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-progress-bar__track {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  z-index: 2;
+  height: .75rem;
+  position: absolute;
+  background: #223548;
+  top: -.125rem;
+  border-radius: .375rem
+}
+.fn-progress-bar__track::after,
+.fn-progress-bar__track::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-progress-bar--positive::before {
+  background: #188918
+}
+.fn-progress-bar--positive::after {
+  color: #188918;
+  content: "\e1ab"
+}
+.fn-progress-bar--positive .fn-progress-bar__track {
+  background: #188918
+}
+.fn-progress-bar--critical::before {
+  background: #f58b00
+}
+.fn-progress-bar--critical::after {
+  color: #f58b00;
+  content: "\e1ae"
+}
+.fn-progress-bar--critical .fn-progress-bar__track {
+  background: #f58b00
+}
+.fn-progress-bar--negative::before {
+  background: #d20a0a
+}
+.fn-progress-bar--negative::after {
+  color: #d20a0a;
+  content: "\e1ac"
+}
+.fn-progress-bar--negative .fn-progress-bar__track {
+  background: #d20a0a
+}

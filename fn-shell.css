@@ -1,0 +1,186 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-shell {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .75rem 1.5rem;
+  background: #fff;
+  height: 3.5rem
+}
+.fn-shell::after,
+.fn-shell::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-shell__group {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0
+}
+.fn-shell__group::after,
+.fn-shell__group::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-shell__group--product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+.fn-shell__group--product .fn-shell__logo {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 1.625rem;
+  width: 3.25rem;
+  vertical-align: middle
+}
+.fn-shell__group--product .fn-shell__logo::after,
+.fn-shell__group--product .fn-shell__logo::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-shell__group--product .fn-shell__title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-left: .375rem;
+  color: #1a2733;
+  font-size: 1.125rem;
+  position: relative;
+  top: .125rem
+}
+.fn-shell__group--product .fn-shell__title::after,
+.fn-shell__group--product .fn-shell__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-shell__group--product .fn-shell__title[dir=rtl],
+[dir=rtl] .fn-shell__group--product .fn-shell__title {
+  margin-right: .375rem;
+  margin-left: 0
+}
+.fn-shell__group--product button {
+  margin-left: -.625rem;
+  margin-right: .75rem
+}
+.fn-shell__group--product button[dir=rtl],
+[dir=rtl] .fn-shell__group--product button {
+  margin-right: -.625rem;
+  margin-left: .75rem
+}
+.fn-shell__group--product .fn-shell__logo,
+.fn-shell__group--product button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-shell__group--search {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 16rem
+}
+.fn-shell__group--actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.fn-shell__group--actions .fn-shell__avatar,
+.fn-shell__group--actions button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-shell__group--actions .fn-shell__avatar {
+  margin-left: 1.3125rem
+}
+.fn-shell__group--actions .fn-shell__avatar[dir=rtl],
+[dir=rtl] .fn-shell__group--actions .fn-shell__avatar {
+  margin-right: 1.3125rem;
+  margin-left: 0
+}
+.fn-shell__group--actions button {
+  margin-left: .4375rem
+}
+.fn-shell__group--actions button[dir=rtl],
+[dir=rtl] .fn-shell__group--actions button {
+  margin-right: .4375rem;
+  margin-left: 0
+}

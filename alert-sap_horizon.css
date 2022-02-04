@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -68,7 +67,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-alert__close::before {
-  content: ""
+  content: "\e03e"
 }
 .fd-alert__close[dir=rtl],
 [dir=rtl] .fd-alert__close {
@@ -183,7 +182,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-alert--warning::before {
-  content: ""
+  content: "\e201"
 }
 .fd-alert--warning[dir=rtl]::after,
 [dir=rtl] .fd-alert--warning::after {
@@ -195,7 +194,7 @@
 }
 .fd-alert--warning[dir=rtl]::after,
 [dir=rtl] .fd-alert--warning::after {
-  content: ""
+  content: "\e201"
 }
 .fd-alert--error {
   background-color: #ffeaf4;
@@ -216,7 +215,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-alert--error::before {
-  content: ""
+  content: "\e0b1"
 }
 .fd-alert--error[dir=rtl]::after,
 [dir=rtl] .fd-alert--error::after {
@@ -228,7 +227,7 @@
 }
 .fd-alert--error[dir=rtl]::after,
 [dir=rtl] .fd-alert--error::after {
-  content: ""
+  content: "\e0b1"
 }
 .fd-alert--success {
   background-color: #f5fae5;
@@ -249,7 +248,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-alert--success::before {
-  content: ""
+  content: "\e203"
 }
 .fd-alert--success[dir=rtl]::after,
 [dir=rtl] .fd-alert--success::after {
@@ -261,7 +260,7 @@
 }
 .fd-alert--success[dir=rtl]::after,
 [dir=rtl] .fd-alert--success::after {
-  content: ""
+  content: "\e203"
 }
 .fd-alert--information {
   background-color: #e1f4ff;
@@ -282,7 +281,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-alert--information::before {
-  content: ""
+  content: "\e202"
 }
 .fd-alert--information[dir=rtl]::after,
 [dir=rtl] .fd-alert--information::after {
@@ -294,7 +293,7 @@
 }
 .fd-alert--information[dir=rtl]::after,
 [dir=rtl] .fd-alert--information::after {
-  content: ""
+  content: "\e202"
 }
 .fd-alert--no-icon {
   padding-left: 1rem

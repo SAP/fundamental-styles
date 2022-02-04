@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -98,8 +98,7 @@
 .fd-calendar__item:active {
   background-color: #fff;
   background-color: var(--sapContent_Selected_Background,#fff);
-  border: none;
-  border: var(--fdCalendar_Active_Item_Border,none)
+  border: var(--fdCalendar_Active_Item_Border)
 }
 .fd-calendar__item.is-active:hover,
 .fd-calendar__item:hover:active,
@@ -137,7 +136,7 @@
 }
 .fd-calendar__item.is-disabled:hover,
 .fd-calendar__item:hover:disabled,
-.fd-calendar__item:hover[aria-disabled=true] {
+.fd-calendar__item[aria-disabled=true]:hover {
   cursor: not-allowed
 }
 .fd-calendar__item.is-focus,
@@ -180,8 +179,7 @@
   color: #223548;
   color: var(--sapTextColor,#223548);
   font-size: var(--sapFontMediumSize);
-  text-shadow: none;
-  text-shadow: var(--fdCalendar_Text_Shadow,none)
+  text-shadow: var(--fdCalendar_Text_Shadow)
 }
 .fd-calendar__text::after,
 .fd-calendar__text::before {

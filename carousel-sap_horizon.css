@@ -1,8 +1,14 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+fd-carousel.is-focus,
+fd-carousel:focus {
+  z-index: 5;
+  outline: .0625rem solid;
+  outline: .0625rem var(--sapContent_FocusStyle,solid)
+}
 .fd-carousel {
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
@@ -26,7 +32,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  min-width: 15.5rem;
+  min-width: 11rem;
   max-width: 100%;
   height: 100%
 }
@@ -76,7 +82,7 @@
   box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(85,107,130,.42),0 .125rem .5rem 0 rgba(85,107,130,.3));
   position: absolute;
   margin: 0;
-  top: calc(50%);
+  top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   display: none
@@ -217,8 +223,8 @@
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 9rem;
-  padding: .5rem
+  min-width: 7rem;
+  padding: .5rem 0
 }
 .fd-carousel__page-indicators::after,
 .fd-carousel__page-indicators::before {
@@ -242,17 +248,13 @@
   margin: 0;
   border: 0;
   list-style-type: none;
-  margin: 0 .375rem;
-  margin: var(--fdCarousel_Dot_Margin,0 .375rem);
-  width: .25rem;
-  width: var(--fdCarousel_Dot_Size,.25rem);
-  height: .25rem;
-  height: var(--fdCarousel_Dot_Size,.25rem);
+  margin: var(--fdCarousel_Dot_Margin);
+  width: var(--fdCarousel_Dot_Size);
+  height: var(--fdCarousel_Dot_Size);
   border-radius: 50%;
   background-color: #223548;
   background-color: var(--sapContent_NonInteractiveIconColor,#223548);
-  border: none;
-  border: var(--fdCarousel_Dot_Border,none)
+  border: var(--fdCarousel_Dot_Border)
 }
 .fd-carousel__page-indicator::after,
 .fd-carousel__page-indicator::before {

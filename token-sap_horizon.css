@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-token {
@@ -63,8 +62,7 @@
   min-width: auto;
   width: 100%;
   text-overflow: ellipsis;
-  text-shadow: none;
-  text-shadow: var(--fdToken_Text_Shadow,none)
+  text-shadow: var(--fdToken_Text_Shadow)
 }
 .fd-token__close {
   font-size: .875rem;
@@ -116,7 +114,7 @@
   text-rendering: optimizeLegibility
 }
 .fd-token__close::before {
-  content: ""
+  content: "\e03e"
 }
 .fd-token__close.is-focus,
 .fd-token__close:focus {

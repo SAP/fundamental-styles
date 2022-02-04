@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -146,10 +146,8 @@
 }
 .fd-grid-list__item--link.is-hover,
 .fd-grid-list__item--link:hover {
-  -webkit-box-shadow: 0 0 0 .0625rem #b3b3b3;
-  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
-  box-shadow: 0 0 0 .0625rem #b3b3b3;
-  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
+  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
+  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
   background-color: #eaecee;
   background-color: var(--sapList_Hover_Background,#eaecee)
 }
@@ -162,6 +160,20 @@
 .fd-grid-list__item--link:active * {
   color: #223548!important;
   color: var(--sapList_Active_TextColor,#223548)!important
+}
+.fd-grid-list__item--link.is-active.is-focus,
+.fd-grid-list__item--link.is-active:focus,
+.fd-grid-list__item--link:active.is-focus,
+.fd-grid-list__item--link:active:focus {
+  outline-offset: -.1875rem;
+  outline-width: .125rem;
+  outline-width: var(--sapContent_FocusWidth,.125rem);
+  outline-color: #0070f2;
+  outline-color: var(--sapContent_FocusColor,#0070f2);
+  outline-style: solid;
+  outline-style: var(--sapContent_FocusStyle,solid);
+  outline-color: #fff;
+  outline-color: var(--sapContent_ContrastFocusColor,#fff)
 }
 .fd-grid-list__item--link.is-navigated::after {
   content: "";
@@ -211,7 +223,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%;
-  padding: 1rem
+  padding: 1rem;
+  word-break: break-word
 }
 .fd-grid-list__item-body::after,
 .fd-grid-list__item-body::before {
@@ -286,12 +299,10 @@
 .fd-grid-list--mode-single-select .fd-grid-list__item {
   cursor: pointer
 }
-.fd-grid-list--mode-single-select .fd-grid-list__item.is-hover,
-.fd-grid-list--mode-single-select .fd-grid-list__item:hover {
-  -webkit-box-shadow: 0 0 0 .0625rem #b3b3b3;
-  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
-  box-shadow: 0 0 0 .0625rem #b3b3b3;
-  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-hover:not(.fd-grid-list__item--link,[aria-selected=true],.is-selected),
+.fd-grid-list--mode-single-select .fd-grid-list__item:hover:not(.fd-grid-list__item--link,[aria-selected=true],.is-selected) {
+  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
+  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
   background-color: #eaecee;
   background-color: var(--sapList_Hover_Background,#eaecee)
 }

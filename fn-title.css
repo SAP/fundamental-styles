@@ -1,0 +1,53 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a2733;
+  line-height: 1.4
+}
+.fn-title::after,
+.fn-title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-title--h1 {
+  font-size: 3rem
+}
+.fn-title--h2 {
+  font-size: 2rem
+}
+.fn-title--h3 {
+  font-size: 1.5rem
+}
+.fn-title--h4 {
+  font-size: 1.25rem
+}
+.fn-title--h5 {
+  font-size: 1rem
+}
+.fn-title--h6 {
+  font-size: .875rem
+}
+.fn-title--wrap {
+  overflow: auto;
+  white-space: normal;
+  text-overflow: initial
+}

@@ -1,0 +1,205 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-textarea {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  border-radius: .375rem
+}
+.fn-textarea::after,
+.fn-textarea::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-textarea__input {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  padding-left: .5rem;
+  padding-right: .25rem;
+  width: 100%;
+  resize: none;
+  min-height: 6rem;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #223548;
+  background: #f5f6f7;
+  border-radius: .375rem
+}
+.fn-textarea__input::after,
+.fn-textarea__input::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-textarea__input[dir=rtl],
+[dir=rtl] .fn-textarea__input {
+  padding-right: .5rem;
+  padding-left: .25rem
+}
+.fn-textarea__input::-webkit-input-placeholder {
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #223548
+}
+.fn-textarea__input:-moz-placeholder,
+.fn-textarea__input:-ms-input-placeholder,
+.fn-textarea__input::-moz-placeholder,
+.fn-textarea__input::-webkit-input-placeholder,
+.fn-textarea__input::placeholder {
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #223548
+}
+.fn-textarea__input.is-hover,
+.fn-textarea__input:hover {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-textarea__input.is-active,
+.fn-textarea__input:active {
+  outline: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-textarea__input.is-active + .fn-textarea__border::after,
+.fn-textarea__input:active + .fn-textarea__border::after {
+  border-bottom-color: transparent
+}
+.fn-textarea__input.focus-visible,
+.fn-textarea__input.is-focus {
+  outline: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-textarea__input.focus-visible + .fn-textarea__border::after,
+.fn-textarea__input.is-focus + .fn-textarea__border::after {
+  border-bottom-color: transparent
+}
+.fn-textarea__input.is-readonly + .fn-textarea__border::after,
+.fn-textarea__input[aria-readonly=true] + .fn-textarea__border::after,
+.fn-textarea__input[readonly] + .fn-textarea__border::after {
+  border-bottom: .0625rem dashed #5f7992
+}
+.fn-textarea__input.is-readonly.is-active,
+.fn-textarea__input.is-readonly:active,
+.fn-textarea__input[aria-readonly=true].is-active,
+.fn-textarea__input[aria-readonly=true]:active,
+.fn-textarea__input[readonly].is-active,
+.fn-textarea__input[readonly]:active {
+  outline: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-textarea__input.is-readonly.is-active + .fn-textarea__border::after,
+.fn-textarea__input.is-readonly:active + .fn-textarea__border::after,
+.fn-textarea__input[aria-readonly=true].is-active + .fn-textarea__border::after,
+.fn-textarea__input[aria-readonly=true]:active + .fn-textarea__border::after,
+.fn-textarea__input[readonly].is-active + .fn-textarea__border::after,
+.fn-textarea__input[readonly]:active + .fn-textarea__border::after {
+  border-bottom-color: transparent
+}
+.fn-textarea__input.is-readonly.focus-visible,
+.fn-textarea__input.is-readonly.is-focus,
+.fn-textarea__input[aria-readonly=true].focus-visible,
+.fn-textarea__input[aria-readonly=true].is-focus,
+.fn-textarea__input[readonly].focus-visible,
+.fn-textarea__input[readonly].is-focus {
+  outline: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-textarea__input.is-readonly.focus-visible + .fn-textarea__border::after,
+.fn-textarea__input.is-readonly.is-focus + .fn-textarea__border::after,
+.fn-textarea__input[aria-readonly=true].focus-visible + .fn-textarea__border::after,
+.fn-textarea__input[aria-readonly=true].is-focus + .fn-textarea__border::after,
+.fn-textarea__input[readonly].focus-visible + .fn-textarea__border::after,
+.fn-textarea__input[readonly].is-focus + .fn-textarea__border::after {
+  border-bottom-color: transparent
+}
+.fn-textarea__input.is-disabled,
+.fn-textarea__input:disabled,
+.fn-textarea__input[aria-disabled=true] {
+  outline: 0;
+  pointer-events: none;
+  opacity: .4
+}
+.fn-textarea__input.is-disabled + .fn-textarea__border::after,
+.fn-textarea__input:disabled + .fn-textarea__border::after,
+.fn-textarea__input[aria-disabled=true] + .fn-textarea__border::after {
+  outline: 0;
+  pointer-events: none;
+  opacity: .4
+}
+.fn-textarea__border {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+  border-radius: .375rem
+}
+.fn-textarea__border::after,
+.fn-textarea__border::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-textarea__border::after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  border-bottom: .125rem solid #5f7992
+}
+.fn-textarea.is-disabled,
+.fn-textarea:disabled,
+.fn-textarea[aria-disabled=true] {
+  outline: 0;
+  pointer-events: none;
+  opacity: .4
+}

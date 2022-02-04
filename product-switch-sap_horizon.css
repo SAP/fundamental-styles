@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .drag-placeholder {
@@ -185,10 +185,8 @@
   background-color: var(--sapList_Background,#fff);
   border-radius: .75rem;
   border-radius: var(--sapElement_BorderCornerRadius,.75rem);
-  -webkit-box-shadow: none;
-  -webkit-box-shadow: var(--fdProductSwitch_Shadow,none);
-  box-shadow: none;
-  box-shadow: var(--fdProductSwitch_Shadow,none)
+  -webkit-box-shadow: var(--fdProductSwitch_Shadow);
+  box-shadow: var(--fdProductSwitch_Shadow)
 }
 .fd-product-switch__item::after,
 .fd-product-switch__item::before {
@@ -210,8 +208,7 @@
 .fd-product-switch__item:hover {
   background-color: #eaecee;
   background-color: var(--sapList_Hover_Background,#eaecee);
-  border: none;
-  border: var(--fdProductSwitch_Border,none);
+  border: var(--fdProductSwitch_Border);
   cursor: pointer
 }
 .fd-product-switch__item.is-hover .fd-product-switch__title::after,
@@ -225,8 +222,7 @@
 .fd-product-switch__item:active {
   background-color: #dee2e5;
   background-color: var(--sapList_Active_Background,#dee2e5);
-  border: none;
-  border: var(--fdProductSwitch_Border,none)
+  border: var(--fdProductSwitch_Border)
 }
 .fd-product-switch__item.is-active .fd-product-switch__subtitle,
 .fd-product-switch__item.is-active .fd-product-switch__title,
@@ -389,8 +385,7 @@
   width: 100%;
   overflow: hidden;
   max-height: 2.5rem;
-  text-shadow: none;
-  text-shadow: var(--fdProductSwitch_Text_Shadow,none)
+  text-shadow: var(--fdProductSwitch_Text_Shadow)
 }
 .fd-product-switch__text::after,
 .fd-product-switch__text::before {

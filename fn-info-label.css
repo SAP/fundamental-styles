@@ -1,0 +1,126 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-info-label {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: .375rem;
+  padding-right: .375rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 1.375rem;
+  border-radius: .25rem
+}
+.fn-info-label::after,
+.fn-info-label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-info-label[dir=rtl],
+[dir=rtl] .fn-info-label {
+  padding-right: .375rem;
+  padding-left: .375rem
+}
+.fn-info-label__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: inherit
+}
+.fn-info-label__text::after,
+.fn-info-label__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-info-label__circle {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-right: .25rem;
+  width: .5rem;
+  height: .5rem;
+  content: " ";
+  border-radius: .25rem;
+  color: inherit;
+  background-color: currentColor;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto
+}
+.fn-info-label__circle::after,
+.fn-info-label__circle::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-info-label__circle[dir=rtl],
+[dir=rtl] .fn-info-label__circle {
+  margin-right: 0;
+  margin-left: .25rem
+}
+.fn-info-label--yellow {
+  background-color: #fdf5c9;
+  color: #915e00
+}
+.fn-info-label--crimson {
+  background-color: #fff0f5;
+  color: #ba066c
+}
+.fn-info-label--lime {
+  background-color: #edfbac;
+  color: #437500
+}
+.fn-info-label--indigo {
+  background-color: #f1ecff;
+  color: #470ced
+}
+.fn-info-label--grey {
+  background-color: #f5f6f7;
+  color: #223548
+}
+.fn-info-label--cyan {
+  background-color: #dbf9ff;
+  color: #00709f
+}
+.fn-info-label--pink {
+  background-color: #fff0fa;
+  color: #a100c2
+}
+.fn-info-label--teal {
+  background-color: #dafdf5;
+  color: #046c7a
+}

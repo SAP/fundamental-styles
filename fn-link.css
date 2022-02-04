@@ -1,0 +1,79 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-link {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: .1875rem;
+  padding-right: .1875rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-block;
+  text-decoration: none;
+  color: #0070f2;
+  border-radius: .125rem
+}
+.fn-link::after,
+.fn-link::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-link.is-hover,
+.fn-link:hover {
+  text-decoration: underline
+}
+.fn-link.is-focus {
+  outline: 0;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-link:focus:not(.focus-visible) {
+  text-decoration: none
+}
+.fn-link:focus:not(.focus-visible).is-hover,
+.fn-link:focus:not(.focus-visible):hover {
+  text-decoration: underline
+}
+.fn-link:focus:not(.focus-visible).is-active,
+.fn-link:focus:not(.focus-visible):active {
+  text-decoration: underline
+}
+.fn-link.focus-visible,
+.fn-link.is-focus {
+  outline: 0;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-link.is-active,
+.fn-link:active {
+  text-decoration: underline
+}
+.fn-link.is-disabled,
+.fn-link:disabled,
+.fn-link[aria-disabled=true] {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  pointer-events: none;
+  opacity: .4
+}
+.fn-link--emphasized {
+  font-weight: 700
+}

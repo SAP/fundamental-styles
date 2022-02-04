@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-feed-list {
@@ -240,7 +241,7 @@
   color: var(--sapNeutralTextColor,#6a6d70)
 }
 .fd-feed-list__footer--byline:not(:last-child)::after {
-  content: '\2022';
+  content: "•";
   padding: 0 .25rem
 }
 .fd-feed-list--s .fd-feed-list__wrapper {

@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -36,8 +36,7 @@
   background-color: var(--sapField_Background,#eff1f2);
   width: 100%;
   overflow: hidden;
-  text-shadow: none;
-  text-shadow: var(--fdInputGroup_Text_Shadow,none)
+  text-shadow: var(--fdInputGroup_Text_Shadow)
 }
 .fd-input-group::after,
 .fd-input-group::before {
@@ -72,10 +71,8 @@
 .fd-input-group.is-error {
   background-color: #ffeaf4;
   background-color: var(--sapField_InvalidBackground,#ffeaf4);
-  font-style: normal;
-  font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal);
+  font-style: var(--fdInput_State_Text_Style);
+  font-weight: var(--fdInput_State_Font_Weight);
   border-color: #f53232;
   border-color: var(--sapField_InvalidColor,#f53232);
   border-width: .125rem;
@@ -94,10 +91,8 @@
 .fd-input-group.is-warning {
   background-color: #fff8d6;
   background-color: var(--sapField_WarningBackground,#fff8d6);
-  font-style: normal;
-  font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal);
+  font-style: var(--fdInput_State_Text_Style);
+  font-weight: var(--fdInput_State_Font_Weight);
   border-color: #e76500;
   border-color: var(--sapField_WarningColor,#e76500);
   border-width: .125rem;
@@ -149,8 +144,7 @@
 .fd-input-group.is-information,
 .fd-input-group.is-warning {
   border-width: .125rem;
-  border-style: solid;
-  border-style: var(--fdInput_State_Border_Type,solid)
+  border-style: var(--fdInput_State_Border_Type)
 }
 .fd-input-group.is-alert.is-focus,
 .fd-input-group.is-alert:focus,
@@ -279,8 +273,7 @@
   flex: 1 1 10rem;
   padding-right: .25rem;
   padding-left: .25rem;
-  text-shadow: none;
-  text-shadow: var(--fdInputGroup_Text_Shadow,none)
+  text-shadow: var(--fdInputGroup_Text_Shadow)
 }
 .fd-input-group .fd-input-group__input:nth-child(n+1) {
   margin: 0
@@ -467,29 +460,25 @@
 }
 .fd-input-group--control.is-hover .fd-input-group__button,
 .fd-input-group--control:hover .fd-input-group__button {
-  border-left: solid .0625rem transparent;
-  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
+  border-left: var(--fdInputGroup_ControlButton_SideBorder)
 }
 .fd-input-group--control.is-hover .fd-input-group__button[dir=rtl],
 .fd-input-group--control:hover .fd-input-group__button[dir=rtl],
 [dir=rtl] .fd-input-group--control.is-hover .fd-input-group__button,
 [dir=rtl] .fd-input-group--control:hover .fd-input-group__button {
   border-left: none;
-  border-right: solid .0625rem transparent;
-  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
+  border-right: var(--fdInputGroup_ControlButton_SideBorder)
 }
 .fd-input-group--control.is-active .fd-input-group__button,
 .fd-input-group--control:active .fd-input-group__button {
-  border-left: solid .0625rem transparent;
-  border-left: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
+  border-left: var(--fdInputGroup_ControlButton_SideBorder)
 }
 .fd-input-group--control.is-active .fd-input-group__button[dir=rtl],
 .fd-input-group--control:active .fd-input-group__button[dir=rtl],
 [dir=rtl] .fd-input-group--control.is-active .fd-input-group__button,
 [dir=rtl] .fd-input-group--control:active .fd-input-group__button {
   border-left: none;
-  border-right: solid .0625rem transparent;
-  border-right: var(--fdInputGroup_ControlButton_SideBorder,solid var(--sapButton_BorderWidth,.0625rem) transparent)
+  border-right: var(--fdInputGroup_ControlButton_SideBorder)
 }
 .fd-input-group .fd-textarea {
   resize: vertical

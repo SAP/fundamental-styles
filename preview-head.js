@@ -418,14 +418,20 @@ function toggleVerticalNavSubmenu(event) {
 }
 
 function getNetlifyDrawerIframe() {
-    const iframes = window.parent.document.getElementsByTagName('iframe');
-    let iframe;
+    try {
 
-    iframes.forEach(function(item) {
-        if (item.src.startsWith('https://app.netlify.com')) {
-            iframe = item;
+        const iframes = window.parent.document.getElementsByTagName('iframe');
+        let iframe;
+        
+        for (const key in iframes) {
+            if (iframes[key].src?.startsWith('https://app.netlify.com')) {
+                iframe = iframes[key];
+            }
         }
-    });
 
-    return iframe;
+        return iframe;
+
+    } catch (error) {
+        console.log(error);
+    }
 }

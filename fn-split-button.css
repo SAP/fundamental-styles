@@ -1,0 +1,66 @@
+/*!
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-split-button {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative
+}
+.fn-split-button::after,
+.fn-split-button::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-split-button button:first-child {
+  padding-left: .75rem;
+  padding-right: 2rem
+}
+.fn-split-button button:first-child[dir=rtl],
+[dir=rtl] .fn-split-button button:first-child {
+  padding-right: .75rem;
+  padding-left: 2rem
+}
+.fn-split-button button:last-child {
+  right: .375rem;
+  position: absolute;
+  top: .4375rem
+}
+.fn-split-button button:last-child[dir=rtl],
+[dir=rtl] .fn-split-button button:last-child {
+  right: auto;
+  left: .375rem
+}
+.fn-split-button.is-hover button:first-child,
+.fn-split-button:hover button:first-child {
+  color: #354a5f;
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-split-button--emphasized.is-hover button:first-child,
+.fn-split-button--emphasized:hover button:first-child {
+  color: #fff;
+  background: #0057d2;
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+}
+.fn-split-button.is-disabled,
+.fn-split-button:disabled,
+.fn-split-button[aria-disabled=true] {
+  pointer-events: none
+}

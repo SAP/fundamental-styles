@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-slider {
@@ -76,13 +76,11 @@
   padding: 0;
   margin: 0;
   border: 0;
-  height: .25rem;
-  height: var(--fdSlider_Track_Height,.25rem);
+  height: var(--fdSlider_Track_Height);
   width: 100%;
   background-color: #788fa6;
   background-color: var(--sapField_BorderColor,#788fa6);
-  border-radius: .25rem;
-  border-radius: var(--fdSlider_Track_BorderRadius,.25rem);
+  border-radius: var(--fdSlider_Track_BorderRadius);
   position: relative;
   z-index: 1
 }
@@ -110,10 +108,8 @@
   position: relative;
   height: 100%;
   border-radius: .25rem;
-  background-color: #dee2e5;
-  background-color: var(--fdSlider_Track_Active_Background,var(--sapActiveColor,#dee2e5));
-  border: .0625rem solid #dee2e5;
-  border: .0625rem solid var(--fdSlider_Track_Active_Border,var(--sapActiveColor,#dee2e5))
+  background-color: var(--fdSlider_Track_Active_Background);
+  border: .0625rem solid var(--fdSlider_Track_Active_Border)
 }
 .fd-slider__track-range::after,
 .fd-slider__track-range::before {
@@ -138,8 +134,7 @@
   border: 0;
   position: absolute;
   width: 100%;
-  top: calc((-1rem + .25rem)/ 2);
-  top: calc((-1rem + var(--fdSlider_Track_Height,.25rem))/ 2)
+  top: calc((-1rem + var(--fdSlider_Track_Height))/ 2)
 }
 .fd-slider__tick-wrapper::after,
 .fd-slider__tick-wrapper::before {
@@ -232,8 +227,7 @@
   position: relative;
   border-left: .0625rem solid #788fa6;
   border-left: .0625rem solid var(--sapField_BorderColor,#788fa6);
-  height: 1rem;
-  height: var(--fdSlider_Tick_Height,1rem)
+  height: var(--fdSlider_Tick_Height)
 }
 .fd-slider__tick::after,
 .fd-slider__tick::before {
@@ -242,8 +236,7 @@
   font-size: inherit
 }
 .fd-slider__tick--in-range {
-  border-color: #dee2e5;
-  border-color: var(--fdSlider_Track_Active_Border,var(--sapActiveColor,#dee2e5))
+  border-color: var(--fdSlider_Track_Active_Border)
 }
 .fd-slider__label {
   font-size: .875rem;
@@ -319,7 +312,7 @@
   font-size: inherit
 }
 .fd-slider__handle::before {
-  content: '';
+  content: "";
   width: 2rem;
   height: 2rem;
   position: absolute;

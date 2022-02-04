@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 /*!
@@ -163,6 +163,20 @@
   color: #29313a!important;
   color: var(--sapList_Active_TextColor,#29313a)!important
 }
+.fd-grid-list__item--link.is-active.is-focus,
+.fd-grid-list__item--link.is-active:focus,
+.fd-grid-list__item--link:active.is-focus,
+.fd-grid-list__item--link:active:focus {
+  outline-offset: -.1875rem;
+  outline-width: .0625rem;
+  outline-width: var(--sapContent_FocusWidth,.0625rem);
+  outline-color: #fff;
+  outline-color: var(--sapContent_FocusColor,#fff);
+  outline-style: dotted;
+  outline-style: var(--sapContent_FocusStyle,dotted);
+  outline-color: #000;
+  outline-color: var(--sapContent_ContrastFocusColor,#000)
+}
 .fd-grid-list__item--link.is-navigated::after {
   content: "";
   position: absolute;
@@ -211,7 +225,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%;
-  padding: 1rem
+  padding: 1rem;
+  word-break: break-word
 }
 .fd-grid-list__item-body::after,
 .fd-grid-list__item-body::before {
@@ -286,8 +301,8 @@
 .fd-grid-list--mode-single-select .fd-grid-list__item {
   cursor: pointer
 }
-.fd-grid-list--mode-single-select .fd-grid-list__item.is-hover,
-.fd-grid-list--mode-single-select .fd-grid-list__item:hover {
+.fd-grid-list--mode-single-select .fd-grid-list__item.is-hover:not(.fd-grid-list__item--link,[aria-selected=true],.is-selected),
+.fd-grid-list--mode-single-select .fd-grid-list__item:hover:not(.fd-grid-list__item--link,[aria-selected=true],.is-selected) {
   -webkit-box-shadow: 0 0 0 .0625rem #687d94;
   -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#687d94));
   box-shadow: 0 0 0 .0625rem #687d94;

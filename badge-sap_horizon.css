@@ -1,6 +1,6 @@
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-badge {
@@ -32,8 +32,7 @@
   color: #fff;
   color: var(--sapContent_ContrastTextColor,#fff);
   padding: 0 .5rem;
-  border: .0625rem solid transparent;
-  border: .0625rem solid var(--fdBadge_Border_Color,transparent);
+  border: .0625rem solid var(--fdBadge_Border_Color);
   border-radius: .5rem;
   position: absolute;
   right: .5rem;

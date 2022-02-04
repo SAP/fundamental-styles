@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.20.3
- * Copyright (c) 2021 SAP SE or an SAP affiliate company.
+ * Fundamental Library Styles v0.21.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-micro-process-flow {
@@ -188,7 +187,7 @@
   color: var(--sapButton_Hover_TextColor,#fff)
 }
 .fd-micro-process-flow__link-previous::before {
-  content: ""
+  content: "\e067"
 }
 .fd-micro-process-flow__link-previous::before {
   padding-right: .313rem
@@ -200,7 +199,7 @@
 }
 .fd-micro-process-flow__link-previous[dir=rtl]::before,
 [dir=rtl] .fd-micro-process-flow__link-previous::before {
-  content: ""
+  content: "\e066"
 }
 .fd-micro-process-flow__link-next {
   -webkit-box-pack: end;
@@ -208,7 +207,7 @@
   justify-content: flex-end
 }
 .fd-micro-process-flow__link-next::after {
-  content: ""
+  content: "\e066"
 }
 .fd-micro-process-flow__link-next::after {
   padding-left: .313rem
@@ -220,7 +219,7 @@
 }
 .fd-micro-process-flow__link-next[dir=rtl]::after,
 [dir=rtl] .fd-micro-process-flow__link-next::after {
-  content: ""
+  content: "\e067"
 }
 .fd-micro-process-flow .fd-micro-process-flow__item {
   font-size: .875rem;
