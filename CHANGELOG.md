@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.123 (2022-02-04)
+
+
+### Features
+
+* **fn:** implement notification component [ci visual] ([#3142](https://github.com/SAP/fundamental-styles/issues/3142)) ([a8ff15c](https://github.com/SAP/fundamental-styles/commit/a8ff15c03f85d19cbf6b1b5c845d178474b95606))
+
 ## 0.21.0-rc.122 (2022-02-04)
 
 ## 0.21.0-rc.121 (2022-02-04)
