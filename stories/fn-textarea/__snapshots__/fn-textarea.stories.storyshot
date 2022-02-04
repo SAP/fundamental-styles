@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Textarea Textarea 1`] = `
+exports[`Storyshots FN Components/Textarea Textarea 1`] = `
 <section>
   <div
     dir="ltr"

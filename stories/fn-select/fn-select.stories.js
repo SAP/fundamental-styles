@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Select',
+    title: 'FN Components/Select',
     parameters: {
         description: `
 

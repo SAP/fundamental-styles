@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Form',
+    title: 'FN Components/Form',
     parameters: {
         description: `**Modifier classes for forms:**
 

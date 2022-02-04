@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Step Input',
+    title: 'FN Components/Step Input',
     parameters: {
         description: `
 

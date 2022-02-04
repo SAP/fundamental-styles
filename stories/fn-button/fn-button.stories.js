@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Button',
+    title: 'FN Components/Button',
     parameters: {
         description: `
 **Modifier classes for button style:**

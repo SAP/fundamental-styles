@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Input Critical Input 1`] = `
+exports[`Storyshots FN Components/Input Critical Input 1`] = `
 <div
   dir="ltr"
 >
@@ -331,7 +331,7 @@ exports[`Storyshots Experimental/Input Critical Input 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Input Default Input 1`] = `
+exports[`Storyshots FN Components/Input Default Input 1`] = `
 <div
   dir="ltr"
 >
@@ -627,7 +627,7 @@ exports[`Storyshots Experimental/Input Default Input 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Input Info Input 1`] = `
+exports[`Storyshots FN Components/Input Info Input 1`] = `
 <div
   dir="ltr"
 >
@@ -958,7 +958,7 @@ exports[`Storyshots Experimental/Input Info Input 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Input Negative Input 1`] = `
+exports[`Storyshots FN Components/Input Negative Input 1`] = `
 <div
   dir="ltr"
 >
@@ -1289,7 +1289,7 @@ exports[`Storyshots Experimental/Input Negative Input 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Input Positive Input 1`] = `
+exports[`Storyshots FN Components/Input Positive Input 1`] = `
 <div
   dir="ltr"
 >

@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Textarea',
+    title: 'FN Components/Textarea',
     parameters: {
         description: `
 

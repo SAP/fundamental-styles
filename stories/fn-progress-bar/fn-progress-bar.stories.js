@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Progress Bar',
+    title: 'FN Components/Progress Bar',
     parameters: {
         description: `**Modifier classes for Progress Bar added to \`.fn-progress-bar\` base class:**
 

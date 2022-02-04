@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Message Toast',
+    title: 'FN Components/Message Toast',
     parameters: {
         description: `
 

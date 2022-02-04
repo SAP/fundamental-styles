@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Rating Indicator',
+    title: 'FN Components/Rating Indicator',
     parameters: {
         description: `
         `,

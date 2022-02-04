@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Object Status',
+    title: 'FN Components/Object Status',
     parameters: {
         description: `
 **Modifier classes for Object Status:**

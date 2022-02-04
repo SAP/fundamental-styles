@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Avatar',
+    title: 'FN Components/Avatar',
     parameters: {
         description: `
 **Modifier classes for Avatar:**

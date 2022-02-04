@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Tabs',
+    title: 'FN Components/Tabs',
     parameters: {
         description: `**Modifier classes for Tabs style:**
 

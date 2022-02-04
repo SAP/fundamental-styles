@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Card',
+    title: 'FN Components/Card',
     parameters: {
         components: ['fn-card', 'icon', 'fn-button', 'fn-avatar'],
         description: `

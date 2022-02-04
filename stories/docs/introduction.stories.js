@@ -40,3 +40,7 @@ export const Overview = () => {
     addons.getChannel().emit(SELECT_STORY, 'introduction--overview');
     return '<div></div>';
 };
+
+Overview.parameters = {
+    storyshots: { disable: true }
+};
