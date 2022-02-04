@@ -7,8 +7,8 @@ $block: fn-icon-sprite;
   width: 16px;
   height: 16px;
   stroke-width: 0;
-  fill: var(--sapContent_IconColor);
+  fill: black;
 
-  @include fn-icon-sprite-control-enumeration($block);
-  @include fn-icon-sizes($block);
+  // @include fn-icon-sprite-control-enumeration($block);
+  // @include fn-icon-sizes($block);
 }

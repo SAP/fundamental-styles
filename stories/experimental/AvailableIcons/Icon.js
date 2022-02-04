@@ -14,7 +14,7 @@ const panelBodyStyle = {
 };
 
 export default ({ iconName }) => {
-    const iconClass = `fn-icon fn-icon--color-default fn-icon--size-40 fn-icon--${iconName}`;
+    const iconClass = `fn-icon fn-icon--${iconName}`;
     const copy = () => {
         navigator.clipboard.writeText(`<span class="fn-icon fn-icon--${iconName}" />`);
     };
@@ -22,7 +22,7 @@ export default ({ iconName }) => {
         <div className="fd-layout-panel" style={panelStyle}>
             <div className="fd-layout-panel__body" style={panelBodyStyle}>
                 <div>
-                    <span className={iconClass} />
+                    <span className={iconClass} style={{ width: '40px', height: '40px' }} />
                     <p>{iconName}</p>
                 </div>
                 <div>

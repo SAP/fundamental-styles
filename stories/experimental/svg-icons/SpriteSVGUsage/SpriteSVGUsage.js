@@ -6,9 +6,10 @@ styles.use();
 
 const baseClass = 'fn-icon-sprite';
 
-const getIcon = (size = 16, color = 'default') => {
+const getIcon = (size = 16, color = 'black') => {
+    // noinspection CssInvalidPropertyValue
     return `
-        <svg class="${baseClass} ${baseClass}--size-${size} ${baseClass}--color-${color}">
+        <svg class="${baseClass}" style="fill: ${color}; width: ${size}px; height: ${size}px">
             <use xlink:href="${sprite}#fiori-accelerated"></use>
         </svg>
     `;
@@ -31,7 +32,7 @@ export const spriteSVGUsage = () => {
             Size 40: ${getIcon(40)}
         </div>
         <div class="example-container">
-            Positive color: ${getIcon(40, 'positive')}
+            Green color: ${getIcon(40, 'green')}
         </div>`;
 };
 

@@ -15,13 +15,13 @@ export const independentSVGUsage = () => {
             Default size(16): <span class="fn-icon fn-icon--accelerated"></span>
         </div>
         <div class="example-container">
-            Size 32: <span class="fn-icon fn-icon--accelerated fn-icon--size-32"></span>
+            Size 32: <span class="fn-icon fn-icon--accelerated" style="width: 32px; height: 32px"></span>
         </div>
         <div class="example-container">
-            Size 40: <span class="fn-icon fn-icon--accelerated fn-icon--size-40"></span>
+            Size 40: <span class="fn-icon fn-icon--accelerated" style="width: 40px; height: 40px"></span>
         </div>
         <div class="example-container">
-            Positive color: <span class="fn-icon fn-icon--accelerated fn-icon--size-40 fn-icon--color-positive"></span>
+            Green color: <span class="fn-icon fn-icon--accelerated" style="width: 40px; height: 40px; background-color: green"></span>
         </div>
     `;
 };

@@ -8,13 +8,13 @@ $block: fn-icon;
   display: inline-block;
   background-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: var(--sapContent_IconColor);
+  background-color: black;
   width: 16px;
   height: 16px;
   position: relative;
 
-  @include fn-icon-control-enumeration($block);
-  @include fn-icon-sizes($block);
+  // @include fn-icon-control-enumeration($block);
+  // @include fn-icon-sizes($block);
 
   @each $iconName, $fileName in $iconNames {
     &--#{$iconName} {
