@@ -17,15 +17,12 @@ Include `@fundamental-styles/fn-icons/dist/fn-icons-independent.css` file in you
 Syntax for icons:
 
 ```html
-<span class="fn-icon fn-icon--{icon-name} fn-icon--size-{size} fn-icon--color-{color}"></span>
+<span class="fn-icon fn-icon--{icon-name}"></span>
 ```
 
-Replace `{icon-name}` with desired icon name. Modifier classes `fn-icon--size-{size}`
-and `fn-icon--color-{color}` are optional and can be used under your consideration. You should replace `{size}` with
-even number from 16 to 40. By default, icons have size of 16X16 px. Supported values for `{color}` are `default`
-, `contrast`, `non-interactive`, `tile`, `marker`,
-`critical`, `negative`, `neutral` and `positive`. Please take into
-account [browser compatibility](https://caniuse.com/mdn-css_properties_mask-image)
+Replace `{icon-name}` with desired icon name. To modify color and size of icon apply `background-color`, `width`
+and `height` CSS properties.
+Please take into account [browser compatibility](https://caniuse.com/mdn-css_properties_mask-image)
 when using this method. Styles are using `mask-image` CSS property.
 
 ### Sprite SVG
@@ -39,16 +36,13 @@ Syntax for icons:
 
 ```html
 
-<svg class="fn-icon-sprite fn-icon-sprite--size-{size} fn-icon-sprite--color-{color}">
+<svg class="fn-icon-sprite">
     <use xlink:href="@fundamental-styles/fn-icons/dist/fiori-sprite.svg#{icon-name}"></use>
 </svg>
 ```
 
-Replace `{icon-name}` with desired icon name. Modifier classes `fn-icon-sprite--size-{size}`
-and `fn-icon-sprite--color-{color}` are optional and can be used under your consideration. You should replace `{size}` with
-even number from 16 to 40. By default, icons have size of 16X16 px. Supported values for `{color}` are 
-`default`, `contrast`, `non-interactive`, `tile`, `marker`,
-`critical`, `negative`, `neutral` and `positive`.
+Replace `{icon-name}` with desired icon name. To modify color and size of icon apply `fill`, `width`
+and `height` CSS properties or SVG attributes. By default, icons have size of 16X16 px and black color.
 
 
 ### CDN
