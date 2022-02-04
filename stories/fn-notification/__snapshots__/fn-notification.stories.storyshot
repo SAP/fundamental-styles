@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Notification Notification 1`] = `
+exports[`Storyshots FN Components/Notification Notification 1`] = `
 <div
   dir="ltr"
 >
@@ -119,7 +119,7 @@ exports[`Storyshots Experimental/Notification Notification 1`] = `
 </div>
 `;
 
-exports[`Storyshots Experimental/Notification Semantic Notification 1`] = `
+exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
 <div
   dir="ltr"
 >

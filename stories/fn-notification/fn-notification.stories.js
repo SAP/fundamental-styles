@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Notification',
+    title: 'FN Components/Notification',
     parameters: {
         components: ['fn-notification', 'icon', 'fn-button', 'fn-avatar', 'fn-object-status'],
         description: `
