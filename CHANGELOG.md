@@ -1,4 +1,11 @@
 
+## 0.21.0-rc.120 (2022-02-04)
+
+
+### Features
+
+* **fn:** implement fn-list ([#3128](https://github.com/SAP/fundamental-styles/issues/3128)) ([1e278b1](https://github.com/SAP/fundamental-styles/commit/1e278b11f0d1397fd6c470313b2bde70caa04b30))
+
 ## 0.21.0-rc.119 (2022-02-03)
 
 ## 0.21.0-rc.118 (2022-02-03)
