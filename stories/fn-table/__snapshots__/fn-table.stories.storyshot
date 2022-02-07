@@ -1,226 +1,753 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Experimental/Table Tables 1`] = `
+exports[`Storyshots Experimental/Table Table 1`] = `
 <div
   dir="ltr"
 >
   
 
-  <style>
-    
-.docs-fn-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    column-gap: 0.1rem;
-    row-gap: 0.1rem;
-    background: white;
-    padding: 1rem;
-    justify-items: center;
-    align-items: center;
-}
-
-.docs-fn-header-container {
-    display: flex;
-    align-items: center;
-}
-
-.docs-fn-header-container code {
-    margin: 0 1rem;
-}
-
-  </style>
-  
-
-
-  <div
-    class="docs-fn-container"
+  <table
+    class="fn-table"
   >
     
     
-    <div />
+    <thead>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <th
+          class="fn-table__header"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fn-table__header"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fn-table__header"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fn-table__header"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+            
+        <th
+          class="fn-table__header"
+          scope="col"
+        >
+          Column Header
+        </th>
+        
+        
+      </tr>
+      
+    
+    </thead>
     
     
-    <div>
-      <b>
-        Emphasized 
-      </b>
-    </div>
+    <tbody>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          
+                
+          <div
+            class="fn-checkbox"
+            tabindex="0"
+          >
+            
+                    
+            <input
+              aria-label="checkbox"
+              class="fn-checkbox__input"
+              id="checkbox-1"
+              name="checkbox-1"
+              tabindex="-1"
+              type="checkbox"
+            />
+            
+                    
+            <span
+              class="fn-checkbox__checkmark"
+            />
+            
+                
+          </div>
+          
+                Table cell with checkbox
+            
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table Cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          
+                
+          <span
+            class="fn-info-label fn-info-label--indigo"
+          >
+            
+                    
+            <span
+              class="fn-info-label__circle"
+            />
+            
+                
+            <span
+              class="fn-info-label__text"
+            >
+              State
+            </span>
+            
+            
+          </span>
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          <a
+            class="fn-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          
+            
+          <div
+            class="fn-table__text fn-table__text--no-wrap"
+            style="max-width: 250px"
+          >
+            
+                Very long Text Not Wrapped, limited by max-width
+                Very long Text Not Wrapped, limited by max-width
+                Very long Text Not Wrapped, limited by max-width
+                Very long Text Not Wrapped, limited by max-width
+                Very long Text Not Wrapped, limited by max-width
+                Very long Text Not Wrapped, limited by max-width
+            
+          </div>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell is-selected"
+        >
+          Selected table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__group-header"
+        >
+          Group Header
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        />
+        
+            
+        <td
+          class="fn-table__cell"
+        />
+        
+            
+        <td
+          class="fn-table__cell"
+        />
+        
+            
+        <td
+          class="fn-table__cell"
+        />
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          <a
+            class="fn-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          
+            
+          <div
+            class="fn-table__text"
+            style="max-width: 250px"
+          >
+            
+                Very long Text Wrapped, limited by max-width
+                Very long Text Wrapped, limited by max-width
+                Very long Text Wrapped, limited by max-width
+                Very long Text Wrapped, limited by max-width
+            
+          </div>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row is-selected"
+      >
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          <a
+            class="fn-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Selected row
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Selected row
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Selected row
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          <a
+            class="fn-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          
+                
+          <div
+            class="fn-object-status fn-object-status--byline fn-object-status--positive"
+          >
+            
+                
+            <span
+              class="sap-icon sap-icon--status-positive"
+            />
+            
+                
+            <div
+              class="fn-object-status__text"
+            >
+              Positive
+            </div>
+            
+            
+          </div>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          
+                
+          <div
+            class="fn-table__end-container"
+          >
+            
+                    Some text
+                    
+            <button
+              class="fn-button fn-button--icon-only fn-button--secondary"
+            >
+              
+                        
+              <span
+                class="sap-icon sap-icon--edit"
+              />
+              
+                    
+            </button>
+            
+                    
+            <button
+              class="fn-button fn-button--icon-only fn-button--secondary"
+            >
+              
+                        
+              <span
+                class="sap-icon sap-icon--decline"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell fn-table__cell--byline"
+        >
+          
+                
+          <div
+            class="fn-avatar fn-table__avatar fn-avatar--circle fn-avatar--m fn-avatar--indigo"
+          >
+            
+                    
+            <div
+              class="fn-avatar__initials"
+            >
+              M
+            </div>
+            
+                
+          </div>
+          
+                
+          <div
+            class="fn-table__start-container"
+          >
+            
+                    
+            <span
+              class="fn-table__byline-title"
+            >
+              Byline Table Cell with Avatar Title
+            </span>
+            
+                    
+            <span
+              class="fn-lable__byline-text"
+            >
+              Table Cell Byline Text
+            </span>
+            
+                
+          </div>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell fn-table__cell--byline"
+        >
+          
+                
+          <div
+            class="fn-table__start-container"
+          >
+            
+                    
+            <span
+              class="fn-table__byline-title"
+            >
+              Byline Table Cell
+            </span>
+            
+                    
+            <div
+              class="fn-object-status fn-object-status--byline fn-object-status--critical"
+            >
+              
+                        
+              <span
+                class="sap-icon sap-icon--status-critical"
+              />
+              
+                        
+              <div
+                class="fn-object-status__text"
+              >
+                Critical
+              </div>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          <a
+            class="fn-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          
+                
+          <div
+            class="fn-table__end-container"
+          >
+            
+                    Navigation
+                    
+            <button
+              class="fn-button fn-button--icon-only fn-button--layout"
+            >
+              
+                        
+              <span
+                class="sap-icon sap-icon--navigation-right-arrow"
+              />
+              
+                    
+            </button>
+            
+                
+          </div>
+          
+            
+        </td>
+        
+        
+      </tr>
+      
+        
+      <tr
+        class="fn-table__row"
+      >
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          <a
+            class="fn-link"
+          >
+            user.name@email.com
+          </a>
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          Table cell
+        </td>
+        
+            
+        <td
+          class="fn-table__cell"
+        >
+          01/26/17
+        </td>
+        
+        
+      </tr>
+      
     
-    
-    <div>
-      <b>
-        Default
-      </b>
-    </div>
+    </tbody>
     
 
-  </div>
+  </table>
   
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
-    <div>
-      <b>
-        :normal
-      </b>
-    </div>
-    
-    
-    <a
-      class="fn-table fn-table--emphasized"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-    
-    <a
-      class="fn-table"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-
-  </div>
-  
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
-    <div>
-      <b>
-        :hover
-      </b>
-    </div>
-    
-    
-    <a
-      class="fn-table fn-table--emphasized is-hover"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-    
-    <a
-      class="fn-table is-hover"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-
-  </div>
-  
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
-    <div>
-      <b>
-        :active
-      </b>
-    </div>
-    
-    
-    <a
-      class="fn-table fn-table--emphasized is-active"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-    
-    <a
-      class="fn-table is-active"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-
-  </div>
-  
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
-    <div>
-      <b>
-        :focus
-      </b>
-    </div>
-    
-    
-    <a
-      class="fn-table fn-table--emphasized is-focus"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-    
-    <a
-      class="fn-table is-focus"
-      href="https://sap.github.io/fundamental-styles"
-    >
-      Ñagçyfox
-    </a>
-    
-
-  </div>
-  
-
-
-  <div
-    class="docs-fn-container"
-  >
-    
-    
-    <div>
-      <b>
-        :disabled
-      </b>
-    </div>
-    
-    
-    <a
-      aria-disabled="true"
-      class="fn-table fn-table--emphasized"
-      href="https://sap.github.io/fundamental-styles"
-      role="table"
-    >
-      Ñagçyfox
-    </a>
-    
-    
-    <a
-      aria-disabled="true"
-      class="fn-table"
-      href="https://sap.github.io/fundamental-styles"
-      role="table"
-    >
-      Ñagçyfox
-    </a>
-    
-
-  </div>
-  
-
 
 </div>
 `;
