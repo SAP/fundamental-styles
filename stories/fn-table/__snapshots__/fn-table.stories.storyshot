@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Experimental/Table Tables 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <style>
+    
+.docs-fn-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    column-gap: 0.1rem;
+    row-gap: 0.1rem;
+    background: white;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.docs-fn-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.docs-fn-header-container code {
+    margin: 0 1rem;
+}
+
+  </style>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div />
+    
+    
+    <div>
+      <b>
+        Emphasized 
+      </b>
+    </div>
+    
+    
+    <div>
+      <b>
+        Default
+      </b>
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :normal
+      </b>
+    </div>
+    
+    
+    <a
+      class="fn-table fn-table--emphasized"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+    
+    <a
+      class="fn-table"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :hover
+      </b>
+    </div>
+    
+    
+    <a
+      class="fn-table fn-table--emphasized is-hover"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+    
+    <a
+      class="fn-table is-hover"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :active
+      </b>
+    </div>
+    
+    
+    <a
+      class="fn-table fn-table--emphasized is-active"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+    
+    <a
+      class="fn-table is-active"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :focus
+      </b>
+    </div>
+    
+    
+    <a
+      class="fn-table fn-table--emphasized is-focus"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+    
+    <a
+      class="fn-table is-focus"
+      href="https://sap.github.io/fundamental-styles"
+    >
+      Ñagçyfox
+    </a>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        :disabled
+      </b>
+    </div>
+    
+    
+    <a
+      aria-disabled="true"
+      class="fn-table fn-table--emphasized"
+      href="https://sap.github.io/fundamental-styles"
+      role="table"
+    >
+      Ñagçyfox
+    </a>
+    
+    
+    <a
+      aria-disabled="true"
+      class="fn-table"
+      href="https://sap.github.io/fundamental-styles"
+      role="table"
+    >
+      Ñagçyfox
+    </a>
+    
+
+  </div>
+  
+
+
+</div>
+`;
