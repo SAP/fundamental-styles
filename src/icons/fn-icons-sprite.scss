@@ -1,0 +1,14 @@
+@import "icon-names";
+@import "mixins";
+
+$block: fn-icon-sprite;
+
+.#{$block} {
+  width: 16px;
+  height: 16px;
+  stroke-width: 0;
+  fill: black;
+
+  // @include fn-icon-sprite-control-enumeration($block);
+  // @include fn-icon-sizes($block);
+}

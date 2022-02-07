@@ -76,7 +76,8 @@ $block: #{$fn-namespace}-search;
     }
   }
 
-  [class*='sap-icon'] {
+  [class*='sap-icon'],
+  [class*='fn-icon'] {
     @include fn-flex-center();
     @include fn-set-square(1.125rem);
     @include fn-set-position-right(0.25rem);

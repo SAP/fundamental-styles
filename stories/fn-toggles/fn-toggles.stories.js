@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Toggles',
+    title: 'FN Components/Toggles',
     parameters: {
         description: `
 

@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Message Box',
+    title: 'FN Components/Message Box',
     parameters: {
         description: `**Modifier classes for Message Box:**
 

@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Multi-Input',
+    title: 'FN Components/Multi-Input',
     parameters: {
         description: `
 

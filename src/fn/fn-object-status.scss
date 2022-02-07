@@ -65,6 +65,8 @@ $object-status-interactive-colors: (
   }
 
   &--byline {
+    @include fn-set-padding-left(0);
+
     height: 1rem;
 
     .#{$block}__text {

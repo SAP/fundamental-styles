@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Shell',
+    title: 'FN Components/Shell',
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
         description: `

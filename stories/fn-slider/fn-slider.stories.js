@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Slider',
+    title: 'FN Components/Slider',
     parameters: {
         description: `**Modifier classes for slider style:**
 

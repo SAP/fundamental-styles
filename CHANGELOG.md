@@ -1,4 +1,45 @@
 
+### 0.21.1-rc.0 (2022-02-06)
+
+## [0.21.0](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.125...v0.21.0) (2022-02-04)
+
+## 0.21.0-rc.125 (2022-02-04)
+
+
+### Features
+
+* **fn:** svg icons ([#3140](https://github.com/SAP/fundamental-styles/issues/3140)) ([c3fe1af](https://github.com/SAP/fundamental-styles/commit/c3fe1afe5902ce78c0d609b9332922e5544c4577))
+
+## 0.21.0-rc.124 (2022-02-04)
+
+
+### Bug Fixes
+
+* **fn:** add additional modifier classes to Dropdown ([#3146](https://github.com/SAP/fundamental-styles/issues/3146)) ([376613e](https://github.com/SAP/fundamental-styles/commit/376613e7981b824186faf291949d3b08a09538f1))
+
+## 0.21.0-rc.123 (2022-02-04)
+
+
+### Features
+
+* **fn:** implement notification component [ci visual] ([#3142](https://github.com/SAP/fundamental-styles/issues/3142)) ([a8ff15c](https://github.com/SAP/fundamental-styles/commit/a8ff15c03f85d19cbf6b1b5c845d178474b95606))
+
+## 0.21.0-rc.122 (2022-02-04)
+
+## 0.21.0-rc.121 (2022-02-04)
+
+
+### Features
+
+* **fn:** introduce Dropdown in Fiori Next ([#3144](https://github.com/SAP/fundamental-styles/issues/3144)) ([91a53d8](https://github.com/SAP/fundamental-styles/commit/91a53d8a9b0d56ba663e1788589aad09692696a2))
+
+## 0.21.0-rc.120 (2022-02-04)
+
+
+### Features
+
+* **fn:** implement fn-list ([#3128](https://github.com/SAP/fundamental-styles/issues/3128)) ([1e278b1](https://github.com/SAP/fundamental-styles/commit/1e278b11f0d1397fd6c470313b2bde70caa04b30))
+
 ## 0.21.0-rc.119 (2022-02-03)
 
 ## 0.21.0-rc.118 (2022-02-03)

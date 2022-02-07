@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Token',
+    title: 'FN Components/Token',
     parameters: {
         description: `
 

@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Search',
+    title: 'FN Components/Search',
     parameters: {
         description: '',
         components: ['fn-search', 'icon']

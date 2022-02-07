@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Generic Tag',
+    title: 'FN Components/Generic Tag',
     parameters: {
         description: `**Modifier classes for Generic Tag style:**
 

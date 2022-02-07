@@ -1,5 +1,5 @@
 export default {
-    title: 'Experimental/Message Strip',
+    title: 'FN Components/Message Strip',
     parameters: {
         description: `**Modifier classes for Message Strip:**
 
