@@ -57,7 +57,6 @@ In these cases, use the **Tree** instead.
             'dialog',
             'input',
             'input-group',
-            'multi-input',
             'checkbox',
             'select',
             'menu',
@@ -160,12 +159,6 @@ export const Borderless = () => `<div class="fd-toolbar fd-toolbar--solid fd-too
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
     </tbody>
 </table>
 `;
@@ -197,12 +190,6 @@ export const Borderlessbody = () => `<div class="fd-toolbar fd-toolbar--solid fd
         </tr>
     </thead>
     <tbody class="fd-table__body fd-table__body--no-horizontal-borders fd-table__body--no-vertical-borders">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -1329,41 +1316,6 @@ export const ContextualMenu = () => `<div style="min-height: 400px">
                 </div>
             </td>
         </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-            <td class="fd-table__cell fd-table__cell--fit-content">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <button aria-label="navigation" class="fd-button fd-button--transparent" aria-controls="G54JRFF3" aria-haspopup="true" aria-expanded="false" aria-label="More" onclick="onPopoverClick('G54JRFF3')">
-                            <i class="sap-icon--overflow"></i>
-                        </button>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="G54JRFF3">
-                        <nav class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 1</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 2</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item">
-                                    <a href="#" class="fd-menu__link">
-                                        <span class="fd-menu__title">Option 3</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </td>
-        </tr>
     </tbody>
 </table>
 </div>
@@ -2236,65 +2188,6 @@ export const GridTable = () => `<table class="fd-table" aria-describedby="FU4EwF
                                     </button>
                                 </span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr class="fd-table__row" aria-selected="false">
-            <td class="fd-table__cell fd-table__cell--checkbox" tabindex="-1">
-                <div class="fd-form-item">
-                    <input aria-checked="false" aria-label="Select row" class="fd-checkbox" id="fd-kgZvkuwUtB-" name="Notebook Basic 19" type="checkbox" value="" tabindex="-1" />
-                    <label for="fd-kgZvkuwUtB-" class="fd-form-label fd-checkbox__label"></label>
-                </div>
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <span>Notebook Basic 19</span>
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input aria-labelledby="fd-NPWFoAxBzUa" class="fd-input" name="Notebook Basic 19" type="text" value="HT-1003" tabindex="-1" />
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <span>15</span>
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <span class="fd-object-status fd-object-status--positive">Available</span>
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-form-item">
-                    <div class="fd-popover fd-popover--full-width">
-                        <div class="fd-popover__control">
-                            <div class="fd-select" tabindex="-1" aria-labelledby="fd-hEzpEm5PMU2" aria-expanded="false" aria-haspopup="listbox">
-                                <div class="fd-select__control">
-                                    <span class="fd-select__text-content">Technocom</span>
-                                    <span class="fd-button fd-button--transparent fd-select__button"><i aria-hidden="true" class="sap-icon--slim-arrow-down" role="img"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <a href="https://openui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-1003.jpg" class="fd-link" tabindex="-1">Show image</a>
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-form-item">
-                    <input aria-checked="false" aria-label="Heavy Weight" class="fd-checkbox" id="fd-LHL3aUwc6pZ" type="checkbox" value="" tabindex="-1" /><label for="fd-LHL3aUwc6pZ" class="fd-form-label fd-checkbox__label"></label>
-                </div>
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <input aria-labelledby="fd-OspcU6H7F0q" class="fd-input" type="text" value="" tabindex="-1" />
-            </td>
-            <td class="fd-table__cell fd-table__cell--focusable" tabindex="-1">
-                <div class="fd-popover fd-popover--full-width">
-                    <div class="fd-popover__control">
-                        <div aria-expanded="false" aria-haspopup="true" class="fd-input-group--control fd-input-group">
-                            <input aria-labelledby="fd-nEac1Ko5K0e" class="fd-input fd-input-group__input" placeholder="MM/DD/YYYY" type="text" value="" tabindex="-1" />
-                            <span class="fd-input-group__addon fd-input-group__addon--button">
-                                <button aria-label="Choose date" class="fd-button fd-button--transparent fd-input-group__button" type="button" tabindex="-1">
-                                    <i aria-hidden="true" class="sap-icon--appointment-2" role="img"></i>
-                                </button>
-                            </span>
                         </div>
                     </div>
                 </div>
