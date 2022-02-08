@@ -1,4 +1,11 @@
 
+### 0.21.1-rc.4 (2022-02-08)
+
+
+### Features
+
+* **fn:** introduce Page components [ci visual] ([#3163](https://github.com/SAP/fundamental-styles/issues/3163)) ([0f7a5ac](https://github.com/SAP/fundamental-styles/commit/0f7a5ac9c8002c1f3b6ffebba32e696983f2181d))
+
 ### 0.21.1-rc.3 (2022-02-08)
 
 ### 0.21.1-rc.2 (2022-02-08)
