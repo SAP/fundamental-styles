@@ -60,6 +60,10 @@ $fn-table-item-box-shadow: 0 0 0 $fn-table-item-focus-margin;
     .#{$block}__text--end {
       @include fn-set-margin-left(auto);
     }
+
+    .#{$block}__header-checkbox {
+      @include fn-set-margin-left(-0.25rem);
+    }
   }
 
   &__group-header {
@@ -71,11 +75,17 @@ $fn-table-item-box-shadow: 0 0 0 $fn-table-item-focus-margin;
     height: 2rem;
 
     @include fn-set-padding-left(1rem);
+
+    &:not(:first-of-type) {
+      @include fn-set-padding-left(0.75rem);
+    }
   }
 
   &__cell {
-    @include fn-hover() {
-      background: $fn-color-grey-1;
+    &:not(.fn-table__cell--no-hover) {
+      @include fn-hover() {
+        background: $fn-color-grey-1;
+      }
     }
 
     @include fn-focus-visible() {
