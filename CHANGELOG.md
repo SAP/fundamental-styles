@@ -1,4 +1,11 @@
 
+### 0.21.1-rc.2 (2022-02-08)
+
+
+### Bug Fixes
+
+* **fn:** adjust slider handle position [ci visual] ([#3159](https://github.com/SAP/fundamental-styles/issues/3159)) ([cb7e622](https://github.com/SAP/fundamental-styles/commit/cb7e6227c11572fc6cc369c263e3f5a53a6d7057))
+
 ### 0.21.1-rc.1 (2022-02-07)
 
 ### 0.21.1-rc.0 (2022-02-06)
