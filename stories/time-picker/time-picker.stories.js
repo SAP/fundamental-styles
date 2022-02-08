@@ -1,10 +1,18 @@
 export default {
     title: 'Patterns/Time Picker',
     parameters: {
-        description: `
-The Time Picker is an opinionated component composed of an \`input-group\`, \`popover\`, and \`time\` components to create a time selection interaction.
+        description: `The time picker allows the user to select a localized time. It is smaller in compact mode and provides a touch-friendly size in cozy mode. 
 
-This component mostly relies on the CSS of other components and has no CSS of its own.
+
+##Usage
+
+**Use the time picker if:**
+
+- Users need to select a time.
+- Users need to select a time range. In this case, one time picker can be used to set the starting time and a second one to set the end time.
+- Users need to select a specific duration, such as 1 minute and 30 seconds.
+
+
 `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['popover', 'input', 'input-group', 'time', 'button', 'icon', 'bar', 'layout-grid']
@@ -234,7 +242,11 @@ export const CozyAndCompactMode = () => `<div class="fd-container" style="height
 
 CozyAndCompactMode.parameters = {
     docs: {
-        iframeHeight: 580
+        iframeHeight: 580,
+        description: {
+            story: `The time picker is  a composition of \`input-group\`, \`popover\`, and \`time\` components to create a time selection interaction. 
+It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\` and \`fd-time--compact\` to the building blocks of the component. AM and PM locale-dependent can be set with the property \`localeId\`.`
+        }
     }
 };
 
@@ -349,6 +361,9 @@ export const TabletMode = () => `<div style="min-height: 580px;">
 
 TabletMode.parameters = {
     docs: {
-        iframeHeight: 550
+        iframeHeight: 550,
+        description: {
+            story: 'The time picker can be displayed in tablet mode by adding `fd-time--tablet` component. '
+        }
     }
 };
