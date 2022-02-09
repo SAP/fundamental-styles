@@ -995,7 +995,7 @@ export const Compact = () => `<div class="fddocs-container" style="margin-bottom
 Compact.parameters = {
     docs: {
         description: {
-            story: 'User menu can be displayed in compact mode by adding `--compact` to the building block of the components. '
+            story: 'User menu can be displayed in compact mode by adding the `--compact` modifier to the `fd-user-menu` component as well as the `fd-user-menu__body`.'
         }
     }
 };
