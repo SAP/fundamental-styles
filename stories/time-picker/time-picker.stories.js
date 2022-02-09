@@ -363,7 +363,7 @@ TabletMode.parameters = {
     docs: {
         iframeHeight: 550,
         description: {
-            story: `The time picker can be displayed in tablet mode by adding the \`.fd-time--tablet\` modifier class to the \`.fd-time\` base class.`
+            story: 'The time picker can be displayed in tablet mode by adding the `.fd-time--tablet` modifier class to the `.fd-time` base class.'
         }
     }
 };
