@@ -65,7 +65,7 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
       @include fn-hover() {
         @include fn-transition();
 
-        background: $fn-color-blue-1;
+        background: $fn-color-blue-2;
       }
     }
 

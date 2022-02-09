@@ -22,7 +22,7 @@ $fn-table-item-box-shadow: 0 0 0 $fn-border-radius-2;
         @include fn-hover() {
           @include fn-transition();
 
-          background: $fn-color-blue-1;
+          background: $fn-color-blue-2;
         }
       }
     }
@@ -116,7 +116,7 @@ $fn-table-item-box-shadow: 0 0 0 $fn-border-radius-2;
       @include fn-hover() {
         @include fn-transition();
 
-        background: $fn-color-blue-1;
+        background: $fn-color-blue-2;
       }
     }
 
