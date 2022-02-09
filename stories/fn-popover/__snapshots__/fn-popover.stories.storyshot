@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots FN Components/Popover Popover 1`] = `
+<div
+  dir="ltr"
+>
+  
+    
+  <div
+    class="fn-popover"
+    style="max-width: 40rem"
+  >
+    
+        
+    <h1
+      class="fn-popover__title"
+    >
+      Popover Title
+    </h1>
+    
+        
+    <span
+      class="fn-popover__subtitle"
+    >
+      Popover Subtitle
+    </span>
+    
+    
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots FN Components/Popover Data Popover 1`] = `
+<div
+  dir="ltr"
+>
+  
+    
+  <div
+    class="fn-popover fn-popover--data"
+    style="max-width: 40rem"
+  >
+    
+        
+    <h1
+      class="fn-popover__title"
+    >
+      Data Popover Title
+    </h1>
+    
+        
+    <span
+      class="fn-popover__subtitle"
+    >
+      Popover Subtitle
+    </span>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+    
+  <div
+    class="fn-popover fn-popover--data is-focus"
+    style="max-width: 40rem"
+  >
+    
+        
+    <div
+      class="fn-popover__title-icon-button-container"
+    >
+      
+            
+      <h1
+        class="fn-popover__title"
+      >
+        Focused Data Popover Title
+      </h1>
+      
+            
+      <button
+        class="fn-button fn-button--secondary fn-popover__title-button"
+      >
+        
+                
+        <span
+          class="fn-button__text"
+        >
+          Button
+        </span>
+        
+            
+      </button>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+  
+    
+  <div
+    aria-selected="true"
+    class="fn-popover fn-popover--data is-selected"
+    style="max-width: 40rem"
+  >
+    
+        
+    <div
+      class="fn-popover__title-icon-button-container"
+    >
+      
+            
+      <div
+        class="fn-avatar fn-avatar--xs fn-avatar--circle fn-popover__title-icon"
+      >
+        
+                
+        <div
+          class="fn-avatar__icon"
+        >
+          
+                    
+          <span
+            class="sap-icon sap-icon--accept"
+          />
+          
+                
+        </div>
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-popover__title-container"
+      >
+        
+                
+        <h1
+          class="fn-popover__title"
+        >
+          Selected Data Popover Title
+        </h1>
+        
+                
+        <span
+          class="fn-popover__subtitle"
+        >
+          Popover Subtitle
+        </span>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+    
+  </div>
+  
+    
+  <br />
+  <br />
+    
+
+</div>
+`;
