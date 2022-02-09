@@ -1,4 +1,33 @@
 
+### [0.21.1](https://github.com/SAP/fundamental-styles/compare/v0.21.1-rc.6...v0.21.1) (2022-02-09)
+
+### 0.21.1-rc.6 (2022-02-09)
+
+
+### Bug Fixes
+
+* **styles:** fix nested list button bgd issue and popover radius [ci visual] ([#3170](https://github.com/SAP/fundamental-styles/issues/3170)) ([5719266](https://github.com/SAP/fundamental-styles/commit/5719266cba3ddb62bc8c89b7d45a89bc2eb4bcd6))
+
+### 0.21.1-rc.5 (2022-02-08)
+
+### 0.21.1-rc.4 (2022-02-08)
+
+
+### Features
+
+* **fn:** introduce Page components [ci visual] ([#3163](https://github.com/SAP/fundamental-styles/issues/3163)) ([0f7a5ac](https://github.com/SAP/fundamental-styles/commit/0f7a5ac9c8002c1f3b6ffebba32e696983f2181d))
+
+### 0.21.1-rc.3 (2022-02-08)
+
+### 0.21.1-rc.2 (2022-02-08)
+
+
+### Bug Fixes
+
+* **fn:** adjust slider handle position [ci visual] ([#3159](https://github.com/SAP/fundamental-styles/issues/3159)) ([cb7e622](https://github.com/SAP/fundamental-styles/commit/cb7e6227c11572fc6cc369c263e3f5a53a6d7057))
+
+### 0.21.1-rc.1 (2022-02-07)
+
 ### 0.21.1-rc.0 (2022-02-06)
 
 ## [0.21.0](https://github.com/SAP/fundamental-styles/compare/v0.21.0-rc.125...v0.21.0) (2022-02-04)

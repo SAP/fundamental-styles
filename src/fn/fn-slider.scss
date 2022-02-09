@@ -3,6 +3,7 @@
 $block: #{$fn-namespace}-slider;
 $tag-border-width: 0.125rem;
 $slider-handle-width: 2.25rem;
+$slider-wrapper-offset: $slider-handle-width * 0.5;
 $slider-handle-height: 1.625rem;
 $slider-dot-size: 0.25rem;
 $slider-height: 0.5rem;
@@ -48,6 +49,14 @@ $slider-height: 0.5rem;
     opacity: $fn-disabled-opacity;
   }
 
+  &__wrapper {
+    @include fn-reset();
+
+    position: relative;
+    margin-left: $slider-wrapper-offset;
+    margin-right: $slider-wrapper-offset;
+  }
+
   &__track {
     @include fn-reset();
 
@@ -59,10 +68,10 @@ $slider-height: 0.5rem;
 
   &__track-range {
     @include fn-reset();
-    @include fn-set-position-left(0);
 
     z-index: 2;
-    width: 100%;
+    left: -$slider-wrapper-offset;
+    right: -$slider-wrapper-offset;
     top: 0.4375rem;
     height: 0.75rem;
     position: absolute;
@@ -111,14 +120,6 @@ $slider-height: 0.5rem;
       }
     }
 
-    &[aria-valuenow="0"] {
-      transform: translateX(0);
-    }
-
-    &[aria-valuenow="100"] {
-      transform: translateX(-100%);
-    }
-
     @include fn-focus() {
       outline: none;
     }
@@ -153,6 +154,10 @@ $slider-height: 0.5rem;
 
     @include fn-focus-visible() {
       box-shadow: $fn-focus-outline-shadow-blue;
+    }
+
+    @include fn-rtl() {
+      transform: translateX(50%);
     }
   }
 

@@ -1,8 +1,15 @@
 export default {
     title: 'Components/Code',
     parameters: {
-        description: 'A component for styling code snippet',
-        tags: ['development'],
+        description: `The code component helps with formating and styling code snippets. It differantiates the code lines from the normal text.
+##Usage
+
+**Use the code if:**
+* You want to display a block of code.
+* You want to dispaly a line of code.
+
+`,
+        tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['code']
     }
 };
@@ -32,7 +39,7 @@ Primary.storyName = 'Code Block';
 Primary.parameters = {
     docs: {
         description: {
-            story: 'Code example as a block where you are include multiple lines'
+            story: 'Code Block is a combination of multiple lines of code which can be displayed as a standalone element.'
         }
     }
 };
@@ -43,7 +50,7 @@ export const InlineCode = () => `You can add inline code like here <code class="
 InlineCode.parameters = {
     docs: {
         description: {
-            story: 'Inline Code Example which can be used as part of a bigger text paragraph'
+            story: 'Inline Code is used to hightlight a short snippet code inside a paragraph.'
         }
     }
 };
