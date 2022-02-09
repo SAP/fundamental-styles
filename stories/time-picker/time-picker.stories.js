@@ -245,7 +245,7 @@ CozyAndCompactMode.parameters = {
         iframeHeight: 580,
         description: {
             story: `The time picker is  a composition of \`input-group\`, \`popover\`, and \`time\` components to create a time selection interaction. 
-It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\` and \`fd-time--compact\` to the building blocks of the component. AM and PM locale-dependent can be set with the property \`localeId\`.`
+It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\` and \`fd-time--compact\` modifier classes to the building blocks of the component. AM and PM locale-dependent can be set with the property \`localeId\`.`
         }
     }
 };
@@ -363,7 +363,7 @@ TabletMode.parameters = {
     docs: {
         iframeHeight: 550,
         description: {
-            story: 'The time picker can be displayed in tablet mode by adding `fd-time--tablet` component. '
+            story: `The time picker can be displayed in tablet mode by adding the \`.fd-time--tablet\` modifier class to the \`.fd-time\` base class.`
         }
     }
 };
