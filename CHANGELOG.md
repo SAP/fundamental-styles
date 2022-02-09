@@ -1,4 +1,11 @@
 
+### 0.21.1-rc.6 (2022-02-09)
+
+
+### Bug Fixes
+
+* **styles:** fix nested list button bgd issue and popover radius [ci visual] ([#3170](https://github.com/SAP/fundamental-styles/issues/3170)) ([5719266](https://github.com/SAP/fundamental-styles/commit/5719266cba3ddb62bc8c89b7d45a89bc2eb4bcd6))
+
 ### 0.21.1-rc.5 (2022-02-08)
 
 ### 0.21.1-rc.4 (2022-02-08)
