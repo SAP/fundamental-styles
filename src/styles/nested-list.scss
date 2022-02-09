@@ -5,7 +5,7 @@ $block: #{$fd-namespace}-nested-list;
 $button: #{$fd-namespace}-button;
 
 .#{$block} {
-  $fd-nested-list-border-radius: 0.25rem;
+  $fd-nested-list-border-radius: var(--sapElement_BorderCornerRadius);
 
   @mixin fd-nested-level-padding($paddingLeft, $paddingRight) {
     .#{$block}__link,
@@ -114,6 +114,7 @@ $button: #{$fd-namespace}-button;
   &__item {
     @include fd-reset();
 
+    display: block;
     background: var(--sapList_Background);
     text-shadow: var(--fdVerticalNav_Text_Shadow);
 
@@ -213,10 +214,16 @@ $button: #{$fd-namespace}-button;
     }
   }
 
+  &__link {
+    cursor: pointer;
+  }
+
   &__button.#{$button} {
     @include set-height(100%);
 
     border: none;
+    outline: none;
+    background: none;
     min-width: 2.5rem;
     text-decoration: none;
     color: var(--sapContent_IconColor);
