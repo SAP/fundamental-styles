@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.21.0
+ * Fundamental Library Styles v0.21.1
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -37058,26 +37058,36 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-nested-list--popover .fd-nested-list__group-header {
   border-top-left-radius: .25rem;
+  border-top-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
   border-top-right-radius: .25rem;
+  border-top-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
   border-bottom: none
 }
 .fd-nested-list--popover .fd-nested-list__item:first-child {
   border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem
+  border-top-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-top-right-radius: .25rem;
+  border-top-right-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-nested-list--popover .fd-nested-list__item:first-child .fd-nested-list__content,
 .fd-nested-list--popover .fd-nested-list__item:first-child .fd-nested-list__link {
   border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem
+  border-top-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-top-right-radius: .25rem;
+  border-top-right-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-nested-list--popover .fd-nested-list__item:last-child {
   border-bottom-left-radius: .25rem;
-  border-bottom-right-radius: .25rem
+  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-bottom-right-radius: .25rem;
+  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-nested-list--popover .fd-nested-list__item:last-child .fd-nested-list__content,
 .fd-nested-list--popover .fd-nested-list__item:last-child .fd-nested-list__link {
   border-bottom-left-radius: .25rem;
-  border-bottom-right-radius: .25rem
+  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-bottom-right-radius: .25rem;
+  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem)
 }
 .fd-nested-list__item {
   font-size: .875rem;
@@ -37094,6 +37104,7 @@ places the element far left of the screen. so it is not visible.
   padding: 0;
   margin: 0;
   border: 0;
+  display: block;
   background: #fff;
   background: var(--sapList_Background,#fff);
   text-shadow: none;
@@ -37303,11 +37314,16 @@ places the element far left of the screen. so it is not visible.
 [dir=rtl] .fd-nested-list__link.has-child > .fd-nested-list__link > .fd-nested-list__title {
   padding-left: 0
 }
+.fd-nested-list__link {
+  cursor: pointer
+}
 .fd-nested-list__button.fd-button {
   height: 100%;
   min-height: 100%;
   max-height: 100%;
   border: none;
+  outline: 0;
+  background: 0 0;
   min-width: 2.5rem;
   text-decoration: none;
   color: #0854a0;

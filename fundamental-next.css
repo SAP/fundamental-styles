@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.0
+ * Fundamental Library Styles v0.21.1
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -5551,6 +5551,259 @@
   cursor: not-allowed;
   opacity: .4
 }
+.fn-page {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fn-page::after,
+.fn-page::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-page__title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+}
+.fn-page__title::after,
+.fn-page__title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-page__title--no-container {
+  height: 2.75rem;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.fn-page__container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%
+}
+.fn-page__container::after,
+.fn-page__container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-page__container--left,
+.fn-page__container--middle,
+.fn-page__container--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 50%
+}
+.fn-page__container--left:only-child,
+.fn-page__container--middle:only-child,
+.fn-page__container--right:only-child {
+  max-width: 100%
+}
+.fn-page__container--middle {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.fn-page__container--right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.fn-page__element {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: .375rem;
+  max-width: 100%;
+  max-height: 100%
+}
+.fn-page__element::after,
+.fn-page__element::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-page__element[dir=rtl],
+[dir=rtl] .fn-page__element {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fn-page__element--full-width {
+  width: 100%
+}
+.fn-page__element--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fn-page__element:last-child {
+  margin-right: 0
+}
+.fn-page__element:last-child[dir=rtl],
+[dir=rtl] .fn-page__element:last-child {
+  margin-right: 0;
+  margin-left: 0
+}
+.fn-page__group-title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  width: 100%;
+  height: 2rem
+}
+.fn-page__group-title::after,
+.fn-page__group-title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-page__group-title--no-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem
+}
+.fn-page__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 1.125rem;
+  color: #1a2733;
+  text-transform: uppercase
+}
+.fn-page__text::after,
+.fn-page__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-page__footer {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  height: 2.75rem;
+  background: #fff
+}
+.fn-page__footer::after,
+.fn-page__footer::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-page__footer--floating {
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
 .fn-progress-bar {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
@@ -6695,6 +6948,27 @@
   pointer-events: none;
   opacity: .4
 }
+.fn-slider__wrapper {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  margin-left: 1.125rem;
+  margin-right: 1.125rem
+}
+.fn-slider__wrapper::after,
+.fn-slider__wrapper::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
 .fn-slider__track {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
@@ -6728,9 +7002,9 @@
   padding: 0;
   margin: 0;
   border: 0;
-  left: 0;
   z-index: 2;
-  width: 100%;
+  left: -1.125rem;
+  right: -1.125rem;
   top: .4375rem;
   height: .75rem;
   position: absolute;
@@ -6742,11 +7016,6 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fn-slider__track-range[dir=rtl],
-[dir=rtl] .fn-slider__track-range {
-  left: auto;
-  right: 0
 }
 .fn-slider__handle {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
@@ -6820,14 +7089,6 @@
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg)
 }
-.fn-slider__handle[aria-valuenow="0"] {
-  -webkit-transform: translateX(0);
-  transform: translateX(0)
-}
-.fn-slider__handle[aria-valuenow="100"] {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%)
-}
 .fn-slider__handle.is-focus,
 .fn-slider__handle:focus {
   outline: 0
@@ -6873,6 +7134,11 @@
 .fn-slider__handle.is-focus {
   -webkit-box-shadow: 0 0 0 .125rem #0070f2;
   box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-slider__handle[dir=rtl],
+[dir=rtl] .fn-slider__handle {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%)
 }
 .fn-slider--range .fn-slider__handle:first-child {
   left: 0

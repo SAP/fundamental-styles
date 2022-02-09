@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.0
+ * Fundamental Library Styles v0.21.1
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -88,6 +88,27 @@
   pointer-events: none;
   opacity: .4
 }
+.fn-slider__wrapper {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+  margin-left: 1.125rem;
+  margin-right: 1.125rem
+}
+.fn-slider__wrapper::after,
+.fn-slider__wrapper::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
 .fn-slider__track {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
@@ -121,9 +142,9 @@
   padding: 0;
   margin: 0;
   border: 0;
-  left: 0;
   z-index: 2;
-  width: 100%;
+  left: -1.125rem;
+  right: -1.125rem;
   top: .4375rem;
   height: .75rem;
   position: absolute;
@@ -135,11 +156,6 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fn-slider__track-range[dir=rtl],
-[dir=rtl] .fn-slider__track-range {
-  left: auto;
-  right: 0
 }
 .fn-slider__handle {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
@@ -213,14 +229,6 @@
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg)
 }
-.fn-slider__handle[aria-valuenow="0"] {
-  -webkit-transform: translateX(0);
-  transform: translateX(0)
-}
-.fn-slider__handle[aria-valuenow="100"] {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%)
-}
 .fn-slider__handle.is-focus,
 .fn-slider__handle:focus {
   outline: 0
@@ -266,6 +274,11 @@
 .fn-slider__handle.is-focus {
   -webkit-box-shadow: 0 0 0 .125rem #0070f2;
   box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-slider__handle[dir=rtl],
+[dir=rtl] .fn-slider__handle {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%)
 }
 .fn-slider--range .fn-slider__handle:first-child {
   left: 0
