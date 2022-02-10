@@ -23,7 +23,7 @@ $button: #{$fn-namespace}-button;
 
   @include fn-hover() {
     button:first-child {
-      color: $fn-color-grey-600;
+      color: $fn-color-grey-8;
       background: $fn-color-white;
       box-shadow: $fn-shadow-grey-level-1;
     }
@@ -33,7 +33,7 @@ $button: #{$fn-namespace}-button;
     @include fn-hover() {
       button:first-child {
         color: $fn-color-white;
-        background: $fn-color-blue-600;
+        background: $fn-color-blue-8;
         box-shadow: $fn-shadow-blue-level-1;
       }
     }

@@ -37,8 +37,8 @@ $fn-textarea-border-radius: $fn-border-radius-6;
     min-height: 6rem;
     font-size: 0.875rem;
     line-height: 1.375rem;
-    color: $fn-color-grey-700;
-    background: $fn-color-grey-50;
+    color: $fn-color-grey-9;
+    background: $fn-color-grey-1;
     border-radius: $fn-textarea-border-radius;
 
     &::-webkit-input-placeholder,
@@ -48,7 +48,7 @@ $fn-textarea-border-radius: $fn-border-radius-6;
     &::placeholder {
       font-size: 0.875rem;
       line-height: 1.375rem;
-      color: $fn-color-grey-700;
+      color: $fn-color-grey-9;
     }
 
     @include fn-hover() {

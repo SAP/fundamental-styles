@@ -16,11 +16,11 @@ $fn-message-box-icon-text-spacing: 0.46875rem;
 $fn-message-box-title-icon-text-size: 1rem;
 
 $message-box-states: (
-  "confirmation": ("iconColor": $fn-color-grey-500),
-  "negative": ("iconColor": $fn-color-red-500),
-  "positive": ("iconColor": $fn-color-green-500),
-  "critical": ("iconColor": $fn-color-orange-400),
-  "info": ("iconColor": $fn-color-blue-500)
+  "confirmation": ("iconColor": $fn-color-grey-7),
+  "negative": ("iconColor": $fn-color-red-7),
+  "positive": ("iconColor": $fn-color-green-7),
+  "critical": ("iconColor": $fn-color-mango-6),
+  "info": ("iconColor": $fn-color-blue-7)
 );
 
 .#{$block} {

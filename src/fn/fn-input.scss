@@ -128,7 +128,7 @@ $block: #{$fn-namespace}-input;
     @include fn-input-base-parameters();
     @include fn-set-paddings-y-equal(0.3125rem);
     @include fn-set-paddings-x($fn-padding-small, $fn-padding-xs);
-    @include fn-input-base($fn-color-grey-50, $fn-color-grey-700, none);
+    @include fn-input-base($fn-color-grey-1, $fn-color-grey-9, none);
 
     &::placeholder {
       color: $fn-input-placeholder-color;
@@ -138,7 +138,7 @@ $block: #{$fn-namespace}-input;
 
     @include fn-input-base-states() {
       @include fn-hover() {
-        @include fn-input-base($fn-color-white, $fn-color-grey-500, $fn-shadow-grey-level-1);
+        @include fn-input-base($fn-color-white, $fn-color-grey-7, $fn-shadow-grey-level-1);
       }
     }
   }
@@ -159,24 +159,24 @@ $block: #{$fn-namespace}-input;
       width: 100%;
       border-bottom-width: $fn-border-width;
       border-bottom-style: $fn-border-style;
-      border-bottom-color: $fn-color-grey-500;
+      border-bottom-color: $fn-color-grey-7;
     }
   }
 
   &--info {
-    @include fn-input-base-semantics($fn-color-blue-50, $fn-color-blue-500, $fn-shadow-blue-level-1);
+    @include fn-input-base-semantics($fn-color-blue-1, $fn-color-blue-7, $fn-shadow-blue-level-1);
   }
 
   &--critical {
-    @include fn-input-base-semantics($fn-color-orange-50, $fn-color-orange-400, $fn-shadow-orange-level-1);
+    @include fn-input-base-semantics($fn-color-mango-1, $fn-color-mango-6, $fn-shadow-orange-level-1);
   }
 
   &--negative {
-    @include fn-input-base-semantics($fn-color-red-50, $fn-color-red-500, $fn-shadow-red-level-1);
+    @include fn-input-base-semantics($fn-color-red-1, $fn-color-red-7, $fn-shadow-red-level-1);
   }
 
   &--positive {
-    @include fn-input-base-semantics($fn-color-green-50, $fn-color-green-500, $fn-shadow-green-level-1);
+    @include fn-input-base-semantics($fn-color-green-1, $fn-color-green-7, $fn-shadow-green-level-1);
   }
 
   &--select {
@@ -212,12 +212,12 @@ $block: #{$fn-namespace}-input;
       }
 
       .#{$block}__border::before {
-        border-bottom-color: $fn-color-blue-500;
+        border-bottom-color: $fn-color-blue-7;
       }
 
       button {
         box-shadow: none;
-        background: $fn-color-blue-500;
+        background: $fn-color-blue-7;
 
         [class*='sap-icon'] {
           color: $fn-color-white;

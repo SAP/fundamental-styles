@@ -10,7 +10,7 @@ $block: #{$fn-namespace}-link;
   height: fit-content;
   display: inline-block;
   text-decoration: none;
-  color: $fn-color-blue-500;
+  color: $fn-color-blue-7;
   border-radius: $fn-border-radius-2;
 
   @include fn-hover() {

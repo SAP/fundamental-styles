@@ -3,14 +3,17 @@
 $block: #{$fn-namespace}-info-label;
 
 $color-accents: (
-  "yellow": ("background": $fn-color-yellow-50, "color": $fn-color-yellow-600),
-  "crimson": ("background": $fn-color-crimson-50, "color": $fn-color-crimson-600),
-  "lime": ("background": $fn-color-lime-50, "color": $fn-color-lime-600),
-  "indigo": ("background": $fn-color-indigo-50, "color": $fn-color-indigo-600),
-  "grey": ("background": $fn-color-grey-50, "color": $fn-color-grey-700),
-  "cyan": ("background": $fn-color-cyan-50, "color": $fn-color-cyan-600),
-  "pink": ("background": $fn-color-pink-50, "color": $fn-color-pink-600),
-  "teal": ("background": $fn-color-teal-50, "color": $fn-color-teal-600)
+  "mango": ("background": $fn-color-mango-2, "color": $fn-color-mango-8),
+  "red": ("background": $fn-color-red-2, "color": $fn-color-red-8),
+  "raspberry": ("background": $fn-color-raspberry-2, "color": $fn-color-raspberry-8),
+  "pink": ("background": $fn-color-pink-2, "color": $fn-color-pink-8),
+  "indigo": ("background": $fn-color-indigo-2, "color": $fn-color-indigo-8),
+  "blue": ("background": $fn-color-blue-2, "color": $fn-color-blue-8),
+  "teal": ("background": $fn-color-teal-2, "color": $fn-color-teal-8),
+  "green": ("background": $fn-color-green-2, "color": $fn-color-green-8),
+  "cyan": ("background": $fn-color-cyan-2, "color": $fn-color-cyan-8),
+  "grey": ("background": $fn-color-grey-2, "color": $fn-color-grey-8),
+  "display": ("background": transparent, "color": $fn-color-grey-10),
 );
 
 .#{$block} {

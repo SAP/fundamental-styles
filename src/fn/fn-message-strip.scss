@@ -17,8 +17,8 @@ $block: #{$fn-namespace}-message-strip;
   @include fn-set-paddings-x(0.5rem, 0.5rem);
   @include fn-flex-vertical-center();
 
-  background-color: $fn-color-blue-50;
-  color: $fn-color-grey-700;
+  background-color: $fn-color-blue-1;
+  color: $fn-color-grey-9;
   min-height: 1.75rem;
   min-width: 20.5rem;
   width: fit-content;
@@ -37,7 +37,7 @@ $block: #{$fn-namespace}-message-strip;
     background-color: transparent;
 
     &::before {
-      color: $fn-color-blue-500;
+      color: $fn-color-blue-7;
       display: flex;
       margin-top: 0.125rem;
     }
@@ -49,7 +49,7 @@ $block: #{$fn-namespace}-message-strip;
     @include fn-set-square(0); // removes background / box-shadow from button class
 
     justify-content: end;
-    color: $fn-color-grey-500;
+    color: $fn-color-grey-7;
 
     @include fn-icon-class() {
       &::before {
@@ -59,14 +59,14 @@ $block: #{$fn-namespace}-message-strip;
   }
 
   &--success {
-    @include fn-message-strip-states($fn-color-green-50, $fn-color-green-500);
+    @include fn-message-strip-states($fn-color-green-1, $fn-color-green-7);
   }
 
   &--warning {
-    @include fn-message-strip-states($fn-color-orange-50, $fn-color-orange-400);
+    @include fn-message-strip-states($fn-color-mango-1, $fn-color-mango-6);
   }
 
   &--error {
-    @include fn-message-strip-states($fn-color-red-50, $fn-color-red-500);
+    @include fn-message-strip-states($fn-color-red-1, $fn-color-red-7);
   }
 }

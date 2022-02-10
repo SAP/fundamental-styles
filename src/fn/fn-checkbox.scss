@@ -51,16 +51,16 @@ $block: #{$fn-namespace}-checkbox;
   @include fn-readonly() {
     .#{$block}__input ~ .#{$block}__checkmark {
       pointer-events: none;
-      border: 0.0625rem dashed $fn-color-grey-500;
+      border: 0.0625rem dashed $fn-color-grey-7;
     }
 
     .#{$block}__input:checked ~ .#{$block}__checkmark {
-      background: $fn-color-grey-50;
-      border: 0.0625rem dashed $fn-color-grey-500;
+      background: $fn-color-grey-1;
+      border: 0.0625rem dashed $fn-color-grey-7;
     }
 
     .#{$block}__input:checked ~ .#{$block}__checkmark::after {
-      color: $fn-color-grey-500;
+      color: $fn-color-grey-7;
     }
   }
 
@@ -68,12 +68,12 @@ $block: #{$fn-namespace}-checkbox;
     pointer-events: none;
 
     .#{$block}__checkmark {
-      border-color: $fn-color-grey-700;
+      border-color: $fn-color-grey-9;
     }
 
     .#{$block}__input:checked ~ .#{$block}__checkmark {
-      background: $fn-color-grey-700;
-      border-color: $fn-color-grey-700;
+      background: $fn-color-grey-9;
+      border-color: $fn-color-grey-9;
     }
   }
 
@@ -88,8 +88,8 @@ $block: #{$fn-namespace}-checkbox;
     position: absolute;
 
     &:checked ~ .#{$block}__checkmark {
-      background: $fn-color-blue-500;
-      border-color: $fn-color-blue-500;
+      background: $fn-color-blue-7;
+      border-color: $fn-color-blue-7;
     }
 
     &:checked ~ .#{$block}__checkmark::after {
@@ -99,16 +99,16 @@ $block: #{$fn-namespace}-checkbox;
     @include fn-readonly() {
       & ~ .#{$block}__checkmark {
         pointer-events: none;
-        border: 0.0625rem dashed $fn-color-grey-500;
+        border: 0.0625rem dashed $fn-color-grey-7;
       }
 
       &:checked ~ .#{$block}__checkmark {
-        background: $fn-color-grey-50;
-        border: 0.0625rem dashed $fn-color-grey-500;
+        background: $fn-color-grey-1;
+        border: 0.0625rem dashed $fn-color-grey-7;
       }
 
       &:checked ~ .#{$block}__checkmark::after {
-        color: $fn-color-grey-500;
+        color: $fn-color-grey-7;
       }
     }
   }
@@ -121,8 +121,8 @@ $block: #{$fn-namespace}-checkbox;
     width: 1.125rem;
     height: 1.125rem;
     border-radius: 0.25rem;
-    background-color: $fn-color-grey-50;
-    border: 0.125rem solid $fn-color-grey-500;
+    background-color: $fn-color-grey-1;
+    border: 0.125rem solid $fn-color-grey-7;
 
     &::after {
       opacity: 0;
@@ -138,6 +138,6 @@ $block: #{$fn-namespace}-checkbox;
     @include fn-reset();
     @include fn-set-margin-left($fn-margin-xs);
 
-    color: $fn-color-grey-700;
+    color: $fn-color-grey-9;
   }
 }

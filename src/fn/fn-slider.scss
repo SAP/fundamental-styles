@@ -19,7 +19,7 @@ $slider-height: 0.5rem;
   border-radius: 50%;
   width: $slider-dot-size;
   height: $slider-dot-size;
-  background: $fn-color-grey-500;
+  background: $fn-color-grey-7;
 
   @content;
 }
@@ -30,7 +30,7 @@ $slider-height: 0.5rem;
   width: 100%;
   position: relative;
   height: $slider-height;
-  background: $fn-color-grey-100;
+  background: $fn-color-grey-2;
   border-radius: $fn-border-radius-4;
 
   &::after {
@@ -75,7 +75,7 @@ $slider-height: 0.5rem;
     top: 0.4375rem;
     height: 0.75rem;
     position: absolute;
-    background: $fn-color-blue-500;
+    background: $fn-color-blue-7;
     border-radius: $fn-border-radius-6;
   }
 
@@ -98,7 +98,7 @@ $slider-height: 0.5rem;
 
     [class*='sap-icon'] {
       font-size: 0.75rem;
-      color: $fn-color-blue-500;
+      color: $fn-color-blue-7;
     }
 
     [class*='sap-icon']:first-child {

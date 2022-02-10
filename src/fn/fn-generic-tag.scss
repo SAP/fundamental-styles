@@ -55,7 +55,7 @@ $block: #{$fn-namespace}-generic-tag;
 .#{$block} {
   @include fn-reset();
   @include fn-flex-vertical-center();
-  @include fn-generic-tag-states($fn-shadow-grey-level-0, $fn-shadow-grey-level-1, $fn-focus-outline-shadow-grey, $fn-color-grey-500);
+  @include fn-generic-tag-states($fn-shadow-grey-level-0, $fn-shadow-grey-level-1, $fn-focus-outline-shadow-grey, $fn-color-grey-7);
 
   cursor: pointer;
   height: 1.75rem;
@@ -69,7 +69,7 @@ $block: #{$fn-namespace}-generic-tag;
     @include fn-reset();
     @include fn-ellipsis();
 
-    color: $fn-color-grey-700;
+    color: $fn-color-grey-9;
 
     & + .#{$block}__number {
       @include fn-set-margin-left(1rem);
@@ -101,18 +101,18 @@ $block: #{$fn-namespace}-generic-tag;
   }
 
   &--positive {
-    @include fn-generic-tag-states($fn-shadow-green-level-0, $fn-shadow-green-level-1, $fn-focus-outline-shadow-green, $fn-color-green-500);
+    @include fn-generic-tag-states($fn-shadow-green-level-0, $fn-shadow-green-level-1, $fn-focus-outline-shadow-green, $fn-color-green-7);
   }
 
   &--critical {
-    @include fn-generic-tag-states($fn-shadow-orange-level-0, $fn-shadow-orange-level-1, $fn-focus-outline-shadow-orange, $fn-color-orange-400);
+    @include fn-generic-tag-states($fn-shadow-orange-level-0, $fn-shadow-orange-level-1, $fn-focus-outline-shadow-orange, $fn-color-mango-6);
   }
 
   &--negative {
-    @include fn-generic-tag-states($fn-shadow-red-level-0, $fn-shadow-red-level-1, $fn-focus-outline-shadow-red, $fn-color-red-500);
+    @include fn-generic-tag-states($fn-shadow-red-level-0, $fn-shadow-red-level-1, $fn-focus-outline-shadow-red, $fn-color-red-7);
   }
 
   &--info {
-    @include fn-generic-tag-states($fn-shadow-blue-level-0, $fn-shadow-blue-level-1, $fn-focus-outline-shadow-blue, $fn-color-blue-500);
+    @include fn-generic-tag-states($fn-shadow-blue-level-0, $fn-shadow-blue-level-1, $fn-focus-outline-shadow-blue, $fn-color-blue-7);
   }
 }

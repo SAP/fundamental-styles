@@ -39,10 +39,10 @@ $block: #{$fn-namespace}-search;
     z-index: 1;
     width: 100%;
     border: none;
-    color: $fn-color-grey-700;
+    color: $fn-color-grey-9;
     height: $fn-element-height;
-    background: $fn-color-grey-50;
-    caret-color: $fn-color-grey-700;
+    background: $fn-color-grey-1;
+    caret-color: $fn-color-grey-9;
     border-radius: $fn-border-radius-large;
 
     &::placeholder {
@@ -85,7 +85,7 @@ $block: #{$fn-namespace}-search;
     z-index: 10;
     line-height: 1;
     position: absolute;
-    color: $fn-color-grey-500;
+    color: $fn-color-grey-7;
 
     &:first-child {
       @include fn-set-square(1.25rem);

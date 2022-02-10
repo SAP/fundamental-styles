@@ -6,17 +6,17 @@ $fn-tabs-item-height: 1.75rem;
 // Values for Semantic Tabs
 $fn-tabs-base: (
   "positive": (
-    "color": $fn-color-green-500,
+    "color": $fn-color-green-7,
     "shadowHover": $fn-shadow-green-level-1,
     "shadowFocus": $fn-focus-outline-shadow-green
   ),
   "critical": (
-    "color": $fn-color-orange-400,
+    "color": $fn-color-mango-6,
     "shadowHover": $fn-shadow-orange-level-1,
     "shadowFocus": $fn-focus-outline-shadow-orange
   ),
   "negative": (
-    "color": $fn-color-red-500,
+    "color": $fn-color-red-7,
     "shadowHover": $fn-shadow-red-level-1,
     "shadowFocus": $fn-focus-outline-shadow-red
   )
@@ -120,7 +120,7 @@ $fn-tabs-base: (
     overflow: hidden;
     border-bottom: none;
     border-radius: $fn-border-radius-2 $fn-border-radius-2 0 0;
-    border-top: $fn-border-width $fn-border-style $fn-color-blue-500;
+    border-top: $fn-border-width $fn-border-style $fn-color-blue-7;
   }
 }
 
@@ -223,7 +223,7 @@ $fn-tabs-base: (
       @include fn-set-margin-left(0.75rem);
     }
 
-    @include fn-tabs-states($fn-shadow-grey-level-1, $fn-focus-outline-shadow-grey, $fn-color-grey-500);
+    @include fn-tabs-states($fn-shadow-grey-level-1, $fn-focus-outline-shadow-grey, $fn-color-grey-7);
 
     @include fn-disabled() {
       pointer-events: none;
@@ -232,10 +232,10 @@ $fn-tabs-base: (
 
     // Tab Item - Selected State
     @include fn-tabs-item-selected() {
-      @include fn-tabs-states($fn-shadow-blue-level-1, $fn-focus-outline-shadow-blue, $fn-color-blue-500);
+      @include fn-tabs-states($fn-shadow-blue-level-1, $fn-focus-outline-shadow-blue, $fn-color-blue-7);
 
       &::before {
-        border-bottom-color: $fn-color-blue-500;
+        border-bottom-color: $fn-color-blue-7;
       }
     }
   }

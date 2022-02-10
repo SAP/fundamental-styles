@@ -7,10 +7,10 @@ $fn-notification-text-padding: 0.75rem;
 $fn-notification-border: 0.125rem solid;
 
 $notification-colors: (
-  "positive": ("color": $fn-color-green-500),
-  "critical": ("color":  $fn-color-orange-400),
-  "negative": ("color":  $fn-color-red-500),
-  "info": ("color":  $fn-color-blue-500)
+  "positive": ("color": $fn-color-green-7),
+  "critical": ("color":  $fn-color-mango-6),
+  "negative": ("color":  $fn-color-red-7),
+  "info": ("color":  $fn-color-blue-7)
 );
 
 .#{$block} {
@@ -43,7 +43,7 @@ $notification-colors: (
       @include fn-reset();
       @include fn-set-margin-left($fn-notification-text-padding);
 
-      color: $fn-color-grey-700;
+      color: $fn-color-grey-9;
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
@@ -52,7 +52,7 @@ $notification-colors: (
       @include fn-reset();
       @include fn-set-margin-left($fn-notification-text-padding);
 
-      color: $fn-color-grey-500;
+      color: $fn-color-grey-7;
     }
   }
 

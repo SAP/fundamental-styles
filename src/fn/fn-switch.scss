@@ -49,12 +49,12 @@ $fn-switch-slider-focus-offset: 0.25rem;
     opacity: 0;
 
     &:checked + .#{$block}__slider {
-      background-color: $fn-color-blue-500;
+      background-color: $fn-color-blue-7;
     }
 
     &:checked + .#{$block}__slider::before {
       content: "\e05b";
-      color: $fn-color-blue-500;
+      color: $fn-color-blue-7;
       transform: translateX($fn-switch-slider-translateX);
       -ms-transform: translateX($fn-switch-slider-translateX);
       -webkit-transform: translateX($fn-switch-slider-translateX);
@@ -67,7 +67,7 @@ $fn-switch-slider-focus-offset: 0.25rem;
     }
 
     @include fn-focus-visible() {
-      @include fn-switch-set-states($fn-color-grey-500, $fn-color-blue-500, none);
+      @include fn-switch-set-states($fn-color-grey-7, $fn-color-blue-7, none);
 
       & + .#{$block}__slider {
         box-shadow: $fn-focus-outline-shadow-grey, $fn-focus-outline-inner-shadow;
@@ -107,7 +107,7 @@ $fn-switch-slider-focus-offset: 0.25rem;
     }
 
     @include fn-is-focus() {
-      @include fn-switch-set-states($fn-color-grey-500, $fn-color-blue-500, none);
+      @include fn-switch-set-states($fn-color-grey-7, $fn-color-blue-7, none);
 
       & + .#{$block}__slider {
         box-shadow: $fn-focus-outline-shadow-grey, $fn-focus-outline-inner-shadow;
@@ -147,7 +147,7 @@ $fn-switch-slider-focus-offset: 0.25rem;
     }
 
     @include fn-not-focus-visible() {
-      @include fn-switch-set-states($fn-color-grey-500, $fn-color-blue-500, none);
+      @include fn-switch-set-states($fn-color-grey-7, $fn-color-blue-7, none);
 
       & + .#{$block}__slider {
         box-shadow: none;
@@ -191,7 +191,7 @@ $fn-switch-slider-focus-offset: 0.25rem;
     cursor: pointer;
     position: absolute;
     border-radius: 0.9375rem;
-    background-color: $fn-color-grey-500;
+    background-color: $fn-color-grey-7;
     transition: $fn-switch-slider-transition;
     -webkit-transition: $fn-switch-slider-transition;
 
@@ -206,7 +206,7 @@ $fn-switch-slider-focus-offset: 0.25rem;
       position: absolute;
       border-radius: 0.75rem;
       font-family: "SAP-icons";
-      color: $fn-color-grey-500;
+      color: $fn-color-grey-7;
       top: $fn-switch-slider-offset;
       bottom: $fn-switch-slider-offset;
       background-color: $fn-color-white;

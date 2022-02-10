@@ -24,7 +24,7 @@ $block: #{$fn-namespace}-token;
 
     line-height: 1rem;
     font-size: 0.75rem;
-    color: $fn-color-grey-700;
+    color: $fn-color-grey-9;
   }
 
   &__icon {
@@ -35,7 +35,7 @@ $block: #{$fn-namespace}-token;
     [class*='sap-icon'] {
       font-size: 0.625rem;
       line-height: 1;
-      color: $fn-color-grey-500;
+      color: $fn-color-grey-7;
     }
   }
 
@@ -50,7 +50,7 @@ $block: #{$fn-namespace}-token;
   }
 
   @include fn-focus-visible() {
-    background: $fn-color-blue-100;
+    background: $fn-color-blue-2;
     box-shadow: $fn-focus-outline-shadow-blue;
   }
 
