@@ -60,7 +60,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   &__header {
     @include fd-reset();
     @include fd-flex();
-    @include fake-card-outline();
+
+    &:not(.#{$block}__header--non-interactive) {
+      @include fake-card-outline();
+    }
 
     padding: 1rem;
     background: $fd-card-default-body-background-color;
