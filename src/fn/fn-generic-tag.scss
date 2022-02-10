@@ -105,7 +105,7 @@ $block: #{$fn-namespace}-generic-tag;
   }
 
   &--critical {
-    @include fn-generic-tag-states($fn-shadow-orange-level-0, $fn-shadow-orange-level-1, $fn-focus-outline-shadow-orange, $fn-color-mango-6);
+    @include fn-generic-tag-states($fn-shadow-mango-level-0, $fn-shadow-mango-level-1, $fn-focus-outline-shadow-mango, $fn-color-mango-6);
   }
 
   &--negative {

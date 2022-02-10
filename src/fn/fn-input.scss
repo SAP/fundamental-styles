@@ -168,7 +168,7 @@ $block: #{$fn-namespace}-input;
   }
 
   &--critical {
-    @include fn-input-base-semantics($fn-color-mango-1, $fn-color-mango-6, $fn-shadow-orange-level-1);
+    @include fn-input-base-semantics($fn-color-mango-1, $fn-color-mango-6, $fn-shadow-mango-level-1);
   }
 
   &--negative {

@@ -398,35 +398,35 @@ $block: #{$fn-namespace}-button;
 
   // CRITICAL BUTTON
   &--critical {
-    @include fn-button-base($fn-color-white, $fn-color-mango-6, $fn-shadow-orange-level-0);
+    @include fn-button-base($fn-color-white, $fn-color-mango-6, $fn-shadow-mango-level-0);
 
     @include fn-hover() {
-      @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-orange-level-1);
+      @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-mango-level-1);
 
       @include fn-active() {
-        @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-orange-level-0);
+        @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-mango-level-0);
       }
     }
 
     @include fn-active() {
-      @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-orange-level-0);
+      @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-mango-level-0);
     }
 
     @include fn-is-focus() {
       @include fn-button-base($fn-color-white, $fn-color-mango-6, none);
 
       border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
+      box-shadow: $fn-focus-outline-shadow-mango, $fn-focus-outline-inner-shadow;
     }
 
     @include fn-not-focus-visible() {
-      @include fn-button-base($fn-color-white, $fn-color-mango-6, $fn-shadow-orange-level-0);
+      @include fn-button-base($fn-color-white, $fn-color-mango-6, $fn-shadow-mango-level-0);
 
       @include fn-hover() {
-        @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-orange-level-1);
+        @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-mango-level-1);
 
         @include fn-active() {
-          @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-orange-level-0);
+          @include fn-button-base($fn-color-white, $fn-color-mango-8, $fn-shadow-mango-level-0);
         }
       }
     }
@@ -435,44 +435,44 @@ $block: #{$fn-namespace}-button;
       @include fn-button-base($fn-color-white, $fn-color-mango-6, none);
 
       border-color: $fn-color-white;
-      box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
+      box-shadow: $fn-focus-outline-shadow-mango, $fn-focus-outline-inner-shadow;
     }
 
     @include fn-disabled() {
-      @include fn-button-base($fn-color-white, $fn-color-mango-6, $fn-shadow-orange-level-0);
+      @include fn-button-base($fn-color-white, $fn-color-mango-6, $fn-shadow-mango-level-0);
     }
 
     // CRITICAL EMPHASIZED BUTTON
     &.#{$block}--emphasized {
-      @include fn-button-base($fn-color-mango-6, $fn-color-white, $fn-shadow-orange-level-0);
+      @include fn-button-base($fn-color-mango-6, $fn-color-white, $fn-shadow-mango-level-0);
 
       @include fn-hover() {
-        @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-orange-level-1);
+        @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-mango-level-1);
 
         @include fn-active() {
-          @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-orange-level-0);
+          @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-mango-level-0);
         }
       }
 
       @include fn-active() {
-        @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-orange-level-0);
+        @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-mango-level-0);
       }
 
       @include fn-is-focus() {
         @include fn-button-base($fn-color-mango-6,  $fn-color-white, none);
 
         border-color: $fn-color-white;
-        box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
+        box-shadow: $fn-focus-outline-shadow-mango, $fn-focus-outline-inner-shadow;
       }
 
       @include fn-not-focus-visible() {
-        @include fn-button-base($fn-color-mango-6, $fn-color-white, $fn-shadow-orange-level-0);
+        @include fn-button-base($fn-color-mango-6, $fn-color-white, $fn-shadow-mango-level-0);
 
         @include fn-hover() {
-          @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-orange-level-1);
+          @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-mango-level-1);
 
           @include fn-active() {
-            @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-orange-level-0);
+            @include fn-button-base($fn-color-mango-8, $fn-color-white, $fn-shadow-mango-level-0);
           }
         }
       }
@@ -481,11 +481,11 @@ $block: #{$fn-namespace}-button;
         @include fn-button-base($fn-color-mango-6,  $fn-color-white, none);
 
         border-color: $fn-color-white;
-        box-shadow: $fn-focus-outline-shadow-orange, $fn-focus-outline-inner-shadow;
+        box-shadow: $fn-focus-outline-shadow-mango, $fn-focus-outline-inner-shadow;
       }
 
       @include fn-disabled() {
-        @include fn-button-base($fn-color-mango-6, $fn-color-white, $fn-shadow-orange-level-0);
+        @include fn-button-base($fn-color-mango-6, $fn-color-white, $fn-shadow-mango-level-0);
       }
     }
   }
