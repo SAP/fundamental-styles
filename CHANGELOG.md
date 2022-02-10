@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.0 (2022-02-10)
+
+
+### Features
+
+* **fn:** introduce fn-table [ci visual] ([#3165](https://github.com/SAP/fundamental-styles/issues/3165)) ([65f7a79](https://github.com/SAP/fundamental-styles/commit/65f7a79d29f04f21b0c07956e8d418278ca54206))
+
 ### [0.21.1](https://github.com/SAP/fundamental-styles/compare/v0.21.1-rc.6...v0.21.1) (2022-02-09)
 
 ### 0.21.1-rc.6 (2022-02-09)
