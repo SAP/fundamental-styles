@@ -166,7 +166,7 @@ exports[`Storyshots FN Components/List Byline List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--ghost"
+          class="fn-button fn-button--icon-only fn-button--secondary"
         >
           
                     
@@ -179,7 +179,7 @@ exports[`Storyshots FN Components/List Byline List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--ghost"
+          class="fn-button fn-button--icon-only fn-button--secondary"
         >
           
                     
@@ -236,7 +236,7 @@ exports[`Storyshots FN Components/List Byline List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--transparent"
+          class="fn-button fn-button--icon-only fn-button--layout"
         >
           
                     
@@ -288,7 +288,7 @@ exports[`Storyshots FN Components/List Byline List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--transparent"
+          class="fn-button fn-button--icon-only fn-button--layout"
         >
           
                     
@@ -570,7 +570,7 @@ exports[`Storyshots FN Components/List List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--ghost"
+          class="fn-button fn-button--icon-only fn-button--secondary"
         >
           
                     
@@ -583,7 +583,7 @@ exports[`Storyshots FN Components/List List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--ghost"
+          class="fn-button fn-button--icon-only fn-button--secondary"
         >
           
                     
@@ -620,7 +620,7 @@ exports[`Storyshots FN Components/List List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--transparent"
+          class="fn-button fn-button--icon-only fn-button--layout"
         >
           
                     
@@ -715,7 +715,7 @@ exports[`Storyshots FN Components/List List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--transparent"
+          class="fn-button fn-button--icon-only fn-button--layout"
         >
           
                     
@@ -827,7 +827,7 @@ exports[`Storyshots FN Components/List List 1`] = `
         
                 
         <button
-          class="fn-button fn-button--icon-only fn-button--transparent"
+          class="fn-button fn-button--icon-only fn-button--layout"
         >
           
                     

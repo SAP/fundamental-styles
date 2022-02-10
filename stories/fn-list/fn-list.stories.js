@@ -16,10 +16,10 @@ export const Primary = () => `
         <li class="fn-list__item" tabindex="0">
             <span class="fn-list__text">List Item With Buttons</span>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--secondary">
                     <span class="sap-icon sap-icon--edit"></span>
                 </button>
-                <button class="fn-button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--secondary">
                     <span class="sap-icon sap-icon--decline"></span>
                 </button>
             </div>
@@ -27,7 +27,7 @@ export const Primary = () => `
         <li class="fn-list__item" tabindex="0">
             <span class="fn-list__text">List Item With Navigation Arrow</span>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                <button class="fn-button fn-button--icon-only fn-button--layout">
                     <span class="sap-icon sap-icon--navigation-right-arrow"></span>
                 </button>
             </div>
@@ -47,7 +47,7 @@ export const Primary = () => `
         <li class="fn-list__item fn-list__item--info-bar" tabindex="0">
             <span class="fn-list__text">Info Text</span>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                <button class="fn-button fn-button--icon-only fn-button--layout">
                     <span class="sap-icon sap-icon--decline"></span>
                 </button>
             </div>
@@ -69,7 +69,7 @@ export const Primary = () => `
         <li class="fn-list__item fn-list__item--info-bar is-disabled" aria-disabled="true">
             <span class="fn-list__text">Disabled Info Bar</span>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                <button class="fn-button fn-button--icon-only fn-button--layout">
                     <span class="sap-icon sap-icon--decline"></span>
                 </button>
             </div>
@@ -122,10 +122,10 @@ export const Byline = () => `
                 <span class="fn-list__byline">List Item Byline</span>
             </div>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--secondary">
                     <span class="sap-icon sap-icon--edit"></span>
                 </button>
-                <button class="fn-button fn-button--icon-only fn-button--ghost">
+                <button class="fn-button fn-button--icon-only fn-button--secondary">
                     <span class="sap-icon sap-icon--decline"></span>
                 </button>
             </div>
@@ -137,7 +137,7 @@ export const Byline = () => `
             </div>
             <div class="fn-list__end-container">
                 <span>42</span>
-                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                <button class="fn-button fn-button--icon-only fn-button--layout">
                     <span class="sap-icon sap-icon--navigation-right-arrow"></span>
                 </button>
             </div>
@@ -148,7 +148,7 @@ export const Byline = () => `
                 <span class="fn-list__byline">List Item Byline</span>
             </div>
             <div class="fn-list__end-container">
-                <button class="fn-button fn-button--icon-only fn-button--transparent">
+                <button class="fn-button fn-button--icon-only fn-button--layout">
                     <span class="sap-icon sap-icon--navigation-right-arrow"></span>
                 </button>
             </div>
