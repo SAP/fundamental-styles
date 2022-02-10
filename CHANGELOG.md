@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.1 (2022-02-10)
+
+
+### Bug Fixes
+
+* **styles:** card header non-interactive outline ([#3171](https://github.com/SAP/fundamental-styles/issues/3171)) ([50fd2cf](https://github.com/SAP/fundamental-styles/commit/50fd2cff12862d8afccb2ff74f311df293831602))
+
 ### 0.21.2-rc.0 (2022-02-10)
 
 
