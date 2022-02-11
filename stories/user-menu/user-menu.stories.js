@@ -2,8 +2,7 @@ export default {
     title: 'Components/User Menu',
     parameters: {
         description: `The user menu can be used as a standalone component, linked to another component, or closely connected to the ShellBar.<br>
-            The user menu displays an avatar button that triggers a Popover.<br>
-            The user menu can have multi-level navigation.
+It displays an avatar button that triggers a Popover. The user menu can have multi-level navigation.
         `,
         tags: ['f3', 'theme'],
         components: ['user-menu', 'shellbar', 'popover', 'notification', 'tabs', 'avatar', 'list', 'input', 'bar', 'button', 'icon', 'title', 'badge', 'input-group']
@@ -372,7 +371,7 @@ Navigation.storyName = 'In-Place Navigation';
 Navigation.parameters = {
     docs: {
         description: {
-            story: `Menu with an sub-navigation that can be used for items that can be further grouped under a level but not necessarily visible to user always.<br>
+            story: `The User menu can be used for items that can be further grouped under a level but not always visible to the user.<br>
         Follow the same template for the sub-navigation as you would for a normal menu. The same Popover body and footer work for the sub-navigation items too.
 `
         }
@@ -435,7 +434,7 @@ export const ThirdPartyContent = () => `<div class="fddocs-container" style="mar
                         </a>
                     </li>
                     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
+                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
                             <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
                             <span class="fd-list__title">Proxy User</span>
                         </a>
@@ -447,7 +446,7 @@ export const ThirdPartyContent = () => `<div class="fddocs-container" style="mar
                         </a>
                     </li>
                     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator">
+                        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected">
                             <i role="presentation" class="fd-list__icon sap-icon--ui-notifications"></i>
                             <span class="fd-list__title">Notifications</span>
 
@@ -756,7 +755,16 @@ export const ThirdPartyContent = () => `<div class="fddocs-container" style="mar
 </div>
 `;
 
+
+
 ThirdPartyContent.storyName = '3rd Party Content';
+ThirdPartyContent.parameters = {
+    docs: {
+        description: {
+            story: 'User menu displays a sub-navigation component which is populated with data through a 3rd party. '
+        }
+    }
+};
 
 export const Compact = () => `<div class="fddocs-container" style="margin-bottom: 550px">
     <div class="fd-popover fd-popover--right  fd-user-menu fd-user-menu--compact">
@@ -983,3 +991,11 @@ export const Compact = () => `<div class="fddocs-container" style="margin-bottom
     </div>
 </div>
 `;
+
+Compact.parameters = {
+    docs: {
+        description: {
+            story: 'User menu can be displayed in compact mode by adding the `--compact` modifier to the `fd-user-menu` component as well as the `fd-user-menu__body`.'
+        }
+    }
+};
