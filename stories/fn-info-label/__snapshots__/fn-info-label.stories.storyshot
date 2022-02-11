@@ -12,7 +12,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
-        row-gap: 0.1rem;
+        row-gap: 1rem;
         background: white;
         padding: 1rem;
         justify-items: center;
@@ -29,7 +29,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
     
         
     <span
-      class="fn-info-label fn-info-label--indigo"
+      class="fn-info-label fn-info-label--mango"
     >
       
             
@@ -41,7 +41,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
       <span
         class="fn-info-label__text"
       >
-        State
+        Mango
       </span>
       
         
@@ -49,7 +49,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
     
         
     <span
-      class="fn-info-label fn-info-label--crimson"
+      class="fn-info-label fn-info-label--red"
     >
       
             
@@ -61,7 +61,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
       <span
         class="fn-info-label__text"
       >
-        State
+        Red
       </span>
       
         
@@ -69,7 +69,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
     
         
     <span
-      class="fn-info-label fn-info-label--cyan"
+      class="fn-info-label fn-info-label--raspberry"
     >
       
             
@@ -81,27 +81,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
       <span
         class="fn-info-label__text"
       >
-        State
-      </span>
-      
-        
-    </span>
-    
-        
-    <span
-      class="fn-info-label fn-info-label--lime"
-    >
-      
-            
-      <span
-        class="fn-info-label__circle"
-      />
-      
-            
-      <span
-        class="fn-info-label__text"
-      >
-        State
+        Raspberry
       </span>
       
         
@@ -121,7 +101,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
       <span
         class="fn-info-label__text"
       >
-        State
+        Pink
       </span>
       
         
@@ -129,7 +109,7 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
     
         
     <span
-      class="fn-info-label fn-info-label--yellow"
+      class="fn-info-label fn-info-label--indigo"
     >
       
             
@@ -141,7 +121,27 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
       <span
         class="fn-info-label__text"
       >
-        State
+        Indigo
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--blue"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        Blue
       </span>
       
         
@@ -161,7 +161,47 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
       <span
         class="fn-info-label__text"
       >
-        State
+        Teal
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--green"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        Green
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--cyan"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        Cyan
       </span>
       
         
@@ -181,7 +221,27 @@ exports[`Storyshots FN Components/Info Label Info Label 1`] = `
       <span
         class="fn-info-label__text"
       >
-        State
+        Grey
+      </span>
+      
+        
+    </span>
+    
+        
+    <span
+      class="fn-info-label fn-info-label--display"
+    >
+      
+            
+      <span
+        class="fn-info-label__circle"
+      />
+      
+            
+      <span
+        class="fn-info-label__text"
+      >
+        Display
       </span>
       
         

@@ -16,7 +16,7 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
     height: 2.75rem;
     min-width: 20rem;
     background: $fn-color-white;
-    box-shadow: $fn-list-table-item-bottom-box-shadow $fn-color-grey-100;
+    box-shadow: $fn-list-table-item-bottom-box-shadow $fn-color-grey-2;
   }
 
   &__group-header {
@@ -35,7 +35,7 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
     @include fn-hover() {
       @include fn-transition();
 
-      background: $fn-color-grey-50;
+      background: $fn-color-grey-1;
     }
 
     @include fn-focus-visible() {
@@ -48,18 +48,18 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
       @include fn-hover() {
         @include fn-transition();
 
-        background: $fn-color-grey-50;
+        background: $fn-color-grey-1;
       }
     }
 
     &:not(.fn-list__item--info-bar) {
       @include fn-focus-visible() {
-        box-shadow: $fn-list-item-box-shadow $fn-color-blue-500;
+        box-shadow: $fn-list-item-box-shadow $fn-color-blue-7;
       }
     }
 
     @include fn-selected() {
-      background: $fn-color-blue-100;
+      background: $fn-color-blue-2;
       box-shadow: $fn-list-table-item-bottom-box-shadow #0070f1;
 
       @include fn-hover() {
@@ -74,7 +74,7 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
     .#{$block}__icon {
       @include fn-set-margins-x(0.25rem, 0.625rem);
 
-      color: $fn-color-grey-500;
+      color: $fn-color-grey-7;
     }
 
     &--has-checkbox {
@@ -97,33 +97,33 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
     .#{$block}__text {
       @include fn-reset();
 
-      color: $fn-color-grey-700;
+      color: $fn-color-grey-9;
       text-overflow: ellipsis;
     }
 
     &--info-bar {
-      background: $fn-color-teal-100;
+      background: $fn-color-teal-2;
       box-shadow: none;
 
       @include fn-hover() {
         @include fn-transition();
 
-        background: $fn-color-teal-50;
+        background: $fn-color-teal-1;
       }
 
       @include fn-readonly() {
-        background: $fn-color-grey-50;
+        background: $fn-color-grey-1;
       }
 
       @include fn-focus-visible() {
-        box-shadow: $fn-list-item-box-shadow $fn-color-teal-500;
+        box-shadow: $fn-list-item-box-shadow $fn-color-teal-7;
       }
 
       @include fn-not-focus-visible() {
         @include fn-hover() {
           @include fn-transition();
 
-          background: $fn-color-teal-50;
+          background: $fn-color-teal-1;
         }
       }
     }
@@ -153,7 +153,7 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
           @include fn-reset();
 
           font-weight: bold;
-          color: $fn-color-grey-700;
+          color: $fn-color-grey-9;
         }
 
         .#{$block}__byline {
@@ -161,7 +161,7 @@ $fn-list-item-box-shadow: 0 0 0 $fn-list-item-focus-margin;
 
           font-size: 0.75rem;
           line-height: 1rem;
-          color: $fn-color-grey-700;
+          color: $fn-color-grey-9;
         }
       }
     }

@@ -31,7 +31,7 @@ $block: #{$fn-namespace}-nested-button;
     height: 1.125rem;
     font-size: 0.75rem;
     line-height: 1.125rem;
-    color: $fn-color-grey-500;
+    color: $fn-color-grey-7;
   }
 
   &--split {
@@ -43,7 +43,7 @@ $block: #{$fn-namespace}-nested-button;
       width: 0.125rem;
       position: absolute;
       border-radius: 0.0625rem;
-      background: $fn-color-grey-500;
+      background: $fn-color-grey-7;
     }
 
     @include fn-rtl() {
@@ -64,14 +64,14 @@ $block: #{$fn-namespace}-nested-button;
 
       @include fn-hover() {
         [class*='sap-icon'] {
-          color: $fn-color-grey-500;
+          color: $fn-color-grey-7;
         }
 
         @include fn-active() {
           background: $fn-color-white;
 
           [class*='sap-icon'] {
-            color: $fn-color-blue-500;
+            color: $fn-color-blue-7;
           }
         }
       }
@@ -80,7 +80,7 @@ $block: #{$fn-namespace}-nested-button;
         background: $fn-color-white;
 
         [class*='sap-icon'] {
-          color: $fn-color-blue-500;
+          color: $fn-color-blue-7;
         }
       }
 
@@ -93,14 +93,14 @@ $block: #{$fn-namespace}-nested-button;
 
         @include fn-hover() {
           [class*='sap-icon'] {
-            color: $fn-color-grey-500;
+            color: $fn-color-grey-7;
           }
 
           @include fn-active() {
             background: $fn-color-white;
 
             [class*='sap-icon'] {
-              color: $fn-color-blue-500;
+              color: $fn-color-blue-7;
             }
           }
         }
@@ -118,7 +118,7 @@ $block: #{$fn-namespace}-nested-button;
   }
 
   @include fn-hover() {
-    background: $fn-color-grey-100;
+    background: $fn-color-grey-2;
 
     &::after {
       content: none;
@@ -126,7 +126,7 @@ $block: #{$fn-namespace}-nested-button;
 
     @include fn-active() {
       box-shadow: none;
-      background: $fn-color-blue-500;
+      background: $fn-color-blue-7;
 
       [class*='sap-icon'] {
         color: $fn-color-white;
@@ -136,7 +136,7 @@ $block: #{$fn-namespace}-nested-button;
 
   @include fn-active() {
     box-shadow: none;
-    background: $fn-color-blue-500;
+    background: $fn-color-blue-7;
 
     [class*='sap-icon'] {
       color: $fn-color-white;
@@ -151,15 +151,15 @@ $block: #{$fn-namespace}-nested-button;
     background: transparent;
 
     [class*='sap-icon'] {
-      color: $fn-color-grey-500;
+      color: $fn-color-grey-7;
     }
 
     @include fn-hover() {
-      background: $fn-color-grey-100;
+      background: $fn-color-grey-2;
 
       @include fn-active() {
         box-shadow: none;
-        background: $fn-color-blue-500;
+        background: $fn-color-blue-7;
 
         [class*='sap-icon'] {
           color: $fn-color-white;
@@ -176,7 +176,7 @@ $block: #{$fn-namespace}-nested-button;
     box-shadow: $fn-focus-outline-shadow-grey;
 
     [class*='sap-icon'] {
-      color: $fn-color-grey-500;
+      color: $fn-color-grey-7;
     }
 
     &::after {

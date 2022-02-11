@@ -55,7 +55,7 @@ $block: #{$fn-namespace}-rating-indicator;
     @include fn-rating-indicator-labels-after-checked() {
       &::before {
         content: '\e065';
-        color: $fn-color-grey-400;
+        color: $fn-color-grey-6;
       }
     }
   }
@@ -64,7 +64,7 @@ $block: #{$fn-namespace}-rating-indicator;
     pointer-events: none;
 
     .#{$block}__label::before {
-      color: $fn-color-grey-400;
+      color: $fn-color-grey-6;
     }
   }
 
@@ -91,7 +91,7 @@ $block: #{$fn-namespace}-rating-indicator;
       content: '\e065';
       font-size: 0.875rem;
       font-family: "SAP-icons";
-      color: $fn-color-orange-400;
+      color: $fn-color-mango-6;
     }
 
     opacity: 1;
@@ -110,7 +110,7 @@ $block: #{$fn-namespace}-rating-indicator;
   @include fn-rating-indicator-labels-after-checked() {
     &::before {
       content: '\e0a1';
-      color: $fn-color-grey-400;
+      color: $fn-color-grey-6;
     }
   }
 

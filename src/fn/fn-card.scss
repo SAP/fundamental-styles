@@ -21,11 +21,11 @@ $block: #{$fn-namespace}-card;
     }
 
     @include fn-focus() {
-      border: 0.125rem solid $fn-color-blue-500;
+      border: 0.125rem solid $fn-color-blue-7;
     }
 
     @include fn-selected() {
-      background-color: $fn-color-blue-100;
+      background-color: $fn-color-blue-2;
       box-shadow: $fn-shadow-blue-level-0;
 
       @include fn-hover() {
@@ -46,8 +46,8 @@ $block: #{$fn-namespace}-card;
       @include fn-set-rectangle(1rem, 1rem);
       @include fn-set-margin-right(0.5rem);
 
-      background: $fn-color-blue-500;
-      border-color: $fn-color-blue-500;
+      background: $fn-color-blue-7;
+      border-color: $fn-color-blue-7;
 
       span {
         color: $fn-color-white;
@@ -66,7 +66,7 @@ $block: #{$fn-namespace}-card;
     @include fn-ellipsis();
 
     font-weight: bolder;
-    color: $fn-color-grey-800;
+    color: $fn-color-grey-10;
     font-size: 1.125rem;
     line-height: 1.375rem;
   }

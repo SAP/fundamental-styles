@@ -18,7 +18,7 @@ $title-font-sizes: (
 
   font-size: 1.125rem;
   font-weight: bold;
-  color: $fn-color-grey-800;
+  color: $fn-color-grey-10;
   line-height: 1.4;
 
   @each $set-name, $set-font in $title-font-sizes {

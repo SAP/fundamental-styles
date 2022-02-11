@@ -24,15 +24,19 @@ export default {
 
 <br><br>
 
-| Color                             | Modifier class        |
-| :-------------------------------- | --------------------- |
-| indigo &nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-avatar--indigo\` |
-| crimson &nbsp;&nbsp;&nbsp;&nbsp;  | \`fn-avatar--crimson\`|
-| cyan &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--cyan\`   |
-| lime  &nbsp;&nbsp;&nbsp;&nbsp;    | \`fn-avatar--lime\`   |
-| pink &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--pink\`   |
-| yellow &nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-avatar--yellow\` |
-| teal &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--teal\`   |
+| Color                             | Modifier class          |
+| :-------------------------------- | ----------------------- |
+| mango &nbsp;&nbsp;&nbsp;&nbsp;    | \`fn-avatar--mango\`    |
+| red &nbsp;&nbsp;&nbsp;&nbsp;      | \`fn-avatar--red\`      |
+| raspberry &nbsp;&nbsp;&nbsp;&nbsp;| \`fn-avatar--raspberry\`|
+| pink &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--pink\`     |
+| indigo &nbsp;&nbsp;&nbsp;&nbsp;   | \`fn-avatar--indigo\`   |
+| blue &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--blue\`     |
+| teal &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--teal\`     |
+| green &nbsp;&nbsp;&nbsp;&nbsp;    | \`fn-avatar--green\`    |
+| cyan &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--cyan\`     |
+| grey &nbsp;&nbsp;&nbsp;&nbsp;     | \`fn-avatar--grey\`     |
+
 
 <br><br>
 
@@ -77,77 +81,58 @@ const localStyles = `
 
 export const RoundedInitialsDecorative = () => `${localStyles}
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--indigo">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--mango">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--l fn-avatar--mango">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--m fn-avatar--mango">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--s fn-avatar--mango">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--mango">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--crimson">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--red">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--l fn-avatar--red">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--m fn-avatar--red">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--s fn-avatar--red">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--red">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--cyan">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--raspberry">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--l fn-avatar--raspberry">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--m fn-avatar--raspberry">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--s fn-avatar--raspberry">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--cyan">
-        <div class="fn-avatar__initials">XS</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--lime">
-        <div class="fn-avatar__initials">XL</div>
-    </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--lime">
-        <div class="fn-avatar__initials">L</div>
-    </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--lime">
-        <div class="fn-avatar__initials">M</div>
-    </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--lime">
-        <div class="fn-avatar__initials">S</div>
-    </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--raspberry">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -172,20 +157,39 @@ export const RoundedInitialsDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--yellow">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--indigo">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--l fn-avatar--indigo">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--m fn-avatar--indigo">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--s fn-avatar--indigo">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--indigo">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--blue">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--blue">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--blue">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--blue">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--blue">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -209,6 +213,62 @@ export const RoundedInitialsDecorative = () => `${localStyles}
     </div>
 </div>
 
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--green">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--green">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--green">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--green">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--green">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--cyan">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--cyan">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--cyan">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--cyan">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--cyan">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--grey">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--grey">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--grey">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--grey">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--grey">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
 `;
 
 RoundedInitialsDecorative.storyName = 'Rounded Decorative Avatar with Initials';
@@ -224,77 +284,58 @@ RoundedInitialsDecorative.parameters = {
 
 export const CircleInitialsDecorative = () => `${localStyles}
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--indigo">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--mango">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--mango">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--mango">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--mango">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--mango">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--crimson">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--red">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--red">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--red">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--red">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--red">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--cyan">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--raspberry">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--raspberry">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--raspberry">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--raspberry">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--cyan">
-        <div class="fn-avatar__initials">XS</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--lime">
-        <div class="fn-avatar__initials">XL</div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--lime">
-        <div class="fn-avatar__initials">L</div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--lime">
-        <div class="fn-avatar__initials">M</div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--lime">
-        <div class="fn-avatar__initials">S</div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--raspberry">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -319,20 +360,39 @@ export const CircleInitialsDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--yellow">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--indigo">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--indigo">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--indigo">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--indigo">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--indigo">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--blue">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--blue">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--blue">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--blue">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--blue">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -356,6 +416,62 @@ export const CircleInitialsDecorative = () => `${localStyles}
     </div>
 </div>
 
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--green">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--green">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--green">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--green">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--green">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--cyan">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--cyan">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--cyan">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--cyan">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--cyan">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--grey">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--grey">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--grey">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--grey">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--grey">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
 `;
 
 CircleInitialsDecorative.storyName = 'Circle Decorative Avatar with Initials';
@@ -378,29 +494,30 @@ export const RoundedIconDecorative = () => `${localStyles}
     <div><b>S</b></div>
     <div><b>XS</b></div>
 </div>
+
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--indigo">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--l fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--m fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--s fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -408,57 +525,28 @@ export const RoundedIconDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--crimson">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--l fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--m fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--s fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--crimson">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--cyan">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--cyan">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--cyan">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--cyan">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -466,28 +554,28 @@ export const RoundedIconDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--lime">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--l fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--m fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--s fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -524,28 +612,57 @@ export const RoundedIconDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--xl fn-avatar--yellow">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--l fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--l fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--m fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--m fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--s fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--s fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--xs fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--xs fn-avatar--indigo">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--blue">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -581,6 +698,92 @@ export const RoundedIconDecorative = () => `${localStyles}
     </div>
 </div>
 
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--xl fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--l fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--m fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--s fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--xs fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
 `;
 
 RoundedIconDecorative.storyName = 'Rounded Decorative Avatar with Icon';
@@ -596,57 +799,28 @@ export const CircleIconDecorative = () => `${localStyles}
     <div><b>XS</b></div>
 </div>
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--indigo">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--indigo">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--indigo">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--crimson">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--crimson">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--crimson">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--crimson">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--mango">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -654,28 +828,28 @@ export const CircleIconDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--cyan">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--cyan">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--red">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -683,28 +857,28 @@ export const CircleIconDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--lime">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--lime">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--raspberry">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -741,28 +915,57 @@ export const CircleIconDecorative = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--yellow">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--indigo">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--yellow">
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--indigo">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--blue">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--blue">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -798,6 +1001,92 @@ export const CircleIconDecorative = () => `${localStyles}
     </div>
 </div>
 
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--green">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--cyan">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xl fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--l fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--s fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--circle fn-avatar--xs fn-avatar--grey">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
 `;
 
 CircleIconDecorative.storyName = 'Circle Decorative Avatar with Icon';
@@ -852,78 +1141,60 @@ export const RoundedInitialsInteractive = () => `${localStyles}
     <div><b>:focus</b></div>
     <div><b>:disabled</b></div>
 </div>
+
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--indigo" tabindex="0">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--indigo is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--mango is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--indigo is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--mango is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--indigo is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--mango is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--indigo is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--mango is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--crimson" tabindex="0">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--red" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--crimson is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--red is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--crimson is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--red is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--crimson is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--red is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--crimson is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--red is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--cyan" tabindex="0">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--cyan is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--raspberry is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--cyan is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--raspberry is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--cyan is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--raspberry is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--cyan is-disabled" tabindex="-1">
-        <div class="fn-avatar__initials">XS</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--lime" tabindex="0">
-        <div class="fn-avatar__initials">XL</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--lime is-hover" tabindex="0">
-        <div class="fn-avatar__initials">L</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--lime is-active" tabindex="0">
-        <div class="fn-avatar__initials">M</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--lime is-focus" tabindex="0">
-        <div class="fn-avatar__initials">S</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--lime is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--raspberry is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -948,20 +1219,39 @@ export const RoundedInitialsInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--yellow" tabindex="0">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--yellow is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--indigo is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--yellow is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--indigo is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--yellow is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--indigo is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--yellow is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--indigo is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--blue is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--blue is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--blue is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--blue is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -985,6 +1275,62 @@ export const RoundedInitialsInteractive = () => `${localStyles}
     </div>
 </div>
 
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--green is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--green is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--green is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--green is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--cyan is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--cyan is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--cyan is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--cyan is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--grey is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--grey is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--grey is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--grey is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
 `;
 
 RoundedInitialsInteractive.storyName = 'Rounded Interactive Avatar with Initials';
@@ -1006,78 +1352,60 @@ export const CircleInitialsInteractive = () => `${localStyles}
     <div><b>:focus</b></div>
     <div><b>:disabled</b></div>
 </div>
+
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--indigo" tabindex="0">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--indigo is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--mango is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--indigo is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--mango is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--indigo is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--mango is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--indigo is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--mango is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--crimson" tabindex="0">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--red" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--crimson is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--red is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--crimson is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--red is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--crimson is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--red is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--crimson is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--red is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--cyan" tabindex="0">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--cyan is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--raspberry is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--cyan is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--raspberry is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--cyan is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--raspberry is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--cyan is-disabled" tabindex="-1">
-        <div class="fn-avatar__initials">XS</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--lime" tabindex="0">
-        <div class="fn-avatar__initials">XL</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--lime is-hover" tabindex="0">
-        <div class="fn-avatar__initials">L</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--lime is-active" tabindex="0">
-        <div class="fn-avatar__initials">M</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--lime is-focus" tabindex="0">
-        <div class="fn-avatar__initials">S</div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--lime is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--raspberry is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -1102,20 +1430,39 @@ export const CircleInitialsInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--yellow" tabindex="0">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__initials">XL</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--yellow is-hover" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--indigo is-hover" tabindex="0">
         <div class="fn-avatar__initials">L</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--yellow is-active" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--indigo is-active" tabindex="0">
         <div class="fn-avatar__initials">M</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--yellow is-focus" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--indigo is-focus" tabindex="0">
         <div class="fn-avatar__initials">S</div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--yellow is-disabled" tabindex="-1">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--indigo is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--blue is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--blue is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--blue is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--blue is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -1135,6 +1482,63 @@ export const CircleInitialsInteractive = () => `${localStyles}
         <div class="fn-avatar__initials">S</div>
     </div>
     <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--teal is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--green is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--green is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--green is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--green is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--cyan is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--cyan is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--cyan is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--cyan is-disabled" tabindex="-1">
+        <div class="fn-avatar__initials">XS</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__initials">XL</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--grey is-hover" tabindex="0">
+        <div class="fn-avatar__initials">L</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--grey is-active" tabindex="0">
+        <div class="fn-avatar__initials">M</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--grey is-focus" tabindex="0">
+        <div class="fn-avatar__initials">S</div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--grey is-disabled" tabindex="-1">
         <div class="fn-avatar__initials">XS</div>
     </div>
 </div>
@@ -1161,29 +1565,30 @@ export const RoundedIconInteractive = () => `${localStyles}
     <div><b>S</b></div>
     <div><b>XS</b></div>
 </div>
+
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--indigo" tabindex="0">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -1191,57 +1596,28 @@ export const RoundedIconInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--crimson" tabindex="0">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--crimson" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--crimson" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--crimson" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--crimson" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--person-placeholder"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--cyan" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -1249,28 +1625,28 @@ export const RoundedIconInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--lime" tabindex="0">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -1307,28 +1683,57 @@ export const RoundedIconInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--yellow" tabindex="0">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--indigo" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--blue" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--person-placeholder"></span>
         </div>
@@ -1364,6 +1769,92 @@ export const RoundedIconInteractive = () => `${localStyles}
     </div>
 </div>
 
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xl fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--l fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--m fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--s fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--xs fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--person-placeholder"></span>
+        </div>
+    </div>
+</div>
 `;
 
 RoundedIconInteractive.storyName = 'Rounded Interactive Avatar with Icon';
@@ -1385,29 +1876,30 @@ export const CircleIconInteractive = () => `${localStyles}
     <div><b>S</b></div>
     <div><b>XS</b></div>
 </div>
+
 <div class="docs-fn-container">
-    <div><b>Indigo</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--indigo" tabindex="0">
+    <div><b>Mango</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--indigo" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--mango" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -1415,57 +1907,28 @@ export const CircleIconInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Crimson</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--crimson" tabindex="0">
+    <div><b>Red</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--crimson" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--crimson" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--crimson" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--crimson" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>Cyan</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--cyan" tabindex="0">
-        <div class="fn-avatar__icon" role="presentation">
-            <span class="sap-icon sap-icon--bell"></span>
-        </div>
-    </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--cyan" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--red" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -1473,28 +1936,28 @@ export const CircleIconInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Lime</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--lime" tabindex="0">
+    <div><b>Raspberry</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--lime" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--raspberry" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -1531,28 +1994,57 @@ export const CircleIconInteractive = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>Yellow</b></div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--yellow" tabindex="0">
+    <div><b>Indigo</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--indigo" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
     </div>
-    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--yellow" tabindex="0">
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--indigo" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Blue</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--blue" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--blue" tabindex="0">
         <div class="fn-avatar__icon" role="presentation">
             <span class="sap-icon sap-icon--bell"></span>
         </div>
@@ -1587,6 +2079,95 @@ export const CircleIconInteractive = () => `${localStyles}
         </div>
     </div>
 </div>
+
+<div class="docs-fn-container">
+    <div><b>Green</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--green" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Cyan</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--cyan" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>Grey</b></div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xl fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--l fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--m fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--s fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+    <div class="fn-avatar fn-avatar--interactive fn-avatar--circle fn-avatar--xs fn-avatar--grey" tabindex="0">
+        <div class="fn-avatar__icon" role="presentation">
+            <span class="sap-icon sap-icon--bell"></span>
+        </div>
+    </div>
+</div>
+
+
 
 `;
 

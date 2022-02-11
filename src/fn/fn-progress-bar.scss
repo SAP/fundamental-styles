@@ -4,9 +4,9 @@ $block: #{$fn-namespace}-progress-bar;
 $fn-progress-bar-offset: 0.125rem;
 
 $fn-progress-bar-colors: (
-  "positive": ("color": $fn-color-green-500, "icon": "\e1ab"),
-  "critical": ("color": $fn-color-orange-400, "icon": "\e1ae"),
-  "negative": ("color": $fn-color-red-500, "icon": "\e1ac")
+  "positive": ("color": $fn-color-green-7, "icon": "\e1ab"),
+  "critical": ("color": $fn-color-mango-6, "icon": "\e1ae"),
+  "negative": ("color": $fn-color-red-7, "icon": "\e1ac")
 );
 
 @mixin fn-progress-bar-dot() {
@@ -20,7 +20,7 @@ $fn-progress-bar-colors: (
   border-radius: 50%;
   top: $fn-progress-bar-offset;
   left: $fn-progress-bar-offset;
-  background: $fn-color-grey-500;
+  background: $fn-color-grey-7;
 
   @content;
 }
@@ -31,7 +31,7 @@ $fn-progress-bar-colors: (
   width: 100%;
   height: 0.5rem;
   position: relative;
-  background: $fn-color-grey-100;
+  background: $fn-color-grey-2;
   border-radius: $fn-border-radius-4;
 
   &::after {
@@ -78,7 +78,7 @@ $fn-progress-bar-colors: (
     z-index: 2;
     height: 0.75rem;
     position: absolute;
-    background: $fn-color-grey-700;
+    background: $fn-color-grey-9;
     top: -1 * $fn-progress-bar-offset;
     border-radius: $fn-border-radius-6;
   }

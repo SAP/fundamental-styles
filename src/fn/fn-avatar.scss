@@ -46,61 +46,85 @@ $fn-avatar-base: (
 );
 
 $fn-avatar-base-colors: (
-  "indigo": (
-    "background": $fn-color-indigo-100,
-    "color": $fn-color-indigo-600,
-    "normal": $fn-color-indigo-500,
-    "hover": $fn-color-indigo-600,
-    "active": $fn-color-indigo-700,
-    "focus": $fn-color-indigo-500
+  "mango": (
+    "background": $fn-color-mango-2,
+    "color": $fn-color-mango-8,
+    "normal": $fn-color-mango-7,
+    "hover": $fn-color-mango-8,
+    "active": $fn-color-mango-9,
+    "focus": $fn-color-mango-7
   ),
-  "crimson": (
-    "background": $fn-color-crimson-100,
-    "color": $fn-color-crimson-600,
-    "normal": $fn-color-crimson-500,
-    "hover": $fn-color-crimson-600,
-    "active": $fn-color-crimson-700,
-    "focus": $fn-color-crimson-500
+  "red": (
+    "background": $fn-color-red-2,
+    "color": $fn-color-red-8,
+    "normal": $fn-color-red-7,
+    "hover": $fn-color-red-8,
+    "active": $fn-color-red-9,
+    "focus": $fn-color-red-7
   ),
-  "cyan": (
-    "background": $fn-color-cyan-100,
-    "color": $fn-color-cyan-600,
-    "normal": $fn-color-cyan-500,
-    "hover": $fn-color-cyan-600,
-    "active": $fn-color-cyan-700,
-    "focus": $fn-color-cyan-500
-  ),
-  "lime": (
-    "background": $fn-color-lime-100,
-    "color": $fn-color-lime-600,
-    "normal": $fn-color-lime-500,
-    "hover": $fn-color-lime-600,
-    "active": $fn-color-lime-700,
-    "focus": $fn-color-lime-500
+  "raspberry": (
+    "background": $fn-color-raspberry-2,
+    "color": $fn-color-raspberry-8,
+    "normal": $fn-color-raspberry-7,
+    "hover": $fn-color-raspberry-8,
+    "active": $fn-color-raspberry-9,
+    "focus": $fn-color-raspberry-7
   ),
   "pink": (
-    "background": $fn-color-pink-100,
-    "color": $fn-color-pink-600,
-    "normal": $fn-color-pink-500,
-    "hover": $fn-color-pink-600,
-    "active": $fn-color-pink-700,
-    "focus": $fn-color-pink-500
+    "background": $fn-color-pink-2,
+    "color": $fn-color-pink-8,
+    "normal": $fn-color-pink-7,
+    "hover": $fn-color-pink-8,
+    "active": $fn-color-pink-9,
+    "focus": $fn-color-pink-7
   ),
-  "yellow": (
-    "background": $fn-color-yellow-100,
-    "color": $fn-color-yellow-600,
-    "normal": $fn-color-yellow-500,
-    "hover": $fn-color-yellow-600,
-    "active": $fn-color-yellow-700,
-    "focus": $fn-color-yellow-500
+  "indigo": (
+    "background": $fn-color-indigo-2,
+    "color": $fn-color-indigo-8,
+    "normal": $fn-color-indigo-7,
+    "hover": $fn-color-indigo-8,
+    "active": $fn-color-indigo-9,
+    "focus": $fn-color-indigo-7
+  ),
+  "blue": (
+    "background": $fn-color-blue-2,
+    "color": $fn-color-blue-8,
+    "normal": $fn-color-blue-7,
+    "hover": $fn-color-blue-8,
+    "active": $fn-color-blue-9,
+    "focus": $fn-color-blue-7
   ),
   "teal": (
-    "background": $fn-color-teal-100,
-    "color": $fn-color-teal-600,
-    "normal": $fn-color-teal-400,
-    "hover": $fn-color-teal-500,
-    "active": $fn-color-teal-600,
-    "focus": $fn-color-teal-500
+    "background": $fn-color-teal-2,
+    "color": $fn-color-teal-8,
+    "normal": $fn-color-teal-7,
+    "hover": $fn-color-teal-8,
+    "active": $fn-color-teal-9,
+    "focus": $fn-color-teal-7
+  ),
+  "green": (
+    "background": $fn-color-green-2,
+    "color": $fn-color-green-8,
+    "normal": $fn-color-green-7,
+    "hover": $fn-color-green-8,
+    "active": $fn-color-green-9,
+    "focus": $fn-color-green-7
+  ),
+  "cyan": (
+    "background": $fn-color-cyan-2,
+    "color": $fn-color-cyan-8,
+    "normal": $fn-color-cyan-7,
+    "hover": $fn-color-cyan-8,
+    "active": $fn-color-cyan-9,
+    "focus": $fn-color-cyan-7
+  ),
+  "grey": (
+    "background": $fn-color-grey-2,
+    "color": $fn-color-grey-8,
+    "normal": $fn-color-grey-7,
+    "hover": $fn-color-grey-8,
+    "active": $fn-color-grey-9,
+    "focus": $fn-color-grey-7
   )
 );
 
