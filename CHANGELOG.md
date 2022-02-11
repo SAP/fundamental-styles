@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.2 (2022-02-11)
+
+
+### Bug Fixes
+
+* **fn:** update colors API, avatar and info label [ci visual] ([#3172](https://github.com/SAP/fundamental-styles/issues/3172)) ([0ca16fc](https://github.com/SAP/fundamental-styles/commit/0ca16fcbc6ab702dbe09d5a694cbe18c1b7737d8))
+
 ### 0.21.2-rc.1 (2022-02-10)
 
 
