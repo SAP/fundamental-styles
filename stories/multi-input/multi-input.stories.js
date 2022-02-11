@@ -2,13 +2,18 @@ export default {
     title: 'Patterns/Multi Input',
     parameters: {
         description: `
-The multi-input component is an opinionated composition of the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components.
-The \`popover\` is shared between the combobox and select components. Please see the \`select\` documentation for the complete list of modifiers,
-That are also  supported by the \`combobox\` component.
-
-\`Multi Input\` allows users to enter multiple values which are displayed as a tokens.
-It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
+Multi Input allows users to enter multiple values which are displayed as a tokens. It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
 If the entries are not validated by the application, users can also enter custom values.
+
+##Usage
+
+**Use the multi input if:**
+
+- You want the user to select multiple ranges.
+- The dataset to choose from is expected to increase over time.
+- You need to provide the value help option to help users select or search multiple business objects.
+- You want to enable users to add custom values.
+
 `,
         tags: ['f3', 'a11y', 'theme'],
         components: [
@@ -227,7 +232,13 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
 
 CozyAndCompact.parameters = {
     docs: {
-        iframeHeight: 350
+        iframeHeight: 350,
+        description: {
+            story: `The multi-input component is a composition of 
+        the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components.  It can be displayed in compact mode by adding
+         the \`--compact\` modifier class to the building blocks of the components.
+        `
+        }
     }
 };
 
