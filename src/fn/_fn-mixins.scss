@@ -199,6 +199,11 @@
   }
 }
 
+@mixin fn-set-margins-x-equal($value: 0) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
 // Set Paddings
 @mixin fn-set-padding-left($left: 0) {
   padding-left: $left;
