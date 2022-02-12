@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.4 (2022-02-12)
+
+
+### Bug Fixes
+
+* **fn:** update Card with some extra features [ci visual] ([#3177](https://github.com/SAP/fundamental-styles/issues/3177)) ([fb6639c](https://github.com/SAP/fundamental-styles/commit/fb6639c03b6f690c7cc3761090268a0752fadf50))
+
 ### 0.21.2-rc.3 (2022-02-11)
 
 ### 0.21.2-rc.2 (2022-02-11)
