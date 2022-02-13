@@ -17,15 +17,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 1
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -36,15 +32,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 2
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -55,15 +47,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 3
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -74,15 +62,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 4
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -93,15 +77,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 5
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -112,15 +92,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 6
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -131,15 +107,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 7
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -150,15 +122,11 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 8
       </span>
       
     
     </span>
-    
-    
-    <br />
-    <br />
     
     
     <span
@@ -169,20 +137,96 @@ exports[`Storyshots Components/Info Label Color Flavors 1`] = `
       <span
         class="fd-info-label__text"
       >
-        Info Label
+        color 9
       </span>
       
     
     </span>
     
     
-    <br />
-    <br />
-    
-    
     <span
       class="fd-info-label fd-info-label--accent-color-10"
     >
+      
+        
+      <span
+        class="fd-info-label__text"
+      >
+        color 10
+      </span>
+      
+    
+    </span>
+    
+
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Info Label Display Only Info Label 1`] = `
+<div
+  dir="ltr"
+>
+  <div
+    class="fddocs-container"
+  >
+    
+    
+    <span
+      class="fd-info-label fd-info-label--display"
+    >
+      
+        
+      <span
+        class="fd-info-label__text"
+      >
+        system state
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-info-label fd-info-label--display fd-info-label--numeric"
+    >
+      
+        
+      <span
+        class="fd-info-label__numeric"
+      >
+        42
+      </span>
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon fd-info-label--display "
+    >
+      
+        
+      <i
+        class="fd-info-label__icon sap-icon--upload-to-cloud"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon fd-info-label--display"
+    >
+      
+        
+      <i
+        class="fd-info-label__icon sap-icon--future"
+        role="presentation"
+      />
       
         
       <span
@@ -231,10 +275,6 @@ exports[`Storyshots Components/Info Label Info Label with Icon 1`] = `
     </span>
     
     
-    <br />
-    <br />
-    
-    
     <span
       class="fd-info-label fd-info-label--accent-color-2 fd-info-label--icon"
     >
@@ -270,7 +310,7 @@ exports[`Storyshots Components/Info Label Numeric Info Label 1`] = `
       
         
       <span
-        class="fd-info-label__text"
+        class="fd-info-label__numeric"
       >
         6
       </span>
@@ -279,17 +319,13 @@ exports[`Storyshots Components/Info Label Numeric Info Label 1`] = `
     </span>
     
     
-    <br />
-    <br />
-    
-    
     <span
       class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-2"
     >
       
         
       <span
-        class="fd-info-label__text"
+        class="fd-info-label__numeric"
       >
         6.2
       </span>
@@ -298,17 +334,13 @@ exports[`Storyshots Components/Info Label Numeric Info Label 1`] = `
     </span>
     
     
-    <br />
-    <br />
-    
-    
     <span
       class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-3"
     >
       
         
       <span
-        class="fd-info-label__text"
+        class="fd-info-label__numeric"
       >
         42k
       </span>

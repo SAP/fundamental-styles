@@ -217,7 +217,7 @@ exports[`Storyshots Components/User Menu 3rd Party Content 1`] = `
               
                         
               <a
-                class="fd-list__link fd-list__link--navigation-indicator is-selected"
+                class="fd-list__link fd-list__link--navigation-indicator"
                 tabindex="0"
               >
                 
@@ -281,7 +281,7 @@ exports[`Storyshots Components/User Menu 3rd Party Content 1`] = `
               
                         
               <a
-                class="fd-list__link fd-list__link--navigation-indicator"
+                class="fd-list__link fd-list__link--navigation-indicator is-selected"
                 tabindex="0"
               >
                 

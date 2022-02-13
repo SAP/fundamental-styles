@@ -3,31 +3,32 @@
 
 $block: #{$fd-namespace}-info-label;
 
-$fd-info-label-height: 1.125rem !default;
+$fd-info-label-height: 1rem !default;
 $fd-info-label-display-height: 1rem !default;
-$fd-info-label-icon-text-spacing: 0.1875rem !default;
-$fd-info-label-border-width: 0.063rem !default;
+$fd-info-label-icon-text-spacing: 0.125rem !default;
+$fd-info-label-border-width: 0.0625rem !default;
 $fd-info-label-border-style: solid !default;
 $fd-info-label-font-size: var(--sapFontSmallSize) !default;
 
 $color-accents: (
-  "1": ("background": var(--sapLegendBackgroundColor1), "border": var(--sapLegendColor1)),
-  "2": ("background": var(--sapLegendBackgroundColor2), "border": var(--sapLegendColor2)),
-  "3": ("background": var(--sapLegendBackgroundColor3), "border": var(--sapLegendColor3)),
-  "4": ("background": var(--sapLegendBackgroundColor5), "border": var(--sapLegendColor4)),
-  "5": ("background": var(--sapLegendBackgroundColor20), "border": var(--sapLegendColor5)),
-  "6": ("background": var(--sapLegendBackgroundColor6), "border": var(--sapLegendColor6)),
-  "7": ("background": var(--sapLegendBackgroundColor7), "border": var(--sapLegendColor7)),
-  "8": ("background": var(--sapLegendBackgroundColor8), "border": var(--sapLegendColor8)),
-  "9": ("background": var(--sapLegendBackgroundColor10), "border": var(--sapLegendColor9)),
-  "10": ("background": var(--sapLegendBackgroundColor9), "border": var(--sapLegendColor10))
+  "1": ("background": var(--fdInfo_Label_Background_Color1), "border": var(--fdInfo_Label_Border_Color1), "text": var(--fdInfo_Label_Text_Color1)),
+  "2": ("background": var(--fdInfo_Label_Background_Color2), "border": var(--fdInfo_Label_Border_Color2), "text": var(--fdInfo_Label_Text_Color2)),
+  "3": ("background": var(--fdInfo_Label_Background_Color3), "border": var(--fdInfo_Label_Border_Color3), "text": var(--fdInfo_Label_Text_Color3)),
+  "4": ("background": var(--fdInfo_Label_Background_Color4), "border": var(--fdInfo_Label_Border_Color4), "text": var(--fdInfo_Label_Text_Color4)),
+  "5": ("background": var(--fdInfo_Label_Background_Color5), "border": var(--fdInfo_Label_Border_Color5), "text": var(--fdInfo_Label_Text_Color5)),
+  "6": ("background": var(--fdInfo_Label_Background_Color6), "border": var(--fdInfo_Label_Border_Color6), "text": var(--fdInfo_Label_Text_Color6)),
+  "7": ("background": var(--fdInfo_Label_Background_Color7), "border": var(--fdInfo_Label_Border_Color7), "text": var(--fdInfo_Label_Text_Color7)),
+  "8": ("background": var(--fdInfo_Label_Background_Color8), "border": var(--fdInfo_Label_Border_Color8), "text": var(--fdInfo_Label_Text_Color8)),
+  "9": ("background": var(--fdInfo_Label_Background_Color9), "border": var(--fdInfo_Label_Border_Color9), "text": var(--fdInfo_Label_Text_Color9)),
+  "10": ("background": var(--fdInfo_Label_Background_Color10), "border": var(--fdInfo_Label_Border_Color10), "text": var(--fdInfo_Label_Text_Color10))
 );
 
 .#{$block} {
   @include fd-reset();
   @include fd-ellipsis();
 
-  border-radius: 1.125rem;
+  border-radius: 0.5rem;
+  line-height: normal;
   height: $fd-info-label-height;
   min-width: $fd-info-label-height;
   max-width: 100%;
@@ -36,14 +37,13 @@ $color-accents: (
   text-transform: uppercase;
   text-align: center;
   color: var(--sapTextColor);
-  padding: 0 0.625rem;
+  padding: 0 0.3125rem;
   border-width: $fd-info-label-border-width;
   border-style: $fd-info-label-border-style;
 
   &__icon {
     @include fd-icon-element-base() {
       font-size: 0.75rem;
-      color: var(--sapTextColor);
       margin-right: $fd-info-label-icon-text-spacing;
 
       @include fd-rtl() {
@@ -64,7 +64,9 @@ $color-accents: (
   &__text {
     @include fd-reset();
 
+    padding: 0 0.1875rem;
     font-size: inherit;
+    font-weight: bold;
     color: inherit;
     line-height: 1;
   }
@@ -73,6 +75,7 @@ $color-accents: (
     &--accent-color-#{$set-name} {
       background-color: map_get($color-set, "background");
       border-color: map_get($color-set, "border");
+      color: map-get($map: $color-set, $key: "text");
 
       @include fd-icon-overwrite() {
         border-color: map_get($color-set, "border");
@@ -81,19 +84,23 @@ $color-accents: (
   }
 
   &--display {
+    border-color: var(--fdInfo_Label_Display_Border_Color);
+    background-color: var(--fdInfo_Label_Display_Background_Color);
+    color: var(--fdInfo_Label_Display_Text_Color);
     height: $fd-info-label-display-height;
     min-width: $fd-info-label-display-height;
   }
 
   &--numeric {
-    padding: 0 0.3125rem;
+    padding: 0 0.1875rem;
+    font-weight: bold;
   }
 
   &--icon {
     font-size: $fd-info-label-font-size;
     display: inline-flex;
     align-items: center;
-    padding: 0 0.3125rem;
+    padding: 0 0.1875rem;
     line-height: 1rem;
   }
 }
