@@ -27,6 +27,8 @@ $color-accents: (
   @include fd-reset();
   @include fd-ellipsis();
 
+  display: inline-flex;
+  align-items: center;
   border-radius: 0.5rem;
   line-height: normal;
   height: $fd-info-label-height;
@@ -63,8 +65,8 @@ $color-accents: (
 
   &__text {
     @include fd-reset();
+    @include fd-ellipsis();
 
-    padding: 0 0.1875rem;
     font-size: inherit;
     font-weight: bold;
     color: inherit;
@@ -98,8 +100,8 @@ $color-accents: (
 
   &--icon {
     font-size: $fd-info-label-font-size;
-    display: inline-flex;
-    align-items: center;
+    // display: inline-flex;
+    // align-items: center;
     padding: 0 0.1875rem;
     line-height: 1rem;
   }
