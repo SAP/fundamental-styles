@@ -16,7 +16,7 @@ $fn-label-required-margin: 0.125rem;
   @include fn-ellipsis();
   @include fn-set-margin-right(0.75rem);
 
-  color: $fn-color-grey-8;
+  color: $fn-color-grey-6;
   margin-bottom: 0.125rem;
 
   &--required,

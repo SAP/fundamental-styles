@@ -12,7 +12,7 @@ export default {
 <br><br>
 
         `,
-        components: ['fn-form', 'fn-label', 'fn-input', 'fn-nested-button', 'fn-radio', 'fn-checkbox', 'fn-step-input', 'fn-select', 'fn-combobox', 'fn-multi-input', 'icon']
+        components: ['fn-form', 'fn-label', 'fn-input', 'fn-nested-button', 'fn-radio', 'fn-checkbox', 'fn-step-input', 'icon']
     }
 };
 
