@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.10 (2022-02-15)
+
+
+### Bug Fixes
+
+* **fn:** update Message strip to latest design [ci visual] ([#3192](https://github.com/SAP/fundamental-styles/issues/3192)) ([4e21253](https://github.com/SAP/fundamental-styles/commit/4e2125395fca16ba6158cf1fa4d117368239d57f))
+
 ### 0.21.2-rc.9 (2022-02-15)
 
 
