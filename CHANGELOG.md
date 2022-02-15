@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.12 (2022-02-15)
+
+
+### Bug Fixes
+
+* **fn:** update Progress Bar colors [ci visual] ([#3193](https://github.com/SAP/fundamental-styles/issues/3193)) ([d2d5f88](https://github.com/SAP/fundamental-styles/commit/d2d5f88f00180f46b67b801fb94adfdb333d2826))
+
 ### 0.21.2-rc.11 (2022-02-15)
 
 
