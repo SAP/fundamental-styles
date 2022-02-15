@@ -100,7 +100,6 @@
   }
 
   @include fd-disabled() {
-    pointer-events: none;
     opacity: var(--sapContent_DisabledOpacity);
 
     &::placeholder {
