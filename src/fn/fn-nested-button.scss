@@ -20,7 +20,7 @@ $block: #{$fn-namespace}-nested-button;
   @include fn-reset();
   @include fn-transition();
   @include fn-flex-center();
-  @include fn-set-square(1.125rem);
+  @include fn-set-square-min-width(1.125rem);
 
   cursor: pointer;
   border-radius: 50%;

@@ -181,6 +181,8 @@ $fn-tabs-base: (
 
   .#{$block}__button {
     @include fn-set-margin-left(0.25rem);
+
+    min-width: 0;
   }
 
   // Tabs Text Container

@@ -40,8 +40,8 @@ $block: #{$fn-namespace}-message-strip;
 
   .#{$block}__icon {
     @include fn-flex-center();
-    @include fn-set-square(1.125rem);
     @include fn-set-margin-right(0.375rem);
+    @include fn-set-square-min-width(1.125rem);
 
     font-size: 0.9375rem;
 

@@ -292,6 +292,13 @@
   height: $size;
 }
 
+@mixin fn-set-square-min-width($size) {
+  width: $size;
+  height: $size;
+  min-width: $size;
+  min-height: $size;
+}
+
 @mixin fn-set-rectangle($width, $height) {
   width: $width;
   height: $height;

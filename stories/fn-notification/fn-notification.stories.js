@@ -1,40 +1,40 @@
 export default {
     title: 'FN Components/Notification',
     parameters: {
-        components: ['fn-notification', 'icon', 'fn-button', 'fn-avatar', 'fn-object-status'],
+        components: ['fn-notification', 'icon', 'fn-button', 'fn-nested-button', 'fn-avatar', 'fn-object-status'],
         description: `
 ## Modifiers
 
 ### Semantic
 
-| Modifier class | Use to... |
-| -------------:| :------------- |
-| \`fd-notification--positive\` | Display notification in positive semantic mode
-| \`fd-notification--info\` | Display notification in information semantic mode
-| \`fd-notification--negative\` | Display notification in negative semantic mode
-| \`fd-notification--critical\` | Display notification in critical semantic mode
+|             Modifier class                | Semantic mode |
+| ------------------------------------------| ------------- |
+| \`fd-notification--positive\` &nbsp;&nbsp;| Positive      |
+| \`fd-notification--info\` &nbsp;&nbsp;    | Information   |
+| \`fd-notification--negative\` &nbsp;&nbsp;| Negative      |
+| \`fd-notification--critical\` &nbsp;&nbsp;| Critical      |
 
 `
     }
 };
 
 export const Notification = () => `
-    <div class="fn-notification">
+    <div class="fn-notification" style="max-width: 500px;">
         <div class="fn-notification__main-container">
-            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson">
-                <div class="fn-avatar__initials">M</div>
+            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--thumbnail">
+                <div class="fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
             </div>
             <div class="fn-notification__text-container">
                 <span class="fn-notification__title">Quo culpa sint aut tempora rerum placeat.</span>
                 <span class="fn-notification__text">Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.</span>
             </div>
-            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
+            <button class="fn-nested-button" aria-label="nested button">
                 <span class="sap-icon sap-icon--decline"></span>
             </button>
         </div>
         <div class="fn-notification__button-container">
             <button class="fn-button fn-button--emphasized">
-                <span class="sap-icon sap-icon--accept"></span>
+                <span class="sap-icon sap-icon--sys-enter"></span>
                 <span class="fn-button__text">Approve</span>
             </button>
             <button class="fn-button fn-button--secondary">
@@ -53,22 +53,20 @@ Notification.parameters = {
 export const SemanticNotification = () => `
     <div class="fn-notification fn-notification--positive">
         <div class="fn-notification__semantic-container">
-            <div class="fn-object-status fn-object-status--positive">
-                <span class="sap-icon sap-icon--status-positive"></span>
-            </div>
+            <span class="sap-icon sap-icon--status-positive"></span>
             <span class="fn-notification__semantic-title">Positive</span>
         </div>
         <div class="fn-notification__main-container">
-            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson">
-                <div class="fn-avatar__initials">M</div>
+            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--thumbnail">
+                <div class="fn-avatar__thumbnail" role="img" aria-label="John Doe" style="background-image: url('/assets/images/backgrounds/city.jpg')"></div>
             </div>
             <div class="fn-notification__text-container">
-                <span class="fn-notification__text">Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.</span>
+                <span class="fn-notification__text">Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
         </div>
         <div class="fn-notification__button-container">
-            <button class="fn-button fn-button--emphasized">
-                <span class="sap-icon sap-icon--accept"></span>
+            <button class="fn-button fn-button--positive fn-button--emphasized">
+                <span class="sap-icon sap-icon--sys-enter"></span>
                 <span class="fn-button__text">Approve</span>
             </button>
             <button class="fn-button fn-button--secondary">
@@ -79,22 +77,17 @@ export const SemanticNotification = () => `
     <br/>
     <div class="fn-notification fn-notification--info">
         <div class="fn-notification__semantic-container">
-            <div class="fn-object-status fn-object-status--info">
-                <span class="sap-icon sap-icon--status-positive"></span>
-            </div>
+            <span class="sap-icon sap-icon--information"></span>
             <span class="fn-notification__semantic-title">Information</span>
         </div>
         <div class="fn-notification__main-container">
-            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson">
-                <div class="fn-avatar__initials">M</div>
-            </div>
             <div class="fn-notification__text-container">
-                <span class="fn-notification__text">Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.</span>
+                <span class="fn-notification__text">Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             </div>
         </div>
         <div class="fn-notification__button-container">
             <button class="fn-button fn-button--emphasized">
-                <span class="sap-icon sap-icon--accept"></span>
+                <span class="sap-icon sap-icon--sys-enter"></span>
                 <span class="fn-button__text">Approve</span>
             </button>
             <button class="fn-button fn-button--secondary">
@@ -105,13 +98,11 @@ export const SemanticNotification = () => `
     <br/>
     <div class="fn-notification fn-notification--critical">
         <div class="fn-notification__semantic-container">
-            <div class="fn-object-status fn-object-status--critical">
-                <span class="sap-icon sap-icon--status-critical"></span>
-            </div>
+            <span class="sap-icon sap-icon--status-critical"></span>
             <span class="fn-notification__semantic-title">Critical</span>
         </div>
         <div class="fn-notification__main-container">
-            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson">
+            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--raspberry">
                 <div class="fn-avatar__initials">M</div>
             </div>
             <div class="fn-notification__text-container">
@@ -119,8 +110,8 @@ export const SemanticNotification = () => `
             </div>
         </div>
         <div class="fn-notification__button-container">
-            <button class="fn-button fn-button--emphasized">
-                <span class="sap-icon sap-icon--accept"></span>
+            <button class="fn-button fn-button--critical fn-button--emphasized">
+                <span class="sap-icon sap-icon--sys-enter"></span>
                 <span class="fn-button__text">Approve</span>
             </button>
             <button class="fn-button fn-button--secondary">
@@ -129,24 +120,24 @@ export const SemanticNotification = () => `
         </div>
     </div>
     <br/>
-    <div class="fn-notification fn-notification--negative">
+    <div class="fn-notification fn-notification--negative" style="max-width: 400px;">
         <div class="fn-notification__semantic-container">
-            <div class="fn-object-status fn-object-status--negative">
-                <span class="sap-icon sap-icon--status-negative"></span>
-            </div>
+            <span class="sap-icon sap-icon--status-negative"></span>
             <span class="fn-notification__semantic-title">Negative</span>
         </div>
         <div class="fn-notification__main-container">
-            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson">
-                <div class="fn-avatar__initials">M</div>
+            <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--raspberry">
+                <div class="fn-avatar__icon" role="presentation">
+                    <span class="sap-icon sap-icon--person-placeholder"></span>
+                </div>
             </div>
             <div class="fn-notification__text-container">
                 <span class="fn-notification__text">Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.</span>
             </div>
         </div>
         <div class="fn-notification__button-container">
-            <button class="fn-button fn-button--emphasized">
-                <span class="sap-icon sap-icon--accept"></span>
+            <button class="fn-button fn-button--negative fn-button--emphasized">
+                <span class="sap-icon sap-icon--sys-enter"></span>
                 <span class="fn-button__text">Approve</span>
             </button>
             <button class="fn-button fn-button--secondary">
