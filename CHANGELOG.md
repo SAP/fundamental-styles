@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.9 (2022-02-15)
+
+
+### Bug Fixes
+
+* **fn:** update Label and Shell to match the design [ci visual] ([#3191](https://github.com/SAP/fundamental-styles/issues/3191)) ([fe1efee](https://github.com/SAP/fundamental-styles/commit/fe1efeeb0aff3b60d8269f94e60795a8cde493d7))
+
 ### 0.21.2-rc.8 (2022-02-13)
 
 ### 0.21.2-rc.7 (2022-02-13)
