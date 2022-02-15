@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.11 (2022-02-15)
+
+
+### Bug Fixes
+
+* **styles:** remove "pointer-events: none" from disabled form controls [ci visual] ([#3190](https://github.com/SAP/fundamental-styles/issues/3190)) ([9a6f457](https://github.com/SAP/fundamental-styles/commit/9a6f457d1bd558e433c5320f79d8e60269aff185))
+
 ### 0.21.2-rc.10 (2022-02-15)
 
 
