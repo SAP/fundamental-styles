@@ -44,7 +44,7 @@ export const Token = () => `${localStyles}
 </div>
 <div class="docs-fn-container">
     <div><b>:hover</b></div>
-    <div class="fn-token is-hover">
+    <div class="fn-token is-hover" tabindex="0">
         <div class="fn-token__text">Token</div>
         <div class="fn-token__icon">
             <span class="sap-icon sap-icon--decline"></span>
@@ -53,7 +53,25 @@ export const Token = () => `${localStyles}
 </div>
 <div class="docs-fn-container">
     <div><b>:focus</b></div>
-    <div class="fn-token is-focus">
+    <div class="fn-token is-focus" tabindex="0">
+        <div class="fn-token__text">Token</div>
+        <div class="fn-token__icon">
+            <span class="sap-icon sap-icon--decline"></span>
+        </div>
+    </div>
+</div>
+<div class="docs-fn-container">
+    <div><b>:selected</b></div>
+    <div class="fn-token is-selected" tabindex="0">
+        <div class="fn-token__text">Token</div>
+        <div class="fn-token__icon">
+            <span class="sap-icon sap-icon--decline"></span>
+        </div>
+    </div>
+</div>
+<div class="docs-fn-container">
+    <div><b>:selected :focus</b></div>
+    <div class="fn-token is-selected is-focus" tabindex="0">
         <div class="fn-token__text">Token</div>
         <div class="fn-token__icon">
             <span class="sap-icon sap-icon--decline"></span>
