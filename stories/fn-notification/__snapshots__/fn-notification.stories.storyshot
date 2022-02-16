@@ -8,6 +8,7 @@ exports[`Storyshots FN Components/Notification Notification 1`] = `
     
   <div
     class="fn-notification"
+    style="max-width: 500px;"
   >
     
         
@@ -17,15 +18,16 @@ exports[`Storyshots FN Components/Notification Notification 1`] = `
       
             
       <div
-        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--thumbnail"
       >
         
                 
         <div
-          class="fn-avatar__initials"
-        >
-          M
-        </div>
+          aria-label="John Doe"
+          class="fn-avatar__thumbnail"
+          role="img"
+          style="background-image: url('/assets/images/backgrounds/city.jpg')"
+        />
         
             
       </div>
@@ -54,8 +56,8 @@ exports[`Storyshots FN Components/Notification Notification 1`] = `
       
             
       <button
-        aria-label="More"
-        class="fn-button fn-button--layout fn-button--icon-only"
+        aria-label="nested button"
+        class="fn-nested-button"
       >
         
                 
@@ -81,7 +83,7 @@ exports[`Storyshots FN Components/Notification Notification 1`] = `
         
                 
         <span
-          class="sap-icon sap-icon--accept"
+          class="sap-icon sap-icon--sys-enter"
         />
         
                 
@@ -135,17 +137,9 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
     >
       
             
-      <div
-        class="fn-object-status fn-object-status--positive"
-      >
-        
-                
-        <span
-          class="sap-icon sap-icon--status-positive"
-        />
-        
-            
-      </div>
+      <span
+        class="sap-icon sap-icon--status-positive"
+      />
       
             
       <span
@@ -164,15 +158,16 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
       
             
       <div
-        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--thumbnail"
       >
         
                 
         <div
-          class="fn-avatar__initials"
-        >
-          M
-        </div>
+          aria-label="John Doe"
+          class="fn-avatar__thumbnail"
+          role="img"
+          style="background-image: url('/assets/images/backgrounds/city.jpg')"
+        />
         
             
       </div>
@@ -186,7 +181,7 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
         <span
           class="fn-notification__text"
         >
-          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.
+          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </span>
         
             
@@ -202,12 +197,12 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
       
             
       <button
-        class="fn-button fn-button--emphasized"
+        class="fn-button fn-button--positive fn-button--emphasized"
       >
         
                 
         <span
-          class="sap-icon sap-icon--accept"
+          class="sap-icon sap-icon--sys-enter"
         />
         
                 
@@ -255,17 +250,9 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
     >
       
             
-      <div
-        class="fn-object-status fn-object-status--info"
-      >
-        
-                
-        <span
-          class="sap-icon sap-icon--status-positive"
-        />
-        
-            
-      </div>
+      <span
+        class="sap-icon sap-icon--information"
+      />
       
             
       <span
@@ -284,21 +271,6 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
       
             
       <div
-        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
-      >
-        
-                
-        <div
-          class="fn-avatar__initials"
-        >
-          M
-        </div>
-        
-            
-      </div>
-      
-            
-      <div
         class="fn-notification__text-container"
       >
         
@@ -306,7 +278,7 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
         <span
           class="fn-notification__text"
         >
-          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi.
+          Modi doloremque nesciunt nemo delectus cum dignissimos est voluptas commodi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </span>
         
             
@@ -327,7 +299,7 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
         
                 
         <span
-          class="sap-icon sap-icon--accept"
+          class="sap-icon sap-icon--sys-enter"
         />
         
                 
@@ -375,17 +347,9 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
     >
       
             
-      <div
-        class="fn-object-status fn-object-status--critical"
-      >
-        
-                
-        <span
-          class="sap-icon sap-icon--status-critical"
-        />
-        
-            
-      </div>
+      <span
+        class="sap-icon sap-icon--status-critical"
+      />
       
             
       <span
@@ -404,7 +368,7 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
       
             
       <div
-        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--raspberry"
       >
         
                 
@@ -442,12 +406,12 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
       
             
       <button
-        class="fn-button fn-button--emphasized"
+        class="fn-button fn-button--critical fn-button--emphasized"
       >
         
                 
         <span
-          class="sap-icon sap-icon--accept"
+          class="sap-icon sap-icon--sys-enter"
         />
         
                 
@@ -487,6 +451,7 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
     
   <div
     class="fn-notification fn-notification--negative"
+    style="max-width: 400px;"
   >
     
         
@@ -495,17 +460,9 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
     >
       
             
-      <div
-        class="fn-object-status fn-object-status--negative"
-      >
-        
-                
-        <span
-          class="sap-icon sap-icon--status-negative"
-        />
-        
-            
-      </div>
+      <span
+        class="sap-icon sap-icon--status-negative"
+      />
       
             
       <span
@@ -524,14 +481,21 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
       
             
       <div
-        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--crimson"
+        class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--raspberry"
       >
         
                 
         <div
-          class="fn-avatar__initials"
+          class="fn-avatar__icon"
+          role="presentation"
         >
-          M
+          
+                    
+          <span
+            class="sap-icon sap-icon--person-placeholder"
+          />
+          
+                
         </div>
         
             
@@ -562,12 +526,12 @@ exports[`Storyshots FN Components/Notification Semantic Notification 1`] = `
       
             
       <button
-        class="fn-button fn-button--emphasized"
+        class="fn-button fn-button--negative fn-button--emphasized"
       >
         
                 
         <span
-          class="sap-icon sap-icon--accept"
+          class="sap-icon sap-icon--sys-enter"
         />
         
                 

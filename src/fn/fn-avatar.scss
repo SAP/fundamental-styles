@@ -243,8 +243,8 @@ $fn-avatar-base-colors: (
 
   @each $set-name, $set-prop in $fn-avatar-base {
     &--#{$set-name} {
-      width: map-get($set-prop, 'size');
-      height: map-get($set-prop, 'size');
+      @include fn-set-square-min-width(map-get($set-prop, 'size'));
+
       border-radius: map-get($set-prop, 'radius');
 
       &.#{$block}--circle {
