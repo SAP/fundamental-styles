@@ -2,14 +2,20 @@
 
 $block: #{$fn-namespace}-popover;
 
+$fn-popover-arrow-size: 0.75rem;
+$fn-popover-arrow-offset: -0.25rem;
+$fn-popover-arrow-margin: 1.5rem;
+$fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
+
 .#{$block} {
   @include fn-reset();
   @include fn-flex(column);
 
   background-color: $fn-color-white;
   border-radius: 0.75rem;
-  box-shadow: $fn-shadow-black-level-1;
   padding: 1rem 1.5rem;
+  position: relative;
+  filter: drop-shadow(0 0 0.125rem rgba(0, 0, 0, 0.25)) drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.25));
 
   &__title {
     @include fn-reset();
@@ -23,6 +29,7 @@ $block: #{$fn-namespace}-popover;
     @include fn-reset();
 
     margin: auto;
+    padding: 0.5rem 0 0.5rem;
   }
 
   &__button-container {
@@ -34,6 +41,112 @@ $block: #{$fn-namespace}-popover;
 
     button:not(:last-child) {
       @include fn-set-margin-right(0.375rem);
+    }
+  }
+
+  &__arrow {
+    @include fn-reset();
+
+    content: " ";
+    position: absolute;
+    background: $fn-color-white;
+    width: $fn-popover-arrow-size;
+    height: $fn-popover-arrow-size;
+    bottom: $fn-popover-arrow-offset;
+    transform: rotate(45deg);
+
+    &--bottom,
+    &--bottom-left,
+    &--bottom-right {
+      bottom: $fn-popover-arrow-offset;
+    }
+
+    &--bottom {
+      right: $fn-popover-arrow-middle-calc;
+    }
+
+    &--bottom-left {
+      right: auto;
+    }
+
+    &--bottom-right {
+      right: $fn-popover-arrow-margin;
+
+      @include fn-rtl() {
+        right: auto;
+        left: $fn-popover-arrow-margin;
+      }
+    }
+
+    &--top,
+    &--top-left,
+    &--top-right {
+      top: $fn-popover-arrow-offset;
+    }
+
+    &--top {
+      right: $fn-popover-arrow-middle-calc;
+    }
+
+    &--top-left {
+      top: $fn-popover-arrow-offset;
+      right: auto;
+    }
+
+    &--top-right {
+      top: $fn-popover-arrow-offset;
+      right: $fn-popover-arrow-margin;
+
+      @include fn-rtl() {
+        right: auto;
+        left: $fn-popover-arrow-margin;
+      }
+    }
+
+    &--left,
+    &--left-top,
+    &--left-bottom {
+      left: $fn-popover-arrow-offset;
+
+      @include fn-rtl() {
+        left: auto;
+        right: $fn-popover-arrow-offset;
+      }
+    }
+
+    &--left {
+      top: $fn-popover-arrow-middle-calc;
+    }
+
+    &--left-top {
+      top: $fn-popover-arrow-margin;
+    }
+
+    &--left-bottom {
+      bottom: $fn-popover-arrow-margin;
+    }
+
+    &--right,
+    &--right-top,
+    &--right-bottom {
+      right: $fn-popover-arrow-offset;
+
+      @include fn-rtl() {
+        right: auto;
+        left: $fn-popover-arrow-offset;
+      }
+    }
+
+    &--right {
+      top: $fn-popover-arrow-middle-calc;
+    }
+
+    &--right-top {
+      top: $fn-popover-arrow-margin;
+    }
+
+    &--right-bottom {
+      bottom: $fn-popover-arrow-margin;
     }
   }
 }
