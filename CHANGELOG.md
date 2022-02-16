@@ -1,4 +1,11 @@
 
+### 0.21.2-rc.13 (2022-02-16)
+
+
+### Bug Fixes
+
+* **fn:** update Notifications to latest design [ci visual] ([#3194](https://github.com/SAP/fundamental-styles/issues/3194)) ([4b8a741](https://github.com/SAP/fundamental-styles/commit/4b8a741c3685c7789727c3a29e9ab4e71c145a6e))
+
 ### 0.21.2-rc.12 (2022-02-15)
 
 
