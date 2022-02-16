@@ -1,4 +1,15 @@
 
+## 0.22.0-rc.0 (2022-02-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** update release notes
+
+### Features
+
+* **styles:** info label display mode, update design [ci visual] ([#3189](https://github.com/SAP/fundamental-styles/issues/3189)) ([f47c297](https://github.com/SAP/fundamental-styles/commit/f47c297cf98650b5c329e644f1737d87bbe80cc1))
+
 ### 0.21.2-rc.13 (2022-02-16)
 
 
