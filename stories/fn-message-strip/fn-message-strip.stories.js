@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Message Strip',
+    title: 'BTP FN Components/Message Strip',
     parameters: {
         description: `**Modifier classes for Message Strip:**
 

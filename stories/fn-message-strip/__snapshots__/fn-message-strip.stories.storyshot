@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Message Strip Dismissible Message Strip 1`] = `
+exports[`Storyshots BTP FN Components/Message Strip Dismissible Message Strip 1`] = `
 <div
   dir="ltr"
 >
@@ -155,7 +155,7 @@ exports[`Storyshots FN Components/Message Strip Dismissible Message Strip 1`] = 
 </div>
 `;
 
-exports[`Storyshots FN Components/Message Strip Message Strip with No Icon 1`] = `
+exports[`Storyshots BTP FN Components/Message Strip Message Strip with No Icon 1`] = `
 <div
   dir="ltr"
 >
@@ -290,7 +290,7 @@ exports[`Storyshots FN Components/Message Strip Message Strip with No Icon 1`] =
 </div>
 `;
 
-exports[`Storyshots FN Components/Message Strip Non-Dismissible Message Strip 1`] = `
+exports[`Storyshots BTP FN Components/Message Strip Non-Dismissible Message Strip 1`] = `
 <div
   dir="ltr"
 >

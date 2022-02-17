@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Table Standard Table 1`] = `
+exports[`Storyshots BTP FN Components/Table Standard Table 1`] = `
 <div
   dir="ltr"
 >
@@ -265,7 +265,7 @@ exports[`Storyshots FN Components/Table Standard Table 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Table Table with Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Table Table with Buttons 1`] = `
 <div
   dir="ltr"
 >
@@ -552,7 +552,7 @@ exports[`Storyshots FN Components/Table Table with Buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Table Table with Byline 1`] = `
+exports[`Storyshots BTP FN Components/Table Table with Byline 1`] = `
 <div
   dir="ltr"
 >
@@ -855,7 +855,7 @@ exports[`Storyshots FN Components/Table Table with Byline 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Table Table with Checkboxes 1`] = `
+exports[`Storyshots BTP FN Components/Table Table with Checkboxes 1`] = `
 <div
   dir="ltr"
 >
@@ -1234,7 +1234,7 @@ exports[`Storyshots FN Components/Table Table with Checkboxes 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Table Table with Group Headers 1`] = `
+exports[`Storyshots BTP FN Components/Table Table with Group Headers 1`] = `
 <div
   dir="ltr"
 >
@@ -1518,7 +1518,7 @@ exports[`Storyshots FN Components/Table Table with Group Headers 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Table Table with Selected Rows / Cells 1`] = `
+exports[`Storyshots BTP FN Components/Table Table with Selected Rows / Cells 1`] = `
 <div
   dir="ltr"
 >
@@ -1810,7 +1810,7 @@ exports[`Storyshots FN Components/Table Table with Selected Rows / Cells 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Table Table with Statuses and Info Labels 1`] = `
+exports[`Storyshots BTP FN Components/Table Table with Statuses and Info Labels 1`] = `
 <div
   dir="ltr"
 >

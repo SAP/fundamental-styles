@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Title',
+    title: 'BTP FN Components/Title',
     parameters: {
         description: `
 A title component whose semantic level and visual appearance can be set separately, providing flexibility in design while adhering to accessibility best practices.`,

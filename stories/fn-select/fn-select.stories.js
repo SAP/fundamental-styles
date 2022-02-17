@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Select',
+    title: 'BTP FN Components/Select',
     parameters: {
         description: `
 

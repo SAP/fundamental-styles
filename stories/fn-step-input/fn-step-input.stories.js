@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Step Input',
+    title: 'BTP FN Components/Step Input',
     parameters: {
         description: `
 

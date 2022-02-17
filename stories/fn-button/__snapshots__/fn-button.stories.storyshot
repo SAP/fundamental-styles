@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Button Icon Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Button Icon Buttons 1`] = `
 <div
   dir="ltr"
 >
@@ -424,7 +424,7 @@ exports[`Storyshots FN Components/Button Icon Buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Layout Button 1`] = `
+exports[`Storyshots BTP FN Components/Button Layout Button 1`] = `
 <div
   dir="ltr"
 >
@@ -618,7 +618,7 @@ exports[`Storyshots FN Components/Button Layout Button 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Menu Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Button Menu Buttons 1`] = `
 <div
   dir="ltr"
 >
@@ -963,7 +963,7 @@ exports[`Storyshots FN Components/Button Menu Buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Nested Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Button Nested Buttons 1`] = `
 <div
   dir="ltr"
 >
@@ -1171,7 +1171,7 @@ exports[`Storyshots FN Components/Button Nested Buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Primary Button 1`] = `
+exports[`Storyshots BTP FN Components/Button Primary Button 1`] = `
 <div
   dir="ltr"
 >
@@ -1467,7 +1467,7 @@ exports[`Storyshots FN Components/Button Primary Button 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Secondary Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Button Secondary Buttons 1`] = `
 <div
   dir="ltr"
 >
@@ -1763,7 +1763,7 @@ exports[`Storyshots FN Components/Button Secondary Buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Segmented Button 1`] = `
+exports[`Storyshots BTP FN Components/Button Segmented Button 1`] = `
 <div
   dir="ltr"
 >
@@ -2321,7 +2321,7 @@ exports[`Storyshots FN Components/Button Segmented Button 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Semantic Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Button Semantic Buttons 1`] = `
 <div
   dir="ltr"
 >
@@ -2949,7 +2949,7 @@ exports[`Storyshots FN Components/Button Semantic Buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Split Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Button Split Buttons 1`] = `
 <div
   dir="ltr"
 >
@@ -3446,7 +3446,7 @@ exports[`Storyshots FN Components/Button Split Buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Button Toggle Buttons 1`] = `
+exports[`Storyshots BTP FN Components/Button Toggle Buttons 1`] = `
 <div
   dir="ltr"
 >

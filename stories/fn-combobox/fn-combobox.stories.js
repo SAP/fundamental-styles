@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Combobox',
+    title: 'BTP FN Components/Combobox',
     parameters: {
         description: `
 

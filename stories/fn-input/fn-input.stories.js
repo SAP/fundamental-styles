@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Input',
+    title: 'BTP FN Components/Input',
     parameters: {
         description: `**Modifier classes for text field:**
 

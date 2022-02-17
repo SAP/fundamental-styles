@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Form Checkbox Form Group 1`] = `
+exports[`Storyshots BTP FN Components/Form Checkbox Form Group 1`] = `
 <div
   dir="ltr"
 >
@@ -738,7 +738,7 @@ exports[`Storyshots FN Components/Form Checkbox Form Group 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Form Input Form Items 1`] = `
+exports[`Storyshots BTP FN Components/Form Input Form Items 1`] = `
 <div
   dir="ltr"
 >
@@ -916,7 +916,7 @@ exports[`Storyshots FN Components/Form Input Form Items 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Form Multi-Input Form Item 1`] = `
+exports[`Storyshots BTP FN Components/Form Multi-Input Form Item 1`] = `
 <div
   dir="ltr"
 >
@@ -1052,7 +1052,7 @@ exports[`Storyshots FN Components/Form Multi-Input Form Item 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Form Radio Form Group 1`] = `
+exports[`Storyshots BTP FN Components/Form Radio Form Group 1`] = `
 <div
   dir="ltr"
 >
@@ -1789,7 +1789,7 @@ exports[`Storyshots FN Components/Form Radio Form Group 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Form Step-Input Form Item 1`] = `
+exports[`Storyshots BTP FN Components/Form Step-Input Form Item 1`] = `
 <div
   dir="ltr"
 >

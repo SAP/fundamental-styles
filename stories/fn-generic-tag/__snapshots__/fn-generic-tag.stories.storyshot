@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Generic Tag Generic Tag 1`] = `
+exports[`Storyshots BTP FN Components/Generic Tag Generic Tag 1`] = `
 <div
   dir="ltr"
 >
@@ -185,7 +185,7 @@ exports[`Storyshots FN Components/Generic Tag Generic Tag 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Generic Tag Generic Tag Critical 1`] = `
+exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Critical 1`] = `
 <div
   dir="ltr"
 >
@@ -435,7 +435,7 @@ exports[`Storyshots FN Components/Generic Tag Generic Tag Critical 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Generic Tag Generic Tag Info 1`] = `
+exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Info 1`] = `
 <div
   dir="ltr"
 >
@@ -685,7 +685,7 @@ exports[`Storyshots FN Components/Generic Tag Generic Tag Info 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Generic Tag Generic Tag Negative 1`] = `
+exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Negative 1`] = `
 <div
   dir="ltr"
 >
@@ -935,7 +935,7 @@ exports[`Storyshots FN Components/Generic Tag Generic Tag Negative 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Generic Tag Generic Tag Positive 1`] = `
+exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Positive 1`] = `
 <div
   dir="ltr"
 >
