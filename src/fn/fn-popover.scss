@@ -61,15 +61,18 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
       bottom: $fn-popover-arrow-offset;
     }
 
-    &--bottom {
+    &--bottom,
+    &--top {
       right: $fn-popover-arrow-middle-calc;
     }
 
-    &--bottom-left {
+    &--bottom-left,
+    &--top-left {
       right: auto;
     }
 
-    &--bottom-right {
+    &--bottom-right,
+    &--top-right {
       right: $fn-popover-arrow-margin;
 
       @include fn-rtl() {
@@ -84,25 +87,6 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
       top: $fn-popover-arrow-offset;
     }
 
-    &--top {
-      right: $fn-popover-arrow-middle-calc;
-    }
-
-    &--top-left {
-      top: $fn-popover-arrow-offset;
-      right: auto;
-    }
-
-    &--top-right {
-      top: $fn-popover-arrow-offset;
-      right: $fn-popover-arrow-margin;
-
-      @include fn-rtl() {
-        right: auto;
-        left: $fn-popover-arrow-margin;
-      }
-    }
-
     &--left,
     &--left-top,
     &--left-bottom {
@@ -114,15 +98,18 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
       }
     }
 
-    &--left {
+    &--left,
+    &--right {
       top: $fn-popover-arrow-middle-calc;
     }
 
-    &--left-top {
+    &--left-top,
+    &--right-top {
       top: $fn-popover-arrow-margin;
     }
 
-    &--left-bottom {
+    &--left-bottom,
+    &--right-bottom {
       bottom: $fn-popover-arrow-margin;
     }
 
@@ -135,18 +122,6 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
         right: auto;
         left: $fn-popover-arrow-offset;
       }
-    }
-
-    &--right {
-      top: $fn-popover-arrow-middle-calc;
-    }
-
-    &--right-top {
-      top: $fn-popover-arrow-margin;
-    }
-
-    &--right-bottom {
-      bottom: $fn-popover-arrow-margin;
     }
   }
 }
