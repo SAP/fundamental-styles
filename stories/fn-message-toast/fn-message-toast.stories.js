@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Message Toast',
+    title: 'BTP FN Components/Message Toast',
     parameters: {
         description: `
 

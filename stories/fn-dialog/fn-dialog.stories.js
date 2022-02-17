@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Dialog',
+    title: 'BTP FN Components/Dialog',
     parameters: {
         description: `
 Dialog is un-opinionated component, which offers great options for content.

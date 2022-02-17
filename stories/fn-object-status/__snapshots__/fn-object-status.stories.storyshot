@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Object Status Interactive Object Status 1`] = `
+exports[`Storyshots BTP FN Components/Object Status Interactive Object Status 1`] = `
 <div
   dir="ltr"
 >
@@ -525,7 +525,7 @@ exports[`Storyshots FN Components/Object Status Interactive Object Status 1`] = 
 </div>
 `;
 
-exports[`Storyshots FN Components/Object Status Non-Interactive Object Status 1`] = `
+exports[`Storyshots BTP FN Components/Object Status Non-Interactive Object Status 1`] = `
 <div
   dir="ltr"
 >

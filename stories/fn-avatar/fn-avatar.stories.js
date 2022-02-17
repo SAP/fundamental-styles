@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Avatar',
+    title: 'BTP FN Components/Avatar',
     parameters: {
         description: `
 **Modifier classes for Avatar:**

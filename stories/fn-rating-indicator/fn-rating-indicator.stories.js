@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Rating Indicator',
+    title: 'BTP FN Components/Rating Indicator',
     parameters: {
         description: `
         `,

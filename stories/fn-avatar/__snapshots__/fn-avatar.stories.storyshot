@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Avatar Circle Decorative Avatar with Icon 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Circle Decorative Avatar with Icon 1`] = `
 <div
   dir="ltr"
 >
@@ -1342,7 +1342,7 @@ exports[`Storyshots FN Components/Avatar Circle Decorative Avatar with Icon 1`] 
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Circle Decorative Avatar with Initials 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Circle Decorative Avatar with Initials 1`] = `
 <div
   dir="ltr"
 >
@@ -2286,7 +2286,7 @@ exports[`Storyshots FN Components/Avatar Circle Decorative Avatar with Initials 
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Circle Decorative Avatar with Thumbnail 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Circle Decorative Avatar with Thumbnail 1`] = `
 <div
   dir="ltr"
 >
@@ -2460,7 +2460,7 @@ exports[`Storyshots FN Components/Avatar Circle Decorative Avatar with Thumbnail
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Circle Interactive Avatar with Icon 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Circle Interactive Avatar with Icon 1`] = `
 <div
   dir="ltr"
 >
@@ -3856,7 +3856,7 @@ exports[`Storyshots FN Components/Avatar Circle Interactive Avatar with Icon 1`]
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Circle Interactive Avatar with Initials 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Circle Interactive Avatar with Initials 1`] = `
 <div
   dir="ltr"
 >
@@ -4898,7 +4898,7 @@ exports[`Storyshots FN Components/Avatar Circle Interactive Avatar with Initials
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Circle Interactive Avatar with Thumbnail 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Circle Interactive Avatar with Thumbnail 1`] = `
 <div
   dir="ltr"
 >
@@ -5074,7 +5074,7 @@ exports[`Storyshots FN Components/Avatar Circle Interactive Avatar with Thumbnai
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Rounded Decorative Avatar with Icon 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Rounded Decorative Avatar with Icon 1`] = `
 <div
   dir="ltr"
 >
@@ -6417,7 +6417,7 @@ exports[`Storyshots FN Components/Avatar Rounded Decorative Avatar with Icon 1`]
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Rounded Decorative Avatar with Initials 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Rounded Decorative Avatar with Initials 1`] = `
 <div
   dir="ltr"
 >
@@ -7361,7 +7361,7 @@ exports[`Storyshots FN Components/Avatar Rounded Decorative Avatar with Initials
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Rounded Interactive Avatar with Icon 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Rounded Interactive Avatar with Icon 1`] = `
 <div
   dir="ltr"
 >
@@ -8754,7 +8754,7 @@ exports[`Storyshots FN Components/Avatar Rounded Interactive Avatar with Icon 1`
 </div>
 `;
 
-exports[`Storyshots FN Components/Avatar Rounded Interactive Avatar with Initials 1`] = `
+exports[`Storyshots BTP FN Components/Avatar Rounded Interactive Avatar with Initials 1`] = `
 <div
   dir="ltr"
 >

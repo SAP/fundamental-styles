@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Page Page Footer 1`] = `
+exports[`Storyshots BTP FN Components/Page Page Footer 1`] = `
 <div
   dir="ltr"
 >
@@ -321,7 +321,7 @@ exports[`Storyshots FN Components/Page Page Footer 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Page Page Group Title 1`] = `
+exports[`Storyshots BTP FN Components/Page Page Group Title 1`] = `
 <div
   dir="ltr"
 >
@@ -376,7 +376,7 @@ exports[`Storyshots FN Components/Page Page Group Title 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Page Page Title 1`] = `
+exports[`Storyshots BTP FN Components/Page Page Title 1`] = `
 <div
   dir="ltr"
 >

@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Slider',
+    title: 'BTP FN Components/Slider',
     parameters: {
         description: `**Modifier classes for slider style:**
 

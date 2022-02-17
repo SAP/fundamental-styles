@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Title Semantic Level 1`] = `
+exports[`Storyshots BTP FN Components/Title Semantic Level 1`] = `
 <div
   dir="ltr"
 >
@@ -64,7 +64,7 @@ exports[`Storyshots FN Components/Title Semantic Level 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Title Text Wrapping 1`] = `
+exports[`Storyshots BTP FN Components/Title Text Wrapping 1`] = `
 <div
   dir="ltr"
 >
@@ -146,7 +146,7 @@ exports[`Storyshots FN Components/Title Text Wrapping 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Title Visual Level 1`] = `
+exports[`Storyshots BTP FN Components/Title Visual Level 1`] = `
 <div
   dir="ltr"
 >

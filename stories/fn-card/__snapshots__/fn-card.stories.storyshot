@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Card Card 1`] = `
+exports[`Storyshots BTP FN Components/Card Card 1`] = `
 <div
   dir="ltr"
 >
@@ -310,7 +310,7 @@ exports[`Storyshots FN Components/Card Card 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Card Data Card 1`] = `
+exports[`Storyshots BTP FN Components/Card Data Card 1`] = `
 <div
   dir="ltr"
 >

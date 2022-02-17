@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Token',
+    title: 'BTP FN Components/Token',
     parameters: {
         description: `
 

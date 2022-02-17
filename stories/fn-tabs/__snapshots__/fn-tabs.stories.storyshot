@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Tabs Default 1`] = `
+exports[`Storyshots BTP FN Components/Tabs Default 1`] = `
 <div
   dir="ltr"
 >
@@ -218,7 +218,7 @@ exports[`Storyshots FN Components/Tabs Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Tabs Multi-Instance Tabs 1`] = `
+exports[`Storyshots BTP FN Components/Tabs Multi-Instance Tabs 1`] = `
 <div
   dir="ltr"
 >
@@ -479,7 +479,7 @@ exports[`Storyshots FN Components/Tabs Multi-Instance Tabs 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Tabs Semantic Tabs 1`] = `
+exports[`Storyshots BTP FN Components/Tabs Semantic Tabs 1`] = `
 <div
   dir="ltr"
 >

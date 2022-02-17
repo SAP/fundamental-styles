@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Button',
+    title: 'BTP FN Components/Button',
     parameters: {
         description: `
 **Modifier classes for button style:**
