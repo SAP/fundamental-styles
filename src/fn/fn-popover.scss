@@ -56,8 +56,8 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
     transform: rotate(45deg);
 
     &--bottom,
-    &--bottom-left,
-    &--bottom-right {
+    &--bottom-start,
+    &--bottom-end {
       bottom: $fn-popover-arrow-offset;
     }
 
@@ -66,13 +66,13 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
       right: $fn-popover-arrow-middle-calc;
     }
 
-    &--bottom-left,
-    &--top-left {
+    &--bottom-start,
+    &--top-start {
       right: auto;
     }
 
-    &--bottom-right,
-    &--top-right {
+    &--bottom-end,
+    &--top-end {
       right: $fn-popover-arrow-margin;
 
       @include fn-rtl() {
@@ -82,14 +82,14 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
     }
 
     &--top,
-    &--top-left,
-    &--top-right {
+    &--top-start,
+    &--top-end {
       top: $fn-popover-arrow-offset;
     }
 
-    &--left,
-    &--left-top,
-    &--left-bottom {
+    &--start,
+    &--start-top,
+    &--start-bottom {
       left: $fn-popover-arrow-offset;
 
       @include fn-rtl() {
@@ -98,24 +98,24 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
       }
     }
 
-    &--left,
-    &--right {
+    &--start,
+    &--end {
       top: $fn-popover-arrow-middle-calc;
     }
 
-    &--left-top,
-    &--right-top {
+    &--start-top,
+    &--end-top {
       top: $fn-popover-arrow-margin;
     }
 
-    &--left-bottom,
-    &--right-bottom {
+    &--start-bottom,
+    &--end-bottom {
       bottom: $fn-popover-arrow-margin;
     }
 
-    &--right,
-    &--right-top,
-    &--right-bottom {
+    &--end,
+    &--end-top,
+    &--end-bottom {
       right: $fn-popover-arrow-offset;
 
       @include fn-rtl() {

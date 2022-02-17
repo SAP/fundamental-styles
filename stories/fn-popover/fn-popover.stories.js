@@ -29,7 +29,7 @@ export const Popover = () => `
         <div class="fn-popover__arrow fn-popover__arrow--bottom"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with bottom-left arrow.</h1>
+        <h1 class="fn-popover__title">Popover with bottom-start arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -44,10 +44,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--bottom-left"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--bottom-start"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with bottom-right arrow.</h1>
+        <h1 class="fn-popover__title">Popover with bottom-end arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -62,7 +62,7 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--bottom-right"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--bottom-end"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
         <h1 class="fn-popover__title">Popover with top arrow.</h1>
@@ -83,7 +83,7 @@ export const Popover = () => `
         <div class="fn-popover__arrow fn-popover__arrow--top"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with top-left arrow.</h1>
+        <h1 class="fn-popover__title">Popover with top-start arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -98,10 +98,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--top-left"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--top-start"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with top-right arrow.</h1>
+        <h1 class="fn-popover__title">Popover with top-end arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -116,10 +116,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--top-right"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--top-end"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with left arrow.</h1>
+        <h1 class="fn-popover__title">Popover with start arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -134,10 +134,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--left"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--start"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with left-top arrow.</h1>
+        <h1 class="fn-popover__title">Popover with start-top arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -152,10 +152,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--left-top"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--start-top"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with left-bottom arrow.</h1>
+        <h1 class="fn-popover__title">Popover with start-bottom arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -170,10 +170,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--left-bottom"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--start-bottom"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with right arrow.</h1>
+        <h1 class="fn-popover__title">Popover with end arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -188,10 +188,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--right"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--end"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with right-top arrow.</h1>
+        <h1 class="fn-popover__title">Popover with end-top arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -206,10 +206,10 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--right-top"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--end-top"></div>
     </div>
     <div class="fn-popover" style="height: 300px; width: 300px; margin-bottom: 2rem;">
-        <h1 class="fn-popover__title">Popover with right-bottom arrow.</h1>
+        <h1 class="fn-popover__title">Popover with end-bottom arrow.</h1>
         <div class="fn-popover__body">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
@@ -224,7 +224,7 @@ export const Popover = () => `
                 <span class="fn-button__text">Cancel</span>
             </button>
         </div>
-        <div class="fn-popover__arrow fn-popover__arrow--right-bottom"></div>
+        <div class="fn-popover__arrow fn-popover__arrow--end-bottom"></div>
     </div>
 </div>
 `;

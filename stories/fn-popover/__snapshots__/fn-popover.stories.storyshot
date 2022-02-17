@@ -5,173 +5,914 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
   dir="ltr"
 >
   
-    
-  <div
-    class="fn-popover"
-    style="max-width: 40rem"
-  >
-    
-        
-    <h1
-      class="fn-popover__title"
-    >
-      Popover Title
-    </h1>
-    
-        
-    <span
-      class="fn-popover__subtitle"
-    >
-      Popover Subtitle
-    </span>
-    
-    
-  </div>
-  
 
-</div>
-`;
-
-exports[`Storyshots FN Components/Popover Data Popover 1`] = `
-<div
-  dir="ltr"
->
-  
-    
   <div
-    class="fn-popover fn-popover--data"
-    style="max-width: 40rem"
+    style="display:flex; justify-content:space-around; flex-wrap: wrap"
   >
     
-        
-    <h1
-      class="fn-popover__title"
-    >
-      Data Popover Title
-    </h1>
     
-        
-    <span
-      class="fn-popover__subtitle"
-    >
-      Popover Subtitle
-    </span>
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    class="fn-popover fn-popover--data is-focus"
-    style="max-width: 40rem"
-  >
-    
-        
     <div
-      class="fn-popover__title-icon-button-container"
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
     >
       
-            
+        
       <h1
         class="fn-popover__title"
       >
-        Focused Data Popover Title
+        Popover with bottom arrow.
       </h1>
       
-            
-      <button
-        class="fn-button fn-button--secondary fn-popover__title-button"
-      >
         
-                
-        <span
-          class="fn-button__text"
-        >
-          Button
-        </span>
-        
-            
-      </button>
-      
-        
-    </div>
-    
-    
-  </div>
-  
-    
-  <br />
-  <br />
-  
-    
-  <div
-    aria-selected="true"
-    class="fn-popover fn-popover--data is-selected"
-    style="max-width: 40rem"
-  >
-    
-        
-    <div
-      class="fn-popover__title-icon-button-container"
-    >
-      
-            
       <div
-        class="fn-avatar fn-avatar--xs fn-avatar--circle fn-popover__title-icon"
+        class="fn-popover__body"
       >
         
-                
-        <div
-          class="fn-avatar__icon"
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
         >
           
-                    
+                
           <span
-            class="sap-icon sap-icon--accept"
+            class="sap-icon sap-icon--save"
           />
           
                 
-        </div>
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
         
             
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
       </div>
       
-            
+        
       <div
-        class="fn-popover__title-container"
-      >
-        
-                
-        <h1
-          class="fn-popover__title"
-        >
-          Selected Data Popover Title
-        </h1>
-        
-                
-        <span
-          class="fn-popover__subtitle"
-        >
-          Popover Subtitle
-        </span>
-        
-            
-      </div>
+        class="fn-popover__arrow fn-popover__arrow--bottom"
+      />
       
-        
+    
     </div>
     
     
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with bottom-start arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--bottom-start"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with bottom-end arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--bottom-end"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with top arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--top"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with top-start arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--top-start"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with top-end arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--top-end"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with start arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--start"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with start-top arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--start-top"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with start-bottom arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--start-bottom"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with end arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--end"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with end-top arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--end-top"
+      />
+      
+    
+    </div>
+    
+    
+    <div
+      class="fn-popover"
+      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+    >
+      
+        
+      <h1
+        class="fn-popover__title"
+      >
+        Popover with end-bottom arrow.
+      </h1>
+      
+        
+      <div
+        class="fn-popover__body"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--end-bottom"
+      />
+      
+    
+    </div>
+    
+
   </div>
   
-    
-  <br />
-  <br />
-    
 
 </div>
 `;
