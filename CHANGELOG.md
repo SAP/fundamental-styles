@@ -1,4 +1,11 @@
 
+## 0.22.0-rc.1 (2022-02-17)
+
+
+### Bug Fixes
+
+* **fn:** update Token and add selected state [ci visual] ([#3197](https://github.com/SAP/fundamental-styles/issues/3197)) ([f05b458](https://github.com/SAP/fundamental-styles/commit/f05b458cfb6f261bd80cc34fe9cf65ff9517ebb5))
+
 ## 0.22.0-rc.0 (2022-02-16)
 
 
