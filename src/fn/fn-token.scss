@@ -4,6 +4,7 @@ $block: #{$fn-namespace}-token;
 
 .#{$block} {
   @include fn-reset();
+  @include fn-transition();
   @include fn-set-paddings-y-equal(0.125rem);
   @include fn-set-paddings-x(0.5rem, 0.125rem);
 
@@ -40,18 +41,43 @@ $block: #{$fn-namespace}-token;
   }
 
   @include fn-hover() {
-    box-shadow: $fn-shadow-grey-level-1;
+    box-shadow: none;
+    background: $fn-color-grey-1;
+
+    @include fn-selected() {
+      background: $fn-color-blue-3;
+    }
   }
 
-  @include fn-not-focus-visible() {
-    @include fn-hover() {
-      box-shadow: $fn-shadow-grey-level-1;
+  @include fn-selected() {
+    overflow: hidden;
+    box-shadow: none;
+    position: relative;
+    background: $fn-color-blue-2;
+
+    &::before {
+      @include fn-set-top-right-bottom-left(auto, 0, 0, 0);
+
+      height: 0;
+      content: '';
+      width: 100%;
+      position: absolute;
+      border-bottom: 0.0625rem $fn-border-style $fn-color-blue-7;
     }
   }
 
   @include fn-focus-visible() {
-    background: $fn-color-blue-2;
+    outline: none;
+    background: $fn-color-white;
     box-shadow: $fn-focus-outline-shadow-blue;
+
+    @include fn-selected() {
+      background: $fn-color-blue-2;
+
+      &::before {
+        border-bottom: none;
+      }
+    }
   }
 
   @include fn-disabled() {
