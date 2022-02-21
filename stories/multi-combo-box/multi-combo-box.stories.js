@@ -2,7 +2,7 @@ export default {
     title: 'Patterns/Multi ComboBox',
     parameters: {
         description: `
-Multi ComboBox allows users to enter multiple values which are displayed as a tokens. It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
+Multi ComboBox allows users to enter multiple values which are displayed as tokens. It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
 Users can also enter custom values if the entries are not validated by the application. Multi-selection is permitted.
 
 ##Usage
