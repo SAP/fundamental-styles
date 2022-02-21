@@ -1,4 +1,11 @@
 
+## 0.22.0-rc.6 (2022-02-21)
+
+
+### Features
+
+* **styles:** bring horizon themes [ci visual] ([#3201](https://github.com/SAP/fundamental-styles/issues/3201)) ([85485d8](https://github.com/SAP/fundamental-styles/commit/85485d820c18b51c56c7656124ea02abddcc9a3a))
+
 ## 0.22.0-rc.5 (2022-02-21)
 
 ## 0.22.0-rc.4 (2022-02-21)
