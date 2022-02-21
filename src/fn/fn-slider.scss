@@ -2,11 +2,12 @@
 
 $block: #{$fn-namespace}-slider;
 $tag-border-width: 0.125rem;
-$slider-handle-width: 2.25rem;
+$slider-handle-width: 1.5rem;
 $slider-wrapper-offset: $slider-handle-width * 0.5;
-$slider-handle-height: 1.625rem;
+$slider-handle-height: 1.5rem;
 $slider-dot-size: 0.25rem;
 $slider-height: 0.5rem;
+$slider-handle-border: 0 0 0 0.0625rem $fn-color-grey-5;
 
 @mixin fn-slider-dot() {
   @include fn-reset();
@@ -30,7 +31,7 @@ $slider-height: 0.5rem;
   width: 100%;
   position: relative;
   height: $slider-height;
-  background: $fn-color-grey-2;
+  background: $fn-color-grey-3;
   border-radius: $fn-border-radius-4;
 
   &::after {
@@ -41,6 +42,26 @@ $slider-height: 0.5rem;
     @include fn-slider-dot() {
       left: auto;
       right: 0.125rem;
+    }
+  }
+
+  @include fn-hover() {
+    background: $fn-color-grey-3;
+
+    .#{$block}__track-range {
+      background: $fn-color-blue-8;
+    }
+
+    @include fn-active() {
+      .#{$block}__track-range {
+        background: $fn-color-blue-7;
+      }
+    }
+  }
+
+  @include fn-active() {
+    .#{$block}__track-range {
+      background: $fn-color-blue-7;
     }
   }
 
@@ -89,34 +110,57 @@ $slider-height: 0.5rem;
     cursor: pointer;
     padding: 0.5rem;
     position: absolute;
+    border-radius: 50%;
     background: $fn-color-white;
     width: $slider-handle-width;
     transform: translateX(-50%);
     height: $slider-handle-height;
-    border-radius: $fn-border-radius-6;
-    box-shadow: $fn-shadow-blue-level-0;
+    box-shadow: $slider-handle-border, $fn-shadow-black-level-0;
 
     [class*='sap-icon'] {
       font-size: 0.75rem;
-      color: $fn-color-blue-7;
+      color: $fn-color-grey-7;
     }
 
     [class*='sap-icon']:first-child {
       transform: rotate(90deg);
+      margin-left: -0.1875rem;
 
       @include fn-rtl() {
         transform: rotate(-90deg);
+        margin-left: auto;
+        margin-right: -0.1875rem;
       }
     }
 
     [class*='sap-icon']:last-child {
-      margin-left: 0.375rem;
+      margin-left: 0.125rem;
       transform: rotate(-90deg);
 
       @include fn-rtl() {
         margin-left: auto;
-        margin-right: 0.375rem;
+        margin-right: 0.125rem;
         transform: rotate(90deg);
+      }
+    }
+
+    @include fn-hover() {
+      box-shadow: $slider-handle-border, $fn-shadow-black-level-1;
+
+      @include fn-active() {
+        box-shadow: $fn-focus-outline-shadow-blue;
+
+        [class*='sap-icon'] {
+          color: $fn-color-blue-7;
+        }
+      }
+    }
+
+    @include fn-active() {
+      box-shadow: $fn-focus-outline-shadow-blue;
+
+      [class*='sap-icon'] {
+        color: $fn-color-blue-7;
       }
     }
 
@@ -124,36 +168,28 @@ $slider-height: 0.5rem;
       outline: none;
     }
 
-    @include fn-hover() {
-      box-shadow: $fn-shadow-blue-level-1;
-
-      @include fn-active() {
-        box-shadow: $fn-shadow-blue-level-0;
-      }
-    }
-
-    @include fn-active() {
-      box-shadow: $fn-shadow-blue-level-0;
-    }
-
-    @include fn-is-focus() {
-      box-shadow: $fn-focus-outline-shadow-blue;
-    }
-
     @include fn-not-focus-visible() {
-      box-shadow: $fn-shadow-blue-level-0;
+      box-shadow: $slider-handle-border, $fn-shadow-black-level-0;
 
       @include fn-hover() {
-        box-shadow: $fn-shadow-blue-level-1;
+        box-shadow: $slider-handle-border, $fn-shadow-black-level-1;
 
         @include fn-active() {
-          box-shadow: $fn-shadow-blue-level-0;
+          box-shadow: $fn-focus-outline-shadow-blue;
+
+          [class*='sap-icon'] {
+            color: $fn-color-blue-7;
+          }
         }
       }
     }
 
     @include fn-focus-visible() {
       box-shadow: $fn-focus-outline-shadow-blue;
+
+      [class*='sap-icon'] {
+        color: $fn-color-blue-7;
+      }
     }
 
     @include fn-rtl() {
