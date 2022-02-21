@@ -14,7 +14,7 @@ export default {
 <br><br>
 
         `,
-        components: ['fn-input', 'fn-input', 'icon']
+        components: ['fn-input', 'fn-input', 'fn-input-message', 'icon']
 
     }
 };
@@ -23,7 +23,7 @@ const localStyles = `
 <style>
     .docs-fn-container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
         background: white;
@@ -401,5 +401,49 @@ PositiveInput.parameters = {
         description: {
             story: 'Add the `.fn-input--positive` modifier class to `.fn-input` for Positive Input.'
         }
+    }
+};
+
+export const InputMessages = () => `${localStyles}
+
+<div class="docs-fn-container">
+    <div><b>positive</b></div>
+    <div class="fn-input-message fn-input-message--positive">
+        <div class="fn-input-message__text">Input message</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>negative</b></div>
+    <div class="fn-input-message fn-input-message--negative">
+        <div class="fn-input-message__text">Input message</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>critical</b></div>
+    <div class="fn-input-message fn-input-message--critical">
+        <div class="fn-input-message__text">Input message</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>info</b></div>
+    <div class="fn-input-message fn-input-message--info">
+        <div class="fn-input-message__text">Input message</div>
+    </div>
+</div>
+
+<div class="docs-fn-container">
+    <div><b>info</b></div>
+    <div class="fn-input-message fn-input-message--info">
+        <div class="fn-input-message__text fn-input-message__text--truncate">Very long input message with truncation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+</div>
+`;
+
+InputMessages.parameters = {
+    docs: {
+        iframeHeight: 500
     }
 };

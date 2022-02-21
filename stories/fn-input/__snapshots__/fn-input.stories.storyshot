@@ -10,7 +10,7 @@ exports[`Storyshots BTP FN Components/Input Critical Input 1`] = `
     
     .docs-fn-container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
         background: white;
@@ -341,7 +341,7 @@ exports[`Storyshots BTP FN Components/Input Default Input 1`] = `
     
     .docs-fn-container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
         background: white;
@@ -637,7 +637,7 @@ exports[`Storyshots BTP FN Components/Input Info Input 1`] = `
     
     .docs-fn-container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
         background: white;
@@ -958,6 +958,196 @@ exports[`Storyshots BTP FN Components/Input Info Input 1`] = `
 </div>
 `;
 
+exports[`Storyshots BTP FN Components/Input Input Messages 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <style>
+    
+    .docs-fn-container {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 50vw;
+        column-gap: 0.1rem;
+        row-gap: 0.1rem;
+        background: white;
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .docs-fn-header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .docs-fn-header-container code {
+        margin: 0 1rem;
+    }
+
+  </style>
+  
+
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        positive
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input-message fn-input-message--positive"
+    >
+      
+        
+      <div
+        class="fn-input-message__text"
+      >
+        Input message
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        negative
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input-message fn-input-message--negative"
+    >
+      
+        
+      <div
+        class="fn-input-message__text"
+      >
+        Input message
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        critical
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input-message fn-input-message--critical"
+    >
+      
+        
+      <div
+        class="fn-input-message__text"
+      >
+        Input message
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        info
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input-message fn-input-message--info"
+    >
+      
+        
+      <div
+        class="fn-input-message__text"
+      >
+        Input message
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="docs-fn-container"
+  >
+    
+    
+    <div>
+      <b>
+        info
+      </b>
+    </div>
+    
+    
+    <div
+      class="fn-input-message fn-input-message--info"
+    >
+      
+        
+      <div
+        class="fn-input-message__text fn-input-message__text--truncate"
+      >
+        Very long input message with truncation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
+
 exports[`Storyshots BTP FN Components/Input Negative Input 1`] = `
 <div
   dir="ltr"
@@ -968,7 +1158,7 @@ exports[`Storyshots BTP FN Components/Input Negative Input 1`] = `
     
     .docs-fn-container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
         background: white;
@@ -1299,7 +1489,7 @@ exports[`Storyshots BTP FN Components/Input Positive Input 1`] = `
     
     .docs-fn-container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
         background: white;

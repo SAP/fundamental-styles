@@ -1,0 +1,37 @@
+@import "./fn-settings";
+
+$block: #{$fn-namespace}-input-message;
+
+$fn-input-message-states: (
+  "positive": ("background": $fn-color-green-2),
+  "critical": ("background": $fn-color-mango-2),
+  "negative": ("background": $fn-color-red-2),
+  "info": ("background": $fn-color-blue-2),
+);
+
+.#{$block} {
+  @include fn-reset();
+
+  width: 100%;
+  max-width: 100%;
+  min-height: $fn-control-height;
+  padding: 0.625rem 0.625rem 0.375rem 0.625rem;
+  border-radius: 0 0 $fn-border-radius-6 $fn-border-radius-6;
+
+  @each $set-name, $set-prop in $fn-input-message-states {
+    &--#{$set-name} {
+      background: map-get($set-prop, 'background');
+    }
+  }
+
+  &__text {
+    @include fn-reset();
+
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    &--truncate {
+      @include fn-ellipsis();
+    }
+  }
+}
