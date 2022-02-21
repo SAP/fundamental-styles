@@ -2,13 +2,23 @@ export default {
     title: 'Patterns/Multi ComboBox',
     parameters: {
         description: `
-The multi-combo-box component is an opinionated composition of the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components.
-The \`popover\` is shared between the combobox and select components. Please see the \`select\` documentation for the complete list of modifiers,
-That are also  supported by the \`combobox\` component.
+Multi ComboBox allows users to enter multiple values which are displayed as tokens. It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
+Users can also enter custom values if the entries are not validated by the application. Multi-selection is permitted.
 
-\`Multi ComboBox\` allows users to enter multiple values which are displayed as a tokens.
-It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
-If the entries are not validated by the application, users can also enter custom values.
+
+##Usage
+**Use the multi-combo box if:**
+- The user needs to select one or more options from a long list of options.
+- The values of the option list contain secondary information that does not need to be displayed right away.
+
+**Do not use multi-combo box if**
+- The user needs to choose between two options, such as ON or OFF and YES or NO. 
+- You need to display more than one attribute.
+- You want to enable users to add custom values. 
+- Your use case requires all available options to be displayed right away, without any user interaction
+- The user needs to search on multiple attributes.
+- Your use case requires more options to choose from.
+
 `,
         tags: ['f3', 'a11y', 'theme'],
         components: [
@@ -200,6 +210,16 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
 </div>
 </div>
 `;
+CozyAndCompact.parameters = {
+    docs: {
+        description: {
+            story: `
+            The multi-combo box component is  composition of the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components. It can be displayed in compact mode by adding
+            the \`--compact\` modifier class to the building blocks of the components.
+`
+        }
+    }
+};
 
 export const AsFormItem = () => `<div style="height: 300px;">
     <div class="fd-form-item">
@@ -293,6 +313,7 @@ AsFormItem.parameters = {
     docs: {
         description: {
             story: `
+
 Note that the popover body width is restricted to a max of 37.5rem to avoid readability issues in large-width popovers.
 Applications are free to override this in their custom styles if needed and own any readability issues arising from this override.
 `
