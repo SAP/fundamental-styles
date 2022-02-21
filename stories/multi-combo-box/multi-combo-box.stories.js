@@ -5,6 +5,7 @@ export default {
 Multi ComboBox allows users to enter multiple values which are displayed as tokens. It provides an editable input field for filtering the list, and a dropdown menu with a list of the available options.
 Users can also enter custom values if the entries are not validated by the application. Multi-selection is permitted.
 
+
 ##Usage
 **Use the multi-combo box if:**
 - The user needs to select one or more options from a long list of options.
