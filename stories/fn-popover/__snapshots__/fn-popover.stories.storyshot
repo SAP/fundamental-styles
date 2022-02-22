@@ -13,19 +13,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with bottom arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with bottom arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -88,19 +96,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with bottom-start arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with bottom-start arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -163,19 +179,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with bottom-end arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with bottom-end arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -238,19 +262,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with top arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with top arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -313,19 +345,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with top-start arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with top-start arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -388,19 +428,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with top-end arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with top-end arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -463,19 +511,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with start arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with start arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -538,19 +594,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with start-top arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with start-top arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -613,19 +677,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with start-bottom arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with start-bottom arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -688,19 +760,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with end arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with end arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -763,19 +843,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with end-top arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with end-top arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
@@ -838,19 +926,27 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
     
     <div
       class="fn-popover"
-      style="height: 300px; width: 300px; margin-bottom: 2rem;"
+      style="width: 320px; margin-bottom: 2rem;"
     >
       
         
-      <h1
+      <div
         class="fn-popover__title"
       >
-        Popover with end-bottom arrow.
-      </h1>
+        
+            
+        <div
+          class="fn-popover__text"
+        >
+          Popover with end-bottom arrow.
+        </div>
+        
+        
+      </div>
       
         
       <div
-        class="fn-popover__body"
+        class="fn-popover__content"
       >
         
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
