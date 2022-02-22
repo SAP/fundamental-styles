@@ -1,4 +1,11 @@
 
+## 0.22.0-rc.7 (2022-02-22)
+
+
+### Bug Fixes
+
+* **fn:** update Slider to lates design [ci visual] ([#3205](https://github.com/SAP/fundamental-styles/issues/3205)) ([4ec679c](https://github.com/SAP/fundamental-styles/commit/4ec679c6ba25dbaf75132577acee684d1e5b9b69))
+
 ## 0.22.0-rc.6 (2022-02-21)
 
 
