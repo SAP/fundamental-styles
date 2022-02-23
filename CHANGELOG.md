@@ -1,4 +1,11 @@
 
+## 0.22.0-rc.9 (2022-02-23)
+
+
+### Features
+
+* **fn:** introduce Input Messages [ci visual] ([#3204](https://github.com/SAP/fundamental-styles/issues/3204)) ([fd0d22c](https://github.com/SAP/fundamental-styles/commit/fd0d22cc124daeb415bbf30221169330c7b9f72d))
+
 ## 0.22.0-rc.8 (2022-02-23)
 
 
