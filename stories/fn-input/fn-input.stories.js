@@ -14,7 +14,7 @@ export default {
 <br><br>
 
         `,
-        components: ['fn-input', 'fn-input', 'icon']
+        components: ['fn-input', 'fn-input', 'fn-input-message', 'icon']
 
     }
 };
@@ -23,7 +23,7 @@ const localStyles = `
 <style>
     .docs-fn-container {
         display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
         background: white;
@@ -64,14 +64,6 @@ export const DefaultInput = () => `${localStyles}
     <div><b>active</b></div>
     <div class="fn-input">
         <input class="fn-input__text-field is-active" type="text" id="field-3" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input">
-        <input class="fn-input__text-field is-focus" type="text" id="field-4" placeholder="Placeholder" />
         <div class="fn-input__border"></div>
     </div>
 </div>
@@ -130,15 +122,6 @@ export const InfoInput = () => `${localStyles}
     <div><b>active</b></div>
     <div class="fn-input fn-input--info">
         <input class="fn-input__text-field is-active" type="text" id="field-10" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--information"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--info">
-        <input class="fn-input__text-field is-focus" type="text" id="field-11" placeholder="Placeholder" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--information"></span>
     </div>
@@ -210,15 +193,6 @@ export const CriticalInput = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--critical">
-        <input class="fn-input__text-field is-focus" type="text" id="field-18" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--alert"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
     <div><b>disabled</b></div>
     <div class="fn-input fn-input--critical">
         <input class="fn-input__text-field" type="text" id="field-19" placeholder="Placeholder" disabled />
@@ -278,15 +252,6 @@ export const NegativeInput = () => `${localStyles}
     <div><b>active</b></div>
     <div class="fn-input fn-input--negative">
         <input class="fn-input__text-field is-active" type="text" id="field-24" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--error"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--negative">
-        <input class="fn-input__text-field is-focus" type="text" id="field-25" placeholder="Placeholder" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--error"></span>
     </div>
@@ -353,15 +318,6 @@ export const PositiveInput = () => `${localStyles}
     <div><b>active</b></div>
     <div class="fn-input fn-input--positive">
         <input class="fn-input__text-field is-active" type="text" id="field-31" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--sys-enter-2"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--positive">
-        <input class="fn-input__text-field is-focus" type="text" id="field-32" placeholder="Placeholder" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--sys-enter-2"></span>
     </div>

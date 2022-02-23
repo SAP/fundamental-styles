@@ -12,7 +12,7 @@ export default {
 <br><br>
 
         `,
-        components: ['fn-form', 'fn-label', 'fn-input', 'fn-nested-button', 'fn-radio', 'fn-checkbox', 'fn-step-input', 'icon']
+        components: ['fn-form', 'fn-label', 'fn-input', 'fn-input-message', 'fn-nested-button', 'fn-radio', 'fn-checkbox', 'fn-step-input', 'icon']
     }
 };
 
@@ -61,6 +61,73 @@ Primary.parameters = {
     docs: {
         description: {
             story: 'By default, form items will have their labels placed above the form input. This can be changed to a horizontal layout with the modifier class `fn-label--required`.<br/>Add the `fn-label--required` modifier to the form label for required forms. To place the required asterisk before the label text, use `fn-label--required-before`.'
+        }
+    }
+};
+
+export const InputStates = () => `${localStyles}
+    <form class="fn-form" style="max-width: 25rem;">
+        <div class="fn-form__item">
+            <label class="fn-label" for="fname">First Name:</label>
+            <div class="fn-form__control">
+                <div class="fn-input fn-input--critical">
+                    <input class="fn-input__text-field is-active" type="text" id="fname" name="fname" placeholder="Placeholder" />
+                    <div class="fn-input__border"></div>
+                </div>
+                <div class="fn-input-message fn-input-message--critical">
+                    <div class="fn-input-message__text">Input message</div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="fn-form__item">
+            <label class="fn-label fn-label--required" for="lname">Last Name:</label>
+            <div class="fn-form__control">
+                <div class="fn-input fn-input--positive">
+                    <input class="fn-input__text-field is-active" type="text" id="lname" name="lname" placeholder="Placeholder" />
+                    <div class="fn-input__border"></div>
+                </div>
+                <div class="fn-input-message fn-input-message--positive">
+                    <div class="fn-input-message__text">Input message</div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="fn-form__item">
+            <label class="fn-label fn-label--required-before" for="field-1">Required Before:</label>
+            <div class="fn-form__control">
+                <div class="fn-input fn-input--negative">
+                    <input class="fn-input__text-field is-active" type="text" id="field-1" name="field-1" placeholder="Placeholder" />
+                    <div class="fn-input__border"></div>
+                </div>   
+                <div class="fn-input-message fn-input-message--negative">
+                    <div class="fn-input-message__text">Input message</div>
+                </div>    
+            </div> 
+        </div>
+        <br><br>
+        <div class="fn-form__item fn-form__item--horizontal">
+            <label class="fn-label" for="field-2">Horizontal:</label>
+            <div class="fn-form__control">
+                <div class="fn-input fn-input--info">
+                    <input class="fn-input__text-field is-active" type="text" id="field-2" name="field-2" placeholder="Placeholder" />
+                    <div class="fn-input__border"></div>
+                </div>
+                <div class="fn-input-message fn-input-message--info">
+                    <div class="fn-input-message__text">Input message</div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </form>
+`;
+
+InputStates.storyName = 'Input Form Items with Messages';
+
+InputStates.parameters = {
+    docs: {
+        description: {
+            story: ''
         }
     }
 };

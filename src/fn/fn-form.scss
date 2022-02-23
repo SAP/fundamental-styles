@@ -34,4 +34,12 @@ $fn-form-item-margin-bottom: 0.75rem;
       }
     }
   }
+
+  &__control {
+    @include fn-reset();
+
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+  }
 }
