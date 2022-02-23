@@ -2,12 +2,12 @@
 
 $block: #{$fn-namespace}-input;
 
-@mixin fn-input-base($background, $border, $shadow, $hasFocus: false) {
-  @if $hasFocus {
+@mixin fn-input-base($background, $border, $shadow, $focusShadow: false) {
+  @if $focusShadow {
     @if $shadow != "none" {
-      box-shadow: $shadow, $fn-focus-outline-shadow-blue;
+      box-shadow: $shadow, $focusShadow;
     } @else {
-      box-shadow: $fn-focus-outline-shadow-blue;
+      box-shadow: $focusShadow;
     }
   } @else {
     box-shadow: $shadow;
@@ -34,27 +34,17 @@ $block: #{$fn-namespace}-input;
   border-radius: $fn-border-radius-6;
 }
 
-@mixin fn-input-base-states() {
+@mixin fn-input-base-states($shadowFocus) {
   @content;
 
   @include fn-active() {
-    @include fn-input-base($fn-color-white, transparent, none, true);
-
-    & ~ [class*='sap-icon'] {
-      display: none;
-    }
+    @include fn-input-base($fn-color-white, transparent, none, $shadowFocus);
   }
 
   @include fn-focus() {
-    @include fn-input-base($fn-color-white, transparent, none, true);
+    @include fn-input-base($fn-color-white, transparent, none, $shadowFocus);
 
     outline: none;
-  }
-
-  @include fn-focus-active() {
-    & ~ [class*='sap-icon'] {
-      display: none;
-    }
   }
 
   @include fn-disabled() {
@@ -86,7 +76,7 @@ $block: #{$fn-namespace}-input;
   }
 }
 
-@mixin fn-input-base-semantics($background, $border, $shadow) {
+@mixin fn-input-base-semantics($background, $border, $shadow, $shadowFocus) {
   [class*='sap-icon'] {
     color: $border;
     position: absolute;
@@ -96,7 +86,7 @@ $block: #{$fn-namespace}-input;
     @include fn-set-paddings-x($fn-padding-small, 1.625rem);
     @include fn-input-base($background, $border, none);
 
-    @include fn-input-base-states() {
+    @include fn-input-base-states($shadowFocus) {
       @include fn-hover() {
         @include fn-input-base($fn-color-white, $border, $shadow);
       }
@@ -108,12 +98,13 @@ $block: #{$fn-namespace}-input;
   @include fn-reset();
   @include fn-input-base-parameters();
 
+  z-index: 2;
   position: relative;
 
   [class*='sap-icon'] {
     @include fn-set-position-right(0.25rem);
 
-    z-index: 2;
+    z-index: 3;
     width: 1.125rem;
     font-size: 0.9375rem;
     text-align: center;
@@ -136,7 +127,7 @@ $block: #{$fn-namespace}-input;
       line-height: $fn-input-placeholder-line-height;
     }
 
-    @include fn-input-base-states() {
+    @include fn-input-base-states($fn-focus-outline-shadow-blue) {
       @include fn-hover() {
         @include fn-input-base($fn-color-white, $fn-color-grey-7, $fn-shadow-grey-level-1);
       }
@@ -164,19 +155,19 @@ $block: #{$fn-namespace}-input;
   }
 
   &--info {
-    @include fn-input-base-semantics($fn-color-blue-1, $fn-color-blue-7, $fn-shadow-blue-level-1);
+    @include fn-input-base-semantics($fn-color-blue-1, $fn-color-blue-7, $fn-shadow-blue-level-1, $fn-focus-outline-shadow-blue);
   }
 
   &--critical {
-    @include fn-input-base-semantics($fn-color-mango-1, $fn-color-mango-6, $fn-shadow-mango-level-1);
+    @include fn-input-base-semantics($fn-color-mango-1, $fn-color-mango-6, $fn-shadow-mango-level-1, $fn-focus-outline-shadow-mango);
   }
 
   &--negative {
-    @include fn-input-base-semantics($fn-color-red-1, $fn-color-red-7, $fn-shadow-red-level-1);
+    @include fn-input-base-semantics($fn-color-red-1, $fn-color-red-7, $fn-shadow-red-level-1, $fn-focus-outline-shadow-red);
   }
 
   &--positive {
-    @include fn-input-base-semantics($fn-color-green-1, $fn-color-green-7, $fn-shadow-green-level-1);
+    @include fn-input-base-semantics($fn-color-green-1, $fn-color-green-7, $fn-shadow-green-level-1, $fn-focus-outline-shadow-green);
   }
 
   &--select {

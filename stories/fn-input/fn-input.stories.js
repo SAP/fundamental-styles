@@ -69,14 +69,6 @@ export const DefaultInput = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input">
-        <input class="fn-input__text-field is-focus" type="text" id="field-4" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
     <div><b>disabled</b></div>
     <div class="fn-input">
         <input class="fn-input__text-field" type="text" id="field-5" placeholder="Placeholder" disabled />
@@ -130,15 +122,6 @@ export const InfoInput = () => `${localStyles}
     <div><b>active</b></div>
     <div class="fn-input fn-input--info">
         <input class="fn-input__text-field is-active" type="text" id="field-10" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--information"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--info">
-        <input class="fn-input__text-field is-focus" type="text" id="field-11" placeholder="Placeholder" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--information"></span>
     </div>
@@ -210,15 +193,6 @@ export const CriticalInput = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--critical">
-        <input class="fn-input__text-field is-focus" type="text" id="field-18" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--alert"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
     <div><b>disabled</b></div>
     <div class="fn-input fn-input--critical">
         <input class="fn-input__text-field" type="text" id="field-19" placeholder="Placeholder" disabled />
@@ -278,15 +252,6 @@ export const NegativeInput = () => `${localStyles}
     <div><b>active</b></div>
     <div class="fn-input fn-input--negative">
         <input class="fn-input__text-field is-active" type="text" id="field-24" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--error"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--negative">
-        <input class="fn-input__text-field is-focus" type="text" id="field-25" placeholder="Placeholder" />
         <div class="fn-input__border"></div>
         <span class="sap-icon sap-icon--error"></span>
     </div>
@@ -359,15 +324,6 @@ export const PositiveInput = () => `${localStyles}
 </div>
 
 <div class="docs-fn-container">
-    <div><b>focus</b></div>
-    <div class="fn-input fn-input--positive">
-        <input class="fn-input__text-field is-focus" type="text" id="field-32" placeholder="Placeholder" />
-        <div class="fn-input__border"></div>
-        <span class="sap-icon sap-icon--sys-enter-2"></span>
-    </div>
-</div>
-
-<div class="docs-fn-container">
     <div><b>disabled</b></div>
     <div class="fn-input fn-input--positive">
         <input class="fn-input__text-field" type="text" id="field-33" placeholder="Placeholder" disabled />
@@ -401,49 +357,5 @@ PositiveInput.parameters = {
         description: {
             story: 'Add the `.fn-input--positive` modifier class to `.fn-input` for Positive Input.'
         }
-    }
-};
-
-export const InputMessages = () => `${localStyles}
-
-<div class="docs-fn-container">
-    <div><b>positive</b></div>
-    <div class="fn-input-message fn-input-message--positive">
-        <div class="fn-input-message__text">Input message</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>negative</b></div>
-    <div class="fn-input-message fn-input-message--negative">
-        <div class="fn-input-message__text">Input message</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>critical</b></div>
-    <div class="fn-input-message fn-input-message--critical">
-        <div class="fn-input-message__text">Input message</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>info</b></div>
-    <div class="fn-input-message fn-input-message--info">
-        <div class="fn-input-message__text">Input message</div>
-    </div>
-</div>
-
-<div class="docs-fn-container">
-    <div><b>info</b></div>
-    <div class="fn-input-message fn-input-message--info">
-        <div class="fn-input-message__text fn-input-message__text--truncate">Very long input message with truncation lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    </div>
-</div>
-`;
-
-InputMessages.parameters = {
-    docs: {
-        iframeHeight: 500
     }
 };
