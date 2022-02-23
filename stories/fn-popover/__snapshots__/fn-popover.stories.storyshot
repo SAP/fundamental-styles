@@ -1,5 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots FN Components/Popover No Padding Popover 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <div
+    style="display:flex; justify-content:space-around; flex-wrap: wrap"
+  >
+    
+    
+    <div
+      class="fn-popover fn-popover--no-padding"
+      style="width: 320px; height: 320px; margin-bottom: 2rem;"
+    >
+      
+        
+      <div
+        class="fn-popover__content"
+        style="background-image: url('/assets/images/backgrounds/city.jpg')"
+      >
+        
+
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--bottom"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
+
 exports[`Storyshots FN Components/Popover Popover 1`] = `
 <div
   dir="ltr"
@@ -1001,6 +1042,106 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
         
       <div
         class="fn-popover__arrow fn-popover__arrow--end-bottom"
+      />
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots FN Components/Popover Truncate Popover 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <div
+    style="display:flex; justify-content:space-around; flex-wrap: wrap"
+  >
+    
+    
+    <div
+      class="fn-popover"
+      style="width: 320px; margin-bottom: 2rem;"
+    >
+      
+        
+      <div
+        class="fn-popover__title"
+      >
+        
+            
+        <div
+          class="fn-popover__text fn-popover__text--truncate"
+        >
+          Popover with bottom arrow and some very, very long title text.
+        </div>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__content"
+      >
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+            scrambled it to make a type specimen book.
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__button-container"
+      >
+        
+            
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+          
+                
+          <span
+            class="sap-icon sap-icon--save"
+          />
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+          
+            
+        </button>
+        
+            
+        <button
+          class="fn-button fn-button--secondary"
+        >
+          
+                
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+          
+            
+        </button>
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-popover__arrow fn-popover__arrow--bottom"
       />
       
     
