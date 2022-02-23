@@ -21,6 +21,14 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
 
   &--no-padding {
     padding: 0;
+
+    .#{$block}__content {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: $fn-border-radius-12;
+      z-index: 2;
+    }
   }
 
   &__title {
@@ -45,7 +53,6 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
   &__content {
     @include fn-reset();
 
-    margin: auto;
     padding: $fn-popover-padding;
   }
 
@@ -54,18 +61,11 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
     @include fn-flex();
     @include fn-set-margin-left(auto);
 
+    margin-top: auto;
     padding: $fn-popover-padding $fn-popover-padding $fn-popover-button-margin;
 
     button:not(:last-child) {
       @include fn-set-margin-right($fn-popover-button-margin);
-    }
-  }
-
-  &__title,
-  &__content,
-  &__button-container {
-    &--no-padding {
-      padding: 0;
     }
   }
 
@@ -78,6 +78,7 @@ $fn-popover-arrow-middle-calc: calc(50% - 0.25rem);
     background: $fn-color-white;
     bottom: $fn-popover-arrow-offset;
     transform: rotate(45deg);
+    right: $fn-popover-arrow-middle-calc;
 
     &--bottom,
     &--bottom-start,
