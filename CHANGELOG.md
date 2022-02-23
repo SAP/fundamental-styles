@@ -1,4 +1,11 @@
 
+## 0.22.0-rc.8 (2022-02-23)
+
+
+### Features
+
+* **fn:** introduce fn-popover [ci visual] ([#3198](https://github.com/SAP/fundamental-styles/issues/3198)) ([7ece5d7](https://github.com/SAP/fundamental-styles/commit/7ece5d7e303dca0d893b432e083baf774b421b0b))
+
 ## 0.22.0-rc.7 (2022-02-22)
 
 
