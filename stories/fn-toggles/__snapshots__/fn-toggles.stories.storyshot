@@ -8,12 +8,15 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -791,12 +794,15 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -1157,12 +1163,15 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -1941,12 +1950,15 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -2307,12 +2319,15 @@ exports[`Storyshots BTP FN Components/Toggles Switch 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;

@@ -4,6 +4,18 @@ exports[`Storyshots BTP FN Components/Title Semantic Level 1`] = `
 <div
   dir="ltr"
 >
+  
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
+
   <h1
     class="fn-title fn-title--h1"
   >
@@ -68,6 +80,18 @@ exports[`Storyshots BTP FN Components/Title Text Wrapping 1`] = `
 <div
   dir="ltr"
 >
+  
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
+
   <div
     style="width: 600px"
   >
@@ -150,6 +174,18 @@ exports[`Storyshots BTP FN Components/Title Visual Level 1`] = `
 <div
   dir="ltr"
 >
+  
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
+
   <h1
     class="fn-title fn-title--h6"
   >

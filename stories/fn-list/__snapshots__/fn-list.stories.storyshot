@@ -5,6 +5,16 @@ exports[`Storyshots BTP FN Components/List Byline List 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+.docs-story {
+    background: white;
+}
+
+  </style>
+  
+
     
   <ul
     class="fn-list fn-list--byline"
@@ -514,6 +524,16 @@ exports[`Storyshots BTP FN Components/List List 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+.docs-story {
+    background: white;
+}
+
+  </style>
+  
+
     
   <ul
     class="fn-list"

@@ -10,6 +10,10 @@ export default {
 
 const localStyles = `
 <style>
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container > .fn-message-toast {
         margin-bottom: 1rem;
     }

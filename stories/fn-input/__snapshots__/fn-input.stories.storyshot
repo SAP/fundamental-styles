@@ -8,12 +8,15 @@ exports[`Storyshots BTP FN Components/Input Critical Input 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -297,12 +300,15 @@ exports[`Storyshots BTP FN Components/Input Default Input 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -556,12 +562,15 @@ exports[`Storyshots BTP FN Components/Input Info Input 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -845,12 +854,15 @@ exports[`Storyshots BTP FN Components/Input Negative Input 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -1134,12 +1146,15 @@ exports[`Storyshots BTP FN Components/Input Positive Input 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;

@@ -8,12 +8,15 @@ exports[`Storyshots BTP FN Components/Avatar Circle Decorative Avatar with Icon 
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -1350,12 +1353,15 @@ exports[`Storyshots BTP FN Components/Avatar Circle Decorative Avatar with Initi
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -2294,12 +2300,15 @@ exports[`Storyshots BTP FN Components/Avatar Circle Decorative Avatar with Thumb
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -2468,12 +2477,15 @@ exports[`Storyshots BTP FN Components/Avatar Circle Interactive Avatar with Icon
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -3864,12 +3876,15 @@ exports[`Storyshots BTP FN Components/Avatar Circle Interactive Avatar with Init
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -4906,12 +4921,15 @@ exports[`Storyshots BTP FN Components/Avatar Circle Interactive Avatar with Thum
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -5082,12 +5100,15 @@ exports[`Storyshots BTP FN Components/Avatar Rounded Decorative Avatar with Icon
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -6425,12 +6446,15 @@ exports[`Storyshots BTP FN Components/Avatar Rounded Decorative Avatar with Init
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -7369,12 +7393,15 @@ exports[`Storyshots BTP FN Components/Avatar Rounded Interactive Avatar with Ico
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -8762,12 +8789,15 @@ exports[`Storyshots BTP FN Components/Avatar Rounded Interactive Avatar with Ini
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;

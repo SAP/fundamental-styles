@@ -25,7 +25,11 @@ export default {
 
 const localStyles = `
 <style>
-    .fn-message-strip {
+    .docs-story {
+        background: white;
+    }
+
+    .docs-story .fn-message-strip {
         margin-bottom: 1rem;
     }
 </style>

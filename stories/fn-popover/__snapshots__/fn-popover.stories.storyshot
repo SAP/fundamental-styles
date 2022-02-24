@@ -1,13 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FN Components/Popover No Padding Popover 1`] = `
+exports[`Storyshots BTP FN Components/Popover No Padding Popover 1`] = `
 <div
   dir="ltr"
 >
   
 
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+    .docs-fn-container {
+        padding: 5vw;
+        display:flex; 
+        gap: 2vw;
+        flex-wrap: wrap;
+    }
+
+  </style>
+  
+
+
   <div
-    style="display:flex; justify-content:space-around; flex-wrap: wrap"
+    class="docs-fn-container"
   >
     
     
@@ -41,14 +58,31 @@ exports[`Storyshots FN Components/Popover No Padding Popover 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Popover Popover 1`] = `
+exports[`Storyshots BTP FN Components/Popover Popover 1`] = `
 <div
   dir="ltr"
 >
   
 
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+    .docs-fn-container {
+        padding: 5vw;
+        display:flex; 
+        gap: 2vw;
+        flex-wrap: wrap;
+    }
+
+  </style>
+  
+
+
   <div
-    style="display:flex; justify-content:space-around; flex-wrap: wrap"
+    class="docs-fn-container"
   >
     
     
@@ -1054,14 +1088,31 @@ exports[`Storyshots FN Components/Popover Popover 1`] = `
 </div>
 `;
 
-exports[`Storyshots FN Components/Popover Truncate Popover 1`] = `
+exports[`Storyshots BTP FN Components/Popover Truncate Popover 1`] = `
 <div
   dir="ltr"
 >
   
 
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+    .docs-fn-container {
+        padding: 5vw;
+        display:flex; 
+        gap: 2vw;
+        flex-wrap: wrap;
+    }
+
+  </style>
+  
+
+
   <div
-    style="display:flex; justify-content:space-around; flex-wrap: wrap"
+    class="docs-fn-container"
   >
     
     

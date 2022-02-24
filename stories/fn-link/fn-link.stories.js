@@ -18,12 +18,15 @@ Link has 2 options: regular and emphasized
 
 const localStyles = `
 <style>
+.docs-story {
+    background: white;
+}
+
 .docs-fn-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     column-gap: 0.1rem;
     row-gap: 0.1rem;
-    background: white;
     padding: 1rem;
     justify-items: center;
     align-items: center;

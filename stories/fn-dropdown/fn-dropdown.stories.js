@@ -15,7 +15,15 @@ export default {
     }
 };
 
-export const Dropdown = () => `
+const localStyles = `
+<style>
+    .docs-story {
+        background: white;
+    }
+</style>
+`;
+
+export const Dropdown = () => `${localStyles}
 <div style="display: flex; justify-content: space-around; gap: 2rem;">
     <div class="fn-dropdown">
         <p style="padding: 0 0.5rem;">

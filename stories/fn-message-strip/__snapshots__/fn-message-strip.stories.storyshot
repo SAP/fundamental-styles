@@ -8,7 +8,11 @@ exports[`Storyshots BTP FN Components/Message Strip Dismissible Message Strip 1`
 
   <style>
     
-    .fn-message-strip {
+    .docs-story {
+        background: white;
+    }
+
+    .docs-story .fn-message-strip {
         margin-bottom: 1rem;
     }
 
@@ -163,7 +167,11 @@ exports[`Storyshots BTP FN Components/Message Strip Message Strip with No Icon 1
 
   <style>
     
-    .fn-message-strip {
+    .docs-story {
+        background: white;
+    }
+
+    .docs-story .fn-message-strip {
         margin-bottom: 1rem;
     }
 
@@ -298,7 +306,11 @@ exports[`Storyshots BTP FN Components/Message Strip Non-Dismissible Message Stri
 
   <style>
     
-    .fn-message-strip {
+    .docs-story {
+        background: white;
+    }
+
+    .docs-story .fn-message-strip {
         margin-bottom: 1rem;
     }
 

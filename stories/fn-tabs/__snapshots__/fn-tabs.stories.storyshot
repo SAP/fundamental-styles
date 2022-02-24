@@ -8,211 +8,202 @@ exports[`Storyshots BTP FN Components/Tabs Default 1`] = `
 
   <style>
     
-    .docs-fn-container {
-        background: white;
-        padding: 1.5rem;
-    }
+.docs-story {
+    background: white;
+}
 
 
   </style>
   
 
 
-  <div
-    class="docs-fn-container"
+  <ul
+    class="fn-tabs"
+    role="tablist"
   >
     
     
-    <ul
-      class="fn-tabs"
-      role="tablist"
+    <li
+      class="fn-tabs__item fn-tabs__item--selected"
+      role="tab"
+      tabindex="0"
     >
       
         
-      <li
-        class="fn-tabs__item fn-tabs__item--selected"
-        role="tab"
-        tabindex="0"
+      <div
+        class="fn-tabs__icon"
       >
         
             
-        <div
-          class="fn-tabs__icon"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
-            
-        </button>
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
         
         
-      </li>
+      </div>
       
         
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
+      <div
+        class="fn-tabs__text"
       >
-        
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
+        Tab Item
+      </div>
       
         
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
       >
         
             
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
-            
-        </button>
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
         
         
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item  (42)
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item is-disabled"
-        role="tab"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__right-container"
-        role="tab"
-      >
-        
-            
-        <button
-          aria-label="More"
-          class="fn-button fn-button--layout fn-button--icon-only"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--overflow"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
+      </button>
       
     
-    </ul>
+    </li>
+    
+    
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-tabs__icon"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
+        
+        
+      </div>
+      
+        
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+        
+      </button>
+      
+    
+    </li>
+    
+    
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+        
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item  (42)
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      class="fn-tabs__item is-disabled"
+      role="tab"
+    >
+      
+        
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      class="fn-tabs__right-container"
+      role="tab"
+    >
+      
+        
+      <button
+        aria-label="More"
+        class="fn-button fn-button--layout fn-button--icon-only"
+      >
+        
+            
+        <span
+          class="sap-icon sap-icon--overflow"
+        />
+        
+        
+      </button>
+      
+    
+    </li>
     
 
-  </div>
+  </ul>
   
 
 </div>
@@ -226,254 +217,245 @@ exports[`Storyshots BTP FN Components/Tabs Multi-Instance Tabs 1`] = `
 
   <style>
     
-    .docs-fn-container {
-        background: white;
-        padding: 1.5rem;
-    }
+.docs-story {
+    background: white;
+}
 
 
   </style>
   
 
-
-  <div
-    class="docs-fn-container"
+    
+  <ul
+    class="fn-tabs fn-tabs--multi-instance"
+    role="tablist"
   >
     
-    
-    <ul
-      class="fn-tabs fn-tabs--multi-instance"
-      role="tablist"
+        
+    <li
+      class="fn-tabs__item fn-tabs__item--selected"
+      role="tab"
+      tabindex="0"
     >
       
-        
-      <li
-        class="fn-tabs__item fn-tabs__item--selected"
-        role="tab"
-        tabindex="0"
+            
+      <div
+        class="fn-tabs__icon"
       >
         
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
                 
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
         
             
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="close tab"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--decline"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
+      </div>
       
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="close tab"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
       >
         
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
                 
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
+        <span
+          class="sap-icon sap-icon--decline"
+        />
         
             
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="close tab"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--decline"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
+      </button>
       
         
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="close tab"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--decline"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="close tab"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--decline"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="close tab"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--decline"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__right-container"
-        role="tab"
-      >
-        
-            
-        <button
-          aria-label="More"
-          class="fn-button fn-button--layout fn-button--icon-only"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--overflow"
-          />
-          
-            
-        </button>
-        
-            
-        <button
-          aria-label="More"
-          class="fn-button fn-button--layout fn-button--icon-only"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--add"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
+    </li>
     
-    </ul>
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__icon"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="close tab"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
     
-
-  </div>
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="close tab"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="close tab"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="close tab"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--decline"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__right-container"
+      role="tab"
+    >
+      
+            
+      <button
+        aria-label="More"
+        class="fn-button fn-button--layout fn-button--icon-only"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--overflow"
+        />
+        
+            
+      </button>
+      
+            
+      <button
+        aria-label="More"
+        class="fn-button fn-button--layout fn-button--icon-only"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--add"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+    
+  </ul>
   
 
 </div>
@@ -487,589 +469,576 @@ exports[`Storyshots BTP FN Components/Tabs Semantic Tabs 1`] = `
 
   <style>
     
-    .docs-fn-container {
-        background: white;
-        padding: 1.5rem;
-    }
+.docs-story {
+    background: white;
+}
 
 
   </style>
   
 
-
-  <div
-    class="docs-fn-container"
+    
+  <ul
+    class="fn-tabs fn-tabs--positive"
+    role="tablist"
   >
     
-    
-    <ul
-      class="fn-tabs fn-tabs--positive"
-      role="tablist"
+        
+    <li
+      class="fn-tabs__item fn-tabs__item--selected"
+      role="tab"
+      tabindex="0"
     >
       
-        
-      <li
-        class="fn-tabs__item fn-tabs__item--selected"
-        role="tab"
-        tabindex="0"
+            
+      <div
+        class="fn-tabs__icon"
       >
         
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
                 
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
         
             
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
+      </div>
+      
             
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
                 
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
             
-        </button>
-        
-        
-      </li>
+      </button>
       
         
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item is-disabled"
-        role="tab"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
+    </li>
     
-    </ul>
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__icon"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
     
-
-  </div>
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item is-disabled"
+      role="tab"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+    
+  </ul>
   
 
-
-  <div
-    class="docs-fn-container"
-  >
     
-    
-    <ul
-      class="fn-tabs fn-tabs--critical"
-      role="tablist"
-    >
-      
-        
-      <li
-        class="fn-tabs__item fn-tabs__item--selected"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item is-disabled"
-        role="tab"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-    
-    </ul>
-    
-
-  </div>
+  <br />
+  <br />
+  <br />
   
 
-
-  <div
-    class="docs-fn-container"
+    
+  <ul
+    class="fn-tabs fn-tabs--critical"
+    role="tablist"
   >
     
-    
-    <ul
-      class="fn-tabs fn-tabs--negative"
-      role="tablist"
+        
+    <li
+      class="fn-tabs__item fn-tabs__item--selected"
+      role="tab"
+      tabindex="0"
     >
       
-        
-      <li
-        class="fn-tabs__item fn-tabs__item--selected"
-        role="tab"
-        tabindex="0"
+            
+      <div
+        class="fn-tabs__icon"
       >
         
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
                 
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
         
             
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
+      </div>
+      
             
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
                 
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
             
-        </button>
-        
-        
-      </li>
+      </button>
       
         
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__icon"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--calendar"
-          />
-          
-            
-        </div>
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-            
-        <button
-          aria-label="show children elements"
-          class="fn-nested-button fn-tabs__button"
-          tabindex="-1"
-        >
-          
-                
-          <span
-            class="sap-icon sap-icon--megamenu"
-          />
-          
-            
-        </button>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item"
-        role="tab"
-        tabindex="0"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
-        
-      <li
-        class="fn-tabs__item is-disabled"
-        role="tab"
-      >
-        
-            
-        <div
-          class="fn-tabs__text"
-        >
-          Tab Item
-        </div>
-        
-        
-      </li>
-      
+    </li>
     
-    </ul>
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__icon"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
     
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item is-disabled"
+      role="tab"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+    
+  </ul>
+  
 
-  </div>
+    
+  <br />
+  <br />
+  <br />
+  
+
+    
+  <ul
+    class="fn-tabs fn-tabs--negative"
+    role="tablist"
+  >
+    
+        
+    <li
+      class="fn-tabs__item fn-tabs__item--selected"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__icon"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__icon"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--calendar"
+        />
+        
+            
+      </div>
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+            
+      <button
+        aria-label="show children elements"
+        class="fn-nested-button fn-tabs__button"
+        tabindex="-1"
+      >
+        
+                
+        <span
+          class="sap-icon sap-icon--megamenu"
+        />
+        
+            
+      </button>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item"
+      role="tab"
+      tabindex="0"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+        
+    <li
+      class="fn-tabs__item is-disabled"
+      role="tab"
+    >
+      
+            
+      <div
+        class="fn-tabs__text"
+      >
+        Tab Item
+      </div>
+      
+        
+    </li>
+    
+    
+  </ul>
   
 
 </div>

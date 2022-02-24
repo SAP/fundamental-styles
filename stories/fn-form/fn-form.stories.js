@@ -18,7 +18,9 @@ export default {
 
 const localStyles = `
 <style>
-
+.docs-story {
+    background: white;
+}
 </style>
 `;
 

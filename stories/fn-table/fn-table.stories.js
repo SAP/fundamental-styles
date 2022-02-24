@@ -8,7 +8,16 @@ The table is an un-opinionated component that can contain a variety of cells wit
     }
 };
 
-export const Primary = () => `
+
+const localStyles = `
+<style>
+    .docs-story {
+        background: white;
+    }
+</style>
+`;
+
+export const Primary = () => `${localStyles}
 <table class="fn-table">
     <thead>
         <tr class="fn-table__row">
@@ -54,7 +63,7 @@ export const Primary = () => `
 
 Primary.storyName = 'Standard Table';
 
-export const Checkboxes = () => `
+export const Checkboxes = () => `${localStyles}
 <table class="fn-table">
     <thead>
         <tr class="fn-table__row">
@@ -140,7 +149,7 @@ Table rows, including table headers, can have checkboxes.
     }
 };
 
-export const Buttons = () => `
+export const Buttons = () => `${localStyles}
 <table class="fn-table">
     <thead>
         <tr class="fn-table__row">
@@ -210,7 +219,7 @@ Buttons.parameters = {
     }
 };
 
-export const Byline = () => `
+export const Byline = () => `${localStyles}
 <table class="fn-table">
     <thead>
         <tr class="fn-table__row">
@@ -278,7 +287,7 @@ Byline.parameters = {
     }
 };
 
-export const Selected = () => `
+export const Selected = () => `${localStyles}
 <table class="fn-table">
     <thead>
         <tr class="fn-table__row">
@@ -339,7 +348,7 @@ Selected.parameters = {
     }
 };
 
-export const Group = () => `
+export const Group = () => `${localStyles}
 <table class="fn-table">
     <thead>
         <tr class="fn-table__row">
@@ -400,7 +409,7 @@ Group.parameters = {
     }
 };
 
-export const Status = () => `
+export const Status = () => `${localStyles}
 <table class="fn-table">
     <thead>
         <tr class="fn-table__row">

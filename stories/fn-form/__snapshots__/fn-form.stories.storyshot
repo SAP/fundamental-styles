@@ -8,7 +8,9 @@ exports[`Storyshots BTP FN Components/Form Checkbox Form Group 1`] = `
 
   <style>
     
-
+.docs-story {
+    background: white;
+}
 
   </style>
   
@@ -746,7 +748,9 @@ exports[`Storyshots BTP FN Components/Form Input Form Items 1`] = `
 
   <style>
     
-
+.docs-story {
+    background: white;
+}
 
   </style>
   
@@ -924,7 +928,9 @@ exports[`Storyshots BTP FN Components/Form Input Form Items with Messages 1`] = 
 
   <style>
     
-
+.docs-story {
+    background: white;
+}
 
   </style>
   
@@ -1210,7 +1216,9 @@ exports[`Storyshots BTP FN Components/Form Multi-Input Form Item 1`] = `
 
   <style>
     
-
+.docs-story {
+    background: white;
+}
 
   </style>
   
@@ -1346,7 +1354,9 @@ exports[`Storyshots BTP FN Components/Form Radio Form Group 1`] = `
 
   <style>
     
-
+.docs-story {
+    background: white;
+}
 
   </style>
   
@@ -2083,7 +2093,9 @@ exports[`Storyshots BTP FN Components/Form Step-Input Form Item 1`] = `
 
   <style>
     
-
+.docs-story {
+    background: white;
+}
 
   </style>
   

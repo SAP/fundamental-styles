@@ -8,6 +8,10 @@ exports[`Storyshots BTP FN Components/Message Toast Message Toast 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container &gt; .fn-message-toast {
         margin-bottom: 1rem;
     }

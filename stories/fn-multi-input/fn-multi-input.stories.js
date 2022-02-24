@@ -10,12 +10,14 @@ export default {
 
 const localStyles = `
 <style>
+    .docs-story {
+        background: white;
+    }
     .docs-fn-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         align-items: center;
     }

@@ -18,6 +18,10 @@ export default {
 
 const localStyles = `
 <style>
+    .docs-story {
+        background: white;
+    }
+
     .fn-message-box {
         z-index: 101;
     }

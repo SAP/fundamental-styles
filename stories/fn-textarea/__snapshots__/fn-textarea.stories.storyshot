@@ -9,12 +9,15 @@ exports[`Storyshots BTP FN Components/Textarea Textarea 1`] = `
 
     <style>
       
+.docs-story {
+    background: white;
+}
+
 .docs-fn-container {
     display: grid;
     grid-template-columns: 150px 3fr;
     column-gap: 0.1rem;
     row-gap: 0.1rem;
-    background: white;
     padding: 1rem;
     align-items: center;
 }

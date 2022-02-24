@@ -28,7 +28,17 @@ Avatar (mandatory) | \`fn-shell__avatar\` | For user settings and application me
     }
 };
 
-export const ShellXlSize = () => `<div style="height: 85px">
+
+const localStyles = `
+<style>
+    .docs-story {
+        background: white;
+    }
+</style>
+`;
+
+
+export const ShellXlSize = () => `${localStyles}
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <span class="fn-shell__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="52" height="26" alt="SAP"></span>
@@ -53,12 +63,11 @@ export const ShellXlSize = () => `<div style="height: 85px">
             </div>
         </div>
     </div>
-</div>
 `;
 
 ShellXlSize.storyName = 'Extra large';
 
-export const ShellLSize = () => `<div style="width: 1024px; height: 85px;">
+export const ShellLSize = () => `${localStyles}
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <span class="fn-shell__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="52" height="26" alt="SAP"></span>
@@ -83,12 +92,11 @@ export const ShellLSize = () => `<div style="width: 1024px; height: 85px;">
             </div>
         </div>
     </div>
-</div>
 `;
 
 ShellLSize.storyName = 'Large';
 
-export const ShellMSize = () => `<div style="width: 768px; height: 85px;">
+export const ShellMSize = () => `${localStyles}
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <span class="fn-shell__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="52" height="26" alt="SAP"></span>
@@ -109,7 +117,6 @@ export const ShellMSize = () => `<div style="width: 768px; height: 85px;">
             </div>
         </div>
     </div>
-</div>
 `;
 
 ShellMSize.storyName = 'Medium';
@@ -120,7 +127,7 @@ ShellMSize.parameters = {
     }
 };
 
-export const ShellSSize = () => `<div style="height: 85px; max-width: 375px;">
+export const ShellSSize = () => `${localStyles}
     <div class="fn-shell">
         <div class="fn-shell__group fn-shell__group--product">
             <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="Menu">
@@ -143,7 +150,6 @@ export const ShellSSize = () => `<div style="height: 85px; max-width: 375px;">
             </div>
         </div>
     </div>
-</div>
 `;
 
 ShellSSize.storyName = 'Small';

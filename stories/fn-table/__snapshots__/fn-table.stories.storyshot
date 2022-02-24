@@ -6,6 +6,16 @@ exports[`Storyshots BTP FN Components/Table Standard Table 1`] = `
 >
   
 
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
+
   <table
     class="fn-table"
   >
@@ -270,6 +280,16 @@ exports[`Storyshots BTP FN Components/Table Table with Buttons 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
 
   <table
     class="fn-table"
@@ -557,6 +577,16 @@ exports[`Storyshots BTP FN Components/Table Table with Byline 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
 
   <table
     class="fn-table"
@@ -860,6 +890,16 @@ exports[`Storyshots BTP FN Components/Table Table with Checkboxes 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
 
   <table
     class="fn-table"
@@ -1240,6 +1280,16 @@ exports[`Storyshots BTP FN Components/Table Table with Group Headers 1`] = `
 >
   
 
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
+
   <table
     class="fn-table"
   >
@@ -1523,6 +1573,16 @@ exports[`Storyshots BTP FN Components/Table Table with Selected Rows / Cells 1`]
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
 
   <table
     class="fn-table"
@@ -1815,6 +1875,16 @@ exports[`Storyshots BTP FN Components/Table Table with Statuses and Info Labels 
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
 
   <table
     class="fn-table"

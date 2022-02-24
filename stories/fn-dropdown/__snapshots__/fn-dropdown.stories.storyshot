@@ -6,6 +6,16 @@ exports[`Storyshots BTP FN Components/Dropdown Dropdown 1`] = `
 >
   
 
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
+
   <div
     style="display: flex; justify-content: space-around; gap: 2rem;"
   >
