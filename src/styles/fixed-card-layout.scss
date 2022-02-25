@@ -13,46 +13,52 @@ $block: #{$fd-namespace}-fixed-card-layout;
   &__card-layout {
     @include fd-reset();
     @include fd-flex-horizontal-center();
-  }
+    @include fd-set-margin-left(-$fd-card-margin);
 
-  &__card-layout-column {
-    @include fd-reset();
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -#{$fd-card-margin};
 
-    flex: 1;
-    margin-right: $fd-card-margin;
+    /* Re-order columns into rows */
+    @for $i from 2 through 10 {
+      &.#{$block}__card-layout--columns-#{$i} {
+        .#{$block}__wrapper:nth-of-type(#{$i}n) {
+          order: #{$i};
+        }
 
-    &:last-child {
-      margin-right: 0;
-
-      @include fd-rtl() {
-        margin-left: 0;
+        @for $k from 1 through $i - 1 {
+          .#{$block}__wrapper:nth-of-type(#{$i}n + #{$k}) {
+            order: #{$k};
+          }
+        }
       }
     }
+  }
 
-    @include fd-rtl() {
-      margin-left: $fd-card-margin;
-      margin-right: 0;
+  &__wrapper {
+    order: 1;
+    min-height: 1px;
+
+    &--single:empty {
+      flex-basis: 100%;
     }
   }
 
-  &__card {
+  &__card,
+  &__card-placeholder {
     @include fd-reset();
+    @include fd-set-margin-left($fd-card-margin);
 
-    margin-bottom: $fd-card-margin;
+    margin-top: #{$fd-card-margin};
     min-width: $fd-card-min-width;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   &__card-placeholder {
-    @include fd-reset();
-
     opacity: 0.3;
     border: $fd-border-on-drag;
     cursor: grabbing;
-    margin-bottom: $fd-card-margin;
   }
 
   &__card-preview {
@@ -61,5 +67,12 @@ $block: #{$fd-namespace}-fixed-card-layout;
     box-sizing: border-box;
     border-radius: var(--sapElement_BorderCornerRadius);
     box-shadow: var(--sapContent_Shadow2);
+  }
+
+  &__clearfix {
+    @include fd-reset();
+
+    width: 0;
+    flex-basis: 100%;
   }
 }
