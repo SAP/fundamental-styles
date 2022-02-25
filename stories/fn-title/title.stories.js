@@ -7,7 +7,16 @@ A title component whose semantic level and visual appearance can be set separate
     }
 };
 
-export const Levels = () => `<h1 class="fn-title fn-title--h1">Title Heading 1</h1>
+const localStyles = `
+<style>
+    .docs-story {
+        background: white;
+    }
+</style>
+`;
+
+export const Levels = () => `${localStyles}
+<h1 class="fn-title fn-title--h1">Title Heading 1</h1>
 <br>
 <h2 class="fn-title fn-title--h2">Title Heading 2</h2>
 <br>
@@ -30,7 +39,8 @@ Levels.parameters = {
     }
 };
 
-export const VisualLevel = () => `<h1 class="fn-title fn-title--h6">Title Heading 1</h1>
+export const VisualLevel = () => `${localStyles}
+<h1 class="fn-title fn-title--h6">Title Heading 1</h1>
 <br>
 <h2 class="fn-title fn-title--h5">Title Heading 2</h2>
 <br>
@@ -53,7 +63,8 @@ VisualLevel.parameters = {
 };
 
 
-export const Wrapping = () => `<div style="width: 600px">
+export const Wrapping = () => `${localStyles}
+<div style="width: 600px">
     <h1 class="fn-title fn-title--h1 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h1>
     <br><br><br>
     <h2 class="fn-title fn-title--h2 fn-title--wrap">"Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein</h2>

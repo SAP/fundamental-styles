@@ -30,54 +30,51 @@ export default {
 
 const localStyles = `
 <style>
-    .docs-fn-container {
-        background: white;
-        padding: 1.5rem;
-    }
+.docs-story {
+    background: white;
+}
 
 </style>
 `;
 
 export const DefaultTabs = () => `${localStyles}
-<div class="docs-fn-container">
-    <ul class="fn-tabs" role="tablist">
-        <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
-            <div class="fn-tabs__icon">
-                <span class="sap-icon sap-icon--calendar"></span>
-            </div>
-            <div class="fn-tabs__text">Tab Item</div>
-            <button class="fn-nested-button fn-tabs__button" aria-label="show children elements" tabindex="-1">
-                <span class="sap-icon sap-icon--megamenu"></span>
-            </button>
-        </li>
-        <li role="tab" tabindex="0" class="fn-tabs__item">
-            <div class="fn-tabs__icon">
-                <span class="sap-icon sap-icon--calendar"></span>
-            </div>
-            <div class="fn-tabs__text">Tab Item</div>
-        </li>
-        <li role="tab" tabindex="0" class="fn-tabs__item">
-            <div class="fn-tabs__text">Tab Item</div>
-            <button class="fn-nested-button fn-tabs__button" aria-label="show children elements" tabindex="-1">
-                <span class="sap-icon sap-icon--megamenu"></span>
-            </button>
-        </li>
-        <li role="tab" tabindex="0" class="fn-tabs__item">
-            <div class="fn-tabs__text">Tab Item</div>
-        </li>
-        <li role="tab" tabindex="0" class="fn-tabs__item">
-            <div class="fn-tabs__text">Tab Item  (42)</div>
-        </li>
-        <li role="tab" class="fn-tabs__item is-disabled">
-            <div class="fn-tabs__text">Tab Item</div>
-        </li>
-        <li role="tab" class="fn-tabs__right-container">
-            <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
-                <span class="sap-icon sap-icon--overflow"></span>
-            </button>
-        </li>
-    </ul>
-</div>
+<ul class="fn-tabs" role="tablist">
+    <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
+        <div class="fn-tabs__icon">
+            <span class="sap-icon sap-icon--calendar"></span>
+        </div>
+        <div class="fn-tabs__text">Tab Item</div>
+        <button class="fn-nested-button fn-tabs__button" aria-label="show children elements" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </li>
+    <li role="tab" tabindex="0" class="fn-tabs__item">
+        <div class="fn-tabs__icon">
+            <span class="sap-icon sap-icon--calendar"></span>
+        </div>
+        <div class="fn-tabs__text">Tab Item</div>
+    </li>
+    <li role="tab" tabindex="0" class="fn-tabs__item">
+        <div class="fn-tabs__text">Tab Item</div>
+        <button class="fn-nested-button fn-tabs__button" aria-label="show children elements" tabindex="-1">
+            <span class="sap-icon sap-icon--megamenu"></span>
+        </button>
+    </li>
+    <li role="tab" tabindex="0" class="fn-tabs__item">
+        <div class="fn-tabs__text">Tab Item</div>
+    </li>
+    <li role="tab" tabindex="0" class="fn-tabs__item">
+        <div class="fn-tabs__text">Tab Item  (42)</div>
+    </li>
+    <li role="tab" class="fn-tabs__item is-disabled">
+        <div class="fn-tabs__text">Tab Item</div>
+    </li>
+    <li role="tab" class="fn-tabs__right-container">
+        <button class="fn-button fn-button--layout fn-button--icon-only" aria-label="More">
+            <span class="sap-icon sap-icon--overflow"></span>
+        </button>
+    </li>
+</ul>
 `;
 
 DefaultTabs.storyName = 'Default';
@@ -89,7 +86,6 @@ DefaultTabs.parameters = {
 };
 
 export const Semantic = () => `${localStyles}
-<div class="docs-fn-container">
     <ul class="fn-tabs fn-tabs--positive" role="tablist">
         <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
             <div class="fn-tabs__icon">
@@ -125,9 +121,9 @@ export const Semantic = () => `${localStyles}
             <div class="fn-tabs__text">Tab Item</div>
         </li>
     </ul>
-</div>
 
-<div class="docs-fn-container">
+    <br/><br/><br/>
+
     <ul class="fn-tabs fn-tabs--critical" role="tablist">
         <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
             <div class="fn-tabs__icon">
@@ -163,9 +159,9 @@ export const Semantic = () => `${localStyles}
             <div class="fn-tabs__text">Tab Item</div>
         </li>
     </ul>
-</div>
 
-<div class="docs-fn-container">
+    <br/><br/><br/>
+
     <ul class="fn-tabs fn-tabs--negative" role="tablist">
         <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
             <div class="fn-tabs__icon">
@@ -201,7 +197,6 @@ export const Semantic = () => `${localStyles}
             <div class="fn-tabs__text">Tab Item</div>
         </li>
     </ul>
-</div>
 `;
 
 Semantic.storyName = 'Semantic Tabs';
@@ -216,7 +211,6 @@ Semantic.parameters = {
 };
 
 export const MultiInstance = () => `${localStyles}
-<div class="docs-fn-container">
     <ul class="fn-tabs fn-tabs--multi-instance" role="tablist">
         <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
             <div class="fn-tabs__icon">
@@ -263,7 +257,6 @@ export const MultiInstance = () => `${localStyles}
             </button>
         </li>
     </ul>
-</div>
 `;
 
 MultiInstance.storyName = 'Multi-Instance Tabs';

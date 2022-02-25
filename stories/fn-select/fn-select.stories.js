@@ -10,6 +10,10 @@ export default {
 
 const localStyles = `
 <style>
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr;

@@ -18,7 +18,16 @@ export default {
     }
 };
 
-export const Notification = () => `
+const localStyles = `
+<style>
+    .docs-story {
+        background: white;
+    }
+</style>
+`;
+
+
+export const Notification = () => `${localStyles}
     <div class="fn-notification" style="max-width: 500px;">
         <div class="fn-notification__main-container">
             <div class="fn-avatar fn-avatar--circle fn-avatar--m fn-avatar--thumbnail">
@@ -50,7 +59,7 @@ Notification.parameters = {
     }
 };
 
-export const SemanticNotification = () => `
+export const SemanticNotification = () => `${localStyles}
     <div class="fn-notification fn-notification--positive">
         <div class="fn-notification__semantic-container">
             <span class="sap-icon sap-icon--status-positive"></span>
@@ -74,7 +83,7 @@ export const SemanticNotification = () => `
             </button>
         </div>
     </div>
-    <br/>
+    <br/><br/><br/>
     <div class="fn-notification fn-notification--info">
         <div class="fn-notification__semantic-container">
             <span class="sap-icon sap-icon--information"></span>
@@ -95,7 +104,7 @@ export const SemanticNotification = () => `
             </button>
         </div>
     </div>
-    <br/>
+    <br/><br/><br/>
     <div class="fn-notification fn-notification--critical">
         <div class="fn-notification__semantic-container">
             <span class="sap-icon sap-icon--status-critical"></span>
@@ -119,7 +128,7 @@ export const SemanticNotification = () => `
             </button>
         </div>
     </div>
-    <br/>
+    <br/><br/><br/>
     <div class="fn-notification fn-notification--negative" style="max-width: 400px;">
         <div class="fn-notification__semantic-container">
             <span class="sap-icon sap-icon--status-negative"></span>

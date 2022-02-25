@@ -8,12 +8,15 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr;
         column-gap: 1rem;
         row-gap: 1rem;
-        background: white;
         padding: 1rem;
     }
 
@@ -193,12 +196,15 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Critical 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr;
         column-gap: 1rem;
         row-gap: 1rem;
-        background: white;
         padding: 1rem;
     }
 
@@ -443,12 +449,15 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Info 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr;
         column-gap: 1rem;
         row-gap: 1rem;
-        background: white;
         padding: 1rem;
     }
 
@@ -693,12 +702,15 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Negative 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr;
         column-gap: 1rem;
         row-gap: 1rem;
-        background: white;
         padding: 1rem;
     }
 
@@ -943,12 +955,15 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Positive 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr;
         column-gap: 1rem;
         row-gap: 1rem;
-        background: white;
         padding: 1rem;
     }
 

@@ -5,6 +5,16 @@ exports[`Storyshots BTP FN Components/Card Card 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
     
   <div
     class="fn-card"
@@ -31,10 +41,10 @@ exports[`Storyshots BTP FN Components/Card Card 1`] = `
             
       </div>
       
-    
+        
     </div>
     
-
+        
     <div
       class="fn-card__content"
     />
@@ -43,9 +53,11 @@ exports[`Storyshots BTP FN Components/Card Card 1`] = `
   </div>
   
     
+    
   <br />
   <br />
   
+    
     
   <div
     class="fn-card"
@@ -82,7 +94,7 @@ exports[`Storyshots BTP FN Components/Card Card 1`] = `
         
     </div>
     
-
+        
     <div
       class="fn-card__content"
     />
@@ -91,9 +103,11 @@ exports[`Storyshots BTP FN Components/Card Card 1`] = `
   </div>
   
     
+    
   <br />
   <br />
   
+    
     
   <div
     class="fn-card"
@@ -315,6 +329,16 @@ exports[`Storyshots BTP FN Components/Card Data Card 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
 
   <div
     class="fn-card fn-card--data"

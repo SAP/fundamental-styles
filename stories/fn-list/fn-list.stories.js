@@ -5,7 +5,15 @@ export default {
     }
 };
 
-export const Primary = () => `
+const localStyles = `
+<style>
+.docs-story {
+    background: white;
+}
+</style>
+`;
+
+export const Primary = () => `${localStyles}
     <ul class="fn-list">
         <li class="fn-list__group-header">
             <span class="fn-list__text">Group Header</span>
@@ -90,7 +98,7 @@ Primary.parameters = {
     }
 };
 
-export const Byline = () => `
+export const Byline = () => `${localStyles}
     <ul class="fn-list fn-list--byline">
         <li class="fn-list__item" tabindex="0">
             <div class="fn-list__start-container">

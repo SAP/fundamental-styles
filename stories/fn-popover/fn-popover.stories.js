@@ -1,5 +1,5 @@
 export default {
-    title: 'FN Components/Popover',
+    title: 'BTP FN Components/Popover',
     parameters: {
         components: ['fn-popover', 'icon', 'fn-button'],
         description: `
@@ -29,8 +29,24 @@ Popover Arrow End Bottom | \`fn-popover__arrow--end-bottom\` | Modifier to place
     }
 };
 
-export const Popover = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+const localStyles = `
+<style>
+    .docs-story {
+        background: white;
+    }
+
+    .docs-fn-container {
+        padding: 5vw;
+        display:flex; 
+        gap: 2vw;
+        flex-wrap: wrap;
+    }
+</style>
+`;
+
+
+export const Popover = () => `${localStyles}
+<div class="docs-fn-container">
     <div class="fn-popover" style="width: 320px; margin-bottom: 2rem;">
         <div class="fn-popover__title">
             <div class="fn-popover__text">Popover with bottom arrow.</div>
@@ -280,8 +296,8 @@ Popover.parameters = {
     }
 };
 
-export const NoPaddingPopover = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const NoPaddingPopover = () => `${localStyles}
+<div class="docs-fn-container">
     <div class="fn-popover fn-popover--no-padding" style="width: 320px; height: 320px; margin-bottom: 2rem;">
         <div class="fn-popover__content" style="background-image: url('/assets/images/backgrounds/city.jpg')">
 
@@ -297,8 +313,8 @@ NoPaddingPopover.parameters = {
     }
 };
 
-export const TruncatePopover = () => `
-<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
+export const TruncatePopover = () => `${localStyles}
+<div class="docs-fn-container">
     <div class="fn-popover" style="width: 320px; margin-bottom: 2rem;">
         <div class="fn-popover__title">
             <div class="fn-popover__text fn-popover__text--truncate">Popover with bottom arrow and some very, very long title text.</div>

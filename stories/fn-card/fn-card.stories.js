@@ -20,16 +20,26 @@ By default, cards only have a minimum width, so the developer should set width r
     }
 };
 
-export const Card = () => `
+const localStyles = `
+<style>
+    .docs-story {
+        background: white;
+    }
+</style>
+`;
+
+export const Card = () => `${localStyles}
     <div class="fn-card" style="max-width: 40rem">
         <div class="fn-card__header">
             <div class="fn-card__title-container">
                 <h1 class="fn-card__title">Card Title</h1>
             </div>
+        </div>
+        <div class="fn-card__content"></div>
     </div>
-<div class="fn-card__content"></div>
-    </div>
+    
     <br><br>
+    
     <div class="fn-card" style="max-width: 40rem">
         <div class="fn-card__header">
             <div class="fn-card__title-container">
@@ -37,9 +47,11 @@ export const Card = () => `
                 <p class="fn-card__subtitle">Card Subtitle</p>
             </div>
         </div>
-<div class="fn-card__content"></div>
+        <div class="fn-card__content"></div>
     </div>
+    
     <br><br>
+    
     <div class="fn-card" style="max-width: 40rem">
         <div class="fn-card__header">
             <span class="fn-icon fn-icon--sys-help-2" style="background: #0070F2; width: 18px; height: 18px"></span>
@@ -92,7 +104,7 @@ Card.parameters = {
     }
 };
 
-export const DataCard = () => `
+export const DataCard = () => `${localStyles}
 <div class="fn-card fn-card--data" tabindex="0" style="max-width: 40rem">
     <div class="fn-card__header">
         <div class="fn-card__title-container">

@@ -5,6 +5,16 @@ exports[`Storyshots BTP FN Components/Notification Notification 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
     
   <div
     class="fn-notification"
@@ -126,6 +136,16 @@ exports[`Storyshots BTP FN Components/Notification Semantic Notification 1`] = `
   dir="ltr"
 >
   
+
+  <style>
+    
+    .docs-story {
+        background: white;
+    }
+
+  </style>
+  
+
     
   <div
     class="fn-notification fn-notification--positive"
@@ -238,6 +258,8 @@ exports[`Storyshots BTP FN Components/Notification Semantic Notification 1`] = `
   
     
   <br />
+  <br />
+  <br />
   
     
   <div
@@ -334,6 +356,8 @@ exports[`Storyshots BTP FN Components/Notification Semantic Notification 1`] = `
   </div>
   
     
+  <br />
+  <br />
   <br />
   
     
@@ -446,6 +470,8 @@ exports[`Storyshots BTP FN Components/Notification Semantic Notification 1`] = `
   </div>
   
     
+  <br />
+  <br />
   <br />
   
     

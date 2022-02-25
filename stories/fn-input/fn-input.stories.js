@@ -21,12 +21,15 @@ export default {
 
 const localStyles = `
 <style>
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 50vw;
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;

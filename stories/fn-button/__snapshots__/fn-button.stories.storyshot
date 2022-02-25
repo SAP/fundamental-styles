@@ -8,12 +8,15 @@ exports[`Storyshots BTP FN Components/Button Icon Buttons 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -432,12 +435,15 @@ exports[`Storyshots BTP FN Components/Button Layout Button 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -626,12 +632,15 @@ exports[`Storyshots BTP FN Components/Button Menu Buttons 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -971,12 +980,15 @@ exports[`Storyshots BTP FN Components/Button Nested Buttons 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -1179,12 +1191,15 @@ exports[`Storyshots BTP FN Components/Button Primary Button 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -1475,12 +1490,15 @@ exports[`Storyshots BTP FN Components/Button Secondary Buttons 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -1771,12 +1789,15 @@ exports[`Storyshots BTP FN Components/Button Segmented Button 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -2329,12 +2350,15 @@ exports[`Storyshots BTP FN Components/Button Semantic Buttons 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -2957,12 +2981,15 @@ exports[`Storyshots BTP FN Components/Button Split Buttons 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
@@ -3454,12 +3481,15 @@ exports[`Storyshots BTP FN Components/Button Toggle Buttons 1`] = `
 
   <style>
     
+    .docs-story {
+        background: white;
+    }
+
     .docs-fn-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         column-gap: 0.1rem;
         row-gap: 0.1rem;
-        background: white;
         padding: 1rem;
         justify-items: center;
         align-items: center;
