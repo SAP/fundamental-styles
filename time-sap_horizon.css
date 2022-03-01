@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -197,7 +197,8 @@
   background-color: var(--sapLegend_WorkingBackground,#fff);
   border: .0625rem solid #fff;
   border: .0625rem solid var(--sapList_Background,#fff);
-  text-shadow: var(--fdTime_Text_Shadow)
+  text-shadow: none;
+  text-shadow: var(--fdTime_Text_Shadow,none)
 }
 .fd-time__item::after,
 .fd-time__item::before {

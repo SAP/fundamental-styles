@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -31,7 +31,8 @@
   background-color: #f5f6f7;
   background-color: var(--sapList_AlternatingBackground,#f5f6f7);
   width: 15rem;
-  text-shadow: var(--fdVerticalNav_Text_Shadow);
+  text-shadow: none;
+  text-shadow: var(--fdVerticalNav_Text_Shadow,none);
   -webkit-box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);
   -webkit-box-shadow: var(--sapContent_Shadow0,0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16));
   box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);

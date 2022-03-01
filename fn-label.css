@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -18,7 +18,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin-right: .75rem;
-  color: #354a5f;
+  color: #5b738b;
   margin-bottom: .125rem
 }
 .fn-label::after,

@@ -1,20 +1,20 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-status-indicator {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  border-color: #788fa6;
-  border-color: var(--sapContent_ForegroundBorderColor,#788fa6);
+  border-color: #758ca4;
+  border-color: var(--sapContent_ForegroundBorderColor,#758ca4);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #556b82;
   color: var(--sapContent_LabelColor,#556b82);
-  stroke: #6e87a0;
-  stroke: var(--sapNeutralElementColor,#6e87a0);
+  stroke: #788fa6;
+  stroke: var(--sapNeutralElementColor,#788fa6);
   stroke-width: .25;
   fill: transparent;
   -webkit-box-orient: vertical;

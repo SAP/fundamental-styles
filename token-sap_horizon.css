@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -42,8 +42,8 @@
   text-overflow: clip;
   height: 1.625rem;
   line-height: 1.5rem;
-  border: .0625rem solid #788fa6;
-  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapButton_TokenBorderColor,#788fa6)
+  border: .0625rem solid #758ca4;
+  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapButton_TokenBorderColor,#758ca4)
 }
 .fd-token::after,
 .fd-token::before {
@@ -62,7 +62,8 @@
   min-width: auto;
   width: 100%;
   text-overflow: ellipsis;
-  text-shadow: var(--fdToken_Text_Shadow)
+  text-shadow: none;
+  text-shadow: var(--fdToken_Text_Shadow,none)
 }
 .fd-token__close {
   font-size: .875rem;

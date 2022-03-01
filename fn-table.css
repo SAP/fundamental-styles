@@ -1,0 +1,347 @@
+/*!
+ * Fundamental Library Styles v0.22.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-table {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse
+}
+.fn-table::after,
+.fn-table::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table__row {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+.fn-table__row::after,
+.fn-table__row::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table__row.is-selected .fn-table__cell,
+.fn-table__row[aria-selected=true] .fn-table__cell {
+  background: #d1efff;
+  -webkit-box-shadow: inset 0 -.063rem 0 #0070f1;
+  box-shadow: inset 0 -.063rem 0 #0070f1
+}
+.fn-table__row.is-selected .fn-table__cell.is-hover,
+.fn-table__row.is-selected .fn-table__cell:hover,
+.fn-table__row[aria-selected=true] .fn-table__cell.is-hover,
+.fn-table__row[aria-selected=true] .fn-table__cell:hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  background: #d1efff
+}
+.fn-table .fn-table__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: normal
+}
+.fn-table .fn-table__text::after,
+.fn-table .fn-table__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table .fn-table__text--no-wrap {
+  white-space: nowrap
+}
+.fn-table__cell,
+.fn-table__group-header,
+.fn-table__header {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-shadow: inset 0 -.063rem 0 #e4e5e7;
+  box-shadow: inset 0 -.063rem 0 #e4e5e7
+}
+.fn-table__cell::after,
+.fn-table__cell::before,
+.fn-table__group-header::after,
+.fn-table__group-header::before,
+.fn-table__header::after,
+.fn-table__header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table__cell,
+.fn-table__group-header {
+  background: #fff;
+  height: 2.75rem
+}
+.fn-table__group-header,
+.fn-table__header {
+  text-transform: uppercase;
+  text-align: start;
+  font-size: .75rem;
+  line-height: 1.125rem;
+  font-weight: 700
+}
+.fn-table__group-header .fn-table__text--end,
+.fn-table__header .fn-table__text--end {
+  margin-left: auto
+}
+.fn-table__group-header .fn-table__text--end[dir=rtl],
+.fn-table__header .fn-table__text--end[dir=rtl],
+[dir=rtl] .fn-table__group-header .fn-table__text--end,
+[dir=rtl] .fn-table__header .fn-table__text--end {
+  margin-right: auto;
+  margin-left: 0
+}
+.fn-table__group-header .fn-table__header-checkbox,
+.fn-table__header .fn-table__header-checkbox {
+  margin-left: -.25rem
+}
+.fn-table__group-header .fn-table__header-checkbox[dir=rtl],
+.fn-table__header .fn-table__header-checkbox[dir=rtl],
+[dir=rtl] .fn-table__group-header .fn-table__header-checkbox,
+[dir=rtl] .fn-table__header .fn-table__header-checkbox {
+  margin-right: -.25rem;
+  margin-left: 0
+}
+.fn-table__group-header {
+  padding: 1.25rem .75rem .375rem
+}
+.fn-table__header {
+  background: #eaecee;
+  height: 2rem;
+  padding-left: 1rem
+}
+.fn-table__header[dir=rtl],
+[dir=rtl] .fn-table__header {
+  padding-right: 1rem;
+  padding-left: 0
+}
+.fn-table__header:not(:first-of-type) {
+  padding-left: .75rem
+}
+.fn-table__header:not(:first-of-type)[dir=rtl],
+[dir=rtl] .fn-table__header:not(:first-of-type) {
+  padding-right: .75rem;
+  padding-left: 0
+}
+.fn-table__cell {
+  padding: .375rem .75rem
+}
+.fn-table__cell:not(.fn-table__cell--no-hover).is-hover,
+.fn-table__cell:not(.fn-table__cell--no-hover):hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  background: #f5f6f7
+}
+.fn-table__cell.focus-visible,
+.fn-table__cell.is-focus {
+  outline: 0;
+  border-radius: .125rem;
+  position: relative
+}
+.fn-table__cell:focus:not(.focus-visible).is-hover,
+.fn-table__cell:focus:not(.focus-visible):hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  background: #f5f6f7
+}
+.fn-table__cell.is-selected,
+.fn-table__cell[aria-selected=true] {
+  background: #d1efff;
+  -webkit-box-shadow: inset 0 -.063rem 0 #0070f1;
+  box-shadow: inset 0 -.063rem 0 #0070f1
+}
+.fn-table__cell.is-selected.is-hover,
+.fn-table__cell.is-selected:hover,
+.fn-table__cell[aria-selected=true].is-hover,
+.fn-table__cell[aria-selected=true]:hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  background: #d1efff
+}
+.fn-table__cell.is-disabled,
+.fn-table__cell:disabled,
+.fn-table__cell[aria-disabled=true] {
+  pointer-events: none;
+  opacity: .4
+}
+.fn-table__cell .fn-table__start-container:not(:first-child) {
+  margin-left: .375rem
+}
+.fn-table__cell .fn-table__start-container:not(:first-child)[dir=rtl],
+[dir=rtl] .fn-table__cell .fn-table__start-container:not(:first-child) {
+  margin-right: .375rem;
+  margin-left: 0
+}
+.fn-table__cell .fn-table__text {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: block;
+  color: #223548
+}
+.fn-table__cell .fn-table__text::after,
+.fn-table__cell .fn-table__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table__cell--byline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 3.75rem
+}
+.fn-table__cell--byline .fn-table__start-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.fn-table__cell--byline .fn-table__start-container::after,
+.fn-table__cell--byline .fn-table__start-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-text,
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-title {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #223548
+}
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-text::after,
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-text::before,
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-title::after,
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-title::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-title {
+  font-weight: 700
+}
+.fn-table__cell--byline .fn-table__start-container .fn-table__byline-text {
+  font-size: .75rem;
+  line-height: 1rem
+}
+.fn-table__end-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.fn-table__end-container::after,
+.fn-table__end-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-table__end-container :not(:last-child) {
+  margin-right: .375rem
+}
+.fn-table__end-container :not(:last-child)[dir=rtl],
+[dir=rtl] .fn-table__end-container :not(:last-child) {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fn-table__end-container button:first-child {
+  margin-left: auto
+}
+.fn-table__end-container button:first-child[dir=rtl],
+[dir=rtl] .fn-table__end-container button:first-child {
+  margin-right: auto;
+  margin-left: 0
+}

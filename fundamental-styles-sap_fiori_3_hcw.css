@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -8219,13 +8219,13 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-card__header.is-focus,
-.fd-card__header:focus {
+.fd-card__header:not(.fd-card__header--non-interactive).is-focus,
+.fd-card__header:not(.fd-card__header--non-interactive):focus {
   z-index: 5;
   outline: 0
 }
-.fd-card__header.is-focus::before,
-.fd-card__header:focus::before {
+.fd-card__header:not(.fd-card__header--non-interactive).is-focus::before,
+.fd-card__header:not(.fd-card__header--non-interactive):focus::before {
   content: "";
   position: absolute;
   display: block;
@@ -9554,7 +9554,6 @@ fd-carousel:focus {
 .fd-checkbox.is-disabled,
 .fd-checkbox:disabled,
 .fd-checkbox[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -17746,9 +17745,15 @@ fd-carousel:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 1.125rem;
-  height: 1.125rem;
-  min-width: 1.125rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: .5rem;
+  line-height: normal;
+  height: 1rem;
   max-width: 100%;
   font-size: .75rem;
   font-size: var(--sapFontSmallSize,.75rem);
@@ -17757,8 +17762,8 @@ fd-carousel:focus {
   text-align: center;
   color: #000;
   color: var(--sapTextColor,#000);
-  padding: 0 .625rem;
-  border-width: .063rem;
+  padding: 0 .3125rem;
+  border-width: .0625rem;
   border-style: solid
 }
 .fd-info-label::after,
@@ -17775,16 +17780,14 @@ fd-carousel:focus {
   border-radius: inherit;
   line-height: 1;
   font-size: .75rem;
-  color: #000;
-  color: var(--sapTextColor,#000);
-  margin-right: .1875rem
+  margin-right: .125rem
 }
 .fd-info-label__icon [class*=sap-icon][dir=rtl],
 .fd-info-label__icon[class*=sap-icon][dir=rtl],
 [dir=rtl] .fd-info-label__icon [class*=sap-icon],
 [dir=rtl] .fd-info-label__icon[class*=sap-icon] {
   margin-right: 0;
-  margin-left: .1875rem
+  margin-left: .125rem
 }
 .fd-info-label__icon [class*=sap-icon]:first-child:last-child,
 .fd-info-label__icon[class*=sap-icon]:first-child:last-child {
@@ -17811,7 +17814,11 @@ fd-carousel:focus {
   padding: 0;
   margin: 0;
   border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: inherit;
+  font-weight: 700;
   color: inherit;
   line-height: 1
 }
@@ -17823,121 +17830,120 @@ fd-carousel:focus {
 }
 .fd-info-label--accent-color-1 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor1,#fff);
-  border-color: #5f5800;
-  border-color: var(--sapLegendColor1,#5f5800)
+  background-color: var(--fdInfo_Label_Background_Color1,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color1,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-1[class*=sap-icon] {
-  border-color: #5f5800;
-  border-color: var(--sapLegendColor1,#5f5800)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color1,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-2 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor2,#fff);
-  border-color: #5e4101;
-  border-color: var(--sapLegendColor2,#5e4101)
+  background-color: var(--fdInfo_Label_Background_Color2,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color2,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-2[class*=sap-icon] {
-  border-color: #5e4101;
-  border-color: var(--sapLegendColor2,#5e4101)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color2,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-3 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor3,#fff);
-  border-color: #973333;
-  border-color: var(--sapLegendColor3,#973333)
+  background-color: var(--fdInfo_Label_Background_Color3,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color3,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-3[class*=sap-icon] {
-  border-color: #973333;
-  border-color: var(--sapLegendColor3,#973333)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color3,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-4 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor5,#fff);
-  border-color: #463000;
-  border-color: var(--sapLegendColor4,#463000)
+  background-color: var(--fdInfo_Label_Background_Color4,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color4,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-4[class*=sap-icon] {
-  border-color: #463000;
-  border-color: var(--sapLegendColor4,#463000)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color4,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-5 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor20,#fff);
-  border-color: #961d7c;
-  border-color: var(--sapLegendColor5,#961d7c)
+  background-color: var(--fdInfo_Label_Background_Color5,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color5,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-5[class*=sap-icon] {
-  border-color: #961d7c;
-  border-color: var(--sapLegendColor5,#961d7c)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color5,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-6 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor6,#fff);
-  border-color: #004ccb;
-  border-color: var(--sapLegendColor6,#004ccb)
+  background-color: var(--fdInfo_Label_Background_Color6,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color6,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-6[class*=sap-icon] {
-  border-color: #004ccb;
-  border-color: var(--sapLegendColor6,#004ccb)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color6,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-7 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor7,#fff);
-  border-color: #105b5b;
-  border-color: var(--sapLegendColor7,#105b5b)
+  background-color: var(--fdInfo_Label_Background_Color7,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color7,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-7[class*=sap-icon] {
-  border-color: #105b5b;
-  border-color: var(--sapLegendColor7,#105b5b)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color7,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-8 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor8,#fff);
-  border-color: #26340b;
-  border-color: var(--sapLegendColor8,#26340b)
+  background-color: var(--fdInfo_Label_Background_Color8,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color8,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-8[class*=sap-icon] {
-  border-color: #26340b;
-  border-color: var(--sapLegendColor8,#26340b)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color8,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-9 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor10,#fff);
-  border-color: #4a5964;
-  border-color: var(--sapLegendColor9,#4a5964)
+  background-color: var(--fdInfo_Label_Background_Color9,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color9,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-9[class*=sap-icon] {
-  border-color: #4a5964;
-  border-color: var(--sapLegendColor9,#4a5964)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color9,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-10 {
   background-color: #fff;
-  background-color: var(--sapLegendBackgroundColor9,#fff);
-  border-color: #6c3d62;
-  border-color: var(--sapLegendColor10,#6c3d62)
+  background-color: var(--fdInfo_Label_Background_Color10,var(--sapGroup_ContentBackground,#fff));
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color10,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--accent-color-10[class*=sap-icon] {
-  border-color: #6c3d62;
-  border-color: var(--sapLegendColor10,#6c3d62)
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Border_Color10,var(--sapGroup_ContentBorderColor,#000))
 }
 .fd-info-label--display {
-  height: 1rem;
-  min-width: 1rem
+  border-color: #000;
+  border-color: var(--fdInfo_Label_Display_Border_Color,var(--sapGroup_ContentBorderColor,#000));
+  background-color: #fff;
+  background-color: var(--fdInfo_Label_Display_Background_Color,var(--sapGroup_ContentBackground,#fff));
+  color: #000;
+  color: var(--fdInfo_Label_Display_Text_Color,var(--sapTextColor,#000))
 }
 .fd-info-label--numeric {
-  padding: 0 .3125rem
+  padding: 0 .1875rem;
+  font-weight: 700
 }
 .fd-info-label--icon {
   font-size: .75rem;
   font-size: var(--sapFontSmallSize,.75rem);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 .3125rem;
+  padding: 0 .1875rem;
   line-height: 1rem
 }
 /*!
@@ -18156,7 +18162,6 @@ fd-carousel:focus {
 .fd-input.is-disabled,
 .fd-input:disabled,
 .fd-input[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -18417,7 +18422,6 @@ fd-carousel:focus {
 .fd-input-group.is-disabled,
 .fd-input-group:disabled,
 .fd-input-group[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -33774,7 +33778,6 @@ places the element far left of the screen. so it is not visible.
 .fd-radio.is-disabled,
 .fd-radio:disabled,
 .fd-radio[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -35697,7 +35700,6 @@ places the element far left of the screen. so it is not visible.
 .fd-select__control.is-disabled,
 .fd-select__control:disabled,
 .fd-select__control[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -35883,7 +35885,6 @@ places the element far left of the screen. so it is not visible.
 .fd-select__control.is-disabled,
 .fd-select__control:disabled,
 .fd-select__control[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -36047,6 +36048,11 @@ places the element far left of the screen. so it is not visible.
 .fd-select__control[dir=rtl],
 [dir=rtl] .fd-select__control {
   text-align: right
+}
+.fd-select__control.is-disabled,
+.fd-select__control:disabled,
+.fd-select__control[aria-disabled=true] {
+  pointer-events: none
 }
 .fd-select__control .fd-select__button {
   display: -webkit-inline-box;
@@ -39552,7 +39558,6 @@ places the element far left of the screen. so it is not visible.
 .fd-step-input.is-disabled,
 .fd-step-input:disabled,
 .fd-step-input[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -43444,7 +43449,6 @@ places the element far left of the screen. so it is not visible.
 .fd-textarea.is-disabled,
 .fd-textarea:disabled,
 .fd-textarea[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }

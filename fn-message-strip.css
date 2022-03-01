@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -22,13 +22,12 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #ebf8ff;
-  color: #223548;
-  min-height: 1.75rem;
-  min-width: 20.5rem;
+  position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-height: 1.75rem;
+  background: #d1efff;
   border-radius: .25rem
 }
 .fn-message-strip::after,
@@ -37,10 +36,14 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fn-message-strip[dir=rtl],
-[dir=rtl] .fn-message-strip {
+.fn-message-strip--dismissible {
+  padding-left: .5rem;
+  padding-right: 1.75rem
+}
+.fn-message-strip--dismissible[dir=rtl],
+[dir=rtl] .fn-message-strip--dismissible {
   padding-right: .5rem;
-  padding-left: .5rem
+  padding-left: 1.75rem
 }
 .fn-message-strip__text {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
@@ -53,8 +56,8 @@
   padding: 0;
   margin: 0;
   border: 0;
-  color: inherit;
-  max-width: 95%
+  max-width: 100%;
+  color: #223548
 }
 .fn-message-strip__text::after,
 .fn-message-strip__text::before {
@@ -62,69 +65,59 @@
   box-sizing: inherit;
   font-size: inherit
 }
+.fn-message-strip__text--truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
 .fn-message-strip .fn-message-strip__icon {
-  margin-right: .25rem;
-  background-color: transparent
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: .375rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  font-size: .9375rem
 }
 .fn-message-strip .fn-message-strip__icon[dir=rtl],
 [dir=rtl] .fn-message-strip .fn-message-strip__icon {
   margin-right: 0;
-  margin-left: .25rem
+  margin-left: .375rem
 }
 .fn-message-strip .fn-message-strip__icon::before {
-  color: #0070f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: .125rem
+  color: #0070f2
 }
 .fn-message-strip .fn-message-strip__close-button {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
-  line-height: 1.375rem;
-  color: #1a2733;
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  margin-left: auto;
-  width: 0;
-  height: 0;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
-  color: #475e75
-}
-.fn-message-strip .fn-message-strip__close-button::after,
-.fn-message-strip .fn-message-strip__close-button::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+  right: .25rem;
+  position: absolute
 }
 .fn-message-strip .fn-message-strip__close-button[dir=rtl],
 [dir=rtl] .fn-message-strip .fn-message-strip__close-button {
-  margin-right: auto;
-  margin-left: 0
-}
-.fn-message-strip .fn-message-strip__close-button [class*=sap-icon]::before {
-  font-size: .75rem
+  right: auto;
+  left: .25rem
 }
 .fn-message-strip--success {
-  background-color: #f5fae5
+  background: #e5f2bd
 }
 .fn-message-strip--success .fn-message-strip__icon::before {
   color: #188918
 }
 .fn-message-strip--warning {
-  background-color: #fff8d6
+  background: #fff3b8
 }
 .fn-message-strip--warning .fn-message-strip__icon::before {
   color: #f58b00
 }
 .fn-message-strip--error {
-  background-color: #ffeaf4
+  background: #ffd5ea
 }
 .fn-message-strip--error .fn-message-strip__icon::before {
   color: #d20a0a

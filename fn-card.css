@@ -1,9 +1,109 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-card {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 10rem;
+  min-height: 10rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
+  box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16)
+}
+.fn-card::after,
+.fn-card::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card--data {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+}
+.fn-card--data.is-hover,
+.fn-card--data:hover {
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+}
+.fn-card--data.focus-visible,
+.fn-card--data.is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-card--data.is-selected,
+.fn-card--data[aria-selected=true] {
+  background-color: #d1efff;
+  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
+  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+}
+.fn-card--data.is-selected.is-hover,
+.fn-card--data.is-selected:hover,
+.fn-card--data[aria-selected=true].is-hover,
+.fn-card--data[aria-selected=true]:hover {
+  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
+  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+}
+.fn-card--data.is-selected.focus-visible,
+.fn-card--data.is-selected.is-focus,
+.fn-card--data[aria-selected=true].focus-visible,
+.fn-card--data[aria-selected=true].is-focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-card__header {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.25rem 1.5rem
+}
+.fn-card__header::after,
+.fn-card__header::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card__header > [class*=fn-icon] {
+  min-width: 1.125rem
+}
+.fn-card__title-container {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
   line-height: 1.375rem;
@@ -21,47 +121,46 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #fff;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
-  box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
-  min-height: 10.5rem;
-  min-width: 30rem;
-  padding: 1.5rem
+  max-width: 100%;
+  min-width: 0
 }
-.fn-card::after,
-.fn-card::before {
+.fn-card__title-container::after,
+.fn-card__title-container::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
 }
-.fn-card--data {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+.fn-card__title-container:not(:first-child) {
+  margin-left: .375rem
 }
-.fn-card--data.is-hover,
-.fn-card--data:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-card__title-container:not(:first-child)[dir=rtl],
+[dir=rtl] .fn-card__title-container:not(:first-child) {
+  margin-right: .375rem;
+  margin-left: 0
 }
-.fn-card--data.is-focus,
-.fn-card--data:focus {
-  border: .125rem solid #0070f2
+.fn-card__title-container:not(:last-child) {
+  margin-right: .375rem
 }
-.fn-card--data.is-selected,
-.fn-card--data[aria-selected=true] {
-  background-color: #d1efff;
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+.fn-card__title-container:not(:last-child)[dir=rtl],
+[dir=rtl] .fn-card__title-container:not(:last-child) {
+  margin-right: 0;
+  margin-left: .375rem
 }
-.fn-card--data.is-selected.is-hover,
-.fn-card--data.is-selected:hover,
-.fn-card--data[aria-selected=true].is-hover,
-.fn-card--data[aria-selected=true]:hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+.fn-card__title-container:not(:first-child):not(:last-child) {
+  margin-left: .375rem;
+  margin-right: .375rem
 }
-.fn-card__title-icon-button-container {
+.fn-card__actions-container {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,75 +168,26 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
-}
-.fn-card__title-icon-button-container .fn-card__title-button {
   margin-left: auto
 }
-.fn-card__title-icon-button-container .fn-card__title-button[dir=rtl],
-[dir=rtl] .fn-card__title-icon-button-container .fn-card__title-button {
+.fn-card__actions-container::after,
+.fn-card__actions-container::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card__actions-container[dir=rtl],
+[dir=rtl] .fn-card__actions-container {
   margin-right: auto;
   margin-left: 0
 }
-.fn-card__title-icon-button-container .fn-card__title-icon {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
-  line-height: 1.375rem;
-  color: #1a2733;
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  width: 1rem;
-  height: 1rem;
-  margin-right: .5rem;
-  background: #0070f2;
-  border-color: #0070f2
+.fn-card__actions-container > button:not(:first-child) {
+  margin-left: .375rem
 }
-.fn-card__title-icon-button-container .fn-card__title-icon::after,
-.fn-card__title-icon-button-container .fn-card__title-icon::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
-}
-.fn-card__title-icon-button-container .fn-card__title-icon[dir=rtl],
-[dir=rtl] .fn-card__title-icon-button-container .fn-card__title-icon {
-  margin-right: 0;
-  margin-left: .5rem
-}
-.fn-card__title-icon-button-container .fn-card__title-icon span {
-  color: #fff;
-  margin-top: .125rem
-}
-.fn-card__title-icon-button-container .fn-card__title-container {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
-  line-height: 1.375rem;
-  color: #1a2733;
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column
-}
-.fn-card__title-icon-button-container .fn-card__title-container::after,
-.fn-card__title-icon-button-container .fn-card__title-container::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+.fn-card__actions-container > button:not(:first-child)[dir=rtl],
+[dir=rtl] .fn-card__actions-container > button:not(:first-child) {
+  margin-right: .375rem;
+  margin-left: 0
 }
 .fn-card__title {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
@@ -150,19 +200,21 @@
   padding: 0;
   margin: 0;
   border: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-weight: bolder;
-  color: #1a2733;
   font-size: 1.125rem;
-  line-height: 1.375rem
+  line-height: 1.375rem;
+  color: #1a2733
 }
 .fn-card__title::after,
 .fn-card__title::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fn-card__title--truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
 .fn-card__subtitle {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
@@ -175,15 +227,50 @@
   padding: 0;
   margin: 0;
   border: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-size: .75rem;
-  line-height: 1rem
+  line-height: 1rem;
+  margin-top: .125rem
 }
 .fn-card__subtitle::after,
 .fn-card__subtitle::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fn-card__subtitle--truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.fn-card__content {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 0 0 1rem 1rem
+}
+.fn-card__content::after,
+.fn-card__content::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-card__content--no-padding {
+  padding: 0
+}
+.fn-card__content--scroll {
+  overflow-y: scroll
 }

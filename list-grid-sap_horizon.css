@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -146,8 +146,10 @@
 }
 .fd-grid-list__item--link.is-hover,
 .fd-grid-list__item--link:hover {
-  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
-  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
+  -webkit-box-shadow: 0 0 0 .0625rem #b3b3b3;
+  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
+  box-shadow: 0 0 0 .0625rem #b3b3b3;
+  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
   background-color: #eaecee;
   background-color: var(--sapList_Hover_Background,#eaecee)
 }
@@ -301,8 +303,10 @@
 }
 .fd-grid-list--mode-single-select .fd-grid-list__item.is-hover:not(.fd-grid-list__item--link,[aria-selected=true],.is-selected),
 .fd-grid-list--mode-single-select .fd-grid-list__item:hover:not(.fd-grid-list__item--link,[aria-selected=true],.is-selected) {
-  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
-  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color);
+  -webkit-box-shadow: 0 0 0 .0625rem #b3b3b3;
+  -webkit-box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
+  box-shadow: 0 0 0 .0625rem #b3b3b3;
+  box-shadow: 0 0 0 .0625rem var(--fdGrid_List_Item_Hover_Border_Color,var(--sapTile_Interactive_BorderColor,#b3b3b3));
   background-color: #eaecee;
   background-color: var(--sapList_Hover_Background,#eaecee)
 }

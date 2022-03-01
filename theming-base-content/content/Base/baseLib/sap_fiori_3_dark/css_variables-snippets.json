@@ -1309,6 +1309,11 @@
     "body": "var(--sapButton_Information_Active_BorderColor)",
     "description": "Information Button Active Border Color (The active (down) state border color of information buttons.) Value: #c0e0fa #Base, #Button, #Color"
   },
+  "sapButton_Information_Active_TextColor": {
+    "prefix": "sapButton_Information_Active_TextColor",
+    "body": "var(--sapButton_Information_Active_TextColor)",
+    "description": "Information Button Active Text Color (The active (down) state text color of information buttons.) Value: #29313a #Base, #Button, #Color"
+  },
   "sapButton_Neutral_Background": {
     "prefix": "sapButton_Neutral_Background",
     "body": "var(--sapButton_Neutral_Background)",

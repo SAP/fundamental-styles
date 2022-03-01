@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -90,12 +90,12 @@
   background-color: var(--sapNegativeElementColor,#f53232)
 }
 [class*=sap-icon].sap-icon--color-neutral {
-  color: #6e87a0;
-  color: var(--sapNeutralElementColor,#6e87a0)
+  color: #788fa6;
+  color: var(--sapNeutralElementColor,#788fa6)
 }
 [class*=sap-icon].sap-icon--background-neutral::before {
-  background-color: #6e87a0;
-  background-color: var(--sapNeutralElementColor,#6e87a0)
+  background-color: #788fa6;
+  background-color: var(--sapNeutralElementColor,#788fa6)
 }
 [class*=sap-icon].sap-icon--color-positive {
   color: #30914c;
@@ -173,12 +173,12 @@
   background-color: var(--sapNegativeElementColor,#f53232)
 }
 [class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-neutral {
-  color: #6e87a0;
-  color: var(--sapNeutralElementColor,#6e87a0)
+  color: #788fa6;
+  color: var(--sapNeutralElementColor,#788fa6)
 }
 [class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--background-neutral::before {
-  background-color: #6e87a0;
-  background-color: var(--sapNeutralElementColor,#6e87a0)
+  background-color: #788fa6;
+  background-color: var(--sapNeutralElementColor,#788fa6)
 }
 [class*=sap-icon-businessSuiteInAppSymbols].sap-icon-businessSuiteInAppSymbols--color-positive {
   color: #30914c;
@@ -247,12 +247,12 @@
   background-color: var(--sapNegativeElementColor,#f53232)
 }
 [class*=sap-icon-TNT].sap-icon-TNT--color-neutral {
-  color: #6e87a0;
-  color: var(--sapNeutralElementColor,#6e87a0)
+  color: #788fa6;
+  color: var(--sapNeutralElementColor,#788fa6)
 }
 [class*=sap-icon-TNT].sap-icon-TNT--background-neutral::before {
-  background-color: #6e87a0;
-  background-color: var(--sapNeutralElementColor,#6e87a0)
+  background-color: #788fa6;
+  background-color: var(--sapNeutralElementColor,#788fa6)
 }
 [class*=sap-icon-TNT].sap-icon-TNT--color-positive {
   color: #30914c;

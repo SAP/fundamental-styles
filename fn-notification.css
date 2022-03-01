@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -21,13 +21,14 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 1.5rem;
-  border-radius: .75rem;
+  padding: .75rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background: #fff;
+  border-radius: .75rem;
   -webkit-box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
-  box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
-  border: .125rem solid transparent;
-  width: 26.75rem
+  box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16)
 }
 .fn-notification::after,
 .fn-notification::before {
@@ -60,14 +61,6 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fn-notification__main-container button:last-child {
-  margin-left: auto
-}
-.fn-notification__main-container button:last-child[dir=rtl],
-[dir=rtl] .fn-notification__main-container button:last-child {
-  margin-right: auto;
-  margin-left: 0
-}
 .fn-notification__text-container {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
@@ -86,7 +79,8 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 20rem
+  margin-left: .75rem;
+  margin-right: .75rem
 }
 .fn-notification__text-container::after,
 .fn-notification__text-container::before {
@@ -94,7 +88,7 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fn-notification__text-container .fn-notification__title {
+.fn-notification__title {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
   line-height: 1.375rem;
@@ -105,23 +99,17 @@
   padding: 0;
   margin: 0;
   border: 0;
-  margin-left: .75rem;
-  color: #223548;
   font-weight: 700;
-  margin-bottom: .5rem
+  margin-bottom: .5rem;
+  color: #223548
 }
-.fn-notification__text-container .fn-notification__title::after,
-.fn-notification__text-container .fn-notification__title::before {
+.fn-notification__title::after,
+.fn-notification__title::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
 }
-.fn-notification__text-container .fn-notification__title[dir=rtl],
-[dir=rtl] .fn-notification__text-container .fn-notification__title {
-  margin-right: .75rem;
-  margin-left: 0
-}
-.fn-notification__text-container .fn-notification__text {
+.fn-notification__text {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
   line-height: 1.375rem;
@@ -132,19 +120,14 @@
   padding: 0;
   margin: 0;
   border: 0;
-  margin-left: .75rem;
+  line-height: 1rem;
   color: #475e75
 }
-.fn-notification__text-container .fn-notification__text::after,
-.fn-notification__text-container .fn-notification__text::before {
+.fn-notification__text::after,
+.fn-notification__text::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fn-notification__text-container .fn-notification__text[dir=rtl],
-[dir=rtl] .fn-notification__text-container .fn-notification__text {
-  margin-right: .75rem;
-  margin-left: 0
 }
 .fn-notification__button-container {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
@@ -164,19 +147,17 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-left: auto;
-  margin-top: 1rem
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: .75rem;
+  padding: .375rem .75rem
 }
 .fn-notification__button-container::after,
 .fn-notification__button-container::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
-}
-.fn-notification__button-container[dir=rtl],
-[dir=rtl] .fn-notification__button-container {
-  margin-right: auto;
-  margin-left: 0
 }
 .fn-notification__button-container button:not(:last-child) {
   margin-right: .375rem
@@ -203,7 +184,8 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 1.75rem
+  padding: .75rem;
+  margin-bottom: 1rem
 }
 .fn-notification__semantic-container::after,
 .fn-notification__semantic-container::before {
@@ -211,7 +193,29 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fn-notification__semantic-container .fn-notification__semantic-title {
+.fn-notification__semantic-container [class*=sap-icon] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: .375rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  line-height: 1.125rem
+}
+.fn-notification__semantic-container [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-notification__semantic-container [class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .375rem
+}
+.fn-notification__semantic-title {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
   font-size: .875rem;
   line-height: 1.375rem;
@@ -222,25 +226,53 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-weight: 700;
   font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-weight: 700
+  line-height: 1.375rem
 }
-.fn-notification__semantic-container .fn-notification__semantic-title::after,
-.fn-notification__semantic-container .fn-notification__semantic-title::before {
+.fn-notification__semantic-title::after,
+.fn-notification__semantic-title::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
 }
 .fn-notification--positive {
-  border-color: #188918
+  outline: .125rem solid #188918
+}
+.fn-notification--positive .fn-notification__semantic-container [class*=sap-icon] {
+  color: #188918
+}
+.fn-notification--positive .fn-notification__main-container {
+  margin-left: .75rem;
+  margin-right: .75rem
 }
 .fn-notification--critical {
-  border-color: #f58b00
+  outline: .125rem solid #f58b00
+}
+.fn-notification--critical .fn-notification__semantic-container [class*=sap-icon] {
+  color: #f58b00
+}
+.fn-notification--critical .fn-notification__main-container {
+  margin-left: .75rem;
+  margin-right: .75rem
 }
 .fn-notification--negative {
-  border-color: #d20a0a
+  outline: .125rem solid #d20a0a
+}
+.fn-notification--negative .fn-notification__semantic-container [class*=sap-icon] {
+  color: #d20a0a
+}
+.fn-notification--negative .fn-notification__main-container {
+  margin-left: .75rem;
+  margin-right: .75rem
 }
 .fn-notification--info {
-  border-color: #0070f2
+  outline: .125rem solid #0070f2
+}
+.fn-notification--info .fn-notification__semantic-container [class*=sap-icon] {
+  color: #0070f2
+}
+.fn-notification--info .fn-notification__main-container {
+  margin-left: .75rem;
+  margin-right: .75rem
 }

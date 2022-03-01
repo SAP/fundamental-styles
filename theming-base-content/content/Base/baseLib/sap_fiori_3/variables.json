@@ -320,6 +320,7 @@
 		"sapButton_Information_Hover_TextColor": "#fff",
 		"sapButton_Information_Active_Background": "#0854a0",
 		"sapButton_Information_Active_BorderColor": "#0854a0",
+		"sapButton_Information_Active_TextColor": "#fff",
 		"sapButton_Neutral_Background": "#6a6d70",
 		"sapButton_Neutral_BorderColor": "#6a6d70",
 		"sapButton_Neutral_TextColor": "#fff",

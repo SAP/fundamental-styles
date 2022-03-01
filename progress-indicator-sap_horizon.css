@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -11,44 +11,60 @@
   margin: .5rem 0
 }
 .fd-progress-indicator--informative .fd-progress-indicator__progress-bar {
-  background-color: var(--fdProgress_Indicator_Background_Color_Informative)
+  background-color: #0070f2;
+  background-color: var(--fdProgress_Indicator_Background_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-progress-indicator--informative .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: var(--fdProgress_Icon_Informative);
-  margin-left: var(--fdProgress_Icon_Offset_Left);
-  margin-right: var(--fdProgress_Icon_Offset_Right)
+  content: "";
+  content: var(--fdProgress_Icon_Informative, "");
+  margin-left: 0;
+  margin-left: var(--fdProgress_Icon_Offset_Left,0);
+  margin-right: 0;
+  margin-right: var(--fdProgress_Icon_Offset_Right,0)
 }
 .fd-progress-indicator--positive .fd-progress-indicator__progress-bar {
-  background-color: var(--fdProgress_Indicator_Background_Color_Positive)
+  background-color: #30914c;
+  background-color: var(--fdProgress_Indicator_Background_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-progress-indicator--positive .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: var(--fdProgress_Icon_Positive);
-  margin-left: var(--fdProgress_Icon_Offset_Left);
-  margin-right: var(--fdProgress_Icon_Offset_Right)
+  content: "";
+  content: var(--fdProgress_Icon_Positive, "");
+  margin-left: 0;
+  margin-left: var(--fdProgress_Icon_Offset_Left,0);
+  margin-right: 0;
+  margin-right: var(--fdProgress_Icon_Offset_Right,0)
 }
 .fd-progress-indicator--negative .fd-progress-indicator__progress-bar {
-  background-color: var(--fdProgress_Indicator_Background_Color_Negative)
+  background-color: #f53232;
+  background-color: var(--fdProgress_Indicator_Background_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-progress-indicator--negative .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: var(--fdProgress_Icon_Negative);
-  margin-left: var(--fdProgress_Icon_Offset_Left);
-  margin-right: var(--fdProgress_Icon_Offset_Right)
+  content: "";
+  content: var(--fdProgress_Icon_Negative, "");
+  margin-left: 0;
+  margin-left: var(--fdProgress_Icon_Offset_Left,0);
+  margin-right: 0;
+  margin-right: var(--fdProgress_Icon_Offset_Right,0)
 }
 .fd-progress-indicator--critical .fd-progress-indicator__progress-bar {
-  background-color: var(--fdProgress_Indicator_Background_Color_Critical)
+  background-color: #e76500;
+  background-color: var(--fdProgress_Indicator_Background_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-progress-indicator--critical .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: var(--fdProgress_Icon_Critical);
-  margin-left: var(--fdProgress_Icon_Offset_Left);
-  margin-right: var(--fdProgress_Icon_Offset_Right)
+  content: "";
+  content: var(--fdProgress_Icon_Critical, "");
+  margin-left: 0;
+  margin-left: var(--fdProgress_Icon_Offset_Left,0);
+  margin-right: 0;
+  margin-right: var(--fdProgress_Icon_Offset_Right,0)
 }
 .fd-progress-indicator .fd-progress-indicator__container {
   font-size: .875rem;
@@ -78,8 +94,8 @@
   background: #eff1f2;
   background: var(--sapField_Background,#eff1f2);
   height: 1rem;
-  border: .0625rem solid #788fa6;
-  border: .0625rem solid var(--sapField_BorderColor,#788fa6);
+  border: .0625rem solid #556b81;
+  border: .0625rem solid var(--sapField_BorderColor,#556b81);
   min-height: 1rem
 }
 .fd-progress-indicator .fd-progress-indicator__container::after,
@@ -117,8 +133,10 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
   height: 100%;
-  border-right: var(--fdProgress_Indicator_Border_Right);
-  background: var(--fdProgress_Indicator_Background_Color_Neutral)
+  border-right: none;
+  border-right: var(--fdProgress_Indicator_Border_Right,none);
+  background: #788fa6;
+  background: var(--fdProgress_Indicator_Background_Color_Neutral,var(--sapNeutralElementColor,#788fa6))
 }
 .fd-progress-indicator__progress-bar::after,
 .fd-progress-indicator__progress-bar::before {
@@ -133,7 +151,8 @@
 .fd-progress-indicator__progress-bar[dir=rtl],
 [dir=rtl] .fd-progress-indicator__progress-bar {
   border-right: none;
-  border-left: var(--fdProgress_Indicator_Border_Right)
+  border-left: none;
+  border-left: var(--fdProgress_Indicator_Border_Right,none)
 }
 .fd-progress-indicator__remaining {
   font-size: .875rem;

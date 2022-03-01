@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -62,8 +62,8 @@
   background-color: var(--sapBackgroundColor,#f5f6f7)
 }
 .fd-toolbar--transparent {
-  background-color: transparent;
-  background-color: var(--sapToolbar_Background,transparent)
+  background-color: #fff;
+  background-color: var(--sapToolbar_Background,#fff)
 }
 .fd-toolbar--fade-in {
   visibility: visible;
@@ -84,8 +84,8 @@
   color: var(--sapList_TextColor,#223548)
 }
 .fd-toolbar--info.fd-toolbar--active {
-  background-color: #dafdf5;
-  background-color: var(--sapInfobar_Background,#dafdf5);
+  background-color: #c2fcee;
+  background-color: var(--sapInfobar_Background,#c2fcee);
   color: #046c7a;
   color: var(--sapInfobar_TextColor,#046c7a)
 }

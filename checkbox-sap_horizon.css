@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -35,8 +35,8 @@
   border-style: solid;
   border-width: .0625rem;
   border-width: var(--sapField_BorderWidth,.0625rem);
-  border-color: #788fa6;
-  border-color: var(--sapField_BorderColor,#788fa6);
+  border-color: #556b81;
+  border-color: var(--sapField_BorderColor,#556b81);
   border-radius: .25rem;
   border-radius: var(--sapField_BorderCornerRadius,.25rem);
   outline: 0;
@@ -91,8 +91,8 @@
 .fd-checkbox:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
-  border-color: #788fa6;
-  border-color: var(--sapField_Hover_BorderColor,#788fa6)
+  border-color: #556b81;
+  border-color: var(--sapField_Hover_BorderColor,#556b81)
 }
 .fd-checkbox.is-success {
   background-color: #f5fae5;
@@ -114,8 +114,10 @@
 .fd-checkbox.is-error {
   background-color: #ffeaf4;
   background-color: var(--sapField_InvalidBackground,#ffeaf4);
-  font-style: var(--fdInput_State_Text_Style);
-  font-weight: var(--fdInput_State_Font_Weight);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
   border-color: #f53232;
   border-color: var(--sapField_InvalidColor,#f53232);
   border-width: .125rem;
@@ -134,8 +136,10 @@
 .fd-checkbox.is-warning {
   background-color: #fff8d6;
   background-color: var(--sapField_WarningBackground,#fff8d6);
-  font-style: var(--fdInput_State_Text_Style);
-  font-weight: var(--fdInput_State_Font_Weight);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
   border-color: #e76500;
   border-color: var(--sapField_WarningColor,#e76500);
   border-width: .125rem;
@@ -187,7 +191,8 @@
 .fd-checkbox.is-information,
 .fd-checkbox.is-warning {
   border-width: .125rem;
-  border-style: var(--fdInput_State_Border_Type)
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
 }
 .fd-checkbox.is-alert.is-focus,
 .fd-checkbox.is-alert:focus,
@@ -205,7 +210,6 @@
 .fd-checkbox.is-disabled,
 .fd-checkbox:disabled,
 .fd-checkbox[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -238,10 +242,10 @@
 .fd-checkbox[aria-readonly=true],
 .fd-checkbox[readonly] {
   background-color: rgba(242,242,242,.5);
-  background-color: #eff1f2;
-  background-color: var(--sapField_ReadOnly_Background,#eff1f2);
-  border-color: #788fa6;
-  border-color: var(--sapField_ReadOnly_BorderColor,#788fa6)
+  background-color: transparent;
+  background-color: var(--sapField_ReadOnly_Background,transparent);
+  border-color: #556b81;
+  border-color: var(--sapField_ReadOnly_BorderColor,#556b81)
 }
 .fd-checkbox.is-readonly::-webkit-input-placeholder,
 .fd-checkbox[aria-readonly=true]::-webkit-input-placeholder,
@@ -346,9 +350,10 @@
   font-family: SAP-icons;
   background-color: #eff1f2;
   background-color: var(--sapField_Background,#eff1f2);
-  color: var(--fdCheckbox_Selected_Color);
-  border: .0625rem solid #788fa6;
-  border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_BorderColor,#788fa6);
+  color: #0070f2;
+  color: var(--fdCheckbox_Selected_Color,var(--sapSelectedColor,#0070f2));
+  border: .0625rem solid #556b81;
+  border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_BorderColor,#556b81);
   border-radius: .25rem;
   border-radius: var(--sapField_BorderCornerRadius,.25rem)
 }
@@ -365,8 +370,8 @@
 .fd-checkbox__label:hover::before {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
-  border-color: #788fa6;
-  border-color: var(--sapField_Hover_BorderColor,#788fa6)
+  border-color: #556b81;
+  border-color: var(--sapField_Hover_BorderColor,#556b81)
 }
 .fd-checkbox__label:focus {
   outline: 0
@@ -388,8 +393,8 @@
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   font-weight: 700;
-  color: #5d36ff;
-  color: var(--sapField_RequiredColor,#5d36ff);
+  color: #ba066c;
+  color: var(--sapField_RequiredColor,#ba066c);
   position: absolute;
   padding-left: .125rem
 }
@@ -477,7 +482,8 @@
   content: "";
   width: .75rem;
   height: .75rem;
-  background-color: var(--fdCheckbox_Selected_Color);
+  background-color: #0070f2;
+  background-color: var(--fdCheckbox_Selected_Color,var(--sapSelectedColor,#0070f2));
   position: absolute;
   margin-left: .3125rem
 }
@@ -485,7 +491,8 @@
   content: "";
   width: .5rem;
   height: .5rem;
-  background-color: var(--fdCheckbox_Selected_Color);
+  background-color: #0070f2;
+  background-color: var(--fdCheckbox_Selected_Color,var(--sapSelectedColor,#0070f2));
   position: absolute;
   margin-left: .25rem
 }
@@ -503,8 +510,8 @@
 .fd-checkbox.is-warning + .fd-checkbox__label::before {
   background-color: #fff8d6;
   background-color: var(--sapField_WarningBackground,#fff8d6);
-  border: .125rem var(--fdCheckbox_State_Border_Type) #e76500;
-  border: .125rem var(--fdCheckbox_State_Border_Type) var(--sapField_WarningColor,#e76500);
+  border: .125rem solid #e76500;
+  border: .125rem var(--fdCheckbox_State_Border_Type,solid) var(--sapField_WarningColor,#e76500);
   color: #131e29;
   color: var(--sapField_TextColor,#131e29)
 }
@@ -538,8 +545,8 @@
 .fd-checkbox.is-error + .fd-checkbox__label::before {
   background-color: #ffeaf4;
   background-color: var(--sapField_InvalidBackground,#ffeaf4);
-  border: .125rem var(--fdCheckbox_State_Border_Type) #f53232;
-  border: .125rem var(--fdCheckbox_State_Border_Type) var(--sapField_InvalidColor,#f53232);
+  border: .125rem solid #f53232;
+  border: .125rem var(--fdCheckbox_State_Border_Type,solid) var(--sapField_InvalidColor,#f53232);
   color: #f53232;
   color: var(--sapField_InvalidColor,#f53232)
 }
@@ -590,8 +597,8 @@
 .fd-checkbox.is-information + .fd-checkbox__label::before {
   background-color: #e1f4ff;
   background-color: var(--sapField_InformationBackground,#e1f4ff);
-  border: .125rem var(--fdCheckbox_State_Border_Type) #0070f2;
-  border: .125rem var(--fdCheckbox_State_Border_Type) var(--sapField_InformationColor,#0070f2);
+  border: .125rem solid #0070f2;
+  border: .125rem var(--fdCheckbox_State_Border_Type,solid) var(--sapField_InformationColor,#0070f2);
   color: #0070f2;
   color: var(--sapField_InformationColor,#0070f2)
 }
@@ -615,10 +622,10 @@
 }
 .fd-checkbox.is-readonly + .fd-checkbox__label::before,
 .fd-checkbox[readonly] + .fd-checkbox__label::before {
-  background-color: #eff1f2;
-  background-color: var(--sapField_ReadOnly_Background,#eff1f2);
-  border: .0625rem solid #788fa6;
-  border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_ReadOnly_BorderColor,#788fa6);
+  background-color: transparent;
+  background-color: var(--sapField_ReadOnly_Background,transparent);
+  border: .0625rem solid #556b81;
+  border: var(--sapField_BorderWidth,.0625rem) solid var(--sapField_ReadOnly_BorderColor,#556b81);
   color: #223548;
   color: var(--sapContent_NonInteractiveIconColor,#223548)
 }
@@ -639,8 +646,8 @@
 .fd-checkbox[readonly] + .fd-checkbox__label:hover.is-disabled,
 .fd-checkbox[readonly] + .fd-checkbox__label:hover:disabled,
 .fd-checkbox[readonly] + .fd-checkbox__label:hover[aria-disabled=true] {
-  border-color: #788fa6;
-  border-color: var(--sapField_ReadOnly_BorderColor,#788fa6)
+  border-color: #556b81;
+  border-color: var(--sapField_ReadOnly_BorderColor,#556b81)
 }
 .fd-checkbox.is-readonly + .fd-checkbox__label.is-hover::before,
 .fd-checkbox.is-readonly + .fd-checkbox__label:hover::before,

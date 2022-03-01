@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -41,8 +41,8 @@
   height: 2.75rem;
   min-height: 2.75rem;
   padding-right: .5rem;
-  background-color: transparent;
-  background-color: var(--sapGroup_TitleBackground,transparent);
+  background-color: #fff;
+  background-color: var(--sapGroup_TitleBackground,#fff);
   border-bottom: solid .0625rem #d9d9d9;
   border-bottom: solid .0625rem var(--sapGroup_TitleBorderColor,#d9d9d9);
   display: -webkit-box;

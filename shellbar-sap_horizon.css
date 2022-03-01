@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -281,8 +281,8 @@
   cursor: text
 }
 .fd-shellbar__action .fd-shellbar__input-group:hover {
-  border-color: #788fa6;
-  border-color: var(--sapField_BorderColor,#788fa6)
+  border-color: #556b81;
+  border-color: var(--sapField_BorderColor,#556b81)
 }
 .fd-shellbar__action .fd-shellbar__input-group .fd-shellbar__input-group__input {
   border: none;

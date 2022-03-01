@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -47,7 +47,8 @@
   padding-right: calc(.625rem - var(--sapButton_BorderWidth,.0625rem));
   line-height: 1rem;
   text-align: center;
-  text-shadow: var(--fdButton_Text_Shadow);
+  text-shadow: none;
+  text-shadow: var(--fdButton_Text_Shadow,none);
   border-style: solid;
   border-width: .0625rem;
   border-width: var(--sapButton_BorderWidth,.0625rem);
@@ -166,7 +167,8 @@
 }
 .fd-button.fd-button--emphasized {
   font-weight: 700;
-  border-width: var(--fdButton_Emphasized_Border_Width);
+  border-width: .0625rem;
+  border-width: var(--fdButton_Emphasized_Border_Width,var(--sapButton_BorderWidth,.0625rem));
   color: #fff;
   color: var(--sapButton_Emphasized_TextColor,#fff);
   border-color: #0070f2;
@@ -286,7 +288,8 @@
   background-color: var(--sapContent_BadgeBackground,#aa0808);
   border-width: .0625rem;
   border-style: solid;
-  border-color: var(--fdBadgeButton_Border_Color);
+  border-color: #aa0808;
+  border-color: var(--fdBadgeButton_Border_Color,var(--sapContent_BadgeBackground,#aa0808));
   color: #fff;
   color: var(--sapContent_BadgeTextColor,#fff);
   position: absolute;
@@ -772,7 +775,8 @@
 .fd-button.is-disabled.fd-button--emphasized,
 .fd-button[aria-disabled=true].fd-button--emphasized {
   font-weight: 700;
-  border-width: var(--fdButton_Emphasized_Border_Width);
+  border-width: .0625rem;
+  border-width: var(--fdButton_Emphasized_Border_Width,var(--sapButton_BorderWidth,.0625rem));
   color: #fff;
   color: var(--sapButton_Emphasized_TextColor,#fff);
   border-color: #0070f2;
@@ -893,7 +897,8 @@
 }
 .fd-button:disabled.fd-button--emphasized {
   font-weight: 700;
-  border-width: var(--fdButton_Emphasized_Border_Width);
+  border-width: .0625rem;
+  border-width: var(--fdButton_Emphasized_Border_Width,var(--sapButton_BorderWidth,.0625rem));
   color: #fff;
   color: var(--sapButton_Emphasized_TextColor,#fff);
   border-color: #0070f2;

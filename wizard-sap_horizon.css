@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -157,22 +157,27 @@
 .fd-wizard__step--completed .fd-wizard__step-indicator {
   background: #fff;
   background: var(--sapObjectHeader_Background,#fff);
-  color: var(--fdWizard_Completed_Step_Color);
-  border: var(--fdWizard_Completed_Step_Border)
+  color: #0070f2;
+  color: var(--fdWizard_Completed_Step_Color,var(--sapSelectedColor,#0070f2));
+  border: .0625rem solid #0070f2;
+  border: var(--fdWizard_Completed_Step_Border,.0625rem solid var(--sapSelectedColor,#0070f2))
 }
 .fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
 .fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Completed_Step_Icon_Color)
+  color: #0070f2;
+  color: var(--fdWizard_Completed_Step_Icon_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-wizard__step--current .fd-wizard__step-indicator {
   position: relative;
   background: #0070f2;
   background: var(--sapSelectedColor,#0070f2);
-  color: var(--fdWizard_Current_Step_Color)
+  color: #fff;
+  color: var(--fdWizard_Current_Step_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
 .fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Current_Step_Icon_Color)
+  color: #fff;
+  color: var(--fdWizard_Current_Step_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
 }
 .fd-wizard__step--current .fd-wizard__step-indicator::after {
   content: "";
@@ -181,8 +186,10 @@
   position: absolute;
   display: inline-block;
   width: calc(100% + .375rem);
-  height: var(--fdWizard_Selection_Bar_Height);
-  background: var(--fdWizard_Selection_Bar_Background);
+  height: .188rem;
+  height: var(--fdWizard_Selection_Bar_Height,.188rem);
+  background: #0070f2;
+  background: var(--fdWizard_Selection_Bar_Background,var(--sapSelectedColor,#0070f2));
   border-radius: .125rem .125rem 0 0;
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in
@@ -190,12 +197,15 @@
 .fd-wizard__step--upcoming .fd-wizard__step-indicator {
   background: #fff;
   background: var(--sapObjectHeader_Background,#fff);
-  border: var(--fdWizard_Upcoming_Step_Border);
-  color: var(--fdWizard_Upcoming_Step_Color)
+  border: .0625rem solid #e5e5e5;
+  border: var(--fdWizard_Upcoming_Step_Border,.0625rem solid var(--sapList_BorderColor,#e5e5e5));
+  color: #556b82;
+  color: var(--fdWizard_Upcoming_Step_Color,var(--sapContent_LabelColor,#556b82))
 }
 .fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
 .fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Upcoming_Step_Icon_Color)
+  color: #556b82;
+  color: var(--fdWizard_Upcoming_Step_Icon_Color,var(--sapContent_LabelColor,#556b82))
 }
 .fd-wizard__step--upcoming .fd-wizard__step-container {
   cursor: default;
@@ -204,12 +214,15 @@
 .fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator {
   background: #fff;
   background: var(--sapObjectHeader_Background,#fff);
-  color: var(--fdWizard_Completed_Step_Color);
-  border: var(--fdWizard_Completed_Step_Border)
+  color: #0070f2;
+  color: var(--fdWizard_Completed_Step_Color,var(--sapSelectedColor,#0070f2));
+  border: .0625rem solid #0070f2;
+  border: var(--fdWizard_Completed_Step_Border,.0625rem solid var(--sapSelectedColor,#0070f2))
 }
 .fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
 .fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Completed_Step_Icon_Color)
+  color: #0070f2;
+  color: var(--fdWizard_Completed_Step_Icon_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-wizard__step--no-label {
   min-width: 4rem
@@ -268,12 +281,15 @@
 .fd-wizard__step--active .fd-wizard__step-indicator {
   background: #dee2e5;
   background: var(--sapActiveColor,#dee2e5);
-  border-color: var(--fdWizard_Active_Step_Border_Color);
-  color: var(--fdWizard_Active_Step_Color)
+  border-color: #dee2e5;
+  border-color: var(--fdWizard_Active_Step_Border_Color,var(--sapActiveColor,#dee2e5));
+  color: #fff;
+  color: var(--fdWizard_Active_Step_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-wizard__step--active .fd-wizard__icon [class*=sap-icon],
 .fd-wizard__step--active .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Active_Step_Icon_Color)
+  color: #fff;
+  color: var(--fdWizard_Active_Step_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
 }
 .fd-wizard__step-container {
   font-size: .875rem;
@@ -506,7 +522,8 @@
   font-size: inherit
 }
 .fd-wizard__connector--active {
-  border-bottom-color: var(--fdWizard_Connector_Active_Border_Color)
+  border-bottom-color: #0070f2;
+  border-bottom-color: var(--fdWizard_Connector_Active_Border_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-wizard__connector--branching {
   border-bottom-style: dashed
@@ -529,7 +546,8 @@
   width: 100%;
   height: 100%;
   padding-top: 1rem;
-  background: var(--fdWizard_Content_Default_Background)
+  background: #f5f6f7;
+  background: var(--fdWizard_Content_Default_Background,var(--sapBackgroundColor,#f5f6f7))
 }
 .fd-wizard__content::after,
 .fd-wizard__content::before {
@@ -551,13 +569,16 @@
   padding-right: 3rem
 }
 .fd-wizard__content--solid {
-  background: var(--fdWizard_Content_Solid_Background)
+  background: #f5f6f7;
+  background: var(--fdWizard_Content_Solid_Background,var(--sapShell_Background,#f5f6f7))
 }
 .fd-wizard__content--list {
-  background: var(--fdWizard_Content_List_Background)
+  background: #fff;
+  background: var(--fdWizard_Content_List_Background,var(--sapGroup_ContentBackground,#fff))
 }
 .fd-wizard__content--transparent {
-  background: var(--fdWizard_Content_Transparent_Background)
+  background: 0 0;
+  background: var(--fdWizard_Content_Transparent_Background,transparent)
 }
 .fd-wizard__next-step {
   font-size: .875rem;

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -25,7 +25,8 @@
   height: 100%;
   background-color: #000;
   background-color: var(--sapBlockLayer_Background,#000);
-  opacity: var(--fdDialog_Background_Opacity)
+  opacity: .6;
+  opacity: var(--fdDialog_Background_Opacity,.6)
 }
 .fd-dialog__content {
   display: -webkit-box;
@@ -312,8 +313,8 @@
   content: "\e24f"
 }
 .fd-dialog__resize-handle::after {
-  color: #223548;
-  color: var(--sapButton_Lite_TextColor,#223548)
+  color: #0064d9;
+  color: var(--sapButton_Lite_TextColor,#0064d9)
 }
 .fd-dialog--no-backdrop:not(.fd-dialog--targeted) {
   position: fixed;

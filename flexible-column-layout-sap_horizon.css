@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -59,7 +59,8 @@
   position: relative;
   width: 1rem;
   min-width: 1rem;
-  background-color: var(--fdFlexibleColumnLayout_Background_Solid)
+  background-color: #f5f6f7;
+  background-color: var(--fdFlexibleColumnLayout_Background_Solid,var(--sapShell_Background,#f5f6f7))
 }
 .fd-flexible-column-layout__separator::after,
 .fd-flexible-column-layout__separator::before {
@@ -82,13 +83,17 @@
 }
 .fd-flexible-column-layout__separator::before {
   bottom: calc(50% + 2rem / 2);
-  background-image: -webkit-gradient(linear,left bottom,left top,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color)),to(transparent));
-  background-image: linear-gradient(to top,var(--fdFlexibleColumnLayout_Toggle_Image_Color),transparent)
+  background-image: -webkit-gradient(linear,left bottom,left top,from(#0070f2),to(transparent));
+  background-image: -webkit-gradient(linear,left bottom,left top,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#0070f2))),to(transparent));
+  background-image: linear-gradient(to top,#0070f2,transparent);
+  background-image: linear-gradient(to top,var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#0070f2)),transparent)
 }
 .fd-flexible-column-layout__separator::after {
   top: calc(50% + 2rem / 2);
-  background-image: -webkit-gradient(linear,left top,left bottom,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color)),to(transparent));
-  background-image: linear-gradient(to bottom,var(--fdFlexibleColumnLayout_Toggle_Image_Color),transparent)
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#0070f2),to(transparent));
+  background-image: -webkit-gradient(linear,left top,left bottom,from(var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#0070f2))),to(transparent));
+  background-image: linear-gradient(to bottom,#0070f2,transparent);
+  background-image: linear-gradient(to bottom,var(--fdFlexibleColumnLayout_Toggle_Image_Color,var(--sapHighlightColor,#0070f2)),transparent)
 }
 .fd-flexible-column-layout__separator.is-hover::after,
 .fd-flexible-column-layout__separator.is-hover::before,
@@ -127,8 +132,10 @@
   margin: 0;
   border: 0;
   min-width: 20rem;
-  border-left: var(--fdFlexibleColumnLayout_Border);
-  border-right: var(--fdFlexibleColumnLayout_Border);
+  border-left: none;
+  border-left: var(--fdFlexibleColumnLayout_Border,none);
+  border-right: none;
+  border-right: var(--fdFlexibleColumnLayout_Border,none);
   -webkit-transition: width 560ms cubic-bezier(.1,0,.05,1),visibility 560ms ease-in;
   transition: width 560ms cubic-bezier(.1,0,.05,1),visibility 560ms ease-in
 }
@@ -152,8 +159,10 @@
   min-width: 0
 }
 .fd-flexible-column-layout--translucent .fd-flexible-column-layout__separator {
-  background-color: var(--fdFlexibleColumnLayout_Background_Translucent)
+  background-color: #fff;
+  background-color: var(--fdFlexibleColumnLayout_Background_Translucent,var(--sapGroup_ContentBackground,#fff))
 }
 .fd-flexible-column-layout--transparent .fd-flexible-column-layout__separator {
-  background-color: var(--fdFlexibleColumnLayout_Background_Transparent)
+  background-color: transparent;
+  background-color: var(--fdFlexibleColumnLayout_Background_Transparent,transparent)
 }

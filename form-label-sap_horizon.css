@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -73,8 +73,8 @@
   font-size: .875rem;
   font-size: var(--sapFontSize,.875rem);
   font-weight: 700;
-  color: #5d36ff;
-  color: var(--sapField_RequiredColor,#5d36ff);
+  color: #ba066c;
+  color: var(--sapField_RequiredColor,#ba066c);
   position: absolute;
   right: 0;
   top: 0

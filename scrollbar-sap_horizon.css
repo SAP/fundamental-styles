@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -19,7 +19,8 @@
   margin: 0;
   border: 0;
   overflow: auto;
-  scrollbar-color: var(--fdScrollbar_Thumb_Color) var(--fdScrollbar_Track_Color)
+  scrollbar-color: #fdfefe #fff;
+  scrollbar-color: var(--fdScrollbar_Thumb_Color,var(--sapScrollBar_FaceColor,#fdfefe)) var(--fdScrollbar_Track_Color,var(--sapScrollBar_TrackColor,#fff))
 }
 .fd-scrollbar::after,
 .fd-scrollbar::before {
@@ -28,17 +29,22 @@
   font-size: inherit
 }
 .fd-scrollbar::-webkit-scrollbar {
-  width: var(--fdScrollbar_Dimension);
-  height: var(--fdScrollbar_Dimension)
+  width: .75rem;
+  width: var(--fdScrollbar_Dimension,var(--sapScrollBar_Dimension,.75rem));
+  height: .75rem;
+  height: var(--fdScrollbar_Dimension,var(--sapScrollBar_Dimension,.75rem))
 }
 .fd-scrollbar::-webkit-scrollbar-corner,
 .fd-scrollbar::-webkit-scrollbar-track {
-  background-color: var(--fdScrollbar_Track_Color)
+  background-color: #fff;
+  background-color: var(--fdScrollbar_Track_Color,var(--sapScrollBar_TrackColor,#fff))
 }
 .fd-scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--fdScrollbar_Thumb_Color)
+  background-color: #fdfefe;
+  background-color: var(--fdScrollbar_Thumb_Color,var(--sapScrollBar_FaceColor,#fdfefe))
 }
 .fd-scrollbar::-webkit-scrollbar-thumb:active,
 .fd-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: var(--fdScrollbar_Thumb_Hover_Color)
+  background-color: #eff7f7;
+  background-color: var(--fdScrollbar_Thumb_Hover_Color,var(--sapScrollBar_Hover_FaceColor,#eff7f7))
 }

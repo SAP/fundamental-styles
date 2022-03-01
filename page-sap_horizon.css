@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -132,10 +132,12 @@
   background: var(--sapBackgroundColor,#f5f6f7)
 }
 .fd-page--list {
-  background: var(--fdPage_List_Background)
+  background: #fff;
+  background: var(--fdPage_List_Background,var(--sapGroup_ContentBackground,#fff))
 }
 .fd-page--transparent {
-  background: var(--fdPage_Transparent_Background)
+  background: 0 0;
+  background: var(--fdPage_Transparent_Background,transparent)
 }
 .fd-page--home.fd-page__content--S {
   font-size: .875rem;

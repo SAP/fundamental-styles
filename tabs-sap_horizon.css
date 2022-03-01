@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -130,13 +130,15 @@
 .fd-tabs__link[aria-selected=true] .fd-tabs__icon {
   color: #fff;
   color: var(--fdTabs_Selected_Icon_Color,var(--sapContent_ContrastIconColor,#fff));
-  background-color: var(--fdTabs_Selected_Color)
+  background-color: #0070f2;
+  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-tabs__link.is-selected .fd-tabs__icon::after,
 .fd-tabs__link.is-selected .fd-tabs__tag::after,
 .fd-tabs__link[aria-selected=true] .fd-tabs__icon::after,
 .fd-tabs__link[aria-selected=true] .fd-tabs__tag::after {
-  background-color: var(--fdTabs_Selected_Color)
+  background-color: #0070f2;
+  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-tabs__link.is-focus,
 .fd-tabs__link:focus {
@@ -183,12 +185,15 @@
 }
 .fd-tabs__item.is-selected .fd-tabs__tag,
 .fd-tabs__item[aria-selected=true] .fd-tabs__tag {
-  color: var(--fdTabs_Selected_Color)
+  color: #0070f2;
+  color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-tabs__item.is-selected .fd-tabs__icon,
 .fd-tabs__item[aria-selected=true] .fd-tabs__icon {
-  color: var(--fdTabs_Selected_Icon_Color);
-  background-color: var(--fdTabs_Selected_Color)
+  color: #fff;
+  color: var(--fdTabs_Selected_Icon_Color,var(--sapContent_ContrastIconColor,#fff));
+  background-color: #0070f2;
+  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-tabs__item.is-selected .fd-tabs__icon::after,
 .fd-tabs__item.is-selected .fd-tabs__link::after,
@@ -196,7 +201,8 @@
 .fd-tabs__item[aria-selected=true] .fd-tabs__icon::after,
 .fd-tabs__item[aria-selected=true] .fd-tabs__link::after,
 .fd-tabs__item[aria-selected=true] .fd-tabs__tag::after {
-  background-color: var(--fdTabs_Selected_Color)
+  background-color: #0070f2;
+  background-color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-tabs__item--error .fd-tabs__icon {
   color: #aa0808;
@@ -370,8 +376,10 @@
   justify-content: center;
   width: 2.625rem;
   height: 2.625rem;
-  border: .0625rem solid var(--fdTabs_Selected_Color);
-  color: var(--fdTabs_Selected_Color);
+  border: .0625rem solid #0070f2;
+  border: .0625rem solid var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2));
+  color: #0070f2;
+  color: var(--fdTabs_Selected_Color,var(--sapSelectedColor,#0070f2));
   border-radius: 50%;
   background-color: transparent;
   position: relative;

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -23,8 +23,8 @@
   border-style: solid;
   border-width: .0625rem;
   border-width: var(--sapField_BorderWidth,.0625rem);
-  border-color: #788fa6;
-  border-color: var(--sapField_BorderColor,#788fa6);
+  border-color: #556b81;
+  border-color: var(--sapField_BorderColor,#556b81);
   border-radius: .25rem;
   border-radius: var(--sapField_BorderCornerRadius,.25rem);
   background-color: #eff1f2;
@@ -48,8 +48,8 @@
 .fd-step-input:hover {
   background-color: #fff;
   background-color: var(--sapField_Hover_Background,#fff);
-  border-color: #788fa6;
-  border-color: var(--sapField_Hover_BorderColor,#788fa6)
+  border-color: #556b81;
+  border-color: var(--sapField_Hover_BorderColor,#556b81)
 }
 .fd-step-input.is-success {
   background-color: #f5fae5;
@@ -71,8 +71,10 @@
 .fd-step-input.is-error {
   background-color: #ffeaf4;
   background-color: var(--sapField_InvalidBackground,#ffeaf4);
-  font-style: var(--fdInput_State_Text_Style);
-  font-weight: var(--fdInput_State_Font_Weight);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
   border-color: #f53232;
   border-color: var(--sapField_InvalidColor,#f53232);
   border-width: .125rem;
@@ -91,8 +93,10 @@
 .fd-step-input.is-warning {
   background-color: #fff8d6;
   background-color: var(--sapField_WarningBackground,#fff8d6);
-  font-style: var(--fdInput_State_Text_Style);
-  font-weight: var(--fdInput_State_Font_Weight);
+  font-style: normal;
+  font-style: var(--fdInput_State_Text_Style,normal);
+  font-weight: 400;
+  font-weight: var(--fdInput_State_Font_Weight,normal);
   border-color: #e76500;
   border-color: var(--sapField_WarningColor,#e76500);
   border-width: .125rem;
@@ -144,7 +148,8 @@
 .fd-step-input.is-information,
 .fd-step-input.is-warning {
   border-width: .125rem;
-  border-style: var(--fdInput_State_Border_Type)
+  border-style: solid;
+  border-style: var(--fdInput_State_Border_Type,solid)
 }
 .fd-step-input.is-alert.is-focus,
 .fd-step-input.is-alert:focus,
@@ -162,7 +167,6 @@
 .fd-step-input.is-disabled,
 .fd-step-input:disabled,
 .fd-step-input[aria-disabled=true] {
-  pointer-events: none;
   opacity: .4;
   opacity: var(--sapContent_DisabledOpacity,.4)
 }
@@ -195,10 +199,10 @@
 .fd-step-input[aria-readonly=true],
 .fd-step-input[readonly] {
   background-color: rgba(242,242,242,.5);
-  background-color: #eff1f2;
-  background-color: var(--sapField_ReadOnly_Background,#eff1f2);
-  border-color: #788fa6;
-  border-color: var(--sapField_ReadOnly_BorderColor,#788fa6)
+  background-color: transparent;
+  background-color: var(--sapField_ReadOnly_Background,transparent);
+  border-color: #556b81;
+  border-color: var(--sapField_ReadOnly_BorderColor,#556b81)
 }
 .fd-step-input.is-readonly::-webkit-input-placeholder,
 .fd-step-input[aria-readonly=true]::-webkit-input-placeholder,

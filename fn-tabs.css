@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -74,11 +74,21 @@
   font-size: .9375rem
 }
 .fn-tabs .fn-tabs__button {
-  margin-left: .25rem
+  margin-left: .25rem;
+  min-width: 0;
+  position: relative
 }
 .fn-tabs .fn-tabs__button[dir=rtl],
 [dir=rtl] .fn-tabs .fn-tabs__button {
   margin-right: .25rem;
+  margin-left: 0
+}
+.fn-tabs .fn-tabs__button.fn-tabs__button--split {
+  margin-left: .5rem
+}
+.fn-tabs .fn-tabs__button.fn-tabs__button--split[dir=rtl],
+[dir=rtl] .fn-tabs .fn-tabs__button.fn-tabs__button--split {
+  margin-right: .5rem;
   margin-left: 0
 }
 .fn-tabs__text {
@@ -168,6 +178,14 @@
 .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
 }
+.fn-tabs__item .fn-tabs__button--split::after {
+  background: #475e75
+}
+.fn-tabs__item .fn-tabs__button--split.focus-visible,
+.fn-tabs__item .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #475e75;
+  box-shadow: 0 0 0 .125rem #475e75
+}
 .fn-tabs__item [class*=sap-icon] {
   color: #475e75
 }
@@ -229,6 +247,14 @@
 .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
 .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
+}
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split::after {
+  background: #0070f2
+}
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.focus-visible,
+.fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
+  box-shadow: 0 0 0 .125rem #0070f2
 }
 .fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
   color: #0070f2
@@ -320,6 +346,14 @@
 .fn-tabs--positive .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
 }
+.fn-tabs--positive .fn-tabs__item .fn-tabs__button--split::after {
+  background: #188918
+}
+.fn-tabs--positive .fn-tabs__item .fn-tabs__button--split.focus-visible,
+.fn-tabs--positive .fn-tabs__item .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #188918;
+  box-shadow: 0 0 0 .125rem #188918
+}
 .fn-tabs--positive .fn-tabs__item [class*=sap-icon] {
   color: #188918
 }
@@ -375,6 +409,14 @@
 .fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
 .fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split::after {
+  background: #188918
+}
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.focus-visible,
+.fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #188918;
+  box-shadow: 0 0 0 .125rem #188918
 }
 .fn-tabs--positive .fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
   color: #188918
@@ -485,6 +527,14 @@
 .fn-tabs--critical .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
 }
+.fn-tabs--critical .fn-tabs__item .fn-tabs__button--split::after {
+  background: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item .fn-tabs__button--split.focus-visible,
+.fn-tabs--critical .fn-tabs__item .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #f58b00;
+  box-shadow: 0 0 0 .125rem #f58b00
+}
 .fn-tabs--critical .fn-tabs__item [class*=sap-icon] {
   color: #f58b00
 }
@@ -540,6 +590,14 @@
 .fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
 .fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split::after {
+  background: #f58b00
+}
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.focus-visible,
+.fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #f58b00;
+  box-shadow: 0 0 0 .125rem #f58b00
 }
 .fn-tabs--critical .fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
   color: #f58b00
@@ -650,6 +708,14 @@
 .fn-tabs--negative .fn-tabs__item .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
 }
+.fn-tabs--negative .fn-tabs__item .fn-tabs__button--split::after {
+  background: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item .fn-tabs__button--split.focus-visible,
+.fn-tabs--negative .fn-tabs__item .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #c35500;
+  box-shadow: 0 0 0 .125rem #c35500
+}
 .fn-tabs--negative .fn-tabs__item [class*=sap-icon] {
   color: #d20a0a
 }
@@ -705,6 +771,14 @@
 .fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible).is-active [class*=sap-icon],
 .fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button:focus:not(.focus-visible):active [class*=sap-icon] {
   color: #fff
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split::after {
+  background: #d20a0a
+}
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.focus-visible,
+.fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected .fn-tabs__button--split.is-focus {
+  -webkit-box-shadow: 0 0 0 .125rem #c35500;
+  box-shadow: 0 0 0 .125rem #c35500
 }
 .fn-tabs--negative .fn-tabs__item.fn-tabs__item--selected [class*=sap-icon] {
   color: #d20a0a

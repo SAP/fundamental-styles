@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -21,7 +21,8 @@
   position: relative;
   list-style: none;
   width: 100%;
-  text-shadow: var(--fdListBase_Text_Shadow)
+  text-shadow: none;
+  text-shadow: var(--fdListBase_Text_Shadow,none)
 }
 .fd-list::after,
 .fd-list::before {
@@ -220,25 +221,33 @@
 .fd-list__item--action {
   padding: 0;
   text-align: center;
-  border-bottom: var(--fdList_Item_Action_Border);
-  height: var(--fdList_Item_Action_Height)
+  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5));
+  height: 2.75rem;
+  height: var(--fdList_Item_Action_Height,2.75rem)
 }
 .fd-list__item--action:first-child {
-  border-top: var(--fdList_Item_Action_Border)
+  border-top: .0625rem solid #e5e5e5;
+  border-top: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5))
 }
 .fd-list__item--action .fd-list__title {
   padding: 0 1rem;
-  height: var(--fdList_Item_Action_Button_Size);
+  height: 100%;
+  height: var(--fdList_Item_Action_Button_Size,100%);
   width: 100%;
   background: 0 0;
   color: #223548;
   color: var(--sapButton_TextColor,#223548);
   pointer-events: all;
   cursor: pointer;
-  text-shadow: var(--fdListBase_Text_Shadow);
-  margin: var(--fdList_Item_Action_Button_Spacing);
-  border: var(--fdList_Item_Action_Button_Border);
-  border-radius: var(--fdList_Item_Action_Button_Border_Radius)
+  text-shadow: none;
+  text-shadow: var(--fdListBase_Text_Shadow,none);
+  margin: 0;
+  margin: var(--fdList_Item_Action_Button_Spacing,0);
+  border: none;
+  border: var(--fdList_Item_Action_Button_Border,none);
+  border-radius: 0;
+  border-radius: var(--fdList_Item_Action_Button_Border_Radius,0)
 }
 .fd-list__item--action .fd-list__title.is-hover,
 .fd-list__item--action .fd-list__title:hover {
@@ -826,18 +835,21 @@
   background-color: var(--sapInformationBackground,#e1f4ff)
 }
 .fd-list .fd-list__button {
-  margin-left: var(--fdListButtonSpacing)
+  margin-left: .125rem;
+  margin-left: var(--fdListButtonSpacing,.125rem)
 }
 .fd-list .fd-list__button[dir=rtl],
 [dir=rtl] .fd-list .fd-list__button {
   margin-left: 0;
-  margin-right: var(--fdListButtonSpacing)
+  margin-right: .125rem;
+  margin-right: var(--fdListButtonSpacing,.125rem)
 }
 .fd-list--compact .fd-list__item {
   height: 2rem
 }
 .fd-list--compact .fd-list__item.fd-list__item--action .fd-list__title {
-  height: var(--fdList_Item_Action_Button_Size_Compact)
+  height: 100%;
+  height: var(--fdList_Item_Action_Button_Size_Compact,100%)
 }
 .fd-list--compact .fd-list__title {
   font-size: .875rem;

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -27,8 +27,8 @@
   position: relative;
   color: #223548;
   color: var(--sapTextColor,#223548);
-  background-color: #f5f6f7;
-  background-color: var(--sapNeutralBackground,#f5f6f7);
+  background-color: #eff1f2;
+  background-color: var(--sapNeutralBackground,#eff1f2);
   border: 1px solid;
   border-color: #6e87a0;
   border-color: var(--sapNeutralBorderColor,#6e87a0);

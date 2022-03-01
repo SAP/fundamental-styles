@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -72,7 +72,8 @@
   font-size: .75rem;
   font-family: SAP-icons;
   -webkit-font-smoothing: antialiased;
-  display: var(--fdIcon_Tab_Bar_Semantic_Icon_Display)
+  display: none;
+  display: var(--fdIcon_Tab_Bar_Semantic_Icon_Display,none)
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__icon::before,
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__icon[dir=rtl]::after,
@@ -217,7 +218,8 @@
   margin-left: 2rem
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative)
+  color: #f53232;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tag::before {
   margin-right: .5rem;
@@ -234,23 +236,28 @@
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tab.is-selected::after,
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tab[aria-selected=true]::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Color_Negative)
+  background: #f53232;
+  background: var(--fdIcon_Tab_Bar_Semantic_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__tag,
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative)
+  color: #f53232;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__icon,
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__icon {
-  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Negative)
+  background-color: #f53232;
+  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__icon {
   position: relative;
-  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative)
+  border-color: #f53232;
+  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__icon [class*=sap-icon],
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__icon[class*=sap-icon] {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative)
+  color: #f53232;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__icon::before {
   right: -.9rem;
@@ -267,13 +274,16 @@
   color: var(--sapNegativeElementColor,#f53232)
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__badge {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Negative)
+  background: #f53232;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__badge::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Negative)
+  background: #f53232;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive)
+  color: #30914c;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tag::before {
   margin-right: .5rem;
@@ -290,23 +300,28 @@
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tab.is-selected::after,
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tab[aria-selected=true]::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Color_Positive)
+  background: #30914c;
+  background: var(--fdIcon_Tab_Bar_Semantic_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__tag,
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive)
+  color: #30914c;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__icon,
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__icon {
-  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Positive)
+  background-color: #30914c;
+  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__icon {
   position: relative;
-  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive)
+  border-color: #30914c;
+  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__icon [class*=sap-icon],
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__icon[class*=sap-icon] {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive)
+  color: #30914c;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__icon::before {
   right: -.9rem;
@@ -323,13 +338,16 @@
   color: var(--sapPositiveElementColor,#30914c)
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__badge {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Positive)
+  background: #30914c;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__badge::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Positive)
+  background: #30914c;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical)
+  color: #e76500;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tag::before {
   margin-right: .5rem;
@@ -346,23 +364,28 @@
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tab.is-selected::after,
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tab[aria-selected=true]::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Color_Critical)
+  background: #e76500;
+  background: var(--fdIcon_Tab_Bar_Semantic_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__tag,
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical)
+  color: #e76500;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__icon,
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__icon {
-  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Critical)
+  background-color: #e76500;
+  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__icon {
   position: relative;
-  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical)
+  border-color: #e76500;
+  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__icon [class*=sap-icon],
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__icon[class*=sap-icon] {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical)
+  color: #e76500;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__icon::before {
   right: -.9rem;
@@ -379,13 +402,16 @@
   color: var(--sapCriticalElementColor,#e76500)
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__badge {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Critical)
+  background: #e76500;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__badge::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Critical)
+  background: #e76500;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative)
+  color: #0070f2;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tag::before {
   margin-right: .5rem;
@@ -402,23 +428,28 @@
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tab.is-selected::after,
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tab[aria-selected=true]::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Color_Informative)
+  background: #0070f2;
+  background: var(--fdIcon_Tab_Bar_Semantic_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__tag,
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative)
+  color: #0070f2;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__icon,
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__icon {
-  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Informative)
+  background-color: #0070f2;
+  background-color: var(--fdIcon_Tab_Bar_Semantic_Background_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__icon {
   position: relative;
-  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative)
+  border-color: #0070f2;
+  border-color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__icon [class*=sap-icon],
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__icon[class*=sap-icon] {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative)
+  color: #0070f2;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__icon::before {
   right: -.9rem;
@@ -435,10 +466,12 @@
   color: var(--sapInformativeElementColor,#0070f2)
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__badge {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Informative)
+  background: #0070f2;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__badge::after {
-  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Informative)
+  background: #0070f2;
+  background: var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__item--single-click .fd-icon-tab-bar__tab {
   -webkit-box-orient: horizontal;
@@ -771,8 +804,10 @@
   border-radius: .125rem .125rem 0 0;
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
-  height: var(--fdIcon_Tab_Bar_Selection_Bar_Height);
-  background: var(--fdIcon_Tab_Bar_Selection_Bar_Color)
+  height: .188rem;
+  height: var(--fdIcon_Tab_Bar_Selection_Bar_Height,.188rem);
+  background: #0070f2;
+  background: var(--fdIcon_Tab_Bar_Selection_Bar_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-icon-tab-bar__tab.is-selected[dir=rtl]::after,
 .fd-icon-tab-bar__tab[aria-selected=true][dir=rtl]::after,
@@ -783,7 +818,8 @@
 }
 .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__tag,
 .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__tag {
-  color: var(--fdIcon_Tab_Bar_Selection_Color)
+  color: #0070f2;
+  color: var(--fdIcon_Tab_Bar_Selection_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-icon-tab-bar__tab.is-selected .fd-icon-tab-bar__icon,
 .fd-icon-tab-bar__tab[aria-selected=true] .fd-icon-tab-bar__icon {
@@ -919,7 +955,8 @@
   height: 2.75rem;
   border-radius: 50%;
   border-radius: 50%;
-  border: .0625rem solid var(--fdIcon_Tab_Bar_Icon_Border_Color)
+  border: .0625rem solid #0070f2;
+  border: .0625rem solid var(--fdIcon_Tab_Bar_Icon_Border_Color,var(--sapSelectedColor,#0070f2))
 }
 .fd-icon-tab-bar__icon::after,
 .fd-icon-tab-bar__icon::before {
@@ -1344,7 +1381,8 @@
   position: absolute;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  background: var(--fdIcon_Tab_Bar_Badge_Color);
+  background: #aa0808;
+  background: var(--fdIcon_Tab_Bar_Badge_Color,var(--sapContent_BadgeBackground,#aa0808));
   border: .0625rem solid #fff;
   border: .0625rem solid var(--sapObjectHeader_Background,#fff)
 }
@@ -1797,25 +1835,29 @@
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--negative .fd-icon-tab-bar__list-item-icon [class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--negative .fd-icon-tab-bar__list-item-icon[class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--negative .fd-icon-tab-bar__list-item-title {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative)
+  color: #f53232;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--positive .fd-icon-tab-bar__list-item-counter,
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--positive .fd-icon-tab-bar__list-item-icon [class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--positive .fd-icon-tab-bar__list-item-icon[class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--positive .fd-icon-tab-bar__list-item-title {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive)
+  color: #30914c;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--critical .fd-icon-tab-bar__list-item-counter,
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--critical .fd-icon-tab-bar__list-item-icon [class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--critical .fd-icon-tab-bar__list-item-icon[class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--critical .fd-icon-tab-bar__list-item-title {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical)
+  color: #e76500;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--informative .fd-icon-tab-bar__list-item-counter,
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--informative .fd-icon-tab-bar__list-item-icon [class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--informative .fd-icon-tab-bar__list-item-icon[class*=sap-icon],
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item--informative .fd-icon-tab-bar__list-item-title {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative)
+  color: #0070f2;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar__list .fd-icon-tab-bar__list-item-icon-container {
   display: -webkit-box;
@@ -2003,7 +2045,8 @@
   content: none
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__label {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative)
+  color: #f53232;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Negative,var(--sapNegativeElementColor,#f53232))
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--negative .fd-icon-tab-bar__label::before {
   margin-right: .5rem;
@@ -2033,7 +2076,8 @@
   content: none
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__label {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive)
+  color: #30914c;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Positive,var(--sapPositiveElementColor,#30914c))
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--positive .fd-icon-tab-bar__label::before {
   margin-right: .5rem;
@@ -2063,7 +2107,8 @@
   content: none
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__label {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical)
+  color: #e76500;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Critical,var(--sapCriticalElementColor,#e76500))
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--critical .fd-icon-tab-bar__label::before {
   margin-right: .5rem;
@@ -2093,7 +2138,8 @@
   content: none
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__label {
-  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative)
+  color: #0070f2;
+  color: var(--fdIcon_Tab_Bar_Semantic_Color_Informative,var(--sapInformativeElementColor,#0070f2))
 }
 .fd-icon-tab-bar--icon .fd-icon-tab-bar__item--informative .fd-icon-tab-bar__label::before {
   margin-right: .5rem;
@@ -2395,8 +2441,8 @@
   position: absolute;
   width: .063rem;
   height: 1.5rem;
-  background: #788fa6;
-  background: var(--sapShell_InteractiveBorderColor,#788fa6);
+  background: #556b81;
+  background: var(--sapShell_InteractiveBorderColor,#556b81);
   right: -1rem
 }
 .fd-icon-tab-bar--navigation-flat .fd-icon-tab-bar__item--with-separator[dir=rtl]::after,

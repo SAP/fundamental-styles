@@ -1,0 +1,224 @@
+/*!
+ * Fundamental Library Styles v0.22.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fd-info-label {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #eaecee;
+  color: var(--sapTextColor,#eaecee);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: .5rem;
+  line-height: normal;
+  height: 1rem;
+  max-width: 100%;
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  letter-spacing: .0125rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #eaecee;
+  color: var(--sapTextColor,#eaecee);
+  padding: 0 .3125rem;
+  border-width: .0625rem;
+  border-style: solid
+}
+.fd-info-label::after,
+.fd-info-label::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-info-label__icon [class*=sap-icon],
+.fd-info-label__icon[class*=sap-icon] {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  border-radius: inherit;
+  line-height: 1;
+  font-size: .75rem;
+  margin-right: .125rem
+}
+.fd-info-label__icon [class*=sap-icon][dir=rtl],
+.fd-info-label__icon[class*=sap-icon][dir=rtl],
+[dir=rtl] .fd-info-label__icon [class*=sap-icon],
+[dir=rtl] .fd-info-label__icon[class*=sap-icon] {
+  margin-right: 0;
+  margin-left: .125rem
+}
+.fd-info-label__icon [class*=sap-icon]:first-child:last-child,
+.fd-info-label__icon[class*=sap-icon]:first-child:last-child {
+  margin: 0
+}
+.fd-info-label__icon [class*=sap-icon]:first-child:last-child[dir=rtl],
+.fd-info-label__icon[class*=sap-icon]:first-child:last-child[dir=rtl],
+[dir=rtl] .fd-info-label__icon [class*=sap-icon]:first-child:last-child,
+[dir=rtl] .fd-info-label__icon[class*=sap-icon]:first-child:last-child {
+  margin: 0
+}
+.fd-info-label__text {
+  font-size: .875rem;
+  font-size: var(--sapFontSize,.875rem);
+  line-height: 1.5;
+  line-height: var(--sapContent_LineHeight,1.5);
+  color: #eaecee;
+  color: var(--sapTextColor,#eaecee);
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: inherit;
+  font-weight: 700;
+  color: inherit;
+  line-height: 1
+}
+.fd-info-label__text::after,
+.fd-info-label__text::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fd-info-label--accent-color-1 {
+  background-color: var(--sapLegendBackgroundfColor1);
+  background-color: var(--fdInfo_Label_Background_Color1,var(--sapLegendBackgroundfColor1));
+  border-color: #ffdf72;
+  border-color: var(--fdInfo_Label_Border_Color1,var(--sapAccentColor1,#ffdf72))
+}
+.fd-info-label--accent-color-1[class*=sap-icon] {
+  border-color: #ffdf72;
+  border-color: var(--fdInfo_Label_Border_Color1,var(--sapAccentColor1,#ffdf72))
+}
+.fd-info-label--accent-color-2 {
+  background-color: var(--sapLegendBackgroundfColor2);
+  background-color: var(--fdInfo_Label_Background_Color2,var(--sapLegendBackgroundfColor2));
+  border-color: #ff8cb2;
+  border-color: var(--fdInfo_Label_Border_Color2,var(--sapAccentColor2,#ff8cb2))
+}
+.fd-info-label--accent-color-2[class*=sap-icon] {
+  border-color: #ff8cb2;
+  border-color: var(--fdInfo_Label_Border_Color2,var(--sapAccentColor2,#ff8cb2))
+}
+.fd-info-label--accent-color-3 {
+  background-color: var(--sapLegendBackgroundfColor3);
+  background-color: var(--fdInfo_Label_Background_Color3,var(--sapLegendBackgroundfColor3));
+  border-color: #fecbda;
+  border-color: var(--fdInfo_Label_Border_Color3,var(--sapAccentColor3,#fecbda))
+}
+.fd-info-label--accent-color-3[class*=sap-icon] {
+  border-color: #fecbda;
+  border-color: var(--fdInfo_Label_Border_Color3,var(--sapAccentColor3,#fecbda))
+}
+.fd-info-label--accent-color-4 {
+  background-color: var(--sapLegendBackgroundfColor5);
+  background-color: var(--fdInfo_Label_Background_Color4,var(--sapLegendBackgroundfColor5));
+  border-color: #ffafed;
+  border-color: var(--fdInfo_Label_Border_Color4,var(--sapAccentColor4,#ffafed))
+}
+.fd-info-label--accent-color-4[class*=sap-icon] {
+  border-color: #ffafed;
+  border-color: var(--fdInfo_Label_Border_Color4,var(--sapAccentColor4,#ffafed))
+}
+.fd-info-label--accent-color-5 {
+  background-color: var(--sapLegendBackgroundfColor20);
+  background-color: var(--fdInfo_Label_Background_Color5,var(--sapLegendBackgroundfColor20));
+  border-color: #d3b6ff;
+  border-color: var(--fdInfo_Label_Border_Color5,var(--sapAccentColor5,#d3b6ff))
+}
+.fd-info-label--accent-color-5[class*=sap-icon] {
+  border-color: #d3b6ff;
+  border-color: var(--fdInfo_Label_Border_Color5,var(--sapAccentColor5,#d3b6ff))
+}
+.fd-info-label--accent-color-6 {
+  background-color: var(--sapLegendBackgroundfColor6);
+  background-color: var(--fdInfo_Label_Background_Color6,var(--sapLegendBackgroundfColor6));
+  border-color: #a6e0ff;
+  border-color: var(--fdInfo_Label_Border_Color6,var(--sapAccentColor6,#a6e0ff))
+}
+.fd-info-label--accent-color-6[class*=sap-icon] {
+  border-color: #a6e0ff;
+  border-color: var(--fdInfo_Label_Border_Color6,var(--sapAccentColor6,#a6e0ff))
+}
+.fd-info-label--accent-color-7 {
+  background-color: var(--sapLegendBackgroundfColor7);
+  background-color: var(--fdInfo_Label_Background_Color7,var(--sapLegendBackgroundfColor7));
+  border-color: #64edd2;
+  border-color: var(--fdInfo_Label_Border_Color7,var(--sapAccentColor7,#64edd2))
+}
+.fd-info-label--accent-color-7[class*=sap-icon] {
+  border-color: #64edd2;
+  border-color: var(--fdInfo_Label_Border_Color7,var(--sapAccentColor7,#64edd2))
+}
+.fd-info-label--accent-color-8 {
+  background-color: var(--sapLegendBackgroundfColor18);
+  background-color: var(--fdInfo_Label_Background_Color8,var(--sapLegendBackgroundfColor18));
+  border-color: #d5f1b1;
+  border-color: var(--fdInfo_Label_Border_Color8,var(--sapLegendColor18,#d5f1b1))
+}
+.fd-info-label--accent-color-8[class*=sap-icon] {
+  border-color: #d5f1b1;
+  border-color: var(--fdInfo_Label_Border_Color8,var(--sapLegendColor18,#d5f1b1))
+}
+.fd-info-label--accent-color-9 {
+  background-color: var(--sapLegendBackgroundfColor10);
+  background-color: var(--fdInfo_Label_Background_Color9,var(--sapLegendBackgroundfColor10));
+  border-color: #d5dadd;
+  border-color: var(--fdInfo_Label_Border_Color9,var(--sapAccentColor10,#d5dadd))
+}
+.fd-info-label--accent-color-9[class*=sap-icon] {
+  border-color: #d5dadd;
+  border-color: var(--fdInfo_Label_Border_Color9,var(--sapAccentColor10,#d5dadd))
+}
+.fd-info-label--accent-color-10 {
+  background-color: var(--sapLegendBackgroundfColor9);
+  background-color: var(--fdInfo_Label_Background_Color10,var(--sapLegendBackgroundfColor9));
+  border-color: #b995e0;
+  border-color: var(--fdInfo_Label_Border_Color10,var(--sapAccentColor9,#b995e0))
+}
+.fd-info-label--accent-color-10[class*=sap-icon] {
+  border-color: #b995e0;
+  border-color: var(--fdInfo_Label_Border_Color10,var(--sapAccentColor9,#b995e0))
+}
+.fd-info-label--display {
+  border-color: transparent;
+  border-color: var(--fdInfo_Label_Display_Border_Color,transparent);
+  background-color: #eaecee;
+  background-color: var(--fdInfo_Label_Display_Background_Color,var(--sapTextColor,#eaecee));
+  color: #1d232a;
+  color: var(--fdInfo_Label_Display_Text_Color,var(--sapContent_ContrastTextColor,#1d232a))
+}
+.fd-info-label--numeric {
+  padding: 0 .1875rem;
+  font-weight: 700
+}
+.fd-info-label--icon {
+  font-size: .75rem;
+  font-size: var(--sapFontSmallSize,.75rem);
+  padding: 0 .1875rem;
+  line-height: 1rem
+}

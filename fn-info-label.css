@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -92,35 +92,47 @@
   margin-right: 0;
   margin-left: .25rem
 }
-.fn-info-label--yellow {
-  background-color: #fdf5c9;
-  color: #915e00
+.fn-info-label--mango {
+  background-color: #fff3b8;
+  color: #a93e00
 }
-.fn-info-label--crimson {
-  background-color: #fff0f5;
+.fn-info-label--red {
+  background-color: #ffd5ea;
+  color: #aa0808
+}
+.fn-info-label--raspberry {
+  background-color: #ffdce8;
   color: #ba066c
 }
-.fn-info-label--lime {
-  background-color: #edfbac;
-  color: #437500
-}
-.fn-info-label--indigo {
-  background-color: #f1ecff;
-  color: #470ced
-}
-.fn-info-label--grey {
-  background-color: #f5f6f7;
-  color: #223548
-}
-.fn-info-label--cyan {
-  background-color: #dbf9ff;
-  color: #00709f
-}
 .fn-info-label--pink {
-  background-color: #fff0fa;
+  background-color: #ffdcf3;
   color: #a100c2
 }
+.fn-info-label--indigo {
+  background-color: #e2d8ff;
+  color: #470ced
+}
+.fn-info-label--blue {
+  background-color: #d1efff;
+  color: #0057d2
+}
 .fn-info-label--teal {
-  background-color: #dafdf5;
+  background-color: #c2fcee;
   color: #046c7a
+}
+.fn-info-label--green {
+  background-color: #e5f2bd;
+  color: #256f3a
+}
+.fn-info-label--cyan {
+  background-color: #b8f3ff;
+  color: #00709f
+}
+.fn-info-label--grey {
+  background-color: #eaecee;
+  color: #354a5f
+}
+.fn-info-label--display {
+  background-color: transparent;
+  color: #1a2733
 }

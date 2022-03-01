@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -17,7 +17,7 @@
   width: 100%;
   height: .5rem;
   position: relative;
-  background: #eaecee;
+  background: #d5dadd;
   border-radius: .25rem
 }
 .fn-progress-bar::after,
@@ -116,6 +116,9 @@
   box-sizing: inherit;
   font-size: inherit
 }
+.fn-progress-bar--positive {
+  background: #bae881
+}
 .fn-progress-bar--positive::before {
   background: #188918
 }
@@ -126,6 +129,9 @@
 .fn-progress-bar--positive .fn-progress-bar__track {
   background: #188918
 }
+.fn-progress-bar--critical {
+  background: #ffdf72
+}
 .fn-progress-bar--critical::before {
   background: #f58b00
 }
@@ -135,6 +141,9 @@
 }
 .fn-progress-bar--critical .fn-progress-bar__track {
   background: #f58b00
+}
+.fn-progress-bar--negative {
+  background: #ffb2d2
 }
 .fn-progress-bar--negative::before {
   background: #d20a0a

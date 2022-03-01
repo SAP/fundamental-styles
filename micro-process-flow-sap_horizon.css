@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -265,14 +265,15 @@
   background-color: var(--sapPositiveElementColor,#30914c)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: var(--fdMicro_Process_Flow_Icon_Color)
+  color: #fff;
+  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container:hover {
-  border-color: #27763e;
-  border-color: var(--sapButton_Success_Hover_Background,#27763e);
-  background-color: #27763e;
-  background-color: var(--sapButton_Success_Hover_Background,#27763e)
+  border-color: #2c8646;
+  border-color: var(--sapButton_Success_Hover_Background,#2c8646);
+  background-color: #2c8646;
+  background-color: var(--sapButton_Success_Hover_Background,#2c8646)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container:active {
@@ -288,7 +289,8 @@
   background-color: var(--sapInformativeElementColor,#0070f2)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: var(--fdMicro_Process_Flow_Icon_Color)
+  color: #fff;
+  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container:hover {
@@ -311,14 +313,15 @@
   background-color: var(--sapNegativeElementColor,#f53232)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: var(--fdMicro_Process_Flow_Icon_Color)
+  color: #fff;
+  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container:hover {
-  border-color: #f31010;
-  border-color: var(--sapButton_Negative_Hover_Background,#f31010);
-  background-color: #f31010;
-  background-color: var(--sapButton_Negative_Hover_Background,#f31010)
+  border-color: #e90b0b;
+  border-color: var(--sapButton_Negative_Hover_Background,#e90b0b);
+  background-color: #e90b0b;
+  background-color: var(--sapButton_Negative_Hover_Background,#e90b0b)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container:active {
@@ -334,14 +337,15 @@
   background-color: var(--sapCriticalElementColor,#e76500)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: var(--fdMicro_Process_Flow_Icon_Color)
+  color: #fff;
+  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container:hover {
-  border-color: #ff760c;
-  border-color: var(--sapButton_Critical_Hover_Background,#ff760c);
-  background-color: #ff760c;
-  background-color: var(--sapButton_Critical_Hover_Background,#ff760c)
+  border-color: #dd6100;
+  border-color: var(--sapButton_Critical_Hover_Background,#dd6100);
+  background-color: #dd6100;
+  background-color: var(--sapButton_Critical_Hover_Background,#dd6100)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container:active {
@@ -393,8 +397,8 @@
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #f5f6f7;
-  background-color: var(--sapNeutralBackground,#f5f6f7);
+  background-color: #eff1f2;
+  background-color: var(--sapNeutralBackground,#eff1f2);
   min-width: 1.875rem;
   min-height: 1.875rem;
   border: .0625rem solid #6e87a0;
@@ -409,8 +413,8 @@
 .fd-micro-process-flow .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
   font-size: 1rem;
   font-size: var(--sapFontLargeSize,1rem);
-  color: #6e87a0;
-  color: var(--sapButton_Neutral_Background,#6e87a0)
+  color: #788fa6;
+  color: var(--sapButton_Neutral_Background,#788fa6)
 }
 .fd-micro-process-flow .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__icon-container:active {
@@ -421,7 +425,8 @@
 }
 .fd-micro-process-flow .fd-micro-process-flow__icon-container.is-active .fd-micro-process-flow__icon,
 .fd-micro-process-flow .fd-micro-process-flow__icon-container:active .fd-micro-process-flow__icon {
-  color: var(--fdMicro_Process_Flow_Icon_Color)
+  color: #fff;
+  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
 }
 .fd-micro-process-flow__content {
   font-size: .875rem;
@@ -505,8 +510,8 @@
   width: 100%;
   display: block;
   position: absolute;
-  border-bottom: .0625rem solid #788fa6;
-  border-bottom: .0625rem solid var(--sapContent_ForegroundBorderColor,#788fa6)
+  border-bottom: .0625rem solid #758ca4;
+  border-bottom: .0625rem solid var(--sapContent_ForegroundBorderColor,#758ca4)
 }
 .fd-micro-process-flow__connector--intermediate::after {
   content: "";

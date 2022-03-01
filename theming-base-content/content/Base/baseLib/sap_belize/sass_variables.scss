@@ -1,4 +1,4 @@
-/* ${copyright}.  Theming Engine 1.51.0 */
+/* ${copyright}.  Theming Engine 1.68.3 */
 $sapBrandColor: #427cac;
 $sapHighlightColor: #427cac;
 $sapBaseColor: #eff4f9;
@@ -319,6 +319,7 @@ $sapButton_Information_Hover_BorderColor: #3b6f9a;
 $sapButton_Information_Hover_TextColor: #fff;
 $sapButton_Information_Active_Background: #346187;
 $sapButton_Information_Active_BorderColor: #346187;
+$sapButton_Information_Active_TextColor: #fff;
 $sapButton_Neutral_Background: #5e696e;
 $sapButton_Neutral_BorderColor: #5e696e;
 $sapButton_Neutral_TextColor: #fff;
@@ -796,6 +797,7 @@ $sapContrast--sapButton_Information_Hover_BorderColor: #a9d4f8;
 $sapContrast--sapButton_Information_Hover_TextColor: #2f3c48;
 $sapContrast--sapButton_Information_Active_Background: #c0e0fa;
 $sapContrast--sapButton_Information_Active_BorderColor: #c0e0fa;
+$sapContrast--sapButton_Information_Active_TextColor: #2f3c48;
 $sapContrast--sapButton_Neutral_Background: #d3d7d9;
 $sapContrast--sapButton_Neutral_BorderColor: #d3d7d9;
 $sapContrast--sapButton_Neutral_TextColor: #2f3c48;

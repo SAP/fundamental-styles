@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -50,35 +50,40 @@
 .fd-feed-input.is-disabled textarea::-webkit-input-placeholder,
 .fd-feed-input:disabled textarea::-webkit-input-placeholder,
 .fd-feed-input[aria-disabled=true] textarea::-webkit-input-placeholder {
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
   color: #32363a;
   color: var(--sapTextColor,#32363a)
 }
 .fd-feed-input.is-disabled textarea::-moz-placeholder,
 .fd-feed-input:disabled textarea::-moz-placeholder,
 .fd-feed-input[aria-disabled=true] textarea::-moz-placeholder {
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
   color: #32363a;
   color: var(--sapTextColor,#32363a)
 }
 .fd-feed-input.is-disabled textarea:-ms-input-placeholder,
 .fd-feed-input:disabled textarea:-ms-input-placeholder,
 .fd-feed-input[aria-disabled=true] textarea:-ms-input-placeholder {
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
   color: #32363a;
   color: var(--sapTextColor,#32363a)
 }
 .fd-feed-input.is-disabled textarea::-ms-input-placeholder,
 .fd-feed-input:disabled textarea::-ms-input-placeholder,
 .fd-feed-input[aria-disabled=true] textarea::-ms-input-placeholder {
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
   color: #32363a;
   color: var(--sapTextColor,#32363a)
 }
 .fd-feed-input.is-disabled textarea::placeholder,
 .fd-feed-input:disabled textarea::placeholder,
 .fd-feed-input[aria-disabled=true] textarea::placeholder {
-  font-style: var(--fdFeed_Input_Placeholder_Font_Style);
+  font-style: italic;
+  font-style: var(--fdFeed_Input_Placeholder_Font_Style,italic);
   color: #32363a;
   color: var(--sapTextColor,#32363a)
 }

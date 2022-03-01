@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -663,8 +663,10 @@
   z-index: 2;
   width: 100%;
   max-width: 100%;
-  background-color: var(--fdSlide_Tile_Background_Color);
-  opacity: var(--fdSlide_Tile_Background_Opacity);
+  background-color: #000;
+  background-color: var(--fdSlide_Tile_Background_Color,var(--sapBlockLayer_Background,#000));
+  opacity: .85;
+  opacity: var(--fdSlide_Tile_Background_Opacity,.85);
   padding-top: .25rem;
   padding-left: .9375rem;
   padding-right: .9375rem;
@@ -747,20 +749,29 @@
   padding: 0;
   margin: 0;
   border: 0;
-  height: var(--fdSlide_Tile_Indicator_Dot_Size);
-  min-height: var(--fdSlide_Tile_Indicator_Dot_Size);
-  max-height: var(--fdSlide_Tile_Indicator_Dot_Size);
-  width: var(--fdSlide_Tile_Indicator_Dot_Size);
-  min-width: var(--fdSlide_Tile_Indicator_Dot_Size);
-  max-width: var(--fdSlide_Tile_Indicator_Dot_Size);
+  height: .188rem;
+  height: var(--fdSlide_Tile_Indicator_Dot_Size,.188rem);
+  min-height: .188rem;
+  min-height: var(--fdSlide_Tile_Indicator_Dot_Size,.188rem);
+  max-height: .188rem;
+  max-height: var(--fdSlide_Tile_Indicator_Dot_Size,.188rem);
+  width: .188rem;
+  width: var(--fdSlide_Tile_Indicator_Dot_Size,.188rem);
+  min-width: .188rem;
+  min-width: var(--fdSlide_Tile_Indicator_Dot_Size,.188rem);
+  max-width: .188rem;
+  max-width: var(--fdSlide_Tile_Indicator_Dot_Size,.188rem);
   border-radius: 50%;
-  background-color: var(--fdSlide_Tile_Indicator_Dot_Color);
-  border: var(--fdSlide_Tile_Indicator_Dot_Border);
+  background-color: #556b82;
+  background-color: var(--fdSlide_Tile_Indicator_Dot_Color,var(--sapTile_TextColor,#556b82));
+  border: none;
+  border: var(--fdSlide_Tile_Indicator_Dot_Border,none);
   -webkit-box-shadow: 0 0 .063rem #556b82;
   -webkit-box-shadow: 0 0 .063rem var(--sapContent_ShadowColor,#556b82);
   box-shadow: 0 0 .063rem #556b82;
   box-shadow: 0 0 .063rem var(--sapContent_ShadowColor,#556b82);
-  margin-right: var(--fdSlide_Tile_Indicator_Dot_Spacing)
+  margin-right: .375rem;
+  margin-right: var(--fdSlide_Tile_Indicator_Dot_Spacing,.375rem)
 }
 .fd-tile--slide .fd-tile__dot::after,
 .fd-tile--slide .fd-tile__dot::before {
@@ -771,17 +782,26 @@
 .fd-tile--slide .fd-tile__dot[dir=rtl],
 [dir=rtl] .fd-tile--slide .fd-tile__dot {
   margin-right: 0;
-  margin-left: var(--fdSlide_Tile_Indicator_Dot_Spacing)
+  margin-left: .375rem;
+  margin-left: var(--fdSlide_Tile_Indicator_Dot_Spacing,.375rem)
 }
 .fd-tile--slide .fd-tile__dot--active {
-  height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size);
-  min-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size);
-  max-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size);
-  width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size);
-  min-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size);
-  max-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size);
-  background-color: var(--fdSlide_Tile_Indicator_Active_Dot_Color);
-  border: var(--fdSlide_Tile_Indicator_Active_Dot_Border)
+  height: .313rem;
+  height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.313rem);
+  min-height: .313rem;
+  min-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.313rem);
+  max-height: .313rem;
+  max-height: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.313rem);
+  width: .313rem;
+  width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.313rem);
+  min-width: .313rem;
+  min-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.313rem);
+  max-width: .313rem;
+  max-width: var(--fdSlide_Tile_Indicator_Ative_Dot_Size,.313rem);
+  background-color: #223548;
+  background-color: var(--fdSlide_Tile_Indicator_Active_Dot_Color,var(--sapTile_TitleTextColor,#223548));
+  border: none;
+  border: var(--fdSlide_Tile_Indicator_Active_Dot_Border,none)
 }
 .fd-tile--slide .fd-tile__dot:last-child {
   margin: 0

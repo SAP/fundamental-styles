@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -23,10 +23,12 @@
   padding: 0;
   margin: 0;
   border: 0;
-  border: var(--fdAvatar_Border);
+  border: none;
+  border: var(--fdAvatar_Border,none);
   color: #fff;
   color: var(--sapContent_ContrastTextColor,#fff);
-  background-color: var(--fdAvatar_BackgroundColor);
+  background-color: #0057d2;
+  background-color: var(--fdAvatar_BackgroundColor,var(--sapAccentColor6,#0057d2));
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -112,7 +114,8 @@
   left: 0
 }
 .fd-avatar--transparent {
-  background-color: var(--fdAvatar-Transparent_BackgroundColor);
+  background-color: transparent;
+  background-color: var(--fdAvatar-Transparent_BackgroundColor,transparent);
   color: #223548;
   color: var(--sapContent_IconColor,#223548)
 }
@@ -124,61 +127,72 @@
   background-color: var(--sapContent_ImagePlaceholderBackground,#eaecee)
 }
 .fd-avatar--tile {
-  background-color: var(--fdAvatar_Tile_BackgroundColor)
+  background-color: #556b82;
+  background-color: var(--fdAvatar_Tile_BackgroundColor,var(--sapTile_IconColor,#556b82))
 }
 .fd-avatar--border {
   border: .0625rem solid #d9d9d9;
   border: .0625rem solid var(--sapGroup_ContentBorderColor,#d9d9d9)
 }
 .fd-avatar--accent-color-1 {
-  background-color: #f58b00;
-  background-color: var(--sapAccentColor1,#f58b00);
-  color: var(--fdAvatar_Accent_Color)
+  background-color: #d27700;
+  background-color: var(--sapAccentColor1,#d27700);
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-2 {
   background-color: #aa0808;
   background-color: var(--sapAccentColor2,#aa0808);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-3 {
-  background-color: #cc00dc;
-  background-color: var(--sapAccentColor3,#cc00dc);
-  color: var(--fdAvatar_Accent_Color)
+  background-color: #ba066c;
+  background-color: var(--sapAccentColor3,#ba066c);
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-4 {
   background-color: #a100c2;
   background-color: var(--sapAccentColor4,#a100c2);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-5 {
   background-color: #5d36ff;
   background-color: var(--sapAccentColor5,#5d36ff);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-6 {
   background-color: #0057d2;
   background-color: var(--sapAccentColor6,#0057d2);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-7 {
   background-color: #046c7a;
   background-color: var(--sapAccentColor7,#046c7a);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-8 {
   background-color: #256f3a;
   background-color: var(--sapAccentColor8,#256f3a);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-9 {
-  background-color: #07838f;
-  background-color: var(--sapAccentColor9,#07838f);
-  color: var(--fdAvatar_Accent_Color)
+  background-color: #6c32a9;
+  background-color: var(--sapAccentColor9,#6c32a9);
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--accent-color-10 {
   background-color: #5b738b;
   background-color: var(--sapAccentColor10,#5b738b);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar--xs {
   padding: 0;
@@ -520,7 +534,8 @@
   min-width: 2rem;
   font-size: 1rem;
   border-radius: 25rem;
-  border-width: var(--fdAvatarGroup_MoreButton_Border)
+  border-width: .0625rem;
+  border-width: var(--fdAvatarGroup_MoreButton_Border,var(--sapButton_BorderWidth,.0625rem))
 }
 .fd-avatar-group--xs .fd-avatar-group__more-button.is-focus,
 .fd-avatar-group--xs .fd-avatar-group__more-button:focus {
@@ -539,7 +554,8 @@
   min-width: 3rem;
   font-size: 1.125rem;
   border-radius: 25rem;
-  border-width: var(--fdAvatarGroup_MoreButton_Border)
+  border-width: .0625rem;
+  border-width: var(--fdAvatarGroup_MoreButton_Border,var(--sapButton_BorderWidth,.0625rem))
 }
 .fd-avatar-group--s .fd-avatar-group__more-button.is-focus,
 .fd-avatar-group--s .fd-avatar-group__more-button:focus {
@@ -558,7 +574,8 @@
   min-width: 4rem;
   font-size: 1.5rem;
   border-radius: 25rem;
-  border-width: var(--fdAvatarGroup_MoreButton_Border)
+  border-width: .0625rem;
+  border-width: var(--fdAvatarGroup_MoreButton_Border,var(--sapButton_BorderWidth,.0625rem))
 }
 .fd-avatar-group--m .fd-avatar-group__more-button.is-focus,
 .fd-avatar-group--m .fd-avatar-group__more-button:focus {
@@ -577,7 +594,8 @@
   min-width: 5rem;
   font-size: 2.25rem;
   border-radius: 25rem;
-  border-width: var(--fdAvatarGroup_MoreButton_Border)
+  border-width: .0625rem;
+  border-width: var(--fdAvatarGroup_MoreButton_Border,var(--sapButton_BorderWidth,.0625rem))
 }
 .fd-avatar-group--l .fd-avatar-group__more-button.is-focus,
 .fd-avatar-group--l .fd-avatar-group__more-button:focus {
@@ -596,7 +614,8 @@
   min-width: 7rem;
   font-size: 3rem;
   border-radius: 25rem;
-  border-width: var(--fdAvatarGroup_MoreButton_Border)
+  border-width: .0625rem;
+  border-width: var(--fdAvatarGroup_MoreButton_Border,var(--sapButton_BorderWidth,.0625rem))
 }
 .fd-avatar-group--xl .fd-avatar-group__more-button.is-focus,
 .fd-avatar-group--xl .fd-avatar-group__more-button:focus {
@@ -699,72 +718,82 @@
   margin-left: -2.75rem
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-1 {
-  background-color: #f58b00;
-  background-color: var(--sapAccentColor1,#f58b00);
-  border-color: #f58b00;
-  border-color: var(--sapAccentColor1,#f58b00);
-  color: var(--fdAvatar_Accent_Color)
+  background-color: #d27700;
+  background-color: var(--sapAccentColor1,#d27700);
+  border-color: #d27700;
+  border-color: var(--sapAccentColor1,#d27700);
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-2 {
   background-color: #aa0808;
   background-color: var(--sapAccentColor2,#aa0808);
   border-color: #aa0808;
   border-color: var(--sapAccentColor2,#aa0808);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-3 {
-  background-color: #cc00dc;
-  background-color: var(--sapAccentColor3,#cc00dc);
-  border-color: #cc00dc;
-  border-color: var(--sapAccentColor3,#cc00dc);
-  color: var(--fdAvatar_Accent_Color)
+  background-color: #ba066c;
+  background-color: var(--sapAccentColor3,#ba066c);
+  border-color: #ba066c;
+  border-color: var(--sapAccentColor3,#ba066c);
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-4 {
   background-color: #a100c2;
   background-color: var(--sapAccentColor4,#a100c2);
   border-color: #a100c2;
   border-color: var(--sapAccentColor4,#a100c2);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-5 {
   background-color: #5d36ff;
   background-color: var(--sapAccentColor5,#5d36ff);
   border-color: #5d36ff;
   border-color: var(--sapAccentColor5,#5d36ff);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-6 {
   background-color: #0057d2;
   background-color: var(--sapAccentColor6,#0057d2);
   border-color: #0057d2;
   border-color: var(--sapAccentColor6,#0057d2);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-7 {
   background-color: #046c7a;
   background-color: var(--sapAccentColor7,#046c7a);
   border-color: #046c7a;
   border-color: var(--sapAccentColor7,#046c7a);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-8 {
   background-color: #256f3a;
   background-color: var(--sapAccentColor8,#256f3a);
   border-color: #256f3a;
   border-color: var(--sapAccentColor8,#256f3a);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-9 {
-  background-color: #07838f;
-  background-color: var(--sapAccentColor9,#07838f);
-  border-color: #07838f;
-  border-color: var(--sapAccentColor9,#07838f);
-  color: var(--fdAvatar_Accent_Color)
+  background-color: #6c32a9;
+  background-color: var(--sapAccentColor9,#6c32a9);
+  border-color: #6c32a9;
+  border-color: var(--sapAccentColor9,#6c32a9);
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-avatar-group .fd-avatar-group__more-button--accent-color-10 {
   background-color: #5b738b;
   background-color: var(--sapAccentColor10,#5b738b);
   border-color: #5b738b;
   border-color: var(--sapAccentColor10,#5b738b);
-  color: var(--fdAvatar_Accent_Color)
+  color: #fff;
+  color: var(--fdAvatar_Accent_Color,var(--sapContent_ContrastTextColor,#fff))
 }

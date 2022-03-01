@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -20,7 +20,8 @@
   border: 0;
   position: relative;
   display: inline-block;
-  text-shadow: var(--fdPopover_Text_Shadow)
+  text-shadow: none;
+  text-shadow: var(--fdPopover_Text_Shadow,none)
 }
 .fd-popover::after,
 .fd-popover::before {
@@ -150,8 +151,8 @@
   width: 0;
   border-style: solid;
   border-width: 0 .5rem .5rem .5rem;
-  border-bottom-color: #788fa6;
-  border-bottom-color: var(--sapContent_ForegroundBorderColor,#788fa6);
+  border-bottom-color: #758ca4;
+  border-bottom-color: var(--sapContent_ForegroundBorderColor,#758ca4);
   border-left-color: transparent;
   border-right-color: transparent;
   content: "";
@@ -397,8 +398,8 @@
   bottom: -.5rem;
   margin: 0 .5rem;
   border-width: .5rem .5rem 0 .5rem;
-  border-top-color: #788fa6;
-  border-top-color: var(--sapContent_ForegroundBorderColor,#788fa6)
+  border-top-color: #758ca4;
+  border-top-color: var(--sapContent_ForegroundBorderColor,#758ca4)
 }
 .fd-popover__popper[x-placement^=top] .fd-popover__arrow::after {
   bottom: 1px;
@@ -414,8 +415,8 @@
   top: -.5rem;
   margin: 0 .5rem;
   border-width: 0 .5rem .5rem .5rem;
-  border-bottom-color: #788fa6;
-  border-bottom-color: var(--sapContent_ForegroundBorderColor,#788fa6)
+  border-bottom-color: #758ca4;
+  border-bottom-color: var(--sapContent_ForegroundBorderColor,#758ca4)
 }
 .fd-popover__popper[x-placement^=bottom] .fd-popover__arrow::after {
   top: 1px;
@@ -431,8 +432,8 @@
   right: -.5rem;
   margin: .5rem 0;
   border-width: .5rem 0 .5rem .5rem;
-  border-left-color: #788fa6;
-  border-left-color: var(--sapContent_ForegroundBorderColor,#788fa6)
+  border-left-color: #758ca4;
+  border-left-color: var(--sapContent_ForegroundBorderColor,#758ca4)
 }
 .fd-popover__popper[x-placement^=left] .fd-popover__arrow::after {
   right: 1px;
@@ -448,8 +449,8 @@
   left: -.5rem;
   margin: .5rem 0;
   border-width: .5rem .5rem .5rem 0;
-  border-right-color: #788fa6;
-  border-right-color: var(--sapContent_ForegroundBorderColor,#788fa6)
+  border-right-color: #758ca4;
+  border-right-color: var(--sapContent_ForegroundBorderColor,#758ca4)
 }
 .fd-popover__popper[x-placement^=right] .fd-popover__arrow::after {
   left: 1px;

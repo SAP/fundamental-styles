@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -64,11 +64,11 @@
   left: auto
 }
 .fn-tag--grey {
-  color: #475e75;
+  color: #5b738b;
   background: #f5f6f7
 }
 .fn-tag--grey::before {
-  border-left-color: #8396a8
+  border-left-color: #a9b4be
 }
 .fn-tag--grey.is-hover,
 .fn-tag--grey:hover {
@@ -78,28 +78,28 @@
 }
 .fn-tag--grey.is-pressed,
 .fn-tag--grey[aria-pressed=true] {
-  color: #354a5f!important;
+  color: #475e75!important;
   -webkit-box-shadow: 0 0 2px rgba(131,150,168,.16),0 2px 4px rgba(131,150,168,.16)!important;
   box-shadow: 0 0 2px rgba(131,150,168,.16),0 2px 4px rgba(131,150,168,.16)!important;
   background: #fff!important
 }
 .fn-tag--grey.is-active,
 .fn-tag--grey:active {
-  color: #354a5f!important;
+  color: #475e75!important;
   -webkit-box-shadow: 0 0 2px rgba(131,150,168,.16),0 2px 4px rgba(131,150,168,.16)!important;
   box-shadow: 0 0 2px rgba(131,150,168,.16),0 2px 4px rgba(131,150,168,.16)!important;
   background: #fff!important
 }
 .fn-tag--grey.is-focus {
   outline: 0;
-  color: #5b738b;
+  color: #8396a8;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--grey:focus:not(.focus-visible) {
   outline: 0;
-  color: #475e75;
+  color: #5b738b;
   background: #f5f6f7;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -107,7 +107,7 @@
 .fn-tag--grey.focus-visible,
 .fn-tag--grey.is-focus {
   outline: 0;
-  color: #5b738b;
+  color: #8396a8;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -118,20 +118,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--grey.is-disabled::before,
 .fn-tag--grey:disabled::before,
 .fn-tag--grey[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }
 .fn-tag--blue {
-  color: #0057d2;
+  color: #1b90ff;
   background: #ebf8ff
 }
 .fn-tag--blue::before {
-  border-left-color: #1b90ff
+  border-left-color: #89d1ff
 }
 .fn-tag--blue.is-hover,
 .fn-tag--blue:hover {
@@ -141,28 +141,28 @@
 }
 .fn-tag--blue.is-pressed,
 .fn-tag--blue[aria-pressed=true] {
-  color: #0040b0!important;
+  color: #0070f2!important;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 2px 4px rgba(27,144,255,.16)!important;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 2px 4px rgba(27,144,255,.16)!important;
   background: #fff!important
 }
 .fn-tag--blue.is-active,
 .fn-tag--blue:active {
-  color: #0040b0!important;
+  color: #0070f2!important;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 2px 4px rgba(27,144,255,.16)!important;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 2px 4px rgba(27,144,255,.16)!important;
   background: #fff!important
 }
 .fn-tag--blue.is-focus {
   outline: 0;
-  color: #0070f2;
+  color: #4db1ff;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--blue:focus:not(.focus-visible) {
   outline: 0;
-  color: #0057d2;
+  color: #1b90ff;
   background: #ebf8ff;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -170,7 +170,7 @@
 .fn-tag--blue.focus-visible,
 .fn-tag--blue.is-focus {
   outline: 0;
-  color: #0070f2;
+  color: #4db1ff;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -181,20 +181,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--blue.is-disabled::before,
 .fn-tag--blue:disabled::before,
 .fn-tag--blue[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }
 .fn-tag--teal {
-  color: #046c7a;
+  color: #04a6a1;
   background: #dafdf5
 }
 .fn-tag--teal::before {
-  border-left-color: #04aca7
+  border-left-color: #2ce0bf
 }
 .fn-tag--teal.is-hover,
 .fn-tag--teal:hover {
@@ -204,28 +204,28 @@
 }
 .fn-tag--teal.is-pressed,
 .fn-tag--teal[aria-pressed=true] {
-  color: #035663!important;
+  color: #07838f!important;
   -webkit-box-shadow: 0 0 2px rgba(4,172,167,.16),0 2px 4px rgba(4,172,167,.16)!important;
   box-shadow: 0 0 2px rgba(4,172,167,.16),0 2px 4px rgba(4,172,167,.16)!important;
   background: #fff!important
 }
 .fn-tag--teal.is-active,
 .fn-tag--teal:active {
-  color: #035663!important;
+  color: #07838f!important;
   -webkit-box-shadow: 0 0 2px rgba(4,172,167,.16),0 2px 4px rgba(4,172,167,.16)!important;
   box-shadow: 0 0 2px rgba(4,172,167,.16),0 2px 4px rgba(4,172,167,.16)!important;
   background: #fff!important
 }
 .fn-tag--teal.is-focus {
   outline: 0;
-  color: #07838f;
+  color: #00ceac;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--teal:focus:not(.focus-visible) {
   outline: 0;
-  color: #046c7a;
+  color: #04a6a1;
   background: #dafdf5;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -233,7 +233,7 @@
 .fn-tag--teal.focus-visible,
 .fn-tag--teal.is-focus {
   outline: 0;
-  color: #07838f;
+  color: #00ceac;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -244,20 +244,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--teal.is-disabled::before,
 .fn-tag--teal:disabled::before,
 .fn-tag--teal[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }
 .fn-tag--green {
-  color: #256f3a;
+  color: #36a41d;
   background: #f5fae5
 }
 .fn-tag--green::before {
-  border-left-color: #36a41d
+  border-left-color: #97dd40
 }
 .fn-tag--green.is-hover,
 .fn-tag--green:hover {
@@ -267,28 +267,28 @@
 }
 .fn-tag--green.is-pressed,
 .fn-tag--green[aria-pressed=true] {
-  color: #1e592f!important;
+  color: #188918!important;
   -webkit-box-shadow: 0 0 2px rgba(93,193,34,.16),0 2px 4px rgba(93,193,34,.16)!important;
   box-shadow: 0 0 2px rgba(93,193,34,.16),0 2px 4px rgba(93,193,34,.16)!important;
   background: #fff!important
 }
 .fn-tag--green.is-active,
 .fn-tag--green:active {
-  color: #1e592f!important;
+  color: #188918!important;
   -webkit-box-shadow: 0 0 2px rgba(93,193,34,.16),0 2px 4px rgba(93,193,34,.16)!important;
   box-shadow: 0 0 2px rgba(93,193,34,.16),0 2px 4px rgba(93,193,34,.16)!important;
   background: #fff!important
 }
 .fn-tag--green.is-focus {
   outline: 0;
-  color: #188918;
+  color: #5dc122;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--green:focus:not(.focus-visible) {
   outline: 0;
-  color: #256f3a;
+  color: #36a41d;
   background: #f5fae5;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -296,7 +296,7 @@
 .fn-tag--green.focus-visible,
 .fn-tag--green.is-focus {
   outline: 0;
-  color: #188918;
+  color: #5dc122;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -307,20 +307,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--green.is-disabled::before,
 .fn-tag--green:disabled::before,
 .fn-tag--green[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }
 .fn-tag--mango {
-  color: #a93e00;
+  color: #f58b00;
   background: #fff8d6
 }
 .fn-tag--mango::before {
-  border-left-color: #f58b00
+  border-left-color: #ffc933
 }
 .fn-tag--mango.is-hover,
 .fn-tag--mango:hover {
@@ -330,28 +330,28 @@
 }
 .fn-tag--mango.is-pressed,
 .fn-tag--mango[aria-pressed=true] {
-  color: #8d2a00!important;
+  color: #c35500!important;
   -webkit-box-shadow: 0 0 2px rgba(255,179,0,.16),0 2px 4px rgba(255,179,0,.16)!important;
   box-shadow: 0 0 2px rgba(255,179,0,.16),0 2px 4px rgba(255,179,0,.16)!important;
   background: #fff!important
 }
 .fn-tag--mango.is-active,
 .fn-tag--mango:active {
-  color: #8d2a00!important;
+  color: #c35500!important;
   -webkit-box-shadow: 0 0 2px rgba(255,179,0,.16),0 2px 4px rgba(255,179,0,.16)!important;
   box-shadow: 0 0 2px rgba(255,179,0,.16),0 2px 4px rgba(255,179,0,.16)!important;
   background: #fff!important
 }
 .fn-tag--mango.is-focus {
   outline: 0;
-  color: #c35500;
+  color: #ffb300;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--mango:focus:not(.focus-visible) {
   outline: 0;
-  color: #a93e00;
+  color: #f58b00;
   background: #fff8d6;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -359,7 +359,7 @@
 .fn-tag--mango.focus-visible,
 .fn-tag--mango.is-focus {
   outline: 0;
-  color: #c35500;
+  color: #ffb300;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -370,20 +370,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--mango.is-disabled::before,
 .fn-tag--mango:disabled::before,
 .fn-tag--mango[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }
 .fn-tag--red {
-  color: #aa0808;
+  color: #ee3939;
   background: #ffeaf4
 }
 .fn-tag--red::before {
-  border-left-color: #ee3939
+  border-left-color: #ff8cb2
 }
 .fn-tag--red.is-hover,
 .fn-tag--red:hover {
@@ -393,28 +393,28 @@
 }
 .fn-tag--red.is-pressed,
 .fn-tag--red[aria-pressed=true] {
-  color: #840606!important;
+  color: #d20a0a!important;
   -webkit-box-shadow: 0 0 2px rgba(245,40,40,.16),0 2px 4px rgba(245,40,40,.16)!important;
   box-shadow: 0 0 2px rgba(245,40,40,.16),0 2px 4px rgba(245,40,40,.16)!important;
   background: #fff!important
 }
 .fn-tag--red.is-active,
 .fn-tag--red:active {
-  color: #840606!important;
+  color: #d20a0a!important;
   -webkit-box-shadow: 0 0 2px rgba(245,40,40,.16),0 2px 4px rgba(245,40,40,.16)!important;
   box-shadow: 0 0 2px rgba(245,40,40,.16),0 2px 4px rgba(245,40,40,.16)!important;
   background: #fff!important
 }
 .fn-tag--red.is-focus {
   outline: 0;
-  color: #d20a0a;
+  color: #ff5c77;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--red:focus:not(.focus-visible) {
   outline: 0;
-  color: #aa0808;
+  color: #ee3939;
   background: #ffeaf4;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -422,7 +422,7 @@
 .fn-tag--red.focus-visible,
 .fn-tag--red.is-focus {
   outline: 0;
-  color: #d20a0a;
+  color: #ff5c77;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -433,20 +433,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--red.is-disabled::before,
 .fn-tag--red:disabled::before,
 .fn-tag--red[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }
 .fn-tag--pink {
-  color: #a100c2;
+  color: #f31ded;
   background: #fff0fa
 }
 .fn-tag--pink::before {
-  border-left-color: #f31ded
+  border-left-color: #ff8af0
 }
 .fn-tag--pink.is-hover,
 .fn-tag--pink:hover {
@@ -456,28 +456,28 @@
 }
 .fn-tag--pink.is-pressed,
 .fn-tag--pink[aria-pressed=true] {
-  color: #7800a4!important;
+  color: #cc00dc!important;
   -webkit-box-shadow: 0 0 2px rgba(252,0,245,.16),0 2px 4px rgba(252,0,245,.16)!important;
   box-shadow: 0 0 2px rgba(252,0,245,.16),0 2px 4px rgba(252,0,245,.16)!important;
   background: #fff!important
 }
 .fn-tag--pink.is-active,
 .fn-tag--pink:active {
-  color: #7800a4!important;
+  color: #cc00dc!important;
   -webkit-box-shadow: 0 0 2px rgba(252,0,245,.16),0 2px 4px rgba(252,0,245,.16)!important;
   box-shadow: 0 0 2px rgba(252,0,245,.16),0 2px 4px rgba(252,0,245,.16)!important;
   background: #fff!important
 }
 .fn-tag--pink.is-focus {
   outline: 0;
-  color: #cc00dc;
+  color: #f65af2;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--pink:focus:not(.focus-visible) {
   outline: 0;
-  color: #a100c2;
+  color: #f31ded;
   background: #fff0fa;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -485,7 +485,7 @@
 .fn-tag--pink.focus-visible,
 .fn-tag--pink.is-focus {
   outline: 0;
-  color: #cc00dc;
+  color: #f65af2;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -496,20 +496,20 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--pink.is-disabled::before,
 .fn-tag--pink:disabled::before,
 .fn-tag--pink[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }
 .fn-tag--indigo {
-  color: #5d36ff;
+  color: #7858ff;
   background: #f1ecff
 }
 .fn-tag--indigo::before {
-  border-left-color: #9b76ff
+  border-left-color: #b894ff
 }
 .fn-tag--indigo.is-hover,
 .fn-tag--indigo:hover {
@@ -519,28 +519,28 @@
 }
 .fn-tag--indigo.is-pressed,
 .fn-tag--indigo[aria-pressed=true] {
-  color: #470ced!important;
+  color: #5d36ff!important;
   -webkit-box-shadow: 0 0 2px rgba(155,118,255,.16),0 2px 4px rgba(155,118,255,.16)!important;
   box-shadow: 0 0 2px rgba(155,118,255,.16),0 2px 4px rgba(155,118,255,.16)!important;
   background: #fff!important
 }
 .fn-tag--indigo.is-active,
 .fn-tag--indigo:active {
-  color: #470ced!important;
+  color: #5d36ff!important;
   -webkit-box-shadow: 0 0 2px rgba(155,118,255,.16),0 2px 4px rgba(155,118,255,.16)!important;
   box-shadow: 0 0 2px rgba(155,118,255,.16),0 2px 4px rgba(155,118,255,.16)!important;
   background: #fff!important
 }
 .fn-tag--indigo.is-focus {
   outline: 0;
-  color: #7858ff;
+  color: #9b76ff;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
 }
 .fn-tag--indigo:focus:not(.focus-visible) {
   outline: 0;
-  color: #5d36ff;
+  color: #7858ff;
   background: #f1ecff;
   -webkit-box-shadow: none;
   box-shadow: none
@@ -548,7 +548,7 @@
 .fn-tag--indigo.focus-visible,
 .fn-tag--indigo.is-focus {
   outline: 0;
-  color: #7858ff;
+  color: #9b76ff;
   background: #fff;
   -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2;
   box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16),0 0 0 .125rem #0070f2
@@ -559,11 +559,11 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: not-allowed;
-  color: #a9b4be;
+  color: #d5dadd;
   background: #f5f6f7
 }
 .fn-tag--indigo.is-disabled::before,
 .fn-tag--indigo:disabled::before,
 .fn-tag--indigo[aria-disabled=true]::before {
-  border-left-color: #d5dadd
+  border-left-color: #eaecee
 }

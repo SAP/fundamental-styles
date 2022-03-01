@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -68,6 +68,8 @@
 }
 .fn-list__item.is-hover,
 .fn-list__item:hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
   background: #f5f6f7
 }
 .fn-list__item.focus-visible,
@@ -78,6 +80,8 @@
 }
 .fn-list__item:focus:not(.focus-visible).is-hover,
 .fn-list__item:focus:not(.focus-visible):hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
   background: #f5f6f7
 }
 .fn-list__item:not(.fn-list__item--info-bar).focus-visible,
@@ -90,6 +94,14 @@
   background: #d1efff;
   -webkit-box-shadow: inset 0 -.063rem 0 #0070f1;
   box-shadow: inset 0 -.063rem 0 #0070f1
+}
+.fn-list__item.is-selected.is-hover,
+.fn-list__item.is-selected:hover,
+.fn-list__item[aria-selected=true].is-hover,
+.fn-list__item[aria-selected=true]:hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+  background: #d1efff
 }
 .fn-list__item .fn-list__icon {
   margin-left: .25rem;
@@ -158,6 +170,8 @@
 }
 .fn-list__item--info-bar.is-hover,
 .fn-list__item--info-bar:hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
   background: #dafdf5
 }
 .fn-list__item--info-bar.is-readonly,
@@ -172,6 +186,8 @@
 }
 .fn-list__item--info-bar:focus:not(.focus-visible).is-hover,
 .fn-list__item--info-bar:focus:not(.focus-visible):hover {
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
   background: #dafdf5
 }
 .fn-list__end-container {

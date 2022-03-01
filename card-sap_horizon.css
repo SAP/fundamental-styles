@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -31,8 +31,10 @@
   position: relative;
   background: #fff;
   background: var(--sapTile_Background,#fff);
-  -webkit-box-shadow: var(--fdCard_Box_Shadow);
-  box-shadow: var(--fdCard_Box_Shadow);
+  -webkit-box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);
+  -webkit-box-shadow: var(--fdCard_Box_Shadow,var(--sapContent_Shadow0,0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16)));
+  box-shadow: 0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16);
+  box-shadow: var(--fdCard_Box_Shadow,var(--sapContent_Shadow0,0 0 .125rem 0 rgba(85,107,130,.16),0 .125rem .25rem 0 rgba(85,107,130,.16)));
   border-radius: .75rem;
   border-radius: var(--sapElement_BorderCornerRadius,.75rem);
   border: .0625rem solid transparent;
@@ -83,13 +85,13 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fd-card__header.is-focus,
-.fd-card__header:focus {
+.fd-card__header:not(.fd-card__header--non-interactive).is-focus,
+.fd-card__header:not(.fd-card__header--non-interactive):focus {
   z-index: 5;
   outline: 0
 }
-.fd-card__header.is-focus::before,
-.fd-card__header:focus::before {
+.fd-card__header:not(.fd-card__header--non-interactive).is-focus::before,
+.fd-card__header:not(.fd-card__header--non-interactive):focus::before {
   content: "";
   position: absolute;
   display: block;

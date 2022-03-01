@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -25,7 +25,9 @@
   align-items: center;
   padding: .75rem 1.5rem;
   background: #fff;
-  height: 3.5rem
+  height: 3.5rem;
+  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
+  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
 }
 .fn-shell::after,
 .fn-shell::before {

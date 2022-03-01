@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -248,13 +248,17 @@ fd-carousel:focus {
   margin: 0;
   border: 0;
   list-style-type: none;
-  margin: var(--fdCarousel_Dot_Margin);
-  width: var(--fdCarousel_Dot_Size);
-  height: var(--fdCarousel_Dot_Size);
+  margin: 0 .375rem;
+  margin: var(--fdCarousel_Dot_Margin,0 .375rem);
+  width: .25rem;
+  width: var(--fdCarousel_Dot_Size,.25rem);
+  height: .25rem;
+  height: var(--fdCarousel_Dot_Size,.25rem);
   border-radius: 50%;
   background-color: #223548;
   background-color: var(--sapContent_NonInteractiveIconColor,#223548);
-  border: var(--fdCarousel_Dot_Border)
+  border: none;
+  border: var(--fdCarousel_Dot_Border,none)
 }
 .fd-carousel__page-indicator::after,
 .fd-carousel__page-indicator::before {

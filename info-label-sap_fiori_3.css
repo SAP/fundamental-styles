@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -21,9 +21,15 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 1.125rem;
-  height: 1.125rem;
-  min-width: 1.125rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: .5rem;
+  line-height: normal;
+  height: 1rem;
   max-width: 100%;
   font-size: .75rem;
   font-size: var(--sapFontSmallSize,.75rem);
@@ -32,8 +38,8 @@
   text-align: center;
   color: #32363a;
   color: var(--sapTextColor,#32363a);
-  padding: 0 .625rem;
-  border-width: .063rem;
+  padding: 0 .3125rem;
+  border-width: .0625rem;
   border-style: solid
 }
 .fd-info-label::after,
@@ -50,16 +56,14 @@
   border-radius: inherit;
   line-height: 1;
   font-size: .75rem;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  margin-right: .1875rem
+  margin-right: .125rem
 }
 .fd-info-label__icon [class*=sap-icon][dir=rtl],
 .fd-info-label__icon[class*=sap-icon][dir=rtl],
 [dir=rtl] .fd-info-label__icon [class*=sap-icon],
 [dir=rtl] .fd-info-label__icon[class*=sap-icon] {
   margin-right: 0;
-  margin-left: .1875rem
+  margin-left: .125rem
 }
 .fd-info-label__icon [class*=sap-icon]:first-child:last-child,
 .fd-info-label__icon[class*=sap-icon]:first-child:last-child {
@@ -86,7 +90,11 @@
   padding: 0;
   margin: 0;
   border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: inherit;
+  font-weight: 700;
   color: inherit;
   line-height: 1
 }
@@ -98,120 +106,119 @@
 }
 .fd-info-label--accent-color-1 {
   background-color: #fdf3e7;
-  background-color: var(--sapLegendBackgroundColor1,#fdf3e7);
-  border-color: #d58215;
-  border-color: var(--sapLegendColor1,#d58215)
+  background-color: var(--fdInfo_Label_Background_Color1,var(--sapLegendBackgroundColor1,#fdf3e7));
+  border-color: #d08014;
+  border-color: var(--fdInfo_Label_Border_Color1,var(--sapAccentColor1,#d08014))
 }
 .fd-info-label--accent-color-1[class*=sap-icon] {
-  border-color: #d58215;
-  border-color: var(--sapLegendColor1,#d58215)
+  border-color: #d08014;
+  border-color: var(--fdInfo_Label_Border_Color1,var(--sapAccentColor1,#d08014))
 }
 .fd-info-label--accent-color-2 {
   background-color: #faeaea;
-  background-color: var(--sapLegendBackgroundColor2,#faeaea);
-  border-color: #dc5b5b;
-  border-color: var(--sapLegendColor2,#dc5b5b)
+  background-color: var(--fdInfo_Label_Background_Color2,var(--sapLegendBackgroundColor2,#faeaea));
+  border-color: #d04343;
+  border-color: var(--fdInfo_Label_Border_Color2,var(--sapAccentColor2,#d04343))
 }
 .fd-info-label--accent-color-2[class*=sap-icon] {
-  border-color: #dc5b5b;
-  border-color: var(--sapLegendColor2,#dc5b5b)
+  border-color: #d04343;
+  border-color: var(--fdInfo_Label_Border_Color2,var(--sapAccentColor2,#d04343))
 }
 .fd-info-label--accent-color-3 {
   background-color: #fce9f2;
-  background-color: var(--sapLegendBackgroundColor3,#fce9f2);
+  background-color: var(--fdInfo_Label_Background_Color3,var(--sapLegendBackgroundColor3,#fce9f2));
   border-color: #db1f77;
-  border-color: var(--sapLegendColor3,#db1f77)
+  border-color: var(--fdInfo_Label_Border_Color3,var(--sapAccentColor3,#db1f77))
 }
 .fd-info-label--accent-color-3[class*=sap-icon] {
   border-color: #db1f77;
-  border-color: var(--sapLegendColor3,#db1f77)
+  border-color: var(--fdInfo_Label_Border_Color3,var(--sapAccentColor3,#db1f77))
 }
 .fd-info-label--accent-color-4 {
   background-color: #f9ebf5;
-  background-color: var(--sapLegendBackgroundColor5,#f9ebf5);
-  border-color: #9b3b3b;
-  border-color: var(--sapLegendColor4,#9b3b3b)
+  background-color: var(--fdInfo_Label_Background_Color4,var(--sapLegendBackgroundColor5,#f9ebf5));
+  border-color: #c0399f;
+  border-color: var(--fdInfo_Label_Border_Color4,var(--sapAccentColor4,#c0399f))
 }
 .fd-info-label--accent-color-4[class*=sap-icon] {
-  border-color: #9b3b3b;
-  border-color: var(--sapLegendColor4,#9b3b3b)
+  border-color: #c0399f;
+  border-color: var(--fdInfo_Label_Border_Color4,var(--sapAccentColor4,#c0399f))
 }
 .fd-info-label--accent-color-5 {
   background-color: #ecedf8;
-  background-color: var(--sapLegendBackgroundColor20,#ecedf8);
-  border-color: #cf5db3;
-  border-color: var(--sapLegendColor5,#cf5db3)
+  background-color: var(--fdInfo_Label_Background_Color5,var(--sapLegendBackgroundColor20,#ecedf8));
+  border-color: #6367de;
+  border-color: var(--fdInfo_Label_Border_Color5,var(--sapAccentColor5,#6367de))
 }
 .fd-info-label--accent-color-5[class*=sap-icon] {
-  border-color: #cf5db3;
-  border-color: var(--sapLegendColor5,#cf5db3)
+  border-color: #6367de;
+  border-color: var(--fdInfo_Label_Border_Color5,var(--sapAccentColor5,#6367de))
 }
 .fd-info-label--accent-color-6 {
   background-color: #ebf3fa;
-  background-color: var(--sapLegendBackgroundColor6,#ebf3fa);
+  background-color: var(--fdInfo_Label_Background_Color6,var(--sapLegendBackgroundColor6,#ebf3fa));
   border-color: #286eb4;
-  border-color: var(--sapLegendColor6,#286eb4)
+  border-color: var(--fdInfo_Label_Border_Color6,var(--sapAccentColor6,#286eb4))
 }
 .fd-info-label--accent-color-6[class*=sap-icon] {
   border-color: #286eb4;
-  border-color: var(--sapLegendColor6,#286eb4)
+  border-color: var(--fdInfo_Label_Border_Color6,var(--sapAccentColor6,#286eb4))
 }
 .fd-info-label--accent-color-7 {
   background-color: #e8fbfd;
-  background-color: var(--sapLegendBackgroundColor7,#e8fbfd);
-  border-color: #1193a2;
-  border-color: var(--sapLegendColor7,#1193a2)
+  background-color: var(--fdInfo_Label_Background_Color7,var(--sapLegendBackgroundColor7,#e8fbfd));
+  border-color: #0f828f;
+  border-color: var(--fdInfo_Label_Border_Color7,var(--sapAccentColor7,#0f828f))
 }
 .fd-info-label--accent-color-7[class*=sap-icon] {
-  border-color: #1193a2;
-  border-color: var(--sapLegendColor7,#1193a2)
+  border-color: #0f828f;
+  border-color: var(--fdInfo_Label_Border_Color7,var(--sapAccentColor7,#0f828f))
 }
 .fd-info-label--accent-color-8 {
-  background-color: #f3f4ef;
-  background-color: var(--sapLegendBackgroundColor8,#f3f4ef);
-  border-color: #8b9668;
-  border-color: var(--sapLegendColor8,#8b9668)
+  background-color: #f5f7ed;
+  background-color: var(--fdInfo_Label_Background_Color8,var(--sapLegendBackgroundColor18,#f5f7ed));
+  border-color: #687a33;
+  border-color: var(--fdInfo_Label_Border_Color8,var(--sapLegendColor18,#687a33))
 }
 .fd-info-label--accent-color-8[class*=sap-icon] {
-  border-color: #8b9668;
-  border-color: var(--sapLegendColor8,#8b9668)
+  border-color: #687a33;
+  border-color: var(--fdInfo_Label_Border_Color8,var(--sapLegendColor18,#687a33))
 }
 .fd-info-label--accent-color-9 {
   background-color: #f9ebf6;
-  background-color: var(--sapLegendBackgroundColor10,#f9ebf6);
+  background-color: var(--fdInfo_Label_Background_Color9,var(--sapLegendBackgroundColor10,#f9ebf6));
   border-color: #647987;
-  border-color: var(--sapLegendColor9,#647987)
+  border-color: var(--fdInfo_Label_Border_Color9,var(--sapAccentColor10,#647987))
 }
 .fd-info-label--accent-color-9[class*=sap-icon] {
   border-color: #647987;
-  border-color: var(--sapLegendColor9,#647987)
+  border-color: var(--fdInfo_Label_Border_Color9,var(--sapAccentColor10,#647987))
 }
 .fd-info-label--accent-color-10 {
   background-color: #f1f3f4;
-  background-color: var(--sapLegendBackgroundColor9,#f1f3f4);
-  border-color: #892971;
-  border-color: var(--sapLegendColor10,#892971)
+  background-color: var(--fdInfo_Label_Background_Color10,var(--sapLegendBackgroundColor9,#f1f3f4));
+  border-color: #925ace;
+  border-color: var(--fdInfo_Label_Border_Color10,var(--sapAccentColor9,#925ace))
 }
 .fd-info-label--accent-color-10[class*=sap-icon] {
-  border-color: #892971;
-  border-color: var(--sapLegendColor10,#892971)
+  border-color: #925ace;
+  border-color: var(--fdInfo_Label_Border_Color10,var(--sapAccentColor9,#925ace))
 }
 .fd-info-label--display {
-  height: 1rem;
-  min-width: 1rem
+  border-color: transparent;
+  border-color: var(--fdInfo_Label_Display_Border_Color,transparent);
+  background-color: #32363a;
+  background-color: var(--fdInfo_Label_Display_Background_Color,var(--sapTextColor,#32363a));
+  color: #fff;
+  color: var(--fdInfo_Label_Display_Text_Color,var(--sapContent_ContrastTextColor,#fff))
 }
 .fd-info-label--numeric {
-  padding: 0 .3125rem
+  padding: 0 .1875rem;
+  font-weight: 700
 }
 .fd-info-label--icon {
   font-size: .75rem;
   font-size: var(--sapFontSmallSize,.75rem);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 .3125rem;
+  padding: 0 .1875rem;
   line-height: 1rem
 }

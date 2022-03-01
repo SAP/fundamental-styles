@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.21.1
+ * Fundamental Library Styles v0.22.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -14,6 +14,8 @@
   padding: 0;
   margin: 0;
   border: 0;
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
   padding-top: .125rem;
   padding-bottom: .125rem;
   padding-left: .5rem;
@@ -109,19 +111,62 @@
 }
 .fn-token.is-hover,
 .fn-token:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #f5f6f7
 }
-.fn-token:focus:not(.focus-visible).is-hover,
-.fn-token:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-token.is-hover.is-selected,
+.fn-token.is-hover[aria-selected=true],
+.fn-token:hover.is-selected,
+.fn-token:hover[aria-selected=true] {
+  background: #a6e0ff
+}
+.fn-token.is-selected,
+.fn-token[aria-selected=true] {
+  overflow: hidden;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  background: #d1efff
+}
+.fn-token.is-selected::before,
+.fn-token[aria-selected=true]::before {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: .0625rem solid #0070f2
+}
+.fn-token.is-selected::before[dir=rtl],
+.fn-token[aria-selected=true]::before[dir=rtl],
+[dir=rtl] .fn-token.is-selected::before,
+[dir=rtl] .fn-token[aria-selected=true]::before {
+  left: 0;
+  right: 0
 }
 .fn-token.focus-visible,
 .fn-token.is-focus {
-  background: #d1efff;
+  outline: 0;
+  background: #fff;
   -webkit-box-shadow: 0 0 0 .125rem #0070f2;
   box-shadow: 0 0 0 .125rem #0070f2
+}
+.fn-token.focus-visible.is-selected,
+.fn-token.focus-visible[aria-selected=true],
+.fn-token.is-focus.is-selected,
+.fn-token.is-focus[aria-selected=true] {
+  background: #d1efff
+}
+.fn-token.focus-visible.is-selected::before,
+.fn-token.focus-visible[aria-selected=true]::before,
+.fn-token.is-focus.is-selected::before,
+.fn-token.is-focus[aria-selected=true]::before {
+  border-bottom: none
 }
 .fn-token.is-disabled,
 .fn-token:disabled,
