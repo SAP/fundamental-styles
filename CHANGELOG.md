@@ -1,4 +1,11 @@
 
+## 0.22.0-rc.12 (2022-03-01)
+
+
+### Bug Fixes
+
+* **fn:** add split Tabs type [ci visual] ([#3212](https://github.com/SAP/fundamental-styles/issues/3212)) ([16e4244](https://github.com/SAP/fundamental-styles/commit/16e4244fd937aefc20641663b3fada4a247c4a1b))
+
 ## 0.22.0-rc.11 (2022-03-01)
 
 ## 0.22.0-rc.10 (2022-02-25)
