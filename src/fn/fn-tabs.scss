@@ -46,6 +46,16 @@ $fn-tabs-base: (
     }
   }
 
+  .#{$block}__button--split {
+    &::after {
+      background: $color;
+    }
+
+    @include fn-focus-visible() {
+      box-shadow: $focusShadow;
+    }
+  }
+
   @include fn-icon-class() {
     color: $color;
   }
@@ -183,6 +193,11 @@ $fn-tabs-base: (
     @include fn-set-margin-left(0.25rem);
 
     min-width: 0;
+    position: relative;
+
+    &.#{$block}__button--split {
+      @include fn-set-margin-left(0.5rem);
+    }
   }
 
   // Tabs Text Container

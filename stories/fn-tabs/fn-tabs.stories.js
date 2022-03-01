@@ -24,7 +24,7 @@ export default {
 
 <br><br><br>
     `,
-        components: ['fn-tabs', 'fn-nested-button', 'fn-button', 'icon']
+        components: ['fn-tabs', 'fn-nested-button', 'fn-button', 'fn-split-button', 'icon']
     }
 };
 
@@ -270,4 +270,141 @@ MultiInstance.parameters = {
     }
 };
 
+export const Split = () => `${localStyles}
+    <ul class="fn-tabs" role="tablist">
+        <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
+            <div class="fn-tabs__icon">
+                <span class="sap-icon sap-icon--calendar"></span>
+            </div>
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="-1" class="fn-tabs__item is-disabled">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" tabindex="-1" aria-label="show children elements" disabled>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+    </ul>
+    
+    <br/><br/><br/>
 
+    <ul class="fn-tabs fn-tabs--positive" role="tablist">
+        <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
+            <div class="fn-tabs__icon">
+                <span class="sap-icon sap-icon--calendar"></span>
+            </div>
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="-1" class="fn-tabs__item is-disabled">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" tabindex="-1" aria-label="show children elements" disabled>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+    </ul>
+
+    <br/><br/><br/>
+
+    <ul class="fn-tabs fn-tabs--critical" role="tablist">
+        <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
+            <div class="fn-tabs__icon">
+                <span class="sap-icon sap-icon--calendar"></span>
+            </div>
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="-1" class="fn-tabs__item is-disabled">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" tabindex="-1" aria-label="show children elements" disabled>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+    </ul>
+
+    <br/><br/><br/>
+
+    <ul class="fn-tabs fn-tabs--negative" role="tablist">
+        <li role="tab" tabindex="0" class="fn-tabs__item fn-tabs__item--selected">
+            <div class="fn-tabs__icon">
+                <span class="sap-icon sap-icon--calendar"></span>
+            </div>
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-nested-button--split fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="0" class="fn-tabs__item">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-tabs__button fn-tabs__button--split" aria-label="show children elements">
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+        <li role="tab" tabindex="-1" class="fn-tabs__item is-disabled">
+            <div class="fn-tabs__text">Tab Item</div>
+            <button class="fn-nested-button fn-tabs__button fn-tabs__button--split" aria-label="show children elements" tabindex="-1" disabled>
+                <span class="sap-icon sap-icon--megamenu"></span>
+            </button>
+        </li>
+    </ul>
+`;
+
+Split.storyName = 'Split Tabs';
+
+Split.parameters = {
+    docs: {
+        iframeHeight: 500,
+        description: {
+            story: 'For Split Tabs you need to add the `.fn-nested-button--split` and `.fn-tabs__button--split` modifier classes to the button element with base class `.fn-nested-button` aka the Nested Button.'
+        }
+    }
+};
