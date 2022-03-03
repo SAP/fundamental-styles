@@ -512,7 +512,7 @@ FixedCardLayout.parameters = {
             story: `Cards arrangement in a 3 column layout.
 * Use \`fd-fixed-card-layout__card-layout\` class for the wrapper element, specify amount of columns with \`fd-fixed-card-layout__card-layout--columns-N\` class, where \`1 < N < 11\`.
 Layout is single column by default. Also, set \`height\` or \`max-height\` for the wrapper element. 
-* Wrap each card in element with class \`fd-fixed-card-layout__wrapper\` and apply \`fd-fixed-card-layout__card\` class to the card element.`
+* Apply \`fd-fixed-card-layout__card\` class to the every card element.`
         }
     }
 };
