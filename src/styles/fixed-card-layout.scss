@@ -12,24 +12,24 @@ $block: #{$fd-namespace}-fixed-card-layout;
 
   &__card-layout {
     @include fd-reset();
-    @include fd-flex-horizontal-center();
     @include fd-set-margin-left(-$fd-card-margin);
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include fd-flex-justify-content-start() {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
     margin-top: -#{$fd-card-margin};
 
     /* Re-order columns into rows */
     @for $i from 2 through 10 {
       &.#{$block}__card-layout--columns-#{$i} {
-        .#{$block}__wrapper:nth-of-type(#{$i}n) {
+        .#{$block}__card:nth-of-type(#{$i}n) {
           order: #{$i};
         }
 
         @for $k from 1 through $i - 1 {
-          .#{$block}__wrapper:nth-of-type(#{$i}n + #{$k}) {
+          .#{$block}__card:nth-of-type(#{$i}n + #{$k}) {
             order: #{$k};
           }
         }
@@ -37,22 +37,27 @@ $block: #{$fd-namespace}-fixed-card-layout;
     }
   }
 
-  &__wrapper {
-    order: 1;
-    min-height: 1px;
-
-    &--single:empty {
-      flex-basis: 100%;
-    }
-  }
-
   &__card,
   &__card-placeholder {
     @include fd-reset();
-    @include fd-set-margin-left($fd-card-margin);
 
-    margin-top: #{$fd-card-margin};
     min-width: $fd-card-min-width;
+    min-height: 0.0625rem;
+  }
+
+  &__card {
+    @include fd-set-padding-left($fd-card-margin);
+
+    order: 1;
+    padding-top: #{$fd-card-margin};
+
+    &--single {
+      flex-basis: 100%;
+    }
+
+    &:empty {
+      padding-top: 0;
+    }
   }
 
   &__card-placeholder {
