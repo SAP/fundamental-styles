@@ -2,7 +2,7 @@ export default {
     title: 'Components/Counter',
     parameters: {
         description: 'Counter can be used as a standalone component or linked to another component. The counter of an item quickly shows how many detail elements are related, without having to navigate to the detail page.',
-        tags: ['development'],
+        tags: ['f3', 'a11y','development'],
         components: ['counter', 'tabs', 'button']
     }
 };
@@ -19,7 +19,7 @@ Primary.storyName = 'Standalone';
 Primary.parameters = {
     docs: {
         description: {
-            story: 'Counter used as a standlone component'
+            story: 'A counter with a red badge displayed as a standalone component. '
         }
     }
 };
@@ -30,7 +30,7 @@ Paragraph.storyName = 'Text';
 Paragraph.parameters = {
     docs: {
         description: {
-            story: 'Counter inserted in paragraph'
+            story: 'A counter with a red badge can be inserted in the paragraph.'
         }
     }
 };
@@ -57,7 +57,8 @@ export const Tabs = () => `<ul class="fd-tabs" role="tablist">
 Tabs.parameters = {
     docs: {
         description: {
-            story: 'Counter added to a tab'
+            story: 'A counter and red badge appears in right-hand of the tab item every time a new item is added to the list. The value of the number change as new items are added.'
+       
         }
     }
 };
@@ -88,7 +89,7 @@ Notifier.storyName = 'Notification';
 Notifier.parameters = {
     docs: {
         description: {
-            story: 'Counter with `--notification` modifier'
+            story: 'A counter and red badge appears over the upper right-hand corner of the notification icon every time a new notification is added to the list. It displays the number of new notifications.'
         }
     }
 };
