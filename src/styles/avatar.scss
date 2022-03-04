@@ -51,6 +51,10 @@ $block: #{$fd-namespace}-avatar;
 
   @include fd-fiori-focus(0);
 
+  &[tabindex="0"] {
+    cursor: pointer;
+  }
+
   // BLOCK ELEMENTS ************
   // zoom icon
   &__zoom-icon {

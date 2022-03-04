@@ -912,6 +912,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--accent-color-1"
+    tabindex="0"
   >
     
     
@@ -933,6 +934,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--accent-color-2"
+    tabindex="0"
   >
     
     
@@ -954,6 +956,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--m fd-avatar--circle fd-avatar--accent-color-3"
+    tabindex="0"
   >
     
     
@@ -975,6 +978,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--l fd-avatar--circle fd-avatar--accent-color-4"
+    tabindex="0"
   >
     
     
@@ -996,6 +1000,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Avatar"
     class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--accent-color-5"
+    tabindex="0"
   >
     
     
@@ -1017,6 +1022,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-6 fd-avatar--xs"
+    tabindex="0"
   >
     WW
     
@@ -1032,6 +1038,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-7 fd-avatar--s"
+    tabindex="0"
   >
     WW
     
@@ -1047,6 +1054,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-8 fd-avatar--m"
+    tabindex="0"
   >
     WW
     
@@ -1062,6 +1070,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-9 fd-avatar--l"
+    tabindex="0"
   >
     WW
     
@@ -1077,6 +1086,7 @@ exports[`Storyshots Components/Avatar Zoom Icon 1`] = `
   <span
     aria-label="Wendy Wallace"
     class="fd-avatar fd-avatar--accent-color-10 fd-avatar--xl"
+    tabindex="0"
   >
     WW
     
