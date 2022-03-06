@@ -1,4 +1,11 @@
 
+### 0.22.1-rc.1 (2022-03-06)
+
+
+### Bug Fixes
+
+* **styles:** add cursor pointer to Avatar with zoom icon [ci visual] ([#3218](https://github.com/SAP/fundamental-styles/issues/3218)) ([254059e](https://github.com/SAP/fundamental-styles/commit/254059e4aabaf71bf7afcdff093289143d5151a6))
+
 ### 0.22.1-rc.0 (2022-03-06)
 
 
