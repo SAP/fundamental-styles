@@ -1,4 +1,11 @@
 
+### 0.22.1-rc.0 (2022-03-06)
+
+
+### Features
+
+* **fn:** introduce FN Busy Indicator [ci visual] ([#3217](https://github.com/SAP/fundamental-styles/issues/3217)) ([da02ba4](https://github.com/SAP/fundamental-styles/commit/da02ba4c87fba7f6cd103cc530c818175e1875a9))
+
 ## [0.22.0](https://github.com/SAP/fundamental-styles/compare/v0.22.0-rc.12...v0.22.0) (2022-03-01)
 
 ## 0.22.0-rc.12 (2022-03-01)
