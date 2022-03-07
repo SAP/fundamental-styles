@@ -70,6 +70,7 @@ $cols: 12;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
+  overflow-y: hidden;
   padding: 0 $horizontal-gutter-small;
 
   &.#{$blockContainer}--no-horizontal-gap,
