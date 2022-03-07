@@ -240,6 +240,11 @@ $block: #{$fd-namespace}-popover;
     width: 100%;
   }
 
+  &__inline-help {
+    padding: 0.75rem;
+    font-size: var(--sapFontSmallSize);
+  }
+
   &__popper {
     @include fd-reset();
 
@@ -252,11 +257,6 @@ $block: #{$fd-namespace}-popover;
     border-radius: $fd-popover-border-radius;
     background: $fd-popover-background-color;
     opacity: 1;
-
-    &.fd-inline-help__content {
-      padding: 0.75rem;
-      font-size: var(--sapFontSmallSize);
-    }
 
     &--no-arrow {
       margin: 0 !important;
