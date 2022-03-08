@@ -20,11 +20,6 @@ $block: #{$fd-namespace}-popover;
 
   $fd-popover-transition-params: $fd-animation-speed !default;
 
-  @mixin set-list-border-radius($position, $radius: $fd-popover-border-radius) {
-    border-#{$position}-right-radius: $radius;
-    border-#{$position}-left-radius: $radius;
-  }
-
   @include fd-reset();
 
   position: relative;
@@ -380,63 +375,6 @@ $block: #{$fd-namespace}-popover;
 
       &-y--bottom {
         bottom: $fd-popover-arrow-offset;
-      }
-    }
-
-    .fd-list {
-      border-radius: $fd-popover-border-radius;
-
-      &__item {
-        &:first-child {
-          @include set-list-border-radius(top);
-        }
-
-        &:last-child {
-          @include set-list-border-radius(bottom);
-        }
-      }
-    }
-
-    .fd-nested-list {
-      border-bottom: none;
-
-      &__item {
-        &:first-child {
-          .fd-nested-list__content {
-            @include set-list-border-radius(top);
-          }
-        }
-
-        &:last-child {
-          .fd-nested-list {
-            &__item:last-child {
-              .fd-nested-list__link {
-                @include set-list-border-radius(bottom);
-              }
-            }
-
-            &__content {
-              @include set-list-border-radius(bottom);
-
-              &.is-selected {
-                @include set-list-border-radius(bottom, 0);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .fd-side-nav,
-    .fd-nested-list__item {
-      border-right: none;
-
-      &:first-child {
-        @include set-list-border-radius(top);
-      }
-
-      &:last-child {
-        @include set-list-border-radius(bottom);
       }
     }
   }
