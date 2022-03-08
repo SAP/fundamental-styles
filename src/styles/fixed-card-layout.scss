@@ -1,5 +1,10 @@
+@use "sass:math";
+
+// https://github.com/stylelint/stylelint/issues/5133#issuecomment-834145196
+/* stylelint-disable */
 @import './new-settings';
 @import './mixins';
+/* stylelint-enable */
 
 $block: #{$fd-namespace}-fixed-card-layout;
 
@@ -24,6 +29,10 @@ $block: #{$fd-namespace}-fixed-card-layout;
     /* Re-order columns into rows */
     @for $i from 2 through 10 {
       &.#{$block}__card-layout--columns-#{$i} {
+        .#{$block}__card {
+          width: math.percentage(math.div(1, $i));
+        }
+
         .#{$block}__card:nth-of-type(#{$i}n) {
           order: #{$i};
         }
