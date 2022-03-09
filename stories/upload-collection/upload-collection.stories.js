@@ -30,6 +30,8 @@ Modifier/Class | Description
 \`fd-upload-collection__description\` | Description element for the upload collection.
 \`fd-upload-collection__text-separator\` | Bullet point text separator for statuses and descriptions.
 \`fd-upload-collection__status-group\` | Status group container for the upload collection.
+\`fd-upload-collection__status-group-item\` | Status group item for the upload collection.
+\`fd-upload-collection__status-group-item-text\` | Status group item text for the upload collection.
 \`fd-upload-collection__button-group\` | Container for the edit/delete/Ok/Cancel buttons.
 \`fd-upload-collection__form-item\` | Form item element.
 \`fd-upload-collection__extension\` | File extension element for the upload collection.
