@@ -35,27 +35,19 @@ The fully compiled, minified library is available via [unpkg CDN](https://unpkg.
 For `prerelease` version use
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@prerelease/dist/fundamental-styles-{themeName}.css' rel='stylesheet'>
+<link href='https://unpkg.com/fundamental-styles@prerelease/dist/fundamental-styles.css' rel='stylesheet'>
 ```
 
 For `latest` stable version use
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles-{themeName}.css' rel='stylesheet'>
-```
-
-Replace `{themeName}` with one of the following: `sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`
-, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`. You can also not specify theme and use default `sap_fiori_3`
-theme:
-
-```html
-<link href='https://unpkg.com/fundamental-styles/dist/fundamental-styles.css' rel='stylesheet'>
+<link href='https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css' rel='stylesheet'>
 ```
 
 You can also include specific version of library into your html via using
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@{versionNumber}/dist/fundamental-styles-{themeName}.css' rel='stylesheet'>
+<link href='https://unpkg.com/fundamental-styles@{versionNumber}/dist/fundamental-styles.css' rel='stylesheet'>
 ```
 where you should replace `{versionNumber}` with desired version number. For example with `0.20.3`
 
