@@ -51,9 +51,13 @@ export const Standard = () => `<h4>Default mode</h4>
                 This is an additional description
             </div>
             <div class="fd-upload-collection__status-group">
-                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a negative status</span>
+                </span>
                 <span class="fd-upload-collection__text-separator"> </span>
-                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a positive status</span>
+                </span>
             </div>
         </div>
         <div class="fd-upload-collection__button-group">
@@ -79,9 +83,13 @@ export const Standard = () => `<h4>Default mode</h4>
                 This is an additional description
             </div>
             <div class="fd-upload-collection__status-group">
-                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a negative status</span>
+                </span>
                 <span class="fd-upload-collection__text-separator"> </span>
-                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a positive status</span>
+                </span>
             </div>
         </div>
         <div class="fd-upload-collection__button-group">
@@ -99,9 +107,43 @@ export const Standard = () => `<h4>Default mode</h4>
                 This is an additional description
             </div>
             <div class="fd-upload-collection__status-group">
-                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a negative status</span>
+                </span>
                 <span class="fd-upload-collection__text-separator"> </span>
-                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a positive status</span>
+                </span>
+            </div>
+        </div>
+        <div class="fd-upload-collection__button-group">
+            <button aria-label="Edit" class="fd-button fd-button--transparent"><i class="sap-icon--edit"></i></button>
+            <button aria-label="Delete" class="fd-button fd-button--transparent"><i class="sap-icon--decline"></i></button>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-upload-collection__item">
+        <span class="fd-list__thumbnail fd-upload-collection__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+        <div class="fd-list__content">
+            <a href="#" class="fd-list__title fd-link fd-upload-collection__title">
+                Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_Long_File_Name.extension
+            </a>
+            <div class="fd-upload-collection__description">
+                This is the long long long long long long long long long long long long long long long long long long long file description
+                <span class="fd-upload-collection__text-separator"> </span>
+                This is an long long long long long long long long long long long long long long long long long long long additional description
+            </div>
+            <div class="fd-upload-collection__status-group">
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">
+                        This is a long long long long long long long long long long long negative status
+                    </span>
+                </span>
+                <span class="fd-upload-collection__text-separator"> </span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">
+                        This is a long long long long long long long long long long long positive status
+                    </span>
+                </span>
             </div>
         </div>
         <div class="fd-upload-collection__button-group">
@@ -126,9 +168,13 @@ export const Standard = () => `<h4>Default mode</h4>
                 This is an additional description
             </div>
             <div class="fd-upload-collection__status-group">
-                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a negative status</span>
+                </span>
                 <span class="fd-upload-collection__text-separator"> </span>
-                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a positive status</span>
+                </span>
             </div>
         </div>
         <div class="fd-upload-collection__button-group">
@@ -146,9 +192,13 @@ export const Standard = () => `<h4>Default mode</h4>
                 This is an additional description
             </div>
             <div class="fd-upload-collection__status-group">
-                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a negative status</span>
+                </span>
                 <span class="fd-upload-collection__text-separator"> </span>
-                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a positive status</span>
+                </span>
             </div>
         </div>
         <div class="fd-upload-collection__button-group">
@@ -166,9 +216,13 @@ export const Standard = () => `<h4>Default mode</h4>
                 This is an additional description
             </div>
             <div class="fd-upload-collection__status-group">
-                <span class="fd-object-status fd-object-status--negative">This is a negative status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--negative">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a negative status</span>
+                </span>
                 <span class="fd-upload-collection__text-separator"> </span>
-                <span class="fd-object-status fd-object-status--positive">This is a positive status</span>
+                <span class="fd-object-status fd-upload-collection__status-group-item fd-object-status--positive">
+                    <span class="fd-object-status__text fd-upload-collection__status-group-item-text">This is a positive status</span>
+                </span>
             </div>
         </div>
         <div class="fd-upload-collection__button-group">
