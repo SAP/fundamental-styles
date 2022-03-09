@@ -1,5 +1,10 @@
+@use "sass:math";
+
+// https://github.com/stylelint/stylelint/issues/5133#issuecomment-834145196
+/* stylelint-disable */
 @import './new-settings';
 @import './mixins';
+/* stylelint-enable */
 
 $block: #{$fd-namespace}-fixed-card-layout;
 
@@ -12,47 +17,62 @@ $block: #{$fd-namespace}-fixed-card-layout;
 
   &__card-layout {
     @include fd-reset();
-    @include fd-flex-horizontal-center();
-  }
+    @include fd-set-margin-left(-$fd-card-margin);
 
-  &__card-layout-column {
-    @include fd-reset();
+    @include fd-flex-justify-content-start() {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
 
-    flex: 1;
-    margin-right: $fd-card-margin;
+    margin-top: -#{$fd-card-margin};
 
-    &:last-child {
-      margin-right: 0;
+    /* Re-order columns into rows */
+    @for $i from 2 through 10 {
+      &.#{$block}__card-layout--columns-#{$i} {
+        .#{$block}__card {
+          width: math.percentage(math.div(1, $i));
+        }
 
-      @include fd-rtl() {
-        margin-left: 0;
+        .#{$block}__card:nth-of-type(#{$i}n) {
+          order: #{$i};
+        }
+
+        @for $k from 1 through $i - 1 {
+          .#{$block}__card:nth-of-type(#{$i}n + #{$k}) {
+            order: #{$k};
+          }
+        }
       }
     }
+  }
 
-    @include fd-rtl() {
-      margin-left: $fd-card-margin;
-      margin-right: 0;
-    }
+  &__card,
+  &__card-placeholder {
+    @include fd-reset();
+
+    min-width: $fd-card-min-width;
+    min-height: 0.0625rem;
   }
 
   &__card {
-    @include fd-reset();
+    @include fd-set-padding-left($fd-card-margin);
 
-    margin-bottom: $fd-card-margin;
-    min-width: $fd-card-min-width;
+    order: 1;
+    padding-top: #{$fd-card-margin};
 
-    &:last-child {
-      margin-bottom: 0;
+    &--single {
+      flex-basis: 100%;
+    }
+
+    &:empty {
+      padding-top: 0;
     }
   }
 
   &__card-placeholder {
-    @include fd-reset();
-
     opacity: 0.3;
     border: $fd-border-on-drag;
     cursor: grabbing;
-    margin-bottom: $fd-card-margin;
   }
 
   &__card-preview {
@@ -61,5 +81,12 @@ $block: #{$fd-namespace}-fixed-card-layout;
     box-sizing: border-box;
     border-radius: var(--sapElement_BorderCornerRadius);
     box-shadow: var(--sapContent_Shadow2);
+  }
+
+  &__clearfix {
+    @include fd-reset();
+
+    width: 0;
+    flex-basis: 100%;
   }
 }
