@@ -1,4 +1,17 @@
 
+## 0.23.0-rc.0 (2022-03-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* * no more fixed card layout columns
+* container element should have column class
+* container element should have height\max-height
+
+### Bug Fixes
+
+* fixed card layout refactoring ([#3208](https://github.com/SAP/fundamental-styles/issues/3208)) ([0bd7efa](https://github.com/SAP/fundamental-styles/commit/0bd7efa2540056ddbc228fd204ee4ed7579f78ae))
+
 ### 0.22.1-rc.1 (2022-03-06)
 
 
