@@ -21,3 +21,4 @@ node_modules
 stories/*/*.visual.js
 *.visual.js
 *.accessibility.test.js
+introduction.stories.mdx
