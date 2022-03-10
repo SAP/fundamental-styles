@@ -140,7 +140,6 @@
     "storybook-testing": "storybook-testing"
   },
   "browserslist": [
-    "last 2 versions",
-    "IE 11"
+    "last 2 versions"
   ]
 }
