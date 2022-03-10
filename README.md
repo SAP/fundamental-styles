@@ -35,29 +35,41 @@ The fully compiled, minified library is available via [unpkg CDN](https://unpkg.
 For `prerelease` version use
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@prerelease/dist/fundamental-styles-{themeName}.css' rel='stylesheet'>
+<link href='https://unpkg.com/fundamental-styles@prerelease/dist/fundamental-styles.css' rel='stylesheet'>
 ```
 
 For `latest` stable version use
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles-{themeName}.css' rel='stylesheet'>
-```
-
-Replace `{themeName}` with one of the following: `sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`
-, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`. You can also not specify theme and use default `sap_fiori_3`
-theme:
-
-```html
-<link href='https://unpkg.com/fundamental-styles/dist/fundamental-styles.css' rel='stylesheet'>
+<link href='https://unpkg.com/fundamental-styles@latest/dist/fundamental-styles.css' rel='stylesheet'>
 ```
 
 You can also include specific version of library into your html via using
 
 ```html
-<link href='https://unpkg.com/fundamental-styles@{versionNumber}/dist/fundamental-styles-{themeName}.css' rel='stylesheet'>
+<link href='https://unpkg.com/fundamental-styles@{versionNumber}/dist/fundamental-styles.css' rel='stylesheet'>
 ```
 where you should replace `{versionNumber}` with desired version number. For example with `0.20.3`
+
+#### Theming
+To use particular theme you need to include two CSS variables files:
+
+```html
+<link href='https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/{themeName}/css_variables.css' rel='stylesheet'>
+```
+```html
+<link href='https://unpkg.com/fundamental-styles@{versionNumber}/dist/theming/{themeName}.css' rel='stylesheet'>
+```
+Available values for `themeName` are
+`sap_fiori_3`,
+`sap_fiori_3_dark`,
+`sap_fiori_3_hcb`,
+`sap_fiori_3_hcw`,
+`sap_fiori_3_light_dark`,
+`sap_horizon`,
+`sap_horizon_dark`,
+`sap_horizon_hcb`,
+`sap_horizon_hcw`
 
 ### NPM Package
 
@@ -70,12 +82,6 @@ npm install fundamental-styles --save
 
 > NOTE: We only distribute compiled CSS for each component, not the full project or HTML for specific components.
 
-### Distributed CSS Files
-
-The distribution folder contains several CSS files per component: a default file and one file per supported
-theme (`sap_fiori_3`, `sap_fiori_3_dark`, `sap_fori_3_light_dark`, `sap_fiori_3_hcb`, `sap_fori_3_hcw`, `sap_horizon`).
-Each themed file includes fallback support for CSS variables in IE11 for the corresponding theme. The default file
-includes fallbacks for `sap_fiori_3`.
 
 ### Icons
 
