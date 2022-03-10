@@ -2,12 +2,13 @@ import { withCssResources } from '@storybook/addon-cssresources';
 import { DocsContainer } from '@storybook/addon-docs';
 import prettify from 'pretty';
 import React from 'react';
-import availableThemes from './custom/constants/availableThemes';
 import DocsPage from './custom/components/DocsPage';
 import { SAPContainer } from './custom/components/SAPContainer';
+import availableThemes from './custom/constants/availableThemes';
 import directionalities from './custom/constants/directionalities';
-import { withDirectionality } from './custom/decorators/directionalityProvider';
 import fundamentals from './custom/constants/fundamentals';
+import { withComponentStylesProvider } from './custom/decorators/componentStylesProvider';
+import { withDirectionality } from './custom/decorators/directionalityProvider';
 
 import { withThemeProvider } from './custom/decorators/themeProvider';
 import { check, isProduction } from './environment';
@@ -18,17 +19,17 @@ export const parameters = {
     cssresources: [
         {
             id: 'normalize',
-            code: `<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'></link>`,
+            code: `<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></link>`,
             picked: false
         },
         {
             id: 'unnormalize',
-            code: `<link rel='stylesheet' type='text/css' href='./unnormalize.css'></link>`,
+            code: `<link rel="stylesheet" type="text/css" href="./unnormalize.css"></link>`,
             picked: false
         },
         {
             id: 'theme-ugly',
-            code: `<link rel='stylesheet' type='text/css' href='./theme-ugly.css'></link>`,
+            code: `<link rel="stylesheet" type="text/css" href="./theme-ugly.css"></link>`,
             picked: false
         },
         {
@@ -54,7 +55,11 @@ export const parameters = {
     ],
     docs: {
         container: DocsContainer,
-        page: () => <SAPContainer><DocsPage/></SAPContainer>,
+        page: () => (
+            <SAPContainer>
+                <DocsPage />
+            </SAPContainer>
+        ),
         theme: fundamentals,
         transformSource: (src) => {
             // we strip out the () =>` ` from the story
@@ -92,4 +97,4 @@ export const globalTypes = {
     }
 };
 
-export const decorators = [withThemeProvider, withDirectionality, withCssResources];
+export const decorators = [withThemeProvider, withDirectionality, withComponentStylesProvider, withCssResources];

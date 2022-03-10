@@ -4,7 +4,7 @@ const cssnano = require('cssnano');
 const postcssClean = require('postcss-clean');
 const postcssBanner = require('postcss-banner');
 const postcssNormalizeCharset = require('postcss-normalize-charset');
-const postcssAddFallback = require('./postcss-add-fallback.js');
+// const postcssAddFallback = require('./postcss-add-fallback.js');
 const postcssCustomProperties = require('postcss-custom-properties'); //ie11 fallbacks
 const postcssImport = require('postcss-import');
 const postcssRemoveFonts = require('./postcss-remove-fonts.js');
@@ -26,7 +26,7 @@ module.exports = {
     sourcesContent: true,
     plugins: [
         postcssImport(),
-        postcssAddFallback(),
+        // postcssAddFallback(),
         autoprefixer({
             cascade: true
         }),

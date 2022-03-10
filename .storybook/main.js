@@ -3,6 +3,7 @@ const DefinePlugin = require('webpack/lib/DefinePlugin');
 const stylesLoader = require('./custom/loaders/load-styles');
 const isProduction = require('./custom/constants/isProduction');
 const maxAssetSize = 1024 * 1024;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const storiesToInclude = () => {
     const mode = process.env.STORYBOOK_ENV;
@@ -37,14 +38,14 @@ const addons = [
 
 if (isProduction) {
     staticDirs.push('../dist/', '../dist-fn/dist/');
-    addons.push({
-        name: '@storybook/preset-scss',
-        options: {
-            styleLoaderOptions: {
-                injectType: 'lazyStyleTag'
-            }
-        }
-    });
+    // addons.push({
+    //     name: '@storybook/preset-scss',
+    //     options: {
+    //         styleLoaderOptions: {
+    //             injectType: 'lazyStyleTag'
+    //         }
+    //     }
+    // });
 }
 
 module.exports = {
@@ -80,9 +81,7 @@ module.exports = {
             ]
         });
 
-        if (!isProduction) {
-            config.module.rules.push(stylesLoader);
-        }
+        config.module.rules.push(stylesLoader);
 
         return merge(config, {
             optimization: {
