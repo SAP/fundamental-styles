@@ -158,6 +158,17 @@
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.0625rem;
+  --fdMessageStrip_Border_Radius: 0.5rem; // var(--sapPopover_BorderCornerRadius);
+  --fdMessageStrip_Border_Color_Success: #cee67e;// var(--sapMessage_SuccessBorderColor);
+  --fdMessageStrip_Border_Color_Error: #ff8ec4;// var(--sapMessage_ErrorBorderColor);
+  --fdMessageStrip_Border_Color_Warning: #ffe770;// var(--sapMessage_WarningBorderColor);
+  --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
+  --fdMessageStrip_Border_Color_Informative: #7bcfff;// var(--sapMessage_InformationBorderColor);
+  --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
+  --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
+  --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);
+  --fdMessageStrip_Icon_Color_Neutral: var(--sapNeutralElementColor);
+  --fdMessageStrip_Icon_Color_Information: var(--sapInformativeElementColor);
 
   /* Page */
   --fdPage_List_Background: var(--sapGroup_ContentBackground);
