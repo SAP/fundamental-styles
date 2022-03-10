@@ -2,7 +2,7 @@ export default {
     title: 'Components/Counter',
     parameters: {
         description: 'Counter can be used as a standalone component or linked to another component. The counter of an item quickly shows how many detail elements are related, without having to navigate to the detail page.',
-        tags: ['f3', 'a11y','development'],
+        tags: ['f3', 'a11y', 'development'],
         components: ['counter', 'tabs', 'button']
     }
 };
@@ -58,7 +58,6 @@ Tabs.parameters = {
     docs: {
         description: {
             story: 'A counter and red badge appears in right-hand of the tab item every time a new item is added to the list. The value of the number change as new items are added.'
-       
         }
     }
 };
