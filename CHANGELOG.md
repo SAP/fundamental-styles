@@ -1,4 +1,11 @@
 
+## 0.23.0-rc.6 (2022-03-11)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Busy Inddicator [ci visual] ([#3234](https://github.com/SAP/fundamental-styles/issues/3234)) ([686e968](https://github.com/SAP/fundamental-styles/commit/686e968b9d7d04c0e0e24609ee6f3a97221a0881))
+
 ## 0.23.0-rc.5 (2022-03-11)
 
 
