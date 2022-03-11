@@ -1,4 +1,11 @@
 
+## 0.23.0-rc.7 (2022-03-11)
+
+
+### Bug Fixes
+
+* **styles:** popover styles refactoring ([#3215](https://github.com/SAP/fundamental-styles/issues/3215)) ([14c3c67](https://github.com/SAP/fundamental-styles/commit/14c3c672eefeb37376cf911322da0c8c9ba63729))
+
 ## 0.23.0-rc.6 (2022-03-11)
 
 
