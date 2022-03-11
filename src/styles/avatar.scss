@@ -23,16 +23,56 @@ $block: #{$fd-namespace}-avatar;
   );
 
   $fd-avatar-accent-colors: (
-    "1": ("background-color": var(--sapAccentColor1)),
-    "2": ("background-color": var(--sapAccentColor2)),
-    "3": ("background-color": var(--sapAccentColor3)),
-    "4": ("background-color": var(--sapAccentColor4)),
-    "5": ("background-color": var(--sapAccentColor5)),
-    "6": ("background-color": var(--sapAccentColor6)),
-    "7": ("background-color": var(--sapAccentColor7)),
-    "8": ("background-color": var(--sapAccentColor8)),
-    "9": ("background-color": var(--sapAccentColor9)),
-    "10": ("background-color": var(--sapAccentColor10))
+    "1":  (
+      "background-color": var(--fdAvatar_Accent_Color_1),
+      "text-color": var(--fdAvatar_Accent_Color_1_Text),
+      "border": var(--fdAvatar_Accent_Color_1_Border)
+    ),
+    "2":  (
+      "background-color": var(--fdAvatar_Accent_Color_2),
+      "text-color": var(--fdAvatar_Accent_Color_2_Text),
+      "border": var(--fdAvatar_Accent_Color_2_Border)
+    ),
+    "3":  (
+      "background-color": var(--fdAvatar_Accent_Color_3),
+      "text-color": var(--fdAvatar_Accent_Color_3_Text),
+      "border": var(--fdAvatar_Accent_Color_3_Border)
+    ),
+    "4":  (
+      "background-color": var(--fdAvatar_Accent_Color_4),
+      "text-color": var(--fdAvatar_Accent_Color_4_Text),
+      "border": var(--fdAvatar_Accent_Color_4_Border)
+    ),
+    "5":  (
+      "background-color": var(--fdAvatar_Accent_Color_5),
+      "text-color": var(--fdAvatar_Accent_Color_5_Text),
+      "border": var(--fdAvatar_Accent_Color_5_Border)
+    ),
+    "6":  (
+      "background-color": var(--fdAvatar_Accent_Color_6),
+      "text-color": var(--fdAvatar_Accent_Color_6_Text),
+      "border": var(--fdAvatar_Accent_Color_6_Border)
+    ),
+    "7":  (
+      "background-color": var(--fdAvatar_Accent_Color_7),
+      "text-color": var(--fdAvatar_Accent_Color_7_Text),
+      "border": var(--fdAvatar_Accent_Color_7_Border)
+    ),
+    "8":  (
+      "background-color": var(--fdAvatar_Accent_Color_8),
+      "text-color": var(--fdAvatar_Accent_Color_8_Text),
+      "border": var(--fdAvatar_Accent_Color_8_Border)
+    ),
+    "9":  (
+      "background-color": var(--fdAvatar_Accent_Color_9),
+      "text-color": var(--fdAvatar_Accent_Color_9_Text),
+      "border": var(--fdAvatar_Accent_Color_9_Border)
+    ),
+    "10": (
+      "background-color": var(--fdAvatar_Accent_Color_10),
+      "text-color": var(--fdAvatar_Accent_Color_10_Text),
+      "border": var(--fdAvatar_Accent_Color_10_Border)
+    )
   );
 
   @include fd-reset();
@@ -125,7 +165,8 @@ $block: #{$fd-namespace}-avatar;
   @each $set-name, $color-set in $fd-avatar-accent-colors {
     &--accent-color-#{$set-name} {
       background-color: map_get($color-set, "background-color");
-      color: var(--fdAvatar_Accent_Color);
+      color: map_get($color-set, "text-color");
+      border: map_get($color-set, "border");
     }
   }
 
