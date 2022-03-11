@@ -1,4 +1,11 @@
 
+## 0.23.0-rc.1 (2022-03-11)
+
+
+### Features
+
+* **styles:** add delta horizon theming for message strip [ci visual] ([#3230](https://github.com/SAP/fundamental-styles/issues/3230)) ([fd91e5a](https://github.com/SAP/fundamental-styles/commit/fd91e5aa13ed42622c8b5abd55a16f3d454cc642))
+
 ## 0.23.0-rc.0 (2022-03-09)
 
 
