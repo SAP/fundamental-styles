@@ -363,4 +363,8 @@
   --fdInfo_Label_Display_Border_Color: var(--sapGroup_ContentBorderColor);
   --fdInfo_Label_Display_Background_Color: var(--sapGroup_ContentBackground);
   --fdInfo_Label_Display_Text_Color: var(--sapTextColor);
+
+  /** Busy Indicator */
+  --fdBusy_Indicator_Dot_Color: var(--sapContent_IconColor);
+  --fdBusy_Indicator_Dot_Contrast_Color: var(--sapContent_IconColor);
 }
