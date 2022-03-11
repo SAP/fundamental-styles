@@ -64,6 +64,7 @@ export const Colors = () => `
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-negative" style="font-size:5rem"></span>
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-neutral" style="font-size:5rem"></span>
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-positive" style="font-size:5rem"></span>
+ <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-information" style="font-size:5rem"></span>
  `;
 
 export const TntIcons = () => {

@@ -64,6 +64,7 @@ export const Colors = () => `
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-negative" style="font-size:5rem"></span>
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-neutral" style="font-size:5rem"></span>
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-positive" style="font-size:5rem"></span>
+ <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-information" style="font-size:5rem"></span>
  `;
 
 export const BusinessSuiteIcons = () => {

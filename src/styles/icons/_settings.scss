@@ -674,5 +674,6 @@ $fd-icon-control-enumerations: (
   "critical": ("color": var(--sapCriticalElementColor), "background-color": var(--sapCriticalElementColor)),
   "negative": ("color": var(--sapNegativeElementColor), "background-color": var(--sapNegativeElementColor)),
   "neutral": ("color": var(--sapNeutralElementColor), "background-color": var(--sapNeutralElementColor)),
-  "positive": ("color": var(--sapPositiveElementColor), "background-color": var(--sapPositiveElementColor))
+  "positive": ("color": var(--sapPositiveElementColor), "background-color": var(--sapPositiveElementColor)),
+  "information": ("color": var(--sapInformativeElementColor), "background-color": var(--sapInformativeElementColor))
 );
