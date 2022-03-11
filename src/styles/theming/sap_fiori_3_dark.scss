@@ -156,6 +156,17 @@
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.0625rem;
+  --fdMessageStrip_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdMessageStrip_Border_Color_Success: var(--sapSuccessBorderColor);
+  --fdMessageStrip_Border_Color_Error: var(--sapErrorBorderColor);
+  --fdMessageStrip_Border_Color_Warning: var(--sapWarningBorderColor);
+  --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
+  --fdMessageStrip_Border_Color_Informative: var(--sapInformativeBorderColor);
+  --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
+  --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
+  --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);
+  --fdMessageStrip_Icon_Color_Neutral: var(--sapNeutralElementColor);
+  --fdMessageStrip_Icon_Color_Information: var(--sapInformativeElementColor);
 
   /* Page */
   --fdPage_List_Background: var(--sapGroup_ContentBackground);

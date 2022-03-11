@@ -157,7 +157,18 @@
   --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
 
   /* Message Strip */
-  --fdMessageStrip_Border_Width: 0.0625rem;
+  --fdMessageStrip_Border_Width: 0.125rem;
+  --fdMessageStrip_Border_Radius: 0.25rem;// var(--sapPopover_BorderCornerRadius);
+  --fdMessageStrip_Border_Color_Success: #006362;// var(--sapMessage_SuccessBorderColor);
+  --fdMessageStrip_Border_Color_Error: #ab0000;// var(--sapMessage_ErrorBorderColor);
+  --fdMessageStrip_Border_Color_Warning: #5c5c00;// var(--sapMessage_WarningBorderColor);
+  --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
+  --fdMessageStrip_Border_Color_Informative: #000000;// var(--sapMessage_InformationBorderColor);
+  --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
+  --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
+  --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);
+  --fdMessageStrip_Icon_Color_Neutral: var(--sapNeutralElementColor);
+  --fdMessageStrip_Icon_Color_Information: var(--sapInformativeElementColor);
 
   /* Page */
   --fdPage_List_Background: var(--sapGroup_ContentBackground);
