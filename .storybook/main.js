@@ -37,14 +37,6 @@ const addons = [
 
 if (isProduction) {
     staticDirs.push('../dist/', '../dist-fn/dist/');
-    addons.push({
-        name: '@storybook/preset-scss',
-        options: {
-            styleLoaderOptions: {
-                injectType: 'lazyStyleTag'
-            }
-        }
-    });
 }
 
 module.exports = {
@@ -80,9 +72,7 @@ module.exports = {
             ]
         });
 
-        if (!isProduction) {
-            config.module.rules.push(stylesLoader);
-        }
+        config.module.rules.push(stylesLoader);
 
         return merge(config, {
             optimization: {

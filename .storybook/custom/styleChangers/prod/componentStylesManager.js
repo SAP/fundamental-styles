@@ -4,50 +4,45 @@ import getLazyLoader from '../utils/getLazyLoader';
 export default (managedBy) => {
     let loadedComponentStyles = {};
     let currentComponents = [];
-    let currentTheme = 'sap_fiori_3';
 
     const styleLinkTag = generateStyleLinkTagFn(managedBy);
     const lazyLoader = getLazyLoader(styleLinkTag);
 
-    const getComponentStylePath = (componentName, themeName) => {
+    const getComponentStylePath = (componentName) => {
         let stylePath = `${componentName}`;
         if (!stylePath.startsWith('fn-')) {
-            return `${stylePath}-${themeName}.css`;
+            return `${stylePath}.css`;
         }
         return `${stylePath}.css`;
     };
 
-    const unuseComponent = (componentName, themeName) => {
+    const unuseComponent = (componentName) => {
         if (
-            loadedComponentStyles.hasOwnProperty(componentName) &&
-            loadedComponentStyles[componentName].hasOwnProperty(themeName)
+            loadedComponentStyles.hasOwnProperty(componentName)
         ) {
-            loadedComponentStyles[componentName][themeName].unuse();
+            loadedComponentStyles[componentName].unuse();
+            loadedComponentStyles[componentName] = void 0;
         } else {
             console.log('Component not loaded');
         }
     };
 
-    const useComponent = (componentName, themeName) => {
-        if (!loadedComponentStyles.hasOwnProperty(componentName)) {
-            loadedComponentStyles[componentName] = {};
-        }
-        if (!loadedComponentStyles[componentName][themeName]) {
-            loadedComponentStyles[componentName][themeName] = lazyLoader(
-                getComponentStylePath(componentName, themeName)
+    const useComponent = (componentName) => {
+        if (!loadedComponentStyles[componentName]) {
+            loadedComponentStyles[componentName] = lazyLoader(
+                getComponentStylePath(componentName)
             );
         }
-        loadedComponentStyles[componentName][themeName].use();
+        loadedComponentStyles[componentName].use();
     };
 
     return {
-        use: (components, themeName) => {
-            currentComponents.forEach((componentName) => unuseComponent(componentName, currentTheme));
+        use: (components) => {
+            currentComponents.forEach((componentName) => unuseComponent(componentName));
             for (const componentName of components) {
-                useComponent(componentName, themeName);
+                useComponent(componentName);
             }
             currentComponents = [...components];
-            currentTheme = themeName;
         }
     };
 };
