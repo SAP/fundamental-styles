@@ -64,6 +64,7 @@ export const Colors = () => `
 <span class="sap-icon sap-icon--cart sap-icon--color-negative" style="font-size:5rem"></span>
 <span class="sap-icon sap-icon--cart sap-icon--color-neutral" style="font-size:5rem"></span>
 <span class="sap-icon sap-icon--cart sap-icon--color-positive" style="font-size:5rem"></span>
+<span class="sap-icon sap-icon--cart sap-icon--color-information" style="font-size:5rem"></span>
 `;
 
 export const AvailableIcons = () => {
