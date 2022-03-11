@@ -1,4 +1,11 @@
 
+## 0.23.0-rc.5 (2022-03-11)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Avatar [ci visual] ([#3232](https://github.com/SAP/fundamental-styles/issues/3232)) ([2ac9ae7](https://github.com/SAP/fundamental-styles/commit/2ac9ae733dc99a3161576f83e1e3d25f0062c13e))
+
 ## 0.23.0-rc.4 (2022-03-11)
 
 
