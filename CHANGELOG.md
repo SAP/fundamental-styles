@@ -1,4 +1,15 @@
 
+## 0.23.0-rc.3 (2022-03-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **docs,styles:** drop support for individual theme files per components
+
+### Bug Fixes
+
+* **docs,styles:** removed ie11 fallbacks ([#3231](https://github.com/SAP/fundamental-styles/issues/3231)) ([930cabb](https://github.com/SAP/fundamental-styles/commit/930cabb7514f0c40db1d3d8f67634e33b5b49fef))
+
 ## 0.23.0-rc.2 (2022-03-11)
 
 ## 0.23.0-rc.1 (2022-03-11)
