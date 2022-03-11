@@ -1,4 +1,11 @@
 
+## 0.23.0-rc.4 (2022-03-11)
+
+
+### Bug Fixes
+
+* **styles:** layout grid gutters update [ci visual] ([#3229](https://github.com/SAP/fundamental-styles/issues/3229)) ([5e32031](https://github.com/SAP/fundamental-styles/commit/5e32031f1eb06c159464834b78c77dfeb3cc52d9))
+
 ## 0.23.0-rc.3 (2022-03-11)
 
 
