@@ -10,7 +10,7 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-box-shadow: var(--sapContent_Shadow2) !default;
 
   $fd-popover-arrow-top-back: -0.5rem !default;
-  $fd-popover-arrow-top-front: calc(-0.5rem + 1px) !default;
+  $fd-popover-arrow-top-front: calc(-0.5rem + 0.0625rem) !default;
 
   $fd-popover-arrow-width: 1rem !default;
   $fd-popover-arrow-height: 0.5rem !default;
@@ -69,41 +69,27 @@ $block: #{$fd-namespace}-popover;
     background: $fd-popover-background-color;
     opacity: 1;
     visibility: visible;
-    left: $fd-popover-body-shadow-offset;
     top: $fd-popover-top-position;
     transition: all $fd-popover-transition-params;
     transform: translateY(0);
 
-    @include fd-rtl() {
-      left: auto;
-      right: $fd-popover-body-shadow-offset;
-
-      &::before {
-        right: $fd-popover-arrow-offset;
-      }
-
-      &::after {
-        right: $fd-popover-arrow-offset;
-      }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
     }
 
     &::before {
       @include triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, up);
 
-      content: "";
-      position: absolute;
       top: $fd-popover-arrow-top-front;
-      left: $fd-popover-arrow-offset;
       z-index: $fd-popover-z-index + 2;
     }
 
     &::after {
       @include triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, up);
 
-      content: "";
-      position: absolute;
       top: $fd-popover-arrow-top-back;
-      left: $fd-popover-arrow-offset;
       z-index: $fd-popover-z-index + 1;
     }
 
@@ -158,38 +144,25 @@ $block: #{$fd-namespace}-popover;
       }
     }
 
+    &,
     &--left {
       @include fd-left-popover-offset-placement();
 
-      @include fd-rtl() {
-        &::before,
-        &::after {
-          right: $fd-popover-arrow-offset;
-          left: unset;
-        }
-      }
-
       &::before,
       &::after {
-        left: $fd-popover-arrow-offset;
+        @include fd-set-position-left($fd-popover-arrow-offset);
       }
     }
 
     &--right {
       @include fd-right-popover-offset-placement();
 
-      @include fd-rtl() {
-        &::before,
-        &::after {
-          left: $fd-popover-arrow-offset;
-          right: unset;
-        }
-      }
-
       &::before,
       &::after {
+        @include fd-set-position-right($fd-popover-arrow-offset);
+
+        // To overwrite default left value.
         left: auto;
-        right: $fd-popover-arrow-offset;
       }
     }
 
@@ -201,14 +174,6 @@ $block: #{$fd-namespace}-popover;
       &::before,
       &::after {
         display: none;
-      }
-
-      &.#{$block}__body--left {
-        @include fd-left-popover-offset-placement();
-      }
-
-      &.#{$block}__body--right {
-        @include fd-right-popover-offset-placement();
       }
     }
 
@@ -257,6 +222,9 @@ $block: #{$fd-namespace}-popover;
     width: 100%;
   }
 
+  /** NGX Popover Component.
+    * TODO: Refactor to use default one
+    */
   &__popper {
     @include fd-reset();
 
@@ -326,7 +294,7 @@ $block: #{$fd-namespace}-popover;
         border-top-color: $fd-popover-arrow-color;
 
         &::after {
-          bottom: 1px;
+          bottom: 0.0625rem;
           border-width: $fd-popover-arrow-height $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half;
           border-top-color: $fd-popover-background-color;
         }
@@ -338,7 +306,7 @@ $block: #{$fd-namespace}-popover;
         border-bottom-color: $fd-popover-arrow-color;
 
         &::after {
-          top: 1px;
+          top: 0.0625rem;
           border-width: 0 $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half;
           border-bottom-color: $fd-popover-background-color;
         }
@@ -350,7 +318,7 @@ $block: #{$fd-namespace}-popover;
         border-left-color: $fd-popover-arrow-color;
 
         &::after {
-          right: 1px;
+          right: 0.0625rem;
           border-width: $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half $fd-popover-arrow-height;
           border-left-color: $fd-popover-background-color;
         }
@@ -362,7 +330,7 @@ $block: #{$fd-namespace}-popover;
         border-right-color: $fd-popover-arrow-color;
 
         &::after {
-          left: 1px;
+          left: 0.0625rem;
           border-width: $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half 0;
           border-right-color: $fd-popover-background-color;
         }
