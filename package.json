@@ -99,7 +99,7 @@
     "github-assistant": "^0.3.3",
     "husky": "7.0.4",
     "jest": "^26.4.2",
-    "jest-axe": "^4.1.0",
+    "jest-axe": "^6.0.0",
     "klaw-sync": "^6.0.0",
     "line-reader": "^0.4.0",
     "lodash": "^4.17.21",
