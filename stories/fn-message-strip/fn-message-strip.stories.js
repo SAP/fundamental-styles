@@ -59,7 +59,7 @@ export const Primary = () => `${localStyles}
     </div>
     <div class="fn-message-strip fn-message-strip--dismissible fn-message-strip--error">
         <span class="sap-icon sap-icon--message-error fn-message-strip__icon"></span>
-        <span class="fn-message-strip__text">Error Message Strip Text</span>
+        <span class="fn-message-strip__text">Error Message Strip Very Long Text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
         <button class="fn-nested-button fn-message-strip__close-button" aria-label="close">
             <span class="sap-icon sap-icon--decline"></span>
         </button>
