@@ -1,4 +1,11 @@
 
+## 0.23.0-rc.8 (2022-03-14)
+
+
+### Bug Fixes
+
+* **fn:** update the position of the icon on multi line for Message Strip [ci visual] ([#3241](https://github.com/SAP/fundamental-styles/issues/3241)) ([4ca526f](https://github.com/SAP/fundamental-styles/commit/4ca526fa8cd0c1c49d7d6ee8efb00a11fee5e042))
+
 ## 0.23.0-rc.7 (2022-03-11)
 
 
