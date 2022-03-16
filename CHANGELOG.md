@@ -1,4 +1,11 @@
 
+### 0.23.1-rc.0 (2022-03-16)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Badge on Button [ci visual] ([#3246](https://github.com/SAP/fundamental-styles/issues/3246)) ([4b35ec2](https://github.com/SAP/fundamental-styles/commit/4b35ec2dfc2ebc4c43ac4e81d7bbd8e5a3727e32))
+
 ## [0.23.0](https://github.com/SAP/fundamental-styles/compare/v0.23.0-rc.9...v0.23.0) (2022-03-16)
 
 ## 0.23.0-rc.9 (2022-03-16)
