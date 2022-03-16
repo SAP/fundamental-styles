@@ -157,7 +157,7 @@
   --fdCalendar_Active_Item_Border: none;
 
   /** Badge on Button */
-  --fdBadgeButton_Border_Color: var(--sapContent_BadgeBackground);
+  --fdBadgeButton_Border_Color: var(--sapGroup_ContentBorderColor);
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
