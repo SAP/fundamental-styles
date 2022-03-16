@@ -1,30 +1,23 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-token {
   cursor: default;
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  background-color: #fafafa;
-  background-color: var(--sapButton_TokenBackground,#fafafa);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  background-color: var(--sapButton_TokenBackground);
+  color: var(--sapTextColor);
+  font-size: var(--sapFontSize);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -42,8 +35,7 @@
   text-overflow: clip;
   height: 1.625rem;
   line-height: 1.5rem;
-  border: .0625rem solid #c2c2c2;
-  border: var(--sapButton_BorderWidth,.0625rem) solid var(--sapButton_TokenBorderColor,#c2c2c2)
+  border: var(--sapButton_BorderWidth) solid var(--sapButton_TokenBorderColor)
 }
 .fd-token::after,
 .fd-token::before {
@@ -62,28 +54,21 @@
   min-width: auto;
   width: 100%;
   text-overflow: ellipsis;
-  text-shadow: none;
-  text-shadow: var(--fdToken_Text_Shadow,none)
+  text-shadow: var(--fdToken_Text_Shadow)
 }
 .fd-token__close {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
-  color: #0854a0;
-  color: var(--sapContent_IconColor,#0854a0);
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_IconColor);
   padding: .25rem .5rem;
   width: 1.75rem;
   min-width: 1.75rem;
@@ -125,10 +110,8 @@
   box-shadow: none
 }
 .fd-token:hover {
-  background-color: #ebf5fe;
-  background-color: var(--sapButton_Hover_Background,#ebf5fe);
-  border-color: #0854a0;
-  border-color: var(--sapButton_Hover_BorderColor,#0854a0)
+  background-color: var(--sapButton_Hover_Background);
+  border-color: var(--sapButton_Hover_BorderColor)
 }
 .fd-token.is-focus,
 .fd-token:focus {
@@ -136,12 +119,9 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-token--compact {
   padding: .1rem 0 .1rem .25rem;
@@ -162,22 +142,16 @@
   padding-right: .25rem
 }
 .fd-token--selected {
-  color: #fff;
-  color: var(--sapButton_Selected_TextColor,#fff);
-  background-color: #0854a0;
-  background-color: var(--sapButton_Selected_Background,#0854a0);
-  border-color: #0854a0;
-  border-color: var(--sapButton_Selected_BorderColor,#0854a0)
+  color: var(--sapButton_Selected_TextColor);
+  background-color: var(--sapButton_Selected_Background);
+  border-color: var(--sapButton_Selected_BorderColor)
 }
 .fd-token--selected .fd-token__close {
-  color: #fff;
-  color: var(--sapButton_Selected_TextColor,#fff)
+  color: var(--sapButton_Selected_TextColor)
 }
 .fd-token--selected:hover {
-  background-color: #095caf;
-  background-color: var(--sapButton_Selected_Hover_Background,#095caf);
-  border-color: #095caf;
-  border-color: var(--sapButton_Selected_Hover_BorderColor,#095caf)
+  background-color: var(--sapButton_Selected_Hover_Background);
+  border-color: var(--sapButton_Selected_Hover_BorderColor)
 }
 .fd-token--selected.is-focus,
 .fd-token--selected:focus {
@@ -185,18 +159,13 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-token--readonly {
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  color: var(--sapContent_LabelColor);
   padding: .25rem .375rem
 }
 .fd-token--readonly.fd-token--compact {

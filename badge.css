@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-badge {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -23,17 +19,13 @@
   text-overflow: ellipsis;
   height: 1rem;
   max-width: calc(100% - 1rem);
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  font-size: var(--sapFontSmallSize);
   line-height: normal;
   font-weight: 700;
-  background: #0854a0;
-  background: var(--sapHighlightColor,#0854a0);
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff);
+  background: var(--sapHighlightColor);
+  color: var(--sapContent_ContrastTextColor);
   padding: 0 .5rem;
-  border: .0625rem solid transparent;
-  border: .0625rem solid var(--fdBadge_Border_Color,transparent);
+  border: .0625rem solid var(--fdBadge_Border_Color);
   border-radius: .5rem;
   position: absolute;
   right: .5rem;

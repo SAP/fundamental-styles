@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-menu {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -31,14 +27,10 @@
 }
 .fd-menu__list,
 .fd-menu__sublist {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -55,12 +47,9 @@
   -ms-flex-direction: column;
   flex-direction: column;
   list-style: none;
-  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
-  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
-  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
-  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  -webkit-box-shadow: var(--sapContent_Shadow1);
+  box-shadow: var(--sapContent_Shadow1);
+  border-radius: var(--sapElement_BorderCornerRadius)
 }
 .fd-menu__list::after,
 .fd-menu__list::before,
@@ -76,14 +65,10 @@
   box-shadow: none
 }
 .fd-menu__sublist {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -122,14 +107,10 @@
   flex-wrap: nowrap
 }
 .fd-menu__separator {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -138,8 +119,7 @@
   border: 0;
   width: 100%;
   height: .0625rem;
-  background-color: #d9d9d9;
-  background-color: var(--sapGroup_ContentBorderColor,#d9d9d9)
+  background-color: var(--sapGroup_ContentBorderColor)
 }
 .fd-menu__separator::after,
 .fd-menu__separator::before {
@@ -148,14 +128,10 @@
   font-size: inherit
 }
 .fd-menu__item {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -164,8 +140,7 @@
   border: 0;
   position: relative;
   border-radius: 0;
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff)
+  background-color: var(--sapList_Background)
 }
 .fd-menu__item::after,
 .fd-menu__item::before {
@@ -174,26 +149,18 @@
   font-size: inherit
 }
 .fd-menu__item:first-child {
-  border-top-right-radius: .25rem;
-  border-top-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
-  border-top-left-radius: .25rem;
-  border-top-left-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  border-top-right-radius: var(--sapElement_BorderCornerRadius);
+  border-top-left-radius: var(--sapElement_BorderCornerRadius)
 }
 .fd-menu__item:last-child {
-  border-bottom-right-radius: .25rem;
-  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
-  border-bottom-left-radius: .25rem;
-  border-bottom-left-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
+  border-bottom-left-radius: var(--sapElement_BorderCornerRadius)
 }
 .fd-menu__link {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -222,24 +189,18 @@
 .fd-menu__link.is-focus,
 .fd-menu__link:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-menu__link.is-hover,
 .fd-menu__link:hover {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
+  background-color: var(--sapList_Hover_Background)
 }
 .fd-menu__link.is-selected,
 .fd-menu__link[aria-selected=true] {
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: .0625rem solid var(--sapList_SelectionBorderColor,#0854a0);
-  background-color: #e5f0fa;
-  background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa)
+  border-bottom: .0625rem solid var(--sapList_SelectionBorderColor);
+  background-color: var(--sapList_SelectionBackgroundColor)
 }
 .fd-menu__link.is-selected .fd-menu__addon-after,
 .fd-menu__link.is-selected .fd-menu__addon-before,
@@ -247,27 +208,22 @@
 .fd-menu__link[aria-selected=true] .fd-menu__addon-after,
 .fd-menu__link[aria-selected=true] .fd-menu__addon-before,
 .fd-menu__link[aria-selected=true] .fd-menu__shortcut {
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70)
+  color: var(--sapContent_NonInteractiveIconColor)
 }
 .fd-menu__link.is-selected.is-hover:not(:active):not(.is-active),
 .fd-menu__link.is-selected:hover:not(:active):not(.is-active),
 .fd-menu__link[aria-selected=true].is-hover:not(:active):not(.is-active),
 .fd-menu__link[aria-selected=true]:hover:not(:active):not(.is-active) {
-  background-color: #d8e9f8;
-  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background-color: var(--sapList_Hover_SelectionBackground)
 }
 .fd-menu__link.is-active,
 .fd-menu__link:active {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
+  color: var(--sapList_Active_TextColor);
+  background-color: var(--sapList_Active_Background)
 }
 .fd-menu__link.is-active .fd-menu__title,
 .fd-menu__link:active .fd-menu__title {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor)
 }
 .fd-menu__link.is-active .fd-menu__addon-after,
 .fd-menu__link.is-active .fd-menu__addon-before,
@@ -275,30 +231,25 @@
 .fd-menu__link:active .fd-menu__addon-after,
 .fd-menu__link:active .fd-menu__addon-before,
 .fd-menu__link:active .fd-menu__shortcut {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor)
 }
 .fd-menu__link.is-active.is-focus,
 .fd-menu__link.is-active:focus,
 .fd-menu__link:active.is-focus,
 .fd-menu__link:active:focus {
   z-index: 5;
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-menu__link.is-disabled,
 .fd-menu__link:disabled,
 .fd-menu__link[aria-disabled=true] {
   pointer-events: none;
-  opacity: .4;
-  opacity: var(--sapContent_DisabledOpacity,.4)
+  opacity: var(--sapContent_DisabledOpacity)
 }
 .fd-menu__link.has-child.is-expanded:not(:active):not(.is-active),
 .fd-menu__link.has-child[aria-expanded=true]:not(:active):not(.is-active) {
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: .0625rem solid var(--sapList_SelectionBorderColor,#0854a0);
-  background-color: #e5f0fa;
-  background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa)
+  border-bottom: .0625rem solid var(--sapList_SelectionBorderColor);
+  background-color: var(--sapList_SelectionBackgroundColor)
 }
 .fd-menu__link.has-child.is-expanded:not(:active):not(.is-active) .fd-menu__addon-after,
 .fd-menu__link.has-child.is-expanded:not(:active):not(.is-active) .fd-menu__addon-before,
@@ -306,25 +257,19 @@
 .fd-menu__link.has-child[aria-expanded=true]:not(:active):not(.is-active) .fd-menu__addon-after,
 .fd-menu__link.has-child[aria-expanded=true]:not(:active):not(.is-active) .fd-menu__addon-before,
 .fd-menu__link.has-child[aria-expanded=true]:not(:active):not(.is-active) .fd-menu__shortcut {
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70)
+  color: var(--sapContent_NonInteractiveIconColor)
 }
 .fd-menu__link.has-child.is-expanded:not(:active):not(.is-active).is-hover:not(:active):not(.is-active),
 .fd-menu__link.has-child.is-expanded:not(:active):not(.is-active):hover:not(:active):not(.is-active),
 .fd-menu__link.has-child[aria-expanded=true]:not(:active):not(.is-active).is-hover:not(:active):not(.is-active),
 .fd-menu__link.has-child[aria-expanded=true]:not(:active):not(.is-active):hover:not(:active):not(.is-active) {
-  background-color: #d8e9f8;
-  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background-color: var(--sapList_Hover_SelectionBackground)
 }
 .fd-menu__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -335,14 +280,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  color: #32363a;
-  color: var(--sapList_TextColor,#32363a);
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  text-shadow: none;
-  text-shadow: var(--fdMenu_Text_Shadow,none)
+  color: var(--sapList_TextColor);
+  font-size: var(--sapFontSize);
+  font-family: var(--sapFontFamily);
+  text-shadow: var(--fdMenu_Text_Shadow)
 }
 .fd-menu__title::after,
 .fd-menu__title::before {
@@ -352,14 +293,10 @@
 }
 .fd-menu__addon-after,
 .fd-menu__addon-before {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -375,16 +312,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  color: var(--sapContent_NonInteractiveIconColor);
   width: 2.25rem;
   min-width: 2.25rem;
   height: 1.25rem;
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem);
+  font-size: var(--sapFontLargeSize);
   background-color: transparent;
-  text-shadow: none;
-  text-shadow: var(--fdMenu_Text_Shadow,none)
+  text-shadow: var(--fdMenu_Text_Shadow)
 }
 .fd-menu__addon-after::after,
 .fd-menu__addon-after::before,
@@ -419,8 +353,7 @@
   margin: 0 0 0 -.75rem
 }
 .fd-menu__addon-after--submenu {
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem)
+  font-size: var(--sapFontSmallSize)
 }
 .fd-menu__addon-after--submenu::before {
   font-family: SAP-icons;
@@ -445,14 +378,10 @@
   content: "\e067"
 }
 .fd-menu__shortcut {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -468,12 +397,9 @@
   -ms-flex-negative: 0;
   flex-shrink: 0;
   font-weight: 400;
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-family: var(--sapFontFamily);
+  color: var(--sapContent_NonInteractiveIconColor);
+  font-size: var(--sapFontSize);
   padding-left: 1rem
 }
 .fd-menu__shortcut::after,
@@ -489,12 +415,9 @@
 }
 .fd-menu--overflow {
   overflow-y: scroll;
-  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
-  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
-  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
-  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem)
+  -webkit-box-shadow: var(--sapContent_Shadow1);
+  box-shadow: var(--sapContent_Shadow1);
+  border-radius: var(--sapElement_BorderCornerRadius)
 }
 .fd-menu--full-width {
   max-width: 100%

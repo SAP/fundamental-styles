@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-micro-process-flow {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -37,14 +33,10 @@
   border-color: transparent
 }
 .fd-micro-process-flow__wrapper {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -70,14 +62,10 @@
   font-size: inherit
 }
 .fd-micro-process-flow__overflow-container {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -102,14 +90,10 @@
 }
 .fd-micro-process-flow__link-next,
 .fd-micro-process-flow__link-previous {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -127,12 +111,9 @@
   align-items: center;
   cursor: pointer;
   padding: 0 .313rem;
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  color: #32363a;
-  color: var(--sapGroup_TitleTextColor,#32363a);
-  text-shadow: 0 0 .125rem #fff;
-  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff)
+  font-size: var(--sapFontSize);
+  color: var(--sapGroup_TitleTextColor);
+  text-shadow: var(--sapContent_TextShadow)
 }
 .fd-micro-process-flow__link-next::after,
 .fd-micro-process-flow__link-next::before,
@@ -147,12 +128,9 @@
 .fd-micro-process-flow__link-previous.is-focus,
 .fd-micro-process-flow__link-previous:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-micro-process-flow__link-next::after,
 .fd-micro-process-flow__link-next::before,
@@ -172,8 +150,7 @@
   font-family: SAP-icons;
   text-decoration: inherit;
   text-rendering: optimizeLegibility;
-  color: #0854a0;
-  color: var(--sapButton_TextColor,#0854a0)
+  color: var(--sapButton_TextColor)
 }
 .fd-micro-process-flow__link-next.is-hover::after,
 .fd-micro-process-flow__link-next.is-hover::before,
@@ -183,8 +160,7 @@
 .fd-micro-process-flow__link-previous.is-hover::before,
 .fd-micro-process-flow__link-previous:hover::after,
 .fd-micro-process-flow__link-previous:hover::before {
-  color: #0854a0;
-  color: var(--sapButton_Hover_TextColor,#0854a0)
+  color: var(--sapButton_Hover_TextColor)
 }
 .fd-micro-process-flow__link-previous::before {
   content: "\e067"
@@ -222,14 +198,10 @@
   content: "\e067"
 }
 .fd-micro-process-flow .fd-micro-process-flow__item {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -259,100 +231,72 @@
   font-size: inherit
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container {
-  border-color: #107e3e;
-  border-color: var(--sapPositiveElementColor,#107e3e);
-  background-color: #107e3e;
-  background-color: var(--sapPositiveElementColor,#107e3e)
+  border-color: var(--sapPositiveElementColor);
+  background-color: var(--sapPositiveElementColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: #fff;
-  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
+  color: var(--fdMicro_Process_Flow_Icon_Color)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container:hover {
-  border-color: #0c5e2e;
-  border-color: var(--sapButton_Success_Hover_Background,#0c5e2e);
-  background-color: #0c5e2e;
-  background-color: var(--sapButton_Success_Hover_Background,#0c5e2e)
+  border-color: var(--sapButton_Success_Hover_Background);
+  background-color: var(--sapButton_Success_Hover_Background)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__item--positive .fd-micro-process-flow__icon-container:active {
-  border-color: #0854a0;
-  border-color: var(--sapHighlightColor,#0854a0);
-  background-color: #0854a0;
-  background-color: var(--sapHighlightColor,#0854a0)
+  border-color: var(--sapHighlightColor);
+  background-color: var(--sapHighlightColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container {
-  border-color: #0a6ed1;
-  border-color: var(--sapInformativeElementColor,#0a6ed1);
-  background-color: #0a6ed1;
-  background-color: var(--sapInformativeElementColor,#0a6ed1)
+  border-color: var(--sapInformativeElementColor);
+  background-color: var(--sapInformativeElementColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: #fff;
-  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
+  color: var(--fdMicro_Process_Flow_Icon_Color)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container:hover {
-  border-color: #0961b9;
-  border-color: var(--sapButton_Information_Hover_Background,#0961b9);
-  background-color: #0961b9;
-  background-color: var(--sapButton_Information_Hover_Background,#0961b9)
+  border-color: var(--sapButton_Information_Hover_Background);
+  background-color: var(--sapButton_Information_Hover_Background)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__item--information .fd-micro-process-flow__icon-container:active {
-  border-color: #0854a0;
-  border-color: var(--sapHighlightColor,#0854a0);
-  background-color: #0854a0;
-  background-color: var(--sapHighlightColor,#0854a0)
+  border-color: var(--sapHighlightColor);
+  background-color: var(--sapHighlightColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container {
-  border-color: #b00;
-  border-color: var(--sapNegativeElementColor,#b00);
-  background-color: #b00;
-  background-color: var(--sapNegativeElementColor,#b00)
+  border-color: var(--sapNegativeElementColor);
+  background-color: var(--sapNegativeElementColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: #fff;
-  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
+  color: var(--fdMicro_Process_Flow_Icon_Color)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container:hover {
-  border-color: #970000;
-  border-color: var(--sapButton_Negative_Hover_Background,#970000);
-  background-color: #970000;
-  background-color: var(--sapButton_Negative_Hover_Background,#970000)
+  border-color: var(--sapButton_Negative_Hover_Background);
+  background-color: var(--sapButton_Negative_Hover_Background)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__item--negative .fd-micro-process-flow__icon-container:active {
-  border-color: #0854a0;
-  border-color: var(--sapHighlightColor,#0854a0);
-  background-color: #0854a0;
-  background-color: var(--sapHighlightColor,#0854a0)
+  border-color: var(--sapHighlightColor);
+  background-color: var(--sapHighlightColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container {
-  border-color: #df6e0c;
-  border-color: var(--sapCriticalElementColor,#df6e0c);
-  background-color: #df6e0c;
-  background-color: var(--sapCriticalElementColor,#df6e0c)
+  border-color: var(--sapCriticalElementColor);
+  background-color: var(--sapCriticalElementColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  color: #fff;
-  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
+  color: var(--fdMicro_Process_Flow_Icon_Color)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container.is-hover,
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container:hover {
-  border-color: #f3801c;
-  border-color: var(--sapButton_Critical_Hover_Background,#f3801c);
-  background-color: #f3801c;
-  background-color: var(--sapButton_Critical_Hover_Background,#f3801c)
+  border-color: var(--sapButton_Critical_Hover_Background);
+  background-color: var(--sapButton_Critical_Hover_Background)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__item--critical .fd-micro-process-flow__icon-container:active {
-  border-color: #0854a0;
-  border-color: var(--sapHighlightColor,#0854a0);
-  background-color: #0854a0;
-  background-color: var(--sapHighlightColor,#0854a0)
+  border-color: var(--sapHighlightColor);
+  background-color: var(--sapHighlightColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__item[dir=rtl],
 [dir=rtl] .fd-micro-process-flow .fd-micro-process-flow__item {
@@ -365,22 +309,15 @@
 .fd-micro-process-flow__focusable-item.is-focus,
 .fd-micro-process-flow__focusable-item:focus {
   outline-offset: .0625rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-micro-process-flow .fd-micro-process-flow__icon-container {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -397,12 +334,10 @@
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #f4f4f4;
-  background-color: var(--sapNeutralBackground,#f4f4f4);
+  background-color: var(--sapNeutralBackground);
   min-width: 1.875rem;
   min-height: 1.875rem;
-  border: .0625rem solid #6a6d70;
-  border: .0625rem solid var(--sapNeutralBorderColor,#6a6d70)
+  border: .0625rem solid var(--sapNeutralBorderColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__icon-container::after,
 .fd-micro-process-flow .fd-micro-process-flow__icon-container::before {
@@ -411,32 +346,23 @@
   font-size: inherit
 }
 .fd-micro-process-flow .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem);
-  color: #6a6d70;
-  color: var(--sapButton_Neutral_Background,#6a6d70)
+  font-size: var(--sapFontLargeSize);
+  color: var(--sapButton_Neutral_Background)
 }
 .fd-micro-process-flow .fd-micro-process-flow__icon-container.is-active,
 .fd-micro-process-flow .fd-micro-process-flow__icon-container:active {
-  border-color: #0854a0;
-  border-color: var(--sapHighlightColor,#0854a0);
-  background-color: #0854a0;
-  background-color: var(--sapHighlightColor,#0854a0)
+  border-color: var(--sapHighlightColor);
+  background-color: var(--sapHighlightColor)
 }
 .fd-micro-process-flow .fd-micro-process-flow__icon-container.is-active .fd-micro-process-flow__icon,
 .fd-micro-process-flow .fd-micro-process-flow__icon-container:active .fd-micro-process-flow__icon {
-  color: #fff;
-  color: var(--fdMicro_Process_Flow_Icon_Color,var(--sapContent_ContrastIconColor,#fff))
+  color: var(--fdMicro_Process_Flow_Icon_Color)
 }
 .fd-micro-process-flow__content {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -463,14 +389,10 @@
   font-size: inherit
 }
 .fd-micro-process-flow__connector {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -510,8 +432,7 @@
   width: 100%;
   display: block;
   position: absolute;
-  border-bottom: .0625rem solid #89919a;
-  border-bottom: .0625rem solid var(--sapContent_ForegroundBorderColor,#89919a)
+  border-bottom: .0625rem solid var(--sapContent_ForegroundBorderColor)
 }
 .fd-micro-process-flow__connector--intermediate::after {
   content: "";
@@ -520,8 +441,7 @@
   bottom: 0;
   display: block;
   position: absolute;
-  background: #b00;
-  background: var(--sapNegativeElementColor,#b00);
+  background: var(--sapNegativeElementColor);
   width: .25rem;
   margin-left: -.125rem
 }
@@ -540,8 +460,7 @@
   min-height: 1.375rem
 }
 .fd-micro-process-flow--compact .fd-micro-process-flow__icon-container .fd-micro-process-flow__icon {
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem)
+  font-size: var(--sapFontSmallSize)
 }
 .fd-micro-process-flow--compact .fd-micro-process-flow__connector {
   width: .625rem

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -11,70 +11,50 @@
   margin: .5rem 0
 }
 .fd-progress-indicator--informative .fd-progress-indicator__progress-bar {
-  background-color: #0a6ed1;
-  background-color: var(--fdProgress_Indicator_Background_Color_Informative,var(--sapInformativeElementColor,#0a6ed1))
+  background-color: var(--fdProgress_Indicator_Background_Color_Informative)
 }
 .fd-progress-indicator--informative .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: "";
-  content: var(--fdProgress_Icon_Informative, "");
-  margin-left: 0;
-  margin-left: var(--fdProgress_Icon_Offset_Left,0);
-  margin-right: 0;
-  margin-right: var(--fdProgress_Icon_Offset_Right,0)
+  content: var(--fdProgress_Icon_Informative);
+  margin-left: var(--fdProgress_Icon_Offset_Left);
+  margin-right: var(--fdProgress_Icon_Offset_Right)
 }
 .fd-progress-indicator--positive .fd-progress-indicator__progress-bar {
-  background-color: #107e3e;
-  background-color: var(--fdProgress_Indicator_Background_Color_Positive,var(--sapPositiveElementColor,#107e3e))
+  background-color: var(--fdProgress_Indicator_Background_Color_Positive)
 }
 .fd-progress-indicator--positive .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: "";
-  content: var(--fdProgress_Icon_Positive, "");
-  margin-left: 0;
-  margin-left: var(--fdProgress_Icon_Offset_Left,0);
-  margin-right: 0;
-  margin-right: var(--fdProgress_Icon_Offset_Right,0)
+  content: var(--fdProgress_Icon_Positive);
+  margin-left: var(--fdProgress_Icon_Offset_Left);
+  margin-right: var(--fdProgress_Icon_Offset_Right)
 }
 .fd-progress-indicator--negative .fd-progress-indicator__progress-bar {
-  background-color: #b00;
-  background-color: var(--fdProgress_Indicator_Background_Color_Negative,var(--sapNegativeElementColor,#b00))
+  background-color: var(--fdProgress_Indicator_Background_Color_Negative)
 }
 .fd-progress-indicator--negative .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: "";
-  content: var(--fdProgress_Icon_Negative, "");
-  margin-left: 0;
-  margin-left: var(--fdProgress_Icon_Offset_Left,0);
-  margin-right: 0;
-  margin-right: var(--fdProgress_Icon_Offset_Right,0)
+  content: var(--fdProgress_Icon_Negative);
+  margin-left: var(--fdProgress_Icon_Offset_Left);
+  margin-right: var(--fdProgress_Icon_Offset_Right)
 }
 .fd-progress-indicator--critical .fd-progress-indicator__progress-bar {
-  background-color: #df6e0c;
-  background-color: var(--fdProgress_Indicator_Background_Color_Critical,var(--sapCriticalElementColor,#df6e0c))
+  background-color: var(--fdProgress_Indicator_Background_Color_Critical)
 }
 .fd-progress-indicator--critical .fd-progress-indicator__label::before {
   vertical-align: middle;
   font-family: SAP-icons;
-  content: "";
-  content: var(--fdProgress_Icon_Critical, "");
-  margin-left: 0;
-  margin-left: var(--fdProgress_Icon_Offset_Left,0);
-  margin-right: 0;
-  margin-right: var(--fdProgress_Icon_Offset_Right,0)
+  content: var(--fdProgress_Icon_Critical);
+  margin-left: var(--fdProgress_Icon_Offset_Left);
+  margin-right: var(--fdProgress_Icon_Offset_Right)
 }
 .fd-progress-indicator .fd-progress-indicator__container {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -91,11 +71,9 @@
   min-width: 4rem;
   overflow: hidden;
   border-radius: .5rem;
-  background: #fff;
-  background: var(--sapField_Background,#fff);
+  background: var(--sapField_Background);
   height: 1rem;
-  border: .0625rem solid #89919a;
-  border: .0625rem solid var(--sapField_BorderColor,#89919a);
+  border: .0625rem solid var(--sapField_BorderColor);
   min-height: 1rem
 }
 .fd-progress-indicator .fd-progress-indicator__container::after,
@@ -105,14 +83,10 @@
   font-size: inherit
 }
 .fd-progress-indicator__progress-bar {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -133,10 +107,8 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
   height: 100%;
-  border-right: none;
-  border-right: var(--fdProgress_Indicator_Border_Right,none);
-  background: #6a6d70;
-  background: var(--fdProgress_Indicator_Background_Color_Neutral,var(--sapNeutralElementColor,#6a6d70))
+  border-right: var(--fdProgress_Indicator_Border_Right);
+  background: var(--fdProgress_Indicator_Background_Color_Neutral)
 }
 .fd-progress-indicator__progress-bar::after,
 .fd-progress-indicator__progress-bar::before {
@@ -145,24 +117,18 @@
   font-size: inherit
 }
 .fd-progress-indicator__progress-bar .fd-progress-indicator__label {
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff)
+  color: var(--sapContent_ContrastTextColor)
 }
 .fd-progress-indicator__progress-bar[dir=rtl],
 [dir=rtl] .fd-progress-indicator__progress-bar {
   border-right: none;
-  border-left: none;
-  border-left: var(--fdProgress_Indicator_Border_Right,none)
+  border-left: var(--fdProgress_Indicator_Border_Right)
 }
 .fd-progress-indicator__remaining {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -187,14 +153,10 @@
   font-size: inherit
 }
 .fd-progress-indicator__label {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -211,10 +173,8 @@
   -ms-user-select: none;
   user-select: none;
   line-height: normal;
-  color: #32363a;
-  color: var(--sapField_TextColor,#32363a);
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem)
+  color: var(--sapField_TextColor);
+  font-size: var(--sapFontSmallSize)
 }
 .fd-progress-indicator__label::after,
 .fd-progress-indicator__label::before {
@@ -223,14 +183,10 @@
   font-size: inherit
 }
 .fd-progress-indicator__overflow {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -263,14 +219,10 @@
   padding-left: 0
 }
 .fd-progress-indicator__overflow-close {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -300,14 +252,11 @@
 .fd-progress-indicator__overflow-close.is-focus,
 .fd-progress-indicator__overflow-close:focus {
   z-index: 5;
-  outline: .0625rem dotted #000;
-  outline: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000)
+  outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor)
 }
 .fd-progress-indicator__overflow-close [class*=sap-icon] {
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
-  color: #0854a0;
-  color: var(--sapContent_IconColor,#0854a0)
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_IconColor)
 }
 .fd-progress-indicator--mobile {
   margin: .875rem 0

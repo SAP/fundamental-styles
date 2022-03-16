@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -8,14 +8,10 @@
 .fd-panel__expand,
 .fd-panel__header,
 .fd-panel__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -41,10 +37,8 @@
   height: 2.75rem;
   min-height: 2.75rem;
   padding-right: .5rem;
-  background-color: transparent;
-  background-color: var(--sapGroup_TitleBackground,transparent);
-  border-bottom: solid .0625rem #d9d9d9;
-  border-bottom: solid .0625rem var(--sapGroup_TitleBorderColor,#d9d9d9);
+  background-color: var(--sapGroup_TitleBackground);
+  border-bottom: solid .0625rem var(--sapGroup_TitleBorderColor);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,12 +47,9 @@
   align-items: center
 }
 .fd-panel__title {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontHeaderFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  color: #32363a;
-  color: var(--sapGroup_TitleTextColor,#32363a);
-  font-size: 1.125rem;
-  font-size: var(--sapFontHeader4Size,1.125rem);
+  font-family: var(--sapFontHeaderFamily);
+  color: var(--sapGroup_TitleTextColor);
+  font-size: var(--sapFontHeader4Size);
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1
@@ -66,8 +57,7 @@
 .fd-panel__content {
   padding: .625rem 1rem 1.375rem 1rem;
   overflow: auto;
-  border-bottom: solid .0625rem #d9d9d9;
-  border-bottom: solid .0625rem var(--sapGroup_TitleBorderColor,#d9d9d9)
+  border-bottom: solid .0625rem var(--sapGroup_TitleBorderColor)
 }
 .fd-panel__content[aria-hidden=true] {
   display: none

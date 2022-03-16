@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -14,19 +14,19 @@
   padding: 0;
   margin: 0;
   border: 0;
-  padding-left: .5rem;
-  padding-right: .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: .1875rem;
+  padding-bottom: .1875rem;
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  min-height: 1.75rem;
+  min-height: 1.875rem;
   background: #d1efff;
   border-radius: .25rem
 }
@@ -36,12 +36,21 @@
   box-sizing: inherit;
   font-size: inherit
 }
-.fn-message-strip--dismissible {
+.fn-message-strip--dismissible .fn-message-strip__text {
+  padding-left: 2rem;
+  padding-right: 1.75rem
+}
+.fn-message-strip--dismissible .fn-message-strip__text[dir=rtl],
+[dir=rtl] .fn-message-strip--dismissible .fn-message-strip__text {
+  padding-right: 2rem;
+  padding-left: 1.75rem
+}
+.fn-message-strip--dismissible .fn-message-strip__text:first-child {
   padding-left: .5rem;
   padding-right: 1.75rem
 }
-.fn-message-strip--dismissible[dir=rtl],
-[dir=rtl] .fn-message-strip--dismissible {
+.fn-message-strip--dismissible .fn-message-strip__text:first-child[dir=rtl],
+[dir=rtl] .fn-message-strip--dismissible .fn-message-strip__text:first-child {
   padding-right: .5rem;
   padding-left: 1.75rem
 }
@@ -56,7 +65,10 @@
   padding: 0;
   margin: 0;
   border: 0;
+  padding-left: 2rem;
+  padding-right: .5rem;
   max-width: 100%;
+  line-height: 1.5rem;
   color: #223548
 }
 .fn-message-strip__text::after,
@@ -65,10 +77,19 @@
   box-sizing: inherit;
   font-size: inherit
 }
+.fn-message-strip__text[dir=rtl],
+[dir=rtl] .fn-message-strip__text {
+  padding-right: 2rem;
+  padding-left: .5rem
+}
 .fn-message-strip__text--truncate {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
+}
+.fn-message-strip__text:first-child {
+  padding-left: .5rem;
+  padding-right: .5rem
 }
 .fn-message-strip .fn-message-strip__icon {
   display: -webkit-box;
@@ -80,23 +101,26 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: .375rem;
+  left: .5rem;
   width: 1.125rem;
   height: 1.125rem;
   min-width: 1.125rem;
   min-height: 1.125rem;
+  top: .375rem;
+  position: absolute;
   font-size: .9375rem
 }
 .fn-message-strip .fn-message-strip__icon[dir=rtl],
 [dir=rtl] .fn-message-strip .fn-message-strip__icon {
-  margin-right: 0;
-  margin-left: .375rem
+  left: auto;
+  right: .5rem
 }
 .fn-message-strip .fn-message-strip__icon::before {
   color: #0070f2
 }
 .fn-message-strip .fn-message-strip__close-button {
   right: .25rem;
+  top: .375rem;
   position: absolute
 }
 .fn-message-strip .fn-message-strip__close-button[dir=rtl],

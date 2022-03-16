@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -7,14 +7,10 @@
 .fd-form-label
 */
 .fd-form-label {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -29,10 +25,8 @@
   width: fit-content;
   position: relative;
   max-width: 100%;
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
   margin-right: .5rem;
   cursor: text;
   -ms-flex-item-align: start;
@@ -54,8 +48,7 @@
 }
 .fd-form-label--unit-description {
   padding: 0 0 0 .25rem;
-  color: #32363a;
-  color: var(--sapField_TextColor,#32363a);
+  color: var(--sapField_TextColor);
   margin: 0
 }
 .fd-form-label--unit-description[dir=rtl],
@@ -70,11 +63,9 @@
 .fd-form-label--required::after,
 .fd-form-label[aria-required=true]::after {
   content: "*";
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-size: var(--sapFontSize);
   font-weight: 700;
-  color: #ce3b3b;
-  color: var(--sapField_RequiredColor,#ce3b3b);
+  color: var(--sapField_RequiredColor);
   position: absolute;
   right: 0;
   top: 0
@@ -98,8 +89,7 @@
 }
 .fd-form-label--colon::before {
   content: ":";
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-size: var(--sapFontSize);
   color: inherit;
   position: absolute;
   right: 0;

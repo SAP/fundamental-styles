@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-bar {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -19,12 +15,9 @@
   margin: 0;
   border: 0;
   height: 2.5rem;
-  background: #fff;
-  background: var(--sapPageHeader_Background,#fff);
-  -webkit-box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
-  -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
-  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
-  box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  background: var(--sapPageHeader_Background);
+  -webkit-box-shadow: var(--sapContent_HeaderShadow);
+  box-shadow: var(--sapContent_HeaderShadow);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,14 +39,10 @@
 .fd-bar__left,
 .fd-bar__middle,
 .fd-bar__right {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -97,14 +86,10 @@
   justify-content: flex-end
 }
 .fd-bar__element {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -162,29 +147,22 @@
 }
 .fd-bar--header {
   height: 2.5rem;
-  background: #fff;
-  background: var(--sapPageHeader_Background,#fff);
-  -webkit-box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
-  -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
-  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
-  box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  background: var(--sapPageHeader_Background);
+  -webkit-box-shadow: var(--sapContent_HeaderShadow);
+  box-shadow: var(--sapContent_HeaderShadow);
   z-index: 1
 }
 .fd-bar--subheader {
   height: 2.25rem;
-  background: #fff;
-  background: var(--sapPageHeader_Background,#fff);
-  -webkit-box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
-  -webkit-box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
-  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9;
-  box-shadow: var(--sapContent_HeaderShadow,0 0 .25rem 0 rgba(0,0,0,.15),inset 0 -.0625rem 0 0 #d9d9d9);
+  background: var(--sapPageHeader_Background);
+  -webkit-box-shadow: var(--sapContent_HeaderShadow);
+  box-shadow: var(--sapContent_HeaderShadow);
   padding-bottom: .25rem;
   z-index: 1
 }
 .fd-bar--header-with-subheader {
   height: 2.5rem;
-  background: #fff;
-  background: var(--sapPageHeader_Background,#fff);
+  background: var(--sapPageHeader_Background);
   -webkit-box-shadow: none;
   box-shadow: none;
   position: relative;
@@ -192,23 +170,17 @@
 }
 .fd-bar--footer {
   height: 2.5rem;
-  background: #fff;
-  background: var(--sapPageFooter_Background,#fff);
+  background: var(--sapPageFooter_Background);
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-top: .0625rem solid #d9d9d9;
-  border-top: .0625rem solid var(--sapPageFooter_BorderColor,#d9d9d9)
+  border-top: .0625rem solid var(--sapPageFooter_BorderColor)
 }
 .fd-bar--floating-footer {
   height: 2.5rem;
-  background: #fff;
-  background: var(--sapPageFooter_Background,#fff);
-  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
-  -webkit-box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
-  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3);
-  box-shadow: var(--sapContent_Shadow1,0 0 0 .0625rem rgba(0,0,0,.42),0 .125rem .5rem 0 rgba(0,0,0,.3));
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  background: var(--sapPageFooter_Background);
+  -webkit-box-shadow: var(--sapContent_Shadow1);
+  box-shadow: var(--sapContent_Shadow1);
+  border-radius: var(--sapElement_BorderCornerRadius);
   border: none;
   opacity: 1;
   z-index: 1000;

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -51,8 +51,7 @@
   min-height: auto
 }
 .fd-shell__header {
-  background-color: #354a5f;
-  background-color: var(--sapShellColor,#354a5f);
+  background-color: var(--sapShellColor);
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -101,8 +100,7 @@
   }
 }
 .fd-app__navigation {
-  background-color: #fff;
-  background-color: var(--sapGroup_ContentBackground,#fff);
+  background-color: var(--sapGroup_ContentBackground);
   height: 3.25rem;
   max-height: 3.25rem;
   display: -webkit-box;

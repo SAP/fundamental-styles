@@ -1,30 +1,23 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-notification {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff);
-  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1);
-  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1));
-  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1);
-  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1));
+  background-color: var(--sapList_Background);
+  -webkit-box-shadow: var(--sapContent_Shadow0);
+  box-shadow: var(--sapContent_Shadow0);
   border-radius: .25rem;
   margin-bottom: 1.25rem;
   width: 100%;
@@ -44,14 +37,10 @@
   padding-left: .5rem
 }
 .fd-notification__body {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -75,14 +64,10 @@
   padding-top: 1rem
 }
 .fd-notification__content {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -112,14 +97,10 @@
   margin-right: 0
 }
 .fd-notification .fd-notification__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -133,8 +114,7 @@
   white-space: normal;
   text-overflow: ellipsis;
   font-weight: var(--sapFontHeaderWeight);
-  font-size: .875rem;
-  font-size: var(--sapFontHeader6Size,.875rem);
+  font-size: var(--sapFontHeader6Size);
   max-height: 2.5rem;
   margin-bottom: .25rem
 }
@@ -148,14 +128,10 @@
   font-weight: 700
 }
 .fd-notification .fd-notification__paragraph {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -178,14 +154,10 @@
   font-size: inherit
 }
 .fd-notification .fd-notification__footer {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -213,14 +185,10 @@
   max-width: 100%
 }
 .fd-notification .fd-notification__separator {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -228,8 +196,7 @@
   margin: 0;
   border: 0;
   margin: 0 .5rem;
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem)
+  font-size: var(--sapFontSize)
 }
 .fd-notification .fd-notification__separator::after,
 .fd-notification .fd-notification__separator::before {
@@ -241,14 +208,10 @@
   content: "·"
 }
 .fd-notification__header {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -266,14 +229,10 @@
   font-size: inherit
 }
 .fd-notification__actions {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -314,14 +273,10 @@
   margin-right: .5rem
 }
 .fd-notification__limit {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -338,22 +293,17 @@
   font-size: inherit
 }
 .fd-notification__limit--title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: 1rem;
-  font-size: var(--sapFontHeader5Size,1rem)
+  font-size: var(--sapFontHeader5Size)
 }
 .fd-notification__limit--title::after,
 .fd-notification__limit--title::before {
@@ -362,14 +312,10 @@
   font-size: inherit
 }
 .fd-notification__limit--description {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -385,14 +331,10 @@
   font-size: inherit
 }
 .fd-notification__indicator {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -413,8 +355,7 @@
   padding-left: .5rem
 }
 .fd-notification__indicator--error {
-  color: #b00;
-  color: var(--sapErrorColor,#b00)
+  color: var(--sapErrorColor)
 }
 .fd-notification__indicator--error::before {
   font-family: SAP-icons;
@@ -427,8 +368,7 @@
   content: "\e0b1"
 }
 .fd-notification__indicator--success {
-  color: #107e3e;
-  color: var(--sapSuccessColor,#107e3e)
+  color: var(--sapSuccessColor)
 }
 .fd-notification__indicator--success::before {
   font-family: SAP-icons;
@@ -441,8 +381,7 @@
   content: "\e203"
 }
 .fd-notification__indicator--warning {
-  color: #df6e0c;
-  color: var(--sapWarningColor,#df6e0c)
+  color: var(--sapWarningColor)
 }
 .fd-notification__indicator--warning::before {
   font-family: SAP-icons;
@@ -455,8 +394,7 @@
   content: "\e201"
 }
 .fd-notification__indicator--information {
-  color: #0a6ed1;
-  color: var(--sapInformationColor,#0a6ed1)
+  color: var(--sapInformationColor)
 }
 .fd-notification__indicator--information::before {
   font-family: SAP-icons;
@@ -469,14 +407,10 @@
   content: "\e202"
 }
 .fd-notification--group {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -493,8 +427,7 @@
 }
 .fd-notification--group .fd-notification__body {
   padding: 1rem .5rem 1rem 1rem;
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-notification--group .fd-notification__body[dir=rtl],
 [dir=rtl] .fd-notification--group .fd-notification__body {
@@ -502,14 +435,10 @@
   padding-right: 1rem
 }
 .fd-notification--group .fd-notification__group-header {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -522,8 +451,7 @@
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   padding: .75rem .5rem .25rem 1rem
 }
 .fd-notification--group .fd-notification__group-header::after,

@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-object-attribute {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -21,8 +17,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  color: var(--sapContent_LabelColor);
   display: block
 }
 .fd-object-attribute::after,
@@ -34,18 +29,15 @@
 .fd-object-attribute--link {
   cursor: pointer;
   text-decoration: none;
-  color: #0a6ed1;
-  color: var(--sapLinkColor,#0a6ed1)
+  color: var(--sapLinkColor)
 }
 .fd-object-attribute--link:visited {
-  color: #0a6ed1;
-  color: var(--sapLink_Visited_Color,#0a6ed1)
+  color: var(--sapLink_Visited_Color)
 }
 .fd-object-attribute--link.is-hover,
 .fd-object-attribute--link:hover {
   text-decoration: underline;
-  color: #0854a0;
-  color: var(--sapLink_Hover_Color,#0854a0)
+  color: var(--sapLink_Hover_Color)
 }
 .fd-object-attribute--link.is-focus,
 .fd-object-attribute--link:focus {
@@ -54,17 +46,13 @@
 .fd-object-attribute--link.is-focus,
 .fd-object-attribute--link:focus {
   outline-offset: -.0625rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-object-attribute--link.is-disabled,
 .fd-object-attribute--link:disabled,
 .fd-object-attribute--link[aria-disabled=true] {
-  opacity: .4;
-  opacity: var(--sapContent_DisabledOpacity,.4);
+  opacity: var(--sapContent_DisabledOpacity);
   pointer-events: none
 }

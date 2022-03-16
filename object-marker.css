@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -7,14 +7,10 @@
 .fd-object-marker
 */
 .fd-object-marker {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -40,22 +36,17 @@
 .fd-object-marker--link {
   cursor: pointer;
   text-decoration: none;
-  color: #286eb4;
-  color: var(--sapContent_MarkerIconColor,#286eb4)
+  color: var(--sapContent_MarkerIconColor)
 }
 .fd-object-marker--link.is-focus,
 .fd-object-marker--link:focus {
   outline-offset: .0625rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-object-marker--link .fd-object-marker__text {
-  color: #286eb4;
-  color: var(--sapContent_MarkerIconColor,#286eb4)
+  color: var(--sapContent_MarkerIconColor)
 }
 .fd-object-marker--link:focus .fd-object-marker__text,
 .fd-object-marker--link:hover .fd-object-marker__text,
@@ -63,8 +54,7 @@
   text-decoration: underline
 }
 .fd-object-marker--link:hover .fd-object-marker__text {
-  color: #0854a0;
-  color: var(--sapContent_IconColor,#0854a0)
+  color: var(--sapContent_IconColor)
 }
 .fd-object-marker__icon [class*=sap-icon],
 .fd-object-marker__icon[class*=sap-icon] {
@@ -84,8 +74,7 @@
   align-items: center;
   font-size: 1rem;
   line-height: normal;
-  color: #286eb4;
-  color: var(--sapContent_MarkerIconColor,#286eb4);
+  color: var(--sapContent_MarkerIconColor);
   padding-right: .25rem
 }
 .fd-object-marker__icon [class*=sap-icon]:first-child:last-child,
@@ -108,14 +97,10 @@
   padding-left: 0
 }
 .fd-object-marker__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -129,8 +114,7 @@
   font-style: normal;
   line-height: normal;
   word-break: break-word;
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70)
+  color: var(--sapContent_LabelColor)
 }
 .fd-object-marker__text::after,
 .fd-object-marker__text::before {

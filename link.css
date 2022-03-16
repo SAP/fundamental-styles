@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -7,28 +7,20 @@
 .fd-link
 */
 .fd-link {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  color: #0a6ed1;
-  color: var(--sapLinkColor,#0a6ed1);
-  -webkit-text-decoration: none;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration,none);
-  text-decoration: none;
-  text-decoration: var(--fdLink_Text_Decoration,none);
-  text-shadow: 0 0 .125rem #fff;
-  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
+  color: var(--sapLinkColor);
+  -webkit-text-decoration: var(--fdLink_Text_Decoration);
+  text-decoration: var(--fdLink_Text_Decoration);
+  text-shadow: var(--sapContent_TextShadow);
   display: inline-block;
   -webkit-transition: all 125ms ease-in;
   transition: all 125ms ease-in;
@@ -44,17 +36,13 @@
   font-weight: 700
 }
 .fd-link:visited {
-  color: #0a6ed1;
-  color: var(--sapLink_Visited_Color,#0a6ed1)
+  color: var(--sapLink_Visited_Color)
 }
 .fd-link.is-hover,
 .fd-link:hover {
-  color: #0854a0;
-  color: var(--sapLink_Hover_Color,#0854a0);
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline)
+  color: var(--sapLink_Hover_Color);
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite)
 }
 .fd-link.is-focus,
 .fd-link:focus {
@@ -62,53 +50,39 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline-offset: -.0625rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite)
 }
 .fd-link.is-active,
 .fd-link:active {
-  color: #0a6ed1;
-  color: var(--sapLink_Active_Color,#0a6ed1);
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline)
+  color: var(--sapLink_Active_Color);
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite)
 }
 .fd-link--inverted {
-  color: #d3e8fd;
-  color: var(--sapLink_InvertedColor,#d3e8fd);
+  color: var(--sapLink_InvertedColor);
   text-shadow: none
 }
 .fd-link--inverted.is-hover,
 .fd-link--inverted:hover {
-  color: #d3e8fd;
-  color: var(--sapLink_InvertedColor,#d3e8fd)
+  color: var(--sapLink_InvertedColor)
 }
 .fd-link--inverted.is-focus,
 .fd-link--inverted:focus {
   z-index: 5;
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-link--subtle {
-  color: #074888;
-  color: var(--sapLink_SubtleColor,#074888)
+  color: var(--sapLink_SubtleColor)
 }
 .fd-link.is-disabled,
 .fd-link:disabled,
 .fd-link[aria-disabled=true] {
-  opacity: .4;
-  opacity: var(--sapContent_DisabledOpacity,.4);
-  color: #0a6ed1;
-  color: var(--sapLinkColor,#0a6ed1);
+  opacity: var(--sapContent_DisabledOpacity);
+  color: var(--sapLinkColor);
   pointer-events: none
 }
 .fd-link > img {
@@ -121,21 +95,16 @@
   font-size: inherit;
   border-radius: inherit;
   line-height: 1;
-  -webkit-text-decoration: none;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration,none);
-  text-decoration: none;
-  text-decoration: var(--fdLink_Text_Decoration,none)
+  -webkit-text-decoration: var(--fdLink_Text_Decoration);
+  text-decoration: var(--fdLink_Text_Decoration)
 }
 .fd-link.is-hover [class*=sap-icon],
 .fd-link.is-hover[class*=sap-icon],
 .fd-link:hover [class*=sap-icon],
 .fd-link:hover[class*=sap-icon] {
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  color: #0854a0;
-  color: var(--sapLink_Hover_Color,#0854a0)
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  color: var(--sapLink_Hover_Color)
 }
 .fd-link.is-focus,
 .fd-link:focus {
@@ -145,21 +114,15 @@
 .fd-link.is-focus[class*=sap-icon],
 .fd-link:focus [class*=sap-icon],
 .fd-link:focus[class*=sap-icon] {
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  color: #0a6ed1;
-  color: var(--sapLinkColor,#0a6ed1)
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  color: var(--sapLinkColor)
 }
 .fd-link.is-active [class*=sap-icon],
 .fd-link.is-active[class*=sap-icon],
 .fd-link:active [class*=sap-icon],
 .fd-link:active[class*=sap-icon] {
-  -webkit-text-decoration: underline;
-  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  text-decoration: underline;
-  text-decoration: var(--fdLink_Text_Decoration_Opposite,underline);
-  color: #0a6ed1;
-  color: var(--sapLink_Active_Color,#0a6ed1)
+  -webkit-text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  text-decoration: var(--fdLink_Text_Decoration_Opposite);
+  color: var(--sapLink_Active_Color)
 }

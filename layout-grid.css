@@ -1,19 +1,15 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-col,
 .fd-container,
 .fd-row {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -55,13 +51,16 @@
 }
 .fd-container.fd-container--no-gap .fd-row .fd-col,
 .fd-container.fd-container--no-vertical-gap .fd-row .fd-col {
-  padding-top: 0
+  padding-top: 0;
+  padding-bottom: 0
 }
 .fd-container[dir=rtl],
 [dir=rtl] .fd-container {
   direction: rtl
 }
 .fd-row {
+  margin-left: -.25rem;
+  margin-right: -.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,15 +70,11 @@
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   position: relative;
-  margin-left: -.25rem;
-  margin-right: -.25rem;
   min-width: calc(100% + .25rem * 2)
 }
-.fd-row:first-child {
-  margin-top: -.5rem
-}
 .fd-row .fd-col {
-  padding-top: .5rem
+  padding-top: .25rem;
+  padding-bottom: .25rem
 }
 .fd-col {
   padding: 0 .25rem;
@@ -95,8 +90,8 @@
 }
 .fd-col--offset-0[dir=rtl],
 [dir=rtl] .fd-col--offset-0 {
-  margin-left: 0;
-  margin-right: 0
+  margin-right: 0;
+  margin-left: 0
 }
 .fd-col--offset-after-0 {
   margin-right: 0
@@ -115,8 +110,8 @@
 }
 .fd-col--offset-1[dir=rtl],
 [dir=rtl] .fd-col--offset-1 {
-  margin-left: 0;
-  margin-right: 8.3333333333%
+  margin-right: 8.3333333333%;
+  margin-left: 0
 }
 .fd-col--offset-after-1 {
   margin-right: 8.3333333333%
@@ -135,8 +130,8 @@
 }
 .fd-col--offset-2[dir=rtl],
 [dir=rtl] .fd-col--offset-2 {
-  margin-left: 0;
-  margin-right: 16.6666666667%
+  margin-right: 16.6666666667%;
+  margin-left: 0
 }
 .fd-col--offset-after-2 {
   margin-right: 16.6666666667%
@@ -155,8 +150,8 @@
 }
 .fd-col--offset-3[dir=rtl],
 [dir=rtl] .fd-col--offset-3 {
-  margin-left: 0;
-  margin-right: 25%
+  margin-right: 25%;
+  margin-left: 0
 }
 .fd-col--offset-after-3 {
   margin-right: 25%
@@ -175,8 +170,8 @@
 }
 .fd-col--offset-4[dir=rtl],
 [dir=rtl] .fd-col--offset-4 {
-  margin-left: 0;
-  margin-right: 33.3333333333%
+  margin-right: 33.3333333333%;
+  margin-left: 0
 }
 .fd-col--offset-after-4 {
   margin-right: 33.3333333333%
@@ -195,8 +190,8 @@
 }
 .fd-col--offset-5[dir=rtl],
 [dir=rtl] .fd-col--offset-5 {
-  margin-left: 0;
-  margin-right: 41.6666666667%
+  margin-right: 41.6666666667%;
+  margin-left: 0
 }
 .fd-col--offset-after-5 {
   margin-right: 41.6666666667%
@@ -215,8 +210,8 @@
 }
 .fd-col--offset-6[dir=rtl],
 [dir=rtl] .fd-col--offset-6 {
-  margin-left: 0;
-  margin-right: 50%
+  margin-right: 50%;
+  margin-left: 0
 }
 .fd-col--offset-after-6 {
   margin-right: 50%
@@ -235,8 +230,8 @@
 }
 .fd-col--offset-7[dir=rtl],
 [dir=rtl] .fd-col--offset-7 {
-  margin-left: 0;
-  margin-right: 58.3333333333%
+  margin-right: 58.3333333333%;
+  margin-left: 0
 }
 .fd-col--offset-after-7 {
   margin-right: 58.3333333333%
@@ -255,8 +250,8 @@
 }
 .fd-col--offset-8[dir=rtl],
 [dir=rtl] .fd-col--offset-8 {
-  margin-left: 0;
-  margin-right: 66.6666666667%
+  margin-right: 66.6666666667%;
+  margin-left: 0
 }
 .fd-col--offset-after-8 {
   margin-right: 66.6666666667%
@@ -275,8 +270,8 @@
 }
 .fd-col--offset-9[dir=rtl],
 [dir=rtl] .fd-col--offset-9 {
-  margin-left: 0;
-  margin-right: 75%
+  margin-right: 75%;
+  margin-left: 0
 }
 .fd-col--offset-after-9 {
   margin-right: 75%
@@ -295,8 +290,8 @@
 }
 .fd-col--offset-10[dir=rtl],
 [dir=rtl] .fd-col--offset-10 {
-  margin-left: 0;
-  margin-right: 83.3333333333%
+  margin-right: 83.3333333333%;
+  margin-left: 0
 }
 .fd-col--offset-after-10 {
   margin-right: 83.3333333333%
@@ -315,8 +310,8 @@
 }
 .fd-col--offset-11[dir=rtl],
 [dir=rtl] .fd-col--offset-11 {
-  margin-left: 0;
-  margin-right: 91.6666666667%
+  margin-right: 91.6666666667%;
+  margin-left: 0
 }
 .fd-col--offset-after-11 {
   margin-right: 91.6666666667%
@@ -335,8 +330,8 @@
 }
 .fd-col--offset-12[dir=rtl],
 [dir=rtl] .fd-col--offset-12 {
-  margin-left: 0;
-  margin-right: 100%
+  margin-right: 100%;
+  margin-left: 0
 }
 .fd-col--offset-after-12 {
   margin-right: 100%
@@ -362,15 +357,13 @@
     padding: 0 .5rem
   }
   .fd-row {
-    min-width: calc(100% + .5rem * 2);
     margin-left: -.5rem;
-    margin-right: -.5rem
-  }
-  .fd-row:first-child {
-    margin-top: -1rem
+    margin-right: -.5rem;
+    min-width: calc(100% + .5rem * 2)
   }
   .fd-row .fd-col {
-    padding-top: 1rem
+    padding-top: .5rem;
+    padding-bottom: .5rem
   }
   .fd-col {
     padding: 0 .5rem
@@ -384,8 +377,8 @@
   }
   .fd-col-md--offset-0[dir=rtl],
   [dir=rtl] .fd-col-md--offset-0 {
-    margin-left: 0;
-    margin-right: 0
+    margin-right: 0;
+    margin-left: 0
   }
   .fd-col-md--offset-after-0 {
     margin-right: 0
@@ -404,8 +397,8 @@
   }
   .fd-col-md--offset-1[dir=rtl],
   [dir=rtl] .fd-col-md--offset-1 {
-    margin-left: 0;
-    margin-right: 8.3333333333%
+    margin-right: 8.3333333333%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-1 {
     margin-right: 8.3333333333%
@@ -424,8 +417,8 @@
   }
   .fd-col-md--offset-2[dir=rtl],
   [dir=rtl] .fd-col-md--offset-2 {
-    margin-left: 0;
-    margin-right: 16.6666666667%
+    margin-right: 16.6666666667%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-2 {
     margin-right: 16.6666666667%
@@ -444,8 +437,8 @@
   }
   .fd-col-md--offset-3[dir=rtl],
   [dir=rtl] .fd-col-md--offset-3 {
-    margin-left: 0;
-    margin-right: 25%
+    margin-right: 25%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-3 {
     margin-right: 25%
@@ -464,8 +457,8 @@
   }
   .fd-col-md--offset-4[dir=rtl],
   [dir=rtl] .fd-col-md--offset-4 {
-    margin-left: 0;
-    margin-right: 33.3333333333%
+    margin-right: 33.3333333333%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-4 {
     margin-right: 33.3333333333%
@@ -484,8 +477,8 @@
   }
   .fd-col-md--offset-5[dir=rtl],
   [dir=rtl] .fd-col-md--offset-5 {
-    margin-left: 0;
-    margin-right: 41.6666666667%
+    margin-right: 41.6666666667%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-5 {
     margin-right: 41.6666666667%
@@ -504,8 +497,8 @@
   }
   .fd-col-md--offset-6[dir=rtl],
   [dir=rtl] .fd-col-md--offset-6 {
-    margin-left: 0;
-    margin-right: 50%
+    margin-right: 50%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-6 {
     margin-right: 50%
@@ -524,8 +517,8 @@
   }
   .fd-col-md--offset-7[dir=rtl],
   [dir=rtl] .fd-col-md--offset-7 {
-    margin-left: 0;
-    margin-right: 58.3333333333%
+    margin-right: 58.3333333333%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-7 {
     margin-right: 58.3333333333%
@@ -544,8 +537,8 @@
   }
   .fd-col-md--offset-8[dir=rtl],
   [dir=rtl] .fd-col-md--offset-8 {
-    margin-left: 0;
-    margin-right: 66.6666666667%
+    margin-right: 66.6666666667%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-8 {
     margin-right: 66.6666666667%
@@ -564,8 +557,8 @@
   }
   .fd-col-md--offset-9[dir=rtl],
   [dir=rtl] .fd-col-md--offset-9 {
-    margin-left: 0;
-    margin-right: 75%
+    margin-right: 75%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-9 {
     margin-right: 75%
@@ -584,8 +577,8 @@
   }
   .fd-col-md--offset-10[dir=rtl],
   [dir=rtl] .fd-col-md--offset-10 {
-    margin-left: 0;
-    margin-right: 83.3333333333%
+    margin-right: 83.3333333333%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-10 {
     margin-right: 83.3333333333%
@@ -604,8 +597,8 @@
   }
   .fd-col-md--offset-11[dir=rtl],
   [dir=rtl] .fd-col-md--offset-11 {
-    margin-left: 0;
-    margin-right: 91.6666666667%
+    margin-right: 91.6666666667%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-11 {
     margin-right: 91.6666666667%
@@ -624,8 +617,8 @@
   }
   .fd-col-md--offset-12[dir=rtl],
   [dir=rtl] .fd-col-md--offset-12 {
-    margin-left: 0;
-    margin-right: 100%
+    margin-right: 100%;
+    margin-left: 0
   }
   .fd-col-md--offset-after-12 {
     margin-right: 100%
@@ -646,8 +639,8 @@
   }
   .fd-col-lg--offset-0[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-0 {
-    margin-left: 0;
-    margin-right: 0
+    margin-right: 0;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-0 {
     margin-right: 0
@@ -666,8 +659,8 @@
   }
   .fd-col-lg--offset-1[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-1 {
-    margin-left: 0;
-    margin-right: 8.3333333333%
+    margin-right: 8.3333333333%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-1 {
     margin-right: 8.3333333333%
@@ -686,8 +679,8 @@
   }
   .fd-col-lg--offset-2[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-2 {
-    margin-left: 0;
-    margin-right: 16.6666666667%
+    margin-right: 16.6666666667%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-2 {
     margin-right: 16.6666666667%
@@ -706,8 +699,8 @@
   }
   .fd-col-lg--offset-3[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-3 {
-    margin-left: 0;
-    margin-right: 25%
+    margin-right: 25%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-3 {
     margin-right: 25%
@@ -726,8 +719,8 @@
   }
   .fd-col-lg--offset-4[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-4 {
-    margin-left: 0;
-    margin-right: 33.3333333333%
+    margin-right: 33.3333333333%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-4 {
     margin-right: 33.3333333333%
@@ -746,8 +739,8 @@
   }
   .fd-col-lg--offset-5[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-5 {
-    margin-left: 0;
-    margin-right: 41.6666666667%
+    margin-right: 41.6666666667%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-5 {
     margin-right: 41.6666666667%
@@ -766,8 +759,8 @@
   }
   .fd-col-lg--offset-6[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-6 {
-    margin-left: 0;
-    margin-right: 50%
+    margin-right: 50%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-6 {
     margin-right: 50%
@@ -786,8 +779,8 @@
   }
   .fd-col-lg--offset-7[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-7 {
-    margin-left: 0;
-    margin-right: 58.3333333333%
+    margin-right: 58.3333333333%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-7 {
     margin-right: 58.3333333333%
@@ -806,8 +799,8 @@
   }
   .fd-col-lg--offset-8[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-8 {
-    margin-left: 0;
-    margin-right: 66.6666666667%
+    margin-right: 66.6666666667%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-8 {
     margin-right: 66.6666666667%
@@ -826,8 +819,8 @@
   }
   .fd-col-lg--offset-9[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-9 {
-    margin-left: 0;
-    margin-right: 75%
+    margin-right: 75%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-9 {
     margin-right: 75%
@@ -846,8 +839,8 @@
   }
   .fd-col-lg--offset-10[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-10 {
-    margin-left: 0;
-    margin-right: 83.3333333333%
+    margin-right: 83.3333333333%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-10 {
     margin-right: 83.3333333333%
@@ -866,8 +859,8 @@
   }
   .fd-col-lg--offset-11[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-11 {
-    margin-left: 0;
-    margin-right: 91.6666666667%
+    margin-right: 91.6666666667%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-11 {
     margin-right: 91.6666666667%
@@ -886,8 +879,8 @@
   }
   .fd-col-lg--offset-12[dir=rtl],
   [dir=rtl] .fd-col-lg--offset-12 {
-    margin-left: 0;
-    margin-right: 100%
+    margin-right: 100%;
+    margin-left: 0
   }
   .fd-col-lg--offset-after-12 {
     margin-right: 100%
@@ -908,8 +901,8 @@
   }
   .fd-col-xl--offset-0[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-0 {
-    margin-left: 0;
-    margin-right: 0
+    margin-right: 0;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-0 {
     margin-right: 0
@@ -928,8 +921,8 @@
   }
   .fd-col-xl--offset-1[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-1 {
-    margin-left: 0;
-    margin-right: 8.3333333333%
+    margin-right: 8.3333333333%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-1 {
     margin-right: 8.3333333333%
@@ -948,8 +941,8 @@
   }
   .fd-col-xl--offset-2[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-2 {
-    margin-left: 0;
-    margin-right: 16.6666666667%
+    margin-right: 16.6666666667%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-2 {
     margin-right: 16.6666666667%
@@ -968,8 +961,8 @@
   }
   .fd-col-xl--offset-3[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-3 {
-    margin-left: 0;
-    margin-right: 25%
+    margin-right: 25%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-3 {
     margin-right: 25%
@@ -988,8 +981,8 @@
   }
   .fd-col-xl--offset-4[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-4 {
-    margin-left: 0;
-    margin-right: 33.3333333333%
+    margin-right: 33.3333333333%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-4 {
     margin-right: 33.3333333333%
@@ -1008,8 +1001,8 @@
   }
   .fd-col-xl--offset-5[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-5 {
-    margin-left: 0;
-    margin-right: 41.6666666667%
+    margin-right: 41.6666666667%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-5 {
     margin-right: 41.6666666667%
@@ -1028,8 +1021,8 @@
   }
   .fd-col-xl--offset-6[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-6 {
-    margin-left: 0;
-    margin-right: 50%
+    margin-right: 50%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-6 {
     margin-right: 50%
@@ -1048,8 +1041,8 @@
   }
   .fd-col-xl--offset-7[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-7 {
-    margin-left: 0;
-    margin-right: 58.3333333333%
+    margin-right: 58.3333333333%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-7 {
     margin-right: 58.3333333333%
@@ -1068,8 +1061,8 @@
   }
   .fd-col-xl--offset-8[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-8 {
-    margin-left: 0;
-    margin-right: 66.6666666667%
+    margin-right: 66.6666666667%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-8 {
     margin-right: 66.6666666667%
@@ -1088,8 +1081,8 @@
   }
   .fd-col-xl--offset-9[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-9 {
-    margin-left: 0;
-    margin-right: 75%
+    margin-right: 75%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-9 {
     margin-right: 75%
@@ -1108,8 +1101,8 @@
   }
   .fd-col-xl--offset-10[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-10 {
-    margin-left: 0;
-    margin-right: 83.3333333333%
+    margin-right: 83.3333333333%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-10 {
     margin-right: 83.3333333333%
@@ -1128,8 +1121,8 @@
   }
   .fd-col-xl--offset-11[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-11 {
-    margin-left: 0;
-    margin-right: 91.6666666667%
+    margin-right: 91.6666666667%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-11 {
     margin-right: 91.6666666667%
@@ -1148,8 +1141,8 @@
   }
   .fd-col-xl--offset-12[dir=rtl],
   [dir=rtl] .fd-col-xl--offset-12 {
-    margin-left: 0;
-    margin-right: 100%
+    margin-right: 100%;
+    margin-left: 0
   }
   .fd-col-xl--offset-after-12 {
     margin-right: 100%

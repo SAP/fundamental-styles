@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -23,14 +23,10 @@
 .fd-table__header,
 .fd-table__row,
 .fd-table__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -72,56 +68,43 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem)
+  color: var(--sapContent_NonInteractiveIconColor);
+  font-size: var(--sapFontSmallSize)
 }
 .fd-table__icon--navigation [class*=sap-icon],
 .fd-table__icon--navigation[class*=sap-icon] {
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  font-size: var(--sapFontSmallSize);
   width: 2rem;
   min-width: 2rem;
   height: 100%
 }
 .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
 .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
-  border-right: .0625rem solid #8c8c8c;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8c8c8c)
+  border-right: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor)
 }
 .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
 .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last[dir=rtl],
 [dir=rtl] .fd-table__body .fd-table__cell--fixed.fd-table__cell--fixed-last,
 [dir=rtl] .fd-table__header .fd-table__cell--fixed.fd-table__cell--fixed-last {
-  border-right: .0625rem solid #e5e5e5;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
-  border-left: .0625rem solid #8c8c8c;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_TableFixedBorderColor,#8c8c8c)
+  border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-left: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor)
 }
 .fd-table__header {
-  border-top: .0625rem solid #e5e5e5;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
-  border-left: .0625rem solid #e5e5e5;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
-  border-right: .0625rem solid #e5e5e5;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-table__header .fd-table__row {
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-table__header .fd-table__cell {
   height: 2.75rem;
-  background-color: #f2f2f2;
-  background-color: var(--sapList_HeaderBackground,#f2f2f2);
-  color: #32363a;
-  color: var(--sapList_HeaderTextColor,#32363a)
+  background-color: var(--sapList_HeaderBackground);
+  color: var(--sapList_HeaderTextColor)
 }
 .fd-table__header .fd-table__cell--fixed {
   margin-top: -.0625rem;
-  border-top: .0625rem solid #e5e5e5;
-  border-top: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   height: 2.8125rem
 }
 .fd-table__text {
@@ -136,30 +119,24 @@
 }
 .fd-table__cell {
   text-align: left;
-  text-shadow: 0 0 .125rem #fff;
-  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff);
+  text-shadow: var(--sapContent_TextShadow);
   height: 2.75rem;
   padding: 0 .5rem;
   color: inherit;
-  border-right: .0625rem solid #e5e5e5;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   outline: 0
 }
 .fd-table__cell--valid {
-  color: #107e3e;
-  color: var(--sapSuccessColor,#107e3e)
+  color: var(--sapSuccessColor)
 }
 .fd-table__cell--warning {
-  color: #df6e0c;
-  color: var(--sapWarningColor,#df6e0c)
+  color: var(--sapWarningColor)
 }
 .fd-table__cell--error {
-  color: #b00;
-  color: var(--sapErrorColor,#b00)
+  color: var(--sapErrorColor)
 }
 .fd-table__cell--information {
-  color: #0a6ed1;
-  color: var(--sapInformationColor,#0a6ed1)
+  color: var(--sapInformationColor)
 }
 .fd-table__cell--no-data {
   text-align: center
@@ -187,10 +164,8 @@
   left: 0;
   position: absolute;
   background-color: inherit;
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
-  border-left: .0625rem solid #e5e5e5;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   border-right: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,8 +176,7 @@
 }
 .fd-table__cell--fixed[dir=rtl],
 [dir=rtl] .fd-table__cell--fixed {
-  border-right: .0625rem solid #e5e5e5;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   border-left: none;
   left: auto;
   right: 0
@@ -212,33 +186,25 @@
   padding: 0
 }
 .fd-table__cell--status-indicator--valid {
-  background-color: #107e3e;
-  background-color: var(--sapSuccessBorderColor,#107e3e)
+  background-color: var(--sapSuccessBorderColor)
 }
 .fd-table__cell--status-indicator--warning {
-  background-color: #df6e0c;
-  background-color: var(--sapWarningBorderColor,#df6e0c)
+  background-color: var(--sapWarningBorderColor)
 }
 .fd-table__cell--status-indicator--error {
-  background-color: #b00;
-  background-color: var(--sapErrorBorderColor,#b00)
+  background-color: var(--sapErrorBorderColor)
 }
 .fd-table__cell--status-indicator--information {
-  background-color: #0a6ed1;
-  background-color: var(--sapInformationBorderColor,#0a6ed1)
+  background-color: var(--sapInformationBorderColor)
 }
 .fd-table__cell--navigated {
-  -webkit-box-shadow: inset -.1875rem 0 #0854a0;
-  -webkit-box-shadow: inset -.1875rem 0 var(--sapSelectedColor,#0854a0);
-  box-shadow: inset -.1875rem 0 #0854a0;
-  box-shadow: inset -.1875rem 0 var(--sapSelectedColor,#0854a0)
+  -webkit-box-shadow: inset -.1875rem 0 var(--sapSelectedColor);
+  box-shadow: inset -.1875rem 0 var(--sapSelectedColor)
 }
 .fd-table__cell--navigated[dir=rtl],
 [dir=rtl] .fd-table__cell--navigated {
-  -webkit-box-shadow: inset .1875rem 0 #0854a0;
-  -webkit-box-shadow: inset .1875rem 0 var(--sapSelectedColor,#0854a0);
-  box-shadow: inset .1875rem 0 #0854a0;
-  box-shadow: inset .1875rem 0 var(--sapSelectedColor,#0854a0)
+  -webkit-box-shadow: inset .1875rem 0 var(--sapSelectedColor);
+  box-shadow: inset .1875rem 0 var(--sapSelectedColor)
 }
 .fd-table__cell:first-child {
   margin-left: 0;
@@ -260,16 +226,12 @@
   padding: 0
 }
 .fd-table__body {
-  border-left: .0625rem solid #e5e5e5;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
-  border-right: .0625rem solid #e5e5e5;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-table__body .fd-table__cell {
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-table__body .fd-table__cell--no-vertical-border {
   border-bottom-color: transparent
@@ -280,32 +242,27 @@
 .fd-table__body .fd-table__row {
   border-left: none;
   border-right: none;
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff)
+  background-color: var(--sapList_Background)
 }
 .fd-table__body .fd-table__row.is-selected,
 .fd-table__body .fd-table__row[aria-selected=true] {
-  background-color: #e5f0fa;
-  background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa)
+  background-color: var(--sapList_SelectionBackgroundColor)
 }
 .fd-table__body .fd-table__row.is-selected .fd-table__cell,
 .fd-table__body .fd-table__row[aria-selected=true] .fd-table__cell {
-  border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0)
+  border-bottom-color: var(--sapList_SelectionBorderColor)
 }
 .fd-table__body .fd-table__row.is-selected.is-hover,
 .fd-table__body .fd-table__row.is-selected:hover,
 .fd-table__body .fd-table__row[aria-selected=true].is-hover,
 .fd-table__body .fd-table__row[aria-selected=true]:hover {
-  background-color: #d8e9f8;
-  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background-color: var(--sapList_Hover_SelectionBackground)
 }
 .fd-table__body .fd-table__row--activable.is-selected.is-active,
 .fd-table__body .fd-table__row--activable.is-selected:active,
 .fd-table__body .fd-table__row--activable[aria-selected=true].is-active,
 .fd-table__body .fd-table__row--activable[aria-selected=true]:active {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
+  background-color: var(--sapList_Active_Background)
 }
 .fd-table__body .fd-table__row--activable.is-selected.is-activefd-table__row--focusable.is-focus,
 .fd-table__body .fd-table__row--activable.is-selected.is-activefd-table__row--focusable:focus,
@@ -316,14 +273,10 @@
 .fd-table__body .fd-table__row--activable[aria-selected=true]:activefd-table__row--focusable.is-focus,
 .fd-table__body .fd-table__row--activable[aria-selected=true]:activefd-table__row--focusable:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-table__cell--hoverable.is-selected .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
 .fd-table__cell--hoverable.is-selected .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
@@ -333,8 +286,7 @@
 .fd-table__row--hoverable.is-selected .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
 .fd-table__row--hoverable[aria-selected=true] .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
 .fd-table__row--hoverable[aria-selected=true] .fd-table__cell:not(.fd-table__cell--status-indicator):hover {
-  background-color: #d8e9f8;
-  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background-color: var(--sapList_Hover_SelectionBackground)
 }
 .fd-table__cell--hoverable .fd-table__cell:not(.fd-table__cell--status-indicator).is-hover,
 .fd-table__cell--hoverable .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
@@ -344,10 +296,8 @@
 .fd-table__row--hoverable .fd-table__cell:not(.fd-table__cell--status-indicator):hover,
 .fd-table__row--hoverable.is-hover,
 .fd-table__row--hoverable:hover {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5);
-  color: inherit;
-  color: var(--fdTable_Hover_Down_Color,inherit)
+  background-color: var(--sapList_Hover_Background);
+  color: var(--fdTable_Hover_Down_Color)
 }
 .fd-table__cell--activable,
 .fd-table__row--activable {
@@ -358,19 +308,15 @@
 .fd-table__row--activable.is-focus,
 .fd-table__row--activable:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-table__cell--activable.is-active *,
 .fd-table__cell--activable:active *,
 .fd-table__row--activable.is-active *,
 .fd-table__row--activable:active * {
-  color: #fff!important;
-  color: var(--sapList_Active_TextColor,#fff)!important
+  color: var(--sapList_Active_TextColor)!important
 }
 .fd-table__cell--activable.is-active.is-focus,
 .fd-table__cell--activable.is-active:focus,
@@ -381,31 +327,24 @@
 .fd-table__row--activable:active.is-focus,
 .fd-table__row--activable:active:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-table__cell--activable.is-active,
 .fd-table__cell--activable:active,
 .fd-table__row--activable.is-active,
 .fd-table__row--activable:active {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0);
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  background-color: var(--sapList_Active_Background);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-table__cell--activable.is-active .fd-table__cell,
 .fd-table__cell--activable:active .fd-table__cell,
 .fd-table__row--activable.is-active .fd-table__cell,
 .fd-table__row--activable:active .fd-table__cell {
-  border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0);
+  border-bottom-color: var(--sapList_SelectionBorderColor);
   text-shadow: none
 }
 .fd-table__cell--activable.is-active .fd-table__cell.is-hover,
@@ -416,8 +355,7 @@
 .fd-table__row--activable.is-active .fd-table__cell:hover,
 .fd-table__row--activable:active .fd-table__cell.is-hover,
 .fd-table__row--activable:active .fd-table__cell:hover {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
+  background-color: var(--sapList_Active_Background)
 }
 .fd-table__cell--activable.is-active .fd-table__icon [class*=sap-icon],
 .fd-table__cell--activable.is-active .fd-table__icon[class*=sap-icon],
@@ -427,8 +365,7 @@
 .fd-table__row--activable.is-active .fd-table__icon[class*=sap-icon],
 .fd-table__row--activable:active .fd-table__icon [class*=sap-icon],
 .fd-table__row--activable:active .fd-table__icon[class*=sap-icon] {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff)
+  color: var(--sapContent_ContrastIconColor)
 }
 .fd-table__cell--activable.is-active .fd-form-label,
 .fd-table__cell--activable.is-active .fd-link,
@@ -453,14 +390,10 @@
 .fd-table__row--activable:active--focusable.is-focus,
 .fd-table__row--activable:active--focusable:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-table__cell--activable.is-selected,
 .fd-table__cell--activable[aria-selected=true],
@@ -476,10 +409,8 @@
 .fd-table__row--activable.is-selected:active,
 .fd-table__row--activable[aria-selected=true].is-active,
 .fd-table__row--activable[aria-selected=true]:active {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0);
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  background-color: var(--sapList_Active_Background);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-table__cell--activable.is-selected.is-active .fd-table__cell,
@@ -490,8 +421,7 @@
 .fd-table__row--activable.is-selected:active .fd-table__cell,
 .fd-table__row--activable[aria-selected=true].is-active .fd-table__cell,
 .fd-table__row--activable[aria-selected=true]:active .fd-table__cell {
-  border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0);
+  border-bottom-color: var(--sapList_SelectionBorderColor);
   text-shadow: none
 }
 .fd-table__cell--activable.is-selected.is-active .fd-table__cell.is-hover,
@@ -510,8 +440,7 @@
 .fd-table__row--activable[aria-selected=true].is-active .fd-table__cell:hover,
 .fd-table__row--activable[aria-selected=true]:active .fd-table__cell.is-hover,
 .fd-table__row--activable[aria-selected=true]:active .fd-table__cell:hover {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
+  background-color: var(--sapList_Active_Background)
 }
 .fd-table__cell--activable.is-selected.is-active .fd-table__icon [class*=sap-icon],
 .fd-table__cell--activable.is-selected.is-active .fd-table__icon[class*=sap-icon],
@@ -529,8 +458,7 @@
 .fd-table__row--activable[aria-selected=true].is-active .fd-table__icon[class*=sap-icon],
 .fd-table__row--activable[aria-selected=true]:active .fd-table__icon [class*=sap-icon],
 .fd-table__row--activable[aria-selected=true]:active .fd-table__icon[class*=sap-icon] {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff)
+  color: var(--sapContent_ContrastIconColor)
 }
 .fd-table__cell--activable.is-selected.is-active .fd-form-label,
 .fd-table__cell--activable.is-selected.is-active .fd-link,
@@ -575,34 +503,25 @@
 .fd-table__row--activable[aria-selected=true]:active--focusable.is-focus,
 .fd-table__row--activable[aria-selected=true]:active--focusable:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-table__cell--focusable.is-focus,
 .fd-table__cell--focusable:focus,
 .fd-table__row--focusable.is-focus,
 .fd-table__row--focusable:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-table__footer {
-  background-color: #fafafa;
-  background-color: var(--sapList_FooterBackground,#fafafa)
+  background-color: var(--sapList_FooterBackground)
 }
 .fd-table__footer .fd-table__row {
-  border-top: .125rem solid #d9d9d9;
-  border-top: .125rem solid var(--sapList_TableFooterBorder,#d9d9d9);
+  border-top: .125rem solid var(--sapList_TableFooterBorder);
   vertical-align: middle
 }
 .fd-table__footer .fd-table__cell {
@@ -610,14 +529,10 @@
   border-right: none
 }
 .fd-table__inner {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -695,8 +610,7 @@
 .fd-table--fixed .fd-table__header[dir=rtl],
 [dir=rtl] .fd-table--fixed .fd-table__body,
 [dir=rtl] .fd-table--fixed .fd-table__header {
-  border-left: .0625rem solid #e5e5e5;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   border-right: none
 }
 .fd-table--pop-in .fd-table__text {
@@ -723,13 +637,11 @@
 .fd-table--pop-in .fd-table__row .fd-table__cell:last-child {
   margin-bottom: 0;
   margin-right: 0;
-  border-right: .0625rem solid #e5e5e5;
-  border-right: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-table--pop-in .fd-table__row .fd-table__cell:last-child[dir=rtl],
 [dir=rtl] .fd-table--pop-in .fd-table__row .fd-table__cell:last-child {
-  border-left: .0625rem solid #e5e5e5;
-  border-left: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
+  border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   border-right: none
 }
 .fd-table--pop-in .fd-table__row--main {
@@ -741,36 +653,30 @@
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--hoverable.is-hover + .fd-table__row--secondary,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--hoverable:hover + .fd-table__row--secondary {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
+  background-color: var(--sapList_Hover_Background)
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0);
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  background-color: var(--sapList_Active_Background);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell {
-  border-bottom-color: #0854a0;
-  border-bottom-color: var(--sapList_SelectionBorderColor,#0854a0);
+  border-bottom-color: var(--sapList_SelectionBorderColor);
   text-shadow: none
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell.is-hover,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__cell:hover,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell.is-hover,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__cell:hover {
-  background-color: #0854a0;
-  background-color: var(--sapList_Active_Background,#0854a0)
+  background-color: var(--sapList_Active_Background)
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon],
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__icon [class*=sap-icon],
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover):active + .fd-table__row--secondary .fd-table__icon[class*=sap-icon] {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff)
+  color: var(--sapContent_ContrastIconColor)
 }
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-form-label,
 .fd-table--pop-in .fd-table__row--main.fd-table__row--activable:not(:hover).is-active + .fd-table__row--secondary .fd-link,
@@ -784,19 +690,15 @@
 .fd-table--pop-in .fd-table__row--main.is-selected:hover + .fd-table__row--secondary,
 .fd-table--pop-in .fd-table__row--main[aria-selected=true].is-hover + .fd-table__row--secondary,
 .fd-table--pop-in .fd-table__row--main[aria-selected=true]:hover + .fd-table__row--secondary {
-  background-color: #d8e9f8;
-  background-color: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background-color: var(--sapList_Hover_SelectionBackground)
 }
 .fd-table--pop-in .fd-table__row--secondary {
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff);
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  background-color: var(--sapList_Background);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-table--pop-in .fd-table__row--secondary.is-hover,
 .fd-table--pop-in .fd-table__row--secondary:hover {
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff)
+  background-color: var(--sapList_Background)
 }
 .fd-table--pop-in .fd-table__row--secondary .fd-table__cell {
   padding-top: .5rem;
@@ -804,15 +706,13 @@
 }
 .fd-table--pop-in .fd-table__row--secondary.is-selected .fd-table__cell,
 .fd-table--pop-in .fd-table__row--secondary[aria-selected=true] .fd-table__cell {
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-table--pop-in .fd-table__row--secondary.is-selected.is-hover,
 .fd-table--pop-in .fd-table__row--secondary.is-selected:hover,
 .fd-table--pop-in .fd-table__row--secondary[aria-selected=true].is-hover,
 .fd-table--pop-in .fd-table__row--secondary[aria-selected=true]:hover {
-  background-color: #e5f0fa;
-  background-color: var(--sapList_SelectionBackgroundColor,#e5f0fa)
+  background-color: var(--sapList_SelectionBackgroundColor)
 }
 .fd-table--no-vertical-borders .fd-table__row .fd-table__cell,
 .fd-table__body--no-vertical-borders .fd-table__row .fd-table__cell,
@@ -1555,8 +1455,7 @@
   width: 2rem
 }
 .fd-table--group .fd-table__body .fd-table__cell--group {
-  background-color: #f2f2f2;
-  background-color: var(--sapList_HeaderBackground,#f2f2f2)
+  background-color: var(--sapList_HeaderBackground)
 }
 .fd-table--group .fd-table__body .fd-table__cell[data-nesting-level="1"],
 .fd-table--tree .fd-table__body .fd-table__cell[data-nesting-level="1"] {
@@ -2007,10 +1906,8 @@
 .fd-table--tree .fd-table__body .fd-table__cell .fd-table__expand {
   width: 2.75rem;
   height: 2.75rem;
-  color: #0854a0;
-  color: var(--sapContent_IconColor,#0854a0);
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  color: var(--sapContent_IconColor);
+  font-size: var(--sapFontSmallSize);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

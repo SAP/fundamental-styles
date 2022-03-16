@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -14,12 +14,13 @@
   padding: 0;
   margin: 0;
   border: 0;
-  width: 100%;
-  max-width: 100%;
+  left: -.125rem;
+  z-index: 1;
   position: absolute;
   top: calc(100% - .3125rem);
-  z-index: 1;
+  width: calc(100% + .25rem);
   min-height: 2rem;
+  max-width: calc(100% + .25rem);
   padding: .625rem .625rem .375rem .625rem;
   border-radius: 0 0 .375rem .375rem
 }
@@ -28,6 +29,11 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fn-input-message[dir=rtl],
+[dir=rtl] .fn-input-message {
+  left: auto;
+  right: -.125rem
 }
 .fn-input-message--positive {
   background: #e5f2bd

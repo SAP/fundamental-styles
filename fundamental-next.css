@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -1179,6 +1179,96 @@
 .fn-avatar--grey.fn-avatar--interactive[aria-disabled=true] {
   pointer-events: none;
   opacity: .4
+}
+.fn-busy-indicator {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 0;
+  display: block
+}
+.fn-busy-indicator::after,
+.fn-busy-indicator::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-busy-indicator .fn-busy-indicator--circle-0,
+.fn-busy-indicator .fn-busy-indicator--circle-1,
+.fn-busy-indicator .fn-busy-indicator--circle-2 {
+  font-family: "72","72full",Arial,Helvetica,sans-serif;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  color: #1a2733;
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  color: #0070f2;
+  display: inline-block;
+  background-color: #0070f2
+}
+.fn-busy-indicator .fn-busy-indicator--circle-0::after,
+.fn-busy-indicator .fn-busy-indicator--circle-0::before,
+.fn-busy-indicator .fn-busy-indicator--circle-1::after,
+.fn-busy-indicator .fn-busy-indicator--circle-1::before,
+.fn-busy-indicator .fn-busy-indicator--circle-2::after,
+.fn-busy-indicator .fn-busy-indicator--circle-2::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-size: inherit
+}
+.fn-busy-indicator .fn-busy-indicator--circle-0 {
+  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11)
+}
+.fn-busy-indicator .fn-busy-indicator--circle-1 {
+  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s
+}
+.fn-busy-indicator .fn-busy-indicator--circle-2 {
+  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s
+}
+@-webkit-keyframes grow {
+  0%,
+  100%,
+  50% {
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+@keyframes grow {
+  0%,
+  100%,
+  50% {
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 .fn-button {
   font-family: "72","72full",Arial,Helvetica,sans-serif;
@@ -4885,12 +4975,13 @@
   padding: 0;
   margin: 0;
   border: 0;
-  width: 100%;
-  max-width: 100%;
+  left: -.125rem;
+  z-index: 1;
   position: absolute;
   top: calc(100% - .3125rem);
-  z-index: 1;
+  width: calc(100% + .25rem);
   min-height: 2rem;
+  max-width: calc(100% + .25rem);
   padding: .625rem .625rem .375rem .625rem;
   border-radius: 0 0 .375rem .375rem
 }
@@ -4899,6 +4990,11 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font-size: inherit
+}
+.fn-input-message[dir=rtl],
+[dir=rtl] .fn-input-message {
+  left: auto;
+  right: -.125rem
 }
 .fn-input-message--positive {
   background: #e5f2bd

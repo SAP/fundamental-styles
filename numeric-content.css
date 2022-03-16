@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-numeric-content {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -32,14 +28,10 @@
 }
 .fd-numeric-content__kpi-container,
 .fd-numeric-content__launch-icon-container {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -82,14 +74,10 @@
   max-width: 1.75rem
 }
 .fd-numeric-content__scale-container {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -122,18 +110,13 @@
   line-height: 1;
   line-height: normal;
   font-size: 1.75rem;
-  color: #5a7da0;
-  color: var(--sapTile_IconColor,#5a7da0)
+  color: var(--sapTile_IconColor)
 }
 .fd-numeric-content__kpi {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -141,8 +124,7 @@
   margin: 0;
   border: 0;
   line-height: normal;
-  color: #6a6d70;
-  color: var(--sapNeutralTextColor,#6a6d70);
+  color: var(--sapNeutralTextColor);
   font-weight: lighter;
   font-size: 2.25rem
 }
@@ -153,30 +135,22 @@
   font-size: inherit
 }
 .fd-numeric-content__kpi--positive {
-  color: #107e3e;
-  color: var(--sapPositiveTextColor,#107e3e)
+  color: var(--sapPositiveTextColor)
 }
 .fd-numeric-content__kpi--critical {
-  color: #df6e0c;
-  color: var(--sapCriticalTextColor,#df6e0c)
+  color: var(--sapCriticalTextColor)
 }
 .fd-numeric-content__kpi--negative {
-  color: #b00;
-  color: var(--sapNegativeTextColor,#b00)
+  color: var(--sapNegativeTextColor)
 }
 .fd-numeric-content__kpi--informative {
-  color: #0a6ed1;
-  color: var(--sapInformativeTextColor,#0a6ed1)
+  color: var(--sapInformativeTextColor)
 }
 .fd-numeric-content__scale {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -212,18 +186,13 @@
   line-height: 1;
   font-size: .875rem;
   line-height: normal;
-  color: #6a6d70;
-  color: var(--sapNeutralTextColor,#6a6d70)
+  color: var(--sapNeutralTextColor)
 }
 .fd-numeric-content__scale-text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -232,8 +201,7 @@
   border: 0;
   font-size: .875rem;
   line-height: normal;
-  color: #6a6d70;
-  color: var(--sapNeutralTextColor,#6a6d70)
+  color: var(--sapNeutralTextColor)
 }
 .fd-numeric-content__scale-text::after,
 .fd-numeric-content__scale-text::before {
@@ -243,39 +211,31 @@
 }
 .fd-numeric-content__scale--positive .fd-numeric-content__scale-arrow [class*=sap-icon],
 .fd-numeric-content__scale--positive .fd-numeric-content__scale-arrow[class*=sap-icon] {
-  color: #107e3e;
-  color: var(--sapPositiveTextColor,#107e3e)
+  color: var(--sapPositiveTextColor)
 }
 .fd-numeric-content__scale--positive .fd-numeric-content__scale-text {
-  color: #107e3e;
-  color: var(--sapPositiveTextColor,#107e3e)
+  color: var(--sapPositiveTextColor)
 }
 .fd-numeric-content__scale--critical .fd-numeric-content__scale-arrow [class*=sap-icon],
 .fd-numeric-content__scale--critical .fd-numeric-content__scale-arrow[class*=sap-icon] {
-  color: #df6e0c;
-  color: var(--sapCriticalTextColor,#df6e0c)
+  color: var(--sapCriticalTextColor)
 }
 .fd-numeric-content__scale--critical .fd-numeric-content__scale-text {
-  color: #df6e0c;
-  color: var(--sapCriticalTextColor,#df6e0c)
+  color: var(--sapCriticalTextColor)
 }
 .fd-numeric-content__scale--negative .fd-numeric-content__scale-arrow [class*=sap-icon],
 .fd-numeric-content__scale--negative .fd-numeric-content__scale-arrow[class*=sap-icon] {
-  color: #b00;
-  color: var(--sapNegativeTextColor,#b00)
+  color: var(--sapNegativeTextColor)
 }
 .fd-numeric-content__scale--negative .fd-numeric-content__scale-text {
-  color: #b00;
-  color: var(--sapNegativeTextColor,#b00)
+  color: var(--sapNegativeTextColor)
 }
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow [class*=sap-icon],
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-arrow[class*=sap-icon] {
-  color: #0a6ed1;
-  color: var(--sapInformativeTextColor,#0a6ed1)
+  color: var(--sapInformativeTextColor)
 }
 .fd-numeric-content__scale--informative .fd-numeric-content__scale-text {
-  color: #0a6ed1;
-  color: var(--sapInformativeTextColor,#0a6ed1)
+  color: var(--sapInformativeTextColor)
 }
 .fd-numeric-content--m {
   height: 2.5rem

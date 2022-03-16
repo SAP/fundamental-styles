@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-tree {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1563,14 +1559,10 @@
   padding-right: 4.75rem
 }
 .fd-tree__item {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1586,10 +1578,8 @@
 }
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
   padding-left: 2.75rem;
-  background: #fff;
-  background: var(--sapList_Background,#fff);
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5)
+  background: var(--sapList_Background);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor)
 }
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container[dir=rtl],
 [dir=rtl] .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
@@ -1598,20 +1588,14 @@
 }
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-tree__item-container {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1627,10 +1611,8 @@
   width: 100%;
   min-height: 2.75rem;
   padding-right: 1rem;
-  background: #f2f2f2;
-  background: var(--sapList_AlternatingBackground,#f2f2f2);
-  border-bottom: .0625rem solid transparent;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid transparent
+  background: var(--sapList_AlternatingBackground);
+  border-bottom: var(--sapList_BorderWidth) solid transparent
 }
 .fd-tree__item-container::after,
 .fd-tree__item-container::before {
@@ -1640,41 +1622,31 @@
 }
 .fd-tree__item-container.is-selected,
 .fd-tree__item-container[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-tree__item-container.is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor);
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor)
 }
 .fd-tree__item-container.is-navigated[dir=rtl],
 [dir=rtl] .fd-tree__item-container.is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0);
-  box-shadow: inset .1875rem 0 0 0 #0854a0;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0)
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor);
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor)
 }
 .fd-tree__item-container.is-focus,
 .fd-tree__item-container:focus {
   z-index: 5;
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
   outline-offset: -.125rem
 }
 .fd-tree__item-container.is-focus.is-active,
 .fd-tree__item-container.is-focus:active,
 .fd-tree__item-container:focus.is-active,
 .fd-tree__item-container:focus:active {
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active {
@@ -1684,17 +1656,14 @@
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active:hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-selected,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true],
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-selected,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-selected.is-hover,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-selected:hover,
@@ -1704,15 +1673,13 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-selected:hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true].is-hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active:active,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button.is-focus,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button:focus,
@@ -1731,8 +1698,7 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__expander.is-focus,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__expander:focus {
   z-index: 5;
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__icon [class*=sap-icon],
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__icon[class*=sap-icon],
@@ -1742,8 +1708,7 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__icon[class*=sap-icon],
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__icon [class*=sap-icon],
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__icon[class*=sap-icon] {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-button,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__text,
@@ -1753,8 +1718,7 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active .fd-tree__text,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-button,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active .fd-tree__text {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-hover,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active:hover,
@@ -1764,8 +1728,7 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active:hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true],
@@ -1775,8 +1738,7 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active.is-active[aria-selected=true],
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-selected,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected.is-hover,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-selected:hover,
@@ -1794,8 +1756,7 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-selected:hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true].is-hover,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active[aria-selected=true]:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active.is-focus,
 .fd-tree .fd-tree__item-container.fd-tree__item-container--active.is-active:focus,
@@ -1806,18 +1767,13 @@
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active.is-focus,
 .fd-tree .fd-tree__item[aria-level="1"] > .fd-tree__item-container.fd-tree__item-container--active:active:focus {
   z-index: 5;
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-tree__expander {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1825,8 +1781,7 @@
   margin: 0;
   border: 0;
   cursor: pointer;
-  color: #0854a0;
-  color: var(--sapButton_IconColor,#0854a0);
+  color: var(--sapButton_IconColor);
   background: 0 0;
   min-width: 2.75rem;
   min-height: 2.75rem;
@@ -1840,10 +1795,8 @@
 }
 .fd-tree__expander .fd-tree__icon [class*=sap-icon],
 .fd-tree__expander .fd-tree__icon[class*=sap-icon] {
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem);
-  color: #0854a0;
-  color: var(--sapButton_IconColor,#0854a0);
+  font-size: var(--sapFontLargeSize);
+  color: var(--sapButton_IconColor);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1857,20 +1810,16 @@
 .fd-tree__expander.is-focus,
 .fd-tree__expander:focus {
   z-index: 5;
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted);
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
   outline-offset: -.125rem
 }
 .fd-tree__expander.is-focus.is-active,
 .fd-tree__expander.is-focus:active,
 .fd-tree__expander:focus.is-active,
 .fd-tree__expander:focus:active {
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-tree__expander[dir=rtl],
 [dir=rtl] .fd-tree__expander {
@@ -1882,14 +1831,10 @@
   border-bottom: none
 }
 .fd-tree__content {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1943,8 +1888,7 @@
 .fd-tree__icon [class*=sap-icon],
 .fd-tree__icon[class*=sap-icon] {
   font-size: 1.125rem;
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  color: var(--sapContent_NonInteractiveIconColor);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1969,14 +1913,10 @@
   margin-left: -1rem
 }
 .fd-tree__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1987,10 +1927,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem);
-  color: #32363a;
-  color: var(--sapList_TextColor,#32363a);
+  font-size: var(--sapFontLargeSize);
+  color: var(--sapList_TextColor);
   line-height: 2.75rem
 }
 .fd-tree__text::after,
@@ -2017,8 +1955,7 @@
   line-height: 1.4
 }
 .fd-tree--compact .fd-tree__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-size: var(--sapFontSize);
   line-height: 2rem
 }
 .fd-tree--compact .fd-tree__expander {
@@ -2028,8 +1965,7 @@
 }
 .fd-tree--compact .fd-tree__expander [class*=sap-icon],
 .fd-tree--compact .fd-tree__expander[class*=sap-icon] {
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem)
+  font-size: var(--sapFontSmallSize)
 }
 .fd-tree--compact .fd-tree__expander[dir=rtl],
 [dir=rtl] .fd-tree--compact .fd-tree__expander {
@@ -2042,13 +1978,11 @@
   font-size: 1rem
 }
 .fd-tree--no-border .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
-  border-bottom: .0625rem solid transparent;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid transparent
+  border-bottom: var(--sapList_BorderWidth) solid transparent
 }
 .fd-tree--no-border .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected,
 .fd-tree--no-border .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true] {
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-tree--active .fd-tree__item-container,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container {
@@ -2058,17 +1992,14 @@
 .fd-tree--active .fd-tree__item-container:hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-tree--active .fd-tree__item-container.is-selected,
 .fd-tree--active .fd-tree__item-container[aria-selected=true],
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-tree--active .fd-tree__item-container.is-selected.is-hover,
 .fd-tree--active .fd-tree__item-container.is-selected:hover,
@@ -2078,15 +2009,13 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-selected:hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true].is-hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-tree--active .fd-tree__item-container.is-active,
 .fd-tree--active .fd-tree__item-container:active,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree--active .fd-tree__item-container.is-active .fd-button.is-focus,
 .fd-tree--active .fd-tree__item-container.is-active .fd-button:focus,
@@ -2105,8 +2034,7 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__expander.is-focus,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__expander:focus {
   z-index: 5;
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-tree--active .fd-tree__item-container.is-active .fd-tree__icon [class*=sap-icon],
 .fd-tree--active .fd-tree__item-container.is-active .fd-tree__icon[class*=sap-icon],
@@ -2116,8 +2044,7 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-tree__icon[class*=sap-icon],
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__icon [class*=sap-icon],
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__icon[class*=sap-icon] {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor)
 }
 .fd-tree--active .fd-tree__item-container.is-active .fd-button,
 .fd-tree--active .fd-tree__item-container.is-active .fd-tree__text,
@@ -2127,8 +2054,7 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active .fd-tree__text,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-button,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active .fd-tree__text {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff)
+  color: var(--sapList_Active_TextColor)
 }
 .fd-tree--active .fd-tree__item-container.is-active.is-hover,
 .fd-tree--active .fd-tree__item-container.is-active:hover,
@@ -2138,8 +2064,7 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active:hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree--active .fd-tree__item-container.is-active.is-selected,
 .fd-tree--active .fd-tree__item-container.is-active[aria-selected=true],
@@ -2149,8 +2074,7 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container.is-active[aria-selected=true],
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-selected,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active[aria-selected=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree--active .fd-tree__item-container.is-active.is-selected.is-hover,
 .fd-tree--active .fd-tree__item-container.is-active.is-selected:hover,
@@ -2168,8 +2092,7 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-selected:hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active[aria-selected=true].is-hover,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active[aria-selected=true]:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-tree--active .fd-tree__item-container.is-active.is-focus,
 .fd-tree--active .fd-tree__item-container.is-active:focus,
@@ -2180,113 +2103,80 @@
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active.is-focus,
 .fd-tree--active .fd-tree__item[aria-level="1"] > .fd-tree__item-container:active:focus {
   z-index: 5;
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-tree--no-data .fd-tree__text {
   text-align: center
 }
 .fd-tree .has-highlight-indicator {
-  -webkit-box-shadow: inset .375rem 0 0 0 #0a6ed1;
-  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
-  box-shadow: inset .375rem 0 0 0 #0a6ed1;
-  box-shadow: inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapInformationBorderColor);
+  box-shadow: inset .375rem 0 0 0 var(--sapInformationBorderColor)
 }
 .fd-tree .has-highlight-indicator[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator {
-  -webkit-box-shadow: inset -.375rem 0 0 0 #0a6ed1;
-  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
-  box-shadow: inset -.375rem 0 0 0 #0a6ed1;
-  box-shadow: inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapInformationBorderColor);
+  box-shadow: inset -.375rem 0 0 0 var(--sapInformationBorderColor)
 }
 .fd-tree .has-highlight-indicator.is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #0a6ed1;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #0a6ed1;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapInformationBorderColor);
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapInformationBorderColor)
 }
 .fd-tree .has-highlight-indicator.is-navigated[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator.is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #0a6ed1;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1);
-  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #0a6ed1;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapInformationBorderColor,#0a6ed1)
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapInformationBorderColor);
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapInformationBorderColor)
 }
 .fd-tree .has-highlight-indicator--error {
-  -webkit-box-shadow: inset .375rem 0 0 0 #b00;
-  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00);
-  box-shadow: inset .375rem 0 0 0 #b00;
-  box-shadow: inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapErrorBorderColor);
+  box-shadow: inset .375rem 0 0 0 var(--sapErrorBorderColor)
 }
 .fd-tree .has-highlight-indicator--error[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--error {
-  -webkit-box-shadow: inset -.375rem 0 0 0 #b00;
-  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00);
-  box-shadow: inset -.375rem 0 0 0 #b00;
-  box-shadow: inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapErrorBorderColor);
+  box-shadow: inset -.375rem 0 0 0 var(--sapErrorBorderColor)
 }
 .fd-tree .has-highlight-indicator--error.is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #b00;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #b00;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapErrorBorderColor);
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapErrorBorderColor)
 }
 .fd-tree .has-highlight-indicator--error.is-navigated[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--error.is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #b00;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00);
-  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #b00;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapErrorBorderColor,#b00)
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapErrorBorderColor);
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapErrorBorderColor)
 }
 .fd-tree .has-highlight-indicator--warning {
-  -webkit-box-shadow: inset .375rem 0 0 0 #df6e0c;
-  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
-  box-shadow: inset .375rem 0 0 0 #df6e0c;
-  box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor);
+  box-shadow: inset .375rem 0 0 0 var(--sapWarningBorderColor)
 }
 .fd-tree .has-highlight-indicator--warning[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--warning {
-  -webkit-box-shadow: inset -.375rem 0 0 0 #df6e0c;
-  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
-  box-shadow: inset -.375rem 0 0 0 #df6e0c;
-  box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor);
+  box-shadow: inset -.375rem 0 0 0 var(--sapWarningBorderColor)
 }
 .fd-tree .has-highlight-indicator--warning.is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #df6e0c;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #df6e0c;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapWarningBorderColor);
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapWarningBorderColor)
 }
 .fd-tree .has-highlight-indicator--warning.is-navigated[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--warning.is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #df6e0c;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c);
-  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #df6e0c;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapWarningBorderColor,#df6e0c)
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapWarningBorderColor);
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapWarningBorderColor)
 }
 .fd-tree .has-highlight-indicator--success {
-  -webkit-box-shadow: inset .375rem 0 0 0 #107e3e;
-  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
-  box-shadow: inset .375rem 0 0 0 #107e3e;
-  box-shadow: inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+  -webkit-box-shadow: inset .375rem 0 0 0 var(--sapSuccessBorderColor);
+  box-shadow: inset .375rem 0 0 0 var(--sapSuccessBorderColor)
 }
 .fd-tree .has-highlight-indicator--success[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--success {
-  -webkit-box-shadow: inset -.375rem 0 0 0 #107e3e;
-  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
-  box-shadow: inset -.375rem 0 0 0 #107e3e;
-  box-shadow: inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+  -webkit-box-shadow: inset -.375rem 0 0 0 var(--sapSuccessBorderColor);
+  box-shadow: inset -.375rem 0 0 0 var(--sapSuccessBorderColor)
 }
 .fd-tree .has-highlight-indicator--success.is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #107e3e;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0,inset .375rem 0 0 0 #107e3e;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset .375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapSuccessBorderColor);
+  box-shadow: inset -.1875rem 0 0 0 var(--sapSelectedColor),inset .375rem 0 0 0 var(--sapSuccessBorderColor)
 }
 .fd-tree .has-highlight-indicator--success.is-navigated[dir=rtl],
 [dir=rtl] .fd-tree .has-highlight-indicator--success.is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #107e3e;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e);
-  box-shadow: inset .1875rem 0 0 0 #0854a0,inset -.375rem 0 0 0 #107e3e;
-  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor,#0854a0),inset -.375rem 0 0 0 var(--sapSuccessBorderColor,#107e3e)
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapSuccessBorderColor);
+  box-shadow: inset .1875rem 0 0 0 var(--sapSelectedColor),inset -.375rem 0 0 0 var(--sapSuccessBorderColor)
 }

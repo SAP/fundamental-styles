@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -8,33 +8,24 @@
     .fd-message__close
 */
 .fd-message-strip {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-size: var(--sapFontSize);
   position: relative;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  background-color: #f4f4f4;
-  background-color: var(--sapNeutralBackground,#f4f4f4);
-  border-width: .0625rem;
-  border-width: var(--fdMessageStrip_Border_Width,.0625rem);
+  color: var(--sapTextColor);
+  background-color: var(--sapNeutralBackground);
+  border-width: var(--fdMessageStrip_Border_Width);
   border-style: solid;
-  border-color: #6a6d70;
-  border-color: var(--sapNeutralBorderColor,#6a6d70);
-  border-radius: .25rem;
+  border-color: var(--fdMessageStrip_Border_Color_Neutral);
+  border-radius: var(--fdMessageStrip_Border_Radius);
   padding: .4375rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,15 +132,12 @@
   right: 0
 }
 .fd-message-strip--warning {
-  background-color: #fef7f1;
-  background-color: var(--sapWarningBackground,#fef7f1);
-  border-color: #df6e0c;
-  border-color: var(--sapWarningBorderColor,#df6e0c)
+  background-color: var(--sapWarningBackground);
+  border-color: var(--fdMessageStrip_Border_Color_Warning)
 }
 .fd-message-strip--warning::after,
 .fd-message-strip--warning::before {
-  color: #df6e0c;
-  color: var(--sapWarningBorderColor,#df6e0c)
+  color: var(--fdMessageStrip_Icon_Color_Warning)
 }
 .fd-message-strip--warning::before {
   font-family: SAP-icons;
@@ -178,15 +166,12 @@
   content: "\e201"
 }
 .fd-message-strip--error {
-  background-color: #ffebeb;
-  background-color: var(--sapErrorBackground,#ffebeb);
-  border-color: #b00;
-  border-color: var(--sapErrorBorderColor,#b00)
+  background-color: var(--sapErrorBackground);
+  border-color: var(--fdMessageStrip_Border_Color_Error)
 }
 .fd-message-strip--error::after,
 .fd-message-strip--error::before {
-  color: #b00;
-  color: var(--sapErrorBorderColor,#b00)
+  color: var(--fdMessageStrip_Icon_Color_Error)
 }
 .fd-message-strip--error::before {
   font-family: SAP-icons;
@@ -211,15 +196,12 @@
   content: "\e0b1"
 }
 .fd-message-strip--success {
-  background-color: #f1fdf6;
-  background-color: var(--sapSuccessBackground,#f1fdf6);
-  border-color: #107e3e;
-  border-color: var(--sapSuccessBorderColor,#107e3e)
+  background-color: var(--sapSuccessBackground);
+  border-color: var(--fdMessageStrip_Border_Color_Success)
 }
 .fd-message-strip--success::after,
 .fd-message-strip--success::before {
-  color: #107e3e;
-  color: var(--sapSuccessBorderColor,#107e3e)
+  color: var(--fdMessageStrip_Icon_Color_Success)
 }
 .fd-message-strip--success::before {
   font-family: SAP-icons;
@@ -244,15 +226,12 @@
   content: "\e203"
 }
 .fd-message-strip--information {
-  background-color: #f5faff;
-  background-color: var(--sapInformationBackground,#f5faff);
-  border-color: #0a6ed1;
-  border-color: var(--sapInformationBorderColor,#0a6ed1)
+  background-color: var(--sapInformationBackground);
+  border-color: var(--fdMessageStrip_Border_Color_Informative)
 }
 .fd-message-strip--information::after,
 .fd-message-strip--information::before {
-  color: #0a6ed1;
-  color: var(--sapInformationBorderColor,#0a6ed1)
+  color: var(--fdMessageStrip_Icon_Color_Information)
 }
 .fd-message-strip--information::before {
   font-family: SAP-icons;
@@ -291,14 +270,10 @@
   display: none
 }
 .fd-message-strip__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-rating-indicator {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -36,14 +32,10 @@
   font-size: inherit
 }
 .fd-rating-indicator__container {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -59,26 +51,19 @@
 }
 .fd-rating-indicator__container:focus-within {
   outline-offset: 0;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-rating-indicator__container:focus-within .fd-rating-indicator__input,
 .fd-rating-indicator__container:focus-within .fd-rating-indicator__label {
   outline: 0!important
 }
 .fd-rating-indicator__input {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -100,32 +85,22 @@
 }
 .fd-rating-indicator__input:checked.is-focus,
 .fd-rating-indicator__input:checked:focus {
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-rating-indicator__input:checked.is-focus + .fd-rating-indicator__label,
 .fd-rating-indicator__input:checked:focus + .fd-rating-indicator__label {
   outline-offset: 0;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-rating-indicator__label {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -153,33 +128,26 @@
 .fd-rating-indicator__label::before {
   content: "\e065";
   font-family: SAP-icons;
-  color: #d08014;
-  color: var(--sapContent_RatedColor,#d08014);
+  color: var(--sapContent_RatedColor);
   font-size: 1.375rem
 }
 .fd-rating-indicator__label:last-child {
   margin-right: 0
 }
 .fd-rating-indicator__label:hover::before {
-  opacity: .9;
-  opacity: var(--fdRating_Indicator_Selected_Hover_Opacity,.9);
+  opacity: var(--fdRating_Indicator_Selected_Hover_Opacity);
   -webkit-transition: opacity 125ms ease-in;
   transition: opacity 125ms ease-in
 }
 .fd-rating-indicator .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before {
   content: "\e0a1";
-  color: #89919a;
-  color: var(--sapContent_UnratedColor,#89919a)
+  color: var(--sapContent_UnratedColor)
 }
 .fd-rating-indicator__dynamic-text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -189,10 +157,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_LabelColor);
   margin-left: .5rem
 }
 .fd-rating-indicator__dynamic-text::after,
@@ -225,22 +191,19 @@
 .fd-rating-indicator:disabled,
 .fd-rating-indicator[aria-disabled=true] {
   pointer-events: none;
-  opacity: .4;
-  opacity: var(--fdRating_Indicator_Disabled_Control_Opacity,.4)
+  opacity: var(--fdRating_Indicator_Disabled_Control_Opacity)
 }
 .fd-rating-indicator.is-disabled .fd-rating-indicator__input::before,
 .fd-rating-indicator:disabled .fd-rating-indicator__input::before,
 .fd-rating-indicator[aria-disabled=true] .fd-rating-indicator__input::before {
   content: "\e065";
-  color: #d08014;
-  color: var(--fdRating_Indicator_Disabled_Selected_Color,var(--sapContent_RatedColor,#d08014))
+  color: var(--fdRating_Indicator_Disabled_Selected_Color)
 }
 .fd-rating-indicator.is-disabled .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before,
 .fd-rating-indicator:disabled .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before,
 .fd-rating-indicator[aria-disabled=true] .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before {
   content: "\e065";
-  color: #89919a;
-  color: var(--fdRating_Indicator_Disabled_Unselected_Color,var(--sapContent_UnratedColor,#89919a))
+  color: var(--fdRating_Indicator_Disabled_Unselected_Color)
 }
 .fd-rating-indicator--display-mode .fd-rating-indicator__label {
   margin-right: .125rem
@@ -248,8 +211,7 @@
 .fd-rating-indicator--display-mode .fd-rating-indicator__label::before {
   content: "\e065";
   font-size: 1rem;
-  color: #32363a;
-  color: var(--fdRating_Indicator_Display_Only_Selected_Color,var(--sapTextColor,#32363a))
+  color: var(--fdRating_Indicator_Display_Only_Selected_Color)
 }
 .fd-rating-indicator--display-mode .fd-rating-indicator__label[dir=rtl],
 [dir=rtl] .fd-rating-indicator--display-mode .fd-rating-indicator__label {
@@ -263,8 +225,7 @@
 .fd-rating-indicator--display-mode .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before,
 .fd-rating-indicator--non-interactive .fd-rating-indicator__input:checked ~ .fd-rating-indicator__input + .fd-rating-indicator__label::before {
   content: "\e065";
-  color: #89919a;
-  color: var(--sapContent_UnratedColor,#89919a)
+  color: var(--sapContent_UnratedColor)
 }
 .fd-rating-indicator--icon .fd-rating-indicator__label {
   width: 1.375rem;

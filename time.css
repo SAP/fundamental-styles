@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-time {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -37,14 +33,10 @@
   font-size: inherit
 }
 .fd-time__col {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -73,14 +65,10 @@
   margin-right: 0
 }
 .fd-time__current-indicator {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -95,10 +83,8 @@
   box-sizing: border-box;
   width: 3rem;
   height: 2.875rem;
-  border: .0625rem solid #0854a0;
-  border: .0625rem solid var(--sapList_SelectionBorderColor,#0854a0);
-  border-radius: .25rem;
-  border-radius: var(--sapButton_BorderCornerRadius,.25rem)
+  border: .0625rem solid var(--sapList_SelectionBorderColor);
+  border-radius: var(--sapButton_BorderCornerRadius)
 }
 .fd-time__current-indicator::after,
 .fd-time__current-indicator::before {
@@ -107,14 +93,10 @@
   font-size: inherit
 }
 .fd-time__wrapper {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -164,14 +146,10 @@
   height: 20.125rem
 }
 .fd-time__item {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -191,14 +169,10 @@
   width: 3rem;
   height: 2.875rem;
   min-height: 2.875rem;
-  border-radius: .25rem;
-  border-radius: var(--sapButton_BorderCornerRadius,.25rem);
-  background-color: #fafafa;
-  background-color: var(--sapLegend_WorkingBackground,#fafafa);
-  border: .0625rem solid #fff;
-  border: .0625rem solid var(--sapList_Background,#fff);
-  text-shadow: none;
-  text-shadow: var(--fdTime_Text_Shadow,none)
+  border-radius: var(--sapButton_BorderCornerRadius);
+  background-color: var(--sapLegend_WorkingBackground);
+  border: .0625rem solid var(--sapList_Background);
+  text-shadow: var(--fdTime_Text_Shadow)
 }
 .fd-time__item::after,
 .fd-time__item::before {
@@ -207,56 +181,41 @@
   font-size: inherit
 }
 .fd-time__item:hover {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
+  background-color: var(--sapList_Hover_Background)
 }
 .fd-time__item:active {
-  background-color: #0854a0;
-  background-color: var(--sapContent_Selected_Background,#0854a0);
+  background-color: var(--sapContent_Selected_Background);
   border-color: transparent;
-  color: #fff;
-  color: var(--sapContent_Selected_TextColor,#fff)
+  color: var(--sapContent_Selected_TextColor)
 }
 .fd-time__item--current {
-  border-color: #0854a0;
-  border-color: var(--sapList_SelectionBorderColor,#0854a0);
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff)
+  border-color: var(--sapList_SelectionBorderColor);
+  background-color: var(--sapList_Background)
 }
 .fd-time__item--current:hover {
-  background-color: #f5f5f5;
-  background-color: var(--sapList_Hover_Background,#f5f5f5)
+  background-color: var(--sapList_Hover_Background)
 }
 .fd-time__item--current:active {
-  background-color: #0854a0;
-  background-color: var(--sapContent_Selected_Background,#0854a0);
+  background-color: var(--sapContent_Selected_Background);
   border-color: transparent;
-  color: #fff;
-  color: var(--sapContent_Selected_TextColor,#fff)
+  color: var(--sapContent_Selected_TextColor)
 }
 .fd-time__item--collapsed {
-  background-color: #0854a0;
-  background-color: var(--sapContent_Selected_Background,#0854a0);
-  color: #fff;
-  color: var(--sapContent_Selected_TextColor,#fff);
+  background-color: var(--sapContent_Selected_Background);
+  color: var(--sapContent_Selected_TextColor);
   border-color: transparent
 }
 .fd-time__item--collapsed:hover {
-  background-color: #095caf;
-  background-color: var(--sapContent_Selected_Hover_Background,#095caf)
+  background-color: var(--sapContent_Selected_Hover_Background)
 }
 .fd-time__item--hidden {
   visibility: hidden
 }
 .fd-time__unit {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -281,14 +240,10 @@
   font-size: inherit
 }
 .fd-time__list {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -309,14 +264,10 @@
   display: none
 }
 .fd-time__slider-label {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -331,18 +282,15 @@
   width: fit-content;
   position: relative;
   max-width: 100%;
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
   margin-right: .5rem;
   cursor: text;
   -ms-flex-item-align: start;
   align-self: flex-start;
   line-height: 2rem;
   height: 2rem;
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  font-size: var(--sapFontSmallSize);
   max-width: 3rem;
   overflow: hidden;
   white-space: nowrap;
@@ -369,14 +317,10 @@
   margin: 0
 }
 .fd-time__control {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

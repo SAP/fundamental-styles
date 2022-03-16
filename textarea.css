@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -7,14 +7,10 @@
 .fd-textarea
 */
 .fd-textarea {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -24,17 +20,12 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #32363a;
-  color: var(--sapField_TextColor,#32363a);
-  background-color: #fff;
-  background-color: var(--sapField_Background,#fff);
+  color: var(--sapField_TextColor);
+  background-color: var(--sapField_Background);
   border-style: solid;
-  border-width: .0625rem;
-  border-width: var(--sapField_BorderWidth,.0625rem);
-  border-color: #89919a;
-  border-color: var(--sapField_BorderColor,#89919a);
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
+  border-width: var(--sapField_BorderWidth);
+  border-color: var(--sapField_BorderColor);
+  border-radius: var(--sapField_BorderCornerRadius);
   outline: 0;
   appearance: none;
   -webkit-appearance: none;
@@ -60,126 +51,87 @@
 }
 .fd-textarea::-webkit-input-placeholder {
   font-style: italic;
-  color: #74777a;
-  color: var(--sapField_PlaceholderTextColor,#74777a)
+  color: var(--sapField_PlaceholderTextColor)
 }
 .fd-textarea::-moz-placeholder {
   font-style: italic;
-  color: #74777a;
-  color: var(--sapField_PlaceholderTextColor,#74777a)
+  color: var(--sapField_PlaceholderTextColor)
 }
 .fd-textarea:-ms-input-placeholder {
   font-style: italic;
-  color: #74777a;
-  color: var(--sapField_PlaceholderTextColor,#74777a)
+  color: var(--sapField_PlaceholderTextColor)
 }
 .fd-textarea::-ms-input-placeholder {
   font-style: italic;
-  color: #74777a;
-  color: var(--sapField_PlaceholderTextColor,#74777a)
+  color: var(--sapField_PlaceholderTextColor)
 }
 .fd-textarea::placeholder {
   font-style: italic;
-  color: #74777a;
-  color: var(--sapField_PlaceholderTextColor,#74777a)
+  color: var(--sapField_PlaceholderTextColor)
 }
 .fd-textarea::-moz-selection {
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff);
-  background-color: #0854a0;
-  background-color: var(--sapSelectedColor,#0854a0)
+  color: var(--sapContent_ContrastTextColor);
+  background-color: var(--sapSelectedColor)
 }
 .fd-textarea::selection {
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff);
-  background-color: #0854a0;
-  background-color: var(--sapSelectedColor,#0854a0)
+  color: var(--sapContent_ContrastTextColor);
+  background-color: var(--sapSelectedColor)
 }
 .fd-textarea.is-hover,
 .fd-textarea:hover {
-  background-color: #fff;
-  background-color: var(--sapField_Hover_Background,#fff);
-  border-color: #0854a0;
-  border-color: var(--sapField_Hover_BorderColor,#0854a0)
+  background-color: var(--sapField_Hover_Background);
+  border-color: var(--sapField_Hover_BorderColor)
 }
 .fd-textarea.is-success {
-  background-color: #fff;
-  background-color: var(--sapField_SuccessBackground,#fff);
-  border-color: #107e3e;
-  border-color: var(--sapField_SuccessColor,#107e3e);
-  border-width: .0625rem;
-  border-width: var(--sapField_SuccessBorderWidth,.0625rem);
-  border-style: solid;
-  border-style: var(--sapField_SuccessBorderStyle,solid)
+  background-color: var(--sapField_SuccessBackground);
+  border-color: var(--sapField_SuccessColor);
+  border-width: var(--sapField_SuccessBorderWidth);
+  border-style: var(--sapField_SuccessBorderStyle)
 }
 .fd-textarea.is-success.is-hover,
 .fd-textarea.is-success:hover {
-  background-color: #fff;
-  background-color: var(--sapField_SuccessBackground,#fff);
-  border-color: #107e3e;
-  border-color: var(--sapField_SuccessColor,#107e3e)
+  background-color: var(--sapField_SuccessBackground);
+  border-color: var(--sapField_SuccessColor)
 }
 .fd-textarea.is-error {
-  background-color: #fff;
-  background-color: var(--sapField_InvalidBackground,#fff);
-  font-style: normal;
-  font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal);
-  border-color: #b00;
-  border-color: var(--sapField_InvalidColor,#b00);
-  border-width: .125rem;
-  border-width: var(--sapField_InvalidBorderWidth,.125rem);
-  border-style: solid;
-  border-style: var(--sapField_InvalidBorderStyle,solid)
+  background-color: var(--sapField_InvalidBackground);
+  font-style: var(--fdInput_State_Text_Style);
+  font-weight: var(--fdInput_State_Font_Weight);
+  border-color: var(--sapField_InvalidColor);
+  border-width: var(--sapField_InvalidBorderWidth);
+  border-style: var(--sapField_InvalidBorderStyle)
 }
 .fd-textarea.is-error.is-hover,
 .fd-textarea.is-error:hover {
-  background-color: #fff;
-  background-color: var(--sapField_InvalidBackground,#fff);
-  border-color: #b00;
-  border-color: var(--sapField_InvalidColor,#b00)
+  background-color: var(--sapField_InvalidBackground);
+  border-color: var(--sapField_InvalidColor)
 }
 .fd-textarea.is-alert,
 .fd-textarea.is-warning {
-  background-color: #fff;
-  background-color: var(--sapField_WarningBackground,#fff);
-  font-style: normal;
-  font-style: var(--fdInput_State_Text_Style,normal);
-  font-weight: 400;
-  font-weight: var(--fdInput_State_Font_Weight,normal);
-  border-color: #df6e0c;
-  border-color: var(--sapField_WarningColor,#df6e0c);
-  border-width: .125rem;
-  border-width: var(--sapField_WarningBorderWidth,.125rem);
-  border-style: solid;
-  border-style: var(--sapField_WarningBorderStyle,solid)
+  background-color: var(--sapField_WarningBackground);
+  font-style: var(--fdInput_State_Text_Style);
+  font-weight: var(--fdInput_State_Font_Weight);
+  border-color: var(--sapField_WarningColor);
+  border-width: var(--sapField_WarningBorderWidth);
+  border-style: var(--sapField_WarningBorderStyle)
 }
 .fd-textarea.is-alert.is-hover,
 .fd-textarea.is-alert:hover,
 .fd-textarea.is-warning.is-hover,
 .fd-textarea.is-warning:hover {
-  background-color: #fff;
-  background-color: var(--sapField_WarningBackground,#fff);
-  border-color: #df6e0c;
-  border-color: var(--sapField_WarningColor,#df6e0c)
+  background-color: var(--sapField_WarningBackground);
+  border-color: var(--sapField_WarningColor)
 }
 .fd-textarea.is-information {
-  background-color: #fff;
-  background-color: var(--sapField_InformationBackground,#fff);
-  border-color: #0a6ed1;
-  border-color: var(--sapField_InformationColor,#0a6ed1);
-  border-width: .125rem;
-  border-width: var(--sapField_InformationBorderWidth,.125rem);
-  border-style: solid;
-  border-style: var(--sapField_InformationBorderStyle,solid)
+  background-color: var(--sapField_InformationBackground);
+  border-color: var(--sapField_InformationColor);
+  border-width: var(--sapField_InformationBorderWidth);
+  border-style: var(--sapField_InformationBorderStyle)
 }
 .fd-textarea.is-information.is-hover,
 .fd-textarea.is-information:hover {
-  background-color: #fff;
-  background-color: var(--sapField_InformationBackground,#fff);
-  border-color: #0a6ed1;
-  border-color: var(--sapField_InformationColor,#0a6ed1)
+  background-color: var(--sapField_InformationBackground);
+  border-color: var(--sapField_InformationColor)
 }
 .fd-textarea.is-focus,
 .fd-textarea:focus {
@@ -187,20 +139,16 @@
   -webkit-box-shadow: none;
   box-shadow: none;
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-textarea.is-alert,
 .fd-textarea.is-error,
 .fd-textarea.is-information,
 .fd-textarea.is-warning {
   border-width: .125rem;
-  border-style: solid;
-  border-style: var(--fdInput_State_Border_Type,solid)
+  border-style: var(--fdInput_State_Border_Type)
 }
 .fd-textarea.is-alert.is-focus,
 .fd-textarea.is-alert:focus,
@@ -218,8 +166,7 @@
 .fd-textarea.is-disabled,
 .fd-textarea:disabled,
 .fd-textarea[aria-disabled=true] {
-  opacity: .4;
-  opacity: var(--sapContent_DisabledOpacity,.4)
+  opacity: var(--sapContent_DisabledOpacity)
 }
 .fd-textarea.is-disabled::-webkit-input-placeholder,
 .fd-textarea:disabled::-webkit-input-placeholder,
@@ -250,10 +197,8 @@
 .fd-textarea[aria-readonly=true],
 .fd-textarea[readonly] {
   background-color: rgba(242,242,242,.5);
-  background-color: rgba(242,242,242,.5);
-  background-color: var(--sapField_ReadOnly_Background,rgba(242,242,242,.5));
-  border-color: #89919a;
-  border-color: var(--sapField_ReadOnly_BorderColor,#89919a)
+  background-color: var(--sapField_ReadOnly_Background);
+  border-color: var(--sapField_ReadOnly_BorderColor)
 }
 .fd-textarea.is-readonly::-webkit-input-placeholder,
 .fd-textarea[aria-readonly=true]::-webkit-input-placeholder,
@@ -293,14 +238,10 @@
   padding: .1875rem .5rem
 }
 .fd-textarea-counter {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -310,8 +251,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  color: var(--sapContent_LabelColor);
   padding: .125rem .125rem .5rem;
   text-align: end
 }

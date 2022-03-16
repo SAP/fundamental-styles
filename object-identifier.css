@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -8,24 +8,18 @@
   font-weight: inherit
 }
 .fd-object-identifier__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  color: #32363a;
-  color: var(--sapList_TextColor,#32363a);
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem)
+  color: var(--sapList_TextColor);
+  font-size: var(--sapFontLargeSize)
 }
 .fd-object-identifier__title::after,
 .fd-object-identifier__title::before {
@@ -37,14 +31,10 @@
   font-weight: 700
 }
 .fd-object-identifier__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -52,8 +42,7 @@
   margin: 0;
   border: 0;
   margin-top: .5rem;
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70)
+  color: var(--sapContent_LabelColor)
 }
 .fd-object-identifier__text::after,
 .fd-object-identifier__text::before {
@@ -62,6 +51,5 @@
   font-size: inherit
 }
 .fd-object-identifier--medium .fd-object-identifier__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem)
+  font-size: var(--sapFontSize)
 }

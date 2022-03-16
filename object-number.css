@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -8,26 +8,20 @@
 .fd-object-number+(--success | --warning | --error)
 */
 .fd-object-number {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  color: #6a6d70;
-  color: var(--sapNeutralTextColor,#6a6d70);
+  color: var(--sapNeutralTextColor);
   max-width: 100%;
   display: inline-block;
-  text-shadow: 0 0 .125rem #fff;
-  text-shadow: var(--sapContent_TextShadow,0 0 .125rem #fff)
+  text-shadow: var(--sapContent_TextShadow)
 }
 .fd-object-number::after,
 .fd-object-number::before {
@@ -37,14 +31,10 @@
 }
 .fd-object-number__text,
 .fd-object-number__unit {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -74,32 +64,26 @@
   font-weight: 700
 }
 .fd-object-number__unit {
-  font-family: "72-Light","72-Lightfull","72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif)
+  font-family: var(--sapFontLightFamily)
 }
 .fd-object-number--positive .fd-object-number__text,
 .fd-object-number--positive .fd-object-number__unit {
-  color: #107e3e;
-  color: var(--sapPositiveTextColor,#107e3e)
+  color: var(--sapPositiveTextColor)
 }
 .fd-object-number--critical .fd-object-number__text,
 .fd-object-number--critical .fd-object-number__unit {
-  color: #df6e0c;
-  color: var(--sapCriticalTextColor,#df6e0c)
+  color: var(--sapCriticalTextColor)
 }
 .fd-object-number--negative .fd-object-number__text,
 .fd-object-number--negative .fd-object-number__unit {
-  color: #b00;
-  color: var(--sapNegativeTextColor,#b00)
+  color: var(--sapNegativeTextColor)
 }
 .fd-object-number--informative .fd-object-number__text,
 .fd-object-number--informative .fd-object-number__unit {
-  color: #0a6ed1;
-  color: var(--sapInformativeTextColor,#0a6ed1)
+  color: var(--sapInformativeTextColor)
 }
 .fd-object-number--large .fd-object-number__text,
 .fd-object-number--large .fd-object-number__unit {
-  font-family: "72-Light","72-Lightfull","72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontLightFamily, "72-Light", "72-Lightfull", "72", "72full", Arial, Helvetica, sans-serif);
+  font-family: var(--sapFontLightFamily);
   font-size: 1.5rem
 }

@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-info-label {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -31,13 +27,11 @@
   line-height: normal;
   height: 1rem;
   max-width: 100%;
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  font-size: var(--sapFontSmallSize);
   letter-spacing: .0125rem;
   text-transform: uppercase;
   text-align: center;
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
+  color: var(--sapTextColor);
   padding: 0 .3125rem;
   border-width: .0625rem;
   border-style: solid
@@ -76,14 +70,10 @@
   margin: 0
 }
 .fd-info-label__text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -105,120 +95,86 @@
   font-size: inherit
 }
 .fd-info-label--accent-color-1 {
-  background-color: #fdf3e7;
-  background-color: var(--fdInfo_Label_Background_Color1,var(--sapLegendBackgroundColor1,#fdf3e7));
-  border-color: #d08014;
-  border-color: var(--fdInfo_Label_Border_Color1,var(--sapAccentColor1,#d08014))
+  background-color: var(--fdInfo_Label_Background_Color1);
+  border-color: var(--fdInfo_Label_Border_Color1)
 }
 .fd-info-label--accent-color-1[class*=sap-icon] {
-  border-color: #d08014;
-  border-color: var(--fdInfo_Label_Border_Color1,var(--sapAccentColor1,#d08014))
+  border-color: var(--fdInfo_Label_Border_Color1)
 }
 .fd-info-label--accent-color-2 {
-  background-color: #faeaea;
-  background-color: var(--fdInfo_Label_Background_Color2,var(--sapLegendBackgroundColor2,#faeaea));
-  border-color: #d04343;
-  border-color: var(--fdInfo_Label_Border_Color2,var(--sapAccentColor2,#d04343))
+  background-color: var(--fdInfo_Label_Background_Color2);
+  border-color: var(--fdInfo_Label_Border_Color2)
 }
 .fd-info-label--accent-color-2[class*=sap-icon] {
-  border-color: #d04343;
-  border-color: var(--fdInfo_Label_Border_Color2,var(--sapAccentColor2,#d04343))
+  border-color: var(--fdInfo_Label_Border_Color2)
 }
 .fd-info-label--accent-color-3 {
-  background-color: #fce9f2;
-  background-color: var(--fdInfo_Label_Background_Color3,var(--sapLegendBackgroundColor3,#fce9f2));
-  border-color: #db1f77;
-  border-color: var(--fdInfo_Label_Border_Color3,var(--sapAccentColor3,#db1f77))
+  background-color: var(--fdInfo_Label_Background_Color3);
+  border-color: var(--fdInfo_Label_Border_Color3)
 }
 .fd-info-label--accent-color-3[class*=sap-icon] {
-  border-color: #db1f77;
-  border-color: var(--fdInfo_Label_Border_Color3,var(--sapAccentColor3,#db1f77))
+  border-color: var(--fdInfo_Label_Border_Color3)
 }
 .fd-info-label--accent-color-4 {
-  background-color: #f9ebf5;
-  background-color: var(--fdInfo_Label_Background_Color4,var(--sapLegendBackgroundColor5,#f9ebf5));
-  border-color: #c0399f;
-  border-color: var(--fdInfo_Label_Border_Color4,var(--sapAccentColor4,#c0399f))
+  background-color: var(--fdInfo_Label_Background_Color4);
+  border-color: var(--fdInfo_Label_Border_Color4)
 }
 .fd-info-label--accent-color-4[class*=sap-icon] {
-  border-color: #c0399f;
-  border-color: var(--fdInfo_Label_Border_Color4,var(--sapAccentColor4,#c0399f))
+  border-color: var(--fdInfo_Label_Border_Color4)
 }
 .fd-info-label--accent-color-5 {
-  background-color: #ecedf8;
-  background-color: var(--fdInfo_Label_Background_Color5,var(--sapLegendBackgroundColor20,#ecedf8));
-  border-color: #6367de;
-  border-color: var(--fdInfo_Label_Border_Color5,var(--sapAccentColor5,#6367de))
+  background-color: var(--fdInfo_Label_Background_Color5);
+  border-color: var(--fdInfo_Label_Border_Color5)
 }
 .fd-info-label--accent-color-5[class*=sap-icon] {
-  border-color: #6367de;
-  border-color: var(--fdInfo_Label_Border_Color5,var(--sapAccentColor5,#6367de))
+  border-color: var(--fdInfo_Label_Border_Color5)
 }
 .fd-info-label--accent-color-6 {
-  background-color: #ebf3fa;
-  background-color: var(--fdInfo_Label_Background_Color6,var(--sapLegendBackgroundColor6,#ebf3fa));
-  border-color: #286eb4;
-  border-color: var(--fdInfo_Label_Border_Color6,var(--sapAccentColor6,#286eb4))
+  background-color: var(--fdInfo_Label_Background_Color6);
+  border-color: var(--fdInfo_Label_Border_Color6)
 }
 .fd-info-label--accent-color-6[class*=sap-icon] {
-  border-color: #286eb4;
-  border-color: var(--fdInfo_Label_Border_Color6,var(--sapAccentColor6,#286eb4))
+  border-color: var(--fdInfo_Label_Border_Color6)
 }
 .fd-info-label--accent-color-7 {
-  background-color: #e8fbfd;
-  background-color: var(--fdInfo_Label_Background_Color7,var(--sapLegendBackgroundColor7,#e8fbfd));
-  border-color: #0f828f;
-  border-color: var(--fdInfo_Label_Border_Color7,var(--sapAccentColor7,#0f828f))
+  background-color: var(--fdInfo_Label_Background_Color7);
+  border-color: var(--fdInfo_Label_Border_Color7)
 }
 .fd-info-label--accent-color-7[class*=sap-icon] {
-  border-color: #0f828f;
-  border-color: var(--fdInfo_Label_Border_Color7,var(--sapAccentColor7,#0f828f))
+  border-color: var(--fdInfo_Label_Border_Color7)
 }
 .fd-info-label--accent-color-8 {
-  background-color: #f5f7ed;
-  background-color: var(--fdInfo_Label_Background_Color8,var(--sapLegendBackgroundColor18,#f5f7ed));
-  border-color: #687a33;
-  border-color: var(--fdInfo_Label_Border_Color8,var(--sapLegendColor18,#687a33))
+  background-color: var(--fdInfo_Label_Background_Color8);
+  border-color: var(--fdInfo_Label_Border_Color8)
 }
 .fd-info-label--accent-color-8[class*=sap-icon] {
-  border-color: #687a33;
-  border-color: var(--fdInfo_Label_Border_Color8,var(--sapLegendColor18,#687a33))
+  border-color: var(--fdInfo_Label_Border_Color8)
 }
 .fd-info-label--accent-color-9 {
-  background-color: #f9ebf6;
-  background-color: var(--fdInfo_Label_Background_Color9,var(--sapLegendBackgroundColor10,#f9ebf6));
-  border-color: #647987;
-  border-color: var(--fdInfo_Label_Border_Color9,var(--sapAccentColor10,#647987))
+  background-color: var(--fdInfo_Label_Background_Color9);
+  border-color: var(--fdInfo_Label_Border_Color9)
 }
 .fd-info-label--accent-color-9[class*=sap-icon] {
-  border-color: #647987;
-  border-color: var(--fdInfo_Label_Border_Color9,var(--sapAccentColor10,#647987))
+  border-color: var(--fdInfo_Label_Border_Color9)
 }
 .fd-info-label--accent-color-10 {
-  background-color: #f1f3f4;
-  background-color: var(--fdInfo_Label_Background_Color10,var(--sapLegendBackgroundColor9,#f1f3f4));
-  border-color: #925ace;
-  border-color: var(--fdInfo_Label_Border_Color10,var(--sapAccentColor9,#925ace))
+  background-color: var(--fdInfo_Label_Background_Color10);
+  border-color: var(--fdInfo_Label_Border_Color10)
 }
 .fd-info-label--accent-color-10[class*=sap-icon] {
-  border-color: #925ace;
-  border-color: var(--fdInfo_Label_Border_Color10,var(--sapAccentColor9,#925ace))
+  border-color: var(--fdInfo_Label_Border_Color10)
 }
 .fd-info-label--display {
-  border-color: transparent;
-  border-color: var(--fdInfo_Label_Display_Border_Color,transparent);
-  background-color: #32363a;
-  background-color: var(--fdInfo_Label_Display_Background_Color,var(--sapTextColor,#32363a));
-  color: #fff;
-  color: var(--fdInfo_Label_Display_Text_Color,var(--sapContent_ContrastTextColor,#fff))
+  border-color: var(--fdInfo_Label_Display_Border_Color);
+  background-color: var(--fdInfo_Label_Display_Background_Color);
+  color: var(--fdInfo_Label_Display_Text_Color)
 }
 .fd-info-label--numeric {
   padding: 0 .1875rem;
   font-weight: 700
 }
 .fd-info-label--icon {
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  font-size: var(--sapFontSmallSize);
   padding: 0 .1875rem;
   line-height: 1rem
 }

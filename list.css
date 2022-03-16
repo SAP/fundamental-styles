@@ -1,17 +1,13 @@
 /*!
- * Fundamental Library Styles v0.22.0
+ * Fundamental Library Styles v0.23.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fd-list {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -21,8 +17,7 @@
   position: relative;
   list-style: none;
   width: 100%;
-  text-shadow: none;
-  text-shadow: var(--fdListBase_Text_Shadow,none)
+  text-shadow: var(--fdListBase_Text_Shadow)
 }
 .fd-list::after,
 .fd-list::before {
@@ -33,14 +28,10 @@
 .fd-list__footer,
 .fd-list__group-header,
 .fd-list__item {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -67,10 +58,8 @@
   font-size: inherit
 }
 .fd-list__item {
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5);
-  background: #fff;
-  background: var(--sapList_Background,#fff);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  background: var(--sapList_Background);
   position: relative
 }
 .fd-list__item.is-focus,
@@ -83,8 +72,7 @@
   content: "";
   position: absolute;
   display: block;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
+  border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
   top: .125rem;
   left: .125rem;
   right: .125rem;
@@ -95,8 +83,7 @@
 .fd-list__item.is-focus:active::before,
 .fd-list__item:focus.is-active::before,
 .fd-list__item:focus:active::before {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_ContrastFocusColor,#fff)
+  border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor)
 }
 .fd-list__item--unread .fd-list__title {
   font-weight: 700
@@ -106,15 +93,12 @@
 }
 .fd-list__item--interractive.is-hover,
 .fd-list__item--interractive:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-list__item--interractive.is-selected,
 .fd-list__item--interractive[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list__item--interractive.is-selected .fd-list__link,
 .fd-list__item--interractive[aria-selected=true] .fd-list__link {
@@ -124,34 +108,29 @@
 .fd-list__item--interractive.is-selected .fd-list__link:active,
 .fd-list__item--interractive[aria-selected=true] .fd-list__link.is-active,
 .fd-list__item--interractive[aria-selected=true] .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--interractive.is-selected.is-hover,
 .fd-list__item--interractive.is-selected:hover,
 .fd-list__item--interractive[aria-selected=true].is-hover,
 .fd-list__item--interractive[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-list__item--interractive.is-active,
 .fd-list__item--interractive:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--interractive.is-active.is-hover,
 .fd-list__item--interractive.is-active:hover,
 .fd-list__item--interractive:active.is-hover,
 .fd-list__item--interractive:active:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--interractive.is-active.is-selected,
 .fd-list__item--interractive.is-active[aria-selected=true],
 .fd-list__item--interractive:active.is-selected,
 .fd-list__item--interractive:active[aria-selected=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--interractive.is-active.is-selected.is-hover,
 .fd-list__item--interractive.is-active.is-selected:hover,
@@ -161,8 +140,7 @@
 .fd-list__item--interractive:active.is-selected:hover,
 .fd-list__item--interractive:active[aria-selected=true].is-hover,
 .fd-list__item--interractive:active[aria-selected=true]:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--interractive.is-active,
 .fd-list__item--interractive.is-active .fd-list__byline,
@@ -184,82 +162,64 @@
 .fd-list__item--interractive:active .fd-list__thumbnail,
 .fd-list__item--interractive:active .fd-list__title,
 .fd-list__item--interractive:active.fd-list__link--navigation-indicator::after {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--interractive.is-active .fd-list__byline-right--neutral,
 .fd-list__item--interractive:active .fd-list__byline-right--neutral {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--interractive.is-active .fd-list__byline-right--positive,
 .fd-list__item--interractive:active .fd-list__byline-right--positive {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--interractive.is-active .fd-list__byline-right--critical,
 .fd-list__item--interractive:active .fd-list__byline-right--critical {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--interractive.is-active .fd-list__byline-right--negative,
 .fd-list__item--interractive:active .fd-list__byline-right--negative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--interractive.is-active .fd-list__byline-right--informative,
 .fd-list__item--interractive:active .fd-list__byline-right--informative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--action {
   padding: 0;
   text-align: center;
-  border-bottom: .0625rem solid #e5e5e5;
-  border-bottom: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5));
-  height: 2.75rem;
-  height: var(--fdList_Item_Action_Height,2.75rem)
+  border-bottom: var(--fdList_Item_Action_Border);
+  height: var(--fdList_Item_Action_Height)
 }
 .fd-list__item--action:first-child {
-  border-top: .0625rem solid #e5e5e5;
-  border-top: var(--fdList_Item_Action_Border,var(--sapList_BorderWidth,.0625rem) solid var(--sapList_BorderColor,#e5e5e5))
+  border-top: var(--fdList_Item_Action_Border)
 }
 .fd-list__item--action .fd-list__title {
   padding: 0 1rem;
-  height: 100%;
-  height: var(--fdList_Item_Action_Button_Size,100%);
+  height: var(--fdList_Item_Action_Button_Size);
   width: 100%;
   background: 0 0;
-  color: #0854a0;
-  color: var(--sapButton_TextColor,#0854a0);
+  color: var(--sapButton_TextColor);
   pointer-events: all;
   cursor: pointer;
-  text-shadow: none;
-  text-shadow: var(--fdListBase_Text_Shadow,none);
-  margin: 0;
-  margin: var(--fdList_Item_Action_Button_Spacing,0);
-  border: none;
-  border: var(--fdList_Item_Action_Button_Border,none);
-  border-radius: 0;
-  border-radius: var(--fdList_Item_Action_Button_Border_Radius,0)
+  text-shadow: var(--fdListBase_Text_Shadow);
+  margin: var(--fdList_Item_Action_Button_Spacing);
+  border: var(--fdList_Item_Action_Button_Border);
+  border-radius: var(--fdList_Item_Action_Button_Border_Radius)
 }
 .fd-list__item--action .fd-list__title.is-hover,
 .fd-list__item--action .fd-list__title:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-list__item--action .fd-list__title.is-selected,
 .fd-list__item--action .fd-list__title[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list__item--action .fd-list__title.is-selected .fd-list__link,
 .fd-list__item--action .fd-list__title[aria-selected=true] .fd-list__link {
@@ -269,34 +229,29 @@
 .fd-list__item--action .fd-list__title.is-selected .fd-list__link:active,
 .fd-list__item--action .fd-list__title[aria-selected=true] .fd-list__link.is-active,
 .fd-list__item--action .fd-list__title[aria-selected=true] .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--action .fd-list__title.is-selected.is-hover,
 .fd-list__item--action .fd-list__title.is-selected:hover,
 .fd-list__item--action .fd-list__title[aria-selected=true].is-hover,
 .fd-list__item--action .fd-list__title[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-list__item--action .fd-list__title.is-active,
 .fd-list__item--action .fd-list__title:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--action .fd-list__title.is-active.is-hover,
 .fd-list__item--action .fd-list__title.is-active:hover,
 .fd-list__item--action .fd-list__title:active.is-hover,
 .fd-list__item--action .fd-list__title:active:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--action .fd-list__title.is-active.is-selected,
 .fd-list__item--action .fd-list__title.is-active[aria-selected=true],
 .fd-list__item--action .fd-list__title:active.is-selected,
 .fd-list__item--action .fd-list__title:active[aria-selected=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--action .fd-list__title.is-active.is-selected.is-hover,
 .fd-list__item--action .fd-list__title.is-active.is-selected:hover,
@@ -306,8 +261,7 @@
 .fd-list__item--action .fd-list__title:active.is-selected:hover,
 .fd-list__item--action .fd-list__title:active[aria-selected=true].is-hover,
 .fd-list__item--action .fd-list__title:active[aria-selected=true]:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item--action .fd-list__title.is-active,
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline,
@@ -329,56 +283,46 @@
 .fd-list__item--action .fd-list__title:active .fd-list__thumbnail,
 .fd-list__item--action .fd-list__title:active .fd-list__title,
 .fd-list__item--action .fd-list__title:active.fd-list__link--navigation-indicator::after {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--neutral,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--neutral {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--positive,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--positive {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--critical,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--critical {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--negative,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--negative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-active .fd-list__byline-right--informative,
 .fd-list__item--action .fd-list__title:active .fd-list__byline-right--informative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__item--action .fd-list__title.is-focus,
 .fd-list__item--action .fd-list__title:focus {
   outline-offset: -.125rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-list__item--action .fd-list__title.is-focus.is-active,
 .fd-list__item--action .fd-list__title.is-focus:active,
 .fd-list__item--action .fd-list__title:focus.is-active,
 .fd-list__item--action .fd-list__title:focus:active {
-  outline-color: #fff;
-  outline-color: var(--sapContent_ContrastFocusColor,#fff)
+  outline-color: var(--sapContent_ContrastFocusColor)
 }
 .fd-list__item--action .fd-list__title::-moz-focus-inner {
   border: 0
@@ -395,14 +339,10 @@
   align-items: center
 }
 .fd-list__item--growing .fd-list__title-text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -437,10 +377,8 @@
 }
 .fd-list__item.is-selected,
 .fd-list__item[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list__item.is-selected .fd-list__link,
 .fd-list__item[aria-selected=true] .fd-list__link {
@@ -450,26 +388,20 @@
 .fd-list__item.is-selected .fd-list__link:active,
 .fd-list__item[aria-selected=true] .fd-list__link.is-active,
 .fd-list__item[aria-selected=true] .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__item.is-selected.is-hover,
 .fd-list__item.is-selected:hover,
 .fd-list__item[aria-selected=true].is-hover,
 .fd-list__item[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-list__secondary,
 .fd-list__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -480,8 +412,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   pointer-events: none;
-  color: #32363a;
-  color: var(--sapList_TextColor,#32363a);
+  color: var(--sapList_TextColor);
   pointer-events: all
 }
 .fd-list__secondary::after,
@@ -496,18 +427,15 @@
   -webkit-box-flex: 3;
   -ms-flex: 3 3 10%;
   flex: 3 3 10%;
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem);
-  min-height: .875rem;
-  min-height: var(--sapFontSize,.875rem)
+  font-size: var(--sapFontLargeSize);
+  min-height: var(--sapFontSize)
 }
 .fd-list__title:last-child:first-child {
   -ms-flex-preferred-size: auto;
   flex-basis: auto
 }
 .fd-list__secondary {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-size: var(--sapFontSize);
   -webkit-box-flex: 2;
   -ms-flex: 2 2 10%;
   flex: 2 2 10%;
@@ -537,10 +465,8 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #32363a;
-  color: var(--sapList_TextColor,#32363a);
-  font-size: 1.125rem;
-  font-size: var(--sapFontHeader4Size,1.125rem);
+  color: var(--sapList_TextColor);
+  font-size: var(--sapFontHeader4Size);
   width: 2.75rem;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -569,14 +495,10 @@
   margin-right: 0
 }
 .fd-list__link {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -611,8 +533,7 @@
   content: "";
   position: absolute;
   display: block;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
+  border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
   top: .125rem;
   left: .125rem;
   right: .125rem;
@@ -623,20 +544,16 @@
 .fd-list__link.is-focus:active::before,
 .fd-list__link:focus.is-active::before,
 .fd-list__link:focus:active::before {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_ContrastFocusColor,#fff)
+  border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor)
 }
 .fd-list__link.is-hover,
 .fd-list__link:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-list__link.is-selected,
 .fd-list__link[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list__link.is-selected .fd-list__link,
 .fd-list__link[aria-selected=true] .fd-list__link {
@@ -646,34 +563,29 @@
 .fd-list__link.is-selected .fd-list__link:active,
 .fd-list__link[aria-selected=true] .fd-list__link.is-active,
 .fd-list__link[aria-selected=true] .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__link.is-selected.is-hover,
 .fd-list__link.is-selected:hover,
 .fd-list__link[aria-selected=true].is-hover,
 .fd-list__link[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-list__link.is-active,
 .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__link.is-active.is-hover,
 .fd-list__link.is-active:hover,
 .fd-list__link:active.is-hover,
 .fd-list__link:active:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__link.is-active.is-selected,
 .fd-list__link.is-active[aria-selected=true],
 .fd-list__link:active.is-selected,
 .fd-list__link:active[aria-selected=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__link.is-active.is-selected.is-hover,
 .fd-list__link.is-active.is-selected:hover,
@@ -683,8 +595,7 @@
 .fd-list__link:active.is-selected:hover,
 .fd-list__link:active[aria-selected=true].is-hover,
 .fd-list__link:active[aria-selected=true]:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list__link.is-active,
 .fd-list__link.is-active .fd-list__byline,
@@ -706,65 +617,52 @@
 .fd-list__link:active .fd-list__thumbnail,
 .fd-list__link:active .fd-list__title,
 .fd-list__link:active.fd-list__link--navigation-indicator::after {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--neutral,
 .fd-list__link:active .fd-list__byline-right--neutral {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--positive,
 .fd-list__link:active .fd-list__byline-right--positive {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--critical,
 .fd-list__link:active .fd-list__byline-right--critical {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--negative,
 .fd-list__link:active .fd-list__byline-right--negative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__link.is-active .fd-list__byline-right--informative,
 .fd-list__link:active .fd-list__byline-right--informative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list__group-header {
-  background: #fff;
-  background: var(--sapList_GroupHeaderBackground,#fff);
-  border-bottom: .0625rem solid #d9d9d9;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_GroupHeaderBorderColor,#d9d9d9);
-  color: #32363a;
-  color: var(--sapList_GroupHeaderTextColor,#32363a);
+  background: var(--sapList_GroupHeaderBackground);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
+  color: var(--sapList_GroupHeaderTextColor);
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
   height: 2.75rem
 }
 .fd-list__group-header .fd-list__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-size: var(--sapFontSize);
   font-weight: 700;
   line-height: 2rem
 }
 .fd-list__footer {
-  background: #fafafa;
-  background: var(--sapList_FooterBackground,#fafafa);
-  color: #32363a;
-  color: var(--sapList_FooterTextColor,#32363a);
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  background: var(--sapList_FooterBackground);
+  color: var(--sapList_FooterTextColor);
+  font-size: var(--sapFontSize);
   height: 2rem
 }
 .fd-list__footer--right {
@@ -781,14 +679,10 @@
   font-weight: 700
 }
 .fd-list__message {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -802,8 +696,7 @@
   left: 0;
   height: 2rem;
   padding-left: .5rem;
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  font-size: var(--sapFontSmallSize);
   overflow: hidden;
   text-overflow: ellipsis
 }
@@ -819,48 +712,38 @@
   padding-right: .5rem
 }
 .fd-list__message--error {
-  background-color: #ffebeb;
-  background-color: var(--sapErrorBackground,#ffebeb)
+  background-color: var(--sapErrorBackground)
 }
 .fd-list__message--warning {
-  background-color: #fef7f1;
-  background-color: var(--sapWarningBackground,#fef7f1)
+  background-color: var(--sapWarningBackground)
 }
 .fd-list__message--success {
-  background-color: #f1fdf6;
-  background-color: var(--sapSuccessBackground,#f1fdf6)
+  background-color: var(--sapSuccessBackground)
 }
 .fd-list__message--information {
-  background-color: #f5faff;
-  background-color: var(--sapInformationBackground,#f5faff)
+  background-color: var(--sapInformationBackground)
 }
 .fd-list .fd-list__button {
-  margin-left: .125rem;
-  margin-left: var(--fdListButtonSpacing,.125rem)
+  margin-left: var(--fdListButtonSpacing)
 }
 .fd-list .fd-list__button[dir=rtl],
 [dir=rtl] .fd-list .fd-list__button {
   margin-left: 0;
-  margin-right: .125rem;
-  margin-right: var(--fdListButtonSpacing,.125rem)
+  margin-right: var(--fdListButtonSpacing)
 }
 .fd-list--compact .fd-list__item {
   height: 2rem
 }
 .fd-list--compact .fd-list__item.fd-list__item--action .fd-list__title {
-  height: 100%;
-  height: var(--fdList_Item_Action_Button_Size_Compact,100%)
+  height: var(--fdList_Item_Action_Button_Size_Compact)
 }
 .fd-list--compact .fd-list__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  min-height: .875rem;
-  min-height: var(--sapFontSize,.875rem)
+  font-size: var(--sapFontSize);
+  min-height: var(--sapFontSize)
 }
 .fd-list--compact .fd-list__icon [class*=sap-icon],
 .fd-list--compact .fd-list__icon[class*=sap-icon] {
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem)
+  font-size: var(--sapFontLargeSize)
 }
 .fd-list--no-border .fd-list__group-header,
 .fd-list--no-border .fd-list__item {
@@ -869,8 +752,7 @@
 }
 .fd-list--no-border .fd-list__item.is-selected,
 .fd-list--no-border .fd-list__item[aria-selected=true] {
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list--has-message {
   padding-top: 2rem
@@ -890,15 +772,12 @@
 }
 .fd-list--dropdown .fd-list__item.is-hover,
 .fd-list--dropdown .fd-list__item:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-list--dropdown .fd-list__item.is-selected,
 .fd-list--dropdown .fd-list__item[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list--dropdown .fd-list__item.is-selected .fd-list__link,
 .fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link {
@@ -908,34 +787,29 @@
 .fd-list--dropdown .fd-list__item.is-selected .fd-list__link:active,
 .fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link.is-active,
 .fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--dropdown .fd-list__item.is-selected.is-hover,
 .fd-list--dropdown .fd-list__item.is-selected:hover,
 .fd-list--dropdown .fd-list__item[aria-selected=true].is-hover,
 .fd-list--dropdown .fd-list__item[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-list--dropdown .fd-list__item.is-active,
 .fd-list--dropdown .fd-list__item:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--dropdown .fd-list__item.is-active.is-hover,
 .fd-list--dropdown .fd-list__item.is-active:hover,
 .fd-list--dropdown .fd-list__item:active.is-hover,
 .fd-list--dropdown .fd-list__item:active:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--dropdown .fd-list__item.is-active.is-selected,
 .fd-list--dropdown .fd-list__item.is-active[aria-selected=true],
 .fd-list--dropdown .fd-list__item:active.is-selected,
 .fd-list--dropdown .fd-list__item:active[aria-selected=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--dropdown .fd-list__item.is-active.is-selected.is-hover,
 .fd-list--dropdown .fd-list__item.is-active.is-selected:hover,
@@ -945,8 +819,7 @@
 .fd-list--dropdown .fd-list__item:active.is-selected:hover,
 .fd-list--dropdown .fd-list__item:active[aria-selected=true].is-hover,
 .fd-list--dropdown .fd-list__item:active[aria-selected=true]:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--dropdown .fd-list__item.is-active,
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline,
@@ -968,38 +841,32 @@
 .fd-list--dropdown .fd-list__item:active .fd-list__thumbnail,
 .fd-list--dropdown .fd-list__item:active .fd-list__title,
 .fd-list--dropdown .fd-list__item:active.fd-list__link--navigation-indicator::after {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--neutral,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--neutral {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--positive,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--positive {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--critical,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--critical {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--negative,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--negative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--informative,
 .fd-list--dropdown .fd-list__item:active .fd-list__byline-right--informative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--dropdown.fd-list--compact .fd-list__item {
@@ -1012,15 +879,12 @@
 }
 .fd-list--multi-input .fd-list__item.is-hover,
 .fd-list--multi-input .fd-list__item:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-list--multi-input .fd-list__item.is-selected,
 .fd-list--multi-input .fd-list__item[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list--multi-input .fd-list__item.is-selected .fd-list__link,
 .fd-list--multi-input .fd-list__item[aria-selected=true] .fd-list__link {
@@ -1030,34 +894,29 @@
 .fd-list--multi-input .fd-list__item.is-selected .fd-list__link:active,
 .fd-list--multi-input .fd-list__item[aria-selected=true] .fd-list__link.is-active,
 .fd-list--multi-input .fd-list__item[aria-selected=true] .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--multi-input .fd-list__item.is-selected.is-hover,
 .fd-list--multi-input .fd-list__item.is-selected:hover,
 .fd-list--multi-input .fd-list__item[aria-selected=true].is-hover,
 .fd-list--multi-input .fd-list__item[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-list--multi-input .fd-list__item.is-active,
 .fd-list--multi-input .fd-list__item:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--multi-input .fd-list__item.is-active.is-hover,
 .fd-list--multi-input .fd-list__item.is-active:hover,
 .fd-list--multi-input .fd-list__item:active.is-hover,
 .fd-list--multi-input .fd-list__item:active:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--multi-input .fd-list__item.is-active.is-selected,
 .fd-list--multi-input .fd-list__item.is-active[aria-selected=true],
 .fd-list--multi-input .fd-list__item:active.is-selected,
 .fd-list--multi-input .fd-list__item:active[aria-selected=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--multi-input .fd-list__item.is-active.is-selected.is-hover,
 .fd-list--multi-input .fd-list__item.is-active.is-selected:hover,
@@ -1067,8 +926,7 @@
 .fd-list--multi-input .fd-list__item:active.is-selected:hover,
 .fd-list--multi-input .fd-list__item:active[aria-selected=true].is-hover,
 .fd-list--multi-input .fd-list__item:active[aria-selected=true]:hover {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--multi-input .fd-list__item.is-active,
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline,
@@ -1090,49 +948,39 @@
 .fd-list--multi-input .fd-list__item:active .fd-list__thumbnail,
 .fd-list--multi-input .fd-list__item:active .fd-list__title,
 .fd-list--multi-input .fd-list__item:active.fd-list__link--navigation-indicator::after {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--neutral,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--neutral {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--positive,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--positive {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--critical,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--critical {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--negative,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--negative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--multi-input .fd-list__item.is-active .fd-list__byline-right--informative,
 .fd-list--multi-input .fd-list__item:active .fd-list__byline-right--informative {
-  color: #fff;
-  color: var(--sapList_Active_TextColor,#fff);
+  color: var(--sapList_Active_TextColor);
   text-shadow: none
 }
 .fd-list--multi-input .fd-list__label {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1183,8 +1031,7 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
   line-height: 1rem;
-  background-color: #fff;
-  background-color: var(--sapList_Background,#fff)
+  background-color: var(--sapList_Background)
 }
 .fd-list--multi-input .fd-list__footer,
 .fd-list--multi-input .fd-list__label {
@@ -1218,15 +1065,13 @@
 .fd-list--dropdown .fd-list__item[aria-selected=true],
 .fd-list--multi-input .fd-list__item.is-selected,
 .fd-list--multi-input .fd-list__item[aria-selected=true] {
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list--dropdown .fd-list__secondary,
 .fd-list--dropdown .fd-list__title,
 .fd-list--multi-input .fd-list__secondary,
 .fd-list--multi-input .fd-list__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  font-size: var(--sapFontSize);
   white-space: normal;
   -webkit-box-flex: 1;
   -ms-flex: auto;
@@ -1315,14 +1160,10 @@
   min-width: 2rem
 }
 .fd-list--byline .fd-list__thumbnail {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1348,8 +1189,7 @@
   border-radius: .25rem;
   margin-right: .75rem;
   font-size: 2.5rem;
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70)
+  color: var(--sapContent_NonInteractiveIconColor)
 }
 .fd-list--byline .fd-list__thumbnail::after,
 .fd-list--byline .fd-list__thumbnail::before {
@@ -1371,14 +1211,10 @@
   margin-left: .75rem
 }
 .fd-list--byline .fd-list__content {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1410,19 +1246,14 @@
   font-size: inherit
 }
 .fd-list--byline .fd-list__title {
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem);
+  font-size: var(--sapFontLargeSize);
   min-height: 1rem
 }
 .fd-list--byline .fd-list__byline {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1432,10 +1263,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
   line-height: 1rem;
   padding-top: .75rem
 }
@@ -1460,14 +1289,10 @@
   white-space: normal
 }
 .fd-list--byline .fd-list__byline-left {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1478,8 +1303,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 60%;
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  color: var(--sapContent_LabelColor);
   padding-right: .5rem;
   line-height: 1rem;
   -ms-flex-item-align: end;
@@ -1497,14 +1321,10 @@
   padding-right: 0
 }
 .fd-list--byline .fd-list__byline-right {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1515,8 +1335,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 40%;
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
+  color: var(--sapContent_LabelColor);
   padding-left: .5rem;
   line-height: 1rem;
   text-align: right;
@@ -1536,32 +1355,26 @@
   text-align: left
 }
 .fd-list--byline .fd-list__byline-right--neutral {
-  color: #6a6d70;
-  color: var(--sapNeutralTextColor,#6a6d70)
+  color: var(--sapNeutralTextColor)
 }
 .fd-list--byline .fd-list__byline-right--positive {
-  color: #107e3e;
-  color: var(--sapPositiveTextColor,#107e3e)
+  color: var(--sapPositiveTextColor)
 }
 .fd-list--byline .fd-list__byline-right--critical {
-  color: #df6e0c;
-  color: var(--sapCriticalTextColor,#df6e0c)
+  color: var(--sapCriticalTextColor)
 }
 .fd-list--byline .fd-list__byline-right--negative {
-  color: #b00;
-  color: var(--sapNegativeTextColor,#b00)
+  color: var(--sapNegativeTextColor)
 }
 .fd-list--byline .fd-list__byline-right--informative {
-  color: #0a6ed1;
-  color: var(--sapInformativeTextColor,#0a6ed1)
+  color: var(--sapInformativeTextColor)
 }
 .fd-list--byline .fd-list__byline-left--wrap,
 .fd-list--byline .fd-list__byline-right--wrap {
   white-space: normal
 }
 .fd-list--byline.fd-list--compact .fd-list__title {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem)
+  font-size: var(--sapFontSize)
 }
 .fd-list--byline.fd-list--no-border .fd-list__item {
   padding: .5rem 1rem;
@@ -1779,14 +1592,10 @@
   padding-right: 1rem
 }
 .fd-list .fd-list__navigation-item-indicator {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1808,12 +1617,9 @@
   right: 0;
   top: .5625rem;
   height: 1.625rem;
-  background-color: #0854a0;
-  background-color: var(--sapSelectedColor,#0854a0);
-  color: #0854a0;
-  color: var(--sapSelectedColor,#0854a0);
-  border-radius: .125rem;
-  border-radius: var(--sapField_BorderCornerRadius,.125rem);
+  background-color: var(--sapSelectedColor);
+  color: var(--sapSelectedColor);
+  border-radius: var(--sapField_BorderCornerRadius);
   margin-right: .3125rem
 }
 .fd-list .fd-list__navigation-item-indicator[dir=rtl]::after,
@@ -1824,14 +1630,10 @@
   margin-left: .3125rem
 }
 .fd-list__navigation-item {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1854,12 +1656,9 @@
 .fd-list__navigation-item.is-focus,
 .fd-list__navigation-item:focus {
   outline-offset: -.1875rem;
-  outline-width: .0625rem;
-  outline-width: var(--sapContent_FocusWidth,.0625rem);
-  outline-color: #000;
-  outline-color: var(--sapContent_FocusColor,#000);
-  outline-style: dotted;
-  outline-style: var(--sapContent_FocusStyle,dotted)
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle)
 }
 .fd-list__navigation-item[dir=rtl],
 [dir=rtl] .fd-list__navigation-item {
@@ -1867,14 +1666,12 @@
   padding-left: 1rem
 }
 .fd-list__navigation-item.fd-list__navigation-item--indicated {
-  color: #0854a0;
-  color: var(--sapSelectedColor,#0854a0)
+  color: var(--sapSelectedColor)
 }
 .fd-list__navigation-item.fd-list__navigation-item--indicated .fd-list__navigation-item-arrow,
 .fd-list__navigation-item.fd-list__navigation-item--indicated .fd-list__navigation-item-icon,
 .fd-list__navigation-item.fd-list__navigation-item--indicated .fd-list__navigation-item-text {
-  color: #0854a0;
-  color: var(--sapSelectedColor,#0854a0)
+  color: var(--sapSelectedColor)
 }
 .fd-list__navigation-item .fd-list {
   display: none
@@ -1885,12 +1682,9 @@
 .fd-list__navigation-item.is-expanded {
   margin-left: .25rem;
   margin-right: .25rem;
-  border-radius: .25rem;
-  border-radius: var(--sapElement_BorderCornerRadius,.25rem);
-  -webkit-box-shadow: 0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1);
-  -webkit-box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1));
-  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1);
-  box-shadow: var(--sapContent_Shadow0,0 0 0 .0625rem rgba(0,0,0,.1),0 .125rem .5rem 0 rgba(0,0,0,.1));
+  border-radius: var(--sapElement_BorderCornerRadius);
+  -webkit-box-shadow: var(--sapContent_Shadow0);
+  box-shadow: var(--sapContent_Shadow0);
   height: 100%;
   overflow: hidden
 }
@@ -1903,14 +1697,12 @@
   width: 100%
 }
 .fd-list__navigation-item.is-expanded .fd-list__navigation-item.fd-list__navigation-item--indicated {
-  color: #0854a0;
-  color: var(--sapSelectedColor,#0854a0)
+  color: var(--sapSelectedColor)
 }
 .fd-list__navigation-item.is-expanded .fd-list__navigation-item.fd-list__navigation-item--indicated .fd-list__navigation-item-arrow,
 .fd-list__navigation-item.is-expanded .fd-list__navigation-item.fd-list__navigation-item--indicated .fd-list__navigation-item-icon,
 .fd-list__navigation-item.is-expanded .fd-list__navigation-item.fd-list__navigation-item--indicated .fd-list__navigation-item-text {
-  color: #0854a0;
-  color: var(--sapSelectedColor,#0854a0)
+  color: var(--sapSelectedColor)
 }
 .fd-list__navigation-item.is-expanded .fd-list__navigation-item .fd-list__navigation-item-indicator::after {
   margin-right: 0
@@ -1920,14 +1712,10 @@
   margin-left: 0
 }
 .fd-list__navigation-item.is-expanded .fd-list__navigation-item .fd-list__navigation-item-text {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1936,10 +1724,8 @@
   border: 0;
   vertical-align: middle;
   line-height: 2.75rem;
-  color: #6a6d70;
-  color: var(--sapContent_LabelColor,#6a6d70);
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
+  color: var(--sapContent_LabelColor);
+  font-size: var(--sapFontSize);
   margin-left: 2.5rem
 }
 .fd-list__navigation-item.is-expanded .fd-list__navigation-item .fd-list__navigation-item-text::after,
@@ -1992,8 +1778,7 @@
   display: none
 }
 .fd-list__navigation-item .fd-list__navigation-item--indicated .fd-list__navigation-item-text {
-  color: #0854a0;
-  color: var(--sapSelectedColor,#0854a0)
+  color: var(--sapSelectedColor)
 }
 .fd-list__navigation-item--condensed {
   padding-left: 0;
@@ -2009,8 +1794,7 @@
 .fd-list__navigation-item--condensed .fd-list__navigation-item-popover--first-level,
 .fd-list__navigation-item--condensed .fd-list__navigation-item-popover--second-level {
   display: none;
-  background: #f2f2f2;
-  background: var(--sapList_AlternatingBackground,#f2f2f2)
+  background: var(--sapList_AlternatingBackground)
 }
 .fd-list__navigation-item--condensed .fd-list__navigation-item-text {
   display: none
@@ -2098,8 +1882,7 @@
 .fd-list__navigation-item--condensed.is-expanded .fd-list__navigation-item-popover--first-level[dir=rtl],
 [dir=rtl] .fd-list__navigation-item--condensed.is-expanded .fd-list__navigation-item-popover--first-level {
   border-bottom-left-radius: 0;
-  border-bottom-right-radius: .25rem;
-  border-bottom-right-radius: var(--sapElement_BorderCornerRadius,.25rem);
+  border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
   left: unset;
   right: .325rem
 }
@@ -2153,8 +1936,7 @@
   margin-bottom: .5625rem;
   border-style: solid;
   border-width: .25rem .25rem 0 0;
-  border-color: transparent #6a6d70 transparent transparent;
-  border-color: transparent var(--sapContent_NonInteractiveIconColor,#6a6d70) transparent transparent;
+  border-color: transparent var(--sapContent_NonInteractiveIconColor) transparent transparent;
   right: 0;
   bottom: 0;
   position: absolute
@@ -2172,19 +1954,15 @@
   height: 2.75rem;
   line-height: 2.75rem;
   width: 2.25rem;
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  color: var(--sapContent_NonInteractiveIconColor);
   vertical-align: top;
   text-align: center
 }
 .fd-list__navigation-item-text {
   padding-left: .25rem;
-  font-size: 1rem;
-  font-size: var(--sapFontLargeSize,1rem);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
-  color: #32363a;
-  color: var(--sapList_TextColor,#32363a);
+  font-size: var(--sapFontLargeSize);
+  font-family: var(--sapFontFamily);
+  color: var(--sapList_TextColor);
   max-width: 9rem;
   white-space: nowrap;
   overflow: hidden;
@@ -2198,14 +1976,10 @@
   padding-left: 0
 }
 .fd-list__navigation-item-arrow {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2227,8 +2001,7 @@
   vertical-align: middle;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: .25rem;
-  border-radius: var(--sapButton_BorderCornerRadius,.25rem);
+  border-radius: var(--sapButton_BorderCornerRadius);
   height: 2.75rem;
   width: 2.75rem;
   position: absolute;
@@ -2236,8 +2009,7 @@
   line-height: 2.75rem;
   font-family: SAP-icons;
   font-size: 1rem;
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
+  color: var(--sapContent_NonInteractiveIconColor);
   background-color: transparent
 }
 .fd-list__navigation-item-arrow::after,
@@ -2259,8 +2031,7 @@
   content: "";
   position: absolute;
   display: block;
-  border: .0625rem dotted #000;
-  border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_FocusColor,#000);
+  border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
   top: .125rem;
   left: .125rem;
   right: .125rem;
@@ -2270,8 +2041,7 @@
 .fd-list__navigation-item-arrow.is-focus:active::after,
 .fd-list__navigation-item-arrow:focus.is-active::after,
 .fd-list__navigation-item-arrow:focus:active::after {
-  border: .0625rem dotted #fff;
-  border: var(--sapContent_FocusWidth,.0625rem) var(--sapContent_FocusStyle,dotted) var(--sapContent_ContrastFocusColor,#fff)
+  border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor)
 }
 .fd-list__navigation-item-arrow[dir=rtl],
 [dir=rtl] .fd-list__navigation-item-arrow {
@@ -2284,17 +2054,14 @@
 .fd-list__navigation-item--condensed:hover,
 .fd-list__navigation-item.is-hover,
 .fd-list__navigation-item:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-list__navigation-item--condensed.is-pressed,
 .fd-list__navigation-item--condensed[aria-pressed=true],
 .fd-list__navigation-item.is-pressed,
 .fd-list__navigation-item[aria-pressed=true] {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0);
-  color: #fff;
-  color: var(--sapContent_ContrastTextColor,#fff)
+  background: var(--sapList_Active_Background);
+  color: var(--sapContent_ContrastTextColor)
 }
 .fd-list__navigation-item--condensed.is-pressed .fd-list__navigation-item-arrow,
 .fd-list__navigation-item--condensed.is-pressed .fd-list__navigation-item-icon,
@@ -2304,8 +2071,7 @@
 .fd-list__navigation-item.is-pressed .fd-list__navigation-item-icon,
 .fd-list__navigation-item[aria-pressed=true] .fd-list__navigation-item-arrow,
 .fd-list__navigation-item[aria-pressed=true] .fd-list__navigation-item-icon {
-  color: #fff;
-  color: var(--sapContent_ContrastIconColor,#fff)
+  color: var(--sapContent_ContrastIconColor)
 }
 .fd-vertical-nav--navigation-indication .fd-list__navigation-item::after {
   min-width: 1.5rem;
@@ -2339,10 +2105,8 @@
   height: 100%;
   font-family: SAP-icons;
   content: "\e1ed";
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  color: var(--sapContent_NonInteractiveIconColor);
+  font-size: var(--sapFontSmallSize);
   text-decoration: none;
   text-transform: none
 }
@@ -2358,17 +2122,13 @@
   margin: 0
 }
 .fd-vertical-nav--navigation-indication .is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
+  box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor)
 }
 .fd-vertical-nav--navigation-indication .is-navigated[dir=rtl],
 [dir=rtl] .fd-vertical-nav--navigation-indication .is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0);
-  box-shadow: inset .1875rem 0 0 0 #0854a0;
-  box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0)
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor);
+  box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor)
 }
 .fd-list--navigation-indication .fd-list__item::after {
   min-width: 1.5rem;
@@ -2402,10 +2162,8 @@
   height: 100%;
   font-family: SAP-icons;
   content: "\e1ed";
-  color: #6a6d70;
-  color: var(--sapContent_NonInteractiveIconColor,#6a6d70);
-  font-size: .75rem;
-  font-size: var(--sapFontSmallSize,.75rem);
+  color: var(--sapContent_NonInteractiveIconColor);
+  font-size: var(--sapFontSmallSize);
   text-decoration: none;
   text-transform: none
 }
@@ -2421,17 +2179,13 @@
   margin: 0
 }
 .fd-list--navigation-indication .is-navigated {
-  -webkit-box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0);
-  box-shadow: inset -.1875rem 0 0 0 #0854a0;
-  box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0)
+  -webkit-box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
+  box-shadow: inset -.1875rem 0 0 0 var(--sapList_SelectionBorderColor)
 }
 .fd-list--navigation-indication .is-navigated[dir=rtl],
 [dir=rtl] .fd-list--navigation-indication .is-navigated {
-  -webkit-box-shadow: inset .1875rem 0 0 0 #0854a0;
-  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0);
-  box-shadow: inset .1875rem 0 0 0 #0854a0;
-  box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor,#0854a0)
+  -webkit-box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor);
+  box-shadow: inset .1875rem 0 0 0 var(--sapList_SelectionBorderColor)
 }
 .fd-list--selection .fd-list__item {
   padding-left: 2.75rem;
@@ -2445,15 +2199,12 @@
 }
 .fd-list--selection .fd-list__item.is-hover,
 .fd-list--selection .fd-list__item:hover {
-  background: #f5f5f5;
-  background: var(--sapList_Hover_Background,#f5f5f5)
+  background: var(--sapList_Hover_Background)
 }
 .fd-list--selection .fd-list__item.is-selected,
 .fd-list--selection .fd-list__item[aria-selected=true] {
-  background: #e5f0fa;
-  background: var(--sapList_SelectionBackgroundColor,#e5f0fa);
-  border-bottom: .0625rem solid #0854a0;
-  border-bottom: var(--sapList_BorderWidth,.0625rem) solid var(--sapList_SelectionBorderColor,#0854a0)
+  background: var(--sapList_SelectionBackgroundColor);
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor)
 }
 .fd-list--selection .fd-list__item.is-selected .fd-list__link,
 .fd-list--selection .fd-list__item[aria-selected=true] .fd-list__link {
@@ -2463,15 +2214,13 @@
 .fd-list--selection .fd-list__item.is-selected .fd-list__link:active,
 .fd-list--selection .fd-list__item[aria-selected=true] .fd-list__link.is-active,
 .fd-list--selection .fd-list__item[aria-selected=true] .fd-list__link:active {
-  background: #0854a0;
-  background: var(--sapList_Active_Background,#0854a0)
+  background: var(--sapList_Active_Background)
 }
 .fd-list--selection .fd-list__item.is-selected.is-hover,
 .fd-list--selection .fd-list__item.is-selected:hover,
 .fd-list--selection .fd-list__item[aria-selected=true].is-hover,
 .fd-list--selection .fd-list__item[aria-selected=true]:hover {
-  background: #d8e9f8;
-  background: var(--sapList_Hover_SelectionBackground,#d8e9f8)
+  background: var(--sapList_Hover_SelectionBackground)
 }
 .fd-list--selection .fd-list__form-item {
   position: absolute;
@@ -2559,14 +2308,10 @@
   padding-right: 1rem
 }
 .fd-list__item-counter {
-  font-size: .875rem;
-  font-size: var(--sapFontSize,.875rem);
-  line-height: 1.4;
-  line-height: var(--sapContent_LineHeight,1.4);
-  color: #32363a;
-  color: var(--sapTextColor,#32363a);
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-family: var(--sapFontFamily, "72", "72full", Arial, Helvetica, sans-serif);
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
   font-weight: 400;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2576,8 +2321,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #0e7581;
-  color: var(--sapContent_MarkerTextColor,#0e7581);
+  color: var(--sapContent_MarkerTextColor);
   margin-left: 1rem
 }
 .fd-list__item-counter::after,
