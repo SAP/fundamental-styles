@@ -9,18 +9,18 @@ $fd-button-badge-offset: -0.25rem;
   }
 
   z-index: 6;
-  font-size: var(--sapFontSmallSize);
-  border-radius: 0.5rem;
   height: 1rem;
-  padding: 0 0.3125rem;
-  background-color: var(--sapContent_BadgeBackground);
-  border-width: 0.0625rem;
-  border-style: solid;
-  border-color: var(--fdBadgeButton_Border_Color);
-  color: var(--sapContent_BadgeTextColor);
   position: absolute;
+  border-style: solid;
+  padding: 0 0.3125rem;
+  border-radius: 0.5rem;
+  border-width: 0.0625rem;
   top: $fd-button-badge-offset;
   right: $fd-button-badge-offset;
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_BadgeTextColor);
+  border-color: var(--fdBadgeButton_Border_Color);
+  background-color: var(--sapContent_BadgeBackground);
 
   @include fd-rtl() {
     right: auto;
