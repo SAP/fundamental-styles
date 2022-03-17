@@ -71,6 +71,8 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
 
       &-text {
         @include fd-ellipsis();
+
+        line-height: initial;
       }
     }
   }
