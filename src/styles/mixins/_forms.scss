@@ -203,7 +203,6 @@
   $fd-label-spacing: 0.5rem;
 
   @include fd-reset();
-  @include fd-ellipsis();
 
   width: fit-content;
   position: relative;
