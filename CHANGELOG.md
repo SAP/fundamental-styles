@@ -1,4 +1,11 @@
 
+### 0.23.1-rc.1 (2022-03-17)
+
+
+### Bug Fixes
+
+* popover arrow in compact mode ([#3235](https://github.com/SAP/fundamental-styles/issues/3235)) ([1441274](https://github.com/SAP/fundamental-styles/commit/1441274944c50bb8e60b9719c7ed84b603407065))
+
 ### 0.23.1-rc.0 (2022-03-16)
 
 
