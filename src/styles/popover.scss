@@ -129,17 +129,31 @@ $block: #{$fd-namespace}-popover;
       &.#{$block}__body--left {
         &::before,
         &::after {
-          @include fd-set-position-left($fd-popover-arrow-offset-compact);
+          left: $fd-popover-arrow-offset-compact;
+        }
+
+        @include fd-rtl() {
+          &::before,
+          &::after {
+            left: auto;
+            right: $fd-popover-arrow-offset-compact;
+          }
         }
       }
 
       &.#{$block}__body--right {
         &::before,
         &::after {
-          @include fd-set-position-right($fd-popover-arrow-offset-compact);
-
-          // To overwrite default left value.
           left: auto;
+          right: $fd-popover-arrow-offset-compact;
+        }
+
+        @include fd-rtl() {
+          &::before,
+          &::after {
+            left: $fd-popover-arrow-offset-compact;
+            right: auto;
+          }
         }
       }
     }
@@ -150,7 +164,15 @@ $block: #{$fd-namespace}-popover;
 
       &::before,
       &::after {
-        @include fd-set-position-left($fd-popover-arrow-offset);
+        left: $fd-popover-arrow-offset;
+      }
+
+      @include fd-rtl() {
+        &::before,
+        &::after {
+          left: auto;
+          right: $fd-popover-arrow-offset;
+        }
       }
     }
 
@@ -159,10 +181,16 @@ $block: #{$fd-namespace}-popover;
 
       &::before,
       &::after {
-        @include fd-set-position-right($fd-popover-arrow-offset);
-
-        // To overwrite default left value.
         left: auto;
+        right: $fd-popover-arrow-offset;
+      }
+
+      @include fd-rtl() {
+        &::before,
+        &::after {
+          left: $fd-popover-arrow-offset;
+          right: auto;
+        }
       }
     }
 
