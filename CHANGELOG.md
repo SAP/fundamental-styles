@@ -1,4 +1,11 @@
 
+### 0.23.1-rc.2 (2022-03-21)
+
+
+### Bug Fixes
+
+* **styles:** bump theming-base-content version 11.1.36 [ci visual] ([#3250](https://github.com/SAP/fundamental-styles/issues/3250)) ([8c581f4](https://github.com/SAP/fundamental-styles/commit/8c581f42ff2a2c3e34e19d8f9f8a6aad2efbb9f8))
+
 ### 0.23.1-rc.1 (2022-03-17)
 
 
