@@ -188,11 +188,11 @@
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.125rem;
-  --fdMessageStrip_Border_Radius: 0.25rem;// var(--sapPopover_BorderCornerRadius);
-  --fdMessageStrip_Border_Color_Success: #99cc99;// var(--sapMessage_SuccessBorderColor);
-  --fdMessageStrip_Border_Color_Error: #ff5e5e;// var(--sapMessage_ErrorBorderColor);
-  --fdMessageStrip_Border_Color_Warning: #ffab1d;// var(--sapMessage_WarningBorderColor);
-  --fdMessageStrip_Border_Color_Neutral: #ffffff;// var(--sapNeutralBorderColor);
+  --fdMessageStrip_Border_Radius: var(--sapPopover_BorderCornerRadius);
+  --fdMessageStrip_Border_Color_Success: var(--sapMessage_SuccessBorderColor);
+  --fdMessageStrip_Border_Color_Error: var(--sapMessage_ErrorBorderColor);
+  --fdMessageStrip_Border_Color_Warning: var(--sapMessage_WarningBorderColor);
+  --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
   --fdMessageStrip_Border_Color_Informative: var(--sapMessage_InformationBorderColor);
   --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
   --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
