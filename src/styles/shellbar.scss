@@ -5,49 +5,36 @@
 $block: #{$fd-namespace}-shellbar;
 
 .#{$block} {
-
   // Brand
-  $fd-shellbar-logo-height: 1.5rem !default;
-  $fd-shellbar-logo-width: 3rem !default;
   $fd-shellbar-logo-background-image-url: "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MTIuMzggMjA0Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMntmaWxsLXJ1bGU6ZXZlbm9kZH0uY2xzLTF7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCl9LmNscy0ye2ZpbGw6I2ZmZn08L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMjA2LjE5IiB4Mj0iMjA2LjE5IiB5Mj0iMjA0IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDBiOGYxIi8+PHN0b3Agb2Zmc2V0PSIuMDIiIHN0b3AtY29sb3I9IiMwMWI2ZjAiLz48c3RvcCBvZmZzZXQ9Ii4zMSIgc3RvcC1jb2xvcj0iIzBkOTBkOSIvPjxzdG9wIG9mZnNldD0iLjU4IiBzdG9wLWNvbG9yPSIjMTc3NWM4Ii8+PHN0b3Agb2Zmc2V0PSIuODIiIHN0b3AtY29sb3I9IiMxYzY1YmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxZTVmYmIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGl0bGU+U0FQX2dyYWRfUl9zY3JuX1plaWNoZW5mbMOkY2hlIDE8L3RpdGxlPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTAgMjA0aDIwOC40MUw0MTIuMzggMEgwdjIwNCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0NC43MyAzOC4zNmgtNDAuNnY5Ni41MmwtMzUuNDYtOTYuNTVoLTM1LjE2bC0zMC4yNyA4MC43MkMxMDAgOTguNyA3OSA5MS42NyA2Mi40IDg2LjQgNTEuNDYgODIuODkgMzkuODUgNzcuNzIgNDAgNzJjLjA5LTQuNjggNi4yMy05IDE4LjM4LTguMzggOC4xNy40MyAxNS4zNyAxLjA5IDI5LjcxIDhsMTQuMS0yNC41NUM4OS4wNiA0MC40MiA3MSAzNi4yMSA1Ni4xNyAzNi4xOWgtLjA5Yy0xNy4yOCAwLTMxLjY4IDUuNi00MC42IDE0LjgzQTM0LjIzIDM0LjIzIDAgMCAwIDUuNzcgNzQuN0M1LjU0IDg3LjE1IDEwLjExIDk2IDE5LjcxIDEwM2M4LjEgNS45NCAxOC40NiA5Ljc5IDI3LjYgMTIuNjIgMTEuMjcgMy40OSAyMC40NyA2LjUzIDIwLjM2IDEzQTkuNTcgOS41NyAwIDAgMSA2NSAxMzVjLTIuODEgMi45LTcuMTMgNC0xMy4wOSA0LjEtMTEuNDkuMjQtMjAtMS41Ni0zMy42MS05LjU5TDUuNzcgMTU0LjQyYTkzLjc3IDkzLjc3IDAgMCAwIDQ2IDEyLjIyaDIuMTFjMTQuMjQtLjI1IDI1Ljc0LTQuMzEgMzQuOTItMTEuNzEuNTMtLjQxIDEtLjg0IDEuNDktMS4yOGwtNC4xMiAxMC44NUgxMjNsNi4xOS0xOC44MmE2Ny40NiA2Ny40NiAwIDAgMCAyMS42OCAzLjQzIDY4LjMzIDY4LjMzIDAgMCAwIDIxLjE2LTMuMjVsNiAxOC42NGg2MC4xNHYtMzloMTMuMTFjMzEuNzEgMCA1MC40Ni0xNi4xNSA1MC40Ni00My4yIDAtMzAuMTEtMTguMjItNDMuOTQtNTcuMDEtNDMuOTR6TTE1MC45MSAxMjFhMzYuOTMgMzYuOTMgMCAwIDEtMTMtMi4yOGwxMi44Ny00MC41OWguMjJsMTIuNjUgNDAuNzFhMzguNSAzOC41IDAgMCAxLTEyLjc0IDIuMTZ6bTk2LjItMjMuMzNoLTguOTRWNjQuOTFoOC45NGMxMS45MyAwIDIxLjQ0IDQgMjEuNDQgMTYuMTQgMCAxMi42LTkuNTEgMTYuNTctMjEuNDQgMTYuNTciLz48L3N2Zz4=" !default;
-
-  // Paddings
-  $fd-shellbar-item-spacing: 0.5rem !default;
-  $fd-shellbar-menu-button-padding: 1.937rem !default;
-
-  // Heights
-  $fd-shellbar-height: 2.75rem !default;
-  $fd-shellbar-copilot-width: 1.875rem !default;
-
-  // Colors
-  $fd-shellbar-color: var(--sapShell_TextColor) !default; // White
-  $fd-shellbar-background-color: transparent !default;
-  $fd-field-border-color: var(--sapField_BorderColor) !default;
-  $fd-shell-active-text-color: var(--sapShell_Active_TextColor) !default;
-  $fd-shell-icon-button-color: var(--sapShell_InteractiveTextColor) !default;
-
-  // Background
-  $fd-shellbar-background: var(--sapShellColor) !default;
-  $fd-shell-hover-background: var(--sapShell_Hover_Background) !default;
-  $fd-shell-active-background: var(--sapShell_Active_Background) !default;
-  $fd-content-badge-background: var(--sapContent_BadgeBackground) !default;
-
-  // Box shadow
-  $fd-shellbar-box-shadow: var(--sapContent_HeaderShadow) !default;
 
   // Counter Notification
   $fd-shellbar-counter-notification-offset: -0.25rem !default;
 
+  // Paddings
+  $fd-shellbar-item-spacing: 0.5rem !default;
+
+  // Colors
+  $fd-shellbar-color: var(--sapShell_TextColor) !default;
+  $fd-shellbar-active-color: var(--sapShell_Active_TextColor) !default;
+  $fd-shellbar-icon-button-color: var(--sapShell_InteractiveTextColor) !default;
+
+  // Backgrounds
+  $fd-shellbar-background: transparent !default;
+  $fd-shellbar-hover-background: var(--sapShell_Hover_Background) !default;
+  $fd-shellbar-active-background: var(--sapShell_Active_Background) !default;
+  $fd-shellbar-content-badge-background: var(--sapContent_BadgeBackground) !default;
+
   @include fd-reset();
 
-  background-color: $fd-shellbar-background;
-  box-shadow: $fd-shellbar-box-shadow;
-  height: $fd-shellbar-height;
+  background-color: var(--sapShellColor);
+  box-shadow: var(--sapContent_HeaderShadow);
+  height: 2.75rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: $fd-shellbar-color;
   position: relative;
-  justify-content: space-between;
   padding: 0 1rem;
 
   &__group {
@@ -82,52 +69,23 @@ $block: #{$fd-namespace}-shellbar;
   &__title,
   &__subtitle {
     @include fd-reset();
+    @include fd-ellipsis();
+    @include fd-set-margin-left($fd-shellbar-item-spacing);
 
     color: var(--sapShell_TextColor);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  &__subtitle {
-    font-size: var(--sapFontSmallSize);
-    margin-left: $fd-shellbar-item-spacing;
-
-    @include fd-rtl() {
-      margin-left: 0;
-      margin-right: $fd-shellbar-item-spacing;
-    }
-  }
-
-  &__logo,
-  &__product,
-  &__subtitle {
-    display: inline-block;
-    vertical-align: middle;
   }
 
   &__title {
     font-weight: bold;
-    padding-right: 0;
     vertical-align: middle;
+  }
 
-    @include fd-rtl() {
-      padding-right: $fd-shellbar-item-spacing;
-      padding-left: 0;
-    }
+  &__subtitle {
+    font-size: var(--sapFontSmallSize);
   }
 
   &__logo {
     @include fd-reset();
-
-    padding-left: 0;
-    margin-right: $fd-shellbar-item-spacing;
-
-    @include fd-rtl() {
-      padding-right: 0;
-      margin-right: 0;
-      margin-left: $fd-shellbar-item-spacing;
-    }
 
     max-height: 2rem;
     background-repeat: no-repeat;
@@ -142,20 +100,16 @@ $block: #{$fd-namespace}-shellbar;
 
     &--image-replaced {
       background-image: url(#{$fd-shellbar-logo-background-image-url});
-      width: $fd-shellbar-logo-width;
-      height: $fd-shellbar-logo-height;
+      width: 3rem;
+      height: 1.5rem;
     }
   }
 
   &__action {
     @include fd-reset();
 
-    padding-right: 0;
-    padding-left: $fd-shellbar-item-spacing;
-
-    @include fd-rtl() {
-      padding-right: $fd-shellbar-item-spacing;
-      padding-left: 0;
+    &:not(:first-of-type) {
+      @include fd-set-margin-left($fd-shellbar-item-spacing);
     }
 
     > * {
@@ -169,29 +123,27 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__counter--notification {
+      @include fd-ellipsis();
+      @include fd-set-position-right($fd-shellbar-counter-notification-offset);
+
       max-width: 2.5rem;
-      text-overflow: ellipsis;
-      white-space: nowrap;
       position: absolute;
-      background: $fd-content-badge-background;
-      border: $fd-content-badge-background;
+      background: $fd-shellbar-content-badge-background;
+      border: $fd-shellbar-content-badge-background;
       color: $fd-shellbar-color;
       line-height: 0.8;
       max-height: 1rem;
-      overflow: hidden;
       right: $fd-shellbar-counter-notification-offset;
       top: $fd-shellbar-counter-notification-offset;
       transform: none;
 
       @include fd-rtl() {
         transform: none;
-        right: initial;
-        left: $fd-shellbar-counter-notification-offset;
       }
     }
 
     .#{$block}__input-group__addon {
-      background-color: $fd-shellbar-background-color;
+      background-color: $fd-shellbar-background;
 
       .#{$block}__button {
         border-radius: 0;
@@ -199,11 +151,11 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__input-group {
-      background-color: $fd-shellbar-background-color;
+      background-color: $fd-shellbar-background;
       cursor: text;
 
       &:hover {
-        border-color: $fd-field-border-color;
+        border-color: var(--sapField_BorderColor);
       }
 
       .#{$block}__input-group__input {
@@ -211,97 +163,88 @@ $block: #{$fd-namespace}-shellbar;
         color: $fd-shellbar-color;
 
         &:hover {
-          background-color: $fd-shell-hover-background;
+          background-color: $fd-shellbar-hover-background;
         }
       }
     }
   }
 
-  &__popover__body--right {
-    &::before,
-    &::after {
-      right: 14px; // needed to place the popover body arrow under the button arrow icon
-    }
-  }
-
-  /*
-   It is necessary to specify fd-button here to avoid issues with the ordering of how the classes are applied to
-   the shellbar button elements. While specifying fd-button here breaks the rule of self-contained styles in a way, it
-   is a better option than using the buttonBase() mixin from the button.scss file or using !important.
-   */
-  .#{$fd-namespace}-button.#{$block}__button {
-    position: relative;
-    border-color: transparent;
-    background: $fd-shellbar-background-color;
-    color: $fd-shell-icon-button-color;
-    overflow: visible;
-    padding: 0;
-
-    @include fd-focus() {
-      @include buttonFocus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-    }
-
-    @include fd-active() {
-      background: $fd-shell-active-background;
-    }
-
-    &:hover,
-    &:active {
-      color: $fd-shell-active-text-color;
-    }
-
-    @include fd-hover() {
-      background: $fd-shell-hover-background;
-
-      @include fd-disabled() {
-        background: $fd-shellbar-background-color;
-      }
-    }
-
-    &.sap-icon--bell {
-      &::before {
-        margin-right: 0;
-      }
-
-      @include fd-rtl() {
-        &::before {
-          margin-left: 0;
-        }
-      }
-    }
-
-    &.#{$block}__button--user-menu {
-      outline-offset: 0.1px;
-    }
-  }
-
-  .#{$block}__button--icon {
-    color: $fd-shell-icon-button-color;
-  }
-
-  .#{$fd-namespace}-button.#{$block}__button--menu {
-    font-size: var(--sapFontSize);
-
-    &:hover {
-      background: $fd-shell-hover-background;
+  .#{$block}__button {
+    /*
+     It is necessary to specify fd-button here to avoid issues with specificity.
+     While specifying fd-button here breaks the rule of self-contained styles in a way,
+     it is a better option than using the buttonBase() mixin from the button.scss file or using !important.
+    */
+    &.#{$fd-namespace}-button {
+      position: relative;
       border-color: transparent;
+      background: $fd-shellbar-background;
+      color: $fd-shellbar-icon-button-color;
+      overflow: visible;
+      padding: 0;
+
+      @include fd-focus() {
+        @include buttonFocus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
+        }
+      }
+
+      @include fd-active() {
+        background: $fd-shellbar-active-background;
+      }
+
+      &:hover,
+      &:active {
+        color: $fd-shellbar-active-color;
+      }
+
+      @include fd-hover() {
+        background: $fd-shellbar-hover-background;
+
+        @include fd-disabled() {
+          background: $fd-shellbar-background;
+        }
+      }
     }
 
-    &:active,
-    &:focus {
-      background: $fd-shell-active-background;
-      color: $fd-shell-active-text-color;
+    &--icon {
+      color: $fd-shellbar-icon-button-color;
+    }
 
-      &::after {
-        border-color: var(--sapContent_ContrastFocusColor);
+    &--menu {
+      @mixin fd-shellbar-button-menu() {
+        background: $fd-shellbar-active-background;
+        color: $fd-shellbar-active-color;
+
+        &::after {
+          border-color: var(--sapContent_ContrastFocusColor);
+        }
+      }
+
+      @include fd-set-margin-left($fd-shellbar-item-spacing);
+
+      font-size: var(--sapFontSize);
+
+      @include fd-hover() {
+        background: $fd-shellbar-hover-background;
+        border-color: transparent;
+      }
+
+      @include fd-focus() {
+        @include fd-shellbar-button-menu();
+      }
+
+      @include fd-active() {
+        @include fd-shellbar-button-menu();
       }
     }
   }
 
   &--s {
-    padding: 0 1rem;
+    .#{$block}__subtitle,
+    .#{$block}__title {
+      display: none;
+    }
 
     .#{$block}__action {
       &--mobile {
@@ -313,13 +256,12 @@ $block: #{$fd-namespace}-shellbar;
       }
     }
 
-    .#{$block}__subtitle,
-    .#{$block}__title {
-      display: none;
-    }
-
-    .#{$fd-namespace}-button.#{$fd-namespace}-button--menu.#{$block}__button--menu {
-      padding: 0;
+    .#{$block}__group--product {
+      .#{$fd-namespace}-button {
+        .sap-icon--megamenu {
+          margin: 0 !important;
+        }
+      }
     }
   }
 
@@ -335,6 +277,11 @@ $block: #{$fd-namespace}-shellbar;
   &--m,
   &--l,
   &--xl {
+    .#{$block}__subtitle,
+    .#{$block}__title {
+      display: inline-block;
+    }
+
     .#{$block}__action {
       &--mobile {
         display: none;
@@ -343,11 +290,6 @@ $block: #{$fd-namespace}-shellbar;
       &--desktop {
         display: inline-block;
       }
-    }
-
-    .#{$block}__subtitle,
-    .#{$block}__title {
-      display: inline-block;
     }
   }
 
