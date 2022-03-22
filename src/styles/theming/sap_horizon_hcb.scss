@@ -90,8 +90,16 @@
   --fdRadio_State_Border_Type: solid;
 
   /* Checkbox */
-  --fdCheckbox_Selected_Color: var(--sapSelectedColor);
-  --fdCheckbox_State_Border_Type: solid;
+  --fdCheckbox_Hover_Background: var(--sapSelectedColor);
+  --fdCheckbox_Hover_Shadow: var(--sapContent_Interaction_Shadow);
+  --fdCheckbox_Selected_Color: var(--sapContent_Selected_ForegroundColor);
+  --fdCheckbox_Error_State_Shadow: var(--sapContent_Negative_Shadow);
+  --fdCheckbox_Warning_State_Shadow: var(--sapContent_Critical_Shadow);
+  --fdCheckbox_Success_State_Shadow: var(--sapContent_Positive_Shadow);
+  --fdCheckbox_Information_State_Shadow: var(--sapContent_Informative_Shadow);
+  --fdCheckbox_State_Hover_Background: var(--sapField_Hover_Background);
+  --fdCheckbox_Readonly_Border_Width: var(--sapElement_BorderWidth);
+  --fdCheckbox_Readonly_Border_Type: solid;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;
