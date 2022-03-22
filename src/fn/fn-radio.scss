@@ -4,16 +4,17 @@ $block: #{$fn-namespace}-radio;
 
 .#{$block} {
   @include fn-reset();
+  @include fn-flex();
   @include fn-transition();
   @include fn-user-select();
-  @include fn-flex-vertical-center();
 
+  height: auto;
   cursor: pointer;
-  height: 1.625rem;
   width: fit-content;
   position: relative;
+  min-height: 1.625rem;
   display: inline-flex;
-  padding: 0.1875rem;
+  padding: 0.125rem 0.1875rem;
   border-radius: $fn-border-radius-xs;
 
   @include fn-hover() {
@@ -127,6 +128,9 @@ $block: #{$fn-namespace}-radio;
     width: 1.25rem;
     height: 1.25rem;
     border-radius: 50%;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    margin-top: 0.0625rem;
     background-color: $fn-color-grey-1;
     border: 0.125rem solid $fn-color-grey-7;
 
@@ -147,5 +151,9 @@ $block: #{$fn-namespace}-radio;
     @include fn-set-margin-left($fn-margin-xs);
 
     color: $fn-color-grey-9;
+
+    &--truncate {
+      @include fn-ellipsis();
+    }
   }
 }

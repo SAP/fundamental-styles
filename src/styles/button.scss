@@ -262,6 +262,8 @@ $block: #{$fd-namespace}-button;
 @mixin buttonContainerHover() {
   @include standardHover();
 
+  box-shadow: var(--sapContent_Interaction_Shadow);
+
   &.#{$block}--toggled {
     @include standardToggledHover();
   }

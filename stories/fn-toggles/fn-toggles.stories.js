@@ -558,6 +558,48 @@ RadioGroup.parameters = {
     }
 };
 
+export const CheckboxAndRadioButtonLongText = () => `${localStyles}
+<div>
+    <div style="display: flex;">
+        <label class="fn-checkbox" tabindex="0">
+            <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+            <span class="fn-checkbox__checkmark"></span>
+            <span class="fn-checkbox__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </label>
+
+        <label class="fn-radio" tabindex="0">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group3">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </label>
+    </div>
+    <br><br>
+    <h4>Long label with truncate</h4>
+    <div style="display: flex;">
+        <label class="fn-checkbox" tabindex="0" style="max-width: 50%;">
+            <input class="fn-checkbox__input" type="checkbox" tabindex="-1" aria-label="checkbox">
+            <span class="fn-checkbox__checkmark"></span>
+            <span class="fn-checkbox__label fn-checkbox__label--truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </label>
+
+        <label class="fn-radio" tabindex="0" style="max-width: 50%;">
+            <input class="fn-radio__input" type="radio" tabindex="-1" aria-label="radio" name="group3">
+            <span class="fn-radio__checkmark"></span>
+            <span class="fn-radio__label fn-radio__label--truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </label>
+    </div>
+</div>
+`;
+
+CheckboxAndRadioButtonLongText.parameters = {
+    docs: {
+        iframeHeight: 500,
+        description: {
+            story: 'By default, long checkbox and radio button label will wrap in the next line. To add ellipsis and keep the text in a single line use the `fn-radio__label--truncate` and `fn-checkbox__label--truncate` modifier classes together with the `fn-radio__label` and `fn-checkbox__label` base classes.'
+        }
+    }
+};
+
 
 export const SwitchToggle = () => `${localStyles}
 <div class="docs-fn-container">
