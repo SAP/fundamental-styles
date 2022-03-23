@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.1 (2022-03-23)
+
+
+### Bug Fixes
+
+* **docs:** unuse loaded component style cleanup fix ([#3258](https://github.com/SAP/fundamental-styles/issues/3258)) ([39220d7](https://github.com/SAP/fundamental-styles/commit/39220d7f2391d48ba947fbbb4b41568d1131ecb7))
+
 ## 0.24.0-rc.0 (2022-03-23)
 
 
