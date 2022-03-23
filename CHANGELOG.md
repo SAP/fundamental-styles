@@ -1,4 +1,15 @@
 
+## 0.24.0-rc.0 (2022-03-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* * upload collection item object status now needs additional classes to be applied
+
+### Bug Fixes
+
+* upload collection overflow ([#3227](https://github.com/SAP/fundamental-styles/issues/3227)) ([c9d9d72](https://github.com/SAP/fundamental-styles/commit/c9d9d72aacdd339bb64371cb03198f9f9c4413a6))
+
 ### 0.23.1-rc.3 (2022-03-23)
 
 
