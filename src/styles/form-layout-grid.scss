@@ -93,7 +93,10 @@ $groupGutter: 1rem;
 
       .#{$fd-namespace}-form-label {
         @include fd-set-margin-right(0);
-        @include fd-set-padding-right(0.5rem);
+
+        &--required {
+          @include fd-set-padding-right(0.5rem);
+        }
 
         white-space: initial;
       }
