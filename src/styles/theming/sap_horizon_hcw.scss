@@ -390,4 +390,17 @@
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapContent_Selected_Background);
+
+  /** Shellbar */
+  --fdShellbar_Height: 3.25rem;
+  --fdShellbar_Shadow: none;
+  --fdShellbar_Button_Border: var(--sapButton_Lite_BorderColor);
+  --fdShellbar_Button_Hover_Shadow: var(--sapContent_Interaction_Shadow);
+  --fdShellbar_Button_Active_Shadow: var(--sapContent_Selected_Shadow);
+  --fdShellbar_Input_Border: none;
+  --fdShellbar_Input_Background: var(--sapShell_InteractiveBackground);
+  --fdShellbar_Input_Color: var(--sapShell_InteractiveTextColor);
+  --fdShellbar_Input_Placeholder_Color: var(--sapField_PlaceholderTextColor);
+  --fdShellbar_Input_Border_Radius: 1.125rem;
+  --fdShellbar_Input_Addon_Dimension: 1.75rem;
 }
