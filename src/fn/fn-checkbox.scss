@@ -4,16 +4,17 @@ $block: #{$fn-namespace}-checkbox;
 
 .#{$block} {
   @include fn-reset();
+  @include fn-flex();
   @include fn-transition();
   @include fn-user-select();
-  @include fn-flex-vertical-center();
 
+  height: auto;
   cursor: pointer;
-  height: 1.625rem;
   width: fit-content;
   position: relative;
+  min-height: 1.625rem;
   display: inline-flex;
-  padding: $fn-padding-xs;
+  padding: 0.125rem $fn-padding-xs;
   border-radius: $fn-border-radius-xs;
 
   @include fn-hover() {
@@ -120,6 +121,9 @@ $block: #{$fn-namespace}-checkbox;
 
     width: 1.125rem;
     height: 1.125rem;
+    min-width: 1.125rem;
+    min-height: 1.125rem;
+    margin-top: 0.125rem;
     border-radius: 0.25rem;
     background-color: $fn-color-grey-1;
     border: 0.125rem solid $fn-color-grey-7;
@@ -139,5 +143,9 @@ $block: #{$fn-namespace}-checkbox;
     @include fn-set-margin-left($fn-margin-xs);
 
     color: $fn-color-grey-9;
+
+    &--truncate {
+      @include fn-ellipsis();
+    }
   }
 }
