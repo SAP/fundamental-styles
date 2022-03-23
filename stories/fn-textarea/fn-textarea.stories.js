@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Textarea',
+    title: 'BTP Experimental Design/Textarea',
     parameters: {
         description: `
 

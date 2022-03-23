@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Popover',
+    title: 'BTP Experimental Design/Popover',
     parameters: {
         components: ['fn-popover', 'icon', 'fn-button'],
         description: `

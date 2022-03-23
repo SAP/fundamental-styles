@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
+exports[`Storyshots BTP Experimental Design/Step Input Step Input 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -22,14 +22,14 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <label
         for="field-1"
@@ -37,29 +37,29 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         normal:
       </label>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-step-input"
       tabindex="0"
     >
-      
-        
+
+
       <button
         aria-label="subtract button"
         class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--less"
         />
-        
-        
+
+
       </button>
-      
-        
+
+
       <input
         class="fn-input__text-field fn-step-input__text-field"
         id="field-1"
@@ -67,40 +67,40 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         type="number"
         value="42"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="add button"
         class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--add"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <label
         for="field-2"
@@ -108,29 +108,29 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         hover:
       </label>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-step-input"
       tabindex="0"
     >
-      
-        
+
+
       <button
         aria-label="subtract button"
         class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--less"
         />
-        
-        
+
+
       </button>
-      
-        
+
+
       <input
         class="fn-input__text-field fn-step-input__text-field is-hover"
         id="field-2"
@@ -138,40 +138,40 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         type="number"
         value="42"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="add button"
         class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--add"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <label
         for="field-3"
@@ -179,29 +179,29 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         active:
       </label>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-step-input"
       tabindex="0"
     >
-      
-        
+
+
       <button
         aria-label="subtract button"
         class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--less"
         />
-        
-        
+
+
       </button>
-      
-        
+
+
       <input
         class="fn-input__text-field fn-step-input__text-field is-active"
         id="field-3"
@@ -209,40 +209,40 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         type="number"
         value="42"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="add button"
         class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--add"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <label
         for="field-4"
@@ -250,29 +250,29 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         focus:
       </label>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-step-input"
       tabindex="0"
     >
-      
-        
+
+
       <button
         aria-label="subtract button"
         class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--less"
         />
-        
-        
+
+
       </button>
-      
-        
+
+
       <input
         class="fn-input__text-field fn-step-input__text-field is-focus"
         id="field-4"
@@ -280,40 +280,40 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         type="number"
         value="42"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="add button"
         class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--add"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <label
         for="field-5"
@@ -321,30 +321,30 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         disabled:
       </label>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-step-input"
       tabindex="-1"
     >
-      
-        
+
+
       <button
         aria-label="subtract button"
         class="fn-nested-button fn-nested-button--absolute-left"
         disabled=""
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--less"
         />
-        
-        
+
+
       </button>
-      
-        
+
+
       <input
         class="fn-input__text-field fn-step-input__text-field"
         disabled=""
@@ -353,42 +353,42 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         type="number"
         value="42"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="add button"
         class="fn-nested-button fn-nested-button--absolute-right"
         disabled=""
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--add"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <label
         for="field-6"
@@ -396,29 +396,29 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         display:
       </label>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-step-input is-display"
       tabindex="-1"
     >
-      
-        
+
+
       <button
         aria-label="subtract button"
         class="fn-nested-button fn-nested-button--absolute-left"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--less"
         />
-        
-        
+
+
       </button>
-      
-        
+
+
       <input
         class="fn-input__text-field fn-step-input__text-field is-display"
         id="field-6"
@@ -426,33 +426,33 @@ exports[`Storyshots BTP FN Components/Step Input Step Input 1`] = `
         type="number"
         value="42"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="add button"
         class="fn-nested-button fn-nested-button--absolute-right"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--add"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;

@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Generic Tag Generic Tag 1`] = `
+exports[`Storyshots BTP Experimental Design/Generic Tag Generic Tag 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -21,181 +21,181 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag is-active"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag is-disabled"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Critical 1`] = `
+exports[`Storyshots BTP Experimental Design/Generic Tag Generic Tag Critical 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -209,246 +209,246 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Critical 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--critical"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--alert"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--critical is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--alert"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--critical is-active"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--alert"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--critical is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--alert"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--critical is-disabled"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--alert"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Info 1`] = `
+exports[`Storyshots BTP Experimental Design/Generic Tag Generic Tag Info 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -462,246 +462,246 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Info 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--info"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--information"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--info is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--information"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--info is-active"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--information"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--info is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--information"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--info is-disabled"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--information"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Negative 1`] = `
+exports[`Storyshots BTP Experimental Design/Generic Tag Generic Tag Negative 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -715,246 +715,246 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Negative 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--negative"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-cancel-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--negative is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-cancel-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--negative is-active"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-cancel-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--negative is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-cancel-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--negative is-disabled"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-cancel-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Positive 1`] = `
+exports[`Storyshots BTP Experimental Design/Generic Tag Generic Tag Positive 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -968,234 +968,234 @@ exports[`Storyshots BTP FN Components/Generic Tag Generic Tag Positive 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--positive"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-enter-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--positive is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-enter-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--positive is-active"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-enter-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--positive is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-enter-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
-    </div>
-    
 
-    
+
+    </div>
+
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-generic-tag fn-generic-tag--positive is-disabled"
     >
-      
-        
+
+
       <div
         class="fn-generic-tag__icon"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--sys-enter-2"
         />
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__text"
       >
         KPI Name
       </div>
-      
-        
+
+
       <div
         class="fn-generic-tag__number"
       >
         42K
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;

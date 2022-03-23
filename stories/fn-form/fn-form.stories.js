@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Form',
+    title: 'BTP Experimental Design/Form',
     parameters: {
         description: `**Modifier classes for forms:**
 
