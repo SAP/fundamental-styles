@@ -55,7 +55,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   background: $fd-card-default-body-background-color;
   box-shadow: var(--fdCard_Box_Shadow);
   border-radius: var(--fdCard_Border_Radius);
-  border: var(--fdCard_Border);
+  border: 0.0625rem solid var(--sapTile_BorderColor);
 
   &__header {
     @include fd-reset();
