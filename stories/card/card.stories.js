@@ -57,7 +57,6 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 2">
-            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <a class="fd-card__header" tabindex="0">
                 <span
                     class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
@@ -74,6 +73,7 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
                     </div>
                 </div>
             </a>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
@@ -135,7 +135,6 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-label="Card Anatomy Example 6">
             <div class="fd-badge">Badge</div>
-            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <a class="fd-card__header" tabindex="0">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -147,6 +146,7 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
                     </div>
                 </div>
             </a>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
