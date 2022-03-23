@@ -21,7 +21,7 @@ export default (managedBy) => {
             loadedComponentStyles.hasOwnProperty(componentName)
         ) {
             loadedComponentStyles[componentName].unuse();
-            loadedComponentStyles[componentName] = void 0;
+            delete loadedComponentStyles[componentName];
         } else {
             console.log('Component not loaded');
         }

@@ -13,6 +13,7 @@ export default (manager) => {
     const unuseComponent = (componentName) => {
         if (loadedComponentStyles.hasOwnProperty(componentName)) {
             loadedComponentStyles[componentName].unuse();
+            delete loadedComponentStyles[componentName];
         } else {
             console.log('Component not loaded');
         }
