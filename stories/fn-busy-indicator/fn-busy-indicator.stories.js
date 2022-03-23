@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Busy Indicator',
+    title: 'BTP Experimental Design/Busy Indicator',
     parameters: {
         components: ['fn-busy-indicator']
     }

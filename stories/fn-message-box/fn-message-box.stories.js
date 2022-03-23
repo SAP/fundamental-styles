@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Message Box',
+    title: 'BTP Experimental Design/Message Box',
     parameters: {
         description: `**Modifier classes for Message Box:**
 

@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Shell',
+    title: 'BTP Experimental Design/Shell',
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
         description: `

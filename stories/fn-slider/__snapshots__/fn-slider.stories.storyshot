@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
+exports[`Storyshots BTP Experimental Design/Slider Range Slider 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -23,37 +23,37 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider fn-slider--range"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 30%; left: 0"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -63,26 +63,26 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -92,62 +92,62 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider fn-slider--range"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 30%; left: 30%"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -157,26 +157,26 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -186,62 +186,62 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider fn-slider--range"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 20%; left: 60%"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -251,26 +251,26 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -280,62 +280,62 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider fn-slider--range"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 70%; left: 30%"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -345,26 +345,26 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -374,62 +374,62 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider fn-slider--range is-disabled"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 100%; left: 0%"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -438,26 +438,26 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             class="fn-slider__handle"
             role="slider"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -466,44 +466,44 @@ exports[`Storyshots BTP FN Components/Slider Range Slider 1`] = `
             class="fn-slider__handle"
             role="slider"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Slider Slider 1`] = `
+exports[`Storyshots BTP Experimental Design/Slider Slider 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -519,37 +519,37 @@ exports[`Storyshots BTP FN Components/Slider Slider 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 0%;"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -559,67 +559,67 @@ exports[`Storyshots BTP FN Components/Slider Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 25%;"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -629,67 +629,67 @@ exports[`Storyshots BTP FN Components/Slider Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 50%;"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -699,67 +699,67 @@ exports[`Storyshots BTP FN Components/Slider Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 75%;"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -769,67 +769,67 @@ exports[`Storyshots BTP FN Components/Slider Slider 1`] = `
             role="slider"
             tabindex="0"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-slider is-disabled"
     >
-      
-        
+
+
       <div
         class="fn-slider__wrapper"
       >
-        
-            
+
+
         <div
           class="fn-slider__track"
           style="width: 100%;"
         >
-          
-                
+
+
           <div
             aria-label="slider handle"
             aria-valuemax="100"
@@ -838,37 +838,37 @@ exports[`Storyshots BTP FN Components/Slider Slider 1`] = `
             class="fn-slider__handle is-hover"
             role="slider"
           >
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                    
+
+
             <span
               class="sap-icon sap-icon--megamenu"
             />
-            
-                
+
+
           </div>
-          
-                
+
+
           <div
             class="fn-slider__track-range"
           />
-          
-            
+
+
         </div>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;

@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Dropdown',
+    title: 'BTP Experimental Design/Dropdown',
     parameters: {
         description: `**Modifier classes for Dropdown:**
 

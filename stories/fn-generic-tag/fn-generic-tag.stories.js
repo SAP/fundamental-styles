@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Generic Tag',
+    title: 'BTP Experimental Design/Generic Tag',
     parameters: {
         description: `**Modifier classes for Generic Tag style:**
 

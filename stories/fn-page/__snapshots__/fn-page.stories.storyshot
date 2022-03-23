@@ -1,825 +1,825 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Page Page Footer 1`] = `
+exports[`Storyshots BTP Experimental Design/Page Page Footer 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
 
   </style>
-  
+
+
+
+  <div
+    class="fn-page__footer"
+  >
+
+
+    <div
+      class="fn-page__container fn-page__container--right"
+    >
+
+
+      <div
+        class="fn-page__element"
+      >
+
+
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+
+
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+
+
+        </button>
+
+
+      </div>
+
+
+      <div
+        class="fn-page__element"
+      >
+
+
+        <button
+          class="fn-button"
+        >
+
+
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+
+
+        </button>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <br />
+  <br />
+
+
+  <div
+    class="fn-page__footer fn-page__footer--floating"
+  >
+
+
+    <div
+      class="fn-page__container fn-page__container--right"
+    >
+
+
+      <div
+        class="fn-page__element"
+      >
+
+
+        <button
+          class="fn-button fn-button--emphasized"
+        >
+
+
+          <span
+            class="fn-button__text"
+          >
+            Save
+          </span>
+
+
+        </button>
+
+
+      </div>
+
+
+      <div
+        class="fn-page__element"
+      >
+
+
+        <button
+          class="fn-button"
+        >
+
+
+          <span
+            class="fn-button__text"
+          >
+            Cancel
+          </span>
+
+
+        </button>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <br />
+  <br />
 
 
   <div
     class="fn-page__footer"
   >
-    
-    
+
+
+    <div
+      class="fn-page__container fn-page__container--left"
+    >
+
+
+      <button
+        class="fn-button fn-button--negative fn-button--icon-only"
+      >
+
+
+        <span
+          class="sap-icon sap-icon--message-error"
+        />
+
+
+      </button>
+
+
+    </div>
+
+
     <div
       class="fn-page__container fn-page__container--right"
     >
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button fn-button--emphasized"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Save
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Cancel
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
   <br />
   <br />
-  
+
 
   <div
     class="fn-page__footer fn-page__footer--floating"
   >
-    
-    
-    <div
-      class="fn-page__container fn-page__container--right"
-    >
-      
-        
-      <div
-        class="fn-page__element"
-      >
-        
-            
-        <button
-          class="fn-button fn-button--emphasized"
-        >
-          
-                
-          <span
-            class="fn-button__text"
-          >
-            Save
-          </span>
-          
-            
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fn-page__element"
-      >
-        
-            
-        <button
-          class="fn-button"
-        >
-          
-                
-          <span
-            class="fn-button__text"
-          >
-            Cancel
-          </span>
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
-    </div>
-    
 
-  </div>
-  
 
-  <br />
-  <br />
-  
-
-  <div
-    class="fn-page__footer"
-  >
-    
-    
     <div
       class="fn-page__container fn-page__container--left"
     >
-      
-        
+
+
       <button
         class="fn-button fn-button--negative fn-button--icon-only"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--message-error"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--right"
     >
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button fn-button--emphasized"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Save
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Cancel
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
 
-  <br />
-  <br />
-  
-
-  <div
-    class="fn-page__footer fn-page__footer--floating"
-  >
-    
-    
-    <div
-      class="fn-page__container fn-page__container--left"
-    >
-      
-        
-      <button
-        class="fn-button fn-button--negative fn-button--icon-only"
-      >
-        
-            
-        <span
-          class="sap-icon sap-icon--message-error"
-        />
-        
-        
-      </button>
-      
-    
-    </div>
-    
-    
-    <div
-      class="fn-page__container fn-page__container--right"
-    >
-      
-        
-      <div
-        class="fn-page__element"
-      >
-        
-            
-        <button
-          class="fn-button fn-button--emphasized"
-        >
-          
-                
-          <span
-            class="fn-button__text"
-          >
-            Save
-          </span>
-          
-            
-        </button>
-        
-        
-      </div>
-      
-        
-      <div
-        class="fn-page__element"
-      >
-        
-            
-        <button
-          class="fn-button"
-        >
-          
-                
-          <span
-            class="fn-button__text"
-          >
-            Cancel
-          </span>
-          
-            
-        </button>
-        
-        
-      </div>
-      
-    
-    </div>
-    
-
-  </div>
-  
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Page Page Group Title 1`] = `
+exports[`Storyshots BTP Experimental Design/Page Page Group Title 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
 
   </style>
-  
+
 
 
   <div
     class="fn-page__group-title"
   >
-    
-    
+
+
     <div
       class="fn-page__text"
     >
       Group Title
     </div>
-    
+
 
   </div>
-  
+
 
 
   <br />
   <br />
-  
+
 
   <div
     class="fn-page__group-title fn-page__group-title--no-container"
   >
-    
-    
+
+
     <div
       class="fn-page__text"
     >
       Group Title
     </div>
-    
+
 
   </div>
-  
+
 
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Page Page Title 1`] = `
+exports[`Storyshots BTP Experimental Design/Page Page Title 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
 
   </style>
-  
+
 
 
   <div
     class="fn-page__title"
   >
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--left"
     >
-      
-        
+
+
       <h3
         class="fn-title fn-title--h3"
       >
         Page Title
       </h3>
-      
-    
+
+
     </div>
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--right"
     >
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button fn-button--emphasized"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Primary
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Secondary
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <br />
   <br />
-  
+
 
   <div
     class="fn-page__title"
   >
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--left"
     >
-      
-        
+
+
       <h3
         class="fn-title fn-title--h3"
       >
         Page Title
       </h3>
-      
-    
+
+
     </div>
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--middle"
     >
-      
-        
+
+
       <div
         class="fn-search"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--search"
         />
-        
-            
+
+
         <input
           class="fn-search__input"
           placeholder="Search everything"
           type="search"
         />
-        
-            
+
+
         <span
           class="sap-icon sap-icon--navigation-right-arrow"
         />
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--right"
     >
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           aria-label="More"
           class="fn-button fn-button--layout fn-button--icon-only"
         >
-          
-                
+
+
           <span
             class="sap-icon sap-icon--pushpin-on"
           />
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           aria-label="More"
           class="fn-button fn-button--layout fn-button--icon-only"
         >
-          
-                
+
+
           <span
             class="sap-icon sap-icon--table-view"
           />
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           aria-label="More"
           class="fn-button fn-button--layout fn-button--icon-only"
         >
-          
-                
+
+
           <span
             class="sap-icon sap-icon--decline"
           />
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <br />
   <br />
-  
+
 
   <div
     class="fn-page__title fn-page__title--no-container"
   >
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--left"
     >
-      
-        
+
+
       <h3
         class="fn-title fn-title--h3"
       >
         Page Title
       </h3>
-      
-    
+
+
     </div>
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--right"
     >
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button fn-button--emphasized"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Primary
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           class="fn-button"
         >
-          
-                
+
+
           <span
             class="fn-button__text"
           >
             Secondary
           </span>
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <br />
   <br />
-  
+
 
   <div
     class="fn-page__title fn-page__title--no-container"
   >
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--left"
     >
-      
-        
+
+
       <h3
         class="fn-title fn-title--h3"
       >
         Page Title
       </h3>
-      
-    
+
+
     </div>
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--middle"
     >
-      
-        
+
+
       <div
         class="fn-search"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--search"
         />
-        
-            
+
+
         <input
           class="fn-search__input"
           placeholder="Search everything"
           type="search"
         />
-        
-            
+
+
         <span
           class="sap-icon sap-icon--navigation-right-arrow"
         />
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
-    
+
+
     <div
       class="fn-page__container fn-page__container--right"
     >
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           aria-label="More"
           class="fn-button fn-button--layout fn-button--icon-only"
         >
-          
-                
+
+
           <span
             class="sap-icon sap-icon--pushpin-on"
           />
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           aria-label="More"
           class="fn-button fn-button--layout fn-button--icon-only"
         >
-          
-                
+
+
           <span
             class="sap-icon sap-icon--table-view"
           />
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-        
+
+
       <div
         class="fn-page__element"
       >
-        
-            
+
+
         <button
           aria-label="More"
           class="fn-button fn-button--layout fn-button--icon-only"
         >
-          
-                
+
+
           <span
             class="sap-icon sap-icon--decline"
           />
-          
-            
+
+
         </button>
-        
-        
+
+
       </div>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;

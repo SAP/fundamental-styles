@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Toggles',
+    title: 'BTP Experimental Design/Toggles',
     parameters: {
         description: `
 

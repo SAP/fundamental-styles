@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Message Strip Dismissible Message Strip 1`] = `
+exports[`Storyshots BTP Experimental Design/Message Strip Dismissible Message Strip 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -17,156 +17,156 @@ exports[`Storyshots BTP FN Components/Message Strip Dismissible Message Strip 1`
     }
 
   </style>
-  
 
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-information fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Information (default) Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible fn-message-strip--success"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-success fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Success Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible fn-message-strip--warning"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-warning fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Warning Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible fn-message-strip--error"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-error fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Error Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Message Strip Message Strip with No Icon 1`] = `
+exports[`Storyshots BTP Experimental Design/Message Strip Message Strip with No Icon 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -176,136 +176,136 @@ exports[`Storyshots BTP FN Components/Message Strip Message Strip with No Icon 1
     }
 
   </style>
-  
 
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible"
   >
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Information (default) Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible fn-message-strip--success"
   >
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Success Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible fn-message-strip--warning"
   >
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Warning Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--dismissible fn-message-strip--error"
   >
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Error Message Strip Text
     </span>
-    
-        
+
+
     <button
       aria-label="close"
       class="fn-nested-button fn-message-strip__close-button"
     >
-      
-            
+
+
       <span
         class="sap-icon sap-icon--decline"
       />
-      
-        
+
+
     </button>
-    
-    
+
+
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Message Strip Non-Dismissible Message Strip 1`] = `
+exports[`Storyshots BTP Experimental Design/Message Strip Non-Dismissible Message Strip 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -315,90 +315,90 @@ exports[`Storyshots BTP FN Components/Message Strip Non-Dismissible Message Stri
     }
 
   </style>
-  
 
-    
+
+
   <div
     class="fn-message-strip"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-information fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Information (default) Message Strip Text
     </span>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--success"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-success fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Success Message Strip Text
     </span>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--warning"
     style="max-width: 300px;"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-warning fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text fn-message-strip__text--truncate"
     >
       Warning Message Strip very long text with truncation
     </span>
-    
-    
+
+
   </div>
-  
-    
+
+
   <div
     class="fn-message-strip fn-message-strip--error"
     style="max-width: 300px;"
   >
-    
-        
+
+
     <span
       class="sap-icon sap-icon--message-error fn-message-strip__icon"
     />
-    
-        
+
+
     <span
       class="fn-message-strip__text"
     >
       Error Message Strip very long text without truncation
     </span>
-    
-    
+
+
   </div>
-  
+
 
 </div>
 `;

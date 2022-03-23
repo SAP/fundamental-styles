@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Object Status',
+    title: 'BTP Experimental Design/Object Status',
     parameters: {
         description: `
 **Modifier classes for Object Status:**

@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Tabs',
+    title: 'BTP Experimental Design/Tabs',
     parameters: {
         description: `**Modifier classes for Tabs style:**
 
