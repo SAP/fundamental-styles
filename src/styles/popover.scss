@@ -15,8 +15,7 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-arrow-width: 1rem !default;
   $fd-popover-arrow-height: 0.5rem !default;
   $fd-popover-arrow-width-half: $fd-popover-arrow-width * 0.5 !default;
-  $fd-popover-arrow-offset: 0.625rem !default;
-  $fd-popover-arrow-offset-compact: 0.5rem !default;
+  $fd-popover-arrow-offset: var(--fdPopover_Arrow_Offset);
   $fd-popover-inline-help-arrow-offset: 0.25rem !default;
   $fd-popover-arrow-color: var(--sapContent_ForegroundBorderColor) !default;
 
@@ -121,40 +120,6 @@ $block: #{$fd-namespace}-popover;
       & > * {
         border-bottom-right-radius: $fd-popover-border-radius;
         border-bottom-left-radius: $fd-popover-border-radius;
-      }
-    }
-
-    &--compact {
-      &.#{$block}__body,
-      &.#{$block}__body--left {
-        &::before,
-        &::after {
-          left: $fd-popover-arrow-offset-compact;
-        }
-
-        @include fd-rtl() {
-          &::before,
-          &::after {
-            left: auto;
-            right: $fd-popover-arrow-offset-compact;
-          }
-        }
-      }
-
-      &.#{$block}__body--right {
-        &::before,
-        &::after {
-          left: auto;
-          right: $fd-popover-arrow-offset-compact;
-        }
-
-        @include fd-rtl() {
-          &::before,
-          &::after {
-            left: $fd-popover-arrow-offset-compact;
-            right: auto;
-          }
-        }
       }
     }
 
@@ -388,26 +353,6 @@ $block: #{$fd-namespace}-popover;
 
       &-y--bottom {
         bottom: $fd-popover-arrow-offset;
-      }
-    }
-
-    &--compact {
-      .#{$block}__arrow {
-        &-x--start {
-          left: $fd-popover-arrow-offset-compact;
-        }
-
-        &-x--end {
-          right: $fd-popover-arrow-offset-compact;
-        }
-
-        &-y--top {
-          top: $fd-popover-arrow-offset-compact;
-        }
-
-        &-y--bottom {
-          bottom: $fd-popover-arrow-offset-compact;
-        }
       }
     }
   }
