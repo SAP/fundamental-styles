@@ -1,4 +1,11 @@
 
+### 0.23.1-rc.3 (2022-03-23)
+
+
+### Bug Fixes
+
+* **fn:** update checkbox and radio labels for long text [ci visual] ([#3255](https://github.com/SAP/fundamental-styles/issues/3255)) ([32c7859](https://github.com/SAP/fundamental-styles/commit/32c7859749c97759978b2a69b5336229e9c108e3))
+
 ### 0.23.1-rc.2 (2022-03-21)
 
 
