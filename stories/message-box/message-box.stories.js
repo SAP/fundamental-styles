@@ -99,7 +99,7 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <i class="sap-icon--question-mark"></i>
+                    <i class="sap-icon--sys-help-2"></i>
                     <h2 class="fd-title fd-title--h5">Confirmation</h2>
                 </div>
             </div>
@@ -131,7 +131,7 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <i class="sap-icon--message-error"></i>
+                    <i class="sap-icon--error"></i>
                     <h2 class="fd-title fd-title--h5">Error</h2>
                 </div>
             </div>
@@ -158,7 +158,7 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <i class="sap-icon--message-success"></i>
+                    <i class="sap-icon--sys-enter-2"></i>
                     <h2 class="fd-title fd-title--h5">Success</h2>
                 </div>
             </div>
@@ -185,7 +185,7 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <i class="sap-icon--message-warning"></i>
+                    <i class="sap-icon--alert"></i>
                     <h2 class="fd-title fd-title--h5">Warning</h2>
                 </div>
             </div>
@@ -212,7 +212,7 @@ export const Types = () => `<div class="fd-message-box-docs-static fd-message-bo
         <header class="fd-bar fd-bar--header fd-message-box__header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
-                    <i class="sap-icon--message-information"></i>
+                    <i class="sap-icon--information"></i>
                     <h2 class="fd-title fd-title--h5">Information</h2>
                 </div>
             </div>
