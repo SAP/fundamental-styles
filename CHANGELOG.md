@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.2 (2022-03-23)
+
+
+### Bug Fixes
+
+* **styles:** update Message Box icons per Fiori specs [ci visual] ([#3257](https://github.com/SAP/fundamental-styles/issues/3257)) ([35a86cb](https://github.com/SAP/fundamental-styles/commit/35a86cbc271b682fc69e55bc39c702ae9e4360bd))
+
 ## 0.24.0-rc.1 (2022-03-23)
 
 
