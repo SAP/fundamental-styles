@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.4 (2022-03-24)
+
+
+### Bug Fixes
+
+* **docs:** theme and version switchers ([#3261](https://github.com/SAP/fundamental-styles/issues/3261)) ([0105602](https://github.com/SAP/fundamental-styles/commit/0105602c397cb31e7dbe74da4cb3e74cd188ab0e))
+
 ## 0.24.0-rc.3 (2022-03-24)
 
 
