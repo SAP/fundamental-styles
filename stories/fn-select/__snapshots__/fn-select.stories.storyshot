@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Select Select 1`] = `
+exports[`Storyshots BTP Experimental Design/Select Select 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -23,27 +23,27 @@ exports[`Storyshots BTP FN Components/Select Select 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-input--select"
       tabindex="0"
     >
-      
-        
+
+
       <input
         class="fn-input__text-field"
         id="field-1"
@@ -51,53 +51,53 @@ exports[`Storyshots BTP FN Components/Select Select 1`] = `
         tabindex="-1"
         type="text"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="nested button"
         class="fn-nested-button"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--megamenu"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         hover
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-input--select is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         class="fn-input__text-field"
         id="field-2"
@@ -105,53 +105,53 @@ exports[`Storyshots BTP FN Components/Select Select 1`] = `
         tabindex="-1"
         type="text"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="nested button"
         class="fn-nested-button"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--megamenu"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         active
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-input--select is-active"
       tabindex="0"
     >
-      
-        
+
+
       <input
         class="fn-input__text-field"
         id="field-3"
@@ -159,53 +159,53 @@ exports[`Storyshots BTP FN Components/Select Select 1`] = `
         tabindex="-1"
         type="text"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="nested button"
         class="fn-nested-button"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--megamenu"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         focus
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-input--select is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         class="fn-input__text-field"
         id="field-4"
@@ -213,53 +213,53 @@ exports[`Storyshots BTP FN Components/Select Select 1`] = `
         tabindex="-1"
         type="text"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="nested button"
         class="fn-nested-button"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--megamenu"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         disabled
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-input--select is-disabled"
       tabindex="-1"
     >
-      
-        
+
+
       <input
         class="fn-input__text-field"
         disabled=""
@@ -268,54 +268,54 @@ exports[`Storyshots BTP FN Components/Select Select 1`] = `
         tabindex="-1"
         type="text"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="nested button"
         class="fn-nested-button"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--megamenu"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         display
       </b>
     </div>
-    
-    
+
+
     <div
       class="fn-input fn-input--select is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         class="fn-input__text-field"
         id="field-6"
@@ -323,33 +323,33 @@ exports[`Storyshots BTP FN Components/Select Select 1`] = `
         tabindex="-1"
         type="text"
       />
-      
-        
+
+
       <div
         class="fn-input__border"
       />
-      
-        
+
+
       <button
         aria-label="nested button"
         class="fn-nested-button"
         tabindex="-1"
       >
-        
-            
+
+
         <span
           class="sap-icon sap-icon--megamenu"
         />
-        
-        
+
+
       </button>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 </div>
 `;

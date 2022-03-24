@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
+exports[`Storyshots BTP Experimental Design/Toggles Checkbox 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -39,80 +39,80 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :normal
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-checkbox"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -120,30 +120,30 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -151,91 +151,91 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :hover
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-checkbox is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -243,30 +243,30 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -274,91 +274,91 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :focus
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-checkbox is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -366,30 +366,30 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -397,37 +397,37 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :disabled
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-checkbox is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
@@ -435,29 +435,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
@@ -465,22 +465,22 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -489,29 +489,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -520,37 +520,37 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :read-only
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-checkbox is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
@@ -559,29 +559,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
@@ -590,22 +590,22 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -615,29 +615,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -647,91 +647,91 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :display
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-checkbox is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         class="fn-checkbox__input"
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -739,30 +739,30 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__label"
       >
         Checkbox
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-checkbox is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="checkbox"
         checked="checked"
@@ -770,30 +770,30 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox 1`] = `
         tabindex="-1"
         type="checkbox"
       />
-      
-        
+
+
       <span
         class="fn-checkbox__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
+exports[`Storyshots BTP Experimental Design/Toggles Checkbox Group 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -825,25 +825,25 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container-group"
   >
-    
-    
+
+
     <fieldset
       class="fn-fieldset"
     >
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           checked="checked"
@@ -852,29 +852,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           First
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           class="fn-checkbox__input"
@@ -882,29 +882,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           Second
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           class="fn-checkbox__input"
@@ -912,47 +912,47 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           Third
         </span>
-        
-        
+
+
       </label>
-      
-    
+
+
     </fieldset>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container-group"
   >
-    
-    
+
+
     <fieldset
       class="fn-fieldset fn-fieldset--full-width"
       style="width: 120px;"
     >
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           checked="checked"
@@ -961,29 +961,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           First
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           class="fn-checkbox__input"
@@ -991,29 +991,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           Second
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           class="fn-checkbox__input"
@@ -1021,46 +1021,46 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           Third
         </span>
-        
-        
+
+
       </label>
-      
-    
+
+
     </fieldset>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container-group"
   >
-    
-    
+
+
     <fieldset
       class="fn-fieldset fn-fieldset--horizontal"
     >
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           checked="checked"
@@ -1069,29 +1069,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           Checkbox
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           class="fn-checkbox__input"
@@ -1099,29 +1099,29 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           Checkbox
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-checkbox"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="checkbox"
           class="fn-checkbox__input"
@@ -1129,40 +1129,40 @@ exports[`Storyshots BTP FN Components/Toggles Checkbox Group 1`] = `
           tabindex="-1"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-checkbox__label"
         >
           Checkbox
         </span>
-        
-        
+
+
       </label>
-      
-    
+
+
     </fieldset>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
+exports[`Storyshots BTP Experimental Design/Toggles Radio 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -1194,80 +1194,80 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :normal
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-radio"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1275,30 +1275,30 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1306,91 +1306,91 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :hover
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-radio is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1398,30 +1398,30 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-hover"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1429,91 +1429,91 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :focus
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-radio is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1521,30 +1521,30 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-focus"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1552,37 +1552,37 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :disabled
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-radio is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
@@ -1590,29 +1590,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
@@ -1620,22 +1620,22 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1644,29 +1644,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-disabled"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1675,37 +1675,37 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :read-only
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-radio is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
@@ -1714,29 +1714,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
@@ -1745,22 +1745,22 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1770,29 +1770,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-readonly"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1802,91 +1802,91 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :display
       </b>
     </div>
-    
-    
+
+
     <label
       class="fn-radio is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         class="fn-radio__input"
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1894,30 +1894,30 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-        
+
+
       <span
         class="fn-radio__label"
       >
         Radio Button
       </span>
-      
-    
-    </label>
-    
 
-    
+
+    </label>
+
+
+
     <label
       class="fn-radio is-display"
       tabindex="0"
     >
-      
-        
+
+
       <input
         aria-label="radio"
         checked="checked"
@@ -1925,31 +1925,31 @@ exports[`Storyshots BTP FN Components/Toggles Radio 1`] = `
         tabindex="-1"
         type="radio"
       />
-      
-        
+
+
       <span
         class="fn-radio__checkmark"
       />
-      
-    
+
+
     </label>
-    
+
 
   </div>
-  
+
 
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
+exports[`Storyshots BTP Experimental Design/Toggles Radio Group 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -1981,25 +1981,25 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container-group"
   >
-    
-    
+
+
     <fieldset
       class="fn-fieldset"
     >
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           checked="checked"
@@ -2008,29 +2008,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           First
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           class="fn-radio__input"
@@ -2038,29 +2038,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           Second
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           class="fn-radio__input"
@@ -2068,47 +2068,47 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           Third
         </span>
-        
-        
+
+
       </label>
-      
-    
+
+
     </fieldset>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container-group"
   >
-    
-    
+
+
     <fieldset
       class="fn-fieldset fn-fieldset--full-width"
       style="width: 120px;"
     >
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           checked="checked"
@@ -2117,29 +2117,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           First
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           class="fn-radio__input"
@@ -2147,29 +2147,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           Second
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           class="fn-radio__input"
@@ -2177,46 +2177,46 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           Third
         </span>
-        
-        
+
+
       </label>
-      
-    
+
+
     </fieldset>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container-group"
   >
-    
-    
+
+
     <fieldset
       class="fn-fieldset fn-fieldset--horizontal"
     >
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           checked="checked"
@@ -2225,29 +2225,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           Radio Button
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           class="fn-radio__input"
@@ -2255,29 +2255,29 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           Radio Button
         </span>
-        
-        
+
+
       </label>
-      
-        
+
+
       <label
         class="fn-radio"
         tabindex="0"
       >
-        
-            
+
+
         <input
           aria-label="radio"
           class="fn-radio__input"
@@ -2285,40 +2285,40 @@ exports[`Storyshots BTP FN Components/Toggles Radio Group 1`] = `
           tabindex="-1"
           type="radio"
         />
-        
-            
+
+
         <span
           class="fn-radio__checkmark"
         />
-        
-            
+
+
         <span
           class="fn-radio__label"
         >
           Radio Button
         </span>
-        
-        
+
+
       </label>
-      
-    
+
+
     </fieldset>
-    
+
 
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Toggles Switch 1`] = `
+exports[`Storyshots BTP Experimental Design/Toggles Switch 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -2350,50 +2350,50 @@ exports[`Storyshots BTP FN Components/Toggles Switch 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div
       class="fn-switch"
     >
-      
-        
+
+
       <label
         class="fn-switch__toggle"
       >
-        
-            
+
+
         <input
           class="fn-switch__input"
           type="checkbox"
         />
-        
-            
+
+
         <span
           class="fn-switch__slider"
         />
-        
-            
+
+
         <span
           class="fn-switch__label"
         >
           Toggle
         </span>
-        
-        
+
+
       </label>
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
 </div>

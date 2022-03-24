@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Table',
+    title: 'BTP Experimental Design/Table',
     parameters: {
         description: `
 The table is an un-opinionated component that can contain a variety of cells with their own components.

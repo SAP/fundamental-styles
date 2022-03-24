@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Search',
+    title: 'BTP Experimental Design/Search',
     parameters: {
         description: '',
         components: ['fn-search', 'icon']

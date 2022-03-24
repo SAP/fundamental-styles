@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/List',
+    title: 'BTP Experimental Design/List',
     parameters: {
         components: ['fn-list', 'icon', 'fn-button', 'fn-checkbox', 'fn-object-status', 'fn-avatar']
     }

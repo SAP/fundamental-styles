@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Card',
+    title: 'BTP Experimental Design/Card',
     parameters: {
         components: ['fn-card', 'icon', 'fn-button', 'fn-avatar', 'fn-list'],
         description: `

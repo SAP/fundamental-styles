@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Shell Extra large 1`] = `
+exports[`Storyshots BTP Experimental Design/Shell Extra large 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
 
   </style>
-  
 
-    
+
+
   <div
     class="fn-shell"
   >
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--product"
     >
-      
-            
+
+
       <span
         class="fn-shell__logo"
       >
@@ -37,136 +37,136 @@ exports[`Storyshots BTP FN Components/Shell Extra large 1`] = `
           width="52"
         />
       </span>
-      
-            
+
+
       <span
         class="fn-shell__title"
       >
         Product Name
       </span>
-      
-        
+
+
     </div>
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--search"
     >
-      
-            
+
+
       <div
         class="fn-search"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--search"
         />
-        
-                
+
+
         <input
           class="fn-search__input"
           placeholder="Search everything"
           type="search"
         />
-        
-                
+
+
         <span
           class="sap-icon sap-icon--navigation-right-arrow"
         />
-        
-            
+
+
       </div>
-      
-        
+
+
     </div>
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--actions"
     >
-      
-            
+
+
       <button
         aria-label="Settings"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--settings"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <button
         aria-label="Notification"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--bell"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <div
         class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar"
         tabindex="0"
       >
-        
-                
+
+
         <div
           aria-label="John Doe"
           class="fn-avatar__thumbnail"
           role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
-        
-            
+
+
       </div>
-      
-        
+
+
     </div>
-    
-    
+
+
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Shell Large 1`] = `
+exports[`Storyshots BTP Experimental Design/Shell Large 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
 
   </style>
-  
 
-    
+
+
   <div
     class="fn-shell"
   >
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--product"
     >
-      
-            
+
+
       <span
         class="fn-shell__logo"
       >
@@ -178,136 +178,136 @@ exports[`Storyshots BTP FN Components/Shell Large 1`] = `
           width="52"
         />
       </span>
-      
-            
+
+
       <span
         class="fn-shell__title"
       >
         Product Name
       </span>
-      
-        
+
+
     </div>
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--search"
     >
-      
-            
+
+
       <div
         class="fn-search"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--search"
         />
-        
-                
+
+
         <input
           class="fn-search__input"
           placeholder="Search everything"
           type="search"
         />
-        
-                
+
+
         <span
           class="sap-icon sap-icon--navigation-right-arrow"
         />
-        
-            
+
+
       </div>
-      
-        
+
+
     </div>
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--actions"
     >
-      
-            
+
+
       <button
         aria-label="Settings"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--settings"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <button
         aria-label="Notification"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--bell"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <div
         class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar"
         tabindex="0"
       >
-        
-                
+
+
         <div
           aria-label="John Doe"
           class="fn-avatar__thumbnail"
           role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
-        
-            
+
+
       </div>
-      
-        
+
+
     </div>
-    
-    
+
+
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Shell Medium 1`] = `
+exports[`Storyshots BTP Experimental Design/Shell Medium 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
 
   </style>
-  
 
-    
+
+
   <div
     class="fn-shell"
   >
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--product"
     >
-      
-            
+
+
       <span
         class="fn-shell__logo"
       >
@@ -319,131 +319,131 @@ exports[`Storyshots BTP FN Components/Shell Medium 1`] = `
           width="52"
         />
       </span>
-      
-            
+
+
       <span
         class="fn-shell__title"
       >
         Product Name
       </span>
-      
-        
+
+
     </div>
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--actions"
     >
-      
-            
+
+
       <button
         aria-label="Search"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--search"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <button
         aria-label="Settings"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--settings"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <button
         aria-label="Notification"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--bell"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <div
         class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar"
         tabindex="0"
       >
-        
-                
+
+
         <div
           aria-label="John Doe"
           class="fn-avatar__thumbnail"
           role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
-        
-            
+
+
       </div>
-      
-        
+
+
     </div>
-    
-    
+
+
   </div>
-  
+
 
 </div>
 `;
 
-exports[`Storyshots BTP FN Components/Shell Small 1`] = `
+exports[`Storyshots BTP Experimental Design/Shell Small 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
 
   </style>
-  
 
-    
+
+
   <div
     class="fn-shell"
   >
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--product"
     >
-      
-            
+
+
       <button
         aria-label="Menu"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--menu2"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <span
         class="fn-shell__logo"
       >
@@ -455,80 +455,80 @@ exports[`Storyshots BTP FN Components/Shell Small 1`] = `
           width="52"
         />
       </span>
-      
-        
+
+
     </div>
-    
-        
+
+
     <div
       class="fn-shell__group fn-shell__group--actions"
     >
-      
-            
+
+
       <button
         aria-label="Search"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--search"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <button
         aria-label="Settings"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--settings"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <button
         aria-label="Notification"
         class="fn-button fn-button--layout fn-button--icon-only"
       >
-        
-                
+
+
         <span
           class="sap-icon sap-icon--bell"
         />
-        
-            
+
+
       </button>
-      
-            
+
+
       <div
         class="fn-avatar fn-avatar--circle fn-avatar--thumbnail fn-avatar--interactive fn-avatar--m fn-shell__avatar"
         tabindex="0"
       >
-        
-                
+
+
         <div
           aria-label="John Doe"
           class="fn-avatar__thumbnail"
           role="img"
           style="background-image: url('/assets/images/backgrounds/city.jpg')"
         />
-        
-            
+
+
       </div>
-      
-        
+
+
     </div>
-    
-    
+
+
   </div>
-  
+
 
 </div>
 `;

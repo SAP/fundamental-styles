@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Multi-Input',
+    title: 'BTP Experimental Design/Multi-Input',
     parameters: {
         description: `
 

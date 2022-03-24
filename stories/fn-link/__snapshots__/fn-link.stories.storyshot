@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Link Links 1`] = `
+exports[`Storyshots BTP Experimental Design/Link Links 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
 .docs-story {
     background: white;
 }
@@ -32,175 +32,175 @@ exports[`Storyshots BTP FN Components/Link Links 1`] = `
 }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div />
-    
-    
+
+
     <div>
       <b>
-        Emphasized 
+        Emphasized
       </b>
     </div>
-    
-    
+
+
     <div>
       <b>
         Default
       </b>
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :normal
       </b>
     </div>
-    
-    
+
+
     <a
       class="fn-link fn-link--emphasized"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
-    
+
+
     <a
       class="fn-link"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :hover
       </b>
     </div>
-    
-    
+
+
     <a
       class="fn-link fn-link--emphasized is-hover"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
-    
+
+
     <a
       class="fn-link is-hover"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :active
       </b>
     </div>
-    
-    
+
+
     <a
       class="fn-link fn-link--emphasized is-active"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
-    
+
+
     <a
       class="fn-link is-active"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :focus
       </b>
     </div>
-    
-    
+
+
     <a
       class="fn-link fn-link--emphasized is-focus"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
-    
+
+
     <a
       class="fn-link is-focus"
       href="https://sap.github.io/fundamental-styles"
     >
       Ñagçyfox
     </a>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         :disabled
       </b>
     </div>
-    
-    
+
+
     <a
       aria-disabled="true"
       class="fn-link fn-link--emphasized"
@@ -209,8 +209,8 @@ exports[`Storyshots BTP FN Components/Link Links 1`] = `
     >
       Ñagçyfox
     </a>
-    
-    
+
+
     <a
       aria-disabled="true"
       class="fn-link"
@@ -219,10 +219,10 @@ exports[`Storyshots BTP FN Components/Link Links 1`] = `
     >
       Ñagçyfox
     </a>
-    
+
 
   </div>
-  
+
 
 
 </div>
