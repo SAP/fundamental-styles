@@ -171,14 +171,12 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
   &__counter.#{$object-status} {
     font-size: var(--sapFontSmallSize);
-    margin-left: $fd-card-title-counter-spacing;
-    margin-top: 0.188rem;
-    margin-right: 0;
+    text-align: right;
+    margin: var(--fdCard_Counter_Margin);
     white-space: nowrap;
 
     @include fd-rtl() {
-      margin-left: 0;
-      margin-right: $fd-card-title-counter-spacing;
+      margin: var(--fdCard_Counter_Margin_RTL);
     }
   }
 
