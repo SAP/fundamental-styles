@@ -367,4 +367,7 @@
   /** Busy Indicator */
   --fdBusy_Indicator_Dot_Color: var(--sapContent_IconColor);
   --fdBusy_Indicator_Dot_Contrast_Color: var(--sapContent_IconColor);
+
+  /** Text */
+  --fdText_Selected_Background_Color: var(--sapSelectedColor);
 }
