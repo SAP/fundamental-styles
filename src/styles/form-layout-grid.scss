@@ -121,6 +121,7 @@ $groupGutter: 1rem;
     padding: $groupGutter;
 
     .#{$gridRow} {
+      margin: 0 -#{$gutter} 0.625rem;
       min-width: calc(100% + #{$gutter} * 2);
 
       .#{$gridCol} {
