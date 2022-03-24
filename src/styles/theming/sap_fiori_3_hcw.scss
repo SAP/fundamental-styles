@@ -121,6 +121,8 @@
 
   /* Popover */
   --fdPopover_Text_Shadow: none;
+  --fdPopover_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdPopover_Arrow_Offset: 0.5rem;
 
   /* Product Switch */
   --fdProductSwitch_Text_Shadow: none;
