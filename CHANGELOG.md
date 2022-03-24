@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.3 (2022-03-24)
+
+
+### Features
+
+* **styles:** add delta horizon theming support for Popover [ci visual] ([#3259](https://github.com/SAP/fundamental-styles/issues/3259)) ([a4a2bf6](https://github.com/SAP/fundamental-styles/commit/a4a2bf6dfa331730bad8155fa9c00417a840be84))
+
 ## 0.24.0-rc.2 (2022-03-23)
 
 
