@@ -20,7 +20,7 @@ The switch mimics a physical switch, allowing users to set individual features (
 -	It’s not clear if the control is showing a state or an action. In this case, use a **Checkbox** instead.
 
   `,
-        components: ['form-label', 'switch', 'icon', 'form']
+        components: ['form-label', 'switch', 'icon']
     }
 };
 
@@ -144,10 +144,7 @@ WithText.parameters = {
     docs: {
         iframeHeight: 350,
         description: {
-            story: `As mentioned in the previous example, a switch should always be accompanied by a label.
-
-        (code needs fixing)
-        `
+            story: 'As mentioned in the previous example, a switch should always be accompanied by a label.'
         }
     }
 };
