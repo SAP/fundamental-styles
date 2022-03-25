@@ -28,6 +28,15 @@ $block: #{$fd-namespace}-input;
     z-index: 0;
   }
 
+  &.is-warning,
+  &.is-alert {
+    @include fd-focus() {
+      background: var(--sapField_Focus_Background);
+      outline-offset: var(--fdInput_Outline_Offset);
+      outline-color: var(--sapField_InvalidColor);
+    }
+  }
+
   @include fd-expanded() {
     z-index: 4;
   }

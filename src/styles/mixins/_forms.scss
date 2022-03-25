@@ -4,13 +4,14 @@
 
 @mixin fd-form-states {
 
-  $fd-form-border-thin-width: 0.0625rem;
-  $fd-form-border-thick-width: 2 * $fd-form-border-thin-width;
+  // $fd-form-border-thin-width: 0.0625rem;
+  // $fd-form-border-thick-width: 2 * $fd-form-border-thin-width;
 
   // states
   @include fd-hover() {
     background-color: var(--sapField_Hover_Background);
     border-color: var(--sapField_Hover_BorderColor);
+    box-shadow: var(--fdInput_Interaction_Hover_Shadow);
   }
 
   &.is-success {
@@ -23,8 +24,9 @@
     );
 
     @include fd-hover() {
-      background-color: var(--sapField_SuccessBackground);
+      background-color: var(--fdInput_Success_Hover_Background);
       border-color: var(--sapField_SuccessColor);
+      box-shadow: var(--fdInput_Success_Hover_Shadow);
     }
   }
 
@@ -40,13 +42,15 @@
     );
 
     @include fd-hover() {
-      background-color: var(--sapField_InvalidBackground);
+      background-color: var(--fdInput_Error_Hover_Background);
       border-color: var(--sapField_InvalidColor);
+      box-shadow: var(--fdInput_Error_Hover_Shadow);
     }
   }
 
   &.is-warning,
   &.is-alert {
+    background: var(--sapField_WarningBackgroundStyle);
     background-color: var(--sapField_WarningBackground);
     font-style: var(--fdInput_State_Text_Style);
     font-weight: var(--fdInput_State_Font_Weight);
@@ -58,8 +62,9 @@
     );
 
     @include fd-hover() {
-      background-color: var(--sapField_WarningBackground);
+      background-color: var(--fdInput_Warning_Hover_Background);
       border-color: var(--sapField_WarningColor);
+      box-shadow: var(--fdInput_Warning_Hover_Shadow);
     }
   }
 
@@ -73,8 +78,9 @@
     );
 
     @include fd-hover() {
-      background-color: var(--sapField_InformationBackground);
+      background-color: var(--fdInput_Information_Hover_Background);
       border-color: var(--sapField_InformationColor);
+      box-shadow: var(--fdInput_Information_Hover_Shadow);
     }
   }
 
@@ -90,8 +96,8 @@
   &.is-alert,
   &.is-information,
   &.is-error {
-    border-width: $fd-form-border-thick-width;
-    border-style: var(--fdInput_State_Border_Type);
+    // border-width: $fd-form-border-thick-width;
+    // border-style: var(--fdInput_State_Border_Type);
 
     @include fd-focus() {
       box-shadow: none;
@@ -124,7 +130,7 @@
 
   color: var(--sapField_TextColor);
   background-color: var(--sapField_Background);
-  border-style: solid;
+  // border-style: solid;
   border-width: var(--sapField_BorderWidth);
   border-color: var(--sapField_BorderColor);
   border-radius: var(--sapField_BorderCornerRadius);

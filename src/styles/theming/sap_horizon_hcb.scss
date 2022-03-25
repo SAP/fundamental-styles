@@ -149,6 +149,16 @@
   --fdInput_State_Font_Weight: normal;
   --fdInput_State_Border_Type: solid;
   --fdPlaceholder_Text_Style: normal;
+  --fdInput_Background_Color: var();
+  --fdInput_Error_Hover_Background: var(--sapField_InvalidBackground);
+  --fdInput_Warning_Hover_Background: var(--sapField_WarningBackground);
+  --fdInput_Success_Hover_Background: var(--sapField_SuccessBackground);
+  --fdInput_Information_Hover_Background: var(--sapField_InformationBackground);
+  --fdInput_Interaction_Hover_Shadow: none;
+  --fdInput_Error_Hover_Shadow: none;
+  --fdInput_Warning_Hover_Shadow: none;
+  --fdInput_Success_Hover_Shadow: none;
+  --fdInput_Information_Hover_Shadow: none;
 
   /* Form Message */
   --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
