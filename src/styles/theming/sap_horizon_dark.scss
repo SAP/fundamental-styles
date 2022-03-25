@@ -224,12 +224,12 @@
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.0625rem;
-  --fdMessageStrip_Border_Radius: 0.5rem; // var(--sapPopover_BorderCornerRadius);
-  --fdMessageStrip_Border_Color_Success: #246c37;// var(--sapMessage_SuccessBorderColor);
-  --fdMessageStrip_Border_Color_Error: #820000;// var(--sapMessage_ErrorBorderColor);
-  --fdMessageStrip_Border_Color_Warning: #845c00;// var(--sapMessage_WarningBorderColor);
+  --fdMessageStrip_Border_Radius: var(--sapPopover_BorderCornerRadius);
+  --fdMessageStrip_Border_Color_Success: var(--sapMessage_SuccessBorderColor);
+  --fdMessageStrip_Border_Color_Error: var(--sapMessage_ErrorBorderColor);
+  --fdMessageStrip_Border_Color_Warning: var(--sapMessage_WarningBorderColor);
   --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
-  --fdMessageStrip_Border_Color_Informative: #0034bf;// var(--sapMessage_InformationBorderColor);
+  --fdMessageStrip_Border_Color_Informative: var(--sapMessage_InformationBorderColor);
   --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
   --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
   --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);
