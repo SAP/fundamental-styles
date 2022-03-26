@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.6 (2022-03-26)
+
+
+### Features
+
+* checkbox horizon support ([#3252](https://github.com/SAP/fundamental-styles/issues/3252)) ([789cca6](https://github.com/SAP/fundamental-styles/commit/789cca6740e78bd35bc53af29a0517b2a4e305f8))
+
 ## 0.24.0-rc.5 (2022-03-25)
 
 ## 0.24.0-rc.4 (2022-03-24)
