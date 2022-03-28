@@ -392,7 +392,7 @@
   /** Card */
   --fdCard_Background_Color: transparent;
   --fdCard_Box_Shadow: none;
-  --fdCard_Border_Radius: 0;
+  --fdCard_Border_Radius: var(--sapTile_BorderCornerRadius);
   --fdCard_Header_Border_Bottom: none;
   --fdCard_Border: 0.0625rem solid var(--sapTile_BorderColor);
   --fdCard_Counter_Margin: 0.125rem 0 0 1rem;
