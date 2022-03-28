@@ -1,4 +1,5 @@
 @import "./common/switch/sap_horizon";
+@import "./button/sap_horizon";
 
 :root {
   /* Switch */
@@ -172,7 +173,8 @@
 
   /* Button */
   --fdButton_Text_Shadow: none;
-  --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Emphasized_Border_Width: 0.125rem;
+  --fdButton_Outline_Offset: -0.1875rem;
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
@@ -194,7 +196,7 @@
   --fdCalendar_Active_Item_Border: none;
 
   /** Badge on Button */
-  --fdBadgeButton_Border_Color: var(--sapGroup_ContentBorderColor);
+  --fdButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
@@ -430,4 +432,19 @@
   --fdBar_Left_Area_Padding_Right: 0.25rem;
   --fdBar_Middle_Area_Padding_X: 0.25rem;
   --fdBar_Right_Area_Padding_Left: 0.25rem;
+
+  /** Segmented Button */
+  --fdButton_Segmented_Pad_Display: none;
+  --fdButton_Segmented_Border_Width: 0;
+  --fdButton_Border_Radius_Left: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+  --fdButton_Border_Radius_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
+  --fdButton_Border_Radius_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Border_Radius_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+
+  /** Menu Button */
+  --fdButton_Menu_Border_Width: 0;
+  --fdButton_Menu_Separator_Display: none;
+  --fdButton_Menu_Transparent_Border_Width: 0;
+  --fdButton_Menu_Transparent_Separator_Display: none;
 }

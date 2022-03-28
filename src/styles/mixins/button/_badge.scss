@@ -19,7 +19,7 @@ $fd-button-badge-offset: -0.25rem;
   right: $fd-button-badge-offset;
   font-size: var(--sapFontSmallSize);
   color: var(--sapContent_BadgeTextColor);
-  border-color: var(--fdBadgeButton_Border_Color);
+  border-color: var(--fdButton_Badge_Border_Color);
   background-color: var(--sapContent_BadgeBackground);
 
   @include fd-rtl() {

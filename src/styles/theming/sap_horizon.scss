@@ -1,4 +1,5 @@
 @import "./common/switch/sap_horizon";
+@import "./button/sap_horizon";
 
 :root {
   /* Switch */
@@ -227,9 +228,6 @@
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
   --fdCalendar_Active_Item_Border: none;
-
-  /** Badge on Button */
-  --fdBadgeButton_Border_Color: var(--sapContent_BadgeBackground);
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);

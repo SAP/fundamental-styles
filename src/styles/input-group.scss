@@ -197,7 +197,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     position: static !important;
 
     @include fd-focus() {
-      @include buttonFocus() {
+      @include fd-button-focus() {
         outline-color: var(--sapField_Hover_BorderColor);
       }
     }

@@ -1,5 +1,5 @@
 @mixin emphasized() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Emphasized_TextColor),
     var(--sapButton_Emphasized_BorderColor),
     var(--sapButton_Emphasized_Background)
@@ -7,7 +7,7 @@
 }
 
 @mixin emphasizedHover {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Emphasized_Hover_TextColor),
     var(--sapButton_Emphasized_Hover_BorderColor),
     var(--sapButton_Emphasized_Hover_Background)
@@ -15,34 +15,9 @@
 }
 
 @mixin emphasizedPressed() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Emphasized_Active_TextColor),
     var(--sapButton_Emphasized_Active_BorderColor),
     var(--sapButton_Emphasized_Active_Background)
-  );
-}
-
-// Toggled state
-@mixin emphasizedToggled() {
-  @include applyColors(
-    var(--sapButton_Selected_TextColor),
-    var(--sapButton_Selected_BorderColor),
-    var(--sapButton_Selected_Background)
-  );
-}
-
-@mixin emphasizedToggledHover {
-  @include applyColors(
-    var(--sapButton_Selected_TextColor),
-    var(--sapButton_Selected_Hover_BorderColor),
-    var(--sapButton_Selected_Hover_Background)
-  );
-}
-
-@mixin emphasizedToggledPressed() {
-  @include applyColors(
-    var(--sapButton_Selected_TextColor),
-    var(--sapButton_Selected_Hover_BorderColor),
-    var(--sapButton_Selected_Hover_Background)
   );
 }
