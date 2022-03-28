@@ -77,6 +77,7 @@ $groupGutter: 1rem;
 
     .#{$gridCol} {
       padding-top: 0;
+      padding-bottom: 0;
 
       @include fd-ellipsis();
 
@@ -84,9 +85,20 @@ $groupGutter: 1rem;
         margin: 0.25rem 0;
       }
 
+      &--compact {
+        .#{$fd-namespace}-select__control {
+          margin: 0.1875rem 0 0.25rem 0;
+        }
+      }
+
       .#{$fd-namespace}-form-label {
         @include fd-set-margin-right(0);
-        @include fd-set-padding-right(0.5rem);
+
+        &--required {
+          @include fd-set-padding-right(0.5rem);
+        }
+
+        white-space: initial;
       }
 
       &__form-group {
@@ -109,7 +121,7 @@ $groupGutter: 1rem;
     padding: $groupGutter;
 
     .#{$gridRow} {
-      margin: 0 -#{$gutter};
+      margin: 0 -#{$gutter} 0.625rem;
       min-width: calc(100% + #{$gutter} * 2);
 
       .#{$gridCol} {
