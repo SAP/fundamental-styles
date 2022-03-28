@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-token;
   @mixin fd-token-focus() {
     @include fd-focus() {
       box-shadow: none;
-      outline-offset: -0.1875rem;
+      outline-offset: var(--fdToken_Outline_Offset);
       outline-width: var(--sapContent_FocusWidth);
       outline-color: var(--sapContent_FocusColor);
       outline-style: var(--sapContent_FocusStyle);
@@ -21,11 +21,11 @@ $block: #{$fd-namespace}-token;
   $fd-token-compact-height: 1.25rem;
   $fd-token-compact-close-width: 1.25rem;
   $fd-token-close-width: 1.75rem;
-  $fd-token-padding-horizontal: 0.3125rem;
+  $fd-token-padding-horizontal: var(--fdToken_Padding_Left);
   $fd-token-padding-vertical: 0.25rem;
   $fd-token-compact-padding-horizontal: 0.25rem;
   $fd-token-compact-padding-vertical: 0.1rem;
-  $fd-token-color: var(--sapTextColor) !default;
+  $fd-token-color: var(--fdToken_Text_Color);
   $fd-token-background-color: var(--sapButton_TokenBackground) !default;
   $fd-token-border-color: var(--sapButton_TokenBorderColor) !default;
   $fd-token-selected-hover-border-color: var(--sapButton_Selected_Hover_BorderColor) !default;
@@ -48,7 +48,7 @@ $block: #{$fd-namespace}-token;
   align-items: center;
   text-align: center;
   padding: $fd-token-padding-vertical 0 $fd-token-padding-vertical $fd-token-padding-horizontal;
-  border-radius: 0.25rem;
+  border-radius: var(--sapButton_BorderCornerRadius);
   white-space: nowrap;
   max-width: 100%;
   min-width: 3.625rem;
@@ -96,8 +96,9 @@ $block: #{$fd-namespace}-token;
   }
 
   &:hover {
-    background-color: var(--sapButton_Hover_Background);
-    border-color: var(--sapButton_Hover_BorderColor);
+    background-color: var(--fdToken_Background_Color_Hover);
+    border-color: var(--fdToken_Border_Color_Hover);
+    box-shadow: var(--fdToken_Box_Shadow_Hover);
   }
 
   @include fd-token-focus();
@@ -120,6 +121,10 @@ $block: #{$fd-namespace}-token;
       padding-left: 0;
       padding-right: $fd-token-compact-padding-horizontal;
     }
+
+    @include fd-token-focus() {
+      outline-offset: var(--fdToken_Outline_Offset_Compact);
+    }
   }
 
   &--selected {
@@ -134,6 +139,7 @@ $block: #{$fd-namespace}-token;
     &:hover {
       background-color: var(--sapButton_Selected_Hover_Background);
       border-color: $fd-token-selected-hover-border-color;
+      box-shadow: var(--fdToken_Box_Shadow_Selected_Hover);
     }
 
     @include fd-token-focus() {
