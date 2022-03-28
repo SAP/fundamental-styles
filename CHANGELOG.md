@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.7 (2022-03-28)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Radio Button ([#3253](https://github.com/SAP/fundamental-styles/issues/3253)) ([c85c5aa](https://github.com/SAP/fundamental-styles/commit/c85c5aa1c42abe7daae1dbda70c73026cf1ccc1f))
+
 ## 0.24.0-rc.6 (2022-03-26)
 
 
