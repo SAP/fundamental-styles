@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.9 (2022-03-28)
+
+
+### Features
+
+* **styles:** horizon theming for Text ([#3260](https://github.com/SAP/fundamental-styles/issues/3260)) ([6852f71](https://github.com/SAP/fundamental-styles/commit/6852f71c3dcbad5ab92ad746b34219702c4f483c))
+
 ## 0.24.0-rc.8 (2022-03-28)
 
 
