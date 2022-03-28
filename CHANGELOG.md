@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.8 (2022-03-28)
+
+
+### Bug Fixes
+
+* **styles:** form mis-alignments ([#3256](https://github.com/SAP/fundamental-styles/issues/3256)) ([eee6580](https://github.com/SAP/fundamental-styles/commit/eee658038d6bf3dc70a33cc2d6ece712306eab8b))
+
 ## 0.24.0-rc.7 (2022-03-28)
 
 
