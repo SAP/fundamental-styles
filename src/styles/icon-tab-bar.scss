@@ -1071,8 +1071,6 @@ $fd-icon-tab-bar-semantic-values: (
           }
 
           .#{$block}__label {
-            color: map_get($set-params, 'color');
-
             &::before {
               @extend %semantic-icon-base;
 
