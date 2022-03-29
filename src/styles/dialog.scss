@@ -59,12 +59,18 @@ $button: #{$fd-namespace}-button;
 
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
-        .#{$block}__header.#{$bar},
-        .#{$block}__subheader.#{$bar},
-        .#{$block}__footer.#{$bar},
         .#{$block}__body {
           padding-left: map_get($fd-dialog-content-padding-x, $size-label);
           padding-right: map_get($fd-dialog-content-padding-x, $size-label);
+        }
+
+        .#{$block}__header.#{$bar},
+        .#{$block}__subheader.#{$bar},
+        .#{$block}__footer.#{$bar} {
+          $padding: map_get($fd-dialog-content-padding-x, $size-label) - 1rem;
+
+          padding-left: $padding;
+          padding-right: $padding;
         }
       }
     }

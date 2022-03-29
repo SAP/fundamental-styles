@@ -43,7 +43,7 @@ export const Default = () => `
 <p><b>Compact bar with compact elements</b></p>
 <div class="fd-bar">
     <div class="fd-bar__left">
-        <div class="fd-bar__element fd-bar__element--title">
+        <div class="fd-bar__element">
             <h6 class="fd-title fd-title--h6" aria-label="text">TEXT</h6>
         </div>
     </div>
@@ -123,7 +123,7 @@ Default.parameters = {
     docs: {
         iframeHeight: 200,
         description: {
-            story: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn\'t forbid including cozy elements inside (e.g. cozy buttons). Add `--title` modifier class to bar element, if title is first element in bar.'
+            story: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn\'t forbid including cozy elements inside (e.g. cozy buttons).'
         }
     }
 };
@@ -381,6 +381,60 @@ export const HeaderWithSubheader = () => `
             <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
                 <i class="sap-icon--navigation-left-arrow"></i>
             </button>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
+                <i class="sap-icon--home"></i>
+            </button>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
+                <i class="sap-icon--account"></i>
+            </button>
+        </div>
+    </div>
+    <div class="fd-bar__middle">
+        <div class="fd-bar__element">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
+                    <i class="sap-icon--email"></i>
+                </button>
+                <button aria-label="button" class="fd-button fd-button--compact">
+                    <i class="sap-icon--iphone"></i>
+                </button>
+                <button aria-label="button" class="fd-button fd-button--compact">
+                    <i class="sap-icon--notification-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="fd-bar__right">
+        <div class="fd-bar__element">
+            <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                style="background-image: url('/assets/images/avatars/1.svg')"
+                role="img" aria-label="John Doe"></span>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">
+                <i class="sap-icon--grid"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="fd-bar fd-bar--subheader">
+    <div class="fd-bar__middle">
+        <div class="fd-bar__element fd-bar__element--full-width">
+            <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="" name="" value="1234568910 " aria-label="input">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<div class="fd-bar fd-bar--header-with-subheader">
+    <div class="fd-bar__left">
+        <div class="fd-bar__element">
+            <h6 class="fd-title fd-title--h6" aria-label="text">TEXT</h6>
         </div>
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">

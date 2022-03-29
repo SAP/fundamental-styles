@@ -390,4 +390,11 @@
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);
+
+  /** Bar */
+  --fdBar_Left_Area_Padding_Left: 1rem;
+  --fdBar_Left_Area_Padding_Right: 0;
+  --fdBar_Middle_Area_Padding_X: 0.5rem;
+  --fdBar_Right_Area_Padding_Left: 0;
+  --fdBar_Right_Area_Padding_Right: 1rem;
 }
