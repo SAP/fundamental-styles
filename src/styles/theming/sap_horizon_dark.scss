@@ -183,7 +183,12 @@
   --fdInput_State_Font_Weight: normal;
   --fdInput_State_Border_Type: solid;
   --fdPlaceholder_Text_Style: normal;
-  --fdInput_Background_Color: var();
+  --fdInput_Base_Border_Style: none;
+  --fdInput_Error_Border_Style: none;
+  --fdInput_Warning_Border_Style: none;
+  --fdInput_Success_Border_Style: none;
+  --fdInput_Information_Border_Style: none;
+  --fdInput_ReadOnly_Border_Style: none none dashed none;
   --fdInput_Error_Hover_Background: var(--sapField_Hover_Background);
   --fdInput_Warning_Hover_Background: var(--sapField_Hover_Background);
   --fdInput_Success_Hover_Background: var(--sapField_Hover_Background);
@@ -193,6 +198,18 @@
   --fdInput_Warning_Hover_Shadow: var(--sapContent_Critical_Shadow);
   --fdInput_Success_Hover_Shadow: var(--sapContent_Positive_Shadow);
   --fdInput_Information_Hover_Shadow: var(--sapContent_Informative_Shadow);
+  --fdInput_Outline_Offset: 0;
+  --fdInput_Outline_FocusStyle: var(--sapContent_FocusStyle);
+  --fdInput_Outline_BaseColor: var(--sapField_Active_BorderColor);
+  --fdInput_Outline_ErrorColor: var(--sapField_InvalidColor);
+  --fdInput_Outline_WarningColor: var(--sapField_WarningColor);
+  --fdInput_Outline_SuccessColor: var(--sapField_SuccessColor);
+  --fdInput_Outline_InformationColor: var(--sapField_InformationColor);
+  --fdInput_Base_Focus_Background: var(--sapField_Focus_Background);
+  --fdInput_Error_Focus_Background: var(--sapField_Focus_Background);
+  --fdInput_Warning_Focus_Background: var(--sapField_Focus_Background);
+  --fdInput_Success_Focus_Background: var(--sapField_Focus_Background);
+  --fdInput_Information_Focus_Background: var(--sapField_Focus_Background);
 
   /* Form Message */
   --fdMessage_Box_Shadow: var(--sapContent_Shadow1);

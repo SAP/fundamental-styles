@@ -682,3 +682,15 @@
   border-width: $borderWidth;
   border-style: $borderStyle;
 }
+
+@mixin fd-input-background($background, $backgroundColor, $borderStyle) {
+  background: $background;
+  background-color: $backgroundColor;
+  border-style: $borderStyle;
+}
+
+@mixin fd-input-focus($background, $outlineOffset, $outlineColor) {
+  background: $background;
+  outline-offset: $outlineOffset;
+  outline-color: $outlineColor;
+}
