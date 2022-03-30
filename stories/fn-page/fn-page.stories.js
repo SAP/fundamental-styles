@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Page',
+    title: 'BTP Experimental Design/Page',
     parameters: {
         description: `
 Some description`,

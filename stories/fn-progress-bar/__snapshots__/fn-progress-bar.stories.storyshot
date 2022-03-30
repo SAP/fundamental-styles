@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Progress Bar Progress Bar 1`] = `
+exports[`Storyshots BTP Experimental Design/Progress Bar Progress Bar 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -23,21 +23,21 @@ exports[`Storyshots BTP FN Components/Progress Bar Progress Bar 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         normal
       </b>
     </div>
-    
-    
+
+
     <div
       aria-label="20%"
       aria-valuemax="100"
@@ -48,33 +48,33 @@ exports[`Storyshots BTP FN Components/Progress Bar Progress Bar 1`] = `
       role="progressbar"
       tabindex="-1"
     >
-      
-        
+
+
       <div
         class="fn-progress-bar__track"
         style="min-width: 20%; width: 20%;"
       />
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         positive
       </b>
     </div>
-    
-    
+
+
     <div
       aria-label="40%"
       aria-valuemax="100"
@@ -85,33 +85,33 @@ exports[`Storyshots BTP FN Components/Progress Bar Progress Bar 1`] = `
       role="progressbar"
       tabindex="-1"
     >
-      
-        
+
+
       <div
         class="fn-progress-bar__track"
         style="min-width: 40%; width: 40%;"
       />
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         critical
       </b>
     </div>
-    
-    
+
+
     <div
       aria-label="60%"
       aria-valuemax="100"
@@ -122,33 +122,33 @@ exports[`Storyshots BTP FN Components/Progress Bar Progress Bar 1`] = `
       role="progressbar"
       tabindex="-1"
     >
-      
-        
+
+
       <div
         class="fn-progress-bar__track"
         style="min-width: 60%; width: 60%;"
       />
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       <b>
         negative
       </b>
     </div>
-    
-    
+
+
     <div
       aria-label="80%"
       aria-valuemax="100"
@@ -159,19 +159,19 @@ exports[`Storyshots BTP FN Components/Progress Bar Progress Bar 1`] = `
       role="progressbar"
       tabindex="-1"
     >
-      
-        
+
+
       <div
         class="fn-progress-bar__track"
         style="min-width: 80%; width: 80%;"
       />
-      
-    
+
+
     </div>
-    
+
 
   </div>
-  
+
 
 
 </div>

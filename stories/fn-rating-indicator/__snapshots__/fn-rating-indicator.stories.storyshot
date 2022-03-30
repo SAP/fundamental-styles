@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
+exports[`Storyshots BTP Experimental Design/Rating Indicator Rating Indicator 1`] = `
 <div
   dir="ltr"
 >
-  
+
 
   <style>
-    
+
     .docs-story {
         background: white;
     }
@@ -35,31 +35,31 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
     }
 
   </style>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       normal
     </div>
-    
-    
+
+
     <form
       class="fn-rating-indicator"
     >
-      
-        
+
+
       <fieldset
         aria-label="Star Rating (out of 5)"
         class="fn-rating-indicator__container"
       >
-        
-        
-            
+
+
+
         <input
           aria-label="0 star"
           class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating"
@@ -68,16 +68,16 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="0"
         />
-        
-            
+
+
         <label
           aria-hidden="true"
           class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating"
           for="rating-max-value-5-0"
         />
-        
 
-            
+
+
         <input
           aria-label="1 star"
           class="fn-rating-indicator__input"
@@ -86,15 +86,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="1"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-5-1"
         />
-        
 
-            
+
+
         <input
           aria-label="2 star"
           checked=""
@@ -104,15 +104,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="2"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-5-2"
         />
-        
 
-            
+
+
         <input
           aria-label="3 star"
           class="fn-rating-indicator__input"
@@ -121,15 +121,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="3"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-5-3"
         />
-        
 
-            
+
+
         <input
           aria-label="4 star"
           class="fn-rating-indicator__input"
@@ -138,15 +138,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="4"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-5-4"
         />
-        
 
-            
+
+
         <input
           aria-label="5 star"
           class="fn-rating-indicator__input"
@@ -155,46 +155,46 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="5"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-5-5"
         />
-        
-        
+
+
       </fieldset>
-      
-    
+
+
     </form>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       disabled
     </div>
-    
-    
+
+
     <form
       class="fn-rating-indicator is-disabled"
     >
-      
-        
+
+
       <fieldset
         aria-label="Star Rating (out of 5)"
         class="fn-rating-indicator__container"
       >
-        
-        
-            
+
+
+
         <input
           aria-label="0 star"
           class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating"
@@ -204,16 +204,16 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="0"
         />
-        
-            
+
+
         <label
           aria-hidden="true"
           class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating"
           for="rating-max-value-6-0"
         />
-        
 
-            
+
+
         <input
           aria-label="1 star"
           class="fn-rating-indicator__input"
@@ -223,15 +223,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="1"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-6-1"
         />
-        
 
-            
+
+
         <input
           aria-label="2 star"
           checked=""
@@ -242,15 +242,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="2"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-6-2"
         />
-        
 
-            
+
+
         <input
           aria-label="3 star"
           class="fn-rating-indicator__input"
@@ -260,15 +260,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="3"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-6-3"
         />
-        
 
-            
+
+
         <input
           aria-label="4 star"
           class="fn-rating-indicator__input"
@@ -278,15 +278,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="4"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-6-4"
         />
-        
 
-            
+
+
         <input
           aria-label="5 star"
           class="fn-rating-indicator__input"
@@ -296,46 +296,46 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="5"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-6-5"
         />
-        
-        
+
+
       </fieldset>
-      
-    
+
+
     </form>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       readonly
     </div>
-    
-    
+
+
     <form
       class="fn-rating-indicator is-readonly"
     >
-      
-        
+
+
       <fieldset
         aria-label="Star Rating (out of 5)"
         class="fn-rating-indicator__container"
       >
-        
-        
-            
+
+
+
         <input
           aria-label="0 star"
           class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating"
@@ -345,16 +345,16 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="0"
         />
-        
-            
+
+
         <label
           aria-hidden="true"
           class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating"
           for="rating-max-value-7-0"
         />
-        
 
-            
+
+
         <input
           aria-label="1 star"
           class="fn-rating-indicator__input"
@@ -364,15 +364,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="1"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-7-1"
         />
-        
 
-            
+
+
         <input
           aria-label="2 star"
           checked=""
@@ -383,15 +383,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="2"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-7-2"
         />
-        
 
-            
+
+
         <input
           aria-label="3 star"
           class="fn-rating-indicator__input"
@@ -401,15 +401,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="3"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-7-3"
         />
-        
 
-            
+
+
         <input
           aria-label="4 star"
           class="fn-rating-indicator__input"
@@ -419,15 +419,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="4"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-7-4"
         />
-        
 
-            
+
+
         <input
           aria-label="5 star"
           class="fn-rating-indicator__input"
@@ -437,46 +437,46 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="5"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-7-5"
         />
-        
-        
+
+
       </fieldset>
-      
-    
+
+
     </form>
-    
+
 
   </div>
-  
+
 
 
   <div
     class="docs-fn-container"
   >
-    
-    
+
+
     <div>
       display
     </div>
-    
-    
+
+
     <form
       class="fn-rating-indicator is-display"
     >
-      
-        
+
+
       <fieldset
         aria-label="Star Rating (out of 5)"
         class="fn-rating-indicator__container"
       >
-        
-        
-            
+
+
+
         <input
           aria-label="0 star"
           class="fn-rating-indicator__input fn-rating-indicator__input--zero-rating"
@@ -486,16 +486,16 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="0"
         />
-        
-            
+
+
         <label
           aria-hidden="true"
           class="fn-rating-indicator__label fn-rating-indicator__label--zero-rating"
           for="rating-max-value-8-0"
         />
-        
 
-            
+
+
         <input
           aria-label="1 star"
           class="fn-rating-indicator__input"
@@ -505,15 +505,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="1"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-8-1"
         />
-        
 
-            
+
+
         <input
           aria-label="2 star"
           checked=""
@@ -524,15 +524,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="2"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-8-2"
         />
-        
 
-            
+
+
         <input
           aria-label="3 star"
           class="fn-rating-indicator__input"
@@ -542,15 +542,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="3"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-8-3"
         />
-        
 
-            
+
+
         <input
           aria-label="4 star"
           class="fn-rating-indicator__input"
@@ -560,15 +560,15 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="4"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-8-4"
         />
-        
 
-            
+
+
         <input
           aria-label="5 star"
           class="fn-rating-indicator__input"
@@ -578,22 +578,22 @@ exports[`Storyshots BTP FN Components/Rating Indicator Rating Indicator 1`] = `
           type="radio"
           value="5"
         />
-        
-            
+
+
         <label
           class="fn-rating-indicator__label"
           for="rating-max-value-8-5"
         />
-        
-        
+
+
       </fieldset>
-      
-    
+
+
     </form>
-    
+
 
   </div>
-  
+
 
 </div>
 `;

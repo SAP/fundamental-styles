@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Progress Bar',
+    title: 'BTP Experimental Design/Progress Bar',
     parameters: {
         description: `**Modifier classes for Progress Bar added to \`.fn-progress-bar\` base class:**
 

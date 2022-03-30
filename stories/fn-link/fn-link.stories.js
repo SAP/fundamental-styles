@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Link',
+    title: 'BTP Experimental Design/Link',
     parameters: {
         description: `
 Link has 2 options: regular and emphasized

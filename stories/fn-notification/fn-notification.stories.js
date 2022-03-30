@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Notification',
+    title: 'BTP Experimental Design/Notification',
     parameters: {
         components: ['fn-notification', 'icon', 'fn-button', 'fn-nested-button', 'fn-avatar', 'fn-object-status'],
         description: `

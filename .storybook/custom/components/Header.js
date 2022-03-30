@@ -10,6 +10,7 @@ const Header = ({ showSelectors, theme, directionality, onThemeChange, onDirecti
     const selectedTheme = theme || 'sap_fiori_3';
     const selectedDirectionality = directionality || 'ltr';
     const handlersPassed = onThemeChange && onDirectionalityChange;
+    const hasThemeSupport = fioriVersion !== 'fioriNext';
 
     return (
         <header className="fddocs-header">
@@ -25,7 +26,9 @@ const Header = ({ showSelectors, theme, directionality, onThemeChange, onDirecti
                         selectedDirectionality={selectedDirectionality}
                         onDirectionalityChange={onDirectionalityChange}
                     />
-                    <ThemeSelect selectedTheme={selectedTheme} onThemeChange={onThemeChange} />
+                    <IfBlock condition={hasThemeSupport}>
+                        <ThemeSelect selectedTheme={selectedTheme} onThemeChange={onThemeChange} />
+                    </IfBlock>
                 </IfBlock>
 
                 <a className="fddocs-header__anchor" href="https://github.com/SAP/fundamental-styles" target="_blank">

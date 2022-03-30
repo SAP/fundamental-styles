@@ -1,5 +1,5 @@
 export default {
-    title: 'BTP FN Components/Info Label',
+    title: 'BTP Experimental Design/Info Label',
     parameters: {
         description: `
 **Modifier classes for Info Label style:**

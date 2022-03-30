@@ -1,4 +1,57 @@
 
+## 0.24.0-rc.11 (2022-03-30)
+
+## 0.24.0-rc.10 (2022-03-30)
+
+
+### Features
+
+* **styles:** shellbar horizon support ([#3254](https://github.com/SAP/fundamental-styles/issues/3254)) ([8e0ac2e](https://github.com/SAP/fundamental-styles/commit/8e0ac2eb98ceb95346fce5bba3183e3c4d6b7dd3))
+
+## 0.24.0-rc.9 (2022-03-28)
+
+
+### Features
+
+* **styles:** horizon theming for Text ([#3260](https://github.com/SAP/fundamental-styles/issues/3260)) ([6852f71](https://github.com/SAP/fundamental-styles/commit/6852f71c3dcbad5ab92ad746b34219702c4f483c))
+
+## 0.24.0-rc.8 (2022-03-28)
+
+
+### Bug Fixes
+
+* **styles:** form mis-alignments ([#3256](https://github.com/SAP/fundamental-styles/issues/3256)) ([eee6580](https://github.com/SAP/fundamental-styles/commit/eee658038d6bf3dc70a33cc2d6ece712306eab8b))
+
+## 0.24.0-rc.7 (2022-03-28)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Radio Button ([#3253](https://github.com/SAP/fundamental-styles/issues/3253)) ([c85c5aa](https://github.com/SAP/fundamental-styles/commit/c85c5aa1c42abe7daae1dbda70c73026cf1ccc1f))
+
+## 0.24.0-rc.6 (2022-03-26)
+
+
+### Features
+
+* checkbox horizon support ([#3252](https://github.com/SAP/fundamental-styles/issues/3252)) ([789cca6](https://github.com/SAP/fundamental-styles/commit/789cca6740e78bd35bc53af29a0517b2a4e305f8))
+
+## 0.24.0-rc.5 (2022-03-25)
+
+## 0.24.0-rc.4 (2022-03-24)
+
+
+### Bug Fixes
+
+* **docs:** theme and version switchers ([#3261](https://github.com/SAP/fundamental-styles/issues/3261)) ([0105602](https://github.com/SAP/fundamental-styles/commit/0105602c397cb31e7dbe74da4cb3e74cd188ab0e))
+
+## 0.24.0-rc.3 (2022-03-24)
+
+
+### Features
+
+* **styles:** add delta horizon theming support for Popover [ci visual] ([#3259](https://github.com/SAP/fundamental-styles/issues/3259)) ([a4a2bf6](https://github.com/SAP/fundamental-styles/commit/a4a2bf6dfa331730bad8155fa9c00417a840be84))
+
 ## 0.24.0-rc.2 (2022-03-23)
 
 

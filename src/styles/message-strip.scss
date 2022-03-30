@@ -17,8 +17,9 @@ $block: #{$fd-namespace}-message-strip;
   @mixin fd-message-strip-icon-container {
     position: absolute;
     width: 2.5rem;
-    top: 0.4375rem;
+    top: 0.5rem;
     left: 0;
+    line-height: 1;
   }
 
   @mixin fd-message-strip-close-btn-container {
