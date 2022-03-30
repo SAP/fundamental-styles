@@ -153,6 +153,9 @@
   /* Calendar */
   --fdCalendar_Text_Shadow: 0 0 0.125rem #000;
   --fdCalendar_Active_Item_Border: solid 0.0625rem var(--sapList_SelectionBorderColor, #fff);
+  --fdCalendar_Active_Focus_Item_Outline_Color: var(--sapContent_ContrastFocusColor);
+  --fdCalendar_Active_Focus_Item_Outline_Offset: -0.1875rem;
+  --fdCalendar_Item_Current_Border: 0.0625rem solid var(--sapList_Background);
 
   /* Form Header */
   --fdFormHeader_Border_Width: calc(3 * var(--sapList_BorderWidth));

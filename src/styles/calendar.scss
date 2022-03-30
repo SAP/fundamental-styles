@@ -56,6 +56,8 @@ $fd-calendar-item-helper-color: var(--sapContent_LabelColor) !default;
 $fd-calendar-item-active-color: var(--sapContent_Selected_TextColor) !default;
 $fd-calendar-item-active-background: var(--sapContent_Selected_Background) !default;
 $fd-calendar-item-active-background-hover: var(--sapContent_Selected_Hover_Background) !default;
+$fd-calendar-item-focus-active-outline-color: var(--fdCalendar_Active_Focus_Item_Outline_Color) !default;
+$fd-calendar-item-focus-active-outline-offset: var(--fdCalendar_Active_Focus_Item_Outline_Offset) !default;
 
 $fd-calendar-item-inactive-color: var(--sapContent_LabelColor) !default;
 $fd-calendar-item-inactive-background-hover: var(--sapList_Hover_Background) !default;
@@ -74,10 +76,8 @@ $fd-calendar-item-range-border: solid 0.0625rem var(--sapList_SelectionBorderCol
 
 $fd-calendar-item-current-border-width: 0.125rem !default;
 $fd-calendar-item-current-border: solid medium var(--sapLegend_CurrentDateTime) !default; // 'medium' value is used to support browser rendering precision
-$fd-calendar-item-current-inner-border-width: 0.0625rem !default;
-$fd-calendar-item-current-inner-border-color: var(--sapList_Background) !default;
 $fd-calendar-item-current-inner-border-radius: calc(var(--sapElement_BorderCornerRadius) / 2) !default;
-$fd-calendar-item-current-inner-border: $fd-calendar-item-current-inner-border-width solid $fd-calendar-item-current-inner-border-color !default;
+$fd-calendar-item-current-inner-border: var(--fdCalendar_Item_Current_Border) !default;
 
 // Special Days
 $fd-special-day-marker-height: 0.25rem;
@@ -193,7 +193,8 @@ $fd-calendar-special-days: (
 
   @include fd-focus() {
     box-shadow: none;
-    outline-color: var(--sapContent_ContrastFocusColor);
+    outline-color: $fd-calendar-item-focus-active-outline-color;
+    outline-offset: $fd-calendar-item-focus-active-outline-offset;
   }
 }
 
