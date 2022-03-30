@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.10 (2022-03-30)
+
+
+### Features
+
+* **styles:** shellbar horizon support ([#3254](https://github.com/SAP/fundamental-styles/issues/3254)) ([8e0ac2e](https://github.com/SAP/fundamental-styles/commit/8e0ac2eb98ceb95346fce5bba3183e3c4d6b7dd3))
+
 ## 0.24.0-rc.9 (2022-03-28)
 
 
