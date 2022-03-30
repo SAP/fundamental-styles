@@ -8,6 +8,7 @@ $block: #{$fd-namespace}-textarea;
 
 .#{$block} {
   @include fd-form-text();
+  @include fd-form-input();
 
   min-width: 6rem;
   width: 100%;
