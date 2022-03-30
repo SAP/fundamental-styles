@@ -404,4 +404,10 @@
   --fdShellbar_Input_Placeholder_Color: var(--sapField_PlaceholderTextColor);
   --fdShellbar_Input_Border_Radius: 1.125rem;
   --fdShellbar_Input_Addon_Dimension: 1.75rem;
+
+  /** Message Page */
+  --fdMessage_Page_Container_Background: var(--sapGroup_ContentBackground);
+  --fdMessage_Page_Container_Corner_Radius: var(--sapElement_BorderCornerRadius);
+  --fdMessage_Page_Title_Margin_Top: 2rem;
+  --fdMessage_Page_Title_Margin_Bottom: 0.5rem;
 }
