@@ -19,7 +19,7 @@ Elements | Class | Description
 :------------ | :------- | :------------
 Logo (mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
 Title (mandatory) | \`fd-shellbar__title\` | Displays the current application.
-Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldomly be used.
+Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldom be used.
 Action button (mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
 Mobile action button (optional) | \`fd-shellbar__action--mobile\` | For product actions only, visible on small shellbar (--s).
 Desktop action button (optional) | \`fd-shellbar__action--desktop\` | For product actions only, visible on desktop screens (--m/l/xl).
@@ -28,7 +28,7 @@ Product Switch (optional) | \`fd-product-switch\` | For navigating between produ
 Notifications (optional) | \`fd-button__badge\` | To display notifications, add this class to the button. See **Button** to find documentation on Badge button.
 <br>
 `,
-        components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar', 'counter']
+        components: ['button', 'input-group', 'icon', 'menu', 'avatar', 'input-group', 'popover', 'product-switch', 'shellbar']
     }
 };
 
@@ -86,9 +86,9 @@ export const ProductMenuAndSearch = () => `<div style="height:200px">
             </span>
             <div class="fd-popover">
                 <div class="fd-popover__control">
-                    <button class="fd-button fd-button--transparent fd-button--menu fd-shellbar__button--menu" onclick="onPopoverClick('9GLB26941');" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
+                    <button class="fd-button fd-shellbar__button fd-shellbar__button--menu fd-button--menu" onclick="onPopoverClick('9GLB26941');" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
                         <span class="fd-shellbar__title">Corporate Portal</span>
-                        <i class="sap-icon--megamenu fd-shellbar__button--icon"></i>
+                        <i class="sap-icon--megamenu"></i>
                     </button>
                 </div>
                 <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941">
@@ -125,8 +125,8 @@ export const ProductMenuAndSearch = () => `<div style="height:200px">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" onclick="onPopoverClick('F4GcX348b')" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
-                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="F4GcX348b1" value="Search" placeholder="Search...">
-                            <span class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
+                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="F4GcX348b1" placeholder="Search">
+                            <span class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
                                 <button aria-label="button-decline" class="fd-shellbar__button fd-button">
                                         <i class="sap-icon--decline"></i>
                                 </button>
@@ -200,12 +200,12 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                     <div aria-label="Image label" aria-controls="UIO6J688" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
                             <input aria-label="search" type="text"
-                                   class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881"
-                                   value="Search" placeholder="Search...">
+                                   class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="UIO6J6881"
+                                   placeholder="Search">
                             <span
-                                class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
+                                class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
                                 <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button">
-                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                    <i class="sap-icon--decline"></i>
                                 </button>
                             </span>
                         </div>
@@ -220,8 +220,7 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <button class="fd-button fd-shellbar__button" aria-label="Notifications">
                     <i class="sap-icon--bell"></i>
-                    <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
-                          aria-label="Unread count">251234</span>
+                    <span class="fd-button__badge">251K</span>
                 </button>
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
@@ -238,8 +237,7 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                                 <button class="fd-button fd-shellbar__button" aria-controls="undefined"
                                         aria-haspopup="true" aria-expanded="false">
                                     <i class="sap-icon--overflow"></i>
-                                    <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
-                                          aria-label="Unread count">25</span>
+                                    <span class="fd-buton__badge">251K</span>
                                 </button>
                             </div>
                         </div>
@@ -275,7 +273,7 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                              onclick="onPopoverClick('DD35G276')" aria-controls="DD35G276" aria-expanded="false"
                              aria-haspopup="true" role="button">
                             <span
-                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle">WW</span>
+                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true"
@@ -329,12 +327,12 @@ export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
                     <div aria-label="Image label" aria-controls="UIBFJ688" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
                             <input aria-label="search" type="text"
-                                   class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881"
-                                   value="Search" placeholder="Search...">
+                                   class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="UIO6J6881"
+                                   placeholder="Search">
                             <span
-                                class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
+                                class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
                                 <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button">
-                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                    <i class="sap-icon--decline"></i>
                                 </button>
                             </span>
                         </div>
@@ -349,8 +347,7 @@ export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <button class="fd-button fd-shellbar__button" aria-label="Notifications">
                     <i class="sap-icon--bell"></i>
-                    <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
-                          aria-label="Unread count">251234</span>
+                    <span class="fd-button__badge">251K</span>
                 </button>
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
@@ -367,8 +364,7 @@ export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
                                 <button class="fd-button fd-shellbar__button" aria-controls="undefined"
                                         aria-haspopup="true" aria-expanded="false">
                                     <i class="sap-icon--overflow"></i>
-                                    <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
-                                          aria-label="Unread count">25</span>
+                                    <span class="fd-button__badge">251K</span>
                                 </button>
                             </div>
                         </div>
@@ -404,7 +400,7 @@ export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
                              onclick="onPopoverClick('DD35GBK6')" aria-controls="DD35GBK6" aria-expanded="false"
                              aria-haspopup="true" role="button">
                             <span
-                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle">WW</span>
+                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true"
@@ -457,12 +453,12 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                     <div aria-label="Image label" aria-controls="UIBFJ688" aria-expanded="false" aria-haspopup="true">
                         <div class="fd-input-group fd-shellbar__input-group">
                             <input aria-label="search" type="text"
-                                   class="fd-input fd-input-group__input fd-shellbar__input-group__input" id="UIO6J6881"
-                                   value="Search" placeholder="Search...">
+                                   class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="UIO6J6881"
+                                   placeholder="Search">
                             <span
-                                class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button">
+                                class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
                                 <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button">
-                                    <i class="sap-icon--navigation-down-arrow"></i>
+                                    <i class="sap-icon--decline"></i>
                                 </button>
                             </span>
                         </div>
@@ -477,8 +473,7 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <button class="fd-button fd-shellbar__button" aria-label="Notifications">
                     <i class="sap-icon--bell"></i>
-                    <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
-                          aria-label="Unread count">251234</span>
+                    <span class="fd-button__badge">251K</span>
                 </button>
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
@@ -495,8 +490,7 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                                 <button class="fd-button fd-shellbar__button" aria-controls="undefined"
                                         aria-haspopup="true" aria-expanded="false">
                                     <i class="sap-icon--overflow"></i>
-                                    <span class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
-                                          aria-label="Unread count">25</span>
+                                    <span class="fd-button__badge">251K</span>
                                 </button>
                             </div>
                         </div>
@@ -507,18 +501,6 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                                     <li class="fd-menu__item">
                                         <a role="button" class="fd-menu__link">
                                             <span class="fd-menu__title">Search</span>
-                                        </a>
-                                    </li>
-                                    <li class="fd-menu__item">
-                                        <a role="button" class="fd-menu__link">
-                                            <span class="fd-menu__title">Notifications Out</span>
-                                            <span class="fd-counter fd-shellbar__counter--overflowed">21</span>
-                                        </a>
-                                    </li>
-                                    <li class="fd-menu__item">
-                                        <a role="button" class="fd-menu__link">
-                                            <span class="fd-menu__title">Pool</span>
-                                            <span class="fd-counter fd-shellbar__counter--overflowed">4</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -534,7 +516,7 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                              onclick="onPopoverClick('DD35GBK6')" aria-controls="DD35GBK6" aria-expanded="false"
                              aria-haspopup="true" role="button">
                             <span
-                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle">WW</span>
+                                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
                         </div>
                     </div>
                     <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right" aria-hidden="true"
@@ -632,7 +614,7 @@ export const ProductSwitch = () => `<div style="height:600px">
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button
-                                class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control"
+                                class="fd-button fd-shellbar__button fd-popover__control fd-product-switch__control"
                                 aria-label="Image label"
                                 aria-controls="product-switch-body"
                                 aria-expanded="true"
