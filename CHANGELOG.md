@@ -1,4 +1,16 @@
 
+## 0.24.0-rc.13 (2022-03-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** updated the markup for the title element in the Toolbar with Title
+added a new class for Title used in Toolbar: fd-toolbar__title
+
+### Features
+
+* **styles:** add delta horizon theming for Toolbar [ci visual] ([#3269](https://github.com/SAP/fundamental-styles/issues/3269)) ([403a407](https://github.com/SAP/fundamental-styles/commit/403a407e0ab4f20e85ce0b799eb451339b58c7e1))
+
 ## 0.24.0-rc.12 (2022-03-31)
 
 
