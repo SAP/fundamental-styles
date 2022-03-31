@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.12 (2022-03-31)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Message Page [ci visual] ([#3272](https://github.com/SAP/fundamental-styles/issues/3272)) ([0cb6a44](https://github.com/SAP/fundamental-styles/commit/0cb6a44fbf448bb84eca8ed8ef3bc2be07aea4b5))
+
 ## 0.24.0-rc.11 (2022-03-30)
 
 ## 0.24.0-rc.10 (2022-03-30)
