@@ -60,7 +60,6 @@ $fd-calendar-item-active-color: var(--sapContent_Selected_TextColor) !default;
 $fd-calendar-item-active-background: var(--sapContent_Selected_Background) !default;
 $fd-calendar-item-active-background-hover: var(--fdCalendar_Item_Active_Background_Hover) !default;
 $fd-calendar-item-focus-active-outline-color: var(--fdCalendar_Active_Focus_Item_Outline_Color) !default;
-$fd-calendar-item-focus-active-outline-offset: var(--fdCalendar_Active_Focus_Item_Outline_Offset) !default;
 $fd-calendar-active-item-border: var(--fdCalendar_Active_Item_Border) !default;
 $fd-calendar-active-item-font-weight: var(--fdCalendar_Active_Item_Font_Weight) !default;
 
@@ -78,15 +77,20 @@ $fd-calendar-item-weekend-background-hover: var(--sapList_Hover_Background) !def
 $fd-calendar-item-range-background: var(--sapList_SelectionBackgroundColor) !default;
 $fd-calendar-item-range-background-hover: var(--sapList_Hover_SelectionBackground) !default;
 $fd-calendar-item-range-border: solid 0.0625rem var(--sapList_SelectionBorderColor) !default;
-$fd-calendar-item-current-inner-border-color: var(--sapList_Background) !default;
+$fd-calendar-item-current-inner-border-color: var(--fdCalendar_Item_Current_Inner_Border_Color) !default;
 $fd-calendar-item-current-border-width: 0.125rem !default;
 $fd-calendar-item-current-border: solid medium var(--sapLegend_CurrentDateTime) !default; // 'medium' value is used to support browser rendering precision
 $fd-calendar-item-current-inner-border-width: 0.0625rem !default;
 $fd-calendar-item-current-inner-border-radius: calc(var(--sapElement_BorderCornerRadius) / 2) !default;
 $fd-calendar-item-current-inner-border: var(--fdCalendar_Item_Current_Border) !default;
+$fd-calendar-item-current-active-special-day-width: var(--fdCalendar_Item_Current_Active_Special_Day_Width) !default;
+$fd-calendar-item-current-active-special-day-height: var(--fdCalendar_Item_Current_Active_Special_Day_Height) !default;
+$fd-calendar-item-current-active-special-day-bottom: var(--fdCalendar_Item_Current_Active_Special_Day_Bottom) !default;
+$fd-calendar-item-current-active-special-day-left: var(--fdCalendar_Item_Current_Active_Special_Day_Left) !default;
+$fd-calendar-item-current-active-special-day-right: var(--fdCalendar_Item_Current_Active_Special_Day_Right) !default;
 
 // Special Days
-$fd-special-day-marker-height: 0.25rem;
+$fd-special-day-marker-height: var(--fdCalendar_Special_Day_Marker_Height);
 $fd-calendar-special-days: (
   "1": var(--sapLegendColor1),
   "2": var(--sapLegendColor2),
@@ -120,21 +124,24 @@ $fd-calendar-special-days: (
         bottom: 0;
         position: absolute;
         height: $fd-special-day-marker-height;
-        box-shadow: inset 0 $fd-special-day-marker-height * -1 0 $color;
+        box-shadow: inset 0 calc(#{$fd-special-day-marker-height} * -1) 0 $color;
       }
 
       @include fd-active() {
         .#{$block}__text::after {
-          height: $fd-special-day-marker-height + $fd-calendar-item-current-inner-border-width;
-          box-shadow: inset 0 $fd-special-day-marker-height * -1 0 $color, inset 0 0.33rem * -1 0 $fd-calendar-item-current-inner-border-color;
+          height: calc(#{$fd-special-day-marker-height} + #{$fd-calendar-item-current-inner-border-width});
+          box-shadow: inset 0 calc(#{$fd-special-day-marker-height} * -1) 0 $color, inset 0 0.33rem * -1 0 $fd-calendar-item-current-inner-border-color;
         }
       }
 
       &.#{$block}__item--current {
         @include fd-active() {
           .#{$block}__text::after {
-            height: $fd-special-day-marker-height + $fd-calendar-item-current-inner-border-width;
-            box-shadow: inset 0 -0.1875rem 0 $color, inset 0 $fd-special-day-marker-height * -1 $fd-calendar-item-current-inner-border-color;
+            width: $fd-calendar-item-current-active-special-day-width;
+            height: $fd-calendar-item-current-active-special-day-height;
+            bottom: $fd-calendar-item-current-active-special-day-bottom;
+            left: $fd-calendar-item-current-active-special-day-left;
+            right: $fd-calendar-item-current-active-special-day-right;
           }
         }
       }
@@ -187,6 +194,20 @@ $fd-calendar-special-days: (
 
 %fd-calendar-item-current {
   border: $fd-calendar-item-current-border !important;
+
+  @include fd-active() {
+    &::after {
+      border: $fd-calendar-active-item-border;
+      content: ' ';
+      position: absolute;
+      bottom: $fd-calendar-item-spacing;
+      left: $fd-calendar-item-spacing;
+      right: 0;
+      width: calc(100% - 0.125rem);
+      height: calc(100% - 0.125rem);
+      border-radius: calc(#{$fd-calendar-border-radius} / 2);
+    }
+  }
 }
 
 %fd-calendar-item-active {
@@ -201,7 +222,6 @@ $fd-calendar-special-days: (
   @include fd-focus() {
     box-shadow: none;
     outline-color: $fd-calendar-item-focus-active-outline-color;
-    outline-offset: $fd-calendar-item-focus-active-outline-offset;
   }
 }
 
@@ -448,6 +468,11 @@ $fd-calendar-special-days: (
       &__item {
         height: $fd-calendar-item-height-compact;
         min-width: $fd-calendar-item-width-compact;
+
+        &::after {
+          width: calc(100% - 0.125rem);
+          height: calc(100% - 0.125rem);
+        }
       }
     }
   }

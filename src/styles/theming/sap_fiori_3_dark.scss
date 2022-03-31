@@ -181,6 +181,13 @@
   --fdCalendar_Navigation_Vertical_Top_Padding: 0.1875rem;
   --fdCalendar_Navigation_Vertical_Bottom_Padding: 0.1875rem;
   --fdCalendar_Item_Active_Background_Hover: var(--sapContent_Selected_Hover_Background);
+  --fdCalendar_Special_Day_Marker_Height: 0.25rem;
+  --fdCalendar_Item_Current_Inner_Border_Color: var(--sapList_Background);
+  --fdCalendar_Item_Current_Active_Special_Day_Width: auto;
+  --fdCalendar_Item_Current_Active_Special_Day_Height: 0.3125rem;
+  --fdCalendar_Item_Current_Active_Special_Day_Bottom: -0.0625rem;
+  --fdCalendar_Item_Current_Active_Special_Day_Left: 0;
+  --fdCalendar_Item_Current_Active_Special_Day_Right: 0;
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
