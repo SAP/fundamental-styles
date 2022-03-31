@@ -306,6 +306,7 @@
 
   /* Toolbar */
   --fdToolbar_Auto_Background: var(--sapToolbar_Background);
+  --fdToolbar_Solid_Background: var(--sapBackgroundColor);
 
   /* Tool Header */
   --fdTool_Header_Icon_Color_Default: var(--sapContent_IconColor);
@@ -418,4 +419,10 @@
   --fdShellbar_Input_Placeholder_Color: var(--sapShell_InteractiveTextColor);
   --fdShellbar_Input_Border_Radius: var(--sapField_BorderCornerRadius);
   --fdShellbar_Input_Addon_Dimension: 2.25rem;
+
+  /** Message Page */
+  --fdMessage_Page_Container_Background: transparent;
+  --fdMessage_Page_Container_Corner_Radius: 0;
+  --fdMessage_Page_Title_Margin_Top: 1rem;
+  --fdMessage_Page_Title_Margin_Bottom: 1rem;
 }
