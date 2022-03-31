@@ -121,6 +121,7 @@
 
   /* Token */
   --fdToken_Text_Shadow: 0 0 0.125rem #000;
+  --fdToken_Border_Radius: 0.25rem;
   --fdToken_Text_Color: var(--sapTextColor);
   --fdToken_Padding_Left: 0.3125rem;
   --fdToken_Background_Color_Hover: var(--sapButton_Hover_Background);
@@ -129,6 +130,9 @@
   --fdToken_Box_Shadow_Selected_Hover: none;
   --fdToken_Outline_Offset: -0.1875rem;
   --fdToken_Outline_Offset_Compact: -0.1875rem;
+  --fdToken_Background_Color_Read_Only: var(--sapField_ReadOnly_Background);
+  --fdToken_Border_Color_Read_Only: var(--sapField_ReadOnly_BorderColor);
+  --fdToken_Border_Color_Selected_Focus: var(--sapContent_ContrastFocusColor);
 
   /* TODO: DEPRECATED Side-Nav */
   --fdSideNav_Text_Shadow: 0 0 0.125rem #000;
