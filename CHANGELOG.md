@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.14 (2022-04-01)
+
+
+### Features
+
+* **styles:** add delta horizon theming support for Token [ci visual] ([#3267](https://github.com/SAP/fundamental-styles/issues/3267)) ([7a1e5a0](https://github.com/SAP/fundamental-styles/commit/7a1e5a0af2fb4fe0d60d884d1e5f1bbca14deb01))
+
 ## 0.24.0-rc.13 (2022-03-31)
 
 
