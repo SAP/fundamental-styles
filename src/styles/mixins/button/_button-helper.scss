@@ -1,16 +1,8 @@
+@import "../mixins";
 @import "../../new-settings";
 
-$block: #{$fd-namespace}-button;
-
-@mixin fd-button-apply-colors($color, $borderColor, $backgroundColor, $box-shadow: none) {
-  color: $color;
-  border-color: $borderColor;
-  background-color: $backgroundColor;
-
-  @include fd-hover() {
-    box-shadow: $box-shadow;
-  }
-}
+$block-button: #{$fd-namespace}-button;
+$block-button-toggled: #{$block-button}--toggled;
 
 @mixin fd-button-focus($fd-button-outline-offset: -0.1875rem) {
   outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
@@ -18,11 +10,16 @@ $block: #{$fd-namespace}-button;
 
   @content;
 
-  &.#{$block}--toggled {
+  &.#{$block-button-toggled} {
     outline-color: var(--fdButton_Outline_Contrast);
   }
 }
 
+@mixin fd-button-outline-contrast() {
+  outline-color: var(--sapContent_ContrastFocusColor) !important;
+}
+
+// Button pad to create a background under the round segmented buttons in Horizon themes
 @mixin fd-button-pad($background: var(--sapButton_Background)) {
   position: relative;
 
