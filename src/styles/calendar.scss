@@ -205,6 +205,11 @@ $fd-calendar-special-days: (
       width: $fd-calendar-active-item-inner-border-size;
       height: $fd-calendar-active-item-inner-border-size;
       border-radius: calc(#{$fd-calendar-border-radius} / 2);
+
+      @include fd-rtl() {
+        left: 0;
+        right: $fd-calendar-item-spacing;
+      }
     }
   }
 }
