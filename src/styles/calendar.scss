@@ -26,7 +26,7 @@ $fd-calendar-action-padding: 0.5rem !default;
 $fd-calendar-item-spacing: 0.0625rem !default;
 $fd-calendar-button-horizontal-space: 0.25rem !default; // This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
 $fd-calendar-background: var(--sapList_Background) !default;
-$fd-calendar-item-font-size: var(--sapFontMediumSize) !default;
+$fd-calendar-item-font-size: var(--sapFontSize) !default;
 $fd-calendar-border-radius: var(--fdCalendar_BorderCornerRadius) !default;
 $fd-calendar-width: $fd-calendar-item-width * 8 + 2 * $fd-calendar-padding + $fd-calendar-item-spacing * 16 !default;
 $fd-calendar-active-item-inner-border-size: calc(100% - 0.125rem) !default;
