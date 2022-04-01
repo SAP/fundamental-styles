@@ -201,13 +201,13 @@ $fd-calendar-special-days: (
       position: absolute;
       bottom: $fd-calendar-item-spacing;
       left: $fd-calendar-item-spacing;
-      right: 0;
+      right: auto;
       width: $fd-calendar-active-item-inner-border-size;
       height: $fd-calendar-active-item-inner-border-size;
       border-radius: calc(#{$fd-calendar-border-radius} / 2);
 
       @include fd-rtl() {
-        left: 0;
+        left: auto;
         right: $fd-calendar-item-spacing;
       }
     }
