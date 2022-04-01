@@ -13,7 +13,8 @@ $block: #{$fd-namespace}-step-input;
   $fd-step-input-semantic-border-offset: 0.125rem;
 
   @include fd-reset();
-  @include fd-form-states();
+  @include fd-form-base();
+  @include fd-form-input();
 
   @include fd-fiori-pseudo-focus-within() {
     z-index: 10;
@@ -21,15 +22,28 @@ $block: #{$fd-namespace}-step-input;
 
   position: relative;
   width: auto;
-  border-style: solid;
-  border-width: var(--sapField_BorderWidth);
-  border-color: var(--sapField_BorderColor);
-  border-radius: var(--sapField_BorderCornerRadius);
-  background-color: var(--sapField_Background);
   height: $fd-step-input-cozy-height;
   display: inline-flex;
   align-items: center;
   line-height: 0;
+
+  .fd-input {
+    background: none;
+    border-style: none;
+
+    @include fd-hover() {
+      background: none;
+      box-shadow: none;
+    }
+
+    @include fd-focus() {
+      background: none;
+    }
+
+    @include fd-readonly() {
+      border-style: none;
+    }
+  }
 
   &__button.#{$fd-namespace}-button {
     width: $fd-step-input-cozy-button-width;
@@ -49,7 +63,7 @@ $block: #{$fd-namespace}-step-input;
     }
 
     @include fd-focus() {
-      outline: none;
+      // outline: none;
 
       @include fd-hover() {
         z-index: auto;

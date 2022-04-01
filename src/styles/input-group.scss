@@ -244,5 +244,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
   .fd-input {
     background: none;
+
+    @include fd-hover() {
+      background: none;
+      box-shadow: none;
+    }
   }
 }

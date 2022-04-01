@@ -36,7 +36,7 @@ $block: #{$fd-namespace}-select;
   &__control {
     @include fd-reset();
     @include fd-form-base();
-    @include fd-form-states();
+    @include fd-form-input();
     @include fd-fiori-pseudo-focus(-0.1875rem);
 
     @include fd-flex-center() {
@@ -52,7 +52,11 @@ $block: #{$fd-namespace}-select;
     }
 
     @include fd-focus() {
-      outline: none;
+      outline-style: var(--fdSelect_Outline_FocusStyle);
+
+      &::after {
+        content: var(--fdSelect_Fiori_Focus_Content);
+      }
     }
 
     @include fd-expanded() {

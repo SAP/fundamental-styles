@@ -151,6 +151,8 @@
   /* Select */
   --fdSelect_Text_Shadow: none;
   --fdSelect_Button_Interractive_SideBorder: none;
+  --fdSelect_Fiori_Focus_Content: none;
+  --fdSelect_Outline_FocusStyle: solid;
 
   /* Popover */
   --fdPopover_Text_Shadow: none;
@@ -198,7 +200,7 @@
   --fdInput_Warning_Hover_Shadow: var(--sapContent_Critical_Shadow);
   --fdInput_Success_Hover_Shadow: var(--sapContent_Positive_Shadow);
   --fdInput_Information_Hover_Shadow: var(--sapContent_Informative_Shadow);
-  --fdInput_Outline_Offset: 0;
+  --fdInput_Outline_Offset: -0.125rem;
   --fdInput_Outline_FocusStyle: var(--sapContent_FocusStyle);
   --fdInput_Outline_BaseColor: var(--sapField_Active_BorderColor);
   --fdInput_Outline_ErrorColor: var(--sapField_InvalidColor);

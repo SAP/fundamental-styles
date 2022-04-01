@@ -116,6 +116,8 @@
   /* Select */
   --fdSelect_Text_Shadow: 0 0 0.125rem #000;
   --fdSelect_Button_Interractive_SideBorder: solid 0.0625rem var(--sapField_BorderColor);
+  --fdSelect_Fiori_Focus_Content: '';
+  --fdSelect_Outline_FocusStyle: none;
 
   /* Popover */
   --fdPopover_Text_Shadow: 0 0 0.125rem #000;

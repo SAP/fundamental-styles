@@ -231,16 +231,11 @@
     var(--sapField_Background),
     var(--fdInput_Base_Border_Style)
   );
-
-  @include fd-focus() {
-    @include fd-input-focus(
-      var(--fdInput_Base_Focus_Background),
-      var(--fdInput_Outline_Offset),
-      var(--fdInput_Outline_BaseColor)
-    );
-
-    outline-style: var(--fdInput_Outline_FocusStyle);
-  }
+  @include fd-input-focus(
+    var(--fdInput_Base_Focus_Background),
+    var(--fdInput_Outline_Offset),
+    var(--fdInput_Outline_BaseColor)
+  );
 
   &.is-success {
     @include fd-input-background(
@@ -248,14 +243,11 @@
       var(--sapField_SuccessBackground),
       var(--fdInput_Success_Border_Style)
     );
-
-    @include fd-focus() {
-      @include fd-input-focus(
-        var(--fdInput_Success_Focus_Background),
-        var(--fdInput_Outline_Offset),
-        var(--fdInput_Outline_SuccessColor)
-      );
-    }
+    @include fd-input-focus(
+      var(--fdInput_Success_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_SuccessColor)
+    );
   }
 
   &.is-error {
@@ -264,14 +256,11 @@
       var(--sapField_InvalidBackground),
       var(--fdInput_Error_Border_Style)
     );
-
-    @include fd-focus() {
-      @include fd-input-focus(
-        var(--fdInput_Error_Focus_Background),
-        var(--fdInput_Outline_Offset),
-        var(--fdInput_Outline_ErrorColor)
-      );
-    }
+    @include fd-input-focus(
+      var(--fdInput_Error_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_ErrorColor)
+    );
   }
 
   &.is-information {
@@ -280,14 +269,11 @@
       var(--sapField_InformationBackground),
       var(--fdInput_Information_Border_Style)
     );
-
-    @include fd-focus() {
-      @include fd-input-focus(
-        var(--fdInput_Information_Focus_Background),
-        var(--fdInput_Outline_Offset),
-        var(--fdInput_Outline_InformationColor)
-      );
-    }
+    @include fd-input-focus(
+      var(--fdInput_Information_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_InformationColor)
+    );
   }
 
   &.is-warning,
@@ -297,14 +283,11 @@
       var(--sapField_WarningBackground),
       var(--fdInput_Warning_Border_Style)
     );
-
-    @include fd-focus() {
-      @include fd-input-focus(
-        var(--fdInput_Warning_Focus_Background),
-        var(--fdInput_Outline_Offset),
-        var(--fdInput_Outline_WarningColor)
-      );
-    }
+    @include fd-input-focus(
+      var(--fdInput_Warning_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_WarningColor)
+    );
   }
 
   @include fd-readonly() {
