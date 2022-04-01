@@ -156,6 +156,18 @@
 
   /* Token */
   --fdToken_Text_Shadow: none;
+  --fdToken_Border_Radius: var(--sapButton_BorderCornerRadius);
+  --fdToken_Text_Color: var(--sapButtonTextColor);
+  --fdToken_Padding_Left: 0.25rem;
+  --fdToken_Background_Color_Hover: var(--sapButton_TokenBackground);
+  --fdToken_Border_Color_Hover: var(--sapButton_TokenBorderColor);
+  --fdToken_Box_Shadow_Hover: var(--sapContent_Interaction_Shadow);
+  --fdToken_Box_Shadow_Selected_Hover: var(--sapContent_Interaction_Shadow);
+  --fdToken_Outline_Offset: 0.0625rem;
+  --fdToken_Outline_Offset_Compact: 0;
+  --fdToken_Background_Color_Read_Only: var(--sapButton_TokenBackground);
+  --fdToken_Border_Color_Read_Only: var(--sapButton_TokenBorderColor);
+  --fdToken_Border_Color_Selected_Focus: var(var(--sapContent_FocusColor));
 
   /* TODO: DEPRECATED Side-Nav */
   --fdSideNav_Text_Shadow: none;
