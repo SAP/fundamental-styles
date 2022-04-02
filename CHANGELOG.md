@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.15 (2022-04-02)
+
+
+### Features
+
+* horizon switch [ci visual] ([#3263](https://github.com/SAP/fundamental-styles/issues/3263)) ([567bede](https://github.com/SAP/fundamental-styles/commit/567bede09632de1d37a5a9e9cef8bef9c6501b13))
+
 ## 0.24.0-rc.14 (2022-04-01)
 
 
