@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 const NEW_VERSION = require('../package.json').version;
+const NEW_VERSION_THEMING = require('../package.json').devDependencies['@sap-theming/theming-base-content'];
 const fs = require('fs');
 const klawSync = require('klaw-sync');
 const { resolve } = require('path');
@@ -9,6 +10,7 @@ const versionPlaceHolderRegex = /VERSION_PLACEHOLDER/g;
 const themingFolderPath = resolve(__dirname, '../dist-theming');
 const fnFolderPath = resolve(__dirname, '../dist-fn');
 const iconsFolderPath = resolve(__dirname, '../dist-fn-icons');
+const commonCSSFolderPath = resolve(__dirname, '../dist-common-css');
 
 const filesInDirKlaw = (directory, regx) => {
     console.info(`Looking into directory ${directory}`);
@@ -61,6 +63,16 @@ const fnIcons = filesInDirKlaw(iconsFolderPath, versionPlaceHolderRegex);
 if (fnIcons.length > 0) {
     console.info(`Found ${theming.length} files in ${iconsFolderPath}`);
     replaceInFiles(fnIcons, versionPlaceHolderRegex, NEW_VERSION);
+} else {
+    console.info(`No files match ${versionPlaceHolderRegex.toString()}`);
+}
+
+console.log('='.repeat(5));
+console.info(`Updating packages.json under common-css/libs with version ${NEW_VERSION_THEMING}`);
+const commonCSSs = filesInDirKlaw(commonCSSFolderPath, versionPlaceHolderRegex);
+if (commonCSSs.length > 0) {
+    console.info(`Found ${theming.length} files in ${commonCSSFolderPath}`);
+    replaceInFiles(commonCSSs, versionPlaceHolderRegex, NEW_VERSION_THEMING);
 } else {
     console.info(`No files match ${versionPlaceHolderRegex.toString()}`);
 }
