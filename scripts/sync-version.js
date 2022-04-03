@@ -6,6 +6,7 @@ const klawSync = require('klaw-sync');
 const { resolve } = require('path');
 
 const versionPlaceHolderRegex = /VERSION_PLACEHOLDER/g;
+const themingVersionPlaceHolderRegex = /VERSION_THEMING_PLACEHOLDER/g;
 
 const themingFolderPath = resolve(__dirname, '../dist-theming');
 const fnFolderPath = resolve(__dirname, '../dist-fn');
@@ -72,7 +73,8 @@ console.info(`Updating packages.json under common-css/libs with version ${NEW_VE
 const commonCSSs = filesInDirKlaw(commonCSSFolderPath, versionPlaceHolderRegex);
 if (commonCSSs.length > 0) {
     console.info(`Found ${theming.length} files in ${commonCSSFolderPath}`);
-    replaceInFiles(commonCSSs, versionPlaceHolderRegex, NEW_VERSION_THEMING);
+    replaceInFiles(commonCSSs, versionPlaceHolderRegex, NEW_VERSION);
+    replaceInFiles(commonCSSs, themingVersionPlaceHolderRegex, NEW_VERSION_THEMING);
 } else {
     console.info(`No files match ${versionPlaceHolderRegex.toString()}`);
 }
