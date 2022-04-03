@@ -12,8 +12,8 @@ $fd-icon-tab-bar-icon-circle-size-compact: 2rem !default;
 $fd-icon-tab-bar-multi-click-button-size: 1.5rem !default;
 $fd-icon-tab-bar-tablist-border: var(--sapContent_HeaderShadow);
 $fd-icon-tab-bar-filter-container-top-offset: 1.625rem !default;
-$fd-icon-tab-bar-overflow-button-border-radius: 0.75rem !default;
-$fd-icon-tab-bar-overflow-button-focus-offset: 0.125rem !default;
+$fd-icon-tab-bar-overflow-button-border-radius: var(--fdIcon_Tab_Bar_Overflow_Button_Border_Radius) !default;
+$fd-icon-tab-bar-overflow-button-focus-offset: var(--fdIcon_Tab_Bar_Overflow_Button_Focus_Offset) !default;
 $fd-icon-tab-bar-filter-container-top-offset-compact: 1.375rem !default;
 $fd-icon-tab-bar-dnd-separator-bar-horizontal-offset: -0.5rem !default;
 $fd-icon-tab-bar-dnd-separator-bar-vertical-offset: 0.125rem !default;
@@ -22,36 +22,36 @@ $fd-icon-tab-bar-dnd-separator-circle-vertical-offset: -0.0625rem !default;
 $fd-icon-tab-bar-dnd-separator-circle-size: 0.5rem !default;
 
 $fd-icon-tab-bar-responsive-paddings: (
-  'sm':  ('padding': 0 1rem),
-  'md':  ('padding': 0 2rem),
-  'lg':  ('padding': 0 2rem),
-  'xl':  ('padding': 0 3rem),
+  'sm': ('padding': 0 1rem),
+  'md': ('padding': 0 2rem),
+  'lg': ('padding': 0 2rem),
+  'xl': ('padding': 0 3rem),
   'xxl': ('padding': 0 3rem)
 );
 
 $fd-icon-tab-bar-semantic-values: (
-  'negative':  (
+  'negative': (
     'icon': '\e1ec',
     'iconColor': var(--sapNegativeElementColor),
     'color': var(--fdIcon_Tab_Bar_Semantic_Color_Negative),
     'badgeColor': var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Negative),
     'backgroundColor': var(--fdIcon_Tab_Bar_Semantic_Background_Color_Negative)
   ),
-  'positive':  (
+  'positive': (
     'icon': '\e1c1',
     'iconColor': var(--sapPositiveElementColor),
     'color': var(--fdIcon_Tab_Bar_Semantic_Color_Positive),
     'badgeColor': var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Positive),
     'backgroundColor': var(--fdIcon_Tab_Bar_Semantic_Background_Color_Positive)
   ),
-  'critical':  (
+  'critical': (
     'icon': '\e053',
     'iconColor': var(--sapCriticalElementColor),
     'color': var(--fdIcon_Tab_Bar_Semantic_Color_Critical),
     'badgeColor': var(--fdIcon_Tab_Bar_Semantic_Badge_Color_Critical),
     'backgroundColor': var(--fdIcon_Tab_Bar_Semantic_Background_Color_Critical)
   ),
-  'informative':  (
+  'informative': (
     'icon': '\e289',
     'iconColor': var(--sapInformativeElementColor),
     'color': var(--fdIcon_Tab_Bar_Semantic_Color_Informative),
@@ -332,9 +332,16 @@ $fd-icon-tab-bar-semantic-values: (
       top: 50%;
       transform: translateY(-50%);
       margin: 0;
+      padding-right: 0;
+
+      @include fd-set-padding-left(var(--fdIcon_Tab_Bar_Overflowing_Padding));
 
       &-left {
         @include fd-set-position-left(0);
+
+        padding-left: 0;
+
+        @include fd-set-padding-right(var(--fdIcon_Tab_Bar_Overflowing_Padding));
       }
 
       .#{$block}__popover {
@@ -668,6 +675,8 @@ $fd-icon-tab-bar-semantic-values: (
         var(--sapButton_Hover_TextColor),
         var(--sapButton_Hover_TextColor)
       );
+
+      box-shadow: var(--fdIcon_Tab_Bar_Overflow_Button_Hover_Box_Shadow);
     }
 
     @include fd-active() {
