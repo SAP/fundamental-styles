@@ -17,6 +17,7 @@ dist
 dist-theming
 dist-fn
 dist-fn-icons
+dist-common-css
 node_modules
 stories/*/*.visual.js
 *.visual.js
