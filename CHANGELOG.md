@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.16 (2022-04-03)
+
+
+### Features
+
+* **common-css:** introduce common-css package ([#3284](https://github.com/SAP/fundamental-styles/issues/3284)) ([39f6e0d](https://github.com/SAP/fundamental-styles/commit/39f6e0d7cc7b998ae65b6fd595728bc62fe18bd7))
+
 ## 0.24.0-rc.15 (2022-04-02)
 
 
