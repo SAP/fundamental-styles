@@ -1,0 +1,311 @@
+@mixin fn-reset {
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: $fn-color-grey-10;
+  font-weight: normal;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    font-size: inherit;
+  }
+}
+
+@mixin fn-rtl {
+  @at-root {
+    [dir="rtl"] &,
+    &[dir="rtl"] {
+      @content;
+    }
+  }
+}
+
+@mixin fn-transition($property: all, $duration: 150ms, $animation: ease-in) {
+  $fn-transition: $property $duration $animation;
+
+  -webkit-transition: $fn-transition;
+  -moz-transition: $fn-transition;
+  -ms-transition: $fn-transition;
+  -o-transition: $fn-transition;
+  transition: $fn-transition;
+}
+
+// States
+@mixin fn-hover {
+  &:hover,
+  &.is-hover {
+    @content;
+  }
+}
+
+@mixin fn-empty {
+  &:empty,
+  &.is-empty {
+    @content;
+  }
+}
+
+@mixin fn-pressed {
+  &[aria-pressed="true"],
+  &.is-pressed {
+    @content;
+  }
+}
+
+@mixin fn-readonly {
+  &[aria-readonly="true"],
+  &[readonly],
+  &.is-readonly {
+    @content;
+  }
+}
+
+@mixin fn-selected {
+  &[aria-selected="true"],
+  &.is-selected {
+    @content;
+  }
+}
+
+@mixin fn-expanded {
+  &[aria-expanded="true"] {
+    @content;
+  }
+}
+
+@mixin fn-active {
+  &:active,
+  &.is-active {
+    @content;
+  }
+}
+
+@mixin fn-focus-active {
+  &:focus:active,
+  &.is-focus.is-active {
+    @content;
+  }
+}
+
+@mixin fn-disabled {
+  &[aria-disabled="true"],
+  &:disabled,
+  &.is-disabled {
+    @content;
+  }
+}
+
+@mixin fn-focus() {
+  &:focus,
+  &.is-focus {
+    @content;
+  }
+}
+
+@mixin fn-is-focus() {
+  &.is-focus {
+    @content;
+  }
+}
+
+@mixin fn-not-focus-visible() {
+  &:focus:not(.focus-visible) {
+    @content;
+  }
+}
+
+@mixin fn-focus-visible() {
+  &.focus-visible,
+  &.is-focus {
+    @content;
+  }
+}
+
+@mixin fn-focus-within() {
+  &:focus-within,
+  &.is-focus-within {
+    @content;
+  }
+}
+
+@mixin fn-display() {
+  &.is-display {
+    @content;
+  }
+}
+
+// Flex Helpers
+@mixin fn-flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  @content;
+}
+
+@mixin fn-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin fn-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+
+@mixin fn-flex-vertical-center {
+  display: flex;
+  align-items: center;
+  @content;
+}
+
+// Set Margins
+@mixin fn-set-margin-left($left: 0) {
+  margin-left: $left;
+
+  @include fn-rtl() {
+    margin-right: $left;
+    margin-left: 0;
+  }
+}
+
+@mixin fn-set-margin-right($right: 0) {
+  margin-right: $right;
+
+  @include fn-rtl() {
+    margin-right: 0;
+    margin-left: $right;
+  }
+}
+
+@mixin fn-set-margin-y-equal($value: 0) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin fn-set-margins-x($left: 0, $right: 0) {
+  margin-left: $left;
+  margin-right: $right;
+
+  @include fn-rtl() {
+    margin-right: $left;
+    margin-left: $right;
+  }
+}
+
+@mixin fn-set-margins-x-equal($value: 0) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+// Set Paddings
+@mixin fn-set-padding-left($left: 0) {
+  padding-left: $left;
+
+  @include fn-rtl() {
+    padding-right: $left;
+    padding-left: 0;
+  }
+}
+
+@mixin fn-set-padding-right($right: 0) {
+  padding-right: $right;
+
+  @include fn-rtl() {
+    padding-right: 0;
+    padding-left: $right;
+  }
+}
+
+@mixin fn-set-paddings-x($left: 0, $right: 0) {
+  padding-left: $left;
+  padding-right: $right;
+
+  @include fn-rtl() {
+    padding-right: $left;
+    padding-left: $right;
+  }
+}
+
+@mixin fn-set-paddings-x-equal($value: 0) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin fn-set-paddings-y($top: 0, $bottom: 0) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin fn-set-paddings-y-equal($value: 0) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+// Set position absolute
+@mixin fn-set-position-right($right) {
+  right: $right;
+
+  @include fn-rtl() {
+    right: auto;
+    left: $right;
+  }
+}
+
+@mixin fn-set-position-left($left) {
+  left: $left;
+
+  @include fn-rtl() {
+    left: auto;
+    right: $left;
+  }
+}
+
+@mixin fn-user-select() {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+@mixin fn-set-top-right-bottom-left($top:0, $right:0, $bottom:0, $left:0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+  @include fn-rtl() {
+    left: $right;
+    right: $left;
+  }
+}
+
+@mixin fn-set-square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin fn-set-square-min-width($size) {
+  width: $size;
+  height: $size;
+  min-width: $size;
+  min-height: $size;
+}
+
+@mixin fn-set-rectangle($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin fn-icon-class() {
+  [class*='sap-icon'] {
+    @content;
+  }
+}
