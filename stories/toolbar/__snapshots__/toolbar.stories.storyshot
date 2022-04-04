@@ -1135,13 +1135,15 @@ exports[`Storyshots Components/Toolbar Types 1`] = `
     >
       
         
-      <h4>
-        Producs (104)
+      <h4
+        class="fd-title fd-title--h4 fd-toolbar__title"
+      >
+        Products (104)
       </h4>
       
         
       <span
-        class="fd-toolbar__spacer "
+        class="fd-toolbar__spacer"
       />
       
         

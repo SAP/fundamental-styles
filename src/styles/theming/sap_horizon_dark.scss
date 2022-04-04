@@ -1,4 +1,10 @@
+@import "./common/switch/sap_horizon";
+
 :root {
+  /* Switch */
+  --fdSwitch_Semantic_Error_Handle_Border_Color: var(--sapButton_Track_Negative_Background);
+  --fdSwitch_Semantic_Success_Handle_Border_Color: var(--sapButton_Track_Positive_Background);
+
   /* Rating Indicator */
   --fdInverted_Object_Border_Width: 0;
   --fdOverlay_Background_Opacity: 0.6;
@@ -156,6 +162,18 @@
 
   /* Token */
   --fdToken_Text_Shadow: none;
+  --fdToken_Border_Radius: var(--sapButton_BorderCornerRadius);
+  --fdToken_Text_Color: var(--sapButtonTextColor);
+  --fdToken_Padding_Left: 0.25rem;
+  --fdToken_Background_Color_Hover: var(--sapButton_TokenBackground);
+  --fdToken_Border_Color_Hover: var(--sapButton_TokenBorderColor);
+  --fdToken_Box_Shadow_Hover: var(--sapContent_Interaction_Shadow);
+  --fdToken_Box_Shadow_Selected_Hover: var(--sapContent_Interaction_Shadow);
+  --fdToken_Outline_Offset: 0.0625rem;
+  --fdToken_Outline_Offset_Compact: 0;
+  --fdToken_Background_Color_Read_Only: var(--sapButton_TokenBackground);
+  --fdToken_Border_Color_Read_Only: var(--sapButton_TokenBorderColor);
+  --fdToken_Border_Color_Selected_Focus: var(var(--sapContent_FocusColor));
 
   /* TODO: DEPRECATED Side-Nav */
   --fdSideNav_Text_Shadow: none;
@@ -255,15 +273,6 @@
   --fdPage_List_Background: var(--sapGroup_ContentBackground);
   --fdPage_Transparent_Background: transparent;
 
-  /* Switch */
-  --fdSwitch_Handle_Border_Width: var(--sapButton_BorderWidth);
-  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Selected_Background);
-  --fdSwitch_Semantic_Success_Border_Color: var(--sapSuccessColor);
-  --fdSwitch_Semantic_Success_Background_Color: var(--sapSuccessBackground);
-  --fdSwitch_Semantic_Error_Background_Color: var(--sapErrorBackground);
-  --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: var(--sapSuccessBackground);
-  --fdSwitch_Semantic_Error_Color: var(--sapErrorBorderColor);
-
   /* Action List Item */
   --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   --fdList_Item_Action_Height: 2.75rem;
@@ -321,7 +330,8 @@
   --fdIcon_Tab_Bar_Semantic_Badge_Color_Informative: var(--sapInformativeElementColor);
 
   /* Toolbar */
-  --fdToolbar_Auto_Background: inherit;
+  --fdToolbar_Auto_Background: var(--sapToolbar_Background);
+  --fdToolbar_Solid_Background: var(--sapToolbar_Background);
 
   /* Tool Header */
   --fdTool_Header_Icon_Color_Default: var(--sapShell_TextColor);
@@ -430,4 +440,28 @@
   --fdCard_Border: none;
   --fdCard_Counter_Margin: 0.125rem 0 0 1rem;
   --fdCard_Counter_Margin_RTL: 0.125rem 1rem 0 0;
+
+  /** Shellbar */
+  --fdShellbar_Height: 3.25rem;
+  --fdShellbar_Shadow: none;
+  --fdShellbar_Button_Border: var(--sapButton_Lite_BorderColor);
+  --fdShellbar_Button_Hover_Shadow: var(--sapContent_Interaction_Shadow);
+  --fdShellbar_Button_Active_Shadow: var(--sapContent_Selected_Shadow);
+  --fdShellbar_Input_Border: none;
+  --fdShellbar_Input_Background: var(--sapShell_InteractiveBackground);
+  --fdShellbar_Input_Color: var(--sapShell_InteractiveTextColor);
+  --fdShellbar_Input_Placeholder_Color: var(--sapField_PlaceholderTextColor);
+  --fdShellbar_Input_Border_Radius: 1.125rem;
+  --fdShellbar_Input_Addon_Dimension: 1.75rem;
+
+  /** Message Page */
+  --fdMessage_Page_Container_Background: var(--sapGroup_ContentBackground);
+  --fdMessage_Page_Container_Corner_Radius: var(--sapElement_BorderCornerRadius);
+  --fdMessage_Page_Title_Margin_Top: 2rem;
+  --fdMessage_Page_Title_Margin_Bottom: 0.5rem;
+
+  /** Bar */
+  --fdBar_Left_Area_Padding_Right: 0.25rem;
+  --fdBar_Middle_Area_Padding_X: 0.25rem;
+  --fdBar_Right_Area_Padding_Left: 0.25rem;
 }

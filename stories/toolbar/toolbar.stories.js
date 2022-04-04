@@ -207,8 +207,8 @@ export const Types = () => `<div style="padding: 1rem">
     <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">3 item selected</div>
     <h3>Title</h3>
     <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 >Producs (104)</h4>
-        <span class="fd-toolbar__spacer "></span>
+        <h4 class="fd-title fd-title--h4 fd-toolbar__title">Products (104)</h4>
+        <span class="fd-toolbar__spacer"></span>
         <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
         <button class="fd-button fd-button--compact fd-button--transparent">Delete</button>
     </div>

@@ -21,11 +21,11 @@ $title-toolbar-height: 2.75rem;
 }
 
 @mixin toolbarAuto() {
-  background-color: inherit;
+  background-color: var(--fdToolbar_Auto_Background);
 }
 
 @mixin toolbarSolid() {
-  background-color: var(--sapBackgroundColor);
+  background-color: var(--fdToolbar_Solid_Background);
 }
 
 @mixin toolbarTransparent() {
@@ -201,12 +201,17 @@ $title-toolbar-height: 2.75rem;
     }
   }
 
+  &__title {
+    color: var(--sapGroup_TitleTextColor);
+  }
+
   &--cozy {
     height: $toolbar-height-cozy;
     min-height: $toolbar-height-cozy;
 
     &.#{$block}--info {
       height: $info-toolbar-height;
+      min-height: $info-toolbar-height;
     }
 
     .#{$block}__overflow {

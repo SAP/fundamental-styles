@@ -1,4 +1,68 @@
 
+## 0.24.0-rc.19 (2022-04-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** removed unused class "fd-bar__element--title"
+
+### Features
+
+* **styles:** resolve conflicts [ci visual] ([#3271](https://github.com/SAP/fundamental-styles/issues/3271)) ([bee683c](https://github.com/SAP/fundamental-styles/commit/bee683c1e88438509118328298ac798979967387))
+
+## 0.24.0-rc.18 (2022-04-03)
+
+## 0.24.0-rc.17 (2022-04-03)
+
+## 0.24.0-rc.16 (2022-04-03)
+
+
+### Features
+
+* **common-css:** introduce common-css package ([#3284](https://github.com/SAP/fundamental-styles/issues/3284)) ([39f6e0d](https://github.com/SAP/fundamental-styles/commit/39f6e0d7cc7b998ae65b6fd595728bc62fe18bd7))
+
+## 0.24.0-rc.15 (2022-04-02)
+
+
+### Features
+
+* horizon switch [ci visual] ([#3263](https://github.com/SAP/fundamental-styles/issues/3263)) ([567bede](https://github.com/SAP/fundamental-styles/commit/567bede09632de1d37a5a9e9cef8bef9c6501b13))
+
+## 0.24.0-rc.14 (2022-04-01)
+
+
+### Features
+
+* **styles:** add delta horizon theming support for Token [ci visual] ([#3267](https://github.com/SAP/fundamental-styles/issues/3267)) ([7a1e5a0](https://github.com/SAP/fundamental-styles/commit/7a1e5a0af2fb4fe0d60d884d1e5f1bbca14deb01))
+
+## 0.24.0-rc.13 (2022-03-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** updated the markup for the title element in the Toolbar with Title
+added a new class for Title used in Toolbar: fd-toolbar__title
+
+### Features
+
+* **styles:** add delta horizon theming for Toolbar [ci visual] ([#3269](https://github.com/SAP/fundamental-styles/issues/3269)) ([403a407](https://github.com/SAP/fundamental-styles/commit/403a407e0ab4f20e85ce0b799eb451339b58c7e1))
+
+## 0.24.0-rc.12 (2022-03-31)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Message Page [ci visual] ([#3272](https://github.com/SAP/fundamental-styles/issues/3272)) ([0cb6a44](https://github.com/SAP/fundamental-styles/commit/0cb6a44fbf448bb84eca8ed8ef3bc2be07aea4b5))
+
+## 0.24.0-rc.11 (2022-03-30)
+
+## 0.24.0-rc.10 (2022-03-30)
+
+
+### Features
+
+* **styles:** shellbar horizon support ([#3254](https://github.com/SAP/fundamental-styles/issues/3254)) ([8e0ac2e](https://github.com/SAP/fundamental-styles/commit/8e0ac2eb98ceb95346fce5bba3183e3c4d6b7dd3))
+
 ## 0.24.0-rc.9 (2022-03-28)
 
 

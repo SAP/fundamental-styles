@@ -8,9 +8,11 @@ git config --global user.name "fundamental-bot"
 PACKAGE_THEMING_PREVIEW=theming-preview
 PACKAGE_PREFIX=@fundamental-styles
 DIST_THEMING_PREVIEW=dist-theming
+DIST_COMMON_CSS=dist-common-css
 PACKAGE_FN=fn
 DIST_FN=dist-fn
 PACKAGE_FN_ICONS=fn-icons
+PACKAGE_COMMON_CSS=common-css
 DIST_FN_ICONS=dist-fn-icons
 
 # delete temp branch
@@ -47,6 +49,13 @@ cd ..
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN_ICONS}"
 
 cd ${DIST_FN_ICONS}
+npm publish
+cd ..
+
+# publish common-css package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_COMMON_CSS}"
+
+cd ${DIST_COMMON_CSS}
 npm publish
 cd ..
 
