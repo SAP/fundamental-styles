@@ -4,7 +4,7 @@
 $block: #{$fd-namespace}-bar;
 
 .#{$block} {
-  $fd-bar-padding-x: 0.5rem !default;
+  $fd-bar-padding-x: 1rem !default;
   $fd-bar-element-spacing: 0.5rem !default;
   $fd-bar-floating-footer-z-index: map-get($fd-z-index-levels, "top") !default;
 
@@ -50,7 +50,7 @@ $block: #{$fd-namespace}-bar;
   }
 
   &__middle {
-    padding: 0 $fd-bar-padding-x;
+    padding: 0 var(--fdBar_Middle_Area_Padding_X);
     justify-content: center;
   }
 
@@ -58,7 +58,13 @@ $block: #{$fd-namespace}-bar;
     padding: 0;
   }
 
+  &__left {
+    @include fd-set-paddings-x(0, var(--fdBar_Left_Area_Padding_Right));
+  }
+
   &__right {
+    @include fd-set-paddings-x(--fdBar_Right_Area_Padding_Left, 0);
+
     justify-content: flex-end;
   }
 
@@ -75,10 +81,6 @@ $block: #{$fd-namespace}-bar;
     @include fd-rtl() {
       margin-right: 0;
       margin-left: $fd-bar-element-spacing;
-    }
-
-    &--title {
-      @include fd-set-paddings-x(0.5rem,0);
     }
   }
 

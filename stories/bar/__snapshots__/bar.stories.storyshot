@@ -228,7 +228,7 @@ exports[`Storyshots Components/Bar Default 1`] = `
       
         
       <div
-        class="fd-bar__element fd-bar__element--title"
+        class="fd-bar__element"
       >
         
             
