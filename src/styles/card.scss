@@ -379,11 +379,30 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   }
 
   &--table {
-    border: hidden;
-
     &.#{$block}--compact {
       .#{$block}__content {
         padding-bottom: 0.5rem;
+      }
+    }
+
+    .#{$block}__content {
+      .#{$fd-namespace}-table {
+        &__header,
+        &__body {
+          border: none;
+        }
+
+        &__body {
+          tr:last-child {
+            td:first-child {
+              border-bottom-left-radius: $fd-card-header-border-radius;
+            }
+
+            td:last-child {
+              border-bottom-right-radius: $fd-card-header-border-radius;
+            }
+          }
+        }
       }
     }
   }
