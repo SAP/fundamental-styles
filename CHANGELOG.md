@@ -1,4 +1,15 @@
 
+## 0.24.0-rc.19 (2022-04-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** removed unused class "fd-bar__element--title"
+
+### Features
+
+* **styles:** resolve conflicts [ci visual] ([#3271](https://github.com/SAP/fundamental-styles/issues/3271)) ([bee683c](https://github.com/SAP/fundamental-styles/commit/bee683c1e88438509118328298ac798979967387))
+
 ## 0.24.0-rc.18 (2022-04-03)
 
 ## 0.24.0-rc.17 (2022-04-03)
