@@ -351,7 +351,7 @@ export const PerPage = () => `<div style='height: 175px'>
                                         toggleElAttrs('compactSelectCombobox', ['aria-expanded']);
                                     " class='fd-select__control' tabindex='0' aria-labelledby='compactSelectLabel compactSelectValue' aria-expanded='true' aria-haspopup='listbox'>
                           <span id='compactSelectValue' class='fd-select__text-content'>4</span>
-                          <span class='fd-button fd-button--transparent fd-select__button'>
+                          <span class='fd-button fd-button--transparent fd-button--compact fd-select__button'>
                                         <i class='sap-icon--slim-arrow-down'></i>
                                     </span>
                         </button>
