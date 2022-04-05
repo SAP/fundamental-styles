@@ -25,6 +25,7 @@ $block: #{$fd-namespace}-popover;
 
   position: relative;
   display: inline-block;
+  max-width: 100%;
   text-shadow: var(--fdPopover_Text_Shadow);
 
   &__control {
