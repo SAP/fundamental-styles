@@ -69,6 +69,8 @@ $block: #{$fd-namespace}-dynamic-page;
     width: $fd-dynamic-page-button-width;
     height: $fd-button-height;
     min-width: $fd-dynamic-page-button-width;
+    background: var(--fdDynamicPage_Button_Pin_Background);
+    border: var(--fdDynamicPage_Button_Pin_Border);
 
     // Extended touchable area
     &::before {
@@ -130,6 +132,10 @@ $block: #{$fd-namespace}-dynamic-page;
 
     &--collapsed {
       padding-bottom: 1rem;
+
+      .#{$block}__title {
+        font-size: var(--fdDynamicPage_Title_Collapsed_Font_Size);
+      }
     }
 
     &[aria-hidden="true"] {
@@ -177,8 +183,9 @@ $block: #{$fd-namespace}-dynamic-page;
   &__title {
     @include fd-reset();
 
-    color: var(--sapGroup_TitleTextColor);
-    font-size: var(--sapFontHeader3Size);
+    color: var(--fdDynamicPage_Title_Color);
+    font-size: var(--fdDynamicPage_Title_Font_Size);
+    font-family: var(--fdDynamicPage_Title_Font_Family);
 
     @include fd-ellipsis();
 
@@ -198,7 +205,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
     @include fd-ellipsis();
 
-    color: var(--sapContent_LabelColor);
+    color: var(--fdDynamicPage_Title_Collapsed_Font_Size);
     font-size: var(--sapFontSize);
     margin-top: 0.25rem;
   }
@@ -237,6 +244,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset-spacing();
 
     padding-left: $fd-dynamic-page-toolbar-space;
+    background: transparent;
 
     @include fd-rtl() {
       padding-left: 0;
