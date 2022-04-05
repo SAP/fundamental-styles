@@ -240,7 +240,7 @@
 
   /* Page */
   --fdPage_List_Background: var(--sapGroup_ContentBackground);
-  --fdPage_Transparent_Background: transparent;
+  --fdPage_Transparent_Background: var(--sapBackgroundColor);
 
   /* Action List Item */
   --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
