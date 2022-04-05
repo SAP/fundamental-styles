@@ -89,6 +89,8 @@ $block: #{$fd-namespace}-select;
 
       .#{$block}__text-content {
         @include fd-set-paddings-x-equal($fd-select-padding-x);
+
+        min-width: calc(5rem - var(--sapField_BorderWidth) * 2);
       }
     }
   }
@@ -96,8 +98,10 @@ $block: #{$fd-namespace}-select;
   &__text-content {
     @include fd-reset();
     @include fd-set-padding-left($fd-select-padding-x);
+    @include fd-ellipsis();
 
-    min-width: 2.75rem;
+    display: inline-block;
+    min-width: calc(2.5rem - var(--sapField_BorderWidth) * 2);
   }
 
   &--compact {
@@ -107,7 +111,7 @@ $block: #{$fd-namespace}-select;
       .#{$block}__text-content {
         @include fd-set-padding-left($fd-select-padding-x-compact);
 
-        min-width: 2rem;
+        min-width: calc(2.75rem - var(--sapField_BorderWidth) * 2);
       }
 
       &.is-readonly {
