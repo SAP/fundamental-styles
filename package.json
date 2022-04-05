@@ -69,7 +69,7 @@
     "@commitlint/cli": "^16.0.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@commitlint/travis-cli": "^16.0.0",
-    "@sap-theming/theming-base-content": "11.1.37",
+    "@sap-theming/theming-base-content": "11.1.38",
     "@storybook/addon-a11y": "6.4.20",
     "@storybook/addon-actions": "6.4.20",
     "@storybook/addon-controls": "6.4.20",
