@@ -269,10 +269,6 @@ $fd-icon-tab-bar-semantic-values: (
     min-height: 2.75rem;
     position: relative;
     overflow-x: hidden;
-
-    &--left-offset {
-      @include fd-set-padding-left(3.5rem);
-    }
   }
 
   &__panel {
@@ -323,34 +319,6 @@ $fd-icon-tab-bar-semantic-values: (
 
         .#{$block}__badge {
           @include fd-set-position-right(1.625rem);
-        }
-      }
-    }
-
-    &.#{$block}__item--overflow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      margin: 0;
-      padding-right: 0;
-
-      @include fd-set-padding-left(var(--fdIcon_Tab_Bar_Overflowing_Padding));
-
-      &-left {
-        @include fd-set-position-left(0);
-
-        padding-left: 0;
-
-        @include fd-set-padding-right(var(--fdIcon_Tab_Bar_Overflowing_Padding));
-      }
-
-      .#{$block}__popover {
-        position: relative;
-
-        &-body {
-          @include fd-set-margin-right(-0.25rem);
-
-          margin-top: 0.375rem;
         }
       }
     }
@@ -853,6 +821,7 @@ $fd-icon-tab-bar-semantic-values: (
     }
 
     height: $fd-icon-tab-bar-icon-separator-size;
+    padding: 0 0.5rem;
 
     [class*='sap-icon'] {
       width: $fd-icon-tab-bar-icon-separator-size;
@@ -1383,6 +1352,34 @@ $fd-icon-tab-bar-semantic-values: (
     .#{$block}__header {
       @include fd-reset-paddings-y();
       @include fd-apply-responsive-paddings();
+    }
+  }
+}
+
+.#{$block},
+.#{$block}--filter,
+.#{$block}--icon,
+.#{$block}--icon-only,
+.#{$block}--navigation,
+.#{$block}--navigation-flat,
+.#{$block}--process {
+  .#{$block}__item {
+    &--overflow {
+      margin: 0;
+
+      &:last-of-type {
+        @include fd-set-margin-left(auto);
+      }
+
+      .#{$block}__popover {
+        position: relative;
+
+        &-body {
+          @include fd-set-margin-right(-0.25rem);
+
+          margin-top: 0.375rem;
+        }
+      }
     }
   }
 }
