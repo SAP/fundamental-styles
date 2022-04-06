@@ -149,8 +149,6 @@ $fd-calendar-special-days: (
 }
 
 %fd-calendar-item {
-  @include fd-reset();
-
   overflow: hidden;
   position: relative;
   height: $fd-calendar-item-height;
@@ -159,16 +157,10 @@ $fd-calendar-special-days: (
   border-radius: $fd-calendar-border-radius;
   background-color: $fd-calendar-item-background;
   flex: 1 1 $fd-calendar-item-current-border-width * 2 + $fd-calendar-item-spacing * 2;
-
-  @include fd-hover() {
-    cursor: default;
-    background-color: $fd-calendar-item-background-hover;
-  }
+  cursor: pointer;
 }
 
 %fd-calendar-item-side-helper {
-  @extend %fd-calendar-item;
-
   align-self: center;
   pointer-events: none;
   height: $fd-calendar-item-helper-height;
@@ -336,6 +328,14 @@ $fd-calendar-special-days: (
     &--years,
     &--months {
       padding-top: $fd-calendar-item-helper-height;
+
+      .#{$block}__item {
+        max-height: $fd-calendar-item-height;
+
+        .#{$block}__text {
+          color: inherit;
+        }
+      }
     }
 
     &--screen-reader-only {
@@ -363,10 +363,9 @@ $fd-calendar-special-days: (
     display: flex;
   }
 
+  // Needed to not overwrite Button styles, that are applied for Months & Years items
   &__item {
-    @extend %fd-calendar-item;
-
-    display: inline-block;
+    @include fd_reset();
 
     &--weekend {
       @extend %fd-calendar-item-weekend;
@@ -413,6 +412,10 @@ $fd-calendar-special-days: (
       }
     }
 
+    @include fd-hover() {
+      background-color: $fd-calendar-item-background-hover;
+    }
+
     @include fd-active() {
       @extend %fd-calendar-item-active;
 
@@ -428,6 +431,13 @@ $fd-calendar-special-days: (
     @include fd-disabled() {
       @extend %fd-calendar-item-disabled;
     }
+  }
+
+  // And these styles should overwrite Button's ones
+  .#{$block}__item {
+    @extend %fd-calendar-item;
+
+    display: inline-block;
   }
 
   &__text {
@@ -459,6 +469,15 @@ $fd-calendar-special-days: (
         &--arrow-left,
         &--arrow-right {
           width: $fd-calendar-item-width-compact;
+        }
+      }
+
+      &__content {
+        &--years,
+        &--months {
+          .#{$block}__item {
+            max-height: $fd-calendar-item-height-compact;
+          }
         }
       }
 
