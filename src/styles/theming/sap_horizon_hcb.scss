@@ -145,6 +145,10 @@
   --fdInputGroup_Text_Shadow: none;
   --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;
 
+  /* Step Input */
+  --fdStepInput_Focus_Border_Offset: 0.0625rem;
+  --fdStepInput_Focus_Border_Radius: 0;
+
   /* Input */
   --fdInput_Text_Shadow: none;
   --fdInput_State_Text_Style: normal;

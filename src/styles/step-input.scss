@@ -16,7 +16,10 @@ $block: #{$fd-namespace}-step-input;
   @include fd-form-base();
   @include fd-form-input();
 
-  @include fd-fiori-pseudo-focus-within() {
+  @include fd-form-input-pseudo-focus(
+    var(--fdStepInput_Focus_Border_Offset),
+    var(--fdStepInput_Focus_Border_Radius)
+  ) {
     z-index: 10;
   }
 
@@ -63,7 +66,7 @@ $block: #{$fd-namespace}-step-input;
     }
 
     @include fd-focus() {
-      // outline: none;
+      outline: none;
 
       @include fd-hover() {
         z-index: auto;

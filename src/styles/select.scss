@@ -37,7 +37,10 @@ $block: #{$fd-namespace}-select;
     @include fd-reset();
     @include fd-form-base();
     @include fd-form-input();
-    @include fd-fiori-pseudo-focus(-0.1875rem);
+    @include fd-form-input-pseudo-focus(
+      var(--fdSelect_Focus_Border_Offset),
+      var(--fdSelect_Focus_Border_Radius)
+    );
 
     @include fd-flex-center() {
       justify-content: space-between;
@@ -52,11 +55,8 @@ $block: #{$fd-namespace}-select;
     }
 
     @include fd-focus() {
-      outline-style: var(--fdSelect_Outline_FocusStyle);
-
-      &::after {
-        content: var(--fdSelect_Fiori_Focus_Content);
-      }
+      outline: none;
+      background: none;
     }
 
     @include fd-expanded() {

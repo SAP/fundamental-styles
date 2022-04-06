@@ -4,8 +4,8 @@
 
 @mixin fd-form-states {
 
-  $fd-form-border-thin-width: 0.0625rem;
-  $fd-form-border-thick-width: 2 * $fd-form-border-thin-width;
+  // $fd-form-border-thin-width: 0.0625rem;
+  // $fd-form-border-thick-width: 2 * $fd-form-border-thin-width;
 
   // states
   @include fd-hover() {
@@ -95,7 +95,7 @@
   &.is-alert,
   &.is-information,
   &.is-error {
-    border-width: $fd-form-border-thick-width;
+    // border-width: $fd-form-border-thick-width;
     border-style: var(--fdInput_State_Border_Type);
 
     @include fd-focus() {
@@ -231,22 +231,12 @@
     var(--sapField_Background),
     var(--fdInput_Base_Border_Style)
   );
-  @include fd-input-focus(
-    var(--fdInput_Base_Focus_Background),
-    var(--fdInput_Outline_Offset),
-    var(--fdInput_Outline_BaseColor)
-  );
 
   &.is-success {
     @include fd-input-background(
       var(--sapField_SuccessBackgroundStyle),
       var(--sapField_SuccessBackground),
       var(--fdInput_Success_Border_Style)
-    );
-    @include fd-input-focus(
-      var(--fdInput_Success_Focus_Background),
-      var(--fdInput_Outline_Offset),
-      var(--fdInput_Outline_SuccessColor)
     );
   }
 
@@ -256,11 +246,6 @@
       var(--sapField_InvalidBackground),
       var(--fdInput_Error_Border_Style)
     );
-    @include fd-input-focus(
-      var(--fdInput_Error_Focus_Background),
-      var(--fdInput_Outline_Offset),
-      var(--fdInput_Outline_ErrorColor)
-    );
   }
 
   &.is-information {
@@ -268,11 +253,6 @@
       var(--sapField_InformationBackgroundStyle),
       var(--sapField_InformationBackground),
       var(--fdInput_Information_Border_Style)
-    );
-    @include fd-input-focus(
-      var(--fdInput_Information_Focus_Background),
-      var(--fdInput_Outline_Offset),
-      var(--fdInput_Outline_InformationColor)
     );
   }
 
@@ -282,11 +262,6 @@
       var(--sapField_WarningBackgroundStyle),
       var(--sapField_WarningBackground),
       var(--fdInput_Warning_Border_Style)
-    );
-    @include fd-input-focus(
-      var(--fdInput_Warning_Focus_Background),
-      var(--fdInput_Outline_Offset),
-      var(--fdInput_Outline_WarningColor)
     );
   }
 
@@ -298,5 +273,128 @@
     );
 
     border-radius: 0;
+  }
+}
+
+@mixin fd-form-input-focus() {
+  @include fd-input-focus(
+    var(--fdInput_Base_Focus_Background),
+    var(--fdInput_Outline_Offset),
+    var(--fdInput_Outline_BaseColor)
+  );
+
+  &.is-success {
+    @include fd-input-focus(
+      var(--fdInput_Success_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_SuccessColor)
+    );
+  }
+
+  &.is-error {
+    @include fd-input-focus(
+      var(--fdInput_Error_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_ErrorColor)
+    );
+  }
+
+  &.is-information {
+    @include fd-input-focus(
+      var(--fdInput_Information_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_InformationColor)
+    );
+  }
+
+  &.is-warning,
+  &.is-alert {
+    @include fd-input-focus(
+      var(--fdInput_Warning_Focus_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_WarningColor)
+    );
+  }
+}
+
+@mixin fd-form-input-pseudo-focus($offset, $borderRadius) {
+  @include fd-input-container-focus(
+    $offset,
+    $borderRadius,
+    var(--fdInput_Base_Focus_Background),
+    var(--fdInput_Outline_BaseColor)
+  );
+
+  &.is-success {
+    @include fd-input-container-focus(
+      $offset,
+      $borderRadius,
+      var(--fdInput_Success_Focus_Background),
+      var(--fdInput_Outline_SuccessColor)
+    );
+  }
+
+  &.is-error {
+    @include fd-input-container-focus(
+      $offset,
+      $borderRadius,
+      var(--fdInput_Error_Focus_Background),
+      var(--fdInput_Outline_ErrorColor)
+    );
+  }
+
+  &.is-information {
+    @include fd-input-container-focus(
+      $offset,
+      $borderRadius,
+      var(--fdInput_Information_Focus_Background),
+      var(--fdInput_Outline_InformationColor)
+    );
+  }
+
+  &.is-warning,
+  &.is-alert {
+    @include fd-input-container-focus(
+      $offset,
+      $borderRadius,
+      var(--fdInput_Warning_Focus_Background),
+      var(--fdInput_Outline_WarningColor)
+    );
+  }
+
+  @include fd-readonly() {
+    @include fd-input-container-focus(
+      $offset,
+      0,
+      var(--sapField_ReadOnly_Background),
+      var(--fdInput_Outline_BaseColor)
+    );
+  }
+
+  @content;
+}
+
+@mixin fd-input-container-focus($offset, $borderRadius, $background: none, $borderColor) {
+  &:focus,
+  &:focus-within,
+  &.is-focus {
+    background: $background;
+    box-shadow: none;
+    outline: none;
+
+    &::after {
+      border-width: var(--sapContent_FocusWidth);
+      border-color: $borderColor;
+      border-style: var(--fdInput_Outline_FocusStyle);
+      border-radius: $borderRadius;
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: $offset;
+      bottom: $offset;
+      left: $offset;
+      right: $offset;
+    }
+    @content;
   }
 }

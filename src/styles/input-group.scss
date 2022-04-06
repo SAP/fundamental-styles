@@ -45,7 +45,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   // states
   @include fd-form-states();
   @include fd-fiori-focus();
+
+  // delta-horizon-styles
   @include fd-form-input();
+  @include fd-form-input-focus();
 
   > * {
     border-radius: $fd-input-border-radius;

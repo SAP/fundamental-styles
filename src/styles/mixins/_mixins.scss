@@ -690,20 +690,14 @@
 }
 
 @mixin fd-input-focus($background, $outlineOffset, $outlineColor) {
-  // @include fd-focus() {
-  //   background: $background;
-  //   outline-offset: $outlineOffset;
-  //   outline-color: $outlineColor;
-  //   outline-style: var(--fdInput_Outline_FocusStyle);
-  //   box-shadow: none;
-  // }
-
-  @include fd-focus-within() {
+  &:focus,
+  &:focus-within,
+  &.is-focus {
     background: $background;
     outline-offset: $outlineOffset;
     outline-color: $outlineColor;
-    outline-width: var(--sapContent_FocusWidth);
     outline-style: var(--fdInput_Outline_FocusStyle);
+    outline-width: var(--sapContent_FocusWidth);
     box-shadow: none;
   }
 }

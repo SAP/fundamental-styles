@@ -1,22 +1,23 @@
 // These mixins ensure that all state selectors — ARIA, pseudos, `is` fallbacks — get applied properly.
 
-@mixin fd-internal-pseudo-element-focus($_offset) {
-  $offset: -$_offset;
+// @mixin fd-internal-pseudo-element-focus($_offset, $borderRadius) {
+//   $offset: $_offset;
 
-  &::after {
-    border-width: var(--sapContent_FocusWidth);
-    border-color: var(--sapContent_FocusColor);
-    border-style: var(--sapContent_FocusStyle);
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    top: $offset;
-    bottom: $offset;
-    left: $offset;
-    right: $offset;
-    @content;
-  }
-}
+//   &::after {
+//     border-width: var(--sapContent_FocusWidth);
+//     border-color: var(--sapContent_FocusColor);
+//     border-style: var(--sapContent_FocusStyle);
+//     border-radius: $borderRadius;
+//     content: '';
+//     position: absolute;
+//     pointer-events: none;
+//     top: $offset;
+//     bottom: $offset;
+//     left: $offset;
+//     right: $offset;
+//     @content;
+//   }
+// }
 
 // ACTIVE state (press and hold)
 @mixin fd-active {
@@ -46,12 +47,9 @@
   }
 }
 
-// FOCUS state (tab onto, click into)
-// override params $shadow-var, $shadow-value
-// `.is-focus` is for demo purposes
 @mixin fd-focus-within() {
   &:focus-within,
-  &.is-focus-within {
+  &.is-focus {
     z-index: 5;
     @content;
   }
@@ -76,24 +74,24 @@
 // Newer FOCUS state which follows fiori3 spec (tab onto, click into)
 // `.is-focus` is for demo purposes
 // This brings border + pseudo element
-@mixin fd-fiori-pseudo-focus($_offset: -0.0625rem) {
-  &:focus,
-  &.is-focus {
-    @include fd-internal-pseudo-element-focus($_offset) {
-      @content;
-    }
-  }
-}
+// @mixin fd-fiori-pseudo-focus($_offset: -0.0625rem, $borderRadius: 0) {
+//   &:focus,
+//   &.is-focus {
+//     @include fd-internal-pseudo-element-focus($_offset, $borderRadius) {
+//       @content;
+//     }
+//   }
+// }
 
 // Focus state, which is not support by IE11. Use it with `fd-fiori-focus` mixin.
 // This brings border + pseudo element
-@mixin fd-fiori-pseudo-focus-within($_offset: -0.0625rem) {
-  &:focus-within {
-    @include fd-internal-pseudo-element-focus($_offset) {
-      @content;
-    }
-  }
-}
+// @mixin fd-fiori-pseudo-focus-within($_offset: -0.0625rem, $borderRadius: 0) {
+//   &:focus-within {
+//     @include fd-internal-pseudo-element-focus($_offset, $borderRadius) {
+//       @content;
+//     }
+//   }
+// }
 
 // Focus state, which is not support by IE11. Use it with `fd-fiori-focus` mixin.
 @mixin fd-fiori-focus-within($offset: -0.1875rem) {
