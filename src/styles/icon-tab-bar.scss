@@ -1178,6 +1178,12 @@ $fd-icon-tab-bar-semantic-values: (
 
     .#{$block}__item {
       color: var(--sapShell_Navigation_TextColor);
+
+      &--overflow {
+        .#{$block}__overflow {
+          border-color: transparent;
+        }
+      }
     }
 
     .#{$block}__tab {
