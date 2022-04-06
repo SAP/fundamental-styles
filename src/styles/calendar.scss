@@ -317,6 +317,11 @@ $fd-calendar-special-days: (
       flex-grow: 0;
     }
 
+    // Years range selection mode
+    &--arrow-left + &--arrow-right {
+      @include fd-set-margin-left(auto);
+    }
+
     [class*="sap-icon"] {
       @include fd-rtl() {
         transform: scaleX(-1);
@@ -427,24 +432,14 @@ $fd-calendar-special-days: (
 
   &__text {
     @extend %fd-calendar-item-text;
-
-    // Active behaviour is doubled for text element because of IE11 issue
-    &:active {
-      background-color: $fd-calendar-item-active-background;
-      color: $fd-calendar-item-active-color;
-    }
   }
 
   @include special-days($fd-calendar-special-days);
 
-  &__close-button--navigation.#{$fd-namespace}-button {
-    @include fd-rtl() {
-      left: 0;
-      right: auto;
-    }
+  .#{$block}__close-button--navigation {
+    @include fd-set-position-right(0);
 
     position: absolute;
-    right: 0;
     top: 50%;
     transform: translateY(-50%);
   }
