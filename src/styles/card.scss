@@ -50,7 +50,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   @include fd-reset();
   @include fd-flex(column);
 
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   position: relative;
   background: $fd-card-default-body-background-color;
