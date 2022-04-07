@@ -929,7 +929,7 @@ Overflow.parameters = {
 
 export const SingleClick = () => `<div class='fddocs-icon-tab-container' style="min-height: 800px;">
     <div class="fd-icon-tab-bar fd-icon-tab-bar--xl">
-        <ul role="tablist" class="fd-icon-tab-bar__header" style="overflow: visible">
+        <ul role="tablist" class="fd-icon-tab-bar__header">
             <li role="presentation" class="fd-icon-tab-bar__item">
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab111">
                     <span class="fd-icon-tab-bar__tag">Section 1</span>
@@ -998,7 +998,7 @@ export const SingleClick = () => `<div class='fddocs-icon-tab-container' style="
     <div style="height: 20rem;"></div>
 
      <div class='fd-icon-tab-bar fd-icon-tab-bar--icon'>
-  <ul role='tablist' class='fd-icon-tab-bar__header' style='overflow: visible'>
+  <ul role='tablist' class='fd-icon-tab-bar__header'>
     <li role='presentation' class='fd-icon-tab-bar__item'>
       <a role='tab' class='fd-icon-tab-bar__tab' href='#' aria-selected='true' id='tab1'>
         <div class='fd-icon-tab-bar__container'>
