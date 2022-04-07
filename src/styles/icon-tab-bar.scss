@@ -521,7 +521,7 @@ $fd-icon-tab-bar-semantic-values: (
 
     @include fd-icon-selector() {
       font-size: 1.25rem;
-      color: var(--sapContent_IconColor);
+      color: var(--fdIcon_Tab_Bar_Inactive_Tab_Icon_Color);
 
       @include fd-inline-flex-center();
     }
