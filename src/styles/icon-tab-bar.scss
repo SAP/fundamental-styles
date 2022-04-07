@@ -550,8 +550,9 @@ $fd-icon-tab-bar-semantic-values: (
     @include fd-ellipsis();
 
     line-height: 0.875rem;
-    font-size: var(--sapFontSmallSize);
-    color: var(--sapContent_LabelColor);
+    font-family: var(--fdIcon_Tab_Bar_Label_Font_Family);
+    font-size: var(--fdIcon_Tab_Bar_Label_Font_Size);
+    color: var(--fdIcon_Tab_Bar_Label_Color);
   }
 
   &__separator {
