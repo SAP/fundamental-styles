@@ -522,6 +522,8 @@ $fd-icon-tab-bar-semantic-values: (
     @include fd-icon-selector() {
       font-size: 1.25rem;
       color: var(--sapContent_IconColor);
+
+      @include fd-inline-flex-center();
     }
 
     border-radius: 50%;
