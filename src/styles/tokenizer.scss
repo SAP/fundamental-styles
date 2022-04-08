@@ -48,6 +48,7 @@ $block: #{$fd-namespace}-tokenizer;
       border: none;
       padding: 0;
       min-width: $fd-tokenizer-input-width;
+      background: none;
     }
 
     &:first-child {

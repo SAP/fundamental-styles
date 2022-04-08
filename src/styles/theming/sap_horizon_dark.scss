@@ -154,7 +154,6 @@
   --fdSelect_Fiori_Focus_Content: none;
   --fdSelect_Outline_FocusStyle: solid;
   --fdSelect_Focus_Border_Offset: 0;
-  --fdSelect_Focus_Border_Radius: 0.25rem;
 
   /* Popover */
   --fdPopover_Text_Shadow: none;
@@ -180,10 +179,11 @@
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
   --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;
+  --fdInputGroup_Focus_Border_Radius: 0.25rem;
+  --fdInputGroup_Focus_Border_Style: var(--sapContent_FocusStyle);
 
   /* Step Input */
   --fdStepInput_Focus_Border_Offset: 0;
-  --fdStepInput_Focus_Border_Radius: 0.25rem;
 
   /* Input */
   --fdInput_Text_Shadow: none;

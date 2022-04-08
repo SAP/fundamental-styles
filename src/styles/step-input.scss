@@ -18,7 +18,7 @@ $block: #{$fd-namespace}-step-input;
 
   @include fd-form-input-pseudo-focus(
     var(--fdStepInput_Focus_Border_Offset),
-    var(--fdStepInput_Focus_Border_Radius)
+    var(--fdInputGroup_Focus_Border_Radius)
   ) {
     z-index: 10;
   }

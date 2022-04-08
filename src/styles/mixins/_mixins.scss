@@ -691,7 +691,6 @@
 
 @mixin fd-input-focus($background, $outlineOffset, $outlineColor) {
   &:focus,
-  &:focus-within,
   &.is-focus {
     background: $background;
     outline-offset: $outlineOffset;

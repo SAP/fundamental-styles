@@ -144,10 +144,11 @@
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
   --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;
+  --fdInputGroup_Focus_Border_Radius: 0;
+  --fdInputGroup_Focus_Border_Style: none;
 
   /* Step Input */
   --fdStepInput_Focus_Border_Offset: 0.0625rem;
-  --fdStepInput_Focus_Border_Radius: 0;
 
   /* Input */
   --fdInput_Text_Shadow: none;

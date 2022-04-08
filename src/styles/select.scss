@@ -39,7 +39,7 @@ $block: #{$fd-namespace}-select;
     @include fd-form-input();
     @include fd-form-input-pseudo-focus(
       var(--fdSelect_Focus_Border_Offset),
-      var(--fdSelect_Focus_Border_Radius)
+      var(--fdInputGroup_Focus_Border_Radius)
     );
 
     @include fd-flex-center() {
@@ -54,13 +54,9 @@ $block: #{$fd-namespace}-select;
       }
     }
 
-    @include fd-focus() {
-      outline: none;
-      background: none;
-    }
-
     @include fd-expanded() {
       @include fd-select-button-active();
+      @include fd-form-input-expanded();
     }
 
     @include fd-active() {
