@@ -75,7 +75,7 @@ $cols: 12;
 
   &.#{$blockContainer}--no-vertical-gap,
   &.#{$blockContainer}--no-gap {
-    .#{$blockRow} .#{$blockCol} {
+    > .#{$blockRow} > .#{$blockCol} {
       @include fd-reset-paddings-y();
     }
   }
@@ -83,28 +83,33 @@ $cols: 12;
   @include fd-rtl() {
     direction: rtl;
   }
+
+  > .#{$blockRow} {
+    @include fd-set-margins-x-equal(-$horizontal-gutter-small);
+
+    min-width: calc(100% + #{$horizontal-gutter-small} * 2);
+
+    > .#{$blockCol} {
+      @include fd-set-paddings-y-equal(math.div($vertical-gutter-small, 2));
+    }
+  }
 }
 
 .#{$blockRow} {
-  @include fd-set-margins-x-equal(-$horizontal-gutter-small);
-
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  min-width: calc(100% + #{$horizontal-gutter-small} * 2);
-
-  .#{$blockCol} {
-    @include fd-set-paddings-y-equal(math.div($vertical-gutter-small, 2));
-  }
+  min-width: 100%;
 }
 
 .#{$blockCol} {
+  @include fd-set-paddings-x-equal($horizontal-gutter-small);
+
   @at-root {
     @include responsive-column();
   }
 
-  padding: 0 $horizontal-gutter-small;
   min-width: 100%;
   max-width: 100%;
 
@@ -120,20 +125,20 @@ $cols: 12;
 @media (min-width: 600px) {
   .#{$blockContainer} {
     padding: 0 $horizontal-gutter;
-  }
 
-  .#{$blockRow} {
-    @include fd-set-margins-x-equal(-$horizontal-gutter);
+    > .#{$blockRow} {
+      @include fd-set-margins-x-equal(-$horizontal-gutter);
 
-    min-width: calc(100% + #{$horizontal-gutter} * 2);
+      min-width: calc(100% + #{$horizontal-gutter} * 2);
 
-    .#{$blockCol} {
-      @include fd-set-paddings-y-equal(math.div($vertical-gutter, 2));
+      > .#{$blockCol} {
+        @include fd-set-paddings-y-equal(math.div($vertical-gutter, 2));
+      }
     }
   }
 
   .#{$blockCol} {
-    padding: 0 $horizontal-gutter;
+    @include fd-set-paddings-x-equal($horizontal-gutter);
 
     @at-root {
       @include responsive-column(map-get($size, $md));
