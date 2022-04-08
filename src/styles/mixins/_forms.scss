@@ -3,10 +3,6 @@
 @import "./states";
 
 @mixin fd-form-states {
-
-  // $fd-form-border-thin-width: 0.0625rem;
-  // $fd-form-border-thick-width: 2 * $fd-form-border-thin-width;
-
   // states
   @include fd-hover() {
     background-color: var(--sapField_Hover_Background);
@@ -95,7 +91,6 @@
   &.is-alert,
   &.is-information,
   &.is-error {
-    // border-width: $fd-form-border-thick-width;
     border-style: var(--fdInput_State_Border_Type);
 
     @include fd-focus() {

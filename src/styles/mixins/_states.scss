@@ -28,17 +28,6 @@
   }
 }
 
-// FOCUS state (tab onto, click into)
-// override params $shadow-var, $shadow-value
-// `.is-focus-within` is for demo purposes
-@mixin fd-focus-within() {
-  &:focus-within,
-  &.is-focus-within {
-    z-index: 5;
-    @content;
-  }
-}
-
 // Newer FOCUS state which follows fiori3 spec (tab onto, click into)
 // `.is-focus` is for demo purposes
 @mixin fd-fiori-focus($offset: -0.1875rem) {
