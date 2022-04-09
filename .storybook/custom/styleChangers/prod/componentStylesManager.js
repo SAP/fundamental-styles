@@ -3,7 +3,6 @@ import getLazyLoader from '../utils/getLazyLoader';
 
 export default (managedBy) => {
     let loadedComponentStyles = {};
-    let currentComponents = [];
 
     const styleLinkTag = generateStyleLinkTagFn(managedBy);
     const lazyLoader = getLazyLoader(styleLinkTag);
@@ -14,17 +13,6 @@ export default (managedBy) => {
             return `${stylePath}.css`;
         }
         return `${stylePath}.css`;
-    };
-
-    const unuseComponent = (componentName) => {
-        if (
-            loadedComponentStyles.hasOwnProperty(componentName)
-        ) {
-            loadedComponentStyles[componentName].unuse();
-            delete loadedComponentStyles[componentName];
-        } else {
-            console.log('Component not loaded');
-        }
     };
 
     const useComponent = (componentName) => {
@@ -38,11 +26,9 @@ export default (managedBy) => {
 
     return {
         use: (components) => {
-            currentComponents.forEach((componentName) => unuseComponent(componentName));
             for (const componentName of components) {
                 useComponent(componentName);
             }
-            currentComponents = [...components];
         }
     };
 };
