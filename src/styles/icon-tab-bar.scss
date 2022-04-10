@@ -472,6 +472,12 @@ $fd-icon-tab-bar-semantic-values: (
       }
     }
 
+    @include fd-hover() {
+      .#{$block}__tag {
+        color: var(--fdIcon_Tab_Bar_Label_Hover_Color);
+      }
+    }
+
     @include fd-focus() {
       box-shadow: none;
       outline: none;
@@ -505,6 +511,10 @@ $fd-icon-tab-bar-semantic-values: (
 
   &__tag {
     @extend %fd-icon-tab-bar-text;
+
+    font-family: var(--fdIcon_Tab_Bar_Label_Font_Family);
+    color: var(--fdIcon_Tab_Bar_Label_Color);
+    font-size: var(--fdIcon_Tab_Bar_Label_Font_Size);
   }
 
   &__counter {
