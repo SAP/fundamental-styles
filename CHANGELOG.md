@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.22 (2022-04-10)
+
+
+### Features
+
+* **common-css:** publish padding and margin classes ([#3306](https://github.com/SAP/fundamental-styles/issues/3306)) ([facb744](https://github.com/SAP/fundamental-styles/commit/facb744b36f7435d387c720fcda0d8cd53e37533))
+
 ## 0.24.0-rc.21 (2022-04-05)
 
 ## 0.24.0-rc.20 (2022-04-05)
