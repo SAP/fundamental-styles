@@ -3,7 +3,17 @@ import { componentsManager } from '../../environment';
 
 const defaultManagersKey = Symbol('Default manager');
 
-const components = componentsManager(defaultManagersKey.toString());
+const components = {
+    [defaultManagersKey.toString()]: componentsManager(defaultManagersKey.toString())
+};
+
+function getComponentsManager(managerKey) {
+    if (!components[managerKey]) {
+        components[managerKey] = componentsManager(managerKey);
+    }
+
+    return components[managerKey];
+}
 
 export const withComponentStylesProvider = makeDecorator({
     name: 'withComponentStyles',
@@ -12,7 +22,7 @@ export const withComponentStylesProvider = makeDecorator({
     wrapper: (storyFn, context) => {
         const forComponents = context?.parameters?.components || [];
         forComponents.indexOf('info-label') === -1 && forComponents.push('info-label');
-        components.use(forComponents);
+        getComponentsManager(context.id).use(forComponents);
         return storyFn(context);
     }
 });

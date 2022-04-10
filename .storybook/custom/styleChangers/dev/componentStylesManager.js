@@ -34,10 +34,10 @@ export default (manager) => {
 
     return {
         use: (components) => {
-            currentComponents.forEach(unuseComponent);
             for (const componentName of components) {
                 useComponent(componentName);
             }
+            currentComponents.forEach(unuseComponent);
             currentComponents = [...components];
         }
     };

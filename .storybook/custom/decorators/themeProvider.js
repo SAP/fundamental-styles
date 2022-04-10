@@ -3,7 +3,16 @@ import { themeManager } from '../../environment';
 
 const defaultManagersKey = Symbol('Default manager');
 
-const themes = themeManager(defaultManagersKey.toString());
+const themes = {
+    [defaultManagersKey.toString()]: themeManager(defaultManagersKey.toString())
+};
+
+function getThemeManager(managerKey) {
+    if (!themes.hasOwnProperty(managerKey)) {
+        themes[managerKey] = themeManager(managerKey);
+    }
+    return themes[managerKey];
+}
 
 // this is a story decorator, used to inject link style tags
 // into the HTML document, based on the current selected theme
@@ -13,7 +22,7 @@ export const withThemeProvider = makeDecorator({
     parameterName: 'themes',
     wrapper: (storyFn, context) => {
         const newTheme = context?.parameters?.theme || context?.globals?.theme || 'sap_fiori_3';
-        themes.use(newTheme);
+        getThemeManager(context.id).use(newTheme);
         return storyFn(context);
     }
 });
