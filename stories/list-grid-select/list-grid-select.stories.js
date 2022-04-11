@@ -25,7 +25,7 @@ The grid list is usually used as an alternative view for a list or table. It is 
     `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: [
-            'list-grid',
+            'grid-list',
             'layout-grid',
             'toolbar',
             'button',
