@@ -199,9 +199,6 @@
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
 
-  /* Card */
-  --fdCard_Box_Shadow: var(--sapContent_Shadow0);
-
   /* Badge */
   --fdBadge_Border_Color: transparent;
 
@@ -400,6 +397,15 @@
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapContent_Selected_Background);
+
+  /** Card */
+  --fdCard_Background_Color: transparent;
+  --fdCard_Box_Shadow: none;
+  --fdCard_Border_Radius: var(--sapTile_BorderCornerRadius);
+  --fdCard_Header_Border_Bottom: none;
+  --fdCard_Border: 0.0625rem solid var(--sapTile_BorderColor);
+  --fdCard_Counter_Margin: 0.125rem 0 0 1rem;
+  --fdCard_Counter_Margin_RTL: 0.125rem 1rem 0 0;
 
   /** Shellbar */
   --fdShellbar_Height: 3.25rem;

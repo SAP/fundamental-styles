@@ -5,8 +5,8 @@ $block: #{$fd-namespace}-card;
 $object-status: #{$fd-namespace}-object-status;
 $numeric-content: #{$fd-namespace}-numeric-content;
 
-$fd-card-header-border: 0.0625rem solid var(--sapTile_SeparatorColor) !default;
-$fd-card-header-border-radius: var(--sapElement_BorderCornerRadius) !default;
+$fd-card-header-border: var(--fdCard_Header_Border_Bottom) !default;
+$fd-card-header-border-radius: var(--fdCard_Border_Radius) !default;
 $fd-card-avatar-text-spacing: 0.75rem !default;
 $fd-card-title-counter-spacing: 1rem !default;
 $fd-card-currency-spacing: 0.25rem !default;
@@ -15,7 +15,7 @@ $fd-card-analytics-container-spacing: 2rem !default;
 $fd-card-sections-horizontal-spacing: 2rem !default;
 $fd-card-sections-vertical-spacing: 1.75rem !default;
 $fd-card-content-avatar-text-spacing: 0.5rem !default;
-$fd-card-default-body-background-color: var(--sapTile_Background) !default;
+$fd-card-default-body-background-color: var(--fdCard_Background_Color) !default;
 $fd-card-header-outline-offset: 0.0625rem !default;
 
 @mixin line-clamp($lines: 2) {
@@ -40,6 +40,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       left: $fd-card-header-outline-offset;
       right: $fd-card-header-outline-offset;
       bottom: $fd-card-header-outline-offset * 2;
+      border-radius: $fd-card-header-border-radius $fd-card-header-border-radius 0 0;
       z-index: 3;
     }
   }
@@ -49,13 +50,13 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   @include fd-reset();
   @include fd-flex(column);
 
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   position: relative;
   background: $fd-card-default-body-background-color;
   box-shadow: var(--fdCard_Box_Shadow);
-  border-radius: var(--sapElement_BorderCornerRadius);
-  border: 0.0625rem solid var(--sapTile_BorderColor);
+  border-radius: var(--fdCard_Border_Radius);
+  border: var(--fdCard_Border);
 
   &__header {
     @include fd-reset();
@@ -111,6 +112,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
         &::before {
           top: $fd-card-header-outline-offset * 2;
           bottom: $fd-card-header-outline-offset;
+          border-radius: 0 0 $fd-card-header-border-radius $fd-card-header-border-radius;
         }
       }
     }
@@ -171,14 +173,12 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
   &__counter.#{$object-status} {
     font-size: var(--sapFontSmallSize);
-    margin-left: $fd-card-title-counter-spacing;
-    margin-top: 0.188rem;
-    margin-right: 0;
+    text-align: right;
+    margin: var(--fdCard_Counter_Margin);
     white-space: nowrap;
 
     @include fd-rtl() {
-      margin-left: 0;
-      margin-right: $fd-card-title-counter-spacing;
+      margin: var(--fdCard_Counter_Margin_RTL);
     }
   }
 
@@ -381,11 +381,43 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   }
 
   &--table {
-    border: hidden;
-
     &.#{$block}--compact {
       .#{$block}__content {
         padding-bottom: 0.5rem;
+      }
+    }
+
+    .#{$block}__content {
+      .#{$fd-namespace}-table {
+        &__header {
+          border-right: none;
+          border-left: none;
+        }
+
+        &__body {
+          border: none;
+
+          tr:last-child {
+            td:first-child {
+              border-bottom-left-radius: $fd-card-header-border-radius;
+            }
+
+            td:last-child {
+              border-bottom-right-radius: $fd-card-header-border-radius;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--list {
+    .#{$block}__content {
+      .#{$fd-namespace}-list {
+        &__item:last-child {
+          border-bottom-left-radius: $fd-card-header-border-radius;
+          border-bottom-right-radius: $fd-card-header-border-radius;
+        }
       }
     }
   }
