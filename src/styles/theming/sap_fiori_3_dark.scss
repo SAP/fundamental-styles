@@ -228,6 +228,8 @@
 
   /* Grid List */
   --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
+  --fdGrid_List_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdGrid_List_Item_Toolbar_Border_Width: 0.0625rem;
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.0625rem;
