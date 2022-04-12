@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.25 (2022-04-12)
+
+
+### Bug Fixes
+
+* **styles:** added missing style imports ([#3322](https://github.com/SAP/fundamental-styles/issues/3322)) ([85c88ef](https://github.com/SAP/fundamental-styles/commit/85c88ef1a9cee7634df77d6705664f392bf376a2))
+
 ## 0.24.0-rc.24 (2022-04-10)
 
 ## 0.24.0-rc.23 (2022-04-10)
