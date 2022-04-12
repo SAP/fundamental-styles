@@ -76,13 +76,4 @@
   --fdSwitch_Compact_Semantic_Handle_Offset: -0.8125rem;
   --fdSwitch_Compact_Semantic_Active_Handle_Offset: var(--fdSwitch_Compact_Active_Handle_Offset);
   --fdSwitch_Compact_Semantic_Active_Handle_Offset_Rtl: var(--fdSwitch_Compact_Handle_Offset);
-
-  // Dynamic Page Layout
-  --fdDynamicPage_Title_Color: var(--sapObjectHeader_Title_TextColor);
-  --fdDynamicPage_Title_Font_Size: var(--sapObjectHeader_Title_FontSize);
-  --fdDynamicPage_Title_Collapsed_Font_Size: var(--sapObjectHeader_Title_SnappedFontSize);
-  --fdDynamicPage_Title_Font_Family: var(--sapObjectHeader_Title_FontFamily);
-  --fdDynamicPage_Subtitle_Color: var(--sapObjectHeader_Subtitle_TextColor);
-  --fdDynamicPage_Button_Pin_Background: var(--sapButton_Hover_Background);
-  --fdDynamicPage_Button_Pin_Border: 0.0625rem solid var(--sapButton_BorderColor);
 }
