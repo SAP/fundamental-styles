@@ -9,7 +9,7 @@ function pluginCreator(opts) {
 
             return {
                 OnceExit(css) {
-                    cleancss.minify(css.toString(), (err, min) => {
+                    return cleancss.minify(css.toString(), (err, min) => {
                         if (err) {
                             throw new Error(err.join('\n'));
                         }

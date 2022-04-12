@@ -1,6 +1,4 @@
 const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-// const postcssClean = require('postcss-clean');
 const postcssBanner = require('postcss-banner');
 const postcssNormalizeCharset = require('postcss-normalize-charset');
 const postcssCustomProperties = require('postcss-custom-properties'); //ie11 fallbacks
@@ -8,18 +6,25 @@ const postcssImport = require('postcss-import');
 const postcssRemoveFonts = require('./postcss-remove-fonts.js');
 const packageVersion = require('../package.json').version;
 const year = new Date().getFullYear();
-const pluginCreator = require('../scripts/postCssCleaner.js');
+const postcssCleaner = require('../scripts/postCssCleaner.js');
+const cssnano = require('cssnano');
 
-const minify = cssnano({
-    preset: 'default',
-    mergeLonghand: false, // https://github.com/cssnano/cssnano/issues/675
-    mergeRules: false // https://github.com/cssnano/cssnano/issues/730
-});
-
-const beautify = pluginCreator({
-    format: 'beautify',
+const cleanCss = postcssCleaner({
+    format: false,
     level: 2
 });
+const minify =
+    process.env.NODE_ENV === 'production'
+        ? cssnano({
+            preset: [
+                'default',
+                {
+                    mergeLonghand: false, // https://github.com/cssnano/cssnano/issues/675
+                    mergeRules: false // https://github.com/cssnano/cssnano/issues/730
+                }
+            ]
+        })
+        : null;
 
 module.exports = {
     inline: false,
@@ -41,7 +46,7 @@ Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blo
             important: true
         }),
         postcssNormalizeCharset(),
-        process.env.NODE_ENV === 'production' ? minify : beautify
-        // beautify
+        cleanCss,
+        minify
     ]
 };
