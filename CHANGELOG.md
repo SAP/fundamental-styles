@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.27 (2022-04-12)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Card ([#3262](https://github.com/SAP/fundamental-styles/issues/3262)) ([b2043a9](https://github.com/SAP/fundamental-styles/commit/b2043a98986faf8f67d0a7c25536d5ae9827e66e))
+
 ## 0.24.0-rc.26 (2022-04-12)
 
 
