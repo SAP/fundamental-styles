@@ -1,0 +1,54 @@
+:root {
+  /* Base Input */
+  --fdInput_Text_Shadow: none;
+  --fdInput_State_Text_Style: italic;
+  --fdInput_State_Font_Weight: bold;
+  --fdInput_State_Border_Type: dashed;
+  --fdInput_Base_Border_Style: solid;
+  --fdInput_Error_Border_Style: dashed;
+  --fdInput_Warning_Border_Style: dashed;
+  --fdInput_Success_Border_Style: solid;
+  --fdInput_Information_Border_Style: dashed;
+  --fdInput_ReadOnly_Border_Style: solid;
+  --fdInput_Error_Hover_Background: var(--sapField_InvalidBackground);
+  --fdInput_Warning_Hover_Background: var(--sapField_WarningBackground);
+  --fdInput_Success_Hover_Background: var(--sapField_SuccessBackground);
+
+  /* Hovers */
+  --fdInput_Information_Hover_Background: var(--sapField_InformationBackground);
+  --fdInput_Interaction_Hover_Shadow: none;
+  --fdInput_Error_Hover_Shadow: none;
+  --fdInput_Warning_Hover_Shadow: none;
+  --fdInput_Success_Hover_Shadow: none;
+  --fdInput_Information_Hover_Shadow: none;
+
+  /* Focus */
+  --fdInput_Outline_Offset: -0.25rem;
+  --fdInput_Outline_FocusStyle: var(--sapContent_FocusStyle);
+  --fdInput_Outline_BaseColor: var(--sapContent_FocusColor);
+  --fdInput_Outline_ErrorColor: var(--sapContent_FocusColor);
+  --fdInput_Outline_WarningColor: var(--sapContent_FocusColor);
+  --fdInput_Outline_SuccessColor: var(--sapContent_FocusColor);
+  --fdInput_Outline_InformationColor: var(--sapContent_FocusColor);
+  --fdInput_Base_Focus_Background: var(--sapField_Background);
+  --fdInput_Error_Focus_Background: var(--sapField_InvalidBackground);
+  --fdInput_Warning_Focus_Background: var(--sapField_WarningBackground);
+  --fdInput_Success_Focus_Background: var(--sapField_SuccessBackground);
+  --fdInput_Information_Focus_Background: var(--sapField_InformationBackground);
+  --fdInput_Readonly_Focus_Background: var(--sapField_ReadOnly_Background);
+
+  /* Input Group */
+  --fdInputGroup_Text_Shadow: none;
+  --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) var(--sapList_SelectionBorderColor);
+  --fdInputGroup_Focus_Border_Radius: 0;
+  --fdInputGroup_Focus_Border_Style: none;
+
+  /* Select */
+  --fdSelect_Text_Shadow: none;
+  --fdSelect_Button_Interractive_SideBorder: solid 0.0625rem var(--sapField_BorderColor);
+  --fdSelect_Outline_FocusStyle: none;
+  --fdSelect_Focus_Border_Offset: 0.1875rem;
+
+  /* Step Input */
+  --fdStepInput_Focus_Border_Offset: 0.0625rem;
+}
