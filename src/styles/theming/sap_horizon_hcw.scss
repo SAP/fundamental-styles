@@ -441,4 +441,9 @@
   --fdButton_Menu_Separator_Display: none;
   --fdButton_Menu_Transparent_Border_Width: 0;
   --fdButton_Menu_Transparent_Separator_Display: none;
+
+  /** Object List */
+  --fdObject_List_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdObject_List_Title_Font_Weight: semibold;
+  --fdObject_List_Number_Font_Size: 1.25rem;
 }

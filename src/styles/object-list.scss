@@ -4,9 +4,8 @@
 
 $block: #{$fd-namespace}-object-list;
 
-$fd-object-list-with-padding-value-half: 0.5rem;
-$fd-object-list-with-padding-value-one: 1rem;
-$fd-object-list-with-value-half: 0.75rem;
+$fd-object-list-with-padding-big: 1rem;
+$fd-object-list-with-padding-small: 0.75rem;
 $fd-object-list-font-color: var(--sapContent_LabelColor);
 
 @mixin fd-object-list-text-align($align) {
@@ -19,7 +18,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
 
 .#{$block} {
   &__item {
-    @include padding-top-bottom($fd-object-list-with-padding-value-one);
+    @include padding-top-bottom($fd-object-list-with-padding-big);
 
     height: 100%;
 
@@ -36,6 +35,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
         .#{$fd-namespace}-object-status__text,
         .#{$fd-namespace}-object-status__icon {
           color: var(--sapList_Active_TextColor);
+          text-shadow: none;
         }
       }
     }
@@ -48,7 +48,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
     width: 100%;
     max-width: 100%;
     color: $fd-object-list-font-color;
-    padding-bottom: $fd-object-list-with-value-half;
+    padding-bottom: $fd-object-list-with-padding-small;
   }
 
   &__container {
@@ -65,7 +65,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
     display: flex;
 
     &-left:not(:first-child) {
-      @include fd-set-margin-left($fd-object-list-with-value-half);
+      @include fd-set-margin-left($fd-object-list-with-padding-small);
     }
   }
 
@@ -78,7 +78,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
 
   &__header-right {
     @include fd-reset();
-    @include fd-set-padding-left($fd-object-list-with-padding-value-one);
+    @include fd-set-padding-left($fd-object-list-with-padding-big);
     @include fd-object-list-text-align(right);
 
     width: 40%;
@@ -102,7 +102,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
     @include fd-ellipsis();
 
     width: 50%;
-    padding: $fd-object-list-with-padding-value-half;
+    padding: 0.5rem 0.5rem 0 0.5rem;
   }
 
   &__row-left {
@@ -132,7 +132,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
 
   &__object-number {
     .#{$fd-namespace}-object-number__text {
-      font-size: 1.375rem;
+      font-size: var(--fdObject_List_Number_Font_Size);
       display: block;
 
       &::after {
@@ -145,7 +145,9 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
     .#{$fd-namespace}-object-identifier__title {
       @include line-clamp($lines: 2);
 
-      font-size: var(--sapFontHeader4Size);
+      font-size: var(--fdObject_List_Title_Font_Size);
+      font-weight: var(--fdObject_List_Title_Font_Weight);
+      color: var(--sapGroup_TitleTextColor);
       line-height: 1.5;
     }
   }
