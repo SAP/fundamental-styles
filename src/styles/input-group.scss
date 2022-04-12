@@ -216,6 +216,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     z-index: auto !important;
     position: static !important;
 
+    @include fd-hover() {
+      background-color: var(--fdInputGroup_Button_Hover_BackgroundColor);
+    }
+
     @include fd-focus() {
       @include buttonFocus() {
         outline-color: var(--sapField_Hover_BorderColor);

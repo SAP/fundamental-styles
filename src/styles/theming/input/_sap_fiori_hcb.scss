@@ -40,15 +40,18 @@
   /* Input Group */
   --fdInputGroup_Text_Shadow: 0 0 0.125rem #000;
   --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) var(--sapList_SelectionBorderColor);
+  --fdInputGroup_Button_Hover_BackgroundColor: var(--sapButton_Hover_Background);
   --fdInputGroup_Focus_Border_Radius: 0;
   --fdInputGroup_Focus_Border_Style: none;
 
   /* Select */
   --fdSelect_Text_Shadow: 0 0 0.125rem #000;
   --fdSelect_Button_Interractive_SideBorder: solid 0.0625rem var(--sapField_BorderColor);
+  --fdSelect_Button_Hover_BackgroundColor: var(--sapButton_Lite_Hover_Background);
   --fdSelect_Outline_FocusStyle: none;
   --fdSelect_Focus_Border_Offset: 0.1875rem;
 
   /* Step Input */
   --fdStepInput_Focus_Border_Offset: 0.0625rem;
+  --fdStepInput_Button_Hover_Background: var(--sapButton_Hover_Background);
 }

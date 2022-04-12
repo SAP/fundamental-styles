@@ -65,6 +65,10 @@ $block: #{$fd-namespace}-step-input;
       margin: 0;
     }
 
+    @include fd-hover() {
+      background-color: var(--fdStepInput_Button_Hover_Background);
+    }
+
     @include fd-focus() {
       outline: none;
 

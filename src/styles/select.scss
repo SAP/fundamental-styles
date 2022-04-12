@@ -50,7 +50,7 @@ $block: #{$fd-namespace}-select;
       .#{$block}__button {
         @include fd-select-button-border();
 
-        background-color: var(--sapButton_Lite_Hover_Background);
+        background-color: var(--fdSelect_Button_Hover_BackgroundColor);
       }
     }
 

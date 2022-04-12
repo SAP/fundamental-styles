@@ -310,6 +310,14 @@
       var(--fdInput_Outline_WarningColor)
     );
   }
+
+  @include fd-readonly() {
+    @include fd-input-focus(
+      var(--sapField_ReadOnly_Background),
+      var(--fdInput_Outline_Offset),
+      var(--fdInput_Outline_BaseColor)
+    );
+  }
 }
 
 @mixin fd-form-input-pseudo-focus($offset, $borderRadius) {
@@ -395,22 +403,22 @@
 }
 
 @mixin fd-form-input-expanded() {
-  background-color: var(--fdInput_Base_Focus_Background);
+  background: var(--fdInput_Base_Focus_Background);
 
   &.is-success {
-    background-color: var(--fdInput_Success_Focus_Background);
+    background: var(--fdInput_Success_Focus_Background);
   }
 
   &.is-error {
-    background-color: var(--fdInput_Error_Focus_Background);
+    background: var(--fdInput_Error_Focus_Background);
   }
 
   &.is-information {
-    background-color: var(--fdInput_Information_Focus_Background);
+    background: var(--fdInput_Information_Focus_Background);
   }
 
   &.is-warning,
   &.is-alert {
-    background-color: var(--fdInput_Warning_Focus_Background);
+    background: var(--fdInput_Warning_Focus_Background);
   }
 }
