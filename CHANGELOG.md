@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.26 (2022-04-12)
+
+
+### Features
+
+* **styles:** add Horizon theming for Page[ci visual] ([#3298](https://github.com/SAP/fundamental-styles/issues/3298)) ([b5bdd03](https://github.com/SAP/fundamental-styles/commit/b5bdd03c522f47d73674abb9a59515b5242b24e6))
+
 ## 0.24.0-rc.25 (2022-04-12)
 
 
