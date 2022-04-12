@@ -10,7 +10,7 @@ const postcssCleaner = require('../scripts/postCssCleaner.js');
 const cssnano = require('cssnano');
 
 const cleanCss = postcssCleaner({
-    format: false,
+    format: 'beautify',
     level: 2
 });
 const minify =
