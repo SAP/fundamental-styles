@@ -5,10 +5,12 @@ set -e
 PACKAGE_THEMING_PREVIEW=theming-preview
 PACKAGE_FN=fn
 PACKAGE_FN_ICONS=fn-icons
+PACKAGE_COMMON_CSS=common-css
 PACKAGE_PREFIX=@fundamental-styles
 DIST_THEMING_PREVIEW=dist-theming
 DIST_FN=dist-fn
 DIST_FN_ICONS=dist-fn-icons
+DIST_COMMON_CSS=dist-common-css
 
 git config --global user.email "fundamental@sap.com"
 git config --global user.name "fundamental-bot"
@@ -38,6 +40,14 @@ cd ..
 echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN_ICONS}"
 
 cd ${DIST_FN_ICONS}
+ls
+npm publish --tag prerelease
+cd ..
+
+#publish dist-common-css package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_COMMON_CSS}"
+
+cd ${DIST_COMMON_CSS}
 ls
 npm publish --tag prerelease
 cd ..

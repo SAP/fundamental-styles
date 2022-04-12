@@ -8,7 +8,7 @@ $block: #{$fd-namespace}-text;
 
   &::selection {
     color: var(--sapContent_ContrastTextColor);
-    background-color: var(--sapSelectedColor);
+    background-color: var(--fdText_Selected_Background_Color);
   }
 
   &--max-lines {

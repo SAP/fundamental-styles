@@ -34,13 +34,13 @@ export default (manager) => {
 
     return {
         use: (themeName) => {
+            baseVariables[themeName].use();
+            styleVariables[themeName].use();
             if (currentTheme && currentTheme !== themeName) {
                 baseVariables[currentTheme].unuse();
                 styleVariables[currentTheme].unuse();
             }
             currentTheme = themeName;
-            baseVariables[themeName].use();
-            styleVariables[themeName].use();
         }
     };
 };

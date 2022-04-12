@@ -43,7 +43,7 @@ export const Default = () => `
 <p><b>Compact bar with compact elements</b></p>
 <div class="fd-bar">
     <div class="fd-bar__left">
-        <div class="fd-bar__element fd-bar__element--title">
+        <div class="fd-bar__element">
             <h6 class="fd-title fd-title--h6" aria-label="text">TEXT</h6>
         </div>
     </div>
@@ -123,7 +123,7 @@ Default.parameters = {
     docs: {
         iframeHeight: 200,
         description: {
-            story: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn\'t forbid including cozy elements inside (e.g. cozy buttons). Add `--title` modifier class to bar element, if title is first element in bar.'
+            story: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode. Fiori 3 doesn\'t forbid including cozy elements inside (e.g. cozy buttons).'
         }
     }
 };
