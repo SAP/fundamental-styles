@@ -1,4 +1,15 @@
 
+## 0.24.0-rc.29 (2022-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* * Now you should wrap text in element with fd-table__text class to apply text shadow to it
+
+### Bug Fixes
+
+* table text shadow removal ([#3299](https://github.com/SAP/fundamental-styles/issues/3299)) ([69be418](https://github.com/SAP/fundamental-styles/commit/69be418fcdd8b0a5ba15905021fe35fd86b0484b))
+
 ## 0.24.0-rc.28 (2022-04-13)
 
 
