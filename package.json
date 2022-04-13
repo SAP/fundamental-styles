@@ -41,7 +41,7 @@
     "test:update": "npm run build:visual-stories && server-test storybook:ci http-get://localhost:6006 \"npm run storybook:visual:setup -- --updateSnapshot\"",
     "storybook": "npm run storybook:serve",
     "storybook:serve": "start-storybook -p 6006",
-    "storybook:serve:prod": "npm run storybook:prep && cross-env NODE_ENV=production npm run start",
+    "storybook:serve:prod": "cross-env NODE_ENV=production npm run storybook:prep && cross-env NODE_ENV=production npm run start",
     "storybook:ci": "npm run storybook -- --ci --quiet",
     "storybook:prep": "npm run build && npm run build:visual-stories",
     "storybook:static": "rimraf storybook-static && npm run storybook:prep && cross-env STORYBOOK_ENV=docs build-storybook -c .storybook -o storybook-static --docs",
