@@ -1,4 +1,15 @@
 
+## 0.24.0-rc.32 (2022-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** You should apply fd-button fd-button--transparent classes to the months & years items
+
+### Features
+
+* **styles:** add delta theming for Calendar [ci visual] ([#3273](https://github.com/SAP/fundamental-styles/issues/3273)) ([4b548e1](https://github.com/SAP/fundamental-styles/commit/4b548e1e6e24bf858d63168b996f3576c5c2e816))
+
 ## 0.24.0-rc.31 (2022-04-13)
 
 
