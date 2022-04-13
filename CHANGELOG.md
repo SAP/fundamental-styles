@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.28 (2022-04-13)
+
+
+### Bug Fixes
+
+* select min-width fix, overflow fix ([#3295](https://github.com/SAP/fundamental-styles/issues/3295)) ([8fd07b4](https://github.com/SAP/fundamental-styles/commit/8fd07b4c725c5f37d2b1730aa4e54b12970b9a4e))
+
 ## 0.24.0-rc.27 (2022-04-12)
 
 
