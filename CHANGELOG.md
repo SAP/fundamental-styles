@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.30 (2022-04-13)
+
+
+### Features
+
+* **styles:** add delta horizon theming support for Button ([#3264](https://github.com/SAP/fundamental-styles/issues/3264)) ([2153e5e](https://github.com/SAP/fundamental-styles/commit/2153e5e7edbecba106a7cc45878a308bbd786a2a))
+
 ## 0.24.0-rc.29 (2022-04-13)
 
 
