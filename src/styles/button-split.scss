@@ -1,51 +1,87 @@
 @import "./new-settings";
 @import "./mixins";
+@import "./mixins/button/button-helper";
 
 /*!
-.fd-button-split+()
-    .fd-button
+.fd-button-split
+    button
 */
 $block: #{$fd-namespace}-button-split;
-$fd-button-split-corner-radius: var(--sapButton_BorderCornerRadius);
-$fd-button-split-border-width: var(--sapButton_BorderWidth);
-$fd-button-split-margin: 0.125rem * 0.5;
 
-@mixin ltrMode() {
-  > * {
-    &:first-child {
-      margin: 0;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+$split-button-states: (
+  "emphasized": (
+    "padBackground": var(--sapButton_Emphasized_Background),
+    "separatorDisplay": var(--fdButton_Menu_Separator_Display),
+    "separatorBackground": var(--sapButton_Emphasized_TextColor)
+  ),
+  "transparent": (
+    "padBackground": var(--sapButton_Lite_Background),
+    "separatorDisplay": var(--fdButton_Menu_Transparent_Separator_Display),
+    "separatorBackground": var(--sapButton_Lite_TextColor)
+  ),
+  "ghost": (
+    "padBackground": var(--fdButton_Ghost_Background),
+    "separatorDisplay": var(--fdButton_Menu_Separator_Display),
+    "separatorBackground": var(--sapButton_TextColor)
+  ),
+  "positive": (
+    "padBackground": var(--sapButton_Accept_Background),
+    "separatorDisplay": var(--fdButton_Menu_Separator_Display),
+    "separatorBackground": var(--sapButton_Accept_TextColor)
+  ),
+  "negative": (
+    "padBackground": var(--sapButton_Reject_Background),
+    "separatorDisplay": var(--fdButton_Menu_Separator_Display),
+    "separatorBackground": var(--sapButton_Reject_TextColor)
+  ),
+  "attention": (
+    "padBackground": var(--sapButton_Attention_Background),
+    "separatorDisplay": var(--fdButton_Menu_Separator_Display),
+    "separatorBackground": var(--sapButton_Attention_TextColor)
+  )
+);
 
-    &:nth-child(2) {
-      margin: 0;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      &:not(.#{$fd-namespace}-button--transparent) {
-        border-left-width: 0;
-      }
+@mixin fd-split-button-border($width: var(--fdButton_Menu_Border_Width)) {
+  &:nth-of-type(2) {
+    border-left-width: $width;
+
+    @include fd-rtl() {
+      border-left-width: var(--sapButton_BorderWidth);
+      border-right-width: $width;
     }
   }
 }
 
-@mixin rtlMode() {
-  > * {
-    &:first-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: $fd-button-split-corner-radius;
-      border-bottom-right-radius: $fd-button-split-corner-radius;
+@mixin fd-split-button-separator($display, $background) {
+  &:first-of-type:hover + button::after {
+    display: none;
+  }
+
+  &:nth-of-type(2) {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: $display;
+      position: absolute;
+      top: 50%;
+      left: -0.0625rem;
+      width: var(--sapButton_BorderWidth);
+      height: var(--fdButton_Menu_Transparent_Separator_Height);
+      background: $background;
+      transform: translate(0, -50%);
     }
 
-    &:nth-child(2) {
-      border-top-left-radius: $fd-button-split-corner-radius;
-      border-bottom-left-radius: $fd-button-split-corner-radius;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-left-width: $fd-button-split-border-width;
-      &:not(.#{$fd-namespace}-button--transparent) {
-        border-right-width: 0;
+    @include fd-rtl() {
+      &::after {
+        left: auto;
+        right: -0.0625rem;
+      }
+    }
+
+    @include fd-hover() {
+      &::after {
+        display: none;
       }
     }
   }
@@ -53,90 +89,70 @@ $fd-button-split-margin: 0.125rem * 0.5;
 
 .#{$block} {
   @include fd-reset();
+  @include fd-button-pad();
 
   display: inline-flex;
   vertical-align: middle;
   position: relative;
 
-  @include ltrMode();
+  > button {
+    @include fd-split-button-border();
+    @include fd-split-button-separator(var(--fdButton_Menu_Separator_Display), var(--sapButton_TextColor));
 
-  @include fd-rtl() {
-    @include rtlMode();
-  }
+    margin: 0;
 
-  > [class*="--emphasized"] {
-    &:first-child {
-      margin-right: $fd-button-split-margin;
-    }
-
-    @include fd-rtl() {
-      &:first-child {
-        margin-right: 0;
-        margin-left: $fd-button-split-margin;
+    &:first-of-type {
+      @include fd-flex-vertical-center() {
+        justify-content: flex-start;
       }
-    }
-  }
 
-  & > :first-child {
-    @include fd-flex-vertical-center() {
-      justify-content: flex-start;
-    }
+      border-radius: var(--fdButton_Border_Radius_Left);
 
-    .#{$block}__text {
-      display: inline-block;
-    }
-
-    &:hover {
-      .#{$block}__text {
-        color: var(--sapButton_TextColor);
+      @include fd-rtl() {
+        border-radius: var(--fdButton_Border_Radius_Left_RTL);
       }
     }
 
-    &:active {
-      .#{$block}__text {
-        color: var(--sapButton_Selected_TextColor);
+    &:nth-of-type(2) {
+      border-radius: var(--fdButton_Border_Radius_Right);
+
+      @include fd-rtl() {
+        border-radius: var(--fdButton_Border_Radius_Right_RTL);
+      }
+    }
+
+    @include fd-hover() {
+      z-index: 2;
+    }
+  }
+
+  @each $set-name, $props-set in $split-button-states {
+    &--#{$set-name} {
+      @include fd-button-pad(map_get($props-set, "padBackground"));
+
+      > button {
+        @include fd-split-button-separator(map_get($props-set, "separatorDisplay"), map_get($props-set, "separatorBackground"));
       }
     }
   }
 
   &--emphasized {
-    > [class*="--emphasized"] {
-      & > .#{$block}__text {
-        color: var(--sapButton_Emphasized_TextColor);
-        font-weight: bold;
+    > button {
+      &:first-of-type {
+        @include fd-set-margin-right(var(--fdButton_Menu_Emphasized_Margin));
       }
 
-      &:hover {
-        & > .#{$block}__text {
-          color: var(--sapButton_Emphasized_Hover_TextColor);
-        }
-      }
-
-      &:active {
-        & > .#{$block}__text {
-          color: var(--sapButton_Selected_TextColor);
+      &:nth-of-type(2) {
+        @include fd-rtl() {
+          border-left-width: var(--fdButton_Emphasized_Border_Width);
         }
       }
     }
   }
 
   &--transparent {
-    > [class*="--transparent"] {
-      & > .#{$block}__text {
-        color: var(--sapButton_TextColor);
-      }
-
-      &:hover {
-        & > .#{$block}__text {
-          color: var(--sapButton_TextColor);
-        }
-      }
-
-      &:active {
-        & > .#{$block}__text {
-          color: var(--sapButton_Selected_TextColor);
-        }
-      }
+    > button {
+      @include fd-split-button-border(var(--fdButton_Menu_Transparent_Border_Width));
     }
   }
 
@@ -144,12 +160,12 @@ $fd-button-split-margin: 0.125rem * 0.5;
     @include fd-reset();
     @include fd-ellipsis();
 
-    color: var(--sapButton_TextColor);
-    max-width: 9.75rem;
+    color: inherit;
     display: block;
+    max-width: 9.75rem; // 12rem - 2.25rem
 
     &--compact {
-      max-width: 10rem;
+      max-width: 10rem; // 12rem - 2rem
     }
   }
 }

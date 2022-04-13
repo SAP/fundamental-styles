@@ -1,75 +1,55 @@
 @import "./new-settings";
 @import "./mixins";
+@import "./mixins/button/button-helper";
 
 /*!
-.fd-segmented-button+()
-    .fd-button
+.fd-segmented-button
+    button
 */
 $block: #{$fd-namespace}-segmented-button;
 
-@mixin styleButtonContent() {
-  @content;
-}
-
 .#{$block} {
   @include fd-reset();
+  @include fd-button-pad();
 
   display: inline-flex;
   vertical-align: middle;
 
-  & > * {
+  button {
     margin: 0;
 
-    &:not(:first-child):not(:last-child) {
-      @include styleButtonContent() {
-        border-radius: 0;
-      }
-    }
-
-    &:not(:last-child) {
-      @include styleButtonContent() {
-        border-right-width: 0;
-      }
+    @include fd-hover() {
+      z-index: 2;
     }
 
     &:first-child {
-      @include styleButtonContent() {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-      }
+      border-radius: var(--fdButton_Border_Radius_Left);
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: var(--fdButton_Segmented_Middle_Border_Radius);
     }
 
     &:last-child {
-      @include styleButtonContent() {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      }
+      border-radius: var(--fdButton_Border_Radius_Right);
+    }
+
+    &:not(:last-child) {
+      border-right-width: var(--fdButton_Segmented_Border_Width);
     }
 
     @include fd-rtl() {
-      &:not(:first-child) {
-        @include styleButtonContent() {
-          border-right: none;
-        }
+      &:first-child {
+        border-radius: var(--fdButton_Border_Radius_Left_RTL);
       }
 
       &:last-child {
-        @include styleButtonContent() {
-          border-top-left-radius: var(--sapButton_BorderCornerRadius);
-          border-bottom-left-radius: var(--sapButton_BorderCornerRadius);
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-        }
+        border-radius: var(--fdButton_Border_Radius_Right_RTL);
       }
 
-      &:first-child {
-        @include styleButtonContent() {
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-          border-top-right-radius: var(--sapButton_BorderCornerRadius);
-          border-bottom-right-radius: var(--sapButton_BorderCornerRadius);
-          border-right-width: 1px;
-        }
+      &:not(:last-child) {
+        border-left-width: var(--fdButton_Segmented_Border_Width);
+        border-right-width: var(--sapButton_BorderWidth);
       }
     }
   }

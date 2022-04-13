@@ -15,15 +15,17 @@ $block: #{$fd-namespace}-table;
   @mixin fd-table-active() {
     background-color: var(--sapList_Active_Background);
     color: var(--sapList_Active_TextColor);
-    text-shadow: none;
 
     .#{$block}__cell {
       border-bottom-color: var(--sapList_SelectionBorderColor);
-      text-shadow: none;
 
       @include fd-hover() {
         background-color: var(--sapList_Active_Background);
       }
+    }
+
+    .#{$block}__text {
+      text-shadow: none;
     }
 
     .#{$block}__icon {
@@ -194,6 +196,7 @@ $block: #{$fd-namespace}-table;
 
     word-break: break-word;
     white-space: normal;
+    text-shadow: var(--sapContent_TextShadow);
 
     &--no-wrap {
       white-space: nowrap;
@@ -202,7 +205,6 @@ $block: #{$fd-namespace}-table;
 
   &__cell {
     text-align: left;
-    text-shadow: var(--sapContent_TextShadow);
     height: $fd-table-cozy-cell-height;
     padding: 0 $fd-table-cell-padding;
     color: inherit;

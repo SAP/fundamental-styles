@@ -1,4 +1,43 @@
 
+## 0.24.0-rc.30 (2022-04-13)
+
+
+### Features
+
+* **styles:** add delta horizon theming support for Button ([#3264](https://github.com/SAP/fundamental-styles/issues/3264)) ([2153e5e](https://github.com/SAP/fundamental-styles/commit/2153e5e7edbecba106a7cc45878a308bbd786a2a))
+
+## 0.24.0-rc.29 (2022-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* * Now you should wrap text in element with fd-table__text class to apply text shadow to it
+
+### Bug Fixes
+
+* table text shadow removal ([#3299](https://github.com/SAP/fundamental-styles/issues/3299)) ([69be418](https://github.com/SAP/fundamental-styles/commit/69be418fcdd8b0a5ba15905021fe35fd86b0484b))
+
+## 0.24.0-rc.28 (2022-04-13)
+
+
+### Bug Fixes
+
+* select min-width fix, overflow fix ([#3295](https://github.com/SAP/fundamental-styles/issues/3295)) ([8fd07b4](https://github.com/SAP/fundamental-styles/commit/8fd07b4c725c5f37d2b1730aa4e54b12970b9a4e))
+
+## 0.24.0-rc.27 (2022-04-12)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Card ([#3262](https://github.com/SAP/fundamental-styles/issues/3262)) ([b2043a9](https://github.com/SAP/fundamental-styles/commit/b2043a98986faf8f67d0a7c25536d5ae9827e66e))
+
+## 0.24.0-rc.26 (2022-04-12)
+
+
+### Features
+
+* **styles:** add Horizon theming for Page[ci visual] ([#3298](https://github.com/SAP/fundamental-styles/issues/3298)) ([b5bdd03](https://github.com/SAP/fundamental-styles/commit/b5bdd03c522f47d73674abb9a59515b5242b24e6))
+
 ## 0.24.0-rc.25 (2022-04-12)
 
 

@@ -1,6 +1,7 @@
 @import "../icons/settings";
 @import "./input/sap_fiori_hcw";
 @import "./common/switch/sap_fiori";
+@import "./common/button/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
@@ -180,10 +181,7 @@
   --fdFormHeader_Border_Width: calc(3 * var(--sapList_BorderWidth));
 
   /** Badge on Button */
-  --fdBadgeButton_Border_Color: var(--sapGroup_ContentBorderColor);
-
-  /* Card */
-  --fdCard_Box_Shadow: none;
+  --fdButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
 
   /* Badge */
   --fdBadge_Border_Color: var(--sapContent_ForegroundBorderColor);
@@ -383,6 +381,15 @@
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);
 
+  /** Card */
+  --fdCard_Background_Color: transparent;
+  --fdCard_Box_Shadow: none;
+  --fdCard_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdCard_Header_Border_Bottom: 0.0625rem solid var(--sapTile_SeparatorColor);
+  --fdCard_Border: 0.0625rem solid var(--sapTile_BorderColor);
+  --fdCard_Counter_Margin: 0.188rem 0 0 1rem;
+  --fdCard_Counter_Margin_RTL: 0.188rem 1rem 0 0;
+
   /** Shellbar */
   --fdShellbar_Height: 2.75rem;
   --fdShellbar_Shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
@@ -406,4 +413,11 @@
   --fdBar_Left_Area_Padding_Right: 0;
   --fdBar_Middle_Area_Padding_X: 0.5rem;
   --fdBar_Right_Area_Padding_Left: 0;
+
+  /** Menu Button */
+  --fdButton_Menu_Emphasized_Margin: 0;
+  --fdButton_Menu_Border_Width: 0;
+  --fdButton_Menu_Separator_Display: none;
+  --fdButton_Menu_Transparent_Border_Width: 0;
+  --fdButton_Menu_Transparent_Separator_Display: none;
 }
