@@ -300,80 +300,67 @@ MenuButton.parameters = {
 
 export const SplitMenuButton = () => `
     <div class="fddocs-button-container">
+        <div class="fd-button-split fd-button-split--emphasized fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--emphasized" aria-label="button">
+            <span class="fd-button-split__text">Emphasized</span>
+          </button>
+          <button class="fd-button fd-button--emphasized" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
         <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
           <button class="fd-button" aria-label="button">
-            <span class="fd-button-split__text">Button with a big amount of text</span>
+            <span class="fd-button-split__text">Standard</span>
           </button>
-          <button class="fd-button" aria-controls="t4c0o273" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true"
-          id="t4c0o273">
-            <nav class="fd-menu">
-                <ul class="fd-menu__list fd-menu__list--no-shadow">
-                  <li class="fd-menu__item">
-                      <a class="fd-menu__link" role="button" href="#">
-                          <span class="fd-menu__title">Add to list</span>
-                      </a>
-                  </li>
-                  <li class="fd-menu__item">
-                      <a class="fd-menu__link" role="button" href="#">
-                          <span class="fd-menu__title">Save for later</span>
-                      </a>
-                  </li>
-                </ul>
-            </nav>
-          </div>
+          <button class="fd-button" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
         </div>
 
-        <div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--emphasized" aria-label="button">
-            <span class="fd-button-split__text">Button with text</span>
-          </button>
-          <button class="fd-button fd-button--emphasized" aria-controls="t4c0o2732"
-          aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true"
-            id="t4c0o2732">
-            <nav class="fd-menu">
-                <ul class="fd-menu__list fd-menu__list--no-shadow">
-                  <li class="fd-menu__item">
-                      <a class="fd-menu__link" role="button" href="#">
-                          <span class="fd-menu__title">Add to list</span>
-                      </a>
-                  </li>
-                  <li class="fd-menu__item">
-                      <a class="fd-menu__link" role="button" href="#">
-                          <span class="fd-menu__title">Save for later</span>
-                      </a>
-                  </li>
-                </ul>
-            </nav>
-          </div>
-        </div>
-
-        <div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
           <button class="fd-button fd-button--transparent" aria-label="button">
-            <span class="fd-button-split__text">
-                Button with text
-            </span>
-         </button>
-          <button class="fd-button fd-button--transparent" aria-controls="t4c0o27322" aria-haspopup="true" aria-expanded="false" aria-label="More"><i class="sap-icon--slim-arrow-down"></i></button>
-          <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"  aria-hidden="true"
-            id="t4c0o27322">
-            <nav class="fd-menu">
-                <ul class="fd-menu__list fd-menu__list--no-shadow">
-                  <li class="fd-menu__item">
-                      <a class="fd-menu__link" role="button" href="#">
-                          <span class="fd-menu__title">Add to list</span>
-                      </a>
-                  </li>
-                  <li class="fd-menu__item">
-                      <a class="fd-menu__link" role="button" href="#">
-                          <span class="fd-menu__title">Save for later</span>
-                      </a>
-                  </li>
-                </ul>
-            </nav>
-          </div>
+            <span class="fd-button-split__text">Transparent</span>
+          </button>
+          <button class="fd-button fd-button--transparent" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--ghost fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--ghost" aria-label="button">
+            <span class="fd-button-split__text">Ghost</span>
+          </button>
+          <button class="fd-button fd-button--ghost" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--positive fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--positive" aria-label="button">
+            <span class="fd-button-split__text">Positive</span>
+          </button>
+          <button class="fd-button fd-button--positive" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--negative fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--negative" aria-label="button">
+            <span class="fd-button-split__text">Negative</span>
+          </button>
+          <button class="fd-button fd-button--negative" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--attention fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--attention" aria-label="button">
+            <span class="fd-button-split__text">Attention</span>
+          </button>
+          <button class="fd-button fd-button--attention" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
         </div>
     </div>
 `;

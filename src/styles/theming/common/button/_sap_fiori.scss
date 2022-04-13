@@ -1,0 +1,33 @@
+:root {
+  --fdButton_Ghost_Background: var(--sapButton_Lite_Background);
+  --fdButton_Outline_Contrast: var(--sapContent_ContrastFocusColor);
+  --fdButton_Outline_Offset: -0.1875rem;
+
+  /** Shadows */
+  --fdButton_Hover_Shadow: none;
+  --fdButton_Positive_Hover_Shadow: none;
+  --fdButton_Negative_Hover_Shadow: none;
+  --fdButton_Attention_Hover_Shadow: none;
+
+  /** Badge */
+  --fdButton_Badge_Border_Color: var(--sapContent_BadgeBackground);
+
+  /** Segmented & Menu */
+  --fdButton_Border_Radius_Left: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+  --fdButton_Border_Radius_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Border_Radius_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
+  --fdButton_Border_Radius_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
+
+  /** Segmented */
+  --fdButton_Segmented_Pad_Display: none;
+  --fdButton_Segmented_Border_Width: 0;
+  --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
+
+  /** Menu */
+  --fdButton_Menu_Emphasized_Margin: 0.0625rem;
+  --fdButton_Menu_Border_Width: 0;
+  --fdButton_Menu_Separator_Display: none;
+  --fdButton_Menu_Transparent_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Menu_Transparent_Separator_Display: block;
+  --fdButton_Menu_Transparent_Separator_Height: 100%;
+}

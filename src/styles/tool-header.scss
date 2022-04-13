@@ -133,7 +133,8 @@ $fd-tool-header-object-status-semantic-values: (
     color: var(--sapShell_TextColor);
   }
 
-  .#{$block}__button {
+  /** TODO: Refactor after button styles refactoring */
+  button.#{$block}__button {
     color: var(--sapShell_InteractiveTextColor);
 
     &:hover {
@@ -160,7 +161,7 @@ $fd-tool-header-object-status-semantic-values: (
       }
     }
 
-    &-text {
+    .#{$block}__button-text {
       @include fd-media-sm() {
         display: none;
       }

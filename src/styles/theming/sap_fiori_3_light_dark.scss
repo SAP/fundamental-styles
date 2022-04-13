@@ -1,4 +1,5 @@
 @import "./common/switch/sap_fiori";
+@import "./common/button/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -190,9 +191,6 @@
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
-
-  /** Badge on Button */
-  --fdBadgeButton_Border_Color: var(--sapContent_BadgeBackground);
 
   /* Card */
   --fdCard_Box_Shadow: var(--sapContent_Shadow0);
