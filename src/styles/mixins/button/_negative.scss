@@ -1,5 +1,5 @@
 @mixin negative() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Reject_TextColor),
     var(--sapButton_Reject_BorderColor),
     var(--sapButton_Reject_Background)
@@ -7,15 +7,16 @@
 }
 
 @mixin negativeHover() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Reject_Hover_TextColor),
     var(--sapButton_Reject_Hover_BorderColor),
-    var(--sapButton_Reject_Hover_Background)
+    var(--sapButton_Reject_Hover_Background),
+    var(--fdButton_Negative_Hover_Shadow)
   );
 }
 
 @mixin negativePressed() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Reject_Active_TextColor),
     var(--sapButton_Reject_Active_BorderColor),
     var(--sapButton_Reject_Active_Background)
@@ -24,25 +25,18 @@
 
 // Toggled state
 @mixin negativeToggled() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Reject_Selected_TextColor),
     var(--sapButton_Reject_Selected_BorderColor),
     var(--sapButton_Reject_Selected_Background)
   );
 }
 
-@mixin negativeToggledHover() {
-  @include applyColors(
+@mixin negativeToggledHoverPressed() {
+  @include fd-button-apply-colors(
     var(--sapButton_Reject_Selected_TextColor),
     var(--sapButton_Reject_Selected_Hover_BorderColor),
-    var(--sapButton_Reject_Selected_Hover_Background)
-  );
-}
-
-@mixin negativeToggledPressed() {
-  @include applyColors(
-    var(--sapButton_Reject_Selected_TextColor),
-    var(--sapButton_Reject_Selected_Hover_BorderColor),
-    var(--sapButton_Reject_Selected_Hover_Background)
+    var(--sapButton_Reject_Selected_Hover_Background),
+    var(--fdButton_Negative_Hover_Shadow)
   );
 }

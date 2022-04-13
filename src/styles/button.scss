@@ -8,7 +8,7 @@
 @import './mixins/button/ghost';
 @import './mixins/button/positive';
 @import './mixins/button/emphasized';
-@import './mixins/button/button-transparent';
+@import './mixins/button/transparent';
 
 $fd-button-border-width: var(--sapButton_BorderWidth);
 $fd-button-icon-font-size: 1rem;
@@ -29,30 +29,13 @@ $fd-button-compact-line-height: calc(#{$fd-button-compact-height} - 2 * #{$fd-bu
 
 $fd-menu-button-max-width: 12rem;
 
-// anim
-$fd-button-transition-params: $fd-animation-speed ease-in !default;
-
 $block: #{$fd-namespace}-button;
 
-@mixin isDisabled() {
-  opacity: var(--sapContent_DisabledOpacity);
-  cursor: not-allowed;
-}
-
-@mixin iconSize($size) {
-  width: $size;
-  min-width: $size;
-  height: $size;
-  font-size: $size;
-  line-height: $size;
-  font-family: 'SAP-icons';
-}
-
-@mixin buttonBase() {
+@mixin fd-button-base() {
   height: $fd-button-height;
   max-height: $fd-button-height;
   min-width: $fd-button-min-width;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: ellipsis;
   position: relative;
   padding-left: $fd-button-padding-x;
@@ -79,13 +62,7 @@ $block: #{$fd-namespace}-button;
   }
 }
 
-@mixin buttonReset() {
-  @include fd-reset();
-  @include fd-button-reset();
-  @include buttonBase();
-}
-
-@mixin compact() {
+@mixin fd-button-compact() {
   // set metrics
   height: $fd-button-compact-height;
   max-height: $fd-button-compact-height;
@@ -101,7 +78,7 @@ $block: #{$fd-namespace}-button;
   }
 }
 
-@mixin menu() {
+@mixin fd-button-menu() {
   max-width: $fd-menu-button-max-width;
   position: relative;
   overflow: hidden;
@@ -111,30 +88,7 @@ $block: #{$fd-namespace}-button;
   align-items: center;
 }
 
-@mixin menu-icon() {
-  > .sap-icon--icon-slim-arrow-down {
-    font-size: var(--sapFontSmallSize);
-  }
-}
-
-@mixin textAlignment() {
-  &-left {
-    text-align: left;
-    justify-content: flex-start;
-  }
-
-  &-right {
-    text-align: right;
-    justify-content: flex-end;
-  }
-
-  &-center {
-    text-align: center;
-    justify-content: center;
-  }
-}
-
-@mixin buttonContainer() {
+@mixin fd-button-default-state() {
   @include standard();
 
   &.#{$block}--toggled {
@@ -145,7 +99,7 @@ $block: #{$fd-namespace}-button;
     @include ghost();
 
     &.#{$block}--toggled {
-      @include ghostToggled();
+      @include standardToggled();
     }
   }
 
@@ -174,13 +128,13 @@ $block: #{$fd-namespace}-button;
   }
 
   &.#{$block}--emphasized {
-    font-weight: bold;
+    font-weight: var(--sapButton_Emphasized_FontWeight);
     border-width: var(--fdButton_Emphasized_Border_Width);
 
     @include emphasized();
 
     &.#{$block}--toggled {
-      @include emphasizedToggled();
+      @include standardToggled();
     }
   }
 
@@ -188,49 +142,40 @@ $block: #{$fd-namespace}-button;
     @include transparent();
 
     &.#{$block}--toggled {
-      @include transparentToggled();
+      @include standardToggled();
     }
   }
 }
 
-@mixin buttonContainerDisabled() {
-  @include standardDisabled();
-  @include buttonContainer();
-}
+@mixin fd-button-focus-state() {
+  @include fd-button-focus(var(--fdButton_Outline_Offset));
 
-@mixin buttonContainerFocus() {
   box-shadow: none;
-
-  @include standardFocus();
 
   &.#{$block}--emphasized {
-    @include standardPressedFocus();
+    outline-color: var(--sapContent_ContrastFocusColor);
+
+    &.#{$block}--toggled {
+      outline-color: var(--fdButton_Outline_Contrast);
+    }
   }
 }
 
-@mixin buttonContainerPressedFocus() {
-  box-shadow: none;
-
+@mixin fd-button-pressed-state() {
   @include standardPressed();
-  @include standardPressedFocus();
+
+  box-shadow: none;
+  outline: none;
 
   &.#{$block}--toggled {
-    @include standardToggledPressed();
-  }
-
-  &.#{$block}--ghost {
-    @include ghostPressed();
-
-    &.#{$block}--toggled {
-      @include ghostToggledPressed();
-    }
+    @include standardToggledHoverPressed();
   }
 
   &.#{$block}--positive {
     @include positivePressed();
 
     &.#{$block}--toggled {
-      @include positiveToggledPressed();
+      @include positiveToggledHoverPressed();
     }
   }
 
@@ -238,7 +183,7 @@ $block: #{$fd-namespace}-button;
     @include negativePressed();
 
     &.#{$block}--toggled {
-      @include negativeToggledPressed();
+      @include negativeToggledHoverPressed();
     }
   }
 
@@ -246,7 +191,7 @@ $block: #{$fd-namespace}-button;
     @include attentionPressed();
 
     &.#{$block}--toggled {
-      @include attentionToggledPressed();
+      @include attentionToggledHoverPressed();
     }
   }
 
@@ -254,33 +199,31 @@ $block: #{$fd-namespace}-button;
     @include emphasizedPressed();
 
     &.#{$block}--toggled {
-      @include emphasizedToggledPressed();
+      @include standardToggledHoverPressed();
+    }
+  }
+
+  &.#{$block}--transparent {
+    @include transparentPressed();
+
+    &.#{$block}--toggled {
+      @include standardToggledHoverPressed();
     }
   }
 }
 
-@mixin buttonContainerHover() {
+@mixin fd-button-hover-state() {
   @include standardHover();
 
-  box-shadow: var(--sapContent_Interaction_Shadow);
-
   &.#{$block}--toggled {
-    @include standardToggledHover();
-  }
-
-  &.#{$block}--ghost {
-    @include ghostHover();
-
-    &.#{$block}--toggled {
-      @include ghostToggledHover();
-    }
+    @include standardToggledHoverPressed();
   }
 
   &.#{$block}--positive {
     @include positiveHover();
 
     &.#{$block}--toggled {
-      @include positiveToggledHover();
+      @include positiveToggledHoverPressed();
     }
   }
 
@@ -288,7 +231,7 @@ $block: #{$fd-namespace}-button;
     @include negativeHover();
 
     &.#{$block}--toggled {
-      @include negativeToggledHover();
+      @include negativeToggledHoverPressed();
     }
   }
 
@@ -296,7 +239,7 @@ $block: #{$fd-namespace}-button;
     @include attentionHover();
 
     &.#{$block}--toggled {
-      @include attentionToggledHover();
+      @include attentionToggledHoverPressed();
     }
   }
 
@@ -304,25 +247,28 @@ $block: #{$fd-namespace}-button;
     @include emphasizedHover();
 
     &.#{$block}--toggled {
-      @include emphasizedToggledHover();
+      @include standardToggledHoverPressed();
+    }
+  }
+
+  &.#{$block}--transparent {
+    @include transparentHover();
+
+    &.#{$block}--toggled {
+      @include standardToggledHoverPressed();
     }
   }
 }
 
-@mixin iconTextMargin() {
-  margin-left: $fd-button-icon-margin !important;
-
-  @include fd-rtl() {
-    margin-left: 0 !important;
-    margin-right: $fd-button-icon-margin !important;
-  }
-}
-
-@mixin iconStyles() {
+@mixin fd-button-icon() {
   > [class*='sap-icon'] {
-    @include iconSize($fd-button-icon-font-size);
-
     color: inherit;
+    width: $fd-button-icon-font-size;
+    min-width: $fd-button-icon-font-size;
+    height: $fd-button-icon-font-size;
+    font-size: $fd-button-icon-font-size;
+    line-height: $fd-button-icon-font-size;
+    font-family: 'SAP-icons';
     font-style: normal;
     vertical-align: text-bottom;
 
@@ -337,16 +283,12 @@ $block: #{$fd-namespace}-button;
 }
 
 .#{$block} {
-  @include buttonReset();
-  @include buttonContainer();
-  @include iconStyles();
-
-  @include fd-flex-center() {
-    display: inline-flex;
-  }
-
-  overflow: visible;
-  min-width: $fd-button-min-width;
+  @include fd-reset();
+  @include fd-button-reset();
+  @include fd-button-base();
+  @include fd-button-default-state();
+  @include fd-button-icon();
+  @include fd-inline-flex-center();
 
   &__text {
     @include fd-reset();
@@ -357,7 +299,12 @@ $block: #{$fd-namespace}-button;
   }
 
   * + * {
-    @include iconTextMargin();
+    margin-left: $fd-button-icon-margin !important;
+
+    @include fd-rtl() {
+      margin-left: 0 !important;
+      margin-right: $fd-button-icon-margin !important;
+    }
   }
 
   &__badge {
@@ -365,7 +312,7 @@ $block: #{$fd-namespace}-button;
   }
 
   &--compact {
-    @include compact();
+    @include fd-button-compact();
 
     .#{$block}__badge {
       @include button-badge-compact();
@@ -373,7 +320,7 @@ $block: #{$fd-namespace}-button;
   }
 
   &--menu {
-    @include menu();
+    @include fd-button-menu();
 
     .#{$block}__text {
       line-height: 1rem;
@@ -381,15 +328,27 @@ $block: #{$fd-namespace}-button;
   }
 
   &--full-width {
+    @include fd-flex-center();
+
     width: 100%;
     min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   &--text-alignment {
-    @include textAlignment();
+    &-left {
+      text-align: left;
+      justify-content: flex-start;
+    }
+
+    &-right {
+      text-align: right;
+      justify-content: flex-end;
+    }
+
+    &-center {
+      text-align: center;
+      justify-content: center;
+    }
   }
 
   &__instructions {
@@ -397,24 +356,26 @@ $block: #{$fd-namespace}-button;
   }
 
   @include fd-hover() {
-    @include buttonContainerHover();
+    @include fd-button-hover-state();
   }
 
   @include fd-focus() {
-    @include buttonContainerFocus();
+    @include fd-button-focus-state();
   }
 
   @include fd-active-pressed-selected() {
-    @include buttonContainerPressedFocus();
+    @include fd-button-pressed-state();
   }
 
-  &[aria-disabled="true"],
-  &.is-disabled {
-    @include isDisabled();
-    @include buttonContainer();
-  }
+  @include fd-disabled() {
+    @include fd-button-default-state();
 
-  &:disabled {
-    @include buttonContainerDisabled();
+    @include fd-selected() {
+      @include fd-button-pressed-state();
+    }
+
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: var(--sapContent_DisabledOpacity);
   }
 }

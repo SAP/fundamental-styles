@@ -58,7 +58,7 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     @include fd-focus() {
-      @include buttonFocus() {
+      @include fd-button-focus() {
         outline-color: var(--sapContent_ContrastFocusColor);
       }
     }

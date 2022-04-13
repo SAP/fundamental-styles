@@ -1,5 +1,5 @@
 @mixin attention() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Attention_TextColor),
     var(--sapButton_Attention_BorderColor),
     var(--sapButton_Attention_Background)
@@ -7,15 +7,16 @@
 }
 
 @mixin attentionHover() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Attention_Hover_TextColor),
     var(--sapButton_Attention_Hover_BorderColor),
-    var(--sapButton_Attention_Hover_Background)
+    var(--sapButton_Attention_Hover_Background),
+    var(--fdButton_Attention_Hover_Shadow)
   );
 }
 
 @mixin attentionPressed() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Attention_Active_TextColor),
     var(--sapButton_Attention_Active_BorderColor),
     var(--sapButton_Attention_Active_Background)
@@ -24,25 +25,18 @@
 
 // Toggled state
 @mixin attentionToggled() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Attention_Selected_TextColor),
     var(--sapButton_Attention_Selected_BorderColor),
     var(--sapButton_Attention_Selected_Background)
   );
 }
 
-@mixin attentionToggledHover() {
-  @include applyColors(
+@mixin attentionToggledHoverPressed() {
+  @include fd-button-apply-colors(
     var(--sapButton_Attention_Selected_TextColor),
     var(--sapButton_Attention_Selected_Hover_BorderColor),
-    var(--sapButton_Attention_Selected_Hover_Background)
-  );
-}
-
-@mixin attentionToggledPressed() {
-  @include applyColors(
-    var(--sapButton_Attention_Selected_TextColor),
-    var(--sapButton_Attention_Selected_Hover_BorderColor),
-    var(--sapButton_Attention_Selected_Hover_Background)
+    var(--sapButton_Attention_Selected_Hover_Background),
+    var(--fdButton_Attention_Hover_Shadow)
   );
 }

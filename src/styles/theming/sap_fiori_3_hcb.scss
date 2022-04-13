@@ -1,4 +1,5 @@
 @import "./common/switch/sap_fiori";
+@import "./common/button/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
@@ -192,7 +193,7 @@
   --fdFormHeader_Border_Width: calc(3 * var(--sapList_BorderWidth));
 
   /** Badge on Button */
-  --fdBadgeButton_Border_Color: var(--sapGroup_ContentBorderColor);
+  --fdButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
 
   /* Badge */
   --fdBadge_Border_Color: var(--sapContent_ForegroundBorderColor);
@@ -424,4 +425,11 @@
   --fdBar_Left_Area_Padding_Right: 0;
   --fdBar_Middle_Area_Padding_X: 0.5rem;
   --fdBar_Right_Area_Padding_Left: 0;
+
+  /** Menu Button */
+  --fdButton_Menu_Emphasized_Margin: 0;
+  --fdButton_Menu_Border_Width: 0;
+  --fdButton_Menu_Separator_Display: none;
+  --fdButton_Menu_Transparent_Border_Width: 0;
+  --fdButton_Menu_Transparent_Separator_Display: none;
 }

@@ -186,7 +186,7 @@ $button: #{$fd-namespace}-button;
       }
 
       @include fd-active() {
-        @include buttonFocus() {
+        @include fd-button-focus() {
           @include after-position-overwrite();
         }
       }

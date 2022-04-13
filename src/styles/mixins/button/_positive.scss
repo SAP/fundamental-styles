@@ -1,5 +1,5 @@
 @mixin positive() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Accept_TextColor),
     var(--sapButton_Accept_BorderColor),
     var(--sapButton_Accept_Background)
@@ -7,15 +7,16 @@
 }
 
 @mixin positiveHover {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Accept_Hover_TextColor),
     var(--sapButton_Accept_Hover_BorderColor),
-    var(--sapButton_Accept_Hover_Background)
+    var(--sapButton_Accept_Hover_Background),
+    var(--fdButton_Positive_Hover_Shadow)
   );
 }
 
 @mixin positivePressed {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Accept_Active_TextColor),
     var(--sapButton_Accept_Active_BorderColor),
     var(--sapButton_Accept_Active_Background)
@@ -24,25 +25,18 @@
 
 // Toggled state
 @mixin positiveToggled() {
-  @include applyColors(
+  @include fd-button-apply-colors(
     var(--sapButton_Accept_Selected_TextColor),
     var(--sapButton_Accept_Selected_BorderColor),
     var(--sapButton_Accept_Selected_Background)
   );
 }
 
-@mixin positiveToggledHover {
-  @include applyColors(
+@mixin positiveToggledHoverPressed {
+  @include fd-button-apply-colors(
     var(--sapButton_Accept_Selected_TextColor),
     var(--sapButton_Accept_Selected_Hover_BorderColor),
-    var(--sapButton_Accept_Selected_Hover_Background)
-  );
-}
-
-@mixin positiveToggledPressed {
-  @include applyColors(
-    var(--sapButton_Accept_Selected_TextColor),
-    var(--sapButton_Accept_Selected_Hover_BorderColor),
-    var(--sapButton_Accept_Selected_Hover_Background)
+    var(--sapButton_Accept_Selected_Hover_Background),
+    var(--fdButton_Positive_Hover_Shadow)
   );
 }

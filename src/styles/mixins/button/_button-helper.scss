@@ -2,18 +2,39 @@
 
 $block: #{$fd-namespace}-button;
 
-@mixin applyColors($color, $borderColor, $backgroundColor) {
+@mixin fd-button-apply-colors($color, $borderColor, $backgroundColor, $box-shadow: none) {
   color: $color;
   border-color: $borderColor;
   background-color: $backgroundColor;
+
+  @include fd-hover() {
+    box-shadow: $box-shadow;
+  }
 }
 
-@mixin buttonFocus($fd-button-outline-offset: -0.1875rem) {
+@mixin fd-button-focus($fd-button-outline-offset: -0.1875rem) {
   outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
   outline-offset: $fd-button-outline-offset;
+
   @content;
 
   &.#{$block}--toggled {
-    outline-color: var(--sapContent_ContrastFocusColor);
+    outline-color: var(--fdButton_Outline_Contrast);
+  }
+}
+
+@mixin fd-button-pad($background: var(--sapButton_Background)) {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: var(--fdButton_Segmented_Pad_Display);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $background;
+    border-radius: var(--sapButton_BorderCornerRadius);
   }
 }
