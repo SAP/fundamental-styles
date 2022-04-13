@@ -6,7 +6,7 @@ const postcssImport = require('postcss-import');
 const postcssRemoveFonts = require('./postcss-remove-fonts.js');
 const packageVersion = require('../package.json').version;
 const year = new Date().getFullYear();
-const postcssCleaner = require('../scripts/postCssCleaner.js');
+const postcssCleaner = require('../scripts/postcss-cleaner.js');
 const cssnano = require('cssnano');
 
 const cleanCss = postcssCleaner({
