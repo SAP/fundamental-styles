@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.31 (2022-04-13)
+
+
+### Bug Fixes
+
+* **styles,fn,deps,ci:** removed third party postcss-clean and updated cssnano ([#3325](https://github.com/SAP/fundamental-styles/issues/3325)) ([d7aee54](https://github.com/SAP/fundamental-styles/commit/d7aee5409e66a3ba688e52426dcd466b9423b961))
+
 ## 0.24.0-rc.30 (2022-04-13)
 
 
