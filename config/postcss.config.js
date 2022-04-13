@@ -9,23 +9,6 @@ const year = new Date().getFullYear();
 const postcssCleaner = require('../scripts/postcss-cleaner.js');
 const cssnano = require('cssnano');
 
-const cleanCss = postcssCleaner({
-    format: 'beautify',
-    level: 2
-});
-const minify =
-    process.env.NODE_ENV === 'production'
-        ? cssnano({
-            preset: [
-                'default',
-                {
-                    mergeLonghand: false, // https://github.com/cssnano/cssnano/issues/675
-                    mergeRules: false // https://github.com/cssnano/cssnano/issues/730
-                }
-            ]
-        })
-        : null;
-
 module.exports = {
     inline: false,
     annotation: true,
@@ -46,7 +29,24 @@ Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blo
             important: true
         }),
         postcssNormalizeCharset(),
-        cleanCss,
-        minify
+        postcssCleaner({
+            format: 'beautify',
+            level: 2
+        }),
+        process.env.NODE_ENV === 'production'
+            ? cssnano({
+                preset: [
+                    'default',
+                    {
+                        mergeLonghand: false, // https://github.com/cssnano/cssnano/issues/675
+                        mergeRules: false, // https://github.com/cssnano/cssnano/issues/730
+                        convertValues: true,
+                        discardOverridden: true,
+                        minifyGradients: true,
+                        orderedValues: true
+                    }
+                ]
+            })
+            : null
     ]
 };
