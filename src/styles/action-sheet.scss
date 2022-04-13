@@ -43,7 +43,7 @@ $block: #{$fd-namespace}-action-sheet;
     }
 
     &--active {
-      @include fd-flex('column') {
+      @include fd-flex(column) {
         justify-content: flex-end;
         align-items: flex-start;
       }
