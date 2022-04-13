@@ -20,13 +20,25 @@ $lg: 1024;
 $xl: 1440;
 $cols: 12;
 
-@mixin full {
+@mixin fd-row-nested($horizontalGutter, $verticalGutter) {
+  > .#{$blockRow} {
+    @include fd-set-margins-x-equal(-$horizontalGutter);
+
+    min-width: calc(100% + #{$horizontalGutter} * 2);
+
+    > .#{$blockCol} {
+      @include fd-set-paddings-y-equal(math.div($verticalGutter, 2));
+    }
+  }
+}
+
+@mixin fd-column-full() {
   min-width: math.div(1, 12) * 100%;
   max-width: none;
   flex: 1;
 }
 
-@mixin responsive-column($sizePrefix: null) {
+@mixin fd-column-responsive($sizePrefix: null) {
   $classPrefix: #{$blockCol};
 
   @if ($sizePrefix) {
@@ -56,6 +68,8 @@ $cols: 12;
 }
 
 .#{$blockContainer} {
+  @include fd-row-nested($horizontal-gutter-small, $vertical-gutter-small);
+
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
@@ -75,7 +89,7 @@ $cols: 12;
 
   &.#{$blockContainer}--no-vertical-gap,
   &.#{$blockContainer}--no-gap {
-    .#{$blockRow} .#{$blockCol} {
+    > .#{$blockRow} > .#{$blockCol} {
       @include fd-reset-paddings-y();
     }
   }
@@ -86,30 +100,25 @@ $cols: 12;
 }
 
 .#{$blockRow} {
-  @include fd-set-margins-x-equal(-$horizontal-gutter-small);
-
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  min-width: calc(100% + #{$horizontal-gutter-small} * 2);
-
-  .#{$blockCol} {
-    @include fd-set-paddings-y-equal(math.div($vertical-gutter-small, 2));
-  }
+  min-width: 100%;
 }
 
 .#{$blockCol} {
+  @include fd-set-paddings-x-equal($horizontal-gutter-small);
+
   @at-root {
-    @include responsive-column();
+    @include fd-column-responsive();
   }
 
-  padding: 0 $horizontal-gutter-small;
   min-width: 100%;
   max-width: 100%;
 
   &--full {
-    @include full();
+    @include fd-column-full();
   }
 
   &--wrap {
@@ -119,24 +128,16 @@ $cols: 12;
 
 @media (min-width: 600px) {
   .#{$blockContainer} {
+    @include fd-row-nested($horizontal-gutter, $vertical-gutter);
+
     padding: 0 $horizontal-gutter;
-  }
-
-  .#{$blockRow} {
-    @include fd-set-margins-x-equal(-$horizontal-gutter);
-
-    min-width: calc(100% + #{$horizontal-gutter} * 2);
-
-    .#{$blockCol} {
-      @include fd-set-paddings-y-equal(math.div($vertical-gutter, 2));
-    }
   }
 
   .#{$blockCol} {
-    padding: 0 $horizontal-gutter;
+    @include fd-set-paddings-x-equal($horizontal-gutter);
 
     @at-root {
-      @include responsive-column(map-get($size, $md));
+      @include fd-column-responsive(map-get($size, $md));
     }
   }
 }
@@ -144,7 +145,7 @@ $cols: 12;
 @media (min-width: 1024px) {
   .#{$blockCol} {
     @at-root {
-      @include responsive-column(map-get($size, $lg));
+      @include fd-column-responsive(map-get($size, $lg));
     }
   }
 }
@@ -152,7 +153,7 @@ $cols: 12;
 @media (min-width: 1440px) {
   .#{$blockCol} {
     @at-root {
-      @include responsive-column(map-get($size, $xl));
+      @include fd-column-responsive(map-get($size, $xl));
     }
   }
 }
