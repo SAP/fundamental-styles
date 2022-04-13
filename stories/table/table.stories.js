@@ -771,9 +771,9 @@ export const Checkbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolb
                 <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4ez615"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">Last Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">01/26/17</span></td>
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
@@ -836,9 +836,9 @@ export const CompactCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid f
                 <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4HFHG1"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">Last Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">01/26/17</span></td>
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
@@ -902,9 +902,9 @@ export const CondensedCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid
                 <label class="fd-checkbox__label fd-table__checkbox-label" for="Ai4JHf87"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">Last Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">01/26/17</span></td>
         </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--checkbox">
@@ -1689,9 +1689,9 @@ export const NavIndicators = () => `<div class="fd-toolbar fd-toolbar--solid fd-
                 <label class="fd-checkbox__label" for="EWuzWh33"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">Last Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">01/26/17</span></td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--no-padding">
                 <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
@@ -1702,9 +1702,9 @@ export const NavIndicators = () => `<div class="fd-toolbar fd-toolbar--solid fd-
                 <label class="fd-checkbox__label" for="EWuzWh334"></label>
             </td>
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
+            <td class="fd-table__cell"><span class="fd-table__text">First Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">Last Name</span></td>
+            <td class="fd-table__cell"><span class="fd-table__text">01/26/17</span></td>
             <td class="fd-table__cell fd-table__cell--fit-content fd-table__cell--navigated fd-table__cell--no-padding">
                 <i class="fd-table__icon fd-table__icon--navigation sap-icon--slim-arrow-right" role="presentation"></i>
             </td>
