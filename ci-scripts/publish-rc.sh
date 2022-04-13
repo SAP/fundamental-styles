@@ -13,11 +13,7 @@ DIST_FN_ICONS=dist-fn-icons
 git config --global user.email "fundamental@sap.com"
 git config --global user.name "fundamental-bot"
 
-git status
-
 npm run std-version -- --prerelease rc --no-verify --debug
-
-git status
 
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BRANCH"
 

@@ -666,7 +666,7 @@ $fd-icons: (
 /* stylelint-enable */
 
 $fd-icon-control-enumerations: (
-  "default": ("color": var(--sapContent_IconColor), "background-color": var(transparent)),
+  "default": ("color": var(--sapContent_IconColor), "background-color": transparent),
   "contrast": ("color": var(--sapContent_ContrastIconColor), "background-color": var(--sapContent_IconColor)),
   "non-interactive": ("color": var(--sapContent_NonInteractiveIconColor), "background-color": var(--sapContent_NonInteractiveIconColor)),
   "tile": ("color": var(--sapTile_IconColor), "background-color": var(--sapTile_IconColor)),
