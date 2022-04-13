@@ -3,12 +3,11 @@
   --fdInput_Text_Shadow: 0 0 0.125rem #000;
   --fdInput_State_Text_Style: italic;
   --fdInput_State_Font_Weight: bold;
-  --fdInput_State_Border_Type: dashed;
-  --fdInput_Base_Border_Style: solid;
-  --fdInput_Error_Border_Style: dashed;
-  --fdInput_Warning_Border_Style: dashed;
-  --fdInput_Success_Border_Style: solid;
-  --fdInput_Information_Border_Style: dashed;
+  --fdInput_Base_Border_Style: var(--sapField_BorderStyle);
+  --fdInput_Error_Border_Style: var(--sapField_InvalidBorderStyle);
+  --fdInput_Warning_Border_Style: var(--sapField_WarningBorderStyle);
+  --fdInput_Success_Border_Style: var(--sapField_SuccessBorderStyle);
+  --fdInput_Information_Border_Style: var(--sapField_InformationBorderStyle);
   --fdInput_ReadOnly_Border_Style: solid;
 
   /* Hovers */

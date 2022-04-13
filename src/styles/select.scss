@@ -36,7 +36,6 @@ $block: #{$fd-namespace}-select;
   &__control {
     @include fd-reset();
     @include fd-form-base();
-    @include fd-form-input();
     @include fd-form-input-pseudo-focus(
       var(--fdSelect_Focus_Border_Offset),
       var(--fdInputGroup_Focus_Border_Radius)

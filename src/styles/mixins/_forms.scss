@@ -3,7 +3,13 @@
 @import "./states";
 
 @mixin fd-form-states {
-  // states
+  @include fd-input-background(
+    var(--sapField_BackgroundStyle),
+    var(--sapField_Background),
+  );
+
+  border-style: var(--fdInput_Base_Border_Style);
+
   @include fd-hover() {
     background-color: var(--sapField_Hover_Background);
     border-color: var(--sapField_Hover_BorderColor);
@@ -11,12 +17,14 @@
   }
 
   &.is-success {
-    background-color: var(--sapField_SuccessBackground);
-
     @include fd-apply-border(
       var(--sapField_SuccessColor),
       var(--sapField_SuccessBorderWidth),
-      var(--sapField_SuccessBorderStyle)
+      var(--fdInput_Success_Border_Style)
+    );
+    @include fd-input-background(
+      var(--sapField_SuccessBackgroundStyle),
+      var(--sapField_SuccessBackground),
     );
 
     @include fd-hover() {
@@ -27,14 +35,17 @@
   }
 
   &.is-error {
-    background-color: var(--sapField_InvalidBackground);
     font-style: var(--fdInput_State_Text_Style);
     font-weight: var(--fdInput_State_Font_Weight);
 
     @include fd-apply-border(
       var(--sapField_InvalidColor),
       var(--sapField_InvalidBorderWidth),
-      var(--sapField_InvalidBorderStyle)
+      var(--fdInput_Error_Border_Style)
+    );
+    @include fd-input-background(
+      var(--sapField_InvalidBackgroundStyle),
+      var(--sapField_InvalidBackground),
     );
 
     @include fd-hover() {
@@ -46,14 +57,17 @@
 
   &.is-warning,
   &.is-alert {
-    background-color: var(--sapField_WarningBackground);
     font-style: var(--fdInput_State_Text_Style);
     font-weight: var(--fdInput_State_Font_Weight);
 
     @include fd-apply-border(
       var(--sapField_WarningColor),
       var(--sapField_WarningBorderWidth),
-      var(--sapField_WarningBorderStyle)
+      var(--fdInput_Warning_Border_Style)
+    );
+    @include fd-input-background(
+      var(--sapField_WarningBackgroundStyle),
+      var(--sapField_WarningBackground),
     );
 
     @include fd-hover() {
@@ -64,38 +78,20 @@
   }
 
   &.is-information {
-    background-color: var(--sapField_InformationBackground);
-
     @include fd-apply-border(
       var(--sapField_InformationColor),
       var(--sapField_InformationBorderWidth),
-      var(--sapField_InformationBorderStyle)
+      var(--fdInput_Information_Border_Style)
+    );
+    @include fd-input-background(
+      var(--sapField_InformationBackgroundStyle),
+      var(--sapField_InformationBackground),
     );
 
     @include fd-hover() {
       background-color: var(--fdInput_Information_Hover_Background);
       border-color: var(--sapField_InformationColor);
       box-shadow: var(--fdInput_Information_Hover_Shadow);
-    }
-  }
-
-  @include fd-focus() {
-    box-shadow: none;
-    outline-offset: -0.1875rem;
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
-  }
-
-  &.is-warning,
-  &.is-alert,
-  &.is-information,
-  &.is-error {
-    border-style: var(--fdInput_State_Border_Type);
-
-    @include fd-focus() {
-      box-shadow: none;
-      outline-offset: -0.25rem;
     }
   }
 
@@ -109,8 +105,15 @@
 
   @include fd-readonly() {
     background-color: rgba(242, 242, 242, 0.5); // Hardcoded for IE11 Purposes, there is not callback for RGBA.
-    background-color: var(--sapField_ReadOnly_Background);
+
+    @include fd-input-background(
+      var(--sapField_ReadOnly_BackgroundStyle),
+      var(--sapField_ReadOnly_Background),
+    );
+
     border-color: var(--sapField_ReadOnly_BorderColor);
+    border-radius: 0;
+    border-style: var(--fdInput_ReadOnly_Border_Style);
 
     &::placeholder {
       color: transparent;
@@ -217,57 +220,6 @@
   @include fd-rtl() {
     margin-left: $fd-label-spacing;
     margin-right: 0;
-  }
-}
-
-@mixin fd-form-input() {
-  @include fd-input-background(
-    var(--sapField_BackgroundStyle),
-    var(--sapField_Background),
-    var(--fdInput_Base_Border_Style)
-  );
-
-  &.is-success {
-    @include fd-input-background(
-      var(--sapField_SuccessBackgroundStyle),
-      var(--sapField_SuccessBackground),
-      var(--fdInput_Success_Border_Style)
-    );
-  }
-
-  &.is-error {
-    @include fd-input-background(
-      var(--sapField_InvalidBackgroundStyle),
-      var(--sapField_InvalidBackground),
-      var(--fdInput_Error_Border_Style)
-    );
-  }
-
-  &.is-information {
-    @include fd-input-background(
-      var(--sapField_InformationBackgroundStyle),
-      var(--sapField_InformationBackground),
-      var(--fdInput_Information_Border_Style)
-    );
-  }
-
-  &.is-warning,
-  &.is-alert {
-    @include fd-input-background(
-      var(--sapField_WarningBackgroundStyle),
-      var(--sapField_WarningBackground),
-      var(--fdInput_Warning_Border_Style)
-    );
-  }
-
-  @include fd-readonly() {
-    @include fd-input-background(
-      var(--sapField_ReadOnly_BackgroundStyle),
-      var(--sapField_ReadOnly_Background),
-      var(--fdInput_ReadOnly_Border_Style)
-    );
-
-    border-radius: 0;
   }
 }
 

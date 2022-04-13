@@ -8,7 +8,7 @@ $block: #{$fd-namespace}-input;
 
 .#{$block} {
   @include fd-form-text();
-  @include fd-form-input();
+  // @include fd-form-input();
   @include fd-form-input-focus();
 
   min-width: 2.75rem;
