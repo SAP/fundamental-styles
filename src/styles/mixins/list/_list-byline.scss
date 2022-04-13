@@ -1,5 +1,11 @@
 @import "./list-definitions";
 
+$fd-list-byline-thumbnail-dimensions: 3rem !default;
+$fd-list-byline-item-height: 5rem !default;
+$fd-list-byline-text-line-height: 1rem !default;
+$fd-list-byline-elements-spacing: 0.5rem !default;
+$fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
+
 .#{$block} {
   &--byline {
     .#{$block}__item {

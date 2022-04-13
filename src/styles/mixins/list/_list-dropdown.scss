@@ -1,5 +1,10 @@
 @import "./list-definitions";
 
+$fd-list-dropdown-max-width: 40rem !default;
+$fd-list-dropdown-vertical-padding: 0.75rem !default;
+$fd-list-dropdown-vertical-compact-padding: 0.5rem !default;
+$fd-checkbox-dimensions: 1.375rem !default;
+
 .#{$block} {
   &--dropdown {
     @include fd-focus() {
@@ -10,13 +15,13 @@
       @include fd-list-item-states();
 
       height: auto;
-      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
+      padding: $fd-list-dropdown-vertical-padding $fd-list-item-padding-x;
     }
 
     &.#{$block}--compact {
       .#{$block}__item {
         height: auto;
-        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+        padding: $fd-list-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
     }
   }
@@ -72,7 +77,7 @@
 
     .#{$block}__footer,
     .#{$block}__label {
-      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
+      padding: $fd-list-dropdown-vertical-padding $fd-list-item-padding-x;
     }
 
     &.#{$block}--compact {
@@ -91,7 +96,7 @@
 
       .#{$block}__footer,
       .#{$block}__label {
-        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+        padding: $fd-list-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
     }
   }

@@ -1,5 +1,7 @@
 @import "./list-definitions";
 
+$fd-list-navigation-indicator-width: 2.75rem !default;
+
 .#{$block} {
   &--navigation-indication {
     .#{$block} {
