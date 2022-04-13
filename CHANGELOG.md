@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.33 (2022-04-13)
+
+
+### Bug Fixes
+
+* **styles:** layout grid nested rows ([#3305](https://github.com/SAP/fundamental-styles/issues/3305)) ([9d1e2d7](https://github.com/SAP/fundamental-styles/commit/9d1e2d7473ed0abb7b6dd51ccd56ada59535a121))
+
 ## 0.24.0-rc.32 (2022-04-13)
 
 
