@@ -7,7 +7,7 @@
     }
 
     .#{$block}__item {
-      @include list-item-states();
+      @include fd-list-item-states();
 
       height: auto;
       padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
@@ -23,7 +23,7 @@
 
   &--multi-input {
     .#{$block}__item {
-      @include list-item-states();
+      @include fd-list-item-states();
 
       padding: 0;
       height: auto;
@@ -59,14 +59,6 @@
             right: $fd-multi-input-focus-offset;
           }
         }
-      }
-    }
-
-    .#{$block}__secondary {
-      padding-right: 1rem;
-
-      @include fd-rtl() {
-        padding-left: 1rem;
       }
     }
 

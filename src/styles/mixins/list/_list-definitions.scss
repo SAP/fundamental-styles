@@ -58,7 +58,7 @@ $semantic-color: (
   "informative": ("color": var(--sapInformativeTextColor))
 );
 
-@mixin list-part-elements() {
+@mixin fd-list-part-elements() {
   .#{$block}__title,
   .#{$block}__secondary,
   .#{$block}__icon,
@@ -79,7 +79,7 @@ $semantic-color: (
   }
 }
 
-@mixin fake-list-outline() {
+@mixin fd-list-fake-outline() {
   &:focus,
   &.is-focus {
     outline: none;
@@ -105,7 +105,7 @@ $semantic-color: (
   }
 }
 
-@mixin list-item-selected-state() {
+@mixin fd-list-item-selected-state() {
   background: var(--sapList_SelectionBackgroundColor);
   border-bottom: $fd-list-selected-state-border-bottom;
 
@@ -122,13 +122,13 @@ $semantic-color: (
   }
 }
 
-@mixin list-item-states() {
+@mixin fd-list-item-states() {
   @include fd-hover() {
     background: var(--sapList_Hover_Background);
   }
 
   @include fd-selected() {
-    @include list-item-selected-state();
+    @include fd-list-item-selected-state();
   }
 
   @include fd-active() {
@@ -146,21 +146,85 @@ $semantic-color: (
       }
     }
 
-    @include list-part-elements() {
+    @include fd-list-part-elements() {
       color: var(--sapList_Active_TextColor);
       text-shadow: none;
     }
   }
 }
 
-@mixin ie11-active-state-fix() {
+@mixin fd-list-link($selector, $itemSelector, $linkSelector) {
+  .#{$itemSelector} {
+    &::after {
+      min-width: $fd-list-navigation-indicator-width - 1rem;
+      content: '';
+    }
+  }
+
+  .#{$itemSelector}.#{$linkSelector} {
+    @include fd-set-padding-right(0);
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .#{$selector}__link {
+    &::after {
+      min-width: $fd-list-navigation-indicator-width;
+      content: '';
+    }
+
+    &--navigation-indicator {
+      &::after {
+        @include fd-flex-center();
+
+        height: 100%;
+        font-family: "SAP-icons";
+        content: '\e1ed';
+        color: var(--sapContent_NonInteractiveIconColor);
+        font-size: var(--sapFontSmallSize);
+        text-decoration: none;
+        text-transform: none;
+      }
+
+      @include fd-rtl() {
+        &::after {
+          content: '\e1ee';
+        }
+      }
+    }
+  }
+
+  .#{$selector}__icon {
+    &:last-child {
+      margin: 0;
+    }
+
+    @include fd-rtl() {
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .is-navigated {
+    box-shadow: $fd-list-navigation-navigator-bar-right;
+
+    @include fd-rtl() {
+      box-shadow: $fd-list-navigation-navigator-bar-left;
+    }
+  }
+}
+
+@mixin fd-list-ie11-active-state-fix() {
   // :active selector has issues in IE11 when there are nested elements.
   // The solution is to remove the pointer events from the nested elements.
 
   pointer-events: none;
 }
 
-@mixin padding-left-right($left, $right) {
+@mixin fd-list-padding-left-right($left, $right) {
   padding-left: $left;
   padding-right: $right;
 
@@ -170,21 +234,21 @@ $semantic-color: (
   }
 }
 
-@mixin padding-top-bottom($padding-y) {
+@mixin fd-list-padding-top-bottom($padding-y) {
   padding-top: $padding-y;
   padding-bottom: $padding-y;
 }
 
-@mixin reset-list-item-paddings() {
+@mixin fd-list-reset-item-paddings() {
   .#{$block}__item--link {
     padding: 0;
   }
 }
 
-@mixin navigation-byline-borderless() {
+@mixin fd-list-navigation-byline-borderless() {
   .#{$block}__item--link {
     .#{$block}__link {
-      @include padding-top-bottom(0.5rem);
+      @include fd-list-padding-top-bottom(0.5rem);
     }
   }
 
@@ -211,7 +275,7 @@ $semantic-color: (
   }
 }
 
-@mixin fake-arrow-focus() {
+@mixin fd-list-fake-arrow-focus() {
   @include fd-focus() {
     outline: none;
 

@@ -77,6 +77,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         @include applySelectedColor();
 
         width: 100%;
+
         .#{$block}__navigation-item-indicator {
           &::after {
             margin-right: 0;
@@ -91,17 +92,12 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
         .#{$block}__navigation-item-text {
           @include fd-reset();
+          @include fd-set-margin-left($fd-list-navigation-item-text-spacing);
 
           vertical-align: middle;
           line-height: $fd-list-navigation-item-height;
           color: var(--sapContent_LabelColor);
           font-size: var(--sapFontSize);
-          margin-left: $fd-list-navigation-item-text-spacing;
-
-          @include fd-rtl() {
-            margin-right: $fd-list-navigation-item-text-spacing;
-            margin-left: 0;
-          }
         }
       }
 
@@ -221,16 +217,12 @@ $fd-list-second-level-popover-position: 3.25rem !default;
           }
 
           &--second-level {
+            @include fd-set-position-left($fd-list-second-level-popover-position);
+
             border-top-right-radius: 0;
             border-top-left-radius: 0;
             top: $fd-list-navigation-item-height;
-            left: $fd-list-second-level-popover-position;
             width: 11.4rem;
-
-            @include fd-rtl() {
-              left: unset;
-              right: $fd-list-second-level-popover-position;
-            }
 
             .#{$block}__navigation-item {
               .#{$block}__navigation-item-text {
@@ -318,12 +310,12 @@ $fd-list-second-level-popover-position: 3.25rem !default;
     &-arrow {
       @include fd-reset();
       @include fd-button-reset();
-      @include fake-arrow-focus();
+      @include fd-list-fake-arrow-focus();
+      @include fd-set-position-right(0);
 
       height: $fd-list-navigation-item-height;
       width: 2.75rem;
       position: absolute;
-      right: 0;
       line-height: $fd-list-navigation-item-height;
       font-family: 'SAP-icons';
       font-size: 1rem;
@@ -331,8 +323,6 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       background-color: transparent;
 
       @include fd-rtl() {
-        right: unset;
-        left: 0;
         transform: scaleX(-1);
       }
     }

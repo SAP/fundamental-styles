@@ -24,9 +24,10 @@
 
     .#{$block}__thumbnail {
       @include fd-reset();
-      @include ie11-active-state-fix();
+      @include fd-list-ie11-active-state-fix();
       @include fd-icon-element-base();
       @include fd-flex-center();
+      @include fd-set-margin-right($fd-list-byline-thumbnail-spacing);
 
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
@@ -35,19 +36,13 @@
       min-height: $fd-list-byline-thumbnail-dimensions;
       max-height: $fd-list-byline-thumbnail-dimensions;
       border-radius: $fd-list-byline-thumbnail-border-radius;
-      margin-right: $fd-list-byline-thumbnail-spacing;
       font-size: 2.5rem;
       color: var(--sapContent_NonInteractiveIconColor);
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: $fd-list-byline-thumbnail-spacing;
-      }
     }
 
     .#{$block}__content {
       @include fd-reset();
-      @include ie11-active-state-fix();
+      @include fd-list-ie11-active-state-fix();
 
       @include fd-flex(column) {
         align-content: space-between;
@@ -96,33 +91,26 @@
     .#{$block}__byline-left {
       @include fd-reset();
       @include fd-ellipsis();
+      @include fd-set-padding-right($fd-list-byline-elements-spacing);
 
       width: 60%;
       color: $fd-list-byline-section-text-color;
-      padding-right: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
       align-self: flex-end;
-
-      @include fd-rtl() {
-        padding-left: $fd-list-byline-elements-spacing;
-        padding-right: 0;
-      }
     }
 
     .#{$block}__byline-right {
       @include fd-reset();
       @include fd-ellipsis();
+      @include fd-set-padding-left($fd-list-byline-elements-spacing);
 
       width: 40%;
       color: $fd-list-byline-section-text-color;
-      padding-left: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
       text-align: right;
       align-self: flex-end;
 
       @include fd-rtl() {
-        padding-left: 0;
-        padding-right: $fd-list-byline-elements-spacing;
         text-align: left;
       }
 

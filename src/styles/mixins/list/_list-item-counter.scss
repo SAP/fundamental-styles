@@ -4,13 +4,8 @@
   &__item-counter {
     @include fd-reset();
     @include fd-ellipsis();
+    @include fd-set-margin-left($fd-list-item-counter-spacing);
 
     color: var(--sapContent_MarkerTextColor);
-    margin-left: $fd-list-item-counter-spacing;
-
-    @include fd-rtl() {
-      margin-left: 0;
-      margin-right: $fd-list-item-counter-spacing;
-    }
   }
 }
