@@ -1,18 +1,16 @@
-@import "./listDefinitions.scss";
+@import "./list-definitions";
 
-$vertical-nav-block: #{$fd-namespace}-vertical-nav;
-
-.#{$vertical-nav-block} {
+.#{$block} {
   &--navigation-indication {
 
-    .#{$block}__navigation-item {
+    .#{$block}__item {
       &::after {
         min-width: $fd-list-navigation-indicator-width - 1rem;
         content: '';
       }
     }
 
-    .#{$block}__navigation-item.#{$block}__navigation-item--link {
+    .#{$block}__item.#{$block}__item--link {
       &::after {
         content: none;
       }

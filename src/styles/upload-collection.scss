@@ -1,6 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./listDefinitions.scss";
+@import "./mixins/list/list-definitions";
 
 $block: #{$fd-namespace}-upload-collection;
 
