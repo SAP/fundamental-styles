@@ -29,7 +29,7 @@ $block: #{$fd-namespace}-list;
     // SELECTION + Compact
     &.#{$block}--compact {
       .#{$block}__form-item {
-        @include fd-set-position-left($fd-list-selection-form-item-compact-left-offset);
+        @include fd-set-position-left(0.375rem);
       }
     }
 
@@ -40,7 +40,7 @@ $block: #{$fd-namespace}-list;
       }
 
       .#{$block}__form-item {
-        top: $fd-list-byline-form-item-top-offset;
+        top: 0.3125rem;
       }
     }
 
@@ -51,9 +51,9 @@ $block: #{$fd-namespace}-list;
       }
 
       .#{$block}__form-item {
-        @include fd-set-position-left($fd-list-byline-form-item-left-offset);
+        @include fd-set-position-left(0.375rem);
 
-        top: $fd-list-byline-form-item-compact-top-offset;
+        top: 0.5rem;
       }
     }
 
@@ -61,7 +61,7 @@ $block: #{$fd-namespace}-list;
     &.#{$block}--byline.#{$block}--no-border {
       .#{$block}__item {
         @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
-        @include fd-list-padding-top-bottom($fd-list-byline-borderless-item-padding-y);
+        @include fd-set-paddings-y-equal($fd-list-byline-borderless-item-padding-y);
 
         &:first-child {
           padding-top: $fd-list-byline-item-padding-y;
@@ -74,14 +74,14 @@ $block: #{$fd-namespace}-list;
 
       .#{$block}__item:not(:first-child) {
         .#{$block}__form-item,
-        .#{$block}__form-item.#{$form-item} {
+        .#{$block}__form-item.#{$fd-namespace}-form-item {
           top: 0;
 
           label {
             padding-top: $fd-list-byline-borderless-item-padding-y;
 
             &::after {
-              top: $fd-list-byline-form-item-label-top-offset;
+              top: 0.375rem;
             }
           }
         }

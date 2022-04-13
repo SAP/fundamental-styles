@@ -40,7 +40,7 @@
 
       .#{$block}__link {
         @include fd-list-padding-left-right($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
-        @include fd-list-padding-top-bottom(1rem);
+        @include fd-set-paddings-y-equal(1rem);
       }
     }
 
@@ -111,7 +111,7 @@
 
       .#{$block}__link {
         @include fd-list-padding-left-right($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
-        @include fd-list-padding-top-bottom(1rem);
+        @include fd-set-paddings-y-equal(1rem);
       }
     }
   }

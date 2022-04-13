@@ -4,7 +4,7 @@
   &__item-counter {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-set-margin-left($fd-list-item-counter-spacing);
+    @include fd-set-margin-left(1rem);
 
     color: var(--sapContent_MarkerTextColor);
   }

@@ -3,24 +3,15 @@
 
 $block: #{$fd-namespace}-list;
 
-$form-item: #{$fd-namespace}-form-item;
-
 $fd-list-item-padding-x: 1rem !default;
 $fd-dropdown-vertical-padding: 0.75rem !default;
 $fd-dropdown-vertical-compact-padding: 0.5rem !default;
 $fd-checkbox-dimensions: 1.375rem !default;
-$fd-list-last-item-bottom-border-radius: var(--sapElement_BorderCornerRadius) !default;
-$fd-list-form-item-margin-x: -1rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;
-$fd-list-message-padding-left: 0.5rem !default;
 $fd-list-selected-state-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-$fd-list-item-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
-$fd-list-byline-padding-top: 0.75rem !default;
 $fd-list-byline-thumbnail-dimensions: 3rem !default;
-$fd-list-byline-thumbnail-border-radius: 0.25rem !default;
-$fd-list-byline-thumbnail-spacing: 0.75rem !default;
 $fd-list-byline-item-height: 5rem !default;
 $fd-list-byline-text-line-height: 1rem !default;
 $fd-list-byline-elements-spacing: 0.5rem !default;
@@ -28,27 +19,12 @@ $fd-list-byline-item-padding-x: 1rem !default;
 $fd-list-byline-item-padding-y: 1rem !default;
 $fd-list-byline-borderless-item-padding-y: 0.5rem !default;
 $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
-$fd-list-form-item-margin-top: -0.5rem !default;
-$fd-list-byline-form-item-top-offset: 0.3125rem !default;
-$fd-list-byline-form-item-compact-top-offset: 0.5rem !default;
-$fd-list-byline-form-item-left-offset: 0.375rem !default;
-$fd-list-byline-form-item-label-top-offset: 0.375rem !default;
-$fd-list-byline-counter-container-width: 2rem !default;
 
 $fd-list-selection-container-width: 2.75rem !default;
-$fd-list-selection-form-item-compact-left-offset: 0.375rem !default;
 
-$fd-list-navigation-indicator-width: 2.5rem !default;
-$fd-list-navigation-navigator-bar-right: inset -0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
-$fd-list-navigation-navigator-bar-left: inset 0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
 $fd-list-navigation-indicator-width: 2.75rem !default;
 
-$fd-list-item-counter-spacing: 1rem !default;
-
-$fd-list-rating-indicator-spacing: 0.5rem !default;
-
 $fd-list-dropdown-max-width: 40rem !default;
-$fd-list-dropdown-optional-max-width: 62rem !default;
 
 $semantic-color: (
   "neutral": ("color": var(--sapNeutralTextColor)),
@@ -170,11 +146,6 @@ $semantic-color: (
   }
 }
 
-@mixin fd-list-padding-top-bottom($padding-y) {
-  padding-top: $padding-y;
-  padding-bottom: $padding-y;
-}
-
 @mixin fd-list-reset-item-paddings() {
   .#{$block}__item--link {
     padding: 0;
@@ -184,12 +155,13 @@ $semantic-color: (
 @mixin fd-list-navigation-byline-borderless() {
   .#{$block}__item--link {
     .#{$block}__link {
-      @include fd-list-padding-top-bottom(0.5rem);
+      @include fd-set-paddings-y-equal(0.5rem);
     }
   }
 
   .#{$block}__item--link:first-child {
     padding-top: 0;
+
     .#{$block}__link {
       padding-top: 1rem;
     }
@@ -201,6 +173,7 @@ $semantic-color: (
 
   .#{$block}__item--link:last-child {
     padding-bottom: 0;
+
     .#{$block}__link {
       padding-bottom: 1rem;
     }

@@ -57,10 +57,10 @@
     }
 
     .is-navigated {
-      box-shadow: $fd-list-navigation-navigator-bar-right;
+      box-shadow: inset -0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
 
       @include fd-rtl() {
-        box-shadow: $fd-list-navigation-navigator-bar-left;
+        box-shadow: inset 0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
       }
     }
   }

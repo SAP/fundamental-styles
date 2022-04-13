@@ -22,7 +22,7 @@
   &__item {
     @include fd-list-fake-outline();
 
-    border-bottom: $fd-list-item-border;
+    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     background: var(--sapList_Background);
     position: relative;
 
@@ -87,7 +87,7 @@
       .#{$block}__title-text {
         @include fd-reset();
         @include fd-ellipsis();
-        @include fd-set-margin-left($fd-list-rating-indicator-spacing);
+        @include fd-set-margin-left(0.5rem);
 
         color: inherit;
         text-shadow: inherit;
@@ -210,7 +210,7 @@
 
   &__message {
     @include fd-reset();
-    @include fd-set-padding-left($fd-list-message-padding-left);
+    @include fd-set-padding-left(0.5rem);
 
     position: absolute;
     line-height: 2rem;

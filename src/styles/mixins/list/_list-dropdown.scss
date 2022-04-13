@@ -158,7 +158,7 @@
     }
 
     &.#{$block}--large-dropdown {
-      @include list-width-limit($fd-list-dropdown-optional-max-width);
+      @include list-width-limit(62rem);
     }
   }
 }
