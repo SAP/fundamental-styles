@@ -80,6 +80,16 @@ $block: #{$fd-namespace}-dynamic-page;
       bottom: -$fd-button-touchable-area;
     }
 
+    @include fd-hover() {
+      background: var(--sapButton_Hover_Background);
+      border-color: var(--sapButton_Hover_BorderColor);
+    }
+
+    @include fd-active() {
+      background: var(--sapButton_Active_Background);
+      border-color: var(--sapButton_Active_BorderColor);
+    }
+
     @include fd-rtl() {
       > [class*='sap-icon'] {
         &:last-child {
