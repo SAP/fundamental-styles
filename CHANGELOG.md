@@ -1,4 +1,11 @@
 
+### [0.21.2](https://github.com/SAP/fundamental-styles/compare/v0.21.1...v0.21.2) (2022-04-14)
+
+
+### Bug Fixes
+
+* **styles:** fix message page icon opacity ([b36be86](https://github.com/SAP/fundamental-styles/commit/b36be865fad85f573beb502b37c4aa91ed8aa46d))
+
 ### [0.21.1](https://github.com/SAP/fundamental-styles/compare/v0.21.1-rc.6...v0.21.1) (2022-02-09)
 
 ### 0.21.1-rc.6 (2022-02-09)
