@@ -1,4 +1,11 @@
 
+## 0.24.0-rc.35 (2022-04-14)
+
+
+### Features
+
+* **styles:** icon tabs header horizon delta theming ([#3301](https://github.com/SAP/fundamental-styles/issues/3301)) ([3dbfa87](https://github.com/SAP/fundamental-styles/commit/3dbfa87cc8a27022344348013a6b13a59f64c0fb))
+
 ## 0.24.0-rc.34 (2022-04-14)
 
 ## 0.24.0-rc.33 (2022-04-13)
