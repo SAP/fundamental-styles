@@ -4,9 +4,15 @@ set -u -e
 
 source .ci-env/flags.sh
 
-#PACKAGES=(core platform moment-adapter)
 HOTFIX_BRANCH=hotfix_tmp_branch_for_automated_release_do_not_use
 MASTER_BRANCH=refs/heads/main
+PACKAGE_THEMING_PREVIEW=theming-preview
+PACKAGE_FN=fn
+PACKAGE_FN_ICONS=fn-icons
+PACKAGE_PREFIX=@fundamental-styles
+DIST_THEMING_PREVIEW=dist-theming
+DIST_FN=dist-fn
+DIST_FN_ICONS=dist-fn-icons
 OLD_TAG=$(git describe --tags --abbrev=0)
 
 git config --global user.email $GH_EMAIL
@@ -54,3 +60,30 @@ if [[ $latest == "true" ]]; then
   git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" $MASTER_BRANCH > /dev/null;
 fi
 ``
+npm run build:prod
+npm publish --tag archive
+
+#publish dist-fn package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
+
+cd ${DIST_FN}
+ls
+npm publish --tag archive
+cd ..
+
+#publish dist-fn-icons package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN_ICONS}"
+
+cd ${DIST_FN_ICONS}
+ls
+npm publish --tag archive
+cd ..
+
+#build dist-theming package
+npm run build:theming-preview
+npm run sync-versions
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_THEMING_PREVIEW}"
+
+cd ${DIST_THEMING_PREVIEW}
+npm publish --tag archive
+cd ..
