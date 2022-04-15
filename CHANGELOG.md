@@ -1,4 +1,11 @@
 
+### [0.21.3](https://github.com/SAP/fundamental-styles/compare/v0.21.2...v0.21.3) (2022-04-15)
+
+
+### Bug Fixes
+
+* **styles:** minify styles during hotfix ([5ca0a2b](https://github.com/SAP/fundamental-styles/commit/5ca0a2b4978eed980fcc459905aebe3f7de6926c))
+
 ### [0.21.2](https://github.com/SAP/fundamental-styles/compare/v0.21.1...v0.21.2) (2022-04-14)
 
 
