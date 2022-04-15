@@ -60,7 +60,7 @@ if [[ $latest == "true" ]]; then
   git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" $MASTER_BRANCH > /dev/null;
 fi
 ``
-
+npm run build:prod
 npm publish --tag archive
 
 #publish dist-fn package
