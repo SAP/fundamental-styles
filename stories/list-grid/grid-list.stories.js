@@ -67,7 +67,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
@@ -77,9 +77,9 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <i class="sap-icon--decline"></i>
                         </button>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -246,15 +246,15 @@ export const Group = () => `<div style="min-height: 600px;">
             </div>
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -405,15 +405,15 @@ export const States = () => `<div style="min-height: 600px;">
             </div>
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--unread">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link fd-grid-list__item--unread">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -592,7 +592,7 @@ export const Highlight = () => `<div style="min-height: 350px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <span class="fd-grid-list__highlight fd-grid-list__highlight--positive" aria-label="Item is highlighted. Status: positive."></span>
 
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
@@ -600,9 +600,9 @@ export const Highlight = () => `<div style="min-height: 350px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -764,15 +764,15 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -912,15 +912,15 @@ export const More = () => `<div style="min-height: 400px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -1071,15 +1071,15 @@ export const Footer = () => `<div style="min-height: 300px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">

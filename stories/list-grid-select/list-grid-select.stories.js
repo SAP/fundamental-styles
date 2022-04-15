@@ -73,9 +73,9 @@ export const NoneMode = () => `<div style="min-height: 500px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -201,9 +201,9 @@ export const NoneMode = () => `<div style="min-height: 500px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
                     <div class="fd-grid-list__item-body">
                         <div class="grid-list-item-body-example">
@@ -299,9 +299,9 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -458,7 +458,7 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1761" tabindex="-1"></label>
@@ -467,9 +467,9 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -628,7 +628,7 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh1v761541" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1v761541" tabindex="-1"></label>
@@ -637,9 +637,9 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
@@ -808,9 +808,9 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">

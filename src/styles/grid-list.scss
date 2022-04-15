@@ -21,6 +21,35 @@ $fd-grid-list-highlight: (
   'neutral': ('backgroundColor': var(--sapNeutralBorderColor))
 );
 
+@mixin fd-grid-list-item-interactive($setActive) {
+  @include fd-hover() {
+    box-shadow: 0 0 0 0.0625rem var(--fdGrid_List_Item_Hover_Border_Color);
+    background-color: $fd-grid-list-item-hover-background-color;
+  }
+
+  @if $setActive {
+    @include fd-active() {
+      &:not([aria-selected="true"], .is-selected) {
+        background-color: $fd-grid-list-item-active-background-color;
+
+        * {
+          color: $fd-grid-list-active-text-color !important;
+          text-shadow: none !important;
+        }
+      }
+    }
+  }
+
+  @include fd-selected() {
+    box-shadow: 0 0 0 0.125rem $fd-grid-list-selection-border-color;
+    background-color: var(--sapList_SelectionBackgroundColor);
+
+    @include fd-hover() {
+      background-color: var(--sapList_Hover_SelectionBackground);
+    }
+  }
+}
+
 @mixin fd-grid-list-select-input($type) {
   &__#{$type}-input {
     height: 1rem;
@@ -66,22 +95,16 @@ $fd-grid-list-highlight: (
       }
     }
 
-    // TODO: Rename to have item suffix, don't use button
-    .#{$block}__btn-navigation {
-      color: var(--sapContent_NonInteractiveIconColor);
-
-      @include fd-rtl() {
-        transform: rotate(180deg);
-      }
-    }
-
     &--unread {
       .#{$block-item}-body * {
         font-weight: bold;
       }
     }
 
+    // Link modifier also applies to the items that can be clicked, even without a link
     &--link {
+      @include fd-grid-list-item-interactive(true);
+
       cursor: pointer;
 
       @include fd-navigated() {
@@ -130,6 +153,21 @@ $fd-grid-list-highlight: (
 
     &-counter {
       color: var(--sapContent_MarkerTextColor);
+    }
+
+    &-navigation-indicator {
+      @include fd-set-margin-right(-1rem);
+
+      height: 100%;
+      width: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--sapContent_NonInteractiveIconColor);
+
+      @include fd-rtl() {
+        transform: rotate(180deg);
+      }
     }
   }
 
@@ -255,39 +293,6 @@ $fd-grid-list-highlight: (
   }
 
   &--mode {
-    &-multi-select,
-    &-single-select,
-    &-single-select-left,
-    &-single-select-right {
-      .#{$block-item} {
-        // TODO: Get details from designers
-        @include fd-hover() {
-          box-shadow: 0 0 0 0.0625rem var(--fdGrid_List_Item_Hover_Border_Color);
-          background-color: $fd-grid-list-item-hover-background-color;
-        }
-
-        @include fd-active() {
-          &:not([aria-selected="true"], .is-selected) {
-            background-color: $fd-grid-list-item-active-background-color;
-
-            * {
-              color: $fd-grid-list-active-text-color !important;
-              text-shadow: none !important;
-            }
-          }
-        }
-
-        @include fd-selected() {
-          box-shadow: 0 0 0 0.125rem $fd-grid-list-selection-border-color;
-          background-color: var(--sapList_SelectionBackgroundColor);
-
-          @include fd-hover() {
-            background-color: var(--sapList_Hover_SelectionBackground);
-          }
-        }
-      }
-    }
-
     &-single-select-right,
     &-single-select-left,
     &-multi-select {
@@ -303,6 +308,8 @@ $fd-grid-list-highlight: (
 
     &-single-select {
       .#{$block-item} {
+        @include fd-grid-list-item-interactive(false);
+
         cursor: pointer;
 
         .#{$block}__radio-input {
