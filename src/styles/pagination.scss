@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-pagination;
 
 @mixin fd-pagination-mobile() {
   .#{$block}__per-page + .#{$block}__nav {
-    @include fd-set-margins-x('auto', 0);
+    @include fd-set-margins-x(auto, 0);
   }
 
   .#{$block}__total,
@@ -51,7 +51,7 @@ $block: #{$fd-namespace}-pagination;
   &__nav {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-set-margins-x-equal('auto');
+    @include fd-set-margins-x-equal(auto);
   }
 
   &__more {
