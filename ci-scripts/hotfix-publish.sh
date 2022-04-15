@@ -7,6 +7,17 @@ source .ci-env/flags.sh
 #PACKAGES=(core platform moment-adapter)
 HOTFIX_BRANCH=hotfix_tmp_branch_for_automated_release_do_not_use
 MASTER_BRANCH=refs/heads/main
+PACKAGE_PREFIX=@fundamental-styles
+DIST_DIRS = (dist-theming dist-common-css )
+PCKG_NAMES = (theming-preview common-css)
+PACKAGE_THEMING_PREVIEW=theming-preview
+DIST_THEMING_PREVIEW=dist-theming
+DIST_COMMON_CSS=dist-common-css
+PACKAGE_FN=fn
+DIST_FN=dist-fn
+PACKAGE_FN_ICONS=fn-icons
+PACKAGE_COMMON_CSS=common-css
+DIST_FN_ICONS=dist-fn-icons
 OLD_TAG=$(git describe --tags --abbrev=0)
 
 git config --global user.email $GH_EMAIL
@@ -54,3 +65,38 @@ if [[ $latest == "true" ]]; then
   git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" $MASTER_BRANCH > /dev/null;
 fi
 ``
+
+# build dist and component folders
+npm run build:prod
+
+npm publish
+
+# publish fn package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN}"
+
+cd ${DIST_FN}
+npm publish
+cd ..
+
+# publish fn-icons package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_FN_ICONS}"
+
+cd ${DIST_FN_ICONS}
+npm publish
+cd ..
+
+# publish common-css package
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_COMMON_CSS}"
+
+cd ${DIST_COMMON_CSS}
+npm publish
+cd ..
+
+# build dist-theming package
+npm run build:theming-preview
+npm run sync-versions
+
+echo publish "${PACKAGE_PREFIX}/${PACKAGE_THEMING_PREVIEW}"
+cd ${DIST_THEMING_PREVIEW}
+npm publish
+cd ..
