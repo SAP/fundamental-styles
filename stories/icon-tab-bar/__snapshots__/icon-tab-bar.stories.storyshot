@@ -3889,7 +3889,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
   dir="ltr"
 >
   <div
-    class="fd-icon-tab-bar"
+    class="fd-icon-tab-bar fd-icon-tab-bar--process"
   >
     
     
@@ -3900,7 +3900,7 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       
         
       <li
-        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow-left"
+        class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
       >
         
@@ -3924,6 +3924,20 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
           
             
         </button>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-icon-tab-bar__icon-separator"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon--process"
+        />
         
         
       </li>
@@ -3962,6 +3976,20 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       
         
       <li
+        class="fd-icon-tab-bar__icon-separator"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon--process"
+        />
+        
+        
+      </li>
+      
+        
+      <li
         class="fd-icon-tab-bar__item"
         role="presentation"
       >
@@ -3990,6 +4018,20 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       
         
       <li
+        class="fd-icon-tab-bar__icon-separator"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon--process"
+        />
+        
+        
+      </li>
+      
+        
+      <li
         class="fd-icon-tab-bar__item"
         role="presentation"
       >
@@ -4011,6 +4053,20 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
           
             
         </a>
+        
+        
+      </li>
+      
+        
+      <li
+        class="fd-icon-tab-bar__icon-separator"
+        tabindex="-1"
+      >
+        
+            
+        <span
+          class="sap-icon--process"
+        />
         
         
       </li>
@@ -4158,7 +4214,6 @@ exports[`Storyshots Components/Icon Tab Bar Overflow 1`] = `
       <li
         class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow"
         role="presentation"
-        style="left: 17rem;"
       >
         
             

@@ -449,7 +449,7 @@ exports[`Storyshots Components/Card List card 1`] = `
         
       <div
         aria-label="List Card Example 1"
-        class="fd-card"
+        class="fd-card fd-card--list"
         role="region"
       >
         
@@ -662,7 +662,7 @@ exports[`Storyshots Components/Card List card 1`] = `
         
       <div
         aria-label="List Card Example 2"
-        class="fd-card"
+        class="fd-card fd-card--list"
         role="region"
       >
         

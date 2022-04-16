@@ -1341,21 +1341,33 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
         <td
           class="fd-table__cell"
         >
-          First Name
+          <span
+            class="fd-table__text"
+          >
+            First Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          Last Name
+          <span
+            class="fd-table__text"
+          >
+            Last Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          01/26/17
+          <span
+            class="fd-table__text"
+          >
+            01/26/17
+          </span>
         </td>
         
         
@@ -1643,21 +1655,33 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
         <td
           class="fd-table__cell"
         >
-          First Name
+          <span
+            class="fd-table__text"
+          >
+            First Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          Last Name
+          <span
+            class="fd-table__text"
+          >
+            Last Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          01/26/17
+          <span
+            class="fd-table__text"
+          >
+            01/26/17
+          </span>
         </td>
         
         
@@ -1945,21 +1969,33 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
         <td
           class="fd-table__cell"
         >
-          First Name
+          <span
+            class="fd-table__text"
+          >
+            First Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          Last Name
+          <span
+            class="fd-table__text"
+          >
+            Last Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          01/26/17
+          <span
+            class="fd-table__text"
+          >
+            01/26/17
+          </span>
         </td>
         
         
@@ -6824,21 +6860,33 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
         <td
           class="fd-table__cell"
         >
-          First Name
+          <span
+            class="fd-table__text"
+          >
+            First Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          Last Name
+          <span
+            class="fd-table__text"
+          >
+            Last Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          01/26/17
+          <span
+            class="fd-table__text"
+          >
+            01/26/17
+          </span>
         </td>
         
             
@@ -6902,21 +6950,33 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
         <td
           class="fd-table__cell"
         >
-          First Name
+          <span
+            class="fd-table__text"
+          >
+            First Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          Last Name
+          <span
+            class="fd-table__text"
+          >
+            Last Name
+          </span>
         </td>
         
             
         <td
           class="fd-table__cell"
         >
-          01/26/17
+          <span
+            class="fd-table__text"
+          >
+            01/26/17
+          </span>
         </td>
         
             

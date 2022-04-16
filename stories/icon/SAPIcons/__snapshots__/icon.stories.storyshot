@@ -8010,6 +8010,12 @@ exports[`Storyshots Components/Icons/SAP Icons Colors 1`] = `
   />
   
 
+  <span
+    class="sap-icon sap-icon--cart sap-icon--color-information"
+    style="font-size:5rem"
+  />
+  
+
 </div>
 `;
 
