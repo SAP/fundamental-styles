@@ -74,7 +74,7 @@
     "@storybook/addon-actions": "6.4.21",
     "@storybook/addon-controls": "6.4.21",
     "@storybook/addon-cssresources": "6.2.9",
-    "@storybook/addon-docs": "6.4.21",
+    "@storybook/addon-docs": "6.4.22",
     "@storybook/addon-links": "6.4.21",
     "@storybook/addon-storyshots": "6.4.21",
     "@storybook/addon-toolbars": "6.4.21",
