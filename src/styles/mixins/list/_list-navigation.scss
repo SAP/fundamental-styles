@@ -5,13 +5,13 @@
     @include fd-list-reset-item-paddings();
 
     .#{$block}__link {
-      @include fd-list-padding-left-right($fd-list-item-padding-x, $fd-list-item-padding-x);
+      @include fd-set-paddings-x($fd-list-item-padding-x, $fd-list-item-padding-x);
     }
 
     // NAVIGATION + Navigation Indication
     &.#{$block}--navigation-indication {
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-item-padding-x, 0);
+        @include fd-set-paddings-x($fd-list-item-padding-x, 0);
       }
     }
 
@@ -20,7 +20,7 @@
       @include fd-list-reset-item-paddings();
 
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-item-padding-x);
       }
     }
 
@@ -29,7 +29,7 @@
       @include fd-list-reset-item-paddings();
 
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, 0);
+        @include fd-set-paddings-x($fd-list-selection-container-width, 0);
       }
     }
 
@@ -39,7 +39,7 @@
       @include fd-list-reset-item-paddings();
 
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
         @include fd-set-paddings-y-equal(1rem);
       }
     }
@@ -47,7 +47,7 @@
     // NAVIGATION + BYLINE + Navigation Indication
     &.#{$block}--byline.#{$block}--navigation-indication {
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-item-padding-x, 0);
+        @include fd-set-paddings-x($fd-list-item-padding-x, 0);
       }
     }
 
@@ -61,7 +61,7 @@
       @include fd-list-reset-item-paddings();
 
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
       }
     }
 
@@ -70,7 +70,7 @@
       @include fd-list-reset-item-paddings();
 
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
       }
     }
 
@@ -85,14 +85,14 @@
       @include fd-list-reset-item-paddings();
 
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, 0);
+        @include fd-set-paddings-x($fd-list-selection-container-width, 0);
       }
     }
 
     // NAVIGATION + BYLINE + SELECTION + NAVIGATION INDICATION + Compact
     &.#{$block}--byline.#{$block}--selection.#{$block}--navigation-indication.#{$block}--compact {
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, 0);
+        @include fd-set-paddings-x($fd-list-selection-container-width, 0);
       }
     }
 
@@ -110,7 +110,7 @@
       }
 
       .#{$block}__link {
-        @include fd-list-padding-left-right($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
         @include fd-set-paddings-y-equal(1rem);
       }
     }

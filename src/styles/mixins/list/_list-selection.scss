@@ -3,7 +3,7 @@
 .#{$block} {
   &--selection {
     .#{$block}__item {
-      @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-item-padding-x);
+      @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-item-padding-x);
 
       @include fd-hover() {
         background: var(--sapList_Hover_Background);
@@ -34,7 +34,7 @@
     // SELECTION + Byline
     &.#{$block}--byline {
       .#{$block}__item {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
       }
 
       .#{$block}__form-item {
@@ -45,7 +45,7 @@
     // SELECTION + BYLINE + Compact
     &.#{$block}--byline.#{$block}--compact {
       .#{$block}__item {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
       }
 
       .#{$block}__form-item {
@@ -58,7 +58,7 @@
     // SELECTION + BYLINE + Borderless
     &.#{$block}--byline.#{$block}--no-border {
       .#{$block}__item {
-        @include fd-list-padding-left-right($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-selection-container-width, $fd-list-byline-item-padding-x);
         @include fd-set-paddings-y-equal($fd-list-byline-borderless-item-padding-y);
 
         &:first-child {

@@ -120,18 +120,7 @@ $semantic-color: (
 @mixin fd-list-ie11-active-state-fix() {
   // :active selector has issues in IE11 when there are nested elements.
   // The solution is to remove the pointer events from the nested elements.
-
   pointer-events: none;
-}
-
-@mixin fd-list-padding-left-right($left, $right) {
-  padding-left: $left;
-  padding-right: $right;
-
-  @include fd-rtl() {
-    padding-left: $right;
-    padding-right: $left;
-  }
 }
 
 @mixin fd-list-reset-item-paddings() {
@@ -168,29 +157,6 @@ $semantic-color: (
 
     .#{$block}__link--navigation-indicator::after {
       margin-top: 0.25rem;
-    }
-  }
-}
-
-@mixin fd-list-fake-arrow-focus() {
-  @include fd-focus() {
-    outline: none;
-
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-      top: 0.125rem;
-      left: 0.125rem;
-      right: 0.125rem;
-      bottom: 0.125rem;
-    }
-
-    @include fd-active() {
-      &::after {
-        border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
-      }
     }
   }
 }

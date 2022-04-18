@@ -11,9 +11,8 @@
   &__group-header,
   &__footer {
     @include fd-reset();
+    @include fd-flex-vertical-center();
 
-    display: flex;
-    align-items: center;
     padding: 0 $fd-list-item-padding-x;
     height: 2.75rem;
   }
@@ -94,8 +93,7 @@
     }
 
     &--inactive {
-      pointer-events: none;
-
+      &,
       .#{$block}__title,
       .#{$block}__secondary {
         pointer-events: none;
@@ -161,12 +159,11 @@
 
   &__link {
     @include fd-reset();
+    @include fd-flex-vertical-center();
     @include fd-list-fake-outline();
     @include fd-list-item-states();
 
     text-decoration: none;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 100%;
     padding: 0 $fd-list-item-padding-x;
@@ -208,6 +205,7 @@
 
   &__message {
     @include fd-reset();
+    @include fd-ellipsis();
     @include fd-set-padding-left(0.5rem);
 
     position: absolute;
@@ -217,8 +215,6 @@
     left: 0;
     height: 2rem;
     font-size: var(--sapFontSmallSize);
-    overflow: hidden;
-    text-overflow: ellipsis;
 
     &--error {
       background-color: var(--sapErrorBackground);

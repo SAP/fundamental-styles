@@ -1,4 +1,5 @@
-@import '../list/list-definitions';
+@import '../../new-settings';
+@import '../mixins';
 
 $fd-list-navigation-item-height: 2.75rem !default;
 $fd-list-navigation-item-indicator-height: 1.625rem !default;
@@ -299,7 +300,6 @@ $fd-list-second-level-popover-position: 3.25rem !default;
       &-arrow {
         @include fd-reset();
         @include fd-button-reset();
-        @include fd-list-fake-arrow-focus();
         @include fd-set-position-right(0);
 
         height: $fd-list-navigation-item-height;
@@ -313,6 +313,27 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
         @include fd-rtl() {
           transform: scaleX(-1);
+        }
+
+        @include fd-focus() {
+          outline: none;
+
+          &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+            top: 0.125rem;
+            left: 0.125rem;
+            right: 0.125rem;
+            bottom: 0.125rem;
+          }
+
+          @include fd-active() {
+            &::after {
+              border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
+            }
+          }
         }
       }
     }

@@ -20,9 +20,9 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       align-items: center;
 
       .#{$block}__item-counter {
-        display: flex;
+        @include fd-flex-vertical-center();
+
         justify-content: flex-end;
-        align-items: center;
         height: 100%;
         min-width: 2rem;
       }
@@ -48,12 +48,10 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
 
     .#{$block}__content {
       @include fd-reset();
+      @include fd-flex(column);
       @include fd-list-ie11-active-state-fix();
 
-      @include fd-flex(column) {
-        align-content: space-between;
-      }
-
+      align-content: space-between;
       min-height: $fd-list-byline-thumbnail-dimensions;
       min-width: $fd-list-byline-thumbnail-dimensions;
       height: 100%;
