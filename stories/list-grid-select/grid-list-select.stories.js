@@ -79,20 +79,19 @@ export const NoneMode = () => `<div style="min-height: 500px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -109,20 +108,19 @@ export const NoneMode = () => `<div style="min-height: 500px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -131,20 +129,19 @@ export const NoneMode = () => `<div style="min-height: 500px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -153,20 +150,19 @@ export const NoneMode = () => `<div style="min-height: 500px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -175,20 +171,19 @@ export const NoneMode = () => `<div style="min-height: 500px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -205,21 +200,21 @@ export const NoneMode = () => `<div style="min-height: 500px;">
                             <i class="sap-icon--navigation-right-arrow"></i>
                         </span>
                     </div>
+
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -228,20 +223,19 @@ export const NoneMode = () => `<div style="min-height: 500px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -305,20 +299,19 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -338,20 +331,19 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -369,20 +361,19 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -394,20 +385,19 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
                     <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761642"></label>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -473,20 +463,19 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -505,20 +494,19 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -535,21 +523,19 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -564,20 +550,19 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -643,20 +628,19 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -676,20 +660,19 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -707,20 +690,19 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -734,21 +716,21 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
                         <span class="fd-toolbar__spacer"></span>
                     </div>
+
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -814,20 +796,19 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -847,20 +828,19 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -878,20 +858,19 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -909,20 +888,19 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>

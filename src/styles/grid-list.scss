@@ -127,45 +127,83 @@ $fd-grid-list-highlight: (
 
       flex-shrink: 0;
       padding: 0 1rem;
-      border-bottom-width: var(--fdGrid_List_Item_Toolbar_Border_Width);
+      border: none;
+      box-shadow: var(--fdGrid_List_Item_Toolbar_Shadow);
     }
 
     &-body {
       @include fd-reset();
-
-      @include fd-flex(column) {
-        justify-content: space-between;
-      }
+      @include fd-flex();
 
       height: 100%;
       padding: 1rem;
       word-break: break-word;
+      flex-wrap: wrap;
 
       &--no-padding {
         padding: 0;
       }
 
       &-actions {
+        @include fd-reset();
+
+        flex-basis: 100%;
         margin-top: 1rem;
         order: 1;
       }
+    }
+
+    &-header {
+      @include fd-reset();
+      @include fd-flex(column);
+
+      width: calc(100% - 3rem - 0.75rem);
+      flex: 0 0 auto;
+    }
+
+    &-image {
+      @include fd-set-margin-right(0.75rem);
+    }
+
+    &-title {
+      @include fd-reset();
+
+      white-space: normal;
+      font-size: var(--sapFontLargeSize);
+      color: var(--sapList_TextColor);
+      margin-top: 0.125rem;
+    }
+
+    &-subtitle {
+      @include fd-reset();
+
+      display: inline-block;
+      color: var(--sapContent_LabelColor);
+      margin-top: 0.5rem;
+      margin-bottom: 0.125rem;
+    }
+
+    &-content {
+      @include fd-reset();
+
+      color: var(--sapList_TextColor);
+      padding-top: 1rem;
     }
 
     &-counter {
       color: var(--sapContent_MarkerTextColor);
     }
 
-    &-navigation-indicator {
+    .#{$block-item}-navigation-indicator {
+      @include fd-flex-center();
       @include fd-set-margin-right(-1rem);
 
-      height: 100%;
+      margin-left: 0;
       width: 2.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: var(--sapContent_NonInteractiveIconColor);
 
       @include fd-rtl() {
+        margin-right: 0;
         transform: rotate(180deg);
       }
     }
