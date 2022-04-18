@@ -6,7 +6,6 @@
   position: relative;
   list-style: none;
   width: 100%;
-  text-shadow: var(--fdListBase_Text_Shadow);
 
   &__item,
   &__group-header,
@@ -62,7 +61,6 @@
         color: var(--sapButton_TextColor);
         pointer-events: all;
         cursor: pointer;
-        text-shadow: var(--fdListBase_Text_Shadow);
         margin: var(--fdList_Item_Action_Button_Spacing);
         border: var(--fdList_Item_Action_Button_Border);
         border-radius: var(--fdList_Item_Action_Button_Border_Radius);
@@ -240,7 +238,7 @@
   }
 
   .#{$block}__button {
-    @include fd-set-margin-left(var(--fdListButtonSpacing));
+    @include fd-set-margin-left(var(--fdList_Button_Spacing));
   }
 
   &--compact {
