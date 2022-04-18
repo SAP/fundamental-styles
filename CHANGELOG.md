@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.37...v0.24.0-rc.38) (2022-04-18)
+
+
+### Features
+
+* **styles:** add delta theming for Dynamic Page [ci visual] ([#3297](https://github.com/SAP/fundamental-styles/issues/3297)) ([9e099d6](https://github.com/SAP/fundamental-styles/commit/9e099d673f2759fda4061cfb27dc5ed65d256d58))
+
 ## [0.24.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.36...v0.24.0-rc.37) (2022-04-18)
 
 ## [0.24.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.35...v0.24.0-rc.36) (2022-04-18)
