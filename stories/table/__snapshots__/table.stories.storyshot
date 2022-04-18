@@ -3143,63 +3143,6 @@ exports[`Storyshots Components/Table Focusable cells 1`] = `
         
       </tr>
       
-        
-      <tr
-        class="fd-table__row"
-      >
-        
-            
-        <td
-          class="fd-table__cell fd-table__cell--focusable"
-          role="gridcell"
-          tabindex="-1"
-        >
-          <a
-            class="fd-link"
-          >
-            user.name@email.com
-          </a>
-        </td>
-        
-            
-        <td
-          class="fd-table__cell fd-table__cell--focusable"
-          role="gridcell"
-          tabindex="-1"
-        >
-          First Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell fd-table__cell--focusable"
-          role="gridcell"
-          tabindex="-1"
-        >
-          Middle Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell fd-table__cell--focusable"
-          role="gridcell"
-          tabindex="-1"
-        >
-          Last Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell fd-table__cell--focusable"
-          role="gridcell"
-          tabindex="-1"
-        >
-          01/26/17
-        </td>
-        
-        
-      </tr>
-      
     
     </tbody>
     
@@ -3300,59 +3243,6 @@ exports[`Storyshots Components/Table Focusable rows 1`] = `
     <tbody
       class="fd-table__body"
     >
-      
-        
-      <tr
-        class="fd-table__row fd-table__row--focusable"
-        tabindex="-1"
-      >
-        
-            
-        <td
-          class="fd-table__cell"
-          role="gridcell"
-        >
-          <a
-            class="fd-link"
-          >
-            user.name@email.com
-          </a>
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-          role="gridcell"
-        >
-          First Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-          role="gridcell"
-        >
-          Middle Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-          role="gridcell"
-        >
-          Last Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-          role="gridcell"
-        >
-          01/26/17
-        </td>
-        
-        
-      </tr>
       
         
       <tr
@@ -3631,46 +3521,6 @@ exports[`Storyshots Components/Table Footer (compact) 1`] = `
         
       </tr>
       
-        
-      <tr
-        class="fd-table__row"
-      >
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          <a
-            class="fd-link"
-          >
-            user.name@email.com
-          </a>
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          First Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          Last Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          01/26/17
-        </td>
-        
-        
-      </tr>
-      
     
     </tbody>
     
@@ -3801,46 +3651,6 @@ exports[`Storyshots Components/Table Footer (condensed) 1`] = `
     <tbody
       class="fd-table__body"
     >
-      
-        
-      <tr
-        class="fd-table__row"
-      >
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          <a
-            class="fd-link"
-          >
-            user.name@email.com
-          </a>
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          First Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          Last Name
-        </td>
-        
-            
-        <td
-          class="fd-table__cell"
-        >
-          01/26/17
-        </td>
-        
-        
-      </tr>
       
         
       <tr

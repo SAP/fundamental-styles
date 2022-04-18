@@ -343,12 +343,6 @@ export const CompactFooter = () => `<div class="fd-toolbar fd-toolbar--solid fd-
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
     </tbody>
     <tfoot class="fd-table__footer">
         <tr class="fd-table__row">
@@ -386,12 +380,6 @@ export const CondensedFooter = () => `<div class="fd-toolbar fd-toolbar--solid f
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell">First Name</td>
-            <td class="fd-table__cell">Last Name</td>
-            <td class="fd-table__cell">01/26/17</td>
-        </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell">First Name</td>
@@ -674,13 +662,6 @@ export const FocusableRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-
             <td class="fd-table__cell" role="gridcell">Last Name</td>
             <td class="fd-table__cell" role="gridcell">01/26/17</td>
         </tr>
-        <tr class="fd-table__row fd-table__row--focusable" tabindex="-1">
-            <td class="fd-table__cell" role="gridcell"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell" role="gridcell">First Name</td>
-            <td class="fd-table__cell" role="gridcell">Middle Name</td>
-            <td class="fd-table__cell" role="gridcell">Last Name</td>
-            <td class="fd-table__cell" role="gridcell">01/26/17</td>
-        </tr>
     </tbody>
 </table>
 `;
@@ -711,13 +692,6 @@ export const FocusableCells = () => `<div class="fd-toolbar fd-toolbar--solid fd
         </tr>
     </thead>
     <tbody class="fd-table__body">
-        <tr class="fd-table__row">
-            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
-            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Middle Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">Last Name</td>
-            <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">01/26/17</td>
-        </tr>
         <tr class="fd-table__row">
             <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1"><a class="fd-link">user.name@email.com</a></td>
             <td class="fd-table__cell fd-table__cell--focusable" role="gridcell" tabindex="-1">First Name</td>
