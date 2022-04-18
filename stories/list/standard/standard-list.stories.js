@@ -245,7 +245,7 @@ export const ActionList = () => `<h4>Standard Size</h4>
       <button class="fd-list__title">Save</button>
   </li>
   <li role="listitem" class="fd-list__item fd-list__item--action">
-      <button class="fd-list__title">More Options</button>
+      <button class="fd-list__title">Action</button>
   </li>
 </ul>
 
@@ -258,7 +258,7 @@ export const ActionList = () => `<h4>Standard Size</h4>
       <button class="fd-list__title">Save</button>
   </li>
   <li role="listitem" class="fd-list__item fd-list__item--action">
-      <button class="fd-list__title">More Options</button>
+      <button class="fd-list__title">Action</button>
   </li>
 </ul>
 
@@ -274,7 +274,7 @@ export const ActionList = () => `<h4>Standard Size</h4>
       <span class="fd-list__title">List Item 3</span>
   </li>
   <li role="listitem" class="fd-list__item fd-list__item--action">
-      <button class="fd-list__title">More Options</button>
+      <button class="fd-list__title">Action</button>
   </li>
 </ul>
 
@@ -296,7 +296,7 @@ export const ActionList = () => `<h4>Standard Size</h4>
             <div class="fd-busy-indicator--circle-1"></div>
             <div class="fd-busy-indicator--circle-2"></div>
         </div>
-        <div class="fd-list__title-text">More Options</div>
+        <div class="fd-list__title-text">Show more</div>
     </button>
   </li>
 </ul>
