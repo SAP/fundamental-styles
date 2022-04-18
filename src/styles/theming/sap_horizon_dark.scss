@@ -1,6 +1,7 @@
 @import "./common/switch/sap_horizon";
 @import "./common/button/sap_horizon";
 @import "./common/icon-tab-bar/sap_horizon";
+@import "./common/dynamic-page-layout/sap_horizon";
 
 :root {
   /* Switch */
@@ -156,9 +157,9 @@
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;
   --fdDynamicPage_Title_Header_Transparent_Background: transparent;
-  --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapHighlightColor), transparent);
-  --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapHighlightColor), transparent);
-  --fdDynamicPage_Button_Group_Background: var(--sapHighlightColor);
+  --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapObjectHeader_BorderColor), transparent);
+  --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapObjectHeader_BorderColor), transparent);
+  --fdDynamicPage_Button_Group_Background: var(--sapObjectHeader_BorderColor);
   --fdDynamicPage_Content_List_Background: var(--sapGroup_ContentBackground);
   --fdDynamicPage_Content_Transparent_Background: transparent;
 
