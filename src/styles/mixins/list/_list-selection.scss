@@ -1,7 +1,5 @@
 @import "./list-definitions";
 
-$block: #{$fd-namespace}-list;
-
 .#{$block} {
   &--selection {
     .#{$block}__item {

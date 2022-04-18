@@ -1,32 +1,31 @@
 @import "./new-settings";
 @import "./mixins";
-@import './mixins/list/list-definitions';
+@import './mixins/vertical-nav/vertical-nav-navigation';
 
 $block: #{$fd-namespace}-vertical-nav;
 
 .#{$block} {
   @include fd-reset();
+  @include fd-flex(column);
+  @include fd-vertical-nav-navigation();
 
-  @include fd-flex(column) {
-    justify-content: space-between;
-  }
-
+  justify-content: space-between;
   background-color: var(--sapList_AlternatingBackground);
-  width: 15rem;
   text-shadow: var(--fdVerticalNav_Text_Shadow);
   box-shadow: var(--sapContent_Shadow0);
+  width: 15rem;
   height: 100%;
 
   &--overflow {
     overflow-y: scroll;
   }
 
-  &__main-navigation {
-    @include fd-reset();
-  }
-
   &--condensed {
     width: 3.25rem;
+  }
+
+  &__main-navigation {
+    @include fd-reset();
   }
 
   .#{$block}__group-header {
