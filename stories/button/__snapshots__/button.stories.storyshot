@@ -1503,6 +1503,47 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
         
     <div
       aria-label="button-split"
+      class="fd-button-split fd-button-split--emphasized fd-has-margin-right-small"
+      role="group"
+    >
+      
+          
+      <button
+        aria-label="button"
+        class="fd-button fd-button--emphasized"
+      >
+        
+            
+        <span
+          class="fd-button-split__text"
+        >
+          Emphasized
+        </span>
+        
+          
+      </button>
+      
+          
+      <button
+        aria-expanded="false"
+        class="fd-button fd-button--emphasized"
+      >
+        
+            
+        <i
+          class="sap-icon--slim-arrow-down"
+        />
+        
+          
+      </button>
+      
+        
+    </div>
+    
+        
+        
+    <div
+      aria-label="button-split"
       class="fd-button-split fd-has-margin-right-small"
       role="group"
     >
@@ -1517,7 +1558,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
         <span
           class="fd-button-split__text"
         >
-          Button with a big amount of text
+          Standard
         </span>
         
           
@@ -1525,92 +1566,17 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
       
           
       <button
-        aria-controls="t4c0o273"
         aria-expanded="false"
-        aria-haspopup="true"
-        aria-label="More"
         class="fd-button"
       >
+        
+            
         <i
           class="sap-icon--slim-arrow-down"
         />
+        
+          
       </button>
-      
-          
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
-        id="t4c0o273"
-      >
-        
-            
-        <nav
-          class="fd-menu"
-        >
-          
-                
-          <ul
-            class="fd-menu__list fd-menu__list--no-shadow"
-          >
-            
-                  
-            <li
-              class="fd-menu__item"
-            >
-              
-                      
-              <a
-                class="fd-menu__link"
-                href="#"
-                role="button"
-              >
-                
-                          
-                <span
-                  class="fd-menu__title"
-                >
-                  Add to list
-                </span>
-                
-                      
-              </a>
-              
-                  
-            </li>
-            
-                  
-            <li
-              class="fd-menu__item"
-            >
-              
-                      
-              <a
-                class="fd-menu__link"
-                href="#"
-                role="button"
-              >
-                
-                          
-                <span
-                  class="fd-menu__title"
-                >
-                  Save for later
-                </span>
-                
-                      
-              </a>
-              
-                  
-            </li>
-            
-                
-          </ul>
-          
-            
-        </nav>
-        
-          
-      </div>
       
         
     </div>
@@ -1619,124 +1585,7 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
         
     <div
       aria-label="button-split"
-      class="fd-button-split fd-button-split--emphasized"
-      role="group"
-    >
-      
-          
-      <button
-        aria-label="button"
-        class="fd-button fd-button--emphasized"
-      >
-        
-            
-        <span
-          class="fd-button-split__text"
-        >
-          Button with text
-        </span>
-        
-          
-      </button>
-      
-          
-      <button
-        aria-controls="t4c0o2732"
-        aria-expanded="false"
-        aria-haspopup="true"
-        aria-label="More"
-        class="fd-button fd-button--emphasized"
-      >
-        <i
-          class="sap-icon--slim-arrow-down"
-        />
-      </button>
-      
-
-          
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
-        id="t4c0o2732"
-      >
-        
-            
-        <nav
-          class="fd-menu"
-        >
-          
-                
-          <ul
-            class="fd-menu__list fd-menu__list--no-shadow"
-          >
-            
-                  
-            <li
-              class="fd-menu__item"
-            >
-              
-                      
-              <a
-                class="fd-menu__link"
-                href="#"
-                role="button"
-              >
-                
-                          
-                <span
-                  class="fd-menu__title"
-                >
-                  Add to list
-                </span>
-                
-                      
-              </a>
-              
-                  
-            </li>
-            
-                  
-            <li
-              class="fd-menu__item"
-            >
-              
-                      
-              <a
-                class="fd-menu__link"
-                href="#"
-                role="button"
-              >
-                
-                          
-                <span
-                  class="fd-menu__title"
-                >
-                  Save for later
-                </span>
-                
-                      
-              </a>
-              
-                  
-            </li>
-            
-                
-          </ul>
-          
-            
-        </nav>
-        
-          
-      </div>
-      
-        
-    </div>
-    
-
-        
-    <div
-      aria-label="button-split"
-      class="fd-button-split fd-button-split--transparent"
+      class="fd-button-split fd-button-split--transparent fd-has-margin-right-small"
       role="group"
     >
       
@@ -1750,102 +1599,189 @@ exports[`Storyshots Components/Button Split menu button 1`] = `
         <span
           class="fd-button-split__text"
         >
-          
-                Button with text
-            
+          Transparent
         </span>
         
-         
+          
       </button>
       
           
       <button
-        aria-controls="t4c0o27322"
         aria-expanded="false"
-        aria-haspopup="true"
-        aria-label="More"
         class="fd-button fd-button--transparent"
       >
+        
+            
         <i
           class="sap-icon--slim-arrow-down"
         />
+        
+          
       </button>
       
+        
+    </div>
+    
+        
+        
+    <div
+      aria-label="button-split"
+      class="fd-button-split fd-button-split--ghost fd-has-margin-right-small"
+      role="group"
+    >
+      
           
-      <div
-        aria-hidden="true"
-        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right"
-        id="t4c0o27322"
+      <button
+        aria-label="button"
+        class="fd-button fd-button--ghost"
       >
         
             
-        <nav
-          class="fd-menu"
+        <span
+          class="fd-button-split__text"
         >
-          
-                
-          <ul
-            class="fd-menu__list fd-menu__list--no-shadow"
-          >
-            
-                  
-            <li
-              class="fd-menu__item"
-            >
-              
-                      
-              <a
-                class="fd-menu__link"
-                href="#"
-                role="button"
-              >
-                
-                          
-                <span
-                  class="fd-menu__title"
-                >
-                  Add to list
-                </span>
-                
-                      
-              </a>
-              
-                  
-            </li>
-            
-                  
-            <li
-              class="fd-menu__item"
-            >
-              
-                      
-              <a
-                class="fd-menu__link"
-                href="#"
-                role="button"
-              >
-                
-                          
-                <span
-                  class="fd-menu__title"
-                >
-                  Save for later
-                </span>
-                
-                      
-              </a>
-              
-                  
-            </li>
-            
-                
-          </ul>
-          
-            
-        </nav>
+          Ghost
+        </span>
         
           
-      </div>
+      </button>
+      
+          
+      <button
+        aria-expanded="false"
+        class="fd-button fd-button--ghost"
+      >
+        
+            
+        <i
+          class="sap-icon--slim-arrow-down"
+        />
+        
+          
+      </button>
+      
+        
+    </div>
+    
+        
+        
+    <div
+      aria-label="button-split"
+      class="fd-button-split fd-button-split--positive fd-has-margin-right-small"
+      role="group"
+    >
+      
+          
+      <button
+        aria-label="button"
+        class="fd-button fd-button--positive"
+      >
+        
+            
+        <span
+          class="fd-button-split__text"
+        >
+          Positive
+        </span>
+        
+          
+      </button>
+      
+          
+      <button
+        aria-expanded="false"
+        class="fd-button fd-button--positive"
+      >
+        
+            
+        <i
+          class="sap-icon--slim-arrow-down"
+        />
+        
+          
+      </button>
+      
+        
+    </div>
+    
+        
+        
+    <div
+      aria-label="button-split"
+      class="fd-button-split fd-button-split--negative fd-has-margin-right-small"
+      role="group"
+    >
+      
+          
+      <button
+        aria-label="button"
+        class="fd-button fd-button--negative"
+      >
+        
+            
+        <span
+          class="fd-button-split__text"
+        >
+          Negative
+        </span>
+        
+          
+      </button>
+      
+          
+      <button
+        aria-expanded="false"
+        class="fd-button fd-button--negative"
+      >
+        
+            
+        <i
+          class="sap-icon--slim-arrow-down"
+        />
+        
+          
+      </button>
+      
+        
+    </div>
+    
+        
+        
+    <div
+      aria-label="button-split"
+      class="fd-button-split fd-button-split--attention fd-has-margin-right-small"
+      role="group"
+    >
+      
+          
+      <button
+        aria-label="button"
+        class="fd-button fd-button--attention"
+      >
+        
+            
+        <span
+          class="fd-button-split__text"
+        >
+          Attention
+        </span>
+        
+          
+      </button>
+      
+          
+      <button
+        aria-expanded="false"
+        class="fd-button fd-button--attention"
+      >
+        
+            
+        <i
+          class="sap-icon--slim-arrow-down"
+        />
+        
+          
+      </button>
       
         
     </div>
