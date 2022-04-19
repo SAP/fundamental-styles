@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.38...v0.24.0-rc.39) (2022-04-19)
+
+
+### Bug Fixes
+
+* **styles:** menu sub-items should expand the menu width ([#3346](https://github.com/SAP/fundamental-styles/issues/3346)) ([e7c6d13](https://github.com/SAP/fundamental-styles/commit/e7c6d13536392c4ef6686fdab58dc5287e0e8811))
+
 ## [0.24.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.37...v0.24.0-rc.38) (2022-04-18)
 
 
