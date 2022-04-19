@@ -330,6 +330,7 @@ $fd-calendar-special-days: (
       padding-top: $fd-calendar-item-helper-height;
 
       .#{$block}__item {
+        background-color: var(--sapButton_Lite_Background);
         max-height: $fd-calendar-item-height;
 
         .#{$block}__text {
@@ -338,25 +339,29 @@ $fd-calendar-special-days: (
       }
     }
 
-    &:not(&--years):not(&--months) .#{$block}__item {
-      @include fd-hover() {
-        background-color: $fd-calendar-item-background-hover;
-      }
-
-      @include fd-active() {
-        @extend %fd-calendar-item-active;
-
-        .#{$block}__text {
-          color: $fd-calendar-item-active-color;
+    // Years & Months items are Transparent buttons
+    // So they shouldn't have Days items styling
+    &:not(&--years):not(&--months) {
+      .#{$block}__item {
+        @include fd-hover() {
+          background-color: $fd-calendar-item-background-hover;
         }
-      }
 
-      @include fd-focus() {
-        @extend %fd-calendar-item-focus;
-      }
+        @include fd-active() {
+          @extend %fd-calendar-item-active;
 
-      @include fd-disabled() {
-        @extend %fd-calendar-item-disabled;
+          .#{$block}__text {
+            color: $fd-calendar-item-active-color;
+          }
+        }
+
+        @include fd-focus() {
+          @extend %fd-calendar-item-focus;
+        }
+
+        @include fd-disabled() {
+          @extend %fd-calendar-item-disabled;
+        }
       }
     }
 
