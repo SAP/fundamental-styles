@@ -674,6 +674,13 @@ $block: #{$fd-namespace}-table;
           }
         }
       }
+
+      .#{$block}__cell,
+      .#{$block}__row {
+        &--focusable {
+          @include fd-fiori-focus(var(--fdTable_Condensed_Focus_Outline_Offset));
+        }
+      }
     }
 
     &.#{$block}--tree,
