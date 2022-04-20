@@ -63,7 +63,7 @@ $semantic-color: (
 
     @include fd-active() {
       &::before {
-        border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
+        border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--fdList_Active_Outline_Color);
       }
     }
   }
