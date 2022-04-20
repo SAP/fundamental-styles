@@ -1,6 +1,7 @@
 @import "./new-settings";
 @import "./mixins";
 @import "./mixins/button/button-helper";
+@import "./mixins/input/addon-button";
 
 /*!
 .fd-input-group+(--inline, --control)
@@ -26,9 +27,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   $fd-input-padding: 0.625rem;
   $fd-input-width-basis: 10rem;
   $fd-input-group-add-on-border: 0.0625rem;
-  $fd-input-group-button-active-text-color: var(--sapButton_Active_TextColor);
-  $fd-input-group-button-active-background: var(--sapButton_Active_Background);
-  $fd-input-group-button-active-focus-color: var(--sapContent_ContrastFocusColor);
 
   @include fd-reset();
 
@@ -89,6 +87,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     background: none;
   }
 
+  // button styles
+  @include fd-input-button-states();
+
   .#{$block}__input {
     @include fd-reset-child-spacing();
 
@@ -108,6 +109,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       outline: none;
       box-shadow: none;
       background: none;
+    }
+
+    @include fd-readonly() {
+      border: none;
     }
 
     @include fd-disabled() {
@@ -173,16 +178,20 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         max-height: 100%;
       }
 
+      @include fd-hover() {
+        box-shadow: var(--fdButton_Hover_Shadow);
+      }
+
       > * {
         border-radius: 0;
       }
 
       &:first-child {
-        border-radius: $fd-input-group-add-on-border 0 0 $fd-input-group-add-on-border;
+        border-radius: var(--fdInputGroup_Button_FirstChild_Border_Radius);
       }
 
       &:last-child {
-        border-radius: 0 $fd-input-group-add-on-border $fd-input-group-add-on-border 0;
+        border-radius: var(--fdInputGroup_Button_LastChild_Border_Radius);
       }
 
       &:not(:first-child):not(:last-child) {
@@ -192,13 +201,14 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       }
 
       @include fd-rtl() {
+        // reverse the border radius sides in rtl mode
         &:first-child {
-          border-radius: 0 $fd-input-group-add-on-border $fd-input-group-add-on-border 0;
+          border-radius: var(--fdInputGroup_Button_LastChild_Border_Radius);
           margin-right: 0;
         }
 
         &:last-child {
-          border-radius: $fd-input-group-add-on-border 0 0 $fd-input-group-add-on-border;
+          border-radius: var(--fdInputGroup_Button_FirstChild_Border_Radius);
           margin-left: 0;
         }
       }
@@ -212,10 +222,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     width: 100%;
     z-index: auto !important;
     position: static !important;
-
-    @include fd-hover() {
-      background-color: var(--fdInputGroup_Button_Hover_BackgroundColor);
-    }
 
     @include fd-focus() {
       @include fd-button-focus() {
@@ -233,17 +239,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   }
 
   &--control {
-    .#{$block}__button {
-      @include fd-expanded() {
-        background-color: $fd-input-group-button-active-background;
-        color: $fd-input-group-button-active-text-color;
-
-        @include fd-fiori-focus() {
-          outline-color: $fd-input-group-button-active-focus-color;
-        }
-      }
-    }
-
     @include fd-hover() {
       @include fd-control-button-side-border();
     }

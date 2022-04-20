@@ -1,5 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
+@import "./mixins/input/addon-button";
 
 $block: #{$fd-namespace}-select;
 
@@ -8,24 +9,20 @@ $block: #{$fd-namespace}-select;
   $fd-select-padding-x-compact: 0.5rem;
 
   @mixin fd-select-button-border() {
+    border-left: var(--fdSelect_Button_SideBorder);
+
+    @include fd-rtl() {
+      border-left: none;
+      border-right: var(--fdSelect_Button_SideBorder);
+    }
+  }
+
+  @mixin fd-select-active-button-border() {
     border-left: var(--fdSelect_Button_Interractive_SideBorder);
 
     @include fd-rtl() {
       border-left: none;
       border-right: var(--fdSelect_Button_Interractive_SideBorder);
-    }
-  }
-
-  @mixin fd-select-button-active() {
-    .#{$block}__button {
-      background-color: var(--sapButton_Active_Background);
-      color: var(--sapButton_Active_TextColor);
-
-      @include fd-fiori-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-
-      @include fd-select-button-border();
     }
   }
 
@@ -40,6 +37,7 @@ $block: #{$fd-namespace}-select;
   &__control {
     @include fd-reset();
     @include fd-form-base();
+    @include fd-select-button-states();
     @include fd-form-input-pseudo-focus(
       var(--fdSelect_Focus_Border_Offset),
       var(--fdInputGroup_Focus_Border_Radius)
@@ -49,21 +47,8 @@ $block: #{$fd-namespace}-select;
       justify-content: space-between;
     }
 
-    @include fd-hover() {
-      .#{$block}__button {
-        @include fd-select-button-border();
-
-        background-color: var(--fdSelect_Button_Hover_BackgroundColor);
-      }
-    }
-
     @include fd-expanded() {
-      @include fd-select-button-active();
       @include fd-form-input-expanded();
-    }
-
-    @include fd-active() {
-      @include fd-select-button-active();
     }
 
     @include fd-rtl() {
@@ -83,8 +68,20 @@ $block: #{$fd-namespace}-select;
       @include fd-set-margin-left(0.25rem);
 
       border: none;
-      border-radius: 0;
+      border-radius: var(--fdSelect_Button_Border_Radius);
       color: var(--sapContent_IconColor);
+
+      @include fd-select-button-border();
+
+      @include fd-hover() {
+        @include fd-select-active-button-border();
+      }
+    }
+
+    @include fd-expanded() {
+      .#{$block}__button {
+        @include fd-select-active-button-border();
+      }
     }
 
     &.is-readonly {

@@ -39,17 +39,43 @@
   --fdInputGroup_Text_Shadow: none;
   --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;
   --fdInputGroup_Button_Hover_BackgroundColor: transparent;
+  --fdInputGroup_Button_FirstChild_Border_Radius: 0.25rem;
+  --fdInputGroup_Button_LastChild_Border_Radius: 0.25rem;
   --fdInputGroup_Focus_Border_Radius: 0.25rem;
   --fdInputGroup_Focus_Border_Style: var(--sapContent_FocusStyle);
+  --fdInputGroup_Button_Outline_Style: none;
+
+  /* Input Group Addon Button */
+  --fdButton_Addon_Expanded_Background_Color: transparent;
+  --fdButton_Addon_Expanded_TextColor: var(--sapButton_TextColor);
+  --fdButton_Addon_Outline_Focus_Style: none;
+  --fdButton_Addon_Base_BoxShadow: var(--sapContent_Interaction_Shadow);
+  --fdButton_Addon_Base_Active_Color: var(--sapButton_Lite_TextColor);
+  --fdButton_Addon_Base_Focus_Color: var(--sapButton_Lite_TextColor);
+  --fdButton_Addon_Success_BoxShadow: var(--sapContent_Positive_Shadow);
+  --fdButton_Addon_Success_Focus_Color: var(--sapButton_Accept_Selected_TextColor);
+  --fdButton_Addon_Success_Active_Color: var(--sapButton_Accept_Selected_TextColor);
+  --fdButton_Addon_Error_BoxShadow: var(--sapContent_Negative_Shadow);
+  --fdButton_Addon_Error_Focus_Color: var(--sapButton_Reject_Selected_TextColor);
+  --fdButton_Addon_Error_Active_Color: var(--sapButton_Reject_Selected_TextColor);
+  --fdButton_Addon_Information_BoxShadow: var(--sapContent_Informative_Shadow);
+  --fdButton_Addon_Information_Focus_Color: var(--sapButton_Selected_TextColor);
+  --fdButton_Addon_Information_Active_Color: var(--sapButton_Selected_TextColor);
+  --fdButton_Addon_Warning_BoxShadow: var(--sapContent_Critical_Shadow);
+  --fdButton_Addon_Warning_Focus_Color: var(--sapButton_Attention_Selected_TextColor);
+  --fdButton_Addon_Warning_Active_Color: var(--sapButton_Attention_Selected_TextColor);
 
   /* Select */
   --fdSelect_Text_Shadow: none;
+  --fdSelect_Button_SideBorder: none;
   --fdSelect_Button_Interractive_SideBorder: none;
   --fdSelect_Button_Hover_BackgroundColor: transparent;
   --fdSelect_Outline_FocusStyle: solid;
   --fdSelect_Focus_Border_Offset: 0;
+  --fdSelect_Button_Border_Radius: var(--sapField_BorderCornerRadius);
 
   /* Step Input */
   --fdStepInput_Focus_Border_Offset: 0;
   --fdStepInput_Button_Hover_Background: transparent;
+  --fdStepInput_Button_Border_Radius: 0.25rem;
 }

@@ -42,13 +42,36 @@
   --fdInputGroup_Button_Hover_BackgroundColor: var(--sapButton_Hover_Background);
   --fdInputGroup_Focus_Border_Radius: 0;
   --fdInputGroup_Focus_Border_Style: none;
+  --fdInputGroup_Button_Outline_Style: var(--sapContent_FocusStyle);
+
+  /* Addon Button */
+  --fdButton_Addon_Expanded_Background_Color: var(--sapButton_Active_Background);
+  --fdButton_Addon_Expanded_TextColor: var(--sapButton_Active_TextColor);
+  --fdButton_Addon_Outline_Focus_Style: var(--sapContent_FocusStyle);
+  --fdButton_Addon_Base_BoxShadow: none;
+  --fdButton_Addon_Base_Focus_Color: var(--sapButton_TextColor);
+  --fdButton_Addon_Base_Active_Color: var(--sapButton_Active_TextColor);
+  --fdButton_Addon_Success_BoxShadow: none;
+  --fdButton_Addon_Success_Focus_Color: var(--sapButton_TextColor);
+  --fdButton_Addon_Success_Active_Color: var(--sapButton_Active_TextColor);
+  --fdButton_Addon_Error_BoxShadow: none;
+  --fdButton_Addon_Error_Focus_Color: var(--sapButton_TextColor);
+  --fdButton_Addon_Error_Active_Color: var(--sapButton_Active_TextColor);
+  --fdButton_Addon_Information_BoxShadow: none;
+  --fdButton_Addon_Information_Focus_Color: var(--sapButton_TextColor);
+  --fdButton_Addon_Information_Active_Color: var(--sapButton_Active_TextColor);
+  --fdButton_Addon_Warning_BoxShadow: none;
+  --fdButton_Addon_Warning_Focus_Color: var(--sapButton_TextColor);
+  --fdButton_Addon_Warning_Active_Color: var(--sapButton_Active_TextColor);
 
   /* Select */
   --fdSelect_Text_Shadow: 0 0 0.125rem #000;
+  --fdSelect_Button_SideBorder: none;
   --fdSelect_Button_Interractive_SideBorder: solid 0.0625rem var(--sapField_BorderColor);
   --fdSelect_Button_Hover_BackgroundColor: var(--sapButton_Lite_Hover_Background);
   --fdSelect_Outline_FocusStyle: none;
   --fdSelect_Focus_Border_Offset: 0.1875rem;
+  --fdSelect_Button_Border_Radius: 0;
 
   /* Step Input */
   --fdStepInput_Focus_Border_Offset: 0.0625rem;
