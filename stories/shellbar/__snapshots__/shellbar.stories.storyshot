@@ -72,16 +72,15 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                             
                 <input
                   aria-label="search"
-                  class="fd-input fd-input-group__input fd-shellbar__input-group__input"
+                  class="fd-input fd-input-group__input fd-shellbar__input-group-input"
                   id="UIO6J6881"
-                  placeholder="Search..."
+                  placeholder="Search"
                   type="text"
-                  value="Search"
                 />
                 
                             
                 <span
-                  class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button"
+                  class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button"
                 >
                   
                                 
@@ -92,7 +91,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                     
                                     
                     <i
-                      class="sap-icon--navigation-down-arrow"
+                      class="sap-icon--decline"
                     />
                     
                                 
@@ -153,10 +152,9 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
             
                     
             <span
-              aria-label="Unread count"
-              class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+              class="fd-button__badge"
             >
-              251234
+              251K
             </span>
             
                 
@@ -232,10 +230,9 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                     
                                     
                     <span
-                      aria-label="Unread count"
-                      class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+                      class="fd-buton__badge"
                     >
-                      25
+                      251K
                     </span>
                     
                                 
@@ -381,7 +378,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                 
                             
                 <span
-                  class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle"
+                  class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle"
                 >
                   WW
                 </span>
@@ -557,16 +554,15 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                             
                 <input
                   aria-label="search"
-                  class="fd-input fd-input-group__input fd-shellbar__input-group__input"
+                  class="fd-input fd-input-group__input fd-shellbar__input-group-input"
                   id="UIO6J6881"
-                  placeholder="Search..."
+                  placeholder="Search"
                   type="text"
-                  value="Search"
                 />
                 
                             
                 <span
-                  class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button"
+                  class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button"
                 >
                   
                                 
@@ -577,7 +573,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                     
                                     
                     <i
-                      class="sap-icon--navigation-down-arrow"
+                      class="sap-icon--decline"
                     />
                     
                                 
@@ -638,10 +634,9 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
             
                     
             <span
-              aria-label="Unread count"
-              class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+              class="fd-button__badge"
             >
-              251234
+              251K
             </span>
             
                 
@@ -717,10 +712,9 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                     
                                     
                     <span
-                      aria-label="Unread count"
-                      class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+                      class="fd-button__badge"
                     >
-                      25
+                      251K
                     </span>
                     
                                 
@@ -866,7 +860,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                 
                             
                 <span
-                  class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle"
+                  class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle"
                 >
                   WW
                 </span>
@@ -1196,7 +1190,7 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
               aria-controls="9GLB26941"
               aria-expanded="false"
               aria-haspopup="true"
-              class="fd-button fd-button--transparent fd-button--menu fd-shellbar__button--menu"
+              class="fd-button fd-shellbar__button fd-shellbar__button--menu fd-button--menu"
               onclick="onPopoverClick('9GLB26941');"
             >
               
@@ -1209,7 +1203,7 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
               
                         
               <i
-                class="sap-icon--megamenu fd-shellbar__button--icon"
+                class="sap-icon--megamenu"
               />
               
                     
@@ -1385,16 +1379,15 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
                             
                 <input
                   aria-label="search-input"
-                  class="fd-input fd-input-group__input fd-shellbar__input-group__input"
+                  class="fd-input fd-input-group__input fd-shellbar__input-group-input"
                   id="F4GcX348b1"
-                  placeholder="Search..."
+                  placeholder="Search"
                   type="text"
-                  value="Search"
                 />
                 
                             
                 <span
-                  class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button"
+                  class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button"
                 >
                   
                                 
@@ -1841,7 +1834,7 @@ exports[`Storyshots Components/Shellbar Product switch 1`] = `
                   aria-expanded="true"
                   aria-haspopup="true"
                   aria-label="Image label"
-                  class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control"
+                  class="fd-button fd-shellbar__button fd-popover__control fd-product-switch__control"
                   onclick="onPopoverClick('product-switch-body')"
                 >
                   
@@ -2424,16 +2417,15 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                             
                 <input
                   aria-label="search"
-                  class="fd-input fd-input-group__input fd-shellbar__input-group__input"
+                  class="fd-input fd-input-group__input fd-shellbar__input-group-input"
                   id="UIO6J6881"
-                  placeholder="Search..."
+                  placeholder="Search"
                   type="text"
-                  value="Search"
                 />
                 
                             
                 <span
-                  class="fd-input-group__addon fd-shellbar__input-group__addon fd-input-group__addon--button"
+                  class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button"
                 >
                   
                                 
@@ -2444,7 +2436,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                     
                                     
                     <i
-                      class="sap-icon--navigation-down-arrow"
+                      class="sap-icon--decline"
                     />
                     
                                 
@@ -2505,10 +2497,9 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
             
                     
             <span
-              aria-label="Unread count"
-              class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+              class="fd-button__badge"
             >
-              251234
+              251K
             </span>
             
                 
@@ -2584,10 +2575,9 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                     
                                     
                     <span
-                      aria-label="Unread count"
-                      class="fd-counter fd-counter--notification fd-shellbar__counter--notification"
+                      class="fd-button__badge"
                     >
-                      25
+                      251K
                     </span>
                     
                                 
@@ -2632,68 +2622,6 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                           class="fd-menu__title"
                         >
                           Search
-                        </span>
-                        
-                                        
-                      </a>
-                      
-                                    
-                    </li>
-                    
-                                    
-                    <li
-                      class="fd-menu__item"
-                    >
-                      
-                                        
-                      <a
-                        class="fd-menu__link"
-                        role="button"
-                      >
-                        
-                                            
-                        <span
-                          class="fd-menu__title"
-                        >
-                          Notifications Out
-                        </span>
-                        
-                                            
-                        <span
-                          class="fd-counter fd-shellbar__counter--overflowed"
-                        >
-                          21
-                        </span>
-                        
-                                        
-                      </a>
-                      
-                                    
-                    </li>
-                    
-                                    
-                    <li
-                      class="fd-menu__item"
-                    >
-                      
-                                        
-                      <a
-                        class="fd-menu__link"
-                        role="button"
-                      >
-                        
-                                            
-                        <span
-                          class="fd-menu__title"
-                        >
-                          Pool
-                        </span>
-                        
-                                            
-                        <span
-                          class="fd-counter fd-shellbar__counter--overflowed"
-                        >
-                          4
                         </span>
                         
                                         
@@ -2747,7 +2675,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                 
                             
                 <span
-                  class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatarier--circle fd-shellbar__avatar--circle"
+                  class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle"
                 >
                   WW
                 </span>

@@ -1,4 +1,24 @@
 
+## [0.24.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.39...v0.24.0-rc.40) (2022-04-19)
+
+## [0.24.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.38...v0.24.0-rc.39) (2022-04-19)
+
+
+### Bug Fixes
+
+* **styles:** menu sub-items should expand the menu width ([#3346](https://github.com/SAP/fundamental-styles/issues/3346)) ([e7c6d13](https://github.com/SAP/fundamental-styles/commit/e7c6d13536392c4ef6686fdab58dc5287e0e8811))
+
+## [0.24.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.37...v0.24.0-rc.38) (2022-04-18)
+
+
+### Features
+
+* **styles:** add delta theming for Dynamic Page [ci visual] ([#3297](https://github.com/SAP/fundamental-styles/issues/3297)) ([9e099d6](https://github.com/SAP/fundamental-styles/commit/9e099d673f2759fda4061cfb27dc5ed65d256d58))
+
+## [0.24.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.36...v0.24.0-rc.37) (2022-04-18)
+
+## [0.24.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.35...v0.24.0-rc.36) (2022-04-18)
+
 ## 0.24.0-rc.35 (2022-04-14)
 
 

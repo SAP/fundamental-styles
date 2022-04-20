@@ -66,6 +66,12 @@ exports[`Storyshots Components/Icons/TNT Icons Colors 1`] = `
   />
   
  
+  <span
+    class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-information"
+    style="font-size:5rem"
+  />
+  
+ 
 </div>
 `;
 

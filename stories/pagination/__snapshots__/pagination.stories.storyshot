@@ -1950,7 +1950,7 @@ exports[`Storyshots Components/Pagination Per page 1`] = `
                 
                           
                 <span
-                  class="fd-button fd-button--transparent fd-select__button"
+                  class="fd-button fd-button--transparent fd-button--compact fd-select__button"
                 >
                   
                                         

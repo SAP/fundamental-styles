@@ -1945,7 +1945,7 @@ exports[`Storyshots Components/Calendar Landscape (mobile) 1`] = `
     
     
     <div
-      class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile"
+      class="fd-dialog__content fd-dialog__content--s"
     >
       
         
@@ -2925,7 +2925,6 @@ exports[`Storyshots Components/Calendar Months 1`] = `
 <div
   dir="ltr"
 >
-      
   <div
     style="display: flex; justify-content: space-around;"
   >
@@ -2963,22 +2962,6 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               />
               
                         
-            </button>
-            
-                    
-          </div>
-          
-                    
-          <div
-            class="fd-calendar__action"
-          >
-            
-                        
-            <button
-              class="fd-button fd-button--transparent"
-              type="button"
-            >
-              January
             </button>
             
                     
@@ -3053,7 +3036,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item fd-calendar__item--current"
+                class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3070,7 +3053,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3088,7 +3071,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
                             
               <td
                 aria-selected="true"
-                class="fd-calendar__item is-active"
+                class="fd-calendar__item is-active fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3113,7 +3096,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3130,7 +3113,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3147,7 +3130,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3172,7 +3155,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3189,7 +3172,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3206,7 +3189,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3231,7 +3214,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3248,7 +3231,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3265,7 +3248,7 @@ exports[`Storyshots Components/Calendar Months 1`] = `
               
                             
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -3322,7 +3305,7 @@ exports[`Storyshots Components/Calendar Portrait (mobile) 1`] = `
     
     
     <section
-      class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile"
+      class="fd-dialog__content fd-dialog__content--s"
       style="width: 375px; height: 600px;"
     >
       
@@ -4445,23 +4428,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               class="fd-button fd-button--transparent"
               type="button"
             >
-              January
-            </button>
-            
-                
-          </div>
-          
-                
-          <div
-            class="fd-calendar__action"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--transparent"
-              type="button"
-            >
-              2018
+              2018 - 2037
             </button>
             
                 
@@ -4520,7 +4487,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item fd-calendar__item--current"
+                class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4535,7 +4502,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4550,7 +4517,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4565,7 +4532,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item is-selected"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4580,7 +4547,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4603,7 +4570,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4618,7 +4585,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4633,7 +4600,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4648,7 +4615,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4664,7 +4631,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
                         
               <td
                 aria-selected="true"
-                class="fd-calendar__item is-active"
+                class="fd-calendar__item is-active fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4687,7 +4654,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4702,7 +4669,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4717,7 +4684,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4732,7 +4699,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4747,7 +4714,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4770,7 +4737,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4785,7 +4752,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4800,7 +4767,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4815,7 +4782,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4830,7 +4797,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -4907,38 +4874,6 @@ exports[`Storyshots Components/Calendar Years 1`] = `
           
                 
           <div
-            class="fd-calendar__action"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--transparent"
-              type="button"
-            >
-              January
-            </button>
-            
-                
-          </div>
-          
-                
-          <div
-            class="fd-calendar__action"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--transparent"
-              type="button"
-            >
-              2018
-            </button>
-            
-                
-          </div>
-          
-                
-          <div
             class="fd-calendar__action fd-calendar__action--arrow-right"
           >
             
@@ -4968,7 +4903,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
       
         
       <div
-        class="fd-calendar__content fd-calendar__content--years "
+        class="fd-calendar__content fd-calendar__content--years"
         id="57YUZ522"
       >
         
@@ -4990,7 +4925,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5005,7 +4940,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5020,7 +4955,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5043,7 +4978,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5058,7 +4993,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5073,7 +5008,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5096,7 +5031,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item fd-calendar__item--current"
+                class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5111,7 +5046,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5126,7 +5061,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5149,7 +5084,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5164,7 +5099,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5180,7 +5115,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
                         
               <td
                 aria-selected="true"
-                class="fd-calendar__item is-active"
+                class="fd-calendar__item is-active fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5274,23 +5209,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               class="fd-button fd-button--transparent"
               type="button"
             >
-              January
-            </button>
-            
-                
-          </div>
-          
-                
-          <div
-            class="fd-calendar__action"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--transparent"
-              type="button"
-            >
-              2018
+              2010 - 2097
             </button>
             
                 
@@ -5327,7 +5246,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
       
         
       <div
-        class="fd-calendar__content fd-calendar__content--years "
+        class="fd-calendar__content fd-calendar__content--years"
         id="57YUZ523"
       >
         
@@ -5349,7 +5268,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5364,7 +5283,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5388,7 +5307,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
                         
               <td
                 aria-selected="true"
-                class="fd-calendar__item is-active"
+                class="fd-calendar__item is-active fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5403,7 +5322,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5426,7 +5345,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item fd-calendar__item--current"
+                class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5441,7 +5360,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5464,7 +5383,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5479,7 +5398,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5564,23 +5483,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               class="fd-button fd-button--transparent"
               type="button"
             >
-              January
-            </button>
-            
-                
-          </div>
-          
-                
-          <div
-            class="fd-calendar__action"
-          >
-            
-                    
-            <button
-              class="fd-button fd-button--transparent"
-              type="button"
-            >
-              2018
+              2010 - 2053
             </button>
             
                 
@@ -5639,7 +5542,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5663,7 +5566,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
                         
               <td
                 aria-selected="true"
-                class="fd-calendar__item fd-calendar__item--current is-active"
+                class="fd-calendar__item fd-calendar__item--current is-active fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5686,7 +5589,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
@@ -5709,7 +5612,7 @@ exports[`Storyshots Components/Calendar Years 1`] = `
               
                         
               <td
-                class="fd-calendar__item"
+                class="fd-calendar__item fd-button fd-button--transparent"
                 role="gridcell"
               >
                 
