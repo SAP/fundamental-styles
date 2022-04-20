@@ -51,7 +51,7 @@ $fd-grid-list-highlight: (
 }
 
 @mixin fd-grid-list-select-input($type) {
-  &__#{$type}-input {
+  .#{$block}__#{$type}-input {
     height: 1rem;
     width: 1rem;
 
@@ -63,6 +63,7 @@ $fd-grid-list-highlight: (
 
     + .#{$block}__#{$type}-label {
       @include fd-empty() {
+        align-self: center;
         padding: 0;
       }
     }
@@ -90,8 +91,8 @@ $fd-grid-list-highlight: (
       .#{$block}__highlight {
         width: 0.25rem;
         left: 0.1875rem;
-        bottom: 0.1875rem;
-        top: 0.1875rem;
+        bottom: var(--fdGrid_List_Highlight_Offset);
+        top: var(--fdGrid_List_Highlight_Offset);
       }
     }
 
