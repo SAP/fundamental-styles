@@ -177,7 +177,7 @@ $block: #{$fd-namespace}-table;
     border-right: $fd-table-border;
 
     .#{$block}__row {
-      border-bottom: $fd-table-border;
+      border-bottom: var(--fdTable_Header_Border_Bottom);
     }
 
     .#{$block}__cell {
