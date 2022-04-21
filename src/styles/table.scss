@@ -172,7 +172,7 @@ $block: #{$fd-namespace}-table;
   }
 
   &__header {
-    border-top: $fd-table-border;
+    border-top: var(--fdTable_Header_Border_Top);
     border-left: $fd-table-border;
     border-right: $fd-table-border;
 
