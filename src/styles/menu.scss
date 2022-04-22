@@ -5,7 +5,7 @@ $block: #{$fd-namespace}-menu;
 
 .#{$block} {
   // Menu
-  $fd-menu-border-radius: var(--sapElement_BorderCornerRadius) !default;
+  $fd-menu-border-radius: var(--fdButton_Menu_Border_Radius) !default;
 
   // Menu Item
   $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
