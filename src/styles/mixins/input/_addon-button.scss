@@ -8,7 +8,7 @@
       box-shadow: $boxShadow;
     }
 
-    .fd-button {
+    .fd-input-group__button {
       @include fd-focus() {
         color: $focusColor;
 
@@ -31,48 +31,49 @@
       @include fd-active() {
         box-shadow: $boxShadow;
       }
-    }
 
-    .fd-button {
-      @include fd-active() {
-        color: $activeColor;
-        box-shadow: $boxShadow;
-      }
+      .fd-input-group__button {
+        @include fd-active() {
+          color: $activeColor;
+          box-shadow: $boxShadow;
+        }
 
-      @include fd-expanded() {
-        color: $activeColor;
+        @include fd-expanded() {
+          color: $activeColor;
+        }
       }
     }
   }
 }
 
 @mixin fd-input-button-states() {
-  .fd-button,
-  .fd-button.fd-button--transparent {
-    color: var(--sapButton_TextColor);
-    background: var(--sapButton_Lite_Background);
-    border: none !important;
-
-    @include fd-hover() {
+  .fd-input-group__addon--button {
+    .fd-input-group__button {
       color: var(--sapButton_TextColor);
-      background: none;
-      background-color: var(--fdInputGroup_Button_Hover_BackgroundColor);
-    }
+      background: var(--sapButton_Lite_Background);
+      border: none !important;
 
-    @include fd-focus() {
-      outline-style: var(--fdInputGroup_Button_Outline_Style);
-    }
+      @include fd-hover() {
+        color: var(--sapButton_TextColor);
+        background: none;
+        background-color: var(--fdInputGroup_Button_Hover_BackgroundColor);
+      }
 
-    @include fd-active() {
-      background-color: var(--sapButton_Lite_Active_Background);
-    }
+      @include fd-focus() {
+        outline-style: var(--fdInputGroup_Button_Outline_Style);
+      }
 
-    @include fd-expanded() {
-      background-color: var(--fdButton_Addon_Expanded_Background_Color);
-      color: var(--fdButton_Addon_Expanded_TextColor);
+      @include fd-active() {
+        background-color: var(--sapButton_Lite_Active_Background);
+      }
 
-      @include fd-fiori-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
+      @include fd-expanded() {
+        background-color: var(--fdButton_Addon_Expanded_Background_Color);
+        color: var(--fdButton_Addon_Expanded_TextColor);
+
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
+        }
       }
     }
   }
@@ -118,8 +119,7 @@
 }
 
 @mixin select-addon-button-interactions($boxShadow, $activeColor, $focusColor) {
-  .fd-button,
-  .fd-button.fd-button--transparent {
+  .fd-input-group__addon--button.fd-input-group__button {
     @include fd-active() {
       color: $activeColor;
       box-shadow: $boxShadow;
@@ -136,8 +136,7 @@
   }
 
   @include fd-expanded() {
-    .fd-button,
-    .fd-button.fd-button--transparent {
+    .fd-input-group__addon--button.fd-input-group__button {
       color: $activeColor;
 
       @include fd-hover() {
@@ -150,8 +149,7 @@
 
 @mixin fd-select-button-states() {
   @include fd-expanded() {
-    .fd-button,
-    .fd-button.fd-button--transparent {
+    .fd-input-group__addon--button.fd-input-group__button {
       color: var(--fdButton_Addon_Expanded_TextColor);
       background-color: var(--fdButton_Addon_Expanded_Background_Color);
 
@@ -166,8 +164,7 @@
     }
   }
 
-  .fd-button,
-  .fd-button.fd-button--transparent {
+  .fd-input-group__addon--button.fd-input-group__button {
     color: var(--sapButton_TextColor);
     background: var(--sapButton_Lite_Background);
 

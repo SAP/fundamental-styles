@@ -114,10 +114,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
-  .#{$fd-namespace}-tokenizer {
-    background: none;
-  }
-
   &--inline {
     display: inline-flex;
     vertical-align: bottom;
