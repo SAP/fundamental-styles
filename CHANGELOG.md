@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.42...v0.24.0-rc.43) (2022-04-22)
+
+
+### Features
+
+* **styles:** implement delta horizon theming for table [ci-visual] ([#3351](https://github.com/SAP/fundamental-styles/issues/3351)) ([302303a](https://github.com/SAP/fundamental-styles/commit/302303a0326b2ab02dbaf7cf3acf874a0616be9c))
+
 ## [0.24.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.41...v0.24.0-rc.42) (2022-04-22)
 
 ## [0.24.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.40...v0.24.0-rc.41) (2022-04-22)
