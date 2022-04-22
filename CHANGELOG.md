@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.43...v0.24.0-rc.44) (2022-04-22)
+
+
+### Bug Fixes
+
+* **styles:** horizon menu border radius bug [ci-visual] ([#3352](https://github.com/SAP/fundamental-styles/issues/3352)) ([9f01162](https://github.com/SAP/fundamental-styles/commit/9f011624cf966e8737c341561eb61003b029f4c8))
+
 ## [0.24.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.42...v0.24.0-rc.43) (2022-04-22)
 
 
