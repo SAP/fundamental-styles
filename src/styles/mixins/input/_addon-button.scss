@@ -4,6 +4,10 @@
       box-shadow: $boxShadow;
     }
 
+    @include fd-hover() {
+      box-shadow: $boxShadow;
+    }
+
     .fd-button {
       @include fd-focus() {
         color: $focusColor;

@@ -83,10 +83,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
-  .fd-tokenizer {
-    background: none;
-  }
-
   // button styles
   @include fd-input-button-states();
 
@@ -98,26 +94,15 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     padding-right: 0.25rem;
     padding-left: 0.25rem;
     text-shadow: var(--fdInputGroup_Text_Shadow);
-    background: none;
+    background: none !important;
 
     @include fd-hover() {
-      background: none;
       box-shadow: none;
     }
 
     @include fd-focus() {
       outline: none;
       box-shadow: none;
-      background: none;
-    }
-
-    @include fd-readonly() {
-      border: none;
-    }
-
-    @include fd-disabled() {
-      pointer-events: none;
-      opacity: var(--sapContent_DisabledOpacity);
     }
 
     &:nth-child(1) {
@@ -127,6 +112,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     &:nth-last-child(1) {
       @include fd-set-padding-right($fd-input-padding);
     }
+  }
+
+  .#{$fd-namespace}-tokenizer {
+    background: none;
   }
 
   &--inline {
@@ -229,6 +218,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       }
     }
 
+    @include fd-disabled() {
+      background: none !important;
+      box-shadow: none !important;
+    }
+
     &::before {
       display: none !important;
     }
@@ -255,5 +249,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   &[readonly],
   &.is-readonly {
     overflow: visible;
+
+    .#{$block}__addon {
+      display: none;
+    }
   }
 }

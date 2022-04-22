@@ -16,6 +16,12 @@
     box-shadow: var(--fdInput_Interaction_Hover_Shadow);
   }
 
+  @include fd-input-readonly(var(--sapField_ReadOnly_BackgroundStyle));
+  @include fd-input-disabled(
+    var(--sapField_Background),
+    var(--sapField_BorderColor)
+  );
+
   &.is-success {
     @include fd-apply-border(
       var(--sapField_SuccessColor),
@@ -25,6 +31,10 @@
     @include fd-input-background(
       var(--sapField_SuccessBackgroundStyle),
       var(--sapField_SuccessBackground),
+    );
+    @include fd-input-disabled(
+      var(--sapField_SuccessBackground),
+      var(--sapField_SuccessColor)
     );
 
     @include fd-hover() {
@@ -46,6 +56,10 @@
     @include fd-input-background(
       var(--sapField_InvalidBackgroundStyle),
       var(--sapField_InvalidBackground),
+    );
+    @include fd-input-disabled(
+      var(--sapField_InvalidBackground),
+      var(--sapField_InvalidColor)
     );
 
     @include fd-hover() {
@@ -69,6 +83,10 @@
       var(--sapField_WarningBackgroundStyle),
       var(--sapField_WarningBackground),
     );
+    @include fd-input-disabled(
+      var(--sapField_WarningBackground),
+      var(--sapField_WarningColor)
+    );
 
     @include fd-hover() {
       background-color: var(--fdInput_Warning_Hover_Background);
@@ -87,36 +105,15 @@
       var(--sapField_InformationBackgroundStyle),
       var(--sapField_InformationBackground),
     );
+    @include fd-input-disabled(
+      var(--sapField_InformationBackground),
+      var(--sapField_InformationColor)
+    );
 
     @include fd-hover() {
       background-color: var(--fdInput_Information_Hover_Background);
       border-color: var(--sapField_InformationColor);
       box-shadow: var(--fdInput_Information_Hover_Shadow);
-    }
-  }
-
-  @include fd-disabled() {
-    opacity: var(--sapContent_DisabledOpacity);
-
-    &::placeholder {
-      color: transparent;
-    }
-  }
-
-  @include fd-readonly() {
-    background-color: rgba(242, 242, 242, 0.5); // Hardcoded for IE11 Purposes, there is not callback for RGBA.
-
-    @include fd-input-background(
-      var(--sapField_ReadOnly_BackgroundStyle),
-      var(--sapField_ReadOnly_Background),
-    );
-
-    border-color: var(--sapField_ReadOnly_BorderColor);
-    border-radius: 0;
-    border-style: var(--fdInput_ReadOnly_Border_Style);
-
-    &::placeholder {
-      color: transparent;
     }
   }
 }
@@ -262,14 +259,6 @@
       var(--fdInput_Outline_WarningColor)
     );
   }
-
-  @include fd-readonly() {
-    @include fd-input-focus(
-      var(--sapField_ReadOnly_Background),
-      var(--fdInput_Outline_Offset),
-      var(--fdInput_Outline_BaseColor)
-    );
-  }
 }
 
 @mixin fd-form-input-pseudo-focus($offset, $borderRadius) {
@@ -320,10 +309,14 @@
   @include fd-readonly() {
     @include fd-input-container-focus(
       $offset,
-      0,
-      var(--sapField_ReadOnly_Background),
-      var(--fdInput_Outline_BaseColor)
-    );
+      $borderRadius,
+      transparent,
+      transparent
+    ) {
+      &::after {
+        border: none;
+      }
+    }
   }
 
   @content;
@@ -351,6 +344,32 @@
       right: $offset;
     }
     @content;
+  }
+}
+
+@mixin fd-input-readonly($background) {
+  @include fd-readonly() {
+    background: $background !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: var(--sapField_ReadOnly_BorderColor);
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+@mixin fd-input-disabled($backgroundColor, $borderColor) {
+  @include fd-disabled() {
+    background-color: $backgroundColor !important;
+    box-shadow: none !important;
+    opacity: var(--sapContent_DisabledOpacity);
+    border-color: $borderColor !important;
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 }
 

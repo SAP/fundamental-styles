@@ -259,7 +259,7 @@ export const Disabled = () => `<label class="fd-form-label" for="step-13">Disabl
             fd-button--transparent
             fd-step-input__button"
             onclick="stepInputValue('step-13', 'down');"
-            tabindex="-1" type="button">
+            tabindex="-1" type="button" disabled>
                 <i class="sap-icon--less"></i>
         </button>
     <input class="
@@ -272,7 +272,7 @@ export const Disabled = () => `<label class="fd-form-label" for="step-13">Disabl
             fd-button--transparent
             fd-step-input__button"
             onclick="stepInputValue('step-13', 'up');"
-            tabindex="-1" type="button">
+            tabindex="-1" type="button" disabled>
                 <i class="sap-icon--add"></i>
         </button>
 </div>

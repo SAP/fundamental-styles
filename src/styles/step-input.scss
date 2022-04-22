@@ -30,8 +30,8 @@ $block: #{$fd-namespace}-step-input;
   align-items: center;
   line-height: 0;
 
-  .fd-input {
-    background: none;
+  .#{$block}__input {
+    background: none !important;
     border-style: none;
 
     @include fd-hover() {
@@ -45,6 +45,10 @@ $block: #{$fd-namespace}-step-input;
 
     @include fd-readonly() {
       border-style: none;
+    }
+
+    @include fd-disabled() {
+      background: none !important;
     }
   }
 
@@ -87,6 +91,11 @@ $block: #{$fd-namespace}-step-input;
       @include fd-hover() {
         z-index: auto;
       }
+    }
+
+    @include fd-disabled() {
+      background: none !important;
+      box-shadow: none !important;
     }
 
     &--compact {

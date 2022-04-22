@@ -218,6 +218,14 @@ export const States = () => `
 </div>
 <br />
 <div class="fd-form-item">
+    <label class="fd-form-label" for="aqwsde128">Read Only</label>
+    <div class="fd-input-group is-readonly">
+        <span class="fd-input-group__addon">$</span>
+        <input class="fd-input fd-input-group__input" readonly type="text" id="aqwsde128" name="" placeholder="Enter a value">
+    </div>
+</div>
+<br />
+<div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde128">Disabled</label>
     <div class="fd-input-group is-disabled">
         <span class="fd-input-group__addon">$</span>
