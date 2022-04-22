@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.40...v0.24.0-rc.41) (2022-04-22)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Object List ([#3350](https://github.com/SAP/fundamental-styles/issues/3350)) ([c949827](https://github.com/SAP/fundamental-styles/commit/c94982743f4f98a913ef211df818b07563b13d87))
+
 ## [0.24.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.39...v0.24.0-rc.40) (2022-04-19)
 
 ## [0.24.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.38...v0.24.0-rc.39) (2022-04-19)
