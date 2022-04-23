@@ -15,6 +15,7 @@ $block: #{$fd-namespace}-step-input;
 
   @include fd-reset();
   @include fd-form-base();
+  @include fd-form-states();
 
   @include fd-form-input-pseudo-focus(
     var(--fdStepInput_Focus_Border_Offset),

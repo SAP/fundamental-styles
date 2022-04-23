@@ -3,24 +3,11 @@
 @import "./states";
 
 @mixin fd-form-states {
-  @include fd-input-background(
-    var(--sapField_BackgroundStyle),
-    var(--sapField_Background),
-  );
-
-  border-style: var(--fdInput_Base_Border_Style);
-
   @include fd-hover() {
     background-color: var(--sapField_Hover_Background);
     border-color: var(--sapField_Hover_BorderColor);
     box-shadow: var(--fdInput_Interaction_Hover_Shadow);
   }
-
-  @include fd-input-readonly(var(--sapField_ReadOnly_BackgroundStyle));
-  @include fd-input-disabled(
-    var(--sapField_Background),
-    var(--sapField_BorderColor)
-  );
 
   &.is-success {
     @include fd-apply-border(
@@ -121,10 +108,13 @@
 @mixin fd-form-base {
   @include fd-reset();
   @include fd-ellipsis();
+  @include fd-input-background(
+    var(--sapField_BackgroundStyle),
+    var(--sapField_Background),
+  );
 
   color: var(--sapField_TextColor);
-  background-color: var(--sapField_Background);
-  border-style: solid;
+  border-style: var(--fdInput_Base_Border_Style);
   border-width: var(--sapField_BorderWidth);
   border-color: var(--sapField_BorderColor);
   border-radius: var(--sapField_BorderCornerRadius);
@@ -132,6 +122,12 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  @include fd-input-readonly(var(--sapField_ReadOnly_BackgroundStyle));
+  @include fd-input-disabled(
+    var(--sapField_Background),
+    var(--sapField_BorderColor)
+  );
 
   &::placeholder {
     font-style: italic;
@@ -142,8 +138,6 @@
     color: var(--sapContent_ContrastTextColor);
     background-color: var(--sapSelectedColor);
   }
-  // states
-  @include fd-form-states();
 }
 
 @mixin fd-form-text() {
