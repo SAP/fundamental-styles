@@ -1,6 +1,9 @@
 @import "./common/input/sap_horizon";
 @import "./common/switch/sap_horizon";
 @import "./common/button/sap_horizon";
+@import "./common/icon-tab-bar/sap_horizon";
+@import "./common/table/sap_horizon";
+@import "./common/dynamic-page-layout/sap_horizon";
 
 :root {
   /* Switch */
@@ -156,9 +159,9 @@
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: none;
   --fdDynamicPage_Title_Header_Transparent_Background: transparent;
-  --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapHighlightColor), transparent);
-  --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapHighlightColor), transparent);
-  --fdDynamicPage_Button_Group_Background: var(--sapHighlightColor);
+  --fdDynamicPage_Button_Left_Gradient: linear-gradient(to left, var(--sapObjectHeader_BorderColor), transparent);
+  --fdDynamicPage_Button_Right_Gradient: linear-gradient(to right, var(--sapObjectHeader_BorderColor), transparent);
+  --fdDynamicPage_Button_Group_Background: var(--sapObjectHeader_BorderColor);
   --fdDynamicPage_Content_List_Background: var(--sapGroup_ContentBackground);
   --fdDynamicPage_Content_Transparent_Background: transparent;
 
@@ -213,7 +216,19 @@
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
-  --fdCalendar_Active_Item_Border: none;
+  --fdCalendar_Active_Item_Border: 0.125rem solid var(--sapList_SelectionBorderColor);
+  --fdCalendar_Active_Focus_Item_Outline_Color: var(--sapList_SelectionBorderColor);
+  --fdCalendar_Active_Focus_Item_Outline_Offset: -0.375rem;
+  --fdCalendar_Item_Current_Border: none;
+  --fdCalendar_BorderCornerRadius: var(--sapButton_BorderCornerRadius);
+  --fdCalendar_Item_Active_Background_Hover: var(--sapList_Hover_Background);
+  --fdCalendar_Special_Day_Marker_Height: 0.375rem;
+  --fdCalendar_Item_Current_Inner_Border_Color: transparent;
+  --fdCalendar_Item_Current_Active_Special_Day_Width: calc(100% - 0.25rem);
+  --fdCalendar_Item_Current_Active_Special_Day_Height: calc(100% - 1.25rem);
+  --fdCalendar_Item_Current_Active_Special_Day_Bottom: 0.125rem;
+  --fdCalendar_Item_Current_Active_Special_Day_Left: auto;
+  --fdCalendar_Item_Current_Active_Special_Day_Right: auto;
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
@@ -292,26 +307,6 @@
   --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapTile_TitleTextColor);
   --fdSlide_Tile_Indicator_Dot_Border: none;
   --fdSlide_Tile_Indicator_Active_Dot_Border: none;
-
-  /* Icon Tab Bar */
-  --fdIcon_Tab_Bar_Selection_Bar_Height: 0.188rem;
-  --fdIcon_Tab_Bar_Selection_Color: var(--sapSelectedColor);
-  --fdIcon_Tab_Bar_Selection_Bar_Color: var(--sapSelectedColor);
-  --fdIcon_Tab_Bar_Icon_Border_Color: var(--sapSelectedColor);
-  --fdIcon_Tab_Bar_Semantic_Icon_Display: none;
-  --fdIcon_Tab_Bar_Semantic_Color_Positive: var(--sapPositiveElementColor);
-  --fdIcon_Tab_Bar_Semantic_Color_Negative: var(--sapNegativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Color_Critical: var(--sapCriticalElementColor);
-  --fdIcon_Tab_Bar_Semantic_Color_Informative: var(--sapInformativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Positive: var(--sapPositiveElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Negative: var(--sapNegativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Critical: var(--sapCriticalElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Informative: var(--sapInformativeElementColor);
-  --fdIcon_Tab_Bar_Badge_Color: var(--sapContent_BadgeBackground);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Positive: var(--sapPositiveElementColor);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Negative: var(--sapNegativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Critical: var(--sapCriticalElementColor);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Informative: var(--sapInformativeElementColor);
 
   /* Toolbar */
   --fdToolbar_Auto_Background: var(--sapToolbar_Background);
@@ -448,4 +443,9 @@
   --fdBar_Left_Area_Padding_Right: 0.25rem;
   --fdBar_Middle_Area_Padding_X: 0.25rem;
   --fdBar_Right_Area_Padding_Left: 0.25rem;
+
+  /** Object List */
+  --fdObject_List_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdObject_List_Title_Font_Weight: bolder;
+  --fdObject_List_Number_Font_Size: 1.25rem;
 }

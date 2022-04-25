@@ -7,6 +7,9 @@ source .ci-env/flags.sh
 #PACKAGES=(core platform moment-adapter)
 HOTFIX_BRANCH=hotfix_tmp_branch_for_automated_release_do_not_use
 MASTER_BRANCH=refs/heads/main
+PACKAGE_PREFIX=@fundamental-styles
+PACKAGES=("theming-preview" "common-css" "fn" "fn-icons")
+DISTFOLDERS=( "dist-theming" "dist-common-css" "dist-fn" "dist-fn-icons")
 OLD_TAG=$(git describe --tags --abbrev=0)
 
 git config --global user.email $GH_EMAIL
@@ -54,3 +57,19 @@ if [[ $latest == "true" ]]; then
   git push "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" $MASTER_BRANCH > /dev/null;
 fi
 ``
+
+# build dist and component folders
+npm run build:prod
+
+npm publish
+
+for p in "${!DISTFOLDERS[@]}"
+do
+  :
+      echo "publish ${PACKAGE_PREFIX}/${PACKAGES[p]}"
+      echo "directory: ${DISTFOLDERS[p]}"
+
+      cd ${DISTFOLDERS[p]}
+      npm publish
+      cd ..
+done

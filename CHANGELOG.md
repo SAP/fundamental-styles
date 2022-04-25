@@ -1,4 +1,81 @@
 
+## [0.24.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.43...v0.24.0-rc.44) (2022-04-22)
+
+
+### Bug Fixes
+
+* **styles:** horizon menu border radius bug [ci-visual] ([#3352](https://github.com/SAP/fundamental-styles/issues/3352)) ([9f01162](https://github.com/SAP/fundamental-styles/commit/9f011624cf966e8737c341561eb61003b029f4c8))
+
+## [0.24.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.42...v0.24.0-rc.43) (2022-04-22)
+
+
+### Features
+
+* **styles:** implement delta horizon theming for table [ci-visual] ([#3351](https://github.com/SAP/fundamental-styles/issues/3351)) ([302303a](https://github.com/SAP/fundamental-styles/commit/302303a0326b2ab02dbaf7cf3acf874a0616be9c))
+
+## [0.24.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.41...v0.24.0-rc.42) (2022-04-22)
+
+## [0.24.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.40...v0.24.0-rc.41) (2022-04-22)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Object List ([#3350](https://github.com/SAP/fundamental-styles/issues/3350)) ([c949827](https://github.com/SAP/fundamental-styles/commit/c94982743f4f98a913ef211df818b07563b13d87))
+
+## [0.24.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.39...v0.24.0-rc.40) (2022-04-19)
+
+## [0.24.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.38...v0.24.0-rc.39) (2022-04-19)
+
+
+### Bug Fixes
+
+* **styles:** menu sub-items should expand the menu width ([#3346](https://github.com/SAP/fundamental-styles/issues/3346)) ([e7c6d13](https://github.com/SAP/fundamental-styles/commit/e7c6d13536392c4ef6686fdab58dc5287e0e8811))
+
+## [0.24.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.37...v0.24.0-rc.38) (2022-04-18)
+
+
+### Features
+
+* **styles:** add delta theming for Dynamic Page [ci visual] ([#3297](https://github.com/SAP/fundamental-styles/issues/3297)) ([9e099d6](https://github.com/SAP/fundamental-styles/commit/9e099d673f2759fda4061cfb27dc5ed65d256d58))
+
+## [0.24.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.36...v0.24.0-rc.37) (2022-04-18)
+
+## [0.24.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.35...v0.24.0-rc.36) (2022-04-18)
+
+## 0.24.0-rc.35 (2022-04-14)
+
+
+### Features
+
+* **styles:** icon tabs header horizon delta theming ([#3301](https://github.com/SAP/fundamental-styles/issues/3301)) ([3dbfa87](https://github.com/SAP/fundamental-styles/commit/3dbfa87cc8a27022344348013a6b13a59f64c0fb))
+
+## 0.24.0-rc.34 (2022-04-14)
+
+## 0.24.0-rc.33 (2022-04-13)
+
+
+### Bug Fixes
+
+* **styles:** layout grid nested rows ([#3305](https://github.com/SAP/fundamental-styles/issues/3305)) ([9d1e2d7](https://github.com/SAP/fundamental-styles/commit/9d1e2d7473ed0abb7b6dd51ccd56ada59535a121))
+
+## 0.24.0-rc.32 (2022-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** You should apply fd-button fd-button--transparent classes to the months & years items
+
+### Features
+
+* **styles:** add delta theming for Calendar [ci visual] ([#3273](https://github.com/SAP/fundamental-styles/issues/3273)) ([4b548e1](https://github.com/SAP/fundamental-styles/commit/4b548e1e6e24bf858d63168b996f3576c5c2e816))
+
+## 0.24.0-rc.31 (2022-04-13)
+
+
+### Bug Fixes
+
+* **styles,fn,deps,ci:** removed third party postcss-clean and updated cssnano ([#3325](https://github.com/SAP/fundamental-styles/issues/3325)) ([d7aee54](https://github.com/SAP/fundamental-styles/commit/d7aee5409e66a3ba688e52426dcd466b9423b961))
+
 ## 0.24.0-rc.30 (2022-04-13)
 
 

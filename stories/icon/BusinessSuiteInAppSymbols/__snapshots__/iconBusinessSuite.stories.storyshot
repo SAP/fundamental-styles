@@ -2633,6 +2633,12 @@ exports[`Storyshots Components/Icons/BusinessSuiteInAppSymbol Icons Colors 1`] =
   />
   
  
+  <span
+    class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-information"
+    style="font-size:5rem"
+  />
+  
+ 
 </div>
 `;
 

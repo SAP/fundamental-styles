@@ -846,13 +846,16 @@ Filter.parameters = {
 };
 
 
-export const Overflow = () => `<div class="fd-icon-tab-bar">
+export const Overflow = () => `<div class="fd-icon-tab-bar fd-icon-tab-bar--process">
     <ul role="tablist" class="fd-icon-tab-bar__header fd-icon-tab-bar__header--left-offset">
-        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow fd-icon-tab-bar__item--overflow-left">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">+2</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>
             </button>
+        </li>
+        <li tabindex="-1" class="fd-icon-tab-bar__icon-separator">
+            <span class="sap-icon--process"></span>
         </li>
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1">
@@ -860,15 +863,24 @@ export const Overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__badge"></span>
             </a>
         </li>
+        <li tabindex="-1" class="fd-icon-tab-bar__icon-separator">
+            <span class="sap-icon--process"></span>
+        </li>
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab2">
                 <span class="fd-icon-tab-bar__tag">Section 2</span>
             </a>
         </li>
+        <li tabindex="-1" class="fd-icon-tab-bar__icon-separator">
+            <span class="sap-icon--process"></span>
+        </li>
         <li role="presentation" class="fd-icon-tab-bar__item">
             <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
+        </li>
+        <li tabindex="-1" class="fd-icon-tab-bar__icon-separator">
+            <span class="sap-icon--process"></span>
         </li>
         <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 20rem;">
             <button class="fd-icon-tab-bar__overflow">
@@ -897,7 +909,7 @@ export const Overflow = () => `<div class="fd-icon-tab-bar">
                 <span class="fd-icon-tab-bar__tag">Section 3</span>
             </a>
         </li>
-        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow" style="left: 17rem;">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
             <button class="fd-icon-tab-bar__overflow">
                 <span class="fd-icon-tab-bar__overflow-text">More</span>
                 <i class="sap-icon--slim-arrow-down" role="presentation"></i>

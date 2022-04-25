@@ -620,6 +620,13 @@
   }
 }
 
+@mixin fd-set-equal-positions($value) {
+  top: $value;
+  right: $value;
+  bottom: $value;
+  left: $value;
+}
+
 /* Fully expanded pseudo element. Requires parent to have specified position */
 @mixin fd-pseudo-expand($position: "before") {
   &::#{$position} {

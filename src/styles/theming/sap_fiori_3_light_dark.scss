@@ -1,6 +1,9 @@
 @import "./common/input/sap_fiori";
 @import "./common/switch/sap_fiori";
 @import "./common/button/sap_fiori";
+@import "./common/icon-tab-bar/sap_fiori";
+@import "./common/table/sap_fiori";
+@import "./common/dynamic-page-layout/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -175,6 +178,18 @@
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
   --fdCalendar_Active_Item_Border: none;
+  --fdCalendar_Active_Focus_Item_Outline_Color: var(--sapContent_ContrastFocusColor);
+  --fdCalendar_Active_Focus_Item_Outline_Offset: -0.1875rem;
+  --fdCalendar_Item_Current_Border: 0.0625rem solid var(--sapList_Background);
+  --fdCalendar_BorderCornerRadius: var(--sapElement_BorderCornerRadius);
+  --fdCalendar_Item_Active_Background_Hover: var(--sapContent_Selected_Hover_Background);
+  --fdCalendar_Special_Day_Marker_Height: 0.25rem;
+  --fdCalendar_Item_Current_Inner_Border_Color: var(--sapList_Background);
+  --fdCalendar_Item_Current_Active_Special_Day_Width: auto;
+  --fdCalendar_Item_Current_Active_Special_Day_Height: 0.3125rem;
+  --fdCalendar_Item_Current_Active_Special_Day_Bottom: -0.0625rem;
+  --fdCalendar_Item_Current_Active_Special_Day_Left: 0;
+  --fdCalendar_Item_Current_Active_Special_Day_Right: 0;
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
@@ -256,26 +271,6 @@
   --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapTile_TitleTextColor);
   --fdSlide_Tile_Indicator_Dot_Border: none;
   --fdSlide_Tile_Indicator_Active_Dot_Border: none;
-
-  /* Icon Tab Bar */
-  --fdIcon_Tab_Bar_Selection_Bar_Height: 0.188rem;
-  --fdIcon_Tab_Bar_Selection_Color: var(--sapSelectedColor);
-  --fdIcon_Tab_Bar_Selection_Bar_Color: var(--sapSelectedColor);
-  --fdIcon_Tab_Bar_Icon_Border_Color: var(--sapSelectedColor);
-  --fdIcon_Tab_Bar_Semantic_Icon_Display: none;
-  --fdIcon_Tab_Bar_Semantic_Color_Positive: var(--sapPositiveElementColor);
-  --fdIcon_Tab_Bar_Semantic_Color_Negative: var(--sapNegativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Color_Critical: var(--sapCriticalElementColor);
-  --fdIcon_Tab_Bar_Semantic_Color_Informative: var(--sapInformativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Positive: var(--sapPositiveElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Negative: var(--sapNegativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Critical: var(--sapCriticalElementColor);
-  --fdIcon_Tab_Bar_Semantic_Background_Color_Informative: var(--sapInformativeElementColor);
-  --fdIcon_Tab_Bar_Badge_Color: var(--sapContent_BadgeBackground);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Positive: var(--sapPositiveElementColor);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Negative: var(--sapNegativeElementColor);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Critical: var(--sapCriticalElementColor);
-  --fdIcon_Tab_Bar_Semantic_Badge_Color_Informative: var(--sapInformativeElementColor);
 
   /* Toolbar */
   --fdToolbar_Auto_Background: inherit;
@@ -403,4 +398,9 @@
   --fdBar_Left_Area_Padding_Right: 0;
   --fdBar_Middle_Area_Padding_X: 0.5rem;
   --fdBar_Right_Area_Padding_Left: 0;
+
+  /** Object List */
+  --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
+  --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);
+  --fdObject_List_Number_Font_Size: 1.375rem;
 }

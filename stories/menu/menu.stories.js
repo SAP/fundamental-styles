@@ -322,6 +322,11 @@ export const MobileCozyMode = () => `<div style="width: 50%; display: inline-blo
                             <span class="fd-menu__title">Sub-option 4</span>
                         </a>
                     </li>
+                    <li class="fd-menu__item" role="presentation">
+                        <a class="fd-menu__link" href="#" role="menuitem">
+                            <span class="fd-menu__title">Sub-option 5 with very very very very long text</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -574,6 +579,11 @@ export const WithSubmenu = () => `<nav class="fd-menu">
                 <li class="fd-menu__item" role="presentation">
                     <a class="fd-menu__link" href="#" role="menuitem">
                         <span class="fd-menu__title">Sub-option 4</span>
+                    </a>
+                </li>
+                <li class="fd-menu__item" role="presentation">
+                    <a class="fd-menu__link" href="#" role="menuitem">
+                        <span class="fd-menu__title">Sub-option 5 with very very very very long text</span>
                     </a>
                 </li>
             </ul>

@@ -547,7 +547,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <i
-              class="sap-icon--question-mark"
+              class="sap-icon--sys-help-2"
             />
             
                     
@@ -665,7 +665,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <i
-              class="sap-icon--message-error"
+              class="sap-icon--error"
             />
             
                     
@@ -766,7 +766,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <i
-              class="sap-icon--message-success"
+              class="sap-icon--sys-enter-2"
             />
             
                     
@@ -867,7 +867,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <i
-              class="sap-icon--message-warning"
+              class="sap-icon--alert"
             />
             
                     
@@ -968,7 +968,7 @@ exports[`Storyshots Components/Message Box Semantic types 1`] = `
             
                     
             <i
-              class="sap-icon--message-information"
+              class="sap-icon--information"
             />
             
                     

@@ -13,8 +13,8 @@ const themes = [
     { value: 'sap_fiori_3', title: 'Quartz Light' },
     // { value: 'sap_fiori_3_dark', title: 'Quartz Dark' },
     // { value: 'sap_fiori_3_hcw', title: 'High Contrast White' },
-    { value: 'sap_fiori_3_hcb', title: 'High Contrast Black' }
-    //{ value: 'sap_horizon', title: 'Horizon' }
+    { value: 'sap_fiori_3_hcb', title: 'High Contrast Black' },
+    { value: 'sap_horizon', title: 'Morning Horizon' }
 ];
 rimraf('**/*.visual.js', (rimRafError) => {
     if (rimRafError) {
@@ -26,7 +26,7 @@ rimraf('**/*.visual.js', (rimRafError) => {
     console.info('  Trying to build all visual stories. 🏗');
 
     const isComponentDirectory = (source) => {
-        const ignoredDirectories = ['utils', 'Docs', 'docs'];
+        const ignoredDirectories = ['utils', 'Docs', 'docs', 'BTP Experimental Design'];
         return lstatSync(source).isDirectory() && !ignoredDirectories.some((ignored) => source.includes(ignored));
     };
 

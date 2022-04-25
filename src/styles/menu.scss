@@ -5,7 +5,7 @@ $block: #{$fd-namespace}-menu;
 
 .#{$block} {
   // Menu
-  $fd-menu-border-radius: var(--sapElement_BorderCornerRadius) !default;
+  $fd-menu-border-radius: var(--fdButton_Menu_Border_Radius) !default;
 
   // Menu Item
   $fd-menu-item-color-active: var(--sapList_Active_TextColor) !default;
@@ -79,7 +79,7 @@ $block: #{$fd-namespace}-menu;
     left: 100%;
     z-index: 2;
     margin: $fd-menu-link-padding-top 0 0 $fd-menu-link-padding-left;
-    width: 100%; // to fix IE issue
+    min-width: 100%;
 
     @include fd-rtl() {
       right: 100%;
