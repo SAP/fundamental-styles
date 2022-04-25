@@ -330,7 +330,22 @@ $fd-calendar-special-days: (
       padding-top: $fd-calendar-item-helper-height;
 
       .#{$block}__item {
+        background-color: transparent;
         max-height: $fd-calendar-item-height;
+
+        &-button {
+          min-width: 100%;
+          min-height: 100%;
+          padding: 0;
+        }
+
+        &--current {
+          .#{$block}__item-button {
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+          }
+        }
 
         .#{$block}__text {
           color: inherit;
