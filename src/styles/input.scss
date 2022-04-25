@@ -8,6 +8,7 @@ $block: #{$fd-namespace}-input;
 
 .#{$block} {
   @include fd-form-text();
+  @include fd-reset-webkit-input-buttons();
 
   min-width: 2.75rem;
   width: 100%;
