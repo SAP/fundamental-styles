@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.45...v0.24.0-rc.46) (2022-04-26)
+
+
+### Bug Fixes
+
+* **styles:** shellbar logo, product and subtitle display ([#3360](https://github.com/SAP/fundamental-styles/issues/3360)) ([1337f7e](https://github.com/SAP/fundamental-styles/commit/1337f7eb544af190b59bda7eae8291717455ed82))
+
 ## [0.24.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.44...v0.24.0-rc.45) (2022-04-25)
 
 
