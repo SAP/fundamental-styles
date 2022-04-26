@@ -353,28 +353,6 @@ $fd-calendar-special-days: (
       }
     }
 
-    &:not(&--years):not(&--months) .#{$block}__item {
-      @include fd-hover() {
-        background-color: $fd-calendar-item-background-hover;
-      }
-
-      @include fd-active() {
-        @extend %fd-calendar-item-active;
-
-        .#{$block}__text {
-          color: $fd-calendar-item-active-color;
-        }
-      }
-
-      @include fd-focus() {
-        @extend %fd-calendar-item-focus;
-      }
-
-      @include fd-disabled() {
-        @extend %fd-calendar-item-disabled;
-      }
-    }
-
     &--screen-reader-only {
       @include fd-screen-reader-only();
     }
@@ -403,6 +381,18 @@ $fd-calendar-special-days: (
   // Needed to not overwrite Button styles, that are applied for Months & Years items
   &__item {
     @include fd_reset();
+
+    @include fd-hover() {
+      background-color: $fd-calendar-item-background-hover;
+    }
+
+    @include fd-focus() {
+      @extend %fd-calendar-item-focus;
+    }
+
+    @include fd-disabled() {
+      @extend %fd-calendar-item-disabled;
+    }
   }
 
   // And these styles should overwrite Button's ones
@@ -410,6 +400,14 @@ $fd-calendar-special-days: (
     @extend %fd-calendar-item;
 
     display: inline-block;
+
+    @include fd-active() {
+      @extend %fd-calendar-item-active;
+
+      .#{$block}__text {
+        color: $fd-calendar-item-active-color;
+      }
+    }
 
     &--weekend {
       @extend %fd-calendar-item-weekend;
