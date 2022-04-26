@@ -42,12 +42,12 @@
     );
 
     @include fd-focus() {
-      @include fd-button-outline-contrast();
+      outline-color: var(--sapContent_ContrastFocusColor);
     }
 
     &.#{$block-button-toggled} {
       @include fd-focus() {
-        @include fd-button-outline-contrast();
+        outline-color: var(--fdButton_Emphasized_Active_Outline);
       }
     }
   }

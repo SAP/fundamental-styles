@@ -10,13 +10,10 @@ $block-button-toggled: #{$block-button}--toggled;
 
   @content;
 
-  &.#{$block-button-toggled} {
+  &.#{$block-button-toggled},
+  &.is-selected {
     outline-color: var(--fdButton_Outline_Contrast);
   }
-}
-
-@mixin fd-button-outline-contrast() {
-  outline-color: var(--sapContent_ContrastFocusColor) !important;
 }
 
 // Button pad to create a background under the round segmented buttons in Horizon themes

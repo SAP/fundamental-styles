@@ -47,9 +47,6 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
     right: 0;
   }
 
-  // Types, including default one
-  @include fd-button-types();
-
   &__text {
     @include fd-reset();
     @include fd-ellipsis();
@@ -164,4 +161,7 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
     cursor: not-allowed;
     opacity: var(--sapContent_DisabledOpacity);
   }
+
+  // Types, including default one
+  @include fd-button-types();
 }
