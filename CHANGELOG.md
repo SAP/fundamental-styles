@@ -1,4 +1,18 @@
 
+## [0.24.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.45...v0.24.0-rc.46) (2022-04-26)
+
+
+### Bug Fixes
+
+* **styles:** shellbar logo, product and subtitle display ([#3360](https://github.com/SAP/fundamental-styles/issues/3360)) ([1337f7e](https://github.com/SAP/fundamental-styles/commit/1337f7eb544af190b59bda7eae8291717455ed82))
+
+## [0.24.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.44...v0.24.0-rc.45) (2022-04-25)
+
+
+### Bug Fixes
+
+* remove search button in inputs in webkit browsers [ci visual] ([#3359](https://github.com/SAP/fundamental-styles/issues/3359)) ([ffd8a17](https://github.com/SAP/fundamental-styles/commit/ffd8a17024141f86d99eec757f377d587cb397c8))
+
 ## [0.24.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.43...v0.24.0-rc.44) (2022-04-22)
 
 

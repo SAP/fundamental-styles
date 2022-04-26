@@ -10,6 +10,7 @@ $block: #{$fd-namespace}-input;
   @include fd-form-text();
   @include fd-form-states();
   @include fd-form-input-focus();
+  @include fd-reset-webkit-input-buttons();
 
   min-width: 2.75rem;
   width: 100%;
