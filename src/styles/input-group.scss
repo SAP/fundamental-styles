@@ -13,14 +13,21 @@ $block: #{$fd-namespace}-input-group;
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
 .#{$block} {
-  @mixin fd-control-button-side-border() {
-    .#{$block}__button {
-      border-left: var(--fdButton_Addon_Sideborder);
+  @mixin fd-addon-button-border() {
+    border-left-color: var(--fdButton_Addon_Sideborder_Color);
 
-      @include fd-rtl() {
-        border-left: none;
-        border-right: var(--fdButton_Addon_Sideborder);
-      }
+    @include fd-rtl() {
+      border-left-color: transparent;
+      border-right-color: var(--fdButton_Addon_Sideborder_Color);
+    }
+  }
+
+  @mixin fd-addon-active-button-border() {
+    border-left-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
+
+    @include fd-rtl() {
+      border-left-color: transparent;
+      border-right-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
     }
   }
 
@@ -111,11 +118,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
-  .#{$fd-namespace}-tokenizer {
-    background: none;
-    border: none;
-  }
-
   &--inline {
     display: inline-flex;
     vertical-align: bottom;
@@ -204,10 +206,25 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   &__button {
     @include fd-ellipsis();
 
-    border: none;
     width: 100%;
     z-index: auto !important;
     position: static !important;
+    border-color: transparent;
+    border-width: var(--sapField_BorderWidth);
+
+    @include fd-addon-button-border();
+
+    @include fd-hover() {
+      border-color: transparent;
+
+      @include fd-addon-active-button-border();
+    }
+
+    @include fd-active() {
+      border-color: transparent;
+
+      @include fd-addon-active-button-border();
+    }
 
     @include fd-focus() {
       @include fd-button-focus() {
@@ -225,20 +242,13 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
-  .#{$fd-namespace}-button.#{$block}__button {
-    border-color: transparent;
-
-    @include fd-hover() {
-      @include fd-control-button-side-border();
-    }
-
-    @include fd-active() {
-      @include fd-control-button-side-border();
-    }
-  }
-
   .#{$fd-namespace}-textarea {
     resize: vertical;
+  }
+
+  .#{$fd-namespace}-tokenizer {
+    background: none;
+    border: none;
   }
 
   &[readonly],

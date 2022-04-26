@@ -210,7 +210,7 @@ export const States = () => `
     <div class="fd-input-group is-information">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-            <button class="fd-input-group__button fd-button fd-button--compact">
+            <button class="fd-input-group__button fd-button fd-button--information fd-button--compact">
                 Button
             </button>
         </span>

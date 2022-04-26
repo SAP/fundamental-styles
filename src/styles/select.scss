@@ -9,20 +9,20 @@ $block: #{$fd-namespace}-select;
   $fd-select-padding-x-compact: 0.5rem;
 
   @mixin fd-select-button-border() {
-    border-left: var(--fdSelect_Button_SideBorder);
+    border-left-color: var(--fdSelect_Button_SideBorder_Color);
 
     @include fd-rtl() {
-      border-left: none;
-      border-right: var(--fdSelect_Button_SideBorder);
+      border-left-color: none;
+      border-right-color: var(--fdSelect_Button_SideBorder_Color);
     }
   }
 
   @mixin fd-select-active-button-border() {
-    border-left: var(--fdSelect_Button_Interractive_SideBorder);
+    border-left-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
 
     @include fd-rtl() {
-      border-left: none;
-      border-right: var(--fdSelect_Button_Interractive_SideBorder);
+      border-left-color: none;
+      border-right-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
     }
   }
 
@@ -62,16 +62,22 @@ $block: #{$fd-namespace}-select;
       @include fd-inline-flex-center();
       @include fd-set-margin-left(0.25rem);
 
-      border: none;
+      max-width: 2.25rem;
       border-radius: var(--fdSelect_Button_Border_Radius);
+      border-color: transparent;
+      border-width: var(--sapField_BorderWidth);
 
       @include fd-select-button-border();
 
       @include fd-hover() {
+        border-color: transparent;
+
         @include fd-select-active-button-border();
       }
 
       @include fd-active() {
+        border-color: transparent;
+
         @include fd-select-active-button-border();
       }
     }
