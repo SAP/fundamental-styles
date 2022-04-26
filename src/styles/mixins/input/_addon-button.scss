@@ -24,6 +24,10 @@
 }
 
 @mixin addon-button-interactions($boxShadow) {
+  @include fd-hover() {
+    box-shadow: $boxShadow;
+  }
+
   @include fd-active() {
     box-shadow: $boxShadow;
   }
@@ -49,6 +53,12 @@
   &.#{$fd-namespace}-button--attention {
     @include addon-button-interactions(
       var(--fdButton_Addon_Warning_BoxShadow)
+    );
+  }
+
+  &.#{$fd-namespace}-button--information {
+    @include addon-button-interactions(
+      var(--fdButton_Addon_Information_BoxShadow)
     );
   }
 }

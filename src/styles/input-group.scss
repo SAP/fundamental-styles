@@ -38,7 +38,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   background-color: var(--sapField_Background);
   width: 100%;
   overflow: hidden;
-  text-shadow: var(--fdInputGroup_Text_Shadow);
   position: relative;
 
   // states
@@ -92,7 +91,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     flex: 1 1 $fd-input-width-basis;
     padding-right: 0.25rem;
     padding-left: 0.25rem;
-    text-shadow: var(--fdInputGroup_Text_Shadow);
     background: none !important;
 
     @include fd-hover() {

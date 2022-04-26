@@ -32,8 +32,6 @@ $block: #{$fd-namespace}-select;
 
   @include fd-reset();
 
-  text-shadow: var(--fdSelect_Text_Shadow);
-
   &__control {
     @include fd-reset();
     @include fd-form-base();
@@ -66,7 +64,6 @@ $block: #{$fd-namespace}-select;
 
       border: none;
       border-radius: var(--fdSelect_Button_Border_Radius);
-      color: var(--sapContent_IconColor);
 
       @include fd-select-button-border();
 
@@ -96,6 +93,7 @@ $block: #{$fd-namespace}-select;
     @include fd-select-set-min-width(2.5rem);
 
     display: inline-block;
+    text-shadow: var(--fdInput_Text_Shadow);
   }
 
   &--compact {

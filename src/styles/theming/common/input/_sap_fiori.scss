@@ -37,9 +37,7 @@
   --fdInput_Readonly_Focus_Background: var(--sapField_ReadOnly_Background);
 
   /* Input Group */
-  --fdInputGroup_Text_Shadow: none;
   --fdInputGroup_Focus_Border_Radius: 0;
-  --fdInputGroup_Focus_Border_Style: none;
 
   /* Addon Button */
   --fdButton_Addon_Sideborder: solid var(--sapButton_BorderWidth) transparent;
@@ -51,11 +49,10 @@
   --fdButton_Addon_Base_BoxShadow: none;
   --fdButton_Addon_Success_BoxShadow: none;
   --fdButton_Addon_Error_BoxShadow: none;
-  --fdButton_Addon_Information_BoxShadow: none;
   --fdButton_Addon_Warning_BoxShadow: none;
+  --fdButton_Addon_Information_BoxShadow: none;
 
   /* Select */
-  --fdSelect_Text_Shadow: none;
   --fdSelect_Button_SideBorder: none;
   --fdSelect_Button_Interractive_SideBorder: none;
   --fdSelect_Button_Hover_BackgroundColor: var(--sapButton_Lite_Hover_Background);

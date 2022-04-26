@@ -1,4 +1,4 @@
-@import "./common/input/sap_fiori_hcb";
+@import "./common/input/sap_fiori_hc";
 @import "./common/switch/sap_fiori";
 @import "./common/button/sap_fiori";
 @import "./common/icon-tab-bar/sap_fiori";
@@ -171,6 +171,9 @@
   /* Button */
   --fdButton_Text_Shadow: 0 0 0.125rem #000;
   --fdButton_Emphasized_Border_Width: 0.125rem;
+
+  /* Input */
+  --fdInput_Text_Shadow: 0 0 0.125rem #000;
 
   /* Form Message */
   --fdMessage_Box_Shadow: none;
