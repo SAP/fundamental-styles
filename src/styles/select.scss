@@ -73,10 +73,8 @@ $block: #{$fd-namespace}-select;
       @include fd-hover() {
         @include fd-select-active-button-border();
       }
-    }
 
-    @include fd-expanded() {
-      .#{$block}__button {
+      @include fd-active() {
         @include fd-select-active-button-border();
       }
     }

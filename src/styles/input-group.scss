@@ -227,7 +227,9 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
-  &--control {
+  .#{$fd-namespace}-button.#{$block}__button {
+    border-color: transparent;
+
     @include fd-hover() {
       @include fd-control-button-side-border();
     }

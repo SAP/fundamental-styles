@@ -44,6 +44,7 @@
   /* Addon Button */
   --fdButton_Addon_Sideborder: solid var(--sapButton_BorderWidth) transparent;
   --fdButton_Addon_Hover_BackgroundColor: var(--sapButton_Hover_Background);
+  --fdButton_Addon_Active_BackgroundColor: var(--sapButton_Selected_Background);
   --fdButton_Addon_Outline_Style: none;
   --fdButton_Addon_FirstChild_Border_Radius: 0;
   --fdButton_Addon_LastChild_Border_Radius: 0;

@@ -18,7 +18,7 @@
     }
 
     @include fd-active() {
-      background-color: var(--sapButton_Lite_Active_Background);
+      background-color: var(--fdButton_Addon_Active_BackgroundColor);
     }
   }
 }
