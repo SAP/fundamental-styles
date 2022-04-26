@@ -240,7 +240,7 @@ export const WithActions = () => `<ul class="fd-feed-list" aria-label="Feed List
                             <i class="sap-icon--overflow"></i>
                         </button>
                     </div>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
+                    <div class="fd-popover__body fd-popover__body--compact fd-popover__body--right" aria-hidden="true" id="actionSheetDesktop">
                         <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
                             <li class="fd-action-sheet__item" role="listitem">
                                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
