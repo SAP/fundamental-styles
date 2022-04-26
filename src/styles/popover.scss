@@ -74,8 +74,7 @@ $block: #{$fd-namespace}-popover;
     transition: all $fd-popover-transition-params;
     transform: translateY(0);
 
-    &::before,
-    &::after {
+    @include both-pseudo-selectors() {
       content: "";
       position: absolute;
     }
@@ -128,14 +127,12 @@ $block: #{$fd-namespace}-popover;
     &--compact.#{$block}__body {
       &,
       &--left {
-        &::before,
-        &::after {
+        @include both-pseudo-selectors() {
           left: $fd-popover-arrow-offset-compact;
         }
 
         @include fd-rtl() {
-          &::before,
-          &::after {
+          @include both-pseudo-selectors() {
             left: auto;
             right: $fd-popover-arrow-offset-compact;
           }
@@ -145,15 +142,13 @@ $block: #{$fd-namespace}-popover;
       &--right {
         @include fd-right-popover-offset-placement();
 
-        &::before,
-        &::after {
+        @include both-pseudo-selectors() {
           left: auto;
           right: $fd-popover-arrow-offset-compact;
         }
 
         @include fd-rtl() {
-          &::before,
-          &::after {
+          @include both-pseudo-selectors() {
             left: $fd-popover-arrow-offset-compact;
             right: auto;
           }
@@ -165,14 +160,12 @@ $block: #{$fd-namespace}-popover;
     &--left {
       @include fd-left-popover-offset-placement();
 
-      &::before,
-      &::after {
+      @include both-pseudo-selectors() {
         left: $fd-popover-arrow-offset;
       }
 
       @include fd-rtl() {
-        &::before,
-        &::after {
+        @include both-pseudo-selectors() {
           left: auto;
           right: $fd-popover-arrow-offset;
         }
@@ -182,15 +175,13 @@ $block: #{$fd-namespace}-popover;
     &--right {
       @include fd-right-popover-offset-placement();
 
-      &::before,
-      &::after {
+      @include both-pseudo-selectors() {
         left: auto;
         right: $fd-popover-arrow-offset;
       }
 
       @include fd-rtl() {
-        &::before,
-        &::after {
+        @include both-pseudo-selectors() {
           left: $fd-popover-arrow-offset;
           right: auto;
         }
@@ -202,8 +193,7 @@ $block: #{$fd-namespace}-popover;
       top: $fd-popover-top-position-noarrow;
       z-index: 2;
 
-      &::before,
-      &::after {
+      @include both-pseudo-selectors() {
         display: none;
       }
     }

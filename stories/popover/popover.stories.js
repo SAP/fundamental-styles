@@ -36,10 +36,13 @@ export const Alignment = () => `<div class="fddocs-container" style="margin-bott
                     aria-haspopup="true"
                     class="fd-button"
                     onclick="onPopoverClick('popoverA1');"
-                    role="button">
+                    role="button"
+                >
                     <!- role is needed to override the combobox role due to aria-haspopup -->
-                        Left-aligned (default)
+                    <i class="sap-icon--navigation-down-arrow"></i>
                 </button>
+
+                Left-aligned (default)
             </div>
             <div class="fd-popover__body" aria-hidden="false" id="popoverA1">
                 <nav class="fd-menu" aria-label="options">
@@ -71,16 +74,19 @@ export const Alignment = () => `<div class="fddocs-container" style="margin-bott
 
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
+                Right-aligned
+
                 <button
                     aria-controls="popoverA2"
                     aria-expanded="true"
                     aria-haspopup="true"
                     class="fd-button"
                     onclick="onPopoverClick('popoverA2');"
-                    role="button">
+                    role="button"
+                >
                         <!- role is needed to override the combobox role due to aria-haspopup -->
-                        Right-aligned
-                    </button>
+                    <i class="sap-icon--navigation-down-arrow"></i>
+                </button>
             </div>
             <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA2">
                 <div style="margin: 20px;">
