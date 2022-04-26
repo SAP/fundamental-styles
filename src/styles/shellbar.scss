@@ -68,6 +68,13 @@ $block: #{$fd-namespace}-shellbar;
     color: var(--sapShell_TextColor);
   }
 
+  &__logo,
+  &__product,
+  &__subtitle {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   &__title {
     font-weight: bold;
     vertical-align: middle;
