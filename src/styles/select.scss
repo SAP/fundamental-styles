@@ -9,21 +9,17 @@ $block: #{$fd-namespace}-select;
   $fd-select-padding-x-compact: 0.5rem;
 
   @mixin fd-select-button-border() {
-    border-left-color: var(--fdSelect_Button_SideBorder_Color);
-
-    @include fd-rtl() {
-      border-left-color: none;
-      border-right-color: var(--fdSelect_Button_SideBorder_Color);
-    }
+    @include fd-addon-button-sideborder(
+      var(--fdSelect_Button_SideBorder_Color),
+      transparent
+    );
   }
 
   @mixin fd-select-active-button-border() {
-    border-left-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
-
-    @include fd-rtl() {
-      border-left-color: none;
-      border-right-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
-    }
+    @include fd-addon-button-sideborder(
+      var(--fdButton_Addon_Interractive_SideBorder_Color),
+      transparent
+    );
   }
 
   @mixin fd-select-set-min-width($width) {

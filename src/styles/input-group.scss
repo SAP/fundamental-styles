@@ -13,22 +13,32 @@ $block: #{$fd-namespace}-input-group;
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
 .#{$block} {
-  @mixin fd-addon-button-border() {
-    border-left-color: var(--fdButton_Addon_Sideborder_Color);
-
-    @include fd-rtl() {
-      border-left-color: transparent;
-      border-right-color: var(--fdButton_Addon_Sideborder_Color);
-    }
+  @mixin fd-addon-firstchild-button-border() {
+    @include fd-addon-button-sideborder(
+      transparent,
+      var(--fdButton_Addon_Sideborder_Color)
+    );
   }
 
-  @mixin fd-addon-active-button-border() {
-    border-left-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
+  @mixin fd-addon-active-firstchild-button-border() {
+    @include fd-addon-button-sideborder(
+      transparent,
+      var(--fdButton_Addon_Interractive_SideBorder_Color)
+    );
+  }
 
-    @include fd-rtl() {
-      border-left-color: transparent;
-      border-right-color: var(--fdButton_Addon_Interractive_SideBorder_Color);
-    }
+  @mixin fd-addon-lastchild-button-border() {
+    @include fd-addon-button-sideborder(
+      var(--fdButton_Addon_Sideborder_Color),
+      transparent
+    );
+  }
+
+  @mixin fd-addon-active-lastchild-button-border() {
+    @include fd-addon-button-sideborder(
+      var(--fdButton_Addon_Interractive_SideBorder_Color),
+      transparent
+    );
   }
 
   $fd-input-padding: 0.625rem;
@@ -151,6 +161,42 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       opacity: 0.4;
     }
 
+    &:first-child {
+      .#{$block}__button {
+        @include fd-addon-firstchild-button-border();
+
+        @include fd-hover() {
+          border-color: transparent;
+
+          @include fd-addon-active-firstchild-button-border();
+        }
+
+        @include fd-active() {
+          border-color: transparent;
+
+          @include fd-addon-active-firstchild-button-border();
+        }
+      }
+    }
+
+    &:last-child {
+      .#{$block}__button {
+        @include fd-addon-lastchild-button-border();
+
+        @include fd-hover() {
+          border-color: transparent;
+
+          @include fd-addon-active-lastchild-button-border();
+        }
+
+        @include fd-active() {
+          border-color: transparent;
+
+          @include fd-addon-active-lastchild-button-border();
+        }
+      }
+    }
+
     &--button {
       padding: 0;
       display: flex;
@@ -211,20 +257,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     position: static !important;
     border-color: transparent;
     border-width: var(--sapField_BorderWidth);
-
-    @include fd-addon-button-border();
-
-    @include fd-hover() {
-      border-color: transparent;
-
-      @include fd-addon-active-button-border();
-    }
-
-    @include fd-active() {
-      border-color: transparent;
-
-      @include fd-addon-active-button-border();
-    }
 
     @include fd-focus() {
       @include fd-button-focus() {

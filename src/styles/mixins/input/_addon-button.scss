@@ -62,3 +62,13 @@
     );
   }
 }
+
+@mixin fd-addon-button-sideborder($leftBorderColor, $rightBorderColor) {
+  border-left-color: $leftBorderColor;
+  border-right-color: $rightBorderColor;
+
+  @include fd-rtl() {
+    border-left-color: $rightBorderColor;
+    border-right-color: $leftBorderColor;
+  }
+}
