@@ -25,14 +25,12 @@ export const Primary = () => `<label class="fd-form-label" for="step-3">Default 
 <div class="fd-step-input">
   <button aria-label="Step down" class="
             fd-button
-            fd-button--transparent
             fd-step-input__button" onclick="stepInputValue('step-3', 'down');" tabindex="-1" type="button">
     <i class="sap-icon--less"></i>
   </button>
   <input class="fd-input fd-input--no-number-spinner fd-step-input__input" id="step-3" type="number" value="0" />
   <button aria-label="Step up" class="
             fd-button
-            fd-button--transparent
             fd-step-input__button" onclick="stepInputValue('step-3', 'up');" tabindex="-1" type="button">
     <i class="sap-icon--add"></i>
   </button>
@@ -56,7 +54,6 @@ export const Compact = () => `<label class="fd-form-label" for="step-1">Compact 
             <button aria-label="Step down" class="
                 fd-button
                 fd-button--compact
-                fd-button--transparent
                 fd-step-input__button"
                 onclick="stepInputValue('step-1', 'down');"
                 tabindex="-1" type="button">
@@ -71,7 +68,6 @@ export const Compact = () => `<label class="fd-form-label" for="step-1">Compact 
             <button aria-label="Step up" class="
                 fd-button
                 fd-button--compact
-                fd-button--transparent
                 fd-step-input__button"
                 onclick="stepInputValue('step-1', 'up');"
                 tabindex="-1" type="button">
@@ -96,7 +92,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
 <div class="fd-step-input is-success">
         <button aria-label="Step down" class="
             fd-button
-            fd-button--transparent
+            fd-button--positive
             fd-step-input__button"
             onclick="stepInputValue('step-5', 'down');"
             tabindex="-1" type="button">
@@ -109,7 +105,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
     " id="step-5" type="number" value="0">
         <button aria-label="Step up" class="
             fd-button
-            fd-button--transparent
+            fd-button--positive
             fd-step-input__button"
             onclick="stepInputValue('step-5', 'up');"
             tabindex="-1" type="button">
@@ -122,7 +118,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
 <div class="fd-step-input is-information">
         <button aria-label="Step down" class="
             fd-button
-            fd-button--transparent
+            fd-button--information
             fd-step-input__button"
             onclick="stepInputValue('step-6', 'down');"
             tabindex="-1" type="button">
@@ -135,7 +131,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
     " id="step-6" type="number" value="0">
         <button aria-label="Step up" class="
             fd-button
-            fd-button--transparent
+            fd-button--information
             fd-step-input__button"
             onclick="stepInputValue('step-6', 'up');"
             tabindex="-1" type="button">
@@ -147,7 +143,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
 <div class="fd-step-input is-error">
         <button aria-label="Step down" class="
             fd-button
-            fd-button--transparent
+            fd-button--negative
             fd-step-input__button"
             onclick="stepInputValue('step-7', 'down');"
             tabindex="-1" type="button">
@@ -160,7 +156,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
     " id="step-7" type="number" value="0">
         <button aria-label="Step up" class="
             fd-button
-            fd-button--transparent
+            fd-button--negative
             fd-step-input__button"
             onclick="stepInputValue('step-7', 'up');"
             tabindex="-1" type="button">
@@ -174,7 +170,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
 <div class="fd-step-input is-warning">
     <button aria-label="Step down" class="
         fd-button
-        fd-button--transparent
+        fd-button--attention
         fd-step-input__button"
         onclick="stepInputValue('step-8', 'down');"
         tabindex="-1" type="button">
@@ -187,7 +183,7 @@ export const States = () => `<label class="fd-form-label" for="step-5">Success S
     " id="step-8" type="number" value="0">
     <button aria-label="Step up" class="
         fd-button
-        fd-button--transparent
+        fd-button--attention
         fd-step-input__button"
         onclick="stepInputValue('step-8', 'up');"
         tabindex="-1" type="button">
@@ -220,7 +216,6 @@ export const Focused = () => `<label class="fd-form-label" for="step-20">Focused
 <div class="fd-step-input is-focus">
         <button aria-label="Step down" class="
             fd-button
-            fd-button--transparent
             fd-step-input__button"
             onclick="stepInputValue('step-20', 'down');"
             tabindex="-1" type="button">
@@ -233,7 +228,6 @@ export const Focused = () => `<label class="fd-form-label" for="step-20">Focused
     " id="step-20" type="number" value="0">
         <button aria-label="Step up" class="
             fd-button
-            fd-button--transparent
             fd-step-input__button"
             onclick="stepInputValue('step-20', 'up');"
             tabindex="-1" type="button">
@@ -256,7 +250,6 @@ export const Disabled = () => `<label class="fd-form-label" for="step-13">Disabl
 <div class="fd-step-input is-disabled">
         <button aria-label="Step down" class="
             fd-button
-            fd-button--transparent
             fd-step-input__button"
             onclick="stepInputValue('step-13', 'down');"
             tabindex="-1" type="button" disabled>
@@ -269,7 +262,6 @@ export const Disabled = () => `<label class="fd-form-label" for="step-13">Disabl
     " id="step-13" type="number" value="0" disabled>
         <button aria-label="Step up" class="
             fd-button
-            fd-button--transparent
             fd-step-input__button"
             onclick="stepInputValue('step-13', 'up');"
             tabindex="-1" type="button" disabled>
@@ -293,7 +285,6 @@ export const ReadOnly = () => `<label class="fd-form-label" for="step-14">Temper
     <div class="fd-step-input is-readonly">
             <button aria-label="Step down" class="
                 fd-button
-                fd-button--transparent
                 fd-step-input__button"
                 onclick="stepInputValue('step-14', 'down');"
                 tabindex="-1" type="button">
@@ -306,7 +297,6 @@ export const ReadOnly = () => `<label class="fd-form-label" for="step-14">Temper
         " id="step-14" type="number" readonly value="23">
             <button aria-label="Step up" class="
                 fd-button
-                fd-button--transparent
                 fd-step-input__button"
                 onclick="stepInputValue('step-14', 'up');"
                 tabindex="-1" type="button">

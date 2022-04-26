@@ -45,10 +45,6 @@ $block: #{$fd-namespace}-popover;
 
     &.is-expanded {
       z-index: 3;
-
-      .fd-input-group {
-        background: var(--fdInput_Base_Focus_Background);
-      }
     }
 
     @include fd-disabled() {

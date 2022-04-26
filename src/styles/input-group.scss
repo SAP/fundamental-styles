@@ -15,11 +15,11 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 .#{$block} {
   @mixin fd-control-button-side-border() {
     .#{$block}__button {
-      border-left: var(--fdInputGroup_ControlButton_SideBorder);
+      border-left: var(--fdButton_Addon_Sideborder);
 
       @include fd-rtl() {
         border-left: none;
-        border-right: var(--fdInputGroup_ControlButton_SideBorder);
+        border-right: var(--fdButton_Addon_Sideborder);
       }
     }
   }
@@ -44,6 +44,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   // states
   @include fd-form-base();
   @include fd-form-states();
+  @include fd-addon-button();
 
   @include fd-form-input-pseudo-focus(
     var(--fdStepInput_Focus_Border_Offset),
@@ -83,9 +84,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       }
     }
   }
-
-  // button styles
-  @include fd-input-button-states();
 
   .#{$block}__input {
     @include fd-reset-child-spacing();
@@ -129,7 +127,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   &__addon {
     @include fd-reset();
     @include fd-flex-center();
-    @include fd-ellipsis();
 
     color: var(--sapContent_NonInteractiveIconColor);
     background: none !important;
@@ -169,20 +166,8 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         max-height: 100%;
       }
 
-      @include fd-hover() {
-        box-shadow: var(--fdButton_Hover_Shadow);
-      }
-
       > * {
         border-radius: 0;
-      }
-
-      &:first-child {
-        border-radius: var(--fdInputGroup_Button_FirstChild_Border_Radius);
-      }
-
-      &:last-child {
-        border-radius: var(--fdInputGroup_Button_LastChild_Border_Radius);
       }
 
       &:not(:first-child):not(:last-child) {
@@ -191,15 +176,27 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         }
       }
 
+      &:first-child {
+        .#{$block}__button {
+          border-radius: var(--fdButton_Addon_FirstChild_Border_Radius);
+        }
+      }
+
+      &:last-child {
+        .#{$block}__button {
+          border-radius: var(--fdButton_Addon_LastChild_Border_Radius);
+        }
+      }
+
       @include fd-rtl() {
         // reverse the border radius sides in rtl mode
         &:first-child {
-          border-radius: var(--fdInputGroup_Button_LastChild_Border_Radius);
+          border-radius: var(--fdButton_Addon_LastChild_Border_Radius);
           margin-right: 0;
         }
 
         &:last-child {
-          border-radius: var(--fdInputGroup_Button_FirstChild_Border_Radius);
+          border-radius: var(--fdButton_Addon_FirstChild_Border_Radius);
           margin-left: 0;
         }
       }
@@ -228,10 +225,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     &::before {
       display: none !important;
     }
-  }
-
-  .#{$fd-namespace}-button.#{$block}__button {
-    border-color: transparent;
   }
 
   &--control {

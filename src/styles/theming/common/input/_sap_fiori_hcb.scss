@@ -38,31 +38,20 @@
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: 0 0 0.125rem #000;
-  --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) var(--sapList_SelectionBorderColor);
-  --fdInputGroup_Button_Hover_BackgroundColor: var(--sapButton_Hover_Background);
   --fdInputGroup_Focus_Border_Radius: 0;
   --fdInputGroup_Focus_Border_Style: none;
-  --fdInputGroup_Button_Outline_Style: var(--sapContent_FocusStyle);
 
   /* Addon Button */
-  --fdButton_Addon_Expanded_Background_Color: var(--sapButton_Active_Background);
-  --fdButton_Addon_Expanded_TextColor: var(--sapButton_Active_TextColor);
-  --fdButton_Addon_Outline_Focus_Style: var(--sapContent_FocusStyle);
+  --fdButton_Addon_Sideborder: solid var(--sapButton_BorderWidth) var(--sapList_SelectionBorderColor);
+  --fdButton_Addon_Hover_BackgroundColor: var(--sapButton_Hover_Background);
+  --fdButton_Addon_Outline_Style: var(--sapContent_FocusStyle);
+  --fdButton_Addon_FirstChild_Border_Radius: 0;
+  --fdButton_Addon_LastChild_Border_Radius: 0;
   --fdButton_Addon_Base_BoxShadow: none;
-  --fdButton_Addon_Base_Focus_Color: var(--sapButton_TextColor);
-  --fdButton_Addon_Base_Active_Color: var(--sapButton_Active_TextColor);
   --fdButton_Addon_Success_BoxShadow: none;
-  --fdButton_Addon_Success_Focus_Color: var(--sapButton_TextColor);
-  --fdButton_Addon_Success_Active_Color: var(--sapButton_Active_TextColor);
   --fdButton_Addon_Error_BoxShadow: none;
-  --fdButton_Addon_Error_Focus_Color: var(--sapButton_TextColor);
-  --fdButton_Addon_Error_Active_Color: var(--sapButton_Active_TextColor);
   --fdButton_Addon_Information_BoxShadow: none;
-  --fdButton_Addon_Information_Focus_Color: var(--sapButton_TextColor);
-  --fdButton_Addon_Information_Active_Color: var(--sapButton_Active_TextColor);
   --fdButton_Addon_Warning_BoxShadow: none;
-  --fdButton_Addon_Warning_Focus_Color: var(--sapButton_TextColor);
-  --fdButton_Addon_Warning_Active_Color: var(--sapButton_Active_TextColor);
 
   /* Select */
   --fdSelect_Text_Shadow: 0 0 0.125rem #000;

@@ -34,7 +34,7 @@ export const CozyAndCompact = () => `<div style="display:flex;justify-content:sp
                             aria-label="show/hide fruit options"
                             aria-controls="F4GcX348"
                             aria-expanded="true" aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent">
+                            class="fd-input-group__button fd-button">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -114,7 +114,7 @@ export const CozyAndCompact = () => `<div style="display:flex;justify-content:sp
                             aria-controls="F4GcX34"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button">
+                            class="fd-input-group__button fd-button fd-button--compact fd-select__button">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -171,7 +171,7 @@ export const AsFormItem = () => `<div style="height:700px">
                             aria-controls="amsfiaufuaskhjd"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent">
+                            class="fd-input-group__button fd-button">
                             <i class="sap-icon--navigation-down-arrow"></i></button>
                     </span>
                 </div>
@@ -266,7 +266,7 @@ export const TwoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
                             aria-controls="F4GRTGLK6"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent fd-select__button">
+                            class="fd-input-group__button fd-button fd-select__button">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -315,7 +315,7 @@ export const TwoItemsAndItemsGrouping = () => `<div style="display:flex;justify-
                             aria-controls="F4GcXLK6"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent">
+                            class="fd-input-group__button fd-button">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -396,7 +396,7 @@ export const MatchPopoverBodySize = () => `<div style="display:flex;height:250px
                             aria-controls="F4HTFDLK6"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent">
+                            class="fd-input-group__button fd-button">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -447,7 +447,7 @@ export const DisabledAndReadOnly = () => `<div style="display:flex;justify-conte
                 <div class="fd-input-group fd-input-group--control" aria-disabled="true" disabled>
                     <input id="disabledCombobox" type="text" class="fd-input fd-input-group__input" id="" value="Orange" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button aria-label="show/hide options button" class="fd-input-group__button fd-button fd-button--transparent fd-select__button">
+                        <button aria-label="show/hide options button" class="fd-input-group__button fd-button fd-select__button">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -493,7 +493,7 @@ export const Semantic = () => `<div style="height:200px">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="semanticCombobox" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                     <button id="mpzjf2q09ugd" aria-label="show/hide fruit options"
-                        class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-select__button"
+                        class="fd-input-group__button fd-button fd-button--compact fd-button--positive fd-select__button"
                     aria-controls="F4GcEX34" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--navigation-down-arrow"></i>
                     </button>
@@ -553,7 +553,7 @@ id="select-dialog-example" style="height:600px">
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="close">
+                    <button class="fd-button" aria-label="close">
                         <i class="sap-icon--decline"></i>
                     </button>
                 </div>
@@ -565,7 +565,7 @@ id="select-dialog-example" style="height:600px">
                      <input aria-labelledby="mobileDialogHeader"
                         type="text" class="fd-input fd-input-group__input" value="Apple" id="mobileCombobox" placeholder="Select Ingredient">
                      <span class="fd-input-group__addon fd-input-group__addon--button">
-                         <button aria-label="hide/show options" class="fd-input-group__button fd-button fd-button--transparent">
+                         <button aria-label="hide/show options" class="fd-input-group__button fd-button">
                                 <i class="sap-icon--navigation-down-arrow"></i>
                             </button>
                      </span>

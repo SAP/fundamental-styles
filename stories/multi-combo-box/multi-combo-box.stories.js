@@ -75,7 +75,7 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
                         </div>
                     </div>
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+                        <button class="fd-input-group__button fd-button" aria-label="down arrow" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -157,7 +157,7 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
                         </div>
                     </div>
                     <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                        <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact" aria-controls="F4GcX34a" aria-expanded="false" aria-label="hidden button" aria-haspopup="true">
+                        <button class="fd-input-group__button fd-button fd-button--compact" aria-controls="F4GcX34a" aria-expanded="false" aria-label="hidden button" aria-haspopup="true">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
@@ -256,7 +256,7 @@ export const AsFormItem = () => `<div style="height: 300px;">
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-label="down arrow" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button" aria-controls="F4GcX348a" aria-expanded="false" aria-label="down arrow" aria-haspopup="true">
                         <i class="sap-icon--navigation-down-arrow"></i>
                     </button>
                 </span>
@@ -350,7 +350,7 @@ export const Grouping = () => `<div style="height: 450px;">
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button" aria-label="down arrow" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
                         <i class="sap-icon--navigation-down-arrow"></i>
                     </button>
                 </span>
@@ -463,7 +463,7 @@ export const MatchPopoverBodySize = () => `<div style="height: 300px;">
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button" aria-label="down arrow" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
                         <i class="sap-icon--navigation-down-arrow"></i>
                     </button>
                 </span>
@@ -626,7 +626,7 @@ export const ReadOnlyAndDisabled = () => `<div class="fd-container">
 								</div>
 							</div>
 							<span class="fd-input-group__addon fd-input-group__addon--button">
-								<button tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow">
+								<button tabindex="-1" class="fd-input-group__button fd-button" aria-label="down arrow">
 									<i class="sap-icon--navigation-down-arrow"></i>
 								</button>
 							</span>
@@ -681,7 +681,7 @@ export const Semantic = () => `<div style="height: 300px;">
                  </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
+                <button class="fd-input-group__button fd-button" aria-label="down arrow" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
                     <i class="sap-icon--navigation-down-arrow"></i>
                 </button>
             </span>
@@ -793,7 +793,7 @@ export const MobileMode = () => `<div class="fd-dialog fd-dialog-docs-static fd-
                              </div>
                          </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button">
-                            <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow">
+                            <button class="fd-input-group__button fd-button" aria-label="down arrow">
                                 <i class="sap-icon--navigation-down-arrow"></i>
                             </button>
                         </span>
@@ -895,7 +895,7 @@ export const Filtering = () => ` <div style="height: 250px;">
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+                <button class="fd-input-group__button fd-button" aria-label="down arrow" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
                     <i class="sap-icon--navigation-down-arrow"></i>
                 </button>
             </span>
@@ -970,7 +970,7 @@ export const TwoColumnComboBox = () => ` <div style="height: 350px;">
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+                <button class="fd-input-group__button fd-button" aria-label="down arrow" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
                     <i class="sap-icon--navigation-down-arrow"></i>
                 </button>
             </span>

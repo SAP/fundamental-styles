@@ -16,6 +16,7 @@ $block: #{$fd-namespace}-step-input;
   @include fd-reset();
   @include fd-form-base();
   @include fd-form-states();
+  @include fd-addon-button();
 
   @include fd-form-input-pseudo-focus(
     var(--fdStepInput_Focus_Border_Offset),
@@ -53,9 +54,6 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
-  // button styles
-  @include fd-input-button-states();
-
   &__button.#{$fd-namespace}-button {
     width: $fd-step-input-cozy-button-width;
     min-width: $fd-step-input-cozy-button-width;
@@ -66,24 +64,11 @@ $block: #{$fd-namespace}-step-input;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--sapButton_TextColor);
 
     &::before,
     &::after {
       font-size: $fd-button-icon-font-size;
       margin: 0;
-    }
-
-    @include fd-hover() {
-      background-color: var(--fdStepInput_Button_Hover_Background);
-
-      @include fd-active() {
-        box-shadow: var(--fdButton_Hover_Shadow);
-      }
-    }
-
-    @include fd-active() {
-      background-color: var(--sapButton_Lite_Active_Background);
     }
 
     @include fd-focus() {

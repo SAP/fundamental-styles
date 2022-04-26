@@ -366,24 +366,3 @@
     }
   }
 }
-
-@mixin fd-form-input-expanded() {
-  background: var(--fdInput_Base_Focus_Background);
-
-  &.is-success {
-    background: var(--fdInput_Success_Focus_Background);
-  }
-
-  &.is-error {
-    background: var(--fdInput_Error_Focus_Background);
-  }
-
-  &.is-information {
-    background: var(--fdInput_Information_Focus_Background);
-  }
-
-  &.is-warning,
-  &.is-alert {
-    background: var(--fdInput_Warning_Focus_Background);
-  }
-}

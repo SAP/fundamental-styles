@@ -82,7 +82,7 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
                             aria-controls="F4GcX348a"
                             aria-expanded="true"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent">
+                            class="fd-input-group__button fd-button">
                             <i class="sap-icon--value-help"></i>
                         </button>
                     </span>
@@ -173,7 +173,7 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
                             aria-controls="F4GcX34a"
                             aria-expanded="false"
                             aria-haspopup="true"
-                            class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
+                            class="fd-input-group__button fd-button fd-button--compact">
                             <i class="sap-icon--value-help"></i>
                         </button>
                     </span>
@@ -280,7 +280,7 @@ export const AsFormItem = () => `<div style="height:310px">
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+                    <button aria-label="show options" class="fd-input-group__button fd-button" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
                         <i class="sap-icon--value-help"></i>
                     </button>
                 </span>
@@ -377,7 +377,7 @@ export const Grouping = () => `<div style="height:450px">
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
+                    <button aria-label="show options" class="fd-input-group__button fd-button" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
                         <i class="sap-icon--value-help"></i>
                     </button>
                 </span>
@@ -494,7 +494,7 @@ export const MatchPopoverBodySize = () => `<div style="height:270px">
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
+                    <button aria-label="show options" class="fd-input-group__button fd-button" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
                         <i class="sap-icon--value-help"></i>
                     </button>
                 </span>
@@ -632,7 +632,7 @@ export const ReadOnlyAndDisabled = () => `<div style="display:flex;height:250px;
                                 </div>
                             </div>
                             <span class="fd-input-group__addon fd-input-group__addon--button">
-                                <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button fd-button--transparent">
+                                <button aria-label="show options" tabindex="-1" class="fd-input-group__button fd-button">
                                     <i class="sap-icon--value-help"></i>
                                 </button>
                             </span>
@@ -765,7 +765,7 @@ export const Semantic = () => `<div style="height:300px">
                  </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
+                <button aria-label="show options" class="fd-input-group__button fd-button" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
                     <i class="sap-icon--value-help"></i>
                 </button>
             </span>
@@ -882,7 +882,7 @@ export const MobileMode = () => `<section role="dialog" aria-labelledby="mobileM
                         </div>
                         <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button aria-label="show options"
-                                class="fd-input-group__button fd-button fd-button--transparent">
+                                class="fd-input-group__button fd-button">
                             <i class="sap-icon--value-help"></i>
                         </button>
                     </span>
@@ -976,7 +976,7 @@ export const Filtering = () => `<div style="min-height: 250px;">
                     </div>
                 </div>
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+                    <button aria-label="show options" class="fd-input-group__button fd-button" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
                         <i class="sap-icon--value-help"></i>
                     </button>
                 </span>

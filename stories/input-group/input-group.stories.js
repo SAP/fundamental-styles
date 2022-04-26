@@ -125,7 +125,7 @@ export const InputWithActions = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde120" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent">
+            <button class="fd-input-group__button fd-button">
                 Button
             </button>
         </span>
@@ -137,7 +137,7 @@ export const InputWithActions = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input-group__input" type="text" id="aqwsde121" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Navigation">
+            <button class="fd-input-group__button fd-button fd-button--icon" aria-label="Navigation">
                 <i class="sap-icon--navigation-down-arrow"></i>
             </button>
         </span>
@@ -149,7 +149,7 @@ export const InputWithActions = () => `
     <div class="fd-input-group">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde122" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-            <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Navigation">
+            <button class="fd-input-group__button fd-button fd-button--icon fd-button--compact" aria-label="Navigation">
                 <i class="sap-icon--navigation-down-arrow"></i>
             </button>
         </span>
@@ -160,7 +160,7 @@ export const InputWithActions = () => `
     <label class="fd-form-label" for="aqwsde123">Input with text action on left</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent">
+            <button class="fd-input-group__button fd-button">
                 Button
             </button>
         </span>
@@ -210,7 +210,7 @@ export const States = () => `
     <div class="fd-input-group is-information">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
+            <button class="fd-input-group__button fd-button fd-button--compact">
                 Button
             </button>
         </span>
@@ -264,7 +264,7 @@ export const States = () => `
     <div class="fd-input-group is-information is-disabled">
         <input class="fd-input fd-input--compact fd-input-group__input" disabled type="text" id="aqwsde132" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-            <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact" disabled>
+            <button class="fd-input-group__button fd-button fd-button--compact" disabled>
                 Button
             </button>
         </span>

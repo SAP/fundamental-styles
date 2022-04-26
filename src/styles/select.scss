@@ -38,7 +38,7 @@ $block: #{$fd-namespace}-select;
     @include fd-reset();
     @include fd-form-base();
     @include fd-form-states();
-    @include fd-select-button-states();
+    @include fd-addon-button();
     @include fd-form-input-pseudo-focus(
       var(--fdSelect_Focus_Border_Offset),
       var(--fdInputGroup_Focus_Border_Radius)
@@ -46,10 +46,6 @@ $block: #{$fd-namespace}-select;
 
     @include fd-flex-center() {
       justify-content: space-between;
-    }
-
-    @include fd-expanded() {
-      @include fd-form-input-expanded();
     }
 
     @include fd-rtl() {

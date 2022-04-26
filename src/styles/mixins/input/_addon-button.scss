@@ -1,227 +1,54 @@
-@mixin input-addon-button-interactions($boxShadow, $activeColor, $focusColor) {
-  .fd-input-group__addon--button {
-    &:focus-within {
-      box-shadow: $boxShadow;
-    }
+@mixin fd-addon-button() {
+  .#{$block}__button {
+    @include addon-button-states();
 
-    @include fd-hover() {
-      box-shadow: $boxShadow;
-    }
+    background-color: transparent;
+    border-color: transparent;
 
-    .fd-button {
-      @include fd-focus() {
-        color: $focusColor;
-
-        @include fd-expanded() {
-          color: $activeColor;
-          outline-style: var(--fdInputGroup_Button_Outline_Style);
-        }
-
-        @include fd-active() {
-          color: $activeColor;
-          box-shadow: $boxShadow;
-          outline: none;
-        }
-      }
-    }
-  }
-
-  &:focus-within {
-    .fd-input-group__addon--button {
-      @include fd-active() {
-        box-shadow: $boxShadow;
-      }
-    }
-
-    .fd-button {
-      @include fd-active() {
-        color: $activeColor;
-        box-shadow: $boxShadow;
-      }
-
-      @include fd-expanded() {
-        color: $activeColor;
-      }
-    }
-  }
-}
-
-@mixin fd-input-button-states() {
-  .fd-button,
-  .fd-button.fd-button--transparent {
-    color: var(--sapButton_TextColor);
-    background: var(--sapButton_Lite_Background);
-    border: none !important;
-
-    @include fd-hover() {
+    &:not(:active, .is-active) {
       color: var(--sapButton_TextColor);
-      background: none;
-      background-color: var(--fdInputGroup_Button_Hover_BackgroundColor);
     }
-
-    @include fd-focus() {
-      outline-style: var(--fdInputGroup_Button_Outline_Style);
-    }
-
-    @include fd-active() {
-      background-color: var(--sapButton_Lite_Active_Background);
-    }
-
-    @include fd-expanded() {
-      background-color: var(--fdButton_Addon_Expanded_Background_Color);
-      color: var(--fdButton_Addon_Expanded_TextColor);
-
-      @include fd-fiori-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-    }
-  }
-
-  @include input-addon-button-interactions(
-    var(--fdButton_Addon_Base_BoxShadow),
-    var(--fdButton_Addon_Base_Active_Color),
-    var(--fdButton_Addon_Base_Focus_Color)
-  );
-
-  &.is-success {
-    @include input-addon-button-interactions(
-      var(--fdButton_Addon_Success_BoxShadow),
-      var(--fdButton_Addon_Success_Active_Color),
-      var(--fdButton_Addon_Success_Focus_Color)
-    );
-  }
-
-  &.is-error {
-    @include input-addon-button-interactions(
-      var(--fdButton_Addon_Error_BoxShadow),
-      var(--fdButton_Addon_Error_Active_Color),
-      var(--fdButton_Addon_Error_Focus_Color)
-    );
-  }
-
-  &.is-information {
-    @include input-addon-button-interactions(
-      var(--fdButton_Addon_Information_BoxShadow),
-      var(--fdButton_Addon_Information_Active_Color),
-      var(--fdButton_Addon_Information_Focus_Color)
-    );
-  }
-
-  &.is-warning,
-  &.is-alert {
-    @include input-addon-button-interactions(
-      var(--fdButton_Addon_Warning_BoxShadow),
-      var(--fdButton_Addon_Warning_Active_Color),
-      var(--fdButton_Addon_Warning_Focus_Color)
-    );
-  }
-}
-
-@mixin select-addon-button-interactions($boxShadow, $activeColor, $focusColor) {
-  .fd-button,
-  .fd-button.fd-button--transparent {
-    @include fd-active() {
-      color: $activeColor;
-      box-shadow: $boxShadow;
-    }
-
-    @include fd-focus() {
-      color: $focusColor;
-
-      @include fd-active() {
-        color: $activeColor;
-        box-shadow: $boxShadow;
-      }
-    }
-  }
-
-  @include fd-expanded() {
-    .fd-button,
-    .fd-button.fd-button--transparent {
-      color: $activeColor;
-
-      @include fd-hover() {
-        color: $activeColor;
-        box-shadow: $boxShadow;
-      }
-    }
-  }
-}
-
-@mixin fd-select-button-states() {
-  @include fd-expanded() {
-    .fd-button,
-    .fd-button.fd-button--transparent {
-      color: var(--fdButton_Addon_Expanded_TextColor);
-      background-color: var(--fdButton_Addon_Expanded_Background_Color);
-
-      @include fd-fiori-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-
-      @include fd-hover() {
-        color: var(--fdButton_Addon_Expanded_TextColor);
-        background-color: var(--fdButton_Addon_Expanded_Background_Color);
-      }
-    }
-  }
-
-  .fd-button,
-  .fd-button.fd-button--transparent {
-    color: var(--sapButton_TextColor);
-    background: var(--sapButton_Lite_Background);
 
     @include fd-hover() {
-      color: var(--sapButton_TextColor);
-      background: none;
-      background-color: var(--fdInputGroup_Button_Hover_BackgroundColor);
+      background-color: var(--fdButton_Addon_Hover_BackgroundColor);
     }
 
     @include fd-focus() {
-      outline-style: var(--fdInputGroup_Button_Outline_Style);
+      outline-style: var(--fdButton_Addon_Outline_Style);
     }
 
     @include fd-active() {
       background-color: var(--sapButton_Lite_Active_Background);
     }
   }
+}
 
-  @include select-addon-button-interactions(
-    var(--fdButton_Addon_Base_BoxShadow),
-    var(--fdButton_Addon_Base_Active_Color),
-    var(--fdButton_Addon_Base_Focus_Color)
+@mixin addon-button-interactions($boxShadow) {
+  @include fd-active() {
+    box-shadow: $boxShadow;
+  }
+}
+
+@mixin addon-button-states() {
+  @include addon-button-interactions(
+    var(--fdButton_Addon_Base_BoxShadow)
   );
 
-  &.is-success {
-    @include select-addon-button-interactions(
-      var(--fdButton_Addon_Success_BoxShadow),
-      var(--fdButton_Addon_Success_Active_Color),
-      var(--fdButton_Addon_Success_Focus_Color)
+  &.#{$fd-namespace}-button--positive {
+    @include addon-button-interactions(
+      var(--fdButton_Addon_Success_BoxShadow)
     );
   }
 
-  &.is-error {
-    @include select-addon-button-interactions(
-      var(--fdButton_Addon_Error_BoxShadow),
-      var(--fdButton_Addon_Error_Active_Color),
-      var(--fdButton_Addon_Error_Focus_Color)
+  &.#{$fd-namespace}-button--negative {
+    @include addon-button-interactions(
+      var(--fdButton_Addon_Error_BoxShadow)
     );
   }
 
-  &.is-information {
-    @include select-addon-button-interactions(
-      var(--fdButton_Addon_Information_BoxShadow),
-      var(--fdButton_Addon_Information_Active_Color),
-      var(--fdButton_Addon_Information_Focus_Color)
-    );
-  }
-
-  &.is-warning,
-  &.is-alert {
-    @include select-addon-button-interactions(
-      var(--fdButton_Addon_Warning_BoxShadow),
-      var(--fdButton_Addon_Warning_Active_Color),
-      var(--fdButton_Addon_Warning_Focus_Color)
+  &.#{$fd-namespace}-button--attention {
+    @include addon-button-interactions(
+      var(--fdButton_Addon_Warning_BoxShadow)
     );
   }
 }
