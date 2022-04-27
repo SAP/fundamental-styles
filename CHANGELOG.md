@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.47...v0.24.0-rc.48) (2022-04-27)
+
+
+### Bug Fixes
+
+* **styles:** load styles once [ci visual] ([#3362](https://github.com/SAP/fundamental-styles/issues/3362)) ([fe713db](https://github.com/SAP/fundamental-styles/commit/fe713dbe1d411e0a23f55f68419c56806515d911))
+
 ## [0.24.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.46...v0.24.0-rc.47) (2022-04-27)
 
 
