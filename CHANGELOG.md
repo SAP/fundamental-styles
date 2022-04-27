@@ -1,4 +1,18 @@
 
+## [0.24.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.46...v0.24.0-rc.47) (2022-04-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** * to apply interactive states to the grid list item fd-grid-list__item--link class should be applied
+* fd-grid-list__btn-navigation element shouldn't be a button anymore
+* fd-grid-list__btn-navigation to fd-grid-list__item-navigation-indicator class change
+* grid list Item body markup changed a lot (see wiki)
+
+### Features
+
+* **styles:** add delta horizon theming for Grid List ([#3330](https://github.com/SAP/fundamental-styles/issues/3330)) ([cd1b6ad](https://github.com/SAP/fundamental-styles/commit/cd1b6adbb7e4f494c3978164c360f9f70613efc7))
+
 ## [0.24.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.45...v0.24.0-rc.46) (2022-04-26)
 
 
