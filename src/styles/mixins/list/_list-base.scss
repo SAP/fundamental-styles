@@ -129,7 +129,7 @@
   }
 
   &__secondary {
-    @include fd-set-paddings-x-equal(1rem);
+    @include fd-set-padding-left(1rem);
 
     font-size: $fd-list-normal-font-size;
     flex: 2 2 10%;

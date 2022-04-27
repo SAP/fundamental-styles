@@ -27,12 +27,12 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
     }
   }
 
-  .#{$block}__title-container {
+  &__title-container {
     @include fd-reset();
     @include fd-flex-vertical-center();
 
     .#{$block}__title {
-      @include fd-set-margin-right($fd-upload-collection-button-group-small-margin);
+      @include fd-set-margin-right($fd-upload-collection-button-group-small-margin !important);
 
       flex: none;
       flex-shrink: 1;
