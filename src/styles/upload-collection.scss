@@ -27,7 +27,7 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
     }
   }
 
-  &__title-container {
+  .#{$block}__title-container {
     @include fd-reset();
     @include fd-flex-vertical-center();
 

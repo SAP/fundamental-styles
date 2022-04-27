@@ -59,6 +59,8 @@ $semantic-color: (
       right: 0.125rem;
       bottom: 0.125rem;
       pointer-events: none;
+
+      @content;
     }
 
     @include fd-active() {

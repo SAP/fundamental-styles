@@ -18,7 +18,9 @@
   }
 
   &__item {
-    @include fd-list-fake-outline();
+    @include fd-list-fake-outline() {
+      bottom: 0.0625rem;
+    }
 
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
     background: var(--sapList_Background);
@@ -127,7 +129,7 @@
   }
 
   &__secondary {
-    @include fd-set-padding-left(1rem);
+    @include fd-set-paddings-x-equal(1rem);
 
     font-size: $fd-list-normal-font-size;
     flex: 2 2 10%;
