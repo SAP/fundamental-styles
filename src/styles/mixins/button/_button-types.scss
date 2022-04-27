@@ -47,9 +47,17 @@
       outline-color: var(--sapContent_ContrastFocusColor);
     }
 
+    @include fd-active-pressed-selected() {
+      outline: none;
+    }
+
     &.#{$block-button-toggled} {
       @include fd-focus() {
         outline-color: var(--fdButton_Emphasized_Active_Outline);
+      }
+
+      @include fd-active-pressed-selected() {
+        outline: none;
       }
     }
   }
