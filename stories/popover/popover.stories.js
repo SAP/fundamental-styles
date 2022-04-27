@@ -289,160 +289,210 @@ export const Variants = () => `<div class="fddocs-container">
             </div>
         </div>
     </div>
-    </div>
-    <div class="fddocs-container" style="margin-top:300px; margin-bottom: 300px">
-        <div class="fd-popover">
-            <div class="fd-popover__control">
-                <button
-                    aria-controls="popoverHSF3"
-                    aria-expanded="true"
-                    aria-haspopup="dialog"
-                    class="fd-button"
-                    onclick="onPopoverClick('popoverHSF3');"
-                    role="button">
-                        <!- role is needed to override the combobox role due to aria-haspopup -->
-                        Header, subheader and footer
-                </button>
-            </div>
-            <section
-                aria-hidden="false"
-                class="fd-popover__body fd-popover__body--no-arrow"
-                id="popoverHSF3"
-                aria-label="Dialog Data 1"
-                role="dialog">
-                <header class="fd-popover__body-header">
-                    <div class="fd-bar fd-bar--header-with-subheader">
-                        <div class="fd-bar__left">
-                            <div class="fd-bar__element">
-                                <button
-                                    aria-label="back button"
-                                    class="fd-button fd-button--transparent">
-                                    <i class="sap-icon--navigation-left-arrow"></i>
-                                </button>
-                            </div>
-                            <div id="popoverHeader" class="fd-bar__element">
-                                Header
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fd-bar fd-bar--subheader">
-                        <div class="fd-bar__middle">
-                            <div class="fd-bar__element">
-                                <div class="fd-form-item">
-                                    <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                        <button aria-label="email" class="fd-button fd-button--compact" aria-pressed="true">
-                                            <i class="sap-icon--email"></i>
-                                        </button>
-                                        <button  aria-label="phone" class="fd-button fd-button--compact">
-                                            <i class="sap-icon--iphone"></i>
-                                        </button>
-                                        <button  aria-label="notification" class="fd-button fd-button--compact">
-                                            <i class="sap-icon--notification-2"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <div style="margin: 20px 80px;">
-                    <span
-                        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
-                        style="background-image: url('assets/images/avatars/2.svg');"
-                        role="img"
-                        aria-label="Avatar"></span>
-                </div>
-                <footer class="fd-popover__body-footer">
-                    <div class="fd-bar fd-bar--footer">
-                        <div class="fd-bar__right">
-                            <div class="fd-bar__element">
-                                <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
-                            </div>
-                            <div class="fd-bar__element">
-                                <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </section>
-        </div>
+</div>
 
-        <div class="fd-popover">
-            <div class="fd-popover__control">
-                <button
-                    aria-controls="popoverHSF345"
-                    aria-expanded="true"
-                    aria-haspopup="dialog"
-                    class="fd-button"
-                    onclick="onPopoverClick('popoverHSF345');"
-                    role="button">
-                        <!- role is needed to override the combobox role due to aria-haspopup -->
-                        Cozy mode
-                </button>
-            </div>
-            <section
-                aria-hidden="false"
-                class="fd-popover__body fd-popover__body--no-arrow"
-                id="popoverHSF345"
-                aria-label="Dialog data"
-                role="dialog">
-                <header class="fd-popover__body-header">
-                    <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">
-                        <div class="fd-bar__left">
-                            <div class="fd-bar__element">
-                                <button
-                                    aria-label="go back"
-                                    class="fd-button fd-button--transparent">
-                                    <i class="sap-icon--navigation-left-arrow"></i>
-                                </button>
-                            </div>
-                            <div class="fd-bar__element">
-                                Header
-                            </div>
+<div class="fddocs-container" style="margin-top:300px; margin-bottom: 300px">
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <button
+                aria-controls="popoverHSF3"
+                aria-expanded="true"
+                aria-haspopup="dialog"
+                class="fd-button"
+                onclick="onPopoverClick('popoverHSF3');"
+                role="button">
+                    <!- role is needed to override the combobox role due to aria-haspopup -->
+                    Header, subheader and footer
+            </button>
+        </div>
+        <section
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="popoverHSF3"
+            aria-label="Dialog Data 1"
+            role="dialog">
+            <header class="fd-popover__body-header">
+                <div class="fd-bar fd-bar--header-with-subheader">
+                    <div class="fd-bar__left">
+                        <div class="fd-bar__element">
+                            <button
+                                aria-label="back button"
+                                class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
+                        </div>
+                        <div id="popoverHeader" class="fd-bar__element">
+                            Header
                         </div>
                     </div>
-                    <div class="fd-bar fd-bar--cozy fd-bar--subheader">
-                        <div class="fd-bar__middle">
-                            <div class="fd-bar__element">
-                                <div class="fd-form-item">
-                                    <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                        <button aria-label="email" class="fd-button fd-button--compact" aria-pressed="true">
-                                            <i class="sap-icon--email"></i>
-                                        </button>
-                                        <button aria-label="phone" class="fd-button fd-button--compact">
-                                            <i class="sap-icon--iphone"></i>
-                                        </button>
-                                        <button aria-label="notifications" class="fd-button fd-button--compact">
-                                            <i class="sap-icon--notification-2"></i>
-                                        </button>
-                                    </div>
+                </div>
+                <div class="fd-bar fd-bar--subheader">
+                    <div class="fd-bar__middle">
+                        <div class="fd-bar__element">
+                            <div class="fd-form-item">
+                                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                                    <button aria-label="email" class="fd-button fd-button--compact" aria-pressed="true">
+                                        <i class="sap-icon--email"></i>
+                                    </button>
+                                    <button  aria-label="phone" class="fd-button fd-button--compact">
+                                        <i class="sap-icon--iphone"></i>
+                                    </button>
+                                    <button  aria-label="notification" class="fd-button fd-button--compact">
+                                        <i class="sap-icon--notification-2"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </header>
-                <div style="margin: 20px 80px;">
-                    <span
-                        class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
-                        style="background-image: url('assets/images/avatars/1.svg');"
-                        role="img"
-                        aria-label="Avatar">
-                    </span>
                 </div>
-                <footer class="fd-popover__body-footer">
-                    <div class="fd-bar fd-bar--cozy fd-bar--footer">
-                        <div class="fd-bar__right">
-                            <div class="fd-bar__element">
-                                <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
-                            </div>
-                            <div class="fd-bar__element">
-                                <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+            </header>
+            <div style="margin: 20px 80px;">
+                <span
+                    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
+                    style="background-image: url('assets/images/avatars/2.svg');"
+                    role="img"
+                    aria-label="Avatar"></span>
+            </div>
+            <footer class="fd-popover__body-footer">
+                <div class="fd-bar fd-bar--footer">
+                    <div class="fd-bar__right">
+                        <div class="fd-bar__element">
+                            <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                        </div>
+                        <div class="fd-bar__element">
+                            <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <button
+                aria-controls="popoverHSF345"
+                aria-expanded="true"
+                aria-haspopup="dialog"
+                class="fd-button"
+                onclick="onPopoverClick('popoverHSF345');"
+                role="button">
+                    <!- role is needed to override the combobox role due to aria-haspopup -->
+                    Cozy mode
+            </button>
+        </div>
+        <section
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--no-arrow"
+            id="popoverHSF345"
+            aria-label="Dialog data"
+            role="dialog">
+            <header class="fd-popover__body-header">
+                <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">
+                    <div class="fd-bar__left">
+                        <div class="fd-bar__element">
+                            <button
+                                aria-label="go back"
+                                class="fd-button fd-button--transparent">
+                                <i class="sap-icon--navigation-left-arrow"></i>
+                            </button>
+                        </div>
+                        <div class="fd-bar__element">
+                            Header
+                        </div>
+                    </div>
+                </div>
+                <div class="fd-bar fd-bar--cozy fd-bar--subheader">
+                    <div class="fd-bar__middle">
+                        <div class="fd-bar__element">
+                            <div class="fd-form-item">
+                                <div class="fd-segmented-button" role="group" aria-label="Group label">
+                                    <button aria-label="email" class="fd-button fd-button--compact" aria-pressed="true">
+                                        <i class="sap-icon--email"></i>
+                                    </button>
+                                    <button aria-label="phone" class="fd-button fd-button--compact">
+                                        <i class="sap-icon--iphone"></i>
+                                    </button>
+                                    <button aria-label="notifications" class="fd-button fd-button--compact">
+                                        <i class="sap-icon--notification-2"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </footer>
-            </section>
+                </div>
+            </header>
+            <div style="margin: 20px 80px;">
+                <span
+                    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
+                    style="background-image: url('assets/images/avatars/1.svg');"
+                    role="img"
+                    aria-label="Avatar">
+                </span>
+            </div>
+            <footer class="fd-popover__body-footer">
+                <div class="fd-bar fd-bar--cozy fd-bar--footer">
+                    <div class="fd-bar__right">
+                        <div class="fd-bar__element">
+                            <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                        </div>
+                        <div class="fd-bar__element">
+                            <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+</div>
+
+<div class="fddocs-container" style="margin-top:300px; margin-bottom: 300px;">
+    <div class="fd-popover">
+        <div class="fd-popover__control">
+            <button
+                aria-controls="popoverHSF3"
+                aria-expanded="true"
+                aria-haspopup="dialog"
+                class="fd-button fd-button--compact"
+                onclick="onPopoverClick('popoverHSF3');"
+                role="button">
+                    <!- role is needed to override the combobox role due to aria-haspopup -->
+                    <i role="presentation" class="sap-icon--navigation-down-arrow"></i>
+            </button>
+            Compact body
         </div>
+        <section
+            aria-hidden="false"
+            class="fd-popover__body fd-popover__body--compact"
+            id="popoverHSF3"
+            aria-label="Dialog Data 1"
+            role="dialog">
+            <nav class="fd-menu" aria-label="options with header">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 1</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 2</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 3</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
 </div>
 `;
 
@@ -458,8 +508,9 @@ Variant | Modifier class | Description
 :------ | :------------- | :---------------
 Header | \`fd-popover__body-header\` | To display a header with text.
 Footer | \`fd-popover__body-footer\` | To display a footer with actions.
-Header, subheader and footer | \`fd-popover__body-header\` containing \`fd-bar fd-bar--header-with-subheader\` and \`fd-bar fd-bar--subheader\` | This variant uses the **Bar** component.
+Header, subheader | \`fd-popover__body-header\` containing \`fd-bar fd-bar--header-with-subheader\` and \`fd-bar fd-bar--subheader\` | This variant uses the **Bar** component.
 Cozy mode | \`fd-bar--cozy\` | Add this modifier class to the header area where \`fd-bar\` is used.
+Compact mode | \`fd-popover__body--compact\` | Add this modifier class the popover body component to display the popover in compact mode.
 
         ` }
     }
