@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.48...v0.24.0-rc.49) (2022-04-27)
+
+
+### Bug Fixes
+
+* checkbox, radio borders in horizon ([#3363](https://github.com/SAP/fundamental-styles/issues/3363)) ([c747f3a](https://github.com/SAP/fundamental-styles/commit/c747f3a092253301d31cacceeb5439c5245a3af6))
+
 ## [0.24.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.47...v0.24.0-rc.48) (2022-04-27)
 
 
