@@ -9,6 +9,10 @@
     box-shadow: var(--fdInput_Interaction_Hover_Shadow);
   }
 
+  @include fd-expanded() {
+    box-shadow: var(--fdInput_Interaction_Hover_Shadow);
+  }
+
   &.is-success {
     @include fd-apply-border(
       var(--sapField_SuccessColor),
@@ -23,6 +27,10 @@
       var(--sapField_SuccessBackground),
       var(--sapField_SuccessColor)
     );
+
+    @include fd-expanded() {
+      box-shadow: var(--fdInput_Success_Hover_Shadow);
+    }
 
     @include fd-hover() {
       background-color: var(--fdInput_Success_Hover_Background);
@@ -48,6 +56,10 @@
       var(--sapField_InvalidBackground),
       var(--sapField_InvalidColor)
     );
+
+    @include fd-expanded() {
+      box-shadow: var(--fdInput_Error_Hover_Shadow);
+    }
 
     @include fd-hover() {
       background-color: var(--fdInput_Error_Hover_Background);
@@ -75,6 +87,10 @@
       var(--sapField_WarningColor)
     );
 
+    @include fd-expanded() {
+      box-shadow: var(--fdInput_Warning_Hover_Shadow);
+    }
+
     @include fd-hover() {
       background-color: var(--fdInput_Warning_Hover_Background);
       border-color: var(--sapField_WarningColor);
@@ -96,6 +112,10 @@
       var(--sapField_InformationBackground),
       var(--sapField_InformationColor)
     );
+
+    @include fd-expanded() {
+      box-shadow: var(--fdInput_Information_Hover_Shadow);
+    }
 
     @include fd-hover() {
       background-color: var(--fdInput_Information_Hover_Background);
