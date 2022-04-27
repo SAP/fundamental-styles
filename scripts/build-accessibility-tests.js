@@ -20,7 +20,7 @@ const componentsToExclude = [
     'token',
     'notification',
     'card',
-    'list-grid',
+    'grid-list',
     'wizard',
     'table',
     'numeric-content',

@@ -1,5 +1,6 @@
 @import "./common/switch/sap_fiori";
 @import "./common/button/sap_fiori";
+@import "./common/grid-list/sap_fiori";
 @import "./common/icon-tab-bar/sap_fiori";
 @import "./common/icon-tab-bar/sap_fiori_hc";
 @import "./common/table/sap_fiori";
@@ -228,9 +229,6 @@
 
   /** Dialog */
   --fdDialog_Background_Opacity: 0.8;
-
-  /* Grid List */
-  --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.125rem;

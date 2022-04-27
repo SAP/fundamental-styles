@@ -555,19 +555,16 @@ body.sb-show-main {
   background-color: #c0e0fa;
 }
 
-.grid-list-item-body-example {
-  display: flex;
-
-  .grid-list-item-body-example-avatar {
+.fd-grid-list__item-body {
+  .fd-grid-list__item-image {
     background-image: url('../static/assets/images/backgrounds/leaves.jpg');
-    margin-right: 1rem;
   }
 
-  p {
+  .fd-grid-list__item-content p {
     margin: 0;
 
-    + div {
-      margin: 1rem 0;
+    &:last-of-type {
+      margin-bottom: 0.875rem;
     }
   }
 }

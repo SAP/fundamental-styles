@@ -25,7 +25,7 @@ The grid list is usually used as an alternative view for a list or table. It is 
     `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: [
-            'list-grid',
+            'grid-list',
             'layout-grid',
             'toolbar',
             'button',
@@ -67,7 +67,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
@@ -77,26 +77,25 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <i class="sap-icon--decline"></i>
                         </button>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -117,20 +116,19 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -147,20 +145,19 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -176,20 +173,19 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -246,32 +242,31 @@ export const Group = () => `<div style="min-height: 600px;">
             </div>
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company A</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -288,20 +283,19 @@ export const Group = () => `<div style="min-height: 600px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company A</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -316,20 +310,19 @@ export const Group = () => `<div style="min-height: 600px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -338,20 +331,19 @@ export const Group = () => `<div style="min-height: 600px;">
             <div tabindex="0" class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -405,32 +397,31 @@ export const States = () => `<div style="min-height: 600px;">
             </div>
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--unread">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link fd-grid-list__item--unread">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -455,27 +446,25 @@ export const States = () => `<div style="min-height: 600px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                        </div>
+
                         <div class="fd-grid-list__item-body-actions">
                             <span class="fd-object-status fd-object-status--negative">
                                 <span class="fd-object-status__text">(Contains errors)</span>
                             </span>
-                        </div>
-
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
-
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
-
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -490,27 +479,26 @@ export const States = () => `<div style="min-height: 600px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--locked">
                     <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                        </div>
+
                         <div class="fd-grid-list__item-body-actions">
                             <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Locked">
                                 <i class="sap-icon--private"></i>
                                 <span class="fd-button__text">Locked</span>
                             </button>
-                        </div>
-
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
-
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -525,26 +513,25 @@ export const States = () => `<div style="min-height: 600px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--draft">
                     <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                        </div>
+
                         <div class="fd-grid-list__item-body-actions">
                             <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Draft">
                                 Draft
                             </button>
-                        </div>
-
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
-
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -592,7 +579,7 @@ export const Highlight = () => `<div style="min-height: 350px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <span class="fd-grid-list__highlight fd-grid-list__highlight--positive" aria-label="Item is highlighted. Status: positive."></span>
 
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
@@ -600,26 +587,25 @@ export const Highlight = () => `<div style="min-height: 350px;">
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -638,20 +624,19 @@ export const Highlight = () => `<div style="min-height: 350px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -666,20 +651,19 @@ export const Highlight = () => `<div style="min-height: 350px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -690,20 +674,19 @@ export const Highlight = () => `<div style="min-height: 350px;">
                     <span class="fd-grid-list__highlight fd-grid-list__highlight--neutral" aria-label="Item is highlighted. Status: neutral."></span>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -764,32 +747,31 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -806,20 +788,19 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -828,20 +809,19 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -850,20 +830,19 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -912,32 +891,31 @@ export const More = () => `<div style="min-height: 400px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -954,20 +932,19 @@ export const More = () => `<div style="min-height: 400px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -976,20 +953,19 @@ export const More = () => `<div style="min-height: 400px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -998,20 +974,19 @@ export const More = () => `<div style="min-height: 400px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -1071,32 +1046,31 @@ export const Footer = () => `<div style="min-height: 300px;">
 
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                <div tabindex="0" class="fd-grid-list__item">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
                     <div class="fd-toolbar fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation" aria-label="Navigation">
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
                             <i class="sap-icon--navigation-right-arrow"></i>
-                        </button>
+                        </span>
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -1113,20 +1087,19 @@ export const Footer = () => `<div style="min-height: 300px;">
                     </div>
 
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -1135,20 +1108,19 @@ export const Footer = () => `<div style="min-height: 300px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -1157,20 +1129,19 @@ export const Footer = () => `<div style="min-height: 300px;">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
                     <div class="fd-grid-list__item-body">
-                        <div class="grid-list-item-body-example">
-                            <span class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar" role="presentation"></span>
-                            <div>
-                                <h4 class="fd-title fd-title--h4">John Li</h4>
-                                <p>Product Owner, Company B</p>
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <div>
-                                    <p>781 Main Street</p>
-                                    <p>Anytown, SD 57401</p>
-                                    <p>USA</p>
-                                </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>

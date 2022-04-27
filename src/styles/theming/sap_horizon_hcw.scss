@@ -1,5 +1,7 @@
 @import "./common/switch/sap_horizon";
 @import "./common/button/sap_horizon";
+@import "./common/grid-list/sap_horizon";
+@import "./common/grid-list/sap_horizon_hc";
 @import "./common/icon-tab-bar/sap_horizon";
 @import "./common/icon-tab-bar/sap_horizon_hc";
 @import "./common/table/sap_horizon";
@@ -235,9 +237,6 @@
 
   /** Dialog */
   --fdDialog_Background_Opacity: 0.6;
-
-  /* Grid List */
-  --fdGrid_List_Item_Hover_Border_Color: var(--sapTile_Interactive_BorderColor);
 
   /* Message Strip */
   --fdMessageStrip_Border_Width: 0.125rem;
