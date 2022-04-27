@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.49...v0.24.0-rc.50) (2022-04-27)
+
+
+### Features
+
+* **styles:** introduce BTP variables for Horizon Themes ([#3364](https://github.com/SAP/fundamental-styles/issues/3364)) ([a810cb1](https://github.com/SAP/fundamental-styles/commit/a810cb146d7496488f22c6476ac624e2bcfeeaab))
+
 ## [0.24.0-rc.49](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.48...v0.24.0-rc.49) (2022-04-27)
 
 
