@@ -1,0 +1,11 @@
+:root {
+  --fdCard_Background_Color: var(--sapTile_Background);
+  --fdCard_Box_Shadow: var(--sapContent_Shadow0);
+  --fdCard_Border_Radius: var(--sapTile_BorderCornerRadius);
+  --fdCard_Header_Border_Bottom: none;
+  --fdCard_Border: none;
+  --fdCard_Counter_Margin: 0.125rem 0 0 1rem;
+  --fdCard_Counter_Margin_RTL: 0.125rem 1rem 0 0;
+  --fdCard_Header_Padding: 1rem 1rem 0.75rem;
+  --fdCard_Bottom_Positioned_Header_Padding: 0.75rem 1rem 1rem;
+}

@@ -6,7 +6,7 @@ $object-status: #{$fd-namespace}-object-status;
 $numeric-content: #{$fd-namespace}-numeric-content;
 
 $fd-card-header-border: var(--fdCard_Header_Border_Bottom) !default;
-$fd-card-header-border-radius: var(--fdCard_Border_Radius) !default;
+$fd-card-border-radius: var(--fdCard_Border_Radius) !default;
 $fd-card-avatar-text-spacing: 0.75rem !default;
 $fd-card-title-counter-spacing: 1rem !default;
 $fd-card-currency-spacing: 0.25rem !default;
@@ -40,7 +40,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       left: $fd-card-header-outline-offset;
       right: $fd-card-header-outline-offset;
       bottom: $fd-card-header-outline-offset * 2;
-      border-radius: $fd-card-header-border-radius $fd-card-header-border-radius 0 0;
+      border-radius: $fd-card-border-radius $fd-card-border-radius 0 0;
       z-index: 3;
     }
   }
@@ -66,10 +66,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       @include fake-card-outline();
     }
 
-    padding: 1rem;
+    padding: var(--fdCard_Header_Padding);
     background: $fd-card-default-body-background-color;
     border-bottom: $fd-card-header-border;
-    border-radius: $fd-card-header-border-radius $fd-card-header-border-radius 0 0;
+    border-radius: $fd-card-border-radius $fd-card-border-radius 0 0;
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -104,18 +104,29 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     }
 
     &:last-child {
+      padding: var(--fdCard_Bottom_Positioned_Header_Padding);
       border-bottom: none;
       border-top: $fd-card-header-border;
-      border-radius: 0 0 $fd-card-header-border-radius $fd-card-header-border-radius;
+      border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
 
       @include fd-focus() {
         &::before {
           top: $fd-card-header-outline-offset * 2;
           bottom: $fd-card-header-outline-offset;
-          border-radius: 0 0 $fd-card-header-border-radius $fd-card-header-border-radius;
+          border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
         }
       }
     }
+  }
+
+  &__footer {
+    @include fd-reset();
+    @include fd-flex();
+
+    padding: 1rem;
+    background: $fd-card-default-body-background-color;
+    border-bottom: $fd-card-header-border;
+    border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
   }
 
   &__header-text {
@@ -399,11 +410,11 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
           tr:last-child {
             td:first-child {
-              border-bottom-left-radius: $fd-card-header-border-radius;
+              border-bottom-left-radius: $fd-card-border-radius;
             }
 
             td:last-child {
-              border-bottom-right-radius: $fd-card-header-border-radius;
+              border-bottom-right-radius: $fd-card-border-radius;
             }
           }
         }
@@ -415,8 +426,8 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     .#{$block}__content {
       .#{$fd-namespace}-list {
         &__item:last-child {
-          border-bottom-left-radius: $fd-card-header-border-radius;
-          border-bottom-right-radius: $fd-card-header-border-radius;
+          border-bottom-left-radius: $fd-card-border-radius;
+          border-bottom-right-radius: $fd-card-border-radius;
         }
       }
     }

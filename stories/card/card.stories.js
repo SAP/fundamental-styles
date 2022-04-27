@@ -26,6 +26,7 @@ Title | A title is mandatory to explain what content is being displayed to the u
 Avatar (optional) | An avatar can be displayed in a size S (3rem).
 Subtitle (optional) | The subtitle provides additional context to the title or displays a status. Its usage depends on the card type. Subtitles that exceed one line are truncated with an ellipsis.
 Counter (optional) | The counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated.
+Footer (optional) | The footer displays a list of actions that can be performed on the card.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link', 'icon']
@@ -53,6 +54,9 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
                 </div>
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+            <div class="fd-card__footer">
+                
+            </div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
