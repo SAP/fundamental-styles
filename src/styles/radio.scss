@@ -135,7 +135,7 @@ $block: #{$fd-namespace}-radio;
       var(--sapField_TextColor),
       var(--sapField_WarningColor),
       var(--sapField_WarningBorderWidth),
-      var(--sapField_WarningBorderStyle),
+      var(--fdRadio_Warning_Error_Information_Border_Style),
       var(--fdRadio_Warning_Hover_Shadow)
     );
   }
@@ -146,7 +146,7 @@ $block: #{$fd-namespace}-radio;
       var(--sapField_InvalidColor),
       var(--sapField_InvalidColor),
       var(--sapField_InvalidBorderWidth),
-      var(--sapField_InvalidBorderStyle),
+      var(--fdRadio_Warning_Error_Information_Border_Style),
       var(--fdRadio_Error_Hover_Shadow)
     );
   }
@@ -157,7 +157,7 @@ $block: #{$fd-namespace}-radio;
       var(--sapField_SuccessColor),
       var(--sapField_SuccessColor),
       var(--sapField_BorderWidth),
-      var(--sapField_SuccessBorderStyle),
+      solid,
       var(--fdRadio_Success_Hover_Shadow)
     );
   }
@@ -168,7 +168,7 @@ $block: #{$fd-namespace}-radio;
       var(--sapField_InformationColor),
       var(--sapField_InformationColor),
       var(--sapField_InformationBorderWidth),
-      var(--sapField_InformationBorderStyle),
+      var(--fdRadio_Warning_Error_Information_Border_Style),
       var(--fdRadio_Information_Hover_Shadow)
     );
   }

@@ -198,7 +198,7 @@ $fd-checkbox-tristate-compact-offset: 0.25rem;
       var(--sapField_TextColor),
       var(--sapField_WarningColor),
       var(--sapField_WarningBorderWidth),
-      var(--sapField_WarningBorderStyle),
+      var(--fdCheckbox_Warning_Error_Information_Border_Style),
       var(--fdCheckbox_Warning_State_Shadow)
     );
   }
@@ -209,7 +209,7 @@ $fd-checkbox-tristate-compact-offset: 0.25rem;
       var(--sapField_InvalidColor),
       var(--sapField_InvalidColor),
       var(--sapField_InvalidBorderWidth),
-      var(--sapField_InvalidBorderStyle),
+      var(--fdCheckbox_Warning_Error_Information_Border_Style),
       var(--fdCheckbox_Error_State_Shadow)
     );
   }
@@ -220,7 +220,7 @@ $fd-checkbox-tristate-compact-offset: 0.25rem;
       var(--sapField_SuccessColor),
       var(--sapField_SuccessColor),
       var(--sapField_SuccessBorderWidth),
-      var(--sapField_SuccessBorderStyle),
+      solid,
       var(--fdCheckbox_Success_State_Shadow)
     );
   }
@@ -231,7 +231,7 @@ $fd-checkbox-tristate-compact-offset: 0.25rem;
       var(--sapField_InformationColor),
       var(--sapField_InformationColor),
       var(--sapField_InformationBorderWidth),
-      var(--sapField_InformationBorderStyle),
+      var(--fdCheckbox_Warning_Error_Information_Border_Style),
       var(--fdCheckbox_Information_State_Shadow)
     );
   }
