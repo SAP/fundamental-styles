@@ -15,29 +15,29 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 .#{$block} {
   @mixin fd-addon-firstchild-button-border() {
     @include fd-addon-button-sideborder(
-      transparent,
-      var(--fdButton_Addon_Sideborder_Color)
+      none,
+      var(--fdButton_Addon_Sideborder)
     );
   }
 
   @mixin fd-addon-active-firstchild-button-border() {
     @include fd-addon-button-sideborder(
-      transparent,
-      var(--fdButton_Addon_Interractive_SideBorder_Color)
+      none,
+      var(--fdButton_Addon_Interractive_Sideborder)
     );
   }
 
   @mixin fd-addon-lastchild-button-border() {
     @include fd-addon-button-sideborder(
-      var(--fdButton_Addon_Sideborder_Color),
-      transparent
+      var(--fdButton_Addon_Sideborder),
+      none
     );
   }
 
   @mixin fd-addon-active-lastchild-button-border() {
     @include fd-addon-button-sideborder(
-      var(--fdButton_Addon_Interractive_SideBorder_Color),
-      transparent
+      var(--fdButton_Addon_Interractive_Sideborder),
+      none
     );
   }
 
@@ -166,14 +166,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         @include fd-addon-firstchild-button-border();
 
         @include fd-hover() {
-          border-color: transparent;
-
           @include fd-addon-active-firstchild-button-border();
         }
 
         @include fd-active() {
-          border-color: transparent;
-
           @include fd-addon-active-firstchild-button-border();
         }
       }
@@ -184,14 +180,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         @include fd-addon-lastchild-button-border();
 
         @include fd-hover() {
-          border-color: transparent;
-
           @include fd-addon-active-lastchild-button-border();
         }
 
         @include fd-active() {
-          border-color: transparent;
-
           @include fd-addon-active-lastchild-button-border();
         }
       }
@@ -210,6 +202,8 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         border-radius: 0;
         height: 100%;
         max-height: 100%;
+        background-clip: padding-box;
+        border-bottom: var(--fdButton_Addon_Border_Bottom) !important; // prevents covering input underline in horizon
       }
 
       > * {
@@ -255,8 +249,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     width: 100%;
     z-index: auto !important;
     position: static !important;
-    border-color: transparent;
-    border-width: var(--sapField_BorderWidth);
+    border: none;
 
     @include fd-focus() {
       @include fd-button-focus() {

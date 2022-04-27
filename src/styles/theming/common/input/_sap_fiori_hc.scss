@@ -40,8 +40,8 @@
   --fdInputGroup_Focus_Border_Radius: 0;
 
   /* Addon Button */
-  --fdButton_Addon_Sideborder_Color: transparent;
-  --fdButton_Addon_Interractive_SideBorder_Color: var(--sapField_BorderColor);
+  --fdButton_Addon_Sideborder: solid var(--sapField_BorderWidth) transparent;
+  --fdButton_Addon_Interractive_Sideborder: solid var(--sapField_BorderWidth) var(--sapField_BorderColor);
   --fdButton_Addon_Hover_BackgroundColor: var(--sapButton_Hover_Background);
   --fdButton_Addon_Active_BackgroundColor: var(--sapButton_Lite_Active_Background);
   --fdButton_Addon_Outline_Style: var(--sapContent_FocusStyle);
@@ -52,9 +52,11 @@
   --fdButton_Addon_Error_BoxShadow: none;
   --fdButton_Addon_Warning_BoxShadow: none;
   --fdButton_Addon_Information_BoxShadow: none;
+  --fdButton_Addon_Border_Bottom: none;
+  --fdButton_Addon_PaddingTop: 0;
 
   /* Select */
-  --fdSelect_Button_SideBorder_Color: transparent;
+  --fdSelect_Button_Sideborder: solid var(--sapField_BorderWidth) transparent;
   --fdSelect_Button_Hover_BackgroundColor: var(--sapButton_Lite_Hover_Background);
   --fdSelect_Outline_FocusStyle: none;
   --fdSelect_Focus_Border_Offset: 0.1875rem;

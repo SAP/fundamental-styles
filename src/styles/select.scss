@@ -10,15 +10,15 @@ $block: #{$fd-namespace}-select;
 
   @mixin fd-select-button-border() {
     @include fd-addon-button-sideborder(
-      var(--fdSelect_Button_SideBorder_Color),
-      transparent
+      var(--fdSelect_Button_Sideborder),
+      none
     );
   }
 
   @mixin fd-select-active-button-border() {
     @include fd-addon-button-sideborder(
-      var(--fdButton_Addon_Interractive_SideBorder_Color),
-      transparent
+      var(--fdButton_Addon_Interractive_Sideborder),
+      none
     );
   }
 
@@ -60,20 +60,18 @@ $block: #{$fd-namespace}-select;
 
       max-width: 2.25rem;
       border-radius: var(--fdSelect_Button_Border_Radius);
-      border-color: transparent;
-      border-width: var(--sapField_BorderWidth);
+      border: none;
+      background-clip: padding-box;
+      border-bottom: var(--fdButton_Addon_Border_Bottom) !important; // prevents covering input underline in horizon
+      padding-top: var(--fdButton_Addon_PaddingTop);
 
       @include fd-select-button-border();
 
       @include fd-hover() {
-        border-color: transparent;
-
         @include fd-select-active-button-border();
       }
 
       @include fd-active() {
-        border-color: transparent;
-
         @include fd-select-active-button-border();
       }
     }

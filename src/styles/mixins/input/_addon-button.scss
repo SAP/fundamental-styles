@@ -63,12 +63,12 @@
   }
 }
 
-@mixin fd-addon-button-sideborder($leftBorderColor, $rightBorderColor) {
-  border-left-color: $leftBorderColor;
-  border-right-color: $rightBorderColor;
+@mixin fd-addon-button-sideborder($leftBorder, $rightBorder) {
+  border-left: $leftBorder;
+  border-right: $rightBorder;
 
   @include fd-rtl() {
-    border-left-color: $rightBorderColor;
-    border-right-color: $leftBorderColor;
+    border-left: $rightBorder;
+    border-right: $leftBorder;
   }
 }
