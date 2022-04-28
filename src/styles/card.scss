@@ -136,13 +136,13 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       }
 
       width: 100%;
+    }
 
-      &-item {
-        @include fd-reset();
+    &-actions-item {
+      @include fd-reset();
 
-        &:not(:last-child) {
-          @include fd-set-margin-right(var(--fdCard_Footer_Actions_Item_Spacing));
-        }
+      &:not(:last-child) {
+        @include fd-set-margin-right(var(--fdCard_Footer_Actions_Item_Spacing));
       }
     }
 
