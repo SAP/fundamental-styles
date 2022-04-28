@@ -1,5 +1,10 @@
+@import "./list-definitions";
 
-@import "./listDefinitions.scss";
+$fd-list-byline-thumbnail-dimensions: 3rem !default;
+$fd-list-byline-item-height: 5rem !default;
+$fd-list-byline-text-line-height: 1rem !default;
+$fd-list-byline-elements-spacing: 0.5rem !default;
+$fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
 
 .#{$block} {
   &--byline {
@@ -15,19 +20,20 @@
       align-items: center;
 
       .#{$block}__item-counter {
-        display: flex;
+        @include fd-flex-vertical-center();
+
         justify-content: flex-end;
-        align-items: center;
         height: 100%;
-        min-width: $fd-list-byline-counter-container-width;
+        min-width: 2rem;
       }
     }
 
     .#{$block}__thumbnail {
       @include fd-reset();
-      @include ie11-active-state-fix();
+      @include fd-list-ie11-active-state-fix();
       @include fd-icon-element-base();
       @include fd-flex-center();
+      @include fd-set-margin-right(0.75rem);
 
       width: $fd-list-byline-thumbnail-dimensions;
       height: $fd-list-byline-thumbnail-dimensions;
@@ -35,25 +41,17 @@
       max-width: $fd-list-byline-thumbnail-dimensions;
       min-height: $fd-list-byline-thumbnail-dimensions;
       max-height: $fd-list-byline-thumbnail-dimensions;
-      border-radius: $fd-list-byline-thumbnail-border-radius;
-      margin-right: $fd-list-byline-thumbnail-spacing;
+      border-radius: 0.25rem;
       font-size: 2.5rem;
       color: var(--sapContent_NonInteractiveIconColor);
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: $fd-list-byline-thumbnail-spacing;
-      }
     }
 
     .#{$block}__content {
       @include fd-reset();
-      @include ie11-active-state-fix();
+      @include fd-flex(column);
+      @include fd-list-ie11-active-state-fix();
 
-      @include fd-flex(column) {
-        align-content: space-between;
-      }
-
+      align-content: space-between;
       min-height: $fd-list-byline-thumbnail-dimensions;
       min-width: $fd-list-byline-thumbnail-dimensions;
       height: 100%;
@@ -62,6 +60,8 @@
     }
 
     .#{$block}__title {
+      @include fd-ellipsis();
+
       font-size: $fd-list-large-font-size;
       min-height: $fd-list-byline-text-line-height;
     }
@@ -73,7 +73,7 @@
       font-size: $fd-list-normal-font-size;
       color: $fd-list-byline-section-text-color;
       line-height: $fd-list-byline-text-line-height;
-      padding-top: $fd-list-byline-padding-top;
+      padding-top: 0.75rem;
 
       &--2-col {
         display: flex;
@@ -97,33 +97,26 @@
     .#{$block}__byline-left {
       @include fd-reset();
       @include fd-ellipsis();
+      @include fd-set-padding-right($fd-list-byline-elements-spacing);
 
       width: 60%;
       color: $fd-list-byline-section-text-color;
-      padding-right: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
       align-self: flex-end;
-
-      @include fd-rtl() {
-        padding-left: $fd-list-byline-elements-spacing;
-        padding-right: 0;
-      }
     }
 
     .#{$block}__byline-right {
       @include fd-reset();
       @include fd-ellipsis();
+      @include fd-set-padding-left($fd-list-byline-elements-spacing);
 
       width: 40%;
       color: $fd-list-byline-section-text-color;
-      padding-left: $fd-list-byline-elements-spacing;
       line-height: $fd-list-byline-text-line-height;
       text-align: right;
       align-self: flex-end;
 
       @include fd-rtl() {
-        padding-left: 0;
-        padding-right: $fd-list-byline-elements-spacing;
         text-align: left;
       }
 

@@ -177,8 +177,9 @@
   --fdMenu_Text_Shadow: none;
 
   /* List */
-  --fdListBase_Text_Shadow: none;
-  --fdListButtonSpacing: 0.125rem;
+  --fdList_Button_Spacing: 0.125rem;
+  --fdList_Growing_Font_Weight: bold;
+  --fdList_Active_Outline_Color: var(--sapContent_ContrastFocusColor);
 
   /* Button */
   --fdButton_Text_Shadow: none;
@@ -266,13 +267,13 @@
   --fdPage_Transparent_Background: var(--sapBackgroundColor);
 
   /* Action List Item */
-  --fdList_Item_Action_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-  --fdList_Item_Action_Height: 2.75rem;
-  --fdList_Item_Action_Button_Size: 100%;
-  --fdList_Item_Action_Button_Size_Compact: 100%;
-  --fdList_Item_Action_Button_Spacing: 0;
-  --fdList_Item_Action_Button_Border: none;
-  --fdList_Item_Action_Button_Border_Radius: 0;
+  --fdList_Item_Action_Border: none;
+  --fdList_Item_Action_Height: 3rem;
+  --fdList_Item_Action_Button_Size: 2.5rem;
+  --fdList_Item_Action_Button_Size_Compact: 1.625rem;
+  --fdList_Item_Action_Button_Spacing: 0.25rem;
+  --fdList_Item_Action_Button_Border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  --fdList_Item_Action_Button_Border_Radius: 0.375rem;
 
   /* Table */
   --fdTable_Hover_Down_Color: inherit;

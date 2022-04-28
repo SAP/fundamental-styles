@@ -1,4 +1,9 @@
-@import "./listDefinitions.scss";
+@import "./list-definitions";
+
+$fd-list-dropdown-max-width: 40rem !default;
+$fd-list-dropdown-vertical-padding: 0.75rem !default;
+$fd-list-dropdown-vertical-compact-padding: 0.5rem !default;
+$fd-checkbox-dimensions: 1.375rem !default;
 
 .#{$block} {
   &--dropdown {
@@ -7,26 +12,30 @@
     }
 
     .#{$block}__item {
-      @include list-item-states();
+      @include fd-list-item-states();
 
       height: auto;
-      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
+      padding: $fd-list-dropdown-vertical-padding $fd-list-item-padding-x;
     }
 
     &.#{$block}--compact {
       .#{$block}__item {
         height: auto;
-        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+        padding: $fd-list-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
     }
   }
 
   &--multi-input {
     .#{$block}__item {
-      @include list-item-states();
+      @include fd-list-item-states();
 
-      padding: 0;
+      padding: 0 1rem 0 0;
       height: auto;
+
+      @include fd-rtl() {
+        padding: 0 0 0 1rem;
+      }
     }
 
     .#{$block}__label {
@@ -62,14 +71,6 @@
       }
     }
 
-    .#{$block}__secondary {
-      padding-right: 1rem;
-
-      @include fd-rtl() {
-        padding-left: 1rem;
-      }
-    }
-
     .#{$block}__footer {
       height: auto;
       text-align: right;
@@ -80,7 +81,7 @@
 
     .#{$block}__footer,
     .#{$block}__label {
-      padding: $fd-dropdown-vertical-padding $fd-list-item-padding-x;
+      padding: $fd-list-dropdown-vertical-padding $fd-list-item-padding-x;
     }
 
     &.#{$block}--compact {
@@ -99,7 +100,7 @@
 
       .#{$block}__footer,
       .#{$block}__label {
-        padding: $fd-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+        padding: $fd-list-dropdown-vertical-compact-padding $fd-list-item-padding-x;
       }
     }
   }
@@ -166,7 +167,7 @@
     }
 
     &.#{$block}--large-dropdown {
-      @include list-width-limit($fd-list-dropdown-optional-max-width);
+      @include list-width-limit(62rem);
     }
   }
 }

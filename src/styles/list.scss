@@ -1,9 +1,7 @@
-@import "./listBase.scss";
-@import "./listDropdown.scss";
-@import "./listByline.scss";
-@import "./listNavigation.scss";
-@import "./listNavigationItem.scss";
-@import "./listNavigationItemIndication.scss";
-@import "./listNavigationIndication.scss";
-@import "./listSelection.scss";
-@import "./listItemCounter";
+@import "./mixins/list/list-base";
+@import "./mixins/list/list-dropdown";
+@import "./mixins/list/list-byline";
+@import "./mixins/list/list-navigation";
+@import "./mixins/list/list-navigation-indication";
+@import "./mixins/list/list-selection";
+@import "./mixins/list/list-item-counter";

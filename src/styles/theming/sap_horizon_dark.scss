@@ -209,8 +209,9 @@
   --fdMenu_Text_Shadow: none;
 
   /* List */
-  --fdListBase_Text_Shadow: none;
-  --fdListButtonSpacing: 0.125rem;
+  --fdList_Button_Spacing: 0.125rem;
+  --fdList_Growing_Font_Weight: bold;
+  --fdList_Active_Outline_Color: var(--sapContent_FocusColor);
 
   /* Button */
   --fdButton_Text_Shadow: none;

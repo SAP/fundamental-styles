@@ -1,27 +1,21 @@
-@import "./listDefinitions.scss";
+@import "./list-definitions";
 
-$vertical-nav-block: #{$fd-namespace}-vertical-nav;
+$fd-list-navigation-indicator-width: 2.75rem !default;
 
-.#{$vertical-nav-block} {
+.#{$block} {
   &--navigation-indication {
-
-    .#{$block}__navigation-item {
+    .#{$block} {
       &::after {
         min-width: $fd-list-navigation-indicator-width - 1rem;
         content: '';
       }
     }
 
-    .#{$block}__navigation-item.#{$block}__navigation-item--link {
+    #{$block}__item.#{$block}__item--link {
+      @include fd-set-padding-right(0);
+
       &::after {
         content: none;
-      }
-
-      padding-right: 0;
-
-      @include fd-rtl() {
-        padding-left: 0;
-        padding-right: initial;
       }
     }
 
@@ -65,10 +59,10 @@ $vertical-nav-block: #{$fd-namespace}-vertical-nav;
     }
 
     .is-navigated {
-      box-shadow: $fd-list-navigation-navigator-bar-right;
+      box-shadow: inset -0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
 
       @include fd-rtl() {
-        box-shadow: $fd-list-navigation-navigator-bar-left;
+        box-shadow: inset 0.1875rem 0 0 0 var(--sapList_SelectionBorderColor);
       }
     }
   }

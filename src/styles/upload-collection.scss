@@ -1,6 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./listDefinitions.scss";
+@import "./mixins/list/list-byline";
 
 $block: #{$fd-namespace}-upload-collection;
 
@@ -32,10 +32,14 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
     @include fd-flex-vertical-center();
 
     .#{$block}__title {
-      @include fd-set-margin-right($fd-upload-collection-button-group-small-margin);
-
       flex: none;
       flex-shrink: 1;
+    }
+  }
+
+  .#{$block}__title-container {
+    .#{$block}__title {
+      @include fd-set-margin-right($fd-upload-collection-button-group-small-margin);
     }
   }
 
