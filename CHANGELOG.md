@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.50...v0.24.0-rc.51) (2022-04-28)
+
+
+### Features
+
+* **styles:** add delta horizon theming for List ([#3345](https://github.com/SAP/fundamental-styles/issues/3345)) ([53cb8e2](https://github.com/SAP/fundamental-styles/commit/53cb8e2abcdb5cd37ccc6dce2151cb8a3b2f702f))
+
 ## [0.24.0-rc.50](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.49...v0.24.0-rc.50) (2022-04-27)
 
 
