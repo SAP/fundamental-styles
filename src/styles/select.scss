@@ -94,6 +94,7 @@ $block: #{$fd-namespace}-select;
 
     display: inline-block;
     text-shadow: var(--fdInput_Text_Shadow);
+    vertical-align: middle;
   }
 
   &--compact {
