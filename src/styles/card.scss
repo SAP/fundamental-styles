@@ -146,8 +146,9 @@ $fd-card-header-outline-offset: 0.0625rem !default;
       }
     }
 
-    &-link {
+    .#{$block}__footer-link {
       @include fd-ellipsis();
+      @include fd-set-margin-right(var(--fdCard_Footer_Actions_Item_Spacing));
 
       text-overflow: clip;
     }
