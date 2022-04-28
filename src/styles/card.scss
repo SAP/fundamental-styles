@@ -128,20 +128,26 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     border-bottom: $fd-card-header-border;
     border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
 
-    &__actions {
-      @include fd-flex();
+    &-actions {
+      @include fd-reset();
 
-      justify-content: flex-end;
+      @include fd-flex() {
+        justify-content: flex-end;
+      }
+
       width: 100%;
 
-      &__item {
+      &-item {
+        @include fd-reset();
+
         &:not(:last-child) {
           @include fd-set-margin-right(var(--fdCard_Footer_Actions_Item_Spacing));
         }
       }
     }
 
-    &__link {
+    &-link {
+      @include fd-reset();
       @include fd-ellipsis();
 
       text-overflow: clip;

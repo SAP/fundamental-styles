@@ -55,11 +55,11 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <div class="fd-card__footer">
-                <div class="fd-card__footer__actions">
-                    <button class="fd-button fd-button--positive fd-card__footer__actions__item">
+                <div class="fd-card__footer-actions">
+                    <button class="fd-button fd-button--positive fd-card__footer-actions-item">
                         Button
                     </button>
-                    <button class="fd-button fd-button--negative fd-card__footer__actions__item">
+                    <button class="fd-button fd-button--negative fd-card__footer-actions-item">
                         Button
                     </button>
                 </div>
@@ -83,7 +83,7 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <div class="fd-card__footer">
-                <a class="fd-link fd-card__footer__link" href="#">Footer with a link</a>
+                <a class="fd-link fd-card__footer-link" href="#">Footer with a link</a>
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <div class="fd-card__footer">
-                <a class="fd-link fd-card__footer__link" href="#">Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium</a>
+                <a class="fd-link fd-card__footer-link" href="#">Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium</a>
                 <button class="fd-button fd-button--transparent">
                     <i class="sap-icon sap-icon--overflow"></i>
                 </button>
