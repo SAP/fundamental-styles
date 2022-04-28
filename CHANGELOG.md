@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.51...v0.24.0-rc.52) (2022-04-28)
+
+
+### Features
+
+* **styles:** add info label horizon delta theming [ci visual] ([#3366](https://github.com/SAP/fundamental-styles/issues/3366)) ([5005be3](https://github.com/SAP/fundamental-styles/commit/5005be394e906b159b7dcd18b5b29a734e17cd46))
+
 ## [0.24.0-rc.51](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.50...v0.24.0-rc.51) (2022-04-28)
 
 
