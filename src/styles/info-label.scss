@@ -10,16 +10,16 @@ $fd-info-label-border-style: solid !default;
 $fd-info-label-font-size: var(--sapFontSmallSize) !default;
 
 $color-accents: (
-  "1": ("background": var(--fdInfo_Label_Background_Color1), "border": var(--fdInfo_Label_Border_Color1)),
-  "2": ("background": var(--fdInfo_Label_Background_Color2), "border": var(--fdInfo_Label_Border_Color2)),
-  "3": ("background": var(--fdInfo_Label_Background_Color3), "border": var(--fdInfo_Label_Border_Color3)),
-  "4": ("background": var(--fdInfo_Label_Background_Color4), "border": var(--fdInfo_Label_Border_Color4)),
-  "5": ("background": var(--fdInfo_Label_Background_Color5), "border": var(--fdInfo_Label_Border_Color5)),
-  "6": ("background": var(--fdInfo_Label_Background_Color6), "border": var(--fdInfo_Label_Border_Color6)),
-  "7": ("background": var(--fdInfo_Label_Background_Color7), "border": var(--fdInfo_Label_Border_Color7)),
-  "8": ("background": var(--fdInfo_Label_Background_Color8), "border": var(--fdInfo_Label_Border_Color8)),
-  "9": ("background": var(--fdInfo_Label_Background_Color9), "border": var(--fdInfo_Label_Border_Color9)),
-  "10": ("background": var(--fdInfo_Label_Background_Color10), "border": var(--fdInfo_Label_Border_Color10))
+  "1": ("background": var(--fdInfo_Label_Background_Color1), "border": var(--fdInfo_Label_Border_Color1), "color": var(--fdInfo_Label_Color1)),
+  "2": ("background": var(--fdInfo_Label_Background_Color2), "border": var(--fdInfo_Label_Border_Color2), "color": var(--fdInfo_Label_Color2)),
+  "3": ("background": var(--fdInfo_Label_Background_Color3), "border": var(--fdInfo_Label_Border_Color3), "color": var(--fdInfo_Label_Color3)),
+  "4": ("background": var(--fdInfo_Label_Background_Color4), "border": var(--fdInfo_Label_Border_Color4), "color": var(--fdInfo_Label_Color4)),
+  "5": ("background": var(--fdInfo_Label_Background_Color5), "border": var(--fdInfo_Label_Border_Color5), "color": var(--fdInfo_Label_Color5)),
+  "6": ("background": var(--fdInfo_Label_Background_Color6), "border": var(--fdInfo_Label_Border_Color6), "color": var(--fdInfo_Label_Color6)),
+  "7": ("background": var(--fdInfo_Label_Background_Color7), "border": var(--fdInfo_Label_Border_Color7), "color": var(--fdInfo_Label_Color7)),
+  "8": ("background": var(--fdInfo_Label_Background_Color8), "border": var(--fdInfo_Label_Border_Color8), "color": var(--fdInfo_Label_Color8)),
+  "9": ("background": var(--fdInfo_Label_Background_Color9), "border": var(--fdInfo_Label_Border_Color9), "color": var(--fdInfo_Label_Color9)),
+  "10": ("background": var(--fdInfo_Label_Background_Color10), "border": var(--fdInfo_Label_Border_Color10), "color": var(--fdInfo_Label_Color10))
 );
 
 .#{$block} {
@@ -36,7 +36,6 @@ $color-accents: (
   letter-spacing: 0.0125rem;
   text-transform: uppercase;
   text-align: center;
-  color: var(--sapTextColor);
   padding: 0 0.3125rem;
   border-width: $fd-info-label-border-width;
   border-style: $fd-info-label-border-style;
@@ -75,6 +74,7 @@ $color-accents: (
     &--accent-color-#{$set-name} {
       background-color: map_get($color-set, "background");
       border-color: map_get($color-set, "border");
+      color: map_get($color-set, "color");
 
       @include fd-icon-overwrite() {
         border-color: map_get($color-set, "border");
