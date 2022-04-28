@@ -147,7 +147,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     }
 
     &-link {
-      @include fd-reset();
       @include fd-ellipsis();
 
       text-overflow: clip;
