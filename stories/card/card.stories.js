@@ -56,12 +56,16 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
-                    <button class="fd-button fd-button--positive fd-card__footer-actions-item">
-                        Button
-                    </button>
-                    <button class="fd-button fd-button--negative fd-card__footer-actions-item">
-                        Button
-                    </button>
+                    <div class="fd-card__footer-actions-item">
+                        <button class="fd-button fd-button--positive">
+                            Button
+                        </button>
+                    </div>
+                    <div class="fd-card__footer-actions-item">
+                        <button class="fd-button fd-button--negative">
+                            Button
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
