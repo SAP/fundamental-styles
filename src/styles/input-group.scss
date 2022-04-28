@@ -202,6 +202,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
         border-radius: 0;
         height: 100%;
         max-height: 100%;
+        border: none;
         background-clip: padding-box;
         border-bottom: var(--fdButton_Addon_Border_Bottom) !important; // prevents covering input underline in horizon
       }
