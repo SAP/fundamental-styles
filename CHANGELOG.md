@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.53...v0.24.0-rc.54) (2022-04-29)
+
+
+### Features
+
+* **styles:** horizon theme scrollbar [ci visual] ([#3367](https://github.com/SAP/fundamental-styles/issues/3367)) ([631d8f2](https://github.com/SAP/fundamental-styles/commit/631d8f2d50f061467453be25c812c1f00f486579))
+
 ## [0.24.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.52...v0.24.0-rc.53) (2022-04-29)
 
 
