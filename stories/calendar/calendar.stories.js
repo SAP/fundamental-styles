@@ -341,47 +341,71 @@ export const Months = () => `<div style="display: flex; justify-content: space-a
                 <table class="fd-calendar__table" role="grid">
                     <tbody class="fd-calendar__group">
                         <tr class="fd-calendar__row">
-                            <td role="gridcell" class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">January</span>
+                            <td role="gridcell" class="fd-calendar__item fd-calendar__item--current">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">January</span>
+                                </button>
                             </td>
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">February</span>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">February</span>
+                                </button>
                             </td>
-                            <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">March</span>
-                            </td>
-                        </tr>
-                        <tr class="fd-calendar__row">
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">April</span>
-                            </td>
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">May</span>
-                            </td>
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">June</span>
+                            <td aria-selected="true" role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button is-active" type="button">
+                                    <span class="fd-calendar__text">March</span>
+                                </button>
                             </td>
                         </tr>
                         <tr class="fd-calendar__row">
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">July</span>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">April</span>
+                                </button>
                             </td>
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">August</span>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">May</span>
+                                </button>
                             </td>
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">September</span>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">June</span>
+                                </button>
                             </td>
                         </tr>
                         <tr class="fd-calendar__row">
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">October</span>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">July</span>
+                                </button>
                             </td>
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">November</span>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">August</span>
+                                </button>
                             </td>
-                            <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                                <span class="fd-calendar__text" role="button">December</span>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">September</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="fd-calendar__row">
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">October</span>
+                                </button>
+                            </td>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">November</span>
+                                </button>
+                            </td>
+                            <td role="gridcell" class="fd-calendar__item">
+                                <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                    <span class="fd-calendar__text">December</span>
+                                </button>
                             </td>
                         </tr>
                     </tbody>
@@ -426,52 +450,112 @@ export const Years = () => `<div style="display: flex; justify-content: space-ar
             <table class="fd-calendar__table" role="grid">
                 <tbody class="fd-calendar__group">
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2018</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2019</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2020</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2021</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2022</span></td>
+                        <td role="gridcell" class="fd-calendar__item fd-calendar__item--current">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2018</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2019</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2020</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2021</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2022</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2023</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2024</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2025</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2026</span></td>
-                        <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2027</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2023</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2024</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2025</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2026</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button is-active" type="button">
+                                <span class="fd-calendar__text">2027</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2028</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2029</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2030</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2031</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2032</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2028</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2029</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2030</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2031</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2032</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2033</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2034</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2035</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2036</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2037</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2033</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2034</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2035</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2036</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2037</span>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -497,36 +581,72 @@ export const Years = () => `<div style="display: flex; justify-content: space-ar
             <table class="fd-calendar__table" role="grid">
                 <tbody class="fd-calendar__group">
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2010 - 2020</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2021 - 2031</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2032 - 2042</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2010 - 2020</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2021 - 2031</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2032 - 2042</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2043 - 2053</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2054 - 2064</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2065 - 2075</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2043 - 2053</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2054 - 2064</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2065- 2075</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2076 - 2086</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2087 - 2097</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2098 - 2108</span></td>
+                        <td role="gridcell" class="fd-calendar__item fd-calendar__item--current">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2076 - 2086</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2087 - 2097</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2098 - 2108</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2109 - 2119</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2120 - 2130</span></td>
-                        <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2131 - 2141</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2109 - 2119</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2120 - 2130</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button is-active" type="button">
+                                <span class="fd-calendar__text">2131 - 2141</span>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -558,28 +678,52 @@ export const Years = () => `<div style="display: flex; justify-content: space-ar
             <table class="fd-calendar__table" role="grid">
                 <tbody class="fd-calendar__group">
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2010 BC - 2020 BC</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2021 BC - 2031 BC</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2010 BC - 2020 BC</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2021 BC - 2031 BC</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td aria-selected="true" role="gridcell" class="fd-calendar__item is-active fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2032 BC - 2042 BC</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2043 BC - 2053 BC</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button is-active" type="button">
+                                <span class="fd-calendar__text">2032 BC - 2042 BC</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2043 BC - 2053 BC</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-calendar__item--current fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2054 BC - 2064 BC</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2065 BC - 2075 BC</span></td>
+                        <td role="gridcell" class="fd-calendar__item fd-calendar__item--current">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2054 BC - 2064 BC</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2065 BC - 2075 BC</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2076 BC - 2086 BC</span></td>
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2087 BC - 2097 BC</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2076 BC - 2086 BC</span>
+                            </button>
+                        </td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2087 BC - 2097 BC</span>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -608,20 +752,32 @@ export const Years = () => `<div style="display: flex; justify-content: space-ar
             <table class="fd-calendar__table" role="grid">
                 <tbody class="fd-calendar__group">
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2010 Showa - 2020 Showa</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2010 Showa - 2020 Showa</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td aria-selected="true" role="gridcell" class="fd-calendar__item fd-calendar__item--current is-active fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2021 Showa - 2031 Showa</span></td>
+                        <td role="gridcell" class="fd-calendar__item fd-calendar__item--current">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button is-active" type="button">
+                                <span class="fd-calendar__text">2021 Showa - 2031 Showa</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row is-active">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2032 Showa - 2042 Showa</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2032 Showa - 2042 Showa</span>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="fd-calendar__row">
-                        <td role="gridcell" class="fd-calendar__item fd-button fd-button--transparent">
-                            <span class="fd-calendar__text" role="button">2043 Showa - 2053 Showa</span></td>
+                        <td role="gridcell" class="fd-calendar__item">
+                            <button class="fd-button fd-button--transparent fd-calendar__item-button" type="button">
+                                <span class="fd-calendar__text">2043 Showa - 2053 Showa</span>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
