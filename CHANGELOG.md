@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.53](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.52...v0.24.0-rc.53) (2022-04-29)
+
+
+### Bug Fixes
+
+* **styles:** calendar year/month buttons ([#3357](https://github.com/SAP/fundamental-styles/issues/3357)) ([5860341](https://github.com/SAP/fundamental-styles/commit/586034101881e3ff835720f9edc45f87ef556428))
+
 ## [0.24.0-rc.52](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.51...v0.24.0-rc.52) (2022-04-28)
 
 
