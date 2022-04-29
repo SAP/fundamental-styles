@@ -1,4 +1,6 @@
 @import "./mixins";
+@import "./mixins/list/list-definitions";
+@import "./mixins/tree/mixins";
 
 // VARIABLES
 $block: #{$fd-namespace}-tree;
@@ -23,37 +25,6 @@ $fd-tree-highlight-box-shadow-rtl: inset -0.375rem 0 0 0 !default;
 $fd-tree-item-transparent-border-bottom: var(--sapList_BorderWidth) solid transparent !default;
 $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor) !default;
 
-// MIXINS
-@mixin set-indentation($level, $padding) {
-  .#{$block}__item {
-    &[aria-level="#{$level}"] {
-      .#{$block}__item-container {
-        padding-left: $padding + $fd-tree-expander-size;
-
-        @include fd-rtl() {
-          padding-left: $fd-tree-item-padding-right;
-          padding-right: $padding + $fd-tree-expander-size;
-        }
-      }
-    }
-  }
-
-  &.#{$block}--compact {
-    .#{$block}__item {
-      &[aria-level="#{$level}"] {
-        .#{$block}__item-container {
-          padding-left: $padding + $fd-tree-expander-size-compact;
-
-          @include fd-rtl() {
-            padding-left: $fd-tree-item-padding-right;
-            padding-right: $padding + $fd-tree-expander-size-compact;
-          }
-        }
-      }
-    }
-  }
-}
-
 @mixin set-highlight($color) {
   box-shadow: $fd-tree-highlight-box-shadow $color;
 
@@ -76,76 +47,6 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   text-overflow: initial;
 }
 
-@mixin tree-selected-state() {
-  background: var(--sapList_SelectionBackgroundColor);
-  border-bottom: $fd-tree-item-selected-border-bottom;
-}
-
-@mixin tree-focus() {
-  outline-style: var(--sapContent_FocusStyle);
-  outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
-  outline-offset: -0.125rem;
-
-  @include fd-active() {
-    outline-color: var(--sapContent_ContrastFocusColor);
-  }
-}
-
-@mixin tree-states() {
-  cursor: pointer;
-
-  @include fd-hover() {
-    background: var(--sapList_Hover_Background);
-  }
-
-  @include fd-selected() {
-    @include tree-selected-state();
-
-    @include fd-hover() {
-      background: var(--sapList_Hover_SelectionBackground);
-    }
-  }
-
-  @include fd-active() {
-    background: var(--sapList_Active_Background);
-
-    .#{$button},
-    .#{$block}__expander {
-      @include fd-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-    }
-
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        color: var(--sapList_Active_TextColor);
-      }
-    }
-
-    .#{$block}__text,
-    .#{$button} {
-      color: var(--sapList_Active_TextColor);
-    }
-
-    @include fd-hover() {
-      background: var(--sapList_Active_Background);
-    }
-
-    @include fd-selected() {
-      background: var(--sapList_Active_Background);
-
-      @include fd-hover() {
-        background: var(--sapList_Active_Background);
-      }
-    }
-
-    @include fd-focus() {
-      outline-color: var(--sapContent_ContrastFocusColor);
-    }
-  }
-}
-
 // BLOCK
 .#{$block} {
   @include fd-reset();
@@ -157,34 +58,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     display: none;
   }
 
-  &.expanded-level-1 {
-    @include set-indentation(2, 1.5rem);
-  }
-
-  &.expanded-level-2 {
-    @include set-indentation(2, 1rem);
-    @include set-indentation(3, 2.5rem);
-  }
-
-  &.expanded-level-3,
-  &.expanded-level-4,
-  &.expanded-level-5 {
-    @include set-indentation(2, 0.5rem);
-    @include set-indentation(3, 1rem);
-    @include set-indentation(4, 1.5rem);
-    @include set-indentation(5, 2rem);
-    @include set-indentation(6, 2.5rem);
-  }
-
-  @for $i from 6 through 12 {
-    &.expanded-level-#{$i} {
-      @for $j from 1 through 12 {
-        $offset: ($j - 1) * 0.25rem;
-
-        @include set-indentation($j, $offset);
-      }
-    }
-  }
+  @include fd-tree-expand-indents();
 
   // ELEMENTS
   &__item {
@@ -202,7 +76,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     }
 
     @include fd-selected() {
-      @include tree-selected-state();
+      @include fd-list-item-base-selected-state();
     }
   }
 
@@ -210,8 +84,10 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     @include fd-reset();
     @include fd-flex-vertical-center();
 
+    position: relative;
+
     @include fd-selected() {
-      @include tree-selected-state();
+      @include fd-list-item-base-selected-state();
     }
 
     @include fd-navigated() {
@@ -222,8 +98,8 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       }
     }
 
-    @include fd-focus() {
-      @include tree-focus();
+    @include fd-list-fake-outline() {
+      bottom: 0.0625rem;
     }
 
     width: 100%;
@@ -235,7 +111,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
   .#{$block}__item[aria-level="1"] > #{$active-item-container},
   #{$active-item-container} {
-    @include tree-states();
+    @include fd-tree-item-states();
   }
 
   &__expander {
@@ -248,10 +124,6 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
         @include fd-flex-center();
       }
-    }
-
-    @include fd-focus() {
-      @include tree-focus();
     }
 
     cursor: pointer;
@@ -399,7 +271,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   &--active {
     .#{$block}__item-container,
     #{$first-level-item-container} {
-      @include tree-states();
+      @include fd-tree-item-states();
     }
   }
 

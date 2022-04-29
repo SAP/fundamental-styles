@@ -1,0 +1,105 @@
+@mixin fd-tree-item-states() {
+  cursor: pointer;
+  position: relative;
+
+  @include fd-hover() {
+    @include fd-list-item-hover-state();
+  }
+
+  @include fd-selected() {
+    @include fd-list-item-base-selected-state();
+  }
+
+  @include fd-active() {
+    @include fd-list-item-base-active-state();
+  }
+
+  @include fd-list-fake-outline() {
+    bottom: 0.625rem;
+  }
+
+  @include fd-active() {
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+
+    .#{$block}__text,
+    .#{$button} {
+      color: var(--sapList_Active_TextColor);
+    }
+  }
+}
+
+@mixin fd-tree-focus() {
+  outline-style: var(--sapContent_FocusStyle);
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-offset: -0.125rem;
+
+  @include fd-active() {
+    outline-color: var(--sapContent_ContrastFocusColor);
+  }
+}
+
+@mixin fd-tree-indent-item($level, $padding) {
+  .#{$block}__item {
+    &[aria-level="#{$level}"] {
+      .#{$block}__item-container {
+        padding-left: $padding + $fd-tree-expander-size;
+
+        @include fd-rtl() {
+          padding-left: $fd-tree-item-padding-right;
+          padding-right: $padding + $fd-tree-expander-size;
+        }
+      }
+    }
+  }
+
+  &.#{$block}--compact {
+    .#{$block}__item {
+      &[aria-level="#{$level}"] {
+        .#{$block}__item-container {
+          padding-left: $padding + $fd-tree-expander-size-compact;
+
+          @include fd-rtl() {
+            padding-left: $fd-tree-item-padding-right;
+            padding-right: $padding + $fd-tree-expander-size-compact;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin fd-tree-expand-indents() {
+  &.expanded-level-1 {
+    @include fd-tree-indent-item(2, 1.5rem);
+  }
+
+  &.expanded-level-2 {
+    @include fd-tree-indent-item(2, 1rem);
+    @include fd-tree-indent-item(3, 2.5rem);
+  }
+
+  &.expanded-level-3,
+  &.expanded-level-4,
+  &.expanded-level-5 {
+    @include fd-tree-indent-item(2, 0.5rem);
+    @include fd-tree-indent-item(3, 1rem);
+    @include fd-tree-indent-item(4, 1.5rem);
+    @include fd-tree-indent-item(5, 2rem);
+    @include fd-tree-indent-item(6, 2.5rem);
+  }
+
+  @for $i from 6 through 12 {
+    &.expanded-level-#{$i} {
+      @for $j from 1 through 12 {
+        $offset: ($j - 1) * 0.25rem;
+
+        @include fd-tree-indent-item($j, $offset);
+      }
+    }
+  }
+}

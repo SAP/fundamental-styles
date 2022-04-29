@@ -34,7 +34,7 @@ State | Modifier/Class | Description
 Active | \`fd-tree--active\` | If all tree items are navigable, add the modifier class to the main element.
 Active | \`fd-tree__item-container--active\`&nbsp;&nbsp;&nbsp; | If only certain tree items are navigable, add the modifier class to the container.
 Selected | \`is-selected\` | If tree items contain single and multiple selection (radio buttons and checkboxes), add the class to the container.
-Navigated&nbsp;&nbsp;&nbsp; | \`is-navigated\` | If a certain tree item has been previous navigated, add the class to the container.
+Navigated&nbsp;&nbsp;&nbsp; | \`is-navigated\` | If a certain tree item has been previously navigated, add the class to the container.
 
 <br>
 `,
