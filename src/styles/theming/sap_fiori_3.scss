@@ -4,6 +4,7 @@
 @import "./common/icon-tab-bar/sap_fiori";
 @import "./common/table/sap_fiori";
 @import "./common/dynamic-page-layout/sap_fiori";
+@import "./common/scrollbar/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -321,12 +322,6 @@
 
   /* Micro Process Flow */
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
-
-  /* Scrollbar */
-  --fdScrollbar_Track_Color: var(--sapScrollBar_TrackColor);
-  --fdScrollbar_Thumb_Color: var(--sapScrollBar_FaceColor);
-  --fdScrollbar_Thumb_Hover_Color: var(--sapScrollBar_Hover_FaceColor);
-  --fdScrollbar_Dimension: var(--sapScrollBar_Dimension);
 
   /* Progress Indicator */
   --fdProgress_Indicator_Background_Color_Neutral: var(--sapNeutralElementColor);
