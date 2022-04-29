@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.54...v0.24.0-rc.55) (2022-04-29)
+
+
+### Features
+
+* **styles:** popover body compact, arrow position fix ([#3358](https://github.com/SAP/fundamental-styles/issues/3358)) ([f5e6995](https://github.com/SAP/fundamental-styles/commit/f5e6995b3423f30eb65186f0eff575fd9d8fd74f))
+
 ## [0.24.0-rc.54](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.53...v0.24.0-rc.54) (2022-04-29)
 
 
