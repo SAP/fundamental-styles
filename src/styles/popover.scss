@@ -15,7 +15,8 @@ $block: #{$fd-namespace}-popover;
   $fd-popover-arrow-width: 1rem !default;
   $fd-popover-arrow-height: 0.5rem !default;
   $fd-popover-arrow-width-half: $fd-popover-arrow-width * 0.5 !default;
-  $fd-popover-arrow-offset: var(--fdPopover_Arrow_Offset);
+  $fd-popover-arrow-offset: 0.575rem;
+  $fd-popover-arrow-offset-compact: 0.44rem;
   $fd-popover-inline-help-arrow-offset: 0.25rem !default;
   $fd-popover-arrow-color: var(--sapContent_ForegroundBorderColor) !default;
 
@@ -73,8 +74,7 @@ $block: #{$fd-namespace}-popover;
     transition: all $fd-popover-transition-params;
     transform: translateY(0);
 
-    &::before,
-    &::after {
+    @include both-pseudo-selectors() {
       content: "";
       position: absolute;
     }
@@ -124,18 +124,48 @@ $block: #{$fd-namespace}-popover;
       }
     }
 
+    &--compact.#{$block}__body {
+      &,
+      &--left {
+        @include both-pseudo-selectors() {
+          left: $fd-popover-arrow-offset-compact;
+        }
+
+        @include fd-rtl() {
+          @include both-pseudo-selectors() {
+            left: auto;
+            right: $fd-popover-arrow-offset-compact;
+          }
+        }
+      }
+
+      &--right {
+        @include fd-right-popover-offset-placement();
+
+        @include both-pseudo-selectors() {
+          left: auto;
+          right: $fd-popover-arrow-offset-compact;
+        }
+
+        @include fd-rtl() {
+          @include both-pseudo-selectors() {
+            left: $fd-popover-arrow-offset-compact;
+            right: auto;
+          }
+        }
+      }
+    }
+
     &,
     &--left {
       @include fd-left-popover-offset-placement();
 
-      &::before,
-      &::after {
+      @include both-pseudo-selectors() {
         left: $fd-popover-arrow-offset;
       }
 
       @include fd-rtl() {
-        &::before,
-        &::after {
+        @include both-pseudo-selectors() {
           left: auto;
           right: $fd-popover-arrow-offset;
         }
@@ -145,15 +175,13 @@ $block: #{$fd-namespace}-popover;
     &--right {
       @include fd-right-popover-offset-placement();
 
-      &::before,
-      &::after {
+      @include both-pseudo-selectors() {
         left: auto;
         right: $fd-popover-arrow-offset;
       }
 
       @include fd-rtl() {
-        &::before,
-        &::after {
+        @include both-pseudo-selectors() {
           left: $fd-popover-arrow-offset;
           right: auto;
         }
@@ -165,8 +193,7 @@ $block: #{$fd-namespace}-popover;
       top: $fd-popover-top-position-noarrow;
       z-index: 2;
 
-      &::before,
-      &::after {
+      @include both-pseudo-selectors() {
         display: none;
       }
     }
@@ -250,6 +277,26 @@ $block: #{$fd-namespace}-popover;
       box-shadow: none;
       border: none;
       margin-top: -0.25rem !important;
+    }
+
+    &--compact {
+      .#{$block}__arrow {
+        &-x--start {
+          left: $fd-popover-arrow-offset-compact;
+        }
+
+        &-x--end {
+          right: $fd-popover-arrow-offset-compact;
+        }
+
+        &-y--top {
+          top: $fd-popover-arrow-offset-compact;
+        }
+
+        &-y--bottom {
+          bottom: $fd-popover-arrow-offset-compact;
+        }
+      }
     }
 
     .#{$block}__arrow {

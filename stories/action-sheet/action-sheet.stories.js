@@ -33,7 +33,7 @@ export const ActionSheetDesktop = () => `
             <i class="sap-icon--settings"></i>
         </button>
     </div>
-    <div class="fd-popover__body" aria-hidden="false" id="actionSheetDesktop">
+    <div class="fd-popover__body fd-popover__body--compact" aria-hidden="false" id="actionSheetDesktop">
         <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
                 <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
