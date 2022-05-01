@@ -1,9 +1,11 @@
 :root {
+  --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
   --fdButton_Emphasized_Active_Outline: var(--sapContent_ContrastFocusColor);
   --fdButton_Ghost_Background: var(--sapButton_Lite_Background);
   --fdButton_Outline_Contrast: var(--sapContent_ContrastFocusColor);
 
   /** Shadows */
+  --fdButton_Text_Shadow: none;
   --fdButton_Hover_Shadow: none;
   --fdButton_Positive_Hover_Shadow: none;
   --fdButton_Negative_Hover_Shadow: none;
@@ -25,8 +27,7 @@
 
   /** Menu */
   --fdButton_Menu_Offset: calc(var(--sapButton_BorderWidth) * -1);
-  --fdButton_Menu_Emphasized_Margin: 0.0625rem;
-  --fdButton_Menu_Border_Width: 0;
+  --fdButton_Menu_Emphasized_Margin: var(--fdButton_Emphasized_Border_Width);
   --fdButton_Menu_Border_Radius: var(--sapElement_BorderCornerRadius);
   --fdButton_Menu_Separator_Display: none;
   --fdButton_Menu_Transparent_Separator_Height: 100%;
