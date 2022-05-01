@@ -24,11 +24,11 @@
   --fdButton_Segmented_Middle_Border_Radius: var(--sapButton_BorderCornerRadius);
 
   /** Menu */
+  --fdButton_Menu_Offset: 0;
   --fdButton_Menu_Emphasized_Margin: 0;
   --fdButton_Menu_Border_Width: var(--sapButton_BorderWidth);
   --fdButton_Menu_Border_Radius: var(--sapPopover_BorderCornerRadius);
   --fdButton_Menu_Separator_Display: block;
-  --fdButton_Menu_Transparent_Border_Width: var(--sapButton_BorderWidth);
-  --fdButton_Menu_Transparent_Separator_Display: block;
   --fdButton_Menu_Transparent_Separator_Height: 1rem;
+  --fdButton_Menu_Transparent_Separator_Display: block;
 }

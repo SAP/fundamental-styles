@@ -41,17 +41,6 @@ $split-button-states: (
   )
 );
 
-@mixin fd-split-button-border($width: var(--fdButton_Menu_Border_Width)) {
-  &:nth-of-type(2) {
-    border-left-width: $width;
-
-    @include fd-rtl() {
-      border-left-width: var(--sapButton_BorderWidth);
-      border-right-width: $width;
-    }
-  }
-}
-
 @mixin fd-split-button-separator($display, $background) {
   &:first-of-type:hover + button::after {
     display: none;
@@ -96,16 +85,15 @@ $split-button-states: (
   position: relative;
 
   > button {
-    @include fd-split-button-border();
     @include fd-split-button-separator(var(--fdButton_Menu_Separator_Display), var(--sapButton_TextColor));
 
     margin: 0;
 
     &:first-of-type {
-      @include fd-flex-vertical-center() {
-        justify-content: flex-start;
-      }
+      @include fd-set-margin-right(var(--fdButton_Menu_Offset));
+      @include fd-flex-vertical-center();
 
+      justify-content: flex-start;
       border-radius: var(--fdButton_Border_Radius_Left);
 
       @include fd-rtl() {
@@ -141,18 +129,6 @@ $split-button-states: (
       &:first-of-type {
         @include fd-set-margin-right(var(--fdButton_Menu_Emphasized_Margin));
       }
-
-      &:nth-of-type(2) {
-        @include fd-rtl() {
-          border-left-width: var(--fdButton_Emphasized_Border_Width);
-        }
-      }
-    }
-  }
-
-  &--transparent {
-    > button {
-      @include fd-split-button-border(var(--fdButton_Menu_Transparent_Border_Width));
     }
   }
 

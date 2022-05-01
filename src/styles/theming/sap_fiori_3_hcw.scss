@@ -429,10 +429,9 @@
   --fdBar_Right_Area_Padding_Left: 0;
 
   /** Menu Button */
-  --fdButton_Menu_Emphasized_Margin: 0;
+  --fdButton_Menu_Emphasized_Margin: calc(var(--sapButton_Emphasized_BorderWidth) * -1);
   --fdButton_Menu_Border_Width: 0;
   --fdButton_Menu_Separator_Display: none;
-  --fdButton_Menu_Transparent_Border_Width: 0;
   --fdButton_Menu_Transparent_Separator_Display: none;
 
   /** Object List */

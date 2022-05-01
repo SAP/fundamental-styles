@@ -42,8 +42,6 @@
     );
 
     @include fd-focus() {
-      @include fd-button-focus(calc(-0.1875rem - var(--fdButton_Emphasized_Border_Width)));
-
       outline-color: var(--sapContent_ContrastFocusColor);
     }
 

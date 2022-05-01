@@ -24,11 +24,11 @@
   --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
 
   /** Menu */
+  --fdButton_Menu_Offset: calc(var(--sapButton_BorderWidth) * -1);
   --fdButton_Menu_Emphasized_Margin: 0.0625rem;
   --fdButton_Menu_Border_Width: 0;
   --fdButton_Menu_Border_Radius: var(--sapElement_BorderCornerRadius);
   --fdButton_Menu_Separator_Display: none;
-  --fdButton_Menu_Transparent_Border_Width: var(--sapButton_BorderWidth);
-  --fdButton_Menu_Transparent_Separator_Display: block;
   --fdButton_Menu_Transparent_Separator_Height: 100%;
+  --fdButton_Menu_Transparent_Separator_Display: block;
 }
