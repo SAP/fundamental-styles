@@ -20,7 +20,7 @@
 
   /** Segmented */
   --fdButton_Segmented_Pad_Display: none;
-  --fdButton_Segmented_Border_Width: 0;
+  --fdButton_Segmented_Border_Offset: calc(var(--sapButton_BorderWidth) * -1);
   --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
 
   /** Menu */
