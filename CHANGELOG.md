@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.55...v0.24.0-rc.56) (2022-05-02)
+
+
+### Features
+
+* **styles:** card footer implementation ([#3365](https://github.com/SAP/fundamental-styles/issues/3365)) ([155723b](https://github.com/SAP/fundamental-styles/commit/155723b7b944f7c3afe7e728805ab4d48905fdff))
+
 ## [0.24.0-rc.55](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.54...v0.24.0-rc.55) (2022-04-29)
 
 
