@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.56...v0.24.0-rc.57) (2022-05-02)
+
+
+### Bug Fixes
+
+* **style:** button refactoring ([#3328](https://github.com/SAP/fundamental-styles/issues/3328)) ([ce3a414](https://github.com/SAP/fundamental-styles/commit/ce3a41436b78d00cb6fc40e69ab8cf242ffd23ee))
+
 ## [0.24.0-rc.56](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.55...v0.24.0-rc.56) (2022-05-02)
 
 
