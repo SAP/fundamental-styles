@@ -26,6 +26,7 @@ Title | A title is mandatory to explain what content is being displayed to the u
 Avatar (optional) | An avatar can be displayed in a size S (3rem).
 Subtitle (optional) | The subtitle provides additional context to the title or displays a status. Its usage depends on the card type. Subtitles that exceed one line are truncated with an ellipsis.
 Counter (optional) | The counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated.
+Footer (optional) | The footer displays a list of actions that can be performed on the card. When link is too long, or there is no more place for actions, overflow button should appear.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['button', 'avatar', 'badge', 'card', 'object-status', 'numeric-content', 'table', 'checkbox', 'list', 'link', 'icon']
@@ -53,6 +54,65 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
                 </div>
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+            <div class="fd-card__footer">
+                <div class="fd-card__footer-actions">
+                    <div class="fd-card__footer-actions-item">
+                        <button class="fd-button fd-button--positive">
+                            Button
+                        </button>
+                    </div>
+                    <div class="fd-card__footer-actions-item">
+                        <button class="fd-button fd-button--negative">
+                            Button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 300px; height: 400px; margin: 1rem;">
+        <div class="fd-card" role="region" aria-label="Card Anatomy Example 2">
+            <a class="fd-card__header" tabindex="0">
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')"
+                    role="img"
+                    aria-label="John Doe">
+                </span>
+                <div class="fd-card__header-text">
+                    <div class="fd-card__title-area">
+                        <div class="fd-card__title">Card Title</div>
+                    </div>
+                </div>
+            </a>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+            <div class="fd-card__footer">
+                <a class="fd-link fd-card__footer-link" href="#">Footer with a link</a>
+            </div>
+        </div>
+    </div>
+    <div style="width: 300px; height: 400px; margin: 1rem;">
+        <div class="fd-card" role="region" aria-label="Card Anatomy Example 2">
+            <a class="fd-card__header" tabindex="0">
+                <span
+                    class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+                    style="background-image: url('/assets/images/backgrounds/city.jpg')"
+                    role="img"
+                    aria-label="John Doe">
+                </span>
+                <div class="fd-card__header-text">
+                    <div class="fd-card__title-area">
+                        <div class="fd-card__title">Card Title</div>
+                    </div>
+                </div>
+            </a>
+            <div class="fd-card__content" role="group" aria-label="Card Content"></div>
+            <div class="fd-card__footer">
+                <a class="fd-link fd-card__footer-link" href="#">Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium</a>
+                <button class="fd-button fd-button--transparent">
+                    <i class="sap-icon sap-icon--overflow"></i>
+                </button>
+            </div>
         </div>
     </div>
     <div style="width: 300px; height: 400px; margin: 1rem;">
