@@ -245,10 +245,14 @@
 
   @include fd-focus() {
     box-shadow: none;
-    outline-offset: -0.0625rem;
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
-    outline-style: var(--sapContent_FocusStyle);
+    color: var(--fdLink_Text_Focus_Color);
+    background-color: var(--fdLink_Focus_Background);
+    border-radius: var(--fdLink_Focus_Border_Radius);
+    text-shadow: var(--fdLink_Focus_Text_Shadow);
+    outline-offset: var(--fdLink_Hover_Outline_Offset);
+    outline-width: var(--fdLink_Hover_Outline_Width);
+    outline-color: var(--fdLink_Hover_Outline_Color);
+    outline-style: var(--fdLink_Hover_Outline_Style);
     text-decoration: var(--fdLink_Text_Decoration_Opposite);
   }
 

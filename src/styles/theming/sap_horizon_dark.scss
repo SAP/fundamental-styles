@@ -299,6 +299,14 @@
   /* Link */
   --fdLink_Text_Decoration_Opposite: underline;
   --fdLink_Text_Decoration: none;
+  --fdLink_Text_Focus_Color: var(--sapContent_ContrastTextColor);
+  --fdLink_Focus_Background: var(--sapContent_FocusColor);
+  --fdLink_Focus_Border_Radius: 0.125rem;
+  --fdLink_Focus_Text_Shadow: none;
+  --fdLink_Hover_Outline_Offset: 0;
+  --fdLink_Hover_Outline_Width: 0;
+  --fdLink_Hover_Outline_Color: unset;
+  --fdLink_Hover_Outline_Style: none;
 
   /* Message Box */
   --fdMessage_Box_Error_Box_Shadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
