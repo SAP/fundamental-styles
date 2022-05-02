@@ -35,7 +35,7 @@ $block: #{$fd-namespace}-segmented-button;
     }
 
     &:not(:last-child) {
-      border-right-width: var(--fdButton_Segmented_Border_Width);
+      @include fd-set-margin-right(var(--fdButton_Segmented_Border_Offset));
     }
 
     @include fd-rtl() {
@@ -45,11 +45,6 @@ $block: #{$fd-namespace}-segmented-button;
 
       &:last-child {
         border-radius: var(--fdButton_Border_Radius_Right_RTL);
-      }
-
-      &:not(:last-child) {
-        border-left-width: var(--fdButton_Segmented_Border_Width);
-        border-right-width: var(--sapButton_BorderWidth);
       }
     }
   }

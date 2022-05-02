@@ -1,5 +1,6 @@
 @import "./common/switch/sap_horizon";
 @import "./common/button/sap_horizon";
+@import "./common/button/sap_horizon_hc";
 @import "./common/grid-list/sap_horizon";
 @import "./common/grid-list/sap_horizon_hc";
 @import "./common/icon-tab-bar/sap_horizon";
@@ -183,11 +184,6 @@
   --fdList_Growing_Font_Weight: bold;
   --fdList_Active_Outline_Color: var(--sapContent_ContrastFocusColor);
 
-  /* Button */
-  --fdButton_Text_Shadow: none;
-  --fdButton_Emphasized_Border_Width: 0.125rem;
-  --fdButton_Outline_Offset: -0.1875rem;
-
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
   --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;
@@ -218,9 +214,6 @@
   --fdCalendar_Item_Current_Active_Special_Day_Bottom: 0.125rem;
   --fdCalendar_Item_Current_Active_Special_Day_Left: auto;
   --fdCalendar_Item_Current_Active_Special_Day_Right: auto;
-
-  /** Badge on Button */
-  --fdButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
 
   /* Form Header */
   --fdFormHeader_Border_Width: var(--sapList_BorderWidth);
@@ -434,21 +427,6 @@
   --fdBar_Left_Area_Padding_Right: 0.25rem;
   --fdBar_Middle_Area_Padding_X: 0.25rem;
   --fdBar_Right_Area_Padding_Left: 0.25rem;
-
-  /** Segmented Button */
-  --fdButton_Segmented_Pad_Display: none;
-  --fdButton_Segmented_Border_Width: 0;
-  --fdButton_Border_Radius_Left: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
-  --fdButton_Border_Radius_Left_RTL: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
-  --fdButton_Segmented_Middle_Border_Radius: 0 0 0 0;
-  --fdButton_Border_Radius_Right: 0 var(--sapButton_BorderCornerRadius) var(--sapButton_BorderCornerRadius) 0;
-  --fdButton_Border_Radius_Right_RTL: var(--sapButton_BorderCornerRadius) 0 0 var(--sapButton_BorderCornerRadius);
-
-  /** Menu Button */
-  --fdButton_Menu_Border_Width: 0;
-  --fdButton_Menu_Separator_Display: none;
-  --fdButton_Menu_Transparent_Border_Width: 0;
-  --fdButton_Menu_Transparent_Separator_Display: none;
 
   /** Object List */
   --fdObject_List_Title_Font_Size: var(--sapFontHeader5Size);

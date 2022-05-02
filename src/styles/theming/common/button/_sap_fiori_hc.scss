@@ -1,0 +1,11 @@
+:root {
+  --fdButton_Outline_Offset: calc(-0.1875rem - var(--sapButton_BorderWidth));
+  --fdButton_Emphasized_Border_Width: 0.125rem;
+
+  /** Badge */
+  --fdButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);
+  --fdButton_Menu_Transparent_Separator_Display: none;
+
+  /** Menu */
+  --fdButton_Menu_Emphasized_Margin: calc(var(--fdButton_Emphasized_Border_Width) * -1);
+}

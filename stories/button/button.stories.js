@@ -526,7 +526,7 @@ These button types indicate different states: normal, selected, disabled and foc
 
 - **Normal**: The button’s default state. It can be selected to perform a corresponding action.
 - **Selected**: The button is selected as opposed to other buttons. This state can be displayed by adding the \`is-selected\` class or the \`aria-selected=”true”\` attribute for accessibility.
-- **Disabled**: It cannot be selected. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility.
+- **Disabled**: It cannot be selected. This state can be displayed by using the \`disabled\` attribute.
 - **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility without using the \`disabled\` property. By adding the hidden \`_instructions\` element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the \`aria-live\` property.
 `
         }

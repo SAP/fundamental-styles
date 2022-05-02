@@ -1,9 +1,12 @@
 :root {
+  --fdButton_Emphasized_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Emphasized_Active_Outline: var(--sapContent_FocusColor);
   --fdButton_Ghost_Background: var(--sapButton_Background);
   --fdButton_Outline_Contrast: var(--sapContent_FocusColor);
-  --fdButton_Outline_Offset: -0.25rem;
+  --fdButton_Outline_Offset: calc(-0.1875rem - var(--sapButton_BorderWidth));
 
   /** Shadows */
+  --fdButton_Text_Shadow: none;
   --fdButton_Hover_Shadow: var(--sapContent_Interaction_Shadow);
   --fdButton_Positive_Hover_Shadow: var(--sapContent_Positive_Shadow);
   --fdButton_Negative_Hover_Shadow: var(--sapContent_Negative_Shadow);
@@ -20,15 +23,14 @@
 
   /** Segmented */
   --fdButton_Segmented_Pad_Display: block;
-  --fdButton_Segmented_Border_Width: var(--sapButton_BorderWidth);
+  --fdButton_Segmented_Border_Offset: 0;
   --fdButton_Segmented_Middle_Border_Radius: var(--sapButton_BorderCornerRadius);
 
   /** Menu */
+  --fdButton_Menu_Offset: 0;
   --fdButton_Menu_Emphasized_Margin: 0;
-  --fdButton_Menu_Border_Width: var(--sapButton_BorderWidth);
   --fdButton_Menu_Border_Radius: var(--sapPopover_BorderCornerRadius);
   --fdButton_Menu_Separator_Display: block;
-  --fdButton_Menu_Transparent_Border_Width: var(--sapButton_BorderWidth);
-  --fdButton_Menu_Transparent_Separator_Display: block;
   --fdButton_Menu_Transparent_Separator_Height: 1rem;
+  --fdButton_Menu_Transparent_Separator_Display: block;
 }
