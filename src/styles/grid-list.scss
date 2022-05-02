@@ -55,16 +55,9 @@ $fd-grid-list-highlight: (
     height: 1rem;
     width: 1rem;
 
-    @include fd-focus() {
-      + .#{$block}__#{$type}-label {
-        outline-offset: 0;
-      }
-    }
-
     + .#{$block}__#{$type}-label {
       @include fd-empty() {
         align-self: center;
-        padding: 0;
       }
     }
   }
@@ -341,6 +334,10 @@ $fd-grid-list-highlight: (
           @include fd-flex();
 
           color: var(--sapContent_LabelColor);
+
+          @include fd-empty() {
+            @include fd-set-margin-left(-0.5rem);
+          }
         }
       }
     }
@@ -363,15 +360,17 @@ $fd-grid-list-highlight: (
       }
     }
 
-    &-single-select-right {
+    &-single-select-right .#{$block-item} {
       .#{$block}__radio-input {
         right: 1rem;
       }
 
       .#{$block}__radio-label {
-        @include fd-set-margin-left(0.5rem !important);
-
         order: 1;
+
+        @include fd-empty() {
+          @include fd-set-margins-x(0.5rem, -0.5rem);
+        }
       }
     }
   }
