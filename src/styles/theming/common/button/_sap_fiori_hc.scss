@@ -1,4 +1,5 @@
 :root {
+  --fdButton_Outline_Offset: calc(-0.1875rem - var(--sapButton_BorderWidth));
   --fdButton_Emphasized_Border_Width: 0.125rem;
 
   /** Badge */

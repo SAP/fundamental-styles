@@ -147,7 +147,7 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
   }
 
   @include fd-focus() {
-    @include fd-button-focus(calc(-0.1875rem - var(--sapButton_BorderWidth)));
+    @include fd-button-focus(var(--fdButton_Outline_Offset));
 
     box-shadow: none;
   }
