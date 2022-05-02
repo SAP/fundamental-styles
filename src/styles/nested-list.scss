@@ -5,7 +5,7 @@ $block: #{$fd-namespace}-nested-list;
 $button: #{$fd-namespace}-button;
 
 .#{$block} {
-  $fd-nested-list-border-radius: var(--sapElement_BorderCornerRadius);
+  $fd-nested-list-border-radius: var(--fdNested_List_Border_Corner_Radius);
 
   @mixin fd-nested-level-padding($paddingLeft, $paddingRight) {
     .#{$block}__link,
