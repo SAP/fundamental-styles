@@ -89,6 +89,10 @@ $fd-grid-list-highlight: (
       }
     }
 
+    &--height-auto {
+      height: auto;
+    }
+
     &--unread {
       .#{$block-item}-body * {
         font-weight: bold;
@@ -151,12 +155,21 @@ $fd-grid-list-highlight: (
       @include fd-reset();
       @include fd-flex(column);
 
-      width: calc(100% - 3rem - 0.75rem);
-      flex: 0 0 auto;
+      flex: 0 0 100%;
+
+      + .#{$block-item}-content {
+        padding-top: 1rem;
+      }
     }
 
     &-image {
       @include fd-set-margin-right(0.75rem);
+
+      + .#{$block-item}-header,
+      + .#{$block-item}-content {
+        // 3rem for xs avatar, 0.75rem for margin
+        max-width: calc(100% - 3rem - 0.75rem);
+      }
     }
 
     &-title {
@@ -181,7 +194,6 @@ $fd-grid-list-highlight: (
       @include fd-reset();
 
       color: var(--sapList_TextColor);
-      padding-top: 1rem;
     }
 
     &-counter {
