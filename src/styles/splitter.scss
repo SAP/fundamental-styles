@@ -166,7 +166,7 @@ $block: fd-splitter;
     @include fd-flex-center();
     @include fd-fiori-focus(-0.125rem);
 
-    background-color: var(--sapShell_Background);
+    background: var(--sapShell_Background);
     border: var(--fdSplitter_Resizer_Border);
 
     @include fd-splitter-resizer-decoration() {
@@ -178,6 +178,14 @@ $block: fd-splitter;
       .#{$block}__resizer-decoration-after {
         background: var(--sapContent_Selected_ForegroundColor);
       }
+    }
+
+    &--translucent {
+      background: var(--sapGroup_ContentBackground);
+    }
+
+    &--transparent {
+      background: transparent;
     }
 
     .#{$block}__resizer-grip {

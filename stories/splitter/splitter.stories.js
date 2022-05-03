@@ -13,6 +13,8 @@ Elements structure:
   * \`fd-splitter__pane-container--horizontal\` Modifier class for the container to set panes orientation to horizontal (align in rows).
     * \`fd-splitter__split-pane\` Pane that can be resized.
     * \`fd-splitter__resizer\` Resizer element.
+    * \`fd-splitter__resizer--translucent\` Modifier class for the resizer to change its look.
+    * \`fd-splitter__resizer--transparent\` Modifier class for the resizer to change its look.
       * \`fd-splitter__resizer-decoration-before\` Resizer decoration element.
       * \`fd-splitter__resizer-grip\` Resizer grip element.
       * \`fd-splitter__resizer-decoration-after\` Resizer decoration element.
@@ -247,6 +249,70 @@ There should be only one or two root panes. In case there is only one on-canvas 
 Otherwise navigation will be shown below the right root pane.
 
 **Note:** Navigation logic you should implement yourself.
+`
+        }
+    }
+};
+
+export const ResizerAppearance = () => `
+<div class="fd-splitter" style="height: 160px; background: #cccccc;">
+    <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
+        <div class='fd-splitter__split-pane'>
+            Next resizer has default appearance.
+        </div>
+
+        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+            <span class='fd-splitter__resizer-decoration-before'></span>
+
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
+                <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
+            </button>
+
+            <span class='fd-splitter__resizer-decoration-after'></span>
+        </div>
+        
+        <div class='fd-splitter__split-pane'>
+            Next resizer has translucent appearance.
+        </div>
+
+        <div tabindex='0' class="fd-splitter__resizer fd-splitter__resizer--translucent" role="separator" aria-orienration="vertical">
+            <span class='fd-splitter__resizer-decoration-before'></span>
+
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
+                <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
+            </button>
+
+            <span class='fd-splitter__resizer-decoration-after'></span>
+        </div>
+        
+        <div class='fd-splitter__split-pane'>
+            Next resizer has transparent appearance.
+        </div>
+        
+        <div tabindex='0' class="fd-splitter__resizer fd-splitter__resizer--transparent" role="separator" aria-orienration="vertical">
+            <span class='fd-splitter__resizer-decoration-before'></span>
+
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
+                <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
+            </button>
+
+            <span class='fd-splitter__resizer-decoration-after'></span>
+        </div>
+        
+        <div class='fd-splitter__split-pane'>
+            Content
+        </div>
+    </div>
+</div>`;
+
+ResizerAppearance.parameters = {
+    docs: {
+        description: {
+            story: `
+While panes have transparent background resizer has its own by default
+but it's possible to pick one from several options. To do that apply modifier class to the resizer element:
+* \`fd-splitter__resizer--translucent\` Translucent appearance
+* \`fd-splitter__resizer--transparent\` Transparent appearance
 `
         }
     }
