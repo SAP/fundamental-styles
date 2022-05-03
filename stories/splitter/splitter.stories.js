@@ -4,13 +4,30 @@ export default {
         description: `
 The responsive splitter layout structures complex applications into defined areas. These areas may be resizable and are either distributed on one screen or across different areas, which may also be off-canvas. This depends on the device class and the requirements and settings of the application.
 
-**Note**: Resizing logic you should implement by yourself.`,
-        tags: ['f3'],
+**Note**: Resizing logic you should implement yourself.
+
+Elements structure:
+* \`fd-splitter\` Component
+  * \`fd-splitter__pane-container\` Container for panes that has the same orientation.
+  * \`fd-splitter__pane-container--vertical\` Modifier class for the container to set panes orientation to vertical (align in columns).
+  * \`fd-splitter__pane-container--horizontal\` Modifier class for the container to set panes orientation to horizontal (align in rows).
+    * \`fd-splitter__split-pane\` Pane that can be resized.
+    * \`fd-splitter__resizer\` Resizer element.
+      * \`fd-splitter__resizer-decoration-before\` Resizer decoration element.
+      * \`fd-splitter__resizer-grip\` Resizer grip element.
+      * \`fd-splitter__resizer-decoration-after\` Resizer decoration element.
+    * \`fd-splitter__pagination\` Pagination element.
+      * \`fd-splitter__pagination-item\` Pagination item element.
+      * \`fd-splitter__pagination-item--active\` Modifier class for the active pagination item.
+        * \`fd-splitter__pagination-item-dot\` Pagination item dot element.
+`,
+        tags: ['non-f3'],
         components: ['splitter', 'icon', 'button']
     }
 };
 
-export const Vertical = () => `<div class="fd-splitter">
+export const Default = () => `<h2>Vertical</h2>
+<div class="fd-splitter" style="height: 160px">
     <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
         <div class='fd-splitter__split-pane'>
             Content
@@ -45,18 +62,9 @@ export const Vertical = () => `<div class="fd-splitter">
         </div>
     </div>
 </div>
-`;
 
-Vertical.parameters = {
-    docs: {
-        iframeHeight: 250,
-        description: {
-            story: 'Content split by the vertical areas (columns).'
-        }
-    }
-};
-
-export const Horizontal = () => `<div class="fd-splitter">
+<h2>Horizontal</h2>
+<div class="fd-splitter" style="height: 160px">
     <div class='fd-splitter__pane-container fd-splitter__pane-container--horizontal'>
         <div class='fd-splitter__split-pane'>
             Content
@@ -93,16 +101,20 @@ export const Horizontal = () => `<div class="fd-splitter">
 </div>
 `;
 
-Horizontal.parameters = {
+Default.parameters = {
     docs: {
-        iframeHeight: 250,
         description: {
-            story: 'Content split by the horizontal areas (rows).'
+            story: `
+Content can be split by the vertical areas (columns) or by the horizontal areas (rows).
+
+**Note:** You should explicitly set the dimensions of the splitter component and of the every area otherwise it will be set to the size of the content.
+`
         }
     }
 };
 
-export const MixedAndNested = () => `<div class="fd-splitter" style="min-height: 400px">
+export const MixedAndNested = () => `
+<div class="fd-splitter" style="height: 160px">
     <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
         <div class='fd-splitter__split-pane'>
             Content, Level 0
@@ -162,14 +174,36 @@ export const MixedAndNested = () => `<div class="fd-splitter" style="min-height:
 
 MixedAndNested.parameters = {
     docs: {
-        iframeHeight: 250,
         description: {
-            story: 'Splitter may contain mixed (vertical + horizontal) and nested split panes (areas).'
+            story: `
+Splitter may contain nested containers with different orientations.
+`
         }
     }
 };
 
-export const Pagination = () => `<div class="fd-splitter">
+export const Pagination = () => `<h2>One root pane</h2>
+<div class="fd-splitter" style="height: 160px">
+    <div class='fd-splitter__pane-container fd-splitter__pane-container--horizontal'>
+        <div class='fd-splitter__split-pane'>
+            Content
+        </div>
+
+        <div class='fd-splitter__pagination'>
+            <button class="fd-button fd-button--transparent fd-splitter__pagination-item fd-splitter__pagination-item--active">
+                <span class="fd-splitter__pagination-item-dot"></span>
+            </button>
+
+            <button class="fd-button fd-button--transparent fd-splitter__pagination-item">
+                <span class="fd-splitter__pagination-item-dot"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<h2>Two root panes</h2>
+
+<div class="fd-splitter" style="height: 160px">
     <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
         <div class='fd-splitter__split-pane'>
             Content
@@ -202,3 +236,18 @@ export const Pagination = () => `<div class="fd-splitter">
         </div>
     </div>
 </div>`;
+
+Pagination.parameters = {
+    docs: {
+        description: {
+            story: `
+Not all the panes should be visible at the same time. Some of them might be just hidden or goes off-canvas at certain breakpoint.
+Navigate into off-canvas panes possible via the navigation. Navigation should be placed in root container.
+There should be only one or two root panes. In case there is only one on-canvas root pane navigation will be shown just below, having the full width.
+Otherwise navigation will be shown below the right root pane.
+
+**Note:** Navigation logic you should implement yourself.
+`
+        }
+    }
+};

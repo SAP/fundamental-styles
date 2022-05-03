@@ -182,6 +182,7 @@ $block: fd-splitter;
   }
 
   &__pagination {
+    @include fd-ellipsis();
     @include fd-flex-center();
 
     width: 100%;
