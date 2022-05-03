@@ -68,7 +68,7 @@ $block: fd-splitter;
     max-height: 100%;
   }
 
-  &__pane-container {
+  .#{$block}__pane-container {
     @include fd-flex();
 
     flex-grow: 1;
