@@ -102,7 +102,7 @@ Horizontal.parameters = {
     }
 };
 
-export const MixedAndNested = () => `<div class="fd-splitter">
+export const MixedAndNested = () => `<div class="fd-splitter" style="min-height: 400px">
     <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
         <div class='fd-splitter__split-pane'>
             Content, Level 0
@@ -119,8 +119,6 @@ export const MixedAndNested = () => `<div class="fd-splitter">
         </button>
 
         <div class='fd-splitter__split-pane'>
-            Content, Level 0
-            
             <div class='fd-splitter__pane-container fd-splitter__pane-container--horizontal'>
                 <div class='fd-splitter__split-pane'>
                     Content, Level 1
@@ -137,8 +135,6 @@ export const MixedAndNested = () => `<div class="fd-splitter">
                 </button>
 
                 <div class='fd-splitter__split-pane'>
-                    Content, Level 1
-                    
                     <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
                         <div class='fd-splitter__split-pane'>
                             Content, Level 2
@@ -168,7 +164,41 @@ MixedAndNested.parameters = {
     docs: {
         iframeHeight: 250,
         description: {
-            story: 'Splitter containers may be nested.'
+            story: 'Splitter may contain mixed (vertical + horizontal) and nested split panes (areas).'
         }
     }
 };
+
+export const Pagination = () => `<div class="fd-splitter">
+    <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
+        <div class='fd-splitter__split-pane'>
+            Content
+        </div>
+
+        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+            <span class='fd-splitter__resizer-decoration-before'></span>
+
+            <span class='fd-splitter__resizer-grip'>
+                <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
+            </span>
+
+            <span class='fd-splitter__resizer-decoration-after'></span>
+        </button>
+
+        <div class='fd-splitter__pane-container fd-splitter__pane-container--horizontal'>
+            <div class='fd-splitter__split-pane'>
+                Content
+            </div>
+
+            <div class='fd-splitter__pagination'>
+                <button class="fd-button fd-button--transparent fd-splitter__pagination-item fd-splitter__pagination-item--active">
+                    <span class="fd-splitter__pagination-item-dot"></span>
+                </button>
+
+                <button class="fd-button fd-button--transparent fd-splitter__pagination-item">
+                    <span class="fd-splitter__pagination-item-dot"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>`;
