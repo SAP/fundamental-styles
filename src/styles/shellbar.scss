@@ -114,7 +114,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__input-group {
-      background-color: var(--fdShellbar_Input_Background);
+      background: var(--fdShellbar_Input_Background);
       border: var(--fdShellbar_Input_Border);
       border-radius: var(--fdShellbar_Input_Border_Radius);
       cursor: text;
@@ -122,6 +122,14 @@ $block: #{$fd-namespace}-shellbar;
       @include fd-hover() {
         border-color: var(--sapField_BorderColor);
         box-shadow: var(--fdShellbar_Button_Hover_Shadow);
+      }
+
+      &:focus,
+      &:focus-within,
+      &.is-focus {
+        &::after {
+          border-radius: var(--fdShellbar_Input_Border_Radius);
+        }
       }
 
       &-input {

@@ -336,7 +336,7 @@
   @content;
 }
 
-@mixin fd-input-container-focus($offset, $borderRadius, $background: none, $borderColor) {
+@mixin fd-input-container-focus($offset, $borderRadius, $background: none, $borderColor, $zIndex: 6) {
   &:focus,
   &:focus-within,
   &.is-focus {
@@ -356,6 +356,7 @@
       bottom: $offset;
       left: $offset;
       right: $offset;
+      z-index: $zIndex;
     }
     @content;
   }
