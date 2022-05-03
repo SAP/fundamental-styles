@@ -33,29 +33,29 @@ export const Default = () => `<h2>Vertical</h2>
             Content
         </div>
 
-        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
-            <span class='fd-splitter__resizer-grip'>
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
                 <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
-            </span>
+            </button>
 
             <span class='fd-splitter__resizer-decoration-after'></span>
-        </button>
+        </div>
 
         <div class='fd-splitter__split-pane'>
             Content
         </div>
 
-        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
-            <span class='fd-splitter__resizer-grip'>
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
                 <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
-            </span>
+            </button>
 
             <span class='fd-splitter__resizer-decoration-after'></span>
-        </button>
+        </div>
 
         <div class='fd-splitter__split-pane'>
             Content
@@ -70,29 +70,29 @@ export const Default = () => `<h2>Vertical</h2>
             Content
         </div>
 
-        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
-            <span class='fd-splitter__resizer-grip'>
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
                 <i class="sap-icon--horizontal-grip fd-splitter__resizer-grip-icon"></i>
-            </span>
+            </button>
 
             <span class='fd-splitter__resizer-decoration-after'></span>
-        </button>
+        </div>
 
         <div class='fd-splitter__split-pane'>
             Content
         </div>
 
-        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
-            <span class='fd-splitter__resizer-grip'>
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
                 <i class="sap-icon--horizontal-grip fd-splitter__resizer-grip-icon"></i>
-            </span>
+            </button>
 
             <span class='fd-splitter__resizer-decoration-after'></span>
-        </button>
+        </div>
 
         <div class='fd-splitter__split-pane'>
             Content
@@ -120,15 +120,15 @@ export const MixedAndNested = () => `
             Content, Level 0
         </div>
 
-        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
-            <span class='fd-splitter__resizer-grip'>
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
                 <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
-            </span>
+            </button>
 
             <span class='fd-splitter__resizer-decoration-after'></span>
-        </button>
+        </div>
 
         <div class='fd-splitter__split-pane'>
             <div class='fd-splitter__pane-container fd-splitter__pane-container--horizontal'>
@@ -136,15 +136,15 @@ export const MixedAndNested = () => `
                     Content, Level 1
                 </div>
 
-                <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+                <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
                     <span class='fd-splitter__resizer-decoration-before'></span>
 
-                    <span class='fd-splitter__resizer-grip'>
+                    <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex='-1'>
                         <i class="sap-icon--horizontal-grip fd-splitter__resizer-grip-icon"></i>
-                    </span>
+                    </button>
 
                     <span class='fd-splitter__resizer-decoration-after'></span>
-                </button>
+                </div>
 
                 <div class='fd-splitter__split-pane'>
                     <div class='fd-splitter__pane-container fd-splitter__pane-container--vertical'>
@@ -152,15 +152,15 @@ export const MixedAndNested = () => `
                             Content, Level 2
                         </div>
         
-                        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+                        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
                             <span class='fd-splitter__resizer-decoration-before'></span>
         
-                            <span class='fd-splitter__resizer-grip'>
+                            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex='-1'>
                                 <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
-                            </span>
+                            </button>
         
                             <span class='fd-splitter__resizer-decoration-after'></span>
-                        </button>
+                        </div>
         
                         <div class='fd-splitter__split-pane'>
                             Content, Level 2
@@ -209,15 +209,15 @@ export const Pagination = () => `<h2>One root pane</h2>
             Content
         </div>
 
-        <button class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
+        <div tabindex='0' class="fd-splitter__resizer" role="separator" aria-orienration="vertical">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
-            <span class='fd-splitter__resizer-grip'>
+            <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex="-1">
                 <i class="sap-icon--vertical-grip fd-splitter__resizer-grip-icon"></i>
-            </span>
+            </button>
 
             <span class='fd-splitter__resizer-decoration-after'></span>
-        </button>
+        </div>
 
         <div class='fd-splitter__pane-container fd-splitter__pane-container--horizontal'>
             <div class='fd-splitter__split-pane'>

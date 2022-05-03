@@ -6,6 +6,7 @@
 @import "./common/dynamic-page-layout/sap_fiori";
 @import "./common/card/sap_fiori";
 @import "./common/scrollbar/sap_fiori";
+@import "./common/splitter/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -416,8 +417,4 @@
   --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
   --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);
   --fdObject_List_Number_Font_Size: 1.375rem;
-
-  /** Splitter */
-  --fdSplitter_Decoration_Background: var(--sapHighlightColor);
-  --fdSplitter_Pagination_Item_Border_Width: 0;
 }

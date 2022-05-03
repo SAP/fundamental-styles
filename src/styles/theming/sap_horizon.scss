@@ -6,6 +6,7 @@
 @import "./common/dynamic-page-layout/sap_horizon";
 @import "./common/scrollbar/sap_horizon";
 @import "./common/card/sap_horizon";
+@import "./common/splitter/sap_horizon";
 
 :root {
   /* Switch */
@@ -578,8 +579,4 @@
   --btp-Hazelnut9: #714700;
   --btp-Hazelnut10: #523100;
   --btp-Hazelnut11: #3d1f00;
-
-  /** Splitter */
-  --fdSplitter_Decoration_Background: var(--sapGroup_ContentBorderColor);
-  --fdSplitter_Pagination_Item_Border_Width: var(--sapButton_BorderWidth);
 }

@@ -3,7 +3,7 @@
 $block: fd-splitter;
 
 @mixin fd-splitter-gradient($deg) {
-  background: linear-gradient($deg, transparent, var(--fdSplitter_Decoration_Background));
+  background: linear-gradient($deg, transparent, var(--fdSplitter_Resizer_Decoration_Background));
 }
 
 @mixin fd-splitter-resizer-decoration() {
@@ -46,12 +46,10 @@ $block: fd-splitter;
   &__pane-container,
   &__pane,
   &__resizer,
-  &__resizer-grip,
   &__resizer-grip-icon,
   &__resizer-decoration-before,
   &__resizer-decoration-after,
   &__pagination,
-  &__pagination-item,
   &__pagination-item-dot {
     @include fd-reset();
   }
@@ -82,6 +80,8 @@ $block: fd-splitter;
       > .#{$block}__resizer {
         height: 1rem;
         cursor: row-resize;
+        border-left: none;
+        border-right: none;
 
         @include fd-splitter-resizer-hover-focus-active() {
           width: 100%;
@@ -101,11 +101,13 @@ $block: fd-splitter;
         }
 
         .#{$block}__resizer-grip {
-          width: 2rem;
-          height: 1.5rem;
+          min-width: 2rem;
+          max-width: 2rem;
+          max-height: 1.5rem;
+          cursor: row-resize;
 
           &-icon {
-            margin-top: 0.125rem;
+            margin-top: 0.0625rem;
           }
         }
       }
@@ -118,6 +120,8 @@ $block: fd-splitter;
         width: 1rem;
         cursor: col-resize;
         flex-direction: column;
+        border-top: none;
+        border-bottom: none;
 
         @include fd-splitter-resizer-hover-focus-active() {
           height: 100%;
@@ -137,8 +141,14 @@ $block: fd-splitter;
         }
 
         .#{$block}__resizer-grip {
-          width: 1.5rem;
-          height: 2rem;
+          min-width: 1.5rem;
+          max-width: 1.5rem;
+          max-height: 2rem;
+          cursor: col-resize;
+
+          &-icon {
+            @include fd-set-margin-left(0.0625rem);
+          }
         }
       }
     }
@@ -152,11 +162,12 @@ $block: fd-splitter;
     text-overflow: ellipsis;
   }
 
-  &__resizer {
+  .#{$block}__resizer {
     @include fd-flex-center();
     @include fd-fiori-focus(-0.125rem);
 
     background-color: var(--sapShell_Background);
+    border: var(--fdSplitter_Resizer_Border);
 
     @include fd-splitter-resizer-decoration() {
       transition: all 0.1s ease-in;
@@ -169,14 +180,19 @@ $block: fd-splitter;
       }
     }
 
-    &-grip {
+    .#{$block}__resizer-grip {
+      outline: none;
+      box-shadow: none;
+      border-width: var(--fdSplitter_Resizer_Grip_Border_Width);
       flex-shrink: 0;
 
-      @include fd-flex-center();
+      @include fd-hover() {
+        background: var(--sapButton_Lite_Background);
+      }
 
-      .#{$block}__resizer-grip-icon {
+      @include fd-active() {
+        background: var(--sapButton_Lite_Background);
         color: var(--sapButton_Lite_TextColor);
-        line-height: 1rem;
       }
     }
   }
