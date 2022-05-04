@@ -368,7 +368,7 @@ AnalyticalCard.parameters = {
 
 export const ListCard = () => `<div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 100%; margin: 1rem;">
-        <div class="fd-card fd-card--list" role="region" aria-label="List Card Example 1">
+        <div class="fd-card" role="region" aria-label="List Card Example 1">
             <div class="fd-card__header fd-card__header--non-interactive">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -408,7 +408,7 @@ export const ListCard = () => `<div style="display:flex; justify-content:space-a
         </div>
     </div>
     <div style="width: 300px; height: 100%; margin: 1rem;">
-        <div class="fd-card fd-card--list" role="region" aria-label="List Card Example 2">
+        <div class="fd-card" role="region" aria-label="List Card Example 2">
             <div class="fd-card__header fd-card__header--non-interactive">
                 <div class="fd-card__header-text">
                     <div class="fd-card__title-area">
@@ -458,8 +458,7 @@ ListCard.parameters = {
     docs: {
         iframeHeight: 400,
         description: {
-            story: `A card can display various types of lists. You should add \`fd-card--list\` modifier class
-            to main element to display list card. All components placed inside should behave natively.
+            story: `A card can display various types of lists. All components placed inside should behave natively.
             For this kind of card it is not recommended to keep header interactive, or navigable.
             Such a header can be achieved by adding \`fd-card__header--non-interactive\` modifier class.
         `
