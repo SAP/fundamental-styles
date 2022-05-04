@@ -85,7 +85,7 @@ There are multiple connector types that can be displayed depending on the steps 
 
 | **Type** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :--- | :-------------- |
-| Solid |  <code style="margin-left: 2rem;"> fd-wizard__content--smolid</code> |
+| Solid |  <code style="margin-left: 2rem;"> fd-wizard__content--solid</code> |
 | List | <code style="margin-left: 2rem;"> fd-wizard__content--list</code> |
 | Transparent | <code style="margin-left: 2rem;"> fd-wizard__content--transparent</code> |
 
