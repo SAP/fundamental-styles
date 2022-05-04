@@ -1,0 +1,14 @@
+:root {
+  --fdCarousel_Content_Background: var(--sapGroup_ContentBackground);
+
+  /* Pagination */
+  --fdCarousel_Pagination_Border: 0.0625rem solid var(--sapList_BorderColor);
+
+  /* Pagination Dots */
+  --fdCarousel_Dot_Size: 0.25rem;
+  --fdCarousel_Dot_Margin: 0 0.375rem;
+  --fdCarousel_Dot_Background: var(--sapContent_ForegroundBorderColor);
+  --fdCarousel_Dot_Selected_Background: var(--sapContent_Selected_ForegroundColor);
+  --fdCarousel_Dot_Border: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
+  --fdCarousel_Dot_Selected_Border: 0.0625rem solid var(--sapContent_Selected_ForegroundColor);
+}
