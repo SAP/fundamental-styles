@@ -317,6 +317,21 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include fd-reset();
 
     flex: 1 0 auto;
+
+    &:first-child,
+    &:last-child {
+      overflow: hidden;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: $fd-card-border-radius;
+      border-bottom-right-radius: $fd-card-border-radius;
+    }
+
+    &:first-child {
+      border-top-left-radius: $fd-card-border-radius;
+      border-top-right-radius: $fd-card-border-radius;
+    }
   }
 
   &__content-container {
@@ -432,27 +447,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
         &__body {
           border: none;
-
-          tr:last-child {
-            td:first-child {
-              border-bottom-left-radius: $fd-card-border-radius;
-            }
-
-            td:last-child {
-              border-bottom-right-radius: $fd-card-border-radius;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &--list {
-    .#{$block}__content {
-      .#{$fd-namespace}-list {
-        &__item:last-child {
-          border-bottom-left-radius: $fd-card-border-radius;
-          border-bottom-right-radius: $fd-card-border-radius;
         }
       }
     }
