@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.57...v0.24.0-rc.58) (2022-05-05)
+
+
+### Bug Fixes
+
+* **styles:** split button ([#3378](https://github.com/SAP/fundamental-styles/issues/3378)) ([78deb30](https://github.com/SAP/fundamental-styles/commit/78deb3097716c47b95f5f6d2e6d7ffa74fa92e89))
+
 ## [0.24.0-rc.57](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.56...v0.24.0-rc.57) (2022-05-02)
 
 
