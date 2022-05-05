@@ -73,6 +73,12 @@ $split-button-states: (
         display: none;
       }
     }
+
+    @include fd-active() {
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 
