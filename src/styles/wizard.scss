@@ -94,6 +94,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       }
 
       .#{$block}__step-indicator {
+        border: var(--fdWizard_Current_Step_Border);
         position: relative;
         background: var(--fdWizard_Current_Step_Background_Color);
         color: var(--fdWizard_Current_Step_Color);
