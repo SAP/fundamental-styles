@@ -304,9 +304,9 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include fd-reset();
     @include fd-wizard-responsive-paddings();
 
+    padding-top: 1rem;
     width: 100%;
     height: 100%;
-    padding-top: 1rem;
     background: var(--fdWizard_Content_Default_Background);
 
     &--solid {
@@ -320,6 +320,15 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     &--transparent {
       background: var(--fdWizard_Content_Transparent_Background);
     }
+  }
+
+  &__step-content-container {
+    @include fd-reset();
+    @include fd-wizard-responsive-paddings();
+
+    padding: var(--fdWizard_Step_Content_Container_Spacing);
+    background-color: var(--fdWizard_Step_Content_Container_Background_Color);
+    border-radius: var(--sapElement_BorderCornerRadius);
   }
 
   &__next-step {

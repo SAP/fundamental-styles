@@ -203,23 +203,31 @@ exports[`Storyshots Components/Wizard Customized 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Step 3
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Step 3
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -530,23 +538,31 @@ exports[`Storyshots Components/Wizard Default 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Step 3
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Step 3
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -1214,23 +1230,31 @@ exports[`Storyshots Components/Wizard Mobile 1`] = `
         >
           
                 
-          <div>
-            
-                    Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-                
-          </div>
-          
-                
           <div
-            class="fd-wizard__next-step"
+            class="fd-wizard__step-content-container"
           >
             
                     
-            <button
-              class="fd-button fd-button--emphasized"
+            <div>
+              
+                        Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis.
+                    
+            </div>
+            
+                    
+            <div
+              class="fd-wizard__next-step"
             >
-              Next Step
-            </button>
+              
+                        
+              <button
+                class="fd-button fd-button--emphasized"
+              >
+                Next Step
+              </button>
+              
+                    
+            </div>
             
                 
           </div>
@@ -1891,26 +1915,34 @@ exports[`Storyshots Components/Wizard Mobile 1`] = `
           
                 
           <div
-            aria-label="Image 4"
-            role="img"
-            style="
-                    width:100%;
-                    background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                    height: 300px;
-                    background-size:cover;"
+            class="fd-wizard__step-content-container"
           >
             
-                
+                    
             <div
-              class="fd-wizard__next-step fd-wizard__next-step--floating"
+              aria-label="Image 4"
+              role="img"
+              style="
+                        width:100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 300px;
+                        background-size:cover;"
             >
               
                     
-              <button
-                class="fd-button fd-button--emphasized"
+              <div
+                class="fd-wizard__next-step fd-wizard__next-step--floating"
               >
-                Next Step
-              </button>
+                
+                        
+                <button
+                  class="fd-button fd-button--emphasized"
+                >
+                  Next Step
+                </button>
+                
+                    
+              </div>
               
                 
             </div>
@@ -2305,23 +2337,31 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Next Step
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Next Step
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -2837,23 +2877,31 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Next Step
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Next Step
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -3504,23 +3552,31 @@ exports[`Storyshots Components/Wizard Responsive 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Next Step
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Next Step
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -3908,23 +3964,31 @@ exports[`Storyshots Components/Wizard Reverted Steps 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Next Step
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Next Step
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -4440,23 +4504,31 @@ exports[`Storyshots Components/Wizard Reverted Steps 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Next Step
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Next Step
+          </button>
+          
+            
+        </div>
         
         
       </div>
@@ -5107,23 +5179,31 @@ exports[`Storyshots Components/Wizard Reverted Steps 1`] = `
     >
       
         
-      <div>
-        
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        
-      </div>
-      
-        
       <div
-        class="fd-wizard__next-step"
+        class="fd-wizard__step-content-container"
       >
         
             
-        <button
-          class="fd-button fd-button--compact fd-button--emphasized"
+        <div>
+          
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            
+        </div>
+        
+            
+        <div
+          class="fd-wizard__next-step"
         >
-          Next Step
-        </button>
+          
+                
+          <button
+            class="fd-button fd-button--compact fd-button--emphasized"
+          >
+            Next Step
+          </button>
+          
+            
+        </div>
         
         
       </div>

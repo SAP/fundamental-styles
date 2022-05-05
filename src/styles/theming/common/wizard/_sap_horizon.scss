@@ -1,5 +1,5 @@
 :root {
-  --fdWizard_Current_Step_Background_Color: var(-sapContent_Selected_ForegroundColor);
+  --fdWizard_Current_Step_Background_Color: var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Label_Current_Step_Color: var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Optional_Text_Color: var(--sapContent_LabelColor);
   --fdWizard_Label_Font_Family: var(--sapFontBoldFamily);
@@ -23,4 +23,6 @@
   --fdWizard_Selection_Bar_Height: 0.188rem;
   --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
   --fdWizard_Step_Indicator_Margin_Right: 0.5rem;
+  --fdWizard_Step_Content_Container_Background_Color: var(--sapGroup_ContentBackground);
+  --fdWizard_Step_Content_Container_Spacing: 1rem;
 }
