@@ -11,6 +11,8 @@
 @import "./common/scrollbar/sap_horizon";
 @import "./common/card/sap_horizon";
 @import "./common/card/sap_horizon_hc";
+@import "./common/slider/sap_horizon";
+@import "./common/slider/sap_horizon_hc";
 
 :root {
   /* Switch */
@@ -49,14 +51,6 @@
   --fdWizard_Content_Transparent_Background: transparent;
   --fdWizard_Selection_Bar_Height: 0.313rem;
   --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
-
-  /* Slider */
-
-  --fdSlider_Track_Height: 0.25rem;
-  --fdSlider_Track_BorderRadius: 0.25rem;
-  --fdSlider_Tick_Height: 1rem;
-  --fdSlider_Track_Active_Background: var(--sapActiveColor);
-  --fdSlider_Track_Active_Border: var(--sapActiveColor);
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);

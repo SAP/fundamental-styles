@@ -1,0 +1,50 @@
+:root {
+  --fdSlider_Track_Height: 0.25rem;
+  --fdSlider_Track_BorderRadius: 0.25rem;
+  --fdSlider_Tick_Height: 0.5rem;
+  --fdSlider_Track_Background: var(--sapSlider_Background);
+  --fdSlider_Track_Border_Color: var(--sapSlider_BorderColor);
+  --fdSlider_Track_Border_Width: 0;
+  --fdSlider_Track_Active_Background: var(--sapSlider_Selected_Background);
+  --fdSlider_Track_Active_Border: var(--sapSlider_Selected_BorderColor);
+  --fdSlider_Track_Active_Box_Shadow: none;
+
+  // Slider handle
+  --fdSlider_Handle_Background: var(--sapSlider_HandleBackground);
+  --fdSlider_Handle_Border_Radius: 0.5rem;
+  --fdSlider_Handle_Width: 1.5rem;
+  --fdSlider_Handle_Height: 1.25rem;
+  --fdSlider_Handle_Border: 0.0625rem solid var(--sapSlider_HandleBorderColor);
+  --fdSlider_Handle_Border_Color: var(--sapSlider_HandleBorderColor);
+  --fdSlider_Handle_Box_Shadow: var(--sapContent_Selected_Shadow);
+  --fdSlider_Handle_Active_Size: 2.25rem;
+
+  // Slider handle Mobile mode
+  --fdSlider_Mobile_Handle_Width: 2rem;
+  --fdSlider_Mobile_Handle_Height: 1.5rem;
+  --fdSlider_Mobile_Handle_Active_Size: 2.75rem;
+
+  // Slider Handle Hover
+  --fdSlider_Hover_Handle_Background: var(--sapSlider_Hover_HandleBackground);
+  --fdSlider_Hover_Handle_Box_Shadow: var(--sapContent_Selected_Shadow);
+  --fdSlider_Hover_Handle_Border: 0.125rem solid var(--sapSlider_Hover_HandleBorderColor);
+
+  // Slider Handle Active
+  --fdSlider_Active_Handle_Background: var(--sapSlider_Active_HandleBackground);
+  --fdSlider_Active_Handle_Box_Shadow: none;
+  --fdSlider_Active_Range_Handle_Background: var(--sapSlider_Active_RangeHandleBackground);
+
+  // Slider Handle Focus
+  --fdSlider_Focus_Handle_Outline_Color: transparent;
+
+  // Slider Ticks
+  --fdSlider_Tick_Background: var(--sapContent_MeasureIndicatorColor);
+  --fdSlider_Active_Tick_Background: var(--sapSlider_Selected_BorderColor);
+
+  // Slider End points
+  --fdSlider_Endpoint_Size: 0.5rem;
+  --fdSlider_Endpoint_Background: var(--sapContent_MeasureIndicatorColor);
+  --fdSlider_Endpoint_Border: 0.0625rem solid var(--sapContent_MeasureIndicatorColor);
+  --fdSlider_Endpoint_Active_Background: var(--sapSlider_Selected_Background);
+  --fdSlider_Endpoint_Active_Border: 0.0625rem solid var(--sapContent_Selected_MeasureIndicatorColor);
+}

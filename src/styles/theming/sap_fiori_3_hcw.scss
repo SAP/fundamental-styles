@@ -10,6 +10,8 @@
 @import "./common/scrollbar/sap_fiori";
 @import "./common/card/sap_fiori";
 @import "./common/card/sap_fiori_hc";
+@import "./common/slider/sap_fiori";
+@import "./common/slider/sap_fiori_hc";
 
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
@@ -44,14 +46,6 @@
   --fdWizard_Content_Transparent_Background: var(--sapBackgroundColor);
   --fdWizard_Selection_Bar_Height: 0.313rem;
   --fdWizard_Selection_Bar_Background: var(--sapList_SelectionBorderColor);
-
-  /* Slider */
-
-  --fdSlider_Track_Height: 0.375rem;
-  --fdSlider_Track_BorderRadius: 0.375rem;
-  --fdSlider_Tick_Height: 1.125rem;
-  --fdSlider_Track_Active_Background: var(--sapSelectedColor);
-  --fdSlider_Track_Active_Border: var(--sapField_BorderColor);
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
