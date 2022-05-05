@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.58...v0.24.0-rc.59) (2022-05-05)
+
+
+### Bug Fixes
+
+* **styles:** added card container border radius and overflow ([#3379](https://github.com/SAP/fundamental-styles/issues/3379)) ([e1b6d4c](https://github.com/SAP/fundamental-styles/commit/e1b6d4c1b3a06cf3e089a7e3989a2c45e64e49a2))
+
 ## [0.24.0-rc.58](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.57...v0.24.0-rc.58) (2022-05-05)
 
 
