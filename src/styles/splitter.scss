@@ -1,0 +1,249 @@
+@import "mixins/mixins";
+
+$block: fd-splitter;
+
+@mixin fd-splitter-gradient($deg) {
+  background: linear-gradient($deg, transparent, var(--fdSplitter_Resizer_Decoration_Background));
+}
+
+@mixin fd-splitter-resizer-decoration() {
+  .#{$block}__resizer-decoration-before,
+  .#{$block}__resizer-decoration-after {
+    @content;
+  }
+}
+
+@mixin fd-splitter-resizer-hover-focus-active() {
+  @include fd-hover() {
+    .#{$block}__resizer-decoration-before,
+    .#{$block}__resizer-decoration-after {
+      @content;
+    }
+  }
+
+  @include fd-focus() {
+    .#{$block}__resizer-decoration-before,
+    .#{$block}__resizer-decoration-after {
+      @content;
+    }
+  }
+
+  @include fd-active() {
+    .#{$block}__resizer-decoration-before,
+    .#{$block}__resizer-decoration-after {
+      @content;
+    }
+  }
+}
+
+.#{$block} {
+  @include fd-flex();
+
+  width: 100%;
+  height: 100%;
+
+  &,
+  &__pane-container,
+  &__pane,
+  &__resizer,
+  &__resizer-grip-icon,
+  &__resizer-decoration-before,
+  &__resizer-decoration-after,
+  &__pagination,
+  &__pagination-item-dot {
+    @include fd-reset();
+  }
+
+  &__resizer,
+  &__resizer-grip,
+  &__resizer-grip-icon,
+  &__resizer-decoration-before,
+  &__resizer-decoration-after {
+    user-select: none;
+  }
+
+  &__pane-container,
+  &__pane {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .#{$block}__pane-container {
+    @include fd-flex();
+
+    flex-grow: 1;
+    overflow: hidden;
+
+    &--horizontal {
+      flex-direction: column;
+
+      > .#{$block}__resizer {
+        height: 1rem;
+        cursor: row-resize;
+        border-left: none;
+        border-right: none;
+
+        @include fd-splitter-resizer-hover-focus-active() {
+          width: 100%;
+        }
+
+        @include fd-splitter-resizer-decoration() {
+          min-width: 4rem;
+          height: 0.0625rem;
+        }
+
+        .#{$block}__resizer-decoration-before {
+          @include fd-splitter-gradient(90deg);
+        }
+
+        .#{$block}__resizer-decoration-after {
+          @include fd-splitter-gradient(270deg);
+        }
+
+        .#{$block}__resizer-grip {
+          min-width: 2rem;
+          max-width: 2rem;
+          max-height: 1.5rem;
+          cursor: row-resize;
+
+          &-icon {
+            margin-top: 0.0625rem;
+          }
+        }
+      }
+    }
+
+    &--vertical {
+      flex-direction: row;
+
+      > .#{$block}__resizer {
+        width: 1rem;
+        cursor: col-resize;
+        flex-direction: column;
+        border-top: none;
+        border-bottom: none;
+
+        @include fd-splitter-resizer-hover-focus-active() {
+          height: 100%;
+        }
+
+        @include fd-splitter-resizer-decoration() {
+          width: 0.0625rem;
+          min-height: 4rem;
+        }
+
+        .#{$block}__resizer-decoration-before {
+          @include fd-splitter-gradient(180deg);
+        }
+
+        .#{$block}__resizer-decoration-after {
+          @include fd-splitter-gradient(0deg);
+        }
+
+        .#{$block}__resizer-grip {
+          min-width: 1.5rem;
+          max-width: 1.5rem;
+          max-height: 2rem;
+          cursor: col-resize;
+
+          &-icon {
+            @include fd-set-margin-left(0.0625rem);
+          }
+        }
+      }
+    }
+  }
+
+  &__split-pane {
+    @include fd-flex(column);
+
+    flex-grow: 1;
+    overflow: auto;
+    text-overflow: ellipsis;
+  }
+
+  .#{$block}__resizer {
+    @include fd-flex-center();
+    @include fd-fiori-focus(-0.125rem);
+
+    background: var(--sapShell_Background);
+    border: var(--fdSplitter_Resizer_Border);
+
+    @include fd-splitter-resizer-decoration() {
+      transition: all 0.1s ease-in;
+    }
+
+    @include fd-active() {
+      .#{$block}__resizer-decoration-before,
+      .#{$block}__resizer-decoration-after {
+        background: var(--sapContent_Selected_ForegroundColor);
+      }
+    }
+
+    &--translucent {
+      background: var(--sapGroup_ContentBackground);
+    }
+
+    &--transparent {
+      background: transparent;
+    }
+
+    .#{$block}__resizer-grip {
+      outline: none;
+      box-shadow: none;
+      border-width: var(--fdSplitter_Resizer_Grip_Border_Width);
+      flex-shrink: 0;
+
+      @include fd-hover() {
+        background: var(--sapButton_Lite_Background);
+      }
+
+      @include fd-active() {
+        background: var(--sapButton_Lite_Background);
+        color: var(--sapButton_Lite_TextColor);
+      }
+    }
+  }
+
+  &__pagination {
+    @include fd-ellipsis();
+    @include fd-flex-center();
+
+    width: 100%;
+    height: 2.75rem;
+    background: var(--sapPageFooter_Background);
+    border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
+    flex-shrink: 0;
+
+    .#{$block}__pagination-item {
+      border-width: var(--fdSplitter_Pagination_Item_Border_Width);
+
+      @include fd-active() {
+        &:not(.#{$block}__pagination-item--active) {
+          .#{$block}__pagination-item-dot {
+            background: var(--sapButton_Active_TextColor);
+          }
+        }
+      }
+
+      &-dot {
+        width: 0.25rem;
+        height: 0.25rem;
+        border-radius: 100%;
+        background: var(--sapContent_NonInteractiveIconColor);
+      }
+
+      &--active {
+        .#{$block}__pagination-item-dot {
+          width: 0.5rem;
+          height: 0.5rem;
+          background: var(--sapSelectedColor);
+        }
+
+        @include fd-active() {
+          background: var(--sapButton_Lite_Hover_Background);
+        }
+      }
+    }
+  }
+}
