@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.59...v0.24.0-rc.60) (2022-05-06)
+
+
+### Features
+
+* **styles:** splitter component ([#3377](https://github.com/SAP/fundamental-styles/issues/3377)) ([fe65a1f](https://github.com/SAP/fundamental-styles/commit/fe65a1f325861074b3f7e08c8718b97e0b4ef99a))
+
 ## [0.24.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.58...v0.24.0-rc.59) (2022-05-05)
 
 
