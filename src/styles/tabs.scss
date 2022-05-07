@@ -266,8 +266,7 @@ $block: #{$fd-namespace}-tabs;
     padding-right: 0.5rem;
   }
 
-  /** TODO: Refactor after button styles refactoring */
-  button.#{$block}__overflow {
+  &__overflow {
     @include fd-reset();
     @include fd-icon-element-base();
     @include fd-flex-center();
