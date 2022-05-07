@@ -1,0 +1,20 @@
+:root {
+  --fdInput_Group_Button_Border_Raduis: 0;
+  --fdInput_Group_Button_Background: var(--sapButton_Lite_Background);
+  --fdInput_Group_Button_Text_Color: var(--sapButton_Lite_TextColor);
+  --fdInput_Group_Button_Box_Shadow: none;
+  --fdInput_Group_Button_Hover_Background: var(--sapButton_Lite_Hover_Background);
+  --fdInput_Group_Button_Hover_Text_Color: var(--sapButton_Lite_Hover_TextColor);
+  --fdInput_Group_Button_Active_Background: var(--sapButton_Lite_Active_Background);
+  --fdInput_Group_Button_Active_Text_Color: var(--sapButton_Active_TextColor);
+  --fdInput_Group_Button_Success_Active_Text_Color: var(--sapButton_Active_TextColor);
+  --fdInput_Group_Button_Success_Active_Box_Shadow: none;
+  --fdInput_Group_Button_Error_Active_Text_Color: var(--sapButton_Active_TextColor);
+  --fdInput_Group_Button_Error_Active_Box_Shadow: none;
+  --fdInput_Group_Button_Warning_Active_Text_Color: var(--sapButton_Active_TextColor);
+  --fdInput_Group_Button_Warning_Active_Box_Shadow: none;
+  --fdInput_Group_Button_Information_Active_Text_Color: var(--sapButton_Active_TextColor);
+  --fdInput_Group_Button_Information_Active_Box_Shadow: none;
+  --fdInput_Outline_Offset_Focus_Within: -0.1875rem;
+  --fdInput_Outline_Offset_States: -0.25rem;
+}

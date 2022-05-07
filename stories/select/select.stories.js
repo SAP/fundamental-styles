@@ -17,7 +17,7 @@ export default {
 - Your use case requires all available options to be displayed right away, without any user interaction. In this case, consider using **radio buttons or a radio button group** instead.
 
 `,
-        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar', 'button', 'icon', 'layout-grid']
+        components: ['icon', 'popover', 'list', 'form-label', 'form-message', 'select', 'dialog', 'bar', 'button', 'icon', 'layout-grid', 'form-item']
     }
 };
 
@@ -512,7 +512,7 @@ Information | \`is-information\`
 
 export const AsFormItem = () => `<div style="height:310px">
     <div class="fd-form-item">
-    <label class="fd-form-label" id="formSelectLabel">Choose an option</label><br />
+    <label class="fd-form-label" id="formSelectLabel">Choose an option</label>
         <div class="fd-popover">
             <div class="fd-popover__control">
                 <div class="fd-select">

@@ -12,35 +12,20 @@ $block: #{$fd-namespace}-step-input;
   $fd-step-input-description-padding: 0.5rem;
   $fd-step-input-semantic-border-offset: 0.125rem;
 
-  @include fd-reset();
-  @include fd-form-states();
-
-  @include fd-fiori-pseudo-focus-within() {
-    z-index: 10;
-  }
+  // @include fd-reset();
+  @include fd-input-field-base(true);
+  @include fd-input-field-states(true);
+  @include fd-input-group-button-overwrite();
 
   position: relative;
   width: auto;
-  border-style: solid;
-  border-width: var(--sapField_BorderWidth);
-  border-color: var(--sapField_BorderColor);
-  border-radius: var(--sapField_BorderCornerRadius);
-  background-color: var(--sapField_Background);
-  height: $fd-step-input-cozy-height;
   display: inline-flex;
   align-items: center;
-  line-height: 0;
+  padding: 0;
 
   &__button.#{$fd-namespace}-button {
     width: $fd-step-input-cozy-button-width;
     min-width: $fd-step-input-cozy-button-width;
-    height: 100%;
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &::before,
     &::after {
@@ -63,19 +48,24 @@ $block: #{$fd-namespace}-step-input;
   }
 
   &__input.#{$fd-namespace}-input {
-    width: auto;
-    height: 100%;
     text-align: right;
     border: none;
     margin: 0;
     padding: 0 0.25rem;
+    background: none;
     background-color: transparent;
 
     @include fd-rtl() {
       text-align: left;
     }
 
-    &:focus {
+    @include fd-hover() {
+      @include fd-input-field-nested-reset();
+    }
+
+    @include fd-focus() {
+      @include fd-input-field-nested-reset();
+
       outline: none;
     }
 
@@ -115,6 +105,15 @@ $block: #{$fd-namespace}-step-input;
   &.is-readonly {
     .#{$block}__button.#{$fd-namespace}-button {
       display: none;
+    }
+
+    @include fd-focus-within() {
+      background: var(--sapField_Focus_Background);
+      border-radius: var(--sapField_BorderCornerRadius);
+
+      .#{$block}__input {
+        background: transparent;
+      }
     }
   }
 }

@@ -2,104 +2,191 @@
 @import "./mixins";
 @import "./states";
 
-@mixin fd-form-states {
+@mixin fd-input-field-base($hasFocusWithin: false) {
+  @include fd-reset();
+  @include fd-ellipsis();
 
-  $fd-form-border-thin-width: 0.0625rem;
-  $fd-form-border-thick-width: 2 * $fd-form-border-thin-width;
+  z-index: 1;
+  width: 100%;
+  min-width: 2.75rem;
+  border-radius: var(--sapField_BorderCornerRadius);
+  padding: 0 0.625rem;
+  margin: 0.25rem 0;
+  height: 2.25rem;
+  box-shadow: none;
+  color: var(--sapField_TextColor);
+  text-shadow: var(--fdInput_Text_Shadow);
+  background: var(--sapField_BackgroundStyle);
+  background-color: var(--sapField_Background);
+  border: var(--sapField_BorderWidth) var(--sapField_BorderStyle) var(--sapField_BorderColor);
+  cursor: text;
+  outline: none;
+  overflow: hidden;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
-  // states
+  &::placeholder {
+    font-style: var(--fdPlaceholder_Font_Style);
+    color: var(--sapField_PlaceholderTextColor);
+  }
+
+  &::selection {
+    color: var(--sapContent_ContrastTextColor);
+    background-color: var(--sapSelectedColor);
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+
   @include fd-hover() {
+    background: var(--sapField_Hover_BackgroundStyle);
     background-color: var(--sapField_Hover_Background);
     border-color: var(--sapField_Hover_BorderColor);
-  }
-
-  &.is-success {
-    background-color: var(--sapField_SuccessBackground);
-
-    @include fd-apply-border(
-      var(--sapField_SuccessColor),
-      var(--sapField_SuccessBorderWidth),
-      var(--sapField_SuccessBorderStyle)
-    );
-
-    @include fd-hover() {
-      background-color: var(--sapField_SuccessBackground);
-      border-color: var(--sapField_SuccessColor);
-    }
-  }
-
-  &.is-error {
-    background-color: var(--sapField_InvalidBackground);
-    font-style: var(--fdInput_State_Text_Style);
-    font-weight: var(--fdInput_State_Font_Weight);
-
-    @include fd-apply-border(
-      var(--sapField_InvalidColor),
-      var(--sapField_InvalidBorderWidth),
-      var(--sapField_InvalidBorderStyle)
-    );
-
-    @include fd-hover() {
-      background-color: var(--sapField_InvalidBackground);
-      border-color: var(--sapField_InvalidColor);
-    }
-  }
-
-  &.is-warning,
-  &.is-alert {
-    background-color: var(--sapField_WarningBackground);
-    font-style: var(--fdInput_State_Text_Style);
-    font-weight: var(--fdInput_State_Font_Weight);
-
-    @include fd-apply-border(
-      var(--sapField_WarningColor),
-      var(--sapField_WarningBorderWidth),
-      var(--sapField_WarningBorderStyle)
-    );
-
-    @include fd-hover() {
-      background-color: var(--sapField_WarningBackground);
-      border-color: var(--sapField_WarningColor);
-    }
-  }
-
-  &.is-information {
-    background-color: var(--sapField_InformationBackground);
-
-    @include fd-apply-border(
-      var(--sapField_InformationColor),
-      var(--sapField_InformationBorderWidth),
-      var(--sapField_InformationBorderStyle)
-    );
-
-    @include fd-hover() {
-      background-color: var(--sapField_InformationBackground);
-      border-color: var(--sapField_InformationColor);
-    }
+    box-shadow: var(--fdInput_Box_Shadow_Hover);
   }
 
   @include fd-focus() {
-    box-shadow: none;
-    outline-offset: -0.1875rem;
+    background: var(--sapField_Focus_Background);
     outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
     outline-style: var(--sapContent_FocusStyle);
+    outline-color: var(--fdInput_Outline_Color);
+    outline-offset: var(--fdInput_Outline_Offset);
+    box-shadow: none;
   }
 
+  @if $hasFocusWithin {
+    @include fd-focus-within() {
+      background: var(--sapField_Focus_Background);
+      outline-width: var(--sapContent_FocusWidth);
+      outline-style: var(--sapContent_FocusStyle);
+      outline-color: var(--fdInput_Outline_Color);
+      outline-offset: var(--fdInput_Outline_Offset_Focus_Within);
+      box-shadow: none;
+    }
+  }
+}
+
+@mixin fd-input-field-base-compact {
+  min-width: 2rem;
+  height: 1.625rem;
+  margin: 0.1875rem 0;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+@mixin fd-input-field-states($hasFocusWithin: false) {
+  $fd-input-states: (
+    'success': (
+      'background': var(--sapField_SuccessBackgroundStyle),
+      'backgroundColor': var(--sapField_SuccessBackground),
+      'border': var(--sapField_SuccessColor) var(--sapField_SuccessBorderWidth) var(--sapField_SuccessBorderStyle),
+      'hoverBackground': var(--fdInput_Success_Background_Color_Hover),
+      'hoverBorderColor': var(--sapField_SuccessColor),
+      'hoverBoxShadow': var(--fdInput_Success_Box_Shadow_Hover),
+      'focusOutlineColor': var(--fdInput_Success_Outline_Color)
+    ),
+    'error': (
+      'background': var(--sapField_InvalidBackgroundStyle),
+      'backgroundColor': var(--sapField_InvalidBackground),
+      'border': var(--sapField_InvalidColor) var(--sapField_InvalidBorderWidth) var(--sapField_InvalidBorderStyle),
+      'hoverBackground': var(--fdInput_Error_Background_Color_Hover),
+      'hoverBorderColor': var(--sapField_InvalidColor),
+      'hoverBoxShadow': var(--fdInput_Error_Box_Shadow_Hover),
+      'focusOutlineColor': var(--fdInput_Error_Outline_Color)
+    ),
+    'warning': (
+      'background': var(--sapField_WarningBackgroundStyle),
+      'backgroundColor': var(--sapField_WarningBackground),
+      'border': var(--sapField_WarningColor) var(--sapField_WarningBorderWidth) var(--sapField_WarningBorderStyle),
+      'hoverBackground': var(--fdInput_Warning_Background_Color_Hover),
+      'hoverBorderColor': var(--sapField_WarningColor),
+      'hoverBoxShadow':  var(--fdInput_Warning_Box_Shadow_Hover),
+      'focusOutlineColor': var(--fdInput_Warning_Outline_Color)
+    ),
+    'alert': (
+      'background': var(--sapField_WarningBackgroundStyle),
+      'backgroundColor': var(--sapField_WarningBackground),
+      'border': var(--sapField_WarningColor) var(--sapField_WarningBorderWidth) var(--sapField_WarningBorderStyle),
+      'hoverBackground': var(--fdInput_Warning_Background_Color_Hover),
+      'hoverBorderColor': var(--sapField_WarningColor),
+      'hoverBoxShadow':  var(--fdInput_Warning_Box_Shadow_Hover),
+      'focusOutlineColor': var(--fdInput_Warning_Outline_Color)
+    ),
+    'information': (
+      'background': var(--sapField_InformationBackgroundStyle),
+      'backgroundColor': var(--sapField_InformationBackground),
+      'border':  var(--sapField_InformationColor) var(--sapField_InformationBorderWidth) var(--sapField_InformationBorderStyle),
+      'hoverBackground': var(--fdInput_Information_Background_Color_Hover),
+      'hoverBorderColor': var(--sapField_InformationColor),
+      'hoverBoxShadow':  var(--fdInput_Information_Box_Shadow_Hover),
+      'focusOutlineColor': var(--fdInput_Information_Outline_Color)
+    )
+  );
+
+  @each $set-name, $set-props in $fd-input-states {
+    &.is-#{$set-name} {
+      background: map_get($set-props, "background");
+      background-color: map_get($set-props, "backgroundColor");
+      border: map_get($set-props, "border");
+
+      @include fd-hover() {
+        background-color: map_get($set-props, "hoverBackground");
+        border-color: map_get($set-props, "hoverBorderColor");
+        box-shadow: map_get($set-props, "hoverBoxShadow");
+      }
+
+      @include fd-focus() {
+        background: var(--sapField_Focus_Background);
+        outline-color: map_get($set-props, "focusOutlineColor");
+
+        @include fd-hover() {
+          box-shadow: none;
+        }
+      }
+
+      @if $hasFocusWithin {
+        @include fd-focus-within() {
+          background: var(--sapField_Focus_Background);
+          outline-color: map_get($set-props, "focusOutlineColor");
+
+          @include fd-hover() {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.is-error,
+  &.is-warning,
+  &.is-alert {
+    font-style: var(--fdInput_State_Text_Style);
+    font-weight: var(--fdInput_State_Font_Weight);
+
+    &::placeholder {
+      font-weight: var(--fdInput_State_Font_Weight);
+    }
+  }
+
+  &.is-error,
   &.is-warning,
   &.is-alert,
-  &.is-information,
-  &.is-error {
-    border-width: $fd-form-border-thick-width;
-    border-style: var(--fdInput_State_Border_Type);
-
+  &.is-information {
     @include fd-focus() {
-      box-shadow: none;
-      outline-offset: -0.25rem;
+      outline-offset: var(--fdInput_Outline_Offset_States);
+    }
+  }
+
+  &.is-error {
+    &::placeholder {
+      color: var(--sapField_TextColor);
     }
   }
 
   @include fd-disabled() {
+    pointer-events: none;
     opacity: var(--sapContent_DisabledOpacity);
 
     &::placeholder {
@@ -108,14 +195,98 @@
   }
 
   @include fd-readonly() {
-    background-color: rgba(242, 242, 242, 0.5); // Hardcoded for IE11 Purposes, there is not callback for RGBA.
-    background-color: var(--sapField_ReadOnly_Background);
     border-color: var(--sapField_ReadOnly_BorderColor);
+    border-radius: var(--fdInput_ReadOnly_Border_Radius);
+    background: var(--sapField_ReadOnly_BackgroundStyle);
+    background-color: var(--sapField_ReadOnly_Background);
 
     &::placeholder {
       color: transparent;
     }
+
+    @include fd-hover() {
+      box-shadow: none;
+    }
+
+    @include fd-focus() {
+      background: var(--sapField_Focus_Background);
+      border-radius: var(--sapField_BorderCornerRadius);
+    }
   }
+}
+
+@mixin fd-input-group-button-overwrite() {
+  $fd-input-group-button-states: (
+    'success': (
+      'activeColor': var(--fdInput_Group_Button_Success_Active_Text_Color),
+      'boxShadow': var(--fdInput_Group_Button_Success_Active_Box_Shadow)
+    ),
+    'error': (
+      'activeColor': var(--fdInput_Group_Button_Error_Active_Text_Color),
+      'boxShadow': var(--fdInput_Group_Button_Error_Active_Box_Shadow)
+    ),
+    'warning': (
+      'activeColor': var(--fdInput_Group_Button_Warning_Active_Text_Color),
+      'boxShadow': var(--fdInput_Group_Button_Warning_Active_Box_Shadow)
+    ),
+    'alert': (
+      'activeColor': var(--fdInput_Group_Button_Warning_Active_Text_Color),
+      'boxShadow': var(--fdInput_Group_Button_Warning_Active_Box_Shadow)
+    ),
+    'information': (
+      'activeColor': var(--fdInput_Group_Button_Information_Active_Text_Color),
+      'boxShadow': var(--fdInput_Group_Button_Information_Active_Box_Shadow)
+    )
+  );
+
+  .#{$block}__button {
+    @include fd-ellipsis();
+
+    border: none;
+    z-index: auto !important;
+    position: static !important;
+    border-radius: var(--fdInput_Group_Button_Border_Raduis);
+    background: var(--fdInput_Group_Button_Background);
+    color: var(--fdInput_Group_Button_Text_Color);
+
+    &::before {
+      display: none !important;
+    }
+
+    @include fd-hover() {
+      background: var(--fdInput_Group_Button_Hover_Background);
+      color: var(--fdInput_Group_Button_Hover_Text_Color);
+      box-shadow: var(--fdInput_Group_Button_Box_Shadow);
+    }
+
+    @include fd-active() {
+      background: var(--fdInput_Group_Button_Active_Background);
+      color: var(--fdInput_Group_Button_Active_Text_Color);
+      box-shadow: var(--fdInput_Group_Button_Box_Shadow);
+    }
+  }
+
+  @each $set-name, $set-props in $fd-input-group-button-states {
+    &.is-#{$set-name} {
+
+      .#{$block}__button {
+        @include fd-hover() {
+          box-shadow: map_get($set-props, "boxShadow");
+        }
+
+        @include fd-active() {
+          color: map_get($set-props, "activeColor");
+          box-shadow: map_get($set-props, "boxShadow");
+        }
+      }
+    }
+  }
+}
+
+@mixin fd-input-field-nested-reset() {
+  box-shadow: none;
+  background: none;
+  background-color: transparent;
 }
 
 @mixin fd-form-base {
@@ -143,11 +314,11 @@
     background-color: var(--sapSelectedColor);
   }
   // states
-  @include fd-form-states();
+  @include fd-input-field-states();
 }
 
 @mixin fd-form-text() {
-  @include fd-form-base();
+  // @include fd-form-base();
 
   padding-left: 0.75rem;
   padding-right: 0.75rem;

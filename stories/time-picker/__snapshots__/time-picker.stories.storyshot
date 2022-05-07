@@ -34,7 +34,7 @@ exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
           
                 
           <div
-            class="fd-popover__control"
+            class="fd-popover__control is-expanded"
           >
             
                     
@@ -466,7 +466,7 @@ exports[`Storyshots Patterns/Time Picker Cozy And Compact Mode 1`] = `
           
                 
           <div
-            class="fd-popover__control"
+            class="fd-popover__control is-expanded"
           >
             
                     
@@ -940,7 +940,7 @@ exports[`Storyshots Patterns/Time Picker Tablet Mode 1`] = `
       
         
       <div
-        class="fd-popover__control"
+        class="fd-popover__control is-expanded"
       >
         
             

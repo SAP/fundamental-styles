@@ -1515,7 +1515,6 @@ exports[`Storyshots Components/Select Form item 1`] = `
       >
         Choose an option
       </label>
-      <br />
       
         
       <div

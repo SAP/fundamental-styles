@@ -33,11 +33,6 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
           aria-haspopup="true"
           class="fd-popover__control"
           id="ansioda7dh"
-          onclick="
-                    toggleElAttrs('amsfiaufuaskhjd', ['aria-hidden']);
-                    toggleElAttrs('ansioda7dh', ['aria-expanded']);
-                    toggleElAttrs('ansid87arfgj', ['aria-expanded']);
-                "
         >
           
                 

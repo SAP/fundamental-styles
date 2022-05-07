@@ -23,10 +23,6 @@ $fd-file-uploader-padding: 0.25rem;
       color: var(--sapTextColor);
     }
 
-    &:focus {
-      outline: none;
-    }
-
     @include fd-rtl() {
       margin-left: $fd-file-uploader-padding;
       margin-right: 0;

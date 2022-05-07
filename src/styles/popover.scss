@@ -44,8 +44,13 @@ $block: #{$fd-namespace}-popover;
       margin-bottom: 0;
     }
 
-    &.is-expanded {
+    &.is-expanded,
+    &[aria-expanded="true"] {
       z-index: 3;
+
+      .#{$fd-namespace}-input-group {
+        margin-bottom: 0;
+      }
     }
 
     @include fd-disabled() {
