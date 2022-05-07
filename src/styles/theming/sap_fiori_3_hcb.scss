@@ -431,4 +431,13 @@
   --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
   --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);
   --fdObject_List_Number_Font_Size: 1.375rem;
+
+  /** Tool Header **/
+  --fdTool_Header_Height: 2.75rem;
+  --fdTool_Header_Padding: 0 0.5rem 0 1rem;
+  --fdTool_Header_Menu_Padding: 0 0.5rem;
+  --fdTool_Header_Box_Shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
+  --fdTool_Header_Elements_Right_Margin: 0.5rem;
+  --fdTool_Header_Logo_Height: 1.625rem;
+  --fdTool_Header_Product_Name_Font-Size: var(--sapFontHeader5Size);
 }

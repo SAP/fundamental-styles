@@ -436,6 +436,15 @@
   --fdObject_List_Title_Font_Weight: bolder;
   --fdObject_List_Number_Font_Size: 1.25rem;
 
+  /** Tool Header **/
+  --fdTool_Header_Height: 3.5rem;
+  --fdTool_Header_Padding: 0 1.5rem;
+  --fdTool_Header_Menu_Padding: 0 1.5rem 0 0.75rem;
+  --fdTool_Header_Box_Shadow: var(--sapContent_Shadow0);
+  --fdTool_Header_Elements_Right_Margin: 0.375rem;
+  --fdTool_Header_Logo_Height: 2rem;
+  --fdTool_Header_Product_Name_Font-Size: 1.125rem;
+
   /** BTP Colors **/
   --btp-Blue1: #8fd4ff;
   --btp-Blue2: #7eccff;
