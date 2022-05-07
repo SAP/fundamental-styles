@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.61...v0.24.0-rc.62) (2022-05-07)
+
+
+### Features
+
+* **styles:** migrate input controls to Horizon theme ([#3386](https://github.com/SAP/fundamental-styles/issues/3386)) ([f91117d](https://github.com/SAP/fundamental-styles/commit/f91117d345010289cad46903c7d93aaccb33ee18))
+
 ## [0.24.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.60...v0.24.0-rc.61) (2022-05-07)
 
 
