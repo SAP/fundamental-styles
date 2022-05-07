@@ -156,12 +156,7 @@ export const AsFormItem = () => `<div style="height:700px">
         <label for="comboboxAsFormItem" class="fd-form-label">Combobox as a form item</label>
         <div class="fd-popover">
             <div class="fd-popover__control" aria-controls="amsfiaufuaskhjd" aria-expanded="true" aria-haspopup="true"
-                id="ansioda7dh"
-                onclick="
-                    toggleElAttrs('amsfiaufuaskhjd', ['aria-hidden']);
-                    toggleElAttrs('ansioda7dh', ['aria-expanded']);
-                    toggleElAttrs('ansid87arfgj', ['aria-expanded']);
-                ">
+                id="ansioda7dh">
                 <div class="fd-input-group fd-input-group--control">
                     <input type="text" class="fd-input fd-input-group__input" id="comboboxAsFormItem" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--button">

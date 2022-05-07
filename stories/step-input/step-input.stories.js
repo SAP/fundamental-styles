@@ -240,13 +240,117 @@ export const Focused = () => `<label class="fd-form-label" for="step-20">Focused
                 <i class="sap-icon--add"></i>
         </button>
 </div>
+
+<br><br>
+<label class="fd-form-label" for="step-5">Success Step Input (Focused)</label><br />
+<div class="fd-step-input is-success is-focus">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-5', 'down');"
+            tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
+        </button>
+    <input class="
+            fd-input
+            fd-input--no-number-spinner
+            fd-step-input__input
+    " id="step-5" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-5', 'up');"
+            tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
+        </button>
+</div>
+
+<br><br>
+<label class="fd-form-label" for="step-6">Information Step Input (Focused)</label><br />
+<div class="fd-step-input is-information is-focus">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-6', 'down');"
+            tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
+        </button>
+    <input class="
+            fd-input
+            fd-input--no-number-spinner
+            fd-step-input__input
+    " id="step-6" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-6', 'up');"
+            tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
+        </button>
+</div>
+<br><br>
+<label class="fd-form-label" for="step-7">Error Step Input (Focused)</label><br />
+<div class="fd-step-input is-error is-focus">
+        <button aria-label="Step down" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-7', 'down');"
+            tabindex="-1" type="button">
+                <i class="sap-icon--less"></i>
+        </button>
+    <input class="
+            fd-input
+            fd-input--no-number-spinner
+            fd-step-input__input
+    " id="step-7" type="number" value="0">
+        <button aria-label="Step up" class="
+            fd-button
+            fd-button--transparent
+            fd-step-input__button"
+            onclick="stepInputValue('step-7', 'up');"
+            tabindex="-1" type="button">
+                <i class="sap-icon--add"></i>
+        </button>
+</div>
+
+<br><br>
+
+<label class="fd-form-label" for="step-8">Warning Step Input (Focused)</label><br />
+<div class="fd-step-input is-warning is-focus">
+    <button aria-label="Step down" class="
+        fd-button
+        fd-button--transparent
+        fd-step-input__button"
+        onclick="stepInputValue('step-8', 'down');"
+        tabindex="-1" type="button">
+            <i class="sap-icon--less"></i>
+    </button>
+    <input class="
+        fd-input
+        fd-input--no-number-spinner
+        fd-step-input__input
+    " id="step-8" type="number" value="0">
+    <button aria-label="Step up" class="
+        fd-button
+        fd-button--transparent
+        fd-step-input__button"
+        onclick="stepInputValue('step-8', 'up');"
+        tabindex="-1" type="button">
+            <i class="sap-icon--add"></i>
+    </button>
+</div>
 `;
 
 Focused.parameters = {
     docs: {
         iframeHeight: 300,
         description: {
-            story: `By default, step input has a built-in focused state, however; it is not supported by IE11. To enable the focused state on IE11, add the \`is-focus\` class to the main element.
+            story: `To enable the focused state add the \`.is-focus\` class to the main element with class \`.fd-step-input\`.
         `
         }
     }

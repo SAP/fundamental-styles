@@ -7,6 +7,8 @@
 @import "./common/scrollbar/sap_horizon";
 @import "./common/card/sap_horizon";
 @import "./common/splitter/sap_horizon";
+@import "./common/input/sap_horizon";
+@import "./common/input-group/sap_horizon";
 
 :root {
   /* Switch */
@@ -224,11 +226,13 @@
   --fdInput_State_Text_Style: normal;
   --fdInput_State_Font_Weight: normal;
   --fdInput_State_Border_Type: solid;
-  --fdPlaceholder_Text_Style: normal;
+  --fdPlaceholder_Font_Style: italic;
+  --fdInput_Outline_Offset: -0.125rem;
 
   /* Form Message */
   --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
   --fdMessage_Border: none;
+  --fdMessage_Border_Radius: var(--sapPopover_BorderCornerRadius);
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;

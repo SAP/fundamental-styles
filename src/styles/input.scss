@@ -1,29 +1,11 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-input
-*/
 $block: #{$fd-namespace}-input;
 
 .#{$block} {
-  @include fd-form-text();
+  @include fd-input-field-base();
   @include fd-reset-webkit-input-buttons();
-
-  min-width: 2.75rem;
-  width: 100%;
-  height: $fd-form-input-height;
-  margin-top: $fd-form-input-margin;
-  margin-bottom: $fd-form-input-margin;
-  padding: 0 0.625rem;
-  z-index: 1;
-  cursor: text;
-  overflow: hidden;
-  text-shadow: var(--fdInput_Text_Shadow);
-
-  &::-ms-clear {
-    display: none;
-  }
 
   &[aria-expanded="false"] {
     z-index: 0;
@@ -38,12 +20,7 @@ $block: #{$fd-namespace}-input;
   }
 
   &--compact {
-    min-width: 2rem;
-    height: $fd-form-input-height--compact;
-    margin-top: $fd-form-input-margin--compact;
-    margin-bottom: $fd-form-input-margin--compact;
-    padding: 0 0.5rem;
-    box-sizing: border-box;
+    @include fd-input-field-base-compact();
   }
 
   &--no-number-spinner {
@@ -59,4 +36,6 @@ $block: #{$fd-namespace}-input;
   &.right-align {
     text-align: right;
   }
+
+  @include fd-input-field-states();
 }

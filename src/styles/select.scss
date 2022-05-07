@@ -38,34 +38,33 @@ $block: #{$fd-namespace}-select;
   text-shadow: var(--fdSelect_Text_Shadow);
 
   &__control {
-    @include fd-reset();
-    @include fd-form-base();
-    @include fd-form-states();
-    @include fd-fiori-pseudo-focus(-0.1875rem);
+    @include fd-input-field-base();
+    // @include fd-form-base();
+    @include fd-input-field-states();
 
     @include fd-flex-center() {
       justify-content: space-between;
     }
 
-    @include fd-hover() {
-      .#{$block}__button {
-        @include fd-select-button-border();
+    // @include fd-hover() {
+    //   .#{$block}__button {
+    //     @include fd-select-button-border();
 
-        background-color: var(--sapButton_Lite_Hover_Background);
-      }
-    }
+    //     background-color: var(--sapButton_Lite_Hover_Background);
+    //   }
+    // }
 
-    @include fd-focus() {
-      outline: none;
-    }
+    // @include fd-focus() {
+    //   outline: none;
+    // }
 
-    @include fd-expanded() {
-      @include fd-select-button-active();
-    }
+    // @include fd-expanded() {
+    //   @include fd-select-button-active();
+    // }
 
-    @include fd-active() {
-      @include fd-select-button-active();
-    }
+    // @include fd-active() {
+    //   @include fd-select-button-active();
+    // }
 
     @include fd-rtl() {
       text-align: right;
@@ -79,13 +78,17 @@ $block: #{$fd-namespace}-select;
     height: $fd-form-input-height;
     text-align: left;
 
+    &[aria-expanded="true"] {
+      margin-bottom: 0;
+    }
+
     .#{$block}__button {
       @include fd-inline-flex-center();
       @include fd-set-margin-left(0.25rem);
 
-      border: none;
-      border-radius: 0;
-      color: var(--sapContent_IconColor);
+      // border: none;
+      // border-radius: 0;
+      // color: var(--sapContent_IconColor);
     }
 
     &.is-readonly {

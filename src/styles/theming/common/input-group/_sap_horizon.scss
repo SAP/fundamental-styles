@@ -1,0 +1,19 @@
+:root {
+  --fdInput_Group_Button_Border_Raduis: var(--sapField_BorderCornerRadius);
+  --fdInput_Group_Button_Background: transparent;
+  --fdInput_Group_Button_Text_Color: var(--sapButton_TextColor);
+  --fdInput_Group_Button_Box_Shadow: var(--sapContent_Interaction_Shadow);
+  --fdInput_Group_Button_Hover_Background: transparent;
+  --fdInput_Group_Button_Hover_Text_Color: var(--sapButton_TextColor);
+  --fdInput_Group_Button_Active_Background: transparent;
+  --fdInput_Group_Button_Active_Text_Color: var(--sapButton_Selected_TextColor);
+  --fdInput_Group_Button_Success_Active_Text_Color: var(--sapButton_Accept_Selected_TextColor);
+  --fdInput_Group_Button_Success_Active_Box_Shadow: var(--sapContent_Positive_Shadow);
+  --fdInput_Group_Button_Error_Active_Text_Color: var(--sapButton_Reject_Selected_TextColor);
+  --fdInput_Group_Button_Error_Active_Box_Shadow: var(--sapContent_Negative_Shadow);
+  --fdInput_Group_Button_Warning_Active_Text_Color: var(--sapButton_Attention_Selected_TextColor);
+  --fdInput_Group_Button_Warning_Active_Box_Shadow: var(--sapContent_Critical_Shadow);
+  --fdInput_Group_Button_Information_Active_Text_Color: var(--sapButton_Selected_TextColor);
+  --fdInput_Group_Button_Information_Active_Box_Shadow: var(--sapContent_Informative_Shadow);
+  --fdInput_Outline_Offset_Focus_Within: -0.125rem;
+}
