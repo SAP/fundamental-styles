@@ -9,8 +9,12 @@ $block: #{$fd-namespace}-tokenizer;
   $fd-tokenizer-input-width: 3rem;
   $fd-tokenizer-input-width-compact: 2rem;
 
+  @include fd-input-field-base();
+
   width: 100%;
+  height: auto;
   display: flex;
+  padding: 0;
   align-items: center;
 
   &__inner {
@@ -63,6 +67,12 @@ $block: #{$fd-namespace}-tokenizer;
       outline: none;
       box-shadow: none;
       border: none;
+      background: transparent;
+    }
+
+    @include fd-hover() {
+      box-shadow: none;
+      background: transparent;
     }
   }
 

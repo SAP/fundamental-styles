@@ -24,7 +24,7 @@ export const CozyAndCompactMode = () => `<div class="fd-container" style="height
         <div class="fd-col fd-col--6">
             <label for="cozyTimepicker">Cozy Timepicker</label><br />
             <div class="fd-popover fd-popover--no-arrow">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control is-expanded">
                     <div class="fd-input-group">
                         <input
                             onfocus="
@@ -127,7 +127,7 @@ export const CozyAndCompactMode = () => `<div class="fd-container" style="height
         <div class="fd-col fd-col--6">
             <label class="fd-form-label" for="compactTimepicker">Compact Timepicker</label><br />
             <div class="fd-popover fd-popover--no-arrow">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control is-expanded">
                     <div class="fd-input-group">
                         <input
                             onfocus="
@@ -253,7 +253,7 @@ It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-bu
 export const TabletMode = () => `<div style="min-height: 580px;">
     <label for="tabletTimepicker">Cozy Timepicker</label><br />
     <div class="fd-popover fd-popover--no-arrow">
-        <div class="fd-popover__control">
+        <div class="fd-popover__control is-expanded">
             <div class="fd-input-group">
                 <input
                   onfocus="

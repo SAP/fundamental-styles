@@ -170,6 +170,15 @@
     }
   }
 
+  &.is-error,
+  &.is-warning,
+  &.is-alert,
+  &.is-information {
+    @include fd-focus() {
+      outline-offset: var(--fdInput_Outline_Offset_States);
+    }
+  }
+
   &.is-error {
     &::placeholder {
       color: var(--sapField_TextColor);
@@ -234,7 +243,6 @@
     @include fd-ellipsis();
 
     border: none;
-    width: 100%;
     z-index: auto !important;
     position: static !important;
     border-radius: var(--fdInput_Group_Button_Border_Raduis);
@@ -304,7 +312,7 @@
 }
 
 @mixin fd-form-text() {
-  @include fd-form-base();
+  // @include fd-form-base();
 
   padding-left: 0.75rem;
   padding-right: 0.75rem;
