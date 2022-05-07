@@ -283,6 +283,12 @@
   }
 }
 
+@mixin fd-input-field-nested-reset() {
+  box-shadow: none;
+  background: none;
+  background-color: transparent;
+}
+
 @mixin fd-form-base {
   @include fd-reset();
   @include fd-ellipsis();

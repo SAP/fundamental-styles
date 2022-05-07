@@ -20,7 +20,7 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
         
     
         <div
-          class="fd-popover__control"
+          class="fd-popover__control is-expanded"
         >
           
       
@@ -980,7 +980,7 @@ exports[`Storyshots Patterns/Date Picker Default And Compact Sizes 1`] = `
         
     
         <div
-          class="fd-popover__control"
+          class="fd-popover__control is-expanded"
         >
           
       
@@ -4165,7 +4165,7 @@ exports[`Storyshots Patterns/Date Picker Today Navigation Button 1`] = `
       
   
       <div
-        class="fd-popover__control"
+        class="fd-popover__control is-expanded"
       >
         
     
@@ -5160,7 +5160,7 @@ exports[`Storyshots Patterns/Date Picker Today Selection Button 1`] = `
       
   
       <div
-        class="fd-popover__control"
+        class="fd-popover__control is-expanded"
       >
         
   

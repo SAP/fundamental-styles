@@ -15,7 +15,13 @@ $block: #{$fd-namespace}-tokenizer;
   height: auto;
   display: flex;
   padding: 0;
+  margin: 0;
+  border: none;
   align-items: center;
+
+  @include fd-hover() {
+    box-shadow: none;
+  }
 
   &__inner {
     @include fd-remove-scrollbar();
@@ -46,7 +52,7 @@ $block: #{$fd-namespace}-tokenizer;
     cursor: pointer;
   }
 
-  &__input {
+  .#{$block}__input {
     background: transparent;
 
     &.#{$fd-namespace}-input {
@@ -64,15 +70,14 @@ $block: #{$fd-namespace}-tokenizer;
     }
 
     @include fd-focus() {
-      outline: none;
-      box-shadow: none;
+      @include fd-input-field-nested-reset();
+
       border: none;
-      background: transparent;
+      outline: none;
     }
 
     @include fd-hover() {
-      box-shadow: none;
-      background: transparent;
+      @include fd-input-field-nested-reset();
     }
   }
 
@@ -113,6 +118,16 @@ $block: #{$fd-namespace}-tokenizer;
     background-color: var(--sapField_ReadOnly_Background);
     .#{$block}__inner {
       overflow: visible;
+    }
+
+    .#{$block}__input {
+      @include fd-readonly() {
+        @include fd-input-field-nested-reset();
+
+        @include fd-focus() {
+          @include fd-input-field-nested-reset();
+        }
+      }
     }
   }
 

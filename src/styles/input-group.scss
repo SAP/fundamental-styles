@@ -107,4 +107,18 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   &.is-readonly {
     overflow: visible;
   }
+
+  .#{$fd-namespace}-tokenizer {
+    @include fd-input-field-nested-reset();
+
+    @include fd-hover () {
+      @include fd-input-field-nested-reset();
+    }
+
+    @include fd-focus () {
+      @include fd-input-field-nested-reset();
+
+      outline: none;
+    }
+  }
 }
