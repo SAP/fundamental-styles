@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.60...v0.24.0-rc.61) (2022-05-07)
+
+
+### Features
+
+* **styles:** horizon family delta for link [ci visual] ([#3375](https://github.com/SAP/fundamental-styles/issues/3375)) ([2f18819](https://github.com/SAP/fundamental-styles/commit/2f1881934c473cf300e35f11184980d5cf3e94dd))
+
 ## [0.24.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.59...v0.24.0-rc.60) (2022-05-06)
 
 
