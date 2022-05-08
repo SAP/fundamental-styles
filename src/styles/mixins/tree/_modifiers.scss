@@ -1,60 +1,3 @@
-@mixin fd-tree-compact($block) {
-  &--compact {
-    .#{$block}__item {
-      &[aria-level="1"] {
-        > .#{$block}__item-container {
-          padding-left: $fd-tree-expander-size-compact;
-
-          @include fd-rtl() {
-            padding-left: $fd-tree-item-padding-right;
-            padding-right: $fd-tree-expander-size-compact;
-          }
-        }
-      }
-
-      &-container {
-        min-height: $fd-tree-item-height-compact;
-      }
-    }
-
-    .#{$block}__content {
-      min-height: $fd-tree-item-height-compact;
-
-      &--wrap {
-        .#{$block}__text {
-          line-height: 1.4;
-        }
-      }
-    }
-
-    .#{$block}__text {
-      font-size: var(--sapFontSize);
-      line-height: $fd-tree-item-height-compact; // IE11 fix for vertical alignment
-    }
-
-    .#{$block}__expander {
-      min-height: $fd-tree-expander-size-compact;
-      min-width: $fd-tree-expander-size-compact;
-      margin-left: $fd-tree-expander-size-negative-compact;
-
-      @include fd-icon-selector() {
-        font-size: var(--sapFontSmallSize);
-      }
-
-      @include fd-rtl() {
-        margin-left: 0;
-        margin-right: $fd-tree-expander-size-negative-compact;
-      }
-    }
-
-    .#{$block}__icon {
-      min-height: $fd-tree-icon-size-compact;
-      line-height: $fd-tree-icon-size-compact;
-      font-size: 1rem;
-    }
-  }
-}
-
 @mixin fd-tree-borderless($block) {
   &--no-border {
     .#{$block}__item {
@@ -76,12 +19,12 @@
     .#{$block}__item {
       &[aria-level="1"] {
         > .#{$block}__item-container {
-          @extend %fd-tree-item-with-states;
+          @include fd-tree-item-states();
         }
       }
 
       &-container {
-        @extend %fd-tree-item-with-states;
+        @include fd-tree-item-states();
       }
     }
   }
