@@ -123,7 +123,7 @@
   --fdCheckbox_Warning_State_Shadow: none;
   --fdCheckbox_Success_State_Shadow: none;
   --fdCheckbox_Information_State_Shadow: none;
-  --fdCheckbox_State_Hover_Background: inherit;
+  --fdCheckbox_State_Hover_Background: var(--sapSelectedColor);
   --fdCheckbox_Readonly_Border_Width: var(--sapField_BorderWidth);
   --fdCheckbox_Readonly_Border_Type: solid;
   --fdCheckbox_Warning_Error_Information_Border_Style: dashed;
