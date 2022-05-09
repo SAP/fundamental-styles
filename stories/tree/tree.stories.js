@@ -189,10 +189,10 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
                 <i class="fd-tree__icon sap-icon--e-care" role="presentation"></i>
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <button aria-label="Edit button" class="fd-button fd-button--transparent">
+            <button aria-label="Edit button" class="fd-button fd-button--transparent fd-tree__button">
                 <i class="sap-icon--edit" role="presentation"></i>
             </button>
-            <button aria-label="Delete button" class="fd-button fd-button--transparent">
+            <button aria-label="Delete button" class="fd-button fd-button--transparent fd-tree__button">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
         </div>
@@ -206,10 +206,10 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
                         <i class="fd-tree__icon sap-icon--account" role="presentation"></i>
                         <span class="fd-tree__text">Level 2</span>
                     </div>
-                    <button aria-label="Edit button" class="fd-button fd-button--transparent">
+                    <button aria-label="Edit button" class="fd-button fd-button--transparent fd-tree__button">
                         <i class="sap-icon--edit" role="presentation"></i>
                     </button>
-                    <button aria-label="Delete button" class="fd-button fd-button--transparent">
+                    <button aria-label="Delete button" class="fd-button fd-button--transparent fd-tree__button">
                         <i class="sap-icon--decline" role="presentation"></i>
                     </button>
                 </div>
@@ -223,10 +223,10 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
                                 <i class="fd-tree__icon sap-icon--product" role="presentation"></i>
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
-                            <button aria-label="Edit button" class="fd-button fd-button--transparent">
+                            <button aria-label="Edit button" class="fd-button fd-button--transparent fd-tree__button">
                                 <i class="sap-icon--edit" role="presentation"></i>
                             </button>
-                            <button aria-label="Delete button" class="fd-button fd-button--transparent">
+                            <button aria-label="Delete button" class="fd-button fd-button--transparent fd-tree__button">
                                 <i class="sap-icon--decline" role="presentation"></i>
                             </button>
                         </div>
@@ -237,10 +237,10 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
                                 <i class="fd-tree__icon sap-icon--history" role="presentation"></i>
                                 <span class="fd-tree__text">Level 3</span>
                             </div>
-                            <button aria-label="Edit button" class="fd-button fd-button--transparent">
+                            <button aria-label="Edit button" class="fd-button fd-button--transparent fd-tree__button">
                                 <i class="sap-icon--edit" role="presentation"></i>
                             </button>
-                            <button aria-label="Delete button" class="fd-button fd-button--transparent">
+                            <button aria-label="Delete button" class="fd-button fd-button--transparent fd-tree__button">
                                 <i class="sap-icon--decline" role="presentation"></i>
                             </button>
                         </div>
@@ -253,10 +253,10 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
                         <i class="fd-tree__icon sap-icon--competitor" role="presentation"></i>
                         <span class="fd-tree__text">Level 2</span>
                     </div>
-                    <button aria-label="Edit button" class="fd-button fd-button--transparent">
+                    <button aria-label="Edit button" class="fd-button fd-button--transparent fd-tree__button">
                         <i class="sap-icon--edit" role="presentation"></i>
                     </button>
-                    <button aria-label="Delete button" class="fd-button fd-button--transparent">
+                    <button aria-label="Delete button" class="fd-button fd-button--transparent fd-tree__button">
                         <i class="sap-icon--decline" role="presentation"></i>
                     </button>
                 </div>
@@ -269,10 +269,10 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
                 <i class="fd-tree__icon sap-icon--batch-payments" role="presentation"></i>
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <button aria-label="Edit button" class="fd-button fd-button--transparent">
+            <button aria-label="Edit button" class="fd-button fd-button--transparent fd-tree__button">
                 <i class="sap-icon--edit" role="presentation"></i>
             </button>
-            <button aria-label="Delete button" class="fd-button fd-button--transparent">
+            <button aria-label="Delete button" class="fd-button fd-button--transparent fd-tree__button">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
         </div>
@@ -283,10 +283,10 @@ export const Borderless = () => `<ul role="tree" aria-label="Root Tree" id="TREE
                 <i class="fd-tree__icon sap-icon--favorite" role="presentation"></i>
                 <span class="fd-tree__text">Level 1</span>
             </div>
-            <button aria-label="Edit button" class="fd-button fd-button--transparent">
+            <button aria-label="Edit button" class="fd-button fd-button--transparent fd-tree__button">
                 <i class="sap-icon--edit" role="presentation"></i>
             </button>
-            <button aria-label="Delete button" class="fd-button fd-button--transparent">
+            <button aria-label="Delete button" class="fd-button fd-button--transparent fd-tree__button">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
         </div>
