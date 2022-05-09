@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.64...v0.24.0-rc.65) (2022-05-09)
+
+
+### Bug Fixes
+
+* **styles:** minor nested list border bug [ci-visual] ([#3376](https://github.com/SAP/fundamental-styles/issues/3376)) ([7766853](https://github.com/SAP/fundamental-styles/commit/7766853f0ff7bffef0853ab3d4c7dbd85266dffb))
+
 ## [0.24.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.63...v0.24.0-rc.64) (2022-05-09)
 
 
