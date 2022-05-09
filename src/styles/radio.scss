@@ -25,7 +25,7 @@ $block: #{$fd-namespace}-radio;
 
       @include fd-hover() {
         &::before {
-          background-color: var(--sapField_Hover_Background);
+          background-color: var(--fdRadio_Hover_Background);
           box-shadow: $hover-shadow;
         }
 
@@ -90,7 +90,7 @@ $block: #{$fd-namespace}-radio;
 
     @include fd-hover() {
       &::before {
-        background-color: var(--sapField_Hover_Background);
+        background-color: var(--fdRadio_Hover_Background);
         border-width: var(--sapField_BorderWidth);
         border-color: var(--sapField_Hover_BorderColor);
         box-shadow: var(--fdRadio_Hover_Box_Shadow);
