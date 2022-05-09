@@ -71,8 +71,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     &-container {
       @include fd-reset();
       @include fd-flex-vertical-center();
-
-      position: relative;
+      @include fd-set-padding-right($fd-tree-item-padding-right);
 
       @include fd-selected() {
         @include fd-list-item-base-selected-state();
@@ -86,9 +85,9 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
         bottom: 0.0625rem;
       }
 
+      position: relative;
       width: 100%;
       min-height: var(--fdTree_Item_Height);
-      padding-right: $fd-tree-item-padding-right;
       background: var(--sapList_AlternatingBackground);
       border-bottom: $fd-tree-item-transparent-border-bottom;
 
