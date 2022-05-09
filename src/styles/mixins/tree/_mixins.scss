@@ -1,0 +1,158 @@
+$fd-tree-highlight-box-shadow: inset 0.375rem 0 0 0 !default;
+$fd-tree-highlight-box-shadow-rtl: inset -0.375rem 0 0 0 !default;
+$fd-tree-navigated-box-shadow: inset -0.1875rem 0 0 0 var(--sapSelectedColor) !default;
+$fd-tree-navigated-box-shadow-rtl: inset 0.1875rem 0 0 0 var(--sapSelectedColor) !default;
+
+@mixin fd-tree-item-states() {
+  cursor: pointer;
+  position: relative;
+
+  @include fd-hover() {
+    @include fd-list-item-hover-state();
+  }
+
+  @include fd-selected() {
+    @include fd-list-item-base-selected-state();
+  }
+
+  @include fd-active() {
+    @include fd-list-item-base-active-state();
+  }
+
+  @include fd-list-fake-outline() {
+    bottom: 0.625rem;
+  }
+
+  @include fd-active() {
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+
+    .#{$block}__text,
+    .#{$button} {
+      color: var(--sapList_Active_TextColor);
+    }
+  }
+}
+
+@mixin fd-tree-indent-item($level, $padding) {
+  .#{$block}__item[aria-level="#{$level}"] {
+    --fdTree_Item_Level_Spacing: #{$padding};
+  }
+}
+
+@mixin fd-tree-expand-indents() {
+  .#{$block}__item {
+    .#{$block}__item-container {
+      .#{$block}__expander {
+        @include fd-set-margin-left(var(--fdTree_Item_Level_Spacing));
+      }
+
+      .#{$block}__content,
+      .#{$fd-namespace}-form-item:first-child {
+        @include fd-set-margin-left(calc(var(--fdTree_Item_Level_Spacing, 0rem) + var(--fdTree_Expander_Size)));
+      }
+
+      .#{$block}__expander + .#{$block}__content,
+      .#{$fd-namespace}-form-item + .#{$block}__content {
+        @include fd-set-margin-left(0);
+      }
+    }
+  }
+
+  &.#{$block}--independent-multi-selection {
+    .#{$block}__item {
+      .#{$block}__item-container {
+        .#{$fd-namespace}-form-item:first-child {
+          @include fd-set-margin-left(0);
+
+          & + .#{$block}__content {
+            @include fd-set-margin-left(calc(var(--fdTree_Item_Level_Spacing, 0rem) + var(--fdTree_Expander_Size)));
+          }
+        }
+      }
+    }
+  }
+
+  &.expanded-level-1 {
+    @include fd-tree-indent-item(2, 1.5rem);
+  }
+
+  &.expanded-level-2 {
+    @include fd-tree-indent-item(2, 1rem);
+    @include fd-tree-indent-item(3, 2.5rem);
+  }
+
+  &.expanded-level-3,
+  &.expanded-level-4,
+  &.expanded-level-5 {
+    @include fd-tree-indent-item(2, 0.5rem);
+    @include fd-tree-indent-item(3, 1rem);
+    @include fd-tree-indent-item(4, 1.5rem);
+    @include fd-tree-indent-item(5, 2rem);
+    @include fd-tree-indent-item(6, 2.5rem);
+  }
+
+  @for $i from 6 through 12 {
+    &.expanded-level-#{$i} {
+      @for $j from 1 through 12 {
+        $offset: ($j - 1) * 0.25rem;
+
+        @include fd-tree-indent-item($j, $offset);
+      }
+    }
+  }
+  .#{$block}__item-container {
+    .#{$fd-namespace}-form-item:first-child,
+    .#{$block}__expander + .#{$fd-namespace}-form-item {
+      label {
+        margin: 0;
+      }
+    }
+  }
+  .#{$block}__expander + .#{$block}__content {
+    @include fd-set-margin-left(0);
+  }
+}
+
+@mixin fd-tree-highlight-indicator() {
+  .has-highlight-indicator {
+    --fdTree_Item_Highlight_Color: var(--sapInformationBorderColor);
+
+    &--error {
+      --fdTree_Item_Highlight_Color: var(--sapErrorBorderColor);
+    }
+
+    &--warning {
+      --fdTree_Item_Highlight_Color: var(--sapWarningBorderColor);
+    }
+
+    &--success {
+      --fdTree_Item_Highlight_Color: var(--sapSuccessBorderColor);
+    }
+
+    box-shadow: $fd-tree-highlight-box-shadow var(--fdTree_Item_Highlight_Color);
+
+    @include fd-rtl() {
+      box-shadow: $fd-tree-highlight-box-shadow-rtl var(--fdTree_Item_Highlight_Color);
+    }
+
+    @include fd-navigated() {
+      box-shadow: $fd-tree-navigated-box-shadow, $fd-tree-highlight-box-shadow var(--fdTree_Item_Highlight_Color);
+
+      @include fd-rtl() {
+        box-shadow: $fd-tree-navigated-box-shadow-rtl, $fd-tree-highlight-box-shadow-rtl var(--fdTree_Item_Highlight_Color);
+      }
+    }
+  }
+}
+
+@mixin fd-list-item-base-navigated-state() {
+  box-shadow: $fd-tree-navigated-box-shadow;
+
+  @include fd-rtl() {
+    box-shadow: $fd-tree-navigated-box-shadow-rtl;
+  }
+}

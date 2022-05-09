@@ -139,7 +139,7 @@
         }
 
         //set the indeterminate state of checkbox - tristate for checkbox examples
-        var triStateCheckboxes = ['Ai4ez613', 'Ai4ez613i1', 'Ai4ez613i2', 'Ai4ez613i3', 'Ai4ez613i4', 'Ai4ez613i5', 'Ai4ez613i6', 'Ai4ez613i7', 'Ai4ez643', 'Ai4ez613c', 'Ai4ez643c'];
+        var triStateCheckboxes = ['Ai4ez613', 'Ai4ez613i1', 'Ai4ez613i2', 'Ai4ez613i3', 'Ai4ez613i4', 'Ai4ez613i5', 'Ai4ez613i6', 'Ai4ez613i7', 'Ai4ez643', 'Ai4ez613c', 'Ai4ez643c', 'Ai4ez1'];
         for (var i = 0; i < triStateCheckboxes.length; i++) {
             const triStateCheckbox = document.getElementById(triStateCheckboxes[i]);
             if (triStateCheckbox) {
@@ -164,7 +164,7 @@
         observer.observe(document.getElementById('root'), config);
         observer.observe(document.getElementById('docs-root'), config);
     });
-   
+
 
     // display responsive component controls
     const displayControls = document.querySelectorAll('.docs-component--responsive-display__controls');
@@ -375,7 +375,7 @@ function isSpaceOrEnter(event, buttonFn) {
 function toggleNestedListSubmenu(event) {
     let button = event.target;
     let icon = button.children[0];
-    
+
     if(button && button.classList.contains('is-expanded')) {
         icon.classList = 'sap-icon--navigation-right-arrow';
     } else {
@@ -422,7 +422,7 @@ function getNetlifyDrawerIframe() {
 
         const iframes = window.parent.document.getElementsByTagName('iframe');
         let iframe;
-        
+
         for (const key in iframes) {
             if (iframes[key].src?.startsWith('https://app.netlify.com')) {
                 iframe = iframes[key];
