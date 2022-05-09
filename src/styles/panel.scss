@@ -4,11 +4,17 @@
 $block: #{$fd-namespace}-panel;
 
 .#{$block} {
+  --fdPanel_Header_Padding_Start: 0;
+  --fdPanel_Header_Padding_End: 0.5rem;
+  --fdPanel_Header_Height: 2.75rem;
 
-  $fd-panel-header-height: 2.75rem;
-  $fd-panel-compact-header-height: 2.5rem;
-  $fd-panel-header-right-padding: 0.5rem;
-  $fd-panel-header-fixed-left-padding: 1rem;
+  &--fixed {
+    --fdPanel_Header_Padding_Start: 1rem;
+  }
+
+  &--compact {
+    --fdPanel_Header_Height: 2.5rem;
+  }
 
   &,
   &__content,
@@ -26,13 +32,19 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__header {
-    height: $fd-panel-header-height;
-    min-height: $fd-panel-header-height;
-    padding-right: $fd-panel-header-right-padding;
+    height: var(--fdPanel_Header_Height);
+    min-height: var(--fdPanel_Header_Height);
+    padding-right: var(--fdPanel_Header_Padding_End);
+    padding-left: var(--fdPanel_Header_Padding_Start);
     background-color: var(--sapGroup_TitleBackground);
     border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
 
     @include fd-flex-vertical-center();
+
+    @include fd-rtl() {
+      padding-right: var(--fdPanel_Header_Padding_Start);
+      padding-left: var(--fdPanel_Header_Padding_End);
+    }
   }
 
   &__title {
@@ -55,8 +67,8 @@ $block: #{$fd-namespace}-panel;
 
   &__expand {
     width: 2.75rem;
-    height: $fd-panel-header-height;
-    min-height: $fd-panel-header-height;
+    height: var(--fdPanel_Header_Height);
+    min-height: var(--fdPanel_Header_Height);
 
     @include fd-flex-center();
   }
@@ -68,32 +80,6 @@ $block: #{$fd-namespace}-panel;
       .sap-icon--slim-arrow-right {
         transform: rotate(180deg);
       }
-    }
-  }
-
-  @include fd-rtl() {
-    .#{$block}__header {
-      padding-right: 0;
-      padding-left: $fd-panel-header-right-padding;
-    }
-  }
-
-  &--fixed {
-    .#{$block}__header {
-      padding-left: $fd-panel-header-fixed-left-padding;
-
-      @include fd-rtl() {
-        padding-left: $fd-panel-header-right-padding;
-        padding-right: $fd-panel-header-fixed-left-padding;
-      }
-    }
-  }
-
-  &--compact {
-    .#{$block}__header,
-    .#{$block}__expand {
-      height: $fd-panel-compact-header-height;
-      min-height: $fd-panel-compact-header-height;
     }
   }
 }
