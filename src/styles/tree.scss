@@ -20,6 +20,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
 // BLOCK
 .#{$block} {
+  --fdTree_Button_Spacing: var(--fdList_Button_Spacing);
   --fdTree_Expander_Size: 2.75rem;
   --fdTree_Expander_Icon_Font_Size: var(--sapFontLargeSize);
   --fdTree_Item_Height: 2.75rem;
@@ -95,6 +96,10 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
         @include fd-tree-item-states();
       }
     }
+  }
+
+  &__button {
+    @include fd-set-margin-left(var(--fdTree_Button_Spacing));
   }
 
   &__expander {
