@@ -430,4 +430,7 @@
   --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
   --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);
   --fdObject_List_Number_Font_Size: 1.375rem;
+
+  /** Nested List */
+  --fdNested_List_Border_Corner_Radius: var(--sapElement_BorderCornerRadius);
 }
