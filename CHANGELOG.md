@@ -1,4 +1,15 @@
 
+## [0.24.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.65...v0.24.0-rc.66) (2022-05-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** adding new classes fd-tree__button and has-highlight-indicator
+
+### Features
+
+* **styles:** tree refactor and horizon adaptation ([#3391](https://github.com/SAP/fundamental-styles/issues/3391)) ([8a28100](https://github.com/SAP/fundamental-styles/commit/8a2810020fcfadc02f364512f33e0501a928f26c))
+
 ## [0.24.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.64...v0.24.0-rc.65) (2022-05-09)
 
 
