@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.63...v0.24.0-rc.64) (2022-05-09)
+
+
+### Features
+
+* **styles:** panel horizon updates [ci-visual] ([#3383](https://github.com/SAP/fundamental-styles/issues/3383)) ([f2cf3c3](https://github.com/SAP/fundamental-styles/commit/f2cf3c30cd8eeebd8c660fd09c0287deb292ac64))
+
 ## [0.24.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.62...v0.24.0-rc.63) (2022-05-07)
 
 
