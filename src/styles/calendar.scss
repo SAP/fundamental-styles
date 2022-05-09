@@ -160,6 +160,10 @@ $fd-calendar-special-days: (
   background-color: $fd-calendar-item-background;
   flex: 1 1 $fd-calendar-item-current-border-width * 2 + $fd-calendar-item-spacing * 2;
   cursor: pointer;
+
+  @include fd-hover() {
+    background-color: $fd-calendar-item-background-hover;
+  }
 }
 
 %fd-calendar-item-side-helper {
@@ -355,12 +359,8 @@ $fd-calendar-special-days: (
       }
     }
 
-    &:not(&--years, &--months) {
+    &--dates {
       .#{$block}__item {
-        @include fd-hover() {
-          background-color: $fd-calendar-item-background-hover;
-        }
-
         @include fd-focus() {
           @extend %fd-calendar-item-focus;
         }
@@ -374,6 +374,35 @@ $fd-calendar-special-days: (
 
           .#{$block}__text {
             color: $fd-calendar-item-active-color;
+          }
+        }
+
+        &--weekend {
+          @extend %fd-calendar-item-weekend;
+        }
+
+        &--side-helper {
+          @extend %fd-calendar-item-side-helper;
+
+          .#{$block}__text {
+            color: $fd-calendar-item-helper-color;
+            font-size: $fd-calendar-item-helper-font;
+          }
+        }
+
+        &--other-month {
+          @extend %fd-calendar-item-other-month;
+
+          .#{$block}__text {
+            color: $fd-calendar-item-inactive-color;
+          }
+        }
+
+        &--range {
+          @extend %fd-calendar-item-range;
+
+          &.#{$block}__item--current {
+            @extend %fd-calendar-item-current;
           }
         }
       }
@@ -409,27 +438,6 @@ $fd-calendar-special-days: (
 
     display: inline-block;
 
-    &--weekend {
-      @extend %fd-calendar-item-weekend;
-    }
-
-    &--side-helper {
-      @extend %fd-calendar-item-side-helper;
-
-      .#{$block}__text {
-        color: $fd-calendar-item-helper-color;
-        font-size: $fd-calendar-item-helper-font;
-      }
-    }
-
-    &--other-month {
-      @extend %fd-calendar-item-other-month;
-
-      .#{$block}__text {
-        color: $fd-calendar-item-inactive-color;
-      }
-    }
-
     &--current {
       @extend %fd-calendar-item-current;
 
@@ -443,14 +451,6 @@ $fd-calendar-special-days: (
         z-index: 1;
         border: $fd-calendar-item-current-inner-border;
         border-radius: $fd-calendar-item-current-inner-border-radius;
-      }
-    }
-
-    &--range {
-      @extend %fd-calendar-item-range;
-
-      &.#{$block}__item--current {
-        @extend %fd-calendar-item-current;
       }
     }
   }
