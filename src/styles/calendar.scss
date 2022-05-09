@@ -27,7 +27,7 @@ $fd-calendar-item-spacing: 0.0625rem !default;
 $fd-calendar-button-horizontal-space: 0.25rem !default; // This value is used to create additional vertical space on the button which should be created by currently not implemented "Touchable Area" of the button.
 $fd-calendar-background: var(--sapList_Background) !default;
 $fd-calendar-item-font-size: var(--sapFontSize) !default;
-$fd-calendar-border-radius: var(--fdCalendar_BorderCornerRadius) !default;
+$fd-calendar-border-radius: var(--fdCalendar_Border_Radius) !default;
 $fd-calendar-width: $fd-calendar-item-width * 8 + 2 * $fd-calendar-padding + $fd-calendar-item-spacing * 16 !default;
 $fd-calendar-active-item-inner-border-size: calc(100% - 0.125rem) !default;
 
@@ -149,6 +149,8 @@ $fd-calendar-special-days: (
 }
 
 %fd-calendar-item {
+  @include fd-reset();
+
   overflow: hidden;
   position: relative;
   height: $fd-calendar-item-height;
@@ -343,12 +345,36 @@ $fd-calendar-special-days: (
           .#{$block}__item-button {
             border: none;
             box-shadow: none;
-            border-radius: 0;
+            border-radius: var(--fdCalendar_Month_Year_Item_Border_Radius);
           }
         }
 
         .#{$block}__text {
           color: inherit;
+        }
+      }
+    }
+
+    &:not(&--years, &--months) {
+      .#{$block}__item {
+        @include fd-hover() {
+          background-color: $fd-calendar-item-background-hover;
+        }
+
+        @include fd-focus() {
+          @extend %fd-calendar-item-focus;
+        }
+
+        @include fd-disabled() {
+          @extend %fd-calendar-item-disabled;
+        }
+
+        @include fd-active() {
+          @extend %fd-calendar-item-active;
+
+          .#{$block}__text {
+            color: $fd-calendar-item-active-color;
+          }
         }
       }
     }
@@ -378,36 +404,10 @@ $fd-calendar-special-days: (
     display: flex;
   }
 
-  // Needed to not overwrite Button styles, that are applied for Months & Years items
-  &__item {
-    @include fd_reset();
-
-    @include fd-hover() {
-      background-color: $fd-calendar-item-background-hover;
-    }
-
-    @include fd-focus() {
-      @extend %fd-calendar-item-focus;
-    }
-
-    @include fd-disabled() {
-      @extend %fd-calendar-item-disabled;
-    }
-  }
-
-  // And these styles should overwrite Button's ones
   .#{$block}__item {
     @extend %fd-calendar-item;
 
     display: inline-block;
-
-    @include fd-active() {
-      @extend %fd-calendar-item-active;
-
-      .#{$block}__text {
-        color: $fd-calendar-item-active-color;
-      }
-    }
 
     &--weekend {
       @extend %fd-calendar-item-weekend;
