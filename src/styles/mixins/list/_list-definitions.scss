@@ -92,29 +92,6 @@ $semantic-color: (
   }
 }
 
-@mixin fd-list-item-states() {
-  @include fd-hover() {
-    @include fd-list-item-hover-state();
-  }
-
-  @include fd-selected() {
-    @include fd-list-item-selected-state();
-  }
-
-  @include fd-active() {
-    @include fd-list-item-active-state();
-  }
-}
-
-@mixin fd-list-item-active-state() {
-  @include fd-list-item-base-active-state();
-
-  @include fd-list-part-elements() {
-    color: var(--sapList_Active_TextColor);
-    text-shadow: none;
-  }
-}
-
 @mixin fd-list-item-base-active-state() {
   background: var(--sapList_Active_Background);
 
@@ -131,8 +108,31 @@ $semantic-color: (
   }
 }
 
+@mixin fd-list-item-active-state() {
+  @include fd-list-item-base-active-state();
+
+  @include fd-list-part-elements() {
+    color: var(--sapList_Active_TextColor);
+    text-shadow: none;
+  }
+}
+
 @mixin fd-list-item-hover-state() {
   background: var(--sapList_Hover_Background);
+}
+
+@mixin fd-list-item-states() {
+  @include fd-hover() {
+    @include fd-list-item-hover-state();
+  }
+
+  @include fd-selected() {
+    @include fd-list-item-selected-state();
+  }
+
+  @include fd-active() {
+    @include fd-list-item-active-state();
+  }
 }
 
 @mixin fd-list-ie11-active-state-fix() {
