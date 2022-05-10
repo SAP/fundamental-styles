@@ -1,4 +1,15 @@
 
+## [0.24.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.67...v0.24.0-rc.68) (2022-05-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** a new class fd-wizard__step-content-container
+
+### Features
+
+* **styles:** wizard horizon updates [ci-visual] ([#3382](https://github.com/SAP/fundamental-styles/issues/3382)) ([e16ed15](https://github.com/SAP/fundamental-styles/commit/e16ed158566e3d538ad5bcd281bee14d3f88c587))
+
 ## [0.24.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.66...v0.24.0-rc.67) (2022-05-10)
 
 
