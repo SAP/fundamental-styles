@@ -1,74 +1,16 @@
 @import "./mixins";
+@import "./mixins/list/list-definitions";
+@import "./mixins/tree/mixins";
+@import "./mixins/tree/modifiers";
 
 // VARIABLES
 $block: #{$fd-namespace}-tree;
 $button: #{$fd-namespace}-button;
-$first-level-item-container: '.#{$block}__item[aria-level="1"] > .#{$block}__item-container';
-$active-item-container: '.#{$block}__item-container.#{$block}__item-container--active';
 
-$fd-tree-item-height: 2.75rem !default;
-$fd-tree-item-height-compact: 2rem !default;
 $fd-tree-item-padding-right: 1rem !default;
 $fd-tree-item-padding-right-negative: -1rem !default;
-$fd-tree-expander-size: 2.75rem !default;
-$fd-tree-expander-size-compact: 2rem !default;
-$fd-tree-expander-size-negative: -2.75rem !default;
-$fd-tree-expander-size-negative-compact: -2rem !default;
-$fd-tree-icon-size: 2.75rem !default;
-$fd-tree-icon-size-compact: 2rem !default;
-$fd-tree-navigated-box-shadow: inset -0.1875rem 0 0 0 var(--sapSelectedColor) !default;
-$fd-tree-navigated-box-shadow-rtl: inset 0.1875rem 0 0 0 var(--sapSelectedColor) !default;
-$fd-tree-highlight-box-shadow: inset 0.375rem 0 0 0 !default;
-$fd-tree-highlight-box-shadow-rtl: inset -0.375rem 0 0 0 !default;
 $fd-tree-item-transparent-border-bottom: var(--sapList_BorderWidth) solid transparent !default;
 $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor) !default;
-
-// MIXINS
-@mixin set-indentation($level, $padding) {
-  .#{$block}__item {
-    &[aria-level="#{$level}"] {
-      .#{$block}__item-container {
-        padding-left: $padding + $fd-tree-expander-size;
-
-        @include fd-rtl() {
-          padding-left: $fd-tree-item-padding-right;
-          padding-right: $padding + $fd-tree-expander-size;
-        }
-      }
-    }
-  }
-
-  &.#{$block}--compact {
-    .#{$block}__item {
-      &[aria-level="#{$level}"] {
-        .#{$block}__item-container {
-          padding-left: $padding + $fd-tree-expander-size-compact;
-
-          @include fd-rtl() {
-            padding-left: $fd-tree-item-padding-right;
-            padding-right: $padding + $fd-tree-expander-size-compact;
-          }
-        }
-      }
-    }
-  }
-}
-
-@mixin set-highlight($color) {
-  box-shadow: $fd-tree-highlight-box-shadow $color;
-
-  @include fd-rtl() {
-    box-shadow: $fd-tree-highlight-box-shadow-rtl $color;
-  }
-
-  @include fd-navigated() {
-    box-shadow: $fd-tree-navigated-box-shadow, $fd-tree-highlight-box-shadow $color;
-
-    @include fd-rtl() {
-      box-shadow: $fd-tree-navigated-box-shadow-rtl, $fd-tree-highlight-box-shadow-rtl $color;
-    }
-  }
-}
 
 @mixin text-wrapping-behaviour() {
   white-space: normal;
@@ -76,78 +18,26 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   text-overflow: initial;
 }
 
-@mixin tree-selected-state() {
-  background: var(--sapList_SelectionBackgroundColor);
-  border-bottom: $fd-tree-item-selected-border-bottom;
-}
-
-@mixin tree-focus() {
-  outline-style: var(--sapContent_FocusStyle);
-  outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
-  outline-offset: -0.125rem;
-
-  @include fd-active() {
-    outline-color: var(--sapContent_ContrastFocusColor);
-  }
-}
-
-@mixin tree-states() {
-  cursor: pointer;
-
-  @include fd-hover() {
-    background: var(--sapList_Hover_Background);
-  }
-
-  @include fd-selected() {
-    @include tree-selected-state();
-
-    @include fd-hover() {
-      background: var(--sapList_Hover_SelectionBackground);
-    }
-  }
-
-  @include fd-active() {
-    background: var(--sapList_Active_Background);
-
-    .#{$button},
-    .#{$block}__expander {
-      @include fd-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-    }
-
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        color: var(--sapList_Active_TextColor);
-      }
-    }
-
-    .#{$block}__text,
-    .#{$button} {
-      color: var(--sapList_Active_TextColor);
-    }
-
-    @include fd-hover() {
-      background: var(--sapList_Active_Background);
-    }
-
-    @include fd-selected() {
-      background: var(--sapList_Active_Background);
-
-      @include fd-hover() {
-        background: var(--sapList_Active_Background);
-      }
-    }
-
-    @include fd-focus() {
-      outline-color: var(--sapContent_ContrastFocusColor);
-    }
-  }
-}
-
 // BLOCK
 .#{$block} {
+  --fdTree_Button_Spacing: var(--fdList_Button_Spacing);
+  --fdTree_Expander_Size: 2.75rem;
+  --fdTree_Expander_Icon_Font_Size: var(--sapFontLargeSize);
+  --fdTree_Item_Height: 2.75rem;
+  --fdTree_Item_Font_Size: var(--sapFontLargeSize);
+  --fdTree_Item_Wrap_Text_Line_Height: 1.4;
+
+  &--compact,
+  &--compact .#{$block} {
+    --fdTree_Expander_Size: 2rem;
+    --fdTree_Expander_Icon_Font_Size: var(--sapFontSmallSize);
+    --fdTree_Item_Height: 2rem;
+    --fdTree_Item_Font_Size: var(--sapFontSize);
+    --fdTree_Item_Wrap_Text_Line_Height: 1.4;
+  }
+
+  @include fd-tree-highlight-indicator();
+  @include fd-tree-expand-indents();
   @include fd-reset();
 
   width: 100%;
@@ -157,85 +47,58 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     display: none;
   }
 
-  &.expanded-level-1 {
-    @include set-indentation(2, 1.5rem);
-  }
-
-  &.expanded-level-2 {
-    @include set-indentation(2, 1rem);
-    @include set-indentation(3, 2.5rem);
-  }
-
-  &.expanded-level-3,
-  &.expanded-level-4,
-  &.expanded-level-5 {
-    @include set-indentation(2, 0.5rem);
-    @include set-indentation(3, 1rem);
-    @include set-indentation(4, 1.5rem);
-    @include set-indentation(5, 2rem);
-    @include set-indentation(6, 2.5rem);
-  }
-
-  @for $i from 6 through 12 {
-    &.expanded-level-#{$i} {
-      @for $j from 1 through 12 {
-        $offset: ($j - 1) * 0.25rem;
-
-        @include set-indentation($j, $offset);
-      }
-    }
-  }
-
   // ELEMENTS
   &__item {
     @include fd-reset();
-  }
 
-  #{$first-level-item-container} {
-    padding-left: $fd-tree-expander-size;
-    background: var(--sapList_Background);
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+    $itemScope: &;
 
-    @include fd-rtl() {
-      padding-left: $fd-tree-item-padding-right;
-      padding-right: $fd-tree-expander-size;
-    }
+    &[aria-level="1"] {
+      > #{$itemScope}-container {
+        background: var(--sapList_Background);
+        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 
-    @include fd-selected() {
-      @include tree-selected-state();
-    }
-  }
+        @include fd-selected() {
+          @include fd-list-item-base-selected-state();
+        }
 
-  &__item-container {
-    @include fd-reset();
-    @include fd-flex-vertical-center();
-
-    @include fd-selected() {
-      @include tree-selected-state();
-    }
-
-    @include fd-navigated() {
-      box-shadow: $fd-tree-navigated-box-shadow;
-
-      @include fd-rtl() {
-        box-shadow: $fd-tree-navigated-box-shadow-rtl;
+        &--active {
+          @include fd-tree-item-states();
+        }
       }
     }
 
-    @include fd-focus() {
-      @include tree-focus();
-    }
+    &-container {
+      @include fd-reset();
+      @include fd-flex-vertical-center();
+      @include fd-set-padding-right($fd-tree-item-padding-right);
 
-    width: 100%;
-    min-height: $fd-tree-item-height;
-    padding-right: $fd-tree-item-padding-right;
-    background: var(--sapList_AlternatingBackground);
-    border-bottom: $fd-tree-item-transparent-border-bottom;
+      @include fd-selected() {
+        @include fd-list-item-base-selected-state();
+      }
+
+      @include fd-navigated() {
+        @include fd-list-item-base-navigated-state();
+      }
+
+      @include fd-list-fake-outline() {
+        bottom: 0.0625rem;
+      }
+
+      position: relative;
+      width: 100%;
+      min-height: var(--fdTree_Item_Height);
+      background: var(--sapList_AlternatingBackground);
+      border-bottom: $fd-tree-item-transparent-border-bottom;
+
+      &--active {
+        @include fd-tree-item-states();
+      }
+    }
   }
 
-  .#{$block}__item[aria-level="1"] > #{$active-item-container},
-  #{$active-item-container} {
-    @include tree-states();
+  &__button {
+    @include fd-set-margin-left(var(--fdTree_Button_Spacing));
   }
 
   &__expander {
@@ -243,28 +106,18 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
     .#{$block}__icon {
       @include fd-icon-selector() {
-        font-size: var(--sapFontLargeSize);
+        font-size: var(--fdTree_Expander_Icon_Font_Size);
         color: var(--sapButton_IconColor);
 
         @include fd-flex-center();
       }
     }
 
-    @include fd-focus() {
-      @include tree-focus();
-    }
-
     cursor: pointer;
     color: var(--sapButton_IconColor);
     background: transparent;
-    min-width: $fd-tree-expander-size;
-    min-height: $fd-tree-expander-size;
-    margin-left: $fd-tree-expander-size-negative;
-
-    @include fd-rtl() {
-      margin-left: 0;
-      margin-right: $fd-tree-expander-size-negative;
-    }
+    min-width: var(--fdTree_Expander_Size);
+    min-height: var(--fdTree_Expander_Size);
 
     @include fd-expanded() {
       border-bottom: none;
@@ -276,7 +129,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     @include fd-ellipsis();
     @include fd-flex-vertical-center();
 
-    min-height: $fd-tree-item-height;
+    min-height: var(--fdTree_Item_Height);
     width: 100%;
     text-decoration: none;
 
@@ -286,7 +139,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
       .#{$block}__text {
         @include text-wrapping-behaviour();
 
-        line-height: 1.4;
+        line-height: var(--fdTree_Item_Wrap_Text_Line_Height);
       }
     }
   }
@@ -294,9 +147,9 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   &__icon {
     @include fd-flex-center();
 
-    min-width: $fd-tree-icon-size;
-    min-height: $fd-tree-icon-size;
-    line-height: $fd-tree-icon-size; // IE11 fix for vertical alignment
+    min-width: var(--fdTree_Expander_Size);
+    min-height: var(--fdTree_Expander_Size);
+    line-height: var(--fdTree_Expander_Size); // IE11 fix for vertical alignment
 
     @include fd-icon-selector() {
       font-size: 1.125rem;
@@ -329,99 +182,13 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
     @include fd-ellipsis();
 
     width: 100%;
-    font-size: var(--sapFontLargeSize);
+    font-size: var(--fdTree_Item_Font_Size);
     color: var(--sapList_TextColor);
-    line-height: $fd-tree-item-height; // IE11 fix for vertical alignment
+    line-height: var(--fdTree_Item_Height); // IE11 fix for vertical alignment
   }
 
   // MODIFIERS
-  &--compact {
-    #{$first-level-item-container} {
-      padding-left: $fd-tree-expander-size-compact;
-
-      @include fd-rtl() {
-        padding-left: $fd-tree-item-padding-right;
-        padding-right: $fd-tree-expander-size-compact;
-      }
-    }
-
-    .#{$block}__item-container {
-      min-height: $fd-tree-item-height-compact;
-    }
-
-    .#{$block}__content {
-      min-height: $fd-tree-item-height-compact;
-
-      &--wrap {
-        .#{$block}__text {
-          line-height: 1.4;
-        }
-      }
-    }
-
-    .#{$block}__text {
-      font-size: var(--sapFontSize);
-      line-height: $fd-tree-item-height-compact; // IE11 fix for vertical alignment
-    }
-
-    .#{$block}__expander {
-      min-height: $fd-tree-expander-size-compact;
-      min-width: $fd-tree-expander-size-compact;
-      margin-left: $fd-tree-expander-size-negative-compact;
-
-      @include fd-icon-selector() {
-        font-size: var(--sapFontSmallSize);
-      }
-
-      @include fd-rtl() {
-        margin-left: 0;
-        margin-right: $fd-tree-expander-size-negative-compact;
-      }
-    }
-
-    .#{$block}__icon {
-      min-height: $fd-tree-icon-size-compact;
-      line-height: $fd-tree-icon-size-compact;
-      font-size: 1rem;
-    }
-  }
-
-  &--no-border {
-    #{$first-level-item-container} {
-      border-bottom: $fd-tree-item-transparent-border-bottom;
-
-      @include fd-selected() {
-        border-bottom: $fd-tree-item-selected-border-bottom;
-      }
-    }
-  }
-
-  &--active {
-    .#{$block}__item-container,
-    #{$first-level-item-container} {
-      @include tree-states();
-    }
-  }
-
-  &--no-data {
-    .#{$block}__text {
-      text-align: center;
-    }
-  }
-
-  .has-highlight-indicator {
-    @include set-highlight(var(--sapInformationBorderColor));
-
-    &--error {
-      @include set-highlight(var(--sapErrorBorderColor));
-    }
-
-    &--warning {
-      @include set-highlight(var(--sapWarningBorderColor));
-    }
-
-    &--success {
-      @include set-highlight(var(--sapSuccessBorderColor));
-    }
-  }
+  @include fd-tree-borderless($block);
+  @include fd-tree-active($block);
+  @include fd-tree-no-data($block);
 }

@@ -18,6 +18,13 @@ $block: #{$fd-namespace}-panel;
     @include fd-reset();
   }
 
+  border-radius: var(--fdPanel_Border_Radius);
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: var(--fdPanel_Margin_Bottom);
+  }
+
   &__header {
     height: $fd-panel-header-height;
     min-height: $fd-panel-header-height;
@@ -31,13 +38,15 @@ $block: #{$fd-namespace}-panel;
   &__title {
     @include fd-typography(var(--sapFontHeader4Size));
 
+    font-size: var(--fdPanel_Title_Font_Size);
     flex: 1;
   }
 
   &__content {
     padding: 0.625rem 1rem 1.375rem 1rem;
     overflow: auto;
-    border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
+    border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
+    background-color: var(--fdPanel_Content_Background_Color);
 
     &[aria-hidden="true"] {
       display: none;

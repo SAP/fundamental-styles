@@ -6,10 +6,12 @@
 @import "./common/dynamic-page-layout/sap_horizon";
 @import "./common/scrollbar/sap_horizon";
 @import "./common/card/sap_horizon";
+@import "./common/slider/sap_horizon";
 @import "./common/splitter/sap_horizon";
 @import "./common/input/sap_horizon";
 @import "./common/input-group/sap_horizon";
 @import "./common/wizard/sap_horizon";
+@import "./common/panel/sap_horizon";
 
 :root {
   /* Switch */
@@ -36,6 +38,26 @@
   --fdSlider_Tick_Height: 1rem;
   --fdSlider_Track_Active_Background: var(--sapActiveColor);
   --fdSlider_Track_Active_Border: var(--sapActiveColor);
+
+  /* Wizard */
+  --fdWizard_Completed_Step_Color: var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Border: 0.0625rem solid var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Icon_Color: var(--sapSelectedColor);
+  --fdWizard_Current_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
+  --fdWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Active_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Active_Step_Border_Color: var(--sapActiveColor);
+  --fdWizard_Connector_Active_Border_Color: var(--sapSelectedColor);
+  --fdWizard_Content_Default_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_Solid_Background: var(--sapShell_Background);
+  --fdWizard_Content_List_Background: var(--sapGroup_ContentBackground);
+  --fdWizard_Content_Transparent_Background: transparent;
+  --fdWizard_Selection_Bar_Height: 0.188rem;
+  --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);
@@ -449,6 +471,9 @@
   --fdObject_List_Title_Font_Size: var(--sapFontHeader5Size);
   --fdObject_List_Title_Font_Weight: bolder;
   --fdObject_List_Number_Font_Size: 1.25rem;
+
+  /** Nested List */
+  --fdNested_List_Border_Corner_Radius: var(--sapPopover_BorderCornerRadius);
 
   /** BTP Colors **/
   --btp-Blue1: #ebf8ff;

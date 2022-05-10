@@ -6,10 +6,12 @@
 @import "./common/dynamic-page-layout/sap_fiori";
 @import "./common/card/sap_fiori";
 @import "./common/scrollbar/sap_fiori";
+@import "./common/slider/sap_fiori";
 @import "./common/splitter/sap_fiori";
 @import "./common/input/sap_fiori";
 @import "./common/input-group/sap_fiori";
 @import "./common/wizard/sap_fiori";
+@import "./common/panel/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -26,12 +28,31 @@
   --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
 
   /* Slider */
-
   --fdSlider_Track_Height: 0.25rem;
   --fdSlider_Track_BorderRadius: 0.25rem;
   --fdSlider_Tick_Height: 1rem;
   --fdSlider_Track_Active_Background: var(--sapActiveColor);
   --fdSlider_Track_Active_Border: var(--sapActiveColor);
+
+  /* Wizard */
+  --fdWizard_Completed_Step_Color: var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Border: 0.0625rem solid var(--sapSelectedColor);
+  --fdWizard_Completed_Step_Icon_Color: var(--sapSelectedColor);
+  --fdWizard_Current_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
+  --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
+  --fdWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Active_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Active_Step_Border_Color: var(--sapActiveColor);
+  --fdWizard_Connector_Active_Border_Color: var(--sapSelectedColor);
+  --fdWizard_Content_Default_Background: var(--sapBackgroundColor);
+  --fdWizard_Content_Solid_Background: var(--sapShell_Background);
+  --fdWizard_Content_List_Background: var(--sapGroup_ContentBackground);
+  --fdWizard_Content_Transparent_Background: transparent;
+  --fdWizard_Selection_Bar_Height: 0.188rem;
+  --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);
