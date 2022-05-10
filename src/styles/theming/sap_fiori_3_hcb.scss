@@ -21,6 +21,7 @@
 @import "./common/carousel/sap_fiori";
 @import "./common/carousel/sap_fiori_hc";
 @import "./common/feed-list-item/sap_fiori";
+@import "./common/message-box/sap_fiori_hc";
 
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
@@ -280,12 +281,6 @@
   --fdLink_Hover_Outline_Width: var(--sapContent_FocusWidth);
   --fdLink_Hover_Outline_Color: var(--sapContent_FocusColor);
   --fdLink_Hover_Outline_Style: var(--sapContent_FocusStyle);
-
-  /* Message Box */
-  --fdMessage_Box_Error_Box_Shadow: inset 0 -0.125rem var(--sapErrorBorderColor);
-  --fdMessage_Box_Success_Box_Shadow: inset 0 -0.125rem var(--sapSuccessBorderColor);
-  --fdMessage_Box_Warning_Box_Shadow: inset 0 -0.125rem var(--sapWarningBorderColor);
-  --fdMessage_Box_Information_Box_Shadow: inset 0 -0.125rem var(--sapInformationBorderColor);
 
   /* Feed Input */
   --fdFeed_Input_Placeholder_Font_Style: normal;
