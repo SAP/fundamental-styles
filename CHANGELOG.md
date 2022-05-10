@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.68...v0.24.0-rc.69) (2022-05-10)
+
+
+### Bug Fixes
+
+* remove outdated slider variables [ci visual] ([#3396](https://github.com/SAP/fundamental-styles/issues/3396)) ([864e6c8](https://github.com/SAP/fundamental-styles/commit/864e6c8e1f0359e22e5a75c476217983497189db))
+
 ## [0.24.0-rc.68](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.67...v0.24.0-rc.68) (2022-05-10)
 
 
