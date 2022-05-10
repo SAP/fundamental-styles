@@ -1,0 +1,8 @@
+:root {
+  --fdSplitter_Resizer_Border: none;
+  --fdSplitter_Resizer_Grip_Border_Width: 0;
+  --fdSplitter_Resizer_Decoration_Background: var(--sapGroup_ContentBorderColor);
+
+  /** Pagination */
+  --fdSplitter_Pagination_Item_Border_Width: var(--sapButton_BorderWidth);
+}

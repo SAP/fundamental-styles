@@ -49,7 +49,7 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
             Multi ComboBox Cozy Mode
         </label>
         <div class="fd-popover">
-            <div class="fd-popover__control" role="combobox" aria-controls="F4GcX348a" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-popover__control" role="combobox" aria-controls="F4GcX348aaa" aria-expanded="true" aria-haspopup="true">
                 <div class="fd-input-group fd-input-group--control" tabindex="0">
                     <div class="fd-tokenizer">
                         <div class="fd-tokenizer__inner">
@@ -75,13 +75,13 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
                         </div>
                     </div>
                     <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+                        <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcX348aaa" aria-expanded="false" aria-haspopup="true">
                             <i class="sap-icon--navigation-down-arrow"></i>
                         </button>
                     </span>
                 </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348aaa">
             <div class="fd-popover__wrapper">
                 <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-label="Fruits">
 					<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
@@ -944,7 +944,7 @@ The user can filter selectable options by typing in the input. A button with the
 
 export const TwoColumnComboBox = () => ` <div style="height: 350px;">
 <div class="fd-popover">
-    <div class="fd-popover__control" role="combobox" aria-controls="F4GcX348aB" aria-expanded="true" aria-haspopup="true">
+    <div class="fd-popover__control" role="combobox" aria-controls="F4GcX348aBb" aria-expanded="true" aria-haspopup="true">
         <div class="fd-input-group fd-input-group--control" tabindex="0">
             <div class="fd-tokenizer">
                 <div class="fd-tokenizer__inner">
@@ -970,13 +970,13 @@ export const TwoColumnComboBox = () => ` <div style="height: 350px;">
                 </div>
             </div>
             <span class="fd-input-group__addon fd-input-group__addon--button">
-                <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+                <button class="fd-input-group__button fd-button fd-button--transparent" aria-label="down arrow" aria-controls="F4GcX348aBb" aria-expanded="false" aria-haspopup="true">
                     <i class="sap-icon--navigation-down-arrow"></i>
                 </button>
             </span>
         </div>
     </div>
-    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348aB">
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348aBb">
         <ul class="fd-list fd-list--multi-input"  role="listbox" aria-multiselectable="true" aria-label="Fruits">
 			<li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
 				<div class="fd-form-item fd-list__form-item">

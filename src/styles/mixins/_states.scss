@@ -46,6 +46,12 @@
   }
 }
 
+@mixin fd-focus-within() {
+  &:focus-within {
+    @content;
+  }
+}
+
 // Newer FOCUS state which follows fiori3 spec (tab onto, click into)
 // `.is-focus` is for demo purposes
 @mixin fd-fiori-focus($offset: -0.1875rem) {

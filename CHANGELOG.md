@@ -1,4 +1,57 @@
 
+## [0.24.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.65...v0.24.0-rc.66) (2022-05-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** adding new classes fd-tree__button and has-highlight-indicator
+
+### Features
+
+* **styles:** tree refactor and horizon adaptation ([#3391](https://github.com/SAP/fundamental-styles/issues/3391)) ([8a28100](https://github.com/SAP/fundamental-styles/commit/8a2810020fcfadc02f364512f33e0501a928f26c))
+
+## [0.24.0-rc.65](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.64...v0.24.0-rc.65) (2022-05-09)
+
+
+### Bug Fixes
+
+* **styles:** minor nested list border bug [ci-visual] ([#3376](https://github.com/SAP/fundamental-styles/issues/3376)) ([7766853](https://github.com/SAP/fundamental-styles/commit/7766853f0ff7bffef0853ab3d4c7dbd85266dffb))
+
+## [0.24.0-rc.64](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.63...v0.24.0-rc.64) (2022-05-09)
+
+
+### Features
+
+* **styles:** panel horizon updates [ci-visual] ([#3383](https://github.com/SAP/fundamental-styles/issues/3383)) ([f2cf3c3](https://github.com/SAP/fundamental-styles/commit/f2cf3c30cd8eeebd8c660fd09c0287deb292ac64))
+
+## [0.24.0-rc.63](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.62...v0.24.0-rc.63) (2022-05-07)
+
+
+### Bug Fixes
+
+* **styles:** button todos ([#3387](https://github.com/SAP/fundamental-styles/issues/3387)) ([b51a000](https://github.com/SAP/fundamental-styles/commit/b51a00048254d595c2b18ea89245435c688a7eda))
+
+## [0.24.0-rc.62](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.61...v0.24.0-rc.62) (2022-05-07)
+
+
+### Features
+
+* **styles:** migrate input controls to Horizon theme ([#3386](https://github.com/SAP/fundamental-styles/issues/3386)) ([f91117d](https://github.com/SAP/fundamental-styles/commit/f91117d345010289cad46903c7d93aaccb33ee18))
+
+## [0.24.0-rc.61](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.60...v0.24.0-rc.61) (2022-05-07)
+
+
+### Features
+
+* **styles:** horizon family delta for link [ci visual] ([#3375](https://github.com/SAP/fundamental-styles/issues/3375)) ([2f18819](https://github.com/SAP/fundamental-styles/commit/2f1881934c473cf300e35f11184980d5cf3e94dd))
+
+## [0.24.0-rc.60](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.59...v0.24.0-rc.60) (2022-05-06)
+
+
+### Features
+
+* **styles:** splitter component ([#3377](https://github.com/SAP/fundamental-styles/issues/3377)) ([fe65a1f](https://github.com/SAP/fundamental-styles/commit/fe65a1f325861074b3f7e08c8718b97e0b4ef99a))
+
 ## [0.24.0-rc.59](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.58...v0.24.0-rc.59) (2022-05-05)
 
 

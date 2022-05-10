@@ -71,9 +71,13 @@ $semantic-color: (
   }
 }
 
-@mixin fd-list-item-selected-state() {
+@mixin fd-list-item-base-selected-state() {
   background: var(--sapList_SelectionBackgroundColor);
   border-bottom: $fd-list-selected-state-border-bottom;
+}
+
+@mixin fd-list-item-selected-state() {
+  @include fd-list-item-base-selected-state();
 
   .#{$block}__link {
     background: inherit;
@@ -88,9 +92,38 @@ $semantic-color: (
   }
 }
 
+@mixin fd-list-item-base-active-state() {
+  background: var(--sapList_Active_Background);
+
+  @include fd-hover() {
+    background: var(--sapList_Active_Background);
+  }
+
+  @include fd-selected() {
+    background: var(--sapList_Active_Background);
+
+    @include fd-hover() {
+      background: var(--sapList_Active_Background);
+    }
+  }
+}
+
+@mixin fd-list-item-active-state() {
+  @include fd-list-item-base-active-state();
+
+  @include fd-list-part-elements() {
+    color: var(--sapList_Active_TextColor);
+    text-shadow: none;
+  }
+}
+
+@mixin fd-list-item-hover-state() {
+  background: var(--sapList_Hover_Background);
+}
+
 @mixin fd-list-item-states() {
   @include fd-hover() {
-    background: var(--sapList_Hover_Background);
+    @include fd-list-item-hover-state();
   }
 
   @include fd-selected() {
@@ -98,24 +131,7 @@ $semantic-color: (
   }
 
   @include fd-active() {
-    background: var(--sapList_Active_Background);
-
-    @include fd-hover() {
-      background: var(--sapList_Active_Background);
-    }
-
-    @include fd-selected() {
-      background: var(--sapList_Active_Background);
-
-      @include fd-hover() {
-        background: var(--sapList_Active_Background);
-      }
-    }
-
-    @include fd-list-part-elements() {
-      color: var(--sapList_Active_TextColor);
-      text-shadow: none;
-    }
+    @include fd-list-item-active-state();
   }
 }
 

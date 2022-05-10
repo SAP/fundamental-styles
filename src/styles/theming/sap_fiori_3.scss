@@ -7,6 +7,10 @@
 @import "./common/card/sap_fiori";
 @import "./common/scrollbar/sap_fiori";
 @import "./common/slider/sap_fiori";
+@import "./common/splitter/sap_fiori";
+@import "./common/input/sap_fiori";
+@import "./common/input-group/sap_fiori";
+@import "./common/panel/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -177,11 +181,13 @@
   --fdInput_State_Text_Style: normal;
   --fdInput_State_Font_Weight: normal;
   --fdInput_State_Border_Type: solid;
-  --fdPlaceholder_Text_Style: normal;
+  --fdPlaceholder_Font_Style: italic;
+  --fdInput_Outline_Offset: -0.1875rem;
 
   /* Form Message */
   --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
   --fdMessage_Border: none;
+  --fdMessage_Border_Radius: 0;
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
@@ -253,6 +259,14 @@
   /* Link */
   --fdLink_Text_Decoration_Opposite: underline;
   --fdLink_Text_Decoration: none;
+  --fdLink_Text_Focus_Color: var(--sapLinkColor);
+  --fdLink_Focus_Background: transparent;
+  --fdLink_Focus_Border_Radius: 0;
+  --fdLink_Focus_Text_Shadow: none;
+  --fdLink_Hover_Outline_Offset: -0.0625rem;
+  --fdLink_Hover_Outline_Width: var(--sapContent_FocusWidth);
+  --fdLink_Hover_Outline_Color: var(--sapContent_FocusColor);
+  --fdLink_Hover_Outline_Style: var(--sapContent_FocusStyle);
 
   /* Message Box */
   --fdMessage_Box_Error_Box_Shadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
@@ -409,4 +423,7 @@
   --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
   --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);
   --fdObject_List_Number_Font_Size: 1.375rem;
+
+  /** Nested List */
+  --fdNested_List_Border_Corner_Radius: var(--sapElement_BorderCornerRadius);
 }

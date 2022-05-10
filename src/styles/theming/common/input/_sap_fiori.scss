@@ -1,0 +1,17 @@
+:root {
+  --fdInput_Box_Shadow_Hover: none;
+  --fdInput_Outline_Color: var(--sapContent_FocusColor);
+  --fdInput_Error_Background_Color_Hover: var(--sapField_InvalidBackground);
+  --fdInput_Error_Box_Shadow_Hover: none;
+  --fdInput_Error_Outline_Color: var(--sapContent_FocusColor);
+  --fdInput_Warning_Background_Color_Hover: var(--sapField_WarningBackground);
+  --fdInput_Warning_Box_Shadow_Hover: none;
+  --fdInput_Warning_Outline_Color: var(--sapContent_FocusColor);
+  --fdInput_Success_Background_Color_Hover: var(--sapField_SuccessBackground);
+  --fdInput_Success_Box_Shadow_Hover: none;
+  --fdInput_Success_Outline_Color: var(--sapContent_FocusColor);
+  --fdInput_Information_Background_Color_Hover: var(--sapField_InformationBackground);
+  --fdInput_Information_Box_Shadow_Hover: none;
+  --fdInput_Information_Outline_Color: var(--sapContent_FocusColor);
+  --fdInput_ReadOnly_Border_Radius: var(--sapField_BorderCornerRadius);
+}

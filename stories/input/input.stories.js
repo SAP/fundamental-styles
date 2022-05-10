@@ -24,7 +24,7 @@ Do not use the input field if:
     }
 };
 
-export const Primary = () => `
+export const Primary = () => `<div style="">
 <div class="fd-form-item">
         <label class="fd-form-label" for="input-1">Default input:</label>
         <input class="fd-input" type="text" id="input-1" placeholder="Field placeholder text">
@@ -74,7 +74,7 @@ export const Primary = () => `
     <br />
     <div class="fd-form-item">
         <label class="fd-form-label" for="input-05">Disabled Input:</label>
-        <input class="fd-input" type="text" id="input-05" disabled placeholder="Field placeholder text">
+        <input class="fd-input" type="text" id="input-05" disabled value="Field placeholder text">
     </div>
     <br />
     <br />
@@ -110,6 +110,7 @@ export const Primary = () => `
         <label class="fd-form-label" aria-required="true" for="input-11">Input:</label>
         <input class="fd-input" type="text" id="input-11">
     </div>
+</div>
 `;
 
 Primary.storyName = 'Default';
@@ -203,7 +204,7 @@ export const States = () => `
 
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1ff">Disabled Input:</label>
-    <input class="fd-input" type="text" id="input-1ff" value="Non editable data" disabled>
+    <input class="fd-input" placeholder="Disabled field" type="text" id="input-1ff" value="Non editable data" disabled>
 </div>
 
 <br /><br />

@@ -114,6 +114,7 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     .#{$block}__input-group {
+      background: transparent;
       background-color: var(--fdShellbar_Input_Background);
       border: var(--fdShellbar_Input_Border);
       border-radius: var(--fdShellbar_Input_Border_Radius);
@@ -132,7 +133,8 @@ $block: #{$fd-namespace}-shellbar;
         @include fd-hover() {
           &,
           & + .#{$block}__input-group-addon {
-            background: $fd-shellbar-hover-background !important;
+            background: transparent;
+            background-color: $fd-shellbar-hover-background !important;
           }
         }
 

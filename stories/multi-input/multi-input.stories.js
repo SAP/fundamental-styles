@@ -45,7 +45,7 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
             Multi Input Cozy Mode
         </label>
         <div class="fd-popover">
-            <div class="fd-popover__control" aria-controls="F4GcX348a" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-popover__control" aria-controls="F4GcX348a1" aria-expanded="true" aria-haspopup="true">
                 <div class="fd-input-group fd-input-group--control">
                     <div class="fd-tokenizer">
                         <div class="fd-tokenizer__inner">
@@ -79,7 +79,7 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
                     <span class="fd-input-group__addon fd-input-group__addon--button">
                         <button
                             aria-label="show options"
-                            aria-controls="F4GcX348a"
+                            aria-controls="F4GcX348a1"
                             aria-expanded="true"
                             aria-haspopup="true"
                             class="fd-input-group__button fd-button fd-button--transparent">
@@ -88,7 +88,7 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
                     </span>
                 </div>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a1">
             <div class="fd-popover__wrapper">
                 <ul
                     aria-label="list of fruits"

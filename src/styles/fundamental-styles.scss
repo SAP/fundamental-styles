@@ -26,7 +26,7 @@
 @import "./feed-list";
 @import "./fieldset";
 @import "./file-uploader";
-@import "./fixed-card-layout.scss";
+@import "./fixed-card-layout";
 @import "./flexible-column-layout";
 @import "./form-layout-grid";
 @import "./form-group";
@@ -36,7 +36,7 @@
 @import "./form-message";
 @import "./helpers";
 @import "./horizontal-navigation";
-@import "./icon-tab-bar.scss";
+@import "./icon-tab-bar";
 @import "./illustrated-message";
 @import "./info-label";
 @import "./input";
@@ -55,7 +55,7 @@
 @import "./micro-process-flow";
 @import "./notification";
 @import "./numeric-content";
-@import "./off-screen.scss";
+@import "./off-screen";
 @import "./object-attribute";
 @import "./object-identifier";
 @import "./object-list";
@@ -72,7 +72,7 @@
 @import "./quick-view";
 @import "./radio";
 @import "./rating-indicator";
-@import "./resizable-card-layout.scss";
+@import "./resizable-card-layout";
 @import "./scrollbar";
 @import "./section";
 @import "./segmented-button";
@@ -92,10 +92,11 @@
 @import "./title";
 @import "./token";
 @import "./tokenizer";
-@import "./tool-header.scss";
+@import "./tool-header";
 @import "./toolbar";
 @import "./tree";
 @import "./upload-collection";
 @import "./user-menu";
 @import "./vertical-nav";
-@import "./wizard.scss";
+@import "./wizard";
+@import "./splitter";

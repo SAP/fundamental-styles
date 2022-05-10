@@ -7,6 +7,10 @@
 @import "./common/scrollbar/sap_horizon";
 @import "./common/card/sap_horizon";
 @import "./common/slider/sap_horizon";
+@import "./common/splitter/sap_horizon";
+@import "./common/input/sap_horizon";
+@import "./common/input-group/sap_horizon";
+@import "./common/panel/sap_horizon";
 
 :root {
   /* Switch */
@@ -216,11 +220,14 @@
   --fdInput_State_Text_Style: normal;
   --fdInput_State_Font_Weight: normal;
   --fdInput_State_Border_Type: solid;
-  --fdPlaceholder_Text_Style: normal;
+  --fdPlaceholder_Font_Style: italic;
+  --fdInput_Outline_Offset: -0.125rem;
+  --fdInput_Outline_Offset_States: -0.125rem;
 
   /* Form Message */
   --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
   --fdMessage_Border: none;
+  --fdMessage_Border_Radius: var(--sapPopover_BorderCornerRadius);
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
@@ -292,6 +299,14 @@
   /* Link */
   --fdLink_Text_Decoration_Opposite: underline;
   --fdLink_Text_Decoration: none;
+  --fdLink_Text_Focus_Color: var(--sapContent_ContrastTextColor);
+  --fdLink_Focus_Background: var(--sapContent_FocusColor);
+  --fdLink_Focus_Border_Radius: 0.125rem;
+  --fdLink_Focus_Text_Shadow: none;
+  --fdLink_Hover_Outline_Offset: 0;
+  --fdLink_Hover_Outline_Width: 0;
+  --fdLink_Hover_Outline_Color: unset;
+  --fdLink_Hover_Outline_Style: none;
 
   /* Message Box */
   --fdMessage_Box_Error_Box_Shadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
@@ -448,6 +463,9 @@
   --fdObject_List_Title_Font_Size: var(--sapFontHeader5Size);
   --fdObject_List_Title_Font_Weight: bolder;
   --fdObject_List_Number_Font_Size: 1.25rem;
+
+  /** Nested List */
+  --fdNested_List_Border_Corner_Radius: var(--sapPopover_BorderCornerRadius);
 
   /** BTP Colors **/
   --btp-Blue1: #ebf8ff;

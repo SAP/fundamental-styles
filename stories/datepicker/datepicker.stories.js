@@ -27,7 +27,7 @@ Use the **DatePicker** if:
 export const DefaultAndCompactSizes = () => `<div style="display:flex;justify-content:space-around;height:400px">
 <div class="fd-docs-date-picker">
   <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control is-expanded">
       <label class="fd-form-label" for="defaultDatepicker">Default</label>
       <div class="fd-input-group">
         <input id="defaultDatepicker" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date"
@@ -230,7 +230,7 @@ export const DefaultAndCompactSizes = () => `<div style="display:flex;justify-co
 <br>
 <div class="fd-docs-date-picker">
   <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control is-expanded">
       <label class="fd-form-label" for="compactDatepicker">Compact</label>
       <div class="fd-input-group">
         <input id="compactDatepicker" type="text" value="" placeholder="Pick a date"
@@ -447,7 +447,7 @@ DefaultAndCompactSizes.parameters = {
 
 export const TodaySelectionButton = () => `<div class="fd-docs-date-picker" style="height:450px">
 <div class="fd-popover">
-  <div class="fd-popover__control">
+  <div class="fd-popover__control is-expanded">
   <label class="fd-form-label" for="todaySelectionDateInput">en-US DatePicker with today selection</label>
     <div class="fd-input-group">
       <input id="todaySelectionDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date"
@@ -675,7 +675,7 @@ This date value then appears in the DatePicker's input field. If using a compact
 
 export const TodayNavigationButton = () => `<div class="fd-docs-date-picker" style="height:500px">
 <div class="fd-popover">
-  <div class="fd-popover__control">
+  <div class="fd-popover__control is-expanded">
     <label class="fd-form-label" for="todayNavigationDateInput">en-US DatePicker with today navigation</label>
     <div class="fd-input-group">
       <input id="todayNavigationDateInput" class="fd-input fd-input-group__input" type="text" value="" placeholder="Pick a date"

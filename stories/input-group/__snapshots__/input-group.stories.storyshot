@@ -96,6 +96,106 @@ exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
   </div>
   
 
+  <br />
+  
+
+  <div
+    class="fd-form-item"
+  >
+    
+    
+    <label
+      class="fd-form-label"
+      for="aqwsde134ff"
+    >
+      Success State
+    </label>
+    
+    
+    <div
+      class="fd-input-group is-success is-focus"
+    >
+      
+        
+      <input
+        class="fd-input fd-input-group__input"
+        id="aqwsde134ff"
+        name=""
+        type="text"
+        value="1000000"
+      />
+      
+        
+      <span
+        class="fd-input-group__addon"
+      >
+        
+            
+        <span
+          class="sap-icon--hide"
+          role="presentation"
+        />
+        
+        
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+  <br />
+  
+
+  <div
+    class="fd-form-item"
+  >
+    
+    
+    <label
+      class="fd-form-label"
+      for="aqwsde134ss"
+    >
+      Warning State
+    </label>
+    
+    
+    <div
+      class="fd-input-group is-warning is-focus"
+    >
+      
+        
+      <input
+        class="fd-input fd-input-group__input"
+        id="aqwsde134ss"
+        name=""
+        type="text"
+        value="1000000"
+      />
+      
+        
+      <span
+        class="fd-input-group__addon"
+      >
+        
+            
+        <span
+          class="sap-icon--hide"
+          role="presentation"
+        />
+        
+        
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
 </div>
 `;
 
@@ -726,12 +826,174 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
       class="fd-form-label"
       for="aqwsde127"
     >
-      Information
+      Information compact
     </label>
     
     
     <div
       class="fd-input-group is-information"
+    >
+      
+        
+      <input
+        class="fd-input fd-input--compact fd-input-group__input"
+        id="aqwsde127"
+        name=""
+        type="text"
+        value="1000000"
+      />
+      
+        
+      <span
+        class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact"
+      >
+        
+            
+        <button
+          class="fd-input-group__button fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                Button
+            
+        </button>
+        
+        
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+  <div
+    class="fd-form-item"
+  >
+    
+    
+    <label
+      class="fd-form-label"
+      for="aqwsde127"
+    >
+      Error compact
+    </label>
+    
+    
+    <div
+      class="fd-input-group is-error"
+    >
+      
+        
+      <input
+        class="fd-input fd-input--compact fd-input-group__input"
+        id="aqwsde127"
+        name=""
+        type="text"
+        value="1000000"
+      />
+      
+        
+      <span
+        class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact"
+      >
+        
+            
+        <button
+          class="fd-input-group__button fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                Button
+            
+        </button>
+        
+        
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+  <div
+    class="fd-form-item"
+  >
+    
+    
+    <label
+      class="fd-form-label"
+      for="aqwsde127"
+    >
+      Warning(Alert) compact
+    </label>
+    
+    
+    <div
+      class="fd-input-group is-warning"
+    >
+      
+        
+      <input
+        class="fd-input fd-input--compact fd-input-group__input"
+        id="aqwsde127"
+        name=""
+        type="text"
+        value="1000000"
+      />
+      
+        
+      <span
+        class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact"
+      >
+        
+            
+        <button
+          class="fd-input-group__button fd-button fd-button--transparent fd-button--compact"
+        >
+          
+                Button
+            
+        </button>
+        
+        
+      </span>
+      
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <br />
+  
+
+  <div
+    class="fd-form-item"
+  >
+    
+    
+    <label
+      class="fd-form-label"
+      for="aqwsde127"
+    >
+      Success compact
+    </label>
+    
+    
+    <div
+      class="fd-input-group is-success"
     >
       
         

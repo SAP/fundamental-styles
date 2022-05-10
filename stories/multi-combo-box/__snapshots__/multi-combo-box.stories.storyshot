@@ -475,7 +475,7 @@ exports[`Storyshots Patterns/Multi ComboBox Cozy And Compact 1`] = `
           
             
           <div
-            aria-controls="F4GcX348a"
+            aria-controls="F4GcX348aaa"
             aria-expanded="true"
             aria-haspopup="true"
             class="fd-popover__control"
@@ -592,7 +592,7 @@ exports[`Storyshots Patterns/Multi ComboBox Cozy And Compact 1`] = `
                 
                         
                 <button
-                  aria-controls="F4GcX348a"
+                  aria-controls="F4GcX348aaa"
                   aria-expanded="false"
                   aria-haspopup="true"
                   aria-label="down arrow"
@@ -620,7 +620,7 @@ exports[`Storyshots Patterns/Multi ComboBox Cozy And Compact 1`] = `
           <div
             aria-hidden="false"
             class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-            id="F4GcX348a"
+            id="F4GcX348aaa"
           >
             
             
@@ -3993,7 +3993,7 @@ exports[`Storyshots Patterns/Multi ComboBox Two Column Combo Box 1`] = `
       
     
       <div
-        aria-controls="F4GcX348aB"
+        aria-controls="F4GcX348aBb"
         aria-expanded="true"
         aria-haspopup="true"
         class="fd-popover__control"
@@ -4111,7 +4111,7 @@ exports[`Storyshots Patterns/Multi ComboBox Two Column Combo Box 1`] = `
             
                 
             <button
-              aria-controls="F4GcX348aB"
+              aria-controls="F4GcX348aBb"
               aria-expanded="false"
               aria-haspopup="true"
               aria-label="down arrow"
@@ -4139,7 +4139,7 @@ exports[`Storyshots Patterns/Multi ComboBox Two Column Combo Box 1`] = `
       <div
         aria-hidden="false"
         class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill"
-        id="F4GcX348aB"
+        id="F4GcX348aBb"
       >
         
         

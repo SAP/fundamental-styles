@@ -24,7 +24,7 @@ $block: #{$fd-namespace}-link;
   @include fd-focus() {
     @include fd-icon-selector() {
       text-decoration: var(--fdLink_Text_Decoration_Opposite);
-      color: var(--sapLinkColor);
+      color: var(--fdLink_Text_Focus_Color);
     }
   }
 

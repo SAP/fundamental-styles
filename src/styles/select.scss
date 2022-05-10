@@ -2,93 +2,39 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-select;
+$fd-select-padding-x: 0.625rem;
+$fd-select-padding-x-compact: 0.5rem;
+
+@mixin fd-select-set-min-width($width) {
+  min-width: calc(#{$width} - var(--sapField_BorderWidth) * 2);
+}
 
 .#{$block} {
-  $fd-select-padding-x: 0.625rem;
-  $fd-select-padding-x-compact: 0.5rem;
-
-  @mixin fd-select-button-border() {
-    border-left: var(--fdSelect_Button_Interractive_SideBorder);
-
-    @include fd-rtl() {
-      border-left: none;
-      border-right: var(--fdSelect_Button_Interractive_SideBorder);
-    }
-  }
-
-  @mixin fd-select-button-active() {
-    .#{$block}__button {
-      background-color: var(--sapButton_Active_Background);
-      color: var(--sapButton_Active_TextColor);
-
-      @include fd-fiori-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-
-      @include fd-select-button-border();
-    }
-  }
-
-  @mixin fd-select-set-min-width($width) {
-    min-width: calc(#{$width} - var(--sapField_BorderWidth) * 2);
-  }
-
   @include fd-reset();
 
   text-shadow: var(--fdSelect_Text_Shadow);
 
   &__control {
-    @include fd-reset();
-    @include fd-form-base();
-    @include fd-form-states();
-    @include fd-fiori-pseudo-focus(-0.1875rem);
+    @include fd-input-field-base();
+    @include fd-input-field-states();
+    @include fd-input-group-button-overwrite();
 
     @include fd-flex-center() {
       justify-content: space-between;
-    }
-
-    @include fd-hover() {
-      .#{$block}__button {
-        @include fd-select-button-border();
-
-        background-color: var(--sapButton_Lite_Hover_Background);
-      }
-    }
-
-    @include fd-focus() {
-      outline: none;
-    }
-
-    @include fd-expanded() {
-      @include fd-select-button-active();
-    }
-
-    @include fd-active() {
-      @include fd-select-button-active();
-    }
-
-    @include fd-rtl() {
-      text-align: right;
     }
 
     @include fd-disabled() {
       pointer-events: none;
     }
 
-    width: 100%;
-    height: $fd-form-input-height;
-    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
 
     .#{$block}__button {
-      @include fd-inline-flex-center();
       @include fd-set-margin-left(0.25rem);
-
-      border: none;
-      border-radius: 0;
-      color: var(--sapContent_IconColor);
     }
 
-    &.is-readonly {
+    @include fd-readonly() {
       cursor: text;
 
       .#{$block}__text-content {
@@ -116,7 +62,7 @@ $block: #{$fd-namespace}-select;
         @include fd-select-set-min-width(2.75rem);
       }
 
-      &.is-readonly {
+      @include fd-readonly() {
         .#{$block}__text-content {
           @include fd-set-paddings-x-equal($fd-select-padding-x-compact);
         }
