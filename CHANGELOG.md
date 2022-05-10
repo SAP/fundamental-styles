@@ -1,4 +1,15 @@
 
+## [0.24.0-rc.67](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.66...v0.24.0-rc.67) (2022-05-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** Slider handle is now moved outside .fd-slider__track element.
+
+### Features
+
+* **styles:** slider horizon theme ([911fc8f](https://github.com/SAP/fundamental-styles/commit/911fc8f1c900dd01602821301e691bc3dcd70343))
+
 ## [0.24.0-rc.66](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.65...v0.24.0-rc.66) (2022-05-09)
 
 
