@@ -1,0 +1,8 @@
+:root {
+  --fdSlider_Track_Border_Width: 0.0625rem;
+  --fdSlider_Track_Active_Border: var(--fdSlider_Track_Active_Background);
+  --fdSlider_Track_Active_Box_Shadow: 0 0 0 0.0625rem var(--sapSlider_Selected_BorderColor);
+
+  // Slider Handle Focus
+  --fdSlider_Focus_Handle_Outline_Color: var(--sapContent_FocusColor);
+}

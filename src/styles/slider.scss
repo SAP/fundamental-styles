@@ -1,15 +1,19 @@
 @import "./new-settings";
 @import "./mixins";
 
+@mixin fd-slider-dot {
+  background-color: var(--fdSlider_Endpoint_Background);
+  border: var(--fdSlider_Endpoint_Border);
+}
+
+@mixin fd-slider-active-dot {
+  border: var(--fdSlider_Endpoint_Active_Border);
+  background-color: var(--fdSlider_Endpoint_Active_Background);
+}
+
 $block: #{$fd-namespace}-slider;
-$handle-desktop-dimensions: 1.25rem;
-$handle-hit-area-desktop-dimensions: 2rem;
-$handle-mobile-dimensions: 1.625rem;
-$handle-hit-area-mobile-dimensions: 2.75rem;
 $handle-outline-offset: 0.0625rem;
 $handle-outline-width: 0.0625rem;
-$slider-x-paddings: $handle-desktop-dimensions * 0.5;
-$slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
 
 .#{$block} {
   @include fd-reset();
@@ -20,11 +24,44 @@ $slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
 
   min-width: 4rem;
   max-width: 100%;
-  padding: 1rem calc(#{$slider-x-paddings} + #{$handle-outline-offset} + #{$handle-outline-width});
+  padding: 1rem calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outline-offset} + #{$handle-outline-width});
   position: relative;
 
+  &::before,
+  &::after {
+    @include fd-reset();
+
+    content: "";
+    width: var(--fdSlider_Endpoint_Size);
+    height: var(--fdSlider_Endpoint_Size);
+    position: absolute;
+    top: 50%;
+    left: 0.125rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+
+    @include fd-slider-active-dot();
+  }
+
+  &::after {
+    left: auto;
+    right: 0.125rem;
+
+    @include fd-slider-dot();
+  }
+
+  @include fd-rtl() {
+    &::before {
+      @include fd-slider-dot();
+    }
+
+    &::after {
+      @include fd-slider-active-dot();
+    }
+  }
+
   &--lg {
-    @include fd-set-paddings-x-equal(calc(#{$slider-x-paddings--lg} + #{$handle-outline-offset} + #{$handle-outline-width}));
+    @include fd-set-paddings-x-equal(calc((var(--fdSlider_Mobile_Handle_Width) * 0.5) + #{$handle-outline-offset} + #{$handle-outline-width}));
   }
 
   &__inner {
@@ -38,10 +75,11 @@ $slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
 
     height: var(--fdSlider_Track_Height);
     width: 100%;
-    background-color: var(--sapField_BorderColor);
+    background-color: var(--fdSlider_Track_Background);
     border-radius: var(--fdSlider_Track_BorderRadius);
     position: relative;
     z-index: 1;
+    box-shadow: inset 0 0 0 var(--fdSlider_Track_Border_Width) var(--fdSlider_Track_Border_Color);
   }
 
   &__track-range {
@@ -52,6 +90,7 @@ $slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
     border-radius: 0.25rem;
     background-color: var(--fdSlider_Track_Active_Background);
     border: 0.0625rem solid var(--fdSlider_Track_Active_Border);
+    box-shadow: var(--fdSlider_Track_Active_Box_Shadow);
   }
 
   &__tick-wrapper {
@@ -59,7 +98,8 @@ $slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
 
     position: absolute;
     width: 100%;
-    top: calc((-1rem + var(--fdSlider_Track_Height)) / 2);
+    top: calc((var(--fdSlider_Track_Height) - var(--fdSlider_Tick_Height)) / 2);
+    z-index: 2;
   }
 
   &__ticks {
@@ -86,11 +126,11 @@ $slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
     @include fd-reset();
 
     position: relative;
-    border-left: 0.0625rem solid var(--sapField_BorderColor);
+    border-left: 0.0625rem solid var(--fdSlider_Tick_Background);
     height: var(--fdSlider_Tick_Height);
 
     &--in-range {
-      border-color: var(--fdSlider_Track_Active_Border);
+      border-color: var(--fdSlider_Active_Tick_Background);
     }
   }
 
@@ -110,54 +150,74 @@ $slider-x-paddings--lg: $handle-mobile-dimensions * 0.5;
   &__handle {
     @include fd-reset();
 
-    width: $handle-desktop-dimensions;
-    height: $handle-desktop-dimensions;
+    width: var(--fdSlider_Handle_Width);
+    height: var(--fdSlider_Handle_Height);
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    border-radius: 50%;
-    z-index: 1;
-    background-color: var(--sapButton_Background);
-    border: 0.125rem solid var(--sapField_BorderColor);
+    border-radius: var(--fdSlider_Handle_Border_Radius);
+    background-color: var(--fdSlider_Handle_Background);
+    border: var(--fdSlider_Handle_Border);
+    box-shadow: var(--fdSlider_Handle_Box_Shadow);
+    z-index: 3;
 
     &::before {
       content: '';
-      width: $handle-hit-area-desktop-dimensions;
-      height: $handle-hit-area-desktop-dimensions;
+      width: var(--fdSlider_Handle_Active_Size);
+      height: var(--fdSlider_Handle_Active_Size);
       position: absolute;
-      transform: translate(-25%, -25%);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
     }
 
-    &:focus {
-      outline: $handle-outline-width var(--sapContent_FocusStyle) var(--sapButton_Hover_BorderColor);
+    @include fd-focus() {
+      outline: $handle-outline-width var(--sapContent_FocusStyle) var(--fdSlider_Focus_Handle_Outline_Color);
       outline-offset: $handle-outline-offset;
+      border: var(--fdSlider_Hover_Handle_Border);
     }
 
     @include fd-hover() {
-      background: var(--sapButton_Hover_Background);
-      border-color: var(--sapButton_Hover_BorderColor);
+      background-color: var(--fdSlider_Hover_Handle_Background);
+      border: var(--fdSlider_Hover_Handle_Border);
+      box-shadow: var(--fdSlider_Hover_Handle_Box_Shadow);
     }
 
     @include fd-active() {
-      background: var(--sapButton_Active_Background);
-      border-color: var(--sapButton_Active_BorderColor);
+      background-color: var(--fdSlider_Active_Handle_Background);
+      border: var(--fdSlider_Hover_Handle_Border);
+      box-shadow: var(--fdSlider_Active_Handle_Box_Shadow);
     }
 
     &--lg {
-      width: $handle-mobile-dimensions;
-      height: $handle-mobile-dimensions;
+      width: var(--fdSlider_Mobile_Handle_Width);
+      height: var(--fdSlider_Mobile_Handle_Height);
 
       &::before {
-        width: $handle-hit-area-mobile-dimensions;
-        height: $handle-hit-area-mobile-dimensions;
+        width: var(--fdSlider_Mobile_Handle_Active_Size);
+        height: var(--fdSlider_Mobile_Handle_Active_Size);
       }
     }
   }
 
-  @include fd-rtl() {
-    .#{$block}__handle::before {
-      transform: translate(25%, -25%);
+  &--range {
+    &::before,
+    &::after {
+      @include fd-slider-dot();
+    }
+
+    @include fd-rtl() {
+      &::before,
+      &::after {
+        @include fd-slider-dot();
+      }
+    }
+
+    .#{$block}__handle {
+      @include fd-active() {
+        background-color: var(--fdSlider_Active_Range_Handle_Background);
+      }
     }
   }
 }

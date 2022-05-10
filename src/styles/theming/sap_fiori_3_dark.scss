@@ -6,6 +6,7 @@
 @import "./common/dynamic-page-layout/sap_fiori";
 @import "./common/card/sap_fiori";
 @import "./common/scrollbar/sap_fiori";
+@import "./common/slider/sap_fiori";
 @import "./common/splitter/sap_fiori";
 @import "./common/input/sap_fiori";
 @import "./common/input-group/sap_fiori";
@@ -44,14 +45,6 @@
   --fdWizard_Content_Transparent_Background: transparent;
   --fdWizard_Selection_Bar_Height: 0.188rem;
   --fdWizard_Selection_Bar_Background: var(--sapSelectedColor);
-
-  /* Slider */
-
-  --fdSlider_Track_Height: 0.25rem;
-  --fdSlider_Track_BorderRadius: 0.25rem;
-  --fdSlider_Tick_Height: 1rem;
-  --fdSlider_Track_Active_Background: var(--sapActiveColor);
-  --fdSlider_Track_Active_Border: var(--sapActiveColor);
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);
