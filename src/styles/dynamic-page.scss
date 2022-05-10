@@ -215,7 +215,7 @@ $block: #{$fd-namespace}-dynamic-page;
     @include fd-reset();
     @include fd-ellipsis();
 
-    color: var(--fdDynamicPage_Title_Collapsed_Font_Size);
+    color: var(--fdDynamicPage_Subtitle_Color);
     font-size: var(--sapFontSize);
     margin-top: 0.25rem;
   }
