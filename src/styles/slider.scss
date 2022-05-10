@@ -27,39 +27,6 @@ $handle-outline-width: 0.0625rem;
   padding: 1rem calc((var(--fdSlider_Handle_Width) * 0.5) + #{$handle-outline-offset} + #{$handle-outline-width});
   position: relative;
 
-  &::before,
-  &::after {
-    @include fd-reset();
-
-    content: "";
-    width: var(--fdSlider_Endpoint_Size);
-    height: var(--fdSlider_Endpoint_Size);
-    position: absolute;
-    top: 50%;
-    left: 0.125rem;
-    transform: translateY(-50%);
-    border-radius: 50%;
-
-    @include fd-slider-active-dot();
-  }
-
-  &::after {
-    left: auto;
-    right: 0.125rem;
-
-    @include fd-slider-dot();
-  }
-
-  @include fd-rtl() {
-    &::before {
-      @include fd-slider-dot();
-    }
-
-    &::after {
-      @include fd-slider-active-dot();
-    }
-  }
-
   &--lg {
     @include fd-set-paddings-x-equal(calc((var(--fdSlider_Mobile_Handle_Width) * 0.5) + #{$handle-outline-offset} + #{$handle-outline-width}));
   }
@@ -68,6 +35,39 @@ $handle-outline-width: 0.0625rem;
     @include fd-reset();
 
     position: relative;
+
+    &::before,
+    &::after {
+      @include fd-reset();
+
+      content: "";
+      width: var(--fdSlider_Endpoint_Size);
+      height: var(--fdSlider_Endpoint_Size);
+      position: absolute;
+      top: 50%;
+      left: -0.7rem;
+      transform: translateY(-50%);
+      border-radius: 50%;
+
+      @include fd-slider-active-dot();
+    }
+
+    &::after {
+      left: auto;
+      right: -0.7rem;
+
+      @include fd-slider-dot();
+    }
+
+    @include fd-rtl() {
+      &::before {
+        @include fd-slider-dot();
+      }
+
+      &::after {
+        @include fd-slider-active-dot();
+      }
+    }
   }
 
   &__track {
@@ -202,21 +202,23 @@ $handle-outline-width: 0.0625rem;
   }
 
   &--range {
-    &::before,
-    &::after {
-      @include fd-slider-dot();
-    }
-
-    @include fd-rtl() {
+    .#{$block}__inner {
       &::before,
       &::after {
         @include fd-slider-dot();
       }
-    }
 
-    .#{$block}__handle {
-      @include fd-active() {
-        background-color: var(--fdSlider_Active_Range_Handle_Background);
+      @include fd-rtl() {
+        &::before,
+        &::after {
+          @include fd-slider-dot();
+        }
+      }
+
+      .#{$block}__handle {
+        @include fd-active() {
+          background-color: var(--fdSlider_Active_Range_Handle_Background);
+        }
       }
     }
   }
