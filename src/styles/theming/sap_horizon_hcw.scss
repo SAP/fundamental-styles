@@ -17,6 +17,8 @@
 @import "./common/splitter/sap_horizon_hc";
 @import "./common/input/sap_horizon";
 @import "./common/input-group/sap_horizon";
+@import "./common/wizard/sap_horizon";
+@import "./common/wizard/sap_horizon_hc";
 @import "./common/panel/sap_horizon";
 
 :root {
@@ -36,6 +38,13 @@
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
+
+  /* Slider */
+  --fdSlider_Track_Height: 0.25rem;
+  --fdSlider_Track_BorderRadius: 0.25rem;
+  --fdSlider_Tick_Height: 1rem;
+  --fdSlider_Track_Active_Background: var(--sapActiveColor);
+  --fdSlider_Track_Active_Border: var(--sapActiveColor);
 
   /* Wizard */
   --fdWizard_Completed_Step_Color: var(--sapSelectedColor);

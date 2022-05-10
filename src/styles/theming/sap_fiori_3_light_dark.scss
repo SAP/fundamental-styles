@@ -10,6 +10,7 @@
 @import "./common/splitter/sap_fiori";
 @import "./common/input/sap_fiori";
 @import "./common/input-group/sap_fiori";
+@import "./common/wizard/sap_fiori";
 @import "./common/panel/sap_fiori";
 
 :root {
@@ -25,6 +26,13 @@
   --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
   --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
   --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
+
+  /* Slider */
+  --fdSlider_Track_Height: 0.25rem;
+  --fdSlider_Track_BorderRadius: 0.25rem;
+  --fdSlider_Tick_Height: 1rem;
+  --fdSlider_Track_Active_Background: var(--sapSelectedColor);
+  --fdSlider_Track_Active_Border: var(--sapField_BorderColor);
 
   /* Wizard */
   --fdWizard_Completed_Step_Color: var(--sapSelectedColor);

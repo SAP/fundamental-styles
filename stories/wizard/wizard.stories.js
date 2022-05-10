@@ -41,15 +41,15 @@ The wizard can be used both in a full-screen layout and in the flexible column l
 
 ## Responsive paddings
 
-These modifier classes will add horizontal paddings to the content and can be applied on the \`fd-wizard__progress-bar\` level and/or on the \`fd-wizard__content\` level.
+These modifier classes will add horizontal paddings to the content and can be applied on the \`fd-wizard__progress-bar\` level, the \`fd-wizard__content\`, and/or the \`fd-wizard__step-content-container\` level.
 
 
 |  **rem** |  <div style="margin-left: 2rem;"> **Min-width** </div> |  <div style="margin-left: 2rem;">**Max-width** </div> |  <div style="margin-left: 2rem;"> **Modifier class** </div> |
 | :---- | :---------- | :---------- | :---------------------------------- |
-| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--sm</code> / <code>fd-wizard__content--sm</code> |
-| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--md</code> / <code>fd-wizard__content--md</code> |
-| 2rem | <span style="margin-left: 2rem;">1024px</span> | <span style="margin-left: 2rem;">1439px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--lg</code> / <code>fd-wizard__content--lg</code> |
-| 3rem | <span style="margin-left: 2rem;">1440px</span> | <span style="margin-left: 2rem;">_n/a_</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--xl</code> / <code>fd-wizard__content--xl</code> |
+| 1rem | <span style="margin-left: 2rem;">_n/a_</span> | <span style="margin-left: 2rem;">599px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--sm</code> / <code>fd-wizard__content--sm</code> / <code>fd-wizard__step-content-container--sm</code> |
+| 2rem | <span style="margin-left: 2rem;">600px</span> | <span style="margin-left: 2rem;">1023px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--md</code> / <code>fd-wizard__content--md</code> / <code>fd-wizard__step-content-container--md</code> |
+| 2rem | <span style="margin-left: 2rem;">1024px</span> | <span style="margin-left: 2rem;">1439px</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--lg</code> / <code>fd-wizard__content--lg</code> / <code>fd-wizard__step-content-container--lg</code> |
+| 3rem | <span style="margin-left: 2rem;">1440px</span> | <span style="margin-left: 2rem;">_n/a_</span> | <code style="margin-left: 2rem;">fd-wizard__progress-bar--xl</code> / <code>fd-wizard__content--xl</code> / <code>fd-wizard__step-content-container--xl</code> |
 
 ## Modifiers
 
@@ -85,7 +85,7 @@ There are multiple connector types that can be displayed depending on the steps 
 
 | **Type** | <span style="margin-left: 2rem;">**Modifier class**</span> |
 | :--- | :-------------- |
-| Solid |  <code style="margin-left: 2rem;"> fd-wizard__content--smolid</code> |
+| Solid |  <code style="margin-left: 2rem;"> fd-wizard__content--solid</code> |
 | List | <code style="margin-left: 2rem;"> fd-wizard__content--list</code> |
 | Transparent | <code style="margin-left: 2rem;"> fd-wizard__content--transparent</code> |
 
@@ -150,11 +150,13 @@ export const DefaultExample = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content" id="wizard-section-1" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Step 3</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Step 3</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -223,11 +225,13 @@ export const Customized = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content fd-wizard__content--list fd-wizard__content--md" id="wizard-section-2" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Step 3</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Step 3</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -252,6 +256,7 @@ Customized.parameters = {
 | :---- | :---- | :-------------- |
 | \`fd-wizard__progress-bar\` | \`fd-wizard__progress-bar--md\` | <span style="margin-left: 2rem;"> Added responsive padding </span> |
 | \`fd-wizard__content\` | \`fd-wizard__content--md\` | <span style="margin-left: 2rem;"> Added responsive padding </span> |
+| \`fd-wizard__step-content-container\` | \`fd-wizard__step-content-container--md\` | <span style="margin-left: 2rem;"> Added responsive padding </span> |
 | \`fd-bar--page\` | \`fd-bar--page-m_l\` | <span style="margin-left: 2rem;"> Added responsive padding </span> |
 | \`fd-wizard__content\` | \`fd-wizard__content--list\` | <span style="margin-left: 2rem;"> The background of the wizard content is set to list </span> |
 | \`fd-wizard__connector\` | \`fd-wizard__connector--branching\` | <span style="margin-left: 2rem;"> Adds a branching step connector </span> |
@@ -331,11 +336,13 @@ export const Responsive = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-3" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -449,11 +456,13 @@ export const Responsive = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-4" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -604,11 +613,13 @@ export const Responsive = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-5" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -706,11 +717,13 @@ export const RevertedSteps = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-3" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -824,11 +837,13 @@ export const RevertedSteps = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-4" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -979,11 +994,13 @@ export const RevertedSteps = () => `<section class="fd-wizard">
         </ul>
     </nav>
     <section class="fd-wizard__content fd-wizard__content--xl" id="wizard-section-5" style="min-height: 300px;">
-        <div>
-            Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-        </div>
-        <div class="fd-wizard__next-step">
-            <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+        <div class="fd-wizard__step-content-container">
+            <div>
+                Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
+            </div>
+            <div class="fd-wizard__next-step">
+                <button class="fd-button fd-button--compact fd-button--emphasized">Next Step</button>
+            </div>
         </div>
     </section>
     <footer>
@@ -1145,11 +1162,13 @@ export const Mobile = () => `<div style="display: flex; justify-content: space-a
                 </ul>
             </nav>
             <section class="fd-wizard__content fd-wizard__content--sm" id="wizard-section-6" style="min-height: 500px;">
-                <div>
-                    Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis. Fusce quis eleifend sapien, eget facilisis nibh. Suspendisse est velit, scelerisque ut commodo eget, dignissim quis metus. Cras faucibus consequat gravida. Curabitur vitae quam felis. Phasellus ac leo eleifend, commodo tortor et, varius quam. Aliquam erat volutpat
-                </div>
-                <div class="fd-wizard__next-step">
-                    <button class="fd-button fd-button--emphasized">Next Step</button>
+                <div class="fd-wizard__step-content-container">
+                    <div>
+                        Sed fermentum, mi et tristique ullamcorper, sapien sapien faucibus sem, quis pretium nibh lorem malesuada diam. Nulla quis arcu aliquet, feugiat massa semper, volutpat diam. Nam vitae ante posuere, molestie neque sit amet, dapibus velit. Maecenas eleifend tempor lorem. Mauris vitae elementum mi, sed eleifend ligula. Nulla tempor vulputate dolor, nec dignissim quam convallis ut. Praesent vitae commodo felis, ut iaculis felis.
+                    </div>
+                    <div class="fd-wizard__next-step">
+                        <button class="fd-button fd-button--emphasized">Next Step</button>
+                    </div>
                 </div>
             </section>
             <footer>
@@ -1301,16 +1320,18 @@ export const Mobile = () => `<div style="display: flex; justify-content: space-a
                 </ul>
             </nav>
             <section class="fd-wizard__content fd-wizard__content--sm" id="wizard-section-7" style="min-height: 300px;">
-                <div
-                style="
-                    width:100%;
-                    background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                    height: 300px;
-                    background-size:cover;"
-                role="img"
-                aria-label="Image 4" />
-                <div class="fd-wizard__next-step fd-wizard__next-step--floating">
-                    <button class="fd-button fd-button--emphasized">Next Step</button>
+                <div class="fd-wizard__step-content-container">
+                    <div
+                    style="
+                        width:100%;
+                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
+                        height: 300px;
+                        background-size:cover;"
+                    role="img"
+                    aria-label="Image 4" />
+                    <div class="fd-wizard__next-step fd-wizard__next-step--floating">
+                        <button class="fd-button fd-button--emphasized">Next Step</button>
+                    </div>
                 </div>
             </section>
             <footer>
