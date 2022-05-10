@@ -78,6 +78,10 @@ $block: #{$fd-namespace}-avatar-group;
   }
 
   &__more-button {
+    @include fd-fiori-pseudo-focus(0.1875rem);
+
+    outline: none !important;
+
     .#{$block}__button-text {
       font-size: inherit;
 
@@ -113,8 +117,6 @@ $block: #{$fd-namespace}-avatar-group;
   @each $set-name, $size-set in $fd-avatar-group-more-button-sizes {
     &--#{$set-name} {
       .#{$block}__more-button {
-        @include fd-fiori-focus($fd-focus-outline-offset);
-
         height: map_get($size-set, "ratio");
         max-height: map_get($size-set, "ratio");
         min-height: map_get($size-set, "ratio");
