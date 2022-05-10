@@ -78,7 +78,7 @@ $block: #{$fd-namespace}-avatar-group;
   }
 
   &__more-button {
-    @include fd-fiori-pseudo-focus(0.1875rem);
+    @include fd-fiori-pseudo-focus();
 
     outline: none !important;
 
@@ -87,6 +87,15 @@ $block: #{$fd-namespace}-avatar-group;
 
       bdi {
         font-size: inherit;
+      }
+    }
+
+    @include fd-focus() {
+      &::after {
+        top: var(--fdAvatarGroup_MoreButton_Vertical_Offset);
+        bottom: var(--fdAvatarGroup_MoreButton_Vertical_Offset);
+        left: -0.25rem;
+        right: -0.25rem;
       }
     }
   }
