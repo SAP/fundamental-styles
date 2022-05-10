@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.69...v0.24.0-rc.70) (2022-05-10)
+
+
+### Bug Fixes
+
+* **styles:** fixed card HC theme borders ([#3400](https://github.com/SAP/fundamental-styles/issues/3400)) ([2dc2352](https://github.com/SAP/fundamental-styles/commit/2dc2352b986cd777fa1198868483f97cdc2477dd))
+
 ## [0.24.0-rc.69](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.68...v0.24.0-rc.69) (2022-05-10)
 
 
