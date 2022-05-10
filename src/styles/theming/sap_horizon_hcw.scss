@@ -68,9 +68,9 @@
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);
-  --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
+  --fdAvatar_Tile_BackgroundColor: var(--sapBackgroundColor);
   --fdAvatar-Transparent_BackgroundColor: transparent;
-  --fdAvatar_Border: none;
+  --fdAvatar_Border: 0.0625rem solid var(--sapGroup_ContentBorderColor);
   --fdAvatar_Accent_Color: var(--sapContent_ContrastTextColor);
   --fdAvatar_Accent_Color_1: var(--sapBackgroundColor);
   --fdAvatar_Accent_Color_2: var(--sapBackgroundColor);
