@@ -26,10 +26,11 @@ body {
 
   [id^="popover_avatar_"] {
     left: -136px;
+  }
 
-    [dir="rtl"] & {
-      right: -136px;
-    }
+  [dir="rtl"] [id^="popover_avatar_"] {
+    left: auto;
+    right: 8px;
   }
 
   [id^="popover_avatar_more_"] {

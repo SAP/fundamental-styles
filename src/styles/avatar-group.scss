@@ -78,11 +78,24 @@ $block: #{$fd-namespace}-avatar-group;
   }
 
   &__more-button {
+    @include fd-fiori-pseudo-focus();
+
+    outline: none !important;
+
     .#{$block}__button-text {
       font-size: inherit;
 
       bdi {
         font-size: inherit;
+      }
+    }
+
+    @include fd-focus() {
+      &::after {
+        top: var(--fdAvatarGroup_MoreButton_Vertical_Offset);
+        bottom: var(--fdAvatarGroup_MoreButton_Vertical_Offset);
+        left: -0.25rem;
+        right: -0.25rem;
       }
     }
   }
@@ -113,8 +126,6 @@ $block: #{$fd-namespace}-avatar-group;
   @each $set-name, $size-set in $fd-avatar-group-more-button-sizes {
     &--#{$set-name} {
       .#{$block}__more-button {
-        @include fd-fiori-focus($fd-focus-outline-offset);
-
         height: map_get($size-set, "ratio");
         max-height: map_get($size-set, "ratio");
         min-height: map_get($size-set, "ratio");
