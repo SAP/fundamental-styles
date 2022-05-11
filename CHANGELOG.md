@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.70...v0.24.0-rc.71) (2022-05-11)
+
+
+### Features
+
+* grid list partial items, auto-height, selection labels position fix ([#3374](https://github.com/SAP/fundamental-styles/issues/3374)) ([0a733d0](https://github.com/SAP/fundamental-styles/commit/0a733d0bbdd091455aa32638981e690b1ed3d663))
+
 ## [0.24.0-rc.70](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.69...v0.24.0-rc.70) (2022-05-10)
 
 
