@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.74...v0.24.0-rc.75) (2022-05-11)
+
+
+### Bug Fixes
+
+* **styles:** dynamic page subtitle color ([#3397](https://github.com/SAP/fundamental-styles/issues/3397)) ([9918c76](https://github.com/SAP/fundamental-styles/commit/9918c7693cd443798aaf0e4308c61d3cfc51755d))
+
 ## [0.24.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.73...v0.24.0-rc.74) (2022-05-11)
 
 
