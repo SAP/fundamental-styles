@@ -2276,7 +2276,7 @@ exports[`Storyshots Components/User Menu Compact 1`] = `
                                 
                   <button
                     aria-label="Search"
-                    class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
+                    class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact"
                   >
                     
                                     
@@ -3242,7 +3242,7 @@ exports[`Storyshots Components/User Menu In-Place Navigation 1`] = `
                                 
                   <button
                     aria-label="Search"
-                    class="fd-input-group__button fd-button fd-button--icon fd-button--transparent"
+                    class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact"
                   >
                     
                                     

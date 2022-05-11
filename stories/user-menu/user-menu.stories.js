@@ -283,7 +283,7 @@ export const Navigation = () => `<div class="fddocs-container" style="margin-bot
                         <div class="fd-input-group">
                             <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde118" name="" aria-label="Search" placeholder="Search">
                             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search">
+                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Search">
                                     <i class="sap-icon--search"></i>
                                 </button>
                             </span>
@@ -909,7 +909,7 @@ export const Compact = () => `<div class="fddocs-container" style="margin-bottom
                         <div class="fd-input-group">
                             <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde118" name="" aria-label="Search" placeholder="Search">
                             <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Search">
+                                <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Search">
                                     <i class="sap-icon--search"></i>
                                 </button>
                             </span>
