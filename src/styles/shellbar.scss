@@ -121,8 +121,8 @@ $block: #{$fd-namespace}-shellbar;
       cursor: text;
 
       @include fd-hover() {
-        border-color: var(--sapField_BorderColor);
-        box-shadow: var(--fdShellbar_Button_Hover_Shadow);
+        border-color: var(--fdShellbar_Input_Hover_Border_Color);
+        box-shadow: var(--sapContent_Interaction_Shadow);
       }
 
       &-input {
@@ -134,7 +134,7 @@ $block: #{$fd-namespace}-shellbar;
           &,
           & + .#{$block}__input-group-addon {
             background: transparent;
-            background-color: $fd-shellbar-hover-background !important;
+            background-color: var(--fdShellbar_Input_Hover_Background) !important;
           }
         }
 
@@ -152,22 +152,22 @@ $block: #{$fd-namespace}-shellbar;
         height: var(--fdShellbar_Input_Addon_Dimension);
         min-width: var(--fdShellbar_Input_Addon_Dimension);
         border-radius: var(--fdShellbar_Input_Border_Radius);
+        border-width: var(--fdShellbar_Input_Addon_Border_Width);
       }
     }
   }
 
   .#{$block}__button {
-    background: $fd-shellbar-background;
-    border: var(--fdShellbar_Button_Border);
+    outline-color: var(--fdShellbar_Button_Outline_Color);
     color: var(--sapShell_InteractiveTextColor);
 
-    &:not(.#{$block}__button--menu) {
+    &:not(&--menu) {
       padding: 0;
     }
 
     @include fd-hover() {
-      background: $fd-shellbar-hover-background;
-      box-shadow: var(--fdShellbar_Button_Hover_Shadow);
+      border-color: var(--fdShellbar_Button_Hover_Border_Color);
+      background-color: $fd-shellbar-hover-background;
 
       @include fd-disabled() {
         background: $fd-shellbar-background;
@@ -175,8 +175,8 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     @include fd-active() {
+      border-color: var(--fdShellbar_Button_Active_Border_Color);
       background: var(--sapShell_Active_Background);
-      box-shadow: var(--fdShellbar_Button_Active_Shadow);
       color: var(--sapShell_Active_TextColor);
     }
 
