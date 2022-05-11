@@ -205,7 +205,7 @@
   --fdCalendar_Active_Focus_Item_Outline_Color: var(--sapContent_ContrastFocusColor);
   --fdCalendar_Active_Focus_Item_Outline_Offset: -0.1875rem;
   --fdCalendar_Item_Current_Border: 0.0625rem solid var(--sapList_Background);
-  --fdCalendar_BorderCornerRadius: var(--sapElement_BorderCornerRadius);
+  --fdCalendar_Border_Radius: var(--sapElement_BorderCornerRadius);
   --fdCalendar_Item_Active_Background_Hover: var(--sapContent_Selected_Hover_Background);
   --fdCalendar_Special_Day_Marker_Height: 0.25rem;
   --fdCalendar_Item_Current_Inner_Border_Color: var(--sapList_Background);
@@ -214,6 +214,7 @@
   --fdCalendar_Item_Current_Active_Special_Day_Bottom: -0.0625rem;
   --fdCalendar_Item_Current_Active_Special_Day_Left: 0;
   --fdCalendar_Item_Current_Active_Special_Day_Right: 0;
+  --fdCalendar_Month_Year_Item_Border_Radius: 0;
 
   /* Form Header */
   --fdFormHeader_Border_Width: calc(3 * var(--sapList_BorderWidth));

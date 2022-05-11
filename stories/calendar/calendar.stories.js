@@ -69,48 +69,56 @@ These modifier classes are used to display various calendar navigation actions.\
 
 These modifier classes are used to style various calendar grid elements.\n
 
-| Modifier class | | Use to... |
-| -------------:| ------------- | :-------------- |
-| <code>fd-calendar__item</code> | <div class="fd-calendar__item" style="max-width: 2rem;"> <span class="fd-calendar__text" role="button">30</span> </div> | Represent calendar cell
-| <code>fd-calendar__item--weekend</code> | <div class="fd-calendar__item fd-calendar__item--weekend" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style weekend days
-| <code>fd-calendar__item--other-month</code> | <div class="fd-calendar__item fd-calendar__item--other-month" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style days outside of current month
-| <code>fd-calendar__item--current</code> | <div class="fd-calendar__item fd-calendar__item--current" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style current day, month or year
-| <code>fd-calendar__item--range</code> | <div class="fd-calendar__item fd-calendar__item--range" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style calendar elements placed between start and end range
-| <code>fd-calendar__item--side-helper</code> | <div class="fd-calendar__item fd-calendar__item--side-helper" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style calendar grid side helpers like week number or day shortcut
+<div class="fd-calendar">
+    | Modifier class | | Use to... |
+    | -------------:| ------------- | :-------------- |
+    | <code>fd-calendar__item</code> | <div class="fd-calendar__item" style="max-width: 2rem;"> <span class="fd-calendar__text" role="button">30</span> </div> | Represent calendar cell
+    | <code>fd-calendar__item--weekend</code> | <div class="fd-calendar__item fd-calendar__item--weekend" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style weekend days
+    | <code>fd-calendar__item--other-month</code> | <div class="fd-calendar__item fd-calendar__item--other-month" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style days outside of current month
+    | <code>fd-calendar__item--current</code> | <div class="fd-calendar__item fd-calendar__item--current" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style current day, month or year
+    | <code>fd-calendar__item--range</code> | <div class="fd-calendar__item fd-calendar__item--range" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style calendar elements placed between start and end range
+    | <code>fd-calendar__item--side-helper</code> | <div class="fd-calendar__item fd-calendar__item--side-helper" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style calendar grid side helpers like week number or day shortcut
+</div>
 
 ### States
-These modifier classes are used to style various states of calendar grid elements.\n
-| Modifier class | | Use to... |
-| -------------:| ------------- | :-------------- |
-| <code>is-focus</code> | <div class="fd-calendar__item is-focus" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style focused calendar elements
-| <code>is-active</code> | <div class="fd-calendar__item is-active" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style selected calendar elements
-| <code>is-disabled</code> | <div class="docs-calendar-table__element fd-calendar__item is-disabled" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style disabled calendar elements
+
+These modifier classes are used to style various states of calendar grid elements.
+
+<div class="fd-calendar fd-calendar__content">
+    | Modifier class | | Use to... |
+    | -------------:| ------------- | :-------------- |
+    | <code>is-focus</code> | <div class="fd-calendar__item is-focus" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style focused calendar elements
+    | <code>is-active</code> | <div class="fd-calendar__item is-active" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style selected calendar elements
+    | <code>is-disabled</code> | <div class="docs-calendar-table__element fd-calendar__item is-disabled" style="max-width: 2rem;"><span class="fd-calendar__text" role="button">30</span></div> | Style disabled calendar elements
+</div>
 
 ### Special days
 These classes are used to style calendar grid elements with colors, which are identified by numeric modifier classes.\n
 
-| Modifier class | Color |
-|-:|:-|
-| <code>fd-calendar__special-day--1</code> |  <div  class="fd-calendar__item fd-calendar__special-day--1"><span class="fd-calendar__text" role="button">30</span></div>
-| <code>fd-calendar__special-day--2</code> | <div  class="fd-calendar__item fd-calendar__special-day--2"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--3</code> | <div  class="fd-calendar__item fd-calendar__special-day--3"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--4</code> | <div  class="fd-calendar__item fd-calendar__special-day--4"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--5</code> | <div  class="fd-calendar__item fd-calendar__special-day--5"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--6</code> | <div  class="fd-calendar__item fd-calendar__special-day--6"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--7</code> | <div  class="fd-calendar__item fd-calendar__special-day--7"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--8</code> | <div  class="fd-calendar__item fd-calendar__special-day--8"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--9</code> | <div  class="fd-calendar__item fd-calendar__special-day--9"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--10</code> | <div  class="fd-calendar__item fd-calendar__special-day--10"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--11</code> | <div  class="fd-calendar__item fd-calendar__special-day--11"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--12</code> | <div  class="fd-calendar__item fd-calendar__special-day--12"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--13</code> | <div  class="fd-calendar__item fd-calendar__special-day--13"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--14</code> | <div  class="fd-calendar__item fd-calendar__special-day--14"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--15</code> | <div  class="fd-calendar__item fd-calendar__special-day--15"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--16</code> | <div  class="fd-calendar__item fd-calendar__special-day--16"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--17</code> | <div  class="fd-calendar__item fd-calendar__special-day--17"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--18</code> | <div  class="fd-calendar__item fd-calendar__special-day--18"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--19</code> | <div  class="fd-calendar__item fd-calendar__special-day--19"><span class="fd-calendar__text" role="button">30</span></div> |
-| <code>fd-calendar__special-day--20</code> | <div  class="fd-calendar__item fd-calendar__special-day--20"><span class="fd-calendar__text" role="button">30</span></div> |
+<div class="fd-calendar">
+    | Modifier class | Color |
+    |-:|:-|
+    | <code>fd-calendar__special-day--1</code> |  <div  class="fd-calendar__item fd-calendar__special-day--1"><span class="fd-calendar__text" role="button">30</span></div>
+    | <code>fd-calendar__special-day--2</code> | <div  class="fd-calendar__item fd-calendar__special-day--2"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--3</code> | <div  class="fd-calendar__item fd-calendar__special-day--3"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--4</code> | <div  class="fd-calendar__item fd-calendar__special-day--4"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--5</code> | <div  class="fd-calendar__item fd-calendar__special-day--5"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--6</code> | <div  class="fd-calendar__item fd-calendar__special-day--6"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--7</code> | <div  class="fd-calendar__item fd-calendar__special-day--7"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--8</code> | <div  class="fd-calendar__item fd-calendar__special-day--8"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--9</code> | <div  class="fd-calendar__item fd-calendar__special-day--9"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--10</code> | <div  class="fd-calendar__item fd-calendar__special-day--10"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--11</code> | <div  class="fd-calendar__item fd-calendar__special-day--11"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--12</code> | <div  class="fd-calendar__item fd-calendar__special-day--12"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--13</code> | <div  class="fd-calendar__item fd-calendar__special-day--13"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--14</code> | <div  class="fd-calendar__item fd-calendar__special-day--14"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--15</code> | <div  class="fd-calendar__item fd-calendar__special-day--15"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--16</code> | <div  class="fd-calendar__item fd-calendar__special-day--16"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--17</code> | <div  class="fd-calendar__item fd-calendar__special-day--17"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--18</code> | <div  class="fd-calendar__item fd-calendar__special-day--18"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--19</code> | <div  class="fd-calendar__item fd-calendar__special-day--19"><span class="fd-calendar__text" role="button">30</span></div> |
+    | <code>fd-calendar__special-day--20</code> | <div  class="fd-calendar__item fd-calendar__special-day--20"><span class="fd-calendar__text" role="button">30</span></div> |
+</div>
 `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['bar', 'dialog', 'tile', 'calendar', 'button', 'segmented-button', 'icon']
