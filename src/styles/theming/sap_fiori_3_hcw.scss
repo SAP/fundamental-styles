@@ -224,7 +224,7 @@
   --fdFormHeader_Border_Width: calc(3 * var(--sapList_BorderWidth));
 
   /* Badge */
-  --fdBadge_Border_Color: var(--sapContent_ForegroundBorderColor);
+  --fdBadge_Border_Color: var(--sapGroup_ContentBorderColor);
 
   /** Flexible Column Layout */
   --fdFlexibleColumnLayout_Toggle_Image_Color: var(--sapObjectHeader_BorderColor);
