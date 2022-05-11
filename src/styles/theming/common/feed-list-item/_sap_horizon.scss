@@ -1,0 +1,11 @@
+:root {
+  --fdFeed_List_Item_Background: var(--sapList_Background);
+  --fdFeed_List_Item_Padding: 1rem 1rem 0.5rem;
+  --fdFeed_List_Item_Byline_Text_Color: var(--sapContent_LabelColor);
+  --fdFeed_List_Item_More_Transform: capitalize;
+  --fdFeed_List_Mobile_Actions_Button_Padding_X: calc(0.5rem - var(--sapButton_BorderWidth));
+  --fdFeed_List_Mobile_Actions_Button_Padding_Height: 1.625rem;
+  --fdFeed_List_Mobile_Actions_Button_Padding_Width: 2rem;
+  --fdFeed_List_Item_Border_Top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  --fdFeed_List_Item_Border_Bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+}
