@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.78...v0.24.0-rc.79) (2022-05-11)
+
+
+### Bug Fixes
+
+* **styles:** shellbar various issues ([#3406](https://github.com/SAP/fundamental-styles/issues/3406)) ([fcaa18d](https://github.com/SAP/fundamental-styles/commit/fcaa18d51424c1e4e89c59def155b9a088fbe6ff))
+
 ## [0.24.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.77...v0.24.0-rc.78) (2022-05-11)
 
 
