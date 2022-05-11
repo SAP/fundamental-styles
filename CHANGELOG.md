@@ -1,4 +1,16 @@
 
+## [0.24.0-rc.74](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.73...v0.24.0-rc.74) (2022-05-11)
+
+
+### Features
+
+* feed list item horizon theme [ci visual] ([#3384](https://github.com/SAP/fundamental-styles/issues/3384)) ([3ff12cc](https://github.com/SAP/fundamental-styles/commit/3ff12ccda9d9e652521006f750733f15a7e38a04))
+
+
+### Bug Fixes
+
+* safari switch outline visibility [ci visual] ([#3395](https://github.com/SAP/fundamental-styles/issues/3395)) ([5de74f3](https://github.com/SAP/fundamental-styles/commit/5de74f36bbfe0013bf7752d236b2f2037e3e96f0))
+
 ## [0.24.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.72...v0.24.0-rc.73) (2022-05-11)
 
 
