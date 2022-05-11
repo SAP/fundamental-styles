@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.73](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.72...v0.24.0-rc.73) (2022-05-11)
+
+
+### Bug Fixes
+
+* **styles:** calendar horizon issues ([#3392](https://github.com/SAP/fundamental-styles/issues/3392)) ([cc9b698](https://github.com/SAP/fundamental-styles/commit/cc9b6989db3a5e928633835ce4a72a08ebed2d3a))
+
 ## [0.24.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.71...v0.24.0-rc.72) (2022-05-11)
 
 
