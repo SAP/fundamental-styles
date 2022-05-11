@@ -269,6 +269,7 @@ $fd-micro-process-flow-semantic-colors: (
       display: block;
       position: absolute;
       border-bottom: 0.0625rem solid var(--sapContent_ForegroundBorderColor);
+      z-index: 1;
     }
 
     &--intermediate {
@@ -287,6 +288,8 @@ $fd-micro-process-flow-semantic-colors: (
 
     .#{$block}__intermediary-item {
       line-height: 1;
+      position: relative;
+      z-index: 2;
     }
   }
 
