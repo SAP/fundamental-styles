@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.78](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.77...v0.24.0-rc.78) (2022-05-11)
+
+
+### Bug Fixes
+
+* **styles:** popover arrow styles ([#3407](https://github.com/SAP/fundamental-styles/issues/3407)) ([4af0007](https://github.com/SAP/fundamental-styles/commit/4af00074045239d76d24100561181c1aa06a1ff7))
+
 ## [0.24.0-rc.77](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.76...v0.24.0-rc.77) (2022-05-11)
 
 
