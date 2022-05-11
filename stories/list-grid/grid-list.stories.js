@@ -1170,3 +1170,97 @@ To create a grid list footer, follow the current example.
         }
     }
 };
+
+export const PartialItems = () => `<div style="min-height: 300px;">
+<div class="fd-grid-list fd-grid-list--mode-delete">
+    <div class="fd-container">
+        <div class="fd-row">
+            <div class="fd-col fd-col--12">
+                <div class="fd-toolbar fd-toolbar--solid">
+                    <span>For every item class <code>fd-grid-list__item--height-auto</code> is applied.</span>
+                </div>
+            </div>
+          </div>
+      
+        <div class="fd-row">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--height-auto fd-grid-list__item--link">
+                    <div class="fd-grid-list__item-body">
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">No image</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--height-auto">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>No title & description</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--height-auto">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">No body</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--height-auto">
+                    <div class="fd-grid-list__item-body">
+                        <div class="fd-grid-list__item-content">
+                            <p>No image, title & description</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+`;
+
+PartialItems.storyName = 'No height / Partial Items';
+
+PartialItems.parameters = {
+    docs: {
+        description: {
+            story: `
+It's possible to have items without some parts like image, title & description or body.
+
+But please note that by default items have equal height set by the tallest item, you can overwrite it by yourself or use
+class \`fd-grid-list__item--height-auto\` to set item's height to auto.
+`
+        }
+    }
+};
