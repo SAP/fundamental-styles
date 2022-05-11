@@ -30,7 +30,7 @@ To ensure that the carousel is accessible, a div element with class \`fd-carouse
     }
 };
 
-export const CarouselBottom = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const CarouselBottom = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Navigation buttons in page indicator</h4>
     <div
         class="fd-carousel"
@@ -194,7 +194,7 @@ CarouselBottom.parameters = {
     }
 };
 
-export const CarouselTop = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const CarouselTop = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Navigation buttons in page indicator</h4>
     <div
         class="fd-carousel"
@@ -371,7 +371,7 @@ CarouselTop.parameters = {
     }
 };
 
-export const CarouselNoNavigation = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;">
+export const CarouselNoNavigation = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Hiding navigation buttons in page indicator</h4>
     <div
         class="fd-carousel fd-carousel--no-navigation"
@@ -483,7 +483,7 @@ CarouselNoNavigation.parameters = {
     }
 };
 
-export const HorizontalCarousel = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;">
+export const HorizontalCarousel = () => `<div style="display: flex; flex-direction: column; align-items: center; height: 25rem;">
     <h4>Items in horizontal direction</h4>
     <div
         class="fd-carousel"
@@ -570,13 +570,13 @@ HorizontalCarousel.parameters = {
     }
 };
 
-export const Error = () => `<div style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;">
+export const Error = () => `<div style="display: flex; flex-direction: column; align-items: center; height: 25rem;">
     <h4>Error in loading items</h4>
     <div
         class="fd-carousel fd-carousel--no-navigation"
-        style="max-width: 30rem; max-height: 15.5rem;"
+        style="max-width: 30rem"
         data-ride="carousel">
-        <div class="fd-carousel__content">
+        <div class="fd-carousel__content" style="height: 20rem;">
             <div class="fd-message-page">
                 <div class="fd-message-page__container">
                 <div class="fd-message-page__icon-container">
