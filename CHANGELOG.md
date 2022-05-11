@@ -1,4 +1,15 @@
 
+## [0.24.0-rc.76](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.75...v0.24.0-rc.76) (2022-05-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** The button from compact input group needs a compact modifier class.
+
+### Bug Fixes
+
+* **styles:** add fix for user  menu search field ([#3403](https://github.com/SAP/fundamental-styles/issues/3403)) ([cfd5928](https://github.com/SAP/fundamental-styles/commit/cfd5928a04407d31206f72a9acf37408a771790e))
+
 ## [0.24.0-rc.75](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.74...v0.24.0-rc.75) (2022-05-11)
 
 
