@@ -89,6 +89,7 @@
     @content;
   }
 }
+
 // Taken from https://github.com/thoughtbot/bourbon/blob/master/core/bourbon/library/_triangle.scss
 @mixin triangle($size, $color, $direction, $varcolor: null) {
   $width: nth($size, 1);
@@ -240,7 +241,7 @@
 
   @include fd-hover() {
     color: var(--sapLink_Hover_Color);
-    text-decoration: var(--fdLink_Text_Decoration_Opposite);
+    text-decoration: var(--fdLink_Text_Decoration_Hover);
   }
 
   @include fd-focus() {
@@ -253,12 +254,12 @@
     outline-width: var(--fdLink_Hover_Outline_Width);
     outline-color: var(--fdLink_Hover_Outline_Color);
     outline-style: var(--fdLink_Hover_Outline_Style);
-    text-decoration: var(--fdLink_Text_Decoration_Opposite);
+    text-decoration: var(--fdLink_Text_Decoration_Focus);
   }
 
   @include fd-active() {
     color: var(--sapLink_Active_Color);
-    text-decoration: var(--fdLink_Text_Decoration_Opposite);
+    text-decoration: var(--fdLink_Text_Decoration_Active);
   }
 
   &--inverted {
@@ -276,9 +277,15 @@
 
   &--subtle {
     color: var(--sapLink_SubtleColor);
+    text-decoration: var(--fdLink_Text_Decoration_Subtle);
+
+    @include fd-hover() {
+      text-decoration: var(--fdLink_Text_Decoration_Subtle_Hover);
+    }
   }
 
   @include fd-disabled() {
+    text-decoration: var(--fdLink_Text_Decoration_Disabled);
     opacity: var(--sapContent_DisabledOpacity);
     color: var(--sapLinkColor);
     pointer-events: none;

@@ -19,6 +19,7 @@
 @import "./common/menu/sap_fiori";
 @import "./common/checkbox/sap_foiri";
 @import "./common/radio/sap_fiori";
+@import "./common/link/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -235,17 +236,11 @@
   /* Table */
   --fdTable_Hover_Down_Color: inherit;
 
-  /* Link */
-  --fdLink_Text_Decoration_Opposite: underline;
-  --fdLink_Text_Decoration: none;
-  --fdLink_Text_Focus_Color: var(--sapLinkColor);
-  --fdLink_Focus_Background: transparent;
-  --fdLink_Focus_Border_Radius: 0;
-  --fdLink_Focus_Text_Shadow: none;
-  --fdLink_Hover_Outline_Offset: -0.0625rem;
-  --fdLink_Hover_Outline_Width: var(--sapContent_FocusWidth);
-  --fdLink_Hover_Outline_Color: var(--sapContent_FocusColor);
-  --fdLink_Hover_Outline_Style: var(--sapContent_FocusStyle);
+  /* Message Box */
+  --fdMessage_Box_Error_Box_Shadow: inset 0 -0.0625rem var(--sapErrorBorderColor), var(--sapContent_HeaderShadow);
+  --fdMessage_Box_Success_Box_Shadow: inset 0 -0.0625rem var(--sapSuccessBorderColor), var(--sapContent_HeaderShadow);
+  --fdMessage_Box_Warning_Box_Shadow: inset 0 -0.0625rem var(--sapWarningBorderColor), var(--sapContent_HeaderShadow);
+  --fdMessage_Box_Information_Box_Shadow: inset 0 -0.0625rem var(--sapInformationBorderColor), var(--sapContent_HeaderShadow);
 
   /* Feed Input */
   --fdFeed_Input_Placeholder_Font_Style: italic;
