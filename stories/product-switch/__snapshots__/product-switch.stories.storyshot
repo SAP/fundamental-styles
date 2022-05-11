@@ -699,8 +699,21 @@ exports[`Storyshots Components/Product Switch Shellbar 1`] = `
 >
   
 
+  <style>
+    
+    .docs-product-switch-shellbar {
+        background-color: #354A5F; 
+        padding: 6px; 
+        display: flex;
+        justify-content: end;
+    }
+
+  </style>
+  
+
+
   <div
-    style="background-color: #354A5F;text-align: right;padding: 6px;"
+    class="docs-product-switch-shellbar"
   >
     
     

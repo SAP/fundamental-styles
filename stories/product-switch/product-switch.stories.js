@@ -18,8 +18,19 @@ export default {
     }
 };
 
-export const Shellbar = () => `
-<div style="background-color: #354A5F;text-align: right;padding: 6px;">
+const localStyles = `
+<style>
+    .docs-product-switch-shellbar {
+        background-color: #354A5F; 
+        padding: 6px; 
+        display: flex;
+        justify-content: end;
+    }
+</style>
+`;
+
+export const Shellbar = () => `${localStyles}
+<div class="docs-product-switch-shellbar">
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
