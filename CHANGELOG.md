@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.72](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.71...v0.24.0-rc.72) (2022-05-11)
+
+
+### Features
+
+* **styles:** add delta horizon theming for Carousel ([#3380](https://github.com/SAP/fundamental-styles/issues/3380)) ([c39ac65](https://github.com/SAP/fundamental-styles/commit/c39ac658d8c784c2abbdf561832267f3cda70d17))
+
 ## [0.24.0-rc.71](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.70...v0.24.0-rc.71) (2022-05-11)
 
 
