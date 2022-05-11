@@ -25,10 +25,10 @@
   --fdSwitch_Active_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Selected_BorderColor);
   --fdSwitch_Border: none;
   --fdSwitch_Slider_Box_Sizing: content-box;
-  --fdSwitch_Focus_Border_Display: none;
-  --fdSwitch_Focus_Outline_Color: var(--sapContent_FocusColor);
   --fdSwitch_Padding: 0.625rem 0;
-  --fdSwitch_Focus_Outline_Vertical_Offset: 0;
+  --fdSwitch_Focus_Outline_Vertical_Offset: calc(var(--sapContent_FocusWidth) * -2);
+  --fdSwitch_Focus_Outline_Horizontal_Offset: calc(var(--sapContent_FocusWidth) * -2);
+  --fdSwitch_Focus_Outline_Border_Radius: calc(var(--fdSwitch_Border_Radius) + (var(--sapContent_FocusWidth) * 2));
 
   // Switch borders
   --fdSwitch_Handle_Border_Color: var(--sapButton_Track_BorderColor);

@@ -196,23 +196,18 @@ $block: #{$fd-namespace}-switch;
   }
 
   &__input:focus + .#{$block}__slider {
-    outline-offset: 0.125rem;
-    outline-width: 0.125rem;
-    outline-style: solid;
-    outline-color: var(--fdSwitch_Focus_Outline_Color);
-
     &::before {
       position: absolute;
-      display: var(--fdSwitch_Focus_Border_Display);
-      outline-offset: -0.0625rem;
+      display: block;
       border-width: var(--sapContent_FocusWidth);
       border-color: var(--sapContent_FocusColor);
       border-style: var(--sapContent_FocusStyle);
       content: '';
       top: var(--fdSwitch_Focus_Outline_Vertical_Offset);
       bottom: var(--fdSwitch_Focus_Outline_Vertical_Offset);
-      left: 0;
-      right: 0;
+      left: var(--fdSwitch_Focus_Outline_Horizontal_Offset);
+      right: var(--fdSwitch_Focus_Outline_Horizontal_Offset);
+      border-radius: var(--fdSwitch_Focus_Outline_Border_Radius);
     }
   }
 
