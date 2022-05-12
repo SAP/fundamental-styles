@@ -16,7 +16,7 @@
 @import "./common/splitter/sap_horizon";
 @import "./common/splitter/sap_horizon_hc";
 @import "./common/input/sap_horizon";
-@import "./common/input-group/sap_horizon";
+@import "./common/input-group/sap_horizon_hc";
 @import "./common/wizard/sap_horizon";
 @import "./common/wizard/sap_horizon_hc";
 @import "./common/panel/sap_horizon";
@@ -197,7 +197,7 @@
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
-  --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) transparent;
+  --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) var(--sapList_SelectionBorderColor);
 
   /* Input */
   --fdInput_Text_Shadow: none;
