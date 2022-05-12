@@ -702,3 +702,21 @@
   border-width: $borderWidth;
   border-style: $borderStyle;
 }
+
+@mixin fd-set-border-left($border) {
+  border-left: $border;
+
+  @include fd-rtl() {
+    border-left: none;
+    border-right: $border;
+  }
+}
+
+@mixin fd-set-border-right($border) {
+  border-right: $border;
+
+  @include fd-rtl() {
+    border-right: none;
+    border-left: $border;
+  }
+}
