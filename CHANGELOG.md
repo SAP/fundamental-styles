@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.80...v0.24.0-rc.81) (2022-05-12)
+
+
+### Bug Fixes
+
+* **styles:** fixed spacing when label is empty ([#3399](https://github.com/SAP/fundamental-styles/issues/3399)) ([eff225b](https://github.com/SAP/fundamental-styles/commit/eff225be4048c0df9710bf1a163cb12beca6a531))
+
 ## [0.24.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.79...v0.24.0-rc.80) (2022-05-12)
 
 
