@@ -28,11 +28,13 @@ $block: #{$fd-namespace}-busy-indicator;
   text-align: center;
 
   &-extended {
+    $extendedSelector: &;
+
     @include fd-flex-center() {
       flex-direction: column;
     }
 
-    &.#{$block}-extended--message-toast {
+    &#{$extendedSelector}--message-toast {
       width: 23.125rem;
       max-width: 23.125rem;
       box-shadow: var(--sapContent_Shadow2);
