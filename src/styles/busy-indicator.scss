@@ -1,122 +1,92 @@
-
 @import "./new-settings";
 @import "./mixins";
 
 $block: #{$fd-namespace}-busy-indicator;
-$fd-dots-color: var(--fdBusy_Indicator_Dot_Color);
-$fd-dots-color-contrast: var(--fdBusy_Indicator_Dot_Contrast_Color);
-// default sizes
-$fd-dots-size: 0.5rem;
 
-// medium sizes
-$fd-dots-size-m: 1rem;
+.#{$block} {
+  --Dot_Color: var(--fdBusy_Indicator_Dot_Color);
+  --Dot_Size: 0.5rem;
 
-// large sizes
-$fd-dots-size-l: 2rem;
+  &.contrast {
+    --Dot_Color: var(--fdBusy_Indicator_Dot_Contrast_Color);
+  }
 
-.#{$block},
-.#{$block}--m,
-.#{$block}--l {
+  &--m {
+    --Dot_Size: 1rem;
+  }
+
+  &--l {
+    --Dot_Size: 2rem;
+  }
+
   @include fd-reset();
 
   position: relative;
   display: block;
   font-size: 0;
-  color: $fd-dots-color;
+  color: var(--Dot_Color);
   text-align: center;
-}
 
-.#{$block}.contrast,
-.#{$block}--m.contrast,
-.#{$block}--l.contrast {
-  color: $fd-dots-color-contrast;
+  &-extended {
+    @include fd-flex-center() {
+      flex-direction: column;
+    }
 
-  .#{$block}--circle-0,
-  .#{$block}--circle-1,
-  .#{$block}--circle-2 {
-    color: $fd-dots-color-contrast;
-  }
-}
+    &.#{$block}-extended--message-toast {
+      width: 23.125rem;
+      max-width: 23.125rem;
+      box-shadow: var(--sapContent_Shadow2);
+      text-shadow: var(--sapContent_TextShadow);
+      background-color: var(--sapPageFooter_Background);
+    }
 
-.#{$block}--circle-0,
-.#{$block}--circle-1,
-.#{$block}--circle-2 {
-  @include fd-reset();
+    &__label {
+      @include fd-reset();
 
-  color: $fd-dots-color;
-  position: relative;
-  width: $fd-dots-size;
-  height: $fd-dots-size;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: currentColor;
-}
-
-.#{$block}-extended {
-  @include fd-flex-center() {
-    flex-direction: column;
-  };
-
-  &.#{$block}-extended--message-toast {
-    width: 23.125rem;
-    max-width: 23.125rem;
-    box-shadow: var(--sapContent_Shadow2);
-    text-shadow: var(--sapContent_TextShadow);
-    background-color: var(--sapPageFooter_Background);
+      display: block;
+      color: var(--sapPageFooter_TextColor);
+      margin-top: 1rem;
+      text-align: center;
+    }
   }
 
-  &__label {
+  &__circle-0,
+  &__circle-1,
+  &__circle-2 {
     @include fd-reset();
 
-    display: block;
-    color: var(--sapPageFooter_TextColor);
-    margin-top: 1rem;
-    text-align: center;
+    color: var(--Dot_Color);
+    position: relative;
+    width: var(--Dot_Size);
+    height: var(--Dot_Size);
+    display: inline-block;
+    border-radius: 50%;
+    background-color: currentColor;
   }
-}
 
-.#{$block}--circle-0 {
-  animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
-}
+  &__circle-0 {
+    animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+  }
 
-.#{$block}--circle-1 {
-  animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
-  animation-delay: 200ms;
-}
+  &__circle-1 {
+    animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+    animation-delay: 200ms;
+  }
 
-.#{$block}--circle-2 {
-  animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
-  animation-delay: 400ms;
-}
-
-.#{$block}--m .#{$block}--circle-0,
-.#{$block}--m .#{$block}--circle-1,
-.#{$block}--m .#{$block}--circle-2 {
-  width: $fd-dots-size-m;
-  height: $fd-dots-size-m;
-}
-
-.#{$block}--l .#{$block}--circle-0,
-.#{$block}--l .#{$block}--circle-1,
-.#{$block}--l .#{$block}--circle-2 {
-  width: $fd-dots-size-l;
-  height: $fd-dots-size-l;
+  &__circle-2 {
+    animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+    animation-delay: 400ms;
+  }
 }
 
 @keyframes grow {
   0%,
   50%,
   100% {
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
     transform: scale(0.5);
   }
 
   25% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
   }
 }

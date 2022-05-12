@@ -31,20 +31,20 @@ The ongoing operation only covers part of a screen that has multiple controls, a
 };
 
 export const Standard = () => `<div style="text-align: center">
-    <div class="fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
-        <div class="fd-busy-indicator--circle-0"></div>
-        <div class="fd-busy-indicator--circle-1"></div>
-        <div class="fd-busy-indicator--circle-2"></div>
+    <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator__circle-0"></div>
+        <div class="fd-busy-indicator__circle-1"></div>
+        <div class="fd-busy-indicator__circle-2"></div>
     </div><br /><br />
-    <div class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
-        <div class="fd-busy-indicator--circle-0"></div>
-        <div class="fd-busy-indicator--circle-1"></div>
-        <div class="fd-busy-indicator--circle-2"></div>
+    <div class="fd-busy-indicator fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
+        <div class="fd-busy-indicator__circle-0"></div>
+        <div class="fd-busy-indicator__circle-1"></div>
+        <div class="fd-busy-indicator__circle-2"></div>
     </div><br /><br />
     <div class="fd-busy-indicator" aria-hidden="false" aria-label="Loading">
-        <div class="fd-busy-indicator--circle-0"></div>
-        <div class="fd-busy-indicator--circle-1"></div>
-        <div class="fd-busy-indicator--circle-2"></div>
+        <div class="fd-busy-indicator__circle-0"></div>
+        <div class="fd-busy-indicator__circle-1"></div>
+        <div class="fd-busy-indicator__circle-2"></div>
     </div>
     </div>
 `;
@@ -60,10 +60,10 @@ Standard.parameters = {
 };
 
 export const ContrastMode = () => `<div style="display:flex;justify-content:center;flex-direction:column;align-items:center;background-color:cadetblue;height:250px">
-<div class="fd-busy-indicator--l contrast" aria-hidden="false" aria-label="Loading">
-    <div class="fd-busy-indicator--circle-0"></div>
-    <div class="fd-busy-indicator--circle-1"></div>
-    <div class="fd-busy-indicator--circle-2"></div>
+<div class="fd-busy-indicator fd-busy-indicator--l contrast" aria-hidden="false" aria-label="Loading">
+    <div class="fd-busy-indicator__circle-0"></div>
+    <div class="fd-busy-indicator__circle-1"></div>
+    <div class="fd-busy-indicator__circle-2"></div>
 </div>
 </div>
 `;
@@ -80,9 +80,9 @@ ContrastMode.parameters = {
 
 export const ExtendedBusyIndicator = () => `<div class="fd-busy-indicator-extended">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
-        <div class="fd-busy-indicator--circle-0"></div>
-        <div class="fd-busy-indicator--circle-1"></div>
-        <div class="fd-busy-indicator--circle-2"></div>
+        <div class="fd-busy-indicator__circle-0"></div>
+        <div class="fd-busy-indicator__circle-1"></div>
+        <div class="fd-busy-indicator__circle-2"></div>
     </div>
     <div class="fd-busy-indicator-extended__label">loading data...</div>
 </div>`;
@@ -97,11 +97,12 @@ ExtendedBusyIndicator.parameters = {
     }
 };
 
-export const ExtendedBusyIndicatorInsideMessageToast = () => `<div class="fd-message-toast fd-busy-indicator-extended fd-busy-indicator-extended--message-toast">
+export const ExtendedBusyIndicatorInsideMessageToast = () => `
+<div class="fd-message-toast fd-busy-indicator-extended fd-busy-indicator-extended--message-toast">
     <div class="fd-busy-indicator fd-busy-indicator--l" aria-hidden="false" aria-label="Loading">
-        <div class="fd-busy-indicator--circle-0"></div>
-        <div class="fd-busy-indicator--circle-1"></div>
-        <div class="fd-busy-indicator--circle-2"></div>
+        <div class="fd-busy-indicator__circle-0"></div>
+        <div class="fd-busy-indicator__circle-1"></div>
+        <div class="fd-busy-indicator__circle-2"></div>
     </div>
     <div class="fd-busy-indicator-extended__label">loading data...</div>
 </div>`;
