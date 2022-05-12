@@ -15,8 +15,15 @@
 @import "./common/carousel/sap_horizon";
 @import "./common/feed-list-item/sap_horizon";
 @import "./common/message-box/sap_horizon";
+@import "./common/busy-indicator/sap_horizon";
 
 :root {
+  /* Busy indicator */
+  // Currently this variable has incorrect colour value. Use hardcoded until @sap-theming package is fixed.
+  // After that, this block should be removed
+  // --fdBusy_Indicator_Dot_Color: var(--sapContent_BusyColor);
+  --fdBusy_Indicator_Dot_Color: #4db1ff;
+
   /* Switch */
   --fdSwitch_Semantic_Error_Handle_Border_Color: var(--sapButton_Track_Negative_Background);
   --fdSwitch_Semantic_Success_Handle_Border_Color: var(--sapButton_Track_Positive_Background);
@@ -425,10 +432,6 @@
   --fdInfo_Label_Display_Border_Color: var(--btp-Grey8);
   --fdInfo_Label_Display_Background_Color: var(--btp-Grey2);
   --fdInfo_Label_Display_Text_Color: var(--btp-Grey8);
-
-  /** Busy Indicator */
-  --fdBusy_Indicator_Dot_Color: var(--sapContent_BusyColor);
-  --fdBusy_Indicator_Dot_Contrast_Color: var(--sapContent_ContrastIconColor);
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);

@@ -1,0 +1,6 @@
+:root {
+  // Currently this variable has incorrect colour value. Use hardcoded until @sap-theming package is fixed.
+  // --fdBusy_Indicator_Dot_Color: var(--sapContent_BusyColor);
+  --fdBusy_Indicator_Dot_Color: #0070f2;
+  --fdBusy_Indicator_Dot_Contrast_Color: var(--sapContent_ContrastIconColor);
+}

@@ -22,6 +22,7 @@
 @import "./common/carousel/sap_fiori_hc";
 @import "./common/feed-list-item/sap_fiori";
 @import "./common/message-box/sap_fiori_hc";
+@import "./common/busy-indicator/sap_fiori_hc";
 
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
@@ -395,10 +396,6 @@
   --fdInfo_Label_Display_Border_Color: var(--sapGroup_ContentBorderColor);
   --fdInfo_Label_Display_Background_Color: var(--sapGroup_ContentBackground);
   --fdInfo_Label_Display_Text_Color: var(--sapTextColor);
-
-  /** Busy Indicator */
-  --fdBusy_Indicator_Dot_Color: var(--sapContent_IconColor);
-  --fdBusy_Indicator_Dot_Contrast_Color: var(--sapContent_IconColor);
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);
