@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.84...v0.24.0-rc.85) (2022-05-12)
+
+
+### Bug Fixes
+
+* **styles:** fixed message box header bottom border ([#3401](https://github.com/SAP/fundamental-styles/issues/3401)) ([2f74385](https://github.com/SAP/fundamental-styles/commit/2f74385235f65242aff0e8aa260d0f17f2edcc95))
+
 ## [0.24.0-rc.84](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.83...v0.24.0-rc.84) (2022-05-12)
 
 
