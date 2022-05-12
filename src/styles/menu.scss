@@ -164,7 +164,7 @@ $block: #{$fd-namespace}-menu;
       }
 
       @include fd-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
+        outline-color: var(--fdMenu_Active_State_Focus);
       }
     }
 
