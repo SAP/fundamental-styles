@@ -32,7 +32,7 @@ $block: #{$fd-namespace}-busy-indicator;
       flex-direction: column;
     }
 
-    &--message-toast {
+    &.#{$block}-extended--message-toast {
       width: 23.125rem;
       max-width: 23.125rem;
       box-shadow: var(--sapContent_Shadow2);
