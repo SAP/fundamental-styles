@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.88...v0.24.0-rc.89) (2022-05-12)
+
+
+### Bug Fixes
+
+* **styles:** add fix for control button states in Input Groups ([#3418](https://github.com/SAP/fundamental-styles/issues/3418)) ([358b4dd](https://github.com/SAP/fundamental-styles/commit/358b4ddc77626db4351d8bccff9acb40a1f3fe94))
+
 ## [0.24.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.87...v0.24.0-rc.88) (2022-05-12)
 
 
