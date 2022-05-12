@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.81...v0.24.0-rc.82) (2022-05-12)
+
+
+### Bug Fixes
+
+* micro process flow overlay ([#3404](https://github.com/SAP/fundamental-styles/issues/3404)) ([145d362](https://github.com/SAP/fundamental-styles/commit/145d362dafa944cee0218252c9174efe7e4ad1ad))
+
 ## [0.24.0-rc.81](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.80...v0.24.0-rc.81) (2022-05-12)
 
 
