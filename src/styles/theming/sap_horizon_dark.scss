@@ -18,6 +18,12 @@
 @import "./common/busy-indicator/sap_horizon";
 
 :root {
+  /* Busy indicator */
+  // Currently this variable has incorrect colour value. Use hardcoded until @sap-theming package is fixed.
+  // After that, this block should be removed
+  // --fdBusy_Indicator_Dot_Color: var(--sapContent_BusyColor);
+  --fdBusy_Indicator_Dot_Color: #4db1ff;
+
   /* Switch */
   --fdSwitch_Semantic_Error_Handle_Border_Color: var(--sapButton_Track_Negative_Background);
   --fdSwitch_Semantic_Success_Handle_Border_Color: var(--sapButton_Track_Positive_Background);
