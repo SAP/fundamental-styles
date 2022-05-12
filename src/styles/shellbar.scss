@@ -105,61 +105,61 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
-  &__action {
+  .#{$block}__group .#{$block}__action {
     @include fd-reset();
     @include fd-set-margin-left($fd-shellbar-item-spacing);
 
     > * {
       vertical-align: middle;
     }
+  }
 
-    .#{$block}__input-group {
-      background: transparent;
-      background-color: var(--fdShellbar_Input_Background);
-      border: var(--fdShellbar_Input_Border);
-      border-radius: var(--fdShellbar_Input_Border_Radius);
-      cursor: text;
+  .#{$block}__group .#{$block}__input-group {
+    background: transparent;
+    background-color: var(--fdShellbar_Input_Background);
+    border: var(--fdShellbar_Input_Border);
+    border-radius: var(--fdShellbar_Input_Border_Radius);
+    cursor: text;
+
+    @include fd-hover() {
+      border-color: var(--fdShellbar_Input_Hover_Border_Color);
+      box-shadow: var(--sapContent_Interaction_Shadow);
+    }
+
+    &-input {
+      border: none;
+      color: var(--fdShellbar_Input_Color);
+      position: relative;
 
       @include fd-hover() {
-        border-color: var(--fdShellbar_Input_Hover_Border_Color);
-        box-shadow: var(--sapContent_Interaction_Shadow);
-      }
-
-      &-input {
-        border: none;
-        color: var(--fdShellbar_Input_Color);
-        position: relative;
-
-        @include fd-hover() {
-          &,
-          & + .#{$block}__input-group-addon {
-            background: transparent;
-            background-color: var(--fdShellbar_Input_Hover_Background) !important;
-          }
-        }
-
-        &::placeholder {
-          color: var(--fdShellbar_Input_Placeholder_Color);
-          font-style: italic;
-        }
-
-        &--select {
-          font-style: normal;
+        &,
+        & + .#{$block}__input-group-addon {
+          background: transparent;
+          background-color: var(--fdShellbar_Input_Hover_Background) !important;
         }
       }
 
-      &-addon .#{$block}__button {
-        height: var(--fdShellbar_Input_Addon_Dimension);
-        min-width: var(--fdShellbar_Input_Addon_Dimension);
-        border-radius: var(--fdShellbar_Input_Border_Radius);
-        border-width: var(--fdShellbar_Input_Addon_Border_Width);
+      &::placeholder {
+        color: var(--fdShellbar_Input_Placeholder_Color);
+        font-style: italic;
       }
+
+      &--select {
+        font-style: normal;
+      }
+    }
+
+    &-addon .#{$block}__button {
+      height: var(--fdShellbar_Input_Addon_Dimension);
+      min-width: var(--fdShellbar_Input_Addon_Dimension);
+      border-radius: var(--fdShellbar_Input_Border_Radius);
+      border-width: var(--fdShellbar_Input_Addon_Border_Width);
     }
   }
 
-  .#{$block}__button {
+  .#{$block}__group .#{$block}__button {
     outline-color: var(--fdShellbar_Button_Outline_Color);
-    color: var(--sapShell_InteractiveTextColor);
+    color: var(--sapShell_InteractiveTextColor) !important;
 
     &:not(&--menu) {
       padding: 0;
@@ -177,7 +177,7 @@ $block: #{$fd-namespace}-shellbar;
     @include fd-active() {
       border-color: var(--fdShellbar_Button_Active_Border_Color);
       background: var(--sapShell_Active_Background);
-      color: var(--sapShell_Active_TextColor);
+      color: var(--sapShell_Active_TextColor) !important;
     }
 
     &--menu {
@@ -217,10 +217,6 @@ $block: #{$fd-namespace}-shellbar;
     padding: 0 2rem;
   }
 
-  &--xl {
-    padding: 0 3rem;
-  }
-
   &--m,
   &--l,
   &--xl {
@@ -237,6 +233,21 @@ $block: #{$fd-namespace}-shellbar;
       &--desktop {
         display: inline-block;
       }
+    }
+  }
+
+  &--xl {
+    padding: 0 3rem;
+  }
+
+  &--side-nav {
+    &.#{$block}--s,
+    &.#{$block}--m,
+    &.#{$block}--l,
+    &.#{$block}--xl {
+      @include fd-set-padding-right(0.5rem);
+
+      padding: 0;
     }
   }
 }
