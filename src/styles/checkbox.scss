@@ -106,6 +106,10 @@ $fd-checkbox-tristate-compact-offset: 0.25rem;
       position: relative;
     }
 
+    @include fd-empty() {
+      margin: 0;
+    }
+
     @include fd-rtl() {
       &::after {
         padding-left: 0;
