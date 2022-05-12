@@ -107,6 +107,10 @@ $block: #{$fd-namespace}-product-switch;
     }
 
     @include fd-active() {
+      @include fd-fiori-focus() {
+        outline-color: var(--sapContent_ContrastFocusColor);
+      }
+
       background-color: var(--sapList_Active_Background);
       border: var(--fdProductSwitch_Border);
 
@@ -290,6 +294,10 @@ $block: #{$fd-namespace}-product-switch;
 
       @include fd-active() {
         @include fd-product-pseudo-element-background(var(--sapList_SelectionBorderColor));
+
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
+        }
       }
 
       &.selected {
