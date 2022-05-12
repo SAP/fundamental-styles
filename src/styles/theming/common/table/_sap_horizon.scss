@@ -3,7 +3,7 @@
   --fdTable_Header_Cell_Active_Background: var(--sapList_Active_Background);
   --fdTable_Header_Cell_Font_Weight: bold;
   --fdTable_Header_Cell_Hover_Active_Color: var(--sapList_HeaderTextColor);
-  --fdTable_Header_Border_Top: none;
+  --fdTable_Header_Border_Top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   --fdTable_Header_Border_Bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
   --fdTable_Group_Header_Background: var(--sapList_TableGroupHeaderBackground);
   --fdTable_Group_Header_Border_Color: var(--sapList_TableGroupHeaderBorderColor);
