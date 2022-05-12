@@ -1,4 +1,16 @@
 
+## [0.24.0-rc.86](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.85...v0.24.0-rc.86) (2022-05-12)
+
+
+### Features
+
+* **styles:** busy indicator refactoring and horizon adaptation ([#3414](https://github.com/SAP/fundamental-styles/issues/3414)) ([bd0af8e](https://github.com/SAP/fundamental-styles/commit/bd0af8ed3e411a5bc63fb6e963c08175fb028923))
+
+
+### Bug Fixes
+
+* **styles:** add fix for text color for Counter and theming ([#3413](https://github.com/SAP/fundamental-styles/issues/3413)) ([92f069a](https://github.com/SAP/fundamental-styles/commit/92f069a9886f846556d7f15ebe23f0eadbdbe951))
+
 ## [0.24.0-rc.85](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.84...v0.24.0-rc.85) (2022-05-12)
 
 
