@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.88](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.87...v0.24.0-rc.88) (2022-05-12)
+
+
+### Bug Fixes
+
+* **styles:** shellbar css specificity & styles from ngx ([#3417](https://github.com/SAP/fundamental-styles/issues/3417)) ([2c9816b](https://github.com/SAP/fundamental-styles/commit/2c9816b451fbe091219827fc509964985de32ace))
+
 ## [0.24.0-rc.87](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.86...v0.24.0-rc.87) (2022-05-12)
 
 
