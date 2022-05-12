@@ -7,24 +7,19 @@
 $block: #{$fd-namespace}-counter;
 
 .#{$block} {
-  // VARIABLES
-  $fd-counter-radius: 1rem;
-  $fd-counter-background: var(--sapContent_BadgeBackground);
-  $fd-counter-color: var(--sapShell_TextColor);
-  $fd-counter-font-size: var(--sapFontSmallSize);
-  $fd-counter-padding: 0.25rem;
-
   @include fd-reset();
 
-  border-radius: $fd-counter-radius;
-  color: $fd-counter-color;
-  background-color: $fd-counter-background;
-  font-size: $fd-counter-font-size;
-  line-height: 1;
+  border-radius: 0.5rem;
+  color: var(--sapContent_BadgeTextColor);
+  background-color: var(--sapContent_BadgeBackground);
+  border: 0.0625rem solid var(--fdBadge_Border_Color);
+  font-size: var(--sapFontSmallSize);
+  line-height: 0.875rem;
   display: inline-block;
   text-align: center;
-  padding: $fd-counter-padding;
+  padding: 0 0.3125rem;
   z-index: 1;
+  height: 1rem;
 
   &--notification {
     transform: translate(-40%, -50%);
