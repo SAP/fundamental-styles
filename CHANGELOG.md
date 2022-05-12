@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.82...v0.24.0-rc.83) (2022-05-12)
+
+
+### Bug Fixes
+
+* **styles:** borders fix ([#3405](https://github.com/SAP/fundamental-styles/issues/3405)) ([8247590](https://github.com/SAP/fundamental-styles/commit/82475900645bc77dce29756ea4a35901ca8f5a86))
+
 ## [0.24.0-rc.82](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.81...v0.24.0-rc.82) (2022-05-12)
 
 
