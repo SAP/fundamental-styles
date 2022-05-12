@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.80](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.79...v0.24.0-rc.80) (2022-05-12)
+
+
+### Bug Fixes
+
+* **styles:** checkbox & radio hover & active in hc themes ([#3394](https://github.com/SAP/fundamental-styles/issues/3394)) ([cc3468b](https://github.com/SAP/fundamental-styles/commit/cc3468b25c018306495e4ba569991a29f729568d))
+
 ## [0.24.0-rc.79](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.78...v0.24.0-rc.79) (2022-05-11)
 
 
