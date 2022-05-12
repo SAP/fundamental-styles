@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.84](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.83...v0.24.0-rc.84) (2022-05-12)
+
+
+### Bug Fixes
+
+* **styles:** add fix for focus in active state ([#3402](https://github.com/SAP/fundamental-styles/issues/3402)) ([c53971c](https://github.com/SAP/fundamental-styles/commit/c53971c7f005db0b14baf07c775cdcaa7bf4d9f3))
+
 ## [0.24.0-rc.83](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.82...v0.24.0-rc.83) (2022-05-12)
 
 
