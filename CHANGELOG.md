@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.92](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.91...v0.24.0-rc.92) (2022-05-13)
+
+
+### Bug Fixes
+
+* **styles:** remove additional dimming of controls inside input-group [ci visual] ([#3422](https://github.com/SAP/fundamental-styles/issues/3422)) ([476558f](https://github.com/SAP/fundamental-styles/commit/476558fd773981ff92c5e9f0eac09569bcdfdbdd))
+
 ## [0.24.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.90...v0.24.0-rc.91) (2022-05-13)
 
 
