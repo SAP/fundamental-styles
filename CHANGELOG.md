@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.91](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.90...v0.24.0-rc.91) (2022-05-13)
+
+
+### Bug Fixes
+
+* **styles:** fixed focus outlines and examples for Grid List ([#3421](https://github.com/SAP/fundamental-styles/issues/3421)) ([0075315](https://github.com/SAP/fundamental-styles/commit/007531558a5b69498516fcc48f43185ff10e18ea))
+
 ## [0.24.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.89...v0.24.0-rc.90) (2022-05-13)
 
 
