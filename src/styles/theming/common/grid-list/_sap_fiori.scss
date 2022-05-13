@@ -3,4 +3,8 @@
   --fdGrid_List_Item_Border_Radius: var(--sapElement_BorderCornerRadius);
   --fdGrid_List_Item_Toolbar_Shadow: var(--sapContent_HeaderShadow);
   --fdGrid_List_Highlight_Offset: 0.1875rem;
+  --fdGrid_List_Item_Focus_Box_Shadow: none;
+  --fdGrid_List_Item_Focus_Border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+  --fdGrid_List_Item_Focus_Border_Radius: 0;
+  --fdGrid_List_Item_Focus_Outline_Offset: 0.0625rem;
 }

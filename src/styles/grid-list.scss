@@ -80,12 +80,17 @@ $fd-grid-list-highlight: (
     position: relative;
     overflow: hidden;
 
-    @include fd-fiori-focus() {
-      .#{$block}__highlight {
-        width: 0.25rem;
-        left: 0.1875rem;
-        bottom: var(--fdGrid_List_Highlight_Offset);
-        top: var(--fdGrid_List_Highlight_Offset);
+    @include fd-focus() {
+      &::before {
+        pointer-events: none;
+        position: absolute;
+        display: block;
+        content: '';
+        inset: var(--fdGrid_List_Item_Focus_Outline_Offset);
+        box-shadow: var(--fdGrid_List_Item_Focus_Box_Shadow);
+        border: var(--fdGrid_List_Item_Focus_Border);
+        border-radius: var(--fdGrid_List_Item_Focus_Border_Radius);
+        z-index: 1;
       }
     }
 
@@ -116,6 +121,12 @@ $fd-grid-list-highlight: (
           display: block;
           border-radius: 0 $fd-grid-list-border-radius $fd-grid-list-border-radius 0;
           background-color: $fd-grid-list-selection-border-color;
+        }
+      }
+
+      @include fd-selected() {
+        &::before {
+          border-color: var(--sapList_SelectionBackgroundColor);
         }
       }
     }
@@ -368,6 +379,12 @@ $fd-grid-list-highlight: (
 
         .#{$block}__radio-label {
           display: none;
+        }
+
+        @include fd-selected() {
+          &::before {
+            border-color: var(--sapList_SelectionBackgroundColor);
+          }
         }
       }
     }
