@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.90](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.89...v0.24.0-rc.90) (2022-05-13)
+
+
+### Bug Fixes
+
+* **styles:** remove width limitation from the label of time column [ci visual] ([#3416](https://github.com/SAP/fundamental-styles/issues/3416)) ([6b8dada](https://github.com/SAP/fundamental-styles/commit/6b8dadaf95d1bab9d51dad0f327c3e8857fbd739))
+
 ## [0.24.0-rc.89](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.88...v0.24.0-rc.89) (2022-05-12)
 
 
