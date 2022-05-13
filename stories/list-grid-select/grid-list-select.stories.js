@@ -45,7 +45,7 @@ export const NoneMode = () => `<div style="min-height: 500px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--cozy fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
@@ -68,7 +68,7 @@ export const NoneMode = () => `<div style="min-height: 500px;">
         <div class="fd-row">
             <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-navigated">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
@@ -99,7 +99,7 @@ export const NoneMode = () => `<div style="min-height: 500px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
@@ -191,7 +191,7 @@ export const NoneMode = () => `<div style="min-height: 500px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
@@ -262,7 +262,7 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--cozy fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
@@ -288,7 +288,7 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
                     <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh761" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761" aria-label="John Li, Product Owner, Company B"></label>
 
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
@@ -322,7 +322,7 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
                     <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh761123" name="singleSelectMasterRadio">
                     <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761123" aria-label="John Li, Product Owner, Company B"></label>
 
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
@@ -354,7 +354,7 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
                     <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh7611234" name="singleSelectMasterRadio" aria-label="John Li, Product Owner, Company B" checked>
                     <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh7611234"></label>
 
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
                         <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
@@ -426,7 +426,7 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--cozy fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
@@ -449,7 +449,7 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1761" tabindex="-1"></label>
 
@@ -483,7 +483,7 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B" checked>
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761" tabindex="-1"></label>
                         <span class="fd-toolbar__spacer"></span>
@@ -514,7 +514,7 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p12Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh1761" tabindex="-1"></label>
                         <span class="fd-toolbar__spacer"></span>
@@ -543,7 +543,7 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1x2Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh1761" tabindex="-1"></label>
                         <span class="fd-toolbar__spacer"></span>
@@ -591,7 +591,7 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--cozy fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
@@ -614,7 +614,7 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh1v761541" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1v761541" tabindex="-1"></label>
 
@@ -648,7 +648,7 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1Didh1761g234" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B" checked>
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761g234" tabindex="-1"></label>
 
@@ -680,7 +680,7 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p12Didh176141w" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh176141w" tabindex="-1"></label>
 
@@ -710,7 +710,7 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1x2Didh176132" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh176132" tabindex="-1"></label>
 
@@ -759,7 +759,7 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--cozy fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
@@ -782,7 +782,7 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c" aria-label="John Li, Product Owner, Company B" checked>
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c" tabindex="-1"></label>
 
@@ -816,7 +816,7 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c2" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c2" tabindex="-1"></label>
 
@@ -848,7 +848,7 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c3" aria-label="John Li, Product Owner, Company B" checked>
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c3" tabindex="-1"></label>
 
@@ -878,7 +878,7 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--cozy fd-grid-list__item-toolbar">
                         <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c4" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c4" tabindex="-1"></label>
 
