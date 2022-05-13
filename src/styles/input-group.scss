@@ -103,6 +103,13 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     resize: vertical;
   }
 
+  * {
+    // since input-group applies disabled styles, inner elements should not be additionally dimmed
+    @include fd-disabled() {
+      opacity: 1;
+    }
+  }
+
   &[readonly],
   &.is-readonly {
     overflow: visible;
