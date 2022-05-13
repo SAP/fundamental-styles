@@ -1,0 +1,8 @@
+@import "./sap_foiri";
+
+:root {
+  --fdCheckbox_Hover_Background: var(--sapSelectedColor);
+  --fdCheckbox_Selected_Color: var(--sapContent_IconColor);
+  --fdCheckbox_State_Hover_Background: var(--sapSelectedColor);
+  --fdCheckbox_Warning_Error_Information_Border_Style: dashed;
+}

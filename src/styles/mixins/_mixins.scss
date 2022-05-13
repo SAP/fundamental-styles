@@ -720,3 +720,9 @@
     border-left: $border;
   }
 }
+
+@mixin fd-square($size) {
+  height: $size;
+  width: $size;
+  min-width: $size;
+}

@@ -1,0 +1,7 @@
+@import "./sap_fiori";
+
+:root {
+  --fdRadio_Selected_Color: var(--sapContent_IconColor);
+  --fdRadio_Warning_Error_Information_Border_Style: dashed;
+  --fdRadio_Hover_Background: var(--sapSelectedColor);
+}

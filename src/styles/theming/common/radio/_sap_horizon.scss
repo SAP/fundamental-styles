@@ -1,0 +1,20 @@
+@import "./common";
+
+:root {
+  --fdRadio_Selected_Color: var(--sapContent_Selected_ForegroundColor);
+  --fdRadio_Inner_Content_Size: 0.75rem;
+  --fdRadio_Inner_Content_Size_Compact: 0.5rem;
+  --fdRadio_Inner_Content_Padding: 1rem;
+  --fdRadio_Inner_Content_Padding_Compact: 0.75rem;
+  --fdRadio_Hover_Box_Shadow: var(--sapContent_Interaction_Shadow);
+  --fdRadio_Readonly_Border_Type: dashed;
+  --fdRadio_Readonly_Border_Width: var(--sapElement_BorderWidth);
+  --fdRadio_Error_Hover_Shadow: var(--sapContent_Negative_Shadow);
+  --fdRadio_Warning_Hover_Shadow: var(--sapContent_Critical_Shadow);
+  --fdRadio_Success_Hover_Shadow: var(--sapContent_Positive_Shadow);
+  --fdRadio_Information_Hover_Shadow: var(--sapContent_Informative_Shadow);
+  --fdRadio_Warning_Error_Information_Border_Style: solid;
+  --fdRadio_Focus_Outline_Offset: 0.25rem;
+  --fdRadio_Outline_Border_Radius: 0.8rem;
+  --fdRadio_Compact_Outline_Border_radius: 0.5rem;
+}

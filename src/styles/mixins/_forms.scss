@@ -330,12 +330,10 @@
   @content;
 }
 
-@mixin fd-form-radio-focus($margin) {
-  $fd-radio-label-padding: 0;
-  $fd-radio-focus-offset: 0.125rem;
-
+@mixin fd-form-radio-focus($base-offset, $margin, $border-radius: 0) {
   outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-  outline-offset: $fd-radio-focus-offset - $margin;
+  outline-offset: calc($base-offset - $margin);
+  border-radius: $border-radius;
 }
 
 @mixin fd-form-radio-checkbox-focus($offset) {
@@ -373,6 +371,14 @@
       padding-right: 0.125rem;
     }
   }
+}
+
+@mixin fd-form-radio-icon-base($size) {
+  content: "";
+
+  @include fd-square($size);
+  @include fd-inline-flex-center();
+  @content;
 }
 
 @mixin fd-form-label() {

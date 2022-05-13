@@ -1,0 +1,7 @@
+@import "./sap_horizon";
+
+:root {
+  --fdRadio_Readonly_Border_Type: solid;
+  --fdRadio_Warning_Error_Information_Border_Style: dashed;
+  --fdRadio_Hover_Background: var(--sapSelectedColor);
+}

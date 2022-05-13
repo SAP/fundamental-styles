@@ -12,41 +12,23 @@ $block: #{$fd-namespace}-radio;
 }
 
 .#{$block} {
-  @mixin fd-radio-state($background-color, $text-color, $border-color, $border-size, $border-type, $hover-shadow) {
+  @mixin fd-radio-label() {
     + .#{$block}__label {
-      &::before {
-        background-color: $background-color;
-        border: $border-size $border-type $border-color;
-      }
-
-      &::after {
-        background: $text-color;
-      }
-
-      @include fd-hover() {
-        &::before {
-          background-color: var(--fdRadio_Hover_Background);
-          box-shadow: $hover-shadow;
-        }
-
-        @include fd-disabled() {
-          border-color: $border-color;
-        }
-      }
+      @content;
     }
   }
 
-  $fd-radio-inner-circle-diameter: 1.375rem;
-  $fd-radio-inner-circle-diameter-compact: 1rem;
-
-  $fd-radio-outer-circle-margin: 0.6875rem;
-  $fd-radio-outer-circle-margin-compact: 0.5rem;
-
-  $fd-radio-inner-content-size: var(--fdRadio_Inner_Content_Size); // inner circle size
-  $fd-radio-inner-content-size-compact: var(--fdRadio_Inner_Content_Size_Compact); // inner circle size for compact
-
-  $fd-radio-inner-content-padding: var(--fdRadio_Inner_Content_Padding);  // aligns inner circle
-  $fd-radio-inner-content-padding-compact: var(--fdRadio_Inner_Content_Padding_Compact); // aligns inner circle for compact
+  @mixin fd-radio-state($background-color, $text-color, $border-color, $border-size, $border-type, $hover-shadow) {
+    @include fd-radio-label() {
+      --fdRadio_Background_Color: #{$background-color};
+      --fdRadio_Hover_Background: var(--fdRadio_Hover_Background);
+      --fdRadio_Border_Width: #{$border-size};
+      --fdRadio_Border: #{$border-size $border-type $border-color};
+      --fdRadio_Hover_Shadow: #{$hover-shadow};
+      --fdRadio_Selected_Color: #{$border-color};
+      --fdRadio_Hover_Border_Color: #{$border-color};
+    }
+  }
 
   @include fd-form-base();
 
@@ -60,28 +42,23 @@ $block: #{$fd-namespace}-radio;
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: $fd-radio-outer-circle-margin;
+    padding: var(--fdRadio_Outer_Circle_Padding);
 
     &::before {
-      content: "";
-      height: $fd-radio-inner-circle-diameter;
-      width: $fd-radio-inner-circle-diameter;
-      min-width: $fd-radio-inner-circle-diameter;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--sapField_Background);
-      margin-right: $fd-radio-outer-circle-margin;
-      color: var(--sapSelectedColor);
-      border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
-      border-radius: 50%;
+      @include fd-form-radio-icon-base(var(--fdRadio_Inner_Circle_Diameter)) {
+        background-color: var(--fdRadio_Background_Color);
+        margin-right: var(--fdRadio_Outer_Circle_Padding);
+        color: var(--fdRadio_Selected_Color);
+        border: var(--fdRadio_Border);
+        border-radius: 50%;
+      }
     }
 
     &::after {
-      height: $fd-radio-inner-content-size;
-      width: $fd-radio-inner-content-size;
-      top: $fd-radio-inner-content-padding;
-      left: $fd-radio-inner-content-padding;
+      @include fd-square(var(--fdRadio_Inner_Content_Size));
+
+      top: var(--fdRadio_Inner_Content_Padding);
+      left: var(--fdRadio_Inner_Content_Padding);
     }
 
     @include fd-focus() {
@@ -91,25 +68,25 @@ $block: #{$fd-namespace}-radio;
     @include fd-hover() {
       &::before {
         background-color: var(--fdRadio_Hover_Background);
-        border-width: var(--sapField_BorderWidth);
-        border-color: var(--sapField_Hover_BorderColor);
+        border-width: var(--fdRadio_Border_Width);
+        border-color: var(--fdRadio_Hover_Border_Color);
         box-shadow: var(--fdRadio_Hover_Box_Shadow);
       }
     }
 
     @include fd-rtl() {
       &::before {
-        margin-left: $fd-radio-outer-circle-margin;
+        margin-left: var(--fdRadio_Outer_Circle_Padding);
         margin-right: 0;
       }
 
       &::after {
-        right: $fd-radio-inner-content-padding;
+        right: var(--fdRadio_Inner_Content_Padding);
       }
     }
 
     @include fd-empty() {
-      padding: $fd-radio-outer-circle-margin;
+      padding: var(--fdRadio_Outer_Circle_Padding);
       margin: 0;
 
       &::before,
@@ -173,6 +150,17 @@ $block: #{$fd-namespace}-radio;
     );
   }
 
+  @include fd-readonly() {
+    @include fd-radio-state(
+      var(--sapField_ReadOnly_Background),
+      var(--sapContent_NonInteractiveIconColor),
+      var(--sapField_ReadOnly_BorderColor),
+      var(--fdRadio_Readonly_Border_Width),
+      var(--fdRadio_Readonly_Border_Type),
+      none
+    );
+  }
+
   &[readonly],
   &.is-readonly {
     @include fd-radio-state(
@@ -186,66 +174,32 @@ $block: #{$fd-namespace}-radio;
   }
 
   @include fd-focus() {
-    + .#{$block}__label {
-      @include fd-form-radio-focus($fd-radio-outer-circle-margin);
+    @include fd-radio-label() {
+      @include fd-form-radio-focus(var(--fdRadio_Focus_Outline_Offset), var(--fdRadio_Outer_Circle_Padding), var(--fdRadio_Outline_Border_Radius));
     }
   }
 
   @include fd-disabled() {
     opacity: 0.0001;
 
-    + .#{$block}__label {
+    @include fd-radio-label() {
       pointer-events: none;
       opacity: var(--sapContent_DisabledOpacity);
     }
   }
 
   &--compact {
-    + .#{$block}__label {
-      padding: $fd-radio-outer-circle-margin-compact;
-
-      &::before {
-        height: $fd-radio-inner-circle-diameter-compact;
-        width: $fd-radio-inner-circle-diameter-compact;
-        min-width: $fd-radio-inner-circle-diameter-compact;
-        margin-right: $fd-radio-outer-circle-margin-compact;
-        margin-left: 0;
-      }
-
-      &::after {
-        height: $fd-radio-inner-content-size-compact;
-        width: $fd-radio-inner-content-size-compact;
-        top: $fd-radio-inner-content-padding-compact;
-        left: $fd-radio-inner-content-padding-compact;
-      }
-
-      @include fd-rtl() {
-        &::before {
-          margin-left: $fd-radio-outer-circle-margin-compact;
-          margin-right: 0;
-          padding-left: 0;
-        }
-
-        &::after {
-          right: $fd-radio-inner-content-padding-compact;
-        }
-      }
-
-      @include fd-empty() {
-        padding: $fd-radio-outer-circle-margin-compact;
-        margin: 0;
-
-        &::before,
-        &::after {
-          margin-right: 0;
-          margin-left: 0;
-        }
-      }
+    @include fd-radio-label() {
+      --fdRadio_Outer_Circle_Padding: var(--fdRadio_Compact_Outer_Circle_Padding);
+      --fdRadio_Inner_Circle_Diameter: var(--fdRadio_Compact_Inner_Circle_Diameter);
+      --fdRadio_Inner_Content_Size: var(--fdRadio_Inner_Content_Size_Compact);
+      --fdRadio_Inner_Content_Padding: var(--fdRadio_Inner_Content_Padding_Compact);
     }
 
     @include fd-focus() {
-      + .#{$block}__label {
-        @include fd-form-radio-focus($fd-radio-outer-circle-margin-compact);
+      @include fd-radio-label() {
+        --fdRadio_Outer_Circle_Padding: var(--fdRadio_Compact_Outer_Circle_Padding);
+        --fdRadio_Outline_Border_Radius: var(--fdRadio_Compact_Outline_Border_radius);
       }
     }
   }

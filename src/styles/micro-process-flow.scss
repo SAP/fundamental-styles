@@ -283,13 +283,14 @@ $fd-micro-process-flow-semantic-colors: (
         background: var(--sapNegativeElementColor);
         width: $fd-micro-process-flow-intermediary-indicator-width;
         margin-left: -$fd-micro-process-flow-intermediary-indicator-width * 0.5;
+        z-index: 2;
       }
     }
 
     .#{$block}__intermediary-item {
       line-height: 1;
       position: relative;
-      z-index: 2;
+      z-index: 3;
     }
   }
 
