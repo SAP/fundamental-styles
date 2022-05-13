@@ -163,7 +163,6 @@ $block: #{$fd-namespace}-time;
     line-height: $fd-time-item-compact-height;
     height: $fd-time-item-compact-height;
     font-size: var(--sapFontSmallSize);
-    max-width: $fd-time-item-width;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: clip;
