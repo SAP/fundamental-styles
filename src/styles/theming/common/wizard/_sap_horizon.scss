@@ -1,22 +1,22 @@
 :root {
-  --fdWizard_Current_Step_Background_Color: var(--sapContent_Selected_ForegroundColor);
-  --fdWizard_Label_Current_Step_Color: var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Optional_Text_Color: var(--sapContent_LabelColor);
   --fdWizard_Label_Font_Family: var(--sapFontBoldFamily);
+  --fdWizard_Label_Font_Weight: bold;
   --fdWizard_Completed_Step_Color: var(--sapContent_Selected_ForegroundColor);
+  --fdWizard_Completed_Step_Label_Color: var(--sapTextColor);
   --fdWizard_Completed_Step_Border: 0.0625rem solid var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Completed_Step_Icon_Color: var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Current_Step_Color: var(--sapContent_ContrastTextColor);
+  --fdWizard_Current_Step_Label_Color: var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
+  --fdWizard_Current_Step_Background_Color: var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Current_Step_Border: 0.0625rem solid var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
   --fdWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
-  --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
   --fdWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
   --fdWizard_Active_Step_Icon_Color: var(--sapContent_ContrastIconColor);
   --fdWizard_Active_Step_Border_Color: var(--sapActiveColor);
   --fdWizard_Connector_Active_Border_Color: var(--sapContent_Selected_ForegroundColor);
-  --fdWizard_Content_Default_Background: var(--sapBackgroundColor);
   --fdWizard_Content_Solid_Background: var(--sapShell_Background);
   --fdWizard_Content_List_Background: var(--sapGroup_ContentBackground);
   --fdWizard_Content_Transparent_Background: transparent;
@@ -25,6 +25,4 @@
   --fdWizard_Step_Indicator_Margin_Right: 0.5rem;
   --fdWizard_Step_Content_Container_Background_Color: var(--sapGroup_ContentBackground);
   --fdWizard_Step_Content_Container_Spacing: 1rem;
-  --fdWizard_Label_Font_Weight: bold;
-  --fdWizard_Completed_Step_Label_Color: var(--sapTextColor);
 }

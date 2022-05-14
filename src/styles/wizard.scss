@@ -93,7 +93,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     &--current {
       .#{$block}__label {
-        color: var(--fdWizard_Label_Current_Step_Color);
+        color: var(--fdWizard_Current_Step_Label_Color);
       }
 
       .#{$block}__step-indicator {
@@ -132,7 +132,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
       .#{$block}__step-indicator {
         background: var(--sapObjectHeader_Background);
-        border: var(--fdWizard_Upcoming_Step_Border);
+        border: 0.0625rem solid var(--sapList_BorderColor);
         color: var(--fdWizard_Upcoming_Step_Color);
 
         .#{$block}__icon {
@@ -312,7 +312,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     padding-top: 1rem;
     width: 100%;
     height: 100%;
-    background: var(--fdWizard_Content_Default_Background);
+    background: var(--sapBackgroundColor);
 
     &--solid {
       background: var(--fdWizard_Content_Solid_Background);
