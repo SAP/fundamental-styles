@@ -10,7 +10,6 @@
   --fdWizard_Current_Step_Icon_Color: var(--sapContent_ContrastIconColor);
   --fdWizard_Current_Step_Border: 0.0625rem solid var(--sapContent_Selected_ForegroundColor);
   --fdWizard_Upcoming_Step_Color: var(--sapContent_LabelColor);
-  --fdWizard_Upcoming_Step_Text_Color: var(--sapContent_LabelColor);
   --fdWizard_Upcoming_Step_Icon_Color: var(--sapContent_LabelColor);
   --fdWizard_Upcoming_Step_Border: 0.0625rem solid var(--sapList_BorderColor);
   --fdWizard_Active_Step_Color: var(--sapContent_ContrastTextColor);
@@ -26,4 +25,6 @@
   --fdWizard_Step_Indicator_Margin_Right: 0.5rem;
   --fdWizard_Step_Content_Container_Background_Color: var(--sapGroup_ContentBackground);
   --fdWizard_Step_Content_Container_Spacing: 1rem;
+  --fdWizard_Label_Font_Weight: bold;
+  --fdWizard_Completed_Step_Label_Color: var(--sapTextColor);
 }
