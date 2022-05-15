@@ -2,51 +2,54 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-progress-indicator;
-$fd-progress-indicator-margin: 0.5rem 0 !default;
-$fd-progress-indicator-margin-mobile: 0.875rem 0 !default;
-$fd-progress-indicator-container-height: 1rem !default;
+
+@mixin fd-progress-indicator-popover-control() {
+  &.#{$fd-namespace}-popover__control {
+    @content;
+  }
+}
 
 $fd-progress-indicator-states: (
   "informative": (
     "background": var(--fdProgress_Indicator_Background_Color_Informative),
     "borderColor": var(--fdProgress_Indicator_Progress_Bar_Border_Color_Informative, transparent),
     "containerBackground": var(--fdProgress_Indicator_Container_Background_Informative, var(--sapField_Background)),
-    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Color_Informative, var(--sapField_BorderColor)),
+    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Informative, var(--sapField_BorderColor)),
     "icon": var(--fdProgress_Icon_Informative),
-    "iconColor": var(--fdProgress_Icon_Color_Informative, var(--sapField_TextColor)),
+    "iconColor": var(--fdProgress_Icon_Color_Informative, var(--fdProgress_Indicator_Label_Color)),
   ),
   "positive": (
     "background": var(--fdProgress_Indicator_Background_Color_Positive),
     "borderColor": var(--fdProgress_Indicator_Progress_Bar_Border_Color_Positive, transparent),
     "containerBackground": var(--fdProgress_Indicator_Container_Background_Positive, var(--sapField_Background)),
-    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Color_Positive, var(--sapField_BorderColor)),
+    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Positive, var(--sapField_BorderColor)),
     "icon": var(--fdProgress_Icon_Positive),
-    "iconColor": var(--fdProgress_Icon_Color_Positive, var(--sapField_TextColor)),
+    "iconColor": var(--fdProgress_Icon_Color_Positive, var(--fdProgress_Indicator_Label_Color)),
   ),
   "negative": (
     "background": var(--fdProgress_Indicator_Background_Color_Negative),
     "borderColor": var(--fdProgress_Indicator_Progress_Bar_Border_Color_Negative, transparent),
     "containerBackground": var(--fdProgress_Indicator_Container_Background_Negative, var(--sapField_Background)),
-    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Color_Negative, var(--sapField_BorderColor)),
+    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Negative, var(--sapField_BorderColor)),
     "icon": var(--fdProgress_Icon_Negative),
-    "iconColor": var(--fdProgress_Icon_Color_Negative, var(--sapField_TextColor)),
+    "iconColor": var(--fdProgress_Icon_Color_Negative, var(--fdProgress_Indicator_Label_Color)),
   ),
   "critical": (
     "background": var(--fdProgress_Indicator_Background_Color_Critical),
     "borderColor": var(--fdProgress_Indicator_Progress_Bar_Border_Color_Critical, transparent),
     "containerBackground": var(--fdProgress_Indicator_Container_Background_Critical, var(--sapField_Background)),
-    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Color_Critical, var(--sapField_BorderColor)),
+    "containerBorderColor": var(--fdProgress_Indicator_Container_Border_Critical, var(--sapField_BorderColor)),
     "icon": var(--fdProgress_Icon_Critical),
-    "iconColor": var(--fdProgress_Icon_Color_Critical, var(--sapField_TextColor)),
+    "iconColor": var(--fdProgress_Icon_Color_Critical, var(--fdProgress_Indicator_Label_Color)),
   )
 );
 
-.#{$block},
-.#{$block}.#{$fd-namespace}-popover {
+.#{$block} {
+  --rootMargin: 0.5rem 0;
   --progressBarBackground: var(--fdProgress_Indicator_Background_Color_Neutral);
   --progressBarBorderColor: var(--fdProgress_Indicator_Progress_Bar_Border_Color_Neutral, transparent);
   --containerBackground: var(--fdProgress_Indicator_Container_Background_Neutral, var(--sapField_Background));
-  --containerBorderColor: var(--fdProgress_Indicator_Container_Border_Color_Neutral, var(--sapField_BorderColor));
+  --containerBorderColor: var(--fdProgress_Indicator_Container_Border_Neutral, var(--sapField_BorderColor));
   --iconDisplay: none;
   --iconContent: '';
 
@@ -54,11 +57,23 @@ $fd-progress-indicator-states: (
 
   width: 100%;
   height: var(--fdProgress_Indicator_Height);
-  margin: $fd-progress-indicator-margin;
+  margin: var(--rootMargin);
   padding: var(--fdProgress_Indicator_Container_Margin);
 
   &.#{$fd-namespace}-popover {
-    margin: $fd-progress-indicator-margin;
+    margin: var(--rootMargin);
+  }
+
+  &--mobile {
+    --rootMargin: 0.875rem 0;
+  }
+
+  &--display {
+    margin: 0;
+
+    &.#{$fd-namespace}-popover {
+      margin: 0;
+    }
   }
 
   @each $set-name, $set-state in $fd-progress-indicator-states {
@@ -68,16 +83,16 @@ $fd-progress-indicator-states: (
       --containerBackground: #{map_get($set-state, "containerBackground")};
       --containerBorderColor: #{map_get($set-state, "containerBorderColor")};
       --iconContent: #{map_get($set-state, "icon")};
-      --iconDisplay: inline-block;
+      --iconDisplay: inline-flex;
       --iconColor: #{map_get($set-state, "iconColor")};
     }
   }
 
-  .#{$block}__container {
+  &__container {
     @include fd-reset();
     @include fd-flex();
 
-    position: relative;
+    position: var(--fdProgress_Indicator_Container_Position, static);
     min-width: 4rem;
     width: var(--fdProgress_Indicator_Container_Width);
     border-radius: 0.5rem;
@@ -110,10 +125,14 @@ $fd-progress-indicator-states: (
 
   &__progress-bar {
     @include fd-reset();
-    @include fd-ellipsis();
 
     @include fd-flex() {
       justify-content: flex-end;
+    }
+
+    @include fd-progress-indicator-popover-control() {
+      border: var(--fdProgress_Indicator_Progress_Bar_Popover_Control_Border, none);
+      position: var(--fdProgress_Indicator_Progress_Bar_Position, relative);
     }
 
     height: var(--fdProgress_Indicator_Progress_Bar_Height);
@@ -123,15 +142,8 @@ $fd-progress-indicator-states: (
     border-radius: var(--fdProgress_Indicator_Progress_Bar_Border_Radius);
     background: var(--progressBarBackground);
     position: var(--fdProgress_Indicator_Progress_Bar_Position, static);
-    left: -0.0625rem;
-    bottom: -0.1875rem;
-
-    &.#{$fd-namespace}-popover__control {
-      position: absolute;
-      .#{$block}__label {
-        top: -1.25rem;
-      }
-    }
+    left: var(--fdProgress_Indicator_Progress_Bar_Position_Left);
+    bottom: var(--fdProgress_Indicator_Progress_Bar_Position_Bottom);
 
     .#{$block}__label {
       color: var(--fdProgress_Indicator_Label_Color_Contrast);
@@ -146,7 +158,10 @@ $fd-progress-indicator-states: (
   &__remaining {
     @include fd-reset();
     @include fd-flex();
-    @include fd-ellipsis();
+
+    @include fd-progress-indicator-popover-control() {
+      flex-grow: 1;
+    }
   }
 
   &__icon {
@@ -154,6 +169,8 @@ $fd-progress-indicator-states: (
     right: -1.25rem;
     bottom: -0.625rem;
     display: var(--iconDisplay);
+    margin-right: var(--fdProgress_Icon_Offset_Right);
+    margin-left: 0.375rem;
 
     &::before {
       vertical-align: middle;
@@ -161,8 +178,10 @@ $fd-progress-indicator-states: (
       color: var(--iconColor);
       font-size: var(--fdProgress_Indicator_Icon_Font_Size);
       content: var(--iconContent);
-      margin-left: var(--fdProgress_Icon_Offset_Left);
-      margin-right: var(--fdProgress_Icon_Offset_Right);
+    }
+
+    & + .#{$block}__label {
+      margin-left: 0;
     }
   }
 
@@ -170,6 +189,8 @@ $fd-progress-indicator-states: (
     @include fd-reset();
     @include fd-ellipsis();
 
+    display: inline-block;
+    max-width: 100%;
     margin: var(--fdProgress_Indicator_Label_Margin);
     position: var(--fdProgress_Indicator_Label_Position, static);
     top: -1.25rem;
@@ -177,7 +198,7 @@ $fd-progress-indicator-states: (
     user-select: none;
     line-height: normal;
     color: var(--fdProgress_Indicator_Label_Color);
-    font-size: var(--sapFontSmallSize);
+    font-size: var(--fdProgress_Indicator_Label_Font_Size);
   }
 
   &__overflow {
@@ -213,22 +234,6 @@ $fd-progress-indicator-states: (
     [class*='sap-icon'] {
       font-size: var(--sapFontSmallSize);
       color: var(--sapContent_IconColor);
-    }
-  }
-
-  &--mobile {
-    margin: $fd-progress-indicator-margin-mobile;
-
-    &.#{$fd-namespace}-popover {
-      margin: $fd-progress-indicator-margin-mobile;
-    }
-  }
-
-  &--display {
-    margin: 0;
-
-    &.#{$fd-namespace}-popover {
-      margin: 0;
     }
   }
 }

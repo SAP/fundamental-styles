@@ -26,6 +26,7 @@
   --fdProgress_Icon_Color_Positive: var(--sapProgress_Value_PositiveTextColor);
   --fdProgress_Icon_Color_Critical: var(--sapProgress_Value_CriticalTextColor);
   --fdProgress_Icon_Color_Negative: var(--sapProgress_Value_NegativeTextColor);
+  --fdProgress_Indicator_Container_Position: relative;
   --fdProgress_Indicator_Container_Height: 0.375rem;
   --fdProgress_Indicator_Container_Margin: 1.25rem 0 0.375rem;
   --fdProgress_Indicator_Container_Overflow: visible;
@@ -39,12 +40,16 @@
   --fdProgress_Indicator_Progress_Bar_Margin: -0.1875rem 0 0;
   --fdProgress_Indicator_Progress_Bar_Border_Radius: 0.5rem;
   --fdProgress_Indicator_Progress_Bar_Position: absolute;
+  --fdProgress_Indicator_Progress_Bar_Position_Left: -0.0625rem;
+  --fdProgress_Indicator_Progress_Bar_Position_Bottom: -0.1875rem;
   --fdProgress_Indicator_Progress_Bar_Boundary_Display: inline-block;
+  --fdProgress_Indicator_Progress_Bar_Popover_Control_Border: inherit;
   --fdProgress_Indicator_Label_Color: var(--sapField_TextColor);
   --fdProgress_Indicator_Label_Color_Contrast: var(--sapField_TextColor);
   --fdProgress_Indicator_Label_Margin: 0;
   --fdProgress_Indicator_Label_Position: absolute;
+  --fdProgress_Indicator_Label_Font_Size: var(--sapProgress_FontSize);
   --fdProgress_Indicator_Icon_Position: absolute;
-  --fdProgress_Indicator_Icon_Font_Size: 1rem;
+  --fdProgress_Indicator_Icon_Font_Size: var(--sapFontLargeSize);
   --fdProgress_Indicator_Container_Width: calc(100% - 1.25rem);
 }
