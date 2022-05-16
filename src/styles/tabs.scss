@@ -10,78 +10,71 @@
 
 $block: #{$fd-namespace}-tabs;
 
-.#{$block} {
-  %fd-tabs-focus {
-    outline-offset: var(--sapContent_FocusWidth);
-    outline-style: var(--sapContent_FocusStyle);
-    outline-width: var(--sapContent_FocusWidth);
-    outline-color: var(--sapContent_FocusColor);
+$fd-tabs-selected-color: var(--fdTabs_Selected_Color);
+$fd-tabs-label-color: var(--sapContent_LabelColor);
+$fd-tabs-border-width: 0.0625rem !default;
+$fd-tabs-selection-padding-x: 0.188rem;
+
+$fd-tabs-icon-size: 1.125rem;
+$fd-tabs-icon-size-compact: 1rem;
+$fd-tabs-icon-selection-height: 2.625rem;
+$fd-tabs-icon-selection-height-compact: 1.875rem;
+$fd-tabs-icon-link-padding-y: 1rem !default;
+
+$fd-tabs-item-spacing-x: 0.25rem;
+$fd-tabs-item-padding-x: 0.75rem;
+
+$fd-tabs-link-padding-y: 0.875rem !default;
+$fd-tabs-link-border-width: 0.1875rem !default;
+$fd-tabs-link-transition-params: $fd-animation-speed ease-in !default;
+$fd-tabs-link-active-line-offset-x: 0.1875rem;
+
+@mixin tabs-selection() {
+  position: relative;
+
+  &::after {
+    transition: all $fd-tabs-link-transition-params;
+    content: "";
+    position: absolute;
+    bottom: -$fd-tabs-link-padding-y;
+    left: -$fd-tabs-link-active-line-offset-x;
+    display: inline-block;
+    height: $fd-tabs-link-border-width;
+    width: calc(100% + #{2 * $fd-tabs-link-active-line-offset-x});
+    border-radius: 0.125rem 0.125rem 0 0;
+    @content;
+  }
+}
+
+@mixin tabs-semantic($color) {
+  .#{$block}__icon {
+    color: $color;
+    border-color: $color;
   }
 
-  @mixin tabs-selection() {
-    position: relative;
-
-    &::after {
-      transition: all $fd-tabs-link-transition-params;
-      content: "";
-      position: absolute;
-      bottom: -$fd-tabs-link-padding-y;
-      left: -$fd-tabs-active-link-line-offset-x;
-      display: inline-block;
-      height: $fd-tabs-link-border-width;
-      width: calc(100% + #{2 * $fd-tabs-active-link-line-offset-x});
-      border-radius: 0.125rem 0.125rem 0 0;
-      @content;
-    }
-  }
-
-  @mixin tabs-semantic($color) {
-    .#{$block}__icon {
+  .#{$block}__link {
+    .#{$block}__tag {
       color: $color;
-      border-color: $color;
+    }
+  }
+
+  @include fd-selected() {
+    .#{$block}__icon {
+      color: var(--sapContent_ContrastIconColor);
+      background-color: $color;
     }
 
+    .#{$block}__icon,
+    .#{$block}__tag,
     .#{$block}__link {
-      .#{$block}__tag {
-        color: $color;
-      }
-    }
-
-    @include fd-selected() {
-      .#{$block}__icon {
-        color: var(--sapContent_ContrastIconColor);
+      &::after {
         background-color: $color;
       }
-
-      .#{$block}__icon,
-      .#{$block}__tag,
-      .#{$block}__link {
-        &::after {
-          background-color: $color;
-        }
-      }
     }
   }
+}
 
-  $fd-tabs-selected-color: var(--fdTabs_Selected_Color);
-  $fd-tabs-border-width: 0.0625rem !default;
-  $fd-tabs-icon-link-padding-y: 1rem !default;
-  $fd-tabs-link-border-width: 0.1875rem !default;
-  $fd-tabs-link-transition-params: $fd-animation-speed ease-in !default;
-  $fd-tabs-icon-size: 1.125rem;
-  $fd-tabs-icon-selection-height: 2.625rem;
-  $fd-tabs-compact-icon-selection-height: 1.875rem;
-  $fd-tabs-selection-padding-x: 0.188rem;
-
-  $fd-tabs-item-spacing-x: 0.25rem;
-
-  $fd-tabs-link-padding-y: 0.875rem !default;
-  $fd-tabs-item-padding-x: 0.75rem;
-
-  $fd-tabs-compact-icon-size: 1rem;
-  $fd-tabs-label-color: var(--sapContent_LabelColor);
-  $fd-tabs-active-link-line-offset-x: 0.1875rem;
-
+.#{$block} {
   @include fd-reset();
 
   display: flex;
@@ -135,14 +128,14 @@ $block: #{$fd-namespace}-tabs;
       .#{$block}__tag,
       .#{$block}__icon {
         &::before {
-          @extend %fd-tabs-focus;
-
           content: '';
           position: absolute;
           top: 0;
           bottom: 0;
           right: 0;
           left: 0;
+          outline: var(--sapContent_FocusColor) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+          outline-offset: var(--sapContent_FocusWidth);
         }
       }
     }
@@ -375,7 +368,7 @@ $block: #{$fd-namespace}-tabs;
     }
 
     .#{$block}__icon {
-      margin: 0 $fd-tabs-active-link-line-offset-x;
+      margin: 0 $fd-tabs-link-active-line-offset-x;
     }
 
     .#{$block}__label {
@@ -465,12 +458,12 @@ $block: #{$fd-namespace}-tabs;
 
   &--compact {
     .#{$block}__icon {
-      font-size: $fd-tabs-compact-icon-size;
-      width: $fd-tabs-compact-icon-selection-height;
-      height: $fd-tabs-compact-icon-selection-height;
+      font-size: $fd-tabs-icon-size-compact;
+      width: $fd-tabs-icon-selection-height-compact;
+      height: $fd-tabs-icon-selection-height-compact;
 
       @include fd-icon-selector() {
-        font-size: $fd-tabs-compact-icon-size;
+        font-size: $fd-tabs-icon-size-compact;
       }
     }
 
