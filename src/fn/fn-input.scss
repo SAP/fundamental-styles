@@ -3,6 +3,8 @@
 $block: #{$fn-namespace}-input;
 
 @mixin fn-input-base($background, $border, $shadow, $focusShadow: false) {
+  -webkit-appearance: none;
+
   @if $focusShadow {
     @if $shadow != "none" {
       box-shadow: $shadow, $focusShadow;
