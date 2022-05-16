@@ -256,6 +256,28 @@ $block: #{$fd-namespace}-menu;
     overflow-y: scroll;
     box-shadow: var(--sapContent_Shadow1);
     border-radius: $fd-menu-border-radius;
+
+    .#{$block}__list {
+      box-shadow: none;
+    }
+
+    .#{$block}__item:first-child {
+      border-top-right-radius: 0;
+
+      @include fd-rtl() {
+        border-top-right-radius: $fd-menu-border-radius;
+        border-top-left-radius: 0;
+      }
+    }
+
+    .#{$block}__item:last-child {
+      border-bottom-right-radius: 0;
+
+      @include fd-rtl() {
+        border-bottom-right-radius: $fd-menu-border-radius;
+        border-bottom-left-radius: 0;
+      }
+    }
   }
 
   &--full-width {
