@@ -244,36 +244,6 @@ $fd-grid-list-highlight: (
     }
   }
 
-  &__filter {
-    &,
-    * {
-      color: var(--sapList_TextColor) !important;
-    }
-
-    &[class*="active"] {
-      @include fd-fiori-focus();
-
-      &,
-      * {
-        color: var(--sapInfobar_TextColor) !important;
-      }
-    }
-
-    .#{$block}__filter-button {
-      @include fd-hover() {
-        background: transparent;
-        box-shadow: none;
-        border: none;
-      }
-
-      @include fd-active() {
-        background: transparent;
-        box-shadow: none;
-        border: none;
-      }
-    }
-  }
-
   &__more {
     @include fd-reset();
     @include fd-fiori-focus();

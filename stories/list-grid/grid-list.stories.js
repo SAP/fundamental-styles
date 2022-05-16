@@ -738,9 +738,8 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
                 <div class="fd-toolbar fd-toolbar--info fd-toolbar--active fd-grid-list__filter" tabindex="0">
                     Filtered by: Company (Company A, Company B)
                     <span class="fd-toolbar__spacer"></span>
-                    <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__filter-button" aria-label="Cancel">
-                        <i class="sap-icon--decline"></i>
-                    </button>
+
+                    <i class="sap-icon--decline"></i>
                 </div>
             </div>
         </div>
