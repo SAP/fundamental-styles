@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.93](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.92...v0.24.0-rc.93) (2022-05-17)
+
+
+### Bug Fixes
+
+* **fn:** fix missing box-shadow for macOS inputs [ci visual] ([#3433](https://github.com/SAP/fundamental-styles/issues/3433)) ([6a150a7](https://github.com/SAP/fundamental-styles/commit/6a150a7760af46b177539c5d37fa1f5960bf9b03))
+
 ## [0.24.0-rc.92](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.91...v0.24.0-rc.92) (2022-05-13)
 
 
