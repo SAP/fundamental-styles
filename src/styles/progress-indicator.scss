@@ -151,7 +151,10 @@ $fd-progress-indicator-states: (
 
     @include fd-rtl() {
       border-right: none;
+      border: var(--fdProgress_Indicator_Progress_Bar_Border) var(--progressBarBorderColor);
       border-left: var(--fdProgress_Indicator_Border_Right);
+      right: var(--fdProgress_Indicator_Progress_Bar_Position_Left);
+      left: initial;
     }
   }
 
@@ -169,8 +172,13 @@ $fd-progress-indicator-states: (
     right: -1.25rem;
     bottom: -0.625rem;
     display: var(--iconDisplay);
-    margin-right: var(--fdProgress_Icon_Offset_Right);
-    margin-left: 0.375rem;
+
+    @include fd-rtl() {
+      left: -1.25rem;
+      right: initial;
+      margin-left: var(--fdProgress_Icon_Offset_Right);
+      margin-right: 0.375rem;
+    }
 
     &::before {
       vertical-align: middle;
@@ -182,6 +190,11 @@ $fd-progress-indicator-states: (
 
     & + .#{$block}__label {
       margin-left: 0;
+
+      @include fd-rtl() {
+        margin-left: inherit;
+        margin-right: 0;
+      }
     }
   }
 
@@ -199,6 +212,11 @@ $fd-progress-indicator-states: (
     line-height: normal;
     color: var(--fdProgress_Indicator_Label_Color);
     font-size: var(--fdProgress_Indicator_Label_Font_Size);
+
+    @include fd-rtl() {
+      left: initial;
+      right: 0;
+    }
   }
 
   &__overflow {
