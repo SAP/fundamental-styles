@@ -260,6 +260,10 @@
   @include fd-active() {
     color: var(--sapLink_Active_Color);
     text-decoration: var(--fdLink_Text_Decoration_Active);
+
+    @include fd-focus() {
+      background-color: transparent;
+    }
   }
 
   &--inverted {
@@ -281,6 +285,10 @@
 
     @include fd-hover() {
       text-decoration: var(--fdLink_Text_Decoration_Subtle_Hover);
+    }
+
+    @include fd-active() {
+      text-decoration: var(--fdLink_Text_Decoration_Subtle_Active);
     }
   }
 
