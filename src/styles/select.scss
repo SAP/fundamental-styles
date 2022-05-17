@@ -9,6 +9,67 @@ $fd-select-padding-x-compact: 0.5rem;
   min-width: calc(#{$width} - var(--sapField_BorderWidth) * 2);
 }
 
+@mixin fd-select-button-settings($bkgdColor, $borderLeft) {
+  .#{$block}__button {
+    color: var(--sapButton_Active_TextColor);
+    background: var(--sapField_BackgroundStyle);
+    background-color: $bkgdColor;
+    border-left-color: $borderLeft;
+    box-shadow: var(--fdInput_Group_Button_Box_Shadow);
+    @content;
+  }
+}
+
+@mixin fd-select-states-overwrite() {
+  $fd-select-states: (
+    'success': (
+      'activeColor': var(--fdInput_Group_Button_Success_Active_Text_Color),
+      'background': var(--sapField_SuccessBackgroundStyle),
+      'hoverBoxShadow': var(--fdInput_Success_Box_Shadow_Hover)
+    ),
+    'error': (
+      'activeColor': var(--fdInput_Group_Button_Error_Active_Text_Color),
+      'background': var(--sapField_InvalidBackgroundStyle),
+      'hoverBoxShadow': var(--fdInput_Error_Box_Shadow_Hover)
+    ),
+    'warning': (
+      'activeColor': var(--fdInput_Group_Button_Warning_Active_Text_Color),
+      'background': var(--sapField_WarningBackgroundStyle),
+      'hoverBoxShadow':  var(--fdInput_Warning_Box_Shadow_Hover)
+    ),
+    'alert': (
+      'activeColor': var(--fdInput_Group_Button_Warning_Active_Text_Color),
+      'background': var(--sapField_WarningBackgroundStyle),
+      'hoverBoxShadow':  var(--fdInput_Warning_Box_Shadow_Hover)
+    ),
+    'information': (
+      'activeColor': var(--fdInput_Group_Button_Information_Active_Text_Color),
+      'background': var(--sapField_InformationBackgroundStyle),
+      'hoverBoxShadow':  var(--fdInput_Information_Box_Shadow_Hover)
+    )
+  );
+
+  @each $set-name, $set-props in $fd-select-states {
+    &.is-#{$set-name} {
+      @include fd-expanded() {
+        box-shadow: map_get($set-props, "hoverBoxShadow");
+
+        .#{$block}__button {
+          color: map_get($set-props, "activeColor");
+          background: map_get($set-props, "background");
+          background-color: var(--sapButton_Selected_Background);
+          border-left-color: var(--fdSelect_Expanded_Button_Border_Left_Color);
+          box-shadow: map_get($set-props, "hoverBoxShadow");
+        }
+
+        @include fd-focus() {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
 .#{$block} {
   @include fd-reset();
 
@@ -32,6 +93,7 @@ $fd-select-padding-x-compact: 0.5rem;
 
     .#{$block}__button {
       @include fd-set-margin-left(0.25rem);
+      @include fd-input-group-button-overwrite();
     }
 
     @include fd-readonly() {
@@ -42,6 +104,24 @@ $fd-select-padding-x-compact: 0.5rem;
         @include fd-select-set-min-width(5rem);
       }
     }
+
+    @include fd-expanded() {
+      box-shadow: var(--fdInput_Box_Shadow_Hover);
+
+      @include fd-select-button-settings(var(--sapButton_Selected_Background), var(--fdSelect_Expanded_Button_Border_Left_Color)
+    );
+
+      @include fd-focus() {
+        box-shadow: none;
+      }
+
+      @include fd-hover() {
+        @include fd-select-button-settings(var(--sapButton_Selected_Hover_Background), var(--fdSelect_Expanded_Button_Border_Left_Color_Hover)
+      );
+      }
+    }
+
+    @include fd-select-states-overwrite();
   }
 
   &__text-content {
