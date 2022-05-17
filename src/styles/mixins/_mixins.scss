@@ -226,7 +226,6 @@
 @mixin fd-link() {
   color: var(--sapLinkColor);
   text-decoration: var(--fdLink_Text_Decoration);
-  text-shadow: var(--sapContent_TextShadow);
   display: inline-block;
   transition: all $fd-animation-speed ease-in;
   line-height: inherit;
