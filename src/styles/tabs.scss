@@ -10,9 +10,7 @@
 
 $block: #{$fd-namespace}-tabs;
 
-$fd-tabs-selected-color: var(--fdTabs_Selected_Color);
 $fd-tabs-label-color: var(--sapContent_LabelColor);
-$fd-tabs-border-width: 0.0625rem !default;
 $fd-tabs-selection-padding-x: 0.188rem;
 
 $fd-tabs-icon-size: 1.125rem;
@@ -25,11 +23,10 @@ $fd-tabs-item-spacing-x: 0.25rem;
 $fd-tabs-item-padding-x: 0.75rem;
 
 $fd-tabs-link-padding-y: 0.875rem !default;
-$fd-tabs-link-border-width: 0.1875rem !default;
 $fd-tabs-link-transition-params: $fd-animation-speed ease-in !default;
 $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
-@mixin tabs-selection() {
+@mixin fd-tabs-selection() {
   position: relative;
 
   &::after {
@@ -39,14 +36,15 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     bottom: -$fd-tabs-link-padding-y;
     left: -$fd-tabs-link-active-line-offset-x;
     display: inline-block;
-    height: $fd-tabs-link-border-width;
+    height: var(--fdIcon_Tab_Bar_Selection_Bar_Height);
     width: calc(100% + #{2 * $fd-tabs-link-active-line-offset-x});
     border-radius: 0.125rem 0.125rem 0 0;
+
     @content;
   }
 }
 
-@mixin tabs-semantic($color) {
+@mixin fd-tabs-semantic($color) {
   .#{$block}__icon {
     color: $color;
     border-color: $color;
@@ -109,14 +107,14 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
     @include fd-selected() {
       .#{$block}__icon {
-        color: var(--fdTabs_Selected_Icon_Color, var(--sapContent_ContrastIconColor));
-        background-color: var(--fdTabs_Selected_Color);
+        color: var(--sapContent_ContrastIconColor);
+        background-color: var(--sapSelectedColor);
       }
 
       .#{$block}__icon,
       .#{$block}__tag {
         &::after {
-          background-color: var(--fdTabs_Selected_Color);
+          background-color: var(--fdIcon_Tab_Bar_Selection_Bar_Color);
         }
       }
     }
@@ -150,41 +148,41 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
     @include fd-selected() {
       .#{$block}__tag {
-        color: var(--fdTabs_Selected_Color);
+        color: var(--fdIcon_Tab_Bar_Selection_Color);
       }
 
       .#{$block}__icon {
-        color: var(--fdTabs_Selected_Icon_Color);
-        background-color: $fd-tabs-selected-color;
+        color: var(--sapContent_ContrastIconColor);
+        background-color: var(--sapSelectedColor);
       }
 
       .#{$block}__icon,
       .#{$block}__tag,
       .#{$block}__link {
         &::after {
-          background-color: var(--fdTabs_Selected_Color);
+          background-color: var(--fdIcon_Tab_Bar_Selection_Bar_Color);
         }
       }
     }
 
     &--error {
-      @include tabs-semantic(var(--sapErrorColor));
+      @include fd-tabs-semantic(var(--sapErrorColor));
     }
 
     &--warning {
-      @include tabs-semantic(var(--sapWarningColor));
+      @include fd-tabs-semantic(var(--sapWarningColor));
     }
 
     &--success {
-      @include tabs-semantic(var(--sapSuccessColor));
+      @include fd-tabs-semantic(var(--sapSuccessColor));
     }
 
     &--information {
-      @include tabs-semantic(var(--sapInformationColor));
+      @include fd-tabs-semantic(var(--sapInformationColor));
     }
 
     &--neutral {
-      @include tabs-semantic(var(--sapNeutralColor));
+      @include fd-tabs-semantic(var(--sapNeutralColor));
     }
 
     &:first-child {
@@ -210,29 +208,27 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
   &__icon {
     @include fd-reset();
+    @include fd-flex-center();
 
     @include fd-icon-element-base() {
       font-size: $fd-tabs-icon-size;
     }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: $fd-tabs-icon-selection-height;
     height: $fd-tabs-icon-selection-height;
-    border: $fd-tabs-border-width solid $fd-tabs-selected-color;
-    color: $fd-tabs-selected-color;
+    border: var(--fdIcon_Tab_Bar_Icon_Border_Weight) solid var(--fdIcon_Tab_Bar_Icon_Border_Color);
+    color: var(--fdIcon_Tab_Bar_Inactive_Tab_Icon_Color);
     border-radius: 50%;
     background-color: transparent;
     position: relative;
     margin: 0 $fd-tabs-selection-padding-x;
 
-    @include tabs-selection();
+    @include fd-tabs-selection();
   }
 
   &__tag {
     @include fd-reset();
-    @include tabs-selection();
+    @include fd-tabs-selection();
 
     display: inline-block;
     line-height: 1rem;
@@ -434,7 +430,7 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
       align-items: center;
       flex-direction: column;
 
-      @include tabs-selection() {
+      @include fd-tabs-selection() {
         bottom: 0;
       }
 
