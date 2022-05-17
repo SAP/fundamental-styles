@@ -21,6 +21,7 @@
 @import "./common/radio/sap_horizon";
 @import "./common/link/sap_horizon";
 @import "./common/vertical-nav/sap_horizon";
+@import "./common/rating-indicator/sap_horizon";
 
 :root {
   /* Busy indicator */
@@ -33,19 +34,11 @@
   --fdSwitch_Semantic_Error_Handle_Border_Color: var(--sapButton_Track_Negative_Background);
   --fdSwitch_Semantic_Success_Handle_Border_Color: var(--sapButton_Track_Positive_Background);
 
-  /* Rating Indicator */
+  /* Object status */
   --fdInverted_Object_Border_Width: 0;
-  --fdOverlay_Background_Opacity: 0.6;
 
-  /* Rating Indicator */
-  // default mode
-  --fdRating_Indicator_Selected_Hover_Opacity: 0.9;
-  // Display Only mode
-  --fdRating_Indicator_Display_Only_Selected_Color: var(--sapTextColor);
-  // Disabled mode
-  --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_RatedColor);
-  --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_UnratedColor);
-  --fdRating_Indicator_Disabled_Control_Opacity: 0.4;
+  /* Action sheet */
+  --fdOverlay_Background_Opacity: 0.6;
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);

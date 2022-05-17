@@ -16,7 +16,6 @@ $block: #{$fd-namespace}-rating-indicator;
   $fd-rating-indicator-default-size: map-get($fd-rating-indicator-sizes, 'md');
   $fd-rating-indicator-default-font-size: map_get($fd-rating-indicator-default-size, "fontSize");
   $fd-rating-indicator-default-spacing-between-icons: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
-  $fd-rating-indicator-default-spacing-between-icons: map_get($fd-rating-indicator-default-size, "spacingBetweenIcons");
   $fd-rating-indicator-dynamic-text-space: 0.5rem;
 
   @mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
