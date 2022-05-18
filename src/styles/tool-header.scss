@@ -133,7 +133,7 @@ $fd-tool-header-object-status-semantic-values: (
     color: var(--sapShell_TextColor);
   }
 
-  &__button {
+  .#{$block}__button {
     color: var(--sapShell_InteractiveTextColor);
 
     &:hover {
