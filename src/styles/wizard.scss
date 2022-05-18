@@ -170,10 +170,6 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
           min-width: auto;
         }
       }
-
-      + .#{$block}__step--current .#{$block}__label {
-        color: var(--sapContent_LabelColor);
-      }
     }
 
     &--stacked {
