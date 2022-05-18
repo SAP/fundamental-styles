@@ -13,10 +13,6 @@ $block: #{$fd-namespace}-tabs;
 $fd-tabs-label-color: var(--sapContent_LabelColor);
 $fd-tabs-selection-padding-x: 0.188rem;
 
-$fd-tabs-icon-size: 1.125rem;
-$fd-tabs-icon-size-compact: 1rem;
-$fd-tabs-icon-selection-height: 2.625rem;
-$fd-tabs-icon-selection-height-compact: 1.875rem;
 $fd-tabs-icon-link-padding-y: 1rem !default;
 
 $fd-tabs-item-spacing-x: 0.25rem;
@@ -27,6 +23,9 @@ $fd-tabs-link-transition-params: $fd-animation-speed ease-in !default;
 $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
 @mixin fd-tabs-selection() {
+  --fdTabs_Icon_Size: 1.125rem;
+  --fdTabs_Icon_Selection_Height: 2.625rem;
+
   position: relative;
 
   &::after {
@@ -211,11 +210,11 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
     @include fd-flex-center();
 
     @include fd-icon-element-base() {
-      font-size: $fd-tabs-icon-size;
+      font-size: var(--fdTabs_Icon_Size);
     }
 
-    width: $fd-tabs-icon-selection-height;
-    height: $fd-tabs-icon-selection-height;
+    width: var(--fdTabs_Icon_Selection_Height);
+    height: var(--fdTabs_Icon_Selection_Height);
     border: var(--fdIcon_Tab_Bar_Icon_Border_Weight) solid var(--fdIcon_Tab_Bar_Icon_Border_Color);
     color: var(--fdIcon_Tab_Bar_Inactive_Tab_Icon_Color);
     border-radius: 50%;
@@ -453,15 +452,8 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
   }
 
   &--compact {
-    .#{$block}__icon {
-      font-size: $fd-tabs-icon-size-compact;
-      width: $fd-tabs-icon-selection-height-compact;
-      height: $fd-tabs-icon-selection-height-compact;
-
-      @include fd-icon-selector() {
-        font-size: $fd-tabs-icon-size-compact;
-      }
-    }
+    --fdTabs_Icon_Size: 1.125rem;
+    --fdTabs_Icon_Selection_Height: 1.875rem;
 
     .#{$block}__label {
       &:first-child {
