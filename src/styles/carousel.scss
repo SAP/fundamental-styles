@@ -18,8 +18,10 @@ $fd-carousel-dot-active-size: 0.5rem !default;
   max-width: 100%;
 
   @include fd-hover() {
-    .#{$block}__content .#{$block}__button {
-      display: block;
+    .#{$block}__content {
+      .#{$block}__button {
+        display: block;
+      }
     }
   }
 
@@ -192,8 +194,10 @@ $fd-carousel-dot-active-size: 0.5rem !default;
     }
 
     @include fd-hover() {
-      .#{$block}__content .#{$block}__button {
-        display: none;
+      .#{$block}__content {
+        .#{$block}__button {
+          display: none;
+        }
       }
     }
   }
