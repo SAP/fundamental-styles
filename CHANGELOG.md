@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.94](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.93...v0.24.0-rc.94) (2022-05-18)
+
+
+### Bug Fixes
+
+* **styles:** overflow menu radius ([#3432](https://github.com/SAP/fundamental-styles/issues/3432)) ([c877e4e](https://github.com/SAP/fundamental-styles/commit/c877e4eb2f6e4b4fc1caf8d191538e9d30d5f75e))
+
 ## [0.24.0-rc.93](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.92...v0.24.0-rc.93) (2022-05-17)
 
 
