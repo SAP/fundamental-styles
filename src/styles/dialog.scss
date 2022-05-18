@@ -71,6 +71,10 @@ $button: #{$fd-namespace}-button;
 
     &--mobile {
       @extend %dialog-mobile;
+
+      .#{$block}__body {
+        border-radius: 0;
+      }
     }
 
     &--no-mobile-stretch {
