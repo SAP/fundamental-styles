@@ -79,6 +79,7 @@ $fd-grid-list-highlight: (
     height: 100%;
     position: relative;
     overflow: hidden;
+    outline: none;
 
     @include fd-focus() {
       &::before {
@@ -89,7 +90,7 @@ $fd-grid-list-highlight: (
         inset: var(--fdGrid_List_Item_Focus_Outline_Offset);
         box-shadow: var(--fdGrid_List_Item_Focus_Box_Shadow);
         border: var(--fdGrid_List_Item_Focus_Border);
-        border-radius: var(--fdGrid_List_Item_Focus_Border_Radius);
+        border-radius: $fd-grid-list-border-radius;
         z-index: 1;
       }
     }

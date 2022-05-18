@@ -134,6 +134,7 @@ $title-toolbar-height: 2.75rem;
     @include fd-fiori-pseudo-focus();
 
     position: relative;
+    outline: none;
 
     @include fd-focus() {
       &::after {
