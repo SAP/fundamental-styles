@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.97](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.96...v0.24.0-rc.97) (2022-05-19)
+
+
+### Bug Fixes
+
+* **styles:** dialog body corner radius in mobile mode ([#3444](https://github.com/SAP/fundamental-styles/issues/3444)) ([bdb1b5a](https://github.com/SAP/fundamental-styles/commit/bdb1b5a1005afb0860f3d47591c9690b41e467d4))
+
 ## [0.24.0-rc.96](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.95...v0.24.0-rc.96) (2022-05-19)
 
 
