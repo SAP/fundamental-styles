@@ -14,11 +14,12 @@
 @import "./common/panel/sap_fiori";
 @import "./common/carousel/sap_fiori";
 @import "./common/feed-list-item/sap_fiori";
-@import "common/message-box/sap_fiori";
+@import "./common/message-box/sap_fiori";
 @import "./common/busy-indicator/sap_fiori";
 @import "./common/menu/sap_fiori";
 @import "./common/checkbox/sap_foiri";
 @import "./common/radio/sap_fiori";
+@import "./common/link/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -234,18 +235,6 @@
 
   /* Table */
   --fdTable_Hover_Down_Color: inherit;
-
-  /* Link */
-  --fdLink_Text_Decoration_Opposite: underline;
-  --fdLink_Text_Decoration: none;
-  --fdLink_Text_Focus_Color: var(--sapLinkColor);
-  --fdLink_Focus_Background: transparent;
-  --fdLink_Focus_Border_Radius: 0;
-  --fdLink_Focus_Text_Shadow: none;
-  --fdLink_Hover_Outline_Offset: -0.0625rem;
-  --fdLink_Hover_Outline_Width: var(--sapContent_FocusWidth);
-  --fdLink_Hover_Outline_Color: var(--sapContent_FocusColor);
-  --fdLink_Hover_Outline_Style: var(--sapContent_FocusStyle);
 
   /* Feed Input */
   --fdFeed_Input_Placeholder_Font_Style: italic;

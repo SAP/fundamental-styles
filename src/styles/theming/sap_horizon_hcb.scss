@@ -19,6 +19,7 @@
 @import "./common/menu/sap_horizon";
 @import "./common/checkbox/sap_horizon_hc";
 @import "./common/radio/sap_horizon_hc";
+@import "./common/link/sap_horizon_hc";
 
 :root {
   /* Switch */
@@ -240,18 +241,6 @@
 
   /* Table */
   --fdTable_Hover_Down_Color: inherit;
-
-  /* Link */
-  --fdLink_Text_Decoration_Opposite: underline;
-  --fdLink_Text_Decoration: none;
-  --fdLink_Text_Focus_Color: var(--sapContent_ContrastTextColor);
-  --fdLink_Focus_Background: transparent;
-  --fdLink_Focus_Border_Radius: 0;
-  --fdLink_Focus_Text_Shadow: none;
-  --fdLink_Hover_Outline_Offset: -0.0625rem;
-  --fdLink_Hover_Outline_Width: var(--sapContent_FocusWidth);
-  --fdLink_Hover_Outline_Color: var(--sapContent_FocusColor);
-  --fdLink_Hover_Outline_Style: var(--sapContent_FocusStyle);
 
   /* Feed Input */
   --fdFeed_Input_Placeholder_Font_Style: italic;

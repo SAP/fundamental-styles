@@ -16,21 +16,21 @@ $block: #{$fd-namespace}-link;
 
   @include fd-hover() {
     @include fd-icon-selector() {
-      text-decoration: var(--fdLink_Text_Decoration_Opposite);
+      text-decoration: var(--fdLink_Text_Decoration_Hover);
       color: var(--sapLink_Hover_Color);
     }
   }
 
   @include fd-focus() {
     @include fd-icon-selector() {
-      text-decoration: var(--fdLink_Text_Decoration_Opposite);
+      text-decoration: var(--fdLink_Text_Decoration_Focus);
       color: var(--fdLink_Text_Focus_Color);
     }
   }
 
   @include fd-active() {
     @include fd-icon-selector() {
-      text-decoration: var(--fdLink_Text_Decoration_Opposite);
+      text-decoration: var(--fdLink_Text_Decoration_Active);
       color: var(--sapLink_Active_Color);
     }
   }
