@@ -19,11 +19,25 @@ The size of the content area automatically adjusts depending on the available sc
 
 When no pages are loaded, carousel displays a **Message Page** with a \`sap-icon--document\` icon.
 
-
 ## Accessibility
 
 To ensure that the carousel is accessible, a div element with class \`fd-carousel\` has a visually hidden sibling div element with \`role="region"\` and an \`aria-live="polite"\` attribute. This way, the text will be dynamically updated using Javascript so that carousel's content changes are announced to the user by screen readers.
 
+## Structure
+
+* \`fd-carousel\` The carousel container.
+  * \`fd-carousel__content\` The carousel content.
+    * \`fd-carousel__button\` The carousel button in content.
+    * \`fd-carousel__button--left\` The carousel button in content for previous page.
+    * \`fd-carousel__button--right\` The carousel button in content for next page.
+    * \`fd-carousel__slides\` The carousel slides.
+      * \`fd-carousel__item\` The carousel item.
+  * \`fd-carousel__page-indicator-container\` The carousel page indicator container.
+    * \`fd-carousel__button\` The carousel button.
+    * \`fd-carousel__button--left\` The carousel button for previous page.
+    * \`fd-carousel__button--right\` The carousel button for next page.
+    * \`fd-carousel__page-indicators\` The carousel page indicators list.
+      * \`fd-carousel__page-indicator-item\` The carousel page indicator item.
 `,
         tags: ['f3', 'a11y', 'theme', 'development'],
         components: ['carousel', 'button', 'icon', 'message-page', 'link']
@@ -32,11 +46,20 @@ To ensure that the carousel is accessible, a div element with class \`fd-carouse
 
 export const CarouselBottom = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Navigation buttons in page indicator</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
-        <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
+        <div class="fd-carousel__content">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+        </div>
+
         <div class="fd-carousel__page-indicator-container">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -44,6 +67,7 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
             <ol class="fd-carousel__page-indicators">
                 <li
                     data-slide-to="1"
@@ -68,6 +92,7 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
                     data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -76,22 +101,32 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-1" aria-live="polite">
         Displaying item 1 of 4
     </div>
 
     <h4>Content navigation buttons</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
-        <div class="fd-carousel__content" style="min-height: 15.5rem;">
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
+        <div class="fd-carousel__content">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -99,6 +134,7 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
+
         <div class="fd-carousel__page-indicator-container">
             <ol class="fd-carousel__page-indicators">
                 <li
@@ -125,16 +161,26 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
             </ol>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-2" aria-live="polite">
         Displaying item 1 of 4
     </div>
 
     <h4>Numeric page indicator</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
-        <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
+        <div class="fd-carousel__content">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+        </div>
+
         <div class="fd-carousel__page-indicator-container">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -142,9 +188,11 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
             <div class="fd-carousel__page-indicators">
                 <div class="fd-carousel__text">1 of 4</div>
             </div>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -153,22 +201,33 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-3" aria-live="polite">
         Displaying item 1 of 4
     </div>
 
     <h4>No page indicator</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
-        <div class="fd-carousel__content" style="min-height: 15.5rem;">
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
+        <div class="fd-carousel__content">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
-                aria-label="Go to previous item">
+                aria-label="Go to previous item"
+            >
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -177,6 +236,7 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-4" aria-live="polite">
         Displaying item 1 of 4
     </div>
@@ -186,20 +246,20 @@ export const CarouselBottom = () => `<div style="display: flex; flex-direction: 
 CarouselBottom.storyName = 'Bottom page indicator';
 CarouselBottom.parameters = {
     docs: {
-        iframeHeight: 900,
         description: {
-            story: `The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.
-`
+            story: 'The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.'
         }
     }
 };
 
 export const CarouselTop = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Navigation buttons in page indicator</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
         <div class="fd-carousel__page-indicator-container">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -207,6 +267,7 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
             <ol class="fd-carousel__page-indicators">
                 <li
                     data-slide-to="1"
@@ -230,6 +291,7 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
                     data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -237,17 +299,27 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
+
+        <div class="fd-carousel__content">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+        </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-5" aria-live="polite">
         Displaying item 1 of 4
     </div>
 
     <h4>Navigation buttons in content</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
         <div class="fd-carousel__page-indicator-container">
             <ol class="fd-carousel__page-indicators">
                 <li
@@ -273,14 +345,22 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
                     class="fd-carousel__page-indicator"></li>
             </ol>
         </div>
-        <div class="fd-carousel__content" style="min-height: 15.5rem;">
-           <button
+
+        <div class="fd-carousel__content">
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
-           <button
+
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -288,27 +368,38 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-6" aria-live="polite">
         Displaying item 1 of 4
     </div>
 
     <h4>Numeral format for page indicator</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
         <div class="fd-carousel__page-indicator-container">
             <div class="fd-carousel__page-indicators">
                 <div class="fd-carousel__text">1 of 4</div>
             </div>
         </div>
-        <div class="fd-carousel__content" style="min-height: 15.5rem;">
+
+        <div class="fd-carousel__content">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -317,15 +408,18 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-7" aria-live="polite">
         Displaying item 1 of 4
     </div>
 
     <h4>No page indicators</h4>
+
     <div
         class="fd-carousel"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
         <div class="fd-carousel__page-indicator-container">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -333,7 +427,9 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
             <ol class="fd-carousel__page-indicators"></ol>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -341,19 +437,16 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
-        <div class="fd-carousel__content" style="text-align: center; padding: 1rem; min-height: 15.5rem;">
-            <div class="fd-carousel__item fd-carousel__item--active">
-                <div
-                    style="
-                        width:100%;
-                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                        height: 15.5rem;
-                        background-size:cover;"
-                    role="img"
-                    aria-label="Carousel Image 4" />
+
+        <div class="fd-carousel__content">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
             </div>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-8" aria-live="polite">
         Displaying item 1 of 4
     </div>
@@ -363,7 +456,6 @@ export const CarouselTop = () => `<div style="display: flex; flex-direction: col
 CarouselTop.storyName = 'Top page indicator';
 CarouselTop.parameters = {
     docs: {
-        iframeHeight: 900,
         description: {
             story: `The top page indicator carousel displays a content area, navigation buttons and a page indicator at the top.
 `
@@ -373,11 +465,20 @@ CarouselTop.parameters = {
 
 export const CarouselNoNavigation = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Hiding navigation buttons in page indicator</h4>
+
     <div
         class="fd-carousel fd-carousel--no-navigation"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
-        <div class="fd-carousel__content" style="min-height: 15.5rem;"></div>
+        style="margin-bottom: 3rem; max-width: 20rem;"
+    >
+        <div class="fd-carousel__content">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+        </div>
+
         <div class="fd-carousel__page-indicator-container">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -385,6 +486,7 @@ export const CarouselNoNavigation = () => `<div style="display: flex; flex-direc
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
             <ol class="fd-carousel__page-indicators">
                 <li
                     data-slide-to="1"
@@ -409,6 +511,7 @@ export const CarouselNoNavigation = () => `<div style="display: flex; flex-direc
                     data-slide-to="7"
                     class="fd-carousel__page-indicator"></li>
             </ol>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -417,15 +520,18 @@ export const CarouselNoNavigation = () => `<div style="display: flex; flex-direc
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-9" aria-live="polite">
         Displaying item 1 of 4
     </div>
 
     <h4>Hiding navigation buttons in the content</h4>
+
     <div
         class="fd-carousel fd-carousel--no-navigation"
         data-ride="carousel"
-        style="margin-bottom: 3rem; max-width: 30rem;">
+        style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
+    >
         <div class="fd-carousel__page-indicator-container">
             <ol class="fd-carousel__page-indicators">
                 <li
@@ -451,14 +557,22 @@ export const CarouselNoNavigation = () => `<div style="display: flex; flex-direc
                     class="fd-carousel__page-indicator"></li>
             </ol>
         </div>
-        <div class="fd-carousel__content" style="min-height: 15.5rem;">
-           <button
+
+        <div class="fd-carousel__content">
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
                 data-slide="prev"
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
-           <button
+
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
+                </div>
+            </div>
+
+            <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
                 aria-label="Go to next item">
@@ -466,6 +580,7 @@ export const CarouselNoNavigation = () => `<div style="display: flex; flex-direc
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-10" aria-live="polite">
         Displaying item 1 of 4
     </div>
@@ -475,7 +590,6 @@ export const CarouselNoNavigation = () => `<div style="display: flex; flex-direc
 CarouselNoNavigation.storyName = 'Hidden navigation buttons';
 CarouselNoNavigation.parameters = {
     docs: {
-        iframeHeight: 900,
         description: {
             story: `Carousel can also be displayed without navigation buttons. To hide them, add the \`fd-carousel--no-navigation\` modifier class to the \`fd-carousel\` class. On touchable devices, the user can navigate with a swipe gesture.
 `
@@ -483,49 +597,22 @@ CarouselNoNavigation.parameters = {
     }
 };
 
-export const HorizontalCarousel = () => `<div style="display: flex; flex-direction: column; align-items: center; height: 25rem;">
+export const HorizontalCarousel = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Items in horizontal direction</h4>
+
     <div
         class="fd-carousel"
-        style="max-width: 60rem; max-height: 15.5rem;"
-        data-ride="carousel">
+        style="max-width: 20rem; max-height: 15.5rem;"
+        data-ride="carousel"
+    >
         <div class="fd-carousel__content fd-carousel__content--horizontal">
-            <div class="fd-carousel__item fd-carousel__item--active">
-                <div
-                    style="
-                        width: 100%;
-                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                        height: 100%;
-                        background-size:cover;"
-                    role="img"
-                    aria-label="Carousel Image 5">
-                </div>
-            </div>
-
-            <div class="fd-carousel__item fd-carousel__item--active">
-                <div
-                    style="
-                        width: 100%;
-                        background-image: url(assets/images/backgrounds/city.jpg);
-                        height: 100%;
-                        background-size:cover;"
-                    role="img"
-                    aria-label="Carousel Image 6">
-                </div>
-            </div>
-
-            <div class="fd-carousel__item fd-carousel__item--active">
-                <div
-                    style="
-                        width: 100%;
-                        background-image: url(assets/images/backgrounds/leaves.jpg);
-                        height: 100%;
-                        background-size:cover;"
-                    role="img"
-                    aria-label="Carousel Image 7">
+            <div class="fd-carousel__slides">
+                <div class="fd-carousel__item fd-carousel__item--active">
+                    <img src="https://placehold.co/320x200" alt="first image">
                 </div>
             </div>
         </div>
+
         <div class="fd-carousel__page-indicator-container">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -533,6 +620,7 @@ export const HorizontalCarousel = () => `<div style="display: flex; flex-directi
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
             <ol class="fd-carousel__page-indicators">
                 <li
                     data-slide-to="1"
@@ -545,6 +633,7 @@ export const HorizontalCarousel = () => `<div style="display: flex; flex-directi
                     data-slide-to="3"
                     class="fd-carousel__page-indicator"></li>
             </ol>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -553,6 +642,7 @@ export const HorizontalCarousel = () => `<div style="display: flex; flex-directi
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-11" aria-live="polite">
         Displaying item 2 of 3
     </div>
@@ -562,7 +652,6 @@ export const HorizontalCarousel = () => `<div style="display: flex; flex-directi
 HorizontalCarousel.storyName = 'Items in horizontal direction';
 HorizontalCarousel.parameters = {
     docs: {
-        iframeHeight: 900,
         description: {
             story: `Carousel will have items which will spread horizontally and will be visible on navigation. For translate animation effect to work, all items should be in DOM.
 `
@@ -570,26 +659,30 @@ HorizontalCarousel.parameters = {
     }
 };
 
-export const Error = () => `<div style="display: flex; flex-direction: column; align-items: center; height: 25rem;">
+export const Error = () => `<div style="display: flex; flex-direction: column; align-items: center;">
     <h4>Error in loading items</h4>
+
     <div
         class="fd-carousel fd-carousel--no-navigation"
-        style="max-width: 30rem"
-        data-ride="carousel">
-        <div class="fd-carousel__content" style="height: 20rem;">
+        style="max-width: 20rem; max-height: 15.5rem;"
+        data-ride="carousel"
+    >
+        <div class="fd-carousel__content">
             <div class="fd-message-page">
                 <div class="fd-message-page__container">
-                <div class="fd-message-page__icon-container">
-                    <i role="presentation" class="sap-icon--document fd-message-page__icon"></i>
-                </div>
-                <div role="status" aria-live="polite" class="fd-message-page__content">
-                    <div class="fd-message-page__title">
-                        Items could not be loaded
+                    <div class="fd-message-page__icon-container">
+                        <i role="presentation" class="sap-icon--document fd-message-page__icon"></i>
+                    </div>
+
+                    <div role="status" aria-live="polite" class="fd-message-page__content">
+                        <div class="fd-message-page__title">
+                            Items could not be loaded
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
         <div class="fd-carousel__page-indicator-container">
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -597,7 +690,9 @@ export const Error = () => `<div style="display: flex; flex-direction: column; a
                 aria-label="Go to previous item">
                 <i class="sap-icon--slim-arrow-left"></i>
             </button>
+
             <ol class="fd-carousel__page-indicators"></ol>
+
             <button
                 class="fd-button fd-carousel__button fd-carousel__button--right"
                 data-slide="next"
@@ -606,6 +701,7 @@ export const Error = () => `<div style="display: flex; flex-direction: column; a
             </button>
         </div>
     </div>
+
     <div style="display: none;" role="region" id="carousel-12" aria-live="polite">
         Error in loading items
     </div>
@@ -615,10 +711,8 @@ export const Error = () => `<div style="display: flex; flex-direction: column; a
 Error.storyName = 'Items loading error';
 Error.parameters = {
     docs: {
-        iframeHeight: 900,
         description: {
-            story: `Error message can be disaplyed when items could not be loaded. Error message can be composed using Message page component.
-`
+            story: 'Error message can be displayed when items could not be loaded. Error message can be composed using Message page component.'
         }
     }
 };
