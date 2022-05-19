@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.101](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.100...v0.24.0-rc.101) (2022-05-19)
+
+
+### Bug Fixes
+
+* **styles:** fixed link underline in HCB ([#3409](https://github.com/SAP/fundamental-styles/issues/3409)) ([0e9b753](https://github.com/SAP/fundamental-styles/commit/0e9b7539f902645095d7016348471fff6d48467c))
+
 ## [0.24.0-rc.100](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.99...v0.24.0-rc.100) (2022-05-19)
 
 
