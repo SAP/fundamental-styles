@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.95](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.94...v0.24.0-rc.95) (2022-05-19)
+
+
+### Bug Fixes
+
+* **styles:** visual diff fixes ([#3431](https://github.com/SAP/fundamental-styles/issues/3431)) ([2bdddfe](https://github.com/SAP/fundamental-styles/commit/2bdddfe75fafbc2f94adb0bd1302ab2e5fe85c30))
+
 ## [0.24.0-rc.94](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.93...v0.24.0-rc.94) (2022-05-18)
 
 
