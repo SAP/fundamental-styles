@@ -23,9 +23,6 @@ $fd-tabs-link-transition-params: $fd-animation-speed ease-in !default;
 $fd-tabs-link-active-line-offset-x: 0.1875rem;
 
 @mixin fd-tabs-selection() {
-  --fdTabs_Icon_Size: 1.125rem;
-  --fdTabs_Icon_Selection_Height: 2.625rem;
-
   position: relative;
 
   &::after {
@@ -72,6 +69,9 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
 }
 
 .#{$block} {
+  --fdTabs_Icon_Size: 1.125rem;
+  --fdTabs_Icon_Selection_Height: 2.625rem;
+
   @include fd-reset();
 
   display: flex;
