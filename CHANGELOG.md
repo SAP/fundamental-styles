@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.98](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.97...v0.24.0-rc.98) (2022-05-19)
+
+
+### Bug Fixes
+
+* **styles:** micro process flow horizon hc ([#3445](https://github.com/SAP/fundamental-styles/issues/3445)) ([11142ea](https://github.com/SAP/fundamental-styles/commit/11142eacdd76609916218d1a54e63f79e15d87ab))
+
 ## [0.24.0-rc.97](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.96...v0.24.0-rc.97) (2022-05-19)
 
 
