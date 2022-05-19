@@ -16,8 +16,7 @@
   --fdProgress_Indicator_Container_Border_Critical: var(--sapProgress_CriticalBorderColor);
   --fdProgress_Indicator_Container_Border_Negative: var(--sapProgress_NegativeBorderColor);
   --fdProgress_Indicator_Border_Right: none;
-  --fdProgress_Icon_Offset_Right: 0;
-  --fdProgress_Icon_Offset_Left: 0;
+  --fdProgress_Icon_Space_Before_Label: 0;
   --fdProgress_Icon_Informative: '\e289';
   --fdProgress_Icon_Positive: '\e1c1';
   --fdProgress_Icon_Negative: '\e1c8';
@@ -46,7 +45,8 @@
   --fdProgress_Indicator_Progress_Bar_Popover_Control_Border: inherit;
   --fdProgress_Indicator_Label_Color: var(--sapField_TextColor);
   --fdProgress_Indicator_Label_Color_Contrast: var(--sapField_TextColor);
-  --fdProgress_Indicator_Label_Margin: 0;
+  --fdProgress_Indicator_Label_Margin_Start: 0;
+  --fdProgress_Indicator_Label_Margin_End: 0;
   --fdProgress_Indicator_Label_Position: absolute;
   --fdProgress_Indicator_Label_Font_Size: var(--sapProgress_FontSize);
   --fdProgress_Indicator_Icon_Position: absolute;
