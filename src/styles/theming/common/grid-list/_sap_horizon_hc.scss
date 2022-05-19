@@ -1,3 +1,5 @@
+@import "./sap_horizon";
+
 :root {
   --fdGrid_List_Highlight_Offset: 0.1875rem;
   --fdGrid_List_Item_Border_Radius: 1rem; // Should be --sapTile_BorderCornerRadius, but in themes, it is incorrect value

@@ -1,0 +1,8 @@
+@import "./sap_horizon";
+
+:root {
+  --fdCheckbox_Hover_Background: var(--sapSelectedColor);
+  --fdCheckbox_State_Hover_Background: var(--sapSelectedColor);
+  --fdCheckbox_Readonly_Border_Type: solid;
+  --fdCheckbox_Warning_Error_Information_Border_Style: dashed;
+}

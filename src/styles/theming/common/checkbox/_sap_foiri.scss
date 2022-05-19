@@ -1,0 +1,18 @@
+@import "./common";
+
+:root {
+  --fdCheckbox_Hover_Background: var(--sapField_Hover_Background);
+  --fdCheckbox_Hover_Shadow: none;
+  --fdCheckbox_Selected_Color: var(--sapSelectedColor);
+  --fdCheckbox_Error_State_Shadow: none;
+  --fdCheckbox_Warning_State_Shadow: none;
+  --fdCheckbox_Success_State_Shadow: none;
+  --fdCheckbox_Information_State_Shadow: none;
+  --fdCheckbox_State_Hover_Background: inherit;
+  --fdCheckbox_Readonly_Border_Width: var(--sapField_BorderWidth);
+  --fdCheckbox_Readonly_Border_Type: solid;
+  --fdCheckbox_Warning_Error_Information_Border_Style: solid;
+  --fdCheckbox_Focus_Outline_Offset: 0.125rem;
+  --fdCheckbox_Outline_Border_Radius: 0;
+  --fdCheckbox_Compact_Outline_Border_Radius: 0;
+}

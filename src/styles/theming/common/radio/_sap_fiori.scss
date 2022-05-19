@@ -1,0 +1,20 @@
+@import "./common";
+
+:root {
+  --fdRadio_Selected_Color: var(--sapSelectedColor);
+  --fdRadio_Inner_Content_Size: 0.625rem;
+  --fdRadio_Inner_Content_Size_Compact: 0.375rem;
+  --fdRadio_Inner_Content_Padding: 1.0625rem;
+  --fdRadio_Inner_Content_Padding_Compact: 0.8125rem;
+  --fdRadio_Hover_Box_Shadow: none;
+  --fdRadio_Readonly_Border_Type: solid;
+  --fdRadio_Readonly_Border_Width: var(--sapField_BorderWidth);
+  --fdRadio_Error_Hover_Shadow: none;
+  --fdRadio_Warning_Hover_Shadow: none;
+  --fdRadio_Success_Hover_Shadow: none;
+  --fdRadio_Information_Hover_Shadow: none;
+  --fdRadio_Warning_Error_Information_Border_Style: solid;
+  --fdRadio_Focus_Outline_Offset: 0.125rem;
+  --fdRadio_Outline_Border_Radius: 0;
+  --fdRadio_Compact_Outline_Border_radius: 0;
+}

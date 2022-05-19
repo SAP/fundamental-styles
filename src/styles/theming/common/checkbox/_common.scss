@@ -1,0 +1,13 @@
+:root {
+  --fdCheckbox_Background_Color: var(--sapField_Background);
+  --fdCheckbox_Border: var(--sapField_BorderWidth) solid var(--sapField_BorderColor);
+  --fdCheckbox_Hover_Border_Color: var(--sapField_Hover_BorderColor);
+  --fdCheckbox_Tristate_Size: 0.75rem;
+  --fdCheckbox_Tristate_Offset: 0.3125rem;
+  --fdCheckbox_Tristate_Compact_Size: 0.5rem;
+  --fdCheckbox_Tristate_Compact_Offset: 0.25rem;
+  --fdCheckbox_Padding: 0.6875rem;
+  --fdCheckbox_Compact_Padding: 0.5rem;
+  --fdCheckbox_Dimensions: 1.375rem;
+  --fdCheckbox_Compact_Dimensions: 1rem;
+}
