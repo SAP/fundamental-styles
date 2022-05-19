@@ -3,23 +3,23 @@
 
 $block: #{$fd-namespace}-rating-indicator;
 
-@mixin fd-rating-indicator-with-half-star($iconFontSize, $spacingBetweenIcons) {
+@mixin fd-rating-indicator-with-half-star($icon-font-size, $spacing-between-icons) {
   .#{$block} {
     &__input {
-      width: calc(#{$iconFontSize} * 0.5);
-      height: $iconFontSize;
+      width: calc(#{$icon-font-size} * 0.5);
+      height: $icon-font-size;
     }
 
     &__label {
       margin-right: 0;
 
       &:nth-child(4n+6) {
-        margin-right: $spacingBetweenIcons;
+        margin-right: $spacing-between-icons;
         flex-direction: row-reverse;
 
         @include fd-rtl() {
           margin-right: 0;
-          margin-left: $spacingBetweenIcons;
+          margin-left: $spacing-between-icons;
 
           &:last-child {
             margin-left: 0;
@@ -32,12 +32,12 @@ $block: #{$fd-namespace}-rating-indicator;
       }
 
       overflow: hidden;
-      width: calc(#{$iconFontSize} * 0.5);
+      width: calc(#{$icon-font-size} * 0.5);
     }
 
     &--icon {
       .#{$block}__label {
-        width: calc(#{$iconFontSize} * 0.5);
+        width: calc(#{$icon-font-size} * 0.5);
       }
     }
   }
@@ -75,10 +75,10 @@ $block: #{$fd-namespace}-rating-indicator;
       --fontSize: #{map_get($size-set, "fontSize")};
       --spacingBetweenIcons: #{map_get($size-set, "spacingBetweenIcons")};
 
-      $controlMargin: map_get($size-set, "controlMargin");
+      $control-margin: map_get($size-set, "controlMargin");
 
-      @if $controlMargin {
-        margin: $controlMargin;
+      @if $control-margin {
+        margin: $control-margin;
       }
     }
   }
@@ -271,8 +271,6 @@ $block: #{$fd-namespace}-rating-indicator;
   }
 
   // ************ BLOCK MODIFIERS ************
-  // Sizes
-
   &--half-star {
     @include fd-rating-indicator-with-half-star(var(--fontSize), var(--spacingBetweenIcons));
   }
