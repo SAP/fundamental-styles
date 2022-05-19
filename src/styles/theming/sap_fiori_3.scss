@@ -20,6 +20,7 @@
 @import "./common/checkbox/sap_foiri";
 @import "./common/radio/sap_fiori";
 @import "./common/link/sap_fiori";
+@import "./common/vertical-nav/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -126,9 +127,6 @@
 
   /* TODO: DEPRECATED Side-Nav */
   --fdSideNav_Text_Shadow: none;
-
-  /* Vertical-Nav */
-  --fdVerticalNav_Text_Shadow: none;
 
   /* Time */
   --fdTime_Text_Shadow: none;

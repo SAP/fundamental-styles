@@ -64,6 +64,13 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         overflow: hidden;
 
         .#{$blockList}__navigation-item {
+          @include fd-focus() {
+            &:last-child {
+              border-bottom-left-radius: var(--fdVerticalNav_Border_Corner_Radius);
+              border-bottom-right-radius: var(--fdVerticalNav_Border_Corner_Radius);
+            }
+          }
+
           @include _fd-vertical-nav-selected-color();
 
           width: 100%;
@@ -323,6 +330,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
             position: absolute;
             display: block;
             border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+            border-radius: var(--fdVerticalNav_Border_Corner_Radius);
             top: 0.125rem;
             left: 0.125rem;
             right: 0.125rem;
