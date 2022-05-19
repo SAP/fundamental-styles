@@ -1,4 +1,15 @@
 
+## [0.24.0-rc.100](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.99...v0.24.0-rc.100) (2022-05-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** * Carousel content markup change, from now use element with class fd-carousel__slides for carousel items.
+
+### Features
+
+* **styles:** carousel full-size image, classes & styles improvements ([#3439](https://github.com/SAP/fundamental-styles/issues/3439)) ([a2a855d](https://github.com/SAP/fundamental-styles/commit/a2a855dbd80b55bf8c879ccefb6489708f38110e))
+
 ## [0.24.0-rc.99](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.98...v0.24.0-rc.99) (2022-05-19)
 
 
