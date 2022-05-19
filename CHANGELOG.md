@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.96](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.95...v0.24.0-rc.96) (2022-05-19)
+
+
+### Bug Fixes
+
+* checkbox and radio fixes and optimization [ci visual] ([#3423](https://github.com/SAP/fundamental-styles/issues/3423)) ([63b75b4](https://github.com/SAP/fundamental-styles/commit/63b75b4551598b6bd851b58ff5dc27cd287a81fd))
+
 ## [0.24.0-rc.95](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.94...v0.24.0-rc.95) (2022-05-19)
 
 
