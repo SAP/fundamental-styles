@@ -34,7 +34,7 @@ export const Shellbar = () => `${localStyles}
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
             <div class="fd-popover__control">
-                <button class="fd-button fd-button--transparent fd-popover__control fd-product-switch__control"
+                <button class="fd-button fd-button--transparent fd-popover__control"
                     aria-label="Image label"
                     aria-controls="product-switch-body"
                     aria-expanded="true"

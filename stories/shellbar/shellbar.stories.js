@@ -614,7 +614,7 @@ export const ProductSwitch = () => `<div style="height:600px">
                     <div class="fd-popover fd-popover--right">
                         <div class="fd-popover__control">
                             <button
-                                class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control fd-product-switch__control"
+                                class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
                                 aria-label="Image label"
                                 aria-controls="product-switch-body"
                                 aria-expanded="true"
