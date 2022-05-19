@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.99](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.98...v0.24.0-rc.99) (2022-05-19)
+
+
+### Bug Fixes
+
+* **styles:** quick view background [ci visual] ([#3443](https://github.com/SAP/fundamental-styles/issues/3443)) ([7797e0b](https://github.com/SAP/fundamental-styles/commit/7797e0b04d7e346bd10d1b4a248e9224387efd9c))
+
 ## [0.24.0-rc.98](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.97...v0.24.0-rc.98) (2022-05-19)
 
 
