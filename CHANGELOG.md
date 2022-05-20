@@ -1,4 +1,12 @@
 
+## [0.24.0-rc.102](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.101...v0.24.0-rc.102) (2022-05-20)
+
+
+### Bug Fixes
+
+* **styles:** layout grid nested rows [ci visual] ([#3448](https://github.com/SAP/fundamental-styles/issues/3448)) ([888008c](https://github.com/SAP/fundamental-styles/commit/888008cddb7d93464f284ddcbe37779d43130992))
+* **styles:** remove pop-in border right [ci visual] ([#3441](https://github.com/SAP/fundamental-styles/issues/3441)) ([2026c32](https://github.com/SAP/fundamental-styles/commit/2026c32780b3d95ecc54d2b753f6403dcbb7f781))
+
 ## [0.24.0-rc.101](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.100...v0.24.0-rc.101) (2022-05-19)
 
 
