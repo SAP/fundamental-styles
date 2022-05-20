@@ -9,10 +9,8 @@ $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
 $blockCol: #{$fd-namespace}-col;
 
-$vertical-gutter: 1rem;
-$vertical-gutter-small: 0.5rem;
-$horizontal-gutter: 0.5rem;
-$horizontal-gutter-small: 0.25rem;
+$gutter: 0.5rem;
+$gutter-small: 0.25rem;
 
 $size: (600 :"md", 1024: "lg", 1440: "xl");
 $md: 600;
@@ -20,15 +18,15 @@ $lg: 1024;
 $xl: 1440;
 $cols: 12;
 
-@mixin fd-row-nested($horizontalGutter, $verticalGutter) {
-  > .#{$blockRow} {
-    @include fd-set-margins-x-equal(-$horizontalGutter);
+@mixin fd-row-nested($gutter) {
+  .#{$blockRow} {
+    @include fd-set-margins-x-equal(-$gutter);
 
-    min-width: calc(100% + #{$horizontalGutter} * 2);
+    min-width: calc(100% + #{$gutter} * 2);
+  }
 
-    > .#{$blockCol} {
-      @include fd-set-paddings-y-equal(math.div($verticalGutter, 2));
-    }
+  > .#{$blockRow} > .#{$blockCol} {
+    @include fd-set-paddings-y-equal($gutter);
   }
 }
 
@@ -68,13 +66,13 @@ $cols: 12;
 }
 
 .#{$blockContainer} {
-  @include fd-row-nested($horizontal-gutter-small, $vertical-gutter-small);
+  @include fd-row-nested($gutter-small);
 
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
   position: relative;
-  padding: 0 $horizontal-gutter-small;
+  padding: 0 $gutter-small;
 
   &.#{$blockContainer}--no-horizontal-gap,
   &.#{$blockContainer}--no-gap {
@@ -108,7 +106,7 @@ $cols: 12;
 }
 
 .#{$blockCol} {
-  @include fd-set-paddings-x-equal($horizontal-gutter-small);
+  @include fd-set-paddings-x-equal($gutter-small);
 
   @at-root {
     @include fd-column-responsive();
@@ -128,13 +126,13 @@ $cols: 12;
 
 @media (min-width: 600px) {
   .#{$blockContainer} {
-    @include fd-row-nested($horizontal-gutter, $vertical-gutter);
+    @include fd-row-nested($gutter);
 
-    padding: 0 $horizontal-gutter;
+    padding: 0 $gutter;
   }
 
   .#{$blockCol} {
-    @include fd-set-paddings-x-equal($horizontal-gutter);
+    @include fd-set-paddings-x-equal($gutter);
 
     @at-root {
       @include fd-column-responsive(map-get($size, $md));
