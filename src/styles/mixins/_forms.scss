@@ -199,6 +199,7 @@
     border-radius: var(--fdInput_ReadOnly_Border_Radius);
     background: var(--sapField_ReadOnly_BackgroundStyle);
     background-color: var(--sapField_ReadOnly_Background);
+    pointer-events: none;
 
     &::placeholder {
       color: transparent;
