@@ -190,7 +190,7 @@
     opacity: var(--sapContent_DisabledOpacity);
 
     &::placeholder {
-      color: transparent;
+      color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
     }
   }
 
@@ -202,7 +202,7 @@
     pointer-events: none;
 
     &::placeholder {
-      color: transparent;
+      color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
     }
 
     @include fd-hover() {
