@@ -10,6 +10,10 @@ $fd-wizard-step-indicator-stacked-offset: -1 * ($fd-wizard-step-indicator-size -
 $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
 @mixin fd-wizard-completed-step() {
+  .#{$block}__label {
+    color: var(--fdWizard_Completed_Step_Label_Color);
+  }
+
   .#{$block}__step-indicator {
     background: var(--sapObjectHeader_Background);
     color: var(--fdWizard_Completed_Step_Color);
@@ -41,7 +45,6 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
   }
 }
 
-// BLOCK
 .#{$block} {
   @include fd-reset();
 
@@ -90,7 +93,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     &--current {
       .#{$block}__label {
-        color: var(--fdWizard_Label_Current_Step_Color);
+        color: var(--fdWizard_Current_Step_Label_Color);
       }
 
       .#{$block}__step-indicator {
@@ -122,13 +125,14 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     }
 
     &--upcoming {
-      .#{$block}__label, .#{$block}__optional-text {
-        color: var(--fdWizard_Upcoming_Step_Text_Color);
+      .#{$block}__label,
+      .#{$block}__optional-text {
+        color: var(--sapContent_LabelColor);
       }
 
       .#{$block}__step-indicator {
         background: var(--sapObjectHeader_Background);
-        border: var(--fdWizard_Upcoming_Step_Border);
+        border: 0.0625rem solid var(--sapList_BorderColor);
         color: var(--fdWizard_Upcoming_Step_Color);
 
         .#{$block}__icon {
@@ -173,12 +177,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       min-width: auto;
 
       &:last-child {
-        padding-right: $fd-wizard-stacked-upcoming-step-offset;
-
-        @include fd-rtl() {
-          padding-right: 0;
-          padding-left: $fd-wizard-stacked-upcoming-step-offset;
-        }
+        @include fd-set-padding-right($fd-wizard-stacked-upcoming-step-offset);
       }
 
       .#{$block}__connector,
@@ -187,7 +186,6 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
       }
 
       &.#{$block}__step--upcoming {
-
         // Fiori 3 recommends a maximum of 8 steps
         @for $i from 1 through 8 {
           &:nth-child(#{$i}) {
@@ -271,6 +269,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     @include line-clamp();
 
     font-family: var(--fdWizard_Label_Font_Family);
+    font-weight: var(--fdWizard_Label_Font_Weight);
     line-height: 1rem;
     max-width: 100%;
   }
@@ -281,6 +280,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     max-width: 100%;
     font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
   }
 
   &__connector {
@@ -308,7 +308,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
     padding-top: 1rem;
     width: 100%;
     height: 100%;
-    background: var(--fdWizard_Content_Default_Background);
+    background: var(--sapBackgroundColor);
 
     &--solid {
       background: var(--fdWizard_Content_Solid_Background);
