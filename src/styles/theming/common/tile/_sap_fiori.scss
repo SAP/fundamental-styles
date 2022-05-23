@@ -1,3 +1,5 @@
 :root {
+  --fdTile_Border: 0.0625rem solid var(--sapTile_BorderColor);
   --fdTile_Hover_Box_Shadow: none;
+  --fdTile_Hover_Border: 0.0625rem solid var(--sapTile_Interactive_BorderColor);
 }

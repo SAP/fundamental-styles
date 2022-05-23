@@ -4,9 +4,6 @@
 
 $block: #{$fd-namespace}-tile;
 
-// BASE
-$fd-tile-interactive-border: 0.0625rem solid var(--sapTile_Interactive_BorderColor);
-
 // SIZES
 $fd-tile-height: 11rem !default;
 $fd-tile-width: 11rem !default;
@@ -130,18 +127,19 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   background: var(--sapTile_Background);
   box-shadow: var(--sapContent_Shadow0);
   border-radius: $fd-tile-border-radius;
-  border: 0.0625rem solid var(--sapTile_BorderColor);
+  border: var(--fdTile_Border);
   cursor: pointer;
 
   // STATES
   @include fd-active() {
     background: var(--sapTile_Active_Background);
-    border: $fd-tile-interactive-border;
+    border: 0.0625rem solid var(--sapTile_Interactive_BorderColor);
+    box-shadow: none;
   }
 
   @include fd-hover() {
     background: var(--sapTile_Hover_Background);
-    border: $fd-tile-interactive-border;
+    border: var(--fdTile_Hover_Border);
     box-shadow: var(--fdTile_Hover_Box_Shadow);
 
     .#{$block}__toggle {
