@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.103](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.102...v0.24.0-rc.103) (2022-05-23)
+
+
+### Bug Fixes
+
+* **chore:** wizard various fixes ([#3425](https://github.com/SAP/fundamental-styles/issues/3425)) ([4266386](https://github.com/SAP/fundamental-styles/commit/4266386868fb99e313a7ce0e2e0e94350d2d3969))
+
 ## [0.24.0-rc.102](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.101...v0.24.0-rc.102) (2022-05-20)
 
 
