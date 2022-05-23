@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.105](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.104...v0.24.0-rc.105) (2022-05-23)
+
+
+### Bug Fixes
+
+* **styles:** link text shadow ([#3472](https://github.com/SAP/fundamental-styles/issues/3472)) ([39d5509](https://github.com/SAP/fundamental-styles/commit/39d5509833bea5ad5c9edc092d39c0df74a727f6))
+
 ## [0.24.0-rc.104](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.103...v0.24.0-rc.104) (2022-05-23)
 
 
