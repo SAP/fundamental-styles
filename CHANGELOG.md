@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.104](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.103...v0.24.0-rc.104) (2022-05-23)
+
+
+### Bug Fixes
+
+* **styles:** tabs hc themes various fixes ([#3435](https://github.com/SAP/fundamental-styles/issues/3435)) ([33c774f](https://github.com/SAP/fundamental-styles/commit/33c774f0e1c956d98d252f9a735be87fb6cfa7a8))
+
 ## [0.24.0-rc.103](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.102...v0.24.0-rc.103) (2022-05-23)
 
 
