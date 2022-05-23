@@ -612,17 +612,15 @@ export const ProductSwitch = () => `<div style="height:600px">
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <div class="fd-product-switch">
                     <div class="fd-popover fd-popover--right">
-                        <div class="fd-popover__control">
-                            <button
-                                class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
-                                aria-label="Image label"
-                                aria-controls="product-switch-body"
-                                aria-expanded="true"
-                                aria-haspopup="true"
-                                onclick="onPopoverClick('product-switch-body')">
-                                <i class="sap-icon--grid"></i>
-                            </button>
-                        </div>
+                        <button
+                            class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
+                            aria-label="Image label"
+                            aria-controls="product-switch-body"
+                            aria-expanded="true"
+                            aria-haspopup="true"
+                            onclick="onPopoverClick('product-switch-body')">
+                            <i class="sap-icon--grid"></i>
+                        </button>
                         <div class="fd-popover__body fd-popover__body--right" aria-hidden="false"
                              id="product-switch-body">
                             <div class="fd-product-switch__body">

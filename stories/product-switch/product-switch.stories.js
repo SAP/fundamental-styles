@@ -33,15 +33,13 @@ export const Shellbar = () => `${localStyles}
 <div class="docs-product-switch-shellbar">
     <div class="fd-product-switch">
         <div class="fd-popover fd-popover--right">
-            <div class="fd-popover__control">
-                <button class="fd-button fd-button--transparent fd-popover__control"
-                    aria-label="Image label"
-                    aria-controls="product-switch-body"
-                    aria-expanded="true"
-                    aria-haspopup="true">
-                    <i class="sap-icon--grid"></i>
-                </button>
-            </div>
+            <button class="fd-button fd-button--transparent fd-popover__control"
+                aria-label="Image label"
+                aria-controls="product-switch-body"
+                aria-expanded="true"
+                aria-haspopup="true">
+                <i class="sap-icon--grid"></i>
+            </button>
             <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="product-switch-body">
                 <div class="fd-product-switch__body">
                     <ul class="fd-product-switch__list">
