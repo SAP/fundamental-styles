@@ -20,6 +20,7 @@
 @import "./common/checkbox/sap_horizon";
 @import "./common/radio/sap_horizon";
 @import "./common/link/sap_horizon";
+@import "./common/vertical-nav/sap_horizon";
 
 :root {
   /* Switch */
@@ -170,9 +171,6 @@
 
   /* TODO: DEPRECATED Side-Nav */
   --fdSideNav_Text_Shadow: none;
-
-  /* Vertical-Nav */
-  --fdVerticalNav_Text_Shadow: none;
 
   /* Time */
   --fdTime_Text_Shadow: none;
