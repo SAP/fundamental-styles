@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.106](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.105...v0.24.0-rc.106) (2022-05-23)
+
+
+### Bug Fixes
+
+* **styles:** vertical navigation focus outlines for horizon [ci visual] ([#3451](https://github.com/SAP/fundamental-styles/issues/3451)) ([7912fd0](https://github.com/SAP/fundamental-styles/commit/7912fd02f83e77fda4b41ca33caacebdd671397b))
+
 ## [0.24.0-rc.105](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.104...v0.24.0-rc.105) (2022-05-23)
 
 
