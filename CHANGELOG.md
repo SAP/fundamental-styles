@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.107](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.106...v0.24.0-rc.107) (2022-05-23)
+
+
+### Bug Fixes
+
+* **styles:** rating indicator horizon ([#3447](https://github.com/SAP/fundamental-styles/issues/3447)) ([f412dc1](https://github.com/SAP/fundamental-styles/commit/f412dc1a00bd6880384a91d6e4a8bc1a551e9c5f))
+
 ## [0.24.0-rc.106](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.105...v0.24.0-rc.106) (2022-05-23)
 
 
