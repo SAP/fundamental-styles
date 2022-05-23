@@ -4,7 +4,11 @@ export default {
         tags: ['f3', 'a11y', 'theme'],
         description: `Tabs are based on the folder metaphor and used to separate content into different sections. Tabs should be ordered based on priority to create visual hierarchy.
 
-##Usage
+## Deprecated
+
+**This component is deprecated. Please use the *Icon Tab Bar* component instead.**
+
+## Usage
 **Use tabs if:**
 
 - Your business objects need to show multiple facets at the same time.
@@ -18,7 +22,7 @@ export default {
 - You plan to use only one single tab.
 
 
-##Horizontal padding
+## Horizontal padding
 
 By default, tabs have no horizontal paddings. If horizontal paddings are added, they should behave responsively based on the screen width.
 

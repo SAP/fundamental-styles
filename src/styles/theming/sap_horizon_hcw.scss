@@ -81,9 +81,34 @@
   --fdAvatarGroup_MoreButton_Border: 0.125rem;
   --fdAvatarGroup_MoreButton_Vertical_Offset: -0.3125rem;
 
-  /* Tabs */
-  --fdTabs_Selected_Color: var(--sapSelectedColor);
-  --fdTabs_Selected_Icon_Color: var(--sapContent_ContrastIconColor);
+  /* Radio */
+  --fdRadio_Selected_Color: var(--sapContent_Selected_ForegroundColor);
+  --fdRadio_Inner_Content_Size: 0.75rem;
+  --fdRadio_Inner_Content_Size_Compact: 0.5rem;
+  --fdRadio_Inner_Content_Padding: 1rem;
+  --fdRadio_Inner_Content_Padding_Compact: 0.75rem;
+  --fdRadio_Hover_Box_Shadow: var(--sapContent_Interaction_Shadow);
+  --fdRadio_Readonly_Border_Type: solid;
+  --fdRadio_Readonly_Border_Width: var(--sapElement_BorderWidth);
+  --fdRadio_Error_Hover_Shadow: var(--sapContent_Negative_Shadow);
+  --fdRadio_Warning_Hover_Shadow: var(--sapContent_Critical_Shadow);
+  --fdRadio_Success_Hover_Shadow: var(--sapContent_Positive_Shadow);
+  --fdRadio_Information_Hover_Shadow: var(--sapContent_Informative_Shadow);
+  --fdRadio_Warning_Error_Information_Border_Style: dashed;
+  --fdRadio_Hover_Background: var(--sapSelectedColor);
+
+  /* Checkbox */
+  --fdCheckbox_Hover_Background: var(--sapSelectedColor);
+  --fdCheckbox_Hover_Shadow: var(--sapContent_Interaction_Shadow);
+  --fdCheckbox_Selected_Color: var(--sapContent_Selected_ForegroundColor);
+  --fdCheckbox_Error_State_Shadow: var(--sapContent_Negative_Shadow);
+  --fdCheckbox_Warning_State_Shadow: var(--sapContent_Critical_Shadow);
+  --fdCheckbox_Success_State_Shadow: var(--sapContent_Positive_Shadow);
+  --fdCheckbox_Information_State_Shadow: var(--sapContent_Informative_Shadow);
+  --fdCheckbox_State_Hover_Background: var(--sapSelectedColor);
+  --fdCheckbox_Readonly_Border_Width: var(--sapElement_BorderWidth);
+  --fdCheckbox_Readonly_Border_Type: solid;
+  --fdCheckbox_Warning_Error_Information_Border_Style: dashed;
 
   /* Dynamic Page Layout */
   --fdDynamicPage_Hover_Border_Bottom: solid 0.0625rem var(--sapObjectHeader_Hover_Background);
