@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.108](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.107...v0.24.0-rc.108) (2022-05-24)
+
+
+### Bug Fixes
+
+* automatically add missing components ([#3476](https://github.com/SAP/fundamental-styles/issues/3476)) ([a18c6ea](https://github.com/SAP/fundamental-styles/commit/a18c6ea25da0c56d6ab8501430b3ed4dd6c20e1c))
+
 ## [0.24.0-rc.107](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.106...v0.24.0-rc.107) (2022-05-23)
 
 
