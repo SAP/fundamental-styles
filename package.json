@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.24.0-rc.107",
+  "version": "0.24.0-rc.109",
   "description": "Fundamental Library Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with SAP Fiori look and feel with any web technology. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -129,7 +129,7 @@
     "regenerator-runtime": "^0.13.7",
     "rimraf": "^3.0.2",
     "sass": "^1.47.0",
-    "sass-loader": "^10.0.2",
+    "sass-loader": "^13.0.0",
     "standard-version": "9.3.2",
     "start-server-and-test": "^1.14.0",
     "story-description-loader": "^1.0.0",
