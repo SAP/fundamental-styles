@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.109](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.108...v0.24.0-rc.109) (2022-05-24)
+
+
+### Bug Fixes
+
+* **styles:** fix the button states in expanded Select [ci visual] ([#3438](https://github.com/SAP/fundamental-styles/issues/3438)) ([33f2ee9](https://github.com/SAP/fundamental-styles/commit/33f2ee94b8d2d2bfb7b6817fb58336e82a0c8c06))
+
 ## [0.24.0-rc.108](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.107...v0.24.0-rc.108) (2022-05-24)
 
 
