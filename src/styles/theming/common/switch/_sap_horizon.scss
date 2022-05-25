@@ -9,8 +9,13 @@
   --fdSwitch_Compact_Padding: 0.375rem 0;
 
   // Standard
+  --fdSwitch_Track_Background: var(--sapButton_Track_Background);
   --fdSwitch_Handle_Border_Width: 0.125rem;
-  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Selected_Background);
+  --fdSwitch_On_Hover_Slider_Background: var(--sapButton_Track_Hover_Background);
+  --fdSwitch_On_Hover_Slider_Border: var(--sapButton_Track_Hover_Background);
+  --fdSwitch_On_Hover_Slider_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_Hover_BorderColor);
+  --fdSwitch_On_Hover_Slider_Active_Background: var(--sapButton_Track_Selected_Hover_Background);
+  --fdSwitch_On_Hover_Slider_Active_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_Selected_Hover_BorderColor);
   --fdSwitch_Border_Width: 0;
   --fdSwitch_Width: 2.5rem;
   --fdSwitch_Height: 1.5rem;
@@ -19,10 +24,13 @@
   --fdSwitch_Handle_Height: 1.25rem;
   --fdSwitch_Handle_Border_Radius: 0.75rem;
   --fdSwitch_Handle_Background: var(--sapButton_Handle_Background);
+  --fdSwitch_Hover_Handle_Background: var(--sapButton_Handle_Selected_Hover_Background);
+  --fdSwitch_Hover_Handle_Active_Background: var(--sapButton_Handle_Selected_Hover_Background);
   --fdSwitch_Handle_Offset: 1.2475rem;
   --fdSwitch_Active_Handle_Offset: 0.5075rem;
   --fdSwitch_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_BorderColor);
   --fdSwitch_Active_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Selected_BorderColor);
+  --fdSwitch_Border_Color: transparent;
   --fdSwitch_Border: none;
   --fdSwitch_Slider_Box_Sizing: content-box;
   --fdSwitch_Padding: 0.625rem 0;
@@ -38,20 +46,32 @@
   // Semantic switch
   --fdSwitch_Semantic_Success_Border_Color: var(--sapButton_Track_Positive_BorderColor);
   --fdSwitch_Semantic_Success_Background_Color: var(--sapButton_Track_Positive_Background);
+  --fdSwitch_Semantic_Hover_Success_Background_Color: var(--sapButton_Track_Positive_Hover_Background);
+  --fdSwitch_Semantic_Hover_Success_Border_Color: var(--sapButton_Track_Positive_Hover_BorderColor);
   --fdSwitch_Semantic_Error_Background_Color: var(--sapButton_Track_Negative_Background);
   --fdSwitch_Semantic_Error_Border_Color: var(--sapButton_Track_Negative_BorderColor);
-  --fdSwitch_Semantic_Icon_Success_Color: var(--sapButton_Handle_Positive_TextColor);
+  --fdSwitch_Semantic_Hover_Error_Background_Color: var(--sapButton_Track_Negative_Hover_Background);
+  --fdSwitch_Semantic_Hover_Error_Border_Color: var(--sapButton_Track_Negative_Hover_BorderColor);
   --fdSwitch_Semantic_Icon_Error_Color: var(--sapButton_Handle_Negative_TextColor);
   --fdSwitch_Semantic_Error_Box_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_Negative_BorderColor);
   --fdSwitch_Semantic_Success_Box_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_Positive_BorderColor);
+  --fdSwitch_Semantic_Hover_Error_Box_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_Negative_Hover_BorderColor);
+  --fdSwitch_Semantic_Hover_Success_Box_Shadow: inset 0 0 0 0.0625rem var(--sapButton_Track_Positive_Hover_BorderColor);
   --fdSwitch_Semantic_Width: var(--fdSwitch_Width);
   --fdSwitch_Semantic_Height: var(--fdSwitch_Height);
+  --fdSwitch_Semantic_Error_Color: var(--sapButton_Track_Negative_BorderColor);
+  --fdSwitch_Semantic_Success_Color: var(--sapButton_Track_Positive_BorderColor);
+  --fdSwitch_Semantic_Hover_Error_Color: var(--sapButton_Track_Negative_BorderColor);
+  --fdSwitch_Semantic_Hover_Success_Color: var(--sapButton_Track_Positive_BorderColor);
 
   // Semantic switch handle
   --fdSwitch_Semantic_Handle_Offset: var(--fdSwitch_Handle_Offset);
   --fdSwitch_Semantic_Handle_Active_Offset: var(--fdSwitch_Active_Handle_Offset);
-  --fdSwitch_Semantic_Compact_Active_Handle_Offset: var(--fdSwitch_Semantic_Handle_Offset);
   --fdSwitch_Semantic_Handle_Box_Sizing: border-box;
+  --fdSwitch_Semantic_Handle_Error_Color: var(--fdSwitch_Semantic_Error_Color);
+  --fdSwitch_Semantic_Handle_Error_Hover_Color: var(--fdSwitch_Semantic_Hover_Error_Color);
+  --fdSwitch_Semantic_Handle_Success_Color: var(--fdSwitch_Semantic_Success_Color);
+  --fdSwitch_Semantic_Handle_Success_Hover_Color: var(--fdSwitch_Semantic_Hover_Success_Color);
   --fdSwitch_Semantic_Slider_Error_Background_Color: var(--sapButton_Track_Negative_Background);
   --fdSwitch_Semantic_Success_Handle_Background_Color: var(--sapButton_Handle_Positive_Background);
   --fdSwitch_Semantic_Success_Handle_Hover_Background_Color: var(--sapButton_Handle_Positive_Hover_Background);
@@ -64,11 +84,12 @@
 
   // Semantic switch icon
   --fdSwitch_Semantic_Icon_Position: absolute;
-  --fdSwitch_Icon_Size: var(--sapFontSize);
+  --fdSwitch_Icon_Size: var(--sapFontLargeSize);
   --fdSwitch_Icon_Error_Margin: 0;
   --fdSwitch_Icon_Success_Margin: 0;
 
   // Semantic switch Compact mode
+  --fdSwitch_Compact_Icon_Size: var(--sapFontSize);
   --fdSwitch_Compact_Semantic_Width: var(--fdSwitch_Compact_Width);
   --fdSwitch_Compact_Semantic_Height: var(--fdSwitch_Compact_Height);
   --fdSwitch_Compact_Semantic_Handle_Width: var(--fdSwitch_Compact_Handle_Width);
