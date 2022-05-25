@@ -1,4 +1,15 @@
 
+## [0.24.0-rc.114](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.113...v0.24.0-rc.114) (2022-05-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** * toolbar infobar, grid list infobar markup change
+
+### Bug Fixes
+
+* **styles:** toolbar info mode styling, grid list toolbar ([#3430](https://github.com/SAP/fundamental-styles/issues/3430)) ([e63ca0c](https://github.com/SAP/fundamental-styles/commit/e63ca0cbaeecc8cefd3f1f7f9612b21d7cea6394))
+
 ## [0.24.0-rc.113](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.112...v0.24.0-rc.113) (2022-05-25)
 
 ## [0.24.0-rc.112](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.111...v0.24.0-rc.112) (2022-05-25)
