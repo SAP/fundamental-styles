@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.115](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.114...v0.24.0-rc.115) (2022-05-26)
+
+
+### Bug Fixes
+
+* **styles:** menu focus outline [ci visual] ([#3477](https://github.com/SAP/fundamental-styles/issues/3477)) ([ca61622](https://github.com/SAP/fundamental-styles/commit/ca6162229f1b0fc33dda663dfa6311205052b83b))
+
 ## [0.24.0-rc.114](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.113...v0.24.0-rc.114) (2022-05-25)
 
 
