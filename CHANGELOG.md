@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.117](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.116...v0.24.0-rc.117) (2022-05-26)
+
+
+### Bug Fixes
+
+* **styles:** input field readonly state fixes and adaptations ([#3465](https://github.com/SAP/fundamental-styles/issues/3465)) ([f121b81](https://github.com/SAP/fundamental-styles/commit/f121b816d1781a8600dfafec0821fce7cde45d28))
+
 ## [0.24.0-rc.116](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.115...v0.24.0-rc.116) (2022-05-26)
 
 
