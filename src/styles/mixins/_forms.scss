@@ -190,7 +190,7 @@
     opacity: var(--sapContent_DisabledOpacity);
 
     &::placeholder {
-      color: transparent;
+      color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
     }
   }
 
@@ -199,9 +199,10 @@
     border-radius: var(--fdInput_ReadOnly_Border_Radius);
     background: var(--sapField_ReadOnly_BackgroundStyle);
     background-color: var(--sapField_ReadOnly_Background);
+    pointer-events: none;
 
     &::placeholder {
-      color: transparent;
+      color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
     }
 
     @include fd-hover() {
