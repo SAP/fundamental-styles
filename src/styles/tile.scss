@@ -141,10 +141,6 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     background: var(--sapTile_Hover_Background);
     border: var(--fdTile_Hover_Border);
     box-shadow: var(--fdTile_Hover_Box_Shadow);
-
-    .#{$block}__toggle {
-      display: block;
-    }
   }
 
   @include fake-tile-outline();
@@ -508,15 +504,16 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     .#{$block}__title {
       font-size: var(--sapFontSize);
       line-height: normal;
-      color: var(--sapTile_TitleTextColor);
-      text-shadow: 0 0 0.125rem var(--sapContent_ShadowColor);
+      font-weight: var(--fdSlide_Tile_Title_Font_Weight);
+      color: var(--fdSlide_Tile_Title_Color);
+      text-shadow: var(--fdSlide_Tile_Title_Text_Shadow);
     }
 
     .#{$block}__footer-text,
     .#{$block}__subtitle {
       font-size: var(--sapFontSize);
       line-height: normal;
-      color: var(--sapTile_TextColor);
+      color: var(--fdSlide_Tile_Title_Color);
     }
 
     .#{$block}__page-indicator {
@@ -536,7 +533,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       border-radius: 50%;
       background-color: var(--fdSlide_Tile_Indicator_Dot_Color);
       border: var(--fdSlide_Tile_Indicator_Dot_Border);
-      box-shadow: 0 0 0.063rem var(--sapContent_ShadowColor);
+      opacity: var(--fdSlide_Tile_Indicator_Dot_Opacity);
+      box-shadow: var(--fdSlide_Tile_Indicator_Dot_Shadow);
       margin-right: $fd-tile-indicator-dot-spacing;
 
       @include fd-rtl() {
