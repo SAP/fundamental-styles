@@ -1,4 +1,16 @@
 
+## [0.24.0-rc.116](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.115...v0.24.0-rc.116) (2022-05-26)
+
+
+### Features
+
+* lint on pre-commit ([#3496](https://github.com/SAP/fundamental-styles/issues/3496)) ([9eb3822](https://github.com/SAP/fundamental-styles/commit/9eb3822744d1c2d3b445ffbe35c0e5b895c11bf3))
+
+
+### Bug Fixes
+
+* add missing switch variables [ci visual] ([#3494](https://github.com/SAP/fundamental-styles/issues/3494)) ([a94b506](https://github.com/SAP/fundamental-styles/commit/a94b5065ed828534bd74e17bac0a0ec862e7f9e6))
+
 ## [0.24.0-rc.115](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.114...v0.24.0-rc.115) (2022-05-26)
 
 
