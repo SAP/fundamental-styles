@@ -24,7 +24,7 @@
 @import "./common/vertical-nav/sap_fiori";
 @import "./common/rating-indicator/sap_fiori_hc";
 @import "./common/select/sap_fiori";
-@import "./common/tile/sap_fiori";
+@import "./common/tile/sap_fiori_hc";
 
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
@@ -243,17 +243,6 @@
 
   /* Feed Input */
   --fdFeed_Input_Placeholder_Font_Style: normal;
-
-  /* Generic Tile */
-  --fdSlide_Tile_Background_Color: var(--sapTile_Background);
-  --fdSlide_Tile_Background_Opacity: 1;
-  --fdSlide_Tile_Indicator_Dot_Size: 0.25rem;
-  --fdSlide_Tile_Indicator_Ative_Dot_Size: 0.25rem;
-  --fdSlide_Tile_Indicator_Dot_Spacing: 0.188rem;
-  --fdSlide_Tile_Indicator_Dot_Color: var(--sapTile_Background);
-  --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapContent_NonInteractiveIconColor);
-  --fdSlide_Tile_Indicator_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
-  --fdSlide_Tile_Indicator_Active_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
 
   /* Toolbar */
   --fdToolbar_Auto_Background: var(--sapToolbar_Background);
