@@ -170,6 +170,7 @@ $fd-progress-indicator-states: (
 
     @include fd-progress-indicator-popover-control() {
       flex-grow: 1;
+      min-width: 0;
     }
   }
 
