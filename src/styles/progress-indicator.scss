@@ -48,6 +48,7 @@ $fd-progress-indicator-states: (
   --rootMargin: 0.5rem 0;
   --progressBarBackground: var(--fdProgress_Indicator_Background_Color_Neutral);
   --progressBarBorderColor: var(--fdProgress_Indicator_Progress_Bar_Border_Color_Neutral, transparent);
+  --progressBarBorderRightColor: var(--fdProgress_Indicator_Border_Right_Color, var(--progressBarBorderColor));
   --containerBackground: var(--fdProgress_Indicator_Container_Background_Neutral, var(--sapField_Background));
   --containerBorderColor: var(--fdProgress_Indicator_Container_Border_Neutral, var(--sapField_BorderColor));
   --iconDisplay: none;
@@ -134,14 +135,14 @@ $fd-progress-indicator-states: (
     }
 
     @include fd-progress-indicator-popover-control() {
-      border: var(--fdProgress_Indicator_Progress_Bar_Popover_Control_Border, none);
+      border: var(--fdProgress_Indicator_Progress_Bar_Popover_Control_Border, 0 solid) var(--progressBarBorderColor);
       position: var(--fdProgress_Indicator_Progress_Bar_Position, relative);
     }
 
     height: var(--fdProgress_Indicator_Progress_Bar_Height);
     margin: var(--fdProgress_Indicator_Progress_Bar_Margin);
     border: var(--fdProgress_Indicator_Progress_Bar_Border) var(--progressBarBorderColor);
-    border-right: var(--fdProgress_Indicator_Border_Right);
+    border-right: var(--fdProgress_Indicator_Border_Right)  var(--progressBarBorderRightColor);
     border-radius: var(--fdProgress_Indicator_Progress_Bar_Border_Radius);
     background: var(--progressBarBackground);
     position: var(--fdProgress_Indicator_Progress_Bar_Position, static);
@@ -155,7 +156,7 @@ $fd-progress-indicator-states: (
     @include fd-rtl() {
       border-right: none;
       border: var(--fdProgress_Indicator_Progress_Bar_Border) var(--progressBarBorderColor);
-      border-left: var(--fdProgress_Indicator_Border_Right);
+      border-left: var(--fdProgress_Indicator_Border_Right) var(--progressBarBorderRightColor);
       right: var(--fdProgress_Indicator_Progress_Bar_Position_Left);
       left: initial;
     }
