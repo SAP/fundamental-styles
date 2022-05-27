@@ -115,15 +115,15 @@ $fd-progress-indicator-states: (
       width: 0.25rem;
       height: 0.25rem;
       border-radius: 50%;
-      top: 0.0005rem;
+      top: 0;
     }
 
     &::before {
-      left: 0.0005rem;
+      left: 0;
     }
 
     &::after {
-      right: 0.0005rem;
+      right: 0;
     }
   }
 
