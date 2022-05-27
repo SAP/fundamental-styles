@@ -1,0 +1,22 @@
+:root {
+  --fdTile_Border: 0.0625rem solid var(--sapTile_BorderColor);
+  --fdTile_Hover_Box_Shadow: var(--sapContent_Shadow2);
+  --fdTile_Hover_Border: var(--fdTile_Border);
+
+  /* Generic tiles */
+  --fdSlide_Tile_Title_Font_Weight: bold;
+  --fdSlide_Tile_Title_Color: var(--sapTile_OverlayForegroundColor);
+  --fdSlide_Tile_Title_Text_Shadow: none;
+  --fdSlide_Tile_Background_Color: var(--sapTile_OverlayBackground);
+  --fdSlide_Tile_Background_Opacity: 1;
+  --fdSlide_Tile_Indicator_Dot_Size: 0.375rem;
+  --fdSlide_Tile_Indicator_Ative_Dot_Size: 0.375rem;
+  --fdSlide_Tile_Indicator_Dot_Spacing: 0.188rem;
+  --fdSlide_Tile_Indicator_Dot_Color: transparent;
+  --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapTile_OverlayForegroundColor);
+  --fdSlide_Tile_Indicator_Dot_Border: solid 0.0625rem var(--sapTile_OverlayForegroundColor);
+  --fdSlide_Tile_Indicator_Dot_Opacity: 0.6;
+  --fdSlide_Tile_Indicator_Dot_Shadow: 0 0 0.125rem var(--sapContent_ShadowColor);
+  --fdSlide_Tile_Indicator_Active_Dot_Border: none;
+  --fdSlide_Tile_Indicator_Active_Dot_Shadow: 0 0 0.063rem var(--sapContent_ShadowColor);
+}

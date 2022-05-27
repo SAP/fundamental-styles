@@ -1,0 +1,5 @@
+@import "sap_horizon";
+
+:root {
+  --fdTile_Hover_Box_Shadow: 0 0 0 0.125rem var(--sapTile_BorderColor); // this will add missing 0.125rem to the border to fill required .1875rem
+}
