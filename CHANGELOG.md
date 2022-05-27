@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.118](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.117...v0.24.0-rc.118) (2022-05-27)
+
+
+### Bug Fixes
+
+* **styles:** tile horizon adaptation fixes ([#3474](https://github.com/SAP/fundamental-styles/issues/3474)) ([c80de4a](https://github.com/SAP/fundamental-styles/commit/c80de4a510393010ffb711673235c7a2828fe9e7))
+
 ## [0.24.0-rc.117](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.116...v0.24.0-rc.117) (2022-05-26)
 
 
