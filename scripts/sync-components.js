@@ -2,15 +2,16 @@
  * This file allows to quickly search for missing components that are not imported into main scss file.
  */
 const fs = require('fs');
+const { resolve } = require('path');
 
 const config = {
     fiori: {
-        rootDir: './src/styles',
-        mainFile: './src/styles/fundamental-styles.scss'
+        rootDir: resolve(__dirname, '../src/styles'),
+        mainFile: resolve(__dirname, '../src/styles/fundamental-styles.scss')
     },
     fn: {
-        rootDir: './src/fn',
-        mainFile: './src/fn/fundamental-next.scss'
+        rootDir: resolve(__dirname, '../src/fn'),
+        mainFile: resolve(__dirname, '../src/fn/fundamental-next.scss')
     }
 };
 
@@ -33,6 +34,7 @@ const getComponentsList = (libConfig) => {
     // Get list of imported files in root styles file.
     const addedFiles = fs
         .readFileSync(libConfig.mainFile, 'utf-8')
+        .replace(/(?:\\[r]|[\r]+)+/g, '')
         .split('\n')
         .filter((l) => l.startsWith('@import'))
         .map((l) => l.replace(/@import "(\.\/)(.*)";/, '$2'));
