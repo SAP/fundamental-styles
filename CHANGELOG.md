@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.120](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.119...v0.24.0-rc.120) (2022-05-27)
+
+
+### Bug Fixes
+
+* **ci:** fixed sync-components script compatibility with windows ([#3498](https://github.com/SAP/fundamental-styles/issues/3498)) ([9fcae19](https://github.com/SAP/fundamental-styles/commit/9fcae19359ed823a795edf0be788f221531b51be))
+
 ## [0.24.0-rc.119](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.118...v0.24.0-rc.119) (2022-05-27)
 
 
