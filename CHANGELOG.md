@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.119](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.118...v0.24.0-rc.119) (2022-05-27)
+
+
+### Bug Fixes
+
+* **styles:** border radius should not come from quick view first child ([#3493](https://github.com/SAP/fundamental-styles/issues/3493)) ([c608a25](https://github.com/SAP/fundamental-styles/commit/c608a255ca163afc6f2f83b87d08ef8cf20bd757))
+
 ## [0.24.0-rc.118](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.117...v0.24.0-rc.118) (2022-05-27)
 
 
