@@ -88,6 +88,95 @@ The default vertical navigation is comprised of several navigation list items.
     }
 };
 
+export const Utility = () => `<div class="fd-vertical-nav" style="height: 450px;">
+    <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
+            <li class="fd-list__navigation-item" tabindex="0">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
+                <span class="fd-list__navigation-item-text">Overview</span>
+            </li>
+            <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded" onclick="toggleVerticalNavSubmenu(event)">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--customer"></i>
+                <span class="fd-list__navigation-item-text">Customers</span>
+                <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand second submenu"></button>
+                <ul class="fd-list">
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <span class="fd-list__navigation-item-text">Second level item 1</span>
+                    </li>
+                    <li class="fd-list__navigation-item" tabindex="0">
+                        <span class="fd-list__navigation-item-text">Second level item 2</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="fd-list__navigation-item" tabindex="0">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--shipping-status"></i>
+                <span class="fd-list__navigation-item-text">Deliveries</span>
+            </li>
+        </ul>
+    </nav>
+    <nav class="fd-vertical-nav__utility-section" aria-label="Main Menu">
+        <ul class="fd-list" aria-label="Main Menu List">
+            <li class="fd-list__navigation-item" tabindex="0">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--legend"></i>
+                <span class="fd-list__navigation-item-text">Legal Information</span>
+            </li>
+            <li class="fd-list__navigation-item" tabindex="0">
+                <i role="presentation" class="fd-list__navigation-item-icon sap-icon--chain-link"></i>
+                <span class="fd-list__navigation-item-text">Useful Links</span>
+            </li>
+        </ul>
+    </nav>
+</div>
+<br/><br/>
+<div class="fd-vertical-nav fd-vertical-nav--condensed">
+  <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu 2">
+    <ul class="fd-list" aria-label="Main Menu List 2">
+      <li class="fd-list__navigation-item fd-list__navigation-item--condensed" tabindex="0">
+        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
+        <span class="fd-list__navigation-item-text">Overview</span>
+      </li>
+      <li class="fd-list__navigation-item fd-list__navigation-item--condensed" tabindex="0">
+        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
+        <span class="fd-list__navigation-item-text">Calendar</span>
+      </li>
+      <li class="fd-list__navigation-item fd-list__navigation-item--condensed" tabindex="0">
+        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--customer"></i>
+        <span class="fd-list__navigation-item-text">Customers</span>
+      </li>
+      <li class="fd-list__navigation-item fd-list__navigation-item--condensed" tabindex="0">
+        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--shipping-status"></i>
+        <span class="fd-list__navigation-item-text">Deliveries</span>
+      </li>
+    </ul>
+  </nav>
+  <nav class="fd-vertical-nav__utility-section" aria-label="Main Menu">
+    <ul class="fd-list" aria-label="Main Menu List">
+        <li class="fd-list__navigation-item" tabindex="0">
+            <i role="presentation" class="fd-list__navigation-item-icon sap-icon--legend"></i>
+            <span class="fd-list__navigation-item-text">Legal Information</span>
+        </li>
+        <li class="fd-list__navigation-item" tabindex="0">
+            <i role="presentation" class="fd-list__navigation-item-icon sap-icon--chain-link"></i>
+            <span class="fd-list__navigation-item-text">Useful Links</span>
+        </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+Utility.storyName = 'Utility Section';
+
+Utility.parameters = {
+    docs: {
+        iframeHeight: 700,
+        description: {
+            story: `
+The vertical navigation can also have a bottom-aligned "Utility" section.
+        `
+        }
+    }
+};
+
 export const Condensed = () => `<div class="fd-vertical-nav fd-vertical-nav--condensed">
     <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu 2">
         <ul class="fd-list" aria-label="Main Menu List 2">
@@ -134,10 +223,10 @@ export const Text = () => `<div class="fd-vertical-nav">
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand second submenu 3"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text">Second level item 1</span>
+                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 1</span>
                     </li>
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text">Second level item 2</span>
+                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 2</span>
                     </li>
                 </ul>
             </li>
@@ -146,10 +235,10 @@ export const Text = () => `<div class="fd-vertical-nav">
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand third submenu 2"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text">Second level item 1</span>
+                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 1</span>
                     </li>
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text">Second level item 2</span>
+                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 2</span>
                     </li>
                 </ul>
             </li>
@@ -186,7 +275,7 @@ export const Indication = () => `<div class="fd-vertical-nav">
                 <span class="fd-list__navigation-item-text">Calendar</span>
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand second submenu 3"></button>
                 <ul class="fd-list">
-                    <li class="fd-list__navigation-item fd-list__navigation-item--indicated">
+                    <li class="fd-list__navigation-item fd-list__navigation-item--indicated" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
                         <span class="fd-list__navigation-item-indicator"></span>
                     </li>
@@ -270,7 +359,7 @@ export const Grouping = () => `<div class="fd-vertical-nav">
                 <span class="fd-list__navigation-item-text">Calendar</span>
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-right-arrow" aria-label="Expand second submenu 3"></button>
                 <ul class="fd-list">
-                    <li class="fd-list__navigation-item fd-list__navigation-item--indicated">
+                    <li class="fd-list__navigation-item fd-list__navigation-item--indicated" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
                         <span class="fd-list__navigation-item-indicator"></span>
                     </li>
@@ -340,7 +429,7 @@ export const GroupingOverflow = () => `<div class="fd-vertical-nav fd-vertical-n
                 <span class="fd-list__navigation-item-text">Calendar</span>
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-right-arrow" aria-label="Expand second submenu 3"></button>
                 <ul class="fd-list">
-                    <li class="fd-list__navigation-item fd-list__navigation-item--indicated">
+                    <li class="fd-list__navigation-item fd-list__navigation-item--indicated" tabindex="0">
                         <span class="fd-list__navigation-item-text">Second level item 1</span>
                         <span class="fd-list__navigation-item-indicator"></span>
                     </li>

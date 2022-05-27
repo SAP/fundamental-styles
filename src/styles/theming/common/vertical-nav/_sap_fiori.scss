@@ -1,4 +1,19 @@
 :root {
-  --fdVerticalNav_Border_Corner_Radius: 0;
   --fdVerticalNav_Text_Shadow: none;
+  --fdVerticalNav_Icon_Color: var(--sapContent_NonInteractiveIconColor);
+  --fdVerticalNav_Item_Expanded_Box_Shadow: var(--sapContent_Shadow0);
+  --fdVerticalNav_Item_Expanded_Border_Radius: var(--sapElement_BorderCornerRadius);
+  --fdVerticalNav_Item_Expanded_Margin: 0.25rem;
+  --fdVerticalNav_Item_Expanded_Padding_Left: 0.5rem;
+  --fdVerticalNavigation_Indicator_Spacing: 0.3125rem;
+  --fdVerticalNav_Item_Expandable_Margin: 0.25rem 0;
+  --fdVerticalNav_Item_Border_Top_Bottom: none;
+  --fdVerticalNav_Expanded_Item_Margin_Left: -0.5rem;
+  --fdVerticalNav_Item_Text_Spacing: 2.5rem;
+  --fdVerticalNav_Item_Focus_Outline_Offset: -0.1875rem;
+  --fdVerticalNav_Indicator_Height: 1.625rem;
+  --fdVerticalNav_Item_Indicator_Top: 0.5625rem;
+  --fdVerticalNav_Item_Indicator_Height: 1.625rem;
+  --fdVerticalNav_Item_Text_No_Icon_Margin: 2.5rem;
+  --fdVerticalNav_Item_Child_Text_Color: var(--sapContent_LabelColor);
 }
