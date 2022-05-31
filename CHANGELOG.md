@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.121](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.120...v0.24.0-rc.121) (2022-05-31)
+
+
+### Bug Fixes
+
+* **styles:** horizon progress indicator ([#3429](https://github.com/SAP/fundamental-styles/issues/3429)) ([4edb5dc](https://github.com/SAP/fundamental-styles/commit/4edb5dcef06d74a06d2dbd5c346f6cc94d208565))
+
 ## [0.24.0-rc.120](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.119...v0.24.0-rc.120) (2022-05-27)
 
 
