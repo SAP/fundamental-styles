@@ -111,7 +111,7 @@ exports[`Storyshots Components/Grid List/Grid List "More" Button 1`] = `
             
                 
             <div
-              class="fd-grid-list__item"
+              class="fd-grid-list__item fd-grid-list__item--link"
               tabindex="0"
             >
               
@@ -136,9 +136,9 @@ exports[`Storyshots Components/Grid List/Grid List "More" Button 1`] = `
                 
 
                         
-                <button
+                <span
                   aria-label="Navigation"
-                  class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
+                  class="fd-grid-list__item-navigation-indicator"
                 >
                   
                             
@@ -147,7 +147,7 @@ exports[`Storyshots Components/Grid List/Grid List "More" Button 1`] = `
                   />
                   
                         
-                </button>
+                </span>
                 
                     
               </div>
@@ -159,65 +159,64 @@ exports[`Storyshots Components/Grid List/Grid List "More" Button 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -278,65 +277,64 @@ exports[`Storyshots Components/Grid List/Grid List "More" Button 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -368,65 +366,64 @@ exports[`Storyshots Components/Grid List/Grid List "More" Button 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -458,65 +455,64 @@ exports[`Storyshots Components/Grid List/Grid List "More" Button 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -698,7 +694,7 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
             
                 
             <div
-              class="fd-grid-list__item"
+              class="fd-grid-list__item fd-grid-list__item--link"
               tabindex="0"
             >
               
@@ -738,9 +734,9 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
                 
 
                         
-                <button
+                <span
                   aria-label="Navigation"
-                  class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
+                  class="fd-grid-list__item-navigation-indicator"
                 >
                   
                             
@@ -749,7 +745,7 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
                   />
                   
                         
-                </button>
+                </span>
                 
                     
               </div>
@@ -761,65 +757,64 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -895,65 +890,64 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -1014,65 +1008,64 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -1132,65 +1125,64 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -1341,19 +1333,11 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
                 class="fd-toolbar__spacer"
               />
               
+
                     
-              <button
-                aria-label="Cancel"
-                class="fd-button fd-button--compact fd-button--transparent fd-grid-list__filter-button"
-              >
-                
-                        
-                <i
-                  class="sap-icon--decline"
-                />
-                
-                    
-              </button>
+              <i
+                class="sap-icon--decline"
+              />
               
                 
             </div>
@@ -1377,7 +1361,7 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
             
                 
             <div
-              class="fd-grid-list__item"
+              class="fd-grid-list__item fd-grid-list__item--link"
               tabindex="0"
             >
               
@@ -1402,9 +1386,9 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
                 
 
                         
-                <button
+                <span
                   aria-label="Navigation"
-                  class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
+                  class="fd-grid-list__item-navigation-indicator"
                 >
                   
                             
@@ -1413,7 +1397,7 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
                   />
                   
                         
-                </button>
+                </span>
                 
                     
               </div>
@@ -1425,65 +1409,64 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -1544,65 +1527,64 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -1634,65 +1616,64 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -1724,65 +1705,64 @@ exports[`Storyshots Components/Grid List/Grid List Filter Infobar 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -1923,7 +1903,7 @@ exports[`Storyshots Components/Grid List/Grid List Footer 1`] = `
             
                 
             <div
-              class="fd-grid-list__item"
+              class="fd-grid-list__item fd-grid-list__item--link"
               tabindex="0"
             >
               
@@ -1948,9 +1928,9 @@ exports[`Storyshots Components/Grid List/Grid List Footer 1`] = `
                 
 
                         
-                <button
+                <span
                   aria-label="Navigation"
-                  class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
+                  class="fd-grid-list__item-navigation-indicator"
                 >
                   
                             
@@ -1959,7 +1939,7 @@ exports[`Storyshots Components/Grid List/Grid List Footer 1`] = `
                   />
                   
                         
-                </button>
+                </span>
                 
                     
               </div>
@@ -1971,65 +1951,64 @@ exports[`Storyshots Components/Grid List/Grid List Footer 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -2090,65 +2069,64 @@ exports[`Storyshots Components/Grid List/Grid List Footer 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -2180,65 +2158,64 @@ exports[`Storyshots Components/Grid List/Grid List Footer 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -2270,65 +2247,64 @@ exports[`Storyshots Components/Grid List/Grid List Footer 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -2516,7 +2492,7 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
             
                 
             <div
-              class="fd-grid-list__item"
+              class="fd-grid-list__item fd-grid-list__item--link"
               tabindex="0"
             >
               
@@ -2541,9 +2517,9 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
                 
 
                         
-                <button
+                <span
                   aria-label="Navigation"
-                  class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
+                  class="fd-grid-list__item-navigation-indicator"
                 >
                   
                             
@@ -2552,7 +2528,7 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
                   />
                   
                         
-                </button>
+                </span>
                 
                     
               </div>
@@ -2564,65 +2540,64 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company A
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -2684,65 +2659,64 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company A
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -2794,65 +2768,64 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -2885,65 +2858,64 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -3082,7 +3054,7 @@ exports[`Storyshots Components/Grid List/Grid List Highlight 1`] = `
             
                 
             <div
-              class="fd-grid-list__item"
+              class="fd-grid-list__item fd-grid-list__item--link"
               tabindex="0"
             >
               
@@ -3114,9 +3086,9 @@ exports[`Storyshots Components/Grid List/Grid List Highlight 1`] = `
                 
 
                         
-                <button
+                <span
                   aria-label="Navigation"
-                  class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
+                  class="fd-grid-list__item-navigation-indicator"
                 >
                   
                             
@@ -3125,7 +3097,7 @@ exports[`Storyshots Components/Grid List/Grid List Highlight 1`] = `
                   />
                   
                         
-                </button>
+                </span>
                 
                     
               </div>
@@ -3137,65 +3109,64 @@ exports[`Storyshots Components/Grid List/Grid List Highlight 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -3263,65 +3234,64 @@ exports[`Storyshots Components/Grid List/Grid List Highlight 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -3374,65 +3344,64 @@ exports[`Storyshots Components/Grid List/Grid List Highlight 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -3471,65 +3440,398 @@ exports[`Storyshots Components/Grid List/Grid List Highlight 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+        
+        </div>
+        
+    
+      </div>
+      
+
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Grid List/Grid List No height / Partial Items 1`] = `
+<div
+  dir="ltr"
+>
+  <div
+    style="min-height: 300px;"
+  >
+    
+
+    <div
+      class="fd-grid-list fd-grid-list--mode-delete"
+    >
+      
+    
+      <div
+        class="fd-container"
+      >
+        
+        
+        <div
+          class="fd-row"
+        >
+          
+            
+          <div
+            class="fd-col fd-col--12"
+          >
+            
+                
+            <div
+              class="fd-toolbar fd-toolbar--solid"
+            >
+              
+                    
+              <span>
+                For every item class 
+                <code>
+                  fd-grid-list__item--height-auto
+                </code>
+                 is applied.
+              </span>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      
+        
+        <div
+          class="fd-row"
+        >
+          
+            
+          <div
+            class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+          >
+            
+                
+            <div
+              class="fd-grid-list__item fd-grid-list__item--height-auto fd-grid-list__item--link"
+              tabindex="0"
+            >
+              
+                    
+              <div
+                class="fd-grid-list__item-body"
+              >
+                
+                        
+                <div
+                  class="fd-grid-list__item-header"
+                >
+                  
+                            
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    No image
+                  </h4>
+                  
+                            
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
+                            
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+
+            
+          <div
+            class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+          >
+            
+                
+            <div
+              class="fd-grid-list__item fd-grid-list__item--height-auto"
+              tabindex="0"
+            >
+              
+                    
+              <div
+                class="fd-grid-list__item-body"
+              >
+                
+                        
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
+                            
+                  <p>
+                    No title & description
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+
+            
+          <div
+            class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+          >
+            
+                
+            <div
+              class="fd-grid-list__item fd-grid-list__item--height-auto"
+              tabindex="0"
+            >
+              
+                    
+              <div
+                class="fd-grid-list__item-body"
+              >
+                
+                        
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-header"
+                >
+                  
+                            
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    No body
+                  </h4>
+                  
+                            
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
+                    
+              </div>
+              
+                
+            </div>
+            
+            
+          </div>
+          
+
+            
+          <div
+            class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3"
+          >
+            
+                
+            <div
+              class="fd-grid-list__item fd-grid-list__item--height-auto"
+              tabindex="0"
+            >
+              
+                    
+              <div
+                class="fd-grid-list__item-body"
+              >
+                
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
+                            
+                  <p>
+                    No image, title & description
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -3690,7 +3992,7 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
             
                 
             <div
-              class="fd-grid-list__item fd-grid-list__item--unread"
+              class="fd-grid-list__item fd-grid-list__item--link fd-grid-list__item--unread"
               tabindex="0"
             >
               
@@ -3715,9 +4017,9 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
                 
 
                         
-                <button
+                <span
                   aria-label="Navigation"
-                  class="fd-button fd-button--compact fd-button--transparent fd-grid-list__btn-navigation"
+                  class="fd-grid-list__item-navigation-indicator"
                 >
                   
                             
@@ -3726,7 +4028,7 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
                   />
                   
                         
-                </button>
+                </span>
                 
                     
               </div>
@@ -3738,65 +4040,64 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
                 <div
-                  class="grid-list-item-body-example"
+                  class="fd-grid-list__item-header"
                 >
                   
                             
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
                   
                             
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
 
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
                             
-                  </div>
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
                   
                         
                 </div>
@@ -3884,6 +4185,70 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-header"
+                >
+                  
+                            
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
+                  
+                            
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
+                            
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
+                  
+                        
+                </div>
+                
+
+                        
                 <div
                   class="fd-grid-list__item-body-actions"
                 >
@@ -3902,72 +4267,6 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
                     
                             
                   </span>
-                  
-                        
-                </div>
-                
-
-                        
-                <div
-                  class="grid-list-item-body-example"
-                >
-                  
-                            
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
-                  
-                            
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
-
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
-                            
-                  </div>
                   
                         
                 </div>
@@ -4018,6 +4317,70 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-header"
+                >
+                  
+                            
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
+                  
+                            
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
+                            
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
+                  
+                        
+                </div>
+                
+
+                        
                 <div
                   class="fd-grid-list__item-body-actions"
                 >
@@ -4042,71 +4405,6 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
                     
                             
                   </button>
-                  
-                        
-                </div>
-                
-
-                        
-                <div
-                  class="grid-list-item-body-example"
-                >
-                  
-                            
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
-                  
-                            
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
-
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
-                            
-                  </div>
                   
                         
                 </div>
@@ -4157,6 +4455,70 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
               >
                 
                         
+                <span
+                  class="fd-avatar fd-avatar--s fd-grid-list__item-image"
+                  role="presentation"
+                />
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-header"
+                >
+                  
+                            
+                  <h4
+                    class="fd-title fd-title--h4 fd-grid-list__item-title"
+                  >
+                    John Li
+                  </h4>
+                  
+                            
+                  <span
+                    class="fd-grid-list__item-subtitle"
+                  >
+                    Product Owner, Company B
+                  </span>
+                  
+                        
+                </div>
+                
+
+                        
+                <div
+                  class="fd-grid-list__item-content"
+                >
+                  
+                            
+                  <p>
+                    781 Main Street
+                  </p>
+                  
+                            
+                  <p>
+                    Anytown, SD 57401
+                  </p>
+                  
+                            
+                  <p>
+                    USA
+                  </p>
+                  
+
+                            
+                  <a
+                    class="fd-link"
+                    href="#"
+                    tabindex="0"
+                  >
+                    john_li@example.com
+                  </a>
+                  
+                        
+                </div>
+                
+
+                        
                 <div
                   class="fd-grid-list__item-body-actions"
                 >
@@ -4170,71 +4532,6 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
                                 Draft
                             
                   </button>
-                  
-                        
-                </div>
-                
-
-                        
-                <div
-                  class="grid-list-item-body-example"
-                >
-                  
-                            
-                  <span
-                    class="fd-avatar fd-avatar--s grid-list-item-body-example-avatar"
-                    role="presentation"
-                  />
-                  
-                            
-                  <div>
-                    
-                                
-                    <h4
-                      class="fd-title fd-title--h4"
-                    >
-                      John Li
-                    </h4>
-                    
-                                
-                    <p>
-                      Product Owner, Company B
-                    </p>
-                    
-
-                                
-                    <div>
-                      
-                                    
-                      <p>
-                        781 Main Street
-                      </p>
-                      
-                                    
-                      <p>
-                        Anytown, SD 57401
-                      </p>
-                      
-                                    
-                      <p>
-                        USA
-                      </p>
-                      
-                                
-                    </div>
-                    
-
-                                
-                    <a
-                      class="fd-link"
-                      href="#"
-                      tabindex="0"
-                    >
-                      john_li@example.com
-                    </a>
-                    
-                            
-                  </div>
                   
                         
                 </div>

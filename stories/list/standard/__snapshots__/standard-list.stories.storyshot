@@ -56,7 +56,7 @@ exports[`Storyshots Components/List/Standard Action 1`] = `
       <button
         class="fd-list__title"
       >
-        More Options
+        Action
       </button>
       
   
@@ -119,7 +119,7 @@ exports[`Storyshots Components/List/Standard Action 1`] = `
       <button
         class="fd-list__title"
       >
-        More Options
+        Action
       </button>
       
   
@@ -198,7 +198,7 @@ exports[`Storyshots Components/List/Standard Action 1`] = `
       <button
         class="fd-list__title"
       >
-        More Options
+        Action
       </button>
       
   
@@ -307,7 +307,7 @@ exports[`Storyshots Components/List/Standard Action 1`] = `
         <div
           class="fd-list__title-text"
         >
-          More Options
+          Show more
         </div>
         
     

@@ -313,6 +313,11 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
         
                 
         <span
+          class="fd-progress-indicator__icon"
+        />
+        
+                
+        <span
           class="fd-progress-indicator__label"
         >
           42%
@@ -355,6 +360,11 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
       <div
         class="fd-progress-indicator__remaining"
       >
+        
+                
+        <span
+          class="fd-progress-indicator__icon"
+        />
         
                 
         <span
@@ -403,6 +413,11 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
         
                 
         <span
+          class="fd-progress-indicator__icon"
+        />
+        
+                
+        <span
           class="fd-progress-indicator__label"
         >
           42%
@@ -445,6 +460,11 @@ exports[`Storyshots Components/Progress Indicator States 1`] = `
       <div
         class="fd-progress-indicator__remaining"
       >
+        
+                
+        <span
+          class="fd-progress-indicator__icon"
+        />
         
                 
         <span

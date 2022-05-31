@@ -12,22 +12,22 @@ exports[`Storyshots Components/Busy Indicator Contrast Mode 1`] = `
     <div
       aria-hidden="false"
       aria-label="Loading"
-      class="fd-busy-indicator--l contrast"
+      class="fd-busy-indicator fd-busy-indicator--l fd-busy-indicator--contrast"
     >
       
     
       <div
-        class="fd-busy-indicator--circle-0"
+        class="fd-busy-indicator__circle"
       />
       
     
       <div
-        class="fd-busy-indicator--circle-1"
+        class="fd-busy-indicator__circle"
       />
       
     
       <div
-        class="fd-busy-indicator--circle-2"
+        class="fd-busy-indicator__circle"
       />
       
 
@@ -57,17 +57,17 @@ exports[`Storyshots Components/Busy Indicator Extended Busy Indicator 1`] = `
       
         
       <div
-        class="fd-busy-indicator--circle-0"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-1"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-2"
+        class="fd-busy-indicator__circle"
       />
       
     
@@ -89,6 +89,8 @@ exports[`Storyshots Components/Busy Indicator Extended Busy Indicator Inside Mes
 <div
   dir="ltr"
 >
+  
+
   <div
     class="fd-message-toast fd-busy-indicator-extended fd-busy-indicator-extended--message-toast"
   >
@@ -102,17 +104,17 @@ exports[`Storyshots Components/Busy Indicator Extended Busy Indicator Inside Mes
       
         
       <div
-        class="fd-busy-indicator--circle-0"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-1"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-2"
+        class="fd-busy-indicator__circle"
       />
       
     
@@ -142,22 +144,22 @@ exports[`Storyshots Components/Busy Indicator Standard 1`] = `
     <div
       aria-hidden="false"
       aria-label="Loading"
-      class="fd-busy-indicator--l"
+      class="fd-busy-indicator fd-busy-indicator--l"
     >
       
         
       <div
-        class="fd-busy-indicator--circle-0"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-1"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-2"
+        class="fd-busy-indicator__circle"
       />
       
     
@@ -169,22 +171,22 @@ exports[`Storyshots Components/Busy Indicator Standard 1`] = `
     <div
       aria-hidden="false"
       aria-label="Loading"
-      class="fd-busy-indicator--m"
+      class="fd-busy-indicator fd-busy-indicator--m"
     >
       
         
       <div
-        class="fd-busy-indicator--circle-0"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-1"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-2"
+        class="fd-busy-indicator__circle"
       />
       
     
@@ -201,17 +203,17 @@ exports[`Storyshots Components/Busy Indicator Standard 1`] = `
       
         
       <div
-        class="fd-busy-indicator--circle-0"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-1"
+        class="fd-busy-indicator__circle"
       />
       
         
       <div
-        class="fd-busy-indicator--circle-2"
+        class="fd-busy-indicator__circle"
       />
       
     
