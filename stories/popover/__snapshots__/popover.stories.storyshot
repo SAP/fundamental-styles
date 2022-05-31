@@ -32,10 +32,16 @@ exports[`Storyshots Components/Popover Alignment 1`] = `
                     
           <!--- role is needed to override the combobox role due to aria-haspopup ---->
           
-                        Left-aligned (default)
+                    
+          <i
+            class="sap-icon--navigation-down-arrow"
+          />
+          
                 
         </button>
         
+
+                Left-aligned (default)
             
       </div>
       
@@ -176,6 +182,8 @@ exports[`Storyshots Components/Popover Alignment 1`] = `
         class="fd-popover__control"
       >
         
+                Right-aligned
+
                 
         <button
           aria-controls="popoverA2"
@@ -189,8 +197,12 @@ exports[`Storyshots Components/Popover Alignment 1`] = `
                         
           <!--- role is needed to override the combobox role due to aria-haspopup ---->
           
-                        Right-aligned
                     
+          <i
+            class="sap-icon--navigation-down-arrow"
+          />
+          
+                
         </button>
         
             
@@ -882,26 +894,27 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
     
     </div>
     
-    
+
   </div>
   
-    
+
+
   <div
     class="fddocs-container"
     style="margin-top:300px; margin-bottom: 300px"
   >
     
-        
+    
     <div
       class="fd-popover"
     >
       
-            
+        
       <div
         class="fd-popover__control"
       >
         
-                
+            
         <button
           aria-controls="popoverHSF3"
           aria-expanded="true"
@@ -911,17 +924,17 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
           role="button"
         >
           
-                        
+                    
           <!--- role is needed to override the combobox role due to aria-haspopup ---->
           
-                        Header, subheader and footer
-                
+                    Header, subheader and footer
+            
         </button>
         
-            
+        
       </div>
       
-            
+        
       <section
         aria-hidden="false"
         aria-label="Dialog Data 1"
@@ -930,153 +943,153 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
         role="dialog"
       >
         
-                
+            
         <header
           class="fd-popover__body-header"
         >
           
-                    
+                
           <div
             class="fd-bar fd-bar--header-with-subheader"
           >
             
-                        
+                    
             <div
               class="fd-bar__left"
             >
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <button
                   aria-label="back button"
                   class="fd-button fd-button--transparent"
                 >
                   
-                                    
+                                
                   <i
                     class="sap-icon--navigation-left-arrow"
                   />
                   
-                                
+                            
                 </button>
                 
-                            
+                        
               </div>
               
-                            
+                        
               <div
                 class="fd-bar__element"
                 id="popoverHeader"
               >
                 
-                                Header
-                            
+                            Header
+                        
               </div>
               
-                        
+                    
             </div>
             
-                    
+                
           </div>
           
-                    
+                
           <div
             class="fd-bar fd-bar--subheader"
           >
             
-                        
+                    
             <div
               class="fd-bar__middle"
             >
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <div
                   class="fd-form-item"
                 >
                   
-                                    
+                                
                   <div
                     aria-label="Group label"
                     class="fd-segmented-button"
                     role="group"
                   >
                     
-                                        
+                                    
                     <button
                       aria-label="email"
                       aria-pressed="true"
                       class="fd-button fd-button--compact"
                     >
                       
-                                            
+                                        
                       <i
                         class="sap-icon--email"
                       />
                       
-                                        
+                                    
                     </button>
                     
-                                        
+                                    
                     <button
                       aria-label="phone"
                       class="fd-button fd-button--compact"
                     >
                       
-                                            
+                                        
                       <i
                         class="sap-icon--iphone"
                       />
                       
-                                        
+                                    
                     </button>
                     
-                                        
+                                    
                     <button
                       aria-label="notification"
                       class="fd-button fd-button--compact"
                     >
                       
-                                            
+                                        
                       <i
                         class="sap-icon--notification-2"
                       />
                       
-                                        
+                                    
                     </button>
                     
-                                    
+                                
                   </div>
                   
-                                
+                            
                 </div>
                 
-                            
+                        
               </div>
               
-                        
+                    
             </div>
             
-                    
+                
           </div>
           
-                
+            
         </header>
         
-                
+            
         <div
           style="margin: 20px 80px;"
         >
           
-                    
+                
           <span
             aria-label="Avatar"
             class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
@@ -1084,81 +1097,81 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
             style="background-image: url('assets/images/avatars/2.svg');"
           />
           
-                
+            
         </div>
         
-                
+            
         <footer
           class="fd-popover__body-footer"
         >
           
-                    
+                
           <div
             class="fd-bar fd-bar--footer"
           >
             
-                        
+                    
             <div
               class="fd-bar__right"
             >
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <button
                   class="fd-button fd-button--compact fd-button--emphasized"
                 >
                   Save
                 </button>
                 
-                            
+                        
               </div>
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <button
                   class="fd-button fd-button--compact fd-button--transparent"
                 >
                   Cancel
                 </button>
                 
-                            
+                        
               </div>
               
-                        
+                    
             </div>
             
-                    
+                
           </div>
           
-                
+            
         </footer>
         
-            
+        
       </section>
       
-        
+    
     </div>
     
 
-        
+    
     <div
       class="fd-popover"
     >
       
-            
+        
       <div
         class="fd-popover__control"
       >
         
-                
+            
         <button
           aria-controls="popoverHSF345"
           aria-expanded="true"
@@ -1168,17 +1181,17 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
           role="button"
         >
           
-                        
+                    
           <!--- role is needed to override the combobox role due to aria-haspopup ---->
           
-                        Cozy mode
-                
+                    Cozy mode
+            
         </button>
         
-            
+        
       </div>
       
-            
+        
       <section
         aria-hidden="false"
         aria-label="Dialog data"
@@ -1187,152 +1200,152 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
         role="dialog"
       >
         
-                
+            
         <header
           class="fd-popover__body-header"
         >
           
-                    
+                
           <div
             class="fd-bar fd-bar--cozy fd-bar--header-with-subheader"
           >
             
-                        
+                    
             <div
               class="fd-bar__left"
             >
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <button
                   aria-label="go back"
                   class="fd-button fd-button--transparent"
                 >
                   
-                                    
+                                
                   <i
                     class="sap-icon--navigation-left-arrow"
                   />
                   
-                                
+                            
                 </button>
                 
-                            
+                        
               </div>
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                Header
-                            
+                            Header
+                        
               </div>
               
-                        
+                    
             </div>
             
-                    
+                
           </div>
           
-                    
+                
           <div
             class="fd-bar fd-bar--cozy fd-bar--subheader"
           >
             
-                        
+                    
             <div
               class="fd-bar__middle"
             >
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <div
                   class="fd-form-item"
                 >
                   
-                                    
+                                
                   <div
                     aria-label="Group label"
                     class="fd-segmented-button"
                     role="group"
                   >
                     
-                                        
+                                    
                     <button
                       aria-label="email"
                       aria-pressed="true"
                       class="fd-button fd-button--compact"
                     >
                       
-                                            
+                                        
                       <i
                         class="sap-icon--email"
                       />
                       
-                                        
+                                    
                     </button>
                     
-                                        
+                                    
                     <button
                       aria-label="phone"
                       class="fd-button fd-button--compact"
                     >
                       
-                                            
+                                        
                       <i
                         class="sap-icon--iphone"
                       />
                       
-                                        
+                                    
                     </button>
                     
-                                        
+                                    
                     <button
                       aria-label="notifications"
                       class="fd-button fd-button--compact"
                     >
                       
-                                            
+                                        
                       <i
                         class="sap-icon--notification-2"
                       />
                       
-                                        
+                                    
                     </button>
                     
-                                    
+                                
                   </div>
                   
-                                
+                            
                 </div>
                 
-                            
+                        
               </div>
               
-                        
+                    
             </div>
             
-                    
+                
           </div>
           
-                
+            
         </header>
         
-                
+            
         <div
           style="margin: 20px 80px;"
         >
           
-                    
+                
           <span
             aria-label="Avatar"
             class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
@@ -1340,70 +1353,244 @@ exports[`Storyshots Components/Popover Body variants 1`] = `
             style="background-image: url('assets/images/avatars/1.svg');"
           >
             
-                    
+                
           </span>
           
-                
+            
         </div>
         
-                
+            
         <footer
           class="fd-popover__body-footer"
         >
           
-                    
+                
           <div
             class="fd-bar fd-bar--cozy fd-bar--footer"
           >
             
-                        
+                    
             <div
               class="fd-bar__right"
             >
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <button
                   class="fd-button fd-button--compact fd-button--emphasized"
                 >
                   Save
                 </button>
                 
-                            
+                        
               </div>
               
-                            
+                        
               <div
                 class="fd-bar__element"
               >
                 
-                                
+                            
                 <button
                   class="fd-button fd-button--compact fd-button--transparent"
                 >
                   Cancel
                 </button>
                 
-                            
+                        
               </div>
               
-                        
+                    
             </div>
             
-                    
+                
           </div>
           
-                
+            
         </footer>
         
-            
+        
       </section>
       
+    
+    </div>
+    
+
+  </div>
+  
+
+
+  <div
+    class="fddocs-container"
+    style="margin-top:300px; margin-bottom: 300px;"
+  >
+    
+    
+    <div
+      class="fd-popover"
+    >
+      
         
+      <div
+        class="fd-popover__control"
+      >
+        
+            
+        <button
+          aria-controls="popoverHSF3"
+          aria-expanded="true"
+          aria-haspopup="dialog"
+          class="fd-button fd-button--compact"
+          onclick="onPopoverClick('popoverHSF3');"
+          role="button"
+        >
+          
+                    
+          <!--- role is needed to override the combobox role due to aria-haspopup ---->
+          
+                    
+          <i
+            class="sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+            Compact body
+        
+      </div>
+      
+        
+      <section
+        aria-hidden="false"
+        aria-label="Dialog Data 1"
+        class="fd-popover__body fd-popover__body--compact"
+        id="popoverHSF3"
+        role="dialog"
+      >
+        
+            
+        <nav
+          aria-label="options with header"
+          class="fd-menu"
+        >
+          
+                
+          <ul
+            class="fd-menu__list fd-menu__list--no-shadow"
+          >
+            
+                    
+            <li
+              class="fd-menu__item"
+            >
+              
+                        
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                            
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 1
+                </span>
+                
+                        
+              </a>
+              
+                    
+            </li>
+            
+                    
+            <li
+              class="fd-menu__item"
+            >
+              
+                        
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                            
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 2
+                </span>
+                
+                        
+              </a>
+              
+                    
+            </li>
+            
+                    
+            <li
+              class="fd-menu__item"
+            >
+              
+                        
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                            
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 3
+                </span>
+                
+                        
+              </a>
+              
+                    
+            </li>
+            
+                    
+            <li
+              class="fd-menu__item"
+            >
+              
+                        
+              <a
+                class="fd-menu__link"
+                href="#"
+              >
+                
+                            
+                <span
+                  class="fd-menu__title"
+                >
+                  Option 4
+                </span>
+                
+                        
+              </a>
+              
+                    
+            </li>
+            
+                
+          </ul>
+          
+            
+        </nav>
+        
+        
+      </section>
+      
+    
     </div>
     
 

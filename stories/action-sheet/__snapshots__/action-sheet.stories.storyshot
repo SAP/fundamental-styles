@@ -39,7 +39,7 @@ exports[`Storyshots Components/Action Sheet Desktop 1`] = `
     
     <div
       aria-hidden="false"
-      class="fd-popover__body"
+      class="fd-popover__body fd-popover__body--compact"
       id="actionSheetDesktop"
     >
       

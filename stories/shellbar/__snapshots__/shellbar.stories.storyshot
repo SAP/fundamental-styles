@@ -86,7 +86,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                                 
                   <button
                     aria-label="navigation-down-arrow-button"
-                    class="fd-shellbar__button fd-button"
+                    class="fd-shellbar__button fd-button fd-button--transparent"
                   >
                     
                                     
@@ -120,7 +120,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                 
           <button
             aria-label="Search"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -142,7 +142,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                 
           <button
             aria-label="Notifications"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -171,7 +171,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                 
           <button
             aria-label="Pool"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -220,7 +220,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                     aria-controls="undefined"
                     aria-expanded="false"
                     aria-haspopup="true"
-                    class="fd-button fd-shellbar__button"
+                    class="fd-button fd-button--transparentfd-shellbar__button"
                   >
                     
                                     
@@ -371,7 +371,7 @@ exports[`Storyshots Components/Shellbar Extra large 1`] = `
                 aria-controls="DD35G276"
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="fd-button fd-shellbar__button fd-user-menu__control"
+                class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                 onclick="onPopoverClick('DD35G276')"
                 role="button"
               >
@@ -568,7 +568,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                                 
                   <button
                     aria-label="navigation-down-arrow-button"
-                    class="fd-shellbar__button fd-button"
+                    class="fd-shellbar__button fd-button fd-button--transparent"
                   >
                     
                                     
@@ -602,7 +602,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                 
           <button
             aria-label="Search"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -624,7 +624,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                 
           <button
             aria-label="Notifications"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -653,7 +653,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                 
           <button
             aria-label="Pool"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -702,7 +702,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                     aria-controls="undefined"
                     aria-expanded="false"
                     aria-haspopup="true"
-                    class="fd-button fd-shellbar__button"
+                    class="fd-button fd-button--transparent fd-shellbar__button"
                   >
                     
                                     
@@ -853,7 +853,7 @@ exports[`Storyshots Components/Shellbar Medium-large 1`] = `
                 aria-controls="DD35GBK6"
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="fd-button fd-shellbar__button fd-user-menu__control"
+                class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                 onclick="onPopoverClick('DD35GBK6')"
                 role="button"
               >
@@ -1030,7 +1030,7 @@ exports[`Storyshots Components/Shellbar Primary 1`] = `
                 aria-controls="WV3AY276"
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="fd-button fd-shellbar__button fd-user-menu__control"
+                class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                 role="button"
               >
                 
@@ -1190,7 +1190,7 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
               aria-controls="9GLB26941"
               aria-expanded="false"
               aria-haspopup="true"
-              class="fd-button fd-shellbar__button fd-shellbar__button--menu fd-button--menu"
+              class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu"
               onclick="onPopoverClick('9GLB26941');"
             >
               
@@ -1393,7 +1393,7 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
                                 
                   <button
                     aria-label="button-decline"
-                    class="fd-shellbar__button fd-button"
+                    class="fd-shellbar__button fd-button fd-button--transparent"
                   >
                     
                                         
@@ -1427,7 +1427,7 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
                 
           <button
             aria-label="Search"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                         
@@ -1461,7 +1461,7 @@ exports[`Storyshots Components/Shellbar Product menu and search 1`] = `
                 aria-controls="ZY3AY276"
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="fd-button fd-shellbar__button fd-user-menu__control"
+                class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                 onclick="onPopoverClick('ZY3AY276')"
                 role="button"
               >
@@ -1667,7 +1667,7 @@ exports[`Storyshots Components/Shellbar Product switch 1`] = `
         
             
         <button
-          class="fd-button fd-shellbar__button"
+          class="fd-button fd-button--transparent fd-shellbar__button"
         >
           <img
             alt="CoPilot"
@@ -1707,7 +1707,7 @@ exports[`Storyshots Components/Shellbar Product switch 1`] = `
                 aria-controls="MKFAY276"
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="fd-button fd-shellbar__button fd-user-menu__control"
+                class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                 onclick="onPopoverClick('MKFAY276')"
                 role="button"
               >
@@ -1834,7 +1834,7 @@ exports[`Storyshots Components/Shellbar Product switch 1`] = `
                   aria-expanded="true"
                   aria-haspopup="true"
                   aria-label="Image label"
-                  class="fd-button fd-shellbar__button fd-popover__control fd-product-switch__control"
+                  class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control fd-product-switch__control"
                   onclick="onPopoverClick('product-switch-body')"
                 >
                   
@@ -2431,7 +2431,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                                 
                   <button
                     aria-label="navigation-down-arrow-button"
-                    class="fd-shellbar__button fd-button"
+                    class="fd-shellbar__button fd-button fd-button--transparent"
                   >
                     
                                     
@@ -2465,7 +2465,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                 
           <button
             aria-label="Search"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -2487,7 +2487,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                 
           <button
             aria-label="Notifications"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -2516,7 +2516,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                 
           <button
             aria-label="Pool"
-            class="fd-button fd-shellbar__button"
+            class="fd-button fd-button--transparent fd-shellbar__button"
           >
             
                     
@@ -2565,7 +2565,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                     aria-controls="undefined"
                     aria-expanded="false"
                     aria-haspopup="true"
-                    class="fd-button fd-shellbar__button"
+                    class="fd-button fd-button--transparent fd-shellbar__button"
                   >
                     
                                     
@@ -2668,7 +2668,7 @@ exports[`Storyshots Components/Shellbar Small 1`] = `
                 aria-controls="DD35GBK6"
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="fd-button fd-shellbar__button fd-user-menu__control"
+                class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                 onclick="onPopoverClick('DD35GBK6')"
                 role="button"
               >

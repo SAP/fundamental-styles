@@ -5,7 +5,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
   dir="ltr"
 >
   <div
-    style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;"
+    style="display: flex; flex-direction: column; align-items: center;"
   >
     
     
@@ -13,19 +13,45 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
       Navigation buttons in page indicator
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
-      />
+      >
+        
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
       
+
         
       <div
         class="fd-carousel__page-indicator-container"
@@ -46,6 +72,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
             
         </button>
         
+
             
         <ol
           class="fd-carousel__page-indicators"
@@ -97,6 +124,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
             
         </ol>
         
+
             
         <button
           aria-label="Go to next item"
@@ -118,6 +146,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -136,17 +165,17 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
       Content navigation buttons
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
       >
         
             
@@ -164,6 +193,30 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
             
         </button>
         
+
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+
             
         <button
           aria-label="Go to next item"
@@ -182,6 +235,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
         
       </div>
       
+
         
       <div
         class="fd-carousel__page-indicator-container"
@@ -243,6 +297,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -261,19 +316,45 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
       Numeric page indicator
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
-      />
+      >
+        
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
       
+
         
       <div
         class="fd-carousel__page-indicator-container"
@@ -294,6 +375,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
             
         </button>
         
+
             
         <div
           class="fd-carousel__page-indicators"
@@ -309,6 +391,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
             
         </div>
         
+
             
         <button
           aria-label="Go to next item"
@@ -330,6 +413,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -348,17 +432,17 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
       No page indicator
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
       >
         
             
@@ -376,6 +460,30 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
             
         </button>
         
+
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+
             
         <button
           aria-label="Go to next item"
@@ -397,6 +505,7 @@ exports[`Storyshots Components/Carousel Bottom page indicator 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -421,7 +530,7 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
   dir="ltr"
 >
   <div
-    style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;"
+    style="display: flex; flex-direction: column; align-items: center;"
   >
     
     
@@ -429,19 +538,45 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
       Hiding navigation buttons in page indicator
     </h4>
     
+
     
     <div
       class="fd-carousel fd-carousel--no-navigation"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem;"
     >
       
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
-      />
+      >
+        
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
       
+
         
       <div
         class="fd-carousel__page-indicator-container"
@@ -462,6 +597,7 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
             
         </button>
         
+
             
         <ol
           class="fd-carousel__page-indicators"
@@ -513,6 +649,7 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
             
         </ol>
         
+
             
         <button
           aria-label="Go to next item"
@@ -534,6 +671,7 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -552,11 +690,12 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
       Hiding navigation buttons in the content
     </h4>
     
+
     
     <div
       class="fd-carousel fd-carousel--no-navigation"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
@@ -617,13 +756,13 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
         
       </div>
       
+
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
       >
         
-           
+            
         <button
           aria-label="Go to previous item"
           class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -638,7 +777,31 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
             
         </button>
         
-           
+
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+
+            
         <button
           aria-label="Go to next item"
           class="fd-button fd-carousel__button fd-carousel__button--right"
@@ -659,6 +822,7 @@ exports[`Storyshots Components/Carousel Hidden navigation buttons 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -683,7 +847,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
   dir="ltr"
 >
   <div
-    style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;"
+    style="display: flex; flex-direction: column; align-items: center;"
   >
     
     
@@ -691,11 +855,12 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
       Items in horizontal direction
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="max-width: 60rem; max-height: 15.5rem;"
+      style="max-width: 20rem; max-height: 15.5rem;"
     >
       
         
@@ -705,65 +870,19 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         
             
         <div
-          class="fd-carousel__item fd-carousel__item--active"
+          class="fd-carousel__slides"
         >
           
                 
           <div
-            aria-label="Carousel Image 5"
-            role="img"
-            style="
-                        width: 100%;
-                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                        height: 100%;
-                        background-size:cover;"
+            class="fd-carousel__item fd-carousel__item--active"
           >
             
-                
-          </div>
-          
-            
-        </div>
-        
-
-            
-        <div
-          class="fd-carousel__item fd-carousel__item--active"
-        >
-          
-                
-          <div
-            aria-label="Carousel Image 6"
-            role="img"
-            style="
-                        width: 100%;
-                        background-image: url(assets/images/backgrounds/city.jpg);
-                        height: 100%;
-                        background-size:cover;"
-          >
-            
-                
-          </div>
-          
-            
-        </div>
-        
-
-            
-        <div
-          class="fd-carousel__item fd-carousel__item--active"
-        >
-          
-                
-          <div
-            aria-label="Carousel Image 7"
-            role="img"
-            style="
-                        width: 100%;
-                        background-image: url(assets/images/backgrounds/leaves.jpg);
-                        height: 100%;
-                        background-size:cover;"
-          >
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
             
                 
           </div>
@@ -774,6 +893,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
         
       </div>
       
+
         
       <div
         class="fd-carousel__page-indicator-container"
@@ -794,6 +914,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
             
         </button>
         
+
             
         <ol
           class="fd-carousel__page-indicators"
@@ -821,6 +942,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
             
         </ol>
         
+
             
         <button
           aria-label="Go to next item"
@@ -842,6 +964,7 @@ exports[`Storyshots Components/Carousel Items in horizontal direction 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -866,7 +989,7 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
   dir="ltr"
 >
   <div
-    style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1; height: 25rem;"
+    style="display: flex; flex-direction: column; align-items: center;"
   >
     
     
@@ -874,11 +997,12 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
       Error in loading items
     </h4>
     
+
     
     <div
       class="fd-carousel fd-carousel--no-navigation"
       data-ride="carousel"
-      style="max-width: 30rem; max-height: 15.5rem;"
+      style="max-width: 20rem; max-height: 15.5rem;"
     >
       
         
@@ -896,48 +1020,50 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
             class="fd-message-page__container"
           >
             
-                
+                    
             <div
               class="fd-message-page__icon-container"
             >
               
-                    
+                        
               <i
                 class="sap-icon--document fd-message-page__icon"
                 role="presentation"
               />
               
-                
+                    
             </div>
             
-                
+
+                    
             <div
               aria-live="polite"
               class="fd-message-page__content"
               role="status"
             >
               
-                    
+                        
               <div
                 class="fd-message-page__title"
               >
                 
-                        Items could not be loaded
-                    
+                            Items could not be loaded
+                        
               </div>
               
-                
+                    
             </div>
             
-            
+                
           </div>
           
-        
+            
         </div>
         
         
       </div>
       
+
         
       <div
         class="fd-carousel__page-indicator-container"
@@ -958,11 +1084,13 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
             
         </button>
         
+
             
         <ol
           class="fd-carousel__page-indicators"
         />
         
+
             
         <button
           aria-label="Go to next item"
@@ -984,6 +1112,7 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -1008,7 +1137,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
   dir="ltr"
 >
   <div
-    style="display: flex; flex-direction: column; align-items: center; background: #CCD1D1;"
+    style="display: flex; flex-direction: column; align-items: center;"
   >
     
     
@@ -1016,11 +1145,12 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
       Navigation buttons in page indicator
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
@@ -1043,6 +1173,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
             
         </button>
         
+
             
         <ol
           class="fd-carousel__page-indicators"
@@ -1093,6 +1224,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
             
         </ol>
         
+
             
         <button
           aria-label="Go to next item"
@@ -1111,15 +1243,41 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
         
       </div>
       
+
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
-      />
+      >
+        
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
       
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -1138,11 +1296,12 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
       Navigation buttons in content
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
@@ -1203,13 +1362,13 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
         
       </div>
       
+
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
       >
         
-           
+            
         <button
           aria-label="Go to previous item"
           class="fd-button fd-carousel__button fd-carousel__button--left"
@@ -1224,7 +1383,31 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
             
         </button>
         
-           
+
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+
+            
         <button
           aria-label="Go to next item"
           class="fd-button fd-carousel__button fd-carousel__button--right"
@@ -1245,6 +1428,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -1263,11 +1447,12 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
       Numeral format for page indicator
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
@@ -1293,10 +1478,10 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
         
       </div>
       
+
         
       <div
         class="fd-carousel__content"
-        style="min-height: 15.5rem;"
       >
         
             
@@ -1314,6 +1499,30 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
             
         </button>
         
+
+            
+        <div
+          class="fd-carousel__slides"
+        >
+          
+                
+          <div
+            class="fd-carousel__item fd-carousel__item--active"
+          >
+            
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
+            
+                
+          </div>
+          
+            
+        </div>
+        
+
             
         <button
           aria-label="Go to next item"
@@ -1335,6 +1544,7 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
     
     </div>
     
+
     
     <div
       aria-live="polite"
@@ -1353,11 +1563,12 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
       No page indicators
     </h4>
     
+
     
     <div
       class="fd-carousel"
       data-ride="carousel"
-      style="margin-bottom: 3rem; max-width: 30rem;"
+      style="margin-bottom: 3rem; max-width: 20rem; max-height: 15.5rem;"
     >
       
         
@@ -1380,11 +1591,13 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
             
         </button>
         
+
             
         <ol
           class="fd-carousel__page-indicators"
         />
         
+
             
         <button
           aria-label="Go to next item"
@@ -1403,53 +1616,56 @@ exports[`Storyshots Components/Carousel Top page indicator 1`] = `
         
       </div>
       
+
         
       <div
         class="fd-carousel__content"
-        style="text-align: center; padding: 1rem; min-height: 15.5rem;"
       >
         
             
         <div
-          class="fd-carousel__item fd-carousel__item--active"
+          class="fd-carousel__slides"
         >
           
                 
           <div
-            aria-label="Carousel Image 4"
-            role="img"
-            style="
-                        width:100%;
-                        background-image: url(assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg);
-                        height: 15.5rem;
-                        background-size:cover;"
+            class="fd-carousel__item fd-carousel__item--active"
           >
             
+                    
+            <img
+              alt="first image"
+              src="https://placehold.co/320x200"
+            />
             
+                
           </div>
           
-        
+            
         </div>
         
-    
+        
       </div>
       
     
-      <div
-        aria-live="polite"
-        id="carousel-8"
-        role="region"
-        style="display: none;"
-      >
-        
+    </div>
+    
+
+    
+    <div
+      aria-live="polite"
+      id="carousel-8"
+      role="region"
+      style="display: none;"
+    >
+      
         Displaying item 1 of 4
     
-      </div>
-      
-
     </div>
     
 
   </div>
+  
+
 </div>
 `;

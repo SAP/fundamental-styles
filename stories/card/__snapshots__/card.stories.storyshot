@@ -449,7 +449,7 @@ exports[`Storyshots Components/Card List card 1`] = `
         
       <div
         aria-label="List Card Example 1"
-        class="fd-card fd-card--list"
+        class="fd-card"
         role="region"
       >
         
@@ -662,7 +662,7 @@ exports[`Storyshots Components/Card List card 1`] = `
         
       <div
         aria-label="List Card Example 2"
-        class="fd-card fd-card--list"
+        class="fd-card"
         role="region"
       >
         
@@ -1590,6 +1590,237 @@ exports[`Storyshots Components/Card Standard card 1`] = `
           class="fd-card__content"
           role="group"
         />
+        
+            
+        <div
+          class="fd-card__footer"
+        >
+          
+                
+          <div
+            class="fd-card__footer-actions"
+          >
+            
+                    
+            <div
+              class="fd-card__footer-actions-item"
+            >
+              
+                        
+              <button
+                class="fd-button fd-button--positive"
+              >
+                
+                            Button
+                        
+              </button>
+              
+                    
+            </div>
+            
+                    
+            <div
+              class="fd-card__footer-actions-item"
+            >
+              
+                        
+              <button
+                class="fd-button fd-button--negative"
+              >
+                
+                            Button
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      style="width: 300px; height: 400px; margin: 1rem;"
+    >
+      
+        
+      <div
+        aria-label="Card Anatomy Example 2"
+        class="fd-card"
+        role="region"
+      >
+        
+            
+        <a
+          class="fd-card__header"
+          tabindex="0"
+        >
+          
+                
+          <span
+            aria-label="John Doe"
+            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+            role="img"
+            style="background-image: url('/assets/images/backgrounds/city.jpg')"
+          >
+            
+                
+          </span>
+          
+                
+          <div
+            class="fd-card__header-text"
+          >
+            
+                    
+            <div
+              class="fd-card__title-area"
+            >
+              
+                        
+              <div
+                class="fd-card__title"
+              >
+                Card Title
+              </div>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </a>
+        
+            
+        <div
+          aria-label="Card Content"
+          class="fd-card__content"
+          role="group"
+        />
+        
+            
+        <div
+          class="fd-card__footer"
+        >
+          
+                
+          <a
+            class="fd-link fd-card__footer-link"
+            href="#"
+          >
+            Footer with a link
+          </a>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+    
+    <div
+      style="width: 300px; height: 400px; margin: 1rem;"
+    >
+      
+        
+      <div
+        aria-label="Card Anatomy Example 2"
+        class="fd-card"
+        role="region"
+      >
+        
+            
+        <a
+          class="fd-card__header"
+          tabindex="0"
+        >
+          
+                
+          <span
+            aria-label="John Doe"
+            class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
+            role="img"
+            style="background-image: url('/assets/images/backgrounds/city.jpg')"
+          >
+            
+                
+          </span>
+          
+                
+          <div
+            class="fd-card__header-text"
+          >
+            
+                    
+            <div
+              class="fd-card__title-area"
+            >
+              
+                        
+              <div
+                class="fd-card__title"
+              >
+                Card Title
+              </div>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </a>
+        
+            
+        <div
+          aria-label="Card Content"
+          class="fd-card__content"
+          role="group"
+        />
+        
+            
+        <div
+          class="fd-card__footer"
+        >
+          
+                
+          <a
+            class="fd-link fd-card__footer-link"
+            href="#"
+          >
+            Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+          </a>
+          
+                
+          <button
+            class="fd-button fd-button--transparent"
+          >
+            
+                    
+            <i
+              class="sap-icon sap-icon--overflow"
+            />
+            
+                
+          </button>
+          
+            
+        </div>
         
         
       </div>
