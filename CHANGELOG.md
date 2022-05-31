@@ -1,4 +1,15 @@
 
+## [0.24.0-rc.124](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.123...v0.24.0-rc.124) (2022-05-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** wrap link text in a separate span for Horizon themes
+
+### Bug Fixes
+
+* **styles:** link underline delta ([#3501](https://github.com/SAP/fundamental-styles/issues/3501)) ([58373cd](https://github.com/SAP/fundamental-styles/commit/58373cd0075f51abcf27b84b89940dfdb6eed2bd))
+
 ## [0.24.0-rc.123](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.122...v0.24.0-rc.123) (2022-05-31)
 
 ## [0.24.0-rc.122](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.121...v0.24.0-rc.122) (2022-05-31)
