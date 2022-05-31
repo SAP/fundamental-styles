@@ -117,7 +117,7 @@ export const Error = () => `<div style="height: 600px; width: 100%;">
                     Sorry, we can’t find this page.
                 </div>
                 <div class="fd-message-page__subtitle">
-                    <a href="#" class="fd-link" tabindex="0"><span>Home Page</span></a>
+                    <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Home Page</span></a>
                 </div>
             </div>
         </div>

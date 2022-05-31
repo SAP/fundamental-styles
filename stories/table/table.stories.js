@@ -83,7 +83,7 @@ export const Primary = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolba
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">
                 <div class="fd-table__text fd-table__text--no-wrap" style="max-width: 250px">
                     Very long Text Not Wrapped, limited by max-width
@@ -99,7 +99,7 @@ export const Primary = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolba
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">
                 <div class="fd-table__text" style="max-width: 250px">
                     Very long Text Wrapped, limited by max-width
@@ -113,7 +113,7 @@ export const Primary = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolba
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Middle Name</td>
             <td class="fd-table__cell">Last Name</td>
@@ -148,13 +148,13 @@ export const Borderless = () => `<div class="fd-toolbar fd-toolbar--solid fd-too
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -191,13 +191,13 @@ export const Borderlessbody = () => `<div class="fd-toolbar fd-toolbar--solid fd
     </thead>
     <tbody class="fd-table__body fd-table__body--no-horizontal-borders fd-table__body--no-vertical-borders">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -232,19 +232,19 @@ export const NoOuterBorder = () => `<div class="fd-toolbar fd-toolbar--solid fd-
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -279,19 +279,19 @@ export const Footer = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -332,13 +332,13 @@ export const CompactFooter = () => `<div class="fd-toolbar fd-toolbar--solid fd-
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -381,13 +381,13 @@ export const CondensedFooter = () => `<div class="fd-toolbar fd-toolbar--solid f
     </thead>
     <tbody class="fd-table__body">
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
         </tr>
         <tr class="fd-table__row">
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -516,7 +516,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek611">
                 <label class="fd-checkbox__label" for="Ai9ek611"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell"><p class="fd-text">First Name</p></td>
             <td class="fd-table__cell"><p class="fd-text">Last Name</p></td>
             <td class="fd-table__cell">01/26/17</td>
@@ -527,7 +527,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek673">
                 <label class="fd-checkbox__label" for="Ai9ek673"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--valid">01/26/17</td>
@@ -538,7 +538,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ek69s">
                 <label class="fd-checkbox__label" for="Ai9ek69s"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -549,7 +549,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai9ekk69s">
                 <label class="fd-checkbox__label" for="Ai9ekk69s"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--warning">01/26/17</td>
@@ -560,7 +560,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73k69s">
                 <label class="fd-checkbox__label" for="Ai73k69s"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -571,7 +571,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai734F6s">
                 <label class="fd-checkbox__label" for="Ai734F6s"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--error">01/26/17</td>
@@ -582,7 +582,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai73HE36s">
                 <label class="fd-checkbox__label" for="Ai73HE36s"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>
@@ -593,7 +593,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JDE36s">
                 <label class="fd-checkbox__label" for="Ai7JDE36s"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell fd-table__cell--information">01/26/17</td>
@@ -604,7 +604,7 @@ export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-t
                 <input aria-label="checkbox" type="checkbox" class="fd-checkbox" id="Ai7JGD6s">
                 <label class="fd-checkbox__label" for="Ai7JGD6s"></label>
             </td>
-            <td class="fd-table__cell"><a class="fd-link"><span>user.name@email.com</span></a></td>
+            <td class="fd-table__cell"><a class="fd-link"><span class="fd-link__content">user.name@email.com</span></a></td>
             <td class="fd-table__cell">First Name</td>
             <td class="fd-table__cell">Last Name</td>
             <td class="fd-table__cell">01/26/17</td>

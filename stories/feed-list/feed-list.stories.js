@@ -128,7 +128,7 @@ export const Linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item
         <div class="fd-feed-list__content">
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">
-                    <a href="#" class="fd-link fd-link--emphasized"><span>Joe Doe: </span></a>
+                    <a href="#" class="fd-link fd-link--emphasized"><span class="fd-link__content">Joe Doe: </span></a>
                 </span>
                 Suspendisse facilisis sed odio in mollis. Donec quis justo aliquam, porta justo a, accumsan lorem.
             </p>
@@ -164,7 +164,7 @@ export const ShowMore = () => `<ul class="fd-feed-list" aria-label="Feed List It
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
                 <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vi...
-                <a class="fd-link fd-feed-list__link--more" tabindex="0"><span>More</span></a>
+                <a class="fd-link fd-feed-list__link--more" tabindex="0"><span class="fd-link__content">More</span></a>
             </p>
 
             <div class="fd-feed-list__footer">
@@ -199,7 +199,7 @@ export const ShowLess = () => `<ul class="fd-feed-list" aria-label="Feed List It
             <p class="fd-feed-list__text">
                 <span class="fd-feed-list__name">Joe Doe: </span>
                 <span>Maecenas convallis velit quis felis dictum, in ultrices quam faucibus. Morbi tempor eu elit eu consequat. Sed at lorem a ex consequat pharetra. Etiam convallis odio at vulputate venenatis. In sit amet pharetra urna. Ut nulla nisi, porta at ligula a, elementum ullamcorper lectus. Suspendisse blandit, risus nec vestibulum volutpat, nulla neque rhoncus dolor, vitae rutrum lectus neque nec ligula. Maecenas pulvinar, ligula nec fringilla volutpat, urna quam rutrum tellus, vitae elementum elit est malesuada nunc. Maecenas eu risus posuere, volutpat justo in, ultricies sem
-                <a class="fd-link fd-feed-list__link--more" tabindex="0"><span>Less</span></a>
+                <a class="fd-link fd-feed-list__link--more" tabindex="0"><span class="fd-link__content">Less</span></a>
             </p>
 
             <div class="fd-feed-list__footer">

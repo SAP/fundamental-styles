@@ -223,73 +223,52 @@
   }
 }
 
-@mixin fd-link-content() {
-  > span:not([class*=sap-icon]) {
-    @content;
-  }
-}
-
 @mixin fd-link-underline() {
   text-decoration: var(--fdLink_Text_Decoration, none);
 
-  @include fd-link-content() {
-    text-decoration: var(--fdLink_Text_Content_Decoration, none);
-  }
-
   @include fd-hover() {
     text-decoration: var(--fdLink_Text_Decoration_Hover, none);
-
-    @include fd-link-content() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Hover, none);
-    }
   }
 
   @include fd-focus() {
     text-decoration: var(--fdLink_Text_Decoration_Focus, none);
-
-    @include fd-link-content() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Focus, none);
-    }
   }
 
   @include fd-active() {
     text-decoration: var(--fdLink_Text_Decoration_Active, none);
-
-    @include fd-link-content() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Active, none);
-    }
-  }
-
-  &--subtle {
-    text-decoration: var(--fdLink_Text_Decoration_Subtle, none);
-
-    @include fd-link-content() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Subtle, none);
-    }
-
-    @include fd-hover() {
-      text-decoration: var(--fdLink_Text_Decoration_Subtle_Hover, none);
-
-      @include fd-link-content() {
-        text-decoration: var(--fdLink_Text_Content_Decoration_Subtle_Hover, none);
-      }
-    }
-
-    @include fd-active() {
-      text-decoration: var(--fdLink_Text_Decoration_Subtle_Active, none);
-
-      @include fd-link-content() {
-        text-decoration: var(--fdLink_Text_Content_Decoration_Subtle_Active, none);
-      }
-    }
   }
 
   @include fd-disabled() {
     text-decoration: var(--fdLink_Text_Decoration_Disabled, none);
+  }
 
-    @include fd-link-content() {
+  &__content {
+    text-decoration: var(--fdLink_Text_Content_Decoration, none);
+
+    @include fd-hover() {
+      text-decoration: var(--fdLink_Text_Content_Decoration_Hover, none);
+    }
+
+    @include fd-focus() {
+      text-decoration: var(--fdLink_Text_Content_Decoration_Focus, none);
+    }
+
+    @include fd-active() {
+      text-decoration: var(--fdLink_Text_Content_Decoration_Active, none);
+    }
+
+    @include fd-disabled() {
       text-decoration: var(--fdLink_Text_Content_Decoration_Disabled, none);
     }
+  }
+
+  &--subtle {
+    --fdLink_Text_Content_Decoration: var(--fdLink_Text_Content_Decoration_Subtle, none);
+    --fdLink_Text_Content_Decoration_Hover: var(--fdLink_Text_Content_Decoration_Subtle_Hover, none);
+    --fdLink_Text_Content_Decoration_Active: var(--fdLink_Text_Content_Decoration_Subtle_Active, none);
+    --fdLink_Text_Decoration: var(--fdLink_Text_Decoration_Subtle, none);
+    --fdLink_Text_Decoration_Hover: var(--fdLink_Text_Decoration_Subtle_Hover, none);
+    --fdLink_Text_Decoration_Active: var(--fdLink_Text_Decoration_Subtle_Active, none);
   }
 }
 
