@@ -10,8 +10,16 @@ $block: #{$fd-namespace}-link;
   @include fd-reset();
   @include fd-link();
 
-  @include fd-icon-element-base() {
-    text-decoration: var(--fdLink_Text_Decoration);
+  @include fd-icon-selector() {
+    color: var(--sapLinkColor);
+
+    &:first-child {
+      @include fd-set-margin-right(var(--fdLink_Icon_Spacing, 0));
+    }
+
+    &:last-child {
+      @include fd-set-margin-left(var(--fdLink_Icon_Spacing, 0));
+    }
   }
 
   @include fd-hover() {
@@ -32,6 +40,12 @@ $block: #{$fd-namespace}-link;
     @include fd-icon-selector() {
       text-decoration: var(--fdLink_Text_Decoration_Active);
       color: var(--sapLink_Active_Color);
+    }
+  }
+
+  &:visited {
+    @include fd-icon-selector() {
+      color: var(--sapLink_Visited_Color);
     }
   }
 }

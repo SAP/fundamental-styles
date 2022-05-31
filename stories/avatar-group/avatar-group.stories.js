@@ -79,15 +79,15 @@ export const IndividualType = () => `<div class="fd-avatar-group fd-avatar-group
                         </div>
                         <div class="fd-form-item">
                             <label class="fd-form-label">Mobile</label>
-                            <a class="fd-link fd-input" href="tel:+89181818181">+89181818181</a>
+                            <a class="fd-link fd-input" href="tel:+89181818181"><span>+89181818181</span></a>
                         </div>
                         <div class="fd-form-item">
                             <label class="fd-form-label">Phone</label>
-                            <a class="fd-link fd-input" href="tel:+2828282828">+2828282828</a>
+                            <a class="fd-link fd-input" href="tel:+2828282828"><span>+2828282828</span></a>
                         </div>
                         <div class="fd-form-item">
                             <label class="fd-form-label">Email</label>
-                            <a class="fd-link fd-input" href="mailto:blabla@blabla">blabla@blabla</a>
+                            <a class="fd-link fd-input" href="mailto:blabla@blabla"><span>blabla@blabla</span></a>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,14 @@
+@import "sap_horizon";
+
 :root {
-  --fdLink_Text_Decoration: underline;
-  --fdLink_Text_Decoration_Subtle: none;
-  --fdLink_Text_Decoration_Subtle_Hover: underline;
-  --fdLink_Text_Decoration_Hover: none;
-  --fdLink_Text_Decoration_Focus: none;
-  --fdLink_Text_Decoration_Active: underline;
-  --fdLink_Text_Decoration_Visited: underline;
-  --fdLink_Text_Decoration_Disabled: underline;
+  --fdLink_Text_Content_Decoration: underline;
+  --fdLink_Text_Content_Decoration_Subtle: none;
+  --fdLink_Text_Content_Decoration_Subtle_Hover: underline;
+  --fdLink_Text_Content_Decoration_Hover: none;
+  --fdLink_Text_Content_Decoration_Focus: none;
+  --fdLink_Text_Content_Decoration_Active: underline;
+  --fdLink_Text_Content_Decoration_Visited: underline;
+  --fdLink_Text_Content_Decoration_Disabled: underline;
   --fdLink_Text_Focus_Color: var(--sapContent_ContrastTextColor);
   --fdLink_Focus_Background: transparent;
   --fdLink_Focus_Border_Radius: 0;

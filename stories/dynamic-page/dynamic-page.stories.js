@@ -235,7 +235,7 @@ export const Tablet = () => `
                         </div>
                         <div class="fd-dynamic-page__title-container">
                             <h1 class="fd-title fd-dynamic-page__title">
-                                <a href="#" class="fd-link" title="Balenciaga Triple S Trainers">Balenciaga Triple S Trainers </a>
+                                <a href="#" class="fd-link" title="Balenciaga Triple S Trainers"><span>Balenciaga Triple S Trainers </span></a>
                             </h1>
                             <div class="fd-dynamic-page__title-content" title="Some RANDOM things"> Some RANDOM things </div>
                             <div class="fd-dynamic-page__toolbar-container">
