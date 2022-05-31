@@ -224,7 +224,7 @@
 }
 
 @mixin fd-link-content() {
-  span:not([class*=sap-icon]) {
+  > span:not([class*=sap-icon]) {
     @content;
   }
 }
