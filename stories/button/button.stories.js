@@ -456,8 +456,7 @@ These buttons contain either icons **or** text, as it is highly recommended not 
 Make sure the default accessibility text for the icon is appropriate for your use case. If the text is not ideal, define an app-specific accessibility text.
 
 
-All button styles can be paired with an icon. You can use the \`sap-icon--{icon-name }
-}\` class to attach an icon to the button.
+All button styles can be paired with an icon. You can use the \`sap-icon--{icon-name}\` class to attach an icon to the button.
 The full list of all the available icons can be found on the <a href="icon.html">Icon</a> page.
 `
         }
