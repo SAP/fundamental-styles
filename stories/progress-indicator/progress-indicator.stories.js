@@ -84,10 +84,10 @@ Layout.parameters = {
         iframeHeight: 600,
         description: {
             story: `
-            Show the current progress as a percentage value between 0% and 100%.
-            Alternatively, you can show the current progress as text in addition to the bar.
-            In this case, the text is shown on the right of the bar if the progress is 50% or less. In all other cases, the progress is shown right-aligned on the bar itself
-            You also have the option of showing any application-specific text instead of a percentage.
+Show the current progress as a percentage value between 0% and 100%.
+Alternatively, you can show the current progress as text in addition to the bar.
+In this case, the text is shown on the right of the bar if the progress is 50% or less. In all other cases, the progress is shown right-aligned on the bar itself
+You also have the option of showing any application-specific text instead of a percentage.
         `
         }
     }
@@ -107,6 +107,7 @@ export const ValueStates = () => `
         <div class="fd-progress-indicator__container">
             <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
+                <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
             </div>
         </div>
@@ -116,6 +117,7 @@ export const ValueStates = () => `
         <div class="fd-progress-indicator__container">
             <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
+                <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
             </div>
         </div>
@@ -125,6 +127,7 @@ export const ValueStates = () => `
         <div class="fd-progress-indicator__container">
             <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
+                <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
             </div>
         </div>
@@ -134,6 +137,7 @@ export const ValueStates = () => `
         <div class="fd-progress-indicator__container">
             <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
+                <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
             </div>
         </div>
