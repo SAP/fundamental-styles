@@ -223,10 +223,10 @@ export const Text = () => `<div class="fd-vertical-nav">
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand second submenu 3"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 1</span>
+                        <span class="fd-list__navigation-item-text">Second level item 1</span>
                     </li>
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 2</span>
+                        <span class="fd-list__navigation-item-text">Second level item 2</span>
                     </li>
                 </ul>
             </li>
@@ -235,10 +235,10 @@ export const Text = () => `<div class="fd-vertical-nav">
                 <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand third submenu 2"></button>
                 <ul class="fd-list">
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 1</span>
+                        <span class="fd-list__navigation-item-text">Second level item 1</span>
                     </li>
                     <li class="fd-list__navigation-item" tabindex="0">
-                        <span class="fd-list__navigation-item-text fd-list__navigation-item-text--second-level-no-icon">Second level item 2</span>
+                        <span class="fd-list__navigation-item-text">Second level item 2</span>
                     </li>
                 </ul>
             </li>
