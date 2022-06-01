@@ -258,6 +258,27 @@
     --fdLink_Text_Decoration_Hover: var(--fdLink_Text_Decoration_Subtle_Hover, none);
     --fdLink_Text_Decoration_Active: var(--fdLink_Text_Decoration_Subtle_Active, none);
   }
+
+  &--undecorated {
+    --fdLink_Text_Decoration: none;
+    --fdLink_Text_Decoration_Subtle: none;
+    --fdLink_Text_Decoration_Subtle_Hover: none;
+    --fdLink_Text_Decoration_Subtle_Active: none;
+    --fdLink_Text_Decoration_Hover: none;
+    --fdLink_Text_Decoration_Focus: none;
+    --fdLink_Text_Decoration_Active: none;
+    --fdLink_Text_Decoration_Visited: none;
+    --fdLink_Text_Decoration_Disabled: none;
+    --fdLink_Text_Content_Decoration: none;
+    --fdLink_Text_Content_Decoration_Subtle: none;
+    --fdLink_Text_Content_Decoration_Subtle_Hover: none;
+    --fdLink_Text_Content_Decoration_Subtle_Active: none;
+    --fdLink_Text_Content_Decoration_Hover: none;
+    --fdLink_Text_Content_Decoration_Focus: none;
+    --fdLink_Text_Content_Decoration_Active: none;
+    --fdLink_Text_Content_Decoration_Visited: none;
+    --fdLink_Text_Content_Decoration_Disabled: none;
+  }
 }
 
 @mixin fd-link() {
