@@ -95,7 +95,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -322,7 +322,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -421,7 +421,7 @@ export const States = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0"><span>john_li@example.com</span></a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>

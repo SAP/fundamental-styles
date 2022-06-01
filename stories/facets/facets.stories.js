@@ -171,19 +171,19 @@ export const FormFacetLink = () =>
         <div class="fd-facet__container fd-margin-bottom--tiny">
             <i class="sap-icon--add-employee" role="presentation"></i>
             <div class="fd-text">
-                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0"><span>John Miller</span></a>
+                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0"><span class="fd-link__content">John Miller</span></a>
             </div>
         </div>
         <div class="fd-facet__container fd-margin-bottom--tiny">
             <i class="sap-icon--outgoing-call" role="presentation"></i>
             <div class="fd-text">
-                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0"><span>+1 234 5678</span></a>
+                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0"><span class="fd-link__content">+1 234 5678</span></a>
             </div>
         </div>
         <div class="fd-facet__container fd-margin-bottom--tiny">
             <i class="sap-icon--email" role="presentation"></i>
             <div class="fd-text">
-                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0"><span>john.miller@company.com</span></a>
+                <a href="#" class="fd-link fd-margin-begin--tiny" tabindex="0"><span class="fd-link__content">john.miller@company.com</span></a>
             </div>
         </div>
         <div class="fd-facet__container">

@@ -137,7 +137,7 @@ export const Expand = () => `
     magna aliqua. Malesuada bibendum arcu vitae elementum. Ut etiam sit amet nisl. Laoreet suspendisse interdum
     consectetur libero id faucibus nisl. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.
     Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Mauris vitae ultricies...</p>
-    <a class="fd-link fd-text__link--more" tabindex="0"><span>More</span></a>
+    <a class="fd-link fd-text__link--more" tabindex="0"><span class="fd-link__content">More</span></a>
 
     <h3>Show Less</h3>
     <p class="fd-text">
@@ -149,7 +149,7 @@ export const Expand = () => `
     egestas pretium aenean. Nunc id cursus metus aliquam eleifend. Placerat in egestas erat imperdiet. Etiam dignissim
     diam quis enim lobortis scelerisque. A erat nam at lectus. Amet nisl purus in mollis nunc sed id. Purus semper eget
     duis at tellus at urna.</p>
-    <a class="fd-link fd-text__link--more" tabindex="0"><span>Less</span></a>
+    <a class="fd-link fd-text__link--more" tabindex="0"><span class="fd-link__content">Less</span></a>
 `;
 
 Expand.parameters = {

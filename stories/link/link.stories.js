@@ -26,26 +26,26 @@ Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the
 };
 
 export const Primary = () => `
-<a href="#" class="fd-link" tabindex="0"><span>Default link</span></a>
+<a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Default link</span></a>
 <br><br>
-<a href="#" class="fd-link fd-link--emphasized" tabindex="0"><span>Emphasized link</span></a>
+<a href="#" class="fd-link fd-link--emphasized" tabindex="0"><span class="fd-link__content">Emphasized link</span></a>
 <br><br>
-<a href="#" class="fd-link fd-link--subtle"><span>Subtle link</span></a>
+<a href="#" class="fd-link fd-link--subtle"><span class="fd-link__content">Subtle link</span></a>
 <br><br>
-<a class="fd-link" aria-disabled="true"><span>Disabled link</span></a>
+<a class="fd-link" aria-disabled="true"><span class="fd-link__content">Disabled link</span></a>
 <br><br>
 <div  style="background-color:var(--sapShellColor);padding:10px">
-    <a href="#" class="fd-link fd-link--inverted"><span>Inverted link</span></a>
+    <a href="#" class="fd-link fd-link--inverted"><span class="fd-link__content">Inverted link</span></a>
 </div>
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
-    <span>Right icon link</span>
+    <span class="fd-link__content">Right icon link</span>
     <span class="sap-icon--slim-arrow-right sap-icon--s"></span>
 </a>
 <br><br>
 <a href="#" class="fd-link" tabindex="0">
     <span class="sap-icon--slim-arrow-left sap-icon--s"></span>
-    <span>Left icon link</span>
+    <span class="fd-link__content">Left icon link</span>
 </a>
 `;
 

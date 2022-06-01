@@ -87,7 +87,7 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <div class="fd-card__footer">
-                <a class="fd-link fd-card__footer-link" href="#"><span>Footer with a link</span></a>
+                <a class="fd-link fd-card__footer-link" href="#"><span class="fd-link__content">Footer with a link</span></a>
             </div>
         </div>
     </div>
@@ -108,7 +108,7 @@ export const CardAnatomy = () => `<div style="display:flex; justify-content:spac
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
             <div class="fd-card__footer">
-                <a class="fd-link fd-card__footer-link" href="#"><span>Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium</span></a>
+                <a class="fd-link fd-card__footer-link" href="#"><span class="fd-link__content">Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium</span></a>
                 <button class="fd-button fd-button--transparent">
                     <i class="sap-icon sap-icon--overflow"></i>
                 </button>
@@ -726,7 +726,7 @@ export const ObjectCard = () => `<div style="display:flex; justify-content:space
                             </span>
                             <div class="fd-card__content-group-text">
                                 <span style="color: green;">Label</span>
-                                <a href="#" class="fd-link" tabindex="0"><span>Link Text</span></a>
+                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Link Text</span></a>
                             </div>
                         </div>
                         <div class="fd-card__content-group">
