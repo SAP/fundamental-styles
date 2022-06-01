@@ -226,40 +226,28 @@
 @mixin fd-link-underline() {
   text-decoration: var(--fdLink_Text_Decoration, none);
 
+  &__content {
+    text-decoration: var(--fdLink_Text_Content_Decoration, none);
+  }
+
   @include fd-hover() {
-    text-decoration: var(--fdLink_Text_Decoration_Hover, none);
+    --fdLink_Text_Decoration: var(--fdLink_Text_Decoration_Hover, none);
+    --fdLink_Text_Content_Decoration: var(--fdLink_Text_Content_Decoration_Hover, none);
   }
 
   @include fd-focus() {
-    text-decoration: var(--fdLink_Text_Decoration_Focus, none);
+    --fdLink_Text_Decoration: var(--fdLink_Text_Decoration_Focus, none);
+    --fdLink_Text_Content_Decoration: var(--fdLink_Text_Content_Decoration_Focus, none);
   }
 
   @include fd-active() {
-    text-decoration: var(--fdLink_Text_Decoration_Active, none);
+    --fdLink_Text_Decoration: var(--fdLink_Text_Decoration_Active, none);
+    --fdLink_Text_Content_Decoration: var(--fdLink_Text_Content_Decoration_Active, none);
   }
 
   @include fd-disabled() {
-    text-decoration: var(--fdLink_Text_Decoration_Disabled, none);
-  }
-
-  &__content {
-    text-decoration: var(--fdLink_Text_Content_Decoration, none);
-
-    @include fd-hover() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Hover, none);
-    }
-
-    @include fd-focus() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Focus, none);
-    }
-
-    @include fd-active() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Active, none);
-    }
-
-    @include fd-disabled() {
-      text-decoration: var(--fdLink_Text_Content_Decoration_Disabled, none);
-    }
+    --fdLink_Text_Decoration: var(--fdLink_Text_Decoration_Disabled, none);
+    --fdLink_Text_Content_Decoration: var(--fdLink_Text_Content_Decoration_Disabled, none);
   }
 
   &--subtle {
