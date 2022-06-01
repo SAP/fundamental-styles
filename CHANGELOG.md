@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.125](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.124...v0.24.0-rc.125) (2022-06-01)
+
+
+### Features
+
+* **styles:** added link content class ([#3504](https://github.com/SAP/fundamental-styles/issues/3504)) ([99bf658](https://github.com/SAP/fundamental-styles/commit/99bf658008c37b4ef1b976667c54803f4f834fdd))
+
 ## [0.24.0-rc.124](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.123...v0.24.0-rc.124) (2022-05-31)
 
 
