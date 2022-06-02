@@ -60,6 +60,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
       &.is-expanded {
         @include fd-set-margins-x(var(--fdVerticalNav_Item_Expanded_Margin), var(--fdVerticalNav_Item_Expanded_Margin));
+        @include fd-set-padding-left(var(--fdVerticalNav_Item_Expanded_Padding_Left));
 
         @include fd-hover() {
           .#{$blockList} {
@@ -71,7 +72,6 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         box-shadow: var(--fdVerticalNav_Item_Expanded_Box_Shadow);
         height: 100%;
         overflow: hidden;
-        padding-left: var(--fdVerticalNav_Item_Expanded_Padding_Left);
 
         .#{$blockList}__navigation-item {
           @include _fd-vertical-nav-selected-color();
@@ -334,25 +334,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         }
 
         @include fd-focus() {
-          outline: none;
-
-          &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-            border-radius: var(--fdVerticalNav_Border_Corner_Radius);
-            top: 0.125rem;
-            left: 0.125rem;
-            right: 0.125rem;
-            bottom: 0.125rem;
-          }
-
-          @include fd-active() {
-            &::after {
-              border: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_ContrastFocusColor);
-            }
-          }
+          outline-offset: -0.25rem;
         }
       }
     }
