@@ -426,7 +426,7 @@ export const DifferentStates = () => `<div style="width: 50%; display: inline-bl
                 </a>
             </li>
             <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link is-disabled" href="#" role="menuitem">
+                <a class="fd-menu__link is-disabled" href="#" role="menuitem" tabindex="-1">
                     <span class="fd-menu__title">Option 6 - Disabled</span>
                 </a>
             </li>
