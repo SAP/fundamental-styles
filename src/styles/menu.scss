@@ -3,6 +3,10 @@
 
 $block: #{$fd-namespace}-menu;
 
+.#{$fd-namespace}-dialog__body {
+  --fdButton_Menu_Border_Radius: 0;
+}
+
 .#{$block} {
   // Menu
   $fd-menu-border-radius: var(--fdButton_Menu_Border_Radius) !default;
@@ -184,6 +188,12 @@ $block: #{$fd-namespace}-menu;
     @include fd-disabled() {
       pointer-events: none;
       opacity: var(--sapContent_DisabledOpacity);
+
+      @include fd-focus() {
+        &::after {
+          display: none;
+        }
+      }
     }
 
     &.has-child {
