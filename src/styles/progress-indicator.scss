@@ -135,6 +135,7 @@ $fd-progress-indicator-states: (
 
   &[aria-valuenow="100"] {
     .#{$block}__progress-bar {
+      width: initial !important; // Have no other choice. This comes from inline style.
       right: var(--fdProgress_Indicator_Progress_Bar_Position_Left);
 
       @include fd-rtl() {
