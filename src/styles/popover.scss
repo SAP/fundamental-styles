@@ -2,6 +2,7 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-popover;
+$listBlock: #{$fd-namespace}-list;
 
 .#{$block} {
   $fd-popover-top-position: calc(100% + 0.5rem) !default;
@@ -61,6 +62,24 @@ $block: #{$fd-namespace}-popover;
   &__wrapper {
     border-radius: $fd-popover-border-radius;
     overflow: auto;
+
+    .#{$listBlock}:first-child {
+      li:first-child {
+        &::before {
+          border-top-left-radius: $fd-popover-border-radius;
+          border-top-right-radius: $fd-popover-border-radius;
+        }
+      }
+    }
+
+    .#{$listBlock}:last-child {
+      li:last-child {
+        &::before {
+          border-bottom-left-radius: $fd-popover-border-radius;
+          border-bottom-right-radius: $fd-popover-border-radius;
+        }
+      }
+    }
   }
 
   &__body {
