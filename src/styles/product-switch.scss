@@ -20,50 +20,6 @@ $block: #{$fd-namespace}-product-switch;
 
   @include fd-reset();
 
-  .#{$fd-namespace}-button.#{$block}__control {
-    @include fd-reset();
-
-    color: var(--sapShell_InteractiveTextColor);
-    justify-content: center;
-
-    &::before {
-      margin-right: 0;
-    }
-
-    > [class*='sap-icon'] {
-      color: inherit;
-
-      &::before {
-        color: inherit;
-      }
-    }
-
-    @include fd-hover() {
-      color: var(--sapShell_InteractiveTextColor);
-      background-color: var(--sapShell_Hover_Background);
-
-      @include fd-disabled() {
-        color: var(--sapShell_InteractiveTextColor);
-        opacity: 0.4%;
-      }
-    }
-
-    @include fd-disabled() {
-      opacity: 0.4%;
-    }
-
-    @include fd-active-pressed-selected() {
-      color: var(--sapShell_Active_TextColor);
-      background-color: var(--sapShell_Active_Background);
-    }
-
-    @include fd-focus() {
-      @include fd-button-focus() {
-        outline-color: var(--sapContent_ContrastFocusColor);
-      }
-    }
-  }
-
   &__list {
     @include fd-reset();
 
