@@ -62,24 +62,6 @@ $listBlock: #{$fd-namespace}-list;
   &__wrapper {
     border-radius: $fd-popover-border-radius;
     overflow: auto;
-
-    .#{$listBlock}:first-child {
-      li:first-child {
-        &::before {
-          border-top-left-radius: $fd-popover-border-radius;
-          border-top-right-radius: $fd-popover-border-radius;
-        }
-      }
-    }
-
-    .#{$listBlock}:last-child {
-      li:last-child {
-        &::before {
-          border-bottom-left-radius: $fd-popover-border-radius;
-          border-bottom-right-radius: $fd-popover-border-radius;
-        }
-      }
-    }
   }
 
   &__body {
@@ -97,6 +79,26 @@ $listBlock: #{$fd-namespace}-list;
     top: $fd-popover-top-position;
     transition: all $fd-popover-transition-params;
     transform: translateY(0);
+
+    .#{$listBlock}:first-child {
+      li:first-child,
+      li:first-child a {
+        &::before {
+          border-top-left-radius: $fd-popover-border-radius;
+          border-top-right-radius: $fd-popover-border-radius;
+        }
+      }
+    }
+
+    .#{$listBlock}:last-child {
+      li:last-child,
+      li:last-child a {
+        &::before {
+          border-bottom-left-radius: $fd-popover-border-radius;
+          border-bottom-right-radius: $fd-popover-border-radius;
+        }
+      }
+    }
 
     @include both-pseudo-selectors() {
       content: "";
