@@ -127,6 +127,22 @@ $fd-progress-indicator-states: (
     }
   }
 
+  &[aria-valuenow="0"] {
+    .#{$block}__progress-bar {
+      border: none;
+    }
+  }
+
+  &[aria-valuenow="100"] {
+    .#{$block}__progress-bar {
+      right: var(--fdProgress_Indicator_Progress_Bar_Position_Left);
+
+      @include fd-rtl() {
+        left: var(--fdProgress_Indicator_Progress_Bar_Position_Left);
+      }
+    }
+  }
+
   &__progress-bar {
     @include fd-reset();
 
@@ -142,7 +158,7 @@ $fd-progress-indicator-states: (
     height: var(--fdProgress_Indicator_Progress_Bar_Height);
     margin: var(--fdProgress_Indicator_Progress_Bar_Margin);
     border: var(--fdProgress_Indicator_Progress_Bar_Border) var(--progressBarBorderColor);
-    border-right: var(--fdProgress_Indicator_Border_Right)  var(--progressBarBorderRightColor);
+    border-right: var(--fdProgress_Indicator_Border_Right) var(--progressBarBorderRightColor);
     border-radius: var(--fdProgress_Indicator_Progress_Bar_Border_Radius);
     background: var(--progressBarBackground);
     position: var(--fdProgress_Indicator_Progress_Bar_Position, static);

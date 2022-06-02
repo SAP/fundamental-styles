@@ -35,7 +35,7 @@ Negative | \`fd-progress-indicator--negative\`
 export const Layout = () => `
     <div class="fd-progress-indicator" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100" aria-valuetext="0%" aria-label="0%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 0%; width: 0%;"></div>
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 0%;"></div>
             <div class="fd-progress-indicator__remaining">
                 <span class="fd-progress-indicator__label">0%</span>
             </div>
@@ -44,7 +44,7 @@ export const Layout = () => `
 
     <div class="fd-progress-indicator" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="42" aria-valuemax="100" aria-valuetext="42%" aria-label="42%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
                 <span class="fd-progress-indicator__label">42%</span>
             </div>
@@ -53,7 +53,7 @@ export const Layout = () => `
 
     <div class="fd-progress-indicator" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="69" aria-valuemax="100" aria-valuetext="69%" aria-label="69%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 69%; width: 69%;">
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 69%;">
                 <span class="fd-progress-indicator__label">69%</span>
             </div>
             <div class="fd-progress-indicator__remaining"></div>
@@ -62,7 +62,7 @@ export const Layout = () => `
 
     <div class="fd-progress-indicator" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="100" aria-valuemax="100" aria-valuetext="100%" aria-label="100%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 100%; width: 100%">
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 100%;">
                 <span class="fd-progress-indicator__label">100%</span>
             </div>
             <div class="fd-progress-indicator__remaining"></div>
@@ -71,7 +71,7 @@ export const Layout = () => `
 
     <div class="fd-progress-indicator" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="80" aria-valuemax="100" aria-valuetext="80 of 100 MB" aria-label="80 of 100 MB">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 80%; width: 80%">
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 80%;">
                 <span class="fd-progress-indicator__label">80 of 100 MB</span>
             </div>
             <div class="fd-progress-indicator__remaining"></div>
@@ -96,7 +96,7 @@ You also have the option of showing any application-specific text instead of a p
 export const ValueStates = () => `
      <div class="fd-progress-indicator" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="42" aria-valuemax="100" aria-valuetext="42%" aria-label="42%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
                 <span class="fd-progress-indicator__label">42%</span>
             </div>
@@ -105,7 +105,7 @@ export const ValueStates = () => `
 
     <div class="fd-progress-indicator fd-progress-indicator--informative" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="42" aria-valuemax="100" aria-valuetext="42%" aria-label="42%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
                 <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
@@ -115,7 +115,7 @@ export const ValueStates = () => `
 
     <div class="fd-progress-indicator fd-progress-indicator--positive" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="42" aria-valuemax="100" aria-valuetext="42%" aria-label="42%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
                 <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
@@ -125,7 +125,7 @@ export const ValueStates = () => `
 
     <div class="fd-progress-indicator fd-progress-indicator--critical" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="42" aria-valuemax="100" aria-valuetext="42%" aria-label="42%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
                 <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
@@ -135,7 +135,7 @@ export const ValueStates = () => `
 
     <div class="fd-progress-indicator fd-progress-indicator--negative" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="42" aria-valuemax="100" aria-valuetext="42%" aria-label="42%">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%; width: 42%;"></div>
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 42%;"></div>
             <div class="fd-progress-indicator__remaining">
                 <span class="fd-progress-indicator__icon"></span>
                 <span class="fd-progress-indicator__label">42%</span>
@@ -157,7 +157,7 @@ ValueStates.parameters = {
 export const Truncation = () => `<div style="width: 400px; margin: auto;">
     <div class="fd-progress-indicator fd-popover" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="70" aria-valuemax="100" aria-valuetext="In cases where the label is being truncated a small popover appears on click." aria-label="Progress Indicator">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar fd-popover__control" style="min-width: 70%; width: 70%;" onclick="onPopoverClick('popoverF0')">
+            <div class="fd-progress-indicator__progress-bar fd-popover__control" style="min-width: 70%;" onclick="onPopoverClick('popoverF0')">
                 <span class="fd-progress-indicator__label">In cases where the label is being truncated a small popover appears on click.</span>
             </div>
             <div class="fd-progress-indicator__remaining"></div>
@@ -178,7 +178,7 @@ export const Truncation = () => `<div style="width: 400px; margin: auto;">
 
     <div class="fd-progress-indicator fd-popover" tabindex="-1" role="progressbar" aria-valuemin="0" aria-valuenow="70" aria-valuemax="100" aria-valuetext="In cases where the label is being truncated a small popover appears on click." aria-label="Progress Indicator">
         <div class="fd-progress-indicator__container">
-            <div class="fd-progress-indicator__progress-bar" style="min-width: 30%; width: 30%;">
+            <div class="fd-progress-indicator__progress-bar" style="min-width: 30%;">
             </div>
             <div class="fd-progress-indicator__remaining fd-popover__control" onclick="onPopoverClick('popoverF1')">
                 <span class="fd-progress-indicator__label">In cases where the label is being truncated a small popover appears on click.</span>
