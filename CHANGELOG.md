@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.126](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.125...v0.24.0-rc.126) (2022-06-02)
+
+
+### Bug Fixes
+
+* **styles:** remove product switch control class [ci visual] ([#3442](https://github.com/SAP/fundamental-styles/issues/3442)) ([8fb44fc](https://github.com/SAP/fundamental-styles/commit/8fb44fc860794250acf176f8d2a5206cf184001f))
+
 ## [0.24.0-rc.125](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.124...v0.24.0-rc.125) (2022-06-01)
 
 
