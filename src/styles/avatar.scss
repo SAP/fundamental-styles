@@ -89,7 +89,7 @@ $block: #{$fd-namespace}-avatar;
   background-position: 50%;
   border-radius: var(--sapElement_BorderCornerRadius);
 
-  @include fd-fiori-focus(0);
+  @include fd-fiori-pseudo-focus(0);
 
   &[tabindex="0"] {
     cursor: pointer;
