@@ -1,4 +1,13 @@
 
+## [0.24.0-rc.127](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.126...v0.24.0-rc.127) (2022-06-02)
+
+
+### Bug Fixes
+
+* **styles:** focus outline of rating indicator [ci visual] ([#3508](https://github.com/SAP/fundamental-styles/issues/3508)) ([c1ff989](https://github.com/SAP/fundamental-styles/commit/c1ff9896b08d308d216b340213cb97104d9951df))
+* **styles:** menu border radius in dialog and disabled outline [ci visual] ([#3506](https://github.com/SAP/fundamental-styles/issues/3506)) ([9da2604](https://github.com/SAP/fundamental-styles/commit/9da2604a6943c309411cbedb2ff0b360c7f57466))
+* **styles:** progress indicator progress element positions ([#3509](https://github.com/SAP/fundamental-styles/issues/3509)) ([7040267](https://github.com/SAP/fundamental-styles/commit/7040267bb670777fb53777ed06ffdef6022ba52d))
+
 ## [0.24.0-rc.126](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.125...v0.24.0-rc.126) (2022-06-02)
 
 
