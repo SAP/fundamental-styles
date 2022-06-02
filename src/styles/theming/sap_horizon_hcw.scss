@@ -22,7 +22,7 @@
 @import "./common/radio/sap_horizon_hc";
 @import "./common/link/sap_horizon_hc";
 @import "./common/vertical-nav/sap_horizon";
-@import "./common/rating-indicator/sap_horizon";
+@import "./common/rating-indicator/sap_horizon_hc";
 @import "./common/select/sap_horizon_hc";
 @import "./common/tile/sap_horizon_hc";
 @import "./common/progress-indicator/sap_horizon";
@@ -30,10 +30,6 @@
 :root {
   /* Switch */
   --fdSwitch_Slider_Box_Sizing: border-box;
-
-  /* Rating Indicator */
-  --fdInverted_Object_Border_Width: 0;
-  --fdOverlay_Background_Opacity: 0.6;
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);

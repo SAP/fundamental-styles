@@ -86,9 +86,11 @@ $block: #{$fd-namespace}-rating-indicator;
   position: relative;
 
   &__container {
+    border-radius: var(--fdRating_Indicator_Border_Radius);
+
     @include fd-reset();
 
-    @include fd-fiori-focus-within(0) {
+    @include fd-fiori-focus-within(var(--fdRating_Indicator_Focus_Outline_Offset, 0)) {
       // do not show outline for each rating item
       // keeping it this way in order to preserve fallback behavior for IE
       .#{$block}__label, .#{$block}__input {
