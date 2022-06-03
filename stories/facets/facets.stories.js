@@ -263,9 +263,9 @@ export const ObjectPage = () =>
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <nav aria-label="Breadcrumbs">
                             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
-                                <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                                <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Men</span></a></li>
+                                <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Shoes</span></a></li>
+                                <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Running Shoes</span></a></li>
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
@@ -298,9 +298,9 @@ export const ObjectPage = () =>
                     <div class="fd-dynamic-page__breadcrumb-title-container">
                         <nav aria-label="Breadcrumbs">
                             <ul class="fd-dynamic-page__breadcrumb fd-breadcrumb">
-                                <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                                <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Men</span></a></li>
+                                <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Shoes</span></a></li>
+                                <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Running Shoes</span></a></li>
                             </ul>
                         </nav>
                         <div class="fd-dynamic-page__title-container">
@@ -563,9 +563,9 @@ export const ObjectPageMobile = () =>
                             <div class="fd-dynamic-page__breadcrumb-container">
                                 <nav aria-label="Breadcrumbs">
                                     <ul class="fd-breadcrumb">
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Men</a></li>
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" href="#">Shoes</a></li>
-                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" href="#">Running Shoes</a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-link" href="#"><span class="fd-link__content">Men</span></a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-link" href="#"><span class="fd-link__content">Shoes</span></a></li>
+                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-link" href="#"><span class="fd-link__content">Running Shoes</span></a></li>
                                     </ul>
                                 </nav>
                                 <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
@@ -614,9 +614,9 @@ export const ObjectPageMobile = () =>
                             <div class="fd-dynamic-page__breadcrumb-container">
                                 <nav aria-label="Breadcrumbs">
                                     <ul class="fd-breadcrumb">
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Men</a></li>
-                                        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Shoes</a></li>
-                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-breadcrumb__link" tabindex="0" href="#">Running Shoes</a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-link" href="#"><span class="fd-link__content">Men</span></a></li>
+                                        <li class="fd-breadcrumb__item"><a class="fd-link" href="#"><span class="fd-link__content">Shoes</span></a></li>
+                                        <li class="fd-breadcrumb__item"><a aria-current="page" class="fd-link" href="#"><span class="fd-link__content">Running Shoes</span></a></li>
                                     </ul>
                                 </nav>
                                 <div role="toolbar" aria-label="Close action" class="fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
