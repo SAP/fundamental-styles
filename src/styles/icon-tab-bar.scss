@@ -375,7 +375,7 @@ $fd-icon-tab-bar-semantic-values: (
         top: 0;
         width: 0.125rem;
         height: 100%;
-        background: var(--sapButton_Hover_BorderColor);
+        background: var(--fdIcon_Tab_Bar_Separator_Color);
 
         @if $is-end {
           @include fd-set-position-right-pseudo($fd-icon-tab-bar-dnd-separator-bar-horizontal-offset);
@@ -392,7 +392,7 @@ $fd-icon-tab-bar-semantic-values: (
         width: $fd-icon-tab-bar-dnd-separator-circle-size;
         height: $fd-icon-tab-bar-dnd-separator-circle-size;
         border-radius: 50%;
-        border: 0.125rem solid var(--sapButton_Hover_BorderColor);
+        border: 0.125rem solid var(--fdIcon_Tab_Bar_Separator_Color);
         background: var(--sapObjectHeader_Background);
 
         @if $is-end {
