@@ -221,6 +221,7 @@ $block: #{$fd-namespace}-product-switch;
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
+    border-radius: 0;
 
     .#{$block}__list {
       @include fd-flex(column);
