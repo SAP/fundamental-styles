@@ -970,7 +970,7 @@ Compact.parameters = {
 };
 
 export const LandscapeMobile = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--landscape fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content fd-dialog__content--s">
+    <div class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile">
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
             <div class="fd-calendar fd-calendar--mobile-landscape">
                 <header class="fd-calendar__header">
@@ -1157,7 +1157,7 @@ Note: For landscape mode, no dialog header element should be used. However, a di
 };
 
 export const PortraitMobile = () => `<div class="fd-dialog-docs-static fd-calendar-mobile-docs-static--portrait fd-dialog fd-dialog--active">
-    <section class="fd-dialog__content fd-dialog__content--s" style="width: 375px; height: 600px;">
+    <section class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile" style="width: 375px; height: 600px;">
         <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--cozy">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
