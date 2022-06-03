@@ -17,6 +17,7 @@
 $block: #{$fd-namespace}-dialog;
 $bar: #{$fd-namespace}-bar;
 $button: #{$fd-namespace}-button;
+$menu: #{$fd-namespace}-menu;
 
 .#{$block} {
 
@@ -56,6 +57,13 @@ $button: #{$fd-namespace}-button;
     @include fd-reset();
 
     @extend %dialog-content;
+
+    .#{$menu}__item:first-child,
+    .#{$menu}__item:first-child .#{$menu}__link::after,
+    .#{$menu}__item:last-child,
+    .#{$menu}__item:last-child .#{$menu}__link::after {
+      border-radius: 0;
+    }
 
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
