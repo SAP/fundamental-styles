@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.128](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.127...v0.24.0-rc.128) (2022-06-03)
+
+
+### Bug Fixes
+
+* **styles:** focus border radius on list items in popovers [ci visual] ([#3510](https://github.com/SAP/fundamental-styles/issues/3510)) ([e383bac](https://github.com/SAP/fundamental-styles/commit/e383bac9a8a3ea322fdbb518f5dbd68d04041002))
+
 ## [0.24.0-rc.127](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.126...v0.24.0-rc.127) (2022-06-02)
 
 
