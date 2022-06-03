@@ -23,18 +23,18 @@ The breadcrumb component is a type of navigation that indicates the position of 
 - Independent object pages, such as fact sheets
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['popover', 'list', 'breadcrumb', 'icon']
+        components: ['popover', 'list', 'breadcrumb', 'icon', 'link']
     }
 };
 
 export const Standard = () => `<nav aria-label="products breadcrumbs">
     <ul class="fd-breadcrumb">
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Products</a></li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Suppliers</a></li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Titanium</a></li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Ultra Portable</a></li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">12 inch</a></li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Super portable deluxe</a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Products</span></a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Suppliers</span></a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Titanium</span></a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Ultra Portable</span></a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">12 inch</span></a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Super portable deluxe</span></a></li>
         <li aria-current="page" class="fd-breadcrumb__item">Laptop</li>
     </ul>
 </nav>
@@ -59,13 +59,13 @@ export const Overflow = () => `
                         aria-expanded="true"
                         aria-haspopup="true"
                         aria-label="Show collapsed breadcrumbs"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         onclick="onPopoverClick('breadcrumb1');"
                         onkeypress="isSpaceOrEnter(event, onPopoverClick('breadcrumb1'));"
                         role="button"
                         tabindex="0">
-                            ...
-                        <i role="presentation" class="fd-breadcrumb__dropdown-icon sap-icon sap-icon--slim-arrow-down"></i>
+                        <span class="fd-link__content">...</span>
+                        <i role="presentation" class="sap-icon sap-icon--slim-arrow-down"></i>
                     </div>
                 </div>
                 <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="breadcrumb1">
@@ -91,9 +91,9 @@ export const Overflow = () => `
                 </div>
             </div>
         </li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Ultra Portable</a></li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">12 inch</a></li>
-        <li class="fd-breadcrumb__item"><a class="fd-breadcrumb__link" tabindex="0" href="#">Super portable deluxe</a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Ultra Portable</span></a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">12 inch</span></a></li>
+        <li class="fd-breadcrumb__item"><a class="fd-link" tabindex="0" href="#"><span class="fd-link__content">Super portable deluxe</span></a></li>
         <li aria-current="page" class="fd-breadcrumb__item">Laptop</li>
     </ul>
 </nav>
