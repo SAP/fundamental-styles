@@ -82,7 +82,7 @@
     "@storybook/addon-storyshots": "6.5.5",
     "@storybook/addon-toolbars": "6.5.5",
     "@storybook/addon-viewport": "6.5.5",
-    "@storybook/addons": "6.5.5",
+    "@storybook/addons": "6.5.6",
     "@storybook/builder-webpack5": "^6.5.0-alpha.16",
     "@storybook/html": "6.5.5",
     "@storybook/manager-webpack5": "^6.5.0-alpha.16",
