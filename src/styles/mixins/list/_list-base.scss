@@ -127,7 +127,7 @@
       flex-basis: auto;
     }
 
-    + .#{$block}__icon {
+    ~ .#{$block}__icon {
       @include fd-set-margin-right(-1rem);
     }
   }
