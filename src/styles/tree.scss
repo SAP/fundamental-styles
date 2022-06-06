@@ -103,8 +103,16 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
 
   &__expander {
     @include fd-reset();
+    @include fd-button-reset();
+
+    @include fd-focus() {
+      outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
+      outline-offset: var(--fdButton_Outline_Offset);
+    }
 
     .#{$block}__icon {
+      @include fd-reset();
+
       @include fd-icon-selector() {
         font-size: var(--fdTree_Expander_Icon_Font_Size);
         color: var(--sapButton_IconColor);

@@ -1,4 +1,23 @@
 
+## [0.24.0-rc.131](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.130...v0.24.0-rc.131) (2022-06-06)
+
+
+### Bug Fixes
+
+* **styles:** icon tab bar separator in horizon ([#3518](https://github.com/SAP/fundamental-styles/issues/3518)) ([3bc074f](https://github.com/SAP/fundamental-styles/commit/3bc074f5a84088bcf92bf352bb788344ed868828))
+
+## [0.24.0-rc.130](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.129...v0.24.0-rc.130) (2022-06-06)
+
+## [0.24.0-rc.129](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.128...v0.24.0-rc.129) (2022-06-06)
+
+
+### Bug Fixes
+
+* **deps:** last known good configuration ([#3531](https://github.com/SAP/fundamental-styles/issues/3531)) ([943bcf5](https://github.com/SAP/fundamental-styles/commit/943bcf578346f989b614f2c19efff5f46e8df4f3))
+* **styles:** add fix for double focus in single click area for IconTabBar ([#3517](https://github.com/SAP/fundamental-styles/issues/3517)) ([16061a9](https://github.com/SAP/fundamental-styles/commit/16061a98514d2c244fdb2ca875e20b609ff2bed9))
+* **styles:** micro process flow outline overflow and optimizations [ci visual] ([#3507](https://github.com/SAP/fundamental-styles/issues/3507)) ([b0d02ce](https://github.com/SAP/fundamental-styles/commit/b0d02ce986c276951ebeb272e3695201ed4f358d))
+* **styles:** tree expander button focus outline ([#3511](https://github.com/SAP/fundamental-styles/issues/3511)) ([933b78a](https://github.com/SAP/fundamental-styles/commit/933b78afa0a103de025eff06aa603b4dfe6c820c))
+
 ## [0.24.0-rc.128](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.127...v0.24.0-rc.128) (2022-06-03)
 
 
