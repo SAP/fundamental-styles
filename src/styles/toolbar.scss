@@ -130,6 +130,24 @@ $title-toolbar-height: 2.75rem;
 
   &--info {
     @include toolbarInfo();
+    @include fd-set-paddings-x(0.5rem, 1rem);
+    @include fd-fiori-pseudo-focus();
+
+    position: relative;
+    outline: none;
+
+    @include fd-focus() {
+      &::after {
+        border-color: var(--fdToolbar_Info_Outline_Color);
+      }
+    }
+
+    [class*='sap-icon'] {
+      font-size: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+      color: var(--sapInfobar_TextColor);
+    }
   }
 
   &__spacer {

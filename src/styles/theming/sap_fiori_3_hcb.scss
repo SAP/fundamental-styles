@@ -1,4 +1,4 @@
-@import "./common/switch/sap_fiori";
+@import "./common/switch/sap_fiori_hc";
 @import "./common/button/sap_fiori";
 @import "./common/button/sap_fiori_hc";
 @import "./common/grid-list/sap_fiori";
@@ -28,20 +28,14 @@
 @import "./common/radio/sap_fiori_hc";
 @import "./common/link/sap_fiori_hc";
 @import "./common/vertical-nav/sap_fiori";
+@import "./common/rating-indicator/sap_fiori_hc";
+@import "./common/select/sap_fiori";
+@import "./common/tile/sap_fiori_hc";
+@import "./common/progress-indicator/sap_fiori_hc";
 
 :root {
   --fdInverted_Object_Border_Width: 0.0625rem;
   --fdOverlay_Background_Opacity: 0.8;
-
-  /* Rating Indicator */
-  // default mode
-  --fdRating_Indicator_Selected_Hover_Opacity: 1;
-  // Display Only mode
-  --fdRating_Indicator_Display_Only_Selected_Color: var(--sapContent_IconColor);
-  // Disabled mode
-  --fdRating_Indicator_Disabled_Selected_Color: var(--sapContent_DisabledTextColor);
-  --fdRating_Indicator_Disabled_Unselected_Color: var(--sapContent_DisabledTextColor);
-  --fdRating_Indicator_Disabled_Control_Opacity: 1;
 
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapBackgroundColor);
@@ -255,20 +249,10 @@
   /* Feed Input */
   --fdFeed_Input_Placeholder_Font_Style: normal;
 
-  /* Generic Tile */
-  --fdSlide_Tile_Background_Color: var(--sapTile_Background);
-  --fdSlide_Tile_Background_Opacity: 1;
-  --fdSlide_Tile_Indicator_Dot_Size: 0.25rem;
-  --fdSlide_Tile_Indicator_Ative_Dot_Size: 0.25rem;
-  --fdSlide_Tile_Indicator_Dot_Spacing: 0.188rem;
-  --fdSlide_Tile_Indicator_Dot_Color: var(--sapTile_Background);
-  --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapContent_NonInteractiveIconColor);
-  --fdSlide_Tile_Indicator_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
-  --fdSlide_Tile_Indicator_Active_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
-
   /* Toolbar */
   --fdToolbar_Auto_Background: var(--sapToolbar_Background);
   --fdToolbar_Solid_Background: var(--sapBackgroundColor);
+  --fdToolbar_Info_Outline_Color: var(--sapContent_ContrastFocusColor);
 
   /* Tool Header */
   --fdTool_Header_Icon_Color_Default: var(--sapContent_IconColor);
@@ -302,21 +286,8 @@
   --fdTool_Header_Object_Status_Background_Color_Inverted_Informative: var(--sapButton_Information_Background);
 
   /* Micro Process Flow */
-  --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ForegroundColor);
-
-  /* Progress Indicator */
-  --fdProgress_Indicator_Background_Color_Neutral: var(--sapHighlightColor);
-  --fdProgress_Indicator_Background_Color_Informative: var(--sapHighlightColor);
-  --fdProgress_Indicator_Background_Color_Positive: var(--sapHighlightColor);
-  --fdProgress_Indicator_Background_Color_Negative: var(--sapHighlightColor);
-  --fdProgress_Indicator_Background_Color_Critical: var(--sapHighlightColor);
-  --fdProgress_Indicator_Border_Right: 0.0625rem solid var(--sapField_BorderColor);
-  --fdProgress_Icon_Offset_Right: 0.375rem;
-  --fdProgress_Icon_Offset_Left: 0.0625rem;
-  --fdProgress_Icon_Informative: '\e289';
-  --fdProgress_Icon_Positive: '\e1c1';
-  --fdProgress_Icon_Negative: '\e1c8';
-  --fdProgress_Icon_Critical: '\e053';
+  --fdMicro_Process_Flow_Icon_Color: var(--sapButton_Neutral_Background);
+  --fdMicro_Process_Flow_Active_Icon_Color: var(--sapContent_ForegroundColor);
 
   /** Illustrated Message */
   --sapIllus_BrandColorPrimary: var(--sapContent_Illustrative_Color1);

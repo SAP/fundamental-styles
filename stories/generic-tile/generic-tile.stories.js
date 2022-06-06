@@ -57,7 +57,7 @@ Informative | \`fd-numeric-content__scale—-informative\`
       `,
         tags: ['f3', 'a11y', 'theme'],
         docs: { iframeHeight: 500 },
-        components: ['tile', 'badge', 'generic-tile', 'button', 'numeric-content', 'icon']
+        components: ['tile', 'badge', 'button', 'numeric-content', 'icon']
     }
 };
 

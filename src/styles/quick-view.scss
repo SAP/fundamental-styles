@@ -21,11 +21,6 @@ $fd-quick-view-group-item-indent: 0.75rem;
   display: inherit;
   min-width: 20rem;
 
-  > *:first-child {
-    border-top-right-radius: $fd-popover-border-radius;
-    border-top-left-radius: $fd-popover-border-radius;
-  }
-
   &__content {
     @include fd-reset();
 

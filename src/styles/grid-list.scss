@@ -79,6 +79,7 @@ $fd-grid-list-highlight: (
     height: 100%;
     position: relative;
     overflow: hidden;
+    outline: none;
 
     @include fd-focus() {
       &::before {
@@ -89,7 +90,7 @@ $fd-grid-list-highlight: (
         inset: var(--fdGrid_List_Item_Focus_Outline_Offset);
         box-shadow: var(--fdGrid_List_Item_Focus_Box_Shadow);
         border: var(--fdGrid_List_Item_Focus_Border);
-        border-radius: var(--fdGrid_List_Item_Focus_Border_Radius);
+        border-radius: $fd-grid-list-border-radius;
         z-index: 1;
       }
     }
@@ -241,36 +242,6 @@ $fd-grid-list-highlight: (
 
     &--no-margin {
       margin-top: 0;
-    }
-  }
-
-  &__filter {
-    &,
-    * {
-      color: var(--sapList_TextColor) !important;
-    }
-
-    &[class*="active"] {
-      @include fd-fiori-focus();
-
-      &,
-      * {
-        color: var(--sapInfobar_TextColor) !important;
-      }
-    }
-
-    .#{$block}__filter-button {
-      @include fd-hover() {
-        background: transparent;
-        box-shadow: none;
-        border: none;
-      }
-
-      @include fd-active() {
-        background: transparent;
-        box-shadow: none;
-        border: none;
-      }
     }
   }
 

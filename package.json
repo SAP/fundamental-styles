@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.24.0-rc.106",
+  "version": "0.24.0-rc.131",
   "description": "Fundamental Library Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with SAP Fiori look and feel with any web technology. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "main": "dist/fundamental-styles.css",
   "scripts": {
@@ -15,8 +15,8 @@
     "deploy": "gh-pages -d storybook-static/",
     "lint:style": "stylelint \"{src,.storybook}/**/*.(sa|sc|c)ss\"",
     "lint:js": "eslint . --ext .js",
-    "lint": "npm run lint:style && npm run lint:js",
-    "lint:fix": "npm run lint:style -- --fix && npm run lint:js -- --fix",
+    "lint": "npm run sync-fiori-components && npm run sync-fn-components && npm run lint:style && npm run lint:js",
+    "lint:fix": "npm run sync-fiori-components fix && npm run sync-fn-components fix && npm run lint:style -- --fix && npm run lint:js -- --fix",
     "lint:pre-commit": "echo running pre-commit lint... && npm run lint && echo done!\n",
     "release:create": "create-release",
     "release": "./scripts/publish-release.sh",
@@ -49,7 +49,10 @@
     "storybook:visual:setup": "jest --no-cache --config=./config/jest.config.js",
     "chromatic": "npx storybook:chromatic",
     "prepare": "husky install",
-    "std-version": "standard-version --infile ./CHANGELOG.md --releaseCommitMessageFormat \"chore(release): version {{currentTag}} build ${TRAVIS_BUILD_NUMBER} [ci skip]\" --header \"\""
+    "std-version": "standard-version --infile ./CHANGELOG.md --releaseCommitMessageFormat \"chore(release): version {{currentTag}} build ${TRAVIS_BUILD_NUMBER} [ci skip]\" --header \"\"",
+    "sync-fiori-components": "node ./scripts/sync-components.js lib=fiori",
+    "sync-fn-components": "node ./scripts/sync-components.js lib=fn",
+    "pre-commit": "lint-staged && npm run lint:pre-commit"
   },
   "repository": {
     "type": "git",
@@ -66,22 +69,22 @@
     "@babel/node": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
-    "@commitlint/cli": "^16.0.0",
-    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
     "@commitlint/travis-cli": "^16.0.0",
-    "@sap-theming/theming-base-content": "11.1.38",
-    "@storybook/addon-a11y": "6.4.22",
-    "@storybook/addon-actions": "6.4.22",
-    "@storybook/addon-controls": "6.4.22",
+    "@sap-theming/theming-base-content": "11.1.39",
+    "@storybook/addon-a11y": "6.5.5",
+    "@storybook/addon-actions": "6.5.5",
+    "@storybook/addon-controls": "6.5.5",
     "@storybook/addon-cssresources": "6.2.9",
-    "@storybook/addon-docs": "6.4.22",
-    "@storybook/addon-links": "6.4.22",
-    "@storybook/addon-storyshots": "6.4.22",
-    "@storybook/addon-toolbars": "6.4.22",
-    "@storybook/addon-viewport": "6.4.22",
-    "@storybook/addons": "6.4.22",
+    "@storybook/addon-docs": "6.5.5",
+    "@storybook/addon-links": "6.5.5",
+    "@storybook/addon-storyshots": "6.5.5",
+    "@storybook/addon-toolbars": "6.5.5",
+    "@storybook/addon-viewport": "6.5.5",
+    "@storybook/addons": "6.5.5",
     "@storybook/builder-webpack5": "^6.5.0-alpha.16",
-    "@storybook/html": "6.4.22",
+    "@storybook/html": "6.5.5",
     "@storybook/manager-webpack5": "^6.5.0-alpha.16",
     "@storybook/preset-scss": "^1.0.3",
     "babel-eslint": "^10.1.0",
@@ -106,6 +109,7 @@
     "jest-axe": "^4.1.0",
     "klaw-sync": "^6.0.0",
     "line-reader": "^0.4.0",
+    "lint-staged": "^12.4.2",
     "lodash": "^4.17.21",
     "markdown-to-jsx": "^7.1.2",
     "mkdirp": "^1.0.4",
@@ -126,7 +130,7 @@
     "react-scripts": "^4.0.3",
     "regenerator-runtime": "^0.13.7",
     "rimraf": "^3.0.2",
-    "sass": "^1.47.0",
+    "sass": "1.52.1",
     "sass-loader": "^10.0.2",
     "standard-version": "9.3.2",
     "start-server-and-test": "^1.14.0",
@@ -144,5 +148,9 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "lint-staged": {
+    "{src,.storybook}/**/*.(sa|sc|c)ss": "stylelint --fix",
+    "*.js": "eslint --fix"
+  }
 }

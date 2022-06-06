@@ -47,7 +47,7 @@ export default ({ icons }) => {
                                 }}
                             >
                                 <a onClick={() => setShowAll(true)} className="fd-link" style={{ cursor: 'pointer' }}>
-                                    Show all {icons.length} icons
+                                    <span>Show all {icons.length} icons</span>
                                 </a>
                             </div>
                         </div>

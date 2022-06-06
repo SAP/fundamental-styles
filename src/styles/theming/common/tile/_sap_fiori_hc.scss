@@ -1,0 +1,16 @@
+@import "./sap_fiori";
+
+:root {
+  --fdSlide_Tile_Background_Color: var(--sapTile_Background);
+  --fdSlide_Tile_Background_Opacity: 1;
+
+  /* Generic tiles */
+  --fdSlide_Tile_Indicator_Dot_Size: 0.25rem;
+  --fdSlide_Tile_Indicator_Ative_Dot_Size: 0.25rem;
+  --fdSlide_Tile_Indicator_Dot_Spacing: 0.188rem;
+  --fdSlide_Tile_Indicator_Dot_Color: var(--sapTile_Background);
+  --fdSlide_Tile_Indicator_Active_Dot_Color: var(--sapContent_NonInteractiveIconColor);
+  --fdSlide_Tile_Indicator_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
+  --fdSlide_Tile_Indicator_Active_Dot_Border: solid 0.0625rem var(--sapContent_NonInteractiveIconColor);
+  --fdSlide_Tile_Indicator_Active_Dot_Shadow: var(--fdSlide_Tile_Indicator_Dot_Shadow);
+}

@@ -3,6 +3,10 @@
 
 $block: #{$fd-namespace}-menu;
 
+.#{$fd-namespace}-dialog__body {
+  --fdButton_Menu_Border_Radius: 0;
+}
+
 .#{$block} {
   // Menu
   $fd-menu-border-radius: var(--fdButton_Menu_Border_Radius) !default;
@@ -45,6 +49,12 @@ $block: #{$fd-namespace}-menu;
     @include fd-hover() {
       &:not(:active):not(.is-active) {
         background-color: var(--sapList_Hover_SelectionBackground);
+      }
+    }
+
+    @include fd-focus() {
+      &::after {
+        bottom: 0.125rem;
       }
     }
   }
@@ -117,12 +127,14 @@ $block: #{$fd-namespace}-menu;
     border-radius: 0;
     background-color: var(--sapList_Background);
 
-    &:first-child {
+    &:first-child,
+    &:first-child .#{$block}__link::after {
       border-top-right-radius: $fd-menu-border-radius;
       border-top-left-radius: $fd-menu-border-radius;
     }
 
-    &:last-child {
+    &:last-child,
+    &:last-child .#{$block}__link::after {
       border-bottom-right-radius: $fd-menu-border-radius;
       border-bottom-left-radius: $fd-menu-border-radius;
     }
@@ -131,7 +143,7 @@ $block: #{$fd-namespace}-menu;
   &__link {
     @include fd-reset();
     @include action-cursor();
-    @include fd-fiori-focus();
+    @include fd-fiori-pseudo-focus();
 
     text-decoration: none;
     display: flex;
@@ -140,6 +152,7 @@ $block: #{$fd-namespace}-menu;
     border-radius: inherit;
     height: 2.75rem;
     padding: 0.75rem 1rem 0.75rem 0.75rem;
+    outline: none;
 
     @include fd-hover() {
       background-color: var(--sapList_Hover_Background);
@@ -152,6 +165,10 @@ $block: #{$fd-namespace}-menu;
     @include fd-active() {
       color: $fd-menu-item-color-active;
       background-color: var(--sapList_Active_Background);
+
+      &::after {
+        display: none;
+      }
 
       .#{$block}__title {
         color: $fd-menu-item-color-active;
@@ -171,6 +188,12 @@ $block: #{$fd-namespace}-menu;
     @include fd-disabled() {
       pointer-events: none;
       opacity: var(--sapContent_DisabledOpacity);
+
+      @include fd-focus() {
+        &::after {
+          display: none;
+        }
+      }
     }
 
     &.has-child {

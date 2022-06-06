@@ -71,7 +71,7 @@ exports[`Storyshots Components/Feed List and Item Actions 1`] = `
                     
             <div
               aria-hidden="true"
-              class="fd-popover__body fd-popover__body--right"
+              class="fd-popover__body fd-popover__body--compact fd-popover__body--right"
               id="actionSheetDesktop"
             >
               

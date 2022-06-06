@@ -9,14 +9,10 @@
 $block: #{$fd-namespace}-switch;
 
 @mixin fd-slider-track-position($off-position, $on-position) {
-  .#{$block}__track {
-    transform: translate($off-position, -50%);
-  }
+  --fdSwitch_Track_Offset: translate(#{$off-position}, -50%);
 
   .#{$block}__input:checked + .#{$block}__slider {
-    .#{$block}__track {
-      transform: translate($on-position, -50%);
-    }
+    --fdSwitch_Track_Offset: translate(#{$on-position}, -50%);
   }
 }
 
@@ -26,9 +22,6 @@ $block: #{$fd-namespace}-switch;
   $fd-switch-transition: all 0.1s;
 
   $fd-switch-label-width: 1.75rem;
-
-  $fd-switch-handle-size: 1.875rem;
-  $fd-switch-handle-compact-size: 1.5rem;
 
   $fd-switch-track-compact-offset: 0.8125rem;
 
@@ -98,7 +91,7 @@ $block: #{$fd-namespace}-switch;
   &__slider {
     @include fd-reset();
 
-    background-color: var(--sapButton_Track_Background);
+    background-color: var(--fdSwitch_Track_Background);
     box-sizing: content-box;
     width: var(--fdSwitch_Width);
     height: var(--fdSwitch_Height);
@@ -106,6 +99,7 @@ $block: #{$fd-namespace}-switch;
     transition: $fd-switch-transition;
     border-radius: var(--fdSwitch_Border_Radius);
     box-shadow: var(--fdSwitch_Shadow);
+    border-color: var(--fdSwitch_Border_Color);
   }
 
   &__track {
@@ -118,6 +112,7 @@ $block: #{$fd-namespace}-switch;
     top: 50%;
     transition: $fd-switch-transition;
     min-width: 4.25rem;
+    transform: var(--fdSwitch_Track_Offset);
   }
 
   @include fd-slider-track-position(map-get($fd-switch-handle-offset, "default", "ltr", "off"), map-get($fd-switch-handle-offset, "default", "ltr", "on"));
@@ -144,14 +139,14 @@ $block: #{$fd-namespace}-switch;
 
     &--off {
       @include fd-icon-selector() {
-        color: var(--sapNegativeElementColor);
+        color: var(--fdSwitch_Semantic_Handle_Error_Color);
         margin: var(--fdSwitch_Icon_Error_Margin);
       }
     }
 
     &--on {
       @include fd-icon-selector() {
-        color: var(--sapPositiveElementColor);
+        color: var(--fdSwitch_Semantic_Handle_Success_Color);
         margin: var(--fdSwitch_Icon_Success_Margin);
         visibility: hidden;
         opacity: $fd-switch-off-opacity;
@@ -212,14 +207,11 @@ $block: #{$fd-namespace}-switch;
   }
 
   &__input:checked + &__slider {
-    background-color: var(--sapButton_Track_Selected_Background);
-    border-color: var(--sapButton_Selected_BorderColor);
-    box-shadow: var(--fdSwitch_Active_Shadow);
-
-    .#{$block}__handle {
-      background-color: var(--sapButton_Selected_Background);
-      border-color: var(--sapButton_Selected_BorderColor);
-    }
+    --fdSwitch_Track_Background: var(--sapButton_Track_Selected_Background);
+    --fdSwitch_Shadow: var(--fdSwitch_Active_Shadow);
+    --fdSwitch_Handle_Background: var(--sapButton_Selected_Background);
+    --fdSwitch_Handle_Border_Color: var(--sapButton_Selected_BorderColor);
+    --fdSwitch_Border_Color: var(--sapButton_Selected_BorderColor);
 
     .#{$block}__icon {
       &--off {
@@ -253,40 +245,30 @@ $block: #{$fd-namespace}-switch;
   }
 
   @include fd-hover() {
-    .#{$block}__slider {
-      border-color: var(--fdSwitch_Handle_Hover_Border_Color);
-    }
-
-    .#{$block}__handle {
-      border-color: var(--fdSwitch_Handle_Hover_Border_Color);
-      background-color: var(--sapButton_Hover_Background);
-    }
+    --fdSwitch_Track_Background: var(--fdSwitch_On_Hover_Slider_Background);
+    --fdSwitch_Shadow: var(--fdSwitch_On_Hover_Slider_Shadow);
+    --fdSwitch_Handle_Border_Color: var(--fdSwitch_Handle_Hover_Border_Color);
+    --fdSwitch_Handle_Background: var(--fdSwitch_Hover_Handle_Background);
+    --fdSwitch_Border_Color: var(--fdSwitch_On_Hover_Slider_Border);
 
     .#{$block}__input:checked + .#{$block}__slider {
-      background-color: var(--fdSwitch_On_Hover_Slider_Background);
-
-      .#{$block}__handle {
-        border-color: var(--fdSwitch_Handle_Selected_Hover_Border_Color);
-        background-color: var(--sapButton_Selected_Hover_Background);
-      }
+      --fdSwitch_Track_Background: var(--fdSwitch_On_Hover_Slider_Active_Background);
+      --fdSwitch_Shadow: var(--fdSwitch_On_Hover_Slider_Active_Shadow);
+      --fdSwitch_Handle_Background: var(--fdSwitch_Hover_Handle_Active_Background);
+      --fdSwitch_Handle_Border_Color: var(--fdSwitch_Handle_Selected_Hover_Border_Color);
     }
   }
 
   &--compact {
-    padding: var(--fdSwitch_Compact_Padding);
-
-    .#{$block}__handle {
-      min-width: var(--fdSwitch_Compact_Handle_Width);
-      min-height: var(--fdSwitch_Compact_Handle_Height);
-    }
+    --fdSwitch_Padding: var(--fdSwitch_Compact_Padding);
+    --fdSwitch_Handle_Width: var(--fdSwitch_Compact_Handle_Width);
+    --fdSwitch_Handle_Height: var(--fdSwitch_Compact_Handle_Height);
+    --fdSwitch_Width: var(--fdSwitch_Compact_Width);
+    --fdSwitch_Height: var(--fdSwitch_Compact_Height);
+    --fdSwitch_Icon_Size: var(--fdSwitch_Compact_Icon_Size);
 
     .#{$block}__track {
       min-width: 3.125rem;
-    }
-
-    .#{$block}__slider {
-      width: var(--fdSwitch_Compact_Width);
-      height: var(--fdSwitch_Compact_Height);
     }
 
     @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compact", "ltr", "off"), map-get($fd-switch-handle-offset, "compact", "ltr", "on"));
@@ -297,70 +279,48 @@ $block: #{$fd-namespace}-switch;
   }
 
   &--semantic {
-    .#{$block}__slider {
-      width: var(--fdSwitch_Semantic_Width);
-      height: var(--fdSwitch_Semantic_Height);
-      border-color: var(--sapErrorBorderColor);
-      background-color: var(--fdSwitch_Semantic_Error_Background_Color);
-      box-shadow: var(--fdSwitch_Semantic_Error_Box_Shadow);
-    }
+    --fdSwitch_Width: var(--fdSwitch_Semantic_Width);
+    --fdSwitch_Height: var(--fdSwitch_Semantic_Height);
+    --fdSwitch_Track_Background: var(--fdSwitch_Semantic_Error_Background_Color);
+    --fdSwitch_Shadow: var(--fdSwitch_Semantic_Error_Box_Shadow);
+    --fdSwitch_Handle_Background: var(--fdSwitch_Semantic_Error_Handle_Background_Color);
+    --fdSwitch_Handle_Border_Color: var(--fdSwitch_Semantic_Error_Handle_Border_Color);
+    --fdSwitch_Border_Color: var(--sapErrorBorderColor);
 
     @include fd-slider-track-position(map-get($fd-switch-handle-offset, "semantic", "ltr", "off"), map-get($fd-switch-handle-offset, "semantic", "ltr", "on"));
 
-    .#{$block}__handle {
-      background-color: var(--fdSwitch_Handle_Background);
-      background-color: var(--fdSwitch_Semantic_Error_Handle_Background_Color);
-      border-color: var(--fdSwitch_Semantic_Error_Handle_Border_Color);
-    }
-
     .#{$block}__input:checked + .#{$block}__slider {
-      background-color: var(--fdSwitch_Semantic_Success_Background_Color);
-      border-color: var(--sapSuccessBorderColor);
-      box-shadow: var(--fdSwitch_Semantic_Success_Box_Shadow);
-
-      .#{$block}__handle {
-        border-color: var(--fdSwitch_Semantic_Success_Handle_Border_Color);
-        background-color: var(--fdSwitch_Handle_Background);
-        background-color: var(--fdSwitch_Semantic_Success_Handle_Background_Color);
-      }
+      --fdSwitch_Track_Background: var(--fdSwitch_Semantic_Success_Background_Color);
+      --fdSwitch_Shadow: var(--fdSwitch_Semantic_Success_Box_Shadow);
+      --fdSwitch_Handle_Border_Color: var(--fdSwitch_Semantic_Success_Handle_Border_Color);
+      --fdSwitch_Handle_Background: var(--fdSwitch_Semantic_Success_Handle_Background_Color);
+      --fdSwitch_Border_Color: var(--fdSwitch_Semantic_Success_Handle_Border_Color);
     }
 
     &.#{$block}--compact {
-      padding: 0.1875rem 0;
+      --fdSwitch_Width: var(--fdSwitch_Compact_Semantic_Width);
+      --fdSwitch_Height: var(--fdSwitch_Compact_Semantic_Height);
 
-      .#{$block}__slider {
-        width: var(--fdSwitch_Compact_Semantic_Width);
-        height: var(--fdSwitch_Compact_Semantic_Height);
-      }
+      padding: 0.1875rem 0;
 
       @include fd-slider-track-position(map-get($fd-switch-handle-offset, "compactSemantic", "ltr", "off"), map-get($fd-switch-handle-offset, "compactSemantic", "ltr", "on"));
     }
 
     @include fd-hover() {
-
-      .#{$block}__icon {
-        color: var(--fdSwitch_Semantic_Icon_Error_Color);
-      }
-
-      .#{$block}__slider {
-        border-color: var(--fdSwitch_Semantic_Error_Color);
-      }
-
-      .#{$block}__handle {
-        background-color: var(--fdSwitch_Semantic_Error_Handle_Hover_Background_Color);
-        border-color: var(--fdSwitch_Semantic_Error_Handle_Hover_Border_Color);
-      }
+      --fdSwitch_Track_Background: var(--fdSwitch_Semantic_Hover_Error_Background_Color);
+      --fdSwitch_Shadow: var(--fdSwitch_Semantic_Hover_Error_Box_Shadow);
+      --fdSwitch_Handle_Background: var(--fdSwitch_Semantic_Error_Handle_Hover_Background_Color);
+      --fdSwitch_Handle_Border_Color: var(--fdSwitch_Semantic_Error_Handle_Hover_Border_Color);
+      --fdSwitch_Semantic_Handle_Error_Color: var(--fdSwitch_Semantic_Hover_Error_Color);
+      --fdSwitch_Semantic_Handle_Success_Color: var(--fdSwitch_Semantic_Hover_Success_Color);
+      --fdSwitch_Border_Color: var(--fdSwitch_Semantic_Hover_Error_Border_Color);
 
       .#{$block}__input:checked + .#{$block}__slider {
-        background-color: var(--fdSwitch_Semantic_Success_Background_Color);
-        border-color: var(--fdSwitch_Semantic_Success_Border_Color);
-        .#{$block}__handle {
-          background-color: var(--fdSwitch_Semantic_Success_Handle_Hover_Background_Color);
-          border-color: var(--fdSwitch_Semantic_Success_Handle_Hover_Border_Color);
-        }
-        .#{$block}__icon {
-          color: var(--fdSwitch_Semantic_Icon_Success_Color);
-        }
+        --fdSwitch_Track_Background: var(--fdSwitch_Semantic_Hover_Success_Background_Color);
+        --fdSwitch_Shadow: var(--fdSwitch_Semantic_Hover_Success_Box_Shadow);
+        --fdSwitch_Handle_Background: var(--fdSwitch_Semantic_Success_Handle_Hover_Background_Color);
+        --fdSwitch_Handle_Border_Color: var(--fdSwitch_Semantic_Success_Handle_Hover_Border_Color);
+        --fdSwitch_Border_Color: var(--fdSwitch_Semantic_Hover_Success_Border_Color);
       }
     }
 

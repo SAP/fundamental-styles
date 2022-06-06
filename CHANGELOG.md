@@ -1,4 +1,162 @@
 
+## [0.24.0-rc.131](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.130...v0.24.0-rc.131) (2022-06-06)
+
+
+### Bug Fixes
+
+* **styles:** icon tab bar separator in horizon ([#3518](https://github.com/SAP/fundamental-styles/issues/3518)) ([3bc074f](https://github.com/SAP/fundamental-styles/commit/3bc074f5a84088bcf92bf352bb788344ed868828))
+
+## [0.24.0-rc.130](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.129...v0.24.0-rc.130) (2022-06-06)
+
+## [0.24.0-rc.129](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.128...v0.24.0-rc.129) (2022-06-06)
+
+
+### Bug Fixes
+
+* **deps:** last known good configuration ([#3531](https://github.com/SAP/fundamental-styles/issues/3531)) ([943bcf5](https://github.com/SAP/fundamental-styles/commit/943bcf578346f989b614f2c19efff5f46e8df4f3))
+* **styles:** add fix for double focus in single click area for IconTabBar ([#3517](https://github.com/SAP/fundamental-styles/issues/3517)) ([16061a9](https://github.com/SAP/fundamental-styles/commit/16061a98514d2c244fdb2ca875e20b609ff2bed9))
+* **styles:** micro process flow outline overflow and optimizations [ci visual] ([#3507](https://github.com/SAP/fundamental-styles/issues/3507)) ([b0d02ce](https://github.com/SAP/fundamental-styles/commit/b0d02ce986c276951ebeb272e3695201ed4f358d))
+* **styles:** tree expander button focus outline ([#3511](https://github.com/SAP/fundamental-styles/issues/3511)) ([933b78a](https://github.com/SAP/fundamental-styles/commit/933b78afa0a103de025eff06aa603b4dfe6c820c))
+
+## [0.24.0-rc.128](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.127...v0.24.0-rc.128) (2022-06-03)
+
+
+### Bug Fixes
+
+* **styles:** focus border radius on list items in popovers [ci visual] ([#3510](https://github.com/SAP/fundamental-styles/issues/3510)) ([e383bac](https://github.com/SAP/fundamental-styles/commit/e383bac9a8a3ea322fdbb518f5dbd68d04041002))
+
+## [0.24.0-rc.127](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.126...v0.24.0-rc.127) (2022-06-02)
+
+
+### Bug Fixes
+
+* **styles:** focus outline of rating indicator [ci visual] ([#3508](https://github.com/SAP/fundamental-styles/issues/3508)) ([c1ff989](https://github.com/SAP/fundamental-styles/commit/c1ff9896b08d308d216b340213cb97104d9951df))
+* **styles:** menu border radius in dialog and disabled outline [ci visual] ([#3506](https://github.com/SAP/fundamental-styles/issues/3506)) ([9da2604](https://github.com/SAP/fundamental-styles/commit/9da2604a6943c309411cbedb2ff0b360c7f57466))
+* **styles:** progress indicator progress element positions ([#3509](https://github.com/SAP/fundamental-styles/issues/3509)) ([7040267](https://github.com/SAP/fundamental-styles/commit/7040267bb670777fb53777ed06ffdef6022ba52d))
+
+## [0.24.0-rc.126](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.125...v0.24.0-rc.126) (2022-06-02)
+
+
+### Bug Fixes
+
+* **styles:** remove product switch control class [ci visual] ([#3442](https://github.com/SAP/fundamental-styles/issues/3442)) ([8fb44fc](https://github.com/SAP/fundamental-styles/commit/8fb44fc860794250acf176f8d2a5206cf184001f))
+
+## [0.24.0-rc.125](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.124...v0.24.0-rc.125) (2022-06-01)
+
+
+### Features
+
+* **styles:** added link content class ([#3504](https://github.com/SAP/fundamental-styles/issues/3504)) ([99bf658](https://github.com/SAP/fundamental-styles/commit/99bf658008c37b4ef1b976667c54803f4f834fdd))
+
+## [0.24.0-rc.124](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.123...v0.24.0-rc.124) (2022-05-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** wrap link text in a separate span for Horizon themes
+
+### Bug Fixes
+
+* **styles:** link underline delta ([#3501](https://github.com/SAP/fundamental-styles/issues/3501)) ([58373cd](https://github.com/SAP/fundamental-styles/commit/58373cd0075f51abcf27b84b89940dfdb6eed2bd))
+
+## [0.24.0-rc.123](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.122...v0.24.0-rc.123) (2022-05-31)
+
+## [0.24.0-rc.122](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.121...v0.24.0-rc.122) (2022-05-31)
+
+## [0.24.0-rc.121](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.120...v0.24.0-rc.121) (2022-05-31)
+
+
+### Bug Fixes
+
+* **styles:** horizon progress indicator ([#3429](https://github.com/SAP/fundamental-styles/issues/3429)) ([4edb5dc](https://github.com/SAP/fundamental-styles/commit/4edb5dcef06d74a06d2dbd5c346f6cc94d208565))
+
+## [0.24.0-rc.120](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.119...v0.24.0-rc.120) (2022-05-27)
+
+
+### Bug Fixes
+
+* **ci:** fixed sync-components script compatibility with windows ([#3498](https://github.com/SAP/fundamental-styles/issues/3498)) ([9fcae19](https://github.com/SAP/fundamental-styles/commit/9fcae19359ed823a795edf0be788f221531b51be))
+
+## [0.24.0-rc.119](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.118...v0.24.0-rc.119) (2022-05-27)
+
+
+### Bug Fixes
+
+* **styles:** border radius should not come from quick view first child ([#3493](https://github.com/SAP/fundamental-styles/issues/3493)) ([c608a25](https://github.com/SAP/fundamental-styles/commit/c608a255ca163afc6f2f83b87d08ef8cf20bd757))
+
+## [0.24.0-rc.118](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.117...v0.24.0-rc.118) (2022-05-27)
+
+
+### Bug Fixes
+
+* **styles:** tile horizon adaptation fixes ([#3474](https://github.com/SAP/fundamental-styles/issues/3474)) ([c80de4a](https://github.com/SAP/fundamental-styles/commit/c80de4a510393010ffb711673235c7a2828fe9e7))
+
+## [0.24.0-rc.117](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.116...v0.24.0-rc.117) (2022-05-26)
+
+
+### Bug Fixes
+
+* **styles:** input field readonly state fixes and adaptations ([#3465](https://github.com/SAP/fundamental-styles/issues/3465)) ([f121b81](https://github.com/SAP/fundamental-styles/commit/f121b816d1781a8600dfafec0821fce7cde45d28))
+
+## [0.24.0-rc.116](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.115...v0.24.0-rc.116) (2022-05-26)
+
+
+### Features
+
+* lint on pre-commit ([#3496](https://github.com/SAP/fundamental-styles/issues/3496)) ([9eb3822](https://github.com/SAP/fundamental-styles/commit/9eb3822744d1c2d3b445ffbe35c0e5b895c11bf3))
+
+
+### Bug Fixes
+
+* add missing switch variables [ci visual] ([#3494](https://github.com/SAP/fundamental-styles/issues/3494)) ([a94b506](https://github.com/SAP/fundamental-styles/commit/a94b5065ed828534bd74e17bac0a0ec862e7f9e6))
+
+## [0.24.0-rc.115](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.114...v0.24.0-rc.115) (2022-05-26)
+
+
+### Bug Fixes
+
+* **styles:** menu focus outline [ci visual] ([#3477](https://github.com/SAP/fundamental-styles/issues/3477)) ([ca61622](https://github.com/SAP/fundamental-styles/commit/ca6162229f1b0fc33dda663dfa6311205052b83b))
+
+## [0.24.0-rc.114](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.113...v0.24.0-rc.114) (2022-05-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **styles:** * toolbar infobar, grid list infobar markup change
+
+### Bug Fixes
+
+* **styles:** toolbar info mode styling, grid list toolbar ([#3430](https://github.com/SAP/fundamental-styles/issues/3430)) ([e63ca0c](https://github.com/SAP/fundamental-styles/commit/e63ca0cbaeecc8cefd3f1f7f9612b21d7cea6394))
+
+## [0.24.0-rc.113](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.112...v0.24.0-rc.113) (2022-05-25)
+
+## [0.24.0-rc.112](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.111...v0.24.0-rc.112) (2022-05-25)
+
+## [0.24.0-rc.111](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.110...v0.24.0-rc.111) (2022-05-25)
+
+## [0.24.0-rc.110](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.109...v0.24.0-rc.110) (2022-05-25)
+
+## [0.24.0-rc.109](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.108...v0.24.0-rc.109) (2022-05-24)
+
+
+### Bug Fixes
+
+* **styles:** fix the button states in expanded Select [ci visual] ([#3438](https://github.com/SAP/fundamental-styles/issues/3438)) ([33f2ee9](https://github.com/SAP/fundamental-styles/commit/33f2ee94b8d2d2bfb7b6817fb58336e82a0c8c06))
+
+## [0.24.0-rc.108](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.107...v0.24.0-rc.108) (2022-05-24)
+
+
+### Bug Fixes
+
+* automatically add missing components ([#3476](https://github.com/SAP/fundamental-styles/issues/3476)) ([a18c6ea](https://github.com/SAP/fundamental-styles/commit/a18c6ea25da0c56d6ab8501430b3ed4dd6c20e1c))
+
+## [0.24.0-rc.107](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.106...v0.24.0-rc.107) (2022-05-23)
+
+
+### Bug Fixes
+
+* **styles:** rating indicator horizon ([#3447](https://github.com/SAP/fundamental-styles/issues/3447)) ([f412dc1](https://github.com/SAP/fundamental-styles/commit/f412dc1a00bd6880384a91d6e4a8bc1a551e9c5f))
+
 ## [0.24.0-rc.106](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.105...v0.24.0-rc.106) (2022-05-23)
 
 

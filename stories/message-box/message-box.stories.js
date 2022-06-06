@@ -268,7 +268,7 @@ export const Responsive = () =>
         <div class="fd-message-box__body">
             Informative message box for a small screen in cozy mode (mobile) and a "Show more" link in the body.
             <div class="fd-message-box__more">
-                <a href="#" class="fd-link" tabindex="0">Show more</a>
+                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Show more</span></a>
             </div>
         </div>
         <footer class="fd-bar fd-bar--cozy fd-bar--footer fd-message-box__footer">

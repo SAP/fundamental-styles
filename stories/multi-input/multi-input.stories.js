@@ -607,7 +607,7 @@ export const ReadOnlyAndDisabled = () => `<div style="display:flex;height:250px;
                                                 aria-haspopup="true"
                                                 onclick="onPopoverClick('F4GcX34Xa');">
                                                 <a class="fd-link">
-                                                    2 more
+                                                    <span class="fd-link__content">2 more</span>
                                                 </a>
                                             </div>
                                             <div class="fd-popover__body" aria-hidden="true" id="F4GcX34Xa">
@@ -685,7 +685,7 @@ export const ReadOnlyAndDisabled = () => `<div style="display:flex;height:250px;
                                                 aria-haspopup="true"
                                                 onclick="onPopoverClick('F4GF5348a');">
                                                 <a tabindex="0" class="fd-link">
-                                                    2 more
+                                                    <span class="fd-link__content">2 more</span>
                                                 </a>
                                             </div>
                                             <div class="fd-popover__body" aria-hidden="false" id="F4GF5348a">

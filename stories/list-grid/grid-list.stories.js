@@ -95,7 +95,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -322,7 +322,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -343,7 +343,7 @@ export const Group = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -421,7 +421,7 @@ export const States = () => `<div style="min-height: 600px;">
                             <p>Anytown, SD 57401</p>
                             <p>USA</p>
 
-                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -738,9 +738,8 @@ export const FilterInfobar = () => `<div style="min-height: 350px;">
                 <div class="fd-toolbar fd-toolbar--info fd-toolbar--active fd-grid-list__filter" tabindex="0">
                     Filtered by: Company (Company A, Company B)
                     <span class="fd-toolbar__spacer"></span>
-                    <button class="fd-button fd-button--compact fd-button--transparent fd-grid-list__filter-button" aria-label="Cancel">
-                        <i class="sap-icon--decline"></i>
-                    </button>
+
+                    <i class="sap-icon--decline"></i>
                 </div>
             </div>
         </div>

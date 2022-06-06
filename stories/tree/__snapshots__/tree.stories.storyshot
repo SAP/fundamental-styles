@@ -67,7 +67,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
             
         <button
           aria-label="Edit button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-tree__button"
         >
           
                 
@@ -82,7 +82,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
             
         <button
           aria-label="Delete button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-tree__button"
         >
           
                 
@@ -161,7 +161,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                     
             <button
               aria-label="Edit button"
-              class="fd-button fd-button--transparent"
+              class="fd-button fd-button--transparent fd-tree__button"
             >
               
                         
@@ -176,7 +176,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                     
             <button
               aria-label="Delete button"
-              class="fd-button fd-button--transparent"
+              class="fd-button fd-button--transparent fd-tree__button"
             >
               
                         
@@ -251,7 +251,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                             
                 <button
                   aria-label="Edit button"
-                  class="fd-button fd-button--transparent"
+                  class="fd-button fd-button--transparent fd-tree__button"
                 >
                   
                                 
@@ -266,7 +266,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                             
                 <button
                   aria-label="Delete button"
-                  class="fd-button fd-button--transparent"
+                  class="fd-button fd-button--transparent fd-tree__button"
                 >
                   
                                 
@@ -320,7 +320,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                             
                 <button
                   aria-label="Edit button"
-                  class="fd-button fd-button--transparent"
+                  class="fd-button fd-button--transparent fd-tree__button"
                 >
                   
                                 
@@ -335,7 +335,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                             
                 <button
                   aria-label="Delete button"
-                  class="fd-button fd-button--transparent"
+                  class="fd-button fd-button--transparent fd-tree__button"
                 >
                   
                                 
@@ -395,7 +395,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                     
             <button
               aria-label="Edit button"
-              class="fd-button fd-button--transparent"
+              class="fd-button fd-button--transparent fd-tree__button"
             >
               
                         
@@ -410,7 +410,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
                     
             <button
               aria-label="Delete button"
-              class="fd-button fd-button--transparent"
+              class="fd-button fd-button--transparent fd-tree__button"
             >
               
                         
@@ -470,7 +470,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
             
         <button
           aria-label="Edit button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-tree__button"
         >
           
                 
@@ -485,7 +485,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
             
         <button
           aria-label="Delete button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-tree__button"
         >
           
                 
@@ -539,7 +539,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
             
         <button
           aria-label="Edit button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-tree__button"
         >
           
                 
@@ -554,7 +554,7 @@ exports[`Storyshots Components/Tree Borderless 1`] = `
             
         <button
           aria-label="Delete button"
-          class="fd-button fd-button--transparent"
+          class="fd-button fd-button--transparent fd-tree__button"
         >
           
                 
@@ -657,7 +657,7 @@ exports[`Storyshots Components/Tree Highlight indicators 1`] = `
           
                 
           <div
-            class="fd-tree__item-container has-highlight-indicator--warning"
+            class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--warning"
           >
             
                     
@@ -714,7 +714,7 @@ exports[`Storyshots Components/Tree Highlight indicators 1`] = `
               
                         
               <div
-                class="fd-tree__item-container has-highlight-indicator--error"
+                class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--error"
               >
                 
                             
@@ -770,7 +770,7 @@ exports[`Storyshots Components/Tree Highlight indicators 1`] = `
                   
                                 
                   <div
-                    class="fd-tree__item-container has-highlight-indicator--success"
+                    class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--success"
                   >
                     
                                     
@@ -1020,7 +1020,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
       
         
       <div
-        class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--success"
+        class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator has-highlight-indicator--success"
       >
         
             
@@ -1084,7 +1084,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
           
                 
           <div
-            class="fd-tree__item-container has-highlight-indicator--warning"
+            class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--warning"
           >
             
                     
@@ -1141,7 +1141,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
               
                         
               <div
-                class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--error"
+                class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator has-highlight-indicator--error"
               >
                 
                             
@@ -1501,7 +1501,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
                       
                                         
                       <div
-                        class="fd-tree__item-container has-highlight-indicator--success"
+                        class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--success"
                       >
                         
                                             
@@ -1671,7 +1671,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
       
         
       <div
-        class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator--success is-navigated"
+        class="fd-tree__item-container fd-tree__item-container--active has-highlight-indicator has-highlight-indicator--success is-navigated"
       >
         
             
@@ -1711,7 +1711,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
       
         
       <div
-        class="fd-tree__item-container has-highlight-indicator--success"
+        class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--success"
       >
         
             
@@ -1774,7 +1774,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
       
         
       <div
-        class="fd-tree__item-container has-highlight-indicator--success"
+        class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--success"
       >
         
             
@@ -1838,7 +1838,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
           
                 
           <div
-            class="fd-tree__item-container has-highlight-indicator--warning"
+            class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--warning"
           >
             
                     
@@ -1895,7 +1895,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
               
                         
               <div
-                class="fd-tree__item-container has-highlight-indicator--error"
+                class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--error"
               >
                 
                             
@@ -2255,7 +2255,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
                       
                                         
                       <div
-                        class="fd-tree__item-container has-highlight-indicator--success"
+                        class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--success"
                       >
                         
                                             
@@ -2425,7 +2425,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
       
         
       <div
-        class="fd-tree__item-container has-highlight-indicator--success is-navigated"
+        class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--success is-navigated"
       >
         
             
@@ -2465,7 +2465,7 @@ exports[`Storyshots Components/Tree Navigable 1`] = `
       
         
       <div
-        class="fd-tree__item-container has-highlight-indicator--success"
+        class="fd-tree__item-container has-highlight-indicator has-highlight-indicator--success"
       >
         
             
@@ -3156,7 +3156,7 @@ exports[`Storyshots Components/Tree Selection 1`] = `
   dir="ltr"
 >
   <h3>
-    Left multi-selection
+    Left multi-selection(Dependent Selections)
   </h3>
   
 
@@ -4372,6 +4372,408 @@ exports[`Storyshots Components/Tree Selection 1`] = `
 
   </ul>
   
+
+
+
+  <h3>
+    Tree multi selection(Independent Selections)
+  </h3>
+  
+
+
+  <ul
+    class="fd-tree fd-tree--active fd-tree--independent-multi-selection expanded-level-1"
+  >
+    
+    
+    <li
+      aria-expanded="true"
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container is-selected"
+      >
+        
+            
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <input
+            checked=""
+            class="fd-checkbox"
+            id="Ai4ez1"
+            type="checkbox"
+          />
+          
+                
+          <label
+            aria-label="checkbox"
+            class="fd-checkbox__label"
+            for="Ai4ez1"
+            tabindex="-1"
+          />
+          
+            
+        </div>
+        
+            
+        <button
+          aria-controls="TreeSelIndependent1"
+          aria-expanded="true"
+          aria-haspopup="true"
+          aria-label="Expand level 2"
+          class="fd-tree__expander is-expanded"
+          tabindex="0"
+        >
+          
+                
+          <i
+            class="fd-tree__icon sap-icon--navigation-down-arrow"
+            role="presentation"
+          />
+          
+            
+        </button>
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+        
+      <ul
+        aria-hidden="false"
+        class="fd-tree"
+        id="TreeSelIndependent1"
+        role="group"
+      >
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <div
+              class="fd-form-item"
+            >
+              
+                        
+              <input
+                class="fd-checkbox"
+                id="Ai4ez2"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                aria-label="checkbox"
+                class="fd-checkbox__label"
+                for="Ai4ez2"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
+            
+                    
+            <button
+              aria-label="Expander"
+              class="fd-tree__expander"
+              tabindex="0"
+            >
+              
+                        
+              <i
+                class="fd-tree__icon sap-icon--navigation-right-arrow"
+                role="presentation"
+              />
+              
+                    
+            </button>
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container is-selected"
+          >
+            
+                    
+            <div
+              class="fd-form-item"
+            >
+              
+                        
+              <input
+                checked=""
+                class="fd-checkbox"
+                id="Ai4ez3"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                aria-label="checkbox"
+                class="fd-checkbox__label"
+                for="Ai4ez3"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+            
+        <li
+          aria-level="2"
+          class="fd-tree__item"
+          role="treeitem"
+        >
+          
+                
+          <div
+            class="fd-tree__item-container"
+          >
+            
+                    
+            <div
+              class="fd-form-item"
+            >
+              
+                        
+              <input
+                class="fd-checkbox"
+                id="Ai4ez4"
+                type="checkbox"
+              />
+              
+                        
+              <label
+                aria-label="checkbox"
+                class="fd-checkbox__label"
+                for="Ai4ez4"
+                tabindex="-1"
+              />
+              
+                    
+            </div>
+            
+                    
+            <div
+              class="fd-tree__content"
+            >
+              
+                        
+              <span
+                class="fd-tree__text"
+              >
+                Level 2
+              </span>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </li>
+        
+        
+      </ul>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <input
+            class="fd-checkbox"
+            id="Ai4ez5"
+            type="checkbox"
+          />
+          
+                
+          <label
+            aria-label="checkbox"
+            class="fd-checkbox__label"
+            for="Ai4ez5"
+            tabindex="-1"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+    
+    <li
+      aria-level="1"
+      class="fd-tree__item"
+      role="treeitem"
+    >
+      
+        
+      <div
+        class="fd-tree__item-container"
+      >
+        
+            
+        <div
+          class="fd-form-item"
+        >
+          
+                
+          <input
+            class="fd-checkbox"
+            id="Ai4ez6"
+            type="checkbox"
+          />
+          
+                
+          <label
+            aria-label="checkbox"
+            class="fd-checkbox__label"
+            for="Ai4ez6"
+            tabindex="-1"
+          />
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-tree__content"
+        >
+          
+                
+          <span
+            class="fd-tree__text"
+          >
+            Level 1
+          </span>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </li>
+    
+
+  </ul>
+  
+
 
 </div>
 `;
