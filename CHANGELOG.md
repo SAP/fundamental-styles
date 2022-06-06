@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.131](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.130...v0.24.0-rc.131) (2022-06-06)
+
+
+### Bug Fixes
+
+* **styles:** icon tab bar separator in horizon ([#3518](https://github.com/SAP/fundamental-styles/issues/3518)) ([3bc074f](https://github.com/SAP/fundamental-styles/commit/3bc074f5a84088bcf92bf352bb788344ed868828))
+
 ## [0.24.0-rc.130](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.129...v0.24.0-rc.130) (2022-06-06)
 
 ## [0.24.0-rc.129](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.128...v0.24.0-rc.129) (2022-06-06)
