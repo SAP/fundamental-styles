@@ -130,6 +130,14 @@ $menu: #{$fd-namespace}-menu;
 
   &__header.#{$bar} {
     position: relative;
+    border-top-left-radius: $fd-dialog-content-border-radius;
+    border-top-right-radius: $fd-dialog-content-border-radius;
+  }
+
+  &__footer.#{$bar} {
+    position: relative;
+    border-bottom-left-radius: $fd-dialog-content-border-radius;
+    border-bottom-right-radius: $fd-dialog-content-border-radius;
   }
 
   &__body {
