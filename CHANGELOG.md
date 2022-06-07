@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.135](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.134...v0.24.0-rc.135) (2022-06-07)
+
+
+### Bug Fixes
+
+* **styles:** list in card focus outline ([#3542](https://github.com/SAP/fundamental-styles/issues/3542)) ([3a9ecbb](https://github.com/SAP/fundamental-styles/commit/3a9ecbb08e29e7d69bec1e5ddfd0af8c7f41fa9f))
+
 ## [0.24.0-rc.134](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.133...v0.24.0-rc.134) (2022-06-07)
 
 
