@@ -126,6 +126,10 @@
     &:last-child:first-child {
       flex-basis: auto;
     }
+
+    ~ .#{$block}__icon {
+      @include fd-set-margin-right(-1rem);
+    }
   }
 
   &__secondary {
@@ -152,10 +156,6 @@
 
       &:first-child {
         @include fd-set-margin-left(-1rem);
-      }
-
-      &:last-child {
-        @include fd-set-margin-right(-1rem);
       }
     }
   }
