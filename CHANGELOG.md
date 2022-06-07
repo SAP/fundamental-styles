@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.133](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.132...v0.24.0-rc.133) (2022-06-07)
+
+
+### Bug Fixes
+
+* **styles:** list icon position ([#3530](https://github.com/SAP/fundamental-styles/issues/3530)) ([d56bf4d](https://github.com/SAP/fundamental-styles/commit/d56bf4d43519ffa2b0503a3bd7b9d61b50d00954))
+
 ## [0.24.0-rc.132](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.131...v0.24.0-rc.132) (2022-06-07)
 
 
