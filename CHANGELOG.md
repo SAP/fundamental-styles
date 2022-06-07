@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.132](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.131...v0.24.0-rc.132) (2022-06-07)
+
+
+### Bug Fixes
+
+* **styles:** carousel outline ([#3529](https://github.com/SAP/fundamental-styles/issues/3529)) ([1728989](https://github.com/SAP/fundamental-styles/commit/17289890a8dbed37040f64e8175dda3fe297ef81))
+
 ## [0.24.0-rc.131](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.130...v0.24.0-rc.131) (2022-06-06)
 
 
