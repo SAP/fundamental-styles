@@ -11,6 +11,7 @@ $fd-carousel-dot-active-size: 0.5rem !default;
 .#{$block} {
   @include fd-reset();
   @include fd-flex(column);
+  @include fd-fiori-focus(0);
 
   width: 100%;
   min-width: 15.5rem;
@@ -23,10 +24,6 @@ $fd-carousel-dot-active-size: 0.5rem !default;
         display: block;
       }
     }
-  }
-
-  @include fd-focus() {
-    outline: 0.0625rem var(--sapContent_FocusStyle);
   }
 
   .#{$block}__content {
