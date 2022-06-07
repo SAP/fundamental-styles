@@ -42,7 +42,7 @@ export const Popover = () => `<div class="fd-popover">
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Phone</label>
-                        <a class="fd-link fd-input" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Address</label>
@@ -63,11 +63,11 @@ export const Popover = () => `<div class="fd-popover">
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Mobile</label>
-                        <a class="fd-link fd-input" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Mobile</label>
-                        <a class="fd-link fd-input" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
                     </div>
                 </div>
             </div>
