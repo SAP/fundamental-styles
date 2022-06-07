@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.134](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.133...v0.24.0-rc.134) (2022-06-07)
+
+
+### Bug Fixes
+
+* **styles:** new time line height [ci visual] ([#3514](https://github.com/SAP/fundamental-styles/issues/3514)) ([ecc2f3c](https://github.com/SAP/fundamental-styles/commit/ecc2f3ca982b9b31e5de5cf95df74b9373b0acc2))
+
 ## [0.24.0-rc.133](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.132...v0.24.0-rc.133) (2022-06-07)
 
 
