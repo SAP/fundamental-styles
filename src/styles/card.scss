@@ -4,6 +4,7 @@
 $block: #{$fd-namespace}-card;
 $object-status: #{$fd-namespace}-object-status;
 $numeric-content: #{$fd-namespace}-numeric-content;
+$list: #{$fd-namespace}-list;
 
 $fd-card-header-border: var(--fdCard_Header_Border_Bottom) !default;
 $fd-card-border-radius: var(--fdCard_Border_Radius) !default;
@@ -326,6 +327,15 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     &:last-child {
       border-bottom-left-radius: $fd-card-border-radius;
       border-bottom-right-radius: $fd-card-border-radius;
+
+      .#{$list}__item:last-of-type {
+        @include fd-focus() {
+          &::before {
+            border-bottom-left-radius: $fd-card-border-radius;
+            border-bottom-right-radius: $fd-card-border-radius;
+          }
+        }
+      }
     }
 
     &:first-child {
