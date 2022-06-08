@@ -20,9 +20,9 @@ $color-accents: (
   "3": ("color": var(--sapIndicationColor_3), "visited": var(--sapIndicationColor_3)),
   "4": ("color": var(--sapIndicationColor_4), "visited": var(--sapIndicationColor_4)),
   "5": ("color": var(--sapIndicationColor_5), "visited": var(--sapIndicationColor_5)),
-  "6": ("color": var(--sapAccentColor7), "visited": var(--sapAccentColor7)),
-  "7": ("color": var(--sapAccentColor9), "visited": var(--sapAccentColor9)),
-  "8": ("color": var(--sapAccentColor4), "visited": var(--sapAccentColor4))
+  "6": ("color": var(--sapIndicationColor_6), "visited": var(--sapIndicationColor_6)),
+  "7": ("color": var(--sapIndicationColor_7), "visited": var(--sapIndicationColor_7)),
+  "8": ("color": var(--sapIndicationColor_8), "visited": var(--sapIndicationColor_8)),
 );
 
 $inverted-color-states: (
@@ -109,10 +109,33 @@ $inverted-color-accents: (
   ),
 );
 
+// @include fd-focus() {
+//   // outline-offset: ;
+//   // outline-width: ;
+//   // outline-color: ;
+//   // outline-style: ;
+//   background-color: var(--sapContent_FocusColor);//#0a55ef;//
+//   color: var(--sapContent_ContrastTextColor);
+//   border-radius: 0.25rem;
+//   outline: 0.125rem var(--sapContent_FocusColor);//#0a55ef;//
+//   text-shadow: none;
+//   .#{$block}__text{
+//     text-decoration: underline;
+//   }
+// }
+
 @mixin fd-object-status-icon-selector() {
   .#{$block}__icon {
     @include fd-icon-selector() {
       @content;
+    }
+  }
+
+  @include fd-focus () {
+    .#{$block}__icon {
+      @include fd-icon-selector() {
+        color: var(--sapContent_ContrastTextColor);
+      }
     }
   }
 }
@@ -195,7 +218,6 @@ $inverted-color-accents: (
   $fd-object-status-text-neutral: var(--sapNeutralTextColor);
 
   // INVERTED OBJECT STATUS VARIABLES
-  $fd-object-status-inverted-border-radius: var(--sapElement_BorderCornerRadius) !default;
   $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
   $fd-object-status-inverted-padding-empty: 0 0.25rem !default;
   $fd-object-status-inverted-min-height: 1rem !default;
@@ -248,6 +270,12 @@ $inverted-color-accents: (
         padding-left: 0;
       }
     }
+
+    @include fd-focus () {
+      @include fd-icon-element-base() {
+        color: var(--sapContent_ContrastTextColor);
+      }
+    }
   }
 
   @include fd-rtl() {
@@ -295,7 +323,19 @@ $inverted-color-accents: (
 
   // CLICKABLE OBJECT STATUS
   &--link {
-    @include fd-fiori-focus(0.0625rem);
+    padding: 0.0625rem;
+    // @include fd-fiori-focus(0.0625rem);
+
+    @include fd-focus() {
+      background-color: var(--sapContent_FocusColor);
+      color: var(--sapContent_ContrastTextColor);
+      border-radius: 0.25rem;
+      outline: 0.125rem var(--sapContent_FocusColor);
+      text-shadow: none;
+      .#{$block}__text {
+        text-decoration: underline;
+      }
+    }
 
     text-decoration: none;
     cursor: pointer;
@@ -331,7 +371,7 @@ $inverted-color-accents: (
     width: auto;
     max-width: 100%;
     padding: $fd-object-status-inverted-padding;
-    border-radius: $fd-object-status-inverted-border-radius;
+    border-radius: var(--fdObject_Status_Inverted_Border_Radius);
     font-size: var(--sapFontSmallSize);
     font-weight: $fd-object-status-inverted-text-font-weight;
     border-width: var(--fdInverted_Object_Border_Width);

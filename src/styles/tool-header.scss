@@ -3,6 +3,41 @@
 
 $block: #{$fd-namespace}-tool-header;
 
+:root {
+  --fdTool_Header_Backgroung_Color: var(--sapShellColor);
+  --fdTool_Header_Product_Name_Font_Height: bold;
+  --fdTool_Header_Text_Color: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Default: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Contrast: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Icon_Color_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Icon_Color_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Icon_Color_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Icon_Color_Inverted_Default: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Inverted_Contrast: var(--sapShell_TextColor);
+  --fdTool_Header_Icon_Color_Inverted_Positive: var(--sapTextColor);
+  --fdTool_Header_Icon_Color_Inverted_Critical: var(--sapTextColor);
+  --fdTool_Header_Icon_Color_Inverted_Negative: var(--sapTextColor);
+  --fdTool_Header_Icon_Color_Inverted_Neutral: var(--sapTextColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Default: transparent;
+  --fdTool_Header_Icon_Background_Color_Inverted_Contrast: transparent;
+  --fdTool_Header_Icon_Background_Color_Inverted_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Icon_Background_Color_Inverted_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Object_Status_Color_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Object_Status_Color_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Object_Status_Color_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Object_Status_Color_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Object_Status_Color_Informative: var(--sapShell_InformativeColor);
+  --fdTool_Header_Object_Status_Text_Color_Inverted: var(--sapTextColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Positive: var(--sapShell_PositiveColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Critical: var(--sapShell_CriticalColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Negative: var(--sapShell_NegativeColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Neutral: var(--sapShell_NeutralColor);
+  --fdTool_Header_Object_Status_Background_Color_Inverted_Informative: var(--sapShell_InformativeColor);
+}
+
 $fd-tool-header-responsive-paddings: (
   'sm':  ('padding': 0 1rem),
   'md':  ('padding': 0 2rem),
@@ -71,9 +106,6 @@ $fd-tool-header-object-status-semantic-values: (
   $fd-shellbar-background: transparent !default;
   $fd-shellbar-hover-background: var(--sapShell_Hover_Background) !default;
 
-  // Paddings
-  $fd-shellbar-item-spacing: 0.5rem !default;
-
   @include fd-reset();
 
   @include fd-flex-vertical-center() {
@@ -83,7 +115,7 @@ $fd-tool-header-object-status-semantic-values: (
   width: 100%;
   padding: var(--fdTool_Header_Padding);
   height: var(--fdTool_Header_Height);
-  background: var(--sapShellColor);
+  background: var(--fdTool_Header_Backgroung_Color);
   box-shadow: var(--fdTool_Header_Box_Shadow);
 
   // ELEMENTS
@@ -94,7 +126,7 @@ $fd-tool-header-object-status-semantic-values: (
 
   &__element {
     @include fd-reset();
-    @include fd-set-margin-left($fd-shellbar-item-spacing);
+    @include fd-set-margin-left(--fdTool_Header_Elements_Right_Margin);
 
     @include fd-flex-center() {
       flex-shrink: 0;
@@ -120,7 +152,7 @@ $fd-tool-header-object-status-semantic-values: (
   .#{$block}__text {
     @include fd-ellipsis();
 
-    color: var(--sapShell_TextColor);
+    color: var(--fdTool_Header_Text_Color);
   }
 
   .#{$block}__label {
@@ -128,16 +160,16 @@ $fd-tool-header-object-status-semantic-values: (
     @include fd-reset-margins();
 
     align-self: center;
-    color: var(--sapShell_TextColor);
+    color: var(--fdTool_Header_Text_Color);
   }
 
   .#{$block}__title {
     @include fd-ellipsis();
     @include fd-set-paddings-x-equal(0.625rem);
 
-    font-weight: bold;
-    color: var(--sapShell_TextColor);
-    font-size: var(--fdTool_Header_Product_Name_Font-Size);
+    font-weight: var(--fdTool_Header_Product_Name_Font_Height);
+    color: var(--fdTool_Header_Text_Color);
+    font-size: var(--fdTool_Header_Product_Name_Font_Size);
   }
 
   &__button {
@@ -145,13 +177,11 @@ $fd-tool-header-object-status-semantic-values: (
     border: var(--fdShellbar_Button_Border);
     color: var(--sapShell_InteractiveTextColor);
 
-    &:not(.#{$block}__button--menu) {
-      padding: 0;
-    }
-
     @include fd-hover() {
       background: $fd-shellbar-hover-background;
       box-shadow: var(--fdShellbar_Button_Hover_Shadow);
+      color: var(--sapShell_InteractiveTextColor);
+      border: var(--fdShellbar_Button_Border);
 
       @include fd-disabled() {
         background: $fd-shellbar-background;

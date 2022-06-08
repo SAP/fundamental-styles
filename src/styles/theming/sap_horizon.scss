@@ -13,6 +13,7 @@
 @import "./common/wizard/sap_horizon";
 @import "./common/panel/sap_horizon";
 @import "./common/carousel/sap_horizon";
+@import "./common/tool-header/sap_horizon";
 
 :root {
   /* Switch */
@@ -330,37 +331,6 @@
   --fdToolbar_Auto_Background: var(--sapToolbar_Background);
   --fdToolbar_Solid_Background: var(--sapToolbar_Background);
 
-  /* Tool Header */
-  --fdTool_Header_Icon_Color_Default: var(--sapShell_TextColor);
-  --fdTool_Header_Icon_Color_Contrast: var(--sapShell_TextColor);
-  --fdTool_Header_Icon_Color_Positive: var(--sapShell_PositiveColor);
-  --fdTool_Header_Icon_Color_Critical: var(--sapShell_CriticalColor);
-  --fdTool_Header_Icon_Color_Negative: var(--sapShell_NegativeColor);
-  --fdTool_Header_Icon_Color_Neutral: var(--sapShell_NeutralColor);
-  --fdTool_Header_Icon_Color_Inverted_Default: var(--sapShell_TextColor);
-  --fdTool_Header_Icon_Color_Inverted_Contrast: var(--sapShell_TextColor);
-  --fdTool_Header_Icon_Color_Inverted_Positive: var(--sapTextColor);
-  --fdTool_Header_Icon_Color_Inverted_Critical: var(--sapTextColor);
-  --fdTool_Header_Icon_Color_Inverted_Negative: var(--sapTextColor);
-  --fdTool_Header_Icon_Color_Inverted_Neutral: var(--sapTextColor);
-  --fdTool_Header_Icon_Background_Color_Inverted_Default: transparent;
-  --fdTool_Header_Icon_Background_Color_Inverted_Contrast: transparent;
-  --fdTool_Header_Icon_Background_Color_Inverted_Positive: var(--sapShell_PositiveColor);
-  --fdTool_Header_Icon_Background_Color_Inverted_Critical: var(--sapShell_CriticalColor);
-  --fdTool_Header_Icon_Background_Color_Inverted_Negative: var(--sapShell_NegativeColor);
-  --fdTool_Header_Icon_Background_Color_Inverted_Neutral: var(--sapShell_NeutralColor);
-  --fdTool_Header_Object_Status_Color_Positive: var(--sapShell_PositiveColor);
-  --fdTool_Header_Object_Status_Color_Critical: var(--sapShell_CriticalColor);
-  --fdTool_Header_Object_Status_Color_Negative: var(--sapShell_NegativeColor);
-  --fdTool_Header_Object_Status_Color_Neutral: var(--sapShell_NeutralColor);
-  --fdTool_Header_Object_Status_Color_Informative: var(--sapShell_InformativeColor);
-  --fdTool_Header_Object_Status_Text_Color_Inverted: var(--sapTextColor);
-  --fdTool_Header_Object_Status_Background_Color_Inverted_Positive: var(--sapShell_PositiveColor);
-  --fdTool_Header_Object_Status_Background_Color_Inverted_Critical: var(--sapShell_CriticalColor);
-  --fdTool_Header_Object_Status_Background_Color_Inverted_Negative: var(--sapShell_NegativeColor);
-  --fdTool_Header_Object_Status_Background_Color_Inverted_Neutral: var(--sapShell_NeutralColor);
-  --fdTool_Header_Object_Status_Background_Color_Inverted_Informative: var(--sapShell_InformativeColor);
-
   /* Micro Process Flow */
   --fdMicro_Process_Flow_Icon_Color: var(--sapContent_ContrastIconColor);
 
@@ -465,14 +435,8 @@
   /** Nested List */
   --fdNested_List_Border_Corner_Radius: var(--sapPopover_BorderCornerRadius);
 
-  /** Tool Header **/
-  --fdTool_Header_Height: 3.5rem;
-  --fdTool_Header_Padding: 0 1.5rem;
-  --fdTool_Header_Menu_Padding: 0 1.5rem 0 0.75rem;
-  --fdTool_Header_Box_Shadow: var(--sapContent_Shadow0);
-  --fdTool_Header_Elements_Right_Margin: 0.375rem;
-  --fdTool_Header_Logo_Height: 2rem;
-  --fdTool_Header_Product_Name_Font-Size: 1.125rem;
+  /** Object Status **/
+  --fdObject_Status_Inverted_Border_Radius: 0.25rem;
 
   /** BTP Colors **/
   --btp-Blue1: #ebf8ff;
