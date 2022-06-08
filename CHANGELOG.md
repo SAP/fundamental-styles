@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.136](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.135...v0.24.0-rc.136) (2022-06-08)
+
+
+### Bug Fixes
+
+* **styles:** safari border radius [ci visual] ([#3544](https://github.com/SAP/fundamental-styles/issues/3544)) ([ae6517d](https://github.com/SAP/fundamental-styles/commit/ae6517d4a1d38114341d408ffa0a4deda1e9e6b9))
+
 ## [0.24.0-rc.135](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.134...v0.24.0-rc.135) (2022-06-07)
 
 
