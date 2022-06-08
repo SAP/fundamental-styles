@@ -98,7 +98,7 @@
     "colors": "1.4.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
-    "cssnano": "5.1.7",
+    "cssnano": "5.1.11",
     "eslint": "^7.25.0",
     "eslint-plugin-storybook": "^0.5.10",
     "fs-extra": "^10.0.0",
