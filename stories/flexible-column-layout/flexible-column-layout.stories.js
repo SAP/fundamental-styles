@@ -20,7 +20,7 @@ Users can expand the column they want to focus on, switch between different layo
 export const ThreeColumnsLayout = () => `
 <div class="fd-flexible-column-layout">
     <div class="fd-flexible-column-layout__column" style="width: 25%">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-7"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
     </div>
     <div class="fd-flexible-column-layout__separator">
         <button class="fd-button fd-button--compact fd-button--transparent fd-flexible-column-layout__button"
@@ -29,7 +29,7 @@ export const ThreeColumnsLayout = () => `
         </button>
     </div>
     <div class="fd-flexible-column-layout__column" style="width: 50%">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-8"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
     </div>
     <div class="fd-flexible-column-layout__separator">
         <button class="fd-button fd-button--compact fd-button--transparent fd-flexible-column-layout__button"
@@ -38,7 +38,7 @@ export const ThreeColumnsLayout = () => `
         </button>
     </div>
     <div class="fd-flexible-column-layout__column" style="width: 25%">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-9"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
     </div>
 </div>`;
 ThreeColumnsLayout.parameters = {
@@ -57,7 +57,7 @@ export const TwoColumnsLayout = () => `
 <div style="max-width: 1200px">
     <div class="fd-flexible-column-layout">
         <div class="fd-flexible-column-layout__column" style="width: 33%">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-9"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
         </div>
         <div class="fd-flexible-column-layout__separator">
             <button class="fd-button fd-button--compact fd-button--transparent fd-flexible-column-layout__button"
@@ -66,7 +66,7 @@ export const TwoColumnsLayout = () => `
             </button>
         </div>
         <div class="fd-flexible-column-layout__column" style="width: 67%">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-8"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
         </div>
         <div class="fd-flexible-column-layout__separator">
             <button class="fd-button fd-button--compact fd-button--transparent fd-flexible-column-layout__button"
@@ -75,7 +75,7 @@ export const TwoColumnsLayout = () => `
             </button>
         </div>
         <div class="fd-flexible-column-layout__column fd-flexible-column-layout__column--hidden" style="width: 0">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-7"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
         </div>
     </div>
 </div>`;
@@ -95,7 +95,7 @@ export const OneColumnsLayout = () => `
 <div style="max-width: 600px">
     <div class="fd-flexible-column-layout">
         <div class="fd-flexible-column-layout__column fd-flexible-column-layout__column--hidden" style="width: 0">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-9"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
         </div>
         <div class="fd-flexible-column-layout__separator">
             <button class="fd-button fd-button--compact fd-button--transparent fd-flexible-column-layout__button"
@@ -104,7 +104,7 @@ export const OneColumnsLayout = () => `
             </button>
         </div>
         <div class="fd-flexible-column-layout__column" style="width: 100%">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-8"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
         </div>
         <div class="fd-flexible-column-layout__separator">
             <button class="fd-button fd-button--compact fd-button--transparent fd-flexible-column-layout__button"
@@ -113,7 +113,7 @@ export const OneColumnsLayout = () => `
             </button>
         </div>
         <div class="fd-flexible-column-layout__column fd-flexible-column-layout__column--hidden" style="width: 0">
-            <div class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-7"></div>
+            <div class="docs-layout-grid-bg--tall"></div>
         </div>
     </div>
 </div>`;
