@@ -82,13 +82,7 @@ export const CozyAndCompact = () => `<div style="display:flex;justify-content:sp
                             <span class="fd-list__title">Watermelon</span>
                         </li>
                         <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Rockmelon</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
                             <span class="fd-list__title">Honeydew</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Apple</span>
                         </li>
                     </ul>
                 </div>
@@ -213,13 +207,7 @@ export const AsFormItem = () => `<div style="height:700px">
                             <span class="fd-list__title">Watermelon</span>
                         </li>
                         <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Rockmelon</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
                             <span class="fd-list__title">Honeydew</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Apple</span>
                         </li>
                     </ul>
                 </div>
