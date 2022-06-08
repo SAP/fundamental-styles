@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.137](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.136...v0.24.0-rc.137) (2022-06-08)
+
+
+### Bug Fixes
+
+* **styles:** fix for ngx ([#3557](https://github.com/SAP/fundamental-styles/issues/3557)) ([d8ce8d9](https://github.com/SAP/fundamental-styles/commit/d8ce8d9b4b32e2c470d454c385496b0b62b217c9))
+
 ## [0.24.0-rc.136](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.135...v0.24.0-rc.136) (2022-06-08)
 
 
