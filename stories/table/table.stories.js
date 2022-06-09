@@ -1098,31 +1098,31 @@ export const AdvancedToolbar = () => `<div class="fd-dialog" id="filter-dialog-e
                     <input aria-label="checkbox" type="checkbox" checked
                         class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ezFD1">
                     <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ezFD1">
-                        <span class="fd-list__title">All</span>
+                        <div class="fd-checkbox__label-container"><span class="fd-checkbox__text">All</span></div>
                     </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
                     <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="GGi4ez641">
                     <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="GGi4ez641">
-                        <span class="fd-list__title">Name</span>
+                        <div class="fd-checkbox__label-container"><span class="fd-checkbox__text">Name</span></div>
                     </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
                     <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4FGFG612">
                     <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4FGFG612">
-                        <span class="fd-list__title">Status</span>
+                        <div class="fd-checkbox__label-container"><span class="fd-checkbox__text">Status</span></div>
                     </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
                     <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4e88614">
                     <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4e88614">
-                        <span class="fd-list__title">Price</span>
+                        <div class="fd-checkbox__label-container"><span class="fd-checkbox__text">Price</span></div>
                     </label>
                 </li>
                 <li class="fd-list__item is-selected" role="option">
                     <input aria-label="checkbox" type="checkbox" checked class="fd-checkbox fd-checkbox--compact fd-list__input" id="Ai4egh6024">
                     <label class="fd-checkbox__label fd-checkbox__label--compact fd-list__label" for="Ai4egh6024">
-                        <span class="fd-list__title">Country</span>
+                        <div class="fd-checkbox__label-container"><span class="fd-checkbox__text">Country</span></div>
                     </label>
                 </li>
             </ul>

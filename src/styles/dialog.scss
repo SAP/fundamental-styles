@@ -58,13 +58,6 @@ $menu: #{$fd-namespace}-menu;
 
     @extend %dialog-content;
 
-    .#{$menu}__item:first-child,
-    .#{$menu}__item:first-child .#{$menu}__link::after,
-    .#{$menu}__item:last-child,
-    .#{$menu}__item:last-child .#{$menu}__link::after {
-      border-radius: 0;
-    }
-
     @each $size-label, $size in $fd-dialog-content-padding-x {
       &--#{$size-label} {
         .#{$block}__header.#{$bar},
@@ -81,6 +74,13 @@ $menu: #{$fd-namespace}-menu;
       @extend %dialog-mobile;
 
       .#{$block}__body {
+        border-radius: 0;
+      }
+
+      .#{$menu}__item:first-child,
+      .#{$menu}__item:first-child .#{$menu}__link::after,
+      .#{$menu}__item:last-child,
+      .#{$menu}__item:last-child .#{$menu}__link::after {
         border-radius: 0;
       }
     }

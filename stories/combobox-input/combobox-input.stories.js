@@ -82,13 +82,7 @@ export const CozyAndCompact = () => `<div style="display:flex;justify-content:sp
                             <span class="fd-list__title">Watermelon</span>
                         </li>
                         <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Rockmelon</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
                             <span class="fd-list__title">Honeydew</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Apple</span>
                         </li>
                     </ul>
                 </div>
@@ -213,13 +207,7 @@ export const AsFormItem = () => `<div style="height:700px">
                             <span class="fd-list__title">Watermelon</span>
                         </li>
                         <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Rockmelon</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
                             <span class="fd-list__title">Honeydew</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <span class="fd-list__title">Apple</span>
                         </li>
                     </ul>
                 </div>
@@ -537,7 +525,7 @@ To add text in the \`body\` of the component, simply include your text in the \`
 
 export const Mobile = () => `<div class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
 id="select-dialog-example" style="height:600px">
-    <section role="dialog" aria-labelledby="mobileDialogHeader" class="fd-dialog__content">
+    <section role="dialog" aria-labelledby="mobileDialogHeader" class="fd-dialog__content fd-dialog__content--mobile">
         <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
@@ -588,7 +576,7 @@ id="select-dialog-example" style="height:600px">
             <label id="vegMobileHeader" class="fd-list__group-header">
                 <span class="fd-list__title">Vegetables</span>
             </label>
-            <ul aria-labelledby="vegMobileHeader" class="fd-list fd-list--dropdown" role="listbox">
+            <ul aria-labelledby="vegMobileHeader" class="fd-list fd-list--dropdown fd-list--mobile" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item">
                     <span class="fd-list__title">Tomato</span>
                 </li>
