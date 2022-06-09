@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.142](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.141...v0.24.0-rc.142) (2022-06-09)
+
+
+### Features
+
+* **styles:** some vertical nav improvements for horizon ([#3499](https://github.com/SAP/fundamental-styles/issues/3499)) ([f9fe173](https://github.com/SAP/fundamental-styles/commit/f9fe1730dc14e19633ad4c9f06ca7d9e4b8c8515))
+
 ## [0.24.0-rc.141](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.140...v0.24.0-rc.141) (2022-06-09)
 
 
