@@ -188,6 +188,8 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
       margin-left: 0;
 
       .#{$block}__link {
+        @include fd-set-margin-left($fd-tabs-link-active-line-offset-x);
+
         padding-left: 0;
       }
     }
@@ -315,6 +317,14 @@ $fd-tabs-link-active-line-offset-x: 0.1875rem;
   &--filter {
     .#{$block}__count {
       font-size: var(--sapFontSmallSize);
+    }
+
+    .#{$block}__item {
+      &:first-child {
+        .#{$block}__link {
+          margin: 0;
+        }
+      }
     }
   }
 
