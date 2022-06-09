@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.140](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.139...v0.24.0-rc.140) (2022-06-09)
+
+
+### Bug Fixes
+
+* **styles:** remove overflow: hidden from tool header elements [ci visual] ([#3515](https://github.com/SAP/fundamental-styles/issues/3515)) ([e19cf6a](https://github.com/SAP/fundamental-styles/commit/e19cf6a2b374f171d766acd497bb2507865d8672))
+
 ## [0.24.0-rc.139](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.138...v0.24.0-rc.139) (2022-06-09)
 
 
