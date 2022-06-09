@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.139](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.138...v0.24.0-rc.139) (2022-06-09)
+
+
+### Bug Fixes
+
+* **styles:** removed fd-breadcrumb__link element ([#3512](https://github.com/SAP/fundamental-styles/issues/3512)) ([8e218cc](https://github.com/SAP/fundamental-styles/commit/8e218ccfec3f8ee37201a794bf0a46e4d57a972e))
+
 ## [0.24.0-rc.138](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.137...v0.24.0-rc.138) (2022-06-09)
 
 
