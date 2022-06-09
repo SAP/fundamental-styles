@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.141](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.140...v0.24.0-rc.141) (2022-06-09)
+
+
+### Bug Fixes
+
+* **styles:** dialog mobile lists should be in --dialog class [ci visual] ([#3516](https://github.com/SAP/fundamental-styles/issues/3516)) ([520e8a3](https://github.com/SAP/fundamental-styles/commit/520e8a32d43916b359c465fe5e3313f28ded2b7d))
+
 ## [0.24.0-rc.140](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.139...v0.24.0-rc.140) (2022-06-09)
 
 
