@@ -22,10 +22,42 @@ $block: #{$fd-namespace}-vertical-nav;
 
   &--condensed {
     width: 3.25rem;
+
+    .#{$block}__utility-section {
+      .#{$fd-namespace}-list__navigation-item-text {
+        display: none;
+      }
+
+      &::before {
+        width: calc(100% - 1rem);
+      }
+    }
   }
 
   &__main-navigation {
+    .#{$fd-namespace}-list__navigation-item, .#{$fd-namespace}-list__navigation-item--condensed {
+      &:first-child {
+        border-top: var(--fdVerticalNav_Item_Border_Top_Bottom);
+      }
+    }
+  }
+
+  &__main-navigation,
+  &__utility-section {
     @include fd-reset();
+  }
+
+  &__utility-section {
+    margin-top: auto;
+
+    &::before {
+      background-color: var(--sapAccentColor6);
+      width: calc(100% - 2rem);
+      height: 0.0625rem;
+      display: block;
+      margin: 0.25rem auto;
+      content: ' ';
+    }
   }
 
   .#{$block}__group-header {
