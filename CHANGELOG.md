@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.138](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.137...v0.24.0-rc.138) (2022-06-09)
+
+
+### Bug Fixes
+
+* **styles:** first tab padding in tabs component ([#3545](https://github.com/SAP/fundamental-styles/issues/3545)) ([3e5a2e9](https://github.com/SAP/fundamental-styles/commit/3e5a2e93281133d28c7c3065e5ff318b92a2fd97))
+
 ## [0.24.0-rc.137](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.136...v0.24.0-rc.137) (2022-06-08)
 
 
