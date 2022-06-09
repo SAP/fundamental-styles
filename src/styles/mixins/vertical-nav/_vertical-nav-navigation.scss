@@ -45,6 +45,12 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         outline-offset: var(--fdVerticalNav_Item_Focus_Outline_Offset);
       }
 
+      &.#{$blockList}__navigation-item--indicated {
+        @include fd-focus() {
+          outline-offset: var(--fdVerticalNav_Item_Indicated_Outline_Offset);
+        }
+      }
+
       background: transparent;
       height: $fd-list-navigation-item-height;
       position: relative;
@@ -81,13 +87,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
           .#{$blockList}__navigation-item-indicator {
             &::after {
-              margin-right: 0;
-            }
-
-            @include fd-rtl() {
-              &::after {
-                margin-left: 0;
-              }
+              @include fd-set-margin-right(0);
             }
           }
 
@@ -110,7 +110,13 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         }
 
         .#{$blockList} {
-          @include fd-set-margins-x(var(--fdVerticalNav_Expanded_Item_Margin_Left), -1rem);
+          margin-left: var(--fdVerticalNav_Expanded_Item_Margin_Left);
+          margin-right: -1rem;
+
+          @include fd-rtl() {
+            margin-right: var(--fdVerticalNav_Expanded_Item_Margin_Left);
+            margin-left: 0;
+          }
 
           width: auto;
           display: block;
@@ -334,7 +340,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         }
 
         @include fd-focus() {
-          outline-offset: -0.25rem;
+          outline-offset: var(--fdVerticalNav_Item_Indicated_Outline_Offset);
         }
       }
     }
