@@ -241,6 +241,7 @@ $listBlock: #{$fd-namespace}-list;
     .#{$block}__popper--no-arrow {
       box-shadow: none;
       border: none;
+      margin-top: -0.25rem;
     }
   }
 
@@ -281,6 +282,7 @@ $listBlock: #{$fd-namespace}-list;
     &--input-message-group {
       box-shadow: none;
       border: none;
+      margin-top: -0.25rem !important;
     }
 
     &--compact {
