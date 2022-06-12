@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.143](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.142...v0.24.0-rc.143) (2022-06-12)
+
+
+### Bug Fixes
+
+* **docs:** flexible column layout background ([#3546](https://github.com/SAP/fundamental-styles/issues/3546)) ([6c71c3f](https://github.com/SAP/fundamental-styles/commit/6c71c3f20a5580c74766cdf91ee27c2baf1af632))
+
 ## [0.24.0-rc.142](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.141...v0.24.0-rc.142) (2022-06-09)
 
 
