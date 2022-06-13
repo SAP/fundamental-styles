@@ -33,4 +33,8 @@ $fd-form-label-spacing: 0.5rem !default;
       flex: 1;
     }
   }
+
+  .#{$fd-namespace}-form-message:not(:first-child) {
+    margin-top: -0.25rem;
+  }
 }
