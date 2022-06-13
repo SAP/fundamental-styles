@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.145](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.144...v0.24.0-rc.145) (2022-06-13)
+
+
+### Bug Fixes
+
+* **styles:** form message margin ([#3556](https://github.com/SAP/fundamental-styles/issues/3556)) ([63f8079](https://github.com/SAP/fundamental-styles/commit/63f8079da2717cb70b00b8a23f642d0b72d83b52))
+
 ## [0.24.0-rc.144](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.143...v0.24.0-rc.144) (2022-06-13)
 
 ## [0.24.0-rc.143](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.142...v0.24.0-rc.143) (2022-06-12)
