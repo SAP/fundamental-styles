@@ -40,6 +40,44 @@ $block: #{$fd-namespace}-rating-indicator;
         width: calc(#{$icon-font-size} * 0.5);
       }
     }
+
+    @include fd-rating-indicator-labels-after-checked() {
+      width: calc((var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio)) * 0.5);
+    }
+  }
+
+  @include fd-disabled() {
+    @include fd-rating-indicator-first-half-label-after-checked() {
+      width: calc(var(--fontSize) * 0.5);
+
+      &::before {
+        font-size: var(--fontSize);
+      }
+      .#{$block}__label {
+        &-unrated {
+          &::before {
+            font-size: var(--fontSize);
+          }
+        }
+      }
+    }
+
+    @include fd-rating-indicator-labels-after-checked() {
+      width: calc((var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio)) * 0.5);
+      .#{$block}__label {
+        &-unrated {
+          &::before {
+            font-size: calc(var(--fontSize) * var(--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio));
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin fd-rating-indicator-first-half-label-after-checked() {
+  .#{$block}__input:nth-child(4n + 3):checked + .#{$block}__label + .#{$block}__input + .#{$block}__label {
+    @content;
   }
 }
 

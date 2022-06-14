@@ -1,4 +1,24 @@
 
+## [0.24.0](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.149...v0.24.0) (2022-06-14)
+
+## [0.24.0-rc.149](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.148...v0.24.0-rc.149) (2022-06-14)
+
+
+### Bug Fixes
+
+* **styles:** object marker focus state & styles refactoring ([#3587](https://github.com/SAP/fundamental-styles/issues/3587)) ([40314b2](https://github.com/SAP/fundamental-styles/commit/40314b2cfeb1008f0e838db93cb892997a8ef3a3))
+
+## [0.24.0-rc.148](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.147...v0.24.0-rc.148) (2022-06-14)
+
+## [0.24.0-rc.147](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.146...v0.24.0-rc.147) (2022-06-14)
+
+## [0.24.0-rc.146](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.145...v0.24.0-rc.146) (2022-06-14)
+
+
+### Bug Fixes
+
+* **styles:** rating indicator for horizon fixes [ci visual] ([#3563](https://github.com/SAP/fundamental-styles/issues/3563)) ([520bbcd](https://github.com/SAP/fundamental-styles/commit/520bbcd3e89748e12b51f66b0023ce3481ccc39c))
+
 ## [0.24.0-rc.145](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.144...v0.24.0-rc.145) (2022-06-13)
 
 

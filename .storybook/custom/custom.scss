@@ -209,6 +209,38 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
   }
 }
 
+/* older versions links */
+.fddocs-versions {
+  display: flex;
+  flex-direction: row;
+
+  h4 {
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.fddocs-community,
+.fddocs-versions {
+  /* stylelint-disable no-descending-specificity */
+  a {
+    color: #0e7290;
+    text-decoration: none;
+
+    &:hover {
+      color: #404040;
+    }
+  }
+}
+
 /* community social links */
 .fddocs-community {
   display: flex;
@@ -238,18 +270,7 @@ $heading-toc-spacer: $docs-hd-tp + $docs-hd-bp + $docs-hd-ch + $docs-tm;
     font-size: 16px;
   }
 
-  /* stylelint-disable no-descending-specificity */
-  a {
-    color: #0e7290;
-    text-decoration: none;
-
-    &:hover {
-      color: #404040;
-    }
-  }
-
   /* stylelint-enable no-descending-specificity */
-
   img {
     height: 18px;
     vertical-align: middle;
