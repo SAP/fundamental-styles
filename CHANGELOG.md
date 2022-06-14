@@ -1,4 +1,11 @@
 
+## [0.24.0-rc.149](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.148...v0.24.0-rc.149) (2022-06-14)
+
+
+### Bug Fixes
+
+* **styles:** object marker focus state & styles refactoring ([#3587](https://github.com/SAP/fundamental-styles/issues/3587)) ([40314b2](https://github.com/SAP/fundamental-styles/commit/40314b2cfeb1008f0e838db93cb892997a8ef3a3))
+
 ## [0.24.0-rc.148](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.147...v0.24.0-rc.148) (2022-06-14)
 
 ## [0.24.0-rc.147](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.146...v0.24.0-rc.147) (2022-06-14)
