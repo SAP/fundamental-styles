@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-button {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -20,1784 +20,1380 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
   cursor: pointer;
   max-width: 100%;
   position: relative;
   height: 2rem;
-  border-radius: .375rem;
-  padding: .3125rem .75rem
+  border-radius: 0.375rem;
+  padding: 0.3125rem 0.75rem;
 }
-.fn-button::after,
-.fn-button::before {
+.fn-button::before, .fn-button::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-button [class*=sap-icon] {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-button .fn-button__text {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-button [class*=sap-icon] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1.125rem;
   height: 1.125rem;
-  font-size: 1rem
+  font-size: 1rem;
 }
 .fn-button [class*=sap-icon]::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+      -ms-flex-align: center;
+          align-items: center;
 }
 .fn-button [class*=sap-icon] + .fn-button__text {
-  margin-left: .25rem
+  margin-left: 0.25rem;
 }
-.fn-button [class*=sap-icon] + .fn-button__text[dir=rtl],
-[dir=rtl] .fn-button [class*=sap-icon] + .fn-button__text {
-  margin-right: .25rem;
-  margin-left: 0
+[dir=rtl] .fn-button [class*=sap-icon] + .fn-button__text, .fn-button [class*=sap-icon] + .fn-button__text[dir=rtl] {
+  margin-right: 0.25rem;
+  margin-left: 0;
 }
 .fn-button__text {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-weight: 700;
-  line-height: 1.375rem
+  font-weight: bold;
+  line-height: 1.375rem;
 }
-.fn-button__text::after,
-.fn-button__text::before {
+.fn-button__text::before, .fn-button__text::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-button__text + [class*=sap-icon] {
-  margin-left: .25rem
+  margin-left: 0.25rem;
 }
-.fn-button__text + [class*=sap-icon][dir=rtl],
-[dir=rtl] .fn-button__text + [class*=sap-icon] {
-  margin-right: .25rem;
-  margin-left: 0
+[dir=rtl] .fn-button__text + [class*=sap-icon], .fn-button__text + [class*=sap-icon][dir=rtl] {
+  margin-right: 0.25rem;
+  margin-left: 0;
 }
-.fn-button.is-hover,
-.fn-button:hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  background: #fff
+.fn-button:hover, .fn-button.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.is-hover [class*=sap-icon],
-.fn-button:hover [class*=sap-icon] {
-  color: #0057d2
+.fn-button:hover [class*=sap-icon], .fn-button.is-hover [class*=sap-icon] {
+  color: #0057d2;
 }
-.fn-button.is-hover .fn-button__text,
-.fn-button:hover .fn-button__text {
-  color: #0057d2
+.fn-button:hover .fn-button__text, .fn-button.is-hover .fn-button__text {
+  color: #0057d2;
 }
-.fn-button.is-hover.is-active,
-.fn-button.is-hover:active,
-.fn-button:hover.is-active,
-.fn-button:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button:hover:active, .fn-button:hover.is-active, .fn-button.is-hover:active, .fn-button.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.is-hover.is-active [class*=sap-icon],
-.fn-button.is-hover:active [class*=sap-icon],
-.fn-button:hover.is-active [class*=sap-icon],
-.fn-button:hover:active [class*=sap-icon] {
-  color: #0040b0
+.fn-button:hover:active [class*=sap-icon], .fn-button:hover.is-active [class*=sap-icon], .fn-button.is-hover:active [class*=sap-icon], .fn-button.is-hover.is-active [class*=sap-icon] {
+  color: #0040b0;
 }
-.fn-button.is-hover.is-active .fn-button__text,
-.fn-button.is-hover:active .fn-button__text,
-.fn-button:hover.is-active .fn-button__text,
-.fn-button:hover:active .fn-button__text {
-  color: #0040b0
+.fn-button:hover:active .fn-button__text, .fn-button:hover.is-active .fn-button__text, .fn-button.is-hover:active .fn-button__text, .fn-button.is-hover.is-active .fn-button__text {
+  color: #0040b0;
 }
-.fn-button.is-active,
-.fn-button:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button:active, .fn-button.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.is-active [class*=sap-icon],
-.fn-button:active [class*=sap-icon] {
-  color: #0040b0
+.fn-button:active [class*=sap-icon], .fn-button.is-active [class*=sap-icon] {
+  color: #0040b0;
 }
-.fn-button.is-active .fn-button__text,
-.fn-button:active .fn-button__text {
-  color: #0040b0
+.fn-button:active .fn-button__text, .fn-button.is-active .fn-button__text {
+  color: #0040b0;
 }
 .fn-button.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  outline: 0;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  outline: none;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button.is-focus [class*=sap-icon] {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-button.is-focus .fn-button__text {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-button:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff;
-  outline: 0
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
+  outline: none;
 }
 .fn-button:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-button:focus:not(.focus-visible) .fn-button__text {
-  color: #0070f2
+  color: #0070f2;
 }
-.fn-button:focus:not(.focus-visible).is-hover,
-.fn-button:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  background: #fff
+.fn-button:focus:not(.focus-visible):hover, .fn-button:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #0057d2
+.fn-button:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #0057d2;
 }
-.fn-button:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button:focus:not(.focus-visible):hover .fn-button__text {
-  color: #0057d2
+.fn-button:focus:not(.focus-visible):hover .fn-button__text, .fn-button:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #0057d2;
 }
-.fn-button:focus:not(.focus-visible).is-hover.is-active,
-.fn-button:focus:not(.focus-visible).is-hover:active,
-.fn-button:focus:not(.focus-visible):hover.is-active,
-.fn-button:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button:focus:not(.focus-visible):hover:active, .fn-button:focus:not(.focus-visible):hover.is-active, .fn-button:focus:not(.focus-visible).is-hover:active, .fn-button:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #0040b0
+.fn-button:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #0040b0;
 }
-.fn-button:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #0040b0
+.fn-button:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #0040b0;
 }
-.fn-button.focus-visible,
-.fn-button.is-focus {
+.fn-button.focus-visible, .fn-button.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  outline: 0;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  outline: none;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button.focus-visible [class*=sap-icon],
-.fn-button.is-focus [class*=sap-icon] {
-  color: #0070f2
+.fn-button.focus-visible [class*=sap-icon], .fn-button.is-focus [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.focus-visible .fn-button__text,
-.fn-button.is-focus .fn-button__text {
-  color: #0070f2
+.fn-button.focus-visible .fn-button__text, .fn-button.is-focus .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.is-disabled,
-.fn-button:disabled,
-.fn-button[aria-disabled=true] {
+.fn-button[aria-disabled=true], .fn-button:disabled, .fn-button.is-disabled {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
+          box-shadow: none;
+  background: #ffffff;
   cursor: not-allowed;
-  opacity: .4
+  opacity: 0.4;
 }
-.fn-button.is-disabled [class*=sap-icon],
-.fn-button:disabled [class*=sap-icon],
-.fn-button[aria-disabled=true] [class*=sap-icon] {
-  color: #0070f2
+.fn-button[aria-disabled=true] [class*=sap-icon], .fn-button:disabled [class*=sap-icon], .fn-button.is-disabled [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.is-disabled .fn-button__text,
-.fn-button:disabled .fn-button__text,
-.fn-button[aria-disabled=true] .fn-button__text {
-  color: #0070f2
+.fn-button[aria-disabled=true] .fn-button__text, .fn-button:disabled .fn-button__text, .fn-button.is-disabled .fn-button__text {
+  color: #0070f2;
 }
 .fn-button--icon-only {
   width: 2rem;
-  padding: .4375rem
+  padding: 0.4375rem;
 }
 .fn-button--emphasized {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #0070f2
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #0070f2;
 }
 .fn-button--emphasized [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--emphasized .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--emphasized.is-hover,
-.fn-button--emphasized:hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  background: #0057d2
+.fn-button--emphasized:hover, .fn-button--emphasized.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+  background: #0057d2;
 }
-.fn-button--emphasized.is-hover [class*=sap-icon],
-.fn-button--emphasized:hover [class*=sap-icon] {
-  color: #fff
+.fn-button--emphasized:hover [class*=sap-icon], .fn-button--emphasized.is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--emphasized.is-hover .fn-button__text,
-.fn-button--emphasized:hover .fn-button__text {
-  color: #fff
+.fn-button--emphasized:hover .fn-button__text, .fn-button--emphasized.is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--emphasized.is-hover.is-active,
-.fn-button--emphasized.is-hover:active,
-.fn-button--emphasized:hover.is-active,
-.fn-button--emphasized:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #0040b0
+.fn-button--emphasized:hover:active, .fn-button--emphasized:hover.is-active, .fn-button--emphasized.is-hover:active, .fn-button--emphasized.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #0040b0;
 }
-.fn-button--emphasized.is-hover.is-active [class*=sap-icon],
-.fn-button--emphasized.is-hover:active [class*=sap-icon],
-.fn-button--emphasized:hover.is-active [class*=sap-icon],
-.fn-button--emphasized:hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--emphasized:hover:active [class*=sap-icon], .fn-button--emphasized:hover.is-active [class*=sap-icon], .fn-button--emphasized.is-hover:active [class*=sap-icon], .fn-button--emphasized.is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--emphasized.is-hover.is-active .fn-button__text,
-.fn-button--emphasized.is-hover:active .fn-button__text,
-.fn-button--emphasized:hover.is-active .fn-button__text,
-.fn-button--emphasized:hover:active .fn-button__text {
-  color: #fff
+.fn-button--emphasized:hover:active .fn-button__text, .fn-button--emphasized:hover.is-active .fn-button__text, .fn-button--emphasized.is-hover:active .fn-button__text, .fn-button--emphasized.is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--emphasized.is-active,
-.fn-button--emphasized:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #0040b0
+.fn-button--emphasized:active, .fn-button--emphasized.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #0040b0;
 }
-.fn-button--emphasized.is-active [class*=sap-icon],
-.fn-button--emphasized:active [class*=sap-icon] {
-  color: #fff
+.fn-button--emphasized:active [class*=sap-icon], .fn-button--emphasized.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--emphasized.is-active .fn-button__text,
-.fn-button--emphasized:active .fn-button__text {
-  color: #fff
+.fn-button--emphasized:active .fn-button__text, .fn-button--emphasized.is-active .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0070f2;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--emphasized:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #0070f2
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #0070f2;
 }
 .fn-button--emphasized:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--emphasized:focus:not(.focus-visible) .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--emphasized:focus:not(.focus-visible).is-hover,
-.fn-button--emphasized:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  background: #0057d2
+.fn-button--emphasized:focus:not(.focus-visible):hover, .fn-button--emphasized:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+  background: #0057d2;
 }
-.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #fff
+.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text {
-  color: #fff
+.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text, .fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--emphasized:focus:not(.focus-visible).is-hover:active,
-.fn-button--emphasized:focus:not(.focus-visible):hover.is-active,
-.fn-button--emphasized:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #0040b0
+.fn-button--emphasized:focus:not(.focus-visible):hover:active, .fn-button--emphasized:focus:not(.focus-visible):hover.is-active, .fn-button--emphasized:focus:not(.focus-visible).is-hover:active, .fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #0040b0;
 }
-.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #fff
+.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--emphasized.focus-visible,
-.fn-button--emphasized.is-focus {
+.fn-button--emphasized.focus-visible, .fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0070f2;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--emphasized.focus-visible [class*=sap-icon],
-.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+.fn-button--emphasized.focus-visible [class*=sap-icon], .fn-button--emphasized.is-focus [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--emphasized.focus-visible .fn-button__text,
-.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+.fn-button--emphasized.focus-visible .fn-button__text, .fn-button--emphasized.is-focus .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--emphasized.is-disabled,
-.fn-button--emphasized:disabled,
-.fn-button--emphasized[aria-disabled=true] {
+.fn-button--emphasized[aria-disabled=true], .fn-button--emphasized:disabled, .fn-button--emphasized.is-disabled {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #0070f2
+          box-shadow: none;
+  background: #0070f2;
 }
-.fn-button--emphasized.is-disabled [class*=sap-icon],
-.fn-button--emphasized:disabled [class*=sap-icon],
-.fn-button--emphasized[aria-disabled=true] [class*=sap-icon] {
-  color: #fff
+.fn-button--emphasized[aria-disabled=true] [class*=sap-icon], .fn-button--emphasized:disabled [class*=sap-icon], .fn-button--emphasized.is-disabled [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--emphasized.is-disabled .fn-button__text,
-.fn-button--emphasized:disabled .fn-button__text,
-.fn-button--emphasized[aria-disabled=true] .fn-button__text {
-  color: #fff
+.fn-button--emphasized[aria-disabled=true] .fn-button__text, .fn-button--emphasized:disabled .fn-button__text, .fn-button--emphasized.is-disabled .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--secondary {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #f5f6f7
+          box-shadow: none;
+  background: #f5f6f7;
 }
 .fn-button--secondary [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--secondary .fn-button__text {
-  color: #475e75
+  color: #475e75;
 }
-.fn-button--secondary.is-hover,
-.fn-button--secondary:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--secondary:hover, .fn-button--secondary.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--secondary.is-hover [class*=sap-icon],
-.fn-button--secondary:hover [class*=sap-icon] {
-  color: #354a5f
+.fn-button--secondary:hover [class*=sap-icon], .fn-button--secondary.is-hover [class*=sap-icon] {
+  color: #354a5f;
 }
-.fn-button--secondary.is-hover .fn-button__text,
-.fn-button--secondary:hover .fn-button__text {
-  color: #354a5f
+.fn-button--secondary:hover .fn-button__text, .fn-button--secondary.is-hover .fn-button__text {
+  color: #354a5f;
 }
-.fn-button--secondary.is-hover.is-active,
-.fn-button--secondary.is-hover:active,
-.fn-button--secondary:hover.is-active,
-.fn-button--secondary:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--secondary:hover:active, .fn-button--secondary:hover.is-active, .fn-button--secondary.is-hover:active, .fn-button--secondary.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--secondary.is-hover.is-active [class*=sap-icon],
-.fn-button--secondary.is-hover:active [class*=sap-icon],
-.fn-button--secondary:hover.is-active [class*=sap-icon],
-.fn-button--secondary:hover:active [class*=sap-icon] {
-  color: #223548
+.fn-button--secondary:hover:active [class*=sap-icon], .fn-button--secondary:hover.is-active [class*=sap-icon], .fn-button--secondary.is-hover:active [class*=sap-icon], .fn-button--secondary.is-hover.is-active [class*=sap-icon] {
+  color: #223548;
 }
-.fn-button--secondary.is-hover.is-active .fn-button__text,
-.fn-button--secondary.is-hover:active .fn-button__text,
-.fn-button--secondary:hover.is-active .fn-button__text,
-.fn-button--secondary:hover:active .fn-button__text {
-  color: #223548
+.fn-button--secondary:hover:active .fn-button__text, .fn-button--secondary:hover.is-active .fn-button__text, .fn-button--secondary.is-hover:active .fn-button__text, .fn-button--secondary.is-hover.is-active .fn-button__text {
+  color: #223548;
 }
-.fn-button--secondary.is-active,
-.fn-button--secondary:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--secondary:active, .fn-button--secondary.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--secondary.is-active [class*=sap-icon],
-.fn-button--secondary:active [class*=sap-icon] {
-  color: #223548
+.fn-button--secondary:active [class*=sap-icon], .fn-button--secondary.is-active [class*=sap-icon] {
+  color: #223548;
 }
-.fn-button--secondary.is-active .fn-button__text,
-.fn-button--secondary:active .fn-button__text {
-  color: #223548
+.fn-button--secondary:active .fn-button__text, .fn-button--secondary.is-active .fn-button__text {
+  color: #223548;
 }
 .fn-button--secondary.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--secondary.is-focus [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--secondary.is-focus .fn-button__text {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--secondary:focus:not(.focus-visible) {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #f5f6f7
+          box-shadow: none;
+  background: #f5f6f7;
 }
 .fn-button--secondary:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--secondary:focus:not(.focus-visible) .fn-button__text {
-  color: #475e75
+  color: #475e75;
 }
-.fn-button--secondary:focus:not(.focus-visible).is-hover,
-.fn-button--secondary:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--secondary:focus:not(.focus-visible):hover, .fn-button--secondary:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--secondary:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--secondary:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #354a5f
+.fn-button--secondary:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--secondary:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #354a5f;
 }
-.fn-button--secondary:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--secondary:focus:not(.focus-visible):hover .fn-button__text {
-  color: #354a5f
+.fn-button--secondary:focus:not(.focus-visible):hover .fn-button__text, .fn-button--secondary:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #354a5f;
 }
-.fn-button--secondary:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--secondary:focus:not(.focus-visible).is-hover:active,
-.fn-button--secondary:focus:not(.focus-visible):hover.is-active,
-.fn-button--secondary:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--secondary:focus:not(.focus-visible):hover:active, .fn-button--secondary:focus:not(.focus-visible):hover.is-active, .fn-button--secondary:focus:not(.focus-visible).is-hover:active, .fn-button--secondary:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--secondary:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--secondary:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--secondary:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--secondary:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #223548
+.fn-button--secondary:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--secondary:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--secondary:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--secondary:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #223548;
 }
-.fn-button--secondary:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--secondary:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--secondary:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--secondary:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #223548
+.fn-button--secondary:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--secondary:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--secondary:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--secondary:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #223548;
 }
-.fn-button--secondary.focus-visible,
-.fn-button--secondary.is-focus {
+.fn-button--secondary.focus-visible, .fn-button--secondary.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--secondary.focus-visible [class*=sap-icon],
-.fn-button--secondary.is-focus [class*=sap-icon] {
-  color: #475e75
+.fn-button--secondary.focus-visible [class*=sap-icon], .fn-button--secondary.is-focus [class*=sap-icon] {
+  color: #475e75;
 }
-.fn-button--secondary.focus-visible .fn-button__text,
-.fn-button--secondary.is-focus .fn-button__text {
-  color: #475e75
+.fn-button--secondary.focus-visible .fn-button__text, .fn-button--secondary.is-focus .fn-button__text {
+  color: #475e75;
 }
-.fn-button--secondary.is-disabled,
-.fn-button--secondary:disabled,
-.fn-button--secondary[aria-disabled=true] {
+.fn-button--secondary[aria-disabled=true], .fn-button--secondary:disabled, .fn-button--secondary.is-disabled {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #f5f6f7
+          box-shadow: none;
+  background: #f5f6f7;
 }
-.fn-button--secondary.is-disabled [class*=sap-icon],
-.fn-button--secondary:disabled [class*=sap-icon],
-.fn-button--secondary[aria-disabled=true] [class*=sap-icon] {
-  color: #475e75
+.fn-button--secondary[aria-disabled=true] [class*=sap-icon], .fn-button--secondary:disabled [class*=sap-icon], .fn-button--secondary.is-disabled [class*=sap-icon] {
+  color: #475e75;
 }
-.fn-button--secondary.is-disabled .fn-button__text,
-.fn-button--secondary:disabled .fn-button__text,
-.fn-button--secondary[aria-disabled=true] .fn-button__text {
-  color: #475e75
+.fn-button--secondary[aria-disabled=true] .fn-button__text, .fn-button--secondary:disabled .fn-button__text, .fn-button--secondary.is-disabled .fn-button__text {
+  color: #475e75;
 }
 .fn-button--secondary.fn-button--emphasized {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #475e75
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #475e75;
 }
 .fn-button--secondary.fn-button--emphasized [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--secondary.fn-button--emphasized .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-hover,
-.fn-button--secondary.fn-button--emphasized:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  background: #354a5f
+.fn-button--secondary.fn-button--emphasized:hover, .fn-button--secondary.fn-button--emphasized.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+  background: #354a5f;
 }
-.fn-button--secondary.fn-button--emphasized.is-hover [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:hover [class*=sap-icon] {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:hover [class*=sap-icon], .fn-button--secondary.fn-button--emphasized.is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-hover .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:hover .fn-button__text {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:hover .fn-button__text, .fn-button--secondary.fn-button--emphasized.is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-hover.is-active,
-.fn-button--secondary.fn-button--emphasized.is-hover:active,
-.fn-button--secondary.fn-button--emphasized:hover.is-active,
-.fn-button--secondary.fn-button--emphasized:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #223548
+.fn-button--secondary.fn-button--emphasized:hover:active, .fn-button--secondary.fn-button--emphasized:hover.is-active, .fn-button--secondary.fn-button--emphasized.is-hover:active, .fn-button--secondary.fn-button--emphasized.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #223548;
 }
-.fn-button--secondary.fn-button--emphasized.is-hover.is-active [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized.is-hover:active [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:hover.is-active [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:hover:active [class*=sap-icon], .fn-button--secondary.fn-button--emphasized:hover.is-active [class*=sap-icon], .fn-button--secondary.fn-button--emphasized.is-hover:active [class*=sap-icon], .fn-button--secondary.fn-button--emphasized.is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-hover.is-active .fn-button__text,
-.fn-button--secondary.fn-button--emphasized.is-hover:active .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:hover.is-active .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:hover:active .fn-button__text {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:hover:active .fn-button__text, .fn-button--secondary.fn-button--emphasized:hover.is-active .fn-button__text, .fn-button--secondary.fn-button--emphasized.is-hover:active .fn-button__text, .fn-button--secondary.fn-button--emphasized.is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-active,
-.fn-button--secondary.fn-button--emphasized:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #223548
+.fn-button--secondary.fn-button--emphasized:active, .fn-button--secondary.fn-button--emphasized.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #223548;
 }
-.fn-button--secondary.fn-button--emphasized.is-active [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:active [class*=sap-icon] {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:active [class*=sap-icon], .fn-button--secondary.fn-button--emphasized.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-active .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:active .fn-button__text {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:active .fn-button__text, .fn-button--secondary.fn-button--emphasized.is-active .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--secondary.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #475e75;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--secondary.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--secondary.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #475e75
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #475e75;
 }
 .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible) .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  background: #354a5f
+.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+  background: #354a5f;
 }
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover:active,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover.is-active,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #223548
+.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover:active, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover.is-active, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover:active, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #223548;
 }
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--secondary.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.focus-visible,
-.fn-button--secondary.fn-button--emphasized.is-focus {
+.fn-button--secondary.fn-button--emphasized.focus-visible, .fn-button--secondary.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #475e75;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.focus-visible [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized.focus-visible [class*=sap-icon], .fn-button--secondary.fn-button--emphasized.is-focus [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.focus-visible .fn-button__text,
-.fn-button--secondary.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized.focus-visible .fn-button__text, .fn-button--secondary.fn-button--emphasized.is-focus .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-disabled,
-.fn-button--secondary.fn-button--emphasized:disabled,
-.fn-button--secondary.fn-button--emphasized[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #475e75
+.fn-button--secondary.fn-button--emphasized[aria-disabled=true], .fn-button--secondary.fn-button--emphasized:disabled, .fn-button--secondary.fn-button--emphasized.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #475e75;
 }
-.fn-button--secondary.fn-button--emphasized.is-disabled [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized:disabled [class*=sap-icon],
-.fn-button--secondary.fn-button--emphasized[aria-disabled=true] [class*=sap-icon] {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized[aria-disabled=true] [class*=sap-icon], .fn-button--secondary.fn-button--emphasized:disabled [class*=sap-icon], .fn-button--secondary.fn-button--emphasized.is-disabled [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--secondary.fn-button--emphasized.is-disabled .fn-button__text,
-.fn-button--secondary.fn-button--emphasized:disabled .fn-button__text,
-.fn-button--secondary.fn-button--emphasized[aria-disabled=true] .fn-button__text {
-  color: #fff
+.fn-button--secondary.fn-button--emphasized[aria-disabled=true] .fn-button__text, .fn-button--secondary.fn-button--emphasized:disabled .fn-button__text, .fn-button--secondary.fn-button--emphasized.is-disabled .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--layout {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: 0 0
+          box-shadow: none;
+  background: transparent;
 }
 .fn-button--layout [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--layout .fn-button__text {
-  color: #475e75
+  color: #475e75;
 }
-.fn-button--layout.is-hover,
-.fn-button--layout:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--layout:hover, .fn-button--layout.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--layout.is-hover [class*=sap-icon],
-.fn-button--layout:hover [class*=sap-icon] {
-  color: #354a5f
+.fn-button--layout:hover [class*=sap-icon], .fn-button--layout.is-hover [class*=sap-icon] {
+  color: #354a5f;
 }
-.fn-button--layout.is-hover .fn-button__text,
-.fn-button--layout:hover .fn-button__text {
-  color: #354a5f
+.fn-button--layout:hover .fn-button__text, .fn-button--layout.is-hover .fn-button__text {
+  color: #354a5f;
 }
-.fn-button--layout.is-hover.is-active,
-.fn-button--layout.is-hover:active,
-.fn-button--layout:hover.is-active,
-.fn-button--layout:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--layout:hover:active, .fn-button--layout:hover.is-active, .fn-button--layout.is-hover:active, .fn-button--layout.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--layout.is-hover.is-active [class*=sap-icon],
-.fn-button--layout.is-hover:active [class*=sap-icon],
-.fn-button--layout:hover.is-active [class*=sap-icon],
-.fn-button--layout:hover:active [class*=sap-icon] {
-  color: #223548
+.fn-button--layout:hover:active [class*=sap-icon], .fn-button--layout:hover.is-active [class*=sap-icon], .fn-button--layout.is-hover:active [class*=sap-icon], .fn-button--layout.is-hover.is-active [class*=sap-icon] {
+  color: #223548;
 }
-.fn-button--layout.is-hover.is-active .fn-button__text,
-.fn-button--layout.is-hover:active .fn-button__text,
-.fn-button--layout:hover.is-active .fn-button__text,
-.fn-button--layout:hover:active .fn-button__text {
-  color: #223548
+.fn-button--layout:hover:active .fn-button__text, .fn-button--layout:hover.is-active .fn-button__text, .fn-button--layout.is-hover:active .fn-button__text, .fn-button--layout.is-hover.is-active .fn-button__text {
+  color: #223548;
 }
-.fn-button--layout.is-active,
-.fn-button--layout:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--layout:active, .fn-button--layout.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--layout.is-active [class*=sap-icon],
-.fn-button--layout:active [class*=sap-icon] {
-  color: #223548
+.fn-button--layout:active [class*=sap-icon], .fn-button--layout.is-active [class*=sap-icon] {
+  color: #223548;
 }
-.fn-button--layout.is-active .fn-button__text,
-.fn-button--layout:active .fn-button__text {
-  color: #223548
+.fn-button--layout:active .fn-button__text, .fn-button--layout.is-active .fn-button__text {
+  color: #223548;
 }
 .fn-button--layout.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--layout.is-focus [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--layout.is-focus .fn-button__text {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--layout:focus:not(.focus-visible) {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: 0 0
+          box-shadow: none;
+  background: transparent;
 }
 .fn-button--layout:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
 .fn-button--layout:focus:not(.focus-visible) .fn-button__text {
-  color: #475e75
+  color: #475e75;
 }
-.fn-button--layout:focus:not(.focus-visible).is-hover,
-.fn-button--layout:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--layout:focus:not(.focus-visible):hover, .fn-button--layout:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--layout:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--layout:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #354a5f
+.fn-button--layout:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--layout:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #354a5f;
 }
-.fn-button--layout:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--layout:focus:not(.focus-visible):hover .fn-button__text {
-  color: #354a5f
+.fn-button--layout:focus:not(.focus-visible):hover .fn-button__text, .fn-button--layout:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #354a5f;
 }
-.fn-button--layout:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--layout:focus:not(.focus-visible).is-hover:active,
-.fn-button--layout:focus:not(.focus-visible):hover.is-active,
-.fn-button--layout:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  background: #fff
+.fn-button--layout:focus:not(.focus-visible):hover:active, .fn-button--layout:focus:not(.focus-visible):hover.is-active, .fn-button--layout:focus:not(.focus-visible).is-hover:active, .fn-button--layout:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  background: #ffffff;
 }
-.fn-button--layout:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--layout:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--layout:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--layout:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #223548
+.fn-button--layout:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--layout:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--layout:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--layout:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #223548;
 }
-.fn-button--layout:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--layout:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--layout:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--layout:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #223548
+.fn-button--layout:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--layout:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--layout:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--layout:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #223548;
 }
-.fn-button--layout.focus-visible,
-.fn-button--layout.is-focus {
+.fn-button--layout.focus-visible, .fn-button--layout.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--layout.focus-visible [class*=sap-icon],
-.fn-button--layout.is-focus [class*=sap-icon] {
-  color: #475e75
+.fn-button--layout.focus-visible [class*=sap-icon], .fn-button--layout.is-focus [class*=sap-icon] {
+  color: #475e75;
 }
-.fn-button--layout.focus-visible .fn-button__text,
-.fn-button--layout.is-focus .fn-button__text {
-  color: #475e75
+.fn-button--layout.focus-visible .fn-button__text, .fn-button--layout.is-focus .fn-button__text {
+  color: #475e75;
 }
-.fn-button--layout.is-disabled,
-.fn-button--layout:disabled,
-.fn-button--layout[aria-disabled=true] {
+.fn-button--layout[aria-disabled=true], .fn-button--layout:disabled, .fn-button--layout.is-disabled {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: 0 0
+          box-shadow: none;
+  background: transparent;
 }
-.fn-button--layout.is-disabled [class*=sap-icon],
-.fn-button--layout:disabled [class*=sap-icon],
-.fn-button--layout[aria-disabled=true] [class*=sap-icon] {
-  color: #475e75
+.fn-button--layout[aria-disabled=true] [class*=sap-icon], .fn-button--layout:disabled [class*=sap-icon], .fn-button--layout.is-disabled [class*=sap-icon] {
+  color: #475e75;
 }
-.fn-button--layout.is-disabled .fn-button__text,
-.fn-button--layout:disabled .fn-button__text,
-.fn-button--layout[aria-disabled=true] .fn-button__text {
-  color: #475e75
+.fn-button--layout[aria-disabled=true] .fn-button__text, .fn-button--layout:disabled .fn-button__text, .fn-button--layout.is-disabled .fn-button__text {
+  color: #475e75;
 }
 .fn-button--positive {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #fff
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #ffffff;
 }
 .fn-button--positive [class*=sap-icon] {
-  color: #188918
+  color: #188918;
 }
 .fn-button--positive .fn-button__text {
-  color: #188918
+  color: #188918;
 }
-.fn-button--positive.is-hover,
-.fn-button--positive:hover {
-  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  background: #fff
+.fn-button--positive:hover, .fn-button--positive.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+          box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+  background: #ffffff;
 }
-.fn-button--positive.is-hover [class*=sap-icon],
-.fn-button--positive:hover [class*=sap-icon] {
-  color: #256f3a
+.fn-button--positive:hover [class*=sap-icon], .fn-button--positive.is-hover [class*=sap-icon] {
+  color: #256f3a;
 }
-.fn-button--positive.is-hover .fn-button__text,
-.fn-button--positive:hover .fn-button__text {
-  color: #256f3a
+.fn-button--positive:hover .fn-button__text, .fn-button--positive.is-hover .fn-button__text {
+  color: #256f3a;
 }
-.fn-button--positive.is-hover.is-active,
-.fn-button--positive.is-hover:active,
-.fn-button--positive:hover.is-active,
-.fn-button--positive:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #fff
+.fn-button--positive:hover:active, .fn-button--positive:hover.is-active, .fn-button--positive.is-hover:active, .fn-button--positive.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #ffffff;
 }
-.fn-button--positive.is-hover.is-active [class*=sap-icon],
-.fn-button--positive.is-hover:active [class*=sap-icon],
-.fn-button--positive:hover.is-active [class*=sap-icon],
-.fn-button--positive:hover:active [class*=sap-icon] {
-  color: #1e592f
+.fn-button--positive:hover:active [class*=sap-icon], .fn-button--positive:hover.is-active [class*=sap-icon], .fn-button--positive.is-hover:active [class*=sap-icon], .fn-button--positive.is-hover.is-active [class*=sap-icon] {
+  color: #1e592f;
 }
-.fn-button--positive.is-hover.is-active .fn-button__text,
-.fn-button--positive.is-hover:active .fn-button__text,
-.fn-button--positive:hover.is-active .fn-button__text,
-.fn-button--positive:hover:active .fn-button__text {
-  color: #1e592f
+.fn-button--positive:hover:active .fn-button__text, .fn-button--positive:hover.is-active .fn-button__text, .fn-button--positive.is-hover:active .fn-button__text, .fn-button--positive.is-hover.is-active .fn-button__text {
+  color: #1e592f;
 }
-.fn-button--positive.is-active,
-.fn-button--positive:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #fff
+.fn-button--positive:active, .fn-button--positive.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #ffffff;
 }
-.fn-button--positive.is-active [class*=sap-icon],
-.fn-button--positive:active [class*=sap-icon] {
-  color: #1e592f
+.fn-button--positive:active [class*=sap-icon], .fn-button--positive.is-active [class*=sap-icon] {
+  color: #1e592f;
 }
-.fn-button--positive.is-active .fn-button__text,
-.fn-button--positive:active .fn-button__text {
-  color: #1e592f
+.fn-button--positive:active .fn-button__text, .fn-button--positive.is-active .fn-button__text {
+  color: #1e592f;
 }
 .fn-button--positive.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--positive.is-focus [class*=sap-icon] {
-  color: #188918
+  color: #188918;
 }
 .fn-button--positive.is-focus .fn-button__text {
-  color: #188918
+  color: #188918;
 }
 .fn-button--positive:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #fff
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #ffffff;
 }
 .fn-button--positive:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #188918
+  color: #188918;
 }
 .fn-button--positive:focus:not(.focus-visible) .fn-button__text {
-  color: #188918
+  color: #188918;
 }
-.fn-button--positive:focus:not(.focus-visible).is-hover,
-.fn-button--positive:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  background: #fff
+.fn-button--positive:focus:not(.focus-visible):hover, .fn-button--positive:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+          box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+  background: #ffffff;
 }
-.fn-button--positive:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--positive:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #256f3a
+.fn-button--positive:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--positive:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #256f3a;
 }
-.fn-button--positive:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--positive:focus:not(.focus-visible):hover .fn-button__text {
-  color: #256f3a
+.fn-button--positive:focus:not(.focus-visible):hover .fn-button__text, .fn-button--positive:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #256f3a;
 }
-.fn-button--positive:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--positive:focus:not(.focus-visible).is-hover:active,
-.fn-button--positive:focus:not(.focus-visible):hover.is-active,
-.fn-button--positive:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #fff
+.fn-button--positive:focus:not(.focus-visible):hover:active, .fn-button--positive:focus:not(.focus-visible):hover.is-active, .fn-button--positive:focus:not(.focus-visible).is-hover:active, .fn-button--positive:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #ffffff;
 }
-.fn-button--positive:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--positive:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--positive:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--positive:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #1e592f
+.fn-button--positive:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--positive:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--positive:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--positive:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #1e592f;
 }
-.fn-button--positive:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--positive:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--positive:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--positive:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #1e592f
+.fn-button--positive:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--positive:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--positive:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--positive:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #1e592f;
 }
-.fn-button--positive.focus-visible,
-.fn-button--positive.is-focus {
+.fn-button--positive.focus-visible, .fn-button--positive.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--positive.focus-visible [class*=sap-icon],
-.fn-button--positive.is-focus [class*=sap-icon] {
-  color: #188918
+.fn-button--positive.focus-visible [class*=sap-icon], .fn-button--positive.is-focus [class*=sap-icon] {
+  color: #188918;
 }
-.fn-button--positive.focus-visible .fn-button__text,
-.fn-button--positive.is-focus .fn-button__text {
-  color: #188918
+.fn-button--positive.focus-visible .fn-button__text, .fn-button--positive.is-focus .fn-button__text {
+  color: #188918;
 }
-.fn-button--positive.is-disabled,
-.fn-button--positive:disabled,
-.fn-button--positive[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #fff
+.fn-button--positive[aria-disabled=true], .fn-button--positive:disabled, .fn-button--positive.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #ffffff;
 }
-.fn-button--positive.is-disabled [class*=sap-icon],
-.fn-button--positive:disabled [class*=sap-icon],
-.fn-button--positive[aria-disabled=true] [class*=sap-icon] {
-  color: #188918
+.fn-button--positive[aria-disabled=true] [class*=sap-icon], .fn-button--positive:disabled [class*=sap-icon], .fn-button--positive.is-disabled [class*=sap-icon] {
+  color: #188918;
 }
-.fn-button--positive.is-disabled .fn-button__text,
-.fn-button--positive:disabled .fn-button__text,
-.fn-button--positive[aria-disabled=true] .fn-button__text {
-  color: #188918
+.fn-button--positive[aria-disabled=true] .fn-button__text, .fn-button--positive:disabled .fn-button__text, .fn-button--positive.is-disabled .fn-button__text {
+  color: #188918;
 }
 .fn-button--positive.fn-button--emphasized {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #188918
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #188918;
 }
 .fn-button--positive.fn-button--emphasized [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--positive.fn-button--emphasized .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-hover,
-.fn-button--positive.fn-button--emphasized:hover {
-  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  background: #256f3a
+.fn-button--positive.fn-button--emphasized:hover, .fn-button--positive.fn-button--emphasized.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+          box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+  background: #256f3a;
 }
-.fn-button--positive.fn-button--emphasized.is-hover [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:hover [class*=sap-icon] {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:hover [class*=sap-icon], .fn-button--positive.fn-button--emphasized.is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-hover .fn-button__text,
-.fn-button--positive.fn-button--emphasized:hover .fn-button__text {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:hover .fn-button__text, .fn-button--positive.fn-button--emphasized.is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-hover.is-active,
-.fn-button--positive.fn-button--emphasized.is-hover:active,
-.fn-button--positive.fn-button--emphasized:hover.is-active,
-.fn-button--positive.fn-button--emphasized:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #1e592f
+.fn-button--positive.fn-button--emphasized:hover:active, .fn-button--positive.fn-button--emphasized:hover.is-active, .fn-button--positive.fn-button--emphasized.is-hover:active, .fn-button--positive.fn-button--emphasized.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #1e592f;
 }
-.fn-button--positive.fn-button--emphasized.is-hover.is-active [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized.is-hover:active [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:hover.is-active [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:hover:active [class*=sap-icon], .fn-button--positive.fn-button--emphasized:hover.is-active [class*=sap-icon], .fn-button--positive.fn-button--emphasized.is-hover:active [class*=sap-icon], .fn-button--positive.fn-button--emphasized.is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-hover.is-active .fn-button__text,
-.fn-button--positive.fn-button--emphasized.is-hover:active .fn-button__text,
-.fn-button--positive.fn-button--emphasized:hover.is-active .fn-button__text,
-.fn-button--positive.fn-button--emphasized:hover:active .fn-button__text {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:hover:active .fn-button__text, .fn-button--positive.fn-button--emphasized:hover.is-active .fn-button__text, .fn-button--positive.fn-button--emphasized.is-hover:active .fn-button__text, .fn-button--positive.fn-button--emphasized.is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-active,
-.fn-button--positive.fn-button--emphasized:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #1e592f
+.fn-button--positive.fn-button--emphasized:active, .fn-button--positive.fn-button--emphasized.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #1e592f;
 }
-.fn-button--positive.fn-button--emphasized.is-active [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:active [class*=sap-icon] {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:active [class*=sap-icon], .fn-button--positive.fn-button--emphasized.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-active .fn-button__text,
-.fn-button--positive.fn-button--emphasized:active .fn-button__text {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:active .fn-button__text, .fn-button--positive.fn-button--emphasized.is-active .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--positive.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #188918;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--positive.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--positive.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #188918
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #188918;
 }
 .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible) .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  background: #256f3a
+.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+          box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+  background: #256f3a;
 }
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover:active,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover.is-active,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #1e592f
+.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover:active, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover.is-active, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover:active, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #1e592f;
 }
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #fff
+.fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--positive.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.focus-visible,
-.fn-button--positive.fn-button--emphasized.is-focus {
+.fn-button--positive.fn-button--emphasized.focus-visible, .fn-button--positive.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #188918;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #188918,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #188918, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.focus-visible [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+.fn-button--positive.fn-button--emphasized.focus-visible [class*=sap-icon], .fn-button--positive.fn-button--emphasized.is-focus [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.focus-visible .fn-button__text,
-.fn-button--positive.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+.fn-button--positive.fn-button--emphasized.focus-visible .fn-button__text, .fn-button--positive.fn-button--emphasized.is-focus .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-disabled,
-.fn-button--positive.fn-button--emphasized:disabled,
-.fn-button--positive.fn-button--emphasized[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  background: #188918
+.fn-button--positive.fn-button--emphasized[aria-disabled=true], .fn-button--positive.fn-button--emphasized:disabled, .fn-button--positive.fn-button--emphasized.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  background: #188918;
 }
-.fn-button--positive.fn-button--emphasized.is-disabled [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized:disabled [class*=sap-icon],
-.fn-button--positive.fn-button--emphasized[aria-disabled=true] [class*=sap-icon] {
-  color: #fff
+.fn-button--positive.fn-button--emphasized[aria-disabled=true] [class*=sap-icon], .fn-button--positive.fn-button--emphasized:disabled [class*=sap-icon], .fn-button--positive.fn-button--emphasized.is-disabled [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--positive.fn-button--emphasized.is-disabled .fn-button__text,
-.fn-button--positive.fn-button--emphasized:disabled .fn-button__text,
-.fn-button--positive.fn-button--emphasized[aria-disabled=true] .fn-button__text {
-  color: #fff
+.fn-button--positive.fn-button--emphasized[aria-disabled=true] .fn-button__text, .fn-button--positive.fn-button--emphasized:disabled .fn-button__text, .fn-button--positive.fn-button--emphasized.is-disabled .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--critical {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #fff
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
 .fn-button--critical [class*=sap-icon] {
-  color: #f58b00
+  color: #f58b00;
 }
 .fn-button--critical .fn-button__text {
-  color: #f58b00
+  color: #f58b00;
 }
-.fn-button--critical.is-hover,
-.fn-button--critical:hover {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  background: #fff
+.fn-button--critical:hover, .fn-button--critical.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
-.fn-button--critical.is-hover [class*=sap-icon],
-.fn-button--critical:hover [class*=sap-icon] {
-  color: #a93e00
+.fn-button--critical:hover [class*=sap-icon], .fn-button--critical.is-hover [class*=sap-icon] {
+  color: #a93e00;
 }
-.fn-button--critical.is-hover .fn-button__text,
-.fn-button--critical:hover .fn-button__text {
-  color: #a93e00
+.fn-button--critical:hover .fn-button__text, .fn-button--critical.is-hover .fn-button__text {
+  color: #a93e00;
 }
-.fn-button--critical.is-hover.is-active,
-.fn-button--critical.is-hover:active,
-.fn-button--critical:hover.is-active,
-.fn-button--critical:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #fff
+.fn-button--critical:hover:active, .fn-button--critical:hover.is-active, .fn-button--critical.is-hover:active, .fn-button--critical.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
-.fn-button--critical.is-hover.is-active [class*=sap-icon],
-.fn-button--critical.is-hover:active [class*=sap-icon],
-.fn-button--critical:hover.is-active [class*=sap-icon],
-.fn-button--critical:hover:active [class*=sap-icon] {
-  color: #a93e00
+.fn-button--critical:hover:active [class*=sap-icon], .fn-button--critical:hover.is-active [class*=sap-icon], .fn-button--critical.is-hover:active [class*=sap-icon], .fn-button--critical.is-hover.is-active [class*=sap-icon] {
+  color: #a93e00;
 }
-.fn-button--critical.is-hover.is-active .fn-button__text,
-.fn-button--critical.is-hover:active .fn-button__text,
-.fn-button--critical:hover.is-active .fn-button__text,
-.fn-button--critical:hover:active .fn-button__text {
-  color: #a93e00
+.fn-button--critical:hover:active .fn-button__text, .fn-button--critical:hover.is-active .fn-button__text, .fn-button--critical.is-hover:active .fn-button__text, .fn-button--critical.is-hover.is-active .fn-button__text {
+  color: #a93e00;
 }
-.fn-button--critical.is-active,
-.fn-button--critical:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #fff
+.fn-button--critical:active, .fn-button--critical.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
-.fn-button--critical.is-active [class*=sap-icon],
-.fn-button--critical:active [class*=sap-icon] {
-  color: #a93e00
+.fn-button--critical:active [class*=sap-icon], .fn-button--critical.is-active [class*=sap-icon] {
+  color: #a93e00;
 }
-.fn-button--critical.is-active .fn-button__text,
-.fn-button--critical:active .fn-button__text {
-  color: #a93e00
+.fn-button--critical:active .fn-button__text, .fn-button--critical.is-active .fn-button__text {
+  color: #a93e00;
 }
 .fn-button--critical.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--critical.is-focus [class*=sap-icon] {
-  color: #f58b00
+  color: #f58b00;
 }
 .fn-button--critical.is-focus .fn-button__text {
-  color: #f58b00
+  color: #f58b00;
 }
 .fn-button--critical:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #fff
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
 .fn-button--critical:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #f58b00
+  color: #f58b00;
 }
 .fn-button--critical:focus:not(.focus-visible) .fn-button__text {
-  color: #f58b00
+  color: #f58b00;
 }
-.fn-button--critical:focus:not(.focus-visible).is-hover,
-.fn-button--critical:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  background: #fff
+.fn-button--critical:focus:not(.focus-visible):hover, .fn-button--critical:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
-.fn-button--critical:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--critical:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #a93e00
+.fn-button--critical:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--critical:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #a93e00;
 }
-.fn-button--critical:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--critical:focus:not(.focus-visible):hover .fn-button__text {
-  color: #a93e00
+.fn-button--critical:focus:not(.focus-visible):hover .fn-button__text, .fn-button--critical:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #a93e00;
 }
-.fn-button--critical:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--critical:focus:not(.focus-visible).is-hover:active,
-.fn-button--critical:focus:not(.focus-visible):hover.is-active,
-.fn-button--critical:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #fff
+.fn-button--critical:focus:not(.focus-visible):hover:active, .fn-button--critical:focus:not(.focus-visible):hover.is-active, .fn-button--critical:focus:not(.focus-visible).is-hover:active, .fn-button--critical:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
-.fn-button--critical:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--critical:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--critical:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--critical:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #a93e00
+.fn-button--critical:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--critical:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--critical:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--critical:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #a93e00;
 }
-.fn-button--critical:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--critical:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--critical:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--critical:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #a93e00
+.fn-button--critical:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--critical:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--critical:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--critical:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #a93e00;
 }
-.fn-button--critical.focus-visible,
-.fn-button--critical.is-focus {
+.fn-button--critical.focus-visible, .fn-button--critical.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--critical.focus-visible [class*=sap-icon],
-.fn-button--critical.is-focus [class*=sap-icon] {
-  color: #f58b00
+.fn-button--critical.focus-visible [class*=sap-icon], .fn-button--critical.is-focus [class*=sap-icon] {
+  color: #f58b00;
 }
-.fn-button--critical.focus-visible .fn-button__text,
-.fn-button--critical.is-focus .fn-button__text {
-  color: #f58b00
+.fn-button--critical.focus-visible .fn-button__text, .fn-button--critical.is-focus .fn-button__text {
+  color: #f58b00;
 }
-.fn-button--critical.is-disabled,
-.fn-button--critical:disabled,
-.fn-button--critical[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #fff
+.fn-button--critical[aria-disabled=true], .fn-button--critical:disabled, .fn-button--critical.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #ffffff;
 }
-.fn-button--critical.is-disabled [class*=sap-icon],
-.fn-button--critical:disabled [class*=sap-icon],
-.fn-button--critical[aria-disabled=true] [class*=sap-icon] {
-  color: #f58b00
+.fn-button--critical[aria-disabled=true] [class*=sap-icon], .fn-button--critical:disabled [class*=sap-icon], .fn-button--critical.is-disabled [class*=sap-icon] {
+  color: #f58b00;
 }
-.fn-button--critical.is-disabled .fn-button__text,
-.fn-button--critical:disabled .fn-button__text,
-.fn-button--critical[aria-disabled=true] .fn-button__text {
-  color: #f58b00
+.fn-button--critical[aria-disabled=true] .fn-button__text, .fn-button--critical:disabled .fn-button__text, .fn-button--critical.is-disabled .fn-button__text {
+  color: #f58b00;
 }
 .fn-button--critical.fn-button--emphasized {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #f58b00
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #f58b00;
 }
 .fn-button--critical.fn-button--emphasized [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--critical.fn-button--emphasized .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-hover,
-.fn-button--critical.fn-button--emphasized:hover {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  background: #a93e00
+.fn-button--critical.fn-button--emphasized:hover, .fn-button--critical.fn-button--emphasized.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+  background: #a93e00;
 }
-.fn-button--critical.fn-button--emphasized.is-hover [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:hover [class*=sap-icon] {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:hover [class*=sap-icon], .fn-button--critical.fn-button--emphasized.is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-hover .fn-button__text,
-.fn-button--critical.fn-button--emphasized:hover .fn-button__text {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:hover .fn-button__text, .fn-button--critical.fn-button--emphasized.is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-hover.is-active,
-.fn-button--critical.fn-button--emphasized.is-hover:active,
-.fn-button--critical.fn-button--emphasized:hover.is-active,
-.fn-button--critical.fn-button--emphasized:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #a93e00
+.fn-button--critical.fn-button--emphasized:hover:active, .fn-button--critical.fn-button--emphasized:hover.is-active, .fn-button--critical.fn-button--emphasized.is-hover:active, .fn-button--critical.fn-button--emphasized.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #a93e00;
 }
-.fn-button--critical.fn-button--emphasized.is-hover.is-active [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized.is-hover:active [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:hover.is-active [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:hover:active [class*=sap-icon], .fn-button--critical.fn-button--emphasized:hover.is-active [class*=sap-icon], .fn-button--critical.fn-button--emphasized.is-hover:active [class*=sap-icon], .fn-button--critical.fn-button--emphasized.is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-hover.is-active .fn-button__text,
-.fn-button--critical.fn-button--emphasized.is-hover:active .fn-button__text,
-.fn-button--critical.fn-button--emphasized:hover.is-active .fn-button__text,
-.fn-button--critical.fn-button--emphasized:hover:active .fn-button__text {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:hover:active .fn-button__text, .fn-button--critical.fn-button--emphasized:hover.is-active .fn-button__text, .fn-button--critical.fn-button--emphasized.is-hover:active .fn-button__text, .fn-button--critical.fn-button--emphasized.is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-active,
-.fn-button--critical.fn-button--emphasized:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #a93e00
+.fn-button--critical.fn-button--emphasized:active, .fn-button--critical.fn-button--emphasized.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #a93e00;
 }
-.fn-button--critical.fn-button--emphasized.is-active [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:active [class*=sap-icon] {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:active [class*=sap-icon], .fn-button--critical.fn-button--emphasized.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-active .fn-button__text,
-.fn-button--critical.fn-button--emphasized:active .fn-button__text {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:active .fn-button__text, .fn-button--critical.fn-button--emphasized.is-active .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--critical.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #f58b00;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--critical.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--critical.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #f58b00
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #f58b00;
 }
 .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible) .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  background: #a93e00
+.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+  background: #a93e00;
 }
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover:active,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover.is-active,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #a93e00
+.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover:active, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover.is-active, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover:active, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #a93e00;
 }
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #fff
+.fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--critical.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.focus-visible,
-.fn-button--critical.fn-button--emphasized.is-focus {
+.fn-button--critical.fn-button--emphasized.focus-visible, .fn-button--critical.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #f58b00;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #f58b00,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #f58b00, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.focus-visible [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+.fn-button--critical.fn-button--emphasized.focus-visible [class*=sap-icon], .fn-button--critical.fn-button--emphasized.is-focus [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.focus-visible .fn-button__text,
-.fn-button--critical.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+.fn-button--critical.fn-button--emphasized.focus-visible .fn-button__text, .fn-button--critical.fn-button--emphasized.is-focus .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-disabled,
-.fn-button--critical.fn-button--emphasized:disabled,
-.fn-button--critical.fn-button--emphasized[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  background: #f58b00
+.fn-button--critical.fn-button--emphasized[aria-disabled=true], .fn-button--critical.fn-button--emphasized:disabled, .fn-button--critical.fn-button--emphasized.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  background: #f58b00;
 }
-.fn-button--critical.fn-button--emphasized.is-disabled [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized:disabled [class*=sap-icon],
-.fn-button--critical.fn-button--emphasized[aria-disabled=true] [class*=sap-icon] {
-  color: #fff
+.fn-button--critical.fn-button--emphasized[aria-disabled=true] [class*=sap-icon], .fn-button--critical.fn-button--emphasized:disabled [class*=sap-icon], .fn-button--critical.fn-button--emphasized.is-disabled [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--critical.fn-button--emphasized.is-disabled .fn-button__text,
-.fn-button--critical.fn-button--emphasized:disabled .fn-button__text,
-.fn-button--critical.fn-button--emphasized[aria-disabled=true] .fn-button__text {
-  color: #fff
+.fn-button--critical.fn-button--emphasized[aria-disabled=true] .fn-button__text, .fn-button--critical.fn-button--emphasized:disabled .fn-button__text, .fn-button--critical.fn-button--emphasized.is-disabled .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--negative {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #fff
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
 .fn-button--negative [class*=sap-icon] {
-  color: #d20a0a
+  color: #d20a0a;
 }
 .fn-button--negative .fn-button__text {
-  color: #d20a0a
+  color: #d20a0a;
 }
-.fn-button--negative.is-hover,
-.fn-button--negative:hover {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  background: #fff
+.fn-button--negative:hover, .fn-button--negative.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
-.fn-button--negative.is-hover [class*=sap-icon],
-.fn-button--negative:hover [class*=sap-icon] {
-  color: #aa0808
+.fn-button--negative:hover [class*=sap-icon], .fn-button--negative.is-hover [class*=sap-icon] {
+  color: #aa0808;
 }
-.fn-button--negative.is-hover .fn-button__text,
-.fn-button--negative:hover .fn-button__text {
-  color: #aa0808
+.fn-button--negative:hover .fn-button__text, .fn-button--negative.is-hover .fn-button__text {
+  color: #aa0808;
 }
-.fn-button--negative.is-hover.is-active,
-.fn-button--negative.is-hover:active,
-.fn-button--negative:hover.is-active,
-.fn-button--negative:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #fff
+.fn-button--negative:hover:active, .fn-button--negative:hover.is-active, .fn-button--negative.is-hover:active, .fn-button--negative.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
-.fn-button--negative.is-hover.is-active [class*=sap-icon],
-.fn-button--negative.is-hover:active [class*=sap-icon],
-.fn-button--negative:hover.is-active [class*=sap-icon],
-.fn-button--negative:hover:active [class*=sap-icon] {
-  color: #840606
+.fn-button--negative:hover:active [class*=sap-icon], .fn-button--negative:hover.is-active [class*=sap-icon], .fn-button--negative.is-hover:active [class*=sap-icon], .fn-button--negative.is-hover.is-active [class*=sap-icon] {
+  color: #840606;
 }
-.fn-button--negative.is-hover.is-active .fn-button__text,
-.fn-button--negative.is-hover:active .fn-button__text,
-.fn-button--negative:hover.is-active .fn-button__text,
-.fn-button--negative:hover:active .fn-button__text {
-  color: #840606
+.fn-button--negative:hover:active .fn-button__text, .fn-button--negative:hover.is-active .fn-button__text, .fn-button--negative.is-hover:active .fn-button__text, .fn-button--negative.is-hover.is-active .fn-button__text {
+  color: #840606;
 }
-.fn-button--negative.is-active,
-.fn-button--negative:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #fff
+.fn-button--negative:active, .fn-button--negative.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
-.fn-button--negative.is-active [class*=sap-icon],
-.fn-button--negative:active [class*=sap-icon] {
-  color: #840606
+.fn-button--negative:active [class*=sap-icon], .fn-button--negative.is-active [class*=sap-icon] {
+  color: #840606;
 }
-.fn-button--negative.is-active .fn-button__text,
-.fn-button--negative:active .fn-button__text {
-  color: #840606
+.fn-button--negative:active .fn-button__text, .fn-button--negative.is-active .fn-button__text {
+  color: #840606;
 }
 .fn-button--negative.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--negative.is-focus [class*=sap-icon] {
-  color: #d20a0a
+  color: #d20a0a;
 }
 .fn-button--negative.is-focus .fn-button__text {
-  color: #d20a0a
+  color: #d20a0a;
 }
 .fn-button--negative:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #fff
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
 .fn-button--negative:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #d20a0a
+  color: #d20a0a;
 }
 .fn-button--negative:focus:not(.focus-visible) .fn-button__text {
-  color: #d20a0a
+  color: #d20a0a;
 }
-.fn-button--negative:focus:not(.focus-visible).is-hover,
-.fn-button--negative:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  background: #fff
+.fn-button--negative:focus:not(.focus-visible):hover, .fn-button--negative:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
-.fn-button--negative:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--negative:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #aa0808
+.fn-button--negative:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--negative:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #aa0808;
 }
-.fn-button--negative:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--negative:focus:not(.focus-visible):hover .fn-button__text {
-  color: #aa0808
+.fn-button--negative:focus:not(.focus-visible):hover .fn-button__text, .fn-button--negative:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #aa0808;
 }
-.fn-button--negative:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--negative:focus:not(.focus-visible).is-hover:active,
-.fn-button--negative:focus:not(.focus-visible):hover.is-active,
-.fn-button--negative:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #fff
+.fn-button--negative:focus:not(.focus-visible):hover:active, .fn-button--negative:focus:not(.focus-visible):hover.is-active, .fn-button--negative:focus:not(.focus-visible).is-hover:active, .fn-button--negative:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
-.fn-button--negative:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--negative:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--negative:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--negative:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #840606
+.fn-button--negative:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--negative:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--negative:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--negative:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #840606;
 }
-.fn-button--negative:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--negative:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--negative:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--negative:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #840606
+.fn-button--negative:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--negative:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--negative:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--negative:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #840606;
 }
-.fn-button--negative.focus-visible,
-.fn-button--negative.is-focus {
+.fn-button--negative.focus-visible, .fn-button--negative.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--negative.focus-visible [class*=sap-icon],
-.fn-button--negative.is-focus [class*=sap-icon] {
-  color: #d20a0a
+.fn-button--negative.focus-visible [class*=sap-icon], .fn-button--negative.is-focus [class*=sap-icon] {
+  color: #d20a0a;
 }
-.fn-button--negative.focus-visible .fn-button__text,
-.fn-button--negative.is-focus .fn-button__text {
-  color: #d20a0a
+.fn-button--negative.focus-visible .fn-button__text, .fn-button--negative.is-focus .fn-button__text {
+  color: #d20a0a;
 }
-.fn-button--negative.is-disabled,
-.fn-button--negative:disabled,
-.fn-button--negative[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #fff
+.fn-button--negative[aria-disabled=true], .fn-button--negative:disabled, .fn-button--negative.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #ffffff;
 }
-.fn-button--negative.is-disabled [class*=sap-icon],
-.fn-button--negative:disabled [class*=sap-icon],
-.fn-button--negative[aria-disabled=true] [class*=sap-icon] {
-  color: #d20a0a
+.fn-button--negative[aria-disabled=true] [class*=sap-icon], .fn-button--negative:disabled [class*=sap-icon], .fn-button--negative.is-disabled [class*=sap-icon] {
+  color: #d20a0a;
 }
-.fn-button--negative.is-disabled .fn-button__text,
-.fn-button--negative:disabled .fn-button__text,
-.fn-button--negative[aria-disabled=true] .fn-button__text {
-  color: #d20a0a
+.fn-button--negative[aria-disabled=true] .fn-button__text, .fn-button--negative:disabled .fn-button__text, .fn-button--negative.is-disabled .fn-button__text {
+  color: #d20a0a;
 }
 .fn-button--negative.fn-button--emphasized {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #d20a0a
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #d20a0a;
 }
 .fn-button--negative.fn-button--emphasized [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--negative.fn-button--emphasized .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-hover,
-.fn-button--negative.fn-button--emphasized:hover {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  background: #aa0808
+.fn-button--negative.fn-button--emphasized:hover, .fn-button--negative.fn-button--emphasized.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+  background: #aa0808;
 }
-.fn-button--negative.fn-button--emphasized.is-hover [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:hover [class*=sap-icon] {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:hover [class*=sap-icon], .fn-button--negative.fn-button--emphasized.is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-hover .fn-button__text,
-.fn-button--negative.fn-button--emphasized:hover .fn-button__text {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:hover .fn-button__text, .fn-button--negative.fn-button--emphasized.is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-hover.is-active,
-.fn-button--negative.fn-button--emphasized.is-hover:active,
-.fn-button--negative.fn-button--emphasized:hover.is-active,
-.fn-button--negative.fn-button--emphasized:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #840606
+.fn-button--negative.fn-button--emphasized:hover:active, .fn-button--negative.fn-button--emphasized:hover.is-active, .fn-button--negative.fn-button--emphasized.is-hover:active, .fn-button--negative.fn-button--emphasized.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #840606;
 }
-.fn-button--negative.fn-button--emphasized.is-hover.is-active [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized.is-hover:active [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:hover.is-active [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:hover:active [class*=sap-icon], .fn-button--negative.fn-button--emphasized:hover.is-active [class*=sap-icon], .fn-button--negative.fn-button--emphasized.is-hover:active [class*=sap-icon], .fn-button--negative.fn-button--emphasized.is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-hover.is-active .fn-button__text,
-.fn-button--negative.fn-button--emphasized.is-hover:active .fn-button__text,
-.fn-button--negative.fn-button--emphasized:hover.is-active .fn-button__text,
-.fn-button--negative.fn-button--emphasized:hover:active .fn-button__text {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:hover:active .fn-button__text, .fn-button--negative.fn-button--emphasized:hover.is-active .fn-button__text, .fn-button--negative.fn-button--emphasized.is-hover:active .fn-button__text, .fn-button--negative.fn-button--emphasized.is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-active,
-.fn-button--negative.fn-button--emphasized:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #840606
+.fn-button--negative.fn-button--emphasized:active, .fn-button--negative.fn-button--emphasized.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #840606;
 }
-.fn-button--negative.fn-button--emphasized.is-active [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:active [class*=sap-icon] {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:active [class*=sap-icon], .fn-button--negative.fn-button--emphasized.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-active .fn-button__text,
-.fn-button--negative.fn-button--emphasized:active .fn-button__text {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:active .fn-button__text, .fn-button--negative.fn-button--emphasized.is-active .fn-button__text {
+  color: #ffffff;
 }
 .fn-button--negative.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #d20a0a;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-button--negative.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--negative.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #d20a0a
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #d20a0a;
 }
 .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible) .fn-button__text {
-  color: #fff
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  background: #aa0808
+.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+  background: #aa0808;
 }
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover .fn-button__text, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover:active,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover.is-active,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #840606
+.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover:active, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover.is-active, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover:active, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #840606;
 }
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #fff
+.fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button--negative.fn-button--emphasized:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.focus-visible,
-.fn-button--negative.fn-button--emphasized.is-focus {
+.fn-button--negative.fn-button--emphasized.focus-visible, .fn-button--negative.fn-button--emphasized.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #d20a0a;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #c35500,inset 0 0 0 .125rem #fff
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #c35500, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.focus-visible [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+.fn-button--negative.fn-button--emphasized.focus-visible [class*=sap-icon], .fn-button--negative.fn-button--emphasized.is-focus [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.focus-visible .fn-button__text,
-.fn-button--negative.fn-button--emphasized.is-focus .fn-button__text {
-  color: #fff
+.fn-button--negative.fn-button--emphasized.focus-visible .fn-button__text, .fn-button--negative.fn-button--emphasized.is-focus .fn-button__text {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-disabled,
-.fn-button--negative.fn-button--emphasized:disabled,
-.fn-button--negative.fn-button--emphasized[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  background: #d20a0a
+.fn-button--negative.fn-button--emphasized[aria-disabled=true], .fn-button--negative.fn-button--emphasized:disabled, .fn-button--negative.fn-button--emphasized.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  background: #d20a0a;
 }
-.fn-button--negative.fn-button--emphasized.is-disabled [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized:disabled [class*=sap-icon],
-.fn-button--negative.fn-button--emphasized[aria-disabled=true] [class*=sap-icon] {
-  color: #fff
+.fn-button--negative.fn-button--emphasized[aria-disabled=true] [class*=sap-icon], .fn-button--negative.fn-button--emphasized:disabled [class*=sap-icon], .fn-button--negative.fn-button--emphasized.is-disabled [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-button--negative.fn-button--emphasized.is-disabled .fn-button__text,
-.fn-button--negative.fn-button--emphasized:disabled .fn-button__text,
-.fn-button--negative.fn-button--emphasized[aria-disabled=true] .fn-button__text {
-  color: #fff
+.fn-button--negative.fn-button--emphasized[aria-disabled=true] .fn-button__text, .fn-button--negative.fn-button--emphasized:disabled .fn-button__text, .fn-button--negative.fn-button--emphasized.is-disabled .fn-button__text {
+  color: #ffffff;
 }
-.fn-button.fn-button--selected,
-.fn-button.fn-button--toggled {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff;
-  overflow: hidden
+.fn-button.fn-button--toggled, .fn-button.fn-button--selected {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
+  overflow: hidden;
 }
-.fn-button.fn-button--selected [class*=sap-icon],
-.fn-button.fn-button--toggled [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled [class*=sap-icon], .fn-button.fn-button--selected [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected .fn-button__text,
-.fn-button.fn-button--toggled .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled .fn-button__text, .fn-button.fn-button--selected .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected::after,
-.fn-button.fn-button--toggled::after {
+.fn-button.fn-button--toggled::after, .fn-button.fn-button--selected::after {
   left: 0;
   right: 0;
   bottom: 0;
@@ -1805,219 +1401,116 @@
   width: 100%;
   height: 0;
   position: absolute;
-  border-bottom: .125rem solid #0070f2
+  border-bottom: 0.125rem solid #0070f2;
 }
-.fn-button.fn-button--selected.is-hover,
-.fn-button.fn-button--selected:hover,
-.fn-button.fn-button--toggled.is-hover,
-.fn-button.fn-button--toggled:hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  background: #fff
+.fn-button.fn-button--toggled:hover, .fn-button.fn-button--toggled.is-hover, .fn-button.fn-button--selected:hover, .fn-button.fn-button--selected.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.fn-button--selected.is-hover [class*=sap-icon],
-.fn-button.fn-button--selected:hover [class*=sap-icon],
-.fn-button.fn-button--toggled.is-hover [class*=sap-icon],
-.fn-button.fn-button--toggled:hover [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled:hover [class*=sap-icon], .fn-button.fn-button--toggled.is-hover [class*=sap-icon], .fn-button.fn-button--selected:hover [class*=sap-icon], .fn-button.fn-button--selected.is-hover [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-hover .fn-button__text,
-.fn-button.fn-button--selected:hover .fn-button__text,
-.fn-button.fn-button--toggled.is-hover .fn-button__text,
-.fn-button.fn-button--toggled:hover .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled:hover .fn-button__text, .fn-button.fn-button--toggled.is-hover .fn-button__text, .fn-button.fn-button--selected:hover .fn-button__text, .fn-button.fn-button--selected.is-hover .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-hover.is-active,
-.fn-button.fn-button--selected.is-hover:active,
-.fn-button.fn-button--selected:hover.is-active,
-.fn-button.fn-button--selected:hover:active,
-.fn-button.fn-button--toggled.is-hover.is-active,
-.fn-button.fn-button--toggled.is-hover:active,
-.fn-button.fn-button--toggled:hover.is-active,
-.fn-button.fn-button--toggled:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button.fn-button--toggled:hover:active, .fn-button.fn-button--toggled:hover.is-active, .fn-button.fn-button--toggled.is-hover:active, .fn-button.fn-button--toggled.is-hover.is-active, .fn-button.fn-button--selected:hover:active, .fn-button.fn-button--selected:hover.is-active, .fn-button.fn-button--selected.is-hover:active, .fn-button.fn-button--selected.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.fn-button--selected.is-hover.is-active [class*=sap-icon],
-.fn-button.fn-button--selected.is-hover:active [class*=sap-icon],
-.fn-button.fn-button--selected:hover.is-active [class*=sap-icon],
-.fn-button.fn-button--selected:hover:active [class*=sap-icon],
-.fn-button.fn-button--toggled.is-hover.is-active [class*=sap-icon],
-.fn-button.fn-button--toggled.is-hover:active [class*=sap-icon],
-.fn-button.fn-button--toggled:hover.is-active [class*=sap-icon],
-.fn-button.fn-button--toggled:hover:active [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled:hover:active [class*=sap-icon], .fn-button.fn-button--toggled:hover.is-active [class*=sap-icon], .fn-button.fn-button--toggled.is-hover:active [class*=sap-icon], .fn-button.fn-button--toggled.is-hover.is-active [class*=sap-icon], .fn-button.fn-button--selected:hover:active [class*=sap-icon], .fn-button.fn-button--selected:hover.is-active [class*=sap-icon], .fn-button.fn-button--selected.is-hover:active [class*=sap-icon], .fn-button.fn-button--selected.is-hover.is-active [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-hover.is-active .fn-button__text,
-.fn-button.fn-button--selected.is-hover:active .fn-button__text,
-.fn-button.fn-button--selected:hover.is-active .fn-button__text,
-.fn-button.fn-button--selected:hover:active .fn-button__text,
-.fn-button.fn-button--toggled.is-hover.is-active .fn-button__text,
-.fn-button.fn-button--toggled.is-hover:active .fn-button__text,
-.fn-button.fn-button--toggled:hover.is-active .fn-button__text,
-.fn-button.fn-button--toggled:hover:active .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled:hover:active .fn-button__text, .fn-button.fn-button--toggled:hover.is-active .fn-button__text, .fn-button.fn-button--toggled.is-hover:active .fn-button__text, .fn-button.fn-button--toggled.is-hover.is-active .fn-button__text, .fn-button.fn-button--selected:hover:active .fn-button__text, .fn-button.fn-button--selected:hover.is-active .fn-button__text, .fn-button.fn-button--selected.is-hover:active .fn-button__text, .fn-button.fn-button--selected.is-hover.is-active .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-active,
-.fn-button.fn-button--selected:active,
-.fn-button.fn-button--toggled.is-active,
-.fn-button.fn-button--toggled:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button.fn-button--toggled:active, .fn-button.fn-button--toggled.is-active, .fn-button.fn-button--selected:active, .fn-button.fn-button--selected.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.fn-button--selected.is-active [class*=sap-icon],
-.fn-button.fn-button--selected:active [class*=sap-icon],
-.fn-button.fn-button--toggled.is-active [class*=sap-icon],
-.fn-button.fn-button--toggled:active [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled:active [class*=sap-icon], .fn-button.fn-button--toggled.is-active [class*=sap-icon], .fn-button.fn-button--selected:active [class*=sap-icon], .fn-button.fn-button--selected.is-active [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-active .fn-button__text,
-.fn-button.fn-button--selected:active .fn-button__text,
-.fn-button.fn-button--toggled.is-active .fn-button__text,
-.fn-button.fn-button--toggled:active .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled:active .fn-button__text, .fn-button.fn-button--toggled.is-active .fn-button__text, .fn-button.fn-button--selected:active .fn-button__text, .fn-button.fn-button--selected.is-active .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-focus,
-.fn-button.fn-button--toggled.is-focus {
+.fn-button.fn-button--toggled.is-focus, .fn-button.fn-button--selected.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button.fn-button--selected.is-focus [class*=sap-icon],
-.fn-button.fn-button--toggled.is-focus [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled.is-focus [class*=sap-icon], .fn-button.fn-button--selected.is-focus [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-focus .fn-button__text,
-.fn-button.fn-button--toggled.is-focus .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled.is-focus .fn-button__text, .fn-button.fn-button--selected.is-focus .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-focus::after,
-.fn-button.fn-button--toggled.is-focus::after {
-  border-bottom: none
+.fn-button.fn-button--toggled.is-focus::after, .fn-button.fn-button--selected.is-focus::after {
+  border-bottom: none;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible),
-.fn-button.fn-button--toggled:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button.fn-button--toggled:focus:not(.focus-visible), .fn-button.fn-button--selected:focus:not(.focus-visible) {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible) [class*=sap-icon],
-.fn-button.fn-button--toggled:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled:focus:not(.focus-visible) [class*=sap-icon], .fn-button.fn-button--selected:focus:not(.focus-visible) [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible) .fn-button__text,
-.fn-button.fn-button--toggled:focus:not(.focus-visible) .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled:focus:not(.focus-visible) .fn-button__text, .fn-button.fn-button--selected:focus:not(.focus-visible) .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover,
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover,
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover,
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  background: #fff
+.fn-button.fn-button--toggled:focus:not(.focus-visible):hover, .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover, .fn-button.fn-button--selected:focus:not(.focus-visible):hover, .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover [class*=sap-icon],
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover [class*=sap-icon], .fn-button.fn-button--selected:focus:not(.focus-visible):hover [class*=sap-icon], .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover .fn-button__text,
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover .fn-button__text,
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled:focus:not(.focus-visible):hover .fn-button__text, .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover .fn-button__text, .fn-button.fn-button--selected:focus:not(.focus-visible):hover .fn-button__text, .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover.is-active,
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover:active,
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover.is-active,
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover:active,
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover.is-active,
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover:active,
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover.is-active,
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button.fn-button--toggled:focus:not(.focus-visible):hover:active, .fn-button.fn-button--toggled:focus:not(.focus-visible):hover.is-active, .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover:active, .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover.is-active, .fn-button.fn-button--selected:focus:not(.focus-visible):hover:active, .fn-button.fn-button--selected:focus:not(.focus-visible):hover.is-active, .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover:active, .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover:active [class*=sap-icon],
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button.fn-button--toggled:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon], .fn-button.fn-button--selected:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-button.fn-button--selected:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button.fn-button--selected:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button.fn-button--selected:focus:not(.focus-visible):hover:active .fn-button__text,
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover.is-active .fn-button__text,
-.fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover:active .fn-button__text,
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover.is-active .fn-button__text,
-.fn-button.fn-button--toggled:focus:not(.focus-visible):hover:active .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button.fn-button--toggled:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button.fn-button--toggled:focus:not(.focus-visible).is-hover.is-active .fn-button__text, .fn-button.fn-button--selected:focus:not(.focus-visible):hover:active .fn-button__text, .fn-button.fn-button--selected:focus:not(.focus-visible):hover.is-active .fn-button__text, .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover:active .fn-button__text, .fn-button.fn-button--selected:focus:not(.focus-visible).is-hover.is-active .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.focus-visible,
-.fn-button.fn-button--selected.is-focus,
-.fn-button.fn-button--toggled.focus-visible,
-.fn-button.fn-button--toggled.is-focus {
+.fn-button.fn-button--toggled.focus-visible, .fn-button.fn-button--toggled.is-focus, .fn-button.fn-button--selected.focus-visible, .fn-button.fn-button--selected.is-focus {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #fff;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+          box-shadow: none;
+  background: #ffffff;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-button.fn-button--selected.focus-visible [class*=sap-icon],
-.fn-button.fn-button--selected.is-focus [class*=sap-icon],
-.fn-button.fn-button--toggled.focus-visible [class*=sap-icon],
-.fn-button.fn-button--toggled.is-focus [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled.focus-visible [class*=sap-icon], .fn-button.fn-button--toggled.is-focus [class*=sap-icon], .fn-button.fn-button--selected.focus-visible [class*=sap-icon], .fn-button.fn-button--selected.is-focus [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.focus-visible .fn-button__text,
-.fn-button.fn-button--selected.is-focus .fn-button__text,
-.fn-button.fn-button--toggled.focus-visible .fn-button__text,
-.fn-button.fn-button--toggled.is-focus .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled.focus-visible .fn-button__text, .fn-button.fn-button--toggled.is-focus .fn-button__text, .fn-button.fn-button--selected.focus-visible .fn-button__text, .fn-button.fn-button--selected.is-focus .fn-button__text {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.focus-visible::after,
-.fn-button.fn-button--selected.is-focus::after,
-.fn-button.fn-button--toggled.focus-visible::after,
-.fn-button.fn-button--toggled.is-focus::after {
-  border-bottom: none
+.fn-button.fn-button--toggled.focus-visible::after, .fn-button.fn-button--toggled.is-focus::after, .fn-button.fn-button--selected.focus-visible::after, .fn-button.fn-button--selected.is-focus::after {
+  border-bottom: none;
 }
-.fn-button.fn-button--selected.is-disabled,
-.fn-button.fn-button--selected:disabled,
-.fn-button.fn-button--selected[aria-disabled=true],
-.fn-button.fn-button--toggled.is-disabled,
-.fn-button.fn-button--toggled:disabled,
-.fn-button.fn-button--toggled[aria-disabled=true] {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  background: #fff
+.fn-button.fn-button--toggled[aria-disabled=true], .fn-button.fn-button--toggled:disabled, .fn-button.fn-button--toggled.is-disabled, .fn-button.fn-button--selected[aria-disabled=true], .fn-button.fn-button--selected:disabled, .fn-button.fn-button--selected.is-disabled {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  background: #ffffff;
 }
-.fn-button.fn-button--selected.is-disabled [class*=sap-icon],
-.fn-button.fn-button--selected:disabled [class*=sap-icon],
-.fn-button.fn-button--selected[aria-disabled=true] [class*=sap-icon],
-.fn-button.fn-button--toggled.is-disabled [class*=sap-icon],
-.fn-button.fn-button--toggled:disabled [class*=sap-icon],
-.fn-button.fn-button--toggled[aria-disabled=true] [class*=sap-icon] {
-  color: #0070f2
+.fn-button.fn-button--toggled[aria-disabled=true] [class*=sap-icon], .fn-button.fn-button--toggled:disabled [class*=sap-icon], .fn-button.fn-button--toggled.is-disabled [class*=sap-icon], .fn-button.fn-button--selected[aria-disabled=true] [class*=sap-icon], .fn-button.fn-button--selected:disabled [class*=sap-icon], .fn-button.fn-button--selected.is-disabled [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-button.fn-button--selected.is-disabled .fn-button__text,
-.fn-button.fn-button--selected:disabled .fn-button__text,
-.fn-button.fn-button--selected[aria-disabled=true] .fn-button__text,
-.fn-button.fn-button--toggled.is-disabled .fn-button__text,
-.fn-button.fn-button--toggled:disabled .fn-button__text,
-.fn-button.fn-button--toggled[aria-disabled=true] .fn-button__text {
-  color: #0070f2
+.fn-button.fn-button--toggled[aria-disabled=true] .fn-button__text, .fn-button.fn-button--toggled:disabled .fn-button__text, .fn-button.fn-button--toggled.is-disabled .fn-button__text, .fn-button.fn-button--selected[aria-disabled=true] .fn-button__text, .fn-button.fn-button--selected:disabled .fn-button__text, .fn-button.fn-button--selected.is-disabled .fn-button__text {
+  color: #0070f2;
 }

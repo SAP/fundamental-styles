@@ -1,16 +1,25 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-dynamic-side {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,102 +28,99 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
 }
-.fd-dynamic-side::after,
-.fd-dynamic-side::before {
+.fd-dynamic-side::before, .fd-dynamic-side::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-dynamic-side .fd-dynamic-side__main {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  width: 75%
+  width: 75%;
 }
-.fd-dynamic-side .fd-dynamic-side__main::after,
-.fd-dynamic-side .fd-dynamic-side__main::before {
+.fd-dynamic-side .fd-dynamic-side__main::before, .fd-dynamic-side .fd-dynamic-side__main::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-dynamic-side .fd-dynamic-side__side {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
-.fd-dynamic-side .fd-dynamic-side__side::after,
-.fd-dynamic-side .fd-dynamic-side__side::before {
+.fd-dynamic-side .fd-dynamic-side__side::before, .fd-dynamic-side .fd-dynamic-side__side::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-dynamic-side--sm .fd-dynamic-side__main {
-  width: 100%
+  width: 100%;
 }
 .fd-dynamic-side--sm .fd-dynamic-side__side {
-  display: none
+  display: none;
 }
 .fd-dynamic-side--md .fd-dynamic-side__main {
-  width: 66.666%
+  width: 66.666%;
 }
 .fd-dynamic-side--md .fd-dynamic-side__side {
-  display: block
+  display: block;
 }
 .fd-dynamic-side--xl .fd-dynamic-side__main {
-  width: 75%
+  width: 75%;
 }
 .fd-dynamic-side--equal-split {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .fd-dynamic-side--equal-split .fd-dynamic-side__main {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-  width: 50%
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  width: 50%;
 }
 .fd-dynamic-side--equal-split .fd-dynamic-side__side {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-  width: 50%
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  width: 50%;
 }
 .fd-dynamic-side--below {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .fd-dynamic-side--below .fd-dynamic-side__main {
-  width: 100%
+  width: 100%;
 }
 .fd-dynamic-side--below .fd-dynamic-side__side {
   display: block;
   width: 100%;
   -webkit-box-flex: 0;
-  -ms-flex: none;
-  flex: none
+      -ms-flex: none;
+          flex: none;
 }

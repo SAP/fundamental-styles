@@ -1,121 +1,110 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-checkbox {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-transition: all 150ms ease-in;
   transition: all 150ms ease-in;
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  height: auto;
   cursor: pointer;
-  height: 1.625rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
+  min-height: 1.625rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: .25rem;
-  border-radius: .25rem
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
 }
-.fn-checkbox::after,
-.fn-checkbox::before {
+.fn-checkbox::before, .fn-checkbox::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-checkbox.is-hover,
-.fn-checkbox:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-checkbox:hover, .fn-checkbox.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 }
-.fn-checkbox.is-pressed,
-.fn-checkbox[aria-pressed=true] {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)!important;
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)!important
+.fn-checkbox[aria-pressed=true], .fn-checkbox.is-pressed {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16) !important;
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16) !important;
 }
-.fn-checkbox.is-active,
-.fn-checkbox:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)!important;
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)!important
+.fn-checkbox:active, .fn-checkbox.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16) !important;
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16) !important;
 }
 .fn-checkbox:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
-.fn-checkbox.focus-visible,
+.fn-checkbox.focus-visible, .fn-checkbox.is-focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
+}
 .fn-checkbox.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-checkbox.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
-}
-.fn-checkbox.is-disabled,
-.fn-checkbox:disabled,
-.fn-checkbox[aria-disabled=true] {
+.fn-checkbox[aria-disabled=true], .fn-checkbox:disabled, .fn-checkbox.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
-.fn-checkbox.is-readonly .fn-checkbox__input ~ .fn-checkbox__checkmark,
-.fn-checkbox[aria-readonly=true] .fn-checkbox__input ~ .fn-checkbox__checkmark,
-.fn-checkbox[readonly] .fn-checkbox__input ~ .fn-checkbox__checkmark {
+.fn-checkbox[aria-readonly=true] .fn-checkbox__input ~ .fn-checkbox__checkmark, .fn-checkbox[readonly] .fn-checkbox__input ~ .fn-checkbox__checkmark, .fn-checkbox.is-readonly .fn-checkbox__input ~ .fn-checkbox__checkmark {
   pointer-events: none;
-  border: .0625rem dashed #475e75
+  border: 0.0625rem dashed #475e75;
 }
-.fn-checkbox.is-readonly .fn-checkbox__input:checked ~ .fn-checkbox__checkmark,
-.fn-checkbox[aria-readonly=true] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark,
-.fn-checkbox[readonly] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark {
+.fn-checkbox[aria-readonly=true] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark, .fn-checkbox[readonly] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark, .fn-checkbox.is-readonly .fn-checkbox__input:checked ~ .fn-checkbox__checkmark {
   background: #f5f6f7;
-  border: .0625rem dashed #475e75
+  border: 0.0625rem dashed #475e75;
 }
-.fn-checkbox.is-readonly .fn-checkbox__input:checked ~ .fn-checkbox__checkmark::after,
-.fn-checkbox[aria-readonly=true] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark::after,
-.fn-checkbox[readonly] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark::after {
-  color: #475e75
+.fn-checkbox[aria-readonly=true] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark::after, .fn-checkbox[readonly] .fn-checkbox__input:checked ~ .fn-checkbox__checkmark::after, .fn-checkbox.is-readonly .fn-checkbox__input:checked ~ .fn-checkbox__checkmark::after {
+  color: #475e75;
 }
 .fn-checkbox.is-display {
-  pointer-events: none
+  pointer-events: none;
 }
 .fn-checkbox.is-display .fn-checkbox__checkmark {
-  border-color: #223548
+  border-color: #223548;
 }
 .fn-checkbox.is-display .fn-checkbox__input:checked ~ .fn-checkbox__checkmark {
   background: #223548;
-  border-color: #223548
+  border-color: #223548;
 }
 .fn-checkbox__input {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -125,46 +114,39 @@
   height: 0;
   opacity: 0;
   cursor: pointer;
-  position: absolute
+  position: absolute;
 }
-.fn-checkbox__input::after,
-.fn-checkbox__input::before {
+.fn-checkbox__input::before, .fn-checkbox__input::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-checkbox__input:checked ~ .fn-checkbox__checkmark {
   background: #0070f2;
-  border-color: #0070f2
+  border-color: #0070f2;
 }
 .fn-checkbox__input:checked ~ .fn-checkbox__checkmark::after {
-  opacity: 1
+  opacity: 1;
 }
-.fn-checkbox__input.is-readonly ~ .fn-checkbox__checkmark,
-.fn-checkbox__input[aria-readonly=true] ~ .fn-checkbox__checkmark,
-.fn-checkbox__input[readonly] ~ .fn-checkbox__checkmark {
+.fn-checkbox__input[aria-readonly=true] ~ .fn-checkbox__checkmark, .fn-checkbox__input[readonly] ~ .fn-checkbox__checkmark, .fn-checkbox__input.is-readonly ~ .fn-checkbox__checkmark {
   pointer-events: none;
-  border: .0625rem dashed #475e75
+  border: 0.0625rem dashed #475e75;
 }
-.fn-checkbox__input.is-readonly:checked ~ .fn-checkbox__checkmark,
-.fn-checkbox__input[aria-readonly=true]:checked ~ .fn-checkbox__checkmark,
-.fn-checkbox__input[readonly]:checked ~ .fn-checkbox__checkmark {
+.fn-checkbox__input[aria-readonly=true]:checked ~ .fn-checkbox__checkmark, .fn-checkbox__input[readonly]:checked ~ .fn-checkbox__checkmark, .fn-checkbox__input.is-readonly:checked ~ .fn-checkbox__checkmark {
   background: #f5f6f7;
-  border: .0625rem dashed #475e75
+  border: 0.0625rem dashed #475e75;
 }
-.fn-checkbox__input.is-readonly:checked ~ .fn-checkbox__checkmark::after,
-.fn-checkbox__input[aria-readonly=true]:checked ~ .fn-checkbox__checkmark::after,
-.fn-checkbox__input[readonly]:checked ~ .fn-checkbox__checkmark::after {
-  color: #475e75
+.fn-checkbox__input[aria-readonly=true]:checked ~ .fn-checkbox__checkmark::after, .fn-checkbox__input[readonly]:checked ~ .fn-checkbox__checkmark::after, .fn-checkbox__input.is-readonly:checked ~ .fn-checkbox__checkmark::after {
+  color: #475e75;
 }
 .fn-checkbox__checkmark {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -172,55 +154,60 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 150ms ease-in;
   transition: all 150ms ease-in;
   width: 1.125rem;
   height: 1.125rem;
-  border-radius: .25rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  margin-top: 0.125rem;
+  border-radius: 0.25rem;
   background-color: #f5f6f7;
-  border: .125rem solid #475e75
+  border: 0.125rem solid #475e75;
 }
-.fn-checkbox__checkmark::after,
-.fn-checkbox__checkmark::before {
+.fn-checkbox__checkmark::before, .fn-checkbox__checkmark::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-checkbox__checkmark::after {
   opacity: 0;
   display: block;
   content: "\e05b";
-  font-size: .75rem;
-  color: #fff;
-  font-family: SAP-icons
+  font-size: 0.75rem;
+  color: #ffffff;
+  font-family: "SAP-icons";
 }
 .fn-checkbox__label {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  margin-left: .25rem;
-  color: #223548
+  margin-left: 0.25rem;
+  color: #223548;
 }
-.fn-checkbox__label::after,
-.fn-checkbox__label::before {
+.fn-checkbox__label::before, .fn-checkbox__label::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-checkbox__label[dir=rtl],
-[dir=rtl] .fn-checkbox__label {
-  margin-right: .25rem;
-  margin-left: 0
+[dir=rtl] .fn-checkbox__label, .fn-checkbox__label[dir=rtl] {
+  margin-right: 0.25rem;
+  margin-left: 0;
+}
+.fn-checkbox__label--truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

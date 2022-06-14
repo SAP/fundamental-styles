@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-textarea {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,159 +19,121 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: relative;
-  border-radius: .375rem
+  border-radius: 0.375rem;
 }
-.fn-textarea::after,
-.fn-textarea::before {
+.fn-textarea::before, .fn-textarea::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-textarea__input {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  padding-left: .5rem;
-  padding-right: .25rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  padding-left: 0.5rem;
+  padding-right: 0.25rem;
   width: 100%;
   resize: none;
   min-height: 6rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #223548;
   background: #f5f6f7;
-  border-radius: .375rem
+  border-radius: 0.375rem;
 }
-.fn-textarea__input::after,
-.fn-textarea__input::before {
+.fn-textarea__input::before, .fn-textarea__input::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-textarea__input[dir=rtl],
-[dir=rtl] .fn-textarea__input {
-  padding-right: .5rem;
-  padding-left: .25rem
+[dir=rtl] .fn-textarea__input, .fn-textarea__input[dir=rtl] {
+  padding-right: 0.5rem;
+  padding-left: 0.25rem;
 }
 .fn-textarea__input::-webkit-input-placeholder {
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.375rem;
-  color: #223548
+  color: #223548;
 }
-.fn-textarea__input:-moz-placeholder,
-.fn-textarea__input:-ms-input-placeholder,
-.fn-textarea__input::-moz-placeholder,
-.fn-textarea__input::-webkit-input-placeholder,
-.fn-textarea__input::placeholder {
-  font-size: .875rem;
+.fn-textarea__input::-webkit-input-placeholder, .fn-textarea__input:-moz-placeholder, .fn-textarea__input::-moz-placeholder, .fn-textarea__input:-ms-input-placeholder, .fn-textarea__input::placeholder {
+  font-size: 0.875rem;
   line-height: 1.375rem;
-  color: #223548
+  color: #223548;
 }
-.fn-textarea__input.is-hover,
-.fn-textarea__input:hover {
-  background: #fff;
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-textarea__input:hover, .fn-textarea__input.is-hover {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 }
-.fn-textarea__input.is-active,
-.fn-textarea__input:active {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-textarea__input:active, .fn-textarea__input.is-active {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-textarea__input.is-active + .fn-textarea__border::after,
-.fn-textarea__input:active + .fn-textarea__border::after {
-  border-bottom-color: transparent
+.fn-textarea__input:active + .fn-textarea__border::after, .fn-textarea__input.is-active + .fn-textarea__border::after {
+  border-bottom-color: transparent;
 }
-.fn-textarea__input.focus-visible,
-.fn-textarea__input.is-focus {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-textarea__input.focus-visible, .fn-textarea__input.is-focus {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-textarea__input.focus-visible + .fn-textarea__border::after,
-.fn-textarea__input.is-focus + .fn-textarea__border::after {
-  border-bottom-color: transparent
+.fn-textarea__input.focus-visible + .fn-textarea__border::after, .fn-textarea__input.is-focus + .fn-textarea__border::after {
+  border-bottom-color: transparent;
 }
-.fn-textarea__input.is-readonly + .fn-textarea__border::after,
-.fn-textarea__input[aria-readonly=true] + .fn-textarea__border::after,
-.fn-textarea__input[readonly] + .fn-textarea__border::after {
-  border-bottom: .0625rem dashed #5f7992
+.fn-textarea__input[aria-readonly=true] + .fn-textarea__border::after, .fn-textarea__input[readonly] + .fn-textarea__border::after, .fn-textarea__input.is-readonly + .fn-textarea__border::after {
+  border-bottom: 0.0625rem dashed #5f7992;
 }
-.fn-textarea__input.is-readonly.is-active,
-.fn-textarea__input.is-readonly:active,
-.fn-textarea__input[aria-readonly=true].is-active,
-.fn-textarea__input[aria-readonly=true]:active,
-.fn-textarea__input[readonly].is-active,
-.fn-textarea__input[readonly]:active {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-textarea__input[aria-readonly=true]:active, .fn-textarea__input[aria-readonly=true].is-active, .fn-textarea__input[readonly]:active, .fn-textarea__input[readonly].is-active, .fn-textarea__input.is-readonly:active, .fn-textarea__input.is-readonly.is-active {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-textarea__input.is-readonly.is-active + .fn-textarea__border::after,
-.fn-textarea__input.is-readonly:active + .fn-textarea__border::after,
-.fn-textarea__input[aria-readonly=true].is-active + .fn-textarea__border::after,
-.fn-textarea__input[aria-readonly=true]:active + .fn-textarea__border::after,
-.fn-textarea__input[readonly].is-active + .fn-textarea__border::after,
-.fn-textarea__input[readonly]:active + .fn-textarea__border::after {
-  border-bottom-color: transparent
+.fn-textarea__input[aria-readonly=true]:active + .fn-textarea__border::after, .fn-textarea__input[aria-readonly=true].is-active + .fn-textarea__border::after, .fn-textarea__input[readonly]:active + .fn-textarea__border::after, .fn-textarea__input[readonly].is-active + .fn-textarea__border::after, .fn-textarea__input.is-readonly:active + .fn-textarea__border::after, .fn-textarea__input.is-readonly.is-active + .fn-textarea__border::after {
+  border-bottom-color: transparent;
 }
-.fn-textarea__input.is-readonly.focus-visible,
-.fn-textarea__input.is-readonly.is-focus,
-.fn-textarea__input[aria-readonly=true].focus-visible,
-.fn-textarea__input[aria-readonly=true].is-focus,
-.fn-textarea__input[readonly].focus-visible,
-.fn-textarea__input[readonly].is-focus {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-textarea__input[aria-readonly=true].focus-visible, .fn-textarea__input[aria-readonly=true].is-focus, .fn-textarea__input[readonly].focus-visible, .fn-textarea__input[readonly].is-focus, .fn-textarea__input.is-readonly.focus-visible, .fn-textarea__input.is-readonly.is-focus {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-textarea__input.is-readonly.focus-visible + .fn-textarea__border::after,
-.fn-textarea__input.is-readonly.is-focus + .fn-textarea__border::after,
-.fn-textarea__input[aria-readonly=true].focus-visible + .fn-textarea__border::after,
-.fn-textarea__input[aria-readonly=true].is-focus + .fn-textarea__border::after,
-.fn-textarea__input[readonly].focus-visible + .fn-textarea__border::after,
-.fn-textarea__input[readonly].is-focus + .fn-textarea__border::after {
-  border-bottom-color: transparent
+.fn-textarea__input[aria-readonly=true].focus-visible + .fn-textarea__border::after, .fn-textarea__input[aria-readonly=true].is-focus + .fn-textarea__border::after, .fn-textarea__input[readonly].focus-visible + .fn-textarea__border::after, .fn-textarea__input[readonly].is-focus + .fn-textarea__border::after, .fn-textarea__input.is-readonly.focus-visible + .fn-textarea__border::after, .fn-textarea__input.is-readonly.is-focus + .fn-textarea__border::after {
+  border-bottom-color: transparent;
 }
-.fn-textarea__input.is-disabled,
-.fn-textarea__input:disabled,
-.fn-textarea__input[aria-disabled=true] {
-  outline: 0;
+.fn-textarea__input[aria-disabled=true], .fn-textarea__input:disabled, .fn-textarea__input.is-disabled {
+  outline: none;
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
-.fn-textarea__input.is-disabled + .fn-textarea__border::after,
-.fn-textarea__input:disabled + .fn-textarea__border::after,
-.fn-textarea__input[aria-disabled=true] + .fn-textarea__border::after {
-  outline: 0;
+.fn-textarea__input[aria-disabled=true] + .fn-textarea__border::after, .fn-textarea__input:disabled + .fn-textarea__border::after, .fn-textarea__input.is-disabled + .fn-textarea__border::after {
+  outline: none;
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-textarea__border {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -180,13 +142,12 @@
   overflow: hidden;
   position: absolute;
   pointer-events: none;
-  border-radius: .375rem
+  border-radius: 0.375rem;
 }
-.fn-textarea__border::after,
-.fn-textarea__border::before {
+.fn-textarea__border::before, .fn-textarea__border::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-textarea__border::after {
   left: 0;
@@ -194,12 +155,10 @@
   bottom: 0;
   content: "";
   position: absolute;
-  border-bottom: .125rem solid #5f7992
+  border-bottom: 0.125rem solid #5f7992;
 }
-.fn-textarea.is-disabled,
-.fn-textarea:disabled,
-.fn-textarea[aria-disabled=true] {
-  outline: 0;
+.fn-textarea[aria-disabled=true], .fn-textarea:disabled, .fn-textarea.is-disabled {
+  outline: none;
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }

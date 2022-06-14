@@ -1,53 +1,60 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-wizard {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  position: relative
+  position: relative;
 }
-.fd-wizard::after,
-.fd-wizard::before {
+.fd-wizard::before, .fd-wizard::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__navigation {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 0
+  border: 0;
 }
-.fd-wizard__navigation::after,
-.fd-wizard__navigation::before {
+.fd-wizard__navigation::before, .fd-wizard__navigation::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__progress-bar {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -60,35 +67,33 @@
   list-style-type: none;
   background: var(--sapObjectHeader_Background);
   -webkit-box-shadow: var(--sapContent_HeaderShadow);
-  box-shadow: var(--sapContent_HeaderShadow)
+          box-shadow: var(--sapContent_HeaderShadow);
 }
-.fd-wizard__progress-bar::after,
-.fd-wizard__progress-bar::before {
+.fd-wizard__progress-bar::before, .fd-wizard__progress-bar::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__progress-bar--sm {
   padding-left: 1rem;
-  padding-right: 1rem
+  padding-right: 1rem;
 }
-.fd-wizard__progress-bar--lg,
-.fd-wizard__progress-bar--md {
+.fd-wizard__progress-bar--md, .fd-wizard__progress-bar--lg {
   padding-left: 2rem;
-  padding-right: 2rem
+  padding-right: 2rem;
 }
 .fd-wizard__progress-bar--xl {
   padding-left: 3rem;
-  padding-right: 3rem
+  padding-right: 3rem;
 }
 .fd-wizard__step-wrapper {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -96,24 +101,23 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 2rem
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
 }
-.fd-wizard__step-wrapper::after,
-.fd-wizard__step-wrapper::before {
+.fd-wizard__step-wrapper::before, .fd-wizard__step-wrapper::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__step {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -123,138 +127,145 @@
   display: table-cell;
   vertical-align: top;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box
+          box-sizing: content-box;
 }
-.fd-wizard__step::after,
-.fd-wizard__step::before {
+.fd-wizard__step::before, .fd-wizard__step::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
+}
+.fd-wizard__step--completed .fd-wizard__label {
+  color: var(--fdWizard_Completed_Step_Label_Color);
 }
 .fd-wizard__step--completed .fd-wizard__step-indicator {
   background: var(--sapObjectHeader_Background);
   color: var(--fdWizard_Completed_Step_Color);
-  border: var(--fdWizard_Completed_Step_Border)
+  border: var(--fdWizard_Completed_Step_Border);
 }
-.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
-.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Completed_Step_Icon_Color)
+.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon], .fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: var(--fdWizard_Completed_Step_Icon_Color);
+}
+.fd-wizard__step--current .fd-wizard__label {
+  color: var(--fdWizard_Current_Step_Label_Color);
 }
 .fd-wizard__step--current .fd-wizard__step-indicator {
+  border: var(--fdWizard_Current_Step_Border);
   position: relative;
-  background: var(--sapSelectedColor);
-  color: var(--fdWizard_Current_Step_Color)
+  background: var(--fdWizard_Current_Step_Background_Color);
+  color: var(--fdWizard_Current_Step_Color);
 }
-.fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
-.fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Current_Step_Icon_Color)
+.fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon], .fd-wizard__step--current .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: var(--fdWizard_Current_Step_Icon_Color);
 }
 .fd-wizard__step--current .fd-wizard__step-indicator::after {
   content: "";
   bottom: -1rem;
-  left: -.1875rem;
+  left: -0.1875rem;
   position: absolute;
   display: inline-block;
-  width: calc(100% + .375rem);
+  width: calc(100% + 0.375rem);
   height: var(--fdWizard_Selection_Bar_Height);
   background: var(--fdWizard_Selection_Bar_Background);
-  border-radius: .125rem .125rem 0 0;
-  -webkit-transition: all 125ms ease-in;
-  transition: all 125ms ease-in
+  border-radius: 0.125rem 0.125rem 0 0;
+  -webkit-transition: all 0.125s ease-in;
+  transition: all 0.125s ease-in;
+}
+.fd-wizard__step--upcoming .fd-wizard__label,
+.fd-wizard__step--upcoming .fd-wizard__optional-text {
+  color: var(--sapContent_LabelColor);
 }
 .fd-wizard__step--upcoming .fd-wizard__step-indicator {
   background: var(--sapObjectHeader_Background);
-  border: var(--fdWizard_Upcoming_Step_Border);
-  color: var(--fdWizard_Upcoming_Step_Color)
+  border: 0.0625rem solid var(--sapList_BorderColor);
+  color: var(--fdWizard_Upcoming_Step_Color);
 }
-.fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
-.fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Upcoming_Step_Icon_Color)
+.fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon], .fd-wizard__step--upcoming .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: var(--fdWizard_Upcoming_Step_Icon_Color);
 }
 .fd-wizard__step--upcoming .fd-wizard__step-container {
   cursor: default;
-  pointer-events: none
+  pointer-events: none;
+}
+.fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__label {
+  color: var(--fdWizard_Completed_Step_Label_Color);
 }
 .fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator {
   background: var(--sapObjectHeader_Background);
   color: var(--fdWizard_Completed_Step_Color);
-  border: var(--fdWizard_Completed_Step_Border)
+  border: var(--fdWizard_Completed_Step_Border);
 }
-.fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon],
-.fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Completed_Step_Icon_Color)
+.fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon [class*=sap-icon], .fd-wizard__step--upcoming.fd-wizard__step--completed .fd-wizard__step-indicator .fd-wizard__icon[class*=sap-icon] {
+  color: var(--fdWizard_Completed_Step_Icon_Color);
 }
 .fd-wizard__step--no-label {
-  min-width: 4rem
+  min-width: 4rem;
 }
 .fd-wizard__step--no-label .fd-wizard__label-container {
-  display: none
+  display: none;
 }
 .fd-wizard__step--stacked-top.fd-wizard__step--stacked {
   min-width: 4rem;
-  width: 4rem
+  width: 4rem;
 }
 .fd-wizard__step--stacked-top.fd-wizard__step--stacked .fd-wizard__connector {
   display: block;
-  min-width: auto
+  min-width: auto;
 }
 .fd-wizard__step--stacked {
-  width: .25rem;
-  min-width: auto
+  width: 0.25rem;
+  min-width: auto;
 }
 .fd-wizard__step--stacked:last-child {
-  padding-right: 2.375rem
+  padding-right: 2.375rem;
 }
-.fd-wizard__step--stacked:last-child[dir=rtl],
-[dir=rtl] .fd-wizard__step--stacked:last-child {
+[dir=rtl] .fd-wizard__step--stacked:last-child, .fd-wizard__step--stacked:last-child[dir=rtl] {
   padding-right: 0;
-  padding-left: 2.375rem
+  padding-left: 2.375rem;
 }
 .fd-wizard__step--stacked .fd-wizard__connector,
 .fd-wizard__step--stacked .fd-wizard__label-container {
-  display: none
+  display: none;
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(1) {
-  z-index: calc(10 - 1)
+  z-index: calc(10 - 1);
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(2) {
-  z-index: calc(10 - 2)
+  z-index: calc(10 - 2);
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(3) {
-  z-index: calc(10 - 3)
+  z-index: calc(10 - 3);
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(4) {
-  z-index: calc(10 - 4)
+  z-index: calc(10 - 4);
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(5) {
-  z-index: calc(10 - 5)
+  z-index: calc(10 - 5);
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(6) {
-  z-index: calc(10 - 6)
+  z-index: calc(10 - 6);
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(7) {
-  z-index: calc(10 - 7)
+  z-index: calc(10 - 7);
 }
 .fd-wizard__step--stacked.fd-wizard__step--upcoming:nth-child(8) {
-  z-index: calc(10 - 8)
+  z-index: calc(10 - 8);
 }
 .fd-wizard__step--active .fd-wizard__step-indicator {
   background: var(--sapActiveColor);
   border-color: var(--fdWizard_Active_Step_Border_Color);
-  color: var(--fdWizard_Active_Step_Color)
+  color: var(--fdWizard_Active_Step_Color);
 }
-.fd-wizard__step--active .fd-wizard__icon [class*=sap-icon],
-.fd-wizard__step--active .fd-wizard__icon[class*=sap-icon] {
-  color: var(--fdWizard_Active_Step_Icon_Color)
+.fd-wizard__step--active .fd-wizard__icon [class*=sap-icon], .fd-wizard__step--active .fd-wizard__icon[class*=sap-icon] {
+  color: var(--fdWizard_Active_Step_Icon_Color);
 }
 .fd-wizard__step-container {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -262,31 +273,29 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
-.fd-wizard__step-container::after,
-.fd-wizard__step-container::before {
+.fd-wizard__step-container::before, .fd-wizard__step-container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fd-wizard__step-container.is-focus,
-.fd-wizard__step-container:focus {
+.fd-wizard__step-container:focus, .fd-wizard__step-container.is-focus {
   z-index: 5;
   outline-style: var(--sapContent_FocusStyle);
   outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor)
+  outline-color: var(--sapContent_FocusColor);
 }
 .fd-wizard__step-indicator {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -294,26 +303,30 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   min-width: 2rem;
   min-height: 2rem;
   width: 2rem;
   height: 2rem;
-  margin: 0 .1875rem
+  margin: 0;
+  margin-left: 0.1875rem;
+  margin-right: var(--fdWizard_Step_Indicator_Margin_Right);
 }
-.fd-wizard__step-indicator::after,
-.fd-wizard__step-indicator::before {
+.fd-wizard__step-indicator::before, .fd-wizard__step-indicator::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fd-wizard__icon [class*=sap-icon],
-.fd-wizard__icon[class*=sap-icon] {
+[dir=rtl] .fd-wizard__step-indicator, .fd-wizard__step-indicator[dir=rtl] {
+  margin-right: 0.1875rem;
+  margin-left: var(--fdWizard_Step_Indicator_Margin_Right);
+}
+.fd-wizard__icon [class*=sap-icon], .fd-wizard__icon[class*=sap-icon] {
   color: inherit;
   background: inherit;
   font-size: inherit;
@@ -323,22 +336,22 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
-  font-size: var(--sapFontLargeSize)
+  font-size: var(--sapFontLargeSize);
 }
 .fd-wizard__label-container {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -347,18 +360,17 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 100%;
   max-height: 2rem;
   color: var(--sapContent_LabelColor);
-  overflow: hidden
+  overflow: hidden;
 }
-.fd-wizard__label-container::after,
-.fd-wizard__label-container::before {
+.fd-wizard__label-container::before, .fd-wizard__label-container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__label-container--optional .fd-wizard__label {
   display: -webkit-box;
@@ -367,16 +379,16 @@
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
-  max-height: 1rem
+  max-height: 1rem;
 }
 .fd-wizard__label {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -386,23 +398,24 @@
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
+  font-family: var(--fdWizard_Label_Font_Family);
+  font-weight: var(--fdWizard_Label_Font_Weight);
   line-height: 1rem;
-  max-width: 100%
+  max-width: 100%;
 }
-.fd-wizard__label::after,
-.fd-wizard__label::before {
+.fd-wizard__label::before, .fd-wizard__label::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__optional-text {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -413,122 +426,149 @@
   white-space: normal;
   text-overflow: ellipsis;
   max-width: 100%;
-  font-size: var(--sapFontSmallSize)
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_LabelColor);
 }
-.fd-wizard__optional-text::after,
-.fd-wizard__optional-text::before {
+.fd-wizard__optional-text::before, .fd-wizard__optional-text::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__connector {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  margin: .5rem;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0.5rem;
   max-width: 100%;
   min-width: 1rem;
-  border-bottom: .0625rem solid var(--sapList_BorderColor)
+  border-bottom: 0.0625rem solid var(--sapList_BorderColor);
 }
-.fd-wizard__connector::after,
-.fd-wizard__connector::before {
+.fd-wizard__connector::before, .fd-wizard__connector::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__connector--active {
-  border-bottom-color: var(--fdWizard_Connector_Active_Border_Color)
+  border-bottom-color: var(--fdWizard_Connector_Active_Border_Color);
 }
 .fd-wizard__connector--branching {
-  border-bottom-style: dashed
+  border-bottom-style: dashed;
 }
 .fd-wizard__content {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
+  padding-top: 1rem;
   width: 100%;
   height: 100%;
-  padding-top: 1rem;
-  background: var(--fdWizard_Content_Default_Background)
+  background: var(--sapBackgroundColor);
 }
-.fd-wizard__content::after,
-.fd-wizard__content::before {
+.fd-wizard__content::before, .fd-wizard__content::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__content--sm {
   padding-left: 1rem;
-  padding-right: 1rem
+  padding-right: 1rem;
 }
-.fd-wizard__content--lg,
-.fd-wizard__content--md {
+.fd-wizard__content--md, .fd-wizard__content--lg {
   padding-left: 2rem;
-  padding-right: 2rem
+  padding-right: 2rem;
 }
 .fd-wizard__content--xl {
   padding-left: 3rem;
-  padding-right: 3rem
+  padding-right: 3rem;
 }
 .fd-wizard__content--solid {
-  background: var(--fdWizard_Content_Solid_Background)
+  background: var(--fdWizard_Content_Solid_Background);
 }
 .fd-wizard__content--list {
-  background: var(--fdWizard_Content_List_Background)
+  background: var(--fdWizard_Content_List_Background);
 }
 .fd-wizard__content--transparent {
-  background: var(--fdWizard_Content_Transparent_Background)
+  background: var(--fdWizard_Content_Transparent_Background);
+}
+.fd-wizard__step-content-container {
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding: var(--fdWizard_Step_Content_Container_Spacing);
+  background-color: var(--fdWizard_Step_Content_Container_Background_Color);
+  border-radius: var(--sapElement_BorderCornerRadius);
+}
+.fd-wizard__step-content-container::before, .fd-wizard__step-content-container::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-size: inherit;
+}
+.fd-wizard__step-content-container--sm {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.fd-wizard__step-content-container--md, .fd-wizard__step-content-container--lg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.fd-wizard__step-content-container--xl {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .fd-wizard__next-step {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  margin-top: 1rem
+  margin-top: 1rem;
 }
-.fd-wizard__next-step::after,
-.fd-wizard__next-step::before {
+.fd-wizard__next-step::before, .fd-wizard__next-step::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-wizard__next-step--sm {
   padding-left: 1rem;
-  padding-right: 1rem
+  padding-right: 1rem;
 }
-.fd-wizard__next-step--lg,
-.fd-wizard__next-step--md {
+.fd-wizard__next-step--md, .fd-wizard__next-step--lg {
   padding-left: 2rem;
-  padding-right: 2rem
+  padding-right: 2rem;
 }
 .fd-wizard__next-step--xl {
   padding-left: 3rem;
-  padding-right: 3rem
+  padding-right: 3rem;
 }
 .fd-wizard__next-step--floating {
   position: absolute;
-  bottom: 3.5rem
+  bottom: 3.5rem;
 }

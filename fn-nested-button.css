@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-nested-button {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -20,211 +20,166 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1.125rem;
   height: 1.125rem;
   min-width: 1.125rem;
   min-height: 1.125rem;
   cursor: pointer;
   border-radius: 50%;
-  background: 0 0
+  background: transparent;
 }
-.fn-nested-button::after,
-.fn-nested-button::before {
+.fn-nested-button::before, .fn-nested-button::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-nested-button [class*=sap-icon] {
   width: 100%;
   height: 1.125rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1.125rem;
-  color: #475e75
+  color: #475e75;
 }
 .fn-nested-button--split::after {
   content: " ";
   height: 1rem;
-  left: -.125rem;
-  top: .0625rem;
-  width: .125rem;
+  left: -0.125rem;
+  top: 0.0625rem;
+  width: 0.125rem;
   position: absolute;
-  border-radius: .0625rem;
-  background: #475e75
+  border-radius: 0.0625rem;
+  background: #475e75;
 }
-.fn-nested-button--split[dir=rtl]::after,
-[dir=rtl] .fn-nested-button--split::after {
+[dir=rtl] .fn-nested-button--split::after, .fn-nested-button--split[dir=rtl]::after {
   left: auto;
-  right: -.125rem
+  right: -0.125rem;
 }
 .fn-nested-button--split.fn-nested-button--emphasized [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
 .fn-nested-button--split.fn-nested-button--emphasized::after {
-  background: #fff
+  background: #ffffff;
 }
-.fn-nested-button--split.fn-nested-button--emphasized.is-hover [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:hover [class*=sap-icon] {
-  color: #475e75
+.fn-nested-button--split.fn-nested-button--emphasized:hover [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized.is-hover [class*=sap-icon] {
+  color: #475e75;
 }
-.fn-nested-button--split.fn-nested-button--emphasized.is-hover.is-active,
-.fn-nested-button--split.fn-nested-button--emphasized.is-hover:active,
-.fn-nested-button--split.fn-nested-button--emphasized:hover.is-active,
-.fn-nested-button--split.fn-nested-button--emphasized:hover:active {
-  background: #fff
+.fn-nested-button--split.fn-nested-button--emphasized:hover:active, .fn-nested-button--split.fn-nested-button--emphasized:hover.is-active, .fn-nested-button--split.fn-nested-button--emphasized.is-hover:active, .fn-nested-button--split.fn-nested-button--emphasized.is-hover.is-active {
+  background: #ffffff;
 }
-.fn-nested-button--split.fn-nested-button--emphasized.is-hover.is-active [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized.is-hover:active [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:hover.is-active [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:hover:active [class*=sap-icon] {
-  color: #0070f2
+.fn-nested-button--split.fn-nested-button--emphasized:hover:active [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized:hover.is-active [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized.is-hover:active [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized.is-hover.is-active [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-nested-button--split.fn-nested-button--emphasized.is-active,
-.fn-nested-button--split.fn-nested-button--emphasized:active {
-  background: #fff
+.fn-nested-button--split.fn-nested-button--emphasized:active, .fn-nested-button--split.fn-nested-button--emphasized.is-active {
+  background: #ffffff;
 }
-.fn-nested-button--split.fn-nested-button--emphasized.is-active [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:active [class*=sap-icon] {
-  color: #0070f2
+.fn-nested-button--split.fn-nested-button--emphasized:active [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized.is-active [class*=sap-icon] {
+  color: #0070f2;
 }
 .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible) {
-  background: 0 0
+  background: transparent;
 }
 .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon] {
-  color: #475e75
+.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover [class*=sap-icon] {
+  color: #475e75;
 }
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover.is-active,
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover:active,
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover.is-active,
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover:active {
-  background: #fff
+.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover:active, .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover.is-active, .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover:active, .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover.is-active {
+  background: #ffffff;
 }
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #0070f2
+.fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #0070f2;
 }
-.fn-nested-button--split.fn-nested-button--emphasized.focus-visible,
-.fn-nested-button--split.fn-nested-button--emphasized.is-focus {
-  background: 0 0;
-  -webkit-box-shadow: 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #fff
+.fn-nested-button--split.fn-nested-button--emphasized.focus-visible, .fn-nested-button--split.fn-nested-button--emphasized.is-focus {
+  background: transparent;
+  -webkit-box-shadow: 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #ffffff;
 }
-.fn-nested-button--split.fn-nested-button--emphasized.focus-visible [class*=sap-icon],
-.fn-nested-button--split.fn-nested-button--emphasized.is-focus [class*=sap-icon] {
-  color: #fff
+.fn-nested-button--split.fn-nested-button--emphasized.focus-visible [class*=sap-icon], .fn-nested-button--split.fn-nested-button--emphasized.is-focus [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-nested-button.is-hover,
-.fn-nested-button:hover {
-  background: #eaecee
+.fn-nested-button:hover, .fn-nested-button.is-hover {
+  background: #eaecee;
 }
-.fn-nested-button.is-hover::after,
-.fn-nested-button:hover::after {
-  content: none
+.fn-nested-button:hover::after, .fn-nested-button.is-hover::after {
+  content: none;
 }
-.fn-nested-button.is-hover.is-active,
-.fn-nested-button.is-hover:active,
-.fn-nested-button:hover.is-active,
-.fn-nested-button:hover:active {
+.fn-nested-button:hover:active, .fn-nested-button:hover.is-active, .fn-nested-button.is-hover:active, .fn-nested-button.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #0070f2
+          box-shadow: none;
+  background: #0070f2;
 }
-.fn-nested-button.is-hover.is-active [class*=sap-icon],
-.fn-nested-button.is-hover:active [class*=sap-icon],
-.fn-nested-button:hover.is-active [class*=sap-icon],
-.fn-nested-button:hover:active [class*=sap-icon] {
-  color: #fff
+.fn-nested-button:hover:active [class*=sap-icon], .fn-nested-button:hover.is-active [class*=sap-icon], .fn-nested-button.is-hover:active [class*=sap-icon], .fn-nested-button.is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-nested-button.is-active,
-.fn-nested-button:active {
+.fn-nested-button:active, .fn-nested-button.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #0070f2
+          box-shadow: none;
+  background: #0070f2;
 }
-.fn-nested-button.is-active [class*=sap-icon],
-.fn-nested-button:active [class*=sap-icon] {
-  color: #fff
+.fn-nested-button:active [class*=sap-icon], .fn-nested-button.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-nested-button.is-active::after,
-.fn-nested-button:active::after {
-  content: none
+.fn-nested-button:active::after, .fn-nested-button.is-active::after {
+  content: none;
 }
 .fn-nested-button:focus:not(.focus-visible) {
-  background: 0 0;
-  outline: 0
+  background: transparent;
+  outline: none;
 }
 .fn-nested-button:focus:not(.focus-visible) [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
-.fn-nested-button:focus:not(.focus-visible).is-hover,
-.fn-nested-button:focus:not(.focus-visible):hover {
-  background: #eaecee
+.fn-nested-button:focus:not(.focus-visible):hover, .fn-nested-button:focus:not(.focus-visible).is-hover {
+  background: #eaecee;
 }
-.fn-nested-button:focus:not(.focus-visible).is-hover.is-active,
-.fn-nested-button:focus:not(.focus-visible).is-hover:active,
-.fn-nested-button:focus:not(.focus-visible):hover.is-active,
-.fn-nested-button:focus:not(.focus-visible):hover:active {
+.fn-nested-button:focus:not(.focus-visible):hover:active, .fn-nested-button:focus:not(.focus-visible):hover.is-active, .fn-nested-button:focus:not(.focus-visible).is-hover:active, .fn-nested-button:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background: #0070f2
+          box-shadow: none;
+  background: #0070f2;
 }
-.fn-nested-button:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon],
-.fn-nested-button:focus:not(.focus-visible).is-hover:active [class*=sap-icon],
-.fn-nested-button:focus:not(.focus-visible):hover.is-active [class*=sap-icon],
-.fn-nested-button:focus:not(.focus-visible):hover:active [class*=sap-icon] {
-  color: #fff
+.fn-nested-button:focus:not(.focus-visible):hover:active [class*=sap-icon], .fn-nested-button:focus:not(.focus-visible):hover.is-active [class*=sap-icon], .fn-nested-button:focus:not(.focus-visible).is-hover:active [class*=sap-icon], .fn-nested-button:focus:not(.focus-visible).is-hover.is-active [class*=sap-icon] {
+  color: #ffffff;
 }
-.fn-nested-button.focus-visible,
-.fn-nested-button.is-focus {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+.fn-nested-button.focus-visible, .fn-nested-button.is-focus {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
-.fn-nested-button.focus-visible [class*=sap-icon],
-.fn-nested-button.is-focus [class*=sap-icon] {
-  color: #475e75
+.fn-nested-button.focus-visible [class*=sap-icon], .fn-nested-button.is-focus [class*=sap-icon] {
+  color: #475e75;
 }
-.fn-nested-button.focus-visible::after,
-.fn-nested-button.is-focus::after {
-  content: none
+.fn-nested-button.focus-visible::after, .fn-nested-button.is-focus::after {
+  content: none;
 }
-.fn-nested-button.is-disabled,
-.fn-nested-button:disabled,
-.fn-nested-button[aria-disabled=true] {
+.fn-nested-button[aria-disabled=true], .fn-nested-button:disabled, .fn-nested-button.is-disabled {
   cursor: not-allowed;
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-nested-button--absolute-right {
-  right: .25rem;
+  right: 0.25rem;
   z-index: 2;
-  top: .4375rem;
-  position: absolute
+  top: 0.4375rem;
+  position: absolute;
 }
-.fn-nested-button--absolute-right[dir=rtl],
-[dir=rtl] .fn-nested-button--absolute-right {
+[dir=rtl] .fn-nested-button--absolute-right, .fn-nested-button--absolute-right[dir=rtl] {
   right: auto;
-  left: .25rem
+  left: 0.25rem;
 }
 .fn-nested-button--absolute-left {
-  left: .25rem;
+  left: 0.25rem;
   z-index: 2;
-  top: .4375rem;
-  position: absolute
+  top: 0.4375rem;
+  position: absolute;
 }
-.fn-nested-button--absolute-left[dir=rtl],
-[dir=rtl] .fn-nested-button--absolute-left {
+[dir=rtl] .fn-nested-button--absolute-left, .fn-nested-button--absolute-left[dir=rtl] {
   left: auto;
-  right: .25rem
+  right: 0.25rem;
 }

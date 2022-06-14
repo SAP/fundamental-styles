@@ -1,52 +1,59 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-token {
   cursor: default;
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  background-color: var(--sapButton_TokenBackground);
-  color: var(--sapTextColor);
   font-size: var(--sapFontSize);
+  color: var(--fdToken_Text_Color);
+  border-radius: var(--fdToken_Border_Radius);
+  background-color: var(--sapButton_TokenBackground);
+  border: var(--sapButton_BorderWidth) solid var(--sapButton_TokenBorderColor);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  padding: .25rem 0 .25rem .3125rem;
-  border-radius: .25rem;
+  padding: 0.25rem 0 0.25rem var(--fdToken_Padding_Left);
   white-space: nowrap;
   max-width: 100%;
   min-width: 3.625rem;
   text-overflow: clip;
   height: 1.625rem;
   line-height: 1.5rem;
-  border: var(--sapButton_BorderWidth) solid var(--sapButton_TokenBorderColor)
 }
-.fd-token::after,
-.fd-token::before {
+.fd-token::before, .fd-token::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fd-token[dir=rtl],
-[dir=rtl] .fd-token {
+[dir=rtl] .fd-token, .fd-token[dir=rtl] {
   padding-left: 0;
-  padding-right: .3125rem
+  padding-right: var(--fdToken_Padding_Left);
 }
 .fd-token__text {
   overflow: hidden;
@@ -54,22 +61,22 @@
   min-width: auto;
   width: 100%;
   text-overflow: ellipsis;
-  text-shadow: var(--fdToken_Text_Shadow)
+  text-shadow: var(--fdToken_Text_Shadow);
 }
 .fd-token__close {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   font-size: var(--sapFontSmallSize);
   color: var(--sapContent_IconColor);
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   width: 1.75rem;
   min-width: 1.75rem;
   height: 1.625rem;
@@ -80,102 +87,118 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.fd-token__close::after,
-.fd-token__close::before {
+.fd-token__close::before, .fd-token__close::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-token__close::before {
-  font-family: SAP-icons;
+  font-family: "SAP-icons";
   text-align: center;
   text-decoration: inherit;
   text-transform: none;
-  text-rendering: optimizeLegibility
+  text-rendering: optimizeLegibility;
 }
 .fd-token__close::before {
-  content: "\e03e"
+  content: "\e03e";
 }
-.fd-token__close.is-focus,
-.fd-token__close:focus {
+.fd-token__close:focus, .fd-token__close.is-focus {
   z-index: 5;
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
 .fd-token:hover {
-  background-color: var(--sapButton_Hover_Background);
-  border-color: var(--sapButton_Hover_BorderColor)
+  background-color: var(--fdToken_Background_Color_Hover);
+  border-color: var(--fdToken_Border_Color_Hover);
+  -webkit-box-shadow: var(--fdToken_Box_Shadow_Hover);
+          box-shadow: var(--fdToken_Box_Shadow_Hover);
 }
-.fd-token.is-focus,
-.fd-token:focus {
+.fd-token:focus, .fd-token.is-focus {
   z-index: 5;
   -webkit-box-shadow: none;
-  box-shadow: none;
-  outline-offset: -.1875rem;
+          box-shadow: none;
+  outline-offset: var(--fdToken_Outline_Offset);
   outline-width: var(--sapContent_FocusWidth);
   outline-color: var(--sapContent_FocusColor);
-  outline-style: var(--sapContent_FocusStyle)
+  outline-style: var(--sapContent_FocusStyle);
 }
 .fd-token--compact {
-  padding: .1rem 0 .1rem .25rem;
+  padding: 0.1rem 0 0.1rem 0.25rem;
   height: 1.25rem;
   min-width: 3rem;
-  line-height: 1.125rem
+  line-height: 1.125rem;
 }
 .fd-token--compact .fd-token__close {
-  padding: .1rem .25rem;
+  padding: 0.1rem 0.25rem;
   vertical-align: baseline;
   width: 1.25rem;
   min-width: 1.25rem;
-  height: 1.25rem
+  height: 1.25rem;
 }
-.fd-token--compact[dir=rtl],
-[dir=rtl] .fd-token--compact {
+[dir=rtl] .fd-token--compact, .fd-token--compact[dir=rtl] {
   padding-left: 0;
-  padding-right: .25rem
+  padding-right: 0.25rem;
+}
+.fd-token--compact:focus, .fd-token--compact.is-focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline-offset: var(--fdToken_Outline_Offset);
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-offset: var(--fdToken_Outline_Offset_Compact);
 }
 .fd-token--selected {
   color: var(--sapButton_Selected_TextColor);
   background-color: var(--sapButton_Selected_Background);
-  border-color: var(--sapButton_Selected_BorderColor)
+  border-color: var(--sapButton_Selected_BorderColor);
 }
 .fd-token--selected .fd-token__close {
-  color: var(--sapButton_Selected_TextColor)
+  color: var(--sapButton_Selected_TextColor);
 }
 .fd-token--selected:hover {
   background-color: var(--sapButton_Selected_Hover_Background);
-  border-color: var(--sapButton_Selected_Hover_BorderColor)
+  border-color: var(--sapButton_Selected_Hover_BorderColor);
+  -webkit-box-shadow: var(--fdToken_Box_Shadow_Selected_Hover);
+          box-shadow: var(--fdToken_Box_Shadow_Selected_Hover);
 }
-.fd-token--selected.is-focus,
-.fd-token--selected:focus {
+.fd-token--selected:focus, .fd-token--selected.is-focus {
   z-index: 5;
   -webkit-box-shadow: none;
-  box-shadow: none;
-  outline-offset: -.1875rem;
+          box-shadow: none;
+  outline-offset: var(--fdToken_Outline_Offset);
   outline-width: var(--sapContent_FocusWidth);
   outline-color: var(--sapContent_FocusColor);
   outline-style: var(--sapContent_FocusStyle);
-  outline-color: var(--sapContent_ContrastFocusColor)
+  outline-color: var(--fdToken_Border_Color_Selected_Focus);
 }
 .fd-token--readonly {
   color: var(--sapContent_LabelColor);
-  padding: .25rem .375rem
+  background-color: var(--fdToken_Background_Color_Read_Only);
+  padding: 0.25rem 0.375rem;
+  border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
 }
 .fd-token--readonly.fd-token--compact {
-  padding: .1rem .25rem
+  padding: 0.1rem 0.25rem;
 }
-.fd-token--readonly.fd-token--compact[dir=rtl],
-[dir=rtl] .fd-token--readonly.fd-token--compact {
-  padding-left: .25rem
+[dir=rtl] .fd-token--readonly.fd-token--compact, .fd-token--readonly.fd-token--compact[dir=rtl] {
+  padding-left: 0.25rem;
 }
-.fd-token--readonly[dir=rtl],
-[dir=rtl] .fd-token--readonly {
-  padding-left: .375rem
+.fd-token--readonly:hover, .fd-token--readonly.is-hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: var(--sapContent_LabelColor);
+  background-color: var(--fdToken_Background_Color_Read_Only);
+  border: var(--sapButton_BorderWidth) solid var(--fdToken_Border_Color_Read_Only);
+}
+[dir=rtl] .fd-token--readonly, .fd-token--readonly[dir=rtl] {
+  padding-left: 0.375rem;
 }

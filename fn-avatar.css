@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-avatar {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -18,49 +18,47 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 150ms ease-in;
   transition: all 150ms ease-in;
-  border-width: .125rem;
-  border-style: solid
+  border-width: 0.125rem;
+  border-style: solid;
 }
-.fn-avatar::after,
-.fn-avatar::before {
+.fn-avatar::before, .fn-avatar::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-avatar__initials {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  font-weight: 700
+  font-weight: bold;
 }
-.fn-avatar__initials::after,
-.fn-avatar__initials::before {
+.fn-avatar__initials::before, .fn-avatar__initials::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-avatar__icon {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -68,26 +66,25 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+      -ms-flex-align: center;
+          align-items: center;
 }
-.fn-avatar__icon::after,
-.fn-avatar__icon::before {
+.fn-avatar__icon::before, .fn-avatar__icon::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-avatar__thumbnail {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -99,17 +96,16 @@
   border-radius: inherit;
   background-size: cover;
   background-position: 50%;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
-.fn-avatar__thumbnail::after,
-.fn-avatar__thumbnail::before {
+.fn-avatar__thumbnail::before, .fn-avatar__thumbnail::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-avatar--thumbnail {
   border: none;
-  position: relative
+  position: relative;
 }
 .fn-avatar--thumbnail::after {
   top: 0;
@@ -119,1064 +115,928 @@
   height: 100%;
   position: absolute;
   border-radius: 50%;
-  transition: all .2s;
-  -webkit-transition: all .2s
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 .fn-avatar--thumbnail.fn-avatar--interactive {
-  cursor: pointer
+  cursor: pointer;
 }
-.fn-avatar--thumbnail.fn-avatar--interactive.is-hover::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:hover::after {
-  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.1)),to(rgba(21,39,58,.1)));
-  background: linear-gradient(0deg,rgba(21,39,58,.1),rgba(21,39,58,.1))
+.fn-avatar--thumbnail.fn-avatar--interactive:hover::after, .fn-avatar--thumbnail.fn-avatar--interactive.is-hover::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(21, 39, 58, 0.1)), to(rgba(21, 39, 58, 0.1)));
+  background: linear-gradient(0deg, rgba(21, 39, 58, 0.1), rgba(21, 39, 58, 0.1));
 }
-.fn-avatar--thumbnail.fn-avatar--interactive.is-hover.is-active::after,
-.fn-avatar--thumbnail.fn-avatar--interactive.is-hover:active::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:hover.is-active::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:hover:active::after {
-  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.15)),to(rgba(21,39,58,.15)));
-  background: linear-gradient(0deg,rgba(21,39,58,.15),rgba(21,39,58,.15))
+.fn-avatar--thumbnail.fn-avatar--interactive:hover:active::after, .fn-avatar--thumbnail.fn-avatar--interactive:hover.is-active::after, .fn-avatar--thumbnail.fn-avatar--interactive.is-hover:active::after, .fn-avatar--thumbnail.fn-avatar--interactive.is-hover.is-active::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(21, 39, 58, 0.15)), to(rgba(21, 39, 58, 0.15)));
+  background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15));
 }
-.fn-avatar--thumbnail.fn-avatar--interactive.is-active::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:active::after {
-  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.15)),to(rgba(21,39,58,.15)));
-  background: linear-gradient(0deg,rgba(21,39,58,.15),rgba(21,39,58,.15))
+.fn-avatar--thumbnail.fn-avatar--interactive:active::after, .fn-avatar--thumbnail.fn-avatar--interactive.is-active::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(21, 39, 58, 0.15)), to(rgba(21, 39, 58, 0.15)));
+  background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15));
 }
 .fn-avatar--thumbnail.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border: .125rem solid #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+  outline: none;
+  border: 0.125rem solid #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
 .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   border: none;
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover {
-  outline: 0;
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
+  outline: none;
   border: none;
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover::after {
-  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.1)),to(rgba(21,39,58,.1)));
-  background: linear-gradient(0deg,rgba(21,39,58,.1),rgba(21,39,58,.1))
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover::after, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(21, 39, 58, 0.1)), to(rgba(21, 39, 58, 0.1)));
+  background: linear-gradient(0deg, rgba(21, 39, 58, 0.1), rgba(21, 39, 58, 0.1));
 }
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
-  outline: 0;
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
+  outline: none;
   border: none;
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active::after,
-.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover:active::after {
-  background: -webkit-gradient(linear,left bottom,left top,from(rgba(21,39,58,.15)),to(rgba(21,39,58,.15)));
-  background: linear-gradient(0deg,rgba(21,39,58,.15),rgba(21,39,58,.15))
+.fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover:active::after, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active::after, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active::after, .fn-avatar--thumbnail.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(21, 39, 58, 0.15)), to(rgba(21, 39, 58, 0.15)));
+  background: linear-gradient(0deg, rgba(21, 39, 58, 0.15), rgba(21, 39, 58, 0.15));
 }
-.fn-avatar--thumbnail.fn-avatar--interactive.focus-visible,
-.fn-avatar--thumbnail.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border: .125rem solid #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-avatar--thumbnail.fn-avatar--interactive.focus-visible, .fn-avatar--thumbnail.fn-avatar--interactive.is-focus {
+  outline: none;
+  border: 0.125rem solid #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-avatar--thumbnail.fn-avatar--interactive.is-disabled,
-.fn-avatar--thumbnail.fn-avatar--interactive:disabled,
-.fn-avatar--thumbnail.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--thumbnail.fn-avatar--interactive[aria-disabled=true], .fn-avatar--thumbnail.fn-avatar--interactive:disabled, .fn-avatar--thumbnail.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--xl {
   width: 4rem;
   height: 4rem;
   min-width: 4rem;
   min-height: 4rem;
-  border-radius: 1rem
+  border-radius: 1rem;
 }
 .fn-avatar--xl.fn-avatar--circle {
-  border-radius: 50%
+  border-radius: 50%;
 }
 .fn-avatar--xl .fn-avatar__initials {
   font-size: 1.125rem;
-  line-height: 1.375rem
+  line-height: 1.375rem;
 }
 .fn-avatar--xl .fn-avatar__icon {
   width: 2rem;
-  height: 2rem
+  height: 2rem;
 }
 .fn-avatar--xl .fn-avatar__icon [class*=sap-icon] {
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 .fn-avatar--l {
   width: 3rem;
   height: 3rem;
   min-width: 3rem;
   min-height: 3rem;
-  border-radius: .875rem
+  border-radius: 0.875rem;
 }
 .fn-avatar--l.fn-avatar--circle {
-  border-radius: 50%
+  border-radius: 50%;
 }
 .fn-avatar--l .fn-avatar__initials {
-  font-size: .875rem;
-  line-height: 1.375rem
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 .fn-avatar--l .fn-avatar__icon {
   width: 1.5rem;
-  height: 1.5rem
+  height: 1.5rem;
 }
 .fn-avatar--l .fn-avatar__icon [class*=sap-icon] {
-  font-size: 1.125rem
+  font-size: 1.125rem;
 }
 .fn-avatar--m {
   width: 2.5rem;
   height: 2.5rem;
   min-width: 2.5rem;
   min-height: 2.5rem;
-  border-radius: .625rem
+  border-radius: 0.625rem;
 }
 .fn-avatar--m.fn-avatar--circle {
-  border-radius: 50%
+  border-radius: 50%;
 }
 .fn-avatar--m .fn-avatar__initials {
-  font-size: .75rem;
-  line-height: 1.125rem
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 .fn-avatar--m .fn-avatar__icon {
   width: 1.25rem;
-  height: 1.25rem
+  height: 1.25rem;
 }
 .fn-avatar--m .fn-avatar__icon [class*=sap-icon] {
-  font-size: .9375rem
+  font-size: 0.9375rem;
 }
 .fn-avatar--s {
   width: 2rem;
   height: 2rem;
   min-width: 2rem;
   min-height: 2rem;
-  border-radius: .5rem
+  border-radius: 0.5rem;
 }
 .fn-avatar--s.fn-avatar--circle {
-  border-radius: 50%
+  border-radius: 50%;
 }
 .fn-avatar--s .fn-avatar__initials {
-  font-size: .75rem;
-  line-height: 1.125rem
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 .fn-avatar--s .fn-avatar__icon {
   width: 1rem;
-  height: 1rem
+  height: 1rem;
 }
 .fn-avatar--s .fn-avatar__icon [class*=sap-icon] {
-  font-size: .75rem
+  font-size: 0.75rem;
 }
 .fn-avatar--xs {
   width: 1.5rem;
   height: 1.5rem;
   min-width: 1.5rem;
   min-height: 1.5rem;
-  border-radius: .375rem
+  border-radius: 0.375rem;
 }
 .fn-avatar--xs.fn-avatar--circle {
-  border-radius: 50%
+  border-radius: 50%;
 }
 .fn-avatar--xs .fn-avatar__initials {
-  font-size: .75rem;
-  line-height: 1.125rem
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 .fn-avatar--xs .fn-avatar__icon {
-  width: .75rem;
-  height: .75rem
+  width: 0.75rem;
+  height: 0.75rem;
 }
 .fn-avatar--xs .fn-avatar__icon [class*=sap-icon] {
-  font-size: .5625rem
+  font-size: 0.5625rem;
 }
 .fn-avatar--mango {
   background: #fff3b8;
-  border-color: #fff3b8
+  border-color: #fff3b8;
 }
 .fn-avatar--mango .fn-avatar__initials {
-  color: #a93e00
+  color: #a93e00;
 }
 .fn-avatar--mango [class*=sap-icon] {
-  color: #a93e00
+  color: #a93e00;
 }
 .fn-avatar--mango.fn-avatar--interactive {
   cursor: pointer;
   background: #c35500;
-  border-color: #c35500
+  border-color: #c35500;
 }
 .fn-avatar--mango.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--mango.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--mango.fn-avatar--interactive.is-hover,
-.fn-avatar--mango.fn-avatar--interactive:hover {
+.fn-avatar--mango.fn-avatar--interactive:hover, .fn-avatar--mango.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #a93e00;
-  border-color: #a93e00
+  border-color: #a93e00;
 }
-.fn-avatar--mango.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--mango.fn-avatar--interactive.is-hover:active,
-.fn-avatar--mango.fn-avatar--interactive:hover.is-active,
-.fn-avatar--mango.fn-avatar--interactive:hover:active {
+.fn-avatar--mango.fn-avatar--interactive:hover:active, .fn-avatar--mango.fn-avatar--interactive:hover.is-active, .fn-avatar--mango.fn-avatar--interactive.is-hover:active, .fn-avatar--mango.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #8d2a00;
-  border-color: #8d2a00
+  border-color: #8d2a00;
 }
-.fn-avatar--mango.fn-avatar--interactive.is-active,
-.fn-avatar--mango.fn-avatar--interactive:active {
+.fn-avatar--mango.fn-avatar--interactive:active, .fn-avatar--mango.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #8d2a00;
-  border-color: #8d2a00
+  border-color: #8d2a00;
 }
 .fn-avatar--mango.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #c35500;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500;
-  box-shadow: 0 0 0 .125rem #c35500
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500;
+          box-shadow: 0 0 0 0.125rem #c35500;
 }
 .fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #c35500;
-  border-color: #c35500
+  border-color: #c35500;
 }
-.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #a93e00;
-  border-color: #a93e00
+  border-color: #a93e00;
 }
-.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--mango.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #8d2a00;
-  border-color: #8d2a00
+  border-color: #8d2a00;
 }
-.fn-avatar--mango.fn-avatar--interactive.focus-visible,
-.fn-avatar--mango.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--mango.fn-avatar--interactive.focus-visible, .fn-avatar--mango.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #c35500;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500;
-  box-shadow: 0 0 0 .125rem #c35500
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500;
+          box-shadow: 0 0 0 0.125rem #c35500;
 }
-.fn-avatar--mango.fn-avatar--interactive.is-disabled,
-.fn-avatar--mango.fn-avatar--interactive:disabled,
-.fn-avatar--mango.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--mango.fn-avatar--interactive[aria-disabled=true], .fn-avatar--mango.fn-avatar--interactive:disabled, .fn-avatar--mango.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--red {
   background: #ffd5ea;
-  border-color: #ffd5ea
+  border-color: #ffd5ea;
 }
 .fn-avatar--red .fn-avatar__initials {
-  color: #aa0808
+  color: #aa0808;
 }
 .fn-avatar--red [class*=sap-icon] {
-  color: #aa0808
+  color: #aa0808;
 }
 .fn-avatar--red.fn-avatar--interactive {
   cursor: pointer;
   background: #d20a0a;
-  border-color: #d20a0a
+  border-color: #d20a0a;
 }
 .fn-avatar--red.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--red.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--red.fn-avatar--interactive.is-hover,
-.fn-avatar--red.fn-avatar--interactive:hover {
+.fn-avatar--red.fn-avatar--interactive:hover, .fn-avatar--red.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #aa0808;
-  border-color: #aa0808
+  border-color: #aa0808;
 }
-.fn-avatar--red.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--red.fn-avatar--interactive.is-hover:active,
-.fn-avatar--red.fn-avatar--interactive:hover.is-active,
-.fn-avatar--red.fn-avatar--interactive:hover:active {
+.fn-avatar--red.fn-avatar--interactive:hover:active, .fn-avatar--red.fn-avatar--interactive:hover.is-active, .fn-avatar--red.fn-avatar--interactive.is-hover:active, .fn-avatar--red.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #840606;
-  border-color: #840606
+  border-color: #840606;
 }
-.fn-avatar--red.fn-avatar--interactive.is-active,
-.fn-avatar--red.fn-avatar--interactive:active {
+.fn-avatar--red.fn-avatar--interactive:active, .fn-avatar--red.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #840606;
-  border-color: #840606
+  border-color: #840606;
 }
 .fn-avatar--red.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #d20a0a;
-  -webkit-box-shadow: 0 0 0 .125rem #d20a0a;
-  box-shadow: 0 0 0 .125rem #d20a0a
+  -webkit-box-shadow: 0 0 0 0.125rem #d20a0a;
+          box-shadow: 0 0 0 0.125rem #d20a0a;
 }
 .fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #d20a0a;
-  border-color: #d20a0a
+  border-color: #d20a0a;
 }
-.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #aa0808;
-  border-color: #aa0808
+  border-color: #aa0808;
 }
-.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--red.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #840606;
-  border-color: #840606
+  border-color: #840606;
 }
-.fn-avatar--red.fn-avatar--interactive.focus-visible,
-.fn-avatar--red.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--red.fn-avatar--interactive.focus-visible, .fn-avatar--red.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #d20a0a;
-  -webkit-box-shadow: 0 0 0 .125rem #d20a0a;
-  box-shadow: 0 0 0 .125rem #d20a0a
+  -webkit-box-shadow: 0 0 0 0.125rem #d20a0a;
+          box-shadow: 0 0 0 0.125rem #d20a0a;
 }
-.fn-avatar--red.fn-avatar--interactive.is-disabled,
-.fn-avatar--red.fn-avatar--interactive:disabled,
-.fn-avatar--red.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--red.fn-avatar--interactive[aria-disabled=true], .fn-avatar--red.fn-avatar--interactive:disabled, .fn-avatar--red.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--raspberry {
   background: #ffdce8;
-  border-color: #ffdce8
+  border-color: #ffdce8;
 }
 .fn-avatar--raspberry .fn-avatar__initials {
-  color: #ba066c
+  color: #ba066c;
 }
 .fn-avatar--raspberry [class*=sap-icon] {
-  color: #ba066c
+  color: #ba066c;
 }
 .fn-avatar--raspberry.fn-avatar--interactive {
   cursor: pointer;
   background: #df1278;
-  border-color: #df1278
+  border-color: #df1278;
 }
 .fn-avatar--raspberry.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--raspberry.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--raspberry.fn-avatar--interactive.is-hover,
-.fn-avatar--raspberry.fn-avatar--interactive:hover {
+.fn-avatar--raspberry.fn-avatar--interactive:hover, .fn-avatar--raspberry.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #ba066c;
-  border-color: #ba066c
+  border-color: #ba066c;
 }
-.fn-avatar--raspberry.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--raspberry.fn-avatar--interactive.is-hover:active,
-.fn-avatar--raspberry.fn-avatar--interactive:hover.is-active,
-.fn-avatar--raspberry.fn-avatar--interactive:hover:active {
+.fn-avatar--raspberry.fn-avatar--interactive:hover:active, .fn-avatar--raspberry.fn-avatar--interactive:hover.is-active, .fn-avatar--raspberry.fn-avatar--interactive.is-hover:active, .fn-avatar--raspberry.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #9b015d;
-  border-color: #9b015d
+  border-color: #9b015d;
 }
-.fn-avatar--raspberry.fn-avatar--interactive.is-active,
-.fn-avatar--raspberry.fn-avatar--interactive:active {
+.fn-avatar--raspberry.fn-avatar--interactive:active, .fn-avatar--raspberry.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #9b015d;
-  border-color: #9b015d
+  border-color: #9b015d;
 }
 .fn-avatar--raspberry.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #df1278;
-  -webkit-box-shadow: 0 0 0 .125rem #df1278;
-  box-shadow: 0 0 0 .125rem #df1278
+  -webkit-box-shadow: 0 0 0 0.125rem #df1278;
+          box-shadow: 0 0 0 0.125rem #df1278;
 }
 .fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #df1278;
-  border-color: #df1278
+  border-color: #df1278;
 }
-.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #ba066c;
-  border-color: #ba066c
+  border-color: #ba066c;
 }
-.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--raspberry.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #9b015d;
-  border-color: #9b015d
+  border-color: #9b015d;
 }
-.fn-avatar--raspberry.fn-avatar--interactive.focus-visible,
-.fn-avatar--raspberry.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--raspberry.fn-avatar--interactive.focus-visible, .fn-avatar--raspberry.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #df1278;
-  -webkit-box-shadow: 0 0 0 .125rem #df1278;
-  box-shadow: 0 0 0 .125rem #df1278
+  -webkit-box-shadow: 0 0 0 0.125rem #df1278;
+          box-shadow: 0 0 0 0.125rem #df1278;
 }
-.fn-avatar--raspberry.fn-avatar--interactive.is-disabled,
-.fn-avatar--raspberry.fn-avatar--interactive:disabled,
-.fn-avatar--raspberry.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--raspberry.fn-avatar--interactive[aria-disabled=true], .fn-avatar--raspberry.fn-avatar--interactive:disabled, .fn-avatar--raspberry.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--pink {
   background: #ffdcf3;
-  border-color: #ffdcf3
+  border-color: #ffdcf3;
 }
 .fn-avatar--pink .fn-avatar__initials {
-  color: #a100c2
+  color: #a100c2;
 }
 .fn-avatar--pink [class*=sap-icon] {
-  color: #a100c2
+  color: #a100c2;
 }
 .fn-avatar--pink.fn-avatar--interactive {
   cursor: pointer;
   background: #cc00dc;
-  border-color: #cc00dc
+  border-color: #cc00dc;
 }
 .fn-avatar--pink.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--pink.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--pink.fn-avatar--interactive.is-hover,
-.fn-avatar--pink.fn-avatar--interactive:hover {
+.fn-avatar--pink.fn-avatar--interactive:hover, .fn-avatar--pink.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #a100c2;
-  border-color: #a100c2
+  border-color: #a100c2;
 }
-.fn-avatar--pink.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--pink.fn-avatar--interactive.is-hover:active,
-.fn-avatar--pink.fn-avatar--interactive:hover.is-active,
-.fn-avatar--pink.fn-avatar--interactive:hover:active {
+.fn-avatar--pink.fn-avatar--interactive:hover:active, .fn-avatar--pink.fn-avatar--interactive:hover.is-active, .fn-avatar--pink.fn-avatar--interactive.is-hover:active, .fn-avatar--pink.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #7800a4;
-  border-color: #7800a4
+  border-color: #7800a4;
 }
-.fn-avatar--pink.fn-avatar--interactive.is-active,
-.fn-avatar--pink.fn-avatar--interactive:active {
+.fn-avatar--pink.fn-avatar--interactive:active, .fn-avatar--pink.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #7800a4;
-  border-color: #7800a4
+  border-color: #7800a4;
 }
 .fn-avatar--pink.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #cc00dc;
-  -webkit-box-shadow: 0 0 0 .125rem #cc00dc;
-  box-shadow: 0 0 0 .125rem #cc00dc
+  -webkit-box-shadow: 0 0 0 0.125rem #cc00dc;
+          box-shadow: 0 0 0 0.125rem #cc00dc;
 }
 .fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #cc00dc;
-  border-color: #cc00dc
+  border-color: #cc00dc;
 }
-.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #a100c2;
-  border-color: #a100c2
+  border-color: #a100c2;
 }
-.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--pink.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #7800a4;
-  border-color: #7800a4
+  border-color: #7800a4;
 }
-.fn-avatar--pink.fn-avatar--interactive.focus-visible,
-.fn-avatar--pink.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--pink.fn-avatar--interactive.focus-visible, .fn-avatar--pink.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #cc00dc;
-  -webkit-box-shadow: 0 0 0 .125rem #cc00dc;
-  box-shadow: 0 0 0 .125rem #cc00dc
+  -webkit-box-shadow: 0 0 0 0.125rem #cc00dc;
+          box-shadow: 0 0 0 0.125rem #cc00dc;
 }
-.fn-avatar--pink.fn-avatar--interactive.is-disabled,
-.fn-avatar--pink.fn-avatar--interactive:disabled,
-.fn-avatar--pink.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--pink.fn-avatar--interactive[aria-disabled=true], .fn-avatar--pink.fn-avatar--interactive:disabled, .fn-avatar--pink.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--indigo {
   background: #e2d8ff;
-  border-color: #e2d8ff
+  border-color: #e2d8ff;
 }
 .fn-avatar--indigo .fn-avatar__initials {
-  color: #470ced
+  color: #470ced;
 }
 .fn-avatar--indigo [class*=sap-icon] {
-  color: #470ced
+  color: #470ced;
 }
 .fn-avatar--indigo.fn-avatar--interactive {
   cursor: pointer;
   background: #5d36ff;
-  border-color: #5d36ff
+  border-color: #5d36ff;
 }
 .fn-avatar--indigo.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--indigo.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--indigo.fn-avatar--interactive.is-hover,
-.fn-avatar--indigo.fn-avatar--interactive:hover {
+.fn-avatar--indigo.fn-avatar--interactive:hover, .fn-avatar--indigo.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #470ced;
-  border-color: #470ced
+  border-color: #470ced;
 }
-.fn-avatar--indigo.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--indigo.fn-avatar--interactive.is-hover:active,
-.fn-avatar--indigo.fn-avatar--interactive:hover.is-active,
-.fn-avatar--indigo.fn-avatar--interactive:hover:active {
+.fn-avatar--indigo.fn-avatar--interactive:hover:active, .fn-avatar--indigo.fn-avatar--interactive:hover.is-active, .fn-avatar--indigo.fn-avatar--interactive.is-hover:active, .fn-avatar--indigo.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #2c13ad;
-  border-color: #2c13ad
+  border-color: #2c13ad;
 }
-.fn-avatar--indigo.fn-avatar--interactive.is-active,
-.fn-avatar--indigo.fn-avatar--interactive:active {
+.fn-avatar--indigo.fn-avatar--interactive:active, .fn-avatar--indigo.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #2c13ad;
-  border-color: #2c13ad
+  border-color: #2c13ad;
 }
 .fn-avatar--indigo.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #5d36ff;
-  -webkit-box-shadow: 0 0 0 .125rem #5d36ff;
-  box-shadow: 0 0 0 .125rem #5d36ff
+  -webkit-box-shadow: 0 0 0 0.125rem #5d36ff;
+          box-shadow: 0 0 0 0.125rem #5d36ff;
 }
 .fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #5d36ff;
-  border-color: #5d36ff
+  border-color: #5d36ff;
 }
-.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #470ced;
-  border-color: #470ced
+  border-color: #470ced;
 }
-.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--indigo.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #2c13ad;
-  border-color: #2c13ad
+  border-color: #2c13ad;
 }
-.fn-avatar--indigo.fn-avatar--interactive.focus-visible,
-.fn-avatar--indigo.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--indigo.fn-avatar--interactive.focus-visible, .fn-avatar--indigo.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #5d36ff;
-  -webkit-box-shadow: 0 0 0 .125rem #5d36ff;
-  box-shadow: 0 0 0 .125rem #5d36ff
+  -webkit-box-shadow: 0 0 0 0.125rem #5d36ff;
+          box-shadow: 0 0 0 0.125rem #5d36ff;
 }
-.fn-avatar--indigo.fn-avatar--interactive.is-disabled,
-.fn-avatar--indigo.fn-avatar--interactive:disabled,
-.fn-avatar--indigo.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--indigo.fn-avatar--interactive[aria-disabled=true], .fn-avatar--indigo.fn-avatar--interactive:disabled, .fn-avatar--indigo.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--blue {
   background: #d1efff;
-  border-color: #d1efff
+  border-color: #d1efff;
 }
 .fn-avatar--blue .fn-avatar__initials {
-  color: #0057d2
+  color: #0057d2;
 }
 .fn-avatar--blue [class*=sap-icon] {
-  color: #0057d2
+  color: #0057d2;
 }
 .fn-avatar--blue.fn-avatar--interactive {
   cursor: pointer;
   background: #0070f2;
-  border-color: #0070f2
+  border-color: #0070f2;
 }
 .fn-avatar--blue.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--blue.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--blue.fn-avatar--interactive.is-hover,
-.fn-avatar--blue.fn-avatar--interactive:hover {
+.fn-avatar--blue.fn-avatar--interactive:hover, .fn-avatar--blue.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0057d2;
-  border-color: #0057d2
+  border-color: #0057d2;
 }
-.fn-avatar--blue.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--blue.fn-avatar--interactive.is-hover:active,
-.fn-avatar--blue.fn-avatar--interactive:hover.is-active,
-.fn-avatar--blue.fn-avatar--interactive:hover:active {
+.fn-avatar--blue.fn-avatar--interactive:hover:active, .fn-avatar--blue.fn-avatar--interactive:hover.is-active, .fn-avatar--blue.fn-avatar--interactive.is-hover:active, .fn-avatar--blue.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0040b0;
-  border-color: #0040b0
+  border-color: #0040b0;
 }
-.fn-avatar--blue.fn-avatar--interactive.is-active,
-.fn-avatar--blue.fn-avatar--interactive:active {
+.fn-avatar--blue.fn-avatar--interactive:active, .fn-avatar--blue.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0040b0;
-  border-color: #0040b0
+  border-color: #0040b0;
 }
 .fn-avatar--blue.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #0070f2;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
 .fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0070f2;
-  border-color: #0070f2
+  border-color: #0070f2;
 }
-.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0057d2;
-  border-color: #0057d2
+  border-color: #0057d2;
 }
-.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--blue.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #0040b0;
-  border-color: #0040b0
+  border-color: #0040b0;
 }
-.fn-avatar--blue.fn-avatar--interactive.focus-visible,
-.fn-avatar--blue.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--blue.fn-avatar--interactive.focus-visible, .fn-avatar--blue.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #0070f2;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-avatar--blue.fn-avatar--interactive.is-disabled,
-.fn-avatar--blue.fn-avatar--interactive:disabled,
-.fn-avatar--blue.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--blue.fn-avatar--interactive[aria-disabled=true], .fn-avatar--blue.fn-avatar--interactive:disabled, .fn-avatar--blue.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--teal {
   background: #c2fcee;
-  border-color: #c2fcee
+  border-color: #c2fcee;
 }
 .fn-avatar--teal .fn-avatar__initials {
-  color: #046c7a
+  color: #046c7a;
 }
 .fn-avatar--teal [class*=sap-icon] {
-  color: #046c7a
+  color: #046c7a;
 }
 .fn-avatar--teal.fn-avatar--interactive {
   cursor: pointer;
   background: #07838f;
-  border-color: #07838f
+  border-color: #07838f;
 }
 .fn-avatar--teal.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--teal.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--teal.fn-avatar--interactive.is-hover,
-.fn-avatar--teal.fn-avatar--interactive:hover {
+.fn-avatar--teal.fn-avatar--interactive:hover, .fn-avatar--teal.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #046c7a;
-  border-color: #046c7a
+  border-color: #046c7a;
 }
-.fn-avatar--teal.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--teal.fn-avatar--interactive.is-hover:active,
-.fn-avatar--teal.fn-avatar--interactive:hover.is-active,
-.fn-avatar--teal.fn-avatar--interactive:hover:active {
+.fn-avatar--teal.fn-avatar--interactive:hover:active, .fn-avatar--teal.fn-avatar--interactive:hover.is-active, .fn-avatar--teal.fn-avatar--interactive.is-hover:active, .fn-avatar--teal.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #035663;
-  border-color: #035663
+  border-color: #035663;
 }
-.fn-avatar--teal.fn-avatar--interactive.is-active,
-.fn-avatar--teal.fn-avatar--interactive:active {
+.fn-avatar--teal.fn-avatar--interactive:active, .fn-avatar--teal.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #035663;
-  border-color: #035663
+  border-color: #035663;
 }
 .fn-avatar--teal.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #07838f;
-  -webkit-box-shadow: 0 0 0 .125rem #07838f;
-  box-shadow: 0 0 0 .125rem #07838f
+  -webkit-box-shadow: 0 0 0 0.125rem #07838f;
+          box-shadow: 0 0 0 0.125rem #07838f;
 }
 .fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #07838f;
-  border-color: #07838f
+  border-color: #07838f;
 }
-.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #046c7a;
-  border-color: #046c7a
+  border-color: #046c7a;
 }
-.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--teal.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #035663;
-  border-color: #035663
+  border-color: #035663;
 }
-.fn-avatar--teal.fn-avatar--interactive.focus-visible,
-.fn-avatar--teal.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--teal.fn-avatar--interactive.focus-visible, .fn-avatar--teal.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #07838f;
-  -webkit-box-shadow: 0 0 0 .125rem #07838f;
-  box-shadow: 0 0 0 .125rem #07838f
+  -webkit-box-shadow: 0 0 0 0.125rem #07838f;
+          box-shadow: 0 0 0 0.125rem #07838f;
 }
-.fn-avatar--teal.fn-avatar--interactive.is-disabled,
-.fn-avatar--teal.fn-avatar--interactive:disabled,
-.fn-avatar--teal.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--teal.fn-avatar--interactive[aria-disabled=true], .fn-avatar--teal.fn-avatar--interactive:disabled, .fn-avatar--teal.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--green {
   background: #e5f2bd;
-  border-color: #e5f2bd
+  border-color: #e5f2bd;
 }
 .fn-avatar--green .fn-avatar__initials {
-  color: #256f3a
+  color: #256f3a;
 }
 .fn-avatar--green [class*=sap-icon] {
-  color: #256f3a
+  color: #256f3a;
 }
 .fn-avatar--green.fn-avatar--interactive {
   cursor: pointer;
   background: #188918;
-  border-color: #188918
+  border-color: #188918;
 }
 .fn-avatar--green.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--green.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--green.fn-avatar--interactive.is-hover,
-.fn-avatar--green.fn-avatar--interactive:hover {
+.fn-avatar--green.fn-avatar--interactive:hover, .fn-avatar--green.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #256f3a;
-  border-color: #256f3a
+  border-color: #256f3a;
 }
-.fn-avatar--green.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--green.fn-avatar--interactive.is-hover:active,
-.fn-avatar--green.fn-avatar--interactive:hover.is-active,
-.fn-avatar--green.fn-avatar--interactive:hover:active {
+.fn-avatar--green.fn-avatar--interactive:hover:active, .fn-avatar--green.fn-avatar--interactive:hover.is-active, .fn-avatar--green.fn-avatar--interactive.is-hover:active, .fn-avatar--green.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #1e592f;
-  border-color: #1e592f
+  border-color: #1e592f;
 }
-.fn-avatar--green.fn-avatar--interactive.is-active,
-.fn-avatar--green.fn-avatar--interactive:active {
+.fn-avatar--green.fn-avatar--interactive:active, .fn-avatar--green.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #1e592f;
-  border-color: #1e592f
+  border-color: #1e592f;
 }
 .fn-avatar--green.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #188918;
-  -webkit-box-shadow: 0 0 0 .125rem #188918;
-  box-shadow: 0 0 0 .125rem #188918
+  -webkit-box-shadow: 0 0 0 0.125rem #188918;
+          box-shadow: 0 0 0 0.125rem #188918;
 }
 .fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #188918;
-  border-color: #188918
+  border-color: #188918;
 }
-.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #256f3a;
-  border-color: #256f3a
+  border-color: #256f3a;
 }
-.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--green.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #1e592f;
-  border-color: #1e592f
+  border-color: #1e592f;
 }
-.fn-avatar--green.fn-avatar--interactive.focus-visible,
-.fn-avatar--green.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--green.fn-avatar--interactive.focus-visible, .fn-avatar--green.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #188918;
-  -webkit-box-shadow: 0 0 0 .125rem #188918;
-  box-shadow: 0 0 0 .125rem #188918
+  -webkit-box-shadow: 0 0 0 0.125rem #188918;
+          box-shadow: 0 0 0 0.125rem #188918;
 }
-.fn-avatar--green.fn-avatar--interactive.is-disabled,
-.fn-avatar--green.fn-avatar--interactive:disabled,
-.fn-avatar--green.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--green.fn-avatar--interactive[aria-disabled=true], .fn-avatar--green.fn-avatar--interactive:disabled, .fn-avatar--green.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--cyan {
   background: #b8f3ff;
-  border-color: #b8f3ff
+  border-color: #b8f3ff;
 }
 .fn-avatar--cyan .fn-avatar__initials {
-  color: #00709f
+  color: #00709f;
 }
 .fn-avatar--cyan [class*=sap-icon] {
-  color: #00709f
+  color: #00709f;
 }
 .fn-avatar--cyan.fn-avatar--interactive {
   cursor: pointer;
   background: #007fa9;
-  border-color: #007fa9
+  border-color: #007fa9;
 }
 .fn-avatar--cyan.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--cyan.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--cyan.fn-avatar--interactive.is-hover,
-.fn-avatar--cyan.fn-avatar--interactive:hover {
+.fn-avatar--cyan.fn-avatar--interactive:hover, .fn-avatar--cyan.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #00709f;
-  border-color: #00709f
+  border-color: #00709f;
 }
-.fn-avatar--cyan.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--cyan.fn-avatar--interactive.is-hover:active,
-.fn-avatar--cyan.fn-avatar--interactive:hover.is-active,
-.fn-avatar--cyan.fn-avatar--interactive:hover:active {
+.fn-avatar--cyan.fn-avatar--interactive:hover:active, .fn-avatar--cyan.fn-avatar--interactive:hover.is-active, .fn-avatar--cyan.fn-avatar--interactive.is-hover:active, .fn-avatar--cyan.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #025484;
-  border-color: #025484
+  border-color: #025484;
 }
-.fn-avatar--cyan.fn-avatar--interactive.is-active,
-.fn-avatar--cyan.fn-avatar--interactive:active {
+.fn-avatar--cyan.fn-avatar--interactive:active, .fn-avatar--cyan.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #025484;
-  border-color: #025484
+  border-color: #025484;
 }
 .fn-avatar--cyan.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #007fa9;
-  -webkit-box-shadow: 0 0 0 .125rem #007fa9;
-  box-shadow: 0 0 0 .125rem #007fa9
+  -webkit-box-shadow: 0 0 0 0.125rem #007fa9;
+          box-shadow: 0 0 0 0.125rem #007fa9;
 }
 .fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #007fa9;
-  border-color: #007fa9
+  border-color: #007fa9;
 }
-.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #00709f;
-  border-color: #00709f
+  border-color: #00709f;
 }
-.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--cyan.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #025484;
-  border-color: #025484
+  border-color: #025484;
 }
-.fn-avatar--cyan.fn-avatar--interactive.focus-visible,
-.fn-avatar--cyan.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--cyan.fn-avatar--interactive.focus-visible, .fn-avatar--cyan.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #007fa9;
-  -webkit-box-shadow: 0 0 0 .125rem #007fa9;
-  box-shadow: 0 0 0 .125rem #007fa9
+  -webkit-box-shadow: 0 0 0 0.125rem #007fa9;
+          box-shadow: 0 0 0 0.125rem #007fa9;
 }
-.fn-avatar--cyan.fn-avatar--interactive.is-disabled,
-.fn-avatar--cyan.fn-avatar--interactive:disabled,
-.fn-avatar--cyan.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--cyan.fn-avatar--interactive[aria-disabled=true], .fn-avatar--cyan.fn-avatar--interactive:disabled, .fn-avatar--cyan.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-avatar--grey {
   background: #eaecee;
-  border-color: #eaecee
+  border-color: #eaecee;
 }
 .fn-avatar--grey .fn-avatar__initials {
-  color: #354a5f
+  color: #354a5f;
 }
 .fn-avatar--grey [class*=sap-icon] {
-  color: #354a5f
+  color: #354a5f;
 }
 .fn-avatar--grey.fn-avatar--interactive {
   cursor: pointer;
   background: #475e75;
-  border-color: #475e75
+  border-color: #475e75;
 }
 .fn-avatar--grey.fn-avatar--interactive .fn-avatar__initials {
-  color: #fff
+  color: #ffffff;
 }
 .fn-avatar--grey.fn-avatar--interactive [class*=sap-icon] {
-  color: #fff
+  color: #ffffff;
 }
-.fn-avatar--grey.fn-avatar--interactive.is-hover,
-.fn-avatar--grey.fn-avatar--interactive:hover {
+.fn-avatar--grey.fn-avatar--interactive:hover, .fn-avatar--grey.fn-avatar--interactive.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #354a5f;
-  border-color: #354a5f
+  border-color: #354a5f;
 }
-.fn-avatar--grey.fn-avatar--interactive.is-hover.is-active,
-.fn-avatar--grey.fn-avatar--interactive.is-hover:active,
-.fn-avatar--grey.fn-avatar--interactive:hover.is-active,
-.fn-avatar--grey.fn-avatar--interactive:hover:active {
+.fn-avatar--grey.fn-avatar--interactive:hover:active, .fn-avatar--grey.fn-avatar--interactive:hover.is-active, .fn-avatar--grey.fn-avatar--interactive.is-hover:active, .fn-avatar--grey.fn-avatar--interactive.is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #223548;
-  border-color: #223548
+  border-color: #223548;
 }
-.fn-avatar--grey.fn-avatar--interactive.is-active,
-.fn-avatar--grey.fn-avatar--interactive:active {
+.fn-avatar--grey.fn-avatar--interactive:active, .fn-avatar--grey.fn-avatar--interactive.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #223548;
-  border-color: #223548
+  border-color: #223548;
 }
 .fn-avatar--grey.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+  outline: none;
+  border-color: #ffffff;
   background: #475e75;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
 .fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible) {
-  outline: 0;
+  outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #475e75;
-  border-color: #475e75
+  border-color: #475e75;
 }
-.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible).is-hover,
-.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible):hover {
+.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible):hover, .fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible).is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #354a5f;
-  border-color: #354a5f
+  border-color: #354a5f;
 }
-.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active,
-.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active,
-.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active,
-.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible):hover:active {
+.fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible):hover:active, .fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible):hover.is-active, .fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible).is-hover:active, .fn-avatar--grey.fn-avatar--interactive:focus:not(.focus-visible).is-hover.is-active {
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   background: #223548;
-  border-color: #223548
+  border-color: #223548;
 }
-.fn-avatar--grey.fn-avatar--interactive.focus-visible,
-.fn-avatar--grey.fn-avatar--interactive.is-focus {
-  outline: 0;
-  border-color: #fff;
+.fn-avatar--grey.fn-avatar--interactive.focus-visible, .fn-avatar--grey.fn-avatar--interactive.is-focus {
+  outline: none;
+  border-color: #ffffff;
   background: #475e75;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
-.fn-avatar--grey.fn-avatar--interactive.is-disabled,
-.fn-avatar--grey.fn-avatar--interactive:disabled,
-.fn-avatar--grey.fn-avatar--interactive[aria-disabled=true] {
+.fn-avatar--grey.fn-avatar--interactive[aria-disabled=true], .fn-avatar--grey.fn-avatar--interactive:disabled, .fn-avatar--grey.fn-avatar--interactive.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }

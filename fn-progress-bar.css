@@ -1,157 +1,150 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-progress-bar {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   width: 100%;
-  height: .5rem;
+  height: 0.5rem;
   position: relative;
   background: #d5dadd;
-  border-radius: .25rem
+  border-radius: 0.25rem;
 }
-.fn-progress-bar::after,
-.fn-progress-bar::before {
+.fn-progress-bar::before, .fn-progress-bar::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-progress-bar::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1.125rem;
   height: 1.125rem;
   content: "";
-  top: -.25rem;
+  top: -0.25rem;
   left: -1.375rem;
   position: absolute;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   text-transform: none;
   text-decoration: none;
-  font-family: SAP-icons
+  font-family: "SAP-icons";
 }
 .fn-progress-bar::before {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   content: "";
   z-index: 1;
-  width: .25rem;
-  height: .25rem;
+  width: 0.25rem;
+  height: 0.25rem;
   position: absolute;
   border-radius: 50%;
-  top: .125rem;
-  left: .125rem;
+  top: 0.125rem;
+  left: 0.125rem;
   background: #475e75;
   left: auto;
-  right: .125rem
+  right: 0.125rem;
 }
-.fn-progress-bar::before::after,
-.fn-progress-bar::before::before {
+.fn-progress-bar::before::before, .fn-progress-bar::before::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-progress-bar[dir=rtl]::before,
-[dir=rtl] .fn-progress-bar::before {
-  left: .125rem;
-  right: auto
+[dir=rtl] .fn-progress-bar::before, .fn-progress-bar[dir=rtl]::before {
+  left: 0.125rem;
+  right: auto;
 }
-.fn-progress-bar[dir=rtl]::after,
-[dir=rtl] .fn-progress-bar::after {
+[dir=rtl] .fn-progress-bar::after, .fn-progress-bar[dir=rtl]::after {
   left: auto;
-  right: -1.375rem
+  right: -1.375rem;
 }
-.fn-progress-bar.is-disabled,
-.fn-progress-bar:disabled,
-.fn-progress-bar[aria-disabled=true] {
+.fn-progress-bar[aria-disabled=true], .fn-progress-bar:disabled, .fn-progress-bar.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-progress-bar__track {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   z-index: 2;
-  height: .75rem;
+  height: 0.75rem;
   position: absolute;
   background: #223548;
-  top: -.125rem;
-  border-radius: .375rem
+  top: -0.125rem;
+  border-radius: 0.375rem;
 }
-.fn-progress-bar__track::after,
-.fn-progress-bar__track::before {
+.fn-progress-bar__track::before, .fn-progress-bar__track::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-progress-bar--positive {
-  background: #bae881
+  background: #bae881;
 }
 .fn-progress-bar--positive::before {
-  background: #188918
+  background: #188918;
 }
 .fn-progress-bar--positive::after {
   color: #188918;
-  content: "\e1ab"
+  content: "\e1ab";
 }
 .fn-progress-bar--positive .fn-progress-bar__track {
-  background: #188918
+  background: #188918;
 }
 .fn-progress-bar--critical {
-  background: #ffdf72
+  background: #ffdf72;
 }
 .fn-progress-bar--critical::before {
-  background: #f58b00
+  background: #f58b00;
 }
 .fn-progress-bar--critical::after {
   color: #f58b00;
-  content: "\e1ae"
+  content: "\e1ae";
 }
 .fn-progress-bar--critical .fn-progress-bar__track {
-  background: #f58b00
+  background: #f58b00;
 }
 .fn-progress-bar--negative {
-  background: #ffb2d2
+  background: #ffb2d2;
 }
 .fn-progress-bar--negative::before {
-  background: #d20a0a
+  background: #d20a0a;
 }
 .fn-progress-bar--negative::after {
   color: #d20a0a;
-  content: "\e1ac"
+  content: "\e1ac";
 }
 .fn-progress-bar--negative .fn-progress-bar__track {
-  background: #d20a0a
+  background: #d20a0a;
 }

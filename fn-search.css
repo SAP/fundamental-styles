@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-search {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,36 +19,33 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: relative;
   height: 2rem;
-  border-radius: 1rem
+  border-radius: 1rem;
 }
-.fn-search::after,
-.fn-search::before {
+.fn-search::before, .fn-search::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-search.is-disabled,
-.fn-search:disabled,
-.fn-search[aria-disabled=true] {
+.fn-search[aria-disabled=true], .fn-search:disabled, .fn-search.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-search__input {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -59,8 +56,8 @@
   transition: all 150ms ease-in;
   padding-left: 2rem;
   padding-right: 1.625rem;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
   z-index: 1;
   width: 100%;
   border: none;
@@ -68,186 +65,148 @@
   height: 2rem;
   background: #f5f6f7;
   caret-color: #223548;
-  border-radius: 1rem
+  border-radius: 1rem;
 }
-.fn-search__input::after,
-.fn-search__input::before {
+.fn-search__input::before, .fn-search__input::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-search__input[dir=rtl],
-[dir=rtl] .fn-search__input {
+[dir=rtl] .fn-search__input, .fn-search__input[dir=rtl] {
   padding-right: 2rem;
-  padding-left: 1.625rem
+  padding-left: 1.625rem;
 }
 .fn-search__input::-webkit-input-placeholder {
   color: #475e75;
-  font-size: .875rem;
-  line-height: 1.375rem
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 .fn-search__input::-moz-placeholder {
   color: #475e75;
-  font-size: .875rem;
-  line-height: 1.375rem
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 .fn-search__input:-ms-input-placeholder {
   color: #475e75;
-  font-size: .875rem;
-  line-height: 1.375rem
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 .fn-search__input::-ms-input-placeholder {
   color: #475e75;
-  font-size: .875rem;
-  line-height: 1.375rem
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
 .fn-search__input::placeholder {
   color: #475e75;
-  font-size: .875rem;
-  line-height: 1.375rem
+  font-size: 0.875rem;
+  line-height: 1.375rem;
 }
-.fn-search__input::-webkit-search-cancel-button,
-.fn-search__input::-webkit-search-decoration,
-.fn-search__input::-webkit-search-results-button,
-.fn-search__input::-webkit-search-results-decoration {
-  -webkit-appearance: none
+.fn-search__input::-webkit-search-decoration, .fn-search__input::-webkit-search-cancel-button, .fn-search__input::-webkit-search-results-button, .fn-search__input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }
-.fn-search__input.is-hover,
-.fn-search__input:hover {
-  background: #fff;
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-search__input:hover, .fn-search__input.is-hover {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 }
-.fn-search__input.is-hover.is-focus,
-.fn-search__input.is-hover:focus,
-.fn-search__input:hover.is-focus,
-.fn-search__input:hover:focus {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-search__input:hover:focus, .fn-search__input:hover.is-focus, .fn-search__input.is-hover:focus, .fn-search__input.is-hover.is-focus {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-search__input.is-hover.is-focus::-webkit-input-placeholder,
-.fn-search__input.is-hover:focus::-webkit-input-placeholder,
-.fn-search__input:hover.is-focus::-webkit-input-placeholder,
-.fn-search__input:hover:focus::-webkit-input-placeholder {
-  color: transparent
+.fn-search__input:hover:focus::-webkit-input-placeholder, .fn-search__input:hover.is-focus::-webkit-input-placeholder, .fn-search__input.is-hover:focus::-webkit-input-placeholder, .fn-search__input.is-hover.is-focus::-webkit-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-hover.is-focus::-moz-placeholder,
-.fn-search__input.is-hover:focus::-moz-placeholder,
-.fn-search__input:hover.is-focus::-moz-placeholder,
-.fn-search__input:hover:focus::-moz-placeholder {
-  color: transparent
+.fn-search__input:hover:focus::-moz-placeholder, .fn-search__input:hover.is-focus::-moz-placeholder, .fn-search__input.is-hover:focus::-moz-placeholder, .fn-search__input.is-hover.is-focus::-moz-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-hover.is-focus:-ms-input-placeholder,
-.fn-search__input.is-hover:focus:-ms-input-placeholder,
-.fn-search__input:hover.is-focus:-ms-input-placeholder,
-.fn-search__input:hover:focus:-ms-input-placeholder {
-  color: transparent
+.fn-search__input:hover:focus:-ms-input-placeholder, .fn-search__input:hover.is-focus:-ms-input-placeholder, .fn-search__input.is-hover:focus:-ms-input-placeholder, .fn-search__input.is-hover.is-focus:-ms-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-hover.is-focus::-ms-input-placeholder,
-.fn-search__input.is-hover:focus::-ms-input-placeholder,
-.fn-search__input:hover.is-focus::-ms-input-placeholder,
-.fn-search__input:hover:focus::-ms-input-placeholder {
-  color: transparent
+.fn-search__input:hover:focus::-ms-input-placeholder, .fn-search__input:hover.is-focus::-ms-input-placeholder, .fn-search__input.is-hover:focus::-ms-input-placeholder, .fn-search__input.is-hover.is-focus::-ms-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-hover.is-focus::placeholder,
-.fn-search__input.is-hover:focus::placeholder,
-.fn-search__input:hover.is-focus::placeholder,
-.fn-search__input:hover:focus::placeholder {
-  color: transparent
+.fn-search__input:hover:focus::placeholder, .fn-search__input:hover.is-focus::placeholder, .fn-search__input.is-hover:focus::placeholder, .fn-search__input.is-hover.is-focus::placeholder {
+  color: transparent;
 }
-.fn-search__input.is-active,
-.fn-search__input:active {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-search__input:active, .fn-search__input.is-active {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-search__input.is-active::-webkit-input-placeholder,
-.fn-search__input:active::-webkit-input-placeholder {
-  color: transparent
+.fn-search__input:active::-webkit-input-placeholder, .fn-search__input.is-active::-webkit-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-active::-moz-placeholder,
-.fn-search__input:active::-moz-placeholder {
-  color: transparent
+.fn-search__input:active::-moz-placeholder, .fn-search__input.is-active::-moz-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-active:-ms-input-placeholder,
-.fn-search__input:active:-ms-input-placeholder {
-  color: transparent
+.fn-search__input:active:-ms-input-placeholder, .fn-search__input.is-active:-ms-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-active::-ms-input-placeholder,
-.fn-search__input:active::-ms-input-placeholder {
-  color: transparent
+.fn-search__input:active::-ms-input-placeholder, .fn-search__input.is-active::-ms-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-active::placeholder,
-.fn-search__input:active::placeholder {
-  color: transparent
+.fn-search__input:active::placeholder, .fn-search__input.is-active::placeholder {
+  color: transparent;
 }
-.fn-search__input.is-focus,
-.fn-search__input:focus {
-  outline: 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-search__input:focus, .fn-search__input.is-focus {
+  outline: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
-.fn-search__input.is-focus::-webkit-input-placeholder,
-.fn-search__input:focus::-webkit-input-placeholder {
-  color: transparent
+.fn-search__input:focus::-webkit-input-placeholder, .fn-search__input.is-focus::-webkit-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-focus::-moz-placeholder,
-.fn-search__input:focus::-moz-placeholder {
-  color: transparent
+.fn-search__input:focus::-moz-placeholder, .fn-search__input.is-focus::-moz-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-focus:-ms-input-placeholder,
-.fn-search__input:focus:-ms-input-placeholder {
-  color: transparent
+.fn-search__input:focus:-ms-input-placeholder, .fn-search__input.is-focus:-ms-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-focus::-ms-input-placeholder,
-.fn-search__input:focus::-ms-input-placeholder {
-  color: transparent
+.fn-search__input:focus::-ms-input-placeholder, .fn-search__input.is-focus::-ms-input-placeholder {
+  color: transparent;
 }
-.fn-search__input.is-focus::placeholder,
-.fn-search__input:focus::placeholder {
-  color: transparent
+.fn-search__input:focus::placeholder, .fn-search__input.is-focus::placeholder {
+  color: transparent;
 }
-.fn-search [class*=fn-icon],
-.fn-search [class*=sap-icon] {
+.fn-search [class*=sap-icon],
+.fn-search [class*=fn-icon] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1.125rem;
   height: 1.125rem;
-  right: .25rem;
+  right: 0.25rem;
   z-index: 10;
   line-height: 1;
   position: absolute;
-  color: #475e75
+  color: #475e75;
 }
-.fn-search [class*=fn-icon][dir=rtl],
-.fn-search [class*=sap-icon][dir=rtl],
+[dir=rtl] .fn-search [class*=sap-icon], .fn-search [class*=sap-icon][dir=rtl],
 [dir=rtl] .fn-search [class*=fn-icon],
-[dir=rtl] .fn-search [class*=sap-icon] {
+.fn-search [class*=fn-icon][dir=rtl] {
   right: auto;
-  left: .25rem
+  left: 0.25rem;
 }
-.fn-search [class*=fn-icon]:first-child,
-.fn-search [class*=sap-icon]:first-child {
+.fn-search [class*=sap-icon]:first-child,
+.fn-search [class*=fn-icon]:first-child {
   width: 1.25rem;
   height: 1.25rem;
-  left: .5rem;
-  font-size: .9375rem
+  left: 0.5rem;
+  font-size: 0.9375rem;
 }
-.fn-search [class*=fn-icon]:first-child[dir=rtl],
-.fn-search [class*=sap-icon]:first-child[dir=rtl],
+[dir=rtl] .fn-search [class*=sap-icon]:first-child, .fn-search [class*=sap-icon]:first-child[dir=rtl],
 [dir=rtl] .fn-search [class*=fn-icon]:first-child,
-[dir=rtl] .fn-search [class*=sap-icon]:first-child {
+.fn-search [class*=fn-icon]:first-child[dir=rtl] {
   left: auto;
-  right: .5rem
+  right: 0.5rem;
 }

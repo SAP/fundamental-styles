@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -9,33 +9,31 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 8rem
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 8rem;
 }
 .fn-step-input .fn-step-input__text-field {
   padding-left: 1.625rem;
   padding-right: 1.625rem;
   text-align: right;
-  -moz-appearance: textfield
+  -moz-appearance: textfield;
 }
-.fn-step-input .fn-step-input__text-field::-webkit-inner-spin-button,
-.fn-step-input .fn-step-input__text-field::-webkit-outer-spin-button {
+.fn-step-input .fn-step-input__text-field::-webkit-outer-spin-button, .fn-step-input .fn-step-input__text-field::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0
+  margin: 0;
 }
-.fn-step-input .fn-step-input__text-field[dir=rtl],
-[dir=rtl] .fn-step-input .fn-step-input__text-field {
-  text-align: left
+[dir=rtl] .fn-step-input .fn-step-input__text-field, .fn-step-input .fn-step-input__text-field[dir=rtl] {
+  text-align: left;
 }
 .fn-step-input .fn-step-input__text-field.is-display {
   padding-left: 0;
   padding-right: 0;
-  text-align: unset
+  text-align: unset;
 }
 .fn-step-input.is-display button {
-  display: none
+  display: none;
 }
 .fn-step-input--full-width {
-  width: 100%
+  width: 100%;
 }

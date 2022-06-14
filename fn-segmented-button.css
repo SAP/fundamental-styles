@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-segmented-button {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,33 +19,31 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-transition: all 150ms ease-in;
   transition: all 150ms ease-in;
-  padding: .1875rem;
+  padding: 0.1875rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 2rem;
   background: #f5f6f7;
-  border-radius: .5rem
+  border-radius: 0.5rem;
 }
-.fn-segmented-button::after,
-.fn-segmented-button::before {
+.fn-segmented-button::before, .fn-segmented-button::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-segmented-button > * {
   height: 1.625rem;
-  padding: .125rem .75rem
+  padding: 0.125rem 0.75rem;
 }
-.fn-segmented-button > :not(:last-child) {
-  margin-right: .1875rem
+.fn-segmented-button > *:not(:last-child) {
+  margin-right: 0.1875rem;
 }
-.fn-segmented-button > :not(:last-child)[dir=rtl],
-[dir=rtl] .fn-segmented-button > :not(:last-child) {
+[dir=rtl] .fn-segmented-button > *:not(:last-child), .fn-segmented-button > *:not(:last-child)[dir=rtl] {
   margin-right: 0;
-  margin-left: .1875rem
+  margin-left: 0.1875rem;
 }

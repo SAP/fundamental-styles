@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-popover {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,104 +19,100 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: #fff;
-  border-radius: .75rem;
-  padding: .75rem;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
   position: relative;
-  -webkit-filter: drop-shadow(0 0 .125rem rgba(0, 0, 0, .25)) drop-shadow(0 .5rem 1rem rgba(0, 0, 0, .25));
-  filter: drop-shadow(0 0 .125rem rgba(0, 0, 0, .25)) drop-shadow(0 .5rem 1rem rgba(0, 0, 0, .25))
+  -webkit-filter: drop-shadow(0 0 0.125rem rgba(0, 0, 0, 0.25)) drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 0 0.125rem rgba(0, 0, 0, 0.25)) drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.25));
 }
-.fn-popover::after,
-.fn-popover::before {
+.fn-popover::before, .fn-popover::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-popover--no-padding {
-  padding: 0
+  padding: 0;
 }
 .fn-popover--no-padding .fn-popover__content {
   padding: 0;
   width: 100%;
   height: 100%;
-  border-radius: .75rem;
-  z-index: 2
+  border-radius: 0.75rem;
+  z-index: 2;
 }
 .fn-popover__title {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  padding: .75rem;
-  width: 100%
+  padding: 0.75rem;
+  width: 100%;
 }
-.fn-popover__title::after,
-.fn-popover__title::before {
+.fn-popover__title::before, .fn-popover__title::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-popover__title .fn-popover__text {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.375rem
+  font-weight: bold;
+  line-height: 1.375rem;
 }
-.fn-popover__title .fn-popover__text::after,
-.fn-popover__title .fn-popover__text::before {
+.fn-popover__title .fn-popover__text::before, .fn-popover__title .fn-popover__text::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-popover__title .fn-popover__text--truncate {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
 }
 .fn-popover__content {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  padding: .75rem
+  padding: 0.75rem;
 }
-.fn-popover__content::after,
-.fn-popover__content::before {
+.fn-popover__content::before, .fn-popover__content::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-popover__button-container {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -125,124 +121,93 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: auto;
   margin-top: auto;
-  padding: .75rem .75rem .375rem
+  padding: 0.75rem 0.75rem 0.375rem;
 }
-.fn-popover__button-container::after,
-.fn-popover__button-container::before {
+.fn-popover__button-container::before, .fn-popover__button-container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-popover__button-container[dir=rtl],
-[dir=rtl] .fn-popover__button-container {
+[dir=rtl] .fn-popover__button-container, .fn-popover__button-container[dir=rtl] {
   margin-right: auto;
-  margin-left: 0
+  margin-left: 0;
 }
 .fn-popover__button-container button:not(:last-child) {
-  margin-right: .375rem
+  margin-right: 0.375rem;
 }
-.fn-popover__button-container button:not(:last-child)[dir=rtl],
-[dir=rtl] .fn-popover__button-container button:not(:last-child) {
+[dir=rtl] .fn-popover__button-container button:not(:last-child), .fn-popover__button-container button:not(:last-child)[dir=rtl] {
   margin-right: 0;
-  margin-left: .375rem
+  margin-left: 0.375rem;
 }
 .fn-popover__arrow {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  width: .75rem;
-  height: .75rem;
+  width: 0.75rem;
+  height: 0.75rem;
   content: " ";
   position: absolute;
-  background: #fff;
-  bottom: -.25rem;
+  background: #ffffff;
+  bottom: -0.25rem;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  right: calc(50% - .25rem)
+          transform: rotate(45deg);
+  right: calc(50% - 0.25rem);
 }
-.fn-popover__arrow::after,
-.fn-popover__arrow::before {
+.fn-popover__arrow::before, .fn-popover__arrow::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-popover__arrow--bottom,
-.fn-popover__arrow--bottom-end,
-.fn-popover__arrow--bottom-start {
-  bottom: -.25rem
+.fn-popover__arrow--bottom, .fn-popover__arrow--bottom-start, .fn-popover__arrow--bottom-end {
+  bottom: -0.25rem;
 }
-.fn-popover__arrow--bottom,
-.fn-popover__arrow--top {
-  right: calc(50% - .25rem)
+.fn-popover__arrow--bottom, .fn-popover__arrow--top {
+  right: calc(50% - 0.25rem);
 }
-.fn-popover__arrow--bottom-start,
-.fn-popover__arrow--top-start {
-  right: auto
-}
-.fn-popover__arrow--bottom-end,
-.fn-popover__arrow--top-end {
-  right: 1.5rem
-}
-.fn-popover__arrow--bottom-end[dir=rtl],
-.fn-popover__arrow--top-end[dir=rtl],
-[dir=rtl] .fn-popover__arrow--bottom-end,
-[dir=rtl] .fn-popover__arrow--top-end {
+.fn-popover__arrow--bottom-start, .fn-popover__arrow--top-start {
   right: auto;
-  left: 1.5rem
 }
-.fn-popover__arrow--top,
-.fn-popover__arrow--top-end,
-.fn-popover__arrow--top-start {
-  top: -.25rem
+.fn-popover__arrow--bottom-end, .fn-popover__arrow--top-end {
+  right: 1.5rem;
 }
-.fn-popover__arrow--start,
-.fn-popover__arrow--start-bottom,
-.fn-popover__arrow--start-top {
-  left: -.25rem
+[dir=rtl] .fn-popover__arrow--bottom-end, .fn-popover__arrow--bottom-end[dir=rtl], [dir=rtl] .fn-popover__arrow--top-end, .fn-popover__arrow--top-end[dir=rtl] {
+  right: auto;
+  left: 1.5rem;
 }
-.fn-popover__arrow--start-bottom[dir=rtl],
-.fn-popover__arrow--start-top[dir=rtl],
-.fn-popover__arrow--start[dir=rtl],
-[dir=rtl] .fn-popover__arrow--start,
-[dir=rtl] .fn-popover__arrow--start-bottom,
-[dir=rtl] .fn-popover__arrow--start-top {
+.fn-popover__arrow--top, .fn-popover__arrow--top-start, .fn-popover__arrow--top-end {
+  top: -0.25rem;
+}
+.fn-popover__arrow--start, .fn-popover__arrow--start-top, .fn-popover__arrow--start-bottom {
+  left: -0.25rem;
+}
+[dir=rtl] .fn-popover__arrow--start, .fn-popover__arrow--start[dir=rtl], [dir=rtl] .fn-popover__arrow--start-top, .fn-popover__arrow--start-top[dir=rtl], [dir=rtl] .fn-popover__arrow--start-bottom, .fn-popover__arrow--start-bottom[dir=rtl] {
   left: auto;
-  right: -.25rem
+  right: -0.25rem;
 }
-.fn-popover__arrow--end,
-.fn-popover__arrow--start {
-  top: calc(50% - .25rem)
+.fn-popover__arrow--start, .fn-popover__arrow--end {
+  top: calc(50% - 0.25rem);
 }
-.fn-popover__arrow--end-top,
-.fn-popover__arrow--start-top {
-  top: 1.5rem
+.fn-popover__arrow--start-top, .fn-popover__arrow--end-top {
+  top: 1.5rem;
 }
-.fn-popover__arrow--end-bottom,
-.fn-popover__arrow--start-bottom {
-  bottom: 1.5rem
+.fn-popover__arrow--start-bottom, .fn-popover__arrow--end-bottom {
+  bottom: 1.5rem;
 }
-.fn-popover__arrow--end,
-.fn-popover__arrow--end-bottom,
-.fn-popover__arrow--end-top {
-  right: -.25rem
+.fn-popover__arrow--end, .fn-popover__arrow--end-top, .fn-popover__arrow--end-bottom {
+  right: -0.25rem;
 }
-.fn-popover__arrow--end-bottom[dir=rtl],
-.fn-popover__arrow--end-top[dir=rtl],
-.fn-popover__arrow--end[dir=rtl],
-[dir=rtl] .fn-popover__arrow--end,
-[dir=rtl] .fn-popover__arrow--end-bottom,
-[dir=rtl] .fn-popover__arrow--end-top {
+[dir=rtl] .fn-popover__arrow--end, .fn-popover__arrow--end[dir=rtl], [dir=rtl] .fn-popover__arrow--end-top, .fn-popover__arrow--end-top[dir=rtl], [dir=rtl] .fn-popover__arrow--end-bottom, .fn-popover__arrow--end-bottom[dir=rtl] {
   right: auto;
-  left: -.25rem
+  left: -0.25rem;
 }

@@ -1,8 +1,17 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
 .fd-form-label
 */
@@ -11,9 +20,9 @@
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -27,65 +36,54 @@
   max-width: 100%;
   font-size: var(--sapFontSize);
   color: var(--sapContent_LabelColor);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   cursor: text;
   -ms-flex-item-align: start;
-  align-self: flex-start
+      align-self: flex-start;
 }
-.fd-form-label::after,
-.fd-form-label::before {
+.fd-form-label::before, .fd-form-label::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fd-form-label[dir=rtl],
-[dir=rtl] .fd-form-label {
-  margin-left: .5rem;
-  margin-right: 0
+[dir=rtl] .fd-form-label, .fd-form-label[dir=rtl] {
+  margin-left: 0.5rem;
+  margin-right: 0;
 }
 .fd-form-label.is-disabled {
-  opacity: .4
+  opacity: 0.4;
 }
 .fd-form-label--unit-description {
-  padding: 0 0 0 .25rem;
+  padding: 0 0 0 0.25rem;
   color: var(--sapField_TextColor);
-  margin: 0
-}
-.fd-form-label--unit-description[dir=rtl],
-[dir=rtl] .fd-form-label--unit-description {
   margin: 0;
-  padding: 0 .25rem 0 0
 }
-.fd-form-label--required,
-.fd-form-label[aria-required=true] {
-  padding-right: .5rem
+[dir=rtl] .fd-form-label--unit-description, .fd-form-label--unit-description[dir=rtl] {
+  margin: 0;
+  padding: 0 0.25rem 0 0;
 }
-.fd-form-label--required::after,
-.fd-form-label[aria-required=true]::after {
+.fd-form-label--required, .fd-form-label[aria-required=true] {
+  padding-right: 0.5rem;
+}
+.fd-form-label--required::after, .fd-form-label[aria-required=true]::after {
   content: "*";
   font-size: var(--sapFontSize);
-  font-weight: 700;
+  font-weight: bold;
   color: var(--sapField_RequiredColor);
   position: absolute;
   right: 0;
-  top: 0
+  top: 0;
 }
-.fd-form-label--required[dir=rtl],
-.fd-form-label[aria-required=true][dir=rtl],
-[dir=rtl] .fd-form-label--required,
-[dir=rtl] .fd-form-label[aria-required=true] {
+[dir=rtl] .fd-form-label--required, .fd-form-label--required[dir=rtl], [dir=rtl] .fd-form-label[aria-required=true], .fd-form-label[aria-required=true][dir=rtl] {
   padding-right: 0;
-  padding-left: .5rem
+  padding-left: 0.5rem;
 }
-.fd-form-label--required[dir=rtl]::after,
-.fd-form-label[aria-required=true][dir=rtl]::after,
-[dir=rtl] .fd-form-label--required::after,
-[dir=rtl] .fd-form-label[aria-required=true]::after {
+[dir=rtl] .fd-form-label--required::after, .fd-form-label--required[dir=rtl]::after, [dir=rtl] .fd-form-label[aria-required=true]::after, .fd-form-label[aria-required=true][dir=rtl]::after {
   right: auto;
-  left: 0
+  left: 0;
 }
 .fd-form-label--colon {
-  padding-right: .25rem
+  padding-right: 0.25rem;
 }
 .fd-form-label--colon::before {
   content: ":";
@@ -93,39 +91,29 @@
   color: inherit;
   position: absolute;
   right: 0;
-  top: 0
+  top: 0;
 }
-.fd-form-label--colon[dir=rtl],
-[dir=rtl] .fd-form-label--colon {
-  padding-left: .25rem;
-  padding-right: 0
+[dir=rtl] .fd-form-label--colon, .fd-form-label--colon[dir=rtl] {
+  padding-left: 0.25rem;
+  padding-right: 0;
 }
-.fd-form-label--colon[dir=rtl]::before,
-[dir=rtl] .fd-form-label--colon::before {
+[dir=rtl] .fd-form-label--colon::before, .fd-form-label--colon[dir=rtl]::before {
   right: auto;
-  left: 0
+  left: 0;
 }
-.fd-form-label--colon.fd-form-label--required,
-.fd-form-label--colon[aria-required=true] {
-  padding-right: .75rem
+.fd-form-label--colon.fd-form-label--required, .fd-form-label--colon[aria-required=true] {
+  padding-right: 0.75rem;
 }
-.fd-form-label--colon.fd-form-label--required::before,
-.fd-form-label--colon[aria-required=true]::before {
-  right: .5rem
+.fd-form-label--colon.fd-form-label--required::before, .fd-form-label--colon[aria-required=true]::before {
+  right: 0.5rem;
 }
-.fd-form-label--colon.fd-form-label--required[dir=rtl],
-.fd-form-label--colon[aria-required=true][dir=rtl],
-[dir=rtl] .fd-form-label--colon.fd-form-label--required,
-[dir=rtl] .fd-form-label--colon[aria-required=true] {
-  padding-left: .75rem;
-  padding-right: 0
+[dir=rtl] .fd-form-label--colon.fd-form-label--required, .fd-form-label--colon.fd-form-label--required[dir=rtl], [dir=rtl] .fd-form-label--colon[aria-required=true], .fd-form-label--colon[aria-required=true][dir=rtl] {
+  padding-left: 0.75rem;
+  padding-right: 0;
 }
-.fd-form-label--colon.fd-form-label--required[dir=rtl]::before,
-.fd-form-label--colon[aria-required=true][dir=rtl]::before,
-[dir=rtl] .fd-form-label--colon.fd-form-label--required::before,
-[dir=rtl] .fd-form-label--colon[aria-required=true]::before {
+[dir=rtl] .fd-form-label--colon.fd-form-label--required::before, .fd-form-label--colon.fd-form-label--required[dir=rtl]::before, [dir=rtl] .fd-form-label--colon[aria-required=true]::before, .fd-form-label--colon[aria-required=true][dir=rtl]::before {
   right: auto;
-  left: .5rem
+  left: 0.5rem;
 }
 .fd-form-label--inline-help {
   width: 100%;
@@ -133,9 +121,9 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+      -ms-flex-align: center;
+          align-items: center;
 }

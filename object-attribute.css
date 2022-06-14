@@ -1,16 +1,25 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-object-attribute {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -18,41 +27,35 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--sapContent_LabelColor);
-  display: block
+  display: block;
 }
-.fd-object-attribute::after,
-.fd-object-attribute::before {
+.fd-object-attribute::before, .fd-object-attribute::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-object-attribute--link {
   cursor: pointer;
   text-decoration: none;
-  color: var(--sapLinkColor)
+  color: var(--sapLinkColor);
 }
 .fd-object-attribute--link:visited {
-  color: var(--sapLink_Visited_Color)
+  color: var(--sapLink_Visited_Color);
 }
-.fd-object-attribute--link.is-hover,
-.fd-object-attribute--link:hover {
+.fd-object-attribute--link:hover, .fd-object-attribute--link.is-hover {
   text-decoration: underline;
-  color: var(--sapLink_Hover_Color)
+  color: var(--sapLink_Hover_Color);
 }
-.fd-object-attribute--link.is-focus,
-.fd-object-attribute--link:focus {
-  z-index: 5
+.fd-object-attribute--link:focus, .fd-object-attribute--link.is-focus {
+  z-index: 5;
 }
-.fd-object-attribute--link.is-focus,
-.fd-object-attribute--link:focus {
-  outline-offset: -.0625rem;
+.fd-object-attribute--link:focus, .fd-object-attribute--link.is-focus {
+  outline-offset: -0.0625rem;
   outline-width: var(--sapContent_FocusWidth);
   outline-color: var(--sapContent_FocusColor);
-  outline-style: var(--sapContent_FocusStyle)
+  outline-style: var(--sapContent_FocusStyle);
 }
-.fd-object-attribute--link.is-disabled,
-.fd-object-attribute--link:disabled,
-.fd-object-attribute--link[aria-disabled=true] {
+.fd-object-attribute--link[aria-disabled=true], .fd-object-attribute--link.is-disabled, .fd-object-attribute--link:disabled {
   opacity: var(--sapContent_DisabledOpacity);
-  pointer-events: none
+  pointer-events: none;
 }

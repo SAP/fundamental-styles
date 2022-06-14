@@ -1,8 +1,18 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
 .fd-input-group+(--inline, --control)
     .fd-input-group__addon+(--button)
@@ -12,270 +22,425 @@
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 1;
+  width: 100%;
+  min-width: 2.75rem;
+  border-radius: var(--sapField_BorderCornerRadius);
+  padding: 0 0.625rem;
+  margin: 0.25rem 0;
+  height: 2.25rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: var(--sapField_TextColor);
+  text-shadow: var(--fdInput_Text_Shadow);
+  background: var(--sapField_BackgroundStyle);
+  background-color: var(--sapField_Background);
+  border: var(--sapField_BorderWidth) var(--sapField_BorderStyle) var(--sapField_BorderColor);
+  cursor: text;
+  outline: none;
+  overflow: hidden;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-style: solid;
-  border-width: var(--sapField_BorderWidth);
-  border-color: var(--sapField_BorderColor);
-  border-radius: var(--sapField_BorderCornerRadius);
-  background-color: var(--sapField_Background);
-  width: 100%;
   overflow: hidden;
-  text-shadow: var(--fdInputGroup_Text_Shadow)
 }
-.fd-input-group::after,
-.fd-input-group::before {
+.fd-input-group::before, .fd-input-group::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fd-input-group.is-hover,
-.fd-input-group:hover {
+.fd-input-group::-webkit-input-placeholder {
+  font-style: var(--fdPlaceholder_Font_Style);
+  color: var(--sapField_PlaceholderTextColor);
+}
+.fd-input-group::-moz-placeholder {
+  font-style: var(--fdPlaceholder_Font_Style);
+  color: var(--sapField_PlaceholderTextColor);
+}
+.fd-input-group:-ms-input-placeholder {
+  font-style: var(--fdPlaceholder_Font_Style);
+  color: var(--sapField_PlaceholderTextColor);
+}
+.fd-input-group::-ms-input-placeholder {
+  font-style: var(--fdPlaceholder_Font_Style);
+  color: var(--sapField_PlaceholderTextColor);
+}
+.fd-input-group::placeholder {
+  font-style: var(--fdPlaceholder_Font_Style);
+  color: var(--sapField_PlaceholderTextColor);
+}
+.fd-input-group::-moz-selection {
+  color: var(--sapContent_ContrastTextColor);
+  background-color: var(--sapSelectedColor);
+}
+.fd-input-group::selection {
+  color: var(--sapContent_ContrastTextColor);
+  background-color: var(--sapSelectedColor);
+}
+.fd-input-group::-ms-clear {
+  display: none;
+}
+.fd-input-group:hover, .fd-input-group.is-hover {
+  background: var(--sapField_Hover_BackgroundStyle);
   background-color: var(--sapField_Hover_Background);
-  border-color: var(--sapField_Hover_BorderColor)
+  border-color: var(--sapField_Hover_BorderColor);
+  -webkit-box-shadow: var(--fdInput_Box_Shadow_Hover);
+          box-shadow: var(--fdInput_Box_Shadow_Hover);
+}
+.fd-input-group:focus, .fd-input-group.is-focus {
+  z-index: 5;
+  background: var(--sapField_Focus_Background);
+  outline-width: var(--sapContent_FocusWidth);
+  outline-style: var(--sapContent_FocusStyle);
+  outline-color: var(--fdInput_Outline_Color);
+  outline-offset: var(--fdInput_Outline_Offset);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .fd-input-group.is-success {
+  background: var(--sapField_SuccessBackgroundStyle);
   background-color: var(--sapField_SuccessBackground);
-  border-color: var(--sapField_SuccessColor);
-  border-width: var(--sapField_SuccessBorderWidth);
-  border-style: var(--sapField_SuccessBorderStyle)
+  border: var(--sapField_SuccessColor) var(--sapField_SuccessBorderWidth) var(--sapField_SuccessBorderStyle);
 }
-.fd-input-group.is-success.is-hover,
-.fd-input-group.is-success:hover {
-  background-color: var(--sapField_SuccessBackground);
-  border-color: var(--sapField_SuccessColor)
+.fd-input-group.is-success:hover, .fd-input-group.is-success.is-hover {
+  background-color: var(--fdInput_Success_Background_Color_Hover);
+  border-color: var(--sapField_SuccessColor);
+  -webkit-box-shadow: var(--fdInput_Success_Box_Shadow_Hover);
+          box-shadow: var(--fdInput_Success_Box_Shadow_Hover);
+}
+.fd-input-group.is-success:focus, .fd-input-group.is-success.is-focus {
+  z-index: 5;
+  background: var(--sapField_Focus_Background);
+  outline-color: var(--fdInput_Success_Outline_Color);
+}
+.fd-input-group.is-success:focus:hover, .fd-input-group.is-success:focus.is-hover, .fd-input-group.is-success.is-focus:hover, .fd-input-group.is-success.is-focus.is-hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .fd-input-group.is-error {
+  background: var(--sapField_InvalidBackgroundStyle);
   background-color: var(--sapField_InvalidBackground);
-  font-style: var(--fdInput_State_Text_Style);
-  font-weight: var(--fdInput_State_Font_Weight);
+  border: var(--sapField_InvalidColor) var(--sapField_InvalidBorderWidth) var(--sapField_InvalidBorderStyle);
+}
+.fd-input-group.is-error:hover, .fd-input-group.is-error.is-hover {
+  background-color: var(--fdInput_Error_Background_Color_Hover);
   border-color: var(--sapField_InvalidColor);
-  border-width: var(--sapField_InvalidBorderWidth);
-  border-style: var(--sapField_InvalidBorderStyle)
+  -webkit-box-shadow: var(--fdInput_Error_Box_Shadow_Hover);
+          box-shadow: var(--fdInput_Error_Box_Shadow_Hover);
 }
-.fd-input-group.is-error.is-hover,
-.fd-input-group.is-error:hover {
-  background-color: var(--sapField_InvalidBackground);
-  border-color: var(--sapField_InvalidColor)
+.fd-input-group.is-error:focus, .fd-input-group.is-error.is-focus {
+  z-index: 5;
+  background: var(--sapField_Focus_Background);
+  outline-color: var(--fdInput_Error_Outline_Color);
 }
-.fd-input-group.is-alert,
+.fd-input-group.is-error:focus:hover, .fd-input-group.is-error:focus.is-hover, .fd-input-group.is-error.is-focus:hover, .fd-input-group.is-error.is-focus.is-hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .fd-input-group.is-warning {
+  background: var(--sapField_WarningBackgroundStyle);
   background-color: var(--sapField_WarningBackground);
-  font-style: var(--fdInput_State_Text_Style);
-  font-weight: var(--fdInput_State_Font_Weight);
-  border-color: var(--sapField_WarningColor);
-  border-width: var(--sapField_WarningBorderWidth);
-  border-style: var(--sapField_WarningBorderStyle)
+  border: var(--sapField_WarningColor) var(--sapField_WarningBorderWidth) var(--sapField_WarningBorderStyle);
 }
-.fd-input-group.is-alert.is-hover,
-.fd-input-group.is-alert:hover,
-.fd-input-group.is-warning.is-hover,
-.fd-input-group.is-warning:hover {
+.fd-input-group.is-warning:hover, .fd-input-group.is-warning.is-hover {
+  background-color: var(--fdInput_Warning_Background_Color_Hover);
+  border-color: var(--sapField_WarningColor);
+  -webkit-box-shadow: var(--fdInput_Warning_Box_Shadow_Hover);
+          box-shadow: var(--fdInput_Warning_Box_Shadow_Hover);
+}
+.fd-input-group.is-warning:focus, .fd-input-group.is-warning.is-focus {
+  z-index: 5;
+  background: var(--sapField_Focus_Background);
+  outline-color: var(--fdInput_Warning_Outline_Color);
+}
+.fd-input-group.is-warning:focus:hover, .fd-input-group.is-warning:focus.is-hover, .fd-input-group.is-warning.is-focus:hover, .fd-input-group.is-warning.is-focus.is-hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.fd-input-group.is-alert {
+  background: var(--sapField_WarningBackgroundStyle);
   background-color: var(--sapField_WarningBackground);
-  border-color: var(--sapField_WarningColor)
+  border: var(--sapField_WarningColor) var(--sapField_WarningBorderWidth) var(--sapField_WarningBorderStyle);
+}
+.fd-input-group.is-alert:hover, .fd-input-group.is-alert.is-hover {
+  background-color: var(--fdInput_Warning_Background_Color_Hover);
+  border-color: var(--sapField_WarningColor);
+  -webkit-box-shadow: var(--fdInput_Warning_Box_Shadow_Hover);
+          box-shadow: var(--fdInput_Warning_Box_Shadow_Hover);
+}
+.fd-input-group.is-alert:focus, .fd-input-group.is-alert.is-focus {
+  z-index: 5;
+  background: var(--sapField_Focus_Background);
+  outline-color: var(--fdInput_Warning_Outline_Color);
+}
+.fd-input-group.is-alert:focus:hover, .fd-input-group.is-alert:focus.is-hover, .fd-input-group.is-alert.is-focus:hover, .fd-input-group.is-alert.is-focus.is-hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .fd-input-group.is-information {
+  background: var(--sapField_InformationBackgroundStyle);
   background-color: var(--sapField_InformationBackground);
+  border: var(--sapField_InformationColor) var(--sapField_InformationBorderWidth) var(--sapField_InformationBorderStyle);
+}
+.fd-input-group.is-information:hover, .fd-input-group.is-information.is-hover {
+  background-color: var(--fdInput_Information_Background_Color_Hover);
   border-color: var(--sapField_InformationColor);
-  border-width: var(--sapField_InformationBorderWidth);
-  border-style: var(--sapField_InformationBorderStyle)
+  -webkit-box-shadow: var(--fdInput_Information_Box_Shadow_Hover);
+          box-shadow: var(--fdInput_Information_Box_Shadow_Hover);
 }
-.fd-input-group.is-information.is-hover,
-.fd-input-group.is-information:hover {
-  background-color: var(--sapField_InformationBackground);
-  border-color: var(--sapField_InformationColor)
-}
-.fd-input-group.is-focus,
-.fd-input-group:focus {
+.fd-input-group.is-information:focus, .fd-input-group.is-information.is-focus {
   z-index: 5;
+  background: var(--sapField_Focus_Background);
+  outline-color: var(--fdInput_Information_Outline_Color);
+}
+.fd-input-group.is-information:focus:hover, .fd-input-group.is-information:focus.is-hover, .fd-input-group.is-information.is-focus:hover, .fd-input-group.is-information.is-focus.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  outline-offset: -.1875rem;
-  outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
-  outline-style: var(--sapContent_FocusStyle)
+          box-shadow: none;
 }
-.fd-input-group.is-alert,
-.fd-input-group.is-error,
-.fd-input-group.is-information,
-.fd-input-group.is-warning {
-  border-width: .125rem;
-  border-style: var(--fdInput_State_Border_Type)
+.fd-input-group.is-error, .fd-input-group.is-warning, .fd-input-group.is-alert {
+  font-style: var(--fdInput_State_Text_Style);
+  font-weight: var(--fdInput_State_Font_Weight);
 }
-.fd-input-group.is-alert.is-focus,
-.fd-input-group.is-alert:focus,
-.fd-input-group.is-error.is-focus,
-.fd-input-group.is-error:focus,
-.fd-input-group.is-information.is-focus,
-.fd-input-group.is-information:focus,
-.fd-input-group.is-warning.is-focus,
-.fd-input-group.is-warning:focus {
+.fd-input-group.is-error::-webkit-input-placeholder, .fd-input-group.is-warning::-webkit-input-placeholder, .fd-input-group.is-alert::-webkit-input-placeholder {
+  font-weight: var(--fdInput_State_Font_Weight);
+}
+.fd-input-group.is-error::-moz-placeholder, .fd-input-group.is-warning::-moz-placeholder, .fd-input-group.is-alert::-moz-placeholder {
+  font-weight: var(--fdInput_State_Font_Weight);
+}
+.fd-input-group.is-error:-ms-input-placeholder, .fd-input-group.is-warning:-ms-input-placeholder, .fd-input-group.is-alert:-ms-input-placeholder {
+  font-weight: var(--fdInput_State_Font_Weight);
+}
+.fd-input-group.is-error::-ms-input-placeholder, .fd-input-group.is-warning::-ms-input-placeholder, .fd-input-group.is-alert::-ms-input-placeholder {
+  font-weight: var(--fdInput_State_Font_Weight);
+}
+.fd-input-group.is-error::placeholder, .fd-input-group.is-warning::placeholder, .fd-input-group.is-alert::placeholder {
+  font-weight: var(--fdInput_State_Font_Weight);
+}
+.fd-input-group.is-error:focus, .fd-input-group.is-error.is-focus, .fd-input-group.is-warning:focus, .fd-input-group.is-warning.is-focus, .fd-input-group.is-alert:focus, .fd-input-group.is-alert.is-focus, .fd-input-group.is-information:focus, .fd-input-group.is-information.is-focus {
   z-index: 5;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline-offset: -.25rem
+  outline-offset: var(--fdInput_Outline_Offset_States);
 }
-.fd-input-group.is-disabled,
-.fd-input-group:disabled,
-.fd-input-group[aria-disabled=true] {
-  opacity: var(--sapContent_DisabledOpacity)
+.fd-input-group.is-error::-webkit-input-placeholder {
+  color: var(--sapField_TextColor);
 }
-.fd-input-group.is-disabled::-webkit-input-placeholder,
-.fd-input-group:disabled::-webkit-input-placeholder,
-.fd-input-group[aria-disabled=true]::-webkit-input-placeholder {
-  color: transparent
+.fd-input-group.is-error::-moz-placeholder {
+  color: var(--sapField_TextColor);
 }
-.fd-input-group.is-disabled::-moz-placeholder,
-.fd-input-group:disabled::-moz-placeholder,
-.fd-input-group[aria-disabled=true]::-moz-placeholder {
-  color: transparent
+.fd-input-group.is-error:-ms-input-placeholder {
+  color: var(--sapField_TextColor);
 }
-.fd-input-group.is-disabled:-ms-input-placeholder,
-.fd-input-group:disabled:-ms-input-placeholder,
-.fd-input-group[aria-disabled=true]:-ms-input-placeholder {
-  color: transparent
+.fd-input-group.is-error::-ms-input-placeholder {
+  color: var(--sapField_TextColor);
 }
-.fd-input-group.is-disabled::-ms-input-placeholder,
-.fd-input-group:disabled::-ms-input-placeholder,
-.fd-input-group[aria-disabled=true]::-ms-input-placeholder {
-  color: transparent
+.fd-input-group.is-error::placeholder {
+  color: var(--sapField_TextColor);
 }
-.fd-input-group.is-disabled::placeholder,
-.fd-input-group:disabled::placeholder,
-.fd-input-group[aria-disabled=true]::placeholder {
-  color: transparent
+.fd-input-group[aria-disabled=true], .fd-input-group.is-disabled, .fd-input-group:disabled {
+  pointer-events: none;
+  opacity: var(--sapContent_DisabledOpacity);
 }
-.fd-input-group.is-readonly,
-.fd-input-group[aria-readonly=true],
-.fd-input-group[readonly] {
-  background-color: rgba(242,242,242,.5);
+.fd-input-group[aria-disabled=true]::-webkit-input-placeholder, .fd-input-group.is-disabled::-webkit-input-placeholder, .fd-input-group:disabled::-webkit-input-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+}
+.fd-input-group[aria-disabled=true]::-moz-placeholder, .fd-input-group.is-disabled::-moz-placeholder, .fd-input-group:disabled::-moz-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+}
+.fd-input-group[aria-disabled=true]:-ms-input-placeholder, .fd-input-group.is-disabled:-ms-input-placeholder, .fd-input-group:disabled:-ms-input-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+}
+.fd-input-group[aria-disabled=true]::-ms-input-placeholder, .fd-input-group.is-disabled::-ms-input-placeholder, .fd-input-group:disabled::-ms-input-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+}
+.fd-input-group[aria-disabled=true]::placeholder, .fd-input-group.is-disabled::placeholder, .fd-input-group:disabled::placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
+}
+.fd-input-group[aria-readonly=true], .fd-input-group.is-readonly, .fd-input-group[readonly] {
+  border-color: var(--sapField_ReadOnly_BorderColor);
+  border-radius: var(--fdInput_ReadOnly_Border_Radius);
+  background: var(--sapField_ReadOnly_BackgroundStyle);
   background-color: var(--sapField_ReadOnly_Background);
-  border-color: var(--sapField_ReadOnly_BorderColor)
+  pointer-events: none;
 }
-.fd-input-group.is-readonly::-webkit-input-placeholder,
-.fd-input-group[aria-readonly=true]::-webkit-input-placeholder,
-.fd-input-group[readonly]::-webkit-input-placeholder {
-  color: transparent
+.fd-input-group[aria-readonly=true]::-webkit-input-placeholder, .fd-input-group.is-readonly::-webkit-input-placeholder, .fd-input-group[readonly]::-webkit-input-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
 }
-.fd-input-group.is-readonly::-moz-placeholder,
-.fd-input-group[aria-readonly=true]::-moz-placeholder,
-.fd-input-group[readonly]::-moz-placeholder {
-  color: transparent
+.fd-input-group[aria-readonly=true]::-moz-placeholder, .fd-input-group.is-readonly::-moz-placeholder, .fd-input-group[readonly]::-moz-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
 }
-.fd-input-group.is-readonly:-ms-input-placeholder,
-.fd-input-group[aria-readonly=true]:-ms-input-placeholder,
-.fd-input-group[readonly]:-ms-input-placeholder {
-  color: transparent
+.fd-input-group[aria-readonly=true]:-ms-input-placeholder, .fd-input-group.is-readonly:-ms-input-placeholder, .fd-input-group[readonly]:-ms-input-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
 }
-.fd-input-group.is-readonly::-ms-input-placeholder,
-.fd-input-group[aria-readonly=true]::-ms-input-placeholder,
-.fd-input-group[readonly]::-ms-input-placeholder {
-  color: transparent
+.fd-input-group[aria-readonly=true]::-ms-input-placeholder, .fd-input-group.is-readonly::-ms-input-placeholder, .fd-input-group[readonly]::-ms-input-placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
 }
-.fd-input-group.is-readonly::placeholder,
-.fd-input-group[aria-readonly=true]::placeholder,
-.fd-input-group[readonly]::placeholder {
-  color: transparent
+.fd-input-group[aria-readonly=true]::placeholder, .fd-input-group.is-readonly::placeholder, .fd-input-group[readonly]::placeholder {
+  color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
 }
-.fd-input-group.is-focus,
-.fd-input-group:focus {
-  outline-offset: -.1875rem;
-  outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
-  outline-style: var(--sapContent_FocusStyle)
+.fd-input-group[aria-readonly=true]:hover, .fd-input-group[aria-readonly=true].is-hover, .fd-input-group.is-readonly:hover, .fd-input-group.is-readonly.is-hover, .fd-input-group[readonly]:hover, .fd-input-group[readonly].is-hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
-.fd-input-group > * {
-  border-radius: var(--sapField_BorderCornerRadius)
+.fd-input-group[aria-readonly=true]:focus, .fd-input-group[aria-readonly=true].is-focus, .fd-input-group.is-readonly:focus, .fd-input-group.is-readonly.is-focus, .fd-input-group[readonly]:focus, .fd-input-group[readonly].is-focus {
+  z-index: 5;
+  background: var(--sapField_Focus_Background);
+  border-radius: var(--sapField_BorderCornerRadius);
 }
-.fd-input-group > :first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0
+.fd-input-group .fd-input-group__button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+  z-index: auto !important;
+  position: static !important;
+  border-radius: var(--fdInput_Group_Button_Border_Raduis);
+  background: var(--fdInput_Group_Button_Background);
+  color: var(--fdInput_Group_Button_Text_Color);
+  border-left: var(--sapButton_BorderWidth) solid transparent;
 }
-.fd-input-group > :last-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0
+[dir=rtl] .fd-input-group .fd-input-group__button, .fd-input-group .fd-input-group__button[dir=rtl] {
+  border-left: none;
+  border-right: var(--sapButton_BorderWidth) solid transparent;
 }
-.fd-input-group > :not(:first-child):not(:last-child) {
-  border-radius: 0
+.fd-input-group .fd-input-group__button::before {
+  display: none !important;
 }
-.fd-input-group > [dir=rtl],
-[dir=rtl] .fd-input-group > * {
-  border-radius: var(--sapField_BorderCornerRadius)
+.fd-input-group .fd-input-group__button:hover, .fd-input-group .fd-input-group__button.is-hover {
+  border-left: var(--fdInputGroup_ControlButton_SideBorder);
+  background: var(--fdInput_Group_Button_Hover_Background);
+  color: var(--fdInput_Group_Button_Hover_Text_Color);
+  -webkit-box-shadow: var(--fdInput_Group_Button_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Box_Shadow);
 }
-.fd-input-group > [dir=rtl]:first-child,
-[dir=rtl] .fd-input-group > :first-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0
+[dir=rtl] .fd-input-group .fd-input-group__button:hover, .fd-input-group .fd-input-group__button:hover[dir=rtl], [dir=rtl] .fd-input-group .fd-input-group__button.is-hover, .fd-input-group .fd-input-group__button.is-hover[dir=rtl] {
+  border-left: none;
+  border-right: var(--fdInputGroup_ControlButton_SideBorder);
 }
-.fd-input-group > [dir=rtl]:last-child,
-[dir=rtl] .fd-input-group > :last-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0
+.fd-input-group .fd-input-group__button:active, .fd-input-group .fd-input-group__button.is-active {
+  border-left: var(--fdInputGroup_ControlButton_SideBorder);
+  background: var(--fdInput_Group_Button_Active_Background);
+  color: var(--fdInput_Group_Button_Active_Text_Color);
+  -webkit-box-shadow: var(--fdInput_Group_Button_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Box_Shadow);
+}
+[dir=rtl] .fd-input-group .fd-input-group__button:active, .fd-input-group .fd-input-group__button:active[dir=rtl], [dir=rtl] .fd-input-group .fd-input-group__button.is-active, .fd-input-group .fd-input-group__button.is-active[dir=rtl] {
+  border-left: none;
+  border-right: var(--fdInputGroup_ControlButton_SideBorder);
+}
+.fd-input-group.is-success .fd-input-group__button:hover, .fd-input-group.is-success .fd-input-group__button.is-hover {
+  -webkit-box-shadow: var(--fdInput_Group_Button_Success_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Success_Active_Box_Shadow);
+}
+.fd-input-group.is-success .fd-input-group__button:active, .fd-input-group.is-success .fd-input-group__button.is-active {
+  color: var(--fdInput_Group_Button_Success_Active_Text_Color);
+  -webkit-box-shadow: var(--fdInput_Group_Button_Success_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Success_Active_Box_Shadow);
+}
+.fd-input-group.is-error .fd-input-group__button:hover, .fd-input-group.is-error .fd-input-group__button.is-hover {
+  -webkit-box-shadow: var(--fdInput_Group_Button_Error_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Error_Active_Box_Shadow);
+}
+.fd-input-group.is-error .fd-input-group__button:active, .fd-input-group.is-error .fd-input-group__button.is-active {
+  color: var(--fdInput_Group_Button_Error_Active_Text_Color);
+  -webkit-box-shadow: var(--fdInput_Group_Button_Error_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Error_Active_Box_Shadow);
+}
+.fd-input-group.is-warning .fd-input-group__button:hover, .fd-input-group.is-warning .fd-input-group__button.is-hover {
+  -webkit-box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+}
+.fd-input-group.is-warning .fd-input-group__button:active, .fd-input-group.is-warning .fd-input-group__button.is-active {
+  color: var(--fdInput_Group_Button_Warning_Active_Text_Color);
+  -webkit-box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+}
+.fd-input-group.is-alert .fd-input-group__button:hover, .fd-input-group.is-alert .fd-input-group__button.is-hover {
+  -webkit-box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+}
+.fd-input-group.is-alert .fd-input-group__button:active, .fd-input-group.is-alert .fd-input-group__button.is-active {
+  color: var(--fdInput_Group_Button_Warning_Active_Text_Color);
+  -webkit-box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Warning_Active_Box_Shadow);
+}
+.fd-input-group.is-information .fd-input-group__button:hover, .fd-input-group.is-information .fd-input-group__button.is-hover {
+  -webkit-box-shadow: var(--fdInput_Group_Button_Information_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Information_Active_Box_Shadow);
+}
+.fd-input-group.is-information .fd-input-group__button:active, .fd-input-group.is-information .fd-input-group__button.is-active {
+  color: var(--fdInput_Group_Button_Information_Active_Text_Color);
+  -webkit-box-shadow: var(--fdInput_Group_Button_Information_Active_Box_Shadow);
+          box-shadow: var(--fdInput_Group_Button_Information_Active_Box_Shadow);
 }
 .fd-input-group .fd-input-group__input {
-  background-color: transparent;
   border: none;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 10rem;
-  flex: 1 1 10rem;
-  padding-right: .25rem;
-  padding-left: .25rem;
-  text-shadow: var(--fdInputGroup_Text_Shadow)
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  background: none;
+  background-color: transparent;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-shadow: var(--fdInputGroup_Text_Shadow);
 }
 .fd-input-group .fd-input-group__input:nth-child(n+1) {
-  margin: 0
+  margin: 0;
 }
-.fd-input-group .fd-input-group__input.is-focus,
-.fd-input-group .fd-input-group__input:focus {
-  z-index: 5;
-  outline: 0;
+.fd-input-group .fd-input-group__input:hover, .fd-input-group .fd-input-group__input.is-hover {
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
-.fd-input-group .fd-input-group__input.is-disabled,
-.fd-input-group .fd-input-group__input:disabled,
-.fd-input-group .fd-input-group__input[aria-disabled=true] {
-  pointer-events: none;
-  opacity: var(--sapContent_DisabledOpacity)
+.fd-input-group .fd-input-group__input:focus, .fd-input-group .fd-input-group__input.is-focus {
+  z-index: 5;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  border-radius: 0;
 }
 .fd-input-group .fd-input-group__input:nth-child(1) {
-  padding-left: .625rem
+  padding-left: 0.625rem;
 }
-.fd-input-group .fd-input-group__input:nth-child(1)[dir=rtl],
-[dir=rtl] .fd-input-group .fd-input-group__input:nth-child(1) {
-  padding-right: .625rem;
-  padding-left: 0
+[dir=rtl] .fd-input-group .fd-input-group__input:nth-child(1), .fd-input-group .fd-input-group__input:nth-child(1)[dir=rtl] {
+  padding-right: 0.625rem;
+  padding-left: 0;
 }
 .fd-input-group .fd-input-group__input:nth-last-child(1) {
-  padding-right: .625rem
+  padding-right: 0.625rem;
 }
-.fd-input-group .fd-input-group__input:nth-last-child(1)[dir=rtl],
-[dir=rtl] .fd-input-group .fd-input-group__input:nth-last-child(1) {
+[dir=rtl] .fd-input-group .fd-input-group__input:nth-last-child(1), .fd-input-group .fd-input-group__input:nth-last-child(1)[dir=rtl] {
   padding-right: 0;
-  padding-left: .625rem
+  padding-left: 0.625rem;
 }
 .fd-input-group--inline {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: bottom;
-  width: auto
+  width: auto;
 }
 .fd-input-group__addon {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -283,144 +448,70 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--sapContent_NonInteractiveIconColor);
-  background: 0 0!important;
+  background: none !important;
   font-size: var(--sapFontLargeSize);
   min-width: 2.25rem;
   min-height: 2.25rem;
-  padding-left: .625rem;
-  padding-right: .625rem
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
-.fd-input-group__addon::after,
-.fd-input-group__addon::before {
+.fd-input-group__addon::before, .fd-input-group__addon::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-input-group__addon span[class*=sap-icon--]::before {
-  font-size: var(--sapFontLargeSize)
+  font-size: var(--sapFontLargeSize);
 }
 .fd-input-group__addon--compact {
   min-width: 2rem;
-  min-height: 1.625rem
+  min-height: 1.625rem;
 }
 .fd-input-group__addon--readonly {
-  opacity: .4
+  opacity: 0.4;
 }
 .fd-input-group__addon--button {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: none;
-  border-radius: .0625rem
+  overflow: visible;
 }
-.fd-input-group__addon--button .fd-input-group__button {
-  border-radius: 0;
-  height: 100%;
-  max-height: 100%
-}
-.fd-input-group__addon--button .fd-input-group__button:nth-child(n+1) {
-  margin: 0
-}
-.fd-input-group__addon--button > * {
-  border-radius: 0
-}
-.fd-input-group__addon--button:first-child {
-  border-radius: .0625rem 0 0 .0625rem
-}
-.fd-input-group__addon--button:last-child {
-  border-radius: 0 .0625rem .0625rem 0
-}
-.fd-input-group__addon--button:not(:first-child):not(:last-child) .fd-input-group__button {
-  border-radius: 0
-}
-.fd-input-group__addon--button[dir=rtl]:first-child,
-[dir=rtl] .fd-input-group__addon--button:first-child {
-  border-radius: 0 .0625rem .0625rem 0;
-  margin-right: 0
-}
-.fd-input-group__addon--button[dir=rtl]:last-child,
-[dir=rtl] .fd-input-group__addon--button:last-child {
-  border-radius: .0625rem 0 0 .0625rem;
-  margin-left: 0
-}
-.fd-input-group__button {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border: none;
-  width: 100%;
-  z-index: auto!important;
-  position: static!important
-}
-.fd-input-group__button.is-focus,
-.fd-input-group__button:focus {
-  z-index: 5;
-  outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-  outline-offset: -.1875rem;
-  outline-color: var(--sapField_Hover_BorderColor)
-}
-.fd-input-group__button.is-focus.fd-input-group--toggled,
-.fd-input-group__button:focus.fd-input-group--toggled {
-  outline-color: var(--sapContent_ContrastFocusColor)
-}
-.fd-input-group__button::before {
-  display: none!important
-}
-.fd-input-group .fd-button.fd-input-group__button {
-  border-color: transparent
-}
-.fd-input-group--control .fd-input-group__button.is-expanded {
-  background-color: var(--sapButton_Active_Background);
-  color: var(--sapButton_Active_TextColor)
-}
-.fd-input-group--control .fd-input-group__button.is-expanded.is-focus,
-.fd-input-group--control .fd-input-group__button.is-expanded:focus {
-  outline-offset: -.1875rem;
-  outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
-  outline-style: var(--sapContent_FocusStyle);
-  outline-color: var(--sapContent_ContrastFocusColor)
-}
-.fd-input-group--control.is-hover .fd-input-group__button,
-.fd-input-group--control:hover .fd-input-group__button {
-  border-left: var(--fdInputGroup_ControlButton_SideBorder)
-}
-.fd-input-group--control.is-hover .fd-input-group__button[dir=rtl],
-.fd-input-group--control:hover .fd-input-group__button[dir=rtl],
-[dir=rtl] .fd-input-group--control.is-hover .fd-input-group__button,
-[dir=rtl] .fd-input-group--control:hover .fd-input-group__button {
-  border-left: none;
-  border-right: var(--fdInputGroup_ControlButton_SideBorder)
-}
-.fd-input-group--control.is-active .fd-input-group__button,
-.fd-input-group--control:active .fd-input-group__button {
-  border-left: var(--fdInputGroup_ControlButton_SideBorder)
-}
-.fd-input-group--control.is-active .fd-input-group__button[dir=rtl],
-.fd-input-group--control:active .fd-input-group__button[dir=rtl],
-[dir=rtl] .fd-input-group--control.is-active .fd-input-group__button,
-[dir=rtl] .fd-input-group--control:active .fd-input-group__button {
-  border-left: none;
-  border-right: var(--fdInputGroup_ControlButton_SideBorder)
+.fd-input-group--control[aria-expanded=true] {
+  margin-bottom: 0;
 }
 .fd-input-group .fd-textarea {
-  resize: vertical
+  resize: vertical;
 }
-.fd-input-group.is-readonly,
-.fd-input-group[readonly] {
-  overflow: visible
+.fd-input-group *[aria-disabled=true], .fd-input-group *.is-disabled, .fd-input-group *:disabled {
+  opacity: 1;
+}
+.fd-input-group[readonly], .fd-input-group.is-readonly {
+  overflow: visible;
+}
+.fd-input-group .fd-tokenizer {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  background-color: transparent;
+}
+.fd-input-group .fd-tokenizer:hover, .fd-input-group .fd-tokenizer.is-hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  background-color: transparent;
+}
+.fd-input-group .fd-tokenizer:focus, .fd-input-group .fd-tokenizer.is-focus {
+  z-index: 5;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  background-color: transparent;
+  outline: none;
 }

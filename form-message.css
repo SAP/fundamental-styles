@@ -1,8 +1,17 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
 .fd-form-message(--help, --error, --warning)
 */
@@ -11,52 +20,51 @@
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: .5rem;
+  padding: 0.5rem;
   min-width: 6rem;
   max-width: 22rem;
   width: 100%;
   font-size: var(--sapFontSmallSize);
-  font-weight: 400;
+  font-weight: normal;
   line-height: normal;
   color: var(--sapTextColor);
-  white-space: pre-line!important;
+  white-space: pre-line !important;
   -webkit-box-shadow: var(--fdMessage_Box_Shadow);
-  box-shadow: var(--fdMessage_Box_Shadow);
-  border: var(--fdMessage_Border)
+          box-shadow: var(--fdMessage_Box_Shadow);
+  border: var(--fdMessage_Border);
+  border-radius: var(--fdMessage_Border_Radius) !important;
 }
-.fd-form-message::after,
-.fd-form-message::before {
+.fd-form-message::before, .fd-form-message::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fd-form-message[dir=rtl],
-[dir=rtl] .fd-form-message {
-  right: 0
+[dir=rtl] .fd-form-message, .fd-form-message[dir=rtl] {
+  right: 0;
 }
 .fd-form-message--static {
   margin-top: 0;
   display: table;
-  width: auto
+  width: auto;
 }
 .fd-form-message--error {
-  background-color: var(--sapErrorBackground)
+  background-color: var(--sapErrorBackground);
 }
 .fd-form-message--warning {
-  background-color: var(--sapWarningBackground)
+  background-color: var(--sapWarningBackground);
 }
 .fd-form-message--success {
-  background-color: var(--sapSuccessBackground)
+  background-color: var(--sapSuccessBackground);
 }
 .fd-form-message--information {
-  background-color: var(--sapInformationBackground)
+  background-color: var(--sapInformationBackground);
 }

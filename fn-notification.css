@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-notification {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,31 +19,30 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: .75rem;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.75rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background: #fff;
-  border-radius: .75rem;
-  -webkit-box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16);
-  box-shadow: 0 0 2px rgba(130,149,168,.16),0 16px 32px rgba(130,149,168,.16)
+  background: #ffffff;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 0 0 2px rgba(130, 149, 168, 0.16), 0 16px 32px rgba(130, 149, 168, 0.16);
+          box-shadow: 0 0 2px rgba(130, 149, 168, 0.16), 0 16px 32px rgba(130, 149, 168, 0.16);
 }
-.fn-notification::after,
-.fn-notification::before {
+.fn-notification::before, .fn-notification::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification__main-container {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -52,23 +51,22 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.fn-notification__main-container::after,
-.fn-notification__main-container::before {
+.fn-notification__main-container::before, .fn-notification__main-container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification__text-container {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -77,66 +75,63 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: .75rem;
-  margin-right: .75rem
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
-.fn-notification__text-container::after,
-.fn-notification__text-container::before {
+.fn-notification__text-container::before, .fn-notification__text-container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification__title {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  font-weight: 700;
-  margin-bottom: .5rem;
-  color: #223548
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #223548;
 }
-.fn-notification__title::after,
-.fn-notification__title::before {
+.fn-notification__title::before, .fn-notification__title::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification__text {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   line-height: 1rem;
-  color: #475e75
+  color: #475e75;
 }
-.fn-notification__text::after,
-.fn-notification__text::before {
+.fn-notification__text::before, .fn-notification__text::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification__button-container {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -145,36 +140,34 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-top: .75rem;
-  padding: .375rem .75rem
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0.75rem;
+  padding: 0.375rem 0.75rem;
 }
-.fn-notification__button-container::after,
-.fn-notification__button-container::before {
+.fn-notification__button-container::before, .fn-notification__button-container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification__button-container button:not(:last-child) {
-  margin-right: .375rem
+  margin-right: 0.375rem;
 }
-.fn-notification__button-container button:not(:last-child)[dir=rtl],
-[dir=rtl] .fn-notification__button-container button:not(:last-child) {
+[dir=rtl] .fn-notification__button-container button:not(:last-child), .fn-notification__button-container button:not(:last-child)[dir=rtl] {
   margin-right: 0;
-  margin-left: .375rem
+  margin-left: 0.375rem;
 }
 .fn-notification__semantic-container {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -182,97 +175,94 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: .75rem;
-  margin-bottom: 1rem
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
 }
-.fn-notification__semantic-container::after,
-.fn-notification__semantic-container::before {
+.fn-notification__semantic-container::before, .fn-notification__semantic-container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification__semantic-container [class*=sap-icon] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: .375rem;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.375rem;
   width: 1.125rem;
   height: 1.125rem;
   min-width: 1.125rem;
   min-height: 1.125rem;
-  line-height: 1.125rem
+  line-height: 1.125rem;
 }
-.fn-notification__semantic-container [class*=sap-icon][dir=rtl],
-[dir=rtl] .fn-notification__semantic-container [class*=sap-icon] {
+[dir=rtl] .fn-notification__semantic-container [class*=sap-icon], .fn-notification__semantic-container [class*=sap-icon][dir=rtl] {
   margin-right: 0;
-  margin-left: .375rem
+  margin-left: 0.375rem;
 }
 .fn-notification__semantic-title {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.125rem;
-  line-height: 1.375rem
+  line-height: 1.375rem;
 }
-.fn-notification__semantic-title::after,
-.fn-notification__semantic-title::before {
+.fn-notification__semantic-title::before, .fn-notification__semantic-title::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-notification--positive {
-  outline: .125rem solid #188918
+  outline: 0.125rem solid #188918;
 }
 .fn-notification--positive .fn-notification__semantic-container [class*=sap-icon] {
-  color: #188918
+  color: #188918;
 }
 .fn-notification--positive .fn-notification__main-container {
-  margin-left: .75rem;
-  margin-right: .75rem
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 .fn-notification--critical {
-  outline: .125rem solid #f58b00
+  outline: 0.125rem solid #f58b00;
 }
 .fn-notification--critical .fn-notification__semantic-container [class*=sap-icon] {
-  color: #f58b00
+  color: #f58b00;
 }
 .fn-notification--critical .fn-notification__main-container {
-  margin-left: .75rem;
-  margin-right: .75rem
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 .fn-notification--negative {
-  outline: .125rem solid #d20a0a
+  outline: 0.125rem solid #d20a0a;
 }
 .fn-notification--negative .fn-notification__semantic-container [class*=sap-icon] {
-  color: #d20a0a
+  color: #d20a0a;
 }
 .fn-notification--negative .fn-notification__main-container {
-  margin-left: .75rem;
-  margin-right: .75rem
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 .fn-notification--info {
-  outline: .125rem solid #0070f2
+  outline: 0.125rem solid #0070f2;
 }
 .fn-notification--info .fn-notification__semantic-container [class*=sap-icon] {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-notification--info .fn-notification__main-container {
-  margin-left: .75rem;
-  margin-right: .75rem
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }

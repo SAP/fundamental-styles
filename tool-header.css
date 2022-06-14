@@ -1,16 +1,25 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-tool-header {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -18,32 +27,31 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  padding: 0 .5rem 0 1rem;
+  padding: 0 0.5rem 0 1rem;
   height: 2.75rem;
   background: var(--sapShellColor);
-  -webkit-box-shadow: inset 0 -.0625rem 0 0 var(--sapShell_BorderColor);
-  box-shadow: inset 0 -.0625rem 0 0 var(--sapShell_BorderColor)
+  -webkit-box-shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
+          box-shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
 }
-.fd-tool-header::after,
-.fd-tool-header::before {
+.fd-tool-header::before, .fd-tool-header::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-tool-header__group {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -51,23 +59,22 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+      -ms-flex-align: center;
+          align-items: center;
 }
-.fd-tool-header__group::after,
-.fd-tool-header__group::before {
+.fd-tool-header__group::before, .fd-tool-header__group::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-tool-header__element {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -75,58 +82,54 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
   max-width: 100%;
-  overflow: hidden;
-  height: 2.75rem
+  height: 2.75rem;
 }
-.fd-tool-header__element::after,
-.fd-tool-header__element::before {
+.fd-tool-header__element::before, .fd-tool-header__element::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-tool-header__element:not(:last-child) {
-  margin-right: .5rem
+  margin-right: 0.5rem;
 }
-.fd-tool-header__element:not(:last-child)[dir=rtl],
-[dir=rtl] .fd-tool-header__element:not(:last-child) {
+[dir=rtl] .fd-tool-header__element:not(:last-child), .fd-tool-header__element:not(:last-child)[dir=rtl] {
   margin-right: 0;
-  margin-left: .5rem
+  margin-left: 0.5rem;
 }
 .fd-tool-header__logo {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   width: auto;
   height: 1.625rem;
   background-size: contain;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
-.fd-tool-header__logo::after,
-.fd-tool-header__logo::before {
+.fd-tool-header__logo::before, .fd-tool-header__logo::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-tool-header .fd-tool-header__text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--sapShell_TextColor)
+  color: var(--sapShell_TextColor);
 }
 .fd-tool-header .fd-tool-header__label {
   white-space: nowrap;
@@ -134,330 +137,309 @@
   text-overflow: ellipsis;
   margin: 0;
   -ms-flex-item-align: center;
-  align-self: center;
-  color: var(--sapShell_TextColor)
+      align-self: center;
+  color: var(--sapShell_TextColor);
 }
 .fd-tool-header .fd-tool-header__title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-left: .625rem;
-  padding-right: .625rem;
-  font-weight: 700;
-  color: var(--sapShell_TextColor)
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  font-weight: bold;
+  color: var(--sapShell_TextColor);
 }
 .fd-tool-header .fd-tool-header__button {
-  color: var(--sapShell_InteractiveTextColor)
+  color: var(--sapShell_InteractiveTextColor);
 }
 .fd-tool-header .fd-tool-header__button:hover {
   border-color: transparent;
   color: var(--sapShell_InteractiveTextColor);
-  background: var(--sapShell_Hover_Background)
+  background: var(--sapShell_Hover_Background);
 }
 .fd-tool-header .fd-tool-header__button:focus {
-  outline-color: var(--sapContent_ContrastFocusColor)
+  outline-color: var(--sapContent_ContrastFocusColor);
 }
 .fd-tool-header .fd-tool-header__button:focus::after {
-  border-color: var(--sapContent_ContrastFocusColor)
+  border-color: var(--sapContent_ContrastFocusColor);
 }
 .fd-tool-header .fd-tool-header__button:active {
   color: var(--sapShell_Active_TextColor);
   background: var(--sapShell_Active_Background);
-  outline-color: var(--sapContent_ContrastFocusColor)
+  outline-color: var(--sapContent_ContrastFocusColor);
 }
 .fd-tool-header .fd-tool-header__button:active::after {
-  border-color: var(--sapContent_ContrastFocusColor)
+  border-color: var(--sapContent_ContrastFocusColor);
 }
-.fd-tool-header .fd-tool-header__button-text {
-  color: var(--sapShell_TextColor)
+.fd-tool-header .fd-tool-header__button .fd-tool-header__button-text {
+  color: var(--sapShell_TextColor);
 }
-@media (max-width:599px) {
-  .fd-tool-header .fd-tool-header__button-text {
-    display: none
+@media (max-width: 599px) {
+  .fd-tool-header .fd-tool-header__button .fd-tool-header__button-text {
+    display: none;
   }
 }
 .fd-tool-header .fd-tool-header__button .fd-tool-header__title {
   padding-left: 0;
-  padding-right: 0
+  padding-right: 0;
 }
-@media (max-width:599px) {
+@media (max-width: 599px) {
   .fd-tool-header .fd-tool-header__button .fd-tool-header__title {
-    display: none
+    display: none;
   }
 }
 .fd-tool-header .fd-tool-header__icon {
   color: var(--fdTool_Header_Icon_Color_Default);
   font-size: 1rem;
-  line-height: 1
+  line-height: 1;
 }
 .fd-tool-header .fd-tool-header__icon--inverted {
   color: var(--fdTool_Header_Icon_Color_Inverted_Default);
-  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Default)
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Default);
 }
 .fd-tool-header .fd-tool-header__icon--contrast {
-  color: var(--fdTool_Header_Icon_Color_Contrast)
+  color: var(--fdTool_Header_Icon_Color_Contrast);
 }
 .fd-tool-header .fd-tool-header__icon--contrast.fd-tool-header__icon--inverted {
   color: var(--fdTool_Header_Icon_Color_Inverted_Contrast);
-  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Contrast)
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Contrast);
 }
 .fd-tool-header .fd-tool-header__icon--positive {
-  color: var(--fdTool_Header_Icon_Color_Positive)
+  color: var(--fdTool_Header_Icon_Color_Positive);
 }
 .fd-tool-header .fd-tool-header__icon--positive.fd-tool-header__icon--inverted {
   color: var(--fdTool_Header_Icon_Color_Inverted_Positive);
-  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Positive)
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Positive);
 }
 .fd-tool-header .fd-tool-header__icon--critical {
-  color: var(--fdTool_Header_Icon_Color_Critical)
+  color: var(--fdTool_Header_Icon_Color_Critical);
 }
 .fd-tool-header .fd-tool-header__icon--critical.fd-tool-header__icon--inverted {
   color: var(--fdTool_Header_Icon_Color_Inverted_Critical);
-  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Critical)
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Critical);
 }
 .fd-tool-header .fd-tool-header__icon--negative {
-  color: var(--fdTool_Header_Icon_Color_Negative)
+  color: var(--fdTool_Header_Icon_Color_Negative);
 }
 .fd-tool-header .fd-tool-header__icon--negative.fd-tool-header__icon--inverted {
   color: var(--fdTool_Header_Icon_Color_Inverted_Negative);
-  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Negative)
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Negative);
 }
 .fd-tool-header .fd-tool-header__icon--neutral {
-  color: var(--fdTool_Header_Icon_Color_Neutral)
+  color: var(--fdTool_Header_Icon_Color_Neutral);
 }
 .fd-tool-header .fd-tool-header__icon--neutral.fd-tool-header__icon--inverted {
   color: var(--fdTool_Header_Icon_Color_Inverted_Neutral);
-  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Neutral)
+  background: var(--fdTool_Header_Icon_Background_Color_Inverted_Neutral);
 }
 .fd-tool-header .fd-tool-header__object-status--positive {
   color: var(--fdTool_Header_Object_Status_Color_Positive);
-  text-shadow: none
+  text-shadow: none;
 }
 .fd-tool-header .fd-tool-header__object-status--positive [class*=sap-icon] {
-  color: var(--fdTool_Header_Object_Status_Color_Positive)
+  color: var(--fdTool_Header_Object_Status_Color_Positive);
 }
 .fd-tool-header .fd-tool-header__object-status--positive[class*=inverted] {
   text-shadow: none;
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive);
 }
 .fd-tool-header .fd-tool-header__object-status--positive[class*=inverted] [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted].is-hover,
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted]:hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive)
 }
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link].is-hover,
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link]:hover {
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted]:hover, .fd-tool-header .fd-tool-header__object-status--positive[class*=inverted].is-hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive);
 }
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--positive[class*=inverted].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link]:hover, .fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link].is-hover {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Positive);
+}
+.fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--positive[class*=inverted][class*=link].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
 }
 .fd-tool-header .fd-tool-header__object-status--critical {
   color: var(--fdTool_Header_Object_Status_Color_Critical);
-  text-shadow: none
+  text-shadow: none;
 }
 .fd-tool-header .fd-tool-header__object-status--critical [class*=sap-icon] {
-  color: var(--fdTool_Header_Object_Status_Color_Critical)
+  color: var(--fdTool_Header_Object_Status_Color_Critical);
 }
 .fd-tool-header .fd-tool-header__object-status--critical[class*=inverted] {
   text-shadow: none;
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical);
 }
 .fd-tool-header .fd-tool-header__object-status--critical[class*=inverted] [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted].is-hover,
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted]:hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical)
 }
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link].is-hover,
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link]:hover {
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted]:hover, .fd-tool-header .fd-tool-header__object-status--critical[class*=inverted].is-hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical);
 }
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--critical[class*=inverted].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link]:hover, .fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link].is-hover {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Critical);
+}
+.fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--critical[class*=inverted][class*=link].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
 }
 .fd-tool-header .fd-tool-header__object-status--negative {
   color: var(--fdTool_Header_Object_Status_Color_Negative);
-  text-shadow: none
+  text-shadow: none;
 }
 .fd-tool-header .fd-tool-header__object-status--negative [class*=sap-icon] {
-  color: var(--fdTool_Header_Object_Status_Color_Negative)
+  color: var(--fdTool_Header_Object_Status_Color_Negative);
 }
 .fd-tool-header .fd-tool-header__object-status--negative[class*=inverted] {
   text-shadow: none;
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative);
 }
 .fd-tool-header .fd-tool-header__object-status--negative[class*=inverted] [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted].is-hover,
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted]:hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative)
 }
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link].is-hover,
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link]:hover {
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted]:hover, .fd-tool-header .fd-tool-header__object-status--negative[class*=inverted].is-hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative);
 }
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--negative[class*=inverted].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link]:hover, .fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link].is-hover {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Negative);
+}
+.fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--negative[class*=inverted][class*=link].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
 }
 .fd-tool-header .fd-tool-header__object-status--neutral {
   color: var(--fdTool_Header_Object_Status_Color_Neutral);
-  text-shadow: none
+  text-shadow: none;
 }
 .fd-tool-header .fd-tool-header__object-status--neutral [class*=sap-icon] {
-  color: var(--fdTool_Header_Object_Status_Color_Neutral)
+  color: var(--fdTool_Header_Object_Status_Color_Neutral);
 }
 .fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted] {
   text-shadow: none;
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral);
 }
 .fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted] [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted].is-hover,
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted]:hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral)
 }
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link].is-hover,
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link]:hover {
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted]:hover, .fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted].is-hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral);
 }
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link]:hover, .fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link].is-hover {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Neutral);
+}
+.fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--neutral[class*=inverted][class*=link].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
 }
 .fd-tool-header .fd-tool-header__object-status--informative {
   color: var(--fdTool_Header_Object_Status_Color_Informative);
-  text-shadow: none
+  text-shadow: none;
 }
 .fd-tool-header .fd-tool-header__object-status--informative [class*=sap-icon] {
-  color: var(--fdTool_Header_Object_Status_Color_Informative)
+  color: var(--fdTool_Header_Object_Status_Color_Informative);
 }
 .fd-tool-header .fd-tool-header__object-status--informative[class*=inverted] {
   text-shadow: none;
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative);
 }
 .fd-tool-header .fd-tool-header__object-status--informative[class*=inverted] [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted].is-hover,
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted]:hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative)
 }
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
-}
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link].is-hover,
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link]:hover {
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted]:hover, .fd-tool-header .fd-tool-header__object-status--informative[class*=inverted].is-hover {
   color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
-  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative)
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative);
 }
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link].is-hover [class*=icon],
-.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link]:hover [class*=icon] {
-  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted)
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--informative[class*=inverted].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link]:hover, .fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link].is-hover {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
+  background: var(--fdTool_Header_Object_Status_Background_Color_Inverted_Informative);
+}
+.fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link]:hover [class*=icon], .fd-tool-header .fd-tool-header__object-status--informative[class*=inverted][class*=link].is-hover [class*=icon] {
+  color: var(--fdTool_Header_Object_Status_Text_Color_Inverted);
 }
 .fd-tool-header .fd-tool-header__input-group {
   background: var(--sapShellColor);
-  border: .0625rem solid var(--sapShell_InteractiveBorderColor)
+  border: 0.0625rem solid var(--sapShell_InteractiveBorderColor);
 }
 .fd-tool-header .fd-tool-header__input-group input {
-  color: var(--sapShell_TextColor)
+  color: var(--sapShell_TextColor);
 }
 .fd-tool-header .fd-tool-header__input-group input::-webkit-input-placeholder {
-  color: var(--sapShell_InteractiveTextColor)
+  color: var(--sapShell_InteractiveTextColor);
 }
 .fd-tool-header .fd-tool-header__input-group input::-moz-placeholder {
-  color: var(--sapShell_InteractiveTextColor)
+  color: var(--sapShell_InteractiveTextColor);
 }
 .fd-tool-header .fd-tool-header__input-group input:-ms-input-placeholder {
-  color: var(--sapShell_InteractiveTextColor)
+  color: var(--sapShell_InteractiveTextColor);
 }
 .fd-tool-header .fd-tool-header__input-group input::-ms-input-placeholder {
-  color: var(--sapShell_InteractiveTextColor)
+  color: var(--sapShell_InteractiveTextColor);
 }
 .fd-tool-header .fd-tool-header__input-group input::placeholder {
-  color: var(--sapShell_InteractiveTextColor)
+  color: var(--sapShell_InteractiveTextColor);
 }
-.fd-tool-header .fd-tool-header__input-group.is-hover,
-.fd-tool-header .fd-tool-header__input-group:hover {
+.fd-tool-header .fd-tool-header__input-group:hover, .fd-tool-header .fd-tool-header__input-group.is-hover {
   background: var(--sapShell_Hover_Background);
-  border-color: var(--sapShell_InteractiveBorderColor)
+  border-color: var(--sapShell_InteractiveBorderColor);
 }
 .fd-tool-header--menu {
-  padding-left: .5rem;
-  padding-right: .5rem
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .fd-tool-header--sm {
-  padding: 0 1rem
+  padding: 0 1rem;
 }
 .fd-tool-header--md {
-  padding: 0 2rem
+  padding: 0 2rem;
 }
 .fd-tool-header--lg {
-  padding: 0 2rem
+  padding: 0 2rem;
 }
 .fd-tool-header--xl {
-  padding: 0 3rem
+  padding: 0 3rem;
 }
-@media (max-width:599px) {
+@media (max-width: 599px) {
   .fd-tool-header--responsive-paddings {
     padding-left: 1rem;
-    padding-right: 1rem
+    padding-right: 1rem;
   }
 }
-@media (min-width:600px) and (max-width:1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .fd-tool-header--responsive-paddings {
     padding-left: 2rem;
-    padding-right: 2rem
+    padding-right: 2rem;
   }
 }
-@media (min-width:1024px) and (max-width:1439px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .fd-tool-header--responsive-paddings {
     padding-left: 2rem;
-    padding-right: 2rem
+    padding-right: 2rem;
   }
 }
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .fd-tool-header--responsive-paddings {
     padding-left: 3rem;
-    padding-right: 3rem
+    padding-right: 3rem;
   }
 }

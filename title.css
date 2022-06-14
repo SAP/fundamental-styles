@@ -1,53 +1,61 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1rem
+  font-size: 1rem;
 }
 .fd-title {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  color: var(--sapTextColor)
+  color: var(--sapTextColor);
 }
-.fd-title::after,
-.fd-title::before {
+.fd-title::before, .fd-title::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-title--h1 {
-  font-size: var(--sapFontHeader1Size)
+  font-size: var(--sapFontHeader1Size);
 }
 .fd-title--h2 {
-  font-size: var(--sapFontHeader2Size)
+  font-size: var(--sapFontHeader2Size);
 }
 .fd-title--h3 {
-  font-size: var(--sapFontHeader3Size)
+  font-size: var(--sapFontHeader3Size);
 }
 .fd-title--h4 {
-  font-size: var(--sapFontHeader4Size)
+  font-size: var(--sapFontHeader4Size);
 }
 .fd-title--h5 {
-  font-size: var(--sapFontHeader5Size)
+  font-size: var(--sapFontHeader5Size);
 }
 .fd-title--h6 {
-  font-size: var(--sapFontHeader6Size)
+  font-size: var(--sapFontHeader6Size);
 }
 .fd-title--wrap {
   overflow: auto;
   white-space: normal;
-  text-overflow: initial
+  text-overflow: initial;
 }

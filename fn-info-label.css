@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-info-label {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,120 +19,115 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-left: .375rem;
-  padding-right: .375rem;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 1.375rem;
-  border-radius: .25rem
+  border-radius: 0.25rem;
 }
-.fn-info-label::after,
-.fn-info-label::before {
+.fn-info-label::before, .fn-info-label::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-info-label[dir=rtl],
-[dir=rtl] .fn-info-label {
-  padding-right: .375rem;
-  padding-left: .375rem
+[dir=rtl] .fn-info-label, .fn-info-label[dir=rtl] {
+  padding-right: 0.375rem;
+  padding-left: 0.375rem;
 }
 .fn-info-label__text {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  color: inherit
+  color: inherit;
 }
-.fn-info-label__text::after,
-.fn-info-label__text::before {
+.fn-info-label__text::before, .fn-info-label__text::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-info-label__circle {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  margin-right: .25rem;
-  width: .5rem;
-  height: .5rem;
+  margin-right: 0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
   content: " ";
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   color: inherit;
   background-color: currentColor;
   position: relative;
   margin-top: auto;
-  margin-bottom: auto
+  margin-bottom: auto;
 }
-.fn-info-label__circle::after,
-.fn-info-label__circle::before {
+.fn-info-label__circle::before, .fn-info-label__circle::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-info-label__circle[dir=rtl],
-[dir=rtl] .fn-info-label__circle {
+[dir=rtl] .fn-info-label__circle, .fn-info-label__circle[dir=rtl] {
   margin-right: 0;
-  margin-left: .25rem
+  margin-left: 0.25rem;
 }
 .fn-info-label--mango {
   background-color: #fff3b8;
-  color: #a93e00
+  color: #a93e00;
 }
 .fn-info-label--red {
   background-color: #ffd5ea;
-  color: #aa0808
+  color: #aa0808;
 }
 .fn-info-label--raspberry {
   background-color: #ffdce8;
-  color: #ba066c
+  color: #ba066c;
 }
 .fn-info-label--pink {
   background-color: #ffdcf3;
-  color: #a100c2
+  color: #a100c2;
 }
 .fn-info-label--indigo {
   background-color: #e2d8ff;
-  color: #470ced
+  color: #470ced;
 }
 .fn-info-label--blue {
   background-color: #d1efff;
-  color: #0057d2
+  color: #0057d2;
 }
 .fn-info-label--teal {
   background-color: #c2fcee;
-  color: #046c7a
+  color: #046c7a;
 }
 .fn-info-label--green {
   background-color: #e5f2bd;
-  color: #256f3a
+  color: #256f3a;
 }
 .fn-info-label--cyan {
   background-color: #b8f3ff;
-  color: #00709f
+  color: #00709f;
 }
 .fn-info-label--grey {
   background-color: #eaecee;
-  color: #354a5f
+  color: #354a5f;
 }
 .fn-info-label--display {
   background-color: transparent;
-  color: #1a2733
+  color: #1a2733;
 }

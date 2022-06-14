@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-generic-tag {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -18,10 +18,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
   cursor: pointer;
   height: 1.75rem;
   max-width: 100%;
@@ -29,123 +29,109 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: .1875rem .375rem;
-  border-radius: .25rem
+  padding: 0.1875rem 0.375rem;
+  border-radius: 0.25rem;
 }
-.fn-generic-tag::after,
-.fn-generic-tag::before {
+.fn-generic-tag::before, .fn-generic-tag::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-generic-tag.is-hover,
-.fn-generic-tag:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-generic-tag:hover, .fn-generic-tag.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 }
-.fn-generic-tag.is-hover.is-active,
-.fn-generic-tag.is-hover:active,
-.fn-generic-tag:hover.is-active,
-.fn-generic-tag:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+.fn-generic-tag:hover:active, .fn-generic-tag:hover.is-active, .fn-generic-tag.is-hover:active, .fn-generic-tag.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
 }
-.fn-generic-tag.is-active,
-.fn-generic-tag:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+.fn-generic-tag:active, .fn-generic-tag.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
 }
 .fn-generic-tag.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
 .fn-generic-tag:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  outline: 0
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+  outline: none;
 }
-.fn-generic-tag:focus:not(.focus-visible).is-hover,
-.fn-generic-tag:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-generic-tag:focus:not(.focus-visible):hover, .fn-generic-tag:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 }
-.fn-generic-tag:focus:not(.focus-visible).is-hover.is-active,
-.fn-generic-tag:focus:not(.focus-visible).is-hover:active,
-.fn-generic-tag:focus:not(.focus-visible):hover.is-active,
-.fn-generic-tag:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+.fn-generic-tag:focus:not(.focus-visible):hover:active, .fn-generic-tag:focus:not(.focus-visible):hover.is-active, .fn-generic-tag:focus:not(.focus-visible).is-hover:active, .fn-generic-tag:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
 }
-.fn-generic-tag.focus-visible,
-.fn-generic-tag.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+.fn-generic-tag.focus-visible, .fn-generic-tag.is-focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
 .fn-generic-tag .fn-generic-tag__number {
-  color: #475e75
+  color: #475e75;
 }
 .fn-generic-tag .fn-generic-tag__icon [class*=sap-icon] {
-  color: #475e75
+  color: #475e75;
 }
 .fn-generic-tag__text {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #223548
+  color: #223548;
 }
-.fn-generic-tag__text::after,
-.fn-generic-tag__text::before {
+.fn-generic-tag__text::before, .fn-generic-tag__text::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-generic-tag__text + .fn-generic-tag__number {
-  margin-left: 1rem
+  margin-left: 1rem;
 }
-.fn-generic-tag__text + .fn-generic-tag__number[dir=rtl],
-[dir=rtl] .fn-generic-tag__text + .fn-generic-tag__number {
+[dir=rtl] .fn-generic-tag__text + .fn-generic-tag__number, .fn-generic-tag__text + .fn-generic-tag__number[dir=rtl] {
   margin-right: 1rem;
-  margin-left: 0
+  margin-left: 0;
 }
 .fn-generic-tag__number {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
-  font-weight: 700
+  font-weight: bold;
 }
-.fn-generic-tag__number::after,
-.fn-generic-tag__number::before {
+.fn-generic-tag__number::before, .fn-generic-tag__number::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-generic-tag__icon {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -153,252 +139,208 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: .25rem;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.25rem;
   width: 1.125rem;
-  height: 1.125rem
+  height: 1.125rem;
 }
-.fn-generic-tag__icon::after,
-.fn-generic-tag__icon::before {
+.fn-generic-tag__icon::before, .fn-generic-tag__icon::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-generic-tag__icon[dir=rtl],
-[dir=rtl] .fn-generic-tag__icon {
+[dir=rtl] .fn-generic-tag__icon, .fn-generic-tag__icon[dir=rtl] {
   margin-right: 0;
-  margin-left: .25rem
+  margin-left: 0.25rem;
 }
 .fn-generic-tag__icon [class*=sap-icon] {
-  line-height: 1
+  line-height: 1;
 }
-.fn-generic-tag.is-disabled,
-.fn-generic-tag:disabled,
-.fn-generic-tag[aria-disabled=true] {
+.fn-generic-tag[aria-disabled=true], .fn-generic-tag:disabled, .fn-generic-tag.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
 .fn-generic-tag--positive {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16)
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
 }
-.fn-generic-tag--positive.is-hover,
-.fn-generic-tag--positive:hover {
-  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16)
+.fn-generic-tag--positive:hover, .fn-generic-tag--positive.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+          box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
 }
-.fn-generic-tag--positive.is-hover.is-active,
-.fn-generic-tag--positive.is-hover:active,
-.fn-generic-tag--positive:hover.is-active,
-.fn-generic-tag--positive:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16)
+.fn-generic-tag--positive:hover:active, .fn-generic-tag--positive:hover.is-active, .fn-generic-tag--positive.is-hover:active, .fn-generic-tag--positive.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
 }
-.fn-generic-tag--positive.is-active,
-.fn-generic-tag--positive:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16)
+.fn-generic-tag--positive:active, .fn-generic-tag--positive.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
 }
 .fn-generic-tag--positive.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #188918;
-  box-shadow: 0 0 0 .125rem #188918
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #188918;
+          box-shadow: 0 0 0 0.125rem #188918;
 }
 .fn-generic-tag--positive:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  outline: 0
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+  outline: none;
 }
-.fn-generic-tag--positive:focus:not(.focus-visible).is-hover,
-.fn-generic-tag--positive:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16);
-  box-shadow: 0 0 2px rgba(56,169,30,.16),0 8px 16px rgba(56,169,30,.16)
+.fn-generic-tag--positive:focus:not(.focus-visible):hover, .fn-generic-tag--positive:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
+          box-shadow: 0 0 2px rgba(56, 169, 30, 0.16), 0 8px 16px rgba(56, 169, 30, 0.16);
 }
-.fn-generic-tag--positive:focus:not(.focus-visible).is-hover.is-active,
-.fn-generic-tag--positive:focus:not(.focus-visible).is-hover:active,
-.fn-generic-tag--positive:focus:not(.focus-visible):hover.is-active,
-.fn-generic-tag--positive:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16);
-  box-shadow: 0 0 2px rgba(54,164,29,.16),0 4px 8px rgba(54,164,29,.16)
+.fn-generic-tag--positive:focus:not(.focus-visible):hover:active, .fn-generic-tag--positive:focus:not(.focus-visible):hover.is-active, .fn-generic-tag--positive:focus:not(.focus-visible).is-hover:active, .fn-generic-tag--positive:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
+          box-shadow: 0 0 2px rgba(54, 164, 29, 0.16), 0 4px 8px rgba(54, 164, 29, 0.16);
 }
-.fn-generic-tag--positive.focus-visible,
-.fn-generic-tag--positive.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #188918;
-  box-shadow: 0 0 0 .125rem #188918
+.fn-generic-tag--positive.focus-visible, .fn-generic-tag--positive.is-focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #188918;
+          box-shadow: 0 0 0 0.125rem #188918;
 }
 .fn-generic-tag--positive .fn-generic-tag__number {
-  color: #188918
+  color: #188918;
 }
 .fn-generic-tag--positive .fn-generic-tag__icon [class*=sap-icon] {
-  color: #188918
+  color: #188918;
 }
 .fn-generic-tag--critical {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16)
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
 }
-.fn-generic-tag--critical.is-hover,
-.fn-generic-tag--critical:hover {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16)
+.fn-generic-tag--critical:hover, .fn-generic-tag--critical.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
 }
-.fn-generic-tag--critical.is-hover.is-active,
-.fn-generic-tag--critical.is-hover:active,
-.fn-generic-tag--critical:hover.is-active,
-.fn-generic-tag--critical:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16)
+.fn-generic-tag--critical:hover:active, .fn-generic-tag--critical:hover.is-active, .fn-generic-tag--critical.is-hover:active, .fn-generic-tag--critical.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
 }
-.fn-generic-tag--critical.is-active,
-.fn-generic-tag--critical:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16)
+.fn-generic-tag--critical:active, .fn-generic-tag--critical.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
 }
 .fn-generic-tag--critical.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #f58b00;
-  box-shadow: 0 0 0 .125rem #f58b00
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #f58b00;
+          box-shadow: 0 0 0 0.125rem #f58b00;
 }
 .fn-generic-tag--critical:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  outline: 0
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+  outline: none;
 }
-.fn-generic-tag--critical:focus:not(.focus-visible).is-hover,
-.fn-generic-tag--critical:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 8px 16px rgba(245,139,0,.16)
+.fn-generic-tag--critical:focus:not(.focus-visible):hover, .fn-generic-tag--critical:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 8px 16px rgba(245, 139, 0, 0.16);
 }
-.fn-generic-tag--critical:focus:not(.focus-visible).is-hover.is-active,
-.fn-generic-tag--critical:focus:not(.focus-visible).is-hover:active,
-.fn-generic-tag--critical:focus:not(.focus-visible):hover.is-active,
-.fn-generic-tag--critical:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16);
-  box-shadow: 0 0 2px rgba(245,139,0,.16),0 4px 8px rgba(245,139,0,.16)
+.fn-generic-tag--critical:focus:not(.focus-visible):hover:active, .fn-generic-tag--critical:focus:not(.focus-visible):hover.is-active, .fn-generic-tag--critical:focus:not(.focus-visible).is-hover:active, .fn-generic-tag--critical:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
+          box-shadow: 0 0 2px rgba(245, 139, 0, 0.16), 0 4px 8px rgba(245, 139, 0, 0.16);
 }
-.fn-generic-tag--critical.focus-visible,
-.fn-generic-tag--critical.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #f58b00;
-  box-shadow: 0 0 0 .125rem #f58b00
+.fn-generic-tag--critical.focus-visible, .fn-generic-tag--critical.is-focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #f58b00;
+          box-shadow: 0 0 0 0.125rem #f58b00;
 }
 .fn-generic-tag--critical .fn-generic-tag__number {
-  color: #f58b00
+  color: #f58b00;
 }
 .fn-generic-tag--critical .fn-generic-tag__icon [class*=sap-icon] {
-  color: #f58b00
+  color: #f58b00;
 }
 .fn-generic-tag--negative {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16)
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
 }
-.fn-generic-tag--negative.is-hover,
-.fn-generic-tag--negative:hover {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16)
+.fn-generic-tag--negative:hover, .fn-generic-tag--negative.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
 }
-.fn-generic-tag--negative.is-hover.is-active,
-.fn-generic-tag--negative.is-hover:active,
-.fn-generic-tag--negative:hover.is-active,
-.fn-generic-tag--negative:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16)
+.fn-generic-tag--negative:hover:active, .fn-generic-tag--negative:hover.is-active, .fn-generic-tag--negative.is-hover:active, .fn-generic-tag--negative.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
 }
-.fn-generic-tag--negative.is-active,
-.fn-generic-tag--negative:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16)
+.fn-generic-tag--negative:active, .fn-generic-tag--negative.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
 }
 .fn-generic-tag--negative.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500;
-  box-shadow: 0 0 0 .125rem #c35500
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500;
+          box-shadow: 0 0 0 0.125rem #c35500;
 }
 .fn-generic-tag--negative:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  outline: 0
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+  outline: none;
 }
-.fn-generic-tag--negative:focus:not(.focus-visible).is-hover,
-.fn-generic-tag--negative:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 8px 16px rgba(238,57,57,.16)
+.fn-generic-tag--negative:focus:not(.focus-visible):hover, .fn-generic-tag--negative:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 8px 16px rgba(238, 57, 57, 0.16);
 }
-.fn-generic-tag--negative:focus:not(.focus-visible).is-hover.is-active,
-.fn-generic-tag--negative:focus:not(.focus-visible).is-hover:active,
-.fn-generic-tag--negative:focus:not(.focus-visible):hover.is-active,
-.fn-generic-tag--negative:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16);
-  box-shadow: 0 0 2px rgba(238,57,57,.16),0 4px 8px rgba(238,57,57,.16)
+.fn-generic-tag--negative:focus:not(.focus-visible):hover:active, .fn-generic-tag--negative:focus:not(.focus-visible):hover.is-active, .fn-generic-tag--negative:focus:not(.focus-visible).is-hover:active, .fn-generic-tag--negative:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
+          box-shadow: 0 0 2px rgba(238, 57, 57, 0.16), 0 4px 8px rgba(238, 57, 57, 0.16);
 }
-.fn-generic-tag--negative.focus-visible,
-.fn-generic-tag--negative.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #c35500;
-  box-shadow: 0 0 0 .125rem #c35500
+.fn-generic-tag--negative.focus-visible, .fn-generic-tag--negative.is-focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #c35500;
+          box-shadow: 0 0 0 0.125rem #c35500;
 }
 .fn-generic-tag--negative .fn-generic-tag__number {
-  color: #d20a0a
+  color: #d20a0a;
 }
 .fn-generic-tag--negative .fn-generic-tag__icon [class*=sap-icon] {
-  color: #d20a0a
+  color: #d20a0a;
 }
 .fn-generic-tag--info {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
 }
-.fn-generic-tag--info.is-hover,
-.fn-generic-tag--info:hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+.fn-generic-tag--info:hover, .fn-generic-tag--info.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
 }
-.fn-generic-tag--info.is-hover.is-active,
-.fn-generic-tag--info.is-hover:active,
-.fn-generic-tag--info:hover.is-active,
-.fn-generic-tag--info:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+.fn-generic-tag--info:hover:active, .fn-generic-tag--info:hover.is-active, .fn-generic-tag--info.is-hover:active, .fn-generic-tag--info.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
 }
-.fn-generic-tag--info.is-active,
-.fn-generic-tag--info:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+.fn-generic-tag--info:active, .fn-generic-tag--info.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
 }
 .fn-generic-tag--info.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
 .fn-generic-tag--info:focus:not(.focus-visible) {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  outline: 0
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+  outline: none;
 }
-.fn-generic-tag--info:focus:not(.focus-visible).is-hover,
-.fn-generic-tag--info:focus:not(.focus-visible):hover {
-  -webkit-box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16);
-  box-shadow: 0 0 2px rgba(36,149,255,.16),0 8px 16px rgba(36,149,255,.16)
+.fn-generic-tag--info:focus:not(.focus-visible):hover, .fn-generic-tag--info:focus:not(.focus-visible).is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
+          box-shadow: 0 0 2px rgba(36, 149, 255, 0.16), 0 8px 16px rgba(36, 149, 255, 0.16);
 }
-.fn-generic-tag--info:focus:not(.focus-visible).is-hover.is-active,
-.fn-generic-tag--info:focus:not(.focus-visible).is-hover:active,
-.fn-generic-tag--info:focus:not(.focus-visible):hover.is-active,
-.fn-generic-tag--info:focus:not(.focus-visible):hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16);
-  box-shadow: 0 0 2px rgba(27,144,255,.16),0 4px 8px rgba(27,144,255,.16)
+.fn-generic-tag--info:focus:not(.focus-visible):hover:active, .fn-generic-tag--info:focus:not(.focus-visible):hover.is-active, .fn-generic-tag--info:focus:not(.focus-visible).is-hover:active, .fn-generic-tag--info:focus:not(.focus-visible).is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
+          box-shadow: 0 0 2px rgba(27, 144, 255, 0.16), 0 4px 8px rgba(27, 144, 255, 0.16);
 }
-.fn-generic-tag--info.focus-visible,
-.fn-generic-tag--info.is-focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2;
-  box-shadow: 0 0 0 .125rem #0070f2
+.fn-generic-tag--info.focus-visible, .fn-generic-tag--info.is-focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2;
+          box-shadow: 0 0 0 0.125rem #0070f2;
 }
 .fn-generic-tag--info .fn-generic-tag__number {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-generic-tag--info .fn-generic-tag__icon [class*=sap-icon] {
-  color: #0070f2
+  color: #0070f2;
 }

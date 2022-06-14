@@ -1,34 +1,42 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-facet {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 0
+  border: 0;
 }
-.fd-facet::after,
-.fd-facet::before {
+.fd-facet::before, .fd-facet::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-facet-group {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -37,19 +45,18 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-.fd-facet-group::after,
-.fd-facet-group::before {
+.fd-facet-group::before, .fd-facet-group::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-facet--image {
   display: -webkit-box;
@@ -57,12 +64,12 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .fd-facet--image-header-title {
   -ms-flex-item-align: end;
-  align-self: flex-end
+      align-self: flex-end;
 }
 .fd-facet--form {
   display: -webkit-box;
@@ -70,49 +77,49 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .fd-facet--key-value .fd-facet__object-status .fd-facet__object-status-text {
-  font-family: var(--sapFontFamily)
+  font-family: var(--sapFontFamily);
 }
 .fd-facet--rating-indicator {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .fd-facet--rating-indicator .fd-facet__container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .fd-facet--rating-indicator .fd-facet__rating-container {
   -ms-flex-item-align: start;
-  align-self: flex-start
+      align-self: flex-start;
 }
 .fd-facet--rating-indicator .fd-facet__rating-dynamic-text {
   -ms-flex-item-align: end;
-  align-self: flex-end
+      align-self: flex-end;
 }
 .fd-facet__container {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -121,34 +128,32 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.fd-facet__container::after,
-.fd-facet__container::before {
+.fd-facet__container::before, .fd-facet__container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-facet__form-value {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   font-family: var(--sapFontFamily);
   font-size: var(--sapFontSize);
-  font-weight: 400;
-  color: var(--sapGroup_TitleTextColor)
+  font-weight: normal;
+  color: var(--sapGroup_TitleTextColor);
 }
-.fd-facet__form-value::after,
-.fd-facet__form-value::before {
+.fd-facet__form-value::before, .fd-facet__form-value::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }

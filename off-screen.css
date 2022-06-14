@@ -1,8 +1,17 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
 .fd-off-screen
 places the element far left of the screen. so it is not visible.
@@ -12,22 +21,27 @@ places the element far left of the screen. so it is not visible.
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
+  /*
+  * Element with aria-live will be announced on change in value, but
+  * this element should not be visible on screen, and also can't be made `visibility: hidden` or `display none`
+  * because of screen reader requirement
+  * please see: https://webaim.org/techniques/css/invisiblecontent/
+  */
   position: absolute;
   left: -625rem;
   top: auto;
-  width: .0625rem;
-  height: .0625rem;
-  overflow: hidden
+  width: 0.0625rem;
+  height: 0.0625rem;
+  overflow: hidden;
 }
-.fd-off-screen::after,
-.fd-off-screen::before {
+.fd-off-screen::before, .fd-off-screen::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }

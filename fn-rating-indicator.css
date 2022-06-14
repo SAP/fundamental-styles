@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-rating-indicator {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,138 +19,104 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: .125rem .25rem;
-  border-radius: .25rem
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
 }
-.fn-rating-indicator::after,
-.fn-rating-indicator::before {
+.fn-rating-indicator::before, .fn-rating-indicator::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-rating-indicator.is-hover,
-.fn-rating-indicator:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-rating-indicator:hover, .fn-rating-indicator.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 }
-.fn-rating-indicator.is-hover.is-active,
-.fn-rating-indicator.is-hover:active,
-.fn-rating-indicator:hover.is-active,
-.fn-rating-indicator:hover:active {
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+.fn-rating-indicator:hover:active, .fn-rating-indicator:hover.is-active, .fn-rating-indicator.is-hover:active, .fn-rating-indicator.is-hover.is-active {
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
-.fn-rating-indicator.is-active,
-.fn-rating-indicator:active {
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+.fn-rating-indicator:active, .fn-rating-indicator.is-active {
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
-.fn-rating-indicator.is-focus-within,
-.fn-rating-indicator:focus-within {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 .125rem #475e75;
-  box-shadow: 0 0 0 .125rem #475e75
+.fn-rating-indicator:focus-within, .fn-rating-indicator.is-focus-within {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75;
+          box-shadow: 0 0 0 0.125rem #475e75;
 }
-.fn-rating-indicator.is-disabled,
-.fn-rating-indicator:disabled,
-.fn-rating-indicator[aria-disabled=true] {
+.fn-rating-indicator[aria-disabled=true], .fn-rating-indicator:disabled, .fn-rating-indicator.is-disabled {
   pointer-events: none;
-  opacity: .4
+  opacity: 0.4;
 }
-.fn-rating-indicator.is-readonly.is-hover,
-.fn-rating-indicator.is-readonly:hover,
-.fn-rating-indicator[aria-readonly=true].is-hover,
-.fn-rating-indicator[aria-readonly=true]:hover,
-.fn-rating-indicator[readonly].is-hover,
-.fn-rating-indicator[readonly]:hover {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 8px 16px rgba(91,115,139,.16)
+.fn-rating-indicator[aria-readonly=true]:hover, .fn-rating-indicator[aria-readonly=true].is-hover, .fn-rating-indicator[readonly]:hover, .fn-rating-indicator[readonly].is-hover, .fn-rating-indicator.is-readonly:hover, .fn-rating-indicator.is-readonly.is-hover {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 8px 16px rgba(91, 115, 139, 0.16);
 }
-.fn-rating-indicator.is-readonly.is-hover.is-active,
-.fn-rating-indicator.is-readonly.is-hover:active,
-.fn-rating-indicator.is-readonly:hover.is-active,
-.fn-rating-indicator.is-readonly:hover:active,
-.fn-rating-indicator[aria-readonly=true].is-hover.is-active,
-.fn-rating-indicator[aria-readonly=true].is-hover:active,
-.fn-rating-indicator[aria-readonly=true]:hover.is-active,
-.fn-rating-indicator[aria-readonly=true]:hover:active,
-.fn-rating-indicator[readonly].is-hover.is-active,
-.fn-rating-indicator[readonly].is-hover:active,
-.fn-rating-indicator[readonly]:hover.is-active,
-.fn-rating-indicator[readonly]:hover:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+.fn-rating-indicator[aria-readonly=true]:hover:active, .fn-rating-indicator[aria-readonly=true]:hover.is-active, .fn-rating-indicator[aria-readonly=true].is-hover:active, .fn-rating-indicator[aria-readonly=true].is-hover.is-active, .fn-rating-indicator[readonly]:hover:active, .fn-rating-indicator[readonly]:hover.is-active, .fn-rating-indicator[readonly].is-hover:active, .fn-rating-indicator[readonly].is-hover.is-active, .fn-rating-indicator.is-readonly:hover:active, .fn-rating-indicator.is-readonly:hover.is-active, .fn-rating-indicator.is-readonly.is-hover:active, .fn-rating-indicator.is-readonly.is-hover.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
 }
-.fn-rating-indicator.is-readonly.is-active,
-.fn-rating-indicator.is-readonly:active,
-.fn-rating-indicator[aria-readonly=true].is-active,
-.fn-rating-indicator[aria-readonly=true]:active,
-.fn-rating-indicator[readonly].is-active,
-.fn-rating-indicator[readonly]:active {
-  -webkit-box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16);
-  box-shadow: 0 0 2px rgba(91,115,139,.16),0 4px 8px rgba(91,115,139,.16)
+.fn-rating-indicator[aria-readonly=true]:active, .fn-rating-indicator[aria-readonly=true].is-active, .fn-rating-indicator[readonly]:active, .fn-rating-indicator[readonly].is-active, .fn-rating-indicator.is-readonly:active, .fn-rating-indicator.is-readonly.is-active {
+  -webkit-box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
+          box-shadow: 0 0 2px rgba(91, 115, 139, 0.16), 0 4px 8px rgba(91, 115, 139, 0.16);
 }
-.fn-rating-indicator.is-readonly .fn-rating-indicator__input:checked ~ .fn-rating-indicator__input + .fn-rating-indicator__label::before,
-.fn-rating-indicator[aria-readonly=true] .fn-rating-indicator__input:checked ~ .fn-rating-indicator__input + .fn-rating-indicator__label::before,
-.fn-rating-indicator[readonly] .fn-rating-indicator__input:checked ~ .fn-rating-indicator__input + .fn-rating-indicator__label::before {
+.fn-rating-indicator[aria-readonly=true] .fn-rating-indicator__input:checked ~ .fn-rating-indicator__input + .fn-rating-indicator__label::before, .fn-rating-indicator[readonly] .fn-rating-indicator__input:checked ~ .fn-rating-indicator__input + .fn-rating-indicator__label::before, .fn-rating-indicator.is-readonly .fn-rating-indicator__input:checked ~ .fn-rating-indicator__input + .fn-rating-indicator__label::before {
   content: "\e065";
-  color: #5b738b
+  color: #5b738b;
 }
 .fn-rating-indicator.is-display {
-  pointer-events: none
+  pointer-events: none;
 }
 .fn-rating-indicator.is-display .fn-rating-indicator__label::before {
-  color: #5b738b
+  color: #5b738b;
 }
 .fn-rating-indicator__container {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 0
+  border: 0;
 }
-.fn-rating-indicator__container::after,
-.fn-rating-indicator__container::before {
+.fn-rating-indicator__container::before, .fn-rating-indicator__container::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-rating-indicator__input {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   width: 1.125rem;
   height: 1.125rem;
   z-index: -1;
-  opacity: .0001;
-  position: absolute
+  opacity: 0.0001;
+  position: absolute;
 }
-.fn-rating-indicator__input::after,
-.fn-rating-indicator__input::before {
+.fn-rating-indicator__input::before, .fn-rating-indicator__input::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-rating-indicator__label {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -158,58 +124,51 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1.125rem;
   height: 1.125rem;
-  margin-right: .125rem;
+  margin-right: 0.125rem;
   opacity: 1;
   float: left;
-  cursor: pointer
+  cursor: pointer;
 }
-.fn-rating-indicator__label::after,
-.fn-rating-indicator__label::before {
+.fn-rating-indicator__label::before, .fn-rating-indicator__label::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-rating-indicator__label[dir=rtl],
-[dir=rtl] .fn-rating-indicator__label {
+[dir=rtl] .fn-rating-indicator__label, .fn-rating-indicator__label[dir=rtl] {
   margin-right: 0;
-  margin-left: .125rem
+  margin-left: 0.125rem;
 }
 .fn-rating-indicator__label::before {
   content: "\e065";
-  font-size: .875rem;
-  font-family: SAP-icons;
-  color: #f58b00
+  font-size: 0.875rem;
+  font-family: "SAP-icons";
+  color: #f58b00;
 }
 .fn-rating-indicator__label:last-child {
-  margin-right: 0
-}
-.fn-rating-indicator__label:last-child[dir=rtl],
-[dir=rtl] .fn-rating-indicator__label:last-child {
   margin-right: 0;
-  margin-left: 0
 }
-.fn-rating-indicator__label[dir=rtl],
-[dir=rtl] .fn-rating-indicator__label {
-  float: right
+[dir=rtl] .fn-rating-indicator__label:last-child, .fn-rating-indicator__label:last-child[dir=rtl] {
+  margin-right: 0;
+  margin-left: 0;
+}
+[dir=rtl] .fn-rating-indicator__label, .fn-rating-indicator__label[dir=rtl] {
+  float: right;
 }
 .fn-rating-indicator .fn-rating-indicator__input:checked ~ .fn-rating-indicator__input + .fn-rating-indicator__label::before {
   content: "\e0a1";
-  color: #5b738b
+  color: #5b738b;
 }
-.fn-rating-indicator[class*=fn-rating-indicator--] .fn-rating-indicator__input--zero-rating,
-.fn-rating-indicator[class*=fn-rating-indicator--] .fn-rating-indicator__label--zero-rating,
-.fn-rating-indicator__input--zero-rating,
-.fn-rating-indicator__label--zero-rating {
+.fn-rating-indicator[class*=fn-rating-indicator--] .fn-rating-indicator__input--zero-rating, .fn-rating-indicator[class*=fn-rating-indicator--] .fn-rating-indicator__label--zero-rating, .fn-rating-indicator__input--zero-rating, .fn-rating-indicator__label--zero-rating {
   width: 0;
   margin: 0;
   padding: 0;
-  opacity: .0001;
-  overflow: hidden
+  opacity: 0.0001;
+  overflow: hidden;
 }

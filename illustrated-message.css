@@ -1,16 +1,17 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-illustrated-message {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,52 +20,50 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   max-width: 30rem;
   height: auto;
   padding: 1rem;
   margin-top: 5rem;
-  text-align: center
+  text-align: center;
 }
-.fd-illustrated-message::after,
-.fd-illustrated-message::before {
+.fd-illustrated-message::before, .fd-illustrated-message::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-illustrated-message__illustration {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   height: 15rem;
-  width: 20rem
+  width: 20rem;
 }
-.fd-illustrated-message__illustration::after,
-.fd-illustrated-message__illustration::before {
+.fd-illustrated-message__illustration::before, .fd-illustrated-message__illustration::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-illustrated-message__figcaption {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -73,27 +72,26 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
-.fd-illustrated-message__figcaption::after,
-.fd-illustrated-message__figcaption::before {
+.fd-illustrated-message__figcaption::before, .fd-illustrated-message__figcaption::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-illustrated-message__title {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -104,47 +102,45 @@
   text-align: center;
   color: var(--sapGroup_TitleTextColor);
   margin-top: 2rem;
-  margin-bottom: .5rem
+  margin-bottom: 0.5rem;
 }
-.fd-illustrated-message__title::after,
-.fd-illustrated-message__title::before {
+.fd-illustrated-message__title::before, .fd-illustrated-message__title::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-illustrated-message__text {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   width: 100%;
   font-size: var(--sapFontLargeSize);
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.4;
   text-align: center;
   color: var(--sapContent_LabelColor);
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
-.fd-illustrated-message__text::after,
-.fd-illustrated-message__text::before {
+.fd-illustrated-message__text::before, .fd-illustrated-message__text::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-illustrated-message__actions {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -152,81 +148,80 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2rem;
-  width: 100%
+  width: 100%;
 }
-.fd-illustrated-message__actions::after,
-.fd-illustrated-message__actions::before {
+.fd-illustrated-message__actions::before, .fd-illustrated-message__actions::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-illustrated-message__actions * {
-  margin: 0 .25rem
+  margin: 0 0.25rem;
 }
-@media screen and (max-width:599px) {
+@media screen and (max-width: 599px) {
   .fd-illustrated-message {
-    max-width: 20rem
+    max-width: 20rem;
   }
   .fd-illustrated-message .fd-illustrated-message__illustration {
     height: 10rem;
-    width: 10rem
+    width: 10rem;
   }
 }
 .fd-illustrated-message--dialog {
   margin-top: 0;
-  max-width: 100%
+  max-width: 100%;
 }
 .fd-illustrated-message--dialog .fd-illustrated-message__illustration {
   height: 10rem;
   width: 10rem;
   margin-top: 1rem;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 .fd-illustrated-message--dialog .fd-illustrated-message__title {
   padding: 0;
   margin: 0;
   font-size: var(--sapFontHeader4Size);
   max-width: 25rem;
-  margin-bottom: .25rem
+  margin-bottom: 0.25rem;
 }
 .fd-illustrated-message--dialog .fd-illustrated-message__text {
   font-size: var(--sapFontSize);
   max-width: 25rem;
-  color: var(--sapTile_TextColor)
+  color: var(--sapTile_TextColor);
 }
-@media screen and (max-width:599px) {
+@media screen and (max-width: 599px) {
   .fd-illustrated-message--dialog .fd-illustrated-message__title {
-    max-width: 18rem
+    max-width: 18rem;
   }
   .fd-illustrated-message--dialog .fd-illustrated-message__text {
-    max-width: 18rem
+    max-width: 18rem;
   }
 }
 .fd-illustrated-message--spot {
   margin-top: 0;
-  max-width: 100%
+  max-width: 100%;
 }
 .fd-illustrated-message--spot .fd-illustrated-message__illustration {
   padding: 0;
   margin: 0;
   height: 8rem;
   width: 8rem;
-  margin-top: .5rem;
-  margin-bottom: .5rem
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .fd-illustrated-message--spot .fd-illustrated-message__title {
   padding: 0;
   margin: 0;
   font-size: var(--sapFontHeader5Size);
   line-height: 1.25;
-  margin-bottom: .25rem;
-  max-width: 25rem
+  margin-bottom: 0.25rem;
+  max-width: 25rem;
 }
 .fd-illustrated-message--spot .fd-illustrated-message__text {
   padding: 0;
@@ -234,19 +229,19 @@
   font-size: var(--sapFontSize);
   color: var(--sapTile_TextColor);
   margin-bottom: 1rem;
-  max-width: 25rem
+  max-width: 25rem;
 }
 .fd-illustrated-message--spot .fd-illustrated-message__actions {
   padding: 0;
   margin: 0;
-  margin-top: .5rem;
-  margin-bottom: 1rem
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
-@media screen and (max-width:599px) {
+@media screen and (max-width: 599px) {
   .fd-illustrated-message--spot .fd-illustrated-message__title {
-    max-width: 18rem
+    max-width: 18rem;
   }
   .fd-illustrated-message--spot .fd-illustrated-message__text {
-    max-width: 18rem
+    max-width: 18rem;
   }
 }

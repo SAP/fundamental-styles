@@ -1,37 +1,45 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-padding {
-  padding: 1rem!important
+  padding: 1rem !important;
 }
 .fd-padding-begin-end--tiny {
-  padding-left: .5rem!important;
-  padding-right: .5rem!important
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
 }
 .fd-padding-begin-end--sm {
-  padding-left: 1rem!important;
-  padding-right: 1rem!important
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 .fd-padding-begin-end--md {
-  padding-left: 2rem!important;
-  padding-right: 2rem!important
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 .fd-padding-begin-end--lg {
-  padding-left: 3rem!important;
-  padding-right: 3rem!important
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
 }
 .fd-padding--none {
-  padding: 0!important
+  padding: 0 !important;
 }
 .fd-padding-responsive--sm {
-  padding: 0 1rem!important
+  padding: 0 1rem !important;
 }
-.fd-padding-responsive--lg,
-.fd-padding-responsive--md {
-  padding: 0 2rem!important
+.fd-padding-responsive--md, .fd-padding-responsive--lg {
+  padding: 0 2rem !important;
 }
 .fd-padding-responsive--xl {
-  padding: 0 3rem!important
+  padding: 0 3rem !important;
 }

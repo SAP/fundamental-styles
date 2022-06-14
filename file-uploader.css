@@ -1,16 +1,25 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
 .fd-file-uploader {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
   font-family: var(--sapFontFamily);
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -18,50 +27,45 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+      -ms-flex-align: center;
+          align-items: center;
 }
-.fd-file-uploader::after,
-.fd-file-uploader::before {
+.fd-file-uploader::before, .fd-file-uploader::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fd-file-uploader__input.fd-input {
   width: auto;
-  margin-right: .25rem;
+  margin-right: 0.25rem;
   background-color: var(--sapField_Background);
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
   color: transparent;
-  text-shadow: 0 0 0 var(--sapTextColor)
+  text-shadow: 0 0 0 var(--sapTextColor);
 }
 .fd-file-uploader__input.fd-input::-webkit-input-placeholder {
-  color: var(--sapTextColor)
+  color: var(--sapTextColor);
 }
 .fd-file-uploader__input.fd-input::-moz-placeholder {
-  color: var(--sapTextColor)
+  color: var(--sapTextColor);
 }
 .fd-file-uploader__input.fd-input:-ms-input-placeholder {
-  color: var(--sapTextColor)
+  color: var(--sapTextColor);
 }
 .fd-file-uploader__input.fd-input::-ms-input-placeholder {
-  color: var(--sapTextColor)
+  color: var(--sapTextColor);
 }
 .fd-file-uploader__input.fd-input::placeholder {
-  color: var(--sapTextColor)
+  color: var(--sapTextColor);
 }
-.fd-file-uploader__input.fd-input:focus {
-  outline: 0
-}
-.fd-file-uploader__input.fd-input[dir=rtl],
-[dir=rtl] .fd-file-uploader__input.fd-input {
-  margin-left: .25rem;
-  margin-right: 0
+[dir=rtl] .fd-file-uploader__input.fd-input, .fd-file-uploader__input.fd-input[dir=rtl] {
+  margin-left: 0.25rem;
+  margin-right: 0;
 }
 .fd-file-uploader__hidden {
-  display: none
+  display: none;
 }

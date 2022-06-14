@@ -339,6 +339,16 @@
     "body": "var(--sapContent_MarkerTextColor)",
     "description": "Marker Text Color (The color of marker texts.) Value: #fff #Base, #Content, #Color, #Font"
   },
+  "sapContent_MeasureIndicatorColor": {
+    "prefix": "sapContent_MeasureIndicatorColor",
+    "body": "var(--sapContent_MeasureIndicatorColor)",
+    "description": "Measure Indicator Color (The color of measuring indicators.) Value: #fff #Base, #Content, #Color"
+  },
+  "sapContent_Selected_MeasureIndicatorColor": {
+    "prefix": "sapContent_Selected_MeasureIndicatorColor",
+    "body": "var(--sapContent_Selected_MeasureIndicatorColor)",
+    "description": "Selected Measure Indicator Color (The selected state color of measuring indicators.) Value: #fff #Base, #Content, #Color"
+  },
   "sapContent_Placeholderloading_Background": {
     "prefix": "sapContent_Placeholderloading_Background",
     "body": "var(--sapContent_Placeholderloading_Background)",
@@ -368,6 +378,11 @@
     "prefix": "sapContent_UnratedColor",
     "body": "var(--sapContent_UnratedColor)",
     "description": "Unrated Color (Color for unrated content items.) Value: #999 #Base, #Content, #Color"
+  },
+  "sapContent_BusyColor": {
+    "prefix": "sapContent_BusyColor",
+    "body": "var(--sapContent_BusyColor)",
+    "description": "Busy Color (Color of the busy indicator.) Value: #fff #Base, #Content, #Color"
   },
   "sapContent_FocusColor": {
     "prefix": "sapContent_FocusColor",
@@ -569,6 +584,111 @@
     "body": "var(--sapContent_Selected_ForegroundColor)",
     "description": "Selected Foreground Color (The foreground color of selected (toggled) elements.) Value: #fff #Base, #Content, #Color"
   },
+  "sapContent_ForcedColorAdjust": {
+    "prefix": "sapContent_ForcedColorAdjust",
+    "body": "var(--sapContent_ForcedColorAdjust)",
+    "description": "Forced Color Adjust (Decides wether OS high contrast settings should be respected (auto) or ignored (none).) Value: none #Base, #Content"
+  },
+  "sapContent_Illustrative_Color1": {
+    "prefix": "sapContent_Illustrative_Color1",
+    "body": "var(--sapContent_Illustrative_Color1)",
+    "description": "Illustrative Color 1 (The color of illustrated content.) Value: #212628 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color2": {
+    "prefix": "sapContent_Illustrative_Color2",
+    "body": "var(--sapContent_Illustrative_Color2)",
+    "description": "Illustrative Color 2 (The color of illustrated content.) Value: #62737c #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color3": {
+    "prefix": "sapContent_Illustrative_Color3",
+    "body": "var(--sapContent_Illustrative_Color3)",
+    "description": "Illustrative Color 3 (The color of illustrated content.) Value: #62737c #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color4": {
+    "prefix": "sapContent_Illustrative_Color4",
+    "body": "var(--sapContent_Illustrative_Color4)",
+    "description": "Illustrative Color 4 (The color of illustrated content.) Value: #030303 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color5": {
+    "prefix": "sapContent_Illustrative_Color5",
+    "body": "var(--sapContent_Illustrative_Color5)",
+    "description": "Illustrative Color 5 (The color of illustrated content.) Value: #88979e #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color6": {
+    "prefix": "sapContent_Illustrative_Color6",
+    "body": "var(--sapContent_Illustrative_Color6)",
+    "description": "Illustrative Color 6 (The color of illustrated content.) Value: #88979e #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color7": {
+    "prefix": "sapContent_Illustrative_Color7",
+    "body": "var(--sapContent_Illustrative_Color7)",
+    "description": "Illustrative Color 7 (The color of illustrated content.) Value: #212628 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color8": {
+    "prefix": "sapContent_Illustrative_Color8",
+    "body": "var(--sapContent_Illustrative_Color8)",
+    "description": "Illustrative Color 8 (The color of illustrated content.) Value: #dbdbdb #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color9": {
+    "prefix": "sapContent_Illustrative_Color9",
+    "body": "var(--sapContent_Illustrative_Color9)",
+    "description": "Illustrative Color 9 (The color of illustrated content.) Value: #64edd2 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color10": {
+    "prefix": "sapContent_Illustrative_Color10",
+    "body": "var(--sapContent_Illustrative_Color10)",
+    "description": "Illustrative Color 10 (The color of illustrated content.) Value: #ebf8ff #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color11": {
+    "prefix": "sapContent_Illustrative_Color11",
+    "body": "var(--sapContent_Illustrative_Color11)",
+    "description": "Illustrative Color 11 (The color of illustrated content.) Value: #f31ded #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color12": {
+    "prefix": "sapContent_Illustrative_Color12",
+    "body": "var(--sapContent_Illustrative_Color12)",
+    "description": "Illustrative Color 12 (The color of illustrated content.) Value: #5dc122 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color13": {
+    "prefix": "sapContent_Illustrative_Color13",
+    "body": "var(--sapContent_Illustrative_Color13)",
+    "description": "Illustrative Color 13 (The color of illustrated content.) Value: #005dc9 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color14": {
+    "prefix": "sapContent_Illustrative_Color14",
+    "body": "var(--sapContent_Illustrative_Color14)",
+    "description": "Illustrative Color 14 (The color of illustrated content.) Value: #004da5 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color15": {
+    "prefix": "sapContent_Illustrative_Color15",
+    "body": "var(--sapContent_Illustrative_Color15)",
+    "description": "Illustrative Color 15 (The color of illustrated content.) Value: #cc7400 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color16": {
+    "prefix": "sapContent_Illustrative_Color16",
+    "body": "var(--sapContent_Illustrative_Color16)",
+    "description": "Illustrative Color 16 (The color of illustrated content.) Value: #3b0ac6 #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color17": {
+    "prefix": "sapContent_Illustrative_Color17",
+    "body": "var(--sapContent_Illustrative_Color17)",
+    "description": "Illustrative Color 17 (The color of illustrated content.) Value: #00a58a #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color18": {
+    "prefix": "sapContent_Illustrative_Color18",
+    "body": "var(--sapContent_Illustrative_Color18)",
+    "description": "Illustrative Color 18 (The color of illustrated content.) Value: #d1efff #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color19": {
+    "prefix": "sapContent_Illustrative_Color19",
+    "body": "var(--sapContent_Illustrative_Color19)",
+    "description": "Illustrative Color 19 (The color of illustrated content.) Value: #b8e6ff #Base, #Content, #Color"
+  },
+  "sapContent_Illustrative_Color20": {
+    "prefix": "sapContent_Illustrative_Color20",
+    "body": "var(--sapContent_Illustrative_Color20)",
+    "description": "Illustrative Color 20 (The color of illustrated content.) Value: #9eddff #Base, #Content, #Color"
+  },
   "sapFontLightFamily": {
     "prefix": "sapFontLightFamily",
     "body": "var(--sapFontLightFamily)",
@@ -578,6 +698,16 @@
     "prefix": "sapFontBoldFamily",
     "body": "var(--sapFontBoldFamily)",
     "description": "Bold Font Family (The preferred bold font family of headers.) Value: \"72-Bold\", \"72-Boldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
+  },
+  "sapFontSemiboldFamily": {
+    "prefix": "sapFontSemiboldFamily",
+    "body": "var(--sapFontSemiboldFamily)",
+    "description": "Semi Bold Font Family (The preferred semi bold font family.) Value: \"72-Semibold\", \"72-Semiboldfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
+  },
+  "sapFontSemiboldDuplexFamily": {
+    "prefix": "sapFontSemiboldDuplexFamily",
+    "body": "var(--sapFontSemiboldDuplexFamily)",
+    "description": "Semi Bold Duplex Font Family (The preferred semi bold duplex font family (with the same widths as @sapFontFamily).) Value: \"72-SemiboldDuplex\", \"72-SemiboldDuplexfull\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
   },
   "sapFontBlackFamily": {
     "prefix": "sapFontBlackFamily",
@@ -808,6 +938,156 @@
     "prefix": "sapShell_NeutralColor",
     "body": "var(--sapShell_NeutralColor)",
     "description": "Shell Neutral Color (The neutral semantic color for use in shell contexts.) Value: #fff #Base, #Shell, #Color"
+  },
+  "sapAvatar_1_Background": {
+    "prefix": "sapAvatar_1_Background",
+    "body": "var(--sapAvatar_1_Background)",
+    "description": "Avatar 1 Background Color (The background color of type-1 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_1_BorderColor": {
+    "prefix": "sapAvatar_1_BorderColor",
+    "body": "var(--sapAvatar_1_BorderColor)",
+    "description": "Avatar 1 Border Color (The border color of type-1 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_1_TextColor": {
+    "prefix": "sapAvatar_1_TextColor",
+    "body": "var(--sapAvatar_1_TextColor)",
+    "description": "Avatar 1 Text Color (The text color of type-1 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_2_Background": {
+    "prefix": "sapAvatar_2_Background",
+    "body": "var(--sapAvatar_2_Background)",
+    "description": "Avatar 2 Background Color (The background color of type-2 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_2_BorderColor": {
+    "prefix": "sapAvatar_2_BorderColor",
+    "body": "var(--sapAvatar_2_BorderColor)",
+    "description": "Avatar 2 Border Color (The border color of type-2 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_2_TextColor": {
+    "prefix": "sapAvatar_2_TextColor",
+    "body": "var(--sapAvatar_2_TextColor)",
+    "description": "Avatar 2 Text Color (The text color of type-2 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_3_Background": {
+    "prefix": "sapAvatar_3_Background",
+    "body": "var(--sapAvatar_3_Background)",
+    "description": "Avatar 3 Background Color (The background color of type-3 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_3_BorderColor": {
+    "prefix": "sapAvatar_3_BorderColor",
+    "body": "var(--sapAvatar_3_BorderColor)",
+    "description": "Avatar 3 Border Color (The border color of type-3 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_3_TextColor": {
+    "prefix": "sapAvatar_3_TextColor",
+    "body": "var(--sapAvatar_3_TextColor)",
+    "description": "Avatar 3 Text Color (The text color of type-3 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_4_Background": {
+    "prefix": "sapAvatar_4_Background",
+    "body": "var(--sapAvatar_4_Background)",
+    "description": "Avatar 4 Background Color (The background color of type-4 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_4_BorderColor": {
+    "prefix": "sapAvatar_4_BorderColor",
+    "body": "var(--sapAvatar_4_BorderColor)",
+    "description": "Avatar 4 Border Color (The border color of type-4 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_4_TextColor": {
+    "prefix": "sapAvatar_4_TextColor",
+    "body": "var(--sapAvatar_4_TextColor)",
+    "description": "Avatar 4 Text Color (The text color of type-4 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_5_Background": {
+    "prefix": "sapAvatar_5_Background",
+    "body": "var(--sapAvatar_5_Background)",
+    "description": "Avatar 5 Background Color (The background color of type-5 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_5_BorderColor": {
+    "prefix": "sapAvatar_5_BorderColor",
+    "body": "var(--sapAvatar_5_BorderColor)",
+    "description": "Avatar 5 Border Color (The border color of type-5 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_5_TextColor": {
+    "prefix": "sapAvatar_5_TextColor",
+    "body": "var(--sapAvatar_5_TextColor)",
+    "description": "Avatar 5 Text Color (The text color of type-5 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_6_Background": {
+    "prefix": "sapAvatar_6_Background",
+    "body": "var(--sapAvatar_6_Background)",
+    "description": "Avatar 6 Background Color (The background color of type-6 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_6_BorderColor": {
+    "prefix": "sapAvatar_6_BorderColor",
+    "body": "var(--sapAvatar_6_BorderColor)",
+    "description": "Avatar 6 Border Color (The border color of type-6 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_6_TextColor": {
+    "prefix": "sapAvatar_6_TextColor",
+    "body": "var(--sapAvatar_6_TextColor)",
+    "description": "Avatar 6 Text Color (The text color of type-6 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_7_Background": {
+    "prefix": "sapAvatar_7_Background",
+    "body": "var(--sapAvatar_7_Background)",
+    "description": "Avatar 7 Background Color (The background color of type-7 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_7_BorderColor": {
+    "prefix": "sapAvatar_7_BorderColor",
+    "body": "var(--sapAvatar_7_BorderColor)",
+    "description": "Avatar 7 Border Color (The border color of type-7 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_7_TextColor": {
+    "prefix": "sapAvatar_7_TextColor",
+    "body": "var(--sapAvatar_7_TextColor)",
+    "description": "Avatar 7 Text Color (The text color of type-7 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_8_Background": {
+    "prefix": "sapAvatar_8_Background",
+    "body": "var(--sapAvatar_8_Background)",
+    "description": "Avatar 8 Background Color (The background color of type-8 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_8_BorderColor": {
+    "prefix": "sapAvatar_8_BorderColor",
+    "body": "var(--sapAvatar_8_BorderColor)",
+    "description": "Avatar 8 Border Color (The border color of type-8 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_8_TextColor": {
+    "prefix": "sapAvatar_8_TextColor",
+    "body": "var(--sapAvatar_8_TextColor)",
+    "description": "Avatar 8 Text Color (The text color of type-8 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_9_Background": {
+    "prefix": "sapAvatar_9_Background",
+    "body": "var(--sapAvatar_9_Background)",
+    "description": "Avatar 9 Background Color (The background color of type-9 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_9_BorderColor": {
+    "prefix": "sapAvatar_9_BorderColor",
+    "body": "var(--sapAvatar_9_BorderColor)",
+    "description": "Avatar 9 Border Color (The border color of type-9 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_9_TextColor": {
+    "prefix": "sapAvatar_9_TextColor",
+    "body": "var(--sapAvatar_9_TextColor)",
+    "description": "Avatar 9 Text Color (The text color of type-9 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_10_Background": {
+    "prefix": "sapAvatar_10_Background",
+    "body": "var(--sapAvatar_10_Background)",
+    "description": "Avatar 10 Background Color (The background color of type-10 avatars.) Value: #000 #Base, #Avatar, #Color"
+  },
+  "sapAvatar_10_BorderColor": {
+    "prefix": "sapAvatar_10_BorderColor",
+    "body": "var(--sapAvatar_10_BorderColor)",
+    "description": "Avatar 10 Border Color (The border color of type-10 avatars.) Value: #fff #Base, #Avatar, #Color"
+  },
+  "sapAvatar_10_TextColor": {
+    "prefix": "sapAvatar_10_TextColor",
+    "body": "var(--sapAvatar_10_TextColor)",
+    "description": "Avatar 10 Text Color (The text color of type-10 avatars.) Value: #fff #Base, #Avatar, #Color"
   },
   "sapButton_Background": {
     "prefix": "sapButton_Background",
@@ -1424,25 +1704,205 @@
     "body": "var(--sapButton_Neutral_Active_TextColor)",
     "description": "Neutral Button Active Text Color (The active (down) state text color of neutral buttons.) Value: #fff #Base, #Button, #Color, #Font"
   },
-  "sapButton_Track_Selected_Background": {
-    "prefix": "sapButton_Track_Selected_Background",
-    "body": "var(--sapButton_Track_Selected_Background)",
-    "description": "Switch Button Selected Track Color (The background color for the selected track of button controls such as the switch.) Value: #0f5d94 #Base, #Button, #Color"
-  },
-  "sapButton_Track_Selected_TextColor": {
-    "prefix": "sapButton_Track_Selected_TextColor",
-    "body": "var(--sapButton_Track_Selected_TextColor)",
-    "description": "Switch Button Selected Text Color (The text and icon color for the selected track of button controls such as the switch.) Value: #fff #Base, #Button, #Color, #Font"
-  },
   "sapButton_Track_Background": {
     "prefix": "sapButton_Track_Background",
     "body": "var(--sapButton_Track_Background)",
-    "description": "Switch Button Track Color (The background color for the track of button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+    "description": "Switch Button Track Background Color (The background color for the track of button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+  },
+  "sapButton_Track_BorderColor": {
+    "prefix": "sapButton_Track_BorderColor",
+    "body": "var(--sapButton_Track_BorderColor)",
+    "description": "Switch Button Track Border Color (The border color for the track of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
   },
   "sapButton_Track_TextColor": {
     "prefix": "sapButton_Track_TextColor",
     "body": "var(--sapButton_Track_TextColor)",
-    "description": "Switch Button Text Color (The text and icon color for the track of button controls such as the switch.) Value: #fff #Base, #Button, #Color, #Font"
+    "description": "Switch Button Track Text Color (The text and icon color for the track of button controls such as the switch.) Value: #fff #Base, #Button, #Color, #Font"
+  },
+  "sapButton_Track_Hover_Background": {
+    "prefix": "sapButton_Track_Hover_Background",
+    "body": "var(--sapButton_Track_Hover_Background)",
+    "description": "Switch Button Track Hover Background Color (The background color for the hovered track of button controls such as the switch.) Value: #7a5100 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Hover_BorderColor": {
+    "prefix": "sapButton_Track_Hover_BorderColor",
+    "body": "var(--sapButton_Track_Hover_BorderColor)",
+    "description": "Switch Button Track Hover Border Color (The border color for the hovered track of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Track_Selected_Background": {
+    "prefix": "sapButton_Track_Selected_Background",
+    "body": "var(--sapButton_Track_Selected_Background)",
+    "description": "Switch Button Selected Track Background Color (The background color for the selected track of button controls such as the switch.) Value: #0f5d94 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Selected_BorderColor": {
+    "prefix": "sapButton_Track_Selected_BorderColor",
+    "body": "var(--sapButton_Track_Selected_BorderColor)",
+    "description": "Switch Button Selected Track Border Color (The border color for the selected track of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Track_Selected_TextColor": {
+    "prefix": "sapButton_Track_Selected_TextColor",
+    "body": "var(--sapButton_Track_Selected_TextColor)",
+    "description": "Switch Button Selected Track Text Color (The text and icon color for the selected track of button controls such as the switch.) Value: #fff #Base, #Button, #Color, #Font"
+  },
+  "sapButton_Track_Selected_Hover_Background": {
+    "prefix": "sapButton_Track_Selected_Hover_Background",
+    "body": "var(--sapButton_Track_Selected_Hover_Background)",
+    "description": "Switch Button Selected Track Hover Background Color (The background color for the hovered selected track of button controls such as the switch.) Value: #7a5100 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Selected_Hover_BorderColor": {
+    "prefix": "sapButton_Track_Selected_Hover_BorderColor",
+    "body": "var(--sapButton_Track_Selected_Hover_BorderColor)",
+    "description": "Switch Button Selected Track Hover Border Color (The border color for the hovered selected track of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Background": {
+    "prefix": "sapButton_Handle_Background",
+    "body": "var(--sapButton_Handle_Background)",
+    "description": "Switch Button Handle Background Color (The background color for the handle of button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_BorderColor": {
+    "prefix": "sapButton_Handle_BorderColor",
+    "body": "var(--sapButton_Handle_BorderColor)",
+    "description": "Switch Button Handle Border Color (The border color for the handle of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_TextColor": {
+    "prefix": "sapButton_Handle_TextColor",
+    "body": "var(--sapButton_Handle_TextColor)",
+    "description": "Switch Button Handle Text Color (The text and icon color for the handle of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Hover_Background": {
+    "prefix": "sapButton_Handle_Hover_Background",
+    "body": "var(--sapButton_Handle_Hover_Background)",
+    "description": "Switch Button Handle Hover Background Color (The background color for the hovered handle of button controls such as the switch.) Value: #7a5100 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Hover_BorderColor": {
+    "prefix": "sapButton_Handle_Hover_BorderColor",
+    "body": "var(--sapButton_Handle_Hover_BorderColor)",
+    "description": "Switch Button Handle Hover Border Color (The border color for the hovered handle of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Selected_Background": {
+    "prefix": "sapButton_Handle_Selected_Background",
+    "body": "var(--sapButton_Handle_Selected_Background)",
+    "description": "Switch Button Selected Handle Background Color (The background color for the selected handle of button controls such as the switch.) Value: #0f5d94 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Selected_BorderColor": {
+    "prefix": "sapButton_Handle_Selected_BorderColor",
+    "body": "var(--sapButton_Handle_Selected_BorderColor)",
+    "description": "Switch Button Selected Handle Border Color (The border color for the selected handle of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Selected_TextColor": {
+    "prefix": "sapButton_Handle_Selected_TextColor",
+    "body": "var(--sapButton_Handle_Selected_TextColor)",
+    "description": "Switch Button Selected Handle Text Color (The text and icon color for the selected handle of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Selected_Hover_Background": {
+    "prefix": "sapButton_Handle_Selected_Hover_Background",
+    "body": "var(--sapButton_Handle_Selected_Hover_Background)",
+    "description": "Switch Button Selected Handle Hover Background Color (The background color for the hovered selected handle of button controls such as the switch.) Value: #7a5100 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Selected_Hover_BorderColor": {
+    "prefix": "sapButton_Handle_Selected_Hover_BorderColor",
+    "body": "var(--sapButton_Handle_Selected_Hover_BorderColor)",
+    "description": "Switch Button Selected Handle Hover Border Color (The border color for the hovered selected handle of button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Track_Negative_Background": {
+    "prefix": "sapButton_Track_Negative_Background",
+    "body": "var(--sapButton_Track_Negative_Background)",
+    "description": "Negative Switch Button Track Background Color (The background color for the track of negative button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Negative_BorderColor": {
+    "prefix": "sapButton_Track_Negative_BorderColor",
+    "body": "var(--sapButton_Track_Negative_BorderColor)",
+    "description": "Negative Switch Button Track Border Color (The border color for the track of negative button controls such as the switch.) Value: #ff5e5e #Base, #Button, #Color"
+  },
+  "sapButton_Track_Negative_TextColor": {
+    "prefix": "sapButton_Track_Negative_TextColor",
+    "body": "var(--sapButton_Track_Negative_TextColor)",
+    "description": "Negative Switch Button Track Text Color (The text and icon color for the track of negative button controls such as the switch.) Value: #fff #Base, #Button, #Color, #Font"
+  },
+  "sapButton_Track_Negative_Hover_Background": {
+    "prefix": "sapButton_Track_Negative_Hover_Background",
+    "body": "var(--sapButton_Track_Negative_Hover_Background)",
+    "description": "Negative Switch Button Track Hover Background Color (The background color for the hovered track of negative button controls such as the switch.) Value: #7a5100 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Negative_Hover_BorderColor": {
+    "prefix": "sapButton_Track_Negative_Hover_BorderColor",
+    "body": "var(--sapButton_Track_Negative_Hover_BorderColor)",
+    "description": "Negative Switch Button Track Hover Border Color (The border color for the hovered track of negative button controls such as the switch.) Value: #ff5e5e #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Negative_Background": {
+    "prefix": "sapButton_Handle_Negative_Background",
+    "body": "var(--sapButton_Handle_Negative_Background)",
+    "description": "Negative Switch Button Handle Background Color (The background color for the handle of negative button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Negative_BorderColor": {
+    "prefix": "sapButton_Handle_Negative_BorderColor",
+    "body": "var(--sapButton_Handle_Negative_BorderColor)",
+    "description": "Negative Switch Button Handle Border Color (The border color for the handle of negative button controls such as the switch.) Value: #ff5e5e #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Negative_TextColor": {
+    "prefix": "sapButton_Handle_Negative_TextColor",
+    "body": "var(--sapButton_Handle_Negative_TextColor)",
+    "description": "Negative Switch Button Handle Text Color (The text and icon color for the handle of negative button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Negative_Hover_Background": {
+    "prefix": "sapButton_Handle_Negative_Hover_Background",
+    "body": "var(--sapButton_Handle_Negative_Hover_Background)",
+    "description": "Negative Switch Button Handle Hover Background Color (The background color for the hovered handle of negative button controls such as the switch.) Value: #7a5100 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Negative_Hover_BorderColor": {
+    "prefix": "sapButton_Handle_Negative_Hover_BorderColor",
+    "body": "var(--sapButton_Handle_Negative_Hover_BorderColor)",
+    "description": "Negative Switch Button Handle Hover Border Color (The border color for the hovered handle of negative button controls such as the switch.) Value: #ff5e5e #Base, #Button, #Color"
+  },
+  "sapButton_Track_Positive_Background": {
+    "prefix": "sapButton_Track_Positive_Background",
+    "body": "var(--sapButton_Track_Positive_Background)",
+    "description": "Positive Switch Button Track Background Color (The background color for the track of positive button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Positive_BorderColor": {
+    "prefix": "sapButton_Track_Positive_BorderColor",
+    "body": "var(--sapButton_Track_Positive_BorderColor)",
+    "description": "Positive Switch Button Track Border Color (The border color for the track of positive button controls such as the switch.) Value: #99cc99 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Positive_TextColor": {
+    "prefix": "sapButton_Track_Positive_TextColor",
+    "body": "var(--sapButton_Track_Positive_TextColor)",
+    "description": "Positive Switch Button Track Text Color (The text and icon color for the track of positive button controls such as the switch.) Value: #fff #Base, #Button, #Color, #Font"
+  },
+  "sapButton_Track_Positive_Hover_Background": {
+    "prefix": "sapButton_Track_Positive_Hover_Background",
+    "body": "var(--sapButton_Track_Positive_Hover_Background)",
+    "description": "Positive Switch Button Track Hover Background Color (The background color for the hovered track of positive button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+  },
+  "sapButton_Track_Positive_Hover_BorderColor": {
+    "prefix": "sapButton_Track_Positive_Hover_BorderColor",
+    "body": "var(--sapButton_Track_Positive_Hover_BorderColor)",
+    "description": "Positive Switch Button Track Hover Border Color (The border color for the hovered track of positive button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Positive_Background": {
+    "prefix": "sapButton_Handle_Positive_Background",
+    "body": "var(--sapButton_Handle_Positive_Background)",
+    "description": "Positive Switch Button Handle Background Color (The background color for the handle of positive button controls such as the switch.) Value: #000 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Positive_BorderColor": {
+    "prefix": "sapButton_Handle_Positive_BorderColor",
+    "body": "var(--sapButton_Handle_Positive_BorderColor)",
+    "description": "Positive Switch Button Handle Border Color (The border color for the handle of positive button controls such as the switch.) Value: #99cc99 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Positive_TextColor": {
+    "prefix": "sapButton_Handle_Positive_TextColor",
+    "body": "var(--sapButton_Handle_Positive_TextColor)",
+    "description": "Positive Switch Button Handle Text Color (The text and icon color for the handle of positive button controls such as the switch.) Value: #fff #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Positive_Hover_Background": {
+    "prefix": "sapButton_Handle_Positive_Hover_Background",
+    "body": "var(--sapButton_Handle_Positive_Hover_Background)",
+    "description": "Positive Switch Button Handle Hover Background Color (The background color for the hovered handle of positive button controls such as the switch.) Value: #7a5100 #Base, #Button, #Color"
+  },
+  "sapButton_Handle_Positive_Hover_BorderColor": {
+    "prefix": "sapButton_Handle_Positive_Hover_BorderColor",
+    "body": "var(--sapButton_Handle_Positive_Hover_BorderColor)",
+    "description": "Positive Switch Button Handle Hover Border Color (The border color for the hovered handle of positive button controls such as the switch.) Value: #99cc99 #Base, #Button, #Color"
   },
   "sapButton_TokenBackground": {
     "prefix": "sapButton_TokenBackground",
@@ -1458,6 +1918,11 @@
     "prefix": "sapField_Background",
     "body": "var(--sapField_Background)",
     "description": "Field Background Color (The background color of input fields.) Value: #000 #Base, #Field, #Color"
+  },
+  "sapField_BackgroundStyle": {
+    "prefix": "sapField_BackgroundStyle",
+    "body": "var(--sapField_BackgroundStyle)",
+    "description": "Field Background Image (The background style of input fields.) Value: none #Base, #Field"
   },
   "sapField_TextColor": {
     "prefix": "sapField_TextColor",
@@ -1484,6 +1949,11 @@
     "body": "var(--sapField_BorderWidth)",
     "description": "Field Border Thickness (The thickness of an input field's borders.) Value: .0625rem #Base, #Field, #Dimension"
   },
+  "sapField_BorderStyle": {
+    "prefix": "sapField_BorderStyle",
+    "body": "var(--sapField_BorderStyle)",
+    "description": "Field Border Style (The style of borders of an input field.) Value: solid #Base, #Field"
+  },
   "sapField_BorderCornerRadius": {
     "prefix": "sapField_BorderCornerRadius",
     "body": "var(--sapField_BorderCornerRadius)",
@@ -1493,6 +1963,11 @@
     "prefix": "sapField_Hover_Background",
     "body": "var(--sapField_Hover_Background)",
     "description": "Field Hover Background Color (The background color of input fields on hover.) Value: #000 #Base, #Field, #Color"
+  },
+  "sapField_Hover_BackgroundStyle": {
+    "prefix": "sapField_Hover_BackgroundStyle",
+    "body": "var(--sapField_Hover_BackgroundStyle)",
+    "description": "Field Hover Background Image (The background style of input fields on hover.) Value: none #Base, #Field"
   },
   "sapField_Hover_BorderColor": {
     "prefix": "sapField_Hover_BorderColor",
@@ -1529,10 +2004,20 @@
     "body": "var(--sapField_ReadOnly_Background)",
     "description": "Read Only Field Background Color (The background color of a read-only input field.) Value: #585858 #Base, #Field, #Color"
   },
+  "sapField_ReadOnly_BackgroundStyle": {
+    "prefix": "sapField_ReadOnly_BackgroundStyle",
+    "body": "var(--sapField_ReadOnly_BackgroundStyle)",
+    "description": "Read Only Field Background Image (The background style of read-only input fields.) Value: none #Base, #Field"
+  },
   "sapField_ReadOnly_BorderColor": {
     "prefix": "sapField_ReadOnly_BorderColor",
     "body": "var(--sapField_ReadOnly_BorderColor)",
     "description": "Read Only Field Border Color (The color of a read-only input field's borders.) Value: #999 #Base, #Field, #Color"
+  },
+  "sapField_ReadOnly_BorderStyle": {
+    "prefix": "sapField_ReadOnly_BorderStyle",
+    "body": "var(--sapField_ReadOnly_BorderStyle)",
+    "description": "Read Only Field Border Style (The border style of read-only input fields.) Value: solid #Base, #Field"
   },
   "sapField_ReadOnly_HelpBackground": {
     "prefix": "sapField_ReadOnly_HelpBackground",
@@ -1554,6 +2039,11 @@
     "body": "var(--sapField_InvalidBackground)",
     "description": "Invalid Field Background Color (The background color of input fields with an invalid value.) Value: #7a5100 #Base, #Field, #Color"
   },
+  "sapField_InvalidBackgroundStyle": {
+    "prefix": "sapField_InvalidBackgroundStyle",
+    "body": "var(--sapField_InvalidBackgroundStyle)",
+    "description": "Invalid Field Background Image (The background style of an input field with an invalid value.) Value: none #Base, #Field"
+  },
   "sapField_InvalidBorderWidth": {
     "prefix": "sapField_InvalidBorderWidth",
     "body": "var(--sapField_InvalidBorderWidth)",
@@ -1562,7 +2052,7 @@
   "sapField_InvalidBorderStyle": {
     "prefix": "sapField_InvalidBorderStyle",
     "body": "var(--sapField_InvalidBorderStyle)",
-    "description": "Invalid Field Border Style (The style of borders of an input field with invalid value.) Value: dashed #Base, #Field, #Color"
+    "description": "Invalid Field Border Style (The style of borders of an input field with invalid value.) Value: dashed #Base, #Field"
   },
   "sapField_WarningColor": {
     "prefix": "sapField_WarningColor",
@@ -1574,6 +2064,11 @@
     "body": "var(--sapField_WarningBackground)",
     "description": "Warning Field Background Color (The background color of an input field indicating a warning.) Value: #000 #Base, #Field, #Color"
   },
+  "sapField_WarningBackgroundStyle": {
+    "prefix": "sapField_WarningBackgroundStyle",
+    "body": "var(--sapField_WarningBackgroundStyle)",
+    "description": "Warning Field Background Image (The background style of an input field indicating a warning.) Value: none #Base, #Field"
+  },
   "sapField_WarningBorderWidth": {
     "prefix": "sapField_WarningBorderWidth",
     "body": "var(--sapField_WarningBorderWidth)",
@@ -1582,7 +2077,7 @@
   "sapField_WarningBorderStyle": {
     "prefix": "sapField_WarningBorderStyle",
     "body": "var(--sapField_WarningBorderStyle)",
-    "description": "Warning Field Border Style (The style of borders of an input field indicating a warning.) Value: dashed #Base, #Field, #Color"
+    "description": "Warning Field Border Style (The style of borders of an input field indicating a warning.) Value: dashed #Base, #Field"
   },
   "sapField_SuccessColor": {
     "prefix": "sapField_SuccessColor",
@@ -1594,6 +2089,11 @@
     "body": "var(--sapField_SuccessBackground)",
     "description": "Success Field Background Color (The background color of an input field indicating a successful user action.) Value: #000 #Base, #Field, #Color"
   },
+  "sapField_SuccessBackgroundStyle": {
+    "prefix": "sapField_SuccessBackgroundStyle",
+    "body": "var(--sapField_SuccessBackgroundStyle)",
+    "description": "Success Field Background Image (The background style of an input field indicating a successful user action.) Value: none #Base, #Field"
+  },
   "sapField_SuccessBorderWidth": {
     "prefix": "sapField_SuccessBorderWidth",
     "body": "var(--sapField_SuccessBorderWidth)",
@@ -1602,7 +2102,7 @@
   "sapField_SuccessBorderStyle": {
     "prefix": "sapField_SuccessBorderStyle",
     "body": "var(--sapField_SuccessBorderStyle)",
-    "description": "Success Field Border Style (The style of borders of an input field indicating a successful user action.) Value: solid #Base, #Field, #Color"
+    "description": "Success Field Border Style (The style of borders of an input field indicating a successful user action.) Value: solid #Base, #Field"
   },
   "sapField_InformationColor": {
     "prefix": "sapField_InformationColor",
@@ -1614,6 +2114,11 @@
     "body": "var(--sapField_InformationBackground)",
     "description": "Information Field Background Color (The background color of an input field indicating an information status.) Value: #000 #Base, #Field, #Color"
   },
+  "sapField_InformationBackgroundStyle": {
+    "prefix": "sapField_InformationBackgroundStyle",
+    "body": "var(--sapField_InformationBackgroundStyle)",
+    "description": "Information Field Background Image (The background style of an input field indicating an information status.) Value: none #Base, #Field"
+  },
   "sapField_InformationBorderWidth": {
     "prefix": "sapField_InformationBorderWidth",
     "body": "var(--sapField_InformationBorderWidth)",
@@ -1622,7 +2127,7 @@
   "sapField_InformationBorderStyle": {
     "prefix": "sapField_InformationBorderStyle",
     "body": "var(--sapField_InformationBorderStyle)",
-    "description": "Information Field Border Style (The style of borders of an input field indicating an information status.) Value: dashed #Base, #Field, #Color"
+    "description": "Information Field Border Style (The style of borders of an input field indicating an information status.) Value: dashed #Base, #Field"
   },
   "sapGroup_TitleBackground": {
     "prefix": "sapGroup_TitleBackground",
@@ -1638,6 +2143,11 @@
     "prefix": "sapGroup_TitleTextColor",
     "body": "var(--sapGroup_TitleTextColor)",
     "description": "Group Title Text Color (The text color of the group title.) Value: #fff #Base, #Group, #Color, #Font"
+  },
+  "sapGroup_Title_FontSize": {
+    "prefix": "sapGroup_Title_FontSize",
+    "body": "var(--sapGroup_Title_FontSize)",
+    "description": "Group Title Font Size (The font size of the group title.) Value: 1.125rem #Base, #Group, #Dimension, #Font"
   },
   "sapGroup_ContentBackground": {
     "prefix": "sapGroup_ContentBackground",
@@ -1794,6 +2304,186 @@
     "body": "var(--sapList_TableFixedBorderColor)",
     "description": "Table Fixed Border Color (The border color of fixed columns and rows in tables.) Value: #fff #Base, #List, #Color"
   },
+  "sapMessage_ErrorBorderColor": {
+    "prefix": "sapMessage_ErrorBorderColor",
+    "body": "var(--sapMessage_ErrorBorderColor)",
+    "description": "Message Error Border Color (The error border color of message controls.) Value: #ff5e5e #Base, #Message, #Color"
+  },
+  "sapMessage_WarningBorderColor": {
+    "prefix": "sapMessage_WarningBorderColor",
+    "body": "var(--sapMessage_WarningBorderColor)",
+    "description": "Message Warning Border Color (The warning border color of message controls.) Value: #ffab1d #Base, #Message, #Color"
+  },
+  "sapMessage_SuccessBorderColor": {
+    "prefix": "sapMessage_SuccessBorderColor",
+    "body": "var(--sapMessage_SuccessBorderColor)",
+    "description": "Message Success Border Color (The success border color of message controls.) Value: #99cc99 #Base, #Message, #Color"
+  },
+  "sapMessage_InformationBorderColor": {
+    "prefix": "sapMessage_InformationBorderColor",
+    "body": "var(--sapMessage_InformationBorderColor)",
+    "description": "Message Information Border Color (The information border color of message controls.) Value: #fff #Base, #Message, #Color"
+  },
+  "sapPopover_BorderCornerRadius": {
+    "prefix": "sapPopover_BorderCornerRadius",
+    "body": "var(--sapPopover_BorderCornerRadius)",
+    "description": "Popover Border Corner Radius (The border radius of popovers.) Value: .25rem #Base, #Popover, #Dimension"
+  },
+  "sapProgress_Background": {
+    "prefix": "sapProgress_Background",
+    "body": "var(--sapProgress_Background)",
+    "description": "Progress Background (The background color of the empty part of progress bars.) Value: #000 #Base, #Progress, #Color"
+  },
+  "sapProgress_BorderColor": {
+    "prefix": "sapProgress_BorderColor",
+    "body": "var(--sapProgress_BorderColor)",
+    "description": "Progress Border Color (The border color of the empty part of progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_TextColor": {
+    "prefix": "sapProgress_TextColor",
+    "body": "var(--sapProgress_TextColor)",
+    "description": "Progress Text Color (The text color of the empty part of progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_FontSize": {
+    "prefix": "sapProgress_FontSize",
+    "body": "var(--sapProgress_FontSize)",
+    "description": "Progress Font Size (The font size of progress bars.) Value: .75rem #Base, #Progress, #Dimension"
+  },
+  "sapProgress_NegativeBackground": {
+    "prefix": "sapProgress_NegativeBackground",
+    "body": "var(--sapProgress_NegativeBackground)",
+    "description": "Negative Progress Background (The background color of the empty part of negative progress bars.) Value: #000 #Base, #Progress, #Color"
+  },
+  "sapProgress_NegativeBorderColor": {
+    "prefix": "sapProgress_NegativeBorderColor",
+    "body": "var(--sapProgress_NegativeBorderColor)",
+    "description": "Negative Progress Border Color (The border color of the empty part of negative progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_NegativeTextColor": {
+    "prefix": "sapProgress_NegativeTextColor",
+    "body": "var(--sapProgress_NegativeTextColor)",
+    "description": "Negative Progress Text Color (The text color of the empty part of negative progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_CriticalBackground": {
+    "prefix": "sapProgress_CriticalBackground",
+    "body": "var(--sapProgress_CriticalBackground)",
+    "description": "Critical Progress Background (The background color of the empty part of critical progress bars.) Value: #000 #Base, #Progress, #Color"
+  },
+  "sapProgress_CriticalBorderColor": {
+    "prefix": "sapProgress_CriticalBorderColor",
+    "body": "var(--sapProgress_CriticalBorderColor)",
+    "description": "Critical Progress Border Color (The border color of the empty part of critical progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_CriticalTextColor": {
+    "prefix": "sapProgress_CriticalTextColor",
+    "body": "var(--sapProgress_CriticalTextColor)",
+    "description": "Critical Progress Text Color (The text color of the empty part of critical progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_PositiveBackground": {
+    "prefix": "sapProgress_PositiveBackground",
+    "body": "var(--sapProgress_PositiveBackground)",
+    "description": "Positive Progress Background (The background color of the empty part of positive progress bars.) Value: #000 #Base, #Progress, #Color"
+  },
+  "sapProgress_PositiveBorderColor": {
+    "prefix": "sapProgress_PositiveBorderColor",
+    "body": "var(--sapProgress_PositiveBorderColor)",
+    "description": "Positive Progress Border Color (The border color of the empty part of positive progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_PositiveTextColor": {
+    "prefix": "sapProgress_PositiveTextColor",
+    "body": "var(--sapProgress_PositiveTextColor)",
+    "description": "Positive Progress Text Color (The text color of the empty part of positive progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_InformationBackground": {
+    "prefix": "sapProgress_InformationBackground",
+    "body": "var(--sapProgress_InformationBackground)",
+    "description": "Information Progress Background (The background color of the empty part of information progress bars.) Value: #000 #Base, #Progress, #Color"
+  },
+  "sapProgress_InformationBorderColor": {
+    "prefix": "sapProgress_InformationBorderColor",
+    "body": "var(--sapProgress_InformationBorderColor)",
+    "description": "Information Progress Border Color (The border color of the empty part of information progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_InformationTextColor": {
+    "prefix": "sapProgress_InformationTextColor",
+    "body": "var(--sapProgress_InformationTextColor)",
+    "description": "Information Progress Text Color (The text color of the empty part of information progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_Background": {
+    "prefix": "sapProgress_Value_Background",
+    "body": "var(--sapProgress_Value_Background)",
+    "description": "Progress Value Background (The background color of the filled part of progress bars.) Value: #7a5100 #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_BorderColor": {
+    "prefix": "sapProgress_Value_BorderColor",
+    "body": "var(--sapProgress_Value_BorderColor)",
+    "description": "Progress Value Border Color (The border color of the filled part of progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_TextColor": {
+    "prefix": "sapProgress_Value_TextColor",
+    "body": "var(--sapProgress_Value_TextColor)",
+    "description": "Progress Value Text Color (The text color of the filled part of progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_NegativeBackground": {
+    "prefix": "sapProgress_Value_NegativeBackground",
+    "body": "var(--sapProgress_Value_NegativeBackground)",
+    "description": "Negative Progress Value Background (The background color of the filled part of negative progress bars.) Value: #7a5100 #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_NegativeBorderColor": {
+    "prefix": "sapProgress_Value_NegativeBorderColor",
+    "body": "var(--sapProgress_Value_NegativeBorderColor)",
+    "description": "Negative Progress Value Border Color (The border color of the filled part of negative progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_NegativeTextColor": {
+    "prefix": "sapProgress_Value_NegativeTextColor",
+    "body": "var(--sapProgress_Value_NegativeTextColor)",
+    "description": "Negative Progress Value Text Color (The text color of the filled part of negative progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_CriticalBackground": {
+    "prefix": "sapProgress_Value_CriticalBackground",
+    "body": "var(--sapProgress_Value_CriticalBackground)",
+    "description": "Critical Progress Value Background (The background color of the filled part of critical progress bars.) Value: #7a5100 #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_CriticalBorderColor": {
+    "prefix": "sapProgress_Value_CriticalBorderColor",
+    "body": "var(--sapProgress_Value_CriticalBorderColor)",
+    "description": "Critical Progress Value Border Color (The border color of the filled part of critical progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_CriticalTextColor": {
+    "prefix": "sapProgress_Value_CriticalTextColor",
+    "body": "var(--sapProgress_Value_CriticalTextColor)",
+    "description": "Critical Progress Value Text Color (The text color of the filled part of critical progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_PositiveBackground": {
+    "prefix": "sapProgress_Value_PositiveBackground",
+    "body": "var(--sapProgress_Value_PositiveBackground)",
+    "description": "Positive Progress Value Background (The background color of the filled part of positive progress bars.) Value: #7a5100 #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_PositiveBorderColor": {
+    "prefix": "sapProgress_Value_PositiveBorderColor",
+    "body": "var(--sapProgress_Value_PositiveBorderColor)",
+    "description": "Positive Progress Value Border Color (The border color of the filled part of positive progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_PositiveTextColor": {
+    "prefix": "sapProgress_Value_PositiveTextColor",
+    "body": "var(--sapProgress_Value_PositiveTextColor)",
+    "description": "Positive Progress Value Text Color (The text color of the filled part of positive progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_InformationBackground": {
+    "prefix": "sapProgress_Value_InformationBackground",
+    "body": "var(--sapProgress_Value_InformationBackground)",
+    "description": "Information Progress Value Background (The background color of the filled part of information progress bars.) Value: #7a5100 #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_InformationBorderColor": {
+    "prefix": "sapProgress_Value_InformationBorderColor",
+    "body": "var(--sapProgress_Value_InformationBorderColor)",
+    "description": "Information Progress Value Border Color (The border color of the filled part of information progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
+  "sapProgress_Value_InformationTextColor": {
+    "prefix": "sapProgress_Value_InformationTextColor",
+    "body": "var(--sapProgress_Value_InformationTextColor)",
+    "description": "Information Progress Value Text Color (The text color of the filled part of information progress bars.) Value: #fff #Base, #Progress, #Color"
+  },
   "sapScrollBar_FaceColor": {
     "prefix": "sapScrollBar_FaceColor",
     "body": "var(--sapScrollBar_FaceColor)",
@@ -1823,6 +2513,71 @@
     "prefix": "sapScrollBar_Hover_FaceColor",
     "body": "var(--sapScrollBar_Hover_FaceColor)",
     "description": "Scrollbar Hover Face Color (The hover state color of the surface of a scrollbar.) Value: #fff #Base, #Scrollbar, #Color"
+  },
+  "sapSlider_Background": {
+    "prefix": "sapSlider_Background",
+    "body": "var(--sapSlider_Background)",
+    "description": "Slider Background (The background color of the slider.) Value: #000 #Base, #Slider, #Color"
+  },
+  "sapSlider_BorderColor": {
+    "prefix": "sapSlider_BorderColor",
+    "body": "var(--sapSlider_BorderColor)",
+    "description": "Slider Border Color (The border color of the slider.) Value: #fff #Base, #Slider, #Color"
+  },
+  "sapSlider_Selected_Background": {
+    "prefix": "sapSlider_Selected_Background",
+    "body": "var(--sapSlider_Selected_Background)",
+    "description": "Slider Selected Background (The background color of the selected part of the slider (in LTR usually the part left of the handle).) Value: #0f5d94 #Base, #Slider, #Color"
+  },
+  "sapSlider_Selected_BorderColor": {
+    "prefix": "sapSlider_Selected_BorderColor",
+    "body": "var(--sapSlider_Selected_BorderColor)",
+    "description": "Slider Selected Border Color (The border color of the selected part of the slider (in LTR usually the part left of the handle).) Value: #fff #Base, #Slider, #Color"
+  },
+  "sapSlider_HandleBackground": {
+    "prefix": "sapSlider_HandleBackground",
+    "body": "var(--sapSlider_HandleBackground)",
+    "description": "Slider Handle Background (The background color of the slider handle.) Value: #000 #Base, #Slider, #Color"
+  },
+  "sapSlider_HandleBorderColor": {
+    "prefix": "sapSlider_HandleBorderColor",
+    "body": "var(--sapSlider_HandleBorderColor)",
+    "description": "Slider Handle Border Color (The border color of the slider handle.) Value: #fff #Base, #Slider, #Color"
+  },
+  "sapSlider_RangeHandleBackground": {
+    "prefix": "sapSlider_RangeHandleBackground",
+    "body": "var(--sapSlider_RangeHandleBackground)",
+    "description": "Range Slider Handle Background (The background color of the range slider handle.) Value: #000 #Base, #Slider, #Color"
+  },
+  "sapSlider_Hover_HandleBackground": {
+    "prefix": "sapSlider_Hover_HandleBackground",
+    "body": "var(--sapSlider_Hover_HandleBackground)",
+    "description": "Slider Handle Hover Background (The hover state background color of the slider handle.) Value: #7a5100 #Base, #Slider, #Color"
+  },
+  "sapSlider_Hover_HandleBorderColor": {
+    "prefix": "sapSlider_Hover_HandleBorderColor",
+    "body": "var(--sapSlider_Hover_HandleBorderColor)",
+    "description": "Slider Handle Hover Border Color (The hover state border color of the slider handle.) Value: #fff #Base, #Slider, #Color"
+  },
+  "sapSlider_Hover_RangeHandleBackground": {
+    "prefix": "sapSlider_Hover_RangeHandleBackground",
+    "body": "var(--sapSlider_Hover_RangeHandleBackground)",
+    "description": "Range Slider Handle Hover Background (The hover state background color of the range slider handle.) Value: transparent #Base, #Slider, #Color"
+  },
+  "sapSlider_Active_HandleBackground": {
+    "prefix": "sapSlider_Active_HandleBackground",
+    "body": "var(--sapSlider_Active_HandleBackground)",
+    "description": "Slider Handle Active Background (The active state background color of the slider handle.) Value: #7a5100 #Base, #Slider, #Color"
+  },
+  "sapSlider_Active_HandleBorderColor": {
+    "prefix": "sapSlider_Active_HandleBorderColor",
+    "body": "var(--sapSlider_Active_HandleBorderColor)",
+    "description": "Slider Handle Active Border Color (The active state border color of the slider handle.) Value: #fff #Base, #Slider, #Color"
+  },
+  "sapSlider_Active_RangeHandleBackground": {
+    "prefix": "sapSlider_Active_RangeHandleBackground",
+    "body": "var(--sapSlider_Active_RangeHandleBackground)",
+    "description": "Range Slider Handle Active Background (The active state background color of the range slider handle.) Value: transparent #Base, #Slider, #Color"
   },
   "sapPageHeader_Background": {
     "prefix": "sapPageHeader_Background",
@@ -1894,6 +2649,31 @@
     "body": "var(--sapObjectHeader_BorderColor)",
     "description": "Object Header Border Color (The border color of object layout headers.) Value: #fff #Base, #Page, #Color"
   },
+  "sapObjectHeader_Title_TextColor": {
+    "prefix": "sapObjectHeader_Title_TextColor",
+    "body": "var(--sapObjectHeader_Title_TextColor)",
+    "description": "Object Header Title Text Color (The text color of object header titles.) Value: #fff #Base, #Page, #Color"
+  },
+  "sapObjectHeader_Title_FontSize": {
+    "prefix": "sapObjectHeader_Title_FontSize",
+    "body": "var(--sapObjectHeader_Title_FontSize)",
+    "description": "Object Header Title Font Size (The font size of object header titles.) Value: 1.25rem #Base, #Page, #Dimension"
+  },
+  "sapObjectHeader_Title_SnappedFontSize": {
+    "prefix": "sapObjectHeader_Title_SnappedFontSize",
+    "body": "var(--sapObjectHeader_Title_SnappedFontSize)",
+    "description": "Object Header Snapped Title Font Size (The font size of snapped object header titles.) Value: 1.25rem #Base, #Page, #Dimension"
+  },
+  "sapObjectHeader_Title_FontFamily": {
+    "prefix": "sapObjectHeader_Title_FontFamily",
+    "body": "var(--sapObjectHeader_Title_FontFamily)",
+    "description": "Object Header Title Font Family (The font family of object header titles.) Value: \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Page, #Font"
+  },
+  "sapObjectHeader_Subtitle_TextColor": {
+    "prefix": "sapObjectHeader_Subtitle_TextColor",
+    "body": "var(--sapObjectHeader_Subtitle_TextColor)",
+    "description": "Object Header Subtitle Text Color (The text color of object header subtitles.) Value: #fff #Base, #Page, #Color"
+  },
   "sapBlockLayer_Background": {
     "prefix": "sapBlockLayer_Background",
     "body": "var(--sapBlockLayer_Background)",
@@ -1918,6 +2698,11 @@
     "prefix": "sapTile_BorderColor",
     "body": "var(--sapTile_BorderColor)",
     "description": "Tile Border Color (The border color of tiles and cards.) Value: #fff #Base, #Tile, #Color"
+  },
+  "sapTile_BorderCornerRadius": {
+    "prefix": "sapTile_BorderCornerRadius",
+    "body": "var(--sapTile_BorderCornerRadius)",
+    "description": "Tile Border Corner Radius (The border radius of tiles and cards.) Value: 0.25rem #Base, #Tile, #Dimension"
   },
   "sapTile_TitleTextColor": {
     "prefix": "sapTile_TitleTextColor",
@@ -1954,10 +2739,120 @@
     "body": "var(--sapTile_OverlayForegroundColor)",
     "description": "Tile Overlay Foreground Color (The overlay foreground color of tiles and cards.) Value: #fff #Base, #Tile, #Color"
   },
+  "sapAccentColor1": {
+    "prefix": "sapAccentColor1",
+    "body": "var(--sapAccentColor1)",
+    "description": "Accent Color 1 (Secondary color to accentuate UI elements.) Value: #ffc847 #Base, #Accent, #Color"
+  },
+  "sapAccentColor2": {
+    "prefix": "sapAccentColor2",
+    "body": "var(--sapAccentColor2)",
+    "description": "Accent Color 2 (Secondary color to accentuate UI elements.) Value: #ed884a #Base, #Accent, #Color"
+  },
+  "sapAccentColor3": {
+    "prefix": "sapAccentColor3",
+    "body": "var(--sapAccentColor3)",
+    "description": "Accent Color 3 (Secondary color to accentuate UI elements.) Value: #db9292 #Base, #Accent, #Color"
+  },
+  "sapAccentColor4": {
+    "prefix": "sapAccentColor4",
+    "body": "var(--sapAccentColor4)",
+    "description": "Accent Color 4 (Secondary color to accentuate UI elements.) Value: #e269c9 #Base, #Accent, #Color"
+  },
+  "sapAccentColor5": {
+    "prefix": "sapAccentColor5",
+    "body": "var(--sapAccentColor5)",
+    "description": "Accent Color 5 (Secondary color to accentuate UI elements.) Value: #8ca7d5 #Base, #Accent, #Color"
+  },
+  "sapAccentColor6": {
+    "prefix": "sapAccentColor6",
+    "body": "var(--sapAccentColor6)",
+    "description": "Accent Color 6 (Secondary color to accentuate UI elements.) Value: #6bd3ff #Base, #Accent, #Color"
+  },
+  "sapAccentColor7": {
+    "prefix": "sapAccentColor7",
+    "body": "var(--sapAccentColor7)",
+    "description": "Accent Color 7 (Secondary color to accentuate UI elements.) Value: #7fc6c6 #Base, #Accent, #Color"
+  },
+  "sapAccentColor8": {
+    "prefix": "sapAccentColor8",
+    "body": "var(--sapAccentColor8)",
+    "description": "Accent Color 8 (Secondary color to accentuate UI elements.) Value: #b2e484 #Base, #Accent, #Color"
+  },
+  "sapAccentColor9": {
+    "prefix": "sapAccentColor9",
+    "body": "var(--sapAccentColor9)",
+    "description": "Accent Color 9 (Secondary color to accentuate UI elements.) Value: #b995e0 #Base, #Accent, #Color"
+  },
+  "sapAccentColor10": {
+    "prefix": "sapAccentColor10",
+    "body": "var(--sapAccentColor10)",
+    "description": "Accent Color 10 (Secondary color to accentuate UI elements.) Value: #b0bcc5 #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor1": {
+    "prefix": "sapAccentBackgroundColor1",
+    "body": "var(--sapAccentBackgroundColor1)",
+    "description": "Accent Background Color 1 (Secondary color to accentuate UI background elements.) Value: #fff3b8 #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor2": {
+    "prefix": "sapAccentBackgroundColor2",
+    "body": "var(--sapAccentBackgroundColor2)",
+    "description": "Accent Background Color 2 (Secondary color to accentuate UI background elements.) Value: #ffd0e7 #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor3": {
+    "prefix": "sapAccentBackgroundColor3",
+    "body": "var(--sapAccentBackgroundColor3)",
+    "description": "Accent Background Color 3 (Secondary color to accentuate UI background elements.) Value: #fff0fa #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor4": {
+    "prefix": "sapAccentBackgroundColor4",
+    "body": "var(--sapAccentBackgroundColor4)",
+    "description": "Accent Background Color 4 (Secondary color to accentuate UI background elements.) Value: #ffdcf3 #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor5": {
+    "prefix": "sapAccentBackgroundColor5",
+    "body": "var(--sapAccentBackgroundColor5)",
+    "description": "Accent Background Color 5 (Secondary color to accentuate UI background elements.) Value: #ded3ff #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor6": {
+    "prefix": "sapAccentBackgroundColor6",
+    "body": "var(--sapAccentBackgroundColor6)",
+    "description": "Accent Background Color 6 (Secondary color to accentuate UI background elements.) Value: #d1efff #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor7": {
+    "prefix": "sapAccentBackgroundColor7",
+    "body": "var(--sapAccentBackgroundColor7)",
+    "description": "Accent Background Color 7 (Secondary color to accentuate UI background elements.) Value: #c2fcee #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor8": {
+    "prefix": "sapAccentBackgroundColor8",
+    "body": "var(--sapAccentBackgroundColor8)",
+    "description": "Accent Background Color 8 (Secondary color to accentuate UI background elements.) Value: #ebf5cb #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor9": {
+    "prefix": "sapAccentBackgroundColor9",
+    "body": "var(--sapAccentBackgroundColor9)",
+    "description": "Accent Background Color 9 (Secondary color to accentuate UI background elements.) Value: #dafdf5 #Base, #Accent, #Color"
+  },
+  "sapAccentBackgroundColor10": {
+    "prefix": "sapAccentBackgroundColor10",
+    "body": "var(--sapAccentBackgroundColor10)",
+    "description": "Accent Background Color 10 (Secondary color to accentuate UI background elements.) Value: #eaecee #Base, #Accent, #Color"
+  },
   "sapIndicationColor_1": {
     "prefix": "sapIndicationColor_1",
     "body": "var(--sapIndicationColor_1)",
     "description": "Indication Color 1 (The color for elements showing indication 1.) Value: #ff5e5e #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_1_Background": {
+    "prefix": "sapIndicationColor_1_Background",
+    "body": "var(--sapIndicationColor_1_Background)",
+    "description": "Indication Color 1 Background (The background color for elements showing indication 1.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_1_BorderColor": {
+    "prefix": "sapIndicationColor_1_BorderColor",
+    "body": "var(--sapIndicationColor_1_BorderColor)",
+    "description": "Indication Color 1 Border Color (The border color for elements showing indication 1.) Value: #fff #Base, #SemanticColor, #Color"
   },
   "sapIndicationColor_1_Hover_Background": {
     "prefix": "sapIndicationColor_1_Hover_Background",
@@ -1979,6 +2874,16 @@
     "body": "var(--sapIndicationColor_2)",
     "description": "Indication Color 2 (The color for elements showing indication 2.) Value: #ff9191 #Base, #SemanticColor, #Color"
   },
+  "sapIndicationColor_2_Background": {
+    "prefix": "sapIndicationColor_2_Background",
+    "body": "var(--sapIndicationColor_2_Background)",
+    "description": "Indication Color 2 Background (The background color for elements showing indication 2.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_2_BorderColor": {
+    "prefix": "sapIndicationColor_2_BorderColor",
+    "body": "var(--sapIndicationColor_2_BorderColor)",
+    "description": "Indication Color 2 Border Color (The border color for elements showing indication 2.) Value: #fff #Base, #SemanticColor, #Color"
+  },
   "sapIndicationColor_2_Hover_Background": {
     "prefix": "sapIndicationColor_2_Hover_Background",
     "body": "var(--sapIndicationColor_2_Hover_Background)",
@@ -1998,6 +2903,16 @@
     "prefix": "sapIndicationColor_3",
     "body": "var(--sapIndicationColor_3)",
     "description": "Indication Color 3 (The color for elements showing indication 3.) Value: #ffab1d #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_3_Background": {
+    "prefix": "sapIndicationColor_3_Background",
+    "body": "var(--sapIndicationColor_3_Background)",
+    "description": "Indication Color 3 Background (The background color for elements showing indication 3.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_3_BorderColor": {
+    "prefix": "sapIndicationColor_3_BorderColor",
+    "body": "var(--sapIndicationColor_3_BorderColor)",
+    "description": "Indication Color 3 Border Color (The border color for elements showing indication 3.) Value: #fff #Base, #SemanticColor, #Color"
   },
   "sapIndicationColor_3_Hover_Background": {
     "prefix": "sapIndicationColor_3_Hover_Background",
@@ -2019,6 +2934,16 @@
     "body": "var(--sapIndicationColor_4)",
     "description": "Indication Color 4 (The color for elements showing indication 4.) Value: #99cc99 #Base, #SemanticColor, #Color"
   },
+  "sapIndicationColor_4_Background": {
+    "prefix": "sapIndicationColor_4_Background",
+    "body": "var(--sapIndicationColor_4_Background)",
+    "description": "Indication Color 4 Background (The background color for elements showing indication 4.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_4_BorderColor": {
+    "prefix": "sapIndicationColor_4_BorderColor",
+    "body": "var(--sapIndicationColor_4_BorderColor)",
+    "description": "Indication Color 4 Border Color (The border color for elements showing indication 4.) Value: #fff #Base, #SemanticColor, #Color"
+  },
   "sapIndicationColor_4_Hover_Background": {
     "prefix": "sapIndicationColor_4_Hover_Background",
     "body": "var(--sapIndicationColor_4_Hover_Background)",
@@ -2038,6 +2963,16 @@
     "prefix": "sapIndicationColor_5",
     "body": "var(--sapIndicationColor_5)",
     "description": "Indication Color 5 (The color for elements showing indication 5.) Value: #6bd3ff #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_5_Background": {
+    "prefix": "sapIndicationColor_5_Background",
+    "body": "var(--sapIndicationColor_5_Background)",
+    "description": "Indication Color 5 Background (The background color for elements showing indication 5.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_5_BorderColor": {
+    "prefix": "sapIndicationColor_5_BorderColor",
+    "body": "var(--sapIndicationColor_5_BorderColor)",
+    "description": "Indication Color 5 Border Color (The border color for elements showing indication 5.) Value: #fff #Base, #SemanticColor, #Color"
   },
   "sapIndicationColor_5_Hover_Background": {
     "prefix": "sapIndicationColor_5_Hover_Background",
@@ -2059,6 +2994,16 @@
     "body": "var(--sapIndicationColor_6)",
     "description": "Indication Color 6 (The color for elements showing indication 6.) Value: #7fc6c6 #Base, #SemanticColor, #Color"
   },
+  "sapIndicationColor_6_Background": {
+    "prefix": "sapIndicationColor_6_Background",
+    "body": "var(--sapIndicationColor_6_Background)",
+    "description": "Indication Color 6 Background (The background color for elements showing indication 6.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_6_BorderColor": {
+    "prefix": "sapIndicationColor_6_BorderColor",
+    "body": "var(--sapIndicationColor_6_BorderColor)",
+    "description": "Indication Color 6 Border Color (The border color for elements showing indication 6.) Value: #fff #Base, #SemanticColor, #Color"
+  },
   "sapIndicationColor_6_Hover_Background": {
     "prefix": "sapIndicationColor_6_Hover_Background",
     "body": "var(--sapIndicationColor_6_Hover_Background)",
@@ -2079,6 +3024,16 @@
     "body": "var(--sapIndicationColor_7)",
     "description": "Indication Color 7 (The color for elements showing indication 7.) Value: #b995e0 #Base, #SemanticColor, #Color"
   },
+  "sapIndicationColor_7_Background": {
+    "prefix": "sapIndicationColor_7_Background",
+    "body": "var(--sapIndicationColor_7_Background)",
+    "description": "Indication Color 7 Background (The background color for elements showing indication 7.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_7_BorderColor": {
+    "prefix": "sapIndicationColor_7_BorderColor",
+    "body": "var(--sapIndicationColor_7_BorderColor)",
+    "description": "Indication Color 7 Border Color (The border color for elements showing indication 7.) Value: #fff #Base, #SemanticColor, #Color"
+  },
   "sapIndicationColor_7_Hover_Background": {
     "prefix": "sapIndicationColor_7_Hover_Background",
     "body": "var(--sapIndicationColor_7_Hover_Background)",
@@ -2098,6 +3053,16 @@
     "prefix": "sapIndicationColor_8",
     "body": "var(--sapIndicationColor_8)",
     "description": "Indication Color 8 (The color for elements showing indication 8.) Value: #e269c9 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_8_Background": {
+    "prefix": "sapIndicationColor_8_Background",
+    "body": "var(--sapIndicationColor_8_Background)",
+    "description": "Indication Color 8 Background (The background color for elements showing indication 8.) Value: #000 #Base, #SemanticColor, #Color"
+  },
+  "sapIndicationColor_8_BorderColor": {
+    "prefix": "sapIndicationColor_8_BorderColor",
+    "body": "var(--sapIndicationColor_8_BorderColor)",
+    "description": "Indication Color 8 Border Color (The border color for elements showing indication 8.) Value: #fff #Base, #SemanticColor, #Color"
   },
   "sapIndicationColor_8_Hover_Background": {
     "prefix": "sapIndicationColor_8_Hover_Background",
@@ -2122,7 +3087,7 @@
   "sapLegend_NonWorkingBackground": {
     "prefix": "sapLegend_NonWorkingBackground",
     "body": "var(--sapLegend_NonWorkingBackground)",
-    "description": "Legend Non-working Background (The background color that represents not working.) Value: #4d4d4d #Base, #Legend, #Color"
+    "description": "Legend Non-working Background (The background color that represents not working.) Value: #585858 #Base, #Legend, #Color"
   },
   "sapLegend_CurrentDateTime": {
     "prefix": "sapLegend_CurrentDateTime",
@@ -2367,7 +3332,7 @@
   "sapChart_OrderedColor_8": {
     "prefix": "sapChart_OrderedColor_8",
     "body": "var(--sapChart_OrderedColor_8)",
-    "description": "Chart Ordered Color 8 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #c63fa4 #Base, #Chart, #Color"
+    "description": "Chart Ordered Color 8 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #c53da4 #Base, #Chart, #Color"
   },
   "sapChart_OrderedColor_9": {
     "prefix": "sapChart_OrderedColor_9",
@@ -2442,7 +3407,7 @@
   "sapChart_Sequence_8": {
     "prefix": "sapChart_Sequence_8",
     "body": "var(--sapChart_Sequence_8)",
-    "description": "Chart Color Sequence 8 (This color is the base chart color of the sequence 8.) Value: #c63fa4 #Base, #Chart, #Color"
+    "description": "Chart Color Sequence 8 (This color is the base chart color of the sequence 8.) Value: #c53da4 #Base, #Chart, #Color"
   },
   "sapChart_Sequence_9": {
     "prefix": "sapChart_Sequence_9",

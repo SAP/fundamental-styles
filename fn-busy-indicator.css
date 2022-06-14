@@ -1,38 +1,37 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-busy-indicator {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   font-size: 0;
-  display: block
+  display: block;
 }
-.fn-busy-indicator::after,
-.fn-busy-indicator::before {
+.fn-busy-indicator::before, .fn-busy-indicator::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-busy-indicator .fn-busy-indicator--circle-0,
 .fn-busy-indicator .fn-busy-indicator--circle-1,
 .fn-busy-indicator .fn-busy-indicator--circle-2 {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -41,55 +40,50 @@
   height: 1rem;
   color: #0070f2;
   display: inline-block;
-  background-color: #0070f2
+  background-color: #0070f2;
 }
-.fn-busy-indicator .fn-busy-indicator--circle-0::after,
-.fn-busy-indicator .fn-busy-indicator--circle-0::before,
-.fn-busy-indicator .fn-busy-indicator--circle-1::after,
+.fn-busy-indicator .fn-busy-indicator--circle-0::before, .fn-busy-indicator .fn-busy-indicator--circle-0::after,
 .fn-busy-indicator .fn-busy-indicator--circle-1::before,
-.fn-busy-indicator .fn-busy-indicator--circle-2::after,
-.fn-busy-indicator .fn-busy-indicator--circle-2::before {
+.fn-busy-indicator .fn-busy-indicator--circle-1::after,
+.fn-busy-indicator .fn-busy-indicator--circle-2::before,
+.fn-busy-indicator .fn-busy-indicator--circle-2::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-busy-indicator .fn-busy-indicator--circle-0 {
-  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
-  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11)
+  -webkit-animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+          animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
 }
 .fn-busy-indicator .fn-busy-indicator--circle-1 {
-  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
-  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s
+  -webkit-animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+          animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 .fn-busy-indicator .fn-busy-indicator--circle-2 {
-  -webkit-animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
-  animation: grow 1.6s infinite cubic-bezier(.32,.06,.85,1.11);
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s
+  -webkit-animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+          animation: grow 1.6s infinite cubic-bezier(0.32, 0.06, 0.85, 1.11);
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 @-webkit-keyframes grow {
-  0%,
-  100%,
-  50% {
-    -webkit-transform: scale(.5);
-    transform: scale(.5)
+  0%, 50%, 100% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   25% {
     -webkit-transform: scale(1);
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 @keyframes grow {
-  0%,
-  100%,
-  50% {
-    -webkit-transform: scale(.5);
-    transform: scale(.5)
+  0%, 50%, 100% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
   25% {
     -webkit-transform: scale(1);
-    transform: scale(1)
+    transform: scale(1);
   }
 }

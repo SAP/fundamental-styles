@@ -1,16 +1,16 @@
 /*!
- * Fundamental Library Styles v0.23.0
+ * Fundamental Library Styles v0.24.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
 .fn-switch {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -19,261 +19,229 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+      -ms-flex-align: center;
+          align-items: center;
 }
-.fn-switch::after,
-.fn-switch::before {
+.fn-switch::before, .fn-switch::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-switch__toggle {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   width: 3rem;
   height: 1.75rem;
   position: relative;
-  display: inline-block
+  display: inline-block;
 }
-.fn-switch__toggle::after,
-.fn-switch__toggle::before {
+.fn-switch__toggle::before, .fn-switch__toggle::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-switch__input {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   width: 0;
   height: 0;
-  opacity: 0
+  opacity: 0;
 }
-.fn-switch__input::after,
-.fn-switch__input::before {
+.fn-switch__input::before, .fn-switch__input::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-switch__input:checked + .fn-switch__slider {
-  background-color: #0070f2
+  background-color: #0070f2;
 }
 .fn-switch__input:checked + .fn-switch__slider::before {
   content: "\e05b";
   color: #0070f2;
-  transform: translateX(.875rem);
-  -ms-transform: translateX(.875rem);
-  -webkit-transform: translateX(.875rem)
+  transform: translateX(0.875rem);
+  -ms-transform: translateX(0.875rem);
+  -webkit-transform: translateX(0.875rem);
 }
-.fn-switch__input.is-hover + .fn-switch__slider::before,
-.fn-switch__input:hover + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25)
+.fn-switch__input:hover + .fn-switch__slider::before, .fn-switch__input.is-hover + .fn-switch__slider::before {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.focus-visible + .fn-switch__slider,
-.fn-switch__input.is-focus + .fn-switch__slider {
-  background-color: #475e75
+.fn-switch__input.focus-visible + .fn-switch__slider, .fn-switch__input.is-focus + .fn-switch__slider {
+  background-color: #475e75;
 }
-.fn-switch__input.focus-visible + .fn-switch__slider::before,
-.fn-switch__input.is-focus + .fn-switch__slider::before {
-  color: #475e75
+.fn-switch__input.focus-visible + .fn-switch__slider::before, .fn-switch__input.is-focus + .fn-switch__slider::before {
+  color: #475e75;
 }
-.fn-switch__input.focus-visible:checked + .fn-switch__slider,
-.fn-switch__input.is-focus:checked + .fn-switch__slider {
+.fn-switch__input.focus-visible:checked + .fn-switch__slider, .fn-switch__input.is-focus:checked + .fn-switch__slider {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background-color: #0070f2
+          box-shadow: none;
+  background-color: #0070f2;
 }
-.fn-switch__input.focus-visible:checked + .fn-switch__slider::before,
-.fn-switch__input.is-focus:checked + .fn-switch__slider::before {
-  color: #0070f2
+.fn-switch__input.focus-visible:checked + .fn-switch__slider::before, .fn-switch__input.is-focus:checked + .fn-switch__slider::before {
+  color: #0070f2;
 }
-.fn-switch__input.focus-visible + .fn-switch__slider,
-.fn-switch__input.is-focus + .fn-switch__slider {
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+.fn-switch__input.focus-visible + .fn-switch__slider, .fn-switch__input.is-focus + .fn-switch__slider {
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-switch__input.focus-visible + .fn-switch__slider::before,
-.fn-switch__input.is-focus + .fn-switch__slider::before {
-  left: .25rem;
+.fn-switch__input.focus-visible + .fn-switch__slider::before, .fn-switch__input.is-focus + .fn-switch__slider::before {
+  left: 0.25rem;
   height: 1.25rem;
   width: 1.625rem;
-  top: .25rem;
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25)
+  top: 0.25rem;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.focus-visible + .fn-switch__slider::before[dir=rtl],
-.fn-switch__input.is-focus + .fn-switch__slider::before[dir=rtl],
-[dir=rtl] .fn-switch__input.focus-visible + .fn-switch__slider::before,
-[dir=rtl] .fn-switch__input.is-focus + .fn-switch__slider::before {
+[dir=rtl] .fn-switch__input.focus-visible + .fn-switch__slider::before, .fn-switch__input.focus-visible + .fn-switch__slider::before[dir=rtl], [dir=rtl] .fn-switch__input.is-focus + .fn-switch__slider::before, .fn-switch__input.is-focus + .fn-switch__slider::before[dir=rtl] {
   left: auto;
-  right: .25rem
+  right: 0.25rem;
 }
-.fn-switch__input.focus-visible:checked + .fn-switch__slider,
-.fn-switch__input.is-focus:checked + .fn-switch__slider {
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+.fn-switch__input.focus-visible:checked + .fn-switch__slider, .fn-switch__input.is-focus:checked + .fn-switch__slider {
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
-.fn-switch__input.focus-visible:checked + .fn-switch__slider::before,
-.fn-switch__input.is-focus:checked + .fn-switch__slider::before {
-  left: .25rem;
+.fn-switch__input.focus-visible:checked + .fn-switch__slider::before, .fn-switch__input.is-focus:checked + .fn-switch__slider::before {
+  left: 0.25rem;
   height: 1.25rem;
   width: 1.625rem;
-  top: .25rem;
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25)
+  top: 0.25rem;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.focus-visible:checked + .fn-switch__slider::before[dir=rtl],
-.fn-switch__input.is-focus:checked + .fn-switch__slider::before[dir=rtl],
-[dir=rtl] .fn-switch__input.focus-visible:checked + .fn-switch__slider::before,
-[dir=rtl] .fn-switch__input.is-focus:checked + .fn-switch__slider::before {
+[dir=rtl] .fn-switch__input.focus-visible:checked + .fn-switch__slider::before, .fn-switch__input.focus-visible:checked + .fn-switch__slider::before[dir=rtl], [dir=rtl] .fn-switch__input.is-focus:checked + .fn-switch__slider::before, .fn-switch__input.is-focus:checked + .fn-switch__slider::before[dir=rtl] {
   left: auto;
-  right: .25rem
+  right: 0.25rem;
 }
-.fn-switch__input.focus-visible.is-hover + .fn-switch__slider::before,
-.fn-switch__input.focus-visible:hover + .fn-switch__slider::before,
-.fn-switch__input.is-focus.is-hover + .fn-switch__slider::before,
-.fn-switch__input.is-focus:hover + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25)
+.fn-switch__input.focus-visible:hover + .fn-switch__slider::before, .fn-switch__input.focus-visible.is-hover + .fn-switch__slider::before, .fn-switch__input.is-focus:hover + .fn-switch__slider::before, .fn-switch__input.is-focus.is-hover + .fn-switch__slider::before {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.focus-visible.is-hover:checked + .fn-switch__slider::before,
-.fn-switch__input.focus-visible:hover:checked + .fn-switch__slider::before,
-.fn-switch__input.is-focus.is-hover:checked + .fn-switch__slider::before,
-.fn-switch__input.is-focus:hover:checked + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25)
+.fn-switch__input.focus-visible:hover:checked + .fn-switch__slider::before, .fn-switch__input.focus-visible.is-hover:checked + .fn-switch__slider::before, .fn-switch__input.is-focus:hover:checked + .fn-switch__slider::before, .fn-switch__input.is-focus.is-hover:checked + .fn-switch__slider::before {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 .fn-switch__input.is-focus + .fn-switch__slider {
-  background-color: #475e75
+  background-color: #475e75;
 }
 .fn-switch__input.is-focus + .fn-switch__slider::before {
-  color: #475e75
+  color: #475e75;
 }
 .fn-switch__input.is-focus:checked + .fn-switch__slider {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background-color: #0070f2
+          box-shadow: none;
+  background-color: #0070f2;
 }
 .fn-switch__input.is-focus:checked + .fn-switch__slider::before {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-switch__input.is-focus + .fn-switch__slider {
-  -webkit-box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #475e75,inset 0 0 0 .125rem #fff
+  -webkit-box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #475e75, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-switch__input.is-focus + .fn-switch__slider::before {
-  left: .25rem;
+  left: 0.25rem;
   height: 1.25rem;
   width: 1.625rem;
-  top: .25rem;
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25)
+  top: 0.25rem;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.is-focus + .fn-switch__slider::before[dir=rtl],
-[dir=rtl] .fn-switch__input.is-focus + .fn-switch__slider::before {
+[dir=rtl] .fn-switch__input.is-focus + .fn-switch__slider::before, .fn-switch__input.is-focus + .fn-switch__slider::before[dir=rtl] {
   left: auto;
-  right: .25rem
+  right: 0.25rem;
 }
 .fn-switch__input.is-focus:checked + .fn-switch__slider {
-  -webkit-box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff;
-  box-shadow: 0 0 0 .125rem #0070f2,inset 0 0 0 .125rem #fff
+  -webkit-box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
+          box-shadow: 0 0 0 0.125rem #0070f2, inset 0 0 0 0.125rem #ffffff;
 }
 .fn-switch__input.is-focus:checked + .fn-switch__slider::before {
-  left: .25rem;
+  left: 0.25rem;
   height: 1.25rem;
   width: 1.625rem;
-  top: .25rem;
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25)
+  top: 0.25rem;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.is-focus:checked + .fn-switch__slider::before[dir=rtl],
-[dir=rtl] .fn-switch__input.is-focus:checked + .fn-switch__slider::before {
+[dir=rtl] .fn-switch__input.is-focus:checked + .fn-switch__slider::before, .fn-switch__input.is-focus:checked + .fn-switch__slider::before[dir=rtl] {
   left: auto;
-  right: .25rem
+  right: 0.25rem;
 }
-.fn-switch__input.is-focus.is-hover + .fn-switch__slider::before,
-.fn-switch__input.is-focus:hover + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25)
+.fn-switch__input.is-focus:hover + .fn-switch__slider::before, .fn-switch__input.is-focus.is-hover + .fn-switch__slider::before {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.is-focus.is-hover:checked + .fn-switch__slider::before,
-.fn-switch__input.is-focus:hover:checked + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25)
+.fn-switch__input.is-focus:hover:checked + .fn-switch__slider::before, .fn-switch__input.is-focus.is-hover:checked + .fn-switch__slider::before {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 .fn-switch__input:focus:not(.focus-visible) + .fn-switch__slider {
-  background-color: #475e75
+  background-color: #475e75;
 }
 .fn-switch__input:focus:not(.focus-visible) + .fn-switch__slider::before {
-  color: #475e75
+  color: #475e75;
 }
 .fn-switch__input:focus:not(.focus-visible):checked + .fn-switch__slider {
   -webkit-box-shadow: none;
-  box-shadow: none;
-  background-color: #0070f2
+          box-shadow: none;
+  background-color: #0070f2;
 }
 .fn-switch__input:focus:not(.focus-visible):checked + .fn-switch__slider::before {
-  color: #0070f2
+  color: #0070f2;
 }
 .fn-switch__input:focus:not(.focus-visible) + .fn-switch__slider {
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
 .fn-switch__input:focus:not(.focus-visible) + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25)
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 .fn-switch__input:focus:not(.focus-visible):checked + .fn-switch__slider {
   -webkit-box-shadow: none;
-  box-shadow: none
+          box-shadow: none;
 }
 .fn-switch__input:focus:not(.focus-visible):checked + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25)
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input:focus:not(.focus-visible).is-hover + .fn-switch__slider::before,
-.fn-switch__input:focus:not(.focus-visible):hover + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25)
+.fn-switch__input:focus:not(.focus-visible):hover + .fn-switch__slider::before, .fn-switch__input:focus:not(.focus-visible).is-hover + .fn-switch__slider::before {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input:focus:not(.focus-visible).is-hover:checked + .fn-switch__slider::before,
-.fn-switch__input:focus:not(.focus-visible):hover:checked + .fn-switch__slider::before {
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 8px 16px rgba(0,0,0,.25)
+.fn-switch__input:focus:not(.focus-visible):hover:checked + .fn-switch__slider::before, .fn-switch__input:focus:not(.focus-visible).is-hover:checked + .fn-switch__slider::before {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 8px 16px rgba(0, 0, 0, 0.25);
 }
-.fn-switch__input.is-disabled,
-.fn-switch__input:disabled,
-.fn-switch__input[aria-disabled=true] {
-  opacity: .4
+.fn-switch__input[aria-disabled=true], .fn-switch__input:disabled, .fn-switch__input.is-disabled {
+  opacity: 0.4;
 }
 .fn-switch__slider {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
@@ -283,71 +251,67 @@
   bottom: 0;
   cursor: pointer;
   position: absolute;
-  border-radius: .9375rem;
+  border-radius: 0.9375rem;
   background-color: #475e75;
-  transition: .4s;
-  -webkit-transition: .4s
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
 }
-.fn-switch__slider::after,
-.fn-switch__slider::before {
+.fn-switch__slider::before, .fn-switch__slider::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
 .fn-switch__slider::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  left: .125rem;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0.125rem;
   height: 1.5rem;
   width: 1.875rem;
   content: "\e069";
-  font-size: .75rem;
+  font-size: 0.75rem;
   position: absolute;
-  border-radius: .75rem;
-  font-family: SAP-icons;
+  border-radius: 0.75rem;
+  font-family: "SAP-icons";
   color: #475e75;
-  top: .125rem;
-  bottom: .125rem;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  box-shadow: 0 0 2px rgba(0,0,0,.25),0 4px 8px rgba(0,0,0,.25);
-  transition: .4s;
-  -webkit-transition: .4s
+  top: 0.125rem;
+  bottom: 0.125rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
 }
-.fn-switch__slider::before[dir=rtl],
-[dir=rtl] .fn-switch__slider::before {
+[dir=rtl] .fn-switch__slider::before, .fn-switch__slider::before[dir=rtl] {
   left: auto;
-  right: .125rem
+  right: 0.125rem;
 }
 .fn-switch__label {
-  font-family: "72","72full",Arial,Helvetica,sans-serif;
-  font-size: .875rem;
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.375rem;
   color: #1a2733;
-  font-weight: 400;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
   left: 3.125rem;
-  position: absolute
+  position: absolute;
 }
-.fn-switch__label::after,
-.fn-switch__label::before {
+.fn-switch__label::before, .fn-switch__label::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: inherit
+          box-sizing: inherit;
+  font-size: inherit;
 }
-.fn-switch__label[dir=rtl],
-[dir=rtl] .fn-switch__label {
+[dir=rtl] .fn-switch__label, .fn-switch__label[dir=rtl] {
   left: auto;
-  right: 3.125rem
+  right: 3.125rem;
 }
