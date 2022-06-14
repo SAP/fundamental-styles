@@ -1,12 +1,11 @@
 export default {
-    title: 'Components/Tabs',
+    title: 'Deprecated/Components/Tabs',
     parameters: {
         tags: ['f3', 'a11y', 'theme'],
         description: `Tabs are based on the folder metaphor and used to separate content into different sections. Tabs should be ordered based on priority to create visual hierarchy.
+## DEPRECATED
 
-## Deprecated
-
-**This component is deprecated. Please use the *Icon Tab Bar* component instead.**
+This component is deprecated. Please use the *Icon Tab Bar* component instead.
 
 ## Usage
 **Use tabs if:**
