@@ -1,4 +1,6 @@
 
+## [0.24.0-rc.147](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.146...v0.24.0-rc.147) (2022-06-14)
+
 ## [0.24.0-rc.146](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.145...v0.24.0-rc.146) (2022-06-14)
 
 
