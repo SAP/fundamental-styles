@@ -6,6 +6,7 @@ import { SAPContext } from '../hooks/SAPContext';
 import useStyles from '../hooks/useStyles';
 import useThemedStoryContainers from '../hooks/useThemedStoryContainers';
 import Community from './Community';
+import Versions from './Versions';
 import Description from './Description';
 import Footer from './Footer';
 import Header from './Header';
@@ -52,6 +53,7 @@ const DocsPage = () => {
             {stories.map((story) => story && <DocsStory key={story.id} {...story} expanded withToolbar />)}
 
             <Community />
+            <Versions />
             <Footer />
         </>
     );
