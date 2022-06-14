@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars,sort-imports */
 import React, { useContext } from 'react';
 import Community from '../../.storybook/custom/components/Community';
+import Versions from '../../.storybook/custom/components/Versions';
 import Footer from '../../.storybook/custom/components/Footer';
 import Header from '../../.storybook/custom/components/Header';
 import { SAPContext } from '../../.storybook/custom/hooks/SAPContext';
@@ -27,6 +28,7 @@ export const IntroductionPage = () => {
                 <Readme />
             </div>
             <Community />
+            <Versions />
             <Footer />
         </>
     );
