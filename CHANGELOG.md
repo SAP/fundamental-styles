@@ -1,4 +1,11 @@
 
+### [0.24.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.24.0...v0.24.1-rc.0) (2022-06-15)
+
+
+### Features
+
+* **docs:** move deprecated components to the separate list ([#3588](https://github.com/SAP/fundamental-styles/issues/3588)) ([d292ad5](https://github.com/SAP/fundamental-styles/commit/d292ad5eb3a2a1096dafa298351c95a35804d71c))
+
 ## [0.24.0](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.149...v0.24.0) (2022-06-14)
 
 ## [0.24.0-rc.149](https://github.com/SAP/fundamental-styles/compare/v0.24.0-rc.148...v0.24.0-rc.149) (2022-06-14)
