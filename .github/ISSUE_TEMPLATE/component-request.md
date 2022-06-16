@@ -1,6 +1,9 @@
 ---
 name: Component Request
 about: Request a new component
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
