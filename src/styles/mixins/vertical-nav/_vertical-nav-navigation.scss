@@ -340,6 +340,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
         }
 
         @include fd-focus() {
+          outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
           outline-offset: var(--fdVerticalNav_Item_Indicated_Outline_Offset);
         }
       }
