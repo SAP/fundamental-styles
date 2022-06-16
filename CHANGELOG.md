@@ -1,4 +1,11 @@
 
+### [0.24.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.0...v0.24.1-rc.1) (2022-06-16)
+
+
+### Bug Fixes
+
+* **styles:** vertical nav arrow outline ([#3591](https://github.com/SAP/fundamental-styles/issues/3591)) ([cbc3cf8](https://github.com/SAP/fundamental-styles/commit/cbc3cf805712481ae630b08d75e319d874ee9590))
+
 ### [0.24.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.24.0...v0.24.1-rc.0) (2022-06-15)
 
 
