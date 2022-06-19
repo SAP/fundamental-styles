@@ -44,7 +44,8 @@ module.exports = {
     staticDirs: staticDirs,
     addons: addons,
     core: {
-        builder: 'webpack5'
+        builder: 'webpack5',
+        disableTelemetry: true, // 👈 Disables telemetry
     },
     webpackFinal: async (config) => {
         config.plugins.push(
