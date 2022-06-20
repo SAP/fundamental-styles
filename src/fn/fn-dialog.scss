@@ -12,6 +12,10 @@
 
 $block: #{$fn-namespace}-dialog;
 
+:root {
+  --fn-dialog-background: var(--fn-base-color-content);
+}
+
 .#{$block} {
   @include fn-reset();
 
@@ -28,7 +32,7 @@ $block: #{$fn-namespace}-dialog;
 
     @extend %dialog-content;
 
-    background-color: $fn-color-white;
+    background-color: var(--fn-dialog-background);
     padding: 0;
   }
 

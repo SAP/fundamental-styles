@@ -2,6 +2,15 @@
 
 $block: #{$fn-namespace}-card;
 
+:root {
+  --fn-card-background-color: var(--fn-base-color-content);
+  --fn-card-border-radius: var(--fn-border-radius-16);
+  --fn-card-box-shadow: var(--fn-shadow-grey-level-2);
+  --fn-card-title-color: var(--fn-color-grey-10);
+  --fn-card-subtitle-color: var(--fn-color-grey-7);
+  --fn-card-content-border-radius: 0 0 var(--fn-border-radius-16) var(--fn-border-radius-16);
+}
+
 .#{$block} {
   @include fn-reset();
   @include fn-set-square(100%);
@@ -12,33 +21,35 @@ $block: #{$fn-namespace}-card;
 
   min-width: 10rem;
   min-height: 10rem;
-  background-color: $fn-color-white;
-  border-radius: $fn-border-radius-16;
-  box-shadow: $fn-shadow-grey-level-2;
+  background-color: var(--fn-card-background-color);
+  border-radius: var(--fn-card-border-radius);
+  box-shadow: var(--fn-card-box-shadow);
 
   &--data {
-    box-shadow: $fn-shadow-grey-level-0;
+    --fn-card-box-shadow: var(--fn-shadow-grey-level-0);
 
     @include fn-hover() {
-      box-shadow: $fn-shadow-grey-level-1;
+      --fn-card-box-shadow: var(--fn-shadow-grey-level-1);
     }
 
     @include fn-focus-visible() {
       outline: none;
-      box-shadow: $fn-focus-outline-shadow-blue;
+
+      --fn-card-box-shadow: var(--fn-focus-outline-shadow-blue);
     }
 
     @include fn-selected() {
-      background-color: $fn-color-blue-2;
-      box-shadow: $fn-shadow-blue-level-0;
+      --fn-card-background-color: var(--fn-color-blue-2);
+      --fn-card-box-shadow: var(--fn-shadow-blue-level-0);
 
       @include fn-hover() {
-        box-shadow: $fn-shadow-blue-level-1;
+        --fn-card-box-shadow: var(--fn-shadow-blue-level-1);
       }
 
       @include fn-focus-visible() {
         outline: none;
-        box-shadow: $fn-focus-outline-shadow-blue;
+
+        --fn-card-box-shadow: var(--fn-focus-outline-shadow-blue);
       }
     }
   }
@@ -90,7 +101,7 @@ $block: #{$fn-namespace}-card;
     font-weight: bolder;
     font-size: 1.125rem;
     line-height: 1.375rem;
-    color: $fn-color-grey-10;
+    color: var(--fn-card-title-color);
 
     &--truncate {
       @include fn-ellipsis();
@@ -103,6 +114,7 @@ $block: #{$fn-namespace}-card;
     font-size: 0.75rem;
     line-height: 1rem;
     margin-top: 0.125rem;
+    color: var(--fn-card-subtitle-color);
 
     &--truncate {
       @include fn-ellipsis();
@@ -116,7 +128,7 @@ $block: #{$fn-namespace}-card;
     flex: 1;
     padding: 1.5rem;
     overflow: hidden;
-    border-radius: 0 0 $fn-border-radius-16 $fn-border-radius-16;
+    border-radius: var(--fn-card-content-border-radius);
 
     &--no-padding {
       padding: 0;
