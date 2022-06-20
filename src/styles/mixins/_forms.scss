@@ -2,9 +2,13 @@
 @import "./mixins";
 @import "./states";
 
+$fd-input-field-height: 2.25rem;
+$fd-input-field-height--compact: 1.625rem;
+
 @mixin fd-input-field-base($hasFocusWithin: false) {
   @include fd-reset();
   @include fd-ellipsis();
+  @include set-min-height($fd-input-field-height);
 
   z-index: 1;
   width: 100%;
@@ -12,7 +16,6 @@
   border-radius: var(--sapField_BorderCornerRadius);
   padding: 0 0.625rem;
   margin: 0.25rem 0;
-  height: 2.25rem;
   box-shadow: none;
   color: var(--sapField_TextColor);
   text-shadow: var(--fdInput_Text_Shadow);
@@ -69,8 +72,9 @@
 }
 
 @mixin fd-input-field-base-compact {
+  @include set-min-height($fd-input-field-height--compact);
+
   min-width: 2rem;
-  height: 1.625rem;
   margin: 0.1875rem 0;
   padding: 0 0.5rem;
   box-sizing: border-box;
