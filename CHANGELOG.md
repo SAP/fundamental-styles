@@ -1,4 +1,11 @@
 
+### [0.24.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.6...v0.24.1-rc.7) (2022-06-21)
+
+
+### Features
+
+* **styles:** introduce shellbar responsible padding modifier [ci visual] ([#3698](https://github.com/SAP/fundamental-styles/issues/3698)) ([a146bee](https://github.com/SAP/fundamental-styles/commit/a146bee92379733ab28179f98a95759ce2146ffe))
+
 ### [0.24.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.5...v0.24.1-rc.6) (2022-06-21)
 
 
