@@ -250,4 +250,8 @@ $block: #{$fd-namespace}-shellbar;
       padding: 0;
     }
   }
+
+  &--responsive-paddings {
+    @include fd-apply-responsive-paddings();
+  }
 }
