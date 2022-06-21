@@ -556,7 +556,7 @@ The shellbar can be optimized for mobile and small tablet screens. To achieve th
 };
 
 export const ProductSwitch = () => `<div style="height:600px">
-    <div class="fd-shellbar">
+    <div class="fd-shellbar fd-shellbar--responsive-paddings">
         <div class="fd-shellbar__group fd-shellbar__group--product">
         <span class="fd-shellbar__logo">
             <svg style="height: 32px; width: 64px" width="286" height="143" viewBox="0 0 286 143"
