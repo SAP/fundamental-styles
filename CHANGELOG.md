@@ -1,4 +1,11 @@
 
+### [0.24.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.5...v0.24.1-rc.6) (2022-06-21)
+
+
+### Bug Fixes
+
+* **styles:** add min-height for input fields ([#3699](https://github.com/SAP/fundamental-styles/issues/3699)) ([a7592a7](https://github.com/SAP/fundamental-styles/commit/a7592a734d71b0cf53dd7d351a956f95c8c12db3))
+
 ### [0.24.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.4...v0.24.1-rc.5) (2022-06-19)
 
 ### [0.24.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.3...v0.24.1-rc.4) (2022-06-16)
