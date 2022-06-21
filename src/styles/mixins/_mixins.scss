@@ -517,6 +517,11 @@
   max-height: $height;
 }
 
+@mixin set-min-height($height) {
+  height: $height;
+  min-height: $height;
+}
+
 @mixin fd-icon-selector() {
   [class*="sap-icon"],
   &[class*="sap-icon"] {
