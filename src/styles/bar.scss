@@ -63,7 +63,7 @@ $block: #{$fd-namespace}-bar;
   }
 
   &__right {
-    @include fd-set-paddings-x(--fdBar_Right_Area_Padding_Left, 0);
+    @include fd-set-paddings-x(var(--fdBar_Right_Area_Padding_Left), 0);
 
     justify-content: flex-end;
   }
@@ -105,6 +105,8 @@ $block: #{$fd-namespace}-bar;
     @include bar-design();
 
     z-index: 1;
+    font-family: var(--fdBar_Header_Font_Family);
+    color: var(--fdBar_Header_Color);
   }
 
   &--subheader {

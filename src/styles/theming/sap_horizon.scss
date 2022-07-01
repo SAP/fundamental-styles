@@ -395,6 +395,8 @@
   --fdBar_Left_Area_Padding_Right: 0.25rem;
   --fdBar_Middle_Area_Padding_X: 0.25rem;
   --fdBar_Right_Area_Padding_Left: 0.25rem;
+  --fdBar_Header_Font_Family: var(--sapFontHeaderFamily);
+  --fdBar_Header_Color: var(--sapPageHeader_TextColor);
 
   /** Object List */
   --fdObject_List_Title_Font_Size: var(--sapFontHeader5Size);
