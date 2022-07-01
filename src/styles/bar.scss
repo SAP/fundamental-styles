@@ -28,23 +28,6 @@ $block: #{$fd-namespace}-bar;
     right: $margin-x;
   }
 
-  @mixin fd-bar-responsive-paddings() {
-    @media (max-width: 599px) {
-      left: 1rem;
-      right: 1rem;
-    }
-
-    @media (min-width: 600px) and (max-width: 1439px) {
-      left: 2rem;
-      right: 2rem;
-    }
-
-    @media (min-width: 1440px) {
-      left: 3rem;
-      right: 3rem;
-    }
-  }
-
   @include fd-reset();
   @include bar-design();
 
@@ -58,7 +41,7 @@ $block: #{$fd-namespace}-bar;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 
-    @include fd-bar-responsive-paddings();
+    @include fd-apply-responsive-paddings();
   }
 
   &__left,
@@ -98,14 +81,10 @@ $block: #{$fd-namespace}-bar;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: $fd-bar-element-spacing;
     max-width: 100%;
     max-height: 100%;
 
-    @include fd-rtl() {
-      margin-right: 0;
-      margin-left: $fd-bar-element-spacing;
-    }
+    @include fd-set-margin-right($fd-bar-element-spacing);
   }
 
   &__element--full-width {
@@ -117,12 +96,7 @@ $block: #{$fd-namespace}-bar;
   }
 
   &__element:last-child {
-    margin-right: 0;
-
-    @include fd-rtl() {
-      margin-left: 0;
-      margin-right: 0;
-    }
+    @include fd-set-margin-right(0);
   }
 
   &--header {
