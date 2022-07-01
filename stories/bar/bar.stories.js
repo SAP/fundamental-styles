@@ -33,6 +33,19 @@ export default {
 ### Buttons
 - Use only icon buttons **or** text buttons. Icon and text should not be combined into one button.
 - Buttons are sorted by usage i.e. from frequently-used to seldomly-used.
+
+## Paddings
+
+Modifier classes are available to adjust the paddings of the bar when it is being used in the \`fd-page\`. Alternatively the \`--responsive-paddings\` modifier may be used to apply this styles automatically.
+
+| **Padding** | &nbsp;&nbsp; **Amount** | **Modifier class** |
+| :--------- | ----------: | :----------------------- | ---------------: |
+| S | &nbsp;&nbsp; 1rem | \`--page-s\` |
+| S | &nbsp;&nbsp; 1rem | \`--home-page-s\` |
+| M_L | &nbsp;&nbsp; 2rem | \`--page-m_l\` |
+| M_L | &nbsp;&nbsp; 2rem | \`--home-page-m_l\` |
+| XL | &nbsp;&nbsp; 3rem | \`--page-xl\` |
+| XL | &nbsp;&nbsp; 3rem | \`--home-page-xl\` |
         `,
         tags: ['f3', 'a11y', 'theme'],
         components: ['button', 'icon', 'input', 'segmented-button', 'avatar', 'bar', 'title']
@@ -141,6 +154,64 @@ Cozy.parameters = {
         iframeHeight: 100,
         description: {
             story: 'The cozy bar contains a back button, icon buttons, segmented button and product switch button. It is responsive to tablet and mobile screen sizes. To apply cozy mode, add the `--cozy` modifier class to the container element.'
+        }
+    }
+};
+
+export const Responsive = () => `<div class="fd-bar fd-bar--responsive-paddings">
+    <div class="fd-bar__left">
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent">
+                <i class="sap-icon--navigation-left-arrow"></i>
+            </button>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent">
+                <i class="sap-icon--home"></i>
+            </button>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent">
+                <i class="sap-icon--account"></i>
+            </button>
+        </div>
+    </div>
+    <div class="fd-bar__middle">
+        <div class="fd-bar__element">
+            <div class="fd-segmented-button" role="group" aria-label="Group label">
+                <button aria-label="button" class="fd-button" aria-pressed="true">
+                    <i class="sap-icon--email"></i>
+                </button>
+                <button aria-label="button" class="fd-button">
+                    <i class="sap-icon--iphone"></i>
+                </button>
+                <button aria-label="button" class="fd-button">
+                    <i class="sap-icon--notification-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="fd-bar__right">
+        <div class="fd-bar__element">
+            <span
+                class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+                style="background-image: url('/assets/images/avatars/1.svg')"
+                role="img" aria-label="John Doe"></span>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent">
+                <i class="sap-icon--grid"></i>
+            </button>
+        </div>
+    </div>
+</div>
+`;
+
+Responsive.parameters = {
+    docs: {
+        iframeHeight: 100,
+        description: {
+            story: 'The bar can be made responsive with the `--responsive-paddings` modifier class. The paddings will automatically change with the screen size.'
         }
     }
 };
