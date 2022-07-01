@@ -28,6 +28,23 @@ $block: #{$fd-namespace}-bar;
     right: $margin-x;
   }
 
+  @mixin fd-bar-responsive-paddings() {
+    @media (max-width: 599px) {
+      left: 1rem;
+      right: 1rem;
+    }
+
+    @media (min-width: 600px) and (max-width: 1439px) {
+      left: 2rem;
+      right: 2rem;
+    }
+
+    @media (min-width: 1440px) {
+      left: 3rem;
+      right: 3rem;
+    }
+  }
+
   @include fd-reset();
   @include bar-design();
 
@@ -36,6 +53,13 @@ $block: #{$fd-namespace}-bar;
   }
 
   padding: 0 $fd-bar-padding-x;
+
+  &--responsive-paddings {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    @include fd-bar-responsive-paddings();
+  }
 
   &__left,
   &__middle,
