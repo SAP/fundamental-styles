@@ -1,7 +1,3 @@
-# DXP component metadata file
-# For more information, please see:
-# https://sap.live.dxp.k8s.ondemand.com/projects/dxp/documentation/Using-DXP/Add-an-existing-component
-
 kind: Component
 metadata:
   displayName: Fundamental Library Styles
