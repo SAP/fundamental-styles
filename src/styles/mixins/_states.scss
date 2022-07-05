@@ -80,6 +80,28 @@
   }
 }
 
+@mixin fd-fake-fiori-focus($offset: 0, $radius: 0) {
+  &:focus,
+  &.is-focus {
+    outline: none;
+
+    &::after {
+      border-width: var(--sapContent_FocusWidth);
+      border-color: var(--sapContent_FocusColor);
+      border-style: var(--sapContent_FocusStyle);
+      border-radius: $radius;
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: $offset;
+      bottom: $offset;
+      left: $offset;
+      right: $offset;
+      @content;
+    }
+  }
+}
+
 // Focus state, which is not support by IE11. Use it with `fd-fiori-focus` mixin.
 // This brings border + pseudo element
 @mixin fd-fiori-pseudo-focus-within($_offset: -0.0625rem) {

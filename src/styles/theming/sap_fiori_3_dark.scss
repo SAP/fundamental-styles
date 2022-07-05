@@ -36,8 +36,12 @@
   /* Avatar */
   --fdAvatar_BackgroundColor: var(--sapAccentColor6);
   --fdAvatar_Tile_BackgroundColor: var(--sapTile_IconColor);
-  --fdAvatar-Transparent_BackgroundColor: transparent;
+  --fdAvatar_Transparent_BackgroundColor: transparent;
   --fdAvatar_Border: none;
+  --fdAvatar_Text_Shadow: var(--sapContent_ContrastTextShadow);
+  --fdAvatar_Focus_Outline_Offset: -0.125rem;
+  --fdAvatar_Focus_Outline_Radius: 0;
+  --fdAvatar_Focus_Outline_Radius_Circle: 0;
   --fdAvatar_Accent_Color: var(--sapContent_ContrastTextColor);
   --fdAvatar_Accent_Color_1: var(--sapAccentColor1);
   --fdAvatar_Accent_Color_2: var(--sapAccentColor2);
