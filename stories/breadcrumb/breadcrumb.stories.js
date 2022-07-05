@@ -23,7 +23,7 @@ The breadcrumb component is a type of navigation that indicates the position of 
 - Independent object pages, such as fact sheets
 `,
         tags: ['f3', 'a11y', 'theme'],
-        components: ['popover', 'list', 'breadcrumb', 'icon', 'link']
+        components: ['popover', 'menu', 'breadcrumb', 'icon', 'link', 'dialog', 'list', 'bar', 'button']
     }
 };
 
@@ -70,23 +70,25 @@ export const Overflow = () => `
                 </div>
                 <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="breadcrumb1">
                     <div class="fd-popover__wrapper">
-                        <ul class="fd-list fd-list--navigation" role="menu">
-                            <li tabindex="-1" role="menuitem" class="fd-list__item fd-list__item--link">
-                                <a tabindex="0" class="fd-list__link" href="#">
-                                    <span class="fd-list__title">Products</span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" role="menuitem" class="fd-list__item fd-list__item--link">
-                                <a tabindex="0" class="fd-list__link" href="#">
-                                    <span class="fd-list__title">Suppliers</span>
-                                </a>
-                            </li>
-                            <li tabindex="-1" role="menuitem" class="fd-list__item fd-list__item--link">
-                                <a tabindex="0" class="fd-list__link" href="#">
-                                    <span class="fd-list__title">Titanium</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="fd-menu fd-menu--compact">
+                            <ul class="fd-menu__list" role="menu">
+                                <li class="fd-menu__item" role="presentation">
+                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                        <span class="fd-menu__title">Products</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item" role="presentation">
+                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                        <span class="fd-menu__title">Suppliers</span>
+                                    </a>
+                                </li>
+                                <li class="fd-menu__item" role="presentation">
+                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                        <span class="fd-menu__title">Titanium</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,6 +107,54 @@ Overflow.parameters = {
         iframeHeight: 200,
         description: {
             story: 'The overflow breadcrumb component displays a dropdown menu, followed by several pages in the navigation path. <br>Like the standard breadcrumb, each page can be selected to navigate to its corresponding page. This type is responsive and will collapse into a dropdown menu if there is insufficient horizontal space on the screen. <br>To display the overflow breadcrumb, include the `fd-popover` component in the first breadcrumb item within the element.'
+        }
+    }
+};
+
+export const Mobile = () => `
+<div class="fd-dialog fd-dialog-docs-static fd-dialog--active" id="breadcrumb-dialog-example" style="max-width: 320px;">
+    <div class="fd-dialog__content fd-dialog__content--mobile">
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+            <ul aria-labelledby="mobileHeader" class="fd-list fd-list--dropdown fd-list--compact fd-list--mobile" role="listbox">
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <span class="fd-list__title">Laptop</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Super portable deluxe</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">12 inch</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Ultra portable</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Titanium</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Suppliers</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <span class="fd-list__title">Products</span>
+                </li>
+            </ul>
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+`;
+
+Mobile.parameters = {
+    docs: {
+        iframeHeight: 200,
+        description: {
+            story: 'A full-screen dialog should be used on mobile phones when the user taps the overflow ellipses button.'
         }
     }
 };
