@@ -1,0 +1,17 @@
+# DXP component metadata file
+# For more information, please see:
+# https://sap.live.dxp.k8s.ondemand.com/projects/dxp/documentation/Using-DXP/Add-an-existing-component
+
+kind: Component
+metadata:
+  displayName: Fundamental Library Styles
+  description: SAP Fiori, theme-able, accessible component library for building SAP user interfaces with any web technology.
+  labels:
+    language: # java|typescript|golang
+  tags:
+    # - Tag 1
+    # - Tag 2
+spec:
+  type:
+    name: # ui|microservice|operator|doc|cli
+    lifecycle: # experimental|production|deprecated.
