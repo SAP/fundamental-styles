@@ -1,5 +1,6 @@
 @import "./mixins";
 @import "./avatar";
+@import "./avatar-variables";
 
 /*!
 .fd-avatar-group+((--individual|--group), (--xs|--s|--m|--l|--xl)
@@ -7,65 +8,28 @@
 $block: #{$fd-namespace}-avatar-group;
 
 .#{$block} {
-  $fd-avatar-group-item-spacing: (
-    "individual": (
-      "xs": ("margin-right": 0.0625rem),
-      "s": ("margin-right": 0.125rem),
-      "m": ("margin-right": 0.125rem),
-      "l": ("margin-right": 0.125rem),
-      "xl": ("margin-right": 0.25rem)
-    ),
-    "group": (
-      "xs": ("margin-right": -0.75rem),
-      "s": ("margin-right": -1.25rem),
-      "m": ("margin-right": -1.625rem),
-      "l": ("margin-right": -2rem),
-      "xl": ("margin-right": -2.75rem)
-    )
-  );
-  $fd-const-ratio: 1rem;
-  $fd-avatar-group-more-button-sizes: (
-    "xs": ("ratio": ($fd-const-ratio * 2), "font-size": 1rem),
-    "s": ("ratio": ($fd-const-ratio * 3), "font-size": 1.125rem),
-    "m": ("ratio": ($fd-const-ratio * 4), "font-size": 1.5rem),
-    "l": ("ratio": ($fd-const-ratio * 5), "font-size": 2.25rem),
-    "xl": ("ratio": ($fd-const-ratio * 7), "font-size": 3rem)
-  );
-  $fd-focus-outline-offset: 0.0625rem;
-  $fd-avatar-group-more-button-accent-colors: (
-    "1": ("background-color": var(--sapAccentColor1)),
-    "2": ("background-color": var(--sapAccentColor2)),
-    "3": ("background-color": var(--sapAccentColor3)),
-    "4": ("background-color": var(--sapAccentColor4)),
-    "5": ("background-color": var(--sapAccentColor5)),
-    "6": ("background-color": var(--sapAccentColor6)),
-    "7": ("background-color": var(--sapAccentColor7)),
-    "8": ("background-color": var(--sapAccentColor8)),
-    "9": ("background-color": var(--sapAccentColor9)),
-    "10": ("background-color": var(--sapAccentColor10))
-  );
-
   @include fd-reset();
+  @include fd-flex();
 
-  display: flex;
+  &__popover-control[tabindex="0"],
+  &--group-type[tabindex="0"] {
+    @include fd-fake-fiori-focus(
+      var(--fdAvatarGroup_Focus_Outline_Offset),
+      var(--fdAvatarGroup_Focus_Outline_Radius)
+    );
 
-  &__popover-control,
-  &__focusable-avatar {
-    @include fd-fiori-focus($fd-focus-outline-offset);
-    @include action-cursor();
+    cursor: pointer;
   }
 
-  &--individual-type {
-    .#{$block}__item {
-      @include fd-fiori-focus($fd-focus-outline-offset);
-      @include action-cursor();
-    }
+  &__focusable-avatar,
+  &__item[tabindex="0"] {
+    @include fd-avatar-group-item-focus(
+      var(--fdAvatar_Focus_Outline_Offset),
+      var(--fdAvatar_Focus_Outline_Radius_Circle)
+    );
   }
 
   &--group-type {
-    @include fd-fiori-focus($fd-focus-outline-offset);
-    @include action-cursor();
-
     .#{$block}__more-button {
       pointer-events: none;
     }
@@ -74,29 +38,20 @@ $block: #{$fd-namespace}-avatar-group;
   &__item {
     @include fd-reset();
 
+    position: relative;
     display: inline-block;
   }
 
   &__more-button {
-    @include fd-fiori-pseudo-focus();
+    @include fd-fake-fiori-focus(
+      var(--fdAvatar_Focus_Outline_Offset),
+      var(--fdAvatar_Focus_Outline_Radius_Circle)
+    );
 
     outline: none !important;
 
     .#{$block}__button-text {
       font-size: inherit;
-
-      bdi {
-        font-size: inherit;
-      }
-    }
-
-    @include fd-focus() {
-      &::after {
-        top: var(--fdAvatarGroup_MoreButton_Vertical_Offset);
-        bottom: var(--fdAvatarGroup_MoreButton_Vertical_Offset);
-        left: -0.25rem;
-        right: -0.25rem;
-      }
     }
   }
 
@@ -123,15 +78,17 @@ $block: #{$fd-namespace}-avatar-group;
     }
   }
 
-  @each $set-name, $size-set in $fd-avatar-group-more-button-sizes {
+  @each $set-name, $size-set in $fd-avatar-sizes {
     &--#{$set-name} {
+      .#{$block}__item {
+        @include fd-avatar-set-size(map_get($size-set, "ratio"));
+      }
+
       .#{$block}__more-button {
-        height: map_get($size-set, "ratio");
-        max-height: map_get($size-set, "ratio");
-        min-height: map_get($size-set, "ratio");
-        min-width: map_get($size-set, "ratio");
-        font-size: map_get($size-set, "font-size");
+        @include fd-avatar-set-size(map_get($size-set, "ratio"));
+
         border-radius: 25rem;
+        font-size: map_get($size-set, "font-size");
         border-width: var(--fdAvatarGroup_MoreButton_Border);
       }
     }
@@ -142,24 +99,18 @@ $block: #{$fd-namespace}-avatar-group;
       &--#{$type-name}-type {
         &.#{$block}--#{$size-name} {
           .#{$block}__item {
-            margin-right: map_get($size-set, "margin-right");
-            margin-left: 0;
-
-            @include fd-rtl() {
-              margin-right: 0;
-              margin-left: map_get($size-set, "margin-right");
-            }
+            @include fd-set-margins-x(0, map_get($size-set, "margin-right"));
           }
         }
       }
     }
   }
 
-  @each $accent-name, $color-set in $fd-avatar-group-more-button-accent-colors {
+  @each $accent-name, $color-set in $fd-avatar-accent-colors {
     .#{$block}__more-button--accent-color-#{$accent-name} {
+      border: map_get($color-set, "border");
+      color: map_get($color-set, "text-color");
       background-color: map_get($color-set, "background-color");
-      border-color: map_get($color-set, "background-color");
-      color: var(--fdAvatar_Accent_Color);
     }
   }
 }

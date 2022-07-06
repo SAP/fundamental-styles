@@ -1,124 +1,25 @@
 @import "./mixins";
+@import "./avatar-variables";
 
 $block: #{$fd-namespace}-avatar;
 
 .#{$block} {
-  $fd-avatar-border-radius: 50%;
-  $fd-zoom-icon-s: 1.125rem;
-  $fd-zoom-icon-l: 1.25rem;
-  $fd-zoom-icon-xl: 1.75rem;
-  $fd-const-ratio: 1rem;
-  $fd-avatar-sizes: (
-    "xs": (
-      "ratio": ($fd-const-ratio * 2),
-      "font-size": 1rem,
-      "zoomIconDimensions": $fd-zoom-icon-s,
-      "offset": -0.125rem,
-      "beforeFontSize": 0.75rem,
-      "fontStretch": condensed
-    ),
-    "s": (
-      "ratio": ($fd-const-ratio * 3),
-      "font-size": 1.125rem,
-      "zoomIconDimensions": $fd-zoom-icon-s,
-      "offset": -0.125rem,
-      "beforeFontSize": 0.75rem,
-      "fontStretch": condensed
-    ),
-    "m": (
-      "ratio": ($fd-const-ratio * 4),
-      "font-size": 1.5rem,
-      "zoomIconDimensions": $fd-zoom-icon-s,
-      "offset": -0.125rem,
-      "beforeFontSize": 0.75rem,
-      "fontStretch": normal
-    ),
-    "l": (
-      "ratio": ($fd-const-ratio * 5),
-      "font-size": 2.25rem,
-      "zoomIconDimensions": $fd-zoom-icon-l,
-      "offset": -0.1875rem,
-      "beforeFontSize": 0.875rem,
-      "fontStretch": normal
-    ),
-    "xl": (
-      "ratio": ($fd-const-ratio * 7),
-      "font-size": 3rem,
-      "zoomIconDimensions": $fd-zoom-icon-xl,
-      "offset": -0.25rem,
-      "beforeFontSize": 1rem,
-      "fontStretch": normal
-    )
-  );
-
-  $fd-avatar-accent-colors: (
-    "1": (
-      "background-color": var(--fdAvatar_Accent_Color_1),
-      "text-color": var(--fdAvatar_Accent_Color_1_Text),
-      "border": var(--fdAvatar_Accent_Color_1_Border)
-    ),
-    "2": (
-      "background-color": var(--fdAvatar_Accent_Color_2),
-      "text-color": var(--fdAvatar_Accent_Color_2_Text),
-      "border": var(--fdAvatar_Accent_Color_2_Border)
-    ),
-    "3": (
-      "background-color": var(--fdAvatar_Accent_Color_3),
-      "text-color": var(--fdAvatar_Accent_Color_3_Text),
-      "border": var(--fdAvatar_Accent_Color_3_Border)
-    ),
-    "4": (
-      "background-color": var(--fdAvatar_Accent_Color_4),
-      "text-color": var(--fdAvatar_Accent_Color_4_Text),
-      "border": var(--fdAvatar_Accent_Color_4_Border)
-    ),
-    "5": (
-      "background-color": var(--fdAvatar_Accent_Color_5),
-      "text-color": var(--fdAvatar_Accent_Color_5_Text),
-      "border": var(--fdAvatar_Accent_Color_5_Border)
-    ),
-    "6": (
-      "background-color": var(--fdAvatar_Accent_Color_6),
-      "text-color": var(--fdAvatar_Accent_Color_6_Text),
-      "border": var(--fdAvatar_Accent_Color_6_Border)
-    ),
-    "7": (
-      "background-color": var(--fdAvatar_Accent_Color_7),
-      "text-color": var(--fdAvatar_Accent_Color_7_Text),
-      "border": var(--fdAvatar_Accent_Color_7_Border)
-    ),
-    "8": (
-      "background-color": var(--fdAvatar_Accent_Color_8),
-      "text-color": var(--fdAvatar_Accent_Color_8_Text),
-      "border": var(--fdAvatar_Accent_Color_8_Border)
-    ),
-    "9": (
-      "background-color": var(--fdAvatar_Accent_Color_9),
-      "text-color": var(--fdAvatar_Accent_Color_9_Text),
-      "border": var(--fdAvatar_Accent_Color_9_Border)
-    ),
-    "10": (
-      "background-color": var(--fdAvatar_Accent_Color_10),
-      "text-color": var(--fdAvatar_Accent_Color_10_Text),
-      "border": var(--fdAvatar_Accent_Color_10_Border)
-    )
-  );
-
   @include fd-reset();
   @include fd-fake-fiori-focus(
     var(--fdAvatar_Focus_Outline_Offset),
     var(--fdAvatar_Focus_Outline_Radius)
   );
 
-  color: var(--sapContent_ContrastTextColor);
-  text-shadow: var(--fdAvatar_Text_Shadow);
-  background-color: var(--fdAvatar_BackgroundColor);
-  border-radius: var(--sapElement_BorderCornerRadius);
-  border: var(--fdAvatar_Border);
   position: relative;
-  background-repeat: no-repeat;
+  vertical-align: middle;
   background-size: cover;
   background-position: 50%;
+  background-repeat: no-repeat;
+  border: var(--fdAvatar_Border);
+  text-shadow: var(--fdAvatar_Text_Shadow);
+  color: var(--sapContent_ContrastTextColor);
+  background-color: var(--fdAvatar_BackgroundColor);
+  border-radius: var(--sapElement_BorderCornerRadius);
 
   &[tabindex="0"] {
     cursor: pointer;
@@ -131,9 +32,9 @@ $block: #{$fd-namespace}-avatar;
       @include fd-set-border(var(--sapButton_Emphasized_BorderColor));
 
       position: absolute;
+      border-radius: $fd-avatar-border-radius;
       color: var(--sapButton_Emphasized_TextColor);
       background-color: var(--sapButton_Emphasized_Background);
-      border-radius: $fd-avatar-border-radius;
     }
   }
 
@@ -187,9 +88,9 @@ $block: #{$fd-namespace}-avatar;
   // accent-colors
   @each $set-name, $color-set in $fd-avatar-accent-colors {
     &--accent-color-#{$set-name} {
-      background-color: map_get($color-set, "background-color");
-      color: map_get($color-set, "text-color");
       border: map_get($color-set, "border");
+      color: map_get($color-set, "text-color");
+      background-color: map_get($color-set, "background-color");
 
       &.#{$block}--shell {
         @include fd-set-border(var(--sapShell_InteractiveBorderColor));
@@ -202,8 +103,7 @@ $block: #{$fd-namespace}-avatar;
     &--#{$set-name} {
       @include fd-reset-spacing();
       @include fd-inline-flex-center();
-      @include set-width(map_get($size-set, "ratio"));
-      @include set-height(map_get($size-set, "ratio"));
+      @include fd-avatar-set-size(map_get($size-set, "ratio"));
 
       font-size: map_get($size-set, "font-size");
       font-stretch: map_get($size-set, "fontStretch");
