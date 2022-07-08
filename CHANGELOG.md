@@ -1,4 +1,11 @@
 
+### [0.24.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.9...v0.24.1-rc.10) (2022-07-08)
+
+
+### Bug Fixes
+
+* **styles:** improve Bar component ([4f0f631](https://github.com/SAP/fundamental-styles/commit/4f0f631aaa5296edaa356c2352d1b2b511b46697))
+
 ### [0.24.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.8...v0.24.1-rc.9) (2022-07-07)
 
 ### [0.24.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.7...v0.24.1-rc.8) (2022-07-05)
