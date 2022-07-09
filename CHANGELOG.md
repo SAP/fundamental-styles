@@ -1,4 +1,11 @@
 
+### [0.24.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.10...v0.24.1-rc.11) (2022-07-09)
+
+
+### Features
+
+* **fn:** theming support intro [ci visual] ([#3697](https://github.com/SAP/fundamental-styles/issues/3697)) ([6a03ce5](https://github.com/SAP/fundamental-styles/commit/6a03ce52398ec92c6e8624635b757a98b7ed46b4))
+
 ### [0.24.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.9...v0.24.1-rc.10) (2022-07-08)
 
 
