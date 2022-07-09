@@ -2,6 +2,10 @@
 
 $block: #{$fn-namespace}-page;
 
+:root {
+  --fn-page-background: var(--fn-base-color-content);
+}
+
 .#{$block} {
   @include fn-reset();
 
@@ -12,12 +16,13 @@ $block: #{$fn-namespace}-page;
 
     width: 100%;
     height: 5rem;
-    background: $fn-color-white;
-    box-shadow: $fn-shadow-grey-level-0;
+    background: var(--fn-page-background);
+    box-shadow: var(--fn-page-box-shadow);
 
     &--no-container {
       height: 2.75rem;
-      box-shadow: none;
+
+      --fn-page-box-shadow: none;
     }
   }
 

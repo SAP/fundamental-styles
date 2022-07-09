@@ -152,5 +152,6 @@
   "lint-staged": {
     "{src,.storybook}/**/*.(sa|sc|c)ss": "stylelint --fix",
     "*.js": "eslint --fix"
-  }
+  },
+  "dependencies": {}
 }
