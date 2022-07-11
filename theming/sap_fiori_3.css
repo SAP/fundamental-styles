@@ -700,7 +700,7 @@
   --fdMessageStrip_Border_Color_Error: var(--sapErrorBorderColor);
   --fdMessageStrip_Border_Color_Warning: var(--sapWarningBorderColor);
   --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
-  --fdMessageStrip_Border_Color_Informative: var(--sapInformativeBorderColor);
+  --fdMessageStrip_Border_Color_Informative: var(--sapInformationBorderColor);
   --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
   --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
   --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);
@@ -830,6 +830,8 @@
   --fdBar_Left_Area_Padding_Right: 0;
   --fdBar_Middle_Area_Padding_X: 0.5rem;
   --fdBar_Right_Area_Padding_Left: 0;
+  --fdBar_Header_Font_Family: inherit;
+  --fdBar_Header_Color: inherit;
   /** Object List */
   --fdObject_List_Title_Font_Size: var(--sapFontHeader4Size);
   --fdObject_List_Title_Font_Weight: var(--sapFontHeaderWeight);

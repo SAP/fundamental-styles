@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.0
+ * Fundamental Library Styles v0.24.1
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -44,13 +44,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 2.25rem;
+  min-height: 2.25rem;
   z-index: 1;
   width: 100%;
   min-width: 2.75rem;
   border-radius: var(--sapField_BorderCornerRadius);
   padding: 0 0.625rem;
   margin: 0.25rem 0;
-  height: 2.25rem;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: var(--sapField_TextColor);

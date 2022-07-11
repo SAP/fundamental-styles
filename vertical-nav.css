@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.0
+ * Fundamental Library Styles v0.24.1
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -477,6 +477,7 @@
 }
 .fd-vertical-nav .fd-list__navigation-item-arrow:focus, .fd-vertical-nav .fd-list__navigation-item-arrow.is-focus {
   z-index: 5;
+  outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
   outline-offset: var(--fdVerticalNav_Item_Indicated_Outline_Offset);
 }
 .fd-vertical-nav .fd-list__navigation-item:hover, .fd-vertical-nav .fd-list__navigation-item.is-hover, .fd-vertical-nav .fd-list__navigation-item--condensed:hover, .fd-vertical-nav .fd-list__navigation-item--condensed.is-hover {

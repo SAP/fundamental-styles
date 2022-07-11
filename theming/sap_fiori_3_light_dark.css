@@ -706,7 +706,7 @@
   --fdMessageStrip_Border_Color_Error: var(--sapErrorBorderColor);
   --fdMessageStrip_Border_Color_Warning: var(--sapWarningBorderColor);
   --fdMessageStrip_Border_Color_Neutral: var(--sapNeutralBorderColor);
-  --fdMessageStrip_Border_Color_Informative: var(--sapInformativeBorderColor);
+  --fdMessageStrip_Border_Color_Informative: var(--sapInformationBorderColor);
   --fdMessageStrip_Icon_Color_Success: var(--sapPositiveElementColor);
   --fdMessageStrip_Icon_Color_Error: var(--sapNegativeElementColor);
   --fdMessageStrip_Icon_Color_Warning: var(--sapCriticalElementColor);

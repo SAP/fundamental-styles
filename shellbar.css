@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.0
+ * Fundamental Library Styles v0.24.1
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -313,4 +313,28 @@
 [dir=rtl] .fd-shellbar--side-nav.fd-shellbar--s, .fd-shellbar--side-nav.fd-shellbar--s[dir=rtl], [dir=rtl] .fd-shellbar--side-nav.fd-shellbar--m, .fd-shellbar--side-nav.fd-shellbar--m[dir=rtl], [dir=rtl] .fd-shellbar--side-nav.fd-shellbar--l, .fd-shellbar--side-nav.fd-shellbar--l[dir=rtl], [dir=rtl] .fd-shellbar--side-nav.fd-shellbar--xl, .fd-shellbar--side-nav.fd-shellbar--xl[dir=rtl] {
   padding-right: 0;
   padding-left: 0.5rem;
+}
+@media (max-width: 599px) {
+  .fd-shellbar--responsive-paddings {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .fd-shellbar--responsive-paddings {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .fd-shellbar--responsive-paddings {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .fd-shellbar--responsive-paddings {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }

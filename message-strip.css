@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.0
+ * Fundamental Library Styles v0.24.1
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -112,7 +112,7 @@
   text-rendering: optimizeLegibility;
 }
 .fd-message-strip--warning::before {
-  content: "\e201";
+  content: "\e053";
 }
 [dir=rtl] .fd-message-strip--warning::before, .fd-message-strip--warning[dir=rtl]::before {
   display: none;
@@ -125,7 +125,7 @@
   text-rendering: optimizeLegibility;
 }
 [dir=rtl] .fd-message-strip--warning::after, .fd-message-strip--warning[dir=rtl]::after {
-  content: "\e201";
+  content: "\e053";
 }
 .fd-message-strip--error {
   background-color: var(--sapErrorBackground);
@@ -142,7 +142,7 @@
   text-rendering: optimizeLegibility;
 }
 .fd-message-strip--error::before {
-  content: "\e0b1";
+  content: "\e1ec";
 }
 [dir=rtl] .fd-message-strip--error::after, .fd-message-strip--error[dir=rtl]::after {
   font-family: "SAP-icons";
@@ -152,7 +152,7 @@
   text-rendering: optimizeLegibility;
 }
 [dir=rtl] .fd-message-strip--error::after, .fd-message-strip--error[dir=rtl]::after {
-  content: "\e0b1";
+  content: "\e1ec";
 }
 .fd-message-strip--success {
   background-color: var(--sapSuccessBackground);
@@ -169,7 +169,7 @@
   text-rendering: optimizeLegibility;
 }
 .fd-message-strip--success::before {
-  content: "\e203";
+  content: "\e1c1";
 }
 [dir=rtl] .fd-message-strip--success::after, .fd-message-strip--success[dir=rtl]::after {
   font-family: "SAP-icons";
@@ -179,7 +179,7 @@
   text-rendering: optimizeLegibility;
 }
 [dir=rtl] .fd-message-strip--success::after, .fd-message-strip--success[dir=rtl]::after {
-  content: "\e203";
+  content: "\e1c1";
 }
 .fd-message-strip--information {
   background-color: var(--sapInformationBackground);
@@ -196,7 +196,7 @@
   text-rendering: optimizeLegibility;
 }
 .fd-message-strip--information::before {
-  content: "\e202";
+  content: "\e289";
 }
 [dir=rtl] .fd-message-strip--information::after, .fd-message-strip--information[dir=rtl]::after {
   font-family: "SAP-icons";
@@ -206,7 +206,7 @@
   text-rendering: optimizeLegibility;
 }
 [dir=rtl] .fd-message-strip--information::after, .fd-message-strip--information[dir=rtl]::after {
-  content: "\e202";
+  content: "\e289";
 }
 .fd-message-strip--no-icon {
   padding-left: 1rem;
