@@ -1,4 +1,11 @@
 
+### [0.24.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.11...v0.24.1-rc.12) (2022-07-11)
+
+
+### Bug Fixes
+
+* **styles:** message strip info border color icons for fiori 3 ([#3721](https://github.com/SAP/fundamental-styles/issues/3721)) ([112095c](https://github.com/SAP/fundamental-styles/commit/112095c1fd28d84906f375ad3827889ccaa8b695))
+
 ### [0.24.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.10...v0.24.1-rc.11) (2022-07-09)
 
 
