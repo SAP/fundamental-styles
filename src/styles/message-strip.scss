@@ -131,14 +131,14 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--warning;
     border-color: $fd-message-strip-border-color--warning;
 
-    @include fd-icon("message-warning");
+    @include fd-icon("alert");
 
     @include fd-rtl() {
       &::before {
         display: none;
       }
 
-      @include fd-icon("message-warning", "after");
+      @include fd-icon("alert", "after");
     }
   }
 
@@ -151,10 +151,10 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--error;
     border-color: $fd-message-strip-border-color--error;
 
-    @include fd-icon("message-error");
+    @include fd-icon("error");
 
     @include fd-rtl() {
-      @include fd-icon("message-error", "after");
+      @include fd-icon("error", "after");
     }
   }
 
@@ -167,10 +167,10 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--success;
     border-color: $fd-message-strip-border-color--success;
 
-    @include fd-icon("message-success");
+    @include fd-icon("sys-enter-2");
 
     @include fd-rtl() {
-      @include fd-icon("message-success", "after");
+      @include fd-icon("sys-enter-2", "after");
     }
   }
 
@@ -183,10 +183,10 @@ $block: #{$fd-namespace}-message-strip;
     background-color: $fd-message-strip-background-color--information;
     border-color: $fd-message-strip-border-color--information;
 
-    @include fd-icon("message-information");
+    @include fd-icon("information");
 
     @include fd-rtl() {
-      @include fd-icon("message-information", "after");
+      @include fd-icon("information", "after");
     }
   }
 
