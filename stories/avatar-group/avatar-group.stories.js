@@ -19,20 +19,20 @@ Do not use the **AvatarGroup** if:
 - You want to use it for other visual content than avatars.
 
 <br />
-## Sizes
+## Sizes and spacings
 
-The control allows you to display the avatars in different sizes, depending on your use case.
+The spacing between the items depends on the size of the avatars in the group. 
 
 | **Size** | &nbsp;&nbsp; **Group type** | &nbsp;&nbsp; **Individual type** | **Modifier class** |
 | :---------: | :----------: | :-----------------------: | :---------------: |
-| XS | &nbsp;&nbsp; 0.75rem | &nbsp;&nbsp; 0.0625rem | \`fd-avatar-group--xs\` |
-| S | &nbsp;&nbsp; 1.25rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--s\` |
-| M | &nbsp;&nbsp; 1.625rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--m\` |
-| L | &nbsp;&nbsp; 2rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--l\` |
-| XL | &nbsp;&nbsp; 2.75rem | &nbsp;&nbsp; 0.25rem | \`fd-avatar-group--xl\` |
+| XS | &nbsp;&nbsp; -0.75rem | &nbsp;&nbsp; 0.0625rem | \`fd-avatar-group--xs\` |
+| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--s\` |
+| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--m\` |
+| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--l\` |
+| XL | &nbsp;&nbsp; -2.75rem | &nbsp;&nbsp; 0.25rem | \`fd-avatar-group--xl\` |
 
 <br />
-##Types
+##Types (Interaction Variations)
 
 The **AvatarGroup** control has two group types:
 
@@ -41,7 +41,7 @@ The **AvatarGroup** control has two group types:
 
 
 ##Overflow Button
-
+If an avatar group has too many members to display, an overflow button is displayed at the end of the group. <br />
 To change the background color of the button, add the \`fd-avatar-group__more-button--accent-color-*\` class with the number indicating the desired color. The color options include numbers ranging from 1 to 10, for example: \`fd-avatar-group__more-button--accent-color-1\`
 
 `,
