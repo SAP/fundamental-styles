@@ -1,29 +1,10 @@
 export default {
     title: 'Components/Avatar Group',
     parameters: {
-        description: `The avatar group displays a number of avatars, which act as a digital representation of a user. This control is useful for visualizing a team, project team members, or a group of employees, for example.
+        description: `The avatar group displays a number of avatars, which act as a digital representation of a user. This control is useful for visualizing a team, project team members, or a group of employees, for example. <br />
+        For detailed information check Fiori Design Guidelines for <a target="_blank" href="https://experience.sap.com/internal/fiori-design-web/avatar-group/">Avatar Group</a> component. 
 
-
-
-## Sizes
-
-The control allows you to display the avatars in different sizes, depending on your use case.
-
-| **Size** | &nbsp;&nbsp; **Group type** | &nbsp;&nbsp; **Individual type** | **Modifier class** |
-| :--------- | ----------: | :----------------------- | ---------------: |
-| XS | &nbsp;&nbsp; -0.75rem | &nbsp;&nbsp; 0.0625rem | \`--xs\` |
-| S | &nbsp;&nbsp; -1.25rem | &nbsp;&nbsp; 0.125rem | \`--s\` |
-| M | &nbsp;&nbsp; -1.625rem | &nbsp;&nbsp; 0.125rem | \`--m\` |
-| L | &nbsp;&nbsp; -2rem | &nbsp;&nbsp; 0.125rem | \`--l\` |
-| XL | &nbsp;&nbsp; -2.75rem | &nbsp;&nbsp; 0.25rem | \`--xl\` |
-
-##Types
-
-The **AvatarGroup** control has two group types:
-
-- **Group type**: The avatars are displayed as partially overlapped on top of each other and the entire group has one click/tap area.
-- **Individual type**: The avatars are displayed side-by-side and each avatar has its own click/tap area.
-
+<br />
 ## Usage
 
 Use the **AvatarGroup** if:
@@ -36,6 +17,28 @@ Do not use the **AvatarGroup** if:
 - You want to display a single avatar.
 - You want to display a gallery for simple images.
 - You want to use it for other visual content than avatars.
+
+<br />
+## Sizes
+
+The control allows you to display the avatars in different sizes, depending on your use case.
+
+| **Size** | &nbsp;&nbsp; **Group type** | &nbsp;&nbsp; **Individual type** | **Modifier class** |
+| :---------: | :----------: | :-----------------------: | :---------------: |
+| XS | &nbsp;&nbsp; 0.75rem | &nbsp;&nbsp; 0.0625rem | \`fd-avatar-group--xs\` |
+| S | &nbsp;&nbsp; 1.25rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--s\` |
+| M | &nbsp;&nbsp; 1.625rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--m\` |
+| L | &nbsp;&nbsp; 2rem | &nbsp;&nbsp; 0.125rem | \`fd-avatar-group--l\` |
+| XL | &nbsp;&nbsp; 2.75rem | &nbsp;&nbsp; 0.25rem | \`fd-avatar-group--xl\` |
+
+<br />
+##Types
+
+The **AvatarGroup** control has two group types:
+
+- **Group type**: The avatars are displayed as partially overlapped on top of each other and the entire group has one click/tap area.
+- **Individual type**: The avatars are displayed side-by-side and each avatar has its own click/tap area.
+
 
 ##Overflow Button
 
@@ -277,7 +280,7 @@ IndividualType.parameters = {
     docs: {
         iframeHeight: 250,
         description: {
-            story: 'To use Individual type of Avatar Group use the `--individual-type` modifier class <i>(`fd-avatar-group--individual-type` class)<i>.'
+            story: 'For Individual type add the `fd-avatar-group--individual-type` modifier class to the `fd-avatar-group` base class.'
         }
     }
 };
@@ -396,7 +399,7 @@ GroupType.parameters = {
     docs: {
         iframeHeight: 250,
         description: {
-            story: 'To use Group type of Avatar Group use the `--group-type` modifier class <i>(`fd-avatar-group--group-type` class)<i>.'
+            story: 'For Group type add the `fd-avatar-group--group-type` modifier class to the `fd-avatar-group` base class.'
         }
     }
 };
