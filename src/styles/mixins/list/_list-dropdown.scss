@@ -1,6 +1,5 @@
 @import "./list-definitions";
 
-$fd-list-dropdown-max-width: 40rem !default;
 $fd-list-dropdown-vertical-padding: 0.75rem !default;
 $fd-list-dropdown-vertical-compact-padding: 0.5rem !default;
 $fd-checkbox-dimensions: 1.375rem !default;
@@ -107,7 +106,7 @@ $fd-checkbox-dimensions: 1.375rem !default;
 
   &--dropdown,
   &--multi-input {
-    @mixin list-width-limit($maxWidth: $fd-list-dropdown-max-width) {
+    @mixin list-width-limit($maxWidth) {
       max-width: $maxWidth;
 
       .#{$block}__title {
@@ -129,7 +128,7 @@ $fd-checkbox-dimensions: 1.375rem !default;
     }
 
     display: block;
-    min-width: 7rem;
+    min-width: 5rem;
 
     .#{$block}__item {
       cursor: pointer;
@@ -145,6 +144,7 @@ $fd-checkbox-dimensions: 1.375rem !default;
       font-size: $fd-list-normal-font-size;
       white-space: normal;
       flex: auto;
+      width: auto;
 
       &--no-wrap {
         white-space: nowrap;
@@ -152,15 +152,10 @@ $fd-checkbox-dimensions: 1.375rem !default;
     }
 
     .#{$block}__secondary {
-      width: auto;
       display: block;
     }
 
-    .#{$block}__title {
-      width: auto;
-    }
-
-    @include list-width-limit($fd-list-dropdown-max-width);
+    @include list-width-limit(40rem);
 
     .#{$block}__icon {
       line-height: 1rem;
