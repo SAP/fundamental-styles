@@ -1,4 +1,11 @@
 
+### [0.24.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.24.1...v0.24.2-rc.0) (2022-07-12)
+
+
+### Bug Fixes
+
+* **styles:** list dropdown min-width ([#3725](https://github.com/SAP/fundamental-styles/issues/3725)) ([4416961](https://github.com/SAP/fundamental-styles/commit/4416961a831dae10588e8b9158b62f67aad912af))
+
 ### [0.24.1](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.12...v0.24.1) (2022-07-11)
 
 ### [0.24.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.24.1-rc.11...v0.24.1-rc.12) (2022-07-11)
