@@ -86,6 +86,7 @@ $block: #{$fd-namespace}-shellbar;
 
   &__logo {
     @include fd-reset();
+    @include fd-fiori-focus(0);
 
     max-height: 2rem;
     background-repeat: no-repeat;
