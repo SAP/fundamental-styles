@@ -1,4 +1,11 @@
 
+### [0.24.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.0...v0.24.2-rc.1) (2022-07-14)
+
+
+### Bug Fixes
+
+* **styles:** selected & readonly token ([#3729](https://github.com/SAP/fundamental-styles/issues/3729)) ([2762125](https://github.com/SAP/fundamental-styles/commit/2762125de3c05e5ecc3b34de354c363e20b97de7))
+
 ### [0.24.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.24.1...v0.24.2-rc.0) (2022-07-12)
 
 
