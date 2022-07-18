@@ -136,6 +136,7 @@ $fd-select-padding-x-compact: 0.5rem;
   &--compact {
     .#{$block}__control {
       height: $fd-form-input-height--compact;
+      min-height: $fd-form-input-height--compact;
 
       .#{$block}__text-content {
         @include fd-set-padding-left($fd-select-padding-x-compact);
