@@ -58,6 +58,10 @@ $color-accents: (
         }
       }
     }
+
+    &::before {
+      vertical-align: middle;
+    }
   }
 
   &__text {
