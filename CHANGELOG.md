@@ -1,4 +1,11 @@
 
+### [0.24.2-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.5...v0.24.2-rc.6) (2022-07-18)
+
+
+### Bug Fixes
+
+* **styles:** Version 1.0 Avatar and Avatar Group updates ([#3728](https://github.com/SAP/fundamental-styles/issues/3728)) ([e629515](https://github.com/SAP/fundamental-styles/commit/e629515d66ad033721941a1367ebce7a92d6707f))
+
 ### [0.24.2-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.4...v0.24.2-rc.5) (2022-07-18)
 
 
