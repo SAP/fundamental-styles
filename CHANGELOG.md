@@ -1,4 +1,11 @@
 
+### [0.24.2-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.2...v0.24.2-rc.3) (2022-07-18)
+
+
+### Bug Fixes
+
+* **styles:** fix vertical alignment of icon in alert ([#3727](https://github.com/SAP/fundamental-styles/issues/3727)) ([248abf8](https://github.com/SAP/fundamental-styles/commit/248abf8fd8d02d08c17d1aaf77c4a6f23f43975b))
+
 ### [0.24.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.1...v0.24.2-rc.2) (2022-07-18)
 
 
