@@ -1,4 +1,11 @@
 
+### [0.24.2-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.4...v0.24.2-rc.5) (2022-07-18)
+
+
+### Bug Fixes
+
+* **styles:** add shellbar logo focus ([#3730](https://github.com/SAP/fundamental-styles/issues/3730)) ([b104136](https://github.com/SAP/fundamental-styles/commit/b10413671a3f895580dfd084668fe2ef42883238))
+
 ### [0.24.2-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.3...v0.24.2-rc.4) (2022-07-18)
 
 
