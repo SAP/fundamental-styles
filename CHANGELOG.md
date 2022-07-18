@@ -1,4 +1,11 @@
 
+### [0.24.2-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.1...v0.24.2-rc.2) (2022-07-18)
+
+
+### Bug Fixes
+
+* **styles:** compact state for form controls [ci visual] ([#3739](https://github.com/SAP/fundamental-styles/issues/3739)) ([a8caa05](https://github.com/SAP/fundamental-styles/commit/a8caa0526273e4e62286631ba23ad285f928f16b))
+
 ### [0.24.2-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.0...v0.24.2-rc.1) (2022-07-14)
 
 
