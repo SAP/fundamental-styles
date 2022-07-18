@@ -21,6 +21,7 @@ $block: #{$fd-namespace}-alert;
     width: 2.5rem;
     top: 0.4375rem;
     left: 0;
+    line-height: 1rem;
   }
 
   @mixin fd-alert-close-btn-container {
