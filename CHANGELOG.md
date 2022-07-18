@@ -1,4 +1,11 @@
 
+### [0.24.2-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.3...v0.24.2-rc.4) (2022-07-18)
+
+
+### Bug Fixes
+
+* **styles:** vertical align info label icon ([#3731](https://github.com/SAP/fundamental-styles/issues/3731)) ([00ac510](https://github.com/SAP/fundamental-styles/commit/00ac5105cef10d0b1bb4d62c9b4fce0741c0fe92))
+
 ### [0.24.2-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.2...v0.24.2-rc.3) (2022-07-18)
 
 
