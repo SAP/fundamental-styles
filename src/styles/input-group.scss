@@ -12,7 +12,7 @@ $fd-input-padding: 0.625rem;
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
 .#{$block} {
-  @include fd-input-field-base();
+  @include fd-input-field-base(false, false);
   @include fd-input-field-states();
   @include fd-input-group-button-overwrite();
 

@@ -5,10 +5,13 @@
 $fd-input-field-height: 2.25rem;
 $fd-input-field-height--compact: 1.625rem;
 
-@mixin fd-input-field-base($hasFocusWithin: false) {
+@mixin fd-input-field-base($hasFocusWithin: false, $withMinHeight: true) {
   @include fd-reset();
   @include fd-ellipsis();
-  @include set-min-height($fd-input-field-height);
+
+  @if $withMinHeight {
+    @include set-min-height($fd-input-field-height);
+  }
 
   z-index: 1;
   width: 100%;

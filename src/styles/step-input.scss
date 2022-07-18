@@ -90,6 +90,7 @@ $block: #{$fd-namespace}-step-input;
 
   &--compact {
     height: $fd-step-input-compact-height;
+    min-height: $fd-step-input-compact-height;
 
     /** Width is different due to different border width  */
     &.is-information,
