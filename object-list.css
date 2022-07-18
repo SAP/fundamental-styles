@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.1
+ * Fundamental Library Styles v0.24.2
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -855,7 +855,7 @@
 }
 .fd-list--dropdown, .fd-list--multi-input {
   display: block;
-  min-width: 7rem;
+  min-width: 5rem;
   max-width: 40rem;
 }
 .fd-list--dropdown .fd-list__item, .fd-list--multi-input .fd-list__item {
@@ -873,6 +873,7 @@
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  width: auto;
 }
 .fd-list--dropdown .fd-list__title--no-wrap,
 .fd-list--dropdown .fd-list__secondary--no-wrap, .fd-list--multi-input .fd-list__title--no-wrap,
@@ -880,11 +881,7 @@
   white-space: nowrap;
 }
 .fd-list--dropdown .fd-list__secondary, .fd-list--multi-input .fd-list__secondary {
-  width: auto;
   display: block;
-}
-.fd-list--dropdown .fd-list__title, .fd-list--multi-input .fd-list__title {
-  width: auto;
 }
 .fd-list--dropdown .fd-list__title, .fd-list--multi-input .fd-list__title {
   max-width: 24rem;

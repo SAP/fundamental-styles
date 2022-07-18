@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.1
+ * Fundamental Library Styles v0.24.2
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -31,8 +31,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 2.25rem;
-  min-height: 2.25rem;
   z-index: 1;
   width: 100%;
   min-width: 2.75rem;

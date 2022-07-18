@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.1
+ * Fundamental Library Styles v0.24.2
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -159,6 +159,11 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-shellbar__logo:focus, .fd-shellbar__logo.is-focus {
+  outline-width: var(--sapContent_FocusWidth);
+  outline-color: var(--sapContent_FocusColor);
+  outline-style: var(--sapContent_FocusStyle);
 }
 .fd-shellbar__logo > * {
   line-height: 0;

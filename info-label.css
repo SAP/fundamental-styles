@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.1
+ * Fundamental Library Styles v0.24.2
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -67,6 +67,9 @@
 }
 [dir=rtl] .fd-info-label__icon [class*=sap-icon]:first-child:last-child, .fd-info-label__icon [class*=sap-icon]:first-child:last-child[dir=rtl], [dir=rtl] .fd-info-label__icon[class*=sap-icon]:first-child:last-child, .fd-info-label__icon[class*=sap-icon]:first-child:last-child[dir=rtl] {
   margin: 0;
+}
+.fd-info-label__icon::before {
+  vertical-align: middle;
 }
 .fd-info-label__text {
   font-size: var(--sapFontSize);
