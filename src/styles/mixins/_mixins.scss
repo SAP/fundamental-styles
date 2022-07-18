@@ -673,6 +673,10 @@
   }
 }
 
+@mixin fd-set-border($color: transparent, $width: 0.0625rem, $type: solid) {
+  border: $width $type $color;
+}
+
 @mixin fd-set-position-right-pseudo($right) {
   right: $right;
 

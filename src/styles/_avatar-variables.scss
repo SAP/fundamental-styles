@@ -1,0 +1,159 @@
+
+// ----- Avatar -----
+$fd-avatar-border-radius: 50%;
+$fd-avatar-zoom-icon-s: 1.125rem;
+$fd-avatar-zoom-icon-l: 1.25rem;
+$fd-avatar-zoom-icon-xl: 1.75rem;
+$fd-avatar-const-ratio: 1rem;
+
+$fd-avatar-accent-colors: (
+  "1": (
+    "background-color": var(--fdAvatar_Accent_Color_1),
+    "text-color": var(--fdAvatar_Accent_Color_1_Text),
+    "border": var(--fdAvatar_Accent_Color_1_Border)
+  ),
+  "2": (
+    "background-color": var(--fdAvatar_Accent_Color_2),
+    "text-color": var(--fdAvatar_Accent_Color_2_Text),
+    "border": var(--fdAvatar_Accent_Color_2_Border)
+  ),
+  "3": (
+    "background-color": var(--fdAvatar_Accent_Color_3),
+    "text-color": var(--fdAvatar_Accent_Color_3_Text),
+    "border": var(--fdAvatar_Accent_Color_3_Border)
+  ),
+  "4": (
+    "background-color": var(--fdAvatar_Accent_Color_4),
+    "text-color": var(--fdAvatar_Accent_Color_4_Text),
+    "border": var(--fdAvatar_Accent_Color_4_Border)
+  ),
+  "5": (
+    "background-color": var(--fdAvatar_Accent_Color_5),
+    "text-color": var(--fdAvatar_Accent_Color_5_Text),
+    "border": var(--fdAvatar_Accent_Color_5_Border)
+  ),
+  "6": (
+    "background-color": var(--fdAvatar_Accent_Color_6),
+    "text-color": var(--fdAvatar_Accent_Color_6_Text),
+    "border": var(--fdAvatar_Accent_Color_6_Border)
+  ),
+  "7": (
+    "background-color": var(--fdAvatar_Accent_Color_7),
+    "text-color": var(--fdAvatar_Accent_Color_7_Text),
+    "border": var(--fdAvatar_Accent_Color_7_Border)
+  ),
+  "8": (
+    "background-color": var(--fdAvatar_Accent_Color_8),
+    "text-color": var(--fdAvatar_Accent_Color_8_Text),
+    "border": var(--fdAvatar_Accent_Color_8_Border)
+  ),
+  "9": (
+    "background-color": var(--fdAvatar_Accent_Color_9),
+    "text-color": var(--fdAvatar_Accent_Color_9_Text),
+    "border": var(--fdAvatar_Accent_Color_9_Border)
+  ),
+  "10": (
+    "background-color": var(--fdAvatar_Accent_Color_10),
+    "text-color": var(--fdAvatar_Accent_Color_10_Text),
+    "border": var(--fdAvatar_Accent_Color_10_Border)
+  )
+);
+
+$fd-avatar-sizes: (
+  "xs": (
+    "ratio": ($fd-avatar-const-ratio * 2),
+    "font-size": 1rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-s,
+    "offset": -0.125rem,
+    "beforeFontSize": 0.75rem,
+    "fontStretch": condensed
+  ),
+  "s": (
+    "ratio": ($fd-avatar-const-ratio * 3),
+    "font-size": 1.125rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-s,
+    "offset": -0.125rem,
+    "beforeFontSize": 0.75rem,
+    "fontStretch": condensed
+  ),
+  "m": (
+    "ratio": ($fd-avatar-const-ratio * 4),
+    "font-size": 1.5rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-s,
+    "offset": -0.125rem,
+    "beforeFontSize": 0.75rem,
+    "fontStretch": normal
+  ),
+  "l": (
+    "ratio": ($fd-avatar-const-ratio * 5),
+    "font-size": 2.25rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-l,
+    "offset": -0.1875rem,
+    "beforeFontSize": 0.875rem,
+    "fontStretch": normal
+  ),
+  "xl": (
+    "ratio": ($fd-avatar-const-ratio * 7),
+    "font-size": 3rem,
+    "zoomIconDimensions": $fd-avatar-zoom-icon-xl,
+    "offset": -0.25rem,
+    "beforeFontSize": 1rem,
+    "fontStretch": normal
+  )
+);
+
+$fd-avatar-group-item-spacing: (
+  "individual": (
+    "xs": ("margin-right": 0.0625rem),
+    "s": ("margin-right": 0.125rem),
+    "m": ("margin-right": 0.125rem),
+    "l": ("margin-right": 0.125rem),
+    "xl": ("margin-right": 0.25rem)
+  ),
+  "group": (
+    "xs": ("margin-right": -0.75rem),
+    "s": ("margin-right": -1.25rem),
+    "m": ("margin-right": -1.625rem),
+    "l": ("margin-right": -2rem),
+    "xl": ("margin-right": -2.75rem)
+  )
+);
+
+@mixin fd-avatar-set-size($size) {
+  width: $size;
+  min-width: $size;
+  max-width: $size;
+  height: $size;
+  min-height: $size;
+  max-height: $size;
+}
+
+@mixin fd-fiori-pseudo-focus($_offset: -0.0625rem) {
+  &:focus,
+  &.is-focus {
+    @include fd-internal-pseudo-element-focus($_offset) {
+      @content;
+    }
+  }
+}
+
+@mixin fd-avatar-group-item-focus($offset: 0, $radius: 0) {
+  @include fd-focus() {
+    outline: none;
+
+    .#{$fd-namespace}-avatar::after {
+      border-width: var(--sapContent_FocusWidth);
+      border-color: var(--sapContent_FocusColor);
+      border-style: var(--sapContent_FocusStyle);
+      border-radius: $radius;
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: $offset;
+      bottom: $offset;
+      left: $offset;
+      right: $offset;
+      @content;
+    }
+  }
+}

@@ -159,6 +159,173 @@ exports[`Storyshots Components/Avatar Accent Colors 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Avatar Accent Colors Shell Header Context 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <div
+    style="background-color: var(--sapShellColor); padding: 1rem;"
+  >
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-1 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-2 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-3 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-4 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-5 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-6 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-7 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-8 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-9 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+    
+    <span
+      aria-label="Avatar"
+      class="fd-avatar fd-avatar--shell fd-avatar--accent-color-10 fd-avatar--m"
+    >
+      
+        
+      <i
+        class="fd-avatar__icon sap-icon--money-bills"
+        role="presentation"
+      />
+      
+    
+    </span>
+    
+
+  </div>
+  
+
+</div>
+`;
+
 exports[`Storyshots Components/Avatar Background Image 1`] = `
 <div
   dir="ltr"

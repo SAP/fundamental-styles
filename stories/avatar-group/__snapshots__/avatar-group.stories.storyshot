@@ -699,10 +699,14 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+89181818181"
                 >
-                  +89181818181
+                  <span
+                    class="fd-link__content"
+                  >
+                    +89181818181
+                  </span>
                 </a>
                 
                         
@@ -722,10 +726,14 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+2828282828"
                 >
-                  +2828282828
+                  <span
+                    class="fd-link__content"
+                  >
+                    +2828282828
+                  </span>
                 </a>
                 
                         
@@ -745,10 +753,14 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="mailto:blabla@blabla"
                 >
-                  blabla@blabla
+                  <span
+                    class="fd-link__content"
+                  >
+                    blabla@blabla
+                  </span>
                 </a>
                 
                         
@@ -937,7 +949,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+89181818181"
                 >
                   +89181818181
@@ -960,7 +972,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+2828282828"
                 >
                   +2828282828
@@ -983,7 +995,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="mailto:blabla@blabla"
                 >
                   blabla@blabla
@@ -1164,7 +1176,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+89181818181"
                 >
                   +89181818181
@@ -1187,7 +1199,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+2828282828"
                 >
                   +2828282828
@@ -1210,7 +1222,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="mailto:blabla@blabla"
                 >
                   blabla@blabla
@@ -1395,7 +1407,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+89181818181"
                 >
                   +89181818181
@@ -1418,7 +1430,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="tel:+2828282828"
                 >
                   +2828282828
@@ -1441,7 +1453,7 @@ exports[`Storyshots Components/Avatar Group Individual Type 1`] = `
                 
                             
                 <a
-                  class="fd-link fd-input"
+                  class="fd-link"
                   href="mailto:blabla@blabla"
                 >
                   blabla@blabla
