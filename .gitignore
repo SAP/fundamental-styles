@@ -6,7 +6,6 @@ Thumbs.db
 .idea
 .vscode
 .tmp
-yarn.lock
 package-lock.json
 *.log
 *.tgz

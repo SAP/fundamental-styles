@@ -1,0 +1,50 @@
+name: PR Checks
+
+on:
+  pull_request:
+
+jobs:
+  one_run:
+    name: Cancel Previous Runs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.0
+        with:
+          access_token: ${{ secrets.GHACTIONS }}
+
+  commit_lint:
+    runs-on: ubuntu-latest
+    name: Lint commit message
+    steps:
+      - uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v3
+
+  install:
+    runs-on: ubuntu-latest
+    name: Dependency installation
+    needs: one_run
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/nodejs
+        name: Install dependencies
+
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint code
+    needs: install
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/nodejs
+      - run: yarn run lint
+
+  build:
+    runs-on: ubuntu-latest
+    name: Build and bundle size check
+    needs: install
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/nodejs
+      - uses: ./.github/actions/build
