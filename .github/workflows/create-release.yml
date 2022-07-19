@@ -70,6 +70,7 @@ jobs:
           tag: v${{ steps.bumpVersion.outputs.newVersion }}
           body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
   gh_pages:
+    name: Github Pages deploy
     runs-on: ubuntu-latest
     needs: run-release
     if: ${{ github.event_name != 'push' }}
