@@ -24,6 +24,7 @@
     "lint:fix": "yarn run sync-fiori-components fix && yarn run sync-fn-components fix && yarn run lint:style -- --fix && yarn run lint:js -- --fix",
     "lint:pre-commit": "echo running pre-commit lint... && yarn run lint && echo done!\n",
     "hotfix-release": "./scripts/hotfix-publish-release.sh",
+    "hotfix-release-latest": "./scripts/hotfix-publish-release.sh latest",
     "size": "bundlesize --config config/bundlesize.json",
     "start": "yarn run build:visual-stories && yarn run storybook:serve",
     "start:prod": "yarn run storybook:serve:prod",
