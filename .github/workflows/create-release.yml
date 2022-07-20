@@ -60,8 +60,6 @@ jobs:
       - name: Generate Release Body
         id: generate_body
         uses: ./.github/actions/generate-conventional-release-notes
-        with:
-          isPrerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
 
       - name: Create Release
         uses: ncipollo/release-action@v1.10.0

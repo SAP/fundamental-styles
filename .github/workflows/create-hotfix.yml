@@ -18,8 +18,8 @@ jobs:
           token: ${{ secrets.GHACTIONS }}
 
       - name: Using CI env flags
+        id: ciEnv
         run: .ci-env/flags.sh
-        shell: bash
 
       - name: Setup Node.js and Cache
         uses: ./.github/actions/nodejs
@@ -44,7 +44,7 @@ jobs:
         uses: ./.github/actions/npm-publish
         with:
           packagePaths: ".,dist-common-css,dist-fn,dist-fn-icons,dist-theming"
-          isHotfix: ${{ !env.latest }}
+          isHotfix: ${{ steps.ciEnv.outputs.isLatest }}
           token: ${{ secrets.NPM_TOKEN }}
 
       - uses: ./.github/actions/set-up-git
@@ -67,8 +67,6 @@ jobs:
       - name: Generate Release Body
         id: generate_body
         uses: ./.github/actions/generate-conventional-release-notes
-        with:
-          isPrerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
 
       - name: Create Release
         uses: ncipollo/release-action@v1.10.0
@@ -77,39 +75,10 @@ jobs:
           tag: v${{ steps.bumpVersion.outputs.newVersion }}
           body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
 
-  mainUpdate:
-    name: Update Version on main
-    if: ${{ env.latest }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          ref: main
-          fetch-depth: 0
-          token: ${{ secrets.GHACTIONS }}
-
-      - name: Setup Node.js and Cache
-        uses: ./.github/actions/nodejs
-
-      - name: Bump Version
-        id: bumpVersion
-        uses: ./.github/actions/bump-version
-        with:
-          isPrerelease: false
-          writeFile: true
-
-      - name: Update Changelog
-        run: npx conventional-changelog-cli -p angular -i CHANGELOG.md -s
-
-      - uses: ./.github/actions/set-up-git
-        name: Set up git user
+      - if: ${{ steps.ciEnv.outputs.isLatest }}
+        name: Update version on main
+        uses: ./.github/actions/update-version-on-main
         with:
           name: ${{ secrets.GH_NAME }}
           email: ${{ secrets.GH_EMAIL }}
-
-      - name: Commit Changes
-        run: |
-          git add .
-          git commit -m "chore(release): release v${{ steps.bumpVersion.outputs.newVersion }} [ci skip]" --no-verify
-          git push
+          token: ${{ secrets.GHACTIONS }}
