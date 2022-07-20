@@ -12,7 +12,7 @@ export const Sizes = () => `
     <label class="fd-form-label" for="aqwsde111">Default Size </label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde111" name="" value="1234568910 ">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde111" name="" value="1234568910 ">
     </div>
 </div>
 <br />
@@ -20,7 +20,7 @@ export const Sizes = () => `
     <label class="fd-form-label" for="aqwsde112">Compact Size </label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon fd-input-group__addon--compact">$</span>
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde112" name="" value="1234568910 ">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde112" name="" value="1234568910 ">
     </div>
 </div>
 `;
@@ -39,14 +39,14 @@ export const TextAddOn = () => `
     <label class="fd-form-label" for="aqwsde113">Left Aligned Text Add-on</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde113" name="" value="1234568910 ">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde113" name="" value="1234568910 ">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde114">Right Aligned Text Add-on</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde114" name="" value="1234568910 ">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde114" name="" value="1234568910 ">
         <span class="fd-input-group__addon">€</span>
     </div>
 </div>
@@ -63,7 +63,7 @@ export const TextAddOn = () => `
     <label class="fd-form-label" for="aqwsde116">Left and Right Aligned Text Add-ons</label>
     <div class="fd-input-group">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde116" name="" value="This is a test">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde116" name="" value="This is a test">
         <span class="fd-input-group__addon">.00</span>
     </div>
 </div>
@@ -85,14 +85,14 @@ export const InputWithIcons = () => `
         <span class="fd-input-group__addon">
             <span class="sap-icon--employee" role="presentation"></span>
         </span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde117" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde117" name="" value="1000000">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde118">Input with icon on the right</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde118" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde118" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
@@ -123,7 +123,7 @@ export const InputWithActions = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde120">Input with text add-on</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde120" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde120" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-input-group__button fd-button fd-button--transparent">
                 Button
@@ -135,7 +135,7 @@ export const InputWithActions = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde121">Input with icon action</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde121" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde121" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button">
             <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent" aria-label="Navigation">
                 <i class="sap-icon--navigation-down-arrow"></i>
@@ -147,7 +147,7 @@ export const InputWithActions = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde122">Compact Input with icon action</label>
     <div class="fd-input-group">
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde122" name="" value="1000000">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde122" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Navigation">
                 <i class="sap-icon--navigation-down-arrow"></i>
@@ -164,7 +164,7 @@ export const InputWithActions = () => `
                 Button
             </button>
         </span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde123" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde123" name="" value="1000000">
     </div>
 </div>
 `;
@@ -183,14 +183,14 @@ export const States = () => `
     <label class="fd-form-label" for="aqwsde124">Success</label>
     <div class="fd-input-group is-success">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde124" name="" value="1234568910">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde124" name="" value="1234568910">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde125">Error</label>
     <div class="fd-input-group is-error">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde125" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde125" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
@@ -201,14 +201,14 @@ export const States = () => `
     <label class="fd-form-label" for="aqwsde126">Warning (Alert)</label>
     <div class="fd-input-group is-warning">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde126" name="" value="1234568910">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde126" name="" value="1234568910">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Information compact</label>
     <div class="fd-input-group is-information">
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde127" name="" value="1000000">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
                 Button
@@ -221,7 +221,7 @@ export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Error compact</label>
     <div class="fd-input-group is-error">
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde127" name="" value="1000000">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
                 Button
@@ -234,7 +234,7 @@ export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Warning(Alert) compact</label>
     <div class="fd-input-group is-warning">
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde127" name="" value="1000000">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
                 Button
@@ -247,7 +247,7 @@ export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Success compact</label>
     <div class="fd-input-group is-success">
-        <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsde127" name="" value="1000000">
+        <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
                 Button
@@ -314,14 +314,14 @@ export const Focus = () => `
     <label class="fd-form-label" for="aqwsde133">Default</label>
     <div class="fd-input-group is-focus">
         <span class="fd-input-group__addon">$</span>
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde133" name="" value="1234568910">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde133" name="" value="1234568910">
     </div>
 </div>
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde134">Error State</label>
     <div class="fd-input-group is-error is-focus">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde134" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde134" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
@@ -331,7 +331,7 @@ export const Focus = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde134ff">Success State</label>
     <div class="fd-input-group is-success is-focus">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde134ff" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde134ff" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
@@ -341,7 +341,7 @@ export const Focus = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde134ss">Warning State</label>
     <div class="fd-input-group is-warning is-focus">
-        <input class="fd-input fd-input-group__input" type="text" id="aqwsde134ss" name="" value="1000000">
+        <input class="fd-input fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde134ss" name="" value="1000000">
         <span class="fd-input-group__addon">
             <span class="sap-icon--hide" role="presentation"></span>
         </span>
