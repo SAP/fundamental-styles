@@ -49,7 +49,12 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
 
     &:nth-last-child(1) {
-      @include fd-set-padding-right($fd-input-padding);
+      padding-right: $fd-input-padding;
+
+      @include fd-rtl() {
+        padding-left: $fd-input-padding;
+        padding-right: 0.25rem;
+      }
     }
   }
 

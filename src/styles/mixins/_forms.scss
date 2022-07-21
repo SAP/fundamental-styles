@@ -37,6 +37,12 @@ $fd-input-field-height--compact: 1.625rem;
     color: var(--sapField_PlaceholderTextColor);
   }
 
+  @include fd-rtl() {
+    &::placeholder {
+      text-indent: 0.125rem;
+    }
+  }
+
   &::selection {
     color: var(--sapContent_ContrastTextColor);
     background-color: var(--sapSelectedColor);
