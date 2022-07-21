@@ -813,7 +813,11 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -946,7 +950,11 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -1064,7 +1072,11 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -1181,7 +1193,11 @@ exports[`Storyshots Components/Grid List/Grid List Delete mode 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -2596,7 +2612,11 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -2715,7 +2735,11 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -2824,7 +2848,11 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -2914,7 +2942,11 @@ exports[`Storyshots Components/Grid List/Grid List Group 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         
@@ -4096,7 +4128,11 @@ exports[`Storyshots Components/Grid List/Grid List States 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    john_li@example.com
+                    <span
+                      class="fd-link__content"
+                    >
+                      john_li@example.com
+                    </span>
                   </a>
                   
                         

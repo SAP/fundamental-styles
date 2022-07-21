@@ -385,11 +385,15 @@ exports[`Storyshots Components/Table Advanced toolbar 1`] = `
             >
               
                         
-              <span
-                class="fd-list__title"
+              <div
+                class="fd-checkbox__label-container"
               >
-                All
-              </span>
+                <span
+                  class="fd-checkbox__text"
+                >
+                  All
+                </span>
+              </div>
               
                     
             </label>
@@ -419,11 +423,15 @@ exports[`Storyshots Components/Table Advanced toolbar 1`] = `
             >
               
                         
-              <span
-                class="fd-list__title"
+              <div
+                class="fd-checkbox__label-container"
               >
-                Name
-              </span>
+                <span
+                  class="fd-checkbox__text"
+                >
+                  Name
+                </span>
+              </div>
               
                     
             </label>
@@ -453,11 +461,15 @@ exports[`Storyshots Components/Table Advanced toolbar 1`] = `
             >
               
                         
-              <span
-                class="fd-list__title"
+              <div
+                class="fd-checkbox__label-container"
               >
-                Status
-              </span>
+                <span
+                  class="fd-checkbox__text"
+                >
+                  Status
+                </span>
+              </div>
               
                     
             </label>
@@ -487,11 +499,15 @@ exports[`Storyshots Components/Table Advanced toolbar 1`] = `
             >
               
                         
-              <span
-                class="fd-list__title"
+              <div
+                class="fd-checkbox__label-container"
               >
-                Price
-              </span>
+                <span
+                  class="fd-checkbox__text"
+                >
+                  Price
+                </span>
+              </div>
               
                     
             </label>
@@ -521,11 +537,15 @@ exports[`Storyshots Components/Table Advanced toolbar 1`] = `
             >
               
                         
-              <span
-                class="fd-list__title"
+              <div
+                class="fd-checkbox__label-container"
               >
-                Country
-              </span>
+                <span
+                  class="fd-checkbox__text"
+                >
+                  Country
+                </span>
+              </div>
               
                     
             </label>
@@ -944,7 +964,11 @@ exports[`Storyshots Components/Table Borderless (body) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -984,7 +1008,11 @@ exports[`Storyshots Components/Table Borderless (body) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1115,7 +1143,11 @@ exports[`Storyshots Components/Table Borderless 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1155,7 +1187,11 @@ exports[`Storyshots Components/Table Borderless 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1333,7 +1369,9 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1407,7 +1445,9 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1469,7 +1509,9 @@ exports[`Storyshots Components/Table Checkbox (compact) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1647,7 +1689,9 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1721,7 +1765,9 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1783,7 +1829,9 @@ exports[`Storyshots Components/Table Checkbox (condensed) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -1961,7 +2009,9 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -2035,7 +2085,9 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -2097,7 +2149,9 @@ exports[`Storyshots Components/Table Checkbox 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -2231,7 +2285,9 @@ exports[`Storyshots Components/Table Contextual menu 1`] = `
             <a
               class="fd-link"
             >
-              user.name@email.com
+              <span>
+                user.name@email.com
+              </span>
             </a>
           </td>
           
@@ -2404,7 +2460,9 @@ exports[`Storyshots Components/Table Contextual menu 1`] = `
             <a
               class="fd-link"
             >
-              user.name@email.com
+              <span>
+                user.name@email.com
+              </span>
             </a>
           </td>
           
@@ -3043,7 +3101,9 @@ exports[`Storyshots Components/Table Focusable cells 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3100,7 +3160,9 @@ exports[`Storyshots Components/Table Focusable cells 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3258,7 +3320,9 @@ exports[`Storyshots Components/Table Focusable rows 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3311,7 +3375,9 @@ exports[`Storyshots Components/Table Focusable rows 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3453,7 +3519,11 @@ exports[`Storyshots Components/Table Footer (compact) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3493,7 +3563,11 @@ exports[`Storyshots Components/Table Footer (compact) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3664,7 +3738,11 @@ exports[`Storyshots Components/Table Footer (condensed) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3704,7 +3782,11 @@ exports[`Storyshots Components/Table Footer (condensed) 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3875,7 +3957,11 @@ exports[`Storyshots Components/Table Footer 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3915,7 +4001,11 @@ exports[`Storyshots Components/Table Footer 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -3955,7 +4045,11 @@ exports[`Storyshots Components/Table Footer 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -5857,7 +5951,9 @@ exports[`Storyshots Components/Table Menu header 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -5890,7 +5986,9 @@ exports[`Storyshots Components/Table Menu header 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -5923,7 +6021,9 @@ exports[`Storyshots Components/Table Menu header 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -6662,7 +6762,9 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -6752,7 +6854,9 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -6840,7 +6944,9 @@ exports[`Storyshots Components/Table Navigation indicators 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span>
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -6985,7 +7091,11 @@ exports[`Storyshots Components/Table No outer Border 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -7025,7 +7135,11 @@ exports[`Storyshots Components/Table No outer Border 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -7065,7 +7179,11 @@ exports[`Storyshots Components/Table No outer Border 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -7588,7 +7706,11 @@ exports[`Storyshots Components/Table Primary 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -7651,7 +7773,11 @@ exports[`Storyshots Components/Table Primary 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -7712,7 +7838,11 @@ exports[`Storyshots Components/Table Primary 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -8859,7 +8989,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -8934,7 +9068,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -9001,7 +9139,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -9068,7 +9210,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -9135,7 +9281,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -9202,7 +9352,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -9269,7 +9423,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -9336,7 +9494,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         
@@ -9403,7 +9565,11 @@ exports[`Storyshots Components/Table Semantic 1`] = `
           <a
             class="fd-link"
           >
-            user.name@email.com
+            <span
+              class="fd-link__content"
+            >
+              user.name@email.com
+            </span>
           </a>
         </td>
         

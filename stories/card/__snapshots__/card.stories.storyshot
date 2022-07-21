@@ -1306,7 +1306,11 @@ exports[`Storyshots Components/Card Object card 1`] = `
                     href="#"
                     tabindex="0"
                   >
-                    Link Text
+                    <span
+                      class="fd-link__content"
+                    >
+                      Link Text
+                    </span>
                   </a>
                   
                             
@@ -1719,7 +1723,11 @@ exports[`Storyshots Components/Card Standard card 1`] = `
             class="fd-link fd-card__footer-link"
             href="#"
           >
-            Footer with a link
+            <span
+              class="fd-link__content"
+            >
+              Footer with a link
+            </span>
           </a>
           
             
@@ -1803,7 +1811,11 @@ exports[`Storyshots Components/Card Standard card 1`] = `
             class="fd-link fd-card__footer-link"
             href="#"
           >
-            Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+            <span
+              class="fd-link__content"
+            >
+              Footer with a long link Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+            </span>
           </a>
           
                 

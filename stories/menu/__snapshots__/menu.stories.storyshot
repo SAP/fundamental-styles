@@ -1027,6 +1027,7 @@ exports[`Storyshots Components/Menu List different states 1`] = `
             class="fd-menu__link is-disabled"
             href="#"
             role="menuitem"
+            tabindex="-1"
           >
             
                     

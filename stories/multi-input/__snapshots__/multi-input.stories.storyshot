@@ -2821,7 +2821,7 @@ exports[`Storyshots Patterns/Multi Input Mobile Mode 1`] = `
     
     
     <div
-      class="fd-dialog__content"
+      class="fd-dialog__content fd-dialog__content--mobile"
     >
       
         
@@ -3439,7 +3439,13 @@ exports[`Storyshots Patterns/Multi Input Read Only And Disabled 1`] = `
                             class="fd-link"
                           >
                             
-                                                    2 more
+                                                    
+                            <span
+                              class="fd-link__content"
+                            >
+                              2 more
+                            </span>
+                            
                                                 
                           </a>
                           
@@ -3742,7 +3748,13 @@ exports[`Storyshots Patterns/Multi Input Read Only And Disabled 1`] = `
                             tabindex="0"
                           >
                             
-                                                    2 more
+                                                    
+                            <span
+                              class="fd-link__content"
+                            >
+                              2 more
+                            </span>
+                            
                                                 
                           </a>
                           

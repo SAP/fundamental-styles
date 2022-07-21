@@ -102,7 +102,11 @@ exports[`Storyshots Components/Quick View Dialog 1`] = `
                       class="fd-link"
                       href="#"
                     >
-                      Inventarisation
+                      <span
+                        class="fd-link__content"
+                      >
+                        Inventarisation
+                      </span>
                     </a>
                     
                                 
@@ -408,10 +412,14 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
               
                         
               <a
-                class="fd-link fd-input"
+                class="fd-link"
                 href="tel:+1 605 555 5555"
               >
-                +1 605 555 5555
+                <span
+                  class="fd-link__content"
+                >
+                  +1 605 555 5555
+                </span>
               </a>
               
                     
@@ -507,10 +515,14 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
               
                         
               <a
-                class="fd-link fd-input"
+                class="fd-link"
                 href="tel:+1 605 555 5555"
               >
-                +1 605 555 5555
+                <span
+                  class="fd-link__content"
+                >
+                  +1 605 555 5555
+                </span>
               </a>
               
                     
@@ -530,10 +542,14 @@ exports[`Storyshots Components/Quick View Popover 1`] = `
               
                         
               <a
-                class="fd-link fd-input"
-                href="tel:+1 316 555 5555"
+                class="fd-link"
+                href="tel:+1 605 555 5555"
               >
-                +1 316 555 5555
+                <span
+                  class="fd-link__content"
+                >
+                  +1 605 555 5555
+                </span>
               </a>
               
                     
@@ -624,7 +640,11 @@ exports[`Storyshots Components/Quick View Without the header 1`] = `
                     class="fd-link"
                     href="#"
                   >
-                    Inventarisation
+                    <span
+                      class="fd-link__content"
+                    >
+                      Inventarisation
+                    </span>
                   </a>
                   
                             

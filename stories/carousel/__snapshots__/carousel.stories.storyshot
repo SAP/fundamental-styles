@@ -1002,7 +1002,7 @@ exports[`Storyshots Components/Carousel Items loading error 1`] = `
     <div
       class="fd-carousel fd-carousel--no-navigation"
       data-ride="carousel"
-      style="max-width: 20rem; max-height: 15.5rem;"
+      style="max-width: 20rem; max-height: 20rem;"
     >
       
         

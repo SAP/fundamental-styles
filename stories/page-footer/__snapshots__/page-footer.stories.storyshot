@@ -54,7 +54,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-19"
           title="Supported Browser"
         >
-          Supported Browser
+          <span
+            class="fd-link__content"
+          >
+            Supported Browser
+          </span>
         </a>
         
 			
@@ -64,7 +68,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-20"
           title="Security Disclosure"
         >
-          Security Disclosure
+          <span
+            class="fd-link__content"
+          >
+            Security Disclosure
+          </span>
         </a>
         
 			
@@ -74,7 +82,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-21"
           title="Privacy Statement"
         >
-          Privacy Statement
+          <span
+            class="fd-link__content"
+          >
+            Privacy Statement
+          </span>
         </a>
         
 			
@@ -84,7 +96,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-22"
           title="Cookie Statement"
         >
-          Cookie Statement
+          <span
+            class="fd-link__content"
+          >
+            Cookie Statement
+          </span>
         </a>
         
 			
@@ -94,7 +110,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-23"
           title="Participant Team"
         >
-          Participant Team
+          <span
+            class="fd-link__content"
+          >
+            Participant Team
+          </span>
         </a>
         
         
@@ -171,7 +191,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-24"
           title="Supported Browser"
         >
-          Supported Browser
+          <span
+            class="fd-link__content"
+          >
+            Supported Browser
+          </span>
         </a>
         
 			
@@ -181,7 +205,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-25"
           title="Security Disclosure"
         >
-          Security Disclosure
+          <span
+            class="fd-link__content"
+          >
+            Security Disclosure
+          </span>
         </a>
         
 			
@@ -191,7 +219,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-26"
           title="Privacy Statement"
         >
-          Privacy Statement
+          <span
+            class="fd-link__content"
+          >
+            Privacy Statement
+          </span>
         </a>
         
 			
@@ -201,7 +233,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-27"
           title="Cookie Statement"
         >
-          Cookie Statement
+          <span
+            class="fd-link__content"
+          >
+            Cookie Statement
+          </span>
         </a>
         
 			
@@ -211,7 +247,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-28"
           title="Participant Team"
         >
-          Participant Team
+          <span
+            class="fd-link__content"
+          >
+            Participant Team
+          </span>
         </a>
         
         
@@ -289,7 +329,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-29"
           title="Supported Browser"
         >
-          Supported Browser
+          <span
+            class="fd-link__content"
+          >
+            Supported Browser
+          </span>
         </a>
         
 			
@@ -299,7 +343,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-30"
           title="Security Disclosure"
         >
-          Security Disclosure
+          <span
+            class="fd-link__content"
+          >
+            Security Disclosure
+          </span>
         </a>
         
 			
@@ -309,7 +357,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-31"
           title="Privacy Statement"
         >
-          Privacy Statement
+          <span
+            class="fd-link__content"
+          >
+            Privacy Statement
+          </span>
         </a>
         
 			
@@ -319,7 +371,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-32"
           title="Cookie Statement"
         >
-          Cookie Statement
+          <span
+            class="fd-link__content"
+          >
+            Cookie Statement
+          </span>
         </a>
         
 			
@@ -329,7 +385,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-33"
           title="Participant Team"
         >
-          Participant Team
+          <span
+            class="fd-link__content"
+          >
+            Participant Team
+          </span>
         </a>
         
         
@@ -406,7 +466,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-34"
           title="Supported Browser"
         >
-          Supported Browser
+          <span
+            class="fd-link__content"
+          >
+            Supported Browser
+          </span>
         </a>
         
 			
@@ -416,7 +480,11 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-35"
           title="Security Disclosure"
         >
-          Security Disclosure
+          <span
+            class="fd-link__content"
+          >
+            Security Disclosure
+          </span>
         </a>
         
 			
@@ -426,7 +494,9 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-36"
           title="Privacy Statement"
         >
-          Privacy Statement
+          <span>
+            Privacy Statement
+          </span>
         </a>
         
 			
@@ -436,7 +506,9 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-37"
           title="Cookie Statement"
         >
-          Cookie Statement
+          <span>
+            Cookie Statement
+          </span>
         </a>
         
 			
@@ -446,7 +518,9 @@ exports[`Storyshots Layouts/Page Footer Footer With Diffrent Size 1`] = `
           id="fd-link-38"
           title="Participant Team"
         >
-          Participant Team
+          <span>
+            Participant Team
+          </span>
         </a>
         
         
@@ -519,12 +593,18 @@ exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
           tabindex="0"
         >
           
-			
+			    
           <span
             class="sap-icon--download sap-icon--s"
           />
           
-			 icon and link
+                
+          <span
+            class="fd-link__content"
+          >
+            icon and link
+          </span>
+          
 			
         </a>
         
@@ -544,15 +624,23 @@ exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
           tabindex="0"
         >
           
-			
-          <img
-            alt="page footer clickable image link"
-            class="fd-page-footer__row-image"
-            src="/assets/images/landscape/L1_Cover.jpg"
-            style="width:50px; height: 50px"
-          />
+                
+          <span
+            class="fd-link__content"
+          >
+            
+                    
+            <img
+              alt="page footer clickable image link"
+              class="fd-page-footer__row-image"
+              src="/assets/images/landscape/L1_Cover.jpg"
+              style="width:50px; height: 50px"
+            />
+            
+                    image link
+                
+          </span>
           
-			image link
 			
         </a>
         
@@ -564,15 +652,23 @@ exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
           tabindex="0"
         >
           
-			
-          <img
-            alt="page footer clickable image link"
-            class="fd-page-footer__row-image"
-            src="/assets/images/landscape/L2_Cover.jpg"
-            style="width:50px; height: 50px"
-          />
+                
+          <span
+            class="fd-link__content"
+          >
+            
+                    
+            <img
+              alt="page footer clickable image link"
+              class="fd-page-footer__row-image"
+              src="/assets/images/landscape/L2_Cover.jpg"
+              style="width:50px; height: 50px"
+            />
+            
+                    image link
+                
+          </span>
           
-			image link
 			
         </a>
         
@@ -583,7 +679,11 @@ exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
           id="fd-link-16"
           title="Privacy Statement"
         >
-          Privacy Statement
+          <span
+            class="fd-link__content"
+          >
+            Privacy Statement
+          </span>
         </a>
         
 			
@@ -593,7 +693,11 @@ exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
           id="fd-link-17"
           title="Cookie Statement"
         >
-          Cookie Statement
+          <span
+            class="fd-link__content"
+          >
+            Cookie Statement
+          </span>
         </a>
         
 			
@@ -603,7 +707,11 @@ exports[`Storyshots Layouts/Page Footer Image And Icon Link 1`] = `
           id="fd-link-18"
           title="Participant Team"
         >
-          Participant Team
+          <span
+            class="fd-link__content"
+          >
+            Participant Team
+          </span>
         </a>
         
 		
@@ -675,7 +783,11 @@ exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
           id="fd-link-6"
           title="Supported Browser"
         >
-          Supported Browser
+          <span
+            class="fd-link__content"
+          >
+            Supported Browser
+          </span>
         </a>
         
 			
@@ -685,7 +797,11 @@ exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
           id="fd-link-7"
           title="Security Disclosure"
         >
-          Security Disclosure
+          <span
+            class="fd-link__content"
+          >
+            Security Disclosure
+          </span>
         </a>
         
 		
@@ -703,7 +819,11 @@ exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
           id="fd-link-8"
           title="Supported Browser"
         >
-          Supported Browser
+          <span
+            class="fd-link__content"
+          >
+            Supported Browser
+          </span>
         </a>
         
 			
@@ -713,7 +833,11 @@ exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
           id="fd-link-9"
           title="Security Disclosure"
         >
-          Security Disclosure
+          <span
+            class="fd-link__content"
+          >
+            Security Disclosure
+          </span>
         </a>
         
 			
@@ -723,7 +847,11 @@ exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
           id="fd-link-10"
           title="Privacy Statement"
         >
-          Privacy Statement
+          <span
+            class="fd-link__content"
+          >
+            Privacy Statement
+          </span>
         </a>
         
 			
@@ -733,7 +861,11 @@ exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
           id="fd-link-11"
           title="Cookie Statement"
         >
-          Cookie Statement
+          <span
+            class="fd-link__content"
+          >
+            Cookie Statement
+          </span>
         </a>
         
 			
@@ -743,7 +875,11 @@ exports[`Storyshots Layouts/Page Footer Multi Line Link 1`] = `
           id="fd-link-12"
           title="Participant Team"
         >
-          Participant Team
+          <span
+            class="fd-link__content"
+          >
+            Participant Team
+          </span>
         </a>
         
 		
@@ -815,7 +951,11 @@ exports[`Storyshots Layouts/Page Footer Single Line Link 1`] = `
           id="fd-link-1"
           title="Supported Browser"
         >
-          Supported Browser
+          <span
+            class="fd-link__content"
+          >
+            Supported Browser
+          </span>
         </a>
         
 			
@@ -825,7 +965,11 @@ exports[`Storyshots Layouts/Page Footer Single Line Link 1`] = `
           id="fd-link-2"
           title="Security Disclosure"
         >
-          Security Disclosure
+          <span
+            class="fd-link__content"
+          >
+            Security Disclosure
+          </span>
         </a>
         
 			
@@ -835,7 +979,11 @@ exports[`Storyshots Layouts/Page Footer Single Line Link 1`] = `
           id="fd-link-3"
           title="Privacy Statement"
         >
-          Privacy Statement
+          <span
+            class="fd-link__content"
+          >
+            Privacy Statement
+          </span>
         </a>
         
 			
@@ -845,7 +993,11 @@ exports[`Storyshots Layouts/Page Footer Single Line Link 1`] = `
           id="fd-link-4"
           title="Cookie Statement"
         >
-          Cookie Statement
+          <span
+            class="fd-link__content"
+          >
+            Cookie Statement
+          </span>
         </a>
         
 			
@@ -855,7 +1007,11 @@ exports[`Storyshots Layouts/Page Footer Single Line Link 1`] = `
           id="fd-link-5"
           title="Participant Team"
         >
-          Participant Team
+          <span
+            class="fd-link__content"
+          >
+            Participant Team
+          </span>
         </a>
         
         

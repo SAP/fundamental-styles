@@ -55,11 +55,15 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Men
+                        <span
+                          class="fd-link__content"
+                        >
+                          Men
+                        </span>
                       </a>
                     </li>
                     
@@ -68,11 +72,15 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -82,11 +90,15 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header (mobile) 1`] = `
                     >
                       <a
                         aria-current="page"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Running Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Running Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -591,11 +603,15 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -604,11 +620,15 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -618,11 +638,15 @@ exports[`Storyshots Layouts/Dynamic Page Collapsed Header 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -912,11 +936,15 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -925,11 +953,15 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -939,11 +971,15 @@ exports[`Storyshots Layouts/Dynamic Page Desktop 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -1363,6 +1399,7 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
   <section
     aria-label="Dynamic Page Expandable Example"
     class="fd-dynamic-page fd-dynamic-page--xl"
+    xmlns="http://www.w3.org/1999/html"
   >
     
         
@@ -1401,11 +1438,15 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -1414,11 +1455,15 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -1428,11 +1473,15 @@ exports[`Storyshots Layouts/Dynamic Page Expanded Header 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -1730,10 +1779,14 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Men
+                        <span
+                          class="fd-link__content"
+                        >
+                          Men
+                        </span>
                       </a>
                     </li>
                     
@@ -1742,10 +1795,14 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -1755,10 +1812,14 @@ exports[`Storyshots Layouts/Dynamic Page Mobile 1`] = `
                     >
                       <a
                         aria-current="page"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Running Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Running Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -2303,11 +2364,15 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="-1"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -2316,11 +2381,15 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="-1"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -2330,11 +2399,15 @@ exports[`Storyshots Layouts/Dynamic Page Summary Line (mobile) 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="-1"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -2749,11 +2822,15 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Men
+                        <span
+                          class="fd-link__content"
+                        >
+                          Men
+                        </span>
                       </a>
                     </li>
                     
@@ -2762,11 +2839,15 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -2776,11 +2857,15 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                     >
                       <a
                         aria-current="page"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Running Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Running Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -2869,7 +2954,11 @@ exports[`Storyshots Layouts/Dynamic Page Tablet 1`] = `
                     href="#"
                     title="Balenciaga Triple S Trainers"
                   >
-                    Balenciaga Triple S Trainers 
+                    <span
+                      class="fd-link__content"
+                    >
+                      Balenciaga Triple S Trainers 
+                    </span>
                   </a>
                   
                             
@@ -3267,10 +3356,14 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Men
+                        <span
+                          class="fd-link__content"
+                        >
+                          Men
+                        </span>
                       </a>
                     </li>
                     
@@ -3279,10 +3372,14 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -3292,10 +3389,14 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                     >
                       <a
                         aria-current="page"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Running Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Running Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -3482,11 +3583,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Men
+                        <span
+                          class="fd-link__content"
+                        >
+                          Men
+                        </span>
                       </a>
                     </li>
                     
@@ -3495,11 +3600,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -3509,11 +3618,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets (mobile) 1`] = `
                     >
                       <a
                         aria-current="page"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                         tabindex="0"
                       >
-                        Running Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Running Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -4121,11 +4234,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -4134,11 +4251,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -4148,11 +4269,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -4316,11 +4441,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -4329,11 +4458,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -4343,11 +4476,15 @@ exports[`Storyshots Layouts/Dynamic Page With header facets 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -5278,11 +5415,15 @@ exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -5291,11 +5432,15 @@ exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -5305,11 +5450,15 @@ exports[`Storyshots Layouts/Dynamic Page Without pin 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 

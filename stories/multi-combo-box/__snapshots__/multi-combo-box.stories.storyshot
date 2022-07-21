@@ -2584,7 +2584,7 @@ exports[`Storyshots Patterns/Multi ComboBox Mobile Mode 1`] = `
     
     
     <div
-      class="fd-dialog__content"
+      class="fd-dialog__content fd-dialog__content--mobile"
     >
       
         

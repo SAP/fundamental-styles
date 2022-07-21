@@ -45,7 +45,11 @@ exports[`Storyshots Components/Text Expand 1`] = `
     class="fd-link fd-text__link--more"
     tabindex="0"
   >
-    More
+    <span
+      class="fd-link__content"
+    >
+      More
+    </span>
   </a>
   
 
@@ -74,7 +78,11 @@ exports[`Storyshots Components/Text Expand 1`] = `
     class="fd-link fd-text__link--more"
     tabindex="0"
   >
-    Less
+    <span
+      class="fd-link__content"
+    >
+      Less
+    </span>
   </a>
   
 

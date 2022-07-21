@@ -478,11 +478,15 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -491,11 +495,15 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -505,11 +513,15 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -673,11 +685,15 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Men
+                    <span
+                      class="fd-link__content"
+                    >
+                      Men
+                    </span>
                   </a>
                 </li>
                 
@@ -686,11 +702,15 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                   class="fd-breadcrumb__item"
                 >
                   <a
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -700,11 +720,15 @@ exports[`Storyshots Dev/Facets Facets in Object Page 1`] = `
                 >
                   <a
                     aria-current="page"
-                    class="fd-breadcrumb__link"
+                    class="fd-link"
                     href="#"
                     tabindex="0"
                   >
-                    Running Shoes
+                    <span
+                      class="fd-link__content"
+                    >
+                      Running Shoes
+                    </span>
                   </a>
                 </li>
                 
@@ -1651,10 +1675,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Men
+                        <span
+                          class="fd-link__content"
+                        >
+                          Men
+                        </span>
                       </a>
                     </li>
                     
@@ -1663,10 +1691,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -1676,10 +1708,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     >
                       <a
                         aria-current="page"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
                       >
-                        Running Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Running Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -1866,11 +1902,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
-                        tabindex="0"
                       >
-                        Men
+                        <span
+                          class="fd-link__content"
+                        >
+                          Men
+                        </span>
                       </a>
                     </li>
                     
@@ -1879,11 +1918,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                       class="fd-breadcrumb__item"
                     >
                       <a
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
-                        tabindex="0"
                       >
-                        Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -1893,11 +1935,14 @@ exports[`Storyshots Dev/Facets Facets in Object Page Mobile 1`] = `
                     >
                       <a
                         aria-current="page"
-                        class="fd-breadcrumb__link"
+                        class="fd-link"
                         href="#"
-                        tabindex="0"
                       >
-                        Running Shoes
+                        <span
+                          class="fd-link__content"
+                        >
+                          Running Shoes
+                        </span>
                       </a>
                     </li>
                     
@@ -2619,7 +2664,11 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
           href="#"
           tabindex="0"
         >
-          John Miller
+          <span
+            class="fd-link__content"
+          >
+            John Miller
+          </span>
         </a>
         
             
@@ -2650,7 +2699,11 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
           href="#"
           tabindex="0"
         >
-          +1 234 5678
+          <span
+            class="fd-link__content"
+          >
+            +1 234 5678
+          </span>
         </a>
         
             
@@ -2681,7 +2734,11 @@ exports[`Storyshots Dev/Facets Form Facet with Link 1`] = `
           href="#"
           tabindex="0"
         >
-          john.miller@company.com
+          <span
+            class="fd-link__content"
+          >
+            john.miller@company.com
+          </span>
         </a>
         
             

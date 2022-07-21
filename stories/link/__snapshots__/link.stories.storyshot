@@ -11,7 +11,11 @@ exports[`Storyshots Components/Link Types 1`] = `
     href="#"
     tabindex="0"
   >
-    Default link
+    <span
+      class="fd-link__content"
+    >
+      Default link
+    </span>
   </a>
   
 
@@ -24,7 +28,11 @@ exports[`Storyshots Components/Link Types 1`] = `
     href="#"
     tabindex="0"
   >
-    Emphasized link
+    <span
+      class="fd-link__content"
+    >
+      Emphasized link
+    </span>
   </a>
   
 
@@ -36,7 +44,11 @@ exports[`Storyshots Components/Link Types 1`] = `
     class="fd-link fd-link--subtle"
     href="#"
   >
-    Subtle link
+    <span
+      class="fd-link__content"
+    >
+      Subtle link
+    </span>
   </a>
   
 
@@ -48,7 +60,11 @@ exports[`Storyshots Components/Link Types 1`] = `
     aria-disabled="true"
     class="fd-link"
   >
-    Disabled link
+    <span
+      class="fd-link__content"
+    >
+      Disabled link
+    </span>
   </a>
   
 
@@ -65,7 +81,11 @@ exports[`Storyshots Components/Link Types 1`] = `
       class="fd-link fd-link--inverted"
       href="#"
     >
-      Inverted link
+      <span
+        class="fd-link__content"
+      >
+        Inverted link
+      </span>
     </a>
     
 
@@ -82,7 +102,13 @@ exports[`Storyshots Components/Link Types 1`] = `
     tabindex="0"
   >
     
-    Right icon link
+    
+    <span
+      class="fd-link__content"
+    >
+      Right icon link
+    </span>
+    
     
     <span
       class="sap-icon--slim-arrow-right sap-icon--s"
@@ -107,7 +133,13 @@ exports[`Storyshots Components/Link Types 1`] = `
       class="sap-icon--slim-arrow-left sap-icon--s"
     />
     
-    Left icon link
+    
+    <span
+      class="fd-link__content"
+    >
+      Left icon link
+    </span>
+    
 
   </a>
   
