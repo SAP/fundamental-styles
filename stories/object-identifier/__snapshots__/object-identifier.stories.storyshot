@@ -97,7 +97,13 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
         href="#"
       >
         
-            NoteBook Basic 15
+            
+        <span
+          class="fd-link__content"
+        >
+          NoteBook Basic 15
+        </span>
+        
         
       </a>
       
@@ -135,7 +141,13 @@ exports[`Storyshots Components/Object Identifier Descriptive 1`] = `
         href="#"
       >
         
-            NoteBook Basic 15
+            
+        <span
+          class="fd-link__content"
+        >
+          NoteBook Basic 15
+        </span>
+        
         
       </a>
       
@@ -177,7 +189,13 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
         href="#"
       >
         
-            NoteBook Basic 15
+            
+        <span
+          class="fd-link__content"
+        >
+          NoteBook Basic 15
+        </span>
+        
         
       </a>
       
@@ -206,7 +224,13 @@ exports[`Storyshots Components/Object Identifier Link 1`] = `
         href="#"
       >
         
-            NoteBook Basic 15
+            
+        <span
+          class="fd-link__content"
+        >
+          NoteBook Basic 15
+        </span>
+        
         
       </a>
       

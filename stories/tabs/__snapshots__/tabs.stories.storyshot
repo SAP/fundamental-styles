@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Tabs Counters 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Counters 1`] = `
 <div
   dir="ltr"
 >
@@ -175,7 +175,7 @@ exports[`Storyshots Components/Tabs Counters 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Default 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Default 1`] = `
 <div
   dir="ltr"
 >
@@ -329,7 +329,7 @@ exports[`Storyshots Components/Tabs Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Filter mode (compact) 1`] = `
 <div
   dir="ltr"
 >
@@ -597,7 +597,7 @@ exports[`Storyshots Components/Tabs Filter mode (compact) 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Filter mode 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Filter mode 1`] = `
 <div
   dir="ltr"
 >
@@ -865,7 +865,7 @@ exports[`Storyshots Components/Tabs Filter mode 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Icon (compact) 1`] = `
 <div
   dir="ltr"
 >
@@ -1055,7 +1055,7 @@ exports[`Storyshots Components/Tabs Icon (compact) 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Icon 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Icon 1`] = `
 <div
   dir="ltr"
 >
@@ -1245,7 +1245,7 @@ exports[`Storyshots Components/Tabs Icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Navigable 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Navigable 1`] = `
 <div
   dir="ltr"
 >
@@ -1395,7 +1395,7 @@ exports[`Storyshots Components/Tabs Navigable 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Process mode (compact) 1`] = `
 <div
   dir="ltr"
 >
@@ -1639,7 +1639,7 @@ exports[`Storyshots Components/Tabs Process mode (compact) 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Process mode 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Process mode 1`] = `
 <div
   dir="ltr"
 >
@@ -1883,7 +1883,7 @@ exports[`Storyshots Components/Tabs Process mode 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Semantic filter mode 1`] = `
 <div
   dir="ltr"
 >
@@ -2210,7 +2210,7 @@ exports[`Storyshots Components/Tabs Semantic filter mode 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Semantic inline 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Semantic inline 1`] = `
 <div
   dir="ltr"
 >
@@ -2479,7 +2479,7 @@ exports[`Storyshots Components/Tabs Semantic inline 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tabs Semantic mode 1`] = `
+exports[`Storyshots Deprecated/Components/Tabs Semantic mode 1`] = `
 <div
   dir="ltr"
 >

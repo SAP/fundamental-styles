@@ -320,41 +320,7 @@ exports[`Storyshots Patterns/Combobox Input As Form Item 1`] = `
                 <span
                   class="fd-list__title"
                 >
-                  Rockmelon
-                </span>
-                
-                        
-              </li>
-              
-                        
-              <li
-                class="fd-list__item"
-                role="option"
-                tabindex="0"
-              >
-                
-                            
-                <span
-                  class="fd-list__title"
-                >
                   Honeydew
-                </span>
-                
-                        
-              </li>
-              
-                        
-              <li
-                class="fd-list__item"
-                role="option"
-                tabindex="0"
-              >
-                
-                            
-                <span
-                  class="fd-list__title"
-                >
-                  Apple
                 </span>
                 
                         
@@ -709,41 +675,7 @@ exports[`Storyshots Patterns/Combobox Input Cozy And Compact 1`] = `
                 <span
                   class="fd-list__title"
                 >
-                  Rockmelon
-                </span>
-                
-                        
-              </li>
-              
-                        
-              <li
-                class="fd-list__item"
-                role="option"
-                tabindex="0"
-              >
-                
-                            
-                <span
-                  class="fd-list__title"
-                >
                   Honeydew
-                </span>
-                
-                        
-              </li>
-              
-                        
-              <li
-                class="fd-list__item"
-                role="option"
-                tabindex="0"
-              >
-                
-                            
-                <span
-                  class="fd-list__title"
-                >
-                  Apple
                 </span>
                 
                         
@@ -1305,7 +1237,7 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
     
     <section
       aria-labelledby="mobileDialogHeader"
-      class="fd-dialog__content"
+      class="fd-dialog__content fd-dialog__content--mobile"
       role="dialog"
     >
       
@@ -1547,7 +1479,7 @@ exports[`Storyshots Patterns/Combobox Input Mobile 1`] = `
             
         <ul
           aria-labelledby="vegMobileHeader"
-          class="fd-list fd-list--dropdown"
+          class="fd-list fd-list--dropdown fd-list--mobile"
           role="listbox"
         >
           

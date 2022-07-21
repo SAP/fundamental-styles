@@ -176,7 +176,11 @@ exports[`Storyshots Components/Message Box Responsive 1`] = `
             href="#"
             tabindex="0"
           >
-            Show more
+            <span
+              class="fd-link__content"
+            >
+              Show more
+            </span>
           </a>
           
             

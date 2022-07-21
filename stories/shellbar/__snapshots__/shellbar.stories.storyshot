@@ -1585,7 +1585,7 @@ exports[`Storyshots Components/Shellbar Product switch 1`] = `
     
     
     <div
-      class="fd-shellbar"
+      class="fd-shellbar fd-shellbar--responsive-paddings"
     >
       
         
@@ -1824,30 +1824,22 @@ exports[`Storyshots Components/Shellbar Product switch 1`] = `
             >
               
                         
-              <div
-                class="fd-popover__control"
+              <button
+                aria-controls="product-switch-body"
+                aria-expanded="true"
+                aria-haspopup="true"
+                aria-label="Image label"
+                class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control"
+                onclick="onPopoverClick('product-switch-body')"
               >
                 
                             
-                <button
-                  aria-controls="product-switch-body"
-                  aria-expanded="true"
-                  aria-haspopup="true"
-                  aria-label="Image label"
-                  class="fd-button fd-button--transparent fd-shellbar__button fd-popover__control fd-product-switch__control"
-                  onclick="onPopoverClick('product-switch-body')"
-                >
-                  
-                                
-                  <i
-                    class="sap-icon--grid"
-                  />
-                  
-                            
-                </button>
+                <i
+                  class="sap-icon--grid"
+                />
                 
                         
-              </div>
+              </button>
               
                         
               <div

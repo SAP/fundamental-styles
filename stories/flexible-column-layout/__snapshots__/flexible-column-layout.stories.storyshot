@@ -23,7 +23,7 @@ exports[`Storyshots Layouts/Flexible Column One Columns Layout 1`] = `
         
             
         <div
-          class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-9"
+          class="docs-layout-grid-bg--tall"
         />
         
         
@@ -60,7 +60,7 @@ exports[`Storyshots Layouts/Flexible Column One Columns Layout 1`] = `
         
             
         <div
-          class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-8"
+          class="docs-layout-grid-bg--tall"
         />
         
         
@@ -97,7 +97,7 @@ exports[`Storyshots Layouts/Flexible Column One Columns Layout 1`] = `
         
             
         <div
-          class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-7"
+          class="docs-layout-grid-bg--tall"
         />
         
         
@@ -129,7 +129,7 @@ exports[`Storyshots Layouts/Flexible Column Three Columns Layout 1`] = `
       
             
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-7"
+        class="docs-layout-grid-bg--tall"
       />
       
     
@@ -166,7 +166,7 @@ exports[`Storyshots Layouts/Flexible Column Three Columns Layout 1`] = `
       
             
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-8"
+        class="docs-layout-grid-bg--tall"
       />
       
     
@@ -203,7 +203,7 @@ exports[`Storyshots Layouts/Flexible Column Three Columns Layout 1`] = `
       
             
       <div
-        class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-9"
+        class="docs-layout-grid-bg--tall"
       />
       
     
@@ -237,7 +237,7 @@ exports[`Storyshots Layouts/Flexible Column Two Columns Layout 1`] = `
         
             
         <div
-          class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-9"
+          class="docs-layout-grid-bg--tall"
         />
         
         
@@ -274,7 +274,7 @@ exports[`Storyshots Layouts/Flexible Column Two Columns Layout 1`] = `
         
             
         <div
-          class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-8"
+          class="docs-layout-grid-bg--tall"
         />
         
         
@@ -311,7 +311,7 @@ exports[`Storyshots Layouts/Flexible Column Two Columns Layout 1`] = `
         
             
         <div
-          class="docs-layout-grid-bg docs-layout-grid-bg--tall docs-layout-grid-bg--color-7"
+          class="docs-layout-grid-bg--tall"
         />
         
         

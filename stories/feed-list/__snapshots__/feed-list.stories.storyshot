@@ -736,7 +736,11 @@ exports[`Storyshots Components/Feed List and Item Linked 1`] = `
               class="fd-link fd-link--emphasized"
               href="#"
             >
-              Joe Doe: 
+              <span
+                class="fd-link__content"
+              >
+                Joe Doe: 
+              </span>
             </a>
             
                 
@@ -1268,7 +1272,11 @@ exports[`Storyshots Components/Feed List and Item Show less 1`] = `
               class="fd-link fd-feed-list__link--more"
               tabindex="0"
             >
-              Less
+              <span
+                class="fd-link__content"
+              >
+                Less
+              </span>
             </a>
             
             
@@ -1360,7 +1368,11 @@ exports[`Storyshots Components/Feed List and Item Show more 1`] = `
               class="fd-link fd-feed-list__link--more"
               tabindex="0"
             >
-              More
+              <span
+                class="fd-link__content"
+              >
+                More
+              </span>
             </a>
             
             

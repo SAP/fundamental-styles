@@ -59,7 +59,11 @@ exports[`Storyshots Components/Message Page Error 1`] = `
               href="#"
               tabindex="0"
             >
-              Home Page
+              <span
+                class="fd-link__content"
+              >
+                Home Page
+              </span>
             </a>
             
                 

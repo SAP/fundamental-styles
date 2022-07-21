@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Side Navigation Complex (compact) 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Complex (compact) 1`] = `
 <div
   dir="ltr"
 >
@@ -431,7 +431,7 @@ exports[`Storyshots Components/Side Navigation Complex (compact) 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Complex 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Complex 1`] = `
 <div
   dir="ltr"
 >
@@ -862,7 +862,7 @@ exports[`Storyshots Components/Side Navigation Complex 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Condensed (compact) 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Condensed (compact) 1`] = `
 <div
   dir="ltr"
 >
@@ -1139,7 +1139,7 @@ exports[`Storyshots Components/Side Navigation Condensed (compact) 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Condensed 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Condensed 1`] = `
 <div
   dir="ltr"
 >
@@ -1416,7 +1416,7 @@ exports[`Storyshots Components/Side Navigation Condensed 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Default 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Default 1`] = `
 <div
   dir="ltr"
 >
@@ -1613,7 +1613,7 @@ exports[`Storyshots Components/Side Navigation Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Group 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Group 1`] = `
 <div
   dir="ltr"
 >
@@ -1948,7 +1948,7 @@ exports[`Storyshots Components/Side Navigation Group 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Icons 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Icons 1`] = `
 <div
   dir="ltr"
 >
@@ -2185,7 +2185,7 @@ exports[`Storyshots Components/Side Navigation Icons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Nested List Popover 1`] = `
 <div
   dir="ltr"
 >
@@ -2521,7 +2521,7 @@ exports[`Storyshots Components/Side Navigation Nested List Popover 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Nested List With Group Headers 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Nested List With Group Headers 1`] = `
 <div
   dir="ltr"
 >
@@ -3058,7 +3058,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers 1`
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Nested List With Group Headers Compact Mode 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Nested List With Group Headers Compact Mode 1`] = `
 <div
   dir="ltr"
 >
@@ -3595,7 +3595,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Group Headers Co
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Nested List With Icons Only In First Level 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Nested List With Icons Only In First Level 1`] = `
 <div
   dir="ltr"
 >
@@ -4114,7 +4114,7 @@ exports[`Storyshots Components/Side Navigation Nested List With Icons Only In Fi
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Nested List Without Icons 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Nested List Without Icons 1`] = `
 <div
   dir="ltr"
 >
@@ -4797,7 +4797,7 @@ exports[`Storyshots Components/Side Navigation Nested List Without Icons 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Side Navigation Nested List Without Links 1`] = `
+exports[`Storyshots Deprecated/Components/Side Navigation Nested List Without Links 1`] = `
 <div
   dir="ltr"
 >
