@@ -1,0 +1,12 @@
+name: Build prod
+description: Builds the prod version of the package
+
+runs:
+  using: composite
+  steps:
+    - name: Build prod
+      run: yarn run build:prod
+      shell: bash
+    - name: Size
+      run: yarn run size
+      shell: bash
