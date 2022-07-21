@@ -1,3 +1,12 @@
+## [0.24.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.24.2...v0.24.3-rc.1) (2022-07-21)
+
+
+### Bug Fixes
+
+* **ci:** fixed chromatic workflow ([#3745](https://github.com/SAP/fundamental-styles/issues/3745)) ([e666b78](https://github.com/SAP/fundamental-styles/commit/e666b78141e215c60fbc561285e1691a49b015e1))
+
+
+
 
 ### [0.24.2](https://github.com/SAP/fundamental-styles/compare/v0.24.2-rc.6...v0.24.2) (2022-07-18)
 
