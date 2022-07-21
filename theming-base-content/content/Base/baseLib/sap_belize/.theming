@@ -1,0 +1,85 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_belize",
+	"sLabel": "SAP Belize",
+	"sDescription": "The SAP Belize theme is a light theme, but has some dark contrast areas such as the footer bar and the notifications in the Fiori launchpad.\nThe SAP Belize theme is the default theme for Fiori 2. However it can still be used for Fiori 3.",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sVendor": "SAP",
+	"oExtends": "Base.baseLib.sap_base_fiori",
+	"aBundled": [
+		"sap_belize_plus"
+	],
+	"sTextDirections": "LTR,RTL",
+	"sFallbackThemeId": "sap_bluecrystal",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"mCssScopes": {
+		"css_variables": {
+			"sEmbeddingMethod": "APPEND",
+			"aScopes": [
+				{
+					"sLabel": "Contrast",
+					"sSelector": "sapContrast",
+					"sThemeIdSuffix": "Contrast",
+					"sThemability": "PUBLIC",
+					"aThemabilityFilter": [
+						"Color"
+					],
+					"sEmbeddedFile": "sap_belize_plus.css_variables",
+					"sEmbeddedCompareFile": "css_variables"
+				}
+			],
+			"sBaseFile": "css_variables"
+		}
+	},
+	"aTags": [
+		"Fiori_2",
+		"Fiori_3"
+	],
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "2016-01-01T00:00:00Z",
+	"aBadgeParameters": [
+		{
+			"Id": "sapBrandColor",
+			"CssValue": "#427cac",
+			"Label": "Brand Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapHighlightColor",
+			"CssValue": "#427cac",
+			"Label": "Highlight Color",
+			"Tags": "Quick,Base,Content,Color"
+		},
+		{
+			"Id": "sapBaseColor",
+			"CssValue": "#eff4f9",
+			"Label": "Base Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapShellColor",
+			"CssValue": "transparent",
+			"Label": "Shell Header Color",
+			"Tags": "Quick,Base,Shell,Color"
+		},
+		{
+			"Id": "sapBackgroundColor",
+			"CssValue": "#fafafa",
+			"Label": "Background Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapTextColor",
+			"CssValue": "#333",
+			"Label": "Text Color",
+			"Tags": "Quick,Base,Content,Color,Font"
+		},
+		{
+			"Id": "sapLinkColor",
+			"CssValue": "#0070b1",
+			"Label": "Link Color",
+			"Tags": "Quick,Base,Content,Color,Font,Link"
+		}
+	]
+}

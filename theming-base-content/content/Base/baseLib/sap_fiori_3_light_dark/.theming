@@ -1,0 +1,48 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_fiori_3_light_dark",
+	"sLabel": "SAP Quartz Light/Dark",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sVendor": "SAP",
+	"aBuildFiles": [
+		"css_variables"
+	],
+	"aFiles": [
+		"css_variables"
+	],
+	"sFallbackThemeId": "sap_fiori_3",
+	"sType": "SET",
+	"sThemability": "PRIVATE",
+	"mCssScopes": {
+		"css_variables": {
+			"sEmbeddingMethod": "MEDIA",
+			"aScopes": [
+				{
+					"sId": "dark",
+					"sSelector": "@media (prefers-color-scheme: dark)",
+					"sEmbeddedFile": "sap_fiori_3_dark.css_variables"
+				}
+			],
+			"sBaseFile": "sap_fiori_3.css_variables"
+		}
+	},
+	"aTags": [
+		"Fiori_3"
+	],
+	"sReleaseStage": "DEVELOPMENT",
+	"mSet": {
+		"aThemes": [
+			{
+				"sId": "sap_fiori_3",
+				"sContrast": "LOW",
+				"sColorScheme": "LIGHT",
+				"bDefault": true
+			},
+			{
+				"sId": "sap_fiori_3_dark",
+				"sContrast": "LOW",
+				"sColorScheme": "DARK"
+			}
+		]
+	}
+}

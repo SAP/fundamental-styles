@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.2
+ * Fundamental Library Styles v0.24.3
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -72,6 +72,21 @@
 .fd-input::placeholder {
   font-style: var(--fdPlaceholder_Font_Style);
   color: var(--sapField_PlaceholderTextColor);
+}
+[dir=rtl] .fd-input::-webkit-input-placeholder, .fd-input[dir=rtl]::-webkit-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input::-moz-placeholder, .fd-input[dir=rtl]::-moz-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input:-ms-input-placeholder, .fd-input[dir=rtl]:-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input::-ms-input-placeholder, .fd-input[dir=rtl]::-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input::placeholder, .fd-input[dir=rtl]::placeholder {
+  text-indent: 0.125rem;
 }
 .fd-input::-moz-selection {
   color: var(--sapContent_ContrastTextColor);

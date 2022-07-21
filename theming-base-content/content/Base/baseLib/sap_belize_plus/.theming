@@ -1,0 +1,81 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_belize_plus",
+	"sLabel": "SAP Belize Deep",
+	"sDescription": "The SAP Belize theme is a light theme, but has some dark contrast areas such as the footer bar and the notifications in the Fiori launchpad. SAP Belize Deep has more dominant contrast areas compared to SAP Belize.",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sVendor": "SAP",
+	"oExtends": "Base.baseLib.sap_belize",
+	"aBundled": [
+		"sap_belize"
+	],
+	"sTextDirections": "LTR,RTL",
+	"sFallbackThemeId": "sap_bluecrystal",
+	"sType": "STANDARD",
+	"sThemability": "PRIVATE",
+	"mCssScopes": {
+		"css_variables": {
+			"sEmbeddingMethod": "APPEND",
+			"aScopes": [
+				{
+					"sLabel": "Contrast",
+					"sSelector": "sapContrastPlus",
+					"sThemeIdSuffix": "Contrast",
+					"sThemability": "PUBLIC",
+					"aThemabilityFilter": [
+						"Color"
+					],
+					"sEmbeddedFile": "css_variables",
+					"sEmbeddedCompareFile": "sap_belize.css_variables"
+				}
+			],
+			"sBaseFile": "sap_belize.css_variables"
+		}
+	},
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "2016-01-01T00:00:00Z",
+	"aBadgeParameters": [
+		{
+			"Id": "sapBrandColor",
+			"CssValue": "#427cac",
+			"Label": "Brand Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapHighlightColor",
+			"CssValue": "#91c8f6",
+			"Label": "Highlight Color",
+			"Tags": "Quick,Base,Content,Color"
+		},
+		{
+			"Id": "sapBaseColor",
+			"CssValue": "#3f5161",
+			"Label": "Base Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapShellColor",
+			"CssValue": "transparent",
+			"Label": "Shell Header Color",
+			"Tags": "Quick,Base,Shell,Color"
+		},
+		{
+			"Id": "sapBackgroundColor",
+			"CssValue": "#3f5161",
+			"Label": "Background Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapTextColor",
+			"CssValue": "#fafafa",
+			"Label": "Text Color",
+			"Tags": "Quick,Base,Content,Color,Font"
+		},
+		{
+			"Id": "sapLinkColor",
+			"CssValue": "#7ed0ff",
+			"Label": "Link Color",
+			"Tags": "Quick,Base,Content,Color,Font,Link"
+		}
+	]
+}

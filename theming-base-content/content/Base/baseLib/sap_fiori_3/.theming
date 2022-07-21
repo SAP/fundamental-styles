@@ -1,0 +1,79 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_fiori_3",
+	"sLabel": "SAP Quartz Light",
+	"sDescription": "The SAP Quartz themes are recommended as basis for custom themes for Fiori 3.\nSAP Quartz Light provides a color scheme suitable for normal working conditions.",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sVendor": "SAP",
+	"oExtends": "Base.baseLib.sap_base_fiori",
+	"sTextDirections": "LTR,RTL",
+	"sFallbackThemeId": "sap_belize",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"aTags": [
+		"Fiori_3",
+		"LightColorScheme"
+	],
+	"mOverrides": {
+		"UI5.sap/ui/core": [
+			{
+				"(,1.65.0)": {
+					"sReleaseStage": "DEVELOPMENT"
+				}
+			}
+		],
+		"UR.baseLib": [
+			{
+				"(,10.30.7.312925.0]": {
+					"sReleaseStage": "DEVELOPMENT"
+				}
+			}
+		]
+	},
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "2019-01-01T00:00:00Z",
+	"aBadgeParameters": [
+		{
+			"Id": "sapBrandColor",
+			"CssValue": "#0a6ed1",
+			"Label": "Brand Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapHighlightColor",
+			"CssValue": "#0854a0",
+			"Label": "Highlight Color",
+			"Tags": "Quick,Base,Content,Color"
+		},
+		{
+			"Id": "sapBaseColor",
+			"CssValue": "#fff",
+			"Label": "Base Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapShellColor",
+			"CssValue": "#354a5f",
+			"Label": "Shell Header Color",
+			"Tags": "Quick,Base,Shell,Color"
+		},
+		{
+			"Id": "sapBackgroundColor",
+			"CssValue": "#f7f7f7",
+			"Label": "Background Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapTextColor",
+			"CssValue": "#32363a",
+			"Label": "Text Color",
+			"Tags": "Quick,Base,Content,Color,Font"
+		},
+		{
+			"Id": "sapLinkColor",
+			"CssValue": "#0a6ed1",
+			"Label": "Link Color",
+			"Tags": "Quick,Base,Content,Color,Font,Link"
+		}
+	]
+}

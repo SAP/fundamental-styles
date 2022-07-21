@@ -1,0 +1,37 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_horizon_set",
+	"sLabel": "SAP Horizon (Set)",
+	"sVendor": "SAP",
+	"aBuildFiles": [],
+	"aFiles": [],
+	"sType": "SET",
+	"sThemability": "PRIVATE",
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "20220419T00:00:00Z",
+	"mSet": {
+		"aThemes": [
+			{
+				"sId": "sap_horizon",
+				"sContrast": "LOW",
+				"sColorScheme": "LIGHT",
+				"bDefault": true
+			},
+			{
+				"sId": "sap_horizon_dark",
+				"sContrast": "LOW",
+				"sColorScheme": "DARK"
+			},
+			{
+				"sId": "sap_horizon_hcw",
+				"sContrast": "HIGH",
+				"sColorScheme": "LIGHT"
+			},
+			{
+				"sId": "sap_horizon_hcb",
+				"sContrast": "HIGH",
+				"sColorScheme": "DARK"
+			}
+		]
+	}
+}

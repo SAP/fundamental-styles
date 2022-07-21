@@ -1,0 +1,37 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_fiori_3_set",
+	"sLabel": "SAP Quartz (Set)",
+	"sVendor": "SAP",
+	"aBuildFiles": [],
+	"aFiles": [],
+	"sType": "SET",
+	"sThemability": "PRIVATE",
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "20220419T00:00:00Z",
+	"mSet": {
+		"aThemes": [
+			{
+				"sId": "sap_fiori_3",
+				"sContrast": "LOW",
+				"sColorScheme": "LIGHT",
+				"bDefault": true
+			},
+			{
+				"sId": "sap_fiori_3_dark",
+				"sContrast": "LOW",
+				"sColorScheme": "DARK"
+			},
+			{
+				"sId": "sap_fiori_3_hcw",
+				"sContrast": "HIGH",
+				"sColorScheme": "LIGHT"
+			},
+			{
+				"sId": "sap_fiori_3_hcb",
+				"sContrast": "HIGH",
+				"sColorScheme": "DARK"
+			}
+		]
+	}
+}

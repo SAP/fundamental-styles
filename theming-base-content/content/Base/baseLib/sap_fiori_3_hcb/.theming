@@ -1,0 +1,80 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_fiori_3_hcb",
+	"sLabel": "SAP High Contrast Black (SAP Quartz)",
+	"sDescription": "High Contrast themes provide high contrast ratio by default.",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sVendor": "SAP",
+	"oExtends": "Base.baseLib.sap_fiori_3",
+	"sTextDirections": "LTR,RTL",
+	"sFallbackThemeId": "sap_fiori_3",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"aTags": [
+		"Fiori_3",
+		"HighContrast",
+		"DarkColorScheme"
+	],
+	"mOverrides": {
+		"UI5.sap/ui/core": [
+			{
+				"[,1.69.0)": {
+					"sReleaseStage": "DEVELOPMENT"
+				}
+			}
+		],
+		"UR.baseLib": [
+			{
+				"[10.30.7.311165.0,10.30.7.325480.0)": {
+					"sReleaseStage": "DEVELOPMENT"
+				}
+			}
+		]
+	},
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "2021-08-26T00:00:00Z",
+	"aBadgeParameters": [
+		{
+			"Id": "sapBrandColor",
+			"CssValue": "#7a5100",
+			"Label": "Brand Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapHighlightColor",
+			"CssValue": "#7a5100",
+			"Label": "Highlight Color",
+			"Tags": "Quick,Base,Content,Color"
+		},
+		{
+			"Id": "sapBaseColor",
+			"CssValue": "#000",
+			"Label": "Base Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapShellColor",
+			"CssValue": "#000",
+			"Label": "Shell Header Color",
+			"Tags": "Quick,Base,Shell,Color"
+		},
+		{
+			"Id": "sapBackgroundColor",
+			"CssValue": "#000",
+			"Label": "Background Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapTextColor",
+			"CssValue": "#fff",
+			"Label": "Text Color",
+			"Tags": "Quick,Base,Content,Color,Font"
+		},
+		{
+			"Id": "sapLinkColor",
+			"CssValue": "#fff",
+			"Label": "Link Color",
+			"Tags": "Quick,Base,Content,Color,Font,Link"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"sEntity": "Theme",
+	"sId": "baseTheme",
+	"sLabel": "SAP Base Theme of the SAP Base Framework",
+	"sDescription": "The SAP Base Theme is the theme all other themes are derived from.",
+	"sVendor": "SAP",
+	"sType": "ABSTRACT",
+	"sThemability": "PRIVATE",
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"aBadgeParametersDef": [
+		"sapBrandColor",
+		"sapHighlightColor",
+		"sapBaseColor",
+		"sapShellColor",
+		"sapBackgroundColor",
+		"sapTextColor",
+		"sapLinkColor"
+	]
+}

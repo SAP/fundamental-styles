@@ -1,0 +1,7 @@
+{
+	"sEntity": "Library",
+	"sId": "baseLib",
+	"sLabel": "SAP Base Library of SAP Base Framework",
+	"sDescription": "SAP Base Library contains theming data shared by all HTML based SAP UI frameworks.",
+	"sVendor": "SAP"
+}

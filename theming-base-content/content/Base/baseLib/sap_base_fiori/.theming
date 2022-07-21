@@ -1,0 +1,14 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_base_fiori",
+	"sLabel": "SAP Base Theme for Fiori",
+	"sDescription": "The SAP Base Theme for Fiori is the theme all other Fiori themes are derived from.",
+	"sVendor": "SAP",
+	"oExtends": "Base.baseLib.baseTheme",
+	"sTextDirections": "LTR,RTL",
+	"sBuildOptions": "SKIP",
+	"sFallbackThemeId": "sap_belize",
+	"sType": "ABSTRACT",
+	"sThemability": "PUBLIC",
+	"sReleaseStage": "GENERAL_AVAILABILITY"
+}

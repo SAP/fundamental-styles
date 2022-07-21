@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.24.2
+ * Fundamental Library Styles v0.24.3
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -17214,6 +17214,21 @@
   font-style: var(--fdPlaceholder_Font_Style);
   color: var(--sapField_PlaceholderTextColor);
 }
+[dir=rtl] .fd-input::-webkit-input-placeholder, .fd-input[dir=rtl]::-webkit-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input::-moz-placeholder, .fd-input[dir=rtl]::-moz-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input:-ms-input-placeholder, .fd-input[dir=rtl]:-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input::-ms-input-placeholder, .fd-input[dir=rtl]::-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input::placeholder, .fd-input[dir=rtl]::placeholder {
+  text-indent: 0.125rem;
+}
 .fd-input::-moz-selection {
   color: var(--sapContent_ContrastTextColor);
   background-color: var(--sapSelectedColor);
@@ -17540,6 +17555,21 @@
 .fd-input-group::placeholder {
   font-style: var(--fdPlaceholder_Font_Style);
   color: var(--sapField_PlaceholderTextColor);
+}
+[dir=rtl] .fd-input-group::-webkit-input-placeholder, .fd-input-group[dir=rtl]::-webkit-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input-group::-moz-placeholder, .fd-input-group[dir=rtl]::-moz-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input-group:-ms-input-placeholder, .fd-input-group[dir=rtl]:-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input-group::-ms-input-placeholder, .fd-input-group[dir=rtl]::-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-input-group::placeholder, .fd-input-group[dir=rtl]::placeholder {
+  text-indent: 0.125rem;
 }
 .fd-input-group::-moz-selection {
   color: var(--sapContent_ContrastTextColor);
@@ -17880,8 +17910,8 @@
   padding-right: 0.625rem;
 }
 [dir=rtl] .fd-input-group .fd-input-group__input:nth-last-child(1), .fd-input-group .fd-input-group__input:nth-last-child(1)[dir=rtl] {
-  padding-right: 0;
   padding-left: 0.625rem;
+  padding-right: 0.25rem;
 }
 .fd-input-group--inline {
   display: -webkit-inline-box;
@@ -30680,6 +30710,21 @@ places the element far left of the screen. so it is not visible.
   font-style: var(--fdPlaceholder_Font_Style);
   color: var(--sapField_PlaceholderTextColor);
 }
+[dir=rtl] .fd-select__control::-webkit-input-placeholder, .fd-select__control[dir=rtl]::-webkit-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-select__control::-moz-placeholder, .fd-select__control[dir=rtl]::-moz-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-select__control:-ms-input-placeholder, .fd-select__control[dir=rtl]:-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-select__control::-ms-input-placeholder, .fd-select__control[dir=rtl]::-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-select__control::placeholder, .fd-select__control[dir=rtl]::placeholder {
+  text-indent: 0.125rem;
+}
 .fd-select__control::-moz-selection {
   color: var(--sapContent_ContrastTextColor);
   background-color: var(--sapSelectedColor);
@@ -34092,6 +34137,21 @@ places the element far left of the screen. so it is not visible.
   font-style: var(--fdPlaceholder_Font_Style);
   color: var(--sapField_PlaceholderTextColor);
 }
+[dir=rtl] .fd-step-input::-webkit-input-placeholder, .fd-step-input[dir=rtl]::-webkit-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-step-input::-moz-placeholder, .fd-step-input[dir=rtl]::-moz-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-step-input:-ms-input-placeholder, .fd-step-input[dir=rtl]:-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-step-input::-ms-input-placeholder, .fd-step-input[dir=rtl]::-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-step-input::placeholder, .fd-step-input[dir=rtl]::placeholder {
+  text-indent: 0.125rem;
+}
 .fd-step-input::-moz-selection {
   color: var(--sapContent_ContrastTextColor);
   background-color: var(--sapSelectedColor);
@@ -37002,6 +37062,21 @@ places the element far left of the screen. so it is not visible.
   font-style: var(--fdPlaceholder_Font_Style);
   color: var(--sapField_PlaceholderTextColor);
 }
+[dir=rtl] .fd-textarea::-webkit-input-placeholder, .fd-textarea[dir=rtl]::-webkit-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-textarea::-moz-placeholder, .fd-textarea[dir=rtl]::-moz-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-textarea:-ms-input-placeholder, .fd-textarea[dir=rtl]:-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-textarea::-ms-input-placeholder, .fd-textarea[dir=rtl]::-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-textarea::placeholder, .fd-textarea[dir=rtl]::placeholder {
+  text-indent: 0.125rem;
+}
 .fd-textarea::-moz-selection {
   color: var(--sapContent_ContrastTextColor);
   background-color: var(--sapSelectedColor);
@@ -39121,6 +39196,21 @@ places the element far left of the screen. so it is not visible.
 .fd-tokenizer::placeholder {
   font-style: var(--fdPlaceholder_Font_Style);
   color: var(--sapField_PlaceholderTextColor);
+}
+[dir=rtl] .fd-tokenizer::-webkit-input-placeholder, .fd-tokenizer[dir=rtl]::-webkit-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-tokenizer::-moz-placeholder, .fd-tokenizer[dir=rtl]::-moz-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-tokenizer:-ms-input-placeholder, .fd-tokenizer[dir=rtl]:-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-tokenizer::-ms-input-placeholder, .fd-tokenizer[dir=rtl]::-ms-input-placeholder {
+  text-indent: 0.125rem;
+}
+[dir=rtl] .fd-tokenizer::placeholder, .fd-tokenizer[dir=rtl]::placeholder {
+  text-indent: 0.125rem;
 }
 .fd-tokenizer::-moz-selection {
   color: var(--sapContent_ContrastTextColor);

@@ -1,0 +1,63 @@
+{
+	"sEntity": "Theme",
+	"sId": "sap_horizon",
+	"sLabel": "SAP Morning Horizon",
+	"sDescription": "The SAP Horizon themes are recommended as basis for custom themes for Horizon.\nSAP Morning Horizon provides a color scheme suitable for normal working conditions.",
+	"sHelpLink": "https://experience.sap.com/fiori-design-web/theming",
+	"sVendor": "SAP",
+	"oExtends": "Base.baseLib.baseTheme",
+	"sTextDirections": "LTR,RTL",
+	"sFallbackThemeId": "sap_fiori_3",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"aTags": [
+		"Fiori_3",
+		"LightColorScheme"
+	],
+	"sReleaseStage": "GENERAL_AVAILABILITY",
+	"sReleaseDate": "2022-04-19T00:00:00Z",
+	"aBadgeParameters": [
+		{
+			"Id": "sapBrandColor",
+			"CssValue": "#0070f2",
+			"Label": "Brand Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapHighlightColor",
+			"CssValue": "#0070f2",
+			"Label": "Highlight Color",
+			"Tags": "Quick,Base,Content,Color"
+		},
+		{
+			"Id": "sapBaseColor",
+			"CssValue": "#fff",
+			"Label": "Base Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapShellColor",
+			"CssValue": "#fff",
+			"Label": "Shell Header Color",
+			"Tags": "Quick,Base,Shell,Color"
+		},
+		{
+			"Id": "sapBackgroundColor",
+			"CssValue": "#f5f6f7",
+			"Label": "Background Color",
+			"Tags": "Quick,Base,Color"
+		},
+		{
+			"Id": "sapTextColor",
+			"CssValue": "#1d2d3e",
+			"Label": "Text Color",
+			"Tags": "Quick,Base,Content,Color,Font"
+		},
+		{
+			"Id": "sapLinkColor",
+			"CssValue": "#0070f2",
+			"Label": "Link Color",
+			"Tags": "Quick,Base,Content,Color,Font,Link"
+		}
+	]
+}
