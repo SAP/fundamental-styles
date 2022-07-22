@@ -9,7 +9,6 @@
   },
   "packageManager": "yarn@1.22.19",
   "scripts": {
-    "preinstall": "npx only-allow yarn",
     "build": "yarn run style:remove && yarn run build:default && yarn run build:fn && yarn run build:theming-preview && yarn run build:fn-icons && yarn run build:common-css && yarn run sync-versions",
     "build:default": "yarn run style:compile && yarn run style:postCSS && yarn run style:assets",
     "build:fn": "yarn run style-fn:compile && yarn run style-fn:postCSS && node ./scripts/copy-fn-readme-and-package.js",
