@@ -1,3 +1,12 @@
+## [0.24.4-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.24.3...v0.24.4-rc.0) (2022-07-22)
+
+
+### Bug Fixes
+
+* removed preinstall ([#3749](https://github.com/SAP/fundamental-styles/issues/3749)) ([a1fba24](https://github.com/SAP/fundamental-styles/commit/a1fba242d88f3211b4fc84c7a09c373d92ae62fc))
+
+
+
 ## [0.24.3](https://github.com/SAP/fundamental-styles/compare/v0.24.3-rc.4...v0.24.3) (2022-07-21)
 
 
