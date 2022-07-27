@@ -382,7 +382,7 @@ $inverted-color-accents: (
         font-size: $fd-object-status-icon-text-font-size-large-inverted;
 
         // ICON ONLY MODE
-        @include fd-empty() {
+        @include fd-only-child() {
           height: $fd-object-status-min-height-large-inverted-empty;
           min-width: $fd-object-status-min-width-large-inverted-empty;
           padding: $fd-object-status-padding-large-inverted-empty;
