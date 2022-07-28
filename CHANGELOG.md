@@ -1,3 +1,12 @@
+## [0.24.5-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.24.4...v0.24.5-rc.0) (2022-07-28)
+
+
+### Bug Fixes
+
+* **styles:** fd-emty was used instead fd-only-child ([#3758](https://github.com/SAP/fundamental-styles/issues/3758)) ([1c623a6](https://github.com/SAP/fundamental-styles/commit/1c623a658255daf005f4a566ca254c07a8e6d457))
+
+
+
 ## [0.24.4](https://github.com/SAP/fundamental-styles/compare/v0.24.4-rc.0...v0.24.4) (2022-07-23)
 
 
