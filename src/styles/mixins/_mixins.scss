@@ -282,6 +282,7 @@
 }
 
 @mixin fd-link() {
+  cursor: pointer;
   color: var(--sapLinkColor);
   text-shadow: var(--sapContent_TextShadow);
   display: var(--fdLink_Display, inline-block);
