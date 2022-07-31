@@ -75,7 +75,7 @@
     "@commitlint/config-conventional": "^17.0.0",
     "@commitlint/travis-cli": "^16.0.0",
     "@jsdevtools/npm-publish": "^1.4.3",
-    "@sap-theming/theming-base-content": "11.1.40",
+    "@sap-theming/theming-base-content": "11.1.41",
     "@storybook/addon-a11y": "6.5.9",
     "@storybook/addon-actions": "6.5.9",
     "@storybook/addon-controls": "6.5.9",
