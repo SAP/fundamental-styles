@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Skeleton Default 1`] = `
+<div
+  dir="ltr"
+>
+  <h3>
+    Default skeleton
+  </h3>
+  
+
+
+  <div
+    class="fd-skeleton"
+    style="width: 100px; height: 50px"
+  />
+  
+
+
+  <h3>
+    Circle skeleton
+  </h3>
+  
+
+
+  <div
+    class="fd-skeleton fd-skeleton--circle"
+    style="width: 50px; height: 50px"
+  />
+  
+
+
+  <h3>
+    Wrapper skeleton
+  </h3>
+  
+
+
+  <h4>
+    Skeleton takes the same size & shape as the element.
+  </h4>
+  
+
+
+  <button
+    class="fd-button fd-button--primary"
+  >
+    Button
+  </button>
+  
+
+
+  <button
+    class="fd-button fd-button--primary fd-skeleton"
+    tabindex="-1"
+  >
+    Button
+  </button>
+  
+
+
+  <p
+    class="fd-text"
+  >
+    Some text...
+  </p>
+  
+
+
+  <p
+    class="fd-text fd-skeleton"
+  >
+    Some text...
+  </p>
+  
+
+
+  <h3>
+    Animated skeleton
+  </h3>
+  
+
+
+  <div
+    class="fd-skeleton fd-skeleton--animated"
+    style="width: 100px; height: 50px"
+  />
+  
+
+
+  <br />
+  
+
+
+  <div
+    class="fd-skeleton fd-skeleton--circle fd-skeleton--animated"
+    style="width: 50px; height: 50px"
+  />
+  
+
+
+  <br />
+  
+
+
+  <p
+    class="fd-skeleton fd-skeleton--text fd-skeleton--animated"
+  />
+  
+
+
+</div>
+`;
