@@ -45,19 +45,16 @@ $groupGutter: 1rem;
       }
     }
   }
-
-  .#{$gridContainer}.#{$blockContainer}--vertical .#{$gridRow}:not(:first-child) {
-    .#{$colSelector},
-    .#{$colSelector}--12 {
-      .#{$fd-namespace}-form-label {
-        margin-top: 0.625rem;
-      }
-    }
-  }
 }
 
 .#{$gridContainer}.#{$blockContainer} {
   padding: $groupGutter;
+
+  &--vertical {
+    .#{$gridRow}:not(:first-child) {
+      margin-top: 0.625rem;
+    }
+  }
 
   .#{$gridRow} {
     align-items: center;
@@ -65,14 +62,6 @@ $groupGutter: 1rem;
 
     &--top {
       align-items: start;
-    }
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
     }
 
     .#{$gridCol} {
@@ -114,6 +103,10 @@ $groupGutter: 1rem;
 
 @media (min-width: 0) {
   @include fd-form-col-paddings('fd-col');
+
+  .#{$gridRow} {
+    margin-bottom: 0.625rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -121,7 +114,7 @@ $groupGutter: 1rem;
     padding: $groupGutter;
 
     .#{$gridRow} {
-      margin: 0 -#{$gutter} 0.625rem;
+      margin: 0 -#{$gutter};
       min-width: calc(100% + #{$gutter} * 2);
 
       .#{$gridCol} {
