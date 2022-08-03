@@ -89,10 +89,6 @@ $groupGutter: 1rem;
 
         white-space: initial;
       }
-
-      &__form-group {
-        padding: $groupGutter;
-      }
     }
 
     .#{$gridRow}__form-item {
@@ -121,10 +117,6 @@ $groupGutter: 1rem;
 
       .#{$gridCol} {
         padding: 0 $gutter;
-
-        &__form-group {
-          padding: $groupGutter;
-        }
       }
     }
   }
