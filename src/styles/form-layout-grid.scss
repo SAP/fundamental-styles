@@ -104,8 +104,10 @@ $groupGutter: 1rem;
 @media (min-width: 0) {
   @include fd-form-col-paddings('fd-col');
 
-  .#{$gridRow} {
-    margin-bottom: 0.625rem;
+  .#{$gridContainer}.#{$blockContainer} {
+    .#{$gridRow} {
+      margin-bottom: 0.625rem;
+    }
   }
 }
 
