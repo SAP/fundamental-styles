@@ -72,7 +72,7 @@ export const CheckboxGroups = () => `
     <fieldset class="fd-fieldset">
         <legend class="fd-fieldset__legend">Checkboxes inline</legend>
         <div class="fd-form-group fd-form-group--inline">
-            <div class="fd-form-group__item fd-form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
                 <label class="fd-checkbox__label" for="Ai4ez617">
                     <span class="fd-checkbox__text">
@@ -80,7 +80,7 @@ export const CheckboxGroups = () => `
                     </span>
                 </label>
             </div>
-            <div class="fd-form-group__item fd-form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez618">
                 <label class="fd-checkbox__label" for="Ai4ez618">
                     <span class="fd-checkbox__text">
@@ -88,7 +88,7 @@ export const CheckboxGroups = () => `
                     </span>
                 </label>
             </div>
-            <div class="fd-form-group__item fd-form-item">
+            <div class="fd-form-item">
                 <input type="checkbox" class="fd-checkbox" id="Ai4ez619">
                 <label class="fd-checkbox__label" for="Ai4ez619">
                     <span class="fd-checkbox__text">
