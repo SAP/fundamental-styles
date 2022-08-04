@@ -28,8 +28,8 @@ When working with form groups, it's always best to use the recommended number of
     }
 };
 
-export const SSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:600px">
-    <div class="fd-row">
+export const SSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group" style="max-width:600px">
+    <div class="fd-row fd-form-item">
         <div class="fd-col">
                 <label class="fd-form-label" for="input-1-name">Name:</label>
         </div>
@@ -37,7 +37,7 @@ export const SSize = () => `<div class="fd-container fd-form-layout-grid-contain
             <input class="fd-input" type="text" id="input-1-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
     </div>
-    <div class="fd-row">
+    <div class="fd-row fd-form-item">
         <div class="fd-col">
                 <label class="fd-form-label fd-form-label--required" for="input-1-street">Street/No.: </label>
         </div>
@@ -48,7 +48,7 @@ export const SSize = () => `<div class="fd-container fd-form-layout-grid-contain
             <input class="fd-input" type="text" id="input-1-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
         </div>
     </div>
-    <div class="fd-row">
+    <div class="fd-row fd-form-item">
         <div class="fd-col">
                 <label class="fd-form-label fd-form-label--required" for="input-1-zip">ZIP Code/City: </label>
         </div>
@@ -59,7 +59,7 @@ export const SSize = () => `<div class="fd-container fd-form-layout-grid-contain
             <input class="fd-input" type="text" id="input-1-city" placeholder="Enter City" aria-label="City" value="Downtown">
         </div>
     </div>
-    <div class="fd-row">
+    <div class="fd-row fd-form-item">
         <div class="fd-col">
                 <label class="fd-form-label" for="input-1-country">Country:</label>
         </div>
@@ -108,8 +108,8 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
-  <div class="fd-row">
+export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-2-name">Name:</label>
     </div>
@@ -118,7 +118,7 @@ export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
     </div>
@@ -134,7 +134,7 @@ export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
     </div>
@@ -150,7 +150,7 @@ export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2  fd-col-lg--4">
       <label class="fd-form-label" for="input-2-country">Country:</label>
     </div>
@@ -201,8 +201,8 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
-  <div class="fd-row">
+export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label" for="input-3-name">Name:</label>
     </div>
@@ -211,7 +211,7 @@ export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-3-street">Street/No.: </label>
     </div>
@@ -227,7 +227,7 @@ export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-3-zip">ZIP Code/City: </label>
     </div>
@@ -243,7 +243,7 @@ export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4  fd-col-lg--4">
       <label class="fd-form-label" for="input-3-country">Country:</label>
     </div>
@@ -295,8 +295,8 @@ Empty grid columns | 1 | There is one empty space on the right of the field.
 };
 
 
-export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
-  <div class="fd-row">
+export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label" for="input-4-name">Name:</label>
     </div>
@@ -305,7 +305,7 @@ export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-4-street">Street/No.: </label>
     </div>
@@ -321,7 +321,7 @@ export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-4-zip">ZIP Code/City: </label>
     </div>
@@ -337,7 +337,7 @@ export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--3  fd-col-lg--4">
       <label class="fd-form-label" for="input-4-country">Country:</label>
     </div>
@@ -387,8 +387,8 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
     }
 };
 
-export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1024px">
-  <div class="fd-row">
+export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label" for="input-5-name">Name:</label>
     </div>
@@ -397,7 +397,7 @@ export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-5-street">Street/No.: </label>
     </div>
@@ -413,7 +413,7 @@ export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-5-zip">ZIP Code/City: </label>
     </div>
@@ -429,7 +429,7 @@ export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4 fd-col-lg--3">
       <label class="fd-form-label" for="input-5-country">Country:</label>
     </div>
@@ -480,8 +480,8 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
-  <div class="fd-row">
+export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-6-name">Name:</label>
     </div>
@@ -490,7 +490,7 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-6-street">Street/No.: </label>
     </div>
@@ -506,7 +506,7 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label fd-form-label--required" for="input-6-zip">ZIP Code/City: </label>
     </div>
@@ -522,7 +522,7 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-6-country">Country:</label>
     </div>
@@ -573,8 +573,8 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
-  <div class="fd-row">
+export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-7-name">Name:</label>
     </div>
@@ -583,7 +583,7 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-7-street">Street/No.: </label>
     </div>
@@ -599,7 +599,7 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-7-zip">ZIP Code/City: </label>
     </div>
@@ -615,7 +615,7 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-7-country">Country:</label>
     </div>
@@ -667,8 +667,8 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
 
 export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
   <div class="fd-row">
-    <div class="fd-col fd-col-lg--6 fd-col--wrap">
-      <div class="fd-row">
+    <div class="fd-col fd-col-lg--6 fd-col--wrap fd-form-group">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-7-name">Name:</label>
         </div>
@@ -676,7 +676,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
           <input class="fd-input" type="text" id="input-7-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-7-street">Street/No.: </label>
         </div>
@@ -692,7 +692,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-7-zip">ZIP Code/City: </label>
         </div>
@@ -708,7 +708,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-7-country">Country:</label>
         </div>
@@ -735,8 +735,8 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
       </div>
     </div>
 
-    <div class="fd-col fd-col-lg--6 fd-col--wrap">
-      <div class="fd-row">
+    <div class="fd-col fd-col-lg--6 fd-col--wrap fd-form-group">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-8-name">Name:</label>
         </div>
@@ -744,7 +744,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
           <input class="fd-input" type="text" id="input-8-name" placeholder="Enter First and Last Name" value="Amelia Perry">
         </div>
       </div>
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-8-street">Street/No.: </label>
         </div>
@@ -760,7 +760,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label fd-form-label--required" for="input-8-zip">ZIP Code/City: </label>
         </div>
@@ -776,7 +776,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--12">
           <label class="fd-form-label" for="input-8-country">Country:</label>
         </div>
@@ -830,8 +830,8 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row">
+export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label" for="input-9-name">Name:</label>
     </div>
@@ -840,7 +840,7 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label fd-form-label--required" for="input-9-street">Street/No.: </label>
     </div>
@@ -856,7 +856,7 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label fd-form-label--required" for="input-9-zip">ZIP Code/City: </label>
     </div>
@@ -872,7 +872,7 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label" for="input-9-country">Country:</label>
     </div>
@@ -924,8 +924,8 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 };
 
 
-export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row">
+export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label" for="input-10-name">Name:</label>
     </div>
@@ -934,7 +934,7 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label fd-form-label--required" for="input-10-street">Street/No.: </label>
     </div>
@@ -950,7 +950,7 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label fd-form-label--required" for="input-10-zip">ZIP Code/City: </label>
     </div>
@@ -966,7 +966,7 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
     </div>
   </div>
 
-  <div class="fd-row">
+  <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label" for="input-10-country">Country:</label>
     </div>
@@ -1021,8 +1021,8 @@ Empty grid columns | 4 | There are four empty spaces on the right of the fields.
 
 export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
-    <div class="fd-col fd-col-xl--6 fd-col--wrap">
-      <div class="fd-row">
+    <div class="fd-col fd-col-xl--6 fd-col--wrap fd-form-group">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-11-name">Name:</label>
         </div>
@@ -1031,7 +1031,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-11-street">Street/No.: </label>
         </div>
@@ -1047,7 +1047,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-11-zip">ZIP Code/City: </label>
         </div>
@@ -1063,7 +1063,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-11-country">Country:</label>
         </div>
@@ -1089,8 +1089,8 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
       </div>
     </div>
-    <div class="fd-col fd-col-xl--6 fd-col--wrap">
-      <div class="fd-row">
+    <div class="fd-col fd-col-xl--6 fd-col--wrap fd-form-group">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-11a-name">Name:</label>
         </div>
@@ -1099,7 +1099,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-11a-street">Street/No.: </label>
         </div>
@@ -1115,7 +1115,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label fd-form-label--required" for="input-11a-zip">ZIP Code/City: </label>
         </div>
@@ -1131,7 +1131,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
           <label class="fd-form-label" for="input-11a-country">Country:</label>
         </div>
@@ -1184,11 +1184,11 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 };
 
 export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
-  <div class="fd-row fd-row--top">
-    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+  <div class="fd-row">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
 
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-12-street">Street/No.: </label>
         </div>
@@ -1204,7 +1204,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-12-zip">ZIP Code/City: </label>
         </div>
@@ -1220,7 +1220,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-12-country">Country:</label>
         </div>
@@ -1246,8 +1246,8 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
       </div>
     </div>
-    <div class="fd-col fd-col-xl--4 fd-col--wrap">
-      <div class="fd-row">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-12a-name">Name:</label>
         </div>
@@ -1256,7 +1256,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-12a-street">Street/No.: </label>
         </div>
@@ -1272,7 +1272,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-12a-zip">ZIP Code/City: </label>
         </div>
@@ -1288,7 +1288,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
       </div>
 
-      <div class="fd-row">
+      <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-12a-country">Country:</label>
         </div>
@@ -1316,8 +1316,8 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
     </div>
 
 
-    <div class="fd-col fd-col-xl--4 fd-col--wrap">
-    <div class="fd-row">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
+    <div class="fd-row fd-form-item">
       <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label" for="input-12b-name">Name:</label>
       </div>
@@ -1326,7 +1326,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
       </div>
     </div>
 
-    <div class="fd-row">
+    <div class="fd-row fd-form-item">
       <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label fd-form-label--required" for="input-12b-street">Street/No.: </label>
       </div>
@@ -1342,7 +1342,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
       </div>
     </div>
 
-    <div class="fd-row">
+    <div class="fd-row fd-form-item">
       <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label fd-form-label--required" for="input-12b-zip">ZIP Code/City: </label>
       </div>
@@ -1358,7 +1358,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
       </div>
     </div>
 
-    <div class="fd-row">
+    <div class="fd-row fd-form-item">
       <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
         <label class="fd-form-label" for="input-12b-country">Country:</label>
       </div>
@@ -1396,8 +1396,6 @@ XlMultipleFormGroup.parameters = {
         iframeHeight: 850,
         description: {
             story: `
-If the form contains multiple form groups, you can use a three-column layout.fd-row--top class will organize all the elements evenly on screen.
-
 ####Label-field ratio
 The extra-large form grid is organized into a **12:12:0** label-field ratio for multiple form groups.
 
@@ -1412,8 +1410,8 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid-container">
-    <div class="fd-row">
+export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group">
+    <div class="fd-row fd-form-item">
         <div class="fd-col fd-col--4">
           <label class="fd-form-label" for="input-13-compact">Default Input:</label>
         </div>
@@ -1421,7 +1419,7 @@ export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid
             <input class="fd-input fd-input--compact" type="text" id="input-13-compact" placeholder="Field placeholder text">
         </div>
     </div>
-    <div class="fd-row">
+    <div class="fd-row fd-form-item">
         <div class="fd-col fd-col--4">
           <label class="fd-form-label fd-form-label--required" for="input-13b-compact">Required Input: </label>
         </div>
@@ -1429,7 +1427,7 @@ export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid
             <input class="fd-input fd-input--compact" type="text" id="input-13b-compact" placeholder="Field placeholder text">
         </div>
     </div>
-    <div class="fd-row" role="group" aria-labelledby="groupLabel-compact">
+    <div class="fd-row fd-form-item" role="group" aria-labelledby="groupLabel-compact">
         <div class="fd-col fd-col--4">
           <label class="fd-form-label"  id="groupLabel-compact">2 Inputs: </label>
         </div>
@@ -1459,9 +1457,9 @@ To display the form using a compact layout, add the \`--compact\` modifier on th
 };
 
 export const ColumnRecommended = () => `<h2>Layout 1</h2>
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
-    <div class="fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+    <div class="fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-14-name">Name:</label>
@@ -1472,7 +1470,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
       </div>
     </div>
 
-    <div class="fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+    <div class="fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-14a-name">Name:</label>
@@ -1486,9 +1484,9 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
 </div>
 
 <h2>Layout 2</h2>
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
-    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-15-name">Name:</label>
@@ -1499,7 +1497,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
       </div>
     </div>
 
-    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap">
+    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap  fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-15a-name">Name:</label>
@@ -1513,9 +1511,9 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
 </div>
 
 <h2>Layout 3</h2>
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
-    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap">
+    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-16-name">Name:</label>
@@ -1526,7 +1524,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
       </div>
     </div>
 
-    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap">
+    <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-16a-name">Name:</label>
@@ -1582,9 +1580,9 @@ S | 1
 };
 
 export const ColumnPossible = () => `<h2>Layout 4</h2>
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
-    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-17-name">Name:</label>
@@ -1595,7 +1593,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
       </div>
     </div>
 
-    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-17a-name">Name:</label>
@@ -1606,7 +1604,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
       </div>
     </div>
 
-    <div class="fd-col fd-col-xl--4 fd-col--wrap">
+    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-17b-name">Name:</label>
@@ -1620,9 +1618,9 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
 </div>
 
 <h2>Layout 5</h2>
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
-    <div class="fd-col fd-col--wrap">
+    <div class="fd-col fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-18-name">Name:</label>
@@ -1633,7 +1631,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
       </div>
     </div>
 
-    <div class="fd-col fd-col--wrap">
+    <div class="fd-col fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-18a-name">Name:</label>
@@ -1680,9 +1678,9 @@ S | 1
 };
 
 export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
-<div class="fd-container fd-form-layout-grid-container">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
-    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-19-name">Name:</label>
@@ -1693,7 +1691,7 @@ export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
       </div>
     </div>
 
-    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-19a-name">Name:</label>
@@ -1704,7 +1702,7 @@ export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
       </div>
     </div>
 
-    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap">
+    <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-19b-name">Name:</label>

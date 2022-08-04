@@ -497,8 +497,8 @@ export const HorizontalFormInDialog = () => `
             </div>
         </header>
         <div class="fd-dialog__body">
-            <div class="fd-container fd-form-layout-grid-container">
-                <div class="fd-row">
+            <div class="fd-container fd-form-layout-grid-container fd-form-group">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4">
                         <label class="fd-form-label" for="input-222-name">Name:</label>
                     </div>
@@ -506,7 +506,7 @@ export const HorizontalFormInDialog = () => `
                         <input class="fd-input" type="text" id="input-222-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4">
                         <label class="fd-form-label fd-form-label--required" for="input-233-street">Street/No.: </label>
                     </div>
@@ -522,7 +522,7 @@ export const HorizontalFormInDialog = () => `
                     </div>
                 </div>
 
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col fd-col-md--2  fd-col-lg--4">
                         <label class="fd-form-label fd-form-label--required" for="input-233-zip">ZIP Code/City: </label>
                     </div>
@@ -538,7 +538,7 @@ export const HorizontalFormInDialog = () => `
                     </div>
                 </div>
 
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col fd-col-md--2 fd-col-lg--4">
                         <label class="fd-form-label for="text-243-name">Bio: </label>
                     </div>
@@ -547,7 +547,7 @@ export const HorizontalFormInDialog = () => `
                     </div>
                 </div>
 
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col fd-col-md--2  fd-col-lg--4">
                         <label class="fd-form-label" for="input-2-country">Country:</label>
                     </div>
@@ -592,8 +592,7 @@ HorizontalFormInDialog.parameters = {
 };
 
 
-export const VerticalFormInDialog = () => `
-<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+export const VerticalFormInDialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
     <div class="fd-dialog__content fd-dialog__content--s" role="dialog" aria-modal="true" aria-labelledby="dialog-title-2">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
@@ -605,8 +604,8 @@ export const VerticalFormInDialog = () => `
             </div>
         </header>
         <div class="fd-dialog__body">
-            <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical">
-                <div class="fd-row">
+            <div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col">
                         <label class="fd-form-label" for="input-2224-name">Name:</label>
                     </div>
@@ -614,7 +613,7 @@ export const VerticalFormInDialog = () => `
                         <input class="fd-input" type="text" id="input-2224-name" placeholder="Enter First and Last Name" value="Amelia Perry">
                     </div>
                 </div>
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col">
                         <label class="fd-form-label fd-form-label--required" for="input-2334-street">Street/No.: </label>
                     </div>
@@ -630,7 +629,7 @@ export const VerticalFormInDialog = () => `
                     </div>
                 </div>
 
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col">
                         <label class="fd-form-label fd-form-label--required" for="input-2334-zip">ZIP Code/City: </label>
                     </div>
@@ -646,7 +645,7 @@ export const VerticalFormInDialog = () => `
                     </div>
                 </div>
 
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col">
                         <label class="fd-form-label for="text-2434-name">Bio: </label>
                     </div>
@@ -655,7 +654,7 @@ export const VerticalFormInDialog = () => `
                     </div>
                 </div>
 
-                <div class="fd-row">
+                <div class="fd-row fd-form-item">
                     <div class="fd-col">
                         <label class="fd-form-label" for="input-2-country">Country:</label>
                     </div>

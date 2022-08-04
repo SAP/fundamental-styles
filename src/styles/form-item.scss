@@ -2,7 +2,7 @@
 @import "./mixins";
 
 /*!
-.fd-form-item+(--inline)
+  .fd-form-item(--horizontal)
 */
 $block: #{$fd-namespace}-form-item;
 
