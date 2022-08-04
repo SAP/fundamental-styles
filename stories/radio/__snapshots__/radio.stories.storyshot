@@ -23,7 +23,7 @@ exports[`Storyshots Components/Forms/Radio Inline 1`] = `
       
             
       <div
-        class="fd-form-group__item fd-form-item"
+        class="fd-form-item"
       >
         
                 
@@ -50,7 +50,7 @@ exports[`Storyshots Components/Forms/Radio Inline 1`] = `
       
             
       <div
-        class="fd-form-group__item fd-form-item"
+        class="fd-form-item"
       >
         
                 
@@ -76,7 +76,7 @@ exports[`Storyshots Components/Forms/Radio Inline 1`] = `
       
             
       <div
-        class="fd-form-group__item fd-form-item"
+        class="fd-form-item"
       >
         
                 

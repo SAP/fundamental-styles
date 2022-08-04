@@ -151,7 +151,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
             
       <div
         aria-labelledby="grid1GroupHeader"
-        class="fd-form-group fd-col__form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+        class="fd-form-group fd-col fd-col-md--6  fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
         role="group"
       >
         
@@ -173,7 +173,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -214,7 +214,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -255,7 +255,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -300,7 +300,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
             
       <div
         aria-labelledby="grid2GroupHeader"
-        class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+        class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
         role="group"
       >
         
@@ -322,7 +322,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -363,7 +363,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -404,7 +404,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -449,7 +449,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
             
       <div
         aria-labelledby="grid3GroupHeader"
-        class="fd-form-group fd-col__form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
+        class="fd-form-group fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap"
         role="group"
       >
         
@@ -471,7 +471,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -512,7 +512,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
@@ -553,7 +553,7 @@ exports[`Storyshots Components/Forms/Form Group Group header (form grid) 1`] = `
         
                 
         <div
-          class="fd-form-item fd-row__form-item fd-row"
+          class="fd-form-item fd-row"
         >
           
                     
