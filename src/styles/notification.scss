@@ -190,6 +190,7 @@ $block: #{$fd-namespace}-notification;
       @include fd-reset();
 
       font-size: var(--sapFontHeader5Size);
+      white-space: break-spaces;
     }
 
     &--description {
