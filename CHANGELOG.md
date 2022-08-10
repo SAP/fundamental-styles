@@ -1,3 +1,12 @@
+## [0.24.5-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.2...v0.24.5-rc.3) (2022-08-10)
+
+
+### Features
+
+* **styles:** sap font stylesheets ([#3764](https://github.com/SAP/fundamental-styles/issues/3764)) ([8b5a4a2](https://github.com/SAP/fundamental-styles/commit/8b5a4a28f8edc4e5ad08afdeeed845449bd2217e))
+
+
+
 ## [0.24.5-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.1...v0.24.5-rc.2) (2022-08-01)
 
 
