@@ -1,3 +1,12 @@
+## [0.24.5-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.4...v0.24.5-rc.5) (2022-08-11)
+
+
+### Bug Fixes
+
+* **styles:** notification mobile ([#3783](https://github.com/SAP/fundamental-styles/issues/3783)) ([d6584b3](https://github.com/SAP/fundamental-styles/commit/d6584b39dbf6a019989fe75e3f41fc82102dc632))
+
+
+
 ## [0.24.5-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.3...v0.24.5-rc.4) (2022-08-11)
 
 
