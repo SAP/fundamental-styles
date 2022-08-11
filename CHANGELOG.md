@@ -1,3 +1,12 @@
+## [0.24.5-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.3...v0.24.5-rc.4) (2022-08-11)
+
+
+### Bug Fixes
+
+* **styles:** byline list thumbnail issue in safari ([#3765](https://github.com/SAP/fundamental-styles/issues/3765)) ([95aee1f](https://github.com/SAP/fundamental-styles/commit/95aee1f6b330f7ff98a4551cab867cfc0b248c68))
+
+
+
 ## [0.24.5-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.2...v0.24.5-rc.3) (2022-08-10)
 
 
