@@ -11,10 +11,10 @@ $block: #{$fd-namespace}-form-group;
   @include fd-reset();
 
   &--inline {
-    @include fd-flex();
-
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    @include fd-flex() {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
   }
 
   &__header {
