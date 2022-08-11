@@ -44,6 +44,10 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       border-radius: 0.25rem;
       font-size: 2.5rem;
       color: var(--sapContent_NonInteractiveIconColor);
+
+      > svg {
+        height: 100%;
+      }
     }
 
     .#{$block}__content {
