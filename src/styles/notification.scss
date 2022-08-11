@@ -190,12 +190,14 @@ $block: #{$fd-namespace}-notification;
       @include fd-reset();
 
       font-size: var(--sapFontHeader5Size);
+      white-space: break-spaces;
     }
 
     &--description {
       @include fd-reset();
 
       margin: 0.5rem 0 0;
+      white-space: break-spaces;
     }
   }
 
@@ -238,6 +240,7 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
 
     overflow: hidden;
+    height: 100%;
 
     .#{$block}__body {
       padding: 1rem 0.5rem 1rem 1rem;
