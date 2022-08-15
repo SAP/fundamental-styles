@@ -1,3 +1,12 @@
+# [0.25.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.2...v0.25.0-rc.3) (2022-08-15)
+
+
+### Bug Fixes
+
+* **styles:** update InfoLabel design [ci visual] ([#3813](https://github.com/SAP/fundamental-styles/issues/3813)) ([00200d2](https://github.com/SAP/fundamental-styles/commit/00200d22afee14a9dc54c43a641e069a0b355e35))
+
+
+
 # [0.25.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.1...v0.25.0-rc.2) (2022-08-15)
 
 
