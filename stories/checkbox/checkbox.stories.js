@@ -201,7 +201,7 @@ Mobile.parameters = {
 export const Inline = () => `<fieldset class="fd-fieldset">
     <legend class="fd-fieldset__legend">Inline checkboxes</legend>
     <div class="fd-form-group fd-form-group--inline">
-        <div class="fd-form-group__item fd-form-item">
+        <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez617">
             <label class="fd-checkbox__label" for="Ai4ez617">
                 <div class="fd-checkbox__label-container">
@@ -209,7 +209,7 @@ export const Inline = () => `<fieldset class="fd-fieldset">
                 </div>
             </label>
         </div>
-        <div class="fd-form-group__item fd-form-item">
+        <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez618" checked>
             <label class="fd-checkbox__label" for="Ai4ez618">
                 <div class="fd-checkbox__label-container">
@@ -217,7 +217,7 @@ export const Inline = () => `<fieldset class="fd-fieldset">
                 </div>
             </label>
         </div>
-        <div class="fd-form-group__item fd-form-item">
+        <div class="fd-form-item">
             <input type="checkbox" class="fd-checkbox" id="Ai4ez619" disabled checked>
             <label class="fd-checkbox__label" for="Ai4ez619">
                 <div class="fd-checkbox__label-container">

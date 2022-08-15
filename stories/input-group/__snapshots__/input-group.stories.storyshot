@@ -35,6 +35,7 @@ exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde133"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1234568910"
       />
@@ -71,6 +72,7 @@ exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde134"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -121,6 +123,7 @@ exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde134ff"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -171,6 +174,7 @@ exports[`Storyshots Components/Forms/Input Group Focus 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde134ss"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -227,6 +231,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde120"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -280,6 +285,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde121"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -338,6 +344,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
         class="fd-input fd-input--compact fd-input-group__input"
         id="aqwsde122"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -413,6 +420,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Actions 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde123"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -469,6 +477,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Icons 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde117"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -505,6 +514,7 @@ exports[`Storyshots Components/Forms/Input Group Input With Icons 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde118"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -618,6 +628,7 @@ exports[`Storyshots Components/Forms/Input Group Sizes 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde111"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1234568910 "
       />
@@ -661,6 +672,7 @@ exports[`Storyshots Components/Forms/Input Group Sizes 1`] = `
         class="fd-input fd-input--compact fd-input-group__input"
         id="aqwsde112"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1234568910 "
       />
@@ -710,6 +722,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde124"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1234568910"
       />
@@ -746,6 +759,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde125"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -803,6 +817,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde126"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1234568910"
       />
@@ -839,6 +854,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         class="fd-input fd-input--compact fd-input-group__input"
         id="aqwsde127"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -893,6 +909,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         class="fd-input fd-input--compact fd-input-group__input"
         id="aqwsde127"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -947,6 +964,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         class="fd-input fd-input--compact fd-input-group__input"
         id="aqwsde127"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -1001,6 +1019,7 @@ exports[`Storyshots Components/Forms/Input Group States 1`] = `
         class="fd-input fd-input--compact fd-input-group__input"
         id="aqwsde127"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1000000"
       />
@@ -3255,6 +3274,7 @@ exports[`Storyshots Components/Forms/Input Group Text Add On 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde113"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1234568910 "
       />
@@ -3291,6 +3311,7 @@ exports[`Storyshots Components/Forms/Input Group Text Add On 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde114"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="1234568910 "
       />
@@ -3384,6 +3405,7 @@ exports[`Storyshots Components/Forms/Input Group Text Add On 1`] = `
         class="fd-input fd-input-group__input"
         id="aqwsde116"
         name=""
+        placeholder="Placeholder"
         type="text"
         value="This is a test"
       />

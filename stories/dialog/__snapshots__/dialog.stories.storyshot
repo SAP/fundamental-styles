@@ -354,12 +354,12 @@ exports[`Storyshots Components/Dialog Horizontal Form 1`] = `
         
             
         <div
-          class="fd-container fd-form-layout-grid-container"
+          class="fd-container fd-form-layout-grid-container fd-form-group"
         >
           
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -400,7 +400,7 @@ exports[`Storyshots Components/Dialog Horizontal Form 1`] = `
           
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -476,7 +476,7 @@ exports[`Storyshots Components/Dialog Horizontal Form 1`] = `
 
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -552,7 +552,7 @@ exports[`Storyshots Components/Dialog Horizontal Form 1`] = `
 
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -593,7 +593,7 @@ exports[`Storyshots Components/Dialog Horizontal Form 1`] = `
 
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -1910,8 +1910,6 @@ exports[`Storyshots Components/Dialog Vertical Form 1`] = `
 <div
   dir="ltr"
 >
-  
-
   <section
     class="fd-dialog-docs-static fd-dialog fd-dialog--active"
   >
@@ -1965,12 +1963,12 @@ exports[`Storyshots Components/Dialog Vertical Form 1`] = `
         
             
         <div
-          class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical"
+          class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group"
         >
           
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -2011,7 +2009,7 @@ exports[`Storyshots Components/Dialog Vertical Form 1`] = `
           
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -2087,7 +2085,7 @@ exports[`Storyshots Components/Dialog Vertical Form 1`] = `
 
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -2163,7 +2161,7 @@ exports[`Storyshots Components/Dialog Vertical Form 1`] = `
 
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     
@@ -2204,7 +2202,7 @@ exports[`Storyshots Components/Dialog Vertical Form 1`] = `
 
                 
           <div
-            class="fd-row"
+            class="fd-row fd-form-item"
           >
             
                     

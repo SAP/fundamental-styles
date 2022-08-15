@@ -1,22 +1,38 @@
 @import "./mixins";
-@import "./layout-grid.scss";
+@import "./layout-grid";
 
 $block: #{$fd-namespace}-form-layout-grid;
-$blockContainer: #{$block}-container;
+
+$formContainer: #{$block}-container;
+$formGroup: #{$fd-namespace}-form-group;
+$formItem: #{$fd-namespace}-form-item;
 
 $gridContainer: #{$fd-namespace}-container;
 $gridRow: #{$fd-namespace}-row;
 $gridCol: #{$fd-namespace}-col;
 
-$cols: 12;
-$gutter: 0.25rem;
-$groupGutter: 1rem;
+@mixin fd-form-vertical($marginTop: 0.625rem) {
+  &.#{$formGroup},
+  .#{$formGroup} {
+    .#{$formItem} {
+      margin-top: $marginTop;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+}
 
 @mixin fd-form-col-paddings($colSelector) {
-  .#{$gridContainer}.#{$blockContainer} .#{$gridRow} {
+  $cols: 12;
+
+  .#{$gridContainer}.#{$formContainer} .#{$gridRow} {
     @for $col from 1 through $cols - 1 {
       .#{$colSelector}--#{$col} {
-        .#{$fd-namespace}-form-label {
+        @include fd-form-vertical();
+
+        > .#{$fd-namespace}-form-label {
           float: right;
           text-align: right;
           padding-bottom: 0;
@@ -32,7 +48,7 @@ $groupGutter: 1rem;
 
     .#{$colSelector},
     .#{$colSelector}--12 {
-      .#{$fd-namespace}-form-label {
+      > .#{$fd-namespace}-form-label {
         float: left;
         text-align: left;
         width: auto;
@@ -45,69 +61,48 @@ $groupGutter: 1rem;
       }
     }
   }
-
-  .#{$gridContainer}.#{$blockContainer}--vertical .#{$gridRow}:not(:first-child) {
-    .#{$colSelector},
-    .#{$colSelector}--12 {
-      .#{$fd-namespace}-form-label {
-        margin-top: 0.625rem;
-      }
-    }
-  }
 }
 
-.#{$gridContainer}.#{$blockContainer} {
-  padding: $groupGutter;
+.#{$gridContainer}.#{$formContainer} {
+  &,
+  &.#{$formContainer}--vertical {
+    @include fd-form-vertical();
+  }
 
-  .#{$gridRow} {
-    align-items: center;
-    margin-bottom: 0.625rem;
+  &.#{$formGroup},
+  .#{$formGroup} {
+    padding: 1rem !important;
 
-    &--top {
-      align-items: start;
-    }
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .#{$gridCol} {
-      padding-top: 0;
-      padding-bottom: 0;
-
-      @include fd-ellipsis();
+    .#{$formItem} {
+      &--compact {
+        .#{$fd-namespace}-select__control {
+          margin-bottom: 0.1875rem;
+        }
+      }
 
       .#{$fd-namespace}-select__control {
         margin: 0.25rem 0;
       }
 
-      &--compact {
-        .#{$fd-namespace}-select__control {
-          margin: 0.1875rem 0 0.25rem 0;
-        }
-      }
-
       .#{$fd-namespace}-form-label {
         @include fd-set-margin-right(0);
+
+        white-space: initial;
 
         &--required {
           @include fd-set-padding-right(0.5rem);
         }
-
-        white-space: initial;
-      }
-
-      &__form-group {
-        padding: $groupGutter;
       }
     }
+  }
 
-    .#{$gridRow}__form-item {
-      flex-direction: row;
+  .#{$gridRow} {
+    .#{$gridCol} {
+      @include fd-ellipsis();
+
+      padding-top: 0;
+      padding-bottom: 0;
+      align-self: center;
     }
   }
 }
@@ -117,19 +112,19 @@ $groupGutter: 1rem;
 }
 
 @media (min-width: 600px) {
-  .#{$gridContainer}.#{$blockContainer} {
-    padding: $groupGutter;
+  .#{$gridContainer}.#{$formContainer} {
+    $gutter: 0.25rem;
+
+    padding: 0 $gutter;
+
+    @include fd-form-vertical(0);
 
     .#{$gridRow} {
-      margin: 0 -#{$gutter} 0.625rem;
+      margin: 0 -#{$gutter};
       min-width: calc(100% + #{$gutter} * 2);
 
       .#{$gridCol} {
         padding: 0 $gutter;
-
-        &__form-group {
-          padding: $groupGutter;
-        }
       }
     }
   }

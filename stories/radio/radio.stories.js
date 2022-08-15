@@ -83,19 +83,19 @@ Primary.parameters = {
 export const Inline = () => `<fieldset class="fd-fieldset" id="radio4">
     <legend class="fd-fieldset__legend">Inline Radio buttons</legend>
         <div class="fd-form-group fd-form-group--inline">
-            <div class="fd-form-group__item fd-form-item">
+            <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh767" name="radio4" checked>
                 <label class="fd-radio__label" for="pDidh767">
                     Field label
                 </label>
             </div>
-            <div class="fd-form-group__item fd-form-item">
+            <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh7618" name="radio4" >
                 <label class="fd-radio__label" for="pDidh7618">
                     Field label
                 </label>
             </div>
-            <div class="fd-form-group__item fd-form-item">
+            <div class="fd-form-item">
                 <input type="radio" class="fd-radio" id="pDidh7619" name="radio4">
                 <label class="fd-radio__label" for="pDidh7619">
                     Field label

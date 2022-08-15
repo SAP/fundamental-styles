@@ -2,7 +2,7 @@
 @import "./mixins";
 
 /*!
-.fd-form-group
+  .fd-form-group(--inline)
 */
 
 $block: #{$fd-namespace}-form-group;
@@ -10,19 +10,11 @@ $block: #{$fd-namespace}-form-group;
 .#{$block} {
   @include fd-reset();
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &--inline {
     @include fd-flex() {
       justify-content: flex-start;
       flex-wrap: wrap;
     }
-  }
-
-  &__item {
-    @include fd-reset();
   }
 
   &__header {
