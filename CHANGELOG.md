@@ -1,3 +1,20 @@
+# [0.25.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.8...v0.25.0-rc.0) (2022-08-15)
+
+
+### Bug Fixes
+
+* **styles:** form grid margins & paddings issues ([#3767](https://github.com/SAP/fundamental-styles/issues/3767)) ([676da99](https://github.com/SAP/fundamental-styles/commit/676da9971e966bc5b0db5977ecb8f988ad94d7a7))
+
+
+### BREAKING CHANGES
+
+* **styles:** * Class `fd-col--compact` removed, use `fd-form-item--compact` instead
+* Class `fd-row__form-item` removed
+* Class `fd-row--top` removed
+* Classes applying approach of `fd-form-layout-grid` changed, see wiki
+
+
+
 ## [0.24.5-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.24.5-rc.7...v0.24.5-rc.8) (2022-08-12)
 
 
