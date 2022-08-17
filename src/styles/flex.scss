@@ -1,0 +1,197 @@
+@import './new-settings';
+
+$block: #{$fd-namespace}-flex;
+
+$fd-flex-spacings: (
+  "tiny": 0.5rem,
+  "small": 1rem,
+  "medium": 2rem,
+  "large": 3rem
+);
+
+.#{$block} {
+  // Properties for the Parent (flex container)
+
+  display: flex;
+
+  @each $type in (row row-reverse column column-reverse) {
+    &--#{$type} {
+      flex-direction: #{$type};
+    }
+  }
+
+  @each $type in (nowrap wrap wrap-reverse) {
+    &--#{$type} {
+      flex-wrap: #{$type};
+    }
+  }
+
+  @each $type in (flex-start flex-end center space-between space-around space-evenly start end left right) {
+    &--justify-#{$type} {
+      justify-content: #{$type};
+    }
+  }
+
+  @each $type in (stretch flex-start flex-end center baseline start end self-start self-end) {
+    &--align-items-#{$type} {
+      align-items: #{$type};
+    }
+  }
+
+  @each $type in (flex-start flex-end center space-between space-around space-evenly stretch start end baseline) {
+    &--align-content-#{$type} {
+      flex-wrap: wrap;
+      align-content: #{$type};
+    }
+  }
+
+  @each $type, $value in $fd-flex-spacings {
+    &--gap-#{$type} {
+      gap: $value;
+    }
+  }
+
+  @each $type, $value in $fd-flex-spacings {
+    &--row-gap-#{$type} {
+      row-gap: $value;
+    }
+  }
+
+  @each $type, $value in $fd-flex-spacings {
+    &--column-gap-#{$type} {
+      column-gap: $value;
+    }
+  }
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Properties for the Children (flex items)
+
+  @for $i from 0 through 20 {
+    &-order-#{$i} {
+      order: #{$i};
+    }
+  }
+
+  @for $i from 1 through 10 {
+    &-grow-#{$i} {
+      flex-grow: #{$i};
+    }
+  }
+
+  @for $i from 1 through 10 {
+    &-shrink-#{$i} {
+      flex-shrink: #{$i};
+    }
+  }
+
+  @each $type in (auto flex-start flex-end center baseline stretch) {
+    &--align-self-#{$type} {
+      align-self: #{$type};
+    }
+  }
+
+  // MIXINS
+  @mixin fd-flex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+
+    @content;
+  }
+
+  @mixin fd-flex-wrap($type: nowrap) {
+    flex-wrap: $type;
+
+    @content;
+  }
+
+  @mixin fd-flex-justify($type: flex-start) {
+    justify-content: $type;
+
+    @content;
+  }
+
+  @mixin fd-flex-align-items($type: stretch) {
+    align-items: $type;
+
+    @content;
+  }
+
+  @mixin fd-flex-align-content($type: normal) {
+    flex-wrap: wrap;
+    align-content: $type;
+
+    @content;
+  }
+
+  @mixin fd-flex-gap($value, $type: "") {
+    $_value: "";
+
+    @if $value == "tiny" {
+      $_value: map_get($fd-flex-spacings, "tiny");
+    } @else if $value == "small" {
+      $_value: map_get($fd-flex-spacings, "small");
+    } @else if $value == "medium" {
+      $_value: map_get($fd-flex-spacings, "medium");
+    } @else if $value == large {
+      $_value: map_get($fd-flex-spacings, "large");
+    } @else {
+      $_value: $value;
+    }
+
+    @if $type == "" {
+      gap: $_value;
+    } @else {
+      #{$type}-gap: $_value;
+    }
+
+    @content;
+  }
+
+  @mixin fd-flex-order($value: 0) {
+    order: $value;
+
+    @content;
+  }
+
+  @mixin fd-flex-grow($value) {
+    flex-grow: $value;
+
+    @content;
+  }
+
+  @mixin fd-flex-shrink($value) {
+    flex-shrink: $value;
+
+    @content;
+  }
+
+  @mixin fd-flex-child($value) {
+    flex: $value;
+
+    @content;
+  }
+
+  @mixin fd-flex-align-self($value) {
+    align-self: $value;
+
+    @content;
+  }
+
+  @mixin fd-flex-center($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+
+    @content;
+  }
+
+  &--test {
+    @include fd-flex(column);
+    @include fd-flex-gap(10rem, row);
+  }
+}
