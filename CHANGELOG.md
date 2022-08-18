@@ -1,3 +1,12 @@
+# [0.25.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.3...v0.25.0-rc.4) (2022-08-18)
+
+
+### Features
+
+* **styles:** bring SAP-icons version 4.14 ([#3817](https://github.com/SAP/fundamental-styles/issues/3817)) ([7afe5dd](https://github.com/SAP/fundamental-styles/commit/7afe5ddd9b757ce8a6bcb7a30fec9abc00b811e1))
+
+
+
 # [0.25.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.2...v0.25.0-rc.3) (2022-08-15)
 
 
