@@ -660,6 +660,24 @@
         "clear-all",
         "command-line-interfaces",
         "icon-sum",
-        "icon-qr-code"
+        "icon-qr-code",
+        "space-navigation",
+        "in-progress",
+        "not-editable",
+        "heart",
+        "heart-2",
+        "tri-state",
+        "bookmark-2",
+        "detail-less",
+        "detail-more",
+        "flag-2",
+        "folder-2",
+        "paint-bucket",
+        "direction-arrows",
+        "binary",
+        "female",
+        "male",
+        "gender-male-and-female",
+        "rotate"
     ]
 }

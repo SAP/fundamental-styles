@@ -7939,6 +7939,222 @@ exports[`Storyshots Components/Icons/SAP Icons Available Icons 1`] = `
       </div>
     </div>
     <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--space-navigation"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--space-navigation
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--in-progress"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--in-progress
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--not-editable"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--not-editable
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--heart"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--heart
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--heart-2"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--heart-2
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--tri-state"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--tri-state
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--bookmark-2"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--bookmark-2
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--detail-less"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--detail-less
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--detail-more"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--detail-more
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--flag-2"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--flag-2
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--folder-2"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--folder-2
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--paint-bucket"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--paint-bucket
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--direction-arrows"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--direction-arrows
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--binary"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--binary
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--female"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--female
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--male"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--male
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--gender-male-and-female"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--gender-male-and-female
+      </div>
+    </div>
+    <br />
+    <div
+      class="fddocs-container--icon"
+    >
+      <span
+        class="sap-icon sap-icon--rotate"
+        style="font-size:3rem"
+      />
+      <div>
+        .sap-icon--rotate
+      </div>
+    </div>
+    <br />
   </div>
 </div>
 `;
