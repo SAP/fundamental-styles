@@ -11,7 +11,7 @@ Notifications are used to relay information to the user about a situation or tas
 * You want to make users aware of situations that require attention.
 * You intend to reduce the amount of information and actions to a minimum, but provide enough information to highlight the level of importance.
             `,
-        components: ['button', 'icon', 'notification', 'tabs', 'avatar', 'popover', 'menu', 'message-strip']
+        components: ['button', 'icon', 'notification', 'tabs', 'avatar', 'popover', 'menu', 'message-strip', 'dialog']
     }
 };
 
@@ -829,5 +829,78 @@ export const Mobile = () => `<div style="heigt: 200px; max-width: 20rem">
 Error.mobile = {
     docs: {
         iframeHeight: 200
+    }
+};
+
+export const InDialog = () => `
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-7">
+                        Dialog with Notifications
+                    </h2>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding fd-dialog__body--no-horizontal-padding">
+            <div class="fd-notification fd-notification--in-dialog">
+                <div class="fd-notification__body">
+                    <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
+                    <div class="fd-notification__content">
+                        <div class="fd-notification__header">
+                            <div class="fd-notification__indicator fd-notification__indicator--success"></div>
+                            <h2 class="fd-notification__title fd-notification__title--unread">Your leave request has been accepted</h2>
+                        </div>
+                        <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="fd-notification__footer">
+                            <span class="fd-notification__footer-content">Long author name - SAP Analytics Cloud incididunt ut labore et dolore magna aliqua </span>
+                            <span class="fd-notification__separator"></span>
+                            <span class="fd-notification__footer-content">7 minutes ago</span>
+                        </p>
+                    </div>
+                    <div class="fd-notification__actions">
+                        <button class="fd-button fd-button--compact">Open</button>
+                        <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
+                            <i class="sap-icon--decline"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-notification fd-notification--in-dialog">
+                <div class="fd-notification__body">
+                    <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
+                    <div class="fd-notification__content">
+                        <div class="fd-notification__header">
+                            <div class="fd-notification__indicator fd-notification__indicator--success"></div>
+                            <h2 class="fd-notification__title fd-notification__title--unread">Your leave request has been accepted</h2>
+                        </div>
+                        <p class="fd-notification__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="fd-notification__footer">
+                            <span class="fd-notification__footer-content">Long author name - SAP Analytics Cloud incididunt ut labore et dolore magna aliqua </span>
+                            <span class="fd-notification__separator"></span>
+                            <span class="fd-notification__footer-content">7 minutes ago</span>
+                        </p>
+                    </div>
+                    <div class="fd-notification__actions">
+                        <button class="fd-button fd-button--compact">Open</button>
+                        <button class="fd-button fd-button--transparent fd-button--compact " aria-label="Close">
+                            <i class="sap-icon--decline"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+`;
+
+InDialog.parameters = {
+    docs: {
+        description: {
+            story: `If you want to show the notification in a dialog, you need to add the <code>fd-notification--in-dialog</code> class to the notification.
+            Also, you need to apply \`fd-dialog__body--no-vertical-padding fd-dialog__body--no-horizontal-padding\` classes to the dialog body.`
+        }
     }
 };

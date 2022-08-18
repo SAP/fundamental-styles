@@ -149,6 +149,306 @@ exports[`Storyshots Components/Notifications Error 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Notifications In Dialog 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <section
+    class="fd-dialog-docs-static fd-dialog fd-dialog--active"
+  >
+    
+    
+    <div
+      aria-labelledby="dialog-title-1"
+      aria-modal="true"
+      class="fd-dialog__content"
+      role="dialog"
+    >
+      
+        
+      <header
+        class="fd-dialog__header fd-bar fd-bar--header"
+      >
+        
+            
+        <div
+          class="fd-bar__left"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <h2
+              class="fd-title fd-title--h5"
+              id="dialog-title-7"
+            >
+              
+                        Dialog with Notifications
+                    
+            </h2>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </header>
+      
+        
+      <div
+        class="fd-dialog__body fd-dialog__body--no-vertical-padding fd-dialog__body--no-horizontal-padding"
+      >
+        
+            
+        <div
+          class="fd-notification fd-notification--in-dialog"
+        >
+          
+                
+          <div
+            class="fd-notification__body"
+          >
+            
+                    
+            <span
+              aria-label="John Doe"
+              class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+              role="img"
+              style="background-image: url('/assets/images/avatars/3.svg')"
+            />
+            
+                    
+            <div
+              class="fd-notification__content"
+            >
+              
+                        
+              <div
+                class="fd-notification__header"
+              >
+                
+                            
+                <div
+                  class="fd-notification__indicator fd-notification__indicator--success"
+                />
+                
+                            
+                <h2
+                  class="fd-notification__title fd-notification__title--unread"
+                >
+                  Your leave request has been accepted
+                </h2>
+                
+                        
+              </div>
+              
+                        
+              <p
+                class="fd-notification__paragraph"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              
+                        
+              <p
+                class="fd-notification__footer"
+              >
+                
+                            
+                <span
+                  class="fd-notification__footer-content"
+                >
+                  Long author name - SAP Analytics Cloud incididunt ut labore et dolore magna aliqua 
+                </span>
+                
+                            
+                <span
+                  class="fd-notification__separator"
+                />
+                
+                            
+                <span
+                  class="fd-notification__footer-content"
+                >
+                  7 minutes ago
+                </span>
+                
+                        
+              </p>
+              
+                    
+            </div>
+            
+                    
+            <div
+              class="fd-notification__actions"
+            >
+              
+                        
+              <button
+                class="fd-button fd-button--compact"
+              >
+                Open
+              </button>
+              
+                        
+              <button
+                aria-label="Close"
+                class="fd-button fd-button--transparent fd-button--compact "
+              >
+                
+                            
+                <i
+                  class="sap-icon--decline"
+                />
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-notification fd-notification--in-dialog"
+        >
+          
+                
+          <div
+            class="fd-notification__body"
+          >
+            
+                    
+            <span
+              aria-label="John Doe"
+              class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail"
+              role="img"
+              style="background-image: url('/assets/images/avatars/3.svg')"
+            />
+            
+                    
+            <div
+              class="fd-notification__content"
+            >
+              
+                        
+              <div
+                class="fd-notification__header"
+              >
+                
+                            
+                <div
+                  class="fd-notification__indicator fd-notification__indicator--success"
+                />
+                
+                            
+                <h2
+                  class="fd-notification__title fd-notification__title--unread"
+                >
+                  Your leave request has been accepted
+                </h2>
+                
+                        
+              </div>
+              
+                        
+              <p
+                class="fd-notification__paragraph"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              
+                        
+              <p
+                class="fd-notification__footer"
+              >
+                
+                            
+                <span
+                  class="fd-notification__footer-content"
+                >
+                  Long author name - SAP Analytics Cloud incididunt ut labore et dolore magna aliqua 
+                </span>
+                
+                            
+                <span
+                  class="fd-notification__separator"
+                />
+                
+                            
+                <span
+                  class="fd-notification__footer-content"
+                >
+                  7 minutes ago
+                </span>
+                
+                        
+              </p>
+              
+                    
+            </div>
+            
+                    
+            <div
+              class="fd-notification__actions"
+            >
+              
+                        
+              <button
+                class="fd-button fd-button--compact"
+              >
+                Open
+              </button>
+              
+                        
+              <button
+                aria-label="Close"
+                class="fd-button fd-button--transparent fd-button--compact "
+              >
+                
+                            
+                <i
+                  class="sap-icon--decline"
+                />
+                
+                        
+              </button>
+              
+                    
+            </div>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+    
+
+  </section>
+  
+
+</div>
+`;
+
 exports[`Storyshots Components/Notifications Information 1`] = `
 <div
   dir="ltr"
