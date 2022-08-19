@@ -11,7 +11,7 @@ Notifications are used to relay information to the user about a situation or tas
 * You want to make users aware of situations that require attention.
 * You intend to reduce the amount of information and actions to a minimum, but provide enough information to highlight the level of importance.
             `,
-        components: ['button', 'icon', 'notification', 'tabs', 'avatar', 'popover', 'menu', 'message-strip', 'dialog']
+        components: ['button', 'icon', 'notification', 'tabs', 'avatar', 'popover', 'menu', 'message-strip', 'dialog', 'bar', 'title']
     }
 };
 
@@ -837,10 +837,17 @@ export const InDialog = () => `
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
-                <div class="fd-bar__element">
-                    <h2 class="fd-title fd-title--h5" id="dialog-title-7">
+                <div class="fd-bar__element fd-bar__element--full-width">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-1">
                         Dialog with Notifications
                     </h2>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-button fd-button--transparent" aria-label="Close">
+                        <i class="sap-icon--decline"></i>
+                    </button>
                 </div>
             </div>
         </header>

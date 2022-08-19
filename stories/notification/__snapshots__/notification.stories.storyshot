@@ -179,18 +179,48 @@ exports[`Storyshots Components/Notifications In Dialog 1`] = `
           
                 
           <div
-            class="fd-bar__element"
+            class="fd-bar__element fd-bar__element--full-width"
           >
             
                     
             <h2
               class="fd-title fd-title--h5"
-              id="dialog-title-7"
+              id="dialog-title-1"
             >
               
                         Dialog with Notifications
                     
             </h2>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              aria-label="Close"
+              class="fd-button fd-button--transparent"
+            >
+              
+                        
+              <i
+                class="sap-icon--decline"
+              />
+              
+                    
+            </button>
             
                 
           </div>
