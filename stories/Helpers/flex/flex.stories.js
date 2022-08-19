@@ -29,7 +29,7 @@ const localStyles = `
 </style>
 `;
 
-export const flex = () => `${localStyles}
+export const Flex = () => `${localStyles}
 <div class="fd-docs-container">
     <section class="fd-flex">
         <div></div>
@@ -39,9 +39,8 @@ export const flex = () => `${localStyles}
 </div>
 
 `;
-
-flex.storyName = 'Flex Container';
-flex.parameters = {
+Flex.storyName = 'Flex Container';
+Flex.parameters = {
     docs: {
         iframeHeight: 150,
         description: {
@@ -53,252 +52,7 @@ flex.parameters = {
     }
 };
 
-export const flexDirection = () => `${localStyles}
-<div class="fd-docs-container">
-    <h4>Column</h4>
-    <section class="fd-flex fd-flex--column">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</div>
-
-`;
-
-flexDirection.storyName = 'Flex Direction';
-flexDirection.parameters = {
-    docs: {
-        iframeHeight: 150,
-        description: {
-            story: `To specify the direction of the items placed in the flex container use one of the following modifier classes: <br><br>
-            <table>
-                <tr>
-                    <th>Modifier Class</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td><code>.fd-flex--row</code></td>
-                    <td>left to right in LTR; right to left in RTL</td>
-                </tr>
-                <tr>
-                    <td><code>.fd-flex--row-reverse</code></td>
-                    <td>right to left in LTR; left to right in RTL</td>
-                </tr>
-                <tr>
-                    <td><code>.fd-flex--column</code></td>
-                    <td>top to bottom</td>
-                </tr>
-                <tr>
-                    <td><code>.fd-flex--column-reverse</code></td>
-                    <td>bottom to top</td>
-                </tr>
-            </table>
-            <b>SCSS Mixin:</b> <code>@include fd-flex(direction)</code>; <br>
-            where <code>direction</code> can be one of the following values: <code>row | row-reverse | column | column-reverse</code>
-            `
-        }
-    }
-};
-
-export const flexWrap = () => `${localStyles}
-<div class="fd-docs-container">
-    <h4>nowrap</h4>
-    <section class="fd-flex" style="max-width:30rem;">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <h4>wrap</h4>
-    <section class="fd-flex fd-flex--wrap" style="max-width:30rem;">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <h4>wrap-reverse</h4>
-    <section class="fd-flex fd-flex--wrap-reverse" style="max-width:30rem;">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</div>
-
-`;
-
-flexWrap.storyName = 'Flex Wrap';
-flexWrap.parameters = {
-    docs: {
-        iframeHeight: 150,
-        description: {
-            story: `
-<table>
-    <tr>
-        <th>Modifier Class</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--nowrap</code></td>
-        <td>(default) all children items fit onto one line</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--wrap</code></td>
-        <td>items will wrap onto multiple lines, top to bottom</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--wrap-reverse</code></td>
-        <td>items will wrap onto multiple lines, bottom to top</td>
-    </tr>
-</table><br>
-<b>SCSS Mixin:</b> 
-<code>@include fd-flex-wrap(type)</code>;<br>
-where <code>type</code> can be one of the following: <code>nowrap | wrap | wrap-reverse</code>`
-        }
-    }
-};
-
-export const flexJustify = () => `${localStyles}
-<div class="fd-docs-container">
-    <h4 style="text-align: center">flex-start | start</h4>
-    <section class="fd-flex fd-flex--justify-flex-start">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <br><br>
-    <h4 style="text-align: center">flex-end | end</h4>
-    <section class="fd-flex fd-flex--justify-flex-end">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <br><br>
-    <h4 style="text-align: center">left</h4>
-    <section class="fd-flex fd-flex--justify-left">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <br><br>
-    <h4 style="text-align: center">right</h4>
-    <section class="fd-flex fd-flex--justify-right">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <br><br>
-    <h4 style="text-align: center">center</h4>
-    <section class="fd-flex fd-flex--justify-center">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <br><br>
-    <h4 style="text-align: center">space-between</h4>
-    <section class="fd-flex fd-flex--justify-space-between">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <br><br>
-    <h4 style="text-align: center">space-around</h4>
-    <section class="fd-flex fd-flex--justify-space-around">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-
-    <br><br>
-    <h4 style="text-align: center">space-evenly</h4>
-    <section class="fd-flex fd-flex--justify-space-evenly">
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</div>
-`;
-
-flexJustify.storyName = 'Flex Justify Content';
-flexJustify.parameters = {
-    docs: {
-        iframeHeight: 150,
-        description: {
-            story: `
-<table>
-    <tr>
-        <th>Modifier Class</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-flex-start</code> | <code>.fd-flex--justify-start</code></td>
-        <td>(default) pack items toward the start of the flex-direction</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-flex-end</code> | <code>.fd-flex--justify-end</code></td>
-        <td>pack items toward the end of the flex-direction</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-left</code></td>
-        <td>pack items from the left</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-right</code></td>
-        <td>pack items from the right</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-center</code></td>
-        <td>items are centered along the line</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-space-between</code></td>
-        <td>items are distributed evenly along the line</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-space-around</code></td>
-        <td>items are evenly distributed in the line with equal space around them</td>
-    </tr>
-    <tr>
-        <td><code>.fd-flex--justify-space-evenly</code></td>
-        <td>items are distributed so that they have equal space around</td>
-    </tr>
-
-
-</table><br>
-<b>SCSS Mixin:</b> 
-<code>@include fd-flex-justify(type)</code>;<br>
-where <code>type</code> can be one of the following: <code>flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</code>`
-        }
-    }
-};
-
-export const flexAlignContent = () => `${localStyles}
+export const FlexAlignContent = () => `${localStyles}
 <div class="fd-docs-container">
     <h4 style="text-align: center">flex-start</h4>
     <section class="fd-flex fd-flex--align-content-flex-start" style="max-width:30rem;">
@@ -422,8 +176,8 @@ export const flexAlignContent = () => `${localStyles}
 
 `;
 
-flexAlignContent.storyName = 'Flex Align Content';
-flexAlignContent.parameters = {
+FlexAlignContent.storyName = 'Flex Align Content (Flex Container)';
+FlexAlignContent.parameters = {
     docs: {
         iframeHeight: 150,
         description: {
@@ -474,7 +228,7 @@ where <code>type</code> can be one of the following: <code>flex-start | flex-end
     }
 };
 
-export const flexAlignItems = () => `${localStyles}
+export const FlexAlignItems = () => `${localStyles}
 <div class="fd-docs-container">
     <h4 style="text-align: center">flex-start | start | self-start</h4>
     <section class="fd-flex fd-flex--align-items-flex-start">
@@ -553,8 +307,8 @@ export const flexAlignItems = () => `${localStyles}
 
 `;
 
-flexAlignItems.storyName = 'Flex Align Items';
-flexAlignItems.parameters = {
+FlexAlignItems.storyName = 'Flex Align Items (Flex Container)';
+FlexAlignItems.parameters = {
     docs: {
         iframeHeight: 150,
         description: {
@@ -592,7 +346,114 @@ where <code>type</code> can be one of the following: <code>flex-start | start | 
     }
 };
 
-export const flexGap = () => `${localStyles}
+export const FlexCenter = () => `${localStyles}
+<div class="fd-docs-container">
+    <h4>row center</h4>
+    <section class="fd-flex fd-flex--center" style="max-width:30rem;">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h4>column center</h4>
+    <section class="fd-flex  fd-flex--center-column" style="max-width:30rem; min-height: 20rem;">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</div>
+
+`;
+FlexCenter.storyName = 'Flex Center (Flex Container)';
+FlexCenter.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `
+
+<b>SCSS Mixin:</b> 
+<code>@include fd-flex-center(direction)</code>;<br>
+where <code>direction</code> can be one of the following: <code>row (default) | row-reverse | column | column-reverse</code>`
+        }
+    }
+};
+
+
+export const FlexDirection = () => `${localStyles}
+<div class="fd-docs-container">
+    <h4>Row</h4>
+    <section class="fd-flex fd-flex--row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</div>
+
+<div class="fd-docs-container">
+    <h4>Row Reverse</h4>
+    <section class="fd-flex fd-flex--row-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</div>
+
+<div class="fd-docs-container">
+    <h4>Column</h4>
+    <section class="fd-flex fd-flex--column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</div>
+
+<div class="fd-docs-container">
+    <h4>Column Reverse</h4>
+    <section class="fd-flex fd-flex--column-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</div>
+`;
+FlexDirection.storyName = 'Flex Direction (Flex Container)';
+FlexDirection.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `To specify the direction of the items placed in the flex container use one of the following modifier classes: <br><br>
+            <table>
+                <tr>
+                    <th>Modifier Class</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>.fd-flex--row</code></td>
+                    <td>(default) left to right in LTR; right to left in RTL</td>
+                </tr>
+                <tr>
+                    <td><code>.fd-flex--row-reverse</code></td>
+                    <td>right to left in LTR; left to right in RTL</td>
+                </tr>
+                <tr>
+                    <td><code>.fd-flex--column</code></td>
+                    <td>top to bottom</td>
+                </tr>
+                <tr>
+                    <td><code>.fd-flex--column-reverse</code></td>
+                    <td>bottom to top</td>
+                </tr>
+            </table>
+            <b>SCSS Mixin:</b> <code>@include fd-flex(direction)</code>; <br>
+            where <code>direction</code> can be one of the following values: <code>row (default) | row-reverse | column | column-reverse</code>
+            `
+        }
+    }
+};
+
+export const FlexGap = () => `${localStyles}
 <div class="fd-docs-container">
     <h4 style="text-align: center">tiny</h4>
     <section class="fd-flex fd-flex--gap-tiny">
@@ -670,9 +531,8 @@ export const flexGap = () => `${localStyles}
 </div>
 
 `;
-
-flexGap.storyName = 'Flex Gap';
-flexGap.parameters = {
+FlexGap.storyName = 'Flex Gap (Flex Container)';
+FlexGap.parameters = {
     docs: {
         iframeHeight: 150,
         description: {
@@ -755,3 +615,341 @@ where <code>type</code> is an optional parameter and can be one of the two: <cod
         }
     }
 };
+
+export const FlexJustify = () => `${localStyles}
+<div class="fd-docs-container">
+    <h4 style="text-align: center">flex-start | start</h4>
+    <section class="fd-flex fd-flex--justify-flex-start">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <h4 style="text-align: center">flex-end | end</h4>
+    <section class="fd-flex fd-flex--justify-flex-end">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <h4 style="text-align: center">left</h4>
+    <section class="fd-flex fd-flex--justify-left">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <h4 style="text-align: center">right</h4>
+    <section class="fd-flex fd-flex--justify-right">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <h4 style="text-align: center">center</h4>
+    <section class="fd-flex fd-flex--justify-center">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <h4 style="text-align: center">space-between</h4>
+    <section class="fd-flex fd-flex--justify-space-between">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <h4 style="text-align: center">space-around</h4>
+    <section class="fd-flex fd-flex--justify-space-around">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <h4 style="text-align: center">space-evenly</h4>
+    <section class="fd-flex fd-flex--justify-space-evenly">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</div>
+`;
+FlexJustify.storyName = 'Flex Justify Content (Flex Container)';
+FlexJustify.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `
+<table>
+    <tr>
+        <th>Modifier Class</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-flex-start</code> | <code>.fd-flex--justify-start</code></td>
+        <td>(default) pack items toward the start of the flex-direction</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-flex-end</code> | <code>.fd-flex--justify-end</code></td>
+        <td>pack items toward the end of the flex-direction</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-left</code></td>
+        <td>pack items from the left</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-right</code></td>
+        <td>pack items from the right</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-center</code></td>
+        <td>items are centered along the line</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-space-between</code></td>
+        <td>items are distributed evenly along the line</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-space-around</code></td>
+        <td>items are evenly distributed in the line with equal space around them</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--justify-space-evenly</code></td>
+        <td>items are distributed so that they have equal space around</td>
+    </tr>
+
+
+</table><br>
+<b>SCSS Mixin:</b> 
+<code>@include fd-flex-justify(type)</code>;<br>
+where <code>type</code> can be one of the following: <code>flex-start(default) | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</code>`
+        }
+    }
+};
+
+export const FlexWrap = () => `${localStyles}
+<div class="fd-docs-container">
+    <h4>nowrap</h4>
+    <section class="fd-flex fd-flex--nowrap" style="max-width:30rem;">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h4>wrap</h4>
+    <section class="fd-flex fd-flex--wrap" style="max-width:30rem;">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <h4>wrap-reverse</h4>
+    <section class="fd-flex fd-flex--wrap-reverse" style="max-width:30rem;">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</div>
+
+`;
+FlexWrap.storyName = 'Flex Wrap (Flex Container)';
+FlexWrap.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `
+<table>
+    <tr>
+        <th>Modifier Class</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--nowrap</code></td>
+        <td>(default) all children items fit onto one line</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--wrap</code></td>
+        <td>items will wrap onto multiple lines, top to bottom</td>
+    </tr>
+    <tr>
+        <td><code>.fd-flex--wrap-reverse</code></td>
+        <td>items will wrap onto multiple lines, bottom to top</td>
+    </tr>
+</table><br>
+<b>SCSS Mixin:</b> 
+<code>@include fd-flex-wrap(type)</code>;<br>
+where <code>type</code> can be one of the following: <code>nowrap(default) | wrap | wrap-reverse</code>`
+        }
+    }
+};
+
+export const FlexOrder = () => `${localStyles}
+<div class="fd-docs-container">
+    <section class="fd-flex" style="max-width:30rem;">
+        <div class="fd-flex-order-3">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+</div>
+
+`;
+FlexOrder.storyName = 'Flex Order (Flex Items)';
+FlexOrder.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `
+To change the order in which the flex items appear in the flex container use the <code>.fd-flex-order-*</code> class, where <b>*</b> can be a number from 0 to 20.<br>
+
+<b>SCSS Mixin:</b> 
+<code>@include fd-flex-order(value)</code>;<br>
+where <code>value</code> is an integer.`
+        }
+    }
+};
+
+export const FlexShrink = () => `${localStyles}
+<div class="fd-docs-container">
+    <section class="fd-flex" style="max-width:30rem;">
+        <div>1</div>
+        <div class="fd-flex-shrink-2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </section>
+</div>
+
+`;
+FlexShrink.storyName = 'Flex Shrink (Flex Items)';
+FlexShrink.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `
+Flex shrink defines the ability for a flex item to shrink if necessary. The class to specify it is: <code>.fd-flex-shrink-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
+
+<b>SCSS Mixin:</b> 
+<code>@include fd-flex-shrink(value)</code>;<br>
+where <code>value</code> is a positive integer.`
+        }
+    }
+};
+
+export const FlexGrow = () => `${localStyles}
+<div class="fd-docs-container">
+    <section class="fd-flex" style="max-width:30rem;">
+        <div>1</div>
+        <div class="fd-flex-grow-4">2</div>
+        <div class="fd-flex-grow-1">3</div>
+        <div>4</div>
+    </section>
+</div>
+
+`;
+FlexGrow.storyName = 'Flex Grow (Flex Items)';
+FlexGrow.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `
+Flex grow defines the ability for a flex item to grow if necessary. The class to specify it is: <code>.fd-flex-grow-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
+
+<b>SCSS Mixin:</b> 
+<code>@include fd-flex-grow(value)</code>;<br>
+where <code>value</code> is a positive integer.`
+        }
+    }
+};
+
+export const FlexAlignSelf = () => `${localStyles}
+<div class="fd-docs-container">
+    <h4>flex-end</h4>
+    <section class="fd-flex fd-flex--align-items-flex-start" style="max-width:30rem;">
+        <div>1</div>
+        <div>2</div>
+        <div class="fd-flex-align-self-flex-end">3</div>
+        <div>4</div>
+    </section>
+</div>
+
+<div class="fd-docs-container">
+    <h4>stretch</h4>
+    <section class="fd-flex fd-flex--align-items-flex-start" style="max-width:30rem;">
+        <div>1</div>
+        <div>2</div>
+        <div class="fd-flex-align-self-stretch">3</div>
+        <div>4</div>
+    </section>
+</div>
+
+<div class="fd-docs-container">
+    <h4>center</h4>
+    <section class="fd-flex fd-flex--align-items-flex-start" style="max-width:30rem;">
+        <div>1</div>
+        <div>2</div>
+        <div class="fd-flex-align-self-center">3</div>
+        <div>4</div>
+    </section>
+</div>
+
+
+`;
+FlexAlignSelf.storyName = 'Flex Align Self (Flex Items)';
+FlexAlignSelf.parameters = {
+    docs: {
+        iframeHeight: 150,
+        description: {
+            story: `
+Align-self allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. <br>
+
+<code>fd-flex-align-self-auto</code>|
+<code>fd-flex-align-self-flex-start</code>|
+<code>fd-flex-align-self-flex-end</code>|
+<code>fd-flex-align-self-center</code>|
+<code>fd-flex-align-self-baseline</code>|
+<code>fd-flex-align-self-stretch</code>
+
+<br><br>
+<b>SCSS Mixin:</b> 
+<code>@include fd-flex-align-self(value)</code>;<br>
+where <code>value</code> can be one of the following <code>auto | flex-start | flex-end | center | baseline | stretch;</code>.`
+        }
+    }
+};
+
+
