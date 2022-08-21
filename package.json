@@ -136,7 +136,7 @@
     "react-scripts": "^4.0.3",
     "regenerator-runtime": "^0.13.7",
     "rimraf": "^3.0.2",
-    "sass": "1.52.1",
+    "sass": "1.54.5",
     "sass-loader": "^10.0.2",
     "semver": "^7.3.7",
     "standard-version": "9.3.2",
