@@ -11,7 +11,19 @@ Notifications are used to relay information to the user about a situation or tas
 * You want to make users aware of situations that require attention.
 * You intend to reduce the amount of information and actions to a minimum, but provide enough information to highlight the level of importance.
             `,
-        components: ['button', 'icon', 'notification', 'tabs', 'avatar', 'popover', 'menu', 'message-strip', 'dialog', 'bar', 'title']
+        components: [
+            'button',
+            'icon',
+            'notification',
+            'tabs',
+            'avatar',
+            'popover',
+            'menu',
+            'message-strip',
+            'dialog',
+            'bar',
+            'title'
+        ]
     }
 };
 
@@ -843,16 +855,9 @@ export const InDialog = () => `
                     </h2>
                 </div>
             </div>
-            <div class="fd-bar__right">
-                <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent" aria-label="Close">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </div>
         </header>
         <div class="fd-dialog__body fd-dialog__body--no-vertical-padding fd-dialog__body--no-horizontal-padding">
-            <div class="fd-notification fd-notification--in-dialog">
+            <div class="fd-notification fd-notification--mobile fd-notification--in-dialog">
                 <div class="fd-notification__body">
                     <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
                     <div class="fd-notification__content">
@@ -875,7 +880,7 @@ export const InDialog = () => `
                     </div>
                 </div>
             </div>
-            <div class="fd-notification fd-notification--in-dialog">
+            <div class="fd-notification fd-notification--mobile fd-notification--in-dialog">
                 <div class="fd-notification__body">
                     <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail" style="background-image: url('/assets/images/avatars/3.svg')" role="img" aria-label="John Doe"></span>
                     <div class="fd-notification__content">
@@ -899,6 +904,15 @@ export const InDialog = () => `
                 </div>
             </div>
         </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </footer>
     </div>
 </section>
 `;
