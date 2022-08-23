@@ -22,14 +22,17 @@ $fd-flex-spacings: (
 
   // ----------- FLEX ALIGN CONTENT -----------
   @mixin fd-flex-align-content($type: normal) {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: $type;
+    @include fd-flex() {
+      flex-wrap: wrap;
+      align-content: $type;
+    }
 
     @content;
   }
 
-  @each $type in (flex-start flex-end center space-between space-around space-evenly stretch start end baseline) {
+  $optionsAlignContent: flex-start, flex-end, center, space-between, space-around, space-evenly, stretch, start, end, baseline;
+
+  @each $type in $optionsAlignContent {
     &--align-content-#{$type} {
       @include fd-flex-align-content(#{$type});
     }
@@ -37,20 +40,25 @@ $fd-flex-spacings: (
 
   // ----------- FLEX ALIGN ITEMS -----------
   @mixin fd-flex-align-items($type: stretch) {
-    display: flex;
-    align-items: $type;
+    @include fd-flex() {
+      align-items: $type;
+    }
 
     @content;
   }
 
-  @each $type in (stretch flex-start flex-end center baseline start end self-start self-end) {
+  $optionsAlignItems: stretch, flex-start, flex-end, center, baseline, start, end, self-start, self-end;
+
+  @each $type in $optionsAlignItems {
     &--align-items-#{$type} {
       @include fd-flex-align-items(#{$type});
     }
   }
 
   // ----------- FLEX DIRECTION -----------
-  @each $type in (row row-reverse column column-reverse) {
+  $optionsDirection: row, row-reverse, column, column-reverse;
+
+  @each $type in $optionsDirection {
     &--#{$type} {
       @include fd-flex(#{$type});
     }
@@ -59,27 +67,31 @@ $fd-flex-spacings: (
   // ----------- FLEX GAP -----------
   @each $type, $value in $fd-flex-spacings {
     &--gap-#{$type} {
-      display: flex;
-      gap: $value;
+      @include fd-flex() {
+        gap: $value;
+      }
     }
   }
 
   @each $type, $value in $fd-flex-spacings {
     &--row-gap-#{$type} {
-      display: flex;
-      row-gap: $value;
+      @include fd-flex() {
+        row-gap: $value;
+      }
     }
   }
 
   @each $type, $value in $fd-flex-spacings {
     &--column-gap-#{$type} {
-      display: flex;
-      column-gap: $value;
+      @include fd-flex() {
+        column-gap: $value;
+      }
     }
   }
 
   @mixin fd-flex-gap($value, $type: "") {
-    display: flex;
+    @include fd-flex();
+
     $_value: "";
 
     @if $value == "tiny" {
@@ -105,13 +117,16 @@ $fd-flex-spacings: (
 
   // ----------- FLEX JUSTIFY CONTENT -----------
   @mixin fd-flex-justify($type: flex-start) {
-    display: flex;
-    justify-content: $type;
+    @include fd-flex() {
+      justify-content: $type;
+    }
 
     @content;
   }
 
-  @each $type in (flex-start flex-end center space-between space-around space-evenly start end left right) {
+  $optionsJustify: flex-start, flex-end, center, space-between, space-around, space-evenly, start, end, left, right;
+
+  @each $type in $optionsJustify {
     &--justify-#{$type} {
       @include fd-flex-justify(#{$type});
     }
@@ -119,13 +134,16 @@ $fd-flex-spacings: (
 
   // ----------- FLEX WRAP -----------
   @mixin fd-flex-wrap($type: nowrap) {
-    display: flex;
-    flex-wrap: $type;
+    @include fd-flex() {
+      flex-wrap: $type;
+    }
 
     @content;
   }
 
-  @each $type in (nowrap wrap wrap-reverse) {
+  $optionsWrap: nowrap, wrap, wrap-reverse;
+
+  @each $type in $optionsWrap {
     &--#{$type} {
       @include fd-flex-wrap(#{$type});
     }
@@ -133,10 +151,11 @@ $fd-flex-spacings: (
 
   // ----------- FLEX CENTER -----------
   @mixin fd-flex-center($direction: row) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: $direction;
+    @include fd-flex() {
+      align-items: center;
+      justify-content: center;
+      flex-direction: $direction;
+    }
 
     @content;
   }
@@ -197,7 +216,9 @@ $fd-flex-spacings: (
     @content;
   }
 
-  @each $type in (auto flex-start flex-end center baseline stretch) {
+  $optionsAlignSelf: auto, flex-start, flex-end, center, baseline, stretch;
+
+  @each $type in $optionsAlignSelf {
     &-align-self-#{$type} {
       @include fd-flex-align-self(#{$type});
     }
