@@ -846,7 +846,7 @@ Error.mobile = {
 
 export const InDialog = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1">
+    <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-1" style="max-width: 40rem;">
         <header class="fd-dialog__header fd-bar fd-bar--header">
             <div class="fd-bar__left">
                 <div class="fd-bar__element fd-bar__element--full-width">
