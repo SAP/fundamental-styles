@@ -1,0 +1,15 @@
+@import './common-settings';
+
+$sap-display-types: inline block contents flex grid inline-block inline-flex inline-grid inline-table list-item run-in table table-caption table-column-group table-header-group table-footer-group table-row-group table-cell table-column table-row none initial inherit !default;
+
+@mixin sap-display($type: inline) {
+  display: $type !important;
+
+  @content;
+}
+
+@each $type in $sap-display-types {
+  .#{$sap-namespace}-display-#{$type} {
+    @include sap-display(#{$type});
+  }
+}
