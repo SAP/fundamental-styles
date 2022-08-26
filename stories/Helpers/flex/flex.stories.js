@@ -3,19 +3,19 @@ export default {
     parameters: {
         description: `The Flexbox Layout, commonly known as Flex, provides an efficient way to align and distribute elements within a container.
 `,
-        components: ['flex']
+        components: ['sap-flex']
     }
 };
 
 const localStyles = `
 <style>
-    .fd-docs-container section{
+    .sap-docs-container section{
         background: #E2EEFF;
         min-height: 8rem;
         padding: 1rem;
     }
 
-    .fd-docs-container div {
+    .sap-docs-container div {
         background: #69ADF8;
         width: 4rem;
         min-height: 2rem;
@@ -30,8 +30,8 @@ const localStyles = `
 `;
 
 export const Flex = () => `${localStyles}
-<div class="fd-docs-container">
-    <section class="fd-flex">
+<div class="sap-docs-container">
+    <section class="sap-flex">
         <div></div>
         <div></div>
         <div></div>
@@ -44,18 +44,18 @@ Flex.parameters = {
     docs: {
         iframeHeight: 150,
         description: {
-            story: `To turn a parent element into a flex container apply the <code>.fd-flex</code> class to this element. <br>
+            story: `To turn a parent element into a flex container apply the <code>.sap-flex</code> class to this element. <br>
             <b>SCSS Mixin:</b> 
-            <code>@include  fd-flex()</code>
+            <code>@include  sap-flex()</code>
             `
         }
     }
 };
 
 export const FlexAlignContent = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4 style="text-align: center">flex-start</h4>
-    <section class="fd-flex fd-flex--align-content-flex-start" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-flex-start" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -70,7 +70,7 @@ export const FlexAlignContent = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">flex-end</h4>
-    <section class="fd-flex fd-flex--align-content-flex-end" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-flex-end" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -85,7 +85,7 @@ export const FlexAlignContent = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">center</h4>
-    <section class="fd-flex fd-flex--align-content-center" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-center" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -100,7 +100,7 @@ export const FlexAlignContent = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">space-between</h4>
-    <section class="fd-flex fd-flex--align-content-space-between" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-space-between" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -115,7 +115,7 @@ export const FlexAlignContent = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">space-around</h4>
-    <section class="fd-flex fd-flex--align-content-space-around" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-space-around" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -130,7 +130,7 @@ export const FlexAlignContent = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">space-evenly</h4>
-    <section class="fd-flex fd-flex--align-content-space-evenly" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-space-evenly" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -145,7 +145,7 @@ export const FlexAlignContent = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">stretch</h4>
-    <section class="fd-flex fd-flex--align-content-stretch" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-stretch" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -160,7 +160,7 @@ export const FlexAlignContent = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">baseline</h4>
-    <section class="fd-flex fd-flex--align-content-baseline" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-content-baseline" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -188,50 +188,50 @@ FlexAlignContent.parameters = {
         <th>Description</th>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-content-flex-start</code> | <code>.fd-flex--align-content-start</code></td>
+        <td><code>.sap-flex--align-content-flex-start</code> | <code>.sap-flex--align-content-start</code></td>
         <td>pack items to the start of the container</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-content-flex-end</code> | <code>.fd-flex--align-content-end</code></td>
+        <td><code>.sap-flex--align-content-flex-end</code> | <code>.sap-flex--align-content-end</code></td>
         <td>pack items to the end of the container</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-content-center</code></td>
+        <td><code>.sap-flex--align-content-center</code></td>
         <td>items are centered in the container</td>
     </tr>
     
     <tr>
-        <td><code>.fd-flex--align-content-space-between</code></td>
+        <td><code>.sap-flex--align-content-space-between</code></td>
         <td>items are distributed evenly along the line</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-content-space-around</code></td>
+        <td><code>.sap-flex--align-content-space-around</code></td>
         <td>items are evenly distributed with equal space around each line</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-content-space-evenly</code></td>
+        <td><code>.sap-flex--align-content-space-evenly</code></td>
         <td>items are evenly distributed with equal space around them</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-content-stretch</code></td>
+        <td><code>.sap-flex--align-content-stretch</code></td>
         <td>items stretch to take up the remaining space</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-content-baseline</code></td>
+        <td><code>.sap-flex--align-content-baseline</code></td>
         <td>items are distributed along their content's baseline</td>
     </tr>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-align-content(type)</code>;<br>
+<code>@include sap-flex-align-content(type)</code>;<br>
 where <code>type</code> can be one of the following: <code>flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline</code>`
         }
     }
 };
 
 export const FlexAlignItems = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4 style="text-align: center">flex-start | start | self-start</h4>
-    <section class="fd-flex fd-flex--align-items-flex-start">
+    <section class="sap-flex sap-flex--align-items-flex-start">
         <div></div>
         <div></div>
         <div></div>
@@ -246,7 +246,7 @@ export const FlexAlignItems = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">flex-end | end | self-end</h4>
-    <section class="fd-flex fd-flex--align-items-flex-end">
+    <section class="sap-flex sap-flex--align-items-flex-end">
         <div></div>
         <div></div>
         <div></div>
@@ -261,7 +261,7 @@ export const FlexAlignItems = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">center</h4>
-    <section class="fd-flex fd-flex--align-items-center">
+    <section class="sap-flex sap-flex--align-items-center">
         <div></div>
         <div></div>
         <div></div>
@@ -276,7 +276,7 @@ export const FlexAlignItems = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">stretch</h4>
-    <section class="fd-flex fd-flex--align-items-stretch">
+    <section class="sap-flex sap-flex--align-items-stretch">
         <div></div>
         <div></div>
         <div></div>
@@ -291,7 +291,7 @@ export const FlexAlignItems = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">baseline</h4>
-    <section class="fd-flex fd-flex--align-items-baseline">
+    <section class="sap-flex sap-flex--align-items-baseline">
         <div></div>
         <div></div>
         <div></div>
@@ -319,37 +319,37 @@ FlexAlignItems.parameters = {
         <th>Description</th>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-items-flex-start</code> | <code>.fd-flex--align-items-start</code> | <code>.fd-flex--align-items-self-start</code></td>
+        <td><code>.sap-flex--align-items-flex-start</code> | <code>.sap-flex--align-items-start</code> | <code>.sap-flex--align-items-self-start</code></td>
         <td>items are placed at the start of the cross axis</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-items-flex-end</code> | <code>.fd-flex--align-items-end</code> | <code>.fd-flex--align-items-self-end</code></td>
+        <td><code>.sap-flex--align-items-flex-end</code> | <code>.sap-flex--align-items-end</code> | <code>.sap-flex--align-items-self-end</code></td>
         <td>items are placed at the end of the cross axis</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-items-center</code></td>
+        <td><code>.sap-flex--align-items-center</code></td>
         <td>items are centered in the cross-axis</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-items-stretch</code></td>
+        <td><code>.sap-flex--align-items-stretch</code></td>
         <td>(default) stretch to fill the container</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--align-items-baseline</code></td>
+        <td><code>.sap-flex--align-items-baseline</code></td>
         <td>items are aligned such as their baselines align</td>
     </tr>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-align-items(type)</code>;<br>
+<code>@include sap-flex-align-items(type)</code>;<br>
 where <code>type</code> can be one of the following: <code>flex-start | start | self-start | flex-end | end | self-end | center | baseline | stretch </code>`
         }
     }
 };
 
 export const FlexCenter = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>row center</h4>
-    <section class="fd-flex fd-flex--center" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--center" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -357,7 +357,7 @@ export const FlexCenter = () => `${localStyles}
     </section>
 
     <h4>column center</h4>
-    <section class="fd-flex  fd-flex--center-column" style="max-width:30rem; min-height: 20rem;">
+    <section class="sap-flex  sap-flex--center-column" style="max-width:30rem; min-height: 20rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -374,7 +374,7 @@ FlexCenter.parameters = {
             story: `
 
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-center(direction)</code>;<br>
+<code>@include sap-flex-center(direction)</code>;<br>
 where <code>direction</code> can be one of the following: <code>row (default) | row-reverse | column | column-reverse</code>`
         }
     }
@@ -382,36 +382,36 @@ where <code>direction</code> can be one of the following: <code>row (default) | 
 
 
 export const FlexDirection = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>Row</h4>
-    <section class="fd-flex fd-flex--row">
+    <section class="sap-flex sap-flex--row">
         <div>1</div>
         <div>2</div>
         <div>3</div>
     </section>
 </div>
 
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>Row Reverse</h4>
-    <section class="fd-flex fd-flex--row-reverse">
+    <section class="sap-flex sap-flex--row-reverse">
         <div>1</div>
         <div>2</div>
         <div>3</div>
     </section>
 </div>
 
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>Column</h4>
-    <section class="fd-flex fd-flex--column">
+    <section class="sap-flex sap-flex--column">
         <div>1</div>
         <div>2</div>
         <div>3</div>
     </section>
 </div>
 
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>Column Reverse</h4>
-    <section class="fd-flex fd-flex--column-reverse">
+    <section class="sap-flex sap-flex--column-reverse">
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -430,23 +430,23 @@ FlexDirection.parameters = {
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td><code>.fd-flex--row</code></td>
+                    <td><code>.sap-flex--row</code></td>
                     <td>(default) left to right in LTR; right to left in RTL</td>
                 </tr>
                 <tr>
-                    <td><code>.fd-flex--row-reverse</code></td>
+                    <td><code>.sap-flex--row-reverse</code></td>
                     <td>right to left in LTR; left to right in RTL</td>
                 </tr>
                 <tr>
-                    <td><code>.fd-flex--column</code></td>
+                    <td><code>.sap-flex--column</code></td>
                     <td>top to bottom</td>
                 </tr>
                 <tr>
-                    <td><code>.fd-flex--column-reverse</code></td>
+                    <td><code>.sap-flex--column-reverse</code></td>
                     <td>bottom to top</td>
                 </tr>
             </table>
-            <b>SCSS Mixin:</b> <code>@include fd-flex(direction)</code>; <br>
+            <b>SCSS Mixin:</b> <code>@include sap-flex(direction)</code>; <br>
             where <code>direction</code> can be one of the following values: <code>row (default) | row-reverse | column | column-reverse</code>
             `
         }
@@ -454,9 +454,9 @@ FlexDirection.parameters = {
 };
 
 export const FlexGap = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4 style="text-align: center">tiny</h4>
-    <section class="fd-flex fd-flex--gap-tiny">
+    <section class="sap-flex sap-flex--gap-tiny">
         <div></div>
         <div></div>
         <div></div>
@@ -471,7 +471,7 @@ export const FlexGap = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">small</h4>
-    <section class="fd-flex fd-flex--gap-small">
+    <section class="sap-flex sap-flex--gap-small">
         <div></div>
         <div></div>
         <div></div>
@@ -486,7 +486,7 @@ export const FlexGap = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">medium</h4>
-    <section class="fd-flex fd-flex--gap-medium">
+    <section class="sap-flex sap-flex--gap-medium">
         <div></div>
         <div></div>
         <div></div>
@@ -501,7 +501,7 @@ export const FlexGap = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">large</h4>
-    <section class="fd-flex fd-flex--gap-large">
+    <section class="sap-flex sap-flex--gap-large">
         <div></div>
         <div></div>
         <div></div>
@@ -516,7 +516,7 @@ export const FlexGap = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">column small</h4>
-    <section class="fd-flex fd-flex--column-gap-small">
+    <section class="sap-flex sap-flex--column-gap-small">
         <div></div>
         <div></div>
         <div></div>
@@ -543,56 +543,56 @@ FlexGap.parameters = {
         <th>Description</th>
     </tr>
     <tr>
-        <td><code>.fd-flex--gap-tiny</code></td>
+        <td><code>.sap-flex--gap-tiny</code></td>
         <td>the gap is 0.5rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--gap-small</code></td>
+        <td><code>.sap-flex--gap-small</code></td>
         <td>the gap is 1rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--gap-medium</code></td>
+        <td><code>.sap-flex--gap-medium</code></td>
         <td>the gap is 2rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--gap-large</code></td>
+        <td><code>.sap-flex--gap-large</code></td>
         <td>the gap is 3rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--row-gap-tiny</code></td>
+        <td><code>.sap-flex--row-gap-tiny</code></td>
         <td>the gap between the rows is 0.5rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--row-gap-small</code></td>
+        <td><code>.sap-flex--row-gap-small</code></td>
         <td>the gap between the rows is 1rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--row-gap-medium</code></td>
+        <td><code>.sap-flex--row-gap-medium</code></td>
         <td>the gap between the rows is 2rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--row-gap-large</code></td>
+        <td><code>.sap-flex--row-gap-large</code></td>
         <td>the gap between the rows is 3rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--column-gap-tiny</code></td>
+        <td><code>.sap-flex--column-gap-tiny</code></td>
         <td>the gap between the columns is 0.5rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--column-gap-small</code></td>
+        <td><code>.sap-flex--column-gap-small</code></td>
         <td>the gap between the columns is 1rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--column-gap-medium</code></td>
+        <td><code>.sap-flex--column-gap-medium</code></td>
         <td>the gap between the columns is 2rem</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--column-gap-large</code></td>
+        <td><code>.sap-flex--column-gap-large</code></td>
         <td>the gap between the columns is 3rem</td>
     </tr>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-gap(value, type)</code>;<br>
+<code>@include sap-flex-gap(value, type)</code>;<br>
 where <code>type</code> is an optional parameter and can be one of the two: <code>row | column </code>. <br> The <code>value</code> can be <code>tiny | small | medium | large</code> or any custom value specified by the user. <br>
 <table>
     <tr>
@@ -617,9 +617,9 @@ where <code>type</code> is an optional parameter and can be one of the two: <cod
 };
 
 export const FlexJustify = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4 style="text-align: center">flex-start | start</h4>
-    <section class="fd-flex fd-flex--justify-flex-start">
+    <section class="sap-flex sap-flex--justify-flex-start">
         <div></div>
         <div></div>
         <div></div>
@@ -627,7 +627,7 @@ export const FlexJustify = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">flex-end | end</h4>
-    <section class="fd-flex fd-flex--justify-flex-end">
+    <section class="sap-flex sap-flex--justify-flex-end">
         <div></div>
         <div></div>
         <div></div>
@@ -635,7 +635,7 @@ export const FlexJustify = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">left</h4>
-    <section class="fd-flex fd-flex--justify-left">
+    <section class="sap-flex sap-flex--justify-left">
         <div></div>
         <div></div>
         <div></div>
@@ -643,7 +643,7 @@ export const FlexJustify = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">right</h4>
-    <section class="fd-flex fd-flex--justify-right">
+    <section class="sap-flex sap-flex--justify-right">
         <div></div>
         <div></div>
         <div></div>
@@ -651,7 +651,7 @@ export const FlexJustify = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">center</h4>
-    <section class="fd-flex fd-flex--justify-center">
+    <section class="sap-flex sap-flex--justify-center">
         <div></div>
         <div></div>
         <div></div>
@@ -659,7 +659,7 @@ export const FlexJustify = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">space-between</h4>
-    <section class="fd-flex fd-flex--justify-space-between">
+    <section class="sap-flex sap-flex--justify-space-between">
         <div></div>
         <div></div>
         <div></div>
@@ -667,7 +667,7 @@ export const FlexJustify = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">space-around</h4>
-    <section class="fd-flex fd-flex--justify-space-around">
+    <section class="sap-flex sap-flex--justify-space-around">
         <div></div>
         <div></div>
         <div></div>
@@ -675,7 +675,7 @@ export const FlexJustify = () => `${localStyles}
 
     <br><br>
     <h4 style="text-align: center">space-evenly</h4>
-    <section class="fd-flex fd-flex--justify-space-evenly">
+    <section class="sap-flex sap-flex--justify-space-evenly">
         <div></div>
         <div></div>
         <div></div>
@@ -694,51 +694,51 @@ FlexJustify.parameters = {
         <th>Description</th>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-flex-start</code> | <code>.fd-flex--justify-start</code></td>
+        <td><code>.sap-flex--justify-flex-start</code> | <code>.sap-flex--justify-start</code></td>
         <td>(default) pack items toward the start of the flex-direction</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-flex-end</code> | <code>.fd-flex--justify-end</code></td>
+        <td><code>.sap-flex--justify-flex-end</code> | <code>.sap-flex--justify-end</code></td>
         <td>pack items toward the end of the flex-direction</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-left</code></td>
+        <td><code>.sap-flex--justify-left</code></td>
         <td>pack items from the left</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-right</code></td>
+        <td><code>.sap-flex--justify-right</code></td>
         <td>pack items from the right</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-center</code></td>
+        <td><code>.sap-flex--justify-center</code></td>
         <td>items are centered along the line</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-space-between</code></td>
+        <td><code>.sap-flex--justify-space-between</code></td>
         <td>items are distributed evenly along the line</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-space-around</code></td>
+        <td><code>.sap-flex--justify-space-around</code></td>
         <td>items are evenly distributed in the line with equal space around them</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--justify-space-evenly</code></td>
+        <td><code>.sap-flex--justify-space-evenly</code></td>
         <td>items are distributed so that they have equal space around</td>
     </tr>
 
 
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-justify(type)</code>;<br>
+<code>@include sap-flex-justify(type)</code>;<br>
 where <code>type</code> can be one of the following: <code>flex-start(default) | flex-end | center | space-between | space-around | space-evenly | start | end | left | right</code>`
         }
     }
 };
 
 export const FlexWrap = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>nowrap</h4>
-    <section class="fd-flex fd-flex--nowrap" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--nowrap" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -752,7 +752,7 @@ export const FlexWrap = () => `${localStyles}
     </section>
 
     <h4>wrap</h4>
-    <section class="fd-flex fd-flex--wrap" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--wrap" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -766,7 +766,7 @@ export const FlexWrap = () => `${localStyles}
     </section>
 
     <h4>wrap-reverse</h4>
-    <section class="fd-flex fd-flex--wrap-reverse" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--wrap-reverse" style="max-width:30rem;">
         <div></div>
         <div></div>
         <div></div>
@@ -793,29 +793,29 @@ FlexWrap.parameters = {
         <th>Description</th>
     </tr>
     <tr>
-        <td><code>.fd-flex--nowrap</code></td>
+        <td><code>.sap-flex--nowrap</code></td>
         <td>(default) all children items fit onto one line</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--wrap</code></td>
+        <td><code>.sap-flex--wrap</code></td>
         <td>items will wrap onto multiple lines, top to bottom</td>
     </tr>
     <tr>
-        <td><code>.fd-flex--wrap-reverse</code></td>
+        <td><code>.sap-flex--wrap-reverse</code></td>
         <td>items will wrap onto multiple lines, bottom to top</td>
     </tr>
 </table><br>
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-wrap(type)</code>;<br>
+<code>@include sap-flex-wrap(type)</code>;<br>
 where <code>type</code> can be one of the following: <code>nowrap(default) | wrap | wrap-reverse</code>`
         }
     }
 };
 
 export const FlexOrder = () => `${localStyles}
-<div class="fd-docs-container">
-    <section class="fd-flex" style="max-width:30rem;">
-        <div class="fd-flex-order-3">1</div>
+<div class="sap-docs-container">
+    <section class="sap-flex" style="max-width:30rem;">
+        <div class="sap-flex-order-3">1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
@@ -829,20 +829,20 @@ FlexOrder.parameters = {
         iframeHeight: 150,
         description: {
             story: `
-To change the order in which the flex items appear in the flex container use the <code>.fd-flex-order-*</code> class, where <b>*</b> can be a number from 0 to 20.<br>
+To change the order in which the flex items appear in the flex container use the <code>.sap-flex-order-*</code> class, where <b>*</b> can be a number from 0 to 20.<br>
 
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-order(value)</code>;<br>
+<code>@include sap-flex-order(value)</code>;<br>
 where <code>value</code> is an integer.`
         }
     }
 };
 
 export const FlexShrink = () => `${localStyles}
-<div class="fd-docs-container">
-    <section class="fd-flex" style="max-width:30rem;">
+<div class="sap-docs-container">
+    <section class="sap-flex" style="max-width:30rem;">
         <div>1</div>
-        <div class="fd-flex-shrink-2">2</div>
+        <div class="sap-flex-shrink-2">2</div>
         <div>3</div>
         <div>4</div>
         <div>5</div>
@@ -861,21 +861,21 @@ FlexShrink.parameters = {
         iframeHeight: 150,
         description: {
             story: `
-Flex shrink defines the ability for a flex item to shrink if necessary. The class to specify it is: <code>.fd-flex-shrink-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
+Flex shrink defines the ability for a flex item to shrink if necessary. The class to specify it is: <code>.sap-flex-shrink-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
 
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-shrink(value)</code>;<br>
+<code>@include sap-flex-shrink(value)</code>;<br>
 where <code>value</code> is a positive integer.`
         }
     }
 };
 
 export const FlexGrow = () => `${localStyles}
-<div class="fd-docs-container">
-    <section class="fd-flex" style="max-width:30rem;">
+<div class="sap-docs-container">
+    <section class="sap-flex" style="max-width:30rem;">
         <div>1</div>
-        <div class="fd-flex-grow-4">2</div>
-        <div class="fd-flex-grow-1">3</div>
+        <div class="sap-flex-grow-4">2</div>
+        <div class="sap-flex-grow-1">3</div>
         <div>4</div>
     </section>
 </div>
@@ -887,42 +887,42 @@ FlexGrow.parameters = {
         iframeHeight: 150,
         description: {
             story: `
-Flex grow defines the ability for a flex item to grow if necessary. The class to specify it is: <code>.fd-flex-grow-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
+Flex grow defines the ability for a flex item to grow if necessary. The class to specify it is: <code>.sap-flex-grow-*</code>, where <b>*</b> can be a number from 0 to 20. Negative numbers are invalid.<br>
 
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-grow(value)</code>;<br>
+<code>@include sap-flex-grow(value)</code>;<br>
 where <code>value</code> is a positive integer.`
         }
     }
 };
 
 export const FlexAlignSelf = () => `${localStyles}
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>flex-end</h4>
-    <section class="fd-flex fd-flex--align-items-flex-start" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-items-flex-start" style="max-width:30rem;">
         <div>1</div>
         <div>2</div>
-        <div class="fd-flex-align-self-flex-end">3</div>
+        <div class="sap-flex-align-self-flex-end">3</div>
         <div>4</div>
     </section>
 </div>
 
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>stretch</h4>
-    <section class="fd-flex fd-flex--align-items-flex-start" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-items-flex-start" style="max-width:30rem;">
         <div>1</div>
         <div>2</div>
-        <div class="fd-flex-align-self-stretch">3</div>
+        <div class="sap-flex-align-self-stretch">3</div>
         <div>4</div>
     </section>
 </div>
 
-<div class="fd-docs-container">
+<div class="sap-docs-container">
     <h4>center</h4>
-    <section class="fd-flex fd-flex--align-items-flex-start" style="max-width:30rem;">
+    <section class="sap-flex sap-flex--align-items-flex-start" style="max-width:30rem;">
         <div>1</div>
         <div>2</div>
-        <div class="fd-flex-align-self-center">3</div>
+        <div class="sap-flex-align-self-center">3</div>
         <div>4</div>
     </section>
 </div>
@@ -937,16 +937,16 @@ FlexAlignSelf.parameters = {
             story: `
 Align-self allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. <br>
 
-<code>fd-flex-align-self-auto</code>|
-<code>fd-flex-align-self-flex-start</code>|
-<code>fd-flex-align-self-flex-end</code>|
-<code>fd-flex-align-self-center</code>|
-<code>fd-flex-align-self-baseline</code>|
-<code>fd-flex-align-self-stretch</code>
+<code>sap-flex-align-self-auto</code>|
+<code>sap-flex-align-self-flex-start</code>|
+<code>sap-flex-align-self-flex-end</code>|
+<code>sap-flex-align-self-center</code>|
+<code>sap-flex-align-self-baseline</code>|
+<code>sap-flex-align-self-stretch</code>
 
 <br><br>
 <b>SCSS Mixin:</b> 
-<code>@include fd-flex-align-self(value)</code>;<br>
+<code>@include sap-flex-align-self(value)</code>;<br>
 where <code>value</code> can be one of the following <code>auto | flex-start | flex-end | center | baseline | stretch;</code>.`
         }
     }

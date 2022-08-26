@@ -1,8 +1,8 @@
-@import './new-settings';
+@import './common-settings';
 
-$block: #{$fd-namespace}-flex;
+$block: #{$sap-namespace}-flex;
 
-$fd-flex-spacings: (
+$sap-flex-spacings: (
   "tiny": 0.5rem,
   "small": 1rem,
   "medium": 2rem,
@@ -11,18 +11,18 @@ $fd-flex-spacings: (
 
 .#{$block} {
   // Properties for the Parent (flex container)
-  @mixin fd-flex($direction: row) {
+  @mixin sap-flex($direction: row) {
     display: flex;
     flex-direction: $direction;
 
     @content;
   }
 
-  @include fd-flex();
+  @include sap-flex();
 
   // ----------- FLEX ALIGN CONTENT -----------
-  @mixin fd-flex-align-content($type: normal) {
-    @include fd-flex() {
+  @mixin sap-flex-align-content($type: normal) {
+    @include sap-flex() {
       flex-wrap: wrap;
       align-content: $type;
     }
@@ -34,13 +34,13 @@ $fd-flex-spacings: (
 
   @each $type in $optionsAlignContent {
     &--align-content-#{$type} {
-      @include fd-flex-align-content(#{$type});
+      @include sap-flex-align-content(#{$type});
     }
   }
 
   // ----------- FLEX ALIGN ITEMS -----------
-  @mixin fd-flex-align-items($type: stretch) {
-    @include fd-flex() {
+  @mixin sap-flex-align-items($type: stretch) {
+    @include sap-flex() {
       align-items: $type;
     }
 
@@ -51,7 +51,7 @@ $fd-flex-spacings: (
 
   @each $type in $optionsAlignItems {
     &--align-items-#{$type} {
-      @include fd-flex-align-items(#{$type});
+      @include sap-flex-align-items(#{$type});
     }
   }
 
@@ -60,48 +60,48 @@ $fd-flex-spacings: (
 
   @each $type in $optionsDirection {
     &--#{$type} {
-      @include fd-flex(#{$type});
+      @include sap-flex(#{$type});
     }
   }
 
   // ----------- FLEX GAP -----------
-  @each $type, $value in $fd-flex-spacings {
+  @each $type, $value in $sap-flex-spacings {
     &--gap-#{$type} {
-      @include fd-flex() {
+      @include sap-flex() {
         gap: $value;
       }
     }
   }
 
-  @each $type, $value in $fd-flex-spacings {
+  @each $type, $value in $sap-flex-spacings {
     &--row-gap-#{$type} {
-      @include fd-flex() {
+      @include sap-flex() {
         row-gap: $value;
       }
     }
   }
 
-  @each $type, $value in $fd-flex-spacings {
+  @each $type, $value in $sap-flex-spacings {
     &--column-gap-#{$type} {
-      @include fd-flex() {
+      @include sap-flex() {
         column-gap: $value;
       }
     }
   }
 
-  @mixin fd-flex-gap($value, $type: "") {
-    @include fd-flex();
+  @mixin sap-flex-gap($value, $type: "") {
+    @include sap-flex();
 
     $_value: "";
 
     @if $value == "tiny" {
-      $_value: map_get($fd-flex-spacings, "tiny");
+      $_value: map_get($sap-flex-spacings, "tiny");
     } @else if $value == "small" {
-      $_value: map_get($fd-flex-spacings, "small");
+      $_value: map_get($sap-flex-spacings, "small");
     } @else if $value == "medium" {
-      $_value: map_get($fd-flex-spacings, "medium");
+      $_value: map_get($sap-flex-spacings, "medium");
     } @else if $value == large {
-      $_value: map_get($fd-flex-spacings, "large");
+      $_value: map_get($sap-flex-spacings, "large");
     } @else {
       $_value: $value;
     }
@@ -116,8 +116,8 @@ $fd-flex-spacings: (
   }
 
   // ----------- FLEX JUSTIFY CONTENT -----------
-  @mixin fd-flex-justify($type: flex-start) {
-    @include fd-flex() {
+  @mixin sap-flex-justify($type: flex-start) {
+    @include sap-flex() {
       justify-content: $type;
     }
 
@@ -128,13 +128,13 @@ $fd-flex-spacings: (
 
   @each $type in $optionsJustify {
     &--justify-#{$type} {
-      @include fd-flex-justify(#{$type});
+      @include sap-flex-justify(#{$type});
     }
   }
 
   // ----------- FLEX WRAP -----------
-  @mixin fd-flex-wrap($type: nowrap) {
-    @include fd-flex() {
+  @mixin sap-flex-wrap($type: nowrap) {
+    @include sap-flex() {
       flex-wrap: $type;
     }
 
@@ -145,13 +145,13 @@ $fd-flex-spacings: (
 
   @each $type in $optionsWrap {
     &--#{$type} {
-      @include fd-flex-wrap(#{$type});
+      @include sap-flex-wrap(#{$type});
     }
   }
 
   // ----------- FLEX CENTER -----------
-  @mixin fd-flex-center($direction: row) {
-    @include fd-flex() {
+  @mixin sap-flex-center($direction: row) {
+    @include sap-flex() {
       align-items: center;
       justify-content: center;
       flex-direction: $direction;
@@ -161,17 +161,17 @@ $fd-flex-spacings: (
   }
 
   &--center {
-    @include fd-flex-center();
+    @include sap-flex-center();
 
     &-column {
-      @include fd-flex-center(column);
+      @include sap-flex-center(column);
     }
   }
 
   // Properties for the Children (flex items)
 
   // ----------- FLEX ORDER -----------
-  @mixin fd-flex-order($value: 0) {
+  @mixin sap-flex-order($value: 0) {
     order: $value;
 
     @content;
@@ -179,12 +179,12 @@ $fd-flex-spacings: (
 
   @for $i from 0 through 20 {
     &-order-#{$i} {
-      @include fd-flex-order(#{$i});
+      @include sap-flex-order(#{$i});
     }
   }
 
   // ----------- FLEX GROW -----------
-  @mixin fd-flex-grow($value) {
+  @mixin sap-flex-grow($value) {
     flex-grow: $value;
 
     @content;
@@ -192,12 +192,12 @@ $fd-flex-spacings: (
 
   @for $i from 1 through 20 {
     &-grow-#{$i} {
-      @include fd-flex-grow(#{$i});
+      @include sap-flex-grow(#{$i});
     }
   }
 
   // ----------- FLEX SHRINK -----------
-  @mixin fd-flex-shrink($value) {
+  @mixin sap-flex-shrink($value) {
     flex-shrink: $value;
 
     @content;
@@ -205,12 +205,12 @@ $fd-flex-spacings: (
 
   @for $i from 1 through 20 {
     &-shrink-#{$i} {
-      @include fd-flex-shrink(#{$i});
+      @include sap-flex-shrink(#{$i});
     }
   }
 
   // ----------- FLEX ALIGN SELF -----------
-  @mixin fd-flex-align-self($value) {
+  @mixin sap-flex-align-self($value) {
     align-self: $value;
 
     @content;
@@ -220,12 +220,12 @@ $fd-flex-spacings: (
 
   @each $type in $optionsAlignSelf {
     &-align-self-#{$type} {
-      @include fd-flex-align-self(#{$type});
+      @include sap-flex-align-self(#{$type});
     }
   }
 
   // ----------- FLEX CHILD -----------
-  @mixin fd-flex-child($value) {
+  @mixin sap-flex-child($value) {
     flex: $value;
 
     @content;
