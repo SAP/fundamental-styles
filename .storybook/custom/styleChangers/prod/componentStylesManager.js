@@ -12,6 +12,9 @@ export default (managedBy) => {
         if (!stylePath.startsWith('fn-')) {
             return `${stylePath}.css`;
         }
+        if (!stylePath.startsWith('sap-')) {
+            return `${stylePath}.css`;
+        }
         return `${stylePath}.css`;
     };
 

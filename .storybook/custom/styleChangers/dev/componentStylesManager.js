@@ -7,6 +7,9 @@ export default (manager) => {
         if (componentName.startsWith('fn-')) {
             return `fn/${componentName}.scss`;
         }
+        if (componentName.startsWith('sap-')) {
+            return `common-css/${componentName}.scss`;
+        }
         return `styles/${componentName}.scss`;
     };
 
