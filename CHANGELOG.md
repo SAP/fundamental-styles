@@ -1,3 +1,12 @@
+# [0.25.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.4...v0.25.0-rc.5) (2022-08-26)
+
+
+### Features
+
+* **styles:** add display and sr-only to helpers [ci visual] ([#3822](https://github.com/SAP/fundamental-styles/issues/3822)) ([248bee8](https://github.com/SAP/fundamental-styles/commit/248bee80310958d078f2597f7261390d5a37fafc))
+
+
+
 # [0.25.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.3...v0.25.0-rc.4) (2022-08-18)
 
 
