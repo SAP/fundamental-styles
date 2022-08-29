@@ -76,6 +76,7 @@ $block: #{$fd-namespace}-shellbar;
   }
 
   &__title {
+    @include fd-fiori-focus(0); 
     font-weight: bold;
     vertical-align: middle;
   }
