@@ -4,6 +4,7 @@ export default (manager) => {
     let managedBy = manager;
 
     const getComponentStylePath = (componentName) => {
+        console.log("------1--->>>>",componentName);
         if (componentName.startsWith('fn-')) {
             return `fn/${componentName}.scss`;
         }

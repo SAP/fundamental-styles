@@ -8,6 +8,7 @@ export default (managedBy) => {
     const lazyLoader = getLazyLoader(styleLinkTag);
 
     const getComponentStylePath = (componentName) => {
+        console.log("-----2---->>>>",componentName);
         let stylePath = `${componentName}`;
         if (!stylePath.startsWith('fn-')) {
             return `${stylePath}.css`;
