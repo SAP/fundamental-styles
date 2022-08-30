@@ -73,6 +73,10 @@ $gridCol: #{$fd-namespace}-col;
   .#{$formGroup} {
     padding: 1rem !important;
 
+    .#{$formGroup} {
+      padding: 0 !important;
+    }
+
     .#{$formItem} {
       &--compact {
         .#{$fd-namespace}-select__control {
@@ -102,7 +106,10 @@ $gridCol: #{$fd-namespace}-col;
 
       padding-top: 0;
       padding-bottom: 0;
-      align-self: center;
+
+      &:not(.#{$formGroup}) {
+        align-self: center;
+      }
     }
   }
 }
