@@ -36,7 +36,7 @@ const addons = [
 ];
 
 if (isProduction) {
-    staticDirs.push('../dist/', '../dist-fn/dist/');
+    staticDirs.push('../dist/', '../dist-fn/dist/', '../dist-common-css/dist/');
 }
 
 module.exports = {
