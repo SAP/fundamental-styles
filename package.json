@@ -93,6 +93,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.1.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "bundlesize": "^0.18.1",
     "case": "^1.6.3",
     "chromatic": "^6.0.4",
