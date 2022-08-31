@@ -101,6 +101,8 @@ $gridCol: #{$fd-namespace}-col;
   }
 
   .#{$gridRow} {
+    flex-direction: row;
+
     .#{$gridCol} {
       @include fd-ellipsis();
 
