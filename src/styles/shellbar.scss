@@ -147,6 +147,9 @@ $block: #{$fd-namespace}-shellbar;
 
       &--select {
         font-style: normal;
+        display: flex;
+        align-items: center;
+        height: 100%;
       }
     }
 
