@@ -1,3 +1,12 @@
+# [0.25.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.5...v0.25.0-rc.6) (2022-09-01)
+
+
+### Features
+
+* **styles:** add flex to common css (helpers) ([#3816](https://github.com/SAP/fundamental-styles/issues/3816)) ([85c961c](https://github.com/SAP/fundamental-styles/commit/85c961cd790440beef36a1b58e0b5cd3bd65a63f))
+
+
+
 # [0.25.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.4...v0.25.0-rc.5) (2022-08-26)
 
 
