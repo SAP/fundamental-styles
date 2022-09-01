@@ -3,6 +3,8 @@
 
 $block: #{$fd-namespace}-list;
 
+$objectListBlock: #{$fd-namespace}-object-list;
+
 $fd-list-item-padding-x: 1rem !default;
 $fd-list-large-font-size: var(--sapFontLargeSize) !default;
 $fd-list-normal-font-size: var(--sapFontSize) !default;

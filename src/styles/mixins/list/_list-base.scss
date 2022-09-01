@@ -240,7 +240,7 @@
     @include fd-set-margin-left(var(--fdList_Button_Spacing));
   }
 
-  &--compact {
+  &--compact:not(.#{$objectListBlock}) {
     .#{$block}__item {
       height: 2rem;
     }
