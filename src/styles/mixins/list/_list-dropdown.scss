@@ -10,17 +10,20 @@ $fd-checkbox-dimensions: 1.375rem !default;
       outline: none;
     }
 
-    .#{$block}__item {
+    .#{$block}__item:not(.#{$block}__group-header) {
+      @include fd-flex-vertical-center();
       @include fd-list-item-states();
 
       height: auto;
-      padding: $fd-list-dropdown-vertical-padding $fd-list-item-padding-x;
+      min-height: 2.5rem;
+      padding: 0 $fd-list-item-padding-x;
     }
 
     &.#{$block}--compact {
-      .#{$block}__item {
+      .#{$block}__item:not(.#{$block}__group-header) {
         height: auto;
-        padding: $fd-list-dropdown-vertical-compact-padding $fd-list-item-padding-x;
+        min-height: 2rem;
+        padding: 0 $fd-list-item-padding-x;
       }
     }
   }
