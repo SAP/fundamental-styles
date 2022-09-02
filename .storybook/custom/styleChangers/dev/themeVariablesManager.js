@@ -8,9 +8,21 @@ export default (manager) => {
     const styleLinkTag = generateStyleLinkTagFn(manager);
     const lazyLoader = getLazyLoader(styleLinkTag);
     const themeVariablesLazyLoader = (themeName) => {
-        const {
-            default: { use, unuse }
-        } = require(`../../../../src/styles/theming/${themeName}.scss`);
+        const { default: { use, unuse } } = require(`../../../../src/styles/theming/${themeName}.scss`);
+        return {
+            use: () => {
+                use({
+                    attributes: {
+                        ['data-managedBy']: manager
+                    }
+                });
+            },
+            unuse
+        };
+    };
+    const themeFontsLazyLoader = (themeName) => {
+        const baseTheme = themeName.startsWith('sap_fiori_3') ? 'sap_fiori_3' : 'sap_horizon';
+        const { default: { use, unuse } } = require(`../../../../src/fonts/${baseTheme}_fonts.scss`);
         return {
             use: () => {
                 use({
@@ -31,14 +43,20 @@ export default (manager) => {
         acc[value] = themeVariablesLazyLoader(value);
         return acc;
     }, {});
+    const fontVariables = availableThemes.reduce((acc, { value }) => {
+        acc[value] = themeFontsLazyLoader(value);
+        return acc;
+    }, {});
 
     return {
         use: (themeName) => {
             baseVariables[themeName].use();
             styleVariables[themeName].use();
+            fontVariables[themeName].use();
             if (currentTheme && currentTheme !== themeName) {
                 baseVariables[currentTheme].unuse();
                 styleVariables[currentTheme].unuse();
+                fontVariables[currentTheme].unuse();
             }
             currentTheme = themeName;
         }
