@@ -5701,9 +5701,9 @@ chownr@^2.0.0:
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
 chromatic@^6.0.4:
-  version "6.7.4"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.7.4.tgz#2fa8d5e0fca75d3720cd894b156653d070bf1824"
-  integrity sha512-QW4i8RQsON0JVnFnRf+8y70aIJptvC0Oi/26YJ669Dl03WmJRpobNO5qWFPTiv3KFKMc1Qf6/qFsRVZCtn+bfA==
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.9.0.tgz#6ca326d2157263a7ffa73cde2ca2d0ea9d5cd816"
+  integrity sha512-ykfUHLyznZTPi8djKMfrBoOpWinSUfa2HDLmvHgYc2e6Jc4Oqm5jYW9S7l92navSF+EOzov90L7W8rX2NpiBjQ==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     "@types/webpack-env" "^1.17.0"
