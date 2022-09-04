@@ -126,7 +126,7 @@
     "postcss-banner": "^4.0.0",
     "postcss-cli": "^9.0.1",
     "postcss-custom-properties": "^11.0.0",
-    "postcss-import": "^14.0.1",
+    "postcss-import": "^15.0.0",
     "postcss-normalize-charset": "^4.0.1",
     "pretty": "^2.0.0",
     "puppeteer": "9.1.1",
