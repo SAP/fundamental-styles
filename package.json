@@ -91,7 +91,7 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/preset-scss": "^1.0.3",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^27.1.0",
+    "babel-jest": "^29.0.2",
     "babel-loader": "^8.1.0",
     "bundlesize": "^0.18.1",
     "case": "^1.6.3",
