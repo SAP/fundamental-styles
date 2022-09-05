@@ -181,7 +181,8 @@ $fd-card-header-outline-offset: 0.0625rem !default;
     @include line-clamp(3);
 
     font-family: var(--sapFontHeaderFamily);
-    font-size: var(--sapFontHeader5Size);
+    font-size: var(--fdCard_Title_Font_Size);
+    font-weight: var(--fdCard_Title_Font_Weight);
     color: var(--sapTile_TitleTextColor);
     word-wrap: break-word;
     max-height: 4.2rem;
