@@ -1,3 +1,12 @@
+# [0.25.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.6...v0.25.0-rc.7) (2022-09-06)
+
+
+### Bug Fixes
+
+* **styles:** add fix for Table footer bachground [ci visual] ([#3836](https://github.com/SAP/fundamental-styles/issues/3836)) ([6bfff85](https://github.com/SAP/fundamental-styles/commit/6bfff8553cfddc652c73244cf7b4ace339d4e386))
+
+
+
 # [0.25.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.5...v0.25.0-rc.6) (2022-09-01)
 
 
