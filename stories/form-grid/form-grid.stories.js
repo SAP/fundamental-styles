@@ -665,7 +665,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
     }
 };
 
-export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical" style="max-width:1440px">
   <div class="fd-row">
     <div class="fd-col fd-col-lg--6 fd-col--wrap fd-form-group">
       <div class="fd-row fd-form-item">
@@ -1183,7 +1183,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
+export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
 
@@ -1618,7 +1618,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
 </div>
 
 <h2>Layout 5</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-group">
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col--wrap fd-form-item">
       <div class="fd-row">

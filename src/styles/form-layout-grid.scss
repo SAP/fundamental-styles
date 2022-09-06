@@ -30,8 +30,6 @@ $gridCol: #{$fd-namespace}-col;
   .#{$gridContainer}.#{$formContainer} .#{$gridRow} {
     @for $col from 1 through $cols - 1 {
       .#{$colSelector}--#{$col} {
-        @include fd-form-vertical();
-
         > .#{$fd-namespace}-form-label {
           float: right;
           text-align: right;

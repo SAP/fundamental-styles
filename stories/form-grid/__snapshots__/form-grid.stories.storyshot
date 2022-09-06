@@ -2339,7 +2339,7 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
   
 
   <div
-    class="fd-container fd-form-layout-grid-container fd-form-group"
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group"
   >
     
   
@@ -2762,7 +2762,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
   dir="ltr"
 >
   <div
-    class="fd-container fd-form-layout-grid-container"
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical"
     style="max-width:1440px"
   >
     
@@ -3369,7 +3369,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
   dir="ltr"
 >
   <div
-    class="fd-container fd-form-layout-grid-container"
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical"
   >
     
   
