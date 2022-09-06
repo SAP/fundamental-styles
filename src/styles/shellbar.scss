@@ -146,9 +146,9 @@ $block: #{$fd-namespace}-shellbar;
       }
 
       &--select {
+        @include fd-flex-vertical-center();
+
         font-style: normal;
-        display: flex;
-        align-items: center;
         height: 100%;
       }
     }
