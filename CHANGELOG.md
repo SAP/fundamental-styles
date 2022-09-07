@@ -1,3 +1,12 @@
+# [0.25.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.11...v0.25.0-rc.12) (2022-09-07)
+
+
+### Bug Fixes
+
+* **docs:** icon fonts switching, unloading theme variables bug ([#3853](https://github.com/SAP/fundamental-styles/issues/3853)) ([c760c77](https://github.com/SAP/fundamental-styles/commit/c760c7755cd06edb3dd0597f4e1db7834e090a10))
+
+
+
 # [0.25.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.10...v0.25.0-rc.11) (2022-09-07)
 
 
