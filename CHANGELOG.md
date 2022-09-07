@@ -1,3 +1,12 @@
+# [0.25.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.10...v0.25.0-rc.11) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** button fonts ([#3855](https://github.com/SAP/fundamental-styles/issues/3855)) ([c86d5f9](https://github.com/SAP/fundamental-styles/commit/c86d5f9f6fb5efed7955f12513632f0a56c60a83))
+
+
+
 # [0.25.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.9...v0.25.0-rc.10) (2022-09-07)
 
 
