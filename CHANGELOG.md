@@ -1,3 +1,12 @@
+# [0.25.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.12...v0.25.0-rc.13) (2022-09-07)
+
+
+### Features
+
+* **styles:** add many elements to common css ([#3859](https://github.com/SAP/fundamental-styles/issues/3859)) ([eed342c](https://github.com/SAP/fundamental-styles/commit/eed342c559a9d7c808173b12be108567e0a534f1))
+
+
+
 # [0.25.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.11...v0.25.0-rc.12) (2022-09-07)
 
 
