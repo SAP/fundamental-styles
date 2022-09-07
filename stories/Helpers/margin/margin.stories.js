@@ -377,22 +377,22 @@ EndMargin.parameters = {
 };
 
 export const HorizontalMargin = () => `${localStyles}
-<h3>End Tiny (0.5rem)</h3>
+<h3>Horizontal Tiny (0.5rem)</h3>
 <div class="demo">
     <div class="sap-margin-x-tiny"></div>
 </div>
 <br>
-<h3>End Small (1rem)</h3>
+<h3>Horizontal Small (1rem)</h3>
 <div class="demo">
     <div class="sap-margin-x-small"></div>
 </div>
 <br>
-<h3>End Medium (2rem)</h3>
+<h3>Horizontal Medium (2rem)</h3>
 <div class="demo">
     <div class="sap-margin-x-medium"></div>
 </div>
 <br>
-<h3>End Large (3rem)</h3>
+<h3>Horizontal Large (3rem)</h3>
 <div class="demo">
     <div class="sap-margin-x-large"></div>
 </div>
@@ -436,22 +436,22 @@ HorizontalMargin.parameters = {
 };
 
 export const VerticalMargin = () => `${localStyles}
-<h3>End Tiny (0.5rem)</h3>
+<h3>Vertical Tiny (0.5rem)</h3>
 <div class="demo">
     <div class="sap-margin-y-tiny"></div>
 </div>
 <br>
-<h3>End Small (1rem)</h3>
+<h3>Vertical Small (1rem)</h3>
 <div class="demo">
     <div class="sap-margin-y-small"></div>
 </div>
 <br>
-<h3>End Medium (2rem)</h3>
+<h3>Vertical Medium (2rem)</h3>
 <div class="demo">
     <div class="sap-margin-y-medium"></div>
 </div>
 <br>
-<h3>End Large (3rem)</h3>
+<h3>Vertical Large (3rem)</h3>
 <div class="demo">
     <div class="sap-margin-y-large"></div>
 </div>

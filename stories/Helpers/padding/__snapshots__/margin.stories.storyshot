@@ -464,7 +464,7 @@ exports[`Storyshots Helpers/Margins Horizontal Margins 1`] = `
 
 
   <h3>
-    Horizontal Tiny (0.5rem)
+    End Tiny (0.5rem)
   </h3>
   
 
@@ -485,7 +485,7 @@ exports[`Storyshots Helpers/Margins Horizontal Margins 1`] = `
   
 
   <h3>
-    Horizontal Small (1rem)
+    End Small (1rem)
   </h3>
   
 
@@ -506,7 +506,7 @@ exports[`Storyshots Helpers/Margins Horizontal Margins 1`] = `
   
 
   <h3>
-    Horizontal Medium (2rem)
+    End Medium (2rem)
   </h3>
   
 
@@ -527,7 +527,7 @@ exports[`Storyshots Helpers/Margins Horizontal Margins 1`] = `
   
 
   <h3>
-    Horizontal Large (3rem)
+    End Large (3rem)
   </h3>
   
 
@@ -833,7 +833,7 @@ exports[`Storyshots Helpers/Margins Vertical Margins 1`] = `
 
 
   <h3>
-    Vertical Tiny (0.5rem)
+    End Tiny (0.5rem)
   </h3>
   
 
@@ -854,7 +854,7 @@ exports[`Storyshots Helpers/Margins Vertical Margins 1`] = `
   
 
   <h3>
-    Vertical Small (1rem)
+    End Small (1rem)
   </h3>
   
 
@@ -875,7 +875,7 @@ exports[`Storyshots Helpers/Margins Vertical Margins 1`] = `
   
 
   <h3>
-    Vertical Medium (2rem)
+    End Medium (2rem)
   </h3>
   
 
@@ -896,7 +896,7 @@ exports[`Storyshots Helpers/Margins Vertical Margins 1`] = `
   
 
   <h3>
-    Vertical Large (3rem)
+    End Large (3rem)
   </h3>
   
 
