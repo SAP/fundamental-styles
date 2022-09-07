@@ -165,50 +165,11 @@
   @content;
 }
 
-// Set Margins
-@mixin sap-set-margin-left($left: 0) {
-  margin-left: $left;
-
-  @include fn-rtl() {
-    margin-right: $left;
-    margin-left: 0;
-  }
-}
-
-@mixin sap-set-margin-right($right: 0) {
-  margin-right: $right;
-
-  @include fn-rtl() {
-    margin-right: 0;
-    margin-left: $right;
-  }
-}
-
-@mixin sap-set-margin-y-equal($value: 0) {
-  margin-top: $value;
-  margin-bottom: $value;
-}
-
-@mixin sap-set-margins-x($left: 0, $right: 0) {
-  margin-left: $left;
-  margin-right: $right;
-
-  @include fn-rtl() {
-    margin-right: $left;
-    margin-left: $right;
-  }
-}
-
-@mixin sap-set-margins-x-equal($value: 0) {
-  margin-left: $value;
-  margin-right: $value;
-}
-
 // Set Paddings
 @mixin sap-set-padding-left($left: 0) {
   padding-left: $left;
 
-  @include fn-rtl() {
+  @include sap-rtl() {
     padding-right: $left;
     padding-left: 0;
   }
@@ -217,7 +178,7 @@
 @mixin sap-set-padding-right($right: 0) {
   padding-right: $right;
 
-  @include fn-rtl() {
+  @include sap-rtl() {
     padding-right: 0;
     padding-left: $right;
   }
@@ -227,7 +188,7 @@
   padding-left: $left;
   padding-right: $right;
 
-  @include fn-rtl() {
+  @include sap-rtl() {
     padding-right: $left;
     padding-left: $right;
   }
@@ -252,7 +213,7 @@
 @mixin sap-set-position-right($right) {
   right: $right;
 
-  @include fn-rtl() {
+  @include sap-rtl() {
     right: auto;
     left: $right;
   }
@@ -261,7 +222,7 @@
 @mixin sap-set-position-left($left) {
   left: $left;
 
-  @include fn-rtl() {
+  @include sap-rtl() {
     left: auto;
     right: $left;
   }
@@ -281,7 +242,7 @@
   bottom: $bottom;
   left: $left;
 
-  @include fn-rtl() {
+  @include sap-rtl() {
     left: $right;
     right: $left;
   }

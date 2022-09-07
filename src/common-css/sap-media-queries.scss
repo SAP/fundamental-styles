@@ -1,0 +1,58 @@
+$small: 600px;
+$medium: 1024px;
+$large: 1440px;
+$offset: 1px;
+
+@mixin sap-media-sm() {
+  @media (max-width: #{$small - $offset}) {
+    @content;
+  }
+}
+
+@mixin sap-media-md() {
+  @media (min-width: #{$small}) and (max-width: #{$medium - $offset}) {
+    @content;
+  }
+}
+
+@mixin sap-media-lg() {
+  @media (min-width: #{$medium}) and (max-width: #{$large - $offset}) {
+    @content;
+  }
+}
+
+@mixin sap-media-xl() {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin sap-media-min-width($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin sap-media-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin sap-media-range-width($minWidth, $maxWidth) {
+  @media (min-width: $minWidth) and (max-width: $maxWidth) {
+    @content;
+  }
+}
+
+@mixin sap-media-print() {
+  @media print {
+    @content;
+  }
+}
+
+@mixin sap-media-orientation($orientation) {
+  @media (orientation: $orientation) {
+    @content;
+  }
+}
