@@ -1,6 +1,5 @@
 const { merge } = require('webpack-merge');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
-const stylesLoader = require('./custom/loaders/load-styles');
 const isProduction = require('./custom/constants/isProduction');
 const maxAssetSize = 1024 * 1024;
 
@@ -36,7 +35,7 @@ const addons = [
 ];
 
 if (isProduction) {
-    staticDirs.push('../dist/', '../dist-fn/dist/');
+    staticDirs.push('../dist/', '../dist-fn/dist/', '../dist-common-css/dist/', '../dist-fn-icons/dist/');
 }
 
 module.exports = {
@@ -73,7 +72,29 @@ module.exports = {
             ]
         });
 
-        config.module.rules.push(stylesLoader);
+        config.module.rules.push({
+            // NOT theming or fonts
+            test: /^(?!.*\/(theming|fonts)\/).*\.s[ac]ss$/i,
+            use: [
+                {
+                    loader: 'style-loader',
+                    options: {
+                        injectType: 'lazyStyleTag'
+                    }
+                },
+                "css-loader",
+                "sass-loader",
+            ]
+        });
+
+        config.module.rules.push({
+            // Theming or fonts
+            test: /^(?=.*\/(theming|fonts)\/).*\.s[ac]ss$/i,
+            use: [
+                "css-loader",
+                "sass-loader",
+            ]
+        });
 
         return merge(config, {
             optimization: {

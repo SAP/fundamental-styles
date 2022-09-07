@@ -429,7 +429,7 @@ $block: #{$fd-namespace}-table;
   }
 
   &__footer {
-    background-color: var(--sapList_FooterBackground);
+    background-color: var(--sapList_Background);
 
     .#{$block}__row {
       border-top: 0.125rem solid var(--sapList_TableFooterBorder);

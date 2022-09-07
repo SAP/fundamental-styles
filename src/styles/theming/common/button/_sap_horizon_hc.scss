@@ -2,6 +2,7 @@
 
 :root {
   --fdButton_Emphasized_Border_Width: 0.125rem;
+  --fdButton_Font_Family: var(--sapFontFamily);
 
   /** Badge */
   --fdButton_Badge_Border_Color: var(--sapGroup_ContentBorderColor);

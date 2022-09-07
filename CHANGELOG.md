@@ -1,3 +1,71 @@
+# [0.25.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.11...v0.25.0-rc.12) (2022-09-07)
+
+
+### Bug Fixes
+
+* **docs:** icon fonts switching, unloading theme variables bug ([#3853](https://github.com/SAP/fundamental-styles/issues/3853)) ([c760c77](https://github.com/SAP/fundamental-styles/commit/c760c7755cd06edb3dd0597f4e1db7834e090a10))
+
+
+
+# [0.25.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.10...v0.25.0-rc.11) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** button fonts ([#3855](https://github.com/SAP/fundamental-styles/issues/3855)) ([c86d5f9](https://github.com/SAP/fundamental-styles/commit/c86d5f9f6fb5efed7955f12513632f0a56c60a83))
+
+
+
+# [0.25.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.9...v0.25.0-rc.10) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** combobox row height ([#3840](https://github.com/SAP/fundamental-styles/issues/3840)) ([493f4da](https://github.com/SAP/fundamental-styles/commit/493f4da662c06f189efadbfd0c558657175b5346))
+
+
+
+# [0.25.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.8...v0.25.0-rc.9) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** card title, subtitle font-size ([#3856](https://github.com/SAP/fundamental-styles/issues/3856)) ([5963276](https://github.com/SAP/fundamental-styles/commit/5963276afa5e10fa06a4479f1e5485a355e99924))
+
+
+
+# [0.25.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.7...v0.25.0-rc.8) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** feed-list-item horizon & fixes ([#3857](https://github.com/SAP/fundamental-styles/issues/3857)) ([ed6eab4](https://github.com/SAP/fundamental-styles/commit/ed6eab40f322539ffbd5d5b14f0af4747d52341a))
+
+
+### BREAKING CHANGES
+
+* **styles:** * `fd-feed-list__action` class removed, use `fd-feed-list__actions` class instead.
+
+
+
+# [0.25.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.6...v0.25.0-rc.7) (2022-09-06)
+
+
+### Bug Fixes
+
+* **styles:** add fix for Table footer bachground [ci visual] ([#3836](https://github.com/SAP/fundamental-styles/issues/3836)) ([6bfff85](https://github.com/SAP/fundamental-styles/commit/6bfff8553cfddc652c73244cf7b4ace339d4e386))
+
+
+
+# [0.25.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.5...v0.25.0-rc.6) (2022-09-01)
+
+
+### Features
+
+* **styles:** add flex to common css (helpers) ([#3816](https://github.com/SAP/fundamental-styles/issues/3816)) ([85c961c](https://github.com/SAP/fundamental-styles/commit/85c961cd790440beef36a1b58e0b5cd3bd65a63f))
+
+
+
 # [0.25.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.4...v0.25.0-rc.5) (2022-08-26)
 
 
