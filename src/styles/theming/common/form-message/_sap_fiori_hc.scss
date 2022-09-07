@@ -1,0 +1,6 @@
+@import "sap_fiori";
+
+:root {
+  --fdMessage_Box_Shadow: none;
+  --fdMessage_Border: calc(2 * var(--sapField_BorderWidth)) solid var(--sapField_BorderColor);
+}

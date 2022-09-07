@@ -6,6 +6,29 @@
 */
 $block: #{$fd-namespace}-form-message;
 
+$form-message-states: (
+  "error": (
+    "color": var(--sapErrorBackground),
+    "icon": "\e0b1",
+    "iconColor": var(--sapNegativeElementColor)
+  ),
+  "warning": (
+    "color": var(--sapWarningBackground),
+    "icon": "\e201",
+    "iconColor": var(--sapCriticalElementColor)
+  ),
+  "success": (
+    "color": var(--sapSuccessBackground),
+    "icon": "\e203",
+    "iconColor": var(--sapPositiveElementColor)
+  ),
+  "information": (
+    "color": var(--sapInformationBackground),
+    "icon": "\e202",
+    "iconColor": var(--sapInformativeElementColor)
+  ),
+);
+
 .#{$block} {
   @include fd-reset();
   @include fd-ellipsis();
@@ -47,39 +70,14 @@ $block: #{$fd-namespace}-form-message;
     width: auto;
   }
 
-  &--error {
-    background-color: var(--sapErrorBackground);
+  @each $set-name, $state-set in $form-message-states {
+    &--#{$set-name} {
+      background-color: map_get($state-set, "color");
 
-    &::before {
-      content: "\e0b1";
-      color: var(--sapNegativeElementColor);
-    }
-  }
-
-  &--warning {
-    background-color: var(--sapWarningBackground);
-
-    &::before {
-      content: "\e201";
-      color: var(--sapCriticalElementColor);
-    }
-  }
-
-  &--success {
-    background-color: var(--sapSuccessBackground);
-
-    &::before {
-      content: "\e203";
-      color: var(--sapPositiveElementColor);
-    }
-  }
-
-  &--information {
-    background-color: var(--sapInformationBackground);
-
-    &::before {
-      content: "\e202";
-      color: var(--sapInformativeElementColor);
+      &::before {
+        content: map_get($state-set, "icon");
+        color: map_get($state-set, "iconColor");
+      }
     }
   }
 }

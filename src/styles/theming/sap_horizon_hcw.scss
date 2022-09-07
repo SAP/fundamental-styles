@@ -26,6 +26,7 @@
 @import "./common/select/sap_horizon_hc";
 @import "./common/tile/sap_horizon_hc";
 @import "./common/progress-indicator/sap_horizon";
+@import "./common/form-message/sap_horizon_hc";
 
 :root {
   /* Switch */
@@ -175,12 +176,6 @@
   --fdPlaceholder_Font_Style: normal;
   --fdInput_Outline_Offset: -0.25rem;
   --fdInput_Outline_Offset_States: -0.25rem;
-
-  /* Form Message */
-  --fdMessage_Box_Shadow: none;
-  --fdMessage_Border: calc(2 * var(--sapField_BorderWidth)) solid var(--sapField_BorderColor);
-  --fdMessage_Border_Radius: 0;
-  --fdMessage_Icon_Display: block;
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
