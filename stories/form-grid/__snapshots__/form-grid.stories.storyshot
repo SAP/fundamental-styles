@@ -11,6 +11,7 @@ exports[`Storyshots Components/Forms/Form Grid Column Not Recommended 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -183,6 +184,7 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
     
@@ -190,12 +192,12 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
       class="fd-row fd-form-item"
     >
       
-        
+      
       <div
-        class="fd-col fd-col--4"
+        class="fd-col fd-col-md--4"
       >
         
-          
+        
         <label
           class="fd-form-label"
           for="input-13-compact"
@@ -203,15 +205,15 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
           Default Input:
         </label>
         
-        
+      
       </div>
       
-        
+      
       <div
-        class="fd-col fd-col--7"
+        class="fd-col fd-col-md--7 fd-col-md--offset-after--1"
       >
         
-            
+        
         <input
           class="fd-input fd-input--compact"
           id="input-13-compact"
@@ -219,7 +221,7 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
           type="text"
         />
         
-        
+      
       </div>
       
     
@@ -230,12 +232,12 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
       class="fd-row fd-form-item"
     >
       
-        
+      
       <div
-        class="fd-col fd-col--4"
+        class="fd-col fd-col-md--4"
       >
         
-          
+        
         <label
           class="fd-form-label fd-form-label--required"
           for="input-13b-compact"
@@ -243,15 +245,15 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
           Required Input: 
         </label>
         
-        
+      
       </div>
       
-        
+      
       <div
-        class="fd-col fd-col--7"
+        class="fd-col fd-col-md--7 fd-col-md--offset-after--1"
       >
         
-            
+          
         <input
           class="fd-input fd-input--compact"
           id="input-13b-compact"
@@ -259,7 +261,7 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
           type="text"
         />
         
-        
+      
       </div>
       
     
@@ -272,12 +274,12 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
       role="group"
     >
       
-        
+      
       <div
-        class="fd-col fd-col--4"
+        class="fd-col fd-col-md--4"
       >
         
-          
+        
         <label
           class="fd-form-label"
           id="groupLabel-compact"
@@ -285,25 +287,25 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
           2 Inputs: 
         </label>
         
-        
+      
       </div>
       
-        
+      
       <div
-        class="fd-col fd-col--7"
+        class="fd-col fd-col-md--7 fd-col-md--offset-after--1"
       >
         
-            
+        
         <div
           class="fd-row"
         >
           
-                  
+          
           <div
             class="fd-col fd-col--6"
           >
             
-                      
+            
             <input
               aria-label="input1-of-2-compact"
               class="fd-input fd-input--compact"
@@ -312,15 +314,15 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
               type="text"
             />
             
-                  
+          
           </div>
           
-                  
+          
           <div
             class="fd-col fd-col--6"
           >
             
-                      
+            
             <input
               aria-label="input2-of-2-compact"
               class="fd-input fd-input--compact"
@@ -329,16 +331,16 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
               type="text"
             />
             
-                  
+          
           </div>
           
-              
+        
         </div>
         
-          
+      
       </div>
       
-      
+    
     </div>
     
 
@@ -354,7 +356,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1440px"
+    style="max-width:1440px; border: 1px solid; margin: 0 auto;"
   >
     
   
@@ -430,7 +432,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -444,10 +446,10 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -462,7 +464,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -520,10 +522,10 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -538,7 +540,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -603,24 +605,24 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -632,7 +634,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -655,7 +657,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px"
+    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
   >
     
   
@@ -665,7 +667,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--2 fd-col-lg--4"
+        class="fd-col fd-col-md--2"
       >
         
       
@@ -681,7 +683,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--10 fd-col-lg--8"
+        class="fd-col fd-col-md--10"
       >
         
       
@@ -707,7 +709,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--2 fd-col-lg--4"
+        class="fd-col fd-col-md--2"
       >
         
       
@@ -723,7 +725,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--10 fd-col-lg--8"
+        class="fd-col fd-col-md--10"
       >
         
       
@@ -731,7 +733,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -745,10 +747,10 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -763,7 +765,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -783,7 +785,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--2  fd-col-lg--4"
+        class="fd-col fd-col-md--2"
       >
         
       
@@ -799,7 +801,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--10  fd-col-lg--8"
+        class="fd-col fd-col-md--10"
       >
         
       
@@ -821,10 +823,10 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -839,7 +841,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -859,7 +861,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--2  fd-col-lg--4"
+        class="fd-col fd-col-md--2"
       >
         
       
@@ -875,7 +877,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--10  fd-col-lg--8"
+        class="fd-col fd-col-md--10"
       >
         
       
@@ -904,24 +906,24 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -933,7 +935,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -942,7 +944,6 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
   
     </div>
     
-
 
   </div>
   
@@ -956,6 +957,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -1031,7 +1033,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -1045,10 +1047,10 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -1063,7 +1065,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -1121,10 +1123,10 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -1139,7 +1141,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -1204,24 +1206,24 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -1233,7 +1235,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -1242,7 +1244,6 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
   
     </div>
     
-
 
   </div>
   
@@ -1256,6 +1257,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container"
+    style="border: 1px solid;"
   >
     
   
@@ -1341,7 +1343,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
               class="fd-row"
             >
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -1355,10 +1357,10 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="Myrtle St."
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--8"
               >
@@ -1373,7 +1375,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="495"
                 />
                 
-          
+            
               </div>
               
           
@@ -1431,10 +1433,10 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="43823"
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -1449,7 +1451,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="Downtown"
                 />
                 
-          
+            
               </div>
               
           
@@ -1514,24 +1516,24 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                     tabindex="0"
                   >
                     
-                    
+                  
                     <span
                       class="fd-select__text-content"
                     >
                       US
                     </span>
                     
-                    
+                  
                     <span
                       class="fd-button fd-button--transparent fd-select__button"
                     >
                       
-                        
+                    
                       <i
                         class="sap-icon--slim-arrow-down"
                       />
                       
-                    
+                  
                     </span>
                     
                 
@@ -1543,7 +1545,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
             
               </div>
               
-        
+          
             </div>
             
         
@@ -1555,6 +1557,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
     
       </div>
       
+
     
       <div
         class="fd-col fd-col-xl--6 fd-col--wrap fd-form-group"
@@ -1633,7 +1636,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
               class="fd-row"
             >
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -1647,10 +1650,10 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="Myrtle St."
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--8"
               >
@@ -1665,7 +1668,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="495"
                 />
                 
-          
+            
               </div>
               
           
@@ -1723,10 +1726,10 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="43823"
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -1741,7 +1744,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                   value="Downtown"
                 />
                 
-          
+            
               </div>
               
           
@@ -1806,24 +1809,24 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
                     tabindex="0"
                   >
                     
-                    
+                  
                     <span
                       class="fd-select__text-content"
                     >
                       US
                     </span>
                     
-                    
+                  
                     <span
                       class="fd-button fd-button--transparent fd-select__button"
                     >
                       
-                        
+                    
                       <i
                         class="sap-icon--slim-arrow-down"
                       />
                       
-                    
+                  
                     </span>
                     
                 
@@ -1835,7 +1838,7 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
             
               </div>
               
-        
+          
             </div>
             
         
@@ -1863,7 +1866,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px"
+    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
   >
     
   
@@ -1873,7 +1876,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--3  fd-col-lg--4"
+        class="fd-col fd-col-md--3"
       >
         
       
@@ -1889,7 +1892,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4"
+        class="fd-col fd-col-md--5 fd-col-md--offset-after--4"
       >
         
       
@@ -1915,7 +1918,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--3  fd-col-lg--4"
+        class="fd-col fd-col-md--3"
       >
         
       
@@ -1931,7 +1934,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4"
+        class="fd-col fd-col-md--5 fd-col-md--offset-after--4"
       >
         
       
@@ -1939,7 +1942,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -1953,10 +1956,10 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -1971,7 +1974,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -1991,7 +1994,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--3  fd-col-lg--4"
+        class="fd-col fd-col-md--3"
       >
         
       
@@ -2007,7 +2010,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4"
+        class="fd-col fd-col-md--5 fd-col-md--offset-after--4"
       >
         
       
@@ -2029,15 +2032,15 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
             
-          
+            
             <input
               aria-label="City"
               class="fd-input"
@@ -2047,7 +2050,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -2067,7 +2070,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--3  fd-col-lg--4"
+        class="fd-col fd-col-md--3"
       >
         
       
@@ -2083,7 +2086,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4"
+        class="fd-col fd-col-md--5 fd-col-md--offset-after--4"
       >
         
       
@@ -2112,24 +2115,24 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -2141,7 +2144,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -2150,7 +2153,6 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
   
     </div>
     
-
 
   </div>
   
@@ -2169,6 +2171,7 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -2339,7 +2342,8 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
   
 
   <div
-    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group"
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -2462,7 +2466,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px"
+    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
   >
     
   
@@ -2472,7 +2476,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4 fd-col-lg--3"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -2488,7 +2492,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4"
+        class="fd-col fd-col-md--8 fd-col-md--offset-after--4"
       >
         
       
@@ -2514,7 +2518,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4 fd-col-lg--3"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -2530,7 +2534,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4"
+        class="fd-col fd-col-md--8 fd-col-md--offset-after--4"
       >
         
       
@@ -2538,7 +2542,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -2552,10 +2556,10 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -2570,7 +2574,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -2590,7 +2594,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4 fd-col-lg--3"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -2606,7 +2610,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4"
+        class="fd-col fd-col-md--8 fd-col-md--offset-after--4"
       >
         
       
@@ -2628,10 +2632,10 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -2646,7 +2650,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -2666,7 +2670,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4 fd-col-lg--3"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -2682,7 +2686,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4"
+        class="fd-col fd-col-md--8 fd-col-md--offset-after--4"
       >
         
       
@@ -2711,24 +2715,24 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -2740,7 +2744,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -2749,7 +2753,6 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
   
     </div>
     
-
 
   </div>
   
@@ -2762,8 +2765,8 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
   dir="ltr"
 >
   <div
-    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical"
-    style="max-width:1440px"
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-layout-grid-container--xl-vertical"
+    style="max-width:1440px; border: 1px solid; margin: 0 auto;"
   >
     
   
@@ -2848,7 +2851,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
               class="fd-row"
             >
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -2862,10 +2865,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="Myrtle St."
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--8"
               >
@@ -2880,7 +2883,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="495"
                 />
                 
-          
+            
               </div>
               
           
@@ -2938,10 +2941,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="43823"
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -2956,7 +2959,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="Downtown"
                 />
                 
-          
+            
               </div>
               
           
@@ -3021,24 +3024,24 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                     tabindex="0"
                   >
                     
-                    
+                  
                     <span
                       class="fd-select__text-content"
                     >
                       US
                     </span>
                     
-                    
+                  
                     <span
                       class="fd-button fd-button--transparent fd-select__button"
                     >
                       
-                        
+                    
                       <i
                         class="sap-icon--slim-arrow-down"
                       />
                       
-                    
+                  
                     </span>
                     
                 
@@ -3050,7 +3053,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
             
               </div>
               
-        
+          
             </div>
             
         
@@ -3140,7 +3143,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
               class="fd-row"
             >
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -3154,10 +3157,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="Myrtle St."
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--8"
               >
@@ -3172,7 +3175,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="495"
                 />
                 
-          
+            
               </div>
               
           
@@ -3230,10 +3233,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="43823"
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -3248,7 +3251,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                   value="Downtown"
                 />
                 
-          
+            
               </div>
               
           
@@ -3313,24 +3316,24 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
                     tabindex="0"
                   >
                     
-                    
+                  
                     <span
                       class="fd-select__text-content"
                     >
                       US
                     </span>
                     
-                    
+                  
                     <span
                       class="fd-button fd-button--transparent fd-select__button"
                     >
                       
-                        
+                    
                       <i
                         class="sap-icon--slim-arrow-down"
                       />
                       
-                    
+                  
                     </span>
                     
                 
@@ -3342,7 +3345,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
             
               </div>
               
-        
+          
             </div>
             
         
@@ -3369,7 +3372,8 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
   dir="ltr"
 >
   <div
-    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical"
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical"
+    style="border: 1px solid;"
   >
     
   
@@ -3382,8 +3386,6 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
         class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group"
       >
         
-
-
       
         <div
           class="fd-row fd-form-item"
@@ -3415,7 +3417,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
               class="fd-row"
             >
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -3429,10 +3431,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="Myrtle St."
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--8"
               >
@@ -3447,7 +3449,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="495"
                 />
                 
-          
+            
               </div>
               
           
@@ -3505,10 +3507,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="43823"
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -3523,7 +3525,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="Downtown"
                 />
                 
-          
+            
               </div>
               
           
@@ -3588,24 +3590,24 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                     tabindex="0"
                   >
                     
-                    
+                  
                     <span
                       class="fd-select__text-content"
                     >
                       US
                     </span>
                     
-                    
+                  
                     <span
                       class="fd-button fd-button--transparent fd-select__button"
                     >
                       
-                        
+                    
                       <i
                         class="sap-icon--slim-arrow-down"
                       />
                       
-                    
+                  
                     </span>
                     
                 
@@ -3617,7 +3619,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
             
               </div>
               
-        
+          
             </div>
             
         
@@ -3629,6 +3631,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
     
       </div>
       
+
     
       <div
         class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group"
@@ -3707,7 +3710,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
               class="fd-row"
             >
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -3721,10 +3724,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="Myrtle St."
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--8"
               >
@@ -3739,7 +3742,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="495"
                 />
                 
-          
+            
               </div>
               
           
@@ -3797,10 +3800,10 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="43823"
                 />
                 
-          
+            
               </div>
               
-          
+            
               <div
                 class="fd-col fd-col--4"
               >
@@ -3815,7 +3818,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="Downtown"
                 />
                 
-          
+            
               </div>
               
           
@@ -3880,24 +3883,24 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                     tabindex="0"
                   >
                     
-                    
+                  
                     <span
                       class="fd-select__text-content"
                     >
                       US
                     </span>
                     
-                    
+                  
                     <span
                       class="fd-button fd-button--transparent fd-select__button"
                     >
                       
-                        
+                    
                       <i
                         class="sap-icon--slim-arrow-down"
                       />
                       
-                    
+                  
                     </span>
                     
                 
@@ -3909,7 +3912,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
             
               </div>
               
-        
+          
             </div>
             
         
@@ -3922,23 +3925,22 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
       </div>
       
 
-
     
       <div
         class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group"
       >
         
-    
+      
         <div
           class="fd-row fd-form-item"
         >
           
-      
+        
           <div
             class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
           >
             
-        
+          
             <label
               class="fd-form-label"
               for="input-12b-name"
@@ -3946,15 +3948,15 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
               Name:
             </label>
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
           >
             
-        
+          
             <input
               class="fd-input"
               id="input-12b-name"
@@ -3963,24 +3965,24 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
               value="Amelia Perry"
             />
             
-      
+        
           </div>
           
-    
+      
         </div>
         
 
-    
+      
         <div
           class="fd-row fd-form-item"
         >
           
-      
+        
           <div
             class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
           >
             
-        
+          
             <label
               class="fd-form-label fd-form-label--required"
               for="input-12b-street"
@@ -3988,25 +3990,25 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
               Street/No.: 
             </label>
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
           >
             
-        
+          
             <div
               class="fd-row"
             >
               
-        
+          
               <div
                 class="fd-col fd-col--4"
               >
                 
-            
+              
                 <input
                   class="fd-input"
                   id="input-12b-street"
@@ -4015,15 +4017,15 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="Myrtle St."
                 />
                 
-        
+          
               </div>
               
-        
+          
               <div
                 class="fd-col fd-col--8"
               >
                 
-            
+              
                 <input
                   aria-label="Street Number"
                   class="fd-input"
@@ -4033,30 +4035,30 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="495"
                 />
                 
-        
+          
               </div>
               
-        
+          
             </div>
             
-      
+        
           </div>
           
-    
+      
         </div>
         
 
-    
+      
         <div
           class="fd-row fd-form-item"
         >
           
-      
+        
           <div
             class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
           >
             
-        
+          
             <label
               class="fd-form-label fd-form-label--required"
               for="input-12b-zip"
@@ -4064,25 +4066,25 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
               ZIP Code/City: 
             </label>
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
           >
             
-        
+          
             <div
               class="fd-row"
             >
               
-          
+            
               <div
                 class="fd-col fd-col--8"
               >
                 
-            
+              
                 <input
                   class="fd-input"
                   id="input-12b-zip"
@@ -4091,15 +4093,15 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="43823"
                 />
                 
-        
+          
               </div>
               
-        
+          
               <div
                 class="fd-col fd-col--4"
               >
                 
-            
+              
                 <input
                   aria-label="City"
                   class="fd-input"
@@ -4109,30 +4111,30 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   value="Downtown"
                 />
                 
-        
+          
               </div>
               
-        
+          
             </div>
             
-      
+        
           </div>
           
-    
+      
         </div>
         
 
-    
+      
         <div
           class="fd-row fd-form-item"
         >
           
-      
+        
           <div
             class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12"
           >
             
-        
+          
             <label
               class="fd-form-label"
               for="input-12b-country"
@@ -4140,31 +4142,31 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
               Country:
             </label>
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12"
           >
             
-        
+          
             <div
               class="fd-popover"
               style="width:100%"
             >
               
-          
+            
               <div
                 class="fd-popover__control"
               >
                 
-            
+              
                 <div
                   class="fd-select"
                 >
                   
-              
+                
                   <div
                     aria-controls="h031XCM509"
                     aria-expanded="false"
@@ -4186,7 +4188,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                       class="fd-button fd-button--transparent fd-select__button"
                     >
                       
-                    
+                  
                       <i
                         class="sap-icon--slim-arrow-down"
                       />
@@ -4194,29 +4196,27 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
                   
                     </span>
                     
-              
+                
                   </div>
                   
-            
+              
                 </div>
                 
-          
+            
               </div>
               
-      
+          
             </div>
             
-      
+        
           </div>
           
-    
+      
         </div>
         
-  
+    
       </div>
       
-
-
   
     </div>
     
@@ -4238,6 +4238,7 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -4359,6 +4360,7 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -4418,7 +4420,7 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
 
     
       <div
-        class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap  fd-form-item"
+        class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap fd-form-item"
       >
         
       
@@ -4480,6 +4482,7 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -4602,7 +4605,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1440px"
+    style="max-width:1440px; border: 1px solid; margin: 0 auto;"
   >
     
   
@@ -4678,7 +4681,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -4692,10 +4695,10 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -4710,7 +4713,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -4746,7 +4749,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
       
     
       <div
-        class="fd-col  fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4"
+        class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4"
       >
         
       
@@ -4768,10 +4771,10 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -4786,7 +4789,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -4851,24 +4854,24 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -4880,7 +4883,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -4902,6 +4905,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
+    style="border: 1px solid;"
   >
     
   
@@ -4977,7 +4981,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -4991,10 +4995,10 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -5009,7 +5013,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -5067,10 +5071,10 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -5085,7 +5089,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -5150,24 +5154,24 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -5179,7 +5183,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -5188,7 +5192,6 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
   
     </div>
     
-
 
   </div>
   
@@ -5202,7 +5205,7 @@ exports[`Storyshots Components/Forms/Form Grid Small 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group"
-    style="max-width:600px"
+    style="max-width:600px; border: 1px solid; margin: 0 auto;"
   >
     
     
@@ -5467,7 +5470,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px"
+    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
   >
     
   
@@ -5477,7 +5480,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4  fd-col-lg--4"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -5493,7 +5496,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1"
+        class="fd-col fd-col-md--7 fd-col-md--offset-after--1"
       >
         
       
@@ -5519,7 +5522,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4  fd-col-lg--4"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -5535,7 +5538,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1"
+        class="fd-col fd-col-md--7 fd-col-md--offset-after--1"
       >
         
       
@@ -5543,7 +5546,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
           class="fd-row"
         >
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -5557,10 +5560,10 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
               value="Myrtle St."
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--8"
           >
@@ -5575,7 +5578,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
               value="495"
             />
             
-      
+        
           </div>
           
       
@@ -5595,7 +5598,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4  fd-col-lg--4"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -5611,7 +5614,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1"
+        class="fd-col fd-col-md--7 fd-col-md--offset-after--1"
       >
         
       
@@ -5633,10 +5636,10 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
               value="43823"
             />
             
-      
+        
           </div>
           
-      
+        
           <div
             class="fd-col fd-col--4"
           >
@@ -5651,7 +5654,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
               value="Downtown"
             />
             
-      
+        
           </div>
           
       
@@ -5671,7 +5674,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--4  fd-col-lg--4"
+        class="fd-col fd-col-md--4"
       >
         
       
@@ -5687,7 +5690,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
       
     
       <div
-        class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1"
+        class="fd-col fd-col-md--7 fd-col-md--offset-after--1"
       >
         
       
@@ -5716,24 +5719,24 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
                 tabindex="0"
               >
                 
-                
+              
                 <span
                   class="fd-select__text-content"
                 >
                   US
                 </span>
                 
-                
+              
                 <span
                   class="fd-button fd-button--transparent fd-select__button"
                 >
                   
-                    
+                
                   <i
                     class="sap-icon--slim-arrow-down"
                   />
                   
-                
+              
                 </span>
                 
             
@@ -5745,7 +5748,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
         
           </div>
           
-    
+      
         </div>
         
     
@@ -5755,6 +5758,255 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
     </div>
     
 
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Forms/Form Grid Vertical layout 1`] = `
+<div
+  dir="ltr"
+>
+  <h2>
+    Vertical layout at every breakpoint
+  </h2>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group"
+    style="border: 1px solid;"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+      
+    
+      <div
+        class="fd-col fd-col--wrap fd-form-item"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-14-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-14-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col--wrap fd-form-item"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-14a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-14a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+
+  <h2>
+    Vertical layout at S (default) and LG breakpoint
+  </h2>
+  
+
+  <div
+    class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-group"
+    style="border: 1px solid;"
+  >
+    
+  
+    <div
+      class="fd-row"
+    >
+      
+    
+      <div
+        class="fd-col fd-col--wrap fd-form-item"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--4 fd-col-lg--12 fd-col-xl--4"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-14-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--8 fd-col-lg--12 fd-col-xl--8"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-14-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+
+    
+      <div
+        class="fd-col fd-col--wrap fd-form-item"
+      >
+        
+      
+        <div
+          class="fd-row"
+        >
+          
+        
+          <div
+            class="fd-col fd-col-md--4 fd-col-lg--12 fd-col-xl--4"
+          >
+            
+          
+            <label
+              class="fd-form-label"
+              for="input-14a-name"
+            >
+              Name:
+            </label>
+            
+        
+          </div>
+          
+        
+          <div
+            class="fd-col fd-col-md--8 fd-col-lg--12 fd-col-xl--8"
+          >
+            
+          
+            <input
+              class="fd-input"
+              id="input-14a-name"
+              placeholder="Enter First and Last Name"
+              type="text"
+              value="Amelia Perry"
+            />
+            
+        
+          </div>
+          
+      
+        </div>
+        
+    
+      </div>
+      
+  
+    </div>
+    
 
   </div>
   
