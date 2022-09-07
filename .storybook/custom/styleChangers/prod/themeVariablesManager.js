@@ -1,6 +1,13 @@
 import availableThemes from '../../constants/availableThemes';
 import generateStyleLinkTagFn from '../utils/generateStyleLinkTagFn';
 import getLazyLoader from '../utils/getLazyLoader';
+import inlineStyleLazyLoader from '../utils/inlineStyleLazyLoader';
+
+function getFontsContent(theme) {
+    const baseTheme = theme.startsWith('sap_fiori_3') ? 'sap_fiori_3' : 'sap_horizon';
+    const content = require(`../../../../src/fonts/${baseTheme}_fonts.scss`).default.toString();
+    return content.replace(/^~@sap-theming/, '..')
+}
 
 export default (managedBy) => {
     let currentTheme;
@@ -16,15 +23,24 @@ export default (managedBy) => {
         acc[value] = lazyLoader(`theming/${value}.css`);
         return acc;
     }, {});
+    const fontVariables = availableThemes.reduce((acc, { value }) => {
+        const content = getFontsContent(value);
+        acc[value] = inlineStyleLazyLoader(content);
+        return acc;
+    }, {});
 
     return {
         use: (themeName) => {
-            baseVariables[themeName].use();
-            styleVariables[themeName].use();
             if (currentTheme && currentTheme !== themeName) {
                 baseVariables[currentTheme].unuse();
                 styleVariables[currentTheme].unuse();
+                fontVariables[currentTheme].unuse();
             }
+
+            baseVariables[themeName].use();
+            styleVariables[themeName].use();
+            fontVariables[themeName].use();
+
             currentTheme = themeName;
         }
     };
