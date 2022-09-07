@@ -17,7 +17,7 @@ exports[`Storyshots Components/Feed List and Item Actions 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M7.png)"
         title="John Doe"
@@ -253,7 +253,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
         role="img"
         title="John Doe"
       >
@@ -327,7 +327,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M4.png)"
         title="John Doe"
@@ -398,7 +398,7 @@ exports[`Storyshots Components/Feed List and Item Borderless group 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M3.png)"
         title="John Doe"
@@ -481,7 +481,7 @@ exports[`Storyshots Components/Feed List and Item Group 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
         role="img"
         title="John Doe"
       >
@@ -555,7 +555,7 @@ exports[`Storyshots Components/Feed List and Item Group 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
         title="John Doe"
@@ -626,7 +626,7 @@ exports[`Storyshots Components/Feed List and Item Group 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M5.png)"
         title="John Doe"
@@ -708,7 +708,7 @@ exports[`Storyshots Components/Feed List and Item Linked 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M5.png)"
         tabindex="0"
@@ -818,7 +818,7 @@ exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
                 
             <div
               aria-label="John Doe"
-              class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+              class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
               role="img"
               style="background-image: url(/assets/images/portraits/XL_Square_112x112_M2.png)"
               title="John Doe"
@@ -868,7 +868,7 @@ exports[`Storyshots Components/Feed List and Item Mobile 1`] = `
           
                 
           <div
-            class="fd-feed-list__action"
+            class="fd-feed-list__actions"
           >
             
                     
@@ -1152,7 +1152,7 @@ exports[`Storyshots Components/Feed List and Item Placeholder image 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
         role="img"
         title="John Doe"
       >
@@ -1240,7 +1240,7 @@ exports[`Storyshots Components/Feed List and Item Show less 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M8.png)"
         title="John Doe"
@@ -1336,7 +1336,7 @@ exports[`Storyshots Components/Feed List and Item Show more 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
         title="John Doe"
@@ -1432,7 +1432,7 @@ exports[`Storyshots Components/Feed List and Item Standard 1`] = `
         
       <div
         aria-label="John Doe"
-        class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+        class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
         role="img"
         style="background-image: url(/assets/images/portraits/XL_Square_112x112_M1.png)"
         title="John Doe"

@@ -25,7 +25,7 @@ export default {
 export const Standard = () => `<ul class="fd-feed-list" aria-label="Feed List Item default example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M1.png)"
             role="img"
             aria-label="John Doe"
@@ -57,7 +57,7 @@ Standard.parameters = {
 export const PlaceHolderImage = () => `<ul class="fd-feed-list" aria-label="Feed List Item placeholder user image example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
             role="img"
             aria-label="John Doe"
             title="John Doe">
@@ -117,7 +117,7 @@ NoImage.parameters = {
 export const Linked = () => `<ul class="fd-feed-list" aria-label="Feed List Item with user link example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list--link fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M5.png)"
             role="img"
             aria-label="John Doe"
@@ -153,7 +153,7 @@ Linked.parameters = {
 export const ShowMore = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show more text example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
             role="img"
             aria-label="John Doe"
@@ -188,7 +188,7 @@ ShowMore.parameters = {
 export const ShowLess = () => `<ul class="fd-feed-list" aria-label="Feed List Item with show less text example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M8.png)"
             role="img"
             aria-label="John Doe"
@@ -223,7 +223,7 @@ ShowLess.parameters = {
 export const WithActions = () => `<ul class="fd-feed-list" aria-label="Feed List Item with popover actions example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M7.png)"
             role="img"
             aria-label="John Doe"
@@ -289,7 +289,7 @@ WithActions.parameters = {
 export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-label="Feed List Item group example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
             role="img"
             aria-label="John Doe"
             title="John Doe">
@@ -309,7 +309,7 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
 
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M6.png)"
             role="img"
             aria-label="John Doe"
@@ -330,7 +330,7 @@ export const Group = () => ` <ul class="fd-feed-list fd-feed-list--group" aria-l
 
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M5.png)"
             role="img"
             aria-label="John Doe"
@@ -361,7 +361,7 @@ Group.parameters = {
 export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-feed-list--no-border" aria-label="Feed List Item group example">
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--placeholder fd-feed-list__thumb"
             role="img"
             aria-label="John Doe"
             title="John Doe">
@@ -381,7 +381,7 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
 
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M4.png)"
             role="img"
             aria-label="John Doe"
@@ -402,7 +402,7 @@ export const Borderless = () => `<ul class="fd-feed-list fd-feed-list--group fd-
 
     <li class="fd-feed-list__body">
         <div
-            class="fd-avatar fd-avatar--s fd-feed-list__thumb"
+            class="fd-avatar fd-avatar--circle fd-avatar--s fd-feed-list__thumb"
             style="background-image: url(/assets/images/portraits/XL_Square_112x112_M3.png)"
             role="img"
             aria-label="John Doe"
@@ -437,7 +437,7 @@ export const Mobile = () => `<div style="width: 350px; height: 600px; position: 
             <div class="fd-feed-list__wrapper">
                 <div class="fd-feed-list__wrapper fd-feed-list__wrapper--header">
                 <div
-                    class="fd-avatar fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
+                    class="fd-avatar fd-avatar--circle fd-avatar--s fd-avatar--thumbnail fd-feed-list__thumb"
                     style="background-image: url(/assets/images/portraits/XL_Square_112x112_M2.png)"
                     role="img"
                     aria-label="John Doe"
@@ -452,7 +452,7 @@ export const Mobile = () => `<div style="width: 350px; height: 600px; position: 
                 </div>
 
                 </div>
-                <div class="fd-feed-list__action">
+                <div class="fd-feed-list__actions">
                     <button class="fd-button fd-button--transparent"
                             aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="false"
                             aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">

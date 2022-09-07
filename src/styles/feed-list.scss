@@ -9,7 +9,6 @@ $block: #{$fd-namespace}-feed-list;
   $fd-feed-list-margin-end: 0;
   $fd-feed-list-padding-group: 0.75rem;
   $fd-feed-list-padding-action-small: 0.75rem;
-  $fd-feed-list-actions-negative: -1rem;
   $fd-feed-list-icon-color: var(--sapContent_IconColor);
 
   @include fd-reset();
@@ -65,24 +64,22 @@ $block: #{$fd-namespace}-feed-list;
 
   &__link {
     &--more {
-      text-transform: var(--fdFeed_List_Item_More_Transform);
+      text-transform: capitalize;
       cursor: pointer;
     }
   }
 
   &__actions {
     @include fd-reset();
+    @include fd-set-position-right(-1rem);
 
     float: right;
-    margin: 0.5rem;
     position: relative;
+    margin: 0.5rem;
     top: -1rem;
-    right: $fd-feed-list-actions-negative;
 
     @include fd-rtl() {
       float: left;
-      right: 1rem;
-      left: $fd-feed-list-actions-negative;
     }
   }
 
@@ -111,9 +108,10 @@ $block: #{$fd-namespace}-feed-list;
 
     display: flex;
     padding-top: 0.375rem;
+    font-size: var(--sapFontSmallSize);
 
     &--byline {
-      color: var(--fdFeed_List_Item_Byline_Text_Color);
+      color: var(--sapContent_LabelColor);
 
       &:not(:last-child)::after {
         content: '\2022';
@@ -142,24 +140,13 @@ $block: #{$fd-namespace}-feed-list;
       padding-top: 0.625rem;
     }
 
-    .#{$block}__action {
+    .#{$block}__actions {
       @include fd-reset();
+      @include fd-set-position-right(0);
+      @include fd-set-padding-left(0.75rem);
 
-      padding-left: $fd-feed-list-padding-action-small;
+      top: 0;
       padding-bottom: 0.25rem;
-
-      > .fd-button {
-        padding-left: var(--fdFeed_List_Mobile_Actions_Button_Padding_X);
-        padding-right: var(--fdFeed_List_Mobile_Actions_Button_Padding_X);
-        height: var(--fdFeed_List_Mobile_Actions_Button_Padding_Height);
-        max-height: var(--fdFeed_List_Mobile_Actions_Button_Padding_Height);
-        min-width: var(--fdFeed_List_Mobile_Actions_Button_Padding_Width);
-      }
-
-      @include fd-rtl() {
-        padding-right: $fd-feed-list-padding-action-small;
-        padding-bottom: initial;
-      }
     }
   }
 }
