@@ -1,3 +1,12 @@
+# [0.25.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.9...v0.25.0-rc.10) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** combobox row height ([#3840](https://github.com/SAP/fundamental-styles/issues/3840)) ([493f4da](https://github.com/SAP/fundamental-styles/commit/493f4da662c06f189efadbfd0c558657175b5346))
+
+
+
 # [0.25.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.8...v0.25.0-rc.9) (2022-09-07)
 
 
