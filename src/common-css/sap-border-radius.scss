@@ -1,0 +1,37 @@
+@import './common-settings';
+
+$block: #{$sap-namespace}-border-radius;
+
+$sap-corner-border-radius: (
+  "element": var(--sapElement_BorderCornerRadius),
+  "button": var(--sapButton_BorderCornerRadius),
+  "field": var(--sapField_BorderCornerRadius),
+  "group": var(--sapGroup_BorderCornerRadius),
+  "popover": var(--sapPopover_BorderCornerRadius),
+  "tile": var(--sapTile_BorderCornerRadius)
+);
+
+.#{$block} {
+  // Properties for the Parent (flex container)
+  @mixin sap-set-border-radius($value...) {
+    $_value: $value;
+
+    @if (map-has-key($sap-corner-border-radius, #{$value})) {
+      $_value: map-get($sap-corner-border-radius, #{$value});
+    }
+
+    border-radius: $_value;
+
+    @content;
+  }
+
+  @each $type, $value in $sap-corner-border-radius {
+    &-#{$type} {
+      @include sap-set-border-radius($value);
+    }
+  }
+
+  &-none {
+    @include sap-set-border-radius(0 !important);
+  }
+}
