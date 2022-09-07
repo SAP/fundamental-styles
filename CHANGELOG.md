@@ -1,3 +1,17 @@
+# [0.25.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.7...v0.25.0-rc.8) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** feed-list-item horizon & fixes ([#3857](https://github.com/SAP/fundamental-styles/issues/3857)) ([ed6eab4](https://github.com/SAP/fundamental-styles/commit/ed6eab40f322539ffbd5d5b14f0af4747d52341a))
+
+
+### BREAKING CHANGES
+
+* **styles:** * `fd-feed-list__action` class removed, use `fd-feed-list__actions` class instead.
+
+
+
 # [0.25.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.6...v0.25.0-rc.7) (2022-09-06)
 
 
