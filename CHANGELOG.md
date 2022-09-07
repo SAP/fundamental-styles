@@ -1,3 +1,12 @@
+# [0.25.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.8...v0.25.0-rc.9) (2022-09-07)
+
+
+### Bug Fixes
+
+* **styles:** card title, subtitle font-size ([#3856](https://github.com/SAP/fundamental-styles/issues/3856)) ([5963276](https://github.com/SAP/fundamental-styles/commit/5963276afa5e10fa06a4479f1e5485a355e99924))
+
+
+
 # [0.25.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.7...v0.25.0-rc.8) (2022-09-07)
 
 
