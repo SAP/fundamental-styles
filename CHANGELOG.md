@@ -1,3 +1,12 @@
+# [0.25.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.14...v0.25.0-rc.15) (2022-09-07)
+
+
+### Features
+
+* **styles:** add Border-radius to common css ([#3861](https://github.com/SAP/fundamental-styles/issues/3861)) ([b63c46e](https://github.com/SAP/fundamental-styles/commit/b63c46ed07f92f8c5608988ccbe2a32d7692a971))
+
+
+
 # [0.25.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.13...v0.25.0-rc.14) (2022-09-07)
 
 
