@@ -1,3 +1,12 @@
+# [0.25.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.13...v0.25.0-rc.14) (2022-09-07)
+
+
+### Features
+
+* **styles:** add Padding to the common-css ([#3860](https://github.com/SAP/fundamental-styles/issues/3860)) ([f5a4a81](https://github.com/SAP/fundamental-styles/commit/f5a4a817596aab71ec5824863eadadaffa970731))
+
+
+
 # [0.25.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.12...v0.25.0-rc.13) (2022-09-07)
 
 
