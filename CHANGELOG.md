@@ -1,3 +1,12 @@
+# [0.25.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.15...v0.25.0-rc.16) (2022-09-08)
+
+
+### Bug Fixes
+
+* **styles:** full height to shellbar select ([#3843](https://github.com/SAP/fundamental-styles/issues/3843)) ([56896d8](https://github.com/SAP/fundamental-styles/commit/56896d88cb3fca7067b405ea0ff174d32c9e932e))
+
+
+
 # [0.25.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.14...v0.25.0-rc.15) (2022-09-07)
 
 
