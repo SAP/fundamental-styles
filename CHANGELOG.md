@@ -1,3 +1,12 @@
+# [0.25.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.16...v0.25.0-rc.17) (2022-09-09)
+
+
+### Bug Fixes
+
+* **styles:** form message icon in horizon themes ([#3858](https://github.com/SAP/fundamental-styles/issues/3858)) ([c789d5c](https://github.com/SAP/fundamental-styles/commit/c789d5cfd01d5630e3e53d3ddfdcb90057be8708))
+
+
+
 # [0.25.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.15...v0.25.0-rc.16) (2022-09-08)
 
 
