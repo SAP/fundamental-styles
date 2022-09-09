@@ -25,6 +25,7 @@
 @import "./common/select/sap_horizon";
 @import "./common/tile/sap_horizon";
 @import "./common/progress-indicator/sap_horizon";
+@import "./common/form-message/sap_horizon";
 
 :root {
   /* Busy indicator */
@@ -187,11 +188,6 @@
   --fdPlaceholder_Font_Style: italic;
   --fdInput_Outline_Offset: -0.125rem;
   --fdInput_Outline_Offset_States: -0.125rem;
-
-  /* Form Message */
-  --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
-  --fdMessage_Border: none;
-  --fdMessage_Border_Radius: var(--sapPopover_BorderCornerRadius);
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;

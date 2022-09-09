@@ -25,6 +25,7 @@
 @import "./common/select/sap_fiori";
 @import "./common/tile/sap_fiori";
 @import "./common/progress-indicator/sap_fiori";
+@import "./common/form-message/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -176,11 +177,6 @@
   --fdInput_State_Border_Type: solid;
   --fdPlaceholder_Font_Style: italic;
   --fdInput_Outline_Offset: -0.1875rem;
-
-  /* Form Message */
-  --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
-  --fdMessage_Border: none;
-  --fdMessage_Border_Radius: 0;
 
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
