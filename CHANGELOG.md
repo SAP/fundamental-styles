@@ -1,3 +1,12 @@
+# [0.25.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.17...v0.25.0-rc.18) (2022-09-12)
+
+
+### Bug Fixes
+
+* **styles:** there should be no compact object list ([#3842](https://github.com/SAP/fundamental-styles/issues/3842)) ([134a825](https://github.com/SAP/fundamental-styles/commit/134a8254f76fd4b7a02596ee01cbd0bfdd064ab3))
+
+
+
 # [0.25.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.16...v0.25.0-rc.17) (2022-09-09)
 
 
