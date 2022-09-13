@@ -229,7 +229,7 @@ $listBlock: #{$fd-namespace}-list;
       visibility: hidden;
     }
 
-    &--hidden {
+    .#{$body}--hidden {
       display: none;
     }
   }
