@@ -28,7 +28,18 @@ When working with form groups, it's always best to use the recommended number of
     }
 };
 
-export const SSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group" style="max-width:600px; border: 1px solid; margin: 0 auto;">
+const docsStyles = `
+  <!-- Styles related to the docs -->
+  <style>
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  </style>
+
+`;
+
+
+export const SSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group" style="max-width:600px;">
     <div class="fd-row fd-form-item">
         <div class="fd-col">
                 <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -85,7 +96,7 @@ export const SSize = () => `<div class="fd-container fd-form-layout-grid-contain
         </div>
     </div>
 </div>
-`;
+` + docsStyles;
 
 SSize.storyName = 'Small';
 SSize.parameters = {
@@ -108,7 +119,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px; border: 1px solid; margin: 0 auto;">
+export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2">
       <label class="fd-form-label" for="input-2-name">Name:</label>
@@ -177,7 +188,7 @@ export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 MSizeDefault.storyName = 'Default [M]';
 MSizeDefault.parameters = {
@@ -201,7 +212,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px; border: 1px solid; margin: 0 auto;">
+export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4">
       <label class="fd-form-label" for="input-3-name">Name:</label>
@@ -270,7 +281,7 @@ export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-g
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 MSizeSplitScreen.storyName = 'Split screen [M]';
 MSizeSplitScreen.parameters = {
@@ -295,7 +306,7 @@ Empty grid columns | 1 | There is one empty space on the right of the field.
 };
 
 
-export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px; border: 1px solid; margin: 0 auto;">
+export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--3">
       <label class="fd-form-label" for="input-4-name">Name:</label>
@@ -364,7 +375,7 @@ export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 MSizeFullScreenApp.storyName = 'Full screen [M]';
 MSizeFullScreenApp.parameters = {
@@ -387,7 +398,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
     }
 };
 
-export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px; border: 1px solid; margin: 0 auto;">
+export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--4">
       <label class="fd-form-label" for="input-5-name">Name:</label>
@@ -456,7 +467,7 @@ export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-fo
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 MSizeFullScreenAppLongLabel.storyName = 'Long label [M]';
 MSizeFullScreenAppLongLabel.parameters = {
@@ -480,7 +491,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px; border: 1px solid; margin: 0 auto;">
+export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-6-name">Name:</label>
@@ -548,9 +559,8 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
       </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 LSizeDefault.storyName = 'Default [L]';
 LSizeDefault.parameters = {
@@ -574,7 +584,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px; border: 1px solid; margin: 0 auto;">
+export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-7-name">Name:</label>
@@ -643,7 +653,7 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 LSizeSingleFormGroup.storyName = 'Single form [L]';
 LSizeSingleFormGroup.parameters = {
@@ -667,7 +677,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
     }
 };
 
-export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-layout-grid-container--xl-vertical" style="max-width:1440px; border: 1px solid; margin: 0 auto;">
+export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-layout-grid-container--xl-vertical" style="max-width:1440px;">
   <div class="fd-row">
     <div class="fd-col fd-col-lg--6 fd-col--wrap fd-form-group">
       <div class="fd-row fd-form-item">
@@ -808,7 +818,7 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 LSizeMultipleFormGroup.storyName = 'Multiple form [L]';
 LSizeMultipleFormGroup.parameters = {
@@ -834,7 +844,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
       <label class="fd-form-label" for="input-9-name">Name:</label>
@@ -903,7 +913,7 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 XlDefault.storyName = 'Default [XL]';
 XlDefault.parameters = {
@@ -928,7 +938,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
 };
 
 
-export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--3">
       <label class="fd-form-label" for="input-10-name">Name:</label>
@@ -997,7 +1007,7 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 XlSingleFormGroup.storyName = 'Single form [XL]';
 XlSingleFormGroup.parameters = {
@@ -1023,7 +1033,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the fields.
     }
 };
 
-export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="border: 1px solid;">
+export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--6 fd-col--wrap fd-form-group">
       <div class="fd-row fd-form-item">
@@ -1166,7 +1176,7 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 XlDoubleFormGroup.storyName = 'Double form [XL]';
 XlDoubleFormGroup.parameters = {
@@ -1190,7 +1200,7 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical" style="border: 1px solid;">
+export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
       <div class="fd-row fd-form-item">
@@ -1394,7 +1404,7 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 XlMultipleFormGroup.storyName = 'Multiple form [XL]';
 XlMultipleFormGroup.parameters = {
@@ -1416,7 +1426,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group">
     <div class="fd-row fd-form-item">
       <div class="fd-col fd-col-md--4">
         <label class="fd-form-label" for="input-13-compact">Default Input:</label>
@@ -1449,7 +1459,7 @@ export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid
       </div>
     </div>
 </div>
-`;
+` + docsStyles;
 
 CompactLayout.storyName = 'Compact form';
 CompactLayout.parameters = {
@@ -1463,7 +1473,7 @@ To display the form using a compact layout, add the \`--compact\` modifier on th
 };
 
 export const ColumnRecommended = () => `<h2>Layout 1</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col-md--6 fd-col-lg--6 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1490,7 +1500,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
 </div>
 
 <h2>Layout 2</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1517,7 +1527,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
 </div>
 
 <h2>Layout 3</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col-md--12 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1542,7 +1552,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 
 ColumnRecommended.storyName = 'Recommended layouts';
@@ -1586,7 +1596,7 @@ S | 1
 };
 
 export const ColumnPossible = () => `<h2>Layout 4</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1624,7 +1634,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
 </div>
 
 <h2>Layout 5</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1649,7 +1659,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 ColumnPossible.storyName = 'Layout variations';
 ColumnPossible.parameters = {
@@ -1684,7 +1694,7 @@ S | 1
 };
 
 export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
-<div class="fd-container fd-form-layout-grid-container fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col-lg--6 fd-col-xl--4 fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1720,7 +1730,7 @@ export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 ColumnNotRecommended.parameters = {
     docs: {
@@ -1734,7 +1744,7 @@ The layout that is not recommended for a form group are XL3-L2-M2-S1
 };
 
 export const Vertical = () => `<h2>Vertical layout at every breakpoint</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1761,7 +1771,7 @@ export const Vertical = () => `<h2>Vertical layout at every breakpoint</h2>
 </div>
 
 <h2>Vertical layout at S (default) and LG breakpoint</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-group" style="border: 1px solid;">
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1786,7 +1796,7 @@ export const Vertical = () => `<h2>Vertical layout at every breakpoint</h2>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 Vertical.storyName = 'Vertical layout';
 Vertical.parameters = {
