@@ -1,3 +1,17 @@
+# [0.25.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.18...v0.25.0-rc.19) (2022-09-14)
+
+
+### Bug Fixes
+
+* **styles:** form layout grid ([#3838](https://github.com/SAP/fundamental-styles/issues/3838)) ([4604d7a](https://github.com/SAP/fundamental-styles/commit/4604d7a577747859bad156da00c0d7c4eca11ad1))
+
+
+### BREAKING CHANGES
+
+* **styles:** * `fd-form-layout-grid-container--vertical` additional modifier classes added, see docs
+
+
+
 # [0.25.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.17...v0.25.0-rc.18) (2022-09-12)
 
 
