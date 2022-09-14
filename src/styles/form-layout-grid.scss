@@ -11,14 +11,16 @@ $gridContainer: #{$fd-namespace}-container;
 $gridRow: #{$fd-namespace}-row;
 $gridCol: #{$fd-namespace}-col;
 
-@mixin fd-form-vertical($marginTop: 0.625rem) {
-  &.#{$formGroup},
-  .#{$formGroup} {
-    .#{$formItem} {
-      margin-top: $marginTop;
+@mixin fd-form-vertical($verticalSelector, $marginTop: 0.625rem) {
+  .#{$gridContainer}.#{$formContainer}.#{$verticalSelector} {
+    &.#{$formGroup},
+    .#{$formGroup} {
+      .#{$formItem} {
+        margin-top: 0.625rem;
 
-      &:first-of-type {
-        margin-top: 0;
+        &:first-of-type {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -30,8 +32,6 @@ $gridCol: #{$fd-namespace}-col;
   .#{$gridContainer}.#{$formContainer} .#{$gridRow} {
     @for $col from 1 through $cols - 1 {
       .#{$colSelector}--#{$col} {
-        @include fd-form-vertical();
-
         > .#{$fd-namespace}-form-label {
           float: right;
           text-align: right;
@@ -64,14 +64,13 @@ $gridCol: #{$fd-namespace}-col;
 }
 
 .#{$gridContainer}.#{$formContainer} {
-  &,
-  &.#{$formContainer}--vertical {
-    @include fd-form-vertical();
-  }
-
   &.#{$formGroup},
   .#{$formGroup} {
     padding: 1rem !important;
+
+    .#{$formGroup} {
+      padding: 0 !important;
+    }
 
     .#{$formItem} {
       &--compact {
@@ -97,18 +96,28 @@ $gridCol: #{$fd-namespace}-col;
   }
 
   .#{$gridRow} {
+    flex-direction: row;
+
     .#{$gridCol} {
       @include fd-ellipsis();
 
       padding-top: 0;
       padding-bottom: 0;
-      align-self: center;
+
+      &:not(.#{$formGroup}) {
+        align-self: center;
+      }
     }
   }
 }
 
 @media (min-width: 0) {
+  @include fd-form-vertical(#{$formContainer}--vertical);
   @include fd-form-col-paddings('fd-col');
+}
+
+@media (min-width: 0) and (max-width: 599px) {
+  @include fd-form-vertical(#{$formContainer});
 }
 
 @media (min-width: 600px) {
@@ -116,8 +125,6 @@ $gridCol: #{$fd-namespace}-col;
     $gutter: 0.25rem;
 
     padding: 0 $gutter;
-
-    @include fd-form-vertical(0);
 
     .#{$gridRow} {
       margin: 0 -#{$gutter};
@@ -132,10 +139,19 @@ $gridCol: #{$fd-namespace}-col;
   @include fd-form-col-paddings('fd-col-md');
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+  @include fd-form-vertical(#{$formContainer}--md-vertical);
+}
+
 @media (min-width: 1024px) {
   @include fd-form-col-paddings('fd-col-lg');
 }
 
+@media (min-width: 1024px) and (max-width: 1443px) {
+  @include fd-form-vertical(#{$formContainer}--lg-vertical);
+}
+
 @media (min-width: 1440px) {
+  @include fd-form-vertical(#{$formContainer}--xl-vertical);
   @include fd-form-col-paddings('fd-col-xl');
 }

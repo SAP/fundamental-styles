@@ -28,7 +28,18 @@ When working with form groups, it's always best to use the recommended number of
     }
 };
 
-export const SSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group" style="max-width:600px">
+const docsStyles = `
+  <!-- Styles related to the docs -->
+  <style>
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  </style>
+
+`;
+
+
+export const SSize = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group" style="max-width:600px;">
     <div class="fd-row fd-form-item">
         <div class="fd-col">
                 <label class="fd-form-label" for="input-1-name">Name:</label>
@@ -85,7 +96,7 @@ export const SSize = () => `<div class="fd-container fd-form-layout-grid-contain
         </div>
     </div>
 </div>
-`;
+` + docsStyles;
 
 SSize.storyName = 'Small';
 SSize.parameters = {
@@ -108,76 +119,76 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+export const MSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--2 fd-col-lg--4">
+    <div class="fd-col fd-col-md--2">
       <label class="fd-form-label" for="input-2-name">Name:</label>
     </div>
-    <div class="fd-col fd-col-md--10 fd-col-lg--8">
+    <div class="fd-col fd-col-md--10">
       <input class="fd-input" type="text" id="input-2-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--2 fd-col-lg--4">
+    <div class="fd-col fd-col-md--2">
       <label class="fd-form-label fd-form-label--required" for="input-2-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col-md--10 fd-col-lg--8">
+    <div class="fd-col fd-col-md--10">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-2-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-2-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--2  fd-col-lg--4">
+    <div class="fd-col fd-col-md--2">
       <label class="fd-form-label fd-form-label--required" for="input-2-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col-md--10  fd-col-lg--8">
+    <div class="fd-col fd-col-md--10">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-2-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
+        </div>
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-2-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--2  fd-col-lg--4">
+    <div class="fd-col fd-col-md--2">
       <label class="fd-form-label" for="input-2-country">Country:</label>
     </div>
-    <div class="fd-col fd-col-md--10  fd-col-lg--8">
+    <div class="fd-col fd-col-md--10">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                        class="fd-select__control"
-                        aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 MSizeDefault.storyName = 'Default [M]';
 MSizeDefault.parameters = {
@@ -201,76 +212,76 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+export const MSizeSplitScreen = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4  fd-col-lg--4">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label" for="input-3-name">Name:</label>
     </div>
-    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
+    <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
       <input class="fd-input" type="text" id="input-3-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4  fd-col-lg--4">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label fd-form-label--required" for="input-3-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
+    <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-3-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-3-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4  fd-col-lg--4">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label fd-form-label--required" for="input-3-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
+    <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-3-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
+        </div>
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-3-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4  fd-col-lg--4">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label" for="input-3-country">Country:</label>
     </div>
-    <div class="fd-col fd-col-md--7  fd-col-lg--8 fd-col-md--offset-after--1">
+    <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 MSizeSplitScreen.storyName = 'Split screen [M]';
 MSizeSplitScreen.parameters = {
@@ -295,76 +306,76 @@ Empty grid columns | 1 | There is one empty space on the right of the field.
 };
 
 
-export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+export const MSizeFullScreenApp = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--3  fd-col-lg--4">
+    <div class="fd-col fd-col-md--3">
       <label class="fd-form-label" for="input-4-name">Name:</label>
     </div>
-    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+    <div class="fd-col fd-col-md--5 fd-col-md--offset-after--4">
       <input class="fd-input" type="text" id="input-4-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--3  fd-col-lg--4">
+    <div class="fd-col fd-col-md--3">
       <label class="fd-form-label fd-form-label--required" for="input-4-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+    <div class="fd-col fd-col-md--5 fd-col-md--offset-after--4">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-4-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-4-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--3  fd-col-lg--4">
+    <div class="fd-col fd-col-md--3">
       <label class="fd-form-label fd-form-label--required" for="input-4-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+    <div class="fd-col fd-col-md--5 fd-col-md--offset-after--4">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-4-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
-          <input class="fd-input" type="text" id="input-4-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
+        <div class="fd-col fd-col--4">
+            <input class="fd-input" type="text" id="input-4-city" placeholder="Enter City" aria-label="City" value="Downtown">
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--3  fd-col-lg--4">
+    <div class="fd-col fd-col-md--3">
       <label class="fd-form-label" for="input-4-country">Country:</label>
     </div>
-    <div class="fd-col fd-col-md--5  fd-col-lg--8 fd-col-md--offset-after--4">
+    <div class="fd-col fd-col-md--5 fd-col-md--offset-after--4">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 MSizeFullScreenApp.storyName = 'Full screen [M]';
 MSizeFullScreenApp.parameters = {
@@ -387,76 +398,76 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
     }
 };
 
-export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px">
+export const MSizeFullScreenAppLongLabel = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1024px;">
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4 fd-col-lg--3">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label" for="input-5-name">Name:</label>
     </div>
-    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-md--offset-after--4">
       <input class="fd-input" type="text" id="input-5-name" placeholder="Enter First and Last Name" value="Amelia Perry">
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4 fd-col-lg--3">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label fd-form-label--required" for="input-5-street">Street/No.: </label>
     </div>
-    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-md--offset-after--4">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-5-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-5-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4 fd-col-lg--3">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label fd-form-label--required" for="input-5-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-md--offset-after--4">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-5-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
+        </div>
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-5-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="fd-row fd-form-item">
-    <div class="fd-col fd-col-md--4 fd-col-lg--3">
+    <div class="fd-col fd-col-md--4">
       <label class="fd-form-label" for="input-5-country">Country:</label>
     </div>
-    <div class="fd-col fd-col-md--8 fd-col-lg--5 fd-col--offset-after--4">
+    <div class="fd-col fd-col-md--8 fd-col-md--offset-after--4">
       <div class="fd-popover" style="width:100%">
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 MSizeFullScreenAppLongLabel.storyName = 'Long label [M]';
 MSizeFullScreenAppLongLabel.parameters = {
@@ -480,7 +491,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px">
+export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--4">
       <label class="fd-form-label" for="input-6-name">Name:</label>
@@ -496,12 +507,12 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-6-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-6-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -514,10 +525,10 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-6-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
+        </div>
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-6-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -531,25 +542,25 @@ export const LSizeDefault = () => `<div class="fd-container fd-form-layout-grid-
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 LSizeDefault.storyName = 'Default [L]';
 LSizeDefault.parameters = {
@@ -573,7 +584,7 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
     }
 };
 
-export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px">
+export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group" style="max-width:1440px;">
   <div class="fd-row fd-form-item">
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label" for="input-7-name">Name:</label>
@@ -589,12 +600,12 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-7-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-7-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -603,14 +614,14 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
     <div class="fd-col fd-col-md--2 fd-col-lg--3">
       <label class="fd-form-label fd-form-label--required" for="input-7-zip">ZIP Code/City: </label>
     </div>
-    <div class="fd-col  fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
+    <div class="fd-col fd-col-md--10 fd-col-lg--5 fd-col-lg--offset-after--4">
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-7-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
+        </div>
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-7-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -624,24 +635,25 @@ export const LSizeSingleFormGroup = () => `<div class="fd-container fd-form-layo
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 LSizeSingleFormGroup.storyName = 'Single form [L]';
 LSizeSingleFormGroup.parameters = {
@@ -665,7 +677,7 @@ Empty grid columns | 4 | There are four empty spaces on the right of the field.
     }
 };
 
-export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container" style="max-width:1440px">
+export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-layout-grid-container--xl-vertical" style="max-width:1440px;">
   <div class="fd-row">
     <div class="fd-col fd-col-lg--6 fd-col--wrap fd-form-group">
       <div class="fd-row fd-form-item">
@@ -682,12 +694,12 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-row">
-          <div class="fd-col fd-col--4">
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-7-street" placeholder="Enter address" value="Myrtle St.">
-          </div>
-          <div class="fd-col fd-col--8">
+            </div>
+            <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-7-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -700,10 +712,10 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-7-zip" placeholder="Enter ZIP Code" value="43823">
-          </div>
-          <div class="fd-col fd-col--4">
+            </div>
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-7-city" placeholder="Enter City" aria-label="City" value="Downtown">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -717,20 +729,21 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
             <div class="fd-popover__control">
               <div class="fd-select">
                 <div
-                    aria-controls="h031XCM509"
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                    tabindex="0">
-                    <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  aria-label="Country"
+                  tabindex="0"
+                >
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                  </span>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
@@ -750,12 +763,12 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--12">
           <div class="fd-row">
-          <div class="fd-col fd-col--4">
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-8-street" placeholder="Enter address" value="Myrtle St.">
-          </div>
-          <div class="fd-col fd-col--8">
+            </div>
+            <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-8-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -768,10 +781,10 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-8-zip" placeholder="Enter ZIP Code" value="43823">
-          </div>
-          <div class="fd-col fd-col--4">
+            </div>
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-8-city" placeholder="Enter City" aria-label="City" value="Downtown">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -785,26 +798,27 @@ export const LSizeMultipleFormGroup = () => `<div class="fd-container fd-form-la
             <div class="fd-popover__control">
               <div class="fd-select">
                 <div
-                    aria-controls="h031XCM509"
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                    tabindex="0">
-                    <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  aria-label="Country"
+                  tabindex="0"
+                >
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                  </span>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 LSizeMultipleFormGroup.storyName = 'Multiple form [L]';
 LSizeMultipleFormGroup.parameters = {
@@ -846,12 +860,12 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-9-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-9-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -864,10 +878,10 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-9-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
+        </div>
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-9-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -881,25 +895,25 @@ export const XlDefault = () => `<div class="fd-container fd-form-layout-grid-con
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 XlDefault.storyName = 'Default [XL]';
 XlDefault.parameters = {
@@ -940,12 +954,12 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
     </div>
     <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--5 fd-col-xl--offset-after--4">
       <div class="fd-row">
-      <div class="fd-col fd-col--4">
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-10-street" placeholder="Enter address" value="Myrtle St.">
-      </div>
-      <div class="fd-col fd-col--8">
+        </div>
+        <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-10-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -958,10 +972,10 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
       <div class="fd-row">
         <div class="fd-col fd-col--8">
           <input class="fd-input" type="text" id="input-10-zip" placeholder="Enter ZIP Code" value="43823">
-      </div>
-      <div class="fd-col fd-col--4">
+        </div>
+        <div class="fd-col fd-col--4">
           <input class="fd-input" type="text" id="input-10-city" placeholder="Enter City" aria-label="City" value="Downtown">
-      </div>
+        </div>
       </div>
     </div>
   </div>
@@ -975,25 +989,25 @@ export const XlSingleFormGroup = () => `<div class="fd-container fd-form-layout-
         <div class="fd-popover__control">
           <div class="fd-select">
             <div
-                aria-controls="h031XCM509"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                tabindex="0">
-                <span class="fd-select__text-content">US</span>
-                <span class="fd-button fd-button--transparent fd-select__button">
-                    <i class="sap-icon--slim-arrow-down"></i>
-                </span>
+              aria-controls="h031XCM509"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              class="fd-select__control"
+              aria-label="Country"
+              tabindex="0"
+            >
+              <span class="fd-select__text-content">US</span>
+              <span class="fd-button fd-button--transparent fd-select__button">
+                <i class="sap-icon--slim-arrow-down"></i>
+              </span>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
-
 </div>
-`;
+` + docsStyles;
 
 XlSingleFormGroup.storyName = 'Single form [XL]';
 XlSingleFormGroup.parameters = {
@@ -1037,12 +1051,12 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
-          <div class="fd-col fd-col--4">
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-11-street" placeholder="Enter address" value="Myrtle St.">
-          </div>
-          <div class="fd-col fd-col--8">
+            </div>
+            <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-11-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1055,10 +1069,10 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-11-zip" placeholder="Enter ZIP Code" value="43823">
-          </div>
-          <div class="fd-col fd-col--4">
+            </div>
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-11-city" placeholder="Enter City" aria-label="City" value="Downtown">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1072,23 +1086,25 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
             <div class="fd-popover__control">
               <div class="fd-select">
                 <div
-                    aria-controls="h031XCM509"
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                    tabindex="0">
-                    <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  aria-label="Country"
+                  tabindex="0"
+                >
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                  </span>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="fd-col fd-col-xl--6 fd-col--wrap fd-form-group">
       <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--4">
@@ -1105,12 +1121,12 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--8">
           <div class="fd-row">
-          <div class="fd-col fd-col--4">
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-11a-street" placeholder="Enter address" value="Myrtle St.">
-          </div>
-          <div class="fd-col fd-col--8">
+            </div>
+            <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-11a-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1123,10 +1139,10 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-11a-zip" placeholder="Enter ZIP Code" value="43823">
-          </div>
-          <div class="fd-col fd-col--4">
+            </div>
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-11a-city" placeholder="Enter City" aria-label="City" value="Downtown">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1140,26 +1156,27 @@ export const XlDoubleFormGroup = () => `<div class="fd-container fd-form-layout-
             <div class="fd-popover__control">
               <div class="fd-select">
                 <div
-                    aria-controls="h031XCM509"
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                    tabindex="0">
-                    <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  aria-label="Country"
+                  tabindex="0"
+                >
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                  </span>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 XlDoubleFormGroup.storyName = 'Double form [XL]';
 XlDoubleFormGroup.parameters = {
@@ -1183,23 +1200,21 @@ Empty grid columns | 0 | There are no empty spaces on the right of the fields.
     }
 };
 
-export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container">
+export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical">
   <div class="fd-row">
     <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
-
-
       <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label fd-form-label--required" for="input-12-street">Street/No.: </label>
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-row">
-          <div class="fd-col fd-col--4">
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-12-street" placeholder="Enter address" value="Myrtle St.">
-          </div>
-          <div class="fd-col fd-col--8">
+            </div>
+            <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-12-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1212,10 +1227,10 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-12-zip" placeholder="Enter ZIP Code" value="43823">
-          </div>
-          <div class="fd-col fd-col--4">
+            </div>
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-12-city" placeholder="Enter City" aria-label="City" value="Downtown">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1229,23 +1244,25 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
             <div class="fd-popover__control">
               <div class="fd-select">
                 <div
-                    aria-controls="h031XCM509"
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                class="fd-select__control"
-                aria-label="Country"
-                    tabindex="0">
-                    <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  aria-label="Country"
+                  tabindex="0"
+                >
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent fd-select__button">
+                    <i class="sap-icon--slim-arrow-down"></i>
+                  </span>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
       <div class="fd-row fd-form-item">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
@@ -1262,12 +1279,12 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
         </div>
         <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
           <div class="fd-row">
-          <div class="fd-col fd-col--4">
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-12a-street" placeholder="Enter address" value="Myrtle St.">
-          </div>
-          <div class="fd-col fd-col--8">
+            </div>
+            <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-12a-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1280,10 +1297,10 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
           <div class="fd-row">
             <div class="fd-col fd-col--8">
               <input class="fd-input" type="text" id="input-12a-zip" placeholder="Enter ZIP Code" value="43823">
-          </div>
-          <div class="fd-col fd-col--4">
+            </div>
+            <div class="fd-col fd-col--4">
               <input class="fd-input" type="text" id="input-12a-city" placeholder="Enter City" aria-label="City" value="Downtown">
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1297,98 +1314,97 @@ export const XlMultipleFormGroup = () => `<div class="fd-container fd-form-layou
             <div class="fd-popover__control">
               <div class="fd-select">
                 <div
-                    aria-controls="h031XCM509"
-                    aria-expanded="false"
-                    aria-haspopup="listbox"
-                    class="fd-select__control"
-                    aria-label="Country"
-                    tabindex="0">
-                    <span class="fd-select__text-content">US</span>
-                    <span class="fd-button fd-button--transparent fd-select__button">
-                        <i class="sap-icon--slim-arrow-down"></i>
-                    </span>
-                </div>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
-    <div class="fd-row fd-form-item">
-      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-        <label class="fd-form-label" for="input-12b-name">Name:</label>
-      </div>
-      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-        <input class="fd-input" type="text" id="input-12b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
-      </div>
-    </div>
-
-    <div class="fd-row fd-form-item">
-      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-        <label class="fd-form-label fd-form-label--required" for="input-12b-street">Street/No.: </label>
-      </div>
-      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-        <div class="fd-row">
-        <div class="fd-col fd-col--4">
-            <input class="fd-input" type="text" id="input-12b-street" placeholder="Enter address" value="Myrtle St.">
-        </div>
-        <div class="fd-col fd-col--8">
-            <input class="fd-input" type="text" id="input-12b-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fd-row fd-form-item">
-      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-        <label class="fd-form-label fd-form-label--required" for="input-12b-zip">ZIP Code/City: </label>
-      </div>
-      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-        <div class="fd-row">
-          <div class="fd-col fd-col--8">
-            <input class="fd-input" type="text" id="input-12b-zip" placeholder="Enter ZIP Code" value="43823">
-        </div>
-        <div class="fd-col fd-col--4">
-            <input class="fd-input" type="text" id="input-12b-city" placeholder="Enter City" aria-label="City" value="Downtown">
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fd-row fd-form-item">
-      <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
-        <label class="fd-form-label" for="input-12b-country">Country:</label>
-      </div>
-      <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
-        <div class="fd-popover" style="width:100%">
-          <div class="fd-popover__control">
-            <div class="fd-select">
-              <div
                   aria-controls="h031XCM509"
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   class="fd-select__control"
                   aria-label="Country"
-                  tabindex="0">
+                  tabindex="0"
+                >
                   <span class="fd-select__text-content">US</span>
                   <span class="fd-button fd-button--transparent fd-select__button">
                     <i class="sap-icon--slim-arrow-down"></i>
                   </span>
+                </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
+    </div>
+
+    <div class="fd-col fd-col-xl--4 fd-col--wrap fd-form-group">
+      <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-12b-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <input class="fd-input" type="text" id="input-12b-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+
+      <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label fd-form-label--required" for="input-12b-street">Street/No.: </label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <div class="fd-row">
+          <div class="fd-col fd-col--4">
+              <input class="fd-input" type="text" id="input-12b-street" placeholder="Enter address" value="Myrtle St.">
+          </div>
+          <div class="fd-col fd-col--8">
+              <input class="fd-input" type="text" id="input-12b-number" aria-label="Street Number" placeholder="Enter Street Number" value="495">
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label fd-form-label--required" for="input-12b-zip">ZIP Code/City: </label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <div class="fd-row">
+            <div class="fd-col fd-col--8">
+              <input class="fd-input" type="text" id="input-12b-zip" placeholder="Enter ZIP Code" value="43823">
+          </div>
+          <div class="fd-col fd-col--4">
+              <input class="fd-input" type="text" id="input-12b-city" placeholder="Enter City" aria-label="City" value="Downtown">
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fd-row fd-form-item">
+        <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
+          <label class="fd-form-label" for="input-12b-country">Country:</label>
+        </div>
+        <div class="fd-col fd-col-md--10 fd-col-lg--8 fd-col-xl--12">
+          <div class="fd-popover" style="width:100%">
+            <div class="fd-popover__control">
+              <div class="fd-select">
+                <div
+                  aria-controls="h031XCM509"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="fd-select__control"
+                  aria-label="Country"
+                  tabindex="0"
+                >
+                  <span class="fd-select__text-content">US</span>
+                  <span class="fd-button fd-button--transparent fd-select__button">
+                  <i class="sap-icon--slim-arrow-down"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-
-  </div>
 </div>
-`;
+` + docsStyles;
 
 XlMultipleFormGroup.storyName = 'Multiple form [XL]';
 XlMultipleFormGroup.parameters = {
@@ -1412,38 +1428,38 @@ Empty grid columns | 0 | There is no empty space on the right of the field.
 
 export const CompactLayout = () => `<div class="fd-container fd-form-layout-grid-container fd-form-group">
     <div class="fd-row fd-form-item">
-        <div class="fd-col fd-col--4">
-          <label class="fd-form-label" for="input-13-compact">Default Input:</label>
-        </div>
-        <div class="fd-col fd-col--7">
-            <input class="fd-input fd-input--compact" type="text" id="input-13-compact" placeholder="Field placeholder text">
-        </div>
+      <div class="fd-col fd-col-md--4">
+        <label class="fd-form-label" for="input-13-compact">Default Input:</label>
+      </div>
+      <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
+        <input class="fd-input fd-input--compact" type="text" id="input-13-compact" placeholder="Field placeholder text">
+      </div>
     </div>
     <div class="fd-row fd-form-item">
-        <div class="fd-col fd-col--4">
-          <label class="fd-form-label fd-form-label--required" for="input-13b-compact">Required Input: </label>
-        </div>
-        <div class="fd-col fd-col--7">
-            <input class="fd-input fd-input--compact" type="text" id="input-13b-compact" placeholder="Field placeholder text">
-        </div>
+      <div class="fd-col fd-col-md--4">
+        <label class="fd-form-label fd-form-label--required" for="input-13b-compact">Required Input: </label>
+      </div>
+      <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
+          <input class="fd-input fd-input--compact" type="text" id="input-13b-compact" placeholder="Field placeholder text">
+      </div>
     </div>
     <div class="fd-row fd-form-item" role="group" aria-labelledby="groupLabel-compact">
-        <div class="fd-col fd-col--4">
-          <label class="fd-form-label"  id="groupLabel-compact">2 Inputs: </label>
-        </div>
-        <div class="fd-col fd-col--7">
-            <div class="fd-row">
-                  <div class="fd-col fd-col--6">
-                      <input class="fd-input fd-input--compact" type="text" id="input1-of-2-compact" aria-label="input1-of-2-compact" placeholder="Field placeholder text">
-                  </div>
-                  <div class="fd-col fd-col--6">
-                      <input class="fd-input fd-input--compact" type="text" id="input2-of-2-compact" aria-label="input2-of-2-compact" placeholder="Field placeholder text">
-                  </div>
-              </div>
-          </div>
+      <div class="fd-col fd-col-md--4">
+        <label class="fd-form-label" id="groupLabel-compact">2 Inputs: </label>
       </div>
+      <div class="fd-col fd-col-md--7 fd-col-md--offset-after--1">
+        <div class="fd-row">
+          <div class="fd-col fd-col--6">
+            <input class="fd-input fd-input--compact" type="text" id="input1-of-2-compact" aria-label="input1-of-2-compact" placeholder="Field placeholder text">
+          </div>
+          <div class="fd-col fd-col--6">
+            <input class="fd-input fd-input--compact" type="text" id="input2-of-2-compact" aria-label="input2-of-2-compact" placeholder="Field placeholder text">
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
-`;
+` + docsStyles;
 
 CompactLayout.storyName = 'Compact form';
 CompactLayout.parameters = {
@@ -1497,7 +1513,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
       </div>
     </div>
 
-    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap  fd-form-item">
+    <div class="fd-col fd-col-md--12 fd-col-lg--6 fd-col-xl--6 fd-col--wrap fd-form-item">
       <div class="fd-row">
         <div class="fd-col fd-col-md--2 fd-col-lg--4 fd-col-xl--12">
           <label class="fd-form-label" for="input-15a-name">Name:</label>
@@ -1536,7 +1552,7 @@ export const ColumnRecommended = () => `<h2>Layout 1</h2>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 
 ColumnRecommended.storyName = 'Recommended layouts';
@@ -1618,7 +1634,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
 </div>
 
 <h2>Layout 5</h2>
-<div class="fd-container fd-form-layout-grid-container fd-form-group">
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical fd-form-group">
   <div class="fd-row">
     <div class="fd-col fd-col--wrap fd-form-item">
       <div class="fd-row">
@@ -1643,7 +1659,7 @@ export const ColumnPossible = () => `<h2>Layout 4</h2>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 ColumnPossible.storyName = 'Layout variations';
 ColumnPossible.parameters = {
@@ -1714,7 +1730,7 @@ export const ColumnNotRecommended = () => `<h1>XL3-L2-M2-S1</h1>
     </div>
   </div>
 </div>
-`;
+` + docsStyles;
 
 ColumnNotRecommended.parameters = {
     docs: {
@@ -1723,6 +1739,84 @@ ColumnNotRecommended.parameters = {
             story: `
 The layout that is not recommended for a form group are XL3-L2-M2-S1
 `
+        }
+    }
+};
+
+export const Vertical = () => `<h2>Vertical layout at every breakpoint</h2>
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group">
+  <div class="fd-row">
+    <div class="fd-col fd-col--wrap fd-form-item">
+      <div class="fd-row">
+        <div class="fd-col">
+          <label class="fd-form-label" for="input-14-name">Name:</label>
+        </div>
+        <div class="fd-col">
+          <input class="fd-input" type="text" id="input-14-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col--wrap fd-form-item">
+      <div class="fd-row">
+        <div class="fd-col">
+          <label class="fd-form-label" for="input-14a-name">Name:</label>
+        </div>
+        <div class="fd-col">
+          <input class="fd-input" type="text" id="input-14a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Vertical layout at S (default) and LG breakpoint</h2>
+<div class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-group">
+  <div class="fd-row">
+    <div class="fd-col fd-col--wrap fd-form-item">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--4 fd-col-lg--12 fd-col-xl--4">
+          <label class="fd-form-label" for="input-14-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--8 fd-col-lg--12 fd-col-xl--8">
+          <input class="fd-input" type="text" id="input-14-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+
+    <div class="fd-col fd-col--wrap fd-form-item">
+      <div class="fd-row">
+        <div class="fd-col fd-col-md--4 fd-col-lg--12 fd-col-xl--4">
+          <label class="fd-form-label" for="input-14a-name">Name:</label>
+        </div>
+        <div class="fd-col fd-col-md--8 fd-col-lg--12 fd-col-xl--8">
+          <input class="fd-input" type="text" id="input-14a-name" placeholder="Enter First and Last Name" value="Amelia Perry">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+` + docsStyles;
+
+Vertical.storyName = 'Vertical layout';
+Vertical.parameters = {
+    docs: {
+        iframeHeight: 590,
+        description: {
+            story: `
+Form could be displayed in vertical (form controls below labels) or horizontal layout (form controls on the same line as labels).
+When the form displayed in vertical layout there should be a gap after each form item.
+All forms are displayed in vertical layout under S breakpoint.
+To display form in vertical layout under different breakpoints apply modifier classes from the following table.
+
+Modifier | Breakpoint
+:------ | :--------:
+(no modifier class) | **S** |
+\`.fd-form-layout-grid-container--vertical\` | All
+\`.fd-form-layout-grid-container--md-vertical\` | **MD**
+\`.fd-form-layout-grid-container--lg-vertical\` | **LG**
+\`.fd-form-layout-grid-container--xl-vertical\` | **XL**
+        `
         }
     }
 };
