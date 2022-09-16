@@ -1,3 +1,12 @@
+# [0.25.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.19...v0.25.0-rc.20) (2022-09-16)
+
+
+### Bug Fixes
+
+* **docs:** docs container width ([#3869](https://github.com/SAP/fundamental-styles/issues/3869)) ([dfe8d9f](https://github.com/SAP/fundamental-styles/commit/dfe8d9f297f8064cd511e1882ecf579f6d500279))
+
+
+
 # [0.25.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.18...v0.25.0-rc.19) (2022-09-14)
 
 
