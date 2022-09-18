@@ -83,7 +83,7 @@
     "@storybook/addon-docs": "6.5.10",
     "@storybook/addon-links": "6.5.10",
     "@storybook/addon-storyshots": "6.5.10",
-    "@storybook/addon-toolbars": "6.5.10",
+    "@storybook/addon-toolbars": "6.5.12",
     "@storybook/addon-viewport": "6.5.10",
     "@storybook/addons": "6.5.10",
     "@storybook/builder-webpack5": "^6.5.10",
