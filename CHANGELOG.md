@@ -1,3 +1,12 @@
+# [0.25.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.21...v0.25.0-rc.22) (2022-09-19)
+
+
+### Bug Fixes
+
+* **styles:** form message in popover ([#3867](https://github.com/SAP/fundamental-styles/issues/3867)) ([45b1c88](https://github.com/SAP/fundamental-styles/commit/45b1c88c7152820a5ce9651fab2c4c6c5c76dfaa))
+
+
+
 # [0.25.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.20...v0.25.0-rc.21) (2022-09-18)
 
 
