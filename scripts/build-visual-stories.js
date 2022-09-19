@@ -149,7 +149,7 @@ const wrappedStory = (storyName, storyFn, direction) =>\`
 <br />\`;
 
 export const ${visualStoryName} = () => {
-    let storyNames = Object.keys(stories).filter(story => story !== 'default' && story !== 'dev');
+    let storyNames = Object.keys(stories).filter(story => !['default', 'dev', '__namedExportsOrder'].includes(story));
     const allVisualStories = document.createElement('div');
     allVisualStories.innerHTML = storyNames.map(function(eachStoryName) {
         const eachStory = stories[eachStoryName];
