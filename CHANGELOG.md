@@ -1,3 +1,12 @@
+# [0.25.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.22...v0.25.0-rc.23) (2022-09-19)
+
+
+### Bug Fixes
+
+* **docs:** chromatic build issue ([#3880](https://github.com/SAP/fundamental-styles/issues/3880)) ([eedb209](https://github.com/SAP/fundamental-styles/commit/eedb209567e74d66cd4510bd95186dd3f10fce90))
+
+
+
 # [0.25.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.21...v0.25.0-rc.22) (2022-09-19)
 
 
