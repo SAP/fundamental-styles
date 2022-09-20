@@ -1,134 +1,14 @@
 @import './common-settings';
-@import './sap-media-queries.scss';
+@import './common-mixins';
 
 $block: #{$sap-namespace}-padding;
 
 .#{$block} {
-
-  $sap-paddings: (
-    "tiny": 0.5rem,
-    "small": 1rem,
-    "medium": 2rem,
-    "large": 3rem
-  );
-
-  $sap-container-sides: (
-    "top": top,
-    "bottom": bottom,
-    "begin": left,
-    "end": right,
-    "x": horizontal,
-    "y": vertical
-  );
-
-  @mixin sap-set-padding-all($value: 0) {
-    padding: $value;
-  }
-
-  @mixin sap-set-padding-top($value: 0) {
-    padding-top: $value;
-  }
-
-  @mixin sap-set-padding-bottom($value: 0) {
-    padding-bottom: $value;
-  }
-
-  @mixin sap-set-padding-begin($value: 0) {
-    padding-left: $value;
-
-    @include sap-rtl() {
-      padding-left: 0;
-      padding-right: $value;
-    }
-  }
-
-  @mixin sap-set-padding-end($value: 0) {
-    padding-right: $value;
-
-    @include sap-rtl() {
-      padding-right: 0;
-      padding-left: $value;
-    }
-  }
-
-  @mixin sap-set-padding-x-equal($value: 0) {
-    padding-right: $value;
-    padding-left: $value;
-  }
-
-  @mixin sap-set-padding-y-equal($value: 0) {
-    padding-top: $value;
-    padding-bottom: $value;
-  }
-
-  @mixin sap-set-padding-x($valueLeft: 0, $valueRight: 0) {
-    padding-left: $valueLeft;
-    padding-right: $valueRight;
-
-    @include sap-rtl() {
-      padding-left: $valueRight;
-      padding-right: $valueLeft;
-    }
-  }
-
-  @mixin sap-set-padding-y($valueTop: 0, $valueBottom: 0) {
-    padding-top: $valueTop;
-    padding-bottom: $valueBottom;
-  }
-
-  @mixin sap-padding($value: 1rem, $side: '') {
-    $_value: $value !important;
-
-    @if (map-has-key($sap-paddings, #{$value})) {
-      $_value: map-get($sap-paddings, #{$value}) !important;
-    }
-
-    @if ($side != '') {
-      @if ($side == top) {
-        @include sap-set-padding-top($_value);
-      } @else if($side == bottom) {
-        @include sap-set-padding-bottom($_value);
-      } @else if($side == begin) {
-        @include sap-set-padding-begin($_value);
-      } @else if($side == end) {
-        @include sap-set-padding-end($_value);
-      } @else if($side == x) {
-        @include sap-set-padding-x-equal($_value);
-      } @else if($side == y) {
-        @include sap-set-padding-y-equal($_value);
-      }
-    } @else {
-      @include sap-set-padding-all($_value);
-    }
-  }
-
   @include sap-padding();
 
   @each $type, $value in $sap-paddings {
     &-x-#{$type} {
       @include sap-padding(#{$type}, x);
-    }
-  }
-
-  @mixin sap-padding-responsive() {
-    @include sap-media-sm() {
-      @include sap-padding(small, x);
-      @include sap-padding(0, y);
-    }
-
-    @include sap-media-md() {
-      @include sap-padding(medium, x);
-      @include sap-padding(0, y);
-    }
-
-    @include sap-media-lg() {
-      @include sap-padding(medium, x);
-      @include sap-padding(0, y);
-    }
-
-    @include sap-media-xl() {
-      @include sap-padding(large, x);
-      @include sap-padding(0, y);
     }
   }
 

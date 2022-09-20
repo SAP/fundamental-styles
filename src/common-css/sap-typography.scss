@@ -1,84 +1,12 @@
 @import './common-settings';
+@import './common-mixins';
+
 $block: #{$sap-namespace}-font;
 
 .#{$block} {
-  // FONT FAMILY
-  $sap-font-types: (
-    "regular": var(--sapFontFamily),
-    "light": var(--sapFontLightFamily),
-    "bold": var(--sapFontBoldFamily),
-    "semibold": var(--sapFontSemiboldFamily),
-    "semibold-duplex": var(--sapFontSemiboldDuplexFamily),
-    "monospaced-regular": var(--sapContent_MonospaceFontFamily),
-    "monospaced-bold": var(--sapContent_MonospaceBoldFontFamily),
-    "black": var(--sapFontBlackFamily),
-    "header": var(--sapFontHeaderFamily),
-  );
-
-  @mixin sap-font-family($type) {
-    @if ($type == "regular") {
-      font-family: map-get($sap-font-types, "regular");
-    } @else if ($type == "light") {
-      font-family: map-get($sap-font-types, "light");
-    } @else if ($type == "bold") {
-      font-family: map-get($sap-font-types, "bold");
-    } @else if ($type == "semibold") {
-      font-family: map-get($sap-font-types, "semibold");
-    } @else if ($type == "semibold-duplex") {
-      font-family: map-get($sap-font-types, "semibold-duplex");
-    } @else if ($type == "monospaced-regular") {
-      font-family: map-get($sap-font-types, "monospaced-regular");
-    } @else if ($type == "monospaced-bold") {
-      font-family: map-get($sap-font-types, "monospaced-bold");
-    } @else if ($type == "black") {
-      font-family: map-get($sap-font-types, "black");
-    } @else if ($type == "header") {
-      font-family: map-get($sap-font-types, "header");
-    } @else {
-      font-family: $type;
-    }
-  }
-
   @each $type, $value in $sap-font-types {
     &-family-#{$type} {
       font-family: $value;
-    }
-  }
-
-  // FONT SIZE
-  $sap-font-sizes: (
-    "header-6": var(--sapFontHeader6Size),
-    "header-5": var(--sapFontHeader5Size),
-    "header-4": var(--sapFontHeader4Size),
-    "header-3": var(--sapFontHeader3Size),
-    "header-2": var(--sapFontHeader2Size),
-    "header-1": var(--sapFontHeader1Size),
-    "small": var(--sapFontSmallSize),
-    "medium": var(--sapFontSize),
-    "large": var(--sapFontLargeSize),
-  );
-
-  @mixin sap-font-size($size) {
-    @if ($size == "header-6") {
-      font-size: map-get($sap-font-sizes, "header-6");
-    } @else if ($size == "header-5") {
-      font-size: map-get($sap-font-sizes, "header-5");
-    } @else if ($size == "header-4") {
-      font-size: map-get($sap-font-sizes, "header-4");
-    } @else if ($size == "header-3") {
-      font-size: map-get($sap-font-sizes, "header-3");
-    } @else if ($size == "header-2") {
-      font-size: map-get($sap-font-sizes, "header-2");
-    } @else if ($size == "header-1") {
-      font-size: map-get($sap-font-sizes, "header-1");
-    } @else if ($size == "small") {
-      font-size: map-get($sap-font-sizes, "small");
-    } @else if ($size == "medium") {
-      font-size: map-get($sap-font-sizes, "medium");
-    } @else if ($size == "large") {
-      font-size: map-get($sap-font-sizes, "large");
-    } @else {
-      font-size: $size;
     }
   }
 
@@ -88,43 +16,12 @@ $block: #{$sap-namespace}-font;
     }
   }
 
-  // LINE HEIGHT
-  @mixin sap-font-line-height($value: normal) {
-    line-height: $value;
-  }
-
   &-line-height {
     @include sap-font-line-height();
   }
 
   &-line-height-long {
     @include sap-font-line-height(1.4);
-  }
-
-  // COMMON CASES
-  @mixin sap-font($type) {
-    @if ($type == header-3) {
-      font-family: var(--sapFontHeaderFamily);
-      font-size: var(--sapFontHeader3Size);
-      color: var(--sapGroup_TitleTextColor);
-    } @else {
-      font-family: var(--sapFontFamily);
-
-      @if ($type == standard-text) {
-        font-size: var(--sapFontSize);
-        color: var(--sapTextColor);
-      } @else if($type == small-detail-text) {
-        font-size: var(--sapFontSmallSize);
-        color: var(--sapContent_LabelColor);
-      } @else if($type == standard-field-text) {
-        font-size: var(--sapFontSize);
-        color: var(--sapField_TextColor);
-      } @else {
-        font-size: var(--sapFontSize);
-        color: var(--sapContent_LabelColor);
-      }
-    }
-    @content;
   }
 
   &-header-3 {

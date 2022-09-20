@@ -1,70 +1,9 @@
 @import './common-settings';
-@import './sap-media-queries';
+@import './common-mixins';
 
 $block: #{$sap-namespace}-content-paddings;
 
 .#{$block} {
-
-  $sap-content-paddings-home: (
-    "sm": 0.5rem,
-    "md": 2rem,
-    "lg": 2rem,
-    "xl": 3rem,
-  );
-
-  $sap-content-paddings-container: (
-    "sm": 1rem,
-    "md": 2rem,
-    "lg": 2rem,
-    "xl": 3rem,
-  );
-
-  $sap-content-paddings-nav: (
-    "sm": 1rem,
-    "md": 2rem,
-    "lg": 2rem,
-    "xl": 3rem,
-  );
-
-  @mixin sap-set-content-paddings($type, $value) {
-    @if ($type == 'home') {
-      padding-left: map-get($sap-content-paddings-home, $value) !important;
-      padding-right: map-get($sap-content-paddings-home, $value) !important;
-    } @else if ($type == 'container') {
-      padding-left: map-get($sap-content-paddings-container, $value) !important;
-      padding-right: map-get($sap-content-paddings-container, $value) !important;
-    } @else {
-      padding-left: map-get($sap-content-paddings-nav, $value) !important;
-      padding-right: map-get($sap-content-paddings-nav, $value) !important;
-    }
-  }
-
-  @mixin sap-set-dynamic-content-paddings($type) {
-    @include sap-media-sm() {
-      @include sap-set-content-paddings($type, 'sm');
-    }
-
-    @include sap-media-md() {
-      @include sap-set-content-paddings($type, 'md');
-    }
-
-    @include sap-media-lg() {
-      @include sap-set-content-paddings($type, 'lg');
-    }
-
-    @include sap-media-xl() {
-      @include sap-set-content-paddings($type, 'xl');
-    }
-  }
-
-  @mixin sap-content-paddings($type: home, $size: default) {
-    @if ($size == default) {
-      @include sap-set-dynamic-content-paddings($type);
-    } @else {
-      @include sap-set-content-paddings($type, $size);
-    }
-  }
-
   &-home {
     @include sap-content-paddings(home);
 

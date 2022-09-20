@@ -1,18 +1,5 @@
 @import './common-settings';
-
-@mixin sap-sr-only() {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  width: 1px;
-  border: 0;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-
-  @content;
-}
+@import './common-mixins';
 
 .#{$sap-namespace}-sr-only {
   @include sap-sr-only();

@@ -1,44 +1,9 @@
 @import './common-settings';
+@import './common-mixins';
 
 $block: #{$sap-namespace}-has-shadow;
 
 .#{$block} {
-
-  $sap-box-shadow-types: (
-    "level-0": var(--sapContent_Shadow0),
-    "level-1": var(--sapContent_Shadow1),
-    "level-2": var(--sapContent_Shadow2),
-    "level-3": var(--sapContent_Shadow3),
-    "header": var(--sapContent_HeaderShadow),
-    "shell": var(--sapShell_Shadow),
-    "none": none,
-  );
-
-  $sap-text-shadow-types: (
-    "text": var(--sapContent_TextShadow),
-    "contrast-text": var(--sapContent_ContrastTextShadow),
-    "group-title-text": var(--sapShell_GroupTitleTextShadow),
-    "emphasized-text": var(--sapButton_Emphasized_TextShadow),
-  );
-
-  @mixin sap-set-box-shadow($value) {
-    box-shadow: $value;
-  }
-
-  @mixin sap-set-text-shadow($value) {
-    text-shadow: $value;
-  }
-
-  @mixin sap-shadow($type) {
-    @if (map-has-key($sap-box-shadow-types , #{$type} )) {
-      @include sap-set-box-shadow(map-get($sap-box-shadow-types, #{$type}));
-    } @else if (map-has-key($sap-text-shadow-types , #{$type} )) {
-      @include sap-set-text-shadow(map-get($sap-text-shadow-types, #{$type}));
-    } @else {
-      @warn "Unknown type of shadow";
-    }
-  }
-
   @each $type, $value in $sap-box-shadow-types {
     &-#{$type} {
       @include sap-shadow(#{$type});

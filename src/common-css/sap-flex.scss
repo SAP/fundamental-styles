@@ -1,34 +1,11 @@
 @import './common-settings';
+@import './common-mixins';
 
 $block: #{$sap-namespace}-flex;
 
-$sap-flex-spacings: (
-  "tiny": 0.5rem,
-  "small": 1rem,
-  "medium": 2rem,
-  "large": 3rem
-);
-
 .#{$block} {
   // Properties for the Parent (flex container)
-  @mixin sap-flex($direction: row) {
-    display: flex;
-    flex-direction: $direction;
-
-    @content;
-  }
-
   @include sap-flex();
-
-  // ----------- FLEX ALIGN CONTENT -----------
-  @mixin sap-flex-align-content($type: normal) {
-    @include sap-flex() {
-      flex-wrap: wrap;
-      align-content: $type;
-    }
-
-    @content;
-  }
 
   $optionsAlignContent: flex-start, flex-end, center, space-between, space-around, space-evenly, stretch, start, end, baseline;
 
@@ -36,15 +13,6 @@ $sap-flex-spacings: (
     &--align-content-#{$type} {
       @include sap-flex-align-content(#{$type});
     }
-  }
-
-  // ----------- FLEX ALIGN ITEMS -----------
-  @mixin sap-flex-align-items($type: stretch) {
-    @include sap-flex() {
-      align-items: $type;
-    }
-
-    @content;
   }
 
   $optionsAlignItems: stretch, flex-start, flex-end, center, baseline, start, end, self-start, self-end;
@@ -55,7 +23,6 @@ $sap-flex-spacings: (
     }
   }
 
-  // ----------- FLEX DIRECTION -----------
   $optionsDirection: row, row-reverse, column, column-reverse;
 
   @each $type in $optionsDirection {
@@ -64,7 +31,6 @@ $sap-flex-spacings: (
     }
   }
 
-  // ----------- FLEX GAP -----------
   @each $type, $value in $sap-flex-spacings {
     &--gap-#{$type} {
       @include sap-flex() {
@@ -89,41 +55,6 @@ $sap-flex-spacings: (
     }
   }
 
-  @mixin sap-flex-gap($value, $type: "") {
-    @include sap-flex();
-
-    $_value: "";
-
-    @if $value == "tiny" {
-      $_value: map_get($sap-flex-spacings, "tiny");
-    } @else if $value == "small" {
-      $_value: map_get($sap-flex-spacings, "small");
-    } @else if $value == "medium" {
-      $_value: map_get($sap-flex-spacings, "medium");
-    } @else if $value == large {
-      $_value: map_get($sap-flex-spacings, "large");
-    } @else {
-      $_value: $value;
-    }
-
-    @if $type == "" {
-      gap: $_value;
-    } @else {
-      #{$type}-gap: $_value;
-    }
-
-    @content;
-  }
-
-  // ----------- FLEX JUSTIFY CONTENT -----------
-  @mixin sap-flex-justify($type: flex-start) {
-    @include sap-flex() {
-      justify-content: $type;
-    }
-
-    @content;
-  }
-
   $optionsJustify: flex-start, flex-end, center, space-between, space-around, space-evenly, start, end, left, right;
 
   @each $type in $optionsJustify {
@@ -132,32 +63,12 @@ $sap-flex-spacings: (
     }
   }
 
-  // ----------- FLEX WRAP -----------
-  @mixin sap-flex-wrap($type: nowrap) {
-    @include sap-flex() {
-      flex-wrap: $type;
-    }
-
-    @content;
-  }
-
   $optionsWrap: nowrap, wrap, wrap-reverse;
 
   @each $type in $optionsWrap {
     &--#{$type} {
       @include sap-flex-wrap(#{$type});
     }
-  }
-
-  // ----------- FLEX CENTER -----------
-  @mixin sap-flex-center($direction: row) {
-    @include sap-flex() {
-      align-items: center;
-      justify-content: center;
-      flex-direction: $direction;
-    }
-
-    @content;
   }
 
   &--center {
@@ -169,25 +80,10 @@ $sap-flex-spacings: (
   }
 
   // Properties for the Children (flex items)
-
-  // ----------- FLEX ORDER -----------
-  @mixin sap-flex-order($value: 0) {
-    order: $value;
-
-    @content;
-  }
-
   @for $i from 0 through 20 {
     &-order-#{$i} {
       @include sap-flex-order(#{$i});
     }
-  }
-
-  // ----------- FLEX GROW -----------
-  @mixin sap-flex-grow($value) {
-    flex-grow: $value;
-
-    @content;
   }
 
   @for $i from 1 through 20 {
@@ -196,24 +92,10 @@ $sap-flex-spacings: (
     }
   }
 
-  // ----------- FLEX SHRINK -----------
-  @mixin sap-flex-shrink($value) {
-    flex-shrink: $value;
-
-    @content;
-  }
-
   @for $i from 1 through 20 {
     &-shrink-#{$i} {
       @include sap-flex-shrink(#{$i});
     }
-  }
-
-  // ----------- FLEX ALIGN SELF -----------
-  @mixin sap-flex-align-self($value) {
-    align-self: $value;
-
-    @content;
   }
 
   $optionsAlignSelf: auto, flex-start, flex-end, center, baseline, stretch;
@@ -222,12 +104,5 @@ $sap-flex-spacings: (
     &-align-self-#{$type} {
       @include sap-flex-align-self(#{$type});
     }
-  }
-
-  // ----------- FLEX CHILD -----------
-  @mixin sap-flex-child($value) {
-    flex: $value;
-
-    @content;
   }
 }
