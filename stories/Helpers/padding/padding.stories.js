@@ -204,7 +204,7 @@ export const NoPadding = () => `${localStyles}
 </div>
 
 `;
-NoPadding.storyName = 'No Padding';
+
 NoPadding.parameters = {
     docs: {
         iframeHeight: 500,
