@@ -1,3 +1,12 @@
+# [0.25.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.23...v0.25.0-rc.24) (2022-09-20)
+
+
+### Bug Fixes
+
+* **common-css:** move all mixins in 1 file and publish them ([#3881](https://github.com/SAP/fundamental-styles/issues/3881)) ([f505a2b](https://github.com/SAP/fundamental-styles/commit/f505a2bb16dccde137ee7eb5982ab521afaf2359))
+
+
+
 # [0.25.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.22...v0.25.0-rc.23) (2022-09-19)
 
 
