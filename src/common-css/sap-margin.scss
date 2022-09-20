@@ -1,107 +1,9 @@
 @import './common-settings';
-@import './sap-media-queries.scss';
+@import './common-mixins';
 
 $block: #{$sap-namespace}-margin;
 
 .#{$block} {
-
-  $sap-margins: (
-    "tiny": 0.5rem,
-    "small": 1rem,
-    "medium": 2rem,
-    "large": 3rem
-  );
-
-  $sap-container-sides: (
-    "top": top,
-    "bottom": bottom,
-    "begin": left,
-    "end": right,
-    "x": horizontal,
-    "y": vertical
-  );
-
-  @mixin sap-set-margin-all($value: 0) {
-    margin: $value;
-  }
-
-  @mixin sap-set-margin-top($value: 0) {
-    margin-top: $value;
-  }
-
-  @mixin sap-set-margin-bottom($value: 0) {
-    margin-bottom: $value;
-  }
-
-  @mixin sap-set-margin-begin($value: 0) {
-    margin-left: $value;
-
-    @include sap-rtl() {
-      margin-left: 0;
-      margin-right: $value;
-    }
-  }
-
-  @mixin sap-set-margin-end($value: 0) {
-    margin-right: $value;
-
-    @include sap-rtl() {
-      margin-right: 0;
-      margin-left: $value;
-    }
-  }
-
-  @mixin sap-set-margin-x-equal($value: 0) {
-    margin-right: $value;
-    margin-left: $value;
-  }
-
-  @mixin sap-set-margin-y-equal($value: 0) {
-    margin-top: $value;
-    margin-bottom: $value;
-  }
-
-  @mixin sap-set-margin-x($valueLeft: 0, $valueRight: 0) {
-    margin-left: $valueLeft;
-    margin-right: $valueRight;
-
-    @include sap-rtl() {
-      margin-left: $valueRight;
-      margin-right: $valueLeft;
-    }
-  }
-
-  @mixin sap-set-margin-y($valueTop: 0, $valueBottom: 0) {
-    margin-top: $valueTop;
-    margin-bottom: $valueBottom;
-  }
-
-  @mixin sap-margin($value, $side: '') {
-    $_value: $value !important;
-
-    @if (map-has-key($sap-margins, #{$value})) {
-      $_value: map-get($sap-margins, #{$value}) !important;
-    }
-
-    @if ($side != '') {
-      @if ($side == top) {
-        @include sap-set-margin-top($_value);
-      } @else if($side == bottom) {
-        @include sap-set-margin-bottom($_value);
-      } @else if($side == begin) {
-        @include sap-set-margin-begin($_value);
-      } @else if($side == end) {
-        @include sap-set-margin-end($_value);
-      } @else if($side == x) {
-        @include sap-set-margin-x-equal($_value);
-      } @else if($side == y) {
-        @include sap-set-margin-y-equal($_value);
-      }
-    } @else {
-      @include sap-set-margin-all($_value);
-    }
-  }
-
   @each $type, $value in $sap-margins {
     &-#{$type} {
       @include sap-margin(#{$type});
@@ -111,24 +13,6 @@ $block: #{$sap-namespace}-margin;
       &-#{$side}-#{$type} {
         @include sap-margin(#{$type}, #{$side});
       }
-    }
-  }
-
-  @mixin sap-margin-responsive() {
-    @include sap-media-sm() {
-      margin: 0 0 1rem 0 !important;
-    }
-
-    @include sap-media-md() {
-      margin: 1rem !important;
-    }
-
-    @include sap-media-lg() {
-      margin: 1rem 2rem !important;
-    }
-
-    @include sap-media-xl() {
-      margin: 1rem 3rem !important;
     }
   }
 

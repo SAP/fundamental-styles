@@ -10,3 +10,6 @@ console.log('Copied README.md');
 
 fs.copy('config/common-css/package.json', 'dist-common-css/package.json', { recursive: true });
 console.log('Copied package.json');
+
+fs.copy('src/common-css/_common-mixins.scss', 'dist-common-css/dist/sass/common-css-mixins.scss', { recursive: true });
+console.log('Common CSS Mixin copies!');
