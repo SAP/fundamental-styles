@@ -709,3 +709,12 @@ body.sb-show-main {
 .fddocs-icon-tab-container .fd-icon-tab-bar__header {
   overflow: visible;
 }
+
+@media (max-width: 600px) {
+  .sbdocs-preview {
+    min-width: calc(100% + 20px * 2);
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0;
+  }
+}
