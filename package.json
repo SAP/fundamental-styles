@@ -87,7 +87,7 @@
     "@storybook/addon-viewport": "6.5.10",
     "@storybook/addons": "6.5.10",
     "@storybook/builder-webpack5": "^6.5.10",
-    "@storybook/html": "6.5.10",
+    "@storybook/html": "6.5.12",
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/preset-scss": "^1.0.3",
     "babel-eslint": "^10.1.0",
