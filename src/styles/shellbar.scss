@@ -75,10 +75,11 @@ $block: #{$fd-namespace}-shellbar;
     vertical-align: middle;
   }
 
-  &__logo, &__title {
-    outline-color: var(--fdShellbar_Button_Outline_Color);
-    outline-width: var(--sapContent_FocusWidth);
-    outline-style: var(--sapContent_FocusStyle);
+  &__logo,
+  &__title {
+    @include fd-focus() {
+      outline: var(--fdShellbar_Button_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+    }
   }
 
   &__title {
