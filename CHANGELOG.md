@@ -1,3 +1,12 @@
+# [0.25.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.25...v0.25.0-rc.26) (2022-09-27)
+
+
+### Bug Fixes
+
+* **docs:** examples container width ([#3882](https://github.com/SAP/fundamental-styles/issues/3882)) ([7552ab7](https://github.com/SAP/fundamental-styles/commit/7552ab7cb3db88e7ec3349b4d6a72fb97e1c0ce6))
+
+
+
 # [0.25.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.24...v0.25.0-rc.25) (2022-09-27)
 
 
