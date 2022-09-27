@@ -375,8 +375,8 @@ $sap-flex-spacings: (
 }
 
 // ----------- FLEX ALIGN CONTENT -----------
-@mixin sap-flex-align-content($type: normal) {
-  @include sap-flex() {
+@mixin sap-flex-align-content($type: normal, $direction: row) {
+  @include sap-flex($direction) {
     flex-wrap: wrap;
     align-content: $type;
   }
@@ -385,8 +385,8 @@ $sap-flex-spacings: (
 }
 
 // ----------- FLEX ALIGN ITEMS -----------
-@mixin sap-flex-align-items($type: stretch) {
-  @include sap-flex() {
+@mixin sap-flex-align-items($type: stretch, $direction: row) {
+  @include sap-flex($direction) {
     align-items: $type;
   }
 
@@ -394,8 +394,8 @@ $sap-flex-spacings: (
 }
 
 // ----------- FLEX GAP -----------
-@mixin sap-flex-gap($value, $type: "") {
-  @include sap-flex();
+@mixin sap-flex-gap($value, $type: "", $direction: row) {
+  @include sap-flex($direction);
 
   $_value: "";
 
@@ -421,8 +421,8 @@ $sap-flex-spacings: (
 }
 
 // ----------- FLEX JUSTIFY CONTENT -----------
-@mixin sap-flex-justify($type: flex-start) {
-  @include sap-flex() {
+@mixin sap-flex-justify($type: flex-start, $direction: row) {
+  @include sap-flex($direction) {
     justify-content: $type;
   }
 
@@ -430,8 +430,8 @@ $sap-flex-spacings: (
 }
 
 // ----------- FLEX WRAP -----------
-@mixin sap-flex-wrap($type: nowrap) {
-  @include sap-flex() {
+@mixin sap-flex-wrap($type: nowrap, $direction: row) {
+  @include sap-flex($direction) {
     flex-wrap: $type;
   }
 
