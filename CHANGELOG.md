@@ -1,3 +1,12 @@
+# [0.25.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.24...v0.25.0-rc.25) (2022-09-27)
+
+
+### Bug Fixes
+
+* **common-css:** add flex direction as input to all flex mixins ([#3893](https://github.com/SAP/fundamental-styles/issues/3893)) ([722ea56](https://github.com/SAP/fundamental-styles/commit/722ea566fa30196c1608367678db81b21a8214e8))
+
+
+
 # [0.25.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.23...v0.25.0-rc.24) (2022-09-20)
 
 
