@@ -6,18 +6,22 @@ $block: #{$fd-namespace}-side-nav;
 $block-nested-list: #{$fd-namespace}-nested-list;
 $has-child-content-arrow-margin: 0.125rem;
 
+$fd-side-nav-border-radius: 0.5rem;
+
 .#{$block} {
   @include fd-reset();
 
-  background-color: var(--sapList_Background);
+  @include fd-flex(column) {
+    justify-content: space-between;
+  }
+
   width: 15rem;
-  border-right: var(--sapList_BorderWidth) solid;
-  border-right-color: var(--sapGroup_ContentBorderColor);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-shadow: var(--fdSideNav_Text_Shadow);
   height: 100%;
+  padding: 0.5rem;
+  box-shadow: var(--sapContent_Shadow1);
+  background-color: var(--sapGroup_ContentBackground);
+  border-top-right-radius: $fd-side-nav-border-radius;
+  border-bottom-right-radius: $fd-side-nav-border-radius;
 
   &__skip-link {
     @include fd-reset();
@@ -58,14 +62,14 @@ $has-child-content-arrow-margin: 0.125rem;
   &__utility {
     @include fd-reset();
 
-    margin-top: 3rem;
+    margin-top: 0.5rem;
 
     &::before {
       content: " ";
       display: block;
-      border-top: 0.125rem solid;
-      border-top-color: var(--sapList_GroupHeaderBorderColor);
-      margin: 0.25rem 0.5rem;
+      border-top: 0.0625rem solid;
+      border-top-color: var(--sapList_HeaderBorderColor);
+      margin: 0.25rem 0;
     }
   }
 
