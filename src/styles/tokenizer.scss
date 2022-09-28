@@ -91,6 +91,8 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &--compact {
+    @include fd-input-field-base-compact();
+
     .#{$block}__inner {
       padding: 0 $fd-tokenizer-compact-spacing;
     }
