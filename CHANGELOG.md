@@ -1,3 +1,12 @@
+# [0.25.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.26...v0.25.0-rc.27) (2022-09-28)
+
+
+### Bug Fixes
+
+* **styles:** prevent actions spacing overwrite in Illustrated Messages [ci visual] ([#3894](https://github.com/SAP/fundamental-styles/issues/3894)) ([a14ce09](https://github.com/SAP/fundamental-styles/commit/a14ce09e43e0c072843c302ca2d9f4596a49e966))
+
+
+
 # [0.25.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.25...v0.25.0-rc.26) (2022-09-27)
 
 
