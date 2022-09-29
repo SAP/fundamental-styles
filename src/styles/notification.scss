@@ -49,6 +49,14 @@ $block: #{$fd-namespace}-notification;
     }
   }
 
+  @mixin fd-notification-mobile() {
+    .#{$block}__body:last-of-type {
+      border-bottom: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
   @include fd-reset();
 
   background-color: $fd-notification-background-color;
@@ -238,6 +246,7 @@ $block: #{$fd-namespace}-notification;
 
   &--group {
     @include fd-reset();
+    @include fd-notification-mobile();
 
     overflow: hidden;
     height: 100%;
@@ -273,6 +282,8 @@ $block: #{$fd-namespace}-notification;
   }
 
   &--mobile {
+    @include fd-notification-mobile();
+
     padding: $fd-notification-reset-offset;
 
     .#{$block}__indicator {
@@ -304,6 +315,18 @@ $block: #{$fd-namespace}-notification;
         margin-right: $fd-notification-content-offset;
         margin-left: $fd-notification-reset-offset;
       }
+    }
+  }
+
+  &--in-dialog {
+    box-shadow: none;
+    margin-bottom: 0;
+    border-bottom: $fd-notification-border;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &:last-of-type {
+      border-bottom: none;
     }
   }
 }
