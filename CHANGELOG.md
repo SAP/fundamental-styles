@@ -1,3 +1,12 @@
+# [0.25.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.27...v0.25.0-rc.28) (2022-09-29)
+
+
+### Features
+
+* **styles:** notification in dialog ([#3818](https://github.com/SAP/fundamental-styles/issues/3818)) ([10fbc50](https://github.com/SAP/fundamental-styles/commit/10fbc5042d39ad17b075213796212793e9d3a3ab))
+
+
+
 # [0.25.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.26...v0.25.0-rc.27) (2022-09-28)
 
 
