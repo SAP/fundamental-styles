@@ -206,6 +206,7 @@ $fd-grid-list-highlight: (
       @include fd-reset();
 
       color: var(--sapList_TextColor);
+      width: 100%;
     }
 
     &-counter {
