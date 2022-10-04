@@ -1,3 +1,15 @@
+# [0.25.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.29...v0.25.0-rc.31) (2022-10-04)
+
+
+### Bug Fixes
+
+* **styles:** add shellbar title focus ([#3835](https://github.com/SAP/fundamental-styles/issues/3835)) ([6bd4efd](https://github.com/SAP/fundamental-styles/commit/6bd4efd14da8326603c4714c2562e666b4852978))
+* **styles:** force rc increase ([#3911](https://github.com/SAP/fundamental-styles/issues/3911)) ([52768a6](https://github.com/SAP/fundamental-styles/commit/52768a64ba88a4a80c89b7c78bdc3661bc97e3ef))
+* **styles:** link in quick view width bug ([#3896](https://github.com/SAP/fundamental-styles/issues/3896)) ([d953c21](https://github.com/SAP/fundamental-styles/commit/d953c211b966d90d3a0e6cd7d8effc2ac45efa8e))
+* **styles:** tokenizer not rendering as compact ([#3898](https://github.com/SAP/fundamental-styles/issues/3898)) ([c76f3ce](https://github.com/SAP/fundamental-styles/commit/c76f3ce1286cca3746b3a53b0f0311a4c551a31e))
+
+
+
 # [0.25.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.28...v0.25.0-rc.29) (2022-10-04)
 
 
