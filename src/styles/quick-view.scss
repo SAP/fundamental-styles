@@ -77,6 +77,10 @@ $fd-quick-view-group-item-indent: 0.75rem;
 
   .#{$fd-namespace}-form-item {
     padding-top: $fd-quick-view-group-item-indent;
+
+    .#{$fd-namespace}-link {
+      align-self: flex-start;
+    }
   }
 
   .#{$fd-namespace}-title {
