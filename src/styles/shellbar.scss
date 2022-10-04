@@ -75,6 +75,13 @@ $block: #{$fd-namespace}-shellbar;
     vertical-align: middle;
   }
 
+  &__logo,
+  &__title {
+    @include fd-focus() {
+      outline: var(--fdShellbar_Button_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+    }
+  }
+
   &__title {
     font-weight: bold;
     vertical-align: middle;
@@ -86,7 +93,6 @@ $block: #{$fd-namespace}-shellbar;
 
   &__logo {
     @include fd-reset();
-    @include fd-fiori-focus(0);
 
     max-height: 2rem;
     background-repeat: no-repeat;
