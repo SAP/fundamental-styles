@@ -1,3 +1,12 @@
+# [0.25.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.28...v0.25.0-rc.29) (2022-10-04)
+
+
+### Bug Fixes
+
+* **styles:** reset input-field hover style in input-group ([#3908](https://github.com/SAP/fundamental-styles/issues/3908)) ([388c8a2](https://github.com/SAP/fundamental-styles/commit/388c8a2e338f96b7bed7eff0c173d727b15eb8fa))
+
+
+
 # [0.25.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.27...v0.25.0-rc.28) (2022-09-29)
 
 
