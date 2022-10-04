@@ -34,7 +34,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     text-shadow: var(--fdInputGroup_Text_Shadow);
 
     @include fd-hover() {
-      box-shadow: none;
+      @include fd-input-field-nested-reset();
     }
 
     @include fd-focus() {
