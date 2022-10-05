@@ -335,7 +335,6 @@ $button: #{$fd-namespace}-button;
       .#{$block}__link,
       .#{$block}__content {
         padding-right: 1rem;
-        padding-left: 0;
 
         &.has-child {
           padding-right: 0;
