@@ -5,60 +5,26 @@ $block: #{$fd-namespace}-nested-list;
 $button: #{$fd-namespace}-button;
 
 .#{$block} {
-  $fd-nested-list-border-radius: var(--fdNested_List_Border_Corner_Radius);
-
   $fd-nested-list-item-height: 2.75rem;
   $fd-nested-list-item-height-compact: 1.5rem;
+  $fd-nested-list-item-border-radius: 0.5rem;
+  $fd-nested-list-item-spacing: 0.25rem;
+  $fd-nested-list-item-spacing-compact: 0.125rem;
 
-  @mixin fd-nexted-list-states-colors($textColor, $backgroundColor) {
+  @mixin fd-nested-list-states-colors($textColor, $backgroundColor) {
     color: $textColor;
     background: $backgroundColor;
   }
 
-  @mixin fd-nested-level-padding($paddingLeft, $paddingRight) {
-    .#{$block}__link,
-    .#{$block}__content {
-      padding-left: $paddingLeft;
-      padding-right: $paddingRight;
-      border-bottom: none;
-
-      &.has-child {
-        padding-left: 0;
-        padding-right: 0;
-      }
+  @mixin fd-nested-list-focus($offset: 0.125rem, $width: 0.125rem) {
+    &:focus,
+    &.is-focus {
+      outline-offset: $offset;
+      outline-width: $width;
+      outline-color: var(--sapContent_FocusColor);
+      outline-style: solid;
+      @content;
     }
-
-    .#{$block}__content {
-      &.has-child {
-        > .#{$block}__title {
-          padding-left: $paddingLeft;
-          padding-right: $paddingRight;
-        }
-      }
-    }
-
-    .#{$block}__title {
-      &:first-child {
-        padding-left: 0;
-      }
-
-      @include fd-rtl() {
-        &:first-child {
-          padding-right: 0;
-          padding-left: 0;
-        }
-      }
-    }
-  }
-
-  @mixin fd-nested-list-popover-border-top-radius {
-    border-top-left-radius: $fd-nested-list-border-radius;
-    border-top-right-radius: $fd-nested-list-border-radius;
-  }
-
-  @mixin fd-nested-list-popover-border-bottom-radius {
-    border-bottom-left-radius: $fd-nested-list-border-radius;
-    border-bottom-right-radius: $fd-nested-list-border-radius;
   }
 
   @include fd-reset();
@@ -66,30 +32,33 @@ $button: #{$fd-namespace}-button;
   width: 100%;
   list-style: none;
 
-  & [class*="level"] {
-    border-bottom: none;
+  &.level-1 {
+    & > .#{$block}__item {
+      @include fd-set-margins-x-equal(0.5rem);
 
-    .#{$block}__link,
-    .#{$block}__content {
-      border-top: none;
+      &:first-child {
+        margin-top: $fd-nested-list-item-spacing;
+      }
+
+      &:last-child {
+        margin-bottom: $fd-nested-list-item-spacing;
+      }
+    }
+
+    .#{$block}__title {
+      @include fd-set-paddings-x(0, 1rem);
     }
   }
 
   .#{$block}.level-2 {
-    @include fd-nested-level-padding(3rem, 0);
+    .#{$block}__title {
+      @include fd-set-paddings-x(3rem, 1rem);
+    }
   }
 
   .#{$block}.level-3 {
-    @include fd-nested-level-padding(5rem, 0);
-  }
-
-  @include fd-rtl() {
-    .#{$block}.level-2 {
-      @include fd-nested-level-padding(0, 3rem);
-    }
-
-    .#{$block}.level-3 {
-      @include fd-nested-level-padding(0, 5rem);
+    .#{$block}__title {
+      @include fd-set-paddings-x(5rem, 1rem);
     }
   }
 
@@ -97,93 +66,60 @@ $button: #{$fd-namespace}-button;
     display: none;
   }
 
-  &--popover {
-    border-bottom: none;
-
-    .#{$block}__group-header {
-      @include fd-nested-list-popover-border-top-radius();
-
-      border-bottom: none;
-    }
-
-    .#{$block}__item {
-      &:first-child {
-        @include fd-nested-list-popover-border-top-radius();
-
-        .#{$block}__link,
-        .#{$block}__content {
-          @include fd-nested-list-popover-border-top-radius();
-        }
-      }
-
-      &:last-child {
-        @include fd-nested-list-popover-border-bottom-radius();
-
-        .#{$block}__link,
-        .#{$block}__content {
-          @include fd-nested-list-popover-border-bottom-radius();
-        }
-      }
-    }
-  }
-
+  /* ELEMENTS */
   &__item {
     @include fd-reset();
 
     display: block;
+    margin: 0.5rem 0;
 
-    &:last-child {
-      .#{$block}__link,
-      .#{$block}__content {
-        margin-bottom: 0;
+    &--header {
+      margin-top: 0.25rem;
+
+      .#{$block}__link {
+        cursor: auto;
+
+        @include fd-hover() {
+          @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
+        }
+
+        .#{$block}__title {
+          font-weight: 700;
+        }
       }
     }
   }
 
-  &__link,
-  &__content {
+  &__link {
     @include fd-reset();
 
     @include fd-flex() {
       align-items: center;
     }
 
-    @include fd-nexted-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
-
     width: 100%;
-    overflow: hidden;
+    cursor: pointer;
     position: relative;
-    margin-bottom: 0.5rem;
     text-decoration: none;
-    border-radius: 0.5rem;
     height: $fd-nested-list-item-height;
+    border-radius: $fd-nested-list-item-border-radius;
+
+    @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
 
     @include fd-hover() {
-      @include fd-nexted-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_Background));
-
-      .#{$block}__button {
-        @include fd-nexted-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_Background));
-      }
+      @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_Background));
     }
 
-    @include fd-fiori-focus();
+    @include fd-nested-list-focus();
 
     @include fd-selected() {
-      @include fd-nexted-list-states-colors(var(--sapList_TextColor), var(--sapList_SelectionBackgroundColor));
-
-      .#{$block}__button {
-        @include fd-nexted-list-states-colors(var(--sapList_TextColor), var(--sapList_SelectionBackgroundColor));
-      }
+      @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_SelectionBackgroundColor));
 
       @include fd-hover() {
-        @include fd-nexted-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_SelectionBackground));
-
-        .#{$block}__button {
-          @include fd-nexted-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_SelectionBackground));
-        }
+        @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_SelectionBackground));
       }
 
-      &::after {
+      .#{$block}__link-container::after {
         top: 0;
         left: 0;
         content: '';
@@ -192,80 +128,44 @@ $button: #{$fd-namespace}-button;
         position: absolute;
         background: var(--sapList_SelectionBorderColor);
       }
+
+      @include fd-rtl() {
+        .#{$block}__link-container::after {
+          left: auto;
+          right: 0;
+        }
+      }
     }
 
     @include fd-active() {
-      @include fd-nexted-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
-
-      .#{$block}__button {
-        @include fd-nexted-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
-      }
+      @include fd-nested-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
 
       @include fd-selected() {
-        @include fd-nexted-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
-
-        .#{$block}__button {
-          @include fd-nexted-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
-        }
+        @include fd-nested-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
       }
 
       .#{$block}__title,
       .#{$block}__icon,
-      .#{$block}__button {
+      .#{$block}__arrow {
         color: var(--sapList_Active_TextColor);
       }
     }
-
-    &.has-child {
-      justify-content: space-between;
-      padding: 0;
-
-      > .#{$block}__link,
-      > .#{$block}__item {
-        border: none;
-      }
-
-      > .#{$block}__link {
-        @include fd-fiori-focus();
-
-        background: transparent;
-        border: none;
-        height: 100%;
-
-        > .#{$block}__title {
-          padding-right: 0;
-
-          @include fd-rtl() {
-            padding-left: 0;
-          }
-        }
-      }
-    }
   }
 
-  &__link {
-    cursor: pointer;
-  }
+  /* This wrapper is needed because we can't apply overflow: hidden on fd-nested-list__link as the focus outline is cut.
+  And we need overflow hidden for the selected indicator on the left side which needs to follow the item border radius. */
+  &__link-container {
+    @include fd-reset();
 
-  &__content {
-    .#{$block}__link {
-      margin-bottom: 0;
+    @include fd-flex() {
+      align-items: center;
     }
-  }
 
-  &__button.#{$button} {
-    @include fd-set-height(100%);
-
-    border: none;
-    outline: none;
-    background: none;
-    color: currentColor;
-    font-size: 0.875rem;
-    border-radius: 0.5rem;
-
-    @include fd-icon-selector() {
-      font-size: 0.875rem;
-    }
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: $fd-nested-list-item-border-radius;
   }
 
   &__icon {
@@ -275,7 +175,7 @@ $button: #{$fd-namespace}-button;
       @include set-height(100%);
 
       color: currentColor;
-      font-size: 0.875rem;
+      font-size: var(--sapFontSize);
     }
   }
 
@@ -284,105 +184,74 @@ $button: #{$fd-namespace}-button;
     @include fd-ellipsis();
 
     width: 100%;
-    padding-right: 1rem;
+    text-align: left;
     color: currentColor;
     display: inline-block;
+    font-size: var(--sapFontSize);
     height: $fd-nested-list-item-height;
     line-height: $fd-nested-list-item-height;
-    font-size: var(--sapFontLargeSize);
-
-    &:first-child {
-      padding-left: 3rem;
-    }
 
     @include fd-rtl() {
       text-align: right;
-      padding-right: 0;
-      padding-left: 1rem;
-
-      &:first-child {
-        padding-right: 3rem;
-        padding-left: 0;
-      }
     }
   }
 
-  &__group-header {
+  &__arrow {
     @include fd-reset();
+    @include fd-flex-center();
+    @include set-width(1rem);
+    @include set-height(1rem);
+    @include fd-set-margin-right(1rem);
 
-    height: 2.75rem;
-    background: var(--sapList_GroupHeaderBackground);
-    border-bottom: var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor);
-    color: var(--sapList_GroupHeaderTextColor);
-    display: flex;
-    align-items: flex-end;
+    line-height: 1;
     font-size: var(--sapFontSize);
-    font-weight: bold;
-    line-height: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  &--no-border {
-    .#{$block}__item,
-    .#{$block}__link,
-    .#{$block}__group-header {
-      border-top: none;
-    }
-  }
-
-  &--text-only {
-    .#{$block}__link,
-    .#{$block}__content {
-      padding-left: 1rem;
-
-      &.has-child {
-        padding: 0;
-      }
-    }
-
-    .#{$block}__title {
-      &:first-child {
-        padding-left: 0;
-      }
-    }
-
-    .#{$block}.level-2 {
-      @include fd-nested-level-padding(2rem, 0);
-    }
-
-    .#{$block}.level-3 {
-      @include fd-nested-level-padding(3rem, 0);
-    }
 
     @include fd-rtl() {
-      .#{$block}.level-2 {
-        @include fd-nested-level-padding(0, 2rem);
-      }
+      -moz-transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+  }
 
-      .#{$block}.level-3 {
-        @include fd-nested-level-padding(0, 3rem);
-      }
+  /* MODIFIERS */
+  &--text-only {
+    .#{$block}__title:first-child {
+      @include fd-set-padding-left(1rem);
     }
   }
 
   &--compact {
-    .#{$block}__link,
-    .#{$block}__content {
-      height: 2rem;
+    .#{$block}__item {
+      margin: 0.25rem 0;
+
+      &--header {
+        margin-top: 0.125rem;
+      }
+    }
+
+    &.level-1 {
+      & > .#{$block}__item {
+        &:first-child {
+          margin-top: $fd-nested-list-item-spacing-compact;
+        }
+
+        &:last-child {
+          margin-bottom: $fd-nested-list-item-spacing-compact;
+        }
+      }
+    }
+
+    .#{$block}__link {
+      @include fd-nested-list-focus(0.0625rem, 0.0625rem);
+
+      height: $fd-nested-list-item-height-compact;
     }
 
     .#{$block}__title {
-      font-size: var(--sapFontSize);
-    }
-
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        font-size: var(--sapFontLargeSize);
-      }
+      height: $fd-nested-list-item-height-compact;
+      line-height: $fd-nested-list-item-height-compact;
     }
   }
 }
