@@ -1,3 +1,12 @@
+# [0.25.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.31...v0.25.0-rc.32) (2022-10-05)
+
+
+### Bug Fixes
+
+* **styles:** fix padding of nested list in rtl ([#3909](https://github.com/SAP/fundamental-styles/issues/3909)) ([2294b96](https://github.com/SAP/fundamental-styles/commit/2294b961d5ef6d30444266c5080ff50728eba76f))
+
+
+
 # [0.25.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.29...v0.25.0-rc.31) (2022-10-04)
 
 
