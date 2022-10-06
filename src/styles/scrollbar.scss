@@ -5,6 +5,10 @@ $block: fd-scrollbar;
 .#{$block} {
   @include fd-reset();
 
+  @include fd-focus() {
+    outline: none;
+  }
+
   overflow: auto;
 
   /** Firefox
