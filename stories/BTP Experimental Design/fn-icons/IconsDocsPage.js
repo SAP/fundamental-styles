@@ -27,7 +27,7 @@ export default () => {
 
     useStyles(customStyles, fnSearch, section, layoutPanel, layoutGrid, link, nestedButton);
     useEffect(() => {
-        themeManager.use('sap_fiori_3');
+        themeManager.use('sap_horizon');
     }, []);
     useThemedStoryContainers();
 

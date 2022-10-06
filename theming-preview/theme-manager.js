@@ -16,7 +16,7 @@ class ThemeManager {
 
     determineThemeId(sapThemeUrlParameter) {
         let values = sapThemeUrlParameter.split('@');
-        let themeId = values.length > 0 ? values[0] : 'sap_fiori_3';
+        let themeId = values.length > 0 ? values[0] : 'sap_horizon';
         return themeId;
     }
 
