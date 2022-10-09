@@ -107,7 +107,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
     "cssnano": "5.1.7",
-    "eslint": "^7.25.0",
+    "eslint": "^8.25.0",
     "eslint-plugin-storybook": "^0.6.4",
     "fs-extra": "^10.0.0",
     "git-semver-tags": "^4.1.1",
