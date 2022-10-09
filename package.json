@@ -138,7 +138,7 @@
     "regenerator-runtime": "^0.13.7",
     "rimraf": "^3.0.2",
     "sass": "1.52.1",
-    "sass-loader": "^10.0.2",
+    "sass-loader": "^13.1.0",
     "semver": "^7.3.7",
     "standard-version": "9.3.2",
     "start-server-and-test": "^1.14.0",
