@@ -1,3 +1,12 @@
+# [0.25.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.33...v0.25.0-rc.34) (2022-10-10)
+
+
+### Bug Fixes
+
+* **styles:** more tokenizer fixes ([#3912](https://github.com/SAP/fundamental-styles/issues/3912)) ([238e78b](https://github.com/SAP/fundamental-styles/commit/238e78b0392abd6e19e9830ab401d95a1bce7822))
+
+
+
 # [0.25.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.32...v0.25.0-rc.33) (2022-10-10)
 
 
