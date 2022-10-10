@@ -77,7 +77,7 @@ export const globalTypes = {
     theme: {
         name: 'Theme',
         description: 'Global theme for components',
-        defaultValue: 'sap_fiori_3',
+        defaultValue: 'sap_horizon',
         toolbar: {
             icon: 'paintbrush',
             items: availableThemes

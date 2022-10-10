@@ -21,7 +21,7 @@ export const withThemeProvider = makeDecorator({
     name: 'withThemeProvider',
     parameterName: 'themes',
     wrapper: (storyFn, context) => {
-        const newTheme = context?.parameters?.theme || context?.globals?.theme || 'sap_fiori_3';
+        const newTheme = context?.parameters?.theme || context?.globals?.theme || 'sap_horizon';
         getThemeManager(context.id).use(newTheme);
         return storyFn(context);
     }
