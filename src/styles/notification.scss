@@ -107,7 +107,7 @@ $block: #{$fd-namespace}-notification;
 
   .#{$block}__title {
     @include fd-reset();
-    @include line-clamp(2);
+    @include fd-line-clamp(2);
 
     font-weight: var(--sapFontHeaderWeight);
     font-size: var(--sapFontHeader6Size);
@@ -121,7 +121,7 @@ $block: #{$fd-namespace}-notification;
 
   .#{$block}__paragraph {
     @include fd-reset();
-    @include line-clamp(2);
+    @include fd-line-clamp(2);
 
     padding-top: 0.5rem;
     max-height: 2.75rem;

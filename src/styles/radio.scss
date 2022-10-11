@@ -36,7 +36,7 @@ $block: #{$fd-namespace}-radio;
 
   &__label {
     @include fd-form-label();
-    @include action-cursor();
+    @include fd-action-cursor();
 
     line-height: 1rem;
     display: flex;

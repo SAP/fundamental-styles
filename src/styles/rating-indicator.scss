@@ -163,7 +163,7 @@ $block: #{$fd-namespace}-rating-indicator;
 
   &__label {
     @include fd-reset();
-    @include action-cursor();
+    @include fd-action-cursor();
     @include fd-flex-vertical-center();
 
     @include fd-icon-glyph('favorite') {

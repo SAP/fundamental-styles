@@ -142,7 +142,7 @@ $block: #{$fd-namespace}-menu;
 
   &__link {
     @include fd-reset();
-    @include action-cursor();
+    @include fd-action-cursor();
     @include fd-fiori-pseudo-focus();
 
     text-decoration: none;

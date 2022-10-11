@@ -61,7 +61,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   justify-content: space-between;
 }
 
-@mixin set-height($height) {
+@mixin fd-set-height($height) {
   height: $height;
   min-height: $height;
 
@@ -72,7 +72,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   }
 }
 
-@mixin set-width($width) {
+@mixin fd-set-width($width) {
   width: $width;
   min-width: $width;
 
@@ -83,7 +83,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   }
 }
 
-@mixin line-clamp($lines: 2) {
+@mixin fd-line-clamp($lines: 2) {
   display: -webkit-box;
   -webkit-line-clamp: $lines;
   -webkit-box-orient: vertical;
@@ -119,8 +119,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
 .#{$block} {
   @include fd-reset();
-  @include set-height($fd-tile-height);
-  @include set-width($fd-tile-width);
+  @include fd-set-height($fd-tile-height);
+  @include fd-set-width($fd-tile-width);
 
   position: relative;
   padding: $fd-tile-padding;
@@ -160,29 +160,29 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   }
 
   &__header {
-    @include set-height(3.625rem);
+    @include fd-set-height(3.625rem);
 
     margin-bottom: $fd-tile-inner-padding;
   }
 
   &__content {
-    @include set-height(3.875rem);
+    @include fd-set-height(3.875rem);
 
     margin-bottom: $fd-tile-inner-padding;
   }
 
   &__header-content {
-    @include set-height(7.75rem);
+    @include fd-set-height(7.75rem);
 
     margin-bottom: $fd-tile-inner-padding;
 
     .#{$block}__title {
-      @include line-clamp(4);
+      @include fd-line-clamp(4);
     }
   }
 
   &__footer {
-    @include set-height(1rem);
+    @include fd-set-height(1rem);
 
     display: flex;
   }
@@ -206,7 +206,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
   }
 
   &__title {
-    @include line-clamp();
+    @include fd-line-clamp();
 
     color: var(--sapTile_TitleTextColor);
     font-size: var(--sapFontHeader5Size);
@@ -237,15 +237,15 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
   &__profile-img {
     @include fd-reset();
-    @include set-width(3.5rem);
-    @include set-height(3.5rem);
+    @include fd-set-width(3.5rem);
+    @include fd-set-height(3.5rem);
 
     border-radius: 50%;
   }
 
   &__logo {
-    @include set-width(3.625rem);
-    @include set-height(1.75rem);
+    @include fd-set-width(3.625rem);
+    @include fd-set-height(1.75rem);
   }
 
   &__action-close,
@@ -256,33 +256,33 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
   // MODIFIERS
   &--double {
-    @include set-width($fd-tile-double-width);
+    @include fd-set-width($fd-tile-double-width);
   }
 
   &--s {
-    @include set-height($fd-tile-height-s);
-    @include set-width($fd-tile-width-s);
+    @include fd-set-height($fd-tile-height-s);
+    @include fd-set-width($fd-tile-width-s);
 
     padding: $fd-tile-small-padding;
 
     &.#{$block}--double {
-      @include set-width($fd-tile-double-width-s);
+      @include fd-set-width($fd-tile-double-width-s);
     }
 
     .#{$block}__header {
-      @include set-height(3.25rem);
+      @include fd-set-height(3.25rem);
     }
 
     .#{$block}__content {
-      @include set-height(3.438rem);
+      @include fd-set-height(3.438rem);
     }
 
     .#{$block}__header-content {
-      @include set-height(6.938rem);
+      @include fd-set-height(6.938rem);
     }
 
     .#{$block}__footer {
-      @include set-height(1.063rem);
+      @include fd-set-height(1.063rem);
     }
 
     .#{$block}__title {
@@ -294,13 +294,13 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     }
 
     .#{$block}__profile-img {
-      @include set-width(3rem);
-      @include set-height(3rem);
+      @include fd-set-width(3rem);
+      @include fd-set-height(3rem);
     }
 
     .#{$block}__logo {
-      @include set-width(3rem);
-      @include set-height(1.438rem);
+      @include fd-set-width(3rem);
+      @include fd-set-height(1.438rem);
     }
   }
 
@@ -377,7 +377,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     }
 
     .#{$block}__content-text {
-      @include line-clamp();
+      @include fd-line-clamp();
 
       max-height: 2.125rem; // fix for IE11 not supporting line-clamp
     }
@@ -428,8 +428,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
     .#{$block}__toggle {
       @include fd-reset();
-      @include set-height(3rem);
-      @include set-width(3rem);
+      @include fd-set-height(3rem);
+      @include fd-set-width(3rem);
 
       display: none;
       padding: 0.5rem;
@@ -444,8 +444,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       }
 
       &::before {
-        @include set-height(2rem);
-        @include set-width(2rem);
+        @include fd-set-height(2rem);
+        @include fd-set-width(2rem);
         @include fd-flex-center();
 
         background-color: var(--sapBlockLayer_Background);
@@ -483,7 +483,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
     .#{$block}__container {
       @include fd-reset();
-      @include set-height(6.125rem);
+      @include fd-set-height(6.125rem);
 
       @include fd-flex($direction: column) {
         justify-content: space-between;
@@ -519,7 +519,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     .#{$block}__page-indicator {
       @include fd-reset();
       @include fd-flex-center();
-      @include set-height(0.5rem);
+      @include fd-set-height(0.5rem);
 
       margin-bottom: 0.125rem;
       margin-top: 0.375rem;
@@ -527,8 +527,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
     .#{$block}__dot {
       @include fd-reset();
-      @include set-height($fd-tile-indicator-dot-size);
-      @include set-width($fd-tile-indicator-dot-size);
+      @include fd-set-height($fd-tile-indicator-dot-size);
+      @include fd-set-width($fd-tile-indicator-dot-size);
 
       border-radius: 50%;
       background-color: var(--fdSlide_Tile_Indicator_Dot_Color);
@@ -543,8 +543,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       }
 
       &--active {
-        @include set-height($fd-tile-indicator-dot-active-size);
-        @include set-width($fd-tile-indicator-dot-active-size);
+        @include fd-set-height($fd-tile-indicator-dot-active-size);
+        @include fd-set-width($fd-tile-indicator-dot-active-size);
 
         background-color: var(--fdSlide_Tile_Indicator_Active_Dot_Color);
         border: var(--fdSlide_Tile_Indicator_Active_Dot_Border);
@@ -557,7 +557,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
 
     &.#{$block}--s {
       .#{$block}__container {
-        @include set-height(5.25rem);
+        @include fd-set-height(5.25rem);
 
         padding-top: 0.1875rem;
         padding-right: $fd-tile-small-padding;
@@ -610,8 +610,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     }
 
     .#{$block}__action-close {
-      @include set-height(auto);
-      @include set-width(auto);
+      @include fd-set-height(auto);
+      @include fd-set-width(auto);
 
       display: flex;
       align-items: flex-start;
@@ -628,8 +628,8 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       }
 
       @include fd-icon-element-base() {
-        @include set-height(1.375rem);
-        @include set-width(1.375rem);
+        @include fd-set-height(1.375rem);
+        @include fd-set-width(1.375rem);
 
         box-sizing: border-box;
         border-radius: 50%;
@@ -818,7 +818,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
     }
 
     .#{$block}__header {
-      @include set-height(100%);
+      @include fd-set-height(100%);
       @include fd-flex-vertical-center();
 
       margin: 0;
@@ -894,7 +894,7 @@ $fd-line-tile-badge-horizontal-spacing: 0.375rem !default;
       }
 
       .#{$block}__action-close {
-        @include set-height(1.625rem);
+        @include fd-set-height(1.625rem);
         @include reset-position-absolute();
         @include fd-flex-center();
 

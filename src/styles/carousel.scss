@@ -159,8 +159,8 @@ $fd-carousel-dot-active-size: 0.5rem !default;
 
   .#{$block}__button {
     @include fd-flex-center();
-    @include set-width($fd-carousel-button-size);
-    @include set-height($fd-carousel-button-size);
+    @include fd-set-width($fd-carousel-button-size);
+    @include fd-set-height($fd-carousel-button-size);
 
     border-radius: 50%;
     padding: 0;

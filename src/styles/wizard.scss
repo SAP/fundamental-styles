@@ -257,7 +257,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
     &--optional {
       .#{$block}__label {
-        @include line-clamp(1);
+        @include fd-line-clamp(1);
 
         max-height: 1rem; // needed for IE11
       }
@@ -266,7 +266,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
   &__label {
     @include fd-reset();
-    @include line-clamp();
+    @include fd-line-clamp();
 
     font-family: var(--fdWizard_Label_Font_Family);
     font-weight: var(--fdWizard_Label_Font_Weight);
@@ -276,7 +276,7 @@ $fd-wizard-stacked-upcoming-step-offset: 2.375rem !default;
 
   &__optional-text {
     @include fd-reset();
-    @include line-clamp(1);
+    @include fd-line-clamp(1);
 
     max-width: 100%;
     font-size: var(--sapFontSmallSize);

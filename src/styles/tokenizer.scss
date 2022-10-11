@@ -91,7 +91,7 @@ $block: #{$fd-namespace}-tokenizer;
   }
 
   &--compact {
-    @include set-min-height($fd-input-field-height--compact);
+    @include fd-set-min-height($fd-input-field-height--compact);
 
     .#{$block}__inner {
       padding: 0 $fd-tokenizer-compact-spacing;

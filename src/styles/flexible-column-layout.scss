@@ -23,7 +23,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
     min-width: $fd-column-layout-separator-width;
     background-color: var(--fdFlexibleColumnLayout_Background_Solid);
 
-    @include both-pseudo-selectors() {
+    @include fd-both-pseudo-selectors() {
       content: "";
       display: block;
       width: 0.0625rem;
@@ -44,7 +44,7 @@ $block: #{$fd-namespace}-flexible-column-layout;
     }
 
     @include fd-hover() {
-      @include both-pseudo-selectors() {
+      @include fd-both-pseudo-selectors() {
         height: 7rem;
       }
     }
