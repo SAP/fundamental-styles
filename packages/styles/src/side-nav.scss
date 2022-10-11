@@ -16,7 +16,7 @@ $fd-side-nav-border-radius: 1rem;
 
   width: 15rem;
   height: 100%;
-  padding: 0.25rem 0 0.5rem 0;
+  padding: 0.25rem 0;
   box-shadow: var(--sapContent_Shadow1);
   background-color: var(--sapGroup_ContentBackground);
   border-radius: 0 $fd-side-nav-border-radius $fd-side-nav-border-radius 0;
@@ -29,6 +29,7 @@ $fd-side-nav-border-radius: 1rem;
     @include fd-reset();
 
     overflow-y: scroll;
+    overflow-x: hidden;
 
     .#{$block-nested-list}.level-1 {
       & > .#{$block-nested-list}__item:first-child {
@@ -42,12 +43,10 @@ $fd-side-nav-border-radius: 1rem;
   &__utility {
     @include fd-reset();
 
-    margin-top: 0.5rem;
-
     &::before {
       content: " ";
       display: block;
-      margin-bottom: 1rem;
+      margin: 0.25rem 0.5rem 0.75rem 0.5rem;
       border-top: 0.0625rem solid var(--sapList_HeaderBorderColor);
     }
   }
