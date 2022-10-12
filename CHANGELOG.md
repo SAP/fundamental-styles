@@ -1,3 +1,12 @@
+# [0.25.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.34...v0.25.0-rc.35) (2022-10-12)
+
+
+### Features
+
+* **styles:** dynamic page title & subtitle wrapping ([#3920](https://github.com/SAP/fundamental-styles/issues/3920)) ([bdc83a8](https://github.com/SAP/fundamental-styles/commit/bdc83a85f14ae613608e4c6856caeeee3390000e))
+
+
+
 # [0.25.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.33...v0.25.0-rc.34) (2022-10-10)
 
 
