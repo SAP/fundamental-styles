@@ -26,11 +26,13 @@ export default {
                     - \`fd-dynamic-page__breadcrumb\` Breadcrumbs
                 - \`fd-dynamic-page__title-container\` The container for title, KPI content and actions and toolbar container
                     - \`fd-dynamic-page__title\` Dynamic page title
+                        - \`fd-dynamic-page__title--wrap\` Whether the title wraps instead of truncating
                     - \`fd-dynamic-page__title-content\` The KPI content
                 - \`fd-dynamic-page__toolbar-container\` Container that holds toolbar-related actions
                     - \`fd-dynamic-page__toolbar\` Toolbar container for actions
                     - \`fd-dynamic-page__toolbar--actions\` Navigation actions
         - \`fd-dynamic-page__subtitle\` Dynamic page subtitle
+            - \`fd-dynamic-page__subtitle--wrap\` Whether the subtitle wraps instead of truncating
     - \`fd-dynamic-page__collapsible-header-container\` Dynamic page header container
         - \`fd-dynamic-page__collapsible-header\` Dynamic page header
         - \`fd-dynamic-page__collapsible-header-visibility-container\` The container for pin/collapse buttons

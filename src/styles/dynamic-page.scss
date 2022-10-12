@@ -209,6 +209,10 @@ $block: #{$fd-namespace}-dynamic-page;
       max-width: 100%;
       vertical-align: bottom;
     }
+
+    &--wrap {
+      white-space: initial;
+    }
   }
 
   &__subtitle {
@@ -218,6 +222,10 @@ $block: #{$fd-namespace}-dynamic-page;
     color: var(--fdDynamicPage_Subtitle_Color);
     font-size: var(--sapFontSize);
     margin-top: 0.25rem;
+
+    &--wrap {
+      white-space: initial;
+    }
   }
 
   &__title-content {
