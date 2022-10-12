@@ -1,3 +1,12 @@
+# [0.25.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.35...v0.25.0-rc.36) (2022-10-12)
+
+
+### Bug Fixes
+
+* **styles:** add full width to grid-list-item content ([#3899](https://github.com/SAP/fundamental-styles/issues/3899)) ([8653db7](https://github.com/SAP/fundamental-styles/commit/8653db7b0551f0fbc1a5ba58a792f674276ba6fd))
+
+
+
 # [0.25.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.34...v0.25.0-rc.35) (2022-10-12)
 
 
