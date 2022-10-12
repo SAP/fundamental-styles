@@ -46,7 +46,7 @@ $fd-side-nav-border-radius: 1rem;
     &::before {
       content: " ";
       display: block;
-      margin: 0.25rem 0.5rem 0.75rem 0.5rem;
+      margin: 0.25rem 0.5rem 1rem 0.5rem;
       border-top: 0.0625rem solid var(--sapList_HeaderBorderColor);
     }
   }
