@@ -11,7 +11,7 @@ $block: #{$fd-namespace}-object-attribute;
   display: block;
 
   &--link {
-    @include action-cursor();
+    @include fd-action-cursor();
 
     text-decoration: none;
     color: var(--sapLinkColor);

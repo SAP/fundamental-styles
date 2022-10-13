@@ -219,7 +219,7 @@ $button: #{$fd-namespace}-button;
   }
 
   &__button.#{$button} {
-    @include set-height(100%);
+    @include fd-set-height(100%);
 
     border: none;
     outline: none;

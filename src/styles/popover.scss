@@ -32,7 +32,7 @@ $listBlock: #{$fd-namespace}-list;
 
   &__control {
     @include fd-reset();
-    @include action-cursor();
+    @include fd-action-cursor();
 
     position: relative;
     margin-left: 0;
@@ -80,20 +80,20 @@ $listBlock: #{$fd-namespace}-list;
     transition: all $fd-popover-transition-params;
     transform: translateY(0);
 
-    @include both-pseudo-selectors() {
+    @include fd-both-pseudo-selectors() {
       content: "";
       position: absolute;
     }
 
     &::before {
-      @include triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, up);
+      @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, up);
 
       top: $fd-popover-arrow-top-front;
       z-index: $fd-popover-z-index + 2;
     }
 
     &::after {
-      @include triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, up);
+      @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, up);
 
       top: $fd-popover-arrow-top-back;
       z-index: $fd-popover-z-index + 1;
@@ -133,12 +133,12 @@ $listBlock: #{$fd-namespace}-list;
     &--compact.#{$block}__body {
       &,
       &--left {
-        @include both-pseudo-selectors() {
+        @include fd-both-pseudo-selectors() {
           left: $fd-popover-arrow-offset-compact;
         }
 
         @include fd-rtl() {
-          @include both-pseudo-selectors() {
+          @include fd-both-pseudo-selectors() {
             left: auto;
             right: $fd-popover-arrow-offset-compact;
           }
@@ -148,13 +148,13 @@ $listBlock: #{$fd-namespace}-list;
       &--right {
         @include fd-right-popover-offset-placement();
 
-        @include both-pseudo-selectors() {
+        @include fd-both-pseudo-selectors() {
           left: auto;
           right: $fd-popover-arrow-offset-compact;
         }
 
         @include fd-rtl() {
-          @include both-pseudo-selectors() {
+          @include fd-both-pseudo-selectors() {
             left: $fd-popover-arrow-offset-compact;
             right: auto;
           }
@@ -166,12 +166,12 @@ $listBlock: #{$fd-namespace}-list;
     &--left {
       @include fd-left-popover-offset-placement();
 
-      @include both-pseudo-selectors() {
+      @include fd-both-pseudo-selectors() {
         left: $fd-popover-arrow-offset;
       }
 
       @include fd-rtl() {
-        @include both-pseudo-selectors() {
+        @include fd-both-pseudo-selectors() {
           left: auto;
           right: $fd-popover-arrow-offset;
         }
@@ -181,13 +181,13 @@ $listBlock: #{$fd-namespace}-list;
     &--right {
       @include fd-right-popover-offset-placement();
 
-      @include both-pseudo-selectors() {
+      @include fd-both-pseudo-selectors() {
         left: auto;
         right: $fd-popover-arrow-offset;
       }
 
       @include fd-rtl() {
-        @include both-pseudo-selectors() {
+        @include fd-both-pseudo-selectors() {
           left: $fd-popover-arrow-offset;
           right: auto;
         }
@@ -199,7 +199,7 @@ $listBlock: #{$fd-namespace}-list;
       top: $fd-popover-top-position-noarrow;
       z-index: 2;
 
-      @include both-pseudo-selectors() {
+      @include fd-both-pseudo-selectors() {
         display: none;
       }
     }

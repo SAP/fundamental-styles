@@ -174,7 +174,7 @@ $block: #{$fd-namespace}-product-switch;
     z-index: 1;
 
     @include fd-last-child() {
-      @include line-clamp(2);
+      @include fd-line-clamp(2);
     }
 
     &::before {

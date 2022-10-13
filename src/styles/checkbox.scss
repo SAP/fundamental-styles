@@ -56,7 +56,7 @@ $block: #{$fd-namespace}-checkbox;
 
   &__label {
     @include fd-form-label();
-    @include action-cursor();
+    @include fd-action-cursor();
 
     line-height: 1rem;
     padding: var(--fdCheckbox_Padding);

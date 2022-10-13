@@ -143,7 +143,7 @@ $fd-object-list-font-color: var(--sapContent_LabelColor);
 
   &__object-identifier {
     .#{$fd-namespace}-object-identifier__title {
-      @include line-clamp($lines: 2);
+      @include fd-line-clamp($lines: 2);
 
       font-size: var(--fdObject_List_Title_Font_Size);
       font-weight: var(--fdObject_List_Title_Font_Weight);

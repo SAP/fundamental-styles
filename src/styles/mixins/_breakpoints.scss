@@ -1,5 +1,5 @@
 // Minimum breakpoint width. Null for the smallest (first) breakpoint.
-@function breakpoint-min($name, $breakpoints: $fd-breakpoints) {
+@function fd-breakpoint-min($name, $breakpoints: $fd-breakpoints) {
   $min: map-get($breakpoints, $name);
 
   @return if($min != 0, $min, null);
@@ -8,6 +8,6 @@
 // Returns a blank string if smallest breakpoint, otherwise returns the name with a dash in front.
 // Useful for making responsive utilities.
 
-@function breakpoint-infix($name, $breakpoints: $fd-breakpoints) {
-  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+@function fd-breakpoint-infix($name, $breakpoints: $fd-breakpoints) {
+  @return if(fd-breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }
