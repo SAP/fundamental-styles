@@ -971,3 +971,94 @@ $sap-font-sizes: (
     border: $_border;
   }
 }
+
+// FOCUS
+@mixin sap-fiori-focus($offset: -0.1875rem, $alternative: false) {
+  &:focus,
+  &.is-focus {
+    outline-offset: $offset;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-style: var(--sapContent_FocusStyle);
+
+    @if $alternative == true {
+      outline-color: var(--sapContent_ContrastFocusColor);
+    } @else {
+      outline-color: var(--sapContent_FocusColor);
+    }
+
+    @content;
+  }
+}
+
+@mixin sap-fiori-focus-within($offset: -0.1875rem, $alternative: false) {
+  &:focus-within,
+  &.is-focus-within {
+    outline-offset: $offset;
+    outline-width: var(--sapContent_FocusWidth);
+    outline-style: var(--sapContent_FocusStyle);
+
+    @if $alternative == true {
+      outline-color: var(--sapContent_ContrastFocusColor);
+    } @else {
+      outline-color: var(--sapContent_FocusColor);
+    }
+
+    @content;
+  }
+}
+
+@mixin sap-fake-fiori-focus($offset: 0, $radius: 0, $alternative: false) {
+  &:focus,
+  &.is-focus {
+    outline: none;
+    position: relative;
+
+    &::after {
+      @if $alternative == true {
+        border-color: var(--sapContent_ContrastFocusColor);
+      } @else {
+        border-color: var(--sapContent_FocusColor);
+      }
+
+      border-width: var(--sapContent_FocusWidth);
+      border-style: var(--sapContent_FocusStyle);
+      border-radius: $radius;
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: $offset;
+      bottom: $offset;
+      left: $offset;
+      right: $offset;
+      @content;
+    }
+  }
+}
+
+@mixin sap-fake-fiori-focus-within($offset: 0, $radius: 0, $alternative: false) {
+  &:focus-within,
+  &.is-focus-within {
+    outline: none;
+    position: relative;
+
+    &::after {
+      @if $alternative == true {
+        border-color: var(--sapContent_ContrastFocusColor);
+      } @else {
+        border-color: var(--sapContent_FocusColor);
+      }
+
+      border-width: var(--sapContent_FocusWidth);
+      border-style: var(--sapContent_FocusStyle);
+      border-radius: $radius;
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: $offset;
+      bottom: $offset;
+      left: $offset;
+      right: $offset;
+      @content;
+    }
+  }
+}
