@@ -16,13 +16,13 @@ $button: #{$fd-namespace}-button;
     background: $backgroundColor;
   }
 
-  @mixin fd-nested-list-focus($offset: 0.125rem, $width: 0.125rem) {
+  @mixin fd-nested-list-focus($offset: 0.125rem, $width: var(--sapContent_FocusWidth)) {
     &:focus,
     &.is-focus {
       outline-offset: $offset;
       outline-width: $width;
       outline-color: var(--sapContent_FocusColor);
-      outline-style: solid;
+      outline-style: var(--sapContent_FocusStyle);
       @content;
     }
   }
@@ -171,8 +171,8 @@ $button: #{$fd-namespace}-button;
   &__icon {
     @include fd-icon-element-base() {
       @include fd-flex-center();
-      @include set-width(3rem);
-      @include set-height(100%);
+      @include fd-set-width(3rem);
+      @include fd-set-height(100%);
 
       color: currentColor;
       font-size: var(--sapFontSize);
@@ -199,8 +199,8 @@ $button: #{$fd-namespace}-button;
   &__arrow {
     @include fd-reset();
     @include fd-flex-center();
-    @include set-width(1rem);
-    @include set-height(1rem);
+    @include fd-set-width(1rem);
+    @include fd-set-height(1rem);
     @include fd-set-margin-right(1rem);
 
     line-height: 1;
