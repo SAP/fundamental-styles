@@ -32,7 +32,7 @@
     }
 
     .#{$block}__link {
-      &:active {
+      @include fd-active() {
         .#{$block}__title, .#{$block}__subtitle, .fd-object-status .fd-object-status__icon {
           color: var(--sapList_Active_TextColor);
         }

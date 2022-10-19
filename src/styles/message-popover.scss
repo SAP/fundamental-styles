@@ -1,6 +1,12 @@
 @import "./mixins";
 @import "./message-view.scss";
 
+@mixin _fd-message-popover-trigger($colors, $state) {
+  --fdButtonColor: #{map-get(map-get($colors, $state), "color")};
+  --fdButtonBackgroundColor: #{map-get(map-get($colors, $state), "backgroundColor")};
+  --fdButtonBorderColor: #{map-get(map-get($colors, $state), "borderColor")};
+}
+
 $block: #{$fd-namespace}-message-popover;
 
 $fd-trigger-states: (
@@ -82,20 +88,14 @@ $fd-trigger-states: (
 
     @each $state, $colors in $fd-trigger-states {
       &--#{$state} {
-        --fdButtonColor: #{map-get(map-get($colors, "regular"), "color")};
-        --fdButtonBackgroundColor: #{map-get(map-get($colors, "regular"), "backgroundColor")};
-        --fdButtonBorderColor: #{map-get(map-get($colors, "regular"), "borderColor")};
+        @include _fd-message-popover-trigger($colors, "regular");
 
         @include fd-hover() {
-          --fdButtonColor: #{map-get(map-get($colors, "hover"), "color")};
-          --fdButtonBackgroundColor: #{map-get(map-get($colors, "hover"), "backgroundColor")};
-          --fdButtonBorderColor: #{map-get(map-get($colors, "hover"), "borderColor")};
+          @include _fd-message-popover-trigger($colors, "hover");
         }
 
         @include fd-active() {
-          --fdButtonColor: #{map-get(map-get($colors, "active"), "color")};
-          --fdButtonBackgroundColor: #{map-get(map-get($colors, "active"), "backgroundColor")};
-          --fdButtonBorderColor: #{map-get(map-get($colors, "active"), "borderColor")};
+          @include _fd-message-popover-trigger($colors, "active");
         }
       }
     }
