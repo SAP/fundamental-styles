@@ -1,0 +1,59 @@
+@import "./mixins";
+
+$block: #{$fd-namespace}-message-view;
+
+.#{$block} {
+  @include fd-reset();
+
+  position: relative;
+
+  &__list {
+    &--hidden {
+      opacity: 0;
+    }
+  }
+
+  &__details {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+
+    > * {
+      margin-left: 2.5rem;
+    }
+
+    &-title {
+      font-family: var(--sapFontHeaderFamily);
+      font-size: var(--sapFontHeader5Size);
+      font-weight: var(--sapFontHeaderWeight);
+      color: var(--sapGroup_TitleTextColor);
+      margin-bottom: 1rem;
+      white-space: normal;
+      display: block;
+      margin-left: 0;
+
+      .fd-object-status {
+        font-size: 1rem;
+        margin: 0 1rem 0 0.5rem;
+      }
+    }
+
+    &-description {
+      font-family: var(--sapFontFamily);
+      font-size: var(--sapFontSize);
+      line-height: 1.4;
+      color: var(--sapTextColor);
+      margin-bottom: 1rem;
+      white-space: normal;
+      display: block;
+    }
+
+    &--visible {
+      display: block;
+    }
+  }
+}

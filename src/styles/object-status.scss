@@ -3,7 +3,7 @@
 @import "./mixins";
 
 /*!
-.fd-object-status+(--success | --warning | --error)
+.fd-object-status+(--success | --warning | --error | --informative | --neutral)
 */
 $block: #{$fd-namespace}-object-status;
 
@@ -11,7 +11,8 @@ $color-states: (
   "positive": ("color": var(--sapPositiveTextColor), "iconColor": var(--sapPositiveElementColor)),
   "critical": ("color": var(--sapCriticalTextColor), "iconColor": var(--sapCriticalElementColor)),
   "negative": ("color": var(--sapNegativeTextColor), "iconColor": var(--sapNegativeElementColor)),
-  "informative": ("color": var(--sapInformativeTextColor), "iconColor": var(--sapInformativeElementColor))
+  "informative": ("color": var(--sapInformativeTextColor), "iconColor": var(--sapInformativeElementColor)),
+  "neutral": ("color": var(--sapNeutralTextColor), "iconColor": var(--sapNeutralElementColor))
 );
 
 $color-accents: (
@@ -259,10 +260,10 @@ $inverted-color-accents: (
 
   @each $set-name, $color-set in $color-states {
     &--#{$set-name} {
-      color: map_get($color-set, "color");
+      color: var(--fdElementTextColor, map_get($color-set, "color"));
 
       @include fd-object-status-icon-selector() {
-        color: map_get($color-set, "iconColor");
+        color: var(--fdElementIconColor, map_get($color-set, "iconColor"));
       }
 
       &:visited {
