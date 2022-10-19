@@ -1,3 +1,12 @@
+# [0.25.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.38...v0.25.0-rc.39) (2022-10-19)
+
+
+### Features
+
+* **styles:** add focus outline to scrollbar ([#3915](https://github.com/SAP/fundamental-styles/issues/3915)) ([1bf32d6](https://github.com/SAP/fundamental-styles/commit/1bf32d6ea80f74010abb6154aaba700b9cdf560b))
+
+
+
 # [0.25.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.37...v0.25.0-rc.38) (2022-10-13)
 
 
