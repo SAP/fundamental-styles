@@ -165,6 +165,7 @@ exports[`Storyshots Components/Notifications In Dialog 1`] = `
       aria-modal="true"
       class="fd-dialog__content"
       role="dialog"
+      style="max-width: 40rem;"
     >
       
         
@@ -198,36 +199,6 @@ exports[`Storyshots Components/Notifications In Dialog 1`] = `
             
         </div>
         
-            
-        <div
-          class="fd-bar__right"
-        >
-          
-                
-          <div
-            class="fd-bar__element"
-          >
-            
-                    
-            <button
-              aria-label="Close"
-              class="fd-button fd-button--transparent"
-            >
-              
-                        
-              <i
-                class="sap-icon--decline"
-              />
-              
-                    
-            </button>
-            
-                
-          </div>
-          
-            
-        </div>
-        
         
       </header>
       
@@ -238,7 +209,7 @@ exports[`Storyshots Components/Notifications In Dialog 1`] = `
         
             
         <div
-          class="fd-notification fd-notification--in-dialog"
+          class="fd-notification fd-notification--mobile fd-notification--in-dialog"
         >
           
                 
@@ -353,7 +324,7 @@ exports[`Storyshots Components/Notifications In Dialog 1`] = `
         
             
         <div
-          class="fd-notification fd-notification--in-dialog"
+          class="fd-notification fd-notification--mobile fd-notification--in-dialog"
         >
           
                 
@@ -468,6 +439,39 @@ exports[`Storyshots Components/Notifications In Dialog 1`] = `
         
         
       </div>
+      
+        
+      <footer
+        class="fd-dialog__footer fd-bar fd-bar--footer"
+      >
+        
+            
+        <div
+          class="fd-bar__right"
+        >
+          
+                
+          <div
+            class="fd-bar__element"
+          >
+            
+                    
+            <button
+              class="fd-dialog__decisive-button fd-button fd-button--compact"
+            >
+              
+                        Close
+                    
+            </button>
+            
+                
+          </div>
+          
+            
+        </div>
+        
+        
+      </footer>
       
     
     </div>
