@@ -1,3 +1,7 @@
+# [0.25.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.40...v0.25.0-rc.41) (2022-10-20)
+
+
+
 # [0.25.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.39...v0.25.0-rc.40) (2022-10-20)
 
 
