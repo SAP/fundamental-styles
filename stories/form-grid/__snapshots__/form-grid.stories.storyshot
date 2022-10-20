@@ -11,7 +11,6 @@ exports[`Storyshots Components/Forms/Form Grid Column Not Recommended 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -175,6 +174,20 @@ exports[`Storyshots Components/Forms/Form Grid Column Not Recommended 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -184,7 +197,6 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
     
@@ -347,6 +359,20 @@ exports[`Storyshots Components/Forms/Form Grid Compact form 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -356,7 +382,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1440px; border: 1px solid; margin: 0 auto;"
+    style="max-width:1440px;"
   >
     
   
@@ -644,9 +670,22 @@ exports[`Storyshots Components/Forms/Form Grid Default [L] 1`] = `
     </div>
     
 
-
   </div>
   
+
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
 
 </div>
 `;
@@ -657,7 +696,7 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
+    style="max-width:1024px;"
   >
     
   
@@ -948,6 +987,20 @@ exports[`Storyshots Components/Forms/Form Grid Default [M] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -957,7 +1010,6 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -1248,6 +1300,20 @@ exports[`Storyshots Components/Forms/Form Grid Default [XL] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -1257,7 +1323,6 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container"
-    style="border: 1px solid;"
   >
     
   
@@ -1857,6 +1922,20 @@ exports[`Storyshots Components/Forms/Form Grid Double form [XL] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -1866,7 +1945,7 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
+    style="max-width:1024px;"
   >
     
   
@@ -2157,6 +2236,20 @@ exports[`Storyshots Components/Forms/Form Grid Full screen [M] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -2171,7 +2264,6 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -2343,7 +2435,6 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -2457,6 +2548,20 @@ exports[`Storyshots Components/Forms/Form Grid Layout variations 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -2466,7 +2571,7 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
+    style="max-width:1024px;"
   >
     
   
@@ -2757,6 +2862,20 @@ exports[`Storyshots Components/Forms/Form Grid Long label [M] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -2766,7 +2885,7 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-layout-grid-container--xl-vertical"
-    style="max-width:1440px; border: 1px solid; margin: 0 auto;"
+    style="max-width:1440px;"
   >
     
   
@@ -3364,6 +3483,20 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [L] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -3373,7 +3506,6 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--xl-vertical"
-    style="border: 1px solid;"
   >
     
   
@@ -4224,6 +4356,20 @@ exports[`Storyshots Components/Forms/Form Grid Multiple form [XL] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -4238,7 +4384,6 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -4360,7 +4505,6 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -4482,7 +4626,6 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -4596,6 +4739,20 @@ exports[`Storyshots Components/Forms/Form Grid Recommended layouts 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -4605,7 +4762,7 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1440px; border: 1px solid; margin: 0 auto;"
+    style="max-width:1440px;"
   >
     
   
@@ -4896,6 +5053,20 @@ exports[`Storyshots Components/Forms/Form Grid Single form [L] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -4905,7 +5076,6 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -5196,6 +5366,20 @@ exports[`Storyshots Components/Forms/Form Grid Single form [XL] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -5205,7 +5389,7 @@ exports[`Storyshots Components/Forms/Form Grid Small 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group"
-    style="max-width:600px; border: 1px solid; margin: 0 auto;"
+    style="max-width:600px;"
   >
     
     
@@ -5461,6 +5645,20 @@ exports[`Storyshots Components/Forms/Form Grid Small 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -5470,7 +5668,7 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
 >
   <div
     class="fd-container fd-form-layout-grid-container fd-form-group"
-    style="max-width:1024px; border: 1px solid; margin: 0 auto;"
+    style="max-width:1024px;"
   >
     
   
@@ -5761,6 +5959,20 @@ exports[`Storyshots Components/Forms/Form Grid Split screen [M] 1`] = `
   </div>
   
 
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
+
 </div>
 `;
 
@@ -5775,7 +5987,6 @@ exports[`Storyshots Components/Forms/Form Grid Vertical layout 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--vertical fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -5897,7 +6108,6 @@ exports[`Storyshots Components/Forms/Form Grid Vertical layout 1`] = `
 
   <div
     class="fd-container fd-form-layout-grid-container fd-form-layout-grid-container--lg-vertical fd-form-group"
-    style="border: 1px solid;"
   >
     
   
@@ -6010,6 +6220,20 @@ exports[`Storyshots Components/Forms/Form Grid Vertical layout 1`] = `
 
   </div>
   
+
+  
+  <!-- Styles related to the docs -->
+  
+  
+  <style>
+    
+      .fd-form-layout-grid-container {
+        border: 1px solid; margin: 0 auto;
+      }
+  
+  </style>
+  
+
 
 </div>
 `;
