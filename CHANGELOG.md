@@ -1,3 +1,12 @@
+# [0.25.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.41...v0.25.0-rc.42) (2022-10-21)
+
+
+### Bug Fixes
+
+* **styles:** update font-family for Dialog Header for Horizon [ci visual] ([#3938](https://github.com/SAP/fundamental-styles/issues/3938)) ([1accb1b](https://github.com/SAP/fundamental-styles/commit/1accb1b4c7ed73efcfc04c4e6bce1deac2679304))
+
+
+
 # [0.25.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.40...v0.25.0-rc.41) (2022-10-20)
 
 
