@@ -1,3 +1,12 @@
+# [0.25.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.42...v0.25.0-rc.43) (2022-10-21)
+
+
+### Features
+
+* **styles:** add border mixin to common-css ([#3926](https://github.com/SAP/fundamental-styles/issues/3926)) ([636bb05](https://github.com/SAP/fundamental-styles/commit/636bb05e4d5485e7e9b4072a589382df6d3f3bc0))
+
+
+
 # [0.25.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.41...v0.25.0-rc.42) (2022-10-21)
 
 
