@@ -13,7 +13,7 @@ It provides a handy and systematized way to navigate and explore details for eve
 
 `,
         tags: ['f3', 'theme'],
-        components: ['list', 'icon', 'button', 'object-status', 'popover', 'bar', 'segmented-button', 'message-popover', 'link']
+        components: ['list', 'icon', 'button', 'object-status', 'popover', 'bar', 'segmented-button', 'message-popover', 'link', 'scrollbar']
     }
 };
 
@@ -78,7 +78,7 @@ export const CozyMessagePopover = () => `
                       </span>
                       <span class="fd-list__content">
                         <span class="fd-list__title">
-                          The file could not be uploaded.
+                          The file could not be uploaded. Title with some long text which is not fitting into the viewport of the message view container.
                         </span>
                         <span class="fd-list__subtitle">
                           Uploaded file does not meet security requirements.
@@ -144,7 +144,7 @@ export const CozyMessagePopover = () => `
               </section>
               <section class="fd-message-view__details" id="messageViewDetails">
                 <span class="fd-message-view__details-title">
-                  <span class="fd-object-status fd-object-status--negative">
+                  <span class="fd-object-status fd-object-status--negative fd-message-view__icon">
                     <i class="fd-object-status__icon sap-icon--message-error" aria-label="Negative"></i>
                   </span>
                   The file could not be uploaded
@@ -291,7 +291,7 @@ export const CompactMessagePopover = () => `
               </section>
               <section class="fd-message-view__details" id="messageViewDetailsCompact">
                 <span class="fd-message-view__details-title">
-                  <span class="fd-object-status fd-object-status--negative">
+                  <span class="fd-object-status fd-object-status--negative fd-message-view__icon">
                     <i class="fd-object-status__icon sap-icon--message-error" aria-label="Negative"></i>
                   </span>
                   The file could not be uploaded
@@ -411,7 +411,7 @@ export const DetailsView = () => `
               </section>
               <section class="fd-message-view__details fd-message-view__details--visible" id="messageViewDetailsCompact">
                 <span class="fd-message-view__details-title">
-                  <span class="fd-object-status fd-object-status--negative">
+                  <span class="fd-object-status fd-object-status--negative fd-message-view__icon">
                     <i class="fd-object-status__icon sap-icon--message-error" aria-label="Negative"></i>
                   </span>
                   The file could not be uploaded
