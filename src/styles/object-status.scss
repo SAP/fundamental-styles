@@ -196,7 +196,7 @@ $inverted-color-accents: (
   $fd-object-status-text-neutral: var(--sapNeutralTextColor);
 
   // INVERTED OBJECT STATUS VARIABLES
-  $fd-object-status-inverted-border-radius: var(--sapElement_BorderCornerRadius) !default;
+  $fd-object-status-inverted-border-radius: 0.25rem !default;
   $fd-object-status-inverted-padding: 0.0625rem 0.25rem !default;
   $fd-object-status-inverted-padding-empty: 0 0.25rem !default;
   $fd-object-status-inverted-min-height: 1rem !default;
