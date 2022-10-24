@@ -1,3 +1,12 @@
+# [0.25.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.43...v0.25.0-rc.44) (2022-10-24)
+
+
+### Features
+
+* **styles:** introduce message popover component [ci visual] ([#3937](https://github.com/SAP/fundamental-styles/issues/3937)) ([a406230](https://github.com/SAP/fundamental-styles/commit/a406230942497427369652b38f443ef1f29819ad))
+
+
+
 # [0.25.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.42...v0.25.0-rc.43) (2022-10-21)
 
 
