@@ -196,7 +196,7 @@ $fd-list-second-level-popover-position: 3.25rem !default;
 
               .#{$blockList} {
                 width: 100%;
-                display: inline-block;
+                display: block;
                 margin: 0 auto;
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
@@ -350,6 +350,12 @@ $fd-list-second-level-popover-position: 3.25rem !default;
     &__navigation-item--condensed {
       @include fd-hover() {
         background: var(--sapList_Hover_Background);
+
+        .#{$blockList}__navigation-item {
+          &-icon {
+            color: var(--sapList_TextColor);
+          }
+        }
       }
 
       @include fd-pressed() {
