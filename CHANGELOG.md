@@ -1,3 +1,12 @@
+# [0.25.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.44...v0.25.0-rc.45) (2022-10-24)
+
+
+### Bug Fixes
+
+* **styles:** update Object Status radius [ci visual] ([#3942](https://github.com/SAP/fundamental-styles/issues/3942)) ([9514d76](https://github.com/SAP/fundamental-styles/commit/9514d767f8f24afb8b21c0200c38ef8da07a1301))
+
+
+
 # [0.25.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.43...v0.25.0-rc.44) (2022-10-24)
 
 
