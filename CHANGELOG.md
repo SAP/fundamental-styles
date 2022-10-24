@@ -1,3 +1,12 @@
+# [0.25.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.45...v0.25.0-rc.46) (2022-10-24)
+
+
+### Bug Fixes
+
+* **styles:** add vertical nav on hover icon color [ci visual] ([#3914](https://github.com/SAP/fundamental-styles/issues/3914)) ([4cca58d](https://github.com/SAP/fundamental-styles/commit/4cca58d1861232a3510cd694634b97a08a1848c6))
+
+
+
 # [0.25.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.44...v0.25.0-rc.45) (2022-10-24)
 
 
