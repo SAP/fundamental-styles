@@ -149,6 +149,10 @@
     $defaultBackground,
   );
 
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
+
   @include fd-hover() {
     @include _fd-button-apply-colors(
       $hoverText,
@@ -163,8 +167,14 @@
     @include _fd-button-apply-colors(
       $activeText,
       $activeBorder,
-      $activeBackground
+      $activeBackground,
+      true
     );
+
+    .#{$fd-namespace}-button__icon {
+      color: $activeText;
+      text-shadow: none;
+    }
   }
 
   @include fd-disabled() {
@@ -178,7 +188,8 @@
       @include _fd-button-apply-colors(
         $activeText,
         $activeBorder,
-        $activeBackground
+        $activeBackground,
+        true
       );
     }
   }
@@ -204,10 +215,16 @@
       @include _fd-button-apply-colors(
         $toggledActiveText,
         $toggledActiveBorder,
-        $toggledActiveBackground
+        $toggledActiveBackground,
+        true
       );
 
       box-shadow: $toggledActiveShadow;
+
+      .#{$fd-namespace}-button__icon {
+        color: $activeText;
+        text-shadow: none;
+      }
     }
 
     @include fd-disabled() {
@@ -216,8 +233,14 @@
   }
 }
 
-@mixin _fd-button-apply-colors($color, $borderColor, $backgroundColor) {
-  color: $color;
-  border-color: $borderColor;
-  background-color: $backgroundColor;
+@mixin _fd-button-apply-colors($color, $borderColor, $backgroundColor, $changeInnerElementColor: false) {
+  --fdButtonColor: #{$color};
+  --fdButtonBorderColor: #{$borderColor};
+  --fdButtonBackgroundColor: #{$backgroundColor};
+
+  @if $changeInnerElementColor {
+    // In case we have styled element inside button, we can change color of it here.
+    --fdElementTextColor: #{$color};
+    --fdElementIconColor: #{$color};
+  }
 }

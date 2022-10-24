@@ -1,0 +1,1782 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Message Popover Compact Message Popover 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <div
+    style="height: 500px"
+  >
+    
+  
+    <div
+      class="fd-popover"
+      style="margin-top: 300px;"
+    >
+      
+      
+      <div
+        class="fd-popover__control"
+      >
+        
+          
+        <button
+          aria-controls="popoverHSF4"
+          aria-expanded="true"
+          aria-haspopup="dialog"
+          class="fd-button fd-button--compact fd-message-popover__trigger fd-message-popover__trigger--negative"
+          onclick="onPopoverClick('popoverHSF4');"
+          role="button"
+        >
+          
+            
+          <i
+            aria-label="Negative"
+            class="sap-icon--message-error"
+          />
+          
+            
+          <span
+            class="fd-button__text"
+          >
+            5
+          </span>
+          
+          
+        </button>
+        
+      
+      </div>
+      
+      
+      <section
+        aria-hidden="false"
+        aria-label="Dialog Data 1"
+        class="fd-popover__body fd-popover__body--no-arrow"
+        id="popoverHSF4"
+        role="dialog"
+        style="top: auto; bottom: 100%;"
+      >
+        
+          
+        <header
+          class="fd-popover__body-header"
+        >
+          
+            
+          <div
+            class="fd-bar fd-bar--header fd-bar--growing"
+          >
+            
+              
+            <div
+              class="fd-bar__left"
+            >
+              
+                
+              <div
+                class="fd-bar__element"
+              >
+                
+                  
+                <div
+                  aria-label="Group label"
+                  class="fd-segmented-button"
+                  role="group"
+                >
+                  
+                    
+                  <button
+                    aria-label="Survey"
+                    aria-pressed="true"
+                    class="fd-button is-selected fd-button--compact"
+                  >
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      All
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Survey"
+                    class="fd-button fd-button--compact"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      2
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Chart"
+                    class="fd-button fd-button--compact"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--critical"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Warning"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-warning"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      1
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Pool"
+                    class="fd-button fd-button--compact"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--positive"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Correct"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-success"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      1
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Pool"
+                    class="fd-button fd-button--compact"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--neutral"
+                    >
+                      
+                        
+                      <i
+                        aria-label="More information"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-information"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      1
+                    </span>
+                    
+                    
+                  </button>
+                  
+                  
+                </div>
+                
+                
+              </div>
+              
+              
+            </div>
+            
+              
+            <div
+              class="fd-bar__right"
+            >
+              
+                
+              <button
+                aria-controls="popoverHSF4"
+                aria-label="Close"
+                class="fd-button fd-button--transparent fd-button--compact"
+                onclick="onPopoverClick('popoverHSF4');"
+              >
+                <i
+                  class="sap-icon--decline"
+                />
+              </button>
+              
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </header>
+        
+          
+        <div>
+          
+            
+          <div
+            class="fd-message-view fd-scrollbar"
+          >
+            
+              
+            <section
+              class="fd-message-view__list"
+              id="messageViewListCompact"
+            >
+              
+                
+              <ul
+                class="fd-list fd-list--navigation-indication fd-list--navigation fd-list--message-view fd-list--compact"
+                role="list"
+              >
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    onclick="toggleClass('messageViewListCompact', 'fd-message-view__list--hidden'); toggleClass('messageViewDetailsCompact', 'fd-message-view__details--visible');"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The file could not be uploaded.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          Uploaded file does not meet security requirements.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          Missing configuration objects.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          Missing master data.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--critical fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Warning"
+                        class="fd-object-status__icon sap-icon--message-warning"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          Incorrect master data.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--positive fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Correct"
+                        class="fd-object-status__icon sap-icon--message-success"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The status of the document has been changed.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          The transaction has been approved.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--neutral fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="More information"
+                        class="fd-object-status__icon sap-icon--message-information"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The field Location has no entry.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                
+              </ul>
+              
+              
+            </section>
+            
+              
+            <section
+              class="fd-message-view__details"
+              id="messageViewDetailsCompact"
+            >
+              
+                
+              <span
+                class="fd-message-view__details-title"
+              >
+                
+                  
+                <span
+                  class="fd-object-status fd-object-status--negative"
+                >
+                  
+                    
+                  <i
+                    aria-label="Negative"
+                    class="fd-object-status__icon sap-icon--message-error"
+                  />
+                  
+                  
+                </span>
+                
+                  The file could not be uploaded
+                
+              </span>
+              
+                
+              <span
+                class="fd-message-view__details-description"
+              >
+                
+                  Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                  Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                
+              </span>
+              
+                
+              <a
+                class="fd-link"
+              >
+                
+                  
+                <span
+                  class="fd-link__content"
+                >
+                  Read more
+                </span>
+                
+                
+              </a>
+              
+              
+            </section>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      
+      </section>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Message Popover Cozy Message Popover 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <div
+    style="height: 500px"
+  >
+    
+  
+    <div
+      class="fd-popover"
+      style="margin-top: 300px;"
+    >
+      
+      
+      <div
+        class="fd-popover__control"
+      >
+        
+          
+        <button
+          aria-controls="popoverHSF3"
+          aria-expanded="true"
+          aria-haspopup="dialog"
+          class="fd-button fd-message-popover__trigger fd-message-popover__trigger--negative"
+          onclick="onPopoverClick('popoverHSF3');"
+          role="button"
+        >
+          
+            
+          <i
+            aria-label="Negative"
+            class="sap-icon--message-error"
+          />
+          
+            
+          <span
+            class="fd-button__text"
+          >
+            5
+          </span>
+          
+          
+        </button>
+        
+      
+      </div>
+      
+      
+      <section
+        aria-hidden="false"
+        aria-label="Dialog Data 1"
+        class="fd-popover__body fd-popover__body--no-arrow"
+        id="popoverHSF3"
+        role="dialog"
+        style="top: auto; bottom: 100%;"
+      >
+        
+          
+        <header
+          class="fd-popover__body-header"
+        >
+          
+            
+          <div
+            class="fd-bar fd-bar--header fd-bar--growing"
+          >
+            
+              
+            <div
+              class="fd-bar__left"
+            >
+              
+                
+              <div
+                class="fd-bar__element"
+              >
+                
+                  
+                <div
+                  aria-label="Group label"
+                  class="fd-segmented-button"
+                  role="group"
+                >
+                  
+                    
+                  <button
+                    aria-label="Survey"
+                    aria-pressed="true"
+                    class="fd-button is-selected"
+                  >
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      All
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Survey"
+                    class="fd-button"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      2
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Chart"
+                    class="fd-button"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--critical"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Warning"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-warning"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      1
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Pool"
+                    class="fd-button"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--positive"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Correct"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-success"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      1
+                    </span>
+                    
+                    
+                  </button>
+                  
+                    
+                  <button
+                    aria-label="Pool"
+                    class="fd-button"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--neutral"
+                    >
+                      
+                        
+                      <i
+                        aria-label="More information"
+                        class="fd-button__icon fd-object-status__icon sap-icon--message-information"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-button__text"
+                    >
+                      1
+                    </span>
+                    
+                    
+                  </button>
+                  
+                  
+                </div>
+                
+                
+              </div>
+              
+              
+            </div>
+            
+              
+            <div
+              class="fd-bar__right"
+            >
+              
+                
+              <button
+                aria-controls="popoverHSF3"
+                aria-label="Close"
+                class="fd-button fd-button--transparent"
+                onclick="onPopoverClick('popoverHSF3');"
+              >
+                <i
+                  class="sap-icon--decline"
+                />
+              </button>
+              
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </header>
+        
+          
+        <div>
+          
+            
+          <div
+            class="fd-message-view fd-scrollbar"
+          >
+            
+              
+            <section
+              class="fd-message-view__list"
+              id="messageViewList"
+            >
+              
+                
+              <ul
+                class="fd-list fd-list--navigation-indication fd-list--navigation fd-list--message-view"
+                role="list"
+              >
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    onclick="toggleClass('messageViewList', 'fd-message-view__list--hidden'); toggleClass('messageViewDetails', 'fd-message-view__details--visible');"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The file could not be uploaded.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          Uploaded file does not meet security requirements.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          Missing configuration objects.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          Missing master data.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--critical fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Warning"
+                        class="fd-object-status__icon sap-icon--message-warning"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          Incorrect master data.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--positive fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Correct"
+                        class="fd-object-status__icon sap-icon--message-success"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The status of the document has been changed.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          The transaction has been approved.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--neutral fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="More information"
+                        class="fd-object-status__icon sap-icon--message-information"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The field Location has no entry.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                
+              </ul>
+              
+              
+            </section>
+            
+              
+            <section
+              class="fd-message-view__details"
+              id="messageViewDetails"
+            >
+              
+                
+              <span
+                class="fd-message-view__details-title"
+              >
+                
+                  
+                <span
+                  class="fd-object-status fd-object-status--negative"
+                >
+                  
+                    
+                  <i
+                    aria-label="Negative"
+                    class="fd-object-status__icon sap-icon--message-error"
+                  />
+                  
+                  
+                </span>
+                
+                  The file could not be uploaded
+                
+              </span>
+              
+                
+              <span
+                class="fd-message-view__details-description"
+              >
+                
+                  Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                  Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                
+              </span>
+              
+                
+              <a
+                class="fd-link"
+              >
+                
+                  
+                <span
+                  class="fd-link__content"
+                >
+                  Read more
+                </span>
+                
+                
+              </a>
+              
+              
+            </section>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      
+      </section>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
+
+exports[`Storyshots Components/Message Popover Details View 1`] = `
+<div
+  dir="ltr"
+>
+  
+
+  <div
+    style="height: 500px"
+  >
+    
+  
+    <div
+      class="fd-popover"
+      style="margin-top: 300px;"
+    >
+      
+      
+      <div
+        class="fd-popover__control"
+      >
+        
+          
+        <button
+          aria-controls="popoverHSF5"
+          aria-expanded="true"
+          aria-haspopup="dialog"
+          class="fd-button fd-message-popover__trigger fd-message-popover__trigger--negative"
+          onclick="onPopoverClick('popoverHSF5');"
+          role="button"
+        >
+          
+            
+          <i
+            aria-label="Negative"
+            class="sap-icon--message-error"
+          />
+          
+            
+          <span
+            class="fd-button__text"
+          >
+            5
+          </span>
+          
+          
+        </button>
+        
+      
+      </div>
+      
+      
+      <section
+        aria-hidden="false"
+        aria-label="Dialog Data 1"
+        class="fd-popover__body fd-popover__body--no-arrow"
+        id="popoverHSF5"
+        role="dialog"
+        style="top: auto; bottom: 100%;"
+      >
+        
+          
+        <header
+          class="fd-popover__body-header"
+        >
+          
+            
+          <div
+            class="fd-bar fd-bar--header fd-bar--growing"
+          >
+            
+              
+            <div
+              class="fd-bar__left"
+            >
+              
+                
+              <div
+                class="fd-bar__element"
+              >
+                
+                  
+                <button
+                  aria-controls="popoverHSF5"
+                  aria-label="Close"
+                  class="fd-button fd-button--transparent"
+                >
+                  <i
+                    class="sap-icon--navigation-left-arrow"
+                  />
+                </button>
+                
+                
+              </div>
+              
+              
+            </div>
+            
+              
+            <div
+              class="fd-bar__right"
+            >
+              
+                
+              <button
+                aria-controls="popoverHSF5"
+                aria-label="Close"
+                class="fd-button fd-button--transparent"
+                onclick="onPopoverClick('popoverHSF5');"
+              >
+                <i
+                  class="sap-icon--decline"
+                />
+              </button>
+              
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </header>
+        
+          
+        <div>
+          
+            
+          <div
+            class="fd-message-view fd-scrollbar"
+          >
+            
+              
+            <section
+              class="fd-message-view__list fd-message-view__list--hidden"
+              id="messageViewListDetails"
+            >
+              
+                
+              <ul
+                class="fd-list fd-list--navigation-indication fd-list--navigation fd-list--message-view"
+                role="list"
+              >
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    onclick="toggleClass('messageViewListDetails', 'fd-message-view__list--hidden'); toggleClass('messageViewListDetails', 'fd-message-view__details--visible');"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The file could not be uploaded.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          Uploaded file does not meet security requirements.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--negative fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Negative"
+                        class="fd-object-status__icon sap-icon--message-error"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          Missing configuration objects.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          Missing master data.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--critical fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Warning"
+                        class="fd-object-status__icon sap-icon--message-warning"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          Incorrect master data.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--byline fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--positive fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="Correct"
+                        class="fd-object-status__icon sap-icon--message-success"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The status of the document has been changed.
+                        
+                      </span>
+                      
+                        
+                      <span
+                        class="fd-list__subtitle"
+                      >
+                        
+                          The transaction has been approved.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                  
+                <li
+                  class="fd-list__item fd-list__item--link"
+                  role="listitem"
+                  tabindex="0"
+                >
+                  
+                    
+                  <a
+                    class="fd-list__link fd-list__link--navigation-indicator"
+                    tabindex="0"
+                  >
+                    
+                      
+                    <span
+                      class="fd-object-status fd-object-status--neutral fd-list__icon"
+                    >
+                      
+                        
+                      <i
+                        aria-label="More information"
+                        class="fd-object-status__icon sap-icon--message-information"
+                      />
+                      
+                      
+                    </span>
+                    
+                      
+                    <span
+                      class="fd-list__content"
+                    >
+                      
+                        
+                      <span
+                        class="fd-list__title"
+                      >
+                        
+                          The field Location has no entry.
+                        
+                      </span>
+                      
+                      
+                    </span>
+                    
+                    
+                  </a>
+                  
+                  
+                </li>
+                
+                
+              </ul>
+              
+              
+            </section>
+            
+              
+            <section
+              class="fd-message-view__details fd-message-view__details--visible"
+              id="messageViewDetailsCompact"
+            >
+              
+                
+              <span
+                class="fd-message-view__details-title"
+              >
+                
+                  
+                <span
+                  class="fd-object-status fd-object-status--negative"
+                >
+                  
+                    
+                  <i
+                    aria-label="Negative"
+                    class="fd-object-status__icon sap-icon--message-error"
+                  />
+                  
+                  
+                </span>
+                
+                  The file could not be uploaded
+                
+              </span>
+              
+                
+              <span
+                class="fd-message-view__details-description"
+              >
+                
+                  Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                  Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                
+              </span>
+              
+                
+              <a
+                class="fd-link"
+              >
+                
+                  
+                <span
+                  class="fd-link__content"
+                >
+                  Read more
+                </span>
+                
+                
+              </a>
+              
+              
+            </section>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      
+      </section>
+      
+  
+    </div>
+    
+
+  </div>
+  
+
+</div>
+`;
