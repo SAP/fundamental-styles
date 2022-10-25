@@ -1,0 +1,50 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-font;
+
+.#{$block} {
+  @each $type, $value in $sap-font-types {
+    &-family-#{$type} {
+      font-family: $value;
+    }
+  }
+
+  @each $type, $value in $sap-font-sizes {
+    &-size-#{$type} {
+      font-size: $value;
+    }
+  }
+
+  &-line-height {
+    @include sap-font-line-height();
+  }
+
+  &-line-height-long {
+    @include sap-font-line-height(1.4);
+  }
+
+  &-header-3 {
+    @include sap-font('header-3');
+  }
+
+  &-standard-text {
+    @include sap-font('standard-text');
+  }
+
+  &-small-detail-text {
+    @include sap-font('small-detail-text');
+  }
+
+  &-standard-field-text {
+    @include sap-font('standard-field-text');
+  }
+
+  &-label {
+    @include sap-font('label');
+  }
+
+  &-description {
+    @include sap-font('description');
+  }
+}

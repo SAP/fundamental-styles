@@ -1,0 +1,54 @@
+{
+    "name": "fn-icons",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/icons/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "workspace-plugins:build",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "source": "packages/icons/src",
+                "outputPath": "dist/packages/icons",
+                "assets": [
+                    "packages/icons/*.md",
+                    {
+                        "glob": "**/*",
+                        "input": "packages/icons/src/fiori",
+                        "output": "dist/fiori"
+                    },
+                    {
+                        "glob": "fiori-sprite.svg",
+                        "input": "packages/icons/src",
+                        "output": "dist"
+                    },
+                    {
+                        "glob": "icons.json",
+                        "input": "packages/icons/src",
+                        "output": "dist"
+                    }
+                ]
+            },
+            "configurations": {
+                "production": {
+                    "minify": true
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/icons/**/*.ts"]
+            }
+        },
+        "stylelint": {
+            "executor": "nx-stylelint:lint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/icons/**/*.scss"]
+            }
+        }
+    },
+    "tags": []
+}

@@ -1,0 +1,375 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-tabs;
+$fn-tabs-item-height: 1.75rem;
+
+// Values for Semantic Tabs
+$fn-tabs-base: (
+  "positive": (
+    "color": $fn-color-green-7,
+    "shadowHover": $fn-shadow-green-level-1,
+    "shadowFocus": $fn-focus-outline-shadow-green
+  ),
+  "critical": (
+    "color": $fn-color-mango-6,
+    "shadowHover": $fn-shadow-mango-level-1,
+    "shadowFocus": $fn-focus-outline-shadow-mango
+  ),
+  "negative": (
+    "color": $fn-color-red-7,
+    "shadowHover": $fn-shadow-red-level-1,
+    "shadowFocus": $fn-focus-outline-shadow-red
+  )
+);
+
+// Setting the Tab Instance states
+@mixin fn-tabs-states($hoverShadow, $focusShadow, $color) {
+  .#{$block}__text {
+    color: $color;
+  }
+
+  .#{$block}__button {
+    @include fn-icon-class() {
+      color: $color;
+    }
+
+    @include fn-not-focus-visible() {
+      @include fn-icon-class() {
+        color: $color;
+      }
+
+      @include fn-active() {
+        @include fn-icon-class() {
+          color: $fn-color-white;
+        }
+      }
+    }
+  }
+
+  .#{$block}__button--split {
+    &::after {
+      background: $color;
+    }
+
+    @include fn-focus-visible() {
+      box-shadow: $focusShadow;
+    }
+  }
+
+  @include fn-icon-class() {
+    color: $color;
+  }
+
+  @include fn-hover() {
+    box-shadow: $hoverShadow;
+
+    @include fn-active() {
+      box-shadow: none;
+    }
+  }
+
+  @include fn-active() {
+    box-shadow: none;
+  }
+
+  @include fn-not-focus-visible() {
+    outline: none;
+    box-shadow: none;
+
+    @include fn-hover() {
+      box-shadow: $hoverShadow;
+
+      @include fn-active() {
+        box-shadow: none;
+      }
+    }
+  }
+
+  @include fn-focus-visible() {
+    outline: none;
+    box-shadow: $focusShadow;
+  }
+}
+
+// Show the close button on hover states
+@mixin fn-tabs-close-btn-visible() {
+  @include fn-set-paddings-x(0.75rem, 0.375rem);
+
+  .#{$block}__button {
+    @include fn-set-margin-left(0.25rem);
+
+    opacity: 1;
+    width: 1.125rem;
+  }
+}
+
+// Hide the close button on active and default states
+@mixin fn-tabs-close-btn-hidden() {
+  .#{$block}__button {
+    width: 0;
+    margin: 0;
+    opacity: 0;
+  }
+}
+
+// Selected Tab Instance/Item
+@mixin fn-tabs-item-selected() {
+  &.#{$block}__item--selected {
+    @content;
+  }
+}
+
+// Setting the selection indicator for selected Multi-instance Tab Item
+@mixin fn-tabs-multi-instance-active() {
+  height: 100%;
+  border-radius: $fn-border-radius-2 $fn-border-radius-2 0 0;
+
+  &::before {
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: none;
+    border-radius: $fn-border-radius-2 $fn-border-radius-2 0 0;
+    border-top: $fn-border-width $fn-border-style $fn-color-blue-7;
+  }
+}
+
+// Setting the selection indicator for selected semantic Multi-instance Tab Item
+@mixin fn-tabs-multi-instance-semantic-active($borderColor) {
+  @include fn-hover() {
+    @include fn-active() {
+      &::before {
+        border-top-color: $borderColor;
+      }
+    }
+  }
+
+  @include fn-active() {
+    &::before {
+      border-top-color: $borderColor;
+    }
+  }
+
+  @include fn-not-focus-visible() {
+    &::before {
+      border-top-color: $borderColor;
+    }
+
+    @include fn-hover() {
+      @include fn-active() {
+        &::before {
+          border-top-color: $borderColor;
+        }
+      }
+    }
+  }
+}
+
+.#{$block} {
+  // Tabs Container
+  @include fn-reset();
+  @include fn-flex-vertical-center();
+  @include fn-set-paddings-x-equal(1.5rem);
+
+  height: 2.75rem;
+  list-style: none;
+  background: $fn-color-white;
+  box-shadow: $fn-shadow-grey-level-0;
+
+  // Tabs Icon Container
+  &__icon {
+    @include fn-reset();
+    @include fn-flex-center();
+    @include fn-set-square(1.125rem);
+    @include fn-set-margin-right(0.25rem);
+
+    @include fn-icon-class() {
+      line-height: 1;
+      font-size: 0.9375rem;
+    }
+  }
+
+  .#{$block}__button {
+    @include fn-set-margin-left(0.25rem);
+
+    min-width: 0;
+    position: relative;
+
+    &.#{$block}__button--split {
+      @include fn-set-margin-left(0.5rem);
+    }
+  }
+
+  // Tabs Text Container
+  &__text {
+    @include fn-reset();
+    @include fn-ellipsis();
+
+    font-weight: bold;
+  }
+
+  // Tabs Item/Instance
+  &__item {
+    @include fn-reset();
+    @include fn-transition();
+    @include fn-flex-vertical-center();
+
+    cursor: pointer;
+    height: 1.625rem;
+    position: relative;
+    background: transparent;
+    padding: 0.125rem 0.375rem;
+    border-radius: $fn-border-radius-4;
+
+    // Item Bottom Underline
+    &::before {
+      left: 0;
+      right: 0;
+      height: 0;
+      content: '';
+      width: 100%;
+      bottom: -0.375rem;
+      position: absolute;
+      pointer-events: none;
+      border-radius: $fn-border-radius-2;
+      border-bottom: $fn-border-width $fn-border-style transparent;
+    }
+
+    // Offset Between Two Tabs Instances
+    & + .#{$block}__item {
+      @include fn-set-margin-left(0.75rem);
+    }
+
+    @include fn-tabs-states($fn-shadow-grey-level-1, $fn-focus-outline-shadow-grey, $fn-color-grey-7);
+
+    @include fn-disabled() {
+      pointer-events: none;
+      opacity: $fn-disabled-opacity;
+    }
+
+    // Tab Item - Selected State
+    @include fn-tabs-item-selected() {
+      @include fn-tabs-states($fn-shadow-blue-level-1, $fn-focus-outline-shadow-blue, $fn-color-blue-7);
+
+      &::before {
+        border-bottom-color: $fn-color-blue-7;
+      }
+    }
+  }
+
+  &__right-container {
+    @include fn-reset();
+    @include fn-flex();
+    @include fn-set-margin-left(auto);
+  }
+
+  // Semantic Tabs - positive, negative, warning
+  @each $set-name, $set-prop in $fn-tabs-base {
+    &--#{$set-name} {
+
+      .#{$block}__item {
+        @include fn-tabs-states(map-get($set-prop, 'shadowHover'), map-get($set-prop, 'shadowFocus'), map-get($set-prop, 'color'));
+
+        @include fn-tabs-item-selected() {
+          @include fn-tabs-states(map-get($set-prop, 'shadowHover'), map-get($set-prop, 'shadowFocus'), map-get($set-prop, 'color'));
+
+          &::before {
+            border-bottom-color: map-get($set-prop, 'color');
+          }
+        }
+      }
+
+      // Semantic Multi Instance Tabs
+      &.#{$block}--multi-instance {
+        .#{$block}__item {
+          @include fn-tabs-multi-instance-semantic-active(map-get($set-prop, 'color'));
+
+          @include fn-tabs-item-selected() {
+            @include fn-tabs-multi-instance-semantic-active(map-get($set-prop, 'color'));
+
+            box-shadow: map-get($set-prop, 'shadowHover');
+
+            &::before {
+              border-top-color: map-get($set-prop, 'color');
+            }
+
+            @include fn-focus-visible() {
+              box-shadow: map-get($set-prop, 'shadowFocus');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Multi Instance Tabs
+  &--multi-instance {
+    // Multi Instance Tabs Container
+    box-shadow: none;
+    background: transparent;
+
+    // Multi Instance Tabs Item/Instance
+    .#{$block}__item {
+      height: $fn-tabs-item-height;
+
+      // Hide the close button by default
+      @include fn-tabs-close-btn-hidden();
+
+      // Set the paddings on default state
+      @include fn-set-paddings-x-equal(1.25rem);
+      @include fn-set-paddings-y-equal(0.1875rem);
+
+      // Show the close button on hover and change the item paddings
+      @include fn-hover() {
+        @include fn-tabs-close-btn-visible();
+
+        @include fn-active() {
+          @include fn-tabs-close-btn-visible();
+          @include fn-tabs-multi-instance-active();
+          // @include fn-set-paddings-x-equal(1.25rem);
+        }
+      }
+
+      // Show the close button and set equal paddings on mouse click (mouse focus)
+      @include fn-not-focus-visible() {
+        @include fn-tabs-close-btn-hidden();
+        @include fn-set-paddings-x-equal(1.25rem);
+
+        // Show the close button on hover and change the item paddings
+        @include fn-hover() {
+          @include fn-tabs-close-btn-visible();
+
+          @include fn-active() {
+            @include fn-tabs-close-btn-visible();
+            @include fn-tabs-multi-instance-active();
+            // @include fn-set-paddings-x-equal(1.25rem);
+          }
+        }
+      }
+
+      // Show the close button on focus (keyboard) and change the item paddings
+      @include fn-focus-visible() {
+        @include fn-tabs-close-btn-visible();
+      }
+
+      // Tab Item - Selected State
+      @include fn-tabs-item-selected() {
+        @include fn-tabs-multi-instance-active();
+
+        @include fn-hover() {
+          box-shadow: $fn-shadow-grey-level-1;
+        }
+
+        @include fn-focus-visible() {
+          height: $fn-tabs-item-height;
+          border-radius: $fn-border-radius-4;
+          box-shadow: $fn-focus-outline-shadow-blue;
+
+          &::before {
+            top: -0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

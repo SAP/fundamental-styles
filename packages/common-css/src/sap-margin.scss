@@ -1,0 +1,37 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-margin;
+
+.#{$block} {
+  @each $type, $value in $sap-margins {
+    &-#{$type} {
+      @include sap-margin(#{$type});
+    }
+
+    @each $side, $dim in $sap-container-sides {
+      &-#{$side}-#{$type} {
+        @include sap-margin(#{$type}, #{$side});
+      }
+    }
+  }
+
+  &-responsive {
+    @include sap-margin-responsive();
+  }
+
+  @each $side, $dim in $sap-container-sides {
+    &-#{$side}-none {
+      @include sap-margin(0 !important, #{$side});
+    }
+  }
+
+  @each $type, $value in $sap-margins {
+    &-#{$type}-negative {
+      $_value: $value * -1 !important;
+
+      @include sap-set-margin-x-equal($_value);
+      @include sap-set-margin-y-equal(0 !important);
+    }
+  }
+}

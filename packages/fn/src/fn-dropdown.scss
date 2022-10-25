@@ -1,0 +1,26 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-dropdown;
+
+.#{$block} {
+  @include fn-reset();
+
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  background: $fn-color-white;
+  border-radius: $fn-border-radius-6;
+  box-shadow: $fn-shadow-black-level-1;
+
+  &--overflow-y {
+    overflow-y: scroll;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--full-height {
+    height: 100%;
+  }
+}

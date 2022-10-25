@@ -1,7 +1,7 @@
 # Fundamental Library Styles
 
 [![npm version](https://badge.fury.io/js/fundamental-styles.svg)](https://badge.fury.io/js/fundamental-styles)
-![Build Status](https://github.com/SAP/fundamental-styles/actions/workflows/on-push-or-pull.yml/badge.svg?branch=main)
+![Build Status](https://github.com/SAP/fundamental-styles/actions/workflows/on-pull.yml/badge.svg?branch=main)
 ![npm](https://img.shields.io/npm/dm/fundamental-styles?label=npm%20downloads)
 [![Slack](https://img.shields.io/badge/slack-ui--fundamentals-blue.svg?logo=slack)](https://join.slack.com/t/ui-fundamentals/shared_invite/enQtNTIzOTU0Mzc2NTc5LWQzZWI5MWFhYjE5OTc4YzliN2JhOTc1ZjQxZTg1YjZiMWZiYzRkNjMwYzgyMmFkYmNhZDVjMWE5MDIzOWEzMmM)
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/fundamental-styles)](https://api.reuse.software/info/github.com/SAP/fundamental-styles)

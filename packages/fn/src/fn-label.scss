@@ -1,0 +1,37 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-label;
+
+$fn-label-required-margin: 0.125rem;
+
+@mixin fn-label-required() {
+  content: '*';
+  font-weight: bold;
+  color: $fn-color-red-7;
+  position: relative;
+}
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-ellipsis();
+  @include fn-set-margin-right(0.75rem);
+
+  color: $fn-color-grey-6;
+  margin-bottom: 0.125rem;
+
+  &--required,
+  &[aria-required='true'] {
+    &::after {
+      @include fn-set-margin-left($fn-label-required-margin);
+      @include fn-label-required();
+    }
+  }
+
+  &--required-before,
+  &[aria-required='true'] {
+    &::before {
+      @include fn-set-margin-right($fn-label-required-margin);
+      @include fn-label-required();
+    }
+  }
+}

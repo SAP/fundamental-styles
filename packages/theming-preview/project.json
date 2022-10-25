@@ -1,0 +1,17 @@
+{
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "name": "theming-preview",
+    "sourceRoot": "packages/theming-preview/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "workspace-plugins:build-theming-preview",
+            "configurations": {
+                "production": {
+                    "minify": true
+                }
+            }
+        }
+    },
+    "tags": []
+}

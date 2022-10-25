@@ -1,0 +1,24 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-segmented-button;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex();
+  @include fn-transition();
+
+  padding: 0.1875rem;
+  width: fit-content;
+  height: $fn-control-height;
+  background: $fn-color-grey-1;
+  border-radius: $fn-border-radius-8;
+
+  & > * {
+    height: 1.625rem;
+    padding: 0.125rem 0.75rem;
+
+    &:not(:last-child) {
+      @include fn-set-margin-right(0.1875rem);
+    }
+  }
+}
