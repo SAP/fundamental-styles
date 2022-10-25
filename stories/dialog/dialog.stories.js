@@ -229,6 +229,7 @@ These modifier classes are used to display horizontal padding for dialog's heade
 
 | rem | min-width | max width | modifier class |
 | ---- | ---------- | ---------- | ----------- |
+| 0 | _n/a_ | _n/a_ | \`fd-dialog__body--no-horizontal-padding\` |
 | 1rem | _n/a_ | 599px | \`fd-dialog__content--s\` |
 | 2rem | 600px | 1023px | \`fd-dialog__content--m\` |
 | 2rem | 1024px | 1439px | \`fd-dialog__content--l\` |
