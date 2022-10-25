@@ -1,3 +1,12 @@
+# [0.25.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.46...v0.25.0-rc.47) (2022-10-25)
+
+
+### Bug Fixes
+
+* **styles:** dialog no horizontal paddings, mobile mode issues ([#3957](https://github.com/SAP/fundamental-styles/issues/3957)) ([5c12202](https://github.com/SAP/fundamental-styles/commit/5c12202834de644fa40ef536c3cbcb0e56878658))
+
+
+
 # [0.25.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.45...v0.25.0-rc.46) (2022-10-24)
 
 
