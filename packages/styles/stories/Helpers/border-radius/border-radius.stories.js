@@ -1,51 +1,56 @@
-import '../../../../common-css/src/sap-border-radius.scss';
+import 'common-css/src/sap-border-radius.scss';
+
 export default {
     title: 'Helpers/Border Radius',
     parameters: {
         description: `
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <tr>
-        <th style="padding: 0.25rem 0.75rem;">Type</th>
-        <th style="padding: 0.25rem 0.75rem;">CSS variable</th>
-        <th style="padding: 0.25rem 0.75rem;">Class</th>
-        <th style="padding: 0.25rem 0.75rem;">Mixin</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">Element</td>
-        <td style="padding: 0.25rem 0.75rem;">var(--sapElement_BorderCornerRadius)</td>
-        <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-element</td>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(element)</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">Button</td>
-        <td style="padding: 0.25rem 0.75rem;">var(--sapButton_BorderCornerRadius)</td>
-        <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-button</td>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(button)</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">Field</td>
-        <td style="padding: 0.25rem 0.75rem;">var(--sapField_BorderCornerRadius)</td>
-        <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-field</td>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(field)</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">Group</td>
-        <td style="padding: 0.25rem 0.75rem;">var(--sapGroup_BorderCornerRadius)</td>
-        <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-group</td>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(group)</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">Popover</td>
-        <td style="padding: 0.25rem 0.75rem;">var(--sapPopover_BorderCornerRadius)</td>
-        <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-popover</td>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(popover)</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">Tile</td>
-        <td style="padding: 0.25rem 0.75rem;">var(--sapTile_BorderCornerRadius)</td>
-        <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-tile</td>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(tile)</td>
-    </tr>
+    <thead>
+        <tr>
+            <th style="padding: 0.25rem 0.75rem;">Type</th>
+            <th style="padding: 0.25rem 0.75rem;">CSS variable</th>
+            <th style="padding: 0.25rem 0.75rem;">Class</th>
+            <th style="padding: 0.25rem 0.75rem;">Mixin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 0.25rem 0.75rem;">Element</td>
+            <td style="padding: 0.25rem 0.75rem;">var(--sapElement_BorderCornerRadius)</td>
+            <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-element</td>
+            <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(element)</td>
+        </tr>
+        <tr>
+            <td style="padding: 0.25rem 0.75rem;">Button</td>
+            <td style="padding: 0.25rem 0.75rem;">var(--sapButton_BorderCornerRadius)</td>
+            <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-button</td>
+            <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(button)</td>
+        </tr>
+        <tr>
+            <td style="padding: 0.25rem 0.75rem;">Field</td>
+            <td style="padding: 0.25rem 0.75rem;">var(--sapField_BorderCornerRadius)</td>
+            <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-field</td>
+            <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(field)</td>
+        </tr>
+        <tr>
+            <td style="padding: 0.25rem 0.75rem;">Group</td>
+            <td style="padding: 0.25rem 0.75rem;">var(--sapGroup_BorderCornerRadius)</td>
+            <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-group</td>
+            <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(group)</td>
+        </tr>
+        <tr>
+            <td style="padding: 0.25rem 0.75rem;">Popover</td>
+            <td style="padding: 0.25rem 0.75rem;">var(--sapPopover_BorderCornerRadius)</td>
+            <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-popover</td>
+            <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(popover)</td>
+        </tr>
+        <tr>
+            <td style="padding: 0.25rem 0.75rem;">Tile</td>
+            <td style="padding: 0.25rem 0.75rem;">var(--sapTile_BorderCornerRadius)</td>
+            <td style="padding: 0.25rem 0.75rem;">.sap-border-radius-tile</td>
+            <td style="padding: 0.25rem 0.75rem;">@include sap-border-radius(tile)</td>
+        </tr>
+    </tbody>
 </table>
 <br><br>
 <b>SCSS mixin: </b><code>@include sap-border-radius($value...)</code><br>

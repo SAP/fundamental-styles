@@ -1,4 +1,3 @@
-import '../../../../common-css/src/sap-media-queries.scss';
 export default {
     title: 'Helpers/Media Queries',
     parameters: {
