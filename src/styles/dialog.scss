@@ -8,8 +8,8 @@
       .fd-dialog__header
         .fd-dialog__title
       .fd-dialog__subheader
-      .fd-dialog__body+(--no-vertical-padding)
-      .fd-dialog__laoder
+      .fd-dialog__body+(--no-vertical-padding, --no-horizontal-padding)
+      .fd-dialog__loader
       .fd-dialog__footer
         .fd-dialog__decisive-button
       .fd-dialog__resize-handle
@@ -73,7 +73,9 @@ $menu: #{$fd-namespace}-menu;
     &--mobile {
       @extend %dialog-mobile;
 
-      .#{$block}__body {
+      .#{$block}__header,
+      .#{$block}__body,
+      .#{$block}__footer {
         border-radius: 0;
       }
 
@@ -128,18 +130,6 @@ $menu: #{$fd-namespace}-menu;
     }
   }
 
-  &__header.#{$bar} {
-    position: relative;
-    border-top-left-radius: $fd-dialog-content-border-radius;
-    border-top-right-radius: $fd-dialog-content-border-radius;
-  }
-
-  &__footer.#{$bar} {
-    position: relative;
-    border-bottom-left-radius: $fd-dialog-content-border-radius;
-    border-bottom-right-radius: $fd-dialog-content-border-radius;
-  }
-
   &__body {
     @include fd-reset();
 
@@ -155,15 +145,19 @@ $menu: #{$fd-namespace}-menu;
       padding-bottom: 0;
     }
 
-    .#{$block}__header + &,
-    .#{$block}__subheader + & {
-      border-top-left-radius: initial;
-      border-top-right-radius: initial;
+    &--no-horizontal-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
 
     &:not(:last-child) {
-      border-bottom-left-radius: initial;
-      border-bottom-right-radius: initial;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
   }
 
