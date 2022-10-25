@@ -13,6 +13,7 @@
     "license": "Apache-2.0",
     "homepage": "https://sap.github.io/fundamental-styles/",
     "peerDependencies": {
-        "@sap-theming/theming-base-content": "SAP_THEMING_VERSION"
+        "@sap-theming/theming-base-content": "SAP_THEMING_VERSION",
+        "@fundamental-styles/common-css": "VERSION_PLACEHOLDER"
     }
 }

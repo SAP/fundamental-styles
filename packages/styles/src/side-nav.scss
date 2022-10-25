@@ -1,6 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
-@import "./nested-list";
+@import "nested-list";
 
 $block: #{$fd-namespace}-side-nav;
 $block-nested-list: #{$fd-namespace}-nested-list;

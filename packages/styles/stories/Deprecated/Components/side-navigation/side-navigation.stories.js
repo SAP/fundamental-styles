@@ -1,7 +1,7 @@
 import '../../../../src/side-nav.scss';
 import '../../../../src/button.scss';
 import '../../../../src/icon.scss';
-import '../../../../src/nested-list.scss';
+import '../../../../src/_nested-list.scss';
 import '../../../../src/popover.scss';
 export default {
     title: 'Deprecated/Components/Side Navigation',
