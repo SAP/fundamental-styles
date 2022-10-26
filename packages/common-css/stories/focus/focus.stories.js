@@ -1,5 +1,5 @@
 export default {
-    title: 'Helpers/Focus Visual',
+    title: 'Focus Visual',
     parameters: {
         description: `Focus Visual is the visual representation of the focus state. When focus visual is shown it is always visible regardless of the other states the control is in (normal, hover, pressed, active, selected, etc). The Focus Visual Element is available in all themes with colors that work on light and dark backgrounds. The usage of focus or contrast focus colors is determined by each control individually and might be different for the light and dark versions of the controls.
       `,

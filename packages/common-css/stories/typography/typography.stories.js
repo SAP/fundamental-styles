@@ -1,6 +1,6 @@
-import '../../../../common-css/src/sap-typography.scss';
+import '../../src/sap-typography.scss';
 export default {
-    title: 'Helpers/Typography',
+    title: 'Typography',
     parameters: {
         description: `
       `,

@@ -1,67 +1,11 @@
-import '../../../../common-css/src/sap-margin.scss';
+import '../../src/sap-margin.scss';
+
+import description from './margin.story.description.html?raw';
+
 export default {
-    title: 'Helpers/Margins',
+    title: 'Margins',
     parameters: {
-        description: `The CSS margin properties are used to create space around elements, outside of any defined borders. <br><br>
-##Helper mixins:<br>
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-    <tr>
-        <th style="padding: 0.25rem 0.75rem;">Mixin</th>
-        <th style="padding: 0.25rem 0.75rem;">Resultant CSS</th>
-        <th style="padding: 0.25rem 0.75rem;">$value</th>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-all($value)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin: $value;</td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-top($value)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-top: $value;</td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-bottom($value)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-bottom: $value;</td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-begin($value)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-left: $value;</td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-end($value)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-right: $value;</td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-x-equal($value)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-right: $value; <br>margin-left: $value; </td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-y-equal($value)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-top: $value; <br>margin-bottom: $value; </td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-x($valueLeft, $valueRight)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-left: $valueLeft;<br>margin-right: $valueRight;</td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-set-margin-y($valueTop, $valueBottom)</td>
-        <td style="padding: 0.25rem 0.75rem;">margin-top: $valueTop;<br>margin-bottom: $valueBottom;</td>
-        <td style="padding: 0.25rem 0.75rem;">defined by the user</td>
-    </tr>
-    <tr>
-        <td style="padding: 0.25rem 0.75rem;">@include sap-margin($value, $side)</td>
-        <td style="padding: 0.25rem 0.75rem;">based on parameters</td>
-        <td style="padding: 0.25rem 0.75rem;">$value:tiny,small,<br> medium,large<br> or defined by the user <br> $side: top, bottom, begin, end, x, y</td>
-    </tr>
-</table>
-      `,
+        description,
         docs: { iframeHeight: 500 }
     }
 };

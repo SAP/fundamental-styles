@@ -1,6 +1,6 @@
-import '../../../../common-css/src/sap-content-paddings.scss';
+import '../../src/sap-content-paddings.scss';
 export default {
-    title: 'Helpers/Content Paddings',
+    title: 'Content Paddings',
     parameters: {
         description: `Content containers (Page, Dynamic Page, Object Page, Tab Container, Icon Tab Bar, Wizard) can hold any types of controls and layouts that are needed to visualize application content. The content areas of these controls should by default use responsive paddings which value is determined by the container width.
       `,
@@ -55,48 +55,52 @@ HomeExample.parameters = {
         description: {
             story: `
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+    <thead>
+        <tr>
+            <th style="padding: 0.25rem;">Size</th>
+            <th style="padding: 0.25rem;">Container Width</th>
+            <th style="padding: 0.25rem;">Container Padding</th>
+            <th style="padding: 0.25rem;">Class</th>
+            <th style="padding: 0.25rem;">Mixin</th>
+        </tr>
+    </thead>
+    <tbody>
     <tr>
-        <th style="padding: 0.25rem;">Size</th>
-        <th style="padding: 0.25rem;">Container Width</th>
-        <th style="padding: 0.25rem;">Container Padding</th>
-        <th style="padding: 0.25rem;">Class</th>
-        <th style="padding: 0.25rem;">Mixin</th>
+        <td style="padding: 0.25rem;">SM</td>
+        <td style="padding: 0.25rem;">max-widtd: 599px</td>
+        <td style="padding: 0.25rem;">padding-left: 0.5rem; <br>padding-right: 0.5rem;</td>
+        <td style="padding: 0.25rem;">.sap-content-paddings-home-sm</td>
+        <td style="padding: 0.25rem;">@include sap-content-paddings(home, sm);</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">SM</th>
-        <th style="padding: 0.25rem;">max-width: 599px</th>
-        <th style="padding: 0.25rem;">padding-left: 0.5rem; <br>padding-right: 0.5rem;</th>
-        <th style="padding: 0.25rem;">.sap-content-paddings-home-sm</th>
-        <th style="padding: 0.25rem;">@include sap-content-paddings(home, sm);</th>
+        <td style="padding: 0.25rem;">MD</td>
+        <td style="padding: 0.25rem;">min-widtd: 600px, <br>max-widtd: 1023px</td>
+        <td style="padding: 0.25rem;">padding-left: 2rem; <br>padding-right: 2rem;</td>
+        <td style="padding: 0.25rem;">.sap-content-paddings-home-md</td>
+        <td style="padding: 0.25rem;">@include sap-content-paddings(home, md);</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">MD</th>
-        <th style="padding: 0.25rem;">min-width: 600px, <br>max-width: 1023px</th>
-        <th style="padding: 0.25rem;">padding-left: 2rem; <br>padding-right: 2rem;</th>
-        <th style="padding: 0.25rem;">.sap-content-paddings-home-md</th>
-        <th style="padding: 0.25rem;">@include sap-content-paddings(home, md);</th>
+        <td style="padding: 0.25rem;">LG</td>
+        <td style="padding: 0.25rem;">min-widtd: 1024px, <br>max-widtd: 1439px</td>
+        <td style="padding: 0.25rem;">padding-left: 2rem; <br>padding-right: 2rem;</td>
+        <td style="padding: 0.25rem;">.sap-content-paddings-home-lg</td>
+        <td style="padding: 0.25rem;">@include sap-content-paddings(home, lg);</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">LG</th>
-        <th style="padding: 0.25rem;">min-width: 1024px, <br>max-width: 1439px</th>
-        <th style="padding: 0.25rem;">padding-left: 2rem; <br>padding-right: 2rem;</th>
-        <th style="padding: 0.25rem;">.sap-content-paddings-home-lg</th>
-        <th style="padding: 0.25rem;">@include sap-content-paddings(home, lg);</th>
+        <td style="padding: 0.25rem;">XL</td>
+        <td style="padding: 0.25rem;">min-widtd: 1440px</td>
+        <td style="padding: 0.25rem;">padding-left: 3rem; <br>padding-right: 3rem;</td>
+        <td style="padding: 0.25rem;">.sap-content-paddings-home-xl</td>
+        <td style="padding: 0.25rem;">@include sap-content-paddings(home, xl);</td>
     </tr>
     <tr>
-        <th style="padding: 0.25rem;">XL</th>
-        <th style="padding: 0.25rem;">min-width: 1440px</th>
-        <th style="padding: 0.25rem;">padding-left: 3rem; <br>padding-right: 3rem;</th>
-        <th style="padding: 0.25rem;">.sap-content-paddings-home-xl</th>
-        <th style="padding: 0.25rem;">@include sap-content-paddings(home, xl);</th>
+        <td style="padding: 0.25rem;">Default</td>
+        <td style="padding: 0.25rem;">responsive</td>
+        <td style="padding: 0.25rem;">based on screen size</td>
+        <td style="padding: 0.25rem;">.sap-content-paddings-home</td>
+        <td style="padding: 0.25rem;">@include sap-content-paddings(home, default); <br> or @include sap-content-paddings(home);</td>
     </tr>
-    <tr>
-        <th style="padding: 0.25rem;">Default</th>
-        <th style="padding: 0.25rem;">responsive</th>
-        <th style="padding: 0.25rem;">based on screen size</th>
-        <th style="padding: 0.25rem;">.sap-content-paddings-home</th>
-        <th style="padding: 0.25rem;">@include sap-content-paddings(home, default); <br> or @include sap-content-paddings(home);</th>
-    </tr>
+    </tbody>
 </table>`
         }
     }

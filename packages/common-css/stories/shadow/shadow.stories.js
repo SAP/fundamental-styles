@@ -1,6 +1,7 @@
-import '../../../../common-css/src/sap-shadow.scss';
+import '../../src/sap-shadow.scss';
+
 export default {
-    title: 'Helpers/Shadow',
+    title: 'Shadow',
     parameters: {
         description: `Helper mixins for shadow:
         <ul>
