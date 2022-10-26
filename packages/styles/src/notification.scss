@@ -123,7 +123,7 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
     @include fd-line-clamp(2);
 
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
     max-height: 2.75rem;
   }
 
@@ -131,7 +131,7 @@ $block: #{$fd-namespace}-notification;
     @include fd-reset();
 
     display: flex;
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
 
     &-content {
       @include fd-ellipsis();
