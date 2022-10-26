@@ -1,3 +1,12 @@
+## [0.25.1-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.1...v0.25.1-rc.2) (2022-10-26)
+
+
+### Bug Fixes
+
+* **styles:** notification text containers should use margin, not padding, for spacing [ci visual] ([#3936](https://github.com/SAP/fundamental-styles/issues/3936)) ([9e97010](https://github.com/SAP/fundamental-styles/commit/9e97010acab032b2ca754b3efbf849a69ffe239d))
+
+
+
 ## [0.25.1-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.0...v0.25.1-rc.1) (2022-10-26)
 
 
