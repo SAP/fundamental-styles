@@ -1,0 +1,198 @@
+@import "./new-settings";
+@import "./mixins";
+@import "./dialog-placeholders";
+
+/*!
+  .fd-dialog+(--active)
+    .fd-dialog__content+(--s, --m, --l, --xl, --draggable-grab, --draggable-grabbing, --mobile, --no-mobile-stretch)
+      .fd-dialog__header
+        .fd-dialog__title
+      .fd-dialog__subheader
+      .fd-dialog__body+(--no-vertical-padding, --no-horizontal-padding)
+      .fd-dialog__loader
+      .fd-dialog__footer
+        .fd-dialog__decisive-button
+      .fd-dialog__resize-handle
+*/
+$block: #{$fd-namespace}-dialog;
+$bar: #{$fd-namespace}-bar;
+$button: #{$fd-namespace}-button;
+$menu: #{$fd-namespace}-menu;
+
+.#{$block} {
+
+  // CONTENT
+  $fd-dialog-content-margin-y: 6%;
+  $fd-dialog-content-margin-x: 10%;
+  $fd-dialog-content-min-width: 20rem;
+  $fd-dialog-content-min-height: 7.5rem;
+  $fd-dialog-content-box-shadow: var(--sapContent_Shadow3);
+  $fd-dialog-content-border-radius: var(--sapElement_BorderCornerRadius);
+  $fd-dialog-content-padding-x: (def: 1rem, s: 1rem, m: 2rem, l: 2rem, xl: 3rem);
+
+  // RESIZE HANDLE
+  $fd-dialog-resize-handle-color: var(--sapButton_Lite_TextColor);
+
+  // BODY
+  $fd-dialog-body-padding-y: 1rem;
+  $fd-dialog-body-color: var(--sapGroup_ContentBackground);
+
+  // LOADER
+  $fd-dialog-loader-margin-y: 1.5rem;
+
+  // Footer
+  $fd-dialog-footer-button-min-width: 4rem;
+
+  @include fd-reset();
+
+  @extend %dialog;
+
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+
+  &__content {
+    @include fd-reset();
+
+    @extend %dialog-content;
+
+    @each $size-label, $size in $fd-dialog-content-padding-x {
+      &--#{$size-label} {
+        .#{$block}__header.#{$bar},
+        .#{$block}__subheader.#{$bar},
+        .#{$block}__footer.#{$bar},
+        .#{$block}__body {
+          padding-left: map_get($fd-dialog-content-padding-x, $size-label);
+          padding-right: map_get($fd-dialog-content-padding-x, $size-label);
+        }
+      }
+    }
+
+    &--mobile {
+      @extend %dialog-mobile;
+
+      .#{$block}__header,
+      .#{$block}__body,
+      .#{$block}__footer {
+        border-radius: 0;
+      }
+
+      .#{$menu}__item:first-child,
+      .#{$menu}__item:first-child .#{$menu}__link::after,
+      .#{$menu}__item:last-child,
+      .#{$menu}__item:last-child .#{$menu}__link::after {
+        border-radius: 0;
+      }
+    }
+
+    &--no-mobile-stretch {
+      border-radius: $fd-dialog-content-border-radius;
+      max-width: calc(100vw - #{$fd-dialog-content-margin-x});
+      max-height: calc(100vh - #{$fd-dialog-content-margin-y});
+    }
+
+    &--draggable {
+      &-grab {
+        @include fd-hover() {
+          .#{$block}__header {
+            cursor: move;
+            cursor: grab;
+          }
+        }
+      }
+
+      &-grabbing {
+        @include fd-hover() {
+          .#{$block}__header {
+            cursor: move;
+            cursor: grabbing;
+          }
+        }
+      }
+    }
+  }
+
+  &__header,
+  &__subheader,
+  &__footer {
+    &.#{$bar} {
+      @extend %dialog-paddings;
+    }
+  }
+
+  &__header.#{$bar},
+  &__footer.#{$bar} {
+    .#{$block}__decisive-button {
+      min-width: $fd-dialog-footer-button-min-width;
+      justify-content: center;
+    }
+  }
+
+  &__body {
+    @include fd-reset();
+
+    @extend %dialog-body;
+
+    position: relative;
+    padding-top: $fd-dialog-body-padding-y;
+    padding-bottom: $fd-dialog-body-padding-y;
+    border-radius: $fd-dialog-content-border-radius;
+
+    &--no-vertical-padding {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &--no-horizontal-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &__loader {
+    @include fd-reset();
+
+    text-align: center;
+    margin-top: $fd-dialog-loader-margin-y;
+    margin-bottom: $fd-dialog-loader-margin-y - $fd-dialog-body-padding-y;
+  }
+
+  &__resize-handle {
+    @include fd-reset();
+
+    position: absolute;
+    font-size: 1rem;
+    cursor: se-resize;
+    overflow: hidden;
+    bottom: -0.35rem;
+
+    @include fd-set-position-right(0.05rem);
+
+    @include fd-rtl() {
+      cursor: sw-resize;
+      transform: scaleX(-1);
+    }
+
+    @include fd-icon("resize-corner", "after") {
+      color: $fd-dialog-resize-handle-color;
+    }
+  }
+
+  &--no-backdrop:not(.#{$block}--targeted) {
+    @include fd-position-center($position: fixed);
+
+    z-index: 1000;
+  }
+}

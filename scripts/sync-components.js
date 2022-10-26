@@ -2,16 +2,18 @@
  * This file allows to quickly search for missing components that are not imported into main scss file.
  */
 const fs = require('fs');
-const { resolve } = require('path');
+const { resolve, parse } = require('path');
+const postCssScss = require('postcss-scss');
+const glob = require('glob');
 
 const config = {
     fiori: {
-        rootDir: resolve(__dirname, '../src/styles'),
-        mainFile: resolve(__dirname, '../src/styles/fundamental-styles.scss')
+        rootDir: resolve(__dirname, '../packages/styles/src'),
+        mainFile: resolve(__dirname, '../packages/styles/src/fundamental-styles.scss')
     },
     fn: {
-        rootDir: resolve(__dirname, '../src/fn'),
-        mainFile: resolve(__dirname, '../src/fn/fundamental-next.scss')
+        rootDir: resolve(__dirname, '../packages/fn/src'),
+        mainFile: resolve(__dirname, '../packages/fn/src/fundamental-next.scss')
     }
 };
 
@@ -27,31 +29,35 @@ if (!config[lib]) {
 
 const getComponentsList = (libConfig) => {
     // Include only main scss files.
-    const files = fs.readdirSync(libConfig.rootDir).filter((f) => !f.startsWith('_') && f.endsWith('.scss'));
+    const globFiles = glob.sync(`${libConfig.rootDir}/*.scss`, {
+        ignore: [
+            libConfig.mainFile,
+            `${libConfig.rootDir}/_*`
+        ]
+    }).map(fileName => {
+        return parse(fileName).name;
+    });
+    const files = new Set(globFiles);
 
-    const importTemplate = (file) => `@import "./${file.replace('.scss', '')}";`;
+    const importTemplate = (file) => `@import "${file.replace('.scss', '')}";`;
 
-    // Get list of imported files in root styles file.
-    const addedFiles = fs
-        .readFileSync(libConfig.mainFile, 'utf-8')
-        .replace(/(?:\\[r]|[\r]+)+/g, '')
-        .split('\n')
-        .filter((l) => l.startsWith('@import'))
-        .map((l) => l.replace(/@import "(\.\/)(.*)";/, '$2'));
+    const postCssResult = postCssScss.parse(fs.readFileSync(libConfig.mainFile, 'utf-8'), { from: libConfig.mainFile });
+    postCssResult.walkAtRules('import', (node) => {
+        const componentName = node.params.replace(/['"]/g, '');
+        files.delete(componentName);
+    });
 
-    const missingFiles = files.filter(
-        (f) => !libConfig.mainFile.includes(f) && !addedFiles.find((af) => f.includes(af))
-    );
-
-    if (isFix) {
-        fs.appendFileSync(libConfig.mainFile, missingFiles.map((f) => importTemplate(f)).join('\n'));
+    const missingFiles = [...files.keys()];
+    const missingContent = missingFiles.map((f) => importTemplate(f)).join('\n') + '\n';
+    if (isFix && missingFiles.length) {
+        fs.appendFileSync(libConfig.mainFile, missingContent);
         return;
     }
 
     if (missingFiles.length > 0) {
         throw Error(`Found ${missingFiles.length} file(s) that are not included into the root styles file:
 ${missingFiles.join('\n')}
-Add these lines to the ${libConfig.mainFile} file:\n${missingFiles.map((f) => importTemplate(f)).join('\n')}
+Add these lines to the ${libConfig.mainFile} file:\n${missingContent}
         `);
     }
 };

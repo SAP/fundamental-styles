@@ -1,0 +1,45 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-form;
+$fn-form-item-margin-bottom: 0.75rem;
+
+.#{$block} {
+  @include fn-reset();
+
+  &__item {
+    @include fn-reset();
+    @include fn-flex(column);
+
+    &:not(:last-child) {
+      margin-bottom: $fn-form-item-margin-bottom;
+    }
+
+    &--horizontal {
+      @include fn-flex(row);
+      @include fn-flex-vertical-center();
+
+      margin-bottom: 0;
+
+      &.has-group {
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+
+    .#{$block}__group {
+      @include fn-flex(column);
+
+      &:not(:last-child) {
+        margin-bottom: $fn-form-item-margin-bottom;
+      }
+    }
+  }
+
+  &__control {
+    @include fn-reset();
+
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+  }
+}

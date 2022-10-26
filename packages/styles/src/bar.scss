@@ -1,0 +1,212 @@
+@import "./new-settings";
+@import "./mixins";
+
+$block: #{$fd-namespace}-bar;
+
+.#{$block} {
+  $fd-bar-padding-x: 1rem !default;
+  $fd-bar-element-spacing: 0.5rem !default;
+  $fd-bar-floating-footer-z-index: map-get($fd-z-index-levels, "top") !default;
+
+  @mixin bar-design($height: 2.5rem, $background: var(--sapPageHeader_Background), $shadow: var(--sapContent_HeaderShadow)) {
+    height: $height;
+    background: $background;
+    box-shadow: $shadow;
+
+    @content;
+  }
+
+  @mixin responsive-page($padding-x: 1rem) {
+    padding: 0 $padding-x;
+  }
+
+  @mixin responsive-floating-footer($margin-x: 1rem) {
+    padding: 0 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    left: $margin-x;
+    right: $margin-x;
+  }
+
+  @include fd-reset();
+  @include bar-design();
+
+  @include fd-flex () {
+    justify-content: space-between;
+  }
+
+  padding: 0 $fd-bar-padding-x;
+
+  &--responsive-paddings {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    @include fd-apply-responsive-paddings();
+  }
+
+  &__left,
+  &__middle,
+  &__right {
+    @include fd-reset();
+
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &__middle {
+    padding: 0 var(--fdBar_Middle_Area_Padding_X);
+    justify-content: center;
+  }
+
+  &__middle:only-child {
+    padding: 0;
+  }
+
+  &__left {
+    @include fd-set-paddings-x(0, var(--fdBar_Left_Area_Padding_Right));
+  }
+
+  &__right {
+    @include fd-set-paddings-x(var(--fdBar_Right_Area_Padding_Left), 0);
+
+    justify-content: flex-end;
+  }
+
+  &__element {
+    @include fd-reset();
+    @include fd-flex-center();
+
+    max-width: 100%;
+    max-height: 100%;
+
+    @include fd-set-margin-right($fd-bar-element-spacing);
+  }
+
+  &__element--full-width {
+    width: 100%;
+
+    & > *:first-child {
+      flex-grow: 1;
+    }
+  }
+
+  &__element:last-child {
+    @include fd-set-margin-right(0);
+  }
+
+  &--header {
+    @include bar-design();
+
+    z-index: 1;
+    font-family: var(--fdBar_Header_Font_Family);
+    color: var(--fdBar_Header_Color);
+  }
+
+  &--subheader {
+    @include bar-design($height: 2.25rem) {
+      padding-bottom: 0.25rem;
+    }
+
+    z-index: 1;
+  }
+
+  &--header-with-subheader {
+    @include bar-design($shadow: none);
+
+    position: relative;
+    z-index: 2;
+  }
+
+  &--footer {
+    @include bar-design($background: var(--sapPageFooter_Background), $shadow: none) {
+      border-top: 0.0625rem solid var(--sapPageFooter_BorderColor);
+    }
+  }
+
+  &--floating-footer {
+    @include bar-design($background: var(--sapPageFooter_Background), $shadow: var(--sapContent_Shadow1)) {
+      border-radius: var(--sapElement_BorderCornerRadius);
+      border: none;
+      opacity: 1;
+    }
+
+    z-index: $fd-bar-floating-footer-z-index;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &--cozy {
+    height: 2.75rem;
+
+    &.#{$block}--header,
+    &.#{$block}--footer,
+    &.#{$block}--floating-footer {
+      height: 2.75rem;
+    }
+
+    &.#{$block}--subheader {
+      height: 3rem;
+      padding-bottom: 0.25rem;
+    }
+  }
+
+  &--growing {
+    height: auto;
+    min-height: 2.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    // Compensate negative box shadow which results in visualy not centered items.
+    &.#{$block}--header {
+      padding-bottom: 0.375rem;
+    }
+  }
+
+  &--page,
+  &--home-page {
+    @include responsive-page();
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer($margin-x: 0.5rem);
+    }
+  }
+
+  &--page-s {
+    @include responsive-page();
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer();
+    }
+  }
+
+  &--home-page-s {
+    @include responsive-page($padding-x: 0.5rem);
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer();
+    }
+  }
+
+  &--page-m_l,
+  &--home-page-m_l {
+    @include responsive-page($padding-x: 2rem);
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer($margin-x: 2rem);
+    }
+  }
+
+  &--page-xl,
+  &--home-page-xl {
+    @include responsive-page($padding-x: 3rem);
+
+    &.#{$block}--floating-footer {
+      @include responsive-floating-footer($margin-x: 3rem);
+    }
+  }
+}

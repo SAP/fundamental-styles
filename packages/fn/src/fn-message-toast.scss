@@ -1,0 +1,25 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-message-toast;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex-center();
+
+  max-width: 100%;
+  width: fit-content;
+  padding: 0.5rem 1.5rem;
+  background: $fn-color-grey-9;
+  border-radius: $fn-border-radius-4;
+  box-shadow: $fn-shadow-black-level-0;
+
+  &__text {
+    @include fn-reset();
+
+    color: $fn-color-white;
+
+    &--truncate {
+      @include fn-ellipsis();
+    }
+  }
+}

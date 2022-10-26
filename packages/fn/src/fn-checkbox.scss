@@ -1,0 +1,151 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-checkbox;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex();
+  @include fn-transition();
+  @include fn-user-select();
+
+  height: auto;
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+  min-height: 1.625rem;
+  display: inline-flex;
+  padding: 0.125rem $fn-padding-xs;
+  border-radius: $fn-border-radius-xs;
+
+  @include fn-hover() {
+    box-shadow: $fn-shadow-grey-level-1;
+  }
+
+  @include fn-pressed() {
+    box-shadow: $fn-shadow-grey-level-0 !important;
+  }
+
+  @include fn-active() {
+    box-shadow: $fn-shadow-grey-level-0 !important;
+  }
+
+  @include fn-not-focus-visible() {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @include fn-focus-visible() {
+    outline: none;
+    box-shadow: $fn-focus-outline-shadow-blue;
+  }
+
+  @include fn-is-focus() {
+    outline: none;
+    box-shadow: $fn-focus-outline-shadow-blue;
+  }
+
+  @include fn-disabled() {
+    pointer-events: none;
+    opacity: $fn-disabled-opacity;
+  }
+
+  @include fn-readonly() {
+    .#{$block}__input ~ .#{$block}__checkmark {
+      pointer-events: none;
+      border: 0.0625rem dashed $fn-color-grey-7;
+    }
+
+    .#{$block}__input:checked ~ .#{$block}__checkmark {
+      background: $fn-color-grey-1;
+      border: 0.0625rem dashed $fn-color-grey-7;
+    }
+
+    .#{$block}__input:checked ~ .#{$block}__checkmark::after {
+      color: $fn-color-grey-7;
+    }
+  }
+
+  @include fn-display() {
+    pointer-events: none;
+
+    .#{$block}__checkmark {
+      border-color: $fn-color-grey-9;
+    }
+
+    .#{$block}__input:checked ~ .#{$block}__checkmark {
+      background: $fn-color-grey-9;
+      border-color: $fn-color-grey-9;
+    }
+  }
+
+  &__input {
+    @include fn-reset();
+    @include fn-transition();
+
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+
+    &:checked ~ .#{$block}__checkmark {
+      background: $fn-color-blue-7;
+      border-color: $fn-color-blue-7;
+    }
+
+    &:checked ~ .#{$block}__checkmark::after {
+      opacity: 1;
+    }
+
+    @include fn-readonly() {
+      & ~ .#{$block}__checkmark {
+        pointer-events: none;
+        border: 0.0625rem dashed $fn-color-grey-7;
+      }
+
+      &:checked ~ .#{$block}__checkmark {
+        background: $fn-color-grey-1;
+        border: 0.0625rem dashed $fn-color-grey-7;
+      }
+
+      &:checked ~ .#{$block}__checkmark::after {
+        color: $fn-color-grey-7;
+      }
+    }
+  }
+
+  &__checkmark {
+    @include fn-reset();
+    @include fn-flex-center();
+    @include fn-transition();
+
+    width: 1.125rem;
+    height: 1.125rem;
+    min-width: 1.125rem;
+    min-height: 1.125rem;
+    margin-top: 0.125rem;
+    border-radius: 0.25rem;
+    background-color: $fn-color-grey-1;
+    border: 0.125rem solid $fn-color-grey-7;
+
+    &::after {
+      opacity: 0;
+      display: block;
+      content: "\e05b";
+      font-size: 0.75rem;
+      color: $fn-color-white;
+      font-family: "SAP-icons";
+    }
+  }
+
+  &__label {
+    @include fn-reset();
+    @include fn-set-margin-left($fn-margin-xs);
+
+    color: $fn-color-grey-9;
+
+    &--truncate {
+      @include fn-ellipsis();
+    }
+  }
+}

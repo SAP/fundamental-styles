@@ -1,3 +1,91 @@
+## [0.25.1-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.25.0...v0.25.1-rc.0) (2022-10-26)
+
+
+
+# [0.25.0](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.48...v0.25.0) (2022-10-26)
+
+
+
+# [0.25.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.47...v0.25.0-rc.48) (2022-10-26)
+
+
+### Features
+
+* **common-css:** add focus to common css ([#3925](https://github.com/SAP/fundamental-styles/issues/3925)) ([365c981](https://github.com/SAP/fundamental-styles/commit/365c9811866bbb6699a1e6e61e6fec0293792fb8))
+
+
+
+# [0.25.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.46...v0.25.0-rc.47) (2022-10-25)
+
+
+### Bug Fixes
+
+* **styles:** dialog no horizontal paddings, mobile mode issues ([#3957](https://github.com/SAP/fundamental-styles/issues/3957)) ([5c12202](https://github.com/SAP/fundamental-styles/commit/5c12202834de644fa40ef536c3cbcb0e56878658))
+
+
+
+# [0.25.0-rc.46](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.45...v0.25.0-rc.46) (2022-10-24)
+
+
+### Bug Fixes
+
+* **styles:** add vertical nav on hover icon color [ci visual] ([#3914](https://github.com/SAP/fundamental-styles/issues/3914)) ([4cca58d](https://github.com/SAP/fundamental-styles/commit/4cca58d1861232a3510cd694634b97a08a1848c6))
+
+
+
+# [0.25.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.44...v0.25.0-rc.45) (2022-10-24)
+
+
+### Bug Fixes
+
+* **styles:** update Object Status radius [ci visual] ([#3942](https://github.com/SAP/fundamental-styles/issues/3942)) ([9514d76](https://github.com/SAP/fundamental-styles/commit/9514d767f8f24afb8b21c0200c38ef8da07a1301))
+
+
+
+# [0.25.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.43...v0.25.0-rc.44) (2022-10-24)
+
+
+### Features
+
+* **styles:** introduce message popover component [ci visual] ([#3937](https://github.com/SAP/fundamental-styles/issues/3937)) ([a406230](https://github.com/SAP/fundamental-styles/commit/a406230942497427369652b38f443ef1f29819ad))
+
+
+
+# [0.25.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.42...v0.25.0-rc.43) (2022-10-21)
+
+
+### Features
+
+* **styles:** add border mixin to common-css ([#3926](https://github.com/SAP/fundamental-styles/issues/3926)) ([636bb05](https://github.com/SAP/fundamental-styles/commit/636bb05e4d5485e7e9b4072a589382df6d3f3bc0))
+
+
+
+# [0.25.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.41...v0.25.0-rc.42) (2022-10-21)
+
+
+### Bug Fixes
+
+* **styles:** update font-family for Dialog Header for Horizon [ci visual] ([#3938](https://github.com/SAP/fundamental-styles/issues/3938)) ([1accb1b](https://github.com/SAP/fundamental-styles/commit/1accb1b4c7ed73efcfc04c4e6bce1deac2679304))
+
+
+
+# [0.25.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.40...v0.25.0-rc.41) (2022-10-20)
+
+
+
+# [0.25.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.39...v0.25.0-rc.40) (2022-10-20)
+
+
+
+# [0.25.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.38...v0.25.0-rc.39) (2022-10-19)
+
+
+### Features
+
+* **styles:** add focus outline to scrollbar ([#3915](https://github.com/SAP/fundamental-styles/issues/3915)) ([1bf32d6](https://github.com/SAP/fundamental-styles/commit/1bf32d6ea80f74010abb6154aaba700b9cdf560b))
+
+
+
 # [0.25.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.37...v0.25.0-rc.38) (2022-10-13)
 
 

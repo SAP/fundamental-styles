@@ -1,0 +1,104 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-progress-bar;
+$fn-progress-bar-offset: 0.125rem;
+
+$fn-progress-bar-colors: (
+  "positive": ("color": $fn-color-green-7, "barColor": $fn-color-green-3, "icon": "\e1ab"),
+  "critical": ("color": $fn-color-mango-6, "barColor": $fn-color-mango-3, "icon": "\e1ae"),
+  "negative": ("color": $fn-color-red-7, "barColor": $fn-color-red-3, "icon": "\e1ac")
+);
+
+@mixin fn-progress-bar-dot() {
+  @include fn-reset();
+
+  content: '';
+  z-index: 1;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  border-radius: 50%;
+  top: $fn-progress-bar-offset;
+  left: $fn-progress-bar-offset;
+  background: $fn-color-grey-7;
+
+  @content;
+}
+
+.#{$block} {
+  @include fn-reset();
+
+  width: 100%;
+  height: 0.5rem;
+  position: relative;
+  background: $fn-color-grey-3;
+  border-radius: $fn-border-radius-4;
+
+  &::after {
+    @include fn-flex-center();
+    @include fn-set-square(1.125rem);
+
+    content: '';
+    top: -0.25rem;
+    left: -1.375rem;
+    position: absolute;
+    font-size: 0.9375rem;
+    text-transform: none;
+    text-decoration: none;
+    font-family: "SAP-icons";
+  }
+
+  &::before {
+    @include fn-progress-bar-dot() {
+      left: auto;
+      right: $fn-progress-bar-offset;
+    }
+  }
+
+  @include fn-rtl() {
+    &::before {
+      left: $fn-progress-bar-offset;
+      right: auto;
+    }
+
+    &::after {
+      left: auto;
+      right: -1.375rem;
+    }
+  }
+
+  @include fn-disabled() {
+    pointer-events: none;
+    opacity: $fn-disabled-opacity;
+  }
+
+  &__track {
+    @include fn-reset();
+
+    z-index: 2;
+    height: 0.75rem;
+    position: absolute;
+    background: $fn-color-grey-9;
+    top: -1 * $fn-progress-bar-offset;
+    border-radius: $fn-border-radius-6;
+  }
+
+  @each $set-name, $set-color in $fn-progress-bar-colors {
+    &--#{$set-name} {
+      background: map_get($set-color, "barColor");
+
+      &::before {
+        background: map_get($set-color, "color");
+      }
+
+      &::after {
+        color: map_get($set-color, "color");
+        content: map_get($set-color, "icon");
+      }
+
+      .#{$block}__track {
+        background: map_get($set-color, "color");
+      }
+    }
+  }
+}

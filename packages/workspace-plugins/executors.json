@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "executors": {
+    "build": {
+      "implementation": "./src/executors/build/executor",
+      "schema": "./src/executors/build/schema.json",
+      "description": "build executor"
+    },
+    "visual-stories": {
+      "implementation": "./src/executors/visual-stories/index",
+      "schema": "./src/executors/visual-stories/schema.json",
+      "description": "Creates visual stories"
+    },
+    "build-theming-preview": {
+      "implementation": "./src/executors/build-theming-preview/executor",
+      "schema": "./src/executors/build-theming-preview/schema.json",
+      "description": "Builds theming preview project"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "./list-definitions";
+
+.#{$block} {
+  &--message-view {
+    .#{$block}__item {
+      height: calc(2.75rem + var(--sapList_BorderWidth));
+
+      &--byline {
+        height: calc(3.325rem + var(--sapList_BorderWidth));
+      }
+    }
+    .#{$block}__content {
+      @include fd-reset();
+
+      @include fd-flex(column) {
+        flex: 1 1 auto;
+
+        @include fd-ellipsis();
+      }
+
+      @include fd-list-ie11-active-state-fix();
+    }
+
+    .#{$block}__title {
+      font-family: var(--sapFontHeaderFamily);
+      font-size: var(--sapFontHeader5Size);
+      font-weight: normal;
+      color: var(--sapGroup_TitleTextColor);
+
+      @include fd-ellipsis();
+    }
+
+    .#{$block}__subtitle {
+      padding-top: 0.25rem;
+      font-family: var(--sapFontFamily);
+      font-size: var(--sapFontSize);
+      color: var(--sapContent_LabelColor);
+
+      @include fd-ellipsis();
+    }
+
+    .#{$block}__link {
+      @include fd-active() {
+        .#{$block}__title, .#{$block}__subtitle, .fd-object-status .fd-object-status__icon {
+          color: var(--sapList_Active_TextColor);
+        }
+      }
+    }
+
+    &.#{$block}--compact {
+      .#{$block}__item {
+        height: calc(2rem + var(--sapList_BorderWidth));
+
+        &--byline {
+          height: calc(3.25rem + var(--sapList_BorderWidth));
+        }
+
+        .#{$block}__title {
+          font-size: var(--sapFontHeader6Size);
+        }
+      }
+    }
+  }
+}

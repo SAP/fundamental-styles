@@ -1,0 +1,108 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-flex;
+
+.#{$block} {
+  // Properties for the Parent (flex container)
+  @include sap-flex();
+
+  $optionsAlignContent: flex-start, flex-end, center, space-between, space-around, space-evenly, stretch, start, end, baseline;
+
+  @each $type in $optionsAlignContent {
+    &--align-content-#{$type} {
+      @include sap-flex-align-content(#{$type});
+    }
+  }
+
+  $optionsAlignItems: stretch, flex-start, flex-end, center, baseline, start, end, self-start, self-end;
+
+  @each $type in $optionsAlignItems {
+    &--align-items-#{$type} {
+      @include sap-flex-align-items(#{$type});
+    }
+  }
+
+  $optionsDirection: row, row-reverse, column, column-reverse;
+
+  @each $type in $optionsDirection {
+    &--#{$type} {
+      @include sap-flex(#{$type});
+    }
+  }
+
+  @each $type, $value in $sap-flex-spacings {
+    &--gap-#{$type} {
+      @include sap-flex() {
+        gap: $value;
+      }
+    }
+  }
+
+  @each $type, $value in $sap-flex-spacings {
+    &--row-gap-#{$type} {
+      @include sap-flex() {
+        row-gap: $value;
+      }
+    }
+  }
+
+  @each $type, $value in $sap-flex-spacings {
+    &--column-gap-#{$type} {
+      @include sap-flex() {
+        column-gap: $value;
+      }
+    }
+  }
+
+  $optionsJustify: flex-start, flex-end, center, space-between, space-around, space-evenly, start, end, left, right;
+
+  @each $type in $optionsJustify {
+    &--justify-#{$type} {
+      @include sap-flex-justify(#{$type});
+    }
+  }
+
+  $optionsWrap: nowrap, wrap, wrap-reverse;
+
+  @each $type in $optionsWrap {
+    &--#{$type} {
+      @include sap-flex-wrap(#{$type});
+    }
+  }
+
+  &--center {
+    @include sap-flex-center();
+
+    &-column {
+      @include sap-flex-center(column);
+    }
+  }
+
+  // Properties for the Children (flex items)
+  @for $i from 0 through 20 {
+    &-order-#{$i} {
+      @include sap-flex-order(#{$i});
+    }
+  }
+
+  @for $i from 1 through 20 {
+    &-grow-#{$i} {
+      @include sap-flex-grow(#{$i});
+    }
+  }
+
+  @for $i from 1 through 20 {
+    &-shrink-#{$i} {
+      @include sap-flex-shrink(#{$i});
+    }
+  }
+
+  $optionsAlignSelf: auto, flex-start, flex-end, center, baseline, stretch;
+
+  @each $type in $optionsAlignSelf {
+    &-align-self-#{$type} {
+      @include sap-flex-align-self(#{$type});
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import "fn-settings";
+@import "fn-mixins";
+@import "dialog-placeholders";
+
+/*!
+  .fn-message-box+(--active)
+    .fn-message-box__content
+      .fn-message-box__header
+      .fn-message-box__body+(--no-vertical-padding)
+      .fn-message-box__footer
+*/
+
+$block: #{$fn-namespace}-message-box;
+
+$fn-message-box-icon-text-spacing: 0.46875rem;
+$fn-message-box-title-icon-text-size: 1rem;
+
+$message-box-states: (
+  "confirmation": ("iconColor": $fn-color-grey-7),
+  "negative": ("iconColor": $fn-color-red-7),
+  "positive": ("iconColor": $fn-color-green-7),
+  "critical": ("iconColor": $fn-color-mango-6),
+  "info": ("iconColor": $fn-color-blue-7)
+);
+
+.#{$block} {
+  @include fn-reset();
+
+  @extend %dialog;
+
+  display: none;
+
+  // ELEMENTS
+  &__content {
+    @include fn-reset();
+
+    @extend %dialog-content;
+
+    background-color: $fn-color-white;
+    padding: 1.5rem 0 0.75rem 0;
+    border-width: 0.125rem;
+    overflow: hidden;
+  }
+
+  &__body {
+    @include fn-reset();
+
+    @extend %dialog-body;
+
+    padding: 1.5rem;
+  }
+
+  &--active {
+    display: flex;
+  }
+
+  &__header {
+    padding: 0 1.5rem;
+  }
+
+  &__footer {
+    padding: 0.375rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.375rem;
+  }
+
+  @each $set-name, $state-set in $message-box-states {
+    &--#{$set-name} {
+
+      .#{$block}__content {
+        border: 0.125rem solid map_get($state-set, "iconColor");
+      }
+
+      .#{$block}__header {
+        @include fn-flex-vertical-center();
+
+        [class*=sap-icon] {
+          font-size: 1rem;
+
+          @include fn-set-margin-right($fn-message-box-icon-text-spacing);
+
+          color: map_get($state-set, "iconColor");
+        }
+      }
+    }
+  }
+}

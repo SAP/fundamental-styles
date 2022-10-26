@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "styles/*": [
+        "packages/styles/*"
+      ],
+      "common-css/*": [
+        "packages/common-css/*"
+      ],
+      "fn/*": [
+        "packages/fn/*"
+      ],
+      "icons/*": [
+        "packages/icons/*"
+      ],
+      "root/*": [
+        "./*"
+      ]
+    }
+  }
+}

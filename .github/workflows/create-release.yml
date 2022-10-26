@@ -40,7 +40,7 @@ jobs:
       - name: Publish packages to NPM
         uses: ./.github/actions/npm-publish
         with:
-          packagePaths: ".,dist-common-css,dist-fn,dist-fn-icons,dist-theming"
+          packagePaths: "dist/packages/styles,dist/packages/common-css,dist/packages/fn,dist/packages/icons,dist/packages/theming-preview"
           isPrerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
           token: ${{ secrets.NPM_TOKEN }}
 

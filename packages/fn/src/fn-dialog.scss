@@ -1,0 +1,48 @@
+@import "fn-settings";
+@import "fn-mixins";
+@import "dialog-placeholders";
+
+/*!
+  .fn-dialog+(--active)
+    .fn-dialog__content
+      .fn-dialog__header
+      .fn-dialog__body+(--no-vertical-padding)
+      .fn-dialog__footer
+*/
+
+$block: #{$fn-namespace}-dialog;
+
+:root {
+  --fn-dialog-background: var(--fn-base-color-content);
+}
+
+.#{$block} {
+  @include fn-reset();
+
+  @extend %dialog;
+
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+
+  &__content {
+    @include fn-reset();
+
+    @extend %dialog-content;
+
+    background-color: var(--fn-dialog-background);
+    padding: 0;
+  }
+
+  &__body {
+    @include fn-reset();
+
+    @extend %dialog-body;
+  }
+
+  &__footer {
+    padding: 0 0.75rem 0.75rem 0.75rem;
+  }
+}
