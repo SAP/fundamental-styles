@@ -5,6 +5,9 @@ const wrappedStory = (storyName, storyFn, direction) => `
 <div dir="${direction}">
     ${storyFn()}
 </div>
+<br />
+<hr />
+<br />
 <br />`;
 
 const ignoredStoryNames = new Set(['default', 'dev', '__namedExportsOrder']);
