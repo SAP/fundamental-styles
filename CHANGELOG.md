@@ -1,3 +1,12 @@
+# [0.25.0-rc.48](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.47...v0.25.0-rc.48) (2022-10-26)
+
+
+### Features
+
+* **common-css:** add focus to common css ([#3925](https://github.com/SAP/fundamental-styles/issues/3925)) ([365c981](https://github.com/SAP/fundamental-styles/commit/365c9811866bbb6699a1e6e61e6fec0293792fb8))
+
+
+
 # [0.25.0-rc.47](https://github.com/SAP/fundamental-styles/compare/v0.25.0-rc.46...v0.25.0-rc.47) (2022-10-25)
 
 
