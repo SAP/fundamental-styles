@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -601,17 +601,17 @@
   margin-right: var(--fdList_Button_Spacing);
   margin-left: 0;
 }
-.fd-list--compact .fd-list__item {
+.fd-list--compact:not(.fd-object-list) .fd-list__item {
   height: 2rem;
 }
-.fd-list--compact .fd-list__item.fd-list__item--action .fd-list__title {
+.fd-list--compact:not(.fd-object-list) .fd-list__item.fd-list__item--action .fd-list__title {
   height: var(--fdList_Item_Action_Button_Size_Compact);
 }
-.fd-list--compact .fd-list__title {
+.fd-list--compact:not(.fd-object-list) .fd-list__title {
   font-size: var(--sapFontSize);
   min-height: var(--sapFontSize);
 }
-.fd-list--compact .fd-list__icon [class*=sap-icon], .fd-list--compact .fd-list__icon[class*=sap-icon] {
+.fd-list--compact:not(.fd-object-list) .fd-list__icon [class*=sap-icon], .fd-list--compact:not(.fd-object-list) .fd-list__icon[class*=sap-icon] {
   font-size: var(--sapFontLargeSize);
 }
 .fd-list--no-border .fd-list__item,
@@ -642,79 +642,87 @@
   z-index: 5;
   outline: none;
 }
-.fd-list--dropdown .fd-list__item {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
-  padding: 0.75rem 1rem;
+  min-height: 2.5rem;
+  padding: 0 1rem;
 }
-.fd-list--dropdown .fd-list__item:hover, .fd-list--dropdown .fd-list__item.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-hover {
   background: var(--sapList_Hover_Background);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true], .fd-list--dropdown .fd-list__item.is-selected {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected {
   background: var(--sapList_SelectionBackgroundColor);
   border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link {
   background: inherit;
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link:active, .fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link.is-active, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link:active, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link:active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link.is-active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link:active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link.is-active {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item.is-selected:hover, .fd-list--dropdown .fd-list__item.is-selected.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected.is-hover {
   background: var(--sapList_Hover_SelectionBackground);
 }
-.fd-list--dropdown .fd-list__item:active, .fd-list--dropdown .fd-list__item.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active:hover, .fd-list--dropdown .fd-list__item:active.is-hover, .fd-list--dropdown .fd-list__item.is-active:hover, .fd-list--dropdown .fd-list__item.is-active.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-hover {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active[aria-selected=true], .fd-list--dropdown .fd-list__item:active.is-selected, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true], .fd-list--dropdown .fd-list__item.is-active.is-selected {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:active.is-selected:hover, .fd-list--dropdown .fd-list__item:active.is-selected.is-hover, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item.is-active.is-selected:hover, .fd-list--dropdown .fd-list__item.is-active.is-selected.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected.is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected.is-hover {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__title,
-.fd-list--dropdown .fd-list__item:active .fd-list__secondary,
-.fd-list--dropdown .fd-list__item:active .fd-list__icon,
-.fd-list--dropdown .fd-list__item:active .fd-list__content,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-left,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right,
-.fd-list--dropdown .fd-list__item:active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:active, .fd-list--dropdown .fd-list__item.is-active .fd-list__title,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__secondary,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__icon,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__content,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline-left,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item.is-active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__title,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__secondary,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__icon,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__content,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-left,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__title,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__secondary,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__icon,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__content,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-left,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--neutral, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--neutral {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--neutral, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--neutral {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--positive, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--positive {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--positive, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--positive {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--critical, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--critical {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--critical, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--critical {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--negative, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--negative {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--negative, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--negative {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--informative, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--informative {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--informative, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--informative {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown.fd-list--compact .fd-list__item {
+.fd-list--dropdown.fd-list--compact .fd-list__item:not(.fd-list__group-header) {
   height: auto;
-  padding: 0.5rem 1rem;
+  min-height: 2rem;
+  padding: 0 1rem;
 }
 .fd-list--multi-input .fd-list__item {
   padding: 0 1rem 0 0;
@@ -996,6 +1004,9 @@
   margin-right: 0;
   margin-left: 0.75rem;
 }
+.fd-list--byline .fd-list__thumbnail > svg {
+  height: 100%;
+}
 .fd-list--byline .fd-list__content {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
@@ -1169,6 +1180,82 @@
 }
 .fd-list--byline.fd-list--no-border .fd-list__item:last-child {
   padding-bottom: 1rem;
+}
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+.fd-list--message-view .fd-list__item {
+  height: calc(2.75rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view .fd-list__item--byline {
+  height: calc(3.325rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view .fd-list__content {
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.fd-list--message-view .fd-list__content::before, .fd-list--message-view .fd-list__content::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-size: inherit;
+}
+.fd-list--message-view .fd-list__title {
+  font-family: var(--sapFontHeaderFamily);
+  font-size: var(--sapFontHeader5Size);
+  font-weight: normal;
+  color: var(--sapGroup_TitleTextColor);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fd-list--message-view .fd-list__subtitle {
+  padding-top: 0.25rem;
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fd-list--message-view .fd-list__link:active .fd-list__title, .fd-list--message-view .fd-list__link:active .fd-list__subtitle, .fd-list--message-view .fd-list__link:active .fd-object-status .fd-object-status__icon, .fd-list--message-view .fd-list__link.is-active .fd-list__title, .fd-list--message-view .fd-list__link.is-active .fd-list__subtitle, .fd-list--message-view .fd-list__link.is-active .fd-object-status .fd-object-status__icon {
+  color: var(--sapList_Active_TextColor);
+}
+.fd-list--message-view.fd-list--compact .fd-list__item {
+  height: calc(2rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view.fd-list--compact .fd-list__item--byline {
+  height: calc(3.25rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view.fd-list--compact .fd-list__item .fd-list__title {
+  font-size: var(--sapFontHeader6Size);
 }
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* stylelint-disable */

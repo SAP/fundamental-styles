@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -27,6 +27,10 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-scrollbar:focus, .fd-scrollbar.is-focus {
+  z-index: 5;
+  outline: none;
 }
 .fd-scrollbar::-webkit-scrollbar {
   width: var(--fdScrollbar_Dimension);

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -38,7 +38,6 @@
   max-width: 100%;
   font-size: var(--sapFontSmallSize);
   letter-spacing: 0.0125rem;
-  text-transform: uppercase;
   text-align: center;
   padding: 0 0.3125rem;
   border-width: 0.0625rem;

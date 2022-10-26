@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -13,7 +13,7 @@
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
-.fd-object-status+(--success | --warning | --error)
+.fd-object-status+(--success | --warning | --error | --informative | --neutral)
 */
 .fd-object-status {
   font-size: var(--sapFontSize);
@@ -104,27 +104,43 @@
 }
 .fd-object-status--positive {
   color: var(--sapPositiveTextColor);
+  color: var(--fdElementTextColor, var(--sapPositiveTextColor));
 }
 .fd-object-status--positive .fd-object-status__icon [class*=sap-icon], .fd-object-status--positive .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapPositiveElementColor);
+  color: var(--fdElementIconColor, var(--sapPositiveElementColor));
 }
 .fd-object-status--critical {
   color: var(--sapCriticalTextColor);
+  color: var(--fdElementTextColor, var(--sapCriticalTextColor));
 }
 .fd-object-status--critical .fd-object-status__icon [class*=sap-icon], .fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapCriticalElementColor);
+  color: var(--fdElementIconColor, var(--sapCriticalElementColor));
 }
 .fd-object-status--negative {
   color: var(--sapNegativeTextColor);
+  color: var(--fdElementTextColor, var(--sapNegativeTextColor));
 }
 .fd-object-status--negative .fd-object-status__icon [class*=sap-icon], .fd-object-status--negative .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapNegativeElementColor);
+  color: var(--fdElementIconColor, var(--sapNegativeElementColor));
 }
 .fd-object-status--informative {
   color: var(--sapInformativeTextColor);
+  color: var(--fdElementTextColor, var(--sapInformativeTextColor));
 }
 .fd-object-status--informative .fd-object-status__icon [class*=sap-icon], .fd-object-status--informative .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapInformativeElementColor);
+  color: var(--fdElementIconColor, var(--sapInformativeElementColor));
+}
+.fd-object-status--neutral {
+  color: var(--sapNeutralTextColor);
+  color: var(--fdElementTextColor, var(--sapNeutralTextColor));
+}
+.fd-object-status--neutral .fd-object-status__icon [class*=sap-icon], .fd-object-status--neutral .fd-object-status__icon[class*=sap-icon] {
+  color: var(--sapNeutralElementColor);
+  color: var(--fdElementIconColor, var(--sapNeutralElementColor));
 }
 .fd-object-status--indication-1 {
   color: var(--sapIndicationColor_1);
@@ -229,7 +245,7 @@
   width: auto;
   max-width: 100%;
   padding: 0.0625rem 0.25rem;
-  border-radius: var(--sapElement_BorderCornerRadius);
+  border-radius: 0.25rem;
   font-size: var(--sapFontSmallSize);
   font-weight: bold;
   border-width: var(--fdInverted_Object_Border_Width);
@@ -434,7 +450,7 @@
 .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon], .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon] {
   font-size: 1.25rem;
 }
-.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon]:empty, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon].is-empty, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon]:empty, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon].is-empty {
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon]:first-child:last-child, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon]:first-child:last-child {
   height: 1.5rem;
   min-width: 1.75rem;
   padding: 0 0.25rem;

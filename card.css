@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -296,7 +296,8 @@
   white-space: normal;
   text-overflow: ellipsis;
   font-family: var(--sapFontHeaderFamily);
-  font-size: var(--sapFontHeader5Size);
+  font-size: var(--fdCard_Title_Font_Size);
+  font-weight: var(--fdCard_Title_Font_Weight);
   color: var(--sapTile_TitleTextColor);
   word-wrap: break-word;
   max-height: 4.2rem;

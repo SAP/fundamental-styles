@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -106,6 +106,10 @@
 }
 .fd-quick-view .fd-form-item {
   padding-top: 0.75rem;
+}
+.fd-quick-view .fd-form-item .fd-link {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .fd-quick-view .fd-title .fd-link {
   white-space: nowrap;

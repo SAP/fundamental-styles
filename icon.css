@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -2213,6 +2213,60 @@
 }
 .sap-icon--icon-qr-code::before {
   content: "\e28f";
+}
+.sap-icon--space-navigation::before {
+  content: "\e290";
+}
+.sap-icon--in-progress::before {
+  content: "\e291";
+}
+.sap-icon--not-editable::before {
+  content: "\e292";
+}
+.sap-icon--heart::before {
+  content: "\e293";
+}
+.sap-icon--heart-2::before {
+  content: "\e294";
+}
+.sap-icon--tri-state::before {
+  content: "\e295";
+}
+.sap-icon--bookmark-2::before {
+  content: "\e296";
+}
+.sap-icon--detail-less::before {
+  content: "\e297";
+}
+.sap-icon--detail-more::before {
+  content: "\e298";
+}
+.sap-icon--flag-2::before {
+  content: "\e299";
+}
+.sap-icon--folder-2::before {
+  content: "\e29a";
+}
+.sap-icon--paint-bucket::before {
+  content: "\e29b";
+}
+.sap-icon--direction-arrows::before {
+  content: "\e29c";
+}
+.sap-icon--binary::before {
+  content: "\e29d";
+}
+.sap-icon--female::before {
+  content: "\e29e";
+}
+.sap-icon--male::before {
+  content: "\e29f";
+}
+.sap-icon--gender-male-and-female::before {
+  content: "\e300";
+}
+.sap-icon--rotate::before {
+  content: "\e301";
 }
 .sap-icon-businessSuiteInAppSymbols--heart::before {
   content: "\e000";

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -1184,638 +1184,660 @@
     margin-left: 100%;
   }
 }
-.fd-container.fd-form-layout-grid-container {
-  padding: 1rem;
+.fd-container.fd-form-layout-grid-container.fd-form-group,
+.fd-container.fd-form-layout-grid-container .fd-form-group {
+  padding: 1rem !important;
 }
-.fd-container.fd-form-layout-grid-container .fd-row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.625rem;
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-group,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-group {
+  padding: 0 !important;
 }
-.fd-container.fd-form-layout-grid-container .fd-row--top {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item--compact .fd-select__control,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item--compact .fd-select__control {
+  margin-bottom: 0.1875rem;
 }
-.fd-container.fd-form-layout-grid-container .fd-row:first-child {
-  margin-top: 0;
-}
-.fd-container.fd-form-layout-grid-container .fd-row:last-child {
-  margin-bottom: 0;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col {
-  padding-top: 0;
-  padding-bottom: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-select__control {
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-select__control,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-select__control {
   margin: 0.25rem 0;
 }
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col--compact .fd-select__control {
-  margin: 0.1875rem 0 0.25rem 0;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label {
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label {
   margin-right: 0;
   white-space: initial;
 }
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label[dir=rtl] {
+[dir=rtl] .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label, .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label[dir=rtl] {
   margin-right: 0;
   margin-left: 0;
 }
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label--required {
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label--required,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label--required {
   padding-right: 0.5rem;
 }
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label--required, .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label--required[dir=rtl] {
+[dir=rtl] .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label--required, .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label--required[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label--required,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label--required[dir=rtl] {
   padding-right: 0;
   padding-left: 0.5rem;
 }
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col__form-group {
-  padding: 1rem;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-row__form-item {
+.fd-container.fd-form-layout-grid-container .fd-row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col:not(.fd-form-group) {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
 @media (min-width: 0) {
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical.fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical .fd-form-group .fd-form-item {
+    margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical.fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical .fd-form-group .fd-form-item:first-of-type {
+    margin-top: 0;
+  }
+
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
   }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col--12 .fd-form-label {
+}
+@media (min-width: 0) and (max-width: 599px) {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container.fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container .fd-form-group .fd-form-item {
     margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container.fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container .fd-form-group .fd-form-item:first-of-type {
+    margin-top: 0;
   }
 }
 @media (min-width: 600px) {
   .fd-container.fd-form-layout-grid-container {
-    padding: 1rem;
+    padding: 0 0.25rem;
   }
   .fd-container.fd-form-layout-grid-container .fd-row {
-    margin: 0 -0.25rem 0.625rem;
+    margin: 0 -0.25rem;
     min-width: calc(100% + 0.25rem * 2);
   }
   .fd-container.fd-form-layout-grid-container .fd-row .fd-col {
     padding: 0 0.25rem;
   }
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col__form-group {
-    padding: 1rem;
-  }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
   }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-md .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-md--12 .fd-form-label {
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical.fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical .fd-form-group .fd-form-item {
     margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical.fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical .fd-form-group .fd-form-item:first-of-type {
+    margin-top: 0;
   }
 }
 @media (min-width: 1024px) {
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
   }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-lg .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-lg--12 .fd-form-label {
+}
+@media (min-width: 1024px) and (max-width: 1443px) {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical.fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical .fd-form-group .fd-form-item {
     margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical.fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical .fd-form-group .fd-form-item:first-of-type {
+    margin-top: 0;
   }
 }
 @media (min-width: 1440px) {
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical.fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical .fd-form-group .fd-form-item {
+    margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical.fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical .fd-form-group .fd-form-item:first-of-type {
+    margin-top: 0;
+  }
+
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
-  }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-xl .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-xl--12 .fd-form-label {
-    margin-top: 0.625rem;
   }
 }

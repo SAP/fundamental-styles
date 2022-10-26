@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -231,6 +231,15 @@
 .fd-bar--cozy.fd-bar--subheader {
   height: 3rem;
   padding-bottom: 0.25rem;
+}
+.fd-bar--growing {
+  height: auto;
+  min-height: 2.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.fd-bar--growing.fd-bar--header {
+  padding-bottom: 0.375rem;
 }
 .fd-bar--page, .fd-bar--home-page {
   padding: 0 1rem;

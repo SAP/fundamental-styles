@@ -1,0 +1,26 @@
+/*!
+ * Fundamental Library Styles v0.25.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.sap-border-radius-element {
+  border-radius: var(--sapElement_BorderCornerRadius);
+}
+.sap-border-radius-button {
+  border-radius: var(--sapButton_BorderCornerRadius);
+}
+.sap-border-radius-field {
+  border-radius: var(--sapField_BorderCornerRadius);
+}
+.sap-border-radius-group {
+  border-radius: var(--sapGroup_BorderCornerRadius);
+}
+.sap-border-radius-popover {
+  border-radius: var(--sapPopover_BorderCornerRadius);
+}
+.sap-border-radius-tile {
+  border-radius: var(--sapTile_BorderCornerRadius);
+}
+.sap-border-radius-none {
+  border-radius: 0 !important;
+}

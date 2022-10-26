@@ -1,0 +1,95 @@
+/*!
+ * Fundamental Library Styles v0.25.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.sap-font-family-regular {
+  font-family: var(--sapFontFamily);
+}
+.sap-font-family-light {
+  font-family: var(--sapFontLightFamily);
+}
+.sap-font-family-bold {
+  font-family: var(--sapFontBoldFamily);
+}
+.sap-font-family-semibold {
+  font-family: var(--sapFontSemiboldFamily);
+}
+.sap-font-family-semibold-duplex {
+  font-family: var(--sapFontSemiboldDuplexFamily);
+}
+.sap-font-family-monospaced-regular {
+  font-family: var(--sapContent_MonospaceFontFamily);
+}
+.sap-font-family-monospaced-bold {
+  font-family: var(--sapContent_MonospaceBoldFontFamily);
+}
+.sap-font-family-black {
+  font-family: var(--sapFontBlackFamily);
+}
+.sap-font-family-header {
+  font-family: var(--sapFontHeaderFamily);
+}
+.sap-font-size-header-6 {
+  font-size: var(--sapFontHeader6Size);
+}
+.sap-font-size-header-5 {
+  font-size: var(--sapFontHeader5Size);
+}
+.sap-font-size-header-4 {
+  font-size: var(--sapFontHeader4Size);
+}
+.sap-font-size-header-3 {
+  font-size: var(--sapFontHeader3Size);
+}
+.sap-font-size-header-2 {
+  font-size: var(--sapFontHeader2Size);
+}
+.sap-font-size-header-1 {
+  font-size: var(--sapFontHeader1Size);
+}
+.sap-font-size-small {
+  font-size: var(--sapFontSmallSize);
+}
+.sap-font-size-medium {
+  font-size: var(--sapFontSize);
+}
+.sap-font-size-large {
+  font-size: var(--sapFontLargeSize);
+}
+.sap-font-line-height {
+  line-height: normal;
+}
+.sap-font-line-height-long {
+  line-height: 1.4;
+}
+.sap-font-header-3 {
+  font-family: var(--sapFontHeaderFamily);
+  font-size: var(--sapFontHeader3Size);
+  color: var(--sapGroup_TitleTextColor);
+}
+.sap-font-standard-text {
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapTextColor);
+}
+.sap-font-small-detail-text {
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_LabelColor);
+}
+.sap-font-standard-field-text {
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapField_TextColor);
+}
+.sap-font-label {
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+}
+.sap-font-description {
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+}

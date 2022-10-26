@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -96,6 +96,9 @@
 [dir=rtl] .fd-list--byline .fd-list__thumbnail, .fd-list--byline .fd-list__thumbnail[dir=rtl] {
   margin-right: 0;
   margin-left: 0.75rem;
+}
+.fd-list--byline .fd-list__thumbnail > svg {
+  height: 100%;
 }
 .fd-list--byline .fd-list__content {
   font-size: var(--sapFontSize);

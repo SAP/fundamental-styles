@@ -93,6 +93,7 @@
   --fdButton_Ghost_Background: var(--sapButton_Background);
   --fdButton_Outline_Contrast: var(--sapContent_FocusColor);
   --fdButton_Outline_Offset: calc(-0.1875rem - var(--sapButton_BorderWidth));
+  --fdButton_Font_Family: var(--sapFontSemiboldDuplexFamily);
   /** Shadows */
   --fdButton_Text_Shadow: none;
   --fdButton_Hover_Shadow: var(--sapContent_Interaction_Shadow);
@@ -208,6 +209,8 @@
   --fdCard_Bottom_Positioned_Header_Padding: 0.75rem 1rem 1rem;
   --fdCard_Footer_Padding: 0.75rem 1rem 1rem;
   --fdCard_Footer_Actions_Item_Spacing: 0.5rem;
+  --fdCard_Title_Font_Size: var(--sapFontHeader6Size);
+  --fdCard_Title_Font_Weight: bold;
 }
 
 :root {
@@ -347,11 +350,6 @@
 :root {
   --fdFeed_List_Item_Background: var(--sapList_Background);
   --fdFeed_List_Item_Padding: 1rem 1rem 0.5rem;
-  --fdFeed_List_Item_Byline_Text_Color: var(--sapContent_LabelColor);
-  --fdFeed_List_Item_More_Transform: capitalize;
-  --fdFeed_List_Mobile_Actions_Button_Padding_X: calc(0.5rem - var(--sapButton_BorderWidth));
-  --fdFeed_List_Mobile_Actions_Button_Padding_Height: 1.625rem;
-  --fdFeed_List_Mobile_Actions_Button_Padding_Width: 2rem;
   --fdFeed_List_Item_Border_Top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   --fdFeed_List_Item_Border_Bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 }
@@ -575,6 +573,13 @@
 }
 
 :root {
+  --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
+  --fdMessage_Border: none;
+  --fdMessage_Border_Radius: var(--sapPopover_BorderCornerRadius);
+  --fdMessage_Icon_Display: block;
+}
+
+:root {
   /* Switch */
   --fdSwitch_Semantic_Error_Handle_Border_Color: var(--sapButton_Track_Negative_Background);
   --fdSwitch_Semantic_Success_Handle_Border_Color: var(--sapButton_Track_Positive_Background);
@@ -709,10 +714,6 @@
   --fdPlaceholder_Font_Style: italic;
   --fdInput_Outline_Offset: -0.125rem;
   --fdInput_Outline_Offset_States: -0.125rem;
-  /* Form Message */
-  --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
-  --fdMessage_Border: none;
-  --fdMessage_Border_Radius: var(--sapPopover_BorderCornerRadius);
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
   --fdCalendar_Active_Item_Border: 0.125rem solid var(--sapList_SelectionBorderColor);
@@ -886,6 +887,8 @@
   --fdObject_List_Number_Font_Size: 1.25rem;
   /** Nested List */
   --fdNested_List_Border_Corner_Radius: var(--sapPopover_BorderCornerRadius);
+  /** Title */
+  --fdTitle_Font_Family: var(--sapFontHeaderFamily);
   /** BTP Colors **/
   --btp-Blue1: #ebf8ff;
   --btp-Blue2: #d1efff;

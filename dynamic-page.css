@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -274,6 +274,9 @@
   max-width: 100%;
   vertical-align: bottom;
 }
+.fd-dynamic-page__title--wrap {
+  white-space: initial;
+}
 .fd-dynamic-page__subtitle {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
@@ -296,6 +299,9 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-dynamic-page__subtitle--wrap {
+  white-space: initial;
 }
 .fd-dynamic-page__title-content {
   font-size: var(--sapFontSize);

@@ -1,0 +1,45 @@
+/*!
+ * Fundamental Library Styles v0.25.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.sap-has-shadow-level-0 {
+  -webkit-box-shadow: var(--sapContent_Shadow0);
+          box-shadow: var(--sapContent_Shadow0);
+}
+.sap-has-shadow-level-1 {
+  -webkit-box-shadow: var(--sapContent_Shadow1);
+          box-shadow: var(--sapContent_Shadow1);
+}
+.sap-has-shadow-level-2 {
+  -webkit-box-shadow: var(--sapContent_Shadow2);
+          box-shadow: var(--sapContent_Shadow2);
+}
+.sap-has-shadow-level-3 {
+  -webkit-box-shadow: var(--sapContent_Shadow3);
+          box-shadow: var(--sapContent_Shadow3);
+}
+.sap-has-shadow-header {
+  -webkit-box-shadow: var(--sapContent_HeaderShadow);
+          box-shadow: var(--sapContent_HeaderShadow);
+}
+.sap-has-shadow-shell {
+  -webkit-box-shadow: var(--sapShell_Shadow);
+          box-shadow: var(--sapShell_Shadow);
+}
+.sap-has-shadow-none {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.sap-has-shadow-text {
+  text-shadow: var(--sapContent_TextShadow);
+}
+.sap-has-shadow-contrast-text {
+  text-shadow: var(--sapContent_ContrastTextShadow);
+}
+.sap-has-shadow-group-title-text {
+  text-shadow: var(--sapShell_GroupTitleTextShadow);
+}
+.sap-has-shadow-emphasized-text {
+  text-shadow: var(--sapButton_Emphasized_TextShadow);
+}

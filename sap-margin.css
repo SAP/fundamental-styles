@@ -1,0 +1,201 @@
+/*!
+ * Fundamental Library Styles v0.25.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.sap-margin-tiny {
+  margin: 0.5rem !important;
+}
+.sap-margin-top-tiny {
+  margin-top: 0.5rem !important;
+}
+.sap-margin-bottom-tiny {
+  margin-bottom: 0.5rem !important;
+}
+.sap-margin-begin-tiny {
+  margin-left: 0.5rem !important;
+}
+[dir=rtl] .sap-margin-begin-tiny, .sap-margin-begin-tiny[dir=rtl] {
+  margin-left: 0;
+  margin-right: 0.5rem !important;
+}
+.sap-margin-end-tiny {
+  margin-right: 0.5rem !important;
+}
+[dir=rtl] .sap-margin-end-tiny, .sap-margin-end-tiny[dir=rtl] {
+  margin-right: 0;
+  margin-left: 0.5rem !important;
+}
+.sap-margin-x-tiny {
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
+}
+.sap-margin-y-tiny {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.sap-margin-small {
+  margin: 1rem !important;
+}
+.sap-margin-top-small {
+  margin-top: 1rem !important;
+}
+.sap-margin-bottom-small {
+  margin-bottom: 1rem !important;
+}
+.sap-margin-begin-small {
+  margin-left: 1rem !important;
+}
+[dir=rtl] .sap-margin-begin-small, .sap-margin-begin-small[dir=rtl] {
+  margin-left: 0;
+  margin-right: 1rem !important;
+}
+.sap-margin-end-small {
+  margin-right: 1rem !important;
+}
+[dir=rtl] .sap-margin-end-small, .sap-margin-end-small[dir=rtl] {
+  margin-right: 0;
+  margin-left: 1rem !important;
+}
+.sap-margin-x-small {
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+}
+.sap-margin-y-small {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.sap-margin-medium {
+  margin: 2rem !important;
+}
+.sap-margin-top-medium {
+  margin-top: 2rem !important;
+}
+.sap-margin-bottom-medium {
+  margin-bottom: 2rem !important;
+}
+.sap-margin-begin-medium {
+  margin-left: 2rem !important;
+}
+[dir=rtl] .sap-margin-begin-medium, .sap-margin-begin-medium[dir=rtl] {
+  margin-left: 0;
+  margin-right: 2rem !important;
+}
+.sap-margin-end-medium {
+  margin-right: 2rem !important;
+}
+[dir=rtl] .sap-margin-end-medium, .sap-margin-end-medium[dir=rtl] {
+  margin-right: 0;
+  margin-left: 2rem !important;
+}
+.sap-margin-x-medium {
+  margin-right: 2rem !important;
+  margin-left: 2rem !important;
+}
+.sap-margin-y-medium {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.sap-margin-large {
+  margin: 3rem !important;
+}
+.sap-margin-top-large {
+  margin-top: 3rem !important;
+}
+.sap-margin-bottom-large {
+  margin-bottom: 3rem !important;
+}
+.sap-margin-begin-large {
+  margin-left: 3rem !important;
+}
+[dir=rtl] .sap-margin-begin-large, .sap-margin-begin-large[dir=rtl] {
+  margin-left: 0;
+  margin-right: 3rem !important;
+}
+.sap-margin-end-large {
+  margin-right: 3rem !important;
+}
+[dir=rtl] .sap-margin-end-large, .sap-margin-end-large[dir=rtl] {
+  margin-right: 0;
+  margin-left: 3rem !important;
+}
+.sap-margin-x-large {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
+}
+.sap-margin-y-large {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+@media (max-width: 599px) {
+  .sap-margin-responsive {
+    margin: 0 0 1rem 0 !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .sap-margin-responsive {
+    margin: 1rem !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .sap-margin-responsive {
+    margin: 1rem 2rem !important;
+  }
+}
+@media (min-width: 1440px) {
+  .sap-margin-responsive {
+    margin: 1rem 3rem !important;
+  }
+}
+.sap-margin-top-none {
+  margin-top: 0 !important !important;
+}
+.sap-margin-bottom-none {
+  margin-bottom: 0 !important !important;
+}
+.sap-margin-begin-none {
+  margin-left: 0 !important !important;
+}
+[dir=rtl] .sap-margin-begin-none, .sap-margin-begin-none[dir=rtl] {
+  margin-left: 0;
+  margin-right: 0 !important !important;
+}
+.sap-margin-end-none {
+  margin-right: 0 !important !important;
+}
+[dir=rtl] .sap-margin-end-none, .sap-margin-end-none[dir=rtl] {
+  margin-right: 0;
+  margin-left: 0 !important !important;
+}
+.sap-margin-x-none {
+  margin-right: 0 !important !important;
+  margin-left: 0 !important !important;
+}
+.sap-margin-y-none {
+  margin-top: 0 !important !important;
+  margin-bottom: 0 !important !important;
+}
+.sap-margin-tiny-negative {
+  margin-right: -0.5rem !important;
+  margin-left: -0.5rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.sap-margin-small-negative {
+  margin-right: -1rem !important;
+  margin-left: -1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.sap-margin-medium-negative {
+  margin-right: -2rem !important;
+  margin-left: -2rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.sap-margin-large-negative {
+  margin-right: -3rem !important;
+  margin-left: -3rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

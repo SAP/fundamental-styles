@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -13,7 +13,7 @@
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
-.fd-form-group
+  .fd-form-group(--inline)
 */
 .fd-form-group {
   font-size: var(--sapFontSize);
@@ -32,9 +32,6 @@
           box-sizing: inherit;
   font-size: inherit;
 }
-.fd-form-group:last-child {
-  margin-bottom: 0;
-}
 .fd-form-group--inline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,23 +45,6 @@
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.fd-form-group__item {
-  font-size: var(--sapFontSize);
-  line-height: var(--sapContent_LineHeight);
-  color: var(--sapTextColor);
-  font-family: var(--sapFontFamily);
-  font-weight: normal;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.fd-form-group__item::before, .fd-form-group__item::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  font-size: inherit;
 }
 .fd-form-group__header {
   font-size: var(--sapFontSize);

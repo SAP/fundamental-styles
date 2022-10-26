@@ -106,6 +106,7 @@
   --fdButton_Ghost_Background: var(--sapButton_Lite_Background);
   --fdButton_Outline_Contrast: var(--sapContent_ContrastFocusColor);
   --fdButton_Outline_Offset: -0.1875rem;
+  --fdButton_Font_Family: var(--sapFontFamily);
   /** Shadows */
   --fdButton_Text_Shadow: none;
   --fdButton_Hover_Shadow: none;
@@ -252,6 +253,8 @@
   --fdCard_Bottom_Positioned_Header_Padding: 1rem;
   --fdCard_Footer_Padding: 1rem;
   --fdCard_Footer_Actions_Item_Spacing: 0.5rem;
+  --fdCard_Title_Font_Size: var(--sapFontHeader5Size);
+  --fdCard_Title_Font_Weight: var(--sapFontHeaderWeight);
 }
 
 :root {
@@ -438,11 +441,6 @@
 :root {
   --fdFeed_List_Item_Background: var(--sapField_Background);
   --fdFeed_List_Item_Padding: 1rem;
-  --fdFeed_List_Item_Byline_Text_Color: var(--sapNeutralTextColor);
-  --fdFeed_List_Item_More_Transform: uppercase;
-  --fdFeed_List_Mobile_Actions_Button_Padding_X: calc(0.625rem - var(--sapButton_BorderWidth));
-  --fdFeed_List_Mobile_Actions_Button_Padding_Height: 2.25rem;
-  --fdFeed_List_Mobile_Actions_Button_Padding_Width: 2.25rem;
   --fdFeed_List_Item_Border_Top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
   --fdFeed_List_Item_Border_Bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 }
@@ -682,6 +680,18 @@
 }
 
 :root {
+  --fdMessage_Box_Shadow: var(--sapContent_Shadow1);
+  --fdMessage_Border: none;
+  --fdMessage_Border_Radius: 0;
+  --fdMessage_Icon_Display: none;
+}
+
+:root {
+  --fdMessage_Box_Shadow: none;
+  --fdMessage_Border: calc(2 * var(--sapField_BorderWidth)) solid var(--sapField_BorderColor);
+}
+
+:root {
   --fdInverted_Object_Border_Width: 0.0625rem;
   --fdOverlay_Background_Opacity: 0.8;
   /* Rating Indicator */
@@ -816,10 +826,6 @@
   --fdInput_State_Border_Type: dashed;
   --fdPlaceholder_Font_Style: normal;
   --fdInput_Outline_Offset: -0.3125rem;
-  /* Form Message */
-  --fdMessage_Box_Shadow: none;
-  --fdMessage_Border: calc(2 * var(--sapField_BorderWidth)) solid var(--sapField_BorderColor);
-  --fdMessage_Border_Radius: 0;
   /* Calendar */
   --fdCalendar_Text_Shadow: none;
   --fdCalendar_Active_Item_Border: solid 0.0625rem var(--sapList_SelectionBorderColor, #000);

@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -417,6 +417,8 @@
 .fd-input-group .fd-input-group__input:hover, .fd-input-group .fd-input-group__input.is-hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+  background: none;
+  background-color: transparent;
 }
 .fd-input-group .fd-input-group__input:focus, .fd-input-group .fd-input-group__input.is-focus {
   z-index: 5;

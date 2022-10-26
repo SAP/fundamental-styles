@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -13,7 +13,7 @@
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
-.fd-form-item+(--inline)
+  .fd-form-item(--horizontal)
 */
 .fd-form-item {
   font-size: var(--sapFontSize);

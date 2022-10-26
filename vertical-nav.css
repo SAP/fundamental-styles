@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -301,7 +301,7 @@
 }
 .fd-vertical-nav .fd-list__navigation-item--condensed.is-expanded .fd-list__navigation-item-popover--first-level .fd-list, .fd-vertical-nav .fd-list__navigation-item--condensed.is-expanded .fd-list__navigation-item-popover--second-level .fd-list {
   width: 100%;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -482,6 +482,9 @@
 }
 .fd-vertical-nav .fd-list__navigation-item:hover, .fd-vertical-nav .fd-list__navigation-item.is-hover, .fd-vertical-nav .fd-list__navigation-item--condensed:hover, .fd-vertical-nav .fd-list__navigation-item--condensed.is-hover {
   background: var(--sapList_Hover_Background);
+}
+.fd-vertical-nav .fd-list__navigation-item:hover .fd-list__navigation-item-icon, .fd-vertical-nav .fd-list__navigation-item.is-hover .fd-list__navigation-item-icon, .fd-vertical-nav .fd-list__navigation-item--condensed:hover .fd-list__navigation-item-icon, .fd-vertical-nav .fd-list__navigation-item--condensed.is-hover .fd-list__navigation-item-icon {
+  color: var(--sapList_TextColor);
 }
 .fd-vertical-nav .fd-list__navigation-item[aria-pressed=true], .fd-vertical-nav .fd-list__navigation-item.is-pressed, .fd-vertical-nav .fd-list__navigation-item--condensed[aria-pressed=true], .fd-vertical-nav .fd-list__navigation-item--condensed.is-pressed {
   background: var(--sapList_Active_Background);

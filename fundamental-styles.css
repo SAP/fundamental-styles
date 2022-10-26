@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -2215,6 +2215,60 @@
 }
 .sap-icon--icon-qr-code::before {
   content: "\e28f";
+}
+.sap-icon--space-navigation::before {
+  content: "\e290";
+}
+.sap-icon--in-progress::before {
+  content: "\e291";
+}
+.sap-icon--not-editable::before {
+  content: "\e292";
+}
+.sap-icon--heart::before {
+  content: "\e293";
+}
+.sap-icon--heart-2::before {
+  content: "\e294";
+}
+.sap-icon--tri-state::before {
+  content: "\e295";
+}
+.sap-icon--bookmark-2::before {
+  content: "\e296";
+}
+.sap-icon--detail-less::before {
+  content: "\e297";
+}
+.sap-icon--detail-more::before {
+  content: "\e298";
+}
+.sap-icon--flag-2::before {
+  content: "\e299";
+}
+.sap-icon--folder-2::before {
+  content: "\e29a";
+}
+.sap-icon--paint-bucket::before {
+  content: "\e29b";
+}
+.sap-icon--direction-arrows::before {
+  content: "\e29c";
+}
+.sap-icon--binary::before {
+  content: "\e29d";
+}
+.sap-icon--female::before {
+  content: "\e29e";
+}
+.sap-icon--male::before {
+  content: "\e29f";
+}
+.sap-icon--gender-male-and-female::before {
+  content: "\e300";
+}
+.sap-icon--rotate::before {
+  content: "\e301";
 }
 .sap-icon-businessSuiteInAppSymbols--heart::before {
   content: "\e000";
@@ -5499,6 +5553,15 @@
   height: 3rem;
   padding-bottom: 0.25rem;
 }
+.fd-bar--growing {
+  height: auto;
+  min-height: 2.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.fd-bar--growing.fd-bar--header {
+  padding-bottom: 0.375rem;
+}
 .fd-bar--page, .fd-bar--home-page {
   padding: 0 1rem;
 }
@@ -5821,9 +5884,12 @@
   border-style: solid;
   border-width: var(--sapButton_BorderWidth);
   /* Default type */
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--sapButton_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button::before, .fd-button::after {
   -webkit-box-sizing: inherit;
@@ -5865,6 +5931,9 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-button, .fd-button__text {
+  font-family: var(--fdButton_Font_Family);
 }
 .fd-button *:not(:first-child) {
   margin-left: 0.375rem !important;
@@ -6033,95 +6102,126 @@
   opacity: var(--sapContent_DisabledOpacity);
 }
 .fd-button:hover, .fd-button.is-hover {
-  color: var(--sapButton_Hover_TextColor);
-  border-color: var(--sapButton_Hover_BorderColor);
-  background-color: var(--sapButton_Hover_Background);
+  --fdButtonColor: var(--sapButton_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button:active, .fd-button.is-active, .fd-button[aria-selected=true], .fd-button.is-selected, .fd-button[aria-pressed=true], .fd-button.is-pressed {
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
+}
+.fd-button:active .fd-button__icon, .fd-button.is-active .fd-button__icon, .fd-button[aria-selected=true] .fd-button__icon, .fd-button.is-selected .fd-button__icon, .fd-button[aria-pressed=true] .fd-button__icon, .fd-button.is-pressed .fd-button__icon {
   color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  text-shadow: none;
 }
 .fd-button[aria-disabled=true], .fd-button.is-disabled, .fd-button:disabled {
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--sapButton_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Background);
 }
 .fd-button[aria-disabled=true][aria-selected=true], .fd-button[aria-disabled=true].is-selected, .fd-button.is-disabled[aria-selected=true], .fd-button.is-disabled.is-selected, .fd-button:disabled[aria-selected=true], .fd-button:disabled.is-selected {
-  color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
 }
 .fd-button.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button.fd-button--toggled:hover, .fd-button.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button.fd-button--toggled:active, .fd-button.fd-button--toggled.is-active, .fd-button.fd-button--toggled[aria-selected=true], .fd-button.fd-button--toggled.is-selected, .fd-button.fd-button--toggled[aria-pressed=true], .fd-button.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button.fd-button--toggled:active .fd-button__icon, .fd-button.fd-button--toggled.is-active .fd-button__icon, .fd-button.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button.fd-button--toggled.is-selected .fd-button__icon, .fd-button.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button.fd-button--toggled[aria-disabled=true], .fd-button.fd-button--toggled.is-disabled, .fd-button.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--attention {
-  color: var(--sapButton_Attention_TextColor);
-  border-color: var(--sapButton_Attention_BorderColor);
-  background-color: var(--sapButton_Attention_Background);
+  --fdButtonColor: var(--sapButton_Attention_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--attention:hover, .fd-button--attention.is-hover {
-  color: var(--sapButton_Attention_Hover_TextColor);
-  border-color: var(--sapButton_Attention_Hover_BorderColor);
-  background-color: var(--sapButton_Attention_Hover_Background);
+  --fdButtonColor: var(--sapButton_Attention_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Attention_Hover_Shadow);
           box-shadow: var(--fdButton_Attention_Hover_Shadow);
 }
 .fd-button--attention:active, .fd-button--attention.is-active, .fd-button--attention[aria-selected=true], .fd-button--attention.is-selected, .fd-button--attention[aria-pressed=true], .fd-button--attention.is-pressed {
+  --fdButtonColor: var(--sapButton_Attention_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Active_Background);
+  --fdElementTextColor: var(--sapButton_Attention_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Attention_Active_TextColor);
+}
+.fd-button--attention:active .fd-button__icon, .fd-button--attention.is-active .fd-button__icon, .fd-button--attention[aria-selected=true] .fd-button__icon, .fd-button--attention.is-selected .fd-button__icon, .fd-button--attention[aria-pressed=true] .fd-button__icon, .fd-button--attention.is-pressed .fd-button__icon {
   color: var(--sapButton_Attention_Active_TextColor);
-  border-color: var(--sapButton_Attention_Active_BorderColor);
-  background-color: var(--sapButton_Attention_Active_Background);
+  text-shadow: none;
 }
 .fd-button--attention[aria-disabled=true], .fd-button--attention.is-disabled, .fd-button--attention:disabled {
-  color: var(--sapButton_Attention_TextColor);
-  border-color: var(--sapButton_Attention_BorderColor);
-  background-color: var(--sapButton_Attention_Background);
+  --fdButtonColor: var(--sapButton_Attention_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Background);
 }
 .fd-button--attention[aria-disabled=true][aria-selected=true], .fd-button--attention[aria-disabled=true].is-selected, .fd-button--attention.is-disabled[aria-selected=true], .fd-button--attention.is-disabled.is-selected, .fd-button--attention:disabled[aria-selected=true], .fd-button--attention:disabled.is-selected {
-  color: var(--sapButton_Attention_Active_TextColor);
-  border-color: var(--sapButton_Attention_Active_BorderColor);
-  background-color: var(--sapButton_Attention_Active_Background);
+  --fdButtonColor: var(--sapButton_Attention_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Active_Background);
+  --fdElementTextColor: var(--sapButton_Attention_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Attention_Active_TextColor);
 }
 .fd-button--attention.fd-button--toggled {
-  color: var(--sapButton_Attention_Selected_TextColor);
-  border-color: var(--sapButton_Attention_Selected_BorderColor);
-  background-color: var(--sapButton_Attention_Selected_Background);
+  --fdButtonColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Selected_Background);
 }
 .fd-button--attention.fd-button--toggled:hover, .fd-button--attention.fd-button--toggled.is-hover {
-  color: var(--sapButton_Attention_Selected_TextColor);
-  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Attention_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Attention_Hover_Shadow);
           box-shadow: var(--fdButton_Attention_Hover_Shadow);
 }
 .fd-button--attention.fd-button--toggled:active, .fd-button--attention.fd-button--toggled.is-active, .fd-button--attention.fd-button--toggled[aria-selected=true], .fd-button--attention.fd-button--toggled.is-selected, .fd-button--attention.fd-button--toggled[aria-pressed=true], .fd-button--attention.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Attention_Selected_TextColor);
-  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Attention_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Attention_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Attention_Hover_Shadow);
           box-shadow: var(--fdButton_Attention_Hover_Shadow);
+}
+.fd-button--attention.fd-button--toggled:active .fd-button__icon, .fd-button--attention.fd-button--toggled.is-active .fd-button__icon, .fd-button--attention.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--attention.fd-button--toggled.is-selected .fd-button__icon, .fd-button--attention.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--attention.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Attention_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--attention.fd-button--toggled[aria-disabled=true], .fd-button--attention.fd-button--toggled.is-disabled, .fd-button--attention.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
@@ -6130,50 +6230,67 @@
 .fd-button--emphasized {
   font-weight: var(--sapButton_Emphasized_FontWeight);
   border-width: var(--fdButton_Emphasized_Border_Width);
-  color: var(--sapButton_Emphasized_TextColor);
-  border-color: var(--sapButton_Emphasized_BorderColor);
-  background-color: var(--sapButton_Emphasized_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--emphasized:hover, .fd-button--emphasized.is-hover {
-  color: var(--sapButton_Emphasized_Hover_TextColor);
-  border-color: var(--sapButton_Emphasized_Hover_BorderColor);
-  background-color: var(--sapButton_Emphasized_Hover_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Hover_Background);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--emphasized:active, .fd-button--emphasized.is-active, .fd-button--emphasized[aria-selected=true], .fd-button--emphasized.is-selected, .fd-button--emphasized[aria-pressed=true], .fd-button--emphasized.is-pressed {
+  --fdButtonColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Active_Background);
+  --fdElementTextColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Emphasized_Active_TextColor);
+}
+.fd-button--emphasized:active .fd-button__icon, .fd-button--emphasized.is-active .fd-button__icon, .fd-button--emphasized[aria-selected=true] .fd-button__icon, .fd-button--emphasized.is-selected .fd-button__icon, .fd-button--emphasized[aria-pressed=true] .fd-button__icon, .fd-button--emphasized.is-pressed .fd-button__icon {
   color: var(--sapButton_Emphasized_Active_TextColor);
-  border-color: var(--sapButton_Emphasized_Active_BorderColor);
-  background-color: var(--sapButton_Emphasized_Active_Background);
+  text-shadow: none;
 }
 .fd-button--emphasized[aria-disabled=true], .fd-button--emphasized.is-disabled, .fd-button--emphasized:disabled {
-  color: var(--sapButton_Emphasized_TextColor);
-  border-color: var(--sapButton_Emphasized_BorderColor);
-  background-color: var(--sapButton_Emphasized_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Background);
 }
 .fd-button--emphasized[aria-disabled=true][aria-selected=true], .fd-button--emphasized[aria-disabled=true].is-selected, .fd-button--emphasized.is-disabled[aria-selected=true], .fd-button--emphasized.is-disabled.is-selected, .fd-button--emphasized:disabled[aria-selected=true], .fd-button--emphasized:disabled.is-selected {
-  color: var(--sapButton_Emphasized_Active_TextColor);
-  border-color: var(--sapButton_Emphasized_Active_BorderColor);
-  background-color: var(--sapButton_Emphasized_Active_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Active_Background);
+  --fdElementTextColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Emphasized_Active_TextColor);
 }
 .fd-button--emphasized.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button--emphasized.fd-button--toggled:hover, .fd-button--emphasized.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--emphasized.fd-button--toggled:active, .fd-button--emphasized.fd-button--toggled.is-active, .fd-button--emphasized.fd-button--toggled[aria-selected=true], .fd-button--emphasized.fd-button--toggled.is-selected, .fd-button--emphasized.fd-button--toggled[aria-pressed=true], .fd-button--emphasized.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button--emphasized.fd-button--toggled:active .fd-button__icon, .fd-button--emphasized.fd-button--toggled.is-active .fd-button__icon, .fd-button--emphasized.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--emphasized.fd-button--toggled.is-selected .fd-button__icon, .fd-button--emphasized.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--emphasized.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Emphasized_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--emphasized.fd-button--toggled[aria-disabled=true], .fd-button--emphasized.fd-button--toggled.is-disabled, .fd-button--emphasized.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
@@ -6194,200 +6311,268 @@
   outline: none;
 }
 .fd-button--ghost {
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--fdButton_Ghost_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--fdButton_Ghost_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--ghost:hover, .fd-button--ghost.is-hover {
-  color: var(--sapButton_Hover_TextColor);
-  border-color: var(--sapButton_Hover_BorderColor);
-  background-color: var(--sapButton_Hover_Background);
+  --fdButtonColor: var(--sapButton_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--ghost:active, .fd-button--ghost.is-active, .fd-button--ghost[aria-selected=true], .fd-button--ghost.is-selected, .fd-button--ghost[aria-pressed=true], .fd-button--ghost.is-pressed {
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
+}
+.fd-button--ghost:active .fd-button__icon, .fd-button--ghost.is-active .fd-button__icon, .fd-button--ghost[aria-selected=true] .fd-button__icon, .fd-button--ghost.is-selected .fd-button__icon, .fd-button--ghost[aria-pressed=true] .fd-button__icon, .fd-button--ghost.is-pressed .fd-button__icon {
   color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  text-shadow: none;
 }
 .fd-button--ghost[aria-disabled=true], .fd-button--ghost.is-disabled, .fd-button--ghost:disabled {
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--fdButton_Ghost_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--fdButton_Ghost_Background);
 }
 .fd-button--ghost[aria-disabled=true][aria-selected=true], .fd-button--ghost[aria-disabled=true].is-selected, .fd-button--ghost.is-disabled[aria-selected=true], .fd-button--ghost.is-disabled.is-selected, .fd-button--ghost:disabled[aria-selected=true], .fd-button--ghost:disabled.is-selected {
-  color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
 }
 .fd-button--ghost.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button--ghost.fd-button--toggled:hover, .fd-button--ghost.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--ghost.fd-button--toggled:active, .fd-button--ghost.fd-button--toggled.is-active, .fd-button--ghost.fd-button--toggled[aria-selected=true], .fd-button--ghost.fd-button--toggled.is-selected, .fd-button--ghost.fd-button--toggled[aria-pressed=true], .fd-button--ghost.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button--ghost.fd-button--toggled:active .fd-button__icon, .fd-button--ghost.fd-button--toggled.is-active .fd-button__icon, .fd-button--ghost.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--ghost.fd-button--toggled.is-selected .fd-button__icon, .fd-button--ghost.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--ghost.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--ghost.fd-button--toggled[aria-disabled=true], .fd-button--ghost.fd-button--toggled.is-disabled, .fd-button--ghost.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--negative {
-  color: var(--sapButton_Reject_TextColor);
-  border-color: var(--sapButton_Reject_BorderColor);
-  background-color: var(--sapButton_Reject_Background);
+  --fdButtonColor: var(--sapButton_Reject_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--negative:hover, .fd-button--negative.is-hover {
-  color: var(--sapButton_Reject_Hover_TextColor);
-  border-color: var(--sapButton_Reject_Hover_BorderColor);
-  background-color: var(--sapButton_Reject_Hover_Background);
+  --fdButtonColor: var(--sapButton_Reject_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Negative_Hover_Shadow);
           box-shadow: var(--fdButton_Negative_Hover_Shadow);
 }
 .fd-button--negative:active, .fd-button--negative.is-active, .fd-button--negative[aria-selected=true], .fd-button--negative.is-selected, .fd-button--negative[aria-pressed=true], .fd-button--negative.is-pressed {
+  --fdButtonColor: var(--sapButton_Reject_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Active_Background);
+  --fdElementTextColor: var(--sapButton_Reject_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Reject_Active_TextColor);
+}
+.fd-button--negative:active .fd-button__icon, .fd-button--negative.is-active .fd-button__icon, .fd-button--negative[aria-selected=true] .fd-button__icon, .fd-button--negative.is-selected .fd-button__icon, .fd-button--negative[aria-pressed=true] .fd-button__icon, .fd-button--negative.is-pressed .fd-button__icon {
   color: var(--sapButton_Reject_Active_TextColor);
-  border-color: var(--sapButton_Reject_Active_BorderColor);
-  background-color: var(--sapButton_Reject_Active_Background);
+  text-shadow: none;
 }
 .fd-button--negative[aria-disabled=true], .fd-button--negative.is-disabled, .fd-button--negative:disabled {
-  color: var(--sapButton_Reject_TextColor);
-  border-color: var(--sapButton_Reject_BorderColor);
-  background-color: var(--sapButton_Reject_Background);
+  --fdButtonColor: var(--sapButton_Reject_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Background);
 }
 .fd-button--negative[aria-disabled=true][aria-selected=true], .fd-button--negative[aria-disabled=true].is-selected, .fd-button--negative.is-disabled[aria-selected=true], .fd-button--negative.is-disabled.is-selected, .fd-button--negative:disabled[aria-selected=true], .fd-button--negative:disabled.is-selected {
-  color: var(--sapButton_Reject_Active_TextColor);
-  border-color: var(--sapButton_Reject_Active_BorderColor);
-  background-color: var(--sapButton_Reject_Active_Background);
+  --fdButtonColor: var(--sapButton_Reject_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Active_Background);
+  --fdElementTextColor: var(--sapButton_Reject_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Reject_Active_TextColor);
 }
 .fd-button--negative.fd-button--toggled {
-  color: var(--sapButton_Reject_Selected_TextColor);
-  border-color: var(--sapButton_Reject_Selected_BorderColor);
-  background-color: var(--sapButton_Reject_Selected_Background);
+  --fdButtonColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Selected_Background);
 }
 .fd-button--negative.fd-button--toggled:hover, .fd-button--negative.fd-button--toggled.is-hover {
-  color: var(--sapButton_Reject_Selected_TextColor);
-  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Reject_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Negative_Hover_Shadow);
           box-shadow: var(--fdButton_Negative_Hover_Shadow);
 }
 .fd-button--negative.fd-button--toggled:active, .fd-button--negative.fd-button--toggled.is-active, .fd-button--negative.fd-button--toggled[aria-selected=true], .fd-button--negative.fd-button--toggled.is-selected, .fd-button--negative.fd-button--toggled[aria-pressed=true], .fd-button--negative.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Reject_Selected_TextColor);
-  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Reject_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Reject_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Negative_Hover_Shadow);
           box-shadow: var(--fdButton_Negative_Hover_Shadow);
+}
+.fd-button--negative.fd-button--toggled:active .fd-button__icon, .fd-button--negative.fd-button--toggled.is-active .fd-button__icon, .fd-button--negative.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--negative.fd-button--toggled.is-selected .fd-button__icon, .fd-button--negative.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--negative.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Reject_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--negative.fd-button--toggled[aria-disabled=true], .fd-button--negative.fd-button--toggled.is-disabled, .fd-button--negative.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--positive {
-  color: var(--sapButton_Accept_TextColor);
-  border-color: var(--sapButton_Accept_BorderColor);
-  background-color: var(--sapButton_Accept_Background);
+  --fdButtonColor: var(--sapButton_Accept_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--positive:hover, .fd-button--positive.is-hover {
-  color: var(--sapButton_Accept_Hover_TextColor);
-  border-color: var(--sapButton_Accept_Hover_BorderColor);
-  background-color: var(--sapButton_Accept_Hover_Background);
+  --fdButtonColor: var(--sapButton_Accept_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Positive_Hover_Shadow);
           box-shadow: var(--fdButton_Positive_Hover_Shadow);
 }
 .fd-button--positive:active, .fd-button--positive.is-active, .fd-button--positive[aria-selected=true], .fd-button--positive.is-selected, .fd-button--positive[aria-pressed=true], .fd-button--positive.is-pressed {
+  --fdButtonColor: var(--sapButton_Accept_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Active_Background);
+  --fdElementTextColor: var(--sapButton_Accept_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Accept_Active_TextColor);
+}
+.fd-button--positive:active .fd-button__icon, .fd-button--positive.is-active .fd-button__icon, .fd-button--positive[aria-selected=true] .fd-button__icon, .fd-button--positive.is-selected .fd-button__icon, .fd-button--positive[aria-pressed=true] .fd-button__icon, .fd-button--positive.is-pressed .fd-button__icon {
   color: var(--sapButton_Accept_Active_TextColor);
-  border-color: var(--sapButton_Accept_Active_BorderColor);
-  background-color: var(--sapButton_Accept_Active_Background);
+  text-shadow: none;
 }
 .fd-button--positive[aria-disabled=true], .fd-button--positive.is-disabled, .fd-button--positive:disabled {
-  color: var(--sapButton_Accept_TextColor);
-  border-color: var(--sapButton_Accept_BorderColor);
-  background-color: var(--sapButton_Accept_Background);
+  --fdButtonColor: var(--sapButton_Accept_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Background);
 }
 .fd-button--positive[aria-disabled=true][aria-selected=true], .fd-button--positive[aria-disabled=true].is-selected, .fd-button--positive.is-disabled[aria-selected=true], .fd-button--positive.is-disabled.is-selected, .fd-button--positive:disabled[aria-selected=true], .fd-button--positive:disabled.is-selected {
-  color: var(--sapButton_Accept_Active_TextColor);
-  border-color: var(--sapButton_Accept_Active_BorderColor);
-  background-color: var(--sapButton_Accept_Active_Background);
+  --fdButtonColor: var(--sapButton_Accept_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Active_Background);
+  --fdElementTextColor: var(--sapButton_Accept_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Accept_Active_TextColor);
 }
 .fd-button--positive.fd-button--toggled {
-  color: var(--sapButton_Accept_Selected_TextColor);
-  border-color: var(--sapButton_Accept_Selected_BorderColor);
-  background-color: var(--sapButton_Accept_Selected_Background);
+  --fdButtonColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Selected_Background);
 }
 .fd-button--positive.fd-button--toggled:hover, .fd-button--positive.fd-button--toggled.is-hover {
-  color: var(--sapButton_Accept_Selected_TextColor);
-  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Accept_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Positive_Hover_Shadow);
           box-shadow: var(--fdButton_Positive_Hover_Shadow);
 }
 .fd-button--positive.fd-button--toggled:active, .fd-button--positive.fd-button--toggled.is-active, .fd-button--positive.fd-button--toggled[aria-selected=true], .fd-button--positive.fd-button--toggled.is-selected, .fd-button--positive.fd-button--toggled[aria-pressed=true], .fd-button--positive.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Accept_Selected_TextColor);
-  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Accept_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Accept_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Positive_Hover_Shadow);
           box-shadow: var(--fdButton_Positive_Hover_Shadow);
+}
+.fd-button--positive.fd-button--toggled:active .fd-button__icon, .fd-button--positive.fd-button--toggled.is-active .fd-button__icon, .fd-button--positive.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--positive.fd-button--toggled.is-selected .fd-button__icon, .fd-button--positive.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--positive.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Accept_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--positive.fd-button--toggled[aria-disabled=true], .fd-button--positive.fd-button--toggled.is-disabled, .fd-button--positive.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--transparent {
-  color: var(--sapButton_Lite_TextColor);
-  border-color: var(--sapButton_Lite_BorderColor);
-  background-color: var(--sapButton_Lite_Background);
+  --fdButtonColor: var(--sapButton_Lite_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--transparent:hover, .fd-button--transparent.is-hover {
-  color: var(--sapButton_Lite_Hover_TextColor);
-  border-color: var(--sapButton_Lite_Hover_BorderColor);
-  background-color: var(--sapButton_Lite_Hover_Background);
+  --fdButtonColor: var(--sapButton_Lite_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--transparent:active, .fd-button--transparent.is-active, .fd-button--transparent[aria-selected=true], .fd-button--transparent.is-selected, .fd-button--transparent[aria-pressed=true], .fd-button--transparent.is-pressed {
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
+}
+.fd-button--transparent:active .fd-button__icon, .fd-button--transparent.is-active .fd-button__icon, .fd-button--transparent[aria-selected=true] .fd-button__icon, .fd-button--transparent.is-selected .fd-button__icon, .fd-button--transparent[aria-pressed=true] .fd-button__icon, .fd-button--transparent.is-pressed .fd-button__icon {
   color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Lite_Active_BorderColor);
-  background-color: var(--sapButton_Lite_Active_Background);
+  text-shadow: none;
 }
 .fd-button--transparent[aria-disabled=true], .fd-button--transparent.is-disabled, .fd-button--transparent:disabled {
-  color: var(--sapButton_Lite_TextColor);
-  border-color: var(--sapButton_Lite_BorderColor);
-  background-color: var(--sapButton_Lite_Background);
+  --fdButtonColor: var(--sapButton_Lite_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Background);
 }
 .fd-button--transparent[aria-disabled=true][aria-selected=true], .fd-button--transparent[aria-disabled=true].is-selected, .fd-button--transparent.is-disabled[aria-selected=true], .fd-button--transparent.is-disabled.is-selected, .fd-button--transparent:disabled[aria-selected=true], .fd-button--transparent:disabled.is-selected {
-  color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Lite_Active_BorderColor);
-  background-color: var(--sapButton_Lite_Active_Background);
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
 }
 .fd-button--transparent.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button--transparent.fd-button--toggled:hover, .fd-button--transparent.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--transparent.fd-button--toggled:active, .fd-button--transparent.fd-button--toggled.is-active, .fd-button--transparent.fd-button--toggled[aria-selected=true], .fd-button--transparent.fd-button--toggled.is-selected, .fd-button--transparent.fd-button--toggled[aria-pressed=true], .fd-button--transparent.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button--transparent.fd-button--toggled:active .fd-button__icon, .fd-button--transparent.fd-button--toggled.is-active .fd-button__icon, .fd-button--transparent.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--transparent.fd-button--toggled.is-selected .fd-button__icon, .fd-button--transparent.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--transparent.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--transparent.fd-button--toggled[aria-disabled=true], .fd-button--transparent.fd-button--toggled.is-disabled, .fd-button--transparent.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
@@ -7977,7 +8162,8 @@
   white-space: normal;
   text-overflow: ellipsis;
   font-family: var(--sapFontHeaderFamily);
-  font-size: var(--sapFontHeader5Size);
+  font-size: var(--fdCard_Title_Font_Size);
+  font-weight: var(--fdCard_Title_Font_Weight);
   color: var(--sapTile_TitleTextColor);
   word-wrap: break-word;
   max-height: 4.2rem;
@@ -9521,8 +9707,8 @@
       .fd-dialog__header
         .fd-dialog__title
       .fd-dialog__subheader
-      .fd-dialog__body+(--no-vertical-padding)
-      .fd-dialog__laoder
+      .fd-dialog__body+(--no-vertical-padding, --no-horizontal-padding)
+      .fd-dialog__loader
       .fd-dialog__footer
         .fd-dialog__decisive-button
       .fd-dialog__resize-handle
@@ -9602,7 +9788,9 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
-.fd-dialog__content--mobile .fd-dialog__body {
+.fd-dialog__content--mobile .fd-dialog__header,
+.fd-dialog__content--mobile .fd-dialog__body,
+.fd-dialog__content--mobile .fd-dialog__footer {
   border-radius: 0;
 }
 .fd-dialog__content--mobile .fd-menu__item:first-child,
@@ -9632,16 +9820,6 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.fd-dialog__header.fd-bar {
-  position: relative;
-  border-top-left-radius: var(--sapElement_BorderCornerRadius);
-  border-top-right-radius: var(--sapElement_BorderCornerRadius);
-}
-.fd-dialog__footer.fd-bar {
-  position: relative;
-  border-bottom-left-radius: var(--sapElement_BorderCornerRadius);
-  border-bottom-right-radius: var(--sapElement_BorderCornerRadius);
-}
 .fd-dialog__body {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
@@ -9667,13 +9845,17 @@
   padding-top: 0;
   padding-bottom: 0;
 }
-.fd-dialog__header + .fd-dialog__body, .fd-dialog__subheader + .fd-dialog__body {
-  border-top-left-radius: initial;
-  border-top-right-radius: initial;
+.fd-dialog__body--no-horizontal-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.fd-dialog__body:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .fd-dialog__body:not(:last-child) {
-  border-bottom-left-radius: initial;
-  border-bottom-right-radius: initial;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .fd-dialog__loader {
   font-size: var(--sapFontSize);
@@ -10019,6 +10201,9 @@
   max-width: 100%;
   vertical-align: bottom;
 }
+.fd-dynamic-page__title--wrap {
+  white-space: initial;
+}
 .fd-dynamic-page__subtitle {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
@@ -10041,6 +10226,9 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-dynamic-page__subtitle--wrap {
+  white-space: initial;
 }
 .fd-dynamic-page__title-content {
   font-size: var(--sapFontSize);
@@ -10998,7 +11186,7 @@
   border-bottom: none;
 }
 .fd-feed-list__link--more {
-  text-transform: var(--fdFeed_List_Item_More_Transform);
+  text-transform: capitalize;
   cursor: pointer;
 }
 .fd-feed-list__actions {
@@ -11012,11 +11200,11 @@
   padding: 0;
   margin: 0;
   border: 0;
-  float: right;
-  margin: 0.5rem;
-  position: relative;
-  top: -1rem;
   right: -1rem;
+  float: right;
+  position: relative;
+  margin: 0.5rem;
+  top: -1rem;
 }
 .fd-feed-list__actions::before, .fd-feed-list__actions::after {
   -webkit-box-sizing: inherit;
@@ -11024,9 +11212,11 @@
   font-size: inherit;
 }
 [dir=rtl] .fd-feed-list__actions, .fd-feed-list__actions[dir=rtl] {
-  float: left;
-  right: 1rem;
+  right: auto;
   left: -1rem;
+}
+[dir=rtl] .fd-feed-list__actions, .fd-feed-list__actions[dir=rtl] {
+  float: left;
 }
 .fd-feed-list--group {
   -webkit-box-orient: vertical;
@@ -11093,6 +11283,7 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 0.375rem;
+  font-size: var(--sapFontSmallSize);
 }
 .fd-feed-list__footer::before, .fd-feed-list__footer::after {
   -webkit-box-sizing: inherit;
@@ -11100,7 +11291,7 @@
   font-size: inherit;
 }
 .fd-feed-list__footer--byline {
-  color: var(--fdFeed_List_Item_Byline_Text_Color);
+  color: var(--sapContent_LabelColor);
 }
 .fd-feed-list__footer--byline:not(:last-child)::after {
   content: "•";
@@ -11140,7 +11331,7 @@
 .fd-feed-list--s .fd-feed-list__text {
   padding-top: 0.625rem;
 }
-.fd-feed-list--s .fd-feed-list__action {
+.fd-feed-list--s .fd-feed-list__actions {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
   color: var(--sapTextColor);
@@ -11151,24 +11342,23 @@
   padding: 0;
   margin: 0;
   border: 0;
+  right: 0;
   padding-left: 0.75rem;
+  top: 0;
   padding-bottom: 0.25rem;
 }
-.fd-feed-list--s .fd-feed-list__action::before, .fd-feed-list--s .fd-feed-list__action::after {
+.fd-feed-list--s .fd-feed-list__actions::before, .fd-feed-list--s .fd-feed-list__actions::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
 }
-.fd-feed-list--s .fd-feed-list__action > .fd-button {
-  padding-left: var(--fdFeed_List_Mobile_Actions_Button_Padding_X);
-  padding-right: var(--fdFeed_List_Mobile_Actions_Button_Padding_X);
-  height: var(--fdFeed_List_Mobile_Actions_Button_Padding_Height);
-  max-height: var(--fdFeed_List_Mobile_Actions_Button_Padding_Height);
-  min-width: var(--fdFeed_List_Mobile_Actions_Button_Padding_Width);
+[dir=rtl] .fd-feed-list--s .fd-feed-list__actions, .fd-feed-list--s .fd-feed-list__actions[dir=rtl] {
+  right: auto;
+  left: 0;
 }
-[dir=rtl] .fd-feed-list--s .fd-feed-list__action, .fd-feed-list--s .fd-feed-list__action[dir=rtl] {
+[dir=rtl] .fd-feed-list--s .fd-feed-list__actions, .fd-feed-list--s .fd-feed-list__actions[dir=rtl] {
   padding-right: 0.75rem;
-  padding-bottom: initial;
+  padding-left: 0;
 }
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* stylelint-disable */
@@ -11189,7 +11379,7 @@
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
-.fd-form-group
+  .fd-form-group(--inline)
 */
 .fd-form-group, .fd-fieldset {
   font-size: var(--sapFontSize);
@@ -11208,9 +11398,6 @@
           box-sizing: inherit;
   font-size: inherit;
 }
-.fd-form-group:last-child, .fd-fieldset:last-child {
-  margin-bottom: 0;
-}
 .fd-form-group--inline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11224,23 +11411,6 @@
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.fd-form-group__item {
-  font-size: var(--sapFontSize);
-  line-height: var(--sapContent_LineHeight);
-  color: var(--sapTextColor);
-  font-family: var(--sapFontFamily);
-  font-weight: normal;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.fd-form-group__item::before, .fd-form-group__item::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  font-size: inherit;
 }
 .fd-form-group__header {
   font-size: var(--sapFontSize);
@@ -13163,639 +13333,683 @@
     margin-left: 100%;
   }
 }
-.fd-container.fd-form-layout-grid-container {
-  padding: 1rem;
+.fd-container.fd-form-layout-grid-container.fd-form-group, .fd-container.fd-form-layout-grid-container.fd-fieldset,
+.fd-container.fd-form-layout-grid-container .fd-form-group,
+.fd-container.fd-form-layout-grid-container .fd-fieldset {
+  padding: 1rem !important;
 }
-.fd-container.fd-form-layout-grid-container .fd-row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0.625rem;
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-group, .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-group, .fd-container.fd-form-layout-grid-container.fd-form-group .fd-fieldset, .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-fieldset,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-group,
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-group,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-fieldset,
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-fieldset {
+  padding: 0 !important;
 }
-.fd-container.fd-form-layout-grid-container .fd-row--top {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item--compact .fd-select__control, .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item--compact .fd-select__control,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item--compact .fd-select__control,
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item--compact .fd-select__control {
+  margin-bottom: 0.1875rem;
 }
-.fd-container.fd-form-layout-grid-container .fd-row:first-child {
-  margin-top: 0;
-}
-.fd-container.fd-form-layout-grid-container .fd-row:last-child {
-  margin-bottom: 0;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col {
-  padding-top: 0;
-  padding-bottom: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-select__control {
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-select__control, .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item .fd-select__control,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-select__control,
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item .fd-select__control {
   margin: 0.25rem 0;
 }
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col--compact .fd-select__control {
-  margin: 0.1875rem 0 0.25rem 0;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label {
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label, .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item .fd-form-label {
   margin-right: 0;
   white-space: initial;
 }
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label[dir=rtl] {
+[dir=rtl] .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label, [dir=rtl] .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item .fd-form-label, .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label[dir=rtl], .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label,
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label[dir=rtl],
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item .fd-form-label[dir=rtl] {
   margin-right: 0;
   margin-left: 0;
 }
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label--required {
+.fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label--required, .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item .fd-form-label--required,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label--required,
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item .fd-form-label--required {
   padding-right: 0.5rem;
 }
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label--required, .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label--required[dir=rtl] {
+[dir=rtl] .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label--required, [dir=rtl] .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item .fd-form-label--required, .fd-container.fd-form-layout-grid-container.fd-form-group .fd-form-item .fd-form-label--required[dir=rtl], .fd-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item .fd-form-label--required[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label--required,
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item .fd-form-label--required,
+.fd-container.fd-form-layout-grid-container .fd-form-group .fd-form-item .fd-form-label--required[dir=rtl],
+.fd-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item .fd-form-label--required[dir=rtl] {
   padding-right: 0;
   padding-left: 0.5rem;
 }
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col__form-group {
-  padding: 1rem;
-}
-.fd-container.fd-form-layout-grid-container .fd-row .fd-row__form-item {
+.fd-container.fd-form-layout-grid-container .fd-row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col:not(.fd-form-group):not(.fd-fieldset) {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
 @media (min-width: 0) {
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical.fd-form-group .fd-form-item, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical.fd-fieldset .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical .fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical .fd-fieldset .fd-form-item {
+    margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical.fd-form-group .fd-form-item:first-of-type, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical.fd-fieldset .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical .fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--vertical .fd-fieldset .fd-form-item:first-of-type {
+    margin-top: 0;
+  }
+
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
   }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col--12 .fd-form-label {
+}
+@media (min-width: 0) and (max-width: 599px) {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container.fd-form-group .fd-form-item, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container .fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item {
     margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container.fd-form-group .fd-form-item:first-of-type, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container.fd-fieldset .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container .fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container .fd-fieldset .fd-form-item:first-of-type {
+    margin-top: 0;
   }
 }
 @media (min-width: 600px) {
   .fd-container.fd-form-layout-grid-container {
-    padding: 1rem;
+    padding: 0 0.25rem;
   }
   .fd-container.fd-form-layout-grid-container .fd-row {
-    margin: 0 -0.25rem 0.625rem;
+    margin: 0 -0.25rem;
     min-width: calc(100% + 0.25rem * 2);
   }
   .fd-container.fd-form-layout-grid-container .fd-row .fd-col {
     padding: 0 0.25rem;
   }
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col__form-group {
-    padding: 1rem;
-  }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-md--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
   }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-md .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-md--12 .fd-form-label {
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical.fd-form-group .fd-form-item, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical.fd-fieldset .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical .fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical .fd-fieldset .fd-form-item {
     margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical.fd-form-group .fd-form-item:first-of-type, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical.fd-fieldset .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical .fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--md-vertical .fd-fieldset .fd-form-item:first-of-type {
+    margin-top: 0;
   }
 }
 @media (min-width: 1024px) {
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-lg--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
   }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-lg .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-lg--12 .fd-form-label {
+}
+@media (min-width: 1024px) and (max-width: 1443px) {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical.fd-form-group .fd-form-item, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical.fd-fieldset .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical .fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical .fd-fieldset .fd-form-item {
     margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical.fd-form-group .fd-form-item:first-of-type, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical.fd-fieldset .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical .fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--lg-vertical .fd-fieldset .fd-form-item:first-of-type {
+    margin-top: 0;
   }
 }
 @media (min-width: 1440px) {
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical.fd-form-group .fd-form-item, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical.fd-fieldset .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical .fd-form-group .fd-form-item,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical .fd-fieldset .fd-form-item {
+    margin-top: 0.625rem;
+  }
+  .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical.fd-form-group .fd-form-item:first-of-type, .fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical.fd-fieldset .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical .fd-form-group .fd-form-item:first-of-type,
+.fd-container.fd-form-layout-grid-container.fd-form-layout-grid-container--xl-vertical .fd-fieldset .fd-form-item:first-of-type {
+    margin-top: 0;
+  }
+
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--1 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--2 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--3 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--4 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--5 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--6 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--7 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--8 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--9 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--10 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 > .fd-form-label {
     float: right;
     text-align: right;
     padding-bottom: 0;
     width: 100%;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--11 > .fd-form-label[dir=rtl] {
     float: left;
     text-align: left;
   }
 
-  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 .fd-form-label {
+  .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 > .fd-form-label {
     float: left;
     text-align: left;
     width: auto;
     padding-bottom: 0.125rem;
   }
-  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl .fd-form-label[dir=rtl],
-[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 .fd-form-label,
-.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 .fd-form-label[dir=rtl] {
+  [dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl > .fd-form-label, .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl > .fd-form-label[dir=rtl],
+[dir=rtl] .fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 > .fd-form-label,
+.fd-container.fd-form-layout-grid-container .fd-row .fd-col-xl--12 > .fd-form-label[dir=rtl] {
     text-align: right;
     float: right;
-  }
-
-  .fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-xl .fd-form-label,
-.fd-container.fd-form-layout-grid-container--vertical .fd-row:not(:first-child) .fd-col-xl--12 .fd-form-label {
-    margin-top: 0.625rem;
   }
 }
 /* Fully expanded pseudo element. Requires parent to have specified position */
@@ -13808,7 +14022,7 @@
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
-.fd-form-group
+  .fd-form-group(--inline)
 */
 .fd-form-group, .fd-fieldset {
   font-size: var(--sapFontSize);
@@ -13827,9 +14041,6 @@
           box-sizing: inherit;
   font-size: inherit;
 }
-.fd-form-group:last-child, .fd-fieldset:last-child {
-  margin-bottom: 0;
-}
 .fd-form-group--inline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13843,23 +14054,6 @@
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-.fd-form-group__item {
-  font-size: var(--sapFontSize);
-  line-height: var(--sapContent_LineHeight);
-  color: var(--sapTextColor);
-  font-family: var(--sapFontFamily);
-  font-weight: normal;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.fd-form-group__item::before, .fd-form-group__item::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  font-size: inherit;
 }
 .fd-form-group__header {
   font-size: var(--sapFontSize);
@@ -13991,7 +14185,7 @@
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
-.fd-form-item+(--inline)
+  .fd-form-item(--horizontal)
 */
 .fd-form-item {
   font-size: var(--sapFontSize);
@@ -14194,6 +14388,12 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem;
   min-width: 6rem;
   max-width: 22rem;
@@ -14216,6 +14416,18 @@
 [dir=rtl] .fd-form-message, .fd-form-message[dir=rtl] {
   right: 0;
 }
+[dir=rtl] .fd-form-message::before, .fd-form-message[dir=rtl]::before {
+  margin-right: 0;
+  margin-left: 0.375rem;
+}
+.fd-form-message::before {
+  display: var(--fdMessage_Icon_Display);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 0.375rem;
+  font-family: "SAP-icons";
+  font-size: 1rem;
+}
 .fd-form-message--static {
   margin-top: 0;
   display: table;
@@ -14224,266 +14436,30 @@
 .fd-form-message--error {
   background-color: var(--sapErrorBackground);
 }
+.fd-form-message--error::before {
+  content: "\e0b1";
+  color: var(--sapNegativeElementColor);
+}
 .fd-form-message--warning {
   background-color: var(--sapWarningBackground);
+}
+.fd-form-message--warning::before {
+  content: "\e201";
+  color: var(--sapCriticalElementColor);
 }
 .fd-form-message--success {
   background-color: var(--sapSuccessBackground);
 }
+.fd-form-message--success::before {
+  content: "\e203";
+  color: var(--sapPositiveElementColor);
+}
 .fd-form-message--information {
   background-color: var(--sapInformationBackground);
 }
-/* Fully expanded pseudo element. Requires parent to have specified position */
-/* stylelint-disable */
-/* stylelint-enable */
-/* stylelint-disable */
-/* stylelint-enable */
-/* stylelint-disable */
-/* stylelint-enable */
-/* Fully expanded pseudo element. Requires parent to have specified position */
-/* Fully expanded pseudo element. Requires parent to have specified position */
-.fd-has-display-none {
-  display: none !important;
-}
-.fd-has-display-block {
-  display: block !important;
-}
-.fd-has-display-inline-block {
-  display: inline-block !important;
-}
-.fd-has-display-grid {
-  display: grid !important;
-}
-.fd-has-display-inline-grid {
-  display: inline-grid !important;
-}
-.fd-has-display-flex {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.fd-has-display-inline-flex {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-.fd-has-display-table {
-  display: table !important;
-}
-.fd-has-display-table-row {
-  display: table-row !important;
-}
-.fd-has-display-table-cell {
-  display: table-cell !important;
-}
-.fd-has-display-none--s {
-  display: none !important;
-}
-.fd-has-display-block--s {
-  display: block !important;
-}
-.fd-has-display-inline-block--s {
-  display: inline-block !important;
-}
-.fd-has-display-grid--s {
-  display: grid !important;
-}
-.fd-has-display-inline-grid--s {
-  display: inline-grid !important;
-}
-.fd-has-display-flex--s {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.fd-has-display-inline-flex--s {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-.fd-has-display-table--s {
-  display: table !important;
-}
-.fd-has-display-table-row--s {
-  display: table-row !important;
-}
-.fd-has-display-table-cell--s {
-  display: table-cell !important;
-}
-.fd-has-display-none--m {
-  display: none !important;
-}
-.fd-has-display-block--m {
-  display: block !important;
-}
-.fd-has-display-inline-block--m {
-  display: inline-block !important;
-}
-.fd-has-display-grid--m {
-  display: grid !important;
-}
-.fd-has-display-inline-grid--m {
-  display: inline-grid !important;
-}
-.fd-has-display-flex--m {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.fd-has-display-inline-flex--m {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-.fd-has-display-table--m {
-  display: table !important;
-}
-.fd-has-display-table-row--m {
-  display: table-row !important;
-}
-.fd-has-display-table-cell--m {
-  display: table-cell !important;
-}
-.fd-has-display-none--l {
-  display: none !important;
-}
-.fd-has-display-block--l {
-  display: block !important;
-}
-.fd-has-display-inline-block--l {
-  display: inline-block !important;
-}
-.fd-has-display-grid--l {
-  display: grid !important;
-}
-.fd-has-display-inline-grid--l {
-  display: inline-grid !important;
-}
-.fd-has-display-flex--l {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.fd-has-display-inline-flex--l {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-.fd-has-display-table--l {
-  display: table !important;
-}
-.fd-has-display-table-row--l {
-  display: table-row !important;
-}
-.fd-has-display-table-cell--l {
-  display: table-cell !important;
-}
-.fd-has-display-none--xl {
-  display: none !important;
-}
-.fd-has-display-block--xl {
-  display: block !important;
-}
-.fd-has-display-inline-block--xl {
-  display: inline-block !important;
-}
-.fd-has-display-grid--xl {
-  display: grid !important;
-}
-.fd-has-display-inline-grid--xl {
-  display: inline-grid !important;
-}
-.fd-has-display-flex--xl {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.fd-has-display-inline-flex--xl {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-.fd-has-display-table--xl {
-  display: table !important;
-}
-.fd-has-display-table-row--xl {
-  display: table-row !important;
-}
-.fd-has-display-table-cell--xl {
-  display: table-cell !important;
-}
-.fd-has-display-none--xxl {
-  display: none !important;
-}
-.fd-has-display-block--xxl {
-  display: block !important;
-}
-.fd-has-display-inline-block--xxl {
-  display: inline-block !important;
-}
-.fd-has-display-grid--xxl {
-  display: grid !important;
-}
-.fd-has-display-inline-grid--xxl {
-  display: inline-grid !important;
-}
-.fd-has-display-flex--xxl {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.fd-has-display-inline-flex--xxl {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-.fd-has-display-table--xxl {
-  display: table !important;
-}
-.fd-has-display-table-row--xxl {
-  display: table-row !important;
-}
-.fd-has-display-table-cell--xxl {
-  display: table-cell !important;
-}
-/* Fully expanded pseudo element. Requires parent to have specified position */
-/* stylelint-disable */
-/* stylelint-enable */
-/* stylelint-disable */
-/* stylelint-enable */
-/* stylelint-disable */
-/* stylelint-enable */
-/* Fully expanded pseudo element. Requires parent to have specified position */
-/* Fully expanded pseudo element. Requires parent to have specified position */
-.fd-has-align-items-flex-start {
-  -webkit-box-align: start !important;
-      -ms-flex-align: start !important;
-          align-items: flex-start !important;
-}
-.fd-has-align-items-flex-end {
-  -webkit-box-align: end !important;
-      -ms-flex-align: end !important;
-          align-items: flex-end !important;
-}
-.fd-has-align-items-center {
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-}
-.fd-has-align-items-baseline {
-  -webkit-box-align: baseline !important;
-      -ms-flex-align: baseline !important;
-          align-items: baseline !important;
-}
-.fd-has-align-items-stretch {
-  -webkit-box-align: stretch !important;
-      -ms-flex-align: stretch !important;
-          align-items: stretch !important;
-}
-.fd-has-flex-grow-1 {
-  -webkit-box-flex: 1 !important;
-      -ms-flex-positive: 1 !important;
-          flex-grow: 1 !important;
+.fd-form-message--information::before {
+  content: "\e202";
+  color: var(--sapInformativeElementColor);
 }
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* stylelint-disable */
@@ -16875,7 +16851,7 @@
   font-size: inherit;
 }
 .fd-illustrated-message__actions * {
-  margin: 0 0.25rem;
+  margin: 0 0.25rem !important;
 }
 @media screen and (max-width: 599px) {
   .fd-illustrated-message {
@@ -16993,7 +16969,6 @@
   max-width: 100%;
   font-size: var(--sapFontSmallSize);
   letter-spacing: 0.0125rem;
-  text-transform: uppercase;
   text-align: center;
   padding: 0 0.3125rem;
   border-width: 0.0625rem;
@@ -17890,6 +17865,8 @@
 .fd-input-group .fd-input-group__input:hover, .fd-input-group .fd-input-group__input.is-hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+  background: none;
+  background-color: transparent;
 }
 .fd-input-group .fd-input-group__input:focus, .fd-input-group .fd-input-group__input.is-focus {
   z-index: 5;
@@ -19441,6 +19418,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  cursor: pointer;
   color: var(--sapLinkColor);
   text-shadow: var(--sapContent_TextShadow);
   display: inline-block;
@@ -19905,6 +19883,7 @@
   margin: 0;
   border: 0;
   color: var(--sapList_TextColor);
+  width: 100%;
 }
 .fd-grid-list .fd-grid-list__item-content::before, .fd-grid-list .fd-grid-list__item-content::after {
   -webkit-box-sizing: inherit;
@@ -20791,17 +20770,17 @@
   margin-right: var(--fdList_Button_Spacing);
   margin-left: 0;
 }
-.fd-list--compact .fd-list__item {
+.fd-list--compact:not(.fd-object-list) .fd-list__item {
   height: 2rem;
 }
-.fd-list--compact .fd-list__item.fd-list__item--action .fd-list__title {
+.fd-list--compact:not(.fd-object-list) .fd-list__item.fd-list__item--action .fd-list__title {
   height: var(--fdList_Item_Action_Button_Size_Compact);
 }
-.fd-list--compact .fd-list__title {
+.fd-list--compact:not(.fd-object-list) .fd-list__title {
   font-size: var(--sapFontSize);
   min-height: var(--sapFontSize);
 }
-.fd-list--compact .fd-list__icon [class*=sap-icon], .fd-list--compact .fd-list__icon[class*=sap-icon] {
+.fd-list--compact:not(.fd-object-list) .fd-list__icon [class*=sap-icon], .fd-list--compact:not(.fd-object-list) .fd-list__icon[class*=sap-icon] {
   font-size: var(--sapFontLargeSize);
 }
 .fd-list--no-border .fd-list__item,
@@ -20832,79 +20811,87 @@
   z-index: 5;
   outline: none;
 }
-.fd-list--dropdown .fd-list__item {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
-  padding: 0.75rem 1rem;
+  min-height: 2.5rem;
+  padding: 0 1rem;
 }
-.fd-list--dropdown .fd-list__item:hover, .fd-list--dropdown .fd-list__item.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-hover {
   background: var(--sapList_Hover_Background);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true], .fd-list--dropdown .fd-list__item.is-selected {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected {
   background: var(--sapList_SelectionBackgroundColor);
   border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link {
   background: inherit;
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link:active, .fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link.is-active, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link:active, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link:active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link.is-active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link:active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link.is-active {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item.is-selected:hover, .fd-list--dropdown .fd-list__item.is-selected.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected.is-hover {
   background: var(--sapList_Hover_SelectionBackground);
 }
-.fd-list--dropdown .fd-list__item:active, .fd-list--dropdown .fd-list__item.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active:hover, .fd-list--dropdown .fd-list__item:active.is-hover, .fd-list--dropdown .fd-list__item.is-active:hover, .fd-list--dropdown .fd-list__item.is-active.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-hover {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active[aria-selected=true], .fd-list--dropdown .fd-list__item:active.is-selected, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true], .fd-list--dropdown .fd-list__item.is-active.is-selected {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:active.is-selected:hover, .fd-list--dropdown .fd-list__item:active.is-selected.is-hover, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item.is-active.is-selected:hover, .fd-list--dropdown .fd-list__item.is-active.is-selected.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected.is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected.is-hover {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__title,
-.fd-list--dropdown .fd-list__item:active .fd-list__secondary,
-.fd-list--dropdown .fd-list__item:active .fd-list__icon,
-.fd-list--dropdown .fd-list__item:active .fd-list__content,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-left,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right,
-.fd-list--dropdown .fd-list__item:active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:active, .fd-list--dropdown .fd-list__item.is-active .fd-list__title,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__secondary,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__icon,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__content,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline-left,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item.is-active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__title,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__secondary,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__icon,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__content,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-left,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__title,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__secondary,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__icon,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__content,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-left,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--neutral, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--neutral {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--neutral, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--neutral {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--positive, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--positive {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--positive, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--positive {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--critical, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--critical {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--critical, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--critical {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--negative, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--negative {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--negative, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--negative {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--informative, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--informative {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--informative, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--informative {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown.fd-list--compact .fd-list__item {
+.fd-list--dropdown.fd-list--compact .fd-list__item:not(.fd-list__group-header) {
   height: auto;
-  padding: 0.5rem 1rem;
+  min-height: 2rem;
+  padding: 0 1rem;
 }
 .fd-list--multi-input .fd-list__item {
   padding: 0 1rem 0 0;
@@ -21186,6 +21173,9 @@
   margin-right: 0;
   margin-left: 0.75rem;
 }
+.fd-list--byline .fd-list__thumbnail > svg {
+  height: 100%;
+}
 .fd-list--byline .fd-list__content {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
@@ -21359,6 +21349,82 @@
 }
 .fd-list--byline.fd-list--no-border .fd-list__item:last-child {
   padding-bottom: 1rem;
+}
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+.fd-list--message-view .fd-list__item {
+  height: calc(2.75rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view .fd-list__item--byline {
+  height: calc(3.325rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view .fd-list__content {
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.fd-list--message-view .fd-list__content::before, .fd-list--message-view .fd-list__content::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-size: inherit;
+}
+.fd-list--message-view .fd-list__title {
+  font-family: var(--sapFontHeaderFamily);
+  font-size: var(--sapFontHeader5Size);
+  font-weight: normal;
+  color: var(--sapGroup_TitleTextColor);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fd-list--message-view .fd-list__subtitle {
+  padding-top: 0.25rem;
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fd-list--message-view .fd-list__link:active .fd-list__title, .fd-list--message-view .fd-list__link:active .fd-list__subtitle, .fd-list--message-view .fd-list__link:active .fd-object-status .fd-object-status__icon, .fd-list--message-view .fd-list__link.is-active .fd-list__title, .fd-list--message-view .fd-list__link.is-active .fd-list__subtitle, .fd-list--message-view .fd-list__link.is-active .fd-object-status .fd-object-status__icon {
+  color: var(--sapList_Active_TextColor);
+}
+.fd-list--message-view.fd-list--compact .fd-list__item {
+  height: calc(2rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view.fd-list--compact .fd-list__item--byline {
+  height: calc(3.25rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view.fd-list--compact .fd-list__item .fd-list__title {
+  font-size: var(--sapFontHeader6Size);
 }
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* stylelint-disable */
@@ -23884,6 +23950,7 @@
   margin: 0;
   border: 0;
   font-size: var(--sapFontHeader5Size);
+  white-space: break-spaces;
 }
 .fd-notification__limit--title::before, .fd-notification__limit--title::after {
   -webkit-box-sizing: inherit;
@@ -23902,6 +23969,7 @@
   margin: 0;
   border: 0;
   margin: 0.5rem 0 0;
+  white-space: break-spaces;
 }
 .fd-notification__limit--description::before, .fd-notification__limit--description::after {
   -webkit-box-sizing: inherit;
@@ -23994,11 +24062,17 @@
   margin: 0;
   border: 0;
   overflow: hidden;
+  height: 100%;
 }
 .fd-notification--group::before, .fd-notification--group::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-notification--group .fd-notification__body:last-of-type {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .fd-notification--group .fd-notification__body {
   padding: 1rem 0.5rem 1rem 1rem;
@@ -24044,6 +24118,11 @@
 .fd-notification--mobile {
   padding: 0;
 }
+.fd-notification--mobile .fd-notification__body:last-of-type {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .fd-notification--mobile .fd-notification__indicator {
   padding-right: 0.25rem;
 }
@@ -24067,6 +24146,17 @@
 [dir=rtl] .fd-notification--mobile .fd-notification__content, .fd-notification--mobile .fd-notification__content[dir=rtl] {
   margin-right: 0.75rem;
   margin-left: 0;
+}
+.fd-notification--in-dialog {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 0;
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.fd-notification--in-dialog:last-of-type {
+  border-bottom: none;
 }
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* stylelint-disable */
@@ -25199,17 +25289,17 @@ places the element far left of the screen. so it is not visible.
   margin-right: var(--fdList_Button_Spacing);
   margin-left: 0;
 }
-.fd-list--compact .fd-list__item {
+.fd-list--compact:not(.fd-object-list) .fd-list__item {
   height: 2rem;
 }
-.fd-list--compact .fd-list__item.fd-list__item--action .fd-list__title {
+.fd-list--compact:not(.fd-object-list) .fd-list__item.fd-list__item--action .fd-list__title {
   height: var(--fdList_Item_Action_Button_Size_Compact);
 }
-.fd-list--compact .fd-list__title {
+.fd-list--compact:not(.fd-object-list) .fd-list__title {
   font-size: var(--sapFontSize);
   min-height: var(--sapFontSize);
 }
-.fd-list--compact .fd-list__icon [class*=sap-icon], .fd-list--compact .fd-list__icon[class*=sap-icon] {
+.fd-list--compact:not(.fd-object-list) .fd-list__icon [class*=sap-icon], .fd-list--compact:not(.fd-object-list) .fd-list__icon[class*=sap-icon] {
   font-size: var(--sapFontLargeSize);
 }
 .fd-list--no-border .fd-list__item,
@@ -25240,79 +25330,87 @@ places the element far left of the screen. so it is not visible.
   z-index: 5;
   outline: none;
 }
-.fd-list--dropdown .fd-list__item {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: auto;
-  padding: 0.75rem 1rem;
+  min-height: 2.5rem;
+  padding: 0 1rem;
 }
-.fd-list--dropdown .fd-list__item:hover, .fd-list--dropdown .fd-list__item.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-hover {
   background: var(--sapList_Hover_Background);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true], .fd-list--dropdown .fd-list__item.is-selected {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected {
   background: var(--sapList_SelectionBackgroundColor);
   border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link {
   background: inherit;
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link:active, .fd-list--dropdown .fd-list__item[aria-selected=true] .fd-list__link.is-active, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link:active, .fd-list--dropdown .fd-list__item.is-selected .fd-list__link.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link:active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true] .fd-list__link.is-active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link:active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected .fd-list__link.is-active {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item.is-selected:hover, .fd-list--dropdown .fd-list__item.is-selected.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header)[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-selected.is-hover {
   background: var(--sapList_Hover_SelectionBackground);
 }
-.fd-list--dropdown .fd-list__item:active, .fd-list--dropdown .fd-list__item.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active:hover, .fd-list--dropdown .fd-list__item:active.is-hover, .fd-list--dropdown .fd-list__item.is-active:hover, .fd-list--dropdown .fd-list__item.is-active.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-hover {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active[aria-selected=true], .fd-list--dropdown .fd-list__item:active.is-selected, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true], .fd-list--dropdown .fd-list__item.is-active.is-selected {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true], .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:active.is-selected:hover, .fd-list--dropdown .fd-list__item:active.is-selected.is-hover, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item.is-active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item.is-active.is-selected:hover, .fd-list--dropdown .fd-list__item.is-active.is-selected.is-hover {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.is-selected.is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true]:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active[aria-selected=true].is-hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected:hover, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.is-selected.is-hover {
   background: var(--sapList_Active_Background);
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__title,
-.fd-list--dropdown .fd-list__item:active .fd-list__secondary,
-.fd-list--dropdown .fd-list__item:active .fd-list__icon,
-.fd-list--dropdown .fd-list__item:active .fd-list__content,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-left,
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right,
-.fd-list--dropdown .fd-list__item:active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:active, .fd-list--dropdown .fd-list__item.is-active .fd-list__title,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__secondary,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__icon,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__content,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline-left,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right,
-.fd-list--dropdown .fd-list__item.is-active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item.is-active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item.is-active {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__title,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__secondary,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__icon,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__content,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-left,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__title,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__secondary,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__icon,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__content,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-left,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right,
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__thumbnail, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active.fd-list__link--navigation-indicator::after, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--neutral, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--neutral {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--neutral, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--neutral {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--positive, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--positive {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--positive, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--positive {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--critical, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--critical {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--critical, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--critical {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--negative, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--negative {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--negative, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--negative {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown .fd-list__item:active .fd-list__byline-right--informative, .fd-list--dropdown .fd-list__item.is-active .fd-list__byline-right--informative {
+.fd-list--dropdown .fd-list__item:not(.fd-list__group-header):active .fd-list__byline-right--informative, .fd-list--dropdown .fd-list__item:not(.fd-list__group-header).is-active .fd-list__byline-right--informative {
   color: var(--sapList_Active_TextColor);
   text-shadow: none;
 }
-.fd-list--dropdown.fd-list--compact .fd-list__item {
+.fd-list--dropdown.fd-list--compact .fd-list__item:not(.fd-list__group-header) {
   height: auto;
-  padding: 0.5rem 1rem;
+  min-height: 2rem;
+  padding: 0 1rem;
 }
 .fd-list--multi-input .fd-list__item {
   padding: 0 1rem 0 0;
@@ -25594,6 +25692,9 @@ places the element far left of the screen. so it is not visible.
   margin-right: 0;
   margin-left: 0.75rem;
 }
+.fd-list--byline .fd-list__thumbnail > svg {
+  height: 100%;
+}
 .fd-list--byline .fd-list__content {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
@@ -25767,6 +25868,82 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-list--byline.fd-list--no-border .fd-list__item:last-child {
   padding-bottom: 1rem;
+}
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* stylelint-disable */
+/* stylelint-enable */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+/* Fully expanded pseudo element. Requires parent to have specified position */
+.fd-list--message-view .fd-list__item {
+  height: calc(2.75rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view .fd-list__item--byline {
+  height: calc(3.325rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view .fd-list__content {
+  font-size: var(--sapFontSize);
+  line-height: var(--sapContent_LineHeight);
+  color: var(--sapTextColor);
+  font-family: var(--sapFontFamily);
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.fd-list--message-view .fd-list__content::before, .fd-list--message-view .fd-list__content::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-size: inherit;
+}
+.fd-list--message-view .fd-list__title {
+  font-family: var(--sapFontHeaderFamily);
+  font-size: var(--sapFontHeader5Size);
+  font-weight: normal;
+  color: var(--sapGroup_TitleTextColor);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fd-list--message-view .fd-list__subtitle {
+  padding-top: 0.25rem;
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fd-list--message-view .fd-list__link:active .fd-list__title, .fd-list--message-view .fd-list__link:active .fd-list__subtitle, .fd-list--message-view .fd-list__link:active .fd-object-status .fd-object-status__icon, .fd-list--message-view .fd-list__link.is-active .fd-list__title, .fd-list--message-view .fd-list__link.is-active .fd-list__subtitle, .fd-list--message-view .fd-list__link.is-active .fd-object-status .fd-object-status__icon {
+  color: var(--sapList_Active_TextColor);
+}
+.fd-list--message-view.fd-list--compact .fd-list__item {
+  height: calc(2rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view.fd-list--compact .fd-list__item--byline {
+  height: calc(3.25rem + var(--sapList_BorderWidth));
+}
+.fd-list--message-view.fd-list--compact .fd-list__item .fd-list__title {
+  font-size: var(--sapFontHeader6Size);
 }
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* stylelint-disable */
@@ -26503,6 +26680,7 @@ places the element far left of the screen. so it is not visible.
   font-size: inherit;
 }
 .fd-object-marker--link {
+  cursor: pointer;
   color: var(--sapLinkColor);
   text-shadow: var(--sapContent_TextShadow);
   display: inline-block;
@@ -26796,7 +26974,7 @@ places the element far left of the screen. so it is not visible.
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /* Fully expanded pseudo element. Requires parent to have specified position */
 /*!
-.fd-object-status+(--success | --warning | --error)
+.fd-object-status+(--success | --warning | --error | --informative | --neutral)
 */
 .fd-object-status {
   font-size: var(--sapFontSize);
@@ -26887,27 +27065,43 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-object-status--positive {
   color: var(--sapPositiveTextColor);
+  color: var(--fdElementTextColor, var(--sapPositiveTextColor));
 }
 .fd-object-status--positive .fd-object-status__icon [class*=sap-icon], .fd-object-status--positive .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapPositiveElementColor);
+  color: var(--fdElementIconColor, var(--sapPositiveElementColor));
 }
 .fd-object-status--critical {
   color: var(--sapCriticalTextColor);
+  color: var(--fdElementTextColor, var(--sapCriticalTextColor));
 }
 .fd-object-status--critical .fd-object-status__icon [class*=sap-icon], .fd-object-status--critical .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapCriticalElementColor);
+  color: var(--fdElementIconColor, var(--sapCriticalElementColor));
 }
 .fd-object-status--negative {
   color: var(--sapNegativeTextColor);
+  color: var(--fdElementTextColor, var(--sapNegativeTextColor));
 }
 .fd-object-status--negative .fd-object-status__icon [class*=sap-icon], .fd-object-status--negative .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapNegativeElementColor);
+  color: var(--fdElementIconColor, var(--sapNegativeElementColor));
 }
 .fd-object-status--informative {
   color: var(--sapInformativeTextColor);
+  color: var(--fdElementTextColor, var(--sapInformativeTextColor));
 }
 .fd-object-status--informative .fd-object-status__icon [class*=sap-icon], .fd-object-status--informative .fd-object-status__icon[class*=sap-icon] {
   color: var(--sapInformativeElementColor);
+  color: var(--fdElementIconColor, var(--sapInformativeElementColor));
+}
+.fd-object-status--neutral {
+  color: var(--sapNeutralTextColor);
+  color: var(--fdElementTextColor, var(--sapNeutralTextColor));
+}
+.fd-object-status--neutral .fd-object-status__icon [class*=sap-icon], .fd-object-status--neutral .fd-object-status__icon[class*=sap-icon] {
+  color: var(--sapNeutralElementColor);
+  color: var(--fdElementIconColor, var(--sapNeutralElementColor));
 }
 .fd-object-status--indication-1 {
   color: var(--sapIndicationColor_1);
@@ -27012,7 +27206,7 @@ places the element far left of the screen. so it is not visible.
   width: auto;
   max-width: 100%;
   padding: 0.0625rem 0.25rem;
-  border-radius: var(--sapElement_BorderCornerRadius);
+  border-radius: 0.25rem;
   font-size: var(--sapFontSmallSize);
   font-weight: bold;
   border-width: var(--fdInverted_Object_Border_Width);
@@ -27217,7 +27411,7 @@ places the element far left of the screen. so it is not visible.
 .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon], .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon] {
   font-size: 1.25rem;
 }
-.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon]:empty, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon].is-empty, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon]:empty, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon].is-empty {
+.fd-object-status--inverted.fd-object-status--large .fd-object-status__icon [class*=sap-icon]:first-child:last-child, .fd-object-status--inverted.fd-object-status--large .fd-object-status__icon[class*=sap-icon]:first-child:last-child {
   height: 1.5rem;
   min-width: 1.75rem;
   padding: 0 0.25rem;
@@ -28518,7 +28712,7 @@ places the element far left of the screen. so it is not visible.
   opacity: 0;
   visibility: hidden;
 }
-.fd-popover__body--hidden {
+.fd-popover__body .fd-popover__body--hidden {
   display: none;
 }
 .fd-popover--input-message-group .fd-popover__body,
@@ -29298,6 +29492,10 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-quick-view .fd-form-item {
   padding-top: 0.75rem;
+}
+.fd-quick-view .fd-form-item .fd-link {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .fd-quick-view .fd-title .fd-link {
   white-space: nowrap;
@@ -30324,6 +30522,10 @@ places the element far left of the screen. so it is not visible.
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-scrollbar:focus, .fd-scrollbar.is-focus {
+  z-index: 5;
+  outline: none;
 }
 .fd-scrollbar::-webkit-scrollbar {
   width: var(--fdScrollbar_Dimension);
@@ -31414,6 +31616,10 @@ places the element far left of the screen. so it is not visible.
   display: inline-block;
   vertical-align: middle;
 }
+.fd-shellbar__logo:focus, .fd-shellbar__logo.is-focus, .fd-shellbar__title:focus, .fd-shellbar__title.is-focus {
+  z-index: 5;
+  outline: var(--fdShellbar_Button_Outline_Color) var(--sapContent_FocusStyle) var(--sapContent_FocusWidth);
+}
 .fd-shellbar__title {
   font-weight: bold;
   vertical-align: middle;
@@ -31440,11 +31646,6 @@ places the element far left of the screen. so it is not visible.
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
-}
-.fd-shellbar__logo:focus, .fd-shellbar__logo.is-focus {
-  outline-width: var(--sapContent_FocusWidth);
-  outline-color: var(--sapContent_FocusColor);
-  outline-style: var(--sapContent_FocusStyle);
 }
 .fd-shellbar__logo > * {
   line-height: 0;
@@ -31524,7 +31725,14 @@ places the element far left of the screen. so it is not visible.
   font-style: italic;
 }
 .fd-shellbar .fd-shellbar__group .fd-shellbar__input-group-input--select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-style: normal;
+  height: 100%;
 }
 .fd-shellbar .fd-shellbar__group .fd-shellbar__input-group-addon .fd-shellbar__button {
   height: var(--fdShellbar_Input_Addon_Dimension);
@@ -32717,7 +32925,6 @@ places the element far left of the screen. so it is not visible.
 [dir=rtl] .fd-nested-list--text-only .fd-nested-list__content, .fd-nested-list--text-only[dir=rtl] .fd-nested-list__link,
 .fd-nested-list--text-only[dir=rtl] .fd-nested-list__content {
   padding-right: 1rem;
-  padding-left: 0;
 }
 [dir=rtl] .fd-nested-list--text-only .fd-nested-list__link.has-child,
 [dir=rtl] .fd-nested-list--text-only .fd-nested-list__content.has-child, .fd-nested-list--text-only[dir=rtl] .fd-nested-list__link.has-child,
@@ -33229,6 +33436,7 @@ places the element far left of the screen. so it is not visible.
   font-size: inherit;
 }
 .fd-side-nav__skip-link:focus {
+  cursor: pointer;
   color: var(--sapLinkColor);
   text-shadow: var(--sapContent_TextShadow);
   display: inline-block;
@@ -35352,7 +35560,7 @@ places the element far left of the screen. so it is not visible.
   outline-style: var(--sapContent_FocusStyle);
 }
 .fd-table__footer {
-  background-color: var(--sapList_FooterBackground);
+  background-color: var(--sapList_Background);
 }
 .fd-table__footer .fd-table__row {
   border-top: 0.125rem solid var(--sapList_TableFooterBorder);
@@ -38888,6 +39096,7 @@ places the element far left of the screen. so it is not visible.
   margin: 0;
   border: 0;
   color: var(--sapTextColor);
+  font-family: var(--fdTitle_Font_Family);
 }
 .fd-title::before, .fd-title::after {
   -webkit-box-sizing: inherit;
@@ -39330,6 +39539,10 @@ places the element far left of the screen. so it is not visible.
   outline-width: var(--sapContent_FocusWidth);
   outline-color: var(--sapContent_FocusColor);
   outline-style: var(--sapContent_FocusStyle);
+}
+.fd-tokenizer--compact {
+  height: 1.625rem;
+  min-height: 1.625rem;
 }
 .fd-tokenizer--compact .fd-tokenizer__inner {
   padding: 0 0.25rem;
@@ -41106,6 +41319,9 @@ places the element far left of the screen. so it is not visible.
   margin-right: 0;
   margin-left: 0.75rem;
 }
+.fd-list--byline .fd-list__thumbnail > svg {
+  height: 100%;
+}
 .fd-list--byline .fd-list__content {
   font-size: var(--sapFontSize);
   line-height: var(--sapContent_LineHeight);
@@ -41905,7 +42121,7 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-vertical-nav .fd-list__navigation-item--condensed.is-expanded .fd-list__navigation-item-popover--first-level .fd-list, .fd-vertical-nav .fd-list__navigation-item--condensed.is-expanded .fd-list__navigation-item-popover--second-level .fd-list {
   width: 100%;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -42086,6 +42302,9 @@ places the element far left of the screen. so it is not visible.
 }
 .fd-vertical-nav .fd-list__navigation-item:hover, .fd-vertical-nav .fd-list__navigation-item.is-hover, .fd-vertical-nav .fd-list__navigation-item--condensed:hover, .fd-vertical-nav .fd-list__navigation-item--condensed.is-hover {
   background: var(--sapList_Hover_Background);
+}
+.fd-vertical-nav .fd-list__navigation-item:hover .fd-list__navigation-item-icon, .fd-vertical-nav .fd-list__navigation-item.is-hover .fd-list__navigation-item-icon, .fd-vertical-nav .fd-list__navigation-item--condensed:hover .fd-list__navigation-item-icon, .fd-vertical-nav .fd-list__navigation-item--condensed.is-hover .fd-list__navigation-item-icon {
+  color: var(--sapList_TextColor);
 }
 .fd-vertical-nav .fd-list__navigation-item[aria-pressed=true], .fd-vertical-nav .fd-list__navigation-item.is-pressed, .fd-vertical-nav .fd-list__navigation-item--condensed[aria-pressed=true], .fd-vertical-nav .fd-list__navigation-item--condensed.is-pressed {
   background: var(--sapList_Active_Background);

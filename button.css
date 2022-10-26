@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -63,9 +63,12 @@
   border-style: solid;
   border-width: var(--sapButton_BorderWidth);
   /* Default type */
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--sapButton_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button::before, .fd-button::after {
   -webkit-box-sizing: inherit;
@@ -107,6 +110,9 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-button, .fd-button__text {
+  font-family: var(--fdButton_Font_Family);
 }
 .fd-button *:not(:first-child) {
   margin-left: 0.375rem !important;
@@ -275,95 +281,126 @@
   opacity: var(--sapContent_DisabledOpacity);
 }
 .fd-button:hover, .fd-button.is-hover {
-  color: var(--sapButton_Hover_TextColor);
-  border-color: var(--sapButton_Hover_BorderColor);
-  background-color: var(--sapButton_Hover_Background);
+  --fdButtonColor: var(--sapButton_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button:active, .fd-button.is-active, .fd-button[aria-selected=true], .fd-button.is-selected, .fd-button[aria-pressed=true], .fd-button.is-pressed {
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
+}
+.fd-button:active .fd-button__icon, .fd-button.is-active .fd-button__icon, .fd-button[aria-selected=true] .fd-button__icon, .fd-button.is-selected .fd-button__icon, .fd-button[aria-pressed=true] .fd-button__icon, .fd-button.is-pressed .fd-button__icon {
   color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  text-shadow: none;
 }
 .fd-button[aria-disabled=true], .fd-button.is-disabled, .fd-button:disabled {
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--sapButton_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Background);
 }
 .fd-button[aria-disabled=true][aria-selected=true], .fd-button[aria-disabled=true].is-selected, .fd-button.is-disabled[aria-selected=true], .fd-button.is-disabled.is-selected, .fd-button:disabled[aria-selected=true], .fd-button:disabled.is-selected {
-  color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
 }
 .fd-button.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button.fd-button--toggled:hover, .fd-button.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button.fd-button--toggled:active, .fd-button.fd-button--toggled.is-active, .fd-button.fd-button--toggled[aria-selected=true], .fd-button.fd-button--toggled.is-selected, .fd-button.fd-button--toggled[aria-pressed=true], .fd-button.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button.fd-button--toggled:active .fd-button__icon, .fd-button.fd-button--toggled.is-active .fd-button__icon, .fd-button.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button.fd-button--toggled.is-selected .fd-button__icon, .fd-button.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button.fd-button--toggled[aria-disabled=true], .fd-button.fd-button--toggled.is-disabled, .fd-button.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--attention {
-  color: var(--sapButton_Attention_TextColor);
-  border-color: var(--sapButton_Attention_BorderColor);
-  background-color: var(--sapButton_Attention_Background);
+  --fdButtonColor: var(--sapButton_Attention_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--attention:hover, .fd-button--attention.is-hover {
-  color: var(--sapButton_Attention_Hover_TextColor);
-  border-color: var(--sapButton_Attention_Hover_BorderColor);
-  background-color: var(--sapButton_Attention_Hover_Background);
+  --fdButtonColor: var(--sapButton_Attention_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Attention_Hover_Shadow);
           box-shadow: var(--fdButton_Attention_Hover_Shadow);
 }
 .fd-button--attention:active, .fd-button--attention.is-active, .fd-button--attention[aria-selected=true], .fd-button--attention.is-selected, .fd-button--attention[aria-pressed=true], .fd-button--attention.is-pressed {
+  --fdButtonColor: var(--sapButton_Attention_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Active_Background);
+  --fdElementTextColor: var(--sapButton_Attention_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Attention_Active_TextColor);
+}
+.fd-button--attention:active .fd-button__icon, .fd-button--attention.is-active .fd-button__icon, .fd-button--attention[aria-selected=true] .fd-button__icon, .fd-button--attention.is-selected .fd-button__icon, .fd-button--attention[aria-pressed=true] .fd-button__icon, .fd-button--attention.is-pressed .fd-button__icon {
   color: var(--sapButton_Attention_Active_TextColor);
-  border-color: var(--sapButton_Attention_Active_BorderColor);
-  background-color: var(--sapButton_Attention_Active_Background);
+  text-shadow: none;
 }
 .fd-button--attention[aria-disabled=true], .fd-button--attention.is-disabled, .fd-button--attention:disabled {
-  color: var(--sapButton_Attention_TextColor);
-  border-color: var(--sapButton_Attention_BorderColor);
-  background-color: var(--sapButton_Attention_Background);
+  --fdButtonColor: var(--sapButton_Attention_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Background);
 }
 .fd-button--attention[aria-disabled=true][aria-selected=true], .fd-button--attention[aria-disabled=true].is-selected, .fd-button--attention.is-disabled[aria-selected=true], .fd-button--attention.is-disabled.is-selected, .fd-button--attention:disabled[aria-selected=true], .fd-button--attention:disabled.is-selected {
-  color: var(--sapButton_Attention_Active_TextColor);
-  border-color: var(--sapButton_Attention_Active_BorderColor);
-  background-color: var(--sapButton_Attention_Active_Background);
+  --fdButtonColor: var(--sapButton_Attention_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Active_Background);
+  --fdElementTextColor: var(--sapButton_Attention_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Attention_Active_TextColor);
 }
 .fd-button--attention.fd-button--toggled {
-  color: var(--sapButton_Attention_Selected_TextColor);
-  border-color: var(--sapButton_Attention_Selected_BorderColor);
-  background-color: var(--sapButton_Attention_Selected_Background);
+  --fdButtonColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Selected_Background);
 }
 .fd-button--attention.fd-button--toggled:hover, .fd-button--attention.fd-button--toggled.is-hover {
-  color: var(--sapButton_Attention_Selected_TextColor);
-  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Attention_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Attention_Hover_Shadow);
           box-shadow: var(--fdButton_Attention_Hover_Shadow);
 }
 .fd-button--attention.fd-button--toggled:active, .fd-button--attention.fd-button--toggled.is-active, .fd-button--attention.fd-button--toggled[aria-selected=true], .fd-button--attention.fd-button--toggled.is-selected, .fd-button--attention.fd-button--toggled[aria-pressed=true], .fd-button--attention.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Attention_Selected_TextColor);
-  border-color: var(--sapButton_Attention_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Attention_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Attention_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Attention_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Attention_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Attention_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Attention_Hover_Shadow);
           box-shadow: var(--fdButton_Attention_Hover_Shadow);
+}
+.fd-button--attention.fd-button--toggled:active .fd-button__icon, .fd-button--attention.fd-button--toggled.is-active .fd-button__icon, .fd-button--attention.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--attention.fd-button--toggled.is-selected .fd-button__icon, .fd-button--attention.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--attention.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Attention_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--attention.fd-button--toggled[aria-disabled=true], .fd-button--attention.fd-button--toggled.is-disabled, .fd-button--attention.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
@@ -372,50 +409,67 @@
 .fd-button--emphasized {
   font-weight: var(--sapButton_Emphasized_FontWeight);
   border-width: var(--fdButton_Emphasized_Border_Width);
-  color: var(--sapButton_Emphasized_TextColor);
-  border-color: var(--sapButton_Emphasized_BorderColor);
-  background-color: var(--sapButton_Emphasized_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--emphasized:hover, .fd-button--emphasized.is-hover {
-  color: var(--sapButton_Emphasized_Hover_TextColor);
-  border-color: var(--sapButton_Emphasized_Hover_BorderColor);
-  background-color: var(--sapButton_Emphasized_Hover_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Hover_Background);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--emphasized:active, .fd-button--emphasized.is-active, .fd-button--emphasized[aria-selected=true], .fd-button--emphasized.is-selected, .fd-button--emphasized[aria-pressed=true], .fd-button--emphasized.is-pressed {
+  --fdButtonColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Active_Background);
+  --fdElementTextColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Emphasized_Active_TextColor);
+}
+.fd-button--emphasized:active .fd-button__icon, .fd-button--emphasized.is-active .fd-button__icon, .fd-button--emphasized[aria-selected=true] .fd-button__icon, .fd-button--emphasized.is-selected .fd-button__icon, .fd-button--emphasized[aria-pressed=true] .fd-button__icon, .fd-button--emphasized.is-pressed .fd-button__icon {
   color: var(--sapButton_Emphasized_Active_TextColor);
-  border-color: var(--sapButton_Emphasized_Active_BorderColor);
-  background-color: var(--sapButton_Emphasized_Active_Background);
+  text-shadow: none;
 }
 .fd-button--emphasized[aria-disabled=true], .fd-button--emphasized.is-disabled, .fd-button--emphasized:disabled {
-  color: var(--sapButton_Emphasized_TextColor);
-  border-color: var(--sapButton_Emphasized_BorderColor);
-  background-color: var(--sapButton_Emphasized_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Background);
 }
 .fd-button--emphasized[aria-disabled=true][aria-selected=true], .fd-button--emphasized[aria-disabled=true].is-selected, .fd-button--emphasized.is-disabled[aria-selected=true], .fd-button--emphasized.is-disabled.is-selected, .fd-button--emphasized:disabled[aria-selected=true], .fd-button--emphasized:disabled.is-selected {
-  color: var(--sapButton_Emphasized_Active_TextColor);
-  border-color: var(--sapButton_Emphasized_Active_BorderColor);
-  background-color: var(--sapButton_Emphasized_Active_Background);
+  --fdButtonColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Emphasized_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Emphasized_Active_Background);
+  --fdElementTextColor: var(--sapButton_Emphasized_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Emphasized_Active_TextColor);
 }
 .fd-button--emphasized.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button--emphasized.fd-button--toggled:hover, .fd-button--emphasized.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--emphasized.fd-button--toggled:active, .fd-button--emphasized.fd-button--toggled.is-active, .fd-button--emphasized.fd-button--toggled[aria-selected=true], .fd-button--emphasized.fd-button--toggled.is-selected, .fd-button--emphasized.fd-button--toggled[aria-pressed=true], .fd-button--emphasized.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button--emphasized.fd-button--toggled:active .fd-button__icon, .fd-button--emphasized.fd-button--toggled.is-active .fd-button__icon, .fd-button--emphasized.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--emphasized.fd-button--toggled.is-selected .fd-button__icon, .fd-button--emphasized.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--emphasized.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Emphasized_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--emphasized.fd-button--toggled[aria-disabled=true], .fd-button--emphasized.fd-button--toggled.is-disabled, .fd-button--emphasized.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
@@ -436,200 +490,268 @@
   outline: none;
 }
 .fd-button--ghost {
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--fdButton_Ghost_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--fdButton_Ghost_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--ghost:hover, .fd-button--ghost.is-hover {
-  color: var(--sapButton_Hover_TextColor);
-  border-color: var(--sapButton_Hover_BorderColor);
-  background-color: var(--sapButton_Hover_Background);
+  --fdButtonColor: var(--sapButton_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--ghost:active, .fd-button--ghost.is-active, .fd-button--ghost[aria-selected=true], .fd-button--ghost.is-selected, .fd-button--ghost[aria-pressed=true], .fd-button--ghost.is-pressed {
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
+}
+.fd-button--ghost:active .fd-button__icon, .fd-button--ghost.is-active .fd-button__icon, .fd-button--ghost[aria-selected=true] .fd-button__icon, .fd-button--ghost.is-selected .fd-button__icon, .fd-button--ghost[aria-pressed=true] .fd-button__icon, .fd-button--ghost.is-pressed .fd-button__icon {
   color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  text-shadow: none;
 }
 .fd-button--ghost[aria-disabled=true], .fd-button--ghost.is-disabled, .fd-button--ghost:disabled {
-  color: var(--sapButton_TextColor);
-  border-color: var(--sapButton_BorderColor);
-  background-color: var(--fdButton_Ghost_Background);
+  --fdButtonColor: var(--sapButton_TextColor);
+  --fdButtonBorderColor: var(--sapButton_BorderColor);
+  --fdButtonBackgroundColor: var(--fdButton_Ghost_Background);
 }
 .fd-button--ghost[aria-disabled=true][aria-selected=true], .fd-button--ghost[aria-disabled=true].is-selected, .fd-button--ghost.is-disabled[aria-selected=true], .fd-button--ghost.is-disabled.is-selected, .fd-button--ghost:disabled[aria-selected=true], .fd-button--ghost:disabled.is-selected {
-  color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Active_BorderColor);
-  background-color: var(--sapButton_Active_Background);
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
 }
 .fd-button--ghost.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button--ghost.fd-button--toggled:hover, .fd-button--ghost.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--ghost.fd-button--toggled:active, .fd-button--ghost.fd-button--toggled.is-active, .fd-button--ghost.fd-button--toggled[aria-selected=true], .fd-button--ghost.fd-button--toggled.is-selected, .fd-button--ghost.fd-button--toggled[aria-pressed=true], .fd-button--ghost.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button--ghost.fd-button--toggled:active .fd-button__icon, .fd-button--ghost.fd-button--toggled.is-active .fd-button__icon, .fd-button--ghost.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--ghost.fd-button--toggled.is-selected .fd-button__icon, .fd-button--ghost.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--ghost.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--ghost.fd-button--toggled[aria-disabled=true], .fd-button--ghost.fd-button--toggled.is-disabled, .fd-button--ghost.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--negative {
-  color: var(--sapButton_Reject_TextColor);
-  border-color: var(--sapButton_Reject_BorderColor);
-  background-color: var(--sapButton_Reject_Background);
+  --fdButtonColor: var(--sapButton_Reject_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--negative:hover, .fd-button--negative.is-hover {
-  color: var(--sapButton_Reject_Hover_TextColor);
-  border-color: var(--sapButton_Reject_Hover_BorderColor);
-  background-color: var(--sapButton_Reject_Hover_Background);
+  --fdButtonColor: var(--sapButton_Reject_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Negative_Hover_Shadow);
           box-shadow: var(--fdButton_Negative_Hover_Shadow);
 }
 .fd-button--negative:active, .fd-button--negative.is-active, .fd-button--negative[aria-selected=true], .fd-button--negative.is-selected, .fd-button--negative[aria-pressed=true], .fd-button--negative.is-pressed {
+  --fdButtonColor: var(--sapButton_Reject_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Active_Background);
+  --fdElementTextColor: var(--sapButton_Reject_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Reject_Active_TextColor);
+}
+.fd-button--negative:active .fd-button__icon, .fd-button--negative.is-active .fd-button__icon, .fd-button--negative[aria-selected=true] .fd-button__icon, .fd-button--negative.is-selected .fd-button__icon, .fd-button--negative[aria-pressed=true] .fd-button__icon, .fd-button--negative.is-pressed .fd-button__icon {
   color: var(--sapButton_Reject_Active_TextColor);
-  border-color: var(--sapButton_Reject_Active_BorderColor);
-  background-color: var(--sapButton_Reject_Active_Background);
+  text-shadow: none;
 }
 .fd-button--negative[aria-disabled=true], .fd-button--negative.is-disabled, .fd-button--negative:disabled {
-  color: var(--sapButton_Reject_TextColor);
-  border-color: var(--sapButton_Reject_BorderColor);
-  background-color: var(--sapButton_Reject_Background);
+  --fdButtonColor: var(--sapButton_Reject_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Background);
 }
 .fd-button--negative[aria-disabled=true][aria-selected=true], .fd-button--negative[aria-disabled=true].is-selected, .fd-button--negative.is-disabled[aria-selected=true], .fd-button--negative.is-disabled.is-selected, .fd-button--negative:disabled[aria-selected=true], .fd-button--negative:disabled.is-selected {
-  color: var(--sapButton_Reject_Active_TextColor);
-  border-color: var(--sapButton_Reject_Active_BorderColor);
-  background-color: var(--sapButton_Reject_Active_Background);
+  --fdButtonColor: var(--sapButton_Reject_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Active_Background);
+  --fdElementTextColor: var(--sapButton_Reject_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Reject_Active_TextColor);
 }
 .fd-button--negative.fd-button--toggled {
-  color: var(--sapButton_Reject_Selected_TextColor);
-  border-color: var(--sapButton_Reject_Selected_BorderColor);
-  background-color: var(--sapButton_Reject_Selected_Background);
+  --fdButtonColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Selected_Background);
 }
 .fd-button--negative.fd-button--toggled:hover, .fd-button--negative.fd-button--toggled.is-hover {
-  color: var(--sapButton_Reject_Selected_TextColor);
-  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Reject_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Negative_Hover_Shadow);
           box-shadow: var(--fdButton_Negative_Hover_Shadow);
 }
 .fd-button--negative.fd-button--toggled:active, .fd-button--negative.fd-button--toggled.is-active, .fd-button--negative.fd-button--toggled[aria-selected=true], .fd-button--negative.fd-button--toggled.is-selected, .fd-button--negative.fd-button--toggled[aria-pressed=true], .fd-button--negative.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Reject_Selected_TextColor);
-  border-color: var(--sapButton_Reject_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Reject_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Reject_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Reject_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Reject_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Reject_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Negative_Hover_Shadow);
           box-shadow: var(--fdButton_Negative_Hover_Shadow);
+}
+.fd-button--negative.fd-button--toggled:active .fd-button__icon, .fd-button--negative.fd-button--toggled.is-active .fd-button__icon, .fd-button--negative.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--negative.fd-button--toggled.is-selected .fd-button__icon, .fd-button--negative.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--negative.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Reject_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--negative.fd-button--toggled[aria-disabled=true], .fd-button--negative.fd-button--toggled.is-disabled, .fd-button--negative.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--positive {
-  color: var(--sapButton_Accept_TextColor);
-  border-color: var(--sapButton_Accept_BorderColor);
-  background-color: var(--sapButton_Accept_Background);
+  --fdButtonColor: var(--sapButton_Accept_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--positive:hover, .fd-button--positive.is-hover {
-  color: var(--sapButton_Accept_Hover_TextColor);
-  border-color: var(--sapButton_Accept_Hover_BorderColor);
-  background-color: var(--sapButton_Accept_Hover_Background);
+  --fdButtonColor: var(--sapButton_Accept_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Positive_Hover_Shadow);
           box-shadow: var(--fdButton_Positive_Hover_Shadow);
 }
 .fd-button--positive:active, .fd-button--positive.is-active, .fd-button--positive[aria-selected=true], .fd-button--positive.is-selected, .fd-button--positive[aria-pressed=true], .fd-button--positive.is-pressed {
+  --fdButtonColor: var(--sapButton_Accept_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Active_Background);
+  --fdElementTextColor: var(--sapButton_Accept_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Accept_Active_TextColor);
+}
+.fd-button--positive:active .fd-button__icon, .fd-button--positive.is-active .fd-button__icon, .fd-button--positive[aria-selected=true] .fd-button__icon, .fd-button--positive.is-selected .fd-button__icon, .fd-button--positive[aria-pressed=true] .fd-button__icon, .fd-button--positive.is-pressed .fd-button__icon {
   color: var(--sapButton_Accept_Active_TextColor);
-  border-color: var(--sapButton_Accept_Active_BorderColor);
-  background-color: var(--sapButton_Accept_Active_Background);
+  text-shadow: none;
 }
 .fd-button--positive[aria-disabled=true], .fd-button--positive.is-disabled, .fd-button--positive:disabled {
-  color: var(--sapButton_Accept_TextColor);
-  border-color: var(--sapButton_Accept_BorderColor);
-  background-color: var(--sapButton_Accept_Background);
+  --fdButtonColor: var(--sapButton_Accept_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Background);
 }
 .fd-button--positive[aria-disabled=true][aria-selected=true], .fd-button--positive[aria-disabled=true].is-selected, .fd-button--positive.is-disabled[aria-selected=true], .fd-button--positive.is-disabled.is-selected, .fd-button--positive:disabled[aria-selected=true], .fd-button--positive:disabled.is-selected {
-  color: var(--sapButton_Accept_Active_TextColor);
-  border-color: var(--sapButton_Accept_Active_BorderColor);
-  background-color: var(--sapButton_Accept_Active_Background);
+  --fdButtonColor: var(--sapButton_Accept_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Active_Background);
+  --fdElementTextColor: var(--sapButton_Accept_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Accept_Active_TextColor);
 }
 .fd-button--positive.fd-button--toggled {
-  color: var(--sapButton_Accept_Selected_TextColor);
-  border-color: var(--sapButton_Accept_Selected_BorderColor);
-  background-color: var(--sapButton_Accept_Selected_Background);
+  --fdButtonColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Selected_Background);
 }
 .fd-button--positive.fd-button--toggled:hover, .fd-button--positive.fd-button--toggled.is-hover {
-  color: var(--sapButton_Accept_Selected_TextColor);
-  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Accept_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Positive_Hover_Shadow);
           box-shadow: var(--fdButton_Positive_Hover_Shadow);
 }
 .fd-button--positive.fd-button--toggled:active, .fd-button--positive.fd-button--toggled.is-active, .fd-button--positive.fd-button--toggled[aria-selected=true], .fd-button--positive.fd-button--toggled.is-selected, .fd-button--positive.fd-button--toggled[aria-pressed=true], .fd-button--positive.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Accept_Selected_TextColor);
-  border-color: var(--sapButton_Accept_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Accept_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Accept_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Accept_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Accept_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Accept_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Positive_Hover_Shadow);
           box-shadow: var(--fdButton_Positive_Hover_Shadow);
+}
+.fd-button--positive.fd-button--toggled:active .fd-button__icon, .fd-button--positive.fd-button--toggled.is-active .fd-button__icon, .fd-button--positive.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--positive.fd-button--toggled.is-selected .fd-button__icon, .fd-button--positive.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--positive.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Accept_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--positive.fd-button--toggled[aria-disabled=true], .fd-button--positive.fd-button--toggled.is-disabled, .fd-button--positive.fd-button--toggled:disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .fd-button--transparent {
-  color: var(--sapButton_Lite_TextColor);
-  border-color: var(--sapButton_Lite_BorderColor);
-  background-color: var(--sapButton_Lite_Background);
+  --fdButtonColor: var(--sapButton_Lite_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Background);
+  color: var(--fdButtonColor);
+  border-color: var(--fdButtonBorderColor);
+  background-color: var(--fdButtonBackgroundColor);
 }
 .fd-button--transparent:hover, .fd-button--transparent.is-hover {
-  color: var(--sapButton_Lite_Hover_TextColor);
-  border-color: var(--sapButton_Lite_Hover_BorderColor);
-  background-color: var(--sapButton_Lite_Hover_Background);
+  --fdButtonColor: var(--sapButton_Lite_Hover_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--transparent:active, .fd-button--transparent.is-active, .fd-button--transparent[aria-selected=true], .fd-button--transparent.is-selected, .fd-button--transparent[aria-pressed=true], .fd-button--transparent.is-pressed {
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
+}
+.fd-button--transparent:active .fd-button__icon, .fd-button--transparent.is-active .fd-button__icon, .fd-button--transparent[aria-selected=true] .fd-button__icon, .fd-button--transparent.is-selected .fd-button__icon, .fd-button--transparent[aria-pressed=true] .fd-button__icon, .fd-button--transparent.is-pressed .fd-button__icon {
   color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Lite_Active_BorderColor);
-  background-color: var(--sapButton_Lite_Active_Background);
+  text-shadow: none;
 }
 .fd-button--transparent[aria-disabled=true], .fd-button--transparent.is-disabled, .fd-button--transparent:disabled {
-  color: var(--sapButton_Lite_TextColor);
-  border-color: var(--sapButton_Lite_BorderColor);
-  background-color: var(--sapButton_Lite_Background);
+  --fdButtonColor: var(--sapButton_Lite_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Background);
 }
 .fd-button--transparent[aria-disabled=true][aria-selected=true], .fd-button--transparent[aria-disabled=true].is-selected, .fd-button--transparent.is-disabled[aria-selected=true], .fd-button--transparent.is-disabled.is-selected, .fd-button--transparent:disabled[aria-selected=true], .fd-button--transparent:disabled.is-selected {
-  color: var(--sapButton_Active_TextColor);
-  border-color: var(--sapButton_Lite_Active_BorderColor);
-  background-color: var(--sapButton_Lite_Active_Background);
+  --fdButtonColor: var(--sapButton_Active_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Lite_Active_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Lite_Active_Background);
+  --fdElementTextColor: var(--sapButton_Active_TextColor);
+  --fdElementIconColor: var(--sapButton_Active_TextColor);
 }
 .fd-button--transparent.fd-button--toggled {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_BorderColor);
-  background-color: var(--sapButton_Selected_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Background);
 }
 .fd-button--transparent.fd-button--toggled:hover, .fd-button--transparent.fd-button--toggled.is-hover {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
 }
 .fd-button--transparent.fd-button--toggled:active, .fd-button--transparent.fd-button--toggled.is-active, .fd-button--transparent.fd-button--toggled[aria-selected=true], .fd-button--transparent.fd-button--toggled.is-selected, .fd-button--transparent.fd-button--toggled[aria-pressed=true], .fd-button--transparent.fd-button--toggled.is-pressed {
-  color: var(--sapButton_Selected_TextColor);
-  border-color: var(--sapButton_Selected_Hover_BorderColor);
-  background-color: var(--sapButton_Selected_Hover_Background);
+  --fdButtonColor: var(--sapButton_Selected_TextColor);
+  --fdButtonBorderColor: var(--sapButton_Selected_Hover_BorderColor);
+  --fdButtonBackgroundColor: var(--sapButton_Selected_Hover_Background);
+  --fdElementTextColor: var(--sapButton_Selected_TextColor);
+  --fdElementIconColor: var(--sapButton_Selected_TextColor);
   -webkit-box-shadow: var(--fdButton_Hover_Shadow);
           box-shadow: var(--fdButton_Hover_Shadow);
+}
+.fd-button--transparent.fd-button--toggled:active .fd-button__icon, .fd-button--transparent.fd-button--toggled.is-active .fd-button__icon, .fd-button--transparent.fd-button--toggled[aria-selected=true] .fd-button__icon, .fd-button--transparent.fd-button--toggled.is-selected .fd-button__icon, .fd-button--transparent.fd-button--toggled[aria-pressed=true] .fd-button__icon, .fd-button--transparent.fd-button--toggled.is-pressed .fd-button__icon {
+  color: var(--sapButton_Active_TextColor);
+  text-shadow: none;
 }
 .fd-button--transparent.fd-button--toggled[aria-disabled=true], .fd-button--transparent.fd-button--toggled.is-disabled, .fd-button--transparent.fd-button--toggled:disabled {
   -webkit-box-shadow: none;

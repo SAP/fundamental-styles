@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -303,6 +303,7 @@
   margin: 0;
   border: 0;
   color: var(--sapList_TextColor);
+  width: 100%;
 }
 .fd-grid-list .fd-grid-list__item-content::before, .fd-grid-list .fd-grid-list__item-content::after {
   -webkit-box-sizing: inherit;

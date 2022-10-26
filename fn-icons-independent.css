@@ -1,0 +1,974 @@
+/*!
+ * Fundamental Library Styles v0.25.0
+ * Copyright (c) 2022 SAP SE or an SAP affiliate company.
+ * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
+ */
+.fn-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-color: black;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.fn-icon--accelerated {
+  -webkit-mask-image: url("./fiori/fiori-accelerated.svg");
+}
+.fn-icon--accept {
+  -webkit-mask-image: url("./fiori/fiori-accept.svg");
+}
+.fn-icon--accidental-leave {
+  -webkit-mask-image: url("./fiori/fiori-accidental-leave.svg");
+}
+.fn-icon--account {
+  -webkit-mask-image: url("./fiori/fiori-account.svg");
+}
+.fn-icon--accounting-document-verification {
+  -webkit-mask-image: url("./fiori/fiori-accounting-document-verification.svg");
+}
+.fn-icon--activity-individual {
+  -webkit-mask-image: url("./fiori/fiori-activity-individual.svg");
+}
+.fn-icon--activity-items {
+  -webkit-mask-image: url("./fiori/fiori-activity-items.svg");
+}
+.fn-icon--add-activity {
+  -webkit-mask-image: url("./fiori/fiori-add-activity.svg");
+}
+.fn-icon--add-contact {
+  -webkit-mask-image: url("./fiori/fiori-add-contact.svg");
+}
+.fn-icon--add-folder {
+  -webkit-mask-image: url("./fiori/fiori-add-folder.svg");
+}
+.fn-icon--add-photo {
+  -webkit-mask-image: url("./fiori/fiori-add-photo.svg");
+}
+.fn-icon--add-process {
+  -webkit-mask-image: url("./fiori/fiori-add-process.svg");
+}
+.fn-icon--add-product {
+  -webkit-mask-image: url("./fiori/fiori-add-product.svg");
+}
+.fn-icon--add {
+  -webkit-mask-image: url("./fiori/fiori-add.svg");
+}
+.fn-icon--address-book {
+  -webkit-mask-image: url("./fiori/fiori-address-book.svg");
+}
+.fn-icon--appointment-2 {
+  -webkit-mask-image: url("./fiori/fiori-appointment-2.svg");
+}
+.fn-icon--appointment {
+  -webkit-mask-image: url("./fiori/fiori-appointment.svg");
+}
+.fn-icon--approvals {
+  -webkit-mask-image: url("./fiori/fiori-approvals.svg");
+}
+.fn-icon--area-chart {
+  -webkit-mask-image: url("./fiori/fiori-area-chart.svg");
+}
+.fn-icon--arobase {
+  -webkit-mask-image: url("./fiori/fiori-arobase.svg");
+}
+.fn-icon--attachment-audio {
+  -webkit-mask-image: url("./fiori/fiori-attachment-audio.svg");
+}
+.fn-icon--attachment-epub {
+  -webkit-mask-image: url("./fiori/fiori-attachment-epub.svg");
+}
+.fn-icon--attachment-html {
+  -webkit-mask-image: url("./fiori/fiori-attachment-html.svg");
+}
+.fn-icon--attachment-photo {
+  -webkit-mask-image: url("./fiori/fiori-attachment-photo.svg");
+}
+.fn-icon--attachment {
+  -webkit-mask-image: url("./fiori/fiori-attachment.svg");
+}
+.fn-icon--background {
+  -webkit-mask-image: url("./fiori/fiori-background.svg");
+}
+.fn-icon--badge {
+  -webkit-mask-image: url("./fiori/fiori-badge.svg");
+}
+.fn-icon--bar-chart {
+  -webkit-mask-image: url("./fiori/fiori-bar-chart.svg");
+}
+.fn-icon--barcode {
+  -webkit-mask-image: url("./fiori/fiori-barcode.svg");
+}
+.fn-icon--basket {
+  -webkit-mask-image: url("./fiori/fiori-basket.svg");
+}
+.fn-icon--bell {
+  -webkit-mask-image: url("./fiori/fiori-bell.svg");
+}
+.fn-icon--blank-tag-2 {
+  -webkit-mask-image: url("./fiori/fiori-blank-tag-2.svg");
+}
+.fn-icon--blank-tag {
+  -webkit-mask-image: url("./fiori/fiori-blank-tag.svg");
+}
+.fn-icon--blur {
+  -webkit-mask-image: url("./fiori/fiori-blur.svg");
+}
+.fn-icon--bo-strategy-management {
+  -webkit-mask-image: url("./fiori/fiori-bo-strategy-management.svg");
+}
+.fn-icon--bubble-chart {
+  -webkit-mask-image: url("./fiori/fiori-bubble-chart.svg");
+}
+.fn-icon--building {
+  -webkit-mask-image: url("./fiori/fiori-building.svg");
+}
+.fn-icon--bullet-text {
+  -webkit-mask-image: url("./fiori/fiori-bullet-text.svg");
+}
+.fn-icon--burglary {
+  -webkit-mask-image: url("./fiori/fiori-burglary.svg");
+}
+.fn-icon--bus-public-transport {
+  -webkit-mask-image: url("./fiori/fiori-bus-public-transport.svg");
+}
+.fn-icon--business-one {
+  -webkit-mask-image: url("./fiori/fiori-business-one.svg");
+}
+.fn-icon--busy {
+  -webkit-mask-image: url("./fiori/fiori-busy.svg");
+}
+.fn-icon--calendar {
+  -webkit-mask-image: url("./fiori/fiori-calendar.svg");
+}
+.fn-icon--call {
+  -webkit-mask-image: url("./fiori/fiori-call.svg");
+}
+.fn-icon--camera {
+  -webkit-mask-image: url("./fiori/fiori-camera.svg");
+}
+.fn-icon--card {
+  -webkit-mask-image: url("./fiori/fiori-card.svg");
+}
+.fn-icon--cargo-train {
+  -webkit-mask-image: url("./fiori/fiori-cargo-train.svg");
+}
+.fn-icon--cart-2 {
+  -webkit-mask-image: url("./fiori/fiori-cart-2.svg");
+}
+.fn-icon--cart-3 {
+  -webkit-mask-image: url("./fiori/fiori-cart-3.svg");
+}
+.fn-icon--cart {
+  -webkit-mask-image: url("./fiori/fiori-cart.svg");
+}
+.fn-icon--chain-link {
+  -webkit-mask-image: url("./fiori/fiori-chain-link.svg");
+}
+.fn-icon--chalkboard {
+  -webkit-mask-image: url("./fiori/fiori-chalkboard.svg");
+}
+.fn-icon--chart-axis {
+  -webkit-mask-image: url("./fiori/fiori-chart-axis.svg");
+}
+.fn-icon--chart-table-view {
+  -webkit-mask-image: url("./fiori/fiori-chart-table-view.svg");
+}
+.fn-icon--chart-tree-map {
+  -webkit-mask-image: url("./fiori/fiori-chart-tree-map.svg");
+}
+.fn-icon--chevron-phase-2 {
+  -webkit-mask-image: url("./fiori/fiori-chevron-phase-2.svg");
+}
+.fn-icon--chevron-phase {
+  -webkit-mask-image: url("./fiori/fiori-chevron-phase.svg");
+}
+.fn-icon--choropleth-chart {
+  -webkit-mask-image: url("./fiori/fiori-choropleth-chart.svg");
+}
+.fn-icon--circle-task-2 {
+  -webkit-mask-image: url("./fiori/fiori-circle-task-2.svg");
+}
+.fn-icon--circle-task {
+  -webkit-mask-image: url("./fiori/fiori-circle-task.svg");
+}
+.fn-icon--cloud {
+  -webkit-mask-image: url("./fiori/fiori-cloud.svg");
+}
+.fn-icon--co {
+  -webkit-mask-image: url("./fiori/fiori-co.svg");
+}
+.fn-icon--collaborate {
+  -webkit-mask-image: url("./fiori/fiori-collaborate.svg");
+}
+.fn-icon--collapse-all {
+  -webkit-mask-image: url("./fiori/fiori-collapse-all.svg");
+}
+.fn-icon--collapse {
+  -webkit-mask-image: url("./fiori/fiori-collapse.svg");
+}
+.fn-icon--column-chart-dual-axis {
+  -webkit-mask-image: url("./fiori/fiori-column-chart-dual-axis.svg");
+}
+.fn-icon--comment {
+  -webkit-mask-image: url("./fiori/fiori-comment.svg");
+}
+.fn-icon--commission-check {
+  -webkit-mask-image: url("./fiori/fiori-commission-check.svg");
+}
+.fn-icon--company-view {
+  -webkit-mask-image: url("./fiori/fiori-company-view.svg");
+}
+.fn-icon--compare {
+  -webkit-mask-image: url("./fiori/fiori-compare.svg");
+}
+.fn-icon--copy {
+  -webkit-mask-image: url("./fiori/fiori-copy.svg");
+}
+.fn-icon--course-book {
+  -webkit-mask-image: url("./fiori/fiori-course-book.svg");
+}
+.fn-icon--course-program {
+  -webkit-mask-image: url("./fiori/fiori-course-program.svg");
+}
+.fn-icon--create-1 {
+  -webkit-mask-image: url("./fiori/fiori-create 1.svg");
+}
+.fn-icon--create {
+  -webkit-mask-image: url("./fiori/fiori-create.svg");
+}
+.fn-icon--crm-service-manager {
+  -webkit-mask-image: url("./fiori/fiori-crm-service-manager.svg");
+}
+.fn-icon--crop {
+  -webkit-mask-image: url("./fiori/fiori-crop.svg");
+}
+.fn-icon--crossed-line-chart {
+  -webkit-mask-image: url("./fiori/fiori-crossed-line-chart.svg");
+}
+.fn-icon--curriculum {
+  -webkit-mask-image: url("./fiori/fiori-curriculum.svg");
+}
+.fn-icon--cursor-arrow {
+  -webkit-mask-image: url("./fiori/fiori-cursor-arrow.svg");
+}
+.fn-icon--customer-history {
+  -webkit-mask-image: url("./fiori/fiori-customer-history.svg");
+}
+.fn-icon--customer-order-entry {
+  -webkit-mask-image: url("./fiori/fiori-customer-order-entry.svg");
+}
+.fn-icon--customer-view {
+  -webkit-mask-image: url("./fiori/fiori-customer-view.svg");
+}
+.fn-icon--customize {
+  -webkit-mask-image: url("./fiori/fiori-customize.svg");
+}
+.fn-icon--database {
+  -webkit-mask-image: url("./fiori/fiori-database.svg");
+}
+.fn-icon--desktop-mobile {
+  -webkit-mask-image: url("./fiori/fiori-desktop-mobile.svg");
+}
+.fn-icon--detail-view {
+  -webkit-mask-image: url("./fiori/fiori-detail-view.svg");
+}
+.fn-icon--developer-settings {
+  -webkit-mask-image: url("./fiori/fiori-developer-settings.svg");
+}
+.fn-icon--dimension {
+  -webkit-mask-image: url("./fiori/fiori-dimension.svg");
+}
+.fn-icon--disconnected {
+  -webkit-mask-image: url("./fiori/fiori-disconnected.svg");
+}
+.fn-icon--doc-attachment {
+  -webkit-mask-image: url("./fiori/fiori-doc-attachment.svg");
+}
+.fn-icon--doctor {
+  -webkit-mask-image: url("./fiori/fiori-doctor.svg");
+}
+.fn-icon--document-text {
+  -webkit-mask-image: url("./fiori/fiori-document-text.svg");
+}
+.fn-icon--document {
+  -webkit-mask-image: url("./fiori/fiori-document.svg");
+}
+.fn-icon--documents {
+  -webkit-mask-image: url("./fiori/fiori-documents.svg");
+}
+.fn-icon--drill-down {
+  -webkit-mask-image: url("./fiori/fiori-drill-down.svg");
+}
+.fn-icon--drill-up {
+  -webkit-mask-image: url("./fiori/fiori-drill-up.svg");
+}
+.fn-icon--drop-down-list {
+  -webkit-mask-image: url("./fiori/fiori-drop-down-list.svg");
+}
+.fn-icon--dropdown {
+  -webkit-mask-image: url("./fiori/fiori-dropdown.svg");
+}
+.fn-icon--duplicate {
+  -webkit-mask-image: url("./fiori/fiori-duplicate.svg");
+}
+.fn-icon--education {
+  -webkit-mask-image: url("./fiori/fiori-education.svg");
+}
+.fn-icon--electrocardiogram {
+  -webkit-mask-image: url("./fiori/fiori-electrocardiogram.svg");
+}
+.fn-icon--electronic-medical-record {
+  -webkit-mask-image: url("./fiori/fiori-electronic-medical-record.svg");
+}
+.fn-icon--email-read {
+  -webkit-mask-image: url("./fiori/fiori-email-read.svg");
+}
+.fn-icon--email {
+  -webkit-mask-image: url("./fiori/fiori-email.svg");
+}
+.fn-icon--end-user-experience-monitoring {
+  -webkit-mask-image: url("./fiori/fiori-end-user-experience-monitoring.svg");
+}
+.fn-icon--endoscopy {
+  -webkit-mask-image: url("./fiori/fiori-endoscopy.svg");
+}
+.fn-icon--energy-saving-lightbulb {
+  -webkit-mask-image: url("./fiori/fiori-energy-saving-lightbulb.svg");
+}
+.fn-icon--enter-more {
+  -webkit-mask-image: url("./fiori/fiori-enter-more.svg");
+}
+.fn-icon--eraser {
+  -webkit-mask-image: url("./fiori/fiori-eraser.svg");
+}
+.fn-icon--expand-all {
+  -webkit-mask-image: url("./fiori/fiori-expand-all.svg");
+}
+.fn-icon--expand-group {
+  -webkit-mask-image: url("./fiori/fiori-expand-group.svg");
+}
+.fn-icon--expense-report {
+  -webkit-mask-image: url("./fiori/fiori-expense-report.svg");
+}
+.fn-icon--explorer {
+  -webkit-mask-image: url("./fiori/fiori-explorer.svg");
+}
+.fn-icon--factory {
+  -webkit-mask-image: url("./fiori/fiori-factory.svg");
+}
+.fn-icon--fax-machine {
+  -webkit-mask-image: url("./fiori/fiori-fax-machine.svg");
+}
+.fn-icon--feed {
+  -webkit-mask-image: url("./fiori/fiori-feed.svg");
+}
+.fn-icon--feeder-arrow {
+  -webkit-mask-image: url("./fiori/fiori-feeder-arrow.svg");
+}
+.fn-icon--filter-analytics {
+  -webkit-mask-image: url("./fiori/fiori-filter-analytics.svg");
+}
+.fn-icon--filter {
+  -webkit-mask-image: url("./fiori/fiori-filter.svg");
+}
+.fn-icon--folder-blank {
+  -webkit-mask-image: url("./fiori/fiori-folder-blank.svg");
+}
+.fn-icon--folder-full {
+  -webkit-mask-image: url("./fiori/fiori-folder-full.svg");
+}
+.fn-icon--folder {
+  -webkit-mask-image: url("./fiori/fiori-folder.svg");
+}
+.fn-icon--form {
+  -webkit-mask-image: url("./fiori/fiori-form.svg");
+}
+.fn-icon--forward {
+  -webkit-mask-image: url("./fiori/fiori-forward.svg");
+}
+.fn-icon--future {
+  -webkit-mask-image: url("./fiori/fiori-future.svg");
+}
+.fn-icon--fx {
+  -webkit-mask-image: url("./fiori/fiori-fx.svg");
+}
+.fn-icon--gantt-bars {
+  -webkit-mask-image: url("./fiori/fiori-gantt-bars.svg");
+}
+.fn-icon--general-leave-request {
+  -webkit-mask-image: url("./fiori/fiori-general-leave-request.svg");
+}
+.fn-icon--generate-shortcut {
+  -webkit-mask-image: url("./fiori/fiori-generate-shortcut.svg");
+}
+.fn-icon--group-2 {
+  -webkit-mask-image: url("./fiori/fiori-group-2.svg");
+}
+.fn-icon--group {
+  -webkit-mask-image: url("./fiori/fiori-group.svg");
+}
+.fn-icon--header {
+  -webkit-mask-image: url("./fiori/fiori-header.svg");
+}
+.fn-icon--heading-1 {
+  -webkit-mask-image: url("./fiori/fiori-heading1.svg");
+}
+.fn-icon--heading-2 {
+  -webkit-mask-image: url("./fiori/fiori-heading2.svg");
+}
+.fn-icon--hide {
+  -webkit-mask-image: url("./fiori/fiori-hide.svg");
+}
+.fn-icon--hint {
+  -webkit-mask-image: url("./fiori/fiori-hint.svg");
+}
+.fn-icon--history {
+  -webkit-mask-image: url("./fiori/fiori-history.svg");
+}
+.fn-icon--home-share {
+  -webkit-mask-image: url("./fiori/fiori-home-share.svg");
+}
+.fn-icon--home {
+  -webkit-mask-image: url("./fiori/fiori-home.svg");
+}
+.fn-icon--horizontal-stacked-chart {
+  -webkit-mask-image: url("./fiori/fiori-horizontal-stacked-chart.svg");
+}
+.fn-icon--horizontal-waterfall-chart {
+  -webkit-mask-image: url("./fiori/fiori-horizontal-waterfall-chart.svg");
+}
+.fn-icon--hr-approval {
+  -webkit-mask-image: url("./fiori/fiori-hr-approval.svg");
+}
+.fn-icon--idea-wall {
+  -webkit-mask-image: url("./fiori/fiori-idea-wall.svg");
+}
+.fn-icon--image-viewer {
+  -webkit-mask-image: url("./fiori/fiori-image-viewer.svg");
+}
+.fn-icon--initiative {
+  -webkit-mask-image: url("./fiori/fiori-initiative.svg");
+}
+.fn-icon--inspect-down {
+  -webkit-mask-image: url("./fiori/fiori-inspect-down.svg");
+}
+.fn-icon--inspect {
+  -webkit-mask-image: url("./fiori/fiori-inspect.svg");
+}
+.fn-icon--inspection {
+  -webkit-mask-image: url("./fiori/fiori-inspection.svg");
+}
+.fn-icon--instance {
+  -webkit-mask-image: url("./fiori/fiori-instance.svg");
+}
+.fn-icon--ipad-2 {
+  -webkit-mask-image: url("./fiori/fiori-iPad-2.svg");
+}
+.fn-icon--ipad {
+  -webkit-mask-image: url("./fiori/fiori-iPad.svg");
+}
+.fn-icon--iphone-2 {
+  -webkit-mask-image: url("./fiori/fiori-iPhone-2.svg");
+}
+.fn-icon--iphone {
+  -webkit-mask-image: url("./fiori/fiori-iPhone.svg");
+}
+.fn-icon--it-host {
+  -webkit-mask-image: url("./fiori/fiori-it-host.svg");
+}
+.fn-icon--journey-arrive {
+  -webkit-mask-image: url("./fiori/fiori-journey-arrive.svg");
+}
+.fn-icon--journey-change {
+  -webkit-mask-image: url("./fiori/fiori-journey-change.svg");
+}
+.fn-icon--journey-depart {
+  -webkit-mask-image: url("./fiori/fiori-journey-depart.svg");
+}
+.fn-icon--key-user-setting {
+  -webkit-mask-image: url("./fiori/fiori-key-user-setting.svg");
+}
+.fn-icon--key {
+  -webkit-mask-image: url("./fiori/fiori-key.svg");
+}
+.fn-icon--lead-outdated {
+  -webkit-mask-image: url("./fiori/fiori-lead-outdated.svg");
+}
+.fn-icon--lead {
+  -webkit-mask-image: url("./fiori/fiori-lead.svg");
+}
+.fn-icon--leades {
+  -webkit-mask-image: url("./fiori/fiori-leades.svg");
+}
+.fn-icon--learning-assistant {
+  -webkit-mask-image: url("./fiori/fiori-learning-assistant.svg");
+}
+.fn-icon--legend {
+  -webkit-mask-image: url("./fiori/fiori-legend.svg");
+}
+.fn-icon--line-chart-time-axis {
+  -webkit-mask-image: url("./fiori/fiori-line-chart-time-axis.svg");
+}
+.fn-icon--line-charts {
+  -webkit-mask-image: url("./fiori/fiori-line-charts.svg");
+}
+.fn-icon--list {
+  -webkit-mask-image: url("./fiori/fiori-list.svg");
+}
+.fn-icon--loan {
+  -webkit-mask-image: url("./fiori/fiori-loan.svg");
+}
+.fn-icon--locate-me {
+  -webkit-mask-image: url("./fiori/fiori-locate-me.svg");
+}
+.fn-icon--map-2 {
+  -webkit-mask-image: url("./fiori/fiori-map-2.svg");
+}
+.fn-icon--map-3 {
+  -webkit-mask-image: url("./fiori/fiori-map-3.svg");
+}
+.fn-icon--map {
+  -webkit-mask-image: url("./fiori/fiori-map.svg");
+}
+.fn-icon--master-task-triangle {
+  -webkit-mask-image: url("./fiori/fiori-master-task-triangle.svg");
+}
+.fn-icon--media-forward {
+  -webkit-mask-image: url("./fiori/fiori-media-forward.svg");
+}
+.fn-icon--media-pause {
+  -webkit-mask-image: url("./fiori/fiori-media-pause.svg");
+}
+.fn-icon--media-play {
+  -webkit-mask-image: url("./fiori/fiori-media-play.svg");
+}
+.fn-icon--media-reverse {
+  -webkit-mask-image: url("./fiori/fiori-media-reverse.svg");
+}
+.fn-icon--media-rewind {
+  -webkit-mask-image: url("./fiori/fiori-media-rewind.svg");
+}
+.fn-icon--megaphone {
+  -webkit-mask-image: url("./fiori/fiori-megaphone.svg");
+}
+.fn-icon--message-popup {
+  -webkit-mask-image: url("./fiori/fiori-message-popup.svg");
+}
+.fn-icon--message-success {
+  -webkit-mask-image: url("./fiori/fiori-message-success.svg");
+}
+.fn-icon--message-warning {
+  -webkit-mask-image: url("./fiori/fiori-message-warning.svg");
+}
+.fn-icon--microphone {
+  -webkit-mask-image: url("./fiori/fiori-microphone.svg");
+}
+.fn-icon--mileage {
+  -webkit-mask-image: url("./fiori/fiori-mileage.svg");
+}
+.fn-icon--move {
+  -webkit-mask-image: url("./fiori/fiori-move.svg");
+}
+.fn-icon--mri-scan {
+  -webkit-mask-image: url("./fiori/fiori-mri-scan.svg");
+}
+.fn-icon--multi-select {
+  -webkit-mask-image: url("./fiori/fiori-multi-select.svg");
+}
+.fn-icon--multiple-bar-chart {
+  -webkit-mask-image: url("./fiori/fiori-multiple-bar-chart.svg");
+}
+.fn-icon--multiple-line-chart {
+  -webkit-mask-image: url("./fiori/fiori-multiple-line-chart.svg");
+}
+.fn-icon--my-view {
+  -webkit-mask-image: url("./fiori/fiori-my-view.svg");
+}
+.fn-icon--nav-back {
+  -webkit-mask-image: url("./fiori/fiori-nav-back.svg");
+}
+.fn-icon--navigation-down-arrow {
+  -webkit-mask-image: url("./fiori/fiori-navigation-down-arrow.svg");
+}
+.fn-icon--navigation-left-arrow {
+  -webkit-mask-image: url("./fiori/fiori-navigation-left-arrow.svg");
+}
+.fn-icon--navigation-right-arrow {
+  -webkit-mask-image: url("./fiori/fiori-navigation-right-arrow.svg");
+}
+.fn-icon--notification-2 {
+  -webkit-mask-image: url("./fiori/fiori-notification-2.svg");
+}
+.fn-icon--notification {
+  -webkit-mask-image: url("./fiori/fiori-notification.svg");
+}
+.fn-icon--number-1 {
+  -webkit-mask-image: url("./fiori/fiori-number 1.svg");
+}
+.fn-icon--number {
+  -webkit-mask-image: url("./fiori/fiori-number.svg");
+}
+.fn-icon--nurse {
+  -webkit-mask-image: url("./fiori/fiori-nurse.svg");
+}
+.fn-icon--opportunities {
+  -webkit-mask-image: url("./fiori/fiori-opportunities.svg");
+}
+.fn-icon--opportunity {
+  -webkit-mask-image: url("./fiori/fiori-opportunity.svg");
+}
+.fn-icon--order-status {
+  -webkit-mask-image: url("./fiori/fiori-order-status.svg");
+}
+.fn-icon--org-chart {
+  -webkit-mask-image: url("./fiori/fiori-org-chart.svg");
+}
+.fn-icon--outbox {
+  -webkit-mask-image: url("./fiori/fiori-outbox.svg");
+}
+.fn-icon--paging {
+  -webkit-mask-image: url("./fiori/fiori-paging.svg");
+}
+.fn-icon--paid-leave {
+  -webkit-mask-image: url("./fiori/fiori-paid-leave.svg");
+}
+.fn-icon--palette {
+  -webkit-mask-image: url("./fiori/fiori-palette.svg");
+}
+.fn-icon--paper-plane {
+  -webkit-mask-image: url("./fiori/fiori-paper-plane.svg");
+}
+.fn-icon--passenger-train {
+  -webkit-mask-image: url("./fiori/fiori-passenger-train.svg");
+}
+.fn-icon--pdf-reader {
+  -webkit-mask-image: url("./fiori/fiori-pdf-reader.svg");
+}
+.fn-icon--pending {
+  -webkit-mask-image: url("./fiori/fiori-pending.svg");
+}
+.fn-icon--per-diem {
+  -webkit-mask-image: url("./fiori/fiori-per-diem.svg");
+}
+.fn-icon--performance {
+  -webkit-mask-image: url("./fiori/fiori-performance.svg");
+}
+.fn-icon--permission {
+  -webkit-mask-image: url("./fiori/fiori-permission.svg");
+}
+.fn-icon--physical-activity {
+  -webkit-mask-image: url("./fiori/fiori-physical-activity.svg");
+}
+.fn-icon--picture {
+  -webkit-mask-image: url("./fiori/fiori-picture.svg");
+}
+.fn-icon--pie-chart {
+  -webkit-mask-image: url("./fiori/fiori-pie-chart.svg");
+}
+.fn-icon--pipeline-analysis {
+  -webkit-mask-image: url("./fiori/fiori-pipeline-analysis.svg");
+}
+.fn-icon--pixelate {
+  -webkit-mask-image: url("./fiori/fiori-pixelate.svg");
+}
+.fn-icon--ppt-attachment {
+  -webkit-mask-image: url("./fiori/fiori-ppt-attachment.svg");
+}
+.fn-icon--present {
+  -webkit-mask-image: url("./fiori/fiori-present.svg");
+}
+.fn-icon--primary-key {
+  -webkit-mask-image: url("./fiori/fiori-primary-key.svg");
+}
+.fn-icon--print {
+  -webkit-mask-image: url("./fiori/fiori-print.svg");
+}
+.fn-icon--private {
+  -webkit-mask-image: url("./fiori/fiori-private.svg");
+}
+.fn-icon--project-definition-triangle-2 {
+  -webkit-mask-image: url("./fiori/fiori-project-definition-triangle-2.svg");
+}
+.fn-icon--projector {
+  -webkit-mask-image: url("./fiori/fiori-projector.svg");
+}
+.fn-icon--provision {
+  -webkit-mask-image: url("./fiori/fiori-provision.svg");
+}
+.fn-icon--pull-down {
+  -webkit-mask-image: url("./fiori/fiori-pull-down.svg");
+}
+.fn-icon--pushpin-off {
+  -webkit-mask-image: url("./fiori/fiori-pushpin-off.svg");
+}
+.fn-icon--receipt {
+  -webkit-mask-image: url("./fiori/fiori-receipt.svg");
+}
+.fn-icon--record {
+  -webkit-mask-image: url("./fiori/fiori-record.svg");
+}
+.fn-icon--redo-1 {
+  -webkit-mask-image: url("./fiori/fiori-redo 1.svg");
+}
+.fn-icon--redo {
+  -webkit-mask-image: url("./fiori/fiori-redo.svg");
+}
+.fn-icon--repost {
+  -webkit-mask-image: url("./fiori/fiori-repost.svg");
+}
+.fn-icon--resize-vertical {
+  -webkit-mask-image: url("./fiori/fiori-resize-vertical.svg");
+}
+.fn-icon--response {
+  -webkit-mask-image: url("./fiori/fiori-response.svg");
+}
+.fn-icon--responsive-1 {
+  -webkit-mask-image: url("./fiori/fiori-responsive 1.svg");
+}
+.fn-icon--responsive {
+  -webkit-mask-image: url("./fiori/fiori-responsive.svg");
+}
+.fn-icon--retail-store {
+  -webkit-mask-image: url("./fiori/fiori-retail-store.svg");
+}
+.fn-icon--sales-notification {
+  -webkit-mask-image: url("./fiori/fiori-sales-notification.svg");
+}
+.fn-icon--sales-order-item {
+  -webkit-mask-image: url("./fiori/fiori-sales-order-item.svg");
+}
+.fn-icon--sales-order {
+  -webkit-mask-image: url("./fiori/fiori-sales-order.svg");
+}
+.fn-icon--sales-quote {
+  -webkit-mask-image: url("./fiori/fiori-sales-quote.svg");
+}
+.fn-icon--sap-box {
+  -webkit-mask-image: url("./fiori/fiori-sap-box.svg");
+}
+.fn-icon--screen-split-one {
+  -webkit-mask-image: url("./fiori/fiori-screen-split-one.svg");
+}
+.fn-icon--screen-split-three {
+  -webkit-mask-image: url("./fiori/fiori-screen-split-three.svg");
+}
+.fn-icon--screen-split-two {
+  -webkit-mask-image: url("./fiori/fiori-screen-split-two.svg");
+}
+.fn-icon--search {
+  -webkit-mask-image: url("./fiori/fiori-search.svg");
+}
+.fn-icon--settings {
+  -webkit-mask-image: url("./fiori/fiori-settings.svg");
+}
+.fn-icon--shortcut {
+  -webkit-mask-image: url("./fiori/fiori-shortcut.svg");
+}
+.fn-icon--show-edit {
+  -webkit-mask-image: url("./fiori/fiori-show-edit.svg");
+}
+.fn-icon--show {
+  -webkit-mask-image: url("./fiori/fiori-show.svg");
+}
+.fn-icon--simple-payment {
+  -webkit-mask-image: url("./fiori/fiori-simple-payment.svg");
+}
+.fn-icon--simulate {
+  -webkit-mask-image: url("./fiori/fiori-simulate.svg");
+}
+.fn-icon--sonography {
+  -webkit-mask-image: url("./fiori/fiori-sonography.svg");
+}
+.fn-icon--sort-ascending {
+  -webkit-mask-image: url("./fiori/fiori-sort-ascending.svg");
+}
+.fn-icon--sort-descending {
+  -webkit-mask-image: url("./fiori/fiori-sort-descending.svg");
+}
+.fn-icon--sort {
+  -webkit-mask-image: url("./fiori/fiori-sort.svg");
+}
+.fn-icon--sorting-ranking {
+  -webkit-mask-image: url("./fiori/fiori-sorting-ranking.svg");
+}
+.fn-icon--status-critical {
+  -webkit-mask-image: url("./fiori/fiori-status-critical.svg");
+}
+.fn-icon--status-error {
+  -webkit-mask-image: url("./fiori/fiori-status-error.svg");
+}
+.fn-icon--status-in-process {
+  -webkit-mask-image: url("./fiori/fiori-status-in-process.svg");
+}
+.fn-icon--status-inactive {
+  -webkit-mask-image: url("./fiori/fiori-status-inactive.svg");
+}
+.fn-icon--status-negative {
+  -webkit-mask-image: url("./fiori/fiori-status-negative.svg");
+}
+.fn-icon--study-leave {
+  -webkit-mask-image: url("./fiori/fiori-study-leave.svg");
+}
+.fn-icon--subway-train {
+  -webkit-mask-image: url("./fiori/fiori-subway-train.svg");
+}
+.fn-icon--suitcase {
+  -webkit-mask-image: url("./fiori/fiori-suitcase.svg");
+}
+.fn-icon--supplier {
+  -webkit-mask-image: url("./fiori/fiori-supplier.svg");
+}
+.fn-icon--survey {
+  -webkit-mask-image: url("./fiori/fiori-survey.svg");
+}
+.fn-icon--sys-add {
+  -webkit-mask-image: url("./fiori/fiori-sys-add.svg");
+}
+.fn-icon--sys-back-2 {
+  -webkit-mask-image: url("./fiori/fiori-sys-back-2.svg");
+}
+.fn-icon--sys-back {
+  -webkit-mask-image: url("./fiori/fiori-sys-back.svg");
+}
+.fn-icon--sys-cancel-2 {
+  -webkit-mask-image: url("./fiori/fiori-sys-cancel-2.svg");
+}
+.fn-icon--sys-cancel {
+  -webkit-mask-image: url("./fiori/fiori-sys-cancel.svg");
+}
+.fn-icon--sys-help-2 {
+  -webkit-mask-image: url("./fiori/fiori-sys-help-2.svg");
+}
+.fn-icon--sys-help {
+  -webkit-mask-image: url("./fiori/fiori-sys-help.svg");
+}
+.fn-icon--sys-last-page {
+  -webkit-mask-image: url("./fiori/fiori-sys-last-page.svg");
+}
+.fn-icon--sys-minus {
+  -webkit-mask-image: url("./fiori/fiori-sys-minus.svg");
+}
+.fn-icon--sys-monitor {
+  -webkit-mask-image: url("./fiori/fiori-sys-monitor.svg");
+}
+.fn-icon--table-column {
+  -webkit-mask-image: url("./fiori/fiori-table-column.svg");
+}
+.fn-icon--table-row {
+  -webkit-mask-image: url("./fiori/fiori-table-row.svg");
+}
+.fn-icon--table-view {
+  -webkit-mask-image: url("./fiori/fiori-table-view.svg");
+}
+.fn-icon--tag-cloud-chart {
+  -webkit-mask-image: url("./fiori/fiori-tag-cloud-chart.svg");
+}
+.fn-icon--tag {
+  -webkit-mask-image: url("./fiori/fiori-tag.svg");
+}
+.fn-icon--temperature {
+  -webkit-mask-image: url("./fiori/fiori-temperature.svg");
+}
+.fn-icon--text-align-center {
+  -webkit-mask-image: url("./fiori/fiori-text-align-center.svg");
+}
+.fn-icon--text-align-justified {
+  -webkit-mask-image: url("./fiori/fiori-text-align-justified.svg");
+}
+.fn-icon--text-align-left {
+  -webkit-mask-image: url("./fiori/fiori-text-align-left.svg");
+}
+.fn-icon--text {
+  -webkit-mask-image: url("./fiori/fiori-text.svg");
+}
+.fn-icon--thumb-down {
+  -webkit-mask-image: url("./fiori/fiori-thumb-down.svg");
+}
+.fn-icon--thumb-up {
+  -webkit-mask-image: url("./fiori/fiori-thumb-up.svg");
+}
+.fn-icon--time-account {
+  -webkit-mask-image: url("./fiori/fiori-time-account.svg");
+}
+.fn-icon--time-entry-request {
+  -webkit-mask-image: url("./fiori/fiori-time-entry-request.svg");
+}
+.fn-icon--time-overdue {
+  -webkit-mask-image: url("./fiori/fiori-time-overdue.svg");
+}
+.fn-icon--tools-opportunity {
+  -webkit-mask-image: url("./fiori/fiori-tools-opportunity.svg");
+}
+.fn-icon--touch {
+  -webkit-mask-image: url("./fiori/fiori-touch.svg");
+}
+.fn-icon--travel-expense-report {
+  -webkit-mask-image: url("./fiori/fiori-travel-expense-report.svg");
+}
+.fn-icon--travel-expense {
+  -webkit-mask-image: url("./fiori/fiori-travel-expense.svg");
+}
+.fn-icon--travel-itinerary {
+  -webkit-mask-image: url("./fiori/fiori-travel-itinerary.svg");
+}
+.fn-icon--two-keys {
+  -webkit-mask-image: url("./fiori/fiori-two-keys.svg");
+}
+.fn-icon--ui-notifications {
+  -webkit-mask-image: url("./fiori/fiori-ui-notifications.svg");
+}
+.fn-icon--umbrella {
+  -webkit-mask-image: url("./fiori/fiori-umbrella.svg");
+}
+.fn-icon--underline-text {
+  -webkit-mask-image: url("./fiori/fiori-underline-text.svg");
+}
+.fn-icon--undo {
+  -webkit-mask-image: url("./fiori/fiori-undo.svg");
+}
+.fn-icon--upload-to-cloud {
+  -webkit-mask-image: url("./fiori/fiori-upload-to-cloud.svg");
+}
+.fn-icon--upload {
+  -webkit-mask-image: url("./fiori/fiori-upload.svg");
+}
+.fn-icon--upstacked-chart {
+  -webkit-mask-image: url("./fiori/fiori-upstacked-chart.svg");
+}
+.fn-icon--user-edit {
+  -webkit-mask-image: url("./fiori/fiori-user-edit.svg");
+}
+.fn-icon--user-settings {
+  -webkit-mask-image: url("./fiori/fiori-user-settings.svg");
+}
+.fn-icon--vertical-bar-chart-2 {
+  -webkit-mask-image: url("./fiori/fiori-vertical-bar-chart-2.svg");
+}
+.fn-icon--vertical-bullet-chart {
+  -webkit-mask-image: url("./fiori/fiori-vertical-bullet-chart.svg");
+}
+.fn-icon--vertical-grip {
+  -webkit-mask-image: url("./fiori/fiori-vertical-grip.svg");
+}
+.fn-icon--vertical-stacked-chart {
+  -webkit-mask-image: url("./fiori/fiori-vertical-stacked-chart.svg");
+}
+.fn-icon--vertical-waterfall-chart {
+  -webkit-mask-image: url("./fiori/fiori-vertical-waterfall-chart.svg");
+}
+.fn-icon--warning-2 {
+  -webkit-mask-image: url("./fiori/fiori-warning-2.svg");
+}
+.fn-icon--washing-machine {
+  -webkit-mask-image: url("./fiori/fiori-washing-machine.svg");
+}
+.fn-icon--weather-proofing {
+  -webkit-mask-image: url("./fiori/fiori-weather-proofing.svg");
+}
+.fn-icon--web-cam {
+  -webkit-mask-image: url("./fiori/fiori-web-cam.svg");
+}
+.fn-icon--widgets {
+  -webkit-mask-image: url("./fiori/fiori-widgets.svg");
+}

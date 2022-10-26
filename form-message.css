@@ -1,5 +1,5 @@
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -29,6 +29,12 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem;
   min-width: 6rem;
   max-width: 22rem;
@@ -51,6 +57,18 @@
 [dir=rtl] .fd-form-message, .fd-form-message[dir=rtl] {
   right: 0;
 }
+[dir=rtl] .fd-form-message::before, .fd-form-message[dir=rtl]::before {
+  margin-right: 0;
+  margin-left: 0.375rem;
+}
+.fd-form-message::before {
+  display: var(--fdMessage_Icon_Display);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 0.375rem;
+  font-family: "SAP-icons";
+  font-size: 1rem;
+}
 .fd-form-message--static {
   margin-top: 0;
   display: table;
@@ -59,12 +77,28 @@
 .fd-form-message--error {
   background-color: var(--sapErrorBackground);
 }
+.fd-form-message--error::before {
+  content: "\e0b1";
+  color: var(--sapNegativeElementColor);
+}
 .fd-form-message--warning {
   background-color: var(--sapWarningBackground);
+}
+.fd-form-message--warning::before {
+  content: "\e201";
+  color: var(--sapCriticalElementColor);
 }
 .fd-form-message--success {
   background-color: var(--sapSuccessBackground);
 }
+.fd-form-message--success::before {
+  content: "\e203";
+  color: var(--sapPositiveElementColor);
+}
 .fd-form-message--information {
   background-color: var(--sapInformationBackground);
+}
+.fd-form-message--information::before {
+  content: "\e202";
+  color: var(--sapInformativeElementColor);
 }

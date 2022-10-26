@@ -1,7 +1,7 @@
 
 @charset "UTF-8";
 /*!
- * Fundamental Library Styles v0.24.4
+ * Fundamental Library Styles v0.25.0
  * Copyright (c) 2022 SAP SE or an SAP affiliate company.
  * Licensed under Apache License 2.0 (https://github.com/SAP/fundamental-styles/blob/main/LICENSE)
  */
@@ -299,6 +299,7 @@
   margin: 0;
   border: 0;
   font-size: var(--sapFontHeader5Size);
+  white-space: break-spaces;
 }
 .fd-notification__limit--title::before, .fd-notification__limit--title::after {
   -webkit-box-sizing: inherit;
@@ -317,6 +318,7 @@
   margin: 0;
   border: 0;
   margin: 0.5rem 0 0;
+  white-space: break-spaces;
 }
 .fd-notification__limit--description::before, .fd-notification__limit--description::after {
   -webkit-box-sizing: inherit;
@@ -409,11 +411,17 @@
   margin: 0;
   border: 0;
   overflow: hidden;
+  height: 100%;
 }
 .fd-notification--group::before, .fd-notification--group::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   font-size: inherit;
+}
+.fd-notification--group .fd-notification__body:last-of-type {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .fd-notification--group .fd-notification__body {
   padding: 1rem 0.5rem 1rem 1rem;
@@ -459,6 +467,11 @@
 .fd-notification--mobile {
   padding: 0;
 }
+.fd-notification--mobile .fd-notification__body:last-of-type {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .fd-notification--mobile .fd-notification__indicator {
   padding-right: 0.25rem;
 }
@@ -482,4 +495,15 @@
 [dir=rtl] .fd-notification--mobile .fd-notification__content, .fd-notification--mobile .fd-notification__content[dir=rtl] {
   margin-right: 0.75rem;
   margin-left: 0;
+}
+.fd-notification--in-dialog {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 0;
+  border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.fd-notification--in-dialog:last-of-type {
+  border-bottom: none;
 }
