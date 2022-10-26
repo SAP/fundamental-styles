@@ -1,6 +1,10 @@
 name: "Chromatic"
 on: push
 
+env:
+  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+  NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+
 jobs:
   test:
     if: "contains(github.event.head_commit.message, '[ci visual]') || contains(github.event.head_commit.message, 'chore(deps-dev)') || github.event.ref == 'refs/heads/main'"

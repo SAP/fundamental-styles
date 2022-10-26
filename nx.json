@@ -9,7 +9,8 @@
           "stylelint",
           "build",
           "build-visual"
-        ]
+        ],
+        "accessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ="
       }
     }
   },
