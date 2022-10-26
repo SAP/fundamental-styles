@@ -18,7 +18,7 @@ dist-fn
 dist-fn-icons
 dist-common-css
 node_modules
-stories/*/*.visual.js
-*.visual.js
+stories/*/*.visual.ts
+*.visual.ts
 *.accessibility.test.js
 introduction.stories.mdx

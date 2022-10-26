@@ -1,0 +1,22 @@
+@import "common-settings";
+@import "common-mixins";
+
+$block: #{$sap-namespace}-padding;
+
+.#{$block} {
+  @include sap-padding();
+
+  @each $type, $value in $sap-paddings {
+    &-x-#{$type} {
+      @include sap-padding(#{$type}, x);
+    }
+  }
+
+  &-responsive {
+    @include sap-padding-responsive();
+  }
+
+  &-none {
+    @include sap-padding(0);
+  }
+}

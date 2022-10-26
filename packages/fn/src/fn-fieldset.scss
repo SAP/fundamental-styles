@@ -1,0 +1,26 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-fieldset;
+
+.#{$block} {
+  @include fn-reset();
+  @include fn-flex(column);
+
+  label:not(:last-child) {
+    margin-bottom: 0.375rem;
+  }
+
+  &--horizontal {
+    @include fn-flex(row);
+
+    label:not(:last-child) {
+      @include fn-set-margin-right($fn-margin-medium);
+    }
+  }
+
+  &--full-width {
+    label {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "workspace-plugins",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/workspace-plugins/src",
+    "projectType": "library",
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": [
+                    "packages/workspace-plugins/**/*.ts",
+                    "packages/workspace-plugins/generators.json",
+                    "packages/workspace-plugins/executors.json",
+                    "packages/workspace-plugins/package.json"
+                ]
+            }
+        }
+    },
+    "tags": []
+}

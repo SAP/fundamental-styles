@@ -1,0 +1,8 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+@each $type in $sap-display-types {
+  .#{$sap-namespace}-display-#{$type} {
+    @include sap-display(#{$type});
+  }
+}

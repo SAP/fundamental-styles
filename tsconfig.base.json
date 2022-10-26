@@ -1,0 +1,53 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist/out-tsc",
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "module": "commonjs",
+        "strictNullChecks": true,
+        "noImplicitAny": false,
+        "alwaysStrict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "downlevelIteration": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "typeRoots": ["node_modules/@types"],
+        "lib": ["es2018", "dom"],
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "react",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "common-css": ["packages/common-css"],
+            "fn": ["packages/fn", "packages/fn/index.ts"],
+            "fundamental-styles/configuration": ["packages/configuration/src/index.ts"],
+            "fundamental-styles/doc-ui": ["packages/doc-ui/src/index.ts"],
+            "fundamental-styles/storybook": ["packages/storybook/src/index.ts"],
+            "fundamental-styles/storybook/current-package": ["packages/storybook/src/lib/addons/current-package"],
+            "fundamental-styles/utils": ["packages/utils/src/index.ts"],
+            "icons": ["packages/icons"],
+            "styles": ["packages/styles", "packages/styles/index.ts"],
+            "theming-preview": ["packages/theming-preview/src/index.js"],
+            "workspace-plugins": ["packages/workspace-plugins/src/index.ts"]
+        },
+        "skipLibCheck": true
+    },
+    "ts-node": {
+        "require": ["tsconfig-paths/register"],
+        "compilerOptions": {
+            "module": "CommonJS"
+        },
+        "transpileOnly": true
+    },
+    "exclude": ["node_modules", "tmp"]
+}

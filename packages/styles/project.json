@@ -1,0 +1,70 @@
+{
+    "name": "styles",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/styles/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "workspace-plugins:build",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "source": "packages/styles/src",
+                "outputPath": "dist/packages/styles",
+                "assets": [
+                    "packages/styles/*.md",
+                    {
+                        "glob": "**/*",
+                        "input": "packages/styles/src/images",
+                        "output": "dist/images"
+                    }
+                ]
+            },
+            "configurations": {
+                "production": {
+                    "minify": true
+                }
+            }
+        },
+        "build-visual": {
+            "executor": "workspace-plugins:visual-stories",
+            "options": {
+                "themes": [
+                    "sap_fiori_3",
+                    "sap_fiori_3_hcb",
+                    "sap_horizon"
+                ],
+                "excludedStoriesKinds": [
+                    "^(Helpers|Dev)"
+                ]
+            },
+            "outputs": ["stories/Visuals/styles"]
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/styles/**/*.ts"]
+            }
+        },
+        "stylelint": {
+            "executor": "nx-stylelint:lint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/styles/**/*.scss"]
+            }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "vitest packages/styles/tests --run"
+            }
+        },
+        "update-storyshots": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "vitest styles.test.ts --run -u"
+            }
+        }
+    },
+    "tags": ["lib:styles", "has:stories"]
+}

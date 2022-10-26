@@ -1,0 +1,44 @@
+{
+    "name": "common-css",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/common-css/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "workspace-plugins:build",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "source": "packages/common-css/src",
+                "outputPath": "dist/packages/common-css",
+                "assets": [
+                    "packages/common-css/*.md",
+                    {
+                        "glob": "_common-mixins.scss",
+                        "input": "packages/common-css/src",
+                        "output": "dist/sass"
+                    }
+                ]
+            },
+            "configurations": {
+                "production": {
+                    "minify": true
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/common-css/**/*.ts"]
+            }
+        },
+        "stylelint": {
+            "executor": "nx-stylelint:lint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/common-css/**/*.scss"]
+            }
+        }
+    },
+    "tags": []
+}

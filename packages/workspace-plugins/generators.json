@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "name": "workspace-plugins",
+    "version": "0.0.1",
+    "generators": {
+        "theming-preview": {
+            "factory": "./src/generators/theming-preview/generator",
+            "schema": "./src/generators/theming-preview/schema.json",
+            "description": "Theming preview generator"
+        }
+    }
+}

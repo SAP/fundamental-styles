@@ -1,0 +1,42 @@
+@import "fn-settings";
+
+$block: #{$fn-namespace}-step-input;
+
+.#{$block} {
+  @include fn-flex();
+
+  width: 8rem;
+
+  .#{$block}__text-field {
+    @include fn-set-paddings-x-equal(1.625rem);
+
+    text-align: right;
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    @include fn-rtl() {
+      text-align: left;
+    }
+
+    &.is-display {
+      @include fn-set-paddings-x-equal(0);
+
+      text-align: unset;
+    }
+  }
+
+  &.is-display {
+    button {
+      display: none;
+    }
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+}

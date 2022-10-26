@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Storyshots Introduction Overview 1`] = `
-<div
-  dir="ltr"
->
-  <div />
-</div>
-`;
