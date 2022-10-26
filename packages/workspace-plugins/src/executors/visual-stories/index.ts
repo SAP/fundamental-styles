@@ -15,6 +15,7 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
     const workspaceRootPath = workspaceRoot.replace(/\\/g, '/');
     const storiesFiles = glob.sync(`${projectRoot}/stories/**/*.stories.+(js|jsx|ts|tsx)`, { nodir: true });
     const themes = (projectsThemes[projectName]?.themes || []).filter((theme) => schema.themes.includes(theme.value));
+    const excludedStoriesKinds = (schema.excludedStoriesKinds || []).map((pattern) => new RegExp(pattern));
     if (themes.length === 0) {
         throw new Error(`No themes found for project ${projectName}`);
     }
@@ -27,17 +28,39 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
             filename: storyFileName,
             presets: ['@babel/preset-react', '@babel/preset-typescript']
         });
+        let fullTitle = '';
         let storyTitle = '';
+        let visualDisabled;
         traverse(babelParsedStoryFile, {
-            ObjectProperty: (objectPropertyPath) => {
-                const key = (objectPropertyPath.node.key as types.Identifier).name;
-                const value = (objectPropertyPath.node.value as types.StringLiteral).value;
-                if (key === 'title') {
-                    storyTitle = value.split('/').reverse()[0];
-                    objectPropertyPath.stop();
-                }
+            ExportDefaultDeclaration(path) {
+                path.traverse({
+                    ObjectProperty: (objectPropertyPath) => {
+                        const key = (objectPropertyPath.node.key as types.Identifier).name;
+                        if (key === 'title') {
+                            const titleValue = (objectPropertyPath.node.value as types.StringLiteral).value;
+                            fullTitle = titleValue;
+                            storyTitle = titleValue.split('/').reverse()[0];
+                        }
+                        if (key === 'parameters') {
+                            const parametersExpression = objectPropertyPath.node.value as types.ObjectExpression;
+                            visualDisabled = parametersExpression.properties.some((property: any) => {
+                                return property.key.name === 'visualDisabled' && property.value.value === true;
+                            });
+                        }
+                        if (storyTitle && typeof visualDisabled !== 'undefined') {
+                            path.stop();
+                        }
+                    }
+                });
             }
         });
+        visualDisabled = visualDisabled || excludedStoriesKinds.some((pattern) => pattern.test(fullTitle));
+
+        if (visualDisabled) {
+            logger.info(`Skipping ${fullTitle} because it is disabled`);
+            continue;
+        }
+
         const { className, fileName: fileBaseName } = names(storyTitle);
         const getFileName = (theme) =>
             `${workspaceRootPath}/stories/Visuals/${parsedStoryFileName.dir.replace(
@@ -53,7 +76,8 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
                 );
                 return `${path.dirname(relativeStoryFilePath)}/${path.basename(relativeStoryFilePath, '')}`;
             })();
-            const fileContent = format(`
+            const fileContent = format(
+                `
         import * as stories from '${relativeStoryFilePath}';
         import { visualStory, withThemeProvider } from 'fundamental-styles/storybook';
         
@@ -67,7 +91,9 @@ export default async function (schema: VisualStoriesSchema, context: ExecutorCon
             decorators: [withThemeProvider]
         };
         export const ${className} = visualStory(stories);
-        `, {parser: 'babel-ts'});
+        `,
+                { parser: 'babel-ts' }
+            );
             outputFileSync(visualStoryFileName, fileContent);
             logger.info(`✅ Created ${visualStoryFileName}`);
         }

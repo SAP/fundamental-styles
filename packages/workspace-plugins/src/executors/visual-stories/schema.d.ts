@@ -1,3 +1,4 @@
 export interface VisualStoriesSchema {
-    themes: string[]
+    themes: string[];
+    excludedStoriesKinds: string[];
 }

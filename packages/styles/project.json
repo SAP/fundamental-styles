@@ -32,6 +32,9 @@
                     "sap_fiori_3",
                     "sap_fiori_3_hcb",
                     "sap_horizon"
+                ],
+                "excludedStoriesKinds": [
+                    "^(Helpers|Dev)"
                 ]
             },
             "outputs": ["stories/Visuals/styles"]
