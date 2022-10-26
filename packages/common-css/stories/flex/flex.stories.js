@@ -1,6 +1,6 @@
-import '../../../../common-css/src/sap-flex.scss';
+import '../../src/sap-flex.scss';
 export default {
-    title: 'Helpers/Flex',
+    title: 'Flex',
     parameters: {
         description: `The Flexbox Layout, commonly known as Flex, provides an efficient way to align and distribute elements within a container.
 `
@@ -183,10 +183,13 @@ FlexAlignContent.parameters = {
         description: {
             story: `
 <table>
+    <thead>
     <tr>
         <th>Modifier Class</th>
         <th>Description</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td><code>.sap-flex--align-content-flex-start</code> | <code>.sap-flex--align-content-start</code></td>
         <td>pack items to the start of the container</td>
@@ -220,6 +223,7 @@ FlexAlignContent.parameters = {
         <td><code>.sap-flex--align-content-baseline</code></td>
         <td>items are distributed along their content's baseline</td>
     </tr>
+    </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
 <code>@include sap-flex-align-content(type)</code>;<br>
@@ -314,10 +318,13 @@ FlexAlignItems.parameters = {
         description: {
             story: `
 <table>
+    <thead>
     <tr>
         <th>Modifier Class</th>
         <th>Description</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td><code>.sap-flex--align-items-flex-start</code> | <code>.sap-flex--align-items-start</code> | <code>.sap-flex--align-items-self-start</code></td>
         <td>items are placed at the start of the cross axis</td>
@@ -338,6 +345,7 @@ FlexAlignItems.parameters = {
         <td><code>.sap-flex--align-items-baseline</code></td>
         <td>items are aligned such as their baselines align</td>
     </tr>
+    </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
 <code>@include sap-flex-align-items(type)</code>;<br>
@@ -425,10 +433,13 @@ FlexDirection.parameters = {
         description: {
             story: `To specify the direction of the items placed in the flex container use one of the following modifier classes: <br><br>
             <table>
+                <thead>
                 <tr>
                     <th>Modifier Class</th>
                     <th>Description</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td><code>.sap-flex--row</code></td>
                     <td>(default) left to right in LTR; right to left in RTL</td>
@@ -445,6 +456,7 @@ FlexDirection.parameters = {
                     <td><code>.sap-flex--column-reverse</code></td>
                     <td>bottom to top</td>
                 </tr>
+                </tbody>
             </table>
             <b>SCSS Mixin:</b> <code>@include sap-flex(direction)</code>; <br>
             where <code>direction</code> can be one of the following values: <code>row (default) | row-reverse | column | column-reverse</code>
@@ -538,10 +550,13 @@ FlexGap.parameters = {
         description: {
             story: `
 <table>
+    <thead>
     <tr>
         <th>Modifier Class</th>
         <th>Description</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td><code>.sap-flex--gap-tiny</code></td>
         <td>the gap is 0.5rem</td>
@@ -590,11 +605,13 @@ FlexGap.parameters = {
         <td><code>.sap-flex--column-gap-large</code></td>
         <td>the gap between the columns is 3rem</td>
     </tr>
+    </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
 <code>@include sap-flex-gap(value, type)</code>;<br>
 where <code>type</code> is an optional parameter and can be one of the two: <code>row | column </code>. <br> The <code>value</code> can be <code>tiny | small | medium | large</code> or any custom value specified by the user. <br>
 <table>
+    <tbody>
     <tr>
         <td>tiny</td>
         <td>0.5rem</td>
@@ -611,6 +628,7 @@ where <code>type</code> is an optional parameter and can be one of the two: <cod
         <td>large</td>
         <td>3rem</td>
     </tr>
+    </tbody>
 </table>`
         }
     }
@@ -689,10 +707,13 @@ FlexJustify.parameters = {
         description: {
             story: `
 <table>
+    <thead>
     <tr>
         <th>Modifier Class</th>
         <th>Description</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td><code>.sap-flex--justify-flex-start</code> | <code>.sap-flex--justify-start</code></td>
         <td>(default) pack items toward the start of the flex-direction</td>
@@ -725,8 +746,7 @@ FlexJustify.parameters = {
         <td><code>.sap-flex--justify-space-evenly</code></td>
         <td>items are distributed so that they have equal space around</td>
     </tr>
-
-
+    </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
 <code>@include sap-flex-justify(type)</code>;<br>
@@ -788,10 +808,13 @@ FlexWrap.parameters = {
         description: {
             story: `
 <table>
+    <thead>
     <tr>
         <th>Modifier Class</th>
         <th>Description</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td><code>.sap-flex--nowrap</code></td>
         <td>(default) all children items fit onto one line</td>
@@ -804,6 +827,7 @@ FlexWrap.parameters = {
         <td><code>.sap-flex--wrap-reverse</code></td>
         <td>items will wrap onto multiple lines, bottom to top</td>
     </tr>
+    </tbody>
 </table><br>
 <b>SCSS Mixin:</b> 
 <code>@include sap-flex-wrap(type)</code>;<br>

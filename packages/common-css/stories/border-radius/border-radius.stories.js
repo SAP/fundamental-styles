@@ -1,7 +1,7 @@
-import 'common-css/src/sap-border-radius.scss';
+import '../../src/sap-border-radius.scss';
 
 export default {
-    title: 'Helpers/Border Radius',
+    title: 'Border Radius',
     parameters: {
         description: `
 <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">

@@ -1,5 +1,5 @@
 export default {
-    title: 'Helpers/Border',
+    title: 'Border',
     parameters: {
         description: `
       `,
