@@ -3,10 +3,10 @@
     "name": "workspace-plugins",
     "version": "0.0.1",
     "generators": {
-        "theming-preview": {
-            "factory": "./src/generators/theming-preview/generator",
-            "schema": "./src/generators/theming-preview/schema.json",
-            "description": "Theming preview generator"
+        "create-package": {
+            "factory": "./src/generators/create-package/generator",
+            "schema": "./src/generators/create-package/schema.json",
+            "description": "Create package generator"
         }
     }
 }
