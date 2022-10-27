@@ -1,3 +1,12 @@
+## [0.25.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.5...v0.25.1-rc.6) (2022-10-27)
+
+
+### Features
+
+* **styles:** created new package CX ([#3967](https://github.com/SAP/fundamental-styles/issues/3967)) ([6a374d9](https://github.com/SAP/fundamental-styles/commit/6a374d9f1316e29e56f527cb84970b7ae6849d5f))
+
+
+
 ## [0.25.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.4...v0.25.1-rc.5) (2022-10-27)
 
 
