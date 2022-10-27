@@ -28,6 +28,7 @@
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
         "paths": {
+            "@fundamental-styles/cx": ["packages/cx"],
             "common-css": ["packages/common-css"],
             "fn": ["packages/fn", "packages/fn/index.ts"],
             "fundamental-styles/configuration": ["packages/configuration/src/index.ts"],

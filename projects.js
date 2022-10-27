@@ -1,5 +1,4 @@
 import { projects } from './workspace.json';
-
 export const themes = {
     styles: {
         defaultTheme: 'sap_horizon',
@@ -43,16 +42,16 @@ export const themes = {
         ]
     }
 };
-
 const projectNames = {
     styles: 'SAP Fiori',
     fn: 'BTP Experimental Design',
-    ['common-css']: 'Common CSS'
+    ['common-css']: 'Common CSS',
+    cx: 'CX'
 };
-
 export default Object.keys(projects).reduce((acc, projectName) => {
-    const themesConfig = themes[projectName] || { themes: [] };
-
+    const themesConfig = themes[projectName] || {
+        themes: []
+    };
     acc[projectName] = {
         value: projectName,
         title: projectNames[projectName] || null,

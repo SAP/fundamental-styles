@@ -1,16 +1,17 @@
 {
-  "extends": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "common-css": "packages/common-css",
-    "configuration": "packages/configuration",
-    "doc-ui": "packages/doc-ui",
-    "fn": "packages/fn",
-    "fn-icons": "packages/icons",
-    "storybook": "packages/storybook",
-    "styles": "packages/styles",
-    "theming-preview": "packages/theming-preview",
-    "utils": "packages/utils",
-    "workspace-plugins": "packages/workspace-plugins"
-  }
+    "extends": "./node_modules/nx/schemas/workspace-schema.json",
+    "version": 2,
+    "projects": {
+        "common-css": "packages/common-css",
+        "configuration": "packages/configuration",
+        "cx": "packages/cx",
+        "doc-ui": "packages/doc-ui",
+        "fn": "packages/fn",
+        "fn-icons": "packages/icons",
+        "storybook": "packages/storybook",
+        "styles": "packages/styles",
+        "theming-preview": "packages/theming-preview",
+        "utils": "packages/utils",
+        "workspace-plugins": "packages/workspace-plugins"
+    }
 }
