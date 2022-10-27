@@ -1,3 +1,12 @@
+## [0.25.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.6...v0.25.1-rc.7) (2022-10-27)
+
+
+### Bug Fixes
+
+* **styles:** add flex-center to list-title-text [ci visual] ([#3956](https://github.com/SAP/fundamental-styles/issues/3956)) ([6c9870e](https://github.com/SAP/fundamental-styles/commit/6c9870ee0bc00d071218a7415aaa15d6d65a078b))
+
+
+
 ## [0.25.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.5...v0.25.1-rc.6) (2022-10-27)
 
 
