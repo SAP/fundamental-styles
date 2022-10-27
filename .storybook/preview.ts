@@ -58,6 +58,9 @@ export const parameters = {
     },
     options: {
         storySort: (a, b) => {
+            // We have to be extra specific here because Storybook compiler is pulling
+            // this function from the context of the file and executes it in absolutely isolated environment.
+            // So we have to declare variables inside function and not declare it in upper scope.
             const storiesOrderByPackage = [
                 'styles',
                 'fn',
