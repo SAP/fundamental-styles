@@ -1,6 +1,6 @@
 import {withCssResources} from '@storybook/addon-cssresources';
 import {DocsContainer} from '@storybook/addon-docs';
-import fundamentals from './custom/constants/fundamentals';
+import { fundamentalTheme } from 'fundamental-styles/storybook';
 import {MainDocPage} from "./MainDocPage";
 import {directionalities} from "fundamental-styles/configuration";
 import {withDirectionality, withThemeProvider} from "fundamental-styles/storybook";
@@ -46,7 +46,7 @@ export const parameters = {
     docs: {
         container: DocsContainer,
         page: MainDocPage,
-        theme: fundamentals,
+        theme: fundamentalTheme,
         transformSource: (src) => {
             // we strip out the () =>` ` from the story
             // so that the source can be formatted and
@@ -57,8 +57,30 @@ export const parameters = {
         }
     },
     options: {
-        storySort: {
-            order: ['Introduction', '*']
+        storySort: (a, b) => {
+            // We have to be extra specific here because Storybook compiler is pulling
+            // this function from the context of the file and executes it in absolutely isolated environment.
+            // So we have to declare variables inside function and not declare it in upper scope.
+            const storiesOrderByPackage = [
+                'styles',
+                'fn',
+                'common-css'
+            ];
+            const aPackage = storiesOrderByPackage.indexOf(a.importPath.split('/')[2]);
+            const bPackage = storiesOrderByPackage.indexOf(b.importPath.split('/')[2]);
+            if (aPackage === -1 && bPackage === -1) {
+                if (a.title === 'Introduction') {
+                    return -1
+                }
+                if (b.title === 'Introduction') {
+                    return 1
+                }
+                return a.id.localeCompare(b.id, undefined, { numeric: true });
+            }
+            if (aPackage === -1 || bPackage === -1) {
+                return aPackage === -1 ? -1 : 1;
+            }
+            return aPackage - bPackage;
         },
         initialActive: 'docs'
     }
