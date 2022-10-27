@@ -57,8 +57,27 @@ export const parameters = {
         }
     },
     options: {
-        storySort: {
-            order: ['Introduction', '*']
+        storySort: (a, b) => {
+            const storiesOrderByPackage = [
+                'styles',
+                'fn',
+                'common-css'
+            ];
+            const aPackage = storiesOrderByPackage.indexOf(a.importPath.split('/')[2]);
+            const bPackage = storiesOrderByPackage.indexOf(b.importPath.split('/')[2]);
+            if (aPackage === -1 && bPackage === -1) {
+                if (a.title === 'Introduction') {
+                    return -1
+                }
+                if (b.title === 'Introduction') {
+                    return 1
+                }
+                return a.id.localeCompare(b.id, undefined, { numeric: true });
+            }
+            if (aPackage === -1 || bPackage === -1) {
+                return aPackage === -1 ? -1 : 1;
+            }
+            return aPackage - bPackage;
         },
         initialActive: 'docs'
     }
