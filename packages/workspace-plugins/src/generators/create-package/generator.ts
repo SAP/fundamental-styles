@@ -77,6 +77,7 @@ export default async function (tree: Tree, schema: CreatePackageSchema) {
         logger.info(`
         Next steps:
         - Open ${workspaceRoot}/projects.js file and confirm that name is correct'
+        - Open '.storybook/preview.ts' file and add your package to the order of the packages. Key for new package is '${namings.fileName}'
         - Commit changes
         `);
     };
