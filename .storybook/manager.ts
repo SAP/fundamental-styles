@@ -1,12 +1,11 @@
 import { addons } from '@storybook/addons';
-
-import fundamentals from './custom/constants/fundamentals';
+import fundamentalTheme from '../packages/storybook/src/lib/fundamentals';
 
 addons.setConfig({
   sidebar: {
     showRoots: false
   },
-  theme: fundamentals
+  theme: fundamentalTheme
 });
 
 window.addEventListener('load', () => {

@@ -1,13 +1,15 @@
 import './IntroductionPage.scss';
-import {Community, Footer, Header, Versions} from 'fundamental-styles/doc-ui';
-import Readme from '../../README.md';
+import Header from '../Header';
+import Community from '../Community';
+import Versions from '../Versions';
+import Footer from '../Footer';
 
-export const IntroductionPage = () => {
+export const IntroductionPage = ({content}) => {
     return (
         <>
             <Header/>
             <div className="fd-introduction">
-                <Readme/>
+                {content}
             </div>
             <Community/>
             <Versions/>

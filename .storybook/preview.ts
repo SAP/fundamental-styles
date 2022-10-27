@@ -1,6 +1,6 @@
 import {withCssResources} from '@storybook/addon-cssresources';
 import {DocsContainer} from '@storybook/addon-docs';
-import fundamentals from './custom/constants/fundamentals';
+import { fundamentalTheme } from 'fundamental-styles/storybook';
 import {MainDocPage} from "./MainDocPage";
 import {directionalities} from "fundamental-styles/configuration";
 import {withDirectionality, withThemeProvider} from "fundamental-styles/storybook";
@@ -46,7 +46,7 @@ export const parameters = {
     docs: {
         container: DocsContainer,
         page: MainDocPage,
-        theme: fundamentals,
+        theme: fundamentalTheme,
         transformSource: (src) => {
             // we strip out the () =>` ` from the story
             // so that the source can be formatted and

@@ -1,6 +1,6 @@
 import { Tree } from 'nx/src/generators/tree';
 import { CreatePackageSchema } from './schema';
-import { formatFiles, generateFiles, getWorkspacePath, names, updateJson } from '@nrwl/devkit';
+import { formatFiles, generateFiles, getWorkspacePath, logger, names, updateJson, workspaceRoot } from '@nrwl/devkit';
 import { parse } from '@babel/parser';
 import traverse from '@babel/traverse';
 import { types } from '@babel/core';
@@ -74,6 +74,10 @@ export default async function (tree: Tree, schema: CreatePackageSchema) {
 
     await formatFiles(tree);
     return () => {
-        // nothing to see here
+        logger.info(`
+        Next steps:
+        - Open ${workspaceRoot}/projects.js file and confirm that name is correct'
+        - Commit changes
+        `);
     };
 }
