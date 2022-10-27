@@ -1,0 +1,37 @@
+{
+    "name": "cx",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/cx/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "workspace-plugins:build",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "source": "packages/cx/src",
+                "outputPath": "dist/packages/cx",
+                "assets": ["packages/cx/*.md"]
+            },
+            "configurations": {
+                "production": {
+                    "minify": true
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/cx/**/*.ts"]
+            }
+        },
+        "stylelint": {
+            "executor": "nx-stylelint:lint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/cx/**/*.scss"]
+            }
+        }
+    },
+    "tags": []
+}

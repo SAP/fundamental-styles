@@ -1,61 +1,51 @@
 {
-  "extends": "nx/presets/npm.json",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "parallel": 5,
-        "cacheableOperations": [
-          "stylelint",
-          "build",
-          "build-visual"
-        ],
-        "accessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ="
-      }
-    }
-  },
-  "workspaceLayout": {
-    "libsDir": "packages",
-    "appsDir": "apps"
-  },
-  "targetDefaults": {
-    "build": {
-      "dependsOn": [
-        "^build"
-      ]
+    "extends": "nx/presets/npm.json",
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@nrwl/nx-cloud",
+            "options": {
+                "parallel": 5,
+                "cacheableOperations": ["stylelint", "build", "build-visual"],
+                "accessToken": "MzM5YTVjNjAtNDlkMC00OTg0LWFkM2UtZWM5NDcyYTYzZDcyfHJlYWQ="
+            }
+        }
     },
-    "test": {
-      "inputs": [
-        "default",
-        "^default",
-        "{workspaceRoot}/jest.preset.js"
-      ]
-    }
-  },
-  "affected": {
-    "defaultBase": "main"
-  },
-  "implicitDependencies": {
-    "package.json": "*",
-    ".stylelintrc.json": "*"
-  },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "babel": true
-      }
+    "workspaceLayout": {
+        "libsDir": "packages",
+        "appsDir": "apps"
     },
-    "@nrwl/web:application": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "none",
-      "e2eTestRunner": "none"
+    "targetDefaults": {
+        "build": {
+            "dependsOn": ["^build"]
+        },
+        "test": {
+            "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+        }
     },
-    "@nrwl/web:library": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "none"
-    }
-  },
-  "defaultProject": "theming-preview"
+    "affected": {
+        "defaultBase": "main"
+    },
+    "implicitDependencies": {
+        "package.json": "*",
+        ".stylelintrc.json": "*"
+    },
+    "generators": {
+        "@nrwl/react": {
+            "application": {
+                "babel": true
+            }
+        },
+        "@nrwl/web:application": {
+            "style": "scss",
+            "linter": "eslint",
+            "unitTestRunner": "none",
+            "e2eTestRunner": "none"
+        },
+        "@nrwl/web:library": {
+            "style": "scss",
+            "linter": "eslint",
+            "unitTestRunner": "none"
+        }
+    },
+    "defaultProject": "theming-preview"
 }
