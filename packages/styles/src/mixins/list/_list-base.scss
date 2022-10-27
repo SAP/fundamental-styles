@@ -127,6 +127,10 @@
       flex-basis: auto;
     }
 
+    .#{$block }__title-text {
+      @include fd-flex-center();
+    }
+
     ~ .#{$block}__icon {
       @include fd-set-margin-right(-1rem);
     }
