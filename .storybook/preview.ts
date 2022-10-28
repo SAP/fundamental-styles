@@ -64,6 +64,7 @@ export const parameters = {
             const storiesOrderByPackage = [
                 'styles',
                 'fn',
+                'cx',
                 'common-css'
             ];
             const aPackage = storiesOrderByPackage.indexOf(a.importPath.split('/')[2]);
