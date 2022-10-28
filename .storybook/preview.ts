@@ -94,6 +94,7 @@ export const globalTypes = {
     },
     ['styles-theme']: {},
     ['fn-theme']: {},
+    ['common-css-theme']: {},
     directionality: {
         name: 'Directionality',
         description: 'Directionality of components',
