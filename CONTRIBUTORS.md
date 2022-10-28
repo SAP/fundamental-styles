@@ -26,6 +26,10 @@ project and sync versions of the packages. It is used in the `build` script in t
 * `workspace-plugins:visual-stories` executor creates visual stories for regression testing.
 * `workspace-plugins:build-theming-preview` executor builds the theming preview package. **it is only for that**
 
+## Generators
+Generators are used to create new files in the workspace.
+* `workspace-plugins:create-package` generator creates new package in the workspace.
+
 ## Package types
 There are two types of `publishable` packages:
 * Packages that have stories attached to them

@@ -29,7 +29,7 @@ addons.register(ADDON_ID, (api) => {
         }
         return originalStories.reduce((acc, [storyId, story]) => {
             const owner = getOwnerOfStory(story);
-            if (!owner || owner.value === packageId) {
+            if (owner?.value === packageId) {
                 acc[storyId] = story;
             }
             return acc;

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "cli": "nx",
+    "$id": "CreatePackage",
+    "title": "",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the package."
+        },
+        "hasStories": {
+            "type": "boolean",
+            "description": "Whether or not it will have stories and as a result added to the storybook."
+        },
+        "importPath": {
+            "type": "string",
+            "description": "The package.json name of the package"
+        }
+    },
+    "required": ["name", "importPath"]
+}

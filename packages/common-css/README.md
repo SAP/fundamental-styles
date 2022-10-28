@@ -1,5 +1,3 @@
-# Fundamental Library Common CSS Package
-
 ## What is Fundamental Library Common CSS?
 
 Fundamental Library Common CSS Package holds all the CSS style rules of the library that are recognized by older browsers—as well as the newer browsers. It creates the style rules for the basic elements on a page, such as a (link) elements, p (paragraph) elements, h1 (header) elements etc. The package is based on the DRY (Don't Repeat Yourself) methodology which allows the developers to not repeat the same CSS rules overall in the library. 
@@ -38,11 +36,3 @@ media-queries
 padding
 shadow
 typography
-
-
-
-
-
-
-
-

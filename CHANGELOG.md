@@ -1,3 +1,29 @@
+## [0.25.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.7...v0.25.1-rc.8) (2022-10-28)
+
+
+
+## [0.25.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.6...v0.25.1-rc.7) (2022-10-27)
+
+
+### Bug Fixes
+
+* **styles:** add flex-center to list-title-text [ci visual] ([#3956](https://github.com/SAP/fundamental-styles/issues/3956)) ([6c9870e](https://github.com/SAP/fundamental-styles/commit/6c9870ee0bc00d071218a7415aaa15d6d65a078b))
+
+
+
+## [0.25.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.5...v0.25.1-rc.6) (2022-10-27)
+
+
+### Features
+
+* **styles:** created new package CX ([#3967](https://github.com/SAP/fundamental-styles/issues/3967)) ([6a374d9](https://github.com/SAP/fundamental-styles/commit/6a374d9f1316e29e56f527cb84970b7ae6849d5f))
+
+
+
+## [0.25.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.4...v0.25.1-rc.5) (2022-10-27)
+
+
+
 ## [0.25.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.3...v0.25.1-rc.4) (2022-10-27)
 
 

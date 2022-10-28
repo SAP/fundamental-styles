@@ -1,88 +1,88 @@
 name: Create hotfix release
 
 on:
-  push:
-    branches:
-      - hotfix_tmp_branch_for_automated_release_do_not_use
+    push:
+        branches:
+            - hotfix_tmp_branch_for_automated_release_do_not_use
 
 env:
-  NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
-  NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+    NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
+    NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_AUTH_TOKEN }}
 
 jobs:
-  run-release:
-    name: Run release
-    runs-on: ubuntu-latest
-    steps:
-      - name: Fetch from origin repo
-        uses: actions/checkout@v3
-        with:
-          ref: hotfix_tmp_branch_for_automated_release_do_not_use # always fetch from hotfix temporary branch
-          fetch-depth: 0
-          token: ${{ secrets.GHACTIONS }}
+    run-release:
+        name: Run release
+        runs-on: ubuntu-latest
+        steps:
+            - name: Fetch from origin repo
+              uses: actions/checkout@v3
+              with:
+                  ref: hotfix_tmp_branch_for_automated_release_do_not_use # always fetch from hotfix temporary branch
+                  fetch-depth: 0
+                  token: ${{ secrets.GHACTIONS }}
 
-      - name: Using CI env flags
-        id: ciEnv
-        run: .ci-env/flags.sh
+            - name: Using CI env flags
+              id: ciEnv
+              run: .ci-env/flags.sh
 
-      - name: Setup Node.js and Cache
-        uses: ./.github/actions/nodejs
+            - name: Setup Node.js and Cache
+              uses: ./.github/actions/nodejs
 
-      - name: Bump Version
-        id: bumpVersion
-        uses: ./.github/actions/bump-version
-        with:
-          isPrerelease: false
-          writeFile: true
+            - name: Bump Version
+              id: bumpVersion
+              uses: ./.github/actions/bump-version
+              with:
+                  isPrerelease: false
+                  writeFile: true
 
-      - name: Lint
-        run: npm run lint
+            - name: Lint
+              run: npm run lint
 
-      - name: Build
-        uses: ./.github/actions/build
+            - name: Build
+              uses: ./.github/actions/build
 
-      - name: Update Changelog
-        run: npx conventional-changelog-cli -p angular -i CHANGELOG.md -s
+            - name: Update Changelog
+              run: npx conventional-changelog-cli -p angular -i CHANGELOG.md -s
 
-      - name: Publish packages to NPM
-        uses: ./.github/actions/npm-publish
-        with:
-          packagePaths: "dist/packages/styles,dist/packages/common-css,dist/packages/fn,dist/packages/icons,dist/packages/theming-preview"
-          isHotfix: ${{ steps.ciEnv.outputs.isLatest }}
-          token: ${{ secrets.NPM_TOKEN }}
+            - name: Publish packages to NPM
+              uses: ./.github/actions/npm-publish
+              with:
+                  packagePaths: 'dist/packages/styles,dist/packages/common-css,dist/packages/fn,dist/packages/icons,dist/packages/theming-preview,dist/packages/cx'
+                  isHotfix: ${{ steps.ciEnv.outputs.isLatest }}
+                  token: ${{ secrets.NPM_TOKEN }}
 
-      - uses: ./.github/actions/set-up-git
-        name: Set up git user
-        with:
-          name: ${{ secrets.GH_NAME }}
-          email: ${{ secrets.GH_EMAIL }}
+            - uses: ./.github/actions/set-up-git
+              name: Set up git user
+              with:
+                  name: ${{ secrets.GH_NAME }}
+                  email: ${{ secrets.GH_EMAIL }}
 
-      - name: Commit Changes
-        run: |
-          git add .
-          git commit -m "chore(release): release v${{ steps.bumpVersion.outputs.newVersion }} [ci skip]" --no-verify
-          git tag -a v${{ steps.bumpVersion.outputs.newVersion }} -m "chore(release): release v${{ steps.bumpVersion.outputs.newVersion }} [ci skip]"
-          git push origin v${{ steps.bumpVersion.outputs.newVersion }}
+            - name: Commit Changes
+              run: |
+                  git add .
+                  git commit -m "chore(release): release v${{ steps.bumpVersion.outputs.newVersion }} [ci skip]" --no-verify
+                  git tag -a v${{ steps.bumpVersion.outputs.newVersion }} -m "chore(release): release v${{ steps.bumpVersion.outputs.newVersion }} [ci skip]"
+                  git push origin v${{ steps.bumpVersion.outputs.newVersion }}
 
-      - name: Delete temporary branch
-        run: |
-          git push origin --delete hotfix_tmp_branch_for_automated_release_do_not_use
+            - name: Delete temporary branch
+              run: |
+                  git push origin --delete hotfix_tmp_branch_for_automated_release_do_not_use
 
-      - name: Generate Release Body
-        id: generate_body
-        uses: ./.github/actions/generate-conventional-release-notes
+            - name: Generate Release Body
+              id: generate_body
+              uses: ./.github/actions/generate-conventional-release-notes
 
-      - name: Create Release
-        uses: ncipollo/release-action@v1.10.0
-        with:
-          prerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
-          tag: v${{ steps.bumpVersion.outputs.newVersion }}
-          body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
+            - name: Create Release
+              uses: ncipollo/release-action@v1.10.0
+              with:
+                  prerelease: ${{ steps.bumpVersion.outputs.isPrerelease }}
+                  tag: v${{ steps.bumpVersion.outputs.newVersion }}
+                  body: ${{ steps.generate_body.outputs.generatedReleaseNotes }}
 
-      - if: ${{ steps.ciEnv.outputs.isLatest }}
-        name: Update version on main
-        uses: ./.github/actions/update-version-on-main
-        with:
-          name: ${{ secrets.GH_NAME }}
-          email: ${{ secrets.GH_EMAIL }}
-          token: ${{ secrets.GHACTIONS }}
+            - if: ${{ steps.ciEnv.outputs.isLatest }}
+              name: Update version on main
+              uses: ./.github/actions/update-version-on-main
+              with:
+                  name: ${{ secrets.GH_NAME }}
+                  email: ${{ secrets.GH_EMAIL }}
+                  token: ${{ secrets.GHACTIONS }}
