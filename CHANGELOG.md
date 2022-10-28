@@ -1,3 +1,12 @@
+## [0.25.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.9...v0.25.1-rc.10) (2022-10-28)
+
+
+### Features
+
+* **common-css:** add overflow and elevation to common css ([#3970](https://github.com/SAP/fundamental-styles/issues/3970)) ([11e883b](https://github.com/SAP/fundamental-styles/commit/11e883bd8e2edd239f91b98cee1a1c0f853a8a04))
+
+
+
 ## [0.25.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.8...v0.25.1-rc.9) (2022-10-28)
 
 
