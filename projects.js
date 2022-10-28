@@ -40,6 +40,19 @@ export const themes = {
                 title: 'Quartz High Contrast Black'
             }
         ]
+    },
+    ['common-css']: {
+        defaultTheme: 'sap_horizon',
+        themes: [
+            {
+                value: 'sap_horizon',
+                title: 'Morning Horizon'
+            },
+            {
+                value: 'sap_fiori_3',
+                title: 'Quartz Light'
+            }
+        ]
     }
 };
 const projectNames = {
