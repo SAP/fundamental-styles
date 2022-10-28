@@ -1,0 +1,54 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-overflow;
+
+.#{$block} {
+  &-visible {
+    overflow: visible;
+  }
+
+  &-hidden {
+    overflow: hidden;
+  }
+
+  &-scroll {
+    overflow: scroll;
+  }
+
+  &-auto {
+    overflow: auto;
+  }
+
+  &-x-visible {
+    overflow-x: visible;
+  }
+
+  &-x-hidden {
+    overflow-x: hidden;
+  }
+
+  &-x-scroll {
+    overflow-x: scroll;
+  }
+
+  &-x-auto {
+    overflow-x: auto;
+  }
+
+  &-y-visible {
+    overflow-y: visible;
+  }
+
+  &-y-hidden {
+    overflow-y: hidden;
+  }
+
+  &-y-scroll {
+    overflow-y: scroll;
+  }
+
+  &-y-auto {
+    overflow-y: auto;
+  }
+}
