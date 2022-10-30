@@ -65,7 +65,7 @@
     "@nrwl/nx-cloud": "15.0.0",
     "@nrwl/nx-plugin": "15.0.0",
     "@nrwl/react": "15.0.0",
-    "@nrwl/web": "15.0.0",
+    "@nrwl/web": "15.0.4",
     "@sap-theming/theming-base-content": "11.1.41",
     "@storybook/addon-a11y": "6.5.13",
     "@storybook/addon-actions": "6.5.13",
