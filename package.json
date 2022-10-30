@@ -85,7 +85,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^9.0.0",
     "babel-plugin-jsx": "^1.2.0",
     "babel-plugin-named-exports-order": "^0.0.2",
     "bundlesize": "^0.18.1",
