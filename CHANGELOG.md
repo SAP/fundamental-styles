@@ -1,3 +1,12 @@
+## [0.25.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.10...v0.25.1-rc.11) (2022-10-31)
+
+
+### Features
+
+* **styles:** add border to the Card Footer in Quartz ([#3987](https://github.com/SAP/fundamental-styles/issues/3987)) ([a90602e](https://github.com/SAP/fundamental-styles/commit/a90602e6df5628db52c514096dd736f628273a13))
+
+
+
 ## [0.25.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.9...v0.25.1-rc.10) (2022-10-28)
 
 
