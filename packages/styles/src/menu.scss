@@ -110,6 +110,8 @@ $block: #{$fd-namespace}-menu;
   &__list--overflow {
     overflow-y: scroll;
     flex-wrap: nowrap;
+
+    @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
   }
 
   &__separator {
@@ -276,6 +278,8 @@ $block: #{$fd-namespace}-menu;
   }
 
   &--overflow {
+    @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
+
     overflow-y: scroll;
     box-shadow: var(--sapContent_Shadow1);
     border-radius: $fd-menu-border-radius;

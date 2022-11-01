@@ -60,6 +60,8 @@ $listBlock: #{$fd-namespace}-list;
   }
 
   &__wrapper {
+    @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
+
     border-radius: $fd-popover-border-radius;
     overflow: auto;
   }
