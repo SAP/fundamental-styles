@@ -1,3 +1,12 @@
+## [0.25.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.11...v0.25.1-rc.12) (2022-11-02)
+
+
+### Features
+
+* **styles:** adopt Fiori Scrollbar for all components with scrollable area [ci visual] ([#3989](https://github.com/SAP/fundamental-styles/issues/3989)) ([73d5714](https://github.com/SAP/fundamental-styles/commit/73d5714f45108082bc4a4f169ae191205ad3b981))
+
+
+
 ## [0.25.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.10...v0.25.1-rc.11) (2022-10-31)
 
 
