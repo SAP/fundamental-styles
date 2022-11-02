@@ -1815,7 +1815,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
 "
     <div class=\\"fddocs-button-container\\">
         <h4>Cozy</h4>
-        <div class=\\"fd-button-split fd-button-split--emphasized fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--emphasized\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--emphasized\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Emphasized</span>
           </button>
@@ -1824,7 +1824,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Standard</span>
           </button>
@@ -1833,7 +1833,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
 
-        <div class=\\"fd-button-split fd-button-split--transparent fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--transparent\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Transparent</span>
           </button>
@@ -1842,7 +1842,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--ghost fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--ghost\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--ghost\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Ghost</span>
           </button>
@@ -1851,7 +1851,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--positive fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--positive\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--positive\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Positive</span>
           </button>
@@ -1860,7 +1860,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--negative fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--negative\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--negative\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Negative</span>
           </button>
@@ -1869,7 +1869,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--attention fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--attention\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--attention\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Attention</span>
           </button>
@@ -1879,7 +1879,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
         </div>
         
         <h4>Compact</h4>
-        <div class=\\"fd-button-split fd-button-split--emphasized fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--emphasized\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--emphasized\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Emphasized</span>
           </button>
@@ -1888,7 +1888,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact \\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Standard</span>
           </button>
@@ -1897,7 +1897,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
 
-        <div class=\\"fd-button-split fd-button-split--transparent fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--transparent\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--transparent\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Transparent</span>
           </button>
@@ -1906,7 +1906,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--ghost fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--ghost\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--ghost\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Ghost</span>
           </button>
@@ -1915,7 +1915,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--positive fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--positive\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--positive\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Positive</span>
           </button>
@@ -1924,7 +1924,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--negative fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--negative\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--negative\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Negative</span>
           </button>
@@ -1933,7 +1933,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
           </button>
         </div>
         
-        <div class=\\"fd-button-split fd-button-split--attention fd-has-margin-right-small\\" role=\\"group\\" aria-label=\\"button-split\\">
+        <div class=\\"fd-button-split fd-button-split--attention\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--attention\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Attention</span>
           </button>
