@@ -1,3 +1,12 @@
+## [0.25.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.13...v0.25.1-rc.14) (2022-11-02)
+
+
+### Bug Fixes
+
+* **e2e:** storybook tests issue fix ([#3992](https://github.com/SAP/fundamental-styles/issues/3992)) ([b1ae5d6](https://github.com/SAP/fundamental-styles/commit/b1ae5d670009045fdc530347b6e42172d6478c9b))
+
+
+
 ## [0.25.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.12...v0.25.1-rc.13) (2022-11-02)
 
 
