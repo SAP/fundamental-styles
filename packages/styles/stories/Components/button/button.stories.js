@@ -7,7 +7,7 @@ import '../../../src/button-split.scss';
 export default {
     title: 'Components/Button',
     parameters: {
-        description: `The button component is used to trigger an action. All buttons are characterized by the \`fd-button\` class and an additional modifier class to specify each button type.
+        description: `The button component is used to trigger an action. All buttons are characterized by the \`fd-button\` class and an additional modifier classes to specify each button type.
 
 ##Usage
 
@@ -28,24 +28,7 @@ export default {
     }
 };
 
-export const Primary = () => `
-    <button class="fd-button">Create</button>
-    <button class="fd-button" aria-label="Add to cart"><i class="sap-icon--cart"></i></button>
-    <button class="fd-button fd-button--emphasized ">Save</button>
-`;
-
-/**
- *
- * - **Default Button** or Standard Button for neutral or informative (secondary) actions
- * - **Emphasized Button** Used for primary action
- * - **Ghost Button**  Used for secondary actions or primary button in cases where there is already a primary button on the page
- * - **Positive Button** Used for positive (secondary) actions
- * - **Negative Button** Used for negative (secondary) actions
- * - **Attention Button**
- * - **Transparent Button** Used for secondary or negative path actions
- */
-
-export const Types = () => `<div class="fddocs-container fddocs-button-container">
+export const Styles = () => `<div class="fddocs-container fddocs-button-container">
         <button class="fd-button">Default Button</button>
         <button class="fd-button fd-button--emphasized">Emphasized Button</button>
         <button class="fd-button fd-button--ghost">Ghost Button</button>
@@ -55,8 +38,8 @@ export const Types = () => `<div class="fddocs-container fddocs-button-container
         <button class="fd-button fd-button--transparent">Transparent Button</button>
 </div>`;
 
-Types.storyName = 'Button styles';
-Types.parameters = {
+Styles.storyName = 'Button styles';
+Styles.parameters = {
     docs: {
         description: {
             story: `
@@ -67,7 +50,6 @@ Types.parameters = {
 - **Negative button** is used to trigger negative semantic actions, such as _Reject_ and should always be accompanied by text.
 - **Attention button** is used to trigger a semantic action that needs attention and should always be accompanied by text.
 - **Transparent button** is used to trigger a negative path action within a header or footer bar, and secondary actions in toolbars.
-
 `
         }
     }
@@ -82,14 +64,6 @@ export const Toggle = () => `<h4>Inactive state of toggle button</h4>
     <button class="fd-button fd-button--negative">Negative Toggle</button>
     <button class="fd-button fd-button--attention">Attention Toggle</button>
     <button class="fd-button fd-button--transparent">Transparent Toggle</button>
-    <button class="fd-button fd-button--menu">
-        <span class="fd-button__text">Action Button</span>
-        <i class="sap-icon--slim-arrow-down"></i>
-    </button>
-    <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention">
-        <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-    </button>
-    <button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Active (toggled) state of toggle button</h4>
 <div class="fddocs-container fddocs-button-container">
@@ -100,14 +74,6 @@ export const Toggle = () => `<h4>Inactive state of toggle button</h4>
     <button class="fd-button fd-button--negative fd-button--toggled">Negative Toggle</button>
     <button class="fd-button fd-button--attention fd-button--toggled">Attention Toggle</button>
     <button class="fd-button fd-button--transparent fd-button--toggled">Transparent Toggle</button>
-    <button class="fd-button fd-button--menu fd-button--toggled">
-        <span class="fd-button__text">Action Button</span>
-        <i class="sap-icon--slim-arrow-down"></i>
-    </button>
-    <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention fd-button--toggled">
-        <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-    </button>
-    <button aria-label="Accept" class="fd-button fd-button--positive fd-button--toggled"><i class="sap-icon--accept"></i></button>
 </div>
 <h4>Disabled Toggle button in active state</h4>
 <div class="fddocs-container fddocs-button-container">
@@ -118,21 +84,13 @@ export const Toggle = () => `<h4>Inactive state of toggle button</h4>
     <button class="fd-button fd-button--negative fd-button--toggled" disabled>Negative Toggle</button>
     <button class="fd-button fd-button--attention fd-button--toggled" disabled>Attention Toggle</button>
     <button class="fd-button fd-button--transparent fd-button--toggled" disabled>Transparent Toggle</button>
-    <button class="fd-button fd-button--menu fd-button--toggled" aria-disabled="true" disabled>
-        <span class="fd-button__text">Action Button</span>
-        <i class="sap-icon--slim-arrow-down"></i>
-    </button>
-    <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention fd-button--toggled" aria-disabled="true" disabled>
-        <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
-    </button>
-    <button aria-label="Accept" class="fd-button fd-button--positive" disabled><i class="sap-icon--accept"></i></button>
 </div>`;
 
 Toggle.storyName = 'Toggle button';
 Toggle.parameters = {
     docs: {
         description: {
-            story: 'A toggle button switches between two actions. One of the actions is always active, one is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the action to active.'
+            story: 'A toggle button switches between two states. First is the active state, second is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the state to active.'
         }
     }
 };
@@ -140,16 +98,18 @@ Toggle.parameters = {
 
 export const SegmentedButton = () => `
     <div class="fddocs-button-container">
+        <h4>Cozy</h4>
         <div class="fd-segmented-button" role="group" aria-label="Group label">
             <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
             <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
             <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
         </div>
 
+        <h4>Compact</h4>
         <div class="fd-segmented-button" role="group" aria-label="Group label">
-            <button class="fd-button fd-button--compact is-selected" aria-pressed="true">Left</button>
-            <button class="fd-button fd-button--compact">Middle</button>
-            <button class="fd-button fd-button--compact">Right</button>
+            <button aria-label="Survey" class="fd-button fd-button--compact"><i class="sap-icon--survey"></i></button>
+            <button aria-label="Chart" class="fd-button fd-button--compact is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+            <button aria-label="Pool" class="fd-button fd-button--compact"><i class="sap-icon--pool"></i></button>
         </div>
     </div>
 `;
@@ -166,6 +126,7 @@ SegmentedButton.parameters = {
 
 export const BadgeOnButton = () => `
     <div class="fddocs-button-container">
+        <h4>Cozy</h4>
         <button class="fd-button">
             <span class="fd-button__text">Cozy Badge Button</span>
             <span class="fd-button__badge">3984</span>
@@ -174,6 +135,8 @@ export const BadgeOnButton = () => `
             <i class="sap-icon--cart" role="presentation"></i>
             <span class="fd-button__badge">3</span>
         </button>
+        
+        <h4>Compact</h4>
         <button class="fd-button fd-button--compact">
             <span class="fd-button__text">Compact Badge Button</span>
             <span class="fd-button__badge">654</span>
@@ -192,15 +155,20 @@ BadgeOnButton.parameters = {
             story: `Button gets a badge in cases of collecting a number of items from various pages in order to
         trigger an action. <br/>
         Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge. <br/>
-        <b>Badges cannot contain more characters than 4</b>.`
+        <b>Badges cannot contain more than 4 characters</b>.`
         }
     }
 };
 
 export const MenuButton = () => `
     <div class="fddocs-button-container">
+        <h4>Cozy</h4>
+        <button class="fd-button fd-button--emphasized fd-button--menu">
+            <span class="fd-button__text">Emphasized Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
         <button class="fd-button fd-button--menu">
-            <span class="fd-button__text">Action Button</span>
+            <span class="fd-button__text">Default Button</span>
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
         <button class="fd-button fd-button--ghost fd-button--menu">
@@ -219,57 +187,18 @@ export const MenuButton = () => `
             <span class="fd-button__text">Attention Button</span>
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
-        <br /><br />
-        <button class="fd-button fd-button--menu" aria-disabled="true" disabled>
-            <span class="fd-button__text">Action Button</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--ghost fd-button--menu" aria-disabled="true" disabled>
-            <span class="fd-button__text">Ghost Button</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--positive fd-button--menu" aria-disabled="true" disabled>
-            <span class="fd-button__text">Positive Button</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--negative fd-button--menu" aria-disabled="true" disabled>
-            <span class="fd-button__text">Negative Button</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--attention fd-button--menu" aria-disabled="true" disabled>
-            <span class="fd-button__text">Attention Button</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <br /><br />
-        <button class="fd-button fd-button--emphasized fd-button--menu">
-            <span class="fd-button__text">Add to Cart</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--menu">
-            <span class="fd-button__text">Add to Cart</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
         <button class="fd-button fd-button--transparent fd-button--menu">
-            <span class="fd-button__text">Add to Cart</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--emphasized fd-button--menu fd-button--positive">
-            <span class="fd-button__text">Approve Cart</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--negative fd-button--menu">
-            <span class="fd-button__text">Reject</span>
-            <i class="sap-icon--slim-arrow-down"></i>
-        </button>
-        <button class="fd-button fd-button--attention fd-button--menu">
-            <span class="fd-button__text">Attention</span>
+            <span class="fd-button__text">Transparent Button</span>
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
         <br /><br />
+        <button aria-label="Add to cart" class="fd-button fd-button--emphasized fd-button--menu">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
         <button aria-label="Add to cart" class="fd-button fd-button--menu">
             <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
         </button>
-        <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--transparent">
+        <button aria-label="Add to cart" class="fd-button fd-button-ghost fd-button--menu">
             <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
         </button>
         <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--positive">
@@ -281,14 +210,59 @@ export const MenuButton = () => `
         <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--attention">
             <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
         </button>
-        <br /><br />
-        <button class="fd-button fd-button--menu">
-            <span class="fd-button__text">Default</span>
+        <button aria-label="Add to cart" class="fd-button fd-button--menu fd-button--transparent">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <h4>Compact</h4>
+        <button class="fd-button fd-button--compact fd-button--emphasized fd-button--menu">
+            <span class="fd-button__text">Emphasized Button</span>
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
         <button class="fd-button fd-button--compact fd-button--menu">
-            <span class="fd-button__text">Compact</span>
+            <span class="fd-button__text">Default Button</span>
             <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--ghost fd-button--menu">
+            <span class="fd-button__text">Ghost Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--positive fd-button--menu">
+            <span class="fd-button__text">Positive Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--negative fd-button--menu">
+            <span class="fd-button__text">Negative Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--attention fd-button--menu">
+            <span class="fd-button__text">Attention Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button class="fd-button fd-button--compact fd-button--transparent fd-button--menu">
+            <span class="fd-button__text">Transparent Button</span>
+            <i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <br /><br />
+        <button aria-label="Add to cart" class="fd-button fd-button--compact fd-button--emphasized fd-button--menu">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--compact fd-button--menu">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--compact fd-button-ghost fd-button--menu">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--compact fd-button--menu fd-button--positive">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--compact fd-button--menu fd-button--negative">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--compact fd-button--menu fd-button--attention">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
+        </button>
+        <button aria-label="Add to cart" class="fd-button fd-button--compact fd-button--menu fd-button--transparent">
+            <i class="sap-icon--cart"></i><i class="sap-icon--slim-arrow-down"></i>
         </button>
     </div>
 `;
@@ -296,15 +270,18 @@ export const MenuButton = () => `
 MenuButton.storyName = 'Menu button';
 MenuButton.parameters = {
     docs: {
-        iframeHeight: 300,
         description: {
-            story: 'The menu button displays a dropdown menu upon selection and is considered the default menu button. There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.'
+            story: `The menu button displays a dropdown menu upon selection and is considered the default menu button.
+There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.
+Maximum width is 12rem.
+            `
         }
     }
 };
 
 export const SplitMenuButton = () => `
     <div class="fddocs-button-container">
+        <h4>Cozy</h4>
         <div class="fd-button-split fd-button-split--emphasized fd-has-margin-right-small" role="group" aria-label="button-split">
           <button class="fd-button fd-button--emphasized" aria-label="button">
             <span class="fd-button-split__text">Emphasized</span>
@@ -367,13 +344,76 @@ export const SplitMenuButton = () => `
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
+        
+        <h4>Compact</h4>
+        <div class="fd-button-split fd-button-split--emphasized fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--compact fd-button--emphasized" aria-label="button">
+            <span class="fd-button-split__text">Emphasized</span>
+          </button>
+          <button class="fd-button fd-button--compact fd-button--emphasized" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--compact " aria-label="button">
+            <span class="fd-button-split__text">Standard</span>
+          </button>
+          <button class="fd-button fd-button--compact " aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+
+        <div class="fd-button-split fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--compact fd-button--transparent" aria-label="button">
+            <span class="fd-button-split__text">Transparent</span>
+          </button>
+          <button class="fd-button fd-button--compact fd-button--transparent" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--ghost fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--compact fd-button--ghost" aria-label="button">
+            <span class="fd-button-split__text">Ghost</span>
+          </button>
+          <button class="fd-button fd-button--compact fd-button--ghost" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--positive fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--compact fd-button--positive" aria-label="button">
+            <span class="fd-button-split__text">Positive</span>
+          </button>
+          <button class="fd-button fd-button--compact fd-button--positive" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--negative fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--compact fd-button--negative" aria-label="button">
+            <span class="fd-button-split__text">Negative</span>
+          </button>
+          <button class="fd-button fd-button--compact fd-button--negative" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+        
+        <div class="fd-button-split fd-button-split--attention fd-has-margin-right-small" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--compact fd-button--attention" aria-label="button">
+            <span class="fd-button-split__text">Attention</span>
+          </button>
+          <button class="fd-button fd-button--compact fd-button--attention" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
     </div>
 `;
 
 SplitMenuButton.storyName = 'Split menu button';
 SplitMenuButton.parameters = {
     docs: {
-        iframeHeight: 150,
         description: {
             story: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available.
 <br><br> Note: If the default action is displayed as an icon only, all the menu items must contain icons.
@@ -391,6 +431,7 @@ The split menu button can be displayed by using \`fd-button-split fd-has-margin-
 
 export const Sizes = () => `
     <div class="fddocs-button-container">
+        <h4>Cozy</h4>
         <button class="fd-button">Save</button>
         <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
         <button aria-label="Add to cart" class="fd-button fd-button--ghost"><i class="sap-icon--cart"></i></button>
@@ -399,7 +440,7 @@ export const Sizes = () => `
         <button class="fd-button fd-button--positive">Approve</button>
         <button class="fd-button fd-button--negative">Reject</button>
         <button class="fd-button fd-button--attention">Attention</button>
-        <br><br>
+        <h4>Compact</h4>
         <button class="fd-button fd-button--compact">Edit</button>
         <button aria-label="Add to cart" class="fd-button fd-button--compact"><i class="sap-icon--cart"></i></button>
         <button class="fd-button fd-button--ghost fd-button--compact">Edit</button>
@@ -414,7 +455,6 @@ export const Sizes = () => `
 Sizes.storyName = 'Button sizes';
 Sizes.parameters = {
     docs: {
-        iframeHeight: 150,
         description: {
             story: `
 The buttons in the first row are displayed in cozy size, which is the default sizing and does not require a modifier. The compact buttons shown in the second row, however, can be displayed by adding the \`–compact\` modifier class to the element.
@@ -433,8 +473,8 @@ export const IconAndText = () => `
         <button class="fd-button fd-button--negative">Reject</button>
         <button class="fd-button fd-button--attention">Attention</button>
         <br><br>
-        <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
         <button aria-label="Add to cart" class="fd-button fd-button--emphasized"><i class="sap-icon--cart"></i></button>
+        <button aria-label="Add to cart" class="fd-button"><i class="sap-icon--cart"></i></button>
         <button aria-label="Add to cart" class="fd-button fd-button--transparent"><i class="sap-icon--cart"></i></button>
         <button aria-label="Filter" class="fd-button fd-button--ghost"><i class="sap-icon--filter"></i></button>
         <button aria-label="Accept" class="fd-button fd-button--positive"><i class="sap-icon--accept"></i></button>
@@ -446,7 +486,6 @@ export const IconAndText = () => `
 IconAndText.storyName = 'Icon or text';
 IconAndText.parameters = {
     docs: {
-        iframeHeight: 150,
         description: {
             story: `
 These buttons contain either icons **or** text, as it is highly recommended not to combine the two.
@@ -523,7 +562,6 @@ export const ButtonStates = () => `
 ButtonStates.storyName = 'Button states';
 ButtonStates.parameters = {
     docs: {
-        iframeHeight: 450,
         description: {
             story: `
 These button types indicate different states: normal, selected, disabled and focusable disabled.

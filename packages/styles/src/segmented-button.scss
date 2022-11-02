@@ -19,7 +19,7 @@ $block: #{$fd-namespace}-segmented-button;
     margin: 0;
 
     @include fd-hover() {
-      z-index: 2;
+      z-index: 1;
     }
 
     &:first-child {
