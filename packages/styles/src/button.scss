@@ -3,34 +3,27 @@
 @import './mixins/button/button-helper';
 @import './mixins/button/button-types';
 
-$fd-button-border-width: var(--sapButton_BorderWidth);
 $fd-button-icon-font-size: 1rem;
 $fd-button-badge-spacing: 0.25rem;
 
-$fd-button-height: 2.25rem;
-$fd-button-clickable-height: 2.75rem;
-$fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) * 0.5;
-$fd-button-padding-x: calc(0.625rem - #{$fd-button-border-width});
-
-$fd-button-compact-height: 1.625rem;
-$fd-button-compact-clickable-height: 2rem;
-$fd-button-compact-touchable-area: ($fd-button-compact-clickable-height - $fd-button-compact-height) * 0.5;
-$fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
-
 .#{$block-button} {
+  --fdButton_Height: 2.25rem;
+  --fdButton_Clickable_Height: 2.75rem;
+  --fdButton_Padding_X: 0.625rem;
+
   @include fd-reset();
   @include fd-button-reset();
   @include fd-inline-flex-center();
-  @include fd-set-paddings-x-equal($fd-button-padding-x);
+  @include fd-set-paddings-x-equal(calc(var(--fdButton_Padding_X) - var(--sapButton_BorderWidth)));
 
-  height: $fd-button-height;
-  max-height: $fd-button-height;
+  height: var(--fdButton_Height);
+  max-height: var(--fdButton_Height);
   min-width: 2.25rem;
   position: relative;
   text-align: center;
   text-shadow: var(--fdButton_Text_Shadow);
   border-style: solid;
-  border-width: $fd-button-border-width;
+  border-width: var(--sapButton_BorderWidth);
 
   // Extended touchable area
   &::before {
@@ -39,8 +32,8 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
     position: absolute;
     height: auto;
     width: 100%;
-    top: -$fd-button-touchable-area;
-    bottom: -$fd-button-touchable-area;
+    top: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * 0.5);
+    bottom: calc((var(--fdButton_Clickable_Height) - var(--fdButton_Height)) * 0.5);
     left: 0;
     right: 0;
   }
@@ -98,17 +91,11 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
   }
 
   &--compact {
-    @include fd-set-paddings-x-equal($fd-button-compact-padding-x);
+    --fdButton_Height: 1.625rem;
+    --fdButton_Clickable_Height: 2rem;
+    --fdButton_Padding_X: 0.5rem;
 
-    height: $fd-button-compact-height;
-    max-height: $fd-button-compact-height;
     min-width: 2rem;
-
-    // Extended touchable area
-    &::before {
-      top: -$fd-button-compact-touchable-area;
-      bottom: -$fd-button-compact-touchable-area;
-    }
 
     .#{$block-button}__badge {
       @include fd-set-margin-left($fd-button-badge-spacing);
@@ -150,11 +137,6 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
     &-right {
       text-align: right;
       justify-content: flex-end;
-    }
-
-    &-center {
-      text-align: center;
-      justify-content: center;
     }
   }
 
