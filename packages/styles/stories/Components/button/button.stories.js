@@ -13,17 +13,32 @@ export default {
 
 **Use the button types as follows:**
 
-- Use simple buttons for specific actions, such as:
-    - _Create_, _Edit_, _Save_
-    - _Approve_, _Reject_
-    - _Accept_, _Decline_
-    - _OK_, _Cancel_
-- If you want the user to select one option from a small group, use a segmented button. For example: _Small_, _Medium_, _Large_
-- Use the menu button if you need a menu that provides more than one option.
+- Use simple buttons for specific actions.
+- If you want the user to select one option from a small group, use a segmented button.
+- If you want to have a button that can be in active\\active\\toggled state, use a toggle button.
+- If you want the button to be a menu trigger use a menu button.
+- If you want the button to have a main action and the option to trigger a menu, use a split menu button.
 
 **Do not use buttons if:**
 
 - You want to link to a different page or object. Instead, use the **Link** component.
+
+## Structure
+
+**Button consists of the following elements:** (sublevels mean nesting of elements)
+* \`fd-segmented-button\` container for the button if you want to use a segmented button
+* \`fd-button-split\` container for the button if you want to use a split button
+    * \`fd-button\` the main element
+    * \`fd-button--compact\` modifier class to make the button compact
+    * \`fd-button--full-width\` modifier class to make the button full width
+    * \`fd-button--toggled\` modifier class to indicate that the button is toggled
+    * \`fd-button--menu\` modifier class to indicate that the button is a menu button
+    * \`fd-button--menu-fixed-width\` modifier class to indicate that the button is a menu button with a fixed width
+    * \`fd-button--text-alignment-left \` modifier class to indicate that the button text is aligned to the left
+    * \`fd-button--text-alignment-right \` modifier class to indicate that the button text is aligned to the right
+        * \`fd-button__text\` the text of the button
+        * \`fd-button__badge\` the badge of the button
+        * \`fd-button__instructions\` the instructions for the button usage, not visible, only being read by screen readers
 `
     }
 };
@@ -120,8 +135,9 @@ SegmentedButton.storyName = 'Segmented button';
 SegmentedButton.parameters = {
     docs: {
         description: {
-            story: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
-It can be displayed by using the \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.
+            story: `The segmented button displays a group of options. Only one option can be active at a time, while the others remain or become inactive when the initial option is selected.
+This button type was previously known as "button group" and is comparable to a radio button group.
+It can be displayed by using the container with \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.
 Active button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\`.
 `
         }
@@ -156,10 +172,9 @@ BadgeOnButton.storyName = 'Button With Badge';
 BadgeOnButton.parameters = {
     docs: {
         description: {
-            story: `Button gets a badge in cases of collecting a number of items from various pages in order to
-        trigger an action. <br/>
-        Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge. <br/>
-        <b>Badges cannot contain more than 4 characters</b>.`
+            story: `Button gets a badge in cases of collecting a number of items from various pages in order to trigger an action.
+Currently the Emphasized, Standard, Ghost and Transparent type of buttons are recommended to be used with Badge.
+\n**Badges cannot contain more than 4 characters**.`
         }
     }
 };
@@ -275,9 +290,9 @@ MenuButton.storyName = 'Menu button';
 MenuButton.parameters = {
     docs: {
         description: {
-            story: `The menu button displays a dropdown menu upon selection and is considered the default menu button.
-There are two different type of menu buttons: the default menu button and split menu button, and both of them can contain items with submenus.
-Maximum width is 12rem.
+            story: `The menu button displays a dropdown menu upon click and is considered the default menu button.
+There are two different type of menu buttons: the default menu button and split menu button.
+\n**Maximum width is 12rem**.
             `
         }
     }
@@ -286,7 +301,7 @@ Maximum width is 12rem.
 export const SplitMenuButton = () => `
     <div class="fddocs-button-container">
         <h4>Cozy</h4>
-        <div class="fd-button-split fd-button-split--emphasized fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
           <button class="fd-button fd-button--emphasized" aria-label="button">
             <span class="fd-button-split__text">Emphasized</span>
           </button>
@@ -295,7 +310,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split" role="group" aria-label="button-split">
           <button class="fd-button" aria-label="button">
             <span class="fd-button-split__text">Standard</span>
           </button>
@@ -304,7 +319,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
 
-        <div class="fd-button-split fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
           <button class="fd-button fd-button--transparent" aria-label="button">
             <span class="fd-button-split__text">Transparent</span>
           </button>
@@ -313,7 +328,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--ghost fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--ghost" role="group" aria-label="button-split">
           <button class="fd-button fd-button--ghost" aria-label="button">
             <span class="fd-button-split__text">Ghost</span>
           </button>
@@ -322,7 +337,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--positive fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--positive" role="group" aria-label="button-split">
           <button class="fd-button fd-button--positive" aria-label="button">
             <span class="fd-button-split__text">Positive</span>
           </button>
@@ -331,7 +346,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--negative fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--negative" role="group" aria-label="button-split">
           <button class="fd-button fd-button--negative" aria-label="button">
             <span class="fd-button-split__text">Negative</span>
           </button>
@@ -340,7 +355,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--attention fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--attention" role="group" aria-label="button-split">
           <button class="fd-button fd-button--attention" aria-label="button">
             <span class="fd-button-split__text">Attention</span>
           </button>
@@ -350,7 +365,7 @@ export const SplitMenuButton = () => `
         </div>
         
         <h4>Compact</h4>
-        <div class="fd-button-split fd-button-split--emphasized fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
           <button class="fd-button fd-button--compact fd-button--emphasized" aria-label="button">
             <span class="fd-button-split__text">Emphasized</span>
           </button>
@@ -359,7 +374,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split" role="group" aria-label="button-split">
           <button class="fd-button fd-button--compact " aria-label="button">
             <span class="fd-button-split__text">Standard</span>
           </button>
@@ -368,7 +383,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
 
-        <div class="fd-button-split fd-button-split--transparent fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
           <button class="fd-button fd-button--compact fd-button--transparent" aria-label="button">
             <span class="fd-button-split__text">Transparent</span>
           </button>
@@ -377,7 +392,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--ghost fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--ghost" role="group" aria-label="button-split">
           <button class="fd-button fd-button--compact fd-button--ghost" aria-label="button">
             <span class="fd-button-split__text">Ghost</span>
           </button>
@@ -386,7 +401,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--positive fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--positive" role="group" aria-label="button-split">
           <button class="fd-button fd-button--compact fd-button--positive" aria-label="button">
             <span class="fd-button-split__text">Positive</span>
           </button>
@@ -395,7 +410,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--negative fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--negative" role="group" aria-label="button-split">
           <button class="fd-button fd-button--compact fd-button--negative" aria-label="button">
             <span class="fd-button-split__text">Negative</span>
           </button>
@@ -404,7 +419,7 @@ export const SplitMenuButton = () => `
           </button>
         </div>
         
-        <div class="fd-button-split fd-button-split--attention fd-has-margin-right-small" role="group" aria-label="button-split">
+        <div class="fd-button-split fd-button-split--attention" role="group" aria-label="button-split">
           <button class="fd-button fd-button--compact fd-button--attention" aria-label="button">
             <span class="fd-button-split__text">Attention</span>
           </button>
@@ -419,15 +434,16 @@ SplitMenuButton.storyName = 'Split menu button';
 SplitMenuButton.parameters = {
     docs: {
         description: {
-            story: `The split menu button has two separate areas: the text label and the icon. The separator between them indicates that each area results in a different action, giving the user two choices: select the text label to trigger the action or select the arrow to open the menu. This button has a fixed size and the text truncates if the menu items exceed the maximum width available.
-<br><br> Note: If the default action is displayed as an icon only, all the menu items must contain icons.
+            story: `The split menu button has two separate areas: the text label and the arrow down icon.
+The separator between them indicates that each area results in a different action, giving the user two choices: trigger the main action or open the menu.
+\n**If the default action is displayed as an icon only, all the menu items must contain icons.**
 
-**The split menu button can behave in two different ways:**
+The split menu button can behave in two different ways:
 
-1. The button triggers the default action set by the developer. If no default action is defined, the first item in the menu list will become the default.
-2. The button triggers the last action chosen by the user. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
+1. The main button triggers the default action set by the developer. If no default action is defined, the first item in the menu list should be the default.
+2. The main button triggers the last action chosen by the user from the menu list. Initially, it triggers the default action. However, when the user selects a different action, the default switches to the last action selected by the user.
 
-The split menu button can be displayed by using \`fd-button-split fd-has-margin-right-small\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
+The split menu button can be displayed by using container with \`fd-button-split\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
 `
         }
     }
