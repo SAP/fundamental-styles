@@ -1,7 +1,7 @@
 import {describe, expect, it} from 'vitest'
 import glob from 'glob';
 
-const stories = glob.sync('packages/styles/stories/**/*.stories.+(ts|js|jsx|tsx)');
+const stories = glob.sync('packages/styles/stories/**/*.stories.js');
 
 describe('Check stories', async () => {
     it('Should find all stories', function () {
