@@ -1,3 +1,12 @@
+## [0.25.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.12...v0.25.1-rc.13) (2022-11-02)
+
+
+### Bug Fixes
+
+* **styles:** need only vertical alignment to list-title-text [ci visual] ([#3988](https://github.com/SAP/fundamental-styles/issues/3988)) ([307dd90](https://github.com/SAP/fundamental-styles/commit/307dd90bc54180cea25b9344e334651efa8344a5))
+
+
+
 ## [0.25.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.11...v0.25.1-rc.12) (2022-11-02)
 
 
