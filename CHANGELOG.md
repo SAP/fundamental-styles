@@ -1,3 +1,12 @@
+## [0.25.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.14...v0.25.1-rc.15) (2022-11-02)
+
+
+### Features
+
+* **styles:** add arrows to Slider Handle [ci visual] ([#3993](https://github.com/SAP/fundamental-styles/issues/3993)) ([e1262c1](https://github.com/SAP/fundamental-styles/commit/e1262c18c195d2605e252a702a6a576ca74cd37e))
+
+
+
 ## [0.25.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.13...v0.25.1-rc.14) (2022-11-02)
 
 
