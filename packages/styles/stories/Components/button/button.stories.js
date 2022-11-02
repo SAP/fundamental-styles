@@ -57,40 +57,42 @@ Styles.parameters = {
 
 export const Toggle = () => `<h4>Inactive state of toggle button</h4>
 <div class="fddocs-container fddocs-button-container">
-    <button class="fd-button">Default Toggle</button>
-    <button class="fd-button fd-button--emphasized">Emphasized Toggle</button>
-    <button class="fd-button fd-button--ghost">Ghost Toggle</button>
-    <button class="fd-button fd-button--positive">Positive Toggle</button>
-    <button class="fd-button fd-button--negative">Negative Toggle</button>
-    <button class="fd-button fd-button--attention">Attention Toggle</button>
-    <button class="fd-button fd-button--transparent">Transparent Toggle</button>
+    <button class="fd-button" aria-pressed="false">Default Toggle</button>
+    <button class="fd-button fd-button--emphasized" aria-pressed="false">Emphasized Toggle</button>
+    <button class="fd-button fd-button--ghost" aria-pressed="false">Ghost Toggle</button>
+    <button class="fd-button fd-button--positive" aria-pressed="false">Positive Toggle</button>
+    <button class="fd-button fd-button--negative" aria-pressed="false">Negative Toggle</button>
+    <button class="fd-button fd-button--attention" aria-pressed="false">Attention Toggle</button>
+    <button class="fd-button fd-button--transparent" aria-pressed="false">Transparent Toggle</button>
 </div>
 <h4>Active (toggled) state of toggle button</h4>
 <div class="fddocs-container fddocs-button-container">
-    <button class="fd-button fd-button--toggled">Default Toggle</button>
-    <button class="fd-button fd-button--emphasized fd-button--toggled">Emphasized Toggle</button>
-    <button class="fd-button fd-button--ghost fd-button--toggled">Ghost Toggle</button>
-    <button class="fd-button fd-button--positive fd-button--toggled">Positive Toggle</button>
-    <button class="fd-button fd-button--negative fd-button--toggled">Negative Toggle</button>
-    <button class="fd-button fd-button--attention fd-button--toggled">Attention Toggle</button>
-    <button class="fd-button fd-button--transparent fd-button--toggled">Transparent Toggle</button>
+    <button class="fd-button fd-button--toggled" aria-pressed="true">Default Toggle</button>
+    <button class="fd-button fd-button--emphasized fd-button--toggled" aria-pressed="true">Emphasized Toggle</button>
+    <button class="fd-button fd-button--ghost fd-button--toggled" aria-pressed="true">Ghost Toggle</button>
+    <button class="fd-button fd-button--positive fd-button--toggled" aria-pressed="true">Positive Toggle</button>
+    <button class="fd-button fd-button--negative fd-button--toggled" aria-pressed="true">Negative Toggle</button>
+    <button class="fd-button fd-button--attention fd-button--toggled" aria-pressed="true">Attention Toggle</button>
+    <button class="fd-button fd-button--transparent fd-button--toggled" aria-pressed="true">Transparent Toggle</button>
 </div>
 <h4>Disabled Toggle button in active state</h4>
 <div class="fddocs-container fddocs-button-container">
-    <button class="fd-button fd-button--toggled" disabled>Default Toggle</button>
-    <button class="fd-button fd-button--emphasized fd-button--toggled" disabled>Emphasized Toggle</button>
-    <button class="fd-button fd-button--ghost fd-button--toggled" disabled>Ghost Toggle</button>
-    <button class="fd-button fd-button--positive fd-button--toggled" disabled>Positive Toggle</button>
-    <button class="fd-button fd-button--negative fd-button--toggled" disabled>Negative Toggle</button>
-    <button class="fd-button fd-button--attention fd-button--toggled" disabled>Attention Toggle</button>
-    <button class="fd-button fd-button--transparent fd-button--toggled" disabled>Transparent Toggle</button>
+    <button class="fd-button fd-button--toggled" aria-pressed="false" disabled>Default Toggle</button>
+    <button class="fd-button fd-button--emphasized fd-button--toggled" aria-pressed="false" disabled>Emphasized Toggle</button>
+    <button class="fd-button fd-button--ghost fd-button--toggled" aria-pressed="false" disabled>Ghost Toggle</button>
+    <button class="fd-button fd-button--positive fd-button--toggled" aria-pressed="false" disabled>Positive Toggle</button>
+    <button class="fd-button fd-button--negative fd-button--toggled" aria-pressed="false" disabled>Negative Toggle</button>
+    <button class="fd-button fd-button--attention fd-button--toggled" aria-pressed="false" disabled>Attention Toggle</button>
+    <button class="fd-button fd-button--transparent fd-button--toggled" aria-pressed="false" disabled>Transparent Toggle</button>
 </div>`;
 
 Toggle.storyName = 'Toggle button';
 Toggle.parameters = {
     docs: {
         description: {
-            story: 'A toggle button switches between two states. First is the active state, second is inactive. Use the toggle button for secondary actions. Apply the `fd-button--toggled` modifier class to set the state to active.'
+            story: `A toggle button switches between two states. First is the active state, second is inactive. Use the toggle button for secondary actions.
+Active (toggled) button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\`
+`
         }
     }
 };
@@ -100,16 +102,16 @@ export const SegmentedButton = () => `
     <div class="fddocs-button-container">
         <h4>Cozy</h4>
         <div class="fd-segmented-button" role="group" aria-label="Group label">
-            <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey"></i></button>
-            <button aria-label="Chart" class="fd-button is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
-            <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool"></i></button>
+            <button aria-label="Survey" class="fd-button"><i class="sap-icon--survey" aria-pressed="false"></i></button>
+            <button aria-label="Chart" class="fd-button fd-button--toggled" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+            <button aria-label="Pool" class="fd-button"><i class="sap-icon--pool" aria-pressed="false"></i></button>
         </div>
 
         <h4>Compact</h4>
         <div class="fd-segmented-button" role="group" aria-label="Group label">
-            <button aria-label="Survey" class="fd-button fd-button--compact"><i class="sap-icon--survey"></i></button>
-            <button aria-label="Chart" class="fd-button fd-button--compact is-selected" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
-            <button aria-label="Pool" class="fd-button fd-button--compact"><i class="sap-icon--pool"></i></button>
+            <button aria-label="Survey" class="fd-button fd-button--compact" aria-pressed="false"><i class="sap-icon--survey"></i></button>
+            <button aria-label="Chart" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true"><i class="sap-icon--pie-chart"></i></button>
+            <button aria-label="Pool" class="fd-button fd-button--compact" aria-pressed="false"><i class="sap-icon--pool"></i></button>
         </div>
     </div>
 `;
@@ -119,7 +121,9 @@ SegmentedButton.parameters = {
     docs: {
         description: {
             story: `The segmented button displays a group of options. Only one option can be active at a time by selecting it, while the others remain or become inactive when the initial option is selected. This button type was previously known as "button group" and is comparable to a radio button group.
-        <br><br>It can be displayed by using the \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.`
+It can be displayed by using the \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.
+Active button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\`.
+`
         }
     }
 };
@@ -510,49 +514,41 @@ The full list of all the available icons can be found on the <a href="icon.html"
 export const ButtonStates = () => `
     <div class="fddocs-button-container">
         <button class="fd-button fd-button--emphasized">Normal State</button>
-        <button class="fd-button fd-button--emphasized is-selected" >Selected State</button>
         <button class="fd-button fd-button--emphasized" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF1" class="fd-button fd-button--emphasized is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF1">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
         <br><br>
         <button class="fd-button">Normal State</button>
-        <button class="fd-button is-selected" >Selected State</button>
         <button class="fd-button is-disabled" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF2" class="fd-button is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF2">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
         <br><br>
         <button class="fd-button fd-button--transparent">Normal State</button>
-        <button class="fd-button fd-button--transparent is-selected" >Selected State</button>
         <button class="fd-button fd-button--transparent is-disabled" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF3" class="fd-button fd-button--transparent is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF3">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
         <br><br>
         <button class="fd-button fd-button">Normal State</button>
-        <button class="fd-button fd-button is-selected" >Selected State</button>
         <button class="fd-button fd-button" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF4" class="fd-button fd-button is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF4">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
         <br><br>
         <button class="fd-button fd-button--ghost">Normal State</button>
-        <button class="fd-button fd-button--ghost is-selected" >Selected State</button>
         <button class="fd-button fd-button--ghost" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF5" class="fd-button fd-button--ghost is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF5">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
         <br><br>
         <button class="fd-button fd-button--positive">Normal State</button>
-        <button class="fd-button fd-button--positive is-selected" >Selected State</button>
         <button class="fd-button fd-button--positive" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF6" class="fd-button fd-button--positive is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF6">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
         <br><br>
         <button class="fd-button fd-button--negative">Normal State</button>
-        <button class="fd-button fd-button--negative is-selected" >Selected State</button>
         <button class="fd-button fd-button--negative" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF7" class="fd-button fd-button--negative is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF7">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
         <br><br>
         <button class="fd-button fd-button--attention">Normal State</button>
-        <button class="fd-button fd-button--attention is-selected" >Selected State</button>
         <button class="fd-button fd-button--attention is-disabled" aria-disabled="true" disabled>Disabled State</button>
         <button aria-disabled="true" aria-describedby="fd-ONXuqucVcF8" class="fd-button fd-button--attention is-disabled" type="button">Disabled Focusable</button>
         <p aria-live="assertive" class="fd-button__instructions" id="fd-ONXuqucVcF8">This disabled button is focusable and this text will be read out by a screen reader and read again when there are changes to the state of the button.</p>
@@ -567,7 +563,6 @@ ButtonStates.parameters = {
 These button types indicate different states: normal, selected, disabled and focusable disabled.
 
 - **Normal**: The button’s default state. It can be selected to perform a corresponding action.
-- **Selected**: The button is selected as opposed to other buttons. This state can be displayed by adding the \`is-selected\` class or the \`aria-selected=”true”\` attribute for accessibility.
 - **Disabled**: It cannot be selected. This state can be displayed by using the \`disabled\` attribute.
 - **Focusable disabled**: It cannot be selected, but it is tabbable and focusable. When the button is selected, a focus ring appears. This state can be displayed by using the \`is-disabled\` class and the \`aria-disabled=”true”\` attribute for accessibility without using the \`disabled\` property. By adding the hidden \`_instructions\` element, the user will be notified for further instructions on how to enable the button. They will also be notified when the button is enabled when using the \`aria-live\` property.
 `
@@ -587,10 +582,9 @@ FocusableDisabled.parameters = {
     docs: {
         description: {
             story: `
-The disabled button can be focusable by adding the \`aria-disabled\` attribute. To enable the focus ring in a focusable disabled button, ensure that \`is-disabled\` is present while \`disabled\` is not.
+The disabled button can be focusable by adding the \`aria-disabled\` attribute. To enable the focus ring in a focusable disabled button, ensure that \`is-disabled\` class is present while \`disabled\` attribute is not.
 
 ####Accessibility
-When adding this attribute, make sure to not use the \`disabled\` property so that the button is both focusable and readable by screen readers.
 
 When the state of the button has changed, add \`aria-live=”assertive”\` to prompt the screen reader to read the helper text out loud.
 

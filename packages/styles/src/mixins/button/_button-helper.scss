@@ -32,3 +32,13 @@ $block-button-toggled: #{$block-button}--toggled;
     border-radius: var(--sapButton_BorderCornerRadius);
   }
 }
+
+@mixin fd-button-active-selected {
+  &:active,
+  &.is-active,
+  // @deprecated
+  &[aria-selected="true"],
+  &.is-selected {
+    @content;
+  }
+}

@@ -168,7 +168,8 @@ $fd-button-compact-padding-x: calc(0.5rem - #{$fd-button-border-width});
     box-shadow: none;
   }
 
-  @include fd-active-pressed-selected() {
+  // @deprecated selected state
+  @include fd-button-active-selected() {
     box-shadow: none;
     outline: none;
   }
