@@ -128,7 +128,7 @@
     }
 
     .#{$block }__title-text {
-      @include fd-flex-center();
+      @include fd-flex-vertical-center();
     }
 
     ~ .#{$block}__icon {
