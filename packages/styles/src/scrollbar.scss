@@ -4,41 +4,22 @@ $block: fd-scrollbar;
 
 .#{$block} {
   @include fd-reset();
-
-  @include fd-focus() {
-    outline: none;
-  }
+  @include fd-scrollbar();
 
   overflow: auto;
 
-  /** Firefox
-    * Currently Firefox doesn't support changing scrollbar color on hover & width but it's allowed by Fiori.
-    */
-  scrollbar-color: var(--fdScrollbar_Thumb_Color) var(--fdScrollbar_Track_Color);
+  &--container {
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-corner {
+      background-color: var(--fdScrollbar_Track_Color);
+      border-radius: 0 var(--fdScrollbar_Border_Radius) var(--fdScrollbar_Border_Radius) 0;
+    }
 
-  /** Chrome, WebKit */
-  &::-webkit-scrollbar {
-    width: var(--fdScrollbar_Dimension);
-    height: var(--fdScrollbar_Dimension);
-  }
-
-  &::-webkit-scrollbar-track,
-  &::-webkit-scrollbar-corner {
-    background-color: var(--fdScrollbar_Track_Color);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    // In order to achieve space between scrollbar and scrollbar thumb, we need to use box shadow instead of background.
-    background-color: transparent;
-    box-shadow: inset 0 0 0 var(--fdScrollbar_Dimension) var(--fdScrollbar_Thumb_Color);
-    border: var(--fdScrollbar_Thumb_Offset) solid transparent;
-    border-radius: calc(var(--fdScrollbar_Thumb_Border_Radius) - var(--fdScrollbar_Thumb_Offset));
-
-    &:hover,
-    &:active {
-      box-shadow: inset 0 0 0 var(--fdScrollbar_Dimension) var(--fdScrollbar_Thumb_Hover_Color);
+    @include fd-rtl() {
+      &::-webkit-scrollbar-track,
+      &::-webkit-scrollbar-corner {
+        border-radius: var(--fdScrollbar_Border_Radius) 0 0 var(--fdScrollbar_Border_Radius);
+      }
     }
   }
-
-  /** For any other browser native scrollbar is used. */
 }

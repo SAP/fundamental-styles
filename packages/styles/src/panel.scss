@@ -43,6 +43,8 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__content {
+    @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
+
     padding: 0.625rem 1rem 1.375rem 1rem;
     overflow: auto;
     border-bottom: solid 0.0625rem var(--fdPanel_Content_Border_Bottom_Color);
