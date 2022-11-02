@@ -149,6 +149,7 @@ $handle-outline-width: 0.0625rem;
 
   &__handle {
     @include fd-reset();
+    @include fd-flex-center();
 
     width: var(--fdSlider_Handle_Width);
     height: var(--fdSlider_Handle_Height);
@@ -164,18 +165,28 @@ $handle-outline-width: 0.0625rem;
 
     &::before {
       content: '';
-      width: var(--fdSlider_Handle_Active_Size);
-      height: var(--fdSlider_Handle_Active_Size);
+      width: var(--fdSlider_Handle_Active_Width);
+      height: var(--fdSlider_Handle_Active_Height);
       position: absolute;
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
     }
 
+    &::after {
+      display: var(--fdSlider_Handle_Icon_Display);
+      content: '\e29c';
+      line-height: 1;
+      font-size: 0.875rem;
+      font-family: "SAP-icons";
+      color: var(--sapContent_Selected_ForegroundColor);
+    }
+
     @include fd-focus() {
       outline: $handle-outline-width var(--sapContent_FocusStyle) var(--fdSlider_Focus_Handle_Outline_Color);
       outline-offset: $handle-outline-offset;
       border: var(--fdSlider_Hover_Handle_Border);
+      background-color: var(--fdSlider_Active_Handle_Background);
     }
 
     @include fd-hover() {
@@ -218,6 +229,18 @@ $handle-outline-width: 0.0625rem;
       .#{$block}__handle {
         @include fd-active() {
           background-color: var(--fdSlider_Active_Range_Handle_Background);
+
+          &::after {
+            display: none;
+          }
+        }
+
+        @include fd-focus() {
+          background-color: var(--fdSlider_Active_Range_Handle_Background);
+
+          &::after {
+            display: none;
+          }
         }
       }
     }

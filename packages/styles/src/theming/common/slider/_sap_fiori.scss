@@ -16,7 +16,9 @@
   --fdSlider_Handle_Height: var(--fdSlider_Handle_Width);
   --fdSlider_Handle_Border: 0.125rem solid var(--sapField_BorderColor);
   --fdSlider_Handle_Box_Shadow: none;
-  --fdSlider_Handle_Active_Size: 2rem;
+  --fdSlider_Handle_Active_Width: 2rem;
+  --fdSlider_Handle_Active_Height: 2rem;
+  --fdSlider_Handle_Icon_Display: none;
 
   // Slider handle Mobile mode
   --fdSlider_Mobile_Handle_Width: 1.625rem;
