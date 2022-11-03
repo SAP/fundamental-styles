@@ -43,6 +43,7 @@ $block: #{$fd-namespace}-radio;
     align-items: center;
     overflow: hidden;
     padding: var(--fdRadio_Outer_Circle_Padding);
+    color: var(--sapField_TextColor);
 
     &::before {
       @include fd-form-radio-icon-base(var(--fdRadio_Inner_Circle_Diameter)) {
