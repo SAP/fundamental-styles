@@ -1,3 +1,12 @@
+## [0.25.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.15...v0.25.1-rc.16) (2022-11-03)
+
+
+### Bug Fixes
+
+* **styles:** update radio label color [ci visual] ([#3994](https://github.com/SAP/fundamental-styles/issues/3994)) ([b19a066](https://github.com/SAP/fundamental-styles/commit/b19a06601412dacfdc393f3e7814a74d404470b8))
+
+
+
 ## [0.25.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.14...v0.25.1-rc.15) (2022-11-02)
 
 
