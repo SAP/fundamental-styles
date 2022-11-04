@@ -190,6 +190,7 @@ $handle-outline-width: 0.0625rem;
     }
 
     @include fd-hover() {
+      border-color: var(--fdSlider_Handle_Border_Hover_Color);
       background-color: var(--fdSlider_Hover_Handle_Background);
       border: var(--fdSlider_Hover_Handle_Border);
       box-shadow: var(--fdSlider_Hover_Handle_Box_Shadow);
@@ -227,8 +228,20 @@ $handle-outline-width: 0.0625rem;
       }
 
       .#{$block}__handle {
+        background-color: var(--fdSlider_Range_Handle_Background);
+        border: var(--fdSlider_Range_Handle_Border);
+        box-shadow: var(--fdSlider_Range_Handle_Box_Shadow);
+
+        @include fd-hover() {
+          background-color: var(--fdSlider_Range_Hover_Handle_Background);
+          border-color: var(--fdSlider_Range_Hover_Handle_Border_Color);
+          box-shadow: var(--fdSlider_Range_Hover_Handle_Box_Shadow);
+        }
+
         @include fd-active() {
-          background-color: var(--fdSlider_Active_Range_Handle_Background);
+          background-color: var(--fdSlider_Range_Active_Handle_Background);
+          border-color: var(--fdSlider_Range_Active_Handle_Border_Color);
+          box-shadow: var(--fdSlider_Range_Active_Handle_Box_Shadow);
 
           &::after {
             display: none;
@@ -236,7 +249,9 @@ $handle-outline-width: 0.0625rem;
         }
 
         @include fd-focus() {
-          background-color: var(--fdSlider_Active_Range_Handle_Background);
+          background-color: var(--fdSlider_Range_Focus_Handle_Background);
+          border: var(--fdSlider_Range_Focus_Handle_Border);
+          box-shadow: var(--fdSlider_Range_Focus_Handle_Box_Shadow);
 
           &::after {
             display: none;
