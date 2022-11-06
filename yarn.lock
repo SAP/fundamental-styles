@@ -19439,7 +19439,7 @@ timsort@^0.3.0:
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha512-qsdtZH+vMoCARQtyod4imc2nIJwg9Cc7lPRrw9CzF8ZKR0khdr8+2nX80PBhET3tcyTtJDxAffGh2rXH4tyU8A==
 
-tinybench@^2.3.0:
+tinybench@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tinybench/-/tinybench-2.3.1.tgz#14f64e6b77d7ef0b1f6ab850c7a808c6760b414d"
   integrity sha512-hGYWYBMPr7p4g5IarQE7XhlyWveh1EKhy4wUBS1LrHXCKYgvz+4/jCqgmJqZxxldesn05vccrtME2RLLZNW7iA==
@@ -20271,9 +20271,9 @@ vitest-axe@^0.1.0:
     redent "^3.0.0"
 
 vitest@^0.24.3:
-  version "0.24.3"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.24.3.tgz#d91c7e2d557877d5270033efdf18add6063f0c97"
-  integrity sha512-aM0auuPPgMSstWvr851hB74g/LKaKBzSxcG3da7ejfZbx08Y21JpZmbmDYrMTCGhVZKqTGwzcnLMwyfz2WzkhQ==
+  version "0.24.5"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.24.5.tgz#ba23acdf4362e3299ca2a8a55afe3d2e7402b763"
+  integrity sha512-zw6JhPUHtLILQDe5Q39b/SzoITkG+R7hcFjuthp4xsi6zpmfQPOZcHodZ+3bqoWl4EdGK/p1fuMiEwdxgbGLOA==
   dependencies:
     "@types/chai" "^4.3.3"
     "@types/chai-subset" "^1.3.3"
@@ -20282,7 +20282,7 @@ vitest@^0.24.3:
     debug "^4.3.4"
     local-pkg "^0.4.2"
     strip-literal "^0.4.2"
-    tinybench "^2.3.0"
+    tinybench "^2.3.1"
     tinypool "^0.3.0"
     tinyspy "^1.0.2"
     vite "^3.0.0"
