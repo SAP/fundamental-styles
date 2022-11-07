@@ -176,8 +176,8 @@ $fd-business-suite-icons: (
   health-tracking: "\e0F6",
   blood-pressure: "\e0F7",
   immunization: "\e0F8",
-  allergies: "\e0F9",	
-  rescheduling2: "\e0FA",	
+  allergies: "\e0F9",
+  rescheduling2: "\e0FA",
   resequencing2: "\e0FB",
   no-time-change: "\e0FC",
   time-change: "\e0FD",
@@ -213,6 +213,16 @@ $fd-business-suite-icons: (
   gate: "\e133",
   timeseries-waterfall-chart: "\e134",
   stages-warning: "\e138",
-  empty-warning: "\e139"
+  empty-warning: "\e139",
+  move-folder: "\e169",
+  remove-folder: "\e16a",
+  match-case: "\e16b",
+  match-whole-word: "\e16c",
+  remove-total: "\e16d",
+  after-total: "\e16e",
+  before-total: "\e16f",
+  workbook-filter: "\e170",
+  icon-update-filter: "\e171",
+  cell-lock: "\e172"
 ) !default;
 /* stylelint-enable */
