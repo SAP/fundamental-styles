@@ -2,17 +2,27 @@ import '../../../src/slider.scss';
 export default {
     title: 'Components/Slider',
     parameters: {
-        description: `There are two types of sliders, the **standard slider** and a **range slider**. The standard slider is a control that enables the user to adjust single values within a specified numerical range. The range slider, however, enables the user to select a value range within a predefined numerical interval.
+        description: `There are two types of sliders, <a href="https://experience.sap.com/internal/fiori-design-web/slider/">Standard Slider</a> and  <a href="https://experience.sap.com/internal/fiori-design-web/range-slider/">Range Slider</a>. The standard slider is a control that enables the user to adjust single values within a specified numerical range. The range slider enables the user to select a value range within a predefined numerical interval.
 
 ##Usage
 **Use the slider if:**
 
--	You want to change values with graphical support.
+-	you want to change values with graphical support.
 
 
 **Use the range slide if:**
 
-- You want to select a value range within a predefined numerical interval. If you want to specify only a single value within a predefined numerical interval, use the slider instead.
+- you want to select a value range within a predefined numerical interval. If you want to specify only a single value within a predefined numerical interval, use the slider instead.
+
+## Responsiveness
+The slider itself is not responsive. It adjusts to the responsiveness of its parent container by recalculating and resizing the width of the control.
+
+## Components
+- **Track: ** a horizontal bar which visually represents the range between a minimum and maximum value. A portion of the slider represents the current value or a range.
+- **Tick Marks:** vertical elements that allow the slider to snap to predefined values
+- **Handles:**	interactive elements which can be dragged horizontally to change the current slider value or range
+- **Labels:**	the text or numeric representation of a tick mark value
+- **Helper Area:**	the area where the input and the tooltip are shown.
 
 
 ## Accessibility
@@ -52,7 +62,7 @@ Standard.parameters = {
         iframeHeight: 500,
         description: {
             story: `
-The standard slider displays a bar with a circular handle. When the user hovers over the handle, a hand cursor appears. The user can either drag and drop the handle or click on the bar to change the slider setting.
+The standard slider displays a track with a handle. When the user hovers over the handle, a hand cursor appears. The user can either drag and drop the handle or click on the bar to change the slider setting.
 ` }
     }
 };
@@ -76,7 +86,7 @@ Range.parameters = {
         iframeHeight: 500,
         description: {
             story: `
-The range slider displays a bar with two circular handles, indicating that a range between two values can be selected. To display a range slider, add the \`fd-slider__track-range\` class to the \`fd-slider__track\` element.
+The range slider displays a track with two handles, indicating that a range between two values can be selected. To display a range slider, add the \`fd-slider__track-range\` class to the \`fd-slider__track\` element.
 
         ` }
     }
@@ -114,7 +124,7 @@ Ticks.parameters = {
     docs: {
         description: {
             story: `
-The slider can display ticks on the bar to help guide the user. Ticks can be displayed with the \`fd-slider__tick\` class. If a tick is in selected range, a \`--in-range\` modifier class should be applied.
+The slider can display ticks on the bar to help guide the user. If a tick is in selected range (Active Area), the \`fd-slider__tick--in-range\` modifier class should be applied to the \`fd-slider__tick\` base class.
         `
         }
     }
