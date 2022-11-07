@@ -1,11 +1,10 @@
-import {BuildExecutorSchema} from './schema';
-import {copyAssets} from '@nrwl/js';
-import {execSync} from 'child_process';
-import {ExecutorContext} from '@nrwl/devkit';
-import {copyFileSync, existsSync, readFileSync, rmSync, writeFileSync} from 'fs';
-import glob from "glob";
-import {parse} from 'path';
-import {processWithPostCss} from "../shared/postcss";
+import { BuildExecutorSchema } from './schema';
+import { copyAssets } from '@nrwl/js';
+import { execSync } from 'child_process';
+import { ExecutorContext } from '@nrwl/devkit';
+import { copyFileSync, existsSync, readFileSync, rmSync, writeFileSync } from 'fs';
+import glob from 'glob';
+import { processWithPostCss } from '../shared/postcss';
 
 const packageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
 const versions = {
@@ -40,11 +39,9 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
     const outputFiles = glob.sync(`${compilationOutputPath}/**/*.css`, {nodir: true});
 
     for (const file of outputFiles) {
-        const parsedPath = parse(file);
-        const outputPath = `${compilationOutputPath}/${parsedPath.name}${parsedPath.ext}`;
         const commit = await processWithPostCss({
             input: file,
-            output: outputPath,
+            output: file,
             minify: options.minify,
             map: false
         });
