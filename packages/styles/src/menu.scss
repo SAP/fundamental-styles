@@ -135,8 +135,8 @@ $block: #{$fd-namespace}-menu;
       border-top-left-radius: $fd-menu-border-radius;
     }
 
-    &:last-child,
-    &:last-child .#{$block}__link::after {
+    &:last-of-type,
+    &:last-of-type .#{$block}__link::after {
       border-bottom-right-radius: $fd-menu-border-radius;
       border-bottom-left-radius: $fd-menu-border-radius;
     }
@@ -297,7 +297,7 @@ $block: #{$fd-namespace}-menu;
       }
     }
 
-    .#{$block}__item:last-child {
+    .#{$block}__item:last-of-type {
       border-bottom-right-radius: 0;
 
       @include fd-rtl() {
