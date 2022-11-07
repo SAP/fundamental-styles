@@ -221,6 +221,7 @@
         "after-total",
         "before-total",
         "workbook-filter",
-        "icon-update-filter"
+        "icon-update-filter",
+        "cell-lock"
     ]
 }
