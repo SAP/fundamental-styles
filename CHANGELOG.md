@@ -1,3 +1,12 @@
+# [0.26.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.1...v0.26.0-rc.2) (2022-11-07)
+
+
+### Bug Fixes
+
+* **ci:** incorrect output path of build ([#4009](https://github.com/SAP/fundamental-styles/issues/4009)) ([ceb6d43](https://github.com/SAP/fundamental-styles/commit/ceb6d4348c5d8949d565e3d8db29d6fe56b78656))
+
+
+
 # [0.26.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.0...v0.26.0-rc.1) (2022-11-07)
 
 
