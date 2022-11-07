@@ -1,3 +1,12 @@
+# [0.26.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.3...v0.26.0-rc.4) (2022-11-07)
+
+
+### Bug Fixes
+
+* **styles:** last item in menu list border radius issue ([#4007](https://github.com/SAP/fundamental-styles/issues/4007)) ([1b8ec51](https://github.com/SAP/fundamental-styles/commit/1b8ec51945f73d8838eb73f8b6ad4f18d01390e9))
+
+
+
 # [0.26.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.2...v0.26.0-rc.3) (2022-11-07)
 
 
