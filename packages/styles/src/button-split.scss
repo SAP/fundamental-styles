@@ -116,7 +116,7 @@ $split-button-states: (
     }
 
     @include fd-hover() {
-      z-index: 2;
+      z-index: 1;
     }
   }
 
@@ -144,10 +144,12 @@ $split-button-states: (
 
     color: inherit;
     display: block;
-    max-width: 9.75rem; // 12rem - 2.25rem
+    max-width: 8.5rem; // 12rem - arrow button - paddings
+  }
 
-    &--compact {
-      max-width: 10rem; // 12rem - 2rem
+  .#{$block-button}--compact {
+    .#{$block}__text {
+      max-width: 9rem; // 12rem - arrow button - paddings
     }
   }
 }

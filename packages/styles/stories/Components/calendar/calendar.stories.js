@@ -1185,8 +1185,8 @@ export const PortraitMobile = () => `<div class="fd-dialog-docs-static fd-calend
                 <header class="fd-calendar__header">
                     <div class="fd-calendar__navigation">
                         <div class="fd-segmented-button" role="group" aria-label="Switch Date/Time picker">
-                            <button class="fd-button is-active">Date</button>
-                            <button class="fd-button">Time</button>
+                            <button class="fd-button fd-button--toggled" aria-pressed="true">Date</button>
+                            <button class="fd-button" aria-pressed="false">Time</button>
                         </div>
                     </div>
                     <div class="fd-calendar__navigation">

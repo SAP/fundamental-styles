@@ -69,13 +69,13 @@ export const Default = () => `
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
+                <button aria-label="button" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true">
                     <i class="sap-icon--email"></i>
                 </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
+                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="false">
                     <i class="sap-icon--iphone"></i>
                 </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
+                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="false">
                     <i class="sap-icon--notification-2"></i>
                 </button>
             </div>
@@ -127,13 +127,13 @@ export const Cozy = () => `<div class="fd-bar fd-bar--cozy">
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button" aria-pressed="true">
+                <button aria-label="button" class="fd-button fd-button--toggled" aria-pressed="true">
                     <i class="sap-icon--email"></i>
                 </button>
-                <button aria-label="button" class="fd-button">
+                <button aria-label="button" class="fd-button" aria-pressed="false">
                     <i class="sap-icon--iphone"></i>
                 </button>
-                <button aria-label="button" class="fd-button">
+                <button aria-label="button" class="fd-button" aria-pressed="false">
                     <i class="sap-icon--notification-2"></i>
                 </button>
             </div>
@@ -185,13 +185,13 @@ export const Responsive = () => `<div class="fd-bar fd-bar--responsive-paddings"
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button" aria-pressed="true">
+                <button aria-label="button" class="fd-button fd-button--toggled" aria-pressed="true">
                     <i class="sap-icon--email"></i>
                 </button>
-                <button aria-label="button" class="fd-button">
+                <button aria-label="button" class="fd-button" aria-pressed="false">
                     <i class="sap-icon--iphone"></i>
                 </button>
-                <button aria-label="button" class="fd-button">
+                <button aria-label="button" class="fd-button" aria-pressed="false">
                     <i class="sap-icon--notification-2"></i>
                 </button>
             </div>
@@ -246,13 +246,13 @@ export const Header = () => `
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
+                <button aria-label="button" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true">
                     <i class="sap-icon--email"></i>
                 </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
+                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="false">
                     <i class="sap-icon--iphone"></i>
                 </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
+                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="false">
                     <i class="sap-icon--notification-2"></i>
                 </button>
             </div>
@@ -296,13 +296,13 @@ export const Header = () => `
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button" aria-pressed="true">
+                <button aria-label="button" class="fd-button fd-button--toggled" aria-pressed="true">
                     <i class="sap-icon--email"></i>
                 </button>
-                <button aria-label="button" class="fd-button">
+                <button aria-label="button" class="fd-button" aria-pressed="false">
                     <i class="sap-icon--iphone"></i>
                 </button>
-                <button aria-label="button" class="fd-button">
+                <button aria-label="button" class="fd-button" aria-pressed="false">
                     <i class="sap-icon--notification-2"></i>
                 </button>
             </div>
@@ -372,13 +372,13 @@ export const Subheader = () => `
         <div class="fd-bar__element">
             <div class="fd-form-item">
                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                    <button aria-label="button" class="fd-button" aria-pressed="true">
+                    <button aria-label="button" class="fd-button fd-button--toggled" aria-pressed="true">
                         <i class="sap-icon--email"></i>
                     </button>
-                    <button aria-label="button" class="fd-button">
+                    <button aria-label="button" class="fd-button" aria-pressed="false">
                         <i class="sap-icon--iphone"></i>
                     </button>
-                    <button aria-label="button" class="fd-button">
+                    <button aria-label="button" class="fd-button" aria-pressed="false">
                         <i class="sap-icon--notification-2"></i>
                     </button>
                 </div>
@@ -432,13 +432,13 @@ export const HeaderWithSubheader = () => `
     <div class="fd-bar__middle">
         <div class="fd-bar__element">
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="true">
+                <button aria-label="button" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true">
                     <i class="sap-icon--email"></i>
                 </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
+                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="false">
                     <i class="sap-icon--iphone"></i>
                 </button>
-                <button aria-label="button" class="fd-button fd-button--compact">
+                <button aria-label="button" class="fd-button fd-button--compact" aria-pressed="false">
                     <i class="sap-icon--notification-2"></i>
                 </button>
             </div>
