@@ -338,13 +338,13 @@ export const Variants = () => `<div class="fddocs-container">
                         <div class="fd-bar__element">
                             <div class="fd-form-item">
                                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                    <button aria-label="email" class="fd-button fd-button--compact" aria-pressed="true">
+                                    <button aria-label="email" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true">
                                         <i class="sap-icon--email"></i>
                                     </button>
-                                    <button  aria-label="phone" class="fd-button fd-button--compact">
+                                    <button  aria-label="phone" class="fd-button fd-button--compact" aria-pressed="false">
                                         <i class="sap-icon--iphone"></i>
                                     </button>
-                                    <button  aria-label="notification" class="fd-button fd-button--compact">
+                                    <button  aria-label="notification" class="fd-button fd-button--compact" aria-pressed="false">
                                         <i class="sap-icon--notification-2"></i>
                                     </button>
                                 </div>
@@ -414,13 +414,13 @@ export const Variants = () => `<div class="fddocs-container">
                         <div class="fd-bar__element">
                             <div class="fd-form-item">
                                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                    <button aria-label="email" class="fd-button fd-button--compact" aria-pressed="true">
+                                    <button aria-label="email" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true">
                                         <i class="sap-icon--email"></i>
                                     </button>
-                                    <button aria-label="phone" class="fd-button fd-button--compact">
+                                    <button aria-label="phone" class="fd-button fd-button--compact" aria-pressed="false">
                                         <i class="sap-icon--iphone"></i>
                                     </button>
-                                    <button aria-label="notifications" class="fd-button fd-button--compact">
+                                    <button aria-label="notifications" class="fd-button fd-button--compact" aria-pressed="false">
                                         <i class="sap-icon--notification-2"></i>
                                     </button>
                                 </div>

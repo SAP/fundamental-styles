@@ -35,9 +35,9 @@ export const Fixed = () => `<div class="fd-panel fd-panel--fixed">
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button is-selected" id="jhqDKYrt" aria-pressed="true">Left</button>
-              <button class="fd-button">Middle</button>
-              <button class="fd-button">Right</button>
+              <button class="fd-button fd-button--toggled" id="jhqDKYrt" aria-pressed="true">Left</button>
+              <button class="fd-button" aria-pressed="false">Middle</button>
+              <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
@@ -74,9 +74,9 @@ export const Expandable = () => `<div class="fd-panel">
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button is-selected" id="jhqDKYdf" aria-pressed="true">Left</button>
-              <button class="fd-button">Middle</button>
-              <button class="fd-button">Right</button>
+              <button class="fd-button fd-button--toggled" id="jhqDKYdf" aria-pressed="true">Left</button>
+              <button class="fd-button" aria-pressed="false">Middle</button>
+              <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
@@ -136,9 +136,9 @@ export const Compact = () => `<div class="fd-panel fd-panel--compact">
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button fd-button--compact is-selected"  id="Gekf63D" aria-pressed="true">Left</button>
-              <button class="fd-button fd-button--compact">Middle</button>
-              <button class="fd-button fd-button--compact">Right</button>
+              <button class="fd-button fd-button--compact fd-button--toggled" id="Gekf63D" aria-pressed="true">Left</button>
+              <button class="fd-button fd-button--compact" aria-pressed="false">Middle</button>
+              <button class="fd-button fd-button--compact" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
@@ -174,9 +174,9 @@ export const FixedHeightContent = () => `<div class="fd-panel">
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button is-selected" id="GJL745SD" aria-pressed="true">Left</button>
-              <button class="fd-button">Middle</button>
-              <button class="fd-button">Right</button>
+              <button class="fd-button fd-button--toggled" id="GJL745SD" aria-pressed="true">Left</button>
+              <button class="fd-button" aria-pressed="false">Middle</button>
+              <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>
