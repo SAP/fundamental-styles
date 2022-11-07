@@ -121,7 +121,6 @@
     "postcss": "^8.2.13",
     "postcss-banner": "^4.0.0",
     "postcss-cli": "^9.0.1",
-    "postcss-custom-properties": "^11.0.0",
     "postcss-import": "^14.0.1",
     "postcss-normalize-charset": "^4.0.1",
     "postcss-scss": "^4.0.5",
