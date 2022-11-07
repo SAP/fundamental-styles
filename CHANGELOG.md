@@ -1,3 +1,29 @@
+# [0.26.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.20...v0.26.0-rc.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **styles:** button horizon and v1 preparations ([#3991](https://github.com/SAP/fundamental-styles/issues/3991)) ([99d2fd2](https://github.com/SAP/fundamental-styles/commit/99d2fd254b7ea1638daf598b7c53f6a63919c94d))
+
+
+### BREAKING CHANGES
+
+* **styles:** * from now applying of `fd-button--toggled` class requited for toggled segmented button
+
+* fix(e2e): storyshots update [ci visual]
+
+* fix(styles): css variables
+
+* fix(docs): button docs refactoring
+
+* fix(e2e): storyshots update [ci visual]
+
+* fix(styles): update segmented buttons in docs
+
+* fix(docs): storyshots update [ci visual]
+
+
+
 ## [0.25.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.19...v0.25.1-rc.20) (2022-11-06)
 
 
