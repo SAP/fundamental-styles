@@ -1,0 +1,257 @@
+@import "../../styles/src/new-settings";
+@import "../../styles/src/mixins";
+
+$block: #{$fd-namespace}-nested-list;
+$button: #{$fd-namespace}-button;
+
+.#{$block} {
+  $fd-nested-list-item-height: 2.75rem;
+  $fd-nested-list-item-height-compact: 1.5rem;
+  $fd-nested-list-item-border-radius: 0.5rem;
+  $fd-nested-list-item-spacing: 0.25rem;
+  $fd-nested-list-item-spacing-compact: 0.125rem;
+
+  @mixin fd-nested-list-states-colors($textColor, $backgroundColor) {
+    color: $textColor;
+    background: $backgroundColor;
+  }
+
+  @mixin fd-nested-list-focus($offset: 0.125rem, $width: var(--sapContent_FocusWidth)) {
+    &:focus,
+    &.is-focus {
+      outline-offset: $offset;
+      outline-width: $width;
+      outline-color: var(--sapContent_FocusColor);
+      outline-style: var(--sapContent_FocusStyle);
+      @content;
+    }
+  }
+
+  @include fd-reset();
+
+  width: 100%;
+  list-style: none;
+
+  &.level-1 {
+    & > .#{$block}__item {
+      @include fd-set-margins-x-equal(0.5rem);
+
+      &:first-child {
+        margin-top: $fd-nested-list-item-spacing;
+      }
+
+      &:last-child {
+        margin-bottom: $fd-nested-list-item-spacing;
+      }
+    }
+
+    .#{$block}__title {
+      @include fd-set-paddings-x(0, 1rem);
+    }
+  }
+
+  .#{$block}.level-2 {
+    .#{$block}__title {
+      @include fd-set-paddings-x(3rem, 1rem);
+    }
+  }
+
+  .#{$block}.level-3 {
+    .#{$block}__title {
+      @include fd-set-paddings-x(5rem, 1rem);
+    }
+  }
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+
+  /* ELEMENTS */
+  &__item {
+    @include fd-reset();
+
+    display: block;
+    margin: 0.5rem 0;
+
+    &--header {
+      margin-top: 0.25rem;
+
+      .#{$block}__link {
+        cursor: auto;
+
+        @include fd-hover() {
+          @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
+        }
+
+        .#{$block}__title {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__link {
+    @include fd-reset();
+
+    @include fd-flex() {
+      align-items: center;
+    }
+
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    height: $fd-nested-list-item-height;
+    border-radius: $fd-nested-list-item-border-radius;
+
+    @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
+
+    @include fd-hover() {
+      @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_Background));
+    }
+
+    @include fd-nested-list-focus();
+
+    @include fd-selected() {
+      @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_SelectionBackgroundColor));
+
+      @include fd-hover() {
+        @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Hover_SelectionBackground));
+      }
+
+      .#{$block}__link-container::after {
+        top: 0;
+        left: 0;
+        content: '';
+        height: 100%;
+        width: 0.1875rem;
+        position: absolute;
+        background: var(--sapList_SelectionBorderColor);
+      }
+
+      @include fd-rtl() {
+        .#{$block}__link-container::after {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+
+    @include fd-active() {
+      @include fd-nested-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
+
+      @include fd-selected() {
+        @include fd-nested-list-states-colors(var(--sapList_Active_TextColor), var(--sapList_Active_Background));
+      }
+
+      .#{$block}__title,
+      .#{$block}__icon,
+      .#{$block}__arrow {
+        color: var(--sapList_Active_TextColor);
+      }
+    }
+  }
+
+  /* This wrapper is needed because we can't apply overflow: hidden on fd-nested-list__link as the focus outline is cut.
+  And we need overflow hidden for the selected indicator on the left side which needs to follow the item border radius. */
+  &__link-container {
+    @include fd-reset();
+
+    @include fd-flex() {
+      align-items: center;
+    }
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: $fd-nested-list-item-border-radius;
+  }
+
+  &__icon {
+    @include fd-icon-element-base() {
+      @include fd-flex-center();
+      @include fd-set-width(3rem);
+      @include fd-set-height(100%);
+
+      color: currentColor;
+      font-size: var(--sapFontSize);
+    }
+  }
+
+  &__title {
+    @include fd-reset();
+    @include fd-ellipsis();
+
+    width: 100%;
+    text-align: left;
+    color: currentColor;
+    display: inline-block;
+    font-size: var(--sapFontSize);
+    height: $fd-nested-list-item-height;
+    line-height: $fd-nested-list-item-height;
+
+    @include fd-rtl() {
+      text-align: right;
+    }
+  }
+
+  &__arrow {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-set-width(1rem);
+    @include fd-set-height(1rem);
+    @include fd-set-margin-right(1rem);
+
+    line-height: 1;
+    font-size: var(--sapFontSize);
+
+    @include fd-rtl() {
+      -moz-transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+  }
+
+  /* MODIFIERS */
+  &--text-only {
+    .#{$block}__title:first-child {
+      @include fd-set-padding-left(1rem);
+    }
+  }
+
+  &--compact {
+    .#{$block}__item {
+      margin: 0.25rem 0;
+
+      &--header {
+        margin-top: 0.125rem;
+      }
+    }
+
+    &.level-1 {
+      & > .#{$block}__item {
+        &:first-child {
+          margin-top: $fd-nested-list-item-spacing-compact;
+        }
+
+        &:last-child {
+          margin-bottom: $fd-nested-list-item-spacing-compact;
+        }
+      }
+    }
+
+    .#{$block}__link {
+      @include fd-nested-list-focus(0.0625rem, 0.0625rem);
+
+      height: $fd-nested-list-item-height-compact;
+    }
+
+    .#{$block}__title {
+      height: $fd-nested-list-item-height-compact;
+      line-height: $fd-nested-list-item-height-compact;
+    }
+  }
+}
