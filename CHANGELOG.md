@@ -1,3 +1,12 @@
+# [0.26.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.5...v0.26.0-rc.6) (2022-11-08)
+
+
+### Features
+
+* **cx:** introduce Side Nav ([#3913](https://github.com/SAP/fundamental-styles/issues/3913)) ([cb29f40](https://github.com/SAP/fundamental-styles/commit/cb29f400de0de16d30c156120a43ac1fea026fe7))
+
+
+
 # [0.26.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.4...v0.26.0-rc.5) (2022-11-08)
 
 
