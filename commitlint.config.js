@@ -4,7 +4,7 @@ const Configuration = {
         'scope-enum': [
             2,
             'always',
-            ['styles', 'docs', 'e2e', 'release', 'deps', 'deps-dev', 'changelog', 'ci', 'fn', 'fn-icons', 'common-css']
+            ['styles', 'docs', 'e2e', 'release', 'deps', 'deps-dev', 'changelog', 'ci', 'fn', 'fn-icons', 'common-css', 'cx']
         ],
         'body-max-line-length': [2, 'always', 200],
         'footer-max-line-length': [2, 'always', 200],
