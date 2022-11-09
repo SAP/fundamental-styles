@@ -215,6 +215,21 @@ $block: #{$fd-namespace}-shellbar;
       }
     }
 
+    .#{$block}__action-combobox {
+      &--mobile {
+        @include fd-flex-center();
+
+        background-color: var(--sapShellColor);
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+        position: absolute;
+        left: 0;
+        padding: 0 0.3rem;
+        margin: 0;
+      }
+    }
+
     .#{$block}__button--menu {
       .sap-icon--megamenu {
         margin: 0 !important;
