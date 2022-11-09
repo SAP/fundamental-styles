@@ -1,9 +1,10 @@
+import '../../src/sap-colors.scss';
+
 export default {
-    title: 'Helpers/Colors',
+    title: 'Colors',
     parameters: {
         description: '',
-        docs: { iframeHeight: 500 },
-        components: ['sap-colors']
+        docs: { iframeHeight: 500 }
     }
 };
 
