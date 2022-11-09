@@ -1,3 +1,12 @@
+# [0.26.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.6...v0.26.0-rc.7) (2022-11-09)
+
+
+### Features
+
+* **styles:** add text color and background color to common css ([#3922](https://github.com/SAP/fundamental-styles/issues/3922)) ([bc06a2f](https://github.com/SAP/fundamental-styles/commit/bc06a2f0183d4e00fe5fbb5767d1ef90fc7bde08))
+
+
+
 # [0.26.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.5...v0.26.0-rc.6) (2022-11-08)
 
 
