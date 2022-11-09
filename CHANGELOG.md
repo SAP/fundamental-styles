@@ -1,3 +1,12 @@
+# [0.26.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.8...v0.26.0-rc.9) (2022-11-09)
+
+
+### Features
+
+* **styles:** add styles to combobox in shellbar ([#4012](https://github.com/SAP/fundamental-styles/issues/4012)) ([a575f82](https://github.com/SAP/fundamental-styles/commit/a575f8254d68920a55c1ebd4504d7b1fe7ac054f))
+
+
+
 # [0.26.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.7...v0.26.0-rc.8) (2022-11-09)
 
 
