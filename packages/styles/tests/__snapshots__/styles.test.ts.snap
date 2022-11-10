@@ -31353,7 +31353,7 @@ exports[`Check stories > Components/Upload Collection > Story Standard > Should 
             <button aria-label=\\"Delete\\" class=\\"fd-button fd-button--transparent\\"><i class=\\"sap-icon--decline\\"></i></button>
         </div>
     </li>
-    <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-upload-collection__item\\">
+    <li role=\\"listitem\\" tabindex=\\"0\\" class=\\"fd-list__item fd-list__item--interactive fd-upload-collection__item--interactive fd-upload-collection__item\\">
         <span class=\\"fd-list__thumbnail fd-upload-collection__thumbnail\\"><i role=\\"presentation\\" class=\\"sap-icon--activate\\"></i></span>
         <div class=\\"fd-list__content\\">
             <div class=\\"fd-upload-collection__title-container\\">
