@@ -5,53 +5,30 @@ $block: #{$fd-namespace}-popover;
 $listBlock: #{$fd-namespace}-list;
 
 .#{$block} {
-  $fd-popover-top-position: calc(100% + 0.5rem) !default;
-  $fd-popover-top-position-noarrow: 100% !default;
   $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
   $fd-popover-box-shadow: var(--sapContent_Shadow2) !default;
-
-  $fd-popover-arrow-top-back: -0.5rem !default;
-  $fd-popover-arrow-top-front: calc(-0.5rem + var(--fdPopover_Border_Width)) !default;
-
   $fd-popover-arrow-width: 1rem !default;
   $fd-popover-arrow-height: 0.5rem !default;
   $fd-popover-arrow-width-half: $fd-popover-arrow-width * 0.5 !default;
-  $fd-popover-arrow-offset: 0.575rem;
-  $fd-popover-arrow-offset-compact: 0.44rem;
   $fd-popover-inline-help-arrow-offset: 0.25rem !default;
   $fd-popover-arrow-color: var(--fdPopover_Border_Color) !default;
 
-  $fd-popover-transition-params: $fd-animation-speed !default;
+  --fdPopover_Arrow_Offset: 0.575rem;
 
   @include fd-reset();
 
   position: relative;
   display: inline-block;
   max-width: 100%;
-  text-shadow: var(--fdPopover_Text_Shadow);
 
   &__control {
     @include fd-reset();
     @include fd-action-cursor();
 
     position: relative;
-    margin-left: 0;
 
     &:focus-visible {
       outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
-    }
-
-    &.#{$fd-namespace}-input:last-child {
-      margin-bottom: 0;
-    }
-
-    &.is-expanded,
-    &[aria-expanded="true"] {
-      z-index: 3;
-
-      .#{$fd-namespace}-input-group {
-        margin-bottom: 0;
-      }
     }
 
     @include fd-disabled() {
@@ -60,9 +37,10 @@ $listBlock: #{$fd-namespace}-list;
   }
 
   &__wrapper {
+    @include fd-reset();
+    @include fd-popover-border-radius();
     @include fd-scrollbar(var(--fdScrollbar_Border_Radius));
 
-    border-radius: $fd-popover-border-radius;
     overflow: auto;
   }
 
@@ -70,17 +48,13 @@ $listBlock: #{$fd-namespace}-list;
     @include fd-reset();
     @include fd-popover-border-radius();
 
-    border: none;
     position: absolute;
     white-space: nowrap;
     box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
     background: $fd-popover-background-color;
-    opacity: 1;
-    visibility: visible;
-    top: $fd-popover-top-position;
-    transition: all $fd-popover-transition-params;
-    transform: translateY(0);
+    top: calc(100% + 0.5rem);
+    transition: all $fd-animation-speed;
 
     @include fd-both-pseudo-selectors() {
       content: "";
@@ -90,14 +64,14 @@ $listBlock: #{$fd-namespace}-list;
     &::before {
       @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, up);
 
-      top: $fd-popover-arrow-top-front;
+      top: calc(-0.5rem + var(--fdPopover_Border_Width) * 1.5);
       z-index: $fd-popover-z-index + 2;
     }
 
     &::after {
       @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, up);
 
-      top: $fd-popover-arrow-top-back;
+      top: -0.5rem;
       z-index: $fd-popover-z-index + 1;
     }
 
@@ -132,36 +106,8 @@ $listBlock: #{$fd-namespace}-list;
       }
     }
 
-    &--compact.#{$block}__body {
-      &,
-      &--left {
-        @include fd-both-pseudo-selectors() {
-          left: $fd-popover-arrow-offset-compact;
-        }
-
-        @include fd-rtl() {
-          @include fd-both-pseudo-selectors() {
-            left: auto;
-            right: $fd-popover-arrow-offset-compact;
-          }
-        }
-      }
-
-      &--right {
-        @include fd-right-popover-offset-placement();
-
-        @include fd-both-pseudo-selectors() {
-          left: auto;
-          right: $fd-popover-arrow-offset-compact;
-        }
-
-        @include fd-rtl() {
-          @include fd-both-pseudo-selectors() {
-            left: $fd-popover-arrow-offset-compact;
-            right: auto;
-          }
-        }
-      }
+    &--compact {
+      --fdPopover_Arrow_Offset: 0.44rem;
     }
 
     &,
@@ -169,13 +115,13 @@ $listBlock: #{$fd-namespace}-list;
       @include fd-left-popover-offset-placement();
 
       @include fd-both-pseudo-selectors() {
-        left: $fd-popover-arrow-offset;
+        left: var(--fdPopover_Arrow_Offset);
       }
 
       @include fd-rtl() {
         @include fd-both-pseudo-selectors() {
           left: auto;
-          right: $fd-popover-arrow-offset;
+          right: var(--fdPopover_Arrow_Offset);
         }
       }
     }
@@ -185,12 +131,12 @@ $listBlock: #{$fd-namespace}-list;
 
       @include fd-both-pseudo-selectors() {
         left: auto;
-        right: $fd-popover-arrow-offset;
+        right: var(--fdPopover_Arrow_Offset);
       }
 
       @include fd-rtl() {
         @include fd-both-pseudo-selectors() {
-          left: $fd-popover-arrow-offset;
+          left: var(--fdPopover_Arrow_Offset);
           right: auto;
         }
       }
@@ -198,8 +144,7 @@ $listBlock: #{$fd-namespace}-list;
 
     &--no-arrow {
       box-shadow: $fd-popover-box-shadow-no-arrow;
-      top: $fd-popover-top-position-noarrow;
-      z-index: 2;
+      top: 100%;
 
       @include fd-both-pseudo-selectors() {
         display: none;
@@ -207,8 +152,6 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &--dropdown {
-      display: -ms-grid;
-      -ms-grid-columns: max-content;
       width: max-content;
 
       &-fill {
@@ -218,6 +161,7 @@ $listBlock: #{$fd-namespace}-list;
       }
     }
 
+    // @deprecated
     &--static {
       position: relative;
       top: auto;
@@ -226,11 +170,12 @@ $listBlock: #{$fd-namespace}-list;
 
     &[aria-hidden="true"],
     &.is-hidden {
-      z-index: 1;
+      z-index: -1;
       opacity: 0;
       visibility: hidden;
     }
 
+    // @deprecated
     .#{$block}__body--hidden {
       display: none;
     }
@@ -288,23 +233,7 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &--compact {
-      .#{$block}__arrow {
-        &-x--start {
-          left: $fd-popover-arrow-offset-compact;
-        }
-
-        &-x--end {
-          right: $fd-popover-arrow-offset-compact;
-        }
-
-        &-y--top {
-          top: $fd-popover-arrow-offset-compact;
-        }
-
-        &-y--bottom {
-          bottom: $fd-popover-arrow-offset-compact;
-        }
-      }
+      --fdPopover_Arrow_Offset: 0.44rem;
     }
 
     .#{$block}__arrow {
@@ -386,7 +315,7 @@ $listBlock: #{$fd-namespace}-list;
       }
 
       &-x--start {
-        left: $fd-popover-arrow-offset;
+        left: var(--fdPopover_Arrow_Offset);
       }
 
       &-x--center {
@@ -395,11 +324,11 @@ $listBlock: #{$fd-namespace}-list;
       }
 
       &-x--end {
-        right: $fd-popover-arrow-offset;
+        right: var(--fdPopover_Arrow_Offset);
       }
 
       &-y--top {
-        top: $fd-popover-arrow-offset;
+        top: var(--fdPopover_Arrow_Offset);
       }
 
       &-y--center {
@@ -408,7 +337,7 @@ $listBlock: #{$fd-namespace}-list;
       }
 
       &-y--bottom {
-        bottom: $fd-popover-arrow-offset;
+        bottom: var(--fdPopover_Arrow_Offset);
       }
     }
   }
