@@ -12,6 +12,12 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
 .#{$block} {
   .#{$block}__item {
     flex-wrap: nowrap;
+
+    &--interactive {
+      .#{$block}__thumbnail {
+        color: var(--sapContent_IconColor);
+      }
+    }
   }
 
   &__thumbnail {

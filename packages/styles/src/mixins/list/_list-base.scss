@@ -38,7 +38,8 @@
       }
     }
 
-    &--interractive {
+    &--interractive, // This is a typo, but we can't remove it yet
+    &--interactive {
       @include fd-list-item-states();
     }
 
