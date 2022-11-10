@@ -46,21 +46,13 @@ $color-accents: (
 
   &__icon {
     @include fd-icon-element-base() {
-      font-size: 0.75rem;
-      margin-right: $fd-info-label-icon-text-spacing;
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: $fd-info-label-icon-text-spacing;
-      }
+      @include fd-set-margin-right($fd-info-label-icon-text-spacing);
 
       @include fd-only-child() {
         margin: 0;
-
-        @include fd-rtl() {
-          margin: 0;
-        }
       }
+
+      font-size: inherit;
     }
 
     &::before {
