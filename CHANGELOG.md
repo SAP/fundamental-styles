@@ -1,3 +1,12 @@
+# [0.26.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.10...v0.26.0-rc.11) (2022-11-10)
+
+
+### Bug Fixes
+
+* **styles:** add changes to Slider related to version 1 [ci visual] ([#3995](https://github.com/SAP/fundamental-styles/issues/3995)) ([80cd678](https://github.com/SAP/fundamental-styles/commit/80cd678151d90ae70dd16020951724dc69725377))
+
+
+
 # [0.26.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.9...v0.26.0-rc.10) (2022-11-10)
 
 
