@@ -1,3 +1,12 @@
+# [0.26.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.11...v0.26.0-rc.12) (2022-11-10)
+
+
+### Bug Fixes
+
+* **styles:** fix shellbar styles for input-group and addon [ci visual] ([#4015](https://github.com/SAP/fundamental-styles/issues/4015)) ([ae90cb1](https://github.com/SAP/fundamental-styles/commit/ae90cb10175285bea5d7176727ba30d672f57459))
+
+
+
 # [0.26.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.10...v0.26.0-rc.11) (2022-11-10)
 
 
