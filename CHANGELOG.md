@@ -1,3 +1,12 @@
+# [0.26.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.9...v0.26.0-rc.10) (2022-11-10)
+
+
+### Features
+
+* **styles:** added interactive upload collection item ([#4016](https://github.com/SAP/fundamental-styles/issues/4016)) ([81eb7de](https://github.com/SAP/fundamental-styles/commit/81eb7de0dd5ed162f29c49395daff4975349192f))
+
+
+
 # [0.26.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.8...v0.26.0-rc.9) (2022-11-09)
 
 
