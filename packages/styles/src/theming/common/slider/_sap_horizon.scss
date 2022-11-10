@@ -15,7 +15,7 @@
   --fdSlider_Handle_Width: 1.5rem;
   --fdSlider_Handle_Height: 1.25rem;
   --fdSlider_Handle_Border: 0.0625rem solid var(--sapSlider_HandleBorderColor);
-  --fdSlider_Handle_Border_Color: var(--sapSlider_HandleBorderColor);
+  --fdSlider_Handle_Border_Hover_Color: var(--sapSlider_Hover_HandleBorderColor);
   --fdSlider_Handle_Box_Shadow: var(--sapContent_Selected_Shadow);
   --fdSlider_Handle_Active_Width: 2.25rem;
   --fdSlider_Handle_Active_Height: 2rem;
@@ -34,7 +34,26 @@
   // Slider Handle Active
   --fdSlider_Active_Handle_Background: var(--sapSlider_Active_HandleBackground);
   --fdSlider_Active_Handle_Box_Shadow: none;
-  --fdSlider_Active_Range_Handle_Background: var(--sapSlider_Active_RangeHandleBackground);
+
+  // Slider Range Handle
+  --fdSlider_Range_Handle_Background: var(--sapSlider_RangeHandleBackground);
+  --fdSlider_Range_Handle_Border: 0.125rem solid var(--sapSlider_HandleBorderColor);
+  --fdSlider_Range_Handle_Box_Shadow: var(--sapContent_Selected_Shadow);
+
+  // Slider Range Handle Hover
+  --fdSlider_Range_Hover_Handle_Background: var(--sapSlider_RangeHandleBackground);
+  --fdSlider_Range_Hover_Handle_Border_Color: var(--sapSlider_Hover_HandleBorderColor);
+  --fdSlider_Range_Hover_Handle_Box_Shadow: var(--sapContent_Selected_Shadow);
+
+  // Slider Range Handle Active
+  --fdSlider_Range_Active_Handle_Background: var(--sapSlider_Active_RangeHandleBackground;);
+  --fdSlider_Range_Active_Handle_Border_Color: var(--sapContent_FocusColor);
+  --fdSlider_Range_Active_Handle_Box_Shadow: none;
+
+  // Slider Range Handle Focus
+  --fdSlider_Range_Focus_Handle_Background: var(--sapSlider_Active_RangeHandleBackground;);
+  --fdSlider_Range_Focus_Handle_Border: var(--sapContent_FocusWidth) solid var(--sapContent_FocusColor);
+  --fdSlider_Range_Focus_Handle_Box_Shadow: none;
 
   // Slider Handle Focus
   --fdSlider_Focus_Handle_Outline_Color: transparent;

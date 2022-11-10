@@ -15,6 +15,7 @@
   --fdSlider_Handle_Width: 1.25rem;
   --fdSlider_Handle_Height: var(--fdSlider_Handle_Width);
   --fdSlider_Handle_Border: 0.125rem solid var(--sapField_BorderColor);
+  --fdSlider_Handle_Border_Hover_Color: var(--sapButton_Hover_BorderColor);
   --fdSlider_Handle_Box_Shadow: none;
   --fdSlider_Handle_Active_Width: 2rem;
   --fdSlider_Handle_Active_Height: 2rem;
@@ -33,7 +34,26 @@
   // Slider Handle Active
   --fdSlider_Active_Handle_Background: var(--sapButton_Active_Background);
   --fdSlider_Active_Handle_Box_Shadow: none;
-  --fdSlider_Active_Range_Handle_Background: var(--fdSlider_Active_Handle_Background);
+
+  // Slider Range Handle
+  --fdSlider_Range_Handle_Background: transparent;
+  --fdSlider_Range_Handle_Border: solid 0.125rem var(--sapField_BorderColor);
+  --fdSlider_Range_Handle_Box_Shadow: none;
+
+  // Slider Range Handle Hover
+  --fdSlider_Range_Hover_Handle_Background: transparent;
+  --fdSlider_Range_Hover_Handle_Border_Color: var(--sapButton_Hover_BorderColor);
+  --fdSlider_Range_Hover_Handle_Box_Shadow: none;
+
+  // Slider Range Handle Active
+  --fdSlider_Range_Active_Handle_Background: transparent;
+  --fdSlider_Range_Active_Handle_Border_Color: var(--sapButton_Active_BorderColor);
+  --fdSlider_Range_Active_Handle_Box_Shadow: none;
+
+  // Slider Range Handle Focus
+  --fdSlider_Range_Focus_Handle_Background: transparent;
+  --fdSlider_Range_Focus_Handle_Border: solid 0.125rem var(--sapButton_Active_BorderColor);
+  --fdSlider_Range_Focus_Handle_Box_Shadow: none;
 
   // Slider Handle Focus
   --fdSlider_Focus_Handle_Outline_Color: var(--sapButton_Hover_BorderColor);
