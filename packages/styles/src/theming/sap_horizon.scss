@@ -27,6 +27,7 @@
 @import "./common/tile/sap_horizon";
 @import "./common/progress-indicator/sap_horizon";
 @import "./common/form-message/sap_horizon";
+@import "./common/info-label/sap_horizon";
 
 :root {
   /* Switch */
@@ -299,41 +300,6 @@
   --sapIllus_NoColor: none;
   --sapIllus_PatternShadow: url(#sapIllus_PatternShadow);
   --sapIllus_PatternHighlight: url(#sapIllus_PatternHighlight);
-
-  /** Info Label */
-  --fdInfo_Label_Border_Color1: var(--btp-Mango8);
-  --fdInfo_Label_Border_Color2: var(--btp-Red8);
-  --fdInfo_Label_Border_Color3: var(--btp-Raspberry8);
-  --fdInfo_Label_Border_Color4: var(--btp-Pink8);
-  --fdInfo_Label_Border_Color5: var(--btp-Indigo8);
-  --fdInfo_Label_Border_Color6: var(--btp-Blue8);
-  --fdInfo_Label_Border_Color7: var(--btp-Teal8);
-  --fdInfo_Label_Border_Color8: var(--btp-Green8);
-  --fdInfo_Label_Border_Color9: var(--btp-Cyan8);
-  --fdInfo_Label_Border_Color10: var(--btp-Grey8);
-  --fdInfo_Label_Background_Color1: var(--btp-Mango2);
-  --fdInfo_Label_Background_Color2: var(--btp-Red2);
-  --fdInfo_Label_Background_Color3: var(--btp-Raspberry2);
-  --fdInfo_Label_Background_Color4: var(--btp-Pink2);
-  --fdInfo_Label_Background_Color5: var(--btp-Indigo2);
-  --fdInfo_Label_Background_Color6: var(--btp-Blue2);
-  --fdInfo_Label_Background_Color7: var(--btp-Teal2);
-  --fdInfo_Label_Background_Color8: var(--btp-Green2);
-  --fdInfo_Label_Background_Color9: var(--btp-Cyan2);
-  --fdInfo_Label_Background_Color10: var(--btp-Grey2);
-  --fdInfo_Label_Color1: var(--btp-Mango8);
-  --fdInfo_Label_Color2: var(--btp-Red8);
-  --fdInfo_Label_Color3: var(--btp-Raspberry8);
-  --fdInfo_Label_Color4: var(--btp-Pink8);
-  --fdInfo_Label_Color5: var(--btp-Indigo8);
-  --fdInfo_Label_Color6: var(--btp-Blue8);
-  --fdInfo_Label_Color7: var(--btp-Teal8);
-  --fdInfo_Label_Color8: var(--btp-Green8);
-  --fdInfo_Label_Color9: var(--btp-Cyan8);
-  --fdInfo_Label_Color10: var(--btp-Grey8);
-  --fdInfo_Label_Display_Border_Color: var(--btp-Grey8);
-  --fdInfo_Label_Display_Background_Color: var(--btp-Grey2);
-  --fdInfo_Label_Display_Text_Color: var(--btp-Grey8);
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);
