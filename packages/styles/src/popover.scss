@@ -53,7 +53,7 @@ $listBlock: #{$fd-namespace}-list;
     box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
     background: $fd-popover-background-color;
-    top: calc(100% + 0.5rem);
+    top: calc(100% + #{$fd-popover-arrow-height});
     transition: all $fd-animation-speed;
 
     @include fd-both-pseudo-selectors() {
@@ -64,14 +64,14 @@ $listBlock: #{$fd-namespace}-list;
     &::before {
       @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, up);
 
-      top: calc(-0.5rem + var(--fdPopover_Border_Width) * 1.5);
+      top: calc(-#{$fd-popover-arrow-height} + var(--fdPopover_Border_Width) * 1.5);
       z-index: $fd-popover-z-index + 2;
     }
 
     &::after {
       @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, up);
 
-      top: -0.5rem;
+      top: -$fd-popover-arrow-height;
       z-index: $fd-popover-z-index + 1;
     }
 
@@ -82,27 +82,35 @@ $listBlock: #{$fd-namespace}-list;
       }
     }
 
+    &-header > *:first-child,
     > *:first-child {
       border-top-right-radius: $fd-popover-border-radius;
       border-top-left-radius: $fd-popover-border-radius;
     }
 
+    &-footer > *:last-child,
     > *:last-child {
       border-bottom-right-radius: $fd-popover-border-radius;
       border-bottom-left-radius: $fd-popover-border-radius;
     }
 
-    &-header {
-      & > *:first-child {
-        border-top-right-radius: $fd-popover-border-radius;
-        border-top-left-radius: $fd-popover-border-radius;
+    .#{$listBlock}:first-child {
+      li:first-child,
+      li:first-child a {
+        &::before {
+          border-top-left-radius: $fd-popover-border-radius;
+          border-top-right-radius: $fd-popover-border-radius;
+        }
       }
     }
 
-    &-footer {
-      & > * {
-        border-bottom-right-radius: $fd-popover-border-radius;
-        border-bottom-left-radius: $fd-popover-border-radius;
+    .#{$listBlock}:last-child {
+      li:last-child,
+      li:last-child a {
+        &::before {
+          border-bottom-left-radius: $fd-popover-border-radius;
+          border-bottom-right-radius: $fd-popover-border-radius;
+        }
       }
     }
 
@@ -138,6 +146,89 @@ $listBlock: #{$fd-namespace}-list;
         @include fd-both-pseudo-selectors() {
           left: var(--fdPopover_Arrow_Offset);
           right: auto;
+        }
+      }
+    }
+
+    &--arrow {
+      &-bottom {
+        &::before {
+          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, down);
+
+          top: calc(100% - var(--fdPopover_Border_Width) * 0.5);
+        }
+
+        &::after {
+          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, down);
+
+          top: calc(100% + var(--fdPopover_Border_Width));
+        }
+      }
+
+      &-left {
+        &::before {
+          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, right);
+
+          top: var(--fdPopover_Arrow_Offset);
+          left: calc(100% - var(--fdPopover_Border_Width) * 0.5);
+        }
+
+        &::after {
+          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, right);
+
+          top: var(--fdPopover_Arrow_Offset);
+          left: calc(100% + var(--fdPopover_Border_Width));
+        }
+      }
+
+      &-right {
+        &::before {
+          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, left);
+
+          top: var(--fdPopover_Arrow_Offset);
+          left: calc(-#{$fd-popover-arrow-height} + var(--fdPopover_Border_Width) * 1.5);
+        }
+
+        &::after {
+          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, left);
+
+          top: var(--fdPopover_Arrow_Offset);
+          left: -#{$fd-popover-arrow-height};
+        }
+      }
+
+      &-x-center {
+        @include fd-both-pseudo-selectors() {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      &-x-end {
+        @include fd-both-pseudo-selectors() {
+          left: auto;
+          right: var(--fdPopover_Arrow_Offset);
+        }
+
+        @include fd-rtl() {
+          @include fd-both-pseudo-selectors() {
+            left: var(--fdPopover_Arrow_Offset);
+            right: auto;
+          }
+        }
+      }
+
+      &-y-center {
+        @include fd-both-pseudo-selectors() {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &-y-bottom {
+        @include fd-both-pseudo-selectors() {
+          top: auto;
+          bottom: var(--fdPopover_Arrow_Offset);
         }
       }
     }
@@ -179,13 +270,17 @@ $listBlock: #{$fd-namespace}-list;
     .#{$block}__body--hidden {
       display: none;
     }
+
+    &--input-message-group {
+      box-shadow: none;
+      border: none;
+      margin-top: -0.25rem;
+    }
   }
 
   &--input-message-group {
     .#{$block}__body,
-    .#{$block}__body--no-arrow,
-    .#{$block}__popper,
-    .#{$block}__popper--no-arrow {
+    .#{$block}__body--no-arrow {
       box-shadow: none;
       border: none;
       margin-top: -0.25rem;
@@ -194,175 +289,6 @@ $listBlock: #{$fd-namespace}-list;
 
   &--full-width {
     width: 100%;
-  }
-
-  /** NGX Popover Component.
-    * TODO: Refactor to use default one
-    */
-  &__popper {
-    @include fd-reset();
-
-    border: none;
-    position: relative;
-    width: 100%;
-    white-space: nowrap;
-    box-shadow: $fd-popover-box-shadow;
-    z-index: $fd-popover-z-index;
-    border-radius: $fd-popover-border-radius;
-    background: $fd-popover-background-color;
-    opacity: 1;
-
-    &--no-arrow {
-      margin: 0 !important;
-
-      .#{$block}__arrow {
-        display: none;
-      }
-    }
-
-    &--static {
-      position: relative;
-      top: auto;
-      bottom: auto;
-    }
-
-    &--input-message-group {
-      box-shadow: none;
-      border: none;
-      margin-top: -0.25rem !important;
-    }
-
-    &--compact {
-      --fdPopover_Arrow_Offset: 0.44rem;
-    }
-
-    .#{$block}__arrow {
-      @include fd-reset();
-
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-color: transparent;
-
-      &::after {
-        position: absolute;
-        content: "";
-        border-style: solid;
-        border-color: transparent;
-      }
-
-      &--bottom,
-      &--top {
-        &::after {
-          margin: 0 (-$fd-popover-arrow-width-half);
-        }
-      }
-
-      &--start,
-      &--end {
-        &::after {
-          margin: (-$fd-popover-arrow-width-half) 0;
-        }
-      }
-
-      &--bottom {
-        bottom: -$fd-popover-arrow-height;
-        border-width: $fd-popover-arrow-height $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half;
-        border-top-color: $fd-popover-arrow-color;
-
-        &::after {
-          bottom: 0.0625rem;
-          border-width: $fd-popover-arrow-height $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half;
-          border-top-color: $fd-popover-background-color;
-        }
-      }
-
-      &--top {
-        top: -$fd-popover-arrow-height;
-        border-width: 0 $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half;
-        border-bottom-color: $fd-popover-arrow-color;
-
-        &::after {
-          top: 0.0625rem;
-          border-width: 0 $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half;
-          border-bottom-color: $fd-popover-background-color;
-        }
-      }
-
-      &--end {
-        right: -$fd-popover-arrow-height;
-        border-width: $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half $fd-popover-arrow-height;
-        border-left-color: $fd-popover-arrow-color;
-
-        &::after {
-          right: 0.0625rem;
-          border-width: $fd-popover-arrow-width-half 0 $fd-popover-arrow-width-half $fd-popover-arrow-height;
-          border-left-color: $fd-popover-background-color;
-        }
-      }
-
-      &--start {
-        left: -$fd-popover-arrow-height;
-        border-width: $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half 0;
-        border-right-color: $fd-popover-arrow-color;
-
-        &::after {
-          left: 0.0625rem;
-          border-width: $fd-popover-arrow-width-half $fd-popover-arrow-height $fd-popover-arrow-width-half 0;
-          border-right-color: $fd-popover-background-color;
-        }
-      }
-
-      &-x--start {
-        left: var(--fdPopover_Arrow_Offset);
-      }
-
-      &-x--center {
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      &-x--end {
-        right: var(--fdPopover_Arrow_Offset);
-      }
-
-      &-y--top {
-        top: var(--fdPopover_Arrow_Offset);
-      }
-
-      &-y--center {
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      &-y--bottom {
-        bottom: var(--fdPopover_Arrow_Offset);
-      }
-    }
-  }
-
-  &__popper,
-  &__body {
-    .#{$listBlock}:first-child {
-      li:first-child,
-      li:first-child a {
-        &::before {
-          border-top-left-radius: $fd-popover-border-radius;
-          border-top-right-radius: $fd-popover-border-radius;
-        }
-      }
-    }
-
-    .#{$listBlock}:last-child {
-      li:last-child,
-      li:last-child a {
-        &::before {
-          border-bottom-left-radius: $fd-popover-border-radius;
-          border-bottom-right-radius: $fd-popover-border-radius;
-        }
-      }
-    }
   }
 
   &__inline-help {
