@@ -33,7 +33,6 @@ Fundamental Library Next Package can stand on its own. You can install the packa
 ```bash
 npm i @fundamental-styles/fn
 ```
-
-
+s
 
 Fundamental Library Next (FN) package is at the experimental phase at the moment. More details will be included in the future release.
