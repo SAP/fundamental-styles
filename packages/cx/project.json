@@ -29,7 +29,7 @@
                     "^(Helpers|Dev)"
                 ]
             },
-            "outputs": ["stories/Visuals/styles"]
+            "outputs": ["stories/Visuals/cx"]
         },
         "lint": {
             "executor": "@nrwl/linter:eslint",
