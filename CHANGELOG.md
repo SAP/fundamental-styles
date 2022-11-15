@@ -1,3 +1,12 @@
+# [0.26.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.13...v0.26.0-rc.14) (2022-11-15)
+
+
+### Bug Fixes
+
+* **cx:** add cx namespace for side nav ([#4021](https://github.com/SAP/fundamental-styles/issues/4021)) ([d5f8fc8](https://github.com/SAP/fundamental-styles/commit/d5f8fc8f91d1d6c309c44f85487a7e8dbae3da68))
+
+
+
 # [0.26.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.12...v0.26.0-rc.13) (2022-11-14)
 
 
