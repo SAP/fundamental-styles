@@ -21,13 +21,3 @@ $fd-popover-full-filled-width: calc(100% - #{$fd-popover-body-shadow-offset} * 2
     left: auto;
   }
 }
-
-@mixin fd-right-popover-offset-placement() {
-  right: $fd-popover-body-shadow-offset;
-  left: auto;
-
-  @include fd-rtl() {
-    left: $fd-popover-body-shadow-offset;
-    right: auto;
-  }
-}
