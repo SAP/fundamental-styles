@@ -12,8 +12,6 @@ $listBlock: #{$fd-namespace}-list;
   $fd-popover-inline-help-arrow-offset: 0.25rem !default;
   $fd-popover-arrow-color: var(--fdPopover_Border_Color) !default;
 
-  --fdPopover_Arrow_Offset: 0.575rem;
-
   @include fd-reset();
 
   position: relative;
@@ -44,6 +42,11 @@ $listBlock: #{$fd-namespace}-list;
   }
 
   &__body {
+    --fdButtonWithIconHeight: 2.25rem;
+    --fdButtonWithIconWidth: 2.25rem;
+    --fdPopover_Arrow_Offset_Vertical: calc(var(--fdButtonWithIconHeight) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
+    --fdPopover_Arrow_Offset_Horizontal: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
+
     @include fd-reset();
     @include fd-popover-border-radius();
 
@@ -98,7 +101,10 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &--compact {
-      --fdPopover_Arrow_Offset: 0.44rem;
+      --fdButtonWithIconHeight: 1.625rem;
+      --fdButtonWithIconWidth: 2rem;
+      --fdPopover_Arrow_Offset_Vertical: calc(var(--fdButtonWithIconHeight) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
+      --fdPopover_Arrow_Offset_Horizontal: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
     }
 
     &--no-arrow {
@@ -115,13 +121,13 @@ $listBlock: #{$fd-namespace}-list;
       @include fd-set-position-left(var(--fdPopover_Border_Width));
 
       @include fd-both-pseudo-selectors() {
-        left: var(--fdPopover_Arrow_Offset);
+        left: var(--fdPopover_Arrow_Offset_Horizontal);
       }
 
       @include fd-rtl() {
         @include fd-both-pseudo-selectors() {
           left: auto;
-          right: var(--fdPopover_Arrow_Offset);
+          right: var(--fdPopover_Arrow_Offset_Horizontal);
         }
       }
     }
@@ -141,12 +147,12 @@ $listBlock: #{$fd-namespace}-list;
       // @deprecated, fd-popover__body--arrow-x-end to be used instead
       @include fd-both-pseudo-selectors() {
         left: auto;
-        right: var(--fdPopover_Arrow_Offset);
+        right: var(--fdPopover_Arrow_Offset_Horizontal);
       }
 
       @include fd-rtl() {
         @include fd-both-pseudo-selectors() {
-          left: var(--fdPopover_Arrow_Offset);
+          left: var(--fdPopover_Arrow_Offset_Horizontal);
           right: auto;
         }
       }
@@ -202,7 +208,7 @@ $listBlock: #{$fd-namespace}-list;
         &::before {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, left);
 
-          top: var(--fdPopover_Arrow_Offset);
+          top: var(--fdPopover_Arrow_Offset_Vertical);
           left: auto !important;
           right: calc(100% - var(--fdPopover_Border_Width) * 0.5) !important;
         }
@@ -210,7 +216,7 @@ $listBlock: #{$fd-namespace}-list;
         &::after {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, left);
 
-          top: var(--fdPopover_Arrow_Offset);
+          top: var(--fdPopover_Arrow_Offset_Vertical);
           left: auto !important;
           right: calc(100% + var(--fdPopover_Border_Width)) !important;
         }
@@ -222,7 +228,7 @@ $listBlock: #{$fd-namespace}-list;
         &::before {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, right);
 
-          top: var(--fdPopover_Arrow_Offset);
+          top: var(--fdPopover_Arrow_Offset_Vertical);
           left: calc(100% - var(--fdPopover_Border_Width) * 0.5) !important;
           right: auto !important;
         }
@@ -230,7 +236,7 @@ $listBlock: #{$fd-namespace}-list;
         &::after {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, right);
 
-          top: var(--fdPopover_Arrow_Offset);
+          top: var(--fdPopover_Arrow_Offset_Vertical);
           left: calc(100% + var(--fdPopover_Border_Width)) !important;
           right: auto !important;
         }
@@ -254,12 +260,12 @@ $listBlock: #{$fd-namespace}-list;
       &-x-end {
         @include fd-both-pseudo-selectors() {
           left: auto;
-          right: var(--fdPopover_Arrow_Offset);
+          right: var(--fdPopover_Arrow_Offset_Horizontal);
         }
 
         @include fd-rtl() {
           @include fd-both-pseudo-selectors() {
-            left: var(--fdPopover_Arrow_Offset);
+            left: var(--fdPopover_Arrow_Offset_Horizontal);
             right: auto;
           }
         }
@@ -275,7 +281,7 @@ $listBlock: #{$fd-namespace}-list;
       &-y-bottom {
         @include fd-both-pseudo-selectors() {
           top: auto;
-          bottom: var(--fdPopover_Arrow_Offset);
+          bottom: var(--fdPopover_Arrow_Offset_Vertical);
         }
       }
     }
