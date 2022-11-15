@@ -82,35 +82,19 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &-header > *:first-child,
-    > *:first-child {
+    > *:first-child,
+    .#{$listBlock}:first-child li:first-child::before,
+    .#{$listBlock}:first-child li:first-child a::before {
       border-top-right-radius: $fd-popover-border-radius;
       border-top-left-radius: $fd-popover-border-radius;
     }
 
     &-footer > *:last-child,
-    > *:last-child {
+    > *:last-child,
+    .#{$listBlock}:last-child li:last-child::before,
+    .#{$listBlock}:last-child li:last-child a::before {
       border-bottom-right-radius: $fd-popover-border-radius;
       border-bottom-left-radius: $fd-popover-border-radius;
-    }
-
-    .#{$listBlock}:first-child {
-      li:first-child,
-      li:first-child a {
-        &::before {
-          border-top-left-radius: $fd-popover-border-radius;
-          border-top-right-radius: $fd-popover-border-radius;
-        }
-      }
-    }
-
-    .#{$listBlock}:last-child {
-      li:last-child,
-      li:last-child a {
-        &::before {
-          border-bottom-left-radius: $fd-popover-border-radius;
-          border-bottom-right-radius: $fd-popover-border-radius;
-        }
-      }
     }
 
     &--compact {
@@ -169,27 +153,15 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &--before {
-      @include fd-set-position-left(auto);
-      @include fd-set-position-right(calc(100% + var(--fdPopover_Border_Width)));
-
       top: var(--fdPopover_Border_Width);
-
-      @include fd-rtl() {
-        @include fd-set-position-left(auto);
-        @include fd-set-position-right(calc(100% + var(--fdPopover_Border_Width)));
-      }
+      left: auto !important;
+      right: calc(100% + var(--fdPopover_Border_Width)) !important;
     }
 
     &--after {
-      @include fd-set-position-right(auto);
-      @include fd-set-position-left(calc(100% + var(--fdPopover_Border_Width)));
-
       top: var(--fdPopover_Border_Width);
-
-      @include fd-rtl() {
-        @include fd-set-position-right(auto);
-        @include fd-set-position-left(calc(100% + var(--fdPopover_Border_Width)));
-      }
+      right: auto !important;
+      left: calc(100% + var(--fdPopover_Border_Width)) !important;
     }
 
     &--middle {
@@ -225,74 +197,42 @@ $listBlock: #{$fd-namespace}-list;
       }
 
       &-left {
-        @include fd-set-position-right(auto);
-        @include fd-set-position-left(calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)));
+        left: calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)) !important;
 
         &::before {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, left);
 
           top: var(--fdPopover_Arrow_Offset);
-          left: auto;
-          right: calc(100% - var(--fdPopover_Border_Width) * 0.5);
+          left: auto !important;
+          right: calc(100% - var(--fdPopover_Border_Width) * 0.5) !important;
         }
 
         &::after {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, left);
 
           top: var(--fdPopover_Arrow_Offset);
-          left: auto;
-          right: calc(100% + var(--fdPopover_Border_Width));
-        }
-
-        @include fd-rtl() {
-          @include fd-set-position-right(auto);
-          @include fd-set-position-left(calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)));
-
-          &::before {
-            left: auto;
-            right: calc(100% - var(--fdPopover_Border_Width) * 0.5);
-          }
-
-          &::after {
-            left: auto;
-            right: calc(100% + var(--fdPopover_Border_Width));
-          }
+          left: auto !important;
+          right: calc(100% + var(--fdPopover_Border_Width)) !important;
         }
       }
 
       &-right {
-        @include fd-set-position-left(auto);
-        @include fd-set-position-right(calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)));
+        right: calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)) !important;
 
         &::before {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, right);
 
           top: var(--fdPopover_Arrow_Offset);
-          left: calc(100% - var(--fdPopover_Border_Width) * 0.5);
-          right: auto;
+          left: calc(100% - var(--fdPopover_Border_Width) * 0.5) !important;
+          right: auto !important;
         }
 
         &::after {
           @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, right);
 
           top: var(--fdPopover_Arrow_Offset);
-          left: calc(100% + var(--fdPopover_Border_Width));
-          right: auto;
-        }
-
-        @include fd-rtl() {
-          @include fd-set-position-left(auto);
-          @include fd-set-position-right(calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)));
-
-          &::before {
-            left: calc(100% - var(--fdPopover_Border_Width) * 0.5);
-            right: auto;
-          }
-
-          &::after {
-            left: calc(100% + var(--fdPopover_Border_Width));
-            right: auto;
-          }
+          left: calc(100% + var(--fdPopover_Border_Width)) !important;
+          right: auto !important;
         }
       }
 
