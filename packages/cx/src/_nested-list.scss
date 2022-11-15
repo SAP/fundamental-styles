@@ -1,8 +1,10 @@
+
+@import "./settings";
 @import "../../styles/src/new-settings";
 @import "../../styles/src/mixins";
 
-$block: #{$fd-namespace}-nested-list;
-$button: #{$fd-namespace}-button;
+$block: #{$fd-cx-namespace}-nested-list;
+$button: #{$fd-cx-namespace}-button;
 
 .#{$block} {
   $fd-nested-list-item-height: 2.75rem;

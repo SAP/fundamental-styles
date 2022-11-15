@@ -51,7 +51,6 @@ export const Elevation = () => `${localStyles}
     <div class="sap-elevation-initial">Initial</div>
     <div class="sap-elevation-inherit">Inherit</div>
 </div>`;
-Elevation.storyName = 'Elevation';
 Elevation.parameters = {
     docs: {
         iframeHeight: 500,

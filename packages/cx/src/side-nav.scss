@@ -1,9 +1,10 @@
 @import "../../styles/src/new-settings";
+@import "./settings";
 @import "../../styles/src/mixins";
 @import "nested-list";
 
-$block: #{$fd-namespace}-side-nav;
-$block-nested-list: #{$fd-namespace}-nested-list;
+$block: #{$fd-cx-namespace}-side-nav;
+$block-nested-list: #{$fd-cx-namespace}-nested-list;
 
 $fd-side-nav-border-radius: 1rem;
 
@@ -122,14 +123,14 @@ $fd-side-nav-border-radius: 1rem;
   &--narrow {
     width: 4rem;
 
-    .#{$fd-namespace}-nested-list {
+    .#{$fd-cx-namespace}-nested-list {
       &__title,
       &__arrow {
         display: none;
       }
 
       // Child Level Indicator
-      button.#{$fd-namespace}-nested-list__link {
+      button.#{$fd-cx-namespace}-nested-list__link {
         position: relative;
 
         &::before {
@@ -161,7 +162,7 @@ $fd-side-nav-border-radius: 1rem;
     max-width: 100%;
     width: fit-content;
 
-    &.#{$fd-namespace}--narrow {
+    &.#{$fd-cx-namespace}--narrow {
       width: 4rem;
     }
   }
