@@ -42,22 +42,6 @@ Sizes.parameters = {
     }
 };
 
-/**
- * There are different semantic statuses that can be applied to the icon by adding a modifier class.
- *
- * | **Status**      | **Modifier class**               |
- * | --------------: | :------------------------------- |
- * | Default         | ` sap-icon-TNT--color-default`        |
- * | Contrast        | ` sap-icon-TNT--color-contrast`       |
- * | Non-interactive | ` sap-icon-TNT--color-non-interactive`|
- * | Tile            | ` sap-icon-TNT--color-tile`           |
- * | Marker          | ` sap-icon-TNT--color-marker`         |
- * | Critical        | ` sap-icon-TNT--color-critical`       |
- * | Negative        | ` sap-icon-TNT--color-negative`       |
- * | Neutral         | ` sap-icon-TNT--color-neutral`        |
- * | Positive        | ` sap-icon-TNT--color-positive`       |
- */
-
 export const Colors = () => `
  <span class="sap-icon-TNT sap-icon-TNT--exceptions" style="font-size:5rem"></span>
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-default" style="font-size:5rem"></span>
@@ -71,6 +55,25 @@ export const Colors = () => `
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-positive" style="font-size:5rem"></span>
  <span class="sap-icon-TNT sap-icon-TNT--exceptions sap-icon-TNT--color-information" style="font-size:5rem"></span>
  `;
+Colors.parameters = {
+    docs: {
+        storyDescription: `
+ There are different semantic statuses that can be applied to the icon by adding a modifier class.
+ 
+ | **Status**      | **Modifier class**               |
+ | --------------: | :------------------------------- |
+ | Default         | \` sap-icon-TNT--color-default\`        |
+ | Contrast        | \` sap-icon-TNT--color-contrast\`       |
+ | Non-interactive | \` sap-icon-TNT--color-non-interactive\`|
+ | Tile            | \` sap-icon-TNT--color-tile\`           |
+ | Marker          | \` sap-icon-TNT--color-marker\`         |
+ | Critical        | \` sap-icon-TNT--color-critical\`       |
+ | Negative        | \` sap-icon-TNT--color-negative\`       |
+ | Neutral         | \` sap-icon-TNT--color-neutral\`        |
+ | Positive        | \` sap-icon-TNT--color-positive\`       |
+ `
+    }
+}
 
 export const TntIcons = () => {
     const div = document.createElement('div');

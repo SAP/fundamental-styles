@@ -17,11 +17,7 @@ Use the Info Label base class with following modifiers:
     }
 };
 
-/** Use the `fd-info-label--accent-color-*` modifier class to apply semantic color to Info Label.
- * Options include numbers from 1 to 10.
- */
-
-export const Colors = () => `<span class="fd-info-label fd-info-label--accent-color-1">
+export const ColorFlavors = () => `<span class="fd-info-label fd-info-label--accent-color-1">
     <span class="fd-info-label__text">color 1</span>
 </span>
 <span class="fd-info-label fd-info-label--accent-color-2">
@@ -52,11 +48,16 @@ export const Colors = () => `<span class="fd-info-label fd-info-label--accent-co
     <span class="fd-info-label__text">color 10</span>
 </span>
 `;
-Colors.storyName = 'Color Flavors';
+ColorFlavors.parameters = {
+    docs: {
+        description: {
+            story: `Use the \`fd-info-label--accent-color-*\` modifier class to apply semantic color to Info Label.
+            Options include numbers from 1 to 10.`
+        }
+    }
+};
 
-/** Use the `fd-info-label--icon` modifier class and icon type to create Info Label with Icon. */
-
-export const Icons = () => `<span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
+export const InfoLabelWithIcon = () => `<span class="fd-info-label fd-info-label--accent-color-1 fd-info-label--icon">
     <i role="presentation" class="fd-info-label__icon sap-icon--future"></i>
     <span class="fd-info-label__text">Info Label</span>
 </span>
@@ -64,11 +65,15 @@ export const Icons = () => `<span class="fd-info-label fd-info-label--accent-col
     <i role="presentation" class="fd-info-label__icon sap-icon--upload-to-cloud"></i>
 </span>
 `;
-Icons.storyName = 'Info Label with Icon';
+InfoLabelWithIcon.parameters = {
+    docs: {
+        description: {
+            story: `Use the \`fd-info-label--icon\` modifier class and icon type to create Info Label with Icon.`
+        }
+    }
+}
 
-/** For Numeric Info Label use the `fd-info-label--numeric` modifier class. */
-
-export const Numeric = () => `<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">
+export const NumericInfoLabel = () => `<span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-1">
     <span class="fd-info-label__text">6</span>
 </span>
 <span class="fd-info-label fd-info-label--numeric fd-info-label--accent-color-2">
@@ -78,9 +83,13 @@ export const Numeric = () => `<span class="fd-info-label fd-info-label--numeric 
     <span class="fd-info-label__text">42k</span>
 </span>
 `;
-Numeric.storyName = 'Numeric Info Label';
-
-/** For Display Only Info Label use the `fd-info-label--display` modifier class */
+NumericInfoLabel.parameters = {
+    docs: {
+        description: {
+            story: `For Numeric Info Label use the \`fd-info-label--numeric\` modifier class.`
+        }
+    }
+}
 
 export const DisplayOnlyInfoLabel = () => `<span class="fd-info-label fd-info-label--display">
     <span class="fd-info-label__text">system state</span>
@@ -96,3 +105,10 @@ export const DisplayOnlyInfoLabel = () => `<span class="fd-info-label fd-info-la
     <span class="fd-info-label__text">Info Label</span>
 </span>
 `;
+DisplayOnlyInfoLabel.parameters = {
+    docs: {
+        description: {
+            story: `For Display Only Info Label use the \`fd-info-label--display\` modifier class.`
+        }
+    }
+}
