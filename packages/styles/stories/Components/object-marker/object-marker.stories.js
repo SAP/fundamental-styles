@@ -10,10 +10,6 @@ The technical status can be represented as an icon, with an icon and text, or as
     }
 };
 
-/**
- * Object Marker can display the semantic status of an object: (class: `fd-object-marker`)
- */
-
 export const IconOnly = () => `
 <div class="fd-object-marker">
     <i class="fd-object-marker__icon sap-icon--request" aria-label="icon for request"></i>
@@ -31,10 +27,11 @@ export const IconOnly = () => `
     <i class="fd-object-marker__icon sap-icon--private" aria-label="icon for private"></i>
 </div>
 `;
-
-/**
- * Object Marker Text only
- */
+IconOnly.parameters = {
+    docs: {
+        storyDescription: `Object Marker can display the semantic status of an object: (class: \`fd-object-marker\`)`
+    }
+}
 
 export const MarkerText = () => `
 <div class="fd-object-marker">
@@ -44,10 +41,11 @@ export const MarkerText = () => `
     <span class="fd-object-marker__text">Locked</span>
 </div>
 `;
-
-/**
- * Object Marker icon and text
- */
+MarkerText.parameters = {
+    docs: {
+        storyDescription: `Object Marker Text only`
+    }
+}
 
 export const IconAndText = () => `
 <div class="fd-object-marker">
@@ -79,12 +77,6 @@ IconAndText.parameters = {
         }
     }
 };
-
-/**
- If the object marker is used as a link, a hover effect is shown on non-touch devices.
- If the object marker is shown using a combination of icon and text, there is no hover effect for the icon.
- If Object marker has to be clicked/tabbed by the user add the `fd-object-marker--link` modifier class.
- */
 
 export const ClickableObjectMarker = () => `
 <a href="#" class="fd-object-marker fd-object-marker--link">

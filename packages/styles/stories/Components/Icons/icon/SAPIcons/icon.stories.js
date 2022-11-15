@@ -42,22 +42,6 @@ Sizes.parameters = {
     }
 };
 
-/**
- * There are different semantic statuses that can be applied to the icon by adding a modifier class.
- *
- * | **Status**      | **Modifier class**               |
- * | --------------: | :------------------------------- |
- * | Default         | `sap-icon--color-default`        |
- * | Contrast        | `sap-icon--color-contrast`       |
- * | Non-interactive | `sap-icon--color-non-interactive`|
- * | Tile            | `sap-icon--color-tile`           |
- * | Marker          | `sap-icon--color-marker`         |
- * | Critical        | `sap-icon--color-critical`       |
- * | Negative        | `sap-icon--color-negative`       |
- * | Neutral         | `sap-icon--color-neutral`        |
- * | Positive        | `sap-icon--color-positive`       |
- */
-
 export const Colors = () => `
 <span class="sap-icon sap-icon--cart" style="font-size:5rem" tabindex="0"></span>
 <span class="sap-icon sap-icon--cart sap-icon--color-default" style="font-size:5rem"></span>
@@ -71,6 +55,24 @@ export const Colors = () => `
 <span class="sap-icon sap-icon--cart sap-icon--color-positive" style="font-size:5rem"></span>
 <span class="sap-icon sap-icon--cart sap-icon--color-information" style="font-size:5rem"></span>
 `;
+Colors.parameters = {
+    docs: {
+        storyDescription: `
+  There are different semantic statuses that can be applied to the icon by adding a modifier class.
+ 
+  | **Status**      | **Modifier class**               |
+  | --------------: | :------------------------------- |
+  | Default         | \`sap-icon--color-default\`        |
+  | Contrast        | \`sap-icon--color-contrast\`       |
+  | Non-interactive | \`sap-icon--color-non-interactive\`|
+  | Tile            | \`sap-icon--color-tile\`           |
+  | Marker          | \`sap-icon--color-marker\`         |
+  | Critical        | \`sap-icon--color-critical\`       |
+  | Negative        | \`sap-icon--color-negative\`       |
+  | Neutral         | \`sap-icon--color-neutral\`        |
+  | Positive        | \`sap-icon--color-positive\`       |`
+    }
+}
 
 export const AvailableIcons = () => {
     const div = document.createElement('div');
