@@ -635,9 +635,133 @@ export const CosyWideIconsLevels = () => `<div class="fdx-side-nav">
 </div>
 `;
 
-CosyWideIconsLevels.storyName = 'Cosy Wide With Icons, 3 Levels';
+CosyWideIconsLevels.storyName = 'Cosy Wide With Icons, 3 Levels, Collapse Only';
 
 CosyWideIconsLevels.parameters = {
+    docs: {
+        iframeHeight: 550,
+        description: {
+            story: `
+        `
+        }
+    }
+};
+
+export const CosyWideIconsLevelsMultiClick = () => `<div class="fdx-side-nav">
+    <nav class="fdx-side-nav__main-navigation" aria-label="Main Menu">
+        <ul class="fdx-nested-list level-1" aria-labelledby="EX400H1">
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--home"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--map"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <div class="fdx-nested-list__link" aria-expanded="true" aria-label="Expand Level 2">
+                    <a class="fdx-nested-list__link-container" href="#">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--calendar"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </a>
+                    <button class="fdx-nested-list__button">
+                        <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                    </button>
+                </div>
+                <ul class="fdx-nested-list level-2" aria-hidden="false">
+                    <li class="fdx-nested-list__item">
+                        <div class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
+                            <a class="fdx-nested-list__link-container" href="#">
+                                <span class="fdx-nested-list__title">Level 2 Item</span>
+                            </a>
+                            <button class="fdx-nested-list__button">
+                                <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+                            </button>
+                        </div>
+                        <ul class="fdx-nested-list level-3" aria-hidden="false">
+                            <li class="fdx-nested-list__item">
+                                <a class="fdx-nested-list__link" href="#">
+                                    <div class="fdx-nested-list__link-container">
+                                        <span class="fdx-nested-list__title">Level 3 Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fdx-nested-list__item">
+                                <a class="fdx-nested-list__link is-selected" href="#">
+                                    <div class="fdx-nested-list__link-container">
+                                        <span class="fdx-nested-list__title">Level 3 Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fdx-nested-list__item">
+                                <a class="fdx-nested-list__link" href="#">
+                                    <div class="fdx-nested-list__link-container">
+                                        <span class="fdx-nested-list__title">Level 3 Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 2 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 2 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--activities"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="fdx-side-nav__utility" aria-label="Utility Menu">
+        <ul class="fdx-nested-list level-1" aria-label="Utility Menu">
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--compare"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--chain-link"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+`;
+
+CosyWideIconsLevelsMultiClick.storyName = 'Cosy Wide With Icons, 3 Levels, Navigation and Collapse';
+
+CosyWideIconsLevelsMultiClick.parameters = {
     docs: {
         iframeHeight: 550,
         description: {
@@ -735,6 +859,105 @@ export const CompactWideIcons = () => `<div class="fdx-side-nav fdx-side-nav--co
 CompactWideIcons.storyName = 'Compact Wide With Icons, Level 2 Collapsed';
 
 CompactWideIcons.parameters = {
+    docs: {
+        iframeHeight: 550,
+        description: {
+            story: `For compact Side Navigation apply the <code>.fdx-side-nav--compact</code> modifier class with <code>.fdx-side-nav</code> base class, and <code>.fdx-nested-list--compact</code> modifier class with <code>.fdx-nested-list</code> base class.
+        `
+        }
+    }
+};
+
+export const CompactWideIconsNavCollapse = () => `<div class="fdx-side-nav fdx-side-nav--compact">
+    <nav class="fdx-side-nav__main-navigation" aria-label="Main Menu">
+        <ul class="fdx-nested-list fdx-nested-list--compact level-1" aria-labelledby="EX500H1">
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--home"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--map"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <div class="fdx-nested-list__link is-selected" aria-expanded="false" aria-label="Expand Level 2">
+                    <a class="fdx-nested-list__link-container" href="#">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--calendar"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </a>
+                    <button class="fdx-nested-list__button">
+                        <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
+                    </button>
+                </div>
+
+                <ul class="fdx-nested-list level-2" aria-hidden="true">
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 2 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 2 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="fdx-nested-list__item">
+                        <a class="fdx-nested-list__link" href="#">
+                            <div class="fdx-nested-list__link-container">
+                                <span class="fdx-nested-list__title">Level 2 Item</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--activities"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="fdx-side-nav__utility" aria-label="Utility Menu">
+        <ul class="fdx-nested-list fdx-nested-list--compact level-1" aria-label="Utility Menu">
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--compare"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+            <li class="fdx-nested-list__item">
+                <a class="fdx-nested-list__link" href="#">
+                    <div class="fdx-nested-list__link-container">
+                        <i role="presentation" class="fdx-nested-list__icon sap-icon--chain-link"></i>
+                        <span class="fdx-nested-list__title">Level 1 Item</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+`;
+
+CompactWideIconsNavCollapse.storyName = 'Compact Wide With Icons, Level 2 Collapsed, Navigation and Collapse';
+
+CompactWideIconsNavCollapse.parameters = {
     docs: {
         iframeHeight: 550,
         description: {
@@ -898,7 +1121,8 @@ export const CosyNarrowOverflow = () => `<div class="fdx-side-nav fdx-side-nav--
 
 CosyNarrowOverflow.storyName = 'Cosy Narrow with Vertical Overflow Behaviour, Levels 2 and 3 in Popover Hidden';
 
-export const CosyNarrowPopover = () => `<div style="height: 500px;">
+export const CosyNarrowPopover = () => `<h3>Level 1 Header</h3>
+<div style="height: 500px;">
 <div class="fd-popover">
     <div class="fd-popover__control">
     </div>
@@ -911,6 +1135,78 @@ export const CosyNarrowPopover = () => `<div style="height: 500px;">
                             <span class="fdx-nested-list__title">Sales</span>
                         </div>
                     </h3>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <span class="fdx-nested-list__title">Level 2 Item</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <button class="fdx-nested-list__link is-selected" aria-expanded="true" aria-label="Expand Level 3">
+                        <div class="fdx-nested-list__link-container">
+                            <span class="fdx-nested-list__title">Level 2 Item</span>
+                            <i class="fdx-nested-list__arrow sap-icon--navigation-down-arrow" role="presentation"></i>
+                        </div>
+                    </button>
+                    <ul class="fdx-nested-list level-3" aria-hidden="false">
+                            <li class="fdx-nested-list__item">
+                                <a class="fdx-nested-list__link" href="#">
+                                    <div class="fdx-nested-list__link-container">
+                                        <span class="fdx-nested-list__title">Level 3 Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fdx-nested-list__item">
+                                <a class="fdx-nested-list__link" href="#">
+                                    <div class="fdx-nested-list__link-container">
+                                        <span class="fdx-nested-list__title">Level 3 Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="fdx-nested-list__item">
+                                <a class="fdx-nested-list__link" href="#">
+                                    <div class="fdx-nested-list__link-container">
+                                        <span class="fdx-nested-list__title">Level 3 Item</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <span class="fdx-nested-list__title">Level 2 Item</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="fdx-nested-list__item">
+                    <a class="fdx-nested-list__link" href="#">
+                        <div class="fdx-nested-list__link-container">
+                            <span class="fdx-nested-list__title">Level 2 Item</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<h3>Level 1 Navigation</h3>
+<div style="height: 500px;">
+<div class="fd-popover">
+    <div class="fd-popover__control">
+    </div>
+
+    <nav class="fdx-side-nav__popover-body fd-popover__body fd-popover__body--no-arrow"">
+            <ul class="fdx-nested-list level-2">
+                <li class="fdx-nested-list__item fdx-nested-list__item--header">
+                    <a class="fdx-nested-list__link">
+                        <div class="fdx-nested-list__link-container">
+                            <span class="fdx-nested-list__title">Sales</span>
+                        </div>
+                    </a>
                 </li>
                 <li class="fdx-nested-list__item">
                     <a class="fdx-nested-list__link" href="#">
