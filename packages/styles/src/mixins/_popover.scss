@@ -21,3 +21,30 @@ $fd-popover-full-filled-width: calc(100% - #{$fd-popover-body-shadow-offset} * 2
     left: auto;
   }
 }
+
+@mixin fd-popover-triangle($direction, $color, $size) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+  $directions: top, right, bottom, left;
+
+  @for $i from 1 through length($directions) {
+    @if nth($directions, $i) == $direction {
+      border-#{_get-item($directions, $i)}: none;
+      border-#{_get-item($directions, $i, -1)}: $size solid transparent;
+      border-#{_get-item($directions, $i, 1)}: $size solid transparent;
+      border-#{_get-item($directions, $i, 2)}: $size solid $color;
+    }
+  }
+}
+
+@function _get-item($list, $current, $offset:0) {
+  $result-position: ($current + $offset) % length($list);
+
+  @if $result-position == 0 {
+    $result-position: length($list);
+  }
+
+  @return nth($list, $result-position);
+}

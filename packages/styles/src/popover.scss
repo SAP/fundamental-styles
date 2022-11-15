@@ -4,11 +4,35 @@
 $block: #{$fd-namespace}-popover;
 $listBlock: #{$fd-namespace}-list;
 
+@mixin fd-popover-arrow-x-end() {
+  &::before {
+    left: auto;
+    right: calc(var(--fdPopover_Arrow_Offset_Horizontal) + var(--fdPopover_Border_Width));
+  }
+
+  &::after {
+    left: auto;
+    right: var(--fdPopover_Arrow_Offset_Horizontal);
+  }
+
+  @include fd-rtl() {
+    &::before {
+      left: calc(var(--fdPopover_Arrow_Offset_Horizontal) + var(--fdPopover_Border_Width));
+      right: auto;
+    }
+
+    &::after {
+      left: var(--fdPopover_Arrow_Offset_Horizontal);
+      right: auto;
+    }
+  }
+}
+
 .#{$block} {
   $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
   $fd-popover-box-shadow: var(--sapContent_Shadow2) !default;
-  $fd-popover-arrow-width: 1rem !default;
-  $fd-popover-arrow-height: 0.5rem !default;
+  $fd-popover-arrow-size: 0.5rem !default;
+  $fd-popover-arrow-size-inner: calc(#{$fd-popover-arrow-size} - var(--fdPopover_Border_Width)) !default;
   $fd-popover-inline-help-arrow-offset: 0.25rem !default;
   $fd-popover-arrow-color: var(--fdPopover_Border_Color) !default;
 
@@ -44,8 +68,8 @@ $listBlock: #{$fd-namespace}-list;
   &__body {
     --fdButtonWithIconHeight: 2.25rem;
     --fdButtonWithIconWidth: 2.25rem;
-    --fdPopover_Arrow_Offset_Vertical: calc(var(--fdButtonWithIconHeight) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
-    --fdPopover_Arrow_Offset_Horizontal: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
+    --fdPopover_Arrow_Offset_Vertical: calc(var(--fdButtonWithIconHeight) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
+    --fdPopover_Arrow_Offset_Horizontal: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
 
     @include fd-reset();
     @include fd-popover-border-radius();
@@ -55,7 +79,7 @@ $listBlock: #{$fd-namespace}-list;
     box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
     background: $fd-popover-background-color;
-    top: calc(100% + #{$fd-popover-arrow-height});
+    top: calc(100% + #{$fd-popover-arrow-size});
     transition: all $fd-animation-speed;
 
     @include fd-both-pseudo-selectors() {
@@ -64,16 +88,16 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &::before {
-      @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, up);
+      @include fd-popover-triangle(top, $fd-popover-background-color, $fd-popover-arrow-size-inner);
 
-      top: calc(-#{$fd-popover-arrow-height} + var(--fdPopover_Border_Width) * 1.5);
+      top: calc(-#{$fd-popover-arrow-size} + var(--fdPopover_Border_Width));
       z-index: $fd-popover-z-index + 2;
     }
 
     &::after {
-      @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, up);
+      @include fd-popover-triangle(top, $fd-popover-arrow-color, $fd-popover-arrow-size);
 
-      top: -$fd-popover-arrow-height;
+      top: -$fd-popover-arrow-size;
       z-index: $fd-popover-z-index + 1;
     }
 
@@ -103,8 +127,8 @@ $listBlock: #{$fd-namespace}-list;
     &--compact {
       --fdButtonWithIconHeight: 1.625rem;
       --fdButtonWithIconWidth: 2rem;
-      --fdPopover_Arrow_Offset_Vertical: calc(var(--fdButtonWithIconHeight) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
-      --fdPopover_Arrow_Offset_Horizontal: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popover-arrow-height} - var(--fdPopover_Border_Width));
+      --fdPopover_Arrow_Offset_Vertical: calc(var(--fdButtonWithIconHeight) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
+      --fdPopover_Arrow_Offset_Horizontal: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
     }
 
     &--no-arrow {
@@ -120,12 +144,21 @@ $listBlock: #{$fd-namespace}-list;
     &--left {
       @include fd-set-position-left(var(--fdPopover_Border_Width));
 
-      @include fd-both-pseudo-selectors() {
+      &::before {
+        left: calc(var(--fdPopover_Arrow_Offset_Horizontal) + var(--fdPopover_Border_Width));
+      }
+
+      &::after {
         left: var(--fdPopover_Arrow_Offset_Horizontal);
       }
 
       @include fd-rtl() {
-        @include fd-both-pseudo-selectors() {
+        &::before {
+          left: auto;
+          right: calc(var(--fdPopover_Arrow_Offset_Horizontal) + var(--fdPopover_Border_Width));
+        }
+
+        &::after {
           left: auto;
           right: var(--fdPopover_Arrow_Offset_Horizontal);
         }
@@ -133,10 +166,12 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &--center {
-      transform: translateX(calc(-50% + #{$fd-popover-arrow-width} + var(--fdPopover_Border_Width)));
+      @include fd-set-position-left(50%);
+
+      transform: translateX(-50%);
 
       @include fd-rtl() {
-        transform: translateX(calc(50% - #{$fd-popover-arrow-width} - var(--fdPopover_Border_Width)));
+        transform: translateX(50%);
       }
     }
 
@@ -145,17 +180,7 @@ $listBlock: #{$fd-namespace}-list;
       @include fd-set-position-right(var(--fdPopover_Border_Width));
 
       // @deprecated, fd-popover__body--arrow-x-end to be used instead
-      @include fd-both-pseudo-selectors() {
-        left: auto;
-        right: var(--fdPopover_Arrow_Offset_Horizontal);
-      }
-
-      @include fd-rtl() {
-        @include fd-both-pseudo-selectors() {
-          left: var(--fdPopover_Arrow_Offset_Horizontal);
-          right: auto;
-        }
-      }
+      @include fd-popover-arrow-x-end();
     }
 
     &--before {
@@ -171,8 +196,8 @@ $listBlock: #{$fd-namespace}-list;
     }
 
     &--middle {
-      top: var(--fdPopover_Border_Width);
-      transform: translateY(calc(-50% + #{$fd-popover-arrow-width} + var(--fdPopover_Border_Width)));
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     &--bottom {
@@ -187,57 +212,57 @@ $listBlock: #{$fd-namespace}-list;
 
     &--arrow {
       &-bottom {
-        bottom: calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width));
+        bottom: calc(100% + #{$fd-popover-arrow-size}) !important;
 
         &::before {
-          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, down);
+          @include fd-popover-triangle(bottom, $fd-popover-background-color, $fd-popover-arrow-size-inner);
 
-          top: calc(100% - var(--fdPopover_Border_Width) * 0.5);
+          top: 100%;
         }
 
         &::after {
-          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, down);
+          @include fd-popover-triangle(bottom, $fd-popover-arrow-color, $fd-popover-arrow-size);
 
-          top: calc(100% + var(--fdPopover_Border_Width));
+          top: 100%;
         }
       }
 
       &-left {
-        left: calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)) !important;
+        left: calc(100% + #{$fd-popover-arrow-size}) !important;
 
         &::before {
-          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, left);
+          @include fd-popover-triangle(left, $fd-popover-background-color, $fd-popover-arrow-size-inner);
 
-          top: var(--fdPopover_Arrow_Offset_Vertical);
+          top: calc(var(--fdPopover_Arrow_Offset_Vertical) + var(--fdPopover_Border_Width));
           left: auto !important;
-          right: calc(100% - var(--fdPopover_Border_Width) * 0.5) !important;
+          right: 100% !important;
         }
 
         &::after {
-          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, left);
+          @include fd-popover-triangle(left, $fd-popover-arrow-color, $fd-popover-arrow-size);
 
           top: var(--fdPopover_Arrow_Offset_Vertical);
           left: auto !important;
-          right: calc(100% + var(--fdPopover_Border_Width)) !important;
+          right: 100% !important;
         }
       }
 
       &-right {
-        right: calc(100% + #{$fd-popover-arrow-height} + var(--fdPopover_Border_Width)) !important;
+        right: calc(100% + #{$fd-popover-arrow-size}) !important;
 
         &::before {
-          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-background-color, right);
+          @include fd-popover-triangle(right, $fd-popover-background-color, $fd-popover-arrow-size-inner);
 
-          top: var(--fdPopover_Arrow_Offset_Vertical);
-          left: calc(100% - var(--fdPopover_Border_Width) * 0.5) !important;
+          top: calc(var(--fdPopover_Arrow_Offset_Vertical) + var(--fdPopover_Border_Width));
+          left: 100% !important;
           right: auto !important;
         }
 
         &::after {
-          @include fd-triangle($fd-popover-arrow-width $fd-popover-arrow-height, $fd-popover-arrow-color, right);
+          @include fd-popover-triangle(right, $fd-popover-arrow-color, $fd-popover-arrow-size);
 
           top: var(--fdPopover_Arrow_Offset_Vertical);
-          left: calc(100% + var(--fdPopover_Border_Width)) !important;
+          left: 100% !important;
           right: auto !important;
         }
       }
@@ -258,17 +283,7 @@ $listBlock: #{$fd-namespace}-list;
       }
 
       &-x-end {
-        @include fd-both-pseudo-selectors() {
-          left: auto;
-          right: var(--fdPopover_Arrow_Offset_Horizontal);
-        }
-
-        @include fd-rtl() {
-          @include fd-both-pseudo-selectors() {
-            left: var(--fdPopover_Arrow_Offset_Horizontal);
-            right: auto;
-          }
-        }
+        @include fd-popover-arrow-x-end();
       }
 
       &-y-center {
@@ -279,7 +294,12 @@ $listBlock: #{$fd-namespace}-list;
       }
 
       &-y-bottom {
-        @include fd-both-pseudo-selectors() {
+        &::before {
+          top: auto;
+          bottom: calc(var(--fdPopover_Arrow_Offset_Vertical) + var(--fdPopover_Border_Width));
+        }
+
+        &::after {
           top: auto;
           bottom: var(--fdPopover_Arrow_Offset_Vertical);
         }
