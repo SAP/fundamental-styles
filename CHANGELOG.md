@@ -1,3 +1,12 @@
+# [0.26.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.15...v0.26.0-rc.16) (2022-11-16)
+
+
+### Bug Fixes
+
+* **styles:** info label v1 ([#4017](https://github.com/SAP/fundamental-styles/issues/4017)) ([a14802a](https://github.com/SAP/fundamental-styles/commit/a14802ab8b7816b648aa9b03e47be18c24b10183))
+
+
+
 # [0.26.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.14...v0.26.0-rc.15) (2022-11-15)
 
 
