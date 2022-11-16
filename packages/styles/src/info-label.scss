@@ -39,27 +39,24 @@ $color-accents: (
   border-width: $fd-info-label-border-width;
   border-style: $fd-info-label-border-style;
 
+  /* Managed in modifiers */
+  background-color: var(--fdInfo_Label_Background_Color);
+  color: var(--fdInfo_Label_Color);
+  border-color: var(--fdInfo_Label_Border_Color);
+
   &__icon {
     @include fd-icon-element-base() {
-      font-size: 0.75rem;
-      margin-right: $fd-info-label-icon-text-spacing;
-
-      @include fd-rtl() {
-        margin-right: 0;
-        margin-left: $fd-info-label-icon-text-spacing;
-      }
+      @include fd-set-margin-right($fd-info-label-icon-text-spacing);
 
       @include fd-only-child() {
         margin: 0;
-
-        @include fd-rtl() {
-          margin: 0;
-        }
       }
+
+      font-size: inherit;
     }
 
     &::before {
-      vertical-align: middle;
+      vertical-align: bottom;
     }
   }
 
@@ -75,9 +72,9 @@ $color-accents: (
 
   @each $set-name, $color-set in $color-accents {
     &--accent-color-#{$set-name} {
-      background-color: map_get($color-set, "background");
-      border-color: map_get($color-set, "border");
-      color: map_get($color-set, "color");
+      --fdInfo_Label_Background_Color: #{map_get($color-set, "background")};
+      --fdInfo_Label_Color: #{map_get($color-set, "color")};
+      --fdInfo_Label_Border_Color: #{map_get($color-set, "border")};
 
       @include fd-icon-overwrite() {
         border-color: map_get($color-set, "border");
@@ -86,9 +83,9 @@ $color-accents: (
   }
 
   &--display {
-    border-color: var(--fdInfo_Label_Display_Border_Color);
-    background-color: var(--fdInfo_Label_Display_Background_Color);
-    color: var(--fdInfo_Label_Display_Text_Color);
+    --fdInfo_Label_Background_Color: var(--fdInfo_Label_Display_Background_Color);
+    --fdInfo_Label_Color: var(--fdInfo_Label_Display_Text_Color);
+    --fdInfo_Label_Border_Color: var(--fdInfo_Label_Display_Border_Color);
   }
 
   &--numeric {
