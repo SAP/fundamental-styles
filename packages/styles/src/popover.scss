@@ -38,6 +38,9 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
 .#{$block} {
   @include fd-reset();
 
+  --fdPopover_Offset: 100%;
+  --fdPopover_Center_Offset: 50%;
+
   position: relative;
   display: inline-block;
   max-width: 100%;
@@ -77,7 +80,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
     box-shadow: $fd-popover-box-shadow;
     z-index: $fd-popover-z-index;
     background: $fd-popover-background-color;
-    top: calc(100% + #{$fd-popover-arrow-size});
+    top: calc(var(--fdPopover_Offset) + #{$fd-popover-arrow-size});
     transition: all $fd-animation-speed;
 
     @include fd-both-pseudo-selectors() {
@@ -129,7 +132,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
 
     &--no-arrow {
       box-shadow: $fd-popover-box-shadow-no-arrow;
-      top: calc(100% + var(--fdPopover_Border_Width));
+      top: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width));
 
       @include fd-both-pseudo-selectors() {
         display: none;
@@ -162,12 +165,12 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
     }
 
     &--center {
-      @include fd-set-position-left(50%);
+      @include fd-set-position-left(var(--fdPopover_Center_Offset));
 
-      transform: translateX(-50%);
+      transform: translateX(-var(--fdPopover_Center_Offset));
 
       @include fd-rtl() {
-        transform: translateX(50%);
+        transform: translateX(var(--fdPopover_Center_Offset));
       }
     }
 
@@ -182,18 +185,18 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
     &--before {
       top: var(--fdPopover_Border_Width);
       left: auto !important;
-      right: calc(100% + var(--fdPopover_Border_Width)) !important;
+      right: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width)) !important;
     }
 
     &--after {
       top: var(--fdPopover_Border_Width);
       right: auto !important;
-      left: calc(100% + var(--fdPopover_Border_Width)) !important;
+      left: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width)) !important;
     }
 
     &--middle {
-      top: 50%;
-      transform: translateY(-50%);
+      top: var(--fdPopover_Center_Offset);
+      transform: translateY(-var(--fdPopover_Center_Offset));
     }
 
     &--bottom {
@@ -203,12 +206,12 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
 
     &--above {
       top: auto;
-      bottom: calc(100% + var(--fdPopover_Border_Width));
+      bottom: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width));
     }
 
     &--arrow {
       &-bottom {
-        bottom: calc(100% + #{$fd-popover-arrow-size}) !important;
+        bottom: calc(var(--fdPopover_Offset) + #{$fd-popover-arrow-size}) !important;
 
         &::before {
           @include fd-popover-triangle(bottom, $fd-popover-background-color, $fd-popover-arrow-size-inner);
@@ -224,7 +227,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
       }
 
       &-left {
-        left: calc(100% + #{$fd-popover-arrow-size}) !important;
+        left: calc(var(--fdPopover_Offset) + #{$fd-popover-arrow-size}) !important;
 
         &::before {
           @include fd-popover-triangle(left, $fd-popover-background-color, $fd-popover-arrow-size-inner);
@@ -244,7 +247,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
       }
 
       &-right {
-        right: calc(100% + #{$fd-popover-arrow-size}) !important;
+        right: calc(var(--fdPopover_Offset) + #{$fd-popover-arrow-size}) !important;
 
         &::before {
           @include fd-popover-triangle(right, $fd-popover-background-color, $fd-popover-arrow-size-inner);
