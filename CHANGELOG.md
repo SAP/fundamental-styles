@@ -1,3 +1,12 @@
+# [0.26.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.16...v0.26.0-rc.17) (2022-11-16)
+
+
+### Bug Fixes
+
+* **cx:** add side nav fixes after design review [ci visual] ([#4025](https://github.com/SAP/fundamental-styles/issues/4025)) ([0850bda](https://github.com/SAP/fundamental-styles/commit/0850bda8b63d0f0d1f5d6b1427678c0e99c1fc1d))
+
+
+
 # [0.26.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.15...v0.26.0-rc.16) (2022-11-16)
 
 
