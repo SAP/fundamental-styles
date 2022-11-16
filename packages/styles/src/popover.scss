@@ -2,14 +2,13 @@
 @import "./mixins";
 
 $block: #{$fd-namespace}-popover;
-$listBlock: #{$fd-namespace}-list;
 
 $fd-popover-z-index: map-get($fd-z-index-levels, "top") !default;
 $fd-popover-arrow-size: 0.5rem !default;
 $fd-popover-arrow-size-inner: calc(#{$fd-popover-arrow-size} - var(--fdPopover_Border_Width)) !default;
 $fd-popover-arrow-color: var(--fdPopover_Border_Color) !default;
-$fd-popover-arrow-offset-y: calc(var(--fdButtonWithIconHeight) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
-$fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
+$fd-popover-arrow-offset-y: calc(var(--fdIcon_Button_Height) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
+$fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popover-arrow-size} - var(--fdPopover_Border_Width));
 
 @mixin fd-popover-arrow-x-end() {
   &::before {
@@ -55,6 +54,12 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
       outline: var(--sapContent_FocusWidth) var(--sapContent_FocusStyle) var(--sapContent_FocusColor);
     }
 
+    @include fd-expanded() {
+      > * {
+        margin-bottom: 0;
+      }
+    }
+
     @include fd-disabled() {
       pointer-events: none;
     }
@@ -69,8 +74,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
   }
 
   &__body {
-    --fdButtonWithIconHeight: 2.25rem;
-    --fdButtonWithIconWidth: 2.25rem;
+    --fdIcon_Button_Height: 2.25rem;
+    --fdIcon_Button_Width: 2.25rem;
 
     @include fd-reset();
     @include fd-popover-border-radius();
@@ -111,23 +116,27 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
 
     &-header > *:first-child,
     > *:first-child,
-    .#{$listBlock}:first-child li:first-child::before,
-    .#{$listBlock}:first-child li:first-child a::before {
+    ul:first-child li:first-child::before,
+    ol:first-child li:first-child::before,
+    ul:first-child li:first-child a::before,
+    ol:first-child li:first-child a::before {
       border-top-right-radius: $fd-popover-border-radius;
       border-top-left-radius: $fd-popover-border-radius;
     }
 
     &-footer > *:last-child,
     > *:last-child,
-    .#{$listBlock}:last-child li:last-child::before,
-    .#{$listBlock}:last-child li:last-child a::before {
+    ul:last-child li:last-child::before,
+    ol:last-child li:last-child::before,
+    ul:last-child li:last-child a::before,
+    ol:last-child li:last-child a::before {
       border-bottom-right-radius: $fd-popover-border-radius;
       border-bottom-left-radius: $fd-popover-border-radius;
     }
 
     &--compact {
-      --fdButtonWithIconHeight: 1.625rem;
-      --fdButtonWithIconWidth: 2rem;
+      --fdIcon_Button_Height: 1.625rem;
+      --fdIcon_Button_Width: 2rem;
     }
 
     &--no-arrow {
@@ -167,7 +176,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
     &--center {
       @include fd-set-position-left(var(--fdPopover_Center_Offset));
 
-      transform: translateX(-var(--fdPopover_Center_Offset));
+      transform: translateX(calc(var(--fdPopover_Center_Offset) * -1));
 
       @include fd-rtl() {
         transform: translateX(var(--fdPopover_Center_Offset));
@@ -196,7 +205,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
 
     &--middle {
       top: var(--fdPopover_Center_Offset);
-      transform: translateY(-var(--fdPopover_Center_Offset));
+      transform: translateY(calc(var(--fdPopover_Center_Offset) * -1));
     }
 
     &--bottom {
@@ -345,8 +354,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
       font-size: var(--sapFontSmallSize);
 
       &-icon {
-        --fdButtonWithIconHeight: 1.375rem;
-        --fdButtonWithIconWidth: 1.375rem;
+        --fdIcon_Button_Height: 1.375rem;
+        --fdIcon_Button_Width: 1.375rem;
       }
     }
   }
