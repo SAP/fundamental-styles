@@ -18,7 +18,7 @@ $fd-side-nav-border-radius: 1rem;
   width: 15rem;
   height: 100%;
   padding: 0.25rem 0;
-  box-shadow: var(--sapContent_Shadow1);
+  box-shadow: var(--sapContent_Shadow0);
   background-color: var(--sapGroup_ContentBackground);
   border-radius: 0 $fd-side-nav-border-radius $fd-side-nav-border-radius 0;
 
@@ -125,7 +125,7 @@ $fd-side-nav-border-radius: 1rem;
 
     .#{$fd-cx-namespace}-nested-list {
       &__title,
-      &__arrow {
+      &__arrow[class*=sap-icon] {
         display: none;
       }
 

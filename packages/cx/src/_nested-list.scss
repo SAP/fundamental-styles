@@ -78,12 +78,27 @@ $button: #{$fd-cx-namespace}-button;
     &--header {
       margin-top: 0.25rem;
 
-      .#{$block}__link {
-        cursor: auto;
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        &.#{$block}__link {
+          cursor: auto;
 
-        @include fd-hover() {
-          @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
+          @include fd-hover() {
+            @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
+          }
+
+          .#{$block}__title {
+            font-weight: 700;
+          }
         }
+      }
+
+      .#{$block}__link {
+        cursor: pointer;
 
         .#{$block}__title {
           font-weight: 700;
@@ -158,6 +173,7 @@ $button: #{$fd-cx-namespace}-button;
   And we need overflow hidden for the selected indicator on the left side which needs to follow the item border radius. */
   &__link-container {
     @include fd-reset();
+    @include fd-nested-list-focus();
 
     @include fd-flex() {
       align-items: center;
@@ -167,6 +183,7 @@ $button: #{$fd-cx-namespace}-button;
     height: 100%;
     overflow: hidden;
     position: relative;
+    text-decoration: none;
     border-radius: $fd-nested-list-item-border-radius;
   }
 
@@ -198,7 +215,7 @@ $button: #{$fd-cx-namespace}-button;
     }
   }
 
-  &__arrow {
+  &__arrow[class*=sap-icon] {
     @include fd-reset();
     @include fd-flex-center();
     @include fd-set-width(1rem);
@@ -206,7 +223,6 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-set-margin-right(1rem);
 
     line-height: 1;
-    font-size: var(--sapFontSize);
 
     @include fd-rtl() {
       -moz-transform: scale(-1, 1);
@@ -214,6 +230,31 @@ $button: #{$fd-cx-namespace}-button;
       -o-transform: scale(-1, 1);
       -ms-transform: scale(-1, 1);
       transform: scale(-1, 1);
+    }
+  }
+
+  &__button {
+    @include fd-reset();
+    @include fd-flex-center();
+    @include fd-nested-list-focus();
+    @include fd-set-width(2.75rem);
+    @include fd-set-margin-left(0.5rem);
+
+    height: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-radius: $fd-nested-list-item-border-radius;
+
+    [class*=sap-icon] {
+      @include fd-flex-center();
+      @include fd-set-width(1rem);
+      @include fd-set-height(1rem);
+
+      line-height: 1;
+
+      @include fd-rtl() {
+        transform: scale(-1, 1);
+      }
     }
   }
 
@@ -249,6 +290,15 @@ $button: #{$fd-cx-namespace}-button;
       @include fd-nested-list-focus(0.0625rem, 0.0625rem);
 
       height: $fd-nested-list-item-height-compact;
+    }
+
+    .#{$block}__button {
+      @include fd-nested-list-focus(0.0625rem, 0.0625rem);
+      @include fd-set-margin-left(0.25rem);
+    }
+
+    .#{$block}__link-container {
+      @include fd-nested-list-focus(0.0625rem, 0.0625rem);
     }
 
     .#{$block}__title {
