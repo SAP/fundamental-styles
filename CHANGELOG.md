@@ -1,3 +1,12 @@
+# [0.26.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.17...v0.26.0-rc.18) (2022-11-16)
+
+
+### Features
+
+* **common-css:** add initial normalize styles to commonCSS package ([#4020](https://github.com/SAP/fundamental-styles/issues/4020)) ([97997e9](https://github.com/SAP/fundamental-styles/commit/97997e960be43de02ef9b554dc3a51714e3c2c66))
+
+
+
 # [0.26.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.16...v0.26.0-rc.17) (2022-11-16)
 
 
