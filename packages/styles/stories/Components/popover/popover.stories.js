@@ -782,7 +782,7 @@ export const Placement = () => `<div style="display: flex; justify-content: cent
                 <i class="sap-icon--navigation-left-arrow" role="presentation"></i>
             </button>
         </div>
-        <div class="fd-popover__body fd-popover__body--before fd-popover__body--bottom fd-popover__body--arrow-right fd-popover__body--arrow-y-bottom" aria-hidden="false" id="popoverF1">
+        <div class="fd-popover__body fd-popover__body--before fd-popover__body--bottom fd-popover__body--arrow-right fd-popover__body--arrow-y-end" aria-hidden="false" id="popoverF1">
             <div class="fd-popover__wrapper" style="max-height: 250px;">
                 <nav class="fd-menu" aria-label="big navigation menu">
                     <ul class="fd-menu__list fd-menu__list--no-shadow">
@@ -815,7 +815,7 @@ export const Placement = () => `<div style="display: flex; justify-content: cent
                 <i class="sap-icon--navigation-right-arrow" role="presentation"></i>
             </button>
         </div>
-        <div class="fd-popover__body fd-popover__body--after fd-popover__body--bottom fd-popover__body--arrow-left fd-popover__body--arrow-y-bottom" aria-hidden="false" id="popoverF1">
+        <div class="fd-popover__body fd-popover__body--after fd-popover__body--bottom fd-popover__body--arrow-left fd-popover__body--arrow-y-end" aria-hidden="false" id="popoverF1">
             <div class="fd-popover__wrapper" style="max-height: 250px;">
                 <nav class="fd-menu" aria-label="big navigation menu">
                     <ul class="fd-menu__list fd-menu__list--no-shadow">

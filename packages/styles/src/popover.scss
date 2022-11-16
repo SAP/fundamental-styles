@@ -292,7 +292,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdButtonWithIconWidth) * 0.5 - #{$fd-popo
         }
       }
 
-      &-y-bottom {
+      &-y-end {
         &::before {
           top: auto;
           bottom: calc(#{$fd-popover-arrow-offset-y} + var(--fdPopover_Border_Width));
