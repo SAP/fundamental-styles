@@ -140,6 +140,10 @@ $fd-button-badge-spacing: 0.25rem;
     }
   }
 
+  &--decisive {
+    min-width: 4rem;
+  }
+
   &__instructions {
     @include fd-screen-reader-only();
   }

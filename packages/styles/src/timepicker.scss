@@ -2,16 +2,67 @@
 @import './mixins';
 
 $block: #{$fd-namespace}-time-picker;
+$fd-time-picker-element-size: 2.75rem;
+$fd-time-picker-element-size-compact: 2rem;
+
+$fd-time-picker-clock-face: 18rem;
+$fd-time-picker-clock-face-compact: 16.5rem;
 
 .#{$block} {
-  @include fd-reset();
+  &__dropdown {
+    @include fd-reset();
 
+    padding: 1rem;
+  }
+
+  &__header {
+    @include fd-reset();
+
+    @include fd-flex-center() {
+      gap: 0.75rem;
+    }
+
+    padding: 0.25rem 0;
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__output {
+    @include fd-reset();
+    @include fd-flex-center();
+  }
+
+  &__colon {
+    @include fd-reset();
+
+    padding: 0 0.375rem;
+  }
+
+  // CLOCK-FACE
   &__clock-container {
     @include fd-reset();
 
-    width: 16.5rem;
-    height: 16.5rem;
+    width: $fd-time-picker-clock-face;
+    height: $fd-time-picker-clock-face;
     text-align: center;
+
+    &--compact {
+      width: $fd-time-picker-clock-face-compact;
+      height: $fd-time-picker-clock-face-compact;
+
+      .#{$block}__number {
+        width: $fd-time-picker-element-size-compact;
+        height: $fd-time-picker-element-size-compact;
+        line-height: $fd-time-picker-element-size-compact;
+      }
+
+      .#{$block}__item {
+        width: $fd-time-picker-element-size-compact;
+      }
+    }
   }
 
   &__clock {
@@ -61,7 +112,7 @@ $block: #{$fd-namespace}-time-picker;
     position: absolute;
     top: 0;
     left: 50%;
-    width: 2rem;
+    width: $fd-time-picker-element-size;
     height: 100%;
     user-select: none;
     display: inline-block;
@@ -99,15 +150,15 @@ $block: #{$fd-namespace}-time-picker;
     @include fd-reset();
     @include fd-flex-center();
 
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem;
+    width: $fd-time-picker-element-size;
+    height: $fd-time-picker-element-size;
+    line-height: $fd-time-picker-element-size;
     text-align: center;
     border-radius: 100%;
     vertical-align: top;
     border: 0.0625rem solid transparent;
 
-    @include fd-hover() {
+    &--hover {
       background: var(--sapList_Hover_Background);
     }
 
