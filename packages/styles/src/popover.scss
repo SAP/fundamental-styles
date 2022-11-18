@@ -139,9 +139,10 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       --fdIcon_Button_Width: 2rem;
     }
 
+    // works properly only if dropdown below the control
     &--no-arrow {
       box-shadow: $fd-popover-box-shadow-no-arrow;
-      top: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width));
+      top: var(--fdPopover_Offset);
 
       @include fd-both-pseudo-selectors() {
         display: none;
@@ -150,7 +151,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
 
     &,
     &--left {
-      @include fd-set-position-left(var(--fdPopover_Border_Width));
+      @include fd-set-position-left(0);
 
       &::before {
         left: calc(#{$fd-popover-arrow-offset-x} + var(--fdPopover_Border_Width));
@@ -185,22 +186,22 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
 
     &--right {
       @include fd-set-position-left(auto);
-      @include fd-set-position-right(var(--fdPopover_Border_Width));
+      @include fd-set-position-right(0);
 
       // @deprecated, fd-popover__body--arrow-x-end to be used instead
       @include fd-popover-arrow-x-end();
     }
 
     &--before {
-      top: var(--fdPopover_Border_Width);
+      top: 0;
       left: auto !important;
-      right: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width)) !important;
+      right: var(--fdPopover_Offset) !important;
     }
 
     &--after {
-      top: var(--fdPopover_Border_Width);
+      top: 0;
       right: auto !important;
-      left: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width)) !important;
+      left: var(--fdPopover_Offset) !important;
     }
 
     &--middle {
@@ -210,12 +211,12 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
 
     &--bottom {
       top: auto;
-      bottom: var(--fdPopover_Border_Width);
+      bottom: 0;
     }
 
     &--above {
       top: auto;
-      bottom: calc(var(--fdPopover_Offset) + var(--fdPopover_Border_Width));
+      bottom: var(--fdPopover_Offset);
     }
 
     &--arrow {
