@@ -232,7 +232,7 @@ The Fundamental Library GitHub Repository is a monorepo package that allows the 
 [Customer Experience Package](https://github.com/SAP/fundamental-styles/tree/main/packages/cx)
 [Fundamental Library Next Package](https://github.com/SAP/fundamental-styles/tree/main/packages/fn)
 [Common Css](https://github.com/SAP/fundamental-styles/tree/main/packages/common-css)
-[Styles](https://github.com/SAP/fundamental-styles/tree/main/packages/styles)
+[Styles Package](https://github.com/SAP/fundamental-styles/tree/main/packages/styles)
 
 
 ## Thanks
