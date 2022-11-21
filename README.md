@@ -225,6 +225,15 @@ The following circumstances will NOT be considered a MAJOR or BREAKING change:
 * Introducing new classnames, CSS variables, color names, color groups, spacing parameters
 * Adding or modifying CSS properties and values of existing classnames.
 
+## Fundamental Library GitHub Repository
+
+The Fundamental Library GitHub Repository is a monorepo package that allows the reusage of other packages while keeping them isolated from one another. The Fundamental Library GitHub Repository consist of:
+
+[Customer Experience Package](https://github.com/SAP/fundamental-styles/tree/main/packages/cx)
+[Fundamental Library Next Package](https://github.com/SAP/fundamental-styles/tree/main/packages/fn)
+[Common Css](https://github.com/SAP/fundamental-styles/tree/main/packages/common-css)
+
+
 ## Thanks
 
 <a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
