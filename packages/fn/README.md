@@ -10,8 +10,6 @@ To install Fundamental Library Next Package:
 npm i @fundamental-styles/fn
 ```
 
-## Components
-
 
 
 
