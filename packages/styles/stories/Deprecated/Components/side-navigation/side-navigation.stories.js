@@ -1289,7 +1289,7 @@ export const NestedListPopover = () => `<div class="fddocs-container" style="mar
                 </li>
             </ul>
         </div>
-        <div class="fd-popover__body" aria-hidden="false" id="popoverA11">
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="popoverA11">
             <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
                 <li class="fd-nested-list__group-header">
                     Group Header 1
@@ -1325,7 +1325,7 @@ export const NestedListPopover = () => `<div class="fddocs-container" style="mar
                 </li>
             </ul>
         </div>
-        <div class="fd-popover__body" aria-hidden="false" id="popoverA12">
+        <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="popoverA12">
             <ul class="fd-nested-list fd-nested-list--popover fd-nested-list--compact">
                 <li class="fd-nested-list__item fd-nested-list__item--popover">
                     <a class="fd-nested-list__link" href="#/">
