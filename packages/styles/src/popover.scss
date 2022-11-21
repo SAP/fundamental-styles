@@ -325,11 +325,12 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       }
     }
 
-    // @deprecated
+    // For NGX where we manage positioning with Material Overlay CDK but not CSS
     &--static {
       position: relative;
-      top: auto;
-      bottom: auto;
+
+      --fdPopover_Offset: 0;
+      --fdPopover_Center_Offset: 0%;
     }
 
     &[aria-hidden="true"],
