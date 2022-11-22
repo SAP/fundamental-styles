@@ -1,3 +1,12 @@
+# [0.26.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.18...v0.26.0-rc.19) (2022-11-22)
+
+
+### Features
+
+* **styles:** add new Time Picker component ([#4030](https://github.com/SAP/fundamental-styles/issues/4030)) ([d4777f0](https://github.com/SAP/fundamental-styles/commit/d4777f0459daac2b414123e61fbabdd84ab24733))
+
+
+
 # [0.26.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.17...v0.26.0-rc.18) (2022-11-16)
 
 
