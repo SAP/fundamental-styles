@@ -1,11 +1,11 @@
-import '../../../src/popover.scss';
-import '../../../src/input.scss';
-import '../../../src/input-group.scss';
-import '../../../src/time.scss';
-import '../../../src/button.scss';
-import '../../../src/icon.scss';
-import '../../../src/bar.scss';
-import '../../../src/layout-grid.scss';
+import '../../../../src/popover.scss';
+import '../../../../src/input.scss';
+import '../../../../src/input-group.scss';
+import '../../../../src/time.scss';
+import '../../../../src/button.scss';
+import '../../../../src/icon.scss';
+import '../../../../src/bar.scss';
+import '../../../../src/layout-grid.scss';
 export default {
     title: 'Deprecated/Components/Time Picker',
     parameters: {
