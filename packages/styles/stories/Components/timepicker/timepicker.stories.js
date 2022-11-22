@@ -92,272 +92,272 @@ export const Hours24Cozy = () => `<div style="min-height: 500px;">
                     <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
                         <div data-label="Hours" class="fd-time-picker__label"></div>
                         <div>
-                            <div class="fd-time-picker__item fd-time-picker__item--deg6">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 6deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg12">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 12deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg18">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 18deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg24">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 24deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg30">
+                            <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">1</span>
                                 <span class="fd-time-picker__number">13</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg36">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 36deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg42">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 42deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg48">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 48deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg54">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 54deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg60">
+                            <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">2</span>
                                 <span class="fd-time-picker__number">14</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg66">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 66deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg72">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 72deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg78">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 78deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg84">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 84deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg90">
+                            <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">3</span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg96">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 96deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg102">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 102deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg108">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 108deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg114">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 114deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg120">
+                            <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number fd-time-picker__number--hover">4</span>
                                 <span class="fd-time-picker__number">16</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg126">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 126deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg132">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 132deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg138">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 138deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg144">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 144deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg150">
+                            <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
                                 <span class="fd-time-picker__number">17</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg156">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 156deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg162">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 162deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg168">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 168deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg174">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 174deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg180">
+                            <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">6</span>
                                 <span class="fd-time-picker__number">18</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg186">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 186deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg192">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 192deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg198">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 198deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg204">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 204deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                            <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">7</span>
                                 <span class="fd-time-picker__number">19</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg216">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 216deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg222">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 222deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg228">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 228deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg234">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 234deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg240">
+                            <div class="fd-time-picker__item" style="--deg: 240deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">8</span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg246">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 246deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg252">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 252deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg258">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 258deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg264">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 264deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg270">
+                            <div class="fd-time-picker__item" style="--deg: 270deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">9</span>
                                 <span class="fd-time-picker__number">21</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg276">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 276deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg282">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 282deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg288">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 288deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg294">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 294deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg300">
+                            <div class="fd-time-picker__item" style="--deg: 300deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                                 <span class="fd-time-picker__number">22</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg306">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 306deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg312">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 312deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg318">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 318deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg324">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 324deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg330">
+                            <div class="fd-time-picker__item" style="--deg: 330deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">11</span>
                                 <span class="fd-time-picker__number">23</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg336">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 336deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg342">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 342deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg348">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 348deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg354">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 354deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg360">
+                            <div class="fd-time-picker__item" style="--deg: 360deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">12</span>
                                 <span class="fd-time-picker__number">00</span>
                             </div>
                         </div>
 
-                        <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                        <div class="fd-time-picker__item" style="--deg: 210deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--invisible"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">19</div>
@@ -433,260 +433,260 @@ export const Hours12Cozy = () => `<div style="min-height: 500px;">
                     <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
                         <div data-label="Hours" class="fd-time-picker__label"></div>
                         <div>
-                            <div class="fd-time-picker__item fd-time-picker__item--deg6">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 6deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg12">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 12deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg18">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 18deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg24">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 24deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg30">
+                            <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number fd-time-picker__number--hover">1</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg36">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 36deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg42">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 42deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg48">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 48deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg54">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 54deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg60">
+                            <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">2</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg66">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 66deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg72">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 72deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg78">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 78deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg84">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 84deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg90">
+                            <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">3</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg96">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 96deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg102">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 102deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg108">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 108deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg114">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 114deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg120">
+                            <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">4</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg126">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 126deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg132">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 132deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg138">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 138deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg144">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 144deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg150">
+                            <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg156">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 156deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg162">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 162deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg168">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 168deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg174">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 174deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg180">
+                            <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">6</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg186">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 186deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg192">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 192deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg198">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 198deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg204">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 204deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                            <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">7</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg216">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 216deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg222">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 222deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg228">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 228deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg234">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 234deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg240">
+                            <div class="fd-time-picker__item" style="--deg: 240deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">8</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg246">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 246deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg252">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 252deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg258">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 258deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg264">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 264deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg270">
+                            <div class="fd-time-picker__item" style="--deg: 270deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">9</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg276">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 276deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg282">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 282deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg288">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 288deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg294">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 294deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg300">
+                            <div class="fd-time-picker__item" style="--deg: 300deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg306">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 306deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg312">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 312deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg318">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 318deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg324">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 324deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg330">
+                            <div class="fd-time-picker__item" style="--deg: 330deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">11</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg336">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 336deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg342">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 342deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg348">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 348deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg354">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 354deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg360">
+                            <div class="fd-time-picker__item" style="--deg: 360deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">12</span>
                             </div>
                         </div>
 
-                        <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                        <div class="fd-time-picker__item" style="--deg: 210deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">7</div>
                         </div>
@@ -760,260 +760,260 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                     <div class="fd-time-picker__clock fd-time-picker__clock--inner fd-time-picker__clock--active">
                         <div data-label="Minutes" class="fd-time-picker__label"></div>
                         <div>
-                            <div class="fd-time-picker__item fd-time-picker__item--deg6">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 6deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg12">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 12deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg18">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 18deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg24">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 24deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg30">
+                            <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg36">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 36deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg42">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 42deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg48">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 48deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg54">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 54deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg60">
+                            <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
                         
-                            <div class="fd-time-picker__item fd-time-picker__item--deg66">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 66deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg72">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 72deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg78">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 78deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg84">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 84deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg90">
+                            <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg96">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 96deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg102">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 102deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg108">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 108deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg114">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 114deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg120">
+                            <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg126">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 126deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg132">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 132deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg138">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 138deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg144">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 144deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg150">
+                            <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">25</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg156">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 156deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg162">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 162deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg168">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 168deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg174">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 174deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg180">
+                            <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg186">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 186deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg192">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 192deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg198">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 198deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg204">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 204deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                            <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">35</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg216">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 216deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg222">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 222deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg228">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 228deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg234">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 234deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg240">
+                            <div class="fd-time-picker__item" style="--deg: 240deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">40</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg246">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 246deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg252">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 252deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg258">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 258deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg264">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 264deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg270">
+                            <div class="fd-time-picker__item" style="--deg: 270deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">45</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg276">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 276deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg282">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 282deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg288">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 288deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg294">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 294deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg300">
+                            <div class="fd-time-picker__item" style="--deg: 300deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">50</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg306">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 306deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg312">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 312deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg318">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 318deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg324">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 324deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg330">
+                            <div class="fd-time-picker__item" style="--deg: 330deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">55</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg336">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 336deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg342">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 342deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg348">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 348deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg354">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 354deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg360">
+                            <div class="fd-time-picker__item" style="--deg: 360deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">0</span>
                             </div>
                         </div>
 
-                        <div class="fd-time-picker__item fd-time-picker__item--deg108">
+                        <div class="fd-time-picker__item" style="--deg: 108deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">18</div>
                         </div>
@@ -1086,260 +1086,260 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                     <div class="fd-time-picker__clock fd-time-picker__clock--inner fd-time-picker__clock--active">
                         <div data-label="Seconds" class="fd-time-picker__label"></div>
                         <div>
-                            <div class="fd-time-picker__item fd-time-picker__item--deg6">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 6deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg12">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 12deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg18">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 18deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg24">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 24deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg30">
+                            <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg36">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 36deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg42">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 42deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg48">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 48deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg54">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 54deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg60">
+                            <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
                         
-                            <div class="fd-time-picker__item fd-time-picker__item--deg66">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 66deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg72">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 72deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg78">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 78deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg84">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 84deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg90">
+                            <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg96">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 96deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg102">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 102deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg108">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 108deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg114">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 114deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg120">
+                            <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg126">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 126deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg132">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 132deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg138">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 138deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg144">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 144deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg150">
+                            <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">25</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg156">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 156deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg162">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 162deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg168">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 168deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg174">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 174deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg180">
+                            <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg186">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 186deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg192">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 192deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg198">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 198deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg204">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 204deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                            <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">35</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg216">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 216deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg222">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 222deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg228">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 228deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg234">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 234deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg240">
+                            <div class="fd-time-picker__item" style="--deg: 240deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">40</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg246">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 246deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg252">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 252deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg258">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 258deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg264">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 264deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg270">
+                            <div class="fd-time-picker__item" style="--deg: 270deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">45</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg276">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 276deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg282">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 282deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg288">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 288deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg294">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 294deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg300">
+                            <div class="fd-time-picker__item" style="--deg: 300deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">50</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg306">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 306deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg312">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 312deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg318">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 318deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg324">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 324deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg330">
+                            <div class="fd-time-picker__item" style="--deg: 330deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">55</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg336">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 336deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg342">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 342deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg348">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 348deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg354">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 354deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg360">
+                            <div class="fd-time-picker__item" style="--deg: 360deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">0</span>
                             </div>
                         </div>
 
-                        <div class="fd-time-picker__item fd-time-picker__item--deg78">
+                        <div class="fd-time-picker__item" style="--deg: 78deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">13</div>
                         </div>
@@ -1401,272 +1401,272 @@ export const Hours24Compact = () => `<div style="min-height: 450px;">
                         <div data-label="Hours" class="fd-time-picker__label"></div>
                         
                         <div>
-                            <div class="fd-time-picker__item fd-time-picker__item--deg6">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 6deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg12">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 12deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg18">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 18deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg24">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 24deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg30">
+                            <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">1</span>
                                 <span class="fd-time-picker__number">13</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg36">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 36deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg42">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 42deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg48">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 48deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg54">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 54deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg60">
+                            <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">2</span>
                                 <span class="fd-time-picker__number">14</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg66">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 66deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg72">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 72deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg78">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 78deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg84">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 84deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg90">
+                            <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">3</span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg96">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 96deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg102">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 102deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg108">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 108deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg114">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 114deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg120">
+                            <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number fd-time-picker__number--hover">4</span>
                                 <span class="fd-time-picker__number">16</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg126">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 126deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg132">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 132deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg138">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 138deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg144">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 144deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg150">
+                            <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
                                 <span class="fd-time-picker__number">17</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg156">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 156deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg162">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 162deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg168">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 168deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg174">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 174deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg180">
+                            <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">6</span>
                                 <span class="fd-time-picker__number">18</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg186">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 186deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg192">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 192deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg198">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 198deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg204">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 204deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                            <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">7</span>
                                 <span class="fd-time-picker__number">19</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg216">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 216deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg222">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 222deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg228">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 228deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg234">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 234deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg240">
+                            <div class="fd-time-picker__item" style="--deg: 240deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">8</span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg246">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 246deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg252">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 252deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg258">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 258deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg264">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 264deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg270">
+                            <div class="fd-time-picker__item" style="--deg: 270deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">9</span>
                                 <span class="fd-time-picker__number">21</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg276">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 276deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg282">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 282deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg288">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 288deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg294">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 294deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg300">
+                            <div class="fd-time-picker__item" style="--deg: 300deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                                 <span class="fd-time-picker__number">22</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg306">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 306deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg312">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 312deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg318">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 318deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg324">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 324deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg330">
+                            <div class="fd-time-picker__item" style="--deg: 330deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">11</span>
                                 <span class="fd-time-picker__number">23</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg336">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 336deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg342">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 342deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg348">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 348deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg354">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 354deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg360">
+                            <div class="fd-time-picker__item" style="--deg: 360deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">12</span>
                                 <span class="fd-time-picker__number">00</span>
                             </div>
                         </div>
 
-                        <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                        <div class="fd-time-picker__item" style="--deg: 210deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--invisible"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">19</div>
@@ -1743,260 +1743,260 @@ export const Hours12Compact = () => `<div style="min-height: 450px;">
                         <div data-label="Hours" class="fd-time-picker__label"></div>
                         
                         <div>
-                            <div class="fd-time-picker__item fd-time-picker__item--deg6">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 6deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg12">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 12deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg18">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 18deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg24">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 24deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg30">
+                            <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">1</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg36">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 36deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg42">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 42deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg48">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 48deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg54">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 54deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg60">
+                            <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">2</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg66">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 66deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg72">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 72deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg78">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 78deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg84">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 84deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg90">
+                            <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">3</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg96">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 96deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg102">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 102deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg108">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 108deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg114">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 114deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg120">
+                            <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">4</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg126">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 126deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg132">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 132deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg138">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 138deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg144">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 144deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg150">
+                            <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg156">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 156deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg162">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 162deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg168">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 168deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg174">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 174deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg180">
+                            <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">6</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg186">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 186deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg192">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 192deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg198">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 198deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg204">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 204deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                            <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">7</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg216">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 216deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg222">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 222deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg228">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 228deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg234">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 234deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg240">
+                            <div class="fd-time-picker__item" style="--deg: 240deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">8</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg246">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 246deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg252">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 252deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg258">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 258deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg264">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 264deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg270">
+                            <div class="fd-time-picker__item" style="--deg: 270deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">9</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg276">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 276deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg282">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 282deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg288">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 288deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg294">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 294deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg300">
+                            <div class="fd-time-picker__item" style="--deg: 300deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg306">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 306deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg312">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 312deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg318">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 318deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg324">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 324deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg330">
+                            <div class="fd-time-picker__item" style="--deg: 330deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">11</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg336">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 336deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg342">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 342deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg348">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 348deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg354">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 354deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg360">
+                            <div class="fd-time-picker__item" style="--deg: 360deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">12</span>
                             </div>
                         </div>
 
-                        <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                        <div class="fd-time-picker__item" style="--deg: 210deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">7</div>
                         </div>
@@ -2063,261 +2063,261 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                     <div class="fd-time-picker__clock fd-time-picker__clock--inner fd-time-picker__clock--active">
                         <div data-label="Minutes" class="fd-time-picker__label"></div>
                         <div>
-                            <div class="fd-time-picker__item fd-time-picker__item--deg6">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 6deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg12">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 12deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg18">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 18deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg24">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 24deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg30">
+                            <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg36">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 36deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg42">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 42deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg48">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 48deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg54">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 54deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg60">
+                            <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
                         
-                            <div class="fd-time-picker__item fd-time-picker__item--deg66">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 66deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg72">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 72deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg78">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 78deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg84">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 84deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg90">
+                            <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg96">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 96deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg102">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 102deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg108">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 108deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg114">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 114deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg120">
+                            <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg126">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 126deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg132">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 132deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg138">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 138deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg144">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 144deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg150">
+                            <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">25</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg156">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 156deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg162">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 162deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg168">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 168deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg174">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 174deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg180">
+                            <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">30</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg186">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 186deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg192">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 192deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg198">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 198deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg204">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 204deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg210">
+                            <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">35</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg216">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 216deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg222">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 222deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg228">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 228deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg234">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 234deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg240">
+                            <div class="fd-time-picker__item" style="--deg: 240deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">40</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg246">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 246deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg252">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 252deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg258">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 258deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg264">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 264deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg270">
+                            <div class="fd-time-picker__item" style="--deg: 270deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">45</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg276">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 276deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg282">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 282deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg288">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 288deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg294">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 294deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg300">
+                            <div class="fd-time-picker__item" style="--deg: 300deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">50</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg306">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 306deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg312">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 312deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg318">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 318deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg324">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 324deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg330">
+                            <div class="fd-time-picker__item" style="--deg: 330deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">55</span>
                             </div>
                             
-                            <div class="fd-time-picker__item fd-time-picker__item--deg336">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 336deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg342">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 342deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg348">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 348deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg354">
-                                <span class="fd-time-picker__tick fd-time-picker__tick--minute"></span>
+                            <div class="fd-time-picker__item" style="--deg: 354deg">
+                                <span class="fd-time-picker__tick"></span>
                             </div>
 
-                            <div class="fd-time-picker__item fd-time-picker__item--deg360">
+                            <div class="fd-time-picker__item" style="--deg: 360deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">0</span>
                             </div>
 
                         </div>
                         
-                        <div class="fd-time-picker__item fd-time-picker__item--deg108">
+                        <div class="fd-time-picker__item" style="--deg: 108deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">18</div>
                         </div>
