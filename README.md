@@ -141,7 +141,6 @@ html {
 }
 ```
 
-If you are not supporting IE11, the recommended format is `woff2`. If supporting IE11, use `woff`.
 
 ## Working with the Project
 
