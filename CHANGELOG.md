@@ -1,3 +1,17 @@
+# [0.26.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.19...v0.26.0-rc.20) (2022-11-23)
+
+
+### Bug Fixes
+
+* **styles:** popover horizon and v1 refactoring ([#4026](https://github.com/SAP/fundamental-styles/issues/4026)) ([24598d6](https://github.com/SAP/fundamental-styles/commit/24598d6fe88c07f5c53f9ed11bc03c148058446d))
+
+
+### BREAKING CHANGES
+
+* **styles:** * `fd-popover__popper` class removed, use `fd-popover__body` instead
+
+
+
 # [0.26.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.18...v0.26.0-rc.19) (2022-11-22)
 
 
