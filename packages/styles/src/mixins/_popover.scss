@@ -3,6 +3,7 @@
 $fd-popover-body-shadow-offset: var(--sapGroup_BorderWidth) !default;
 $fd-popover-background-color: var(--sapGroup_ContentBackground) !default;
 $fd-popover-border-radius: var(--fdPopover_Border_Radius) !default;
+$fd-popover-box-shadow: var(--sapContent_Shadow2) !default;
 $fd-popover-box-shadow-no-arrow: var(--sapContent_Shadow1) !default;
 $fd-popover-full-filled-width: calc(100% - #{$fd-popover-body-shadow-offset} * 2);
 
@@ -22,12 +23,29 @@ $fd-popover-full-filled-width: calc(100% - #{$fd-popover-body-shadow-offset} * 2
   }
 }
 
-@mixin fd-right-popover-offset-placement() {
-  right: $fd-popover-body-shadow-offset;
-  left: auto;
+@mixin fd-popover-triangle($direction, $color, $size) {
+  display: inline-block;
+  width: 0;
+  height: 0;
 
-  @include fd-rtl() {
-    left: $fd-popover-body-shadow-offset;
-    right: auto;
+  $directions: top, right, bottom, left;
+
+  @for $i from 1 through length($directions) {
+    @if nth($directions, $i) == $direction {
+      border-#{_get-item($directions, $i)}: none;
+      border-#{_get-item($directions, $i, -1)}: $size solid transparent;
+      border-#{_get-item($directions, $i, 1)}: $size solid transparent;
+      border-#{_get-item($directions, $i, 2)}: $size solid $color;
+    }
   }
+}
+
+@function _get-item($list, $current, $offset:0) {
+  $result-position: ($current + $offset) % length($list);
+
+  @if $result-position == 0 {
+    $result-position: length($list);
+  }
+
+  @return nth($list, $result-position);
 }
