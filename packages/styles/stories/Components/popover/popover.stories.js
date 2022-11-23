@@ -33,7 +33,7 @@ export default {
     }
 };
 
-export const Variants = () => `<div class="fddocs-container">
+export const Variants = () => `<div class="fddocs-container" style="margin-bottom: 275px">
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button
@@ -854,7 +854,7 @@ To align the popover arrow with the trigger apply the following modifier classes
     }
 };
 
-export const NoArrow = () => `<div class="fd-popover">
+export const NoArrow = () => `<div class="fd-popover" style="margin-bottom: 100px">
     <div class="fd-popover__control">
         <button
             class="fd-button"

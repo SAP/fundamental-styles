@@ -21138,7 +21138,7 @@ exports[`Check stories > Components/Popover > Story ControlExamples > Should mat
 `;
 
 exports[`Check stories > Components/Popover > Story NoArrow > Should match snapshot 1`] = `
-"<div class=\\"fd-popover\\">
+"<div class=\\"fd-popover\\" style=\\"margin-bottom: 100px\\">
     <div class=\\"fd-popover__control\\">
         <button
             class=\\"fd-button\\"
@@ -21648,7 +21648,7 @@ exports[`Check stories > Components/Popover > Story Scrollable > Should match sn
 `;
 
 exports[`Check stories > Components/Popover > Story Variants > Should match snapshot 1`] = `
-"<div class=\\"fddocs-container\\">
+"<div class=\\"fddocs-container\\" style=\\"margin-bottom: 275px\\">
     <div class=\\"fd-popover\\">
         <div class=\\"fd-popover__control\\">
             <button
