@@ -17,7 +17,6 @@ export default {
 - You need to define your own structure.
 - You want to show UI elements that are not available with the quick view.
 
-
 **Do not use a popover if:**
 
 - The objects are in a master list (in this case, the details are shown in the details area).
@@ -80,17 +79,12 @@ export const Variants = () => `<div class="fddocs-container">
                             <span class="fd-menu__title">Option 3</span>
                         </a>
                     </li>
-                    <li class="fd-menu__item">
-                        <a class="fd-menu__link" href="#">
-                            <span class="fd-menu__title">Option 4</span>
-                        </a>
-                    </li>
                 </ul>
             </nav>
         </div>
     </div>
 
-    <div class="fd-popover fd-popover--right">
+    <div class="fd-popover">
         <div class="fd-popover__control">
             <button
                 aria-controls="popoverHSF2"
@@ -103,15 +97,26 @@ export const Variants = () => `<div class="fddocs-container">
                     Footer
                 </button>
         </div>
-        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverHSF2">
-            <div style="margin: 20px;">
-                <span
-                    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
-                    style="background-image: url('assets/images/avatars/2.svg');"
-                    role="img"
-                    aria-label="Avatar">
-                </span>
-            </div>
+        <div class="fd-popover__body" aria-hidden="false" id="popoverHSF2">
+            <nav class="fd-menu" aria-label="options with footer">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 1</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 2</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 3</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <div class="fd-popover__body-footer">
                 <div class="fd-bar fd-bar--footer">
                     <div class="fd-bar__right">
@@ -126,9 +131,7 @@ export const Variants = () => `<div class="fddocs-container">
             </div>
         </div>
     </div>
-</div>
-
-<div class="fddocs-container" style="margin-top:300px; margin-bottom: 300px">
+    
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button
@@ -144,7 +147,7 @@ export const Variants = () => `<div class="fddocs-container">
         </div>
         <section
             aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow"
+            class="fd-popover__body"
             id="popoverHSF3"
             aria-label="Dialog Data 1"
             role="dialog">
@@ -183,128 +186,7 @@ export const Variants = () => `<div class="fddocs-container">
                     </div>
                 </div>
             </header>
-            <div style="margin: 20px 80px;">
-                <span
-                    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
-                    style="background-image: url('assets/images/avatars/2.svg');"
-                    role="img"
-                    aria-label="Avatar"></span>
-            </div>
-            <footer class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
-    </div>
-
-    <div class="fd-popover">
-        <div class="fd-popover__control">
-            <button
-                aria-controls="popoverHSF345"
-                aria-expanded="true"
-                aria-haspopup="dialog"
-                class="fd-button"
-                onclick="onPopoverClick('popoverHSF345');"
-                role="button">
-                    <!- role is needed to override the combobox role due to aria-haspopup -->
-                    Cozy mode
-            </button>
-        </div>
-        <section
-            aria-hidden="false"
-            class="fd-popover__body fd-popover__body--no-arrow"
-            id="popoverHSF345"
-            aria-label="Dialog data"
-            role="dialog">
-            <header class="fd-popover__body-header">
-                <div class="fd-bar fd-bar--cozy fd-bar--header-with-subheader">
-                    <div class="fd-bar__left">
-                        <div class="fd-bar__element">
-                            <button
-                                aria-label="go back"
-                                class="fd-button fd-button--transparent">
-                                <i class="sap-icon--navigation-left-arrow"></i>
-                            </button>
-                        </div>
-                        <div class="fd-bar__element">
-                            Header
-                        </div>
-                    </div>
-                </div>
-                <div class="fd-bar fd-bar--cozy fd-bar--subheader">
-                    <div class="fd-bar__middle">
-                        <div class="fd-bar__element">
-                            <div class="fd-form-item">
-                                <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                    <button aria-label="email" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true">
-                                        <i class="sap-icon--email"></i>
-                                    </button>
-                                    <button aria-label="phone" class="fd-button fd-button--compact" aria-pressed="false">
-                                        <i class="sap-icon--iphone"></i>
-                                    </button>
-                                    <button aria-label="notifications" class="fd-button fd-button--compact" aria-pressed="false">
-                                        <i class="sap-icon--notification-2"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <div style="margin: 20px 80px;">
-                <span
-                    class="fd-avatar fd-avatar--xl fd-avatar--circle fd-avatar--thumbnail"
-                    style="background-image: url('assets/images/avatars/1.svg');"
-                    role="img"
-                    aria-label="Avatar">
-                </span>
-            </div>
-            <footer class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--cozy fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
-    </div>
-</div>
-
-<div class="fddocs-container" style="margin-top:300px; margin-bottom: 300px;">
-    <div class="fd-popover">
-        <div class="fd-popover__control">
-            <button
-                aria-controls="popoverHSF3"
-                aria-expanded="true"
-                aria-haspopup="dialog"
-                class="fd-button fd-button--compact"
-                onclick="onPopoverClick('popoverHSF3');"
-                role="button">
-                    <!- role is needed to override the combobox role due to aria-haspopup -->
-                    <i role="presentation" class="sap-icon--navigation-down-arrow"></i>
-            </button>
-            Compact body
-        </div>
-        <section
-            aria-hidden="false"
-            class="fd-popover__body fd-popover__body--compact"
-            id="popoverHSF3"
-            aria-label="Dialog Data 1"
-            role="dialog">
-            <nav class="fd-menu" aria-label="options with header">
+            <nav class="fd-menu" aria-label="options with header, subheader and footer">
                 <ul class="fd-menu__list fd-menu__list--no-shadow">
                     <li class="fd-menu__item">
                         <a class="fd-menu__link" href="#">
@@ -321,13 +203,20 @@ export const Variants = () => `<div class="fddocs-container">
                             <span class="fd-menu__title">Option 3</span>
                         </a>
                     </li>
-                    <li class="fd-menu__item">
-                        <a class="fd-menu__link" href="#">
-                            <span class="fd-menu__title">Option 4</span>
-                        </a>
-                    </li>
                 </ul>
             </nav>
+            <footer class="fd-popover__body-footer">
+                <div class="fd-bar fd-bar--footer">
+                    <div class="fd-bar__right">
+                        <div class="fd-bar__element">
+                            <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                        </div>
+                        <div class="fd-bar__element">
+                            <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </section>
     </div>
 </div>
@@ -343,12 +232,10 @@ Variants.parameters = {
 
 Variant | Modifier class | Description
 :------ | :------------- | :---------------
-Header | \`fd-popover__body-header\` | To display a header with text.
+Header | \`fd-popover__body-header\` | To display a header.
 Footer | \`fd-popover__body-footer\` | To display a footer with actions.
-Header, subheader | \`fd-popover__body-header\` containing \`fd-bar fd-bar--header-with-subheader\` and \`fd-bar fd-bar--subheader\` | This variant uses the **Bar** component.
-Cozy mode | \`fd-bar--cozy\` | Add this modifier class to the header area where \`fd-bar\` is used.
-Compact mode | \`fd-popover__body--compact\` | Add this modifier class the popover body component to display the popover in compact mode.
 
+You can also have subheader by using **Bar** component with subheader.
         `
         }
     }
@@ -399,7 +286,7 @@ export const ControlExamples = () => `<div class="fd-container" style="margin-bo
             </div>
         </div>
         <div class="fd-col--3 fd-col--offset-3">
-            <div class="fd-popover fd-popover--right">
+            <div class="fd-popover">
                 <div class="fd-popover__control">
                     <button
                         class="fd-button"
@@ -413,7 +300,7 @@ export const ControlExamples = () => `<div class="fd-container" style="margin-bo
                         <i class="sap-icon--cart" role="presentation"></i>
                     </button>
                 </div>
-                <div class="fd-popover__body fd-popover__body--right fd-popover__body--no-arrow" aria-hidden="false" id="popoverB4">
+                <div class="fd-popover__body" aria-hidden="false" id="popoverB4">
                     <nav class="fd-menu" aria-label="options triggered by icon button">
                         <ul class="fd-menu__list fd-menu__list--no-shadow">
                             <li class="fd-menu__item">
@@ -451,7 +338,7 @@ ControlExamples.parameters = {
     docs: {
         iframeHeight: 200,
         description: {
-            story: `Controls can be displayed as buttons, images, icons, and more. In the example below, the **Avatar** and **Icon** act as controls.
+            story: `As popover's triggers buttons, images, icons, and more can be used. In the example below, the **Avatar** and **Icon** act as triggers.
         `
         }
     }
@@ -525,7 +412,7 @@ Scrollable.parameters = {
     docs: {
         iframeHeight: 200,
         description: {
-            story: `When the content overflows, the popover body can become scrollable. To achieve this, add \`fd-popover-body__wrapper\` on the element below the body element.
+            story: `When the content overflows, the popover body can become scrollable. To achieve this, add element with class \`fd-popover-body__wrapper\` inside the popover body element.
         `
         }
     }
@@ -941,28 +828,70 @@ export const Placement = () => `<div style="display: flex; justify-content: cent
 Placement.parameters = {
     docs: {
         description: {
-            story: `It's possible to show popover on different sides relatively to the control. To do that apply the following modifier classes to the body.
+            story: `It's possible to show popover on different sides of the trigger. To do that apply the following modifier classes to the popover body element.
 
 | Modifier | Description |
 | :---- | :---------- |
-| \`fd-popover__body\` | Positions the popover below the control. *(default)* |
-| \`fd-popover__body--above\` | Positions the popover above the control. |
-| \`fd-popover__body--before\` | Positions the popover before the control. |
-| \`fd-popover__body--after\` | Positions the popover next to the control. |
+| \`fd-popover__body\` | Positions the popover below the trigger. *(default)* |
+| \`fd-popover__body--above\` | Positions the popover above the trigger. |
+| \`fd-popover__body--before\` | Positions the popover before the trigger. |
+| \`fd-popover__body--after\` | Positions the popover next to the trigger. |
 
-To align the popover arrow with the control apply the following modifier classes to the popover body.
+To align the popover arrow with the trigger apply the following modifier classes to the popover body element.
 
-| Modifier class | Description |
+| Arrow modifier class | Description |
 | :------------- | :---------- |
 | \`fd-popover__body\` | Positions the arrow on the top left side of the popover. *(default)* |
-| \`fd-popover__body--arrow-bottom\` | Positions the arrow on the top left side of the popover. |
+| \`fd-popover__body--arrow-bottom\` | Positions the arrow on the bottom left right side of the popover. |
 | \`fd-popover__body--arrow-left\` | Positions the arrow on the left top side of the popover. |
 | \`fd-popover__body--arrow-right\` | Positions the arrow on the right top side of the popover. |
 | \`fd-popover__body--arrow-x-center\` | Positions the arrow horizontally centered on the popover. |
-| \`fd-popover__body--arrow-x-end\` | Positions the arrow on the right side of the popover. |
+| \`fd-popover__body--arrow-x-end\` | Positions the arrow to the end by horizontal line of the popover body. |
 | \`fd-popover__body--arrow-y-center\` | Positions the arrow vertically centered on the popover. |
-| \`fd-popover__body--arrow-y-end\` | Positions the arrow on the bottom side of the popover. |
+| \`fd-popover__body--arrow-y-end\` | Positions the arrow to the end by vertical line of the popover. |
         `
+        }
+    }
+};
+
+export const NoArrow = () => `<div class="fd-popover">
+    <div class="fd-popover__control">
+        <button
+            class="fd-button"
+            aria-controls="popoverF1"
+            aria-expanded="true"
+            aria-haspopup="true"
+            onClick="onPopoverClick('popoverF1');"
+            role="button"
+        >
+            <i class="sap-icon--navigation-down-arrow" role="presentation"></i>
+        </button>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false" id="popoverF1">
+        <div class="fd-popover__wrapper" style="max-height: 250px;">
+            <nav class="fd-menu" aria-label="big navigation menu">
+                <ul class="fd-menu__list fd-menu__list--no-shadow">
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 1</span>
+                        </a>
+                    </li>
+                    <li class="fd-menu__item">
+                        <a class="fd-menu__link" href="#">
+                            <span class="fd-menu__title">Option 2</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>`;
+
+NoArrow.parameters = {
+    docs: {
+        description: {
+            story: `It's possible to hide popover's arrow. 
+To achieve this apply the \`fd-popover__body--no-arrow\` modifier class to the popover body element and remove all the arrow modifier classes.`
         }
     }
 };

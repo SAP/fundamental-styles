@@ -114,8 +114,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       }
     }
 
-    &-header > *:first-child,
     > *:first-child,
+    &-header > *:first-child,
     ul:first-child li:first-child::before,
     ol:first-child li:first-child::before,
     ul:first-child li:first-child a::before,
@@ -124,8 +124,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       border-top-left-radius: $fd-popover-border-radius;
     }
 
-    &-footer > *:last-child,
     > *:last-child,
+    &-footer > *:last-child,
     ul:last-child li:last-child::before,
     ol:last-child li:last-child::before,
     ul:last-child li:last-child a::before,
