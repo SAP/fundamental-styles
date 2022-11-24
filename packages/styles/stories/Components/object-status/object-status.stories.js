@@ -107,6 +107,10 @@ export const IconAndText = () => `<div class="fddocs-container">
         <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
+    <span class="fd-object-status fd-object-status--neutral">
+        <i class="fd-object-status__icon sap-icon--circle-task-2" role="presentation"></i>
+        <span class="fd-object-status__text">Neutral</span>
+    </span>
 </div>
 `;
 IconAndText.parameters = {
