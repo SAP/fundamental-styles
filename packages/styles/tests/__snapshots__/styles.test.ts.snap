@@ -29442,10 +29442,10 @@ exports[`Check stories > Components/Time Picker > Story Hours12Compact > Should 
 "<div style=\\"min-height: 450px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input--compact fd-input-group__input fd-time-picker__input\\" value=\\"07:00 PM\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>
@@ -29763,10 +29763,10 @@ exports[`Check stories > Components/Time Picker > Story Hours12Cozy > Should mat
 "<div style=\\"min-height: 500px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input-group__input fd-time-picker__input\\" placeholder=\\"Enter meeting time\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>
@@ -30082,10 +30082,10 @@ exports[`Check stories > Components/Time Picker > Story Hours24Compact > Should 
 "<div style=\\"min-height: 450px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input-group__input fd-input--compact  fd-time-picker__input\\" value=\\"19:00\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>
@@ -30404,10 +30404,10 @@ exports[`Check stories > Components/Time Picker > Story Hours24Cozy > Should mat
 "<div style=\\"min-height: 500px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input-group__input fd-time-picker__input\\" value=\\"19:00\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>
@@ -30726,10 +30726,10 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
 "<div style=\\"min-height: 450px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input--compact fd-input-group__input fd-time-picker__input\\" value=\\"07:18 PM\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>
@@ -31047,10 +31047,10 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
 "<div style=\\"min-height: 500px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input-group__input fd-time-picker__input\\" placeholder=\\"--:--\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>
@@ -31366,10 +31366,10 @@ exports[`Check stories > Components/Time Picker > Story Mobile > Should match sn
 "<div style=\\"min-height: 250px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input-group__input fd-time-picker__input\\" value=\\"07:00:00 AM\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>
@@ -31418,10 +31418,10 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
 "<div style=\\"min-height: 500px;\\">
     <div class=\\"fd-popover fd-popover--no-arrow fd-time-picker\\">
         <div class=\\"fd-popover__control fd-time-picker__control is-expanded\\">
-            <div class=\\"fd-input-group\\">
+            <div class=\\"fd-input-group is-focus\\">
                 <input type=\\"text\\" class=\\"fd-input fd-input-group__input fd-time-picker__input\\" placeholder=\\"Enter time\\">
                 <span class=\\"fd-input-group__addon fd-input-group__addon--button\\">
-                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
+                    <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active\\" aria-label=\\"show/hide time picker\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                         <i class=\\"sap-icon--time-entry-request\\"></i>
                     </button>
                 </span>

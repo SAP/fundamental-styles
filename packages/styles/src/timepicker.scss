@@ -136,8 +136,9 @@ $block: #{$fd-namespace}-time-picker;
       --fdTimePickerTickHeight: 0.5625rem;
       --fdTimePickerTickMargin: 0 auto;
 
-      background: var(--sapButton_Selected_Background);
+      background: var(--sapButton_Selected_BorderColor);
       border: 0.0625rem solid var(--sapButton_Selected_BorderColor);
+      border-radius: 100%;
     }
   }
 
