@@ -1,3 +1,12 @@
+# [0.26.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.21...v0.26.0-rc.22) (2022-11-25)
+
+
+### Features
+
+* **styles:** add Uploaded Files section to File Uploader [ci visual] ([#4043](https://github.com/SAP/fundamental-styles/issues/4043)) ([4799692](https://github.com/SAP/fundamental-styles/commit/47996925ffec1a7d8b157d893354f778d6249a9b))
+
+
+
 # [0.26.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.20...v0.26.0-rc.21) (2022-11-25)
 
 
