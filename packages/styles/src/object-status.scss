@@ -193,7 +193,7 @@ $inverted-color-accents: (
   $fd-object-status-text-font-family: var(--sapFontFamily) !default;
   $fd-object-status-text-font-size: var(--sapFontSize) !default;
   $fd-object-status-text-neutral: var(--sapNeutralTextColor) !default;
-  $fd-object-status-text-line-height: 1rem !default;
+  $fd-object-status-height: 1rem !default;
 
   // INVERTED OBJECT STATUS VARIABLES
   $fd-object-status-inverted-border-radius: 0.25rem !default;
@@ -212,7 +212,7 @@ $inverted-color-accents: (
   $fd-object-status-padding-large-inverted-empty: 0 0.25rem !default;
   $fd-object-status-min-width-large-inverted-empty: 1.75rem !default;
   $fd-object-status-min-height-large-inverted-empty: 1.5rem !default;
-  $fd-object-status-text-line-height-large: 1.5rem !default;
+  $fd-object-status-height-large: 1.5rem !default;
 
   @include fd-reset();
 
@@ -224,7 +224,9 @@ $inverted-color-accents: (
   word-break: break-word;
   display: inline-flex;
   align-items: start;
-  line-height: 1;
+  height: $fd-object-status-height;
+  max-height: $fd-object-status-height;
+  line-height: $fd-object-status-height;
 
   @include fd-focus() {
     outline: none;
@@ -234,7 +236,7 @@ $inverted-color-accents: (
     @include fd-reset();
     @include fd-object-status-text-inherit();
 
-    line-height: $fd-object-status-text-line-height;
+    line-height: $fd-object-status-height;
   }
 
   &__icon {
@@ -244,6 +246,7 @@ $inverted-color-accents: (
       font-size: $fd-object-status-icon-font-size;
       padding-right: $fd-object-status-icon-padding;
       color: $fd-object-status-icon-neutral;
+      line-height: $fd-object-status-height;
 
       // ICON ONLY MODE
       @include fd-only-child() {
@@ -318,10 +321,17 @@ $inverted-color-accents: (
   // LARGE DESIGN
   &--large {
     font-size: $fd-object-status-icon-text-font-size-large;
+    height: $fd-object-status-height-large;
+    max-height: $fd-object-status-height-large;
+    line-height: $fd-object-status-height-large;
 
     .#{$block}__text {
       font-family: var(--sapFontLightFamily);
-      line-height: $fd-object-status-text-line-height-large;
+      line-height: $fd-object-status-height-large;
+    }
+
+    .#{$block}__icon {
+      line-height: $fd-object-status-height-large;
     }
 
     @include fd-object-status-icon-selector() {
@@ -342,9 +352,12 @@ $inverted-color-accents: (
     border-width: var(--fdInverted_Object_Border_Width);
     border-style: solid;
     text-shadow: none;
+    line-height: $fd-object-status-height;
 
-    .#{$block}__icon {
-      line-height: $fd-object-status-text-line-height;
+    .#{$block}__icon,
+    .#{$block}__text {
+      line-height: 0.875rem;
+      font-size: var(--sapFontSmallSize);
     }
 
     @include fd-object-status-icon-selector() {
@@ -386,9 +399,10 @@ $inverted-color-accents: (
     &.#{$block}--large {
       font-size: $fd-object-status-icon-text-font-size-large-inverted;
       padding: $fd-object-status-padding-large-inverted;
+      line-height: $fd-object-status-height-large;
 
       .#{$block}__icon {
-        line-height: $fd-object-status-text-line-height-large;
+        line-height: $fd-object-status-height-large;
       }
 
       @include fd-object-status-icon-selector() {
@@ -434,6 +448,13 @@ $inverted-color-accents: (
           border-color: var(--sapContent_ForegroundBorderColor);
         }
       }
+    }
+  }
+
+  // SHOW ELLIPSIS
+  &--truncate {
+    .#{$block}__text {
+      @include fd-ellipsis();
     }
   }
 }
