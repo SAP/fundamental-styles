@@ -227,7 +227,9 @@ export const Standart = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-          <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">Warning</span>
+          <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">
+            <span class="fd-object-status__text">Warning</span>
+          </span>
           </div>
         </div>
         <div class="fd-object-list__row">
@@ -970,7 +972,9 @@ export const Borderless = () => `
             </div>
           </div>
           <div class="fd-object-list__row-right">
-          <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">warning</span>
+          <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">
+            <span class="fd-object-status__text">Warning</span>
+          </span>
           </div>
         </div>
         <div class="fd-object-list__row">

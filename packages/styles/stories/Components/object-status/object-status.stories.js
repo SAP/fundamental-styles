@@ -107,6 +107,10 @@ export const IconAndText = () => `<div class="fddocs-container">
         <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
+    <span class="fd-object-status fd-object-status--neutral">
+        <i class="fd-object-status__icon sap-icon--circle-task-2" role="presentation"></i>
+        <span class="fd-object-status__text">Neutral</span>
+    </span>
 </div>
 `;
 IconAndText.parameters = {
@@ -369,6 +373,39 @@ InvertedIndication.parameters = {
     docs: {
         description: {
             story: `Inverted indication colors`
+        }
+    }
+};
+
+export const TruncateExample = () => `<div class="fddocs-container">
+    <span class="fd-object-status fd-object-status--negative" style="max-width: 15rem;">
+        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+        <span class="fd-object-status__text">Default behaviour of Object Status with very long text. The text goes on multiple lines.</span>
+    </span>
+    <span class="fd-object-status fd-object-status--critical fd-object-status--truncate" style="max-width: 15rem;">
+        <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+        <span class="fd-object-status__text">Object Status with text truncation with ellipsis</span>
+    </span>
+    <span class="fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--truncate" style="max-width: 15rem;">
+        <span class="fd-object-status__text">Inverted Negative with very, very long text which truncates</span>
+    </span>
+    <span class="fd-object-status fd-object-status--large fd-object-status--positive fd-object-status--truncate" style="max-width: 15rem;">
+        <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+        <span class="fd-object-status__text">Positive with very, very long text which truncates</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 fd-object-status--truncate" tabindex="0" style="max-width: 15rem;">
+        <span class="fd-object-status__text">Indication8 with very, very long text which truncates</span>
+    </span>
+</div>
+`;
+
+TruncateExample.storyName = 'Object Status with single line text with ellipsis';
+TruncateExample.parameters = {
+    docs: {
+        description: {
+            story: `
+  By default, Object Status text goes on multiple lines based on the max width that is set for the element. For a single line text with ellipsis add the <code>fd-object-status--truncate</code> modifier class to the <code>fd-object-status</code> base class.
+            `
         }
     }
 };

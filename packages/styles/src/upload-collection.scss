@@ -96,6 +96,7 @@ $fd-upload-collection-button-group-small-margin: 0.5rem !default;
   &__text-separator::before {
     @include fd-reset();
 
+    line-height: 1;
     color: var(--sapContent_LabelColor);
     content: "\2022";
   }

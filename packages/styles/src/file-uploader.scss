@@ -2,34 +2,71 @@
 @import "./new-settings";
 
 $block: #{$fd-namespace}-file-uploader;
-$input: #{$fd-namespace}-input;
-
-$fd-file-uploader-padding: 0.25rem;
 
 .#{$block} {
   @include fd-reset();
-  @include fd-flex-vertical-center();
 
-  &__input.#{$input} {
-    width: auto;
-    margin-right: $fd-file-uploader-padding;
-    background-color: var(--sapField_Background);
-    user-select: none;
+  &__container {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      gap: 0.25rem;
+    }
+  }
+
+  .#{$block}__input {
+    flex: 1;
     cursor: pointer;
+    user-select: none;
     color: transparent;
     text-shadow: 0 0 0 var(--sapTextColor);
+    background-color: var(--sapField_Background);
 
     &::placeholder {
       color: var(--sapTextColor);
-    }
-
-    @include fd-rtl() {
-      margin-left: $fd-file-uploader-padding;
-      margin-right: 0;
     }
   }
 
   &__hidden {
     display: none;
+  }
+
+  // CX SPECIFIC FEATURE
+  &__uploaded-files {
+    @include fd-reset();
+  }
+
+  &__label {
+    @include fd-reset();
+
+    display: block;
+    margin-top: 1.5rem;
+    line-height: 1.1875rem;
+    color: var(--sapContent_LabelColor);
+  }
+
+  &__list {
+    @include fd-reset();
+
+    list-style-type: none;
+  }
+
+  &__list-item {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      justify-content: space-between;
+      gap: calc(1rem + var(--fdFileUploaderButtonsSpacing));
+    }
+
+    margin-top: 0.5rem;
+  }
+
+  &__actions {
+    @include fd-reset();
+
+    @include fd-flex-center() {
+      gap: var(--fdFileUploaderButtonsSpacing);
+    }
   }
 }
