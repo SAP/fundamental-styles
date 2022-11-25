@@ -66,10 +66,10 @@ Users can enter the time in two ways:
 export const Hours24Cozy = () => `<div style="min-height: 500px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input-group__input fd-time-picker__input" value="19:00">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -369,7 +369,7 @@ export const Hours24Cozy = () => `<div style="min-height: 500px;">
                 <div class="fd-bar fd-bar--footer fd-bar--cozy">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">OK</button>
+                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
                         </div>
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
@@ -396,10 +396,10 @@ Hours24Cozy.parameters = {
 export const Hours12Cozy = () => `<div style="min-height: 500px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input-group__input fd-time-picker__input" placeholder="Enter meeting time">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -697,7 +697,7 @@ export const Hours12Cozy = () => `<div style="min-height: 500px;">
                 <div class="fd-bar fd-bar--footer fd-bar--cozy">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">OK</button>
+                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
                         </div>
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
@@ -723,10 +723,10 @@ Hours12Cozy.parameters = {
 export const MinutesCozy = () => `<div style="min-height: 500px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input-group__input fd-time-picker__input" placeholder="--:--">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -1024,7 +1024,7 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                 <div class="fd-bar fd-bar--footer fd-bar--cozy">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">OK</button>
+                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
                         </div>
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
@@ -1048,10 +1048,10 @@ MinutesCozy.parameters = {
 export const SecondsCozy = () => `<div style="min-height: 500px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input-group__input fd-time-picker__input" placeholder="Enter time">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -1350,7 +1350,7 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                 <div class="fd-bar fd-bar--footer fd-bar--cozy">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">OK</button>
+                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
                         </div>
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
@@ -1374,10 +1374,10 @@ SecondsCozy.parameters = {
 export const Hours24Compact = () => `<div style="min-height: 450px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input-group__input fd-input--compact  fd-time-picker__input" value="19:00">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -1704,10 +1704,10 @@ Hours24Compact.parameters = {
 export const Hours12Compact = () => `<div style="min-height: 450px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input fd-time-picker__input" value="07:00 PM">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -2025,10 +2025,10 @@ Hours12Compact.storyName = 'Time Picker with 12-hour Clock Face in Compact Mode'
 export const MinutesCompact = () => `<div style="min-height: 450px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input fd-time-picker__input" value="07:18 PM">
                 <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -2346,10 +2346,10 @@ MinutesCompact.storyName = 'Minutes Face in Compact Mode';
 export const Mobile = () => `<div style="min-height: 250px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group">
+            <div class="fd-input-group is-focus">
                 <input type="text" class="fd-input fd-input-group__input fd-time-picker__input" value="07:00:00 AM">
                 <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -2379,7 +2379,7 @@ export const Mobile = () => `<div style="min-height: 250px;">
                 <div class="fd-bar fd-bar--footer fd-bar--cozy">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--decisive fd-button--emphasized">OK</button>
+                            <button class="fd-button fd-button--decisive fd-button--emphasized">Ok</button>
                         </div>
                         <div class="fd-bar__element">
                             <button class="fd-button fd-button--decisive fd-button--transparent">Cancel</button>
