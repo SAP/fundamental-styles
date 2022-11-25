@@ -1,3 +1,12 @@
+# [0.26.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.20...v0.26.0-rc.21) (2022-11-25)
+
+
+### Bug Fixes
+
+* **styles:** add minor changes after design review [ci visual] ([#4044](https://github.com/SAP/fundamental-styles/issues/4044)) ([cd6ecdb](https://github.com/SAP/fundamental-styles/commit/cd6ecdb653e7a6e9512a4d2955adecc87aad1292))
+
+
+
 # [0.26.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.19...v0.26.0-rc.20) (2022-11-23)
 
 
