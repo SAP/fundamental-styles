@@ -4,23 +4,14 @@
 $block: #{$fd-namespace}-dynamic-page;
 
 .#{$block} {
-
   $fd-dynamic-page-background-color: var(--sapObjectHeader_Background);
-  $fd-dynamic-page-content-background-color: var(--sapBackgroundColor);
   $fd-dynamic-page-padding-top-bottom: 0.5rem;
   $fd-dynamic-page-header-padding-top-bottom: 1rem;
   $fd-dynamic-page-box-shadow: var(--sapContent_HeaderShadow);
-  $fd-dynamic-page-button-width: 1.5rem;
-  $fd-dynamic-page-button-padding: 0 0.25rem;
   $fd-dynamic-page-button-group-width: 4rem;
   $fd-dynamic-page-button-group-height: 0.0625rem;
   $fd-dynamic-page-focus-outline-offset: 0.0625rem;
-  $fd-button-height: 1.5rem;
-  $fd-button-clickable-height: 2rem;
-  $fd-button-touchable-area: ($fd-button-clickable-height - $fd-button-height) * 0.5;
   $fd-dynamic-page-toolbar-space: 1rem;
-
-  @include fd-reset();
 
   @mixin fd-background-page($background-color) {
     .#{$block}__content {
@@ -59,47 +50,7 @@ $block: #{$fd-namespace}-dynamic-page;
     box-shadow: none;
   }
 
-  @mixin custom-button() {
-    @include fd-flex-vertical-center() {
-      justify-content: center;
-    }
-
-    margin: $fd-dynamic-page-button-padding;
-    padding: 0;
-    width: $fd-dynamic-page-button-width;
-    height: $fd-button-height;
-    min-width: $fd-dynamic-page-button-width;
-    background: var(--fdDynamicPage_Button_Pin_Background);
-    border: var(--fdDynamicPage_Button_Pin_Border);
-
-    // Extended touchable area
-    &::before {
-      height: $fd-button-clickable-height;
-      width: 100%;
-      top: -$fd-button-touchable-area;
-      bottom: -$fd-button-touchable-area;
-    }
-
-    @include fd-hover() {
-      background: var(--sapButton_Hover_Background);
-      border-color: var(--sapButton_Hover_BorderColor);
-    }
-
-    @include fd-active() {
-      background: var(--sapButton_Active_Background);
-      border-color: var(--sapButton_Active_BorderColor);
-    }
-
-    @include fd-rtl() {
-      > [class*='sap-icon'] {
-        &:last-child {
-          margin-right: 0;
-          margin-left: 0;
-        }
-      }
-    }
-  }
-
+  @include fd-reset();
   @include fd-flex(column);
 
   &__header-fixed {
@@ -379,17 +330,6 @@ $block: #{$fd-namespace}-dynamic-page;
       width: 4.25rem;
       height: $fd-dynamic-page-button-group-height;
       z-index: 1;
-
-      // button styles
-      .#{$block}__pin-button.#{$fd-namespace}-button,
-      .#{$block}__expand-button.#{$fd-namespace}-button,
-      .#{$block}__collapse-button.#{$fd-namespace}-button {
-        @include custom-button();
-
-        &[aria-hidden="true"] {
-          display: none;
-        }
-      }
     }
 
     &[aria-hidden="true"] {
@@ -401,10 +341,39 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
+  &__pin-button,
+  &__expand-button,
+  &__collapse-button {
+    $fd-dynamic-page-button-width: 1.5rem;
+    $fd-dynamic-page-button-height: 1.5rem;
+    $fd-dynamic-page-button-clickable-height: 2rem;
+    $fd-dynamic-page-button-touchable-area: ($fd-dynamic-page-button-clickable-height - $fd-dynamic-page-button-height) * 0.5;
+
+    --fdButtonBackgroundColor: var(--fdDynamicPage_Button_Pin_Background);
+
+    margin: 0 0.25rem;
+    padding: 0;
+    width: $fd-dynamic-page-button-width;
+    height: $fd-dynamic-page-button-height;
+    min-width: $fd-dynamic-page-button-width;
+
+    // Extended touchable area
+    &::before {
+      height: $fd-dynamic-page-button-clickable-height;
+      width: 100%;
+      top: -$fd-dynamic-page-button-touchable-area;
+      bottom: -$fd-dynamic-page-button-touchable-area;
+    }
+
+    &[aria-hidden="true"] {
+      display: none;
+    }
+  }
+
   &__content {
     @include fd-reset();
 
-    background-color: $fd-dynamic-page-content-background-color;
+    background-color: var(--sapBackgroundColor);
     overflow-y: auto;
   }
 
