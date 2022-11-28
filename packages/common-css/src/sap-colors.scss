@@ -1,0 +1,14 @@
+@import './common-settings';
+@import './common-mixins';
+
+@each $color in $sap-colors {
+  .#{$sap-namespace}-color-#{$color} {
+    @include sap-color($color);
+  }
+}
+
+@each $color in $sap-colors {
+  .#{$sap-namespace}-bg-color-#{$color} {
+    @include sap-bg-color($color);
+  }
+}

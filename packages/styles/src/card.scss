@@ -7,6 +7,7 @@ $numeric-content: #{$fd-namespace}-numeric-content;
 $list: #{$fd-namespace}-list;
 
 $fd-card-header-border: var(--fdCard_Header_Border_Bottom) !default;
+$fd-card-footer-border: var(--fdCard_Footer_Border_Top) !default;
 $fd-card-border-radius: var(--fdCard_Border_Radius) !default;
 $fd-card-avatar-text-spacing: 0.75rem !default;
 $fd-card-title-counter-spacing: 1rem !default;
@@ -126,8 +127,8 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
     padding: var(--fdCard_Footer_Padding);
     background: $fd-card-default-body-background-color;
-    border-bottom: $fd-card-header-border;
     border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
+    border-top: $fd-card-footer-border;
 
     &-actions {
       @include fd-reset();
@@ -153,6 +154,10 @@ $fd-card-header-outline-offset: 0.0625rem !default;
 
       text-overflow: clip;
     }
+  }
+
+  &__bar-footer {
+    border-radius: 0 0 $fd-card-border-radius $fd-card-border-radius;
   }
 
   &__header-text {

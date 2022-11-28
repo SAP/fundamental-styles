@@ -42,22 +42,6 @@ Sizes.parameters = {
     }
 };
 
-/**
- * There are different semantic statuses that can be applied to the icon by adding a modifier class.
- *
- * | **Status**      | **Modifier class**               |
- * | --------------: | :------------------------------- |
- * | Default         | ` sap-icon-businessSuiteInAppSymbols--color-default`        |
- * | Contrast        | ` sap-icon-businessSuiteInAppSymbols--color-contrast`       |
- * | Non-interactive | ` sap-icon-businessSuiteInAppSymbols--color-non-interactive`|
- * | Tile            | ` sap-icon-businessSuiteInAppSymbols--color-tile`           |
- * | Marker          | ` sap-icon-businessSuiteInAppSymbols--color-marker`         |
- * | Critical        | ` sap-icon-businessSuiteInAppSymbols--color-critical`       |
- * | Negative        | ` sap-icon-businessSuiteInAppSymbols--color-negative`       |
- * | Neutral         | ` sap-icon-businessSuiteInAppSymbols--color-neutral`        |
- * | Positive        | ` sap-icon-businessSuiteInAppSymbols--color-positive`       |
- */
-
 export const Colors = () => `
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart" style="font-size:5rem"></span>
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-default" style="font-size:5rem"></span>
@@ -71,6 +55,23 @@ export const Colors = () => `
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-positive" style="font-size:5rem"></span>
  <span class="sap-icon-businessSuiteInAppSymbols sap-icon-businessSuiteInAppSymbols--heart sap-icon-businessSuiteInAppSymbols--color-information" style="font-size:5rem"></span>
  `;
+Colors.parameters = {
+    docs: {
+        storyDescription: ` There are different semantic statuses that can be applied to the icon by adding a modifier class.
+ 
+ | **Status**      | **Modifier class**               |
+ | --------------: | :------------------------------- |
+ | Default         | \` sap-icon-businessSuiteInAppSymbols--color-default\`        |
+ | Contrast        | \` sap-icon-businessSuiteInAppSymbols--color-contrast\`       |
+ | Non-interactive | \` sap-icon-businessSuiteInAppSymbols--color-non-interactive\`|
+ | Tile            | \` sap-icon-businessSuiteInAppSymbols--color-tile\`           |
+ | Marker          | \` sap-icon-businessSuiteInAppSymbols--color-marker\`         |
+ | Critical        | \` sap-icon-businessSuiteInAppSymbols--color-critical\`       |
+ | Negative        | \` sap-icon-businessSuiteInAppSymbols--color-negative\`       |
+ | Neutral         | \` sap-icon-businessSuiteInAppSymbols--color-neutral\`        |
+ | Positive        | \` sap-icon-businessSuiteInAppSymbols--color-positive\`       |`
+    }
+}
 
 export const BusinessSuiteIcons = () => {
     const div = document.createElement('div');

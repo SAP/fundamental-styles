@@ -175,8 +175,8 @@
         "health-tracking",
         "blood-pressure",
         "immunization",
-        "allergies",	
-        "rescheduling2",	
+        "allergies",
+        "rescheduling2",
         "resequencing2",
         "no-time-change",
         "time-change",
@@ -212,6 +212,16 @@
         "gate",
         "timeseries-waterfall-chart",
         "stages-warning",
-        "empty-warning"
+        "empty-warning",
+        "move-folder",
+        "remove-folder",
+        "match-case",
+        "match-whole-word",
+        "remove-total",
+        "after-total",
+        "before-total",
+        "workbook-filter",
+        "icon-update-filter",
+        "cell-lock"
     ]
 }

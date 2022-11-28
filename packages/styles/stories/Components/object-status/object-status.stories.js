@@ -10,12 +10,6 @@ attribute of a line item in a table. `,
     }
 };
 
-/**
- * Object Status can display the semantic status of an object: negative (class: `fd-object-status--negative`), critical
- * (class: `fd-object-status--critical`), positive (class: `fd-object-status--positive`),
- * informative (class: `fd-object-status--informative`), or none.
- */
-
 export const Primary = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
         <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
@@ -35,10 +29,17 @@ export const Primary = () => `<div class="fddocs-container">
     </span>
 </div>
 `;
-
-/**
- * Object status icon only
- */
+Primary.parameters = {
+    docs: {
+        description: {
+            story: `
+  Object Status can display the semantic status of an object: negative (class: \`fd-object-status--negative\`), critical
+  (class: \`fd-object-status--critical\`), positive (class: \`fd-object-status--positive\`),
+  informative (class: \`fd-object-status--informative\`), or none.
+            `
+        }
+    }
+};
 
 export const Icon = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
@@ -55,10 +56,13 @@ export const Icon = () => `<div class="fddocs-container">
     </span>
 </div>
 `;
-
-/**
- * Object status text only
- */
+Icon.parameters = {
+    docs: {
+        description: {
+            story: 'Object status icon only'
+        }
+    }
+};
 
 export const Text = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
@@ -78,10 +82,13 @@ export const Text = () => `<div class="fddocs-container">
     </span>
 </div>
 `;
-
-/**
- * Object status icon and text
- */
+Text.parameters = {
+    docs: {
+        description: {
+            story: `Object status text only`
+        }
+    }
+};
 
 export const IconAndText = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative">
@@ -100,12 +107,19 @@ export const IconAndText = () => `<div class="fddocs-container">
         <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
         <span class="fd-object-status__text">Info</span>
     </span>
+    <span class="fd-object-status fd-object-status--neutral">
+        <i class="fd-object-status__icon sap-icon--circle-task-2" role="presentation"></i>
+        <span class="fd-object-status__text">Neutral</span>
+    </span>
 </div>
 `;
-
-/**
- * Object Status with Generic Indication Colors
- */
+IconAndText.parameters = {
+    docs: {
+        description: {
+            story: `Object status icon and text`
+        }
+    }
+};
 
 export const GenericIndicationColors = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--indication-1">
@@ -134,12 +148,14 @@ export const GenericIndicationColors = () => `<div class="fddocs-container">
     </span>
 </div>
 `;
+GenericIndicationColors.parameters = {
+    docs: {
+        description: {
+            story: `Object Status with Generic Indication Colors`
+        }
+    }
+};
 
-/**
- If the object status is used as a link, a hover effect is shown on non-touch devices.
- If the object status is shown using a combination of icon and text, there is no hover effect for the icon.
- If Object Status has to be clicked/tabbed by the user add the `fd-object-status--link` modifier class.
- */
 
 export const ClickableObjectStatus = () => `<div class="fddocs-container">
     <a href="#"  class="fd-object-status fd-object-status--negative fd-object-status--link">
@@ -188,7 +204,17 @@ export const ClickableObjectStatus = () => `<div class="fddocs-container">
     </span>
 </div>
 `;
-
+ClickableObjectStatus.parameters = {
+    docs: {
+        description: {
+            story: `           
+ If the object status is used as a link, a hover effect is shown on non-touch devices.
+ If the object status is shown using a combination of icon and text, there is no hover effect for the icon.
+ If Object Status has to be clicked/tabbed by the user add the \`fd-object-status--link\` modifier class.
+ `
+        }
+    }
+};
 
 export const LargeObjectStatus = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--large fd-object-status--negative">
@@ -212,12 +238,6 @@ export const LargeObjectStatus = () => `<div class="fddocs-container">
     </span>
 </div>
 `;
-
-/**
- Inverted Object Status(optional inverted visualization) determines whether the background color reflects the set state
- instead of the control's text. Use the inverted object status if the information is crucial for the user’s actions and needs to stand out visually.
- Inverted Object Status is achieved by adding the `fd-object-status--inverted` modifier class.
- */
 
 export const Inverted = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--negative fd-object-status--inverted">
@@ -282,10 +302,17 @@ export const Inverted = () => `<div class="fddocs-container">
     </a>
 </div>
 `;
-
-/**
- Inverted indication colors
- */
+Inverted.parameters = {
+    docs: {
+        description: {
+            story: `
+ Inverted Object Status(optional inverted visualization) determines whether the background color reflects the set state
+ instead of the control's text. Use the inverted object status if the information is crucial for the user’s actions and needs to stand out visually.
+ Inverted Object Status is achieved by adding the \`fd-object-status--inverted\` modifier class.
+            `
+        }
+    }
+};
 
 export const InvertedIndication = () => `<div class="fddocs-container">
     <span class="fd-object-status fd-object-status--inverted fd-object-status--indication-1">
@@ -342,3 +369,43 @@ export const InvertedIndication = () => `<div class="fddocs-container">
     </span>
 </div>
 `;
+InvertedIndication.parameters = {
+    docs: {
+        description: {
+            story: `Inverted indication colors`
+        }
+    }
+};
+
+export const TruncateExample = () => `<div class="fddocs-container">
+    <span class="fd-object-status fd-object-status--negative" style="max-width: 15rem;">
+        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+        <span class="fd-object-status__text">Default behaviour of Object Status with very long text. The text goes on multiple lines.</span>
+    </span>
+    <span class="fd-object-status fd-object-status--critical fd-object-status--truncate" style="max-width: 15rem;">
+        <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+        <span class="fd-object-status__text">Object Status with text truncation with ellipsis</span>
+    </span>
+    <span class="fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--truncate" style="max-width: 15rem;">
+        <span class="fd-object-status__text">Inverted Negative with very, very long text which truncates</span>
+    </span>
+    <span class="fd-object-status fd-object-status--large fd-object-status--positive fd-object-status--truncate" style="max-width: 15rem;">
+        <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+        <span class="fd-object-status__text">Positive with very, very long text which truncates</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-8 fd-object-status--truncate" tabindex="0" style="max-width: 15rem;">
+        <span class="fd-object-status__text">Indication8 with very, very long text which truncates</span>
+    </span>
+</div>
+`;
+
+TruncateExample.storyName = 'Object Status with single line text with ellipsis';
+TruncateExample.parameters = {
+    docs: {
+        description: {
+            story: `
+  By default, Object Status text goes on multiple lines based on the max width that is set for the element. For a single line text with ellipsis add the <code>fd-object-status--truncate</code> modifier class to the <code>fd-object-status</code> base class.
+            `
+        }
+    }
+};

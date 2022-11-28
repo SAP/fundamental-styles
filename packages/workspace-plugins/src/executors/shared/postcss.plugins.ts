@@ -4,7 +4,6 @@ import postcssRemoveFonts from './postcss-remove-fonts';
 const autoprefixer = require('autoprefixer');
 const postcssBanner = require('postcss-banner');
 const postcssNormalizeCharset = require('postcss-normalize-charset');
-const postcssCustomProperties = require('postcss-custom-properties'); //ie11 fallbacks
 const postcssImport = require('postcss-import');
 const packageVersion = require('../../../../../package.json').version;
 const year = new Date().getFullYear();
@@ -14,9 +13,6 @@ export default (minify?: boolean) => [
     postcssImport(),
     autoprefixer({
         cascade: true
-    }),
-    postcssCustomProperties({
-        preserve: true
     }),
     postcssRemoveFonts(), // remove fonts from @sap-theming/theming-base-content
     postcssBanner({

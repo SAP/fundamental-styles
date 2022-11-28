@@ -7,9 +7,10 @@ import '../../../src/icon.scss';
 import '../../../src/bar.scss';
 import '../../../src/layout-grid.scss';
 export default {
-    title: 'Patterns/Time Picker',
+    title: 'Deprecated/Components/Time Picker',
     parameters: {
-        description: `The time picker allows the user to select a localized time. It is smaller in compact mode and provides a touch-friendly size in cozy mode. 
+        description: `## DEPRECATED
+        The time picker allows the user to select a localized time. It is smaller in compact mode and provides a touch-friendly size in cozy mode. 
 
 
 ##Usage

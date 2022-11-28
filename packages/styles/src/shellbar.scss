@@ -133,6 +133,10 @@ $block: #{$fd-namespace}-shellbar;
       box-shadow: var(--sapContent_Interaction_Shadow);
     }
 
+    @include fd-focus() {
+      outline: none;
+    }
+
     &-input {
       border: none;
       color: var(--fdShellbar_Input_Color);
@@ -159,11 +163,17 @@ $block: #{$fd-namespace}-shellbar;
       }
     }
 
-    &-addon .#{$block}__button {
-      height: var(--fdShellbar_Input_Addon_Dimension);
-      min-width: var(--fdShellbar_Input_Addon_Dimension);
-      border-radius: var(--fdShellbar_Input_Border_Radius);
-      border-width: var(--fdShellbar_Input_Addon_Border_Width);
+    &-addon {
+      @include fd-flex-vertical-center() {
+        height: 100%;
+      }
+
+      .#{$block}__button {
+        height: var(--fdShellbar_Input_Addon_Dimension);
+        min-width: var(--fdShellbar_Input_Addon_Dimension);
+        border-radius: var(--fdShellbar_Input_Border_Radius);
+        border-width: var(--fdShellbar_Input_Addon_Border_Width);
+      }
     }
   }
 
@@ -212,6 +222,21 @@ $block: #{$fd-namespace}-shellbar;
 
       &--desktop {
         display: none;
+      }
+    }
+
+    .#{$block}__action-combobox {
+      &--mobile {
+        @include fd-flex-center();
+
+        background-color: var(--sapShellColor);
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+        position: absolute;
+        left: 0;
+        padding: 0 0.3rem;
+        margin: 0;
       }
     }
 

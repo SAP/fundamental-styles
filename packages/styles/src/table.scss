@@ -495,6 +495,8 @@ $block: #{$fd-namespace}-table;
   /****** Modifiers ******/
 
   &--fixed {
+    @include fd-scrollbar();
+
     overflow-x: scroll;
 
     .#{$block}__header,

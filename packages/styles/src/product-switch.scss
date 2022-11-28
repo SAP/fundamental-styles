@@ -201,6 +201,7 @@ $block: #{$fd-namespace}-product-switch;
 
   &__body {
     @include fd-reset();
+    @include fd-scrollbar();
 
     width: fit-content;
     max-height: calc(100vh - 76px);

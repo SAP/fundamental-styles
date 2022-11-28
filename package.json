@@ -1,6 +1,6 @@
 {
   "name": "fundamental-styles",
-  "version": "0.25.1-rc.8",
+  "version": "0.26.0-rc.23",
   "description": "Fundamental Library Styles is a Design System and HTML/CSS Component Library used to build modern Product User Experiences with SAP Fiori look and feel with any web technology. Learn more about this project at - http://sap.github.io/fundamental-styles/",
   "engines": {
     "yarn": ">= 1.22.19",
@@ -66,7 +66,7 @@
     "@nrwl/nx-plugin": "15.0.0",
     "@nrwl/react": "15.0.0",
     "@nrwl/web": "15.0.0",
-    "@sap-theming/theming-base-content": "11.1.41",
+    "@sap-theming/theming-base-content": "11.1.44",
     "@storybook/addon-a11y": "6.5.13",
     "@storybook/addon-actions": "6.5.13",
     "@storybook/addon-controls": "6.5.13",
@@ -121,7 +121,6 @@
     "postcss": "^8.2.13",
     "postcss-banner": "^4.0.0",
     "postcss-cli": "^9.0.1",
-    "postcss-custom-properties": "^11.0.0",
     "postcss-import": "^14.0.1",
     "postcss-normalize-charset": "^4.0.1",
     "postcss-scss": "^4.0.5",

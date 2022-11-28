@@ -183,28 +183,3 @@
     @content;
   }
 }
-
-// COMBO MIXINS
-// convenience mixins for various elements like buttons
-
-// PRESSED and SELECTED state
-@mixin fd-pressed-selected {
-  &[aria-selected="true"],
-  &.is-selected,
-  &[aria-pressed="true"],
-  &.is-pressed {
-    @content;
-  }
-}
-
-// ACTIVE, PRESSED and SELECTED state
-@mixin fd-active-pressed-selected {
-  &:active,
-  &.is-active,
-  &[aria-selected="true"],
-  &.is-selected,
-  &[aria-pressed="true"],
-  &.is-pressed {
-    @content;
-  }
-}

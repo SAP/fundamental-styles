@@ -10,6 +10,7 @@ $block: #{$fd-namespace}-textarea;
   @include fd-input-field-base();
   @include fd-input-field-states();
   @include fd-form-text();
+  @include fd-scrollbar();
 
   min-width: 6rem;
   width: 100%;
@@ -29,6 +30,13 @@ $block: #{$fd-namespace}-textarea;
 
   @include fd-expanded() {
     z-index: 4;
+  }
+
+  @include fd-hover() {
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-corner {
+      border-radius: 0 var(--fdScrollbar_Border_Radius) var(--fdScrollbar_Border_Radius) 0 !important;
+    }
   }
 
   &--compact {

@@ -38,7 +38,8 @@
       }
     }
 
-    &--interractive {
+    &--interractive, // This is a typo, but we can't remove it yet
+    &--interactive {
       @include fd-list-item-states();
     }
 
@@ -128,7 +129,7 @@
     }
 
     .#{$block }__title-text {
-      @include fd-flex-center();
+      @include fd-flex-vertical-center();
     }
 
     ~ .#{$block}__icon {

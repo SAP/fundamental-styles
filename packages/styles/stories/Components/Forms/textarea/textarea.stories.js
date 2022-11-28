@@ -79,11 +79,11 @@ DisabledAndReadOnly.parameters = {
 export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-3">Success text area:</label>
-    <div class="fd-popover fd-popover--input-message-group">
+    <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT51" aria-expanded="false" aria-haspopup="true" onfocusin="onPopoverClick('popoverT51')" onfocusout="onPopoverClick('popoverT51')">
             <textarea class="fd-textarea is-success" id="textarea-3" placeholder="Write something here"></textarea>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT51">
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT51">
             <div class="fd-form-message fd-form-message--success">Success message</div>
         </div>
     </div>
@@ -92,11 +92,11 @@ export const States = () => `
 <br/>
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-4">Error text area:</label>
-    <div class="fd-popover fd-popover--input-message-group">
+    <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT52" aria-expanded="false" aria-haspopup="true" onfocusin="onPopoverClick('popoverT52')" onfocusout="onPopoverClick('popoverT52')">
             <textarea class="fd-textarea is-error" id="textarea-4" placeholder="Write something here"></textarea>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT52">
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT52">
             <div class="fd-form-message fd-form-message--error">Error message</div>
         </div>
     </div>
@@ -104,11 +104,11 @@ export const States = () => `
 <br/>
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-5">Warning text area:</label>
-    <div class="fd-popover fd-popover--input-message-group">
+    <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT53" aria-expanded="false" aria-haspopup="true" onfocusin="onPopoverClick('popoverT53')" onfocusout="onPopoverClick('popoverT53')">
             <textarea class="fd-textarea is-warning" id="textarea-5" placeholder="Write something here"></textarea>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT53">
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT53">
             <div class="fd-form-message fd-form-message--warning">Warning message</div>
         </div>
     </div>
@@ -116,11 +116,11 @@ export const States = () => `
 <br/>
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-6">Information text area:</label>
-    <div class="fd-popover fd-popover--input-message-group">
+    <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT54" aria-expanded="false" aria-haspopup="true" onfocusin="onPopoverClick('popoverT54')" onfocusout="onPopoverClick('popoverT54')">
             <textarea class="fd-textarea is-information" id="textarea-6" placeholder="Write something here"></textarea>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT54">
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow"  aria-hidden="true" id="popoverT54">
             <div class="fd-form-message fd-form-message--information">Information message</div>
         </div>
     </div>

@@ -30,7 +30,7 @@
             "options": {
                 "themes": [
                     "sap_fiori_3",
-                    "sap_fiori_3_hcb",
+                    "sap_horizon_hcb",
                     "sap_horizon"
                 ],
                 "excludedStoriesKinds": [

@@ -1,3 +1,289 @@
+# [0.26.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.22...v0.26.0-rc.23) (2022-11-28)
+
+
+
+# [0.26.0-rc.22](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.21...v0.26.0-rc.22) (2022-11-25)
+
+
+### Features
+
+* **styles:** add Uploaded Files section to File Uploader [ci visual] ([#4043](https://github.com/SAP/fundamental-styles/issues/4043)) ([4799692](https://github.com/SAP/fundamental-styles/commit/47996925ffec1a7d8b157d893354f778d6249a9b))
+
+
+
+# [0.26.0-rc.21](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.20...v0.26.0-rc.21) (2022-11-25)
+
+
+### Bug Fixes
+
+* **styles:** add minor changes after design review [ci visual] ([#4044](https://github.com/SAP/fundamental-styles/issues/4044)) ([cd6ecdb](https://github.com/SAP/fundamental-styles/commit/cd6ecdb653e7a6e9512a4d2955adecc87aad1292))
+
+
+
+# [0.26.0-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.19...v0.26.0-rc.20) (2022-11-23)
+
+
+### Bug Fixes
+
+* **styles:** popover horizon and v1 refactoring ([#4026](https://github.com/SAP/fundamental-styles/issues/4026)) ([24598d6](https://github.com/SAP/fundamental-styles/commit/24598d6fe88c07f5c53f9ed11bc03c148058446d))
+
+
+### BREAKING CHANGES
+
+* **styles:** * `fd-popover__popper` class removed, use `fd-popover__body` instead
+
+
+
+# [0.26.0-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.18...v0.26.0-rc.19) (2022-11-22)
+
+
+### Features
+
+* **styles:** add new Time Picker component ([#4030](https://github.com/SAP/fundamental-styles/issues/4030)) ([d4777f0](https://github.com/SAP/fundamental-styles/commit/d4777f0459daac2b414123e61fbabdd84ab24733))
+
+
+
+# [0.26.0-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.17...v0.26.0-rc.18) (2022-11-16)
+
+
+### Features
+
+* **common-css:** add initial normalize styles to commonCSS package ([#4020](https://github.com/SAP/fundamental-styles/issues/4020)) ([97997e9](https://github.com/SAP/fundamental-styles/commit/97997e960be43de02ef9b554dc3a51714e3c2c66))
+
+
+
+# [0.26.0-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.16...v0.26.0-rc.17) (2022-11-16)
+
+
+### Bug Fixes
+
+* **cx:** add side nav fixes after design review [ci visual] ([#4025](https://github.com/SAP/fundamental-styles/issues/4025)) ([0850bda](https://github.com/SAP/fundamental-styles/commit/0850bda8b63d0f0d1f5d6b1427678c0e99c1fc1d))
+
+
+
+# [0.26.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.15...v0.26.0-rc.16) (2022-11-16)
+
+
+### Bug Fixes
+
+* **styles:** info label v1 ([#4017](https://github.com/SAP/fundamental-styles/issues/4017)) ([a14802a](https://github.com/SAP/fundamental-styles/commit/a14802ab8b7816b648aa9b03e47be18c24b10183))
+
+
+
+# [0.26.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.14...v0.26.0-rc.15) (2022-11-15)
+
+
+
+# [0.26.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.13...v0.26.0-rc.14) (2022-11-15)
+
+
+### Bug Fixes
+
+* **cx:** add cx namespace for side nav ([#4021](https://github.com/SAP/fundamental-styles/issues/4021)) ([d5f8fc8](https://github.com/SAP/fundamental-styles/commit/d5f8fc8f91d1d6c309c44f85487a7e8dbae3da68))
+
+
+
+# [0.26.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.12...v0.26.0-rc.13) (2022-11-14)
+
+
+
+# [0.26.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.11...v0.26.0-rc.12) (2022-11-10)
+
+
+### Bug Fixes
+
+* **styles:** fix shellbar styles for input-group and addon [ci visual] ([#4015](https://github.com/SAP/fundamental-styles/issues/4015)) ([ae90cb1](https://github.com/SAP/fundamental-styles/commit/ae90cb10175285bea5d7176727ba30d672f57459))
+
+
+
+# [0.26.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.10...v0.26.0-rc.11) (2022-11-10)
+
+
+### Bug Fixes
+
+* **styles:** add changes to Slider related to version 1 [ci visual] ([#3995](https://github.com/SAP/fundamental-styles/issues/3995)) ([80cd678](https://github.com/SAP/fundamental-styles/commit/80cd678151d90ae70dd16020951724dc69725377))
+
+
+
+# [0.26.0-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.9...v0.26.0-rc.10) (2022-11-10)
+
+
+### Features
+
+* **styles:** added interactive upload collection item ([#4016](https://github.com/SAP/fundamental-styles/issues/4016)) ([81eb7de](https://github.com/SAP/fundamental-styles/commit/81eb7de0dd5ed162f29c49395daff4975349192f))
+
+
+
+# [0.26.0-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.8...v0.26.0-rc.9) (2022-11-09)
+
+
+### Features
+
+* **styles:** add styles to combobox in shellbar ([#4012](https://github.com/SAP/fundamental-styles/issues/4012)) ([a575f82](https://github.com/SAP/fundamental-styles/commit/a575f8254d68920a55c1ebd4504d7b1fe7ac054f))
+
+
+
+# [0.26.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.7...v0.26.0-rc.8) (2022-11-09)
+
+
+
+# [0.26.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.6...v0.26.0-rc.7) (2022-11-09)
+
+
+### Features
+
+* **styles:** add text color and background color to common css ([#3922](https://github.com/SAP/fundamental-styles/issues/3922)) ([bc06a2f](https://github.com/SAP/fundamental-styles/commit/bc06a2f0183d4e00fe5fbb5767d1ef90fc7bde08))
+
+
+
+# [0.26.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.5...v0.26.0-rc.6) (2022-11-08)
+
+
+### Features
+
+* **cx:** introduce Side Nav ([#3913](https://github.com/SAP/fundamental-styles/issues/3913)) ([cb29f40](https://github.com/SAP/fundamental-styles/commit/cb29f400de0de16d30c156120a43ac1fea026fe7))
+
+
+
+# [0.26.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.4...v0.26.0-rc.5) (2022-11-08)
+
+
+
+# [0.26.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.3...v0.26.0-rc.4) (2022-11-07)
+
+
+### Bug Fixes
+
+* **styles:** last item in menu list border radius issue ([#4007](https://github.com/SAP/fundamental-styles/issues/4007)) ([1b8ec51](https://github.com/SAP/fundamental-styles/commit/1b8ec51945f73d8838eb73f8b6ad4f18d01390e9))
+
+
+
+# [0.26.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.2...v0.26.0-rc.3) (2022-11-07)
+
+
+
+# [0.26.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.1...v0.26.0-rc.2) (2022-11-07)
+
+
+### Bug Fixes
+
+* **ci:** incorrect output path of build ([#4009](https://github.com/SAP/fundamental-styles/issues/4009)) ([ceb6d43](https://github.com/SAP/fundamental-styles/commit/ceb6d4348c5d8949d565e3d8db29d6fe56b78656))
+
+
+
+# [0.26.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.0...v0.26.0-rc.1) (2022-11-07)
+
+
+
+# [0.26.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.20...v0.26.0-rc.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **styles:** button horizon and v1 preparations ([#3991](https://github.com/SAP/fundamental-styles/issues/3991)) ([99d2fd2](https://github.com/SAP/fundamental-styles/commit/99d2fd254b7ea1638daf598b7c53f6a63919c94d))
+
+
+### BREAKING CHANGES
+
+* **styles:** * from now applying of `fd-button--toggled` class requited for toggled segmented button
+
+* fix(e2e): storyshots update [ci visual]
+
+* fix(styles): css variables
+
+* fix(docs): button docs refactoring
+
+* fix(e2e): storyshots update [ci visual]
+
+* fix(styles): update segmented buttons in docs
+
+* fix(docs): storyshots update [ci visual]
+
+
+
+## [0.25.1-rc.20](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.19...v0.25.1-rc.20) (2022-11-06)
+
+
+
+## [0.25.1-rc.19](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.18...v0.25.1-rc.19) (2022-11-06)
+
+
+
+## [0.25.1-rc.18](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.17...v0.25.1-rc.18) (2022-11-06)
+
+
+
+## [0.25.1-rc.17](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.16...v0.25.1-rc.17) (2022-11-06)
+
+
+
+## [0.25.1-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.15...v0.25.1-rc.16) (2022-11-03)
+
+
+### Bug Fixes
+
+* **styles:** update radio label color [ci visual] ([#3994](https://github.com/SAP/fundamental-styles/issues/3994)) ([b19a066](https://github.com/SAP/fundamental-styles/commit/b19a06601412dacfdc393f3e7814a74d404470b8))
+
+
+
+## [0.25.1-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.14...v0.25.1-rc.15) (2022-11-02)
+
+
+### Features
+
+* **styles:** add arrows to Slider Handle [ci visual] ([#3993](https://github.com/SAP/fundamental-styles/issues/3993)) ([e1262c1](https://github.com/SAP/fundamental-styles/commit/e1262c18c195d2605e252a702a6a576ca74cd37e))
+
+
+
+## [0.25.1-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.13...v0.25.1-rc.14) (2022-11-02)
+
+
+### Bug Fixes
+
+* **e2e:** storybook tests issue fix ([#3992](https://github.com/SAP/fundamental-styles/issues/3992)) ([b1ae5d6](https://github.com/SAP/fundamental-styles/commit/b1ae5d670009045fdc530347b6e42172d6478c9b))
+
+
+
+## [0.25.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.12...v0.25.1-rc.13) (2022-11-02)
+
+
+### Bug Fixes
+
+* **styles:** need only vertical alignment to list-title-text [ci visual] ([#3988](https://github.com/SAP/fundamental-styles/issues/3988)) ([307dd90](https://github.com/SAP/fundamental-styles/commit/307dd90bc54180cea25b9344e334651efa8344a5))
+
+
+
+## [0.25.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.11...v0.25.1-rc.12) (2022-11-02)
+
+
+### Features
+
+* **styles:** adopt Fiori Scrollbar for all components with scrollable area [ci visual] ([#3989](https://github.com/SAP/fundamental-styles/issues/3989)) ([73d5714](https://github.com/SAP/fundamental-styles/commit/73d5714f45108082bc4a4f169ae191205ad3b981))
+
+
+
+## [0.25.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.10...v0.25.1-rc.11) (2022-10-31)
+
+
+### Features
+
+* **styles:** add border to the Card Footer in Quartz ([#3987](https://github.com/SAP/fundamental-styles/issues/3987)) ([a90602e](https://github.com/SAP/fundamental-styles/commit/a90602e6df5628db52c514096dd736f628273a13))
+
+
+
+## [0.25.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.9...v0.25.1-rc.10) (2022-10-28)
+
+
+### Features
+
+* **common-css:** add overflow and elevation to common css ([#3970](https://github.com/SAP/fundamental-styles/issues/3970)) ([11e883b](https://github.com/SAP/fundamental-styles/commit/11e883bd8e2edd239f91b98cee1a1c0f853a8a04))
+
+
+
+## [0.25.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.8...v0.25.1-rc.9) (2022-10-28)
+
+
+
 ## [0.25.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.25.1-rc.7...v0.25.1-rc.8) (2022-10-28)
 
 

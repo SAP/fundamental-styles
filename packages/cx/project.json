@@ -18,6 +18,19 @@
                 }
             }
         },
+        "build-visual": {
+            "executor": "workspace-plugins:visual-stories",
+            "options": {
+                "themes": [
+                    "sap_horizon_hcb",
+                    "sap_horizon"
+                ],
+                "excludedStoriesKinds": [
+                    "^(Helpers|Dev)"
+                ]
+            },
+            "outputs": ["stories/Visuals/cx"]
+        },
         "lint": {
             "executor": "@nrwl/linter:eslint",
             "outputs": ["{options.outputFile}"],

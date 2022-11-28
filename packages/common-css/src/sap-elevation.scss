@@ -1,0 +1,24 @@
+@import 'common-settings';
+@import 'common-mixins';
+
+$block: #{$sap-namespace}-elevation;
+
+.#{$block} {
+  @for $i from 0 through 50 {
+    &-#{$i} {
+      @include sap-elevation(#{$i});
+    }
+  }
+
+  &-auto {
+    @include sap-elevation(auto);
+  }
+
+  &-initial {
+    @include sap-elevation(initial);
+  }
+
+  &-inherit {
+    @include sap-elevation(inherit);
+  }
+}
