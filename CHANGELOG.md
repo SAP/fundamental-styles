@@ -1,3 +1,12 @@
+# [0.26.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.23...v0.26.0-rc.24) (2022-11-29)
+
+
+### Bug Fixes
+
+* **styles:** dynamic page buttons styling ([#4055](https://github.com/SAP/fundamental-styles/issues/4055)) ([87f3a4b](https://github.com/SAP/fundamental-styles/commit/87f3a4b198cb7b7a225356b6a8f2c2daa85c7200))
+
+
+
 # [0.26.0-rc.23](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.22...v0.26.0-rc.23) (2022-11-28)
 
 
