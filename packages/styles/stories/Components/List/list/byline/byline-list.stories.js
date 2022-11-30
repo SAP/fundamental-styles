@@ -3,6 +3,8 @@ import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
 import '../../../../../src/link.scss';
 import '../../../../../src/button.scss';
+import '../../../../../src/info-label.scss';
+
 export default {
     title: 'Components/List/Byline',
     parameters: {
@@ -464,6 +466,7 @@ Byline list items can display checkboxes that users can select from. To display 
         }
     }
 };
+
 export const SelectionAndNavigation = () => `<h4 id="Ki81L1">Standard Size</h4>
 <ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox" aria-labelledby="Ki81L1">
 <li role="option" tabindex="0" class="fd-list__item">
@@ -665,6 +668,79 @@ LongText.parameters = {
 - \`fd-list__byline--wrap\`
 
 When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "MORE" link should be displayed to reveal the entire contents of the text.`
+        }
+    }
+};
+
+export const UnreadNotification = () => `<h4 id="O09lk9">Standard size</h4>
+<ul class="fd-list fd-list--byline" role="listbox" aria-labelledby="O09lk9">
+<li role="option" tabindex="0" class="fd-list__item is-selected">
+    <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+    <div class="fd-list__content">
+      <span class="fd-list__title" id="O09lk1">Title</span>
+      <span class="fd-list__byline">Byline (description)</span>
+    </div>
+</li>
+<li role="option" tabindex="0" class="fd-list__item">
+  <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
+  <div class="fd-list__content">
+      <div class="fd-list__title" id="O09lk2">List item with 2-column byline</div>
+      <div class="fd-list__byline fd-list__byline--2-col">
+          <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+          <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+      </div>
+  </div>
+</li>
+<li role="option" tabindex="0" class="fd-list__item">
+    <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title" id="O09lk3">Text-only list item</div>
+      <div class="fd-list__byline">Byline (description)</div>
+    </div>
+</li>
+</ul>
+
+<h4 id="O09lk8">Compact size</h4>
+<ul class="fd-list fd-list--compact fd-list--byline" role="listbox" aria-labelledby="O09lk8">
+<li role="option" tabindex="0" class="fd-list__item">
+    <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+    <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+    <div class="fd-list__content">
+      <span class="fd-list__title" id="O09lk4">Title</span>
+      <span class="fd-list__byline">Byline (description)</span>
+    </div>
+</li>
+<li role="option" tabindex="0" class="fd-list__item">
+  <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+  <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
+  <div class="fd-list__content">
+      <div class="fd-list__title" id="O09lk5">List item with 2-column byline</div>
+      <div class="fd-list__byline fd-list__byline--2-col">
+          <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+          <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+      </div>
+  </div>
+</li>
+<li role="option" tabindex="0" class="fd-list__item">
+    <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+    <div class="fd-list__content">
+      <div class="fd-list__title" id="O09lk6">Text-only list item</div>
+      <div class="fd-list__byline">Byline (description)</div>
+    </div>
+</li>
+</ul>
+`;
+
+UnreadNotification.parameters = {
+    docs: {
+        iframeHeight: 625,
+        description: {
+            story: `<span class="fd-info-label fd-info-label--accent-color-1"><span class="fd-info-label__text">non-fiori 3</span></span><br>
+    `
         }
     }
 };
