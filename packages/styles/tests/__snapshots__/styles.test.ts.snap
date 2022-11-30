@@ -30262,7 +30262,7 @@ exports[`Check stories > Components/Time Picker > Story Hours12Cozy > Should mat
                 <div class=\\"fd-bar fd-bar--footer fd-bar--cozy\\">
                     <div class=\\"fd-bar__right\\">
                         <div class=\\"fd-bar__element\\">
-                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">OK</button>
+                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">Ok</button>
                         </div>
                         <div class=\\"fd-bar__element\\">
                             <button class=\\"fd-button fd-button--decisive fd-button--transparent\\">Cancel</button>
@@ -30905,7 +30905,7 @@ exports[`Check stories > Components/Time Picker > Story Hours24Cozy > Should mat
                 <div class=\\"fd-bar fd-bar--footer fd-bar--cozy\\">
                     <div class=\\"fd-bar__right\\">
                         <div class=\\"fd-bar__element\\">
-                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">OK</button>
+                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">Ok</button>
                         </div>
                         <div class=\\"fd-bar__element\\">
                             <button class=\\"fd-button fd-button--decisive fd-button--transparent\\">Cancel</button>
@@ -31546,7 +31546,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                 <div class=\\"fd-bar fd-bar--footer fd-bar--cozy\\">
                     <div class=\\"fd-bar__right\\">
                         <div class=\\"fd-bar__element\\">
-                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">OK</button>
+                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">Ok</button>
                         </div>
                         <div class=\\"fd-bar__element\\">
                             <button class=\\"fd-button fd-button--decisive fd-button--transparent\\">Cancel</button>
@@ -31597,7 +31597,7 @@ exports[`Check stories > Components/Time Picker > Story Mobile > Should match sn
                 <div class=\\"fd-bar fd-bar--footer fd-bar--cozy\\">
                     <div class=\\"fd-bar__right\\">
                         <div class=\\"fd-bar__element\\">
-                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">OK</button>
+                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">Ok</button>
                         </div>
                         <div class=\\"fd-bar__element\\">
                             <button class=\\"fd-button fd-button--decisive fd-button--transparent\\">Cancel</button>
@@ -31918,7 +31918,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                 <div class=\\"fd-bar fd-bar--footer fd-bar--cozy\\">
                     <div class=\\"fd-bar__right\\">
                         <div class=\\"fd-bar__element\\">
-                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">OK</button>
+                            <button class=\\"fd-button fd-button--decisive fd-button--emphasized\\">Ok</button>
                         </div>
                         <div class=\\"fd-bar__element\\">
                             <button class=\\"fd-button fd-button--decisive fd-button--transparent\\">Cancel</button>
