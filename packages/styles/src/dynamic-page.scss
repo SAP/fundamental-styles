@@ -42,7 +42,7 @@ $block: #{$fd-namespace}-dynamic-page;
     }
   }
 
-  @mixin responsive-page($padding-y: 0,$padding-x: 1rem) {
+  @mixin responsive-page($padding-y: 0, $padding-x: 1rem) {
     padding: $padding-y $padding-x;
   }
 
@@ -386,7 +386,7 @@ $block: #{$fd-namespace}-dynamic-page;
   }
 
   &--sm {
-    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom, 0.5rem);
+    @include fd-responsive-page($fd-dynamic-page-header-padding-top-bottom);
 
     .#{$block}__breadcrumb {
       padding: 0;
