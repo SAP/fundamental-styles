@@ -51,10 +51,10 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
     }
 
     .#{$block}__notification {
-      @include fd-set-margins-x-equal(0.5rem);
+      @include fd-set-paddings-x(1rem, 0.75rem);
 
       color: var(--sapAccentColor6);
-      font-size: 6px;
+      font-size: 0.375rem;
     }
 
     .#{$block}__content {
