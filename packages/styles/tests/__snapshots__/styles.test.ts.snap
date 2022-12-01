@@ -24621,7 +24621,7 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuMSi
                     <div class=\\"fd-popover__control\\">
                         <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
                              onclick=\\"onPopoverClick('DD35GBK6')\\" aria-controls=\\"DD35GBK6\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\">
+                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
                             <span
                                 class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
                         </div>
@@ -24727,7 +24727,7 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
                     <div class=\\"fd-popover__control\\">
                         <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
                              onclick=\\"onPopoverClick('DD35GBK6')\\" aria-controls=\\"DD35GBK6\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\">
+                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
                             <span
                                 class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
                         </div>
@@ -24843,7 +24843,7 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuXlS
                     <div class=\\"fd-popover__control\\">
                         <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
                              onclick=\\"onPopoverClick('DD35G276')\\" aria-controls=\\"DD35G276\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\">
+                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
                             <span
                                 class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
                         </div>
@@ -24884,7 +24884,7 @@ exports[`Check stories > Components/Shellbar > Story Primary > Should match snap
             <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"WV3AY276\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"WV3AY276\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
                             <span class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
                         </div>
                     </div>
@@ -24978,7 +24978,7 @@ exports[`Check stories > Components/Shellbar > Story ProductMenuAndSearch > Shou
             <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
-                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"ZY3AY276\\" onclick=\\"onPopoverClick('ZY3AY276')\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"ZY3AY276\\" onclick=\\"onPopoverClick('ZY3AY276')\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
                             <span
                                 class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
                                 style=\\"background-image: url('assets/images/avatars/1.svg');\\"
@@ -25038,7 +25038,7 @@ exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should matc
                     <div class=\\"fd-popover__control\\">
                         <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
                              onclick=\\"onPopoverClick('MKFAY276')\\" aria-controls=\\"MKFAY276\\" aria-expanded=\\"false\\"
-                             aria-haspopup=\\"true\\" role=\\"button\\">
+                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
                             <span
                                 class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
                                 style=\\"background-image: url('assets/images/avatars/1.svg');\\"

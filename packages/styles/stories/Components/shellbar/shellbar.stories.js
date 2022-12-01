@@ -50,7 +50,7 @@ export const Primary = () => `<div style="height:150px">
             <div class="fd-shellbar__action">
                 <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
-                        <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button">
+                        <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control" aria-controls="WV3AY276" aria-expanded="false" aria-haspopup="true" role="button" tabindex="0">
                             <span class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
                         </div>
                     </div>
@@ -151,7 +151,7 @@ export const ProductMenuAndSearch = () => `<div style="height:200px">
             <div class="fd-shellbar__action">
                 <div class="fd-popover fd-popover--right">
                     <div class="fd-popover__control">
-                        <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" onclick="onPopoverClick('ZY3AY276')" aria-expanded="false" aria-haspopup="true" role="button">
+                        <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control" aria-controls="ZY3AY276" onclick="onPopoverClick('ZY3AY276')" aria-expanded="false" aria-haspopup="true" role="button" tabindex="0">
                             <span
                                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
                                 style="background-image: url('assets/images/avatars/1.svg');"
@@ -279,7 +279,7 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                     <div class="fd-popover__control">
                         <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                              onclick="onPopoverClick('DD35G276')" aria-controls="DD35G276" aria-expanded="false"
-                             aria-haspopup="true" role="button">
+                             aria-haspopup="true" role="button" tabindex="0">
                             <span
                                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
                         </div>
@@ -406,7 +406,7 @@ export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
                     <div class="fd-popover__control">
                         <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                              onclick="onPopoverClick('DD35GBK6')" aria-controls="DD35GBK6" aria-expanded="false"
-                             aria-haspopup="true" role="button">
+                             aria-haspopup="true" role="button" tabindex="0">
                             <span
                                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
                         </div>
@@ -522,7 +522,7 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                     <div class="fd-popover__control">
                         <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                              onclick="onPopoverClick('DD35GBK6')" aria-controls="DD35GBK6" aria-expanded="false"
-                             aria-haspopup="true" role="button">
+                             aria-haspopup="true" role="button" tabindex="0">
                             <span
                                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle">WW</span>
                         </div>
@@ -590,7 +590,7 @@ export const ProductSwitch = () => `<div style="height:600px">
                     <div class="fd-popover__control">
                         <div class="fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control"
                              onclick="onPopoverClick('MKFAY276')" aria-controls="MKFAY276" aria-expanded="false"
-                             aria-haspopup="true" role="button">
+                             aria-haspopup="true" role="button" tabindex="0">
                             <span
                                 class="fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle"
                                 style="background-image: url('assets/images/avatars/1.svg');"
