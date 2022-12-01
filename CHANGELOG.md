@@ -1,3 +1,12 @@
+# [0.26.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.25...v0.26.0-rc.26) (2022-12-01)
+
+
+### Bug Fixes
+
+* **styles:** popover arrow styles ([#4057](https://github.com/SAP/fundamental-styles/issues/4057)) ([0b41c8f](https://github.com/SAP/fundamental-styles/commit/0b41c8f6cb0a60cbd2031ab26db0e10b5290d970))
+
+
+
 # [0.26.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.24...v0.26.0-rc.25) (2022-12-01)
 
 
