@@ -50,6 +50,13 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
     }
 
+    .#{$block}__notification {
+      @include fd-set-margins-x-equal(0.5rem);
+
+      color: var(--sapAccentColor6);
+      font-size: 6px;
+    }
+
     .#{$block}__content {
       @include fd-reset();
       @include fd-flex(column);
