@@ -1,3 +1,12 @@
+# [0.26.0-rc.29](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.28...v0.26.0-rc.29) (2022-12-01)
+
+
+### Features
+
+* **styles:** add notification to byline list [ci visual] ([#4062](https://github.com/SAP/fundamental-styles/issues/4062)) ([225f7fb](https://github.com/SAP/fundamental-styles/commit/225f7fb80679e9ee0405c35ca535ce62cd88ab94))
+
+
+
 # [0.26.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.27...v0.26.0-rc.28) (2022-12-01)
 
 
