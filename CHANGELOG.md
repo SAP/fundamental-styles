@@ -1,3 +1,12 @@
+# [0.26.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.26...v0.26.0-rc.27) (2022-12-01)
+
+
+### Bug Fixes
+
+* **styles:** popover's visibility for vertical nav ([#4063](https://github.com/SAP/fundamental-styles/issues/4063)) ([2e17f63](https://github.com/SAP/fundamental-styles/commit/2e17f63a349a03a97681db876ba2308b559bed00))
+
+
+
 # [0.26.0-rc.26](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.25...v0.26.0-rc.26) (2022-12-01)
 
 
