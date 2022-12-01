@@ -9,7 +9,7 @@ $block: #{$fd-namespace}-title;
   @extend %dialog-title;
 
   color: var(--sapTextColor);
-  font-family: var(--fdTitle_Font_Family);
+  font-family: var(--sapFontHeaderFamily);
 
   &--h1 {
     font-size: var(--sapFontHeader1Size);
