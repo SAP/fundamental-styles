@@ -329,7 +329,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
     &--static {
       position: relative;
 
-      --fdPopover_Offset: 0;
+      --fdPopover_Offset: 0%;
       --fdPopover_Center_Offset: 0%;
     }
 
