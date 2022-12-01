@@ -87,6 +87,8 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
     background: $fd-popover-background-color;
     top: calc(var(--fdPopover_Offset) + #{$fd-popover-arrow-size});
     transition: all $fd-animation-speed;
+    opacity: 1;
+    visibility: visible;
 
     @include fd-both-pseudo-selectors() {
       content: "";
