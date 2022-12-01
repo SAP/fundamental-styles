@@ -1,13 +1,15 @@
 @mixin sap-reset {
   font-family: "72", "72full", Arial, Helvetica, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  color: $fn-color-grey-10;
+  font-size: var(--sapFontSize);
+  line-height: normal;
+  color: var(--sapTextColor);
   font-weight: normal;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: 0;
+  text-indent: 0;
+  list-style-type: none;
 
   &::before,
   &::after {
