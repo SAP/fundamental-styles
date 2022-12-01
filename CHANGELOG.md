@@ -1,3 +1,12 @@
+# [0.26.0-rc.28](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.27...v0.26.0-rc.28) (2022-12-01)
+
+
+### Features
+
+* **styles:** add component reset to common CSS [ci visual] ([#4061](https://github.com/SAP/fundamental-styles/issues/4061)) ([c8c8c80](https://github.com/SAP/fundamental-styles/commit/c8c8c80354360f458dfb794a6f2658864afdf71f))
+
+
+
 # [0.26.0-rc.27](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.26...v0.26.0-rc.27) (2022-12-01)
 
 
