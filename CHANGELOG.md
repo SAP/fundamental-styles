@@ -1,3 +1,12 @@
+# [0.26.0-rc.25](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.24...v0.26.0-rc.25) (2022-12-01)
+
+
+### Bug Fixes
+
+* **styles:** dynamic page padding ([#4058](https://github.com/SAP/fundamental-styles/issues/4058)) ([8db848f](https://github.com/SAP/fundamental-styles/commit/8db848f959baa09bb48e367406aec98c6ad1eef9))
+
+
+
 # [0.26.0-rc.24](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.23...v0.26.0-rc.24) (2022-11-29)
 
 
