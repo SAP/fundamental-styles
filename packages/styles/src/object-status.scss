@@ -345,14 +345,15 @@ $inverted-color-accents: (
     min-height: $fd-object-status-inverted-min-height;
     width: auto;
     max-width: 100%;
+    min-width: $fd-object-status-inverted-min-width;
     padding: $fd-object-status-inverted-padding;
     border-radius: $fd-object-status-inverted-border-radius;
     font-size: var(--sapFontSmallSize);
     font-weight: $fd-object-status-inverted-text-font-weight;
     border-width: var(--fdInverted_Object_Border_Width);
     border-style: solid;
-    text-shadow: none;
     line-height: $fd-object-status-height;
+    text-shadow: var(--sapContent_ContrastTextShadow);
 
     .#{$block}__icon,
     .#{$block}__text {
