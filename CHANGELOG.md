@@ -1,3 +1,12 @@
+# [0.26.0-rc.34](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.33...v0.26.0-rc.34) (2022-12-02)
+
+
+### Bug Fixes
+
+* **styles:** minor changes to the notification in Byline list [ci visual] ([#4066](https://github.com/SAP/fundamental-styles/issues/4066)) ([be35f6f](https://github.com/SAP/fundamental-styles/commit/be35f6fb1d01bc7b835ee571293733af1275b28b))
+
+
+
 # [0.26.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.32...v0.26.0-rc.33) (2022-12-02)
 
 
