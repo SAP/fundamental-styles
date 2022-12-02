@@ -141,7 +141,6 @@ html {
 }
 ```
 
-If you are not supporting IE11, the recommended format is `woff2`. If supporting IE11, use `woff`.
 
 ## Working with the Project
 
@@ -224,6 +223,16 @@ The following circumstances will NOT be considered a MAJOR or BREAKING change:
 
 * Introducing new classnames, CSS variables, color names, color groups, spacing parameters
 * Adding or modifying CSS properties and values of existing classnames.
+
+## Fundamental Library GitHub Repository
+
+The Fundamental Library GitHub Repository is a monorepo package that allows the reusage of other packages while keeping them isolated from one another. The Fundamental Library GitHub Repository consist of:
+
+[Customer Experience Package](https://github.com/SAP/fundamental-styles/tree/main/packages/cx)
+[Fundamental Library Next Package](https://github.com/SAP/fundamental-styles/tree/main/packages/fn)
+[Common Css](https://github.com/SAP/fundamental-styles/tree/main/packages/common-css)
+[Styles Package](https://github.com/SAP/fundamental-styles/tree/main/packages/styles)
+
 
 ## Thanks
 
