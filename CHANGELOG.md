@@ -1,3 +1,12 @@
+# [0.26.0-rc.33](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.32...v0.26.0-rc.33) (2022-12-02)
+
+
+### Bug Fixes
+
+* **styles:** add text shadow to inverted Object Status [ci visual] ([#4065](https://github.com/SAP/fundamental-styles/issues/4065)) ([0a5014b](https://github.com/SAP/fundamental-styles/commit/0a5014bab752ccf292ef7e8814a5e76055570f42))
+
+
+
 # [0.26.0-rc.32](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.31...v0.26.0-rc.32) (2022-12-02)
 
 
