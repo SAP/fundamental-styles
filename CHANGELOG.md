@@ -1,3 +1,12 @@
+# [0.26.0-rc.31](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.30...v0.26.0-rc.31) (2022-12-02)
+
+
+### Bug Fixes
+
+* **styles:** add fix for Title font-family [ci visual] ([#4068](https://github.com/SAP/fundamental-styles/issues/4068)) ([158a68e](https://github.com/SAP/fundamental-styles/commit/158a68e7c4dae86562e974b5be2f69f933f86811))
+
+
+
 # [0.26.0-rc.30](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.29...v0.26.0-rc.30) (2022-12-01)
 
 
