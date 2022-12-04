@@ -79,7 +79,7 @@
     "@storybook/addons": "6.5.13",
     "@storybook/builder-vite": "^0.2.4",
     "@storybook/html": "6.5.13",
-    "@storybook/theming": "6.5.13",
+    "@storybook/theming": "6.5.14",
     "@testing-library/react": "13.4.0",
     "@types/node": "16.11.7",
     "@types/react": "^17.0.0",
