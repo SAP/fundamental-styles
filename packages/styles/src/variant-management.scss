@@ -2,18 +2,23 @@
 
 $block: #{$fd-namespace}-variant-management;
 
+$title-margin: 0.125rem;
+
 .#{$block} {
   @include fd-reset();
 
   &__header {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      cursor: pointer;
+    }
   }
 
   .#{$block} &__title {
     color: var(--fdVariantManagementHeadingColor);
-    margin-right: 0.125rem;
+
+    @include fd-set-margin-right($title-margin);
 
     @include fd-hover() {
       color: var(--fdVariantManagementHeadingHoverColor);
@@ -30,10 +35,11 @@ $block: #{$fd-namespace}-variant-management;
     display: inline-block;
     color: var(--fdVariantManagementDirtyLabelColor);
     font-weight: bold;
-    margin-right: 0.125rem;
+
+    @include fd-set-margin-right($title-margin);
 
     &--custom {
-      font-size: var(--fdVariantManagementCustomDirtyLabelSize);
+      font-size: var(--sapFontSmallSize);
     }
   }
 
@@ -47,7 +53,6 @@ $block: #{$fd-namespace}-variant-management;
   }
 
   &__centered-checkbox {
-    display: flex;
-    justify-content: center;
+    @include fd-flex-horizontal-center();
   }
 }
