@@ -1,3 +1,12 @@
+# [0.26.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.35...v0.26.0-rc.36) (2022-12-06)
+
+
+### Features
+
+* **styles:** provide option for ShellBar logo to be used as a link [ci visual] ([#4081](https://github.com/SAP/fundamental-styles/issues/4081)) ([f4dbb94](https://github.com/SAP/fundamental-styles/commit/f4dbb94ffb3a299a04687aa83ed87e1db42ed601))
+
+
+
 # [0.26.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.34...v0.26.0-rc.35) (2022-12-02)
 
 
