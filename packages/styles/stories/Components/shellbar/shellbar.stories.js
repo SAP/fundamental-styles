@@ -26,7 +26,7 @@ The shellbar supports layout functionality and has some built-in elements, but r
 
 Elements | Class | Description
 :------------ | :------- | :------------
-Logo (mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo.
+Logo (mandatory) | \`fd-shellbar__logo\` | For company branding, add the \`--image-replaced\` modifier class when using CSS to display the logo. The logo can become a link by replacing the "span" tag with an "a" tag.
 Title (mandatory) | \`fd-shellbar__title\` | Displays the current application.
 Subtitle | \`fd-shellbar__subtitle\` | Displays an application context. Subtitles should seldom be used.
 Action button (mandatory) | \`fd-shellbar__action\` | A container for each product action and link.
@@ -89,9 +89,9 @@ The primary shellbar displays a logo, title, and an avatar where the user settin
 export const ProductMenuAndSearch = () => `<div style="height:200px">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">
-            <span class="fd-shellbar__logo">
+            <a class="fd-shellbar__logo" href="https://www.sap.com/index.html" target="_blank">
                 <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
-            </span>
+            </a>
             <div class="fd-popover">
                 <div class="fd-popover__control">
                     <button class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu" onclick="onPopoverClick('9GLB26941');" aria-controls="9GLB26941" aria-haspopup="true" aria-expanded="false">
@@ -188,7 +188,7 @@ ProductMenuAndSearch.parameters = {
     docs: {
         description: {
             story: `
-Shellbar can be displayed with a product menu and search box. The product menu is used for navigating to other applications within the product. To display a product menu, add the \`fd-popover\` class after the \`fd-shellbar__logo\` class.
+Shellbar can be displayed with a product menu and search box. The product menu is used for navigating to other applications within the product. To display a product menu, add the \`fd-popover\` class after the \`fd-shellbar__logo\` class. The logo can become a link by replacing the "span" tag with an "a" tag.
     `
         }
     }
