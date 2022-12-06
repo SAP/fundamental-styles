@@ -1,3 +1,12 @@
+# [0.26.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.36...v0.26.0-rc.37) (2022-12-06)
+
+
+### Bug Fixes
+
+* **styles:** add fix for no horiz and vert borders in Table [ci visual] ([#4080](https://github.com/SAP/fundamental-styles/issues/4080)) ([c1931c7](https://github.com/SAP/fundamental-styles/commit/c1931c711ac8293185a5b9228b061cea355db63f))
+
+
+
 # [0.26.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.35...v0.26.0-rc.36) (2022-12-06)
 
 
