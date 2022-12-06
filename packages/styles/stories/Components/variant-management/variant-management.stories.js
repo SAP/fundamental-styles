@@ -18,14 +18,14 @@ export const HeaderSizes = () => {
 
   return headers.map((header) => `
   <div class="fd-variant-management">
-    <span class="fd-variant-management__header" tabindex="0">
+    <div class="fd-variant-management__header" tabindex="0">
       <h4 class="fd-title fd-variant-management__title fd-title--h${header}">
         Variant Title H${header}
       </h4>
       <button aria-disabled="false" tabindex="0" aria-haspopup="true" class="fd-button fd-button--transparent fd-button--menu" type="button">
-        <i role="presentation" glyph="slim-arrow-down" class="sap-icon--slim-arrow-down"></i>
+        <i role="presentation" class="sap-icon--slim-arrow-down"></i>
       </button>
-    </span>
+    </div>
   </div>
   `).join('\n');
 }
@@ -48,18 +48,18 @@ This is important when setting the variant management into an object or Dynamic 
 
 export const DirtyLabel = () => `
 <div class="fd-variant-management">
-  <span class="fd-variant-management__header" tabindex="0">
+  <div class="fd-variant-management__header" tabindex="0">
     <h4 class="fd-title fd-variant-management__title fd-title--h3">
       Changed variant
     </h4>
     <span class="fd-variant-management__dirty-indicator">*</span>
     <button aria-disabled="false" tabindex="0" aria-haspopup="true" class="fd-button fd-button--transparent fd-button--menu" type="button">
-      <i role="presentation" glyph="slim-arrow-down" class="sap-icon--slim-arrow-down"></i>
+      <i role="presentation" class="sap-icon--slim-arrow-down"></i>
     </button>
-  </span>
+  </div>
 </div>
 <div class="fd-variant-management">
-  <span class="fd-variant-management__header" tabindex="0">
+  <div class="fd-variant-management__header" tabindex="0">
     <h4 class="fd-title fd-variant-management__title fd-title--h3">
       Changed variant
     </h4>
@@ -67,9 +67,9 @@ export const DirtyLabel = () => `
       changed
     </span>
     <button aria-disabled="false" tabindex="0" aria-haspopup="true" class="fd-button fd-button--transparent fd-button--menu" type="button">
-      <i role="presentation" glyph="slim-arrow-down" class="sap-icon--slim-arrow-down"></i>
+      <i role="presentation" class="sap-icon--slim-arrow-down"></i>
     </button>
-  </span>
+  </div>
 </div>
 `;
 

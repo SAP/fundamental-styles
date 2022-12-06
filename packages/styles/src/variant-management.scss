@@ -12,13 +12,12 @@ $title-margin: 0.125rem;
 
     @include fd-flex-vertical-center() {
       cursor: pointer;
+      gap: 0.125rem;
     }
   }
 
   .#{$block} &__title {
     color: var(--fdVariantManagementHeadingColor);
-
-    @include fd-set-margin-right($title-margin);
 
     @include fd-hover() {
       color: var(--fdVariantManagementHeadingHoverColor);
@@ -33,10 +32,8 @@ $title-margin: 0.125rem;
     @include fd-reset();
 
     display: inline-block;
-    color: var(--fdVariantManagementDirtyLabelColor);
+    color: var(--sapGroup_TitleTextColor);
     font-weight: bold;
-
-    @include fd-set-margin-right($title-margin);
 
     &--custom {
       font-size: var(--sapFontSmallSize);
