@@ -1,3 +1,12 @@
+# [0.26.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.37...v0.26.0-rc.38) (2022-12-07)
+
+
+### Features
+
+* **styles:** introduce variant management styling [ci visual] ([#4031](https://github.com/SAP/fundamental-styles/issues/4031)) ([2cbe0e5](https://github.com/SAP/fundamental-styles/commit/2cbe0e51e701229f0c7e0624567b25653c4e099c))
+
+
+
 # [0.26.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.36...v0.26.0-rc.37) (2022-12-06)
 
 
