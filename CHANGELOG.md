@@ -1,3 +1,12 @@
+# [0.26.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.38...v0.26.0-rc.39) (2022-12-08)
+
+
+### Bug Fixes
+
+* **styles:** change the cursor from text to pointer in Select component [ci visual] ([#4084](https://github.com/SAP/fundamental-styles/issues/4084)) ([ea1f856](https://github.com/SAP/fundamental-styles/commit/ea1f856897275ba2eafab7201c39010d0bfacb59))
+
+
+
 # [0.26.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.37...v0.26.0-rc.38) (2022-12-07)
 
 
