@@ -89,6 +89,7 @@ $fd-select-padding-x-compact: 0.5rem;
     }
 
     padding: 0;
+    cursor: pointer;
     margin-bottom: 0;
 
     .#{$block}__button {
@@ -130,6 +131,7 @@ $fd-select-padding-x-compact: 0.5rem;
     @include fd-set-padding-left($fd-select-padding-x);
     @include fd-select-set-min-width(2.5rem);
 
+    cursor: pointer;
     display: inline-block;
   }
 
