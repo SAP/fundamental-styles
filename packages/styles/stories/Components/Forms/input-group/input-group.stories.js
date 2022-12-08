@@ -307,6 +307,18 @@ export const States = () => `
         </span>
     </div>
 </div>
+<br />
+<div class="fd-form-item">
+    <label class="fd-form-label" for="aqwsde132">Read-Only</label>
+    <div class="fd-input-group is-readonly">
+        <input class="fd-input fd-input--compact fd-input-group__input" readonly type="text" id="aqwsde132" name="" value="1000000">
+        <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
+            <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
+                Button
+            </button>
+        </span>
+    </div>
+</div>
 `;
 
 States.parameters = {
