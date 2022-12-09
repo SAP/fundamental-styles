@@ -8946,6 +8946,18 @@ exports[`Check stories > Components/Forms/Input Group > Story States > Should ma
         </span>
     </div>
 </div>
+<br />
+<div class=\\"fd-form-item\\">
+    <label class=\\"fd-form-label\\" for=\\"aqwsde132\\">Read-Only</label>
+    <div class=\\"fd-input-group is-readonly\\">
+        <input class=\\"fd-input fd-input--compact fd-input-group__input\\" readonly type=\\"text\\" id=\\"aqwsde132\\" name=\\"\\" value=\\"1000000\\">
+        <span class=\\"fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button\\">
+            <button class=\\"fd-input-group__button fd-button fd-button--transparent fd-button--compact\\">
+                Button
+            </button>
+        </span>
+    </div>
+</div>
 "
 `;
 
@@ -35216,6 +35228,110 @@ exports[`Check stories > Components/User Menu > Story ThirdPartyContent > Should
     </div>
 </div>
 "
+`;
+
+exports[`Check stories > Components/Variant Management > Story DirtyLabel > Should match snapshot 1`] = `
+"
+<div class=\\"fd-variant-management\\">
+  <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+    <h4 class=\\"fd-title fd-variant-management__title fd-title--h3\\">
+      Changed variant
+    </h4>
+    <span class=\\"fd-variant-management__dirty-indicator\\">*</span>
+    <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+      <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+    </button>
+  </div>
+</div>
+<div class=\\"fd-variant-management\\">
+  <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+    <h4 class=\\"fd-title fd-variant-management__title fd-title--h3\\">
+      Changed variant
+    </h4>
+    <span class=\\"fd-variant-management__dirty-indicator fd-variant-management__dirty-indicator--custom\\">
+      changed
+    </span>
+    <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+      <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+    </button>
+  </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Variant Management > Story HeaderSizes > Should match snapshot 1`] = `
+"
+  <div class=\\"fd-variant-management\\">
+    <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+      <h4 class=\\"fd-title fd-variant-management__title fd-title--h1\\">
+        Variant Title H1
+      </h4>
+      <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+        <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+      </button>
+    </div>
+  </div>
+  
+
+  <div class=\\"fd-variant-management\\">
+    <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+      <h4 class=\\"fd-title fd-variant-management__title fd-title--h2\\">
+        Variant Title H2
+      </h4>
+      <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+        <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+      </button>
+    </div>
+  </div>
+  
+
+  <div class=\\"fd-variant-management\\">
+    <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+      <h4 class=\\"fd-title fd-variant-management__title fd-title--h3\\">
+        Variant Title H3
+      </h4>
+      <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+        <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+      </button>
+    </div>
+  </div>
+  
+
+  <div class=\\"fd-variant-management\\">
+    <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+      <h4 class=\\"fd-title fd-variant-management__title fd-title--h4\\">
+        Variant Title H4
+      </h4>
+      <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+        <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+      </button>
+    </div>
+  </div>
+  
+
+  <div class=\\"fd-variant-management\\">
+    <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+      <h4 class=\\"fd-title fd-variant-management__title fd-title--h5\\">
+        Variant Title H5
+      </h4>
+      <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+        <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+      </button>
+    </div>
+  </div>
+  
+
+  <div class=\\"fd-variant-management\\">
+    <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
+      <h4 class=\\"fd-title fd-variant-management__title fd-title--h6\\">
+        Variant Title H6
+      </h4>
+      <button aria-disabled=\\"false\\" tabindex=\\"0\\" aria-haspopup=\\"true\\" class=\\"fd-button fd-button--transparent fd-button--menu\\" type=\\"button\\">
+        <i role=\\"presentation\\" class=\\"sap-icon--slim-arrow-down\\"></i>
+      </button>
+    </div>
+  </div>
+  "
 `;
 
 exports[`Check stories > Components/Vertical Navigation > Story Condensed > Should match snapshot 1`] = `
