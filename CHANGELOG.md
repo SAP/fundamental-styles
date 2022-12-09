@@ -1,3 +1,13 @@
+# [0.26.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.40...v0.26.0-rc.41) (2022-12-09)
+
+
+### Bug Fixes
+
+* **styles:** remove full width from carousel-item [ci visual] ([#4086](https://github.com/SAP/fundamental-styles/issues/4086)) ([374b67f](https://github.com/SAP/fundamental-styles/commit/374b67f25c00e8172fcb5cf73eea4db2c5b1557b))
+* **styles:** remove full width from carousel-item [ci visual] ([#4086](https://github.com/SAP/fundamental-styles/issues/4086)) ([09fc20f](https://github.com/SAP/fundamental-styles/commit/09fc20fa18a1b018053885f6045f0e011ec0607f))
+
+
+
 # [0.26.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.39...v0.26.0-rc.40) (2022-12-09)
 
 
