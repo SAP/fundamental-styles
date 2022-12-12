@@ -342,11 +342,11 @@ $block: #{$fd-namespace}-table;
       border-bottom: $fd-table-border;
 
       &--no-vertical-border {
-        border-bottom-color: transparent;
+        border-right-color: transparent;
       }
 
       &--no-horizontal-border {
-        border-right-color: transparent;
+        border-bottom-color: transparent;
       }
     }
 
@@ -607,7 +607,7 @@ $block: #{$fd-namespace}-table;
     &--no-vertical-borders {
       .#{$block}__row {
         .#{$block}__cell {
-          border-bottom: none;
+          border-right: none;
         }
       }
     }
@@ -615,7 +615,7 @@ $block: #{$fd-namespace}-table;
     &--no-horizontal-borders {
       .#{$block}__row {
         .#{$block}__cell {
-          border-right: none;
+          border-bottom: none;
         }
       }
     }

@@ -1,3 +1,53 @@
+# [0.26.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.40...v0.26.0-rc.41) (2022-12-09)
+
+
+### Bug Fixes
+
+* **styles:** remove full width from carousel-item [ci visual] ([#4086](https://github.com/SAP/fundamental-styles/issues/4086)) ([374b67f](https://github.com/SAP/fundamental-styles/commit/374b67f25c00e8172fcb5cf73eea4db2c5b1557b))
+* **styles:** remove full width from carousel-item [ci visual] ([#4086](https://github.com/SAP/fundamental-styles/issues/4086)) ([09fc20f](https://github.com/SAP/fundamental-styles/commit/09fc20fa18a1b018053885f6045f0e011ec0607f))
+
+
+
+# [0.26.0-rc.40](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.39...v0.26.0-rc.40) (2022-12-09)
+
+
+
+# [0.26.0-rc.39](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.38...v0.26.0-rc.39) (2022-12-08)
+
+
+### Bug Fixes
+
+* **styles:** change the cursor from text to pointer in Select component [ci visual] ([#4084](https://github.com/SAP/fundamental-styles/issues/4084)) ([ea1f856](https://github.com/SAP/fundamental-styles/commit/ea1f856897275ba2eafab7201c39010d0bfacb59))
+
+
+
+# [0.26.0-rc.38](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.37...v0.26.0-rc.38) (2022-12-07)
+
+
+### Features
+
+* **styles:** introduce variant management styling [ci visual] ([#4031](https://github.com/SAP/fundamental-styles/issues/4031)) ([2cbe0e5](https://github.com/SAP/fundamental-styles/commit/2cbe0e51e701229f0c7e0624567b25653c4e099c))
+
+
+
+# [0.26.0-rc.37](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.36...v0.26.0-rc.37) (2022-12-06)
+
+
+### Bug Fixes
+
+* **styles:** add fix for no horiz and vert borders in Table [ci visual] ([#4080](https://github.com/SAP/fundamental-styles/issues/4080)) ([c1931c7](https://github.com/SAP/fundamental-styles/commit/c1931c711ac8293185a5b9228b061cea355db63f))
+
+
+
+# [0.26.0-rc.36](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.35...v0.26.0-rc.36) (2022-12-06)
+
+
+### Features
+
+* **styles:** provide option for ShellBar logo to be used as a link [ci visual] ([#4081](https://github.com/SAP/fundamental-styles/issues/4081)) ([f4dbb94](https://github.com/SAP/fundamental-styles/commit/f4dbb94ffb3a299a04687aa83ed87e1db42ed601))
+
+
+
 # [0.26.0-rc.35](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.34...v0.26.0-rc.35) (2022-12-02)
 
 

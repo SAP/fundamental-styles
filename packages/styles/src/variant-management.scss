@@ -1,0 +1,55 @@
+@import "./mixins";
+
+$block: #{$fd-namespace}-variant-management;
+
+$title-margin: 0.125rem;
+
+.#{$block} {
+  @include fd-reset();
+
+  &__header {
+    @include fd-reset();
+
+    @include fd-flex-vertical-center() {
+      cursor: pointer;
+      gap: 0.125rem;
+    }
+  }
+
+  .#{$block} &__title {
+    color: var(--fdVariantManagementHeadingColor);
+
+    @include fd-hover() {
+      color: var(--fdVariantManagementHeadingHoverColor);
+    }
+
+    @include fd-active() {
+      color: var(--fdVariantManagementHeadingActiveColor);
+    }
+  }
+
+  &__dirty-indicator {
+    @include fd-reset();
+
+    display: inline-block;
+    color: var(--sapGroup_TitleTextColor);
+    font-weight: bold;
+
+    &--custom {
+      font-size: var(--sapFontSmallSize);
+    }
+  }
+
+  &__favourite-state {
+    cursor: pointer;
+    color: var(--sapContent_NonInteractiveIconColor);
+
+    &--active {
+      color: var(--sapContent_MarkerIconColor);
+    }
+  }
+
+  &__centered-checkbox {
+    @include fd-flex-horizontal-center();
+  }
+}
