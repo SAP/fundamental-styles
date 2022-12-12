@@ -59,6 +59,7 @@ $title-toolbar-height: 2.75rem;
 @mixin titleToolbar() {
   padding: $title-toolbar-padding;
   height: $title-toolbar-height;
+  background-color: var(--sapGroup_TitleBackground) !important;
 }
 
 @mixin toolbarClear() {
@@ -221,6 +222,7 @@ $title-toolbar-height: 2.75rem;
 
   &__title {
     color: var(--sapGroup_TitleTextColor);
+    font-size: var(--sapGroup_Title_FontSize);
   }
 
   &--cozy {

@@ -32948,7 +32948,7 @@ exports[`Check stories > Components/Toolbar > Story Types > Should match snapsho
     <br>
     <div class=\\"fd-toolbar fd-toolbar--info fd-toolbar--active\\">3 item selected</div>
     <h3>Title</h3>
-    <div class=\\"fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active\\">
+    <div class=\\"fd-toolbar fd-toolbar--title\\">
         <h4 class=\\"fd-title fd-title--h4 fd-toolbar__title\\">Products (104)</h4>
         <span class=\\"fd-toolbar__spacer\\"></span>
         <button class=\\"fd-button fd-button--compact fd-button--transparent\\">Save</button>

@@ -209,7 +209,7 @@ export const Types = () => `<div style="padding: 1rem">
     <br>
     <div class="fd-toolbar fd-toolbar--info fd-toolbar--active">3 item selected</div>
     <h3>Title</h3>
-    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
+    <div class="fd-toolbar fd-toolbar--title">
         <h4 class="fd-title fd-title--h4 fd-toolbar__title">Products (104)</h4>
         <span class="fd-toolbar__spacer"></span>
         <button class="fd-button fd-button--compact fd-button--transparent">Save</button>
@@ -260,7 +260,7 @@ Types | Modifier class | Description
 :-------- | :------------- | :---------------
 Solid | \`fd-toolbar--solid\` | Displays a solid background color.
 Transparent | \`fd-toolbar--transparent\` | Displays a transparent background.
-Auto | \` d-toolbar--auto\` | Can inherit the design from the parent component it’s being used with.
+Auto | \` fd-toolbar--auto\` | Can inherit the design from the parent component it’s being used with.
 Info | \` fd-toolbar--info\` | Commonly used to display information (text or icons) and is slightly smaller than the regular toolbar.
 Title | \` fd-toolbar--title\` | Should be used whenever a title is required.
 No border-bottom | \`fd-toolbar—clear\` | This is not a type, but it removes the bottom border of each toolbar type.
