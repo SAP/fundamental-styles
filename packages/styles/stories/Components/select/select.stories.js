@@ -319,7 +319,7 @@ export const SemanticStates = () => `<div style="height: 200px">
                                 toggleElAttrs('h07j9978H', ['aria-hidden']);
                                 toggleElAttrs('errorFormMessage', ['aria-hidden']);
                             "
-                            aria-expanded="false"
+                            aria-expanded="true"
                             aria-haspopup="listbox">
                             <span id="b4546C40Value" class="fd-select__text-content">Error</span>
                             <span class="fd-button fd-button--transparent fd-select__button">
@@ -447,7 +447,7 @@ export const SemanticStates = () => `<div style="height: 200px">
                                 toggleElAttrs('hkhh998hhH', ['aria-hidden']);
                                 toggleElAttrs('informationFormMessage', ['aria-hidden']);
                             "
-                            aria-expanded="false"
+                            aria-expanded="true"
                             aria-haspopup="listbox">
                             <span id="h45336C4Value" class="fd-select__text-content">Information</span>
                                 <span class="fd-button fd-button--transparent fd-select__button">

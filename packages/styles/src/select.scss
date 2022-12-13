@@ -88,9 +88,12 @@ $fd-select-padding-x-compact: 0.5rem;
       pointer-events: none;
     }
 
+    @include fd-expanded() {
+      margin-bottom: 0;
+    }
+
     padding: 0;
     cursor: pointer;
-    margin-bottom: 0;
 
     .#{$block}__button {
       @include fd-set-margin-left(0.25rem);
