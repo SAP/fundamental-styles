@@ -1,3 +1,12 @@
+# [0.26.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.41...v0.26.0-rc.42) (2022-12-13)
+
+
+### Bug Fixes
+
+* **styles:** add fix for margin-bottom of Select [ci visual] ([#4079](https://github.com/SAP/fundamental-styles/issues/4079)) ([856fdd9](https://github.com/SAP/fundamental-styles/commit/856fdd95fce9b6f2727dfd53919556523c116eae))
+
+
+
 # [0.26.0-rc.41](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.40...v0.26.0-rc.41) (2022-12-09)
 
 
