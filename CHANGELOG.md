@@ -1,3 +1,17 @@
+# [0.26.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.42...v0.26.0-rc.43) (2022-12-13)
+
+
+### Bug Fixes
+
+* **styles:** update values for Toolbar with Title [ci visual] ([#4102](https://github.com/SAP/fundamental-styles/issues/4102)) ([a1591a6](https://github.com/SAP/fundamental-styles/commit/a1591a634319e7d080e9c90a37ebb7097c899f58))
+
+
+### BREAKING CHANGES
+
+* **styles:** fd-toolbar--solid modifier class is no longer needed when fd-toolbar--title is applied
+
+
+
 # [0.26.0-rc.42](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.41...v0.26.0-rc.42) (2022-12-13)
 
 
