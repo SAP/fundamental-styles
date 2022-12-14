@@ -5,7 +5,13 @@
     @include fd-list-reset-item-paddings();
 
     .#{$block}__link {
-      @include fd-set-paddings-x($fd-list-item-padding-x, $fd-list-item-padding-x);
+      @include fd-set-paddings-x-equal($fd-list-item-padding-x);
+    }
+
+    &.#{$block}--unread-indicator {
+      .#{$block}__link {
+        @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-item-padding-x);
+      }
     }
 
     // NAVIGATION + Navigation Indication
@@ -39,8 +45,14 @@
       @include fd-list-reset-item-paddings();
 
       .#{$block}__link {
-        @include fd-set-paddings-x($fd-list-byline-item-padding-x, $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x-equal($fd-list-byline-item-padding-x);
         @include fd-set-paddings-y-equal(1rem);
+      }
+
+      &.#{$block}--unread-indicator {
+        .#{$block}__link {
+          @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-byline-item-padding-x);
+        }
       }
     }
 
