@@ -1,3 +1,12 @@
+# [0.26.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.43...v0.26.0-rc.44) (2022-12-14)
+
+
+### Bug Fixes
+
+* **styles:** list unread indicator updates ([#4103](https://github.com/SAP/fundamental-styles/issues/4103)) ([2f01535](https://github.com/SAP/fundamental-styles/commit/2f015356ed69c73c8abab78e395f44f1567be095))
+
+
+
 # [0.26.0-rc.43](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.42...v0.26.0-rc.43) (2022-12-13)
 
 
