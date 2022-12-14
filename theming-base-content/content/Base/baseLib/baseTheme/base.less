@@ -1,11 +1,11 @@
 /**
-* Copyright (c) 2012-2022 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 1.69.2
-* data:{"sModified":"2022-06-22T15:25:50Z"}
+* Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+* Theming Engine 1.71.0-20220930061804
+* data:{"sModified":"2022-11-09T14:58:23Z"}
 */
 
 
-/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.41) *******************/
+/******************* FILE /Base/baseLib/baseTheme/base.less (Version 11.1.45) *******************/
 
 
 // [Label "Brand Color"]
@@ -937,6 +937,342 @@
 // [TranslationKey "sapShell_NeutClr"]
 // [Tags "Base", "Shell", "Color", "Protected"]
 @sapShell_NeutralColor: @sapDefault_Color;
+
+// [Label "Shell Category 1 Background Color"]
+// [Description "The background color of shell elements of category 1."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_1_Background: @sapDefault_Color;
+
+// [Label "Shell Category 1 Border Color"]
+// [Description "The border color of shell elements of category 1."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_1_BrdClr"]
+@sapShell_Category_1_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 1 Text Color"]
+// [Description "The text color of shell elements of category 1. Ensures a defined contrast against sapShell_Category_1_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_1_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 1 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 1. Ensures a defined contrast against sapShell_Category_1_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_1_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 2 Background Color"]
+// [Description "The background color of shell elements of category 2."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_2_Background: @sapDefault_Color;
+
+// [Label "Shell Category 2 Border Color"]
+// [Description "The border color of shell elements of category 2."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_2_BrdClr"]
+@sapShell_Category_2_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 2 Text Color"]
+// [Description "The text color of shell elements of category 2. Ensures a defined contrast against sapShell_Category_2_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_2_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 2 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 2. Ensures a defined contrast against sapShell_Category_2_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_2_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 3 Background Color"]
+// [Description "The background color of shell elements of category 3."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_3_Background: @sapDefault_Color;
+
+// [Label "Shell Category 3 Border Color"]
+// [Description "The border color of shell elements of category 3."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_3_BrdClr"]
+@sapShell_Category_3_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 3 Text Color"]
+// [Description "The text color of shell elements of category 3. Ensures a defined contrast against sapShell_Category_3_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_3_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 3 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 3. Ensures a defined contrast against sapShell_Category_3_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_3_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 4 Background Color"]
+// [Description "The background color of shell elements of category 4."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_4_Background: @sapDefault_Color;
+
+// [Label "Shell Category 4 Border Color"]
+// [Description "The border color of shell elements of category 4."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_4_BrdClr"]
+@sapShell_Category_4_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 4 Text Color"]
+// [Description "The text color of shell elements of category 4. Ensures a defined contrast against sapShell_Category_4_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_4_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 4 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 4. Ensures a defined contrast against sapShell_Category_4_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_4_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 5 Background Color"]
+// [Description "The background color of shell elements of category 5."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_5_Background: @sapDefault_Color;
+
+// [Label "Shell Category 5 Border Color"]
+// [Description "The border color of shell elements of category 5."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_5_BrdClr"]
+@sapShell_Category_5_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 5 Text Color"]
+// [Description "The text color of shell elements of category 5. Ensures a defined contrast against sapShell_Category_5_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_5_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 5 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 5. Ensures a defined contrast against sapShell_Category_5_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_5_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 6 Background Color"]
+// [Description "The background color of shell elements of category 6."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_6_Background: @sapDefault_Color;
+
+// [Label "Shell Category 6 Border Color"]
+// [Description "The border color of shell elements of category 6."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_6_BrdClr"]
+@sapShell_Category_6_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 6 Text Color"]
+// [Description "The text color of shell elements of category 6. Ensures a defined contrast against sapShell_Category_6_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_6_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 6 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 6. Ensures a defined contrast against sapShell_Category_6_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_6_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 7 Background Color"]
+// [Description "The background color of shell elements of category 7."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_7_Background: @sapDefault_Color;
+
+// [Label "Shell Category 7 Border Color"]
+// [Description "The border color of shell elements of category 7."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_7_BrdClr"]
+@sapShell_Category_7_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 7 Text Color"]
+// [Description "The text color of shell elements of category 7. Ensures a defined contrast against sapShell_Category_7_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_7_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 7 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 7. Ensures a defined contrast against sapShell_Category_7_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_7_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 8 Background Color"]
+// [Description "The background color of shell elements of category 8."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_8_Background: @sapDefault_Color;
+
+// [Label "Shell Category 8 Border Color"]
+// [Description "The border color of shell elements of category 8."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_8_BrdClr"]
+@sapShell_Category_8_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 8 Text Color"]
+// [Description "The text color of shell elements of category 8. Ensures a defined contrast against sapShell_Category_8_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_8_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 8 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 8. Ensures a defined contrast against sapShell_Category_8_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_8_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 9 Background Color"]
+// [Description "The background color of shell elements of category 9."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_9_Background: @sapDefault_Color;
+
+// [Label "Shell Category 9 Border Color"]
+// [Description "The border color of shell elements of category 9."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_9_BrdClr"]
+@sapShell_Category_9_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 9 Text Color"]
+// [Description "The text color of shell elements of category 9. Ensures a defined contrast against sapShell_Category_9_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_9_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 9 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 9. Ensures a defined contrast against sapShell_Category_9_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_9_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 10 Background Color"]
+// [Description "The background color of shell elements of category 10."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_10_Background: @sapDefault_Color;
+
+// [Label "Shell Category 10 Border Color"]
+// [Description "The border color of shell elements of category 10."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_10_BrdClr"]
+@sapShell_Category_10_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 10 Text Color"]
+// [Description "The text color of shell elements of category 10. Ensures a defined contrast against sapShell_Category_10_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_10_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 10 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 10. Ensures a defined contrast against sapShell_Category_10_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_10_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 11 Background Color"]
+// [Description "The background color of shell elements of category 11."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_11_Background: @sapDefault_Color;
+
+// [Label "Shell Category 11 Border Color"]
+// [Description "The border color of shell elements of category 11."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_11_BrdClr"]
+@sapShell_Category_11_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 11 Text Color"]
+// [Description "The text color of shell elements of category 11. Ensures a defined contrast against sapShell_Category_11_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_11_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 11 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 11. Ensures a defined contrast against sapShell_Category_11_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_11_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 12 Background Color"]
+// [Description "The background color of shell elements of category 12."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_12_Background: @sapDefault_Color;
+
+// [Label "Shell Category 12 Border Color"]
+// [Description "The border color of shell elements of category 12."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_12_BrdClr"]
+@sapShell_Category_12_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 12 Text Color"]
+// [Description "The text color of shell elements of category 12. Ensures a defined contrast against sapShell_Category_12_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_12_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 12 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 12. Ensures a defined contrast against sapShell_Category_12_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_12_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 13 Background Color"]
+// [Description "The background color of shell elements of category 13."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_13_Background: @sapDefault_Color;
+
+// [Label "Shell Category 13 Border Color"]
+// [Description "The border color of shell elements of category 13."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_13_BrdClr"]
+@sapShell_Category_13_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 13 Text Color"]
+// [Description "The text color of shell elements of category 13. Ensures a defined contrast against sapShell_Category_13_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_13_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 13 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 13. Ensures a defined contrast against sapShell_Category_13_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_13_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 14 Background Color"]
+// [Description "The background color of shell elements of category 14."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_14_Background: @sapDefault_Color;
+
+// [Label "Shell Category 14 Border Color"]
+// [Description "The border color of shell elements of category 14."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_14_BrdClr"]
+@sapShell_Category_14_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 14 Text Color"]
+// [Description "The text color of shell elements of category 14. Ensures a defined contrast against sapShell_Category_14_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_14_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 14 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 14. Ensures a defined contrast against sapShell_Category_14_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_14_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 15 Background Color"]
+// [Description "The background color of shell elements of category 15."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_15_Background: @sapDefault_Color;
+
+// [Label "Shell Category 15 Border Color"]
+// [Description "The border color of shell elements of category 15."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_15_BrdClr"]
+@sapShell_Category_15_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 15 Text Color"]
+// [Description "The text color of shell elements of category 15. Ensures a defined contrast against sapShell_Category_15_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_15_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 15 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 15. Ensures a defined contrast against sapShell_Category_15_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_15_TextShadow: @sapDefault_Color;
+
+// [Label "Shell Category 16 Background Color"]
+// [Description "The background color of shell elements of category 16."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_16_Background: @sapDefault_Color;
+
+// [Label "Shell Category 16 Border Color"]
+// [Description "The border color of shell elements of category 16."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+// [TranslationKey "sapShell_Cat_16_BrdClr"]
+@sapShell_Category_16_BorderColor: @sapDefault_Color;
+
+// [Label "Shell Category 16 Text Color"]
+// [Description "The text color of shell elements of category 16. Ensures a defined contrast against sapShell_Category_16_TextShadow."]
+// [Tags "Base", "Shell", "Color", "Protected"]
+@sapShell_Category_16_TextColor: @sapDefault_Color;
+
+// [Label "Shell Category 16 Text Shadow Color"]
+// [Description "The text shadow color of shell elements of category 16. Ensures a defined contrast against sapShell_Category_16_TextColor."]
+// [Tags "Base", "Shell", "Protected"]
+@sapShell_Category_16_TextShadow: @sapDefault_Color;
 
 // [Label "Avatar 1 Background Color"]
 // [Description "The background color of type-1 avatars."]

@@ -1,11 +1,11 @@
 /**
-* Copyright (c) 2012-2022 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
-* Theming Engine 1.69.2
-* data:{"sModified":"2022-06-22T15:25:50Z"}
+* Copyright (c) 2012-2020 SAP SE or an SAP affiliate company and Theming Base Content contributors. Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+* Theming Engine 1.71.0-20220930061804
+* data:{"sModified":"2022-11-09T14:58:23Z"}
 */
 
 
-/******************* FILE /Base/baseLib/sap_belize_hcb/base.less (Version 11.1.41) *******************/
+/******************* FILE /Base/baseLib/sap_belize_hcb/base.less (Version 11.1.45) *******************/
 
 
 // [Tags "SapInternal", "Base", "Dimension", "Protected"]
@@ -628,6 +628,102 @@
 
 // [Tags "!Protected"]
 @sapShell_NeutralColor: @sapNeutralColor;
+@sapShell_Category_1_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_1_BorderColor: @sapLegendColor6;
+@sapShell_Category_1_TextColor: contrast(@sapShell_Category_1_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_1_TextShadow: none;
+@sapShell_Category_2_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_2_BorderColor: @sapLegendColor3;
+@sapShell_Category_2_TextColor: contrast(@sapShell_Category_2_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_2_TextShadow: none;
+@sapShell_Category_3_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_3_BorderColor: @sapLegendColor1;
+@sapShell_Category_3_TextColor: contrast(@sapShell_Category_3_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_3_TextShadow: none;
+@sapShell_Category_4_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_4_BorderColor: @sapLegendColor10;
+@sapShell_Category_4_TextColor: contrast(@sapShell_Category_4_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_4_TextShadow: none;
+@sapShell_Category_5_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_5_BorderColor: @sapLegendColor12;
+@sapShell_Category_5_TextColor: contrast(@sapShell_Category_5_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_5_TextShadow: none;
+@sapShell_Category_6_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_6_BorderColor: @sapLegendColor7;
+@sapShell_Category_6_TextColor: contrast(@sapShell_Category_6_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_6_TextShadow: none;
+@sapShell_Category_7_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_7_BorderColor: @sapLegendColor5;
+@sapShell_Category_7_TextColor: contrast(@sapShell_Category_7_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_7_TextShadow: none;
+@sapShell_Category_8_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_8_BorderColor: @sapLegendColor8;
+@sapShell_Category_8_TextColor: contrast(@sapShell_Category_8_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_8_TextShadow: none;
+@sapShell_Category_9_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_9_BorderColor: #4db1ff;
+@sapShell_Category_9_TextColor: contrast(@sapShell_Category_9_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_9_TextShadow: none;
+@sapShell_Category_10_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_10_BorderColor: #b0bcc5;
+@sapShell_Category_10_TextColor: contrast(@sapShell_Category_10_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_10_TextShadow: none;
+@sapShell_Category_11_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_11_BorderColor: #ff8787;
+@sapShell_Category_11_TextColor: contrast(@sapShell_Category_11_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_11_TextShadow: none;
+@sapShell_Category_12_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_12_BorderColor: #d3b6ff;
+@sapShell_Category_12_TextColor: contrast(@sapShell_Category_12_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_12_TextShadow: none;
+@sapShell_Category_13_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_13_BorderColor: #fdcef0;
+@sapShell_Category_13_TextColor: contrast(@sapShell_Category_13_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_13_TextShadow: none;
+@sapShell_Category_14_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_14_BorderColor: #a4eeee;
+@sapShell_Category_14_TextColor: contrast(@sapShell_Category_14_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_14_TextShadow: none;
+@sapShell_Category_15_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_15_BorderColor: #eaecee;
+@sapShell_Category_15_TextColor: contrast(@sapShell_Category_15_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_15_TextShadow: none;
+@sapShell_Category_16_Background: @sapHC_StandardBackground;
+
+// [Tags "!Protected"]
+@sapShell_Category_16_BorderColor: #b2e484;
+@sapShell_Category_16_TextColor: contrast(@sapShell_Category_16_Background, @sapTextColor, @sapContent_ContrastTextColor, @sapContent_ContrastTextThreshold);
+@sapShell_Category_16_TextShadow: none;
 
 // [Tags "!Protected"]
 @sapAvatar_1_Background: @sapBackgroundColor;

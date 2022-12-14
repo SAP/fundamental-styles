@@ -874,6 +874,86 @@
     "body": "var(--sapShell_NeutralColor)",
     "description": "Shell Neutral Color (The neutral semantic color for use in shell contexts.) Value: #d4d6d7 #Base, #Shell, #Color"
   },
+  "sapShell_Category_1_Background": {
+    "prefix": "sapShell_Category_1_Background",
+    "body": "var(--sapShell_Category_1_Background)",
+    "description": "Shell Category 1 Background Color (The background color of shell elements of category 1.) Value: #286eb4 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_2_Background": {
+    "prefix": "sapShell_Category_2_Background",
+    "body": "var(--sapShell_Category_2_Background)",
+    "description": "Shell Category 2 Background Color (The background color of shell elements of category 2.) Value: #db1f77 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_3_Background": {
+    "prefix": "sapShell_Category_3_Background",
+    "body": "var(--sapShell_Category_3_Background)",
+    "description": "Shell Category 3 Background Color (The background color of shell elements of category 3.) Value: #d58215 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_4_Background": {
+    "prefix": "sapShell_Category_4_Background",
+    "body": "var(--sapShell_Category_4_Background)",
+    "description": "Shell Category 4 Background Color (The background color of shell elements of category 4.) Value: #892971 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_5_Background": {
+    "prefix": "sapShell_Category_5_Background",
+    "body": "var(--sapShell_Category_5_Background)",
+    "description": "Shell Category 5 Background Color (The background color of shell elements of category 5.) Value: #bb2f2f #Base, #Shell, #Color"
+  },
+  "sapShell_Category_6_Background": {
+    "prefix": "sapShell_Category_6_Background",
+    "body": "var(--sapShell_Category_6_Background)",
+    "description": "Shell Category 6 Background Color (The background color of shell elements of category 6.) Value: #1193a2 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_7_Background": {
+    "prefix": "sapShell_Category_7_Background",
+    "body": "var(--sapShell_Category_7_Background)",
+    "description": "Shell Category 7 Background Color (The background color of shell elements of category 7.) Value: #cf5db3 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_8_Background": {
+    "prefix": "sapShell_Category_8_Background",
+    "body": "var(--sapShell_Category_8_Background)",
+    "description": "Shell Category 8 Background Color (The background color of shell elements of category 8.) Value: #8b9668 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_9_Background": {
+    "prefix": "sapShell_Category_9_Background",
+    "body": "var(--sapShell_Category_9_Background)",
+    "description": "Shell Category 9 Background Color (The background color of shell elements of category 9.) Value: #597da1 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_10_Background": {
+    "prefix": "sapShell_Category_10_Background",
+    "body": "var(--sapShell_Category_10_Background)",
+    "description": "Shell Category 10 Background Color (The background color of shell elements of category 10.) Value: #647987 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_11_Background": {
+    "prefix": "sapShell_Category_11_Background",
+    "body": "var(--sapShell_Category_11_Background)",
+    "description": "Shell Category 11 Background Color (The background color of shell elements of category 11.) Value: #dc5b5b #Base, #Shell, #Color"
+  },
+  "sapShell_Category_12_Background": {
+    "prefix": "sapShell_Category_12_Background",
+    "body": "var(--sapShell_Category_12_Background)",
+    "description": "Shell Category 12 Background Color (The background color of shell elements of category 12.) Value: #5154bd #Base, #Shell, #Color"
+  },
+  "sapShell_Category_13_Background": {
+    "prefix": "sapShell_Category_13_Background",
+    "body": "var(--sapShell_Category_13_Background)",
+    "description": "Shell Category 13 Background Color (The background color of shell elements of category 13.) Value: #bc1b66 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_14_Background": {
+    "prefix": "sapShell_Category_14_Background",
+    "body": "var(--sapShell_Category_14_Background)",
+    "description": "Shell Category 14 Background Color (The background color of shell elements of category 14.) Value: #49797e #Base, #Shell, #Color"
+  },
+  "sapShell_Category_15_Background": {
+    "prefix": "sapShell_Category_15_Background",
+    "body": "var(--sapShell_Category_15_Background)",
+    "description": "Shell Category 15 Background Color (The background color of shell elements of category 15.) Value: #476380 #Base, #Shell, #Color"
+  },
+  "sapShell_Category_16_Background": {
+    "prefix": "sapShell_Category_16_Background",
+    "body": "var(--sapShell_Category_16_Background)",
+    "description": "Shell Category 16 Background Color (The background color of shell elements of category 16.) Value: #687a33 #Base, #Shell, #Color"
+  },
   "sapAvatar_1_Background": {
     "prefix": "sapAvatar_1_Background",
     "body": "var(--sapAvatar_1_Background)",
