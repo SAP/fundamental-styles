@@ -10,7 +10,7 @@
 
     &.#{$block}--unread-indicator {
       .#{$block}__link {
-        @include fd-set-paddings-x(var(--fdList_Unread_Indicator_Spacing), $fd-list-item-padding-x);
+        @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-item-padding-x);
       }
     }
 
@@ -51,7 +51,7 @@
 
       &.#{$block}--unread-indicator {
         .#{$block}__link {
-          @include fd-set-paddings-x(var(--fdList_Unread_Indicator_Spacing), $fd-list-byline-item-padding-x);
+          @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-byline-item-padding-x);
         }
       }
     }

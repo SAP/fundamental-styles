@@ -51,8 +51,6 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
     }
 
     .#{$block}__notification {
-      @include fd-reset();
-
       position: absolute;
       top: 50%;
 
@@ -152,7 +150,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
 
     &.#{$block}--unread-indicator {
       .#{$block}__item {
-        @include fd-set-paddings-x(var(--fdList_Unread_Indicator_Spacing), $fd-list-byline-item-padding-x);
+        @include fd-set-paddings-x($fd-list-unread-indicator-spacing, $fd-list-byline-item-padding-x);
       }
     }
 
