@@ -673,7 +673,7 @@ When more than 100 characters for small screens or 300 characters for medium to 
 };
 
 export const UnreadNotification = () => `<h4 id="O09lk9">Standard size</h4>
-<ul class="fd-list fd-list--byline" role="listbox" aria-labelledby="O09lk9">
+<ul class="fd-list fd-list--byline fd-list--unread-indicator" role="listbox" aria-labelledby="O09lk9">
 <li role="option" tabindex="0" class="fd-list__item is-selected">
     <span class="sap-icon--circle-task-2 fd-list__notification"></span>
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -704,7 +704,7 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </ul>
 
 <h4 id="O09lk8">Compact size</h4>
-<ul class="fd-list fd-list--compact fd-list--byline" role="listbox" aria-labelledby="O09lk8">
+<ul class="fd-list fd-list--compact fd-list--byline fd-list--unread-indicator" role="listbox" aria-labelledby="O09lk8">
 <li role="option" tabindex="0" class="fd-list__item">
     <span class="sap-icon--circle-task-2 fd-list__notification"></span>
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -732,6 +732,50 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
       <div class="fd-list__byline">Byline (description)</div>
     </div>
 </li>
+</ul>
+
+<h4 id="O09lk9">Navigation</h4>
+<ul class="fd-list fd-list--byline fd-list--navigation fd-list--unread-indicator" role="list">
+  <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+    <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+    <a tabindex="0" class="fd-list__link" href="#">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">Title</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
+  <span class="sap-icon--circle-task-2 fd-list__notification"></span>
+    <a tabindex="0" class="fd-list__link" href="#">
+      <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+      <div class="fd-list__content">
+        <div class="fd-list__title">List item with no byline</div>
+      </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link" href="#">
+        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">List item with 2-column byline</div>
+            <div class="fd-list__byline fd-list__byline--2-col">
+                <div class="fd-list__byline-left">First text item in byline (standard text)</div>
+                <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
+            </div>
+        </div>
+    </a>
+  </li>
+  <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+    <a tabindex="0" class="fd-list__link" href="#">
+      <div class="fd-list__content">
+        <div class="fd-list__title">Text-only list item</div>
+        <div class="fd-list__byline">Byline (description)</div>
+      </div>
+    </a>
+  </li>
 </ul>
 `;
 
