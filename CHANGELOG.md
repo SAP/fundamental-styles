@@ -1,3 +1,12 @@
+# [0.26.0-rc.45](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.44...v0.26.0-rc.45) (2022-12-14)
+
+
+### Bug Fixes
+
+* **styles:** fix for high-contrast under windowsi [ci visual] ([#4104](https://github.com/SAP/fundamental-styles/issues/4104)) ([c2db956](https://github.com/SAP/fundamental-styles/commit/c2db9566080cb0c62860e71bb5b32ff60b69c089))
+
+
+
 # [0.26.0-rc.44](https://github.com/SAP/fundamental-styles/compare/v0.26.0-rc.43...v0.26.0-rc.44) (2022-12-14)
 
 
