@@ -53,7 +53,8 @@ const config: StorybookViteConfig = {
     async viteFinal(config) {
         const base = await import('../vite.config');
         return mergeConfig(config, {
-            ...base.default
+            ...base.default,
+            base: process.env.STORYBOOK_BASE_HREF
         });
     }
 };

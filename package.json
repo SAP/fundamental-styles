@@ -77,7 +77,7 @@
     "@storybook/addon-toolbars": "6.5.13",
     "@storybook/addon-viewport": "6.5.13",
     "@storybook/addons": "6.5.13",
-    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/builder-vite": "0.2.5",
     "@storybook/html": "6.5.13",
     "@storybook/theming": "6.5.13",
     "@testing-library/react": "13.4.0",

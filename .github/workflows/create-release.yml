@@ -87,7 +87,7 @@ jobs:
               uses: ./.github/actions/nodejs
 
             - name: Run storybook:static build
-              run: yarn run storybook:static
+              run: npx cross-env STORYBOOK_BASE_HREF=fundamental-styles yarn run storybook:static
 
             - name: Publish to gh-pages
               uses: JamesIves/github-pages-deploy-action@v4

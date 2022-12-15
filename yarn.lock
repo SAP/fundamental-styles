@@ -3139,7 +3139,7 @@
   resolved "https://registry.yarnpkg.com/@storybook/babel-plugin-require-context-hook/-/babel-plugin-require-context-hook-1.0.1.tgz#0a4ec9816f6c7296ebc97dd8de3d2b7ae76f2e26"
   integrity sha512-WM4vjgSVi8epvGiYfru7BtC3f0tGwNs7QK3Uc4xQn4t5hHQvISnCqbNrHdDYmNW56Do+bBztE8SwP6NGUvd7ww==
 
-"@storybook/builder-vite@^0.2.4":
+"@storybook/builder-vite@0.2.5":
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-0.2.5.tgz#b3996a5f28ffd1ce2ca18aff98cf3ed9d4551927"
   integrity sha512-0PktEaYsbR6gGE/YDkW/tI1VxVnaPNZpHGpiWfDU7c5hjCajWYzdFTgHOwcXT8tiTs+WN/rvoCPT2iAhSCcHIw==

@@ -1,4 +1,4 @@
-import {UserConfig} from 'vite';
+import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 import {resolve, join} from "path";
@@ -26,7 +26,7 @@ const packagesAliases = [
     }
 ];
 
-export default {
+export default defineConfig({
     plugins: [tsconfigPaths()],
     resolve: {
         alias: [
@@ -49,4 +49,4 @@ export default {
         environment: 'jsdom',
         setupFiles: [resolve(join(__dirname, 'vitest.setup.ts'))]
     },
-} as UserConfig;
+});
