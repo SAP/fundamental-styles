@@ -1,3 +1,12 @@
+## [0.26.2-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.1...v0.26.2-rc.0) (2022-12-15)
+
+
+### Bug Fixes
+
+* **docs:** fixed gh deployment base url ([#4106](https://github.com/SAP/fundamental-styles/issues/4106)) ([df4102d](https://github.com/SAP/fundamental-styles/commit/df4102df14fde68cb4b4e3096d610705a9460130))
+
+
+
 ## [0.26.1](https://github.com/SAP/fundamental-styles/compare/v0.26.1-rc.0...v0.26.1) (2022-12-15)
 
 
