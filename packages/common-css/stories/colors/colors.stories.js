@@ -36,7 +36,7 @@ export const TextColor = () => `${localStyles}
 <h3>neutralTextColor (--sapNeutralTextColor)</h3>
 <div class="sap-color-neutralTextColor">TEXT</div>
 `;
-TextColor.storyName = 'Text Color';
+
 TextColor.parameters = {
     docs: {
         iframeHeight: 150,
@@ -68,7 +68,7 @@ export const BackgroundColor = () => `${localStyles}
 <h3>neutralBackground (--sapNeutralBackground)</h3>
 <div class="demo sap-bg-color-neutralBackground"></div>
 `;
-BackgroundColor.storyName = 'Background Color';
+
 BackgroundColor.parameters = {
     docs: {
         iframeHeight: 150,
