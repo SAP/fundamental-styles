@@ -57,7 +57,7 @@
     "@babel/traverse": "^7.19.1",
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
-    "@commitlint/travis-cli": "^16.0.0",
+    "@commitlint/travis-cli": "^17.3.0",
     "@jsdevtools/npm-publish": "^1.4.3",
     "@nrwl/devkit": "15.0.0",
     "@nrwl/eslint-plugin-nx": "15.0.0",
