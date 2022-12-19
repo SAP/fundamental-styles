@@ -6,12 +6,6 @@
 */
 $block: #{$fd-namespace}-object-marker;
 
-$fd-object-marker-color: var(--sapContent_MarkerIconColor) !default;
-$fd-object-marker-text-color: var(--sapContent_LabelColor) !default;
-$fd-object-marker-color-hover: var(--sapContent_IconColor) !default;
-$fd-object-marker-padding-left: 0.5rem !default;
-$fd-object-marker-padding-right: 0.25rem !default;
-
 .#{$block} {
   @include fd-reset();
 
@@ -23,47 +17,17 @@ $fd-object-marker-padding-right: 0.25rem !default;
 
   &--link {
     @include fd-link();
-
-    text-decoration: none;
-
-    &,
-    .#{$block}__text {
-      color: $fd-object-marker-color;
-    }
-
-    @include fd-focus() {
-      .#{$block}__icon,
-      .#{$block}__text {
-        color: var(--fdLink_Text_Focus_Color);
-      }
-
-      .#{$block}__text {
-        text-decoration: underline;
-      }
-    }
-
-    @include fd-hover() {
-      .#{$block}__text {
-        color: $fd-object-marker-color-hover;
-        text-decoration: underline;
-      }
-    }
-
-    &:visited {
-      .#{$block}__text {
-        text-decoration: underline;
-      }
-    }
+    @include fd-link-underline("." + $block + "__text");
   }
 
   &__icon {
     @include fd-icon-element-base() {
       @include fd-flex-center();
-      @include fd-set-padding-right($fd-object-marker-padding-right);
+      @include fd-set-padding-right(0.25rem);
 
       font-size: 1rem;
       line-height: normal;
-      color: $fd-object-marker-color;
+      color: var(--sapContent_MarkerIconColor);
 
       @include fd-only-child() {
         padding-right: 0;
@@ -72,18 +36,19 @@ $fd-object-marker-padding-right: 0.25rem !default;
     }
   }
 
-  &__text {
-    @include fd-reset();
-    @include fd-ellipsis();
+  &:not(.#{$block}--link) {
+    .#{$block}__text {
+      @include fd-reset();
 
-    font-size: 1rem;
-    font-style: normal;
-    line-height: normal;
-    word-break: break-word;
-    color: $fd-object-marker-text-color;
+      font-size: 1rem;
+      font-style: normal;
+      line-height: normal;
+      word-break: break-word;
+      color: var(--sapContent_LabelColor);
+    }
   }
 
   & + & {
-    @include fd-set-margin-left($fd-object-marker-padding-left);
+    @include fd-set-margin-left(0.5rem);
   }
 }

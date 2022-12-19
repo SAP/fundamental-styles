@@ -129,11 +129,17 @@
   }
 }
 
-@mixin fd-link-underline() {
+@mixin fd-link-underline($content-selector: null) {
   text-decoration: var(--fdLink_Text_Decoration, none);
 
   &__content {
     text-decoration: var(--fdLink_Text_Content_Decoration, none);
+  }
+
+  @if ($content-selector != null) {
+    #{$content-selector} {
+      text-decoration: var(--fdLink_Text_Content_Decoration, none);
+    }
   }
 
   @include fd-hover() {
