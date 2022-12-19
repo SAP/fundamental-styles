@@ -83,6 +83,10 @@ $fd-quick-view-group-item-indent: 0.75rem;
     }
   }
 
+  .#{$fd-namespace}-form-group__header + .#{$fd-namespace}-form-item {
+    padding-top: 0;
+  }
+
   .#{$fd-namespace}-title {
     .#{$fd-namespace}-link {
       @include fd-ellipsis();

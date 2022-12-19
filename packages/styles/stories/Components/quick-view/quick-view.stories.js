@@ -12,6 +12,7 @@ import '../../../src/form-group.scss';
 import '../../../src/form-item.scss';
 import '../../../src/form-label.scss';
 import '../../../src/input.scss';
+import '../../../src/text.scss';
 export default {
     title: 'Components/Quick View',
     parameters: {
@@ -59,7 +60,7 @@ export const Popover = () => `<div class="fd-popover">
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Address</label>
-                        <span class="fd-input">
+                        <span class="fd-text">
                             781 Main Street <br>
                             Anytown, SD 57401, USA
                         </span>
@@ -72,7 +73,7 @@ export const Popover = () => `<div class="fd-popover">
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Name</label>
-                        <span class="fd-input">Michael Adams</span>
+                        <span class="fd-text">Michael Adams</span>
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Mobile</label>
@@ -117,9 +118,11 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
                             </span>
 
                             <div class="fd-quick-view__subheader-text">
-                                <h5 class="fd-title fd-title--h5">
-                                    <a class="fd-link" href="#"><span class="fd-link__content">Inventarisation</span></a>
-                                </h5>
+                                <h5 class="fd-title fd-title--h5">Company B</h5>
+    
+                                <div class="fd-quick-view__subtitle">
+                                    Michael Adams
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,15 +130,15 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
                     <div class="fd-form-group" role="group">
                         <div class="fd-form-item">
                             <label class="fd-form-label">Start Date:</label>
-                            <span class="fd-input">01/01/2015</span>
+                            <span class="fd-text">01/01/2015</span>
                         </div>
                         <div class="fd-form-item">
                             <label class="fd-form-label">End Date:</label>
-                            <span class="fd-input">31/12/2015</span>
+                            <span class="fd-text">31/12/2015</span>
                         </div>
                         <div class="fd-form-item">
                             <label class="fd-form-label">Occurrence:</label>
-                            <span class="fd-input">Weekly</span>
+                            <span class="fd-text">Weekly</span>
                         </div>
                     </div>
                 </div>
@@ -181,9 +184,11 @@ export const NoHeader = () => `<div class="fd-popover">
                         </span>
 
                         <div class="fd-quick-view__subheader-text">
-                            <h5 class="fd-title fd-title--h5">
-                                <a class="fd-link" href="#"><span class="fd-link__content">Inventarisation</span></a>
-                            </h5>
+                            <h5 class="fd-title fd-title--h5">Company B</h5>
+
+                            <div class="fd-quick-view__subtitle">
+                                Michael Adams
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,15 +196,15 @@ export const NoHeader = () => `<div class="fd-popover">
                 <div class="fd-form-group" role="group">
                     <div class="fd-form-item">
                         <label class="fd-form-label">Start Date:</label>
-                        <span class="fd-input">01/01/2015</span>
+                        <span class="fd-text">01/01/2015</span>
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">End Date:</label>
-                        <span class="fd-input">31/12/2015</span>
+                        <span class="fd-text">31/12/2015</span>
                     </div>
                     <div class="fd-form-item">
                         <label class="fd-form-label">Occurrence:</label>
-                        <span class="fd-input">Weekly</span>
+                        <span class="fd-text">Weekly</span>
                     </div>
                 </div>
             </div>
