@@ -17,6 +17,8 @@ $block: #{$fd-namespace}-vertical-nav;
   height: 100%;
 
   &--overflow {
+    @include fd-scrollbar();
+
     overflow-y: scroll;
   }
 
