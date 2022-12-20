@@ -1,3 +1,12 @@
+## [0.26.3-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.2...v0.26.3-rc.3) (2022-12-20)
+
+
+### Bug Fixes
+
+* **styles:** apply custom scrollbar to vertical nav ([#4123](https://github.com/SAP/fundamental-styles/issues/4123)) ([4adbee1](https://github.com/SAP/fundamental-styles/commit/4adbee1819defb3fb3f65c946d4c6ba15013bfd8))
+
+
+
 ## [0.26.3-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.1...v0.26.3-rc.2) (2022-12-20)
 
 
