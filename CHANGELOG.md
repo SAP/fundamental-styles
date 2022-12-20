@@ -1,3 +1,12 @@
+## [0.26.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.0...v0.26.3-rc.1) (2022-12-20)
+
+
+### Bug Fixes
+
+* **styles,docs:** quick view styles & examples ([#4121](https://github.com/SAP/fundamental-styles/issues/4121)) ([4278a46](https://github.com/SAP/fundamental-styles/commit/4278a463c16356fd4a611cd9949c07518faebc9c))
+
+
+
 ## [0.26.3-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.2...v0.26.3-rc.0) (2022-12-15)
 
 
