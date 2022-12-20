@@ -1,3 +1,12 @@
+## [0.26.3-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.3...v0.26.3-rc.4) (2022-12-20)
+
+
+### Bug Fixes
+
+* **styles:** textarea focus & scrollbar styles ([#4119](https://github.com/SAP/fundamental-styles/issues/4119)) ([8334012](https://github.com/SAP/fundamental-styles/commit/8334012c114eedd2dd63389aa270dbd73a5a5f6e))
+
+
+
 ## [0.26.3-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.2...v0.26.3-rc.3) (2022-12-20)
 
 
