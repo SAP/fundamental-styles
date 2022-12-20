@@ -1,3 +1,12 @@
+## [0.26.3-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.1...v0.26.3-rc.2) (2022-12-20)
+
+
+### Bug Fixes
+
+* **styles,docs:** link styles & breadcrumb overflow item ([#4120](https://github.com/SAP/fundamental-styles/issues/4120)) ([f7bc3ba](https://github.com/SAP/fundamental-styles/commit/f7bc3ba4a67b5b74610c1781fd1137c1fe468f8d))
+
+
+
 ## [0.26.3-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.0...v0.26.3-rc.1) (2022-12-20)
 
 
