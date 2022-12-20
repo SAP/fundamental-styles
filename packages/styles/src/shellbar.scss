@@ -230,6 +230,14 @@ $block: #{$fd-namespace}-shellbar;
         margin: 0;
       }
     }
+
+    &--user-menu {
+      @include fd-focus() {
+        outline-offset: -0.13rem;
+      }
+
+      border-radius: 50%;
+    }
   }
 
   &--s {
