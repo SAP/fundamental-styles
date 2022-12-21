@@ -1,3 +1,12 @@
+## [0.26.3-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.4...v0.26.3-rc.5) (2022-12-21)
+
+
+### Bug Fixes
+
+* **styles:** object marker link & refactoring ([#4124](https://github.com/SAP/fundamental-styles/issues/4124)) ([564067d](https://github.com/SAP/fundamental-styles/commit/564067d464d6b3817ffe954053cb01f63070048d))
+
+
+
 ## [0.26.3-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.3...v0.26.3-rc.4) (2022-12-20)
 
 
