@@ -67,7 +67,7 @@
     "@nrwl/react": "15.0.0",
     "@nrwl/web": "15.0.0",
     "@sap-theming/theming-base-content": "11.1.47",
-    "@storybook/addon-a11y": "6.5.13",
+    "@storybook/addon-a11y": "6.5.15",
     "@storybook/addon-actions": "6.5.13",
     "@storybook/addon-controls": "6.5.13",
     "@storybook/addon-cssresources": "6.2.9",
