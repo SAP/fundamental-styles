@@ -378,7 +378,7 @@ InvertedIndication.parameters = {
 };
 
 export const TruncateExample = () => `<div class="fddocs-container">
-    <span class="fd-object-status fd-object-status--negative" style="max-width: 15rem;">
+    <span class="fd-object-status fd-object-status--negative fd-object-status--truncate" style="max-width: 15rem;">
         <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
         <span class="fd-object-status__text">Default behaviour of Object Status with very long text. The text goes on multiple lines.</span>
     </span>

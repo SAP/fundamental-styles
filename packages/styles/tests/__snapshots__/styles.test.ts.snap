@@ -20674,7 +20674,7 @@ exports[`Check stories > Components/Object Status > Story Text > Should match sn
 
 exports[`Check stories > Components/Object Status > Story TruncateExample > Should match snapshot 1`] = `
 "<div class=\\"fddocs-container\\">
-    <span class=\\"fd-object-status fd-object-status--negative\\" style=\\"max-width: 15rem;\\">
+    <span class=\\"fd-object-status fd-object-status--negative fd-object-status--truncate\\" style=\\"max-width: 15rem;\\">
         <i class=\\"fd-object-status__icon sap-icon--message-error\\" role=\\"presentation\\"></i>
         <span class=\\"fd-object-status__text\\">Default behaviour of Object Status with very long text. The text goes on multiple lines.</span>
     </span>
@@ -27949,13 +27949,13 @@ exports[`Check stories > Components/Table > Story GroupRowsInTable > Should matc
             </tr>
         </thead>
         <tbody class=\\"fd-table__body\\">
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell--group fd-table__cell--expand\\" colspan=\\"4\\" data-nesting-level=\\"1\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell--group fd-table__cell--expand fd-table__cell--focusable\\" colspan=\\"4\\" data-nesting-level=\\"1\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand\\"></span><span class=\\"fd-table__text--no-wrap\\">Group row (collapsed), level 1</span>
                 </td>
             </tr>
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell--group fd-table__cell--expand\\" colspan=\\"4\\" data-nesting-level=\\"1\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell--group fd-table__cell--expand fd-table__cell--focusable\\" colspan=\\"4\\" data-nesting-level=\\"1\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand--open\\"></span><span class=\\"fd-table__text--no-wrap\\">Group row (expanded), level 1</span>
                 </td>
             </tr>
@@ -27965,8 +27965,8 @@ exports[`Check stories > Components/Table > Story GroupRowsInTable > Should matc
                 <td class=\\"fd-table__cell\\">Last Name</td>
                 <td class=\\"fd-table__cell\\">01/26/17</td>
             </tr>
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell--group fd-table__cell--expand\\" colspan=\\"4\\" data-nesting-level=\\"2\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell--group fd-table__cell--expand fd-table__cell--focusable\\" colspan=\\"4\\" data-nesting-level=\\"2\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand--open\\"></span><span class=\\"fd-table__text--no-wrap\\">Group row (expanded), level 2</span>
                 </td>
             </tr>
@@ -28900,16 +28900,16 @@ exports[`Check stories > Components/Table > Story TreeRowsTable > Should match s
                 <td class=\\"fd-table__cell\\">Last Name</td>
                 <td class=\\"fd-table__cell\\">01/26/17</td>
             </tr>
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand\\" data-nesting-level=\\"1\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"1\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 1, collapsed</span>
                 </td>
                 <td class=\\"fd-table__cell\\">First Name</td>
                 <td class=\\"fd-table__cell\\">Last Name</td>
                 <td class=\\"fd-table__cell\\">01/26/17</td>
             </tr>
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand\\" data-nesting-level=\\"1\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"1\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand--open\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 1, expanded</span>
                 </td>
                 <td class=\\"fd-table__cell\\">First Name</td>
@@ -28924,16 +28924,16 @@ exports[`Check stories > Components/Table > Story TreeRowsTable > Should match s
                 <td class=\\"fd-table__cell\\">Last Name</td>
                 <td class=\\"fd-table__cell\\">01/26/17</td>
             </tr>
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand\\" data-nesting-level=\\"2\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"2\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 2, collapsed</span>
                 </td>
                 <td class=\\"fd-table__cell\\">First Name</td>
                 <td class=\\"fd-table__cell\\">Last Name</td>
                 <td class=\\"fd-table__cell\\">01/26/17</td>
             </tr>
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand\\" data-nesting-level=\\"2\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"2\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand--open\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 2, expanded</span>
                 </td>
                 <td class=\\"fd-table__cell\\">First Name</td>
@@ -28948,8 +28948,8 @@ exports[`Check stories > Components/Table > Story TreeRowsTable > Should match s
                 <td class=\\"fd-table__cell\\">Last Name</td>
                 <td class=\\"fd-table__cell\\">01/26/17</td>
             </tr>
-            <tr class=\\"fd-table__row\\">
-                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand\\" data-nesting-level=\\"3\\">
+            <tr class=\\"fd-table__row fd-table__row--hoverable fd-table__row--activable\\">
+                <td class=\\"fd-table__cell fd-table__cell fd-table__cell--expand fd-table__cell--focusable\\" data-nesting-level=\\"3\\" tabindex=\\"0\\">
                     <span class=\\"fd-table__expand fd-table__expand\\"></span><span class=\\"fd-table__text--no-wrap\\">Tree row, level 3, collapsed</span>
                 </td>
                 <td class=\\"fd-table__cell\\">First Name</td>
@@ -41215,19 +41215,35 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
 "
     <section class=\\"fd-dynamic-page fd-dynamic-page--md\\" aria-label=\\"Dynamic Page Tablet Example\\">
         <header class=\\"fd-dynamic-page__header\\">
-            <div class=\\"fd-dynamic-page__title-area \\" tabindex=\\"0\\">
-            <div class=\\"fd-dynamic-page__main-container\\">
+            <div class=\\"fd-dynamic-page__title-area\\" tabindex=\\"0\\">
+                <div class=\\"fd-dynamic-page__main-container\\">
                     <div class=\\"fd-dynamic-page__breadcrumb-title-container\\">
-                            <div class=\\"fd-dynamic-page__breadcrumb-container\\">
+                        <div class=\\"fd-dynamic-page__breadcrumb-container\\">
                             <nav aria-label=\\"Breadcrumbs\\">
                                 <ul class=\\"fd-dynamic-page__breadcrumb fd-breadcrumb\\">
-                                    <li class=\\"fd-breadcrumb__item\\"><a class=\\"fd-link\\" tabindex=\\"0\\" href=\\"#\\"><span class=\\"fd-link__content\\">Men</span></a></li>
-                                    <li class=\\"fd-breadcrumb__item\\"><a class=\\"fd-link\\" tabindex=\\"0\\" href=\\"#\\"><span class=\\"fd-link__content\\">Shoes</span></a></li>
-                                    <li class=\\"fd-breadcrumb__item\\"><a aria-current=\\"page\\" class=\\"fd-link\\" tabindex=\\"0\\" href=\\"#\\"><span class=\\"fd-link__content\\">Running Shoes</span></a></li>
+                                    <li class=\\"fd-breadcrumb__item\\">
+                                        <a class=\\"fd-link\\" tabindex=\\"0\\" href=\\"#\\">
+                                            <span class=\\"fd-link__content\\">Men</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-breadcrumb__item\\">
+                                        <a class=\\"fd-link\\" tabindex=\\"0\\" href=\\"#\\">
+                                            <span class=\\"fd-link__content\\">Shoes</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-breadcrumb__item\\">
+                                        <a aria-current=\\"page\\" class=\\"fd-link\\" tabindex=\\"0\\" href=\\"#\\">
+                                            <span class=\\"fd-link__content\\">Running Shoes</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                             <div class=\\"fd-dynamic-page__toolbar-container\\">
-                                <div role=\\"toolbar\\" aria-label=\\"Product actions\\" class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent\\">
+                                <div
+                                    role=\\"toolbar\\"
+                                    aria-label=\\"Product actions\\"
+                                    class=\\"fd-dynamic-page__toolbar fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent\\"
+                                >
                                     <button class=\\"fd-button fd-button--transparent\\" aria-label=\\"Resize\\">
                                         <i class=\\"sap-icon--resize\\"></i>
                                     </button>
@@ -41242,11 +41258,20 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
                         </div>
                         <div class=\\"fd-dynamic-page__title-container\\">
                             <h1 class=\\"fd-title fd-dynamic-page__title\\">
-                                <a href=\\"#\\" class=\\"fd-link\\" title=\\"Balenciaga Triple S Trainers\\"><span class=\\"fd-link__content\\">Balenciaga Triple S Trainers </span></a>
+                                <a href=\\"#\\" class=\\"fd-link\\" title=\\"Balenciaga Triple S Trainers\\">
+                                    <span class=\\"fd-link__content\\">Balenciaga Triple S Trainers </span>
+                                </a>
                             </h1>
-                            <div class=\\"fd-dynamic-page__title-content\\" title=\\"Some RANDOM things\\"> Some RANDOM things </div>
+                            <div class=\\"fd-dynamic-page__title-content\\" title=\\"Some RANDOM things\\">
+                                {\\" \\"}
+                                Some RANDOM things
+                            </div>
                             <div class=\\"fd-dynamic-page__toolbar-container\\">
-                                <div role=\\"toolbar\\" aria-label=\\"Navigation actions\\" class=\\"fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent\\">
+                                <div
+                                    role=\\"toolbar\\"
+                                    aria-label=\\"Navigation actions\\"
+                                    class=\\"fd-dynamic-page__toolbar fd-dynamic-page__toolbar--actions fd-toolbar fd-toolbar--cozy fd-toolbar--clear fd-toolbar--transparent\\"
+                                >
                                     <button class=\\"fd-button fd-button--positive\\">Accept</button>
                                     <button class=\\"fd-button fd-button--reject\\">Reject</button>
                                 </div>
@@ -41254,28 +41279,32 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
                         </div>
                     </div>
                 </div>
-                <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect </div>
-                </div>
+                <div class=\\"fd-dynamic-page__subtitle\\"> Oversized multimaterial sneakers with quilted effect</div>
             </div>
             <div class=\\"fd-dynamic-page__collapsible-header-container\\">
-                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\"  aria-hidden=\\"false\\" id=\\"fddplhvc5\\" aria-label=\\"Tablet header\\">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis,
-                    delectus necessitatibus incidunt numquam asperiores tenetur iure.
-                    Cum consequuntur impedit repellendus esse, facere autem optio consequatur nobis?
+                <div class=\\"fd-dynamic-page__collapsible-header\\" role=\\"region\\" aria-hidden=\\"false\\" id=\\"fddplhvc5\\" aria-label=\\"Tablet header\\">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam possimus corrupti architecto perspiciatis, delectus
+                    necessitatibus incidunt numquam asperiores tenetur iure. Cum consequuntur impedit repellendus esse, facere autem optio
+                    consequatur nobis?
                 </div>
                 <div class=\\"fd-dynamic-page__collapsible-header-visibility-container fd-dynamic-page__collapsible-header-visibility-container--no-shadow\\">
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--left-gradient\\"></div>
-                    <div role=\\"toolbar\\" aria-label=\\"Header actions\\" class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\">
-                        <button class=\\"fd-dynamic-page__collapse-button fd-button fd-button--compact\\"
-                                aria-label=\\"See More\\"
-                                aria-expanded=\\"true\\"
-                                aria-haspopup=\\"true\\"
-                                aria-controls=\\"fddplhvc5\\">
-                                <i class=\\"sap-icon--slim-arrow-up\\"></i>
+                    <div
+                        role=\\"toolbar\\"
+                        aria-label=\\"Header actions\\"
+                        class=\\"fd-dynamic-page__collapsible-header-visibility-container--button-group\\"
+                    >
+                        <button
+                            class=\\"fd-dynamic-page__collapse-button fd-button fd-button--compact\\"
+                            aria-label=\\"See More\\"
+                            aria-expanded=\\"true\\"
+                            aria-haspopup=\\"true\\"
+                            aria-controls=\\"fddplhvc5\\"
+                        >
+                            <i class=\\"sap-icon--slim-arrow-up\\"></i>
                         </button>
-                        <button class=\\"fd-dynamic-page__pin-button fd-button fd-button--compact\\"
-                                aria-label=\\"Pin this\\">
-                                <i class=\\"sap-icon--pushpin-off\\"></i>
+                        <button class=\\"fd-dynamic-page__pin-button fd-button fd-button--compact\\" aria-label=\\"Pin this\\">
+                            <i class=\\"sap-icon--pushpin-off\\"></i>
                         </button>
                     </div>
                     <div class=\\"fd-dynamic-page__collapsible-header-visibility-container--right-gradient\\"></div>
@@ -41283,18 +41312,14 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
             </div>
             <div class=\\"fd-dynamic-page__tabs--overflow\\">
                 <ul class=\\"fd-tabs fd-dynamic-page__tabs fd-dynamic-page__tabs--add-shadow\\" role=\\"tablist\\">
-                    <li role=\\"tab\\" class=\\"fd-tabs__item\\" aria-controls=\\"fuCwV551\\" >
+                    <li role=\\"tab\\" class=\\"fd-tabs__item\\" aria-controls=\\"fuCwV551\\">
                         <a class=\\"fd-tabs__link\\" href=\\"#fuCwV551\\">
-                            <span class=\\"fd-tabs__tag\\">
-                                Link
-                            </span>
+                            <span class=\\"fd-tabs__tag\\">Link</span>
                         </a>
                     </li>
                     <li role=\\"tab\\" class=\\"fd-tabs__item\\" aria-selected=\\"true\\" aria-controls=\\"AiWfz166\\">
                         <a class=\\"fd-tabs__link\\" href=\\"#AiWfz166\\">
-                            <span class=\\"fd-tabs__tag\\">
-                                Selected
-                            </span>
+                            <span class=\\"fd-tabs__tag\\">Selected</span>
                         </a>
                     </li>
                 </ul>
@@ -41302,45 +41327,47 @@ exports[`Check stories > Layouts/Dynamic Page > Story Tablet > Should match snap
         </header>
         <div class=\\"fd-dynamic-page__content\\">
             <div class=\\"fd-tabs__panel\\" aria-expanded=\\"false\\" id=\\"fuCwV551\\" role=\\"tabpanel\\">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam
-                eum tempore aliquid dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid
-                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
+                dolorem cumque ullam perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Rerum illo voluptatem, unde voluptate aliquam eum tempore aliquid dolorem cumque ullam
+                perspiciatis omnis et asperiores dolores, consequatur, suscipit sint animi amet?
             </div>
-            <div class=\\"fd-tabs__panel\\" aria-expanded=\\"true\\" id=\\"AiWfz166\\" role=\\"tabpanel\\" >
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
-                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti
-                in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+            <div class=\\"fd-tabs__panel\\" aria-expanded=\\"true\\" id=\\"AiWfz166\\" role=\\"tabpanel\\">
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in
+                atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in atque quis, sed cum asperiores minus
+                rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                assumenda, quidem natus optio repudiandae deleniti in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea
+                reprehenderit. Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio
+                repudiandae deleniti in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in atque quis,
+                sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in atque quis, sed cum asperiores minus rerum incidunt
+                unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem
+                natus optio repudiandae deleniti in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit.
+                Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in
+                atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Eius assumenda, quidem natus optio repudiandae deleniti in atque quis, sed cum asperiores minus
+                rerum incidunt unde quod fuga amet ea reprehenderit. Dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                assumenda, quidem natus optio repudiandae deleniti in atque quis, sed cum asperiores minus rerum incidunt unde quod fuga amet ea
+                reprehenderit.
             </div>
         </div>
         <footer class=\\"fd-bar fd-bar--cozy fd-bar--floating-footer\\" style=\\"position:relative\\">
             <div role=\\"toolbar\\" aria-label=\\"Finalizing actions\\" class=\\"fd-bar__right\\">
                 <div class=\\"fd-bar__element\\">
-                    <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized\\">Save</button>
+                    <button aria-label=\\"button\\" class=\\"fd-button fd-button--emphasized\\">
+                        Save
+                    </button>
                 </div>
                 <div class=\\"fd-bar__element\\">
-                    <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">Cancel</button>
+                    <button aria-label=\\"button\\" class=\\"fd-button fd-button--transparent\\">
+                        Cancel
+                    </button>
                 </div>
             </div>
         </footer>
-    </section>
+    </section>;
     <br /><br />
 "
 `;
