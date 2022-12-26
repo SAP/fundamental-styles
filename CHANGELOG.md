@@ -1,3 +1,12 @@
+## [0.26.3-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.5...v0.26.3-rc.6) (2022-12-26)
+
+
+### Bug Fixes
+
+* **docs:** broken examples, defect hunting 103 ([#4122](https://github.com/SAP/fundamental-styles/issues/4122)) ([1a8b829](https://github.com/SAP/fundamental-styles/commit/1a8b8299830b793a8ed6e92c6c74b75dccd4e97e))
+
+
+
 ## [0.26.3-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.4...v0.26.3-rc.5) (2022-12-21)
 
 
