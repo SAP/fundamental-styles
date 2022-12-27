@@ -1,3 +1,12 @@
+## [0.26.4-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.26.4-rc.0...v0.26.4-rc.1) (2022-12-27)
+
+
+### Bug Fixes
+
+* **ci:** fixed package.json paths in pubish script ([#4138](https://github.com/SAP/fundamental-styles/issues/4138)) ([15afd1c](https://github.com/SAP/fundamental-styles/commit/15afd1c19aeb22c8a77fd7b7337c57d4c5e60d5a))
+
+
+
 ## [0.26.4-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.3...v0.26.4-rc.0) (2022-12-27)
 
 
