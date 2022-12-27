@@ -40,9 +40,9 @@ if (isHotfix) {
 }
 
 const run = async () => {
-    for (const packagePath of packagePaths) {
+    for (const packageJsonPath of packagePaths) {
         await publish({
-            packagePath,
+            packageJsonPath,
             tag,
             token: npmToken,
             access: 'public',
