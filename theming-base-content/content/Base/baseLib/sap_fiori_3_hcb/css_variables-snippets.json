@@ -712,7 +712,7 @@
   "sapFontBlackFamily": {
     "prefix": "sapFontBlackFamily",
     "body": "var(--sapFontBlackFamily)",
-    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
+    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72Blackfull\",\"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
   },
   "sapFontHeaderFamily": {
     "prefix": "sapFontHeaderFamily",

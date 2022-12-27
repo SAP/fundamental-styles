@@ -647,7 +647,7 @@
   "sapFontBlackFamily": {
     "prefix": "sapFontBlackFamily",
     "body": "var(--sapFontBlackFamily)",
-    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
+    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72Blackfull\",\"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
   },
   "sapFontHeaderFamily": {
     "prefix": "sapFontHeaderFamily",
@@ -3362,7 +3362,7 @@
   "sapChart_OrderedColor_11": {
     "prefix": "sapChart_OrderedColor_11",
     "body": "var(--sapChart_OrderedColor_11)",
-    "description": "Chart Ordered Color 11 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #2f6497 #Base, #Chart, #Color"
+    "description": "Chart Ordered Color 11 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #3571aa #Base, #Chart, #Color"
   },
   "sapChart_Bad": {
     "prefix": "sapChart_Bad",
@@ -3437,7 +3437,7 @@
   "sapChart_Sequence_11": {
     "prefix": "sapChart_Sequence_11",
     "body": "var(--sapChart_Sequence_11)",
-    "description": "Chart Color Sequence 11 (This color is the base chart color of the sequence 11.) Value: #2f6497 #Base, #Chart, #Color"
+    "description": "Chart Color Sequence 11 (This color is the base chart color of the sequence 11.) Value: #3571aa #Base, #Chart, #Color"
   },
   "sapChart_Sequence_Neutral": {
     "prefix": "sapChart_Sequence_Neutral",

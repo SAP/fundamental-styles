@@ -147,7 +147,7 @@
   "sapCriticalTextColor": {
     "prefix": "sapCriticalTextColor",
     "body": "var(--sapCriticalTextColor)",
-    "description": "Critical Text Color (The color for text showing critical or warning state.) Value: #df6e0c #Base, #SemanticColor, #Color, #Font"
+    "description": "Critical Text Color (The color for text showing critical or warning state.) Value: #b3590a #Base, #SemanticColor, #Color, #Font"
   },
   "sapPositiveTextColor": {
     "prefix": "sapPositiveTextColor",
@@ -647,7 +647,7 @@
   "sapFontBlackFamily": {
     "prefix": "sapFontBlackFamily",
     "body": "var(--sapFontBlackFamily)",
-    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
+    "description": "Black Font Family (The preferred black font family of headers.) Value: \"72Black\", \"72Blackfull\",\"72\", \"72full\", Arial, Helvetica, sans-serif #Base, #Content, #Font"
   },
   "sapFontHeaderFamily": {
     "prefix": "sapFontHeaderFamily",
@@ -3312,17 +3312,17 @@
   "sapChart_OrderedColor_1": {
     "prefix": "sapChart_OrderedColor_1",
     "body": "var(--sapChart_OrderedColor_1)",
-    "description": "Chart Ordered Color 1 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #5899da #Base, #Chart, #Color"
+    "description": "Chart Ordered Color 1 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #438cd5 #Base, #Chart, #Color"
   },
   "sapChart_OrderedColor_2": {
     "prefix": "sapChart_OrderedColor_2",
     "body": "var(--sapChart_OrderedColor_2)",
-    "description": "Chart Ordered Color 2 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #e8743b #Base, #Chart, #Color"
+    "description": "Chart Ordered Color 2 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #e66729 #Base, #Chart, #Color"
   },
   "sapChart_OrderedColor_3": {
     "prefix": "sapChart_OrderedColor_3",
     "body": "var(--sapChart_OrderedColor_3)",
-    "description": "Chart Ordered Color 3 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #19a979 #Base, #Chart, #Color"
+    "description": "Chart Ordered Color 3 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #16976c #Base, #Chart, #Color"
   },
   "sapChart_OrderedColor_4": {
     "prefix": "sapChart_OrderedColor_4",
@@ -3337,7 +3337,7 @@
   "sapChart_OrderedColor_6": {
     "prefix": "sapChart_OrderedColor_6",
     "body": "var(--sapChart_OrderedColor_6)",
-    "description": "Chart Ordered Color 6 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #13a4b4 #Base, #Chart, #Color"
+    "description": "Chart Ordered Color 6 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #1193a2 #Base, #Chart, #Color"
   },
   "sapChart_OrderedColor_7": {
     "prefix": "sapChart_OrderedColor_7",
@@ -3357,7 +3357,7 @@
   "sapChart_OrderedColor_10": {
     "prefix": "sapChart_OrderedColor_10",
     "body": "var(--sapChart_OrderedColor_10)",
-    "description": "Chart Ordered Color 10 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #ee6868 #Base, #Chart, #Color"
+    "description": "Chart Ordered Color 10 (This color is used as an ordered color of a sequence of 11 chart colors. It has a defined contrast to its predecessor and successor.) Value: #ed5f5f #Base, #Chart, #Color"
   },
   "sapChart_OrderedColor_11": {
     "prefix": "sapChart_OrderedColor_11",
@@ -3372,12 +3372,12 @@
   "sapChart_Critical": {
     "prefix": "sapChart_Critical",
     "body": "var(--sapChart_Critical)",
-    "description": "Chart Color 'Critical' (This color is to visualize a 'Critical' value.) Value: #de890d #Base, #Chart, #Color"
+    "description": "Chart Color 'Critical' (This color is to visualize a 'Critical' value.) Value: #cb7d0c #Base, #Chart, #Color"
   },
   "sapChart_Good": {
     "prefix": "sapChart_Good",
     "body": "var(--sapChart_Good)",
-    "description": "Chart Color 'Good' (This color is to visualize a 'Good' value.) Value: #3fa45b #Base, #Chart, #Color"
+    "description": "Chart Color 'Good' (This color is to visualize a 'Good' value.) Value: #3c9d57 #Base, #Chart, #Color"
   },
   "sapChart_Neutral": {
     "prefix": "sapChart_Neutral",
@@ -3387,17 +3387,17 @@
   "sapChart_Sequence_1": {
     "prefix": "sapChart_Sequence_1",
     "body": "var(--sapChart_Sequence_1)",
-    "description": "Chart Color Sequence 1 (This color is the base chart color of the sequence 1.) Value: #5899da #Base, #Chart, #Color"
+    "description": "Chart Color Sequence 1 (This color is the base chart color of the sequence 1.) Value: #438cd5 #Base, #Chart, #Color"
   },
   "sapChart_Sequence_2": {
     "prefix": "sapChart_Sequence_2",
     "body": "var(--sapChart_Sequence_2)",
-    "description": "Chart Color Sequence 2 (This color is the base chart color of the sequence 2.) Value: #e8743b #Base, #Chart, #Color"
+    "description": "Chart Color Sequence 2 (This color is the base chart color of the sequence 2.) Value: #e66729 #Base, #Chart, #Color"
   },
   "sapChart_Sequence_3": {
     "prefix": "sapChart_Sequence_3",
     "body": "var(--sapChart_Sequence_3)",
-    "description": "Chart Color Sequence 3 (This color is the base chart color of the sequence 3.) Value: #19a979 #Base, #Chart, #Color"
+    "description": "Chart Color Sequence 3 (This color is the base chart color of the sequence 3.) Value: #16976c #Base, #Chart, #Color"
   },
   "sapChart_Sequence_4": {
     "prefix": "sapChart_Sequence_4",
@@ -3412,7 +3412,7 @@
   "sapChart_Sequence_6": {
     "prefix": "sapChart_Sequence_6",
     "body": "var(--sapChart_Sequence_6)",
-    "description": "Chart Color Sequence 6 (This color is the base chart color of the sequence 6.) Value: #13a4b4 #Base, #Chart, #Color"
+    "description": "Chart Color Sequence 6 (This color is the base chart color of the sequence 6.) Value: #1193a2 #Base, #Chart, #Color"
   },
   "sapChart_Sequence_7": {
     "prefix": "sapChart_Sequence_7",
@@ -3432,7 +3432,7 @@
   "sapChart_Sequence_10": {
     "prefix": "sapChart_Sequence_10",
     "body": "var(--sapChart_Sequence_10)",
-    "description": "Chart Color Sequence 10 (This color is the base chart color of the sequence 10.) Value: #ee6868 #Base, #Chart, #Color"
+    "description": "Chart Color Sequence 10 (This color is the base chart color of the sequence 10.) Value: #ed5f5f #Base, #Chart, #Color"
   },
   "sapChart_Sequence_11": {
     "prefix": "sapChart_Sequence_11",
