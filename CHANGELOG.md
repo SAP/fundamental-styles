@@ -1,3 +1,12 @@
+## [0.26.3-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.7...v0.26.3-rc.8) (2022-12-27)
+
+
+### Bug Fixes
+
+* **ci:** fixed access type on releases ([#4137](https://github.com/SAP/fundamental-styles/issues/4137)) ([32e4480](https://github.com/SAP/fundamental-styles/commit/32e4480265df8e0344226769e839ed6106efee63))
+
+
+
 ## [0.26.3-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.6...v0.26.3-rc.7) (2022-12-27)
 
 
