@@ -1,3 +1,12 @@
+## [0.26.4-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.3...v0.26.4-rc.0) (2022-12-27)
+
+
+### Features
+
+* **styles:** popover wrapper with overflow visible ([#4136](https://github.com/SAP/fundamental-styles/issues/4136)) ([ee70635](https://github.com/SAP/fundamental-styles/commit/ee70635da1cc2600760e0d9225d16a0ae3213ba9))
+
+
+
 ## [0.26.3](https://github.com/SAP/fundamental-styles/compare/v0.26.3-rc.8...v0.26.3) (2022-12-27)
 
 
