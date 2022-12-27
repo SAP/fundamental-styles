@@ -6,6 +6,30 @@ const isPrerelease = core.getInput('isPrerelease') !== 'false';
 const isHotfix = core.getInput('isHotfix') !== 'false';
 const npmToken = core.getInput('token');
 
+async function publish({ currentTryNumber = 1, packageJsonPath, tag, token, access, retryCount }) {
+    try {
+        const result = await npmPublish({
+            package: packageJsonPath,
+            token,
+            tag,
+            access
+        });
+        core.info(`Published ${result.package}@${result.version}`);
+    } catch (e) {
+        if (currentTryNumber < retryCount) {
+            await publish({
+                currentTryNumber: currentTryNumber + 1,
+                packageJsonPath,
+                tag,
+                token,
+                access
+            });
+        } else {
+            throw e;
+        }
+    }
+}
+
 let tag = 'latest';
 
 if (isPrerelease) {
@@ -17,12 +41,13 @@ if (isHotfix) {
 
 const run = async () => {
     for (const packagePath of packagePaths) {
-        const result = await npmPublish({
-            package: packagePath,
+        await publish({
+            packagePath,
+            tag,
             token: npmToken,
-            tag
+            access: 'public',
+            retryCount: 3
         });
-        core.info(`Published ${result.package}@${result.version}`);
     }
 };
 
