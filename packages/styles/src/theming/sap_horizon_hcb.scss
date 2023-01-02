@@ -168,7 +168,8 @@
 
   /* Input Group */
   --fdInputGroup_Text_Shadow: none;
-  --fdInputGroup_ControlButton_SideBorder: solid var(--sapButton_BorderWidth) var(--sapList_SelectionBorderColor);
+  --fdInputGroup_ControlButton_SideBorder: var(--sapField_BorderWidth) solid transparent;
+  --fdInputGroup_ControlButton_SideBorder_Active: solid var(--sapField_BorderWidth) var(--sapList_SelectionBorderColor);
 
   /* Input */
   --fdInput_Text_Shadow: none;

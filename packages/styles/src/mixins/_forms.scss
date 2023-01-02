@@ -253,6 +253,36 @@ $fd-input-field-height--compact: 1.625rem;
     )
   );
 
+  .#{$block}__addon {
+    &:first-child {
+      .#{$block}__button {
+        @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder));
+
+        @include fd-hover() {
+          @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
+        }
+
+        @include fd-active() {
+          @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      .#{$block}__button {
+        @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder));
+
+        @include fd-hover() {
+          @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
+        }
+
+        @include fd-active() {
+          @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
+        }
+      }
+    }
+  }
+
   .#{$block}__button {
     @include fd-ellipsis();
 
@@ -263,23 +293,17 @@ $fd-input-field-height--compact: 1.625rem;
     background: var(--fdInput_Group_Button_Background);
     color: var(--fdInput_Group_Button_Text_Color);
 
-    @include fd-set-border-left(var(--sapButton_BorderWidth) solid transparent);
-
     &::before {
       display: none !important;
     }
 
     @include fd-hover() {
-      @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder));
-
       background: var(--fdInput_Group_Button_Hover_Background);
       color: var(--fdInput_Group_Button_Hover_Text_Color);
       box-shadow: var(--fdInput_Group_Button_Box_Shadow);
     }
 
     @include fd-active() {
-      @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder));
-
       background: var(--fdInput_Group_Button_Active_Background);
       color: var(--fdInput_Group_Button_Active_Text_Color);
       box-shadow: var(--fdInput_Group_Button_Box_Shadow);
