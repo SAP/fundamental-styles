@@ -1,3 +1,12 @@
+## [0.26.5-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.1...v0.26.5-rc.2) (2023-01-02)
+
+
+### Bug Fixes
+
+* **styles:** input readonly state ([#4139](https://github.com/SAP/fundamental-styles/issues/4139)) ([8c26c8e](https://github.com/SAP/fundamental-styles/commit/8c26c8eab2813b9ab15283629e92173ee800389c))
+
+
+
 ## [0.26.5-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.0...v0.26.5-rc.1) (2023-01-02)
 
 
