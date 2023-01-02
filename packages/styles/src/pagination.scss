@@ -1,5 +1,6 @@
 @import "./new-settings";
 @import "./mixins";
+@import './mixins/button/button-helper';
 
 /*!
 .fd-pagination
@@ -110,6 +111,11 @@ $block: #{$fd-namespace}-pagination;
   }
 
   .#{$block}__link {
+    @include fd-focus() {
+      /** Better would be to reuse button focus styles & fd-button--toggled instead of is-active class but it leads to breaking changes. */
+      @include fd-button-focus(var(--fdButton_Outline_Offset));
+    }
+
     /** :active links still should be displayed */
     &.is-active {
       display: none;
