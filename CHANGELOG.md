@@ -1,3 +1,12 @@
+## [0.26.5-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.0...v0.26.5-rc.1) (2023-01-02)
+
+
+### Bug Fixes
+
+* **styles:** input group btn ([#4140](https://github.com/SAP/fundamental-styles/issues/4140)) ([dfd3c2b](https://github.com/SAP/fundamental-styles/commit/dfd3c2b1bca52a01d0cb3aacc8be7227f760596b))
+
+
+
 ## [0.26.5-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.4...v0.26.5-rc.0) (2023-01-02)
 
 
