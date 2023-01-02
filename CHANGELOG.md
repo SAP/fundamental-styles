@@ -1,3 +1,12 @@
+## [0.26.5-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.4...v0.26.5-rc.0) (2023-01-02)
+
+
+### Bug Fixes
+
+* **styles:** pagination button focus styles ([#4141](https://github.com/SAP/fundamental-styles/issues/4141)) ([587b689](https://github.com/SAP/fundamental-styles/commit/587b689cc893ffcd93c46d5ea9d9ba20c578f3a4))
+
+
+
 ## [0.26.4](https://github.com/SAP/fundamental-styles/compare/v0.26.4-rc.1...v0.26.4) (2022-12-27)
 
 
