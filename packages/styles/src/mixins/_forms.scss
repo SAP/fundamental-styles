@@ -89,6 +89,13 @@ $fd-input-field-height--compact: 1.625rem;
   box-sizing: border-box;
 }
 
+@mixin fd-input-readonly() {
+  border-color: var(--sapField_ReadOnly_BorderColor);
+  border-radius: var(--fdInput_ReadOnly_Border_Radius);
+  background: var(--sapField_ReadOnly_BackgroundStyle);
+  background-color: var(--sapField_ReadOnly_Background);
+}
+
 @mixin fd-input-field-states($hasFocusWithin: false) {
   $fd-input-states: (
     'success': (
@@ -208,23 +215,20 @@ $fd-input-field-height--compact: 1.625rem;
   }
 
   @include fd-readonly() {
-    border-color: var(--sapField_ReadOnly_BorderColor);
-    border-radius: var(--fdInput_ReadOnly_Border_Radius);
-    background: var(--sapField_ReadOnly_BackgroundStyle);
-    background-color: var(--sapField_ReadOnly_Background);
-    pointer-events: none;
+    @include fd-input-readonly();
 
     &::placeholder {
       color: var(--fdInput_Non_Interactive_State_Placeholder_Color);
     }
 
     @include fd-hover() {
+      @include fd-input-readonly();
+
       box-shadow: none;
     }
 
     @include fd-focus() {
-      background: var(--sapField_Focus_Background);
-      border-radius: var(--sapField_BorderCornerRadius);
+      @include fd-input-readonly();
     }
   }
 }
