@@ -105,6 +105,8 @@ $block: #{$fd-namespace}-layout-panel;
   &__body {
     @include fd-reset();
 
+    display: block;
+    height: 100%;
     padding: $fd-layout-panel-padding;
 
     &--full-bleed,
