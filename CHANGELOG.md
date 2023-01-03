@@ -1,3 +1,12 @@
+## [0.26.5-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.2...v0.26.5-rc.3) (2023-01-03)
+
+
+### Bug Fixes
+
+* **styles:** layout panel scrollbar ([#4152](https://github.com/SAP/fundamental-styles/issues/4152)) ([33af513](https://github.com/SAP/fundamental-styles/commit/33af51360a3f99b7bcf891ab9b1d248acf783550))
+
+
+
 ## [0.26.5-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.1...v0.26.5-rc.2) (2023-01-02)
 
 
