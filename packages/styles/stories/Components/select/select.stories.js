@@ -296,8 +296,8 @@ export const SemanticStates = () => `<div style="height: 200px">
                         </li>
                     </ul>
                 </div>
-                <div id="successFormMessage" class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true">
-                    <span class="fd-form-message fd-form-message--static fd-form-message--success">Success message</span>
+                <div id="successFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true">
+                    <span class="fd-form-message fd-form-message--success">Success message</span>
                 </div>
             </div>
         </div>
@@ -319,7 +319,7 @@ export const SemanticStates = () => `<div style="height: 200px">
                                 toggleElAttrs('h07j9978H', ['aria-hidden']);
                                 toggleElAttrs('errorFormMessage', ['aria-hidden']);
                             "
-                            aria-expanded="true"
+                            aria-expanded="false"
                             aria-haspopup="listbox">
                             <span id="b4546C40Value" class="fd-select__text-content">Error</span>
                             <span class="fd-button fd-button--transparent fd-select__button">
@@ -360,8 +360,8 @@ export const SemanticStates = () => `<div style="height: 200px">
                         </li>
                     </ul>
                 </div>
-                <div id="errorFormMessage" class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-                    <span class="fd-form-message fd-form-message--static fd-form-message--error">Error message</span>
+                <div id="errorFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false">
+                    <span class="fd-form-message fd-form-message--error">Error message</span>
                 </div>
             </div>
         </div>
@@ -424,8 +424,8 @@ export const SemanticStates = () => `<div style="height: 200px">
                         </li>
                     </ul>
                 </div>
-                <div id="warningFormMessage" class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true">
-                    <span class="fd-form-message fd-form-message--static fd-form-message--warning">Warning message</span>
+                <div id="warningFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true">
+                    <span class="fd-form-message fd-form-message--warning">Warning message</span>
                 </div>
             </div>
         </div>
@@ -447,7 +447,7 @@ export const SemanticStates = () => `<div style="height: 200px">
                                 toggleElAttrs('hkhh998hhH', ['aria-hidden']);
                                 toggleElAttrs('informationFormMessage', ['aria-hidden']);
                             "
-                            aria-expanded="true"
+                            aria-expanded="false"
                             aria-haspopup="listbox">
                             <span id="h45336C4Value" class="fd-select__text-content">Information</span>
                                 <span class="fd-button fd-button--transparent fd-select__button">
@@ -488,8 +488,8 @@ export const SemanticStates = () => `<div style="height: 200px">
                         </li>
                     </ul>
                 </div>
-                <div id="informationFormMessage" class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="false">
-                    <span class="fd-form-message fd-form-message--static fd-form-message--information">Information message</span>
+                <div id="informationFormMessage" class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false">
+                    <span class="fd-form-message fd-form-message--information">Information message</span>
                 </div>
             </div>
         </div>
