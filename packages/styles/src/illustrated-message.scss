@@ -3,6 +3,9 @@
 $block: fd-illustrated-message;
 
 .#{$block} {
+  --illustrationW: 20rem;
+  --illustrationH: 15rem;
+
   @include fd-reset();
 
   @include fd-flex(column) {
@@ -19,8 +22,8 @@ $block: fd-illustrated-message;
   &__illustration {
     @include fd-reset();
 
-    height: 15rem;
-    width: 20rem;
+    width: var(--illustrationW);
+    height: var(--illustrationH);
   }
 
   &__figcaption {
@@ -80,12 +83,13 @@ $block: fd-illustrated-message;
   }
 
   &--dialog {
+    --illustrationW: 10rem;
+    --illustrationH: 10rem;
+
     margin-top: 0;
     max-width: 100%;
 
     .#{$block}__illustration {
-      height: 10rem;
-      width: 10rem;
       margin-top: 1rem;
       margin-bottom: 2rem;
     }
@@ -116,14 +120,15 @@ $block: fd-illustrated-message;
   }
 
   &--spot {
+    --illustrationW: 8rem;
+    --illustrationH: 8rem;
+
     margin-top: 0;
     max-width: 100%;
 
     .#{$block}__illustration {
       @include fd-reset-spacing();
 
-      height: 8rem;
-      width: 8rem;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
@@ -161,6 +166,46 @@ $block: fd-illustrated-message;
       .#{$block}__text {
         max-width: 18rem;
       }
+    }
+  }
+
+  &--dot {
+    --illustrationW: 2.813rem;
+    --illustrationH: 2.813rem;
+    --spacing: 0.25rem;
+    --actionsSpacing: 0.5rem 0;
+
+    padding: var(--spacing);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+
+    .#{$block}__illustration {
+      @include fd-set-margin-right(var(--spacing));
+
+      & + .#{$block}__figcaption {
+        width: calc(100% - var(--illustrationW) - var(--spacing));
+      }
+    }
+
+    .#{$block}__title {
+      font-family: var(--sapFontHeaderFamily);
+      font-size: var(--sapFontHeader5Size);
+      margin-bottom: var(--spacing);
+      max-height: 2.5rem;
+      color: var(--sapGroup_TitleTextColor);
+      margin-top: 0;
+    }
+
+    .#{$block}__text {
+      font-size: var(--sapFontSize);
+      color: var(--sap_TextColor);
+      margin-bottom: 0.313rem;
+      max-height: 5rem;
+    }
+
+    .#{$block}__actions {
+      margin: var(--actionsSpacing);
     }
   }
 }
