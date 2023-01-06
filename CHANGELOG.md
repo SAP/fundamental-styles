@@ -1,3 +1,12 @@
+## [0.26.5-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.3...v0.26.5-rc.4) (2023-01-06)
+
+
+### Features
+
+* **styles:** introduced Dot type in illustrated-message ([#4155](https://github.com/SAP/fundamental-styles/issues/4155)) ([6779046](https://github.com/SAP/fundamental-styles/commit/67790468059cc6e367a6cc539097f6ee4307d89b))
+
+
+
 ## [0.26.5-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.2...v0.26.5-rc.3) (2023-01-03)
 
 
