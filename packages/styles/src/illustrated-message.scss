@@ -181,7 +181,7 @@ $block: fd-illustrated-message;
     margin: 0;
 
     .#{$block}__illustration {
-      margin-right: var(--spacing);
+      @include fd-set-margin-right(var(--spacing));
 
       & + .#{$block}__figcaption {
         width: calc(100% - var(--illustrationW) - var(--spacing));
