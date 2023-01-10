@@ -24651,14 +24651,14 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuMSi
                 </button>
             </div>
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
-                    <i class=\\"sap-icon--bell\\"></i>
-                    <span class=\\"fd-button__badge\\">251K</span>
+                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
+                    <i class=\\"sap-icon--pool\\"></i>
                 </button>
             </div>
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
-                    <i class=\\"sap-icon--pool\\"></i>
+                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
+                    <i class=\\"sap-icon--bell\\"></i>
+                    <span class=\\"fd-button__badge\\">251K</span>
                 </button>
             </div>
             <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
@@ -24738,10 +24738,43 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
 "<div style=\\"height:300px; max-width: 600px;\\">
     <div class=\\"fd-shellbar fd-shellbar--s\\">
         <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
-                                                 srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
-                                                 width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
-            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+            <span class=\\"fd-shellbar__logo\\">
+                <img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\">
+            </span>
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <button class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\" onclick=\\"onPopoverClick('9GLB26941ab');\\" aria-controls=\\"9GLB26941ab\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
+                        <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                        <i class=\\"sap-icon--megamenu\\"></i>
+                    </button>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"9GLB26941ab\\">
+                    <nav class=\\"fd-menu\\">
+                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application A</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application B</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application C</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application D</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
@@ -24786,7 +24819,6 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
                                 <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-controls=\\"undefined\\"
                                         aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
                                     <i class=\\"sap-icon--overflow\\"></i>
-                                    <span class=\\"fd-button__badge\\">251K</span>
                                 </button>
                             </div>
                         </div>
@@ -34562,6 +34594,147 @@ exports[`Check stories > Components/User Menu > Story Compact > Should match sna
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/User Menu > Story Default > Should match snapshot 1`] = `
+"<div class=\\"fddocs-container\\" style=\\"margin-bottom: 550px\\">
+    <div class=\\"fd-popover fd-popover--right fd-user-menu\\">
+        <div class=\\"fd-popover__control\\">
+            <span
+                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail\\"
+                aria-controls=\\"popoverA7\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                aria-label=\\"Avatar\\"
+                style=\\"background-image: url('assets/images/avatars/3.svg');\\"
+                onclick=\\"onPopoverClick('popoverA7');\\"
+                role=\\"button\\"
+                tabindex=\\"0\\"></span>
+        </div>
+
+        <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"false\\" id=\\"popoverA7\\">
+            <div class=\\"fd-user-menu__body fd-user-menu__body--default\\">
+                <div class=\\"fd-user-menu__subheader\\">
+                    <h5 class=\\"fd-user-menu__user-name\\">John Miller</h5>
+                </div>
+
+                <ul class=\\"fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border\\" role=\\"list\\">
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--time-account\\"></i>
+                            <span class=\\"fd-list__title\\">Recent Activity</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--activity-individual\\"></i>
+                            <span class=\\"fd-list__title\\">Frequently Used</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--detail-view\\"></i>
+                            <span class=\\"fd-list__title\\">Content Finder</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--employee-lookup\\"></i>
+                            <span class=\\"fd-list__title\\">Proxy User</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--role\\"></i>
+                            <span class=\\"fd-list__title\\">Proxy Role</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--action-settings\\"></i>
+                            <span class=\\"fd-list__title\\">Settings</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--marketing-campaign\\"></i>
+                            <span class=\\"fd-list__title\\">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class=\\"fd-popover fd-popover--right  fd-user-menu fd-user-menu--compact\\">
+        <div class=\\"fd-popover__control\\">
+            <span
+                class=\\"fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail\\"
+                aria-controls=\\"popoverA7\\"
+                aria-expanded=\\"true\\"
+                aria-haspopup=\\"true\\"
+                aria-label=\\"Avatar\\"
+                style=\\"background-image: url('assets/images/avatars/3.svg');\\"
+                onclick=\\"onPopoverClick('popoverA7');\\"
+                role=\\"button\\"
+                tabindex=\\"0\\"></span>
+        </div>
+
+        <div class=\\"fd-popover__body fd-popover__body--right\\" aria-hidden=\\"false\\" id=\\"popoverA7\\">
+            <div class=\\"fd-user-menu__body fd-user-menu__body--compact fd-user-menu__body--default\\">
+                <div class=\\"fd-user-menu__subheader\\">
+                    <h5 class=\\"fd-user-menu__user-name\\">John Miller</h5>
+                </div>
+
+                <ul class=\\"fd-list fd-list--compact fd-list--navigation fd-list--navigation-indication fd-list--no-border\\" role=\\"list\\">
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--time-account\\"></i>
+                            <span class=\\"fd-list__title\\">Recent Activity</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--activity-individual\\"></i>
+                            <span class=\\"fd-list__title\\">Frequently Used</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--detail-view\\"></i>
+                            <span class=\\"fd-list__title\\">Content Finder</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--employee-lookup\\"></i>
+                            <span class=\\"fd-list__title\\">Proxy User</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--role\\"></i>
+                            <span class=\\"fd-list__title\\">Proxy Role</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--action-settings\\"></i>
+                            <span class=\\"fd-list__title\\">Settings</span>
+                        </a>
+                    </li>
+                    <li tabindex=\\"-1\\" role=\\"listitem\\" class=\\"fd-list__item fd-list__item--link\\">
+                        <a tabindex=\\"0\\" class=\\"fd-list__link\\">
+                            <i role=\\"presentation\\" class=\\"fd-list__icon sap-icon--marketing-campaign\\"></i>
+                            <span class=\\"fd-list__title\\">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

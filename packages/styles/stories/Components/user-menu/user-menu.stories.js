@@ -22,6 +22,153 @@ It displays an avatar button that triggers a Popover. The user menu can have mul
     }
 };
 
+export const Default = () => `<div class="fddocs-container" style="margin-bottom: 550px">
+    <div class="fd-popover fd-popover--right fd-user-menu">
+        <div class="fd-popover__control">
+            <span
+                class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
+                aria-controls="popoverA7"
+                aria-expanded="true"
+                aria-haspopup="true"
+                aria-label="Avatar"
+                style="background-image: url('assets/images/avatars/3.svg');"
+                onclick="onPopoverClick('popoverA7');"
+                role="button"
+                tabindex="0"></span>
+        </div>
+
+        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA7">
+            <div class="fd-user-menu__body fd-user-menu__body--default">
+                <div class="fd-user-menu__subheader">
+                    <h5 class="fd-user-menu__user-name">John Miller</h5>
+                </div>
+
+                <ul class="fd-list fd-list--navigation fd-list--navigation-indication fd-list--no-border" role="list">
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--time-account"></i>
+                            <span class="fd-list__title">Recent Activity</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--activity-individual"></i>
+                            <span class="fd-list__title">Frequently Used</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--detail-view"></i>
+                            <span class="fd-list__title">Content Finder</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
+                            <span class="fd-list__title">Proxy User</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--role"></i>
+                            <span class="fd-list__title">Proxy Role</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--action-settings"></i>
+                            <span class="fd-list__title">Settings</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
+                            <span class="fd-list__title">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="fd-popover fd-popover--right  fd-user-menu fd-user-menu--compact">
+        <div class="fd-popover__control">
+            <span
+                class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail"
+                aria-controls="popoverA7"
+                aria-expanded="true"
+                aria-haspopup="true"
+                aria-label="Avatar"
+                style="background-image: url('assets/images/avatars/3.svg');"
+                onclick="onPopoverClick('popoverA7');"
+                role="button"
+                tabindex="0"></span>
+        </div>
+
+        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="popoverA7">
+            <div class="fd-user-menu__body fd-user-menu__body--compact fd-user-menu__body--default">
+                <div class="fd-user-menu__subheader">
+                    <h5 class="fd-user-menu__user-name">John Miller</h5>
+                </div>
+
+                <ul class="fd-list fd-list--compact fd-list--navigation fd-list--navigation-indication fd-list--no-border" role="list">
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--time-account"></i>
+                            <span class="fd-list__title">Recent Activity</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--activity-individual"></i>
+                            <span class="fd-list__title">Frequently Used</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--detail-view"></i>
+                            <span class="fd-list__title">Content Finder</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--employee-lookup"></i>
+                            <span class="fd-list__title">Proxy User</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--role"></i>
+                            <span class="fd-list__title">Proxy Role</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--action-settings"></i>
+                            <span class="fd-list__title">Settings</span>
+                        </a>
+                    </li>
+                    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
+                        <a tabindex="0" class="fd-list__link">
+                            <i role="presentation" class="fd-list__icon sap-icon--marketing-campaign"></i>
+                            <span class="fd-list__title">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+Default.parameters = {
+    docs: {
+        description: {
+            story: ''
+        }
+    }
+};
+
 export const Shellbar = () => `<div style="height: 700px;">
     <div class="fd-shellbar">
         <div class="fd-shellbar__group fd-shellbar__group--product">

@@ -350,14 +350,14 @@ export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; ma
                 </button>
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
-                <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Notifications">
-                    <i class="sap-icon--bell"></i>
-                    <span class="fd-button__badge">251K</span>
+                <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Pool">
+                    <i class="sap-icon--pool"></i>
                 </button>
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
-                <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Pool">
-                    <i class="sap-icon--pool"></i>
+                <button class="fd-button fd-button--transparent fd-shellbar__button" aria-label="Notifications">
+                    <i class="sap-icon--bell"></i>
+                    <span class="fd-button__badge">251K</span>
                 </button>
             </div>
             <div class="fd-shellbar__action fd-shellbar__action--mobile">
@@ -447,10 +447,43 @@ The shellbar can be optimized for medium-large screens. To achieve this style, a
 export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; max-width: 600px;">
     <div class="fd-shellbar fd-shellbar--s">
         <div class="fd-shellbar__group fd-shellbar__group--product">
-            <span class="fd-shellbar__logo"><img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png"
-                                                 srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x"
-                                                 width="48" height="24" alt="SAP"></span>
-            <span class="fd-shellbar__title">Corporate Portal</span>
+            <span class="fd-shellbar__logo">
+                <img src="//unpkg.com/fundamental-styles/dist/images/sap-logo.png" srcset="//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP">
+            </span>
+            <div class="fd-popover">
+                <div class="fd-popover__control">
+                    <button class="fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu" onclick="onPopoverClick('9GLB26941ab');" aria-controls="9GLB26941ab" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-shellbar__title">Corporate Portal</span>
+                        <i class="sap-icon--megamenu"></i>
+                    </button>
+                </div>
+                <div class="fd-popover__body fd-popover__body--no-arrow" aria-hidden="true" id="9GLB26941ab">
+                    <nav class="fd-menu">
+                        <ul class="fd-menu__list fd-menu__list--no-shadow">
+                            <li class="fd-menu__item">
+                                <a role="button" class="fd-menu__link">
+                                    <span class="fd-menu__title">Application A</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a role="button" class="fd-menu__link">
+                                    <span class="fd-menu__title">Application B</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a role="button" class="fd-menu__link">
+                                    <span class="fd-menu__title">Application C</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item">
+                                <a role="button" class="fd-menu__link">
+                                    <span class="fd-menu__title">Application D</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class="fd-shellbar__group fd-shellbar__group--actions">
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
@@ -495,7 +528,6 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
                                 <button class="fd-button fd-button--transparent fd-shellbar__button" aria-controls="undefined"
                                         aria-haspopup="true" aria-expanded="false">
                                     <i class="sap-icon--overflow"></i>
-                                    <span class="fd-button__badge">251K</span>
                                 </button>
                             </div>
                         </div>
