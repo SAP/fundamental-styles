@@ -10,7 +10,7 @@ $block: #{$fd-namespace}-dynamic-page;
   $fd-dynamic-page-box-shadow: var(--sapContent_HeaderShadow);
   $fd-dynamic-page-button-group-width: 4rem;
   $fd-dynamic-page-button-group-height: 0.0625rem;
-  $fd-dynamic-page-focus-outline-offset: 0.0625rem;
+  $fd-dynamic-page-focus-outline-offset: -0.25rem;
   $fd-dynamic-page-toolbar-space: 1rem;
 
   @mixin fd-background-page($background-color) {
