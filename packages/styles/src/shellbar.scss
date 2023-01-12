@@ -41,14 +41,70 @@ $block: #{$fd-namespace}-shellbar;
   $fd-shellbar-background: transparent !default;
   $fd-shellbar-hover-background: var(--sapShell_Hover_Background) !default;
 
+  @mixin fd-shellbar-sm-screen() {
+    .#{$block}__subtitle,
+    .#{$block}__title {
+      display: none;
+    }
+
+    .#{$block}__action {
+      &--mobile {
+        display: inline-block;
+      }
+
+      &--desktop {
+        display: none;
+      }
+    }
+
+    .#{$block}__action-combobox {
+      &--mobile {
+        @include fd-flex-center();
+
+        background-color: var(--sapShellColor);
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+        position: absolute;
+        left: 0;
+        padding: 0 0.3rem;
+        margin: 0;
+      }
+    }
+
+    .#{$block}__button--menu {
+      .sap-icon--megamenu {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  @mixin fd-shellbar-md-lg-xl-screens() {
+    .#{$block}__subtitle,
+    .#{$block}__title {
+      display: inline-block;
+    }
+
+    .#{$block}__action {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: inline-block;
+      }
+    }
+  }
+
   @include fd-reset();
+
+  @include fd-flex-vertical-center () {
+    justify-content: space-between;
+  }
 
   background-color: var(--sapShellColor);
   box-shadow: var(--fdShellbar_Shadow);
   height: var(--fdShellbar_Height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   color: $fd-shellbar-color;
   position: relative;
   padding: 0 1rem;
@@ -56,23 +112,29 @@ $block: #{$fd-namespace}-shellbar;
   &__group {
     @include fd-reset();
 
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
+    @include fd-flex-vertical-center() {
+      flex: 1 1 0;
+      gap: $fd-shellbar-item-spacing;
+    }
 
     &--product {
       justify-content: flex-start;
       order: 1;
     }
 
-    &--copilot {
-      justify-content: center;
+    &--copilot,
+    &--center {
       order: 2;
+      display: none;
+      justify-content: center;
+      margin: 0 $fd-shellbar-item-spacing;
 
-      .#{$block}__button {
-        padding-left: 0;
+      .#{$block}__action {
+        width: 100%;
+      }
+
+      @include fd-media-xl() {
+        display: inline-block;
       }
     }
 
@@ -86,7 +148,6 @@ $block: #{$fd-namespace}-shellbar;
   &__subtitle {
     @include fd-reset();
     @include fd-ellipsis();
-    @include fd-set-margin-left($fd-shellbar-item-spacing);
 
     color: var(--sapShell_TextColor);
   }
@@ -137,7 +198,6 @@ $block: #{$fd-namespace}-shellbar;
 
   .#{$block}__group .#{$block}__action {
     @include fd-reset();
-    @include fd-set-margin-left($fd-shellbar-item-spacing);
 
     > * {
       vertical-align: middle;
@@ -224,7 +284,6 @@ $block: #{$fd-namespace}-shellbar;
     }
 
     &--menu {
-      @include fd-set-margin-left($fd-shellbar-item-spacing);
 
       .#{$block}__title {
         margin: 0;
@@ -232,66 +291,24 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
-  &--s {
-    .#{$block}__subtitle,
-    .#{$block}__title {
-      display: none;
-    }
-
-    .#{$block}__action {
-      &--mobile {
-        display: inline-block;
-      }
-
-      &--desktop {
-        display: none;
-      }
-    }
-
-    .#{$block}__action-combobox {
-      &--mobile {
-        @include fd-flex-center();
-
-        background-color: var(--sapShellColor);
-        width: 100%;
-        height: 100%;
-        z-index: 7;
-        position: absolute;
-        left: 0;
-        padding: 0 0.3rem;
-        margin: 0;
-      }
-    }
-
-    .#{$block}__button--menu {
-      .sap-icon--megamenu {
-        margin: 0 !important;
-      }
-    }
+  &--s,
+  &--sm {
+    @include fd-shellbar-sm-screen();
   }
 
   &--m,
-  &--l {
+  &--l,
+  &--md,
+  &--lg {
     padding: 0 2rem;
   }
 
   &--m,
   &--l,
+  &--md,
+  &--lg,
   &--xl {
-    .#{$block}__subtitle,
-    .#{$block}__title {
-      display: inline-block;
-    }
-
-    .#{$block}__action {
-      &--mobile {
-        display: none;
-      }
-
-      &--desktop {
-        display: inline-block;
-      }
-    }
+    @include fd-shellbar-md-lg-xl-screens();
   }
 
   &--xl {
@@ -302,6 +319,9 @@ $block: #{$fd-namespace}-shellbar;
     &.#{$block}--s,
     &.#{$block}--m,
     &.#{$block}--l,
+    &.#{$block}--sm,
+    &.#{$block}--md,
+    &.#{$block}--lg,
     &.#{$block}--xl {
       @include fd-set-padding-right(0.5rem);
 
@@ -311,5 +331,21 @@ $block: #{$fd-namespace}-shellbar;
 
   &--responsive-paddings {
     @include fd-apply-responsive-paddings();
+
+    @include fd-media-sm() {
+      @include fd-shellbar-sm-screen();
+    }
+
+    @include fd-media-md() {
+      @include fd-shellbar-md-lg-xl-screens();
+    }
+
+    @include fd-media-lg() {
+      @include fd-shellbar-md-lg-xl-screens();
+    }
+
+    @include fd-media-xl() {
+      @include fd-shellbar-md-lg-xl-screens();
+    }
   }
 }
