@@ -25,6 +25,12 @@ $block: #{$fd-namespace}-user-menu;
     &.#{$block}__body--default {
       width: var(--fdUserMenu_Body_Width);
     }
+
+    ul:last-child li:last-child::before,
+    ul li:last-child::before,
+    ul li:last-child a::before {
+      border-radius: 0 !important;
+    }
   }
 
   &__header {
