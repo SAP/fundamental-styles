@@ -2388,10 +2388,10 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/devkit@>=14.0.0":
-  version "15.0.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.0.2.tgz#ad079ed0a17a3aef039ccc2607c35e7efa72a6cf"
-  integrity sha512-dtg3Smll65CsGiwEtVXnrEKdM1Sr5Oot3ni4RXcLwov19BlstW2crav+r8Bk5JpeEexB4szk+MKzPsEWEOahpQ==
+"@nrwl/devkit@15.5.1", "@nrwl/devkit@>=14.0.0":
+  version "15.5.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.5.1.tgz#dda71d81a5264cb7650da28e0d7761af64b16491"
+  integrity sha512-SETS7nOr5ady18+rNBCz4bGW64uSYcGmVbMTrYtbl/IZHIAAaTxqd7MoOcOVWfIPWbf2SfhXb6xBiSfo6cbzOQ==
   dependencies:
     "@phenomnomnominal/tsquery" "4.1.1"
     ejs "^3.1.7"
