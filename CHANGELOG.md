@@ -1,3 +1,12 @@
+## [0.26.5-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.5...v0.26.5-rc.6) (2023-01-16)
+
+
+### Bug Fixes
+
+* **styles:** outline-offset of dynamic page header not visible when page is fullscreen ([#4171](https://github.com/SAP/fundamental-styles/issues/4171)) ([cb4a120](https://github.com/SAP/fundamental-styles/commit/cb4a1208f3ce5d241c560e118a613fa8a5b24881))
+
+
+
 ## [0.26.5-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.4...v0.26.5-rc.5) (2023-01-11)
 
 
