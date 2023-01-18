@@ -7,6 +7,7 @@ import '../../../src/input-group.scss';
 import '../../../src/popover.scss';
 import '../../../src/product-switch.scss';
 import '../../../src/shellbar.scss';
+import '../../../src/select.scss';
 export default {
     title: 'Components/Shellbar',
     parameters: {
@@ -130,9 +131,9 @@ export const ProductMenuAndSearch = () => `<div style="height:200px">
             <div class="fd-shellbar__action">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" onclick="onPopoverClick('F4GcX348b')" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                        <div class="fd-input-group fd-shellbar__input-group">
-                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="F4GcX348b1" placeholder="Search everything">
-                            <span class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
+                        <div class="fd-input-group fd-shellbar__search-field">
+                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__search-field-input" id="F4GcX348b1" placeholder="Search everything">
+                            <span class="fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button">
                                 <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
                                         <i class="sap-icon--search"></i>
                                 </button>
@@ -201,9 +202,35 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
             <div class="fd-shellbar__action">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" onclick="onPopoverClick('F4GcX348b')" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                        <div class="fd-input-group fd-shellbar__input-group">
-                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="F4GcX348b1" placeholder="Search everything">
-                            <span class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
+                        <div id="JKHhjk7234k" class="fd-input-group fd-shellbar__search-field">
+                        <span class="fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button">
+                          <div class="fd-select">
+                            <button
+                              aria-expanded="true"
+                              aria-haspopup="listbox"
+                              aria-labelledby="cozySelectLabel cozySelectValue"
+                              class="fd-select__control fd-shellbar__search-category"
+                              id="cozySelectCombobox"
+                              onclick="
+                                  toggleElAttrs('h0C6A325', ['aria-hidden']);
+                                  toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                              "
+                              value="List Item 1"
+                              tabindex="0">
+                              <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
+                              <span class="fd-button fd-button--transparent fd-select__button">
+                                  <i class="sap-icon--slim-arrow-down"></i>
+                              </span>
+                          </button>
+                      </div>
+                        </span>
+                            <input aria-label="search-input" type="text" onfocus="addClass('JKHhjk7234k', 'is-focus')" onblur="removeClass('JKHhjk7234k', 'is-focus')" class="fd-input fd-input-group__input fd-shellbar__search-field-input" id="F4GcX348b1" placeholder="Search everything">
+                            <span class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button">
+                                <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
+                                        <i class="sap-icon--decline"></i>
+                                </button>
+                            </span>
+                            <span class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button">
                                 <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
                                         <i class="sap-icon--search"></i>
                                 </button>
@@ -431,12 +458,12 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" aria-controls="UIBFJ688" aria-expanded="false" aria-haspopup="true">
-                        <div class="fd-input-group fd-shellbar__input-group">
+                        <div class="fd-input-group fd-shellbar__search-field">
                             <input aria-label="search" type="text"
-                                   class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="UIO6J6881"
+                                   class="fd-input fd-input-group__input fd-shellbar__search-field-input" id="UIO6J6881"
                                    placeholder="Search">
                             <span
-                                class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
+                                class="fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button">
                                 <button aria-label="navigation-down-arrow-button" class="fd-shellbar__button fd-button fd-button--transparent">
                                     <i class="sap-icon--decline"></i>
                                 </button>
@@ -568,9 +595,9 @@ export const LinksWithCollapsibleMenuSSize = () => `<div style="height:300px; ma
             <div class="fd-shellbar__action fd-shellbar__action--desktop">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" onclick="onPopoverClick('F4GcX348b')" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                        <div class="fd-input-group fd-shellbar__input-group">
-                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="F4GcX348b1" placeholder="Search">
-                            <span class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
+                        <div class="fd-input-group fd-shellbar__search-field">
+                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__search-field-input" id="F4GcX348b1" placeholder="Search">
+                            <span class="fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button">
                                 <button aria-label="button-decline" class="fd-shellbar__button fd-button fd-button--transparent">
                                         <i class="sap-icon--decline"></i>
                                 </button>
@@ -830,9 +857,9 @@ export const ResponsivePaddings = () => `<div style="height:300px">
             <div class="fd-shellbar__action">
                 <div class="fd-popover__control">
                     <div aria-label="Image label" onclick="onPopoverClick('F4GcX348b')" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                        <div class="fd-input-group fd-shellbar__input-group">
-                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__input-group-input" id="F4GcX348b1" placeholder="Search everything">
-                            <span class="fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button">
+                        <div class="fd-input-group fd-shellbar__search-field">
+                            <input aria-label="search-input" type="text" class="fd-input fd-input-group__input fd-shellbar__search-field-input" id="F4GcX348b1" placeholder="Search everything">
+                            <span class="fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button">
                                 <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
                                         <i class="sap-icon--search"></i>
                                 </button>

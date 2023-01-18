@@ -196,97 +196,261 @@ $block: #{$fd-namespace}-shellbar;
     }
   }
 
-  .#{$block}__group .#{$block}__action {
-    @include fd-reset();
+  // Elements inside shellbar groups
+  .#{$block}__group {
+    .#{$block}__action {
+      @include fd-reset();
 
-    > * {
-      vertical-align: middle;
-    }
-  }
-
-  .#{$block}__group .#{$block}__input-group {
-    background: transparent;
-    background-color: var(--fdShellbar_Input_Background);
-    border: var(--fdShellbar_Input_Border);
-    border-radius: var(--fdShellbar_Input_Border_Radius);
-    cursor: text;
-
-    @include fd-hover() {
-      border-color: var(--fdShellbar_Input_Hover_Border_Color);
-      box-shadow: var(--sapContent_Interaction_Shadow);
+      > * {
+        vertical-align: middle;
+      }
     }
 
-    @include fd-focus() {
-      outline: none;
-    }
+    .#{$block}__search-field {
+      --fdSelect_Text_Content_Color: var(--fdShellbar_Select_Content_Color);
+      --fdInputGroup_Input_Border: var(--fdShellbar_Input_Border);
+      --fdInputGroup_Input_Color: var(--fdShellbar_Input_Color);
+      --fdInputGroup_Input_Placeholder_Color: var(--fdShellbar_Input_Placeholder_Color);
+      --fdInputGroup_Input_Placeholder_Style: var(--fdShellbar_Input_Placeholder_Style);
+      --fdInputGroup_Background: transparent;
+      --fdInputGroup_Background_Color: var(--fdShellbar_Input_Background);
+      --fdInputGroup_Hover_Background: transparent;
+      --fdInput_Group_Button_Box_Shadow: none;
+      --fdInput_Box_Shadow_Hover: none;
 
-    &-input {
-      border: none;
-      color: var(--fdShellbar_Input_Color);
-      position: relative;
+      border: var(--fdShellbar_Search_Border);
+      border-radius: var(--fdShellbar_Input_Border_Radius);
+      cursor: text;
 
-      @include fd-hover() {
-        &,
-        & + .#{$block}__input-group-addon {
-          background: transparent;
-          background-color: var(--fdShellbar_Input_Hover_Background) !important;
+      &-input {
+        position: relative;
+
+        @include fd-hover() {
+          --fdInputGroup_Hover_Input_Background: var(--fdShellbar_Input_Hover_Background);
+          --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
+          & ~ .#{$block}__search-field-addon {
+            --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Container_Hover_Background);
+          }
+        }
+
+        @include fd-focus() {
+          --fdInputGroup_Input_Color: var(--fdShellbar_Input_Focus_Color);
+          --fdInputGroup_Input_Background: var(--fdShellbar_Input_Focus_Background);
+        }
+
+        &:placeholder-shown {
+          & ~ .#{$block}__search-cancel {
+            display: none;
+          }
+        }
+
+        &:not(:placeholder-shown) {
+          & ~ .#{$block}__search-submit {
+            .fd-button {
+              background-color: var(--fdShellbar_Search_Active_Button_Background);
+              color: var(--fdShellbar_Search_Active_Button_Color);
+
+              &:hover {
+                background-color: var(--fdShellbar_Search_Active_Button_Hover_Background);
+              }
+            }
+          }
+        }
+
+        &--select {
+          @include fd-flex-vertical-center();
+
+          font-style: normal;
+          height: 100%;
+          flex: 0 1;
         }
       }
 
-      &::placeholder {
-        color: var(--fdShellbar_Input_Placeholder_Color);
-        font-style: italic;
+      &-addon {
+        @include fd-flex-vertical-center() {
+          height: 100%;
+          flex: 0 1;
+        }
+
+        .#{$block}__button {
+          height: var(--fdShellbar_Input_Addon_Dimension);
+          min-width: var(--fdShellbar_Input_Addon_Dimension);
+          border-radius: var(--fdShellbar_Input_Border_Radius);
+          border-width: var(--fdShellbar_Input_Addon_Border_Width);
+        }
+
+        + & {
+          background: red;
+        }
       }
 
-      &--select {
-        @include fd-flex-vertical-center();
+      &-category {
+        flex-shrink: 0;
 
-        font-style: normal;
-        height: 100%;
+        @include fd-hover() {
+          background-color: var(--fdShellbar_Input_Background) !important;
+          & ~ .#{$block}__search-field-input,
+          & ~ .#{$block}__search-field-addon {
+            --fdInputGroup_Addon_Background: var(--fdShellbar_Input_Background);
+            --fdInputGroup_Input_Background: var(--fdShellbar_Input_Background);
+          }
+
+          .#{$block}__search-category {
+            box-shadow: var(--sapContent_Interaction_Shadow);
+          }
+
+          .fd-select__button {
+            background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
+          }
+        }
+
+        .fd-select {
+          @include fd-set-margin-right(var(--fdShellbar_Search_Category_Offset_Right));
+        }
+        .#{$block}__search-category {
+          background: transparent;
+          background-color: var(--fdShellbar_Input_Background);
+          border: var(--fdShellbar_Search_Category_Border);
+          border-width: var(--fdShellbar_Search_Category_Border_width);
+          border-radius: 0;
+          min-height: var(--fdShellbar_Input_Addon_Dimension);
+          height: var(--fdShellbar_Input_Addon_Dimension);
+          margin: 0;
+          position: relative;
+
+          @include fd-set-margin-left(var(--fdShellbar_Search_Category_Offset_Left));
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--sapShell_InteractiveBorderColor);
+            width: 0.0625rem;
+            display: var(--fdShellbar_Search_Separator_Display);
+          }
+
+          @include fd-focus() {
+            border-radius: var(--fdShellbar_Input_Border_Radius);
+            outline-color: var(--sapButton_Lite_Active_BorderColor);
+            outline-width: 0.0625rem;
+            outline-offset: -0.0625rem;
+
+            &::before {
+              display: none;
+            }
+          }
+        }
+
+        .fd-select__button {
+          background: transparent;
+          background-color: var(--fdShellbar_Input_Background);
+          color: var(--sapShell_InteractiveTextColor);
+        }
+      }
+
+      @include fd-hover() {
+        border-color: var(--fdShellbar_Input_Hover_Border_Color);
+        box-shadow: var(--sapContent_Interaction_Shadow);
+        background-color: var(--fdShellbar_Search_Container_Hover_Background);
+
+        .#{$block}__search-field {
+          &-category .#{$block}__search-category {
+            background: transparent;
+            background-color: var(--fdShellbar_Search_Container_Hover_Background);
+            border-radius: var(--fdShellbar_Input_Border_Radius);
+
+            &::before {
+              display: none;
+            }
+          }
+        }
+
+        .#{$block}__search-field-category:not(:hover) {
+          .fd-select__button {
+            background-color: var(--fdShellbar_Search_Container_Hover_Background);
+          }
+        }
+
+        &-addon,
+        &-input {
+          background: transparent;
+          background-color: var(--fdShellbar_Input_Hover_Background) !important;
+        }
+
+        &-addon {
+          background-color: var(--fdShellbar_Search_Hover_Background) !important;
+        }
+      }
+
+      @include fd-focus() {
+        outline: none;
+        box-shadow: var(--fdShellbar_Active_Shadow);
+        background-color: var(--fdShellbar_Active_Background);
+
+        &::before {
+          position: absolute;
+          content: "";
+          outline: var(--fdShellbar_Search_Active_Outline);
+          outline-offset: -0.125rem;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          z-index: 20;
+          pointer-events: none;
+        }
+
+        .#{$block}__search-field-addon {
+          background: transparent;
+          background-color: var(--fdShellbar_Search_Hover_Background);
+        }
+
+        .#{$block}__search-category {
+          background-color: var(--fdShellbar_Search_Hover_Background);
+
+          &::before {
+            display: none;
+          }
+        }
+
+        .#{$block}__search-field-category {
+          .fd-select__button {
+            background-color: var(--fdShellbar_Search_Hover_Category_Button_Background);
+          }
+        }
       }
     }
 
-    &-addon {
-      @include fd-flex-vertical-center() {
-        height: 100%;
+    .#{$block}__button {
+      outline-color: var(--fdShellbar_Button_Outline_Color);
+      color: var(--sapShell_InteractiveTextColor);
+
+      &:not(&--menu) {
+        padding: 0;
       }
 
-      .#{$block}__button {
-        height: var(--fdShellbar_Input_Addon_Dimension);
-        min-width: var(--fdShellbar_Input_Addon_Dimension);
-        border-radius: var(--fdShellbar_Input_Border_Radius);
-        border-width: var(--fdShellbar_Input_Addon_Border_Width);
+      @include fd-hover() {
+        border-color: var(--fdShellbar_Button_Hover_Border_Color);
+        background-color: $fd-shellbar-hover-background;
+
+        @include fd-disabled() {
+          background: $fd-shellbar-background;
+        }
       }
-    }
-  }
 
-  .#{$block}__group .#{$block}__button {
-    outline-color: var(--fdShellbar_Button_Outline_Color);
-    color: var(--sapShell_InteractiveTextColor) !important;
-
-    &:not(&--menu) {
-      padding: 0;
-    }
-
-    @include fd-hover() {
-      border-color: var(--fdShellbar_Button_Hover_Border_Color);
-      background-color: $fd-shellbar-hover-background;
-
-      @include fd-disabled() {
-        background: $fd-shellbar-background;
+      @include fd-active() {
+        border-color: var(--fdShellbar_Button_Active_Border_Color);
+        background: var(--sapShell_Active_Background);
+        color: var(--sapShell_Active_TextColor);
       }
-    }
 
-    @include fd-active() {
-      border-color: var(--fdShellbar_Button_Active_Border_Color);
-      background: var(--sapShell_Active_Background);
-      color: var(--sapShell_Active_TextColor) !important;
-    }
+      &--menu {
 
-    &--menu {
-
-      .#{$block}__title {
-        margin: 0;
+        .#{$block}__title {
+          margin: 0;
+        }
       }
     }
   }
