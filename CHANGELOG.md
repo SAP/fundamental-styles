@@ -1,3 +1,18 @@
+# [0.27.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.5...v0.27.0-rc.0) (2023-01-18)
+
+
+### Documentation
+
+* **styles:** update Table to use Toolbar Title [ci visual] ([#4174](https://github.com/SAP/fundamental-styles/issues/4174)) ([5b1bbf2](https://github.com/SAP/fundamental-styles/commit/5b1bbf2580435f6af7e10fe2cbbc1fbc9a4aa41d))
+
+
+### BREAKING CHANGES
+
+* **styles:** - fd-toolbar--solid class is removed
+- the h4 element in the Toolbar has classes fd-title fd-title--h4 fd-toolbar__title
+
+
+
 ## [0.26.5](https://github.com/SAP/fundamental-styles/compare/v0.26.5-rc.6...v0.26.5) (2023-01-17)
 
 
