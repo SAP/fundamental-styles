@@ -89,8 +89,8 @@ In these cases, use the **Tree** instead.
     }
 };
 
-export const Primary = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Default Table</h4>
+export const Primary = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Default Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -155,8 +155,8 @@ The primary table contains columns with headers, and rows with links. In the fir
     }
 };
 
-export const Borderless = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table Without Borders</h4>
+export const Borderless = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table Without Borders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
@@ -198,8 +198,8 @@ Table can be displayed without borders that separate the columns, column headers
     }
 };
 
-export const Borderlessbody = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table Without Borders On Body</h4>
+export const Borderlessbody = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table Without Borders On Body</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -239,8 +239,8 @@ Table can be displayed without borders that separate the columns and rows only, 
     }
 };
 
-export const NoOuterBorder = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table Without Outer Borders</h4>
+export const NoOuterBorder = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table Without Outer Borders</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--no-outer-border">
@@ -286,8 +286,8 @@ Table can be displayed without outer borders, might be needed when used inside s
     }
 };
 
-export const Footer = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Footer Cozy Mode</h4>
+export const Footer = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Footer Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -339,8 +339,8 @@ Table can be displayed with a footer. To display a table footer, add the \`fd-ta
     }
 };
 
-export const CompactFooter = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Footer Compact Mode</h4>
+export const CompactFooter = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Footer Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--compact">
@@ -388,8 +388,8 @@ Table can be displayed with a footer in compact mode, which is ideal for larger 
     }
 };
 
-export const CondensedFooter = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Footer Condensed Mode</h4>
+export const CondensedFooter = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Footer Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--condensed">
@@ -437,8 +437,8 @@ Similar to the previous example, table can be displayed with a footer in condens
     }
 };
 
-export const Interactive = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Interactive Table With Hoverable and Activable Cells and Rows</h4>
+export const Interactive = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Interactive Table With Hoverable and Activable Cells and Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -513,8 +513,8 @@ Hover | \`--hoverable\`
     }
 };
 
-export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Semantic Rows</h4>
+export const SemanticRows = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Semantic Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -655,8 +655,8 @@ Information | \`--information\`
     }
 };
 
-export const FocusableRows = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Focusable Rows</h4>
+export const FocusableRows = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Focusable Rows</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table" role="grid">
@@ -699,8 +699,8 @@ Table can display focusable rows by adding the \`fd-table__row--focusable\` modi
     }
 };
 
-export const FocusableCells = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Focusable Cells</h4>
+export const FocusableCells = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Focusable Cells</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table" role="grid">
@@ -743,8 +743,8 @@ Table can display focusable cells by adding the \`fd-table__cell--focusable\` mo
     }
 };
 
-export const Checkbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Checkbox Cozy Mode</h4>
+export const Checkbox = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Checkbox Cozy Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -808,8 +808,8 @@ Also recommended to add class \`fd-table__checkbox\` to the checkbox (input) and
     }
 };
 
-export const CompactCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Checkbox Compact Mode</h4>
+export const CompactCheckbox = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Checkbox Compact Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--compact">
@@ -874,8 +874,8 @@ To display the table in compact mode, add the \`fd-table--compact\` modifier cla
     }
 };
 
-export const CondensedCheckbox = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Checkbox Condensed Mode</h4>
+export const CondensedCheckbox = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Checkbox Condensed Mode</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--condensed">
@@ -940,8 +940,8 @@ To display the table in condensed mode, add the \`fd-table--condensed\` modifier
     }
 };
 
-export const Pagination = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Pagination at The Bottom</h4>
+export const Pagination = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Pagination at The Bottom</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table">
@@ -1161,8 +1161,8 @@ export const AdvancedToolbar = () => `<div class="fd-dialog" id="filter-dialog-e
         </footer>
     </section>
 </div>
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table With Advanced Shellbar</h4>
+<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table With Advanced Shellbar</h4>
     <div class="fd-toolbar__spacer"></div>
     <button aria-label="navigation" class="fd-button fd-button--compact fd-button--transparent" onclick="toggleClass('filter-dialog-example', 'fd-dialog--active')">
         <i class="sap-icon--filter"></i>
@@ -1227,8 +1227,8 @@ The table component can be displayed with an advanced **Toolbar**, which allows 
 };
 
 export const ContextualMenu = () => `<div style="min-height: 400px">
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Contextual Menu</h4>
+<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Contextual Menu</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table" >
@@ -1328,8 +1328,8 @@ Table can display a contextual menu containing actions if there is not enough sp
     }
 };
 
-export const MenuHeader = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Table with Popover in Headers</h4>
+export const MenuHeader = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Popover in Headers</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table" >
@@ -1527,8 +1527,8 @@ It’s important to hardcode the width of the columns, otherwise the cells will 
     }
 };
 
-export const NavIcon = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4>Responsive Table - row navigation</h4>
+export const NavIcon = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Responsive Table - row navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--responsive fd-table--no-horizontal-borders">
@@ -1583,8 +1583,8 @@ export const NavIcon = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolba
         </tr>
     </tbody>
 </table>
-<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4>Table - icon button for navigation</h4>
+<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table - icon button for navigation</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table ">
@@ -1660,8 +1660,8 @@ You have an option to add icon button \`sap-icon--navigation-right-arrow\` as a 
     }
 };
 
-export const NavIndicators = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4>Table with Navigation Indication State</h4>
+export const NavIndicators = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Table with Navigation Indication State</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--no-horizontal-borders">
@@ -1734,8 +1734,8 @@ The table component can display navigation indicators. When multi-selection is u
     }
 };
 
-export const ResponsiveTable = () => `<div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-    <h4 style="margin: 0;">Responsive Table</h4>
+export const ResponsiveTable = () => `<div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+    <h4 class="fd-title fd-title--h4 fd-toolbar__title">Responsive Table</h4>
     <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
 </div>
 <table class="fd-table fd-table--responsive fd-table--no-horizontal-borders">
@@ -1818,8 +1818,8 @@ The desktop responsive table should contain \`fd-table--responsive\` modifier.
 };
 
 export const ResponsiveTablePopInMode = () => `<div style="max-width: 450px">
-    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 style="margin: 0;">Responsive Table - Pop-in mode</h4>
+    <div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+        <h4 class="fd-title fd-title--h4 fd-toolbar__title">Responsive Table - Pop-in mode</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table fd-table--responsive fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
@@ -1881,8 +1881,8 @@ export const ResponsiveTablePopInMode = () => `<div style="max-width: 450px">
 </div>
 <br>
 <div style="max-width: 450px">
-    <div class="fd-toolbar fd-toolbar--solid fd-toolbar--title fd-toolbar-active">
-        <h4 style="margin: 0;">Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator</h4>
+    <div class="fd-toolbar fd-toolbar--title fd-toolbar-active">
+        <h4 class="fd-title fd-title--h4 fd-toolbar__title">Responsive Table - Pop-in Mode with Checkboxes and Navigation Indicator</h4>
         <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"></span>
     </div>
     <table class="fd-table fd-table--responsive fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--pop-in">
