@@ -233,6 +233,34 @@ $fd-input-field-height--compact: 1.625rem;
   }
 }
 
+@mixin _fd-input-group-button-first-child($selector) {
+  #{$selector} {
+    @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder));
+
+    @include fd-hover() {
+      @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
+    }
+
+    @include fd-active() {
+      @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
+    }
+  }
+}
+
+@mixin _fd-input-group-button-last-child($selector) {
+  #{$selector} {
+    @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder));
+
+    @include fd-hover() {
+      @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
+    }
+
+    @include fd-active() {
+      @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
+    }
+  }
+}
+
 @mixin fd-input-group-button-overwrite() {
   $fd-input-group-button-states: (
     'success': (
@@ -257,37 +285,14 @@ $fd-input-field-height--compact: 1.625rem;
     )
   );
 
-  .#{$block}__addon {
-    &:first-child {
-      .#{$block}__button {
-        @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder));
+  @include _fd-input-group-button-first-child(".#{$fd-namespace}-button:first-child:not(.#{$fd-namespace}-input-group__button)");
+  @include _fd-input-group-button-last-child(".#{$fd-namespace}-button:not(:first-child, .#{$fd-namespace}-input-group__button)");
 
-        @include fd-hover() {
-          @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
+  // To support `fd-input-group__addon` and avoid breaking changes
+  @include _fd-input-group-button-first-child(".#{$block}__addon:first-child .#{$fd-namespace}-button");
+  @include _fd-input-group-button-last-child(".#{$block}__addon:not(:first-child) .#{$fd-namespace}-button");
 
-        @include fd-active() {
-          @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
-      }
-    }
-
-    &:not(:first-child) {
-      .#{$block}__button {
-        @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder));
-
-        @include fd-hover() {
-          @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
-
-        @include fd-active() {
-          @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
-      }
-    }
-  }
-
-  .#{$block}__button {
+  .#{$fd-namespace}-button {
     @include fd-ellipsis();
 
     border: none;
@@ -317,7 +322,7 @@ $fd-input-field-height--compact: 1.625rem;
   @each $set-name, $set-props in $fd-input-group-button-states {
     &.is-#{$set-name} {
 
-      .#{$block}__button {
+      .#{$fd-namespace}-button {
         @include fd-hover() {
           box-shadow: map_get($set-props, "boxShadow");
         }

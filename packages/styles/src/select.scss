@@ -18,6 +18,13 @@ $fd-select-padding-x-compact: 0.5rem;
     box-shadow: var(--fdInput_Group_Button_Box_Shadow);
     @content;
   }
+
+  @include fd-rtl() {
+    .#{$block}__button {
+      border-left-color: transparent;
+      border-right-color: $borderLeft;
+    }
+  }
 }
 
 @mixin fd-select-states-overwrite() {
@@ -62,6 +69,13 @@ $fd-select-padding-x-compact: 0.5rem;
           box-shadow: map_get($set-props, "hoverBoxShadow");
         }
 
+        @include fd-rtl() {
+          .#{$block}__button {
+            border-left-color: transparent;
+            border-right-color: var(--fdSelect_Expanded_Button_Border_Left_Color);
+          }
+        }
+
         @include fd-focus() {
           box-shadow: none;
         }
@@ -97,7 +111,6 @@ $fd-select-padding-x-compact: 0.5rem;
 
     .#{$block}__button {
       @include fd-set-margin-left(0.25rem);
-      @include fd-input-group-button-overwrite();
     }
 
     @include fd-readonly() {
