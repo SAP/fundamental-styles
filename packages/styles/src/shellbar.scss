@@ -278,10 +278,6 @@ $block: #{$fd-namespace}-shellbar;
           border-radius: var(--fdShellbar_Input_Border_Radius);
           border-width: var(--fdShellbar_Input_Addon_Border_Width);
         }
-
-        + & {
-          background: red;
-        }
       }
 
       &-category {
@@ -299,12 +295,12 @@ $block: #{$fd-namespace}-shellbar;
             box-shadow: var(--sapContent_Interaction_Shadow);
           }
 
-          .fd-select__button {
+          .#{$block}__search-dropdown {
             background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
           }
         }
 
-        .fd-select {
+        > * {
           @include fd-set-margin-right(var(--fdShellbar_Search_Category_Offset_Right));
         }
         .#{$block}__search-category {
@@ -343,7 +339,7 @@ $block: #{$fd-namespace}-shellbar;
           }
         }
 
-        .fd-select__button {
+        .#{$block}__search-dropdown {
           background: transparent;
           background-color: var(--fdShellbar_Input_Background);
           color: var(--sapShell_InteractiveTextColor);
@@ -368,7 +364,7 @@ $block: #{$fd-namespace}-shellbar;
         }
 
         .#{$block}__search-field-category:not(:hover) {
-          .fd-select__button {
+          .#{$block}__search-dropdown {
             background-color: var(--fdShellbar_Search_Container_Hover_Background);
           }
         }
@@ -394,12 +390,10 @@ $block: #{$fd-namespace}-shellbar;
           content: "";
           outline: var(--fdShellbar_Search_Active_Outline);
           outline-offset: -0.125rem;
-          top: 0;
-          right: 0;
-          left: 0;
-          bottom: 0;
           z-index: 20;
           pointer-events: none;
+
+          @include fd-set-equal-positions(0);
         }
 
         .#{$block}__search-field-addon {
@@ -416,7 +410,7 @@ $block: #{$fd-namespace}-shellbar;
         }
 
         .#{$block}__search-field-category {
-          .fd-select__button {
+          .#{$block}__search-dropdown {
             background-color: var(--fdShellbar_Search_Hover_Category_Button_Background);
           }
         }

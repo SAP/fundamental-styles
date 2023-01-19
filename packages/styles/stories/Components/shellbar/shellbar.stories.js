@@ -218,7 +218,7 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                               value="List Item 1"
                               tabindex="0">
                               <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
-                              <span class="fd-button fd-button--transparent fd-select__button">
+                              <span class="fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown">
                                   <i class="sap-icon--slim-arrow-down"></i>
                               </span>
                           </button>
