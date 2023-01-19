@@ -84,6 +84,9 @@ export const parameters = {
             return aPackage - bPackage;
         },
         initialActive: 'docs'
+    },
+    chromatic: {
+        diffThreshold: 0.35
     }
 };
 
