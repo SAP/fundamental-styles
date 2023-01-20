@@ -17,7 +17,8 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     false,
     --fdInputGroup_Background,
     --fdInputGroup_Background_Color,
-    --fdInputGroup_Hover_Background);
+    --fdInputGroup_Hover_Background,
+    --fdInputGroup_Hover_Background_Color);
   @include fd-input-field-states();
   @include fd-input-group-button-overwrite();
 

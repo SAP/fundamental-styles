@@ -90,7 +90,14 @@ $fd-select-padding-x-compact: 0.5rem;
   text-shadow: var(--fdSelect_Text_Shadow);
 
   &__control {
-    @include fd-input-field-base();
+    @include fd-input-field-base(
+      false,
+      true,
+      --fdSelect_Background,
+      --fdSelect_Background_Color,
+      --fdSelect_Hover_Background,
+      --fdSelect_Hover_Background_Color
+    );
     @include fd-input-field-states();
     @include fd-input-group-button-overwrite();
 

@@ -246,12 +246,14 @@ $block: #{$fd-namespace}-shellbar;
 
         &:not(:placeholder-shown) {
           & ~ .#{$block}__search-submit {
-            .fd-button {
-              background-color: var(--fdShellbar_Search_Active_Button_Background);
-              color: var(--fdShellbar_Search_Active_Button_Color);
+            > * {
+              --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Background);
+              --fdButtonColor: var(--fdShellbar_Search_Active_Button_Color);
+
+              @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
 
               &:hover {
-                background-color: var(--fdShellbar_Search_Active_Button_Hover_Background);
+                --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Hover_Background);
               }
             }
           }
@@ -277,6 +279,10 @@ $block: #{$fd-namespace}-shellbar;
           min-width: var(--fdShellbar_Input_Addon_Dimension);
           border-radius: var(--fdShellbar_Input_Border_Radius);
           border-width: var(--fdShellbar_Input_Addon_Border_Width);
+
+          @include fd-hover () {
+            @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
+          }
         }
       }
 
@@ -284,7 +290,7 @@ $block: #{$fd-namespace}-shellbar;
         flex-shrink: 0;
 
         @include fd-hover() {
-          background-color: var(--fdShellbar_Input_Background) !important;
+          --fdInputGroup_Addon_Background: var(--fdShellbar_Input_Background);
           & ~ .#{$block}__search-field-input,
           & ~ .#{$block}__search-field-addon {
             --fdInputGroup_Addon_Background: var(--fdShellbar_Input_Background);
@@ -304,8 +310,10 @@ $block: #{$fd-namespace}-shellbar;
           @include fd-set-margin-right(var(--fdShellbar_Search_Category_Offset_Right));
         }
         .#{$block}__search-category {
-          background: transparent;
-          background-color: var(--fdShellbar_Input_Background);
+          --fdSelect_Background: transparent;
+          --fdSelect_Hover_Background: transparent;
+          --fdSelect_Background_Color: var(--fdShellbar_Input_Background);
+
           border: var(--fdShellbar_Search_Category_Border);
           border-width: var(--fdShellbar_Search_Category_Border_width);
           border-radius: 0;
@@ -328,6 +336,9 @@ $block: #{$fd-namespace}-shellbar;
           }
 
           @include fd-focus() {
+            --fdSelect_Text_Content_Color: var(--sapButton_Active_TextColor);
+            --fdShellbar_Input_Background: var(--fdShellbar_Search_Category_Button_Hover_Background);
+
             border-radius: var(--fdShellbar_Input_Border_Radius);
             outline-color: var(--sapButton_Lite_Active_BorderColor);
             outline-width: 0.0625rem;
@@ -347,14 +358,14 @@ $block: #{$fd-namespace}-shellbar;
       }
 
       @include fd-hover() {
-        border-color: var(--fdShellbar_Input_Hover_Border_Color);
-        box-shadow: var(--sapContent_Interaction_Shadow);
-        background-color: var(--fdShellbar_Search_Container_Hover_Background);
+        --sapField_Hover_BorderColor: var(--fdShellbar_Input_Hover_Border_Color);
+        --fdInput_Box_Shadow_Hover: var(--sapContent_Interaction_Shadow);
+        --fdInputGroup_Hover_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
 
         .#{$block}__search-field {
           &-category .#{$block}__search-category {
-            background: transparent;
-            background-color: var(--fdShellbar_Search_Container_Hover_Background);
+            --fdSelect_Background_Color: var(--fdShellbar_Search_Container_Hover_Background);
+
             border-radius: var(--fdShellbar_Input_Border_Radius);
 
             &::before {
@@ -367,16 +378,6 @@ $block: #{$fd-namespace}-shellbar;
           .#{$block}__search-dropdown {
             background-color: var(--fdShellbar_Search_Container_Hover_Background);
           }
-        }
-
-        &-addon,
-        &-input {
-          background: transparent;
-          background-color: var(--fdShellbar_Input_Hover_Background) !important;
-        }
-
-        &-addon {
-          background-color: var(--fdShellbar_Search_Hover_Background) !important;
         }
       }
 
@@ -419,7 +420,8 @@ $block: #{$fd-namespace}-shellbar;
 
     .#{$block}__button {
       outline-color: var(--fdShellbar_Button_Outline_Color);
-      color: var(--sapShell_InteractiveTextColor);
+
+      --fdButtonColor: var(--sapShell_InteractiveTextColor);
 
       &:not(&--menu) {
         padding: 0;
@@ -427,7 +429,6 @@ $block: #{$fd-namespace}-shellbar;
 
       @include fd-hover() {
         border-color: var(--fdShellbar_Button_Hover_Border_Color);
-        background-color: $fd-shellbar-hover-background;
 
         @include fd-disabled() {
           background: $fd-shellbar-background;

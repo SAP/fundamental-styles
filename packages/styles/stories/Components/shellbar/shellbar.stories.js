@@ -206,7 +206,7 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                         <span class="fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button">
                           <div class="fd-select">
                             <button
-                              aria-expanded="true"
+                              aria-expanded="false"
                               aria-haspopup="listbox"
                               aria-labelledby="cozySelectLabel cozySelectValue"
                               class="fd-select__control fd-shellbar__search-category"
