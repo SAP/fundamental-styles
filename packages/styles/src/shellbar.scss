@@ -42,6 +42,8 @@ $block: #{$fd-namespace}-shellbar;
   $fd-shellbar-hover-background: var(--sapShell_Hover_Background) !default;
 
   @mixin fd-shellbar-sm-screen() {
+    --fdSelect_Text_Content_Display: none;
+    --fdSelect_Min_Width: 1rem;
     .#{$block}__subtitle,
     .#{$block}__title {
       display: none;
@@ -302,6 +304,7 @@ $block: #{$fd-namespace}-shellbar;
           }
 
           .#{$block}__search-dropdown {
+            outline: none;
             background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
           }
         }

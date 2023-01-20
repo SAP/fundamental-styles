@@ -11,7 +11,8 @@ $fd-input-field-height--compact: 1.625rem;
   $overrideBackgroundProperty: --sapField_BackgroundStyle,
   $overrideBackgroundColorProperty: --sapField_Background,
   $overrideHoverBackgroundProperty: --sapField_Hover_BackgroundStyle,
-  $overrideHoverBackgroundColorProperty: --sapField_Hover_Background) {
+  $overrideHoverBackgroundColorProperty: --sapField_Hover_Background,
+  $overrideMinWidth: 2.75rem) {
   @include fd-reset();
   @include fd-ellipsis();
 
@@ -21,7 +22,7 @@ $fd-input-field-height--compact: 1.625rem;
 
   z-index: 1;
   width: 100%;
-  min-width: 2.75rem;
+  min-width: var(#{$overrideMinWidth}, 2.75rem);
   border-radius: var(--sapField_BorderCornerRadius);
   padding: 0 0.625rem;
   margin: 0.25rem 0;
