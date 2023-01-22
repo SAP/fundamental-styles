@@ -12,6 +12,7 @@ $fd-input-field-height--compact: 1.625rem;
   $overrideBackgroundColorProperty: --sapField_Background,
   $overrideHoverBackgroundProperty: --sapField_Hover_BackgroundStyle,
   $overrideHoverBackgroundColorProperty: --sapField_Hover_Background,
+  $overrideFocusBackgroundProperty: --sapField_Focus_Background,
   $overrideMinWidth: 2.75rem) {
   @include fd-reset();
   @include fd-ellipsis();
@@ -67,7 +68,7 @@ $fd-input-field-height--compact: 1.625rem;
   }
 
   @include fd-focus() {
-    background: var(--sapField_Focus_Background);
+    background: var(#{$overrideFocusBackgroundProperty}, var(--sapField_Focus_Background));
     outline-width: var(--sapContent_FocusWidth);
     outline-style: var(--sapContent_FocusStyle);
     outline-color: var(--fdInput_Outline_Color);
@@ -77,7 +78,7 @@ $fd-input-field-height--compact: 1.625rem;
 
   @if $hasFocusWithin {
     @include fd-focus-within() {
-      background: var(--sapField_Focus_Background);
+      background: var(#{$overrideFocusBackgroundProperty}, var(--sapField_Focus_Background));
       outline-width: var(--sapContent_FocusWidth);
       outline-style: var(--sapContent_FocusStyle);
       outline-color: var(--fdInput_Outline_Color);

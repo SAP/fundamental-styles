@@ -97,6 +97,7 @@ $fd-select-padding-x-compact: 0.5rem;
       --fdSelect_Background_Color,
       --fdSelect_Hover_Background,
       --fdSelect_Hover_Background_Color,
+      --fdSelect_Focus_Background,
       --fdSelect_Min_Width
     );
     @include fd-input-field-states();
