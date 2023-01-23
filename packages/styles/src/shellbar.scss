@@ -49,6 +49,12 @@ $block: #{$fd-namespace}-shellbar;
       display: none;
     }
 
+    .#{$block}__group {
+      &--mobile-flex {
+        @include fd-flex-center();
+      }
+    }
+
     .#{$block}__action {
       &--mobile {
         display: inline-block;
@@ -208,6 +214,14 @@ $block: #{$fd-namespace}-shellbar;
       > * {
         vertical-align: middle;
       }
+
+      &--grow {
+        flex: 1;
+      }
+
+      &--shrink {
+        flex: 0;
+      }
     }
 
     .#{$block}__search-field {
@@ -224,6 +238,7 @@ $block: #{$fd-namespace}-shellbar;
 
       border: var(--fdShellbar_Search_Border);
       border-radius: var(--fdShellbar_Input_Border_Radius);
+      position: relative;
       cursor: text;
 
       &-input {
@@ -288,6 +303,12 @@ $block: #{$fd-namespace}-shellbar;
 
           @include fd-hover () {
             @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
+
+            --fdButtonBackgroundColor: var(--fdShellbar_Search_Button_Hover_Background);
+          }
+
+          @include fd-active() {
+            border-color: var(--fdShellbar_Button_Active_Border_Color);
           }
         }
       }
@@ -315,6 +336,12 @@ $block: #{$fd-namespace}-shellbar;
 
         > * {
           @include fd-set-margin-right(var(--fdShellbar_Search_Category_Offset_Right));
+        }
+        .#{$block}__search-dropdown {
+          background-color: var(--fdShellbar_Input_Background);
+
+          --fdInput_Group_Button_Background: transparent;
+          --fdInput_Group_Button_Text_Color: var(--sapShell_InteractiveTextColor);
         }
         .#{$block}__search-category {
           --fdSelect_Background: transparent;
@@ -354,16 +381,14 @@ $block: #{$fd-namespace}-shellbar;
             outline-width: 0.0625rem;
             outline-offset: -0.0625rem;
 
+            .#{$block}__search-dropdown {
+              --fdInput_Group_Button_Text_Color: var(--sapButton_Active_TextColor);
+            }
+
             &::before {
               display: none;
             }
           }
-        }
-
-        .#{$block}__search-dropdown {
-          background: transparent;
-          background-color: var(--fdShellbar_Input_Background);
-          color: var(--sapShell_InteractiveTextColor);
         }
       }
 

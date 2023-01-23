@@ -25,6 +25,7 @@
   --fdShellbar_Search_Hover_Background: var(--sapShell_Hover_Background);
   --fdShellbar_Search_Height: 1.75rem;
   --fdShellbar_Search_Separator_Display: block;
+  --fdShellbar_Search_Button_Hover_Background: var(--fdShellbar_Input_Hover_Background);
   --fdShellbar_Search_Active_Button_Background: var(--sapButton_Lite_Active_BorderColor);
   --fdShellbar_Search_Active_Button_Hover_Background: var(--fdShellbar_Search_Active_Button_Background);
   --fdShellbar_Search_Active_Button_Color: var(--sapButton_Emphasized_TextColor);
@@ -35,5 +36,5 @@
   --fdShellbar_Input_Focus_Color: var(--sapShell_InteractiveTextColor);
   --fdShellbar_Input_Focus_Background: transparent;
   --fdShellbar_Input_Placeholder_Style: italic;
-  --fdShellbar_Button_Left_Border: none;
+  --fdShellbar_Button_Left_Border: 0.0625rem solid transparent;
 }

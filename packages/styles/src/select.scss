@@ -11,8 +11,9 @@ $fd-select-padding-x-compact: 0.5rem;
 
 @mixin fd-select-button-settings($bkgdColor, $borderLeft) {
   .#{$block}__button {
-    color: var(--sapButton_Active_TextColor);
-    background: var(--sapField_BackgroundStyle);
+    --fdInput_Group_Button_Text_Color: var(--sapButton_Active_TextColor);
+    --fdInput_Group_Button_Background: var(--sapField_BackgroundStyle);
+
     background-color: $bkgdColor;
     border-left-color: $borderLeft;
     box-shadow: var(--fdInput_Group_Button_Box_Shadow);

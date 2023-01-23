@@ -198,46 +198,45 @@ export const LinksWithCollapsibleMenuXlSize = () => `<div style="height:300px">
                                                  width="48" height="24" alt="SAP"></span>
             <span class="fd-shellbar__title">Corporate Portal</span>
         </div>
-        <div class="fd-shellbar__group fd-shellbar__group--center">
-            <div class="fd-shellbar__action">
-                <div class="fd-popover__control">
-                    <div aria-label="Image label" onclick="onPopoverClick('F4GcX348b')" aria-controls="F4GcX348b" aria-expanded="false" aria-haspopup="true">
-                        <div id="JKHhjk7234k" class="fd-input-group fd-shellbar__search-field">
-                        <span class="fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button">
-                          <div class="fd-select">
-                            <button
-                              aria-expanded="false"
-                              aria-haspopup="listbox"
-                              aria-labelledby="cozySelectLabel cozySelectValue"
-                              class="fd-select__control fd-shellbar__search-category"
-                              id="cozySelectCombobox"
-                              onclick="
-                                  toggleElAttrs('h0C6A325', ['aria-hidden']);
-                                  toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
-                              "
-                              value="List Item 1"
-                              tabindex="0">
-                              <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
-                              <span class="fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown">
-                                  <i class="sap-icon--slim-arrow-down"></i>
-                              </span>
-                          </button>
-                      </div>
-                        </span>
-                            <input aria-label="search-input" type="text" onfocus="addClass('JKHhjk7234k', 'is-focus')" onblur="removeClass('JKHhjk7234k', 'is-focus')" class="fd-input fd-input-group__input fd-shellbar__search-field-input" id="F4GcX348b1" placeholder="Search everything">
-                            <span class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button">
-                                <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
-                                        <i class="sap-icon--decline"></i>
-                                </button>
-                            </span>
-                            <span class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button">
-                                <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
-                                        <i class="sap-icon--search"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
+        <div class="fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex">
+            <div class="fd-shellbar__action fd-shellbar__action--grow">
+              <div id="JKHhjk7234k" class="fd-input-group fd-shellbar__search-field">
+                <div class="fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button">
+                  <div class="fd-select">
+                    <button
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-labelledby="cozySelectLabel cozySelectValue"
+                      class="fd-select__control fd-shellbar__search-category"
+                      id="cozySelectCombobox"
+                      onclick="
+                          toggleElAttrs('h0C6A325', ['aria-hidden']);
+                          toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                      "
+                      value="List Item 1"
+                      tabindex="0">
+                      <span is="cozySelectValue" class="fd-select__text-content">List Item 1</span>
+                      <span class="fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown">
+                          <i class="sap-icon--slim-arrow-down"></i>
+                      </span>
+                    </button>
+                  </div>
                 </div>
+                <input aria-label="search-input" type="text" onfocus="addClass('JKHhjk7234k', 'is-focus')" onblur="removeClass('JKHhjk7234k', 'is-focus')" class="fd-input fd-input-group__input fd-shellbar__search-field-input" id="F4GcX348b1" placeholder="Search everything">
+                <div class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button">
+                  <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
+                    <i class="sap-icon--decline"></i>
+                  </button>
+                </div>
+                <div class="fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button">
+                  <button aria-label="button-search" class="fd-shellbar__button fd-button fd-button--transparent">
+                    <i class="sap-icon--search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink">
+              <button class="fd-button fd-button--transparent">Cancel</button>
             </div>
         </div>
         <div class="fd-shellbar__group fd-shellbar__group--actions">
@@ -335,7 +334,6 @@ The shellbar can be optimized for extra-large screens. To achieve this style, ad
         }
     }
 };
-
 
 export const LinksWithCollapsibleMenuMSize = () => `<div style="height:300px; max-width: 1024px;">
     <div class="fd-shellbar fd-shellbar--m">
@@ -953,13 +951,13 @@ export const ResponsivePaddings = () => `<div style="height:300px">
 </div>
 `;
 
-ResponsivePaddings.storyName = 'ResponsivePaddings';
+ResponsivePaddings.storyName = 'Responsive Paddings';
 
 ResponsivePaddings.parameters = {
     docs: {
         description: {
             story: `
-bla bla bla
+The Shellbar paddings can be made responsive. Meaning that based on the current size of the shellbar paddings will be different.
         `
         }
     }
