@@ -200,6 +200,8 @@ $block: #{$fd-namespace}-shellbar;
 
   // Elements inside shellbar groups
   .#{$block}__group {
+    --fdShellbar_Button_Active_Background: var(--sapShell_Active_Background);
+    --fdShellbar_Button_Active_Color: var(--sapShell_Active_TextColor);
     .#{$block}__action {
       @include fd-reset();
 
@@ -251,6 +253,8 @@ $block: #{$fd-namespace}-shellbar;
             > * {
               --fdButtonBackgroundColor: var(--fdShellbar_Search_Active_Button_Background);
               --fdButtonColor: var(--fdShellbar_Search_Active_Button_Color);
+              --fdShellbar_Button_Active_Background: var(--fdButtonBackgroundColor);
+              --fdShellbar_Button_Active_Color: var(--fdShellbar_Search_Active_Button_Color);
 
               @include fd-set-border-left(var(--fdShellbar_Button_Left_Border));
 
@@ -288,7 +292,7 @@ $block: #{$fd-namespace}-shellbar;
         }
       }
 
-      &-category {
+      .#{$block}__search-field-category {
         flex-shrink: 0;
 
         @include fd-hover() {
@@ -405,8 +409,7 @@ $block: #{$fd-namespace}-shellbar;
         }
 
         .#{$block}__search-field-addon {
-          background: transparent;
-          background-color: var(--fdShellbar_Search_Hover_Background);
+          --fdInputGroup_Addon_Background: var(--fdShellbar_Search_Hover_Background);
         }
 
         .#{$block}__search-category {
@@ -446,8 +449,8 @@ $block: #{$fd-namespace}-shellbar;
 
       @include fd-active() {
         border-color: var(--fdShellbar_Button_Active_Border_Color);
-        background: var(--sapShell_Active_Background);
-        color: var(--sapShell_Active_TextColor);
+        background: var(--fdShellbar_Button_Active_Background);
+        color: var(--fdShellbar_Button_Active_Color);
       }
 
       &--menu {
