@@ -1,0 +1,44 @@
+@use "../mixins" as *;
+
+@mixin fd-table-nested-cell-padding($levels: 20, $content-density-cozy: false, $include-expand: false) {
+  $level-padding: 0.5rem;
+  $second-level-padding: 1.5rem;
+  $third-level-padding: if($content-density-cozy, 0.5rem, 0.75rem);
+  $expand-padding: if($include-expand, if($content-density-cozy, 2.75rem, 2rem), 0);
+
+  @for $i from 1 through $levels {
+    &[data-nesting-level='#{$i}'] {
+      @if $i == 1 {
+        padding-left: $expand-padding;
+
+        @include fd-rtl() {
+          padding-left: 0.5rem;
+          padding-right: $expand-padding;
+        }
+      } @else if $i == 2 {
+        padding-left: $second-level-padding + $expand-padding;
+
+        @include fd-rtl() {
+          padding-left: 0.5rem;
+          padding-right: $second-level-padding + $expand-padding;
+        }
+      } @else if $i == 3 {
+        padding-left: $second-level-padding + $third-level-padding + $expand-padding;
+
+        @include fd-rtl() {
+          padding-left: 0.5rem;
+          padding-right: $second-level-padding + $third-level-padding + $expand-padding;
+        }
+      } @else {
+        /* stylelint-disable-line */
+        padding-left: $second-level-padding + $third-level-padding + (($i - 2) * $level-padding) + $expand-padding;
+
+        @include fd-rtl() {
+          padding-left: 0.5rem;
+          /* stylelint-disable-line */
+          padding-right: $second-level-padding + $third-level-padding + (($i - 2) * $level-padding) + $expand-padding;
+        }
+      }
+    }
+  }
+}

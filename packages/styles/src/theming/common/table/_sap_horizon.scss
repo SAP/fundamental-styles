@@ -3,11 +3,8 @@
   --fdTable_Header_Cell_Active_Background: var(--sapList_Active_Background);
   --fdTable_Header_Cell_Font_Weight: bold;
   --fdTable_Header_Cell_Hover_Active_Color: var(--sapList_HeaderTextColor);
-  --fdTable_Header_Border_Top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-  --fdTable_Header_Border_Bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
+  --fdTable_Header_Horizontal_Border: var(--sapList_BorderWidth) solid var(--sapList_HeaderBorderColor);
   --fdTable_Group_Header_Background: var(--sapList_TableGroupHeaderBackground);
-  --fdTable_Group_Header_Border_Color: var(--sapList_TableGroupHeaderBorderColor);
-  --fdTable_Cell_Active_Border_Bottom_Color: var(--sapList_Active_Background);
   --fdTable_Border_Radius: 0.5rem;
   --fdTable_Condensed_Focus_Outline_Offset: -0.0625rem;
 }

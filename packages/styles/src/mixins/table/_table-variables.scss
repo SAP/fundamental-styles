@@ -1,0 +1,30 @@
+@use "../../new-settings" as *;
+@use "../mixins" as *;
+
+$block: #{$fd-namespace}-table;
+
+/** ELEMENTS */
+$header: #{$block}__header;
+$body: #{$block}__body;
+$footer: #{$block}__footer;
+$row: #{$block}__row;
+$cell: #{$block}__cell;
+
+/** TABLE MODIFIERS */
+$responsive: --responsive;
+$pop-in: --pop-in;
+$no-outer-border: --no-outer-border;
+$no-vertical-borders: --no-vertical-borders;
+$no-horizontal-borders: --no-horizontal-borders;
+
+/** TABLE ROWS MODIFIERS */
+$group: --group;
+$activable: --activable;
+$main: --main;
+$secondary: --secondary;
+
+/** TABLE CELLS MODIFIERS */
+$fixed: --fixed;
+$fixed-last: --fixed-last;
+$fixed-end: --fixed-end;
+$fixed-end-last: --fixed-end-last;

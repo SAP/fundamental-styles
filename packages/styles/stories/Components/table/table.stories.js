@@ -1428,16 +1428,6 @@ Table can display menu options from a popover within headers. The example below 
 };
 
 export const FixColumnHeader = () => `<style>
-        .fd-table--fixed {
-            padding-left: 200px;
-        }
-
-        [dir=rtl] .fd-table--fixed,
-        .fd-table--fixed[dir=rtl] {
-            padding-left: 0;
-            padding-right: 200px;
-        }
-
         .fd-table--fixed .fd-table__cell {
             min-width: 200px;
             max-width: 200px;
@@ -1469,7 +1459,7 @@ export const FixColumnHeader = () => `<style>
                     <th class="fd-table__cell" scope="col">
                         Header Column
                     </th>
-                    <th class="fd-table__cell" scope="col">
+                    <th class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last" scope="col">
                         Header Column
                     </th>
                 </tr>
@@ -1483,7 +1473,7 @@ export const FixColumnHeader = () => `<style>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
                 </tr>
                 <tr class="fd-table__row">
                     <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
@@ -1493,7 +1483,7 @@ export const FixColumnHeader = () => `<style>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
                 </tr>
                 <tr class="fd-table__row">
                     <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
@@ -1503,7 +1493,7 @@ export const FixColumnHeader = () => `<style>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
                     <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                    <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
                 </tr>
             </tbody>
         </table>

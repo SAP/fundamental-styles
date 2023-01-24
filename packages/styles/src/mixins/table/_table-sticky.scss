@@ -1,0 +1,37 @@
+@use "../mixins" as *;
+@use "./table-variables" as *;
+
+@mixin fd-table-sticky() {
+  &#{$fixed} {
+    @include fd-scrollbar();
+
+    overflow-x: scroll;
+  }
+
+  .#{$cell}#{$fixed},
+  .#{$cell}#{$fixed-end} {
+    z-index: 1;
+    position: sticky;
+    display: table-cell;
+    background-color: inherit;
+  }
+
+  .#{$cell}#{$fixed} {
+    @include fd-set-position-left(0);
+  }
+
+  .#{$cell}#{$fixed-end} {
+    @include fd-set-position-right(0);
+  }
+
+  .#{$header} .#{$cell} {
+    top: 0;
+    z-index: 2;
+    position: sticky;
+  }
+
+  .#{$header} .#{$cell}#{$fixed},
+  .#{$header} .#{$cell}#{$fixed-end} {
+    z-index: 3;
+  }
+}

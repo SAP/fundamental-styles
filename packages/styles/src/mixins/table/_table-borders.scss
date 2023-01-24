@@ -1,0 +1,238 @@
+@use "./table-variables" as *;
+@use "../mixins" as *;
+
+$fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+$fd-table-fixed-border: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+
+@mixin fd-table-borders() {
+  /** TABLE */
+
+  border-collapse: separate;
+  border-spacing: 0;
+  border-bottom-left-radius: var(--fdTable_Border_Radius);
+  border-bottom-right-radius: var(--fdTable_Border_Radius);
+
+  /** DEFAULTS & FIXED (FIRST AND LAST) */
+
+  .#{$cell} {
+    border-bottom: $fd-table-border;
+    border-left: $fd-table-border;
+
+    &:last-child {
+      border-right: $fd-table-border;
+    }
+
+    &#{$fixed-last} {
+      border-right: $fd-table-fixed-border;
+
+      +.#{$cell} {
+        border-left: none;
+      }
+    }
+
+    &#{$fixed-end-last} {
+      border-left: $fd-table-fixed-border;
+    }
+
+    @include fd-rtl() {
+      border-left: none;
+      border-right: $fd-table-border;
+
+      &:last-child {
+        border-left: $fd-table-border;
+      }
+
+      &.#{$cell}#{$fixed-last} {
+        border-left: $fd-table-fixed-border;
+
+        +.#{$cell} {
+          border-right: none;
+        }
+      }
+
+      &.#{$cell}#{$fixed-end-last} {
+        border-right: $fd-table-fixed-border;
+      }
+    }
+  }
+
+  .#{$row} {
+    @include fd-selected() {
+      .#{$cell} {
+        border-bottom-color: var(--sapList_SelectionBorderColor);
+      }
+    }
+
+    &#{$activable} {
+      @include fd-active() {
+        .#{$cell} {
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
+      }
+
+      @include fd-selected() {
+        .#{$cell} {
+          border-bottom-color: var(--sapList_SelectionBorderColor);
+        }
+      }
+    }
+  }
+
+  /** HEADER AND FOOTER CELLS */
+
+  .#{$header} {
+    .#{$cell} {
+      border-top: var(--fdTable_Header_Horizontal_Border);
+      border-bottom: var(--fdTable_Header_Horizontal_Border);
+    }
+  }
+
+  .#{$body}:not(:last-child) {
+    .#{$row}:last-child {
+      .#{$cell} {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  .#{$footer} {
+    .#{$cell} {
+      border-top: 0.125rem solid var(--sapList_TableFooterBorder);
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+  /** MODIFIERS */
+
+  &,
+  &__body,
+  &__header {
+    &#{$no-vertical-borders} {
+      .#{$row} {
+        .#{$cell} {
+          &:not(:first-child) {
+            border-left-color: transparent;
+
+            @include fd-rtl() {
+              border-right-color: transparent;
+            }
+          }
+
+          &:last-child {
+            @include fd-rtl() {
+              border-left: $fd-table-border;
+            }
+          }
+        }
+      }
+    }
+
+    &#{$no-horizontal-borders} {
+      .#{$row}:not(:last-child) {
+        .#{$cell} {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+
+  .#{$cell}#{$no-vertical-borders} {
+    &+.#{$cell} {
+      border-left-color: transparent;
+    }
+
+    @include fd-rtl() {
+      border-right-color: transparent;
+    }
+  }
+
+  .#{$cell}#{$no-horizontal-borders} {
+    border-bottom-color: transparent;
+  }
+
+  &#{$responsive},
+  &#{$no-outer-border} {
+    .#{$header} {
+      .#{$cell} {
+        border-top-color: transparent;
+      }
+    }
+
+    .#{$cell}:first-child {
+      border-left-color: transparent;
+
+      @include fd-rtl() {
+        border-left-color: var(--sapList_BorderColor);
+        border-right-color: transparent;
+      }
+    }
+
+    .#{$cell}:last-child {
+      border-right-color: transparent;
+
+      @include fd-rtl() {
+        border-right-color: var(--sapList_BorderColor);
+        border-left-color: transparent;
+      }
+    }
+
+    .#{$body} {
+      .#{$row}:last-child {
+        .#{$cell} {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+
+  &#{$pop-in} {
+
+    .#{$row}#{$main},
+    .#{$row}#{$secondary} {
+      .#{$cell} {
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+
+    .#{$row}#{$main} {
+      .#{$cell} {
+        border-bottom-color: transparent;
+      }
+
+      &.#{$row}#{$activable} {
+        @include fd-active() {
+          .#{$cell} {
+            border-bottom-color: transparent;
+          }
+
+          +.#{$row}#{$secondary} {
+            .#{$cell} {
+              border-bottom-color: var(--sapList_SelectionBorderColor);
+            }
+          }
+        }
+      }
+
+      @include fd-selected() {
+        .#{$cell} {
+          border-bottom-color: transparent;
+        }
+
+        +.#{$row}#{$secondary} {
+          .#{$cell} {
+            border-bottom-color: var(--sapList_SelectionBorderColor);
+          }
+        }
+      }
+    }
+  }
+
+  &#{$group} {
+    .#{$cell}#{$group} {
+      border-bottom-color: var(--sapList_TableGroupHeaderBorderColor);
+    }
+  }
+}
