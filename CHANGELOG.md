@@ -1,3 +1,12 @@
+# [0.27.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.0...v0.27.0-rc.1) (2023-01-24)
+
+
+### Bug Fixes
+
+* **styles:** select's, step-input's button border styles in hc [ci visual] ([#4198](https://github.com/SAP/fundamental-styles/issues/4198)) ([52a719c](https://github.com/SAP/fundamental-styles/commit/52a719ca45ec75509518493a9ec66a1fa3dc129b))
+
+
+
 # [0.27.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.26.5...v0.27.0-rc.0) (2023-01-18)
 
 
