@@ -65,16 +65,13 @@
     margin: 0;
   }
 
+  --fd-table-header-cell-height: 2.75rem;
+  --fd-table-cell-height: 2.75rem;
+
   // LOCAL VARS
   $fd-table-cell-padding: 0.5rem;
-  $fd-table-first-cell-padding: 1rem;
-  $fd-table-cozy-cell-height: 2.75rem;
-  $fd-table-compact-cell-height: 2rem;
-  $fd-table-condensed-cell-height: 1.5rem;
-  $fd-table-navigation-icon-width: 2rem;
 
   // Thanks to table-cell specification, if the width is set to small value, the cell will have content width
-  $fd-table-cell-fit-content-width: 0.5rem;
   $fd-table-basic-background: var(--sapList_Background);
 
   // BLOCK BASE *******************************************
@@ -108,8 +105,8 @@
     &--navigation {
       @include fd-icon-selector() {
         font-size: var(--sapFontSmallSize);
-        width: $fd-table-navigation-icon-width;
-        min-width: $fd-table-navigation-icon-width;
+        width: 2rem;
+        min-width: 2rem;
         height: 100%;
       }
     }
@@ -117,7 +114,7 @@
 
   &__header {
     .#{$block}__cell {
-      height: $fd-table-cozy-cell-height;
+      height: var(--fd-table-header-cell-height);
       background-color: var(--sapList_HeaderBackground);
       color: var(--sapList_HeaderTextColor);
       font-weight: var(--fdTable_Header_Cell_Font_Weight);
@@ -148,7 +145,7 @@
 
   &__cell {
     text-align: left;
-    height: $fd-table-cozy-cell-height;
+    height: var(--fd-table-cell-height);
     padding: 0 $fd-table-cell-padding;
     color: inherit;
     outline: none;
@@ -179,14 +176,14 @@
     }
 
     &--checkbox {
-      width: $fd-table-cozy-cell-height;
+      width: var(--fd-table-header-cell-height);
       vertical-align: baseline;
 
       @include fd-table-reset-spacing();
     }
 
     &--fit-content {
-      width: $fd-table-cell-fit-content-width;
+      width: 0.5rem;
       word-break: keep-all;
       white-space: nowrap;
     }
@@ -225,7 +222,7 @@
     }
 
     @include fd-first-child() {
-      padding-left: $fd-table-first-cell-padding;
+      @include fd-set-padding-left(1rem);
 
       &.#{$block}__cell--checkbox,
       &.#{$block}__cell--status-indicator {
@@ -234,7 +231,6 @@
 
       @include fd-rtl() {
         padding-left: $fd-table-cell-padding;
-        padding-right: $fd-table-first-cell-padding;
 
         &.#{$block}__cell--checkbox,
         &.#{$block}__cell--status-indicator {
@@ -462,29 +458,15 @@
   }
 
   &--compact {
-    .#{$block}__body,
-    .#{$block}__footer {
-      .#{$block}__cell {
-        height: $fd-table-compact-cell-height;
-      }
-    }
-
-    &.#{$block}--tree,
-    &.#{$block}--group {
-      .#{$block}__body .#{$block}__cell {
-        .#{$block}__expand {
-          height: $fd-table-compact-cell-height;
-        }
-      }
-    }
+    --fd-table-cell-height: 2rem;
   }
 
   &--condensed {
+    --fd-table-cell-height: 1.5rem;
+
     .#{$block}__body,
     .#{$block}__footer {
       .#{$block}__cell {
-        height: $fd-table-condensed-cell-height;
-
         &--checkbox {
           .#{$block}__checkbox-label {
             margin-top: -0.25rem;
@@ -500,19 +482,12 @@
         }
       }
     }
-
-    &.#{$block}--tree,
-    &.#{$block}--group {
-      .#{$block}__body .#{$block}__cell {
-        .#{$block}__expand {
-          height: $fd-table-condensed-cell-height;
-        }
-      }
-    }
   }
 
   &--compact,
   &--condensed {
+    --fd-table-header-cell-height: 2rem;
+
     &.#{$block}--tree,
     &.#{$block}--group {
       .#{$block}__body .#{$block}__cell {
@@ -521,22 +496,6 @@
         &--expand {
           @include fd-table-nested-cell-padding(20, false);
         }
-
-        .#{$block}__expand {
-          width: $fd-table-compact-cell-height;
-        }
-      }
-    }
-
-    .#{$block}__header {
-      .#{$block}__cell {
-        height: $fd-table-compact-cell-height;
-      }
-    }
-
-    .#{$block}__cell {
-      &--checkbox {
-        width: $fd-table-compact-cell-height;
       }
     }
   }
@@ -563,8 +522,8 @@
       }
 
       .#{$block}__expand {
-        width: $fd-table-cozy-cell-height;
-        height: $fd-table-cozy-cell-height;
+        width: var(--fd-table-header-cell-height);
+        height: var(--fd-table-cell-height);
         color: var(--sapContent_IconColor);
         font-size: var(--sapFontSmallSize);
 
