@@ -15,51 +15,6 @@
 */
 
 .#{$block} {
-  @mixin fd-table-active() {
-    background-color: var(--sapList_Active_Background);
-    color: var(--sapList_Active_TextColor);
-
-    .#{$block}__cell {
-      @include fd-hover() {
-        background-color: var(--sapList_Active_Background);
-      }
-    }
-
-    .#{$block}__text {
-      text-shadow: none;
-    }
-
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        color: var(--sapContent_ContrastIconColor);
-      }
-    }
-
-    .#{$fd-namespace}-link,
-    .#{$fd-namespace}-form-label,
-    .#{$fd-namespace}-object-status {
-      color: inherit;
-    }
-  }
-
-  @mixin fd-table-row-active-focus() {
-    @include fd-fiori-focus() {
-      outline-color: var(--sapContent_ContrastFocusColor);
-    }
-  }
-
-  @mixin fd-trigger-element() {
-    cursor: pointer;
-
-    @include fd-active() {
-      @include fd-table-active();
-
-      &--focusable {
-        @include fd-table-row-active-focus();
-      }
-    }
-  }
-
   --fd-table-header-cell-height: 2.75rem;
   --fd-table-cell-height: 2.75rem;
 
@@ -174,6 +129,10 @@
       }
     }
 
+    @include fd-rtl() {
+      text-align: right;
+    }
+
     &--no-data {
       text-align: center;
     }
@@ -212,46 +171,34 @@
       }
     }
 
-    @include fd-first-child() {
+    &:first-child:not(.#{$block}__cell--checkbox, &.#{$block}__cell--status-indicator) {
       @include fd-set-padding-left(1rem);
-
-      &.#{$block}__cell--checkbox,
-      &.#{$block}__cell--status-indicator {
-        padding: 0;
-      }
 
       @include fd-rtl() {
         padding-left: $fd-table-cell-padding;
-
-        &.#{$block}__cell--checkbox,
-        &.#{$block}__cell--status-indicator {
-          padding: 0;
-        }
       }
     }
   }
 
-  &__body {
-    .#{$block}__row {
-      background-color: $fd-table-basic-background;
+  &__row {
+    background-color: var(--sapList_Background);
 
+    @include fd-selected() {
+      background-color: var(--sapList_SelectionBackgroundColor);
+    }
+
+    &--hoverable {
       @include fd-selected() {
-        background-color: var(--sapList_SelectionBackgroundColor);
-
         @include fd-hover() {
           background-color: var(--sapList_Hover_SelectionBackground);
         }
       }
+    }
 
-      &--activable {
-        @include fd-selected() {
-          @include fd-active() {
-            background-color: var(--sapList_Active_Background);
-
-            &.#{$block}__row--focusable {
-              @include fd-table-row-active-focus();
-            }
-          }
+    &--activable {
+      @include fd-selected() {
+        @include fd-active() {
+          background-color: var(--sapList_Active_Background);
         }
       }
     }
@@ -260,43 +207,56 @@
   &__cell,
   &__row {
     &--hoverable {
-      @include fd-selected() {
-        .#{$block}__cell:not(.#{$block}__cell--status-indicator) {
-          @include fd-hover() {
-            background-color: var(--sapList_Hover_SelectionBackground);
-          }
-        }
+      @include fd-hover() {
+        background-color: var(--sapList_Hover_Background);
+        color: var(--fdTable_Hover_Down_Color);
       }
+    }
 
-      &:not(.#{$block}__cell--status-indicator),
-      .#{$block}__cell:not(.#{$block}__cell--status-indicator) {
-        @include fd-hover() {
-          background-color: var(--sapList_Hover_Background);
-          color: var(--fdTable_Hover_Down_Color);
+    &--activable,
+    &--focusable {
+      @include fd-fiori-focus();
+
+      @include fd-selected() {
+        @include fd-fiori-focus() {
+          outline-color: var(--sapContent_ContrastFocusColor);
         }
       }
     }
 
     &--activable {
-      @include fd-fiori-focus();
+      cursor: pointer;
 
       @include fd-active() {
+        background-color: var(--sapList_Active_Background);
+        color: var(--sapList_Active_TextColor);
+
         * {
           color: var(--sapList_Active_TextColor) !important;
         }
 
-        @include fd-table-row-active-focus();
+        .#{$block}__cell {
+          @include fd-hover() {
+            background-color: var(--sapList_Active_Background);
+          }
+        }
+
+        .#{$block}__text {
+          text-shadow: none;
+        }
+
+        .#{$block}__icon {
+          @include fd-icon-selector() {
+            color: var(--sapContent_ContrastIconColor);
+          }
+        }
+
+        .#{$fd-namespace}-link,
+        .#{$fd-namespace}-form-label,
+        .#{$fd-namespace}-object-status {
+          color: inherit;
+        }
       }
-
-      @include fd-trigger-element();
-
-      @include fd-selected() {
-        @include fd-trigger-element();
-      }
-    }
-
-    &--focusable {
-      @include fd-fiori-focus();
     }
   }
 
@@ -342,10 +302,8 @@
     @include fd-screen-reader-only();
   }
 
-  &__item {
-    &--clickable {
-      cursor: pointer;
-    }
+  &__item--clickable {
+    cursor: pointer;
   }
 
   &__popover.#{$fd-namespace}-popover {
@@ -411,14 +369,6 @@
         }
       }
 
-      &.#{$block}__row--activable:not(:hover) {
-        @include fd-active() {
-          + .#{$block}__row--secondary {
-            @include fd-table-active();
-          }
-        }
-      }
-
       @include fd-selected() {
         @include fd-hover() {
           + .#{$block}__row--secondary {
@@ -457,17 +407,16 @@
 
     .#{$block}__body,
     .#{$block}__footer {
-      .#{$block}__cell {
-        &--checkbox {
-          .#{$block}__checkbox-label {
-            margin-top: -0.25rem;
-            position: absolute;
-          }
+      .#{$block}__cell--checkbox {
+        .#{$block}__checkbox-label {
+          margin-top: -0.25rem;
+          position: absolute;
         }
       }
 
       .#{$block}__cell,
       .#{$block}__row {
+        &--activable,
         &--focusable {
           @include fd-fiori-focus(var(--fdTable_Condensed_Focus_Outline_Offset));
         }
@@ -482,11 +431,5 @@
 
   &--hidden {
     display: none;
-  }
-
-  @include fd-rtl() {
-    .#{$block}__cell {
-      text-align: right;
-    }
   }
 }
