@@ -3,7 +3,7 @@
 @import "./mixins/table/table-variables";
 @import "./mixins/table/table-borders";
 @import "./mixins/table/table-sticky";
-@import "./mixins/table/table-nesting";
+@import "./mixins/table/table-group-and-tree";
 
 /*!
 .fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed, --hidden, --tree, --group)
@@ -80,6 +80,7 @@
 
   @include fd-table-borders();
   @include fd-table-sticky();
+  @include fd-table-group-and-tree();
 
   width: 100%;
   max-width: 100%;
@@ -477,62 +478,6 @@
   &--compact,
   &--condensed {
     --fd-table-header-cell-height: 2rem;
-
-    &.#{$block}--tree,
-    &.#{$block}--group {
-      .#{$block}__body .#{$block}__cell {
-        @include fd-table-nested-cell-padding(20, false, true);
-
-        &--expand {
-          @include fd-table-nested-cell-padding(20, false);
-        }
-      }
-    }
-  }
-
-  &--group {
-    .#{$block}__body .#{$block}__cell {
-      &--group {
-        background-color: var(--fdTable_Group_Header_Background);
-        font-weight: var(--fdTable_Header_Cell_Font_Weight);
-      }
-    }
-  }
-
-  &--tree,
-  &--group {
-    .#{$block}__body .#{$block}__cell {
-      @include fd-table-nested-cell-padding(20, true, true);
-
-      &--expand {
-        cursor: pointer;
-        white-space: nowrap;
-
-        @include fd-table-nested-cell-padding(20, true);
-      }
-
-      .#{$block}__expand {
-        width: var(--fd-table-header-cell-height);
-        height: var(--fd-table-cell-height);
-        color: var(--sapContent_IconColor);
-        font-size: var(--sapFontSmallSize);
-
-        @include fd-inline-flex-center();
-        @include fd-icon("navigation-right-arrow");
-
-        @include fd-rtl() {
-          @include fd-icon("navigation-left-arrow");
-
-          &.#{$block}__expand--open {
-            @include fd-icon("navigation-down-arrow");
-          }
-        }
-
-        &--open {
-          @include fd-icon("navigation-down-arrow");
-        }
-      }
-    }
   }
 
   &--hidden {
