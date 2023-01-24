@@ -1,5 +1,5 @@
-@use "./table-variables" as *;
-@use "../mixins" as *;
+@import "./table-variables";
+@import "../mixins";
 
 $fd-table-border: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
 $fd-table-fixed-border: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);

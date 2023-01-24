@@ -1,12 +1,9 @@
-/* stylelint-disable */
-@use "./mixins/table/table-variables" as *;
-@use "./mixins/table/table-borders";
-@use "./mixins/table/table-sticky";
-@use "./mixins/table/table-nesting";
-
 @import "./new-settings";
 @import "./mixins";
-/* stylelint-enable */
+@import "./mixins/table/table-variables";
+@import "./mixins/table/table-borders";
+@import "./mixins/table/table-sticky";
+@import "./mixins/table/table-nesting";
 
 /*!
 .fd-table(--compact, --condensed, --no-horizontal-borders, --no-vertical-borders, --fixed, --hidden, --tree, --group)
@@ -92,8 +89,8 @@
     @include fd-reset();
   }
 
-  @include table-borders.fd-table-borders();
-  @include table-sticky.fd-table-sticky();
+  @include fd-table-borders();
+  @include fd-table-sticky();
 
   width: 100%;
   max-width: 100%;
@@ -519,10 +516,10 @@
     &.#{$block}--tree,
     &.#{$block}--group {
       .#{$block}__body .#{$block}__cell {
-        @include table-nesting.fd-table-nested-cell-padding(20, false, true);
+        @include fd-table-nested-cell-padding(20, false, true);
 
         &--expand {
-          @include table-nesting.fd-table-nested-cell-padding(20, false);
+          @include fd-table-nested-cell-padding(20, false);
         }
 
         .#{$block}__expand {
@@ -556,13 +553,13 @@
   &--tree,
   &--group {
     .#{$block}__body .#{$block}__cell {
-      @include table-nesting.fd-table-nested-cell-padding(20, true, true);
+      @include fd-table-nested-cell-padding(20, true, true);
 
       &--expand {
         cursor: pointer;
         white-space: nowrap;
 
-        @include table-nesting.fd-table-nested-cell-padding(20, true);
+        @include fd-table-nested-cell-padding(20, true);
       }
 
       .#{$block}__expand {

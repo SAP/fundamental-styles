@@ -1,5 +1,4 @@
-@use "../../new-settings" as *;
-@use "../mixins" as *;
+@import "../../new-settings";
 
 $block: #{$fd-namespace}-table;
 

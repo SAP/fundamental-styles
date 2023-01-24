@@ -1,4 +1,4 @@
-@use "../mixins" as *;
+@import "../mixins";
 
 @mixin fd-table-nested-cell-padding($levels: 20, $content-density-cozy: false, $include-expand: false) {
   $level-padding: 0.5rem;

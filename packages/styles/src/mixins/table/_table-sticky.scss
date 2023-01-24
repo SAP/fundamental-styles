@@ -1,5 +1,5 @@
-@use "../mixins" as *;
-@use "./table-variables" as *;
+@import "./table-variables";
+@import "../mixins";
 
 @mixin fd-table-sticky() {
   &#{$fixed} {
