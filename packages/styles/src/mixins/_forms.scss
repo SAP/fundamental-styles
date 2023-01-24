@@ -233,6 +233,32 @@ $fd-input-field-height--compact: 1.625rem;
   }
 }
 
+@mixin fd-input-group-button($selector, $first: true) {
+  #{$selector} {
+    @if $first {
+      @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder));
+
+      @include fd-hover() {
+        @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
+      }
+
+      @include fd-active() {
+        @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
+      }
+    } @else {
+      @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder));
+
+      @include fd-hover() {
+        @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
+      }
+
+      @include fd-active() {
+        @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
+      }
+    }
+  }
+}
+
 @mixin fd-input-group-button-overwrite() {
   $fd-input-group-button-states: (
     'success': (
@@ -257,35 +283,12 @@ $fd-input-field-height--compact: 1.625rem;
     )
   );
 
-  .#{$block}__addon {
-    &:first-child {
-      .#{$block}__button {
-        @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder));
+  @include fd-input-group-button(".#{$block}__button:first-child");
+  @include fd-input-group-button(".#{$block}__button:not(:first-child)", false);
 
-        @include fd-hover() {
-          @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
-
-        @include fd-active() {
-          @include fd-set-border-right(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
-      }
-    }
-
-    &:not(:first-child) {
-      .#{$block}__button {
-        @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder));
-
-        @include fd-hover() {
-          @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
-
-        @include fd-active() {
-          @include fd-set-border-left(var(--fdInputGroup_ControlButton_SideBorder_Active));
-        }
-      }
-    }
-  }
+  // To support `fd-input-group__addon` and avoid breaking changes
+  @include fd-input-group-button(".#{$block}__addon:first-child .#{$block}__button");
+  @include fd-input-group-button(".#{$block}__addon:not(:first-child) .#{$block}__button", false);
 
   .#{$block}__button {
     @include fd-ellipsis();
