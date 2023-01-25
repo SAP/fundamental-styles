@@ -1,0 +1,107 @@
+@import "../mixins";
+
+@mixin fd-table-responsive() {
+  &--pop-in {
+    .#{$block}__text {
+      color: inherit;
+      margin-bottom: 0.5rem;
+
+      &--title {
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .#{$block}__cell {
+      &--checkbox {
+        + .#{$block}__cell {
+          @include fd-set-padding-left(0);
+
+          @include fd-rtl() {
+            padding-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .#{$block}__body {
+      .#{$block}__cell {
+        height: auto;
+      }
+    }
+
+    .#{$block}__row {
+      &--main,
+      &--secondary {
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      &--main {
+        .#{$block}__cell {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          border-bottom-color: transparent;
+        }
+
+        &.#{$block}__row--hoverable {
+          @include fd-hover() {
+            + .#{$block}__row--secondary {
+              background-color: var(--sapList_Hover_Background);
+            }
+          }
+
+          @include fd-selected() {
+            @include fd-hover() {
+              + .#{$block}__row--secondary {
+                background-color: var(--sapList_Hover_SelectionBackground);
+              }
+            }
+          }
+        }
+
+        &.#{$block}__row--activable {
+          @include fd-active() {
+            .#{$block}__cell {
+              border-bottom-color: transparent;
+            }
+
+            + .#{$block}__row--secondary {
+              background-color: var(--sapList_Active_Background);
+              border-bottom-color: var(--sapList_SelectionBorderColor);
+            }
+          }
+        }
+
+        @include fd-selected() {
+          .#{$block}__cell {
+            border-bottom-color: transparent;
+          }
+
+          + .#{$block}__row--secondary {
+            background-color: var(--sapList_SelectionBackgroundColor);
+            border-bottom-color: var(--sapList_SelectionBorderColor);
+          }
+        }
+      }
+
+      &--secondary {
+        .#{$block}__cell {
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        @include fd-hover() {
+          background-color: var(--sapList_Background);
+        }
+
+        @include fd-active() {
+          background-color: var(--sapList_Background);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "../mixins";
+
+@mixin fd-table-fixed() {
+  .#{$block}--fixed {
+    @include fd-scrollbar();
+
+    overflow-x: scroll;
+  }
+
+  .#{$block}__cell {
+    &--fixed {
+      @include fd-set-position-left(0);
+
+      &,
+      &-end {
+        z-index: 1;
+        position: sticky;
+        display: table-cell;
+        background-color: inherit;
+      }
+
+      &-last {
+        border-right: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+
+        + .#{$block}__cell {
+          border-left: none;
+        }
+      }
+
+      &-end {
+        @include fd-set-position-right(0);
+
+        &-last {
+          border-left: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+        }
+      }
+    }
+  }
+
+  .#{$block}__header {
+    .#{$block}__cell {
+      top: 0;
+      z-index: 2;
+      position: sticky;
+
+      &--fixed,
+      &--fixed-end {
+        z-index: 3;
+      }
+    }
+  }
+
+  @include fd-rtl() {
+    .#{$block}__cell {
+      &--fixed {
+        &-last {
+          border-left: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+
+          + .#{$block}__cell {
+            border-right: none;
+          }
+        }
+
+        &-end-last {
+          border-right: var(--sapList_BorderWidth) solid var(--sapList_TableFixedBorderColor);
+        }
+      }
+    }
+  }
+}

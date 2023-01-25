@@ -1,0 +1,84 @@
+@import "../mixins";
+
+@mixin fd-table-no-borders() {
+  &,
+  &__body,
+  &__header {
+    &--no-vertical-borders {
+      .#{$block}__row {
+        .#{$block}__cell {
+          &:not(:first-child) {
+            border-left-color: transparent;
+
+            @include fd-rtl() {
+              border-right-color: transparent;
+            }
+          }
+
+          &:last-child {
+            @include fd-rtl() {
+              border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+            }
+          }
+        }
+      }
+    }
+
+    &--no-horizontal-borders {
+      .#{$block}__row:not(:last-child) {
+        .#{$block}__cell {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+
+  .#{$block}__cell--no-vertical-borders {
+    & + .#{$block}__cell {
+      border-left-color: transparent;
+    }
+
+    @include fd-rtl() {
+      border-right-color: transparent;
+    }
+  }
+
+  .#{$block}__cell--no-horizontal-borders {
+    border-bottom-color: transparent;
+  }
+
+  &--responsive,
+  &--no-outer-border {
+    .#{$block}__header {
+      .#{$block}__cell {
+        border-top-color: transparent;
+      }
+    }
+
+    .#{$block}__cell:first-child {
+      border-left-color: transparent;
+
+      @include fd-rtl() {
+        border-left-color: var(--sapList_BorderColor);
+        border-right-color: transparent;
+      }
+    }
+
+    .#{$block}__cell:last-child {
+      border-right-color: transparent;
+
+      @include fd-rtl() {
+        border-right-color: var(--sapList_BorderColor);
+        border-left-color: transparent;
+      }
+    }
+
+    .#{$block}__body {
+      .#{$block}__row:last-child {
+        .#{$block}__cell {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+  }
+}

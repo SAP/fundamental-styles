@@ -48,6 +48,7 @@
     .#{$block}__cell--group {
       background-color: var(--fdTable_Group_Header_Background);
       font-weight: var(--fdTable_Header_Cell_Font_Weight);
+      border-bottom-color: var(--sapList_TableGroupHeaderBorderColor);
     }
   }
 
