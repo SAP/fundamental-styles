@@ -1,3 +1,12 @@
+# [0.27.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.1...v0.27.0-rc.2) (2023-01-25)
+
+
+### Features
+
+* **styles:** add new examples for ShellBar ([#4172](https://github.com/SAP/fundamental-styles/issues/4172)) ([12cba2c](https://github.com/SAP/fundamental-styles/commit/12cba2c2f05c73f443caf8df01245534f73d5c6c))
+
+
+
 # [0.27.0-rc.1](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.0...v0.27.0-rc.1) (2023-01-24)
 
 
