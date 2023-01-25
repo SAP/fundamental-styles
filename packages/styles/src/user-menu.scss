@@ -8,40 +8,60 @@ $block: #{$fd-namespace}-user-menu;
     @include fd-reset();
 
     width: 18rem;
-    padding: 1rem 0;
+    padding: var(--fdUserMenu_Body_Padding);
 
-    &--compact {
-      padding: 1rem 0.5rem;
+    &.#{$block}__body--compact {
+      padding: var(--fdUserMenu_Body_Padding_Compact);
+
+      .#{$block}__subheader {
+        margin-bottom: var(--fdUserMenu_SubHeader_Margin_Bottom_Compact);
+      }
     }
 
-    &--no-padding {
-      padding: 0 !important;
+    &.#{$block}__body--no-padding {
+      padding: 0;
+    }
+
+    &.#{$block}__body--default {
+      width: var(--fdUserMenu_Body_Width);
+    }
+
+    ul:last-child li:last-child::before,
+    ul li:last-child::before,
+    ul li:last-child a::before,
+    ul:first-child li:first-child::before,
+    ul li:first-child::before,
+    ul li:first-child a::before {
+      border-radius: 0 !important;
     }
   }
 
   &__header {
     @include fd-reset();
-    @include fd-flex();
 
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
+    @include fd-flex() {
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
     padding: 0 1rem;
+    margin-bottom: 0.5rem;
   }
 
   &__subheader {
     @include fd-reset();
 
     width: 100%;
-    margin-bottom: 1rem;
     padding: 0 1rem;
+    margin-bottom: var(--fdUserMenu_SubHeader_Margin_Bottom);
   }
 
   &__user-name {
     @include fd-reset();
 
-    font-size: var(--sapFontLargeSize);
+    font-size: var(--fdUserMenu_User_Name_Font_Size);
     text-align: center;
+    font-weight: var(--fdUserMenu_User_Name_Font_Weight);
   }
 
   &__user-role {
