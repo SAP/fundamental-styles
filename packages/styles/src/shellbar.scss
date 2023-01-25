@@ -329,7 +329,6 @@ $block: #{$fd-namespace}-shellbar;
           }
 
           .#{$block}__search-dropdown {
-            outline: none;
             background-color: var(--fdShellbar_Search_Category_Button_Hover_Background);
           }
         }
@@ -339,6 +338,7 @@ $block: #{$fd-namespace}-shellbar;
         }
         .#{$block}__search-dropdown {
           background-color: var(--fdShellbar_Input_Background);
+          outline: none;
 
           --fdInput_Group_Button_Background: transparent;
           --fdInput_Group_Button_Text_Color: var(--sapShell_InteractiveTextColor);
@@ -369,6 +369,13 @@ $block: #{$fd-namespace}-shellbar;
             background: var(--sapShell_InteractiveBorderColor);
             width: 0.0625rem;
             display: var(--fdShellbar_Search_Separator_Display);
+          }
+
+          @include fd-rtl() {
+            &::before {
+              left: 0;
+              right: auto;
+            }
           }
 
           @include fd-focus() {
