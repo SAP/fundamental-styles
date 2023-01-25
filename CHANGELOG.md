@@ -1,3 +1,12 @@
+# [0.27.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.2...v0.27.0-rc.3) (2023-01-25)
+
+
+### Bug Fixes
+
+* **styles:** add Horizon delta for User Menu [ci visual] ([#4168](https://github.com/SAP/fundamental-styles/issues/4168)) ([f0d242c](https://github.com/SAP/fundamental-styles/commit/f0d242c386bdc94eb05d8e8687e41055d2c4d562))
+
+
+
 # [0.27.0-rc.2](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.1...v0.27.0-rc.2) (2023-01-25)
 
 
