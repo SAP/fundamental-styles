@@ -30,6 +30,7 @@
 @import "./common/info-label/sap_horizon";
 @import "./common/file-uploader/sap_horizon";
 @import "./common/variant-management/sap_horizon";
+@import "./common/shellbar/sap_horizon";
 
 :root {
   /* Busy indicator */
@@ -314,21 +315,6 @@
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);
-
-  /** Shellbar */
-  --fdShellbar_Height: 3.25rem;
-  --fdShellbar_Shadow: none;
-  --fdShellbar_Button_Hover_Border_Color: var(--sapButton_Lite_BorderColor);
-  --fdShellbar_Button_Active_Border_Color: var(--sapButton_Lite_Active_BorderColor);
-  --fdShellbar_Button_Outline_Color: var(--sapContent_FocusColor);
-  --fdShellbar_Input_Border: none;
-  --fdShellbar_Input_Background: var(--sapShell_InteractiveBackground);
-  --fdShellbar_Input_Addon_Border_Width: var(--sapButton_BorderWidth);
-  --fdShellbar_Input_Color: var(--sapShell_InteractiveTextColor);
-  --fdShellbar_Input_Placeholder_Color: var(--sapField_PlaceholderTextColor);
-  --fdShellbar_Input_Border_Radius: 1.125rem;
-  --fdShellbar_Input_Hover_Border_Color: var(--sapField_BorderColor);
-  --fdShellbar_Input_Addon_Dimension: 1.75rem;
 
   /** Message Page */
   --fdMessage_Page_Container_Background: var(--sapGroup_ContentBackground);

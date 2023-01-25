@@ -6,13 +6,14 @@ $fd-select-padding-x: 0.625rem;
 $fd-select-padding-x-compact: 0.5rem;
 
 @mixin fd-select-set-min-width($width) {
-  min-width: calc(#{$width} - var(--sapField_BorderWidth) * 2);
+  min-width: calc(var(--fdSelect_Min_Width) - var(--sapField_BorderWidth) * 2);
 }
 
 @mixin fd-select-button-settings($bkgdColor, $borderLeft) {
   .#{$block}__button {
-    color: var(--sapButton_Active_TextColor);
-    background: var(--sapField_BackgroundStyle);
+    --fdInput_Group_Button_Text_Color: var(--sapButton_Active_TextColor);
+    --fdInput_Group_Button_Background: var(--sapField_BackgroundStyle);
+
     background-color: $bkgdColor;
     border-left-color: $borderLeft;
     box-shadow: var(--fdInput_Group_Button_Box_Shadow);
@@ -90,7 +91,16 @@ $fd-select-padding-x-compact: 0.5rem;
   text-shadow: var(--fdSelect_Text_Shadow);
 
   &__control {
-    @include fd-input-field-base();
+    @include fd-input-field-base(
+      false,
+      true,
+      --fdSelect_Background,
+      --fdSelect_Background_Color,
+      --fdSelect_Hover_Background,
+      --fdSelect_Hover_Background_Color,
+      --fdSelect_Focus_Background,
+      --fdSelect_Min_Width
+    );
     @include fd-input-field-states();
     @include fd-input-group-button-overwrite();
 
@@ -118,7 +128,8 @@ $fd-select-padding-x-compact: 0.5rem;
 
       .#{$block}__text-content {
         @include fd-set-paddings-x-equal($fd-select-padding-x);
-        @include fd-select-set-min-width(5rem);
+
+        --fdSelect_Min_Width: 5rem;
       }
     }
 
@@ -147,8 +158,11 @@ $fd-select-padding-x-compact: 0.5rem;
     @include fd-set-padding-left($fd-select-padding-x);
     @include fd-select-set-min-width(2.5rem);
 
+    --fdSelect_Min_Width: 2.5rem;
+
+    color: var(--fdSelect_Text_Content_Color, var(--sapTextColor));
     cursor: pointer;
-    display: inline-block;
+    display: var(--fdSelect_Text_Content_Display, inline-block);
   }
 
   &--compact {
@@ -158,7 +172,8 @@ $fd-select-padding-x-compact: 0.5rem;
 
       .#{$block}__text-content {
         @include fd-set-padding-left($fd-select-padding-x-compact);
-        @include fd-select-set-min-width(2.75rem);
+
+        --fdSelect_Min_Width: 2.75rem;
       }
 
       @include fd-readonly() {

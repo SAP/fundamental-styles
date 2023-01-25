@@ -12,7 +12,13 @@ $fd-input-padding: 0.625rem;
 $fd-input-border-radius: var(--sapField_BorderCornerRadius);
 
 .#{$block} {
-  @include fd-input-field-base(false, false);
+  @include fd-input-field-base(
+    false,
+    false,
+    --fdInputGroup_Background,
+    --fdInputGroup_Background_Color,
+    --fdInputGroup_Hover_Background,
+    --fdInputGroup_Hover_Background_Color);
   @include fd-input-field-states();
   @include fd-input-group-button-overwrite();
 
@@ -25,22 +31,28 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
   .#{$block}__input {
     @include fd-reset-child-spacing();
 
-    border: none;
     flex: 1 1 10rem;
     background: none;
-    background-color: transparent;
+    background-color: var(--fdInputGroup_Input_Background, transparent);
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     text-shadow: var(--fdInputGroup_Text_Shadow);
+    border: var(--fdInputGroup_Input_Border, none);
+    color: var(--fdInputGroup_Input_Color, inherit);
+
+    &::placeholder {
+      color: var(--fdInputGroup_Input_Placeholder_Color, var(--sapField_PlaceholderTextColor));
+      font-style: var(--fdInputGroup_Input_Placeholder_Style, italic);
+    }
 
     @include fd-hover() {
-      @include fd-input-field-nested-reset();
+      @include fd-input-field-nested-reset(--fdInputGroup_Hover_Input_Background);
     }
 
     @include fd-focus() {
       outline: none;
       box-shadow: none;
-      background: none;
+      background: var(--fdInputGroup_Input_Background, none);
       border-radius: 0;
     }
 
@@ -70,7 +82,7 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     @include fd-ellipsis();
 
     color: var(--sapContent_NonInteractiveIconColor);
-    background: none !important;
+    background: var(--fdInputGroup_Addon_Background, none);
     font-size: var(--sapFontLargeSize);
     min-width: 2.25rem;
     min-height: $fd-form-input-height;

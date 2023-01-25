@@ -1564,7 +1564,7 @@ exports[`Check stories > Components/Button > Story BadgeOnButton > Should match 
             <i class=\\"sap-icon--cart\\" role=\\"presentation\\"></i>
             <span class=\\"fd-button__badge\\">3</span>
         </button>
-        
+
         <h4>Compact</h4>
         <button class=\\"fd-button fd-button--compact\\">
             <span class=\\"fd-button__text\\">Compact Badge Button</span>
@@ -1821,7 +1821,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Standard</span>
@@ -1839,7 +1839,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--ghost\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--ghost\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Ghost</span>
@@ -1848,7 +1848,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--positive\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--positive\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Positive</span>
@@ -1857,7 +1857,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--negative\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--negative\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Negative</span>
@@ -1866,7 +1866,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--attention\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--attention\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Attention</span>
@@ -1875,7 +1875,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <h4>Compact</h4>
         <div class=\\"fd-button-split fd-button-split--emphasized\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--emphasized\\" aria-label=\\"button\\">
@@ -1885,7 +1885,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact \\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Standard</span>
@@ -1903,7 +1903,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--ghost\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--ghost\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Ghost</span>
@@ -1912,7 +1912,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--positive\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--positive\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Positive</span>
@@ -1921,7 +1921,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--negative\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--negative\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Negative</span>
@@ -1930,7 +1930,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-        
+
         <div class=\\"fd-button-split fd-button-split--attention\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--attention\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Attention</span>
@@ -3499,7 +3499,7 @@ exports[`Check stories > Components/Card > Story CardFooterBar > Should match sn
             </div>
         </div>
     </div>
-    
+
 </div>
 "
 `;
@@ -5842,7 +5842,7 @@ exports[`Check stories > Components/File Uploader > Story FileUploaderWithFiles 
         </div>
         <div class=\\"fd-file-uploader__hidden\\" aria-live=\\"polite\\" aria-atomic=\\"true\\"></div>
         <input aria-labelledby=\\"browse_input1_label\\" hidden class=\\"fd-file-uploader__hidden\\" type=\\"file\\">
-        
+
         <div class=\\"fd-file-uploader__uploaded-files\\">
             <h3 class=\\"fd-file-uploader__label\\">File Selected:</h3>
             <ul class=\\"fd-file-uploader__list\\">
@@ -11864,7 +11864,7 @@ exports[`Check stories > Components/Grid List/Grid List > Story PartialItems > S
                 </div>
             </div>
           </div>
-      
+
         <div class=\\"fd-row\\">
             <div  class=\\"fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3\\">
                 <div tabindex=\\"0\\" class=\\"fd-grid-list__item fd-grid-list__item--height-auto fd-grid-list__item--link\\">
@@ -22088,7 +22088,7 @@ exports[`Check stories > Components/Popover > Story Variants > Should match snap
             </div>
         </div>
     </div>
-    
+
     <div class=\\"fd-popover\\">
         <div class=\\"fd-popover__control\\">
             <button
@@ -22325,8 +22325,8 @@ exports[`Check stories > Components/Product Switch > Story Shellbar > Should mat
 "
 <style>
     .docs-product-switch-shellbar {
-        background-color: #354A5F; 
-        padding: 6px; 
+        background-color: #354A5F;
+        padding: 6px;
         display: flex;
         justify-content: end;
     }
@@ -22724,7 +22724,7 @@ exports[`Check stories > Components/Quick View > Story Dialog > Should match sna
 
                             <div class=\\"fd-quick-view__subheader-text\\">
                                 <h5 class=\\"fd-title fd-title--h5\\">Company B</h5>
-    
+
                                 <div class=\\"fd-quick-view__subtitle\\">
                                     Michael Adams
                                 </div>
@@ -24631,12 +24631,12 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuMSi
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <div class=\\"fd-popover__control\\">
                     <div aria-label=\\"Image label\\" aria-controls=\\"UIBFJ688\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__input-group\\">
+                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
                             <input aria-label=\\"search\\" type=\\"text\\"
-                                   class=\\"fd-input fd-input-group__input fd-shellbar__input-group-input\\" id=\\"UIO6J6881\\"
+                                   class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"UIO6J6881\\"
                                    placeholder=\\"Search\\">
                             <span
-                                class=\\"fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button\\">
+                                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
                                 <button aria-label=\\"navigation-down-arrow-button\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
                                     <i class=\\"sap-icon--decline\\"></i>
                                 </button>
@@ -24747,12 +24747,12 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <div class=\\"fd-popover__control\\">
                     <div aria-label=\\"Image label\\" aria-controls=\\"UIBFJ688\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__input-group\\">
+                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
                             <input aria-label=\\"search\\" type=\\"text\\"
-                                   class=\\"fd-input fd-input-group__input fd-shellbar__input-group-input\\" id=\\"UIO6J6881\\"
+                                   class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"UIO6J6881\\"
                                    placeholder=\\"Search\\">
                             <span
-                                class=\\"fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button\\">
+                                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
                                 <button aria-label=\\"navigation-down-arrow-button\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
                                     <i class=\\"sap-icon--decline\\"></i>
                                 </button>
@@ -24853,12 +24853,12 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuXlS
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <div class=\\"fd-popover__control\\">
                     <div aria-label=\\"Image label\\" aria-controls=\\"UIO6J688\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__input-group\\">
+                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
                             <input aria-label=\\"search\\" type=\\"text\\"
-                                   class=\\"fd-input fd-input-group__input fd-shellbar__input-group-input\\" id=\\"UIO6J6881\\"
+                                   class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"UIO6J6881\\"
                                    placeholder=\\"Search\\">
                             <span
-                                class=\\"fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button\\">
+                                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
                                 <button aria-label=\\"navigation-down-arrow-button\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
                                     <i class=\\"sap-icon--decline\\"></i>
                                 </button>
@@ -25042,9 +25042,9 @@ exports[`Check stories > Components/Shellbar > Story ProductMenuAndSearch > Shou
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <div class=\\"fd-popover__control\\">
                     <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__input-group\\">
-                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__input-group-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search\\">
-                            <span class=\\"fd-input-group__addon fd-shellbar__input-group-addon fd-input-group__addon--button\\">
+                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
+                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search\\">
+                            <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
                                 <button aria-label=\\"button-decline\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
                                         <i class=\\"sap-icon--decline\\"></i>
                                 </button>
@@ -25504,17 +25504,17 @@ exports[`Check stories > Components/Splitter > Story MixedAndNested > Should mat
                         <div class='fd-splitter__split-pane'>
                             Content, Level 2
                         </div>
-        
+
                         <div tabindex='0' class=\\"fd-splitter__resizer\\" role=\\"separator\\" aria-orienration=\\"vertical\\">
                             <span class='fd-splitter__resizer-decoration-before'></span>
-        
+
                             <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex='-1'>
                                 <i class=\\"sap-icon--vertical-grip fd-splitter__resizer-grip-icon\\"></i>
                             </button>
-        
+
                             <span class='fd-splitter__resizer-decoration-after'></span>
                         </div>
-        
+
                         <div class='fd-splitter__split-pane'>
                             Content, Level 2
                         </div>
@@ -25600,7 +25600,7 @@ exports[`Check stories > Components/Splitter > Story ResizerAppearance > Should 
 
             <span class='fd-splitter__resizer-decoration-after'></span>
         </div>
-        
+
         <div class='fd-splitter__split-pane'>
             Next resizer has translucent appearance.
         </div>
@@ -25614,11 +25614,11 @@ exports[`Check stories > Components/Splitter > Story ResizerAppearance > Should 
 
             <span class='fd-splitter__resizer-decoration-after'></span>
         </div>
-        
+
         <div class='fd-splitter__split-pane'>
             Next resizer has transparent appearance.
         </div>
-        
+
         <div tabindex='0' class=\\"fd-splitter__resizer fd-splitter__resizer--transparent\\" role=\\"separator\\" aria-orienration=\\"vertical\\">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
@@ -25628,7 +25628,7 @@ exports[`Check stories > Components/Splitter > Story ResizerAppearance > Should 
 
             <span class='fd-splitter__resizer-decoration-after'></span>
         </div>
-        
+
         <div class='fd-splitter__split-pane'>
             Content
         </div>
@@ -29825,7 +29825,7 @@ exports[`Check stories > Components/Time Picker > Story Hours12Compact > Should 
                 <div role=\\"img\\" aria-label=\\"Clock Dial\\" class=\\"fd-time-picker__clock-container fd-time-picker__clock-container--compact\\">
                     <div aria-hidden=\\"true\\" class=\\"fd-time-picker__clock fd-time-picker__clock--inner\\">
                         <div data-label=\\"Hours\\" class=\\"fd-time-picker__label\\"></div>
-                        
+
                         <div>
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 6deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
@@ -30453,7 +30453,7 @@ exports[`Check stories > Components/Time Picker > Story Hours24Compact > Should 
                 <div role=\\"img\\" aria-label=\\"Clock Dial\\" class=\\"fd-time-picker__clock-container fd-time-picker__clock-container--compact\\">
                     <div aria-hidden=\\"true\\" class=\\"fd-time-picker__clock fd-time-picker__clock--inner\\">
                         <div data-label=\\"Hours\\" class=\\"fd-time-picker__label\\"></div>
-                        
+
                         <div>
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 6deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
@@ -31125,7 +31125,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 24deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 30deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">5</span>
@@ -31146,12 +31146,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 54deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 60deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">10</span>
                             </div>
-                        
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 66deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31167,12 +31167,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 84deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 90deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">15</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 96deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31188,12 +31188,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 114deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 120deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">20</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 126deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31209,12 +31209,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 144deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 150deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">25</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 156deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31230,12 +31230,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 174deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 180deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">30</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 186deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31251,12 +31251,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 204deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 210deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">35</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 216deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31277,7 +31277,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">40</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 246deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31298,7 +31298,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">45</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 276deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31319,7 +31319,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">50</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 306deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31340,7 +31340,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">55</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 336deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31363,7 +31363,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             </div>
 
                         </div>
-                        
+
                         <div class=\\"fd-time-picker__item\\" style=\\"--deg: 108deg\\">
                             <div class=\\"fd-time-picker__tick fd-time-picker__tick--selected\\"></div>
                             <div class=\\"fd-time-picker__number fd-time-picker__number--selected\\">18</div>
@@ -31445,7 +31445,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 24deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 30deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">5</span>
@@ -31466,12 +31466,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 54deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 60deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">10</span>
                             </div>
-                        
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 66deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31487,12 +31487,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 84deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 90deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">15</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 96deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31508,12 +31508,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 114deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 120deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">20</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 126deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31529,12 +31529,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 144deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 150deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">25</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 156deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31550,12 +31550,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 174deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 180deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number fd-time-picker__number--hover\\">30</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 186deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31571,12 +31571,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 204deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 210deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">35</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 216deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31597,7 +31597,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">40</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 246deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31618,7 +31618,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">45</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 276deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31639,7 +31639,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">50</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 306deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31660,7 +31660,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">55</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 336deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31817,7 +31817,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 24deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 30deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">5</span>
@@ -31838,12 +31838,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 54deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 60deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">10</span>
                             </div>
-                        
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 66deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31859,12 +31859,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 84deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 90deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">15</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 96deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31880,12 +31880,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 114deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 120deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">20</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 126deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31901,12 +31901,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 144deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 150deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">25</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 156deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31922,12 +31922,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 174deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 180deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number fd-time-picker__number--hover\\">30</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 186deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31943,12 +31943,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 204deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 210deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">35</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 216deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31969,7 +31969,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">40</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 246deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31990,7 +31990,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">45</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 276deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -32011,7 +32011,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">50</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 306deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -32032,7 +32032,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">55</span>
                             </div>
-                            
+
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 336deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -35342,7 +35342,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-  
+
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35354,7 +35354,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-  
+
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35366,7 +35366,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-  
+
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35378,7 +35378,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-  
+
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35390,7 +35390,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-  
+
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">

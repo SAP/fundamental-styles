@@ -29,6 +29,7 @@
 @import "./common/info-label/sap_fiori";
 @import "./common/file-uploader/sap_fiori";
 @import "./common/variant-management/sap_fiori";
+@import "./common/shellbar/sap_fiori";
 
 :root {
   --fdInverted_Object_Border_Width: 0;
@@ -296,22 +297,6 @@
 
   /** Text */
   --fdText_Selected_Background_Color: var(--sapSelectedColor);
-
-  /** Shellbar */
-  --fdShellbar_Height: 2.75rem;
-  --fdShellbar_Shadow: inset 0 -0.0625rem 0 0 var(--sapShell_BorderColor);
-  --fdShellbar_Button_Hover_Border_Color: transparent;
-  --fdShellbar_Button_Active_Border_Color: transparent;
-  --fdShellbar_Button_Outline_Color: var(--sapContent_ContrastFocusColor);
-  --fdShellbar_Input_Border: solid 0.0625rem var(--sapShell_InteractiveBorderColor);
-  --fdShellbar_Input_Background: var(--sapShellColor);
-  --fdShellbar_Input_Hover_Background: var(--sapShell_Hover_Background);
-  --fdShellbar_Input_Color: var(--sapShell_TextColor);
-  --fdShellbar_Input_Placeholder_Color: var(--sapShell_InteractiveTextColor);
-  --fdShellbar_Input_Border_Radius: var(--sapField_BorderCornerRadius);
-  --fdShellbar_Input_Hover_Border_Color: var(--sapShell_InteractiveBorderColor);
-  --fdShellbar_Input_Addon_Dimension: 2.25rem;
-  --fdShellbar_Input_Addon_Border_Width: 0;
 
   /** Message Page */
   --fdMessage_Page_Container_Background: transparent;

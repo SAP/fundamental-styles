@@ -5,7 +5,15 @@
 $fd-input-field-height: 2.25rem;
 $fd-input-field-height--compact: 1.625rem;
 
-@mixin fd-input-field-base($hasFocusWithin: false, $withMinHeight: true) {
+@mixin fd-input-field-base(
+  $hasFocusWithin: false,
+  $withMinHeight: true,
+  $overrideBackgroundProperty: --sapField_BackgroundStyle,
+  $overrideBackgroundColorProperty: --sapField_Background,
+  $overrideHoverBackgroundProperty: --sapField_Hover_BackgroundStyle,
+  $overrideHoverBackgroundColorProperty: --sapField_Hover_Background,
+  $overrideFocusBackgroundProperty: --sapField_Focus_Background,
+  $overrideMinWidth: 2.75rem) {
   @include fd-reset();
   @include fd-ellipsis();
 
@@ -15,15 +23,15 @@ $fd-input-field-height--compact: 1.625rem;
 
   z-index: 1;
   width: 100%;
-  min-width: 2.75rem;
+  min-width: var(#{$overrideMinWidth}, 2.75rem);
   border-radius: var(--sapField_BorderCornerRadius);
   padding: 0 0.625rem;
   margin: 0.25rem 0;
   box-shadow: none;
   color: var(--sapField_TextColor);
   text-shadow: var(--fdInput_Text_Shadow);
-  background: var(--sapField_BackgroundStyle);
-  background-color: var(--sapField_Background);
+  background: var(#{$overrideBackgroundProperty}, var(--sapField_BackgroundStyle));
+  background-color: var(#{$overrideBackgroundColorProperty}, var(--sapField_Background));
   border: var(--sapField_BorderWidth) var(--sapField_BorderStyle) var(--sapField_BorderColor);
   cursor: text;
   outline: none;
@@ -53,14 +61,14 @@ $fd-input-field-height--compact: 1.625rem;
   }
 
   @include fd-hover() {
-    background: var(--sapField_Hover_BackgroundStyle);
-    background-color: var(--sapField_Hover_Background);
+    background: var(#{$overrideHoverBackgroundProperty}, var(--sapField_Hover_BackgroundStyle));
+    background-color: var(#{$overrideHoverBackgroundColorProperty}, var(--sapField_Hover_Background));
     border-color: var(--sapField_Hover_BorderColor);
     box-shadow: var(--fdInput_Box_Shadow_Hover);
   }
 
   @include fd-focus() {
-    background: var(--sapField_Focus_Background);
+    background: var(#{$overrideFocusBackgroundProperty}, var(--sapField_Focus_Background));
     outline-width: var(--sapContent_FocusWidth);
     outline-style: var(--sapContent_FocusStyle);
     outline-color: var(--fdInput_Outline_Color);
@@ -70,7 +78,7 @@ $fd-input-field-height--compact: 1.625rem;
 
   @if $hasFocusWithin {
     @include fd-focus-within() {
-      background: var(--sapField_Focus_Background);
+      background: var(#{$overrideFocusBackgroundProperty}, var(--sapField_Focus_Background));
       outline-width: var(--sapContent_FocusWidth);
       outline-style: var(--sapContent_FocusStyle);
       outline-color: var(--fdInput_Outline_Color);
@@ -334,10 +342,10 @@ $fd-input-field-height--compact: 1.625rem;
   }
 }
 
-@mixin fd-input-field-nested-reset() {
+@mixin fd-input-field-nested-reset($background-color: transparent) {
   box-shadow: none;
   background: none;
-  background-color: transparent;
+  background-color: var($background-color, transparent);
 }
 
 @mixin fd-form-base {

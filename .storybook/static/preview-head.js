@@ -335,6 +335,15 @@ function addClass(elementId, className) {
     }
 }
 
+function removeClass(elementId, className) {
+  let elementRef = document.getElementById(elementId);
+  if (elementRef && className) {
+      elementRef.classList.remove(className);
+  } else {
+      console.warn("No element with id='" + elementId + "' found");
+  }
+}
+
 function browseFile(inputId) {
     let inputRef = document.getElementById(inputId);
     inputRef.click();
