@@ -28,7 +28,10 @@ $block: #{$fd-namespace}-user-menu;
 
     ul:last-child li:last-child::before,
     ul li:last-child::before,
-    ul li:last-child a::before {
+    ul li:last-child a::before,
+    ul:first-child li:first-child::before,
+    ul li:first-child::before,
+    ul li:first-child a::before {
       border-radius: 0 !important;
     }
   }
