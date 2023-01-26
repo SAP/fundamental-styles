@@ -253,10 +253,9 @@ $block: #{$fd-namespace}-table;
   }
 
   &__footer {
-    background-color: var(--sapList_Background);
-
     .#{$block}__row {
       vertical-align: middle;
+      background-color: var(--sapList_Background);
     }
 
     .#{$block}__cell {

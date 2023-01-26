@@ -62,4 +62,13 @@
       }
     }
   }
+
+  .#{$block}__footer {
+    .#{$block}__cell {
+      position: sticky;
+      bottom: 0;
+      z-index: 2;
+      background-color: inherit;
+    }
+  }
 }
