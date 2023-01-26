@@ -1,6 +1,6 @@
 @import "../mixins";
 
-@mixin fd-table-responsive() {
+@mixin fd-table-pop-in() {
   &--pop-in {
     .#{$block}__text {
       color: inherit;
@@ -72,6 +72,15 @@
             + .#{$block}__row--secondary {
               background-color: var(--sapList_Active_Background);
               border-bottom-color: var(--sapList_SelectionBorderColor);
+            }
+          }
+
+          @include fd-selected() {
+            @include fd-active() {
+              + .#{$block}__row--secondary {
+                background-color: var(--sapList_Active_Background);
+                border-bottom-color: var(--sapList_SelectionBorderColor);
+              }
             }
           }
         }

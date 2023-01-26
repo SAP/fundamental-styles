@@ -2,7 +2,7 @@
 @import "./mixins";
 @import "./mixins/table/table-fixed";
 @import "./mixins/table/table-states";
-@import "./mixins/table/table-responsive";
+@import "mixins/table/table-pop-in";
 @import "./mixins/table/table-no-borders";
 @import "./mixins/table/table-group-and-tree";
 
@@ -98,20 +98,19 @@ $block: #{$fd-namespace}-table;
     color: inherit;
     outline: none;
     border-bottom: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-    border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+
+    @include fd-set-border-left(var(--sapList_BorderWidth) solid var(--sapList_BorderColor));
 
     &:last-child {
       border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+
+      @include fd-rtl() {
+        border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
+      }
     }
 
     @include fd-rtl() {
       text-align: right;
-      border-left: none;
-      border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-
-      &:last-child {
-        border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-      }
     }
 
     &--no-data {
@@ -356,7 +355,7 @@ $block: #{$fd-namespace}-table;
 
   @include fd-table-fixed();
   @include fd-table-states();
-  @include fd-table-responsive();
+  @include fd-table-pop-in();
   @include fd-table-no-borders();
   @include fd-table-group-and-tree();
 }

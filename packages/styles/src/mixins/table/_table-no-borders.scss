@@ -5,46 +5,60 @@
   &__body,
   &__header {
     &--no-vertical-borders {
-      .#{$block}__row {
-        .#{$block}__cell {
-          &:not(:first-child) {
+      .#{$block}__cell {
+        border-left-color: transparent;
+
+        @include fd-rtl() {
+          border-right-color: transparent;
+        }
+
+        &:first-child {
+          border-left-color: var(--sapList_BorderColor);
+
+          @include fd-rtl() {
             border-left-color: transparent;
-
-            @include fd-rtl() {
-              border-right-color: transparent;
-            }
+            border-right-color: var(--sapList_BorderColor);
           }
+        }
 
-          &:last-child {
-            @include fd-rtl() {
-              border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-            }
+        &:last-child {
+          border-right-color: var(--sapList_BorderColor);
+
+          @include fd-rtl() {
+            border-right-color: transparent;
+            border-left-color: var(--sapList_BorderColor);
           }
         }
       }
     }
 
     &--no-horizontal-borders {
-      .#{$block}__row:not(:last-child) {
+      .#{$block}__cell {
+        border-bottom-color: transparent;
+      }
+
+      .#{$block}__row:last-child {
         .#{$block}__cell {
-          border-bottom-color: transparent;
+          border-bottom-color: var(--sapList_BorderColor);
         }
       }
     }
   }
 
-  .#{$block}__cell--no-vertical-borders {
-    & + .#{$block}__cell {
-      border-left-color: transparent;
+  .#{$block}__cell {
+    &--no-vertical-border {
+      & + .#{$block}__cell {
+        border-left-color: transparent;
+      }
+
+      @include fd-rtl() {
+        border-right-color: transparent;
+      }
     }
 
-    @include fd-rtl() {
-      border-right-color: transparent;
+    &--no-horizontal-border {
+      border-bottom-color: transparent;
     }
-  }
-
-  .#{$block}__cell--no-horizontal-borders {
-    border-bottom-color: transparent;
   }
 
   &--responsive,
@@ -55,28 +69,28 @@
       }
     }
 
-    .#{$block}__cell:first-child {
-      border-left-color: transparent;
-
-      @include fd-rtl() {
-        border-left-color: var(--sapList_BorderColor);
-        border-right-color: transparent;
-      }
-    }
-
-    .#{$block}__cell:last-child {
-      border-right-color: transparent;
-
-      @include fd-rtl() {
-        border-right-color: var(--sapList_BorderColor);
-        border-left-color: transparent;
-      }
-    }
-
     .#{$block}__body {
       .#{$block}__row:last-child {
         .#{$block}__cell {
           border-bottom-color: transparent;
+        }
+      }
+    }
+
+    .#{$block}__cell {
+      &:first-child {
+        border-left-color: transparent;
+
+        @include fd-rtl() {
+          border-right-color: transparent;
+        }
+      }
+
+      &:last-child {
+        border-right-color: transparent;
+
+        @include fd-rtl() {
+          border-left-color: transparent;
         }
       }
     }
