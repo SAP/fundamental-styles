@@ -4,7 +4,7 @@
   &--fixed {
     @include fd-scrollbar();
 
-    overflow-x: scroll;
+    overflow: auto;
   }
 
   .#{$block}__cell {
