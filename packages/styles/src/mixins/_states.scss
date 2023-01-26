@@ -183,3 +183,10 @@
     @content;
   }
 }
+
+@mixin fd-hidden {
+  &[aria-hidden="true"],
+  &.is-hidden {
+    @content;
+  }
+}

@@ -4,35 +4,18 @@
 $block: #{$fd-namespace}-action-bar;
 
 .#{$block} {
-  // LOCAL VARS (set all themeable properties, always include !default)
-  $fd-action-bar-background-color: var(--sapPageHeader_Background) !default;
-  $fd-action-bar-description-color: var(--sapContent_LabelColor) !default;
-  $fd-action-bar-title-color: var(--sapGroup_TitleTextColor) !default;
-  $fd-action-bar-min-height: 3rem;
-  $fd-action-bar-max-height: 4.25rem;
-  $fd-action-bar-transition-params: 0.25s ease-in !default;
-
-  @mixin fd-truncate-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   @mixin fd-action-bar-description {
     @include fd-reset();
-
-    color: var(--sapContent_LabelColor);
-
     @include fd-hide-on-mobile();
-    @include fd-truncate-text();
+    @include fd-ellipsis();
 
     width: 100%;
     height: 1.25rem;
     vertical-align: middle;
+    color: var(--sapContent_LabelColor);
   }
 
   @mixin fd-hide-on-mobile {
-    // Changed from deprecated fd-screen(xs)
     @include fd-screen(s) {
       display: none !important;
     }
@@ -47,121 +30,86 @@ $block: #{$fd-namespace}-action-bar;
   }
 
   @include fd-reset();
+  @include responsive-action-bar($padding-x: 2rem);
 
-  box-shadow: var(--sapContent_HeaderShadow);
-  background-color: $fd-action-bar-background-color;
-  min-height: $fd-action-bar-min-height;
-  max-height: $fd-action-bar-max-height;
+  min-height: 3rem;
+  max-height: 4.25rem;
   word-wrap: break-word;
   justify-content: space-between;
-
-  @include responsive-action-bar($padding-x: 2rem);
+  box-shadow: var(--sapContent_HeaderShadow);
+  background-color: var(--sapPageHeader_Background);
 
   &__header {
     @include fd-reset();
 
+    @include fd-flex-vertical-center() {
+      flex-grow: 1;
+    }
+
     height: 2rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 
   &__back {
     @include fd-reset();
+    @include fd-hide-on-mobile();
+    @include fd-set-margin-right(0.5rem);
 
     display: block;
-
-    @include fd-hide-on-mobile();
-
     position: relative;
-    margin-right: 0.5rem;
-
-    @include fd-rtl() {
-      margin-right: 0;
-      margin-left: 0.5rem;
-    }
   }
 
   &__title {
     @include fd-reset();
-    @include fd-truncate-text();
+    @include fd-ellipsis();
+    @include fd-set-padding-right(0.5rem);
 
-    text-rendering: optimizeLegibility;
-    font-family: var(--sapFontHeaderFamily);
-    color: $fd-action-bar-title-color;
+    margin: 0;
     flex-grow: 1;
     flex-basis: 0;
     line-height: 1.375rem;
-    padding-right: 0.5rem;
     vertical-align: middle;
-    margin: 0;
-
-    @include fd-rtl() {
-      padding-right: 0;
-      padding-left: 0.5rem;
-    }
+    text-rendering: optimizeLegibility;
+    color: var(--sapGroup_TitleTextColor);
+    font-family: var(--sapFontHeaderFamily);
   }
 
   &__description {
     @include fd-action-bar-description();
 
     &--back {
-      padding-left: 2.5rem;
-
-      @include fd-rtl() {
-        padding-left: 0;
-        padding-right: 2.5rem;
-      }
+      @include fd-set-padding-left(2.5rem);
     }
   }
 
   &__actions {
     @include fd-reset();
 
-    display: flex;
-    align-items: center;
-    transition: opacity $fd-action-bar-transition-params;
-    visibility: visible;
-    height: 2rem;
+    @include fd-flex-vertical-center() {
+      gap: 0.5rem;
+    }
 
-    &.is-disabled,
-    &[aria-hidden="true"] {
+    @include fd-hidden() {
       opacity: 0;
       visibility: hidden;
     }
 
-    & > * {
-      @include fd-children() {
-        margin-left: 0.5rem;
-      }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      @include fd-rtl() {
-        @include fd-children() {
-          margin-right: 0.5rem;
-          margin-left: 0;
-        }
-
-        &:first-child {
-          margin-right: 0;
-        }
-      }
-    }
+    height: 2rem;
+    visibility: visible;
+    transition: opacity 0.25s ease-in;
   }
 
+  &--sm,
   &--s {
     @include responsive-action-bar();
   }
 
+  &--md,
+  &--lg,
   &--m_l {
-    @include responsive-action-bar($padding-x: 2rem);
+    @include responsive-action-bar(2rem);
   }
 
   &--xl {
-    @include responsive-action-bar($padding-x: 3rem);
+    @include responsive-action-bar(3rem);
   }
 }
