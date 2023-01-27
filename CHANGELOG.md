@@ -1,3 +1,12 @@
+# [0.27.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.3...v0.27.0-rc.4) (2023-01-27)
+
+
+### Bug Fixes
+
+* **styles:** action bar version 1 update [ci visual] ([#4215](https://github.com/SAP/fundamental-styles/issues/4215)) ([3ff34ae](https://github.com/SAP/fundamental-styles/commit/3ff34ae6778a70f4b355a913e1e48efe28df1b02))
+
+
+
 # [0.27.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.2...v0.27.0-rc.3) (2023-01-25)
 
 
