@@ -72,7 +72,7 @@
     "@storybook/addon-controls": "6.5.13",
     "@storybook/addon-cssresources": "6.2.9",
     "@storybook/addon-docs": "6.5.13",
-    "@storybook/addon-links": "6.5.13",
+    "@storybook/addon-links": "6.5.16",
     "@storybook/addon-storyshots": "6.5.13",
     "@storybook/addon-toolbars": "6.5.13",
     "@storybook/addon-viewport": "6.5.13",
