@@ -18,7 +18,7 @@ $block: #{$fd-namespace}-avatar;
   border: var(--fdAvatar_Border);
   text-shadow: var(--fdAvatar_Text_Shadow);
   color: var(--sapContent_ContrastTextColor);
-  background-color: var(--fdAvatar_BackgroundColor);
+  background-color: yellow;
   border-radius: var(--sapElement_BorderCornerRadius);
 
   &[tabindex="0"] {
