@@ -697,12 +697,30 @@
   }
 }
 
+@mixin fd-set-border-left-color($color: transparent) {
+  border-left-color: $color;
+
+  @include fd-rtl() {
+    border-left-color: transparent;
+    border-right-color: $color;
+  }
+}
+
 @mixin fd-set-border-right($border) {
   border-right: $border;
 
   @include fd-rtl() {
     border-right: none;
     border-left: $border;
+  }
+}
+
+@mixin fd-set-border-right-color($color: transparent) {
+  border-right-color: $color;
+
+  @include fd-rtl() {
+    border-right-color: transparent;
+    border-left-color: $color;
   }
 }
 

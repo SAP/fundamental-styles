@@ -6,28 +6,18 @@
   &__header {
     &--no-vertical-borders {
       .#{$block}__cell {
-        border-left-color: transparent;
+        @include fd-set-border-left-color();
 
         @include fd-rtl() {
-          border-right-color: transparent;
+          border-left-color: var(--sapList_BorderColor);
         }
 
         &:first-child {
-          border-left-color: var(--sapList_BorderColor);
-
-          @include fd-rtl() {
-            border-left-color: transparent;
-            border-right-color: var(--sapList_BorderColor);
-          }
+          @include fd-set-border-left-color(var(--sapList_BorderColor));
         }
 
         &:last-child {
-          border-right-color: var(--sapList_BorderColor);
-
-          @include fd-rtl() {
-            border-right-color: transparent;
-            border-left-color: var(--sapList_BorderColor);
-          }
+          @include fd-set-border-right-color(var(--sapList_BorderColor));
         }
       }
     }
@@ -79,18 +69,18 @@
 
     .#{$block}__cell {
       &:first-child {
-        border-left-color: transparent;
+        @include fd-set-border-left-color();
 
         @include fd-rtl() {
-          border-right-color: transparent;
+          border-left-color: var(--sapList_BorderColor);
         }
       }
 
       &:last-child {
-        border-right-color: transparent;
+        @include fd-set-border-right-color();
 
         @include fd-rtl() {
-          border-left-color: transparent;
+          border-right-color: var(--sapList_BorderColor);
         }
       }
     }

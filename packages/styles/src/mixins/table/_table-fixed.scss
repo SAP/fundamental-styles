@@ -13,7 +13,7 @@
 
       &,
       &-end {
-        z-index: 1;
+        z-index: map-get($table-z-index, "fixed");
         position: sticky;
         display: table-cell;
         background-color: inherit;
@@ -53,12 +53,12 @@
   .#{$block}__header {
     .#{$block}__cell {
       top: 0;
-      z-index: 2;
+      z-index: map-get($table-z-index, "header-footer");
       position: sticky;
 
       &--fixed,
       &--fixed-end {
-        z-index: 3;
+        z-index: map-get($table-z-index, "header-fixed");
       }
     }
   }
@@ -67,7 +67,7 @@
     .#{$block}__cell {
       position: sticky;
       bottom: 0;
-      z-index: 2;
+      z-index: map-get($table-z-index, "header-footer");
       background-color: inherit;
     }
   }

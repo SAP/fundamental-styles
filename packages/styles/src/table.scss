@@ -17,9 +17,16 @@
 
 $block: #{$fd-namespace}-table;
 
+$table-z-index: (
+  "fixed": 1,
+  "header-footer": 2,
+  "header-fixed": 3,
+  "focus": 4
+);
+
 .#{$block} {
-  --fd-table-header-cell-height: 2.75rem;
-  --fd-table-cell-height: 2.75rem;
+  --fdTable_Header_Cell_Height: 2.75rem;
+  --fdTable_Cell_Height: 2.75rem;
 
   &,
   &__cell,
@@ -49,10 +56,12 @@ $block: #{$fd-namespace}-table;
     }
 
     &--navigation {
+      $fd-table-icon-with: 2rem;
+
       @include fd-icon-selector() {
         font-size: var(--sapFontSmallSize);
-        width: 2rem;
-        min-width: 2rem;
+        width: $fd-table-icon-with;
+        min-width: $fd-table-icon-with;
         height: 100%;
       }
     }
@@ -60,7 +69,7 @@ $block: #{$fd-namespace}-table;
 
   &__header {
     .#{$block}__cell {
-      height: var(--fd-table-header-cell-height);
+      height: var(--fdTable_Header_Cell_Height);
       background-color: var(--sapList_HeaderBackground);
       color: var(--sapList_HeaderTextColor);
       font-weight: var(--fdTable_Header_Cell_Font_Weight);
@@ -93,7 +102,7 @@ $block: #{$fd-namespace}-table;
 
   &__cell {
     text-align: left;
-    height: var(--fd-table-cell-height);
+    height: var(--fdTable_Cell_Height);
     padding: 0 0.5rem;
     color: inherit;
     outline: none;
@@ -102,11 +111,7 @@ $block: #{$fd-namespace}-table;
     @include fd-set-border-left(var(--sapList_BorderWidth) solid var(--sapList_BorderColor));
 
     &:last-child {
-      border-right: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-
-      @include fd-rtl() {
-        border-left: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
-      }
+      @include fd-set-border-right(var(--sapList_BorderWidth) solid var(--sapList_BorderColor));
     }
 
     @include fd-rtl() {
@@ -123,7 +128,7 @@ $block: #{$fd-namespace}-table;
     }
 
     &--checkbox {
-      width: var(--fd-table-header-cell-height);
+      width: var(--fdTable_Header_Cell_Height);
       vertical-align: baseline;
       padding: 0;
     }
@@ -189,11 +194,17 @@ $block: #{$fd-namespace}-table;
 
     &--activable,
     &--focusable {
-      @include fd-fiori-focus();
+      @include fd-fiori-pseudo-focus();
+
+      position: relative;
+
+      &::after {
+        z-index: map-get($table-z-index, "focus");
+      }
 
       @include fd-selected() {
-        @include fd-fiori-focus() {
-          outline-color: var(--sapContent_ContrastFocusColor);
+        &::after {
+          border-color: var(--sapContent_ContrastFocusColor);
         }
       }
     }
@@ -318,11 +329,11 @@ $block: #{$fd-namespace}-table;
   /****** Modifiers ******/
 
   &--compact {
-    --fd-table-cell-height: 2rem;
+    --fdTable_Cell_Height: 2rem;
   }
 
   &--condensed {
-    --fd-table-cell-height: 1.5rem;
+    --fdTable_Cell_Height: 1.5rem;
 
     .#{$block}__body,
     .#{$block}__footer {
@@ -337,7 +348,12 @@ $block: #{$fd-namespace}-table;
       .#{$block}__row {
         &--activable,
         &--focusable {
-          @include fd-fiori-focus(var(--fdTable_Condensed_Focus_Outline_Offset));
+          &::after {
+            top: var(--fdTable_Condensed_Focus_Outline_Offset);
+            bottom: var(--fdTable_Condensed_Focus_Outline_Offset);
+            left: var(--fdTable_Condensed_Focus_Outline_Offset);
+            right: var(--fdTable_Condensed_Focus_Outline_Offset);
+          }
         }
       }
     }
@@ -345,7 +361,7 @@ $block: #{$fd-namespace}-table;
 
   &--compact,
   &--condensed {
-    --fd-table-header-cell-height: 2rem;
+    --fdTable_Header_Cell_Height: 2rem;
   }
 
   &--hidden {
