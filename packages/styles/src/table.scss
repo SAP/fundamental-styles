@@ -63,6 +63,7 @@ $table-z-index: (
         width: $fd-table-icon-with;
         min-width: $fd-table-icon-with;
         height: 100%;
+        transform: rotate(180deg);
       }
     }
   }
