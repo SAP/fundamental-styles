@@ -54,8 +54,8 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
 
     for (const file of files) {
         const content = readFileSync(file, 'utf-8');
-        const filePath = file.replace(new RegExp(`^${compilationOutputPath}(.*)\.css$`), `${compilationOutputPath}/js$1.mjs`);
-        const typesPath = file.replace(new RegExp(`^${compilationOutputPath}(.*)\.css$`), `${compilationOutputPath}/js$1.d.ts`);
+        const filePath = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `${compilationOutputPath}/js$1.mjs`);
+        const typesPath = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `${compilationOutputPath}/js$1.d.ts`);
         mkdirpSync(parse(filePath).dir);
         writeFileSync(filePath, `export default { cssSource: \`${content}\` };`);
         writeFileSync(typesPath, `declare const _default: { cssSource: string }; export default _default;`);
