@@ -15,7 +15,7 @@
 
 ## What is Fundamental Library Styles?
 
-Fundamental Library Styles is a lightweight presetantion layer that can be used in conjunction with any UI framework, such as Angular, React, Vue, etc. By utilizing the Fundamental Styles library, which includes a collection of stylesheets and HTML tags, developers can create visually consistent and professional-looking Fiori applications in any web-based technology of their choice.
+Fundamental Library Styles is a lightweight presentation layer that can be used in conjunction with any UI framework, such as Angular, React, Vue, etc. By utilizing the Fundamental Styles library, which includes a collection of stylesheets and HTML tags, developers can create visually consistent and professional-looking Fiori applications in any web-based technology of their choice.
 
 
 
