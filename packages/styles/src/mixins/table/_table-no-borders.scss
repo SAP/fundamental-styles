@@ -53,9 +53,11 @@
 
   &--responsive,
   &--no-outer-border {
-    .#{$block}__header {
-      .#{$block}__cell {
-        border-top-color: transparent;
+    &:not(.#{$block}--top-border) {
+      .#{$block}__header {
+        .#{$block}__cell {
+          border-top-color: transparent;
+        }
       }
     }
 

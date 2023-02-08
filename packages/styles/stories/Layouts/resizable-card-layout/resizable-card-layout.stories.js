@@ -275,7 +275,7 @@ export const ResizeCardLayout = () =>
                         </div>
                     </a>
                     <div class="fd-card__content" role="group" aria-label="Card Content">
-                        <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
+                        <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border">
                         <thead class="fd-table__header">
                             <tr class="fd-table__row">
                             <th class="fd-table__cell fd-table__cell--checkbox">

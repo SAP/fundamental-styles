@@ -1564,7 +1564,7 @@ exports[`Check stories > Components/Button > Story BadgeOnButton > Should match 
             <i class=\\"sap-icon--cart\\" role=\\"presentation\\"></i>
             <span class=\\"fd-button__badge\\">3</span>
         </button>
-
+        
         <h4>Compact</h4>
         <button class=\\"fd-button fd-button--compact\\">
             <span class=\\"fd-button__text\\">Compact Badge Button</span>
@@ -1821,7 +1821,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Standard</span>
@@ -1839,7 +1839,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--ghost\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--ghost\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Ghost</span>
@@ -1848,7 +1848,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--positive\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--positive\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Positive</span>
@@ -1857,7 +1857,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--negative\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--negative\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Negative</span>
@@ -1866,7 +1866,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--attention\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--attention\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Attention</span>
@@ -1875,7 +1875,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <h4>Compact</h4>
         <div class=\\"fd-button-split fd-button-split--emphasized\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--emphasized\\" aria-label=\\"button\\">
@@ -1885,7 +1885,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact \\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Standard</span>
@@ -1903,7 +1903,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--ghost\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--ghost\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Ghost</span>
@@ -1912,7 +1912,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--positive\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--positive\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Positive</span>
@@ -1921,7 +1921,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--negative\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--negative\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Negative</span>
@@ -1930,7 +1930,7 @@ exports[`Check stories > Components/Button > Story SplitMenuButton > Should matc
             <i class=\\"sap-icon--slim-arrow-down\\"></i>
           </button>
         </div>
-
+        
         <div class=\\"fd-button-split fd-button-split--attention\\" role=\\"group\\" aria-label=\\"button-split\\">
           <button class=\\"fd-button fd-button--compact fd-button--attention\\" aria-label=\\"button\\">
             <span class=\\"fd-button-split__text\\">Attention</span>
@@ -3750,7 +3750,7 @@ exports[`Check stories > Components/Card > Story TableCard > Should match snapsh
                 </div>
             </a>
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\">
-                <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders\\">
+                <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border\\">
                     <thead class=\\"fd-table__header\\">
                         <tr class=\\"fd-table__row\\">
                             <th class=\\"fd-table__cell fd-table__cell--checkbox\\">
@@ -3835,7 +3835,7 @@ exports[`Check stories > Components/Card > Story TableCard > Should match snapsh
                 </div>
             </a>
             <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\">
-                <table class=\\"fd-table fd-table--compact fd-table--no-horizontal-borders fd-table--no-vertical-borders\\">
+                <table class=\\"fd-table fd-table--compact fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border\\">
                     <thead class=\\"fd-table__header\\">
                         <tr class=\\"fd-table__row\\">
                             <th class=\\"fd-table__cell\\" scope=\\"col\\">Name</th>
@@ -5842,7 +5842,7 @@ exports[`Check stories > Components/File Uploader > Story FileUploaderWithFiles 
         </div>
         <div class=\\"fd-file-uploader__hidden\\" aria-live=\\"polite\\" aria-atomic=\\"true\\"></div>
         <input aria-labelledby=\\"browse_input1_label\\" hidden class=\\"fd-file-uploader__hidden\\" type=\\"file\\">
-
+        
         <div class=\\"fd-file-uploader__uploaded-files\\">
             <h3 class=\\"fd-file-uploader__label\\">File Selected:</h3>
             <ul class=\\"fd-file-uploader__list\\">
@@ -11864,7 +11864,7 @@ exports[`Check stories > Components/Grid List/Grid List > Story PartialItems > S
                 </div>
             </div>
           </div>
-
+      
         <div class=\\"fd-row\\">
             <div  class=\\"fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3\\">
                 <div tabindex=\\"0\\" class=\\"fd-grid-list__item fd-grid-list__item--height-auto fd-grid-list__item--link\\">
@@ -22088,7 +22088,7 @@ exports[`Check stories > Components/Popover > Story Variants > Should match snap
             </div>
         </div>
     </div>
-
+    
     <div class=\\"fd-popover\\">
         <div class=\\"fd-popover__control\\">
             <button
@@ -22325,8 +22325,8 @@ exports[`Check stories > Components/Product Switch > Story Shellbar > Should mat
 "
 <style>
     .docs-product-switch-shellbar {
-        background-color: #354A5F;
-        padding: 6px;
+        background-color: #354A5F; 
+        padding: 6px; 
         display: flex;
         justify-content: end;
     }
@@ -22724,7 +22724,7 @@ exports[`Check stories > Components/Quick View > Story Dialog > Should match sna
 
                             <div class=\\"fd-quick-view__subheader-text\\">
                                 <h5 class=\\"fd-title fd-title--h5\\">Company B</h5>
-
+    
                                 <div class=\\"fd-quick-view__subtitle\\">
                                     Michael Adams
                                 </div>
@@ -24629,36 +24629,19 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuMSi
         </div>
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <div class=\\"fd-popover__control\\">
-                    <div aria-label=\\"Image label\\" aria-controls=\\"UIBFJ688\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search\\" type=\\"text\\"
-                                   class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"UIO6J6881\\"
-                                   placeholder=\\"Search\\">
-                            <span
-                                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"navigation-down-arrow-button\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                    <i class=\\"sap-icon--decline\\"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
                     <i class=\\"sap-icon--search\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
-                    <i class=\\"sap-icon--pool\\"></i>
                 </button>
             </div>
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
                     <i class=\\"sap-icon--bell\\"></i>
                     <span class=\\"fd-button__badge\\">251K</span>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
+                    <i class=\\"sap-icon--pool\\"></i>
                 </button>
             </div>
             <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
@@ -24738,43 +24721,10 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
 "<div style=\\"height:300px; max-width: 600px;\\">
     <div class=\\"fd-shellbar fd-shellbar--s\\">
         <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
-            <span class=\\"fd-shellbar__logo\\">
-                <img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\">
-            </span>
-            <div class=\\"fd-popover\\">
-                <div class=\\"fd-popover__control\\">
-                    <button class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\" onclick=\\"onPopoverClick('9GLB26941ab');\\" aria-controls=\\"9GLB26941ab\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
-                        <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
-                        <i class=\\"sap-icon--megamenu\\"></i>
-                    </button>
-                </div>
-                <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"9GLB26941ab\\">
-                    <nav class=\\"fd-menu\\">
-                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application A</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application B</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application C</span>
-                                </a>
-                            </li>
-                            <li class=\\"fd-menu__item\\">
-                                <a role=\\"button\\" class=\\"fd-menu__link\\">
-                                    <span class=\\"fd-menu__title\\">Application D</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
+                                                 srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
+                                                 width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
         </div>
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
@@ -24819,6 +24769,7 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
                                 <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-controls=\\"undefined\\"
                                         aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
                                     <i class=\\"sap-icon--overflow\\"></i>
+                                    <span class=\\"fd-button__badge\\">251K</span>
                                 </button>
                             </div>
                         </div>
@@ -24869,6 +24820,101 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuSSi
         </div>
     </div>
 </div>
+
+<div style=\\"height:300px; max-width: 600px;\\">
+    <div class=\\"fd-shellbar fd-shellbar--s\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+            <a class=\\"fd-shellbar__logo\\" href=\\"https://www.sap.com/index.html\\" target=\\"_blank\\">
+                <img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\">
+            </a>
+            <div class=\\"fd-popover\\">
+                <div class=\\"fd-popover__control\\">
+                    <button class=\\"fd-button fd-button--transparent fd-shellbar__button fd-shellbar__button--menu fd-button--menu\\" onclick=\\"onPopoverClick('9GLB26941');\\" aria-controls=\\"9GLB26941\\" aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
+                        <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+                        <i class=\\"sap-icon--megamenu\\"></i>
+                    </button>
+                </div>
+                <div class=\\"fd-popover__body fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"9GLB26941\\">
+                    <nav class=\\"fd-menu\\">
+                        <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application A</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application B</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application C</span>
+                                </a>
+                            </li>
+                            <li class=\\"fd-menu__item\\">
+                                <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                    <span class=\\"fd-menu__title\\">Application D</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        <div class=\\"fd-shellbar__subtitle\\">Subtitle</div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+                <div class=\\"fd-popover__control\\">
+                    <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
+                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
+                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search\\">
+                            <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
+                                <button aria-label=\\"button-decline\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
+                                        <i class=\\"sap-icon--decline\\"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
+                        <i class=\\"sap-icon--search\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <div class=\\"fd-popover fd-popover--right\\">
+                    <div class=\\"fd-popover__control\\">
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\" aria-controls=\\"ZY3AY276\\" onclick=\\"onPopoverClick('ZY3AY276')\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
+                            <span
+                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-avatar--thumbnail fd-shellbar__avatar--circle\\"
+                                style=\\"background-image: url('assets/images/avatars/1.svg');\\"
+                                aria-label=\\"William Wallingham\\">
+                            </span>
+                        </div>
+                    </div>
+                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"false\\" id=\\"ZY3AY276\\">
+                        <nav class=\\"fd-menu\\">
+                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                                <li class=\\"fd-menu__item\\">
+                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                        <span class=\\"fd-menu__title\\">Settings</span>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-menu__item\\">
+                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                        <span class=\\"fd-menu__title\\">Sign Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 "
 `;
 
@@ -24881,29 +24927,48 @@ exports[`Check stories > Components/Shellbar > Story LinksWithCollapsibleMenuXlS
                                                  width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
             <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <div class=\\"fd-popover__control\\">
-                    <div aria-label=\\"Image label\\" aria-controls=\\"UIO6J688\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
-                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search\\" type=\\"text\\"
-                                   class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"UIO6J6881\\"
-                                   placeholder=\\"Search\\">
-                            <span
-                                class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"navigation-down-arrow-button\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                    <i class=\\"sap-icon--decline\\"></i>
-                                </button>
-                            </span>
-                        </div>
-                    </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--center fd-shellbar__group--mobile-flex\\">
+            <div class=\\"fd-shellbar__action fd-shellbar__action--grow\\">
+              <div id=\\"JKHhjk7234k\\" class=\\"fd-input-group fd-shellbar__search-field\\">
+                <div class=\\"fd-input-group__addon fd-shellbar__search-field-category fd-input-group__addon--button\\">
+                  <div class=\\"fd-select\\">
+                    <button
+                      aria-expanded=\\"false\\"
+                      aria-haspopup=\\"listbox\\"
+                      aria-labelledby=\\"cozySelectLabel cozySelectValue\\"
+                      class=\\"fd-select__control fd-shellbar__search-category\\"
+                      id=\\"cozySelectCombobox\\"
+                      onclick=\\"
+                          toggleElAttrs('h0C6A325', ['aria-hidden']);
+                          toggleElAttrs('cozySelectCombobox', ['aria-expanded']);
+                      \\"
+                      value=\\"List Item 1\\"
+                      tabindex=\\"0\\">
+                      <span is=\\"cozySelectValue\\" class=\\"fd-select__text-content\\">List Item 1</span>
+                      <span class=\\"fd-button fd-button--transparent fd-select__button fd-shellbar__search-dropdown\\">
+                          <i class=\\"sap-icon--slim-arrow-down\\"></i>
+                      </span>
+                    </button>
+                  </div>
                 </div>
-            </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
+                <input aria-label=\\"search-input\\" type=\\"text\\" onfocus=\\"addClass('JKHhjk7234k', 'is-focus')\\" onblur=\\"removeClass('JKHhjk7234k', 'is-focus')\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search everything\\">
+                <div class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-cancel fd-input-group__addon--button\\">
+                  <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
+                    <i class=\\"sap-icon--decline\\"></i>
+                  </button>
+                </div>
+                <div class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-shellbar__search-submit fd-input-group__addon--button\\">
+                  <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
                     <i class=\\"sap-icon--search\\"></i>
-                </button>
+                  </button>
+                </div>
+              </div>
             </div>
+            <div class=\\"fd-shellbar__action fd-shellbar__action--mobile fd-shellbar__action--shrink\\">
+              <button class=\\"fd-button fd-button--transparent\\">Cancel</button>
+            </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
                 <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
                     <i class=\\"sap-icon--bell\\"></i>
@@ -25029,7 +25094,7 @@ exports[`Check stories > Components/Shellbar > Story Primary > Should match snap
 
 exports[`Check stories > Components/Shellbar > Story ProductMenuAndSearch > Should match snapshot 1`] = `
 "<div style=\\"height:200px\\">
-    <div class=\\"fd-shellbar\\">
+    <div class=\\"fd-shellbar fd-shellbar--xl\\">
         <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
             <a class=\\"fd-shellbar__logo\\" href=\\"https://www.sap.com/index.html\\" target=\\"_blank\\">
                 <img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\" srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\" width=\\"48\\" height=\\"24\\" alt=\\"SAP\\">
@@ -25068,28 +25133,25 @@ exports[`Check stories > Components/Shellbar > Story ProductMenuAndSearch > Shou
                     </nav>
                 </div>
             </div>
-        <div class=\\"fd-shellbar__subtitle\\">Subtitle</div>
+            <div class=\\"fd-shellbar__subtitle\\">Subtitle</div>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--center\\">
+            <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover__control\\">
                     <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
                         <div class=\\"fd-input-group fd-shellbar__search-field\\">
-                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search\\">
+                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search everything\\">
                             <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
-                                <button aria-label=\\"button-decline\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
-                                        <i class=\\"sap-icon--decline\\"></i>
+                                <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
+                                        <i class=\\"sap-icon--search\\"></i>
                                 </button>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
-                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Search\\">
-                        <i class=\\"sap-icon--search\\"></i>
-                </button>
-            </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
             <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
@@ -25142,12 +25204,12 @@ exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should matc
         </span>
             <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
         </div>
-        <div class=\\"fd-shellbar__group fd-shellbar__group--copilot\\">
-            <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\"><img
-                src=\\"//unpkg.com/fundamental-styles/dist/images/copilot.png\\" alt=\\"CoPilot\\" height=\\"30\\" width=\\"30\\"/>
-            </button>
-        </div>
         <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
+                    <i class=\\"sap-icon--co\\"></i>
+                </button>
+            </div>
             <div class=\\"fd-shellbar__action\\">
                 <div class=\\"fd-popover fd-popover--right\\">
                     <div class=\\"fd-popover__control\\">
@@ -25292,6 +25354,116 @@ exports[`Check stories > Components/Shellbar > Story ProductSwitch > Should matc
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Shellbar > Story ResponsivePaddings > Should match snapshot 1`] = `
+"<div style=\\"height:300px\\">
+    <div class=\\"fd-shellbar fd-shellbar--responsive-paddings\\">
+        <div class=\\"fd-shellbar__group fd-shellbar__group--product\\">
+            <span class=\\"fd-shellbar__logo\\"><img src=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo.png\\"
+                                                 srcset=\\"//unpkg.com/fundamental-styles/dist/images/sap-logo@2x.png 1x, //unpkg.com/fundamental-styles/dist/images/sap-logo@3x.png 2x, //unpkg.com/fundamental-styles/dist/images/sap-logo@4x.png 3x\\"
+                                                 width=\\"48\\" height=\\"24\\" alt=\\"SAP\\"></span>
+            <span class=\\"fd-shellbar__title\\">Corporate Portal</span>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--center\\">
+            <div class=\\"fd-shellbar__action\\">
+                <div class=\\"fd-popover__control\\">
+                    <div aria-label=\\"Image label\\" onclick=\\"onPopoverClick('F4GcX348b')\\" aria-controls=\\"F4GcX348b\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\">
+                        <div class=\\"fd-input-group fd-shellbar__search-field\\">
+                            <input aria-label=\\"search-input\\" type=\\"text\\" class=\\"fd-input fd-input-group__input fd-shellbar__search-field-input\\" id=\\"F4GcX348b1\\" placeholder=\\"Search everything\\">
+                            <span class=\\"fd-input-group__addon fd-shellbar__search-field-addon fd-input-group__addon--button\\">
+                                <button aria-label=\\"button-search\\" class=\\"fd-shellbar__button fd-button fd-button--transparent\\">
+                                        <i class=\\"sap-icon--search\\"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\\"fd-shellbar__group fd-shellbar__group--actions\\">
+            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Notifications\\">
+                    <i class=\\"sap-icon--bell\\"></i>
+                    <span class=\\"fd-button__badge\\">251K</span>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action fd-shellbar__action--desktop\\">
+                <button class=\\"fd-button fd-button--transparent fd-shellbar__button\\" aria-label=\\"Pool\\">
+                    <i class=\\"sap-icon--pool\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-shellbar__action fd-shellbar__action--mobile\\">
+                <div class=\\"fd-shellbar-collapse\\">
+                    <div class=\\"fd-popover fd-popover--right\\">
+                        <div class=\\"fd-popover__control\\">
+                            <div class=\\"fd-shellbar-collapse--control\\" onclick=\\"onPopoverClick('CWaGGD78')\\"
+                                 aria-controls=\\"CWaGGD78\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" role=\\"button\\">
+                                <button class=\\"fd-button fd-button--transparentfd-shellbar__button\\" aria-controls=\\"undefined\\"
+                                        aria-haspopup=\\"true\\" aria-expanded=\\"false\\">
+                                    <i class=\\"sap-icon--overflow\\"></i>
+                                    <span class=\\"fd-buton__badge\\">251K</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\"
+                             aria-hidden=\\"true\\" id=\\"CWaGGD78\\">
+                            <nav class=\\"fd-menu\\">
+                                <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                                    <li class=\\"fd-menu__item\\">
+                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                            <span class=\\"fd-menu__title\\">Search</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\">
+                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                            <span class=\\"fd-menu__title\\">Notifications Out</span>
+                                        </a>
+                                    </li>
+                                    <li class=\\"fd-menu__item\\">
+                                        <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                            <span class=\\"fd-menu__title\\">Pool</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=\\"fd-shellbar__action\\">
+                <div class=\\"fd-popover fd-popover--right\\">
+                    <div class=\\"fd-popover__control\\">
+                        <div class=\\"fd-button fd-button--transparent fd-shellbar__button fd-user-menu__control\\"
+                             onclick=\\"onPopoverClick('DD35G276')\\" aria-controls=\\"DD35G276\\" aria-expanded=\\"false\\"
+                             aria-haspopup=\\"true\\" role=\\"button\\" tabindex=\\"0\\">
+                            <span
+                                class=\\"fd-avatar fd-avatar--xs fd-avatar--circle fd-shellbar__avatar--circle\\">WW</span>
+                        </div>
+                    </div>
+                    <div class=\\"fd-popover__body fd-popover__body--no-arrow fd-popover__body--right\\" aria-hidden=\\"true\\"
+                         id=\\"DD35G276\\">
+                        <nav class=\\"fd-menu\\">
+                            <ul class=\\"fd-menu__list fd-menu__list--no-shadow\\">
+                                <li class=\\"fd-menu__item\\">
+                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                        <span class=\\"fd-menu__title\\">Settings</span>
+                                    </a>
+                                </li>
+                                <li class=\\"fd-menu__item\\">
+                                    <a role=\\"button\\" class=\\"fd-menu__link\\">
+                                        <span class=\\"fd-menu__title\\">Sign Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -25536,17 +25708,17 @@ exports[`Check stories > Components/Splitter > Story MixedAndNested > Should mat
                         <div class='fd-splitter__split-pane'>
                             Content, Level 2
                         </div>
-
+        
                         <div tabindex='0' class=\\"fd-splitter__resizer\\" role=\\"separator\\" aria-orienration=\\"vertical\\">
                             <span class='fd-splitter__resizer-decoration-before'></span>
-
+        
                             <button class='fd-button fd-button--transparent fd-splitter__resizer-grip' tabindex='-1'>
                                 <i class=\\"sap-icon--vertical-grip fd-splitter__resizer-grip-icon\\"></i>
                             </button>
-
+        
                             <span class='fd-splitter__resizer-decoration-after'></span>
                         </div>
-
+        
                         <div class='fd-splitter__split-pane'>
                             Content, Level 2
                         </div>
@@ -25632,7 +25804,7 @@ exports[`Check stories > Components/Splitter > Story ResizerAppearance > Should 
 
             <span class='fd-splitter__resizer-decoration-after'></span>
         </div>
-
+        
         <div class='fd-splitter__split-pane'>
             Next resizer has translucent appearance.
         </div>
@@ -25646,11 +25818,11 @@ exports[`Check stories > Components/Splitter > Story ResizerAppearance > Should 
 
             <span class='fd-splitter__resizer-decoration-after'></span>
         </div>
-
+        
         <div class='fd-splitter__split-pane'>
             Next resizer has transparent appearance.
         </div>
-
+        
         <div tabindex='0' class=\\"fd-splitter__resizer fd-splitter__resizer--transparent\\" role=\\"separator\\" aria-orienration=\\"vertical\\">
             <span class='fd-splitter__resizer-decoration-before'></span>
 
@@ -25660,7 +25832,7 @@ exports[`Check stories > Components/Splitter > Story ResizerAppearance > Should 
 
             <span class='fd-splitter__resizer-decoration-after'></span>
         </div>
-
+        
         <div class='fd-splitter__split-pane'>
             Content
         </div>
@@ -27563,76 +27735,130 @@ exports[`Check stories > Components/Table > Story ContextualMenu > Should match 
 
 exports[`Check stories > Components/Table > Story FixColumnHeader > Should match snapshot 1`] = `
 "<style>
+        .fd-table--fixed {
+            height: 300px;
+        }
+
         .fd-table--fixed .fd-table__cell {
             min-width: 200px;
             max-width: 200px;
         }
 </style>
-<div style=\\"position: relative\\">
-    <div class=\\"fd-table--fixed\\">
-        <table class=\\"fd-table\\">
-            <thead class=\\"fd-table__header\\">
-                <tr class=\\"fd-table__row\\">
-                    <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\"  aria-haspopup=\\"true\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                    <th class=\\"fd-table__cell\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                    <th class=\\"fd-table__cell\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                    <th class=\\"fd-table__cell\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                    <th class=\\"fd-table__cell\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                    <th class=\\"fd-table__cell\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                    <th class=\\"fd-table__cell\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                    <th class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\" scope=\\"col\\">
-                        Header Column
-                    </th>
-                </tr>
-            </thead>
-            <tbody class=\\"fd-table__body\\">
-                <tr class=\\"fd-table__row\\">
-                    <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
-                </tr>
-                <tr class=\\"fd-table__row\\">
-                    <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
-                </tr>
-                <tr class=\\"fd-table__row\\">
-                    <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class=\\"fd-table--fixed\\">
+    <table class=\\"fd-table\\">
+        <thead class=\\"fd-table__header\\">
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\"  aria-haspopup=\\"true\\" scope=\\"col\\">
+                    Header Column
+                </th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">
+                    Header Column
+                </th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">
+                    Header Column
+                </th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">
+                    Header Column
+                </th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">
+                    Header Column
+                </th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">
+                    Header Column
+                </th>
+                <th class=\\"fd-table__cell\\" scope=\\"col\\">
+                    Header Column
+                </th>
+                <th class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\" scope=\\"col\\">
+                    Header Column
+                </th>
+            </tr>
+        </thead>
+        <tbody class=\\"fd-table__body\\">
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class=\\"fd-table__row\\">
+                <th class=\\"fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last\\" scope=\\"row\\">Row header</th>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor sit amet ipsum</td>
+                <td class=\\"fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last\\">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+        </tbody>
+        <tfoot class=\\"fd-table__footer\\">
+            <tr class=\\"fd-table__row\\">
+                <td class=\\"fd-table__cell\\"></td>
+                <td class=\\"fd-table__cell\\"></td>
+                <td class=\\"fd-table__cell\\"></td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor</td>
+                <td class=\\"fd-table__cell\\">Lorem ipsum dolor</td>
+                <td class=\\"fd-table__cell\\"></td>
+                <td class=\\"fd-table__cell\\"></td>
+                <td class=\\"fd-table__cell\\"></td>
+            </tr>
+        </tfoot>
+    </table>
 </div>
 "
 `;
@@ -29847,7 +30073,7 @@ exports[`Check stories > Components/Time Picker > Story Hours12Compact > Should 
                 <div role=\\"img\\" aria-label=\\"Clock Dial\\" class=\\"fd-time-picker__clock-container fd-time-picker__clock-container--compact\\">
                     <div aria-hidden=\\"true\\" class=\\"fd-time-picker__clock fd-time-picker__clock--inner\\">
                         <div data-label=\\"Hours\\" class=\\"fd-time-picker__label\\"></div>
-
+                        
                         <div>
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 6deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
@@ -30475,7 +30701,7 @@ exports[`Check stories > Components/Time Picker > Story Hours24Compact > Should 
                 <div role=\\"img\\" aria-label=\\"Clock Dial\\" class=\\"fd-time-picker__clock-container fd-time-picker__clock-container--compact\\">
                     <div aria-hidden=\\"true\\" class=\\"fd-time-picker__clock fd-time-picker__clock--inner\\">
                         <div data-label=\\"Hours\\" class=\\"fd-time-picker__label\\"></div>
-
+                        
                         <div>
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 6deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
@@ -31147,7 +31373,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 24deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 30deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">5</span>
@@ -31168,12 +31394,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 54deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 60deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">10</span>
                             </div>
-
+                        
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 66deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31189,12 +31415,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 84deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 90deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">15</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 96deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31210,12 +31436,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 114deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 120deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">20</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 126deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31231,12 +31457,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 144deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 150deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">25</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 156deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31252,12 +31478,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 174deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 180deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">30</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 186deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31273,12 +31499,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 204deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 210deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">35</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 216deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31299,7 +31525,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">40</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 246deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31320,7 +31546,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">45</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 276deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31341,7 +31567,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">50</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 306deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31362,7 +31588,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">55</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 336deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31385,7 +31611,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCompact > Should 
                             </div>
 
                         </div>
-
+                        
                         <div class=\\"fd-time-picker__item\\" style=\\"--deg: 108deg\\">
                             <div class=\\"fd-time-picker__tick fd-time-picker__tick--selected\\"></div>
                             <div class=\\"fd-time-picker__number fd-time-picker__number--selected\\">18</div>
@@ -31467,7 +31693,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 24deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 30deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">5</span>
@@ -31488,12 +31714,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 54deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 60deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">10</span>
                             </div>
-
+                        
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 66deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31509,12 +31735,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 84deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 90deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">15</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 96deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31530,12 +31756,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 114deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 120deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">20</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 126deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31551,12 +31777,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 144deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 150deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">25</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 156deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31572,12 +31798,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 174deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 180deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number fd-time-picker__number--hover\\">30</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 186deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31593,12 +31819,12 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 204deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 210deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">35</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 216deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31619,7 +31845,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">40</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 246deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31640,7 +31866,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">45</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 276deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31661,7 +31887,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">50</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 306deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31682,7 +31908,7 @@ exports[`Check stories > Components/Time Picker > Story MinutesCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">55</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 336deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31839,7 +32065,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 24deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 30deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">5</span>
@@ -31860,12 +32086,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 54deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 60deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">10</span>
                             </div>
-
+                        
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 66deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31881,12 +32107,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 84deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 90deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">15</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 96deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31902,12 +32128,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 114deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 120deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">20</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 126deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31923,12 +32149,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 144deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 150deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">25</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 156deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31944,12 +32170,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 174deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 180deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number fd-time-picker__number--hover\\">30</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 186deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31965,12 +32191,12 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 204deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 210deg\\">
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">35</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 216deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -31991,7 +32217,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">40</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 246deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -32012,7 +32238,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">45</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 276deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -32033,7 +32259,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">50</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 306deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -32054,7 +32280,7 @@ exports[`Check stories > Components/Time Picker > Story SecondsCozy > Should mat
                                 <span class=\\"fd-time-picker__tick fd-time-picker__tick--hour\\"></span>
                                 <span class=\\"fd-time-picker__number\\">55</span>
                             </div>
-
+                            
                             <div class=\\"fd-time-picker__item\\" style=\\"--deg: 336deg\\">
                                 <span class=\\"fd-time-picker__tick\\"></span>
                             </div>
@@ -35505,7 +35731,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-
+  
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35517,7 +35743,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-
+  
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35529,7 +35755,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-
+  
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35541,7 +35767,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-
+  
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -35553,7 +35779,7 @@ exports[`Check stories > Components/Variant Management > Story HeaderSizes > Sho
       </button>
     </div>
   </div>
-
+  
 
   <div class=\\"fd-variant-management\\">
     <div class=\\"fd-variant-management__header\\" tabindex=\\"0\\">
@@ -42274,7 +42500,7 @@ exports[`Check stories > Layouts/Fixed Card Layout > Story FixedCardLayout > Sho
                     </div>
                 </a>
                 <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\">
-                    <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders\\">
+                    <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border\\">
                     <thead class=\\"fd-table__header\\">
                         <tr class=\\"fd-table__row\\">
                         <th class=\\"fd-table__cell fd-table__cell--checkbox\\">
@@ -42548,7 +42774,7 @@ exports[`Check stories > Layouts/Fixed Card Layout > Story FixedCardLayout > Sho
                     </div>
                 </a>
                 <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\">
-                    <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders\\">
+                    <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border\\">
                     <thead class=\\"fd-table__header\\">
                         <tr class=\\"fd-table__row\\">
                         <th class=\\"fd-table__cell fd-table__cell--checkbox\\">
@@ -44070,7 +44296,7 @@ exports[`Check stories > Layouts/Resizable Card Layout > Story ResizeCardLayout 
                         </div>
                     </a>
                     <div class=\\"fd-card__content\\" role=\\"group\\" aria-label=\\"Card Content\\">
-                        <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders\\">
+                        <table class=\\"fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border\\">
                         <thead class=\\"fd-table__header\\">
                             <tr class=\\"fd-table__row\\">
                             <th class=\\"fd-table__cell fd-table__cell--checkbox\\">

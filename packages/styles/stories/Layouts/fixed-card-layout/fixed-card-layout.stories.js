@@ -170,7 +170,7 @@ export const FixedCardLayout = () =>
                     </div>
                 </a>
                 <div class="fd-card__content" role="group" aria-label="Card Content">
-                    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
+                    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border">
                     <thead class="fd-table__header">
                         <tr class="fd-table__row">
                         <th class="fd-table__cell fd-table__cell--checkbox">
@@ -444,7 +444,7 @@ export const FixedCardLayout = () =>
                     </div>
                 </a>
                 <div class="fd-card__content" role="group" aria-label="Card Content">
-                    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
+                    <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border">
                     <thead class="fd-table__header">
                         <tr class="fd-table__row">
                         <th class="fd-table__cell fd-table__cell--checkbox">
@@ -520,7 +520,7 @@ FixedCardLayout.parameters = {
         description: {
             story: `Cards arrangement in a 3 column layout.
 * Use \`fd-fixed-card-layout__card-layout\` class for the wrapper element, specify amount of columns with \`fd-fixed-card-layout__card-layout--columns-N\` class, where \`1 < N < 11\`.
-Layout is single column by default. Also, set \`height\` or \`max-height\` for the wrapper element. 
+Layout is single column by default. Also, set \`height\` or \`max-height\` for the wrapper element.
 * Apply \`fd-fixed-card-layout__card\` class to the every card element.`
         }
     }
