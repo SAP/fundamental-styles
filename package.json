@@ -62,7 +62,7 @@
     "@nrwl/devkit": "15.0.0",
     "@nrwl/eslint-plugin-nx": "15.0.0",
     "@nrwl/js": "15.0.0",
-    "@nrwl/nx-cloud": "15.0.2",
+    "@nrwl/nx-cloud": "15.0.3",
     "@nrwl/nx-plugin": "15.0.0",
     "@nrwl/react": "15.0.0",
     "@nrwl/web": "15.0.0",
