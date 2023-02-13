@@ -1,6 +1,7 @@
+@import './new-settings';
 @import "mixins/mixins";
 
-$block: fd-splitter;
+$block: #{$fd-namespace}-splitter;
 
 @mixin fd-splitter-gradient($deg) {
   background: linear-gradient($deg, transparent, var(--fdSplitter_Resizer_Decoration_Background));

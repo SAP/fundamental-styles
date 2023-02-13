@@ -1,6 +1,7 @@
+@import './new-settings';
 @import 'mixins/mixins';
 
-$block: fd-illustrated-message;
+$block: #{$fd-namespace}-illustrated-message;
 
 .#{$block} {
   --illustrationW: 20rem;
