@@ -1,6 +1,7 @@
+@import './new-settings';
 @import "mixins/mixins";
 
-$block: fd-scrollbar;
+$block: #{$fd-namespace}-scrollbar;
 
 .#{$block} {
   @include fd-reset();

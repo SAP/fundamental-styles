@@ -1,6 +1,7 @@
+@import './new-settings';
 @import './mixins';
 
-$block: fd-icon-tab-bar;
+$block: #{$fd-namespace}-icon-tab-bar;
 $fd-icon-tab-bar-icon-spacing: 0.188rem !default;
 $fd-icon-tab-bar-list-padding-right: 1rem !default;
 $fd-icon-tab-bar-icon-circle-size: 2.75rem !default;

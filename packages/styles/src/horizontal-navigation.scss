@@ -1,6 +1,7 @@
+@import './new-settings';
 @import './mixins';
 
-$block: fd-horizontal-navigation;
+$block: #{$fd-namespace}-horizontal-navigation;
 
 .#{$block} {
   @include fd-reset();
