@@ -1,3 +1,12 @@
+# [0.27.0-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.7...v0.27.0-rc.8) (2023-02-13)
+
+
+### Bug Fixes
+
+* **styles:** update cx side nav button type ([#4253](https://github.com/SAP/fundamental-styles/issues/4253)) ([af8de11](https://github.com/SAP/fundamental-styles/commit/af8de11fbd31704daff66545007b01ceb85e7073))
+
+
+
 # [0.27.0-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.6...v0.27.0-rc.7) (2023-02-13)
 
 
