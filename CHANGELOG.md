@@ -1,3 +1,12 @@
+# [0.27.0-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.5...v0.27.0-rc.6) (2023-02-13)
+
+
+### Features
+
+* added js to publish ([#4237](https://github.com/SAP/fundamental-styles/issues/4237)) ([56b71dc](https://github.com/SAP/fundamental-styles/commit/56b71dcdaf35ce184bdb306a8993dd96c83a9188))
+
+
+
 # [0.27.0-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.4...v0.27.0-rc.5) (2023-01-30)
 
 
