@@ -1050,7 +1050,7 @@ CosyNarrow.parameters = {
 
 export const CosyNarrowOverflow = () => `<div class="fdx-side-nav fdx-side-nav--narrow">
     <nav class="fdx-side-nav__main-navigation">
-        <button class="fd-button fd-button--transparent fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-up-arrow"></i></button>
+        <button class="fd-button fd-button--standard fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-up-arrow"></i></button>
         <ul class="fdx-nested-list level-1">
             <li class="fdx-nested-list__item">
                 <a class="fdx-nested-list__link" href="#" aria-label="Level 1 Item">
@@ -1094,7 +1094,7 @@ export const CosyNarrowOverflow = () => `<div class="fdx-side-nav fdx-side-nav--
                 </a>
             </li>
         </ul>
-        <button class="fd-button fd-button--transparent fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-down-arrow"></i></button>
+        <button class="fd-button fd-button--standard fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-down-arrow"></i></button>
     </nav>
     <nav class="fdx-side-nav__utility">
         <ul class="fdx-nested-list level-1">
@@ -1441,7 +1441,7 @@ CompactNarrow.parameters = {
 
 export const CompactNarrowOverflow = () => `<div class="fdx-side-nav fdx-side-nav--compact fdx-side-nav--narrow">
     <nav class="fdx-side-nav__main-navigation">
-        <button class="fd-button fd-button--transparent fd-button--compact fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-up-arrow"></i></button>
+        <button class="fd-button fd-button--standard fd-button--compact fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-up-arrow"></i></button>
         <ul class="fdx-nested-list fdx-nested-list--compact level-1">
             <li class="fdx-nested-list__item">
                 <a class="fdx-nested-list__link" href="#" aria-label="Level 1 Item">
@@ -1485,7 +1485,7 @@ export const CompactNarrowOverflow = () => `<div class="fdx-side-nav fdx-side-na
                 </a>
             </li>
         </ul>
-        <button class="fd-button fd-button--transparent fd-button--compact fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-down-arrow"></i></button>
+        <button class="fd-button fd-button--standard fd-button--compact fdx-side-nav__button" aria-label="Move up"><i class="sap-icon--navigation-down-arrow"></i></button>
     </nav>
     <nav class="fdx-side-nav__utility">
         <ul class="fdx-nested-list fdx-nested-list--compact level-1">
