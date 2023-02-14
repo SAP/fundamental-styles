@@ -951,8 +951,6 @@ export const ResponsivePaddings = () => `<div style="height:300px">
 </div>
 `;
 
-ResponsivePaddings.storyName = 'Responsive Paddings';
-
 ResponsivePaddings.parameters = {
     docs: {
         description: {
