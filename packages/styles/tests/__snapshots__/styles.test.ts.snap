@@ -8442,11 +8442,10 @@ exports[`Check stories > Components/Forms/Form Message > Story Error > Should ma
 "<div class=\\"fd-form-item\\">
         <label class=\\"fd-form-label\\" for=\\"input-1cc\\">Error input:</label>
         <div class=\\"fd-form-input-message-group fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB3\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\"
-                 onfocusin=\\"onPopoverClick('popoverB3')\\" onfocusout=\\"onPopoverClick('popoverB3')\\">
+            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB3\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                 <input class=\\"fd-input is-error\\" type=\\"text\\" id=\\"input-1cc\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
             </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB3\\">
+            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB3\\">
                 <div class=\\"fd-form-message fd-form-message--error\\" >Error message</div>
             </div>
         </div>
@@ -8458,11 +8457,10 @@ exports[`Check stories > Components/Forms/Form Message > Story Information > Sho
 "<div class=\\"fd-form-item\\">
         <label class=\\"fd-form-label\\" for=\\"input-1ee\\">Information input:</label>
         <div class=\\"fd-form-input-message-group fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB5\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\"
-                 onfocusin=\\"onPopoverClick('popoverB5')\\" onfocusout=\\"onPopoverClick('popoverB5')\\">
+            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB5\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                 <input class=\\"fd-input fd-input--compact is-information\\" type=\\"text\\" id=\\"input-1ee\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
             </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB5\\">
+            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB5\\">
                 <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
             </div>
         </div>
@@ -8474,11 +8472,10 @@ exports[`Check stories > Components/Forms/Form Message > Story Success > Should 
 "<div class=\\"fd-form-item\\">
         <label class=\\"fd-form-label\\" for=\\"input-1bb\\">Success input:</label>
         <div class=\\"fd-form-input-message-group fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB2\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\"
-                 onfocusin=\\"onPopoverClick('popoverB2')\\" onfocusout=\\"onPopoverClick('popoverB2')\\">
+            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB2\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                 <input class=\\"fd-input is-success\\" type=\\"text\\" id=\\"input-1bb\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
             </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB2\\">
+            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB2\\">
                 <div class=\\"fd-form-message fd-form-message--success\\">Success message</div>
             </div>
         </div>
@@ -8490,12 +8487,11 @@ exports[`Check stories > Components/Forms/Form Message > Story Warning > Should 
 "<div class=\\"fd-form-item\\">
         <label class=\\"fd-form-label\\" for=\\"input-1cc\\">Warning input:</label>
         <div class=\\"fd-form-input-message-group fd-popover\\">
-            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB4\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\"
-                 onfocusin=\\"onPopoverClick('popoverB4')\\" onfocusout=\\"onPopoverClick('popoverB4')\\">
+            <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB4\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
                 <input class=\\"fd-input is-warning\\" type=\\"text\\" id=\\"input-1cc\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
             </div>
-            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB4\\">
-            <div class=\\"fd-form-message fd-form-message--warning\\" >Warning message</div>
+            <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB4\\">
+                <div class=\\"fd-form-message fd-form-message--warning\\" >Warning message</div>
             </div>
         </div>
     </div>
@@ -8605,10 +8601,10 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"input-1bb\\">Success input:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB2\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onclick=\\"onPopoverClick('popoverB2');\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB2\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <input class=\\"fd-input is-success\\" type=\\"text\\" id=\\"input-1bb\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB2\\">
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB2\\">
             <div class=\\"fd-form-message fd-form-message--success\\">Success message</div>
         </div>
     </div>
@@ -8619,11 +8615,11 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"input-1cc\\">Error input:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB3\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onclick=\\"onPopoverClick('popoverB3');\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB3\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <input class=\\"fd-input is-error\\" type=\\"text\\" id=\\"input-1cc\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB3\\">
-            <div class=\\"fd-form-message fd-form-message--error\\" >Error message</div>
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB3\\">
+            <div class=\\"fd-form-message fd-form-message--error\\">Error message</div>
         </div>
     </div>
 </div>
@@ -8633,10 +8629,10 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"input-1dd\\">Warning input:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB4\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onclick=\\"onPopoverClick('popoverB4');\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB4\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <input class=\\"fd-input is-warning\\" type=\\"text\\" id=\\"input-1dd\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB4\\">
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB4\\">
             <div class=\\"fd-form-message fd-form-message--warning\\">Warning message</div>
         </div>
     </div>
@@ -8647,10 +8643,10 @@ exports[`Check stories > Components/Forms/Input > Story States > Should match sn
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"input-1ee\\">Information input:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB5\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onclick=\\"onPopoverClick('popoverB5');\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverB5\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <input class=\\"fd-input fd-input--compact is-information\\" type=\\"text\\" id=\\"input-1ee\\" placeholder=\\"Field placeholder text\\" aria-label=\\"Image label\\">
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"true\\" id=\\"popoverB5\\">
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverB5\\">
             <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
         </div>
     </div>
@@ -9757,10 +9753,10 @@ exports[`Check stories > Components/Forms/Textarea > Story States > Should match
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"textarea-3\\">Success text area:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT51\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onfocusin=\\"onPopoverClick('popoverT51')\\" onfocusout=\\"onPopoverClick('popoverT51')\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT51\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <textarea class=\\"fd-textarea is-success\\" id=\\"textarea-3\\" placeholder=\\"Write something here\\"></textarea>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\"  aria-hidden=\\"true\\" id=\\"popoverT51\\">
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverT51\\">
             <div class=\\"fd-form-message fd-form-message--success\\">Success message</div>
         </div>
     </div>
@@ -9770,10 +9766,10 @@ exports[`Check stories > Components/Forms/Textarea > Story States > Should match
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"textarea-4\\">Error text area:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT52\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onfocusin=\\"onPopoverClick('popoverT52')\\" onfocusout=\\"onPopoverClick('popoverT52')\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT52\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <textarea class=\\"fd-textarea is-error\\" id=\\"textarea-4\\" placeholder=\\"Write something here\\"></textarea>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\"  aria-hidden=\\"true\\" id=\\"popoverT52\\">
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverT52\\">
             <div class=\\"fd-form-message fd-form-message--error\\">Error message</div>
         </div>
     </div>
@@ -9782,10 +9778,10 @@ exports[`Check stories > Components/Forms/Textarea > Story States > Should match
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"textarea-5\\">Warning text area:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT53\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onfocusin=\\"onPopoverClick('popoverT53')\\" onfocusout=\\"onPopoverClick('popoverT53')\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT53\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <textarea class=\\"fd-textarea is-warning\\" id=\\"textarea-5\\" placeholder=\\"Write something here\\"></textarea>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\"  aria-hidden=\\"true\\" id=\\"popoverT53\\">
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverT53\\">
             <div class=\\"fd-form-message fd-form-message--warning\\">Warning message</div>
         </div>
     </div>
@@ -9794,10 +9790,10 @@ exports[`Check stories > Components/Forms/Textarea > Story States > Should match
 <div class=\\"fd-form-item\\">
     <label class=\\"fd-form-label\\" for=\\"textarea-6\\">Information text area:</label>
     <div class=\\"fd-popover\\">
-        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT54\\" aria-expanded=\\"false\\" aria-haspopup=\\"true\\" onfocusin=\\"onPopoverClick('popoverT54')\\" onfocusout=\\"onPopoverClick('popoverT54')\\">
+        <div class=\\"fd-popover__control\\" aria-controls=\\"popoverT54\\" aria-expanded=\\"true\\" aria-haspopup=\\"true\\">
             <textarea class=\\"fd-textarea is-information\\" id=\\"textarea-6\\" placeholder=\\"Write something here\\"></textarea>
         </div>
-        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\"  aria-hidden=\\"true\\" id=\\"popoverT54\\">
+        <div class=\\"fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow\\" aria-hidden=\\"false\\" id=\\"popoverT54\\">
             <div class=\\"fd-form-message fd-form-message--information\\">Information message</div>
         </div>
     </div>

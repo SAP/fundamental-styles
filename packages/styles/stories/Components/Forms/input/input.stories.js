@@ -140,10 +140,10 @@ export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1bb">Success input:</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB2');">
+        <div class="fd-popover__control" aria-controls="popoverB2" aria-expanded="true" aria-haspopup="true">
             <input class="fd-input is-success" type="text" id="input-1bb" placeholder="Field placeholder text" aria-label="Image label">
         </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true" id="popoverB2">
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB2">
             <div class="fd-form-message fd-form-message--success">Success message</div>
         </div>
     </div>
@@ -154,11 +154,11 @@ export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1cc">Error input:</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB3');">
+        <div class="fd-popover__control" aria-controls="popoverB3" aria-expanded="true" aria-haspopup="true">
             <input class="fd-input is-error" type="text" id="input-1cc" placeholder="Field placeholder text" aria-label="Image label">
         </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true" id="popoverB3">
-            <div class="fd-form-message fd-form-message--error" >Error message</div>
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB3">
+            <div class="fd-form-message fd-form-message--error">Error message</div>
         </div>
     </div>
 </div>
@@ -168,10 +168,10 @@ export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1dd">Warning input:</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB4');">
+        <div class="fd-popover__control" aria-controls="popoverB4" aria-expanded="true" aria-haspopup="true">
             <input class="fd-input is-warning" type="text" id="input-1dd" placeholder="Field placeholder text" aria-label="Image label">
         </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true" id="popoverB4">
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB4">
             <div class="fd-form-message fd-form-message--warning">Warning message</div>
         </div>
     </div>
@@ -182,10 +182,10 @@ export const States = () => `
 <div class="fd-form-item">
     <label class="fd-form-label" for="input-1ee">Information input:</label>
     <div class="fd-popover">
-        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="false" aria-haspopup="true" onclick="onPopoverClick('popoverB5');">
+        <div class="fd-popover__control" aria-controls="popoverB5" aria-expanded="true" aria-haspopup="true">
             <input class="fd-input fd-input--compact is-information" type="text" id="input-1ee" placeholder="Field placeholder text" aria-label="Image label">
         </div>
-        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="true" id="popoverB5">
+        <div class="fd-popover__body fd-popover__body--input-message-group fd-popover__body--no-arrow" aria-hidden="false" id="popoverB5">
             <div class="fd-form-message fd-form-message--information">Information message</div>
         </div>
     </div>
