@@ -2817,10 +2817,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@sap-theming/theming-base-content@11.1.48":
-  version "11.1.48"
-  resolved "https://registry.yarnpkg.com/@sap-theming/theming-base-content/-/theming-base-content-11.1.48.tgz#5d2d05849d4b84d07b531051162be0163f10292d"
-  integrity sha512-Q2rMoEN+6tjnfbhlQ2a+WybhAWj/0RuhWUb3vSzI/iwCkGPGtz3k8HhtU1jtmAPjRCiJQSEmiE2HMv3Av/7Y7Q==
+"@sap-theming/theming-base-content@11.1.49":
+  version "11.1.49"
+  resolved "https://registry.yarnpkg.com/@sap-theming/theming-base-content/-/theming-base-content-11.1.49.tgz#a36342d6fcd02f754ff216421e7fdaddc35638b7"
+  integrity sha512-K4WpkOfdGYUshd5MlAZo5qubb7uki06mT2NKQthYuGCgXjPlWh7P0SzfaetH2LgG/TAzIBYTugaGwZnl1O1SgQ==
 
 "@sideway/address@^4.1.3":
   version "4.1.4"
