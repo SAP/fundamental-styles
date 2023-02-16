@@ -678,6 +678,12 @@
         "female",
         "male",
         "gender-male-and-female",
-        "rotate"
+        "rotate",
+        "biometric-thumb",
+        "biometric-face",
+        "people-connected",
+        "select-appointments",
+        "light-mode",
+        "dark-mode"
     ]
 }
