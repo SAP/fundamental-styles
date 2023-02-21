@@ -41,7 +41,7 @@ $inverted-color-states: (
   ),
   "critical": (
     "regular": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background), "borderColor": var(--sapButton_Critical_BorderColor)),
-    "hover": ("color": var(sapButton_Critical_Hover_TextColor), "background": var(--sapButton_Critical_Hover_Background)),
+    "hover": ("color": var(--sapButton_Critical_Hover_TextColor), "background": var(--sapButton_Critical_Hover_Background)),
     "active": ("color": var(--sapButton_Active_TextColor), "background": var(--sapButton_Critical_Active_Background)),
     "visited": ("color": var(--sapButton_Critical_TextColor), "background": var(--sapButton_Critical_Background)),
   ),
@@ -120,56 +120,42 @@ $inverted-color-accents: (
 
 // STATES FOR INVERTED OBJECT STATUS
 @mixin inverted-object-states($variablesSet) {
-  color: map_deep_get($variablesSet, "regular", "color");
-  background-color: map_deep_get($variablesSet, "regular", "background");
-
-  @include fd-object-status-icon-selector() {
-    color: map_deep_get($variablesSet, "regular", "color");
-  }
+  --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "regular", "background")};
 
   &:hover,
   &:active,
   &:visited {
-    color: map_deep_get($variablesSet, "regular", "color");
-    background-color: map_deep_get($variablesSet, "regular", "background");
-
-    @include fd-object-status-icon-selector() {
-      color: map_deep_get($variablesSet, "regular", "color");
-    }
+    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "regular", "color")};
+    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "regular", "color")};
+    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "regular", "background")};
   }
 }
 
 // INTERACTION STATES FOR INVERTED OBJECT STATUS
 @mixin inverted-object-interaction-states($variablesSet) {
-  color: map_deep_get($variablesSet, "regular", "color");
-  background-color: map_deep_get($variablesSet, "regular", "background");
-  border-color: map_deep_get($variablesSet, "regular", "borderColor");
+  --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "regular", "color")};
+  --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "regular", "background")};
+  --fdObjectStatus_Border_Color: #{map_deep_get($variablesSet, "regular", "borderColor")};
 
   &:visited {
-    color: map_deep_get($variablesSet, "visited", "color");
-    background-color: map_deep_get($variablesSet, "visited", "background");
-
-    @include fd-object-status-icon-selector() {
-      color: map_deep_get($variablesSet, "visited", "color");
-    }
+    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "visited", "color")};
+    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "visited", "color")};
+    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "visited", "background")};
   }
 
   @include fd-hover() {
-    color: map_deep_get($variablesSet, "hover", "color");
-    background-color: map_deep_get($variablesSet, "hover", "background");
-
-    @include fd-object-status-icon-selector() {
-      color: map_deep_get($variablesSet, "hover", "color");
-    }
+    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "hover", "color")};
+    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "hover", "color")};
+    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "hover", "background")};
   }
 
   @include fd-active() {
-    color: map_deep_get($variablesSet, "active", "color");
-    background-color: map_deep_get($variablesSet, "active", "background");
-
-    @include fd-object-status-icon-selector() {
-      color: map_deep_get($variablesSet, "active", "color");
-    }
+    --fdObjectStatus_Text_Color: #{map_deep_get($variablesSet, "active", "color")};
+    --fdObjectStatus_Icon_Color: #{map_deep_get($variablesSet, "active", "color")};
+    --fdObjectStatus_Background_Color: #{map_deep_get($variablesSet, "active", "background")};
   }
 }
 
@@ -185,15 +171,16 @@ $inverted-color-accents: (
   }
 
   // ICON VARIABLES
-  $fd-object-status-icon-font-size: 1rem;
-  $fd-object-status-icon-padding: 0.25rem !default;
-  $fd-object-status-icon-neutral: var(--sapNeutralElementColor);
+  --fdObjectStatus_Icon_Font_Size: 1rem;
+  --fdObjectStatus_Icon_Padding: 0.25rem;
+  --fdObjectStatus_Icon_Color: var(--sapNeutralElementColor);
 
   // TEXT VARIABLES
-  $fd-object-status-text-font-family: var(--sapFontFamily) !default;
-  $fd-object-status-text-font-size: var(--sapFontSize) !default;
-  $fd-object-status-text-neutral: var(--sapNeutralTextColor) !default;
-  $fd-object-status-height: 1rem !default;
+  --fdObjectStatus_Text_Font_Family: var(--sapFontFamily);
+  --fdObjectStatus_Text_Font_Size: var(--sapFontSize);
+  --fdObjectStatus_Text_Color: var(--sapNeutralTextColor);
+  --fdObjectStatus_Height: 1rem;
+  --fdObjectStatus_Text_Shadow: var(--sapContent_TextShadow);
 
   // INVERTED OBJECT STATUS VARIABLES
   $fd-object-status-inverted-border-radius: 0.25rem !default;
@@ -216,17 +203,17 @@ $inverted-color-accents: (
 
   @include fd-reset();
 
-  font-family: $fd-object-status-text-font-family;
-  font-size: $fd-object-status-text-font-size;
-  color: $fd-object-status-text-neutral;
-  text-shadow: var(--sapContent_TextShadow);
+  font-family: var(--fdObjectStatus_Text_Font_Family);
+  font-size: var(--fdObjectStatus_Text_Font_Size);
+  color: var(--fdObjectStatus_Text_Color);
+  text-shadow: var(--fdObjectStatus_Text_Shadow);
   max-width: 100%;
   word-break: break-word;
   display: inline-flex;
-  align-items: start;
-  height: $fd-object-status-height;
-  max-height: $fd-object-status-height;
-  line-height: $fd-object-status-height;
+  align-items: center;
+  height: var(--fdObjectStatus_Height);
+  max-height: var(--fdObjectStatus_Height);
+  line-height: var(--fdObjectStatus_Height);
 
   @include fd-focus() {
     outline: none;
@@ -236,17 +223,17 @@ $inverted-color-accents: (
     @include fd-reset();
     @include fd-object-status-text-inherit();
 
-    line-height: $fd-object-status-height;
+    line-height: var(--fdObjectStatus_Height);
   }
 
   &__icon {
     @include fd-icon-element-base() {
       @include fd-flex-center();
 
-      font-size: $fd-object-status-icon-font-size;
-      padding-right: $fd-object-status-icon-padding;
-      color: $fd-object-status-icon-neutral;
-      line-height: $fd-object-status-height;
+      font-size: var(--fdObjectStatus_Icon_Font_Size);
+      padding-right: var(--fdObjectStatus_Icon_Padding);
+      color: var(--fdObjectStatus_Icon_Color);
+      line-height: var(--fdObjectStatus_Height);
 
       // ICON ONLY MODE
       @include fd-only-child() {
@@ -260,42 +247,30 @@ $inverted-color-accents: (
   @include fd-rtl() {
     @include fd-object-status-icon-selector() {
       padding-right: 0;
-      padding-left: $fd-object-status-icon-padding;
+      padding-left: var(--fdObjectStatus_Icon_Padding);
     }
   }
 
   @each $set-name, $color-set in $color-states {
     &--#{$set-name} {
-      color: var(--fdElementTextColor, map_get($color-set, "color"));
-
-      @include fd-object-status-icon-selector() {
-        color: var(--fdElementIconColor, map_get($color-set, "iconColor"));
-      }
+      --fdObjectStatus_Text_Color: var(--fdElementTextColor, #{map_get($color-set, "color")});
+      --fdObjectStatus_Icon_Color: var(--fdElementIconColor, #{map_get($color-set, "iconColor")});
 
       &:visited {
-        color: map_get($color-set, "visited");
-
-        @include fd-object-status-icon-selector() {
-          color: map_get($color-set, "visited");
-        }
+        --fdObjectStatus_Text_Color: #{map_get($color-set, "visited")};
+        --fdObjectStatus_Icon_Color: #{map_get($color-set, "visited")};
       }
     }
   }
 
   @each $set-name, $color-set in $color-accents {
     &--indication-#{$set-name} {
-      color: map_get($color-set, "color");
-
-      @include fd-object-status-icon-selector() {
-        color: map_get($color-set, "iconColor");
-      }
+      --fdObjectStatus_Text_Color: #{map_get($color-set, "color")};
+      --fdObjectStatus_Icon_Color: #{map_get($color-set, "color")};
 
       &:visited {
-        color: map_get($color-set, "visited");
-
-        @include fd-object-status-icon-selector() {
-          color: map_get($color-set, "visited");
-        }
+        --fdObjectStatus_Text_Color: #{map_get($color-set, "visited")};
+        --fdObjectStatus_Icon_Color: #{map_get($color-set, "visited")};
       }
     }
   }
@@ -320,27 +295,18 @@ $inverted-color-accents: (
 
   // LARGE DESIGN
   &--large {
-    font-size: $fd-object-status-icon-text-font-size-large;
-    height: $fd-object-status-height-large;
-    max-height: $fd-object-status-height-large;
-    line-height: $fd-object-status-height-large;
-
-    .#{$block}__text {
-      font-family: var(--sapFontLightFamily);
-      line-height: $fd-object-status-height-large;
-    }
-
-    .#{$block}__icon {
-      line-height: $fd-object-status-height-large;
-    }
-
-    @include fd-object-status-icon-selector() {
-      font-size: $fd-object-status-icon-text-font-size-large;
-    }
+    --fdObjectStatus_Text_Font_Size: #{$fd-object-status-icon-text-font-size-large};
+    --fdObjectStatus_Height: #{$fd-object-status-height-large};
+    --fdObjectStatus_Icon_Font_Size: #{ $fd-object-status-icon-text-font-size-large};
+    --fdObjectStatus_Text_Font_Family: var(--sapFontLightFamily);
   }
 
   // INVERTED OBJECT STATUS
   &--inverted {
+    --fdObjectStatus_Text_Font_Size: var(--sapFontSmallSize);
+    --fdObjectStatus_Text_Shadow: var(--sapContent_ContrastTextShadow);
+    --fdObjectStatus_Icon_Font_Size: #{$fd-object-status-inverted-icon-font-size};
+
     height: auto;
     min-height: $fd-object-status-inverted-min-height;
     width: auto;
@@ -348,27 +314,19 @@ $inverted-color-accents: (
     min-width: $fd-object-status-inverted-min-width;
     padding: $fd-object-status-inverted-padding;
     border-radius: $fd-object-status-inverted-border-radius;
-    font-size: var(--sapFontSmallSize);
     font-weight: $fd-object-status-inverted-text-font-weight;
     border-width: var(--fdInverted_Object_Border_Width);
     border-style: solid;
-    line-height: $fd-object-status-height;
-    text-shadow: var(--sapContent_ContrastTextShadow);
+    background-color: var(--fdObjectStatus_Background_Color, transparent);
+    border-color: var(--fdObjectStatus_Border_Color, initial);
 
     .#{$block}__icon,
     .#{$block}__text {
       line-height: 0.875rem;
-      font-size: var(--sapFontSmallSize);
     }
 
     @include fd-object-status-icon-selector() {
-      font-size: $fd-object-status-inverted-icon-font-size;
       padding-right: $fd-object-status-inverted-icon-spacing;
-
-      // ICON ONLY MODE
-      @include fd-only-child() {
-        padding: $fd-object-status-inverted-padding-empty;
-      }
     }
 
     @include fd-rtl() {
@@ -398,17 +356,20 @@ $inverted-color-accents: (
 
     // LARGE DESIGN FOR INVERTED OBJECT STATUS
     &.#{$block}--large {
-      font-size: $fd-object-status-icon-text-font-size-large-inverted;
-      padding: $fd-object-status-padding-large-inverted;
-      line-height: $fd-object-status-height-large;
+      --fdObjectStatus_Text_Font_Size: #{$fd-object-status-icon-text-font-size-large-inverted};
+      --fdObjectStatus_Icon_Font_Size: #{$fd-object-status-icon-text-font-size-large-inverted};
+      --fdObjectStatus_Height: #{$fd-object-status-height-large};
 
-      .#{$block}__icon {
-        line-height: $fd-object-status-height-large;
+      padding: $fd-object-status-padding-large-inverted;
+      height: auto;
+      max-height: none;
+
+      .#{$block}__icon,
+      .#{$block}__text {
+        line-height: var(--fdObjectStatus_Height);
       }
 
       @include fd-object-status-icon-selector() {
-        font-size: $fd-object-status-icon-text-font-size-large-inverted;
-
         // ICON ONLY MODE
         @include fd-only-child() {
           height: $fd-object-status-min-height-large-inverted-empty;
