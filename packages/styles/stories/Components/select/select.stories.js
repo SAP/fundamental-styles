@@ -35,7 +35,7 @@ export default {
 export const Cozy = () => `<div style="height: 250px">
     <label class="fd-form-label" id="cozySelectLabel">Choose an option</label><br />
     <div class="fd-popover">
-        <div class="fd-popover__control">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
             <div class="fd-select">
                 <button
                     aria-expanded="true"
@@ -112,7 +112,7 @@ Select displays a predefined option and a button that triggers a dropdown menu t
 export const Compact = () => `<div style="height: 200px">
     <label class="fd-form-label" id="compactSelectLabel">Choose an option</label><br />
     <div class="fd-popover">
-        <div class="fd-popover__control">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
             <div class="fd-select fd-select--compact">
                 <button
                     id="compactSelectCombobox"
@@ -243,7 +243,7 @@ export const SemanticStates = () => `<div style="height: 200px">
                 Choose an option
             </label><br>
             <div class="fd-popover">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                     <div class="fd-select">
                         <button
                             aria-labelledby="a4546C40 a4546C40Value"
@@ -307,7 +307,7 @@ export const SemanticStates = () => `<div style="height: 200px">
             </label>
             <br>
             <div class="fd-popover">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                     <div class="fd-select">
                         <button
                             aria-labelledby="b4546C40 b4546C40Value"
@@ -371,7 +371,7 @@ export const SemanticStates = () => `<div style="height: 200px">
             </label>
             <br />
             <div class="fd-popover">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                     <div class="fd-select">
                         <button
                             aria-labelledby="b45336C4 b45336C4Value"
@@ -435,7 +435,7 @@ export const SemanticStates = () => `<div style="height: 200px">
             </label>
             <br />
             <div class="fd-popover">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                     <div class="fd-select">
                         <button
                             aria-labelledby="h45336C4 h45336C4Value"
@@ -525,7 +525,7 @@ export const AsFormItem = () => `<div style="height:310px">
     <div class="fd-form-item">
     <label class="fd-form-label" id="formSelectLabel">Choose an option</label>
         <div class="fd-popover">
-            <div class="fd-popover__control">
+            <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                 <div class="fd-select">
                     <button
                         aria-labelledby="formSelectLabel formSelectValue"
@@ -607,7 +607,7 @@ export const TwoColumn = () => `<div style="height: 200px">
     <div class="fd-col fd-col--6">
     <label class="fd-form-label" id="twoColumn1Label">Choose an option</label><br />
       <div class="fd-popover">
-        <div class="fd-popover__control">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
           <div class="fd-select">
             <button
                 aria-labelledby="twoColumn1Label twoColumn1Value"
@@ -658,7 +658,7 @@ export const TwoColumn = () => `<div style="height: 200px">
     <div class="fd-col fd-col--6">
     <label class="fd-form-label" id="twoColumn2Label">Choose an option</label><br />
       <div class="fd-popover">
-        <div class="fd-popover__control">
+        <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
           <div class="fd-select fd-select--compact">
             <button
                 aria-labelledby="twoColumn2Label twoColumn2Value"
@@ -725,7 +725,7 @@ Select can be displayed with two columns in the dropdown list view. The column w
 export const TwoColumnsAndIcons = () => `<div style="height: 200px">
     <label class="fd-form-label" id="twoColumnsAndIconsLabel">Choose an option</label><br />
     <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
         <div class="fd-select">
             <button
                 class="fd-select__control"
@@ -794,7 +794,7 @@ Not only can select be displayed with two columns, but also with icons. To displ
 export const ItemGrouping = () => `<div style="height: 450px">
 <label class="fd-form-label" id="itemGroupingLabel">Choose an option</label><br />
     <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
         <div class="fd-select">
             <button
                 aria-labelledby="itemGroupingLabel itemGroupingValue"
@@ -877,7 +877,7 @@ Select can be displayed with headers that group the list items in the dropdown m
 export const TextWrapping = () => `<div style="height: 300px">
     <label class="fd-form-label" id="textWrappingLabel">Choose an option</label><br />
     <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
         <div class="fd-select">
             <button
                 aria-labelledby="textWrappingLabel textWrappingValue"
@@ -947,7 +947,7 @@ The select component wraps text by default, and there is virtually no limit to t
 export const NoWrapping = () => `<div style="height: 200px">
     <label class="fd-form-label" id="noWrappingLabel">Choose an option</label><br />
     <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
         <div class="fd-select fd-select--compact">
             <button
                 aria-labelledby="noWrappingLabel noWrappingValue"
@@ -1015,7 +1015,7 @@ Although select wraps text by default, it is possible to prevent wrapping. To ac
 export const MatchSelectPopoverBodySize = () => `<div style="height: 250px">
     <label class="fd-form-label" id="matchSelectPopoverBodySizeLabel">Choose an option</label><br />
     <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
         <div class="fd-select">
             <button
                 aria-labelledby="matchSelectPopoverBodySizeLabel matchSelectPopoverBodySizeValue"
@@ -1084,7 +1084,7 @@ Select can be displayed as a popover, using all of its specifications. The defau
 export const LargerSelect = () => `<div style="height: 250px">
     <label class="fd-form-label" id="largeSelectPopoverSizeLabel">Choose an option</label><br />
     <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
         <div class="fd-select">
             <button
                 aria-labelledby="largeSelectPopoverSizeLabel"
@@ -1188,7 +1188,7 @@ Select can be disabled to communicate to the user that the control cannot be sel
 
 export const Readonly = () => `<label class="fd-form-label" id="readonlyLabel">Chosen option</label><br />
 <div class="fd-popover">
-    <div class="fd-popover__control">
+    <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
         <div class="fd-select">
             <span
                 class="fd-select__control is-readonly"
@@ -1226,7 +1226,7 @@ export const Blank = () => `<div style="height: 250px">
             </label>
             <br>
             <div class="fd-popover">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                     <div class="fd-select">
                         <button
                             id="acqw4q3r3d"
@@ -1280,7 +1280,7 @@ export const Blank = () => `<div style="height: 250px">
             </label>
             <br>
             <div class="fd-popover">
-                <div class="fd-popover__control">
+                <div class="fd-popover__control" aria-expanded="true" aria-haspopup="true">
                     <div class="fd-select fd-select--compact">
                         <button
                             id="oj89qyeuawbd"

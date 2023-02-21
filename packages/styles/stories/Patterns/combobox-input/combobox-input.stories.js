@@ -110,7 +110,7 @@ export const CozyAndCompact = () => `<div style="display:flex;justify-content:sp
                     toggleElAttrs('nda8sd7abd', ['aria-expanded']);
                     toggleElAttrs('emi2qudh', ['aria-expanded']);
                 ">
-                <div class="fd-input-group fd-input-group--control">
+                <div class="fd-input-group fd-input-group--control fd-input-group--compact">
                     <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="compactCombobox" placeholder="Select Fruit">
                     <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                         <button
@@ -483,7 +483,7 @@ export const Semantic = () => `<div style="height:200px">
                 toggleElAttrs('mfa98agh4ih3', ['aria-expanded']);
                 toggleElAttrs('mpzjf2q09ugd', ['aria-expanded']);
             ">
-            <div class="fd-input-group fd-input-group--control is-success">
+            <div class="fd-input-group fd-input-group--control fd-input-group--compact is-success">
                 <input type="text" class="fd-input fd-input--compact fd-input-group__input" id="semanticCombobox" placeholder="Select Fruit">
                 <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
                     <button id="mpzjf2q09ugd" aria-label="show/hide fruit options"

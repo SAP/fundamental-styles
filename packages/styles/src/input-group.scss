@@ -116,6 +116,10 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
+  &--compact {
+    margin: 0.1875rem 0;
+  }
+
   .#{$fd-namespace}-textarea {
     resize: vertical;
   }

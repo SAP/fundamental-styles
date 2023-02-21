@@ -28,9 +28,9 @@ Users can also enter custom values if the entries are not validated by the appli
 - The values of the option list contain secondary information that does not need to be displayed right away.
 
 **Do not use multi-combo box if**
-- The user needs to choose between two options, such as ON or OFF and YES or NO. 
+- The user needs to choose between two options, such as ON or OFF and YES or NO.
 - You need to display more than one attribute.
-- You want to enable users to add custom values. 
+- You want to enable users to add custom values.
 - Your use case requires all available options to be displayed right away, without any user interaction
 - The user needs to search on multiple attributes.
 - Your use case requires more options to choose from.
@@ -148,7 +148,7 @@ export const CozyAndCompact = () => `<div class="fd-container" style="height: 30
 
         <div class="fd-popover">
             <div class="fd-popover__control" role="combobox" aria-controls="F4GcX34a" aria-expanded="true" aria-haspopup="true">
-                <div class="fd-input-group fd-input-group--control" tabindex="0">
+                <div class="fd-input-group fd-input-group--compact fd-input-group--control" tabindex="0">
                     <div class="fd-tokenizer fd-tokenizer--compact">
                         <div class="fd-tokenizer__inner">
                             <span class="fd-token fd-token--compact" role="button" tabindex="0">
