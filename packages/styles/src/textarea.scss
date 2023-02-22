@@ -37,7 +37,7 @@ $block: #{$fd-namespace}-textarea;
     z-index: 4;
   }
 
-  &--compact {
+  @include fd-is-compact() {
     min-height: 1.625rem;
     margin: 0.1875rem 0;
     padding: 0.1875rem 0.5rem;

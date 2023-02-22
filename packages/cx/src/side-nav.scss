@@ -101,7 +101,7 @@ $fd-side-nav-border-radius: 1rem;
     margin: 0.75rem 0.5rem !important;
   }
 
-  &--compact {
+  @include fd-is-compact() {
     padding-top: 0.125rem;
     padding-bottom: 0.125rem;
 

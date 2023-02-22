@@ -40,31 +40,31 @@ export const ActionSheetDesktop = () => `
     <div class="fd-popover__body fd-popover__body--compact" aria-hidden="false" id="actionSheetDesktop">
         <ul class="fd-action-sheet fd-action-sheet--compact" role="list" aria-label="List of contextual options">
             <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--attachment"></i>
                     <span class="fd-button__text">Upload file</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--add"></i>
                     <span class="fd-button__text">Assign user</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--print"></i>
                     <span class="fd-button__text">Print</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left">
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
                     <i class="sap-icon--download"></i>
                     <span class="fd-button__text">Download</span>
                 </button>
             </li>
             <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--compact fd-button--transparent fd-button--text-alignment-left"
+                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
                         onclick="onPopoverClick('actionSheetDesktop');">
                     <span class="fd-button__text">Decide Later</span>
                 </button>

@@ -40,11 +40,6 @@ $block: #{$fd-namespace}-step-input;
         z-index: auto;
       }
     }
-
-    &--compact {
-      width: $fd-step-input-compact-button-width;
-      min-width: $fd-step-input-compact-button-width;
-    }
   }
 
   &__input.#{$fd-namespace}-input {
@@ -68,10 +63,6 @@ $block: #{$fd-namespace}-step-input;
 
       outline: none;
     }
-
-    &--compact {
-      height: 100%;
-    }
   }
 
   &__container {
@@ -88,9 +79,18 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
-  &--compact {
+  @include fd-is-compact() {
     height: $fd-step-input-compact-height;
     min-height: $fd-step-input-compact-height;
+
+    .#{$block}__button.#{$fd-namespace}-button {
+      width: $fd-step-input-compact-button-width;
+      min-width: $fd-step-input-compact-button-width;
+    }
+
+    .#{$block}__input.#{$fd-namespace}-input {
+      height: 100%;
+    }
 
     /** Width is different due to different border width  */
     &.is-information,

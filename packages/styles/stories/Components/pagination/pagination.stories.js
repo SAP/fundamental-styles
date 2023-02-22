@@ -50,43 +50,43 @@ Per page label | \`fd-pagination__per-page-label\` | Per page section label. Hid
 };
 
 export const FirstPage = () => `<h3>> 9 Pages</h3>
-<div class='fd-pagination'>
+<div class='fd-pagination fd-pagination--compact'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='first page example, pagination with more than 9 pages'>
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='true'>
             <i class='sap-icon sap-icon--media-rewind'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='true'>
             <i class='sap-icon sap-icon--navigation-left-arrow'></i>
         </a>
 
         <label class='fd-form-label fd-pagination__label' id='firstPageInputPage' aria-label='Page input, Current page, Page 1'>Page:</label>
 
-        <input aria-labelledby='firstPageInputPage firstPageInputOf' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='500' value='1' required />
+        <input aria-labelledby='firstPageInputPage firstPageInputOf' class='fd-input fd-pagination__input' type='number' min='1' max='500' value='1' required />
 
         <label class='fd-form-label fd-pagination__label' id='firstPageInputOf'>of 500</label>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 2'>2</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 2'>2</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 3'>3</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 3'>3</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 4'>4</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 4'>4</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 5'>5</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 5'>5</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 6'>6</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 6'>6</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 7'>7</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 7'>7</a>
 
-        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
+        <span class='fd-pagination__more' role='presentation'></span>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 500'>500</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 500'>500</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-right-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-forward'></i>
         </a>
     </nav>
@@ -98,33 +98,33 @@ export const FirstPage = () => `<h3>> 9 Pages</h3>
 
 <h3>< 9 Pages</h3>
 
-<div class='fd-pagination fd-pagination--short'>
+<div class='fd-pagination fd-pagination--short fd-pagination--compact'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='first page example, pagination with less than 9 pages'>
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='true'>
             <i class='sap-icon sap-icon--media-rewind'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='true'>
             <i class='sap-icon sap-icon--navigation-left-arrow'></i>
         </a>
 
         <label class='fd-form-label fd-pagination__label' id='firstPageInputShortPage' aria-label='Page input, Current page, Page 1'>Page:</label>
 
-        <input aria-labelledby="firstPageInputShortPage firstPageInputShortOf" class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='3' value='1' required />
+        <input aria-labelledby="firstPageInputShortPage firstPageInputShortOf" class='fd-input fd-pagination__input' type='number' min='1' max='3' value='1' required />
 
         <label class='fd-form-label fd-pagination__label' id='firstPageInputShortOf'>of 3</label>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active' aria-label='Current Page, Page 1' aria-current='true'>1</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link is-active' aria-label='Current Page, Page 1' aria-current='true'>1</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 2'>2</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 2'>2</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 3'>3</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 3'>3</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-right-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-forward'></i>
         </a>
     </nav>
@@ -148,43 +148,43 @@ FirstPage.parameters = {
 };
 
 export const MiddlePage = () => `<h3>> 9 Pages</h3>
-<div class='fd-pagination'>
+<div class='fd-pagination fd-pagination--compact'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='middle page example, pagination with more than 9 pages'>
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-rewind'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-left-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
+        <span class='fd-pagination__more' role='presentation'></span>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 298'>298</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 298'>298</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 299'>299</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 299'>299</a>
 
         <label class='fd-form-label fd-pagination__label' id='middlePageInputPage' aria-label='Page input, Current page, Page 300'>Page:</label>
 
-        <input aria-labelledby='middlePageInputPage middlePageInputOf' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='500' value='300' required />
+        <input aria-labelledby='middlePageInputPage middlePageInputOf' class='fd-input fd-pagination__input' type='number' min='1' max='500' value='300' required />
 
         <label class='fd-form-label fd-pagination__label' id='middlePageInputOf'>of 500</label>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 301'>301</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 301'>301</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 302'>302</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 302'>302</a>
 
-        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
+        <span class='fd-pagination__more' role='presentation'></span>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 500'>500</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 500'>500</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-right-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-forward'></i>
         </a>
     </nav>
@@ -196,33 +196,33 @@ export const MiddlePage = () => `<h3>> 9 Pages</h3>
 
 <h3>< 9 Pages</h3>
 
-<div class='fd-pagination fd-pagination--short'>
+<div class='fd-pagination fd-pagination--short fd-pagination--compact'>
     <nav class='fd-pagination__nav'  role='navigation' aria-label='middle page example, pagination with less than 9 pages'>
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-rewind'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-left-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active' aria-label='Current page, Page 2' aria-current='true'>2</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link is-active' aria-label='Current page, Page 2' aria-current='true'>2</a>
 
         <label class='fd-form-label fd-pagination__label' id='middlePageInputShortPage' aria-label='Page input, Current page, Page 1'>Page:</label>
 
-        <input aria-labelledby='middlePageInputShortPage middlePageInputShortOf' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='3' value='2' required />
+        <input aria-labelledby='middlePageInputShortPage middlePageInputShortOf' class='fd-input fd-pagination__input' type='number' min='1' max='3' value='2' required />
 
         <label class='fd-form-label fd-pagination__label' id='middlePageInputShortOf'>of 3</label>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 3'>3</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 3'>3</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-right-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-forward'></i>
         </a>
     </nav>
@@ -248,43 +248,43 @@ MiddlePage.parameters = {
 };
 
 export const LastPage = () => `<h3>> 9 Pages</h3>
-<div class='fd-pagination'>
+<div class='fd-pagination fd-pagination--compact'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='last page example, pagination with more than 9 pages'>
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-rewind'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-left-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-        <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
+        <span class='fd-pagination__more' role='presentation'></span>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 494'>494</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 494'>494</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 495'>495</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 495'>495</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 496'>496</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 496'>496</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 497'>497</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 497'>497</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 498'>498</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 498'>498</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 499'>499</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 499'>499</a>
 
         <label class='fd-form-label fd-pagination__label' id='lastPageInputPage' aria-label='Page input, Current page, Page 500'>Page:</label>
 
-        <input aria-labelledby='lastPageInputPage lastPageInputOf' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='500' value='500' required />
+        <input aria-labelledby='lastPageInputPage lastPageInputOf' class='fd-input fd-pagination__input' type='number' min='1' max='500' value='500' required />
 
         <label class='fd-form-label fd-pagination__label' id='lastPageInputOf'>of 500</label>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='true'>
             <i class='sap-icon sap-icon--navigation-right-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='true'>
             <i class='sap-icon sap-icon--media-forward'></i>
         </a>
     </nav>
@@ -296,33 +296,33 @@ export const LastPage = () => `<h3>> 9 Pages</h3>
 
 <h3>< 9 Pages</h3>
 
-<div class='fd-pagination fd-pagination--short'>
+<div class='fd-pagination fd-pagination--short fd-pagination--compact'>
     <nav class='fd-pagination__nav' role='navigation' aria-label='last page example, pagination with less than 9 pages'>
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
             <i class='sap-icon sap-icon--media-rewind'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
             <i class='sap-icon sap-icon--navigation-left-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link'  aria-label='Goto page 2'>2</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link'  aria-label='Goto page 2'>2</a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link is-active' aria-label='Current Page, page 3' aria-current='true'>3</a>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__link is-active' aria-label='Current Page, page 3' aria-current='true'>3</a>
 
         <label class='fd-form-label fd-pagination__label' id='lastPageInputShortPage' aria-label='Page input, Current page, Page 3'>Page:</label>
 
-        <input aria-labelledby='lastPageInputShortPage lastPageInputShortOf' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='3' value='3' required />
+        <input aria-labelledby='lastPageInputShortPage lastPageInputShortOf' class='fd-input fd-pagination__input' type='number' min='1' max='3' value='3' required />
 
         <label class='fd-form-label fd-pagination__label' id='lastPageInputShortOf'>of 3</label>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='true'>
             <i class='sap-icon sap-icon--navigation-right-arrow'></i>
         </a>
 
-        <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='true'>
+        <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='true'>
             <i class='sap-icon sap-icon--media-forward'></i>
         </a>
     </nav>
@@ -346,19 +346,19 @@ LastPage.parameters = {
 };
 
 export const PerPage = () => `<div style='height: 175px'>
-    <div class='fd-pagination'>
+    <div class='fd-pagination fd-pagination--compact'>
         <div class='fd-pagination__per-page'>
             <label class='fd-form-label fd-pagination__per-page-label' id='compactSelectLabel'>Results per page: </label>
 
             <div class='fd-popover'>
                 <div class='fd-popover__control'>
-                    <div class='fd-select fd-select--compact'>
+                    <div class='fd-select'>
                         <button id='compactSelectCombobox' onclick="
                                         toggleElAttrs('h0C6A326', ['aria-hidden']);
                                         toggleElAttrs('compactSelectCombobox', ['aria-expanded']);
                                     " class='fd-select__control' tabindex='0' aria-labelledby='compactSelectLabel compactSelectValue' aria-expanded='true' aria-haspopup='listbox'>
                           <span id='compactSelectValue' class='fd-select__text-content'>4</span>
-                          <span class='fd-button fd-button--transparent fd-button--compact fd-select__button'>
+                          <span class='fd-button fd-button--transparent fd-select__button'>
                                         <i class='sap-icon--slim-arrow-down'></i>
                                     </span>
                         </button>
@@ -385,41 +385,41 @@ export const PerPage = () => `<div style='height: 175px'>
         </div>
 
         <nav class='fd-pagination__nav' role='navigation' aria-label='per page page example, pagination with more than 9 pages'>
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='First page' aria-disabled='false'>
                 <i class='sap-icon sap-icon--media-rewind'></i>
             </a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Previous page' aria-disabled='false'>
                 <i class='sap-icon sap-icon--navigation-left-arrow'></i>
             </a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 1'>1</a>
 
-            <span class='fd-pagination__more fd-pagination__more--compact' role='presentation'></span>
+            <span class='fd-pagination__more' role='presentation'></span>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 494'>494</a>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 494'>494</a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 495'>495</a>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 495'>495</a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 496'>496</a>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 496'>496</a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 497'>497</a>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 497'>497</a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 498'>498</a>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 498'>498</a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__link' aria-label='Goto page 499'>499</a>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__link' aria-label='Goto page 499'>499</a>
 
             <label class='fd-form-label fd-pagination__label' id='perPageInputPage' aria-label='Page input, Current page, Page 500'>Page:</label>
 
-            <input aria-labelledby='perPageInputPage perPageInputOf' class='fd-input fd-input--compact fd-pagination__input' type='number' min='1' max='500' value='500' required />
+            <input aria-labelledby='perPageInputPage perPageInputOf' class='fd-input fd-pagination__input' type='number' min='1' max='500' value='500' required />
 
             <label class='fd-form-label fd-pagination__label' id='perPageInputOf'>of 500</label>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='true'>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__button' aria-label='Next page' aria-disabled='true'>
                 <i class='sap-icon sap-icon--navigation-right-arrow'></i>
             </a>
 
-            <a href='#' class='fd-button fd-button--compact fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='true'>
+            <a href='#' class='fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile' aria-label='Last page' aria-disabled='true'>
                 <i class='sap-icon sap-icon--media-forward'></i>
             </a>
         </nav>

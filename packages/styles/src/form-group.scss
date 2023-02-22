@@ -26,7 +26,7 @@ $block: #{$fd-namespace}-form-group;
     box-sizing: border-box;
     background-color: var(--sapGroup_TitleBackground);
 
-    &--compact {
+    @include fd-is-compact() {
       height: 2rem;
     }
   }

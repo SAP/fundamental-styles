@@ -448,7 +448,7 @@ $fd-card-header-outline-offset: 0.0625rem !default;
   }
 
   &--table {
-    &.#{$block}--compact {
+    @include fd-is-compact() {
       .#{$block}__content {
         padding-bottom: 0.5rem;
       }
