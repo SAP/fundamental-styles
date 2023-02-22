@@ -128,7 +128,7 @@ Expandable.parameters = {
 export const Compact = () => `<div class="fd-panel fd-panel--compact">
     <div class="fd-panel__header">
         <div class="fd-panel__expand">
-            <button class="fd-button fd-button--compact fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234">
+            <button class="fd-button fd-button--transparent fd-panel__button" aria-expanded="false" aria-haspopup="true" aria-controls="Gekf63a" aria-labelledby="asdASD234">
                 <i class="sap-icon--slim-arrow-right"></i>
             </button>
         </div>
@@ -136,9 +136,9 @@ export const Compact = () => `<div class="fd-panel fd-panel--compact">
         <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
             <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
             <div class="fd-segmented-button" role="group" aria-label="Group label">
-              <button class="fd-button fd-button--compact fd-button--toggled" id="Gekf63D" aria-pressed="true">Left</button>
-              <button class="fd-button fd-button--compact" aria-pressed="false">Middle</button>
-              <button class="fd-button fd-button--compact" aria-pressed="false">Right</button>
+              <button class="fd-button fd-button--toggled" id="Gekf63D" aria-pressed="true">Left</button>
+              <button class="fd-button" aria-pressed="false">Middle</button>
+              <button class="fd-button" aria-pressed="false">Right</button>
             </div>
         </div>
     </div>

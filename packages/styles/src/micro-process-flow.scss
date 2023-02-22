@@ -295,7 +295,7 @@ $fd-micro-process-flow-semantic-colors: (
     }
   }
 
-  &--compact {
+  @include fd-is-compact() {
     --fdMicro_Process_Flow_Item_Min_Width: var(--fdMicro_Process_Flow_Compact_Item_Min_Width);
     --fdMicro_Process_Flow_Connector_Width: var(--fdMicro_Process_Flow_Compact_Connector_Width);
     --fdMicro_Process_Flow_Icon_Font_Size: var(--sapFontSmallSize);

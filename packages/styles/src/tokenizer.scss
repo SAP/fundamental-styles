@@ -90,7 +90,7 @@ $block: #{$fd-namespace}-tokenizer;
     outline-style: var(--sapContent_FocusStyle);
   }
 
-  &--compact {
+  @include fd-is-compact() {
     @include fd-set-min-height($fd-input-field-height--compact);
 
     .#{$block}__inner {

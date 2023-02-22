@@ -95,11 +95,6 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
       }
     }
 
-    &--compact {
-      min-width: 2rem;
-      min-height: $fd-form-input-height--compact;
-    }
-
     &--readonly {
       opacity: 0.4;
     }
@@ -116,8 +111,13 @@ $fd-input-border-radius: var(--sapField_BorderCornerRadius);
     }
   }
 
-  &--compact {
+  @include fd-is-compact() {
     margin: 0.1875rem 0;
+
+    .#{$block}__addon {
+      min-width: 2rem;
+      min-height: $fd-form-input-height--compact;
+    }
   }
 
   .#{$fd-namespace}-textarea {

@@ -91,7 +91,7 @@ $block: #{$fd-namespace}-panel;
     }
   }
 
-  &--compact {
+  @include fd-is-compact() {
     .#{$block}__header,
     .#{$block}__expand {
       height: $fd-panel-compact-header-height;

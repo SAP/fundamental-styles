@@ -17,13 +17,13 @@ $block: #{$fd-namespace}-checkbox;
   @include fd-set-padding-left($offset);
 }
 
-.#{$block} {
-  @mixin fd-checkbox-label() {
-    + .#{$block}__label {
-      @content;
-    }
+@mixin fd-checkbox-label() {
+  + .#{$block}__label {
+    @content;
   }
+}
 
+.#{$block} {
   @mixin fd-checkbox-state(
     $background-color,
     $text-color,
@@ -221,7 +221,20 @@ $block: #{$fd-namespace}-checkbox;
     }
   }
 
-  &--compact {
+  @include fd-is-compact() {
+    @include fd-checkbox-label() {
+      --fdCheckbox_Dimensions: var(--fdCheckbox_Compact_Dimensions);
+      --fdCheckbox_Padding: var(--fdCheckbox_Compact_Padding);
+    }
+
+    @include fd-focus() {
+      @include fd-checkbox-label() {
+        --fdCheckbox_Outline_Border_Radius: var(--fdCheckbox_Compact_Outline_Border_Radius);
+      }
+    }
+  }
+
+  @include fd-is-compact() {
     @include fd-checkbox-label() {
       --fdCheckbox_Dimensions: var(--fdCheckbox_Compact_Dimensions);
       --fdCheckbox_Padding: var(--fdCheckbox_Compact_Padding);

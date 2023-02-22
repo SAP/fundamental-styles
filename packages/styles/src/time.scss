@@ -189,7 +189,7 @@ $block: #{$fd-namespace}-time;
     }
   }
 
-  &--compact {
+  @include fd-is-compact() {
     padding: $fd-time-dropdown-compact-padding;
 
     .#{$block}__item {

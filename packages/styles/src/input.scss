@@ -19,7 +19,7 @@ $block: #{$fd-namespace}-input;
     margin-bottom: $fd-form-input-margin;
   }
 
-  &--compact {
+  @include fd-is-compact() {
     @include fd-input-field-base-compact();
   }
 
