@@ -1,3 +1,12 @@
+# [0.27.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.14...v0.27.0-rc.15) (2023-02-22)
+
+
+### Bug Fixes
+
+* fixed package.json exports ([#4281](https://github.com/SAP/fundamental-styles/issues/4281)) ([4dead0d](https://github.com/SAP/fundamental-styles/commit/4dead0d361bd0549c0879d5444954fdae4ba8750))
+
+
+
 # [0.27.0-rc.14](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.13...v0.27.0-rc.14) (2023-02-22)
 
 
