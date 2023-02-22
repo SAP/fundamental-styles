@@ -62,14 +62,14 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
     projectPackageJson['exports'] = {
         ...projectPackageJson['exports'],
         "./dist/js/*": {
-            "default": "./dist/js/*.mjs",
-            "types": "./dist/js/*.d.ts"
-        },
-        "./dist/*": {
-            "default": "./dist/*"
+            "types": "./dist/js/*.d.ts",
+            "default": "./dist/js/*.mjs"
         },
         "./dist/*.css": {
             "default": "./dist/*.css"
+        },
+        "./dist/*": {
+            "default": "./dist/*"
         }
     }
     projectPackageJsonContent = JSON.stringify(projectPackageJson, null, 4);
