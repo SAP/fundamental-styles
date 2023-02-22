@@ -1,3 +1,12 @@
+# [0.27.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.11...v0.27.0-rc.12) (2023-02-22)
+
+
+### Bug Fixes
+
+* **styles:** refactor object status component [ci visual] ([#4271](https://github.com/SAP/fundamental-styles/issues/4271)) ([c16b9b9](https://github.com/SAP/fundamental-styles/commit/c16b9b9900c3ad74e38292a958a3a8d6b01f1779))
+
+
+
 # [0.27.0-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.10...v0.27.0-rc.11) (2023-02-16)
 
 
