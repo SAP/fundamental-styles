@@ -1,3 +1,12 @@
+# [0.27.0-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.12...v0.27.0-rc.13) (2023-02-22)
+
+
+### Bug Fixes
+
+* **styles:** form input correct margins [ci visual] ([#4272](https://github.com/SAP/fundamental-styles/issues/4272)) ([01e1bc6](https://github.com/SAP/fundamental-styles/commit/01e1bc6113899e89d39c21859bb1a00d0ab321e8))
+
+
+
 # [0.27.0-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.11...v0.27.0-rc.12) (2023-02-22)
 
 
