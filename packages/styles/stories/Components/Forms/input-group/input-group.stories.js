@@ -24,7 +24,7 @@ export const Sizes = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde112">Compact Size </label>
-    <div class="fd-input-group">
+    <div class="fd-input-group fd-input-group--compact">
         <span class="fd-input-group__addon fd-input-group__addon--compact">$</span>
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde112" name="" value="1234568910 ">
     </div>
@@ -152,7 +152,7 @@ export const InputWithActions = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde122">Compact Input with icon action</label>
-    <div class="fd-input-group">
+    <div class="fd-input-group fd-input-group--compact">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde122" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact" aria-label="Navigation">
@@ -213,7 +213,7 @@ export const States = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Information compact</label>
-    <div class="fd-input-group is-information">
+    <div class="fd-input-group is-information fd-input-group--compact">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
@@ -226,7 +226,7 @@ export const States = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Error compact</label>
-    <div class="fd-input-group is-error">
+    <div class="fd-input-group is-error fd-input-group--compact">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
@@ -239,7 +239,7 @@ export const States = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Warning(Alert) compact</label>
-    <div class="fd-input-group is-warning">
+    <div class="fd-input-group is-warning fd-input-group--compact">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
@@ -252,7 +252,7 @@ export const States = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde127">Success compact</label>
-    <div class="fd-input-group is-success">
+    <div class="fd-input-group is-success fd-input-group--compact">
         <input class="fd-input fd-input--compact fd-input-group__input" type="text" placeholder="Placeholder" id="aqwsde127" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
@@ -298,7 +298,7 @@ export const States = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde132">Disabled Information</label>
-    <div class="fd-input-group is-information is-disabled">
+    <div class="fd-input-group is-information is-disabled fd-input-group--compact">
         <input class="fd-input fd-input--compact fd-input-group__input" disabled type="text" id="aqwsde132" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact" disabled>
@@ -310,7 +310,7 @@ export const States = () => `
 <br />
 <div class="fd-form-item">
     <label class="fd-form-label" for="aqwsde132">Read-Only</label>
-    <div class="fd-input-group is-readonly">
+    <div class="fd-input-group is-readonly fd-input-group--compact">
         <input class="fd-input fd-input--compact fd-input-group__input" readonly type="text" id="aqwsde132" name="" value="1000000">
         <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
             <button class="fd-input-group__button fd-button fd-button--transparent fd-button--compact">
@@ -481,21 +481,21 @@ TestOne.parameters = {
 };
 
 export const TestTwo = () => `
-<div class="fd-input-group  ">
+<div class="fd-input-group fd-input-group--compact">
    <input aria-label="test" class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
    <span class="fd-input-group__addon fd-input-group__addon--compact">
    km/h
    </span>
 </div>
 <br />
-<div class="fd-input-group  ">
+<div class="fd-input-group fd-input-group--compact">
    <span class="fd-input-group__addon  fd-input-group__addon--compact">
    $
    </span>
    <input aria-label="test" class="input-group-input-playground input-group-input-playground--compact fd-input-group__input" placeholder="" value="19387309" />
 </div>
 <br />
-<div class="fd-input-group  ">
+<div class="fd-input-group fd-input-group--compact">
    <span class="fd-input-group__addon  fd-input-group__addon--compact">
    $
    </span>

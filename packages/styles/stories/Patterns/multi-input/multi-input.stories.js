@@ -161,7 +161,7 @@ export const CozyAndCompact = () => `<div style="display:flex;height:310px">
 
         <div class="fd-popover">
             <div class="fd-popover__control" aria-controls="F4GcX34a" aria-expanded="true" aria-haspopup="true">
-                <div class="fd-input-group fd-input-group--control">
+                <div class="fd-input-group fd-input-group--compact fd-input-group--control">
                     <div class="fd-tokenizer fd-tokenizer--compact">
                         <div class="fd-tokenizer__inner">
                             <span tabindex="0" class="fd-token fd-token--compact" role="button">
@@ -252,7 +252,7 @@ CozyAndCompact.parameters = {
     docs: {
         iframeHeight: 350,
         description: {
-            story: `The multi-input component is a composition of 
+            story: `The multi-input component is a composition of
         the \`input group\`, \`popover\`, \`checkbox\`, \`list\` and \`token\` components.  It can be displayed in compact mode by adding
          the \`--compact\` modifier class to the building blocks of the components.
         `

@@ -15,18 +15,18 @@ export default {
         description: `The date picker provides responsive behavior that allows for simple operation on all devices. It is smaller in compact mode and provides a touch-friendly size in cozy mode.
 
 The date picker lets users select a localized date using touch, mouse, or keyboard input.
-      
+
 It consists of two parts:
-      
+
 - **Input Field**: The user can enter a date directly or select it using the date picker
-      
+
 - **Date Picker**: The user can see a day view, month view, year view, or year ranges.
-      
+
 
 ##Usage
 
 Use the **DatePicker** if:
-      
+
 -    The user needs to enter a single date or a date range.
 -    The user needs to navigate directly from one month or year to another.
       `,
@@ -242,7 +242,7 @@ export const DefaultAndCompactSizes = () => `<div style="display:flex;justify-co
   <div class="fd-popover">
     <div class="fd-popover__control is-expanded">
       <label class="fd-form-label" for="compactDatepicker">Compact</label>
-      <div class="fd-input-group">
+      <div class="fd-input-group fd-input-group--compact">
         <input id="compactDatepicker" type="text" value="" placeholder="Pick a date"
           class="fd-input fd-input--compact fd-input-group__input"
           onfocus="
@@ -446,8 +446,8 @@ DefaultAndCompactSizes.parameters = {
     docs: {
         iframeHeight: 500,
         description: {
-            story: `The date-picker component is a composition of the \`input-group\`, \`popover\` and \`calendar\` components. 
-          It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\`, \`fd-calendar--compact\` 
+            story: `The date-picker component is a composition of the \`input-group\`, \`popover\` and \`calendar\` components.
+          It can be displayed in compact mode by adding the \`fd-input--compact\`, \`fd-button--compact\`, \`fd-calendar--compact\`
           to the building blocks of the component.`
 
 
