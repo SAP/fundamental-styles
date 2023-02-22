@@ -55,21 +55,24 @@ export default async function runExecutor(options: BuildExecutorSchema, context:
         const content = readFileSync(file, 'utf-8');
         const filePath = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `${compilationOutputPath}/js$1.mjs`);
         const typesPath = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `${compilationOutputPath}/js$1.d.ts`);
-        const exportsPath = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `./dist/js$1`);
-        const defaultExport = file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `./dist/js$1.mjs`);
-        projectPackageJson['exports'][exportsPath] = {
-          types: file.replace(new RegExp(`^${compilationOutputPath}(.*).css$`), `./dist/js$1.d.ts`),
-          esm2020: defaultExport,
-          default: defaultExport
-        }
         mkdirpSync(parse(filePath).dir);
         writeFileSync(filePath, `export default { cssSource: \`${content}\` };`);
         writeFileSync(typesPath, `declare const _default: { cssSource: string }; export default _default;`);
     }
-
+    projectPackageJson['exports'] = {
+        ...projectPackageJson['exports'],
+        "./dist/js/*": {
+            "default": "./dist/js/*.mjs",
+            "types": "./dist/js/*.d.ts"
+        },
+        "./dist/*": {
+            "default": "./dist/*"
+        },
+        "./dist/*.css": {
+            "default": "./dist/*.css"
+        }
+    }
     projectPackageJsonContent = JSON.stringify(projectPackageJson, null, 4);
-
-    console.log(projectPackageJsonContent);
 
     Object.entries(versions).forEach(([key, value]) => {
         projectPackageJsonContent = projectPackageJsonContent.replace(new RegExp(key, 'g'), value);
