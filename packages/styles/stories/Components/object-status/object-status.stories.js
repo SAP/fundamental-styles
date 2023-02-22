@@ -3,8 +3,8 @@ import '../../../src/icon.scss';
 export default {
     title: 'Components/Object Status',
     parameters: {
-        description: `Object Status is a short text that represents the semantic status of an object. It has a semantic 
-color and an optional icon. Typically, the object status is used in the dynamic page header and as a status 
+        description: `Object Status is a short text that represents the semantic status of an object. It has a semantic
+color and an optional icon. Typically, the object status is used in the dynamic page header and as a status
 attribute of a line item in a table. `,
         tags: ['f3', 'a11y', 'theme']
     }
@@ -207,7 +207,7 @@ export const ClickableObjectStatus = () => `<div class="fddocs-container">
 ClickableObjectStatus.parameters = {
     docs: {
         description: {
-            story: `           
+            story: `
  If the object status is used as a link, a hover effect is shown on non-touch devices.
  If the object status is shown using a combination of icon and text, there is no hover effect for the icon.
  If Object Status has to be clicked/tabbed by the user add the \`fd-object-status--link\` modifier class.
@@ -300,6 +300,47 @@ export const Inverted = () => `<div class="fddocs-container">
     <a class="fd-object-status fd-object-status--link fd-object-status--inverted">
         <span class="fd-object-status__text">Inverted Neutral</span>
     </a>
+</div>
+
+  <h4>Large Inverted Object Status</h4>
+  <div class="fddocs-container" style="align-items: baseline;">
+    <span class="fd-object-status fd-object-status--negative fd-object-status--inverted fd-object-status--large">
+        <span class="fd-object-status__text">Inverted Negative</span>
+    </span>
+    <span class="fd-object-status fd-object-status--critical fd-object-status--inverted fd-object-status--large">
+        <span class="fd-object-status__text">Inverted Warning</span>
+    </span>
+    <span class="fd-object-status fd-object-status--positive fd-object-status--inverted fd-object-status--large">
+        <span class="fd-object-status__text">Inverted Success</span>
+    </span>
+    <span class="fd-object-status fd-object-status--informative fd-object-status--inverted fd-object-status--large">
+        <span class="fd-object-status__text">Inverted informative</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--large">
+        <span class="fd-object-status__text">Inverted Neutral</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative fd-object-status--large">
+        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--negative fd-object-status--large">
+        <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+        <span class="fd-object-status__text">Negative</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--critical fd-object-status--large">
+        <i class="fd-object-status__icon sap-icon--message-warning" role="presentation"></i>
+        <span class="fd-object-status__text">Critical</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--positive fd-object-status--large">
+        <i class="fd-object-status__icon sap-icon--message-success" role="presentation"></i>
+        <span class="fd-object-status__text">Positive</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--informative fd-object-status--large">
+        <i class="fd-object-status__icon sap-icon--message-information" role="presentation"></i>
+        <span class="fd-object-status__text">Informative</span>
+    </span>
+    <span class="fd-object-status fd-object-status--inverted fd-object-status--large">
+        <span class="fd-object-status__text">Neutral</span>
+    </span>
 </div>
 `;
 Inverted.parameters = {
