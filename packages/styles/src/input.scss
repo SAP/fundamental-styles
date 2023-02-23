@@ -15,10 +15,6 @@ $block: #{$fd-namespace}-input;
     z-index: 4;
   }
 
-  &:last-child {
-    margin-bottom: $fd-form-input-margin;
-  }
-
   &--compact {
     @include fd-input-field-base-compact();
   }

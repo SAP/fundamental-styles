@@ -58,6 +58,10 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       > * {
         margin-bottom: 0;
       }
+
+      & + .#{$block}__body--input-message-group {
+        margin-top: 0;
+      }
     }
 
     @include fd-disabled() {

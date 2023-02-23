@@ -65,9 +65,12 @@ $form-message-states: (
   }
 
   &--static {
-    margin-top: 0;
-    display: table;
     width: auto;
+  }
+
+  &--embedded {
+    box-shadow: none;
+    max-width: 100%;
   }
 
   @each $set-name, $state-set in $form-message-states {
