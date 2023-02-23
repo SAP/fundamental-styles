@@ -47,7 +47,7 @@
       }
     }
 
-    @include fd-is-compact() {
+    @include fd-compact() {
       .#{$block}__item {
         height: calc(2rem + var(--sapList_BorderWidth));
 

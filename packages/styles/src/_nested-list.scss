@@ -363,7 +363,7 @@ $button: #{$fd-namespace}-button;
     }
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     .#{$block}__link,
     .#{$block}__content {
       height: 2rem;

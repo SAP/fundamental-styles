@@ -155,7 +155,7 @@ export const BadgeOnButton = () => `
             <i class="sap-icon--cart" role="presentation"></i>
             <span class="fd-button__badge">3</span>
         </button>
-        
+
         <h4>Compact</h4>
         <button class="fd-button fd-button--compact">
             <span class="fd-button__text">Compact Badge Button</span>
@@ -309,7 +309,7 @@ export const SplitMenuButton = () => `
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
+
         <div class="fd-button-split" role="group" aria-label="button-split">
           <button class="fd-button" aria-label="button">
             <span class="fd-button-split__text">Standard</span>
@@ -327,7 +327,7 @@ export const SplitMenuButton = () => `
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
+
         <div class="fd-button-split fd-button-split--ghost" role="group" aria-label="button-split">
           <button class="fd-button fd-button--ghost" aria-label="button">
             <span class="fd-button-split__text">Ghost</span>
@@ -336,7 +336,7 @@ export const SplitMenuButton = () => `
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
+
         <div class="fd-button-split fd-button-split--positive" role="group" aria-label="button-split">
           <button class="fd-button fd-button--positive" aria-label="button">
             <span class="fd-button-split__text">Positive</span>
@@ -345,7 +345,7 @@ export const SplitMenuButton = () => `
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
+
         <div class="fd-button-split fd-button-split--negative" role="group" aria-label="button-split">
           <button class="fd-button fd-button--negative" aria-label="button">
             <span class="fd-button-split__text">Negative</span>
@@ -354,7 +354,7 @@ export const SplitMenuButton = () => `
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
+
         <div class="fd-button-split fd-button-split--attention" role="group" aria-label="button-split">
           <button class="fd-button fd-button--attention" aria-label="button">
             <span class="fd-button-split__text">Attention</span>
@@ -363,67 +363,67 @@ export const SplitMenuButton = () => `
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
+
         <h4>Compact</h4>
-        <div class="fd-button-split fd-button-split--emphasized" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--compact fd-button--emphasized" aria-label="button">
+        <div class="fd-button-split fd-button-split--compact fd-button-split--emphasized" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--emphasized" aria-label="button">
             <span class="fd-button-split__text">Emphasized</span>
           </button>
-          <button class="fd-button fd-button--compact fd-button--emphasized" aria-expanded="false">
-            <i class="sap-icon--slim-arrow-down"></i>
-          </button>
-        </div>
-        
-        <div class="fd-button-split" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--compact " aria-label="button">
-            <span class="fd-button-split__text">Standard</span>
-          </button>
-          <button class="fd-button fd-button--compact " aria-expanded="false">
+          <button class="fd-button fd-button--emphasized" aria-expanded="false">
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
 
-        <div class="fd-button-split fd-button-split--transparent" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--compact fd-button--transparent" aria-label="button">
+        <div class="fd-button-split fd-button-split--compact" role="group" aria-label="button-split">
+          <button class="fd-button" aria-label="button">
+            <span class="fd-button-split__text">Standard</span>
+          </button>
+          <button class="fd-button" aria-expanded="false">
+            <i class="sap-icon--slim-arrow-down"></i>
+          </button>
+        </div>
+
+        <div class="fd-button-split  fd-button-split--compact fd-button-split--transparent" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--transparent" aria-label="button">
             <span class="fd-button-split__text">Transparent</span>
           </button>
-          <button class="fd-button fd-button--compact fd-button--transparent" aria-expanded="false">
+          <button class="fd-button fd-button--transparent" aria-expanded="false">
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
-        <div class="fd-button-split fd-button-split--ghost" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--compact fd-button--ghost" aria-label="button">
+
+        <div class="fd-button-split fd-button-split--compact fd-button-split--ghost" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--ghost" aria-label="button">
             <span class="fd-button-split__text">Ghost</span>
           </button>
-          <button class="fd-button fd-button--compact fd-button--ghost" aria-expanded="false">
+          <button class="fd-button fd-button--ghost" aria-expanded="false">
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
-        <div class="fd-button-split fd-button-split--positive" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--compact fd-button--positive" aria-label="button">
+
+        <div class="fd-button-split  fd-button-split--compact fd-button-split--positive" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--positive" aria-label="button">
             <span class="fd-button-split__text">Positive</span>
           </button>
-          <button class="fd-button fd-button--compact fd-button--positive" aria-expanded="false">
+          <button class="fd-button fd-button--positive" aria-expanded="false">
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
-        <div class="fd-button-split fd-button-split--negative" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--compact fd-button--negative" aria-label="button">
+
+        <div class="fd-button-split fd-button-split--compact fd-button-split--negative" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--negative" aria-label="button">
             <span class="fd-button-split__text">Negative</span>
           </button>
-          <button class="fd-button fd-button--compact fd-button--negative" aria-expanded="false">
+          <button class="fd-button fd-button--negative" aria-expanded="false">
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>
-        
-        <div class="fd-button-split fd-button-split--attention" role="group" aria-label="button-split">
-          <button class="fd-button fd-button--compact fd-button--attention" aria-label="button">
+
+        <div class="fd-button-split fd-button-split--compact fd-button-split--attention" role="group" aria-label="button-split">
+          <button class="fd-button fd-button--attention" aria-label="button">
             <span class="fd-button-split__text">Attention</span>
           </button>
-          <button class="fd-button fd-button--compact fd-button--attention" aria-expanded="false">
+          <button class="fd-button fd-button--attention" aria-expanded="false">
             <i class="sap-icon--slim-arrow-down"></i>
           </button>
         </div>

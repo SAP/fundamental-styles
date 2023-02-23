@@ -154,7 +154,7 @@ $fd-list-byline-section-text-color: var(--sapContent_LabelColor) !default;
       }
     }
 
-    @include fd-is-compact() {
+    @include fd-compact() {
       .#{$block}__title {
         font-size: $fd-list-normal-font-size;
       }

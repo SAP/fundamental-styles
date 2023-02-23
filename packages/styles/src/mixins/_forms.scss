@@ -91,7 +91,7 @@ $fd-input-field-height--compact: 1.625rem;
 @mixin fd-input-field-base-compact {
   @include fd-set-min-height($fd-input-field-height--compact);
 
-  min-width: 2rem;
+  min-width: var(--fdInput_Field_Compact_Min_Width, 2rem);
   margin: 0.1875rem 0;
   padding: 0 0.5rem;
   box-sizing: border-box;

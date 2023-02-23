@@ -10,7 +10,7 @@ export default {
     title: 'Components/Time Picker',
     parameters: {
         description: `The time picker allows the user to select a localized time, based on the 12-hour syste or the 24-hour system. It can be used with touch, mouse, or keyboard input. <br> For more information visit <a href="https://experience.sap.com/fiori-design-web//time-picker/" target="_blank">Fiori Design Guidelines</a>
- 
+
 ##Usage
 **Use the time picker if:**
 - Users need to select a time.
@@ -24,7 +24,7 @@ export default {
 - **Time Input Fiel**- users can enter a time directly or use the time picker button to select a time using the time picker popover.
 On phones, selecting the time input field opens a time input popover for entering the time with the touch keyboard.
 
-- **Time Picker Popover**- users can select a time by using the clock face to set hours, minutes, and seconds. 
+- **Time Picker Popover**- users can select a time by using the clock face to set hours, minutes, and seconds.
         - Hours clock face - depending on the time format, the hours clock face shows 12 hours or 24 hours
         - Minutes clock face
         - Seconds clock face (optional) - can be omitted if not relevant for the use case
@@ -44,7 +44,7 @@ Users can enter the time in two ways:
 - Select a time using the time picker popover
 
 
-##CSS Classes 
+##CSS Classes
 - .fd-time-picker
     - .fd-time-picker__control
         - .fd-time-picker__input
@@ -775,7 +775,7 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 24deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
@@ -796,12 +796,12 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 54deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
-                        
+
                             <div class="fd-time-picker__item" style="--deg: 66deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -817,12 +817,12 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 84deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 96deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -838,12 +838,12 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 114deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 126deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -859,12 +859,12 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 144deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">25</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 156deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -880,12 +880,12 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 174deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 186deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -901,12 +901,12 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 204deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">35</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 216deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -927,7 +927,7 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">40</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 246deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -948,7 +948,7 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">45</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 276deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -969,7 +969,7 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">50</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 306deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -990,7 +990,7 @@ export const MinutesCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">55</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 336deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1101,7 +1101,7 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 24deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
@@ -1122,12 +1122,12 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 54deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
-                        
+
                             <div class="fd-time-picker__item" style="--deg: 66deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1143,12 +1143,12 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 84deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 96deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1164,12 +1164,12 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 114deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 126deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1185,12 +1185,12 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 144deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">25</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 156deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1206,12 +1206,12 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 174deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number fd-time-picker__number--hover">30</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 186deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1227,12 +1227,12 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                             <div class="fd-time-picker__item" style="--deg: 204deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">35</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 216deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1253,7 +1253,7 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">40</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 246deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1274,7 +1274,7 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">45</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 276deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1295,7 +1295,7 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">50</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 306deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1316,7 +1316,7 @@ export const SecondsCozy = () => `<div style="min-height: 500px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">55</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 336deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -1374,10 +1374,10 @@ SecondsCozy.parameters = {
 export const Hours24Compact = () => `<div style="min-height: 450px;">
     <div class="fd-popover fd-popover--no-arrow fd-time-picker">
         <div class="fd-popover__control fd-time-picker__control is-expanded">
-            <div class="fd-input-group is-focus">
-                <input type="text" class="fd-input fd-input-group__input fd-input--compact  fd-time-picker__input" value="19:00">
-                <span class="fd-input-group__addon fd-input-group__addon--compact fd-input-group__addon--button">
-                    <button class="fd-input-group__button fd-button fd-button--compact fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
+            <div class="fd-input-group fd-input-group--compact is-focus">
+                <input type="text" class="fd-input fd-input-group__input fd-time-picker__input" value="19:00">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button class="fd-input-group__button fd-button fd-button--transparent fd-popover__control is-active" aria-label="show/hide time picker" aria-expanded="true" aria-haspopup="true">
                         <i class="sap-icon--time-entry-request"></i>
                     </button>
                 </span>
@@ -1399,7 +1399,7 @@ export const Hours24Compact = () => `<div style="min-height: 450px;">
                 <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container fd-time-picker__clock-container--compact">
                     <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
                         <div data-label="Hours" class="fd-time-picker__label"></div>
-                        
+
                         <div>
                             <div class="fd-time-picker__item" style="--deg: 6deg">
                                 <span class="fd-time-picker__tick"></span>
@@ -1741,7 +1741,7 @@ export const Hours12Compact = () => `<div style="min-height: 450px;">
                 <div role="img" aria-label="Clock Dial" class="fd-time-picker__clock-container fd-time-picker__clock-container--compact">
                     <div aria-hidden="true" class="fd-time-picker__clock fd-time-picker__clock--inner">
                         <div data-label="Hours" class="fd-time-picker__label"></div>
-                        
+
                         <div>
                             <div class="fd-time-picker__item" style="--deg: 6deg">
                                 <span class="fd-time-picker__tick"></span>
@@ -2078,7 +2078,7 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             <div class="fd-time-picker__item" style="--deg: 24deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 30deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">5</span>
@@ -2099,12 +2099,12 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             <div class="fd-time-picker__item" style="--deg: 54deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 60deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">10</span>
                             </div>
-                        
+
                             <div class="fd-time-picker__item" style="--deg: 66deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2120,12 +2120,12 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             <div class="fd-time-picker__item" style="--deg: 84deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 90deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">15</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 96deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2141,12 +2141,12 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             <div class="fd-time-picker__item" style="--deg: 114deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 120deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">20</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 126deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2162,12 +2162,12 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             <div class="fd-time-picker__item" style="--deg: 144deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 150deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">25</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 156deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2183,12 +2183,12 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             <div class="fd-time-picker__item" style="--deg: 174deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 180deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">30</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 186deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2204,12 +2204,12 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             <div class="fd-time-picker__item" style="--deg: 204deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 210deg">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">35</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 216deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2230,7 +2230,7 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">40</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 246deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2251,7 +2251,7 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">45</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 276deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2272,7 +2272,7 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">50</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 306deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2293,7 +2293,7 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                                 <span class="fd-time-picker__tick fd-time-picker__tick--hour"></span>
                                 <span class="fd-time-picker__number">55</span>
                             </div>
-                            
+
                             <div class="fd-time-picker__item" style="--deg: 336deg">
                                 <span class="fd-time-picker__tick"></span>
                             </div>
@@ -2316,7 +2316,7 @@ export const MinutesCompact = () => `<div style="min-height: 450px;">
                             </div>
 
                         </div>
-                        
+
                         <div class="fd-time-picker__item" style="--deg: 108deg">
                             <div class="fd-time-picker__tick fd-time-picker__tick--selected"></div>
                             <div class="fd-time-picker__number fd-time-picker__number--selected">18</div>

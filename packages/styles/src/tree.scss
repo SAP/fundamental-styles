@@ -27,7 +27,7 @@ $fd-tree-item-selected-border-bottom: var(--sapList_BorderWidth) solid var(--sap
   --fdTree_Item_Font_Size: var(--sapFontLargeSize);
   --fdTree_Item_Wrap_Text_Line_Height: 1.4;
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     --fdTree_Expander_Size: 2rem;
     --fdTree_Expander_Icon_Font_Size: var(--sapFontSmallSize);
     --fdTree_Item_Height: 2rem;

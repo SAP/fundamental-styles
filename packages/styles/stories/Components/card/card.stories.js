@@ -284,13 +284,13 @@ export const CardFooterBar = () => `<div style="display:flex; justify-content:sp
                 </div>
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content"></div>
-            <div class="fd-bar fd-bar--footer fd-card__bar-footer">
+            <div class="fd-bar fd-bar--compact fd-bar--footer fd-card__bar-footer">
                 <div class="fd-bar__right">
                     <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
+                        <button aria-label="button" class="fd-button fd-button--emphasized">Save</button>
                     </div>
                     <div class="fd-bar__element">
-                        <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                        <button aria-label="button" class="fd-button fd-button--transparent">Cancel</button>
                     </div>
                 </div>
             </div>

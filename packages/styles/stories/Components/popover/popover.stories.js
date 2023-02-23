@@ -118,20 +118,20 @@ export const Variants = () => `<div class="fddocs-container" style="margin-botto
                 </ul>
             </nav>
             <div class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar fd-bar--compact fd-bar--footer">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                            <button class="fd-button fd-button--emphasized">Save</button>
                         </div>
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                            <button class="fd-button fd-button--transparent">Cancel</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="fd-popover">
         <div class="fd-popover__control">
             <button
@@ -166,18 +166,18 @@ export const Variants = () => `<div class="fddocs-container" style="margin-botto
                         </div>
                     </div>
                 </div>
-                <div class="fd-bar fd-bar--subheader">
+                <div class="fd-bar fd-bar--compact fd-bar--subheader">
                     <div class="fd-bar__middle">
                         <div class="fd-bar__element">
                             <div class="fd-form-item">
                                 <div class="fd-segmented-button" role="group" aria-label="Group label">
-                                    <button aria-label="email" class="fd-button fd-button--compact fd-button--toggled" aria-pressed="true">
+                                    <button aria-label="email" class="fd-button fd-button--toggled" aria-pressed="true">
                                         <i class="sap-icon--email"></i>
                                     </button>
-                                    <button  aria-label="phone" class="fd-button fd-button--compact" aria-pressed="false">
+                                    <button  aria-label="phone" class="fd-button" aria-pressed="false">
                                         <i class="sap-icon--iphone"></i>
                                     </button>
-                                    <button  aria-label="notification" class="fd-button fd-button--compact" aria-pressed="false">
+                                    <button  aria-label="notification" class="fd-button" aria-pressed="false">
                                         <i class="sap-icon--notification-2"></i>
                                     </button>
                                 </div>
@@ -206,13 +206,13 @@ export const Variants = () => `<div class="fddocs-container" style="margin-botto
                 </ul>
             </nav>
             <footer class="fd-popover__body-footer">
-                <div class="fd-bar fd-bar--footer">
+                <div class="fd-bar fd-bar--compact fd-bar--footer">
                     <div class="fd-bar__right">
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--emphasized">Save</button>
+                            <button class="fd-button fd-button--emphasized">Save</button>
                         </div>
                         <div class="fd-bar__element">
-                            <button class="fd-button fd-button--compact fd-button--transparent">Cancel</button>
+                            <button class="fd-button fd-button--transparent">Cancel</button>
                         </div>
                     </div>
                 </div>
@@ -890,7 +890,7 @@ export const NoArrow = () => `<div class="fd-popover" style="margin-bottom: 100p
 NoArrow.parameters = {
     docs: {
         description: {
-            story: `It's possible to hide popover's arrow. 
+            story: `It's possible to hide popover's arrow.
 To achieve this apply the \`fd-popover__body--no-arrow\` modifier class to the popover body element and remove all the arrow modifier classes.`
         }
     }

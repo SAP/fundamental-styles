@@ -221,20 +221,7 @@ $block: #{$fd-namespace}-checkbox;
     }
   }
 
-  @include fd-is-compact() {
-    @include fd-checkbox-label() {
-      --fdCheckbox_Dimensions: var(--fdCheckbox_Compact_Dimensions);
-      --fdCheckbox_Padding: var(--fdCheckbox_Compact_Padding);
-    }
-
-    @include fd-focus() {
-      @include fd-checkbox-label() {
-        --fdCheckbox_Outline_Border_Radius: var(--fdCheckbox_Compact_Outline_Border_Radius);
-      }
-    }
-  }
-
-  @include fd-is-compact() {
+  @include fd-compact() {
     @include fd-checkbox-label() {
       --fdCheckbox_Dimensions: var(--fdCheckbox_Compact_Dimensions);
       --fdCheckbox_Padding: var(--fdCheckbox_Compact_Padding);

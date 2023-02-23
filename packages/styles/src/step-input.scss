@@ -79,7 +79,7 @@ $block: #{$fd-namespace}-step-input;
     }
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     height: $fd-step-input-compact-height;
     min-height: $fd-step-input-compact-height;
 

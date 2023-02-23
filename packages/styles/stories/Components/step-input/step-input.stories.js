@@ -60,7 +60,6 @@ export const Compact = () => `<label class="fd-form-label" for="step-1">Compact 
     <div class="fd-step-input fd-step-input--compact">
             <button aria-label="Step down" class="
                 fd-button
-                fd-button--compact
                 fd-button--transparent
                 fd-step-input__button"
                 onclick="stepInputValue('step-1', 'down');"
@@ -69,13 +68,11 @@ export const Compact = () => `<label class="fd-form-label" for="step-1">Compact 
             </button>
         <input class="
                 fd-input
-                fd-input--compact
                 fd-input--no-number-spinner
                 fd-step-input__input
         " id="step-1" type="number" value="0">
             <button aria-label="Step up" class="
                 fd-button
-                fd-button--compact
                 fd-button--transparent
                 fd-step-input__button"
                 onclick="stepInputValue('step-1', 'up');"
