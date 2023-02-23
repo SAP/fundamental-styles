@@ -65,7 +65,7 @@ export const DeleteMode = () => `<div style="min-height: 300px;">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-buttonfd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 

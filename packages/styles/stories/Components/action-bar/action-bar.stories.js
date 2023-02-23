@@ -115,7 +115,7 @@ export const LongTitleDescription = () => `<div class="fd-action-bar fd-action-b
             <h1 class="fd-title fd-title--h3">Page Title Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Very Long.</h1>
         </div>
         <div class="fd-action-bar__actions">
-            <button aria-label="button"class="fd-buttont">Button</button>
+            <button aria-label="button"class="fd-button">Button</button>
             <button aria-label="button"class="fd-button">Button</button>
             <button aria-label="button"class="fd-button fd-button--emphasized">Button</button>
         </div>

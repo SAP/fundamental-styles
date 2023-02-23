@@ -160,9 +160,9 @@ export const Menu = () => `<div class="fd-tool-header fd-tool-header--menu">
     </div>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <div class="fd-input-group fd-tool-header__input-group">
-                <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsdewfwfw" name="" placeholder="Search...">
-                <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
+            <div class="fd-input-group fd-input-group--compact fd-tool-header__input-group">
+                <input class="fd-input fd-input-group__input" type="text" id="aqwsdewfwfw" name="" placeholder="Search...">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
                     <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact fd-tool-header__button" aria-label="Search">
                         <i class="sap-icon--search"></i>
                     </button>
@@ -401,9 +401,9 @@ export const HorizontalPaddings = () => `<h4>Size S (1rem)</h4>
     </div>
     <div class="fd-tool-header__group">
         <div class="fd-tool-header__element">
-            <div class="fd-input-group fd-tool-header__input-group">
-                <input class="fd-input fd-input--compact fd-input-group__input" type="text" id="aqwsdewfwfw" name="" placeholder="Search...">
-                <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
+            <div class="fd-input-group fd-input-group--compact fd-tool-header__input-group">
+                <input class="fd-input fd-input-group__input" type="text" id="aqwsdewfwfw" name="" placeholder="Search...">
+                <span class="fd-input-group__addon fd-input-group__addon--button">
                     <button class="fd-input-group__button fd-button fd-button--icon fd-button--transparent fd-button--compact fd-tool-header__button" aria-label="Select">
                         <i class="sap-icon--navigation-down-arrow"></i>
                     </button>
