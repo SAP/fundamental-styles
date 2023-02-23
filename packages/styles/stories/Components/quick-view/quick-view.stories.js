@@ -119,7 +119,7 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
 
                             <div class="fd-quick-view__subheader-text">
                                 <h5 class="fd-title fd-title--h5">Company B</h5>
-    
+
                                 <div class="fd-quick-view__subtitle">
                                     Michael Adams
                                 </div>
@@ -145,15 +145,15 @@ export const Dialog = () => `<section class="fd-dialog-docs-static fd-dialog fd-
             </div>
         </div>
 
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">
                         Send reminder
                     </button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                    <button class="fd-dialog__decisive-button fd-button">
                         Cancel
                     </button>
                 </div>

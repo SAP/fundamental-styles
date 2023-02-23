@@ -265,7 +265,7 @@ $button: #{$fd-cx-namespace}-button;
     }
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     .#{$block}__item {
       margin: 0.25rem 0;
 

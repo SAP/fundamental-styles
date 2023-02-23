@@ -758,7 +758,7 @@
   }
 }
 
-@mixin fd-is-compact() {
+@mixin fd-compact() {
   @at-root {
     [class*="--compact"] & {
       &:not([class*="--cozy"]):not([class*="--condensed"]) {

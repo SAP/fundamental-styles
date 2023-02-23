@@ -184,32 +184,32 @@ export const CompactMessagePopover = () => `
       </div>
       <section style="top: auto; bottom: 100%;" aria-hidden="false" class="fd-popover__body fd-popover__body--no-arrow" id="popoverHSF4" aria-label="Dialog Data 1" role="dialog">
           <header class="fd-popover__body-header">
-            <div class="fd-bar fd-bar--header fd-bar--growing">
+            <div class="fd-bar fd-bar--compact fd-bar--header fd-bar--growing">
               <div class="fd-bar__left">
                 <div class="fd-bar__element">
                   <div class="fd-segmented-button" role="group" aria-label="Group label">
-                    <button aria-label="Survey" class="fd-button is-selected fd-button--compact" aria-pressed="true">
+                    <button aria-label="Survey" class="fd-button is-selected" aria-pressed="true">
                       <span class="fd-button__text">All</span>
                     </button>
-                    <button aria-label="Survey" class="fd-button fd-button--compact">
+                    <button aria-label="Survey" class="fd-button">
                       <span class="fd-object-status fd-object-status--negative">
                         <i class="fd-button__icon fd-object-status__icon sap-icon--message-error" aria-label="Negative"></i>
                       </span>
                       <span class="fd-button__text">2</span>
                     </button>
-                    <button aria-label="Chart" class="fd-button fd-button--compact">
+                    <button aria-label="Chart" class="fd-button">
                       <span class="fd-object-status fd-object-status--critical">
                         <i class="fd-button__icon fd-object-status__icon sap-icon--message-warning" aria-label="Warning"></i>
                       </span>
                       <span class="fd-button__text">1</span>
                     </button>
-                    <button aria-label="Pool" class="fd-button fd-button--compact">
+                    <button aria-label="Pool" class="fd-button">
                       <span class="fd-object-status fd-object-status--positive">
                         <i class="fd-button__icon fd-object-status__icon sap-icon--message-success" aria-label="Correct"></i>
                       </span>
                       <span class="fd-button__text">1</span>
                     </button>
-                    <button aria-label="Pool" class="fd-button fd-button--compact">
+                    <button aria-label="Pool" class="fd-button">
                       <span class="fd-object-status fd-object-status--neutral">
                         <i class="fd-button__icon fd-object-status__icon sap-icon--message-information" aria-label="More information"></i>
                       </span>

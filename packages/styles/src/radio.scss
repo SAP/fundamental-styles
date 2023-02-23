@@ -189,7 +189,7 @@ $block: #{$fd-namespace}-radio;
     }
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     @include fd-radio-label() {
       --fdRadio_Outer_Circle_Padding: var(--fdRadio_Compact_Outer_Circle_Padding);
       --fdRadio_Inner_Circle_Diameter: var(--fdRadio_Compact_Inner_Circle_Diameter);

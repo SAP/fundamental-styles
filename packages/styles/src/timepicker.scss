@@ -49,7 +49,7 @@ $block: #{$fd-namespace}-time-picker;
     height: var(--fdTimePickerClockFace);
     text-align: center;
 
-    @include fd-is-compact() {
+    @include fd-compact() {
       --fdTimePickerElementSize: 2rem;
       --fdTimePickerClockFace: 16.5rem;
     }

@@ -90,7 +90,7 @@ $fd-button-badge-spacing: 0.25rem;
     background-color: var(--sapContent_BadgeBackground);
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     --fdButton_Height: 1.625rem;
     --fdButton_Clickable_Height: 2rem;
     --fdButton_Padding_X: 0.5rem;

@@ -140,7 +140,7 @@ $fd-popover-arrow-offset-x: calc(var(--fdIcon_Button_Width) * 0.5 - #{$fd-popove
       border-bottom-left-radius: $fd-popover-border-radius;
     }
 
-    @include fd-is-compact() {
+    @include fd-compact() {
       --fdIcon_Button_Height: 1.625rem;
       --fdIcon_Button_Width: 2rem;
     }

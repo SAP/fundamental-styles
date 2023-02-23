@@ -636,7 +636,7 @@ $block: #{$fd-namespace}-table;
     }
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     .#{$block}__body,
     .#{$block}__footer {
       .#{$block}__cell {

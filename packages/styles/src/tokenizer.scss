@@ -26,7 +26,7 @@ $block: #{$fd-namespace}-tokenizer;
   &__inner {
     @include fd-remove-scrollbar();
 
-    padding: 0 $fd-tokenizer-spacing;
+    padding: var(--fdTokenizer_Inner_Padding, #{0 $fd-tokenizer-spacing});
     overflow: hidden;
     float: right;
     white-space: nowrap;
@@ -58,7 +58,7 @@ $block: #{$fd-namespace}-tokenizer;
     &.#{$fd-namespace}-input {
       border: none;
       padding: 0;
-      min-width: $fd-tokenizer-input-width;
+      min-width: var(--fdTokenizer_Input_Width, $fd-tokenizer-input-width);
     }
 
     &:first-child {
@@ -90,16 +90,11 @@ $block: #{$fd-namespace}-tokenizer;
     outline-style: var(--sapContent_FocusStyle);
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     @include fd-set-min-height($fd-input-field-height--compact);
 
-    .#{$block}__inner {
-      padding: 0 $fd-tokenizer-compact-spacing;
-    }
-
-    .#{$block}__input.#{$fd-namespace}-input {
-      min-width: $fd-tokenizer-input-width-compact;
-    }
+    --fdTokenizer_Inner_Padding: #{0 $fd-tokenizer-compact-spacing};
+    --fdInput_Field_Compact_Min_Width: #{$fd-tokenizer-input-width-compact};
 
     .#{$block}__input:first-child {
       padding: 0 $fd-tokenizer-compact-spacing;

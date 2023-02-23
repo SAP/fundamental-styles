@@ -539,22 +539,22 @@ export const Selection = () => `<h4 id="XezW11">Standard Size</h4>
 <ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" role="listbox" aria-labelledby="XezW12">
   <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4" aria-labelledby="Az0bg4">
-          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4"></label>
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez4" aria-labelledby="Az0bg4">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez4"></label>
       </div>
       <span class="fd-list__title" id="Az0bg4">List item 1</span>
   </li>
   <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez5" checked aria-labelledby="Az0bg5">
-          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez5"></label>
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez5" checked aria-labelledby="Az0bg5">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez5"></label>
       </div>
       <span class="fd-list__title" id="Az0bg5">List item 2</span>
   </li>
   <li role="option" tabindex="0" class="fd-list__item">
       <div class="fd-form-item fd-list__form-item">
-          <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6" aria-labelledby="Az0bg6">
-          <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6"></label>
+          <input type="checkbox" class="fd-checkbox" id="Ai4ez6" aria-labelledby="Az0bg6">
+          <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6"></label>
       </div>
       <span class="fd-list__title" id="Az0bg6">List item 3</span>
   </li>

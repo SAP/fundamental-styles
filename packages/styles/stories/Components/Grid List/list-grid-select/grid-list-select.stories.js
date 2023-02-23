@@ -56,20 +56,20 @@ export const NoneMode = () => `<div style="min-height: 500px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
+                    <button class="fd-button fd-button--transparent" aria-label="Pool">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+                    <button class="fd-button fd-button--transparent" aria-label="Chart">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+                    <button class="fd-button fd-button--transparent" aria-label="Chart">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -110,10 +110,10 @@ export const NoneMode = () => `<div style="min-height: 500px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -273,20 +273,20 @@ export const SingleSelectMasterMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Pool">
+                    <button class="fd-button fd-button--transparent" aria-label="Pool">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+                    <button class="fd-button fd-button--transparent" aria-label="Chart">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Chart">
+                    <button class="fd-button fd-button--transparent" aria-label="Chart">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -437,20 +437,20 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -460,8 +460,8 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="pDidh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="pDidh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1761" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
@@ -494,12 +494,12 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B" checked>
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B" checked>
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761" tabindex="-1"></label>
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -525,8 +525,8 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p12Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p12Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh1761" tabindex="-1"></label>
                         <span class="fd-toolbar__spacer"></span>
 
@@ -554,8 +554,8 @@ export const SingleSelectLeftMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1x2Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1x2Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh1761" tabindex="-1"></label>
                         <span class="fd-toolbar__spacer"></span>
                     </div>
@@ -602,20 +602,20 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -659,13 +659,13 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1Didh1761g234" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B" checked>
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1Didh1761g234" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B" checked>
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761g234" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -691,8 +691,8 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p12Didh176141w" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p12Didh176141w" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh176141w" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
@@ -721,8 +721,8 @@ export const SingleSelectRightMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="radio" class="fd-radio fd-radio--compact fd-grid-list__radio-input" id="p1x2Didh176132" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1x2Didh176132" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
                         <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh176132" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
@@ -770,20 +770,20 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
     <div class="fd-container">
         <div class="fd-row">
             <div class="fd-col fd-col--12">
-                <div class="fd-toolbar fd-toolbar--solid">
+                <div class="fd-toolbar fd-toolbar--compact fd-toolbar--solid">
                     <span>Products (420)</span>
 
                     <span class="fd-toolbar__spacer"></span>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Sort">
+                    <button class="fd-button fd-button--transparent" aria-label="Sort">
                         <i class="sap-icon--sort"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Filter">
+                    <button class="fd-button fd-button--transparent" aria-label="Filter">
                         <i class="sap-icon--filter"></i>
                     </button>
 
-                    <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Group">
+                    <button class="fd-button fd-button--transparent" aria-label="Group">
                         <i class="sap-icon--group-2"></i>
                     </button>
                 </div>
@@ -793,9 +793,9 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
         <div class="fd-row">
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c" aria-label="John Li, Product Owner, Company B" checked>
-                        <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c" tabindex="-1"></label>
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c" aria-label="John Li, Product Owner, Company B" checked>
+                        <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
 
@@ -827,13 +827,13 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c2" aria-label="John Li, Product Owner, Company B">
-                        <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c2" tabindex="-1"></label>
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c2" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c2" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
 
-                        <button class="fd-button fd-button--compact fd-button--transparent" aria-label="Edit">
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
                             <i class="sap-icon--edit"></i>
                         </button>
                     </div>
@@ -859,9 +859,9 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item is-selected">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c3" aria-label="John Li, Product Owner, Company B" checked>
-                        <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c3" tabindex="-1"></label>
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c3" aria-label="John Li, Product Owner, Company B" checked>
+                        <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c3" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
 
@@ -889,9 +889,9 @@ export const MultiSelectMode = () => `<div style="min-height: 300px;">
 
             <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
                 <div tabindex="0" class="fd-grid-list__item">
-                    <div class="fd-toolbar fd-grid-list__item-toolbar">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact fd-grid-list__checkbox-input" id="Ai4ez611c4" aria-label="John Li, Product Owner, Company B">
-                        <label class="fd-checkbox__label fd-checkbox__label--compact fd-grid-list__checkbox-label" for="Ai4ez611c4" tabindex="-1"></label>
+                    <div class="fd-toolbar fd-toolbar--compact fd-grid-list__item-toolbar">
+                        <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c4" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c4" tabindex="-1"></label>
 
                         <span class="fd-toolbar__spacer"></span>
 

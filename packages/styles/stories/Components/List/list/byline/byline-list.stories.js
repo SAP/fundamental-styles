@@ -419,8 +419,8 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 <ul class="fd-list fd-list--compact fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk8">
 <li role="option" tabindex="0" class="fd-list__item">
     <div class="fd-form-item fd-list__form-item">
-        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6115V" aria-labelledby="O09lk4">
-        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6115V"></label>
+        <input type="checkbox" class="fd-checkbox" id="Ai4ez6115V" aria-labelledby="O09lk4">
+        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6115V"></label>
     </div>
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
     <div class="fd-list__content">
@@ -430,8 +430,8 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </li>
 <li role="option" tabindex="0" class="fd-list__item">
   <div class="fd-form-item fd-list__form-item">
-        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6116B" aria-labelledby="O09lk5">
-        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6116B"></label>
+        <input type="checkbox" class="fd-checkbox" id="Ai4ez6116B" aria-labelledby="O09lk5">
+        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6116B"></label>
     </div>
   <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
 style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
@@ -445,8 +445,8 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </li>
 <li role="option" tabindex="0" class="fd-list__item">
     <div class="fd-form-item fd-list__form-item">
-        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6117N" aria-labelledby="O09lk6">
-        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6117N"></label>
+        <input type="checkbox" class="fd-checkbox" id="Ai4ez6117N" aria-labelledby="O09lk6">
+        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6117N"></label>
     </div>
     <div class="fd-list__content">
       <div class="fd-list__title" id="O09lk6">Text-only list item</div>
@@ -515,8 +515,8 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 <ul class="fd-list fd-list--compact fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox" aria-labelledby="Ki81L5">
 <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link">
   <div class="fd-form-item fd-list__form-item">
-      <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6118CON" aria-labelledby="Ki81L6">
-      <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6118CON"></label>
+      <input type="checkbox" class="fd-checkbox" id="Ai4ez6118CON" aria-labelledby="Ki81L6">
+      <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6118CON"></label>
   </div>
   <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -528,8 +528,8 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </li>
 <li role="option" tabindex="0" class="fd-list__item is-selected">
   <div class="fd-form-item fd-list__form-item">
-      <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6119CON" checked aria-labelledby="Ki81L7">
-      <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6119CON"></label>
+      <input type="checkbox" class="fd-checkbox" id="Ai4ez6119CON" checked aria-labelledby="Ki81L7">
+      <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119CON"></label>
   </div>
   <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
 style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
@@ -543,8 +543,8 @@ style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_no
 </li>
 <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link">
   <div class="fd-form-item fd-list__form-item">
-      <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez61110CON" aria-labelledby="Ki81L8">
-      <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez61110CON"></label>
+      <input type="checkbox" class="fd-checkbox" id="Ai4ez61110CON" aria-labelledby="Ki81L8">
+      <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61110CON"></label>
   </div>
   <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
     <div class="fd-list__content">

@@ -90,18 +90,18 @@ export const DefaultDialog = () => `
                 Dialog loader
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
                     Dialog footer
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                    <button class="fd-dialog__decisive-button fd-button">
                         Begin button
                     </button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--compact">
+                    <button class="fd-dialog__decisive-button fd-button">
                         End button
                     </button>
                 </div>
@@ -137,13 +137,13 @@ export const Sizes = () => `
         <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -164,13 +164,13 @@ export const Sizes = () => `
         <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -191,13 +191,13 @@ export const Sizes = () => `
         <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -218,13 +218,13 @@ export const Sizes = () => `
         <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -289,13 +289,13 @@ export const Resizable = () => `
         <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -330,13 +330,13 @@ export const Draggable = () => `
         <div class="fd-dialog__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -363,7 +363,7 @@ Dialog can be draggable, enabling the user to drag the container around with the
 export const Selectable = () => `
 <section class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
     <div class="fd-dialog__content" role="dialog" aria-modal="true" aria-labelledby="dialog-title-8">
-        <header class="fd-dialog__header fd-bar fd-bar--header-with-subheader">
+        <header class="fd-dialog__header fd-bar fd-bar--compact fd-bar--header-with-subheader">
             <div class="fd-bar__left">
                 <div class="fd-bar__element">
                     <h2 class="fd-title fd-title--h5" id="dialog-title-8">
@@ -373,16 +373,16 @@ export const Selectable = () => `
             </div>
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-button fd-button--transparent fd-button--compact">Clear</button>
+                    <button class="fd-button fd-button--transparent">Clear</button>
                 </div>
             </div>
         </header>
-        <div class="fd-dialog__subheader fd-bar fd-bar--subheader">
+        <div class="fd-dialog__subheader fd-bar fd-bar--compact fd-bar--subheader">
             <div class="fd-bar__middle">
                 <div class="fd-input-group">
-                    <input class="fd-input fd-input-group__input fd-input--compact" type="text" aria-label="search" placeholder="Search...">
-                    <span class="fd-input-group__addon fd-input-group__addon--button fd-input-group__addon--compact">
-                        <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent fd-button--compact" aria-label="perform search">
+                    <input class="fd-input fd-input-group__input" type="text" aria-label="search" placeholder="Search...">
+                    <span class="fd-input-group__addon fd-input-group__addon--button">
+                        <button class="fd-button fd-input-group__button fd-button--icon fd-button--transparent" aria-label="perform search">
                             <i class="sap-icon--search" role="presentation"></i>
                         </button>
                     </span>
@@ -393,43 +393,43 @@ export const Selectable = () => `
             <ul class="fd-list fd-list--selection fd-list--compact fd-list--no-border" aria-label="selection list" role="listbox">
                 <li role="option" tabindex="0" class="fd-list__item">
                     <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez4" aria-labelledby="Az0bg4">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez4"></label>
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez4" aria-labelledby="Az0bg4">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez4"></label>
                     </div>
                     <span class="fd-list__title" id="Az0bg4">List item 1</span>
                 </li>
                 <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
                     <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez5" checked aria-labelledby="Az0bg5">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez5"></label>
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez5" checked aria-labelledby="Az0bg5">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez5"></label>
                     </div>
                     <span class="fd-list__title" id="Az0bg5">List item 2</span>
                 </li>
                 <li role="option" tabindex="0" class="fd-list__item is-selected">
                     <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4ez6" checked aria-labelledby="Az0bg6">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4ez6"></label>
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez6" checked aria-labelledby="Az0bg6">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6"></label>
                     </div>
                     <span class="fd-list__title" id="Az0bg6">List item 3</span>
                 </li>
                 <li role="option" tabindex="0" class="fd-list__item">
                     <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4e44" aria-labelledby="440bg6">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4e44"></label>
+                        <input type="checkbox" class="fd-checkbox" id="Ai4e44" aria-labelledby="440bg6">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4e44"></label>
                     </div>
                     <span class="fd-list__title" id="440bg6">List item 4</span>
                 </li>
                 <li role="option" tabindex="0" class="fd-list__item">
                     <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4e55" aria-labelledby="550bg6">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4e55"></label>
+                        <input type="checkbox" class="fd-checkbox" id="Ai4e55" aria-labelledby="550bg6">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4e55"></label>
                     </div>
                     <span class="fd-list__title" id="550bg6">List item 5</span>
                 </li>
                 <li role="option" tabindex="0" class="fd-list__item">
                     <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox fd-checkbox--compact" id="Ai4e66" aria-labelledby="660bg6">
-                        <label tabindex="-1" class="fd-checkbox__label fd-checkbox__label--compact" for="Ai4e66"></label>
+                        <input type="checkbox" class="fd-checkbox" id="Ai4e66" aria-labelledby="660bg6">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4e66"></label>
                     </div>
                     <span class="fd-list__title" id="660bg6">List item 6</span>
                 </li>
@@ -438,13 +438,13 @@ export const Selectable = () => `
                 2 items selected
             </span>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--compact">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Select</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Select</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -482,10 +482,10 @@ export const Loading = () => `
                 <div class="fd-busy-indicator--circle-2"></div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--compact">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -585,13 +585,13 @@ export const HorizontalFormInDialog = () => `
                 </div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--compact">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>
@@ -692,13 +692,13 @@ export const VerticalFormInDialog = () => `<section class="fd-dialog-docs-static
                 </div>
             </div>
         </div>
-        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer fd-bar--compact">
             <div class="fd-bar__right">
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized fd-button--compact">Save</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
                 <div class="fd-bar__element">
-                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent fd-button--compact">Cancel</button>
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
                 </div>
             </div>
         </footer>

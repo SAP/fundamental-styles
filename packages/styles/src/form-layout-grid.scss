@@ -73,7 +73,7 @@ $gridCol: #{$fd-namespace}-col;
     }
 
     .#{$formItem} {
-      @include fd-is-compact() {
+      @include fd-compact() {
         .#{$fd-namespace}-select__control {
           margin-bottom: 0.1875rem;
         }

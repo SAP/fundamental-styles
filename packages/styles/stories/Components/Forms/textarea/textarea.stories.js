@@ -27,9 +27,9 @@ export const Primary = () => `
     <textarea class="fd-textarea" id="textarea-1" placeholder="Write something here"></textarea>
 </div>
 <br />
-<div class="fd-form-item">
-    <label class="fd-form-label fd-form-label--compact" for="textarea-123">Text area(compact):</label>
-    <textarea class="fd-textarea fd-textarea--compact" id="textarea-123" placeholder="Write something here"></textarea>
+<div class="fd-form-item fd-form-item--compact">
+    <label class="fd-form-label" for="textarea-123">Text area(compact):</label>
+    <textarea class="fd-textarea" id="textarea-123" placeholder="Write something here"></textarea>
 </div>
 `;
 
@@ -40,9 +40,9 @@ Primary.parameters = {
     }
 };
 
-export const Counter = () => `<div class="fd-form-item">
+export const Counter = () => `<div class="fd-form-item fd-form-item--compact">
     <label class="fd-form-label" for="textarea-2">Compact text area:</label>
-    <textarea class="fd-textarea fd-textarea--compact" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
+    <textarea class="fd-textarea" id="textarea-2">Pellentesque metus lacus commodo eget justo ut rutrum varius nunc.</textarea>
     <div class="fd-textarea-counter">150 characters left</div>
 </div>
 `;

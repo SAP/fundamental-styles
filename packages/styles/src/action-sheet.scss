@@ -61,7 +61,7 @@ $block: #{$fd-namespace}-action-sheet;
     color: var(--sapContent_ContrastTextColor);
   }
 
-  @include fd-is-compact() {
+  @include fd-compact() {
     padding: $fd-action-sheet-mobile-padding;
 
     .#{$block}__item {

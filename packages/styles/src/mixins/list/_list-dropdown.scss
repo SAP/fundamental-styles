@@ -19,7 +19,7 @@ $fd-checkbox-dimensions: 1.375rem !default;
       padding: 0 $fd-list-item-padding-x;
     }
 
-    @include fd-is-compact() {
+    @include fd-compact() {
       .#{$block}__item:not(.#{$block}__group-header) {
         height: auto;
         min-height: 2rem;
@@ -86,7 +86,7 @@ $fd-checkbox-dimensions: 1.375rem !default;
       padding: $fd-list-dropdown-vertical-padding $fd-list-item-padding-x;
     }
 
-    @include fd-is-compact() {
+    @include fd-compact() {
       .#{$block}__item {
         padding: 0;
         height: auto;
