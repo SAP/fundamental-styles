@@ -31,6 +31,18 @@ $fd-calendar-border-radius: var(--fdCalendar_Border_Radius) !default;
 $fd-calendar-width: $fd-calendar-item-width * 8 + 2 * $fd-calendar-padding + $fd-calendar-item-spacing * 16 !default;
 $fd-calendar-active-item-inner-border-size: calc(100% - 0.125rem) !default;
 
+:root {
+  --fdCalendar_Padding: #{$fd-calendar-padding};
+  --fdCalendar_Item_Width: #{$fd-calendar-item-width};
+  --fdCalendar_Item_Height: #{$fd-calendar-item-height};
+  --fdCalendar_Action_Padding: #{$fd-calendar-action-padding};
+  --fdCalendar_Item_Spacing: #{$fd-calendar-item-spacing};
+  --fdCalendar_Button_Horizontal_Space: #{$fd-calendar-button-horizontal-space};
+  --fdCalendar_Width: #{$fd-calendar-width};
+  --fdCalendar_Item_Inner_Border_Size: #{$fd-calendar-active-item-inner-border-size};
+  --fdCalendar_Action_Width: auto;
+}
+
 // Compact dimensions
 $fd-calendar-padding-compact: 0.5rem !default;
 $fd-calendar-item-width-compact: 1.875rem !default;
@@ -153,9 +165,9 @@ $fd-calendar-special-days: (
 
   overflow: hidden;
   position: relative;
-  height: $fd-calendar-item-height;
+  height: var(--fdCalendar_Item_Height);
   margin: $fd-calendar-item-spacing;
-  min-width: $fd-calendar-item-width;
+  min-width: var(--fdCalendar_Item_Width);
   border-radius: $fd-calendar-border-radius;
   background-color: $fd-calendar-item-background;
   flex: 1 1 $fd-calendar-item-current-border-width * 2 + $fd-calendar-item-spacing * 2;
@@ -200,8 +212,8 @@ $fd-calendar-special-days: (
       bottom: $fd-calendar-item-spacing;
       left: $fd-calendar-item-spacing;
       right: auto;
-      width: $fd-calendar-active-item-inner-border-size;
-      height: $fd-calendar-active-item-inner-border-size;
+      width: var(--fdCalendar_Item_Inner_Border_Size);
+      height: var(--fdCalendar_Item_Inner_Border_Size);
       border-radius: calc(#{$fd-calendar-border-radius} / 2);
 
       @include fd-rtl() {
@@ -264,8 +276,8 @@ $fd-calendar-special-days: (
 .#{$block} {
   @include fd-reset();
 
-  width: $fd-calendar-width;
-  padding: $fd-calendar-padding;
+  width: var(--fdCalendar_Width);
+  padding: var(--fdCalendar_Padding);
   background-color: $fd-calendar-background;
   border-radius: $fd-calendar-border-radius;
 
@@ -284,8 +296,8 @@ $fd-calendar-special-days: (
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: $fd-calendar-button-horizontal-space;
-    padding-bottom: $fd-calendar-button-horizontal-space;
+
+    @include fd-set-paddings-y-equal(var(--fdCalendar_Button_Horizontal_Space));
   }
 
   &__action {
@@ -313,6 +325,7 @@ $fd-calendar-special-days: (
     &--arrow-left,
     &--arrow-right {
       flex-grow: 0;
+      width: var(--fdCalendar_Action_Width);
     }
 
     // Years range selection mode
@@ -337,7 +350,7 @@ $fd-calendar-special-days: (
 
       .#{$block}__item {
         background-color: transparent;
-        max-height: $fd-calendar-item-height;
+        max-height: var(--fdCalendar_Item_Height);
 
         &-button {
           min-width: 100%;
@@ -471,41 +484,13 @@ $fd-calendar-special-days: (
 
   // CALENDAR COMPACT
   @include fd-compact() {
-    width: $fd-calendar-width-compact;
-    padding: $fd-calendar-padding-compact;
-
-    .#{$block} {
-      &__navigation {
-        padding-top: $fd-calendar-button-horizontal-space-compact;
-        padding-bottom: $fd-calendar-button-horizontal-space-compact;
-      }
-
-      &__action {
-        &--arrow-left,
-        &--arrow-right {
-          width: $fd-calendar-item-width-compact;
-        }
-      }
-
-      &__content {
-        &--years,
-        &--months {
-          .#{$block}__item {
-            max-height: $fd-calendar-item-height-compact;
-          }
-        }
-      }
-
-      &__item {
-        height: $fd-calendar-item-height-compact;
-        min-width: $fd-calendar-item-width-compact;
-
-        &::after {
-          width: $fd-calendar-compact-inner-border-size;
-          height: $fd-calendar-compact-inner-border-size;
-        }
-      }
-    }
+    --fdCalendar_Width: #{$fd-calendar-width-compact};
+    --fdCalendar_Padding: #{$fd-calendar-padding-compact};
+    --fdCalendar_Item_Height: #{$fd-calendar-item-height-compact};
+    --fdCalendar_Button_Horizontal_Space: #{$fd-calendar-button-horizontal-space-compact};
+    --fdCalendar_Action_Width: #{$fd-calendar-item-width-compact};
+    --fdCalendar_Item_Width: #{$fd-calendar-item-width-compact};
+    --fdCalendar_Item_Inner_Border_Size: #{$fd-calendar-compact-inner-border-size};
   }
 
   // CALENDAR MOBILE
@@ -516,7 +501,7 @@ $fd-calendar-special-days: (
   }
 
   &--mobile-landscape {
-    padding: $fd-calendar-padding-mobile-landscape;
+    --fdCalendar_Padding: #{$fd-calendar-padding-mobile-landscape};
 
     .#{$block} {
       &__item--side-helper {
@@ -530,6 +515,6 @@ $fd-calendar-special-days: (
   }
 
   &--mobile-portrait {
-    padding: $fd-calendar-padding-mobile-portrait;
+    --fdCalendar_Padding: #{$fd-calendar-padding-mobile-portrait};
   }
 }

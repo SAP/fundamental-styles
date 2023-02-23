@@ -10,6 +10,15 @@ $button: #{$fd-cx-namespace}-button;
   $fd-nested-list-item-height: 2.75rem;
   $fd-nested-list-item-height-compact: 1.5rem;
   $fd-nested-list-item-border-radius: 0.5rem;
+
+  --fdNestedList_Item_Height: 2.75rem;
+  --fdNestedList_Item_Spacing: 0.25rem;
+  --fdNestedList_Item_Spacing_Compact: 0.125rem;
+  --fdNestedList_Item_Margin: 0.5rem 0;
+  --fdNestedList_Item_Header_Margin_Top: 0.25rem;
+  --fdNestedList_Focus_Offset: 0.125rem;
+  --fdNestedList_Focus_Offset_Width: var(--sapContent_FocusWidth);
+  --fdNestedList_Button_Margin_Left: 0.5rem;
   $fd-nested-list-item-spacing: 0.25rem;
   $fd-nested-list-item-spacing-compact: 0.125rem;
 
@@ -18,7 +27,7 @@ $button: #{$fd-cx-namespace}-button;
     background: $backgroundColor;
   }
 
-  @mixin fd-nested-list-focus($offset: 0.125rem, $width: var(--sapContent_FocusWidth)) {
+  @mixin fd-nested-list-focus($offset: var(--fdNestedList_Focus_Offset), $width: var(--fdNestedList_Focus_Offset_Width)) {
     &:focus,
     &.is-focus {
       outline-offset: $offset;
@@ -39,11 +48,11 @@ $button: #{$fd-cx-namespace}-button;
       @include fd-set-margins-x-equal(0.5rem);
 
       &:first-child {
-        margin-top: $fd-nested-list-item-spacing;
+        margin-top: var(--fdNestedList_Item_Spacing);
       }
 
       &:last-child {
-        margin-bottom: $fd-nested-list-item-spacing;
+        margin-bottom: var(--fdNestedList_Item_Spacing);
       }
     }
 
@@ -73,10 +82,10 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-reset();
 
     display: block;
-    margin: 0.5rem 0;
+    margin: var(--fdNestedList_Item_Margin);
 
     &--header {
-      margin-top: 0.25rem;
+      margin-top: var(--fdNestedList_Item_Header_Margin_Top);
 
       h1,
       h2,
@@ -118,7 +127,7 @@ $button: #{$fd-cx-namespace}-button;
     cursor: pointer;
     position: relative;
     text-decoration: none;
-    height: $fd-nested-list-item-height;
+    height: var(--fdNestedList_Item_Height);
     border-radius: $fd-nested-list-item-border-radius;
 
     @include fd-nested-list-states-colors(var(--sapList_TextColor), var(--sapList_Background));
@@ -207,8 +216,8 @@ $button: #{$fd-cx-namespace}-button;
     color: currentColor;
     display: inline-block;
     font-size: var(--sapFontSize);
-    height: $fd-nested-list-item-height;
-    line-height: $fd-nested-list-item-height;
+    height: var(--fdNestedList_Item_Height);
+    line-height: var(--fdNestedList_Item_Height);
 
     @include fd-rtl() {
       text-align: right;
@@ -225,10 +234,6 @@ $button: #{$fd-cx-namespace}-button;
     line-height: 1;
 
     @include fd-rtl() {
-      -moz-transform: scale(-1, 1);
-      -webkit-transform: scale(-1, 1);
-      -o-transform: scale(-1, 1);
-      -ms-transform: scale(-1, 1);
       transform: scale(-1, 1);
     }
   }
@@ -238,7 +243,7 @@ $button: #{$fd-cx-namespace}-button;
     @include fd-flex-center();
     @include fd-nested-list-focus();
     @include fd-set-width(2.75rem);
-    @include fd-set-margin-left(0.5rem);
+    @include fd-set-margin-left(var(--fdNestedList_Button_Margin_Left));
 
     height: 100%;
     cursor: pointer;
@@ -266,44 +271,12 @@ $button: #{$fd-cx-namespace}-button;
   }
 
   @include fd-compact() {
-    .#{$block}__item {
-      margin: 0.25rem 0;
-
-      &--header {
-        margin-top: 0.125rem;
-      }
-    }
-
-    &.level-1 {
-      & > .#{$block}__item {
-        &:first-child {
-          margin-top: $fd-nested-list-item-spacing-compact;
-        }
-
-        &:last-child {
-          margin-bottom: $fd-nested-list-item-spacing-compact;
-        }
-      }
-    }
-
-    .#{$block}__link {
-      @include fd-nested-list-focus(0.0625rem, 0.0625rem);
-
-      height: $fd-nested-list-item-height-compact;
-    }
-
-    .#{$block}__button {
-      @include fd-nested-list-focus(0.0625rem, 0.0625rem);
-      @include fd-set-margin-left(0.25rem);
-    }
-
-    .#{$block}__link-container {
-      @include fd-nested-list-focus(0.0625rem, 0.0625rem);
-    }
-
-    .#{$block}__title {
-      height: $fd-nested-list-item-height-compact;
-      line-height: $fd-nested-list-item-height-compact;
-    }
+    --fdNestedList_Item_Margin: 0.25rem 0;
+    --fdNestedList_Item_Spacing: 0.125rem;
+    --fdNestedList_Item_Header_Margin_Top: 0.125rem;
+    --fdNestedList_Focus_Offset: 0.0625rem;
+    --fdNestedList_Focus_Offset_Width: 0.0625rem;
+    --fdNestedList_Item_Height: 1.5rem;
+    --fdNestedList_Button_Margin_Left: 0.25rem;
   }
 }

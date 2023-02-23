@@ -7,31 +7,15 @@ $button: #{$fd-namespace}-button;
 .#{$block} {
   $fd-nested-list-border-radius: var(--fdNested_List_Border_Corner_Radius);
 
+  --fdNestedList_Link_Height: 2.75rem;
+  --fdNestedList_Title_Font_Size: var(--sapFontLargeSize);
+  --fdNestedList_Icon_Font_Size: var(--sapFontHeader4Size);
+  --fdNestedList_Item_Padding_Left: 0;
+  --fdNestedList_Item_Padding_Right: 0;
+
   @mixin fd-nested-level-padding($paddingLeft, $paddingRight) {
-    .#{$block}__link,
-    .#{$block}__content {
-      padding-left: $paddingLeft;
-      padding-right: $paddingRight;
-      border-bottom: none;
-
-      @include fd-selected() {
-        border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
-      }
-
-      &.has-child {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-
-    .#{$block}__content {
-      &.has-child {
-        > .#{$block}__title {
-          padding-left: $paddingLeft;
-          padding-right: $paddingRight;
-        }
-      }
-    }
+    --fdNestedList_Item_Padding_Left: #{$paddingLeft};
+    --fdNestedList_Item_Padding_Right: #{$paddingRight};
   }
 
   @mixin fd-nested-list-popover-border-top-radius {
@@ -56,6 +40,31 @@ $button: #{$fd-namespace}-button;
     .#{$block}__link,
     .#{$block}__content {
       border-top: none;
+    }
+  }
+
+  .#{$block}__link,
+  .#{$block}__content {
+    padding-left: var(--fdNestedList_Item_Padding_Left);
+    padding-right: var(--fdNestedList_Item_Padding_Right);
+    border-bottom: none;
+
+    @include fd-selected() {
+      border-bottom: var(--sapList_BorderWidth) solid var(--sapList_SelectionBorderColor);
+    }
+
+    &.has-child {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .#{$block}__content {
+    &.has-child {
+      > .#{$block}__title {
+        padding-left: var(--fdNestedList_Item_Padding_Left);
+        padding-right: var(--fdNestedList_Item_Padding_Right);
+      }
     }
   }
 
@@ -132,7 +141,7 @@ $button: #{$fd-namespace}-button;
 
     text-decoration: none;
     display: flex;
-    height: 2.75rem;
+    height: var(--fdNestedList_Link_Height);
     width: 100%;
     align-items: center;
     border-top: var(--sapList_BorderWidth) solid var(--sapList_BorderColor);
@@ -240,7 +249,7 @@ $button: #{$fd-namespace}-button;
       height: 100%;
       min-width: 2.75rem;
       color: var(--sapList_TextColor);
-      font-size: var(--sapFontHeader4Size);
+      font-size: var(--fdNestedList_Icon_Font_Size);
     }
   }
 
@@ -249,7 +258,7 @@ $button: #{$fd-namespace}-button;
 
     height: 100%;
     width: 100%;
-    font-size: var(--sapFontLargeSize);
+    font-size: var(--fdNestedList_Title_Font_Size);
     color: var(--sapList_TextColor);
     white-space: nowrap;
     overflow: hidden;
@@ -302,10 +311,9 @@ $button: #{$fd-namespace}-button;
   }
 
   &--text-only {
+    --fdNestedList_Item_Padding_Left: 1rem;
     .#{$block}__link,
     .#{$block}__content {
-      padding-left: 1rem;
-
       &.has-child {
         padding: 0;
       }
@@ -332,10 +340,10 @@ $button: #{$fd-namespace}-button;
     }
 
     @include fd-rtl() {
+      --fdNestedList_Item_Padding_Left: 0;
+      --fdNestedList_Item_Padding_Right: 1rem;
       .#{$block}__link,
       .#{$block}__content {
-        padding-right: 1rem;
-
         &.has-child {
           padding-right: 0;
         }
@@ -364,19 +372,8 @@ $button: #{$fd-namespace}-button;
   }
 
   @include fd-compact() {
-    .#{$block}__link,
-    .#{$block}__content {
-      height: 2rem;
-    }
-
-    .#{$block}__title {
-      font-size: var(--sapFontSize);
-    }
-
-    .#{$block}__icon {
-      @include fd-icon-selector() {
-        font-size: var(--sapFontLargeSize);
-      }
-    }
+    --fdNestedList_Link_Height: 2rem;
+    --fdNestedList_Title_Font_Size: var(--sapFontSize);
+    --fdNestedList_Icon_Font_Size: var(--sapFontLargeSize);
   }
 }

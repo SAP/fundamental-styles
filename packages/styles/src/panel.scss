@@ -4,9 +4,7 @@
 $block: #{$fd-namespace}-panel;
 
 .#{$block} {
-
-  $fd-panel-header-height: 2.75rem;
-  $fd-panel-compact-header-height: 2.5rem;
+  --fdPanel_Header_Height: 2.75rem;
   $fd-panel-header-right-padding: 0.5rem;
   $fd-panel-header-fixed-left-padding: 1rem;
 
@@ -26,8 +24,8 @@ $block: #{$fd-namespace}-panel;
   }
 
   &__header {
-    height: $fd-panel-header-height;
-    min-height: $fd-panel-header-height;
+    height: var(--fdPanel_Header_Height);
+    min-height: var(--fdPanel_Header_Height);
     padding-right: $fd-panel-header-right-padding;
     background-color: var(--sapGroup_TitleBackground);
     border-bottom: solid 0.0625rem var(--sapGroup_TitleBorderColor);
@@ -57,8 +55,8 @@ $block: #{$fd-namespace}-panel;
 
   &__expand {
     width: 2.75rem;
-    height: $fd-panel-header-height;
-    min-height: $fd-panel-header-height;
+    height: var(--fdPanel_Header_Height);
+    min-height: var(--fdPanel_Header_Height);
 
     @include fd-flex-center();
   }
@@ -92,10 +90,6 @@ $block: #{$fd-namespace}-panel;
   }
 
   @include fd-compact() {
-    .#{$block}__header,
-    .#{$block}__expand {
-      height: $fd-panel-compact-header-height;
-      min-height: $fd-panel-compact-header-height;
-    }
+    --fdPanel_Header_Height: 2.5rem;
   }
 }
