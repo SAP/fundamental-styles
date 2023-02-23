@@ -1,0 +1,34 @@
+$states: (
+  "valid": (
+    "color": var(--sapSuccessColor),
+    "background-color": var(--sapSuccessBorderColor)
+  ),
+  "warning": (
+    "color": var(--sapWarningColor),
+    "background-color": var(--sapWarningBorderColor)
+  ),
+  "error": (
+    "color": var(--sapErrorColor),
+    "background-color": var(--sapErrorBorderColor)
+  ),
+  "information": (
+    "color": var(--sapInformationColor),
+    "background-color": var(--sapInformationBorderColor)
+  ),
+);
+
+@mixin fd-table-states() {
+  @each $name, $state in $states {
+    .#{$block}__cell {
+      &--#{$name} {
+        color: map-get($state, color);
+      }
+
+      &--status-indicator {
+        &--#{$name} {
+          background-color: map-get($state, background-color);
+        }
+      }
+    }
+  }
+}

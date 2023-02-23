@@ -453,19 +453,6 @@ $fd-card-header-outline-offset: 0.0625rem !default;
         padding-bottom: 0.5rem;
       }
     }
-
-    .#{$block}__content {
-      .#{$fd-namespace}-table {
-        &__header {
-          border-right: none;
-          border-left: none;
-        }
-
-        &__body {
-          border: none;
-        }
-      }
-    }
   }
 
   &--object {

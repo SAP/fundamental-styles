@@ -1429,13 +1429,7 @@ Table can display menu options from a popover within headers. The example below 
 
 export const FixColumnHeader = () => `<style>
         .fd-table--fixed {
-            padding-left: 200px;
-        }
-
-        [dir=rtl] .fd-table--fixed,
-        .fd-table--fixed[dir=rtl] {
-            padding-left: 0;
-            padding-right: 200px;
+            height: 300px;
         }
 
         .fd-table--fixed .fd-table__cell {
@@ -1443,87 +1437,147 @@ export const FixColumnHeader = () => `<style>
             max-width: 200px;
         }
 </style>
-<div style="position: relative">
-    <div class="fd-table--fixed">
-        <table class="fd-table">
-            <thead class="fd-table__header">
-                <tr class="fd-table__row">
-                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last"  aria-haspopup="true" scope="col">
-                        Header Column
-                    </th>
-                    <th class="fd-table__cell" scope="col">
-                        Header Column
-                    </th>
-                    <th class="fd-table__cell" scope="col">
-                        Header Column
-                    </th>
-                    <th class="fd-table__cell" scope="col">
-                        Header Column
-                    </th>
-                    <th class="fd-table__cell" scope="col">
-                        Header Column
-                    </th>
-                    <th class="fd-table__cell" scope="col">
-                        Header Column
-                    </th>
-                    <th class="fd-table__cell" scope="col">
-                        Header Column
-                    </th>
-                    <th class="fd-table__cell" scope="col">
-                        Header Column
-                    </th>
-                </tr>
-            </thead>
-            <tbody class="fd-table__body">
-                <tr class="fd-table__row">
-                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                </tr>
-                <tr class="fd-table__row">
-                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                </tr>
-                <tr class="fd-table__row">
-                    <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                    <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div class="fd-table--fixed">
+    <table class="fd-table">
+        <thead class="fd-table__header">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last"  aria-haspopup="true" scope="col">
+                    Header Column
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Header Column
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Header Column
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Header Column
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Header Column
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Header Column
+                </th>
+                <th class="fd-table__cell" scope="col">
+                    Header Column
+                </th>
+                <th class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last" scope="col">
+                    Header Column
+                </th>
+            </tr>
+        </thead>
+        <tbody class="fd-table__body">
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+            <tr class="fd-table__row">
+                <th class="fd-table__cell fd-table__cell--fixed fd-table__cell--fixed-last" scope="row">Row header</th>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell">Lorem ipsum dolor sit amet ipsum</td>
+                <td class="fd-table__cell fd-table__cell--fixed-end fd-table__cell--fixed-end-last">Lorem ipsum dolor sit amet ipsum</td>
+            </tr>
+        </tbody>
+        <tfoot class="fd-table__footer">
+            <tr class="fd-table__row">
+                <td class="fd-table__cell"></td>
+                <td class="fd-table__cell"></td>
+                <td class="fd-table__cell"></td>
+                <td class="fd-table__cell">Lorem ipsum dolor</td>
+                <td class="fd-table__cell">Lorem ipsum dolor</td>
+                <td class="fd-table__cell"></td>
+                <td class="fd-table__cell"></td>
+                <td class="fd-table__cell"></td>
+            </tr>
+        </tfoot>
+    </table>
 </div>
 `;
 
-FixColumnHeader.storyName = 'Fixed header';
+FixColumnHeader.storyName = 'Fixed header, footer and columns';
 FixColumnHeader.parameters = {
     docs: {
         description: {
             story: `
-Table can display columns with a fixed header.
-To display fixed headers, wrap the table with the \`fd-table--fixed\` modifier class.
-In addition, add the \`fd-table__cell--fixed\` modifier class to each cell element, it should be propagated to the entire row.
-Then apply \`.fd-table__cell--fixed-last\` to every last fixed cell in every column to have special border after the fixed columns.
+Table can display fixed header, footer and columns (both, on the left and right).
+
+At first, wrap the table in a element with the \`fd-table--fixed\` class.
+
+Header and footer are fixed by default and will stay in the same position, but to have scrollbars you have to limit the table's width and height;
+
+To fix columns on the left, add the \`fd-table__cell--fixed\` modifier class to the cell element in each row.
+Then apply \`.fd-table__cell--fixed-last\` to every last fixed cell in every row to have a special border after it.
+
+To fix columns on the right, add the \`fd-table__cell--fixed-end\` modifier class to the cell element in each row.
+Then apply \`.fd-table__cell--fixed-end-last\` to every last fixed cell in every row to have a special border before it.
+
+If you have more than one fixed column on the left or right, you have to set the position left (or right) for the columns starting from 2nd.
 
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
     `
-        }
+        },
+        iframeHeight: 400
     }
 };
 

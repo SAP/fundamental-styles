@@ -296,7 +296,7 @@ export const CardFooterBar = () => `<div style="display:flex; justify-content:sp
             </div>
         </div>
     </div>
-    
+
 </div>
 `;
 
@@ -535,7 +535,7 @@ export const TableCard = () => `<div style="display:flex; justify-content:space-
                 </div>
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content">
-                <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders">
+                <table class="fd-table fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border">
                     <thead class="fd-table__header">
                         <tr class="fd-table__row">
                             <th class="fd-table__cell fd-table__cell--checkbox">
@@ -620,7 +620,7 @@ export const TableCard = () => `<div style="display:flex; justify-content:space-
                 </div>
             </a>
             <div class="fd-card__content" role="group" aria-label="Card Content">
-                <table class="fd-table fd-table--compact fd-table--no-horizontal-borders fd-table--no-vertical-borders">
+                <table class="fd-table fd-table--compact fd-table--no-horizontal-borders fd-table--no-vertical-borders fd-table--no-outer-border fd-table--top-border">
                     <thead class="fd-table__header">
                         <tr class="fd-table__row">
                             <th class="fd-table__cell" scope="col">Name</th>
