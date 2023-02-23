@@ -1,3 +1,23 @@
+# [0.27.0-rc.16](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.15...v0.27.0-rc.16) (2023-02-23)
+
+
+### Bug Fixes
+
+* **styles:** form message with icon layout, styles & docs refactoring ([#4154](https://github.com/SAP/fundamental-styles/issues/4154)) ([662e102](https://github.com/SAP/fundamental-styles/commit/662e102313fda5909e490ed5e1d95de39510491f))
+
+
+### BREAKING CHANGES
+
+* **styles:** * Class `fd-popover__body--input-message-group` should be applied to popovers under form controls to avoid gap.
+
+* fix(styles): form message position, styles & docs refactoring
+
+* feat(styles): embedded state for form-message (moved from ngx)
+
+* fix(styles,docs): form messages were made static [ci visual]
+
+
+
 # [0.27.0-rc.15](https://github.com/SAP/fundamental-styles/compare/v0.27.0-rc.14...v0.27.0-rc.15) (2023-02-22)
 
 
