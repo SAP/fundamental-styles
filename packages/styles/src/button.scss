@@ -10,6 +10,7 @@ $fd-button-badge-spacing: 0.25rem;
   --fdButton_Height: 2.25rem;
   --fdButton_Clickable_Height: 2.75rem;
   --fdButton_Padding_X: 0.625rem;
+  --fdButton_Min_Width: 2.25rem;
 
   @include fd-reset();
   @include fd-button-reset();
@@ -18,7 +19,7 @@ $fd-button-badge-spacing: 0.25rem;
 
   height: var(--fdButton_Height);
   max-height: var(--fdButton_Height);
-  min-width: 2.25rem;
+  min-width: var(--fdButton_Min_Width);
   position: relative;
   text-align: center;
   text-shadow: var(--fdButton_Text_Shadow);
@@ -94,8 +95,7 @@ $fd-button-badge-spacing: 0.25rem;
     --fdButton_Height: 1.625rem;
     --fdButton_Clickable_Height: 2rem;
     --fdButton_Padding_X: 0.5rem;
-
-    min-width: 2rem;
+    --fdButton_Min_Width: 2rem;
 
     .#{$block-button}__badge {
       @include fd-set-margin-left($fd-button-badge-spacing);
