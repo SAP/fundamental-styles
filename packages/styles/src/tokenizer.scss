@@ -36,7 +36,7 @@ $block: #{$fd-namespace}-tokenizer;
     justify-content: flex-end;
   }
 
-  .fd-token {
+  .#{$fd-namespace}-token {
     margin-right: $fd-tokenizer-spacing;
     max-width: calc(100% - #{$fd-tokenizer-input-width} - #{$fd-tokenizer-spacing});
 
@@ -100,7 +100,7 @@ $block: #{$fd-namespace}-tokenizer;
       padding: 0 $fd-tokenizer-compact-spacing;
     }
 
-    .fd-token {
+    .#{$fd-namespace}-token {
       margin-right: $fd-tokenizer-compact-spacing;
       max-width: calc(100% - #{$fd-tokenizer-input-width-compact} - #{$fd-tokenizer-compact-spacing});
 

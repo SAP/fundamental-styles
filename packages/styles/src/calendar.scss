@@ -181,7 +181,7 @@ $fd-calendar-special-days: (
 %fd-calendar-item-side-helper {
   align-self: center;
   pointer-events: none;
-  height: $fd-calendar-item-helper-height;
+  height: var(--fdCalendar_Item_Side_Helper, $fd-calendar-item-helper-height);
   background-color: $fd-calendar-background;
 }
 
@@ -502,12 +502,9 @@ $fd-calendar-special-days: (
 
   &--mobile-landscape {
     --fdCalendar_Padding: #{$fd-calendar-padding-mobile-landscape};
+    --fdCalendar_Item_Side_Helper: #{$fd-calendar-item-helper-height-landscape};
 
     .#{$block} {
-      &__item--side-helper {
-        height: $fd-calendar-item-helper-height-landscape;
-      }
-
       &__navigation--main {
         max-width: 20rem;
       }
