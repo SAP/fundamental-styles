@@ -12,6 +12,9 @@ $block: #{$fd-namespace}-step-input;
   $fd-step-input-description-padding: 0.5rem;
   $fd-step-input-semantic-border-offset: 0.125rem;
 
+  --fdStepInput_Button_Width: #{$fd-step-input-cozy-button-width};
+  --fdStepInput_Bordered_Button_Width: #{$fd-step-input-cozy-button-width - $fd-step-input-semantic-border-offset};
+
   // @include fd-reset();
   @include fd-input-field-base(true);
   @include fd-input-field-states(true);
@@ -23,9 +26,9 @@ $block: #{$fd-namespace}-step-input;
   align-items: center;
   padding: 0;
 
-  &__button.#{$fd-namespace}-button {
-    width: $fd-step-input-cozy-button-width;
-    min-width: $fd-step-input-cozy-button-width;
+  & &__button.#{$fd-namespace}-button {
+    width: var(--fdStepInput_Button_Width);
+    min-width: var(--fdStepInput_Button_Width);
 
     &::before,
     &::after {
@@ -74,32 +77,20 @@ $block: #{$fd-namespace}-step-input;
   &.is-error,
   &.is-warning {
     .#{$block}__button.#{$fd-namespace}-button {
-      width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
-      min-width: calc(#{$fd-step-input-cozy-button-width} - #{$fd-step-input-semantic-border-offset});
+      width: var(--fdStepInput_Bordered_Button_Width);
+      min-width: var(--fdStepInput_Bordered_Button_Width);
     }
   }
 
   @include fd-compact() {
+    --fdStepInput_Bordered_Button_Width: #{$fd-step-input-compact-button-width - $fd-step-input-semantic-border-offset};
+    --fdStepInput_Button_Width: #{$fd-step-input-compact-button-width};
+
     height: $fd-step-input-compact-height;
     min-height: $fd-step-input-compact-height;
 
-    .#{$block}__button.#{$fd-namespace}-button {
-      width: $fd-step-input-compact-button-width;
-      min-width: $fd-step-input-compact-button-width;
-    }
-
     .#{$block}__input.#{$fd-namespace}-input {
       height: 100%;
-    }
-
-    /** Width is different due to different border width  */
-    &.is-information,
-    &.is-error,
-    &.is-warning {
-      .#{$block}__button.#{$fd-namespace}-button {
-        width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
-        min-width: calc(#{$fd-step-input-compact-button-width} - #{$fd-step-input-semantic-border-offset});
-      }
     }
   }
 

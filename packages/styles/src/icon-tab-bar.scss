@@ -278,6 +278,9 @@ $fd-icon-tab-bar-semantic-values: (
 }
 
 .#{$block} {
+  --fdIconTabBar_Icon_Size: #{$fd-icon-tab-bar-icon-circle-size};
+  --fdIconTabBar_Icon_Font_Size: 1.25rem;
+
   @include fd-reset();
 
   &__header {
@@ -571,17 +574,16 @@ $fd-icon-tab-bar-semantic-values: (
     @include fd-reset();
     @include fd-flex-center();
     @include fd-set-margins-x-equal($fd-icon-tab-bar-icon-spacing);
-    @include fd-icon-tab-bar-set-circle-size($fd-icon-tab-bar-icon-circle-size);
+    @include fd-icon-tab-bar-set-circle-size(var(--fdIconTabBar_Icon_Size));
 
     @include fd-icon-selector() {
-      font-size: 1.25rem;
+      font-size: var(--fdIconTabBar_Icon_Font_Size);
       color: var(--fdIcon_Tab_Bar_Inactive_Tab_Icon_Color);
 
       @include fd-inline-flex-center();
     }
 
     position: relative;
-    border-radius: 50%;
     border: var(--fdIcon_Tab_Bar_Icon_Border_Weight) solid var(--fdIcon_Tab_Bar_Icon_Border_Color);
   }
 
@@ -1012,14 +1014,8 @@ $fd-icon-tab-bar-semantic-values: (
   }
 
   @include fd-compact() {
-    .#{$block}__icon {
-      @include fd-icon-tab-bar-set-circle-size($fd-icon-tab-bar-icon-circle-size-compact);
-
-      @include fd-icon-selector() {
-        font-size: 1rem;
-      }
-    }
-
+    --fdIconTabBar_Icon_Size: #{$fd-icon-tab-bar-icon-circle-size-compact};
+    --fdIconTabBar_Icon_Font_Size: 1rem;
     .#{$block}__container {
       .#{$block}__badge {
         @include fd-icon-tab-bar-set-circle-size(0.375rem);

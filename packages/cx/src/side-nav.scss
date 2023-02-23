@@ -9,6 +9,10 @@ $block-nested-list: #{$fd-cx-namespace}-nested-list;
 $fd-side-nav-border-radius: 1rem;
 
 .#{$block} {
+  --fdSideNav_Padding: 0.25rem 0;
+  --fdSideNav_First_Item_Margin_Top: 0.25rem;
+  --fdSideNav_Utility_Margin_Bottom: 1rem;
+
   @include fd-reset();
 
   @include fd-flex(column) {
@@ -17,7 +21,7 @@ $fd-side-nav-border-radius: 1rem;
 
   width: 15rem;
   height: 100%;
-  padding: 0.25rem 0;
+  padding: var(--fdSideNav_Padding);
   box-shadow: var(--sapContent_Shadow0);
   background-color: var(--sapGroup_ContentBackground);
   border-radius: 0 $fd-side-nav-border-radius $fd-side-nav-border-radius 0;
@@ -39,7 +43,7 @@ $fd-side-nav-border-radius: 1rem;
     .#{$block-nested-list}.level-1 {
       & > .#{$block-nested-list}__item:first-child {
         .#{$block-nested-list}__link {
-          margin-top: 0.25rem;
+          margin-top: var(--fdSideNav_First_Item_Margin_Top);
         }
       }
     }
@@ -51,7 +55,7 @@ $fd-side-nav-border-radius: 1rem;
     &::before {
       content: " ";
       display: block;
-      margin: 0.25rem 0.5rem 1rem 0.5rem;
+      margin: 0.25rem 0.5rem var(--fdSideNav_Utility_Margin_Bottom) 0.5rem;
       border-top: 0.0625rem solid var(--sapList_HeaderBorderColor);
     }
   }
@@ -102,22 +106,9 @@ $fd-side-nav-border-radius: 1rem;
   }
 
   @include fd-compact() {
-    padding-top: 0.125rem;
-    padding-bottom: 0.125rem;
-
-    .#{$block}__main-navigation {
-      .#{$block-nested-list}.level-1 {
-        & > .#{$block-nested-list}__item:first-child {
-          .#{$block-nested-list}__link {
-            margin-top: 0.125rem;
-          }
-        }
-      }
-    }
-
-    .#{$block}__utility::before {
-      margin-bottom: 0.75rem;
-    }
+    --fdSideNav_Padding: 0.125rem 0;
+    --fdSideNav_First_Item_Margin_Top: 0.125rem;
+    --fdSideNav_Utility_Margin_Bottom: 0.75rem;
   }
 
   &--narrow {
