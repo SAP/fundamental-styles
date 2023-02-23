@@ -1,113 +1,97 @@
 @import "./new-settings";
 @import "./mixins";
 
-/*!
-.fd-layout-panel
-    .fd-layout-panel__header
-        .fd-layout-panel__title
-        .fd-layout-panel__actions
-    .fd-layout-panel__footer
-*/
-
 $block: #{$fd-namespace}-layout-panel;
+$fd-layout-panel-element-border: solid 0.0625rem var(--sapGroup_TitleBorderColor);
 
 .#{$block} {
-  $fd-layout-panel-background-color: var(--sapGroup_ContentBackground) !default;
-  $fd-layout-panel-padding: 1rem 1.5rem !default;
-  $fd-layout-panel-border-width: 0 !default;
-  $fd-layout-panel-border-color: transparent !default;
-  $fd-layout-panel-border-elements-width: var(--sapElement_BorderWidth) !default;
-  $fd-layout-panel-header-border-color: var(--sapGroup_ContentBorderColor) !default;
-  $fd-layout-panel-filters-padding: 0.75rem 1.5rem !default;
-  $fd-layout-panel-filters-border-color: $fd-layout-panel-header-border-color !default;
-  $fd-layout-panel-footer-padding: 1rem 1.5rem !default;
-  $fd-layout-panel-footer-border-color: $fd-layout-panel-header-border-color !default;
-
-  // animation
-  $fd-layout-panel-fiters-transition-params: 0.15s ease-in !default;
-
   @include fd-clearfix();
   @include fd-reset();
 
-  border-style: solid;
-  border-width: $fd-layout-panel-border-width;
-  border-color: $fd-layout-panel-border-color;
-  border-radius: var(--sapElement_BorderCornerRadius);
-  background-color: $fd-layout-panel-background-color;
-  box-shadow: 0 0.3125rem 1.25rem 0 var(--sapGroup_ContentBorderColor);
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: var(--sapGroup_ContentBackground);
+
+  &--transparent {
+    background-color: transparent;
+  }
 
   &__header {
     @include fd-reset();
-    @include fd-flex-vertical-center();
 
+    @include fd-flex-vertical-center() {
+      justify-content: space-between;
+    }
+
+    padding: 1rem;
     min-height: 2.5rem;
-    line-height: normal;
-    color: var(--sapNeutralTextColor);
-    padding: $fd-layout-panel-padding;
-    font-size: var(--sapFontSmallSize);
-    border-bottom-style: solid;
-    border-bottom-width: $fd-layout-panel-border-elements-width;
-    border-bottom-color: $fd-layout-panel-header-border-color;
+    border-bottom: $fd-layout-panel-element-border;
   }
 
   &__head {
     @include fd-reset();
   }
 
-  &__title {
+  .#{$block}__title {
     @include fd-reset();
 
     flex: 1;
     margin-bottom: 0;
-    line-height: normal;
+    color: var(--sapGroup_TitleTextColor);
+    font-size: var(--sapGroup_TitleFontSize);
+
+    /*
+      The code below is to ensure that the color and the font-size are the same for all headings
+      Will also overwrite the rules of fd-title using specificity (.fd-layout-panel .fd-layout-panel__title h1...6)
+    */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--sapGroup_TitleTextColor);
+      font-size: var(--sapGroup_Title_FontSize);
+    }
   }
 
   &__description {
     @include fd-reset();
 
     margin-top: 0.25rem;
-    color: var(--sapNeutralTextColor);
     font-size: var(--sapFontSmallSize);
+    color: var(--sapContent_LabelColor);
   }
 
   &__actions {
     @include fd-reset();
 
-    margin-left: auto;
-    margin-top: -0.25rem;
-    margin-bottom: -0.25rem;
     color: var(--sapNeutralTextColor);
     font-size: var(--sapFontSmallSize);
-
-    @include fd-rtl() {
-      margin-right: auto;
-      margin-left: 0;
-    }
   }
 
   &__filters {
     @include fd-reset();
 
-    padding: $fd-layout-panel-filters-padding;
-    border-bottom-style: solid;
-    border-bottom-width: $fd-layout-panel-border-elements-width;
-    border-bottom-color: $fd-layout-panel-filters-border-color;
-    transition: all $fd-layout-panel-fiters-transition-params;
+    padding: 0.5rem 1rem;
+    transition: all 0.15s ease-in;
+    border-bottom: $fd-layout-panel-element-border;
 
     &.is-hidden {
-      padding-top: 0;
-      padding-bottom: 0;
       max-height: 0;
+      padding-top: 0;
       overflow: hidden;
+      padding-bottom: 0;
     }
   }
 
   &__body {
     @include fd-reset();
 
-    display: block;
     height: 100%;
-    padding: $fd-layout-panel-padding;
+    padding: 1rem;
+    display: block;
+    border-bottom: $fd-layout-panel-element-border;
 
     &--full-bleed,
     &--bleed {
@@ -127,9 +111,14 @@ $block: #{$fd-namespace}-layout-panel;
     @include fd-reset();
     @include fd-flex-horizontal-center();
 
-    padding: $fd-layout-panel-footer-padding;
-    border-top-style: solid;
-    border-top-width: $fd-layout-panel-border-elements-width;
-    border-top-color: $fd-layout-panel-footer-border-color;
+    padding: 0.5rem 1rem;
+
+    &--end {
+      justify-content: flex-end;
+    }
+
+    &--start {
+      justify-content: flex-start;
+    }
   }
 }
